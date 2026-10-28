@@ -129,7 +129,7 @@ export default function ProbateCourtFeeCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory court fee calculator for Probate and Letters of Administration in India under Court Fees Act 1870 and state fee.",
+          "Free legal court fee tool for Probate and Letters of Care in India under Court Fees Act 1870 and state fee.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -162,7 +162,7 @@ export default function ProbateCourtFeeCalculatorPage() {
             name: "Is probate mandatory in Delhi, Bengaluru, or other non-presidential cities?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 57 and Section 213 of the Indian Succession Act, probate is compulsory only in Mumbai, Kolkata, and Chennai. The Supreme Court in Kanta Yadav (2019) confirmed that probate is optional in Delhi, Bengaluru, and other cities unless a dispute arises.",
+              text: "No. Under Section 57 and Section 213 of the Indian Succession Act, probate is needed only in Mumbai, Kolkata, and Chennai. The Supreme Court in Kanta Yadav (2019) confirmed that probate is a choice in Delhi, Bengaluru, and other cities unless a fight arises.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function ProbateCourtFeeCalculatorPage() {
             name: "What is the difference between Probate and Letters of Administration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Probate is granted only to an executor named in a Will under Section 222. Letters of Administration are granted when there is no Will, or when the Will does not name an executor. Both processes give legal authority to transfer assets, but probate requires an existing Will.",
+              text: "Probate is granted only to an executor named in a Will under Section 222. Letters of Care are granted when there is no Will, or when the Will does not name an executor. Both processes give legal office to transfer assets, but probate requires an existing Will.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function ProbateCourtFeeCalculatorPage() {
             name: "How long does it take to obtain an uncontested probate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An uncontested probate usually takes 6 to 12 months in District Courts. In High Courts like Bombay or Calcutta, it takes about 8 to 14 months. This includes checking papers, publishing notices, waiting 30 days for objections, and getting the Collector valuation report.",
+              text: "An uncontested probate usually takes 6 to 12 months in District Courts. In High Courts like Bombay or Calcutta, it takes about 8 to 14 months. This includes checking papers, publishing notices, waiting 30 days for objections, and getting the Collector price check report.",
             },
           },
           {

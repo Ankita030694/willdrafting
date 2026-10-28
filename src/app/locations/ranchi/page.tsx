@@ -142,7 +142,7 @@ export default function RanchiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ranchi: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi &.",
+          "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset split, and lawyer talk in Ranchi &.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function RanchiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ranchi - Estate Planning, CNT Act Succession & NGDRS Registration",
         description:
-          "Professional Will drafting, Chota Nagpur Tenancy Act compliance advisory, RRDA and RMC plot inheritance, and Jharkhand NGDRS Sub-Registrar.",
+          "Professional Will drafting, Chota Nagpur Tenancy Act compliance advisory, RRDA and RMC plot estate, and Jharkhand NGDRS SRO.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,38 +262,38 @@ export default function RanchiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Ranchi Jharkhand",
         description:
-          "Five straightforward steps to create a legally binding Will and register it before the Sub-Registrar in Ranchi.",
+          "Five straightforward steps to create a legally binding Will and register it before the SRO in Ranchi.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Properties, CNT Status, and Beneficiaries",
-            text: "Compile your Ranchi residential flats, RRDA plots, commercial units, bank accounts, demat holdings, and Khatiyan land records. Appoint your beneficiaries and an executor.",
+            text: "Compile your Ranchi home flats, RRDA plots, shop units, bank accounts, demat holdings, and Khatiyan land records. Appoint your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Exact Jharkhand Legal Clauses",
-            text: "Draft your Will using our legally verified platform or with a senior advocate to incorporate non-presidency probate clarity, CNT Act compliance, and executor authority.",
+            text: "Draft your Will using our legally checked platform or with a senior lawyer to incorporate non-presidency probate clarity, CNT Act compliance, and executor office.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets or executive ledger paper and sign every page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 sheets or executive ledger paper and sign every page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Ranchi SRO Slot on NGDRS Jharkhand Portal",
-            text: "Schedule an appointment token on ngdrs.jharkhand.gov.in for your jurisdictional Ranchi SRO and pay the nominal ₹1,000 registration fee via e-Gras online challan.",
+            text: "Schedule an appointment token on ngdrs.jharkhand.gov.in for your local Ranchi SRO and pay the nominal ₹1,000 filing fee via e-Gras online challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photo capture, and Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photo capture, and Book III filing.",
           },
         ],
       },

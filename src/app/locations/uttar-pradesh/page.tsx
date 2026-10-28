@@ -145,7 +145,7 @@ export default function UttarPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Uttar Pradesh: Online Will Registration",
         description:
-          "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer.",
+          "Draft a valid Will in Uttar Pradesh. Complete IGRSUP filing support, Section 108 UP Revenue Code farm estate, and lawyer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function UttarPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Uttar Pradesh - Legal Estate Planning & IGRSUP Registration",
         description:
-          "Professional Will drafting, advocate verification, IGRSUP online registration, Section 108 UP Revenue Code agricultural succession, and.",
+          "Professional Will drafting, lawyer check, IGRSUP online filing, Section 108 UP Revenue Code farm estate, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -265,38 +265,38 @@ export default function UttarPradeshLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Uttar Pradesh",
         description:
-          "Five straightforward steps to draft a legally binding Will and register it before the Sub-Registrar in Uttar Pradesh.",
+          "Five straightforward steps to draft a legally binding Will and register it before the SRO in Uttar Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Assets and Designate Beneficiaries",
-            text: "List your Uttar Pradesh assets including development authority flats (Noida, LDA, KDA), agricultural Bhumidhari farmland, urban houses, bank FDs, and demat shares. Appoint your beneficiaries and an executor.",
+            text: "List your Uttar Pradesh assets including development office flats (Noida, LDA, KDA), farm Bhumidhari farmland, urban houses, bank FDs, and demat shares. Appoint your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Mandatory Legal Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate revocation, survivorship, specific bequests, and Section 108 UP Revenue Code compliance.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate revocation, survivorship, specific bequests, and Section 108 UP Revenue Code compliance.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book SRO Slot on IGRSUP Portal",
-            text: "Book an appointment token on the official UP Stamps and Registration Department portal (igrsup.gov.in) for your local Tehsil Sub-Registrar Office.",
+            text: "Book an appointment token on the official UP Stamps and Filing Office portal (igrsup.gov.in) for your local Tehsil SRO office.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, live webcam photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, live webcam photo capture, and official Book III filing.",
           },
         ],
       },

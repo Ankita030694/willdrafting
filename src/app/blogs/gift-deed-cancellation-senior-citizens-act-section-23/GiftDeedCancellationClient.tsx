@@ -63,7 +63,7 @@ const TOC_ITEMS = [
   { id: "procedural-timeline", label: "9. Procedural Timeline" },
   { id: "complex-scenarios", label: "10. Four Complex Scenarios" },
   { id: "why-will-safer", label: "11. Why a Will is Safer" },
-  { id: "interactive-risk-check", label: "12. Interactive Risk Check" },
+  { id: "interactive-risk-check", label: "12. Free Risk Check" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
   { id: "statutory-citations", label: "14. Official Legal Citations" },
 ];
@@ -215,7 +215,7 @@ export default function GiftDeedCancellationClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [showImageModal, setShowImageModal] = useState<boolean>(false);
 
-  // Interactive Risk Checker State
+  // Free Risk Checker State
   const [riskTransferStatus, setRiskTransferStatus] = useState<string>("planning");
   const [riskConditionType, setRiskConditionType] = useState<string>("will");
   const [riskLivingStatus, setRiskLivingStatus] = useState<string>("alone");
@@ -462,7 +462,7 @@ export default function GiftDeedCancellationClient() {
 
               <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75] shrink-0" />
-                <span>Verified under MWPSC Act 2007 &amp; ISA 1925</span>
+                <span>Checked under MWPSC Act 2007 &amp; ISA 1925</span>
               </div>
             </div>
           </aside>
@@ -486,7 +486,7 @@ export default function GiftDeedCancellationClient() {
               </h2>
               <div className="space-y-3.5 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Transferring family real estate to a child in the hope of affectionate lifetime care is an emotional tradition in India. However, when children neglect or abandon their elderly parents after securing property title, senior citizens often face acute hardship. Indian law provides specific statutory remedies to reverse these transfers.
+                  Transferring family real estate to a child in the hope of affectionate lifetime care is an emotional tradition in India. However, when children neglect or abandon their elderly parents after securing asset title, senior citizens often face acute hardship. Indian law provides specific legal remedies to reverse these transfers.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-2">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 text-xs text-slate-700 space-y-1.5">
@@ -522,7 +522,7 @@ export default function GiftDeedCancellationClient() {
                       Why a Will is Better:
                     </span>
                     <p>
-                      A Will avoids court battles altogether. Parents retain 100% control for life, pay ₹0 stamp duty, and can change beneficiaries anytime.
+                      A Will avoids court battles altogether. Parents retain 100% control for life, pay ₹0 stamp duty, and can change heirs anytime.
                     </p>
                   </div>
                 </div>
@@ -536,16 +536,16 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Authority &bull; MWPSC Act 2007</span>
+                <span>Legal Office &bull; MWPSC Act 2007</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Section 23 Explained: Senior Citizens Act Protection
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The Parliament of India enacted the <em>Maintenance and Welfare of Parents and Senior Citizens Act, 2007</em> (MWPSC Act) to ensure dignified living and economic security for elders. The cornerstone protection for family properties is codified under <strong>Section 23(1)</strong>.
+                The Parliament of India enacted the <em>Maintenance and Welfare of Parents and Senior Citizens Act, 2007</em> (MWPSC Act) to ensure dignified living and economic security for elders. The cornerstone protection for family assets is codified under <strong>Section 23(1)</strong>.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Section 23 creates a unique legal mechanism known as a <strong>statutory deeming fiction</strong>. Under normal property jurisprudence, once a gift deed is registered, it cannot be unilaterally cancelled. However, Section 23 overrides ordinary property laws to safeguard vulnerable senior citizens.
+                Section 23 creates a unique legal mechanism known as a <strong>legal deeming fiction</strong>. Under normal asset jurisprudence, once a gift deed is filed, it cannot be unilaterally cancelled. However, Section 23 overrides ordinary asset laws to safeguard vulnerable senior citizens.
               </p>
 
               {/* 4 Conditions Card Grid */}
@@ -554,14 +554,14 @@ export default function GiftDeedCancellationClient() {
                   <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">Condition 1</span>
                   <h3 className="text-sm font-bold text-slate-900">Senior Citizen Status</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The transferor must be a senior citizen (aged 60 years or older) or a parent at the time of property transfer.
+                    The transferor must be a senior citizen (aged 60 years or older) or a parent at the time of asset transfer.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/50 space-y-1">
                   <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">Condition 2</span>
                   <h3 className="text-sm font-bold text-slate-900">Post-2007 Transfer</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The gift deed or settlement must have been executed after the commencement of the Act in that respective state.
+                    The gift deed or deal must have been signed after the commencement of the Act in that respective state.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl border border-slate-200 bg-slate-50/50 space-y-1">
@@ -583,7 +583,7 @@ export default function GiftDeedCancellationClient() {
               <div className="p-4 rounded-xl bg-amber-50/80 border border-amber-200/80 text-xs text-amber-900 leading-relaxed flex items-start gap-3">
                 <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div>
-                  <strong>The Statutory Consequence:</strong> When all four preconditions are met, the transfer of property is legally deemed to have been made by fraud, coercion, or undue influence. The Maintenance Tribunal can declare the gift deed completely null and void under Section 23(1).
+                  <strong>The Legal Consequence:</strong> When all four preconditions are met, the transfer of asset is legally deemed to have been made by fraud, coercion, or undue influence. The Maintenance Tribunal can declare the gift deed completely null and void under Section 23(1).
                 </div>
               </div>
             </section>
@@ -610,10 +610,10 @@ export default function GiftDeedCancellationClient() {
                   The Case Facts &amp; Procedural History
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  The appellant mother, Urmila Dixit, executed a registered gift deed transferring her residential house to her son. Simultaneously, a contemporaneous written promissory note (<em>Vachan Patra</em>) was signed by the son, expressly promising to maintain and look after his parents for life.
+                  The appellant mother, Urmila Dixit, signed a filed gift deed transferring her home house to her son. Simultaneously, a contemporaneous written promissory note (<em>Vachan Patra</em>) was signed by the son, expressly promising to maintain and look after his parents for life.
                 </p>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Following the registration, the son began mistreating the mother and completely stopped providing for her basic medical and daily needs. The mother petitioned the Maintenance Tribunal under Section 23. Both the Tribunal and the District Collector declared the gift deed void. The Single Judge of the High Court affirmed this order. However, the Division Bench of the High Court reversed it, adopting a hyper-technical view that the maintenance condition was not written inside the gift deed itself.
+                  Following the filing, the son began mistreating the mother and completely stopped providing for her basic medical and daily needs. The mother petitioned the Maintenance Tribunal under Section 23. Both the Tribunal and the District Collector declared the gift deed void. The Single Judge of the High Court affirmed this order. However, the Division Bench of the High Court reversed it, adopting a hyper-technical view that the maintenance condition was not written inside the gift deed itself.
                 </p>
               </div>
 
@@ -631,13 +631,13 @@ export default function GiftDeedCancellationClient() {
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>2. Contemporaneous Documents Are Legally Binding:</strong> The Court clarified that the maintenance condition does not need to be written strictly within the four corners of the gift deed. A contemporaneous <em>Vachan Patra</em>, promissory note, or family agreement executed alongside the deed proves that the transfer was conditional upon lifelong care.
+                      <strong>2. Contemporaneous Papers Are Legally Binding:</strong> The Court clarified that the maintenance condition does not need to be written strictly within the four corners of the gift deed. A contemporaneous <em>Vachan Patra</em>, promissory note, or family pact signed alongside the deed proves that the transfer was conditional upon lifelong care.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>3. Reversal of the Division Bench:</strong> The Supreme Court set aside the High Court Division Bench order, fully restoring the Maintenance Tribunal&apos;s cancellation of the gift deed and protecting the mother&apos;s property rights.
+                      <strong>3. Reversal of the Division Bench:</strong> The Supreme Court set aside the High Court Division Bench order, fully restoring the Maintenance Tribunal&apos;s cancellation of the gift deed and protecting the mother&apos;s asset rights.
                     </span>
                   </li>
                 </ul>
@@ -650,7 +650,7 @@ export default function GiftDeedCancellationClient() {
                   Key Distinction: Urmila Dixit (2025) vs Sudesh Chhikara (2022)
                 </span>
                 <p className="leading-relaxed">
-                  In <em>Sudesh Chhikara v. Ramti Devi (2022 INSC 1277)</em>, the Supreme Court had ruled that Section 23 cannot be invoked if the gift deed was completely unconditional and there was zero written agreement. The <em>Urmila Dixit</em> ruling harmonizes this by confirming that contemporaneous side agreements or <em>Vachan Patras</em> fulfill the condition requirement, protecting parents who did not insert the clause into the deed itself.
+                  In <em>Sudesh Chhikara v. Ramti Devi (2022 INSC 1277)</em>, the Supreme Court had ruled that Section 23 cannot be invoked if the gift deed was completely unconditional and there was zero written pact. The <em>Urmila Dixit</em> ruling harmonizes this by confirming that contemporaneous side agreements or <em>Vachan Patras</em> fulfill the condition rule, protecting parents who did not insert the clause into the deed itself.
                 </p>
               </div>
             </section>
@@ -668,7 +668,7 @@ export default function GiftDeedCancellationClient() {
                 3. When Can a Gift Deed Be Cancelled vs Irrevocable?
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under Section 126 of the <em>Transfer of Property Act, 1882</em> (TPA), the general principle of Indian property law is that a completed gift cannot be revoked at the mere will of the donor. Once accepted by the donee and registered, it transfers legal ownership permanently.
+                Under Section 126 of the <em>Transfer of Property Act, 1882</em> (TPA), the general principle of Indian property law is that a completed gift cannot be revoked at the mere will of the donor. Once accepted by the donee and filed, it transfers legal ownership permanently.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 However, Indian law recognizes four distinct legal avenues where a gift deed can be revoked or declared void:
@@ -719,8 +719,8 @@ export default function GiftDeedCancellationClient() {
                         <td className="py-3 px-4 font-semibold text-slate-900">
                           Mutual Cancellation Deed
                         </td>
-                        <td className="py-3 px-4">Registration Act 1908</td>
-                        <td className="py-3 px-4 font-medium text-slate-700">Sub-Registrar Office</td>
+                        <td className="py-3 px-4">Filing Act 1908</td>
+                        <td className="py-3 px-4 font-medium text-slate-700">SRO office</td>
                         <td className="py-3 px-4">Mutual consent of both parties</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">Cancelled by Consent</td>
                       </tr>
@@ -746,13 +746,13 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileSignature className="w-4 h-4" />
-                <span>Unique Drafting Asset &bull; Free Lawyer-Verified Clause</span>
+                <span>Unique Drafting Asset &bull; Free Lawyer-Checked Clause</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Maintenance Condition Clause: Free Sample Drafting
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                If you are a parent considering a gift deed or settlement deed, you must never sign a standard template drafted by property brokers. To ensure protection under Section 23 of the MWPSC Act, 2007, ensure this exact lawyer-approved covenant is incorporated into the deed.
+                If you are a parent considering a gift deed or deal deed, you must never sign a standard template drafted by asset brokers. To ensure protection under Section 23 of the MWPSC Act, 2007, ensure this exact lawyer-approved covenant is incorporated into the deed.
               </p>
 
               {/* Sample Clause Box */}
@@ -789,7 +789,7 @@ export default function GiftDeedCancellationClient() {
                 <div className="p-3.5 rounded-xl border border-slate-200 bg-slate-50 text-xs text-slate-700 space-y-1">
                   <span className="font-bold text-[#172228] flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    Explicit Statutory Citation:
+                    Explicit Legal Citation:
                   </span>
                   <p>
                     Directly cites Section 23 of the MWPSC Act 2007, eliminating any ambiguity regarding the governing law.
@@ -816,10 +816,10 @@ export default function GiftDeedCancellationClient() {
                 <div className="p-3.5 rounded-xl border border-slate-200 bg-slate-50 text-xs text-slate-700 space-y-1">
                   <span className="font-bold text-[#172228] flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    Tribunal Jurisdiction Clause:
+                    Tribunal Area Clause:
                   </span>
                   <p>
-                    Authorizes the Maintenance Tribunal to summarily void registration and evict the child upon default.
+                    Authorizes the Maintenance Tribunal to summarily void filing and evict the child upon default.
                   </p>
                 </div>
               </div>
@@ -832,13 +832,13 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Eye className="w-4 h-4" />
-                <span>Visual Blueprint &bull; Statutory Judicial Flow</span>
+                <span>Visual Blueprint &bull; Legal Judicial Flow</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Blueprint: Gift Cancellation Roadmap
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The diagram below illustrates the comprehensive statutory architecture of gift deed cancellation in India, capturing the legal stages from gift deed execution to Maintenance Tribunal voiding under Section 23.
+                The diagram below illustrates the full legal architecture of gift deed cancellation in India, capturing the legal stages from gift deed signing to Maintenance Tribunal voiding under Section 23.
               </p>
 
               {/* Infographic Image Container */}
@@ -855,7 +855,7 @@ export default function GiftDeedCancellationClient() {
                 <div className="p-4 bg-white border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
                   <div>
                     <span className="font-bold text-slate-900">
-                      Figure 1.0: Statutory Cancellation Framework Under MWPSC Act s.23
+                      Figure 1.0: Legal Cancellation Framework Under MWPSC Act s.23
                     </span>
                     <p className="text-[11px] text-slate-500">
                       Featuring Supreme Court precedent <em>Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</em>.
@@ -894,17 +894,17 @@ export default function GiftDeedCancellationClient() {
                   {
                     step: "1",
                     title: "Evidentiary Dossier Gathering",
-                    desc: "Assemble certified copies of the registered gift deed, contemporaneous Vachan Patra or agreements, medical prescriptions, bills paid without child support, and proof that the parent was 60+ at transfer.",
+                    desc: "Assemble certified copies of the filed gift deed, contemporaneous Vachan Patra or agreements, medical prescriptions, bills paid without child support, and proof that the parent was 60+ at transfer.",
                   },
                   {
                     step: "2",
                     title: "Statutory Legal Demand Notice",
-                    desc: "Serve a formal legal notice through an advocate calling upon the child to fulfill their maintenance obligations within 15 days or face Section 23 cancellation proceedings.",
+                    desc: "Serve a formal legal notice through an lawyer calling upon the child to fulfill their maintenance obligations within 15 days or face Section 23 cancellation proceedings.",
                   },
                   {
                     step: "3",
                     title: "Filing Petition Before Sub-Divisional Magistrate",
-                    desc: "File a detailed application under Section 5 read with Section 23 before the Maintenance Tribunal of the sub-division where the parent resides or where the property is situated.",
+                    desc: "File a detailed form under Section 5 read with Section 23 before the Maintenance Tribunal of the sub-division where the parent resides or where the asset is situated.",
                   },
                   {
                     step: "4",
@@ -914,12 +914,12 @@ export default function GiftDeedCancellationClient() {
                   {
                     step: "5",
                     title: "Passing of Cancellation & Eviction Order",
-                    desc: "Upon establishing non-maintenance, the Tribunal declares the transfer void under Section 23(1) and orders the child and their spouse to vacate the property immediately.",
+                    desc: "Upon establishing non-maintenance, the Tribunal declares the transfer void under Section 23(1) and orders the child and their spouse to vacate the asset right away.",
                   },
                   {
                     step: "6",
                     title: "Revenue Mutation Reversal & Police Assistance",
-                    desc: "The certified order is submitted to the local Tehsildar / Talathi to cancel mutation entries in the child's name, restoring the parent as sole titleholder with local police enforcement.",
+                    desc: "The certified order is submitted to the local Tehsildar / Talathi to cancel name change entries in the child's name, restoring the parent as sole titleholder with local police enforcement.",
                   },
                 ].map((s) => (
                   <div
@@ -945,13 +945,13 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Evidentiary Dossier &bull; 4 Legal Pillars</span>
+                <span>Proof Dossier &bull; 4 Legal Pillars</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Key Evidence Required to Cancel a Gift Deed
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Maintenance Tribunals conduct summary proceedings, making documentary evidence decisive. Parents must present concrete records across four specific evidentiary pillars to withstand appellate scrutiny.
+                Maintenance Tribunals conduct summary proceedings, making documentary evidence decisive. Parents must present concrete records across four specific proof pillars to withstand appellate scrutiny.
               </p>
 
               {/* 2x2 Feature Grid */}
@@ -962,22 +962,22 @@ export default function GiftDeedCancellationClient() {
                     <span>1. Age Proof (Senior Citizen Status)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Aadhaar card, voter ID, passport, or birth certificate demonstrating the parent was at least 60 years old when executing the gift deed.
+                    Aadhaar card, voter ID, passport, or birth paper demonstrating the parent was at least 60 years old when signing the gift deed.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl border border-purple-200 bg-purple-50/30 space-y-2">
                   <div className="flex items-center gap-2 text-purple-700 font-bold text-sm">
                     <FileCheck className="w-4 h-4" />
-                    <span>2. Maintenance Covenant Documentation</span>
+                    <span>2. Maintenance Covenant Papers</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Certified registered gift deed with express maintenance covenants, or contemporaneous written promissory notes (<em>Vachan Patra</em> per <em>Urmila Dixit</em>).
+                    Certified filed gift deed with express maintenance covenants, or contemporaneous written promissory notes (<em>Vachan Patra</em> per <em>Urmila Dixit</em>).
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl border border-rose-200 bg-rose-50/30 space-y-2">
                   <div className="flex items-center gap-2 text-rose-700 font-bold text-sm">
                     <HeartHandshake className="w-4 h-4" />
-                    <span>3. Proof of Neglect &amp; Non-Provision</span>
+                    <span>3. Proof of Neglect &amp; Non-Rule</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Bank statements showing child contributes zero funds, medical bills paid by parents, utility receipts, or police complaints regarding physical harassment.
@@ -986,10 +986,10 @@ export default function GiftDeedCancellationClient() {
                 <div className="p-4 rounded-2xl border border-emerald-200 bg-emerald-50/30 space-y-2">
                   <div className="flex items-center gap-2 text-emerald-700 font-bold text-sm">
                     <Landmark className="w-4 h-4" />
-                    <span>4. Title &amp; Property Registry Extracts</span>
+                    <span>4. Title &amp; Asset Registry Extracts</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Certified copy of the Gift Deed, Index II extract, property tax challans, and mutation records verifying the property was self-acquired.
+                    Certified copy of the Gift Deed, Index II extract, asset tax challans, and name change records verifying the asset was self-acquired.
                   </p>
                 </div>
               </div>
@@ -1008,7 +1008,7 @@ export default function GiftDeedCancellationClient() {
                 8. Three-Tier Appeals: Tribunal, Collector, High Court
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                When a Maintenance Tribunal passes an order voiding a gift deed, aggrieved children frequently attempt to stall eviction by filing appeals. Understanding the jurisdictional hierarchy ensures parents are prepared for every stage of litigation.
+                When a Maintenance Tribunal passes an order voiding a gift deed, aggrieved children frequently attempt to stall eviction by filing appeals. Understanding the local hierarchy ensures parents are prepared for every stage of court fights.
               </p>
 
               {/* Hierarchy Table */}
@@ -1018,9 +1018,9 @@ export default function GiftDeedCancellationClient() {
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="py-3.5 px-4 font-bold">Judicial Tier</th>
-                        <th className="py-3.5 px-4 font-bold">Presiding Authority</th>
-                        <th className="py-3.5 px-4 font-bold">Statutory Limitation</th>
-                        <th className="py-3.5 px-4 font-bold">Jurisdictional Scope</th>
+                        <th className="py-3.5 px-4 font-bold">Presiding Office</th>
+                        <th className="py-3.5 px-4 font-bold">Legal Limitation</th>
+                        <th className="py-3.5 px-4 font-bold">Local Scope</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700 bg-white">
@@ -1028,7 +1028,7 @@ export default function GiftDeedCancellationClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Tier 1: Maintenance Tribunal</td>
                         <td className="py-3 px-4 font-semibold text-blue-700">Sub-Divisional Magistrate (SDM)</td>
                         <td className="py-3 px-4">90 days target</td>
-                        <td className="py-3 px-4">Original jurisdiction to void deed &amp; order eviction</td>
+                        <td className="py-3 px-4">Original area to void deed &amp; order eviction</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 px-4 font-bold text-slate-900">Tier 2: Appellate Tribunal</td>
@@ -1040,7 +1040,7 @@ export default function GiftDeedCancellationClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Tier 3: High Court</td>
                         <td className="py-3 px-4 font-semibold text-slate-900">High Court Division / Single Bench</td>
                         <td className="py-3 px-4">Article 226/227 Writ</td>
-                        <td className="py-3 px-4">Judicial review of jurisdictional errors or illegality</td>
+                        <td className="py-3 px-4">Judicial review of local errors or illegality</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors bg-rose-50/30">
                         <td className="py-3 px-4 font-bold text-rose-950">Tier 4: Supreme Court</td>
@@ -1061,7 +1061,7 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Clock className="w-4 h-4" />
-                <span>Statutory Timeframe &bull; Procedural Milestones</span>
+                <span>Legal Timeframe &bull; Procedural Milestones</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Procedural Timeline: From Notice to Possession Recovery
@@ -1091,9 +1091,9 @@ export default function GiftDeedCancellationClient() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 px-4 font-mono font-bold text-slate-900">PHASE 2</td>
-                        <td className="py-3 px-4 font-medium text-slate-900">Filing Section 23 Application</td>
+                        <td className="py-3 px-4 font-medium text-slate-900">Filing Section 23 Form</td>
                         <td className="py-3 px-4 text-blue-700 font-semibold">Days 16 – 30</td>
-                        <td className="py-3 px-4">Tribunal case registration &amp; notice issuance</td>
+                        <td className="py-3 px-4">Tribunal case filing &amp; notice issuance</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 px-4 font-mono font-bold text-slate-900">PHASE 3</td>
@@ -1115,9 +1115,9 @@ export default function GiftDeedCancellationClient() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors bg-blue-50/40">
                         <td className="py-3 px-4 font-mono font-bold text-blue-950">PHASE 6</td>
-                        <td className="py-3 px-4 font-medium text-blue-950">Mutation Reversal &amp; Eviction</td>
+                        <td className="py-3 px-4 font-medium text-blue-950">Name Change Reversal &amp; Eviction</td>
                         <td className="py-3 px-4 text-blue-700 font-bold">Days 90 – 120</td>
-                        <td className="py-3 px-4 font-semibold text-blue-900">Tehsildar mutation + police eviction</td>
+                        <td className="py-3 px-4 font-semibold text-blue-900">Tehsildar name change + police eviction</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1138,7 +1138,7 @@ export default function GiftDeedCancellationClient() {
                 10. Four Complex Scenarios: Daughters-in-Law &amp; Third Parties
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Property disputes involving senior citizens often intersect with other matrimonial and property laws. Here is how Indian courts handle four frequent conflict scenarios.
+                Asset fights involving senior citizens often intersect with other matrimonial and asset laws. Here is how Indian courts handle four frequent conflict scenarios.
               </p>
 
               {/* 2x2 Specialized Grid */}
@@ -1149,7 +1149,7 @@ export default function GiftDeedCancellationClient() {
                     <span>Daughter-in-Law DV Act Claims</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Daughters-in-law often claim a &quot;shared household&quot; right under Section 17 of the Protection of Women from Domestic Violence Act, 2005. In <em>S. Vanitha v. Deputy Commissioner (2020)</em>, the Supreme Court held both Acts must be harmonized. However, an estranged spouse cannot defeat an elderly parent&apos;s right to shelter and dignity in self-acquired property.
+                    Daughters-in-law often claim a &quot;shared household&quot; right under Section 17 of the Protection of Women from Domestic Violence Act, 2005. In <em>S. Vanitha v. Deputy Commissioner (2020)</em>, the Supreme Court held both Acts must be harmonized. However, an estranged spouse cannot defeat an elderly parent&apos;s right to shelter and dignity in self-acquired asset.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 space-y-2">
@@ -1158,7 +1158,7 @@ export default function GiftDeedCancellationClient() {
                     <span>Subsequent Sale to Third-Party Buyer</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If the child sells the property before the parent files a petition, Section 23(2) allows enforcement of maintenance rights against transferees who had notice. However, bona fide purchasers for value create heavy litigation hurdles, illustrating why gifting away title during life is risky.
+                    If the child sells the asset before the parent files a petition, Section 23(2) allows enforcement of maintenance rights against transferees who had notice. However, bona fide purchasers for value create heavy court fights hurdles, illustrating why gifting away title during life is risky.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 space-y-2">
@@ -1167,7 +1167,7 @@ export default function GiftDeedCancellationClient() {
                     <span>Unconditional Deed with Oral Promises</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Where parents executed a standard registered gift deed without any maintenance clause or contemporaneous agreement, Section 23 cannot be invoked per <em>Sudesh Chhikara (2022)</em>. The parent&apos;s remedy shifts to seeking monthly maintenance under Section 9 or filing a civil suit for undue influence.
+                    Where parents signed a standard filed gift deed without any maintenance clause or contemporaneous pact, Section 23 cannot be invoked per <em>Sudesh Chhikara (2022)</em>. The parent&apos;s remedy shifts to seeking monthly maintenance under Section 9 or filing a civil suit for undue influence.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 space-y-2">
@@ -1176,7 +1176,7 @@ export default function GiftDeedCancellationClient() {
                     <span>Joint Ownership by Both Elderly Parents</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    When property is jointly held by husband and wife, but only one parent executed a gift deed of their undivided share, the surviving spouse retains their independent 50% undivided ownership. The child cannot dispossess the surviving mother from the joint marital home.
+                    When asset is jointly held by husband and wife, but only one parent signed a gift deed of their undivided share, the surviving spouse retains their independent 50% undivided ownership. The child cannot dispossess the surviving mother from the joint marital home.
                   </p>
                 </div>
               </div>
@@ -1198,7 +1198,7 @@ export default function GiftDeedCancellationClient() {
                 While the Supreme Court&apos;s <em>Urmila Dixit</em> ruling provides historic protection, consider the emotional reality: <strong>an elderly mother had to fight her own son through four layers of courts all the way to the Supreme Court of India</strong> to reclaim her home.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Executing a Gift Deed surrenders your ownership title today. Even with Section 23, you must endure tribunal hearings, hire advocates, produce medical receipts, and prove you are being neglected.
+                Signing a Gift Deed surrenders your ownership title today. Even with Section 23, you must endure tribunal hearings, hire lawyers, produce medical receipts, and prove you are being neglected.
               </p>
 
               {/* Side-by-Side Comparison Table */}
@@ -1249,7 +1249,7 @@ export default function GiftDeedCancellationClient() {
                   Never Beg for Shelter in Your Own Home
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                  A legally structured Will keeps you the absolute master of your property until your last breath. Pay ₹0 stamp duty, collect all rental income, and change beneficiaries anytime without asking permission from anyone.
+                  A legally structured Will keeps you the absolute master of your asset until your last breath. Pay ₹0 stamp duty, collect all rental income, and change heirs anytime without asking permission from anyone.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
                   <a
@@ -1278,13 +1278,13 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Zap className="w-4 h-4" />
-                <span>Interactive Assessment Tool &bull; Instant Analysis</span>
+                <span>Free Assessment Tool &bull; Instant Analysis</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                12. Interactive Check: Are You at Risk Under a Gift Deed?
+                12. Free Check: Are You at Risk Under a Gift Deed?
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Use this free diagnostic tool to evaluate your property transfer risk under the Senior Citizens Act, 2007 and discover the safest legal strategy for your family.
+                Use this free diagnostic tool to evaluate your asset transfer risk under the Senior Citizens Act, 2007 and discover the safest legal strategy for your family.
               </p>
 
               {/* Assessment Form */}
@@ -1292,7 +1292,7 @@ export default function GiftDeedCancellationClient() {
                 <div className="space-y-4">
                   <div>
                     <label className="block text-xs font-bold text-[#172228] uppercase tracking-wide mb-2">
-                      1. Current Property Transfer Status
+                      1. Current Asset Transfer Status
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                       {[
@@ -1323,7 +1323,7 @@ export default function GiftDeedCancellationClient() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-xs">
                       {[
                         { id: "will", label: "Will / Testament (No Gift)" },
-                        { id: "express", label: "Written in Registered Deed" },
+                        { id: "express", label: "Written in Filed Deed" },
                         { id: "vachan", label: "Signed Vachan Patra / Note" },
                         { id: "oral", label: "Only Oral Promises" },
                       ].map((opt) => (
@@ -1388,7 +1388,7 @@ export default function GiftDeedCancellationClient() {
                   </p>
 
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/80 text-xs text-slate-800 space-y-1">
-                    <strong className="text-[#172228] block">Advocate Recommendation:</strong>
+                    <strong className="text-[#172228] block">Lawyer Recommendation:</strong>
                     <p className="leading-relaxed">{riskEvaluation.recommendation}</p>
                   </div>
 
@@ -1442,46 +1442,46 @@ export default function GiftDeedCancellationClient() {
                 13. Frequently Asked Questions: Cancelling a Gift Deed
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Click any question below to expand detailed legal explanations from our senior succession advocates.
+                Click any question below to expand detailed legal explanations from our senior estate lawyers.
               </p>
 
               <div className="space-y-3 pt-2">
                 {[
                   {
                     q: "Can a gift deed be cancelled by parents if the child neglects them?",
-                    a: "Yes. Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if a senior citizen (aged 60+) gifts property subject to the condition of lifelong maintenance and care, and the child fails to provide basic amenities, the Maintenance Tribunal can declare the gift deed null and void.",
+                    a: "Yes. Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if a senior citizen (aged 60+) gifts asset subject to the condition of lifelong maintenance and care, and the child fails to provide basic amenities, the Maintenance Tribunal can declare the gift deed null and void.",
                   },
                   {
                     q: "What did the Supreme Court decide in Urmila Dixit v. Sunil Sharan Dixit (2025)?",
-                    a: "In Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20, decided January 2, 2025), the Supreme Court ruled that the maintenance condition does not need to be written strictly inside the gift deed itself. Contemporaneous documents such as a signed promissory note (Vachan Patra) or written undertaking executed during the property transfer can be relied upon to void the deed under Section 23.",
+                    a: "In Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20, decided January 2, 2025), the Supreme Court ruled that the maintenance condition does not need to be written strictly inside the gift deed itself. Contemporaneous papers such as a signed promissory note (Vachan Patra) or written undertaking signed during the asset transfer can be relied upon to void the deed under Section 23.",
                   },
                   {
                     q: "Can an unconditional gift deed be cancelled under Section 23?",
                     a: "Generally no. As held by the Supreme Court in Sudesh Chhikara v. Ramti Devi (2022), Section 23 requires that the transfer was subject to the condition that the transferee provides basic amenities. If a deed contains no maintenance clause and no contemporaneous written undertaking exists, the Maintenance Tribunal cannot void the transfer. The parent must approach civil court for fraud or seek monthly maintenance.",
                   },
                   {
-                    q: "What is the statutory timeline for the Maintenance Tribunal to decide a cancellation petition?",
+                    q: "What is the legal timeline for the Maintenance Tribunal to decide a cancellation petition?",
                     a: "Under Section 5(6) of the Senior Citizens Act, the Maintenance Tribunal is mandated to dispose of the proceedings within 90 days from the date of service of notice to the respondent. In exceptional circumstances, the Tribunal may extend this period by up to 30 days with written reasons.",
                   },
                   {
                     q: "Can parents evict an abusive child and daughter-in-law from the gifted house?",
-                    a: "Yes. Once the Maintenance Tribunal voids the gift deed under Section 23(1), the transferee child loses all legal title and becomes an unauthorized occupant. The Tribunal has summary powers to order their eviction and direct the local police administration to restore peaceful physical possession to the elderly parents.",
+                    a: "Yes. Once the Maintenance Tribunal voids the gift deed under Section 23(1), the transferee child loses all legal title and becomes an unauthorized occupant. The Tribunal has summary powers to order their eviction and direct the local police care to restore peaceful physical possession to the elderly parents.",
                   },
                   {
-                    q: "What happens if the child sells the gifted property to a third party?",
-                    a: "Under Section 23(2) of the Act, if a senior citizen has a right to receive maintenance out of an estate and the property is transferred with notice of such right or gratuitously, the right can be enforced against the transferee. However, if sold to a bona fide purchaser for valuable consideration without notice, litigation becomes complex, underscoring why parents should never transfer title during their lifetime.",
+                    q: "What happens if the child sells the gifted asset to a third party?",
+                    a: "Under Section 23(2) of the Act, if a senior citizen has a right to receive maintenance out of an estate and the asset is transferred with notice of such right or gratuitously, the right can be enforced against the transferee. However, if sold to a bona fide purchaser for valuable consideration without notice, court fights becomes complex, underscoring why parents should never transfer title during their lifetime.",
                   },
                   {
-                    q: "Can a gift deed executed before 2007 be cancelled under Section 23?",
-                    a: "No. Section 23 explicitly applies only to transfers of property executed after the commencement of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007 in that respective state. Transfers executed before the Act came into force can only be challenged in civil court under the Indian Contract Act or Transfer of Property Act.",
+                    q: "Can a gift deed signed before 2007 be cancelled under Section 23?",
+                    a: "No. Section 23 explicitly applies only to transfers of asset signed after the commencement of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007 in that respective state. Transfers signed before the Act came into force can only be challenged in civil court under the Indian Contract Act or Transfer of Property Act.",
                   },
                   {
-                    q: "Why is creating a Will safer for parents than executing a conditional gift deed?",
+                    q: "Why is creating a Will safer for parents than signing a conditional gift deed?",
                     a: "A Will ensures the parent retains 100% legal ownership, possession, and rental income for life. Unlike a gift deed, a Will transfers title only after death and can be revoked or updated unilaterally at any time without going to court, paying stamp duty, or proving child neglect before a tribunal.",
                   },
                   {
                     q: "Do parents need a lawyer to file a case before the Maintenance Tribunal?",
-                    a: "Section 17 of the Senior Citizens Act explicitly bars legal representation by legal practitioners before the Maintenance Tribunal to keep proceedings informal and accessible. However, senior citizens can seek advocate guidance to draft the petition and organize evidence, or be represented by an authorized Maintenance Officer.",
+                    a: "Section 17 of the Senior Citizens Act explicitly bars legal representation by legal practitioners before the Maintenance Tribunal to keep proceedings informal and accessible. However, senior citizens can seek lawyer guidance to draft the petition and organize evidence, or be represented by an authorized Maintenance Officer.",
                   },
                   {
                     q: "Can parents cancel a gift deed if the child pays money but inflicts emotional cruelty?",
@@ -1525,25 +1525,25 @@ export default function GiftDeedCancellationClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <BookOpen className="w-4 h-4" />
-                <span>Statutory Authority &bull; Verified References</span>
+                <span>Legal Office &bull; Checked References</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                14. Official Legal Citations &amp; Statutory References
+                14. Official Legal Citations &amp; Legal References
               </h3>
 
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
-                  This guide is authored under the authoritative supervision of senior advocates at WillDrafting.in, strictly complying with the following statutory provisions and constitutional precedents:
+                  This guide is authored under the authoritative supervision of senior lawyers at WillDrafting.in, strictly complying with the following legal rules and constitutional precedents:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-600">
                   <li>
-                    <strong>Maintenance and Welfare of Parents and Senior Citizens Act, 2007:</strong> Section 23 (Transfer of property to be void in certain circumstances); Section 5 (Application for maintenance); Section 7 (Constitution of Maintenance Tribunal); Section 16 (Appeals); Section 17 (Right to legal representation); Section 22 (Protection of property).
+                    <strong>Maintenance and Welfare of Parents and Senior Citizens Act, 2007:</strong> Section 23 (Transfer of property to be void in certain circumstances); Section 5 (Form for maintenance); Section 7 (Constitution of Maintenance Tribunal); Section 16 (Appeals); Section 17 (Right to legal representation); Section 22 (Protection of asset).
                   </li>
                   <li>
                     <strong>Transfer of Property Act, 1882:</strong> Section 122 (Gift defined); Section 123 (Transfer how effected); Section 126 (When gift may be suspended or revoked).
                   </li>
                   <li>
-                    <strong>Indian Succession Act, 1925:</strong> Section 59 (Person capable of making Wills); Section 62 (Will may be revoked or altered); Section 63 (Execution of unprivileged Wills).
+                    <strong>Indian Succession Act, 1925:</strong> Section 59 (Person capable of making Wills); Section 62 (Will may be revoked or altered); Section 63 (Signing of unprivileged Wills).
                   </li>
                   <li>
                     <strong>Landmark Supreme Court Judgments:</strong> <em>Urmila Dixit v. Sunil Sharan Dixit &amp; Ors.</em> (2025 INSC 20, decided Jan 2, 2025); <em>Sudesh Chhikara v. Ramti Devi &amp; Anr.</em> (2022 INSC 1277); <em>S. Vanitha v. Deputy Commissioner, Bengaluru Urban</em> (2020 INSC 696).
@@ -1554,7 +1554,7 @@ export default function GiftDeedCancellationClient() {
               {/* Verified Government Portals */}
               <div className="pt-3 border-t border-slate-200">
                 <span className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Verified Government Legal Portals:
+                  Checked Government Legal Portals:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {[
@@ -1592,7 +1592,7 @@ export default function GiftDeedCancellationClient() {
               {/* Related Internal Succession Guides */}
               <div className="pt-3 border-t border-slate-200">
                 <span className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                  Related Estate Planning &amp; Succession Guides:
+                  Related Estate Planning &amp; Estate Guides:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {[
@@ -1605,7 +1605,7 @@ export default function GiftDeedCancellationClient() {
                       href: "/templates/will-format-india",
                     },
                     {
-                      label: "How to Challenge a Will in India",
+                      label: "How to Fight a Will in India",
                       href: "/blogs/how-to-challenge-a-will-in-india",
                     },
                     {
@@ -1629,7 +1629,29 @@ export default function GiftDeedCancellationClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* ──────────────────────────────────────────────────
               RIGHT COLUMN: STICKY SIDEBAR (Author & CTA Cards)
@@ -1650,19 +1672,19 @@ export default function GiftDeedCancellationClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
-                  <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
+                  <p className="text-[11px] font-bold text-[#C65378]">Senior Estate Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Advocate Anuj Anand Malik has over 18 years of specialized practice in elder property disputes, testamentary successions, and High Court writ litigation under the Senior Citizens Act.
+                Lawyer Anuj Anand Malik has over 18 years of specialized practice in elder asset fights, Will successions, and High Court writ court fights under the Senior Citizens Act.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1684,10 +1706,10 @@ export default function GiftDeedCancellationClient() {
                 <span>Parent Protection Shield</span>
               </div>
               <h3 className="text-lg font-extrabold leading-tight">
-                Facing Child Neglect After Property Gift?
+                Facing Child Neglect After Asset Gift?
               </h3>
               <p className="text-xs text-white/80 leading-relaxed">
-                Do not suffer in silence. Consult specialized senior citizen advocates to draft maintenance demand notices or create an airtight Will securing remaining assets.
+                Do not suffer in silence. Consult specialized senior citizen lawyers to draft maintenance demand notices or create an airtight Will securing remaining assets.
               </p>
               <button
                 onClick={handleStartDraft}
@@ -1698,7 +1720,7 @@ export default function GiftDeedCancellationClient() {
               </button>
               <div className="pt-2 border-t border-white/10 text-[11px] text-white/70 flex items-center justify-center gap-2">
                 <PhoneCall className="w-3 h-3 text-rose-300" />
-                <span>Advocate consultation included</span>
+                <span>Lawyer talk included</span>
               </div>
             </div>
 
@@ -1718,7 +1740,7 @@ export default function GiftDeedCancellationClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Zero Court Burden:</strong> Revoke or change beneficiaries anytime without litigation.
+                    <strong>Zero Court Burden:</strong> Revoke or change heirs anytime without court fights.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1730,7 +1752,7 @@ export default function GiftDeedCancellationClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Urmila Dixit Aligned:</strong> Maintenance clauses drafted by senior advocates.
+                    <strong>Urmila Dixit Aligned:</strong> Maintenance clauses drafted by senior lawyers.
                   </span>
                 </li>
               </ul>
@@ -1762,7 +1784,7 @@ export default function GiftDeedCancellationClient() {
                     Will Format India Guide
                   </span>
                   <span className="text-[11px] text-slate-500 flex items-center gap-1 mt-1">
-                    Free Legally Verified Template <ArrowRight className="w-3 h-3 text-[#C65378]" />
+                    Free Legally Checked Template <ArrowRight className="w-3 h-3 text-[#C65378]" />
                   </span>
                 </Link>
                 <Link
@@ -1770,7 +1792,7 @@ export default function GiftDeedCancellationClient() {
                   className="block p-3 rounded-xl border border-slate-200/80 hover:border-rose-200 hover:bg-rose-50/30 transition-all text-xs group"
                 >
                   <span className="font-bold text-slate-900 group-hover:text-[#C65378] transition-colors block">
-                    How to Challenge a Will in India
+                    How to Fight a Will in India
                   </span>
                   <span className="text-[11px] text-slate-500 flex items-center gap-1 mt-1">
                     Grounds &amp; Limitation Period <ArrowRight className="w-3 h-3 text-[#C65378]" />
@@ -1794,7 +1816,7 @@ export default function GiftDeedCancellationClient() {
                   href="/blogs/how-to-challenge-a-will-in-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  How to Challenge a Will
+                  How to Fight a Will
                 </Link>
                 <Link
                   href="/templates/will-format-india"
@@ -1806,7 +1828,7 @@ export default function GiftDeedCancellationClient() {
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
               </div>
             </div>
@@ -1847,7 +1869,7 @@ export default function GiftDeedCancellationClient() {
               />
             </div>
             <div className="p-4 bg-slate-50 border-t border-slate-200 text-xs text-slate-600 flex items-center justify-between">
-              <span>Verified precedent: Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</span>
+              <span>Checked precedent: Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</span>
               <button
                 onClick={() => setShowImageModal(false)}
                 className="px-4 py-1.5 rounded-lg bg-slate-900 text-white font-semibold text-xs hover:bg-slate-800 transition-colors cursor-pointer"

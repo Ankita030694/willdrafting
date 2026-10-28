@@ -131,8 +131,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued on the signing date by a registered MBBS physician certifying sound mind and testamentary understanding.",
+    label: "Doctor's Mental Capacity Paper (For Seniors)",
+    detail: "Issued on the signing date by a filed MBBS physician certifying sound mind and Will understanding.",
     checked: true,
   },
   {
@@ -143,14 +143,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Jamabandi Fard / Farmland Revenue Document",
+    label: "Jamabandi Fard / Farmland Revenue Paper",
     detail: "Relevant for farm plots, killa numbers, and khewat details recorded on jamabandi.nic.in.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Property Tax Receipt (MCG / MCF / Municipal)",
-    detail: "Demonstrates up-to-date municipal records for smooth testamentary name change after the Will maker's demise.",
+    label: "Asset Tax Receipt (MCG / MCF / City)",
+    detail: "Demonstrates up-to-date city records for smooth Will name change after the Will maker's demise.",
     checked: false,
   },
   {
@@ -456,7 +456,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="haryana-overview" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
-                Estate Succession in Haryana
+                Estate Estate in Haryana
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 1. Estate Planning in Haryana: Overview
@@ -469,10 +469,10 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 </p>
                 <p>
                   Without a legally drafted Will, the estate of a deceased Hindu, Sikh, Jain, or Buddhist is partitioned under Section 8 of the Hindu Succession Act, 1956.
-                  This often triggers prolonged split suits (Batwara) before civil courts and revenue tehsildars, freezing bank accounts and stalling property mutations for decades.
+                  This often triggers prolonged split suits (Batwara) before civil courts and revenue tehsildars, freezing bank accounts and stalling asset mutations for decades.
                 </p>
                 <p>
-                  A properly drafted testamentary Will allows you to clearly distribute your self-acquired assets to chosen heirs.
+                  A properly drafted Will Will allows you to clearly distribute your self-acquired assets to chosen heirs.
                   It prevents family discord and ensures seamless transfer across the <strong>Haryana Jamabandi portal</strong> and <strong>HSVP Estate Offices</strong>.
                 </p>
               </div>
@@ -482,7 +482,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0 mt-1" />
                 <div className="space-y-1.5 text-xs sm:text-sm text-slate-700">
                   <h3 className="font-bold text-slate-900">
-                    Why Haryana Property Owners Need Clear Wills
+                    Why Haryana Asset Owners Need Clear Wills
                   </h3>
                   <p>
                     HSVP (formerly HUDA) plots and independent builder floors in Haryana are governed by distinct allotment bye-laws.
@@ -500,11 +500,11 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 Legal Compliance
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                2. Haryana Succession Laws &amp; Legal Basis
+                2. Haryana Estate Laws &amp; Legal Basis
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Testamentary succession in Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, along with state-specific land revenue and registration rules:
+                  Will estate in Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, along with state-specific land revenue and filing rules:
                 </p>
               </div>
 
@@ -512,7 +512,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2 text-[#C65378] font-bold text-sm">
                     <Scale className="w-4 h-4" />
-                    <span>Section 63: Attestation Mandate</span>
+                    <span>Section 63: Witness Signing Mandate</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
                     The Will maker must sign or affix their mark in the presence of at least two adult witnesses.
@@ -523,10 +523,10 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2 text-[#5F7E75] font-bold text-sm">
                     <FileCheck className="w-4 h-4" />
-                    <span>Section 18(e): Registration Optional</span>
+                    <span>Section 18(e): Filing A Choice</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
-                    Under the Registration Act, 1908, registering a Will is strictly optional in Haryana.
+                    Under the Filing Act, 1908, registering a Will is strictly a choice in Haryana.
                     A Will written on plain paper is legally binding once signed and witnessed.
                   </p>
                 </div>
@@ -544,10 +544,10 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2 text-[#C65378] font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
-                    <span>Section 59: Testamentary Capacity</span>
+                    <span>Section 59: Will Capacity</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
-                    Every person of sound mind not being a minor may dispose of their property by Will.
+                    Every person of sound mind not being a minor may dispose of their asset by Will.
                     A medical fitness paper from an MBBS doctor confirms capacity.
                   </p>
                 </div>
@@ -570,8 +570,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed <strong>only in historical presidency towns</strong> (Mumbai, Kolkata, Chennai).
                 </p>
                 <p>
-                  The Hon&apos;ble <strong>Punjab and Haryana High Court</strong> has reaffirmed in multiple landmark judgments that probate is <strong>strictly optional</strong> in Haryana.
-                  Neither HSVP, MCG, nor banks have legal authority to compel legal heirs to get probate if the Will is properly registered and unencumbered by court stay orders.
+                  The Hon&apos;ble <strong>Punjab and Haryana High Court</strong> has reaffirmed in multiple landmark judgments that probate is <strong>strictly a choice</strong> in Haryana.
+                  Neither HSVP, MCG, nor banks have legal office to compel legal heirs to get probate if the Will is properly filed and unencumbered by court stay orders.
                 </p>
               </div>
 
@@ -581,8 +581,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-[#172228] text-white">
                       <th className="p-3.5 sm:p-4 font-bold">Feature</th>
-                      <th className="p-3.5 sm:p-4 font-bold">Unregistered Will</th>
-                      <th className="p-3.5 sm:p-4 font-bold bg-[#C65378]">Registered Will (Tehsil SRO)</th>
+                      <th className="p-3.5 sm:p-4 font-bold">Plain Will</th>
+                      <th className="p-3.5 sm:p-4 font-bold bg-[#C65378]">Filed Will (Tehsil SRO)</th>
                       <th className="p-3.5 sm:p-4 font-bold">Court Probate</th>
                     </tr>
                   </thead>
@@ -627,14 +627,14 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="hsvp-and-builder-floors" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
-                Urban Property Nuances
+                Urban Asset Nuances
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 4. HSVP Plots &amp; Independent Builder Floors
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Succession planning in Haryana presents unique architectural and regulatory considerations:
+                  Estate planning in Haryana presents unique architectural and regulatory considerations:
                 </p>
               </div>
 
@@ -648,7 +648,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Haryana Shehri Vikas Pradhikaran requires an explicit chain of title upon the death of an allottee.
-                    The Estate Officer requires the registered Will, death paper, affidavit by the heir, indemnity bond, and NOCs from other Class-I legal heirs (or a 30-day public notice).
+                    The Estate Officer requires the filed Will, death paper, sworn note by the heir, indemnity bond, and NOCs from other Class-I legal heirs (or a 30-day public notice).
                   </p>
                 </div>
 
@@ -672,28 +672,28 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="mandatory-vs-optional" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
-                Book III Registration
+                Book III Filing
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                5. Will Registration: Needed vs Optional
+                5. Will Filing: Needed vs A Choice
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   While registering a Will is not legally needed, experienced estate lawyers strongly recommend registering it at your local Tehsil office.
-                  Here is why registration offers unmatched protection:
+                  Here is why filing offers unmatched protection:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                   <li>
                     <strong>Official Government Archive:</strong> A scanned copy is placed permanently in Book III at the SRO office, protecting against loss or theft.
                   </li>
                   <li>
-                    <strong>Check of Testamentary Capacity:</strong> The Sub-Registrar records biometrics and photos, preventing allegations of forgery or coercion.
+                    <strong>Check of Will Capacity:</strong> The SRO records biometrics and photos, preventing allegations of forgery or coercion.
                   </li>
                   <li>
-                    <strong>Expedited Name Change:</strong> Halqa Patwaris and HSVP Estate Officers process registered Wills with minimal office resistance.
+                    <strong>Expedited Name Change:</strong> Halqa Patwaris and HSVP Estate Officers process filed Wills with minimal office resistance.
                   </li>
                   <li>
-                    <strong>Bank Locker &amp; Asset Liquidation:</strong> Financial institutions release fixed deposits and mutual funds quickly upon inspecting registered documents.
+                    <strong>Bank Locker &amp; Asset Liquidation:</strong> Financial institutions release fixed deposits and mutual funds quickly upon inspecting filed papers.
                   </li>
                 </ul>
               </div>
@@ -704,13 +704,13 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="haryana-sro-directory" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#172228]/10 text-[#172228] text-xs font-bold uppercase tracking-wider">
-                Tehsil &amp; Sub-Registrar Offices
+                Tehsil &amp; SRO Offices
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                6. Haryana Tehsil &amp; Sub-Registrar Directory
+                6. Haryana Tehsil &amp; SRO Directory
               </h3>
               <p className="text-sm text-slate-600">
-                Search and explore the major registration divisions across Haryana for Jamabandi token booking:
+                Search and explore the major filing divisions across Haryana for Jamabandi token booking:
               </p>
 
               {/* SEARCH INPUT */}
@@ -785,7 +785,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 7. Statewide Coverage Across Haryana
               </h3>
               <p className="text-sm text-slate-600">
-                AMA Legal Solutions provides full online Will drafting and Tehsil registration accompaniment across all 22 districts of Haryana:
+                AMA Legal Solutions provides full online Will drafting and Tehsil filing accompaniment across all 22 districts of Haryana:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs font-bold text-slate-800">
@@ -848,17 +848,17 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   {
                     step: "Step 1",
                     title: "Compile Asset Inventory & Revenue Details",
-                    desc: "Gather HSVP allotment documents, conveyance deeds for builder floors, Jamabandi Fards for farm land, and banking folio numbers.",
+                    desc: "Gather HSVP allotment papers, conveyance deeds for builder floors, Jamabandi Fards for farm land, and banking folio numbers.",
                   },
                   {
                     step: "Step 2",
                     title: "Draft with Lawyer & Custody Clauses",
-                    desc: "Customize testamentary bequests, designate alternate executors, and define specific shares in common terrace and parking areas.",
+                    desc: "Customize Will bequests, designate alternate executors, and define specific shares in common terrace and parking areas.",
                   },
                   {
                     step: "Step 3",
                     title: "Execute Before Two Independent Witnesses",
-                    desc: "Print the finalized document on clean A4 paper. Will maker and two independent adult witnesses sign every page simultaneously.",
+                    desc: "Print the finalized paper on clean A4 paper. Will maker and two independent adult witnesses sign every page simultaneously.",
                   },
                   {
                     step: "Step 4",
@@ -896,12 +896,12 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 Senior Citizen Facility
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                9. Doorstep Home Registration: Section 31
+                9. Doorstep Home Filing: Section 31
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Senior citizens, ailing testators, and hospital-bound patients in Haryana can register their Will without physically traveling to crowded Tehsil premises.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal power to conduct a registration commission at the Will maker&apos;s residence or hospital room.
+                  Senior citizens, ailing Will makers, and hospital-bound patients in Haryana can register their Will without physically traveling to crowded Tehsil premises.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO has the legal power to conduct a filing commission at the Will maker&apos;s residence or hospital room.
                 </p>
                 <p>
                   AMA Legal Solutions coordinates the entire doorstep commission process across DLF Phases 1 to 5, Golf Course Road, Sushant Lok, Faridabad sectors, Panchkula, and all major cities in Haryana.
@@ -911,11 +911,11 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-2xs space-y-3">
                 <h3 className="font-bold text-sm sm:text-base text-[#172228] flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Rules for Section 31 Home Registration</span>
+                  <span>Rules for Section 31 Home Filing</span>
                 </h3>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-600">
-                  <li>Formal written requisition submitted to the jurisdictional Tehsildar / Sub-Registrar.</li>
-                  <li>Medical fitness and immobility paper issued by a registered MBBS doctor.</li>
+                  <li>Formal written requisition submitted to the local Tehsildar / SRO.</li>
+                  <li>Medical fitness and immobility paper issued by a filed MBBS doctor.</li>
                   <li>Payment of official government commission conveyance charges.</li>
                   <li>Physical presence of the Will maker and two independent witnesses at the home or hospital.</li>
                 </ul>
@@ -927,11 +927,11 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="documents-checklist" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
-                Interactive Checklist
+                Free Checklist
               </div>
               <div className="flex items-center justify-between flex-wrap gap-3">
                 <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                  10. Checklist: Documents for Will in Haryana
+                  10. Checklist: Papers for Will in Haryana
                 </h3>
                 <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-extrabold border border-emerald-200">
                   {checkedCount} of {checklist.length} Completed
@@ -1010,12 +1010,12 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 Government Charges
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                12. Haryana SRO Registration Fees &amp; Duty
+                12. Haryana SRO Filing Fees &amp; Duty
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Registering a Will in Haryana is very affordable because testamentary instruments are exempt from stamp duty.
-                  There are zero percentage-based taxes on property value:
+                  Registering a Will in Haryana is very affordable because Will instruments are exempt from stamp duty.
+                  There are zero percentage-based taxes on asset value:
                 </p>
               </div>
 
@@ -1035,7 +1035,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4">Execute directly on clean white A4 paper. No e-stamp required.</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">Registration Fee</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">Filing Fee</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹100 to ₹200</td>
                       <td className="p-3 sm:p-4">Paid online or via treasury challan during Jamabandi token booking.</td>
                     </tr>
@@ -1075,7 +1075,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">one-time</span>
                     </div>
                     <p className="text-xs text-slate-600">
-                      Standard lawyer-drafted testamentary Will for simple estates with urban apartments or bank accounts.
+                      Standard lawyer-drafted Will Will for simple estates with urban apartments or bank accounts.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1142,7 +1142,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 {/* PLAN 3 */}
                 <div className="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-2xs flex flex-col justify-between space-y-6">
                   <div className="space-y-3">
-                    <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Tehsil Registration</span>
+                    <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Tehsil Filing</span>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-extrabold text-[#172228]">₹9,990</span>
                       <span className="text-xs text-slate-500">one-time</span>
@@ -1169,7 +1169,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     href="/services/will-registration"
                     className="w-full py-3 rounded-xl bg-slate-100 text-[#172228] text-center text-xs font-bold hover:bg-slate-200 transition-colors"
                   >
-                    Explore Registration
+                    Explore Filing
                   </a>
                 </div>
               </div>
@@ -1229,13 +1229,13 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <div className="flex items-start gap-3">
                   <Landmark className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Indian Succession Act, 1925:</strong> Section 59 (capacity to make Will), Section 63 (signing and attestation rules), and Section 213 (probate applicability limited to presidency towns).
+                    <strong>Indian Succession Act, 1925:</strong> Section 59 (capacity to make Will), Section 63 (signing and witness signing rules), and Section 213 (probate applicability limited to presidency towns).
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Landmark className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Registration Act, 1908:</strong> Section 18(e) (optional registration of testamentary documents) and Section 31 (special commission registration at residence or hospital).
+                    <strong>Filing Act, 1908:</strong> Section 18(e) (a choice filing of Will papers) and Section 31 (special commission filing at residence or hospital).
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -1253,7 +1253,29 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

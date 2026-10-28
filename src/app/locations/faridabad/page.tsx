@@ -147,7 +147,7 @@ export default function FaridabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Faridabad: Online Will Making Guide",
         description:
-          "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession.",
+          "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi filing, and smooth family estate estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function FaridabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Faridabad - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Haryana Jamabandi registration, and doorstep execution support across Faridabad, Sector 14.",
+          "Professional Will drafting, lawyer check, Haryana Jamabandi filing, and doorstep signing support across Faridabad, Sector 14.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -262,38 +262,38 @@ export default function FaridabadLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Faridabad",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Faridabad.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Faridabad.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Faridabad assets including HSVP residential plots, builder floors, Greater Faridabad high-rise apartments, MCF Property IDs, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Faridabad assets including HSVP home plots, builder floors, Greater Faridabad high-rise apartments, MCF Asset IDs, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments under Indian Succession Act.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments under Indian Succession Act.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Jamabandi Haryana e-Appointment Slot",
-            text: "Schedule your registration appointment on the Jamabandi Haryana portal (jamabandi.nic.in) for SRO Faridabad (Sector 12) or Ballabgarh and remit the nominal registration fee.",
+            text: "Schedule your filing appointment on the Jamabandi Haryana portal (jamabandi.nic.in) for SRO Faridabad (Sector 12) or Ballabgarh and remit the nominal filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Faridabad SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

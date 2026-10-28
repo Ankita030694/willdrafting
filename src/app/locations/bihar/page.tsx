@@ -143,7 +143,7 @@ export default function BiharLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Bihar: Online Will Registration Guide",
         description:
-          "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral.",
+          "Create a valid Will in Bihar with lawyer help. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij name change, and family.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function BiharLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bihar - Land Succession & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Bihar e-Nibandhan portal registration, and doorstep execution support across Patna, Gaya.",
+          "Professional Will drafting, lawyer check, Bihar e-Nibandhan portal filing, and doorstep signing support across Patna, Gaya.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -258,38 +258,38 @@ export default function BiharLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Bihar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Bihar.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Bihar.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Bihar real estate including urban apartments, ancestral Khatiyani land, Jamabandi numbers, bank deposits, and family business assets. Designate beneficiaries and an executor.",
+            text: "List your Bihar real estate including urban apartments, family Khatiyani land, Jamabandi numbers, bank deposits, and family business assets. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Legally Enforceable Will Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Bihar e-Nibandhan Online Appointment",
-            text: "Schedule your registration appointment on the Bihar e-Nibandhan portal for your relevant district SRO and remit the nominal registration fee online.",
+            text: "Schedule your filing appointment on the Bihar e-Nibandhan portal for your relevant district SRO and remit the nominal filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

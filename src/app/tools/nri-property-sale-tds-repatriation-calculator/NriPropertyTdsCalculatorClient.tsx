@@ -82,8 +82,8 @@ const CII_TABLE: Record<string, number> = {
 
 // Screaming Frog Compliant Headings (All <= 70 chars, Strictly ZERO em-dashes)
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Statutory Rules: NRI Property TDS & FEMA" },
-  { id: "interactive-calculator", label: "2. Interactive NRI Property TDS & Cash Flow Tool" },
+  { id: "statutory-framework", label: "1. Legal Rules: NRI Asset TDS & FEMA" },
+  { id: "interactive-calculator", label: "2. Free NRI Asset TDS & Cash Flow Tool" },
   { id: "cashflow-blockage-comparison", label: "3. Gross TDS vs Form 13: Cash Flow Moat" },
   { id: "section-195-tds-rates", label: "4. Section 195 TDS Rates: Long vs Short Term" },
   { id: "form-13-lower-tds-process", label: "5. Form 13 Lower TDS: TRACES Filing SOP" },
@@ -95,41 +95,41 @@ const TOC_ITEMS = [
   { id: "checklist-and-legal-clauses", label: "11. Form 13 Checklist & Sale Deed Recital" },
   { id: "cross-border-legal-profile", label: "12. Cross-Border Legal Advisory: AMA Legal" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions: NRI TDS & FEMA" },
-  { id: "statutory-citations", label: "14. Statutory Authorities & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Offices & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "Why does the buyer deduct TDS on the full sale price instead of my capital gain?",
-    a: "Under Section 195 of the Income Tax Act, 1961, the buyer is legally obligated to withhold tax on payments to non-residents. Because buyers fear heavy penalties and interest under Section 201 for short deduction, they routinely deduct TDS on the entire gross sale consideration unless the NRI seller furnishes an official Lower or Nil Deduction Certificate under Section 197 issued by the Assessing Officer.",
+    a: "Under Section 195 of the Income Tax Act, 1961, the buyer is legally obligated to withhold tax on payments to non-residents. Because buyers fear heavy penalties and interest under Section 201 for short deduction, they routinely deduct TDS on the entire gross sale consideration unless the NRI seller furnishes an official Lower or Nil Deduction Paper under Section 197 issued by the Assessing Officer.",
   },
   {
-    q: "How much cash-flow blockage does Form 13 save for an NRI selling inherited property?",
-    a: "A Form 13 Lower Deduction Certificate limits the withholding tax strictly to the actual capital gains tax liability rather than the gross sale price. For example, on a ₹3.00 Crore property with ₹80 Lakhs in capital gains, default Section 195 TDS blocks approximately ₹44.85 Lakhs (at 14.95%), whereas Form 13 limits tax to approximately ₹11.96 Lakhs, immediately unlocking ₹32.89 Lakhs in liquid funds.",
+    q: "How much cash-flow blockage does Form 13 save for an NRI selling inherited asset?",
+    a: "A Form 13 Lower Deduction Paper limits the withholding tax strictly to the actual capital gains tax liability rather than the gross sale price. For example, on a ₹3.00 Crore asset with ₹80 Lakhs in capital gains, default Section 195 TDS blocks about ₹44.85 Lakhs (at 14.95%), whereas Form 13 limits tax to about ₹11.96 Lakhs, right away unlocking ₹32.89 Lakhs in liquid funds.",
   },
   {
-    q: "Can an NRI repatriate more than USD 1 Million per financial year from inherited property sale?",
+    q: "Can an NRI repatriate more than USD 1 Million per financial year from inherited asset sale?",
     a: "Under the RBI USD 1 Million Scheme (FEMA Remittance of Assets Regulations, 2016), an NRI or OCI can repatriate up to USD 1,000,000 per financial year (April to March) from their NRO account without RBI approval. If sale proceeds exceed USD 1 Million, you may either split remittances across two financial years (e.g., March and April) or apply for prior RBI permission through your Authorized Dealer Category-I bank.",
   },
   {
-    q: "What documents are required to file Form 15CA and Form 15CB for outward remittance?",
-    a: "Repatriation requires: (1) Form 15CB certified by a Chartered Accountant verifying tax compliance, (2) Form 15CA filed online on the Income Tax e-filing portal, (3) Registered Agreement for Sale / Conveyance Deed, (4) Registered Will, Probate, or Legal Heir Certificate proving inherited title, (5) Proof of tax payment (TDS certificate Form 16A or advance tax challan), and (6) Form A2 and FEMA declaration submitted to your bank.",
+    q: "What papers are required to file Form 15CA and Form 15CB for outward remittance?",
+    a: "Sending Cash Home requires: (1) Form 15CB certified by a Chartered Accountant verifying tax compliance, (2) Form 15CA filed online on the Income Tax e-filing portal, (3) Filed Pact for Sale / Conveyance Deed, (4) Filed Will, Probate, or Legal Heir Paper proving inherited title, (5) Proof of tax payment (TDS paper Form 16A or advance tax challan), and (6) Form A2 and FEMA declaration submitted to your bank.",
   },
   {
-    q: "Does an Indian resident buyer need a TAN to buy property from an NRI?",
+    q: "Does an Indian resident buyer need a TAN to buy asset from an NRI?",
     a: "Yes. Unlike purchases from resident Indians where buyers deduct 1% TDS using PAN under Section 194-IA, purchasing from an NRI falls strictly under Section 195. The buyer MUST apply for a Tax Deduction and Collection Account Number (TAN) under Form 49B, deposit TDS via Challan ITNS 281 within 7 days from month-end, and file quarterly TDS returns in Form 27Q.",
   },
   {
-    q: "How long does it take to obtain a Section 197 Lower TDS Certificate via TRACES?",
-    a: "Processing typically requires 3 to 6 weeks from online submission on the TRACES portal. The file is assigned to the International Taxation Ward having jurisdiction over non-residents. Sellers should initiate the application immediately after signing the Agreement for Sale / MoU and well before executing the final registered sale deed.",
+    q: "How long does it take to obtain a Section 197 Lower TDS Paper via TRACES?",
+    a: "Processing typically requires 3 to 6 weeks from online submission on the TRACES portal. The file is assigned to the International Taxation Ward having area over non-residents. Sellers should initiate the form right away after signing the Pact for Sale / MoU and well before signing the final filed sale deed.",
   },
   {
-    q: "Can multiple NRI siblings selling one inherited property each repatriate USD 1 Million?",
-    a: "Yes. The RBI USD 1 Million annual limit applies individually to each separate legal heir holding a distinct PAN card. If three NRI siblings jointly inherit ancestral property in India, each co-owner can independently repatriate up to USD 1 Million per financial year through their respective NRO accounts, enabling up to USD 3 Million in aggregate family transfers.",
+    q: "Can multiple NRI siblings selling one inherited asset each repatriate USD 1 Million?",
+    a: "Yes. The RBI USD 1 Million annual limit applies individually to each separate legal heir holding a distinct PAN card. If three NRI siblings jointly inherit family asset in India, each co-owner can independently repatriate up to USD 1 Million per financial year through their respective NRO accounts, enabling up to USD 3 Million in aggregate family transfers.",
   },
   {
     q: "Can NRI sellers claim Double Taxation Relief (DTAA) in the US, UK, or Canada?",
-    a: "Yes. Under Article 13 of the India-US DTAA (and corresponding capital gains provisions in UK and Canada treaties), capital gains on immovable real estate are primarily taxable in India where the property is located. However, you can claim a Foreign Tax Credit (FTC) in your home jurisdiction (such as IRS Form 1116 in the United States) to eliminate double taxation.",
+    a: "Yes. Under Article 13 of the India-US DTAA (and corresponding capital gains rules in UK and Canada treaties), capital gains on land real estate are primarily taxable in India where the asset is located. However, you can claim a Foreign Tax Credit (FTC) in your home area (such as IRS Form 1116 in the United States) to eliminate double taxation.",
   },
 ];
 
@@ -156,7 +156,7 @@ export default function NriPropertyTdsCalculatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedForm13Checklist, setCopiedForm13Checklist] = useState<boolean>(false);
@@ -166,7 +166,7 @@ export default function NriPropertyTdsCalculatorClient() {
   // ==========================================
   // CALCULATOR STATE (INPUT PARAMETERS)
   // ==========================================
-  // Property & Sale Details
+  // Asset & Sale Details
   const [grossSalePrice, setGrossSalePrice] = useState<number>(30000000); // ₹3.00 Cr
   const [circleRateValue, setCircleRateValue] = useState<number>(27000000); // ₹2.70 Cr (Sec 50C check)
   const [acquisitionEra, setAcquisitionEra] = useState<"pre_2001" | "between_2001_and_2024" | "post_july_2024">("between_2001_and_2024");
@@ -183,13 +183,13 @@ export default function NriPropertyTdsCalculatorClient() {
   const [transferExpenses, setTransferExpenses] = useState<number>(300000); // ₹3 Lakhs (brokerage, legal)
 
   // Deductions & Reinvestments
-  const [section54Reinvestment, setSection54Reinvestment] = useState<number>(0); // New residential house
+  const [section54Reinvestment, setSection54Reinvestment] = useState<number>(0); // New home house
   const [section54ECBonds, setSection54ECBonds] = useState<number>(0); // Capital gains bonds (REC/NHAI)
 
   // Tax Rate Options
   const [ltcgRateOption, setLtcgRateOption] = useState<"12.5_flat" | "20_index">("12.5_flat");
 
-  // Repatriation Tab State
+  // Sending Cash Home Tab State
   const [targetCurrency, setTargetCurrency] = useState<string>("USD");
   const [customForexRate, setCustomForexRate] = useState<number>(86.5);
   const [priorRemittancesUsd, setPriorRemittancesUsd] = useState<number>(0);
@@ -462,7 +462,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
 
           {/* Strict Single H1 Tag (Length 57 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            NRI Inherited Property Sale TDS &amp; Repatriation Calculator
+            NRI Inherited Asset Sale TDS &amp; Sending Cash Home Tool
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -487,7 +487,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <PhoneCall className="w-4 h-4 text-[#C65378]" />
-              <span>Consult Cross-Border Advocate</span>
+              <span>Consult Cross-Border Lawyer</span>
             </Link>
           </div>
         </div>
@@ -565,7 +565,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Cross-Border Legal Authority</span>
+                <span>Cross-Border Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 49(1), 112, 195 &amp; 197 of the Income Tax Act, 1961, read with
@@ -589,7 +589,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 195 Default Trap:</strong> Without a Form 13 certificate, buyers are
+                    <strong>Section 195 Default Trap:</strong> Without a Form 13 paper, buyers are
                     legally mandated to withhold 14.95% to 23.92% TDS on the <em>entire gross sale price</em>,
                     blocking tens of lakhs in liquid capital for 12 to 24 months.
                   </span>
@@ -597,7 +597,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Form 13 Lower TDS Salvation:</strong> Applying for a Section 197 Certificate
+                    <strong>Form 13 Lower TDS Salvation:</strong> Applying for a Section 197 Paper
                     via TRACES restricts TDS strictly to your actual capital gains tax liability,
                     instantly preserving your liquidity at the time of sale.
                   </span>
@@ -628,18 +628,18 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: NRI Property Sale TDS &amp; Repatriation
+                1. Legal Rules: NRI Asset Sale TDS &amp; Sending Cash Home
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Selling real estate in India as a Non-Resident Indian (NRI) or Overseas Citizen of India
-                  (OCI) involves two strictly separated statutory regimes: <strong>The Income Tax Act, 1961</strong> (governing
-                  capital gains tax and mandatory withholding) and <strong>The Foreign Exchange Management Act, 1999 (FEMA)</strong> (governing
-                  cross-border fund repatriation).
+                  (OCI) involves two strictly separated legal regimes: <strong>The Income Tax Act, 1961</strong> (governing
+                  capital gains tax and needed withholding) and <strong>The Foreign Exchange Management Act, 1999 (FEMA)</strong> (governing
+                  cross-border fund sending cash home).
                 </p>
                 <p>
-                  Under <strong>Section 195</strong> of the Income Tax Act, any resident purchasing immovable
-                  property from a non-resident must deduct Tax Deducted at Source (TDS). Crucially, unlike
+                  Under <strong>Section 195</strong> of the Income Tax Act, any resident purchasing land
+                  asset from a non-resident must deduct Tax Deducted at Source (TDS). Crucially, unlike
                   domestic transactions between resident Indians where the buyer deducts 1% TDS under Section
                   194-IA using PAN, purchases from an NRI require the buyer to obtain a <strong>Tax Deduction and
                   Collection Account Number (TAN)</strong> and file quarterly returns in Form 27Q.
@@ -649,7 +649,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                   under-deduction, standard practice among buyers and their CAs is to deduct tax on the <strong>total
                   gross sale consideration</strong>. To protect sellers from having massive capital blocked, Parliament
                   enacted <strong>Section 197</strong>, enabling NRIs to apply for a Lower or Nil Deduction
-                  Certificate in Form 13 before registering the sale deed.
+                  Paper in Form 13 before registering the sale deed.
                 </p>
               </div>
             </section>
@@ -661,7 +661,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <span>INTERACTIVE FINANCIAL TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive NRI Property Sale TDS &amp; Cash Flow Tool
+                2. Free NRI Asset Sale TDS &amp; Cash Flow Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Calculate your Section 195 TDS on gross sale value, compare it against Form 13 Lower TDS on
@@ -692,7 +692,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     }`}
                   >
                     <Globe className="w-4 h-4" />
-                    <span>USD 1M Repatriation &amp; Forex</span>
+                    <span>USD 1M Sending Cash Home &amp; Forex</span>
                   </button>
                   <button
                     onClick={() => setActiveTab("coheirs")}
@@ -782,7 +782,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                           onChange={(e) => setGrossSalePrice(Math.max(0, Number(e.target.value)))}
                           className="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#C65378] font-bold"
                         />
-                        <p className="text-[11px] text-slate-500">Agreed price in Sale Deed / Agreement for Sale.</p>
+                        <p className="text-[11px] text-slate-500">Agreed price in Sale Deed / Pact for Sale.</p>
                       </div>
 
                       {/* Circle Rate / Ready Reckoner Value */}
@@ -903,7 +903,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                       <div className="space-y-1.5">
                         <div className="flex justify-between items-center">
                           <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                            Transfer Expenses (Brokerage, Legal, Mutation) (₹)
+                            Transfer Expenses (Brokerage, Legal, Name Change) (₹)
                           </label>
                           <span className="text-xs font-semibold text-slate-600">{formatINR(transferExpenses)}</span>
                         </div>
@@ -964,14 +964,14 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                       <strong>FEMA USD 1 Million Scheme (RBI Regulations, 2016):</strong> NRIs and OCIs can remit
                       up to <strong>USD 1,000,000 per financial year (April 1 to March 31)</strong> out of their
                       Non-Resident Ordinary (NRO) bank account balances representing sale proceeds of inherited or
-                      self-acquired property.
+                      self-acquired asset.
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       {/* Currency Selection */}
                       <div className="space-y-1.5">
                         <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                          Select Target Repatriation Currency
+                          Select Target Sending Cash Home Currency
                         </label>
                         <select
                           value={targetCurrency}
@@ -1046,7 +1046,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                   <div className="space-y-6">
                     <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200/90 text-xs sm:text-sm text-emerald-900 leading-relaxed">
                       <strong>Multi-Heir Sibling Advantage under Indian Succession:</strong> Co-owners inheriting
-                      property are independent taxpayers under Section 26. Each sibling is entitled to an independent
+                      asset are independent taxpayers under Section 26. Each sibling is entitled to an independent
                       <strong> ₹50 Lakh Section 54EC bond cap</strong> and an independent <strong>USD 1 Million FEMA annual limit</strong>!
                     </div>
 
@@ -1071,7 +1071,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
 
                       <div className="space-y-1.5">
                         <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                          Aggregate Family FEMA Repatriation Limit
+                          Aggregate Family FEMA Sending Cash Home Limit
                         </label>
                         <div className="px-3.5 py-2.5 bg-emerald-100/70 border border-emerald-300 rounded-xl text-sm font-extrabold text-emerald-900">
                           {formatCurrency(1000000 * numberOfHeirs, "USD")} (USD {numberOfHeirs} Million Annual Cap)
@@ -1140,7 +1140,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                         Your money remains frozen with the Income Tax Department until you file ITR and wait for refund.
                       </p>
                       <div className="pt-2 border-t border-rose-200/80 flex justify-between text-xs text-rose-900 font-semibold">
-                        <span>Net Inflow at Registration:</span>
+                        <span>Net Inflow at Filing:</span>
                         <span>{formatINR(netNroProceedsWithoutForm13)}</span>
                       </div>
                     </div>
@@ -1159,7 +1159,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                         capital gain. Zero excess tax is withheld.
                       </p>
                       <div className="pt-2 border-t border-emerald-200/80 flex justify-between text-xs text-emerald-900 font-semibold">
-                        <span>Net Inflow at Registration:</span>
+                        <span>Net Inflow at Filing:</span>
                         <span>{formatINR(netNroProceedsWithForm13)}</span>
                       </div>
                     </div>
@@ -1244,7 +1244,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-slate-900 transition-colors"
                     >
                       <RefreshCw className="w-3.5 h-3.5" />
-                      <span>Reset Calculator Defaults</span>
+                      <span>Reset Tool Defaults</span>
                     </button>
                     <div className="flex items-center gap-3">
                       <button
@@ -1258,7 +1258,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                         href="/contact"
                         className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#C65378] text-white text-xs font-bold hover:bg-[#a33b5c] transition-colors shadow-xs"
                       >
-                        <span>Book CA &amp; Advocate Assistance</span>
+                        <span>Book CA &amp; Lawyer Help</span>
                         <ArrowRight className="w-3 h-3" />
                       </Link>
                     </div>
@@ -1299,16 +1299,16 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The fundamental financial mistake committed by Non-Resident Indians when selling property in
+                  The fundamental financial mistake committed by Non-Resident Indians when selling asset in
                   India is permitting the buyer to deduct tax at source on the <strong>gross sale consideration</strong>.
-                  While resident property sellers lose only 1% TDS under Section 194-IA, an NRI selling property
+                  While resident asset sellers lose only 1% TDS under Section 194-IA, an NRI selling asset
                   faces withholding rates reaching up to <strong>23.92%</strong> on the full contract value.
                 </p>
                 <p>
                   Consider an NRI who sells an inherited flat in Delhi or Mumbai for ₹3.00 Crores where the
                   indexed cost of acquisition under Section 49(1) is ₹2.20 Crores. The actual long-term capital
-                  gain is ₹80 Lakhs, yielding an actual tax liability of approximately ₹11.96 Lakhs. If no Form 13
-                  certificate is in place, the buyer will withhold 14.95% on ₹3.00 Crores, deducting <strong>₹44.85
+                  gain is ₹80 Lakhs, yielding an actual tax liability of about ₹11.96 Lakhs. If no Form 13
+                  paper is in place, the buyer will withhold 14.95% on ₹3.00 Crores, deducting <strong>₹44.85
                   Lakhs</strong>.
                 </p>
                 <p>
@@ -1326,7 +1326,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     <tr>
                       <th className="py-3.5 px-4 font-bold">Feature</th>
                       <th className="py-3.5 px-4 font-bold text-rose-300">Default Sec 195 TDS</th>
-                      <th className="py-3.5 px-4 font-bold text-emerald-300">Sec 197 Form 13 Certificate</th>
+                      <th className="py-3.5 px-4 font-bold text-emerald-300">Sec 197 Form 13 Paper</th>
                       <th className="py-3.5 px-4 font-bold text-slate-300">Resident Sec 194-IA</th>
                     </tr>
                   </thead>
@@ -1345,8 +1345,8 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">Buyer TAN Mandate</td>
-                      <td className="py-3 px-4 font-semibold text-rose-700">Mandatory (Form 49B)</td>
-                      <td className="py-3 px-4 font-semibold text-emerald-700">Mandatory (Form 49B)</td>
+                      <td className="py-3 px-4 font-semibold text-rose-700">Needed (Form 49B)</td>
+                      <td className="py-3 px-4 font-semibold text-emerald-700">Needed (Form 49B)</td>
                       <td className="py-3 px-4 text-slate-600">Not Required (PAN-based)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -1384,7 +1384,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under the Income Tax Act, the rate of withholding tax under Section 195 depends on whether
-                  the immovable property is classified as a <strong>Long-Term Capital Asset</strong> or a <strong>Short-Term
+                  the land asset is classified as a <strong>Long-Term Capital Asset</strong> or a <strong>Short-Term
                   Capital Asset</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1421,7 +1421,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     href="/tools/capital-gains-tax-calculator-inherited-property"
                     className="font-bold text-[#C65378] hover:underline"
                   >
-                    Capital Gains Tax on Inherited Property Calculator India
+                    Capital Gains Tax on Inherited Asset Tool India
                   </Link>
                   .
                 </p>
@@ -1435,26 +1435,26 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Form 13 Lower TDS Certificate: TRACES Filing SOP
+                5. Form 13 Lower TDS Paper: TRACES Filing SOP
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Obtaining a Lower Deduction Certificate under Section 197 is a fully digital process on the
-                  Income Tax Department&apos;s <strong>TRACES (TDS Reconciliation Analysis and Correction Enabling
-                  System)</strong> portal. Follow this standard operating procedure:
+                  Obtaining a Lower Deduction Paper under Section 197 is a fully digital process on the
+                  Income Tax Office&apos;s <strong>TRACES (TDS Reconciliation Analysis and Correction Enabling
+                  System)</strong> portal. Follow this standard operating step:
                 </p>
                 <ol className="space-y-3 list-decimal list-inside text-xs sm:text-sm text-slate-700 font-medium">
                   <li className="leading-relaxed">
-                    <strong>Execute Agreement for Sale (MoU):</strong> Settle commercial terms, sale price,
-                    payment milestones, and buyer TAN details. A formal contract is mandatory to trigger Form 13.
+                    <strong>Execute Pact for Sale (MoU):</strong> Settle shop terms, sale price,
+                    payment milestones, and buyer TAN details. A formal contract is needed to trigger Form 13.
                   </li>
                   <li className="leading-relaxed">
-                    <strong>Obtain Buyer TAN:</strong> The buyer must apply for a TAN in Form 49B. The application
+                    <strong>Obtain Buyer TAN:</strong> The buyer must apply for a TAN in Form 49B. The form
                     on TRACES cannot proceed without the purchaser&apos;s TAN number.
                   </li>
                   <li className="leading-relaxed">
-                    <strong>Compile Statutory Title &amp; Cost Dossier:</strong> Gather the previous owner&apos;s registered
-                    sale deed, mutation extract, probated Will or Legal Heir Certificate, and pre-2001 valuation report.
+                    <strong>Compile Legal Title &amp; Cost Dossier:</strong> Gather the previous owner&apos;s filed
+                    sale deed, name change extract, probated Will or Legal Heir Paper, and pre-2001 price check report.
                   </li>
                   <li className="leading-relaxed">
                     <strong>Submit Form 13 Online:</strong> Log into TRACES under the NRI seller&apos;s PAN, select
@@ -1462,11 +1462,11 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                   </li>
                   <li className="leading-relaxed">
                     <strong>International Taxation Ward Processing:</strong> The Assessing Officer (AO) reviews
-                    the calculations, issues clarification queries if needed, and approves the certificate within 21 to 45 days.
+                    the calculations, issues clarification queries if needed, and approves the paper within 21 to 45 days.
                   </li>
                   <li className="leading-relaxed">
-                    <strong>Certificate Issuance &amp; Deed Execution:</strong> The digital certificate specifying the
-                    lower TDS percentage is downloaded. The buyer enters this certificate number into Challan ITNS 281
+                    <strong>Paper Issuance &amp; Deed Signing:</strong> The digital paper specifying the
+                    lower TDS percentage is downloaded. The buyer enters this paper number into Challan ITNS 281
                     and deducts only the certified rate.
                   </li>
                 </ol>
@@ -1480,11 +1480,11 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <span>FEMA FRAMEWORK</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. RBI USD 1 Million Scheme: FEMA Repatriation Limits
+                6. RBI USD 1 Million Scheme: FEMA Sending Cash Home Limits
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Once the property is sold and net proceeds are credited into your <strong>Non-Resident Ordinary (NRO)
+                  Once the asset is sold and net proceeds are credited into your <strong>Non-Resident Ordinary (NRO)
                   bank account</strong>, cross-border remittance to your overseas bank account or Non-Resident External
                   (NRE) account is governed by the <strong>Foreign Exchange Management (Remittance of Assets) Regulations,
                   2016</strong> (Notification No. FEMA 13(R)/2016-RB).
@@ -1492,22 +1492,22 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
                   <h3 className="font-bold text-[#172228] text-sm flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Key Rules for Inherited Property Repatriation:</span>
+                    <span>Key Rules for Inherited Asset Sending Cash Home:</span>
                   </h3>
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                       <span>
                         <strong>No Lock-In Period:</strong> Unlike real estate acquired via foreign exchange where
-                        historical restrictions applied, inherited property sale proceeds can be remitted immediately
+                        historical restrictions applied, inherited asset sale proceeds can be remitted right away
                         upon sale.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                       <span>
-                        <strong>No Property Cap:</strong> Under Regulation 4(2) of FEMA 13(R), there is no limit on
-                        the number of inherited residential or commercial properties whose sale proceeds may be repatriated.
+                        <strong>No Asset Cap:</strong> Under Regulation 4(2) of FEMA 13(R), there is no limit on
+                        the number of inherited home or shop assets whose sale proceeds may be repatriated.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -1542,14 +1542,14 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To wire funds from an Indian NRO account to an overseas bank account, the Authorized Dealer (AD)
-                  bank requires statutory tax clearance under Section 195(6) of the Income Tax Act:
+                  bank requires legal tax clearance under Section 195(6) of the Income Tax Act:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
-                    <h3 className="font-bold text-[#172228] text-sm">Form 15CB (Chartered Accountant Certificate)</h3>
+                    <h3 className="font-bold text-[#172228] text-sm">Form 15CB (Chartered Accountant Paper)</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Form 15CB is an authoritative certificate issued by an independent Chartered Accountant. The
-                      CA examines the sale deed, cost basis, Section 197 certificate or tax deposit challans, and
+                      Form 15CB is an authoritative paper issued by an independent Chartered Accountant. The
+                      CA examines the sale deed, cost basis, Section 197 paper or tax deposit challans, and
                       certifies that all Indian taxes have been fully satisfied.
                     </p>
                   </div>
@@ -1557,7 +1557,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     <h3 className="font-bold text-[#172228] text-sm">Form 15CA (Part C - Remitter Undertaking)</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       After obtaining Form 15CB, the NRI remitter logs onto the Income Tax e-filing portal to submit
-                      Form 15CA (Part C). This links the CA certification number, beneficiary bank SWIFT details, and
+                      Form 15CA (Part C). This links the CA certification number, heir bank SWIFT details, and
                       generates an official acknowledgement for the remitting bank.
                     </p>
                   </div>
@@ -1576,7 +1576,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many NRIs prefer transferring property sale proceeds from their NRO account to their <strong>Non-Resident
+                  Many NRIs prefer transferring asset sale proceeds from their NRO account to their <strong>Non-Resident
                   External (NRE) account</strong> rather than wiring funds directly abroad. Funds held in an NRE account
                   offer significant advantages:
                 </p>
@@ -1590,7 +1590,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     can be repatriated to any foreign account in any currency without recurring 15CA/15CB filings.
                   </li>
                   <li>
-                    <strong>Same Documentation:</strong> The transfer from NRO to NRE is legally treated as an outward
+                    <strong>Same Papers:</strong> The transfer from NRO to NRE is legally treated as an outward
                     remittance under the USD 1 Million Scheme, requiring the same Form 15CA, Form 15CB, and Form A2.
                   </li>
                 </ul>
@@ -1652,7 +1652,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
                     <h3 className="font-bold text-[#172228] text-sm">
-                      Case 1: California NRI Selling Bangalore Ancestral Home
+                      Case 1: California NRI Selling Bangalore Family Home
                     </h3>
                     <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full">
                       Saved ₹37.4 Lakhs Blocked TDS
@@ -1665,8 +1665,8 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <strong>Solution:</strong> AMA Legal Solutions filed Form 13 on TRACES claiming Section 49(1) deemed
-                    cost and ₹50 Lakhs Section 54EC bond investment. The AO issued a Lower TDS certificate at 6.04%,
-                    reducing withholding to ₹25.36 Lakhs and immediately saving ₹37.43 Lakhs in blocked liquidity.
+                    cost and ₹50 Lakhs Section 54EC bond investment. The AO issued a Lower TDS paper at 6.04%,
+                    reducing withholding to ₹25.36 Lakhs and right away saving ₹37.43 Lakhs in blocked liquidity.
                   </p>
                 </div>
 
@@ -1681,7 +1681,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Facts:</strong> An NHS physician in London inherited a commercial building in South Delhi sold
+                    <strong>Facts:</strong> An NHS physician in London inherited a shop building in South Delhi sold
                     for ₹15.00 Crores (approx £1.38 Million / $1.73 Million USD), exceeding the annual USD 1M FEMA ceiling.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -1706,7 +1706,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                     Mumbai sold for ₹8.50 Crores. They needed to remit proceeds to their respective UAE accounts.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Solution:</strong> By establishing equal 50% tenancy-in-common title through their registered
+                    <strong>Solution:</strong> By establishing equal 50% tenancy-in-common title through their filed
                     Will probate, each sibling utilized their separate PAN to invest ₹50 Lakhs in Section 54EC bonds (total
                     ₹1 Crore tax-free) and claimed separate USD 1M annual remittance limits (USD 2 Million aggregate).
                   </p>
@@ -1721,7 +1721,7 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <span>COPY-PASTE TEMPLATES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Form 13 Document Checklist &amp; Sale Deed Recital
+                11. Form 13 Paper Checklist &amp; Sale Deed Recital
               </h3>
 
               {/* Template Box 1: Sale Deed Recital */}
@@ -1766,7 +1766,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-[#172228] uppercase tracking-wider flex items-center gap-1.5">
                     <FileCheck className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Form 13 Lower TDS TRACES Application Checklist</span>
+                    <span>Form 13 Lower TDS TRACES Form Checklist</span>
                   </span>
                   <button
                     onClick={copyForm13Checklist}
@@ -1786,12 +1786,12 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                   </button>
                 </div>
                 <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
-                  <li>Agreement for Sale / MoU with purchaser showing consideration and payment schedule</li>
-                  <li>Title Chain: Previous owner&apos;s registered purchase deed + registered Will / Probate copy</li>
-                  <li>Revenue Mutation Record / Property Card / Khata Extract reflecting the NRI&apos;s name</li>
-                  <li>April 1, 2001 Valuation Report from Government Valuer + SRO Circle Rate certificate (if pre-2001)</li>
-                  <li>Section 54 / 54EC Reinvestment Proofs (advance receipt or REC-NHAI application)</li>
-                  <li>Purchaser&apos;s active TAN number, PAN card, and residential address details</li>
+                  <li>Pact for Sale / MoU with purchaser showing consideration and payment schedule</li>
+                  <li>Title Chain: Previous owner&apos;s filed purchase deed + filed Will / Probate copy</li>
+                  <li>Revenue Name Change Record / Asset Card / Khata Extract reflecting the NRI&apos;s name</li>
+                  <li>April 1, 2001 Price Check Report from Government Valuer + SRO Circle Rate paper (if pre-2001)</li>
+                  <li>Section 54 / 54EC Reinvestment Proofs (advance receipt or REC-NHAI form)</li>
+                  <li>Purchaser&apos;s active TAN number, PAN card, and home address details</li>
                 </ul>
               </div>
 
@@ -1822,9 +1822,9 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
                   <li>Form 15CB signed digitally by practicing Chartered Accountant on Income Tax portal</li>
                   <li>Form 15CA (Part C) submitted online by NRI remitter quoting Form 15CB ack number</li>
-                  <li>Registered Conveyance Deed duly executed and stamped with Sub-Registrar</li>
-                  <li>Form 16A TDS Certificate issued by buyer or Advance Tax payment receipt</li>
-                  <li>Form A2 (FEMA Outward Remittance application) and source of funds declaration</li>
+                  <li>Filed Conveyance Deed duly signed and stamped with SRO</li>
+                  <li>Form 16A TDS Paper issued by buyer or Advance Tax payment receipt</li>
+                  <li>Form A2 (FEMA Outward Remittance form) and source of funds declaration</li>
                 </ul>
               </div>
             </section>
@@ -1852,8 +1852,8 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   AMA Legal Solutions provides end-to-end representation for Non-Resident Indians across 40+ countries.
-                  Our team coordinates title search verification, Sub-Registrar mutation, Section 197 Form 13 Lower TDS
-                  applications before International Taxation Wards, and outward remittances under Form 15CA &amp; 15CB.
+                  Our team coordinates title search check, SRO name change, Section 197 Form 13 Lower TDS
+                  forms before International Taxation Wards, and outward remittances under Form 15CA &amp; 15CB.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-3">
                   <Link
@@ -1861,7 +1861,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#172228] text-white text-xs font-bold hover:bg-slate-800 transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Schedule Advocate &amp; CA Consultation</span>
+                    <span>Schedule Lawyer &amp; CA Talk</span>
                   </Link>
                 </div>
               </div>
@@ -1874,7 +1874,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <span>COMMONLY ASKED QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: NRI Property TDS &amp; FEMA
+                13. Frequently Asked Questions: NRI Asset TDS &amp; FEMA
               </h3>
 
               <div className="space-y-3">
@@ -1914,7 +1914,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <span>OFFICIAL STATUTES &amp; PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Authorities &amp; Official Indian Portals
+                14. Legal Offices &amp; Official Indian Portals
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <a
@@ -1924,7 +1924,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                   className="p-3.5 rounded-xl border border-slate-200 bg-white hover:border-[#C65378] transition-colors flex items-center justify-between"
                 >
                   <div>
-                    <div className="font-bold text-[#172228]">Income Tax Department of India</div>
+                    <div className="font-bold text-[#172228]">Income Tax Office of India</div>
                     <div className="text-[11px] text-slate-500">e-Filing Portal for Form 15CA &amp; ITR</div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400" />
@@ -1938,7 +1938,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 >
                   <div>
                     <div className="font-bold text-[#172228]">TRACES Portal (TDS CPC)</div>
-                    <div className="text-[11px] text-slate-500">Form 13 Lower TDS Online Application</div>
+                    <div className="text-[11px] text-slate-500">Form 13 Lower TDS Online Form</div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400" />
                 </a>
@@ -1961,14 +1961,36 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                   className="p-3.5 rounded-xl border border-slate-200 bg-white hover:border-[#C65378] transition-colors flex items-center justify-between"
                 >
                   <div>
-                    <div className="font-bold text-[#C65378]">NRI Property Sale Service</div>
+                    <div className="font-bold text-[#C65378]">NRI Asset Sale Service</div>
                     <div className="text-[11px] text-slate-500">End-to-End Legal &amp; CA Remittance Desk</div>
                   </div>
                   <ArrowRight className="w-4 h-4 text-[#C65378]" />
                 </Link>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY CONSULTATION & ACTION CARD
@@ -1982,15 +2004,15 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 </div>
                 <div>
                   <div className="text-xs font-black uppercase tracking-wider text-[#172228]">
-                    Need Legal or CA Assistance?
+                    Need Legal or CA Help?
                   </div>
                   <div className="text-[11px] text-slate-500">Cross-Border Tax Advisory</div>
                 </div>
               </div>
 
               <p className="text-xs text-slate-600 leading-relaxed">
-                Applying for a Section 197 Lower TDS Certificate (Form 13) or remitting proceeds via Form 15CA &amp; 15CB?
-                Our cross-border advocates and chartered accountants represent clients before International Taxation Wards.
+                Applying for a Section 197 Lower TDS Paper (Form 13) or remitting proceeds via Form 15CA &amp; 15CB?
+                Our cross-border lawyers and chartered accountants represent clients before International Taxation Wards.
               </p>
 
               <div className="space-y-2">
@@ -1999,7 +2021,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                   className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#C65378] hover:bg-[#a33b5c] text-white text-xs font-extrabold shadow-sm transition-transform hover:-translate-y-0.5"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Consultation</span>
+                  <span>Schedule Talk</span>
                 </Link>
               </div>
             </div>
@@ -2012,7 +2034,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
               </div>
               <h4 className="text-sm font-bold text-white">Draft an NRI Will for Your Indian Real Estate</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Ensure seamless future transmission without probate delays or title disputes across international borders.
+                Ensure seamless future transfer without probate delays or title fights across international borders.
               </p>
               <button
                 onClick={handleStartDraft}
@@ -2032,7 +2054,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
               <ul className="space-y-2 text-xs text-slate-600">
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Licensed Supreme Court &amp; High Court Advocates</span>
+                  <span>Licensed Supreme Court &amp; High Court Lawyers</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />

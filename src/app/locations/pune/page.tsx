@@ -136,7 +136,7 @@ export default function PuneLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Pune: Legal Online Will Making Guide",
         description:
-          "Draft a legally compliant Will in Pune. Expert lawyer assistance, IGR Maharashtra registration advice, and seamless family estate planning online.",
+          "Draft a legally compliant Will in Pune. Expert lawyer help, IGR Maharashtra filing advice, and seamless family estate planning online.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -183,7 +183,7 @@ export default function PuneLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Pune - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra Sarita registration, and doorstep execution support across Pune, PCMC, and.",
+          "Professional Will drafting, lawyer check, IGR Maharashtra Sarita filing, and doorstep signing support across Pune, PCMC, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -257,14 +257,14 @@ export default function PuneLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Pune",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Pune.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Pune.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Pune properties including PMC/PCMC flats, plots, bank deposits, mutual funds, and demat shares. Name your beneficiaries and an executor.",
+            text: "List your Pune assets including PMC/PCMC flats, plots, bank deposits, mutual funds, and demat shares. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -276,19 +276,19 @@ export default function PuneLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Pune SRO Appointment on IGR Portal",
-            text: "Book an e-appointment on the IGR Maharashtra Sarita portal for your local Haveli Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an e-appointment on the IGR Maharashtra Sarita portal for your local Haveli SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Pune SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

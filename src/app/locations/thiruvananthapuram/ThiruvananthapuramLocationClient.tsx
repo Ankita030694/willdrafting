@@ -490,16 +490,16 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 56 chars */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Trivandrum
+                  Key Highlights: Will Making &amp; Filing in Trivandrum
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional SRO Registration</span>
+                      <span>A Choice SRO Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Filing a Will at the SRO is optional under Section 18(e) of the Registration Act, 1908. A Will written or typed on plain white paper is valid if you sign it in front of two adult witnesses.
+                      Filing a Will at the SRO is a choice under Section 18(e) of the Filing Act, 1908. A Will written or typed on plain white paper is valid if you sign it in front of two adult witnesses.
                     </p>
                   </div>
 
@@ -529,7 +529,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                       <span>Fast TMC &amp; Pokkuvaravu Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will speeds up house tax name transfers at the Trivandrum city office (TMC) and land record updates (Thandapper) in local Village Offices.
+                      A filed Will speeds up house tax name transfers at the Trivandrum city office (TMC) and land record updates (Thandapper) in local Village Offices.
                     </p>
                   </div>
                 </div>
@@ -561,10 +561,10 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 56 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Will Drafting &amp; Succession Laws in Thiruvananthapuram
+                  1. Will Drafting &amp; Estate Laws in Thiruvananthapuram
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a Will in Trivandrum follows the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Kerala Land Tax Act</strong>. Any adult aged 18 or older with a sound mind can sign a Will to pass self-earned homes, bank savings, mutual funds, and company shares.
+                  Writing a Will in Trivandrum follows the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Kerala Land Tax Act</strong>. Any adult aged 18 or older with a sound mind can sign a Will to pass self-earned homes, bank savings, mutual funds, and company shares.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Trivandrum has a distinct mix of family wealth. The capital city blends old Tharavadu homes in East Fort, calm villas of retired officers in Kowdiar and Sasthamangalam, tech stock options and RSUs in Technopark, and beach plots near Kovalam. A clear, lawyer-checked Will make sures your assets pass smoothly to your chosen heirs without long court fights at Vanchiyoor.
@@ -623,13 +623,13 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Will Registration in Kerala: PEARLS Portal Rules
+                  2. Will Filing in Kerala: PEARLS Portal Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, filing a Will at the SRO is optional across Kerala. An unregistered Will signed on plain paper is just as legal as a registered one if it meets the signing rules in Section 63 of the Indian Succession Act.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, filing a Will at the SRO is a choice across Kerala. An plain Will signed on plain paper is just as legal as a filed one if it meets the signing rules in Section 63 of the Indian Succession Act.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Still, property lawyers in Trivandrum strongly advise booking a slot on the state <strong>PEARLS portal</strong> to register your Will. Filing your Will at the SRO stops fake claims, locks a sealed copy in Book III state records, and helps your family transfer titles without delay.
+                  Still, asset lawyers in Trivandrum strongly advise booking a slot on the state <strong>PEARLS portal</strong> to register your Will. Filing your Will at the SRO stops fake claims, locks a sealed copy in Book III state records, and helps your family transfer titles without delay.
                 </p>
               </div>
 
@@ -640,8 +640,8 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     <thead className="bg-slate-50 border-b border-slate-200 text-slate-800 font-extrabold">
                       <tr>
                         <th className="py-3.5 px-4 md:px-6">Feature</th>
-                        <th className="py-3.5 px-4 md:px-6">Unregistered Will (Kerala)</th>
-                        <th className="py-3.5 px-4 md:px-6 text-[#C65378]">Registered Will (PEARLS Portal)</th>
+                        <th className="py-3.5 px-4 md:px-6">Plain Will (Kerala)</th>
+                        <th className="py-3.5 px-4 md:px-6 text-[#C65378]">Filed Will (PEARLS Portal)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-600">
@@ -691,7 +691,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <strong>No. Court probate is NOT required for homes or land in Trivandrum or anywhere in Kerala.</strong>
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 213 and Section 57 of the Indian Succession Act, 1925</strong>, court probate is required only when a Will is signed inside or covers property in the old presidency cities of Mumbai, Kolkata, and Chennai. Because Trivandrum was part of old Travancore and falls under the Kerala High Court, Section 213 does not force your family to go to court.
+                  Under <strong>Section 213 and Section 57 of the Indian Succession Act, 1925</strong>, court probate is required only when a Will is signed inside or covers asset in the old presidency cities of Mumbai, Kolkata, and Chennai. Because Trivandrum was part of old Travancore and falls under the Kerala High Court, Section 213 does not force your family to go to court.
                 </p>
               </div>
 
@@ -701,11 +701,11 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     <Scale className="w-5 h-5 text-rose-300" />
                   </span>
                   <h3 className="font-extrabold text-base sm:text-lg text-white">
-                    Kerala High Court Rule on Direct Property Transfer
+                    Kerala High Court Rule on Direct Asset Transfer
                   </h3>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  The Kerala High Court has ruled clearly that Christian, Hindu, Jain, Buddhist, and Sikh heirs do not need court probate before claiming property under a Will in Kerala. Heirs can show the registered Will directly to the Trivandrum city office (TMC), local Village Offices for Pokkuvaravu (Thandapper update), and banks.
+                  The Kerala High Court has ruled clearly that Christian, Hindu, Jain, Buddhist, and Sikh heirs do not need court probate before claiming asset under a Will in Kerala. Heirs can show the filed Will directly to the Trivandrum city office (TMC), local Village Offices for Pokkuvaravu (Thandapper update), and banks.
                 </p>
                 <div className="pt-2 flex flex-wrap gap-2 text-[11px] font-semibold text-rose-200">
                   <span className="px-3 py-1 rounded-full bg-white/10">Section 213 ISA Exemption</span>
@@ -724,10 +724,10 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 58 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Thiruvananthapuram SRO Offices &amp; Registration Directory
+                  4. Thiruvananthapuram SRO Offices &amp; Filing Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 32 of the Registration Act, 1908</strong>, a Will can be registered at the SRO office having area over your home domicile, or where your primary land and flats is situated, or before any Sub-Registrar within the district.
+                  Under <strong>Section 32 of the Filing Act, 1908</strong>, a Will can be filed at the SRO office having area over your home domicile, or where your primary land and flats is situated, or before any SRO within the district.
                   Find your nearest Thiruvananthapuram SRO below:
                 </p>
               </div>
@@ -811,7 +811,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Across Thiruvananthapuram Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning rules in Thiruvananthapuram vary greatly depending on neighborhood property characteristics and resident profiles:
+                  Estate planning rules in Thiruvananthapuram vary greatly depending on neighborhood asset characteristics and resident profiles:
                 </p>
               </div>
 
@@ -843,7 +843,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in Kowdiar &amp; Jawahar Nagar</strong>? Home to retired Chief Secretaries, IAS/IPS officers, royal lineage families, and prominent jurists, this elite enclave features sprawling heritage bungalows and prime family assets.
-                      Our lawyers structure airtight testamentary bequests covering family split settlements, high-value bank deposits, family trusts, and clear home transfers to protect generational wealth against court fights.
+                      Our lawyers structure airtight Will bequests covering family split settlements, high-value bank deposits, family trusts, and clear home transfers to protect generational wealth against court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -897,7 +897,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get specialized <strong>Will drafting services in Technopark &amp; Kazhakoottam</strong>. With over 70,000 IT professionals, startup founders, and senior software executives, this tech corridor requires modern digital succession planning.
+                      Get specialized <strong>Will drafting services in Technopark &amp; Kazhakoottam</strong>. With over 70,000 IT professionals, startup founders, and senior software executives, this tech corridor requires modern digital estate planning.
                       Our legal team creates robust clauses for corporate stock options (ESOPs, RSUs), US brokerage investments (Vested, INDmoney), crypto wallets, and modern gated community villas, making sure seamless transfer to your designated heirs without court hurdles.
                     </p>
 
@@ -913,7 +913,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Technopark IT Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Technopark IT Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -953,7 +953,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Seeking trusted <strong>Will drafting services in Sasthamangalam &amp; Vazhuthacaud</strong>? This set uped home heartland is favored by senior bank executives, university professors, and retired bureaucrats.
-                      Many families own multi-storey apartments and premium urban villas with non-resident children in the Gulf or Western nations. We draft clear survivorship clauses, cross-border NRI asset bequests, and seamless Thiruvananthapuram Municipal Corporation name change mandates.
+                      Many families own multi-storey apartments and premium urban villas with non-resident children in the Gulf or Western nations. We draft clear survivorship clauses, cross-border NRI asset bequests, and seamless Thiruvananthapuram City City Board name change mandates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -962,7 +962,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Pattom &amp; Central Trivandrum SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete guidance on TMC property tax name changes, Village Pokkuvaravu (Thandapper) transfers, and Sub-Registrar appointment processing.
+                        Complete guidance on TMC asset tax name changes, Village Pokkuvaravu (Thandapper) transfers, and SRO appointment processing.
                       </p>
                     </div>
                   </div>
@@ -1007,8 +1007,8 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      In need of expert <strong>Will drafting services in Pattom &amp; Medical College</strong>? Located along MC Road, this area is populated by prominent doctors, medical experts, hospital directors, and shop property owners.
-                      Our Kerala High Court lawyers structure full succession plans for shop retail units, private clinic assets, healthcare practice goodwill, and family homes, preventing protracted probate fights.
+                      In need of expert <strong>Will drafting services in Pattom &amp; Medical College</strong>? Located along MC Road, this area is populated by prominent doctors, medical experts, hospital directors, and shop asset owners.
+                      Our Kerala High Court lawyers structure full estate plans for shop retail units, private clinic assets, healthcare practice goodwill, and family homes, preventing protracted probate fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1017,7 +1017,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Civil Station, Pattom</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Effortless PEARLS e-token booking, registered MBBS doctor mental fitness paper coordination for seniors, and Book III signing support.
+                        Effortless PEARLS e-token booking, filed MBBS doctor mental fitness paper coordination for seniors, and Book III signing support.
                       </p>
                     </div>
                   </div>
@@ -1063,7 +1063,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for dedicated <strong>Will drafting services in Chalai &amp; East Fort</strong>? Encircling the historic Sree Padmanabhaswamy Temple, this bustling trading district is home to multi-generational merchant families, gold traders, and wholesale business owners.
-                      We specialize in structuring business succession, partnership share transfers, shop shop leasehold tenancies, and undivided family property bequests to make sure uninterrupted shop continuity.
+                      We specialize in structuring business estate, partnership share transfers, shop shop leasehold tenancies, and undivided family asset bequests to make sure uninterrupted shop continuity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1078,7 +1078,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Chalai Shop Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Chalai Shop Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1118,7 +1118,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Need experienced <strong>Will drafting services in Thiruvallam &amp; Vizhinjam</strong>? Propelled by the Vizhinjam International Seaport project and Kovalam&apos;s world-class tourism, real estate values in this coastal belt have surged.
-                      We assist families in structuring testamentary devolutions for seaside resorts, homestays, shop logistics plots, and family coastal land, making sure smooth Village Pokkuvaravu without inheritance court fights.
+                      We assist families in structuring Will devolutions for seaside resorts, homestays, shop logistics plots, and family coastal land, making sure smooth Village Pokkuvaravu without estate court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1127,7 +1127,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Thiruvallam (Near Parasurama Temple)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Village Revenue Office title check, coastal CRZ plot papers, and PEARLS portal signing coordination for coastal property owners.
+                        Village Revenue Office title check, coastal CRZ plot papers, and PEARLS portal signing coordination for coastal asset owners.
                       </p>
                     </div>
                   </div>
@@ -1157,7 +1157,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 49 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to Registration
+                  6. Step-by-Step SOP: Will Drafting to Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this clear five-step process to write, sign, and record your Will in Trivandrum:
@@ -1236,10 +1236,10 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration in Trivandrum
+                  7. Section 31 Doorstep SRO Filing in Trivandrum
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, retired officers, army veterans, or unwell owners who cannot travel to an SRO, <strong>Section 31 of the Registration Act, 1908</strong> lets the SRO officer visit your home or hospital room.
+                  For senior citizens, retired officers, army veterans, or unwell owners who cannot travel to an SRO, <strong>Section 31 of the Filing Act, 1908</strong> lets the SRO officer visit your home or hospital room.
                 </p>
               </div>
 
@@ -1285,7 +1285,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Needed Document Checklist for Trivandrum Wills
+                  8. Needed Paper Checklist for Trivandrum Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Check off these items before you sign your Will or visit your local Trivandrum SRO desk:
@@ -1399,7 +1399,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Registration Charges &amp; Zero Stamp Duty in Kerala
+                  10. Filing Charges &amp; Zero Stamp Duty in Kerala
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike gift deeds or sale deeds that charge high stamp duty in Kerala, a Will pays zero stamp duty:
@@ -1415,7 +1415,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5 text-center">
                   <span className="block text-2xl font-black text-[#C65378]">₹1,000</span>
-                  <span className="font-bold text-xs text-slate-800">SRO Registration Fee</span>
+                  <span className="font-bold text-xs text-slate-800">SRO Filing Fee</span>
                   <p className="text-[11px] text-slate-500">Flat state filing charge paid via e-Treasury slip.</p>
                 </div>
 
@@ -1533,7 +1533,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
                       FULL SUPPORT
                     </span>
-                    <h3 className="font-extrabold text-lg text-slate-900">PEARLS Registration &amp; SRO Visit</h3>
+                    <h3 className="font-extrabold text-lg text-slate-900">PEARLS Filing &amp; SRO Visit</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
                       <span className="text-xs text-slate-500 font-semibold">one-time</span>
@@ -1583,7 +1583,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   Frequently Asked Questions: Will Drafting in Trivandrum
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Simple, clear answers to common questions on Wills and property transfer in Trivandrum:
+                  Simple, clear answers to common questions on Wills and asset transfer in Trivandrum:
                 </p>
               </div>
 
@@ -1638,7 +1638,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 <div className="space-y-3 text-xs md:text-sm text-slate-600 leading-relaxed">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-800">Section 59, Indian Succession Act, 1925: </span>
-                    Confirms the right of every adult of sound mind to pass their property by Will.
+                    Confirms the right of every adult of sound mind to pass their asset by Will.
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-800">Section 63, Indian Succession Act, 1925: </span>
@@ -1653,14 +1653,36 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                     Supreme Court ruling that placed Kerala Christians under the Indian Succession Act and gave equal shares to daughters.
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
-                    <span className="font-bold text-slate-800">Section 18(e) &amp; Section 31, Registration Act, 1908: </span>
-                    Covers optional filing of Wills and home visits by the SRO officer for unwell seniors.
+                    <span className="font-bold text-slate-800">Section 18(e) &amp; Section 31, Filing Act, 1908: </span>
+                    Covers a choice filing of Wills and home visits by the SRO officer for unwell seniors.
                   </div>
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1679,7 +1701,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Thiruvananthapuram Will Drafting &amp; SRO Registration
+                Visual Blueprint: Thiruvananthapuram Will Drafting &amp; SRO Filing
               </span>
               <button
                 type="button"

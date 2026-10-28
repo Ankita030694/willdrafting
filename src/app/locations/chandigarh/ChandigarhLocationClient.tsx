@@ -106,7 +106,7 @@ const CHANDIGARH_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Original Will Document",
+    label: "Original Will Paper",
     detail: "Printed on clean white A4 paper with pages sequentially numbered, unstitched for scanner feed.",
     checked: false,
   },
@@ -124,14 +124,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Property Allotment & Title Deeds",
+    label: "Asset Allotment & Title Deeds",
     detail: "CHB allotment letter, Estate Office conveyance deed, GMADA/HSVP allotment, or Jamabandi fard.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "MBBS Doctor Fitness Certificate",
-    detail: "Required for testators aged 60+ to certify sound sound mind and mental fitness.",
+    label: "MBBS Doctor Fitness Paper",
+    detail: "Required for Will makers aged 60+ to certify sound sound mind and mental fitness.",
     checked: false,
   },
   {
@@ -248,7 +248,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally valid Will for your Estate Office plots, Chandigarh Housing Board (CHB) flats, and GMADA or HSVP assets.
-                Get lawyer guidance on impartibility rules, Sub-Registrar registration, and doorstep signing across the Tricity.
+                Get lawyer guidance on impartibility rules, SRO filing, and doorstep signing across the Tricity.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -340,7 +340,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 High Court Precedents
@@ -486,16 +486,16 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 57 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Chandigarh
+                  Key Highlights: Will Making &amp; Filing in Chandigarh
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Chandigarh under Section 18(e) of the Registration Act, 1908. A signed Will with two independent witnesses is legally binding.
+                      Will filing is a choice in Chandigarh under Section 18(e) of the Filing Act, 1908. A signed Will with two independent witnesses is legally binding.
                     </p>
                   </div>
 
@@ -515,7 +515,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <span>CHB Direct Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Chandigarh Housing Board (CHB) accepts registered Wills for quick flat name change, avoiding public notices, indemnity bonds, and fight delays.
+                      The Chandigarh Housing Board (CHB) accepts filed Wills for quick flat name change, avoiding public notices, indemnity bonds, and fight delays.
                     </p>
                   </div>
 
@@ -525,7 +525,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <span>Tricity Cross-Coverage</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      One well-drafted Will can seamlessly distribute real estate across Chandigarh UT, Mohali (GMADA), and Panchkula (HSVP) without requiring multiple documents.
+                      One well-drafted Will can seamlessly distribute real estate across Chandigarh UT, Mohali (GMADA), and Panchkula (HSVP) without requiring multiple papers.
                     </p>
                   </div>
                 </div>
@@ -541,10 +541,10 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 58 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Legal Framework: Will Drafting &amp; Succession in Tricity
+                  1. Legal Framework: Will Drafting &amp; Estate in Tricity
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a Will in Chandigarh is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
+                  Writing a Will in Chandigarh is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
                   Any adult of sound mind can make a Will to dispose of their self-acquired assets, bank accounts, stocks, and personal assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
@@ -607,15 +607,15 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Chandigarh?
+                  2. Is Will Filing Needed in Chandigarh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
-                  An unregistered Will signed on plain paper is legally valid in Indian courts if properly attested by two independent witnesses.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is <strong>a choice</strong>.
+                  An plain Will signed on plain paper is legally valid in Indian courts if properly attested by two independent witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, registering your Will at the Sector 17 SRO office in Chandigarh is strongly advised by legal experts.
-                  Here is how a registered Will compares with an unregistered document:
+                  Here is how a filed Will compares with an plain paper:
                 </p>
               </div>
 
@@ -624,9 +624,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Sector 17 SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Sector 17 SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -672,19 +672,19 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   3. Chandigarh Probate Rules: High Court Legal Precedents
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Chandigarh and Mohali is whether they must get court probate.
+                  A common question among asset owners in Chandigarh and Mohali is whether they must get court probate.
                   In most cases, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only if the Will was made in, or deals with assets inside, Mumbai, Kolkata, or Chennai.
-                  Because Chandigarh, Punjab, and Haryana are non-presidency territories, court probate is not needed for Hindu, Sikh, Jain, or Buddhist testators.
+                  Because Chandigarh, Punjab, and Haryana are non-presidency territories, court probate is not needed for Hindu, Sikh, Jain, or Buddhist Will makers.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    General Rule: Probate Optional
+                    General Rule: Probate A Choice
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Punjab &amp; Haryana High Court Decisions
@@ -694,7 +694,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Allows direct title transfer with registered Will copy</span>
+                    <span>Allows direct title transfer with filed Will copy</span>
                   </div>
                 </div>
 
@@ -706,7 +706,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     When Should You File for Probate?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing a probate petition before the District Judge in Sector 43 Courts is advisable if siblings challenge the Will, or if the deceased owned immovable real estate situated within Mumbai, Kolkata, or Chennai.
+                    Filing a probate petition before the District Judge in Sector 43 Courts is advisable if siblings fight the Will, or if the deceased owned land real estate situated within Mumbai, Kolkata, or Chennai.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -728,7 +728,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   4. Chandigarh Tricity SRO office Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 32 of the Registration Act, your Will can be registered at the SRO office where you reside or where any part of your real estate is situated.
+                  Under Section 32 of the Filing Act, your Will can be filed at the SRO office where you reside or where any part of your real estate is situated.
                   Select your region below to review office locations, area boundaries, and appointment links:
                 </p>
               </div>
@@ -834,9 +834,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Chandigarh &amp; Tricity Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Sectors 2 to 11, Sectors 32 to 37, Mohali, Panchkula, or New Chandigarh</strong>?
-                  Property configurations across the Tricity range from heritage kanal kothis and CHB home flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
-                  Our senior lawyers provide full legal drafting, custom testamentary clauses, and end-to-end Sub-Registrar accompaniment across all key sectors:
+                  Looking for legally checked <strong>Will drafting services in Sectors 2 to 11, Sectors 32 to 37, Mohali, Panchkula, or New Chandigarh</strong>?
+                  Asset configurations across the Tricity range from heritage kanal kothis and CHB home flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
+                  Our senior lawyers provide full legal drafting, custom Will clauses, and end-to-end SRO accompaniment across all key sectors:
                 </p>
               </div>
 
@@ -919,7 +919,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Through our professional <strong>Will drafting services in Sectors 32 to 37</strong>, we provide end-to-end estate planning for retired military officers, doctors, and senior professionals across Sectors 33, 34, 35, and 36. Our legal team arranges medical fitness certifications and home registration visits under Section 31 of the Registration Act, making sure seamless succession for marla kothis, pension benefits, and bank locker assets.
+                      Through our professional <strong>Will drafting services in Sectors 32 to 37</strong>, we provide end-to-end estate planning for retired military officers, doctors, and senior professionals across Sectors 33, 34, 35, and 36. Our legal team arranges medical fitness certifications and home filing visits under Section 31 of the Filing Act, making sure seamless estate for marla kothis, pension benefits, and bank locker assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -928,13 +928,13 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 17 SRO office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 home commission coordination for elderly defense personnel, doctor paper drafting, and independent witness attestation.
+                        Section 31 home commission coordination for elderly defense personnel, doctor paper drafting, and independent witness witness signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Doorstep Registration Available</span>
+                    <span className="text-xs font-bold text-slate-500">Doorstep Filing Available</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -972,7 +972,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Avail specialized <strong>Will drafting services for CHB Flats</strong> across Sectors 38, 44, 49, 51, and 63. If an owner passes away leaving an unregistered Will, the Chandigarh Housing Board demands public notices in English and Punjabi dailies, along with affidavits from all legal heirs. A legally registered Will drafted by our lawyers guarantees direct title transfer without municipal hurdles.
+                      Avail specialized <strong>Will drafting services for CHB Flats</strong> across Sectors 38, 44, 49, 51, and 63. If an owner passes away leaving an plain Will, the Chandigarh Housing Board demands public notices in English and Punjabi dailies, along with sworn notes from all legal heirs. A legally filed Will drafted by our lawyers guarantees direct title transfer without city hurdles.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1025,7 +1025,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our expert <strong>Will drafting services in SAS Nagar / Mohali</strong> cover extensive GMADA plotted sectors and private builder apartments across Phases 1 to 11, Sectors 68 to 79, and Aerocity. GMADA title name change requires specific testamentary proof to transfer allotment letters and conveyance deeds. We assist with Punjab NGDRS e-appointment booking at the Sector 76 District Office Complex.
+                      Our expert <strong>Will drafting services in SAS Nagar / Mohali</strong> cover extensive GMADA plotted sectors and private builder apartments across Phases 1 to 11, Sectors 68 to 79, and Aerocity. GMADA title name change requires specific Will proof to transfer allotment letters and conveyance deeds. We assist with Punjab NGDRS e-appointment booking at the Sector 76 District Office Complex.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1034,13 +1034,13 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Complex, Sector 76</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Punjab NGDRS appointment booking, lawyer accompaniment before the Mohali Sub-Registrar, and GMADA name change advisory.
+                        Punjab NGDRS appointment booking, lawyer accompaniment before the Mohali SRO, and GMADA name change advisory.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">GMADA Plot Succession</span>
+                    <span className="text-xs font-bold text-slate-500">GMADA Plot Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1078,7 +1078,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      We deliver compliant <strong>Will drafting services in Panchkula &amp; MDC</strong> for home sectors, Mansa Devi Complex, and HSVP (HUDA) builder floors. Transferring HSVP plots and builder floors after death requires strict adherence to Haryana transfer policies. We coordinate appointment slots on the Haryana Jamabandi portal and attend registration at the Sector 1 Mini Secretariat.
+                      We deliver compliant <strong>Will drafting services in Panchkula &amp; MDC</strong> for home sectors, Mansa Devi Complex, and HSVP (HUDA) builder floors. Transferring HSVP plots and builder floors after death requires strict adherence to Haryana transfer policies. We coordinate appointment slots on the Haryana Jamabandi portal and attend filing at the Sector 1 Mini Secretariat.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1131,22 +1131,22 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in New Chandigarh &amp; Zirakpur</strong> cover modern luxury villas, high-rise apartments, and shop SCOs across Mullanpur, Eco City, Medi City, and VIP Road. We make sure seamless succession across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships with remote NRI support.
+                      Full <strong>Will drafting services in New Chandigarh &amp; Zirakpur</strong> cover modern luxury villas, high-rise apartments, and shop SCOs across Mullanpur, Eco City, Medi City, and VIP Road. We make sure seamless estate across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships with remote NRI support.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Kharar Tehsil &amp; Dera Bassi Sub-Registrar</span>
+                        <span>SRO Hub: Kharar Tehsil &amp; Dera Bassi SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full builder-buyer contract succession, developer NOC guidance, and NRI remote drafting support.
+                        Full builder-buyer contract estate, developer NOC guidance, and NRI remote drafting support.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">High-Rise &amp; Villa Succession</span>
+                    <span className="text-xs font-bold text-slate-500">High-Rise &amp; Villa Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1170,11 +1170,11 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Chandigarh
+                  6. Step-by-Step Will Filing in Chandigarh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will before a Sub-Registrar in Chandigarh or the Tricity follows an organized legal process.
-                  Here is the verified 5-step SOP:
+                  Registering your Will before a SRO in Chandigarh or the Tricity follows an organized legal process.
+                  Here is the checked 5-step SOP:
                 </p>
               </div>
 
@@ -1199,10 +1199,10 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Doctor Certificate
+                      Doctor Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Procure an MBBS medical paper for testators aged 60+ confirming sound mental capacity.
+                      Procure an MBBS medical paper for Will makers aged 60+ confirming sound mental capacity.
                     </p>
                   </div>
                 </div>
@@ -1230,7 +1230,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       SRO Appearance
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will maker and two independent witnesses appear with original Aadhaar cards before the Sub-Registrar.
+                      Will maker and two independent witnesses appear with original Aadhaar cards before the SRO.
                     </p>
                   </div>
                 </div>
@@ -1244,7 +1244,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       Book III Archive
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Thumbprints and digital photos are recorded. The registered deed is officially endorsed and archived.
+                      Thumbprints and digital photos are recorded. The filed deed is officially endorsed and archived.
                     </p>
                   </div>
                 </div>
@@ -1260,24 +1260,24 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 55 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Registration for Tricity Seniors
+                  7. Section 31 Doorstep Filing for Tricity Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chandigarh has one of India&apos;s highest proportions of senior citizens and retired armed forces personnel living in Sectors 33, 34, 35, and 36.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, elderly or infirm citizens who cannot easily visit the Sector 17 SRO office can request a home registration visit.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, elderly or infirm citizens who cannot easily visit the Sector 17 SRO office can request a home filing visit.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Registration Operates in Chandigarh:
+                  How Doorstep Filing Operates in Chandigarh:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered physician certifies that the senior citizen is bedridden or medically unable to travel.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed physician certifies that the senior citizen is bedridden or medically unable to travel.</span>
                     </div>
                   </div>
 
@@ -1285,7 +1285,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Lawyer Commission Filing</strong>
-                      <span className="text-slate-600">Our legal team files the home visit form before the Sector 17 Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team files the home visit form before the Sector 17 SRO.</span>
                     </div>
                   </div>
 
@@ -1301,7 +1301,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Biometric Capture at Home</strong>
-                      <span className="text-slate-600">The Sub-Registrar arrives with portable biometric equipment to record signatures and photographs.</span>
+                      <span className="text-slate-600">The SRO arrives with portable biometric equipment to record signatures and photographs.</span>
                     </div>
                   </div>
                 </div>
@@ -1317,10 +1317,10 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Chandigarh Sub-Registrar
+                  8. Papers Checklist for Chandigarh SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before visiting the SRO office.
+                  Prepare your papers before visiting the SRO office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> checklist items:
                 </p>
               </div>
@@ -1369,11 +1369,11 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 54 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Chandigarh Property Types: CHB Flats &amp; Estate Rules
+                  9. Chandigarh Asset Types: CHB Flats &amp; Estate Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Chandigarh is heavily influenced by municipal allotment terms and UT building regulations.
-                  Here is how a Will affects different Tricity property categories:
+                  Estate in Chandigarh is heavily influenced by city allotment terms and UT building regulations.
+                  Here is how a Will affects different Tricity asset categories:
                 </p>
               </div>
 
@@ -1386,7 +1386,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     Chandigarh Housing Board Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    CHB requires a registered Will to substitute the deceased owner&apos;s name smoothly. Without registration, CHB demands newspaper public notices and affidavits from all legal heirs.
+                    CHB requires a filed Will to substitute the deceased owner&apos;s name smoothly. Without filing, CHB demands newspaper public notices and sworn notes from all legal heirs.
                   </p>
                 </div>
 
@@ -1428,8 +1428,8 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   10. Official Chandigarh Government Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property sale deeds that attract heavy stamp duties, Wills are completely exempt from stamp duty across India under the Indian Stamp Act, 1899.
-                  Government registration fees in Chandigarh and the Tricity are nominal:
+                  Unlike asset sale deeds that attract heavy stamp duties, Wills are completely exempt from stamp duty across India under the Indian Stamp Act, 1899.
+                  Government filing fees in Chandigarh and the Tricity are nominal:
                 </p>
               </div>
 
@@ -1446,17 +1446,17 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">UT Chandigarh Stamp Duty on Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt)</td>
-                      <td className="p-4">Chandigarh Administration</td>
+                      <td className="p-4">Chandigarh Care</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Registration Fee (Sector 17)</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee (Sector 17)</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 – ₹200 (Nominal Fee)</td>
-                      <td className="p-4">Chandigarh Revenue Department</td>
+                      <td className="p-4">Chandigarh Revenue Office</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; Computerized Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹200</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Doorstep Commission</td>
@@ -1480,7 +1480,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Tricity
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal support suited to your family&apos;s succession needs in Chandigarh, Mohali, or Panchkula:
+                  Choose the level of legal support suited to your family&apos;s estate needs in Chandigarh, Mohali, or Panchkula:
                 </p>
               </div>
 
@@ -1498,12 +1498,12 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with home property, bank accounts, and demat holdings.
+                      Ideal for simple estates with home asset, bank accounts, and demat holdings.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Tricity Will maker</span>
+                        <span>Free Tricity Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1576,13 +1576,13 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at Chandigarh, Mohali, or Panchkula Sub-Registrar offices.
+                      Full end-to-end filing help at Chandigarh, Mohali, or Panchkula SRO offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1599,7 +1599,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Safe collection of registered deed</span>
+                        <span>Safe collection of filed deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1671,7 +1671,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   13. Legal References &amp; Chandigarh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our estate planning protocols strictly comply with codified Indian statutes and official state registration systems:
+                  Our estate planning protocols strictly comply with codified Indian statutes and official state filing systems:
                 </p>
               </div>
 
@@ -1687,16 +1687,16 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Chandigarh Administration
+                    Chandigarh Care
                   </span>
                   <p className="text-xs text-slate-600">
                     CHB Transfer Regulations and Estate Office building bylaws.
@@ -1720,7 +1720,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 Protect Your Chandigarh Tricity Estate Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Tricity assets to costly property fights.
+                Do not leave your hard-earned Tricity assets to costly asset fights.
                 Draft a legally binding Will online in minutes or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1740,7 +1740,29 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>

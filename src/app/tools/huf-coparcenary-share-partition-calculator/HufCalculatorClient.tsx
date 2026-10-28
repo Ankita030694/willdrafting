@@ -58,60 +58,60 @@ interface CoparcenaryShare {
 
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. What is an HUF & Who is a Coparcener?" },
-  { id: "interactive-calculator", label: "2. Interactive HUF Partition Calculator" },
-  { id: "notional-partition-formula", label: "3. Section 6 Notional Partition Formula" },
+  { id: "interactive-calculator", label: "2. Free HUF Split Tool" },
+  { id: "notional-partition-formula", label: "3. Section 6 Notional Split Formula" },
   { id: "daughter-rights-ruling", label: "4. Daughter Rights: Vineeta Sharma Precedent" },
   { id: "section-30-wills", label: "5. Section 30 Wills: Bequeathing HUF Shares" },
-  { id: "comparison-table-regimes", label: "6. HUF Ancestral vs Self-Acquired Property" },
-  { id: "visual-flowchart-section", label: "7. Step-by-Step HUF Partition Blueprint" },
-  { id: "family-partition-deeds", label: "8. Registered Partition Deeds & Agreements" },
+  { id: "comparison-table-regimes", label: "6. HUF Family vs Self-Acquired Asset" },
+  { id: "visual-flowchart-section", label: "7. Step-by-Step HUF Split Blueprint" },
+  { id: "family-partition-deeds", label: "8. Filed Split Deeds & Agreements" },
   { id: "practical-case-studies", label: "9. Practical Case Studies: Delhi & Jaipur" },
   { id: "legal-clause-templates", label: "10. Copy-Paste Section 30 Will Clause" },
   { id: "institutional-profile", label: "11. Institutional Profile: Legal Excellence" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "What is an HUF and who qualifies as a coparcener in India?",
-    a: "A Hindu Undivided Family (HUF) consists of all persons lineally descended from a common male ancestor, together with their wives and unmarried or married daughters. A coparcener is a narrower subgroup within the HUF who acquires an immediate, undivided joint ownership interest in the ancestral estate by birth. Under classical Mitakshara Hindu law, only coparceners have the legal standing to demand partition.",
+    a: "A Hindu Undivided Family (HUF) consists of all persons lineally descended from a common male ancestor, together with their wives and unmarried or married daughters. A coparcener is a narrower subgroup within the HUF who acquires an immediate, undivided joint ownership interest in the family estate by birth. Under classical Mitakshara Hindu law, only coparceners have the legal standing to demand split.",
   },
   {
-    q: "How does Notional Partition under Section 6 of the Hindu Succession Act work?",
-    a: "Under Section 6(3) of the Hindu Succession Act, 1956, when a Hindu coparcener dies, the law creates a legal fiction called a notional partition. The property is treated as if a partition had taken place immediately before their death. Each living coparcener is allotted an equal 1/N fraction. The deceased Karta's 1/N share is separated from the joint family pool and distributed via Will or intestate succession.",
+    q: "How does Notional Split under Section 6 of the Hindu Succession Act work?",
+    a: "Under Section 6(3) of the Hindu Succession Act, 1956, when a Hindu coparcener dies, the law creates a legal fiction called a notional split. The asset is treated as if a split had taken place right away before their death. Each living coparcener is allotted an equal 1/N fraction. The deceased Karta's 1/N share is separated from the joint family pool and distributed via Will or no-Will estate.",
   },
   {
-    q: "What are a daughter's coparcenary rights after Vineeta Sharma (2020)?",
-    a: "In Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1, a 3-judge bench of the Supreme Court held that daughters have coparcenary rights by birth in the same manner as sons. The court clarified that the father does not need to have been alive on September 9, 2005. The right is retroactive from birth, provided no registered partition or court decree was finalized before December 20, 2004.",
+    q: "What are a daughter's joint rights after Vineeta Sharma (2020)?",
+    a: "In Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1, a 3-judge bench of the Supreme Court held that daughters have joint rights by birth in the same manner as sons. The court clarified that the father does not need to have been alive on September 9, 2005. The right is retroactive from birth, provided no filed split or court decree was finalized before December 20, 2004.",
   },
   {
-    q: "Can a Karta or coparcener dispose of HUF property in a Will?",
-    a: "Yes, but only for their undivided coparcenary share! Under Section 30 of the Hindu Succession Act, 1956, any Hindu coparcener has the statutory right to bequeath their separated notional coparcenary share by executing a valid Will. However, a Karta cannot make a Will disposing of the entire HUF property or other coparceners' birth shares.",
+    q: "Can a Karta or coparcener dispose of HUF asset in a Will?",
+    a: "Yes, but only for their undivided joint share! Under Section 30 of the Hindu Succession Act, 1956, any Hindu coparcener has the legal right to bequeath their separated notional joint share by signing a valid Will. However, a Karta cannot make a Will disposing of the entire HUF asset or other coparceners' birth shares.",
   },
   {
     q: "What share does a Hindu widow get upon the Karta's death?",
-    a: "A Hindu widow is an HUF member entitled to maintenance and residence, but she is not a coparcener by birth under Section 6. In Stage 1 notional partition, she gets 0%. In Stage 2, if the Karta dies without a Will (intestate), she inherits an equal share of his 1/N portion alongside other Class I heirs. If the Karta executes a Section 30 Will, he can bequeath up to 100% of his 1/N share directly to his wife.",
+    a: "A Hindu widow is an HUF member entitled to maintenance and residence, but she is not a coparcener by birth under Section 6. In Stage 1 notional split, she gets 0%. In Stage 2, if the Karta dies without a Will (no-Will), she inherits an equal share of his 1/N portion alongside other Class I heirs. If the Karta executes a Section 30 Will, he can bequeath up to 100% of his 1/N share directly to his wife.",
   },
   {
-    q: "What happens if a Karta dies without leaving a Will (Intestate)?",
-    a: "If the Karta dies intestate, their notional coparcenary share does not remain joint HUF property. Under Section 6(3) and Section 8, that 1/N portion is divided equally among all surviving Class I legal heirs: widow, surviving mother, sons, and daughters. This fragments ownership and often leaves the widow with a tiny fraction (e.g. 1/12 or 1/16).",
+    q: "What happens if a Karta dies without leaving a Will (No-Will)?",
+    a: "If the Karta dies no-Will, their notional joint share does not remain joint HUF asset. Under Section 6(3) and Section 8, that 1/N portion is divided equally among all surviving Class I legal heirs: widow, surviving mother, sons, and daughters. This fragments ownership and often leaves the widow with a tiny fraction (e.g. 1/12 or 1/16).",
   },
   {
-    q: "Can a married daughter demand a partition of HUF ancestral property?",
-    a: "Yes. Post the 2005 Amendment and the Supreme Court decision in Vineeta Sharma, a daughter remains a permanent coparcener of her father's HUF throughout her life, even after marriage. She possesses full legal authority to file a civil partition suit and claim her independent share in ancestral property, exactly like a son.",
+    q: "Can a married daughter demand a split of HUF family asset?",
+    a: "Yes. Post the 2005 Amendment and the Supreme Court decision in Vineeta Sharma, a daughter remains a permanent coparcener of her father's HUF throughout her life, even after marriage. She possesses full legal office to file a civil split suit and claim her independent share in family asset, exactly like a son.",
   },
   {
     q: "Who becomes the new Karta after the death of the father?",
     a: "By Hindu legal custom and high court precedent (Sujata Sharma v. Manu Gupta, 2016 Delhi High Court), the eldest surviving coparcener becomes the new Karta. This includes the eldest daughter if she is senior in age. If all surviving coparceners are minors, the surviving mother can act as the manager or guardian of the HUF.",
   },
   {
-    q: "How does HUF ancestral property differ from self-acquired property in a Will?",
-    a: "Self-acquired property is owned individually, and the owner can bequeath 100% of it to anyone in a Will without family consent. In contrast, HUF ancestral property is jointly owned by all coparceners from birth. In HUF property, a person can only bequeath their own undivided fractional share under Section 30.",
+    q: "How does HUF family asset differ from self-acquired asset in a Will?",
+    a: "Self-acquired asset is owned individually, and the owner can bequeath 100% of it to anyone in a Will without family consent. In contrast, HUF family asset is jointly owned by all coparceners from birth. In HUF asset, a person can only bequeath their own undivided fractional share under Section 30.",
   },
   {
-    q: "How can a family legally partition an HUF without court litigation?",
-    a: "Family members can execute a Registered Partition Deed with the Sub-Registrar of Assurances, paying the applicable state stamp duty. Alternatively, they can execute a written Family Settlement Agreement recording a prior oral partition. An amicable registered agreement avoids decades of expensive civil court partition suits.",
+    q: "How can a family legally split an HUF without court court fights?",
+    a: "Family members can execute a Filed Split Deed with the SRO of Assurances, paying the applicable state stamp duty. Alternatively, they can execute a written Family Deal Pact recording a prior oral split. An amicable filed pact avoids decades of expensive civil court split suits.",
   },
 ];
 
@@ -128,12 +128,12 @@ export default function HufCalculatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [estateValue, setEstateValue] = useState<number>(10000000); // Default ₹1 Crore
   const [numSons, setNumSons] = useState<number>(1);
   const [numDaughters, setNumDaughters] = useState<number>(1);
@@ -447,14 +447,14 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            HUF Coparcenary Property Share &amp; Partition Calculator
+            HUF Joint Asset Share &amp; Split Tool
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Calculate ancestral property shares among sons, daughters, widows, and Karta under
-            Section 6 notional partition. See how the Karta&apos;s share devolves by a Section 30
-            Will versus intestate succession.
+            Calculate family asset shares among sons, daughters, widows, and Karta under
+            Section 6 notional split. See how the Karta&apos;s share devolves by a Section 30
+            Will versus no-Will estate.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -464,7 +464,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Calculator className="w-4 h-4" />
-              <span>Calculate HUF Partition Shares</span>
+              <span>Calculate HUF Split Shares</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -550,7 +550,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 6, 8, 14 &amp; 30 of the Hindu Succession Act, 1956, read
@@ -576,21 +576,21 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <span>
                     <strong>Daughters are Equal Coparceners by Birth:</strong> Following the landmark
                     Supreme Court judgment in <em>Vineeta Sharma (2020)</em>, daughters hold identical
-                    coparcenary rights to sons by birth, regardless of when they were born.
+                    joint rights to sons by birth, regardless of when they were born.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 6(3) Notional Partition Fiction:</strong> Upon the death of a
-                    coparcener, the law presumes a partition occurred immediately prior to death. Each
+                    <strong>Section 6(3) Notional Split Fiction:</strong> Upon the death of a
+                    coparcener, the law presumes a split occurred right away prior to death. Each
                     coparcener gets 1/N share. The surviving widow receives 0% in this stage.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 30 Testamentary Bequest Right:</strong> A coparcener can bequeath
+                    <strong>Section 30 Will Bequest Right:</strong> A coparcener can bequeath
                     their undivided 1/N share in a Will. Bequeathing this share to the surviving
                     widow protects her financial autonomy and prevents family eviction.
                   </span>
@@ -598,9 +598,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Intestate Dilution Hazard:</strong> If no Will exists, the Karta&apos;s
+                    <strong>No-Will Dilution Hazard:</strong> If no Will exists, the Karta&apos;s
                     share is divided equally among all Class I heirs under Section 8, diluting the
-                    widow to a tiny fraction (e.g. 1/12 or 1/16) and sparking partition disputes.
+                    widow to a tiny fraction (e.g. 1/12 or 1/16) and sparking split fights.
                   </span>
                 </li>
               </ul>
@@ -613,7 +613,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: HUF Ancestral Property in India
+                1. Legal Rules: HUF Family Asset in India
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -623,8 +623,8 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 </p>
                 <p>
                   A coparcener is a specific member who acquires a vested joint ownership interest in
-                  the ancestral estate immediately upon birth. Under the Mitakshara school of Hindu
-                  law, only coparceners have the right to demand a partition of family assets.
+                  the family estate right away upon birth. Under the Mitakshara school of Hindu
+                  law, only coparceners have the right to demand a split of family assets.
                 </p>
               </div>
 
@@ -636,7 +636,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   </h4>
                   <ul className="text-xs text-slate-600 space-y-2 list-disc pl-4">
                     <li>Sons and daughters born into the joint family.</li>
-                    <li>Possess joint ownership and right to partition by birth.</li>
+                    <li>Possess joint ownership and right to split by birth.</li>
                     <li>Can become Karta of the family (Sujata Sharma ruling).</li>
                     <li>Can bequeath their undivided share by Will under Section 30.</li>
                   </ul>
@@ -650,8 +650,8 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <ul className="text-xs text-slate-600 space-y-2 list-disc pl-4">
                     <li>Spouses who join the family through marriage (wives and widows).</li>
                     <li>Entitled to maintenance, residence, and support from HUF income.</li>
-                    <li>Cannot demand a physical partition on their own initiative.</li>
-                    <li>Inherit under Section 8 intestacy if no Will is executed.</li>
+                    <li>Cannot demand a physical split on their own initiative.</li>
+                    <li>Inherit under Section 8 intestacy if no Will is signed.</li>
                   </ul>
                 </div>
               </div>
@@ -664,12 +664,12 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>INTERACTIVE PARTITION CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive HUF Coparcenary &amp; Partition Calculator
+                2. Free HUF Joint &amp; Split Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Enter your ancestral estate valuation and family coparcenary composition below to
-                compute statutory Stage 1 notional partition shares and compare Section 30 Will
-                bequest versus intestate succession.
+                Enter your family estate price check and family joint composition below to
+                compute legal Stage 1 notional split shares and compare Section 30 Will
+                bequest versus no-Will estate.
               </p>
 
               {/* Calculator Panel Container */}
@@ -807,7 +807,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Home className="w-4 h-4 text-[#C65378]" />
-                      <span>Total Estimated HUF Ancestral Estate Valuation</span>
+                      <span>Total Estimated HUF Family Estate Price Check</span>
                     </label>
                     <div className="text-lg sm:text-xl font-black text-[#C65378]">
                       {formatINR(estateValue)}{" "}
@@ -856,7 +856,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <div className="p-4 rounded-2xl bg-blue-50/70 border border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-blue-950">
                   <div className="flex items-center gap-2 font-extrabold">
                     <Scale className="w-4 h-4 text-blue-700" />
-                    <span>Stage 1 Notional Partition Total:</span>
+                    <span>Stage 1 Notional Split Total:</span>
                     <span className="bg-white px-2 py-0.5 rounded-md border border-blue-200">
                       {totalCoparceners} Coparceners (1/{totalCoparceners} each)
                     </span>
@@ -878,7 +878,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                         <span>Stage 2: How Does the Karta&apos;s 1/{totalCoparceners} Share Devolve?</span>
                       </div>
                       <p className="text-xs text-slate-600">
-                        Choose between testamentary disposition by Will under Section 30 or intestate succession under Section 8.
+                        Choose between Will gift by Will under Section 30 or no-Will estate under Section 8.
                       </p>
                     </div>
                   </div>
@@ -903,7 +903,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                         </span>
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Karta exercises his statutory right to bequeath up to 100% of his undivided share to his spouse.
+                        Karta exercises his legal right to bequeath up to 100% of his undivided share to his spouse.
                       </p>
                     </button>
 
@@ -1021,8 +1021,8 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                           Under <strong>Section 30 of the Hindu Succession Act</strong>, the Karta can bequeath his
                           full 1/{totalCoparceners} undivided share ({stage1PerCoparcenerPercent.toFixed(1)}% ={" "}
                           {formatINR(kartaShareAmount)}) directly to his surviving spouse. This guarantees she holds{" "}
-                          <strong>{formatINR(willWidowAmount)}</strong> of ownership in the ancestral home, ensuring
-                          dignity and absolute protection from partition suits.
+                          <strong>{formatINR(willWidowAmount)}</strong> of ownership in the family home, ensuring
+                          dignity and absolute protection from split suits.
                         </>
                       ) : (
                         <>
@@ -1097,7 +1097,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                             OPTION B (NO WILL / INTESTATE)
                           </div>
                           <div className="font-extrabold text-base text-slate-900">
-                            Section 8 Intestate Fragmentation
+                            Section 8 No-Will Fragmentation
                           </div>
                         </div>
                         <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase bg-slate-200 text-slate-800">
@@ -1136,7 +1136,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                       <div className="flex items-center gap-2">
                         <PieChart className="w-4 h-4 text-[#C65378]" />
                         <span className="text-xs sm:text-sm font-bold tracking-wide">
-                          Comprehensive Member-Wise Share Allotment
+                          Full Member-Wise Share Allotment
                         </span>
                       </div>
                       <span className="text-[11px] text-white/80 font-medium">
@@ -1149,7 +1149,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                         <thead className="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
                           <tr>
                             <th className="py-3 px-3 sm:px-4">Family Member</th>
-                            <th className="py-3 px-2 sm:px-3 text-center">Stage 1 Coparcenary</th>
+                            <th className="py-3 px-2 sm:px-3 text-center">Stage 1 Joint</th>
                             <th className="py-3 px-2 sm:px-3 text-center">Stage 2 Inherited</th>
                             <th className="py-3 px-3 sm:px-4 text-right">Total Final Share</th>
                             <th className="py-3 px-3 sm:px-4 text-right">Value (INR)</th>
@@ -1219,18 +1219,18 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>STATUTORY MECHANISM</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Section 6 Notional Partition: The 2-Stage Formula
+                3. Section 6 Notional Split: The 2-Stage Formula
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When an HUF coparcener passes away, the law does not immediately dissolve the family.
+                  When an HUF coparcener passes away, the law does not right away dissolve the family.
                   Instead, Section 6(3) of the Hindu Succession Act mandates a two-stage devolution process
                   established in <em>Gurupad Khandappa Magdum v. Hirabai</em> (1978 SC).
                 </p>
                 <p>
-                  In Stage 1, a deemed notional partition is carved out among all living coparceners. In
+                  In Stage 1, a deemed notional split is carved out among all living coparceners. In
                   Stage 2, the deceased&apos;s carved-out share devolves either through a valid Section 30
-                  Will or via Section 8 intestate succession among all Class I heirs.
+                  Will or via Section 8 no-Will estate among all Class I heirs.
                 </p>
               </div>
 
@@ -1242,7 +1242,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     href="#interactive-calculator"
                     className="font-bold text-[#C65378] underline hover:text-[#a33b5c]"
                   >
-                    interactive partition calculator above
+                    free split tool above
                   </a>
                   .
                 </span>
@@ -1257,12 +1257,12 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>LANDMARK PRECEDENT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Daughter Coparcenary Rights: Vineeta Sharma Precedent
+                4. Daughter Joint Rights: Vineeta Sharma Precedent
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Prior to 2005, daughters were excluded from Mitakshara coparcenary property. The Hindu
-                  Succession (Amendment) Act, 2005 substituted Section 6 to provide that a daughter becomes
+                  Prior to 2005, daughters were excluded from Mitakshara joint asset. The Hindu
+                  Estate (Amendment) Act, 2005 substituted Section 6 to provide that a daughter becomes
                   a coparcener by birth with the exact same rights as a son.
                 </p>
                 <p>
@@ -1290,7 +1290,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <div className="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Father Need Not Be Alive:</strong> The coparcenary right does not depend on
+                      <strong>Father Need Not Be Alive:</strong> The joint right does not depend on
                       the father living on September 9, 2005.
                     </span>
                   </div>
@@ -1304,7 +1304,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <div className="flex items-start gap-2 bg-slate-50 p-3 rounded-xl">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Prior Partitions Protected:</strong> Partitions effected by registered deed or
+                      <strong>Prior Partitions Protected:</strong> Partitions effected by filed deed or
                       court decree prior to December 20, 2004 are saved.
                     </span>
                   </div>
@@ -1323,13 +1323,13 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A widespread myth across India suggests that HUF ancestral property cannot be willed away.
+                  A widespread myth across India suggests that HUF family asset cannot be willed away.
                   This is inaccurate. While a coparcener cannot will away the <em>entire family estate</em>,
                   Section 30 of the Hindu Succession Act explicitly allows a coparcener to dispose of their{" "}
-                  <strong>undivided coparcenary share</strong> in a Will.
+                  <strong>undivided joint share</strong> in a Will.
                 </p>
                 <p>
-                  By executing a Will under Section 30 on WillDrafting, the Karta can bequeath 100% of his
+                  By signing a Will under Section 30 on WillDrafting, the Karta can bequeath 100% of his
                   notional share to his wife. This guarantees her full dignity, independent ownership, and
                   protection from eviction.
                 </p>
@@ -1343,10 +1343,10 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>LEGAL DISTINCTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Comparison: HUF Ancestral vs Self-Acquired Property
+                6. Comparison: HUF Family vs Self-Acquired Asset
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Before drafting your Will, it is essential to distinguish between HUF coparcenary assets,
+                Before drafting your Will, it is essential to distinguish between HUF joint assets,
                 self-acquired assets, and a woman&apos;s Stridhan.
               </p>
 
@@ -1356,9 +1356,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <thead className="bg-[#172228] text-white font-bold">
                     <tr>
                       <th className="py-3.5 px-4">Parameter</th>
-                      <th className="py-3.5 px-4 bg-[#24343D]">HUF Ancestral Property</th>
-                      <th className="py-3.5 px-4">Self-Acquired Property</th>
-                      <th className="py-3.5 px-4">Stridhan Property</th>
+                      <th className="py-3.5 px-4 bg-[#24343D]">HUF Family Asset</th>
+                      <th className="py-3.5 px-4">Self-Acquired Asset</th>
+                      <th className="py-3.5 px-4">Stridhan Asset</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 font-medium">
@@ -1377,19 +1377,19 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Right by Birth?</td>
                       <td className="py-3 px-4 text-blue-800 font-bold bg-slate-50/50">
-                        YES (Sons &amp; Daughters acquire right immediately at birth)
+                        YES (Sons &amp; Daughters acquire right right away at birth)
                       </td>
                       <td className="py-3 px-4 text-rose-700 font-bold">
                         NO (Children have zero legal right during owner&apos;s lifetime)
                       </td>
                       <td className="py-3 px-4 text-rose-700 font-bold">
-                        NO (Absolute property of the woman under Section 14 HSA)
+                        NO (Absolute asset of the woman under Section 14 HSA)
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Will Bequest Scope</td>
                       <td className="py-3 px-4 text-amber-800 font-bold bg-slate-50/50">
-                        Restricted strictly to testator&apos;s undivided 1/N share (Sec 30)
+                        Restricted strictly to Will maker&apos;s undivided 1/N share (Sec 30)
                       </td>
                       <td className="py-3 px-4 text-blue-800 font-bold">
                         Unrestricted (100% can be willed to anyone without family consent)
@@ -1399,15 +1399,15 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Partition Rights</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Split Rights</td>
                       <td className="py-3 px-4 text-slate-600 bg-slate-50/50">
-                        Any coparcener (son or daughter) can demand partition at any time
+                        Any coparcener (son or daughter) can demand split at any time
                       </td>
                       <td className="py-3 px-4 text-slate-600">
-                        No family member can demand partition during owner&apos;s life
+                        No family member can demand split during owner&apos;s life
                       </td>
                       <td className="py-3 px-4 text-slate-600">
-                        Husband or in-laws have zero right to partition or claim Stridhan
+                        Husband or in-laws have zero right to split or claim Stridhan
                       </td>
                     </tr>
                   </tbody>
@@ -1426,12 +1426,12 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <span className="text-[11px] font-semibold text-slate-500">Hindu Succession Act 1956</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Visual Flowchart: Step-by-Step HUF Partition Blueprint
+                  7. Visual Flowchart: Step-by-Step HUF Split Blueprint
                 </h3>
                 <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                  The statutory visual blueprint below illustrates the two-stage partition mechanism,
-                  highlighting the critical divide between executing a Section 30 Will versus dying
-                  intestate under Section 8.
+                  The legal visual blueprint below illustrates the two-stage split mechanism,
+                  highlighting the critical divide between signing a Section 30 Will versus dying
+                  no-Will under Section 8.
                 </p>
                 <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                   <Image
@@ -1453,36 +1453,36 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>DISPUTE RESOLUTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. How to Avoid Family Disputes: Registered Partition Deeds
+                8. How to Avoid Family Fights: Filed Split Deeds
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Civil partition lawsuits in India often take 15 to 30 years to reach final decree.
-                Families can avoid bitter court litigation through two primary mechanisms:
+                Civil split lawsuits in India often take 15 to 30 years to reach final decree.
+                Families can avoid bitter court court fights through two primary mechanisms:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-2">
                   <h4 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378]" />
-                    <span>Registered Partition Deed</span>
+                    <span>Filed Split Deed</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 17 of the Registration Act, 1908, a formal partition dividing
-                    immovable property by metes and bounds must be executed on appropriate stamp
-                    paper and registered with the Sub-Registrar. Once registered, title mutates
-                    directly into individual names.
+                    Under Section 17 of the Filing Act, 1908, a formal split dividing
+                    land asset by metes and bounds must be signed on appropriate stamp
+                    paper and filed with the SRO. Once filed, title mutates
+                    directly into single names.
                   </p>
                 </div>
 
                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-2">
                   <h4 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
                     <HeartHandshake className="w-4 h-4 text-blue-600" />
-                    <span>Family Settlement Agreement (FSA)</span>
+                    <span>Family Deal Pact (FSA)</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     As recognized in <em>Kale v. Deputy Director of Consolidation</em> (1976 SC), a
-                    memorandum of family settlement recording an anterior oral partition does not
-                    require compulsory registration if it merely records existing arrangements to
+                    memorandum of family deal recording an anterior oral split does not
+                    require needed filing if it merely records existing arrangements to
                     maintain family peace.
                   </p>
                 </div>
@@ -1511,11 +1511,11 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A father in Greater Kailash, Delhi held an ancestral bungalow valued at ₹12 Crore in his HUF with 1 son and 1 daughter. Without a Will, his widow would get only 1/9th share (11.11% = ₹1.33 Cr). By executing a Section 30 Will on WillDrafting, he bequeathed his entire 1/3rd share to his wife.
+                    A father in Greater Kailash, Delhi held an family bungalow valued at ₹12 Crore in his HUF with 1 son and 1 daughter. Without a Will, his widow would get only 1/9th share (11.11% = ₹1.33 Cr). By signing a Section 30 Will on WillDrafting, he bequeathed his entire 1/3rd share to his wife.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Stage 1 Coparcenary (Son &amp; Daughter Each):</span>
+                      <span className="text-slate-600">Stage 1 Joint (Son &amp; Daughter Each):</span>
                       <span className="font-bold text-slate-900">33.33% (₹4.00 Crore Each)</span>
                     </div>
                     <div className="flex justify-between">
@@ -1533,14 +1533,14 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Scenario B: Married Daughter Claims Partition in Jaipur Business HUF
+                      Scenario B: Married Daughter Claims Split in Jaipur Business HUF
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">
                       Jaipur
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A married daughter in Jaipur was denied a share in ancestral commercial properties by her two brothers claiming she was married before 2005. Invoking Vineeta Sharma (2020), she claimed her full 1/3rd coparcenary share, securing a registered family settlement.
+                    A married daughter in Jaipur was denied a share in family shop assets by her two brothers claiming she was married before 2005. Invoking Vineeta Sharma (2020), she claimed her full 1/3rd joint share, securing a filed family deal.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
@@ -1549,11 +1549,11 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600">Post-Vineeta Sharma Entitlement:</span>
-                      <span className="font-bold text-[#C65378]">Equal 33.33% Coparcenary Share</span>
+                      <span className="font-bold text-[#C65378]">Equal 33.33% Joint Share</span>
                     </div>
                     <div className="pt-1 text-[#C65378] font-black flex justify-between border-t border-slate-200">
                       <span>Resolution:</span>
-                      <span>Registered FSA executed • Full share paid</span>
+                      <span>Filed FSA signed • Full share paid</span>
                     </div>
                   </div>
                 </div>
@@ -1574,7 +1574,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 30 Will Bequest Clause for Undivided HUF Coparcenary Share
+                    Section 30 Will Bequest Clause for Undivided HUF Joint Share
                   </div>
                   <button
                     type="button"
@@ -1609,7 +1609,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    HUF Coparcenary Partition &amp; Will Drafting Checklist
+                    HUF Joint Split &amp; Will Drafting Checklist
                   </div>
                   <button
                     type="button"
@@ -1640,7 +1640,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                    <span>Daughter birth &amp; marriage certificates (Vineeta Sharma)</span>
+                    <span>Daughter birth &amp; marriage papers (Vineeta Sharma)</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
@@ -1666,22 +1666,22 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Hindu Succession &amp; HUF Partition Advocacy Bench
+                      WillDrafting.in Hindu Succession &amp; HUF Split Advocacy Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-[#C65378] text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier succession technology and estate planning
+                  WillDrafting.in is India&rsquo;s premier estate technology and estate planning
                   platform, powered by AMA Legal Solutions. Our multidisciplinary bench includes senior
-                  High Court testamentary litigators, chartered property valuation experts, and Hindu law
-                  advocates. We have structured over 15,000 challenge-proof Wills and assisted hundreds
-                  of family HUFs in partition deeds, coparcenary share computations, and dispute-free
-                  ancestral property distributions.
+                  High Court Will litigators, chartered asset price check experts, and Hindu law
+                  lawyers. We have structured over 15,000 fight-proof Wills and assisted hundreds
+                  of family HUFs in split deeds, joint share computations, and fight-free
+                  family asset distributions.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1690,14 +1690,14 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     href="/tools/succession-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Legal Heir Share Calculator</span>
+                    <span>Legal Heir Share Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/probate-checker"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1718,7 +1718,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Frequently Asked Questions: HUF Property Partition
+                12. Frequently Asked Questions: HUF Asset Split
               </h3>
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, idx) => (
@@ -1756,31 +1756,31 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <span>AUTHORITATIVE CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Authorities &amp; Landmark Judicial Precedents
+                13. Legal Offices &amp; Landmark Judicial Precedents
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Provisions of the Hindu Succession Act, 1956:
+                    Governing Rules of the Hindu Succession Act, 1956:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Section 6(1):</strong> Devolution of coparcenary interest granting daughters equal birthright.
+                      <strong>Section 6(1):</strong> Devolution of joint interest granting daughters equal birthright.
                     </li>
                     <li>
-                      <strong>Section 6(3):</strong> Statutory notional partition deeming fiction upon death of coparcener.
+                      <strong>Section 6(3):</strong> Legal notional split deeming fiction upon death of coparcener.
                     </li>
                     <li>
-                      <strong>Section 8:</strong> General rules of succession in case of Hindu male dying intestate.
+                      <strong>Section 8:</strong> General rules of estate in case of Hindu male dying no-Will.
                     </li>
                     <li>
-                      <strong>Section 14:</strong> Property of a female Hindu to be her absolute property (Stridhan).
+                      <strong>Section 14:</strong> Asset of a female Hindu to be her absolute asset (Stridhan).
                     </li>
                     <li>
-                      <strong>Section 30:</strong> Statutory power to dispose of undivided coparcenary interest by Will.
+                      <strong>Section 30:</strong> Legal power to dispose of undivided joint interest by Will.
                     </li>
                     <li>
-                      <strong>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1:</strong> 3-judge bench ruling confirming daughter coparcenary right from birth.
+                      <strong>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1:</strong> 3-judge bench ruling confirming daughter joint right from birth.
                     </li>
                   </ul>
                 </div>
@@ -1808,26 +1808,26 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Drafting Document Checklist
+                      Will Drafting Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1839,7 +1839,29 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1852,21 +1874,21 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu succession jurisprudence, High Court partition suits, Section
-                30 coparcenary testamentary bequests, and ancestral property title devolution.
+                Expert in Hindu succession jurisprudence, High Court split suits, Section
+                30 joint Will bequests, and family asset title devolution.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-[#C65378] flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#C65378]" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1880,11 +1902,11 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <span>PREVENT SURVIVING SPOUSE SIDELINING</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Spouse&apos;s Share in HUF Property
+                  Protect Your Spouse&apos;s Share in HUF Asset
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  In Stage 1 partition, a widow receives 0%. Without a Section 30 Will, her share is
-                  diluted across all heirs. A Will secures 100% of your coparcenary share for her.
+                  In Stage 1 split, a widow receives 0%. Without a Section 30 Will, her share is
+                  diluted across all heirs. A Will secures 100% of your joint share for her.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1906,18 +1928,18 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <span>COMPLEX HUF PARTITION SUIT DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Facing an Ancestral Partition Dispute or Karta Sale?
+                  Facing an Family Split Fight or Karta Sale?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our civil litigators handle Registered Partition Deeds, Family Settlement Agreements,
-                  and injunctions against unauthorized Karta property alienation.
+                  Our civil litigators handle Filed Split Deeds, Family Deal Agreements,
+                  and injunctions against unauthorized Karta asset alienation.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1936,7 +1958,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 30 Bequest Engine:</strong> Calculates testamentary spouse protection vs intestate fragmentation.
+                      <strong>Section 30 Bequest Engine:</strong> Calculates Will spouse protection vs no-Will fragmentation.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -1959,7 +1981,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>HUF Calculator</span>
+          <span>HUF Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

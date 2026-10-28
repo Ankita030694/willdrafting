@@ -44,9 +44,9 @@ import {
 const TOC_ITEMS = [
   { id: "digital-legacy-crisis", label: "1. Digital Asset Dilemma: The Public Probate Risk" },
   { id: "two-part-solution-framework", label: "2. Two-Part Solution: Public Will vs Sealed Memorandum" },
-  { id: "interactive-inventory-tool", label: "3. Interactive Digital Asset Inventory Generator" },
+  { id: "interactive-inventory-tool", label: "3. Free Digital Asset Inventory Generator" },
   { id: "statutory-it-act-compliance", label: "4. Indian Legal Framework: IT Act & Section 115BBH Tax" },
-  { id: "digital-executor-powers", label: "5. Appointing a Digital Executor: Scope & Authorities" },
+  { id: "digital-executor-powers", label: "5. Appointing a Digital Executor: Scope & Offices" },
   { id: "crypto-hardware-cold-storage", label: "6. Securing Hardware Wallets & Seed Phrases Offline" },
   { id: "exchange-web2-legacy-protocols", label: "7. Centralized Exchanges, Domains & Social Accounts" },
   { id: "comparison-table-architecture", label: "8. Comparison: Will Clause vs Sealed Memo vs Intestacy" },
@@ -55,41 +55,41 @@ const TOC_ITEMS = [
   { id: "copy-paste-will-templates", label: "11. Copy-Paste Digital Will Clauses & Sealed Inventory" },
   { id: "institutional-profile", label: "12. Institutional Legal Backing: AMA Legal Solutions" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions: Crypto Will Formats" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Tech Legacy Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Tech Legacy Portals" },
 ];
 
 const FAQS = [
   {
     q: "Can I mention my crypto wallet seed phrases or passwords directly in my Will?",
-    a: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a registered Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial document open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your cryptocurrency in seconds.",
+    a: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a filed Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial paper open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your cryptocurrency in seconds.",
   },
   {
     q: "What is the recommended two-part format for bequeathing cryptocurrency in India?",
-    a: "The gold-standard legal architecture consists of: (1) A formal Public Will Clause bequeathing ownership of the underlying digital assets, tokens, hardware devices, and domains to designated beneficiaries and appointing a Digital Executor, and (2) A confidential, offline Sealed Digital Access Memorandum stored in a secure bank safe deposit locker or steel vault containing technical access coordinates, hardware PIN locations, and password recovery instructions.",
+    a: "The gold-standard legal architecture consists of: (1) A formal Public Will Clause bequeathing ownership of the underlying digital assets, tokens, hardware devices, and domains to designated heirs and appointing a Digital Executor, and (2) A confidential, offline Sealed Digital Access Memorandum stored in a secure bank safe deposit locker or steel vault containing technical access coordinates, hardware PIN locations, and password recovery instructions.",
   },
   {
-    q: "Is cryptocurrency inheritance taxable under Section 115BBH in India?",
-    a: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, any property received under a Will or by way of inheritance is completely exempt from income tax in the hands of the legal heir. While Section 115BBH levies a flat 30% tax plus surcharge and cess on the transfer of Virtual Digital Assets (VDAs), inheritance is excluded from taxable transfer. However, when the beneficiary subsequently sells or exchanges the inherited crypto for fiat currency, the 30% tax applies on the net gains.",
+    q: "Is cryptocurrency estate taxable under Section 115BBH in India?",
+    a: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, any asset received under a Will or by way of estate is completely exempt from income tax in the hands of the legal heir. While Section 115BBH levies a flat 30% tax plus surcharge and cess on the transfer of Virtual Digital Assets (VDAs), estate is excluded from taxable transfer. However, when the heir then sells or exchanges the inherited crypto for fiat currency, the 30% tax applies on the net gains.",
   },
   {
     q: "What powers does a Digital Executor have under the Information Technology Act, 2000?",
-    a: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unauthorized access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and executing custodial transfers.",
+    a: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unauthorized access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and signing custodial transfers.",
   },
   {
     q: "How do Indian exchanges like CoinDCX and WazirX handle the death of an account holder?",
-    a: "Indian FIU-registered exchanges require: (1) Certified copy of the death certificate, (2) Probated Will or Succession Certificate or Legal Heir Certificate issued by the competent revenue authority or civil court, (3) KYC documents and PAN of the claiming legal heir, and (4) An indemnity bond executed by all legal heirs with two solvent sureties. The account is frozen upon notification, and assets are transferred only to verified beneficiary bank accounts.",
+    a: "Indian FIU-filed exchanges require: (1) Certified copy of the death paper, (2) Probated Will or Estate Paper or Legal Heir Paper issued by the competent revenue office or civil court, (3) KYC papers and PAN of the claiming legal heir, and (4) An indemnity bond signed by all legal heirs with two solvent sureties. The account is frozen upon notification, and assets are transferred only to checked heir bank accounts.",
   },
   {
     q: "What happens to self-custody cold wallets (Ledger, Trezor) if no seed phrase is left behind?",
-    a: "If a testator dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the cryptocurrency stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, succession certificates, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
+    a: "If a Will maker dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the cryptocurrency stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, estate papers, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
   },
   {
     q: "Can I transfer domain names, SaaS accounts, and social media through a Will?",
-    a: "Yes. Domain names registered on ICANN-accredited registrars (such as GoDaddy or Namecheap) and proprietary intellectual property or software codes are recognized as intangible personal property. The Will should authorize the Digital Executor to request registry transfer. For accounts with Google and Apple, testators should configure Inactive Account Manager and Apple Legacy Contacts prior to demise.",
+    a: "Yes. Domain names filed on ICANN-accredited registrars (such as GoDaddy or Namecheap) and proprietary intellectual asset or software codes are recognized as intangible personal asset. The Will should authorize the Digital Executor to request registry transfer. For accounts with Google and Apple, Will makers should configure Inactive Account Manager and Apple Legacy Contacts prior to demise.",
   },
   {
     q: "Is a separate Sealed Digital Access Memorandum legally binding in an Indian court?",
-    a: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a testamentary instrument that disposes of property title. The legal bequest of title is executed via the registered Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating property, it does not require probate or public filing, preserving complete technical confidentiality.",
+    a: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a Will instrument that disposes of asset title. The legal bequest of title is signed via the filed Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating asset, it does not require probate or public filing, preserving complete technical confidentiality.",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function DigitalAssetsCryptoScheduleClient() {
   const [copiedHardwareReceipt, setCopiedHardwareReceipt] = useState<boolean>(false);
   const [copiedTailoredSchedule, setCopiedTailoredSchedule] = useState<boolean>(false);
 
-  // Interactive Digital Asset Inventory Generator State
+  // Free Digital Asset Inventory Generator State
   const [selectedAssets, setSelectedAssets] = useState<{ [key: string]: boolean }>({
     hardware_wallets: true,
     indian_exchanges: true,
@@ -320,7 +320,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -345,7 +345,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               </div>
             </div>
             <div className="pt-2 md:pt-0">
-              <div className="text-2xl sm:text-3xl font-extrabold text-[#172228]">0% Inheritance Tax</div>
+              <div className="text-2xl sm:text-3xl font-extrabold text-[#172228]">0% Estate Tax</div>
               <div className="text-[11px] font-bold uppercase tracking-wider text-[#49585F] mt-0.5">
                 EXEMPT U/S 56(2)(x) UPON WILL
               </div>
@@ -398,7 +398,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Indian Succession Act, 1925 (Sections 2(h), 59, 63, 211, 213, 294),
@@ -423,8 +423,8 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Public Probate Hazard:</strong> Under Section 294 of the Indian
-                    Succession Act, probated Wills become public court records. Writing seed phrases, PINs,
-                    or passwords in a registered Will exposes your entire cryptographic wealth to public
+                    Estate Act, probated Wills become public court records. Writing seed phrases, PINs,
+                    or passwords in a filed Will exposes your entire cryptographic wealth to public
                     theft.
                   </span>
                 </li>
@@ -432,7 +432,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Two-Part Architecture:</strong> The only legally sound and technically secure
-                    solution is executing a <em>Public Will Clause</em> (bequeathing title, tokens, and
+                    solution is signing a <em>Public Will Clause</em> (bequeathing title, tokens, and
                     hardware devices) alongside a separate <em>Confidential Sealed Digital Access
                     Memorandum</em> kept offline in a bank vault.
                   </span>
@@ -449,9 +449,9 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Tax Exemption on Inheritance:</strong> Bequests of Virtual Digital Assets (VDAs)
+                    <strong>Tax Exemption on Estate:</strong> Bequests of Virtual Digital Assets (VDAs)
                     under a Will are 100% exempt from income tax under Section 56(2)(x). The flat 30% tax
-                    under Section 115BBH applies only when the heir subsequently liquidates into fiat.
+                    under Section 115BBH applies only when the heir then liquidates into fiat.
                   </span>
                 </li>
               </ul>
@@ -462,7 +462,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               <div className="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
                 <span className="font-bold text-slate-900 flex items-center gap-1.5">
                   <Key className="w-3.5 h-3.5 text-[#C65378]" />
-                  <span>Verified Legal Template Architecture</span>
+                  <span>Checked Legal Template Architecture</span>
                 </span>
                 <span className="text-[11px] font-semibold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full">
                   Two-Part Will &amp; Offline Seed Protocol
@@ -480,7 +480,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1 text-xs text-slate-600">
                 <p className="italic">
-                  Figure 1: Authentic testamentary digital asset protocol combining formal public Will clauses
+                  Figure 1: Authentic Will digital asset protocol combining formal public Will clauses
                   with an offline sealed access memorandum.
                 </p>
                 <a
@@ -507,26 +507,26 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   As Indian investors, startup founders, and tech professionals accumulate significant wealth
                   in self-custody cryptocurrencies, centralized exchange portfolios, domain portfolios, and
                   proprietary digital infrastructure, estate planning faces an unprecedented technological
-                  challenge. Traditional Will drafting was created for tangible immovable real estate and
+                  fight. Traditional Will drafting was created for tangible land real estate and
                   physical gold; it was never designed for decentralized, cryptographic, bearer assets.
                 </p>
                 <p>
-                  When a testator bequeaths real estate, the property description (khasra number, municipal
-                  door number, registered deed volume) is published in local newspapers and judicial probate
-                  filings without compromising title. By contrast, if a testator writes their 12 or 24-word
-                  BIP-39 seed phrase, Ledger PIN, or master password inside their registered Will, they have
+                  When a Will maker bequeaths real estate, the asset description (khasra number, city
+                  door number, filed deed volume) is published in local newspapers and judicial probate
+                  filings without compromising title. By contrast, if a Will maker writes their 12 or 24-word
+                  BIP-39 seed phrase, Ledger PIN, or master password inside their filed Will, they have
                   guaranteed the total loss of their assets.
                 </p>
                 <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/90 text-amber-950 text-xs sm:text-sm space-y-2">
                   <div className="font-extrabold flex items-center gap-2 text-amber-900">
                     <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0" />
-                    <span>Statutory Trap: Section 294 of the Indian Succession Act, 1925</span>
+                    <span>Legal Trap: Section 294 of the Indian Succession Act, 1925</span>
                   </div>
                   <p className="leading-relaxed">
                     Under Section 294 of the Indian Succession Act, when a Will is filed for Probate or
-                    Letters of Administration in the High Court or District Court, the original Will is
+                    Letters of Care in the High Court or District Court, the original Will is
                     deposited in the public court registry. Any person, adverse litigant, or court clerk has
-                    the statutory right to inspect, examine, and obtain certified photocopies of the probated
+                    the legal right to inspect, examine, and obtain certified photocopies of the probated
                     instrument. A seed phrase recorded in a public Will becomes public domain the moment
                     probate is instituted.
                   </p>
@@ -535,7 +535,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   Conversely, if you leave <em>nothing</em> in writing, the decentralized nature of
                   blockchain ensures your wealth is permanently destroyed. Non-custodial hardware wallets
                   (Ledger Nano, Trezor, Keystone) have zero customer service and zero judicial backdoors.
-                  Without private keys, neither a Supreme Court decree nor a Legal Heir Certificate can compel
+                  Without private keys, neither a Supreme Court decree nor a Legal Heir Paper can compel
                   the Ethereum or Bitcoin blockchain to transfer coins.
                 </p>
               </div>
@@ -552,8 +552,8 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To reconcile the strict legal requirement of testamentary clarity with the absolute
-                  security mandate of cryptographic custody, estate planning advocates at AMA Legal Solutions
+                  To reconcile the strict legal rule of Will clarity with the absolute
+                  security mandate of cryptographic custody, estate planning lawyers at AMA Legal Solutions
                   utilize a specialized <strong>Two-Part Digital Legacy Framework</strong>:
                 </p>
 
@@ -575,7 +575,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                       </li>
                       <li className="flex items-start gap-1.5">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span>Grants statutory authorization under the Information Technology Act, 2000.</span>
+                        <span>Grants legal authorization under the Information Technology Act, 2000.</span>
                       </li>
                       <li className="flex items-start gap-1.5">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -593,7 +593,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                     <ul className="space-y-2 text-xs text-slate-600 leading-relaxed">
                       <li className="flex items-start gap-1.5">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span>Offline document stored in a bank safe deposit locker or steel vault.</span>
+                        <span>Offline paper stored in a bank safe deposit locker or steel vault.</span>
                       </li>
                       <li className="flex items-start gap-1.5">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -605,7 +605,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                       </li>
                       <li className="flex items-start gap-1.5">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span>Never registered at the SRO and never submitted in probate court.</span>
+                        <span>Never filed at the SRO and never submitted in probate court.</span>
                       </li>
                     </ul>
                   </div>
@@ -625,10 +625,10 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                 <span>INTERACTIVE DIGITAL ESTATE CONFIGURATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Interactive Digital Asset Inventory Generator
+                3. Free Digital Asset Inventory Generator
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select your digital asset holdings, evaluate your probate vulnerability score, and generate a
+                Select your digital asset holdings, evaluate your probate risk score, and generate a
                 tailored, lawyer-vetted inventory schedule for your Indian estate plan.
               </p>
 
@@ -675,7 +675,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                       {
                         key: "domain_servers",
                         label: "Tech Domains, Cloud & Code Repos",
-                        desc: "GoDaddy, AWS, GitHub, intellectual property rights",
+                        desc: "GoDaddy, AWS, GitHub, intellectual asset rights",
                         icon: Server,
                       },
                     ].map((item) => {
@@ -717,7 +717,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   {/* Portfolio Tier */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Portfolio Valuation Tier
+                      Portfolio Price Check Tier
                     </label>
                     <select
                       value={portfolioTier}
@@ -802,7 +802,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   ) : (
                     <p className="text-[11px] text-slate-600">
                       Click the button above to test what happens if you inadvertently record passwords or seed
-                      phrases inside the public Will document.
+                      phrases inside the public Will paper.
                     </p>
                   )}
                 </div>
@@ -860,17 +860,17 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                       <span>Tax Advisory: Section 56(2)(x) vs Section 115BBH</span>
                     </div>
                     <p className="text-[11px] text-slate-300">
-                      Your beneficiaries inherit these digital assets with <strong>0% immediate tax</strong>.
-                      However, if they subsequently sell or swap on exchanges, a flat 30% tax + 4% cess
+                      Your heirs inherit these digital assets with <strong>0% immediate tax</strong>.
+                      However, if they then sell or swap on exchanges, a flat 30% tax + 4% cess
                       applies on profits under Section 115BBH. Maintaining purchase invoices and transaction
-                      hashes in your sealed file is mandatory to prove the cost of acquisition.
+                      hashes in your sealed file is needed to prove the cost of acquisition.
                     </p>
                     <div className="pt-1">
                       <Link
                         href="/tools/capital-gains-tax-calculator-inherited-property"
                         className="text-rose-300 hover:text-white underline font-bold inline-flex items-center gap-1 text-[11px]"
                       >
-                        <span>Calculate inherited capital gains tax with our interactive calculator</span>
+                        <span>Calculate inherited capital gains tax with our free tool</span>
                         <ArrowRight className="w-3 h-3" />
                       </Link>
                     </div>
@@ -924,7 +924,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Estate planning for digital assets in India is governed by the intersection of four
-                  statutory pillars: the <strong>Indian Succession Act, 1925</strong>, the <strong>Information
+                  legal pillars: the <strong>Indian Succession Act, 1925</strong>, the <strong>Information
                   Technology Act, 2000</strong>, the <strong>Income Tax Act, 1961</strong>, and the newly
                   enacted <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>.
                 </p>
@@ -933,14 +933,14 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                     <h3 className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                       <Scale className="w-4 h-4 text-[#C65378]" />
-                      <span>1. Indian Succession Act, 1925: Bequest of Intangible Personal Property</span>
+                      <span>1. Indian Succession Act, 1925: Bequest of Intangible Personal Asset</span>
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under Section 2(h) and Section 59 of the Act, every person of sound mind has the legal
-                      capacity to dispose of all property belonging to them by Will, whether tangible or
+                      capacity to dispose of all asset belonging to them by Will, whether tangible or
                       intangible, real or personal. Virtual digital assets, domain licenses, and code
-                      repositories constitute movable personal property under Indian law. Section 63 mandates
-                      execution on plain paper in the presence of two attesting witnesses.
+                      repositories constitute cash personal asset under Indian law. Section 63 mandates
+                      signing on plain paper in the presence of two signing witnesses.
                     </p>
                   </div>
 
@@ -968,8 +968,8 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Finance Act 2022 inserted Section 2(47A) defining Virtual Digital Assets (VDAs) and
                       Section 115BBH charging a 30% flat tax on gains from VDA transfers. However, proviso to
-                      Section 56(2)(x) specifically clarifies that any sum of money or property received under a
-                      Will or by way of inheritance does not attract income tax. When the heir subsequently
+                      Section 56(2)(x) mainly clarifies that any sum of money or asset received under a
+                      Will or by way of estate does not attract income tax. When the heir then
                       liquidates the tokens into INR, Section 115BBH applies with zero deduction for expenses
                       (except the cost of acquisition under Section 49).
                     </p>
@@ -984,8 +984,8 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       Replacing the old Section 65B of the Indian Evidence Act, Section 61 and Section 63 of
                       the BSA govern the admissibility of electronic records in Indian courts. Transaction
                       hashes, digital wallet export logs, and exchange account statements submitted by the
-                      Digital Executor must be certified in compliance with BSA requirements to be accepted as
-                      conclusive proof of ownership.
+                      Digital Executor must be certified in compliance with BSA rules to be accepted as
+                      strong proof of ownership.
                     </p>
                   </div>
                 </div>
@@ -999,7 +999,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <span>FIDUCIARY GOVERNANCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Appointing a Digital Executor: Scope &amp; Authorities
+                5. Appointing a Digital Executor: Scope &amp; Offices
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1009,7 +1009,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   dedicated <strong>Digital Executor</strong> bridges this technical chasm.
                 </p>
                 <p>
-                  The Digital Executor operates as a co-executor or special limited fiduciary whose authority
+                  The Digital Executor operates as a co-executor or special limited fiduciary whose office
                   is restricted to electronic records, digital devices, and cryptographic assets. Their legally
                   mandated responsibilities include:
                 </p>
@@ -1024,11 +1024,11 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   </div>
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Liaising with Indian exchanges (CoinDCX, WazirX) for formal account transmission.</span>
+                    <span>Liaising with Indian exchanges (CoinDCX, WazirX) for formal account transfer.</span>
                   </div>
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Transferring domains and code repositories to keep online commercial SaaS active.</span>
+                    <span>Transferring domains and code repositories to keep online shop SaaS active.</span>
                   </div>
                 </div>
               </div>
@@ -1075,8 +1075,8 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       <span className="font-bold text-[#C65378]">•</span>
                       <span>
                         <strong>25th Word (Passphrase Architecture):</strong> For advanced security, use BIP-39
-                        optional passphrases. The 24 words can be stored in the bank locker, while the secret
-                        25th word is entrusted to your estate advocate at AMA Legal Solutions. Both are needed
+                        a choice passphrases. The 24 words can be stored in the bank locker, while the secret
+                        25th word is entrusted to your estate lawyer at AMA Legal Solutions. Both are needed
                         to reconstruct the master private key.
                       </span>
                     </li>
@@ -1096,7 +1096,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Unlike decentralized wallets, centralized crypto exchanges (FIU-registered entities like
+                  Unlike decentralized wallets, centralized crypto exchanges (FIU-filed entities like
                   CoinDCX, WazirX, CoinSwitch, or offshore entities like Binance) maintain custodial control of
                   user funds. Their Terms of Service explicitly forbid sharing account passwords. Logging into a
                   deceased person&rsquo;s exchange account can trigger automated fraud freezes and 2FA lockouts.
@@ -1104,14 +1104,14 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                     <Landmark className="w-4 h-4 text-blue-600" />
-                    <span>Indian Exchange Death Transmission Protocol</span>
+                    <span>Indian Exchange Death Transfer Protocol</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     To claim balances legally from an Indian exchange, the Digital Executor or legal heir must
-                    submit: (1) Certified death certificate, (2) Probated Will or Court Succession
-                    Certificate, (3) KYC documents of all legal heirs, and (4) Form 124 Indemnity Bond signed
+                    submit: (1) Certified death paper, (2) Probated Will or Court Estate
+                    Paper, (3) KYC papers of all legal heirs, and (4) Form 124 Indemnity Bond signed
                     by all heirs. The exchange liquidates or transmits the crypto balance into an authorized
-                    beneficiary account.
+                    heir account.
                   </p>
                   <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-2 text-[11px] font-bold">
                     <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800">
@@ -1121,7 +1121,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       Apple: Legacy Contact Access Key
                     </span>
                     <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800">
-                      GoDaddy/AWS: ICANN Registry Succession
+                      GoDaddy/AWS: ICANN Registry Estate
                     </span>
                   </div>
                 </div>
@@ -1138,7 +1138,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 8. Comparison: Will Clause vs Sealed Memo vs Intestacy
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                How different digital estate transmission approaches compare under Indian testamentary law:
+                How different digital estate transfer approaches compare under Indian testamentary law:
               </p>
 
               {/* Table Container */}
@@ -1159,7 +1159,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       <td className="py-3 px-4 font-bold text-emerald-700">100% Enforceable</td>
                       <td className="py-3 px-4 text-slate-500">Logistical Only</td>
                       <td className="py-3 px-4">Requires Court Order</td>
-                      <td className="py-3 px-4 text-rose-700">Subject to Dispute</td>
+                      <td className="py-3 px-4 text-rose-700">Subject to Fight</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Cryptographic Security</td>
@@ -1220,7 +1220,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   {
                     step: 2,
                     title: "Draft Part 1: Public Will Clause with Digital Executor",
-                    desc: "Incorporate our lawyer-vetted digital bequest clause into your main registered Will. Appoint a tech-competent Digital Executor with express IT Act Section 43/66 legal authorization.",
+                    desc: "Incorporate our lawyer-vetted digital bequest clause into your main filed Will. Appoint a tech-competent Digital Executor with express IT Act Section 43/66 legal authorization.",
                   },
                   {
                     step: 3,
@@ -1282,7 +1282,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A Web3 developer held 18 BTC on a Ledger hardware wallet. Instead of writing the seed
-                    phrase into his registered Will, he used our Two-Part architecture, bequeathing the
+                    phrase into his filed Will, he used our Two-Part architecture, bequeathing the
                     underlying Bitcoin in the Will and keeping the stainless steel seed capsule in an SBI bank
                     locker.
                   </p>
@@ -1292,11 +1292,11 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       <span className="font-bold text-emerald-700">0% (Zero seed in court)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Tax Payable upon Will Transmission:</span>
+                      <span className="text-slate-600">Tax Payable upon Will Transfer:</span>
                       <span className="font-bold text-emerald-700">₹0 (Exempt u/s 56(2)(x))</span>
                     </div>
                     <div className="pt-1 text-emerald-800 font-bold flex justify-between border-t border-slate-200">
-                      <span>Result for Beneficiary:</span>
+                      <span>Result for Heir:</span>
                       <span>100% Coins Retrieved Safely</span>
                     </div>
                   </div>
@@ -1422,7 +1422,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Authority Letter</span>
+                        <span>Copy Office Letter</span>
                       </>
                     )}
                   </button>
@@ -1478,21 +1478,21 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Digital Estate &amp; Succession Practice
+                      WillDrafting.in Digital Estate &amp; Estate Practice
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s leading digital succession and estate planning platform,
+                  WillDrafting.in is India&rsquo;s leading digital estate and estate planning platform,
                   powered by AMA Legal Solutions. Our multidisciplinary legal bench combines senior High
-                  Court probate advocates, cyber-law litigators under the Information Technology Act, and
+                  Court probate lawyers, cyber-law litigators under the Information Technology Act, and
                   chartered tax counsel specializing in Section 115BBH VDA taxation. We have structured over
-                  15,000 challenge-proof Wills for resident Indian tech founders, investors, and NRIs worldwide.
+                  15,000 fight-proof Wills for resident Indian tech founders, investors, and NRIs worldwide.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1508,14 +1508,14 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     href="/tools/probate-checker"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>SRO Will Registration Desk</span>
+                    <span>SRO Will Filing Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1575,17 +1575,17 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Tech Legacy Portals
+                14. Legal Citations &amp; Official Tech Legacy Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Provisions of Indian Law &amp; Precedents:
+                    Governing Rules of Indian Law &amp; Precedents:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
                       <strong>Indian Succession Act, 1925 (Section 59 &amp; 63):</strong> Capacity to bequeath
-                      intangible movable property by Will executed on plain paper.
+                      intangible cash asset by Will signed on plain paper.
                     </li>
                     <li>
                       <strong>Indian Succession Act, 1925 (Section 294):</strong> Public deposition of probated
@@ -1593,19 +1593,19 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     </li>
                     <li>
                       <strong>Information Technology Act, 2000 (Section 43 &amp; 66):</strong> Penalties for
-                      unauthorized access and statutory agent authorization framework.
+                      unauthorized access and legal agent authorization framework.
                     </li>
                     <li>
                       <strong>Income Tax Act, 1961 (Section 2(47A) &amp; 115BBH):</strong> Virtual Digital Asset
                       definition and 30% tax on subsequent sale.
                     </li>
                     <li>
-                      <strong>Income Tax Act, 1961 (Section 56(2)(x)):</strong> Absolute exemption of testamentary
-                      bequests and inheritance from income tax.
+                      <strong>Income Tax Act, 1961 (Section 56(2)(x)):</strong> Absolute exemption of Will
+                      bequests and estate from income tax.
                     </li>
                     <li>
                       <strong>Bharatiya Sakshya Adhiniyam, 2023 (Section 61 &amp; 63):</strong> Admissibility
-                      requirements for electronic records and cryptographic ledgers.
+                      rules for electronic records and cryptographic ledgers.
                     </li>
                   </ul>
                 </div>
@@ -1617,7 +1617,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>Income Tax Department Portal</span>
+                    <span>Income Tax Office Portal</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1626,7 +1626,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>FIU-IND Registered VDA Portal</span>
+                    <span>FIU-IND Filed VDA Portal</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1642,7 +1642,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1661,31 +1661,53 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Capital Gains Calculator
+                      Inherited Capital Gains Tool
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Drafting Document Checklist
+                      Will Drafting Paper Checklist
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Sub-Registrar Will Registration
+                      SRO Will Filing
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1698,21 +1720,21 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, IT Act electronic authorization, Section
-                115BBH crypto estate planning, and cross-border digital asset transmission.
+                Expert in Indian testamentary jurisprudence, IT Act electronic authorization, Section
+                115BBH crypto estate planning, and cross-border digital asset transfer.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1729,7 +1751,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   Protect Your Family from Lost Seed Phrases &amp; Probate Leaks
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Draft a legally binding, challenge-proof Will with our automated platform. Includes
+                  Draft a legally binding, fight-proof Will with our automated platform. Includes
                   dedicated digital executor clauses and private sealed legacy guidelines.
                 </p>
                 <button
@@ -1756,14 +1778,14 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Our cyber-law litigators and estate planning counsel structure multi-sig key custody,
-                  cross-border offshore exchange claims, and custom digital testamentary trusts.
+                  cross-border offshore exchange claims, and custom digital Will trusts.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1782,13 +1804,13 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>IT Act Authorization:</strong> Grants statutory agent immunity under Sections 43 &amp; 66.
+                      <strong>IT Act Authorization:</strong> Grants legal agent immunity under Sections 43 &amp; 66.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Tax Exemption Verified:</strong> Confirms 0% inheritance tax under Section 56(2)(x).
+                      <strong>Tax Exemption Checked:</strong> Confirms 0% estate tax under Section 56(2)(x).
                     </span>
                   </li>
                 </ul>

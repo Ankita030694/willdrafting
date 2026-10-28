@@ -78,7 +78,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 1 to 2",
     urgency: "critical",
     penaltyRisk: "Cannot register death with municipal authority or obtain cremation permit without Form 4/4A.",
-    description: "Secure the official Medical Certificate of Cause of Death in Form 4 (for hospital death) or Form 4A (for non-institutional demise) signed by the registered attending doctor.",
+    description: "Secure the official Medical Paper of Cause of Death in Form 4 (for hospital death) or Form 4A (for non-institutional demise) signed by the filed attending doctor.",
     actionSteps: [
       "Collect Form 4 / 4A from the hospital administrative desk or attending doctor.",
       "Verify that the name, age, gender, and cause of demise match government ID records.",
@@ -187,7 +187,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 3 to 7",
     urgency: "high",
     penaltyRisk: "Delays in intimation can hold up group term insurance claims and family medical cover continuity.",
-    description: "Notify the employer's HR department to initiate processing of corporate group term insurance, gratuity, pending salary, and encashment of accumulated leave.",
+    description: "Notify the employer's HR office to initiate processing of corporate group term insurance, gratuity, pending salary, and encashment of accumulated leave.",
     actionSteps: [
       "Submit written intimation of demise along with the hospital death summary.",
       "Request claim forms for Group Term Life Insurance (GTLI) and corporate mediclaim.",
@@ -207,7 +207,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Strict 21-Day Cutoff",
     urgency: "critical",
     penaltyRisk: "Missing 21 days requires payment of late fee; missing 30 days requires Sub-Divisional Magistrate (SDM) order.",
-    description: "File the formal death report with the jurisdictional Registrar of Births and Deaths (Municipal Corporation, Municipality, or Gram Panchayat) within 21 days.",
+    description: "File the formal death report with the local Registrar of Births and Deaths (City City Board, Town Office, or Gram Panchayat) within 21 days.",
     actionSteps: [
       "Apply online via CRS portal (crsorgi.gov.in) or visit the local municipal citizen service center.",
       "Submit MCCD Form 4/4A, cremation ground receipt, and applicant ID proof.",
@@ -225,7 +225,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 10 to 21",
     urgency: "high",
     penaltyRisk: "Banks, insurers, and courts require original or certified copies; color photocopies are routinely rejected.",
-    description: "Apply for 15 to 20 digitally signed, official copies of the Death Certificate bearing the QR code and Registrar seal for simultaneous asset transmissions.",
+    description: "Apply for 15 to 20 digitally signed, official copies of the Death Paper bearing the QR code and Registrar seal for simultaneous asset transmissions.",
     actionSteps: [
       "Request multiple certified copies from the municipal portal or registrar office.",
       "Verify that spelling of the name, age, father's/husband's name, and date of death match ID cards.",
@@ -243,7 +243,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 10 to 21",
     urgency: "high",
     penaltyRisk: "Inordinate delay in filing insurance claim allows insurers to initiate protracted forensic claim audits.",
-    description: "Submit written death claim intimations to all individual life insurance providers (LIC, HDFC Life, ICICI Pru, Max Life) along with original policy bonds.",
+    description: "Submit written death claim intimations to all single life insurance providers (LIC, HDFC Life, ICICI Pru, Max Life) along with original policy bonds.",
     actionSteps: [
       "Submit Claim Form 1 (or insurer online claim module) with death certificate copy.",
       "Furnish original policy document, nominee KYC, and cancelled cheque of nominee account.",
@@ -261,7 +261,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 14 to 21",
     urgency: "high",
     penaltyRisk: "Unaware heirs may distribute assets under intestate succession rules, leading to subsequent Will contest suits.",
-    description: "Search the deceased's secure lockers, safe deposit boxes, or attorney records to verify if a registered or unregistered Last Will and Testament exists.",
+    description: "Search the deceased's secure lockers, safe deposit boxes, or attorney records to verify if a filed or plain Last Will and Testament exists.",
     actionSteps: [
       "Contact the family advocate or executor named by the deceased.",
       "Check safe deposit vaults and family records for original Will and codicils.",
@@ -317,7 +317,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Mandatory 30-Day Limit",
     urgency: "critical",
     penaltyRisk: "Automated GST portal notices, penalty interest, and inability to claim unutilized input tax credits.",
-    description: "If the deceased owned a sole proprietorship with a GSTIN, legal heirs must submit an application for cancellation in Form GST REG-16 within 30 days.",
+    description: "If the deceased owned a sole proprietorship with a GSTIN, legal heirs must submit an form for cancellation in Form GST REG-16 within 30 days.",
     actionSteps: [
       "Log into GST portal using deceased's credentials before SIM deactivation.",
       "Submit Form GST REG-16 specifying 'Death of Sole Proprietor' as reason.",
@@ -335,7 +335,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 30 to 45",
     urgency: "high",
     penaltyRisk: "Unclaimed balances migrate to RBI UDGAM fund after 10 years; interest calculations may cease.",
-    description: "Submit bank deceased claim applications. Where a registered nominee exists, RBI mandates settlement within 15 days without requiring court succession certificates.",
+    description: "Submit bank deceased claim forms. Where a filed nominee exists, RBI mandates deal within 15 days without requiring court estate papers.",
     actionSteps: [
       "Submit bank's standardized Deceased Claim Form with certified Death Certificate.",
       "Provide nominee KYC (Aadhaar, PAN) and original passbook / fixed deposit receipts.",
@@ -371,7 +371,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Day 30 to 60",
     urgency: "high",
     penaltyRisk: "Shares without transmission can trigger mandatory transfer to IEPF Authority after 7 years.",
-    description: "Submit transmission requests to Depository Participants (Zerodha, Groww, ICICI Direct) and Mutual Fund RTAs (CAMS, KFintech) using standardized Annexure forms.",
+    description: "Submit transfer requests to Depository Participants (Zerodha, Groww, ICICI Direct) and Mutual Fund RTAs (CAMS, KFintech) using standardized Annexure forms.",
     actionSteps: [
       "Submit Transmission Request Form (TRF) with original client master list (CML) of nominee.",
       "Attach notarized death certificate, ISR-1 / ISR-2 forms, and KYC compliance documents.",
@@ -389,7 +389,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Strict 90-Day Limit",
     urgency: "critical",
     penaltyRisk: "RTO late fee penalties, registration suspension, and inability to renew vehicle insurance.",
-    description: "Submit formal Form 31 application along with valid pollution certificate (PUCC), insurance certificate, and legal heir succession consent to the RTO within 3 months.",
+    description: "Submit formal Form 31 form along with valid pollution paper (PUCC), insurance paper, and legal heir estate consent to the RTO within 3 months.",
     actionSteps: [
       "Complete Form 31 in duplicate and get signatures/NOC from all other legal heirs.",
       "Submit original RC book, valid insurance policy, and vehicle physical inspection if required.",
@@ -409,7 +409,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Within 6 Months",
     urgency: "high",
     penaltyRisk: "Title in local municipal records remains under deceased; property tax bills and utility transfers stall.",
-    description: "Apply for mutation (Namantaran / Dakhil Kharij) in local land revenue records (7/12, Khata, Jamabandi, or Municipal Property Tax register) in favor of legal heirs.",
+    description: "Apply for name change (Namantaran / Dakhil Kharij) in local land revenue records (7/12, Khata, Jamabandi, or City Asset Tax register) in favor of legal heirs.",
     actionSteps: [
       "Submit mutation application to the Tahsildar, Talathi, or Municipal Revenue Office.",
       "Attach registered Will, probate order, or Legal Heir Certificate and legal heir family tree.",
@@ -427,7 +427,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Within 6 Months",
     urgency: "high",
     penaltyRisk: "High-value bank accounts without nomination and government asset transfers remain legally frozen.",
-    description: "Procure a Surviving Member Certificate / Legal Heir Certificate from the Tehsildar/SDM, or petition the Civil Court for a Succession Certificate if contested.",
+    description: "Procure a Surviving Member Paper / Legal Heir Paper from the Tehsildar/SDM, or petition the Civil Court for a Estate Paper if contested.",
     actionSteps: [
       "Apply through state e-District portal or Tehsildar office with family genealogical tree.",
       "If assets exceed bank simplified limits or lack nomination, file succession petition in court.",
@@ -445,7 +445,7 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
     deadlineLabel: "Standard ITR Due Date",
     urgency: "critical",
     penaltyRisk: "Late filing fees under Section 234F, forfeiture of tax refunds, and penalty notices on the estate.",
-    description: "Register on the Income Tax e-Filing portal as the deceased's Legal Representative. File the final ITR for income earned from April 1 until the date of demise.",
+    description: "Register on the Income Tax e-Filing portal as the deceased's Legal Agent. File the final ITR for income earned from April 1 until the date of demise.",
     actionSteps: [
       "Log into your personal e-filing account and submit 'Register as Legal Representative' request.",
       "Upload deceased's PAN, Death Certificate, Legal Heir Certificate/Will, and Indemnity Bond.",
@@ -475,17 +475,17 @@ const COMPLIANCE_ITEMS: ComplianceItem[] = [
 
 const TOC_ITEMS = [
   { id: "overview-statutory-mandates", label: "1. What to Do After Death in India Checklist" },
-  { id: "interactive-compliance-tracker", label: "2. Interactive 30-Day Compliance Tracker" },
+  { id: "interactive-compliance-tracker", label: "2. Free 30-Day Compliance Tracker" },
   { id: "irreversible-compliance-mistakes", label: "3. The 3 Irreversible Mistakes to Avoid" },
   { id: "phase-1-immediate-actions", label: "4. Phase 1: Days 1 to 7 Immediate Evidence" },
-  { id: "phase-2-registration-window", label: "5. Phase 2: Days 8 to 21 Municipal Registration" },
+  { id: "phase-2-registration-window", label: "5. Phase 2: Days 8 to 21 City Filing" },
   { id: "phase-3-rto-and-bank-claims", label: "6. Phase 3: Days 22 to 90 RTO & Bank Claims" },
-  { id: "phase-4-mutation-and-tax", label: "7. Phase 4: Days 91 to 365 Land Mutation & ITR" },
+  { id: "phase-4-mutation-and-tax", label: "7. Phase 4: Days 91 to 365 Land Name Change & ITR" },
   { id: "cancel-vs-retain-comparison", label: "8. What to Cancel vs What to Retain Active" },
   { id: "bank-nominee-vs-legal-heir", label: "9. Bank Accounts & RBI Deceased Claim Rules" },
   { id: "motor-vehicle-rto-rules", label: "10. Motor Vehicle Transfer: CMVR Rule 56" },
   { id: "legal-intimation-templates", label: "11. Copy-Paste Legal Notice Templates" },
-  { id: "advocate-succession-support", label: "12. Professional Succession Support Desk" },
+  { id: "advocate-succession-support", label: "12. Professional Estate Support Desk" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
   { id: "statutory-citations", label: "14. Governing Acts & Official Portals" },
 ];
@@ -493,35 +493,35 @@ const TOC_ITEMS = [
 const FAQS = [
   {
     q: "What are the most urgent legal formalities required within 21 days of death in India?",
-    a: "Under Section 8 of the Registration of Births and Deaths Act, 1969, reporting the death to the local Registrar of Births and Deaths (Municipal Corporation, Municipality, or Gram Panchayat) within 21 days is legally mandatory. Timely reporting ensures issuance of the official Death Certificate without requiring delayed registration approvals or late fees. Families should also collect the Medical Certificate of Cause of Death (MCCD Form 4/4A) from the hospital and secure cremation or burial receipts.",
+    a: "Under Section 8 of the Filing of Births and Deaths Act, 1969, reporting the death to the local Registrar of Births and Deaths (City City Board, Town Office, or Gram Panchayat) within 21 days is legally needed. Timely reporting ensures issuance of the official Death Paper without requiring delayed filing approvals or late fees. Families should also collect the Medical Paper of Cause of Death (MCCD Form 4/4A) from the hospital and secure cremation or burial receipts.",
   },
   {
-    q: "Why should families NEVER surrender the deceased person's PAN card immediately?",
-    a: "Surrendering or cancelling the deceased's PAN card immediately is a major legal blunder. Under Section 159 of the Income Tax Act, 1961, the legal representative must file the deceased's final Income Tax Return (ITR) and claim any pending tax refunds using the deceased's PAN. Furthermore, banks, mutual fund AMCs, depositories (NSDL/CDSL), and the Sub-Registrar require active PAN verification to process asset transmissions. PAN should only be surrendered after all transmissions and tax assessments are fully completed.",
+    q: "Why should families NEVER surrender the deceased person's PAN card right away?",
+    a: "Surrendering or cancelling the deceased's PAN card right away is a major legal blunder. Under Section 159 of the Income Tax Act, 1961, the legal agent must file the deceased's final Income Tax Return (ITR) and claim any pending tax refunds using the deceased's PAN. Also, banks, mutual fund AMCs, depositories (NSDL/CDSL), and the SRO require active PAN check to process asset transmissions. PAN should only be surrendered after all transmissions and tax assessments are fully completed.",
   },
   {
     q: "Why must the deceased person's mobile number and SIM card be kept active?",
-    a: "In India, virtually all financial and statutory portals rely on Aadhaar-based OTP verification and mobile two-factor authentication. DigiLocker, net banking logins, Income Tax e-filing registrations, EPFO UAN portals, mutual fund platforms, and demat accounts transmit verification codes to the mobile number registered in the deceased's name. If you deactivate the SIM card, access to these accounts is locked, creating administrative bottlenecks. Families should maintain an active recharge on the SIM for at least 12 to 18 months.",
+    a: "In India, virtually all financial and legal portals rely on Aadhaar-based OTP check and mobile two-factor check. DigiLocker, net banking logins, Income Tax e-filing registrations, EPFO UAN portals, mutual fund platforms, and demat accounts transmit check codes to the mobile number filed in the deceased's name. If you deactivate the SIM card, access to these accounts is locked, creating office bottlenecks. Families should maintain an active recharge on the SIM for at least 12 to 18 months.",
   },
   {
     q: "What is the 30-day legal deadline for vehicle ownership transfer under CMVR Rule 56?",
-    a: "Under Rule 56(1) of the Central Motor Vehicles Rules, 1989, the person succeeding to the possession of the vehicle must intimate the demise of the registered owner to the Regional Transport Office (RTO) within 30 days of death. Thereafter, under Rule 56(2), a formal application for transfer of ownership using Form 31 must be submitted within 3 months. Failure to report can invalidate third-party motor insurance coverage and lead to vehicle seizure under the Motor Vehicles Act.",
+    a: "Under Rule 56(1) of the Central Motor Vehicles Rules, 1989, the person succeeding to the possession of the vehicle must intimate the demise of the filed owner to the Regional Transport Office (RTO) within 30 days of death. Thereafter, under Rule 56(2), a formal form for transfer of ownership using Form 31 must be submitted within 3 months. Failure to report can invalidate third-party motor insurance coverage and lead to vehicle seizure under the Motor Vehicles Act.",
   },
   {
-    q: "How do bank nominee claims differ from legal heir inheritance rights in India?",
-    a: "Under the Banking Regulation Act, 1949 (Section 45ZA) and landmark Supreme Court rulings (Ram Chander Talwar v. Devinder Kumar Talwar and Sarbati Devi), a bank nominee is merely a statutory trustee authorized to receive the deposit funds to give a valid discharge to the bank. A nominee does not become the absolute owner of the money unless they are also the sole legal heir under a valid Will or personal succession laws. The nominee holds the funds in trust for distribution among all legal heirs.",
+    q: "How do bank nominee claims differ from legal heir estate rights in India?",
+    a: "Under the Banking Regulation Act, 1949 (Section 45ZA) and landmark Supreme Court rulings (Ram Chander Talwar v. Devinder Kumar Talwar and Sarbati Devi), a bank nominee is merely a legal trustee authorized to receive the deposit funds to give a valid discharge to the bank. A nominee does not become the absolute owner of the money unless they are also the sole legal heir under a valid Will or personal estate laws. The nominee holds the funds in trust for split among all legal heirs.",
   },
   {
-    q: "Can bank deposits be claimed without a Succession Certificate if there is no nominee?",
-    a: "Yes. Under Reserve Bank of India (RBI) Master Directions, banks have established simplified claim thresholds (typically between ₹50,000 to ₹5,00,000 depending on bank policy) for accounts without nomination. Within this limit, legal heirs can claim funds by submitting a Deceased Claim Form, original death certificate, KYC documents, a joint Indemnity Bond, and an Affidavit signed by all surviving legal heirs, without requiring an expensive court-issued Succession Certificate.",
+    q: "Can bank deposits be claimed without a Estate Paper if there is no nominee?",
+    a: "Yes. Under Reserve Bank of India (RBI) Master Directions, banks have established simplified claim thresholds (typically between ₹50,000 to ₹5,00,000 depending on bank policy) for accounts without nomination. Within this limit, legal heirs can claim funds by submitting a Deceased Claim Form, original death paper, KYC papers, a joint Indemnity Bond, and an Sworn Note signed by all surviving legal heirs, without requiring an expensive court-issued Estate Paper.",
   },
   {
     q: "What is the deadline for filing the deceased person's Income Tax Return under Section 159?",
-    a: "Under Section 159 of the Income Tax Act, 1961, the legal representative is liable to file the return of income for all income earned by the deceased from April 1 of the financial year up to the date of death. The return must be filed by the standard statutory deadline (typically July 31 for non-audit individual taxpayers). The legal representative must register on the Income Tax e-Filing portal by submitting the death certificate, proof of legal representation, and an indemnity bond.",
+    a: "Under Section 159 of the Income Tax Act, 1961, the legal agent is liable to file the return of income for all income earned by the deceased from April 1 of the financial year up to the date of death. The return must be filed by the standard legal deadline (typically July 31 for non-audit single taxpayers). The legal agent must register on the Income Tax e-Filing portal by submitting the death paper, proof of legal representation, and an indemnity bond.",
   },
   {
-    q: "What happens if a death is not registered within 21 days in India?",
-    a: "Under Section 13 of the Registration of Births and Deaths Act, 1969: (1) Registration between 21 and 30 days requires payment of a late fee to the Registrar. (2) Registration between 30 days and 1 year requires written permission from the designated authority (such as the Sub-Divisional Magistrate or Tehsildar) along with an affidavit. (3) Registration after 1 year can only be done following a formal judicial verification order from a First Class Magistrate or Executive Magistrate.",
+    q: "What happens if a death is not filed within 21 days in India?",
+    a: "Under Section 13 of the Filing of Births and Deaths Act, 1969: (1) Filing between 21 and 30 days requires payment of a late fee to the Registrar. (2) Filing between 30 days and 1 year requires written permission from the designated office (such as the Sub-Divisional Magistrate or Tehsildar) along with an sworn note. (3) Filing after 1 year can only be done following a formal judicial check order from a First Class Magistrate or Executive Magistrate.",
   },
 ];
 
@@ -538,7 +538,7 @@ export default function PostDeathTrackerClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("overview-statutory-mandates");
+  const [activeId, setActiveId] = useState<string>("overview-legal-mandates");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedRto, setCopiedRto] = useState<boolean>(false);
   const [copiedBank, setCopiedBank] = useState<boolean>(false);
@@ -805,9 +805,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Navigate the 20+ statutory deadlines after the death of a family member in India.
-            Track <strong>21-day death registration</strong>, <strong>30-day RTO Form 31 notices</strong>,
-            bank nominee transmissions, and critical document preservation rules.
+            Navigate the 20+ legal deadlines after the death of a family member in India.
+            Track <strong>21-day death filing</strong>, <strong>30-day RTO Form 31 notices</strong>,
+            bank nominee transmissions, and critical paper preservation rules.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -825,7 +825,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -903,10 +903,10 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Registration of Births and Deaths Act, 1969, Central Motor Vehicles Rules,
+                Governed under Filing of Births and Deaths Act, 1969, Central Motor Vehicles Rules,
                 1989 Rule 56, Income Tax Act, 1961 Section 159, and RBI Master Directions on Deceased
                 Depositors.
               </p>
@@ -927,16 +927,16 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Strict 21-Day Registration Window:</strong> Death must be reported to the local
-                    Municipal Corporation or Gram Panchayat within 21 days under Section 8 of the RBD Act,
-                    1969 to avoid SDM magistrate verification orders and late fees.
+                    <strong>Strict 21-Day Filing Window:</strong> Death must be reported to the local
+                    City City Board or Gram Panchayat within 21 days under Section 8 of the RBD Act,
+                    1969 to avoid SDM magistrate check orders and late fees.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory 30-Day Vehicle Intimation:</strong> Under Rule 56(1) of CMVR, the
-                    successor must notify the RTO of the owner demise within 30 days. Transfer application
+                    <strong>Needed 30-Day Vehicle Intimation:</strong> Under Rule 56(1) of CMVR, the
+                    successor must notify the RTO of the owner demise within 30 days. Transfer form
                     in Form 31 must follow within 3 months.
                   </span>
                 </li>
@@ -951,9 +951,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>RBI 15-Day Nominee Settlement:</strong> When a bank account has a registered
+                    <strong>RBI 15-Day Nominee Deal:</strong> When a bank account has a filed
                     nominee, banks must release funds within 15 days without demanding court probate or
-                    succession certificates under RBI guidelines.
+                    estate papers under RBI guidelines.
                   </span>
                 </li>
               </ul>
@@ -974,7 +974,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
               <div className="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-2">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                  <span>Verified Legal Roadmap for Bereaved Families Across India</span>
+                  <span>Checked Legal Roadmap for Bereaved Families Across India</span>
                 </div>
                 <span className="font-semibold text-slate-500">Updated for FY 2024–25 &amp; 2025–26</span>
               </div>
@@ -987,27 +987,27 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Post-Death Legal Formalities in India
+                1. Legal Rules: Post-Death Legal Formalities in India
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When a family member passes away in India, grieving relatives face more than 20 legal,
-                  banking, and statutory compliance deadlines. Many families believe they only need to obtain
-                  a death certificate and visit the local bank branch. However, Indian statutory codes impose
+                  banking, and legal compliance deadlines. Many families believe they only need to obtain
+                  a death paper and visit the local bank branch. However, Indian statutory codes impose
                   time-sensitive filing duties that carry legal penalties if neglected.
                 </p>
                 <p>
-                  Under Section 8 of the <strong>Registration of Births and Deaths Act, 1969</strong>, every
+                  Under Section 8 of the <strong>Filing of Births and Deaths Act, 1969</strong>, every
                   death occurring in a household or hospital must be reported to the local Registrar within
-                  21 days. If you miss this statutory window, delayed registration rules under Section 13
-                  require payment of late fees, sworn affidavits, and formal permission from a Sub-Divisional
+                  21 days. If you miss this legal window, delayed filing rules under Section 13
+                  require payment of late fees, sworn sworn notes, and formal permission from a Sub-Divisional
                   Magistrate (SDM) or Tehsildar.
                 </p>
                 <p>
                   Simultaneously, the <strong>Central Motor Vehicles Rules, 1989 (Rule 56)</strong> requires
                   the successor to intimate the Regional Transport Office (RTO) within 30 days of the vehicle
-                  owner&apos;s demise. Furthermore, the <strong>Income Tax Act, 1961 (Section 159)</strong> holds
-                  the legal representative personally liable for filing the deceased&apos;s final income tax return
+                  owner&apos;s demise. Also, the <strong>Income Tax Act, 1961 (Section 159)</strong> holds
+                  the legal agent personally liable for filing the deceased&apos;s final income tax return
                   and settling outstanding taxes from the inherited estate.
                 </p>
               </div>
@@ -1020,11 +1020,11 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <span>DYNAMIC COMPLIANCE ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive 30-Day Post-Death Compliance Tracker
+                2. Free 30-Day Post-Death Compliance Tracker
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select or enter the <strong>Date of Demise</strong> below to automatically compute all
-                statutory cutoff dates, municipal deadlines, RTO notice windows, and document protection steps.
+                legal cutoff dates, city deadlines, RTO notice windows, and paper protection steps.
               </p>
 
               {/* Calculator Panel Container */}
@@ -1038,7 +1038,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                         <span>Step 1: Enter Date of Demise</span>
                       </label>
                       <p className="text-xs text-slate-600 mt-0.5">
-                        Statutory deadlines are calculated automatically from this reference date.
+                        Legal deadlines are calculated automatically from this reference date.
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
@@ -1122,7 +1122,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                         </span>
                       </div>
                       <div className="text-base sm:text-lg font-extrabold">{calculatedMilestones.day21Str}</div>
-                      <div className="text-[11px] text-slate-600 mt-1">RBD Act 1969 Death Registration Deadline</div>
+                      <div className="text-[11px] text-slate-600 mt-1">RBD Act 1969 Death Filing Deadline</div>
                     </div>
 
                     {/* Day 30 Card */}
@@ -1166,7 +1166,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                         </span>
                       </div>
                       <div className="text-base sm:text-lg font-extrabold">{calculatedMilestones.day90Str}</div>
-                      <div className="text-[11px] text-slate-600 mt-1">Form 31 Vehicle Transfer Application</div>
+                      <div className="text-[11px] text-slate-600 mt-1">Form 31 Vehicle Transfer Form</div>
                     </div>
 
                     {/* Day 180 Card */}
@@ -1178,7 +1178,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                         </span>
                       </div>
                       <div className="text-base sm:text-lg font-extrabold">{calculatedMilestones.day180Str}</div>
-                      <div className="text-[11px] text-slate-600 mt-1">Land Mutation &amp; Succession Petitions</div>
+                      <div className="text-[11px] text-slate-600 mt-1">Land Name Change &amp; Estate Petitions</div>
                     </div>
                   </div>
                 )}
@@ -1396,7 +1396,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                               </div>
                               <div className="p-2.5 rounded-xl bg-white border border-slate-100 text-[11px] space-y-1">
                                 <span className="font-bold text-slate-800 uppercase tracking-wider block">
-                                  Documents Required:
+                                  Papers Required:
                                 </span>
                                 <ul className="space-y-1 list-disc list-inside text-slate-600">
                                   {item.requiredDocs.map((doc, idx) => (
@@ -1426,8 +1426,8 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 3. The 3 Irreversible Mistakes Bereaved Families Make
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Generic post-death guides instruct families to cancel every card and document immediately.
-                In Indian jurisprudence, doing so causes catastrophic administrative paralysis. Understand
+                Generic post-death guides instruct families to cancel every card and paper right away.
+                In Indian jurisprudence, doing so causes catastrophic office paralysis. Understand
                 the three critical assets you must <strong>never surrender early</strong>:
               </p>
 
@@ -1436,12 +1436,12 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <div className="p-5 rounded-2xl bg-rose-50/70 border border-rose-200 text-rose-950 space-y-2">
                   <div className="flex items-center gap-2 font-extrabold text-sm sm:text-base text-rose-900">
                     <X className="w-5 h-5 text-rose-600 shrink-0" />
-                    <span>MISTAKE #1: Surrendering the Deceased&apos;s PAN Card Immediately</span>
+                    <span>MISTAKE #1: Surrendering the Deceased&apos;s PAN Card Right away</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Under Section 159 of the Income Tax Act, 1961, the legal representative must file the
+                    Under Section 159 of the Income Tax Act, 1961, the legal agent must file the
                     deceased&apos;s final income tax return. You cannot add a deceased person as a legal
-                    representative on the Income Tax e-Filing portal if the PAN is cancelled. Furthermore,
+                    agent on the Income Tax e-Filing portal if the PAN is cancelled. Also,
                     mutual fund asset management companies (AMCs), stock depositories (NSDL/CDSL), and
                     sub-registrars require active PAN status to verify historical chain of title.
                   </p>
@@ -1457,10 +1457,10 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                     <span>MISTAKE #2: Deactivating the Aadhaar-Linked Mobile SIM Card</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    In India, two-factor authentication (2FA) for DigiLocker, banking logins, EPF member
-                    passbooks, and income tax OTPs are transmitted exclusively to the mobile number registered
+                    In India, two-factor check (2FA) for DigiLocker, banking logins, EPF member
+                    passbooks, and income tax OTPs are transmitted exclusively to the mobile number filed
                     with Aadhaar. If you cancel or let the prepaid SIM lapse, accessing these essential digital
-                    services requires months of physical affidavit verification.
+                    services requires months of physical sworn note check.
                   </p>
                   <div className="text-xs font-bold text-amber-900">
                     Rule: Maintain a basic validity recharge on the SIM card for at least 12 to 18 months.
@@ -1480,7 +1480,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                     the account itself should remain open until all inflows have successfully cleared.
                   </p>
                   <div className="text-xs font-bold text-blue-900">
-                    Rule: Freeze cards to stop fraud, but leave account active for transmission processing.
+                    Rule: Freeze cards to stop fraud, but leave account active for transfer processing.
                   </div>
                 </div>
               </div>
@@ -1499,14 +1499,14 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <p>
                   The first 7 days require compassionate dignity alongside meticulous evidence gathering.
                   If death occurs in a hospital, request the attending physician to issue the Medical
-                  Certificate of Cause of Death in <strong>Form 4</strong>. If the demise takes place at
-                  home, call a registered medical practitioner to inspect the deceased and issue <strong>Form 4A</strong>.
+                  Paper of Cause of Death in <strong>Form 4</strong>. If the demise takes place at
+                  home, call a filed medical practitioner to inspect the deceased and issue <strong>Form 4A</strong>.
                 </p>
                 <p>
                   At the crematorium or burial ground, verify that the entry clerk logs the full legal name
                   matching the deceased&apos;s government identity card. Obtain the stamped cremation receipt.
-                  Municipal registration portals mandate this receipt number as verification before issuing
-                  the official death certificate.
+                  City filing portals mandate this receipt number as check before issuing
+                  the official death paper.
                 </p>
                 <p>
                   Simultaneously, notify credit card issuers to block cards. Credit card liabilities in India
@@ -1523,27 +1523,27 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <span>MUNICIPAL FILINGS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Phase 2: Days 8 to 21 Municipal Death Registration
+                5. Phase 2: Days 8 to 21 City Death Filing
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The 21-day mark under Section 8 of the Registration of Births and Deaths Act is the most
-                  critical statutory cutoff. Most municipal corporations (such as MCD in Delhi, BMC in Mumbai,
+                  The 21-day mark under Section 8 of the Filing of Births and Deaths Act is the most
+                  critical legal cutoff. Most city corporations (such as MCD in Delhi, BMC in Mumbai,
                   or BBMP in Bangalore) process institutional hospital deaths automatically. However, for
-                  home deaths, family members must file the application directly via the Civil Registration
+                  home deaths, family members must file the form directly via the Civil Filing
                   System (CRS) portal at <strong>crsorgi.gov.in</strong>.
                 </p>
                 <p>
-                  Once the certificate is registered, order at least <strong>15 to 20 official copies</strong>.
+                  Once the paper is filed, order at least <strong>15 to 20 official copies</strong>.
                   Each bank, insurance provider, mutual fund registrar, housing society, and RTO requires
                   either an original stamped copy or a verifiable QR-coded digital printout. Ordinary photocopies
                   are routinely declined by financial compliance officers.
                 </p>
                 <p>
                   During this window, also search for the deceased&apos;s Last Will and Testament. If a Will exists,
-                  review whether court probate is mandatory. In the presidential towns of Mumbai, Kolkata,
-                  and Chennai, Section 213 of the Indian Succession Act mandates court probate for immovable
-                  properties bequeathed by Hindu, Buddhist, Sikh, or Jain testators.
+                  review whether court probate is needed. In the presidential towns of Mumbai, Kolkata,
+                  and Chennai, Section 213 of the Indian Succession Act mandates court probate for land
+                  assets bequeathed by Hindu, Buddhist, Sikh, or Jain Will makers.
                 </p>
               </div>
             </section>
@@ -1562,18 +1562,18 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                   Phase 3 brings two rigid 30-day compliance cutoffs that many families overlook. First,
                   under Rule 56(1) of the Central Motor Vehicles Rules, the successor in possession of any
                   motor vehicle must notify the RTO in writing within 30 days. Second, if the deceased operated
-                  a sole proprietorship with a GSTIN, an application for cancellation in <strong>Form GST REG-16</strong>
+                  a sole proprietorship with a GSTIN, an form for cancellation in <strong>Form GST REG-16</strong>
                   must be submitted within 30 days to avoid automated tax penalty notices.
                 </p>
                 <p>
-                  For bank accounts, submit deceased claim dossiers under RBI guidelines. If a registered
+                  For bank accounts, submit deceased claim dossiers under RBI guidelines. If a filed
                   nominee exists under Section 45ZA of the Banking Regulation Act, banks are legally required
-                  to settle the balance within 15 days of receiving the claim form and death certificate.
+                  to settle the balance within 15 days of receiving the claim form and death paper.
                 </p>
                 <p>
-                  For demat accounts and mutual funds, submit transmission packets to depository participants
-                  and RTAs (CAMS / KFintech). Where nominees are registered, submission of the Client Master
-                  List (CML) and transmission request form completes the transfer into the nominee&apos;s demat ledger.
+                  For demat accounts and mutual funds, submit transfer packets to depository participants
+                  and RTAs (CAMS / KFintech). Where nominees are filed, submission of the Client Master
+                  List (CML) and transfer request form completes the transfer into the nominee&apos;s demat ledger.
                 </p>
               </div>
             </section>
@@ -1585,20 +1585,20 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <span>LAND MUTATION &amp; ESTATE CLOSURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Phase 4: Days 91 to 365 Land Mutation &amp; Section 159 ITR
+                7. Phase 4: Days 91 to 365 Land Name Change &amp; Section 159 ITR
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Phase 4 centers on real estate title mutation and final tax compliance. For inherited houses,
-                  apartments, and agricultural land, heirs must apply for mutation in local land records (7/12
-                  extract, Jamabandi, or Khata). Mutation does not confer title, but it updates municipal tax
-                  ledgers and enables legal heirs to pay property taxes and execute utility meter transfers.
+                  Phase 4 centers on real estate title name change and final tax compliance. For inherited houses,
+                  apartments, and farm land, heirs must apply for name change in local land records (7/12
+                  extract, Jamabandi, or Khata). Name Change does not confer title, but it updates city tax
+                  ledgers and enables legal heirs to pay asset taxes and execute utility meter transfers.
                 </p>
                 <p>
-                  Under Section 159 of the Income Tax Act, 1961, the appointed legal representative must file
+                  Under Section 159 of the Income Tax Act, 1961, the appointed legal agent must file
                   the deceased&apos;s final Return of Income. This return accounts for all income earned from April
-                  1 of the relevant financial year up to the exact date of death. The legal representative must
-                  first register on the Income Tax e-filing portal by uploading the death certificate and proof
+                  1 of the relevant financial year up to the exact date of death. The legal agent must
+                  first register on the Income Tax e-filing portal by uploading the death paper and proof
                   of legal heirship.
                 </p>
                 <p>
@@ -1616,11 +1616,11 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <span>COMPARISON MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Document Guide: What to Cancel vs What to Retain
+                8. Paper Guide: What to Cancel vs What to Retain
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use this structured comparison matrix to understand exactly which records to block immediately
-                versus which documents must be retained active until estate transmission concludes:
+                Use this structured comparison matrix to understand exactly which records to block right away
+                versus which papers must be retained active until estate transfer concludes:
               </p>
 
               {/* Comparison Table */}
@@ -1628,10 +1628,10 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <table className="w-full text-left text-xs sm:text-sm text-slate-700">
                   <thead className="bg-[#172228] text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider">
                     <tr>
-                      <th className="p-3.5 sm:p-4">Document / Asset</th>
+                      <th className="p-3.5 sm:p-4">Paper / Asset</th>
                       <th className="p-3.5 sm:p-4">Immediate Action</th>
-                      <th className="p-3.5 sm:p-4">Mandatory Retention</th>
-                      <th className="p-3.5 sm:p-4">Statutory Rationale</th>
+                      <th className="p-3.5 sm:p-4">Needed Retention</th>
+                      <th className="p-3.5 sm:p-4">Legal Rationale</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -1644,7 +1644,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                       </td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Until Section 159 ITR Clears</td>
                       <td className="p-3.5 sm:p-4 text-xs text-slate-600">
-                        Required for legal representative e-filing login, IT refunds, bank KYC, and property sale deeds.
+                        Required for legal agent e-filing login, IT refunds, bank KYC, and asset sale deeds.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -1656,7 +1656,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                       </td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">12 to 18 Months</td>
                       <td className="p-3.5 sm:p-4 text-xs text-slate-600">
-                        Receives 2FA verification OTPs for DigiLocker, net banking, EPFO UAN, and demat accounts.
+                        Receives 2FA check OTPs for DigiLocker, net banking, EPFO UAN, and demat accounts.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -1680,7 +1680,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                       </td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Days 1 to 7</td>
                       <td className="p-3.5 sm:p-4 text-xs text-slate-600">
-                        Stops automated subscription debits and fraud; unsecured personal debt dies with the individual.
+                        Stops automated subscription debits and fraud; unsecured personal debt dies with the single.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -1738,19 +1738,19 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                   A critical legal distinction under Indian law is that a <strong>bank nominee is not the owner</strong>
                   of deposit proceeds. In landmark decisions including <em>Ram Chander Talwar v. Devinder Kumar Talwar</em>
                   and <em>Sarbati Devi v. Usha Devi</em>, the Supreme Court ruled that a nominee is merely a
-                  statutory trustee authorized to receive funds to discharge the bank from liability.
+                  legal trustee authorized to receive funds to discharge the bank from liability.
                 </p>
                 <p>
                   The nominee holds the money in trust for the benefit of all legal heirs entitled to succeed
                   under the Indian Succession Act or the deceased&apos;s Last Will and Testament. If a nominee
                   appropriates the funds without sharing them with other co-heirs, the remaining heirs can
-                  file a suit for recovery and partition.
+                  file a suit for recovery and split.
                 </p>
                 <p>
                   For accounts without nomination, RBI Master Directions permit banks to settle claims under
                   a simplified threshold (ranging from ₹50,000 to ₹5,00,000 depending on bank rules) by
-                  submitting an Indemnity Bond and Affidavit. If the deposit exceeds this limit, banks may
-                  require a formal court-issued Succession Certificate or Letters of Administration.
+                  submitting an Indemnity Bond and Sworn Note. If the deposit exceeds this limit, banks may
+                  require a formal court-issued Estate Paper or Letters of Care.
                 </p>
               </div>
             </section>
@@ -1766,23 +1766,23 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Vehicle succession is governed under <strong>Rule 56 of the Central Motor Vehicles Rules, 1989</strong>.
+                  Vehicle estate is governed under <strong>Rule 56 of the Central Motor Vehicles Rules, 1989</strong>.
                   The rule establishes a dual-stage compliance timeline:
                 </p>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed list-disc list-inside">
                   <li>
                     <strong>Stage 1 (Within 30 Days):</strong> The person who takes possession of the vehicle
-                    must notify the RTO where the vehicle is registered regarding the owner&apos;s death.
+                    must notify the RTO where the vehicle is filed regarding the owner&apos;s death.
                   </li>
                   <li>
-                    <strong>Stage 2 (Within 3 Months):</strong> The successor must submit a formal application
-                    for transfer of ownership using Form 31, accompanied by the death certificate, original RC,
-                    valid insurance, and no-objection certificates (NOCs) from all other legal heirs.
+                    <strong>Stage 2 (Within 3 Months):</strong> The successor must submit a formal form
+                    for transfer of ownership using Form 31, accompanied by the death paper, original RC,
+                    valid insurance, and no-objection papers (NOCs) from all other legal heirs.
                   </li>
                 </ul>
                 <p>
                   Driving a deceased person&apos;s vehicle without intimating the RTO carries severe legal exposure.
-                  Under the Motor Vehicles Act, 1988, if an uninsured or unregistered vehicle is involved in a
+                  Under the Motor Vehicles Act, 1988, if an uninsured or plain vehicle is involved in a
                   fatal collision, insurance companies repudiate third-party liability claims, leaving the driver
                   and heirs personally liable for court compensation decrees.
                 </p>
@@ -1799,7 +1799,7 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 11. Copy-Paste Legal Notice Templates &amp; Claim Forms
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use these verified statutory notice templates to communicate with transport authorities,
+                Use these checked legal notice templates to communicate with transport offices,
                 bank branch managers, and insurance companies:
               </p>
 
@@ -1915,11 +1915,11 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                 <span>INTERACTIVE TOOLS &amp; SUCCESSION SERVICES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Professional Succession Support &amp; Advocate Review
+                12. Professional Estate Support &amp; Lawyer Review
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Handling post-death compliance often uncovers complex estate challenges. Explore our
-                companion succession micro-tools and legal services:
+                Handling post-death compliance often uncovers complex estate fights. Explore our
+                companion estate micro-tools and legal services:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1930,7 +1930,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   <Gavel className="w-5 h-5 text-[#C65378] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Succession Certificate Services
+                      Estate Paper Services
                     </h3>
                     <p className="text-xs text-slate-600 mt-1">
                       Court petitions for claiming frozen bank deposits, securities, and insurance without nomination.
@@ -1963,7 +1963,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                       Demat &amp; Mutual Fund Finder
                     </h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      SEBI transmission rules, Annexure formats, and RTA requirements for shares and mutual funds.
+                      SEBI transfer rules, Annexure formats, and RTA rules for shares and mutual funds.
                     </p>
                   </div>
                 </Link>
@@ -1975,10 +1975,10 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   <Calculator className="w-5 h-5 text-[#C65378] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Probate Court Fee Calculator
+                      Probate Court Fee Tool
                     </h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Calculate state-specific ad valorem court fees for high court probate and letters of administration.
+                      Calculate state-specific ad valorem court fees for high court probate and letters of care.
                     </p>
                   </div>
                 </Link>
@@ -1987,9 +1987,9 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
               {/* Tools Hub & Consultation Links */}
               <div className="p-5 rounded-2xl bg-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                  <div className="font-extrabold text-sm sm:text-base">Explore All Interactive Succession Tools</div>
+                  <div className="font-extrabold text-sm sm:text-base">Explore All Free Estate Tools</div>
                   <div className="text-xs text-white/80 mt-0.5">
-                    Browse our complete suite of 20 statutory calculators, checkers, and checklists.
+                    Browse our complete suite of 20 legal tools, checkers, and checklists.
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -2003,7 +2003,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                     href="/contact"
                     className="px-4 py-2 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white text-xs font-bold transition-colors"
                   >
-                    Consult Advocates
+                    Consult Lawyers
                   </Link>
                 </div>
               </div>
@@ -2061,7 +2061,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-3 shadow-xs text-xs text-slate-600 leading-relaxed">
                 <p>
-                  <strong>Statutory Framework:</strong> Registration of Births and Deaths Act, 1969 (Act No.
+                  <strong>Legal Framework:</strong> Filing of Births and Deaths Act, 1969 (Act No.
                   18 of 1969); Central Motor Vehicles Rules, 1989 (Rule 56 &amp; Form 31); Income Tax Act, 1961
                   (Section 159, 168 &amp; 234F); Banking Regulation Act, 1949 (Section 45ZA); Central Goods and
                   Services Tax Act, 2017 (Section 29 &amp; Rule 20).
@@ -2079,7 +2079,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 hover:text-[#C65378]"
                   >
-                    <span>CRS Civil Registration Portal</span>
+                    <span>CRS Civil Filing Portal</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -2112,7 +2112,29 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -2125,21 +2147,21 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary law, post-death legal compliance, bank transmission
-                litigation, High Court probate petitions, and Section 159 representation.
+                Expert in Indian testamentary law, post-death legal compliance, bank transfer
+                court fights, High Court probate petitions, and Section 159 representation.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2153,11 +2175,11 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   <span>PROTECT YOUR FAMILY BEFORE CRISIS HITS</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Spare Your Children from 20+ Succession Bottlenecks
+                  Spare Your Children from 20+ Estate Bottlenecks
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally drafted Will names clear executors, appoints testamentary guardians, and
-                  establishes undisputed ownership shares for smooth asset transmission.
+                  A legally drafted Will names clear executors, appoints Will guardians, and
+                  establishes undisputed ownership shares for smooth asset transfer.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -2182,15 +2204,15 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   Facing Frozen Bank Accounts or Delayed RTO Notice?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates represent families across India in bank deceased claims, SDM delayed
-                  death registration orders, and succession petitions.
+                  Our estate lawyers represent families across India in bank deceased claims, SDM delayed
+                  death filing orders, and estate petitions.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -2203,7 +2225,7 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Dynamic Date Engine:</strong> Calculates statutory cutoffs based on exact date of demise.
+                      <strong>Dynamic Date Engine:</strong> Calculates legal cutoffs based on exact date of demise.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

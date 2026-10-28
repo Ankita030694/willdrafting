@@ -109,7 +109,7 @@ export default function WillFormatGujaratiPage() {
         url: canonicalUrl,
         name: "વસીયતનામું ફોર્મેટ ગુજરાતી | Will Format | WillDrafting",
         description:
-          "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat.",
+          "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, signing rules & Gujarat.",
         inLanguage: "gu-IN",
         primaryImageOfPage: {
           "@type": "ImageObject",
@@ -155,7 +155,7 @@ export default function WillFormatGujaratiPage() {
         name: "કાનૂની વસીયતનામું ફોર્મેટ ગુજરાતી (Gujarati Legal Will Format)",
         url: canonicalUrl,
         description:
-          "Statutory Gujarati Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment, schedule.",
+          "Legal Gujarati Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment, schedule.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -174,7 +174,7 @@ export default function WillFormatGujaratiPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "વસીયતનામું ફોર્મેટ ગુજરાતી: કાનૂની વિલ નમૂનો અને નિયમો",
         description:
-          "Complete legal guide, printable Unicode Gujarati Vasiyatnama format, Gujarati-to-English legal glossary, and Gujarat Sub-Registrar.",
+          "Complete legal guide, printable Unicode Gujarati Vasiyatnama format, Gujarati-to-English legal glossary, and Gujarat SRO.",
         image: imageUrl,
         inLanguage: "gu-IN",
         mainEntityOfPage: canonicalUrl,
@@ -229,7 +229,7 @@ export default function WillFormatGujaratiPage() {
             name: "શું ગુજરાતમાં વસીયતનામાની નોંધણી (Registration) કરાવવી ફરજિયાત છે? (Is registration mandatory?)",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "નોંધણી અધિનિયમ, 1908 (Registration Act) ની કલમ 18(e) મુજબ વસીયતનામાની રજિસ્ટ્રેશન મરજિયાત (optional) છે. બિન-નોંધાયેલું વિલ પણ કાયદેસર છે. જોકે સબ-રજિસ્ટ્રાર કચેરી (SRO) ખાતે રજિસ્ટ્રેશન કરાવવાથી બનાવટી દસ્તાવેજ કે દબાણના આક્ષેપો સામે મજબૂત કાનૂની પુરાવો મળે છે.",
+              text: "નોંધણી અધિનિયમ, 1908 (Filing Act) ની કલમ 18(e) મુજબ વસીયતનામાની રજિસ્ટ્રેશન મરજિયાત (a choice) છે. બિન-નોંધાયેલું વિલ પણ કાયદેસર છે. જોકે સબ-રજિસ્ટ્રાર કચેરી (SRO) ખાતે રજિસ્ટ્રેશન કરાવવાથી બનાવટી દસ્તાવેજ કે દબાણના આક્ષેપો સામે મજબૂત કાનૂની પુરાવો મળે છે.",
             },
           },
           {

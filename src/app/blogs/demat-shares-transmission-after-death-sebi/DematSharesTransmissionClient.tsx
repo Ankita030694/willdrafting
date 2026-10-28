@@ -39,18 +39,18 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "sebi-framework", label: "1. SEBI Transmission Framework" },
+  { id: "sebi-framework", label: "1. SEBI Transfer Framework" },
   { id: "nominee-vs-legal-heir", label: "2. Nominee vs Legal Heir Rights" },
-  { id: "transmission-scenarios", label: "3. Five Transmission Scenarios" },
+  { id: "transmission-scenarios", label: "3. Five Transfer Scenarios" },
   { id: "sebi-value-tiers", label: "4. SEBI Monetary Tiers (Rs 15 Lakh)" },
-  { id: "documentation-checklist", label: "5. Form ISR-5 Document Checklist" },
+  { id: "documentation-checklist", label: "5. Form ISR-5 Paper Checklist" },
   { id: "visual-blueprint", label: "6. Visual Process Roadmap" },
   { id: "step-by-step-process", label: "7. Step-by-Step Depository SOP" },
-  { id: "multiple-heirs-settlement", label: "8. Multiple Heirs Dispute Settlement" },
-  { id: "mutual-fund-transmission", label: "9. Mutual Fund Transmission Rules" },
+  { id: "multiple-heirs-settlement", label: "8. Multiple Heirs Fight Deal" },
+  { id: "mutual-fund-transmission", label: "9. Mutual Fund Transfer Rules" },
   { id: "how-a-will-prevents-disputes", label: "10. How a Will Avoids Delays" },
   { id: "common-mistakes", label: "11. 5 Critical Mistakes to Avoid" },
-  { id: "institutional-backing", label: "12. Lawyer-Verified Support by AMA" },
+  { id: "institutional-backing", label: "12. Lawyer-Checked Support by AMA" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
   { id: "statutory-citations", label: "14. Regulatory Citations & Links" },
 ];
@@ -121,7 +121,7 @@ const SCENARIO_CARDS = [
     color: "emerald",
     icon: UsersIcon,
     summary:
-      "When two or more individuals hold a demat account and one holder passes away, the surviving holders do not need to share the account with the deceased's heirs immediately.",
+      "When two or more people hold a demat account and one holder passes away, the surviving holders do not need to share the account with the deceased's heirs right away.",
     keyRule:
       "The demat shares transfer directly to a new or existing demat account opened in the name of the surviving holder(s) upon filing Form ISR-5 and the death certificate.",
     docs: ["Form ISR-5 signed by surviving holder(s)", "Original or attested death certificate", "Client Master Report (CMR) of survivor account"],
@@ -143,7 +143,7 @@ const SCENARIO_CARDS = [
     color: "amber",
     icon: FileCheck,
     summary:
-      "When no nominee was registered, but the total market value of securities in the demat account is Rs 15 Lakhs or less, SEBI allows a simplified documentation procedure.",
+      "When no nominee was filed, but the total market value of securities in the demat account is Rs 15 Lakhs or less, SEBI allows a simplified papers step.",
     keyRule:
       "No civil court order is mandatory. Legal heirs submit a Legal Heir Certificate or registered family settlement deed along with indemnity bonds and notarized NOCs.",
     docs: ["Form ISR-5 (Legal Heir request)", "Death certificate of sole holder", "Legal Heir Certificate or Family Deed", "Indemnity Bond & Affidavit on Stamp Paper", "NOC from non-claiming legal heirs"],
@@ -154,7 +154,7 @@ const SCENARIO_CARDS = [
     color: "rose",
     icon: Gavel,
     summary:
-      "If the deceased sole holder left no nomination and the stock portfolio exceeds Rs 15 Lakhs, depositories cannot transfer the shares on simple affidavits.",
+      "If the deceased sole holder left no nomination and the stock portfolio exceeds Rs 15 Lakhs, depositories cannot transfer the shares on simple sworn notes.",
     keyRule:
       "A formal petition must be filed before the competent Civil District Judge under Part X of the Indian Succession Act, 1925 to secure a judicial Succession Certificate.",
     docs: ["Form ISR-5 with court decree reference", "Certified Succession Certificate or Letters of Administration", "Death certificate of sole holder", "CMR of all entitled legal heirs", "State ad valorem court fee receipts"],
@@ -165,7 +165,7 @@ const SCENARIO_CARDS = [
     color: "indigo",
     icon: Scale,
     summary:
-      "When the deceased left a clear, advocate-drafted Will designating specific beneficiaries for the demat shares, the named executor carries out the transfer.",
+      "When the deceased left a clear, lawyer-drafted Will designating specific heirs for the demat shares, the named executor carries out the transfer.",
     keyRule:
       "Shares are transmitted according to the testator's instructions. A formal probate decree is only mandatory if the Will was made in Mumbai, Chennai, or Kolkata, or if disputed.",
     docs: ["Certified copy of the Last Will", "Death certificate of testator", "Executor identification & assent letter", "CMR of named beneficiaries", "Probate grant (only if legally required)"],
@@ -175,28 +175,28 @@ const SCENARIO_CARDS = [
 const CHECKLIST_ITEMS = [
   {
     id: "check-1",
-    label: "Form ISR-5 (Request for Transmission of Securities)",
+    label: "Form ISR-5 (Request for Transfer of Securities)",
     desc: "Complete SEBI standardized Form ISR-5 specifying account details, claimant identity, and share schedule.",
   },
   {
     id: "check-2",
-    label: "Death Certificate of the Deceased Account Holder",
-    desc: "Original death certificate or a copy duly notarized or attested by a Gazetted Officer.",
+    label: "Death Paper of the Deceased Account Holder",
+    desc: "Original death paper or a copy duly notarized or attested by a Gazetted Officer.",
   },
   {
     id: "check-3",
     label: "Client Master Report (CMR) of Claimant's Demat Account",
-    desc: "Active demat account summary with 16-digit Beneficiary Owner ID (BO ID), officially signed and sealed by the broker.",
+    desc: "Active demat account summary with 16-digit Heir Owner ID (BO ID), officially signed and sealed by the broker.",
   },
   {
     id: "check-4",
-    label: "Self-Attested KYC Documents (PAN & Aadhaar)",
+    label: "Self-Attested KYC Papers (PAN & Aadhaar)",
     desc: "Clear photocopies of PAN Card and Aadhaar card of each claimant and legal heir.",
   },
   {
     id: "check-5",
-    label: "Affidavit of All Legal Heirs on Non-Judicial Stamp Paper",
-    desc: "Affidavit (Annexure D format) identifying all surviving family members and stating undisputed claims.",
+    label: "Sworn Note of All Legal Heirs on Non-Judicial Stamp Paper",
+    desc: "Sworn Note (Annexure D format) identifying all surviving family members and stating undisputed claims.",
   },
   {
     id: "check-6",
@@ -205,56 +205,56 @@ const CHECKLIST_ITEMS = [
   },
   {
     id: "check-7",
-    label: "No Objection Certificate (NOC) from Other Legal Heirs",
+    label: "No Objection Paper (NOC) from Other Legal Heirs",
     desc: "NOC (Annexure F format) signed by non-claimant heirs relinquishing rights in favor of the designated claimant.",
   },
   {
     id: "check-8",
-    label: "Proof of Legal Heirship (Revenue Certificate or Court Order)",
-    desc: "Legal Heir Certificate from Tehsildar (for under Rs 15L) or Succession Certificate from Civil Court (for over Rs 15L).",
+    label: "Proof of Legal Heirship (Revenue Paper or Court Order)",
+    desc: "Legal Heir Paper from Tehsildar (for under Rs 15L) or Estate Paper from Civil Court (for over Rs 15L).",
   },
 ];
 
 const FAQ_ITEMS = [
   {
-    q: "What is the difference between transfer and transmission of shares?",
-    a: "A transfer is a voluntary sale or gift of shares made while the holder is alive, requiring a transfer deed and stamp duty. Transmission happens automatically by operation of law upon the death, bankruptcy, or insolvency of the holder, requiring zero stamp duty.",
+    q: "What is the difference between transfer and transfer of shares?",
+    a: "A transfer is a voluntary sale or gift of shares made while the holder is alive, requiring a transfer deed and stamp duty. Transfer happens automatically by operation of law upon the death, bankruptcy, or insolvency of the holder, requiring zero stamp duty.",
   },
   {
     q: "Does a nominee become the absolute legal owner of demat shares?",
-    a: "No. The Supreme Court of India in Shakti Yezdani v. Jayanand Salgaonkar (2023) confirmed that a nominee is merely a trustee or custodian. While the depository transfers shares to the nominee, the legal ownership belongs to the heirs named in the Will or statutory heirs under succession law.",
+    a: "No. The Supreme Court of India in Shakti Yezdani v. Jayanand Salgaonkar (2023) confirmed that a nominee is merely a trustee or custodian. While the depository transfers shares to the nominee, the legal ownership belongs to the heirs named in the Will or legal heirs under estate law.",
   },
   {
-    q: "What is the SEBI monetary threshold for transmission without a nominee?",
-    a: "Under the SEBI Master Circular dated May 18, 2022, the monetary threshold for demat securities held without a nominee is Rs 15 Lakhs per depository participant account. For physical share certificates, the threshold is Rs 5 Lakhs per listed company.",
+    q: "What is the SEBI monetary threshold for transfer without a nominee?",
+    a: "Under the SEBI Master Circular dated May 18, 2022, the monetary threshold for demat securities held without a nominee is Rs 15 Lakhs per depository participant account. For physical share papers, the threshold is Rs 5 Lakhs per listed company.",
   },
   {
     q: "Can demat shares valued under Rs 15 Lakhs be claimed without a court order?",
-    a: "Yes. For demat portfolios valued up to Rs 15 Lakhs without a nominee, legal heirs can submit Form ISR-5, the death certificate, a Legal Heir Certificate, an affidavit, an indemnity bond, and No Objection Certificates from non-claimants without filing a civil court petition.",
+    a: "Yes. For demat portfolios valued up to Rs 15 Lakhs without a nominee, legal heirs can submit Form ISR-5, the death paper, a Legal Heir Paper, an sworn note, an indemnity bond, and No Objection Papers from non-claimants without filing a civil court petition.",
   },
   {
-    q: "When is a Succession Certificate mandatory for demat share transmission?",
-    a: "A Succession Certificate granted by a Civil Court under Part X of the Indian Succession Act, 1925 is mandatory when the deceased sole holder did not register a nominee and the portfolio value exceeds Rs 15 Lakhs, or whenever legal heirs raise competing disputes.",
+    q: "When is a Estate Paper needed for demat share transfer?",
+    a: "A Estate Paper granted by a Civil Court under Part X of the Indian Succession Act, 1925 is needed when the deceased sole holder did not register a nominee and the portfolio value exceeds Rs 15 Lakhs, or whenever legal heirs raise competing fights.",
   },
   {
     q: "What happens to a joint demat account when one holder passes away?",
-    a: "Under the joint survivorship clause, the shares do not go to legal heirs or nominees immediately. The surviving joint holder(s) submit Form ISR-5 and the death certificate, and the depository transmits the entire portfolio into a demat account opened in the name of the survivor(s).",
+    a: "Under the joint survivorship clause, the shares do not go to legal heirs or nominees right away. The surviving joint holder(s) submit Form ISR-5 and the death paper, and the depository transmits the entire portfolio into a demat account opened in the name of the survivor(s).",
   },
   {
     q: "What is Form ISR-5 and where do I submit it?",
-    a: "Form ISR-5 is the standardized Transmission Request Form created by SEBI for claiming securities after the holder's demise. You submit Form ISR-5 along with supporting identity and kinship documents directly to the depository participant broker (such as Zerodha, ICICI Direct, or Groww).",
+    a: "Form ISR-5 is the standardized Transfer Request Form created by SEBI for claiming securities after the holder's demise. You submit Form ISR-5 along with supporting identity and kinship papers directly to the depository participant broker (such as Zerodha, ICICI Direct, or Groww).",
   },
   {
     q: "How can multiple legal heirs divide inherited demat shares?",
-    a: "Legal heirs can either open separate individual demat accounts and specify their percentage entitlement on Form ISR-5, or execute a registered Family Settlement Deed or notarized No Objection Certificates (NOC) allowing one heir to receive the shares on behalf of the family.",
+    a: "Legal heirs can either open separate single demat accounts and specify their percentage entitlement on Form ISR-5, or execute a filed Family Deal Deed or notarized No Objection Papers (NOC) allowing one heir to receive the shares on behalf of the family.",
   },
   {
     q: "How are mutual fund units transmitted after the death of the investor?",
     a: "Mutual fund units in demat mode follow SEBI depository rules through your broker. Units held in Statement of Account (SoA) mode are transmitted through AMFI Form T2 (for joint holders) or Form T3 (for nominees or legal heirs) submitted via MF Central, CAMS, or KFintech.",
   },
   {
-    q: "Does having a registered Will prevent demat transmission delays?",
-    a: "Yes. An advocate-drafted registered Will clearly specifies who inherits each stock and names an executor. This removes ambiguity, protects against family disputes, avoids civil court petitions, and saves your family months in paperwork.",
+    q: "Does having a filed Will prevent demat transfer delays?",
+    a: "Yes. An lawyer-drafted filed Will clearly specifies who inherits each stock and names an executor. This removes ambiguity, protects against family fights, avoids civil court petitions, and saves your family months in paperwork.",
   },
 ];
 
@@ -354,12 +354,12 @@ export default function DematSharesTransmissionClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Transmission of Demat Shares After Death: Complete SEBI Guide
+            Transfer of Demat Shares After Death: Complete SEBI Guide
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Understand SEBI rules for transmission of demat shares after death. Learn nominee rights, the Rs 15 lakh simplified threshold, Form ISR-5 paperwork, and how a Will prevents frozen portfolios.
+            Understand SEBI rules for transfer of demat shares after death. Learn nominee rights, the Rs 15 lakh simplified threshold, Form ISR-5 paperwork, and how a Will prevents frozen portfolios.
           </p>
 
           {/* CTA Buttons */}
@@ -394,7 +394,7 @@ export default function DematSharesTransmissionClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -427,7 +427,7 @@ export default function DematSharesTransmissionClient() {
                 <span className="text-[#C65378] text-sm">★</span>
               </div>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Verified Client Rating
+                Checked Client Rating
               </span>
             </div>
           </div>
@@ -492,7 +492,7 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h2 className="text-lg sm:text-xl font-bold text-[#172228] mb-3">
-                How Transmission of Demat Shares Operates in India
+                How Transfer of Demat Shares Operates in India
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-[#55636D] leading-relaxed">
                 <div className="flex items-start gap-2">
@@ -509,7 +509,7 @@ export default function DematSharesTransmissionClient() {
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Succession Certificate:</strong> Demat portfolios exceeding Rs 15 Lakh without nomination mandate a court decree.</span>
+                  <span><strong>Estate Paper:</strong> Demat portfolios exceeding Rs 15 Lakh without nomination mandate a court decree.</span>
                 </div>
               </div>
             </div>
@@ -523,16 +523,16 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                1. SEBI Transmission Framework: Demat Shares After Death
+                1. SEBI Transfer Framework: Demat Shares After Death
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                When an individual investor holding shares in an Indian demat account passes away, those investments do not vanish. However, family members cannot simply log into the trading app and sell the shares. Attempting to trade on a deceased person&apos;s account is illegal and triggers account suspension. Instead, the securities must undergo a formal legal process called transmission.
+                When an single investor holding shares in an Indian demat account passes away, those investments do not vanish. However, family members cannot simply log into the trading app and sell the shares. Attempting to trade on a deceased person&apos;s account is illegal and triggers account suspension. Instead, the securities must undergo a formal legal process called transfer.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Transmission of shares differs significantly from a regular transfer. A share transfer is a voluntary transaction between two living individuals through a sale or gift, requiring payment of stamp duty. In contrast, transmission occurs automatically by operation of law upon the death of the investor. Under the Depositories Act, 1996 and SEBI regulations, transmission is completely exempt from stamp duty.
+                Transfer of shares differs significantly from a regular transfer. A share transfer is a voluntary transaction between two living people through a sale or gift, requiring payment of stamp duty. In contrast, transfer occurs automatically by operation of law upon the death of the investor. Under the Depositories Act, 1996 and SEBI regulations, transfer is completely exempt from stamp duty.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                To streamline this process, the Securities and Exchange Board of India (SEBI) issued its landmark Master Circular (Circular No. SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65). This directive established standardized documentation rules across all Depository Participants (DPs) such as Zerodha, Groww, ICICI Direct, HDFC Securities, Angel One, and Upstox, as well as both national depositories, NSDL and CDSL.
+                To streamline this process, the Securities and Exchange Board of India (SEBI) issued its landmark Master Circular (Circular No. SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65). This directive established standardized papers rules across all Depository Participants (DPs) such as Zerodha, Groww, ICICI Direct, HDFC Securities, Angel One, and Upstox, as well as both national depositories, NSDL and CDSL.
               </p>
 
               {/* Information Callout Box */}
@@ -540,7 +540,7 @@ export default function DematSharesTransmissionClient() {
                 <Info className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                 <div>
                   <strong className="block font-bold text-blue-900 mb-1">What Happens to Dividends and Corporate Actions?</strong>
-                  <span>During the transmission period, dividends continue to accumulate in the investor&apos;s linked bank account or stay in escrow with the company&apos;s Registrar and Transfer Agent (RTA). Stock splits and bonus shares are credited automatically into the frozen demat account.</span>
+                  <span>During the transfer period, dividends continue to accumulate in the investor&apos;s linked bank account or stay in escrow with the company&apos;s Registrar and Transfer Agent (RTA). Stock splits and bonus shares are credited automatically into the frozen demat account.</span>
                 </div>
               </div>
             </section>
@@ -560,7 +560,7 @@ export default function DematSharesTransmissionClient() {
                 The most frequent source of family conflict after an investor&apos;s death is the misunderstanding of what a nominee is. Many people assume that being named as a nominee in a demat account makes them the sole legal owner of all the shares. Under Indian succession law, this assumption is completely wrong.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                In a historic verdict delivered on December 14, 2023, the Supreme Court of India in <em>Shakti Yezdani &amp; Anr. v. Jayanand Jayant Salgaonkar &amp; Ors. (2023 INSC 1079)</em> conclusively resolved this issue. The Supreme Court ruled that Section 72 of the Companies Act, 2013 (and the earlier Section 109A of the Companies Act, 1956) does not create an independent line of succession. A nominee is merely a fiduciary agent or trustee.
+                In a historic verdict delivered on December 14, 2023, the Supreme Court of India in <em>Shakti Yezdani &amp; Anr. v. Jayanand Jayant Salgaonkar &amp; Ors. (2023 INSC 1079)</em> conclusively resolved this issue. The Supreme Court ruled that Section 72 of the Companies Act, 2013 (and the earlier Section 109A of the Companies Act, 1956) does not create an independent line of estate. A nominee is merely a fiduciary agent or trustee.
               </p>
 
               {/* Supreme Court Callout Card */}
@@ -570,12 +570,12 @@ export default function DematSharesTransmissionClient() {
                   <span>Supreme Court Rule: Shakti Yezdani (2023 INSC 1079)</span>
                 </div>
                 <p className="text-xs text-rose-950 leading-relaxed italic">
-                  &ldquo;A nominee does not become the absolute owner of the shares to the exclusion of the legal heirs. The nomination only provides the company or depository with a valid discharge of its liabilities. The shares form part of the estate of the deceased holder and devolve upon the legal heirs under the law of succession or a valid testamentary Will.&rdquo;
+                  &ldquo;A nominee does not become the absolute owner of the shares to the exclusion of the legal heirs. The nomination only provides the company or depository with a valid discharge of its liabilities. The shares form part of the estate of the deceased holder and devolve upon the legal heirs under the law of estate or a valid Will Will.&rdquo;
                 </p>
               </div>
 
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                This means that while the depository broker will transfer the shares into the nominee&apos;s demat account without asking for court orders, the nominee cannot legally pocket the money if other legal heirs exist. If the deceased left a valid Will, the shares belong to the beneficiaries named in that Will. If there is no Will, the shares belong equally to all Class I legal heirs under the Hindu Succession Act or applicable personal law.
+                This means that while the depository broker will transfer the shares into the nominee&apos;s demat account without asking for court orders, the nominee cannot legally pocket the money if other legal heirs exist. If the deceased left a valid Will, the shares belong to the heirs named in that Will. If there is no Will, the shares belong equally to all Class I legal heirs under the Hindu Succession Act or applicable personal law.
               </p>
             </section>
 
@@ -588,10 +588,10 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                3. Five Transmission Scenarios: Joint Accounts to Heirs
+                3. Five Transfer Scenarios: Joint Accounts to Heirs
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                The exact documentation you need to submit depends on how the demat account was set up and whether a Will or nominee exists. SEBI categorizes share transmission into five distinct scenarios:
+                The exact papers you need to submit depends on how the demat account was set up and whether a Will or nominee exists. SEBI categorizes share transfer into five distinct scenarios:
               </p>
 
               <div className="space-y-4">
@@ -624,7 +624,7 @@ export default function DematSharesTransmissionClient() {
                       </div>
                       <div className="pt-1">
                         <span className="text-[11px] font-bold uppercase tracking-wider text-[#55636D] block mb-1.5">
-                          Required Documents:
+                          Required Papers:
                         </span>
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs text-[#55636D]">
                           {scenario.docs.map((doc, dIdx) => (
@@ -646,17 +646,17 @@ export default function DematSharesTransmissionClient() {
               <div className="flex items-center gap-2">
                 <Landmark className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory Thresholds
+                  Legal Thresholds
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 4. SEBI Monetary Tiers: Rs 15 Lakh Threshold Explained
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Prior to SEBI&apos;s revised guidelines, families without a registered nominee were forced to obtain a court-issued Succession Certificate even for small investments. This caused immense distress because obtaining a court order takes 6 to 12 months and costs up to 7.5% in state court fees.
+                Prior to SEBI&apos;s revised guidelines, families without a filed nominee were forced to obtain a court-issued Estate Paper even for small investments. This caused immense distress because obtaining a court order takes 6 to 12 months and costs up to 7.5% in state court fees.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Under the revised SEBI Master Circular, the threshold for simplified transmission without a nominee has been significantly raised:
+                Under the revised SEBI Master Circular, the threshold for simplified transfer without a nominee has been significantly raised:
               </p>
 
               {/* Threshold Comparison Cards */}
@@ -668,18 +668,18 @@ export default function DematSharesTransmissionClient() {
                   </div>
                   <div className="text-2xl sm:text-3xl font-black text-[#172228]">₹15,00,000</div>
                   <p className="text-xs text-[#55636D] leading-relaxed">
-                    Per beneficial owner account. If total market value on date of application is up to ₹15 Lakhs, no Succession Certificate or court probate is required.
+                    Per beneficial owner account. If total market value on date of form is up to ₹15 Lakhs, no Estate Paper or court probate is required.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border-2 border-blue-500/20 p-5 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-blue-700">Physical Certificates</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-blue-700">Physical Papers</span>
                     <span className="text-xs font-black px-2 py-0.5 rounded bg-blue-100 text-blue-800">Paper Shares</span>
                   </div>
                   <div className="text-2xl sm:text-3xl font-black text-[#172228]">₹5,00,000</div>
                   <p className="text-xs text-[#55636D] leading-relaxed">
-                    Per listed entity. For physical paper shares without nomination, simplified transmission applies up to ₹5 Lakhs per company.
+                    Per listed entity. For physical paper shares without nomination, simplified transfer applies up to ₹5 Lakhs per company.
                   </p>
                 </div>
               </div>
@@ -687,7 +687,7 @@ export default function DematSharesTransmissionClient() {
               {/* Full Comparison Matrix Table */}
               <div className="mt-4 pt-2">
                 <h3 className="font-bold text-sm sm:text-base text-[#172228] mb-3">
-                  Comprehensive Transmission Comparison Matrix
+                  Full Transfer Comparison Matrix
                 </h3>
                 <div className="rounded-2xl border border-[#172228]/10 bg-white overflow-hidden shadow-xs">
                   <div className="overflow-x-auto">
@@ -725,21 +725,21 @@ export default function DematSharesTransmissionClient() {
               <div className="flex items-center gap-2">
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Verified Paperwork
+                  Checked Paperwork
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                5. Document Checklist: Form ISR-5 &amp; Statutory Affidavits
+                5. Paper Checklist: Form ISR-5 &amp; Legal Affidavits
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                To prevent rejected applications, submit the exact documents specified in the SEBI Master Circular. Use this interactive checklist to verify your document package before submitting it to your broker:
+                To prevent rejected forms, submit the exact papers specified in the SEBI Master Circular. Use this free checklist to verify your paper package before submitting it to your broker:
               </p>
 
               {/* Interactive Checklist Component */}
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[#172228]/10">
                   <div>
-                    <h3 className="font-bold text-sm text-[#172228]">Required Transmission Documents</h3>
+                    <h3 className="font-bold text-sm text-[#172228]">Required Transfer Papers</h3>
                     <p className="text-xs text-[#55636D]">Check off each item as you collect them from family members and government offices.</p>
                   </div>
                   <div className="text-xs font-bold px-3 py-1 rounded-full bg-rose-50 text-[#C65378] border border-rose-100 self-start sm:self-auto">
@@ -793,10 +793,10 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                6. Demat Share Transmission: Visual Roadmap &amp; Milestones
+                6. Demat Share Transfer: Visual Roadmap &amp; Milestones
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Transferring securities and real property following an investor&apos;s death involves clear legal milestones. The visual guide below illustrates how statutory succession laws, property title records, and depository transmission rules connect together.
+                Transferring securities and real asset following an investor&apos;s death involves clear legal milestones. The visual guide below illustrates how legal estate laws, asset title records, and depository transfer rules connect together.
               </p>
 
               {/* Visual Infographic Card */}
@@ -814,7 +814,7 @@ export default function DematSharesTransmissionClient() {
                 <div className="mt-4 pt-3 border-t border-[#172228]/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#55636D]">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Statutory Property &amp; Securities Succession Overview</span>
+                    <span>Legal Asset &amp; Securities Estate Overview</span>
                   </div>
                   <a
                     href="/images/demat-shares-transmission-sebi-process.jpg"
@@ -834,14 +834,14 @@ export default function DematSharesTransmissionClient() {
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Standard Operating Procedure
+                  Standard Operating Step
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 7. Step-by-Step Guide: How to Approach Your Depository
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Follow this six-stage verified procedure to complete the transmission of demat shares smoothly without unnecessary back-and-forth rejections:
+                Follow this six-stage checked step to complete the transfer of demat shares smoothly without unnecessary back-and-forth rejections:
               </p>
 
               <div className="space-y-3">
@@ -849,7 +849,7 @@ export default function DematSharesTransmissionClient() {
                   {
                     step: "1",
                     title: "Intimate Depository Participant & Freeze Trading",
-                    desc: "Notify the broker or DP immediately in writing along with a copy of the death certificate. The broker will freeze trading access to protect against unauthorized trades while keeping the account open for dividends.",
+                    desc: "Notify the broker or DP right away in writing along with a copy of the death paper. The broker will freeze trading access to protect against unauthorized trades while keeping the account open for dividends.",
                   },
                   {
                     step: "2",
@@ -859,22 +859,22 @@ export default function DematSharesTransmissionClient() {
                   {
                     step: "3",
                     title: "Obtain an Officially Stamped Client Master Report (CMR)",
-                    desc: "Download and get your broker to physically sign and stamp your CMR. The CMR proves your active Beneficiary Owner ID (BO ID) and DP ID to the transferring depository.",
+                    desc: "Download and get your broker to physically sign and stamp your CMR. The CMR proves your active Heir Owner ID (BO ID) and DP ID to the transferring depository.",
                   },
                   {
                     step: "4",
                     title: "Determine Portfolio Value under SEBI Formula",
-                    desc: "Calculate the total market value of the shares based on the closing price on the date of application. This establishes whether your claim falls under the Rs 15 Lakh simplified ceiling.",
+                    desc: "Calculate the total market value of the shares based on the closing price on the date of form. This establishes whether your claim falls under the Rs 15 Lakh simplified ceiling.",
                   },
                   {
                     step: "5",
                     title: "Execute Form ISR-5 & Notarized Affidavits",
-                    desc: "Fill in Form ISR-5 accurately. If claiming without nomination, have all legal heirs execute the Affidavit (Annexure D), Letter of Indemnity (Annexure E), and NOC (Annexure F) on non-judicial stamp paper.",
+                    desc: "Fill in Form ISR-5 accurately. If claiming without nomination, have all legal heirs execute the Sworn Note (Annexure D), Letter of Indemnity (Annexure E), and NOC (Annexure F) on non-judicial stamp paper.",
                   },
                   {
                     step: "6",
                     title: "Physical Submission & Depository Verification",
-                    desc: "Courier the physical dossier to the DP's central operations hub. Once verified, the DP initiates an off-market transfer, and the shares reflect in the claimant's demat account within 21 to 30 days.",
+                    desc: "Courier the physical dossier to the DP's central operations hub. Once checked, the DP initiates an off-market transfer, and the shares reflect in the claimant's demat account within 21 to 30 days.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -902,11 +902,11 @@ export default function DematSharesTransmissionClient() {
               <div className="flex items-center gap-2">
                 <UsersIcon className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Family Settlement
+                  Family Deal
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                8. Resolving Disputes Among Multiple Legal Heirs for Shares
+                8. Resolving Fights Among Multiple Legal Heirs for Shares
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 When a parent dies without a Will, leaving multiple children and a valuable share portfolio, dividing those shares often creates conflict. Under Section 8 of the Hindu Succession Act, 1956, all Class I heirs (surviving spouse, sons, and daughters) inherit equal rights.
@@ -924,16 +924,16 @@ export default function DematSharesTransmissionClient() {
                 </div>
 
                 <div className="bg-white rounded-2xl border border-[#172228]/10 p-4 space-y-2">
-                  <h3 className="font-bold text-sm text-[#172228]">Option B: Relinquishment (NOC)</h3>
+                  <h3 className="font-bold text-sm text-[#172228]">Option B: Release (NOC)</h3>
                   <p className="text-xs text-[#55636D] leading-relaxed">
-                    Siblings execute a formal Relinquishment Deed or notarized NOC in favor of one sibling or the surviving mother, allowing one person to hold the entire portfolio.
+                    Siblings execute a formal Release Deed or notarized NOC in favor of one sibling or the surviving mother, allowing one person to hold the entire portfolio.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-[#172228]/10 p-4 space-y-2">
-                  <h3 className="font-bold text-sm text-[#172228]">Option C: Court Partition</h3>
+                  <h3 className="font-bold text-sm text-[#172228]">Option C: Court Split</h3>
                   <p className="text-xs text-[#55636D] leading-relaxed">
-                    If heirs disagree on share values or division, the only remedy is filing a succession petition under Section 372 in Civil Court, which freezes the shares until the judge decides.
+                    If heirs disagree on share values or division, the only remedy is filing a estate petition under Section 372 in Civil Court, which freezes the shares until the judge decides.
                   </p>
                 </div>
               </div>
@@ -948,22 +948,22 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                9. Mutual Fund Transmission: AMFI Rules &amp; Central Portals
+                9. Mutual Fund Transfer: AMFI Rules &amp; Central Portals
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Many investors hold both demat stocks and mutual funds. The transmission process for mutual fund units depends on whether they are held in demat mode or in Statement of Account (SoA) mode with fund houses:
+                Many investors hold both demat stocks and mutual funds. The transfer process for mutual fund units depends on whether they are held in demat mode or in Statement of Account (SoA) mode with fund houses:
               </p>
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 space-y-3">
                 <div className="space-y-2 text-xs sm:text-sm text-[#55636D]">
                   <p>
-                    <strong>Demat Mode Mutual Funds:</strong> If your mutual fund units are held inside your demat account with Zerodha (Coin), Groww, or Angel One, they are transmitted along with your equity shares under SEBI Form ISR-5. You do not need to contact individual fund houses.
+                    <strong>Demat Mode Mutual Funds:</strong> If your mutual fund units are held inside your demat account with Zerodha (Coin), Groww, or Angel One, they are transmitted along with your equity shares under SEBI Form ISR-5. You do not need to contact single fund houses.
                   </p>
                   <p>
-                    <strong>Physical / SoA Mode Mutual Funds:</strong> If you bought mutual funds directly or through platforms like Kuvera, Zerodha non-demat, or distributors, units are held under individual folios. You must use AMFI standardized formats:
+                    <strong>Physical / SoA Mode Mutual Funds:</strong> If you bought mutual funds directly or through platforms like Kuvera, Zerodha non-demat, or distributors, units are held under single folios. You must use AMFI standardized formats:
                   </p>
                   <ul className="list-disc pl-5 space-y-1 text-xs">
-                    <li><strong>Form T2:</strong> For transmission to surviving joint unitholders.</li>
-                    <li><strong>Form T3:</strong> For transmission to registered nominees or legal heirs.</li>
+                    <li><strong>Form T2:</strong> For transfer to surviving joint unitholders.</li>
+                    <li><strong>Form T3:</strong> For transfer to filed nominees or legal heirs.</li>
                     <li><strong>Centralized Processing:</strong> You can submit claims centrally across all mutual funds using the <strong>MF Central</strong> portal or through RTAs like CAMS and KFintech.</li>
                   </ul>
                 </div>
@@ -979,35 +979,35 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                10. How a Registered Will Avoids Probate &amp; Court Delays
+                10. How a Filed Will Avoids Probate &amp; Court Delays
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                The entire headache of transmission, indemnity bonds, surety signatures, and civil court hearings exists solely because an investor passed away without leaving a clear Last Will and Testament.
+                The entire headache of transfer, indemnity bonds, surety signatures, and civil court hearings exists solely because an investor passed away without leaving a clear Last Will and Testament.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                When you draft an advocate-verified Will on WillDrafting.in, you eliminate all uncertainty for your family:
+                When you draft an lawyer-checked Will on WillDrafting.in, you eliminate all uncertainty for your family:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div className="rounded-xl border border-rose-200 bg-rose-50/50 p-4 space-y-2">
-                  <div className="font-bold text-rose-900 text-sm">Without a Valid Will (Intestate)</div>
+                  <div className="font-bold text-rose-900 text-sm">Without a Valid Will (No-Will)</div>
                   <ul className="space-y-1 text-rose-950">
                     <li>&bull; Demat account frozen upon notice of demise</li>
-                    <li>&bull; Claims above ₹15L require civil court Succession Certificate</li>
+                    <li>&bull; Claims above ₹15L require civil court Estate Paper</li>
                     <li>&bull; Takes 6 to 12 months in court with newspaper notices</li>
                     <li>&bull; Ad valorem court fees of 2% to 7.5% of total share value</li>
-                    <li>&bull; Sibling disputes can lock blue-chip shares for years</li>
+                    <li>&bull; Sibling fights can lock blue-chip shares for years</li>
                   </ul>
                 </div>
 
                 <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-4 space-y-2">
                   <div className="font-bold text-emerald-900 text-sm">With a WillDrafting Will (Protected)</div>
                   <ul className="space-y-1 text-emerald-950">
-                    <li>&bull; Clear beneficiary designated for each demat account</li>
+                    <li>&bull; Clear heir designated for each demat account</li>
                     <li>&bull; Named executor holds legal title under Section 211 of ISA 1925</li>
-                    <li>&bull; No Succession Certificate required for undisputed Wills</li>
+                    <li>&bull; No Estate Paper required for undisputed Wills</li>
                     <li>&bull; Zero percentage-based court fees on your share portfolio</li>
-                    <li>&bull; Straightforward transmission completed in 21 to 30 days</li>
+                    <li>&bull; Straightforward transfer completed in 21 to 30 days</li>
                   </ul>
                 </div>
               </div>
@@ -1018,7 +1018,7 @@ export default function DematSharesTransmissionClient() {
                   Protect Your Demat Portfolio &amp; Family Today
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                  Do not let your life savings get stuck in broker paperwork or court litigation. Create an advocate-drafted, legally binding Will on plain paper in just 15 minutes.
+                  Do not let your life savings get stuck in broker paperwork or court court fights. Create an lawyer-drafted, legally binding Will on plain paper in just 15 minutes.
                 </p>
                 <div>
                   <a
@@ -1042,7 +1042,7 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                11. Five Critical Mistakes to Avoid During Share Transmission
+                11. Five Critical Mistakes to Avoid During Share Transfer
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Families dealing with the loss of a loved one often make innocent mistakes that result in frozen funds or legal penalties:
@@ -1052,7 +1052,7 @@ export default function DematSharesTransmissionClient() {
                 {[
                   {
                     title: "1. Trading on the Deceased Person's Account",
-                    desc: "Using the deceased holder's login credentials to sell shares or withdraw funds post-death is an offence under Indian penal law and SEBI regulations. Brokers will immediately freeze the account and reverse unauthorized transactions.",
+                    desc: "Using the deceased holder's login credentials to sell shares or withdraw funds post-death is an offence under Indian penal law and SEBI regulations. Brokers will right away freeze the account and reverse unauthorized transactions.",
                   },
                   {
                     title: "2. Assuming the Nominee Can Keep All the Shares",
@@ -1068,7 +1068,7 @@ export default function DematSharesTransmissionClient() {
                   },
                   {
                     title: "5. Ignoring Unclaimed Shares Until They Move to IEPF",
-                    desc: "If transmission is ignored and dividends remain unclaimed for seven consecutive years, the shares are transferred to the central government's Investor Education and Protection Fund (IEPF), requiring a complicated refund process.",
+                    desc: "If transfer is ignored and dividends remain unclaimed for seven consecutive years, the shares are transferred to the central government's Investor Education and Protection Fund (IEPF), requiring a complicated refund process.",
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="bg-white rounded-2xl border border-[#172228]/10 p-4 space-y-1">
@@ -1088,21 +1088,21 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                12. Lawyer-Verified Guidance: Succession Support by AMA
+                12. Lawyer-Checked Guidance: Estate Support by AMA
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                WillDrafting.in is powered by WillDrafting.in, a premier Indian succession law practice. If you are dealing with a complex share transmission involving disputed heirs, missing nominations, or high-value portfolios exceeding Rs 15 Lakhs, our succession advocates provide end-to-end representation.
+                WillDrafting.in is powered by WillDrafting.in, a premier Indian succession law practice. If you are dealing with a complex share transfer involving disputed heirs, missing nominations, or high-value portfolios exceeding Rs 15 Lakhs, our estate lawyers provide end-to-end representation.
               </p>
 
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 shadow-xs space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                    <div className="font-bold text-sm text-[#172228]">Succession Petitions</div>
+                    <div className="font-bold text-sm text-[#172228]">Estate Petitions</div>
                     <div className="text-[11px] text-[#55636D] mt-1">Filing Section 372 petitions in Civil Courts nationwide</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <div className="font-bold text-sm text-[#172228]">Family Settlements</div>
-                    <div className="text-[11px] text-[#55636D] mt-1">Drafting registered Family Deeds and Relinquishment NOCs</div>
+                    <div className="text-[11px] text-[#55636D] mt-1">Drafting filed Family Deeds and Release NOCs</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <div className="font-bold text-sm text-[#172228]">Depository Liaison</div>
@@ -1112,13 +1112,13 @@ export default function DematSharesTransmissionClient() {
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                   <div className="text-[#55636D]">
-                    Need expert assistance with high-value demat transmission?
+                    Need expert help with high-value demat transfer?
                   </div>
                   <Link
                     href="/services/succession-certificate"
                     className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                   >
-                    <span>Consult Our Succession Lawyers</span>
+                    <span>Consult Our Estate Lawyers</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -1134,10 +1134,10 @@ export default function DematSharesTransmissionClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                13. Frequently Asked Questions: Demat Transmission Rules
+                13. Frequently Asked Questions: Demat Transfer Rules
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Find answers to common questions about SEBI demat transmission rules, nominee responsibilities, and succession certificates:
+                Find answers to common questions about SEBI demat transfer rules, nominee responsibilities, and estate papers:
               </p>
 
               <div className="space-y-3">
@@ -1180,7 +1180,7 @@ export default function DematSharesTransmissionClient() {
               <div className="flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Legal Authority
+                  Legal Office
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
@@ -1192,14 +1192,14 @@ export default function DematSharesTransmissionClient() {
                 <ul className="list-disc pl-5 space-y-1">
                   <li>SEBI Master Circular for Registrars to an Issue and Share Transfer Agents (Circular No. SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65 dated May 18, 2022).</li>
                   <li>Depositories Act, 1996 (Act No. 22 of 1996), Sections 9 &amp; 10 (Fungibility and Depository Records).</li>
-                  <li>Companies Act, 2013 (Act No. 18 of 2013), Section 56 (Transfer &amp; Transmission) &amp; Section 72 (Nomination).</li>
-                  <li>Indian Succession Act, 1925 (Act No. 39 of 1925), Part X, Sections 370–390 (Grant of Succession Certificates).</li>
+                  <li>Companies Act, 2013 (Act No. 18 of 2013), Section 56 (Transfer &amp; Transfer) &amp; Section 72 (Nomination).</li>
+                  <li>Indian Succession Act, 1925 (Act No. 39 of 1925), Part X, Sections 370–390 (Grant of Estate Papers).</li>
                   <li>Supreme Court Landmark Judgment: <em>Shakti Yezdani &amp; Anr. v. Jayanand Jayant Salgaonkar &amp; Ors. (2023 INSC 1079)</em>.</li>
                 </ul>
               </div>
 
               <div className="pt-2">
-                <span className="text-xs font-bold text-[#172228] block mb-2">Verified Government &amp; Depository Portals:</span>
+                <span className="text-xs font-bold text-[#172228] block mb-2">Checked Government &amp; Depository Portals:</span>
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="https://www.sebi.gov.in"
@@ -1256,25 +1256,25 @@ export default function DematSharesTransmissionClient() {
                     href="/services/succession-certificate"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Succession Certificate Lawyers
+                    Estate Paper Lawyers
                   </Link>
                   <Link
                     href="/tools/succession-certificate-court-fee-calculator"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Court Fee Calculator India
+                    Court Fee Tool India
                   </Link>
                   <Link
                     href="/blogs/legal-heir-certificate-vs-succession-certificate"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Legal Heir vs Succession Certificate
+                    Legal Heir vs Estate Paper
                   </Link>
                   <Link
                     href="/templates/release-deed-format"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Relinquishment Deed Format
+                    Release Deed Format
                   </Link>
                 </div>
               </div>
@@ -1299,18 +1299,18 @@ export default function DematSharesTransmissionClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
-                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Succession Counsel</p>
+                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Estate Counsel</p>
                 </div>
               </div>
               <p className="text-xs text-[#55636D] leading-relaxed">
-                Advocate Anuj Anand Malik has over 15 years of experience in testamentary succession, demat share transmission petitions, and high-value estate planning at WillDrafting.in.
+                Lawyer Anuj Anand Malik has over 15 years of experience in Will estate, demat share transfer petitions, and high-value estate planning at WillDrafting.in.
               </p>
               <div className="mt-3 pt-3 border-t border-[#172228]/10 flex items-center justify-between text-[11px]">
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1331,17 +1331,17 @@ export default function DematSharesTransmissionClient() {
                 Confidential Legal Advisory
               </span>
               <h3 className="text-lg font-bold text-white leading-snug">
-                Facing Frozen Demat Accounts or Share Disputes?
+                Facing Frozen Demat Accounts or Share Fights?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Our estate lawyers draft and file Section 372 succession petitions across all major Indian District Courts for portfolios exceeding Rs 15 Lakhs.
+                Our estate lawyers draft and file Section 372 estate petitions across all major Indian District Courts for portfolios exceeding Rs 15 Lakhs.
               </p>
               <div className="pt-1">
                 <Link
                   href="/services/succession-certificate"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all cursor-pointer"
                 >
-                  <span>Consult Succession Lawyers</span>
+                  <span>Consult Estate Lawyers</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1371,7 +1371,7 @@ export default function DematSharesTransmissionClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Advocate Verified:</strong> Every draft reviewed by senior succession counsel.</span>
+                  <span><strong>Lawyer Checked:</strong> Every draft reviewed by senior estate counsel.</span>
                 </li>
               </ul>
             </div>
@@ -1379,14 +1379,14 @@ export default function DematSharesTransmissionClient() {
             {/* CARD 4: RELATED GUIDES */}
             <div className="hidden lg:block bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5 space-y-3">
               <h3 className="font-bold text-xs uppercase tracking-wider text-[#172228]">
-                Related Succession Guides
+                Related Estate Guides
               </h3>
               <div className="space-y-2">
                 <Link
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Legal Heir vs Succession Certificate</div>
+                  <div className="font-bold text-xs text-[#172228]">Legal Heir vs Estate Paper</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
                     <span>Key Differences &amp; Laws</span> &rarr;
                   </div>
@@ -1396,9 +1396,9 @@ export default function DematSharesTransmissionClient() {
                   href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Succession Certificate Lawyers</div>
+                  <div className="font-bold text-xs text-[#172228]">Estate Paper Lawyers</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
-                    <span>Court Petition Procedure</span> &rarr;
+                    <span>Court Petition Step</span> &rarr;
                   </div>
                 </Link>
 
@@ -1406,7 +1406,7 @@ export default function DematSharesTransmissionClient() {
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Succession Court Fee Calculator</div>
+                  <div className="font-bold text-xs text-[#172228]">Estate Court Fee Tool</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
                     <span>Estimate State Ad Valorem Fees</span> &rarr;
                   </div>
@@ -1416,7 +1416,7 @@ export default function DematSharesTransmissionClient() {
                   href="/templates/release-deed-format"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Relinquishment Deed Format</div>
+                  <div className="font-bold text-xs text-[#172228]">Release Deed Format</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
                     <span>Transfer Share Rights to Co-Heir</span> &rarr;
                   </div>
@@ -1433,25 +1433,25 @@ export default function DematSharesTransmissionClient() {
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
                 <Link
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
               </div>
             </div>

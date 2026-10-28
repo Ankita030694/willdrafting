@@ -118,7 +118,7 @@ const JAMMU_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Jammu and Kashmir law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -137,7 +137,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental soundness and lucidity.",
     checked: false,
   },
   {
@@ -149,7 +149,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "JDA Plot Allotment / Lease Deed / JMC Tax Receipt",
-    detail: "Ownership records for Jammu Development Authority colony plots or Jammu Municipal Corporation house tax files.",
+    detail: "Ownership records for Jammu Development Office colony plots or Jammu City City Board house tax files.",
     checked: false,
   },
   {
@@ -252,7 +252,7 @@ export default function JammuLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your JDA home plots, JMC urban houses, industrial units in Gangyal, and RS Pura farm lands. Complete NGDRS token booking, High Court lawyer check, and Section 31 doorstep signing.
+                Draft a legally binding Will for your JDA home plots, JMC urban houses, plant units in Gangyal, and RS Pura farm lands. Complete NGDRS token booking, High Court lawyer check, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -308,7 +308,7 @@ export default function JammuLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Jammu Urban &amp; JDA Succession Blueprint
+                  Jammu Urban &amp; JDA Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -353,7 +353,7 @@ export default function JammuLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Section 213(2) Exemption
@@ -510,37 +510,37 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>EXECUTIVE SUMMARY &amp; STATUTORY PROTOCOL</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Jammu
+                  Key Highlights: Will Making &amp; Filing in Jammu
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200/80 space-y-2">
                     <span className="font-bold text-slate-900 block flex items-center gap-2">
                       <Building className="w-4 h-4 text-[#C65378]" />
-                      JDA &amp; JMC Property Succession
+                      JDA &amp; JMC Asset Estate
                     </span>
                     <p>
-                      Transferring plots in Jammu Development Authority (JDA) colonies such as Gandhi Nagar, Trikuta Nagar, and Roop Nagar, or freehold assets under Jammu Municipal Corporation (JMC), requires verifiable legal succession proof. A registered Will eliminates civil title fights and speeds up name change.
+                      Transferring plots in Jammu Development Office (JDA) colonies such as Gandhi Nagar, Trikuta Nagar, and Roop Nagar, or freehold assets under Jammu City City Board (JMC), requires verifiable legal estate proof. A filed Will eliminates civil title fights and speeds up name change.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200/80 space-y-2">
                     <span className="font-bold text-slate-900 block flex items-center gap-2">
                       <Stamp className="w-4 h-4 text-[#C65378]" />
-                      NGDRS J&amp;K Digital Token Registration
+                      NGDRS J&amp;K Digital Token Filing
                     </span>
                     <p>
-                      Jammu operates on the National Generic Document Registration System (NGDRS J&K). Testators upload draft details, submit KYC, pay nominal government registration charges, and reserve exact biometric check appointments at their jurisdictional SRO office.
+                      Jammu operates on the National Generic Paper Filing System (NGDRS J&K). Will makers upload draft details, submit KYC, pay nominal government filing charges, and reserve exact biometric check appointments at their local SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200/80 space-y-2">
                     <span className="font-bold text-slate-900 block flex items-center gap-2">
                       <Home className="w-4 h-4 text-[#C65378]" />
-                      Section 31 Doorstep SRO Registration
+                      Section 31 Doorstep SRO Filing
                     </span>
                     <p>
-                      Senior citizens aged 60+, retired defence veterans, and people with medical mobility limitations across Jammu can request a home visit commission under Section 31 of the Registration Act, 1908. Sub-Registrars conduct biometrics at your residence.
+                      Senior citizens aged 60+, retired defence veterans, and people with medical mobility limitations across Jammu can request a home visit commission under Section 31 of the Filing Act, 1908. Sub-Registrars conduct biometrics at your residence.
                     </p>
                   </div>
 
@@ -550,7 +550,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                       Indian Succession Act, 1925 Form
                     </span>
                     <p>
-                      Following the Jammu and Kashmir Reorganisation Act, 2019, testamentary succession across Jammu is strictly governed by the Indian Succession Act, 1925. Wills require sound mind, voluntary intent, two witnesses, and clear bequests.
+                      Following the Jammu and Kashmir Reorganisation Act, 2019, Will estate across Jammu is strictly governed by the Indian Succession Act, 1925. Wills require sound mind, voluntary intent, two witnesses, and clear bequests.
                     </p>
                   </div>
                 </div>
@@ -578,17 +578,17 @@ export default function JammuLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Jammu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession in the Union Territory of Jammu and Kashmir has transitioned to unified central Indian statutes. Understanding this codified framework protects your family against inheritance fights and revenue record deadlocks:
+                  Will estate in the Union Territory of Jammu and Kashmir has transitioned to unified central Indian statutes. Understanding this codified framework protects your family against estate fights and revenue record deadlocks:
                 </p>
               </div>
 
               <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
                 <p>
-                  Prior to October 2019, property transfers and succession in Jammu were regulated under state-specific enactments. Following the implementation of the Jammu and Kashmir Reorganisation Act, 2019, the <strong>Indian Succession Act, 1925</strong> applies universally to testamentary dispositions for Hindus, Sikhs, Jains, Buddhists, and Christians in Jammu. Muslim personal law governs bequests within the prescribed one-third (Wasaya) limitations.
+                  Prior to October 2019, asset transfers and estate in Jammu were regulated under state-specific enactments. Following the implementation of the Jammu and Kashmir Reorganisation Act, 2019, the <strong>Indian Succession Act, 1925</strong> applies universally to Will gifts for Hindus, Sikhs, Jains, Buddhists, and Christians in Jammu. Muslim personal law governs bequests within the prescribed one-third (Wasaya) limitations.
                 </p>
 
                 <p>
-                  Under Section 59 of the Indian Succession Act, every person of sound mind not being a minor may dispose of their self-acquired and absolute property by Will. Section 63 mandates that the Will maker must sign or affix their mark to the Will, and it must be attested by two or more credible witnesses who have seen the Will maker sign and who sign the document in the presence of the Will maker.
+                  Under Section 59 of the Indian Succession Act, every person of sound mind not being a minor may dispose of their self-acquired and absolute asset by Will. Section 63 mandates that the Will maker must sign or affix their mark to the Will, and it must be attested by two or more credible witnesses who have seen the Will maker sign and who sign the paper in the presence of the Will maker.
                 </p>
               </div>
 
@@ -597,7 +597,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">
                   <thead>
                     <tr className="bg-slate-100/90 text-slate-800 border-b border-slate-200">
-                      <th className="p-3.5 font-extrabold">Succession Parameter</th>
+                      <th className="p-3.5 font-extrabold">Estate Parameter</th>
                       <th className="p-3.5 font-extrabold">Without a Will (Without a Will)</th>
                       <th className="p-3.5 font-extrabold">With Lawyer-Drafted Jammu Will</th>
                     </tr>
@@ -605,13 +605,13 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">JDA Colony Plot Transfer</td>
-                      <td className="p-3.5">Requires legal heir succession papers from District Judge or contested Tehsildar affidavits; takes 12-24 months.</td>
-                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Direct name change through registered Will and indemnity bond within 30-45 days.</td>
+                      <td className="p-3.5">Requires legal heir estate papers from District Judge or contested Tehsildar sworn notes; takes 12-24 months.</td>
+                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Direct name change through filed Will and indemnity bond within 30-45 days.</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">JMC House Tax Name Change</td>
-                      <td className="p-3.5">Requires consent affidavits from all Class-I heirs, leading to hold-ups if one sibling dissents.</td>
-                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Immediate assessment register name update based on Book III registered Will.</td>
+                      <td className="p-3.5">Requires consent sworn notes from all Class-I heirs, leading to hold-ups if one sibling dissents.</td>
+                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Immediate assessment register name update based on Book III filed Will.</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Farmland Intiqal (RS Pura)</td>
@@ -620,8 +620,8 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Bank Accounts &amp; Demat</td>
-                      <td className="p-3.5">Nominees must get succession papers if balance exceeds bank threshold limit.</td>
-                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Executor submits probated or registered Will with indemnity bond for prompt release.</td>
+                      <td className="p-3.5">Nominees must get estate papers if balance exceeds bank threshold limit.</td>
+                      <td className="p-3.5 text-emerald-800 bg-emerald-50/40 font-semibold">Executor submits probated or filed Will with indemnity bond for prompt release.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -636,10 +636,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Jammu?
+                  2. Is Will Filing Needed in Jammu?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is <strong>optional in Jammu</strong>. A Will signed on plain white paper signed by the Will maker in the presence of two adult witnesses is legally valid. However, choosing not to register introduces severe procedural and legal risks:
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will is <strong>a choice in Jammu</strong>. A Will signed on plain white paper signed by the Will maker in the presence of two adult witnesses is legally valid. However, choosing not to register introduces severe procedural and legal risks:
                 </p>
               </div>
 
@@ -648,7 +648,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl border border-rose-200 bg-rose-50/40 p-5 sm:p-6 space-y-3">
                   <div className="flex items-center gap-2 text-rose-900 font-extrabold text-base">
                     <AlertTriangle className="w-5 h-5 text-rose-700" />
-                    <span>Risks of an Unregistered Will in Jammu</span>
+                    <span>Risks of an Plain Will in Jammu</span>
                   </div>
                   <ul className="space-y-2.5 text-xs sm:text-sm text-rose-950/80">
                     <li className="flex items-start gap-2">
@@ -657,7 +657,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-rose-700 font-bold shrink-0">✕</span>
-                      <span>Jammu Development Authority (JDA) scrutinizes unregistered Wills rigorously, often requiring civil court decrees.</span>
+                      <span>Jammu Development Office (JDA) scrutinizes plain Wills rigorously, often requiring civil court decrees.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-rose-700 font-bold shrink-0">✕</span>
@@ -674,7 +674,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 p-5 sm:p-6 space-y-3">
                   <div className="flex items-center gap-2 text-emerald-900 font-extrabold text-base">
                     <ShieldCheck className="w-5 h-5 text-emerald-700" />
-                    <span>Legal Benefits of NGDRS Registration</span>
+                    <span>Legal Benefits of NGDRS Filing</span>
                   </div>
                   <ul className="space-y-2.5 text-xs sm:text-sm text-emerald-950/80">
                     <li className="flex items-start gap-2">
@@ -691,7 +691,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-700 font-bold shrink-0">✓</span>
-                      <span>Sub-Registrar captures biometric thumbprints and digital photographs of Will maker and witnesses.</span>
+                      <span>SRO captures biometric thumbprints and digital photographs of Will maker and witnesses.</span>
                     </li>
                   </ul>
                 </div>
@@ -706,10 +706,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>HIGH COURT OF J&amp;K AND LADAKH JURISPRUDENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Jammu Probate Law: High Court Succession Rules
+                  3. Jammu Probate Law: High Court Estate Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question for Jammu property owners is whether getting probate from a civil court is needed before heirs can inherit assets. Here is the settled legal position:
+                  A common question for Jammu asset owners is whether getting probate from a civil court is needed before heirs can inherit assets. Here is the settled legal position:
                 </p>
               </div>
 
@@ -742,7 +742,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                 </div>
 
                 <p className="pt-2 text-xs sm:text-sm text-slate-600">
-                  So, heirs in Jammu can directly present a registered Will along with the Will maker&apos;s death paper to the Jammu Development Authority (JDA), Jammu Municipal Corporation (JMC), and revenue offices for title substitution without paying hefty court fees or enduring multi-year civil court probate trials.
+                  So, heirs in Jammu can directly present a filed Will along with the Will maker&apos;s death paper to the Jammu Development Office (JDA), Jammu City City Board (JMC), and revenue offices for title substitution without paying hefty court fees or enduring multi-year civil court probate trials.
                 </p>
               </div>
             </section>
@@ -755,10 +755,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Jammu Sub-Registrar Offices: NGDRS SRO Directory
+                  4. Jammu SRO Offices: NGDRS SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Jammu district is divided into distinct registration areas under the Revenue Department of J&amp;K. Use the interactive directory below to locate your designated SRO office:
+                  Jammu district is divided into distinct filing areas under the Revenue Office of J&amp;K. Use the free directory below to locate your designated SRO office:
                 </p>
               </div>
 
@@ -860,7 +860,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                   5. Localities Covered: Area-Wise Will Drafting in Jammu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Jammu span prestigious JDA planned sectors in Gandhi Nagar and Trikuta Nagar, high-growth suburban corridors in Channi Himmat and Sainik Colony, judicial home hubs around Janipur and Roop Nagar, industrial factories in Gangyal, and fertile Basmati farmlands in RS Pura. Our estate lawyers deliver customized legal drafting, NGDRS J&amp;K slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Jammu span prestigious JDA planned sectors in Gandhi Nagar and Trikuta Nagar, high-growth suburban corridors in Channi Himmat and Sainik Colony, judicial home hubs around Janipur and Roop Nagar, plant factories in Gangyal, and fertile Basmati farmlands in RS Pura. Our estate lawyers deliver customized legal drafting, NGDRS J&amp;K slot scheduling, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -952,7 +952,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bahu Sub-Division Registry, Bahu Plaza Belt</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Defense veteran succession guidance, private family estate structuring, and expedited Book III registration.
+                        Defense veteran estate guidance, private family estate structuring, and expedited Book III filing.
                       </p>
                     </div>
                   </div>
@@ -996,7 +996,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Old Jammu City</strong> and Raghunath Bazaar for historical multi-generational Havelis, shop shops, and wholesale merchant assets across Kanak Mandi and Residency Road. Clarifies co-parcenary split rights, protects family business continuity, and ensures seamless municipal title transfers.
+                      Customized <strong>Will drafting services in Old Jammu City</strong> and Raghunath Bazaar for historical multi-generational Havelis, shop shops, and wholesale merchant assets across Kanak Mandi and Residency Road. Clarifies co-parcenary split rights, protects family business continuity, and ensures seamless city title transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1049,7 +1049,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Talab Tillo</strong> and Bakshi Nagar for home houses, doctors&apos; clinics, and plotted colonies near Government Medical College (GMC) Jammu. Details clear life-interest rules for surviving spouses, bank locker bequests, and smooth JMC property tax record mutations.
+                      Dedicated <strong>Will drafting services in Talab Tillo</strong> and Bakshi Nagar for home houses, doctors&apos; clinics, and plotted colonies near Government Medical College (GMC) Jammu. Details clear life-interest rules for surviving spouses, bank locker bequests, and smooth JMC asset tax record mutations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1102,7 +1102,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Janipur</strong> and Roop Nagar adjacent to the High Court of J&amp;K and Ladakh (Jammu Wing) and District Court Complex. Covers planned JDA sectors, builder floors, and home colonies, guaranteeing watertight testamentary validity vetted by senior lawyers.
+                      Expert <strong>Will drafting services in Janipur</strong> and Roop Nagar adjacent to the High Court of J&amp;K and Ladakh (Jammu Wing) and District Court Complex. Covers planned JDA sectors, builder floors, and home colonies, guaranteeing watertight Will validity vetted by senior lawyers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1111,7 +1111,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Courts Complex, Janipur (SRO North)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High Court lawyer drafting, JDA Roop Nagar transfer compliance, and Book III registration.
+                        High Court lawyer drafting, JDA Roop Nagar transfer compliance, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1164,7 +1164,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Nagrota</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Riverfront villa succession, boundary specifications, and Sub-Registrar accompaniment.
+                        Riverfront villa estate, boundary specifications, and SRO accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1189,7 +1189,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; MSME Hub
+                        Plant &amp; MSME Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gangyal / Digiana
@@ -1201,14 +1201,14 @@ export default function JammuLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gangyal Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gangyal Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Bari Brahmana SIDCO</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Digiana</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Satwari &amp; Babliana</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Gangyal and Bari Brahmana</strong> for industrial entrepreneurs, manufacturing unit owners, and warehouse proprietors. Structures succession of SIDCO leasehold factory land, private company shareholdings, trade receivables, and manufacturing plant machinery.
+                      Specialized <strong>Will drafting services in Gangyal and Bari Brahmana</strong> for plant entrepreneurs, manufacturing unit owners, and warehouse proprietors. Structures estate of SIDCO leasehold factory land, private company shareholdings, trade receivables, and manufacturing plant machinery.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1217,7 +1217,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Sub-Division, Digiana / Gangyal</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset inventory, cross-director share succession, and SIDCO lease compliance.
+                        Plant asset inventory, cross-director share estate, and SIDCO lease compliance.
                       </p>
                     </div>
                   </div>
@@ -1230,7 +1230,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Gangyal"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1270,7 +1270,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM &amp; Tehsil Complex, RS Pura &amp; Bishnah</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jamabandi revenue name change guidance, Patwari Fard check, and rural land succession.
+                        Jamabandi revenue name change guidance, Patwari Fard check, and rural land estate.
                       </p>
                     </div>
                   </div>
@@ -1299,10 +1299,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to NGDRS Registration in Jammu
+                  6. Step-by-Step SOP: Drafting to NGDRS Filing in Jammu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Drafting and registering an unassailable Will in Jammu follows an orderly, legally verified 5-stage protocol:
+                  Drafting and registering an unassailable Will in Jammu follows an orderly, legally checked 5-stage protocol:
                 </p>
               </div>
 
@@ -1321,7 +1321,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     Full Inventory of Jammu Assets &amp; Heirs
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Compile complete records of your immovable and movable assets. This includes JDA plot numbers in Gandhi Nagar or Roop Nagar, JMC house tax assessments, RS Pura farm Khasra details, J&amp;K Bank savings accounts, fixed deposits, and demat holdings. Designate trusted primary and contingent heirs.
+                    Compile complete records of your land and cash assets. This includes JDA plot numbers in Gandhi Nagar or Roop Nagar, JMC house tax assessments, RS Pura farm Khasra details, J&amp;K Bank savings accounts, fixed deposits, and demat holdings. Designate trusted primary and contingent heirs.
                   </p>
                 </div>
 
@@ -1339,7 +1339,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     Precision Drafting with Legal Clauses
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Our estate lawyers craft your customized Will incorporating express declarations of sound mental health, appointment of an independent executor, specific bequest schedules, minor guardianship trusts, and express revocation of all prior testamentary instruments.
+                    Our estate lawyers craft your customized Will incorporating express declarations of sound mental health, appointment of an independent executor, specific bequest schedules, minor child care trusts, and express revocation of all prior Will instruments.
                   </p>
                 </div>
 
@@ -1375,7 +1375,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     NGDRS J&amp;K Token Booking &amp; Fee Remittance
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    We initiate registration on the official National Generic Document Registration System (NGDRS J&amp;K). We upload party details, Will maker KYC, witness ID, pay the nominal government fee online, and lock in an exact token time slot at your designated Jammu SRO.
+                    We initiate filing on the official National Generic Paper Filing System (NGDRS J&amp;K). We upload party details, Will maker KYC, witness ID, pay the nominal government fee online, and lock in an exact token time slot at your designated Jammu SRO.
                   </p>
                 </div>
 
@@ -1393,7 +1393,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     Biometric Capture at SRO or Doorstep Commission
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Will maker and two witnesses appear before the Sub-Registrar in Jammu (or host the Sub-Registrar at home under Section 31). Biometric thumbprints and photographs are recorded electronically, the Will is registered in permanent Book III custody, and certified copies are delivered.
+                    The Will maker and two witnesses appear before the SRO in Jammu (or host the SRO at home under Section 31). Biometric thumbprints and photographs are recorded electronically, the Will is filed in permanent Book III custody, and certified copies are delivered.
                   </p>
                 </div>
               </div>
@@ -1407,10 +1407,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>DOORSTEP CONVENIENCE FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 31 of the Registration Act, 1908, senior citizens, bedridden people, and persons suffering from acute medical infirmities in Jammu can register their Will from the comfort of their home:
+                  Under Section 31 of the Filing Act, 1908, senior citizens, bedridden people, and persons suffering from acute medical infirmities in Jammu can register their Will from the comfort of their home:
                 </p>
               </div>
 
@@ -1426,14 +1426,14 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-slate-900 block">2. Commission Request</span>
                     <p className="text-slate-600">
-                      We file a formal form under Section 31 before the Sub-Registrar, Jammu, remitting the standard government commission inspection fee.
+                      We file a formal form under Section 31 before the SRO, Jammu, remitting the standard government commission inspection fee.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-slate-900 block">3. Home Visit &amp; Biometrics</span>
                     <p className="text-slate-600">
-                      The Sub-Registrar visits the residence in Gandhi Nagar, Channi Himmat, Janipur, or other localities with portable biometric scanners to register the Will.
+                      The SRO visits the residence in Gandhi Nagar, Channi Himmat, Janipur, or other localities with portable biometric scanners to register the Will.
                     </p>
                   </div>
                 </div>
@@ -1442,7 +1442,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <div className="space-y-1 text-xs text-rose-950">
                     <span className="font-bold block">Need Doorstep SRO Help in Jammu?</span>
                     <p className="text-rose-900/80">
-                      Our legal team manages doctor certification formats, Section 31 petitions, and Sub-Registrar home appointment coordination.
+                      Our legal team manages doctor certification formats, Section 31 petitions, and SRO home appointment coordination.
                     </p>
                   </div>
                   <Link
@@ -1463,10 +1463,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>MANDATORY DOCUMENTATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Jammu Sub-Registrar Offices
+                  8. Paper Checklist for Jammu SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ensure you carry all needed documents to avoid rejection or multiple visits to the SRO office in Jammu:
+                  Ensure you carry all needed papers to avoid rejection or multiple visits to the SRO office in Jammu:
                 </p>
               </div>
 
@@ -1523,10 +1523,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>ESTATE ASSET INVENTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Jammu Property Types: JDA Plots, JMC Houses &amp; Farmland
+                  9. Jammu Asset Types: JDA Plots, JMC Houses &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Each asset class in Jammu entails distinct legal and municipal transfer rules upon succession:
+                  Each asset class in Jammu entails distinct legal and city transfer rules upon estate:
                 </p>
               </div>
 
@@ -1547,7 +1547,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     JMC Freehold Houses &amp; Havelis
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Old Jammu City, Panjtirthi, Raghunath Bazaar, and Talab Tillo. Codifies division of multi-storey family homes, separate floor ownerships, staircase easements, and municipal property tax name change with Jammu Municipal Corporation.
+                    Old Jammu City, Panjtirthi, Raghunath Bazaar, and Talab Tillo. Codifies division of multi-storey family homes, separate floor ownerships, staircase easements, and city asset tax name change with Jammu City City Board.
                   </p>
                 </div>
 
@@ -1564,10 +1564,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-2 shadow-xs">
                   <span className="font-extrabold text-sm sm:text-base text-slate-900 block flex items-center gap-2">
                     <Factory className="w-4 h-4 text-[#C65378]" />
-                    Industrial &amp; Financial Portfolios
+                    Plant &amp; Financial Portfolios
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    SIDCO Bari Brahmana &amp; Gangyal industrial factory leases, private limited shareholdings, J&amp;K Bank fixed deposits, bank lockers, mutual funds, and demat shares. Clear legacy bequests override conflicting nominee fights.
+                    SIDCO Bari Brahmana &amp; Gangyal plant factory leases, private limited shareholdings, J&amp;K Bank fixed deposits, bank lockers, mutual funds, and demat shares. Clear legacy bequests override conflicting nominee fights.
                   </p>
                 </div>
               </div>
@@ -1581,10 +1581,10 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT GOVERNMENT TARIFFS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official NGDRS J&amp;K Registration Fees &amp; Charges
+                  10. Official NGDRS J&amp;K Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds, testamentary Wills in Jammu and Kashmir do not attract property price check stamp duty. Here is the exact official government cost structure:
+                  Unlike sale deeds or gift deeds, Will Wills in Jammu and Kashmir do not attract asset price check stamp duty. Here is the exact official government cost structure:
                 </p>
               </div>
 
@@ -1601,22 +1601,22 @@ export default function JammuLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Stamp Duty on Will</td>
                       <td className="p-3.5 font-extrabold text-emerald-800">₹0 (Completely Exempt)</td>
-                      <td className="p-3.5 text-slate-600">Court Fees &amp; Stamp Act Schedule (No ad-valorem duty on testamentary instruments)</td>
+                      <td className="p-3.5 text-slate-600">Court Fees &amp; Stamp Act Schedule (No ad-valorem duty on Will instruments)</td>
                     </tr>
                     <tr>
-                      <td className="p-3.5 font-bold text-slate-900">NGDRS Registration Fee</td>
+                      <td className="p-3.5 font-bold text-slate-900">NGDRS Filing Fee</td>
                       <td className="p-3.5 font-semibold text-slate-800">₹100 to ₹500 (Nominal Fixed Fee)</td>
-                      <td className="p-3.5 text-slate-600">J&amp;K Registration Rules Table of Fees</td>
+                      <td className="p-3.5 text-slate-600">J&amp;K Filing Rules Table of Fees</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Scanning &amp; Portal Charges</td>
-                      <td className="p-3.5 font-semibold text-slate-800">₹100 to ₹250 (Per Document)</td>
+                      <td className="p-3.5 font-semibold text-slate-800">₹100 to ₹250 (Per Paper)</td>
                       <td className="p-3.5 text-slate-600">NGDRS J&amp;K digital archiving and biometric record capture charges</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Section 31 Doorstep Commission</td>
                       <td className="p-3.5 font-semibold text-slate-800">₹1,000 to ₹2,500 (Nominal Govt Fee)</td>
-                      <td className="p-3.5 text-slate-600">Registration Act Section 31 special commission for home visit</td>
+                      <td className="p-3.5 text-slate-600">Filing Act Section 31 special commission for home visit</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1634,7 +1634,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Jammu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose from our lawyer-led Will drafting and registration packages tailored for Jammu families:
+                  Choose from our lawyer-led Will drafting and filing packages tailored for Jammu families:
                 </p>
               </div>
 
@@ -1663,7 +1663,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Signing &amp; attestation guide</span>
+                        <span>Signing &amp; witness signing guide</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1731,14 +1731,14 @@ export default function JammuLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl border border-slate-200/90 bg-white p-6 space-y-5 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700">
-                      End-to-End Registration
+                      End-to-End Filing
                     </span>
                     <div>
                       <span className="text-3xl font-extrabold text-slate-900">₹9,990</span>
                       <span className="text-xs text-slate-600 block mt-1">Complete SRO / Doorstep Support</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Complete end-to-end service including NGDRS token booking, Sub-Registrar accompaniment, or Section 31 doorstep visit.
+                      Complete end-to-end service including NGDRS token booking, SRO accompaniment, or Section 31 doorstep visit.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1765,7 +1765,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-full bg-slate-900 text-white font-bold text-xs text-center hover:bg-slate-800 transition-colors block cursor-pointer"
                   >
-                    Select Full Registration
+                    Select Full Filing
                   </a>
                 </div>
               </div>
@@ -1782,7 +1782,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Jammu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Jammu:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset filing in Jammu:
                 </p>
               </div>
 
@@ -1827,7 +1827,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Jammu Legal Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Jammu registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Jammu filing systems:
                 </p>
               </div>
 
@@ -1843,10 +1843,10 @@ export default function JammuLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1864,7 +1864,7 @@ export default function JammuLocationClient({ faqs }: Props) {
                     NGDRS J&amp;K Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official registration appointment portal: <code>ngdrs.jk.gov.in</code>.
+                    Official filing appointment portal: <code>ngdrs.jk.gov.in</code>.
                   </p>
                 </div>
               </div>
@@ -1895,7 +1895,29 @@ export default function JammuLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1914,7 +1936,7 @@ export default function JammuLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Jammu Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Jammu Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1933,7 +1955,7 @@ export default function JammuLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Jammu NGDRS Registered &amp; JDA Name Change Compliant</span>
+              <span>Jammu NGDRS Filed &amp; JDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

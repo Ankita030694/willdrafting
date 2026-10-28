@@ -329,7 +329,7 @@ export default function WillDisputeLitigationPage() {
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
-              Will Dispute Lawyer India
+              Will Fight Lawyer India
             </span>
           </nav>
 
@@ -342,12 +342,12 @@ export default function WillDisputeLitigationPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-27" className="text-[#6B7280]">
@@ -363,16 +363,16 @@ export default function WillDisputeLitigationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
-                <span>High Court Probate &amp; Will Contest Litigation Practice</span>
+                <span>High Court Probate &amp; Will Contest Court Fights Practice</span>
               </div>
 
               {/* Single H1: Exactly 52 characters (Strictly 30-65 chars for Screaming Frog) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Will Dispute and Probate Litigation Lawyers in India
+                Will Fight and Probate Court Fights Lawyers in India
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Has a relative produced a suspicious or fake Will? Or is your genuine Will blocked by an unfair caveat? Under Sections 61, 63, 263, and 284 of the Indian Succession Act, 1925, AMA Legal Solutions provides expert High Court trial advocates. We help you cancel fraudulent Wills, lodge urgent caveats, and protect your true family inheritance.
+                Has a relative produced a suspicious or fake Will? Or is your genuine Will blocked by an unfair caveat? Under Sections 61, 63, 263, and 284 of the Indian Succession Act, 1925, AMA Legal Solutions provides expert High Court trial lawyers. We help you cancel fraudulent Wills, lodge urgent caveats, and protect your true family estate.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -380,7 +380,7 @@ export default function WillDisputeLitigationPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Book Case Evaluation with Advocate</span>
+                  <span>Book Case Evaluation with Lawyer</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <a
@@ -402,7 +402,7 @@ export default function WillDisputeLitigationPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Stay on Property Sale</span>
+                  <span>Stay on Asset Sale</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
@@ -414,7 +414,7 @@ export default function WillDisputeLitigationPage() {
             {/* Right Summary Box */}
             <div className="lg:col-span-5 bg-white rounded-[28px] border border-[#172228]/10 p-6 sm:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
               <div className="text-xs font-bold uppercase tracking-[0.16em] text-[#C65378] mb-3">
-                Urgent Litigation Protection
+                Urgent Court Fights Protection
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
                 Why Speed Is Decisive in Disputed Indian Wills
@@ -429,13 +429,13 @@ export default function WillDisputeLitigationPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Third-Party Property Sale:</strong> Relatives often change land records quickly and sell family flats to builders before other heirs discover the fake Will.
+                    <strong>Third-Party Asset Sale:</strong> Relatives often change land records quickly and sell family flats to builders before other heirs discover the fake Will.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Caveats Expire in 90 Days:</strong> Filing a timely Caveat under Section 284 immediately stops the court registrar from issuing an uncontested grant.
+                    <strong>Caveats Expire in 90 Days:</strong> Filing a timely Caveat under Section 284 right away stops the court registrar from issuing an uncontested grant.
                   </span>
                 </li>
               </ul>
@@ -443,7 +443,7 @@ export default function WillDisputeLitigationPage() {
                 href="/tools/will-contest-challenge-risk-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Launch Will Contest Risk Calculator</span>
+                <span>Launch Will Contest Risk Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -467,7 +467,7 @@ export default function WillDisputeLitigationPage() {
             </div>
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Courtroom advocacy by AMA Legal Solutions covering forged Will challenges, probate caveats, and testamentary trial defense across Indian High Courts and District Courts.
+                <strong>Figure 1:</strong> Courtroom advocacy by AMA Legal Solutions covering forged Will fights, probate caveats, and Will trial defense across Indian High Courts and District Courts.
               </span>
               <span className="text-[#111827] font-semibold">
                 High Court Practice · Delhi · Mumbai · Bengaluru · Kolkata · Chandigarh
@@ -488,13 +488,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileWarning className="w-4 h-4" />
-              <span>Statutory Grounds for Challenge</span>
+              <span>Legal Grounds for Fight</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Grounds to Contest a Suspicious or Forged Will in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              In India, courts treat Wills as solemn documents. To challenge a Will successfully, an aggrieved legal heir must prove clear legal grounds under the law:
+              In India, courts treat Wills as solemn papers. To fight a Will successfully, an aggrieved legal heir must prove clear legal grounds under the law:
             </p>
           </div>
 
@@ -522,7 +522,7 @@ export default function WillDisputeLitigationPage() {
                   Lack of Mental Capacity
                 </h3>
                 <p className="text-[14px] leading-[1.65] text-[#49585F]">
-                  Under Section 59, the person making the Will must have a sound mind. Severe dementia, coma, or mental illness makes a Will invalid without a medical certificate.
+                  Under Section 59, the person making the Will must have a sound mind. Severe dementia, coma, or mental illness makes a Will invalid without a medical paper.
                 </p>
               </div>
             </div>
@@ -533,10 +533,10 @@ export default function WillDisputeLitigationPage() {
                   Ground 03 · Section 63 ISA
                 </span>
                 <h3 className="text-lg font-bold text-[#111827] mb-2.5">
-                  Defective Witness Attestation
+                  Defective Witness Witness Signing
                 </h3>
                 <p className="text-[14px] leading-[1.65] text-[#49585F]">
-                  Section 63 requires two adult witnesses. Both witnesses must see the testator sign and must sign in front of the testator.
+                  Section 63 requires two adult witnesses. Both witnesses must see the Will maker sign and must sign in front of the Will maker.
                 </p>
               </div>
             </div>
@@ -550,7 +550,7 @@ export default function WillDisputeLitigationPage() {
                   Fake Signatures &amp; Forgery
                 </h3>
                 <p className="text-[14px] leading-[1.65] text-[#49585F]">
-                  When signatures or thumbprints do not match bank records or official documents, advocates seek forensic handwriting analysis from CFSL.
+                  When signatures or thumbprints do not match bank records or official papers, lawyers seek forensic handwriting analysis from CFSL.
                 </p>
               </div>
             </div>
@@ -564,7 +564,7 @@ export default function WillDisputeLitigationPage() {
                   Suspicious Circumstances Rule
                 </h3>
                 <p className="text-[14px] leading-[1.65] text-[#49585F]">
-                  Under the Venkatachala ruling, courts question Wills where one beneficiary gets everything and close children are cut out without reasons.
+                  Under the Venkatachala ruling, courts question Wills where one heir gets everything and close children are cut out without reasons.
                 </p>
               </div>
             </div>
@@ -578,7 +578,7 @@ export default function WillDisputeLitigationPage() {
                   Revocation by a Later Will
                 </h3>
                 <p className="text-[14px] leading-[1.65] text-[#49585F]">
-                  A later valid Will automatically cancels older Wills. Showing the newest original Will ends disputes over older drafts.
+                  A later valid Will automatically cancels older Wills. Showing the newest original Will ends fights over older drafts.
                 </p>
               </div>
             </div>
@@ -592,13 +592,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-8">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Statutory Evidence Architecture</span>
+              <span>Legal Evidence Architecture</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Statutory Framework: Indian Succession Act &amp; Sakshya Act
+              Legal Framework: Indian Succession Act &amp; Sakshya Act
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Will litigation in India operates at the intersection of succession statutes, evidence law, and specific civil remedies:
+              Will court fights in India operates at the intersection of estate statutes, evidence law, and specific civil remedies:
             </p>
           </div>
 
@@ -609,10 +609,10 @@ export default function WillDisputeLitigationPage() {
                 Section 67 Bharatiya Sakshya Adhiniyam, 2023
               </h3>
               <p className="text-xs sm:text-[14px] text-[#49585F] leading-relaxed mb-3">
-                Formerly Section 68 of the Evidence Act. A Will cannot be admitted as evidence unless at least one attesting witness is called to prove execution in court.
+                Formerly Section 68 of the Evidence Act. A Will cannot be admitted as evidence unless at least one signing witness is called to prove signing in court.
               </p>
               <div className="text-xs text-[#047857] font-semibold">
-                Advocate Strategy: Cross-examining attesting witnesses to reveal false claims and fake signings.
+                Lawyer Strategy: Cross-examining signing witnesses to reveal false claims and fake signings.
               </div>
             </div>
 
@@ -625,7 +625,7 @@ export default function WillDisputeLitigationPage() {
                 Empowers High Courts and District Judges to cancel a grant of probate for just cause, including where a grant was obtained by concealing true facts.
               </p>
               <div className="text-xs text-[#047857] font-semibold">
-                Advocate Strategy: Reopening ex-parte probate orders passed without serving notice on legal heirs.
+                Lawyer Strategy: Reopening ex-parte probate orders passed without serving notice on legal heirs.
               </div>
             </div>
 
@@ -635,10 +635,10 @@ export default function WillDisputeLitigationPage() {
                 Section 31 &amp; Section 34 Specific Relief Act, 1963
               </h3>
               <p className="text-xs sm:text-[14px] text-[#49585F] leading-relaxed mb-3">
-                Enables any person against whom a written document is void or voidable to file a suit to declare it null and have the fake Will cancelled.
+                Enables any person against whom a written paper is void or voidable to file a suit to declare it null and have the fake Will cancelled.
               </p>
               <div className="text-xs text-[#047857] font-semibold">
-                Advocate Strategy: Getting a court decree declaring the forged Will void from the start.
+                Lawyer Strategy: Getting a court decree declaring the forged Will void from the start.
               </div>
             </div>
 
@@ -648,10 +648,10 @@ export default function WillDisputeLitigationPage() {
                 Section 295 Indian Succession Act: Contentious Suits
               </h3>
               <p className="text-xs sm:text-[14px] text-[#49585F] leading-relaxed mb-3">
-                Directs that once a Caveat is filed, the simple probate petition becomes a regular contested civil suit under the Code of Civil Procedure.
+                Directs that once a Caveat is filed, the simple probate petition becomes a regular contested civil suit under the Code of Civil Step.
               </p>
               <div className="text-xs text-[#047857] font-semibold">
-                Advocate Strategy: Conducting full civil trials with witness examinations and written evidence.
+                Lawyer Strategy: Conducting full civil trials with witness examinations and written evidence.
               </div>
             </div>
           </div>
@@ -664,13 +664,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Scale className="w-4 h-4" />
-              <span>Court Jurisdiction Analysis</span>
+              <span>Court Area Analysis</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Litigation Comparison: Probate Suit vs Civil Partition
+              Court Fights Comparison: Probate Suit vs Civil Split
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Choosing the right court is essential. Filing in the wrong forum can lead to rejection of your case. Review how testamentary and civil remedies compare:
+              Choosing the right court is essential. Filing in the wrong forum can lead to rejection of your case. Review how Will and civil remedies compare:
             </p>
           </div>
 
@@ -679,9 +679,9 @@ export default function WillDisputeLitigationPage() {
               <table className="w-full text-left border-collapse min-w-[820px]">
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
-                    <th className="py-4 px-6 w-[22%]">Litigation Pathway</th>
+                    <th className="py-4 px-6 w-[22%]">Court Fights Pathway</th>
                     <th className="py-4 px-6 w-[24%]">Governing Statute &amp; Sections</th>
-                    <th className="py-4 px-6 w-[20%]">Forum &amp; Jurisdiction</th>
+                    <th className="py-4 px-6 w-[20%]">Forum &amp; Area</th>
                     <th className="py-4 px-6 w-[20%]">Primary Relief Granted</th>
                     <th className="py-4 px-6 w-[14%]">Typical Timeline</th>
                   </tr>
@@ -709,13 +709,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-4">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileText className="w-4 h-4" />
-              <span>Copy-Pasteable Statutory Template</span>
+              <span>Copy-Pasteable Legal Template</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Copy-Pasteable Probate Caveat Notice Clause Format
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              If you expect a relative to file a fraudulent probate petition, your advocate must lodge a Caveat under Section 284 ISA immediately. Use our court-verified drafting format:
+              If you expect a relative to file a fraudulent probate petition, your lawyer must lodge a Caveat under Section 284 ISA right away. Use our court-checked drafting format:
             </p>
           </div>
 
@@ -729,7 +729,7 @@ export default function WillDisputeLitigationPage() {
           <div className="mt-8 p-6 sm:p-7 rounded-2xl bg-white border border-[#172228]/10 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Explore Interactive Legal Tool
+                Explore Free Legal Tool
               </div>
               <p className="text-sm text-[#49585F]">
                 Need to assess court fees and calculate timeline risks before lodging your caveat?
@@ -740,7 +740,7 @@ export default function WillDisputeLitigationPage() {
                 href="/tools/will-contest-challenge-risk-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-5 py-3 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Will Contest Risk Calculator</span>
+                <span>Will Contest Risk Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -761,13 +761,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>Courtroom Standard Operating Procedure</span>
+              <span>Courtroom Standard Operating Step</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Step-by-Step SOP: From Caveat to High Court Judgment
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How AMA Legal Solutions manages contested testamentary litigation before District and High Courts:
+              How AMA Legal Solutions manages contested Will court fights before District and High Courts:
             </p>
           </div>
 
@@ -791,12 +791,12 @@ export default function WillDisputeLitigationPage() {
               {
                 step: "04",
                 title: "Witness Cross-Examination",
-                desc: "Our advocates question the witnesses in court under Section 67 BSA to uncover fake claims and establish the truth.",
+                desc: "Our lawyers question the witnesses in court under Section 67 BSA to uncover fake claims and establish the truth.",
               },
               {
                 step: "05",
                 title: "Final Decree & Mutation",
-                desc: "After winning the court judgment, our team updates land registry and municipal records for the rightful legal heirs.",
+                desc: "After winning the court judgment, our team updates land registry and city records for the rightful legal heirs.",
               },
             ].map((item) => (
               <div
@@ -828,7 +828,7 @@ export default function WillDisputeLitigationPage() {
               Landmark Supreme Court Precedents on Disputed Wills
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Every Will dispute in India is adjudicated against landmark doctrines formulated by the Supreme Court of India:
+              Every Will fight in India is adjudicated against landmark doctrines formulated by the Supreme Court of India:
             </p>
           </div>
 
@@ -850,28 +850,28 @@ export default function WillDisputeLitigationPage() {
 
             <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
               <div className="text-xs font-bold text-[#C65378] uppercase mb-1">
-                Registration Rule · AIR 1962 SC 567
+                Filing Rule · AIR 1962 SC 567
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">
                 Rani Purnima Debi v. Kumar Khagendra Narayan Deb
               </h3>
               <p className="text-xs sm:text-[14px] text-[#49585F] leading-relaxed mb-3">
-                The Supreme Court held that registering a Will does not make it automatically genuine. When execution looks suspicious, registration alone will not save the Will.
+                The Supreme Court held that registering a Will does not make it automatically genuine. When signing looks suspicious, filing alone will not save the Will.
               </p>
               <div className="text-xs font-semibold text-[#111827]">
-                Key Rule: Sub-Registrar registration does not cure inherent forgery, lack of capacity, or coercion.
+                Key Rule: SRO filing does not cure inherent forgery, lack of capacity, or coercion.
               </div>
             </div>
 
             <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
               <div className="text-xs font-bold text-[#C65378] uppercase mb-1">
-                Beneficiary Participation · (2021) 11 SCC 209
+                Heir Participation · (2021) 11 SCC 209
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">
                 Kavita Kanwar v. Pamela Mehta
               </h3>
               <p className="text-xs sm:text-[14px] text-[#49585F] leading-relaxed mb-3">
-                A three-judge bench held that when a key beneficiary takes an active role in writing and signing a Will, deep suspicion arises. The court denied probate.
+                A three-judge bench held that when a key heir takes an active role in writing and signing a Will, deep suspicion arises. The court denied probate.
               </p>
               <div className="text-xs font-semibold text-[#111827]">
                 Key Rule: Active participation by the sole heir creates a heavy burden to dispel undue influence.
@@ -880,7 +880,7 @@ export default function WillDisputeLitigationPage() {
 
             <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
               <div className="text-xs font-bold text-[#C65378] uppercase mb-1">
-                Comprehensive Bench Review · (2021) 11 SCC 277
+                Full Bench Review · (2021) 11 SCC 277
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">
                 Shivakumar v. Sharanabasappa
@@ -889,7 +889,7 @@ export default function WillDisputeLitigationPage() {
                 The Supreme Court established that courts must act with judicial conscience. When medical records and witness testimony prove real intent, unfair caveats must be dismissed.
               </p>
               <div className="text-xs font-semibold text-[#111827]">
-                Key Rule: Clear medical and attesting evidence provides unassailable protection for genuine Wills.
+                Key Rule: Clear medical and signing evidence provides unassailable protection for genuine Wills.
               </div>
             </div>
           </div>
@@ -902,13 +902,13 @@ export default function WillDisputeLitigationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <HelpCircle className="w-4 h-4" />
-              <span>Testamentary Litigation FAQs</span>
+              <span>Will Court Fights FAQs</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions: Will Disputes &amp; Litigation
+              Frequently Asked Questions: Will Fights &amp; Court Fights
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Clear answers prepared by senior High Court succession advocates at AMA Legal Solutions:
+              Clear answers prepared by senior High Court estate lawyers at AMA Legal Solutions:
             </p>
           </div>
 
@@ -930,10 +930,10 @@ export default function WillDisputeLitigationPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Succession Litigation Resources
+                Related Estate Court Fights Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore related estate settlement, probate court representation, and property mutation services:
+                Explore related estate deal, probate court representation, and asset name change services:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -948,14 +948,14 @@ export default function WillDisputeLitigationPage() {
                 href="/services/letters-of-administration-lawyer"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Letters of Administration Representation</span>
+                <span>Letters of Care Representation</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/property-mutation-dakhil-kharij-service"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Property Mutation &amp; Dakhil Kharij</span>
+                <span>Asset Name Change &amp; Dakhil Kharij</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -973,13 +973,13 @@ export default function WillDisputeLitigationPage() {
                 <span>Pan-India Court Presence</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-white mb-4">
-                High Court Advocate Representation Across India
+                High Court Lawyer Representation Across India
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-gray-300 mb-4">
-                Unlike automated Will platforms that lack courtroom standing, AMA Legal Solutions is an established full-service law firm. Our senior advocates maintain active regular practice before the Supreme Court of India, Delhi High Court, Bombay High Court, Calcutta High Court, Karnataka High Court, Madras High Court, and Principal District Courts.
+                Unlike automated Will platforms that lack courtroom standing, AMA Legal Solutions is an established full-service law firm. Our senior lawyers maintain active regular practice before the Supreme Court of India, Delhi High Court, Bombay High Court, Calcutta High Court, Karnataka High Court, Madras High Court, and Principal District Courts.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-gray-300">
-                Whether you need to challenge a fabricated Will or defend your legitimate inheritance against mischievous caveats, our team delivers decisive trial advocacy, forensic document proof, and emergency civil court stays.
+                Whether you need to fight a fabricated Will or defend your legitimate estate against mischievous caveats, our team delivers decisive trial advocacy, forensic paper proof, and emergency civil court stays.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -987,14 +987,14 @@ export default function WillDisputeLitigationPage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Schedule Advocate Case Review</span>
+                <span>Schedule Lawyer Case Review</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/start"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-[0.12em] px-5 py-3.5 transition-colors text-center border border-white/15"
               >
-                <span>Draft a Dispute-Proof Will Online</span>
+                <span>Draft a Fight-Proof Will Online</span>
               </Link>
             </div>
           </div>
@@ -1006,7 +1006,7 @@ export default function WillDisputeLitigationPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -1016,12 +1016,12 @@ export default function WillDisputeLitigationPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This guide is prepared in accordance with the Indian Succession Act, 1925, the Bharatiya Sakshya Adhiniyam, 2023, the Specific Relief Act, 1963, and the Code of Civil Procedure, 1908. It is intended for informational and litigation planning purposes and does not substitute formal legal engagement.
+              This guide is prepared in accordance with the Indian Succession Act, 1925, the Bharatiya Sakshya Adhiniyam, 2023, the Specific Relief Act, 1963, and the Code of Civil Step, 1908. It is intended for informational and court fights planning purposes and does not substitute formal legal engagement.
             </p>
           </div>
           <a

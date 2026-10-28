@@ -44,56 +44,56 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Foundation: Sections 229 to 232" },
-  { id: "interactive-templates", label: "2. Interactive Legal Formats (4 Templates)" },
-  { id: "consent-vs-renunciation", label: "3. Pre-Death Consent vs Post-Death Renunciation" },
-  { id: "intermeddling-doctrine", label: "4. Intermeddling Doctrine: When Renunciation Fails" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: Sections 229 to 232" },
+  { id: "interactive-templates", label: "2. Free Legal Formats (4 Templates)" },
+  { id: "consent-vs-renunciation", label: "3. Pre-Death Consent vs Post-Death Giving Up" },
+  { id: "intermeddling-doctrine", label: "4. Intermeddling Doctrine: When Giving Up Fails" },
   { id: "comparison-table", label: "5. Legal Comparison: Transfer Mechanisms" },
-  { id: "nri-executor-protocol", label: "6. NRI Executor Renunciation Protocol" },
+  { id: "nri-executor-protocol", label: "6. NRI Executor Giving Up Protocol" },
   { id: "step-by-step-sop", label: "7. Step-by-Step SOP: Section 230 Court Filing" },
-  { id: "interactive-evaluator", label: "8. Renunciation & LOA Readiness Evaluator" },
+  { id: "interactive-evaluator", label: "8. Giving Up & LOA Readiness Evaluator" },
   { id: "real-case-studies", label: "9. Real Case Studies: Delhi, Mumbai & Bengaluru" },
-  { id: "institutional-profile", label: "10. Advocate Profile & Testamentary Verification" },
+  { id: "institutional-profile", label: "10. Lawyer Profile & Will Check" },
   { id: "frequently-asked-questions", label: "11. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "12. Statutory Citations & High Court Precedents" },
+  { id: "statutory-citations", label: "12. Legal Citations & High Court Precedents" },
 ];
 
 const FAQS = [
   {
-    q: "Can an executor refuse to act after the testator dies?",
-    a: "Yes. An individual named as executor in a Will is never legally compelled to accept the office. Under Section 230 of the Indian Succession Act, 1925, an executor may renounce executorship either orally in court before the Judge or in writing through a signed renunciation declaration.",
+    q: "Can an executor refuse to act after the Will maker dies?",
+    a: "Yes. An single named as executor in a Will is never legally compelled to accept the office. Under Section 230 of the Indian Succession Act, 1925, an executor may renounce executorship either orally in court before the Judge or in writing through a signed giving up declaration.",
   },
   {
     q: "What happens if the named executor renounces executorship?",
-    a: "When an executor formally renounces under Section 230, the court cannot grant probate to them. Instead, under Section 231 and Section 232, the residuary legatees or legal heirs can apply directly for Letters of Administration with the Will Annexed, allowing them to administer and distribute the estate.",
+    a: "When an executor formally renounces under Section 230, the court cannot grant probate to them. Instead, under Section 231 and Section 232, the residuary legatees or legal heirs can apply directly for Letters of Care with the Will Annexed, allowing them to administer and distribute the estate.",
   },
   {
     q: "Can an executor renounce after taking charge of estate assets?",
-    a: "No. Under the established legal doctrine of intermeddling (affirmed in In the Goods of Bholanath Mullick), once an executor takes control of estate assets, operates bank accounts, or acts in the administration, they have accepted the office and cannot arbitrarily renounce. In such cases, only the High Court can discharge them under Section 301 upon proper accounting.",
+    a: "No. Under the established legal doctrine of intermeddling (affirmed in In the Goods of Bholanath Mullick), once an executor takes control of estate assets, operates bank accounts, or acts in the care, they have accepted the office and cannot arbitrarily renounce. In such cases, only the High Court can discharge them under Section 301 upon proper accounting.",
   },
   {
     q: "Why is a Pre-Death Executor Consent Letter recommended during Will drafting?",
-    a: "Obtaining a written consent letter while the testator is alive confirms that the designated executor is willing and physically capable of handling the responsibility. This prevents unexpected probate delays, family disputes, and costly Section 229 court citations after the testator passes away.",
+    a: "Obtaining a written consent letter while the Will maker is alive confirms that the designated executor is willing and physically capable of handling the responsibility. This prevents unexpected probate delays, family fights, and costly Section 229 court citations after the Will maker passes away.",
   },
   {
     q: "How does an NRI executor renounce executorship from outside India?",
-    a: "An NRI or foreign resident executor must execute the Renunciation Deed before an Indian Consular Officer or have it notarized and apostilled under the Hague Apostille Convention. Upon arrival in India, the document must be stamped within 3 months under Section 18 of the Indian Stamp Act, 1899 before submission to the probate court.",
+    a: "An NRI or foreign resident executor must execute the Giving Up Deed before an Indian Consular Officer or have it notarized and apostilled under the Hague Apostille Convention. Upon arrival in India, the paper must be stamped within 3 months under Section 18 of the Indian Stamp Act, 1899 before submission to the probate court.",
   },
   {
     q: "What is a citation under Section 229 of the Indian Succession Act?",
     a: "A citation is a formal notice issued by the court to an executor who has neither applied for probate nor formally renounced. It orders the executor to accept or renounce within a fixed period. If the executor fails to appear after citation, their right is deemed forfeited under Section 231.",
   },
   {
-    q: "Does an executor renunciation need to be registered at the Sub-Registrar Office?",
-    a: "Registration at the Sub-Registrar Office is not mandatory for an executor renunciation under Section 230 ISA. However, executing the renunciation on non-judicial stamp paper attested by a public notary or filing an affidavit directly in the testamentary court is standard judicial practice across Indian High Courts and District Courts.",
+    q: "Does an executor giving up need to be filed at the SRO office?",
+    a: "Filing at the SRO office is not needed for an executor giving up under Section 230 ISA. However, signing the giving up on non-judicial stamp paper attested by a public notary or filing an sworn note directly in the Will court is standard judicial practice across Indian High Courts and District Courts.",
   },
   {
     q: "Can an executor renounce executorship in part and keep the rest?",
-    a: "No. Renunciation of executorship must be complete and unconditional. An executor cannot accept the office for personal bank deposits while renouncing responsibility for disputed real estate. A partial renunciation is invalid under Section 230 of the Indian Succession Act.",
+    a: "No. Giving Up of executorship must be complete and unconditional. An executor cannot accept the office for personal bank deposits while renouncing responsibility for disputed real estate. A partial giving up is invalid under Section 230 of the Indian Succession Act.",
   },
   {
-    q: "What stamp duty applies to an executor renunciation deed in India?",
-    a: "Stamp duty is governed by respective State Stamp Acts. Typically, an executor renunciation declaration is executed on non-judicial stamp paper of ₹100 in Maharashtra and Delhi, or ₹100 to ₹500 in Karnataka, Tamil Nadu, and Uttar Pradesh under the general article for release deeds or affidavits.",
+    q: "What stamp duty applies to an executor giving up deed in India?",
+    a: "Stamp duty is governed by respective State Stamp Acts. Typically, an executor giving up declaration is signed on non-judicial stamp paper of ₹100 in Maharashtra and Delhi, or ₹100 to ₹500 in Karnataka, Tamil Nadu, and Uttar Pradesh under the general article for release deeds or sworn notes.",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function ExecutorConsentRenunciationClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeTemplateTab, setActiveTemplateTab] = useState<number>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
@@ -145,7 +145,7 @@ export default function ExecutorConsentRenunciationClient() {
   const TEMPLATES = [
     {
       title: "Template 1: Pre-Death Executor Consent Letter (Will Drafting)",
-      subtitle: "Executed by designated executor during testator's lifetime to confirm acceptance",
+      subtitle: "Signed by designated executor during Will maker's lifetime to confirm acceptance",
       text: `FORM OF PRE-DEATH EXECUTOR CONSENT AND ACCEPTANCE LETTER
 
 To,
@@ -195,7 +195,7 @@ Aadhaar/ID: [ID Number]`,
     },
     {
       title: "Template 2: Post-Death Section 230 Renunciation Deed",
-      subtitle: "Executed on Non-Judicial Stamp Paper by executor refusing or unable to act",
+      subtitle: "Signed on Non-Judicial Stamp Paper by executor refusing or unable to act",
       text: `DEED OF FORMAL RENUNCIATION OF EXECUTORSHIP
 (PURSUANT TO SECTION 230 OF THE INDIAN SUCCESSION ACT, 1925)
 
@@ -244,7 +244,7 @@ Identified by Advocate: [Advocate Name & Enrolment No.]
     },
     {
       title: "Template 3: Affidavit of Renunciation for Probate Court",
-      subtitle: "Verified on oath for filing directly in District Court or High Court Testamentary Petition",
+      subtitle: "Checked on oath for filing directly in District Court or High Court Will Petition",
       text: `IN THE COURT OF THE PRINCIPAL DISTRICT JUDGE / HON'BLE HIGH COURT OF [NAME OF COURT]
 TESTAMENTARY AND INTESTATE JURISDICTION
 
@@ -360,7 +360,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
         icon: AlertTriangle,
         heading: "Renunciation Barred by Intermeddling Doctrine",
         summary:
-          "Because the executor has already taken custody of assets, operated bank accounts, or exercised executor authority, voluntary renunciation under Section 230 is legally barred. The beneficiaries or executor must file a formal application under Section 301 before the High Court for discharge after rendering full accounts.",
+          "Because the executor has already taken custody of assets, operated bank accounts, or exercised executor office, voluntary giving up under Section 230 is legally barred. The heirs or executor must file a formal form under Section 301 before the High Court for discharge after rendering full accounts.",
         nextSteps: [
           "Prepare formal accounts of all funds received and disbursed by the executor.",
           "File an application under Section 301 of the Indian Succession Act before the High Court.",
@@ -376,7 +376,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
         icon: CheckCircle2,
         heading: "Executor Can File for Probate Directly",
         summary:
-          "Since the executor is willing to act and has not intermeddled, no renunciation is required. The executor can directly file a Probate Petition under Section 276 of the Indian Succession Act, 1925 in the competent District Court or High Court.",
+          "Since the executor is willing to act and has not intermeddled, no giving up is required. The executor can directly file a Probate Petition under Section 276 of the Indian Succession Act, 1925 in the competent District Court or High Court.",
         nextSteps: [
           "Collect original Will, death certificate, and asset valuation certificates.",
           "File Section 276 Probate Petition supported by attesting witness affidavits.",
@@ -392,7 +392,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
         icon: Globe,
         heading: "Apostille Renunciation + Section 232 Letters of Administration",
         summary:
-          "The overseas executor must execute Template 4 before an Indian Consular Officer or obtain a Hague Apostille certificate. Upon receiving the original document in India, have it stamped within 3 months under Section 18 of the Stamp Act, then file for Letters of Administration with Will Annexed.",
+          "The overseas executor must execute Template 4 before an Indian Consular Officer or obtain a Hague Apostille paper. Upon receiving the original paper in India, have it stamped within 3 months under Section 18 of the Stamp Act, then file for Letters of Care with Will Annexed.",
         nextSteps: [
           "Send Template 4 to the NRI executor for execution at the Indian Embassy or local notary with Apostille.",
           "Receive original executed document in India via registered courier.",
@@ -408,7 +408,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
       icon: FileCheck,
       heading: "Execute Template 2 on Stamp Paper & File Under Section 232",
       summary:
-        "The domestic executor can execute Template 2 on ₹100 non-judicial stamp paper, notarized before a public notary, along with Template 3 (Court Affidavit). The residuary beneficiaries can then immediately file for Letters of Administration with Will Annexed under Section 232 without issuing citation.",
+        "The domestic executor can execute Template 2 on ₹100 non-judicial stamp paper, notarized before a public notary, along with Template 3 (Court Sworn Note). The residuary heirs can then right away file for Letters of Care with Will Annexed under Section 232 without issuing citation.",
       nextSteps: [
         "Print Template 2 on local state non-judicial stamp paper and notarize.",
         "Obtain signed Court Affidavit (Template 3) from the renouncing executor.",
@@ -441,7 +441,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
             </Link>
             <span>/</span>
             <span className="text-[#FAF7F0] font-medium truncate max-w-[240px] sm:max-w-none">
-              Executor Consent &amp; Renunciation Format
+              Executor Consent &amp; Giving Up Format
             </span>
           </nav>
 
@@ -453,13 +453,13 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Renunciation of Executorship &amp; Executor Consent Formats
+            Giving Up of Executorship &amp; Executor Consent Formats
           </h1>
 
           {/* Subtitle Paragraph (Plain English, High Intent) */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Legally vetted formats for pre-death executor acceptance and post-death Section 230
-            renunciation declarations. Enable legal heirs to secure Letters of Administration
+            giving up declarations. Enable legal heirs to secure Letters of Care
             under Section 232 without citation delays or court gridlocks.
           </p>
 
@@ -470,7 +470,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileCheck className="w-4 h-4" />
-              <span>Download Renunciation Formats</span>
+              <span>Download Giving Up Formats</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -556,11 +556,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 229, 230, 231, 232, 301 and 317 of the Indian Succession
-                Act, 1925, read with High Court Original Side Testamentary Rules and landmark
+                Act, 1925, read with High Court Original Side Will Rules and landmark
                 precedents Manekji Petit and Bholanath Mullick.
               </p>
             </div>
@@ -588,17 +588,17 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Unlocking Letters of Administration (LOA):</strong> Under Section 229,
-                    courts cannot grant administration to any beneficiary until the named executor
+                    <strong>Unlocking Letters of Care (LOA):</strong> Under Section 229,
+                    courts cannot grant care to any heir until the named executor
                     renounces or fails to respond to a court citation. A signed Section 230
-                    renunciation deed saves 6 to 12 months of citation proceedings.
+                    giving up deed saves 6 to 12 months of citation proceedings.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Intermeddling Bar:</strong> Once an executor takes charge of assets or
-                    acts in administration, renunciation is legally barred. The executor can then only
+                    acts in care, giving up is legally barred. The executor can then only
                     be discharged by the High Court under Section 301 upon complete accounting.
                   </span>
                 </li>
@@ -621,10 +621,10 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 <div className="flex items-center gap-2">
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span className="font-semibold text-slate-800">
-                    Official Statutory Formats: Sections 229, 230 &amp; 232 Indian Succession Act, 1925
+                    Official Legal Formats: Sections 229, 230 &amp; 232 Indian Succession Act, 1925
                   </span>
                 </div>
-                <span className="text-[11px] font-mono text-slate-500">Verified by Testamentary Advocates</span>
+                <span className="text-[11px] font-mono text-slate-500">Checked by Will Lawyers</span>
               </div>
             </div>
 
@@ -633,17 +633,17 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="statutory-foundation" className="space-y-4">
               <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                1. Statutory Foundation: Sections 229 to 232 Explained
+                1. Legal Foundation: Sections 229 to 232 Explained
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Appointing an executor is one of the most critical steps in drafting a valid Will in
-                India. An executor is the legal representative appointed by the testator to carry out
+                India. An executor is the legal agent appointed by the Will maker to carry out
                 their last wishes, settle debts, and distribute assets. However, life circumstances
-                change. By the time the testator passes away, the named executor may be elderly,
-                suffering from illness, living abroad as an NRI, or unwilling to face probate litigation.
+                change. By the time the Will maker passes away, the named executor may be elderly,
+                suffering from illness, living abroad as an NRI, or unwilling to face probate court fights.
               </p>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                The Indian Succession Act, 1925 provides a clear statutory framework to resolve this
+                The Indian Succession Act, 1925 provides a clear legal framework to resolve this
                 dilemma across Sections 229, 230, 231, and 232:
               </p>
 
@@ -653,11 +653,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <span className="w-6 h-6 rounded-full bg-[#C65378]/10 text-[#C65378] flex items-center justify-center text-xs font-black">
                       229
                     </span>
-                    <span>Section 229: The Mandatory Citation Rule</span>
+                    <span>Section 229: The Needed Citation Rule</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Section 229, if the named executor has not renounced executorship, the court
-                    cannot grant Letters of Administration to any other person until a formal citation
+                    cannot grant Letters of Care to any other person until a formal citation
                     has been issued calling upon the executor to accept or renounce the office.
                   </p>
                 </div>
@@ -667,10 +667,10 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <span className="w-6 h-6 rounded-full bg-[#C65378]/10 text-[#C65378] flex items-center justify-center text-xs font-black">
                       230
                     </span>
-                    <span>Section 230: Mode and Finality of Renunciation</span>
+                    <span>Section 230: Mode and Finality of Giving Up</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Renunciation may be made orally in the presence of the Judge or by a writing signed
+                    Giving Up may be made orally in the presence of the Judge or by a writing signed
                     by the executor. Once completed, Section 230 permanently bars the person from ever
                     again applying for probate of that Will.
                   </p>
@@ -681,11 +681,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <span className="w-6 h-6 rounded-full bg-[#C65378]/10 text-[#C65378] flex items-center justify-center text-xs font-black">
                       231
                     </span>
-                    <span>Section 231: Administration on Failure to Accept</span>
+                    <span>Section 231: Care on Failure to Accept</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     If an executor renounces, or fails to accept executorship within the time allowed by
-                    the citation, the Will is proved and Letters of Administration are granted to the
+                    the citation, the Will is proved and Letters of Care are granted to the
                     person entitled in case of intestacy.
                   </p>
                 </div>
@@ -699,8 +699,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     When an executor renounces under Section 230, the universal or residuary legatee can
-                    step forward and obtain Letters of Administration with the Will Annexed, enabling
-                    immediate estate transmission.
+                    step forward and obtain Letters of Care with the Will Annexed, enabling
+                    immediate estate transfer.
                   </p>
                 </div>
               </div>
@@ -712,7 +712,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
             <section id="interactive-templates" className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                  2. Interactive Legal Formats: Consent &amp; Renunciation
+                  2. Free Legal Formats: Consent &amp; Giving Up
                 </h3>
                 <div className="flex items-center gap-2">
                   <button
@@ -736,7 +736,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Select between the four standard formats below. Each template has been vetted by
-                testamentary advocates to ensure compliance with High Court Original Side Rules and
+                Will lawyers to ensure compliance with High Court Original Side Rules and
                 the Indian Succession Act, 1925.
               </p>
 
@@ -805,16 +805,16 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="consent-vs-renunciation" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                3. Pre-Death Consent Letter vs Post-Death Renunciation
+                3. Pre-Death Consent Letter vs Post-Death Giving Up
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Many testators make the grave mistake of naming an executor without ever asking them.
-                When the testator dies, the surprised executor frequently ignores court notices or
+                Many Will makers make the grave mistake of naming an executor without ever asking them.
+                When the Will maker dies, the surprised executor frequently ignores court notices or
                 flatly refuses to get involved. This puts the entire family in legal deadlock.
               </p>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Understanding the critical differences between a Pre-Death Executor Consent Letter and
-                a Post-Death Section 230 Renunciation prevents months of avoidable litigation:
+                a Post-Death Section 230 Giving Up prevents months of avoidable court fights:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -827,7 +827,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <li className="flex items-start gap-1.5">
                       <span className="text-[#C65378] font-bold">•</span>
                       <span>
-                        <strong>Timing:</strong> Executed while the testator is alive and drafting the Will.
+                        <strong>Timing:</strong> Signed while the Will maker is alive and drafting the Will.
                       </span>
                     </li>
                     <li className="flex items-start gap-1.5">
@@ -841,8 +841,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                       <span className="text-[#C65378] font-bold">•</span>
                       <span>
                         <strong>Legal Effect:</strong> While not legally binding to force post-death
-                        action, it eliminates disputes regarding forged executor appointments and
-                        proves genuine testamentary capacity.
+                        action, it eliminates fights regarding forged executor appointments and
+                        proves genuine Will capacity.
                       </span>
                     </li>
                     <li className="flex items-start gap-1.5">
@@ -858,13 +858,13 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
                   <div className="flex items-center gap-2 text-sm font-bold text-[#172228]">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Post-Death Section 230 Renunciation</span>
+                    <span>Post-Death Section 230 Giving Up</span>
                   </div>
                   <ul className="text-xs text-slate-600 space-y-2 leading-relaxed">
                     <li className="flex items-start gap-1.5">
                       <span className="text-[#C65378] font-bold">•</span>
                       <span>
-                        <strong>Timing:</strong> Executed only after the testator has passed away.
+                        <strong>Timing:</strong> Signed only after the Will maker has passed away.
                       </span>
                     </li>
                     <li className="flex items-start gap-1.5">
@@ -877,15 +877,15 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <li className="flex items-start gap-1.5">
                       <span className="text-[#C65378] font-bold">•</span>
                       <span>
-                        <strong>Legal Effect:</strong> Conclusive and permanent under Section 230.
-                        Immediately allows the court to grant Letters of Administration under Section
+                        <strong>Legal Effect:</strong> Strong and permanent under Section 230.
+                        Right away allows the court to grant Letters of Care under Section
                         232 without issuing citation notices under Section 229.
                       </span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-[#C65378] font-bold">•</span>
                       <span>
-                        <strong>Filing:</strong> Submitted directly to the testamentary court or
+                        <strong>Filing:</strong> Submitted directly to the Will court or
                         notarized on stamp paper.
                       </span>
                     </li>
@@ -903,7 +903,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     Need to know what an executor must accomplish after demise?
                   </div>
                   <p className="text-xs text-slate-600">
-                    Use our interactive 90-day executor timeline tool to see all statutory deadlines
+                    Use our free 90-day executor timeline tool to see all legal deadlines
                     under Section 317 ISA.
                   </p>
                 </div>
@@ -922,12 +922,12 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="intermeddling-doctrine" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                4. The Doctrine of Intermeddling: When Renunciation Fails
+                4. The Doctrine of Intermeddling: When Giving Up Fails
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 A common misconception is that an executor can step in, operate the deceased person&apos;s
-                bank accounts, collect rent, or sell some shares, and then simply sign a renunciation
-                deed when disputes arise. Under Indian law, this is strictly prohibited.
+                bank accounts, collect rent, or sell some shares, and then simply sign a giving up
+                deed when fights arise. Under Indian law, this is strictly prohibited.
               </p>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Under the landmark ruling of the Calcutta High Court in{" "}
@@ -944,23 +944,23 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 </div>
                 <p className="text-xs sm:text-sm text-amber-950 leading-relaxed">
                   If an executor performs any act that can only be done in the capacity of an
-                  executor (such as taking possession of estate property, operating locker facilities,
+                  executor (such as taking possession of estate asset, operating locker facilities,
                   paying estate debts, or collecting rents), the law deems that the executor has
-                  accepted the office. Once accepted, voluntary renunciation under Section 230 is
+                  accepted the office. Once accepted, voluntary giving up under Section 230 is
                   extinguished!
                 </p>
                 <div className="text-xs text-amber-900 bg-white/70 p-3 rounded-lg border border-amber-200">
                   <strong>The Sole Legal Remedy:</strong> An intermeddling executor who wishes to step
                   down cannot use a renunciation letter. They must file a formal application under{" "}
                   <strong>Section 301 of the Indian Succession Act, 1925</strong> before the High
-                  Court, submit verified accounts of every rupee handled under Section 317, and seek
+                  Court, submit checked accounts of every rupee handled under Section 317, and seek
                   formal discharge by court order.
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
-                  <span className="font-bold text-emerald-700">Permitted Pre-Renunciation Acts:</span>
+                  <span className="font-bold text-emerald-700">Permitted Pre-Giving Up Acts:</span>
                   <p className="text-slate-600 leading-relaxed">
                     Paying emergency funeral expenses out of pocket, securing the deceased&apos;s locked
                     home from vandalism, or feeding domestic pets. These humanitarian acts do NOT
@@ -970,9 +970,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
                   <span className="font-bold text-rose-700">Prohibited Intermeddling Acts:</span>
                   <p className="text-slate-600 leading-relaxed">
-                    Withdrawing fixed deposits, transferring company shares, selling movable assets,
+                    Withdrawing fixed deposits, transferring company shares, selling cash assets,
                     issuing tenancy eviction notices, or distributing jewelry to heirs. These bar
-                    voluntary renunciation.
+                    voluntary giving up.
                   </p>
                 </div>
               </div>
@@ -987,7 +987,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 When an executor cannot or will not fulfill their duties, multiple legal pathways exist
-                under the Indian Succession Act. The table below compares their procedure, cost, and
+                under the Indian Succession Act. The table below compares their step, cost, and
                 timeline:
               </p>
 
@@ -1006,7 +1006,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     <tbody className="divide-y divide-slate-100 text-slate-700">
                       <tr className="hover:bg-slate-50/80">
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">
-                          Voluntary Renunciation
+                          Voluntary Giving Up
                         </td>
                         <td className="p-3.5 sm:p-4">Section 230 ISA</td>
                         <td className="p-3.5 sm:p-4">
@@ -1015,7 +1015,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">
                           No (Dispensed with)
                         </td>
-                        <td className="p-3.5 sm:p-4">Letters of Administration (Sec 232)</td>
+                        <td className="p-3.5 sm:p-4">Letters of Care (Sec 232)</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80 bg-slate-50/30">
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">
@@ -1026,9 +1026,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                           Executor non-responsive or refuses to sign deed
                         </td>
                         <td className="p-3.5 sm:p-4 text-rose-700 font-bold">
-                          Yes (Mandatory notice)
+                          Yes (Needed notice)
                         </td>
-                        <td className="p-3.5 sm:p-4">Letters of Administration after default</td>
+                        <td className="p-3.5 sm:p-4">Letters of Care after default</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">
@@ -1039,14 +1039,14 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                           Executor intermeddled or committed breach of trust
                         </td>
                         <td className="p-3.5 sm:p-4">Yes (Notice to all parties)</td>
-                        <td className="p-3.5 sm:p-4">Successor Administrator or Court Receiver</td>
+                        <td className="p-3.5 sm:p-4">Successor Head or Court Receiver</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80 bg-slate-50/30">
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">
                           Lifetime Codicil
                         </td>
                         <td className="p-3.5 sm:p-4">Section 62 ISA</td>
-                        <td className="p-3.5 sm:p-4">Testator is alive and replaces the executor</td>
+                        <td className="p-3.5 sm:p-4">Will maker is alive and replaces the executor</td>
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">
                           No Court Needed
                         </td>
@@ -1063,7 +1063,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="nri-executor-protocol" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                6. NRI &amp; Foreign Executor Renunciation Protocol: Form 10
+                6. NRI &amp; Foreign Executor Giving Up Protocol: Form 10
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 With millions of global Indians living in the United States, United Kingdom, Canada,
@@ -1072,8 +1072,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 every court hearing.
               </p>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                To execute a valid renunciation from abroad without traveling to India, follow this
-                strict statutory protocol:
+                To execute a valid giving up from abroad without traveling to India, follow this
+                strict legal protocol:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1082,12 +1082,12 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     01
                   </div>
                   <h3 className="text-xs sm:text-sm font-bold text-[#172228]">
-                    Consular Attestation or Hague Apostille
+                    Consular Witness Signing or Hague Apostille
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The overseas executor signs Template 4 before an Indian Consular Officer at the
                     Embassy or Consulate, or before a local public notary followed by a Hague
-                    Apostille certificate.
+                    Apostille paper.
                   </p>
                 </div>
 
@@ -1099,8 +1099,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     Dispatch Original via Secure Courier
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The physically signed original apostilled document is couriered to the residuary
-                    beneficiary or testamentary advocate in India. Scanned or PDF copies cannot be
+                    The physically signed original apostilled paper is couriered to the residuary
+                    heir or Will lawyer in India. Scanned or PDF copies cannot be
                     adjudicated for stamp duty.
                   </p>
                 </div>
@@ -1113,7 +1113,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     Section 18 Stamp Adjudication (90 Days)
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 18 of the Indian Stamp Act, 1899, any instrument executed out of
+                    Under Section 18 of the Indian Stamp Act, 1899, any instrument signed out of
                     India must be stamped within 3 months of its first arrival in India. Pay the stamp
                     duty at the Collector of Stamps before court filing.
                   </p>
@@ -1129,8 +1129,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 7. Step-by-Step SOP: Section 230 Court Filing Protocol
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Follow this 5-stage standard operating procedure to transition from an unwilling
-                executor to obtaining Letters of Administration smoothly:
+                Follow this 5-stage standard operating step to transition from an unwilling
+                executor to obtaining Letters of Care smoothly:
               </p>
 
               <div className="space-y-3">
@@ -1144,8 +1144,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Confirm that the designated executor has not touched bank accounts, collected
-                      rents, or claimed assets. Provide them with Template 2 (Renunciation Deed) and
-                      Template 3 (Court Affidavit).
+                      rents, or claimed assets. Provide them with Template 2 (Giving Up Deed) and
+                      Template 3 (Court Sworn Note).
                     </p>
                   </div>
                 </div>
@@ -1156,11 +1156,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-bold text-[#172228]">
-                      Execution on Non-Judicial Stamp Paper
+                      Signing on Non-Judicial Stamp Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print the Renunciation Deed on appropriate State Non-Judicial Stamp Paper (₹100
-                      in Delhi/Maharashtra). The executor signs before an advocate or public notary with
+                      Print the Giving Up Deed on appropriate State Non-Judicial Stamp Paper (₹100
+                      in Delhi/Maharashtra). The executor signs before an lawyer or public notary with
                       two independent witnesses.
                     </p>
                   </div>
@@ -1172,12 +1172,12 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-bold text-[#172228]">
-                      Drafting Petition for Letters of Administration (Section 232)
+                      Drafting Petition for Letters of Care (Section 232)
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The residuary legatee drafts the petition for Letters of Administration with Will
+                      The residuary legatee drafts the petition for Letters of Care with Will
                       Annexed, naming the renouncing executor as a pro-forma respondent and annexing the
-                      original Renunciation Deed and Death Certificate.
+                      original Giving Up Deed and Death Paper.
                     </p>
                   </div>
                 </div>
@@ -1188,11 +1188,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-bold text-[#172228]">
-                      Testamentary Court Hearing &amp; Citation Dispensation
+                      Will Court Hearing &amp; Citation Dispensation
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      At the initial hearing, your advocate presents the Section 230 Renunciation Deed.
-                      The Judge records the renunciation on file and formally dispenses with issuing
+                      At the initial hearing, your lawyer presents the Section 230 Giving Up Deed.
+                      The Judge records the giving up on file and formally dispenses with issuing
                       notice or citation under Section 229, saving 6 months of process.
                     </p>
                   </div>
@@ -1204,11 +1204,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-bold text-[#172228]">
-                      Issuance of Letters of Administration &amp; Property Mutation
+                      Issuance of Letters of Care &amp; Asset Name Change
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       After publication of general notices in newspapers and expiry of the objection
-                      period, the court grants Letters of Administration to the beneficiary, who can
+                      period, the court grants Letters of Care to the heir, who can
                       then mutate land, transfer demat shares, and claim bank deposits.
                     </p>
                   </div>
@@ -1221,11 +1221,11 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="interactive-evaluator" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                8. Interactive Renunciation &amp; LOA Readiness Evaluator
+                8. Free Giving Up &amp; LOA Readiness Evaluator
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Use this diagnostic tool to evaluate your executor scenario and determine the exact
-                legal documentation, court citations, and procedural route required:
+                legal papers, court citations, and procedural route required:
               </p>
 
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-6">
@@ -1241,7 +1241,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                       onChange={(e) => setEvaluatorWillingness(e.target.value)}
                       className="w-full p-2.5 rounded-lg border border-slate-300 text-xs text-slate-800 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-[#C65378]/20 focus:outline-hidden"
                     >
-                      <option value="unwilling">Unwilling or Unable to Act (Renunciation)</option>
+                      <option value="unwilling">Unwilling or Unable to Act (Giving Up)</option>
                       <option value="willing">Willing to Act as Executor (File Probate)</option>
                       <option value="unresponsive">Unresponsive / Cannot Be Contacted</option>
                     </select>
@@ -1276,7 +1276,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                       className="w-full p-2.5 rounded-lg border border-slate-300 text-xs text-slate-800 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-[#C65378]/20 focus:outline-hidden"
                     >
                       <option value="no">No, zero assets touched or handled</option>
-                      <option value="yes">Yes, operated accounts or sold property (Intermeddled)</option>
+                      <option value="yes">Yes, operated accounts or sold asset (Intermeddled)</option>
                     </select>
                   </div>
 
@@ -1340,7 +1340,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 9. Real Case Studies: Delhi, Mumbai and Bengaluru Estates
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Practical insights from real estate administration challenges handled across Indian
+                Practical insights from real estate care fights handled across Indian
                 courts:
               </p>
 
@@ -1354,9 +1354,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     NRI Son in California Renounces for Resident Sister
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testator named NRI elder son as sole executor. Probate would take 18 months due to
-                    consular citations. Son executed Template 4 before San Francisco Indian Consulate.
-                    Sister secured Letters of Administration within 4 months under Section 232.
+                    Will maker named NRI elder son as sole executor. Probate would take 18 months due to
+                    consular citations. Son signed Template 4 before San Francisco Indian Consulate.
+                    Sister secured Letters of Care within 4 months under Section 232.
                   </p>
                 </div>
 
@@ -1369,9 +1369,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     Joint Executor Deadlock in South Mumbai Flat
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Two family chartered accountants named joint executors disagreed on succession
-                    strategy. One signed a Section 230 Renunciation Deed. The remaining executor
-                    obtained sole probate without delay under Section 224 of the Succession Act.
+                    Two family chartered accountants named joint executors disagreed on estate
+                    strategy. One signed a Section 230 Giving Up Deed. The remaining executor
+                    obtained sole probate without delay under Section 224 of the Estate Act.
                   </p>
                 </div>
 
@@ -1384,8 +1384,8 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     Elderly Uncle (82) Renounces Due to Medical Condition
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Uncle named in 2011 Will had suffered stroke. Advocate drafted Section 230 court
-                    declaration executed at home with notary. Dispensation granted under Section 229,
+                    Uncle named in 2011 Will had suffered stroke. Lawyer drafted Section 230 court
+                    declaration signed at home with notary. Dispensation granted under Section 229,
                     allowing grandson to inherit startup shares seamlessly.
                   </p>
                 </div>
@@ -1397,7 +1397,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="institutional-profile" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                10. Testamentary Defense &amp; Legal Advocate Verification
+                10. Will Defense &amp; Legal Lawyer Check
               </h3>
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -1406,26 +1406,26 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-[#172228]">
-                      AMA Legal Solutions Testamentary Law Practice
+                      AMA Legal Solutions Will Law Practice
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Senior Succession &amp; Probate Advocates • High Court of Delhi &amp; Pan-India
+                      Senior Estate &amp; Probate Lawyers • High Court of Delhi &amp; Pan-India
                     </p>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Every legal template, citation analysis, and procedure on this page has been
-                  structured in strict adherence to High Court Original Side Testamentary Rules, the
+                  Every legal template, citation analysis, and step on this page has been
+                  structured in strict adherence to High Court Original Side Will Rules, the
                   Indian Succession Act, 1925, and established common law standards. We represent
-                  beneficiaries, executors, and NRIs facing probate deadlock, citation defaults, and
-                  disputed succession petitions.
+                  heirs, executors, and NRIs facing probate deadlock, citation defaults, and
+                  disputed estate petitions.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-1 text-[11px] font-semibold text-slate-600">
                   <span className="px-2.5 py-1 rounded-md bg-slate-100">
                     ✓ High Court Probate &amp; LOA Litigators
                   </span>
                   <span className="px-2.5 py-1 rounded-md bg-slate-100">
-                    ✓ Section 230 &amp; 301 Succession Petitions
+                    ✓ Section 230 &amp; 301 Estate Petitions
                   </span>
                   <span className="px-2.5 py-1 rounded-md bg-slate-100">
                     ✓ Cross-Border NRI Hague Apostille Advisory
@@ -1439,10 +1439,10 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="frequently-asked-questions" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                11. Frequently Asked Questions: Executor Renunciation
+                11. Frequently Asked Questions: Executor Giving Up
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Clear answers to common questions regarding Section 230 renunciation and executor
+                Clear answers to common questions regarding Section 230 giving up and executor
                 responsibilities in India:
               </p>
 
@@ -1481,23 +1481,23 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="statutory-citations" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
-                12. Statutory Citations &amp; High Court Precedent Index
+                12. Legal Citations &amp; High Court Precedent Index
               </h3>
               <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3 text-xs text-slate-600">
                 <div className="font-bold text-slate-800 text-xs sm:text-sm">
-                  Primary Statutory Authorities &amp; Case Precedents:
+                  Primary Legal Offices &amp; Case Precedents:
                 </div>
                 <ul className="space-y-1.5 list-disc list-inside">
                   <li>
                     <strong>Indian Succession Act, 1925:</strong> Sections 222 (Probate only to
                     appointed executor), 224 (Grant to several executors), 229 (Grant where executor
-                    renounced or failed after citation), 230 (Form and effect of renunciation), 231
-                    (Procedure where executor renounces), 232 (Administration to residuary
+                    renounced or failed after citation), 230 (Form and effect of giving up), 231
+                    (Step where executor renounces), 232 (Care to residuary
                     legatee), 301 (Removal of executor by High Court), 317 (Inventory and accounts).
                   </li>
                   <li>
                     <strong>Indian Stamp Act, 1899:</strong> Section 18 (Stamping of instruments
-                    executed out of India within 3 months of first arrival in India).
+                    signed out of India within 3 months of first arrival in India).
                   </li>
                   <li>
                     <strong>High Court of Bombay:</strong> <em>Manekji Petit v. Adambhai (1903)</em>{" "}
@@ -1510,14 +1510,36 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                     under Section 301).
                   </li>
                   <li>
-                    <strong>Hague Convention Abolishing the Requirement of Legalisation:</strong>{" "}
+                    <strong>Hague Convention Abolishing the Rule of Legalisation:</strong>{" "}
                     Apostille certification of overseas affidavits for production before Indian civil
                     courts.
                   </li>
                 </ul>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY CONVERSION & TRUST SIDEBAR
@@ -1535,14 +1557,14 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 </h3>
                 <p className="text-xs text-white/80 mt-1 leading-relaxed">
                   Designate substitute executors automatically if your first choice cannot act.
-                  Generate a challenge-proof Indian Will online in 15 minutes.
+                  Generate a fight-proof Indian Will online in 15 minutes.
                 </p>
               </div>
               <button
                 onClick={handleStartDraft}
                 className="w-full py-2.5 px-4 rounded-xl bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs transition-transform hover:-translate-y-0.5 shadow-sm flex items-center justify-center gap-1.5"
               >
-                <span>Draft Challenge-Proof Will</span>
+                <span>Draft Fight-Proof Will</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -1554,28 +1576,28 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 <span>Unwilling Executor or Probate Delay?</span>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                If an executor is untraceable or refusing to sign Section 230 renunciation, our senior
-                testamentary advocates issue Section 229 court citations and file for Letters of
-                Administration under Section 232.
+                If an executor is untraceable or refusing to sign Section 230 giving up, our senior
+                Will lawyers issue Section 229 court citations and file for Letters of
+                Care under Section 232.
               </p>
               <div className="space-y-1.5 pt-1">
                 <Link
                   href="/services/probate-lawyer"
                   className="block text-center py-2 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors"
                 >
-                  Consult Probate Advocate
+                  Consult Probate Lawyer
                 </Link>
                 <Link
                   href="/services/letters-of-administration-lawyer"
                   className="block text-center py-2 px-3 rounded-lg border border-slate-300 hover:border-slate-400 text-slate-700 text-xs font-semibold transition-colors"
                 >
-                  Letters of Administration (LOA) Support
+                  Letters of Care (LOA) Support
                 </Link>
                 <Link
                   href="/contact"
                   className="block text-center py-2 px-3 rounded-lg text-rose-700 hover:text-rose-800 text-xs font-bold transition-colors"
                 >
-                  Schedule Advocate Consultation →
+                  Schedule Lawyer Talk →
                 </Link>
               </div>
             </div>
@@ -1598,7 +1620,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
               <ul className="space-y-1.5 text-slate-600 text-[11px]">
                 <li className="flex items-start gap-1.5">
                   <Check className="w-3 h-3 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Certified Death Certificate of Testator</span>
+                  <span>Certified Death Paper of Will maker</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <Check className="w-3 h-3 text-emerald-600 shrink-0 mt-0.5" />
@@ -1606,7 +1628,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 </li>
                 <li className="flex items-start gap-1.5">
                   <Check className="w-3 h-3 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Renunciation Deed on Non-Judicial Stamp Paper</span>
+                  <span>Giving Up Deed on Non-Judicial Stamp Paper</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <Check className="w-3 h-3 text-emerald-600 shrink-0 mt-0.5" />
@@ -1639,25 +1661,25 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                   href="/tools/probate-court-fee-timeline-calculator"
                   className="block p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium transition-colors"
                 >
-                  → Probate Court Fee Calculator
+                  → Probate Court Fee Tool
                 </Link>
                 <Link
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="block p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium transition-colors"
                 >
-                  → Inherited Property Capital Gains Calculator
+                  → Inherited Asset Capital Gains Tool
                 </Link>
                 <Link
                   href="/services/will-registration"
                   className="block p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium transition-colors"
                 >
-                  → Sub-Registrar Will Registration Service
+                  → SRO Will Filing Service
                 </Link>
                 <Link
                   href="/templates"
                   className="block p-2 rounded-lg bg-rose-50 text-[#C65378] font-bold transition-colors"
                 >
-                  → Browse All Legal Succession Templates
+                  → Browse All Legal Estate Templates
                 </Link>
               </div>
             </div>

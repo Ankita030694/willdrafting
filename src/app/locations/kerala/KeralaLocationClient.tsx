@@ -125,7 +125,7 @@ const KERALA_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Print on plain white A4 sheets. Under Kerala law, stamp paper is not needed for a Will.",
     checked: true,
   },
@@ -315,7 +315,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Kerala Legal &amp; NRI Estate Succession Blueprint
+                  Kerala Legal &amp; NRI Estate Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -360,7 +360,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rule
@@ -501,16 +501,16 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>KERALA QUICK GUIDE</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Kerala
+                  Key Highlights: Will Making &amp; Filing in Kerala
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Filing a Will at the SRO is optional under Section 18(e) of the Registration Act, 1908. While a Will signed on plain paper before two witnesses is valid, Book III SRO filing on the PEARLS portal gives strong proof against family fights.
+                      Filing a Will at the SRO is a choice under Section 18(e) of the Filing Act, 1908. While a Will signed on plain paper before two witnesses is valid, Book III SRO filing on the PEARLS portal gives strong proof against family fights.
                     </p>
                   </div>
 
@@ -520,7 +520,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                       <span>No Court Probate Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Kerala is a non-presidency state under the Kerala High Court. Under Section 213 of the Indian Succession Act, court probate is not required in Kerala, letting heirs complete direct title transfers and Pokkuvaravu with a registered Will.
+                      Kerala is a non-presidency state under the Kerala High Court. Under Section 213 of the Indian Succession Act, court probate is not required in Kerala, letting heirs complete direct title transfers and Pokkuvaravu with a filed Will.
                     </p>
                   </div>
 
@@ -540,7 +540,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                       <span>Thandapper &amp; Pokkuvaravu</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will speeds up Thandapper account transfers and Pokkuvaravu (name change) at local Village Offices under the Kerala Transfer of Registry Rules, 1966, without a slow court case.
+                      A filed Will speeds up Thandapper account transfers and Pokkuvaravu (name change) at local Village Offices under the Kerala Transfer of Registry Rules, 1966, without a slow court case.
                     </p>
                   </div>
                 </div>
@@ -574,10 +574,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Kerala
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a Will in Kerala follows the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and state land rules like the <strong>Kerala Transfer of Registry Rules, 1966</strong>. Any adult of sound mind can pass self-earned homes, family land, and bank funds to chosen heirs without legal limits.
+                  Making a Will in Kerala follows the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and state land rules like the <strong>Kerala Transfer of Registry Rules, 1966</strong>. Any adult of sound mind can pass self-earned homes, family land, and bank funds to chosen heirs without legal limits.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kerala has unique family laws. After the landmark Supreme Court ruling in <em>Mary Roy v. State of Kerala (1986)</em>, Christian succession in Kerala follows Part V of the Indian Succession Act, giving equal rights to daughters and sons. For Hindu families, the <em>Kerala Joint Hindu Family System (Abolition) Act, 1975</em> ended the old joint birthright system and turned family land into clear personal shares. A well-written Will make sures smooth transfers across flats in Kochi, villas in Trivandrum, and spice farms in Central Travancore.
+                  Kerala has unique family laws. After the landmark Supreme Court ruling in <em>Mary Roy v. State of Kerala (1986)</em>, Christian estate in Kerala follows Part V of the Indian Succession Act, giving equal rights to daughters and sons. For Hindu families, the <em>Kerala Joint Hindu Family System (Abolition) Act, 1975</em> ended the old joint birthright system and turned family land into clear personal shares. A well-written Will make sures smooth transfers across flats in Kochi, villas in Trivandrum, and spice farms in Central Travancore.
                 </p>
               </div>
 
@@ -632,10 +632,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>FILING RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Kerala?
+                  2. Is Will Filing Needed in Kerala?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, filing a Will at the SRO is <strong>optional</strong>. An unregistered Will signed on plain white paper before two witnesses is valid and accepted by law.
+                  Under Section 18(e) of the Filing Act, 1908, filing a Will at the SRO is <strong>a choice</strong>. An plain Will signed on plain white paper before two witnesses is valid and accepted by law.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Still, with many Kerala families living abroad and land values rising across towns and coastal belts, senior lawyers strongly advise filing your Will on the PEARLS portal. Book III SRO filing keeps the sealed copy in state hands, stops fake signature claims, and speeds up Pokkuvaravu with Village Officers and city offices.
@@ -648,8 +648,8 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Feature</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Kerala PEARLS SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Kerala PEARLS SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -699,10 +699,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   3. Kerala Probate Law: High Court Exemption Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Many Kerala land owners and Gulf NRIs ask if court probate from the Kerala High Court or District Court is required by law before heirs can claim property. The clear legal answer is <strong>no</strong>.
+                  Many Kerala land owners and Gulf NRIs ask if court probate from the Kerala High Court or District Court is required by law before heirs can claim asset. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is required only for Wills signed inside or covering property in the old presidency cities of Mumbai, Kolkata, and Chennai. Kerala is a non-presidency state. The Kerala High Court has ruled again and again that probate is optional for Hindu, Christian, Muslim, Buddhist, Sikh, and Jain Wills signed in Kerala.
+                  Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is required only for Wills signed inside or covering asset in the old presidency cities of Mumbai, Kolkata, and Chennai. Kerala is a non-presidency state. The Kerala High Court has ruled again and again that probate is a choice for Hindu, Christian, Muslim, Buddhist, Sikh, and Jain Wills signed in Kerala.
                 </p>
               </div>
 
@@ -725,13 +725,13 @@ export default function KeralaLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Optional Filing: Family Fights
+                    A Choice Filing: Family Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Kerala District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may choose to file for probate before the District Court in Ernakulam, Trivandrum, or Kozhikode only if relatives file a land suit or challenge the owner&apos;s sound mind. A court probate order settles the title once and for all.
+                    An executor may choose to file for probate before the District Court in Ernakulam, Trivandrum, or Kozhikode only if relatives file a land suit or fight the owner&apos;s sound mind. A court probate order settles the title once and for all.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -752,7 +752,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   4. Kerala SRO offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kerala operates over 300 SRO offices across 14 revenue districts under the Registration Department, Government of Kerala. Under Section 32 of the Registration Act, 1908, your Will can be registered at the SRO office having area over your permanent residence or where any parcel of your land and flats is situated.
+                  Kerala operates over 300 SRO offices across 14 revenue districts under the Filing Office, Government of Kerala. Under Section 32 of the Filing Act, 1908, your Will can be filed at the SRO office having area over your permanent residence or where any parcel of your land and flats is situated.
                 </p>
               </div>
 
@@ -803,7 +803,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Kerala Registration Department
+                        Kerala Filing Office
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -856,7 +856,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting Across Kerala
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kerala possesses diverse regional wealth profiles, from maritime commerce and IT penthouses in Kochi to office estates in Trivandrum, trading enterprises in Calicut, and sprawling spice plantations in Central Travancore. Our legal team provides customized drafting, PEARLS portal slot scheduling, and Sub-Registrar accompaniment across all primary regional cities:
+                  Kerala possesses diverse regional wealth profiles, from maritime commerce and IT penthouses in Kochi to office estates in Trivandrum, trading enterprises in Calicut, and sprawling spice plantations in Central Travancore. Our legal team provides customized drafting, PEARLS portal slot scheduling, and SRO accompaniment across all primary regional cities:
                 </p>
               </div>
 
@@ -995,7 +995,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Kozhikode</strong> for prominent trading business houses, timber and export enterprises, and Gulf Malayali families. Structures bequests compliant with secular and Muslim succession norms, preventing title clouding on prime shop land.
+                      Full <strong>Will drafting services in Kozhikode</strong> for prominent trading business houses, timber and export enterprises, and Gulf Malayali families. Structures bequests compliant with secular and Muslim estate norms, preventing title clouding on prime shop land.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1004,7 +1004,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Civil Station, Wayanad Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Seamless PEARLS signing, Calicut Corporation name change help, and cross-border Gulf estate harmonization.
+                        Seamless PEARLS signing, Calicut City Board name change help, and cross-border Gulf estate harmonization.
                       </p>
                     </div>
                   </div>
@@ -1049,7 +1049,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Thrissur</strong> for gold jewellery merchants, private bankers, and NRI property investors. Features clear asset inventory schedules for physical gold sovereigns, bank locker access, shop showrooms, and family temple-town assets.
+                      Tailored <strong>Will drafting services in Thrissur</strong> for gold jewellery merchants, private bankers, and NRI asset investors. Features clear asset inventory schedules for physical gold sovereigns, bank locker access, shop showrooms, and family temple-town assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1103,7 +1103,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Kollam</strong> for cashew processing entrepreneurs, seafood exporters, and backwater resort assets. Formulates succession plans that secure shop operational continuity and resolve multi-heir coastal land partitions.
+                      Dedicated <strong>Will drafting services in Kollam</strong> for cashew processing entrepreneurs, seafood exporters, and backwater resort assets. Formulates estate plans that secure shop operational continuity and resolve multi-heir coastal land partitions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1157,7 +1157,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Kannur</strong> and Thalassery for Gulf non-resident Malayalis and handloom business proprietors. Resolves Marumakkathayam family property split legacies and make sures clean title transfer of independent houses and airport-belt shop plots.
+                      Expert <strong>Will drafting services in Kannur</strong> and Thalassery for Gulf non-resident Malayalis and handloom business proprietors. Resolves Marumakkathayam family asset split legacies and make sures clean title transfer of independent houses and airport-belt shop plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1220,7 +1220,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Civil Station, Collectorate, Kottayam &amp; Pala SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Christian succession compliance, estate inventory mapping, and Thandapper name change support.
+                        Christian estate compliance, estate inventory mapping, and Thandapper name change support.
                       </p>
                     </div>
                   </div>
@@ -1245,7 +1245,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Building className="w-3.5 h-3.5" />
-                        Agro-Industrial &amp; Granary Belt
+                        Agro-Plant &amp; Granary Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Palakkad &amp; Chittur
@@ -1259,13 +1259,13 @@ export default function KeralaLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Palakkad Town</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ottapalam</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kanjikode Industrial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kanjikode Plant</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Chittur</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Alathur</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Palakkad</strong> for farm paddy landholders, family agraharam assets, and Kanjikode industrial manufacturing units. Ensures seamless revenue record transitions under the Kerala Land Reforms Act and state revenue rules.
+                      Customized <strong>Will drafting services in Palakkad</strong> for farm paddy landholders, family agraharam assets, and Kanjikode plant manufacturing units. Ensures seamless revenue record transitions under the Kerala Land Reforms Act and state revenue rules.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1280,7 +1280,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Paddy Land &amp; Industrial Units</span>
+                    <span className="text-xs font-bold text-slate-500">Paddy Land &amp; Plant Units</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1303,7 +1303,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP GUIDE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to PEARLS Portal Registration
+                  6. Step-by-Step SOP: Drafting to PEARLS Portal Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this clear 5-step process to write, sign, and record your Will before the SRO in Kerala:
@@ -1391,10 +1391,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>HOME VISIT FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior, unwell, or bedridden owners living across Kochi, Trivandrum, Kozhikode, or family tharavads, a trip to the SRO desk can be hard. Under <strong>Section 31 of the Registration Act, 1908</strong>, the SRO officer has the legal right to visit a private home, care home, or hospital room to record a Will.
+                  For senior, unwell, or bedridden owners living across Kochi, Trivandrum, Kozhikode, or family tharavads, a trip to the SRO desk can be hard. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO officer has the legal right to visit a private home, care home, or hospital room to record a Will.
                 </p>
               </div>
 
@@ -1446,7 +1446,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>PAPER CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Kerala SRO offices
+                  8. Paper Checklist for Kerala SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Keep your papers ready before you book your SRO slot. You have checked <strong>{checkedCount} of {checklist.length}</strong> needed items:
@@ -1496,10 +1496,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>LAND AND HOMES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Kerala Property Types: Urban Flats, Farmland &amp; Gulf Assets
+                  9. Kerala Asset Types: Urban Flats, Farmland &amp; Gulf Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property transfer rules in Kerala depend on the type of land and local office records:
+                  Asset transfer rules in Kerala depend on the type of land and local office records:
                 </p>
               </div>
 
@@ -1550,7 +1550,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>STATE FEE TABLE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Kerala Registration Fees &amp; PEARLS Charges
+                  10. Official Kerala Filing Fees &amp; PEARLS Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   While sale deeds charge 8% stamp duty and filing fees in Kerala, Wills pay zero stamp duty. State charges on the PEARLS portal are very small:
@@ -1573,7 +1573,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                       <td className="p-4">State of Kerala</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat State Fee)</td>
                       <td className="p-4">PEARLS Portal via e-Treasury</td>
                     </tr>
@@ -1699,7 +1699,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
@@ -1747,7 +1747,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Kerala
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Simple, clear answers to common questions on writing a Will, Christian succession, and SRO filing in Kerala:
+                  Simple, clear answers to common questions on writing a Will, Christian estate, and SRO filing in Kerala:
                 </p>
               </div>
 
@@ -1789,7 +1789,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
                   <span>LAW REFERENCES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Legal Citations &amp; Kerala Registration Portals
+                  13. Legal Citations &amp; Kerala Filing Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our Will formats follow all central Indian laws and Kerala state land rules:
@@ -1808,10 +1808,10 @@ export default function KeralaLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Filing) and Section 31 (Home Visit by SRO).
+                    Section 18(e) (A Choice Filing) and Section 31 (Home Visit by SRO).
                   </p>
                 </div>
 
@@ -1860,7 +1860,29 @@ export default function KeralaLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1879,7 +1901,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Kerala Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Kerala Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1898,7 +1920,7 @@ export default function KeralaLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Kerala SRO Registered &amp; PEARLS Portal Compliant</span>
+              <span>Kerala SRO Filed &amp; PEARLS Portal Compliant</span>
               <Link
                 href="/start"
                 onClick={(e) => {

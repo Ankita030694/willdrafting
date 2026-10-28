@@ -90,7 +90,7 @@ export default function RevocationOfWillPage() {
         url: canonicalUrl,
         name: "Cancel Registered Will in India Format | WillDrafting",
         description:
-          "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession.",
+          "Download legally valid deed of revocation of will format in India. Learn how to cancel a filed will under Section 70 of Indian Succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function RevocationOfWillPage() {
         name: "Deed of Revocation of Will Format India",
         url: canonicalUrl,
         description:
-          "Comprehensive statutory Deed of Revocation of Will format and Sub-Registrar cancellation guidelines under Section 70 of the Indian Succession.",
+          "Full legal Deed of Revocation of Will format and SRO cancellation guidelines under Section 70 of the Indian Succession.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -151,7 +151,7 @@ export default function RevocationOfWillPage() {
             name: "Can a registered Will be cancelled in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 62 and Section 70 of the Indian Succession Act, 1925, any Will, whether registered or unregistered, can be revoked at any time during the lifetime of the testator, provided the testator possesses sound disposing mind. Registration does not make a Will irrevocable.",
+              text: "Yes. Under Section 62 and Section 70 of the Indian Succession Act, 1925, any Will, whether filed or plain, can be revoked at any time during the lifetime of the Will maker, provided the Will maker possesses sound disposing mind. Filing does not make a Will irrevocable.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function RevocationOfWillPage() {
             name: "What is the best way to revoke an old registered Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The cleanest, legally safest, and most cost-effective method is to execute and register a brand new Will containing an express revocation clause revoking all prior Wills. This supersedes the old registered Will and sets up your new asset distribution without creating an intestacy vacuum.",
+              text: "The cleanest, legally safest, and most cost-effective method is to execute and register a brand new Will containing an express revocation clause revoking all prior Wills. This supersedes the old filed Will and sets up your new asset split without creating an intestacy vacuum.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function RevocationOfWillPage() {
             name: "Can I revoke a registered Will simply by tearing or burning it?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "While Section 70 allows revocation by destruction with intention (animus revocandi), destroying a registered Will physically is dangerous. A certified copy remains on record at the Sub-Registrar Office, which disgruntled beneficiaries could misuse after your death. Executing a formal written document or new registered Will is strongly advised.",
+              text: "While Section 70 allows revocation by destruction with intention (animus revocandi), destroying a filed Will physically is dangerous. A certified copy remains on record at the SRO office, which disgruntled heirs could misuse after your death. Signing a formal written paper or new filed Will is strongly advised.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function RevocationOfWillPage() {
             name: "Is it compulsory to register a Deed of Revocation at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration of a revocation deed is optional under Section 18 of the Registration Act. However, if the original Will was registered, registering the revocation deed (or a new registered Will) at the same Sub-Registrar Office is essential to record the cancellation in SRO Book 3 records.",
+              text: "Filing of a revocation deed is a choice under Section 18 of the Filing Act. However, if the original Will was filed, registering the revocation deed (or a new filed Will) at the same SRO office is essential to record the cancellation in SRO Book 3 records.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function RevocationOfWillPage() {
             name: "How many witnesses are required to attest a Deed of Revocation of Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 70 read with Section 63 of the Indian Succession Act, a written declaration of revocation must be executed with the exact same formalities as a Will: signed by the testator in the presence of at least two independent attesting witnesses who see the testator sign.",
+              text: "Under Section 70 read with Section 63 of the Indian Succession Act, a written declaration of revocation must be signed with the exact same formalities as a Will: signed by the Will maker in the presence of at least two independent signing witnesses who see the Will maker sign.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function RevocationOfWillPage() {
             name: "What happens if I cancel my registered Will without making a new one?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If you cancel your Will without executing a replacement Will, you die intestate. Upon your demise, all your movable and immovable properties will be distributed strictly according to personal succession laws, such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925, among all legal heirs equally.",
+              text: "If you cancel your Will without signing a replacement Will, you die no-Will. Upon your demise, all your cash and land assets will be distributed strictly according to personal estate laws, such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925, among all legal heirs equally.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function RevocationOfWillPage() {
             name: "Can beneficiaries challenge my decision to cancel a registered Will while I am alive?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A Will has zero legal effect during the testator's lifetime. Beneficiaries have no vested right or claim to the property while you are alive, and they have no legal standing to challenge your revocation or replacement of a Will.",
+              text: "No. A Will has zero legal effect during the Will maker's lifetime. Heirs have no vested right or claim to the asset while you are alive, and they have no legal standing to fight your revocation or replacement of a Will.",
             },
           },
         ],

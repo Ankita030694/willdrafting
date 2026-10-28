@@ -121,7 +121,7 @@ const LAKSHADWEEP_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Local Will Document",
+    label: "Two Printed Copies of the Local Will Paper",
     detail: "Printed on standard white A4 sheets. Under Lakshadweep rules, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -139,8 +139,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Medical Mental Fitness Certificate (MBBS Doctor)",
-    detail: "Strongly advised for senior citizens. Issued by an island Medical Officer confirming testamentary mental capacity.",
+    label: "Medical Mental Fitness Paper (MBBS Doctor)",
+    detail: "Strongly advised for senior citizens. Issued by an island Medical Officer confirming Will mental capacity.",
     checked: false,
   },
   {
@@ -464,7 +464,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 SRO Kavaratti
               </span>
               <span className="text-[11px] text-slate-600 font-bold mt-1 inline-block">
-                Nominal Registration Fees
+                Nominal Filing Fees
               </span>
             </div>
           </div>
@@ -491,7 +491,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Estate Framework in Lakshadweep
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Testamentary estate planning across the Union Islands of Lakshadweep presents a unique legal synthesis in the Republic of India. Estate on these thirty-six coral atolls is shaped by the intersection of legal Indian civil laws, island tenancy rules, and deep-seated local mother-line jurisprudence known as <strong>Marumakkathayam</strong>.
+                  Will estate planning across the Union Islands of Lakshadweep presents a unique legal synthesis in the Republic of India. Estate on these thirty-six coral atolls is shaped by the intersection of legal Indian civil laws, island tenancy rules, and deep-seated local mother-line jurisprudence known as <strong>Marumakkathayam</strong>.
                 </p>
               </div>
 
@@ -502,7 +502,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     <span>Indian Succession Act, 1925</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs formal testamentary signing under Section 63. Requires clear Will maker capacity, voluntary declaration of intent, and attestation by two non-heir witnesses in each other presence.
+                    Governs formal Will signing under Section 63. Requires clear Will maker capacity, voluntary declaration of intent, and witness signing by two non-heir witnesses in each other presence.
                   </p>
                 </div>
 
@@ -522,7 +522,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   Island Land Safety: The 1965 Tenancy Rule Safeguards
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under the <strong>Laccadive, Minicoy and Amindivi Islands Land Revenue and Tenancy Rule, 1965 (Rule 6 of 1965)</strong>, farm coconut groves, cowle lands, and homestead assets receive special legal safety. Non-native people cannot acquire or inherit land in Lakshadweep without express authorization from the Administrator. A customized Will make sures that bequests to lawful island heirs remain fully compliant with island revenue codes, avoiding probate hurdles or rejection during Tehsildar name change.
+                  Under the <strong>Laccadive, Minicoy and Amindivi Islands Land Revenue and Tenancy Rule, 1965 (Rule 6 of 1965)</strong>, farm coconut groves, cowle lands, and homestead assets receive special legal safety. Non-native people cannot acquire or inherit land in Lakshadweep without express authorization from the Head. A customized Will make sures that bequests to lawful island heirs remain fully compliant with island revenue codes, avoiding probate hurdles or rejection during Tehsildar name change.
                 </p>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -555,10 +555,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Lakshadweep Islands?
+                  2. Is Will Filing Needed in Lakshadweep Islands?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is legally a choice throughout Lakshadweep. An plain Will signed on standard white paper before two competent witnesses possesses prima facie validity. However, in an island ecosystem where families often hold overlapping local rights, signing provides indispensable legal safeguards.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is legally a choice throughout Lakshadweep. An plain Will signed on standard white paper before two competent witnesses possesses prima facie validity. However, in an island ecosystem where families often hold overlapping local rights, signing provides indispensable legal safeguards.
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-amber-500 font-black">•</span>
-                      <span>Requires expensive handwriting expert affidavits if contested by tarawad claimants.</span>
+                      <span>Requires expensive handwriting expert sworn notes if contested by tarawad claimants.</span>
                     </li>
                   </ul>
                 </div>
@@ -634,7 +634,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     Practical Implication for Lakshadweep Will makers:
                   </p>
                   <p>
-                    Because Lakshadweep lies completely outside presidency town limits, Will makers and their heirs are <strong>not required to apply for probate</strong> before the Kerala High Court or the District &amp; Sessions Court at Kavaratti. A properly filed Will functions as strong testamentary title, allowing the Tehsildar and island Village Panchayats to transfer ownership directly upon production of the death paper.
+                    Because Lakshadweep lies completely outside presidency town limits, Will makers and their heirs are <strong>not required to apply for probate</strong> before the Kerala High Court or the District &amp; Sessions Court at Kavaratti. A properly filed Will functions as strong Will title, allowing the Tehsildar and island Village Panchayats to transfer ownership directly upon production of the death paper.
                   </p>
                 </div>
               </div>
@@ -961,7 +961,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ubaidullah Complex</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Eastern Groves</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Lighthouse Belt</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Western Settlement</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Western Deal</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1215,10 +1215,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>STANDARDIZED ISLAND PROTOCOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to SRO Kavaratti Registration
+                  6. Step-by-Step SOP: Will Drafting to SRO Kavaratti Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Signing a legally binding Will in Lakshadweep requires methodical progression from asset ID to formal Book III government recording. Follow this verified five-step operating step:
+                  Signing a legally binding Will in Lakshadweep requires methodical progression from asset ID to formal Book III government recording. Follow this checked five-step operating step:
                 </p>
               </div>
 
@@ -1257,7 +1257,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Step 3: Attestation Before Two Independent Island Witnesses
+                      Step 3: Witness Signing Before Two Independent Island Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the Will on standard A4 paper. The Will maker signs each page in the presence of two adult witnesses who hold no beneficial interest under the Will. Both witnesses then sign in the presence of the Will maker.
@@ -1285,10 +1285,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Step 5: Verbal Affirmation, Biometrics &amp; Book III Registration
+                      Step 5: Verbal Affirmation, Biometrics &amp; Book III Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Sub-Registrar verifies Will maker voluntariness and testamentary mental capacity, captures biometric thumbprints, and seals the document into Book III permanent government archives. An official signing endorsement is issued.
+                      The SRO verifies Will maker voluntariness and Will mental capacity, captures biometric thumbprints, and seals the paper into Book III permanent government archives. An official signing endorsement is issued.
                     </p>
                   </div>
                 </div>
@@ -1303,25 +1303,25 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>DOORSTEP &amp; ISLAND RESIDENCE EXECUTION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Islanders
+                  7. Section 31 Doorstep SRO Filing for Senior Islanders
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Inter-island transit across Lakshadweep often requires passenger ship or helicopter travel that can be physically taxing for elderly, ailing, or bedridden citizens. The Registration Act provides an official legal remedy through <strong>Section 31</strong>.
+                  Inter-island transit across Lakshadweep often requires passenger ship or helicopter travel that can be physically taxing for elderly, ailing, or bedridden citizens. The Filing Act provides an official legal remedy through <strong>Section 31</strong>.
                 </p>
               </div>
 
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex items-center gap-3 text-slate-900 font-extrabold text-base">
                   <Award className="w-5 h-5 text-[#C65378]" />
-                  <span>Home &amp; Hospital Commission Visits by the Sub-Registrar</span>
+                  <span>Home &amp; Hospital Commission Visits by the SRO</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Section 31 of the Registration Act, 1908, a Will maker unable to travel to SRO Kavaratti or their local island office complex due to bodily infirmity or old age can submit a formal form requesting a home visit.
+                  Under Section 31 of the Filing Act, 1908, a Will maker unable to travel to SRO Kavaratti or their local island office complex due to bodily infirmity or old age can submit a formal form requesting a home visit.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                    <span className="text-xs font-bold text-slate-900 block">1. Medical Certificate</span>
+                    <span className="text-xs font-bold text-slate-900 block">1. Medical Paper</span>
                     <p className="text-[11px] text-slate-600">
                       Signed by an island Medical Officer or Health Centre doctor certifying mental lucidity and physical inability to travel.
                     </p>
@@ -1335,7 +1335,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
                     <span className="text-xs font-bold text-slate-900 block">3. In-Home Biometrics</span>
                     <p className="text-[11px] text-slate-600">
-                      The registering officer attends the residence with registry ledgers, recording verbal attestation and thumb impressions.
+                      The registering officer attends the residence with registry ledgers, recording verbal witness signing and thumb impressions.
                     </p>
                   </div>
                 </div>
@@ -1350,10 +1350,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>MANDATORY VERIFICATION DOSSIER</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Lakshadweep SRO offices
+                  8. Paper Checklist for Lakshadweep SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Before presenting your Will for signing at SRO Kavaratti or your island Island registry desk, verify that you have assembled all required documents. Use this interactive preparation checklist:
+                  Before presenting your Will for signing at SRO Kavaratti or your island Island registry desk, verify that you have assembled all required papers. Use this free preparation checklist:
                 </p>
               </div>
 
@@ -1416,7 +1416,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   9. Lakshadweep Asset Types: Belasha, Velliazha &amp; Coconut Lands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Real estate and movable wealth in Lakshadweep differ fundamentally from mainland Indian property. Understanding how your assets fall under island local classifications prevents expensive legal fights:
+                  Real estate and cash wealth in Lakshadweep differ fundamentally from mainland Indian property. Understanding how your assets fall under island local classifications prevents expensive legal fights:
                 </p>
               </div>
 
@@ -1427,7 +1427,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     <span>Belasha Asset (Self-Acquired)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Land bought with personal income, newly constructed home houses, shop shops, mechanized fishing boats, copra dryers, motor vehicles, bank deposits, and mutual funds. The Will maker enjoys 100% unilateral testamentary freedom to bequeath Belasha assets to any chosen person.
+                    Land bought with personal income, newly constructed home houses, shop shops, mechanized fishing boats, copra dryers, motor vehicles, bank deposits, and mutual funds. The Will maker enjoys 100% unilateral Will freedom to bequeath Belasha assets to any chosen person.
                   </p>
                 </div>
 
@@ -1447,7 +1447,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     <span>Coconut Palm Holdings &amp; Cowle Grants</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farm land governed by the 1965 Land Revenue and Tenancy Rule. Includes tree usufructuary rights (*Themma*) where coconut trees can be bequeathed separately from underlying land occupancy, requiring precise testamentary description.
+                    Farm land governed by the 1965 Land Revenue and Tenancy Rule. Includes tree usufructuary rights (*Themma*) where coconut trees can be bequeathed separately from underlying land occupancy, requiring precise Will description.
                   </p>
                 </div>
 
@@ -1471,10 +1471,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT STATUTORY COSTS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Lakshadweep SRO Registration Fees &amp; Stamp Duty
+                  10. Official Lakshadweep SRO Filing Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Unlike asset sale deeds, gift deeds, or mortgages that attract ad-valorem stamp duty based on circle rates, Wills are testamentary declarations taking effect solely upon death. So, government charges for registering a Will across Lakshadweep are strictly nominal.
+                  Unlike asset sale deeds, gift deeds, or mortgages that attract ad-valorem stamp duty based on circle rates, Wills are Will declarations taking effect solely upon death. So, government charges for registering a Will across Lakshadweep are strictly nominal.
                 </p>
               </div>
 
@@ -1501,13 +1501,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">
-                        SRO Kavaratti Registration Fee
+                        SRO Kavaratti Filing Fee
                       </td>
                       <td className="p-3.5 sm:p-4 font-extrabold text-slate-900">
                         ₹100
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Standard legal fee for registering a testamentary instrument under Registration Act rules.
+                        Standard legal fee for registering a Will instrument under Filing Act rules.
                       </td>
                     </tr>
                     <tr>
@@ -1518,7 +1518,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         ₹100 – ₹200
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Digital scanning and Book III archival storage fee covering official government document preservation.
+                        Digital scanning and Book III archival storage fee covering official government paper preservation.
                       </td>
                     </tr>
                     <tr>
@@ -1529,7 +1529,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         Nominal Travel Allowance
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Used only when the Sub-Registrar conducts an in-home or hospital visit for elderly or bedridden citizens.
+                        Used only when the SRO conducts an in-home or hospital visit for elderly or bedridden citizens.
                       </td>
                     </tr>
                   </tbody>
@@ -1577,7 +1577,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Attestation &amp; witness guidelines</span>
+                        <span>Witness Signing &amp; witness guidelines</span>
                       </li>
                     </ul>
                   </div>
@@ -1678,7 +1678,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="w-full py-2.5 rounded-full bg-slate-900 text-white font-bold text-xs hover:bg-slate-800 transition-colors inline-flex items-center justify-center gap-2"
                     >
-                      <span>Book SRO Registration</span>
+                      <span>Book SRO Filing</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -1754,13 +1754,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       Section 63, Indian Succession Act, 1925
                     </span>
                     <p className="text-slate-600 text-[11px]">
-                      Mandates Will maker signing and two-witness simultaneous attestation for all unprivileged Wills in India.
+                      Mandates Will maker signing and two-witness simultaneous witness signing for all unprivileged Wills in India.
                     </p>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
                     <span className="font-extrabold text-slate-900 block">
-                      Section 18(e) &amp; 31, Registration Act, 1908
+                      Section 18(e) &amp; 31, Filing Act, 1908
                     </span>
                     <p className="text-slate-600 text-[11px]">
                       Designates Will signing as a choice and empowers the registering officer to conduct home commission visits.
@@ -1879,7 +1879,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       href="/services/will-signing"
                       className="hover:text-[#C65378] flex items-center justify-between"
                     >
-                      <span>Done-For-You Will Registration</span>
+                      <span>Done-For-You Will Filing</span>
                       <ArrowRight className="w-3 h-3 text-slate-400" />
                     </Link>
                   </li>
@@ -1888,7 +1888,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       href="/tools/will-checklist"
                       className="hover:text-[#C65378] flex items-center justify-between"
                     >
-                      <span>Interactive Will Preparation Checklist</span>
+                      <span>Free Will Preparation Checklist</span>
                       <ArrowRight className="w-3 h-3 text-slate-400" />
                     </Link>
                   </li>

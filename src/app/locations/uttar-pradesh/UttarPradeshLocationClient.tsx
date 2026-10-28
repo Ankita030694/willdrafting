@@ -178,8 +178,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS practitioner certifying sound sound mind to protect against future dementia or coercion fights.",
+    label: "Doctor's Mental Capacity Paper (For Seniors)",
+    detail: "Issued by a filed MBBS practitioner certifying sound sound mind to protect against future dementia or coercion fights.",
     checked: false,
   },
   {
@@ -190,8 +190,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Development Authority or Property Title Records",
-    detail: "Registered lease deeds, tripartite sub-lease agreements, transfer memoranda from Noida, LDA, KDA, GDA, or Khatauni land records.",
+    label: "Development Office or Asset Title Records",
+    detail: "Filed lease deeds, tripartite sub-lease agreements, transfer memoranda from Noida, LDA, KDA, GDA, or Khatauni land records.",
     checked: false,
   },
   {
@@ -290,12 +290,12 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Exactly 59 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Uttar Pradesh: Legal Registration
+                Will Drafting Services in Uttar Pradesh: Legal Filing
               </h1>
 
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Draft a legally watertight Will customized for Uttar Pradesh succession laws. 
-                Complete support for <strong>IGRSUP portal registration</strong>, 
+                Draft a legally watertight Will customized for Uttar Pradesh estate laws. 
+                Complete support for <strong>IGRSUP portal filing</strong>, 
                 <strong>Section 108 UP Revenue Code</strong> farm land bequests, and seamless 
                 name change before <strong>Noida, LDA, and KDA</strong> development offices.
               </p>
@@ -332,14 +332,14 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   href="/services/will-registration"
                   className="border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-white/5 transition-all flex items-center justify-center gap-2 text-center"
                 >
-                  <span>Book SRO Registration Help</span>
+                  <span>Book SRO Filing Help</span>
                 </Link>
               </div>
 
               <div className="flex items-center gap-6 pt-3 text-xs text-slate-400">
                 <div className="flex items-center gap-1.5">
                   <Award className="w-4 h-4 text-amber-400" />
-                  <span>High Court Lawyer Verified</span>
+                  <span>High Court Lawyer Checked</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -536,7 +536,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 49 characters */}
               <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                Key Highlights: Will Making &amp; Registration in UP
+                Key Highlights: Will Making &amp; Filing in UP
               </h2>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
@@ -554,14 +554,14 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Section 213 of the Indian Succession Act, probate is not required in Uttar Pradesh. 
-                    The Allahabad High Court permits direct name change on genuine registered Wills.
+                    The Allahabad High Court permits direct name change on genuine filed Wills.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1.5">
                     <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <span>Section 108 UPRC Farmland Succession</span>
+                    <span>Section 108 UPRC Farmland Estate</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Farm land (Bhumidhari rights) follows strict legal lines under Section 108. 
@@ -572,10 +572,10 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1.5">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>Authority Leasehold Transfers</span>
+                    <span>Office Leasehold Transfers</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Noida, Greater Noida, and LDA assets are leasehold. A registered Will expedites tripartite 
+                    Noida, Greater Noida, and LDA assets are leasehold. A filed Will expedites tripartite 
                     sub-lease transfers and name change without civil court delay.
                   </p>
                 </div>
@@ -586,8 +586,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <span>Doorstep SRO Commission</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Senior citizens and unwell testators in UP can request Sub-Registrar home visits 
-                    under Section 31 of the Registration Act with an MBBS medical paper.
+                    Senior citizens and unwell Will makers in UP can request SRO home visits 
+                    under Section 31 of the Filing Act with an MBBS medical paper.
                   </p>
                 </div>
               </div>
@@ -605,13 +605,13 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 51 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Will Drafting &amp; Succession Laws in Uttar Pradesh
+                1. Will Drafting &amp; Estate Laws in Uttar Pradesh
               </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
-                  Testamentary succession in Uttar Pradesh operates across two distinct legal systems: 
-                  <strong>non-farm property</strong> governed by personal succession laws, and 
+                  Will estate in Uttar Pradesh operates across two distinct legal systems: 
+                  <strong>non-farm asset</strong> governed by personal estate laws, and 
                   <strong>farm farmland</strong> governed by the Uttar Pradesh Revenue Code, 2006.
                 </p>
 
@@ -621,7 +621,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
                 <p>
                   Under Section 59 of the Indian Succession Act, 1925, any person of sound mind who is 
-                  not a minor can make a Will. For the document to hold legal validity in Uttar Pradesh:
+                  not a minor can make a Will. For the paper to hold legal validity in Uttar Pradesh:
                 </p>
 
                 <ul className="space-y-2.5 pl-1">
@@ -635,7 +635,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
                     <span>
-                      <strong>Two Attesting Witnesses (Section 63 ISA):</strong> The Will maker must sign 
+                      <strong>Two Signing Witnesses (Section 63 ISA):</strong> The Will maker must sign 
                       or affix their thumb impression in the presence of at least two adult witnesses, 
                       who must sign in front of the Will maker.
                     </span>
@@ -651,7 +651,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
                     <span>
                       <strong>Revocation &amp; Ambiguity Clauses:</strong> The Will must explicitly revoke all 
-                      previous Wills and codicils to avoid conflicting testamentary instruments.
+                      previous Wills and codicils to avoid conflicting Will instruments.
                     </span>
                   </li>
                 </ul>
@@ -681,20 +681,20 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 49 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Will Registration in UP: IGRSUP Rules &amp; Status
+                2. Will Filing in UP: IGRSUP Rules &amp; Status
               </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
-                  A common inquiry among property owners in Lucknow, Noida, and Kanpur is whether a Will must 
-                  be registered at the SRO office to be legally valid.
+                  A common inquiry among asset owners in Lucknow, Noida, and Kanpur is whether a Will must 
+                  be filed at the SRO office to be legally valid.
                 </p>
 
                 <p>
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registration of a Will 
-                  is optional throughout Uttar Pradesh. An unregistered Will signed on plain white A4 paper 
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, filing of a Will 
+                  is a choice throughout Uttar Pradesh. An plain Will signed on plain white A4 paper 
                   before two witnesses is legally binding. However, estate planning lawyers strongly advise 
-                  formal registration on the <strong>IGRSUP portal (igrsup.gov.in)</strong>.
+                  formal filing on the <strong>IGRSUP portal (igrsup.gov.in)</strong>.
                 </p>
 
                 <div className="overflow-x-auto my-6">
@@ -702,8 +702,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="p-3 font-semibold">Key Parameter</th>
-                        <th className="p-3 font-semibold">Unregistered Will (Plain Paper)</th>
-                        <th className="p-3 font-semibold">Registered Will (IGRSUP Book III)</th>
+                        <th className="p-3 font-semibold">Plain Will (Plain Paper)</th>
+                        <th className="p-3 font-semibold">Filed Will (IGRSUP Book III)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 bg-white">
@@ -766,7 +766,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
-                  One of the most persistent misconceptions among property buyers and heirs in Uttar Pradesh is that 
+                  One of the most persistent misconceptions among asset buyers and heirs in Uttar Pradesh is that 
                   every Will must get probate from a court before assets can be transferred.
                 </p>
 
@@ -795,21 +795,21 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   <p>
                     Because probate is not needed in Uttar Pradesh, your heirs do not need to spend 
                     months or years pursuing High Court probate proceedings. Public offices throughout UP carry 
-                    out direct title name change on the strength of a validly registered Will:
+                    out direct title name change on the strength of a validly filed Will:
                   </p>
                   <ul className="list-disc pl-5 space-y-1 text-emerald-800 text-xs">
-                    <li>Noida Authority, Greater Noida Authority, and YEIDA for leasehold and plotted plots.</li>
-                    <li>Lucknow Development Authority (LDA) and Kanpur Development Authority (KDA).</li>
+                    <li>Noida Office, Greater Noida Office, and YEIDA for leasehold and plotted plots.</li>
+                    <li>Lucknow Development Office (LDA) and Kanpur Development Office (KDA).</li>
                     <li>UP Housing and Development Board (Awas Vikas / UPHDB).</li>
-                    <li>Municipal Corporations (Nagar Nigams) for property tax assessment name updates.</li>
+                    <li>City Corporations (Nagar Nigams) for asset tax assessment name updates.</li>
                     <li>Tehsildar Courts under Section 34/35 of UPRC 2006 for UP Bhulekh Khatauni entry.</li>
                   </ul>
                 </div>
 
                 <p className="text-xs text-slate-500 italic">
-                  Note: While probate is optional, if a relative fights the Will by filing a civil fight, 
+                  Note: While probate is a choice, if a relative fights the Will by filing a civil fight, 
                   the executor may petition the District Court or Allahabad High Court for letters of management 
-                  or probate to set up exclusive testamentary title.
+                  or probate to set up exclusive Will title.
                 </p>
               </div>
             </section>
@@ -832,12 +832,12 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
                   The most crucial legal nuance unique to Uttar Pradesh involves farm landholding. 
-                  Under the <strong>Uttar Pradesh Revenue Code, 2006 (UPRC 2006)</strong>, farmland succession 
+                  Under the <strong>Uttar Pradesh Revenue Code, 2006 (UPRC 2006)</strong>, farmland estate 
                   is governed by state agrarian statutes, not by the Hindu Succession Act or personal laws.
                 </p>
 
                 <h3 className="text-lg font-bold text-slate-900 pt-1">
-                  Without a Will Succession vs Testamentary Bequest under Section 108 &amp; 109
+                  Without a Will Estate vs Will Bequest under Section 108 &amp; 109
                 </h3>
 
                 <p>
@@ -859,7 +859,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
                 <p>
                   Notice that married daughters and customized family shares are severely restricted under 
-                  without a Will succession. If a farmer or landholder wishes to leave farm land to their 
+                  without a Will estate. If a farmer or landholder wishes to leave farm land to their 
                   married daughter, a favorite grandson, an adopted child, or an institution, signing a 
                   <strong>valid Will under Section 107 of the UP Revenue Code, 2006</strong> is legally imperative.
                 </p>
@@ -875,7 +875,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                     <span className="font-bold text-sm text-slate-900 block mb-1">UP Bhulekh Name Change</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      After the Will maker passes away, testamentary name change is initiated before the Tehsildar Court 
+                      After the Will maker passes away, Will name change is initiated before the Tehsildar Court 
                       under Section 34/35 of UPRC 2006 to reflect ownership changes in the official Khatauni.
                     </p>
                   </div>
@@ -895,12 +895,12 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 55 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Uttar Pradesh SRO Directory: District &amp; Sub-Registrar
+                5. Uttar Pradesh SRO Directory: District &amp; SRO
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Uttar Pradesh operates hundreds of Sub-Registrar Offices administered by the Stamps and 
-                Registration Department (IGRSUP). Select or search your local office district below 
+                Uttar Pradesh operates hundreds of SRO Offices administered by the Stamps and 
+                Filing Office (IGRSUP). Select or search your local office district below 
                 to view registry locations, areas, and operational hours.
               </p>
 
@@ -956,7 +956,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
                   <div>
-                    <span className="font-bold text-slate-900 block mb-1">Primary Sub-Registrar Offices:</span>
+                    <span className="font-bold text-slate-900 block mb-1">Primary SRO Offices:</span>
                     <p className="text-slate-700">{activeDistrictData.sro}</p>
                   </div>
                   <div>
@@ -981,7 +981,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     href="/services/will-registration"
                     className="text-[#C65378] hover:text-[#a83d5f] font-bold inline-flex items-center gap-1"
                   >
-                    <span>Book Done-For-You Registration Service</span>
+                    <span>Book Done-For-You Filing Service</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1004,7 +1004,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Estate succession practices differ between high-rise NCR developments, heritage Awadh assets, 
+                Estate estate practices differ between high-rise NCR developments, heritage Awadh assets, 
                 and major Purvanchal shop hubs. Here is how our estate legal team tailors Will drafting 
                 across Uttar Pradesh:
               </p>
@@ -1021,9 +1021,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Noida and Greater Noida assets are held on 90-year leaseholds from Noida Authority or GNIDA. 
+                    Noida and Greater Noida assets are held on 90-year leaseholds from Noida Office or GNIDA. 
                     Wills must include precise tripartite sublease signing clauses, builder-buyer assignment references, 
-                    and maintain clean succession chains to prevent transfer penalty levies by development bodies.
+                    and maintain clean estate chains to prevent transfer penalty levies by development bodies.
                   </p>
                   <Link
                     href="/locations/noida"
@@ -1070,7 +1070,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Covering high-density home societies across Indirapuram, Vaishali, and Vasundhara. 
-                    We structure clear apartment succession clauses compliant with the UP Apartment (Promotion of 
+                    We structure clear apartment estate clauses compliant with the UP Apartment (Promotion of 
                     Construction, Ownership &amp; Maintenance) Act, 2010.
                   </p>
                   <Link
@@ -1094,8 +1094,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Kanpur boasts extensive leather manufacturing units, textile wholesale dealerships, and KDA plots. 
-                    Wills incorporate business succession planning, partnership equity bequeathals, and shop 
-                    property devolution alongside personal bank assets.
+                    Wills incorporate business estate planning, partnership equity bequeathals, and shop 
+                    asset devolution alongside personal bank assets.
                   </p>
                   <Link
                     href="/locations/kanpur"
@@ -1117,7 +1117,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Succession planning for multi-generational family homes near the Ghats, Banarasi saree 
+                    Estate planning for multi-generational family homes near the Ghats, Banarasi saree 
                     weaving businesses, and newly developed VDA plotted projects along the Babatpur corridor.
                   </p>
                   <Link
@@ -1140,7 +1140,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Full succession support across Braj tourism enterprises, footwear manufacturing and export units, 
+                    Full estate support across Braj tourism enterprises, footwear manufacturing and export units, 
                     and home colonies in Dayalbagh, Kamla Nagar, and Sanjay Place.
                   </p>
                   <Link
@@ -1186,8 +1186,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Succession planning across Western UP farm sugar-belt farmland under Section 108 UPRC, 
-                    industrial establishments in Partapur, and MDA home zones in Shastri Nagar.
+                    Estate planning across Western UP farm sugar-belt farmland under Section 108 UPRC, 
+                    plant establishments in Partapur, and MDA home zones in Shastri Nagar.
                   </p>
                   <Link
                     href="/locations/meerut"
@@ -1212,11 +1212,11 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 49 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Step-by-Step SOP: Will Drafting to Registration
+                7. Step-by-Step SOP: Will Drafting to Filing
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Creating an enforceable Will in Uttar Pradesh is simple when following our verified 
+                Creating an enforceable Will in Uttar Pradesh is simple when following our checked 
                 five-step step:
               </p>
 
@@ -1231,7 +1231,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                       Step 1: Asset Listing &amp; Heir Apportionment
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Catalog all movable and immovable assets: development authority flats, independent houses, 
+                      Catalog all cash and land assets: development office flats, independent houses, 
                       Bhumidhari farm plots (with Khasra / Khatauni numbers), bank fixed deposits, 
                       and demat holdings. Designate heirs and assign shares clearly.
                     </p>
@@ -1262,7 +1262,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">
-                      Step 3: Attestation Before Two Independent Witnesses
+                      Step 3: Witness Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       Print the Will on plain A4 sheets. Sign each page in the physical presence of two independent 
@@ -1281,8 +1281,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                       Step 4: IGRSUP Portal Slot Booking
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Log into the Stamps and Registration Department portal (igrsup.gov.in). Generate the form 
-                      token for Book III registration, enter Aadhaar details, select your local Tehsil Sub-Registrar 
+                      Log into the Stamps and Filing Office portal (igrsup.gov.in). Generate the form 
+                      token for Book III filing, enter Aadhaar details, select your local Tehsil SRO 
                       Office, and reserve an appointment time.
                     </p>
                   </div>
@@ -1295,12 +1295,12 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">
-                      Step 5: Biometric Check &amp; Registration at SRO
+                      Step 5: Biometric Check &amp; Filing at SRO
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       Visit the SRO office with your two witnesses and original Aadhaar credentials. 
-                      The Sub-Registrar records biometric thumb impressions, captures live webcam photographs, 
-                      and delivers the registered Will endorsed under Book III.
+                      The SRO records biometric thumb impressions, captures live webcam photographs, 
+                      and delivers the filed Will endorsed under Book III.
                     </p>
                   </div>
                 </div>
@@ -1319,19 +1319,19 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 44 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Section 31 Doorstep SRO Registration in UP
+                8. Section 31 Doorstep SRO Filing in UP
               </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
-                  Senior citizens, hospitalized people, and bedridden testators often find it physically 
-                  challenging to navigate crowded Sub-Registrar compounds and Kutchery premises across Uttar Pradesh.
+                  Senior citizens, hospitalized people, and bedridden Will makers often find it physically 
+                  challenging to navigate crowded SRO compounds and Kutchery premises across Uttar Pradesh.
                 </p>
 
                 <p>
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the law provides a compassionate 
-                  doorstep registration protocol. The Sub-Registrar or a designated Registration Officer can visit 
-                  the Will maker&apos;s private residence, nursing home, or hospital room to conduct official registration.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the law provides a compassionate 
+                  doorstep filing protocol. The SRO or a designated Filing Officer can visit 
+                  the Will maker&apos;s private residence, nursing home, or hospital room to conduct official filing.
                 </p>
 
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
@@ -1342,16 +1342,16 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <li className="flex items-start gap-2">
                       <span className="font-bold text-[#C65378]">•</span>
                       <span>
-                        <strong>MBBS Doctor Certificate:</strong> A registered medical practitioner must issue a 
+                        <strong>MBBS Doctor Paper:</strong> A filed medical practitioner must issue a 
                         paper on their official letterhead stating that the Will maker is medically unable to 
-                        travel, while simultaneously certifying sound testamentary mental capacity.
+                        travel, while simultaneously certifying sound Will mental capacity.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="font-bold text-[#C65378]">•</span>
                       <span>
                         <strong>Formal Written Form:</strong> An form citing Section 31 is filed 
-                        before the jurisdictional Sub-Registrar along with the doctor&apos;s paper.
+                        before the local SRO along with the doctor&apos;s paper.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -1364,8 +1364,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <li className="flex items-start gap-2">
                       <span className="font-bold text-[#C65378]">•</span>
                       <span>
-                        <strong>Portable Biometric Kit:</strong> The Sub-Registrar attends the residence with a portable 
-                        biometric kit, captures live fingerprints, verifies witness identities, and completes Book III registration.
+                        <strong>Portable Biometric Kit:</strong> The SRO attends the residence with a portable 
+                        biometric kit, captures live fingerprints, verifies witness identities, and completes Book III filing.
                       </span>
                     </li>
                   </ul>
@@ -1385,11 +1385,11 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 53 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Needed Document Checklist for Uttar Pradesh Wills
+                9. Needed Paper Checklist for Uttar Pradesh Wills
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Use this interactive pre-registration checklist to verify your documents before booking your 
+                Use this free pre-filing checklist to verify your papers before booking your 
                 IGRSUP slot or attending the SRO office:
               </p>
 
@@ -1461,11 +1461,11 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 52 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Estate Asset Split: Authority Flats &amp; Land
+                10. Estate Asset Split: Office Flats &amp; Land
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                A robust Uttar Pradesh Will must be structured to accommodate varying property classifications:
+                A robust Uttar Pradesh Will must be structured to accommodate varying asset classifications:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1475,8 +1475,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <span>Noida &amp; YEIDA Leasehold Plots / Flats</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Allotted on long-term lease. Requires clear designation of leasehold title succession. 
-                    A registered Will avoids hefty transfer charges and facilitates tripartite sub-lease 
+                    Allotted on long-term lease. Requires clear designation of leasehold title estate. 
+                    A filed Will avoids hefty transfer charges and facilitates tripartite sub-lease 
                     endorsement from Noida, Greater Noida, and YEIDA offices.
                   </p>
                 </div>
@@ -1488,8 +1488,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Freehold bungalows and builder floors in Lucknow, Kanpur, Ghaziabad, and Agra. 
-                    Direct name change before Municipal Corporations (Nagar Nigam) for property tax 
-                    records without succession paper delays.
+                    Direct name change before City Corporations (Nagar Nigam) for asset tax 
+                    records without estate paper delays.
                   </p>
                 </div>
 
@@ -1530,13 +1530,13 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
               {/* H2: Exactly 52 characters */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Registration Charges &amp; Stamp Duty in Uttar Pradesh
+                11. Filing Charges &amp; Stamp Duty in Uttar Pradesh
               </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
                   Many citizens fear that registering a Will in Uttar Pradesh incurs high ad-valorem stamp duty 
-                  similar to sale deeds or gift deeds (which reach 5% to 7% of property circle rate). 
+                  similar to sale deeds or gift deeds (which reach 5% to 7% of asset circle rate). 
                   <strong>This is entirely incorrect.</strong>
                 </p>
 
@@ -1551,14 +1551,14 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </thead>
                     <tbody className="divide-y divide-slate-200 bg-white">
                       <tr>
-                        <td className="p-3 font-medium text-slate-900">Stamp Duty on Will Document</td>
+                        <td className="p-3 font-medium text-slate-900">Stamp Duty on Will Paper</td>
                         <td className="p-3 font-extrabold text-emerald-700">₹0 (Zero Stamp Duty)</td>
                         <td className="p-3 text-slate-600">Indian Stamp Act (UP Schedule) - Plain paper valid</td>
                       </tr>
                       <tr className="bg-slate-50">
-                        <td className="p-3 font-medium text-slate-900">SRO Book III Registration Fee</td>
+                        <td className="p-3 font-medium text-slate-900">SRO Book III Filing Fee</td>
                         <td className="p-3 text-slate-900 font-bold">₹100 (Flat Fee)</td>
-                        <td className="p-3 text-slate-600">UP Registration Rules Table of Fees</td>
+                        <td className="p-3 text-slate-600">UP Filing Rules Table of Fees</td>
                       </tr>
                       <tr>
                         <td className="p-3 font-medium text-slate-900">IGRSUP Computer Processing Fee</td>
@@ -1597,7 +1597,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Transparent legal drafting and registration support tailored for families across Uttar Pradesh:
+                Transparent legal drafting and filing support tailored for families across Uttar Pradesh:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1615,7 +1615,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-600 mb-6">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Interactive 15-minute online questionnaire</span>
+                        <span>Free 15-minute online questionnaire</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1665,7 +1665,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
-                        <span>Noida / LDA authority clause drafting</span>
+                        <span>Noida / LDA office clause drafting</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
@@ -1737,8 +1737,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Find clear answers to common questions regarding Will drafting, IGRSUP registration, 
-                and property succession across Uttar Pradesh:
+                Find clear answers to common questions regarding Will drafting, IGRSUP filing, 
+                and asset estate across Uttar Pradesh:
               </p>
 
               <div className="space-y-3">
@@ -1789,7 +1789,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
-                Authoritative legal foundations governing testamentary succession and registration across Uttar Pradesh:
+                Authoritative legal foundations governing Will estate and filing across Uttar Pradesh:
               </p>
 
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
@@ -1798,17 +1798,17 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     Uttar Pradesh Revenue Code, 2006 (UPRC 2006)
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 107 (bequest by bhumidhar), Section 108 (general order of succession for male bhumidhars), 
-                    Section 109 (succession to female bhumidhars), and Section 34/35 (testamentary name change step before Tehsildar courts).
+                    Section 107 (bequest by bhumidhar), Section 108 (general order of estate for male bhumidhars), 
+                    Section 109 (estate to female bhumidhars), and Section 34/35 (Will name change step before Tehsildar courts).
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <div className="font-bold text-slate-900 mb-1">
-                    Registration Act, 1908 (Act No. 16 of 1908)
+                    Filing Act, 1908 (Act No. 16 of 1908)
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 18(e) (optional registration of wills), Section 31 (registration or acceptance for deposit 
+                    Section 18(e) (a choice filing of wills), Section 31 (filing or acceptance for deposit 
                     at private residence on special cause shown), and Section 51 (maintenance of official Book III records).
                   </p>
                 </div>
@@ -1825,7 +1825,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <div className="font-bold text-slate-900 mb-1">
-                    Allahabad High Court Landmark Rulings on Testamentary Probate
+                    Allahabad High Court Landmark Rulings on Will Probate
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Consistent rulings confirming that probate is non-needed in Uttar Pradesh. Rights under a valid 
@@ -1835,7 +1835,29 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1854,7 +1876,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Uttar Pradesh Will Drafting &amp; SRO Registration Architecture
+                Visual Blueprint: Uttar Pradesh Will Drafting &amp; SRO Filing Architecture
               </span>
               <button
                 type="button"

@@ -142,7 +142,7 @@ export default function AmritsarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Amritsar: Online Will & NRI Guide",
         description:
-          "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI.",
+          "Protect family asset in Amritsar. Expert online Will drafting, NGDRS Punjab filing help, and fight-free estate for NRI.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function AmritsarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Amritsar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Punjab registration assistance, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, NGDRS Punjab filing help, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -257,38 +257,38 @@ export default function AmritsarLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Amritsar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Amritsar.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Amritsar.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Amritsar & NRI Asset Inventory",
-            text: "List your Amritsar real estate including ADA residential plots, MCA houses, commercial shops in Hall Bazaar, agricultural land in Ajnala or Majitha, and bank accounts.",
+            text: "List your Amritsar real estate including ADA home plots, MCA houses, shop shops in Hall Bazaar, farm land in Ajnala or Majitha, and bank accounts.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, NRI cross-border protections, executor appointment, and revocation of prior wills.",
+            text: "Draft your Will using checked legal clauses for clear asset split, NRI cross-border protections, executor appointment, and revocation of prior wills.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS Punjab Appointment Slot",
-            text: "Schedule your registration appointment on the NGDRS Punjab portal (igr.punjab.gov.in) for your relevant Amritsar SRO and pay the flat ₹500 fee via Cyber Treasury.",
+            text: "Schedule your filing appointment on the NGDRS Punjab portal (igr.punjab.gov.in) for your relevant Amritsar SRO and pay the flat ₹500 fee via Cyber Treasury.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Amritsar SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

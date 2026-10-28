@@ -142,7 +142,7 @@ export default function ItanagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Itanagar: Online Will & Asset Guide",
         description:
-          "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office.",
+          "Draft a valid Will in Itanagar. Clear guidance on customary tribal estate, Land Holding Papers (LHC), and Itanagar DC office.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function ItanagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Itanagar - Tribal Estate Planning & DC Office Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession, DC Office Capital Complex registration, and.",
+          "Professional Will drafting, lawyer check, Land Holding Paper (LHC) estate, DC Office Capital Complex filing, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -253,38 +253,38 @@ export default function ItanagarLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Itanagar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Deputy Commissioner or Sub-Registrar in Itanagar.",
+          "Five clear legal steps to draft and register an enforceable Will before the Deputy Commissioner or SRO in Itanagar.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and LHC Records",
-            text: "List your Itanagar and Capital Complex real estate including Land Holding Certificates (LHC), commercial establishments, bank deposits, GPF/pensions, and vehicle titles. Designate beneficiaries and an executor.",
+            text: "List your Itanagar and Capital Complex real estate including Land Holding Papers (LHC), shop establishments, bank deposits, GPF/pensions, and vehicle titles. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses respecting customary tribal protections, clear asset bequests, minor guardianship clauses, and unequivocal revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses respecting customary tribal protections, clear asset bequests, minor child care clauses, and unequivocal revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 sheets and sign each page before two competent adult witnesses who have no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 sheets and sign each page before two competent adult witnesses who have no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Appointment with DC Office / Sub-Registrar",
-            text: "Book your registration slot with the Office of the Deputy Commissioner, Capital Complex, Itanagar or SDO Naharlagun and remit the nominal statutory registration fee.",
+            text: "Book your filing slot with the Office of the Deputy Commissioner, Capital Complex, Itanagar or SDO Naharlagun and remit the nominal legal filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics & Official Attestation",
-            text: "Attend the Sub-Registrar office with both witnesses for oral attestation, identity validation, and biometric recording to secure permanent Book III government registration.",
+            text: "Attend the SRO office with both witnesses for oral witness signing, identity validation, and biometric recording to secure permanent Book III government filing.",
           },
         ],
       },

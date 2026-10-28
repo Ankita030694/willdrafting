@@ -149,7 +149,7 @@ export default function MuslimWillPage() {
             name: "Can a Muslim in India write a Will for their entire property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under the Muslim Personal Law (Shariat) Application Act, 1937 and Section 118 of Mulla's Mahomedan Law, a Muslim cannot bequeath more than one-third (1/3rd) of their net estate after debts and funeral expenses. The remaining two-thirds (2/3rds) must compulsorily devolve upon legal Quranic heirs under Faraid. Any bequest exceeding one-third is void unless all legal heirs give their free consent after the testator's death.",
+              text: "No. Under the Muslim Personal Law (Shariat) Form Act, 1937 and Section 118 of Mulla's Mahomedan Law, a Muslim cannot bequeath more than one-third (1/3rd) of their net estate after debts and funeral expenses. The remaining two-thirds (2/3rds) must compulsorily devolve upon legal Quranic heirs under Faraid. Any bequest exceeding one-third is void unless all legal heirs give their free consent after the Will maker's death.",
             },
           },
           {
@@ -157,7 +157,7 @@ export default function MuslimWillPage() {
             name: "Can a Sunni Muslim leave property to one of their legal heirs in a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Sunni law (Hanafi, Shafii, Maliki, Hanbali), a bequest in favor of a legal heir who is already entitled to inherit under Faraid is invalid ab initio. It becomes legally valid only if all other surviving legal heirs consent to it AFTER the death of the testator. As affirmed by the Privy Council in Ghulam Mohammad v. Ghulam Husain, consent given during the testator's lifetime has no legal effect under Sunni jurisprudence.",
+              text: "Under Sunni law (Hanafi, Shafii, Maliki, Hanbali), a bequest in favor of a legal heir who is already entitled to inherit under Faraid is invalid ab initio. It becomes legally valid only if all other surviving legal heirs consent to it AFTER the death of the Will maker. As affirmed by the Privy Council in Ghulam Mohammad v. Ghulam Husain, consent given during the Will maker's lifetime has no legal effect under Sunni jurisprudence.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function MuslimWillPage() {
             name: "How do Shia rules differ from Sunni rules regarding bequests to legal heirs?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Shia law (Ithna-Ashari / Imami), a testator can validly bequeath up to one-third of their net estate to an heir without needing the consent of other heirs. Furthermore, if a bequest exceeds one-third, heir consent can be validly given either during the testator's lifetime or after death, unlike Sunni law which mandates post-death consent.",
+              text: "Under Shia law (Ithna-Ashari / Imami), a Will maker can validly bequeath up to one-third of their net estate to an heir without needing the consent of other heirs. Also, if a bequest exceeds one-third, heir consent can be validly given either during the Will maker's lifetime or after death, unlike Sunni law which mandates post-death consent.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function MuslimWillPage() {
             name: "Does a Muslim Will (Wasiyatnama) require stamp paper or registration in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No stamp paper is required. Under Indian law, a Wasiyatnama can be executed on plain white A4 paper with zero stamp duty. Registration is voluntary under Section 18(e) of the Registration Act, 1908. While an unregistered written Wasiyatnama attested by two competent witnesses is legally valid, registering it before the Sub-Registrar provides strong evidential protection against future title disputes.",
+              text: "No stamp paper is required. Under Indian law, a Wasiyatnama can be signed on plain white A4 paper with zero stamp duty. Filing is voluntary under Section 18(e) of the Filing Act, 1908. While an plain written Wasiyatnama attested by two competent witnesses is legally valid, registering it before the SRO provides strong evidential protection against future title fights.",
             },
           },
           {
@@ -181,7 +181,7 @@ export default function MuslimWillPage() {
             name: "Does the Indian Succession Act, 1925 apply to Muslim Wills in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Generally, no. Sections 57 and 58 of the Indian Succession Act, 1925 specifically exempt Muslims from testamentary succession provisions. Muslim wills are governed by uncodified Shariat rules preserved by the Muslim Personal Law (Shariat) Application Act, 1937. However, the procedural provisions for the grant of Probate and Letters of Administration under Section 213 and Part IX apply optionally.",
+              text: "Generally, no. Sections 57 and 58 of the Indian Succession Act, 1925 mainly exempt Muslims from Will estate rules. Muslim wills are governed by uncodified Shariat rules preserved by the Muslim Personal Law (Shariat) Form Act, 1937. However, the procedural rules for the grant of Probate and Letters of Care under Section 213 and Part IX apply optionally.",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function MuslimWillPage() {
             name: "What debts must be settled before calculating the one-third disposable estate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Islamic jurisprudence, estate obligations follow a strict statutory hierarchy: (1) Reasonable funeral and burial expenses, (2) Judicial costs of obtaining probate or letters of administration, (3) All outstanding personal debts, commercial liabilities, and unpaid prompt or deferred Mahr (dower) owed to the surviving wife. Only after deducting these obligations from the gross estate is the net distributable estate determined, from which the 1/3rd disposable share is calculated.",
+              text: "Under Islamic jurisprudence, estate obligations follow a strict legal hierarchy: (1) Reasonable funeral and burial expenses, (2) Judicial costs of obtaining probate or letters of care, (3) All outstanding personal debts, shop liabilities, and unpaid prompt or deferred Mahr (dower) owed to the surviving wife. Only after deducting these obligations from the gross estate is the net distributable estate determined, from which the 1/3rd disposable share is calculated.",
             },
           },
           {
@@ -205,7 +205,7 @@ export default function MuslimWillPage() {
             name: "Can an oral (verbal) Wasiyat be legally recognized by Indian civil courts?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, Mahomedan law recognizes an oral Will (Wasiyat bil-Lafz) made before witnesses, as upheld in Abdul Manan Khan v. Mirtaza Khan. However, Indian civil courts impose an exceptionally heavy burden of proof upon anyone claiming under an oral Will. Claimants must prove the exact date, time, words uttered, and testator's sound mental state with utmost clarity. Drafting a written, signed, and witnessed Wasiyatnama is essential in modern practice.",
+              text: "Yes, Mahomedan law recognizes an oral Will (Wasiyat bil-Lafz) made before witnesses, as upheld in Abdul Manan Khan v. Mirtaza Khan. However, Indian civil courts impose an exceptionally heavy burden of proof upon anyone claiming under an oral Will. Claimants must prove the exact date, time, words uttered, and Will maker's sound mental state with utmost clarity. Drafting a written, signed, and witnessed Wasiyatnama is essential in modern practice.",
             },
           },
           {
@@ -213,7 +213,7 @@ export default function MuslimWillPage() {
             name: "Can a Muslim woman execute a Wasiyatnama for her Stridhan and own property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. A Muslim adult woman has absolute legal rights over her self-acquired property, inherited estate, and Mahr. She possesses full testamentary capacity to execute a Wasiyatnama bequeathing up to one-third of her net estate to non-heirs or charities, completely independent of her husband, father, or brothers.",
+              text: "Yes. A Muslim adult woman has absolute legal rights over her self-acquired asset, inherited estate, and Mahr. She possesses full Will capacity to execute a Wasiyatnama bequeathing up to one-third of her net estate to non-heirs or charities, completely independent of her husband, father, or brothers.",
             },
           },
           {
@@ -221,7 +221,7 @@ export default function MuslimWillPage() {
             name: "Can a non-Muslim be appointed as an Executor (Wasi) of a Muslim Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under classical Mahomedan law, appointing a non-Muslim was frowned upon, but Indian High Courts have firmly established that under Section 301 and Part IX of the Indian Succession Act, 1925, any competent adult of sound mind, including a non-Muslim advocate, chartered accountant, or family friend, can be legally appointed as an Executor (Al-Wasi) to administer the estate in accordance with Shariat rules.",
+              text: "Under classical Mahomedan law, appointing a non-Muslim was frowned upon, but Indian High Courts have firmly established that under Section 301 and Part IX of the Indian Succession Act, 1925, any competent adult of sound mind, including a non-Muslim lawyer, chartered accountant, or family friend, can be legally appointed as an Executor (Al-Wasi) to administer the estate in accordance with Shariat rules.",
             },
           },
         ],

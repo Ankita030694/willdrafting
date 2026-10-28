@@ -126,7 +126,7 @@ const MEGHALAYA_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Meghalaya state laws, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -139,7 +139,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Valid Photo IDs",
-    detail: "Must carry original government IDs and must not be heirs receiving any property or bequest under the Will.",
+    detail: "Must carry original government IDs and must not be heirs receiving any asset or bequest under the Will.",
     checked: true,
   },
   {
@@ -150,14 +150,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-5",
-    label: "Sub-Registrar Appointment Receipt & Government Fee Challan",
-    detail: "Official token receipt from the DC Office Sub-Registrar counter confirming payment of the nominal ₹100 registration fee.",
+    label: "SRO Appointment Receipt & Government Fee Challan",
+    detail: "Official token receipt from the DC Office SRO counter confirming payment of the nominal ₹100 filing fee.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Title Deeds, Patta & Municipal Tax Documents",
-    detail: "Property patta, Syiemship allotment papers, Land Holding Certificates, or Shillong Municipal Board assessment receipts.",
+    label: "Title Deeds, Patta & City Tax Papers",
+    detail: "Asset patta, Syiemship allotment papers, Land Holding Papers, or Shillong City Board assessment receipts.",
     checked: false,
   },
   {
@@ -256,11 +256,11 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Exactly 57 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Meghalaya: Customary Succession
+                Will Drafting Services in Meghalaya: Customary Estate
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally sound Will in Meghalaya with seasoned legal lawyers. Expert guidance on Khasi and Garo matrilineal customary succession, self-acquired asset testamentary freedom, and DC Office Sub-Registrar registration across Shillong, Tura, and Jowai.
+                Draft a legally sound Will in Meghalaya with seasoned legal lawyers. Expert guidance on Khasi and Garo matrilineal customary estate, self-acquired asset Will freedom, and DC Office SRO filing across Shillong, Tura, and Jowai.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -316,7 +316,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Meghalaya Customary Succession Blueprint
+                  Meghalaya Customary Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -354,7 +354,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Nominal Registration Fee
+                Nominal Filing Fee
               </span>
             </div>
 
@@ -419,7 +419,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
               <ShieldCheck className="w-8 h-8 text-[#C65378] mx-auto" />
               <div className="text-sm font-bold text-white">Protect Your Legacy</div>
               <p className="text-xs text-slate-300">
-                Draft a legally airtight Will harmonizing Meghalaya customary succession and self-acquired assets.
+                Draft a legally airtight Will harmonizing Meghalaya customary estate and self-acquired assets.
               </p>
               <Link
                 href="/start"
@@ -482,17 +482,17 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 58 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Overview: Estate Planning &amp; Succession in Meghalaya
+                  1. Overview: Estate Planning &amp; Estate in Meghalaya
                 </h2>
                 <div className="mt-4 space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                   <p>
-                    Succession law in the State of Meghalaya presents a fascinating, distinctive interplay between centuries-old indigenous matrilineal customary traditions and modern legal estate planning principles. Home to the matrilineal Khasi, Jaintia, and Garo communities, testamentary dispositions require an astute understanding of customary norms, the <strong>Khasi Social Custom of Lineage Act, 1997</strong>, and established precedents of the <strong>High Court of Meghalaya</strong>.
+                    Estate law in the State of Meghalaya presents a fascinating, distinctive interplay between centuries-old indigenous matrilineal customary traditions and modern legal estate planning principles. Home to the matrilineal Khasi, Jaintia, and Garo communities, Will gifts require an astute understanding of customary norms, the <strong>Khasi Social Custom of Lineage Act, 1997</strong>, and established precedents of the <strong>High Court of Meghalaya</strong>.
                   </p>
                   <p>
-                    A foundational cornerstone of estate planning in Meghalaya is the strict legal bifurcation between <strong>family clan property (Ri Kur / A&apos;king land)</strong> and <strong>self-acquired property (Kamai Nongkhynraw)</strong>. While family property passes matrilineally to the designated custodian daughter—such as the <em>Khatduh</em> among Khasis or the <em>Nokna</em> married to the <em>Nokkrom</em> among Garos—the High Court has firmly established that an individual Will maker enjoys <strong>absolute testamentary freedom</strong> to bequeath self-acquired assets, shop firms, vehicles, bank accounts, and investments via a legally valid Will.
+                    A foundational cornerstone of estate planning in Meghalaya is the strict legal bifurcation between <strong>family clan asset (Ri Kur / A&apos;king land)</strong> and <strong>self-acquired asset (Kamai Nongkhynraw)</strong>. While family asset passes matrilineally to the designated custodian daughter—such as the <em>Khatduh</em> among Khasis or the <em>Nokna</em> married to the <em>Nokkrom</em> among Garos—the High Court has firmly established that an single Will maker enjoys <strong>absolute Will freedom</strong> to bequeath self-acquired assets, shop firms, vehicles, bank accounts, and investments via a legally valid Will.
                   </p>
                   <p>
-                    Without a formal, lawyer-drafted Will, families often get entangled in protracted inheritance fights before Autonomous District Council (ADC) village courts, Syiemship durbars, or the Deputy Commissioner&apos;s court. Drafting an clear Will ensures your true wishes are honored, avoids bitter clan court fights, and guarantees flawless asset transfer to your loved ones.
+                    Without a formal, lawyer-drafted Will, families often get entangled in protracted estate fights before Autonomous District Council (ADC) village courts, Syiemship durbars, or the Deputy Commissioner&apos;s court. Drafting an clear Will ensures your true wishes are honored, avoids bitter clan court fights, and guarantees flawless asset transfer to your loved ones.
                   </p>
                 </div>
               </div>
@@ -507,10 +507,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 58 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Legal Framework: Khasi, Garo &amp; Jaintia Succession Law
+                  2. Legal Framework: Khasi, Garo &amp; Jaintia Estate Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Estate planning in Meghalaya is governed by an integrated matrix of central succession statutes, constitutional Sixth Schedule safeguards, local customary lineage enactments, and land transfer regulations:
+                  Estate planning in Meghalaya is governed by an integrated matrix of central estate statutes, constitutional Sixth Schedule safeguards, local customary lineage enactments, and land transfer regulations:
                 </p>
               </div>
 
@@ -521,17 +521,17 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     <span>Khasi Matrilineal Custom &amp; Khatduh Role</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Khasi customary law, the youngest daughter (<em>Ka Khatduh</em>) inherits family family property (<em>Ri Kur</em>) as the custodian and trustee of clan rituals, not as absolute owner. Crucially, self-acquired property (<em>Kamai Nongkhynraw</em>) stands outside this customary restriction and can be freely bequeathed to sons, other daughters, or spouse via a Will.
+                    Under Khasi customary law, the youngest daughter (<em>Ka Khatduh</em>) inherits family family asset (<em>Ri Kur</em>) as the custodian and trustee of clan rituals, not as absolute owner. Crucially, self-acquired asset (<em>Kamai Nongkhynraw</em>) stands outside this customary restriction and can be freely bequeathed to sons, other daughters, or spouse via a Will.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2.5">
                   <div className="flex items-center gap-2 text-[#C65378] font-bold text-sm">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span>Garo A&apos;king Land &amp; Nokkrom Succession</span>
+                    <span>Garo A&apos;king Land &amp; Nokkrom Estate</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Among the Garos of the Garo Hills, clan land (<em>A&apos;king</em>) is presided over by the female clan head (<em>Nokma</em>), with succession passing through a chosen daughter (<em>Nokna</em>) and her husband (<em>Nokkrom</em>). Self-acquired urban bungalows, financial portfolios, and movable wealth can be independently bequeathed through a validly drafted Will.
+                    Among the Garos of the Garo Hills, clan land (<em>A&apos;king</em>) is presided over by the female clan head (<em>Nokma</em>), with estate passing through a chosen daughter (<em>Nokna</em>) and her husband (<em>Nokkrom</em>). Self-acquired urban bungalows, financial portfolios, and cash wealth can be independently bequeathed through a validly drafted Will.
                   </p>
                 </div>
 
@@ -541,7 +541,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     <span>Meghalaya Land Transfer Regulation Act, 1971</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Act strictly restricts transfer of tribal land to non-tribals. A Will cannot be employed as an indirect instrument to bequeath restricted indigenous tribal land to non-tribal entities without prior sanction from the competent state authority. Our lawyers structure clauses in strict adherence to this protective statute.
+                    The Act strictly restricts transfer of tribal land to non-tribals. A Will cannot be employed as an indirect instrument to bequeath restricted indigenous tribal land to non-tribal entities without prior sanction from the competent state office. Our lawyers structure clauses in strict adherence to this protective statute.
                   </p>
                 </div>
 
@@ -566,10 +566,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 56 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Will Registration: Needed vs Optional in Meghalaya
+                  3. Will Filing: Needed vs A Choice in Meghalaya
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is legally optional in Meghalaya. A Will signed on plain white A4 paper signed in the presence of two witnesses is legally enforceable upon signing. However, registering the document at the SRO office in the Deputy Commissioner&apos;s complex provides vital proof protection against customary clan court fights:
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is legally a choice in Meghalaya. A Will signed on plain white A4 paper signed in the presence of two witnesses is legally enforceable upon signing. However, registering the paper at the SRO office in the Deputy Commissioner&apos;s complex provides vital proof protection against customary clan court fights:
                 </p>
               </div>
 
@@ -579,9 +579,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <table className="w-full text-left border-collapse text-xs sm:text-sm">
                     <thead>
                       <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                        <th className="p-3.5 sm:p-4 font-bold">Succession Parameter</th>
-                        <th className="p-3.5 sm:p-4 font-bold text-slate-600">Unregistered White Paper Will</th>
-                        <th className="p-3.5 sm:p-4 font-bold text-[#C65378]">SRO Book III Registered Will</th>
+                        <th className="p-3.5 sm:p-4 font-bold">Estate Parameter</th>
+                        <th className="p-3.5 sm:p-4 font-bold text-slate-600">Plain White Paper Will</th>
+                        <th className="p-3.5 sm:p-4 font-bold text-[#C65378]">SRO Book III Filed Will</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -598,16 +598,16 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                       <tr>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Customary Clan Fights</td>
                         <td className="p-3.5 sm:p-4 text-amber-700">High risk of forgery or coercion claims</td>
-                        <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Rebutted by official Sub-Registrar attestation</td>
+                        <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Rebutted by official SRO witness signing</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Municipal &amp; DC Revenue Name Change</td>
+                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">City &amp; DC Revenue Name Change</td>
                         <td className="p-3.5 sm:p-4">Frequent objections, lengthy hearings</td>
                         <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Expedited name change in Shillong &amp; DC records</td>
                       </tr>
                       <tr>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Bank Locker &amp; Asset Release</td>
-                        <td className="p-3.5 sm:p-4">Demands indemnity bonds, surety affidavits</td>
+                        <td className="p-3.5 sm:p-4">Demands indemnity bonds, surety sworn notes</td>
                         <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Accepted swiftly by nationalized &amp; private banks</td>
                       </tr>
                     </tbody>
@@ -632,7 +632,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     Under Section 213 read with Section 57 of the Indian Succession Act, 1925, getting court probate for a Will is needed <strong>only within the historical presidency towns of Mumbai, Kolkata, and Chennai</strong>. Because the State of Meghalaya lies outside these presidency boundaries, court probate is strictly <strong>non-needed</strong>.
                   </p>
                   <p>
-                    The <strong>High Court of Meghalaya at Shillong</strong> has upheld in authoritative verdicts that testamentary heirs can directly apply for title name change, municipal record substitution with the Shillong Municipal Board, and bank deposit transfer without getting a probate decree. However, testators often opt for voluntary probate or Letters of Administration if substantial cross-border assets are situated in Kolkata or other metro areas.
+                    The <strong>High Court of Meghalaya at Shillong</strong> has upheld in authoritative verdicts that Will heirs can directly apply for title name change, city record substitution with the Shillong City Board, and bank deposit transfer without getting a probate decree. However, Will makers often opt for voluntary probate or Letters of Care if substantial cross-border assets are situated in Kolkata or other metro areas.
                   </p>
                 </div>
               </div>
@@ -643,7 +643,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>Judicial Protection for Self-Acquired Assets</span>
                 </div>
                 <p className="leading-relaxed">
-                  In multiple benchmark decisions, the High Court of Meghalaya has affirmed that where a Khasi or Garo Will maker demonstrates that the property was earned through personal labor, salary, or shop business (and not drawn from family clan heritage), customary matrilineal succession cannot restrict the Will maker&apos;s constitutional and legal right to bequeath that property to any designated successor.
+                  In multiple benchmark decisions, the High Court of Meghalaya has affirmed that where a Khasi or Garo Will maker demonstrates that the asset was earned through personal labor, salary, or shop business (and not drawn from family clan heritage), customary matrilineal estate cannot restrict the Will maker&apos;s constitutional and legal right to bequeath that asset to any designated successor.
                 </p>
               </div>
             </section>
@@ -657,10 +657,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Meghalaya Sub-Registrar Directory &amp; DC Office Hubs
+                  5. Meghalaya SRO Directory &amp; DC Office Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Will registration in Meghalaya is administered by Sub-Registrars operating within the Deputy Commissioner&apos;s (DC) Office in each district headquarters. Search below to find your jurisdictional registry office:
+                  Will filing in Meghalaya is administered by Sub-Registrars operating within the Deputy Commissioner&apos;s (DC) Office in each district headquarters. Search below to find your local registry office:
                 </p>
               </div>
 
@@ -698,7 +698,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-slate-100 pb-3">
                     <div>
                       <span className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                        Jurisdictional Registry Counter
+                        Local Registry Counter
                       </span>
                       <h3 className="text-base sm:text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -735,7 +735,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-200/70 text-xs">
                     <span className="text-slate-500">
-                      Meghalaya Registration Portal: <strong>meghalaya.gov.in</strong>
+                      Meghalaya Filing Portal: <strong>meghalaya.gov.in</strong>
                     </span>
                     <a
                       href="/contact"
@@ -761,7 +761,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   6. Regional Cities: District-Wise Will Drafting in Meghalaya
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Meghalaya range from prime home assets and shop establishments in Shillong, farm and horticultural estates in the Khasi and Jaintia Hills, plantation holdings in the Garo Hills, to industrial belts along the Ri-Bhoi highway. Our estate lawyers deliver customized legal drafting, DC Office Sub-Registrar scheduling, and doorstep signing across all regional centers:
+                  Estate assets in Meghalaya range from prime home assets and shop establishments in Shillong, farm and horticultural estates in the Khasi and Jaintia Hills, plantation holdings in the Garo Hills, to plant belts along the Ri-Bhoi highway. Our estate lawyers deliver customized legal drafting, DC Office SRO scheduling, and doorstep signing across all regional centers:
                 </p>
               </div>
 
@@ -800,13 +800,13 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Secretariat Hills</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Sub-Registrar appointment booking, lawyer accompaniment, and Section 31 doorstep signing for elderly testators across Greater Shillong.
+                        SRO appointment booking, lawyer accompaniment, and Section 31 doorstep signing for elderly Will makers across Greater Shillong.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · Nominal Registration Fee</span>
+                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · Nominal Filing Fee</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -844,7 +844,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Tura</strong> for urban home bungalows, retail trade entities, and farm land holdings. Navigates Garo customary law (*A&apos;king* land and *Nokkrom* succession) while legally safeguarding self-acquired urban assets to designated family successors.
+                      Customized <strong>Will drafting services in Tura</strong> for urban home bungalows, retail trade entities, and farm land holdings. Navigates Garo customary law (*A&apos;king* land and *Nokkrom* estate) while legally safeguarding self-acquired urban assets to designated family successors.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -853,7 +853,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Hawakhana, Tura</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        In-person lawyer support, Garo customary asset alignment, and Book III registration before the West Garo Hills Sub-Registrar.
+                        In-person lawyer support, Garo customary asset alignment, and Book III filing before the West Garo Hills SRO.
                       </p>
                     </div>
                   </div>
@@ -897,7 +897,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Jowai</strong> for shop showrooms around Iawmusiang, transport fleets, and family estates. Harmonizes Jaintia matrilineal custom (*Ka Khadduh* custody) with clear testamentary allocations for children, spouses, and business co-owners.
+                      Authoritative <strong>Will drafting services in Jowai</strong> for shop showrooms around Iawmusiang, transport fleets, and family estates. Harmonizes Jaintia matrilineal custom (*Ka Khadduh* custody) with clear Will allocations for children, spouses, and business co-owners.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -906,13 +906,13 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Ladthalaboh, Jowai</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        SRO registration token scheduling, doctor mental fitness certification, and seamless municipal record transfer.
+                        SRO filing token scheduling, doctor mental fitness certification, and seamless city record transfer.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · Jaintia Succession</span>
+                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · Jaintia Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -931,7 +931,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; Highway Growth Corridor
+                        Plant &amp; Highway Growth Corridor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DC Office SRO Ri-Bhoi
@@ -943,7 +943,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Byrnihat Industrial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Byrnihat Plant</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Umsning</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Umiam Lake Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Bhoirymbong</span>
@@ -959,13 +959,13 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Nongpoh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Corporate business succession planning, partnership transfer clauses, and Sub-Registrar registration support.
+                        Corporate business estate planning, partnership transfer clauses, and SRO filing support.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Shop &amp; Industrial Focus</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Plant Focus</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1012,7 +1012,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Williamnagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Biometric registration support, land revenue record coordination, and rural family estate counsel.
+                        Biometric filing support, land revenue record coordination, and rural family estate counsel.
                       </p>
                     </div>
                   </div>
@@ -1056,7 +1056,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Baghmara</strong> for border trading enterprises, shop establishments, and family land. Ensures seamless testamentary compliance with local Garo customs and district council registration steps.
+                      Dedicated <strong>Will drafting services in Baghmara</strong> for border trading enterprises, shop establishments, and family land. Ensures seamless Will compliance with local Garo customs and district council filing steps.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1065,7 +1065,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Baghmara</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Border estate planning, shop trading firm succession, and Sub-Registrar signing.
+                        Border estate planning, shop trading firm estate, and SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1109,7 +1109,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Nongstoin</strong> for timber estates, farm lands, and home assets under Khasi customary Syiemship domains. Formulates clear bequests for self-acquired assets to eliminate family inheritance friction.
+                      Full <strong>Will drafting services in Nongstoin</strong> for timber estates, farm lands, and home assets under Khasi customary Syiemship domains. Formulates clear bequests for self-acquired assets to eliminate family estate friction.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1118,7 +1118,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Nongstoin</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Syiemship customary alignment, land revenue check, and Sub-Registrar Book III signing.
+                        Syiemship customary alignment, land revenue check, and SRO Book III signing.
                       </p>
                     </div>
                   </div>
@@ -1162,7 +1162,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Khliehriat</strong> for shop businesses, logistics truck fleets, and real estate assets along the NH-6 highway. Protects family heirs from disputed claims through verified legal clauses and Sub-Registrar registration.
+                      Authoritative <strong>Will drafting services in Khliehriat</strong> for shop businesses, logistics truck fleets, and real estate assets along the NH-6 highway. Protects family heirs from disputed claims through checked legal clauses and SRO filing.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1171,7 +1171,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, NH 6, Khliehriat</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Shop asset succession, partnership transfer clauses, and Sub-Registrar registration.
+                        Shop asset estate, partnership transfer clauses, and SRO filing.
                       </p>
                     </div>
                   </div>
@@ -1201,10 +1201,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 55 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. 5-Step SOP: Drafting to SRO Registration in Meghalaya
+                  7. 5-Step SOP: Drafting to SRO Filing in Meghalaya
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Signing an enforceable Will in Meghalaya follows an orderly five-stage legal process making sure full conformity with customary traditions and legal registration acts:
+                  Signing an enforceable Will in Meghalaya follows an orderly five-stage legal process making sure full conformity with customary traditions and legal filing acts:
                 </p>
               </div>
 
@@ -1215,7 +1215,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Classify Self-Acquired vs. Family Clan Property
+                      Classify Self-Acquired vs. Family Clan Asset
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Compile an exhaustive asset schedule clearly distinguishing family clan lands (<em>Ri Kur</em> / <em>A&apos;king</em>) from self-earned real estate, bank deposits, mutual funds, shop firms, and vehicles.
@@ -1232,7 +1232,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                       Senior Lawyer Drafting &amp; Customary Harmonization
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal lawyers formulate customized testamentary bequests, appointing an executor, guardian for minor children, and inserting legal revocations of any previous instruments.
+                      Our legal lawyers formulate customized Will bequests, appointing an executor, guardian for minor children, and inserting legal revocations of any previous instruments.
                     </p>
                   </div>
                 </div>
@@ -1246,7 +1246,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                       Signing Before Two Independent Adult Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the document on standard A4 paper. The Will maker signs or affixes thumb impressions on every page in the physical presence of two adult witnesses who hold zero beneficial interest in the estate.
+                      Print the paper on standard A4 paper. The Will maker signs or affixes thumb impressions on every page in the physical presence of two adult witnesses who hold zero beneficial interest in the estate.
                     </p>
                   </div>
                 </div>
@@ -1257,10 +1257,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Appointment Booking at District DC Office Sub-Registrar
+                      Appointment Booking at District DC Office SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Book an official appointment at the Sub-Registrar counter in the Deputy Commissioner&apos;s Office in Shillong, Tura, Jowai, or Nongpoh and deposit the flat ₹100 registration fee.
+                      Book an official appointment at the SRO counter in the Deputy Commissioner&apos;s Office in Shillong, Tura, Jowai, or Nongpoh and deposit the flat ₹100 filing fee.
                     </p>
                   </div>
                 </div>
@@ -1271,7 +1271,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Biometric Attestation &amp; Permanent Book III Custody
+                      Biometric Witness Signing &amp; Permanent Book III Custody
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Will maker and both witnesses attend the SRO for oral check, digital photo capture, and biometric thumbprinting. The Will is sealed into permanent Book III government custody.
@@ -1290,31 +1290,31 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 55 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Registration Act: Home Visits in Meghalaya
+                  8. Section 31 Filing Act: Home Visits in Meghalaya
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  For senior citizens, bedridden testators, or hospital inpatients in Meghalaya who cannot physically travel to the DC Office registry counter, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the Will maker&apos;s residence or hospital:
+                  For senior citizens, bedridden Will makers, or hospital inpatients in Meghalaya who cannot physically travel to the DC Office registry counter, <strong>Section 31 of the Filing Act, 1908</strong> allows the SRO to visit the Will maker&apos;s residence or hospital:
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
                   <div className="p-4 rounded-xl bg-slate-50 space-y-2 border border-slate-100">
-                    <span className="font-extrabold text-slate-900 block">1. Medical Fitness Certificate</span>
+                    <span className="font-extrabold text-slate-900 block">1. Medical Fitness Paper</span>
                     <p className="text-slate-600 leading-relaxed">
-                      An MBBS/MD doctor issues a paper confirming testamentary sound mind and inability to travel due to age or medical infirmity.
+                      An MBBS/MD doctor issues a paper confirming Will sound mind and inability to travel due to age or medical infirmity.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 space-y-2 border border-slate-100">
                     <span className="font-extrabold text-slate-900 block">2. Formal DC Office Requisition</span>
                     <p className="text-slate-600 leading-relaxed">
-                      Our legal counsel files an urgent requisition under Section 31 with the Sub-Registrar enclosing the medical paper and property inventory.
+                      Our legal counsel files an urgent requisition under Section 31 with the SRO enclosing the medical paper and asset inventory.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 space-y-2 border border-slate-100">
                     <span className="font-extrabold text-slate-900 block">3. Doorstep SRO Attendance</span>
                     <p className="text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits your home in Shillong, Tura, Jowai, or suburbs with portable registration equipment to capture signatures and biometrics.
+                      The SRO visits your home in Shillong, Tura, Jowai, or suburbs with portable filing equipment to capture signatures and biometrics.
                     </p>
                   </div>
                 </div>
@@ -1330,10 +1330,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Essential Documents for Meghalaya Will Registration
+                  9. Essential Papers for Meghalaya Will Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Review the essential documents required for drafting and registering a Will before the Sub-Registrar in Meghalaya. Check each item as you prepare:
+                  Review the essential papers required for drafting and registering a Will before the SRO in Meghalaya. Check each item as you prepare:
                 </p>
               </div>
 
@@ -1389,10 +1389,10 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 55 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Property Types: Self-Acquired Assets &amp; Land Holdings
+                  10. Asset Types: Self-Acquired Assets &amp; Land Holdings
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Different property categories in Meghalaya require precise legal drafting to make sure testamentary legality:
+                  Different asset categories in Meghalaya require precise legal drafting to make sure Will legality:
                 </p>
               </div>
 
@@ -1411,7 +1411,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     European Ward Assets in Shillong
                   </span>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Freehold and leasehold plots located within the historical European Ward of Shillong follow general civil transfer laws and can be transferred through a registered Will.
+                    Freehold and leasehold plots located within the historical European Ward of Shillong follow general civil transfer laws and can be transferred through a filed Will.
                   </p>
                 </div>
 
@@ -1471,7 +1471,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                         <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">₹0 (Plain A4 Paper Drafting)</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">SRO Registration Fee</td>
+                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">SRO Filing Fee</td>
                         <td className="p-3.5 sm:p-4">Flat ₹100</td>
                         <td className="p-3.5 sm:p-4">₹2,000 to ₹5,000 inflated fee</td>
                         <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Exact ₹100 govt challan guidance</td>
@@ -1527,7 +1527,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Self-acquired property clauses</span>
+                        <span>Self-acquired asset clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1596,7 +1596,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-all">
                   <div className="space-y-4">
                     <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Executive</span>
-                    <h3 className="text-xl font-extrabold text-slate-900">SRO Registration Package</h3>
+                    <h3 className="text-xl font-extrabold text-slate-900">SRO Filing Package</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
                       <span className="text-xs text-slate-500">one-time</span>
@@ -1647,7 +1647,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   Frequently Asked Questions: Will Drafting in Meghalaya
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Answers to frequent questions about Meghalaya succession, Khasi-Garo customary inheritance, and Will registration:
+                  Answers to frequent questions about Meghalaya estate, Khasi-Garo customary estate, and Will filing:
                 </p>
               </div>
 
@@ -1703,16 +1703,16 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Act No. 39 of 1925)
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Sections 57, 59, 63, 67, and 213 (sound mind, signing formalities, attestation rules, and probate exemption outside presidency towns).
+                    Sections 57, 59, 63, 67, and 213 (sound mind, signing formalities, witness signing rules, and probate exemption outside presidency towns).
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
                   <span className="font-bold text-slate-900 block text-xs">
-                    The Registration Act, 1908 (Act No. 16 of 1908)
+                    The Filing Act, 1908 (Act No. 16 of 1908)
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Sections 18(e), 31, 32, and 40 (optional Will registration, Section 31 doorstep visits, and permanent Book III government repository deposit).
+                    Sections 18(e), 31, 32, and 40 (a choice Will filing, Section 31 doorstep visits, and permanent Book III government repository deposit).
                   </p>
                 </div>
 
@@ -1721,7 +1721,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     The Khasi Social Custom of Lineage Act, 1997
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Defines Khasi customary matrilineal descent, distinguishing family clan lineage from self-acquired property rights.
+                    Defines Khasi customary matrilineal descent, distinguishing family clan lineage from self-acquired asset rights.
                   </p>
                 </div>
 
@@ -1730,7 +1730,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                     Meghalaya Transfer of Land (Regulation) Act, 1971
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Legal regulations restricting transfer of tribal land to non-tribals, safeguarding indigenous property rights in testamentary dispositions.
+                    Legal regulations restricting transfer of tribal land to non-tribals, safeguarding indigenous asset rights in Will gifts.
                   </p>
                 </div>
               </div>
@@ -1742,7 +1742,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 Protect Your Meghalaya Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                Ensure your self-acquired assets, shop firms, and bank accounts are distributed without customary discord or clan fights. Draft your legally verified Will today with WillDrafting.in.
+                Ensure your self-acquired assets, shop firms, and bank accounts are distributed without customary discord or clan fights. Draft your legally checked Will today with WillDrafting.in.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -1761,7 +1761,29 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

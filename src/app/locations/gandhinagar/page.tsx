@@ -147,7 +147,7 @@ export default function GandhinagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gandhinagar: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business.",
+          "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO filing, GUDA sector plot transfer, and business.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function GandhinagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gandhinagar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and doorstep execution support across Gandhinagar, GIFT.",
+          "Professional Will drafting, lawyer check, Garvi Gujarat SRO filing, and doorstep signing support across Gandhinagar, GIFT.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -260,38 +260,38 @@ export default function GandhinagarLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Gandhinagar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Gandhinagar.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Gandhinagar.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Gandhinagar real estate including GUDA residential sector plots, GIFT City apartments, agricultural land in Kalol or Mansa, and financial portfolios. Designate beneficiaries and an executor.",
+            text: "List your Gandhinagar real estate including GUDA home sector plots, GIFT City apartments, farm land in Kalol or Mansa, and financial portfolios. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Garvi Gujarat SRO Slot",
-            text: "Schedule your registration appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your relevant Gandhinagar SRO and remit the flat ₹100 registration fee via Cyber Treasury Gujarat.",
+            text: "Schedule your filing appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your relevant Gandhinagar SRO and remit the flat ₹100 filing fee via Cyber Treasury Gujarat.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Gandhinagar SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

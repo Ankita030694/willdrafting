@@ -96,60 +96,60 @@ const COMPARISON_DATA: ComparisonRow[] = [
 const TOC_ITEMS = [
   { id: "executive-brief", label: "Executive Summary" },
   { id: "legal-scope", label: "1. Legal Framework & Scope" },
-  { id: "christian-rules", label: "2. Christian Succession Rules" },
-  { id: "parsi-rules", label: "3. Parsi Succession & 1991 Reform" },
+  { id: "christian-rules", label: "2. Christian Estate Rules" },
+  { id: "parsi-rules", label: "3. Parsi Estate & 1991 Reform" },
   { id: "succession-matrix", label: "4. Personal Law Comparison Matrix" },
-  { id: "testamentary-freedom", label: "5. Testamentary Freedom vs Intestacy" },
+  { id: "testamentary-freedom", label: "5. Will Freedom vs Intestacy" },
   { id: "statutory-blueprint", label: "6. Visual Blueprint & Anatomy" },
-  { id: "step-by-step-sop", label: "7. 6-Stage Will Execution SOP" },
+  { id: "step-by-step-sop", label: "7. 6-Stage Will Signing SOP" },
   { id: "privileged-wills", label: "8. Privileged Wills for Armed Forces" },
-  { id: "share-calculator", label: "9. Interactive Succession Calculator" },
+  { id: "share-calculator", label: "9. Free Estate Tool" },
   { id: "common-mistakes", label: "10. Four Invalidation Risks" },
   { id: "specialized-scenarios", label: "11. Specialized Scenarios & Inter-Faith" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Official Legal Authorities" },
+  { id: "statutory-citations", label: "13. Official Legal Offices" },
 ];
 
 const FAQS = [
   {
     q: "Which law governs Wills made by Christians and Parsis in India?",
-    a: "Testamentary succession (making a Will) for both Christians and Parsis is governed by Part VI of the Indian Succession Act, 1925 (Sections 59 to 191). If a person dies intestate without leaving a Will, Christian succession is governed by Part V Chapter II (Sections 31 to 49), while Parsi intestate succession is governed by Part V Chapter III (Sections 50 to 56).",
+    a: "Will estate (making a Will) for both Christians and Parsis is governed by Part VI of the Indian Succession Act, 1925 (Sections 59 to 191). If a person dies no-Will without leaving a Will, Christian estate is governed by Part V Chapter II (Sections 31 to 49), while Parsi no-Will estate is governed by Part V Chapter III (Sections 50 to 56).",
   },
   {
-    q: "Can a Christian or Parsi individual bequeath 100% of their property by Will?",
-    a: "Yes. Unlike Muslim personal law, which restricts bequests to one-third of the estate without heir consent, and Hindu coparcenary law, which grants birthrights in ancestral property, Christians and Parsis have complete testamentary freedom. Under Section 59 of the Indian Succession Act, you can bequeath 100% of your self-acquired and inherited property to any chosen beneficiary, trust, or charity.",
+    q: "Can a Christian or Parsi single bequeath 100% of their asset by Will?",
+    a: "Yes. Unlike Muslim personal law, which restricts bequests to one-third of the estate without heir consent, and Hindu coparcenary law, which grants birthrights in family asset, Christians and Parsis have complete Will freedom. Under Section 59 of the Indian Succession Act, you can bequeath 100% of your self-acquired and inherited asset to any chosen heir, trust, or charity.",
   },
   {
     q: "What is a Christian widow or widower's legal share if there is no Will?",
-    a: "Under Section 33 of the Indian Succession Act, 1925, if an intestate leaves a surviving spouse and lineal descendants (children or grandchildren), the spouse receives one-third (1/3) of the estate and children divide the remaining two-thirds (2/3). If there are no children but kindred survive (parents or siblings), the spouse receives one-half (1/2). If neither descendants nor kindred exist, the surviving spouse takes the entire 100% estate.",
+    a: "Under Section 33 of the Indian Succession Act, 1925, if an no-Will leaves a surviving spouse and lineal descendants (children or grandchildren), the spouse receives one-third (1/3) of the estate and children divide the remaining two-thirds (2/3). If there are no children but kindred survive (parents or siblings), the spouse receives one-half (1/2). If neither descendants nor kindred exist, the surviving spouse takes the entire 100% estate.",
   },
   {
-    q: "Do Parsi sons and daughters have equal inheritance rights?",
-    a: "Yes. Prior to the Indian Succession (Amendment) Act, 1991, sons received twice the share of daughters in a Parsi father's estate. The 1991 amendment eliminated this disparity. Under Section 51(1) of the Indian Succession Act, daughters and sons now receive identical, equal shares in the intestate estate of either parent.",
+    q: "Do Parsi sons and daughters have equal estate rights?",
+    a: "Yes. Prior to the Indian Succession (Amendment) Act, 1991, sons received twice the share of daughters in a Parsi father's estate. The 1991 amendment eliminated this disparity. Under Section 51(1) of the Indian Succession Act, daughters and sons now receive identical, equal shares in the no-Will estate of either parent.",
   },
   {
-    q: "Do parents receive a share in a Parsi person's intestate property?",
-    a: "Yes, when a male Parsi dies intestate. Under Section 51(2) of the Indian Succession Act, 1925, when a male Parsi dies leaving a widow and children, his father and mother each receive a share equal to half the share of each child. However, when a female Parsi dies leaving a widower and children, her estate is divided equally between widower and children without an automatic statutory share for her parents.",
+    q: "Do parents receive a share in a Parsi person's no-Will asset?",
+    a: "Yes, when a male Parsi dies no-Will. Under Section 51(2) of the Indian Succession Act, 1925, when a male Parsi dies leaving a widow and children, his father and mother each receive a share equal to half the share of each child. However, when a female Parsi dies leaving a widower and children, her estate is divided equally between widower and children without an automatic legal share for her parents.",
   },
   {
-    q: "Is probate of a Will compulsory for Christians and Parsis in India?",
-    a: "Probate is not mandatory for Christians across India. The Supreme Court in Clarence Pais v. Union of India (2001) established that Section 213 does not require mandatory probate for Indian Christian Wills. For Parsis, probate was historically required only for Wills made within or concerning properties in the Ordinary Original Civil Jurisdiction of Bombay, Calcutta, or Madras High Courts. However, probate or registration speeds up bank transmissions and mutations everywhere.",
+    q: "Is probate of a Will needed for Christians and Parsis in India?",
+    a: "Probate is not needed for Christians across India. The Supreme Court in Clarence Pais v. Union of India (2001) established that Section 213 does not require needed probate for Indian Christian Wills. For Parsis, probate was historically required only for Wills made within or concerning assets in the Ordinary Original Civil Area of Bombay, Calcutta, or Madras High Courts. However, probate or filing speeds up bank transmissions and mutations everywhere.",
   },
   {
     q: "What is a Privileged Will under the Indian Succession Act, 1925?",
-    a: "Under Sections 65 and 66 of the Indian Succession Act, a Privileged Will is an informal Will permitted exclusively to soldiers, airmen engaged in actual warfare or expeditions, and mariners at sea who are at least 18 years old. Such Wills can be executed orally before two witnesses, written entirely in the testator's hand without witnesses, or signed without attestation. Ordinary civilians must execute standard unprivileged Wills under Section 63 with two witnesses.",
+    a: "Under Sections 65 and 66 of the Indian Succession Act, a Privileged Will is an informal Will permitted exclusively to soldiers, airmen engaged in actual warfare or expeditions, and mariners at sea who are at least 18 years old. Such Wills can be signed orally before two witnesses, written entirely in the Will maker's hand without witnesses, or signed without witness signing. Ordinary civilians must execute standard unprivileged Wills under Section 63 with two witnesses.",
   },
   {
-    q: "Can an attesting witness inherit property under a Christian or Parsi Will?",
-    a: "No. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy made to an attesting witness, or to the husband or wife of an attesting witness, is completely void. However, the witness's attestation remains valid. To protect your beneficiaries, always ensure that your two attesting witnesses are independent adults who receive nothing under the Will.",
+    q: "Can an signing witness inherit asset under a Christian or Parsi Will?",
+    a: "No. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy made to an signing witness, or to the husband or wife of an signing witness, is completely void. However, the witness's witness signing remains valid. To protect your heirs, always ensure that your two signing witnesses are independent adults who receive nothing under the Will.",
   },
   {
-    q: "Does the concept of Ancestral Property apply to Christians or Parsis?",
-    a: "No. The Mitakshara coparcenary concept of ancestral property and birthrights applies exclusively to Hindus, Buddhists, Jains, and Sikhs governed by Hindu law. In Christian and Parsi succession, there is no coparcenary or right by birth. Any property inherited from parents or ancestors becomes the absolute personal property of the recipient, which can be transferred or willed away freely.",
+    q: "Does the concept of Family Asset apply to Christians or Parsis?",
+    a: "No. The Mitakshara joint concept of family asset and birthrights applies exclusively to Hindus, Buddhists, Jains, and Sikhs governed by Hindu law. In Christian and Parsi estate, there is no joint or right by birth. Any asset inherited from parents or ancestors becomes the absolute personal asset of the recipient, which can be transferred or willed away freely.",
   },
   {
-    q: "How can I calculate legal heir shares for an intestate Christian or Parsi estate?",
-    a: "You can use the WillDrafting Succession Calculator at /tools/succession-calculator. By selecting religion (Christian or Parsi), gender, marital status, and surviving family members, our algorithmic engine calculates exact percentage shares and rupee allocations according to Sections 33, 42, 51, and 54 of the Indian Succession Act, 1925.",
+    q: "How can I calculate legal heir shares for an no-Will Christian or Parsi estate?",
+    a: "You can use the WillDrafting Estate Tool at /tools/estate-tool. By selecting religion (Christian or Parsi), gender, marital status, and surviving family members, our algorithmic engine calculates exact percentage shares and rupee allocations according to Sections 33, 42, 51, and 54 of the Indian Succession Act, 1925.",
   },
 ];
 
@@ -169,7 +169,7 @@ export default function ChristianParsiWillClient() {
   const [activeId, setActiveId] = useState<string>("executive-brief");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  // Interactive Quick Succession Share Simulator State
+  // Free Quick Estate Share Simulator State
   const [calcReligion, setCalcReligion] = useState<"christian" | "parsi">("christian");
   const [calcDeceasedGender, setCalcDeceasedGender] = useState<"male" | "female">("male");
   const [hasSpouse, setHasSpouse] = useState<boolean>(true);
@@ -326,7 +326,7 @@ export default function ChristianParsiWillClient() {
             totalChildren: (unitPercent * childCount).toFixed(1),
             mother: "0.0",
             father: "0.0",
-            rule: "Section 51(1): Widower and each child divide estate equally. Parents of deceased female do not take automatic statutory share.",
+            rule: "Section 51(1): Widower and each child divide estate equally. Parents of deceased female do not take automatic legal share.",
           };
         } else if (hasSpouse && childCount === 0) {
           return {
@@ -386,7 +386,7 @@ export default function ChristianParsiWillClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Understand testamentary freedom, intestate shares under Part V (Sections 31 to 56), and privileged Wills for defense personnel. Safeguard your family inheritance with advocate-verified estate planning.
+            Understand Will freedom, no-Will shares under Part V (Sections 31 to 56), and privileged Wills for defense personnel. Safeguard your family estate with lawyer-checked estate planning.
           </p>
 
           {/* CTA Buttons */}
@@ -403,7 +403,7 @@ export default function ChristianParsiWillClient() {
               href="#christian-rules"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all text-sm sm:text-base"
             >
-              <span>Explore Succession Rules</span>
+              <span>Explore Estate Rules</span>
             </a>
           </div>
         </div>
@@ -421,7 +421,7 @@ export default function ChristianParsiWillClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -526,7 +526,7 @@ export default function ChristianParsiWillClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Indian Succession Act, 1925 (Part V ss. 31-56, Part VI ss. 59-191). Affirmed by Supreme Court in Clarence Pais (2001).
@@ -550,31 +550,31 @@ export default function ChristianParsiWillClient() {
                 </span>
               </div>
               <div className="text-lg font-bold text-slate-900 mb-3">
-                Christian and Parsi Succession Framework in India
+                Christian and Parsi Estate Framework in India
               </div>
               <ul className="space-y-2.5 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>100% Testamentary Freedom:</strong> Unlike Muslim personal law (1/3 bequest cap) or Hindu coparcenary law (birthright claims), Christians and Parsis can bequeath their entire estate to anyone via a valid Will.
+                    <strong>100% Will Freedom:</strong> Unlike Muslim personal law (1/3 bequest cap) or Hindu coparcenary law (birthright claims), Christians and Parsis can bequeath their entire estate to anyone via a valid Will.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Christian Intestate Rules (ss. 31-49):</strong> If no Will exists, a surviving spouse receives 1/3 if children survive, 1/2 if only parents or siblings survive, and 100% if no kindred survive. Children share equally regardless of gender.
+                    <strong>Christian No-Will Rules (ss. 31-49):</strong> If no Will exists, a surviving spouse receives 1/3 if children survive, 1/2 if only parents or siblings survive, and 100% if no kindred survive. Children share equally regardless of gender.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Parsi Intestate Rules (ss. 50-56):</strong> Reformed in 1991 to establish strict equality between sons and daughters. In a male Parsi intestate estate, parents receive a statutory share equal to half of each child&apos;s share.
+                    <strong>Parsi No-Will Rules (ss. 50-56):</strong> Reformed in 1991 to establish strict equality between sons and daughters. In a male Parsi no-Will estate, parents receive a legal share equal to half of each child&apos;s share.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Probate Clarity:</strong> The Supreme Court in <em>Clarence Pais v. Union of India</em> confirmed that probate is not mandatory for Indian Christians, eliminating long-standing administrative confusion.
+                    <strong>Probate Clarity:</strong> The Supreme Court in <em>Clarence Pais v. Union of India</em> confirmed that probate is not needed for Indian Christians, eliminating long-standing office confusion.
                   </span>
                 </li>
               </ul>
@@ -587,28 +587,28 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 1: STATUTORY ARCHITECTURE</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Legal Scope: Christian &amp; Parsi Succession Framework
+                1. Legal Scope: Christian &amp; Parsi Estate Framework
               </h2>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                In India, inheritance and succession are partitioned along religious personal laws. While Hindus, Sikhs, Buddhists, and Jains are governed by the Hindu Succession Act 1956, and Muslims are governed by uncodified Shariat principles, Indian Christians and Parsis are governed directly by the <strong>Indian Succession Act, 1925 (Act No. 39 of 1925)</strong>.
+                In India, estate and estate are partitioned along religious personal laws. While Hindus, Sikhs, Buddhists, and Jains are governed by the Hindu Succession Act 1956, and Muslims are governed by uncodified Shariat principles, Indian Christians and Parsis are governed directly by the <strong>Indian Succession Act, 1925 (Act No. 39 of 1925)</strong>.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                The Indian Succession Act (ISA) divides succession into two distinct operational branches:
+                The Indian Succession Act (ISA) divides estate into two distinct operational branches:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs">
                   <div className="font-bold text-sm text-slate-900 mb-1 flex items-center gap-2">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Testamentary Succession (Part VI)</span>
+                    <span>Will Estate (Part VI)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governed by Sections 59 to 191. Applies uniformly to Christians and Parsis when a person executes a valid Last Will and Testament. Provides complete autonomy to distribute assets without statutory interference.
+                    Governed by Sections 59 to 191. Applies uniformly to Christians and Parsis when a person executes a valid Last Will and Testament. Provides complete autonomy to distribute assets without legal interference.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs">
                   <div className="font-bold text-sm text-slate-900 mb-1 flex items-center gap-2">
                     <Compass className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Intestate Succession (Part V)</span>
+                    <span>No-Will Estate (Part V)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Applies automatically when a person dies without a Will. Chapter II (Sections 31 to 49) governs Christians, while Chapter III (Sections 50 to 56) provides specialized rules for Parsis.
@@ -616,7 +616,7 @@ export default function ChristianParsiWillClient() {
                 </div>
               </div>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding these distinct statutory provisions is crucial. If you execute a Will, you bypass rigid intestate statutory formulas. If you fail to execute a Will, state-mandated formulas dictate exact rupee and percentage splits among your legal heirs.
+                Understanding these distinct legal rules is crucial. If you execute a Will, you bypass rigid no-Will legal formulas. If you fail to execute a Will, state-mandated formulas dictate exact rupee and percentage splits among your legal heirs.
               </p>
             </section>
 
@@ -627,10 +627,10 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 2: CHRISTIAN INTESTACY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Christian Succession: Legal Heirs &amp; Share Allocations
+                2. Christian Estate: Legal Heirs &amp; Share Allocations
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                When an Indian Christian passes away without leaving a Will, property devolves under Sections 31 to 49 of the Indian Succession Act, 1925. The statute makes no distinction between ancestral and self-acquired property; all assets merge into one unified estate.
+                When an Indian Christian passes away without leaving a Will, asset devolves under Sections 31 to 49 of the Indian Succession Act, 1925. The statute makes no distinction between family and self-acquired asset; all assets merge into one unified estate.
               </p>
 
               {/* Statutory Rules Accordion-style Grid */}
@@ -667,7 +667,7 @@ export default function ChristianParsiWillClient() {
                     </span>
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Where the intestate leaves neither children nor any distant blood relatives, the surviving spouse inherits the entire 100% estate absolutely.
+                    Where the no-Will leaves neither children nor any distant blood relatives, the surviving spouse inherits the entire 100% estate absolutely.
                   </p>
                 </div>
 
@@ -679,7 +679,7 @@ export default function ChristianParsiWillClient() {
                     </span>
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 35 explicitly states that a widower has the exact same rights in respect of his deceased wife&apos;s property as a widow has in respect of her deceased husband&apos;s property.
+                    Section 35 explicitly states that a widower has the exact same rights in respect of his deceased wife&apos;s asset as a widow has in respect of her deceased husband&apos;s asset.
                   </p>
                 </div>
               </div>
@@ -687,7 +687,7 @@ export default function ChristianParsiWillClient() {
               {/* Representative Calculation Table */}
               <div className="pt-2">
                 <h4 className="font-bold text-sm text-slate-900 mb-2">
-                  Representative Distribution Table: Christian Intestate Estate (₹1.20 Crore)
+                  Agent Split Table: Christian No-Will Estate (₹1.20 Crore)
                 </h4>
                 <div className="rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
                   <div className="overflow-x-auto">
@@ -695,7 +695,7 @@ export default function ChristianParsiWillClient() {
                       <thead className="bg-[#172228] text-white">
                         <tr>
                           <th className="py-2.5 px-4 font-semibold">Legal Heir Category</th>
-                          <th className="py-2.5 px-4 font-semibold">Statutory Authority</th>
+                          <th className="py-2.5 px-4 font-semibold">Legal Office</th>
                           <th className="py-2.5 px-4 font-semibold">Fractional Share</th>
                           <th className="py-2.5 px-4 font-semibold text-right">Rupee Allocation</th>
                         </tr>
@@ -745,7 +745,7 @@ export default function ChristianParsiWillClient() {
                   <span>Landmark Supreme Court Precedent: Mary Roy v. State of Kerala (1986)</span>
                 </div>
                 <p className="leading-relaxed">
-                  Historically, Syrian Christian women in Travancore and Cochin were restricted to a dowry fraction (streedhanam) of ₹5,000 or one-third of the son&apos;s share under customary state acts. In the historic <em>Mary Roy v. State of Kerala (1986 AIR 1011)</em> ruling, the Supreme Court struck down the Travancore Christian Succession Act 1916 and Cochin Christian Succession Act 1921. The Court held that Chapter II of Part V of the Indian Succession Act 1925 applies universally, granting female Christian heirs equal rights with sons.
+                  Historically, Syrian Christian women in Travancore and Cochin were restricted to a dowry fraction (streedhanam) of ₹5,000 or one-third of the son&apos;s share under customary state acts. In the historic <em>Mary Roy v. State of Kerala (1986 AIR 1011)</em> ruling, the Supreme Court struck down the Travancore Christian Estate Act 1916 and Cochin Christian Estate Act 1921. The Court held that Chapter II of Part V of the Indian Succession Act 1925 applies universally, granting female Christian heirs equal rights with sons.
                 </p>
               </div>
             </section>
@@ -757,10 +757,10 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 3: PARSI INTESTACY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Parsi Succession Rules: 1991 Reforms &amp; Heir Shares
+                3. Parsi Estate Rules: 1991 Reforms &amp; Heir Shares
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Parsi intestate succession is regulated by Sections 50 to 56 of the Indian Succession Act, 1925. Parsi succession contains unique statutory features, especially concerning parents&apos; inheritance rights and the historic gender equality reforms of 1991.
+                Parsi no-Will estate is regulated by Sections 50 to 56 of the Indian Succession Act, 1925. Parsi estate contains unique legal features, especially concerning parents&apos; estate rights and the historic gender equality reforms of 1991.
               </p>
 
               {/* The 1991 Amendment Highlight */}
@@ -770,7 +770,7 @@ export default function ChristianParsiWillClient() {
                   <span>The 1991 Legislative Milestone (Act 51 of 1991)</span>
                 </div>
                 <p className="leading-relaxed text-amber-900">
-                  Prior to the <strong>Indian Succession (Amendment) Act, 1991</strong>, Section 51 mandated that a son received <strong>twice the share of a daughter</strong> in a Parsi father&apos;s intestate property. The 1991 reform repealed this gender discrimination completely. Today, sons and daughters inherit identical, equal shares in both maternal and paternal estates.
+                  Prior to the <strong>Indian Succession (Amendment) Act, 1991</strong>, Section 51 mandated that a son received <strong>twice the share of a daughter</strong> in a Parsi father&apos;s no-Will asset. The 1991 reform repealed this gender discrimination completely. Today, sons and daughters inherit identical, equal shares in both maternal and paternal estates.
                 </p>
               </div>
 
@@ -784,7 +784,7 @@ export default function ChristianParsiWillClient() {
                     </span>
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 51(1)(b), the widow and each surviving child receive an equal share. Furthermore, under Section 51(2), the <strong>father and mother of the deceased male Parsi each receive a share equal to half the share of each child</strong>. This unique provision ensures elderly parents of a deceased son retain financial protection.
+                    Under Section 51(1)(b), the widow and each surviving child receive an equal share. Also, under Section 51(2), the <strong>father and mother of the deceased male Parsi each receive a share equal to half the share of each child</strong>. This unique rule ensures elderly parents of a deceased son retain financial protection.
                   </p>
                 </div>
 
@@ -796,7 +796,7 @@ export default function ChristianParsiWillClient() {
                     </span>
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    When a female Parsi dies intestate leaving a widower and children, the property is divided equally among the widower and each child. Notably, the parents of a deceased female Parsi do not receive an automatic half-share under Section 51(2).
+                    When a female Parsi dies no-Will leaving a widower and children, the asset is divided equally among the widower and each child. Notably, the parents of a deceased female Parsi do not receive an automatic half-share under Section 51(2).
                   </p>
                 </div>
 
@@ -808,7 +808,7 @@ export default function ChristianParsiWillClient() {
                     </span>
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If an intestate Parsi leaves a surviving spouse but no children or grandchildren, the spouse receives one-half (1/2) of the estate. The other half passes to relatives listed in <strong>Schedule II, Part I</strong> (parents, siblings, paternal/maternal grandparents). If no relatives in Schedule II survive, the spouse takes the whole estate.
+                    If an no-Will Parsi leaves a surviving spouse but no children or grandchildren, the spouse receives one-half (1/2) of the estate. The other half passes to relatives listed in <strong>Schedule II, Part I</strong> (parents, siblings, paternal/maternal grandparents). If no relatives in Schedule II survive, the spouse takes the whole estate.
                   </p>
                 </div>
               </div>
@@ -824,7 +824,7 @@ export default function ChristianParsiWillClient() {
                 4. Intestacy Matrix: Christian vs Parsi vs Hindu Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding how Christian and Parsi succession compares to Hindu and Muslim inheritance laws illustrates why personal-law literacy is vital for multi-religious families and estate planning.
+                Understanding how Christian and Parsi estate compares to Hindu and Muslim estate laws illustrates why personal-law literacy is vital for multi-religious families and estate planning.
               </p>
 
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-2xs">
@@ -832,11 +832,11 @@ export default function ChristianParsiWillClient() {
                   <table className="w-full text-xs sm:text-sm text-left min-w-[700px]">
                     <thead className="bg-[#172228] text-white">
                       <tr>
-                        <th className="py-3 px-4 font-semibold">Succession Feature</th>
-                        <th className="py-3 px-4 font-semibold text-rose-200">Christian Succession</th>
-                        <th className="py-3 px-4 font-semibold text-amber-200">Parsi Succession</th>
+                        <th className="py-3 px-4 font-semibold">Estate Feature</th>
+                        <th className="py-3 px-4 font-semibold text-rose-200">Christian Estate</th>
+                        <th className="py-3 px-4 font-semibold text-amber-200">Parsi Estate</th>
                         <th className="py-3 px-4 font-semibold">Hindu Succession</th>
-                        <th className="py-3 px-4 font-semibold">Muslim Succession</th>
+                        <th className="py-3 px-4 font-semibold">Muslim Estate</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
@@ -862,10 +862,10 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 5: TESTAMENTARY FREEDOM</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Testamentary Freedom: No Coparcenary Restrictions
+                5. Will Freedom: No Joint Restrictions
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                One of the greatest legal advantages enjoyed by Indian Christians and Parsis under the Indian Succession Act, 1925, is <strong>complete, unrestricted testamentary freedom</strong>.
+                One of the greatest legal advantages enjoyed by Indian Christians and Parsis under the Indian Succession Act, 1925, is <strong>complete, unrestricted Will freedom</strong>.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
@@ -874,7 +874,7 @@ export default function ChristianParsiWillClient() {
                     <span>No Hindu Coparcenary Restrictions</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Hindu law, children acquire an automatic birthright (coparcenary interest) in ancestral properties from birth, limiting what a father or mother can Will away. For Christians and Parsis, the concept of joint family coparcenary does not exist. All property is held absolutely.
+                    Under Hindu law, children acquire an automatic birthright (joint interest) in family assets from birth, limiting what a father or mother can Will away. For Christians and Parsis, the concept of joint family joint does not exist. All asset is held absolutely.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
@@ -883,12 +883,12 @@ export default function ChristianParsiWillClient() {
                     <span>No Islamic 1/3 Limit or Heir Restrictions</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Muslim law, a testator cannot bequeath more than one-third (1/3) of their net estate without the explicit consent of legal heirs, and cannot favor one heir over another. Under Section 59 of the ISA, a Christian or Parsi individual can bequeath 100% of their estate to anyone they choose.
+                    Under Muslim law, a Will maker cannot bequeath more than one-third (1/3) of their net estate without the explicit consent of legal heirs, and cannot favor one heir over another. Under Section 59 of the ISA, a Christian or Parsi single can bequeath 100% of their estate to anyone they choose.
                   </p>
                 </div>
               </div>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                However, complete freedom carries profound responsibility. If you do not exercise this freedom by drafting a Will, your estate defaults to the rigid intestate formulas described above, leading to involuntary co-ownership, disputes among siblings, and prolonged legal heir certificate delays.
+                However, complete freedom carries profound responsibility. If you do not exercise this freedom by drafting a Will, your estate defaults to the rigid no-Will formulas described above, leading to involuntary co-ownership, fights among siblings, and prolonged legal heir paper delays.
               </p>
             </section>
 
@@ -899,10 +899,10 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 6: VISUAL ANATOMY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Statutory Blueprint: Execution Under Succession Act
+                6. Legal Blueprint: Signing Under Estate Act
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                A valid Will under the Indian Succession Act, 1925, harmonizes statutory compliance across Part V and Part VI. The graphic below illustrates the essential statutory foundations for Christian and Parsi estate planning.
+                A valid Will under the Indian Succession Act, 1925, harmonizes legal compliance across Part V and Part VI. The graphic below illustrates the essential legal foundations for Christian and Parsi estate planning.
               </p>
 
               {/* Infographic Image Container */}
@@ -919,7 +919,7 @@ export default function ChristianParsiWillClient() {
                 </div>
                 <div className="pt-3 px-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
                   <span className="font-medium">
-                    Figure 1: Statutory Framework of Part V (ss. 31-56) &amp; Part VI (ss. 59-191) of the Indian Succession Act, 1925.
+                    Figure 1: Legal Framework of Part V (ss. 31-56) &amp; Part VI (ss. 59-191) of the Indian Succession Act, 1925.
                   </span>
                   <a
                     href="/images/christian-parsi-will-indian-succession-act.jpg"
@@ -944,7 +944,7 @@ export default function ChristianParsiWillClient() {
                 7. 6-Stage Protocol: Drafting an Enforceable Indian Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                To guarantee your Will withstands scrutiny under Section 63 of the Indian Succession Act, follow this advocate-approved 6-stage protocol:
+                To guarantee your Will withstands scrutiny under Section 63 of the Indian Succession Act, follow this lawyer-approved 6-stage protocol:
               </p>
 
               <div className="space-y-3.5">
@@ -952,32 +952,32 @@ export default function ChristianParsiWillClient() {
                   {
                     num: "1",
                     title: "Comprehensive Asset Audit & Schedules",
-                    desc: "List all immovable properties (survey numbers, flat deeds), movable wealth (bank accounts, demat folios, mutual funds), and digital assets. Attach these in a detailed Annexure or Schedule of Properties.",
+                    desc: "List all land assets (survey numbers, flat deeds), cash wealth (bank accounts, demat folios, mutual funds), and digital assets. Attach these in a detailed Annexure or Schedule of Assets.",
                   },
                   {
                     num: "2",
                     title: "Appointing a Capable Executor (Section 211)",
-                    desc: "Name a trusted primary executor and at least one alternate backup executor. The executor acts as your legal representative upon death, responsible for collecting assets and settling debts.",
+                    desc: "Name a trusted primary executor and at least one alternate backup executor. The executor acts as your legal agent upon death, responsible for collecting assets and settling debts.",
                   },
                   {
                     num: "3",
                     title: "Clear Bequests & Residuary Clause (Section 102)",
-                    desc: "Specify exact bequests for identified beneficiaries. Always conclude with a comprehensive Residuary Clause covering all future, omitted, or undisposed assets.",
+                    desc: "Specify exact bequests for identified heirs. Always conclude with a full Residuary Clause covering all future, omitted, or undisposed assets.",
                   },
                   {
                     num: "4",
                     title: "Execution & Signatures by Testator (Section 63(a)-(b))",
-                    desc: "Sign or place your thumb impression at the foot of each page and date the document. Declare sound disposing state of mind and freedom from coercion or undue influence.",
+                    desc: "Sign or place your thumb impression at the foot of each page and date the paper. Declare sound disposing state of mind and freedom from coercion or undue influence.",
                   },
                   {
                     num: "5",
                     title: "Independent Attestation by Two Witnesses (Section 63(c))",
-                    desc: "Two adult witnesses must watch you sign and then sign in your presence. CRITICAL: Under Section 67, neither witness nor their spouse may be a beneficiary under the Will.",
+                    desc: "Two adult witnesses must watch you sign and then sign in your presence. CRITICAL: Under Section 67, neither witness nor their spouse may be a heir under the Will.",
                   },
                   {
                     num: "6",
                     title: "Optional Sub-Registrar Registration & Safe Custody",
-                    desc: "While registration under Section 18(e) of the Registration Act 1908 is optional, registering your Will at the Sub-Registrar Office creates an incontestable public record.",
+                    desc: "While filing under Section 18(e) of the Filing Act 1908 is a choice, registering your Will at the SRO office creates an incontestable public record.",
                   },
                 ].map((step) => (
                   <div key={step.num} className="bg-white rounded-xl border border-slate-200 p-4 flex gap-3.5 items-start">
@@ -1014,21 +1014,21 @@ export default function ChristianParsiWillClient() {
                 <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700 list-disc pl-5">
                   <li>Any soldier or airman being in an actual expedition or engaged in actual warfare.</li>
                   <li>Any mariner or sailor being at sea.</li>
-                  <li>The testator must have completed 18 years of age.</li>
+                  <li>The Will maker must have completed 18 years of age.</li>
                 </ul>
 
                 <div className="pt-2 border-t border-slate-100">
                   <div className="font-bold text-slate-900 text-sm mb-1.5">
-                    Relaxed Execution Modes Under Section 66:
+                    Relaxed Signing Modes Under Section 66:
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
                     <div className="p-3 rounded-lg bg-slate-50 border border-slate-200">
                       <span className="font-bold text-slate-900 block mb-0.5">Handwritten Without Witnesses</span>
-                      A Privileged Will written entirely by the soldier&apos;s own hand does not require any signature or attestation.
+                      A Privileged Will written entirely by the soldier&apos;s own hand does not require any signature or witness signing.
                     </div>
                     <div className="p-3 rounded-lg bg-slate-50 border border-slate-200">
                       <span className="font-bold text-slate-900 block mb-0.5">Oral / Spoken Will</span>
-                      A soldier in combat can declare their testamentary intentions orally in the physical hearing of two witnesses.
+                      A soldier in combat can declare their Will intentions orally in the physical hearing of two witnesses.
                     </div>
                   </div>
                 </div>
@@ -1046,10 +1046,10 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 9: INTERACTIVE AUDIT TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Share Calculator: Instant Estate Division Audit
+                9. Share Tool: Instant Estate Division Audit
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Test your family scenario below. Toggle between Christian and Parsi rules to see how the Indian Succession Act divides an intestate estate without a Will.
+                Test your family scenario below. Toggle between Christian and Parsi rules to see how the Indian Succession Act divides an no-Will estate without a Will.
               </p>
 
               {/* Calculator Simulator Card */}
@@ -1100,7 +1100,7 @@ export default function ChristianParsiWillClient() {
                             : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
                         }`}
                       >
-                        Male Intestate
+                        Male No-Will
                       </button>
                       <button
                         type="button"
@@ -1111,7 +1111,7 @@ export default function ChristianParsiWillClient() {
                             : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
                         }`}
                       >
-                        Female Intestate
+                        Female No-Will
                       </button>
                     </div>
                   </div>
@@ -1192,7 +1192,7 @@ export default function ChristianParsiWillClient() {
                 <div className="pt-3 border-t border-slate-100 bg-slate-50 rounded-xl p-4 space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Statutory Share Allocation Breakdown:
+                      Legal Share Allocation Breakdown:
                     </span>
                     <span className="text-[11px] text-slate-500 font-medium">
                       Simulated on ₹1,00,00,000 Estate
@@ -1231,7 +1231,7 @@ export default function ChristianParsiWillClient() {
                       href="/tools/succession-calculator"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-[#C65378] text-white text-xs font-bold transition-all"
                     >
-                      <span>Open Full Succession Calculator</span>
+                      <span>Open Full Estate Tool</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1246,20 +1246,20 @@ export default function ChristianParsiWillClient() {
                 <span>SECTION 10: INVALIDATION DEFENSE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Four Common Traps: Testamentary Invalidation Risks
+                10. Four Common Traps: Will Invalidation Risks
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Even sophisticated testators frequently make avoidable legal errors that result in court challenges, forfeiture of bequests, or prolonged litigation:
+                Even sophisticated Will makers frequently make avoidable legal errors that result in court fights, forfeiture of bequests, or prolonged court fights:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl border border-slate-200 p-4 space-y-1.5">
                   <div className="flex items-center gap-2 text-rose-600 font-bold text-sm">
                     <AlertCircle className="w-4 h-4 shrink-0" />
-                    <span>1. Beneficiary Witness Invalidation (s. 67)</span>
+                    <span>1. Heir Witness Invalidation (s. 67)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67 of the ISA, if a beneficiary or their spouse signs as an attesting witness, the entire bequest made to them becomes completely void. The Will remains valid, but your intended heir gets ₹0. Always use independent third-party witnesses.
+                    Under Section 67 of the ISA, if a heir or their spouse signs as an signing witness, the entire bequest made to them becomes completely void. The Will remains valid, but your intended heir gets ₹0. Always use independent third-party witnesses.
                   </p>
                 </div>
 
@@ -1269,7 +1269,7 @@ export default function ChristianParsiWillClient() {
                     <span>2. Omitting Alternate Executors</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Naming only one elderly executor poses massive risks. If the executor predeceases you or becomes incapacitated, your heirs must undergo expensive Letters of Administration proceedings in District Court under Section 234.
+                    Naming only one elderly executor poses massive risks. If the executor predeceases you or becomes incapacitated, your heirs must undergo expensive Letters of Care proceedings in District Court under Section 234.
                   </p>
                 </div>
 
@@ -1279,7 +1279,7 @@ export default function ChristianParsiWillClient() {
                     <span>3. Forgetting Digital &amp; Demat Assets</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Many Wills focus exclusively on real estate while ignoring demat holdings, mutual fund SIPs, crypto wallets, and overseas accounts. Always include a comprehensive schedule and a catch-all residuary clause.
+                    Many Wills focus exclusively on real estate while ignoring demat holdings, mutual fund SIPs, crypto wallets, and overseas accounts. Always include a full schedule and a catch-all residuary clause.
                   </p>
                 </div>
 
@@ -1289,7 +1289,7 @@ export default function ChristianParsiWillClient() {
                     <span>4. Misunderstanding Probate Mandates</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    While the Supreme Court in Clarence Pais (2001) confirmed probate is not mandatory for Christians, banks and housing societies in metropolitan areas often insist on registered documents or advocate probate clearances for large transfers.
+                    While the Supreme Court in Clarence Pais (2001) confirmed probate is not needed for Christians, banks and housing societies in metropolitan areas often insist on filed papers or lawyer probate clearances for large transfers.
                   </p>
                 </div>
               </div>
@@ -1305,7 +1305,7 @@ export default function ChristianParsiWillClient() {
                 11. Specialized Scenarios: Interfaith &amp; Global Estates
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Cross-border investments and inter-faith marriages introduce unique jurisdictional overlaps under Indian succession jurisprudence:
+                Cross-border investments and inter-faith marriages introduce unique local overlaps under Indian succession jurisprudence:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1315,7 +1315,7 @@ export default function ChristianParsiWillClient() {
                     <span>Special Marriage Act (Section 21 vs 21A)</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    When individuals of different religions marry under the Special Marriage Act 1954, Section 21 mandates that succession to their property is governed by the Indian Succession Act, 1925 (not their customary personal laws). Drafting a Will prevents unexpected intestate consequences.
+                    When people of different religions marry under the Special Marriage Act 1954, Section 21 mandates that estate to their asset is governed by the Indian Succession Act, 1925 (not their customary personal laws). Drafting a Will prevents unexpected no-Will consequences.
                   </p>
                 </div>
 
@@ -1325,7 +1325,7 @@ export default function ChristianParsiWillClient() {
                     <span>NRI Christians &amp; Parsis with Indian Assets</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Indian private international law (lex situs), succession to immovable property in India is strictly governed by Indian law, regardless of the testator&apos;s overseas citizenship. A separate, jurisdiction-specific Indian Will is strongly recommended.
+                    Under Indian private international law (lex situs), estate to land asset in India is strictly governed by Indian law, regardless of the Will maker&apos;s overseas citizenship. A separate, area-specific Indian Will is strongly recommended.
                   </p>
                 </div>
 
@@ -1345,7 +1345,7 @@ export default function ChristianParsiWillClient() {
                     <span>Charitable &amp; Church Bequests (Section 118)</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Historically, Section 118 restricted bequests to religious or charitable causes unless executed 12 months prior to death. In <em>John Vallamattom v. Union of India (2003)</em>, the Supreme Court struck down Section 118 as unconstitutional, granting Christians full freedom to make charitable bequests without time bars.
+                    Historically, Section 118 restricted bequests to religious or charitable causes unless signed 12 months prior to death. In <em>John Vallamattom v. Union of India (2003)</em>, the Supreme Court struck down Section 118 as unconstitutional, granting Christians full freedom to make charitable bequests without time bars.
                   </p>
                 </div>
               </div>
@@ -1361,7 +1361,7 @@ export default function ChristianParsiWillClient() {
                 Frequently Asked Questions: Christian &amp; Parsi Wills
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Clear answers to common questions regarding Christian and Parsi inheritance laws, testamentary rights, and execution requirements under the Indian Succession Act.
+                Clear answers to common questions regarding Christian and Parsi estate laws, Will rights, and signing rules under the Indian Succession Act.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1402,13 +1402,13 @@ export default function ChristianParsiWillClient() {
             <section id="statutory-citations" className="scroll-target scroll-mt-28 pt-6 border-t border-slate-200 space-y-5">
               <div className="space-y-2">
                 <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                  Statutory References &amp; Official Succession Authorities
+                  Legal References &amp; Official Estate Offices
                 </h3>
                 <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
                   <li>Indian Succession Act, 1925 (Act No. 39 of 1925), Part V (ss. 31-56) &amp; Part VI (ss. 59-191).</li>
                   <li>Indian Succession (Amendment) Act, 1991 (Act 51 of 1991) &bull; Equal shares for Parsi sons and daughters.</li>
-                  <li>Supreme Court of India: <em>Clarence Pais &amp; Ors v. Union of India (2001) 4 SCC 325</em> &bull; Probate non-compulsory for Christians.</li>
-                  <li>Supreme Court of India: <em>Mary Roy v. State of Kerala (1986 AIR 1011)</em> &bull; Equal inheritance for Syrian Christian women.</li>
+                  <li>Supreme Court of India: <em>Clarence Pais &amp; Ors v. Union of India (2001) 4 SCC 325</em> &bull; Probate non-needed for Christians.</li>
+                  <li>Supreme Court of India: <em>Mary Roy v. State of Kerala (1986 AIR 1011)</em> &bull; Equal estate for Syrian Christian women.</li>
                   <li>Supreme Court of India: <em>John Vallamattom v. Union of India (2003) 6 SCC 611</em> &bull; Striking down Section 118 restrictions on charitable gifts.</li>
                 </ul>
               </div>
@@ -1416,7 +1416,7 @@ export default function ChristianParsiWillClient() {
               {/* Verified Portals Badges */}
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  Verified Government Portals:
+                  Checked Government Portals:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   <a
@@ -1459,13 +1459,13 @@ export default function ChristianParsiWillClient() {
                     href="/tools/succession-calculator"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
-                    Succession Calculator &rarr;
+                    Estate Tool &rarr;
                   </Link>
                   <Link
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
-                    Property Transfer Without Will Guide &rarr;
+                    Asset Transfer Without Will Guide &rarr;
                   </Link>
                   <Link
                     href="/templates/will-format-india"
@@ -1477,24 +1477,46 @@ export default function ChristianParsiWillClient() {
                     href="/services/will-registration"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
-                    Will Registration Service &rarr;
+                    Will Filing Service &rarr;
                   </Link>
                   <Link
                     href="/blogs/how-to-challenge-a-will-in-india"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
-                    How to Challenge a Will &rarr;
+                    How to Fight a Will &rarr;
                   </Link>
                   <Link
                     href="/blogs/notarized-will-vs-registered-will-india"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
-                    Notarized vs Registered Will &rarr;
+                    Notarized vs Filed Will &rarr;
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1514,21 +1536,21 @@ export default function ChristianParsiWillClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 15+ years of expertise in testamentary litigation, probate matters, and estate structuring at WillDrafting.in.
+                Bar Council enrolled lawyer with 15+ years of expertise in Will court fights, probate matters, and estate structuring at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1550,7 +1572,7 @@ export default function ChristianParsiWillClient() {
                 <span>CONFIDENTIAL &amp; LEGALLY ENFORCEABLE</span>
               </div>
               <h3 className="text-lg font-bold leading-snug">
-                Protect Your Family with an Advocate-Drafted Will
+                Protect Your Family with an Lawyer-Drafted Will
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Do not leave your estate to complex personal law formulas. Create your custom, court-ready Will in 15 minutes.
@@ -1565,7 +1587,7 @@ export default function ChristianParsiWillClient() {
               </Link>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Confidential legal assistance</span>
+                <span>Confidential legal help</span>
               </div>
             </div>
 
@@ -1584,7 +1606,7 @@ export default function ChristianParsiWillClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 63 Compliant:</strong> Built-in two-witness attestation and sound mind verification.
+                    <strong>Section 63 Compliant:</strong> Built-in two-witness witness signing and sound mind check.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1596,7 +1618,7 @@ export default function ChristianParsiWillClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Dispute-Proofing:</strong> Eliminates statutory intestacy fractional disputes among legal heirs.
+                    <strong>Fight-Proofing:</strong> Eliminates legal intestacy fractional fights among legal heirs.
                   </span>
                 </li>
               </ul>
@@ -1612,7 +1634,7 @@ export default function ChristianParsiWillClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Compute legal heir shares &rarr;
                   </div>
@@ -1630,18 +1652,18 @@ export default function ChristianParsiWillClient() {
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Property Transfer Without Will</div>
+                  <div className="font-bold text-xs text-slate-900">Asset Transfer Without Will</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Legal heir certificate &amp; mutation &rarr;
+                    Legal heir paper &amp; name change &rarr;
                   </div>
                 </Link>
                 <Link
                   href="/services/will-registration"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Will Registration Service</div>
+                  <div className="font-bold text-xs text-slate-900">Will Filing Service</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Sub-Registrar appointment assistance &rarr;
+                    SRO appointment help &rarr;
                   </div>
                 </Link>
               </div>
@@ -1662,13 +1684,13 @@ export default function ChristianParsiWillClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Property Transfer After Death
+                  Asset Transfer After Death
                 </Link>
                 <Link
                   href="/tools/probate-checker"

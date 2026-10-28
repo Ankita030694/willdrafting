@@ -89,7 +89,7 @@ export default function ReleaseDeedFormatPage() {
         url: canonicalUrl,
         name: "Relinquishment Deed Format: Free Template | WillDrafting",
         description:
-          "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration.",
+          "Download a legally valid release deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and filing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function ReleaseDeedFormatPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Legally Execute and Register a Relinquishment Deed in India",
         description:
-          "Step-by-step statutory procedure to execute and register a legally binding Relinquishment Deed (Haq-Tyag Patra) under Section 17 of the.",
+          "Step-by-step legal step to execute and register a legally binding Release Deed (Haq-Tyag Patra) under Section 17 of the.",
         image: imageUrl,
         totalTime: "P3D",
         supply: [
@@ -162,19 +162,19 @@ export default function ReleaseDeedFormatPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Establish Title Devolution and Co-Ownership",
-            text: "Gather the original title deed of the property, official death certificate of the deceased owner, and verified legal heir certificate proving that the releasor and releasee are legitimate co-heirs.",
+            text: "Gather the original title deed of the asset, official death paper of the deceased owner, and checked legal heir paper proving that the releasor and releasee are legitimate co-heirs.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft the Relinquishment Deed with Precise Property Schedule",
-            text: "Draft the deed setting out full party identities, exact fractional shares surrendered, confirmation of natural love and affection or consideration, and the complete boundary schedule of the property.",
+            text: "Draft the deed setting out full party identities, exact fractional shares surrendered, confirmation of natural love and affection or consideration, and the complete boundary schedule of the asset.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Procure State Non-Judicial e-Stamp Paper",
-            text: "Purchase the state-specific e-stamp paper for the prescribed family release duty rate through Stock Holding Corporation of India (SHCIL) or the authorized state treasury portal.",
+            text: "Purchase the state-specific e-stamp paper for the prescribed family release duty rate through Stock Holding City Board of India (SHCIL) or the authorized state treasury portal.",
           },
           {
             "@type": "HowToStep",
@@ -186,7 +186,7 @@ export default function ReleaseDeedFormatPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Collect Registered Deed and Apply for Mutation",
-            text: "Receive the registered deed with SRO seal and registration number. File an application for property mutation before the municipal corporation or local revenue office to update property records.",
+            text: "Receive the filed deed with SRO seal and filing number. File an form for asset name change before the city city board or local revenue office to update asset records.",
           },
         ],
       },
@@ -199,7 +199,7 @@ export default function ReleaseDeedFormatPage() {
             name: "What is a relinquishment deed in Indian property law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A relinquishment deed (also known as a release deed or Haq-Tyag Patra) is a registered legal instrument through which a legal co-heir surrenders and extinguishes their undivided share in an inherited property in favour of another existing co-heir, without or with monetary consideration.",
+              text: "A release deed (also known as a release deed or Haq-Tyag Patra) is a filed legal instrument through which a legal co-heir surrenders and extinguishes their undivided share in an inherited asset in favour of another existing co-heir, without or with monetary consideration.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function ReleaseDeedFormatPage() {
             name: "Can a relinquishment deed be executed for self-acquired property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A relinquishment deed can only be executed between existing co-owners or legal heirs who have jointly inherited a property. A living person cannot relinquish their self-acquired property to their child because the child holds no pre-existing co-ownership interest. In such cases, a Gift Deed, Sale Deed, or Will must be used.",
+              text: "No. A release deed can only be signed between existing co-owners or legal heirs who have jointly inherited a asset. A living person cannot relinquish their self-acquired asset to their child because the child holds no pre-existing co-ownership interest. In such cases, a Gift Deed, Sale Deed, or Will must be used.",
             },
           },
           {
@@ -215,7 +215,7 @@ export default function ReleaseDeedFormatPage() {
             name: "Can I relinquish my share to a third-party stranger?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under the Supreme Court ruling in Kuppuswamy Chettiar v. Arumugam Chettiar, a release deed can only enlarge a pre-existing title. It cannot create title in an outsider. Transferring property to a non-co-owner is treated as a Gift Deed or Sale Deed, attracting full ad valorem stamp duty.",
+              text: "No. Under the Supreme Court ruling in Kuppuswamy Chettiar v. Arumugam Chettiar, a release deed can only enlarge a pre-existing title. It cannot create title in an outsider. Transferring asset to a non-co-owner is treated as a Gift Deed or Sale Deed, attracting full ad valorem stamp duty.",
             },
           },
           {
@@ -223,7 +223,7 @@ export default function ReleaseDeedFormatPage() {
             name: "Is registration of a relinquishment deed mandatory in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 17(1)(b) of the Registration Act, 1908, any instrument that extinguishes or transfers rights in immovable property valued over Rs. 100 must be compulsorily registered at the Sub-Registrar Office. An unregistered release deed on plain paper or notarized affidavit is completely void and inadmissible under Section 49.",
+              text: "Yes. Under Section 17(1)(b) of the Filing Act, 1908, any instrument that extinguishes or transfers rights in land asset valued over Rs. 100 must be compulsorily filed at the SRO office. An plain release deed on plain paper or notarized sworn note is completely void and inadmissible under Section 49.",
             },
           },
           {
@@ -231,7 +231,7 @@ export default function ReleaseDeedFormatPage() {
             name: "What is the difference between a release deed and a gift deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A relinquishment deed can only be made between co-heirs over inherited joint property, cannot involve outsiders, and often enjoys concessional family stamp duty. A gift deed can transfer self-acquired property to anyone (relatives or strangers), strictly prohibits monetary consideration, and typically attracts higher ad valorem stamp duty.",
+              text: "A release deed can only be made between co-heirs over inherited joint asset, cannot involve outsiders, and often enjoys concessional family stamp duty. A gift deed can transfer self-acquired asset to anyone (relatives or strangers), strictly prohibits monetary consideration, and typically attracts higher ad valorem stamp duty.",
             },
           },
           {
@@ -239,7 +239,7 @@ export default function ReleaseDeedFormatPage() {
             name: "How much stamp duty is payable on a relinquishment deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Stamp duty is governed by state stamp acts. Many states offer concessional rates for family co-heirs. For example, Delhi charges a nominal Rs. 1,000 duty plus Rs. 100 registration fee. Maharashtra levies Rs. 200 under Article 52. Uttar Pradesh provides a nominal Rs. 5,000 duty for blood relatives. Non-family releases attract standard conveyance stamp duty.",
+              text: "Stamp duty is governed by state stamp acts. Many states offer concessional rates for family co-heirs. For example, Delhi charges a nominal Rs. 1,000 duty plus Rs. 100 filing fee. Maharashtra levies Rs. 200 under Article 52. Uttar Pradesh provides a nominal Rs. 5,000 duty for blood relatives. Non-family releases attract standard conveyance stamp duty.",
             },
           },
           {
@@ -247,7 +247,7 @@ export default function ReleaseDeedFormatPage() {
             name: "Can a registered relinquishment deed be cancelled or revoked?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A registered relinquishment deed is legally irrevocable once signed and registered. It cannot be cancelled unilaterally. A co-heir can only challenge it in a civil court within 3 years under the Limitation Act by proving fraud, coercion, misrepresentation, or lack of free consent.",
+              text: "A filed release deed is legally irrevocable once signed and filed. It cannot be cancelled unilaterally. A co-heir can only fight it in a civil court within 3 years under the Limitation Act by proving fraud, coercion, misrepresentation, or lack of free consent.",
             },
           },
           {
@@ -255,7 +255,7 @@ export default function ReleaseDeedFormatPage() {
             name: "Can a married daughter relinquish her share in ancestral property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Following the Hindu Succession (Amendment) Act 2005 and the Supreme Court decision in Vineeta Sharma v. Rakesh Sharma, daughters are equal coparceners by birth. A married daughter holds an equal undivided share in ancestral property and can legally execute a registered relinquishment deed in favour of her mother, brother, or sisters.",
+              text: "Yes. Following the Hindu Succession (Amendment) Act 2005 and the Supreme Court decision in Vineeta Sharma v. Rakesh Sharma, daughters are equal coparceners by birth. A married daughter holds an equal undivided share in family asset and can legally execute a filed release deed in favour of her mother, brother, or sisters.",
             },
           },
           {
@@ -263,7 +263,7 @@ export default function ReleaseDeedFormatPage() {
             name: "What documents are required to register a release deed at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You require: (1) Original parent title deed, (2) Death certificate of the deceased owner, (3) Legal heir certificate / surviving member certificate, (4) Aadhaar card and PAN card of all releasors, releasees, and two witnesses, (5) Requisite e-stamp certificate, and (6) Up-to-date property tax receipts and municipal assessment records.",
+              text: "You require: (1) Original parent title deed, (2) Death paper of the deceased owner, (3) Legal heir paper / surviving member paper, (4) Aadhaar card and PAN card of all releasors, releasees, and two witnesses, (5) Requisite e-stamp paper, and (6) Up-to-date asset tax receipts and city assessment records.",
             },
           },
           {
@@ -271,7 +271,7 @@ export default function ReleaseDeedFormatPage() {
             name: "How does drafting a Will avoid the need for a relinquishment deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If a property owner writes a valid Will during their lifetime specifying exactly which child or beneficiary receives the property, the estate devolves directly without joint intestate co-ownership. Surviving heirs never need to visit the Sub-Registrar Office, hire advocates, or execute release deeds to clear title.",
+              text: "If a asset owner writes a valid Will during their lifetime specifying exactly which child or heir receives the asset, the estate devolves directly without joint no-Will co-ownership. Surviving heirs never need to visit the SRO office, hire lawyers, or execute release deeds to clear title.",
             },
           },
         ],

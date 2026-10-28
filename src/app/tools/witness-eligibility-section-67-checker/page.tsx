@@ -130,7 +130,7 @@ export default function WitnessEligibilityCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory checker evaluating witness competency, Section 67 void bequest risk, Section 63(c) attestation validity, and Section 67.",
+          "Free legal checker evaluating witness competency, Section 67 void bequest risk, Section 63(c) witness signing validity, and Section 67.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Who can legally be a witness to a Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 63(c) of the Indian Succession Act, 1925, any person who is 18 years of age or older, of sound mind, and physically capable of seeing the testator sign can be an attesting witness. The witness must have the animus attestandi, meaning the clear legal intent to testify that the testator executed the Will voluntarily.",
+              text: "Under Section 63(c) of the Indian Succession Act, 1925, any person who is 18 years of age or older, of sound mind, and physically capable of seeing the Will maker sign can be an signing witness. The witness must have the animus attestandi, meaning the clear legal intent to testify that the Will maker signed the Will voluntarily.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Can my wife, son, or daughter sign as an attesting witness to my Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Legally, a family member can witness a Will only if they receive no property or benefit under that Will. If a beneficiary or their spouse attests a Christian or Parsi Will, Section 67 makes their bequest completely void. For Hindu, Sikh, and Jain Wills, Section 67 is excluded by Schedule III, but having a beneficiary child or spouse attest creates a heavy suspicious circumstance in court that often leads to the Will being set aside in probate.",
+              text: "Legally, a family member can witness a Will only if they receive no asset or benefit under that Will. If a heir or their spouse attests a Christian or Parsi Will, Section 67 makes their bequest completely void. For Hindu, Sikh, and Jain Wills, Section 67 is excluded by Schedule III, but having a heir child or spouse attest creates a heavy suspicious circumstance in court that often leads to the Will being set aside in probate.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "What does Section 67 of the Indian Succession Act state?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 67 provides that if any person attests a Will, any bequest or legacy given to that person, or to their wife or husband, shall be entirely void. The execution of the Will remains valid, but the witness and their spouse lose all inheritance under that Will. However, under Section 57 read with Schedule III, this statutory forfeiture does not apply to Hindus, Sikhs, Buddhists, and Jains.",
+              text: "Section 67 provides that if any person attests a Will, any bequest or legacy given to that person, or to their wife or husband, shall be entirely void. The signing of the Will remains valid, but the witness and their spouse lose all estate under that Will. However, under Section 57 read with Schedule III, this legal forfeiture does not apply to Hindus, Sikhs, Buddhists, and Jains.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Why is a doctor the best witness for an Indian Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Registered Medical Practitioner (MBBS or MD) can examine the testator immediately prior to signing and endorse a contemporaneous Medical Fitness Certificate directly on the Will. This provides undeniable proof that the testator possessed sound disposing mind and memory, effectively neutralizing future claims of dementia, Alzheimer's, or lack of capacity.",
+              text: "A Filed Medical Practitioner (MBBS or MD) can examine the Will maker right away prior to signing and endorse a contemporaneous Medical Fitness Paper directly on the Will. This provides undeniable proof that the Will maker possessed sound disposing mind and memory, effectively neutralizing future claims of dementia, Alzheimer's, or lack of capacity.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Can the Executor of a Will also be an attesting witness?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 68 of the Indian Succession Act, 1925, no person is disqualified from being a witness merely because they are appointed as an Executor of the Will. As long as the Executor receives no personal beneficial legacy or property under the Will, their attestation is completely valid and court-defensible.",
+              text: "Yes. Under Section 68 of the Indian Succession Act, 1925, no person is disqualified from being a witness merely because they are appointed as an Executor of the Will. As long as the Executor receives no personal beneficial legacy or asset under the Will, their witness signing is completely valid and court-defensible.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Can a lawyer or Chartered Accountant sign as a witness to a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An independent practicing advocate or Chartered Accountant is an ideal attesting witness. They understand legal formalities, maintain professional contemporaneous files, and provide credible, objective testimony when called to depose in probate court under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023.",
+              text: "Yes. An independent practicing lawyer or Chartered Accountant is an ideal signing witness. They understand legal formalities, maintain professional contemporaneous files, and provide credible, objective testimony when called to depose in probate court under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "How many witnesses are mandatory for a valid Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 63(c) mandates at least two attesting witnesses. While each witness must see the testator sign or receive personal acknowledgment, it is not legally mandatory that both witnesses sign at the exact same moment. However, having both witnesses physically present together during signing is the recommended gold standard.",
+              text: "Section 63(c) mandates at least two signing witnesses. While each witness must see the Will maker sign or receive personal acknowledgment, it is not legally needed that both witnesses sign at the exact same moment. However, having both witnesses physically present together during signing is the recommended gold standard.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "How is a Will proved in court if the witnesses pass away?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), at least one living attesting witness must be examined in court. If both witnesses have died or cannot be found, Section 68 BSA allows the Will to be proved by establishing the handwriting and signature of at least one witness and the testator.",
+              text: "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), at least one living signing witness must be examined in court. If both witnesses have died or cannot be found, Section 68 BSA allows the Will to be proved by establishing the handwriting and signature of at least one witness and the Will maker.",
             },
           },
           {
@@ -211,7 +211,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Can a visually impaired or blind person be an attesting witness to a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 63(c) and established case law, attestation requires physical visual perception of the testator signing the document. A blind person cannot visually verify the act of execution, rendering their attestation legally incompetent.",
+              text: "No. Under Section 63(c) and established case law, witness signing requires physical visual perception of the Will maker signing the paper. A blind person cannot visually verify the act of signing, rendering their witness signing legally incompetent.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function WitnessEligibilityCheckerPage() {
             name: "Is digital signature or Aadhaar eSign valid for a Will witness?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under the First Schedule of the Information Technology Act, 2000, Wills and testamentary dispositions are expressly excluded from electronic signatures. Both the testator and both attesting witnesses must sign physically using ink on paper.",
+              text: "No. Under the First Schedule of the Information Technology Act, 2000, Wills and Will gifts are expressly excluded from electronic signatures. Both the Will maker and both signing witnesses must sign physically using ink on paper.",
             },
           },
         ],

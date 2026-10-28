@@ -110,7 +110,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Bhelupur & Mahmoorganj",
     tags: ["Bhelupur", "Mahmoorganj", "Gurubagh", "Rathyatra", "Kakarmatta"],
     description:
-      "Specialized Will drafting services in Bhelupur and Mahmoorganj for premium independent kothis, VDA approved apartments, doctors' clinics, and commercial retail showrooms. Includes clauses for mutual fund transmissions, family jewel allocations, and clear life-interest provisions for surviving spouses.",
+      "Specialized Will drafting services in Bhelupur and Mahmoorganj for premium independent kothis, VDA approved apartments, doctors' clinics, and shop retail showrooms. Includes clauses for mutual fund transmissions, family jewel allocations, and clear life-interest rules for surviving spouses.",
     sroHub: "SRO Hub: Durgakund Road, Near Bhelupur Police Station",
     sroDetail:
       "Direct IGRSUP token scheduling, advocate accompaniment at SRO Bhelupur, and Section 31 doorstep execution for senior citizens.",
@@ -124,7 +124,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Assi Ghat & Lanka",
     tags: ["Assi Ghat", "Lanka", "BHU Campus Belt", "Durgakund", "Nagwa", "Ravindrapuri"],
     description:
-      "Customized Will drafting services in Assi Ghat and Lanka for ancestral riverside homes, professors' residences, guest houses, and private libraries near Banaras Hindu University. Codifies undivided ancestral shares, copyright bequests for published works, and smooth bank locker transmissions.",
+      "Customized Will drafting services in Assi Ghat and Lanka for family riverside homes, professors' residences, guest houses, and private libraries near Banaras Hindu University. Codifies undivided family shares, copyright bequests for published works, and smooth bank locker transmissions.",
     sroHub: "SRO Hub: Durgakund Road / Assi Sub-District",
     sroDetail:
       "Ancestral haveli asset mapping, coparcenary share verification, and expedited Book III registration.",
@@ -138,7 +138,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Sigra & Maldahiya",
     tags: ["Sigra", "Maldahiya", "Vidyapeeth Road", "Sajan Cinema Belt", "Englisia Line"],
     description:
-      "Specialized Will drafting services in Sigra and Maldahiya for high-value commercial establishments, multi-story shopping complexes, and VDA residential layouts. Formulates business succession structures for trading partnerships and designates specific executive powers to prevent business disruption.",
+      "Specialized Will drafting services in Sigra and Maldahiya for high-value shop establishments, multi-story shopping complexes, and VDA home layouts. Formulates business estate structures for trading partnerships and designates specific executive powers to prevent business disruption.",
     sroHub: "SRO Hub: Kutchery Compound & Durgakund Road",
     sroDetail:
       "Commercial asset schedule audit, GST business capital succession, and Sub-Registrar biometric filing.",
@@ -152,7 +152,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Chowk & Godowlia",
     tags: ["Chowk", "Godowlia", "Dashashwamedh", "Thatheri Bazaar", "Vishwanath Gali"],
     description:
-      "Comprehensive Will drafting services in Chowk and Godowlia for multi-generational Banarasi silk sari businesses, Chowk wholesale inventory, trade trademarks, and centuries-old ancestral havelis along narrow galis. Demarcates floor-wise living rights and eliminates bitter partition lawsuits among heirs.",
+      "Full Will drafting services in Chowk and Godowlia for multi-generational Banarasi silk sari businesses, Chowk wholesale inventory, trade trademarks, and centuries-old family havelis along narrow galis. Demarcates floor-wise living rights and eliminates bitter split lawsuits among heirs.",
     sroHub: "SRO Hub: Collectorate Compound, Circuit House Road",
     sroDetail:
       "Ancestral title chain review, Nagar Nigam mutation assistance, and certified Book III filing.",
@@ -166,7 +166,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Shivpur & Sarnath",
     tags: ["Shivpur", "Pandeypur", "Sarnath", "Ashapur", "Bhojubir", "Gilat Bazar"],
     description:
-      "Dedicated Will drafting services in Shivpur and Sarnath for newly developed VDA housing schemes, independent villas, hospitality properties, and residential floors. Structures seamless property title mutation before the Varanasi Development Authority without court succession delays.",
+      "Dedicated Will drafting services in Shivpur and Sarnath for newly developed VDA housing schemes, independent villas, hospitality assets, and home floors. Structures seamless asset title name change before the Varanasi Development Office without court estate delays.",
     sroHub: "SRO Hub: Shivpur Main Road, Near Railway Station",
     sroDetail:
       "IGRSUP e-appointment booking, biometric identity capture, and advocate physical escort.",
@@ -180,7 +180,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Cantt & Orderly Bazar",
     tags: ["Cantonment", "Orderly Bazar", "Nadesar", "Civil Lines", "Raja Bazar", "Teliyabag"],
     description:
-      "Custom Will drafting services in Cantt and Orderly Bazar for retired defense personnel, civil servants, corporate executives, and healthcare professionals. Incorporates doctor mental fitness certificates, executor designations, and clear distribution of demat securities and bank fixed deposits.",
+      "Custom Will drafting services in Cantt and Orderly Bazar for retired defense personnel, civil servants, corporate executives, and healthcare professionals. Incorporates doctor mental fitness papers, executor designations, and clear split of demat securities and bank fixed deposits.",
     sroHub: "SRO Hub: District Court & Collectorate Compound",
     sroDetail:
       "Priority senior citizen token processing, comprehensive legal vetting, and Section 31 home execution.",
@@ -194,7 +194,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Pindra & Babatpur",
     tags: ["Pindra", "Babatpur Airport Belt", "Phulpur", "Karkhiyaon Industrial Area", "Sindhora"],
     description:
-      "Specialized Will drafting services in Pindra and Babatpur for Bhumidhari agricultural holdings, roadside highway plots, logistics warehouses, and industrial units along the airport corridor. Fully compliant with Sections 107 and 108 of the Uttar Pradesh Revenue Code, 2006.",
+      "Specialized Will drafting services in Pindra and Babatpur for Bhumidhari farm holdings, roadside highway plots, logistics warehouses, and plant units along the airport corridor. Fully compliant with Sections 107 and 108 of the Uttar Pradesh Revenue Code, 2006.",
     sroHub: "SRO Hub: Tehsil Administrative Complex, Pindra",
     sroDetail:
       "UP Bhulekh Khatauni synchronization, land ceiling compliance, and Tehsildar mutation filings.",
@@ -208,7 +208,7 @@ const VARANASI_NEIGHBORHOODS = [
     title: "Will Drafting Services in Raja Talab & Rohania",
     tags: ["Raja Talab", "Rohania", "Manduadih", "DLW / BLW Township", "Mohan Serai", "Sevapuri"],
     description:
-      "Dedicated Will drafting services in Raja Talab and Rohania for railway township personnel, peri-urban farmhouses, commercial godowns on GT Road, and plotted developments. Provides clear legal mechanisms for multi-property inheritance and smooth municipal mutation.",
+      "Dedicated Will drafting services in Raja Talab and Rohania for railway township personnel, peri-urban farmhouses, shop godowns on GT Road, and plotted developments. Provides clear legal mechanisms for multi-asset estate and smooth city name change.",
     sroHub: "SRO Hub: Tehsil Complex Raja Talab, GT Road",
     sroDetail:
       "Biometric registration, revenue record mapping, and doorstep legal execution support.",
@@ -233,12 +233,12 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving asset in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
     detail: "Signed by an MBBS doctor. Confirms sound sound mind and protects against future legal fights.",
     checked: false,
   },
@@ -250,8 +250,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Property Chain Documents (VDA / Registry / Khatauni)",
-    detail: "Copies of VDA allotment letters, registered sale deeds, or Nagar Nigam house tax receipts for accurate asset details.",
+    label: "Asset Chain Papers (VDA / Registry / Khatauni)",
+    detail: "Copies of VDA allotment letters, filed sale deeds, or Nagar Nigam house tax receipts for accurate asset details.",
     checked: false,
   },
   {
@@ -356,7 +356,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect your VDA plots, family ghat havelis, and handloom business assets in Kashi.
-                Get expert lawyer drafting, UP IGRSUP e-registration guidance, and doorstep signing for senior citizens across Varanasi.
+                Get expert lawyer drafting, UP IGRSUP e-filing guidance, and doorstep signing for senior citizens across Varanasi.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -443,7 +443,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Allahabad HC Area
@@ -456,7 +456,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                 Section 31
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Doorstep SRO Registration
+                Doorstep SRO Filing
               </span>
             </div>
           </div>
@@ -612,7 +612,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </h2>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Varanasi is the cultural and spiritual capital of India. Property succession in Kashi carries deep sentimental and financial weight. Families own ancient havelis along the sacred Ganga ghats, modern apartments developed by the Varanasi Development Authority (VDA), and thriving silk handloom trading businesses in Chowk.
+                Varanasi is the cultural and spiritual capital of India. Asset estate in Kashi carries deep sentimental and financial weight. Families own ancient havelis along the sacred Ganga ghats, modern apartments developed by the Varanasi Development Office (VDA), and thriving silk handloom trading businesses in Chowk.
               </p>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -633,7 +633,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     VDA Plot Name Change
                   </h4>
                   <p className="text-xs text-slate-600">
-                    Registered Wills make sure direct title transfer with Varanasi Development Authority.
+                    Filed Wills make sure direct title transfer with Varanasi Development Office.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200/80">
@@ -641,7 +641,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     Handloom Trade
                   </h4>
                   <p className="text-xs text-slate-600">
-                    Smooth succession for Banarasi saree firms, inventory, and trade bank accounts.
+                    Smooth estate for Banarasi saree firms, inventory, and trade bank accounts.
                   </p>
                 </div>
               </div>
@@ -665,7 +665,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Will making in Varanasi is governed by the Indian Succession Act, 1925, and the Registration Act, 1908. To be legally binding in Uttar Pradesh, your Will must fulfill four fundamental legal rules:
+                Will making in Varanasi is governed by the Indian Succession Act, 1925, and the Filing Act, 1908. To be legally binding in Uttar Pradesh, your Will must fulfill four fundamental legal rules:
               </p>
 
               <div className="space-y-3">
@@ -673,7 +673,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs sm:text-sm text-slate-900 block">
-                      Testamentary Capacity (Section 59, Indian Succession Act)
+                      Will Capacity (Section 59, Indian Succession Act)
                     </strong>
                     <span className="text-xs text-slate-600">
                       The Will maker must be a major (18+ years) of sound disposing mind, free from undue coercion, fraud, or intoxication.
@@ -688,7 +688,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                       Written Instrument &amp; Will maker Signature (Section 63)
                     </strong>
                     <span className="text-xs text-slate-600">
-                      The document must be in writing. The Will maker must sign or affix their thumb impression on every single page.
+                      The paper must be in writing. The Will maker must sign or affix their thumb impression on every single page.
                     </span>
                   </div>
                 </div>
@@ -697,7 +697,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs sm:text-sm text-slate-900 block">
-                      Two Independent Witnesses (Attestation Clause)
+                      Two Independent Witnesses (Witness Signing Clause)
                     </strong>
                     <span className="text-xs text-slate-600">
                       Two witnesses must see the Will maker sign and must sign in the presence of each other. Witnesses cannot be heirs.
@@ -733,11 +733,11 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                3. Will Registration: Needed vs Optional Under UP Law
+                3. Will Filing: Needed vs A Choice Under UP Law
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Uttar Pradesh. An unregistered Will signed on plain white paper before two witnesses is legally valid. However, in Varanasi, registering your Will at the local SRO office (SRO) provides immense legal security.
+                Under Section 18(e) of the Filing Act, 1908, registering a Will is a choice in Uttar Pradesh. An plain Will signed on plain white paper before two witnesses is legally valid. However, in Varanasi, registering your Will at the local SRO office (SRO) provides immense legal security.
               </p>
 
               <div className="overflow-x-auto">
@@ -745,8 +745,8 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="border-b border-slate-200 bg-[#FAF7F0] text-slate-800">
                       <th className="p-3 font-extrabold">Feature</th>
-                      <th className="p-3 font-extrabold">Unregistered Will</th>
-                      <th className="p-3 font-extrabold text-[#C65378]">Registered Will (IGRSUP)</th>
+                      <th className="p-3 font-extrabold">Plain Will</th>
+                      <th className="p-3 font-extrabold text-[#C65378]">Filed Will (IGRSUP)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -766,12 +766,12 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                       <td className="p-3 font-bold text-emerald-700">Direct expedited substitution</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-semibold">Court Challenge Risk</td>
+                      <td className="p-3 font-semibold">Court Fight Risk</td>
                       <td className="p-3">High risk of mental capacity fights</td>
                       <td className="p-3 text-emerald-700">Official SRO biometric check</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-semibold">Govt Registration Fee</td>
+                      <td className="p-3 font-semibold">Govt Filing Fee</td>
                       <td className="p-3">₹0</td>
                       <td className="p-3">Only ₹100 nominal fee on IGRSUP</td>
                     </tr>
@@ -782,7 +782,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3 text-amber-900 text-xs sm:text-sm">
                 <Info className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
                 <p>
-                  <strong>Why Register in Varanasi?</strong> Property values around Sigra, Bhelupur, and the riverfront have grown rapidly. A registered Will drastically reduces court fights risks from distant relatives challenging the authenticity of the testament.
+                  <strong>Why Register in Varanasi?</strong> Asset values around Sigra, Bhelupur, and the riverfront have grown rapidly. A filed Will drastically reduces court fights risks from distant relatives challenging the authenticity of the testament.
                 </p>
               </div>
             </section>
@@ -817,7 +817,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   Allahabad High Court Position on Probate
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  The Allahabad High Court has repeatedly held that getting probate is optional for Hindu, Buddhist, Sikh, and Jain Wills signed in Uttar Pradesh. Heirs do not need to spend months or pay steep court fees in District Court Varanasi to set up ownership.
+                  The Allahabad High Court has repeatedly held that getting probate is a choice for Hindu, Buddhist, Sikh, and Jain Wills signed in Uttar Pradesh. Heirs do not need to spend months or pay steep court fees in District Court Varanasi to set up ownership.
                 </p>
                 <div className="flex items-center gap-2 text-xs font-semibold text-emerald-800">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
@@ -840,11 +840,11 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                5. VDA Property Name Change &amp; Family Haveli Succession
+                5. VDA Asset Name Change &amp; Family Haveli Estate
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Estate succession in Varanasi involves two distinct categories of immovable assets: modern urban development authority plots and ancient heritage assets.
+                Estate estate in Varanasi involves two distinct categories of land assets: modern urban development office plots and ancient heritage assets.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -854,12 +854,12 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     <span>VDA Plot &amp; Flat Transfer</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Varanasi Development Authority (VDA) requires specific procedural papers for name change. A registered Will along with the original allotment letter, death paper, and NOC from other legal heirs allows fast substitution in VDA records.
+                    Varanasi Development Office (VDA) requires specific procedural papers for name change. A filed Will along with the original allotment letter, death paper, and NOC from other legal heirs allows fast substitution in VDA records.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc list-inside">
                     <li>Schemes in Sigra, Shivpur, and Pandeypur</li>
                     <li>Nagar Nigam house tax record name change</li>
-                    <li>Avoids costly succession paper suits</li>
+                    <li>Avoids costly estate paper suits</li>
                   </ul>
                 </div>
 
@@ -869,12 +869,12 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     <span>Family Ghat Havelis &amp; Kothis</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Centuries-old havelis along Assi, Dashashwamedh, and Chowk often have complex joint family lineages. Under Hindu law, a Will maker can bequeath their separate property or their undivided joint family share.
+                    Centuries-old havelis along Assi, Dashashwamedh, and Chowk often have complex joint family lineages. Under Hindu law, a Will maker can bequeath their separate asset or their undivided joint family share.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc list-inside">
                     <li>Clear demarcation of floors and rooms</li>
                     <li>Life-interest protection for elderly widows</li>
-                    <li>Prevents external strangers entering joint property</li>
+                    <li>Prevents external strangers entering joint asset</li>
                   </ul>
                 </div>
               </div>
@@ -898,7 +898,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Many Varanasi families own farm or peri-urban farmland in Pindra, Rohania, Sevapuri, Harahua, or near the Lal Bahadur Shastri International Airport belt. Succession for farm land in Uttar Pradesh is governed mainly by the <strong>Uttar Pradesh Revenue Code, 2006</strong>, and not by personal succession laws.
+                Many Varanasi families own farm or peri-urban farmland in Pindra, Rohania, Sevapuri, Harahua, or near the Lal Bahadur Shastri International Airport belt. Estate for farm land in Uttar Pradesh is governed mainly by the <strong>Uttar Pradesh Revenue Code, 2006</strong>, and not by personal estate laws.
               </p>
 
               <div className="space-y-3">
@@ -913,10 +913,10 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200/80">
                   <h4 className="text-xs sm:text-sm font-bold text-slate-900 mb-1">
-                    Section 108 &amp; 109: Order of Succession &amp; Ceilings
+                    Section 108 &amp; 109: Order of Estate &amp; Ceilings
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If an individual dies without a Will, farm land passes strictly according to the legal hierarchy under Section 108. Drafting a registered Will allows you to allocate farmland to specific daughters, sons, or family members while adhering to legal land ceiling limits.
+                    If an single dies without a Will, farm land passes strictly according to the legal hierarchy under Section 108. Drafting a filed Will allows you to allocate farmland to specific daughters, sons, or family members while adhering to legal land ceiling limits.
                   </p>
                 </div>
 
@@ -925,7 +925,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     UP Bhulekh Portal &amp; Khatauni Name Change
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Following the Will maker&apos;s death, the heir files an online name change form before the local Tehsildar (Pindra or Sadar). The registered Will ensures smooth entry into the official revenue Khatauni records.
+                    Following the Will maker&apos;s death, the heir files an online name change form before the local Tehsildar (Pindra or Sadar). The filed Will ensures smooth entry into the official revenue Khatauni records.
                   </p>
                 </div>
               </div>
@@ -949,7 +949,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Varanasi district is divided into multiple Sub-Registrar Offices under the Stamps and Registration Department, Uttar Pradesh (IGRSUP). Select an office below to inspect areas and address details:
+                Varanasi district is divided into multiple SRO Offices under the Stamps and Filing Office, Uttar Pradesh (IGRSUP). Select an office below to inspect areas and address details:
               </p>
 
               {/* SRO TABS */}
@@ -1022,7 +1022,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                 </h3>
 
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Varanasi span sacred riverfront havelis along the Ganga ghats, modern VDA home colonies in Sigra and Shivpur, prime shop showrooms in Mahmoorganj, wholesale handloom trading houses in Chowk, and farm land holdings across Pindra and Raja Talab. Our estate lawyers deliver customized legal drafting, UP IGRSUP token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Varanasi span sacred riverfront havelis along the Ganga ghats, modern VDA home colonies in Sigra and Shivpur, prime shop showrooms in Mahmoorganj, wholesale handloom trading houses in Chowk, and farm land holdings across Pindra and Raja Talab. Our estate lawyers deliver customized legal drafting, UP IGRSUP token scheduling, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -1113,7 +1113,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                9. Step-by-Step SOP: Drafting to Registration in Kashi
+                9. Step-by-Step SOP: Drafting to Filing in Kashi
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -1131,7 +1131,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                       Asset &amp; Family Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete property details including VDA allotment records, sale deeds, Nagar Nigam house tax receipts, bank account numbers, mutual fund folios, and gold jewelry. Clearly specify heirs and appoint a trusted executor.
+                      Compile complete asset details including VDA allotment records, sale deeds, Nagar Nigam house tax receipts, bank account numbers, mutual fund folios, and gold jewelry. Clearly specify heirs and appoint a trusted executor.
                     </p>
                   </div>
                 </div>
@@ -1158,7 +1158,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-extrabold text-slate-900">
-                      Signing &amp; Attestation by Two Witnesses
+                      Signing &amp; Witness Signing by Two Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Print the finalized Will on clean white A4 sheets. Sign or place your thumb impression at the bottom of each page in the presence of two independent adult witnesses who sign as witnesses.
@@ -1176,7 +1176,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                       UP IGRSUP Token Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Book an e-appointment token on the UP Stamps &amp; Registration Department portal (igrsup.gov.in). Select your Varanasi SRO (Kutchery Sadar, Bhelupur, Shivpur, or Pindra) and pay the flat ₹100 registration fee online.
+                      Book an e-appointment token on the UP Stamps &amp; Filing Office portal (igrsup.gov.in). Select your Varanasi SRO (Kutchery Sadar, Bhelupur, Shivpur, or Pindra) and pay the flat ₹100 filing fee online.
                     </p>
                   </div>
                 </div>
@@ -1188,10 +1188,10 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="text-xs sm:text-sm font-extrabold text-slate-900">
-                      Biometric SRO Registration &amp; Book III Filing
+                      Biometric SRO Filing &amp; Book III Filing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the SRO office with your two witnesses and original Aadhaar cards. Complete biometric thumb scanning, digital photograph capture, and Sub-Registrar interview. Receive the registered Will copy with government seal.
+                      Visit the SRO office with your two witnesses and original Aadhaar cards. Complete biometric thumb scanning, digital photograph capture, and SRO interview. Receive the filed Will copy with government seal.
                     </p>
                   </div>
                 </div>
@@ -1212,11 +1212,11 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                10. Section 31 Doorstep SRO Registration for Seniors
+                10. Section 31 Doorstep SRO Filing for Seniors
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Visiting busy government kutchery offices can be challenging for elderly, bedridden, or ailing senior citizens. Under <strong>Section 31 of the Registration Act, 1908</strong>, the law provides an official step for doorstep registration at home or in a hospital.
+                Visiting busy government kutchery offices can be challenging for elderly, bedridden, or ailing senior citizens. Under <strong>Section 31 of the Filing Act, 1908</strong>, the law provides an official step for doorstep filing at home or in a hospital.
               </p>
 
               <div className="p-5 rounded-2xl bg-[#FAF7F0] border border-slate-200/80 space-y-3">
@@ -1227,25 +1227,25 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>MBBS Doctor Certificate:</strong> An MBBS doctor examines the Will maker and issues a fitness paper confirming sound mental faculties.
+                      <strong>MBBS Doctor Paper:</strong> An MBBS doctor examines the Will maker and issues a fitness paper confirming sound mental faculties.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Sub-Registrar Form:</strong> An form is submitted to the Varanasi Sub-Registrar requesting a special commission visit under Section 31.
+                      <strong>SRO Form:</strong> An form is submitted to the Varanasi SRO requesting a special commission visit under Section 31.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Home Attendance:</strong> The Sub-Registrar visits the Will maker&apos;s home in Sigra, Bhelupur, Cantt, or Assi with official biometric equipment.
+                      <strong>Home Attendance:</strong> The SRO visits the Will maker&apos;s home in Sigra, Bhelupur, Cantt, or Assi with official biometric equipment.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Official Book III Registration:</strong> Biometrics and witness signatures are recorded at home, making the Will 100% legally registered.
+                      <strong>Official Book III Filing:</strong> Biometrics and witness signatures are recorded at home, making the Will 100% legally filed.
                     </span>
                   </li>
                 </ul>
@@ -1266,11 +1266,11 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                11. Required Documents Checklist: Varanasi SRO Process
+                11. Required Papers Checklist: Varanasi SRO Process
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Check off your documents below to verify readiness before proceeding to your Varanasi SRO appointment:
+                Check off your papers below to verify readiness before proceeding to your Varanasi SRO appointment:
               </p>
 
               {/* PROGRESS BAR */}
@@ -1331,11 +1331,11 @@ export default function VaranasiLocationClient({ faqs }: Props) {
 
               {/* H2 <= 70 chars, No Em-Dashes */}
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                12. Varanasi Property Types: Flats, Havelis &amp; Handloom
+                12. Varanasi Asset Types: Flats, Havelis &amp; Handloom
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Estate planning in Varanasi covers unique categories of immovable, movable, and shop assets:
+                Estate planning in Varanasi covers unique categories of land, cash, and shop assets:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1345,7 +1345,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     <span>Freehold &amp; VDA Flats</span>
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Modern apartments and builder floors in Sigra, Mahmoorganj, and Sarnath. Registered Wills enable direct Nagar Nigam name change and society title transfer.
+                    Modern apartments and builder floors in Sigra, Mahmoorganj, and Sarnath. Filed Wills enable direct Nagar Nigam name change and society title transfer.
                   </p>
                 </div>
 
@@ -1389,7 +1389,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Will registration in Uttar Pradesh is heavily subsidized by the state government to encourage citizens to record testamentary instruments. Unlike sale deeds or gift deeds that attract 5% to 7% stamp duties, Wills attract zero percentage duties.
+                Will filing in Uttar Pradesh is heavily subsidized by the state government to encourage citizens to record Will instruments. Unlike sale deeds or gift deeds that attract 5% to 7% stamp duties, Wills attract zero percentage duties.
               </p>
 
               <div className="overflow-x-auto">
@@ -1408,12 +1408,12 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                       <td className="p-3">Exempt under Indian Stamp Act</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-semibold">Government Registration Fee</td>
+                      <td className="p-3 font-semibold">Government Filing Fee</td>
                       <td className="p-3 font-bold text-slate-900">₹100 flat</td>
                       <td className="p-3">Online via UP IGRSUP portal</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-semibold">Document Scanning &amp; Pasting Charges</td>
+                      <td className="p-3 font-semibold">Paper Scanning &amp; Pasting Charges</td>
                       <td className="p-3">₹100 to ₹200</td>
                       <td className="p-3">Official SRO counter receipt</td>
                     </tr>
@@ -1528,7 +1528,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500 font-bold">
                       DONE FOR YOU
                     </span>
-                    <h4 className="text-base font-extrabold text-slate-900">SRO Registration</h4>
+                    <h4 className="text-base font-extrabold text-slate-900">SRO Filing</h4>
                     <div className="text-2xl font-extrabold text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600">
                       Complete lawyer escort to Varanasi SRO or doorstep Section 31 home visit help.
@@ -1634,16 +1634,16 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     Section 63, Indian Succession Act, 1925
                   </strong>
                   <span>
-                    Mandates the legal signing step of unprivileged Wills, requiring the Will maker&apos;s signature or mark and attestation by two independent adult witnesses.
+                    Mandates the legal signing step of unprivileged Wills, requiring the Will maker&apos;s signature or mark and witness signing by two independent adult witnesses.
                   </span>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-[#FAF7F0] border border-slate-200/80">
                   <strong className="text-slate-900 block font-bold mb-0.5">
-                    Section 18(e) &amp; Section 31, Registration Act, 1908
+                    Section 18(e) &amp; Section 31, Filing Act, 1908
                   </strong>
                   <span>
-                    Section 18(e) confirms that registration of Wills is optional. Section 31 empowers Sub-Registrars to conduct special commission visits to the residences of infirm or elderly testators.
+                    Section 18(e) confirms that filing of Wills is a choice. Section 31 empowers Sub-Registrars to conduct special commission visits to the residences of infirm or elderly Will makers.
                   </span>
                 </div>
 
@@ -1652,7 +1652,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     Section 213 read with Section 57, Indian Succession Act, 1925
                   </strong>
                   <span>
-                    Restricts needed probate exclusively to the presidency towns of Mumbai, Kolkata, and Chennai. Affirms that probate is optional in Uttar Pradesh.
+                    Restricts needed probate exclusively to the presidency towns of Mumbai, Kolkata, and Chennai. Affirms that probate is a choice in Uttar Pradesh.
                   </span>
                 </div>
 
@@ -1661,7 +1661,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     Section 107 &amp; 108, Uttar Pradesh Revenue Code, 2006
                   </strong>
                   <span>
-                    Governs the Will of farm land holdings by Bhumidhars with transferable rights and defines the order of succession.
+                    Governs the Will of farm land holdings by Bhumidhars with transferable rights and defines the order of estate.
                   </span>
                 </div>
 
@@ -1678,7 +1678,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               {/* REGIONAL CROSS LINKS */}
               <div className="pt-4 border-t border-slate-200">
                 <span className="text-xs font-bold text-slate-800 block mb-2">
-                  Explore Related UP &amp; National Succession Desks:
+                  Explore Related UP &amp; National Estate Desks:
                 </span>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <Link
@@ -1703,19 +1703,41 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     href="/services/will-registration"
                     className="px-3 py-1.5 rounded-xl bg-[#FAF7F0] hover:bg-slate-200 text-[#C65378] font-semibold transition-all"
                   >
-                    SRO Registration Service
+                    SRO Filing Service
                   </Link>
                   <Link
                     href="/tools/will-checklist"
                     className="px-3 py-1.5 rounded-xl bg-[#FAF7F0] hover:bg-slate-200 text-slate-800 font-semibold transition-all"
                   >
-                    Interactive Will Checklist
+                    Free Will Checklist
                   </Link>
                 </div>
               </div>
             </section>
           </div>
         </div>
+      
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
       </main>
 
       {/* =========================================================================
@@ -1755,7 +1777,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               />
             </div>
             <p className="text-xs text-slate-300 text-center mt-3">
-              Full legal advisory and Sub-Registrar registration help across Kashi and Purvanchal.
+              Full legal advisory and SRO filing help across Kashi and Purvanchal.
             </p>
           </div>
         </div>

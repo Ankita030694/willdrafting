@@ -51,21 +51,21 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-basis", label: "1. Statutory Basis: Indian Succession Act & Kaveri 2.0" },
+  { id: "statutory-basis", label: "1. Legal Basis: Indian Succession Act & Kaveri 2.0" },
   { id: "kannada-uyilu-format", label: "2. Complete Uyilu Patra Format: Native Kannada Draft" },
   { id: "english-translation", label: "3. English Translation: Kannada Uyilu Clauses Explained" },
-  { id: "clause-selector", label: "4. Interactive Clause Selector: Tailor Your Kannada Will" },
+  { id: "clause-selector", label: "4. Free Clause Selector: Tailor Your Kannada Will" },
   { id: "bangalore-probate-rules", label: "5. Karnataka Probate Moat: Why Bangalore Probate Exempt" },
-  { id: "kaveri-fee-calculator", label: "6. Kaveri 2.0 SRO Fee Estimator & Registration Guide" },
-  { id: "comparison-table", label: "7. Comparison: Registered Uyilu vs Unregistered vs Gift" },
-  { id: "registration-sop", label: "8. Step-by-Step SOP: Kaveri 2.0 Will Registration in SRO" },
-  { id: "bhoomi-bbmp-mutation", label: "9. Bhoomi RTC Pouthi Khata & BBMP e-Khata Mutation SOP" },
+  { id: "kaveri-fee-calculator", label: "6. Kaveri 2.0 SRO Fee Estimator & Filing Guide" },
+  { id: "comparison-table", label: "7. Comparison: Filed Uyilu vs Plain vs Gift" },
+  { id: "registration-sop", label: "8. Step-by-Step SOP: Kaveri 2.0 Will Filing in SRO" },
+  { id: "bhoomi-bbmp-mutation", label: "9. Bhoomi RTC Pouthi Khata & BBMP e-Khata Name Change SOP" },
   { id: "case-studies", label: "10. Practical Case Studies: Bengaluru, Mysuru & Hubballi" },
-  { id: "checklist-medical-cert", label: "11. Sub-Registrar Document Checklist & Doctor Certificate" },
-  { id: "succession-tools", label: "12. Contextual Estate Calculators & Succession Tools" },
-  { id: "legal-backing", label: "13. Legal Backing: Senior Counsel Succession Profile" },
+  { id: "checklist-medical-cert", label: "11. SRO Paper Checklist & Doctor Paper" },
+  { id: "succession-tools", label: "12. Contextual Estate Tools & Estate Tools" },
+  { id: "legal-backing", label: "13. Legal Backing: Senior Counsel Estate Profile" },
   { id: "faqs", label: "14. Frequently Asked Questions: Kannada Uyilu Patra" },
-  { id: "statutory-citations", label: "15. Official Karnataka Statutory References & Portals" },
+  { id: "statutory-citations", label: "15. Official Karnataka Legal References & Portals" },
 ];
 
 const FAQS_DATA = [
@@ -74,8 +74,8 @@ const FAQS_DATA = [
     a: "ಇಲ್ಲ. ಭಾರತೀಯ ಉತ್ತರಾಧಿಕಾರ ಕಾಯ್ದೆ 1925 ರ ಸೆಕ್ಷನ್ 63 ಹಾಗೂ ಕರ್ನಾಟಕ ಮುದ್ರಾಂಕ ಕಾಯ್ದೆಯ ಅಡಿಯಲ್ಲಿ ಉಯಿಲು ಬರೆಯಲು ಯಾವುದೇ ಮುದ್ರಾಂಕ ಶುಲ್ಕ (Zero Stamp Duty) ಇರುವುದಿಲ್ಲ. ಬಿಳಿ ಕಾಗದದ (Plain Paper / Green Ledger Paper) ಮೇಲೆ ಕೈಬರಹದಲ್ಲಾಗಲಿ ಅಥವಾ ಬೆರಳಚ್ಚು (Type) ಮಾಡಿಯಾಗಲಿ ಬರೆದ ಉಯಿಲು ಸಂಪೂರ್ಣ ಕಾನೂನುಬದ್ಧವಾಗಿರುತ್ತದೆ.",
   },
   {
-    q: "ಕರ್ನಾಟಕದಲ್ಲಿ ಉಯಿಲನ್ನು ನೋಂದಣಿ (Registration) ಮಾಡಿಸುವುದು ಕಡ್ಡಾಯವೇ?",
-    a: "ನೋಂದಣಿ ಕಾಯ್ದೆ 1908 ರ ಸೆಕ್ಷನ್ 18(e) ರ ಪ್ರಕಾರ ಭಾರತದಲ್ಲಿ ಹಾಗೂ ಕರ್ನಾಟಕದಲ್ಲಿ ಉಯಿಲು ನೋಂದಣಿ ಮಾಡಿಸುವುದು ಕಡ್ಡಾಯವಲ್ಲ, ಇದು ಐಚ್ಛಿಕವಾಗಿರುತ್ತದೆ. ಆದರೆ ಉಪ-ನೋಂದಣಾಧಿಕಾರಿ (Sub-Registrar) ಕಚೇರಿಯಲ್ಲಿ ಕಾವೇರಿ 2.0 ಮೂಲಕ ನೋಂದಾಯಿಸುವುದರಿಂದ ಮುಂದಿನ ದಿನಗಳಲ್ಲಿ ಉಯಿಲಿನ ಸತ್ಯಾಸತ್ಯತೆಯ ಮೇಲೆ ಬರುವ ತಕರಾರುಗಳು, ಒತ್ತಾಯದ ಆರೋಪಗಳು ಮತ್ತು ನಕಲಿ ದಾಖಲೆ ಸೃಷ್ಟಿ ಪ್ರಕರಣಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ತಡೆಯಬಹುದು.",
+    q: "ಕರ್ನಾಟಕದಲ್ಲಿ ಉಯಿಲನ್ನು ನೋಂದಣಿ (Filing) ಮಾಡಿಸುವುದು ಕಡ್ಡಾಯವೇ?",
+    a: "ನೋಂದಣಿ ಕಾಯ್ದೆ 1908 ರ ಸೆಕ್ಷನ್ 18(e) ರ ಪ್ರಕಾರ ಭಾರತದಲ್ಲಿ ಹಾಗೂ ಕರ್ನಾಟಕದಲ್ಲಿ ಉಯಿಲು ನೋಂದಣಿ ಮಾಡಿಸುವುದು ಕಡ್ಡಾಯವಲ್ಲ, ಇದು ಐಚ್ಛಿಕವಾಗಿರುತ್ತದೆ. ಆದರೆ ಉಪ-ನೋಂದಣಾಧಿಕಾರಿ (SRO) ಕಚೇರಿಯಲ್ಲಿ ಕಾವೇರಿ 2.0 ಮೂಲಕ ನೋಂದಾಯಿಸುವುದರಿಂದ ಮುಂದಿನ ದಿನಗಳಲ್ಲಿ ಉಯಿಲಿನ ಸತ್ಯಾಸತ್ಯತೆಯ ಮೇಲೆ ಬರುವ ತಕರಾರುಗಳು, ಒತ್ತಾಯದ ಆರೋಪಗಳು ಮತ್ತು ನಕಲಿ ದಾಖಲೆ ಸೃಷ್ಟಿ ಪ್ರಕರಣಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ತಡೆಯಬಹುದು.",
   },
   {
     q: "ಬೆಂಗಳೂರಿನಲ್ಲಿರುವ ಆಸ್ತಿಯ ಉಯಿಲಿಗೆ ನ್ಯಾಯಾಲಯದ ಪ್ರೊಬೇಟ್ (Probate) ಪಡೆಯುವುದು ಕಡ್ಡಾಯವೇ?",
@@ -83,11 +83,11 @@ const FAQS_DATA = [
   },
   {
     q: "ಉಯಿಲು ಪತ್ರಕ್ಕೆ ಎಷ್ಟು ಜನ ಸಾಕ್ಷಿಗಳು (Witnesses) ಸಹಿ ಮಾಡಬೇಕು?",
-    a: "ಭಾರತೀಯ ಉತ್ತರಾಧಿಕಾರ ಕಾಯ್ದೆಯ ಸೆಕ್ಷನ್ 63(c) ರ ಪ್ರಕಾರ ಕನಿಷ್ಠ ಇಬ್ಬರು ಸಾಕ್ಷಿಗಳು (Two Attesting Witnesses) ಉಯಿಲುಕರ್ತರು ಸಹಿ ಅಥವಾ ಹೆಬ್ಬೆಟ್ಟಿನ ಗುರುತು ಹಾಕುವುದನ್ನು ಪ್ರತ್ಯಕ್ಷವಾಗಿ ನೋಡಿ, ನಂತರ ಅವರ ಸಮ್ಮುಖದಲ್ಲೇ ಸಾಕ್ಷಿಯಾಗಿ ಸಹಿ ಮಾಡಬೇಕು. ಕಾಯ್ದೆಯ ಸೆಕ್ಷನ್ 67 ರ ಪ್ರಕಾರ, ಉಯಿಲಿನ ಮೂಲಕ ಆಸ್ತಿಯ ಫಲ ಪಡೆಯುವ ಫಲಾನುಭವಿಗಳು ಅಥವಾ ಅವರ ಪತಿ/ಪತ್ನಿ ಸಾಕ್ಷಿದಾರರಾಗಿ ಸಹಿ ಮಾಡಬಾರದು. ಸಾಕ್ಷಿದಾರರು ಸ್ವತಂತ್ರ ಮೂರನೇ ವ್ಯಕ್ತಿಗಳಾಗಿರುವುದು ಶ್ರೇಷ್ಠ.",
+    a: "ಭಾರತೀಯ ಉತ್ತರಾಧಿಕಾರ ಕಾಯ್ದೆಯ ಸೆಕ್ಷನ್ 63(c) ರ ಪ್ರಕಾರ ಕನಿಷ್ಠ ಇಬ್ಬರು ಸಾಕ್ಷಿಗಳು (Two Signing Witnesses) ಉಯಿಲುಕರ್ತರು ಸಹಿ ಅಥವಾ ಹೆಬ್ಬೆಟ್ಟಿನ ಗುರುತು ಹಾಕುವುದನ್ನು ಪ್ರತ್ಯಕ್ಷವಾಗಿ ನೋಡಿ, ನಂತರ ಅವರ ಸಮ್ಮುಖದಲ್ಲೇ ಸಾಕ್ಷಿಯಾಗಿ ಸಹಿ ಮಾಡಬೇಕು. ಕಾಯ್ದೆಯ ಸೆಕ್ಷನ್ 67 ರ ಪ್ರಕಾರ, ಉಯಿಲಿನ ಮೂಲಕ ಆಸ್ತಿಯ ಫಲ ಪಡೆಯುವ ಫಲಾನುಭವಿಗಳು ಅಥವಾ ಅವರ ಪತಿ/ಪತ್ನಿ ಸಾಕ್ಷಿದಾರರಾಗಿ ಸಹಿ ಮಾಡಬಾರದು. ಸಾಕ್ಷಿದಾರರು ಸ್ವತಂತ್ರ ಮೂರನೇ ವ್ಯಕ್ತಿಗಳಾಗಿರುವುದು ಶ್ರೇಷ್ಠ.",
   },
   {
-    q: "ಪಿತ್ರಾರ್ಜಿತ (Ancestral) ಆಸ್ತಿಯನ್ನು ಉಯಿಲಿನ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಬರೆದುಕೊಡಬಹುದೇ?",
-    a: "ಇಲ್ಲ. ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ತನ್ನ ಸ್ವಯಾರ್ಜಿತ (Self-Acquired) ಆಸ್ತಿಯನ್ನು ಮಾತ್ರ ತನ್ನ ಇಷ್ಟಾನುಸಾರ ಯಾರಿಗಾದರೂ ಉಯಿಲಿನ ಮೂಲಕ ನೀಡಬಹುದು. ಪಿತ್ರಾರ್ಜಿತ ಅವಿಭಕ್ತ ಹಿಂದೂ ಕುಟುಂಬದ (HUF Coparcenary) ಆಸ್ತಿಯಲ್ಲಿ ತನಗೆ ಕಾನೂನುಬದ್ಧವಾಗಿ ಬರಬೇಕಾದ ಅವಿಭಜಿತ ಪಾಲಿಗೆ (Undivided Share) ಮಾತ್ರ ಉಯಿಲು ಬರೆಯುವ ಹಕ್ಕಿರುತ್ತದೆ, ಇಡೀ ಆಸ್ತಿಗೆ ಬರೆಯುವಂತಿಲ್ಲ.",
+    q: "ಪಿತ್ರಾರ್ಜಿತ (Family) ಆಸ್ತಿಯನ್ನು ಉಯಿಲಿನ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಬರೆದುಕೊಡಬಹುದೇ?",
+    a: "ಇಲ್ಲ. ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ತನ್ನ ಸ್ವಯಾರ್ಜಿತ (Self-Acquired) ಆಸ್ತಿಯನ್ನು ಮಾತ್ರ ತನ್ನ ಇಷ್ಟಾನುಸಾರ ಯಾರಿಗಾದರೂ ಉಯಿಲಿನ ಮೂಲಕ ನೀಡಬಹುದು. ಪಿತ್ರಾರ್ಜಿತ ಅವಿಭಕ್ತ ಹಿಂದೂ ಕುಟುಂಬದ (HUF Joint) ಆಸ್ತಿಯಲ್ಲಿ ತನಗೆ ಕಾನೂನುಬದ್ಧವಾಗಿ ಬರಬೇಕಾದ ಅವಿಭಜಿತ ಪಾಲಿಗೆ (Undivided Share) ಮಾತ್ರ ಉಯಿಲು ಬರೆಯುವ ಹಕ್ಕಿರುತ್ತದೆ, ಇಡೀ ಆಸ್ತಿಗೆ ಬರೆಯುವಂತಿಲ್ಲ.",
   },
   {
     q: "ಕರ್ನಾಟಕ ಉಪ-ನೋಂದಣಾಧಿಕಾರಿ ಕಚೇರಿಯಲ್ಲಿ ಉಯಿಲು ನೋಂದಣಿ ಶುಲ್ಕ ಎಷ್ಟು?",
@@ -98,7 +98,7 @@ const FAQS_DATA = [
     a: "ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ಉತ್ತಮ ಮಾನಸಿಕ ಸ್ವಾಸ್ಥ್ಯ ಹೊಂದಿರುವವರೆಗೂ ತನ್ನ ಜೀವಿತಾವಧಿಯಲ್ಲಿ ಎಷ್ಟು ಬಾರಿ ಬೇಕಾದರೂ ಹೊಸ ಉಯಿಲು ಬರೆಯಬಹುದು ಅಥವಾ ಹಳೆಯ ಉಯಿಲನ್ನು ರದ್ದುಗೊಳಿಸಬಹುದು (Revocation). ಆತ ಕೊನೆಯದಾಗಿ ಬರೆದು ಸಹಿ ಮಾಡಿದ ಉಯಿಲು (Last Will and Testament) ಮಾತ್ರ ಕಾನೂನಿನ ದೃಷ್ಟಿಯಲ್ಲಿ ಸಿಂಧುವಾಗಿರುತ್ತದೆ.",
   },
   {
-    q: "ನೋಂದಾಯಿತ ಉಯಿಲಿನ ಮೂಲಕ ಕರ್ನಾಟಕದಲ್ಲಿ ಪೌತಿ ಖಾತೆ (RTC Mutation) ಮಾಡಿಸುವುದು ಹೇಗೆ?",
+    q: "ನೋಂದಾಯಿತ ಉಯಿಲಿನ ಮೂಲಕ ಕರ್ನಾಟಕದಲ್ಲಿ ಪೌತಿ ಖಾತೆ (RTC Name Change) ಮಾಡಿಸುವುದು ಹೇಗೆ?",
     a: "ಉಯಿಲು ಬರೆದವರು ನಿಧನರಾದ ನಂತರ, ಅವರ ಮರಣ ಪ್ರಮಾಣಪತ್ರ, ಕಾವೇರಿ 2.0 ನೋಂದಾಯಿತ ಉಯಿಲು ಪ್ರತಿ ಮತ್ತು ಋಣಭಾರ ಪ್ರಮಾಣಪತ್ರದೊಂದಿಗೆ (EC) ಭೂಮಿ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ (landrecords.karnataka.gov.in) ಅಥವಾ ಗ್ರಾಮ ಪಂಚಾಯತಿ/ತಹಶೀಲ್ದಾರ್ ಕಚೇರಿಯಲ್ಲಿ ಕರ್ನಾಟಕ ಭೂ ಕಂದಾಯ ಕಾಯ್ದೆ ಸೆಕ್ಷನ್ 128 ರಡಿ ಪೌತಿ ಖಾತೆ ವರ್ಗಾವಣೆಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಬಹುದು.",
   },
 ];
@@ -116,7 +116,7 @@ export default function WillFormatKannadaClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-basis");
+  const [activeId, setActiveId] = useState<string>("legal-basis");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedKannada, setCopiedKannada] = useState<boolean>(false);
   const [copiedEnglish, setCopiedEnglish] = useState<boolean>(false);
@@ -341,8 +341,8 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Complete, lawyer-vetted <strong>ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ</strong> (Kannada Uyilu Patra format) compliant with
-            Section 63 of the Indian Succession Act, 1925, Karnataka Registration Rules, and Kaveri 2.0 Sub-Registrar
-            procedures for Bengaluru and statewide property transmission.
+            Section 63 of the Indian Succession Act, 1925, Karnataka Filing Rules, and Kaveri 2.0 SRO
+            steps for Bengaluru and statewide asset transfer.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -360,7 +360,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -381,7 +381,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 Official Bilingual Template Pack
               </span>
               <p className="text-xs sm:text-sm text-white/95">
-                ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (Will Format in Kannada) • Indian Succession Act 1925 • Kaveri 2.0 Registration Guide
+                ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (Will Format in Kannada) • Indian Succession Act 1925 • Kaveri 2.0 Filing Guide
               </p>
             </div>
           </div>
@@ -460,11 +460,11 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Indian Succession Act 1925 ss. 59, 63, 67 &amp; 74; Registration Act 1908 ss. 18(e), 31,
-                42-43; Karnataka Registration Rules (Kaveri 2.0); Karnataka Land Revenue Act 1964 ss. 128-129 (Bhoomi);
+                Governed under Indian Succession Act 1925 ss. 59, 63, 67 &amp; 74; Filing Act 1908 ss. 18(e), 31,
+                42-43; Karnataka Filing Rules (Kaveri 2.0); Karnataka Land Revenue Act 1964 ss. 128-129 (Bhoomi);
                 and Supreme Court precedent <em>H. Venkatachala Iyengar v. B.N. Thimmajamma</em>.
               </p>
             </div>
@@ -486,13 +486,13 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <span>
                     <strong>Vernacular Legal Validity:</strong> A Will drafted in Kannada (ವಿಲ್ / ಉಯಿಲು ಪತ್ರ) carries
                     100% legal validity across Indian civil courts, the Karnataka High Court, BBMP, BDA, and all
-                    Sub-Registrar Offices under Section 63 of the Indian Succession Act, 1925.
+                    SRO Offices under Section 63 of the Indian Succession Act, 1925.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Zero Stamp Duty in Karnataka:</strong> Under the Karnataka Stamp Act, 1957, executing a Will
+                    <strong>Zero Stamp Duty in Karnataka:</strong> Under the Karnataka Stamp Act, 1957, signing a Will
                     attracts ₹0 stamp duty. You can execute it on clean white paper or green ledger sheet without buying
                     any stamp paper.
                   </span>
@@ -500,16 +500,16 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>No Mandatory Probate in Karnataka:</strong> Unlike Mumbai, Kolkata, and Chennai (presidency
-                    towns governed by Section 213(2) and Section 57), probate is strictly NOT mandatory in Karnataka for
-                    Hindus, Jains, Sikhs, or Buddhists. A registered Uyilu enables direct mutation.
+                    <strong>No Needed Probate in Karnataka:</strong> Unlike Mumbai, Kolkata, and Chennai (presidency
+                    towns governed by Section 213(2) and Section 57), probate is strictly NOT needed in Karnataka for
+                    Hindus, Jains, Sikhs, or Buddhists. A filed Uyilu enables direct name change.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Kaveri 2.0 Integration:</strong> Karnataka Department of Stamps and Registration now processes
-                    all Sub-Registrar appointments, e-KYC, biometric capture, and Will registration through the Kaveri
+                    <strong>Kaveri 2.0 Integration:</strong> Karnataka Office of Stamps and Filing now processes
+                    all SRO appointments, e-KYC, biometric capture, and Will filing through the Kaveri
                     2.0 portal (<em>kaveri.karnataka.gov.in</em>) for a nominal government fee of ₹1,000.
                   </span>
                 </li>
@@ -523,20 +523,20 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Basis: Indian Succession Act &amp; Kaveri 2.0
+                1. Legal Basis: Indian Succession Act &amp; Kaveri 2.0
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Writing a Will in Kannada—traditionally termed an <strong>ಉಯಿಲು ಪತ್ರ (Uyilu Patra)</strong> or{" "}
                   <strong>ಮರಣ ಶಾಸನ (Marana Shasana)</strong>—is governed fundamentally by Section 63 of the Indian
-                  Succession Act, 1925. The statute does not mandate English or Sanskrit terminology; Indian testamentary
-                  jurisprudence recognizes any clear expression of intention written in the mother tongue of the testator,
-                  provided the core statutory requirements of signature and two attesting witnesses are fulfilled.
+                  Estate Act, 1925. The statute does not mandate English or Sanskrit terminology; Indian testamentary
+                  jurisprudence recognizes any clear expression of intention written in the mother tongue of the Will maker,
+                  provided the core legal rules of signature and two signing witnesses are fulfilled.
                 </p>
                 <p>
                   In Karnataka, the landmark Supreme Court Constitution Bench decision originating from the Mysore High
                   Court, <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443)</em>, set the golden precedent
-                  for proving Wills in India. The Court ruled that the propounder must prove: (1) Due execution under
+                  for proving Wills in India. The Court ruled that the propounder must prove: (1) Due signing under
                   Section 63, (2) Sound disposing state of mind under Section 59, and (3) Dispelling of all suspicious
                   circumstances. When an elderly Kannadiga drafts a Will in Kannada, it demonstrates genuine comprehension
                   and eliminates allegations of linguistic misunderstanding.
@@ -545,15 +545,15 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                     <h3 className="font-bold text-slate-900 text-sm mb-1">Section 63(c) ISA: Two Witnesses</h3>
                     <p className="text-xs text-slate-600">
-                      Minimum two independent witnesses must personally observe the testator sign or affix thumb impression,
-                      and then attest the document in the testator&apos;s physical presence.
+                      Minimum two independent witnesses must personally observe the Will maker sign or affix thumb impression,
+                      and then attest the paper in the Will maker&apos;s physical presence.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                     <h3 className="font-bold text-slate-900 text-sm mb-1">Kaveri 2.0 SRO Portal</h3>
                     <p className="text-xs text-slate-600">
-                      Karnataka&apos;s digital registry handles online slot booking, e-KYC photo capture, biometric verification,
-                      and electronic archival of the registered Uyilu.
+                      Karnataka&apos;s digital registry handles online slot booking, e-KYC photo capture, biometric check,
+                      and electronic archival of the filed Uyilu.
                     </p>
                   </div>
                 </div>
@@ -570,7 +570,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 2. Complete Uyilu Patra Format: Native Kannada Draft
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                The following is the full, legally robust Kannada Uyilu draft tailored for property owners in Bengaluru,
+                The following is the full, legally robust Kannada Uyilu draft tailored for asset owners in Bengaluru,
                 Mysuru, Mangaluru, Belagavi, and across Karnataka. You can review, copy, and customize this draft directly.
               </p>
 
@@ -626,7 +626,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 For bank managers, overseas family members, non-resident Indians (NRIs), and corporate employers who require
-                an English translation of the Kannada document, here is the complete clause-by-clause English counterpart.
+                an English translation of the Kannada paper, here is the complete clause-by-clause English counterpart.
               </p>
 
               <div className="relative rounded-2xl bg-white border border-slate-300 shadow-md overflow-hidden">
@@ -666,10 +666,10 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>INTERACTIVE GENERATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Clause Selector: Tailor Your Kannada Will
+                4. Free Clause Selector: Tailor Your Kannada Will
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Customize your Kannada Will clauses depending on whether your property is self-acquired or ancestral, and
+                Customize your Kannada Will clauses depending on whether your asset is self-acquired or family, and
                 whether you wish to grant life interest to your spouse or appoint an independent executor.
               </p>
 
@@ -678,7 +678,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   {/* Property Title Selector */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                      Property Title Classification
+                      Asset Title Classification
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -703,7 +703,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                         }`}
                       >
                         <div>ಪಿತ್ರಾರ್ಜಿತ ಪಾಲು</div>
-                        <div className="text-[10px] font-normal text-slate-500">Undivided Coparcenary Share</div>
+                        <div className="text-[10px] font-normal text-slate-500">Undivided Joint Share</div>
                       </button>
                     </div>
                   </div>
@@ -772,7 +772,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                       onChange={(e) => setIncludeDoctorCert(e.target.checked)}
                       className="rounded text-[#C65378] focus:ring-[#C65378]"
                     />
-                    <span className="font-semibold">ವೈದ್ಯಕೀಯ ಪ್ರಮಾಣಪತ್ರ ಷರತ್ತು (Sound Mind Medical Certificate)</span>
+                    <span className="font-semibold">ವೈದ್ಯಕೀಯ ಪ್ರಮಾಣಪತ್ರ ಷರತ್ತು (Sound Mind Medical Paper)</span>
                   </label>
                 </div>
 
@@ -847,28 +847,28 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A critical legal distinction exists between real estate in Karnataka and properties in Mumbai, Kolkata,
+                  A critical legal distinction exists between real estate in Karnataka and assets in Mumbai, Kolkata,
                   or Chennai. Under Section 213(2) read with Section 57 of the Indian Succession Act, 1925, obtaining court
-                  probate or Letters of Administration is mandatory <strong>only</strong> for Wills executed within the
-                  historical ordinary original civil jurisdiction of the High Courts of Bombay, Calcutta, and Madras, or for
-                  wills involving immovable property situated within those specific presidency limits.
+                  probate or Letters of Care is needed <strong>only</strong> for Wills signed within the
+                  historical ordinary original civil area of the High Courts of Bombay, Calcutta, and Madras, or for
+                  wills involving land asset situated within those specific presidency limits.
                 </p>
                 <div className="rounded-2xl bg-amber-50 border border-amber-200 p-4 text-amber-900 text-xs sm:text-sm space-y-2">
                   <div className="font-bold flex items-center gap-2 text-amber-800">
                     <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0" />
-                    <span>Karnataka High Court Ruling: No Mandatory Probate in Karnataka</span>
+                    <span>Karnataka High Court Ruling: No Needed Probate in Karnataka</span>
                   </div>
                   <p>
                     In <em>A.S. Poovaiah v. V.M. Poovaiah (ILR 2001 KAR 3524)</em> and confirmed in subsequent division bench
                     rulings, the Karnataka High Court explicitly held that Section 213 does NOT apply to Hindus, Jains,
                     Sikhs, and Buddhists residing in the State of Karnataka, including Bengaluru. A legatee does NOT need a
-                    District Court probate decree before asserting ownership or applying for mutation.
+                    District Court probate decree before asserting ownership or applying for name change.
                   </p>
                 </div>
                 <p>
-                  Therefore, in Bengaluru and throughout Karnataka, an <strong>Uyilu Patra registered under Kaveri 2.0</strong> is
+                  Therefore, in Bengaluru and throughout Karnataka, an <strong>Uyilu Patra filed under Kaveri 2.0</strong> is
                   directly recognized by the BBMP (for e-Aasthi e-Khata), BDA, Gram Panchayats (e-Swathu Form 9/11), the
-                  Tahsildar (Bhoomi RTC Pahani mutation), and scheduled banks without undergoing years of probate litigation!
+                  Tahsildar (Bhoomi RTC Pahani name change), and scheduled banks without undergoing years of probate court fights!
                 </p>
               </div>
             </section>
@@ -880,10 +880,10 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>OFFICIAL SRO FEE CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Kaveri 2.0 SRO Fee Estimator &amp; Registration Guide
+                6. Kaveri 2.0 SRO Fee Estimator &amp; Filing Guide
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Estimate the exact government registration fee at your local Karnataka Sub-Registrar Office (SRO) under
+                Estimate the exact government filing fee at your local Karnataka SRO office (SRO) under
                 the Kaveri 2.0 portal rules.
               </p>
 
@@ -892,7 +892,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   {/* Property Value (Informational) */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                      Approx Property Value (₹)
+                      Approx Asset Value (₹)
                     </label>
                     <input
                       type="number"
@@ -901,7 +901,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                       className="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-bold text-slate-900 focus:ring-2 focus:ring-[#C65378] focus:border-transparent"
                     />
                     <span className="text-[10px] text-slate-500 block mt-1">
-                      Stamp Duty is ₹0 regardless of property valuation.
+                      Stamp Duty is ₹0 regardless of asset price check.
                     </span>
                   </div>
 
@@ -926,7 +926,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   {/* Home Visit Toggle */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                      Sub-Registrar Home Visit?
+                      SRO Home Visit?
                     </label>
                     <button
                       type="button"
@@ -940,7 +940,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                       {isHomeVisit ? "Home Visit Enabled (Sec 31)" : "Standard Visit to SRO"}
                     </button>
                     <span className="text-[10px] text-slate-500 block mt-1">
-                      For elderly / bedridden testators under Sec 31.
+                      For elderly / bedridden Will makers under Sec 31.
                     </span>
                   </div>
                 </div>
@@ -980,10 +980,10 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Comparison: Registered Uyilu vs Unregistered vs Gift
+                7. Comparison: Filed Uyilu vs Plain vs Gift
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Understand the statutory, taxation, and revenue mutation differences between various estate transmission
+                Understand the legal, taxation, and revenue name change differences between various estate transfer
                 methods recognized under Karnataka land laws.
               </p>
 
@@ -993,7 +993,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                     <thead className="bg-[#172228] text-white uppercase text-[11px] tracking-wider">
                       <tr>
                         <th className="py-3 px-4">Feature / Parameter</th>
-                        <th className="py-3 px-4 text-[#C65378] font-black">Registered Uyilu (Kaveri 2.0)</th>
+                        <th className="py-3 px-4 text-[#C65378] font-black">Filed Uyilu (Kaveri 2.0)</th>
                         <th className="py-3 px-4">Plain Paper Uyilu</th>
                         <th className="py-3 px-4">Dāna Patra (Gift Deed)</th>
                         <th className="py-3 px-4">Hakku Bidalike (Release)</th>
@@ -1008,28 +1008,28 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                         <td className="py-3 px-4">₹5,000 fixed (Family)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Registration Requirement</td>
-                        <td className="py-3 px-4 font-bold text-emerald-700">Registered at SRO</td>
-                        <td className="py-3 px-4 text-amber-700">Unregistered / Notarized</td>
-                        <td className="py-3 px-4 text-rose-700 font-bold">Mandatory (Sec 17)</td>
-                        <td className="py-3 px-4 text-rose-700 font-bold">Mandatory (Sec 17)</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Filing Rule</td>
+                        <td className="py-3 px-4 font-bold text-emerald-700">Filed at SRO</td>
+                        <td className="py-3 px-4 text-amber-700">Plain / Notarized</td>
+                        <td className="py-3 px-4 text-rose-700 font-bold">Needed (Sec 17)</td>
+                        <td className="py-3 px-4 text-rose-700 font-bold">Needed (Sec 17)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">When Ownership Transfers</td>
-                        <td className="py-3 px-4 text-slate-800">Only after death of Testator</td>
-                        <td className="py-3 px-4 text-slate-800">Only after death of Testator</td>
-                        <td className="py-3 px-4 text-rose-700 font-bold">Immediately upon registration</td>
-                        <td className="py-3 px-4 text-rose-700 font-bold">Immediately upon registration</td>
+                        <td className="py-3 px-4 text-slate-800">Only after death of Will maker</td>
+                        <td className="py-3 px-4 text-slate-800">Only after death of Will maker</td>
+                        <td className="py-3 px-4 text-rose-700 font-bold">Right away upon filing</td>
+                        <td className="py-3 px-4 text-rose-700 font-bold">Right away upon filing</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Can Testator Revoke?</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Can Will maker Revoke?</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">Yes, 100% revocable anytime</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">Yes, revocable anytime</td>
                         <td className="py-3 px-4 text-rose-700 font-bold">Irrevocable without court order</td>
                         <td className="py-3 px-4 text-rose-700 font-bold">Irrevocable</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">BBMP / Bhoomi Mutation Risk</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">BBMP / Bhoomi Name Change Risk</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">Very Low (Quick Pouthi/e-Khata)</td>
                         <td className="py-3 px-4 text-amber-700">Moderate (Affidavits required)</td>
                         <td className="py-3 px-4 text-emerald-700">Instant (Deed based)</td>
@@ -1048,7 +1048,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Step-by-Step SOP: Kaveri 2.0 Will Registration in SRO
+                8. Step-by-Step SOP: Kaveri 2.0 Will Filing in SRO
               </h3>
               <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
                 <div className="flex gap-4 items-start p-4 rounded-xl bg-white border border-slate-200">
@@ -1058,7 +1058,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Draft the Kannada Uyilu &amp; Print on Legal Paper</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Finalize your Kannada draft ensuring clear recital of self-acquired status, schedule of properties
+                      Finalize your Kannada draft ensuring clear recital of self-acquired status, schedule of assets
                       with bounding limits (ಚಕ್ಕುಬಂದಿ), and appointment of an executor. Print on durable green ledger or
                       stout legal bond paper without buying stamp papers.
                     </p>
@@ -1070,11 +1070,11 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                     2
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Obtain MBBS Medical Sound Mind Certificate</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Obtain MBBS Medical Sound Mind Paper</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Have a registered medical practitioner examine the testator on the execution date. The doctor issues
-                      a certificate on their official letterhead certifying the testator is conscious, oriented in time,
-                      place, and person, and possessed of sound testamentary capacity.
+                      Have a filed medical practitioner examine the Will maker on the signing date. The doctor issues
+                      a paper on their official letterhead certifying the Will maker is conscious, oriented in time,
+                      place, and person, and possessed of sound Will capacity.
                     </p>
                   </div>
                 </div>
@@ -1086,8 +1086,8 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Book Appointment on Kaveri 2.0 Portal</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Log in to <em>kaveri.karnataka.gov.in</em>. Select &apos;Document Registration&apos;, choose your jurisdictional
-                      Sub-Registrar Office (or any SRO within the registration district), enter testator and witness KYC,
+                      Log in to <em>kaveri.karnataka.gov.in</em>. Select &apos;Paper Filing&apos;, choose your local
+                      SRO office (or any SRO within the filing district), enter Will maker and witness KYC,
                       pay the ₹1,000 fee online via KII-Pay, and generate your appointment token.
                     </p>
                   </div>
@@ -1100,9 +1100,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Physical Appearance &amp; Biometric Endorsement</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Testator and two independent witnesses present their original Aadhaar cards before the Sub-Registrar.
-                      The SRO captures digital webcam photographs, left-thumb biometrics, and records admission of execution
-                      under Section 35 of the Registration Act.
+                      Will maker and two independent witnesses present their original Aadhaar cards before the SRO.
+                      The SRO captures digital webcam photographs, left-thumb biometrics, and records admission of signing
+                      under Section 35 of the Filing Act.
                     </p>
                   </div>
                 </div>
@@ -1112,10 +1112,10 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                     5
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Same-Day Return of Original Registered Will</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Same-Day Return of Original Filed Will</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      The Sub-Registrar scans the document into the Kaveri 2.0 central repository, affixes the Book 3
-                      registration seal, and returns the original registered Will back to the testator on the very same day.
+                      The SRO scans the paper into the Kaveri 2.0 central repository, affixes the Book 3
+                      filing seal, and returns the original filed Will back to the Will maker on the very same day.
                     </p>
                   </div>
                 </div>
@@ -1129,12 +1129,12 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>POST-DEATH PROPERTY TRANSMISSION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Bhoomi RTC Pouthi Khata &amp; BBMP e-Khata Mutation SOP
+                9. Bhoomi RTC Pouthi Khata &amp; BBMP e-Khata Name Change SOP
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Upon the demise of the testator, property ownership does not transfer automatically in government records.
-                  The legatee must file for revenue mutation in the appropriate Karnataka portal depending on property classification:
+                  Upon the demise of the Will maker, asset ownership does not transfer automatically in government records.
+                  The legatee must file for revenue name change in the appropriate Karnataka portal depending on asset classification:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
@@ -1145,7 +1145,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                       <span>BBMP e-Aasthi (Bengaluru Urban Sites/Flats)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submit the registered Uyilu, death certificate, and latest property tax receipt to the Assistant
+                      Submit the filed Uyilu, death paper, and latest asset tax receipt to the Assistant
                       Revenue Officer (ARO) via the BBMP Sakala portal. The ARO publishes a 30-day public notice in the
                       ward office. In the absence of objections, the Khata is transferred directly in the legatee&apos;s name
                       as a digitized &apos;A-Khata&apos;.
@@ -1156,7 +1156,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2.5">
                     <div className="flex items-center gap-2 font-bold text-[#172228]">
                       <MapPin className="w-4 h-4 text-emerald-700" />
-                      <span>Bhoomi Pouthi Khata (Agricultural / Revenue Land)</span>
+                      <span>Bhoomi Pouthi Khata (Farm / Revenue Land)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under Section 128 of the Karnataka Land Revenue Act, 1964, apply on <em>landrecords.karnataka.gov.in</em>{" "}
@@ -1183,26 +1183,26 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                   <h3 className="font-extrabold text-slate-900 text-sm">Jayanagar 4BHK Flat Protection</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A retired IT executive drafted a Kannada Uyilu granting life interest to his wife and sole remainder
-                    ownership to his daughter. Registered at Basavanagudi SRO on Kaveri 2.0 with an MBBS certificate,
-                    preventing partition claims from estranged siblings.
+                    ownership to his daughter. Filed at Basavanagudi SRO on Kaveri 2.0 with an MBBS paper,
+                    preventing split claims from estranged siblings.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
                   <div className="text-xs font-bold text-[#C65378] uppercase">Case 2: Mysuru Farmhouse</div>
-                  <h3 className="font-extrabold text-slate-900 text-sm">Agricultural Land Pouthi Khata</h3>
+                  <h3 className="font-extrabold text-slate-900 text-sm">Farm Land Pouthi Khata</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A farmer in Nanjangud willed 6 acres of self-acquired arecanut land to his younger son who maintained
-                    the farm. Registered at Nanjangud SRO. Post-demise, Bhoomi RTC mutation in Column 9 was completed in 45
-                    days under Section 128 without any dispute.
+                    the farm. Filed at Nanjangud SRO. Post-demise, Bhoomi RTC name change in Column 9 was completed in 45
+                    days under Section 128 without any fight.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
-                  <div className="text-xs font-bold text-[#C65378] uppercase">Case 3: Mangaluru Commercial</div>
+                  <div className="text-xs font-bold text-[#C65378] uppercase">Case 3: Mangaluru Shop</div>
                   <h3 className="font-extrabold text-slate-900 text-sm">NRI Multi-Heir S54EC Split</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A testator in Kadri Mangaluru bequeathed commercial shopfronts equally among three NRI children as
+                    A Will maker in Kadri Mangaluru bequeathed shop shopfronts equally among three NRI children as
                     tenants-in-common. This structured drafting enabled each child to claim independent ₹50L Section 54EC
                     bond deductions upon eventual asset monetization.
                   </p>
@@ -1217,7 +1217,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <span>VERIFICATION ASSETS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Sub-Registrar Document Checklist &amp; Doctor Certificate
+                11. SRO Paper Checklist &amp; Doctor Paper
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1225,7 +1225,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">
-                      Kaveri 2.0 SRO Document Checklist
+                      Kaveri 2.0 SRO Paper Checklist
                     </span>
                     <button
                       onClick={copyChecklistToClipboard}
@@ -1242,11 +1242,11 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Testator &amp; 2 witnesses original Aadhaar cards &amp; PAN.</span>
+                      <span>Will maker &amp; 2 witnesses original Aadhaar cards &amp; PAN.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Title deeds / registered sale deeds of schedule properties.</span>
+                      <span>Title deeds / filed sale deeds of schedule assets.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1254,11 +1254,11 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Doctor&apos;s Sound Disposing Mind Certificate (MBBS).</span>
+                      <span>Doctor&apos;s Sound Disposing Mind Paper (MBBS).</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Kaveri 2.0 Online Challan receipt for ₹1,000 registration fee.</span>
+                      <span>Kaveri 2.0 Online Challan receipt for ₹1,000 filing fee.</span>
                     </li>
                   </ul>
                 </div>
@@ -1267,7 +1267,7 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 shadow-xs">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">
-                      Doctor&apos;s Mental Fitness Certificate
+                      Doctor&apos;s Mental Fitness Paper
                     </span>
                     <button
                       onClick={() => {
@@ -1293,7 +1293,7 @@ Signature & Official Clinic Stamp: _________________________`;
                       className="text-xs text-[#C65378] font-bold hover:underline inline-flex items-center gap-1"
                     >
                       <Copy className="w-3.5 h-3.5" />
-                      <span>Copy Certificate</span>
+                      <span>Copy Paper</span>
                     </button>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-[11px] font-mono text-slate-700 leading-relaxed border border-slate-200 whitespace-pre-wrap">
@@ -1316,10 +1316,10 @@ Signature & Official Clinic Stamp: _________________________`;
                 <span>INTERACTIVE SUCCESSION TOOLS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Contextual Estate Calculators &amp; Succession Tools
+                12. Contextual Estate Tools &amp; Estate Tools
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Planning your estate involves tax optimization and succession valuation. Use our specialized statutory tools:
+                Planning your estate involves tax optimization and estate price check. Use our specialized legal tools:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1332,10 +1332,10 @@ Signature & Official Clinic Stamp: _________________________`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#C65378] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm mb-1">
-                    Inherited Property Capital Gains Tax Calculator
+                    Inherited Asset Capital Gains Tax Tool
                   </div>
                   <p className="text-xs text-slate-600">
-                    Compare 12.5% Flat vs 20% Indexation under Budget 2024 grandfathering rules for ancestral property sale.
+                    Compare 12.5% Flat vs 20% Indexation under Budget 2024 grandfathering rules for family asset sale.
                   </p>
                 </Link>
 
@@ -1348,10 +1348,10 @@ Signature & Official Clinic Stamp: _________________________`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#5F7E75] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm mb-1">
-                    Probate Court Fee Calculator India
+                    Probate Court Fee Tool India
                   </div>
                   <p className="text-xs text-slate-600">
-                    Calculate ad-valorem Karnataka Court Fees Act tariffs for High Court and District Court succession petitions.
+                    Calculate ad-valorem Karnataka Court Fees Act tariffs for High Court and District Court estate petitions.
                   </p>
                 </Link>
               </div>
@@ -1364,7 +1364,7 @@ Signature & Official Clinic Stamp: _________________________`;
                 <span>LEGAL COUNSEL AUTHORSHIP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Legal Backing: Senior Counsel Succession Profile
+                13. Legal Backing: Senior Counsel Estate Profile
               </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4">
                 <div className="flex items-center gap-4">
@@ -1372,23 +1372,23 @@ Signature & Official Clinic Stamp: _________________________`;
                     AAM
                   </div>
                   <div>
-                    <h3 className="text-lg font-extrabold text-slate-900">Advocate Anuj Anand Malik</h3>
+                    <h3 className="text-lg font-extrabold text-slate-900">Lawyer Anuj Anand Malik</h3>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel • AMA Legal Solutions
+                      Senior Estate Counsel • AMA Legal Solutions
                     </div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Specialist in Indian testamentary jurisprudence, cross-border NRI estate structuring, High Court
-                  probate litigation, and Karnataka Land Revenue mutation defenses. Every template and clause on
-                  WillDrafting.in is reviewed to withstand challenges under Section 68 of the Indian Evidence Act and
+                  Expert in Indian testamentary jurisprudence, cross-border NRI estate structuring, High Court
+                  probate court fights, and Karnataka Land Revenue name change defenses. Every template and clause on
+                  WillDrafting.in is reviewed to withstand fights under Section 68 of the Indian Evidence Act and
                   Section 63 of the Indian Succession Act, 1925.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between text-xs font-semibold text-slate-700 gap-2">
-                  <span>Advocate Bar Council of India Enrollment</span>
+                  <span>Lawyer Bar Council of India Enrollment</span>
                   <span className="text-emerald-700 flex items-center gap-1">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Verified Legal Counsel</span>
+                    <span>Checked Legal Counsel</span>
                   </span>
                 </div>
               </div>
@@ -1441,13 +1441,13 @@ Signature & Official Clinic Stamp: _________________________`;
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Official Karnataka Statutory References &amp; Portals
+                15. Official Karnataka Legal References &amp; Portals
               </h3>
               <div className="p-5 rounded-2xl bg-slate-900 text-white space-y-3 text-xs">
                 <div className="font-bold text-rose-300">Authoritative Karnataka Government Portals:</div>
                 <ul className="space-y-2 text-slate-300">
                   <li className="flex items-center justify-between border-b border-slate-800 pb-2">
-                    <span>Kaveri 2.0 Registration Portal:</span>
+                    <span>Kaveri 2.0 Filing Portal:</span>
                     <a
                       href="https://kaveri.karnataka.gov.in"
                       target="_blank"
@@ -1485,7 +1485,29 @@ Signature & Official Clinic Stamp: _________________________`;
                 </ul>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1498,21 +1520,21 @@ Signature & Official Clinic Stamp: _________________________`;
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Karnataka SRO Kaveri 2.0 registration protocols, and
+                Expert in Indian testamentary jurisprudence, Karnataka SRO Kaveri 2.0 filing protocols, and
                 probate exemptions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1526,10 +1548,10 @@ Signature & Official Clinic Stamp: _________________________`;
                   <span>PREVENT FAMILY PARTITION DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Bengaluru &amp; Karnataka Properties
+                  Protect Your Bengaluru &amp; Karnataka Assets
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Draft a custom, legally registered Kannada or English Will compliant with Section 63 ISA and Kaveri 2.0
+                  Draft a custom, legally filed Kannada or English Will compliant with Section 63 ISA and Kaveri 2.0
                   in less than 15 minutes.
                 </p>
                 <button
@@ -1552,18 +1574,18 @@ Signature & Official Clinic Stamp: _________________________`;
                   <span>KARNATAKA ADVOCATE DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need SRO Registration Assistance or Home Visit?
+                  Need SRO Filing Help or Home Visit?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates handle Kaveri 2.0 Sub-Registrar appointments, bedridden testator Section 31
-                  home visits, and Bhoomi mutation pan-Karnataka.
+                  Our estate lawyers handle Kaveri 2.0 SRO appointments, bedridden Will maker Section 31
+                  home visits, and Bhoomi name change pan-Karnataka.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1576,19 +1598,19 @@ Signature & Official Clinic Stamp: _________________________`;
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 63 ISA Rigor:</strong> Complete 2-witness execution formatting.
+                      <strong>Section 63 ISA Rigor:</strong> Complete 2-witness signing formatting.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Kaveri 2.0 Aligned:</strong> Matches Karnataka Sub-Registrar standards.
+                      <strong>Kaveri 2.0 Aligned:</strong> Matches Karnataka SRO standards.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Probate Exemption:</strong> Direct mutation before BBMP &amp; Bhoomi.
+                      <strong>Probate Exemption:</strong> Direct name change before BBMP &amp; Bhoomi.
                     </span>
                   </li>
                 </ul>

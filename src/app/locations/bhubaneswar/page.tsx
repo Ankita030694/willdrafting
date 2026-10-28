@@ -143,7 +143,7 @@ export default function BhubaneswarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Bhubaneswar: Registration & Probate Guide",
         description:
-          "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across.",
+          "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset split, and lawyer talk across.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function BhubaneswarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bhubaneswar - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, advocate verification, Odisha IGR Sub-Registrar registration, and Orissa High Court probate guidance across.",
+          "Professional Will drafting, lawyer check, Odisha IGR SRO filing, and Orissa High Court probate guidance across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -256,38 +256,38 @@ export default function BhubaneswarLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Bhubaneswar",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Odisha.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Odisha.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Bhubaneswar Properties & Beneficiaries",
-            text: "Itemize your Bhubaneswar assets including BDA plots, GA leasehold flats, freehold ancestral lands, mutual funds, and bank deposits. Appoint chosen beneficiaries and a reliable executor.",
+            text: "Itemize your Bhubaneswar assets including BDA plots, GA leasehold flats, freehold family lands, mutual funds, and bank deposits. Appoint chosen heirs and a reliable executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Statutory Succession Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate specific bequests, survivorship conditions, and revocation clauses under the Indian Succession Act, 1925.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate specific bequests, survivorship conditions, and revocation clauses under the Indian Succession Act, 1925.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Adult Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Appointment on IGR Odisha e-Registration",
-            text: "Book an appointment slot on the IGR Odisha portal (igrodisha.gov.in) for your jurisdictional Sub-Registrar Office and pay the nominal ₹100 government fee online via e-Challan.",
+            text: "Book an appointment slot on the IGR Odisha portal (igrodisha.gov.in) for your local SRO office and pay the nominal ₹100 government fee online via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Bhubaneswar SRO",
-            text: "Attend the Sub-Registrar Office with both witnesses carrying original photo IDs for biometric fingerprint scanning, digital web-camera capture, and Book III registration.",
+            text: "Attend the SRO office with both witnesses carrying original photo IDs for biometric fingerprint scanning, digital web-camera capture, and Book III filing.",
           },
         ],
       },

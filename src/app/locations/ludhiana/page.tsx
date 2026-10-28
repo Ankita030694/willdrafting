@@ -149,7 +149,7 @@ export default function LudhianaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ludhiana: Online Will & NRI Estate Help",
         description:
-          "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar.",
+          "Draft a legally binding Will in Ludhiana. Expert guidance for plant assets, NRI family asset estate, and Punjab SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -196,7 +196,7 @@ export default function LudhianaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ludhiana - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, industrial succession structuring, and Sub-Registrar Office e-registration support across.",
+          "Professional Will drafting, lawyer check, plant estate structuring, and SRO office e-filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -267,38 +267,38 @@ export default function LudhianaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Ludhiana, Punjab",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Ludhiana, Punjab.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Ludhiana, Punjab.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets, Farmland, and Business Holdings",
-            text: "List your assets including GLADA plots, Focal Point manufacturing units, ancestral farmland with khasra numbers, bank accounts, and demat portfolios. Choose your beneficiaries and executor.",
+            text: "List your assets including GLADA plots, Focal Point manufacturing units, family farmland with khasra numbers, bank accounts, and demat portfolios. Choose your heirs and executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Will with Estate Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate. Include industrial succession clauses, NRI multi-jurisdiction protections, and agricultural land bequests.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer. Include plant estate clauses, NRI multi-area protections, and farm land bequests.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Ludhiana SRO Appointment on NGDRS Punjab",
-            text: "Schedule an e-appointment on the Punjab NGDRS portal (igr.punjab.gov.in) for your local Sub-Registrar Office (Mini Secretariat, West, East, or Gill) and pay the ₹100 fee.",
+            text: "Schedule an e-appointment on the Punjab NGDRS portal (igr.punjab.gov.in) for your local SRO office (Mini Secretariat, West, East, or Gill) and pay the ₹100 fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Registration at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses, original Aadhaar cards, and PAN to complete digital fingerprinting, photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and PAN to complete digital fingerprinting, photo capture, and official Book III filing.",
           },
         ],
       },

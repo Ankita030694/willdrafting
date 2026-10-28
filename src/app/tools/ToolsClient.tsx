@@ -79,13 +79,13 @@ export default function ToolsClient({ initialTools }: ToolsClientProps) {
           {/* H1 Heading */}
           <h1 className="text-[2rem] sm:text-[2.6rem] lg:text-[3.25rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4">
             Legal Succession &amp; Will{" "}
-            <span className="font-bold text-[#C65378]">Tools &amp; Calculators</span>
+            <span className="font-bold text-[#C65378]">Tools &amp; Tools</span>
           </h1>
 
           {/* Subtitle */}
           <p className="max-w-2xl mx-auto text-[0.98rem] sm:text-[1.08rem] leading-[1.65] text-[#49585F] font-normal">
-            Explore free interactive diagnostic tools for Indian inheritance, state-wise
-            succession court fee calculators, NRI Will checkers, and probate readiness.
+            Explore free free diagnostic tools for Indian inheritance, state-wise
+            estate court fee tools, NRI Will checkers, and probate readiness.
           </p>
 
           {/* Search Bar matching Sitemap */}
@@ -120,7 +120,7 @@ export default function ToolsClient({ initialTools }: ToolsClientProps) {
       {/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <h2 className="text-lg sm:text-xl font-semibold text-[#172228] mb-4">
-          Interactive Indian Inheritance &amp; Probate Calculators
+          Free Indian Inheritance &amp; Probate Tools
         </h2>
         {/* Category Filter Pills & Results Counter Bar */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-8 border-b border-[#172228]/10">
@@ -244,7 +244,7 @@ export default function ToolsClient({ initialTools }: ToolsClientProps) {
             </h3>
             <p className="text-xs sm:text-sm text-[#49585F] mt-1 max-w-xl">
               Download lawyer-drafted plain paper Wills, Hindi wasiyatnama, codicils,
-              and relinquishment deeds compliant with the Indian Succession Act.
+              and release deeds compliant with the Indian Succession Act.
             </p>
           </div>
           <Link
@@ -264,10 +264,10 @@ export default function ToolsClient({ initialTools }: ToolsClientProps) {
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
-                  Statutory Accuracy
+                  Legal Accuracy
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Every calculator and checker is built on the Indian Succession Act,
+                  Every tool and checker is built on the Indian Succession Act,
                   1925, Hindu Succession Act, 1956, and state court fee schedules.
                 </p>
               </div>
@@ -297,13 +297,35 @@ export default function ToolsClient({ initialTools }: ToolsClientProps) {
                   Lawyer Vetted Algorithms
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Engineered and verified by succession advocates at AMA Legal Solutions
+                  Engineered and checked by estate lawyers at AMA Legal Solutions
                   for real-world validity across all Indian High Courts.
                 </p>
               </div>
             </div>
           </div>
         </section>
+      
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
       </main>
     </div>
   );

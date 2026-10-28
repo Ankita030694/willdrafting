@@ -106,13 +106,13 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving asset in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Signed by a registered MBBS doctor. Confirms sound mental capacity and protects against future court fights.",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
+    detail: "Signed by a filed MBBS doctor. Confirms sound mental capacity and protects against future court fights.",
     checked: false,
   },
   {
@@ -123,8 +123,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Noida Authority Sub-Lease Deed / Allotment Letter",
-    detail: "Copies of tripartite sub-lease deed or builder-buyer agreement to verify exact flat and tower numbers.",
+    label: "Noida Office Sub-Lease Deed / Allotment Letter",
+    detail: "Copies of tripartite sub-lease deed or builder-buyer pact to verify exact flat and tower numbers.",
     checked: false,
   },
   {
@@ -227,8 +227,8 @@ export default function NoidaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your 90-year leasehold flats, builder floors, and Authority plots.
-                Get lawyer drafting, IGRSUP token guidance, and physical Sub-Registrar support at Sector 33 Noida and Surajpur Greater Noida.
+                Draft a legally binding Will for your 90-year leasehold flats, builder floors, and Office plots.
+                Get lawyer drafting, IGRSUP token guidance, and physical SRO support at Sector 33 Noida and Surajpur Greater Noida.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -319,7 +319,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 90-Yr Leasehold
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Authority Direct Name Change
+                Office Direct Name Change
               </span>
             </div>
 
@@ -461,23 +461,23 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>NOIDA NCR SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Noida NCR
+                  Key Highlights: Will Making &amp; Filing in Noida NCR
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration in UP</span>
+                      <span>A Choice Filing in UP</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional across Uttar Pradesh under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid.
+                      Will filing is a choice across Uttar Pradesh under Section 18(e) of the Filing Act, 1908. An plain Will signed before two witnesses is legally valid.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Strictly Optional</span>
+                      <span>Probate Strictly A Choice</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Noida falls under Allahabad High Court area. Unlike presidency towns like Mumbai, court probate is not needed in Uttar Pradesh for Hindu, Sikh, Jain, or Muslim estates.
@@ -490,7 +490,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <span>Tripartite Leasehold Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Noida &amp; GNIDA flats operate on 90-year leases. A registered Will prevents needed newspaper notices, heavy surety bonds, and multi-year Authority name change fights.
+                      Noida &amp; GNIDA flats operate on 90-year leases. A filed Will prevents needed newspaper notices, heavy surety bonds, and multi-year Office name change fights.
                     </p>
                   </div>
 
@@ -500,7 +500,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <span>Zero UP Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty in UP. At Sector 33 Noida or Surajpur SRO, testators pay only a flat ₹100 registration fee and nominal scanning charges on the IGRSUP portal.
+                      Wills incur ₹0 stamp duty in UP. At Sector 33 Noida or Surajpur SRO, Will makers pay only a flat ₹100 filing fee and nominal scanning charges on the IGRSUP portal.
                     </p>
                   </div>
                 </div>
@@ -518,7 +518,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Noida NCR
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will in Gautam Buddha Nagar is governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and legal guidelines framed under the <strong>UP Industrial Area Development Act, 1976</strong>.
+                  Will in Gautam Buddha Nagar is governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and legal guidelines framed under the <strong>UP Plant Area Development Act, 1976</strong>.
                   Any adult of sound mind can bequeath their self-acquired real estate, bank deposits, mutual funds, and shop interests.
                 </p>
               </div>
@@ -529,10 +529,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     § 59
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Testamentary Capacity
+                    Will Capacity
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 59 confirms that every person of sound mind not being a minor may dispose of their property by Will. Seniors in Noida high-rises can safeguard their estate against coercion claims.
+                    Section 59 confirms that every person of sound mind not being a minor may dispose of their asset by Will. Seniors in Noida high-rises can safeguard their estate against coercion claims.
                   </p>
                 </div>
 
@@ -541,10 +541,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     § 63
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Needed Attestation
+                    Needed Witness Signing
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 63(c), the Will maker must sign or affix their mark in the presence of at least two independent witnesses, each of whom must attest the document in the Will maker&apos;s physical presence.
+                    Under Section 63(c), the Will maker must sign or affix their mark in the presence of at least two independent witnesses, each of whom must attest the paper in the Will maker&apos;s physical presence.
                   </p>
                 </div>
 
@@ -570,12 +570,12 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT SECTION 18</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Optional Will Registration Under Section 18 UP
+                  2. A Choice Will Filing Under Section 18 UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is legally optional throughout Uttar Pradesh.
-                  An unregistered Will signed on plain paper is valid in law, provided signing and attestation satisfy Section 63 of the Indian Succession Act.
-                  However, registration in Gautam Buddha Nagar offers decisive practical benefits:
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will is legally a choice throughout Uttar Pradesh.
+                  An plain Will signed on plain paper is valid in law, provided signing and witness signing satisfy Section 63 of the Indian Succession Act.
+                  However, filing in Gautam Buddha Nagar offers decisive practical benefits:
                 </p>
               </div>
 
@@ -587,7 +587,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <span>Proof Sanctity Under Indian Law</span>
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      A registered Will enters the official government repository in <strong>Book III</strong> at SRO Sector 33 Noida or Surajpur. Under Section 68 of the Indian Evidence Act, registration creates an official presumption of genuine signing and mental capacity, making judicial fights extraordinarily difficult.
+                      A filed Will enters the official government repository in <strong>Book III</strong> at SRO Sector 33 Noida or Surajpur. Under Section 68 of the Indian Evidence Act, filing creates an official presumption of genuine signing and mental capacity, making judicial fights extraordinarily difficult.
                     </p>
                   </div>
 
@@ -597,7 +597,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <span>Safe Custody &amp; Elimination of Tampering</span>
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Once registered, the document cannot be destroyed, stolen, or surreptitiously replaced by disgruntled relatives. Even if original paper sheets are misplaced during apartment shifts, a legally certified copy can be retrieved instantly from the UP IGRS system.
+                      Once filed, the paper cannot be destroyed, stolen, or surreptitiously replaced by disgruntled relatives. Even if original paper sheets are misplaced during apartment shifts, a legally certified copy can be retrieved instantly from the UP IGRS system.
                     </p>
                   </div>
 
@@ -607,17 +607,17 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <span>Instant Banking &amp; Demat Asset Transfer</span>
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Nationalized and private banks across Noida (SBI, HDFC, ICICI, Axis) release deceased locker contents, fixed deposits, and mutual funds smoothly when backed by an officially registered Will and death paper, avoiding high-expense indemnity bonds.
+                      Nationalized and private banks across Noida (SBI, HDFC, ICICI, Axis) release deceased locker contents, fixed deposits, and mutual funds smoothly when backed by an officially filed Will and death paper, avoiding high-expense indemnity bonds.
                     </p>
                   </div>
 
                   <div className="space-y-3">
                     <h3 className="font-extrabold text-base text-slate-900 flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-[#C65378]" />
-                      <span>Noida Authority Direct Name Change</span>
+                      <span>Noida Office Direct Name Change</span>
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Noida Authority and GNIDA officers process title transfer and sub-lease rights smoothly when presented with an officially registered Will, bypassing cumbersome public notice rules and office stalls.
+                      Noida Office and GNIDA officers process title transfer and sub-lease rights smoothly when presented with an officially filed Will, bypassing cumbersome public notice rules and office stalls.
                     </p>
                   </div>
                 </div>
@@ -636,7 +636,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike Delhi or Mumbai where assets often feature freehold titles, <strong>all land in Noida, Greater Noida, and Yamuna Expressway is leasehold</strong> owned by the Uttar Pradesh Government.
-                  The New Okhla Industrial Development Authority (NOIDA) and Greater Noida Industrial Development Authority (GNIDA) execute master leases to developers, who in turn execute 90-year <strong>Tripartite Sub-Lease Deeds</strong> to apartment buyers.
+                  The New Okhla Plant Development Office (NOIDA) and Greater Noida Plant Development Office (GNIDA) execute master leases to developers, who in turn execute 90-year <strong>Tripartite Sub-Lease Deeds</strong> to apartment buyers.
                 </p>
               </div>
 
@@ -644,18 +644,18 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-3xl border border-rose-200/80 p-6 sm:p-7 shadow-xs space-y-4">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 text-[#C65378] text-xs font-bold">
                     <AlertTriangle className="w-3.5 h-3.5" />
-                    <span>The Unregistered Will Bottleneck</span>
+                    <span>The Plain Will Bottleneck</span>
                   </div>
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    What Happens Without a Registered Will?
+                    What Happens Without a Filed Will?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    When a flat owner passes away leaving only an unregistered Will or no Will:
+                    When a flat owner passes away leaving only an plain Will or no Will:
                   </p>
                   <ul className="space-y-2 text-xs text-slate-700">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-1.5 shrink-0" />
-                      <span>Authority mandates publication of public notices in national English and Hindi dailies.</span>
+                      <span>Office mandates publication of public notices in national English and Hindi dailies.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-1.5 shrink-0" />
@@ -667,7 +667,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-1.5 shrink-0" />
-                      <span>If any Class-I legal heir fights the transfer, the Authority freezes name change and refers parties to civil court.</span>
+                      <span>If any Class-I legal heir fights the transfer, the Office freezes name change and refers parties to civil court.</span>
                     </li>
                   </ul>
                 </div>
@@ -675,18 +675,18 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-3xl border border-emerald-200/80 p-6 sm:p-7 shadow-xs space-y-4">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold">
                     <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>The Registered Will Advantage</span>
+                    <span>The Filed Will Advantage</span>
                   </div>
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    Direct Name Change in Authority Records
+                    Direct Name Change in Office Records
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    With an officially registered Will signed before the Gautam Buddha Nagar Sub-Registrar:
+                    With an officially filed Will signed before the Gautam Buddha Nagar SRO:
                   </p>
                   <ul className="space-y-2 text-xs text-slate-700">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
-                      <span>Noida Authority accepts the registered Will as strong proof of testamentary bequest.</span>
+                      <span>Noida Office accepts the filed Will as strong proof of Will bequest.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
@@ -698,7 +698,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
-                      <span>Heir can right away execute a sale, rent agreement, or gift deed without title clouds.</span>
+                      <span>Heir can right away execute a sale, rent pact, or gift deed without title clouds.</span>
                     </li>
                   </ul>
                 </div>
@@ -716,8 +716,8 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   4. Allahabad High Court Probate Exemption in UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among Noida property buyers relocating from Mumbai or Kolkata is that court probate is needed to inherit flats.
-                  Under the Indian Succession Act, 1925, <strong>probate is strictly optional in Uttar Pradesh</strong>:
+                  One of the most persistent misconceptions among Noida asset buyers relocating from Mumbai or Kolkata is that court probate is needed to inherit flats.
+                  Under the Indian Succession Act, 1925, <strong>probate is strictly a choice in Uttar Pradesh</strong>:
                 </p>
               </div>
 
@@ -732,17 +732,17 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Section 213(1) of the Indian Succession Act stipulates that an executor or legatee cannot set up any right under a Will unless a court of competent area has granted probate.
-                      Crucially, Section 213(2) read with Section 57 restricts this mandate exclusively to Wills made within the historical presidency towns of Calcutta, Madras, and Bombay, or Wills relating to land and flats situated inside those municipal areas.
+                      Crucially, Section 213(2) read with Section 57 restricts this mandate exclusively to Wills made within the historical presidency towns of Calcutta, Madras, and Bombay, or Wills relating to land and flats situated inside those city areas.
                     </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Because Gautam Buddha Nagar and Uttar Pradesh were never presidency towns, the Hon&apos;ble Allahabad High Court has repeatedly established that <strong>probate is not a condition precedent</strong> to set up rights under a Will in UP courts or office offices (<em>Smt. Raj Rani v. Chief Settlement Commissioner</em>; <em>Ram Chand v. Deputy Director of Consolidation</em>).
+                      Because Gautam Buddha Nagar and Uttar Pradesh were never presidency towns, the Hon&apos;ble Allahabad High Court has repeatedly established that <strong>probate is not a condition precedent</strong> to set up rights under a Will in UP courts or office offices (<em>Smt. Raj Rani v. Chief Deal Commissioner</em>; <em>Ram Chand v. Deputy Director of Consolidation</em>).
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
                   <span className="text-slate-500">
-                    Applicable Offices: <strong>Noida Authority, GNIDA, YEIDA, and Gautam Buddha Nagar SROs</strong>
+                    Applicable Offices: <strong>Noida Office, GNIDA, YEIDA, and Gautam Buddha Nagar SROs</strong>
                   </span>
                   <a
                     href="#legal-citations"
@@ -763,11 +763,11 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Gautam Buddha Nagar Sub-Registrar Directory
+                  5. Gautam Buddha Nagar SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gautam Buddha Nagar district houses four key Sub-Registrar Offices.
-                  Under Section 32 of the Registration Act, your Will can be registered at the SRO within whose sub-district you reside or where your apartment is located.
+                  Gautam Buddha Nagar district houses four key SRO Offices.
+                  Under Section 32 of the Filing Act, your Will can be filed at the SRO within whose sub-district you reside or where your apartment is located.
                 </p>
               </div>
 
@@ -870,8 +870,8 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   6. Area-Wise Will Drafting Services Across Noida Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Noida Expressway, Sector 50, Noida Extension, or Greater Noida</strong>? Property categories across Gautam Buddha Nagar range from luxury high-rise condominium towers along Noida Expressway to established sector kothis and sprawling Greater Noida townships.
-                  Our senior lawyers provide verified legal drafting, IGRSUP slot booking, and Sub-Registrar accompaniment across all key home clusters:
+                  Looking for legally checked <strong>Will drafting services in Noida Expressway, Sector 50, Noida Extension, or Greater Noida</strong>? Asset categories across Gautam Buddha Nagar range from luxury high-rise condominium towers along Noida Expressway to established sector kothis and sprawling Greater Noida townships.
+                  Our senior lawyers provide checked legal drafting, IGRSUP slot booking, and SRO accompaniment across all key home clusters:
                 </p>
               </div>
 
@@ -953,7 +953,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get specialized <strong>Will drafting services in Sector 50 &amp; Sectors 74 to 79</strong>. A blend of established Authority-allotted independent bungalows in Sector 50 and dense high-rise clusters in 74–79. We draft specific division clauses for multi-child estates, parking space allocations, and AOA transfer protocols under the UP Apartment Act.
+                      Get specialized <strong>Will drafting services in Sector 50 &amp; Sectors 74 to 79</strong>. A blend of established Office-allotted independent bungalows in Sector 50 and dense high-rise clusters in 74–79. We draft specific division clauses for multi-child estates, parking space allocations, and AOA transfer protocols under the UP Apartment Act.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -962,7 +962,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 33 Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Authority plot name change advisory, multi-heir bequest structures, and fast-track IGRSUP token generation.
+                        Office plot name change advisory, multi-heir bequest structures, and fast-track IGRSUP token generation.
                       </p>
                     </div>
                   </div>
@@ -1005,7 +1005,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in Greater Noida West (Noida Extension)</strong>. Noida Extension features hundreds of thousands of home flats with varying registry statuses. Our legal team assists testators in properly documenting builder-buyer agreements (BBA), pending sub-lease rights, and home loan liability indemnities.
+                      Opt for premier <strong>Will drafting services in Greater Noida West (Noida Extension)</strong>. Noida Extension features hundreds of thousands of home flats with varying registry statuses. Our legal team assists Will makers in properly documenting builder-buyer agreements (BBA), pending sub-lease rights, and home loan liability indemnities.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1014,7 +1014,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Compound, Dadri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Builder allotment succession clauses, bank home loan mortgage disclosures, and Dadri SRO registration.
+                        Builder allotment estate clauses, bank home loan mortgage disclosures, and Dadri SRO filing.
                       </p>
                     </div>
                   </div>
@@ -1058,7 +1058,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in Greater Noida (Pari Chowk &amp; Sectors)</strong>. GNIDA home sectors consist of planned individual plots, institutional housing societies, and group housing schemes. We draft precise GNIDA transfer clauses that guarantee hassle-free single-window name change at the Greater Noida Authority office.
+                      Secure expert <strong>Will drafting services in Greater Noida (Pari Chowk &amp; Sectors)</strong>. GNIDA home sectors consist of planned single plots, institutional housing societies, and group housing schemes. We draft precise GNIDA transfer clauses that guarantee hassle-free single-window name change at the Greater Noida Office office.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1067,7 +1067,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Surajpur Collectorate Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GNIDA authority plot name change protocols, institutional asset bequests, and Surajpur SRO appointments.
+                        GNIDA office plot name change protocols, institutional asset bequests, and Surajpur SRO appointments.
                       </p>
                     </div>
                   </div>
@@ -1096,10 +1096,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>5-STEP EXECUTION PROTOCOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Step-by-Step Will Drafting &amp; Registration SOP
+                  7. Step-by-Step Will Drafting &amp; Filing SOP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this standardized 5-step Standard Operating Step to draft your Will online and secure physical or doorstep registration in Gautam Buddha Nagar:
+                  Follow this standardized 5-step Standard Operating Step to draft your Will online and secure physical or doorstep filing in Gautam Buddha Nagar:
                 </p>
               </div>
 
@@ -1114,7 +1114,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       Step 1: Inventory Noida Assets &amp; Assign Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      List your Noida and Greater Noida assets, specifying exact flat numbers, tower names, society registrations, and Authority allotment dates. Include bank accounts, fixed deposits, demat shares, vehicles, and jewelry. Appoint a trustworthy executor to oversee split.
+                      List your Noida and Greater Noida assets, specifying exact flat numbers, tower names, society registrations, and Office allotment dates. Include bank accounts, fixed deposits, demat shares, vehicles, and jewelry. Appoint a trustworthy executor to oversee split.
                     </p>
                   </div>
                 </div>
@@ -1129,7 +1129,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       Step 2: Legal Drafting with Tripartite Leasehold Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your custom Will through our interactive platform or have our senior estate lawyers review it. We insert legal revocation clauses, residuary estate terms, alternate guardian appointments for minors, and specific Noida Authority name change instructions.
+                      Draft your custom Will through our free platform or have our senior estate lawyers review it. We insert legal revocation clauses, residuary estate terms, alternate guardian appointments for minors, and specific Noida Office name change instructions.
                     </p>
                   </div>
                 </div>
@@ -1159,7 +1159,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       Step 4: Book SRO Slot on the UP IGRSUP Portal
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log onto <code>igrsup.gov.in</code>. Enter Will maker and witness Aadhaar numbers, select your area SRO office (Sector 33 Noida, Surajpur Greater Noida, or Dadri), and pay the nominal ₹100 registration fee online. Download your official e-appointment slip with token number.
+                      Log onto <code>igrsup.gov.in</code>. Enter Will maker and witness Aadhaar numbers, select your area SRO office (Sector 33 Noida, Surajpur Greater Noida, or Dadri), and pay the nominal ₹100 filing fee online. Download your official e-appointment slip with token number.
                     </p>
                   </div>
                 </div>
@@ -1171,10 +1171,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
-                      Step 5: Biometric Check &amp; Book III Registration
+                      Step 5: Biometric Check &amp; Book III Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the SRO office with your two witnesses and original photo IDs. The Sub-Registrar captures digital facial photographs and biometric fingerprints. The Will is recorded in Book III, and the original endorsed document is returned to you.
+                      Visit the SRO office with your two witnesses and original photo IDs. The SRO captures digital facial photographs and biometric fingerprints. The Will is recorded in Book III, and the original endorsed paper is returned to you.
                     </p>
                   </div>
                 </div>
@@ -1189,11 +1189,11 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Doorstep Will Registration in Noida
+                  8. Section 31 Doorstep Will Filing in Noida
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden people, or medically vulnerable residents across Noida and Greater Noida condominiums, visiting the bustling Sector 33 SRO can be challenging.
-                  The law provides a dignified, fully legal alternative through <strong>Section 31 of the Registration Act, 1908</strong>:
+                  The law provides a dignified, fully legal alternative through <strong>Section 31 of the Filing Act, 1908</strong>:
                 </p>
               </div>
 
@@ -1203,9 +1203,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <div className="w-8 h-8 rounded-xl bg-rose-100 text-[#C65378] flex items-center justify-center font-black text-xs">
                       1
                     </div>
-                    <strong className="text-slate-900 block text-sm">MBBS Doctor Certificate</strong>
+                    <strong className="text-slate-900 block text-sm">MBBS Doctor Paper</strong>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain a medical paper from a registered MBBS physician confirming the Will maker is mentally sound but physically unable to travel.
+                      Obtain a medical paper from a filed MBBS physician confirming the Will maker is mentally sound but physically unable to travel.
                     </p>
                   </div>
 
@@ -1215,7 +1215,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
                     <strong className="text-slate-900 block text-sm">Official Commission Fee</strong>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our lawyers file an official commission petition before the Sub-Registrar and deposit the nominal government home visit fee online.
+                      Our lawyers file an official commission petition before the SRO and deposit the nominal government home visit fee online.
                     </p>
                   </div>
 
@@ -1225,14 +1225,14 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
                     <strong className="text-slate-900 block text-sm">Home Biometric Visit</strong>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits your Noida apartment with portable biometric equipment, records fingerprints, and completes Book III registration.
+                      The SRO visits your Noida apartment with portable biometric equipment, records fingerprints, and completes Book III filing.
                     </p>
                   </div>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-rose-50/60 border border-rose-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <span className="text-slate-700">
-                    Need doorstep registration in Sectors 50, 78, 128, 137, or Greater Noida?
+                    Need doorstep filing in Sectors 50, 78, 128, 137, or Greater Noida?
                   </span>
                   <a
                     href="/contact"
@@ -1253,7 +1253,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Document Checklist for Noida Sub-Registrar
+                  9. Paper Checklist for Noida SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before heading to the SRO office.
@@ -1307,7 +1307,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   10. Noida Leasehold Apartments &amp; Shop Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Gautam Buddha Nagar depends heavily on whether your property is an apartment tripartite sub-lease, an individual Authority plot, or a shop space:
+                  Estate in Gautam Buddha Nagar depends heavily on whether your asset is an apartment tripartite sub-lease, an single Office plot, or a shop space:
                 </p>
               </div>
 
@@ -1320,16 +1320,16 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     Tripartite Sub-Lease Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Signed between Noida/GNIDA Authority, developer, and buyer. A registered Will allows the nominee to apply directly for Authority leasehold transfer and AOA membership.
+                    Signed between Noida/GNIDA Office, developer, and buyer. A filed Will allows the nominee to apply directly for Office leasehold transfer and AOA membership.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
-                    Authority Plots
+                    Office Plots
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Authority Home Kothis
+                    Office Home Kothis
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Independent plots in Sectors 14, 15, 19, 40, 44, 50, and Greater Noida sectors. Clear Will drafting specifies floor-wise division, terrace rights, and parking access.
@@ -1344,7 +1344,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     IT Parks &amp; Shop Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Office spaces in Sector 62, 63, and Expressway IT hubs. Testamentary clauses address shop lease rentals, partnership ownership, and corporate board representation.
+                    Office spaces in Sector 62, 63, and Expressway IT hubs. Will clauses address shop lease rentals, partnership ownership, and corporate board representation.
                   </p>
                 </div>
               </div>
@@ -1358,10 +1358,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>OFFICIAL UP TARIFF</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. IGRSUP Portal Registration Fees &amp; Stamp Exemptions
+                  11. IGRSUP Portal Filing Fees &amp; Stamp Exemptions
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration in Uttar Pradesh is remarkably affordable because Wills are completely exempt from ad-valorem stamp duty:
+                  Will filing in Uttar Pradesh is remarkably affordable because Wills are completely exempt from ad-valorem stamp duty:
                 </p>
               </div>
 
@@ -1371,7 +1371,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <tr>
                       <th className="p-4">Fee Head</th>
                       <th className="p-4">Official Amount (UP)</th>
-                      <th className="p-4">Payment Authority</th>
+                      <th className="p-4">Payment Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1381,14 +1381,14 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       <td className="p-4">Govt of Uttar Pradesh</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Fee)</td>
                       <td className="p-4">IGRSUP Portal Online Payment</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; User Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹200</td>
-                      <td className="p-4">Sub-Registrar Counter Receipt</td>
+                      <td className="p-4">SRO Counter Receipt</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Commission Fee</td>
@@ -1434,7 +1434,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Noida Will builder</span>
+                        <span>Free Noida Will builder</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1442,7 +1442,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Standard two-witness attestation clauses</span>
+                        <span>Standard two-witness witness signing clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1475,7 +1475,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Recommended for complex multi-property estates, Authority plots, and business owners.
+                      Recommended for complex multi-asset estates, Office plots, and business owners.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1484,11 +1484,11 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Custom Noida Authority leasehold clause drafting</span>
+                        <span>Custom Noida Office leasehold clause drafting</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Minor guardianship &amp; life-interest clauses</span>
+                        <span>Minor child care &amp; life-interest clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1511,13 +1511,13 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       Concierge
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at Sector 33 Noida, Surajpur, or Dadri SRO.
+                      Full end-to-end filing help at Sector 33 Noida, Surajpur, or Dadri SRO.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1534,7 +1534,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1604,7 +1604,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   14. Legal Acts &amp; Allahabad HC Judgments in UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols strictly follow codified Indian succession statutes and official Uttar Pradesh registration channels:
+                  Our drafting protocols strictly follow codified Indian succession statutes and official Uttar Pradesh filing channels:
                 </p>
               </div>
 
@@ -1620,10 +1620,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep SRO Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep SRO Commission).
                   </p>
                 </div>
 
@@ -1632,7 +1632,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     UP IGRSUP Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official Uttar Pradesh registration portal: <code>igrsup.gov.in</code>.
+                    Official Uttar Pradesh filing portal: <code>igrsup.gov.in</code>.
                   </p>
                 </div>
 
@@ -1641,7 +1641,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     Allahabad High Court Rulings
                   </span>
                   <p className="text-xs text-slate-600">
-                    <em>Smt. Raj Rani</em> and <em>Ram Chand</em> confirming optional probate in UP.
+                    <em>Smt. Raj Rani</em> and <em>Ram Chand</em> confirming a choice probate in UP.
                   </p>
                 </div>
               </div>
@@ -1653,7 +1653,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 Protect Your Noida Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your 90-year leasehold apartment to prolonged Noida Authority fights.
+                Do not leave your 90-year leasehold apartment to prolonged Noida Office fights.
                 Draft a legally binding Will in minutes or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1673,7 +1673,29 @@ export default function NoidaLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1692,7 +1714,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Noida NCR Will Drafting &amp; Registration Architecture
+                Visual Blueprint: Noida NCR Will Drafting &amp; Filing Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

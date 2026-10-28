@@ -62,12 +62,12 @@ const TOC_ITEMS = [
   { id: "daughter-dilemma", label: "8. Protecting Daughters' Rights" },
   { id: "aul-and-radd", label: "9. Doctrine of Aul & Radd Math" },
   { id: "hiba-vs-will", label: "10. Lifetime Gift (Hiba) vs Wasiyat" },
-  { id: "step-by-step-sop", label: "11. Estate Distribution SOP" },
-  { id: "succession-certificate", label: "12. Court Succession Certificate" },
+  { id: "step-by-step-sop", label: "11. Estate Split SOP" },
+  { id: "succession-certificate", label: "12. Court Estate Paper" },
   { id: "legal-clauses", label: "13. Sharia Will Drafting Clauses" },
   { id: "institutional-profile", label: "14. Institutional Profile & Trust" },
-  { id: "faq", label: "15. Muslim Inheritance FAQs" },
-  { id: "statutory-citations", label: "16. Statutory Authority & Acts" },
+  { id: "faq", label: "15. Muslim Estate FAQs" },
+  { id: "statutory-citations", label: "16. Legal Office & Acts" },
 ];
 
 export default function MuslimInheritanceCalculatorClient() {
@@ -76,7 +76,7 @@ export default function MuslimInheritanceCalculatorClient() {
   const printRef = useRef<HTMLDivElement>(null);
 
   // Active section tracking for TOC
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [mobileTocOpen, setMobileTocOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -113,7 +113,7 @@ export default function MuslimInheritanceCalculatorClient() {
   const [debts, setDebts] = useState<number>(150000);
   const [unpaidMahr, setUnpaidMahr] = useState<number>(100000);
 
-  // Wasiyat (Testamentary Bequest)
+  // Wasiyat (Will Bequest)
   const [wasiyatPct, setWasiyatPct] = useState<number>(10);
   const [allowExceedOneThird, setAllowExceedOneThird] = useState<boolean>(false);
   const [wasiyatToHeir, setWasiyatToHeir] = useState<boolean>(false);
@@ -1128,12 +1128,12 @@ export default function MuslimInheritanceCalculatorClient() {
 
           {/* H1 Title: Single H1 on page, 30-65 chars */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Muslim Inheritance &amp; Faraid Share Calculator India
+            Muslim Estate &amp; Faraid Share Tool India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Calculate statutory Islamic inheritance shares among widows, daughters, sons, and siblings under Shariat Act, 1937. See how the 1/3rd Wasiyat bequest interacts with the 2/3rd Faraid estate.
+            Calculate legal Islamic estate shares among widows, daughters, sons, and siblings under Shariat Act, 1937. See how the 1/3rd Wasiyat bequest interacts with the 2/3rd Faraid estate.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -1289,10 +1289,10 @@ export default function MuslimInheritanceCalculatorClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Muslim Personal Law (Shariat) Application Act, 1937, Section 213(2) of the Indian Succession Act, 1925, and Mulla&apos;s Principles of Mahomedan Law (Chapters VI–VIII).
+                Governed under Muslim Personal Law (Shariat) Form Act, 1937, Section 213(2) of the Indian Succession Act, 1925, and Mulla&apos;s Principles of Mahomedan Law (Chapters VI–VIII).
               </p>
             </div>
           </aside>
@@ -1311,13 +1311,13 @@ export default function MuslimInheritanceCalculatorClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Shariat Act 1937 Precedence:</strong> Under Section 2 of the Muslim Personal Law (Shariat) Application Act, 1937, personal law governs all questions of Muslim intestate succession, completely superseding contrary customs.
+                    <strong>Shariat Act 1937 Precedence:</strong> Under Section 2 of the Muslim Personal Law (Shariat) Form Act, 1937, personal law governs all questions of Muslim no-Will estate, completely superseding contrary customs.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>1/3rd Testamentary Bequest Cap:</strong> A Muslim cannot bequeath more than one-third (1/3rd) of their net estate via Wasiyat (Will). In Sunni Hanafi law, bequests to legal heirs are void without unanimous post-death consent.
+                    <strong>1/3rd Will Bequest Cap:</strong> A Muslim cannot bequeath more than one-third (1/3rd) of their net estate via Wasiyat (Will). In Sunni Hanafi law, bequests to legal heirs are void without unanimous post-death consent.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1341,18 +1341,18 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>STATUTORY FRAMEWORK</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Framework: Shariat Act, 1937 &amp; Mulla Rules
+                1. Legal Framework: Shariat Act, 1937 &amp; Mulla Rules
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In India, the succession of a deceased Muslim is governed primarily by personal law rather than the general
-                  Indian Succession Act, 1925. Under Section 2 of the <strong>Muslim Personal Law (Shariat) Application Act,
-                  1937</strong>, all questions relating to intestate succession, special property of females, marriage, dower
+                  In India, the estate of a deceased Muslim is governed primarily by personal law rather than the general
+                  Indian Succession Act, 1925. Under Section 2 of the <strong>Muslim Personal Law (Shariat) Form Act,
+                  1937</strong>, all questions relating to no-Will estate, special asset of females, marriage, dower
                   (Mahr), gifts (Hiba), and trusts are governed strictly by the rule of decision under Muslim Personal Law (Shariat).
                 </p>
                 <p>
                   Unlike Hindu succession, which was comprehensively codified in the Hindu Succession Act, 1956, Muslim
-                  succession remains largely uncodified statutory personal law. The rules recognized and enforced by the
+                  estate remains largely uncodified legal personal law. The rules recognized and enforced by the
                   Supreme Court of India and state High Courts originate from authoritative classical treatises, foremost among
                   them being <strong>Sir Dinshaw Fardunji Mulla&apos;s Principles of Mahomedan Law</strong> (Chapters VI through XIII).
                 </p>
@@ -1364,7 +1364,7 @@ export default function MuslimInheritanceCalculatorClient() {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Applies automatically to any person professing the religion of Islam who dies domiciled in India. Covers
-                      both ancestral properties and self-acquired movable and immovable assets.
+                      both family assets and self-acquired cash and land assets.
                     </p>
                   </div>
                   <div className="bg-white rounded-2xl border border-amber-200/90 p-5 shadow-xs space-y-2">
@@ -1374,8 +1374,8 @@ export default function MuslimInheritanceCalculatorClient() {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       If a Muslim marries under the Special Marriage Act, 1954 to another person (or registers their Nikah under
-                      Section 15 of that Act), Section 21 dictates that succession to their estate is governed by the Indian
-                      Succession Act, 1925, and NOT by Muslim Personal Law.
+                      Section 15 of that Act), Section 21 dictates that estate to their estate is governed by the Indian
+                      Estate Act, 1925, and NOT by Muslim Personal Law.
                     </p>
                   </div>
                 </div>
@@ -1388,10 +1388,10 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>INTERACTIVE INHERITANCE CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Muslim Inheritance &amp; Wasiyat Calculator
+                2. Free Muslim Estate &amp; Wasiyat Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Configure your school of jurisprudence, estate valuation, deductions, and surviving family heirs below to compute precise Quranic shares, residuary allocations, and Wasiyat bequests.
+                Configure your school of jurisprudence, estate price check, deductions, and surviving family heirs below to compute precise Quranic shares, residuary allocations, and Wasiyat bequests.
               </p>
 
               {/* Calculator Panel Container */}
@@ -1519,7 +1519,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   <div className="bg-[#FAF7F0] p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200">
                     <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2 mb-4">
                       <span className="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs">2</span>
-                      Gross Estate &amp; Priority Statutory Deductions
+                      Gross Estate &amp; Priority Legal Deductions
                     </h3>
 
                     <div className="space-y-4">
@@ -1527,7 +1527,7 @@ export default function MuslimInheritanceCalculatorClient() {
                       <div>
                         <div className="flex justify-between items-center mb-1">
                           <label className="text-xs font-bold text-slate-700 uppercase">
-                            Gross Estate Value (Movable &amp; Immovable)
+                            Gross Estate Value (Cash &amp; Land)
                           </label>
                           <span className="text-sm font-extrabold text-[#172228]">{formatINR(grossEstate)}</span>
                         </div>
@@ -1604,7 +1604,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   <div className="bg-[#FAF7F0] p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200">
                     <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2 mb-4">
                       <span className="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs">3</span>
-                      Wasiyat (Testamentary Bequest / Will)
+                      Wasiyat (Will Bequest / Will)
                     </h3>
 
                     <div className="space-y-4">
@@ -1662,7 +1662,7 @@ export default function MuslimInheritanceCalculatorClient() {
                           <div>
                             <span className="font-bold text-slate-800 block">Exceed 1/3rd Cap</span>
                             <span className="text-[11px] text-slate-500">
-                              Valid only if all legal heirs grant consent after testator&apos;s death.
+                              Valid only if all legal heirs grant consent after Will maker&apos;s death.
                             </span>
                           </div>
                         </label>
@@ -1671,7 +1671,7 @@ export default function MuslimInheritanceCalculatorClient() {
                       {/* Remaining Faraid Pool */}
                       <div className="p-3 bg-amber-50/80 border border-amber-200 rounded-xl flex items-center justify-between text-xs sm:text-sm">
                         <span className="font-semibold text-amber-900">
-                          Remaining Pool for Faraid (Quranic Inheritance):
+                          Remaining Pool for Faraid (Quranic Estate):
                         </span>
                         <span className="font-extrabold text-amber-950 text-base">{formatINR(faraidPool)}</span>
                       </div>
@@ -1935,10 +1935,10 @@ export default function MuslimInheritanceCalculatorClient() {
                     <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-5">
                       <div>
                         <div className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
-                          Statutory Result
+                          Legal Result
                         </div>
                         <h3 className="text-lg sm:text-xl font-extrabold text-white mt-0.5">
-                          Inheritance Distribution Sheet
+                          Estate Split Sheet
                         </h3>
                       </div>
                       <button
@@ -2070,7 +2070,7 @@ export default function MuslimInheritanceCalculatorClient() {
                     {/* Conversion CTA Box inside Result Card */}
                     <div className="mt-6 pt-5 border-t border-slate-800 text-center space-y-3">
                       <div className="text-xs text-slate-300">
-                        Want to protect your family or execute a challenge-proof Sharia Will?
+                        Want to protect your family or execute a fight-proof Sharia Will?
                       </div>
                       <button
                         onClick={handleStartWill}
@@ -2084,7 +2084,7 @@ export default function MuslimInheritanceCalculatorClient() {
                         className="inline-flex items-center justify-center gap-1 text-xs text-amber-300 hover:text-amber-200 font-medium transition-colors"
                       >
                         <PhoneCall className="w-3.5 h-3.5" />
-                        Book High Court Advocate Consultation &rarr;
+                        Book High Court Lawyer Talk &rarr;
                       </Link>
                     </div>
                   </div>
@@ -2124,8 +2124,8 @@ export default function MuslimInheritanceCalculatorClient() {
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 217 of Mulla&apos;s Principles of Mahomedan Law and established Indian court rulings, the
-                  estate of a deceased Muslim is not distributed to heirs immediately. It must pass through four strict
-                  statutory priorities in sequential order before any heir receives a single rupee.
+                  estate of a deceased Muslim is not distributed to heirs right away. It must pass through four strict
+                  legal priorities in sequential order before any heir receives a single rupee.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
@@ -2145,7 +2145,7 @@ export default function MuslimInheritanceCalculatorClient() {
                     </div>
                     <h3 className="font-bold text-[#172228] text-sm">Debts to Creditors (Duyun)</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      All commercial, personal, bank loans, and statutory dues must be cleared in full from the gross estate.
+                      All shop, personal, bank loans, and legal dues must be cleared in full from the gross estate.
                     </p>
                   </div>
 
@@ -2178,19 +2178,19 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>TESTAMENTARY LIMITS IN ISLAM</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. The 1/3rd Wasiyat Rule: Testamentary Bequest Limits
+                4. The 1/3rd Wasiyat Rule: Will Bequest Limits
               </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Muslim personal law, a person does not have unrestricted freedom of testation. Unlike Hindu or English
-                  common law where a testator can Will away 100% of their property to anyone, an Indian Muslim can dispose
+                  common law where a Will maker can Will away 100% of their asset to anyone, an Indian Muslim can dispose
                   of at most <strong>one-third (1/3rd) of their net estate</strong> by Will (Wasiyat).
                 </p>
                 <p>
                   The remaining <strong>two-thirds (2/3rds)</strong> belongs inviolably to the Quranic legal heirs as defined
                   under Faraid. Any bequest exceeding 1/3rd is legally void (inchoate) unless all legal heirs grant express or
-                  implied consent after the death of the testator.
+                  implied consent after the death of the Will maker.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
@@ -2201,7 +2201,7 @@ export default function MuslimInheritanceCalculatorClient() {
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Based on the Prophetic tradition <em>&quot;La wasiyata li warith&quot;</em> (There is no bequest to an heir),
                       a Sunni Muslim cannot bequeath even a single rupee within the 1/3rd limit to a legal heir without the
-                      unanimous consent of all other legal heirs given after the testator&apos;s death. A bequest to a non-heir,
+                      unanimous consent of all other legal heirs given after the Will maker&apos;s death. A bequest to a non-heir,
                       foster child, or charitable trust is valid without anyone&apos;s consent.
                     </p>
                   </div>
@@ -2211,7 +2211,7 @@ export default function MuslimInheritanceCalculatorClient() {
                       Shia (Ithna-Ashari) Bequest-to-Heir Privilege
                     </h3>
                     <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                      Under Shia Ithna-Ashari law, as codified in Section 117 of Mulla, a testator can freely bequeath up to
+                      Under Shia Ithna-Ashari law, as codified in Section 117 of Mulla, a Will maker can freely bequeath up to
                       one-third of their estate to <strong>any person, including a legal heir</strong>, without requiring the
                       consent of other heirs. This allows a Shia parent to bequeath an extra 1/3rd to a daughter or dependent
                       spouse outright.
@@ -2232,15 +2232,15 @@ export default function MuslimInheritanceCalculatorClient() {
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The distinction between Sunni Hanafi and Shia Ithna-Ashari succession law is one of the most critical and
-                  misunderstood areas in Indian estate planning. Review this side-by-side statutory comparison matrix:
+                  The distinction between Sunni Hanafi and Shia Ithna-Ashari estate law is one of the most critical and
+                  misunderstood areas in Indian estate planning. Review this side-by-side legal comparison matrix:
                 </p>
 
                 <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                   <table className="w-full min-w-[560px] text-left text-xs sm:text-sm">
                     <thead className="bg-[#172228] text-white uppercase text-[11px] font-black tracking-wider">
                       <tr>
-                        <th className="p-3.5">Succession Principle</th>
+                        <th className="p-3.5">Estate Principle</th>
                         <th className="p-3.5 text-amber-300">Sunni (Hanafi) Law</th>
                         <th className="p-3.5 text-emerald-300">Shia (Ithna-Ashari) Law</th>
                       </tr>
@@ -2249,7 +2249,7 @@ export default function MuslimInheritanceCalculatorClient() {
                       <tr className="hover:bg-slate-50/80 transition-colors">
                         <td className="p-3.5 font-bold text-slate-900">Bequest to an Heir</td>
                         <td className="p-3.5 text-slate-700">
-                          Invalid unless all other legal heirs consent after testator&apos;s death.
+                          Invalid unless all other legal heirs consent after Will maker&apos;s death.
                         </td>
                         <td className="p-3.5 text-emerald-950 bg-emerald-50/30 font-medium">
                           Valid up to 1/3rd of net estate without needing any heir&apos;s consent.
@@ -2285,7 +2285,7 @@ export default function MuslimInheritanceCalculatorClient() {
                       <tr className="hover:bg-slate-50/80 transition-colors">
                         <td className="p-3.5 font-bold text-slate-900">Childless Widow Land Rights</td>
                         <td className="p-3.5 text-slate-700">
-                          Inherits 1/4th of all assets, including agricultural and residential land.
+                          Inherits 1/4th of all assets, including farm and home land.
                         </td>
                         <td className="p-3.5 text-emerald-950 bg-emerald-50/30 font-medium">
                           Inherits value of trees/buildings, but no direct share in the corpus of land.
@@ -2318,7 +2318,7 @@ export default function MuslimInheritanceCalculatorClient() {
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Sunni Islamic jurisprudence, there are 12 primary relations recognized as <strong>Quranic Sharers
-                  (Zawil-Furuz)</strong> whose fractional shares are specifically ordained in Surah An-Nisa of the Holy Quran.
+                  (Zawil-Furuz)</strong> whose fractional shares are mainly ordained in Surah An-Nisa of the Holy Quran.
                   Sharers are satisfied first out of the net Faraid pool:
                 </p>
 
@@ -2380,7 +2380,7 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>RESIDUE DISTRIBUTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Residuaries: Asabah Inheritance &amp; Male-Female Ratio
+                7. Residuaries: Asabah Estate &amp; Male-Female Ratio
               </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
@@ -2390,15 +2390,15 @@ export default function MuslimInheritanceCalculatorClient() {
                 </p>
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                    The 2 to 1 Male-to-Female Inheritance Ratio Explained
+                    The 2 to 1 Male-to-Female Estate Ratio Explained
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Surah An-Nisa 4:11, where both male and female children survive, the son converts the daughter from a
                     Quranic Sharer into a Residuary in another&apos;s right (<em>Asabah bi-Ghayriha</em>). The residue is divided
                     so that each son receives double the portion of each daughter. In classical Islamic jurisprudence, this
-                    differential is legally grounded in the husband and son&apos;s mandatory statutory duty of maintenance
+                    differential is legally grounded in the husband and son&apos;s needed legal duty of maintenance
                     (<em>Nafaqah</em>) towards the family, whereas female heirs retain absolute separate ownership of their
-                    inheritance and Mahr without any legal obligation to contribute to household expenses.
+                    estate and Mahr without any legal obligation to contribute to household expenses.
                   </p>
                 </div>
               </div>
@@ -2415,7 +2415,7 @@ export default function MuslimInheritanceCalculatorClient() {
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  One of the most frequent legal queries faced by advocates at AMA Legal Solutions occurs when a Sunni Muslim
+                  One of the most frequent legal queries faced by lawyers at AMA Legal Solutions occurs when a Sunni Muslim
                   dies leaving only daughters and no sons. Under Sunni (Hanafi) law:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700">
@@ -2427,7 +2427,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   </li>
                 </ul>
                 <p>
-                  In many contemporary Indian families, parents do not wish ancestral or hard-earned residential homes to be
+                  In many contemporary Indian families, parents do not wish family or hard-earned home homes to be
                   co-owned by distant uncles or estranged brothers. How do experienced Indian advocates resolve this?
                 </p>
 
@@ -2435,7 +2435,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   <div className="bg-white rounded-2xl border border-emerald-200/90 p-5 shadow-xs space-y-2">
                     <h3 className="font-bold text-emerald-950 text-sm">Strategy 1: Lifetime Gift (Hiba)</h3>
                     <p className="text-xs text-emerald-900 leading-relaxed">
-                      Execute a registered gift deed during lifetime. Muslim law places zero restrictions on lifetime gifts; you can gift 100% of property to daughters.
+                      Execute a filed gift deed during lifetime. Muslim law places zero restrictions on lifetime gifts; you can gift 100% of asset to daughters.
                     </p>
                   </div>
                   <div className="bg-white rounded-2xl border border-cyan-200/90 p-5 shadow-xs space-y-2">
@@ -2506,8 +2506,8 @@ export default function MuslimInheritanceCalculatorClient() {
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many Indian Muslims mistakenly assume that a Will can transfer 100% of their property to a beloved child. As
-                  explained, the 1/3rd cap and prohibition against bequests to heirs make this impossible through a testamentary
+                  Many Indian Muslims mistakenly assume that a Will can transfer 100% of their asset to a beloved child. As
+                  explained, the 1/3rd cap and prohibition against bequests to heirs make this impossible through a Will
                   Will alone. To pass complete ownership, Indian Muslims utilize <strong>Hiba (Gift)</strong> during their lifetime:
                 </p>
 
@@ -2518,33 +2518,33 @@ export default function MuslimInheritanceCalculatorClient() {
                         <th className="p-3.5">Parameter</th>
                         <th className="p-3.5 text-amber-300">Lifetime Gift (Hiba)</th>
                         <th className="p-3.5 text-rose-300">Will (Wasiyat)</th>
-                        <th className="p-3.5 text-cyan-300">Intestate Succession (Faraid)</th>
+                        <th className="p-3.5 text-cyan-300">No-Will Estate (Faraid)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
                       <tr className="hover:bg-slate-50/80 transition-colors">
-                        <td className="p-3.5 font-bold text-slate-900">Property Quantum</td>
+                        <td className="p-3.5 font-bold text-slate-900">Asset Quantum</td>
                         <td className="p-3.5 font-semibold text-emerald-700">100% (No limits)</td>
                         <td className="p-3.5 text-slate-700">Max 1/3rd without consent</td>
                         <td className="p-3.5 text-slate-700">100% divided in fixed shares</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80 transition-colors">
                         <td className="p-3.5 font-bold text-slate-900">When Operative</td>
-                        <td className="p-3.5 text-slate-700">Immediately during lifetime</td>
-                        <td className="p-3.5 text-slate-700">Only upon death of testator</td>
-                        <td className="p-3.5 text-slate-700">Immediately upon death</td>
+                        <td className="p-3.5 text-slate-700">Right away during lifetime</td>
+                        <td className="p-3.5 text-slate-700">Only upon death of Will maker</td>
+                        <td className="p-3.5 text-slate-700">Right away upon death</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80 transition-colors">
                         <td className="p-3.5 font-bold text-slate-900">Can Gift to Legal Heir?</td>
                         <td className="p-3.5 font-semibold text-emerald-700">Yes, 100% valid</td>
                         <td className="p-3.5 text-slate-700">Requires other heirs&apos; consent (Sunni)</td>
-                        <td className="p-3.5 text-slate-700">Fixed statutory percentages</td>
+                        <td className="p-3.5 text-slate-700">Fixed legal percentages</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80 transition-colors">
                         <td className="p-3.5 font-bold text-slate-900">Revocability</td>
                         <td className="p-3.5 text-slate-700">Irrevocable once possession delivered</td>
                         <td className="p-3.5 font-semibold text-emerald-700">100% revocable anytime during life</td>
-                        <td className="p-3.5 text-slate-700">Irrevocable statutory law</td>
+                        <td className="p-3.5 text-slate-700">Irrevocable legal law</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2568,11 +2568,11 @@ export default function MuslimInheritanceCalculatorClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                      Obtain Municipal Death Certificate &amp; Legal Heir Certificate
+                      Obtain City Death Paper &amp; Legal Heir Paper
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                      Apply to the municipal corporation or Revenue Tehsildar / Sub-Divisional Magistrate (SDM) with an
-                      affidavit detailing all surviving legal heirs according to Muslim Personal Law.
+                      Apply to the city city board or Revenue Tehsildar / Sub-Divisional Magistrate (SDM) with an
+                      sworn note detailing all surviving legal heirs according to Muslim Personal Law.
                     </p>
                   </div>
                 </div>
@@ -2601,8 +2601,8 @@ export default function MuslimInheritanceCalculatorClient() {
                       Verify and Execute 1/3rd Wasiyat (Will)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                      Check if the deceased left an executed Wasiyat. If within 1/3rd to a non-heir, transfer the bequest
-                      immediately. If to an heir (under Sunni law), obtain written consent from all other legal heirs.
+                      Check if the deceased left an signed Wasiyat. If within 1/3rd to a non-heir, transfer the bequest
+                      right away. If to an heir (under Sunni law), obtain written consent from all other legal heirs.
                     </p>
                   </div>
                 </div>
@@ -2613,10 +2613,10 @@ export default function MuslimInheritanceCalculatorClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                      Divide Remaining Faraid Estate &amp; File for Property Mutation
+                      Divide Remaining Faraid Estate &amp; File for Asset Name Change
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                      Submit the Legal Heir Certificate and inheritance computation sheet to the Sub-Registrar and Municipal
+                      Submit the Legal Heir Paper and estate computation sheet to the SRO and City
                       Revenue Office to mutate land records, electricity meters, and society shares into the names of all heirs.
                     </p>
                   </div>
@@ -2630,48 +2630,48 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>COURT INSTRUMENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Succession Certificate vs Letters of Administration
+                12. Estate Paper vs Letters of Care
               </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Under Section 213(2) of the Indian Succession Act, 1925, Muslims are explicitly exempt from the mandatory
-                  probate requirement across all Indian jurisdictions, including Mumbai, Kolkata, and Chennai. However, banks
-                  and registrars frequently require court certificates for high-value asset transmission:
+                  Under Section 213(2) of the Indian Succession Act, 1925, Muslims are explicitly exempt from the needed
+                  probate rule across all Indian jurisdictions, including Mumbai, Kolkata, and Chennai. However, banks
+                  and registrars frequently require court papers for high-value asset transfer:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
                   <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                      Succession Certificate (Sec 370-390 ISA)
+                      Estate Paper (Sec 370-390 ISA)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Required for movable securities such as bank fixed deposits, mutual funds, demat shares, and government
-                      bonds when financial institutions refuse to release funds based on a simple heir certificate. Court fee
+                      Required for cash securities such as bank fixed deposits, mutual funds, demat shares, and government
+                      bonds when financial institutions refuse to release funds based on a simple heir paper. Court fee
                       ranges from 2% to 6% depending on the state.
                     </p>
                     <Link
                       href="/tools/succession-certificate-court-fee-calculator"
                       className="inline-flex items-center gap-1 text-xs font-bold text-[#C65378] pt-1 hover:underline"
                     >
-                      <span>Check State Court Fees with Calculator</span>
+                      <span>Check State Court Fees with Tool</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
 
                   <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                      Letters of Administration (Sec 218 ISA)
+                      Letters of Care (Sec 218 ISA)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Granted by a District Court or High Court to administer both movable and immovable assets when substantial
-                      disputes arise between legal heirs or when complex properties across multiple states must be managed.
+                      Granted by a District Court or High Court to administer both cash and land assets when substantial
+                      fights arise between legal heirs or when complex assets across multiple states must be managed.
                     </p>
                     <Link
                       href="/tools/probate-checker"
                       className="inline-flex items-center gap-1 text-xs font-bold text-[#C65378] pt-1 hover:underline"
                     >
-                      <span>Check Court Requirement with Probate Checker</span>
+                      <span>Check Court Rule with Probate Checker</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -2689,7 +2689,7 @@ export default function MuslimInheritanceCalculatorClient() {
               </h3>
 
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use these standard legal clauses in your Sharia-compliant Will or estate settlement deed:
+                Use these standard legal clauses in your Sharia-compliant Will or estate deal deed:
               </p>
 
               <div className="space-y-4 mt-6">
@@ -2805,8 +2805,8 @@ export default function MuslimInheritanceCalculatorClient() {
                   </div>
                   <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
                     WillDrafting.in is powered by <strong>AMA Legal Solutions</strong>, an elite pan-India legal practice
-                    specializing in High Court succession petitions, Muslim personal law estates, NRI property disputes, and
-                    probate litigation. All mathematical algorithms in this tool have been independently audited against Mulla&apos;s
+                    specializing in High Court estate petitions, Muslim personal law estates, NRI asset fights, and
+                    probate court fights. All mathematical algorithms in this tool have been independently audited against Mulla&apos;s
                     Principles of Mahomedan Law and prevailing Indian Supreme Court precedents.
                   </p>
                 </div>
@@ -2822,7 +2822,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   <div className="flex items-center gap-3">
                     <UserCheck className="w-6 h-6 text-cyan-400 shrink-0" />
                     <div>
-                      <div className="font-bold text-white text-sm">Advocate Reviewed</div>
+                      <div className="font-bold text-white text-sm">Lawyer Reviewed</div>
                       <div className="text-xs text-slate-400">Customized Sharia estate plans</div>
                     </div>
                   </div>
@@ -2843,18 +2843,18 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>CLEAR ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Frequently Asked Questions: Muslim Inheritance India
+                15. Frequently Asked Questions: Muslim Estate India
               </h3>
 
               <div className="mt-6 space-y-3">
                 {[
                   {
-                    q: "Which law governs Muslim inheritance and Wills in India?",
-                    a: "Muslim inheritance in India is governed by the Muslim Personal Law (Shariat) Application Act, 1937 and uncodified principles compiled in Sir Dinshaw Mulla's Principles of Mahomedan Law. The Indian Succession Act, 1925 does not apply unless the marriage was registered under the Special Marriage Act, 1954.",
+                    q: "Which law governs Muslim estate and Wills in India?",
+                    a: "Muslim estate in India is governed by the Muslim Personal Law (Shariat) Form Act, 1937 and uncodified principles compiled in Sir Dinshaw Mulla's Principles of Mahomedan Law. The Indian Succession Act, 1925 does not apply unless the marriage was filed under the Special Marriage Act, 1954.",
                   },
                   {
                     q: "What is the 1/3rd Wasiyat (Will) rule in Islamic law in India?",
-                    a: "A Muslim can bequeath at most one-third (1/3rd) of their net estate (after paying funeral expenses and debts) through a Will (Wasiyat). Under Sunni Hanafi law, this 1/3rd can only go to non-heirs; a bequest to a legal heir is invalid unless all other heirs consent after the testator's death. Under Shia law, up to 1/3rd can be bequeathed to an heir or non-heir without consent.",
+                    a: "A Muslim can bequeath at most one-third (1/3rd) of their net estate (after paying funeral expenses and debts) through a Will (Wasiyat). Under Sunni Hanafi law, this 1/3rd can only go to non-heirs; a bequest to a legal heir is invalid unless all other heirs consent after the Will maker's death. Under Shia law, up to 1/3rd can be bequeathed to an heir or non-heir without consent.",
                   },
                   {
                     q: "What share does a widow or wife inherit under Muslim law?",
@@ -2865,32 +2865,32 @@ export default function MuslimInheritanceCalculatorClient() {
                     a: "A surviving husband inherits 1/4th (one-fourth) of his deceased wife's net estate if there are surviving children or agnatic grandchildren. If there are no children or agnatic descendants, the husband inherits 1/2 (half) of the net estate.",
                   },
                   {
-                    q: "What share do daughters inherit under Muslim succession in India?",
+                    q: "What share do daughters inherit under Muslim estate in India?",
                     a: "If a deceased leaves only one daughter and no sons, she receives 1/2 (half) of the estate as a Quranic Sharer. Two or more daughters together receive 2/3rds (two-thirds) divided equally. If sons also exist, daughters become Residuaries with the sons, where each son receives double the share of each daughter (2:1 ratio).",
                   },
                   {
                     q: "Why do brothers inherit when a Sunni Muslim dies leaving only daughters?",
-                    a: "Under Sunni (Hanafi) law, daughters are Quranic Sharers entitled to a maximum collective share of 2/3rds (or 1/2 for an only daughter). The remaining residue (1/3rd or 1/2) passes to agnatic residuaries (Asabah), which includes the deceased's father, grandfather, or full brothers and their sons. To prevent brothers from inheriting ancestral estate away from daughters, parents frequently execute lifetime gifts (Hiba) or maximum 1/3rd Wasiyat bequests.",
+                    a: "Under Sunni (Hanafi) law, daughters are Quranic Sharers entitled to a maximum collective share of 2/3rds (or 1/2 for an only daughter). The remaining residue (1/3rd or 1/2) passes to agnatic residuaries (Asabah), which includes the deceased's father, grandfather, or full brothers and their sons. To prevent brothers from inheriting family estate away from daughters, parents frequently execute lifetime gifts (Hiba) or maximum 1/3rd Wasiyat bequests.",
                   },
                   {
-                    q: "How does Shia inheritance law differ from Sunni law regarding daughters and brothers?",
+                    q: "How does Shia estate law differ from Sunni law regarding daughters and brothers?",
                     a: "Under Shia (Ithna-Ashari) law, heirs are organized into three distinct consanguineous classes (Nasab). Class I consists of parents and children/descendants, while Class II consists of grandparents and brothers/sisters. Any surviving heir in Class I completely excludes everyone in Class II. Therefore, in Shia law, a daughter completely excludes the deceased's brothers from inheriting any share.",
                   },
                   {
-                    q: "What is the Doctrine of Aul (Increase) in Muslim inheritance?",
+                    q: "What is the Doctrine of Aul (Increase) in Muslim estate?",
                     a: "The Doctrine of Aul applies when the fractional sum of all Quranic Sharers exceeds unity (1). To balance the estate, the common denominator is increased to match the sum of numerators, proportionally reducing each sharer's allocation without depriving any Quranic heir. Sunni law recognizes Aul across common bases of 6, 12, and 24, whereas Shia law does not apply Aul and instead deducts any deficit solely from daughters or full sisters.",
                   },
                   {
-                    q: "What is the Doctrine of Radd (Return) in Islamic succession?",
+                    q: "What is the Doctrine of Radd (Return) in Islamic estate?",
                     a: "The Doctrine of Radd applies when the sum of Quranic Sharers is less than unity (1) and there are no residuaries (Asabah) to take the remainder. The surplus is returned proportionally to the Quranic blood-sharers. Under classical Hanafi law, the surviving spouse does not participate in Radd unless no other blood relative or distant kindred exists.",
                   },
                   {
-                    q: "Is probate mandatory for a Muslim Will (Wasiyat) in India?",
-                    a: "No. Under Section 213(2) of the Indian Succession Act, 1925, probate is explicitly exempt for Wills made by Muslims across all states in India, including Mumbai, Chennai, and Kolkata. An executor or legatee under a valid Muslim Will can enforce rights without seeking probate from a High Court, though an application for Letters of Administration or Legal Heir Certificate is often obtained for municipal mutation.",
+                    q: "Is probate needed for a Muslim Will (Wasiyat) in India?",
+                    a: "No. Under Section 213(2) of the Indian Succession Act, 1925, probate is explicitly exempt for Wills made by Muslims across all states in India, including Mumbai, Chennai, and Kolkata. An executor or legatee under a valid Muslim Will can enforce rights without seeking probate from a High Court, though an form for Letters of Care or Legal Heir Paper is often obtained for city name change.",
                   },
                   {
-                    q: "Can a Muslim give 100% of their property to a daughter through a lifetime gift (Hiba)?",
-                    a: "Yes. The 1/3rd testamentary restriction applies only to a Will (Wasiyat) that takes effect after death. During their lifetime, a Muslim has absolute freedom to gift (Hiba) up to 100% of their self-acquired or ancestral property to a daughter, wife, or any person. A valid Hiba requires declaration (Ijab), acceptance (Qabul), and delivery of possession (Qabda), and cannot be challenged under Faraid rules after death.",
+                    q: "Can a Muslim give 100% of their asset to a daughter through a lifetime gift (Hiba)?",
+                    a: "Yes. The 1/3rd Will restriction applies only to a Will (Wasiyat) that takes effect after death. During their lifetime, a Muslim has absolute freedom to gift (Hiba) up to 100% of their self-acquired or family asset to a daughter, wife, or any person. A valid Hiba requires declaration (Ijab), acceptance (Qabul), and delivery of possession (Qabda), and cannot be challenged under Faraid rules after death.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -2924,27 +2924,27 @@ export default function MuslimInheritanceCalculatorClient() {
                 <span>LEGAL CITATIONS &amp; AUTHORITIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                16. Statutory Citations: Acts, Precedents &amp; Legal Texts
+                16. Legal Citations: Acts, Precedents &amp; Legal Texts
               </h3>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-6 space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
                 <p>
-                  <strong>1. Muslim Personal Law (Shariat) Application Act, 1937:</strong> Section 2 (Application of Personal Law to Muslims regarding succession, marriage, dower, gifts, and trusts).
+                  <strong>1. Muslim Personal Law (Shariat) Form Act, 1937:</strong> Section 2 (Form of Personal Law to Muslims regarding estate, marriage, dower, gifts, and trusts).
                 </p>
                 <p>
-                  <strong>2. Sir Dinshaw Fardunji Mulla:</strong> <em>Principles of Mahomedan Law</em> (22nd/23rd Editions), Chapters VI (General Principles of Inheritance), VII (Hanafi Law of Inheritance), VIII (Shia Law of Inheritance), IX (Wills / Wasiyat), and XIII (Gifts / Hiba).
+                  <strong>2. Sir Dinshaw Fardunji Mulla:</strong> <em>Principles of Mahomedan Law</em> (22nd/23rd Editions), Chapters VI (General Principles of Estate), VII (Hanafi Law of Estate), VIII (Shia Law of Estate), IX (Wills / Wasiyat), and XIII (Gifts / Hiba).
                 </p>
                 <p>
                   <strong>3. Privy Council Landmark Precedent:</strong> <em>Ghulam Mohammad v. Ghulam Husain (AIR 1932 PC 81)</em>: Establishing that a bequest to an heir under Sunni law is invalid without post-death consent of all other legal heirs.
                 </p>
                 <p>
-                  <strong>4. Supreme Court of India:</strong> <em>Gulam Husain Kutubuddin Maner v. Abdool Rashid Abdulrajak Maner (1969) 2 SCR 267</em>: Clarifying the operation of spes successionis and renunciation of inheritance under Muslim law.
+                  <strong>4. Supreme Court of India:</strong> <em>Gulam Husain Kutubuddin Maner v. Abdool Rashid Abdulrajak Maner (1969) 2 SCR 267</em>: Clarifying the operation of spes successionis and giving up of estate under Muslim law.
                 </p>
                 <p>
-                  <strong>5. Patna High Court:</strong> <em>Abdul Manan Khan v. Mirtaza Khan (AIR 1991 Pat 154)</em>: Reaffirming the 1/3rd testamentary limitation on Muslim Wills.
+                  <strong>5. Patna High Court:</strong> <em>Abdul Manan Khan v. Mirtaza Khan (AIR 1991 Pat 154)</em>: Reaffirming the 1/3rd Will limitation on Muslim Wills.
                 </p>
                 <p>
-                  <strong>6. Indian Succession Act, 1925:</strong> Section 213(2) (Exemption of Muslim Wills from mandatory probate), Section 217, and Section 370 (Succession Certificates for debts and securities).
+                  <strong>6. Indian Succession Act, 1925:</strong> Section 213(2) (Exemption of Muslim Wills from needed probate), Section 217, and Section 370 (Estate Papers for debts and securities).
                 </p>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
@@ -2954,39 +2954,39 @@ export default function MuslimInheritanceCalculatorClient() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"
                   >
-                    <span>India Code: Muslim Personal Law (Shariat) Application Act, 1937</span>
+                    <span>India Code: Muslim Personal Law (Shariat) Form Act, 1937</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Capital Gains Tax on Inherited Property
+                      Capital Gains Tax on Inherited Asset
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Drafting Document Checklist
+                      Will Drafting Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -3007,13 +3007,13 @@ export default function MuslimInheritanceCalculatorClient() {
                 </div>
 
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
-                  Protect Your Estate &amp; Honor Statutory Sharia Rights
+                  Protect Your Estate &amp; Honor Legal Sharia Rights
                 </h3>
 
                 <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
                   Whether you want to draft a legally binding 1/3rd Wasiyat for charity, secure complete ownership for your
-                  daughters through a registered Hiba deed, or settle a deceased family estate in court, our senior High Court
-                  advocates ensure 100% statutory compliance.
+                  daughters through a filed Hiba deed, or settle a deceased family estate in court, our senior High Court
+                  lawyers ensure 100% legal compliance.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
@@ -3029,12 +3029,34 @@ export default function MuslimInheritanceCalculatorClient() {
                     className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm sm:text-base border border-white/20 transition-all flex items-center justify-center gap-2"
                   >
                     <PhoneCall className="w-5 h-5 text-amber-300" />
-                    <span>Consult High Court Advocate</span>
+                    <span>Consult High Court Lawyer</span>
                   </Link>
                 </div>
               </div>
             </div>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
               ===================================================================== */}
@@ -3046,20 +3068,20 @@ export default function MuslimInheritanceCalculatorClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court succession petitions, Muslim Personal Law (Shariat) estate settlement, and cross-border NRI estate structuring.
+                Expert in Indian testamentary jurisprudence, High Court estate petitions, Muslim Personal Law (Shariat) estate deal, and cross-border NRI estate structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -3076,7 +3098,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   Protect Your Daughters &amp; Spouse with a Sharia Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Draft a legally compliant 1/3rd Wasiyat bequest, record unpaid Mahr dower charges, or structure registered lifetime gifts (Hiba) to secure your family&apos;s financial future.
+                  Draft a legally compliant 1/3rd Wasiyat bequest, record unpaid Mahr dower charges, or structure filed lifetime gifts (Hiba) to secure your family&apos;s financial future.
                 </p>
                 <button
                   onClick={handleStartWill}
@@ -3087,7 +3109,7 @@ export default function MuslimInheritanceCalculatorClient() {
                 </button>
                 <div className="pt-1 text-[11px] text-white/70 flex items-center justify-center gap-1.5">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Shariat Act Compliant &amp; Lawyer Verified</span>
+                  <span>Shariat Act Compliant &amp; Lawyer Checked</span>
                 </div>
               </div>
 
@@ -3098,17 +3120,17 @@ export default function MuslimInheritanceCalculatorClient() {
                   <span>HIGH COURT SUCCESSION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Disputed Muslim Estate or Inheritance Lawsuit?
+                  Disputed Muslim Estate or Estate Lawsuit?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our High Court advocates represent legal heirs in Section 370 Succession Certificates, partition suits, and Hiba challenge litigation across India.
+                  Our High Court lawyers represent legal heirs in Section 370 Estate Papers, split suits, and Hiba fight court fights across India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -3133,7 +3155,7 @@ export default function MuslimInheritanceCalculatorClient() {
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Zero Probate Exemption:</strong> Verified compliance under Section 213(2) of Indian Succession Act.
+                      <strong>Zero Probate Exemption:</strong> Checked compliance under Section 213(2) of Indian Succession Act.
                     </span>
                   </li>
                 </ul>
@@ -3150,7 +3172,7 @@ export default function MuslimInheritanceCalculatorClient() {
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Faraid Calculator</span>
+          <span>Faraid Tool</span>
         </a>
         <button
           onClick={handleStartWill}

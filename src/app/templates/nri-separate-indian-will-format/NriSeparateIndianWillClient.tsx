@@ -45,61 +45,61 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Foundation: Lex Situs Doctrine" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: Lex Situs Doctrine" },
   { id: "nri-revocation-trap", label: "2. The NRI Revocation Trap: Global vs Indian Wills" },
-  { id: "fema-rbi-regulations", label: "3. FEMA & RBI Rules: Immovable Assets in India" },
+  { id: "fema-rbi-regulations", label: "3. FEMA & RBI Rules: Land Assets in India" },
   { id: "comparative-matrix", label: "4. Single Global Will vs Dual Wills Table" },
   { id: "copy-paste-template", label: "5. NRI Separate Indian Situs Will Template" },
   { id: "essential-clauses", label: "6. Essential Clauses: Non-Conflict & Executorship" },
   { id: "cross-border-probate", label: "7. Cross-Border Probate: Sec 228 vs Fresh Probate" },
-  { id: "repatriation-protocol", label: "8. Repatriation Protocol: RBI USD 1M & Form 15CA/CB" },
+  { id: "repatriation-protocol", label: "8. Sending Cash Home Protocol: RBI USD 1M & Form 15CA/CB" },
   { id: "tax-planning-sec195", label: "9. Tax Planning: Section 195 TDS & Inherited Sales" },
-  { id: "execution-sop", label: "10. Execution SOP: High Commission Attestation" },
-  { id: "institutional-profile", label: "11. Legal Backing & Advocate Profile" },
+  { id: "execution-sop", label: "10. Signing SOP: High Commission Witness Signing" },
+  { id: "institutional-profile", label: "11. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "Why should an NRI have a separate Indian Will for assets in India?",
-    a: "Under Section 5 of the Indian Succession Act, 1925, succession to immovable property situated in India is strictly governed by the law of India (lex situs), regardless of your overseas domicile or citizenship. Having an independent Indian Will prevents multi-year cross-border probate litigation, eliminates exorbitant apostille and foreign court exemplification expenses, and ensures seamless revenue mutation before local Sub-Registrars and municipal authorities.",
+    a: "Under Section 5 of the Indian Succession Act, 1925, estate to land asset situated in India is strictly governed by the law of India (lex situs), regardless of your overseas domicile or citizenship. Having an independent Indian Will prevents multi-year cross-border probate court fights, eliminates exorbitant apostille and foreign court exemplification expenses, and ensures seamless revenue name change before local Sub-Registrars and city offices.",
   },
   {
     q: "How does a standard Indian Will template accidentally revoke a US, UK, or UAE Will?",
-    a: "Almost every generic, free Will template found on the internet begins with the boilerplate clause: 'I hereby revoke all my previous Wills, codicils, and testamentary dispositions.' Under Section 62 of the Indian Succession Act and international private law, executing that clause automatically revokes all previous wills executed anywhere in the world, including your US revocable living trust, UK mirror will, or UAE DIFC Will. An NRI Will must include a territory-restricted non-conflict clause.",
+    a: "Almost every generic, free Will template found on the internet begins with the boilerplate clause: 'I hereby revoke all my previous Wills, codicils, and Will gifts.' Under Section 62 of the Indian Succession Act and international private law, signing that clause automatically revokes all previous wills signed anywhere in the world, including your US revocable living trust, UK mirror will, or UAE DIFC Will. An NRI Will must include a territory-restricted non-conflict clause.",
   },
   {
-    q: "Can an NRI or OCI bequeath agricultural land or farmhouses in India?",
-    a: "Under FEMA Regulations (Notification No. FEMA 21(R)/2018-RB), Non-Resident Indians and Overseas Citizens of India are strictly prohibited from purchasing agricultural land, plantation property, or farmhouses in India. However, an NRI or OCI can lawfully inherit such properties from a resident Indian. When drafting a Will, an NRI can only bequeath inherited agricultural land to an Indian citizen permanently residing in India. Bequeathing agricultural land to foreign citizens requires prior RBI approval.",
+    q: "Can an NRI or OCI bequeath farm land or farmhouses in India?",
+    a: "Under FEMA Regulations (Notification No. FEMA 21(R)/2018-RB), Non-Resident Indians and Overseas Citizens of India are strictly prohibited from purchasing farm land, plantation asset, or farmhouses in India. However, an NRI or OCI can lawfully inherit such assets from a resident Indian. When drafting a Will, an NRI can only bequeath inherited farm land to an Indian citizen permanently residing in India. Bequeathing farm land to foreign citizens requires prior RBI approval.",
   },
   {
-    q: "Is probate mandatory in India for a Will executed overseas by an NRI?",
-    a: "Under Section 213 read with Section 57(a) and (b) of the Indian Succession Act, 1925, probate is compulsory only if the Will is executed within or pertains to immovable properties situated within the ordinary original civil jurisdiction of the High Courts of Bombay, Calcutta, or Chennai. For properties situated in Delhi, Bengaluru, Hyderabad, Pune, or Gurgaon, obtaining probate is optional under statutory law, although local housing societies or banks may occasionally demand it.",
+    q: "Is probate needed in India for a Will signed overseas by an NRI?",
+    a: "Under Section 213 read with Section 57(a) and (b) of the Indian Succession Act, 1925, probate is needed only if the Will is signed within or pertains to land assets situated within the ordinary original civil area of the High Courts of Bombay, Calcutta, or Chennai. For assets situated in Delhi, Bengaluru, Hyderabad, Pune, or Gurgaon, obtaining probate is a choice under legal law, although local housing societies or banks may occasionally demand it.",
   },
   {
-    q: "Can a foreign court probate order be directly executed in India?",
-    a: "No. A foreign probate decree or letter of administration issued by a court in the US, UK, Canada, or Australia cannot be directly executed in India to transfer property or access bank lockers. Under Section 228 of the Indian Succession Act, the executor must file an application before an Indian High Court or District Court for Ancillary Letters of Administration with a certified exemplification of the foreign Will annexed. This process frequently takes 18 to 36 months, which is why a separate Indian Will is crucial.",
+    q: "Can a foreign court probate order be directly signed in India?",
+    a: "No. A foreign probate decree or letter of care issued by a court in the US, UK, Canada, or Australia cannot be directly signed in India to transfer asset or access bank lockers. Under Section 228 of the Indian Succession Act, the executor must file an form before an Indian High Court or District Court for Ancillary Letters of Care with a certified exemplification of the foreign Will annexed. This process frequently takes 18 to 36 months, which is why a separate Indian Will is crucial.",
   },
   {
     q: "Can an NRI appoint an Indian resident as an executor?",
-    a: "Yes, and legal experts strongly advise doing so. Appointing a trusted Indian resident, such as a resident sibling, family member, chartered accountant, or an advocate from AMA Legal Solutions, ensures that physical appearances before the Sub-Registrar, probate hearings, and municipal mutation proceedings can be completed expeditiously without requiring the NRI executor to travel across continents.",
+    a: "Yes, and legal experts strongly advise doing so. Appointing a trusted Indian resident, such as a resident sibling, family member, chartered accountant, or an lawyer from AMA Legal Solutions, ensures that physical appearances before the SRO, probate hearings, and city name change proceedings can be completed expeditiously without requiring the NRI executor to travel across continents.",
   },
   {
     q: "How should an NRI execute an Indian Will while living abroad?",
-    a: "Under Section 63 of the Indian Succession Act, 1925, the Will must be signed by the testator in the physical presence of two independent adult witnesses who sign in the testator's presence. When abroad, best legal practice involves signing before a local overseas Notary Public followed by an Apostille under the Hague Convention 1961 (for countries like the US, UK, Canada, and Australia), or executing it at the consular section of the nearest Indian Embassy or High Commission.",
+    a: "Under Section 63 of the Indian Succession Act, 1925, the Will must be signed by the Will maker in the physical presence of two independent adult witnesses who sign in the Will maker's presence. When abroad, best legal practice involves signing before a local overseas Notary Public followed by an Apostille under the Hague Convention 1961 (for countries like the US, UK, Canada, and Australia), or signing it at the consular section of the nearest Indian Embassy or High Commission.",
   },
   {
-    q: "Can sale proceeds of inherited property be repatriated abroad by an NRI?",
+    q: "Can sale proceeds of inherited asset be repatriated abroad by an NRI?",
     a: "Yes. Under the Foreign Exchange Management Act and RBI Master Direction on Remittance of Assets, an NRI or OCI can repatriate up to USD 1,000,000 (One Million US Dollars) per financial year out of balances held in their NRO bank account resulting from the sale of inherited assets. This requires payment of all applicable Indian taxes, followed by submission of Form 15CA (online self-declaration) and Form 15CB (Chartered Accountant certification) to the authorized dealer bank.",
   },
   {
-    q: "What is Section 195 TDS when an NRI sells inherited property in India?",
-    a: "Under Section 195 of the Income Tax Act, 1961, the buyer of a property from an NRI must deduct Tax Deducted at Source (TDS). In the absence of an official Lower Deduction Certificate, buyers deduct TDS on the FULL sale consideration at 12.5% or 20% plus surcharge and cess (often totaling 20% to 23.9% of the gross value). NRI sellers should file Form 13 on the TRACES portal under Section 197 to obtain a certificate allowing TDS to be deducted only on actual capital gains.",
+    q: "What is Section 195 TDS when an NRI sells inherited asset in India?",
+    a: "Under Section 195 of the Income Tax Act, 1961, the buyer of a asset from an NRI must deduct Tax Deducted at Source (TDS). In the absence of an official Lower Deduction Paper, buyers deduct TDS on the FULL sale consideration at 12.5% or 20% plus surcharge and cess (often totaling 20% to 23.9% of the gross value). NRI sellers should file Form 13 on the TRACES portal under Section 197 to obtain a paper allowing TDS to be deducted only on actual capital gains.",
   },
   {
-    q: "Does an NRI need to register an Indian Will at the Sub-Registrar Office?",
-    a: "Will registration is completely optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed on plain A4 paper before two independent witnesses is 100% legally enforceable in India. However, if the NRI visits India, registering the Will before the Sub-Registrar where the property is located provides formidable evidentiary weight against frivolous legal challenges from disgruntled relatives.",
+    q: "Does an NRI need to register an Indian Will at the SRO office?",
+    a: "Will filing is completely a choice under Section 18(e) of the Filing Act, 1908. An plain Will signed on plain A4 paper before two independent witnesses is 100% legally enforceable in India. However, if the NRI visits India, registering the Will before the SRO where the asset is located provides formidable proof weight against frivolous legal fights from disgruntled relatives.",
   },
 ];
 
@@ -116,13 +116,13 @@ export default function NriSeparateIndianWillClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedMainTemplate, setCopiedMainTemplate] = useState<boolean>(false);
   const [copiedRevocationClause, setCopiedRevocationClause] = useState<boolean>(false);
   const [copiedAttestationChecklist, setCopiedAttestationChecklist] = useState<boolean>(false);
 
-  // Interactive Assessment State
+  // Free Assessment State
   const [testatorCountry, setTestatorCountry] = useState<string>("usa");
   const [hasForeignWill, setHasForeignWill] = useState<string>("yes");
   const [hasAgriculturalLand, setHasAgriculturalLand] = useState<string>("no");
@@ -287,7 +287,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Draft Challenge-Proof NRI Will</span>
+              <span>Draft Fight-Proof NRI Will</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <Link
@@ -295,7 +295,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Award className="w-4 h-4 text-[#C65378]" />
-              <span>Consult Senior NRI Succession Counsel</span>
+              <span>Consult Senior NRI Estate Counsel</span>
             </Link>
           </div>
         </div>
@@ -373,7 +373,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 5, 62, 63, 67, 213, 214 &amp; 228 of the Indian Succession
@@ -397,8 +397,8 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Lex Situs Immovable Property Rule:</strong> Under Section 5 of the Indian Succession
-                    Act, 1925, succession to immovable land, flats, and houses in India is strictly governed by
+                    <strong>Lex Situs Land Asset Rule:</strong> Under Section 5 of the Indian Succession
+                    Act, 1925, estate to land land, flats, and houses in India is strictly governed by
                     Indian statutory law, regardless of foreign residency, citizenship, or foreign probate.
                   </span>
                 </li>
@@ -413,15 +413,15 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>FEMA Agricultural Asset Safeguards:</strong> Under FEMA 21(R), NRIs and OCIs can
-                    lawfully inherit agricultural land or farmhouses, but can only bequeath them to resident Indian
-                    citizens. Disposing agricultural assets to foreign citizens requires prior RBI sanction.
+                    <strong>FEMA Farm Asset Safeguards:</strong> Under FEMA 21(R), NRIs and OCIs can
+                    lawfully inherit farm land or farmhouses, but can only bequeath them to resident Indian
+                    citizens. Disposing farm assets to foreign citizens requires prior RBI sanction.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>USD 1 Million Annual Repatriation:</strong> Legally inherited estate liquidation proceeds
+                    <strong>USD 1 Million Annual Sending Cash Home:</strong> Legally inherited estate liquidation proceeds
                     can be repatriated overseas up to USD 1M per financial year under the RBI Liberalised Remittance
                     framework using Form 15CA and Form 15CB certifications.
                   </span>
@@ -444,7 +444,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
               <div className="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-gradient-to-r from-slate-50 to-rose-50/40 border-t border-slate-100 text-xs">
                 <div className="space-y-0.5">
                   <div className="font-extrabold text-slate-900 text-sm">
-                    Verified Legal Asset: Territory-Restricted Indian Situs Will
+                    Checked Legal Asset: Territory-Restricted Indian Situs Will
                   </div>
                   <p className="text-slate-600 text-[11px]">
                     Non-conflict revocation protocol compliant with Section 5, 63 &amp; FEMA 1999 directives.
@@ -464,34 +464,34 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Foundation: Section 5 &amp; Lex Situs Doctrine
+                1. Legal Foundation: Section 5 &amp; Lex Situs Doctrine
               </h2>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  When a Non-Resident Indian (NRI) or Overseas Citizen of India (OCI) owns immovable property in India,
-                  such as residential apartments in Bengaluru, ancestral bungalows in Delhi, or plots in Pune, the legal
-                  mechanism governing succession is dictated by a fundamental principle of Private International Law
+                  When a Non-Resident Indian (NRI) or Overseas Citizen of India (OCI) owns land asset in India,
+                  such as home apartments in Bengaluru, family bungalows in Delhi, or plots in Pune, the legal
+                  mechanism governing estate is dictated by a fundamental principle of Private International Law
                   codified in <strong>Section 5 of the Indian Succession Act, 1925</strong>:
                 </p>
                 <div className="p-4 rounded-xl bg-slate-900 text-slate-100 font-mono text-xs border-l-4 border-l-[#C65378] leading-relaxed">
-                  &ldquo;Section 5(1): Succession to the immovable property in India of a person deceased shall be
+                  &ldquo;Section 5(1): Estate to the land asset in India of a person deceased shall be
                   regulated by the law of India, wherever such person may have had his domicile at the time of his death.
                   <br />
                   <br />
-                  Section 5(2): Succession to the movable property of a person deceased is regulated by the law of the
+                  Section 5(2): Estate to the cash asset of a person deceased is regulated by the law of the
                   country in which such person had his domicile at the time of his death.&rdquo;
                 </div>
                 <p>
-                  This statutory dichotomy creates two distinct succession jurisdictions:
+                  This legal dichotomy creates two distinct estate areas:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
                     <div className="font-bold text-[#172228] flex items-center gap-2">
                       <Building2 className="w-4 h-4 text-[#C65378]" />
-                      <span>Immovable Property (Lex Situs)</span>
+                      <span>Land Asset (Lex Situs)</span>
                     </div>
                     <p className="text-xs text-slate-600">
-                      Succession to real estate, land, and apartments in India is governed exclusively by Indian law
+                      Estate to real estate, land, and apartments in India is governed exclusively by Indian law
                       (Indian Succession Act, 1925; Hindu Succession Act, 1956; or Shariat Act, 1937), irrespective of
                       whether you hold American, British, Canadian, or Australian citizenship.
                     </p>
@@ -499,12 +499,12 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
                     <div className="font-bold text-[#172228] flex items-center gap-2">
                       <Coins className="w-4 h-4 text-[#5F7E75]" />
-                      <span>Movable Assets (Lex Domicilii)</span>
+                      <span>Cash Assets (Lex Domicilii)</span>
                     </div>
                     <p className="text-xs text-slate-600">
                       Bank deposits, mutual funds, and shares theoretically follow your country of domicile. However,
                       Indian banks and depositories (NSDL/CDSL) operate strictly under Reserve Bank of India and SEBI
-                      circulars, practically necessitating a localized Indian Will to avoid complex court-ordered succession certificates.
+                      circulars, practically necessitating a localized Indian Will to avoid complex court-ordered estate papers.
                     </p>
                   </div>
                 </div>
@@ -526,20 +526,20 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <span>The #1 Reddit &amp; Quora Nightmare (r/nri Horror Story)</span>
                 </div>
                 <p className="text-xs sm:text-sm text-rose-950 leading-relaxed">
-                  An Indian expatriate living in California spent \$4,000 drafting a comprehensive California Living
+                  An Indian expatriate living in California spent \$4,000 drafting a full California Living
                   Trust and Pour-Over Will to shield their US home and \$2M 401(k) retirement portfolio from costly US
                   probate. Later, during a vacation to Gurgaon, they downloaded a free, standard Indian Will template to
                   leave their family flat to their sister.
                 </p>
                 <div className="p-3 bg-white/90 border border-rose-300 rounded-xl text-xs font-mono text-rose-950">
-                  &ldquo;I hereby revoke, cancel, and annul all former Wills, Codicils, and testamentary dispositions
+                  &ldquo;I hereby revoke, cancel, and annul all former Wills, Codicils, and Will gifts
                   made by me at any time heretofore.&rdquo;
                 </div>
                 <p className="text-xs sm:text-sm text-rose-950 leading-relaxed">
                   <strong>The Catastrophic Outcome:</strong> Upon their sudden demise, US probate litigators discovered
-                  the executed Indian Will. Because the revocation clause was global and unqualified, the court ruled that
+                  the signed Indian Will. Because the revocation clause was global and unqualified, the court ruled that
                   the California Living Trust was revoked. The entire US estate was pushed into California probate court,
-                  racking up over \$85,000 in statutory probate attorney fees, freezing bank accounts for 22 months, and
+                  racking up over \$85,000 in legal probate attorney fees, freezing bank accounts for 22 months, and
                   exposing the estate to unnecessary taxation.
                 </p>
                 <div className="pt-2 border-t border-rose-200 text-xs font-bold text-rose-900 flex items-center gap-2">
@@ -559,22 +559,22 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>FOREIGN EXCHANGE COMPLIANCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. FEMA &amp; RBI Rules: Immovable Assets Held by NRIs &amp; OCIs
+                3. FEMA &amp; RBI Rules: Land Assets Held by NRIs &amp; OCIs
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Estate planning for overseas Indians must harmonize the <strong>Indian Succession Act, 1925</strong> with
-                  the <strong>Foreign Exchange Management Act (FEMA), 1999</strong>, specifically <em>Notification No. FEMA 21(R)/2018-RB</em>.
-                  FEMA establishes strict statutory boundaries regarding what property an NRI/OCI can inherit and bequeath:
+                  the <strong>Foreign Exchange Management Act (FEMA), 1999</strong>, mainly <em>Notification No. FEMA 21(R)/2018-RB</em>.
+                  FEMA establishes strict legal boundaries regarding what asset an NRI/OCI can inherit and bequeath:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-xs sm:text-sm flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600" />
-                      <span>Residential &amp; Commercial Properties</span>
+                      <span>Home &amp; Shop Assets</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>An NRI or OCI can freely inherit any residential or commercial property in India.</li>
+                      <li>An NRI or OCI can freely inherit any home or shop asset in India.</li>
                       <li>Can be bequeathed under an Indian Will to ANY person, whether resident or non-resident.</li>
                       <li>No prior approval from the Reserve Bank of India (RBI) is mandated.</li>
                       <li>Rental income and sale proceeds can be remitted through NRO bank accounts.</li>
@@ -583,16 +583,16 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-xs sm:text-sm flex items-center gap-2">
                       <AlertCircle className="w-4 h-4 text-amber-600" />
-                      <span>Agricultural Land, Plantations &amp; Farmhouses</span>
+                      <span>Farm Land, Plantations &amp; Farmhouses</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>NRIs and OCIs CANNOT purchase agricultural land in India under FEMA.</li>
-                      <li>HOWEVER, an NRI/OCI can lawfully inherit agricultural land from a resident Indian.</li>
+                      <li>NRIs and OCIs CANNOT purchase farm land in India under FEMA.</li>
+                      <li>HOWEVER, an NRI/OCI can lawfully inherit farm land from a resident Indian.</li>
                       <li>
                         <strong>Bequest Restriction:</strong> An NRI can bequeath inherited farmland ONLY to a
                         citizen of India permanently residing in India.
                       </li>
-                      <li>Bequeathing agricultural land to foreign citizens requires prior RBI sanction.</li>
+                      <li>Bequeathing farm land to foreign citizens requires prior RBI sanction.</li>
                     </ul>
                   </div>
                 </div>
@@ -634,7 +634,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-extrabold text-slate-900">Indian Probate Speed</td>
                       <td className="py-3 px-4">
-                        Very Slow (24 to 36 months) via Section 228 Ancillary Letters of Administration.
+                        Very Slow (24 to 36 months) via Section 228 Ancillary Letters of Care.
                       </td>
                       <td className="py-3 px-4 font-semibold text-slate-900">
                         Fast (6 to 9 months) via direct District Court / High Court petition.
@@ -646,16 +646,16 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                         Expensive: Foreign court certified copies, apostilles, sworn translations, consular fees.
                       </td>
                       <td className="py-3 px-4 text-emerald-700 font-semibold">
-                        Minimal: Original Indian legal instrument executed directly on standard paper.
+                        Minimal: Original Indian legal instrument signed directly on standard paper.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-extrabold text-slate-900">Local Land Mutation</td>
+                      <td className="py-3 px-4 font-extrabold text-slate-900">Local Land Name Change</td>
                       <td className="py-3 px-4">
                         Sub-Registrars often reject foreign wills without expensive High Court confirmation decrees.
                       </td>
                       <td className="py-3 px-4 font-semibold text-slate-900">
-                        Smooth mutation before Tehsildar, Patwari, or Municipal Corporation.
+                        Smooth name change before Tehsildar, Patwari, or City City Board.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -668,12 +668,12 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-extrabold text-slate-900">Bank &amp; Demat Transmission</td>
+                      <td className="py-3 px-4 font-extrabold text-slate-900">Bank &amp; Demat Transfer</td>
                       <td className="py-3 px-4">
                         NRO banks trigger protracted legal scrutiny and demand high-value indemnity bonds.
                       </td>
                       <td className="py-3 px-4 text-emerald-700 font-semibold">
-                        Rapid transmission supported by Supreme Court Shakti Yezdani citation.
+                        Rapid transfer supported by Supreme Court Shakti Yezdani citation.
                       </td>
                     </tr>
                   </tbody>
@@ -700,7 +700,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Award className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory NRI Indian Situs Will (Section 63 ISA 1925 Compliant)</span>
+                    <span>Legal NRI Indian Situs Will (Section 63 ISA 1925 Compliant)</span>
                   </div>
                   <button
                     type="button"
@@ -838,7 +838,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1.5 shadow-2xs">
                     <div className="font-bold text-[#172228]">Resident Executor Clause</div>
                     <p className="text-slate-600 text-[11px]">
-                      Empowers your local Indian representative to access bank lockers, apply for probate, and register mutation deeds without waiting for your foreign travel.
+                      Empowers your local Indian representative to access bank lockers, apply for probate, and register name change deeds without waiting for your foreign travel.
                     </p>
                   </div>
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1.5 shadow-2xs">
@@ -850,7 +850,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1.5 shadow-2xs">
                     <div className="font-bold text-[#172228]">Residuary Indian Clause</div>
                     <p className="text-slate-600 text-[11px]">
-                      Catches forgotten fixed deposits, tax refunds, dividends, or newly inherited ancestral shares, preventing partial intestacy in India.
+                      Catches forgotten fixed deposits, tax refunds, dividends, or newly inherited family shares, preventing partial intestacy in India.
                     </p>
                   </div>
                 </div>
@@ -873,17 +873,17 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 </p>
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                   <div className="font-extrabold text-slate-900 text-xs sm:text-sm">
-                    The Section 228 Ancillary Letters of Administration Procedure:
+                    The Section 228 Ancillary Letters of Care Step:
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under <strong>Section 228 of the Indian Succession Act, 1925</strong>, when a Will has been proved
                     and probated in a competent foreign court, an Indian court does not grant fresh probate. Instead, it
-                    entertains a petition for <strong>Ancillary Letters of Administration with the copy of the Will annexed</strong>.
+                    entertains a petition for <strong>Ancillary Letters of Care with the copy of the Will annexed</strong>.
                   </p>
                   <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
                     <li>Requires a Court Exemplification sealed by the foreign probate judge and Secretary of State.</li>
                     <li>Mandates apostille certification under the Hague Convention 1961.</li>
-                    <li>Mandatory public citation notices in local Indian daily newspapers inviting objections.</li>
+                    <li>Needed public citation notices in local Indian daily newspapers inviting objections.</li>
                     <li>Payment of maximum ad-valorem state court fees (e.g., up to ₹75,000 in Maharashtra).</li>
                     <li>Typical timeline: <strong>18 to 36 months</strong> of protracted High Court registry scrutiny.</li>
                   </ul>
@@ -891,8 +891,8 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <p>
                   <strong>Why a Separate Indian Will Eliminates This Nightmare:</strong> With an independent Indian Will,
                   your Indian executor files directly before the District Court or High Court without waiting for the foreign
-                  probate proceedings to conclude. Furthermore, in non-presidency cities (Delhi, Bengaluru, Hyderabad, Pune,
-                  Noida, Gurgaon), probate is NOT legally mandatory under Section 213, allowing immediate municipal mutation!
+                  probate proceedings to conclude. Also, in non-presidency cities (Delhi, Bengaluru, Hyderabad, Pune,
+                  Noida, Gurgaon), probate is NOT legally needed under Section 213, allowing immediate city name change!
                 </p>
               </div>
             </section>
@@ -904,11 +904,11 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>FEMA CAPITAL REPATRIATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Repatriation Protocol: RBI USD 1M Limit &amp; Form 15CA 15CB
+                8. Sending Cash Home Protocol: RBI USD 1M Limit &amp; Form 15CA 15CB
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Once inherited assets in India are transmitted or liquidated, an NRI beneficiary faces the challenge of
+                  Once inherited assets in India are transmitted or liquidated, an NRI heir faces the fight of
                   remitting funds overseas to their local bank in New York, London, Toronto, or Dubai. The Reserve Bank of India
                   governs this process through its <strong>Master Direction on Remittance of Assets</strong>:
                 </p>
@@ -921,7 +921,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     <p className="text-xs text-slate-600">
                       An NRI or OCI can remit up to <strong>USD 1 Million (USD 1,000,000)</strong> per financial year
                       (April 1 to March 31) out of funds held in their NRO bank account resulting from the sale of inherited
-                      property or maturity of estate investments.
+                      asset or maturity of estate investments.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
@@ -946,12 +946,12 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>CAPITAL GAINS &amp; TDS COMPLIANCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Tax Planning: Section 195 TDS &amp; Inherited Property Sales
+                9. Tax Planning: Section 195 TDS &amp; Inherited Asset Sales
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  When your NRI heirs eventually sell inherited immovable property in India, they encounter <strong>Section 195 of the Income Tax Act, 1961</strong>.
-                  Unlike resident property sales where buyers deduct 1% TDS under Section 194-IA, sales by NRIs trigger draconian withholding tax obligations:
+                  When your NRI heirs eventually sell inherited land asset in India, they encounter <strong>Section 195 of the Income Tax Act, 1961</strong>.
+                  Unlike resident asset sales where buyers deduct 1% TDS under Section 194-IA, sales by NRIs trigger draconian withholding tax obligations:
                 </p>
                 <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/90 space-y-2 text-xs text-amber-950">
                   <div className="font-bold flex items-center gap-2 text-amber-900">
@@ -959,13 +959,13 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     <span>The Section 195 Withholding Trap: Gross Consideration vs Net Gains</span>
                   </div>
                   <p>
-                    By statutory default, the buyer must deduct TDS at <strong>12.5% or 20% plus surcharge and cess</strong>
+                    By legal default, the buyer must deduct TDS at <strong>12.5% or 20% plus surcharge and cess</strong>
                     (often reaching 20% to 23.9%) on the <strong>ENTIRE GROSS SALE CONSIDERATION</strong>, not just the capital gain!
-                    For example, on a ₹2 Crore inherited apartment, ₹41.6 Lakhs can be deducted and locked up with the tax department.
+                    For example, on a ₹2 Crore inherited apartment, ₹41.6 Lakhs can be deducted and locked up with the tax office.
                   </p>
                   <p className="font-semibold pt-1">
                     <strong>Solution:</strong> The NRI seller must submit <strong>Form 13 on the TRACES portal</strong> under
-                    Section 197 to obtain a Lower or Nil Deduction Certificate prior to executing the registered sale deed.
+                    Section 197 to obtain a Lower or Nil Deduction Paper prior to signing the filed sale deed.
                   </p>
                 </div>
 
@@ -981,7 +981,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     </span>
                   </div>
                   <div className="text-base sm:text-lg font-extrabold text-white">
-                    Calculate Capital Gains Tax on Inherited Property in India
+                    Calculate Capital Gains Tax on Inherited Asset in India
                   </div>
                   <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                     Compare <strong>12.5% Flat Tax vs 20% Indexation</strong> under the latest Section 112 grandfathering proviso,
@@ -992,7 +992,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-md transition-all hover:gap-3"
                     >
-                      <span>Open Inherited Property Capital Gains Calculator</span>
+                      <span>Open Inherited Asset Capital Gains Tool</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -1007,12 +1007,12 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>STEP-BY-STEP EXECUTION PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Execution SOP: High Commission Attestation Protocol
+                10. Signing SOP: High Commission Witness Signing Protocol
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Executing an Indian Will while living abroad must adhere strictly to <strong>Section 63 of the Indian Succession Act, 1925</strong>.
-                  Follow this verified 3-path execution protocol based on your geographic location:
+                  Signing an Indian Will while living abroad must adhere strictly to <strong>Section 63 of the Indian Succession Act, 1925</strong>.
+                  Follow this checked 3-path signing protocol based on your geographic location:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -1020,7 +1020,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     <div className="font-extrabold text-slate-900 text-xs">PATH A: APOSTILLE (HAGUE NATIONS)</div>
                     <p className="text-[11px] text-slate-600">
                       For USA, UK, Canada, Australia: Sign before a local public notary with two independent adult witnesses.
-                      Submit the notarized document to the state Secretary of State / Foreign Office for an Apostille certificate.
+                      Submit the notarized paper to the state Secretary of State / Foreign Office for an Apostille paper.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
@@ -1033,8 +1033,8 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-xs">PATH C: SRO REGISTRATION IN INDIA</div>
                     <p className="text-[11px] text-slate-600">
-                      During your visit to India: Sign on plain paper before two witnesses and register before the Sub-Registrar
-                      having territorial jurisdiction over your property. Provides highest evidential weight.
+                      During your visit to India: Sign on plain paper before two witnesses and register before the SRO
+                      having territorial area over your asset. Provides highest evidential weight.
                     </p>
                   </div>
                 </div>
@@ -1043,7 +1043,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3 shadow-xs">
                   <div className="flex items-center justify-between">
                     <div className="font-extrabold text-xs sm:text-sm text-slate-900">
-                      NRI Will Execution Checklist (Physical Attestation Steps)
+                      NRI Will Signing Checklist (Physical Witness Signing Steps)
                     </div>
                     <button
                       type="button"
@@ -1074,11 +1074,11 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     </div>
                     <div className="flex items-start gap-2 p-2.5 bg-slate-50 rounded-lg">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Testator initials every page and signs full signature at end</span>
+                      <span>Will maker initials every page and signs full signature at end</span>
                     </div>
                     <div className="flex items-start gap-2 p-2.5 bg-slate-50 rounded-lg">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Doctor fitness certificate attached if testator is senior citizen</span>
+                      <span>Doctor fitness paper attached if Will maker is senior citizen</span>
                     </div>
                   </div>
                 </div>
@@ -1101,12 +1101,12 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Cross-Border Estate Succession Bench
+                      WillDrafting.in Cross-Border Estate Estate Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-50 border border-rose-200 text-[#C65378] text-xs font-bold shrink-0">
                     <Scale className="w-4 h-4" />
-                    <span>Bar Council Verified Advocates</span>
+                    <span>Bar Council Checked Lawyers</span>
                   </div>
                 </div>
 
@@ -1114,10 +1114,10 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <div className="p-4 rounded-xl bg-slate-50 space-y-1.5 border border-slate-100">
                     <div className="font-extrabold text-slate-900 flex items-center gap-1.5">
                       <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                      <span>Pan-India Jurisdiction</span>
+                      <span>Pan-India Area</span>
                     </div>
                     <p className="text-[11px] text-slate-600">
-                      Comprehensive courtroom probate practice before Delhi High Court, Bombay High Court, Calcutta High Court, and District Courts pan-India.
+                      Full courtroom probate practice before Delhi High Court, Bombay High Court, Calcutta High Court, and District Courts pan-India.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 space-y-1.5 border border-slate-100">
@@ -1135,7 +1135,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       <span>FEMA &amp; TRACES Tax Advocacy</span>
                     </div>
                     <p className="text-[11px] text-slate-600">
-                      Filing Section 197 Form 13 Lower TDS petitions, managing Form 15CA/15CB repatriation, and handling revenue mutations at Sub-Registrar offices.
+                      Filing Section 197 Form 13 Lower TDS petitions, managing Form 15CA/15CB sending cash home, and handling revenue mutations at SRO offices.
                     </p>
                   </div>
                 </div>
@@ -1144,10 +1144,10 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <div className="p-5 rounded-2xl bg-gradient-to-r from-rose-50 via-white to-emerald-50 border border-rose-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="space-y-1 text-center sm:text-left">
                     <div className="font-extrabold text-slate-900 text-sm">
-                      Need a Customized Challenge-Proof NRI Estate Plan?
+                      Need a Customized Fight-Proof NRI Estate Plan?
                     </div>
                     <p className="text-xs text-slate-600">
-                      Consult with our senior succession advocates or draft your compliant Indian Will online in 15 minutes.
+                      Consult with our senior estate lawyers or draft your compliant Indian Will online in 15 minutes.
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row items-center gap-2.5 w-full sm:w-auto">
@@ -1161,7 +1161,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       href="/contact"
                       className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors text-center"
                     >
-                      Consult NRI Succession Counsel
+                      Consult NRI Estate Counsel
                     </Link>
                   </div>
                 </div>
@@ -1215,7 +1215,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <span>STATUTORY REPOSITORY &amp; OFFICIAL CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Statutory Citations: Indian Succession Act &amp; RBI Directives
+                Legal Citations: Indian Succession Act &amp; RBI Directives
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-600 shadow-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1243,7 +1243,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 font-semibold border border-slate-200"
                   >
-                    <span>TRACES Portal: Form 13 Lower TDS Application</span>
+                    <span>TRACES Portal: Form 13 Lower TDS Form</span>
                     <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
                   </a>
                   <a
@@ -1259,7 +1259,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Formats
+                    Related WillDrafting Guides &amp; Estate Formats
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1278,13 +1278,13 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      SRO Will Registration Pan-India
+                      SRO Will Filing Pan-India
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </Link>
                     <Link
                       href="/templates/joint-mutual-mirror-will-format-husband-wife"
@@ -1302,7 +1302,29 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1315,21 +1337,21 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, cross-border NRI estate structuring, High Court
-                probate litigation, and Section 197 Form 13 Lower TDS tax defense pan-India.
+                Expert in Indian testamentary jurisprudence, cross-border NRI estate structuring, High Court
+                probate court fights, and Section 197 Form 13 Lower TDS tax defense pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1343,7 +1365,7 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <span>PROTECT YOUR OVERSEAS ESTATE PLAN</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Draft a Challenge-Proof Indian Situs Will in 15 Mins
+                  Draft a Fight-Proof Indian Situs Will in 15 Mins
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
                   Our guided legal engine automatically inserts the non-conflict territorial revocation clause,
@@ -1372,15 +1394,15 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   Complex Cross-Border Estate or High-Value Assets in India?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates assist with High Court probate, consular attestation, SRO registration,
-                  and Form 13 Lower TDS applications across all Indian states.
+                  Our estate lawyers assist with High Court probate, consular witness signing, SRO filing,
+                  and Form 13 Lower TDS forms across all Indian states.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <Award className="w-3.5 h-3.5 text-rose-300" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1399,13 +1421,13 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>FEMA 21(R) Precision:</strong> Strict compliance for agricultural assets.
+                      <strong>FEMA 21(R) Precision:</strong> Strict compliance for farm assets.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>RBI Repatriation Ready:</strong> Integrated with Form 15CA &amp; 15CB SOP.
+                      <strong>RBI Sending Cash Home Ready:</strong> Integrated with Form 15CA &amp; 15CB SOP.
                     </span>
                   </li>
                 </ul>

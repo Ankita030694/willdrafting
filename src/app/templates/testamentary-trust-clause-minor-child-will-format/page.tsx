@@ -92,7 +92,7 @@ export default function TestamentaryTrustClausePage() {
         url: canonicalUrl,
         name: "Testamentary Trust Clause in Will Format | WillDrafting",
         description:
-          "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.",
+          "Download Will trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function TestamentaryTrustClausePage() {
         name: "Testamentary Trust Clause for Minor Children in Will Format India",
         url: canonicalUrl,
         description:
-          "Lawyer-drafted testamentary trust clause for minor children and special needs dependents under Section 5 of the Indian Trusts Act, 1882 and.",
+          "Lawyer-drafted Will trust clause for minor children and special needs dependents under Section 5 of the Indian Trusts Act, 1882 and.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -153,7 +153,7 @@ export default function TestamentaryTrustClausePage() {
             name: "What is a testamentary trust clause in a Will under Indian law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A testamentary trust clause is a specific provision inserted into a Will that directs the testator's executor to transfer designated assets into a private trust upon the testator's demise, rather than handing them over directly to beneficiaries. Governed under Section 5 of the Indian Trusts Act, 1882, the trust comes into legal existence only after the death of the testator when the Will takes effect.",
+              text: "A Will trust clause is a specific rule inserted into a Will that directs the Will maker's executor to transfer designated assets into a private trust upon the Will maker's demise, rather than handing them over directly to heirs. Governed under Section 5 of the Indian Trusts Act, 1882, the trust comes into legal existence only after the death of the Will maker when the Will takes effect.",
             },
           },
           {
@@ -161,7 +161,7 @@ export default function TestamentaryTrustClausePage() {
             name: "Does creating a testamentary trust require stamp duty during my lifetime?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Unlike an inter-vivos (living) trust which requires an immediate registered trust deed attracting state stamp duty (often 3% to 5% of asset value) and annual accounting compliance, a testamentary trust created under Section 5 of the Indian Trusts Act, 1882 requires ZERO upfront stamp duty or registration during your lifetime. It is established directly through your validly executed Will at no additional setup expense.",
+              text: "No. Unlike an inter-vivos (living) trust which requires an immediate filed trust deed attracting state stamp duty (often 3% to 5% of asset value) and annual accounting compliance, a Will trust created under Section 5 of the Indian Trusts Act, 1882 requires ZERO upfront stamp duty or filing during your lifetime. It is established directly through your validly signed Will at no additional setup expense.",
             },
           },
           {
@@ -169,7 +169,7 @@ export default function TestamentaryTrustClausePage() {
             name: "Why should I create a testamentary trust instead of leaving property directly to my minor child?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If a minor child inherits immovable property directly, Section 29 of the Guardians and Wards Act, 1890 strictly prohibits any legal guardian from selling, mortgaging, or leasing the property for more than 5 years without prior permission from the District Court. This often traps family assets in judicial delays during educational emergencies. Furthermore, at age 18, the child gets sudden unrestricted access to substantial wealth. A testamentary trust bypasses court approvals and staggers distributions over mature milestones.",
+              text: "If a minor child inherits land asset directly, Section 29 of the Guardians and Wards Act, 1890 strictly prohibits any legal guardian from selling, mortgaging, or leasing the asset for more than 5 years without prior permission from the District Court. This often traps family assets in judicial delays during educational emergencies. Also, at age 18, the child gets sudden unrestricted access to substantial wealth. A Will trust bypasses court approvals and staggers distributions over mature milestones.",
             },
           },
           {
@@ -177,7 +177,7 @@ export default function TestamentaryTrustClausePage() {
             name: "How does a milestone payout schedule (e.g., ages 18, 21, and 25) work under Indian law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 119 and 120 of the Indian Succession Act, 1925, a testator has testamentary freedom to specify contingent or deferred vesting terms. The clause provides that the corpus remains with the trustees who fund medical and educational needs until age 18, release a partial lump-sum (e.g., 20%) at 18 for undergraduate studies, another tranche (e.g., 30%) at age 21 for post-graduate education or career launch, and the final 50% capital at age 25 when the child possesses mature financial judgment.",
+              text: "Under Section 119 and 120 of the Indian Succession Act, 1925, a Will maker has Will freedom to specify contingent or deferred vesting terms. The clause provides that the corpus remains with the trustees who fund medical and educational needs until age 18, release a partial lump-sum (e.g., 20%) at 18 for undergraduate studies, another tranche (e.g., 30%) at age 21 for post-graduate education or career launch, and the final 50% capital at age 25 when the child possesses mature financial judgment.",
             },
           },
           {
@@ -185,7 +185,7 @@ export default function TestamentaryTrustClausePage() {
             name: "Can a testamentary trust protect my child's inheritance from creditors or spendthrift spouses?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. By incorporating an express 'Spendthrift / Protective Clause', the legal title remains vested in the trustees while the beneficiary holds only a beneficial right to discretionary distributions. Under Indian trust jurisprudence, because the child does not possess absolute ownership of the underlying capital until milestone vesting, creditors, business liabilities, or estranged matrimonial partners cannot attach or liquidate the trust corpus.",
+              text: "Yes. By incorporating an express 'Spendthrift / Protective Clause', the legal title remains vested in the trustees while the heir holds only a beneficial right to discretionary distributions. Under Indian trust jurisprudence, because the child does not possess absolute ownership of the underlying capital until milestone vesting, creditors, business liabilities, or estranged matrimonial partners cannot attach or liquidate the trust corpus.",
             },
           },
           {
@@ -193,7 +193,7 @@ export default function TestamentaryTrustClausePage() {
             name: "How does a testamentary trust safeguard a child with special needs or intellectual disability?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "For children with physical or intellectual disabilities, a Special Needs Testamentary Trust ensures lifelong medical treatment, caretaking, and assisted living without terminating upon reaching majority. The clause coordinates with Section 14 of the National Trust Act, 1999 and the Rights of Persons with Disabilities Act, 2016 to appoint a Local Level Committee guardian alongside independent co-trustees or corporate fiduciary managers.",
+              text: "For children with physical or intellectual disabilities, a Special Needs Will Trust ensures lifelong medical treatment, caretaking, and assisted living without terminating upon reaching majority. The clause coordinates with Section 14 of the National Trust Act, 1999 and the Rights of Persons with Disabilities Act, 2016 to appoint a Local Level Committee guardian alongside independent co-trustees or corporate fiduciary managers.",
             },
           },
           {
@@ -201,7 +201,7 @@ export default function TestamentaryTrustClausePage() {
             name: "How is income earned by a testamentary trust taxed under the Income Tax Act, 1961?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 160(1)(iv) and Section 161 of the Income Tax Act, 1961, trustees of a testamentary trust are assessed as 'Representative Assessees'. When the trust is created for a minor child with determinate beneficiaries and defined shares (a Specific Trust created under a Will), the income is taxed at the individual personal tax slab rate of the beneficiary, rather than at the punitive Maximum Marginal Rate (MMR) of 42.744% that applies to discretionary living trusts.",
+              text: "Under Section 160(1)(iv) and Section 161 of the Income Tax Act, 1961, trustees of a Will trust are assessed as 'Agent Assessees'. When the trust is created for a minor child with determinate heirs and defined shares (a Specific Trust created under a Will), the income is taxed at the single personal tax slab rate of the heir, rather than at the punitive Maximum Marginal Rate (MMR) of 42.744% that applies to discretionary living trusts.",
             },
           },
           {
@@ -209,7 +209,7 @@ export default function TestamentaryTrustClausePage() {
             name: "Can the legal guardian of the child also be appointed as the trustee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "While legally permissible, it is strongly advised by succession lawyers to separate the role of 'Guardian of the Person' (who provides daily care, shelter, and emotional nurture) from the 'Trustee of the Property' (who manages investments, bank accounts, and approvals). Alternatively, appoint a trusted financial advisor or professional co-trustee alongside the guardian to provide vital fiduciary checks and balances.",
+              text: "While legally permissible, it is strongly advised by estate lawyers to separate the role of 'Guardian of the Person' (who provides daily care, shelter, and emotional nurture) from the 'Trustee of the Asset' (who manages investments, bank accounts, and approvals). Alternatively, appoint a trusted financial advisor or professional co-trustee alongside the guardian to provide vital fiduciary checks and balances.",
             },
           },
         ],

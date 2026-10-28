@@ -128,7 +128,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-1",
     label: "Aadhaar Card / Indian Passport of Will maker",
-    detail: "Primary identity and address document. Crucial for NGDRS biometric check and NRI testators.",
+    detail: "Primary identity and address paper. Crucial for NGDRS biometric check and NRI Will makers.",
     checked: false,
   },
   {
@@ -139,8 +139,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-3",
-    label: "Medical Certificate of Mental Fitness (MBBS Doctor)",
-    detail: "Current medical paper certifying the Will maker's sound testamentary mental capacity, vital for senior citizens.",
+    label: "Medical Paper of Mental Fitness (MBBS Doctor)",
+    detail: "Current medical paper certifying the Will maker's sound Will mental capacity, vital for senior citizens.",
     checked: false,
   },
   {
@@ -151,19 +151,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-5",
-    label: "PUDA, GMADA, GLADA or PDA Property Allotment Letters",
+    label: "PUDA, GMADA, GLADA or PDA Asset Allotment Letters",
     detail: "Conveyance deed, allotment letter, or transfer permission for home plots, SCOs, and apartments.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Municipal Corporation Property Tax Assessment Records",
-    detail: "Latest property tax receipts from MC Ludhiana, Amritsar, Jalandhar, Patiala, or SAS Nagar Mohali.",
+    label: "City City Board Asset Tax Assessment Records",
+    detail: "Latest asset tax receipts from MC Ludhiana, Amritsar, Jalandhar, Patiala, or SAS Nagar Mohali.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Banking, Demat Portfolios & Shop Share Certificates",
+    label: "Banking, Demat Portfolios & Shop Share Papers",
     detail: "Bank account passbooks, locker numbers, demat folio numbers, or partnership / factory ownership papers.",
     checked: false,
   },
@@ -261,7 +261,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Safeguard your family farm land, GMADA &amp; GLADA urban plots, shop industrial units, and NRI assets across Punjab. Get senior lawyer drafting, NGDRS Punjab portal registration, and fight-free Jamabandi name change.
+                Safeguard your family farm land, GMADA &amp; GLADA urban plots, shop plant units, and NRI assets across Punjab. Get senior lawyer drafting, NGDRS Punjab portal filing, and fight-free Jamabandi name change.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -355,14 +355,14 @@ export default function PunjabLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Testamentary Exemption
+                Will Exemption
               </span>
             </div>
 
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 P&amp;H High Court Rule
@@ -503,16 +503,16 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>PUNJAB ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Punjab
+                  Key Highlights: Will Making &amp; Filing in Punjab
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, official Book III registration on NGDRS Punjab creates permanent government custody, protecting NRI farmland from illegal transfers.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. While an plain Will signed before two witnesses is legally valid, official Book III filing on NGDRS Punjab creates permanent government custody, protecting NRI farmland from illegal transfers.
                     </p>
                   </div>
 
@@ -522,7 +522,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 of the Indian Succession Act and landmark Punjab &amp; Haryana High Court rulings, court probate is strictly non-needed in Punjab. Heirs can directly execute property mutations with a registered Will.
+                      Under Section 213 of the Indian Succession Act and landmark Punjab &amp; Haryana High Court rulings, court probate is strictly non-needed in Punjab. Heirs can directly execute asset mutations with a filed Will.
                     </p>
                   </div>
 
@@ -532,7 +532,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <span>Zero Punjab Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from ad valorem stamp duty across Punjab under the Indian Stamp Act, 1899. Testators remit only a flat ₹500 registration fee plus nominal scanning charges at the SRO office.
+                      Will Wills are completely exempt from ad valorem stamp duty across Punjab under the Indian Stamp Act, 1899. Will makers remit only a flat ₹500 filing fee plus nominal scanning charges at the SRO office.
                     </p>
                   </div>
 
@@ -542,7 +542,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <span>PLRS Jamabandi &amp; Urban Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will provides unimpeachable evidence to Halqa Patwaris for sanctioning Inteqal (name change) in the Jamabandi fard on the PLRS portal, and guarantees smooth title transfer with GMADA, GLADA, and municipal corporations.
+                      A filed Will provides unimpeachable evidence to Halqa Patwaris for sanctioning Inteqal (name change) in the Jamabandi fard on the PLRS portal, and guarantees smooth title transfer with GMADA, GLADA, and city corporations.
                     </p>
                   </div>
                 </div>
@@ -557,10 +557,10 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Legal Framework: Estate Succession Laws in Punjab
+                  1. Legal Framework: Estate Estate Laws in Punjab
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary signing across Punjab are codified under the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, the <strong>Punjab Land Revenue Act, 1887</strong>, and the <strong>Punjab Regional and Town Planning and Development Act, 1995</strong>. Any adult individual of sound mind possesses the unconditional legal right to bequeath self-acquired home property, farm acreage, business equity, and financial investments.
+                  Estate planning and Will signing across Punjab are codified under the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, the <strong>Punjab Land Revenue Act, 1887</strong>, and the <strong>Punjab Regional and Town Planning and Development Act, 1995</strong>. Any adult single of sound mind possesses the unconditional legal right to bequeath self-acquired home asset, farm acreage, business equity, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Punjab features a complex confluence of estate dynamics. Thousands of families possess substantial farm acreage in Doaba and Malwa, shop manufacturing units or hosiery enterprises in Ludhiana and Jalandhar, GMADA plots in SAS Nagar Mohali, and family assets vulnerable to fraudulent power-of-attorney transactions while family members reside overseas in Canada, the UK, or the United States. Without an clear, lawyer-drafted Will, legal heirs often endure protracted split court fights across revenue tehsildar courts and civil benches.
@@ -604,7 +604,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not be heirs receiving any property under the Will (Section 67).
+                    Witnesses and their spouses must not be heirs receiving any asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -618,13 +618,13 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Registration Rules: Optional vs Needed Status
+                  2. Filing Rules: A Choice vs Needed Status
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong> across Punjab. A Will written on standard paper, dated, and signed before two witnesses is legally valid and legally enforceable.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will Will is strictly <strong>a choice</strong> across Punjab. A Will written on standard paper, dated, and signed before two witnesses is legally valid and legally enforceable.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, due to aggressive property value appreciation and widespread NRI absentee ownership across Punjab, estate lawyers strongly recommend registering your Will on the National Generic Document Registration System (NGDRS Punjab). Formal registration places the original instrument into permanent Book III government custody, establishing high legal presumption of genuine signing.
+                  However, due to aggressive asset value appreciation and widespread NRI absentee ownership across Punjab, estate lawyers strongly recommend registering your Will on the National Generic Paper Filing System (NGDRS Punjab). Formal filing places the original instrument into permanent Book III government custody, establishing high legal presumption of genuine signing.
                 </p>
               </div>
 
@@ -633,9 +633,9 @@ export default function PunjabLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Punjab SRO / NGDRS)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Punjab SRO / NGDRS)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -655,7 +655,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Tehsildars often demand indemnity bonds or contested inquiry notices</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Urban Authority Transfer (GMADA/GLADA)</td>
+                      <td className="p-4 font-semibold">Urban Office Transfer (GMADA/GLADA)</td>
                       <td className="p-4 bg-rose-50/20">Direct ownership substitution on presenting certified Book III copy</td>
                       <td className="p-4 bg-slate-50/20">Urban development offices routinely direct heirs to civil court</td>
                     </tr>
@@ -665,7 +665,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Heavily susceptible to collusive fights by distant relatives</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
+                      <td className="p-4 font-semibold">Government Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹500 fee + nominal scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -685,7 +685,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   3. Probate Rules: Punjab &amp; Haryana High Court Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions encountered by property owners and NRI families in Punjab is whether getting a probate decree from a civil court is needed before transmitting land and flats. The definitive legal position is <strong>no</strong>.
+                  One of the most persistent misconceptions encountered by asset owners and NRI families in Punjab is whether getting a probate decree from a civil court is needed before transmitting land and flats. The definitive legal position is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read in conjunction with Section 57(a) and 57(b) of the Indian Succession Act, 1925, getting court probate is needed exclusively for Wills signed within or concerning assets located within the historic presidency towns of Kolkata, Mumbai, and Chennai. Punjab has always been a non-presidency area.
@@ -701,7 +701,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     Punjab &amp; Haryana High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Punjab &amp; Haryana in landmark judgments including <em>Ram Chand v. Sardara Singh</em> (AIR 1962 P&amp;H 382), <em>Mool Raj v. Atma Ram</em>, and <em>Behari Lal v. Madan Lal</em> has firmly settled that probate is not needed for Hindu, Sikh, Jain, or Buddhist Wills in Punjab. A registered Will allows immediate signing of Jamabandi name change and urban estate transfer without expensive court probate delays.
+                    The High Court of Punjab &amp; Haryana in landmark judgments including <em>Ram Chand v. Sardara Singh</em> (AIR 1962 P&amp;H 382), <em>Mool Raj v. Atma Ram</em>, and <em>Behari Lal v. Madan Lal</em> has firmly settled that probate is not needed for Hindu, Sikh, Jain, or Buddhist Wills in Punjab. A filed Will allows immediate signing of Jamabandi name change and urban estate transfer without expensive court probate delays.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -738,7 +738,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   4. NGDRS Punjab: SRO office Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Punjab registers all testamentary instruments through the National Generic Document Registration System (NGDRS Punjab portal at <code>igr.punjab.gov.in</code>). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any parcel of your land and flats is located.
+                  Punjab registers all Will instruments through the National Generic Paper Filing System (NGDRS Punjab portal at <code>igr.punjab.gov.in</code>). Under Section 32 of the Filing Act, your Will can be filed at the SRO office having area over your permanent residence or where any parcel of your land and flats is located.
                 </p>
               </div>
 
@@ -789,7 +789,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Punjab Registration District
+                        Punjab Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -842,7 +842,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Punjab
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Punjab span upscale home bungalows and industrial manufacturing units in Ludhiana and Jalandhar, high-growth GMADA corridors in SAS Nagar Mohali, heritage assets in Amritsar and Patiala, and farm Jamabandi farmlands across Doaba and Malwa. Our estate lawyers provide bespoke legal drafting, NGDRS slot coordination, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate holdings across Punjab span upscale home bungalows and plant manufacturing units in Ludhiana and Jalandhar, high-growth GMADA corridors in SAS Nagar Mohali, heritage assets in Amritsar and Patiala, and farm Jamabandi farmlands across Doaba and Malwa. Our estate lawyers provide bespoke legal drafting, NGDRS slot coordination, and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -853,7 +853,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial Hub &amp; Multi-Heir Estates
+                        Plant Hub &amp; Multi-Heir Estates
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ludhiana East &amp; West
@@ -868,12 +868,12 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sarabha Nagar</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Civil Lines</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Model Town</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Focal Point Industrial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Focal Point Plant</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dugri Phase 1 &amp; 2</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Watertight <strong>Will drafting services in Ludhiana</strong> for hosiery mills, bicycle and auto-component manufacturing units, Focal Point industrial leases, and GLADA home plots. Incorporates business succession deeds, corporate shares, and clear joint family allocations to prevent corporate paralysis.
+                      Watertight <strong>Will drafting services in Ludhiana</strong> for hosiery mills, bicycle and auto-component manufacturing units, Focal Point plant leases, and GLADA home plots. Incorporates business estate deeds, corporate shares, and clear joint family allocations to prevent corporate paralysis.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -927,7 +927,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Amritsar</strong> for shop hospitality assets, heritage home bungalows, export trading houses, and farm land in Majha. Explicitly protects family property from split fights and resolves HUF joint family questions.
+                      Specialized <strong>Will drafting services in Amritsar</strong> for shop hospitality assets, heritage home bungalows, export trading houses, and farm land in Majha. Explicitly protects family asset from split fights and resolves HUF joint family questions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -936,7 +936,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kachehri Complex, Court Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Digital NGDRS Punjab slot scheduling, independent witness attestation, and certified Book III registry copy collection.
+                        Digital NGDRS Punjab slot scheduling, independent witness witness signing, and certified Book III registry copy collection.
                       </p>
                     </div>
                   </div>
@@ -1035,7 +1035,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Mohali</strong> for GMADA freehold and leasehold home plots, luxury high-rises, shop SCOs, and startup equity. Facilitates seamless transfer of property records with GMADA and municipal corporations without civil court probate.
+                      Full <strong>Will drafting services in Mohali</strong> for GMADA freehold and leasehold home plots, luxury high-rises, shop SCOs, and startup equity. Facilitates seamless transfer of asset records with GMADA and city corporations without civil court probate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1089,7 +1089,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Patiala</strong> for family havelis, PDA approved plots, medical clinics, and Malwa farm acreage. Guarantees clear title transfer, minor guardianship rules, and medical mental capacity papers for elderly testators.
+                      Expert <strong>Will drafting services in Patiala</strong> for family havelis, PDA approved plots, medical clinics, and Malwa farm acreage. Guarantees clear title transfer, minor child care rules, and medical mental capacity papers for elderly Will makers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1098,7 +1098,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat, Near Court Complex, Patiala</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for elderly retirees, NGDRS fee payment, and lawyer representation.
+                        Doorstep filing for elderly retirees, NGDRS fee payment, and lawyer representation.
                       </p>
                     </div>
                   </div>
@@ -1143,7 +1143,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Bathinda</strong> for farm farm holdings, cotton trading enterprises, industrial plots, and BDA home assets. Avoids contentious revenue court fights through verified Jamabandi fard asset descriptions.
+                      Tailored <strong>Will drafting services in Bathinda</strong> for farm farm holdings, cotton trading enterprises, plant plots, and BDA home assets. Avoids contentious revenue court fights through checked Jamabandi fard asset descriptions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1152,7 +1152,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Complex, Fauji Chowk</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jamabandi fard reconciliation, Sub-Registrar appointment booking, and witness attestation.
+                        Jamabandi fard reconciliation, SRO appointment booking, and witness witness signing.
                       </p>
                     </div>
                   </div>
@@ -1292,7 +1292,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Online Will Making in Punjab
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to draft, verify, and register your Will before the Sub-Registrar across Punjab:
+                  Follow this checked 5-stage legal operating step to draft, verify, and register your Will before the SRO across Punjab:
                 </p>
               </div>
 
@@ -1348,7 +1348,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       NGDRS Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your registration appointment on NGDRS Punjab (igr.punjab.gov.in) and pay the flat ₹500 fee online.
+                      Schedule your filing appointment on NGDRS Punjab (igr.punjab.gov.in) and pay the flat ₹500 fee online.
                     </p>
                   </div>
                 </div>
@@ -1377,23 +1377,23 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS &amp; NRIS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31: Doorstep Will Registration for NRIs
+                  7. Section 31: Doorstep Will Filing for NRIs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, ailing people, or NRI testators visiting Punjab on tight itineraries who cannot manage prolonged waiting at tehsil complexes, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to attend a private residence, farmhouse, or hospital room to conduct registration.
+                  For senior citizens, ailing people, or NRI Will makers visiting Punjab on tight itineraries who cannot manage prolonged waiting at tehsil complexes, <strong>Section 31 of the Filing Act, 1908</strong> allows the SRO to attend a private residence, farmhouse, or hospital room to conduct filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates Across Punjab:
+                  How Doorstep SRO Filing Operates Across Punjab:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Medical Fitness Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound testamentary mind but advised against traveling to the tehsil office.</span>
+                      <strong className="text-slate-900 block">Medical Fitness Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound Will mind but advised against traveling to the tehsil office.</span>
                     </div>
                   </div>
 
@@ -1401,7 +1401,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Special Commission Petition</strong>
-                      <span className="text-slate-600">Our legal counsel prepares and files the formal Section 31 commission petition before the jurisdictional Punjab Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal counsel prepares and files the formal Section 31 commission petition before the local Punjab SRO.</span>
                     </div>
                   </div>
 
@@ -1417,7 +1417,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Hardware</strong>
-                      <span className="text-slate-600">The Sub-Registrar arrives at the residence with mobile digital camera units and biometric fingerprint scanners to complete Book III entry.</span>
+                      <span className="text-slate-600">The SRO arrives at the residence with mobile digital camera units and biometric fingerprint scanners to complete Book III entry.</span>
                     </div>
                   </div>
                 </div>
@@ -1432,10 +1432,10 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist: Rules for Punjab Wills
+                  8. Paper Checklist: Rules for Punjab Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1485,20 +1485,20 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   9. Asset Classes: Farmland, Jamabandi &amp; Urban Flats
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps across Punjab differ substantially depending on whether the asset is rural farm land, planned urban authority plots, or shop enterprises:
+                  Estate steps across Punjab differ substantially depending on whether the asset is rural farm land, planned urban office plots, or shop enterprises:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Urban Authority Plots
+                    Urban Office Plots
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     GMADA, GLADA &amp; PDA Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For urban freehold plots and shop SCOs governed by GMADA (Mohali), GLADA (Ludhiana), or PDA (Patiala), a registered Will empowers designated heirs to execute direct ownership substitution without being referred to probate court.
+                    For urban freehold plots and shop SCOs governed by GMADA (Mohali), GLADA (Ludhiana), or PDA (Patiala), a filed Will empowers designated heirs to execute direct ownership substitution without being referred to probate court.
                   </p>
                 </div>
 
@@ -1510,7 +1510,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     Jamabandi Fard &amp; Inteqal
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Testamentary transfer of farm farmland across Punjab requires specific Khasra, Khewat, and Khatoni numbers. Upon the Will maker&apos;s demise, presenting the registered Will ensures Halqa Patwaris sanction the Inteqal (name change) on the PLRS portal without objection.
+                    Will transfer of farm farmland across Punjab requires specific Khasra, Khewat, and Khatoni numbers. Upon the Will maker&apos;s demise, presenting the filed Will ensures Halqa Patwaris sanction the Inteqal (name change) on the PLRS portal without objection.
                   </p>
                 </div>
 
@@ -1519,10 +1519,10 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     Shop &amp; MSME Units
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Industrial Mills &amp; Partnerships
+                    Plant Mills &amp; Partnerships
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For industrial factories in Ludhiana, Jalandhar, or Mandi Gobindgarh, business succession clauses must clearly bequeath partner capital, private limited share papers, and factory machinery, averting corporate standstill.
+                    For plant factories in Ludhiana, Jalandhar, or Mandi Gobindgarh, business estate clauses must clearly bequeath partner capital, private limited share papers, and factory machinery, averting corporate standstill.
                   </p>
                 </div>
               </div>
@@ -1536,10 +1536,10 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Fees &amp; Stamp Duty: NGDRS Punjab Registration Costs
+                  10. Fees &amp; Stamp Duty: NGDRS Punjab Filing Costs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale deeds or gift transfers that incur high ad valorem stamp duty in Punjab, testamentary Wills are completely exempt from stamp duty. Government registration fees across Punjab are purely nominal:
+                  Unlike shop sale deeds or gift transfers that incur high ad valorem stamp duty in Punjab, Will Wills are completely exempt from stamp duty. Government filing fees across Punjab are purely nominal:
                 </p>
               </div>
 
@@ -1549,7 +1549,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1559,9 +1559,9 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Punjab</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">NGDRS Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">NGDRS Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹500 (Flat Legal Fee)</td>
-                      <td className="p-4">Revenue Department Punjab via Cyber Treasury</td>
+                      <td className="p-4">Revenue Office Punjab via Cyber Treasury</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Service Charges</td>
@@ -1589,7 +1589,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   11. Service Packages: Transparent Will Drafting Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio across Punjab:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio across Punjab:
                 </p>
               </div>
 
@@ -1607,12 +1607,12 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with urban home plots, bank accounts, and demat assets.
+                      Ideal for single homeowners with urban home plots, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Punjab Will creator</span>
+                        <span>Free Punjab Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1685,13 +1685,13 @@ export default function PunjabLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Punjab SRO office or home visit.
+                      End-to-end filing coordination across any Punjab SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1733,7 +1733,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Punjab Will Drafting
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting, NGDRS registration, and Jamabandi name change in Punjab:
+                  Clear, authoritative answers to common legal questions regarding Will drafting, NGDRS filing, and Jamabandi name change in Punjab:
                 </p>
               </div>
 
@@ -1778,7 +1778,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                   13. Legal Framework: Indian Succession Act Punjab
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Punjab state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Punjab state filing systems:
                 </p>
               </div>
 
@@ -1794,10 +1794,10 @@ export default function PunjabLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1806,7 +1806,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     Punjab Land Revenue Act 1887
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 34 (Name Change Inteqal of Farm Holdings upon Testamentary Succession).
+                    Section 34 (Name Change Inteqal of Farm Holdings upon Will Estate).
                   </p>
                 </div>
 
@@ -1815,7 +1815,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
                     NGDRS Punjab Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official National Generic Document Registration System: <code>igr.punjab.gov.in</code>.
+                    Official National Generic Paper Filing System: <code>igr.punjab.gov.in</code>.
                   </p>
                 </div>
               </div>
@@ -1846,7 +1846,29 @@ export default function PunjabLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1865,7 +1887,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Punjab Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Punjab Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1884,7 +1906,7 @@ export default function PunjabLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Punjab NGDRS Registered &amp; Jamabandi Name Change Compliant</span>
+              <span>Punjab NGDRS Filed &amp; Jamabandi Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -74,7 +74,7 @@ export default function WillFormatMarathiClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedMarathi, setCopiedMarathi] = useState<boolean>(false);
   const [copiedEnglish, setCopiedEnglish] = useState<boolean>(false);
@@ -312,7 +312,7 @@ export default function WillFormatMarathiClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>नोंदणी ऐच्छिक परंतु सुरक्षित (Registration is Optional):</strong> नोंदणी कायदा कलम १८(इ) नुसार नोंदणी सक्तीची नाही, मात्र भविष्यातील कौटुंबिक तंटे व खोट्या सह्यांचे आरोप टाळण्यासाठी दुय्यम निबंधकांकडे (SRO) नोंदणी करणे उत्तम.
+                    <strong>नोंदणी ऐच्छिक परंतु सुरक्षित (Filing is A Choice):</strong> नोंदणी कायदा कलम १८(इ) नुसार नोंदणी सक्तीची नाही, मात्र भविष्यातील कौटुंबिक तंटे व खोट्या सह्यांचे आरोप टाळण्यासाठी दुय्यम निबंधकांकडे (SRO) नोंदणी करणे उत्तम.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -626,7 +626,7 @@ export default function WillFormatMarathiClient() {
                       <span>१. मुंबई शहर कार्यक्षेत्रात प्रोबेटची सक्ती (Probate Rule)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      भारतीय वारसा कायदा कलम ५७ व २१३(२) नुसार, मुंबई उच्च न्यायालयाच्या मूळ अधिकारक्षेत्रात (Ordinary Original Civil Jurisdiction - म्हणजे कुलाबा ते माहीम/शीव) केलेली किंवा या क्षेत्रातील स्थावर मालमत्तेशी संबंधित असलेल्या हिंदू मृत्यूपत्रांचे <strong>प्रोबेट (Probate)</strong> घेणे कायद्याने बंधनकारक आहे. मात्र ठाणे, नवी मुंबई, पुणे किंवा नागपूर येथील मालमत्तांसाठी प्रोबेट सक्तीचे नाही.
+                      भारतीय वारसा कायदा कलम ५७ व २१३(२) नुसार, मुंबई उच्च न्यायालयाच्या मूळ अधिकारक्षेत्रात (Ordinary Original Civil Area - म्हणजे कुलाबा ते माहीम/शीव) केलेली किंवा या क्षेत्रातील स्थावर मालमत्तेशी संबंधित असलेल्या हिंदू मृत्यूपत्रांचे <strong>प्रोबेट (Probate)</strong> घेणे कायद्याने बंधनकारक आहे. मात्र ठाणे, नवी मुंबई, पुणे किंवा नागपूर येथील मालमत्तांसाठी प्रोबेट सक्तीचे नाही.
                     </p>
                   </div>
 
@@ -646,7 +646,7 @@ export default function WillFormatMarathiClient() {
                       <span>३. शेतजमीन व ७/१२ फेरफार नोंद (Maharashtra Land Revenue)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      महाराष्ट्रातील शेतजमीन किंवा प्लॉटच्या बाबतीत, नोंदणीकृत मृत्यूपत्राच्या आधारे तलाठी कार्यालयात कलम १४९ महाराष्ट्र जमीन महसूल संहितेनुसार थेट वारस फेरफार (Mutation Entry) नोंदवता येतो. मृत्यूपत्र नोंदणीकृत असल्यास महसूल अधिकाऱ्यांना नोंद करणे सुलभ होते.
+                      महाराष्ट्रातील शेतजमीन किंवा प्लॉटच्या बाबतीत, नोंदणीकृत मृत्यूपत्राच्या आधारे तलाठी कार्यालयात कलम १४९ महाराष्ट्र जमीन महसूल संहितेनुसार थेट वारस फेरफार (Name Change Entry) नोंदवता येतो. मृत्यूपत्र नोंदणीकृत असल्यास महसूल अधिकाऱ्यांना नोंद करणे सुलभ होते.
                     </p>
                   </div>
 
@@ -836,7 +836,7 @@ export default function WillFormatMarathiClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      दोन साक्षीदारांच्या प्रत्यक्ष उपस्थितीत स्वाक्षरी (Execution)
+                      दोन साक्षीदारांच्या प्रत्यक्ष उपस्थितीत स्वाक्षरी (Signing)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       मृत्युपत्रकर्त्याने दोन साक्षीदारांसमोर सही करावी. त्यानंतर दोन्ही साक्षीदारांनी मृत्युपत्रकर्त्यासमोर साक्षांकन विधानावर स्वाक्षरी व पूर्ण पत्ता लिहावा (कलम ६३).
@@ -853,7 +853,7 @@ export default function WillFormatMarathiClient() {
                       दुय्यम निबंधक कार्यालयात (SRO) नोंदणी करणे (ऐच्छिक परंतु फायदेशीर)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      मृत्यूपत्र अधिक सुरक्षित करण्यासाठी स्थानिक दुय्यम निबंधक कार्यालयात (Sub-Registrar Office) जाऊन ₹१०० भरून नोंदणी करा. नोंदणीमुळे मृत्यूपत्र हरवण्याची किंवा नष्ट होण्याची भीती उरत नाही.
+                      मृत्यूपत्र अधिक सुरक्षित करण्यासाठी स्थानिक दुय्यम निबंधक कार्यालयात (SRO office) जाऊन ₹१०० भरून नोंदणी करा. नोंदणीमुळे मृत्यूपत्र हरवण्याची किंवा नष्ट होण्याची भीती उरत नाही.
                     </p>
                   </div>
                 </div>
@@ -922,7 +922,7 @@ export default function WillFormatMarathiClient() {
                     <strong>भारतीय वारसा कायदा, १९२५ (Indian Succession Act, 1925):</strong> कलम ५९ (सक्षम मन), कलम ६३ (मृत्यूपत्राचे साक्षांकन), कलम ७४ (भाषेची सक्ती नसणे), कलम २१३ (मुंबई उच्च न्यायालय प्रोबेट कार्यक्षेत्र).
                   </li>
                   <li>
-                    <strong>नोंदणी कायदा, १९०८ (Registration Act, 1908):</strong> कलम १८(इ) (मृत्यूपत्र नोंदणी ऐच्छिक), कलम ४२ (सीलबंद पाकिटात मृत्यूपत्र जमा ठेवणे).
+                    <strong>नोंदणी कायदा, १९०८ (Filing Act, 1908):</strong> कलम १८(इ) (मृत्यूपत्र नोंदणी ऐच्छिक), कलम ४२ (सीलबंद पाकिटात मृत्यूपत्र जमा ठेवणे).
                   </li>
                   <li>
                     <strong>महाराष्ट्र सहकारी संस्था कायदा, १९६० (MCS Act, 1960):</strong> कलम १५४बी-१३ (फ्लॅट ट्रान्सफर व नॉमिनीचे अधिकार).
@@ -957,7 +957,29 @@ export default function WillFormatMarathiClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -970,20 +992,20 @@ export default function WillFormatMarathiClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Bombay High Court probate matters, Section 63 witness compliance, and Maharashtra Co-operative Housing Society flat transmission.
+                Expert in Indian testamentary jurisprudence, Bombay High Court probate matters, Section 63 witness compliance, and Maharashtra Co-operative Housing Society flat transfer.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>

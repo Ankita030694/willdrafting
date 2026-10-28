@@ -205,29 +205,29 @@ const DEFAULT_LIABILITIES: LiabilityItem[] = [
 ];
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Estate Inventory Under Succession Act" },
+  { id: "statutory-foundation", label: "1. Estate Inventory Under Estate Act" },
   { id: "interactive-vault-builder", label: "2. Family Asset & Net Worth Vault Tool" },
   { id: "unclaimed-wealth-trap", label: "3. The 48,000 Crore UDGAM & IEPF Trap" },
   { id: "family-red-file-protocol", label: "4. The Family Red File & Emergency Folder" },
   { id: "record-methods-comparison", label: "5. Sheets vs Red File vs Valid Will" },
   { id: "step-by-step-dossier-sop", label: "6. Step-by-Step SOP: Building the Dossier" },
-  { id: "section-159-tax-liability", label: "7. Section 159 Income Tax Representative Rules" },
+  { id: "section-159-tax-liability", label: "7. Section 159 Income Tax Agent Rules" },
   { id: "digital-assets-lockers", label: "8. Digital Assets, Crypto & Locker Access" },
   { id: "practical-case-studies", label: "9. Real Case Studies: Delhi, Pune, Bengaluru" },
   { id: "legal-clauses-templates", label: "10. Copy-Paste Will Clauses & Checklists" },
-  { id: "institutional-profile", label: "11. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "11. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "Why is a family asset inventory list essential in India?",
-    a: "Over ₹78,000 Crores of unclaimed funds currently lie abandoned in Indian banks (transferred to the RBI DEA Fund / UDGAM portal) and IEPF (unclaimed shares and dividends). Without a comprehensive written or printable asset dossier, surviving spouses and children frequently have no knowledge of existing fixed deposits, demat folios, PPF accounts, or life insurance policies.",
+    a: "Over ₹78,000 Crores of unclaimed funds currently lie abandoned in Indian banks (transferred to the RBI DEA Fund / UDGAM portal) and IEPF (unclaimed shares and dividends). Without a full written or printable asset dossier, surviving spouses and children frequently have no knowledge of existing fixed deposits, demat folios, PPF accounts, or life insurance policies.",
   },
   {
     q: "Does a nominee become the absolute legal owner of assets after death in India?",
-    a: "No. The Supreme Court of India in landmark judgments including Sarbati Devi (1984) and Shakti Yezdani (2023) established that a nominee is merely a statutory trustee or custodian authorized to receive funds. Beneficial ownership remains with the legal heirs named in a valid Will, or governed by personal succession laws (such as the Hindu Succession Act, 1956).",
+    a: "No. The Supreme Court of India in landmark judgments including Sarbati Devi (1984) and Shakti Yezdani (2023) established that a nominee is merely a legal trustee or custodian authorized to receive funds. Beneficial ownership remains with the legal heirs named in a valid Will, or governed by personal estate laws (such as the Hindu Succession Act, 1956).",
   },
   {
     q: "Is my financial data uploaded or stored on any server?",
@@ -235,19 +235,19 @@ const FAQS = [
   },
   {
     q: "What is an Emergency Red File or Death Folder?",
-    a: "An Emergency Red File (popularized across Indian personal finance communities) is a centralized physical and digital dossier containing property deeds, bank account rosters, insurance policy numbers, loan schedules, locker keys location, and your registered Will. It ensures that in the event of incapacitation or sudden demise, the family can instantly step in without facing financial paralysis.",
+    a: "An Emergency Red File (popularized across Indian personal finance communities) is a centralized physical and digital dossier containing asset deeds, bank account rosters, insurance policy numbers, loan schedules, locker keys location, and your filed Will. It ensures that in the event of incapacitation or sudden demise, the family can instantly step in without facing financial paralysis.",
   },
   {
     q: "How does Section 317 of the Indian Succession Act, 1925 govern estate inventories?",
-    a: "Section 317 mandates that every executor or administrator of an estate must exhibit an exact inventory of all property in possession and credits belonging to the deceased within six months of obtaining probate or letters of administration. Maintaining an up-to-date asset roster during life ensures seamless compliance and avoids court citations.",
+    a: "Section 317 mandates that every executor or head of an estate must exhibit an exact inventory of all asset in possession and credits belonging to the deceased within six months of obtaining probate or letters of care. Maintaining an up-to-date asset roster during life ensures seamless compliance and avoids court citations.",
   },
   {
     q: "What are legal heirs' liabilities for the deceased's debts under Section 159 of the Income Tax Act?",
-    a: "Under Section 159 of the Income Tax Act, 1961, legal representatives are liable to pay taxes due from the deceased only to the extent to which the estate is capable of meeting the liability. Heirs are not personally liable beyond the net inherited estate value.",
+    a: "Under Section 159 of the Income Tax Act, 1961, legal agents are liable to pay taxes due from the deceased only to the extent to which the estate is capable of meeting the liability. Heirs are not personally liable beyond the net inherited estate value.",
   },
   {
     q: "Can I convert this asset inventory directly into a legally binding Will?",
-    a: "Yes. An asset inventory provides the exact schedule of assets required in a challenge-proof Will. You can use our self-serve Will drafting wizard to attach this schedule directly as Schedule of Properties, specifying specific legatees for each asset.",
+    a: "Yes. An asset inventory provides the exact schedule of assets required in a fight-proof Will. You can use our self-serve Will drafting wizard to attach this schedule directly as Schedule of Assets, specifying specific legatees for each asset.",
   },
   {
     q: "How should passwords, crypto keys, and digital locker credentials be handled?",
@@ -268,7 +268,7 @@ export default function EstateAssetInventoryClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
@@ -280,11 +280,11 @@ export default function EstateAssetInventoryClient() {
 
   // Emergency Profile Metadata
   const [profileName, setProfileName] = useState<string>("Primary Family Earner");
-  const [spouseName, setSpouseName] = useState<string>("Spouse / Primary Beneficiary");
+  const [spouseName, setSpouseName] = useState<string>("Spouse / Primary Heir");
   const [trustedExecutor, setTrustedExecutor] = useState<string>("Family Elder / Trusted Friend");
   const [familyDoctor, setFamilyDoctor] = useState<string>("Dr. Sharma (Max Healthcare)");
   const [caOrAdvocate, setCaOrAdvocate] = useState<string>("AMA Legal Solutions / CA Verma");
-  const [willLocation, setWillLocation] = useState<string>("Godrej Master Bedroom Safe (Registered Copy with Advocate)");
+  const [willLocation, setWillLocation] = useState<string>("Godrej Master Bedroom Safe (Filed Copy with Lawyer)");
 
   // Form helper states for adding new asset
   const [showAddAssetModal, setShowAddAssetModal] = useState<boolean>(false);
@@ -584,7 +584,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -662,7 +662,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 211, 213, 317, 318, and 332 of the Indian Succession Act,
@@ -678,7 +678,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>Zero Cloud Storage</span>
               </div>
               <p className="leading-relaxed text-[11px] text-emerald-800/90">
-                All data entered into this calculator stays 100% inside your local web browser session.
+                All data entered into this tool stays 100% inside your local web browser session.
                 No databases, tracking, or server endpoints.
               </p>
             </div>
@@ -700,7 +700,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   <span>
                     <strong>The Unclaimed Wealth Catastrophe:</strong> Indian families lose tens of
                     thousands of crores because surviving spouses do not know which banks hold fixed
-                    deposits, which demat accounts hold stocks, or where insurance policies are registered.
+                    deposits, which demat accounts hold stocks, or where insurance policies are filed.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -708,16 +708,16 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   <span>
                     <strong>Nominee vs Legal Heir Distinction:</strong> A nominee is merely a
                     temporary custodian (Supreme Court in <em>Sarbati Devi</em> &amp; <em>Shakti Yezdani</em>).
-                    Without an accurate asset schedule in a registered Will, bank nominees face immediate
+                    Without an accurate asset schedule in a filed Will, bank nominees face immediate
                     lawsuits from other legal heirs.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Compliance under Section 317:</strong> Executors must file an
+                    <strong>Legal Compliance under Section 317:</strong> Executors must file an
                     exhaustive inventory of assets within six months of probate. Maintaining a live
-                    dossier ensures frictionless probate and prevents legal challenges.
+                    dossier ensures frictionless probate and prevents legal fights.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -738,28 +738,28 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Basis: Estate Inventory Under Succession Act
+                1. Legal Basis: Estate Inventory Under Estate Act
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Indian testamentary jurisprudence, the administration of a deceased individual&rsquo;s
+                  In Indian testamentary jurisprudence, the care of a deceased single&rsquo;s
                   estate is governed primarily by the <strong>Indian Succession Act, 1925</strong>. Under
                   <strong> Section 211</strong>, the executor named in a Will or the court-appointed
-                  administrator represents the legal personality of the deceased for all purposes, and all
-                  property vests in them.
+                  head represents the legal personality of the deceased for all purposes, and all
+                  asset vests in them.
                 </p>
                 <p>
-                  Crucially, <strong>Section 317 of the Indian Succession Act</strong> establishes a mandatory
-                  statutory duty: an executor or administrator must, within six months from the grant of probate
-                  or letters of administration, exhibit in court an exact inventory containing a full and true
-                  estimate of all property in possession and credits belonging to the deceased. Within one year,
+                  Crucially, <strong>Section 317 of the Indian Succession Act</strong> establishes a needed
+                  legal duty: an executor or head must, within six months from the grant of probate
+                  or letters of care, exhibit in court an exact inventory containing a full and true
+                  estimate of all asset in possession and credits belonging to the deceased. Within one year,
                   they must submit formal accounts of the estate.
                 </p>
                 <p>
-                  When individuals pass away without leaving an organized asset inventory, executors and
-                  surviving heirs face immense administrative hurdles. Banking institutions, depository
+                  When people pass away without leaving an organized asset inventory, executors and
+                  surviving heirs face immense office hurdles. Banking institutions, depository
                   participants (NSDL/CDSL), mutual fund registrars (CAMS/KFintech), and insurance companies
-                  operate in silos. Without knowing account numbers, folio identifiers, and registered branches,
+                  operate in silos. Without knowing account numbers, folio identifiers, and filed branches,
                   legitimate wealth remains permanently untracked.
                 </p>
               </div>
@@ -772,7 +772,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>INTERACTIVE ASSET VAULT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Family Asset &amp; Net Worth Inventory Vault
+                2. Free Family Asset &amp; Net Worth Inventory Vault
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Catalog your assets and liabilities below. This tool computes your consolidated estate net
@@ -917,7 +917,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                         Under Reserve Bank of India and SEBI regulations, bank accounts or demat portfolios
                         without an updated nominee become dormant after inactivity and are eventually transferred
                         to the <strong>RBI DEA Fund (UDGAM portal)</strong> or <strong>IEPF</strong>. We strongly
-                        recommend updating nominations immediately.
+                        recommend updating nominations right away.
                       </p>
                     </div>
                   </div>
@@ -971,7 +971,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                       />
                     </div>
                     <div>
-                      <label className="font-bold text-slate-700 block mb-1">Family Advocate / CA</label>
+                      <label className="font-bold text-slate-700 block mb-1">Family Lawyer / CA</label>
                       <input
                         type="text"
                         value={caOrAdvocate}
@@ -1101,7 +1101,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                                   {asset.hasNominee ? (
                                     <>
                                       <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-                                      <span>Nominee Registered</span>
+                                      <span>Nominee Filed</span>
                                     </>
                                   ) : (
                                     <>
@@ -1211,12 +1211,12 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                       <span>NEXT CRITICAL LEGAL STEP</span>
                     </div>
                     <div className="text-lg sm:text-xl font-extrabold text-white">
-                      Attach This Inventory Schedule to a Registered Will
+                      Attach This Inventory Schedule to a Filed Will
                     </div>
                     <p className="text-xs text-slate-300 max-w-xl">
-                      An asset inventory alone does not prevent disputes among co-heirs. Under the Indian
-                      Succession Act, 1925, only a registered Will legally directs who inherits each
-                      cataloged property, bank account, and demat portfolio.
+                      An asset inventory alone does not prevent fights among co-heirs. Under the Indian
+                      Estate Act, 1925, only a filed Will legally directs who inherits each
+                      cataloged asset, bank account, and demat portfolio.
                     </p>
                   </div>
 
@@ -1224,7 +1224,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     onClick={handleStartDraft}
                     className="shrink-0 px-6 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
                   >
-                    Draft Challenge-Proof Will Now
+                    Draft Fight-Proof Will Now
                   </button>
                 </div>
               </div>
@@ -1258,7 +1258,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     ICICI, HDFC, PNB) without creating a consolidated register.
                   </li>
                   <li>
-                    Fixed deposit receipts, physical share certificates, and PPF passbooks were kept in
+                    Fixed deposit receipts, physical share papers, and PPF passbooks were kept in
                     forgotten cupboards or single-operated bank lockers.
                   </li>
                   <li>
@@ -1272,8 +1272,8 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 </ul>
                 <p>
                   Recovering funds from the RBI UDGAM portal or filing IEPF-5 claim forms is a notoriously
-                  lengthy bureaucratic ordeal requiring indemnity bonds, court affidavits, legal heir certificates,
-                  and succession certificates. Maintaining an active Family Asset Inventory is the single most
+                  lengthy bureaucratic ordeal requiring indemnity bonds, court sworn notes, legal heir papers,
+                  and estate papers. Maintaining an active Family Asset Inventory is the single most
                   effective preventative shield against this trap.
                 </p>
               </div>
@@ -1302,14 +1302,14 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>EMERGENCY RED FILE PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. The Family Red File: Essential Documents Every Spouse Needs
+                4. The Family Red File: Essential Papers Every Spouse Needs
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Indian personal finance forums (such as r/personalfinanceindia), the concept of an
                   <strong> &quot;Emergency Red File&quot; or &quot;In Case of Death Folder&quot;</strong> has
                   emerged as a viral best practice. It refers to a dedicated, brightly colored physical folder
-                  kept in a known home location that houses every critical document the family needs within the
+                  kept in a known home location that houses every critical paper the family needs within the
                   first 72 hours of an emergency.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1330,11 +1330,11 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-2">
                     <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                       <Building2 className="w-4 h-4 text-[#5F7E75]" />
-                      <span>Long-Term Asset Transmission Items</span>
+                      <span>Long-Term Asset Transfer Items</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>Original Registered Will and registered codicils</li>
-                      <li>Original Title Deeds, conveyance deeds &amp; share certificates</li>
+                      <li>Original Filed Will and filed codicils</li>
+                      <li>Original Title Deeds, conveyance deeds &amp; share papers</li>
                       <li>Consolidated Demat Client Master List (CML) and CAS statements</li>
                       <li>EPF UAN number and PPF passbook copies</li>
                       <li>Bank safe deposit locker number, bank branch, and physical key</li>
@@ -1354,7 +1354,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 5. Comparing Asset Records: Sheets vs Red File vs Valid Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Many individuals assume a casual Google Sheet or note in their smartphone is sufficient.
+                Many people assume a casual Google Sheet or note in their smartphone is sufficient.
                 Review the structural comparison below to understand the legal and operational differences:
               </p>
 
@@ -1369,7 +1369,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                         WillDrafting Client Vault
                       </th>
                       <th className="py-3.5 px-4 font-extrabold text-emerald-300">
-                        Challenge-Proof Registered Will
+                        Fight-Proof Filed Will
                       </th>
                     </tr>
                   </thead>
@@ -1380,10 +1380,10 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                         High risk of cloud leakage, accidental sharing, or unencrypted sync
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-semibold bg-rose-50/30">
-                        100% browser-local; zero server transmission or cloud storage
+                        100% browser-local; zero server transfer or cloud storage
                       </td>
                       <td className="py-3 px-4 text-slate-900 font-semibold">
-                        Confidential physical document; sealed in envelope until demise
+                        Confidential physical paper; sealed in envelope until demise
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80 transition-colors">
@@ -1392,16 +1392,16 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                         Zero legal standing under Indian Succession Act; inadmissible as bequest
                       </td>
                       <td className="py-3 px-4 text-slate-700 bg-rose-50/30">
-                        Valid administrative memorandum; serves as Section 317 inventory basis
+                        Valid office memorandum; serves as Section 317 inventory basis
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-bold">
                         Absolute legal title under Section 213; binds all legal heirs
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80 transition-colors">
-                      <td className="py-3 px-4 font-bold text-slate-900">Dispute Immunity</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Fight Immunity</td>
                       <td className="py-3 px-4 text-rose-700">
-                        Easily disputed by excluded relatives; cannot override intestate law
+                        Easily disputed by excluded relatives; cannot override no-Will law
                       </td>
                       <td className="py-3 px-4 text-slate-700 bg-rose-50/30">
                         Provides verifiable evidence of asset provenance and liabilities
@@ -1413,10 +1413,10 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     <tr className="hover:bg-slate-50/80 transition-colors">
                       <td className="py-3 px-4 font-bold text-slate-900">Family Accessibility</td>
                       <td className="py-3 px-4 text-slate-600">
-                        Spouse often locked out by 2-factor SMS authentication on deceased phone
+                        Spouse often locked out by 2-factor SMS check on deceased phone
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-semibold bg-rose-50/30">
-                        Printable physical dossier immediately accessible in family safe
+                        Printable physical dossier right away accessible in family safe
                       </td>
                       <td className="py-3 px-4 text-slate-900 font-semibold">
                         Read by designated Executor in presence of all family members
@@ -1431,7 +1431,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                         Includes Nominee Health Audit to eliminate UDGAM/IEPF pitfalls
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-bold">
-                        Enables instant asset transmission and probate grant in High Court
+                        Enables instant asset transfer and probate grant in High Court
                       </td>
                     </tr>
                   </tbody>
@@ -1453,27 +1453,27 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   {
                     step: "STEP 1",
                     title: "Pull Consolidated Statements (CAS & AIS)",
-                    desc: "Download your CAMS/KFintech Consolidated Account Statement (CAS) for all mutual funds, NSDL/CDSL e-CAS for demat shares, and the Annual Information Statement (AIS) from the Income Tax e-filing portal. The AIS captures all interest from bank accounts, dividends, and property purchases.",
+                    desc: "Download your CAMS/KFintech Consolidated Account Statement (CAS) for all mutual funds, NSDL/CDSL e-CAS for demat shares, and the Annual Information Statement (AIS) from the Income Tax e-filing portal. The AIS captures all interest from bank accounts, dividends, and asset purchases.",
                   },
                   {
                     step: "STEP 2",
                     title: "Audit and Rectify Nominations Across All Portfolios",
-                    desc: "Verify that every single bank savings account, fixed deposit, PPF account, and demat portfolio has an active nominee registered. Use the online net banking or SEBI e-sign portal to add your spouse or children.",
+                    desc: "Verify that every single bank savings account, fixed deposit, PPF account, and demat portfolio has an active nominee filed. Use the online net banking or SEBI e-sign portal to add your spouse or children.",
                   },
                   {
                     step: "STEP 3",
                     title: "Input Asset and Liability Records in the Tool",
-                    desc: "Use the interactive vault builder above to record your property addresses, account identifiers (e.g., last 4 digits for privacy), estimated values, and liability loan numbers. Check if home loans carry term cover.",
+                    desc: "Use the free vault builder above to record your asset addresses, account identifiers (e.g., last 4 digits for privacy), estimated values, and liability loan numbers. Check if home loans carry term cover.",
                   },
                   {
                     step: "STEP 4",
                     title: "Print Physical Emergency Red File Dossier",
-                    desc: "Click 'Print Dossier' to generate an executive physical document. Place this dossier alongside certified copies of your marriage certificate, property purchase deeds, and locker keys in a safe, water-resistant folder.",
+                    desc: "Click 'Print Dossier' to generate an executive physical paper. Place this dossier alongside certified copies of your marriage paper, asset purchase deeds, and locker keys in a safe, water-resistant folder.",
                   },
                   {
                     step: "STEP 5",
                     title: "Execute a Challenge-Proof Will",
-                    desc: "Draft your legally binding Will with specific bequests for each asset. Schedule A of the Will will reference your comprehensive asset inventory, ensuring zero ambiguity in court.",
+                    desc: "Draft your legally binding Will with specific bequests for each asset. Schedule A of the Will will reference your full asset inventory, ensuring zero ambiguity in court.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -1503,7 +1503,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     <span>RELATED INTERACTIVE TOOL</span>
                   </div>
                   <div className="text-sm font-extrabold text-slate-900">
-                    Need to calculate capital gains on inherited family property?
+                    Need to calculate capital gains on inherited family asset?
                   </div>
                   <p className="text-xs text-slate-600">
                     Compare Budget 2024 grandfathering (12.5% flat vs 20% indexation) and Section 54/54EC
@@ -1514,7 +1514,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#172228] text-white hover:bg-slate-800 text-xs font-bold transition-all"
                 >
-                  <span>Open Capital Gains Calculator</span>
+                  <span>Open Capital Gains Tool</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1527,18 +1527,18 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>LEGAL REPRESENTATIVE TAXATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Section 159 Income Tax Act: Legal Representative Duties
+                7. Section 159 Income Tax Act: Legal Agent Duties
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A vital reason to maintain an exact net worth statement is <strong>Section 159 of the
-                  Income Tax Act, 1961</strong>. When a taxpayer passes away, their legal representative (executor,
-                  administrator, or legal heir) is deemed to be an assessee liable to pay any sum which the
+                  Income Tax Act, 1961</strong>. When a taxpayer passes away, their legal agent (executor,
+                  head, or legal heir) is deemed to be an assessee liable to pay any sum which the
                   deceased would have been liable to pay.
                 </p>
                 <p>
                   Crucially, <strong>Section 159(6)</strong> establishes that the liability of the legal
-                  representative is limited strictly to the value of the estate inherited. If an individual passes
+                  agent is limited strictly to the value of the estate inherited. If an single passes
                   away leaving ₹10 Lakhs in assets but ₹25 Lakhs in income tax dues or unsecured personal loans,
                   the heirs cannot be compelled to pay the remaining ₹15 Lakhs out of their personal pockets.
                 </p>
@@ -1556,7 +1556,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>MODERN WEALTH ACCESS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Digital Assets &amp; Locker Access: Critical Transmission Rules
+                8. Digital Assets &amp; Locker Access: Critical Transfer Rules
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1577,13 +1577,13 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     </li>
                     <li>
                       <strong>RBI Revised Locker Guidelines (2023):</strong> Under RBI Circulars, if a safe
-                      deposit locker is operated with &quot;Either or Survivor&quot; or contains a registered
+                      deposit locker is operated with &quot;Either or Survivor&quot; or contains a filed
                       nominee, the bank MUST grant access to the nominee/survivor without insisting on a probate
-                      or succession certificate, following inventory preparation in the presence of bank officers.
+                      or estate paper, following inventory preparation in the presence of bank officers.
                     </li>
                     <li>
                       <strong>Designate a Digital Executor:</strong> In your Will, appoint a tech-literate digital
-                      executor with explicit authority under the Information Technology Act, 2000 to manage cloud
+                      executor with explicit office under the Information Technology Act, 2000 to manage cloud
                       accounts, deactivate social media profiles, and liquidate digital tokens.
                     </li>
                   </ul>
@@ -1626,9 +1626,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     Locker Key Lost Without Nominee
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A retired businessman in Bandra maintained a bank locker holding 650 grams of ancestral gold.
-                    He passed away intestate without adding his daughter as nominee. The bank refused to break
-                    open the locker without a formal Succession Certificate from the Bombay High Court, which took
+                    A retired businessman in Bandra maintained a bank locker holding 650 grams of family gold.
+                    He passed away no-Will without adding his daughter as nominee. The bank refused to break
+                    open the locker without a formal Estate Paper from the Bombay High Court, which took
                     18 months and ₹1.5 Lakhs in court fees.
                   </p>
                 </div>
@@ -1645,7 +1645,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     A Delhi government official maintained an exact asset &amp; liability dossier. When he died
                     unexpectedly, his spouse discovered a ₹65 Lakh home loan schedule with an attached credit life
                     insurance policy number. The insurance company settled the remaining loan balance in full,
-                    leaving the residential house 100% unencumbered.
+                    leaving the home house 100% unencumbered.
                   </p>
                 </div>
               </div>
@@ -1661,7 +1661,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 10. Copy-Paste Legal Clauses &amp; Emergency Disclosure Templates
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use these verified advocate-drafted clauses in your legal Will or family emergency memorandum:
+                Use these checked lawyer-drafted clauses in your legal Will or family emergency memorandum:
               </p>
 
               {/* Template Box 1: Will Clause */}
@@ -1701,7 +1701,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2 text-xs font-bold text-slate-900">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Executor &amp; Spouse 15-Point Transmission Checklist</span>
+                    <span>Executor &amp; Spouse 15-Point Transfer Checklist</span>
                   </div>
                   <button
                     type="button"
@@ -1759,10 +1759,10 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     </div>
                     <div>
                       <div className="font-extrabold text-slate-900 text-base">
-                        Advocate Anuj Anand Malik
+                        Lawyer Anuj Anand Malik
                       </div>
                       <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                        Senior Succession &amp; Estate Planning Counsel
+                        Senior Estate &amp; Estate Planning Counsel
                       </div>
                     </div>
                   </div>
@@ -1774,16 +1774,16 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
 
                 <div className="space-y-3 text-slate-700 text-xs sm:text-sm leading-relaxed">
                   <p>
-                    Advocate Anuj Anand Malik leads the Succession, Wealth Transmission, and Testamentary
-                    Litigation practice at <strong>AMA Legal Solutions</strong>. Over 14+ years of specialized
+                    Lawyer Anuj Anand Malik leads the Estate, Wealth Transfer, and Will
+                    Court Fights practice at <strong>AMA Legal Solutions</strong>. Over 14+ years of specialized
                     practice before the High Court of Delhi and Supreme Court of India, he has represented
-                    high-net-worth families, NRIs, and business owners in high-stakes probate disputes, partition
-                    suits, and testamentary asset audits.
+                    high-net-worth families, NRIs, and business owners in high-stakes probate fights, split
+                    suits, and Will asset audits.
                   </p>
                   <p>
                     WillDrafting.in was architected under his direct legal supervision to ensure that Indian
-                    citizens have access to institutional-grade testamentary protection without the risks of
-                    unregulated forms, invalid witness attestation, or omitted asset schedules.
+                    citizens have access to institutional-grade Will protection without the risks of
+                    unregulated forms, invalid witness witness signing, or omitted asset schedules.
                   </p>
                 </div>
               </div>
@@ -1836,7 +1836,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>LEGAL CITATIONS &amp; REGULATORY PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Central Regulatory Portals
+                13. Legal Citations &amp; Central Regulatory Portals
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 text-xs text-slate-600 leading-relaxed">
                 <div className="font-bold text-slate-900 text-sm">Governing Statutes &amp; Official Portals:</div>
@@ -1846,8 +1846,8 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                     Accounts), 318, and 332 (Assent of Executor).
                   </li>
                   <li>
-                    <strong>Income Tax Act, 1961:</strong> Section 159 (Legal Representative liability limited
-                    to estate value) and Section 47(iii) (Exclusion of inheritance from capital gains).
+                    <strong>Income Tax Act, 1961:</strong> Section 159 (Legal Agent liability limited
+                    to estate value) and Section 47(iii) (Exclusion of estate from capital gains).
                   </li>
                   <li>
                     <strong>Reserve Bank of India (RBI) UDGAM Portal:</strong> Official Centralized Web Portal
@@ -1855,7 +1855,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   </li>
                   <li>
                     <strong>Ministry of Corporate Affairs (MCA) IEPF:</strong> Investor Education and Protection
-                    Fund Authority rules for unclaimed shares &amp; dividends (iepf.gov.in).
+                    Fund Office rules for unclaimed shares &amp; dividends (iepf.gov.in).
                   </li>
                   <li>
                     <strong>Supreme Court Precedents:</strong> <em>Smt. Sarbati Devi v. Smt. Usha Devi</em> (1984)
@@ -1865,7 +1865,29 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 </ul>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1878,21 +1900,21 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Section 317 asset inventory audits,
+                Expert in Indian testamentary jurisprudence, Section 317 asset inventory audits,
                 High Court probate petitions, and multi-asset estate planning.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1904,11 +1926,11 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>PREVENT FAMILY WEALTH LOSS</span>
               </div>
               <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                Draft a Challenge-Proof Will in 15 Minutes
+                Draft a Fight-Proof Will in 15 Minutes
               </h3>
               <p className="text-xs text-white/80 leading-relaxed">
-                Ensure your family asset inventory is legally executed under the Indian Succession Act.
-                Includes specific bequests, executor appointment, and witness attestation blueprints.
+                Ensure your family asset inventory is legally signed under the Indian Succession Act.
+                Includes specific bequests, executor appointment, and witness witness signing blueprints.
               </p>
               <button
                 onClick={handleStartDraft}
@@ -1926,18 +1948,18 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <span>AMA LEGAL SOLUTIONS</span>
               </div>
               <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
-                Consult a Senior Estate Planning Advocate
+                Consult a Senior Estate Planning Lawyer
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Have complex multi-city ancestral land, business holdings, or NRI succession questions?
-                Book a confidential advisory session with our senior advocates.
+                Have complex multi-city family land, business holdings, or NRI estate questions?
+                Book a confidential advisory session with our senior lawyers.
               </p>
               <Link
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs sm:text-sm shadow-xs transition-colors"
               >
                 <PhoneCall className="w-3.5 h-3.5" />
-                <span>Schedule Advocate Consultation</span>
+                <span>Schedule Lawyer Talk</span>
               </Link>
             </div>
 
@@ -1952,7 +1974,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100"
                 >
-                  <div className="font-bold text-slate-900">Capital Gains Tax Calculator</div>
+                  <div className="font-bold text-slate-900">Capital Gains Tax Tool</div>
                   <div className="text-[11px] text-slate-500">12.5% Flat vs 20% Indexation</div>
                 </Link>
                 <Link
@@ -1966,7 +1988,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   href="/tools/demat-mutual-fund-transmission-document-finder"
                   className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100"
                 >
-                  <div className="font-bold text-slate-900">Demat &amp; MF Transmission Finder</div>
+                  <div className="font-bold text-slate-900">Demat &amp; MF Transfer Finder</div>
                   <div className="text-[11px] text-slate-500">SEBI T2/T3 &amp; CML Checklist</div>
                 </Link>
                 <Link
@@ -2074,7 +2096,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   />
                 </div>
                 <div>
-                  <label className="font-bold text-slate-700 block mb-1">Nominee Registered?</label>
+                  <label className="font-bold text-slate-700 block mb-1">Nominee Filed?</label>
                   <div className="flex items-center gap-2 pt-1">
                     <button
                       type="button"
@@ -2085,7 +2107,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                           : "bg-slate-100 text-slate-700"
                       }`}
                     >
-                      Yes, Registered
+                      Yes, Filed
                     </button>
                     <button
                       type="button"
@@ -2232,7 +2254,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
               </div>
 
               <div>
-                <label className="font-bold text-slate-700 block mb-1">Settlement / Payoff Instructions</label>
+                <label className="font-bold text-slate-700 block mb-1">Deal / Payoff Instructions</label>
                 <textarea
                   rows={2}
                   placeholder="e.g., To be cleared from term insurance proceeds or mutual fund liquidation."
@@ -2291,7 +2313,7 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
             <strong>Family Doctor:</strong> {familyDoctor}
           </div>
           <div>
-            <strong>Advocate / CA:</strong> {caOrAdvocate}
+            <strong>Lawyer / CA:</strong> {caOrAdvocate}
           </div>
           <div>
             <strong>Will &amp; Key Location:</strong> {willLocation}
@@ -2364,8 +2386,8 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
         {/* Footer Declaration */}
         <div className="pt-4 border-t border-black text-[10px] space-y-3">
           <p>
-            <strong>Statutory Declaration:</strong> This confidential inventory is recorded to assist my lawful
-            Executor(s) and legal heirs in the orderly administration and transmission of my estate pursuant to
+            <strong>Legal Declaration:</strong> This confidential inventory is recorded to assist my lawful
+            Executor(s) and legal heirs in the orderly care and transfer of my estate pursuant to
             Sections 211 and 317 of the Indian Succession Act, 1925. The beneficial title to all assets listed
             above shall devolve strictly as directed under my Last Will and Testament.
           </p>

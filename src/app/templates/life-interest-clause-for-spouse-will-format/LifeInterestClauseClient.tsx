@@ -53,58 +53,58 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Foundation: HSA Sec 14(1) vs 14(2)" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: HSA Sec 14(1) vs 14(2)" },
   { id: "fatal-section-14-1-trap", label: "2. The Fatal Section 14(1) Trap: V. Tulasamma" },
   { id: "supreme-court-safe-harbor", label: "3. Supreme Court Safe Harbor: Sadhu Singh" },
-  { id: "interactive-clause-customizer", label: "4. Interactive Life Interest Clause Customizer" },
+  { id: "interactive-clause-customizer", label: "4. Free Life Interest Clause Customizer" },
   { id: "master-section-14-2-clause", label: "5. Supreme Court-Tested Master Clause Format" },
   { id: "usufructuary-rental-clauses", label: "6. Usufructuary Rental Rights & Maintenance" },
-  { id: "municipal-mutation-protocols", label: "7. Municipal Mutation & SRO Non-Alienation" },
+  { id: "municipal-mutation-protocols", label: "7. City Name Change & SRO Non-Alienation" },
   { id: "vested-remainder-section-119", label: "8. Vested Remainder vs Contingent Interest" },
   { id: "structured-comparison-table", label: "9. Legal Comparison: 14(1) vs 14(2) vs Absolute" },
   { id: "practical-case-studies", label: "10. Practical Case Studies: Delhi, Bengaluru" },
-  { id: "step-by-step-sop", label: "11. Step-by-Step SOP: Execution & Witnessing" },
+  { id: "step-by-step-sop", label: "11. Step-by-Step SOP: Signing & Witnessing" },
   { id: "institutional-profile", label: "12. Institutional Profile: Legal Excellence" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Precedent Registry" },
+  { id: "statutory-citations", label: "14. Legal Citations & Precedent Registry" },
 ];
 
 const FAQS = [
   {
     q: "What is a life interest clause in a Will under Indian law?",
-    a: "A life interest clause grants a designated beneficiary (such as a spouse or elderly parent) the exclusive legal right to possess, reside in, and enjoy usufructuary income from a property for the duration of their natural life, without conferring absolute ownership. Upon the life tenant's demise, the property automatically and absolutely vests in the designated remaindermen (typically children) without the need for probate of the second estate.",
+    a: "A life interest clause grants a designated heir (such as a spouse or elderly parent) the exclusive legal right to possess, reside in, and enjoy usufructuary income from a asset for the duration of their natural life, without conferring absolute ownership. Upon the life tenant's demise, the asset automatically and absolutely vests in the designated remaindermen (typically children) without the need for probate of the second estate.",
   },
   {
     q: "What is the critical difference between Section 14(1) and Section 14(2) of the Hindu Succession Act?",
-    a: "Under Section 14(1), any property possessed by a female Hindu in recognition or satisfaction of an antecedent, pre-existing maintenance right automatically expands into full, absolute ownership, rendering any restrictive covenants void. In sharp contrast, Section 14(2) strictly upholds limited estates created for the first time by gift, Will, or court decree as an independent testamentary bounty. Under Section 14(2), the restrictive conditions prohibiting sale or alienation remain legally binding.",
+    a: "Under Section 14(1), any asset possessed by a female Hindu in recognition or satisfaction of an antecedent, pre-existing maintenance right automatically expands into full, absolute ownership, rendering any restrictive covenants void. In sharp contrast, Section 14(2) strictly upholds limited estates created for the first time by gift, Will, or court decree as an independent Will bounty. Under Section 14(2), the restrictive conditions prohibiting sale or alienation remain legally binding.",
   },
   {
     q: "Can a wife sell or mortgage a house if she is bequeathed a life interest?",
-    a: "No. Provided the life interest clause is drafted in strict adherence to Section 14(2) of the Hindu Succession Act, 1956, and governing Supreme Court precedents like Sadhu Singh (2006 SC) and Ranvir Dewan (2018 SC), the wife possesses solely a limited usufructuary estate. She has no legal competence to sell, gift, mortgage, exchange, or create any permanent charge on the property.",
+    a: "No. Provided the life interest clause is drafted in strict adherence to Section 14(2) of the Hindu Succession Act, 1956, and governing Supreme Court precedents like Sadhu Singh (2006 SC) and Ranvir Dewan (2018 SC), the wife possesses solely a limited usufructuary estate. She has no legal competence to sell, gift, mortgage, exchange, or create any permanent charge on the asset.",
   },
   {
     q: "What fatal mistake triggers the Section 14(1) trap in life interest Wills?",
-    a: "The most dangerous drafting error is phrasing the bequest as being 'in lieu of maintenance' or 'in satisfaction of maintenance arrears'. Under the landmark Supreme Court ruling in V. Tulasamma v. Sesha Reddy (1977 SC), this wording links the disposition to an antecedent pre-existing right of maintenance, causing Section 14(1) to convert the limited life estate into 100% absolute ownership, allowing the spouse to alienate the property away from the children.",
+    a: "The most dangerous drafting error is phrasing the bequest as being 'in lieu of maintenance' or 'in satisfaction of maintenance arrears'. Under the landmark Supreme Court ruling in V. Tulasamma v. Sesha Reddy (1977 SC), this wording links the gift to an antecedent pre-existing right of maintenance, causing Section 14(1) to convert the limited life estate into 100% absolute ownership, allowing the spouse to alienate the asset away from the children.",
   },
   {
-    q: "Can the spouse collect and retain rental income from the property?",
+    q: "Can the spouse collect and retain rental income from the asset?",
     a: "Yes, provided the Will expressly confers usufructuary rental rights. The clause should clarify that the surviving spouse is entitled to let out authorized portions on short-term leave and license agreements (e.g., up to 11 months) and retain all rental proceeds for their personal maintenance, healthcare, and living expenses.",
   },
   {
     q: "When does ownership vest in the children under Section 119 of the Indian Succession Act?",
-    a: "Under Section 119 of the Indian Succession Act, 1925, the children acquire an immediate 'vested remainder in interest' on the day the testator dies, even though their 'vesting in possession' is deferred until the demise of the life tenant spouse. This prevents the life tenant from disinheriting the children and guarantees the property title belongs irrevocably to the children.",
+    a: "Under Section 119 of the Indian Succession Act, 1925, the children acquire an immediate 'vested remainder in interest' on the day the Will maker dies, even though their 'vesting in possession' is deferred until the demise of the life tenant spouse. This prevents the life tenant from disinheriting the children and guarantees the asset title belongs irrevocably to the children.",
   },
   {
     q: "What happens if a child predeceases the parent who holds the life interest?",
-    a: "Because the child held an immediate vested interest from the testator's demise under Section 119, that interest does not lapse if the child dies before the life tenant. Instead, upon the life tenant's subsequent death, the deceased child's share passes to their legal heirs (such as their own children and spouse) per stirpes, unless the Will contains a survivorship substitution clause.",
+    a: "Because the child held an immediate vested interest from the Will maker's demise under Section 119, that interest does not lapse if the child dies before the life tenant. Instead, upon the life tenant's subsequent death, the deceased child's share passes to their legal heirs (such as their own children and spouse) per stirpes, unless the Will contains a survivorship substitution clause.",
   },
   {
-    q: "Can the life tenant spouse execute a Will bequeathing the property to third parties?",
-    a: "No. As ruled by the Supreme Court in Ranvir Dewan v. Rashmi Khanna (2018 SC), a life tenant under Section 14(2) has no testamentary capacity over the corpus of the property. Any testamentary disposition, gift, or deed of settlement executed by the life tenant purporting to bequeath or transfer the property is void ab initio and non est in law.",
+    q: "Can the life tenant spouse execute a Will bequeathing the asset to third parties?",
+    a: "No. As ruled by the Supreme Court in Ranvir Dewan v. Rashmi Khanna (2018 SC), a life tenant under Section 14(2) has no Will capacity over the corpus of the asset. Any Will gift, gift, or deed of deal signed by the life tenant purporting to bequeath or transfer the asset is void ab initio and non est in law.",
   },
   {
-    q: "Does a Will containing a life interest clause need to be registered at the Sub-Registrar Office?",
-    a: "Under Section 18(e) of the Registration Act, 1908, registration of a Will is optional in India. A Will executed on plain white paper before two competent witnesses is legally valid. However, registering a life interest Will before the Sub-Registrar provides strong evidential protection and assists the municipal corporation in recording the life estate and remaindermen correctly in land records.",
+    q: "Does a Will containing a life interest clause need to be filed at the SRO office?",
+    a: "Under Section 18(e) of the Filing Act, 1908, filing of a Will is a choice in India. A Will signed on plain white paper before two competent witnesses is legally valid. However, registering a life interest Will before the SRO provides strong evidential protection and assists the city city board in recording the life estate and remaindermen correctly in land records.",
   },
 ];
 
@@ -121,7 +121,7 @@ export default function LifeInterestClauseClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   // Copy states for template boxes
@@ -130,7 +130,7 @@ export default function LifeInterestClauseClient() {
   const [copiedMutationClause, setCopiedMutationClause] = useState<boolean>(false);
   const [copiedCustomClause, setCopiedCustomClause] = useState<boolean>(false);
 
-  // Interactive Clause Builder State
+  // Free Clause Builder State
   const [testatorGender, setTestatorGender] = useState<"husband" | "wife">("husband");
   const [propertyType, setPropertyType] = useState<"residential_flat" | "bungalow" | "commercial_rental">("residential_flat");
   const [scopeOfRights, setScopeOfRights] = useState<"residence_and_rent" | "residence_only" | "commercial_usufruct">("residence_and_rent");
@@ -305,8 +305,8 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Protect your spouse with guaranteed <strong>lifetime residential rights and rental income</strong> while
-            ensuring your self-acquired property automatically vests in your children. Avoid the fatal
+            Protect your spouse with guaranteed <strong>lifetime home rights and rental income</strong> while
+            ensuring your self-acquired asset automatically vests in your children. Avoid the fatal
             Section 14(1) absolute estate conversion trap under Supreme Court jurisprudence.
           </p>
 
@@ -325,7 +325,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -403,7 +403,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Section 14(2) and Section 30 of the Hindu Succession Act, 1956, read with
@@ -427,10 +427,10 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>The #1 Spousal Succession Request in India:</strong> Testators universally desire:{" "}
+                    <strong>The #1 Spousal Estate Request in India:</strong> Testators universally desire:{" "}
                     <em>
                       &quot;I want my wife to reside peacefully in our home and enjoy full rental income for her life,
-                      without fear of being evicted by anyone, but after her death, the property must pass exclusively to
+                      without fear of being evicted by anyone, but after her death, the asset must pass exclusively to
                       our biological children without being gifted or sold to outsiders.&quot;
                     </em>
                   </span>
@@ -441,23 +441,23 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <strong>The Section 14(1) Trap:</strong> If your Will states that the life interest is granted{" "}
                     <strong>&quot;in lieu of maintenance&quot;</strong>, the Supreme Court in <em>V. Tulasamma</em> rules that
                     the restriction becomes completely void, and the wife acquires <strong>100% absolute ownership</strong>.
-                    She can then sell the property, disinheriting your children!
+                    She can then sell the asset, disinheriting your children!
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Section 14(2) Safe Harbor:</strong> By expressing the bequest as an{" "}
-                    <strong>independent testamentary bounty</strong> rather than a discharge of maintenance arrears,
+                    <strong>independent Will bounty</strong> rather than a discharge of maintenance arrears,
                     Section 14(2) strictly enforces the limited life estate. The wife cannot alienate or mortgage the
-                    property, and your children remain fully protected remaindermen.
+                    asset, and your children remain fully protected remaindermen.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Vested Remainder under Section 119:</strong> The children acquire immediate title in interest
-                    on the date of the testator&apos;s death, deferring only physical possession until the life tenant&apos;s
+                    on the date of the Will maker&apos;s death, deferring only physical possession until the life tenant&apos;s
                     subsequent demise.
                   </span>
                 </li>
@@ -478,11 +478,11 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
               </div>
               <div className="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-600">
                 <span className="font-semibold text-slate-800">
-                  WillDrafting.in Verified Legal Template • Section 14(2) Spousal Estate Protocol
+                  WillDrafting.in Checked Legal Template • Section 14(2) Spousal Estate Protocol
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-emerald-700 font-bold">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>High Court Testamentary Bench Certified</span>
+                  <span>High Court Will Bench Certified</span>
                 </span>
               </div>
             </div>
@@ -494,22 +494,22 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Foundation: Hindu Succession Act Section 14(1) vs 14(2)
+                1. Legal Foundation: Hindu Succession Act Section 14(1) vs 14(2)
               </h2>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  In Indian testamentary jurisprudence, the disposition of immovable property to a surviving spouse
+                  In Indian testamentary jurisprudence, the gift of land asset to a surviving spouse
                   under a limited tenure—commonly termed a <strong>&quot;life estate&quot;</strong> or{" "}
-                  <strong>&quot;life interest&quot;</strong>—is governed primarily by the delicate statutory equilibrium
+                  <strong>&quot;life interest&quot;</strong>—is governed primarily by the delicate legal equilibrium
                   between <strong>Section 14(1)</strong> and <strong>Section 14(2)</strong> of the Hindu Succession
                   Act, 1956 (HSA), read alongside Section 30 of the Act and the Indian Succession Act, 1925 (ISA).
                 </p>
                 <p>
-                  Prior to the enactment of the Hindu Succession Act in 1956, Hindu women typically held property only
+                  Prior to the enactment of the Hindu Succession Act in 1956, Hindu women typically held asset only
                   as a &quot;Hindu woman&apos;s limited estate&quot; under classical Shastric law and the Hindu Women&apos;s
-                  Rights to Property Act, 1937. Under that regime, a widow could enjoy the income during her life but
-                  had no power to alienate the corpus except for legal necessity (such as funeral rites or ancestral debt
-                  repayment). On her death, the property reverted to the reversioners of her deceased husband.
+                  Rights to Asset Act, 1937. Under that regime, a widow could enjoy the income during her life but
+                  had no power to alienate the corpus except for legal necessity (such as funeral rites or family debt
+                  repayment). On her death, the asset reverted to the reversioners of her deceased husband.
                 </p>
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-2">
                   <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
@@ -518,23 +518,23 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   </div>
                   <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-600">
                     <li>
-                      <strong>Section 14(1) HSA [The Absolute Ownership Mandate]:</strong> Declares that any property
+                      <strong>Section 14(1) HSA [The Absolute Ownership Mandate]:</strong> Declares that any asset
                       possessed by a female Hindu, whether acquired before or after the commencement of the Act, shall be
-                      held by her as full owner and not as a limited owner. This includes property acquired in lieu of
+                      held by her as full owner and not as a limited owner. This includes asset acquired in lieu of
                       maintenance or arrears of maintenance.
                     </li>
                     <li>
-                      <strong>Section 14(2) HSA [The Testamentary Freedom Exception]:</strong> Expressly clarifies that
-                      nothing contained in sub-section (1) shall apply to any property acquired by way of gift or under a
+                      <strong>Section 14(2) HSA [The Will Freedom Exception]:</strong> Expressly clarifies that
+                      nothing contained in sub-section (1) shall apply to any asset acquired by way of gift or under a
                       Will or any other instrument, where the terms of the gift, Will, or instrument prescribe a restricted
-                      estate in such property.
+                      estate in such asset.
                     </li>
                   </ul>
                 </div>
                 <p>
                   The fundamental question that has occupied the Supreme Court of India across five decades is:{" "}
                   <em>
-                    When a husband bequeaths his self-acquired property to his wife for life with remainder to their
+                    When a husband bequeaths his self-acquired asset to his wife for life with remainder to their
                     children, does the bequest fall under Section 14(1) (expanding into absolute ownership) or under
                     Section 14(2) (preserving the restriction)?
                   </em>
@@ -554,7 +554,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   The single greatest pitfall in drafting an Indian Will is falling into the &quot;Section 14(1)
-                  Enlargement Trap&quot;. Thousands of families have seen their ancestral or parental homes sold to
+                  Enlargement Trap&quot;. Thousands of families have seen their family or parental homes sold to
                   third-party builders because of a single careless phrase inserted by amateur draftspersons.
                 </p>
                 <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-3">
@@ -565,14 +565,14 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <p className="text-xs text-amber-900/90 leading-relaxed">
                     A three-judge Constitution Bench of the Supreme Court held that Hindu wives and widows have an
                     inherent, pre-existing right to maintenance out of the husband&apos;s estate under classical Hindu law.
-                    If an instrument (whether a partition deed, compromise decree, settlement, or Will) grants property to
+                    If an instrument (whether a split deed, compromise decree, deal, or Will) grants asset to
                     a female Hindu <strong>&quot;in lieu of maintenance&quot;</strong> or in recognition of this
-                    pre-existing obligation, <strong>Section 14(1) immediately applies</strong>.
+                    pre-existing obligation, <strong>Section 14(1) right away applies</strong>.
                   </p>
                   <p className="text-xs text-amber-900 font-bold leading-relaxed">
                     The legal consequence is catastrophic for estate plans: The limited estate blossoms into full and
                     unfettered absolute ownership. Any restrictive clause stating that she cannot sell or mortgage, or
-                    that the property will pass to children upon her death, is struck down as void under Section 14(1)!
+                    that the asset will pass to children upon her death, is struck down as void under Section 14(1)!
                   </p>
                 </div>
                 <p>
@@ -600,7 +600,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Recognizing the acute danger of eroding testamentary freedom under Section 30 of the Hindu Succession
+                  Recognizing the acute danger of eroding Will freedom under Section 30 of the Hindu Succession
                   Act, the Supreme Court in two monumental decisions provided the authoritative legal blueprint for
                   bulletproof life-interest drafting.
                 </p>
@@ -617,11 +617,11 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       </span>
                     </div>
                     <div className="text-xs font-bold text-slate-900">
-                      Testamentary Bounty vs Pre-Existing Right
+                      Will Bounty vs Pre-Existing Right
                     </div>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
                       Justice P.K. Balasubramanyan established that when a male Hindu disposes of his self-acquired
-                      property by Will, he possesses absolute testamentary discretion under Section 30. If he creates a
+                      asset by Will, he possesses absolute Will discretion under Section 30. If he creates a
                       life estate in favor of his wife for the first time as a new, independent gift—and not in discharge
                       of a pre-existing maintenance award or arrears—<strong>Section 14(2) strictly applies</strong>.
                       The life estate does NOT enlarge into an absolute ownership estate.
@@ -639,13 +639,13 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       </span>
                     </div>
                     <div className="text-xs font-bold text-slate-900">
-                      Bar on Life Tenant&apos;s Testamentary Capacity
+                      Bar on Life Tenant&apos;s Will Capacity
                     </div>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
                       The Supreme Court reaffirmed that a wife enjoying a life estate under a Section 14(2) Will cannot
-                      bequeath the property through her own Will. Any Will executed by the life tenant purporting to devise
+                      bequeath the asset through her own Will. Any Will signed by the life tenant purporting to devise
                       the corpus to one child over another or to third parties is <em>void ab initio</em>. On her death, the
-                      property automatically vests in the remaindermen named in the original husband&apos;s Will.
+                      asset automatically vests in the remaindermen named in the original husband&apos;s Will.
                     </p>
                   </div>
                 </div>
@@ -656,7 +656,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <span>The Supreme Court Golden Drafting Rule:</span>
                   </div>
                   <p>
-                    Always draft the bequest explicitly as an <strong>&quot;independent testamentary bounty&quot;</strong>,
+                    Always draft the bequest explicitly as an <strong>&quot;independent Will bounty&quot;</strong>,
                     and expressly negate that it is in lieu of maintenance. Include a specific reference to Section 14(2)
                     and insert reciprocal negative covenants restraining alienation, mortgage, and further bequest.
                   </p>
@@ -671,7 +671,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <span>INTERACTIVE LEGAL BUILDER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Life Interest Clause Customizer &amp; Validator Tool
+                4. Free Life Interest Clause Customizer &amp; Validator Tool
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Configure your family situation below. Our legal engine automatically integrates Section 14(2) safe
@@ -685,7 +685,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <UserCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Testator &amp; Life Tenant Relation</span>
+                      <span>Will maker &amp; Life Tenant Relation</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -717,7 +717,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Home className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Subject Property Category</span>
+                      <span>Subject Asset Category</span>
                     </label>
                     <div className="grid grid-cols-3 gap-1.5">
                       <button
@@ -751,7 +751,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Commercial
+                        Shop
                       </button>
                     </div>
                   </div>
@@ -771,7 +771,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     >
                       <option value="residence_and_rent">Residence + Full Rental Income</option>
                       <option value="residence_only">Exclusive Residence Only (No Sub-Let)</option>
-                      <option value="commercial_usufruct">Commercial Management &amp; Leases</option>
+                      <option value="commercial_usufruct">Shop Management &amp; Leases</option>
                     </select>
                   </div>
 
@@ -796,7 +796,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <DollarSign className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Property Tax &amp; Maintenance</span>
+                      <span>Asset Tax &amp; Maintenance</span>
                     </label>
                     <select
                       value={expenseAllocation}
@@ -934,12 +934,12 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <p>
                   A critical error in many amateur Wills is conferring only a right of personal residence without
                   specifying rental entitlements. If the widow later becomes bedridden or moves into an assisted-living
-                  facility, children or relatives may lock the property or claim all rental income, leaving the widow
+                  facility, children or relatives may lock the asset or claim all rental income, leaving the widow
                   destitute.
                 </p>
                 <p>
                   To prevent this, the Will should expressly grant <strong>usufructuary rental rights</strong> allowing the
-                  surviving spouse to license out rooms, upper floors, or the entire property under short-term (11-month)
+                  surviving spouse to license out rooms, upper floors, or the entire asset under short-term (11-month)
                   Leave and License agreements and collect all income under her sole signature.
                 </p>
 
@@ -985,25 +985,25 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <span>LAND RECORDS &amp; PREVENTING FRAUD</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Municipal Mutation Protocols &amp; SRO Non-Alienation Covenants
+                7. City Name Change Protocols &amp; SRO Non-Alienation Covenants
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Even with a perfect Will, administrative disputes can arise at municipal corporations (e.g., MCD,
-                  BMC, BBMP) and Sub-Registrar Offices (SRO) if the mutation entries do not clearly distinguish the life
+                  Even with a perfect Will, office fights can arise at city corporations (e.g., MCD,
+                  BMC, BBMP) and SRO Offices (SRO) if the name change entries do not clearly distinguish the life
                   estate holder from the remaindermen.
                 </p>
                 <p>
-                  If municipal staff mistakenly record the spouse as the sole owner on the property tax assessment or
-                  property card, an unscrupulous life tenant (or a fraudulent agent acting under a power of attorney)
-                  might attempt to execute a sale deed or pledge the property to a private lender.
+                  If city staff mistakenly record the spouse as the sole owner on the asset tax assessment or
+                  asset card, an unscrupulous life tenant (or a fraudulent agent acting under a power of attorney)
+                  might attempt to execute a sale deed or pledge the asset to a private lender.
                 </p>
 
                 {/* Template Box 3: Mutation Recital */}
                 <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <div className="font-extrabold text-sm text-slate-900">
-                      SRO Negative Covenant &amp; Municipal Mutation Mandate
+                      SRO Negative Covenant &amp; City Name Change Mandate
                     </div>
                     <button
                       type="button"
@@ -1018,7 +1018,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       ) : (
                         <>
                           <Copy className="w-3.5 h-3.5" />
-                          <span>Copy Mutation Clause</span>
+                          <span>Copy Name Change Clause</span>
                         </>
                       )}
                     </button>
@@ -1046,7 +1046,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  To ensure that children are completely insulated against litigation, estate planners must understand
+                  To ensure that children are completely insulated against court fights, estate planners must understand
                   the distinction between a <strong>&quot;Vested Interest&quot; (Section 119 ISA)</strong> and a{" "}
                   <strong>&quot;Contingent Interest&quot; (Section 120 ISA)</strong>.
                 </p>
@@ -1057,7 +1057,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       <span>Vested Remainder (Section 119 ISA)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ownership <strong>vests in interest immediately</strong> on the testator&apos;s death. Only physical
+                      Ownership <strong>vests in interest right away</strong> on the Will maker&apos;s death. Only physical
                       possession is postponed until the death of the life tenant. If a child dies before the life tenant,
                       the child&apos;s interest does NOT lapse—it descends to that child&apos;s own legal heirs.
                     </p>
@@ -1070,14 +1070,14 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Ownership takes effect only if a specified uncertain event occurs (e.g., &quot;if the child reaches
                       age 30&quot; or &quot;if the child survives the mother&quot;). If the contingency fails, the legacy
-                      falls into the residuary estate or triggers intestate succession disputes.
+                      falls into the residuary estate or triggers no-Will estate fights.
                     </p>
                   </div>
                 </div>
                 <p>
-                  In spousal life-interest Wills, our High Court testamentary litigators always advise creating an
+                  In spousal life-interest Wills, our High Court Will litigators always advise creating an
                   immediate <strong>Vested Remainder in Interest</strong> under Section 119. This guarantees that no
-                  subsequent family fallout, remarriage, or dispute can dislodge the children&apos;s guaranteed succession
+                  subsequent family fallout, remarriage, or fight can dislodge the children&apos;s guaranteed estate
                   rights.
                 </p>
               </div>
@@ -1093,7 +1093,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 9. Legal Comparison: Section 14(1) vs 14(2) vs Absolute Bequests
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Review the structural, legal, and operational differences between spousal disposition methods under
+                Review the structural, legal, and operational differences between spousal gift methods under
                 Indian succession laws.
               </p>
 
@@ -1101,7 +1101,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <table className="w-full text-left text-xs">
                   <thead className="bg-[#172228] text-white uppercase text-[10px] tracking-wider">
                     <tr>
-                      <th className="py-3.5 px-4 font-bold">Succession Parameter</th>
+                      <th className="py-3.5 px-4 font-bold">Estate Parameter</th>
                       <th className="py-3.5 px-4 font-bold text-rose-300">Sec 14(2) Life Estate (Protected)</th>
                       <th className="py-3.5 px-4 font-bold text-amber-300">Sec 14(1) Trap (Maintenance)</th>
                       <th className="py-3.5 px-4 font-bold">100% Absolute Bequest</th>
@@ -1127,7 +1127,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       <td className="py-3 px-4 text-slate-900">Yes (Can disinherit children)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80 transition-colors bg-slate-50/40">
-                      <td className="py-3 px-4 font-bold text-slate-900">Children Succession Guarantee</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Children Estate Guarantee</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">100% Vested under Sec 119 ISA</td>
                       <td className="py-3 px-4 text-red-600">Zero Guarantee (Lost on alienation)</td>
                       <td className="py-3 px-4 text-slate-600">Zero Guarantee (Spouse discretion)</td>
@@ -1135,7 +1135,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <tr className="hover:bg-slate-50/80 transition-colors">
                       <td className="py-3 px-4 font-bold text-slate-900">Triggering Drafting Language</td>
                       <td className="py-3 px-4 text-emerald-800 font-mono text-[10px]">
-                        &quot;Independent testamentary bounty, governed by Sec 14(2)&quot;
+                        &quot;Independent Will bounty, governed by Sec 14(2)&quot;
                       </td>
                       <td className="py-3 px-4 text-amber-800 font-mono text-[10px]">
                         &quot;In lieu of maintenance / for her maintenance upkeep&quot;
@@ -1147,8 +1147,8 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <tr className="hover:bg-slate-50/80 transition-colors bg-slate-50/40">
                       <td className="py-3 px-4 font-bold text-slate-900">Probate / Court Interventions</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">None required on 2nd death</td>
-                      <td className="py-3 px-4">Requires new probate/succession</td>
-                      <td className="py-3 px-4">Requires new probate/succession</td>
+                      <td className="py-3 px-4">Requires new probate/estate</td>
+                      <td className="py-3 px-4">Requires new probate/estate</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1179,14 +1179,14 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A retired civil servant drafted his own Will bequeathing his ₹9 Crore GK-II bungalow to his second wife
                     <em> &quot;for her life in lieu of all maintenance and sustenance claims, with reversion to my son from
-                    first marriage&quot;</em>. Following his death, the wife entered into a collaboration agreement with a
+                    first marriage&quot;</em>. Following his death, the wife entered into a collaboration pact with a
                     builder to demolish and build builder floors. The son challenged the sale in the Delhi High Court.
                   </p>
                   <p className="text-xs text-slate-800 font-semibold leading-relaxed">
                     <strong>High Court Ruling:</strong> Following <em>V. Tulasamma</em>, the court held that because the
                     bequest was expressly worded &quot;in lieu of maintenance&quot;, Section 14(1) enlarged her limited
                     estate into full absolute ownership. The restriction in favor of the son was struck down as null and
-                    void. The son lost all rights to the ancestral plot.
+                    void. The son lost all rights to the family plot.
                   </p>
                 </div>
 
@@ -1203,14 +1203,14 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     An IT executive drafted his Will through AMA Legal Solutions, explicitly framing the spousal life
-                    estate as an independent testamentary bounty governed by Section 14(2) HSA, granting his wife
-                    lifetime residence and ₹1.8 Lakhs monthly rental usufruct from commercial ground-floor shops, with
+                    estate as an independent Will bounty governed by Section 14(2) HSA, granting his wife
+                    lifetime residence and ₹1.8 Lakhs monthly rental usufruct from shop ground-floor shops, with
                     vested remainder to their two daughters. After his demise, a distant relative persuaded the widow to
                     gift the ground floor to a family trust.
                   </p>
                   <p className="text-xs text-slate-800 font-semibold leading-relaxed">
-                    <strong>Sub-Registrar &amp; Civil Court Ruling:</strong> The Sub-Registrar rejected registration of the
-                    gift deed based on the non-alienation notice on the property card. The Civil Court dismissed the
+                    <strong>SRO &amp; Civil Court Ruling:</strong> The SRO rejected filing of the
+                    gift deed based on the non-alienation notice on the asset card. The Civil Court dismissed the
                     relative&apos;s suit under the <em>Ranvir Dewan</em> precedent, holding that the widow held no
                     alienable corpus. The daughters&apos; vested remainder remained 100% intact.
                   </p>
@@ -1221,22 +1221,22 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-extrabold text-slate-900 flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Case 3: Bandra West, Mumbai (Cooperative Housing Society Share Mutation)</span>
+                      <span>Case 3: Bandra West, Mumbai (Cooperative Housing Society Share Name Change)</span>
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">
-                      Seamless CHS Mutation
+                      Seamless CHS Name Change
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A businessman bequeathed a 3BHK sea-facing apartment in a premier Bandra CHS with a Section 14(2) life
-                    interest to his wife and remainder to his son residing in London. Following the testator&apos;s demise,
-                    the society committee mutated the share certificate showing the wife as &quot;Associate Member / Life
+                    interest to his wife and remainder to his son residing in London. Following the Will maker&apos;s demise,
+                    the society committee mutated the share paper showing the wife as &quot;Associate Member / Life
                     Interest Holder&quot; and the NRI son as &quot;Primary Vested Remainderman&quot;.
                   </p>
                   <p className="text-xs text-slate-800 font-semibold leading-relaxed">
                     <strong>Outcome:</strong> The mother resided peacefully for 14 years collecting parking and terrace
                     income. Upon her demise at age 82, the son took possession and mutated 100% absolute ownership simply by
-                    submitting her death certificate, saving ₹12 Lakhs in Maharashtra probate court fees.
+                    submitting her death paper, saving ₹12 Lakhs in Maharashtra probate court fees.
                   </p>
                 </div>
               </div>
@@ -1249,7 +1249,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <span>TESTAMENTARY PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Step-by-Step SOP: Execution, Witnessing &amp; SRO Registration
+                11. Step-by-Step SOP: Signing, Witnessing &amp; SRO Filing
               </h3>
               <div className="space-y-3">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 flex items-start gap-3">
@@ -1257,11 +1257,11 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     1
                   </div>
                   <div className="space-y-1">
-                    <div className="text-xs font-extrabold text-slate-900">Verify Title as Self-Acquired Property</div>
+                    <div className="text-xs font-extrabold text-slate-900">Verify Title as Self-Acquired Asset</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Confirm that the property is your self-acquired asset (purchased from your independent earnings) or
-                      your absolute testamentary share under Section 30 HSA. Undivided ancestral coparcenary interest
-                      requires specific partition recitals to avoid coparcenary challenges.
+                      Confirm that the asset is your self-acquired asset (purchased from your independent earnings) or
+                      your absolute Will share under Section 30 HSA. Undivided family joint interest
+                      requires specific split recitals to avoid joint fights.
                     </p>
                   </div>
                 </div>
@@ -1276,7 +1276,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Incorporate the exact wording negating maintenance arrears, citing Section 14(2), and inserting
-                      blanket prohibitions on sale, mortgage, long-term leasing, and further testamentary disposition.
+                      blanket prohibitions on sale, mortgage, long-term leasing, and further Will gift.
                     </p>
                   </div>
                 </div>
@@ -1287,11 +1287,11 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   </div>
                   <div className="space-y-1">
                     <div className="text-xs font-extrabold text-slate-900">
-                      Two Independent Attesting Witnesses (Section 67 ISA Compliance)
+                      Two Independent Signing Witnesses (Section 67 ISA Compliance)
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under Section 67 ISA, neither your spouse (life tenant) nor your children (remaindermen) must sign as
-                      attesting witnesses! Doing so voids their bequest. Select two completely independent adult witnesses
+                      signing witnesses! Doing so voids their bequest. Select two completely independent adult witnesses
                       (e.g., family physician, chartered accountant, or family friend).
                     </p>
                   </div>
@@ -1302,10 +1302,10 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     4
                   </div>
                   <div className="space-y-1">
-                    <div className="text-xs font-extrabold text-slate-900">Doctor&apos;s Testamentary Fitness Certificate</div>
+                    <div className="text-xs font-extrabold text-slate-900">Doctor&apos;s Will Fitness Paper</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an endorsement from a registered medical practitioner certifying that you were in sound mental
-                      health, memory, and understanding on the date and hour of execution to preempt future undue
+                      Obtain an endorsement from a filed medical practitioner certifying that you were in sound mental
+                      health, memory, and understanding on the date and hour of signing to preempt future undue
                       influence allegations.
                     </p>
                   </div>
@@ -1317,10 +1317,10 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   </div>
                   <div className="space-y-1">
                     <div className="text-xs font-extrabold text-slate-900">
-                      Optional Registration at Sub-Registrar Office (SRO)
+                      A Choice Filing at SRO office (SRO)
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      While registration is optional under Section 18(e) of the Registration Act, registering a life-interest
+                      While filing is a choice under Section 18(e) of the Filing Act, registering a life-interest
                       Will creates a public record at the SRO, making it virtually impossible for any third party to claim
                       ignorance of the life-tenant restriction.
                     </p>
@@ -1345,20 +1345,20 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Legal Editorial &amp; Testamentary Bench
+                      WillDrafting.in Legal Editorial &amp; Will Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&apos;s premier estate planning and succession technology platform, backed by
-                  the senior testamentary practice of AMA Legal Solutions. Our multidisciplinary bench includes senior
+                  WillDrafting.in is India&apos;s premier estate planning and estate technology platform, backed by
+                  the senior Will practice of AMA Legal Solutions. Our multidisciplinary bench includes senior
                   High Court litigators specializing in contentious probate proceedings, Section 14 Hindu Succession
-                  disputes, and cross-border NRI estate structuring. Having drafted and registered over 15,000 challenge-proof
+                  fights, and cross-border NRI estate structuring. Having drafted and filed over 15,000 fight-proof
                   testaments, we ensure that every life-interest clause stands up to rigorous judicial scrutiny.
                 </p>
 
@@ -1368,21 +1368,21 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Will Registration Desk</span>
+                    <span>Will Filing Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/probate-court-fee-timeline-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Fee Calculator</span>
+                    <span>Probate Fee Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Legal Heir Share Calculator</span>
+                    <span>Legal Heir Share Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1436,23 +1436,23 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <span>AUTHORITY &amp; REPOSITORIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; High Court Precedent Registry
+                14. Legal Citations &amp; High Court Precedent Registry
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 shadow-xs text-xs text-slate-600 leading-relaxed">
                 <p>
-                  The legal principles and templates presented on this page are grounded in authoritative statutory
-                  provisions and landmark judgments of the Hon&apos;ble Supreme Court of India:
+                  The legal principles and templates presented on this page are grounded in authoritative legal
+                  rules and landmark judgments of the Hon&apos;ble Supreme Court of India:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-slate-700">
                   <li>
-                    <strong>Hindu Succession Act, 1956:</strong> Section 14(1) [Women&apos;s Property as Absolute Owner],
-                    Section 14(2) [Exception for Instruments Prescribing Restricted Estate], and Section 30 [Testamentary
-                    Disposition].
+                    <strong>Hindu Succession Act, 1956:</strong> Section 14(1) [Women&apos;s Asset as Absolute Owner],
+                    Section 14(2) [Exception for Instruments Prescribing Restricted Estate], and Section 30 [Will
+                    Gift].
                   </li>
                   <li>
-                    <strong>Indian Succession Act, 1925:</strong> Section 63 [Execution of Unprivileged Wills], Section 67
-                    [Effect of Bequest to Attesting Witness], Section 82 [Meaning of Clause to be Collected from Entire
-                    Will], Section 87 [Testator&apos;s Intention to be Effectuated], Section 119 [Date of Vesting of Vested
+                    <strong>Indian Succession Act, 1925:</strong> Section 63 [Signing of Unprivileged Wills], Section 67
+                    [Effect of Bequest to Signing Witness], Section 82 [Meaning of Clause to be Collected from Entire
+                    Will], Section 87 [Will maker&apos;s Intention to be Effectuated], Section 119 [Date of Vesting of Vested
                     Interest], Section 120 [Contingent Bequests], and Section 131 [Bequest with Gift Over / Defeasance].
                   </li>
                   <li>
@@ -1486,7 +1486,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Templates
+                    Related WillDrafting Guides &amp; Estate Templates
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1505,31 +1505,53 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                       href="/tools/probate-court-fee-timeline-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Court Fee Calculator
+                      Probate Court Fee Tool
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      SRO Will Registration Service
+                      SRO Will Filing Service
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1542,21 +1564,21 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in High Court testamentary litigations, Section 14(2) life estate enforcement, contentious
-                probate defenses, and challenge-proof spousal estate structuring.
+                Expert in High Court Will litigations, Section 14(2) life estate enforcement, contentious
+                probate defenses, and fight-proof spousal estate structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1596,18 +1618,18 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                   <span>CUSTOM TESTAMENTARY ADVISORY</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Drafting High-Value Property or Multi-Tier Bequests?
+                  Drafting High-Value Asset or Multi-Tier Bequests?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our High Court succession advocates review complex life interests, family settlement deeds, and
-                  commercial tenancy protections pan-India.
+                  Our High Court estate lawyers review complex life interests, family deal deeds, and
+                  shop tenancy protections pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1628,14 +1650,14 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
                       <strong>Vested Remainder under Sec 119:</strong> Irrevocably protects children&apos;s title upon
-                      testator&apos;s death.
+                      Will maker&apos;s death.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
                       <strong>SRO Notice Mandates:</strong> Formats designed to be recorded on 7/12, Khata, and CHS share
-                      certificates.
+                      papers.
                     </span>
                   </li>
                 </ul>

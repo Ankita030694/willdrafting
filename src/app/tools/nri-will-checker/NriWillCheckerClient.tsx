@@ -49,13 +49,13 @@ interface TOCItem {
 }
 
 const TOC_ITEMS: TOCItem[] = [
-  { id: "executive-summary", label: "1. Executive Summary: NRI Will & Succession" },
-  { id: "diagnostic-tool", label: "2. Interactive Diagnostic: Do You Need an Indian Will?" },
+  { id: "executive-summary", label: "1. Executive Summary: NRI Will & Estate" },
+  { id: "diagnostic-tool", label: "2. Free Diagnostic: Do You Need an Indian Will?" },
   { id: "two-will-strategy", label: "3. The Two-Will Strategy: Separate Wills for India & Abroad" },
   { id: "fema-regulations", label: "4. FEMA Rules: Can NRIs Inherit Indian Land & Farmland?" },
   { id: "strategy-comparison", label: "5. Comparison: One Single Will vs Two Separate Wills" },
   { id: "section-228-probate", label: "6. Why Foreign Court Orders Don't Work Directly in India" },
-  { id: "visual-blueprint", label: "7. Visual Flowchart: How NRI Inheritance Works" },
+  { id: "visual-blueprint", label: "7. Visual Flowchart: How NRI Estate Works" },
   { id: "execution-protocol", label: "8. How NRIs Can Legally Sign an Indian Will from Abroad" },
   { id: "asset-protection-grid", label: "9. Protecting Your Assets in India and Overseas" },
   { id: "repatriation-matrix", label: "10. Sending Inherited Money Abroad (RBI & FEMA Rules)" },
@@ -99,7 +99,7 @@ interface AssetOption {
 const ASSET_TYPES: AssetOption[] = [
   {
     id: "residential_property",
-    label: "Residential Apartment, Villa or Plot",
+    label: "Home Apartment, Villa or Plot",
     category: "immovable",
     riskFactor: 5,
     statutoryAlert:
@@ -107,7 +107,7 @@ const ASSET_TYPES: AssetOption[] = [
   },
   {
     id: "commercial_property",
-    label: "Commercial Shop, Office or Warehouse",
+    label: "Shop Shop, Office or Warehouse",
     category: "immovable",
     riskFactor: 5,
     statutoryAlert:
@@ -115,7 +115,7 @@ const ASSET_TYPES: AssetOption[] = [
   },
   {
     id: "agricultural_land",
-    label: "Agricultural Land, Farmhouse or Plantation",
+    label: "Farm Land, Farmhouse or Plantation",
     category: "immovable",
     riskFactor: 5,
     statutoryAlert:
@@ -173,16 +173,16 @@ const FAQS = [
     a: "The Two-Will Strategy means making two separate Wills. You make one Will for your foreign assets like your home or pension abroad. You make a second Will only for your Indian property and bank accounts. Each Will contains a clause confirming it does not cancel the other. This keeps both estates safe and independent.",
   },
   {
-    q: "Can an NRI or OCI inherit agricultural land in India through a Will?",
-    a: "Yes. Under Section 6(5) of the Foreign Exchange Management Act (FEMA), an NRI or OCI can inherit agricultural land and farmhouses from a resident Indian. However, FEMA rules say you cannot sell or gift that farmland to another NRI. You can only sell it to an Indian citizen who lives in India.",
+    q: "Can an NRI or OCI inherit farm land in India through a Will?",
+    a: "Yes. Under Section 6(5) of the Foreign Exchange Management Act (FEMA), an NRI or OCI can inherit farm land and farmhouses from a resident Indian. However, FEMA rules say you cannot sell or gift that farmland to another NRI. You can only sell it to an Indian citizen who lives in India.",
   },
   {
     q: "Does an NRI have to travel to India to sign or register an Indian Will?",
-    a: "No. You can sign your Indian Will in your country of residence on plain A4 paper. Under Section 63 of the Indian Succession Act, you only need to sign before two adult witnesses who are physically present with you. Will registration is optional under Section 18 of the Registration Act. An unregistered Will on plain paper is 100% legal.",
+    a: "No. You can sign your Indian Will in your country of residence on plain A4 paper. Under Section 63 of the Indian Succession Act, you only need to sign before two adult witnesses who are physically present with you. Will filing is a choice under Section 18 of the Filing Act. An plain Will on plain paper is 100% legal.",
   },
   {
     q: "What is Section 228 of the Indian Succession Act, and why is it a problem?",
-    a: "Section 228 applies when a Will is proved in a foreign court. Indian banks and land registries do not accept foreign court decrees directly. Your heirs must file a second case in an Indian court for Letters of Administration with Will Annexed. This process requires apostilled court records, newspaper notices, and court hearings that add heavy costs and 1 to 2 years of delays.",
+    a: "Section 228 applies when a Will is proved in a foreign court. Indian banks and land registries do not accept foreign court decrees directly. Your heirs must file a second case in an Indian court for Letters of Care with Will Annexed. This process requires apostilled court records, newspaper notices, and court hearings that add heavy costs and 1 to 2 years of delays.",
   },
   {
     q: "Can an NRI appoint an overseas citizen or foreign resident as executor?",
@@ -194,15 +194,15 @@ const FAQS = [
   },
   {
     q: "How do NRI heirs repatriate money from inherited Indian assets abroad?",
-    a: "The Reserve Bank of India allows NRI heirs to send up to 1 million US Dollars abroad each financial year from an NRO account. You can send funds from property sales, bank deposits, and shares. Your chartered accountant must file Form 15CA and Form 15CB to certify tax compliance before the bank wires the funds.",
+    a: "The Reserve Bank of India allows NRI heirs to send up to 1 million US Dollars abroad each financial year from an NRO account. You can send funds from asset sales, bank deposits, and shares. Your chartered accountant must file Form 15CA and Form 15CB to certify tax compliance before the bank wires the funds.",
   },
   {
     q: "Is a US Revocable Living Trust effective for real estate located in India?",
-    a: "No. Indian land registries and municipal bodies do not recognize US private living trusts for property title transfers. Moving Indian real estate into a foreign trust also breaks FEMA regulations. You must use a valid Indian Will to pass on Indian property cleanly.",
+    a: "No. Indian land registries and city bodies do not recognize US private living trusts for asset title transfers. Moving Indian real estate into a foreign trust also breaks FEMA regulations. You must use a valid Indian Will to pass on Indian property cleanly.",
   },
   {
-    q: "Does an Indian Will need Indian stamp paper or consular attestation?",
-    a: "No Indian stamp paper is needed. Under the Indian Stamp Act, Wills are completely exempt from stamp duty. While getting your signature notarized or verified at an Indian Consulate adds strong proof of identity, it is not mandatory. Signing before two independent adult witnesses meets all legal rules under Section 63.",
+    q: "Does an Indian Will need Indian stamp paper or consular witness signing?",
+    a: "No Indian stamp paper is needed. Under the Indian Stamp Act, Wills are completely exempt from stamp duty. While getting your signature notarized or checked at an Indian Consulate adds strong proof of identity, it is not needed. Signing before two independent adult witnesses meets all legal rules under Section 63.",
   },
 ];
 
@@ -326,7 +326,7 @@ export default function NriWillCheckerClient() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Check your cross-border succession status in 2 minutes. Calculate your legal exposure under FEMA, prevent the 14-month Section 228 foreign probate trap, and secure your Indian assets.
+            Check your cross-border estate status in 2 minutes. Calculate your legal exposure under FEMA, prevent the 14-month Section 228 foreign probate trap, and secure your Indian assets.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -359,7 +359,7 @@ export default function NriWillCheckerClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                NRI Succession Focus
+                NRI Estate Focus
               </span>
             </div>
 
@@ -412,7 +412,7 @@ export default function NriWillCheckerClient() {
                   <div className="flex text-amber-500 text-xs">★★★★★</div>
                 </div>
                 <span className="text-[10px] sm:text-xs font-semibold text-[#55636D] mt-0.5">
-                  Verified NRI Reviews
+                  Checked NRI Reviews
                 </span>
               </div>
             </div>
@@ -473,7 +473,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                1. Executive Summary: NRI Will &amp; Cross-Border Succession
+                1. Executive Summary: NRI Will &amp; Cross-Border Estate
               </h2>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6 font-normal">
                 Many Non-Resident Indians (NRIs) own flats and bank accounts in India. They often make a Will in their home country like the US or UK. They assume this foreign Will covers their Indian property. Under Indian law, this creates severe problems. Foreign court orders do not transfer Indian land directly.
@@ -535,7 +535,7 @@ export default function NriWillCheckerClient() {
                 </div>
 
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] mb-3">
-                  2. Interactive Diagnostic: Do You Need an Indian Will?
+                  2. Free Diagnostic: Do You Need an Indian Will?
                 </h3>
                 <p className="text-sm md:text-base text-slate-600 mb-8 max-w-3xl">
                   Select your country of residence, Indian asset holdings, and existing Will status below. Our diagnostic engine evaluates your legal risk profile under Indian private international law in real time.
@@ -547,7 +547,7 @@ export default function NriWillCheckerClient() {
                     Step 1: Your Country of Residence (Tax / Domicile Location)
                   </label>
                   <p className="text-xs sm:text-sm text-slate-600 mb-4">
-                    Succession rules vary based on where you live. Select your current home country to see your probate pathway.
+                    Estate rules vary based on where you live. Select your current home country to see your probate pathway.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
                     {COUNTRIES.map((country) => (
@@ -696,7 +696,7 @@ export default function NriWillCheckerClient() {
                         },
                         {
                           id: "yes_specific",
-                          label: "Yes: Specifically Listed by Address",
+                          label: "Yes: Mainly Listed by Address",
                           sub: "Specific Indian addresses or bank folios listed",
                         },
                       ].map((item) => (
@@ -747,7 +747,7 @@ export default function NriWillCheckerClient() {
 
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
                     <label className="block text-xs font-bold text-slate-900 mb-1.5">
-                      Who Are Your Intended Beneficiaries?
+                      Who Are Your Intended Heirs?
                     </label>
                     <select
                       value={beneficiaryType}
@@ -759,7 +759,7 @@ export default function NriWillCheckerClient() {
                       <option value="mixed">Mixed Family (Both NRIs and Indian Residents)</option>
                     </select>
                     <span className="text-[10px] text-slate-500 block mt-1">
-                      NRI heirs must file Form 15CA and Form 15CB to repatriate inheritance funds.
+                      NRI heirs must file Form 15CA and Form 15CB to repatriate estate funds.
                     </span>
                   </div>
                 </div>
@@ -803,7 +803,7 @@ export default function NriWillCheckerClient() {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-6 border-b border-white/15 text-xs">
                     <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                       <span className="text-rose-300 font-bold block uppercase tracking-wider text-[10px] mb-1">
-                        1. Immovable Property Risk
+                        1. Land Asset Risk
                       </span>
                       <p className="text-slate-200 leading-relaxed">
                         {hasImmovable
@@ -823,7 +823,7 @@ export default function NriWillCheckerClient() {
 
                     <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                       <span className="text-rose-300 font-bold block uppercase tracking-wider text-[10px] mb-1">
-                        3. FEMA &amp; Repatriation
+                        3. FEMA &amp; Sending Cash Home
                       </span>
                       <p className="text-slate-200 leading-relaxed">
                         {hasAgriLand
@@ -877,10 +877,10 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                3. Two-Will Strategy: Lex Loci Rei Sitae &amp; Jurisdiction
+                3. Two-Will Strategy: Lex Loci Rei Sitae &amp; Area
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
-                Under the legal rule of <em>lex loci rei sitae</em>, real estate is governed by the laws of the place where it sits. This principle is set out in Section 5 of the Indian Succession Act. Foreign courts have no direct authority over Indian property records.
+                Under the legal rule of <em>lex loci rei sitae</em>, real estate is governed by the laws of the place where it sits. This principle is set out in Section 5 of the Indian Succession Act. Foreign courts have no direct office over Indian property records.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Because of this rule, orders from probate courts in California, London, or Toronto are not recognized by Indian land registries. The Two-Will Strategy solves this problem. It divides your estate into two safe legal compartments.
@@ -928,7 +928,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                4. FEMA Succession Rules: Section 6(5) &amp; Land Rights
+                4. FEMA Estate Rules: Section 6(5) &amp; Land Rights
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
                 The Reserve Bank of India regulates Indian property owned by NRIs and OCIs under the Foreign Exchange Management Act (FEMA), 1999 and the FEMA Non-Debt Instruments Rules, 2019.
@@ -936,7 +936,7 @@ export default function NriWillCheckerClient() {
 
               <div className="rounded-xl border border-slate-200 overflow-hidden mb-6">
                 <div className="bg-[#172228] text-white p-3 text-xs font-bold uppercase tracking-wider flex items-center justify-between">
-                  <span>FEMA Succession &amp; Acquisition Matrix for NRIs / OCIs</span>
+                  <span>FEMA Estate &amp; Acquisition Matrix for NRIs / OCIs</span>
                   <span className="text-rose-300 font-mono">FEMA (NDI) Rules 2019</span>
                 </div>
                 <div className="overflow-x-auto">
@@ -945,25 +945,25 @@ export default function NriWillCheckerClient() {
                       <tr>
                         <th className="p-3">Asset Category</th>
                         <th className="p-3">Direct Purchase</th>
-                        <th className="p-3">Inheritance via Will</th>
+                        <th className="p-3">Estate via Will</th>
                         <th className="p-3">Subsequent Sale Rule</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700">
                       <tr>
-                        <td className="p-3 font-semibold text-slate-900">Residential Property (Flats / Plots)</td>
+                        <td className="p-3 font-semibold text-slate-900">Home Asset (Flats / Plots)</td>
                         <td className="p-3 text-emerald-700 font-bold">Permitted (General Permission)</td>
                         <td className="p-3 text-emerald-700 font-bold">Permitted (Section 6(5))</td>
                         <td className="p-3">Can sell to Resident, NRI, or OCI</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-semibold text-slate-900">Commercial Office / Showroom</td>
+                        <td className="p-3 font-semibold text-slate-900">Shop Office / Showroom</td>
                         <td className="p-3 text-emerald-700 font-bold">Permitted (General Permission)</td>
                         <td className="p-3 text-emerald-700 font-bold">Permitted (Section 6(5))</td>
                         <td className="p-3">Can sell to Resident, NRI, or OCI</td>
                       </tr>
                       <tr className="bg-rose-50/50">
-                        <td className="p-3 font-bold text-rose-950">Agricultural Land / Farmhouses</td>
+                        <td className="p-3 font-bold text-rose-950">Farm Land / Farmhouses</td>
                         <td className="p-3 text-rose-700 font-bold">STRICTLY PROHIBITED</td>
                         <td className="p-3 text-emerald-700 font-bold">Permitted under Valid Will</td>
                         <td className="p-3 font-bold text-rose-900">
@@ -988,7 +988,7 @@ export default function NriWillCheckerClient() {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                <strong>Agricultural Land Rules:</strong> An NRI or OCI cannot buy farmland in India. However, Section 6(5) allows you to inherit farmland through an Indian Will. If you inherit farmland, you can only sell it to an Indian citizen who lives in India.
+                <strong>Farm Land Rules:</strong> An NRI or OCI cannot buy farmland in India. However, Section 6(5) allows you to inherit farmland through an Indian Will. If you inherit farmland, you can only sell it to an Indian citizen who lives in India.
               </p>
             </section>
 
@@ -1015,7 +1015,7 @@ export default function NriWillCheckerClient() {
                   <table className="w-full text-xs text-left min-w-[620px]">
                     <thead className="bg-[#172228] text-white font-bold">
                       <tr>
-                        <th className="p-3.5">Execution Parameter</th>
+                        <th className="p-3.5">Signing Parameter</th>
                         <th className="p-3.5 bg-rose-950/60 text-rose-200">Single Foreign Will Pathway</th>
                         <th className="p-3.5 bg-emerald-950/60 text-emerald-200">The NRI Two-Will Strategy</th>
                         <th className="p-3.5">Risk &amp; Impact</th>
@@ -1030,26 +1030,26 @@ export default function NriWillCheckerClient() {
                       </tr>
                       <tr>
                         <td className="p-3 font-semibold text-slate-900">Indian High Court Petition</td>
-                        <td className="p-3 text-rose-700 font-bold">Mandatory under Section 228 ISA</td>
+                        <td className="p-3 text-rose-700 font-bold">Needed under Section 228 ISA</td>
                         <td className="p-3 text-emerald-700 font-bold">Not required (except presidency cities)</td>
-                        <td className="p-3 text-slate-500">Eliminates court litigation</td>
+                        <td className="p-3 text-slate-500">Eliminates court court fights</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-semibold text-slate-900">Legal Documentation Costs</td>
+                        <td className="p-3 font-semibold text-slate-900">Legal Papers Costs</td>
                         <td className="p-3 text-rose-700 font-bold">High: Foreign probate + Apostille + India lawyers</td>
                         <td className="p-3 text-emerald-700 font-bold">Low: One-time drafting fee (₹4,999)</td>
                         <td className="p-3 text-slate-500">Saves thousands in court fees</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-semibold text-slate-900">Real Estate Mutation at SRO</td>
+                        <td className="p-3 font-semibold text-slate-900">Real Estate Name Change at SRO</td>
                         <td className="p-3 text-rose-700 font-bold">Rejected until Indian court re-seals Will</td>
-                        <td className="p-3 text-emerald-700 font-bold">Direct municipal mutation on Will basis</td>
-                        <td className="p-3 text-slate-500">Immediate property title transfer</td>
+                        <td className="p-3 text-emerald-700 font-bold">Direct city name change on Will basis</td>
+                        <td className="p-3 text-slate-500">Immediate asset title transfer</td>
                       </tr>
                       <tr>
                         <td className="p-3 font-semibold text-slate-900">NRO Bank Account Release</td>
-                        <td className="p-3 text-rose-700 font-bold">Bank legal department rejects foreign decrees</td>
-                        <td className="p-3 text-emerald-700 font-bold">Fast release with death certificate &amp; Will</td>
+                        <td className="p-3 text-rose-700 font-bold">Bank legal office rejects foreign decrees</td>
+                        <td className="p-3 text-emerald-700 font-bold">Fast release with death paper &amp; Will</td>
                         <td className="p-3 text-slate-500">Smooth funds release</td>
                       </tr>
                       <tr>
@@ -1115,8 +1115,8 @@ export default function NriWillCheckerClient() {
                     2
                   </span>
                   <div className="text-xs sm:text-sm">
-                    <strong className="text-slate-900 block mb-0.5">Apostille or Embassy Attestation</strong>
-                    Foreign records must get apostille verification or attestation at the nearest Indian Embassy.
+                    <strong className="text-slate-900 block mb-0.5">Apostille or Embassy Witness Signing</strong>
+                    Foreign records must get apostille check or witness signing at the nearest Indian Embassy.
                   </div>
                 </div>
 
@@ -1126,7 +1126,7 @@ export default function NriWillCheckerClient() {
                   </span>
                   <div className="text-xs sm:text-sm">
                     <strong className="text-slate-900 block mb-0.5">File Ancillary Petition in India</strong>
-                    An Indian advocate must file a petition under Section 228 in an Indian court for Letters of Administration.
+                    An Indian advocate must file a petition under Section 228 in an Indian court for Letters of Care.
                   </div>
                 </div>
 
@@ -1142,7 +1142,7 @@ export default function NriWillCheckerClient() {
               </div>
 
               <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-xs sm:text-sm text-rose-950 font-medium">
-                <strong>Why This Matters:</strong> Having a separate Indian Will avoids Section 228 entirely. The Indian Will acts on its own, allowing direct property name transfer and bank fund release.
+                <strong>Why This Matters:</strong> Having a separate Indian Will avoids Section 228 entirely. The Indian Will acts on its own, allowing direct asset name transfer and bank fund release.
               </div>
             </section>
 
@@ -1158,7 +1158,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                7. Succession Visual Blueprint: Cross-Border Flowchart
+                7. Estate Visual Blueprint: Cross-Border Flowchart
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 The visual flowchart below compares Path A (relying only on a foreign Will) with Path B (the Two-Will Strategy):
@@ -1177,7 +1177,7 @@ export default function NriWillCheckerClient() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 pt-2 gap-2">
-                <span>Figure 1: Cross-Border Succession Flow &bull; Indian Succession Act 1925 &amp; FEMA 1999</span>
+                <span>Figure 1: Cross-Border Estate Flow &bull; Indian Succession Act 1925 &amp; FEMA 1999</span>
                 <a
                   href="/images/nri-two-will-strategy-infographic.svg"
                   target="_blank"
@@ -1202,7 +1202,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                8. Execution Protocol: How NRIs Sign an Indian Will Abroad
+                8. Signing Protocol: How NRIs Sign an Indian Will Abroad
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 You do not need to travel to India to sign a valid Indian Will. Under Section 63 of the Indian Succession Act, you can sign it in your home country:
@@ -1228,7 +1228,7 @@ export default function NriWillCheckerClient() {
                   {
                     step: 4,
                     title: "Sign Before Two Independent Witnesses",
-                    desc: "Sign each page before two adult witnesses who are with you in person. Witnesses must not be beneficiaries under the Will.",
+                    desc: "Sign each page before two adult witnesses who are with you in person. Witnesses must not be heirs under the Will.",
                   },
                   {
                     step: 5,
@@ -1263,7 +1263,7 @@ export default function NriWillCheckerClient() {
               <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-950 flex items-start gap-2.5">
                 <Info className="w-4 h-4 text-blue-700 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Section 67 Rule:</strong> Under Section 67, any bequest made to an attesting witness is void. Always use independent witnesses who are not your heirs.
+                  <strong>Section 67 Rule:</strong> Under Section 67, any bequest made to an signing witness is void. Always use independent witnesses who are not your heirs.
                 </span>
               </div>
             </section>
@@ -1283,7 +1283,7 @@ export default function NriWillCheckerClient() {
                 9. 2x2 Asset Protection Grid: Protecting Overseas Wealth
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
-                A dedicated Indian Will protects each asset class against delays, disputes, and penalties:
+                A dedicated Indian Will protects each asset class against delays, fights, and penalties:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1292,10 +1292,10 @@ export default function NriWillCheckerClient() {
                     <Building className="w-5 h-5" />
                   </div>
                   <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-1.5">
-                    Real Estate &amp; Apartment Mutation
+                    Real Estate &amp; Apartment Name Change
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    Lets your named executor submit the Will directly to the Sub-Registrar and Municipal Corporation to transfer title deeds and society share certificates cleanly.
+                    Lets your named executor submit the Will directly to the SRO and City City Board to transfer title deeds and society share papers cleanly.
                   </p>
                 </div>
 
@@ -1319,7 +1319,7 @@ export default function NriWillCheckerClient() {
                     Demat Shares &amp; Mutual Funds
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    Follows SEBI transmission rules. Gives depositories clear legal proof to transfer share portfolios to your heirs without requiring court succession certificates.
+                    Follows SEBI transfer rules. Gives depositories clear legal proof to transfer share portfolios to your heirs without requiring court estate papers.
                   </p>
                 </div>
 
@@ -1349,10 +1349,10 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                10. Repatriation Matrix: NRO to NRE Remittance Compliance
+                10. Sending Cash Home Matrix: NRO to NRE Remittance Compliance
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
-                After inheriting assets, NRI heirs often want to convert rupees into foreign currency and send them home. The Reserve Bank of India permits this under the NRI Repatriation Facility.
+                After inheriting assets, NRI heirs often want to convert rupees into foreign currency and send them home. The Reserve Bank of India permits this under the NRI Sending Cash Home Facility.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 You can remit up to 1 million US Dollars every financial year by following three simple steps:
@@ -1363,8 +1363,8 @@ export default function NriWillCheckerClient() {
                   <thead className="bg-[#172228] text-white font-bold">
                     <tr>
                       <th className="p-3">Stage</th>
-                      <th className="p-3">Regulatory Requirement</th>
-                      <th className="p-3">Statutory Form / Filing</th>
+                      <th className="p-3">Regulatory Rule</th>
+                      <th className="p-3">Legal Form / Filing</th>
                       <th className="p-3">Permitted Limit &amp; Timeline</th>
                     </tr>
                   </thead>
@@ -1372,14 +1372,14 @@ export default function NriWillCheckerClient() {
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Stage 1: Asset Sale</td>
                       <td className="p-3">Sale proceeds of real estate or deposits credited to your NRO account.</td>
-                      <td className="p-3">Registered Sale Deed, Death Certificate, Indian Will</td>
+                      <td className="p-3">Filed Sale Deed, Death Paper, Indian Will</td>
                       <td className="p-3">No limit in INR; takes 15–30 days</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Stage 2: Tax Check</td>
-                      <td className="p-3">Verification that capital gains tax on property sale is cleared.</td>
-                      <td className="p-3 font-bold text-[#C65378]">Form 15CA (Taxpayer) &amp; Form 15CB (CA Certificate)</td>
-                      <td className="p-3">Direct inheritance is tax-free; 7–14 days for CA review</td>
+                      <td className="p-3">Check that capital gains tax on asset sale is cleared.</td>
+                      <td className="p-3 font-bold text-[#C65378]">Form 15CA (Taxpayer) &amp; Form 15CB (CA Paper)</td>
+                      <td className="p-3">Direct estate is tax-free; 7–14 days for CA review</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Stage 3: Outward Wire</td>
@@ -1392,7 +1392,7 @@ export default function NriWillCheckerClient() {
               </div>
 
               <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950">
-                <strong>Tax-Free Inheritance:</strong> Under Section 56(2)(x) of the Indian Income Tax Act, assets received under a Will are tax-free in India. Capital gains tax applies only if you later sell the property.
+                <strong>Tax-Free Estate:</strong> Under Section 56(2)(x) of the Indian Income Tax Act, assets received under a Will are tax-free in India. Capital gains tax applies only if you later sell the asset.
               </div>
             </section>
 
@@ -1408,7 +1408,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                11. Post-Death Transmission Timeline: NRI Asset Recovery
+                11. Post-Death Transfer Timeline: NRI Asset Recovery
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Below is the expected timeline for settling Indian assets with an Indian Will compared to a foreign Will:
@@ -1427,19 +1427,19 @@ export default function NriWillCheckerClient() {
                   <tbody className="divide-y divide-slate-200 text-slate-700">
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Weeks 1–3</td>
-                      <td className="p-3 text-emerald-700 font-semibold">Death Certificate issued &amp; executor notifies bank</td>
+                      <td className="p-3 text-emerald-700 font-semibold">Death Paper issued &amp; executor notifies bank</td>
                       <td className="p-3 text-rose-700 font-semibold">Waiting for foreign country probate to commence</td>
                       <td className="p-3">Locate original signed Will</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Weeks 4–8</td>
-                      <td className="p-3 text-emerald-700 font-semibold">Bank accounts unblocked; Demat transmission started</td>
+                      <td className="p-3 text-emerald-700 font-semibold">Bank accounts unblocked; Demat transfer started</td>
                       <td className="p-3 text-rose-700 font-semibold">Overseas probate hearings in US/UK court</td>
                       <td className="p-3">Submit KYC &amp; Will to Indian banks</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-bold text-slate-900">Month 3</td>
-                      <td className="p-3 text-emerald-700 font-semibold">Municipal property mutation complete</td>
+                      <td className="p-3 text-emerald-700 font-semibold">City asset name change complete</td>
                       <td className="p-3 text-rose-700 font-semibold">Overseas probate granted; apostille process begins</td>
                       <td className="p-3">Update land registry records</td>
                     </tr>
@@ -1466,7 +1466,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                12. Four Specialized Cross-Border Succession Scenarios
+                12. Four Specialized Cross-Border Estate Scenarios
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Different legal rules apply based on your domicile and asset setup:
@@ -1489,7 +1489,7 @@ export default function NriWillCheckerClient() {
                     UAE Residents and DIFC Wills Courts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    Non-Muslims in the UAE can register Wills under DIFC or Abu Dhabi courts. However, DIFC court orders cannot be executed in Indian courts directly. A companion Indian Will is needed for your Indian flats.
+                    Non-Muslims in the UAE can register Wills under DIFC or Abu Dhabi courts. However, DIFC court orders cannot be signed in Indian courts directly. A companion Indian Will is needed for your Indian flats.
                   </p>
                 </div>
 
@@ -1499,7 +1499,7 @@ export default function NriWillCheckerClient() {
                     OCI Cardholders Inheriting Farm Land
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    OCI holders have the same inheritance rights as Indian citizens under Section 6(5) of FEMA. However, land records require clear clauses stating your OCI card number and Indian PAN to prevent tax delays.
+                    OCI holders have the same estate rights as Indian citizens under Section 6(5) of FEMA. However, land records require clear clauses stating your OCI card number and Indian PAN to prevent tax delays.
                   </p>
                 </div>
 
@@ -1530,7 +1530,7 @@ export default function NriWillCheckerClient() {
                 13. Institutional Backing: AMA Legal Solutions Advantage
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6 font-normal">
-                WillDrafting.in is powered by <strong>AMA Legal Solutions</strong>, a trusted succession law firm in India. Every template and diagnostic tool on our site is designed and updated by practicing High Court advocates.
+                WillDrafting.in is powered by <strong>AMA Legal Solutions</strong>, a trusted estate law firm in India. Every template and diagnostic tool on our site is designed and updated by practicing High Court lawyers.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-center">
@@ -1558,7 +1558,7 @@ export default function NriWillCheckerClient() {
                 <div>
                   <h4 className="font-bold text-sm sm:text-base">Need a Custom Cross-Border Legal Opinion?</h4>
                   <p className="text-xs text-slate-300">
-                    Schedule a confidential video consultation with senior succession lawyers.
+                    Schedule a confidential video talk with senior estate lawyers.
                   </p>
                 </div>
                 <a
@@ -1585,7 +1585,7 @@ export default function NriWillCheckerClient() {
                 14. Frequently Asked Questions: NRI Wills in India
               </h3>
               <p className="text-sm md:text-base text-slate-600 mb-6">
-                Clear answers to common questions regarding cross-border succession, witness rules abroad, and FEMA regulations:
+                Clear answers to common questions regarding cross-border estate, witness rules abroad, and FEMA regulations:
               </p>
 
               <div className="space-y-3">
@@ -1634,7 +1634,7 @@ export default function NriWillCheckerClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                15. Statutory Citations &amp; Verified Official Resources
+                15. Legal Citations &amp; Checked Official Resources
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 mb-4">
                 This diagnostic framework is grounded in Indian statutory law, Supreme Court precedents, and RBI master directions:
@@ -1642,24 +1642,24 @@ export default function NriWillCheckerClient() {
 
               <ul className="list-disc list-inside space-y-1.5 text-xs text-slate-700 mb-6 leading-relaxed">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 5 (Lex loci rei sitae), Section 57 (Applicability), Section 63 (Execution formalities), Section 67 (Witness forfeiture), Section 213 (Probate rules), Section 228 (Foreign Wills ancillary grant).
+                  <strong>Indian Succession Act, 1925:</strong> Section 5 (Lex loci rei sitae), Section 57 (Applicability), Section 63 (Signing formalities), Section 67 (Witness forfeiture), Section 213 (Probate rules), Section 228 (Foreign Wills ancillary grant).
                 </li>
                 <li>
-                  <strong>Foreign Exchange Management Act, 1999:</strong> Section 6(5) (Inheritance by persons resident outside India).
+                  <strong>Foreign Exchange Management Act, 1999:</strong> Section 6(5) (Estate by persons resident outside India).
                 </li>
                 <li>
-                  <strong>FEMA (Non-Debt Instruments) Rules, 2019:</strong> Rule 24 &amp; Rule 31 (Acquisition and transfer of immovable property in India by NRIs and OCIs).
+                  <strong>FEMA (Non-Debt Instruments) Rules, 2019:</strong> Rule 24 &amp; Rule 31 (Acquisition and transfer of land asset in India by NRIs and OCIs).
                 </li>
                 <li>
                   <strong>Reserve Bank of India Master Directions:</strong> Remittance of Assets Facility for Non-Resident Indians (USD 1,000,000 scheme).
                 </li>
                 <li>
-                  <strong>Income Tax Act, 1961:</strong> Section 56(2)(x) (Tax exemption on testamentary inheritances) and Form 15CA/15CB electronic certification.
+                  <strong>Income Tax Act, 1961:</strong> Section 56(2)(x) (Tax exemption on Will inheritances) and Form 15CA/15CB electronic certification.
                 </li>
               </ul>
 
               <div className="pt-4 border-t border-slate-200">
-                <span className="text-xs font-bold text-slate-900 block mb-2">Verified Government Portals:</span>
+                <span className="text-xs font-bold text-slate-900 block mb-2">Checked Government Portals:</span>
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="https://www.rbi.org.in"
@@ -1712,20 +1712,42 @@ export default function NriWillCheckerClient() {
                     href="/tools/probate-checker"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/tools/will-checklist"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    <span>Documents Required for Will</span>
+                    <span>Papers Required for Will</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (AUTHOR, CTA & TRUST CARDS)
@@ -1743,20 +1765,20 @@ export default function NriWillCheckerClient() {
                     rel="noopener noreferrer"
                     className="font-bold text-slate-900 hover:text-[#C65378] transition-colors block text-sm"
                   >
-                    Advocate Anuj Anand Malik
+                    Lawyer Anuj Anand Malik
                   </a>
                   <span className="text-[11px] text-[#C65378] font-bold block uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </span>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                Specialist in cross-border estate succession, FEMA compliance, and High Court probate matters with over 15 years of experience advising NRI families globally.
+                Expert in cross-border estate estate, FEMA compliance, and High Court probate matters with over 15 years of experience advising NRI families globally.
               </p>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-[#55636D]">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                  <span>Verified Legal Author</span>
+                  <span>Checked Legal Author</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1777,7 +1799,7 @@ export default function NriWillCheckerClient() {
                 <span>CONFIDENTIAL NRI ADVISORY</span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
-                Own Property or NRE/NRO Accounts in India?
+                Own Asset or NRE/NRO Accounts in India?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed mb-6 font-normal">
                 Avoid the 14-month Section 228 court trap. Draft a legally valid Indian Will on plain A4 paper from abroad in 15 minutes.
@@ -1828,7 +1850,7 @@ export default function NriWillCheckerClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block">Advocate Backed:</strong>
+                    <strong className="text-slate-900 block">Lawyer Backed:</strong>
                     Every draft reviewed by AMA Legal Solutions attorneys.
                   </div>
                 </li>
@@ -1849,7 +1871,7 @@ export default function NriWillCheckerClient() {
                     <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100" />
                   </div>
                   <span className="text-[10px] text-slate-500 mt-0.5 block">
-                    Custom drafting &amp; Sub-Registrar guidance
+                    Custom drafting &amp; SRO guidance
                   </span>
                 </Link>
 
@@ -1908,7 +1930,7 @@ export default function NriWillCheckerClient() {
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
               </div>
             </div>

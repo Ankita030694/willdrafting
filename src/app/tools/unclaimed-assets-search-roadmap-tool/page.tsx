@@ -93,7 +93,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
         url: canonicalUrl,
         name: "Find Deceased Parents Bank Accounts & Assets | WillDrafting",
         description:
-          "Trace deceased parents bank accounts, demat shares, IEPF, and mutual funds using PAN under Section 159. Free interactive discovery roadmap tool.",
+          "Trace deceased parents bank accounts, demat shares, IEPF, and mutual funds using PAN under Section 159. Free free discovery roadmap tool.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -133,7 +133,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory roadmap to discover deceased parents bank accounts, demat equity shares, mutual fund folios, IEPF unclaimed assets, and.",
+          "Free legal roadmap to discover deceased parents bank accounts, demat equity shares, mutual fund folios, IEPF unclaimed assets, and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -150,7 +150,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "Can I find all my deceased parents bank accounts and investments using their PAN?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. While India has no single master asset search database, your parent's Permanent Account Number (PAN) is the universal financial identifier. By leveraging PAN-based Consolidated Account Statements (CAS) across CDSL, NSDL, and MFCentral, the Annual Information Statement (AIS/TIS) on the Income Tax portal via Section 159 legal heir access, RBI UDGAM for dormant deposits, and the IEPF portal, legal heirs can discover approximately 98% of all domestic bank accounts, shares, mutual funds, and fixed deposits.",
+              text: "Yes. While India has no single master asset search database, your parent's Permanent Account Number (PAN) is the universal financial identifier. By leveraging PAN-based Consolidated Account Statements (CAS) across CDSL, NSDL, and MFCentral, the Annual Information Statement (AIS/TIS) on the Income Tax portal via Section 159 legal heir access, RBI UDGAM for dormant deposits, and the IEPF portal, legal heirs can discover about 98% of all domestic bank accounts, shares, mutual funds, and fixed deposits.",
             },
           },
           {
@@ -158,7 +158,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "How do legal heirs register on the Income Tax portal under Section 159 to view AIS and 26AS?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 159 of the Income Tax Act, 1961, the legal representative of a deceased taxpayer can register on incometax.gov.in. The heir logs into their own e-Filing profile, navigates to Authorized Partners > Register as Representative Assessee, selects Deceased (Legal Heir), and uploads: (1) Copy of PAN of both deceased and heir, (2) Certified Death Certificate, and (3) Legal Heir Certificate, Surviving Member Certificate, or Registered Will/Probate. Once approved by the Assessing Officer, the heir can access the deceased's Annual Information Statement (AIS) and Form 26AS, which list every bank reporting interest, dividend payments, stock sales, and high-value transactions.",
+              text: "Under Section 159 of the Income Tax Act, 1961, the legal agent of a deceased taxpayer can register on incometax.gov.in. The heir logs into their own e-Filing profile, navigates to Authorized Partners > Register as Agent Assessee, selects Deceased (Legal Heir), and uploads: (1) Copy of PAN of both deceased and heir, (2) Certified Death Paper, and (3) Legal Heir Paper, Surviving Member Paper, or Filed Will/Probate. Once approved by the Assessing Officer, the heir can access the deceased's Annual Information Statement (AIS) and Form 26AS, which list every bank reporting interest, dividend payments, stock sales, and high-value transactions.",
             },
           },
           {
@@ -166,7 +166,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "What is the RBI UDGAM portal and which bank deposits can be tracked through it?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "UDGAM (Unclaimed Deposits Gateway to Access Information) is an official centralized search portal established by the Reserve Bank of India (RBI). Under Section 26A of the Banking Regulation Act, 1949, all balances in savings and current accounts inactive for 10 or more years, and term deposits unclaimed for 10 years past maturity, are transferred to the RBI's Depositor Education and Awareness (DEA) Fund. UDGAM enables citizens to search across 30+ major commercial, private, and regional rural banks using the deceased's name combined with PAN, voter ID, passport, or date of birth.",
+              text: "UDGAM (Unclaimed Deposits Gateway to Access Information) is an official centralized search portal established by the Reserve Bank of India (RBI). Under Section 26A of the Banking Regulation Act, 1949, all balances in savings and current accounts inactive for 10 or more years, and term deposits unclaimed for 10 years past maturity, are transferred to the RBI's Depositor Education and Awareness (DEA) Fund. UDGAM enables citizens to search across 30+ major shop, private, and regional rural banks using the deceased's name combined with PAN, voter ID, passport, or date of birth.",
             },
           },
           {
@@ -174,7 +174,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "How can I track all mutual funds owned by a deceased parent across CAMS and KFintech?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "All 44+ mutual fund houses in India are administered by two primary Registrars and Transfer Agents (RTAs): CAMS and KFintech. Instead of querying fund houses individually, legal heirs can obtain a Consolidated Account Statement (CAS). Through MFCentral (mfcentral.com) or the CAMS and KFintech online portals, you can generate a PAN-level CAS. If the parent's registered mobile number is no longer active, heirs can submit a physical CAS request form at any local CAMS or KFintech Investor Service Centre (ISC) along with an attested death certificate and legal heir documentation.",
+              text: "All 44+ mutual fund houses in India are administered by two primary Registrars and Transfer Agents (RTAs): CAMS and KFintech. Instead of querying fund houses individually, legal heirs can obtain a Consolidated Account Statement (CAS). Through MFCentral (mfcentral.com) or the CAMS and KFintech online portals, you can generate a PAN-level CAS. If the parent's filed mobile number is no longer active, heirs can submit a physical CAS request form at any local CAMS or KFintech Investor Service Centre (ISC) along with an attested death paper and legal heir papers.",
             },
           },
           {
@@ -198,7 +198,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "Will a bank freeze my deceased parent's account as soon as they are notified of the death?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Upon receiving formal intimation and a death certificate, banks are legally mandated to place an immediate debit freeze on the deceased's sole accounts to prevent unauthorized ATM withdrawals, cheques, or net banking transfers. Inward credits like dividends and pension interest continue. If a nominee was registered, the bank must settle the claim within 15 calendar days under RBI guidelines. If no nominee exists, funds are disbursed to Class I legal heirs upon submitting an Indemnity Bond, NOCs, and a Legal Heir or Succession Certificate.",
+              text: "Yes. Upon receiving formal intimation and a death paper, banks are legally mandated to place an immediate debit freeze on the deceased's sole accounts to prevent unauthorized ATM withdrawals, cheques, or net banking transfers. Inward credits like dividends and pension interest continue. If a nominee was filed, the bank must settle the claim within 15 calendar days under RBI guidelines. If no nominee exists, funds are disbursed to Class I legal heirs upon submitting an Indemnity Bond, NOCs, and a Legal Heir or Estate Paper.",
             },
           },
           {
@@ -206,7 +206,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
             name: "When is a Succession Certificate mandatory instead of a basic Legal Heir Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Legal Heir Certificate is an administrative certificate issued by local revenue authorities (Tehsildar or SDM) establishing relationship status, suitable for bank claims below institutional threshold limits (typically ₹1 Lakh to ₹5 Lakhs). In contrast, a Succession Certificate is a judicial decree issued by a Civil District Court under Section 372 of the Indian Succession Act, 1925, certifying legal title to debts and securities. A Succession Certificate or Court Probate of Will is mandatory when claiming high-value demat shares, IEPF refunds exceeding ₹5 Lakhs, or bank balances exceeding branch settlement thresholds.",
+              text: "A Legal Heir Paper is an office paper issued by local revenue offices (Tehsildar or SDM) establishing relationship status, suitable for bank claims below institutional threshold limits (typically ₹1 Lakh to ₹5 Lakhs). In contrast, a Estate Paper is a judicial decree issued by a Civil District Court under Section 372 of the Indian Succession Act, 1925, certifying legal title to debts and securities. A Estate Paper or Court Probate of Will is needed when claiming high-value demat shares, IEPF refunds exceeding ₹5 Lakhs, or bank balances exceeding branch deal thresholds.",
             },
           },
         ],

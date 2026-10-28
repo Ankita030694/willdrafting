@@ -374,7 +374,7 @@ export default function PropertyMutationPage() {
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
-              Property Mutation &amp; Dakhil Kharij Service
+              Asset Name Change &amp; Dakhil Kharij Service
             </span>
           </nav>
 
@@ -387,12 +387,12 @@ export default function PropertyMutationPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-27" className="text-[#6B7280]">
@@ -413,11 +413,11 @@ export default function PropertyMutationPage() {
 
               {/* Single Strict H1: 50 chars */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Property Mutation &amp; Dakhil Kharij Service in India
+                Asset Name Change &amp; Dakhil Kharij Service in India
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                When a parent or property owner passes away, leaving their name in municipal and revenue records exposes your family to tax penalties, unauthorized claims, and bank loan rejections. Our senior advocates handle end-to-end <strong className="text-[#111827]">Property Mutation, Dakhil Kharij, BBMP Khata Transfer, and 7/12 Varas Nond</strong> across India without requiring you to wait in queues at government offices.
+                When a parent or asset owner passes away, leaving their name in city and revenue records exposes your family to tax penalties, unauthorized claims, and bank loan rejections. Our senior lawyers handle end-to-end <strong className="text-[#111827]">Asset Name Change, Dakhil Kharij, BBMP Khata Transfer, and 7/12 Varas Nond</strong> across India without requiring you to wait in queues at government offices.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -425,7 +425,7 @@ export default function PropertyMutationPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Hire Advocate for Property Mutation</span>
+                  <span>Hire Lawyer for Asset Name Change</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <Link
@@ -443,7 +443,7 @@ export default function PropertyMutationPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Advocate Drafted NOCs</span>
+                  <span>Lawyer Drafted NOCs</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
@@ -459,28 +459,28 @@ export default function PropertyMutationPage() {
             {/* Right Summary Box (H2 <= 70 chars: 42 chars) */}
             <div className="lg:col-span-5 bg-white rounded-[28px] border border-[#172228]/10 p-6 sm:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
               <div className="text-xs font-bold uppercase tracking-[0.16em] text-[#C65378] mb-3">
-                Critical Estate Transmission Warning
+                Critical Estate Transfer Warning
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
-                Why Property Mutation After Death Is Vital
+                Why Asset Name Change After Death Is Vital
               </h2>
               <ul className="space-y-3.5 text-[14px] leading-[1.6] text-[#374151] mb-6">
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Title Deeds Do Not Update Municipal Bills:</strong> Registering a conveyance deed or inheriting through a Will is only step one. Municipal property tax bills remain in the deceased person&apos;s name until mutation is formally granted.
+                    <strong>Title Deeds Do Not Update City Bills:</strong> Registering a conveyance deed or inheriting through a Will is only step one. City asset tax bills remain in the deceased person&apos;s name until name change is formally granted.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Home Loan &amp; Resale Gridlock:</strong> Prospective buyers cannot obtain bank mortgages on properties where the municipal Khata, 7/12 extract, or Jamabandi still lists a deceased ancestor.
+                    <strong>Home Loan &amp; Resale Gridlock:</strong> Prospective buyers cannot obtain bank mortgages on assets where the city Khata, 7/12 extract, or Jamabandi still lists a deceased ancestor.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Shield Against Encroachment &amp; Fraud:</strong> Un-mutated properties are frequent targets for bogus claims and illegal sale deeds by unscrupulous distant relatives or local land syndicates.
+                    <strong>Shield Against Encroachment &amp; Fraud:</strong> Un-mutated assets are frequent targets for bogus claims and illegal sale deeds by unscrupulous distant relatives or local land syndicates.
                   </span>
                 </li>
               </ul>
@@ -488,7 +488,7 @@ export default function PropertyMutationPage() {
                 href="/services/relinquishment-deed"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Need to Transfer Shares Among Co-Heirs? Explore Relinquishment Deeds</span>
+                <span>Need to Transfer Shares Among Co-Heirs? Explore Release Deeds</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -509,13 +509,13 @@ export default function PropertyMutationPage() {
           <div className="max-w-3xl mb-8">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileCheck className="w-4 h-4" />
-              <span>Advocate-Managed Asset Transmission</span>
+              <span>Lawyer-Managed Asset Transfer</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Visual Legal Overview: Advocate-Managed Property Mutation
+              Visual Legal Overview: Lawyer-Managed Asset Name Change
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How our High Court legal team coordinates municipal and revenue records across Delhi MCD/DDA, Bengaluru BBMP Khata, Mumbai BMC/7-12, and Uttar Pradesh Tehsildar offices:
+              How our High Court legal team coordinates city and revenue records across Delhi MCD/DDA, Bengaluru BBMP Khata, Mumbai BMC/7-12, and Uttar Pradesh Tehsildar offices:
             </p>
           </div>
 
@@ -530,7 +530,7 @@ export default function PropertyMutationPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> End-to-end advocate workflow for property mutation, Record of Rights transfer, and municipal tax reassessment following the owner&apos;s death.
+                <strong>Figure 1:</strong> End-to-end lawyer workflow for asset name change, Record of Rights transfer, and city tax reassessment following the owner&apos;s death.
               </span>
               <span>Source: WillDrafting Editorial Team &amp; AMA Legal Solutions</span>
             </figcaption>
@@ -547,10 +547,10 @@ export default function PropertyMutationPage() {
               <span>Supreme Court Precedent &amp; Judicial Reality</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Mutation vs Registry: Why Title Deeds Are Not Tax Records
+              Name Change vs Registry: Why Title Deeds Are Not Tax Records
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              A common misconception among Indian homeowners is believing that having a registered Sale Deed or Will automatically completes property transfer. The Supreme Court in <strong className="text-[#111827]">Sawarni v. Inder Kaur</strong> firmly established the boundary between legal title and municipal mutation:
+              A common misconception among Indian homeowners is believing that having a filed Sale Deed or Will automatically completes asset transfer. The Supreme Court in <strong className="text-[#111827]">Sawarni v. Inder Kaur</strong> firmly established the boundary between legal title and city name change:
             </p>
           </div>
 
@@ -560,8 +560,8 @@ export default function PropertyMutationPage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[20%]">Legal Feature</th>
-                    <th className="py-4 px-6 w-[26%]">Registered Title Deed / Conveyance</th>
-                    <th className="py-4 px-6 w-[26%]">Property Mutation (Dakhil Kharij / Khata)</th>
+                    <th className="py-4 px-6 w-[26%]">Filed Title Deed / Conveyance</th>
+                    <th className="py-4 px-6 w-[26%]">Asset Name Change (Dakhil Kharij / Khata)</th>
                     <th className="py-4 px-6 w-[28%]">Supreme Court Doctrine</th>
                   </tr>
                 </thead>
@@ -587,13 +587,13 @@ export default function PropertyMutationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileText className="w-4 h-4" />
-              <span>Statutory Compliance Matrix</span>
+              <span>Legal Compliance Matrix</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Document Requirements: Mutation With Will vs Intestate Case
+              Paper Rules: Name Change With Will vs No-Will Case
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              The documents required by municipal corporations and revenue tehsildars depend heavily on whether the deceased owner left a valid Will:
+              The papers required by city corporations and revenue tehsildars depend heavily on whether the deceased owner left a valid Will:
             </p>
           </div>
 
@@ -602,34 +602,34 @@ export default function PropertyMutationPage() {
             <div className="bg-white rounded-[24px] p-7 sm:p-8 border border-[#172228]/10 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col justify-between">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#047857]/10 text-[#047857] text-xs font-bold uppercase tracking-wider mb-4">
-                  <span>Track A: Testate Succession</span>
+                  <span>Track A: Testate Estate</span>
                 </div>
                 <h3 className="text-xl font-semibold text-[#111827] mb-3">
-                  Mutation Under a Registered Will
+                  Name Change Under a Filed Will
                 </h3>
                 <p className="text-[14.5px] leading-[1.65] text-[#49585F] mb-6">
-                  Where the deceased left a registered Will bequeathing the property to specific heirs or an executor, municipal authorities proceed with expedited verification:
+                  Where the deceased left a filed Will bequeathing the asset to specific heirs or an executor, city offices proceed with expedited check:
                 </p>
                 <ul className="space-y-3 text-xs sm:text-[13.5px] text-[#374151]">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
-                    <span>Original Death Certificate from Municipal Registrar</span>
+                    <span>Original Death Paper from City Registrar</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
-                    <span>Certified True Copy of the Registered Will from Sub-Registrar</span>
+                    <span>Certified True Copy of the Filed Will from SRO</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
-                    <span>Affidavit of Beneficiary declaring the Will is the testator&apos;s final testate disposition</span>
+                    <span>Sworn Note of Heir declaring the Will is the Will maker&apos;s final testate gift</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
-                    <span>High Court Probate order (mandatory only in Mumbai, Kolkata, Chennai presidential limits)</span>
+                    <span>High Court Probate order (needed only in Mumbai, Kolkata, Chennai presidential limits)</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
-                    <span>Public notice publication in daily newspapers (if required by local municipal bye-laws)</span>
+                    <span>Public notice publication in daily newspapers (if required by local city bye-laws)</span>
                   </li>
                 </ul>
               </div>
@@ -648,30 +648,30 @@ export default function PropertyMutationPage() {
             <div className="bg-white rounded-[24px] p-7 sm:p-8 border border-[#172228]/10 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col justify-between">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider mb-4">
-                  <span>Track B: Intestate Succession</span>
+                  <span>Track B: No-Will Estate</span>
                 </div>
                 <h3 className="text-xl font-semibold text-[#111827] mb-3">
-                  Mutation Without a Will (Intestate)
+                  Name Change Without a Will (No-Will)
                 </h3>
                 <p className="text-[14.5px] leading-[1.65] text-[#49585F] mb-6">
-                  When someone dies intestate, all Class 1 legal heirs inherit undivided co-shares. Transferring records requires establishing the complete family tree:
+                  When someone dies no-Will, all Class 1 legal heirs inherit undivided co-shares. Transferring records requires establishing the complete family tree:
                 </p>
                 <ul className="space-y-3 text-xs sm:text-[13.5px] text-[#374151]">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                    <span>Legal Heir Certificate, Waris Praman Patra, or Surviving Member Certificate</span>
+                    <span>Legal Heir Paper, Waris Praman Patra, or Surviving Member Paper</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                    <span>Registered Relinquishment Deed (if transferring title to one heir instead of joint mutation)</span>
+                    <span>Filed Release Deed (if transferring title to one heir instead of joint name change)</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                    <span>No Objection Certificate (NOC) sworn affidavits from all surviving siblings and mother</span>
+                    <span>No Objection Paper (NOC) sworn sworn notes from all surviving siblings and mother</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                    <span>Family Genealogy Affidavit (Pedigree Tree) attested by an Executive Magistrate</span>
+                    <span>Family Genealogy Sworn Note (Pedigree Tree) attested by an Executive Magistrate</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
@@ -684,7 +684,7 @@ export default function PropertyMutationPage() {
                   href="/services/legal-heir"
                   className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378]"
                 >
-                  <span>Need Help Getting a Legal Heir Certificate? Explore Services</span>
+                  <span>Need Help Getting a Legal Heir Paper? Explore Services</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -699,13 +699,13 @@ export default function PropertyMutationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>Advocate-Managed Execution Protocol</span>
+              <span>Lawyer-Managed Signing Protocol</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Step-by-Step SOP: Advocate-Managed Property Mutation Protocol
+              Step-by-Step SOP: Lawyer-Managed Asset Name Change Protocol
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How AMA Legal Solutions transitions parental property records smoothly through a rigorous 4-step conveyancing protocol:
+              How AMA Legal Solutions transitions parental asset records smoothly through a rigorous 4-step conveyancing protocol:
             </p>
           </div>
 
@@ -714,22 +714,22 @@ export default function PropertyMutationPage() {
               {
                 step: "01",
                 title: "Chain Audit & Title Search",
-                desc: "Our legal team verifies the parent registered sale deed, encumbrance certificates, municipal assessment books, and ensures all outstanding property tax dues are computed.",
+                desc: "Our legal team verifies the parent filed sale deed, encumbrance papers, city assessment books, and ensures all outstanding asset tax dues are computed.",
               },
               {
                 step: "02",
                 title: "Drafting Affidavits & Deeds",
-                desc: "We draft court-compliant family tree affidavits, municipal indemnity bonds, and coordinate Sub-Registrar execution of Relinquishment Deeds if co-heirs are releasing shares.",
+                desc: "We draft court-compliant family tree sworn notes, city indemnity bonds, and coordinate SRO signing of Release Deeds if co-heirs are releasing shares.",
               },
               {
                 step: "03",
                 title: "Revenue & Municipal Filing",
-                desc: "We file formal mutation petitions on state revenue portals (MCD, BBMP, Aaple Sarkar, UP Bhulekh), liaise with local Lekhpals/Talathis, and manage public notice ads.",
+                desc: "We file formal name change petitions on state revenue portals (MCD, BBMP, Aaple Sarkar, UP Bhulekh), liaise with local Lekhpals/Talathis, and manage public notice ads.",
               },
               {
                 step: "04",
                 title: "Delivery of Certified Records",
-                desc: "Following certification, we procure the newly issued Property Tax ID (UPIC), e-Khata Certificate & Extract, or updated 7/12 Satbara copy delivered straight to your home.",
+                desc: "Following certification, we procure the newly issued Asset Tax ID (UPIC), e-Khata Paper & Extract, or updated 7/12 Satbara copy delivered straight to your home.",
               },
             ].map((item) => (
               <div
@@ -758,10 +758,10 @@ export default function PropertyMutationPage() {
               <span>Court-Ready Drafting Template</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Statutory Checklist &amp; Affidavit Format for Property Mutation
+              Legal Checklist &amp; Sworn Note Format for Asset Name Change
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Every municipal authority and revenue tehsildar in India requires a formal sworn affidavit. Below is our advocate-verified draft template:
+              Every city office and revenue tehsildar in India requires a formal sworn sworn note. Below is our lawyer-checked draft template:
             </p>
           </div>
 
@@ -775,10 +775,10 @@ export default function PropertyMutationPage() {
           <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Interactive Legal Diagnostic Tools
+                Free Legal Diagnostic Tools
               </div>
               <p className="text-sm text-[#49585F] max-w-xl">
-                Unsure how your deceased parent&apos;s estate divides under the Hindu Succession Act or Indian Succession Act? Use our free legal calculator before applying for mutation:
+                Unsure how your deceased parent&apos;s estate divides under the Hindu Succession Act or Indian Succession Act? Use our free legal tool before applying for name change:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -793,7 +793,7 @@ export default function PropertyMutationPage() {
                 href="/tools/probate-checker"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#172228]/10 px-5 py-3 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Check If Probate Is Mandatory</span>
+                <span>Check If Probate Is Needed</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -811,13 +811,13 @@ export default function PropertyMutationPage() {
                 <span>Specialized Cross-Border Service</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
-                For NRIs &amp; Remote Heirs: Smooth Property Mutation from Abroad
+                For NRIs &amp; Remote Heirs: Smooth Asset Name Change from Abroad
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Managing parental property mutation in Bengaluru, Delhi NCR, Mumbai, Hyderabad, or Lucknow from the United States, United Kingdom, UAE, Canada, or Australia is notoriously frustrating. Dealing with local revenue clerks, verifying boundary records, and tracking 15-day objection periods often forces NRIs to take repeated expensive international flights.
+                Managing parental asset name change in Bengaluru, Delhi NCR, Mumbai, Hyderabad, or Lucknow from the United States, United Kingdom, UAE, Canada, or Australia is notoriously frustrating. Dealing with local revenue clerks, verifying boundary records, and tracking 15-day objection periods often forces NRIs to take repeated expensive international flights.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                With AMA Legal Solutions, NRIs execute an advocate-drafted <strong className="text-[#111827]">Special Power of Attorney (PoA)</strong> abroad. We guide you through Hague Apostille or Indian Embassy attestation, complete the mandatory 90-day Indian stamp adjudication under Section 18 of the Indian Stamp Act, and represent you before municipal corporations and revenue courts until your updated Khata or 7/12 extract is issued.
+                With AMA Legal Solutions, NRIs execute an lawyer-drafted <strong className="text-[#111827]">Special Power of Attorney (PoA)</strong> abroad. We guide you through Hague Apostille or Indian Embassy witness signing, complete the needed 90-day Indian stamp adjudication under Section 18 of the Indian Stamp Act, and represent you before city corporations and revenue courts until your updated Khata or 7/12 extract is issued.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -825,7 +825,7 @@ export default function PropertyMutationPage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Book NRI Remote Mutation Consultation</span>
+                <span>Book NRI Remote Name Change Talk</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
@@ -845,13 +845,13 @@ export default function PropertyMutationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Statutory FAQs &amp; Judicial Guidance</span>
+              <span>Legal FAQs &amp; Judicial Guidance</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions on Property Mutation in India
+              Frequently Asked Questions on Asset Name Change in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Authoritative answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and verified by <strong className="text-[#111827]">AMA Legal Solutions</strong> advocates:
+              Authoritative answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and checked by <strong className="text-[#111827]">AMA Legal Solutions</strong> lawyers:
             </p>
           </div>
 
@@ -873,10 +873,10 @@ export default function PropertyMutationPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Property Transmission Guides &amp; Legal Resources
+                Related Asset Transfer Guides &amp; Legal Resources
               </h3>
               <p className="text-sm text-[#49585F]">
-                Explore related estate transmission and revenue conveyancing services:
+                Explore related estate transfer and revenue conveyancing services:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -884,21 +884,21 @@ export default function PropertyMutationPage() {
                 href="/services/relinquishment-deed"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Relinquishment Deed Registration</span>
+                <span>Release Deed Filing</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/legal-heir"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Legal Heir Certificate Services</span>
+                <span>Legal Heir Paper Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/survivor-member-certificate"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Surviving Member Certificate</span>
+                <span>Surviving Member Paper</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -918,7 +918,7 @@ export default function PropertyMutationPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -928,12 +928,12 @@ export default function PropertyMutationPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This statutory guide is prepared in accordance with state land revenue codes (UP Revenue Code, 2006; Maharashtra Land Revenue Code, 1966; Karnataka Land Revenue Act, 1964; West Bengal Land Reforms Act, 1955) and municipal corporation acts (Delhi Municipal Corporation Act, 1957; Bruhat Bengaluru Mahanagara Palike Act, 2020; Mumbai Municipal Corporation Act, 1888). It is intended for informational and conveyancing guidance and does not replace tailored courtroom legal counsel in active civil litigation.
+              This legal guide is prepared in accordance with state land revenue codes (UP Revenue Code, 2006; Maharashtra Land Revenue Code, 1966; Karnataka Land Revenue Act, 1964; West Bengal Land Reforms Act, 1955) and city city board acts (Delhi City City Board Act, 1957; Bruhat Bengaluru Mahanagara Palike Act, 2020; Mumbai City City Board Act, 1888). It is intended for informational and conveyancing guidance and does not replace tailored courtroom legal counsel in active civil court fights.
             </p>
           </div>
           <a

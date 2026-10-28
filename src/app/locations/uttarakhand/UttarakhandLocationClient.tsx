@@ -256,11 +256,11 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 55 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Uttarakhand &amp; Land Succession
+                Will Drafting Services in Uttarakhand &amp; Land Estate
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will in Uttarakhand with senior lawyer oversight. Complete legal clarity on Section 154 land ceiling compliance, MDDA home property name change, e-Prerna signing, and Section 31 doorstep signing.
+                Draft a legally binding Will in Uttarakhand with senior lawyer oversight. Complete legal clarity on Section 154 land ceiling compliance, MDDA home asset name change, e-Prerna signing, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -316,7 +316,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Uttarakhand Urban &amp; Land Succession Blueprint
+                  Uttarakhand Urban &amp; Land Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -361,7 +361,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Nainital High Court Rule
@@ -504,10 +504,10 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional SRO Filing</span>
+                      <span>A Choice SRO Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Filing a Will is optional under Section 18(e) of the Registration Act, 1908. A plain Will signed in front of two witnesses is valid. Still, Book III filing on e-Prerna gives strong proof against land claims.
+                      Filing a Will is a choice under Section 18(e) of the Filing Act, 1908. A plain Will signed in front of two witnesses is valid. Still, Book III filing on e-Prerna gives strong proof against land claims.
                     </p>
                   </div>
 
@@ -571,7 +571,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Uttarakhand
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and estate rules in the state follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>UPZA&amp;LR Act, 1950</strong>. Any adult of sound mind can pass on freehold homes, army pensions, shop units, and family farm land by writing a clear Will.
+                  Will drafting and estate rules in the state follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>UPZA&amp;LR Act, 1950</strong>. Any adult of sound mind can pass on freehold homes, army pensions, shop units, and family farm land by writing a clear Will.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Families here often own a mix of MDDA home plots in Dehradun, work units in Haridwar or Pantnagar, hill homes in Nainital and Mussoorie, and farm land in the Doon Valley or Terai belt. Without a clear Will, legal heirs face long delays at Tehsil offices, city boards, and local banks.
@@ -630,10 +630,10 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 49 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Uttarakhand?
+                  2. Is Will Filing Needed in Uttarakhand?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, filing a Will at the SRO is <strong>optional</strong>. A plain Will signed on white paper in front of two neutral witnesses is valid in all courts.
+                  Under Section 18(e) of the Filing Act, 1908, filing a Will at the SRO is <strong>a choice</strong>. A plain Will signed on white paper in front of two neutral witnesses is valid in all courts.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Still, due to strict Section 154 land cap laws and high land rates in Dehradun, Mussoorie, and Nainital, senior lawyers advise formal Book III filing at the SRO. Filing on the e-Prerna site stops fake sign claims, keeps a safe state copy, and speeds up land record updates.
@@ -646,7 +646,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Key Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (e-Prerna SRO)</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (e-Prerna SRO)</th>
                       <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (White Paper)</th>
                     </tr>
                   </thead>
@@ -698,7 +698,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   3. Uttarakhand Probate Law: High Court Position
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Dehradun and Nainital is whether probate from the High Court of Uttarakhand is needed to inherit property under a Will. The set uped legal answer is <strong>no</strong>.
+                  A common question among asset owners in Dehradun and Nainital is whether probate from the High Court of Uttarakhand is needed to inherit asset under a Will. The set uped legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only for Wills signed within or covering assets situated in the historical presidency towns of Mumbai, Kolkata, and Chennai. Uttarakhand is a non-presidency area. The High Court of Uttarakhand at Nainital has settled that probate is non-needed for Hindu, Buddhist, Sikh, Jain, and Muslim Will makers.
@@ -714,7 +714,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     High Court of Uttarakhand Position
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Judicial rulings consistently confirm that legal heirs and heirs in Uttarakhand do not need to incur costly court fees or endure years of probate court fights. A registered Will acts as strong testamentary proof for MDDA name change, Nagar Nigam records, shop bank accounts, and Bhulekh Khatauni updates.
+                    Judicial rulings consistently confirm that legal heirs and heirs in Uttarakhand do not need to incur costly court fees or endure years of probate court fights. A filed Will acts as strong Will proof for MDDA name change, Nagar Nigam records, shop bank accounts, and Bhulekh Khatauni updates.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -730,7 +730,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     When is Probate Filed in District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor or heir may voluntarily apply for probate or letters of management before the District Judge in Dehradun, Haridwar, or Nainital only if disgruntled relatives initiate split suits or challenge the Will maker&apos;s mental soundness. A court probate order grants an undisputed judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor or heir may voluntarily apply for probate or letters of management before the District Judge in Dehradun, Haridwar, or Nainital only if disgruntled relatives initiate split suits or fight the Will maker&apos;s mental soundness. A court probate order grants an undisputed judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -752,7 +752,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   4. Uttarakhand SRO Directory: SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Uttarakhand operates computerized SRO offices across all 13 revenue districts under the Stamps and Registration Department via the <strong>e-Prerna</strong> portal (`signing.uk.gov.in`). Under Section 32 of the Registration Act, your Will can be registered at the SRO office within whose sub-district you reside or where any part of your land and flats is situated.
+                  Uttarakhand operates computerized SRO offices across all 13 revenue districts under the Stamps and Filing Office via the <strong>e-Prerna</strong> portal (`signing.uk.gov.in`). Under Section 32 of the Filing Act, your Will can be filed at the SRO office within whose sub-district you reside or where any part of your land and flats is situated.
                 </p>
               </div>
 
@@ -801,7 +801,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Uttarakhand Registration District
+                        Uttarakhand Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -829,7 +829,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-200/70 text-xs">
                     <span className="text-slate-500">
-                      Official e-Registration Portal: <strong>signing.uk.gov.in (e-Prerna)</strong>
+                      Official e-Filing Portal: <strong>signing.uk.gov.in (e-Prerna)</strong>
                     </span>
                     <Link
                       href="/contact"
@@ -855,7 +855,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Uttarakhand
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Uttarakhand span upscale home societies in Dehradun, pilgrimage and industrial hubs in Haridwar and Roorkee, scenic hill bungalows in Nainital and Mussoorie, and high-yield farm belts in Udham Singh Nagar. Our legal team provides customized drafting, e-Prerna appointment scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Uttarakhand span upscale home societies in Dehradun, pilgrimage and plant hubs in Haridwar and Roorkee, scenic hill bungalows in Nainital and Mussoorie, and high-yield farm belts in Udham Singh Nagar. Our legal team provides customized drafting, e-Prerna appointment scheduling, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -885,7 +885,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Dehradun</strong> for MDDA home plots, freehold bungalows, and luxury apartments along Rajpur Road and Sahastradhara Road. Structures clear testamentary clauses for defense veterans, ONGC officers, and senior citizens, making sure seamless Nagar Nigam name change and zero inheritance friction.
+                      Specialized <strong>Will drafting services in Dehradun</strong> for MDDA home plots, freehold bungalows, and luxury apartments along Rajpur Road and Sahastradhara Road. Structures clear Will clauses for defense veterans, ONGC officers, and senior citizens, making sure seamless Nagar Nigam name change and zero estate friction.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -919,7 +919,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Pilgrimage &amp; SIDCUL Industrial Belt
+                        Pilgrimage &amp; SIDCUL Plant Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Haridwar &amp; Roorkee
@@ -934,11 +934,11 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jwalapur</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Shivalik Nagar</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Civil Lines Roorkee</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">SIDCUL Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">SIDCUL Plant Area</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Haridwar and Roorkee</strong> for shop assets, manufacturing enterprises in SIDCUL, home colonies in Shivalik Nagar, and family dharamshalas. Codifies business succession, HDA property transfer, and seamless transfer of industrial equity.
+                      Customized <strong>Will drafting services in Haridwar and Roorkee</strong> for shop assets, manufacturing enterprises in SIDCUL, home colonies in Shivalik Nagar, and family dharamshalas. Codifies business estate, HDA asset transfer, and seamless transfer of plant equity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -947,13 +947,13 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Roshnabad &amp; Civil Lines Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-value shop estate structuring, family business succession mapping, and expedited Book III SRO signing.
+                        High-value shop estate structuring, family business estate mapping, and expedited Book III SRO signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Pilgrimage Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Pilgrimage Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1097,7 +1097,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Udham Singh Nagar</strong> tailored for large fertile farm landholdings, agro-processing units, and industrial manufacturing plants in SIDCUL Pantnagar. Implements strict Section 154 UPZA&LR land ceiling compliance and Bhulekh revenue name change protocols.
+                      Full <strong>Will drafting services in Udham Singh Nagar</strong> tailored for large fertile farm landholdings, agro-processing units, and plant manufacturing plants in SIDCUL Pantnagar. Implements strict Section 154 UPZA&LR land ceiling compliance and Bhulekh revenue name change protocols.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1106,13 +1106,13 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Rudrapur Collectorate Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Farmland split prevention, industrial lease succession, and computerized Book III signing.
+                        Farmland split prevention, plant lease estate, and computerized Book III signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Farm &amp; Industrial Holdings</span>
+                    <span className="text-xs font-bold text-slate-500">Farm &amp; Plant Holdings</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1150,7 +1150,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Almora and Ranikhet</strong> for retired military officers, tea estates, traditional stone houses, and hillside farm holdings. Protects family inheritances against illegal encroachment and make sures clear succession for non-resident family members.
+                      Customized <strong>Will drafting services in Almora and Ranikhet</strong> for retired military officers, tea estates, traditional stone houses, and hillside farm holdings. Protects family inheritances against illegal encroachment and make sures clear estate for non-resident family members.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1159,7 +1159,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Almora Tehsil Office Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Defense veteran estate planning, cantonment property succession, and doorstep commissioner signing in remote hill areas.
+                        Defense veteran estate planning, cantonment asset estate, and doorstep commissioner signing in remote hill areas.
                       </p>
                     </div>
                   </div>
@@ -1189,7 +1189,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 48 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: e-Prerna Registration Process
+                  6. Step-by-Step SOP: e-Prerna Filing Process
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this clear 5-step process to write, sign, and record your Will before the SRO in Uttarakhand. Each step keeps your family safe from future court delays:
@@ -1278,10 +1278,10 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 49 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Seniors
+                  7. Section 31 Doorstep SRO Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For older adults, unwell owners, or retired veterans living in Dehradun, Haridwar, Haldwani, or hill towns, a trip to a busy SRO can be hard. Under <strong>Section 31 of the Registration Act, 1908</strong>, the SRO officer has the legal right to visit a private home or hospital bed to record a Will.
+                  For older adults, unwell owners, or retired veterans living in Dehradun, Haridwar, Haldwani, or hill towns, a trip to a busy SRO can be hard. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO officer has the legal right to visit a private home or hospital bed to record a Will.
                 </p>
               </div>
 
@@ -1334,7 +1334,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 48 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Uttarakhand SRO Offices
+                  8. Paper Checklist for Uttarakhand SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Keep your papers ready before you book your SRO slot. You have checked <strong>{checkedCount} of {checklist.length}</strong> needed items:
@@ -1383,7 +1383,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 52 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Uttarakhand Property Types: MDDA Plots &amp; Hill Land
+                  9. Uttarakhand Asset Types: MDDA Plots &amp; Hill Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Title transfer rules in Uttarakhand depend on the type of land and the local civic board that keeps the records:
@@ -1399,7 +1399,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     MDDA &amp; HDA Home Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    MDDA in Dehradun and HDA in Haridwar ask for a registered Will, a bond, and a death paper to update the owner&apos;s name (Namantaran) without a court case.
+                    MDDA in Dehradun and HDA in Haridwar ask for a filed Will, a bond, and a death paper to update the owner&apos;s name (Namantaran) without a court case.
                   </p>
                 </div>
 
@@ -1411,7 +1411,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                     Bhulekh Farmland &amp; Orchards
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 154 UPZA&amp;LR, non-residents face a 250 sq. meter cap when buying land. A registered Will gives solid proof of family succession and keeps Khatauni farm land safe.
+                    Under Section 154 UPZA&amp;LR, non-residents face a 250 sq. meter cap when buying land. A filed Will gives solid proof of family estate and keeps Khatauni farm land safe.
                   </p>
                 </div>
 
@@ -1461,7 +1461,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                       <td className="p-4">State of Uttarakhand</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat State Fee)</td>
                       <td className="p-4">e-Prerna Portal / SRO Desk</td>
                     </tr>
@@ -1588,7 +1588,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
@@ -1698,10 +1698,10 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Filing) and Section 31 (Home Visit by SRO).
+                    Section 18(e) (A Choice Filing) and Section 31 (Home Visit by SRO).
                   </p>
                 </div>
 
@@ -1750,7 +1750,29 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1769,7 +1791,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Uttarakhand Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Uttarakhand Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1788,7 +1810,7 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Uttarakhand SRO Registered &amp; MDDA Name Change Compliant</span>
+              <span>Uttarakhand SRO Filed &amp; MDDA Name Change Compliant</span>
               <Link
                 href="/start"
                 onClick={(e) => {

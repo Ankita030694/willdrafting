@@ -367,7 +367,7 @@ export default function RelinquishmentDeedPage() {
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
-              Relinquishment Deed
+              Release Deed
             </span>
           </nav>
 
@@ -380,12 +380,12 @@ export default function RelinquishmentDeedPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-21" className="text-[#6B7280]">
@@ -401,16 +401,16 @@ export default function RelinquishmentDeedPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
-                <span>Property Succession &amp; Sub-Registrar Conveyance · All Indian States</span>
+                <span>Asset Estate &amp; SRO Conveyance · All Indian States</span>
               </div>
 
               {/* Single Strict H1: 52 characters (Strictly 30-65 chars for Screaming Frog) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Relinquishment Deed Registration &amp; Drafting in India
+                Release Deed Filing &amp; Drafting in India
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Under <strong className="text-[#111827]">Section 17 of the Registration Act, 1908</strong>, giving up an inherited property share needs a registered deed. A <strong className="text-[#111827]">Relinquishment Deed (Haq Tyag)</strong> lets you transfer your share to another legal heir. You can complete this transfer smoothly and avoid family disputes. Our advocates ensure your deed is fully valid under Indian law.
+                Under <strong className="text-[#111827]">Section 17 of the Filing Act, 1908</strong>, giving up an inherited asset share needs a filed deed. A <strong className="text-[#111827]">Release Deed (Haq Tyag)</strong> lets you transfer your share to another legal heir. You can complete this transfer smoothly and avoid family fights. Our lawyers ensure your deed is fully valid under Indian law.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -418,7 +418,7 @@ export default function RelinquishmentDeedPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Draft My Relinquishment Deed</span>
+                  <span>Draft My Release Deed</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <a
@@ -432,11 +432,11 @@ export default function RelinquishmentDeedPage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-[#172228]/10 text-xs font-semibold text-[#172228]">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Mandatory Registration</span>
+                  <span>Needed Filing</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>SRO Advocate Accompanied</span>
+                  <span>SRO Lawyer Accompanied</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
@@ -461,19 +461,19 @@ export default function RelinquishmentDeedPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Unregistered papers are void:</strong> An informal NOC on stamp paper does not transfer title. Under Section 49 of the Registration Act, courts reject it.
+                    <strong>Plain papers are void:</strong> An informal NOC on stamp paper does not transfer title. Under Section 49 of the Filing Act, courts reject it.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Municipal mutation stops:</strong> Housing boards and civic bodies require a registered deed. They will not update land records without it.
+                    <strong>City name change stops:</strong> Housing boards and civic bodies require a filed deed. They will not update land records without it.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Future dispute risk:</strong> If a family member changes their mind later, an informal paper cannot protect your sole ownership in court.
+                    <strong>Future fight risk:</strong> If a family member changes their mind later, an informal paper cannot protect your sole ownership in court.
                   </span>
                 </li>
               </ul>
@@ -481,7 +481,7 @@ export default function RelinquishmentDeedPage() {
                 href="/blogs/gift-deed-vs-will-india"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Read Relinquishment Deed vs Gift Deed Analysis</span>
+                <span>Read Release Deed vs Gift Deed Analysis</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -505,10 +505,10 @@ export default function RelinquishmentDeedPage() {
               <span>Comparative Legal Analysis</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Relinquishment Deed vs Gift Deed &amp; Sale Deed Comparison
+              Release Deed vs Gift Deed &amp; Sale Deed Comparison
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Choosing the right legal deed saves money and time. A Relinquishment Deed is used only between co-heirs. A Gift Deed or Sale Deed is used for third parties. Most Indian states offer lower stamp duty for family co-heirs. Review the simple table below to compare your choices:
+              Choosing the right legal deed saves money and time. A Release Deed is used only between co-heirs. A Gift Deed or Sale Deed is used for third parties. Most Indian states offer lower stamp duty for family co-heirs. Review the simple table below to compare your choices:
             </p>
           </div>
 
@@ -518,7 +518,7 @@ export default function RelinquishmentDeedPage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[22%]">Legal Parameter</th>
-                    <th className="py-4 px-6 w-[26%] text-[#C65378]">Relinquishment Deed (Haq Tyag)</th>
+                    <th className="py-4 px-6 w-[26%] text-[#C65378]">Release Deed (Haq Tyag)</th>
                     <th className="py-4 px-6 w-[26%]">Gift Deed</th>
                     <th className="py-4 px-6 w-[26%]">Sale Deed</th>
                   </tr>
@@ -548,7 +548,7 @@ export default function RelinquishmentDeedPage() {
               <span>State Stamp Schedules</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              State Stamp Duty Rates for Relinquishment Deeds in India
+              State Stamp Duty Rates for Release Deeds in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Most Indian states offer lower stamp duty for family deeds. For example, Delhi charges a flat stamp fee for family co-heirs. Uttar Pradesh also offers a low flat rate for blood relatives. Check your state rates in the table below before booking your slot:
@@ -562,7 +562,7 @@ export default function RelinquishmentDeedPage() {
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[25%]">Indian State / Union Territory</th>
                     <th className="py-4 px-6 w-[30%]">Family Stamp Duty Rate</th>
-                    <th className="py-4 px-6 w-[25%]">Sub-Registrar Registration Fee</th>
+                    <th className="py-4 px-6 w-[25%]">SRO Filing Fee</th>
                     <th className="py-4 px-6 w-[20%]">Official Online Portal</th>
                   </tr>
                 </thead>
@@ -588,13 +588,13 @@ export default function RelinquishmentDeedPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>Step-by-Step Execution Protocol</span>
+              <span>Step-by-Step Signing Protocol</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              4-Step Registration Protocol at Sub-Registrar Office
+              4-Step Filing Protocol at SRO office
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              You do not need to worry about complex court visits. Our team guides you through four clear steps. We check your documents, prepare your draft, pay fees online, and book your Sub-Registrar visit:
+              You do not need to worry about complex court visits. Our team guides you through four clear steps. We check your papers, prepare your draft, pay fees online, and book your SRO visit:
             </p>
           </div>
 
@@ -603,17 +603,17 @@ export default function RelinquishmentDeedPage() {
               {
                 step: "01",
                 title: "Title & Heir Verification",
-                desc: "We check the original property deed and Legal Heir Certificate. This confirms each family member's exact legal share.",
+                desc: "We check the original asset deed and Legal Heir Paper. This confirms each family member's exact legal share.",
               },
               {
                 step: "02",
                 title: "Custom Legal Drafting",
-                desc: "Our advocates draft the deed with clear property boundaries. The draft states that the share is given up voluntarily.",
+                desc: "Our lawyers draft the deed with clear asset boundaries. The draft states that the share is given up voluntarily.",
               },
               {
                 step: "03",
                 title: "Stamp Duty & SRO Slot",
-                desc: "We calculate state stamp duty and buy online e-Stamp paper. We pay the registration fees and book your appointment.",
+                desc: "We calculate state stamp duty and buy online e-Stamp paper. We pay the filing fees and book your appointment.",
               },
               {
                 step: "04",
@@ -645,16 +645,16 @@ export default function RelinquishmentDeedPage() {
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
                 <Users className="w-4 h-4" />
-                <span>NRI &amp; Overseas Co-Heir Assistance</span>
+                <span>NRI &amp; Overseas Co-Heir Help</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
-                NRI Haq Tyag Execution: Apostille &amp; Power of Attorney
+                NRI Haq Tyag Signing: Apostille &amp; Power of Attorney
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Overseas co-heirs do not need to fly to India. When settling family homes in Delhi, Mumbai, Bengaluru, or Punjab, NRI siblings can manage the process from abroad.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                An NRI heir can sign a <strong className="text-[#111827]">Special Power of Attorney (SPA)</strong> in their country of residence. You get it apostilled or attested by the Indian Embassy. Our team then completes the registration in India under the Indian Stamp Act, 1899.
+                An NRI heir can sign a <strong className="text-[#111827]">Special Power of Attorney (SPA)</strong> in their country of residence. You get it apostilled or attested by the Indian Embassy. Our team then completes the filing in India under the Indian Stamp Act, 1899.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -662,7 +662,7 @@ export default function RelinquishmentDeedPage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Consult an NRI Property Advocate</span>
+                <span>Consult an NRI Asset Lawyer</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
@@ -685,10 +685,10 @@ export default function RelinquishmentDeedPage() {
               <span>Legal Knowledge Base</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions on Relinquishment Deeds
+              Frequently Asked Questions on Release Deeds
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Clear legal answers help you make safe choices. Read our simple guide below to learn more about Haq Tyag and your property rights:
+              Clear legal answers help you make safe choices. Read our simple guide below to learn more about Haq Tyag and your asset rights:
             </p>
           </div>
 
@@ -710,7 +710,7 @@ export default function RelinquishmentDeedPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Succession &amp; Property Services
+                Related Estate &amp; Asset Services
               </div>
               <p className="text-sm text-[#49585F]">
                 Explore related legal services for establishing rightful heirs and registering wills:
@@ -721,7 +721,7 @@ export default function RelinquishmentDeedPage() {
                 href="/services/legal-heir"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Legal Heir Certificate Services</span>
+                <span>Legal Heir Paper Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -735,7 +735,7 @@ export default function RelinquishmentDeedPage() {
                 href="/tools/succession-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Succession Calculator Tool</span>
+                <span>Estate Tool Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -748,7 +748,7 @@ export default function RelinquishmentDeedPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -758,12 +758,12 @@ export default function RelinquishmentDeedPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This guide is prepared under Section 17 of the Registration Act, 1908, the Transfer of Property Act, 1882, the Hindu Succession Act, 1956, and state stamp manuals. It is intended for educational purposes and does not constitute formal legal representation until an advocate engagement is signed.
+              This guide is prepared under Section 17 of the Filing Act, 1908, the Transfer of Property Act, 1882, the Hindu Succession Act, 1956, and state stamp manuals. It is intended for educational purposes and does not constitute formal legal representation until an lawyer engagement is signed.
             </p>
           </div>
           <a

@@ -35,21 +35,21 @@ import {
 
 // Table of Contents Items (all labels <= 70 chars, unique, no em-dashes)
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Statutory Rules: Transfer of Property Act Gift Law" },
+  { id: "statutory-framework", label: "1. Legal Rules: Transfer of Property Act Gift Law" },
   { id: "blood-relative-definition", label: "2. Blood Relative Definition & Section 56(2) Tax Rules" },
   { id: "state-stamp-duty-matrix", label: "3. State Stamp Duty Matrix: Concessions for Relatives" },
   { id: "the-unconditional-deed-trap", label: "4. The Unconditional Gift Trap: Why Online Deeds Fail" },
   { id: "senior-citizen-section-23", label: "5. Section 23 Senior Citizens Act: Legal Revocation Power" },
   { id: "supreme-court-precedents", label: "6. Supreme Court Rulings: Sudesh Chhikara & Urmila Dixit" },
   { id: "gift-deed-vs-will", label: "7. Gift Deed vs Will: Comparison for Indian Families" },
-  { id: "interactive-clause-customizer", label: "8. Interactive Gift Deed Clause & Stamp Duty Customizer" },
+  { id: "interactive-clause-customizer", label: "8. Free Gift Deed Clause & Stamp Duty Customizer" },
   { id: "complete-gift-deed-format", label: "9. Senior-Protected Blood Relative Gift Deed Format" },
-  { id: "sro-registration-sop", label: "10. Step-by-Step SOP: SRO Registration Protocol" },
-  { id: "title-documents-checklist", label: "11. Mandatory Verification Checklist Before Registration" },
+  { id: "sro-registration-sop", label: "10. Step-by-Step SOP: SRO Filing Protocol" },
+  { id: "title-documents-checklist", label: "11. Needed Check Checklist Before Filing" },
   { id: "real-life-case-studies", label: "12. Real-World Case Studies: Noida, Mumbai & Bangalore" },
-  { id: "legal-counsel-profile", label: "13. Senior Succession Legal Team & Advocate Verification" },
+  { id: "legal-counsel-profile", label: "13. Senior Estate Legal Team & Lawyer Check" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions: Blood Relative Gifts" },
-  { id: "statutory-citations", label: "15. Statutory Citations & Official Revenue Portals" },
+  { id: "statutory-citations", label: "15. Legal Citations & Official Revenue Portals" },
 ];
 
 // State Stamp Duty Concession Rates for Blood Relatives
@@ -149,26 +149,26 @@ const FAQS = [
   },
   {
     q: "What is the stamp duty on a gift deed to blood relatives across Indian states?",
-    a: "Many Indian states offer generous stamp duty discounts for blood relatives. In Maharashtra, stamp duty is only ₹200 for residential homes. In Uttar Pradesh, it is a flat ₹5,000. In Haryana and Punjab, stamp duty is completely 0%. Tamil Nadu caps the total stamp duty at ₹25,000 for family members.",
+    a: "Many Indian states offer generous stamp duty discounts for blood relatives. In Maharashtra, stamp duty is only ₹200 for home homes. In Uttar Pradesh, it is a flat ₹5,000. In Haryana and Punjab, stamp duty is completely 0%. Tamil Nadu caps the total stamp duty at ₹25,000 for family members.",
   },
   {
-    q: "Is there any income tax on property received as a gift from blood relatives?",
-    a: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, gifts received from defined relatives are 100% tax-free. This applies to parents, children, spouse, siblings, and grandparents. The value of the property does not matter.",
+    q: "Is there any income tax on asset received as a gift from blood relatives?",
+    a: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, gifts received from defined relatives are 100% tax-free. This applies to parents, children, spouse, siblings, and grandparents. The value of the asset does not matter.",
   },
   {
-    q: "Should I execute a Gift Deed or a Will for transferring property to my child?",
+    q: "Should I execute a Gift Deed or a Will for transferring asset to my child?",
     a: "A Will is usually safer for parents. With a Will, you keep 100% ownership and control during your life. You pay no stamp duty, and you can change the Will anytime. A Gift Deed is helpful only when your child needs immediate ownership today.",
   },
   {
-    q: "Is registration of a gift deed mandatory for immovable property in India?",
-    a: "Yes. Under Section 123 of the Transfer of Property Act, 1882, every gift of immovable property must be registered. You must sign the deed at the Sub-Registrar Office before two independent witnesses. An unregistered gift deed has zero legal effect in court.",
+    q: "Is filing of a gift deed needed for land asset in India?",
+    a: "Yes. Under Section 123 of the Transfer of Property Act, 1882, every gift of land asset must be filed. You must sign the deed at the SRO office before two independent witnesses. An plain gift deed has zero legal effect in court.",
   },
   {
-    q: "Can ancestral property be transferred through a gift deed to one child?",
-    a: "No. Under Hindu law, you cannot gift undivided ancestral property to one child without written consent from all other legal coparceners. However, you can freely gift your self-acquired property to any child you choose.",
+    q: "Can family asset be transferred through a gift deed to one child?",
+    a: "No. Under Hindu law, you cannot gift undivided family asset to one child without written consent from all other legal coparceners. However, you can freely gift your self-acquired asset to any child you choose.",
   },
   {
-    q: "What happens to capital gains tax when the child sells the gifted property?",
+    q: "What happens to capital gains tax when the child sells the gifted asset?",
     a: "Under Section 49(1) of the Income Tax Act, 1961, the child takes over the parent's original purchase cost. Under Section 2(42A), the parent's holding period also counts toward the child's tenure for long-term capital gains tax calculations.",
   },
 ];
@@ -186,13 +186,13 @@ export default function GiftDeedBloodRelativesClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Interactive Customizer Form State
+  // Free Customizer Form State
   const [selectedRelation, setSelectedRelation] = useState<string>("father-to-son");
   const [selectedState, setSelectedState] = useState<string>("Maharashtra");
   const [propertyValuation, setPropertyValuation] = useState<number>(7500000);
@@ -378,7 +378,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -460,7 +460,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 122–126 of the Transfer of Property Act, 1882, Section 17(1)(a) of
-                the Registration Act, 1908, Section 56(2)(x) of the Income Tax Act, 1961, and Section 23 of
+                the Filing Act, 1908, Section 56(2)(x) of the Income Tax Act, 1961, and Section 23 of
                 the MWPSC Act, 2007 (interpreted in <em>Sudesh Chhikara</em> &amp; <em>Urmila Dixit</em>).
               </p>
             </div>
@@ -480,8 +480,8 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory Registration:</strong> You must register every gift deed for immovable
-                    property at the local Sub-Registrar Office with two witnesses.
+                    <strong>Needed Filing:</strong> You must register every gift deed for land
+                    asset at the local SRO office with two witnesses.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -522,11 +522,11 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               <div className="p-4 sm:p-5 bg-gradient-to-r from-slate-50 to-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t border-slate-100">
                 <div className="text-xs text-slate-600">
                   <strong className="text-slate-900">Senior-Protected Conveyance Framework:</strong> Transfer of
-                  Property Act 1882 compliant format with embedded Maintenance and Lifetime Residence covenants.
+                  Asset Act 1882 compliant format with embedded Maintenance and Lifetime Residence covenants.
                 </div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200 shrink-0">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Legal Standard</span>
+                  <span>Checked Legal Standard</span>
                 </div>
               </div>
             </div>
@@ -538,25 +538,25 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Transfer of Property Act Gift Law
+                1. Legal Rules: Transfer of Property Act Gift Law
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A gift deed lets you give property to a family member during your lifetime. In India,
-                  property gifts follow <strong>Sections 122 to 126 of the Transfer of Property Act, 1882</strong>.
+                  A gift deed lets you give asset to a family member during your lifetime. In India,
+                  asset gifts follow <strong>Sections 122 to 126 of the Transfer of Property Act, 1882</strong>.
                   Under this law, a valid gift requires four main points:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 pb-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
                     <div className="font-bold text-slate-900 text-sm mb-1">1. Voluntary Transfer</div>
                     <div className="text-xs text-slate-600">
-                      You must give the property of your own free will. There must be no force or pressure.
+                      You must give the asset of your own free will. There must be no force or pressure.
                     </div>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
                     <div className="font-bold text-slate-900 text-sm mb-1">2. Zero Payment</div>
                     <div className="text-xs text-slate-600">
-                      No money can change hands. You give the property purely out of love and affection.
+                      No money can change hands. You give the asset purely out of love and affection.
                     </div>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
@@ -566,15 +566,15 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     </div>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
-                    <div className="font-bold text-slate-900 text-sm mb-1">4. Official Registration</div>
+                    <div className="font-bold text-slate-900 text-sm mb-1">4. Official Filing</div>
                     <div className="text-xs text-slate-600">
-                      You must register the deed at the Sub-Registrar Office in front of two adult witnesses.
+                      You must register the deed at the SRO office in front of two adult witnesses.
                     </div>
                   </div>
                 </div>
                 <p>
                   You cannot transfer land or a flat by word of mouth. Under Section 123 of the Act, an oral
-                  gift of immovable property has no legal standing in India.
+                  gift of land asset has no legal standing in India.
                 </p>
               </div>
             </section>
@@ -590,8 +590,8 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Gifting property to close relatives has huge tax advantages. Normally, if someone receives
-                  property for free, they must pay income tax on its value under Section 56(2)(x).
+                  Gifting asset to close relatives has huge tax advantages. Normally, if someone receives
+                  asset for free, they must pay income tax on its value under Section 56(2)(x).
                 </p>
                 <p>
                   However, the law makes an exception for defined relatives. Gifts from close family members are{" "}
@@ -631,7 +631,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 </div>
                 <p>
                   Keep in mind that income tax and state stamp duty are different. While income tax is zero, you
-                  must still pay local state stamp duty at the time of registration.
+                  must still pay local state stamp duty at the time of filing.
                 </p>
               </div>
             </section>
@@ -647,7 +647,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Each state sets its own stamp duty rates. Standard sale deeds usually carry 5% to 7% duty.
-                However, many states charge much lower rates when you gift property to close family members:
+                However, many states charge much lower rates when you gift asset to close family members:
               </p>
 
               {/* Responsive Comparison Table */}
@@ -655,11 +655,11 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-[#172228] text-white">
                     <tr>
-                      <th className="py-3 px-4 font-bold">State / Jurisdiction</th>
+                      <th className="py-3 px-4 font-bold">State / Area</th>
                       <th className="py-3 px-4 font-bold">Blood Relative Duty</th>
                       <th className="py-3 px-4 font-bold">Regular Duty</th>
-                      <th className="py-3 px-4 font-bold">Registration Fee</th>
-                      <th className="py-3 px-4 font-bold">Statutory Authority</th>
+                      <th className="py-3 px-4 font-bold">Filing Fee</th>
+                      <th className="py-3 px-4 font-bold">Legal Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -702,8 +702,8 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     <span>The Danger of Unconditional Templates</span>
                   </div>
                   <p className="text-xs sm:text-sm text-rose-900 leading-relaxed">
-                    Generic templates give away complete ownership without conditions. Once registered, the child
-                    becomes the sole legal owner. The child can sell the property, mortgage it, or even ask the
+                    Generic templates give away complete ownership without conditions. Once filed, the child
+                    becomes the sole legal owner. The child can sell the asset, mortgage it, or even ask the
                     parents to leave.
                   </p>
                 </div>
@@ -735,7 +735,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     How Section 23 Protects Parents
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Under Section 23, a senior citizen can transfer property subject to a condition. The child must
+                    Under Section 23, a senior citizen can transfer asset subject to a condition. The child must
                     promise to provide food, shelter, clothing, and medical care. If the child fails to care for
                     the parent, the law treats the transfer as made by fraud.
                   </p>
@@ -814,14 +814,14 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="py-3 px-4 font-bold">Key Feature</th>
-                      <th className="py-3 px-4 font-bold">Registered Gift Deed</th>
-                      <th className="py-3 px-4 font-bold">Registered / Plain Will</th>
+                      <th className="py-3 px-4 font-bold">Filed Gift Deed</th>
+                      <th className="py-3 px-4 font-bold">Filed / Plain Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">When Ownership Changes</td>
-                      <td className="py-3 px-4 text-rose-700 font-semibold">Immediately upon registration</td>
+                      <td className="py-3 px-4 text-rose-700 font-semibold">Right away upon filing</td>
                       <td className="py-3 px-4 text-emerald-700 font-semibold">Only after death of parent</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
@@ -861,7 +861,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>INTERACTIVE UTILITY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Interactive Gift Deed Clause &amp; Stamp Duty Customizer
+                8. Free Gift Deed Clause &amp; Stamp Duty Customizer
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your relationship and state below to estimate government charges and build your protective clause:
@@ -892,7 +892,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   {/* State */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      State of Property
+                      State of Asset
                     </label>
                     <select
                       value={selectedState}
@@ -1067,11 +1067,11 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     <strong>SCHEDULE</strong> below.
                   </p>
                   <p>
-                    2. The Donor bought the property vide Registered Sale Deed dated [Date], Document No. [Doc No.] at
+                    2. The Donor bought the asset vide Filed Sale Deed dated [Date], Paper No. [Doc No.] at
                     SRO [SRO Location].
                   </p>
                   <p>
-                    3. The property is free from all bank loans, liens, or court disputes.
+                    3. The asset is free from all bank loans, liens, or court fights.
                   </p>
                   <p>
                     4. The Donee is the biological child of the Donor, and the Donor holds deep affection for the Donee.
@@ -1079,7 +1079,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
 
                   <div className="font-bold text-slate-900">NOW THIS DEED WITNESSETH:</div>
                   <p>
-                    <strong>1. VOLUNTARY TRANSFER:</strong> The Donor voluntarily gives the Schedule Property to the
+                    <strong>1. VOLUNTARY TRANSFER:</strong> The Donor voluntarily gives the Schedule Asset to the
                     Donee without receiving any money.
                   </p>
 
@@ -1139,11 +1139,11 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Step-by-Step SOP: SRO Registration Protocol
+                10. Step-by-Step SOP: SRO Filing Protocol
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Follow these clear steps to register your gift deed at the Sub-Registrar Office:
+                  Follow these clear steps to register your gift deed at the SRO office:
                 </p>
 
                 <div className="space-y-3">
@@ -1206,8 +1206,8 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     <div>
                       <div className="font-extrabold text-slate-900 text-sm">Complete Biometrics &amp; Collect Deed</div>
                       <div className="text-xs text-slate-600 mt-0.5">
-                        The registrar takes your photo and thumbprints. Collect the registered deed within a few days,
-                        then apply for revenue mutation.
+                        The registrar takes your photo and thumbprints. Collect the filed deed within a few days,
+                        then apply for revenue name change.
                       </div>
                     </div>
                   </div>
@@ -1222,16 +1222,16 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>PRE-REGISTRATION DUE DILIGENCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Mandatory Verification Checklist Before Registration
+                11. Needed Check Checklist Before Filing
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Make sure you have these key documents ready before visiting the Sub-Registrar:
+                Make sure you have these key papers ready before visiting the SRO:
               </p>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                    SRO Document Package
+                    SRO Paper Package
                   </div>
                   <button
                     onClick={copyChecklistToClipboard}
@@ -1249,15 +1249,15 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Proof of family relationship (Passport or school certificate)</span>
+                    <span>Proof of family relationship (Passport or school paper)</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Encumbrance Certificate (EC) for past 13 to 30 years</span>
+                    <span>Encumbrance Paper (EC) for past 13 to 30 years</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Latest property tax receipt and electricity bill</span>
+                    <span>Latest asset tax receipt and electricity bill</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1323,14 +1323,14 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
                 Under Section 49(1) of the Income Tax Act, the child takes over your original purchase price. Under
                 Budget 2024 rules, you can compare the <strong>12.5% Flat Tax vs 20% with Indexation</strong>. Use our
-                free calculator to check future capital gains tax.
+                free tool to check future capital gains tax.
               </p>
               <div className="pt-2">
                 <Link
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-bold text-xs sm:text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                 >
-                  <span>Open Inherited Property Capital Gains Calculator</span>
+                  <span>Open Inherited Asset Capital Gains Tool</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -1343,7 +1343,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>LEGAL EXPERTISE &amp; REVIEW</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Senior Succession Legal Team &amp; Advocate Verification
+                13. Senior Estate Legal Team &amp; Lawyer Check
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 space-y-4">
                 <div className="flex items-start sm:items-center gap-4">
@@ -1352,10 +1352,10 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   </div>
                   <div>
                     <div className="text-base sm:text-lg font-extrabold text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; Conveyancing Counsel • AMA Legal Solutions
+                      Senior Estate &amp; Conveyancing Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
                       Bar Council of Delhi • Supreme Court &amp; High Court Practitioner
@@ -1363,13 +1363,13 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Specializing in real estate deeds, family settlements, Sub-Registrar registrations, and senior
+                  Specializing in real estate deeds, family settlements, SRO registrations, and senior
                   citizen protections under Section 23 of the Senior Citizens Act, 2007.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
                   <div className="flex items-center gap-2 text-slate-700">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>100% Statutory Compliance</span>
+                    <span>100% Legal Compliance</span>
                   </div>
                   <Link
                     href="/templates/gift-deed-format-blood-relatives-india"
@@ -1428,7 +1428,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Citations &amp; Official Revenue Portals
+                15. Legal Citations &amp; Official Revenue Portals
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <a
@@ -1469,7 +1469,29 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 </a>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1482,21 +1504,21 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian succession law, Section 23 senior citizen revocations, and family property
+                Expert in Indian succession law, Section 23 senior citizen revocations, and family asset
                 conveyancing.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1534,17 +1556,17 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <span>AMA LEGAL CONVEYANCING DESK</span>
               </div>
               <h4 className="font-black text-slate-900 text-sm leading-snug">
-                Need Custom Gift Deed Drafting &amp; SRO Assistance?
+                Need Custom Gift Deed Drafting &amp; SRO Help?
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Our property litigators draft watertight Section 23 deeds and manage complete Sub-Registrar
-                e-stamping and physical registration pan-India.
+                Our asset litigators draft watertight Section 23 deeds and manage complete SRO
+                e-stamping and physical filing pan-India.
               </p>
               <Link
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
               >
-                <span>Schedule Advocate Consultation</span>
+                <span>Schedule Lawyer Talk</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

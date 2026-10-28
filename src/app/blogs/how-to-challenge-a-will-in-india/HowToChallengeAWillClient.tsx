@@ -48,20 +48,20 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-grounds", label: "1. Legal Grounds to Challenge a Will" },
+  { id: "statutory-grounds", label: "1. Legal Grounds to Fight a Will" },
   { id: "undue-influence", label: "2. Undue Influence & Coercion Rules" },
   { id: "mental-capacity", label: "3. Mental Soundness Under Section 59" },
   { id: "forgery-suspicion", label: "4. Forgery & Section 67 BSA 2023" },
   { id: "limitation-period", label: "5. Limitation Period to Contest" },
-  { id: "court-procedure", label: "6. Court Procedure & Caveat Filing" },
-  { id: "contest-comparison", label: "7. Challenge Grounds vs Defenses" },
+  { id: "court-procedure", label: "6. Court Step & Caveat Filing" },
+  { id: "contest-comparison", label: "7. Fight Grounds vs Defenses" },
   { id: "visual-blueprint", label: "8. Visual Framework & Law Books" },
   { id: "step-by-step-sop", label: "9. 6-Stage Contest Protocol" },
-  { id: "defensive-drafting", label: "10. Making a Will Challenge-Proof" },
-  { id: "avoid-with-a-will", label: "11. How Proper Drafting Prevents Disputes" },
+  { id: "defensive-drafting", label: "10. Making a Will Fight-Proof" },
+  { id: "avoid-with-a-will", label: "11. How Proper Drafting Prevents Fights" },
   { id: "specialized-scenarios", label: "12. Disinherited Heirs & NRI Estates" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Laws & Case Citations" },
+  { id: "statutory-citations", label: "14. Legal Laws & Case Citations" },
 ];
 
 const CONTEST_GROUNDS = [
@@ -109,7 +109,7 @@ const STEP_STAGES = [
     title: "Obtain Copy & Lodge an Immediate Caveat",
     authority: "Probate Court / Civil District Court",
     description:
-      "Obtain a certified copy of the disputed Will from the Sub-Registrar Office or probate registry. Immediately file a Caveat under Section 284 of the Indian Succession Act. This prevents the court from granting probate or letters of administration behind your back.",
+      "Obtain a certified copy of the disputed Will from the SRO office or probate registry. Right away file a Caveat under Section 284 of the Indian Succession Act. This prevents the court from granting probate or letters of care behind your back.",
   },
   {
     number: "02",
@@ -117,7 +117,7 @@ const STEP_STAGES = [
     title: "Collect Medical Records & Forensic Evidence",
     authority: "Hospitals, Banks & Certified Forensic Labs",
     description:
-      "Secure hospital case sheets, doctor notes, and prescription logs for the date of execution. Gather admitted contemporary signatures from bank cards, property deeds, or passport files. Engage an accredited handwriting expert to examine signatures.",
+      "Secure hospital case sheets, doctor notes, and prescription logs for the date of signing. Gather admitted contemporary signatures from bank cards, asset deeds, or passport files. Engage an accredited handwriting expert to examine signatures.",
   },
   {
     number: "03",
@@ -125,7 +125,7 @@ const STEP_STAGES = [
     title: "File Written Objections or a Civil Lawsuit",
     authority: "Competent Civil Court or High Court",
     description:
-      "If the other party applied for probate, your caveat converts the matter into a contested testamentary suit. If no probate was filed, institute a civil declaration suit to declare the Will null, void, and inoperative under the Specific Relief Act.",
+      "If the other party applied for probate, your caveat converts the matter into a contested Will suit. If no probate was filed, institute a civil declaration suit to declare the Will null, void, and inoperative under the Specific Relief Act.",
   },
   {
     number: "04",
@@ -133,7 +133,7 @@ const STEP_STAGES = [
     title: "Seek an Injunction to Stop Property Sale",
     authority: "Civil Court (Order 39, Rules 1 & 2 CPC)",
     description:
-      "Apply immediately for a temporary injunction restraining the beneficiaries from selling, mortgaging, or creating third-party rights in estate properties. Send formal legal notice to the Sub-Registrar and municipal revenue officers to freeze property mutation.",
+      "Apply right away for a temporary injunction restraining the heirs from selling, mortgaging, or creating third-party rights in estate assets. Send formal legal notice to the SRO and city revenue officers to freeze asset name change.",
   },
   {
     number: "05",
@@ -141,7 +141,7 @@ const STEP_STAGES = [
     title: "Cross-Examine Witnesses Under Section 67 BSA",
     authority: "Trial Court Hearing",
     description:
-      "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023, the person relying on the Will must produce at least one attesting witness in court. Your counsel will cross-examine them on where, when, and how the Will was signed to uncover fatal contradictions.",
+      "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023, the person relying on the Will must produce at least one signing witness in court. Your counsel will cross-examine them on where, when, and how the Will was signed to uncover fatal contradictions.",
   },
   {
     number: "06",
@@ -149,7 +149,7 @@ const STEP_STAGES = [
     title: "Court Judgment & Division Among Legal Heirs",
     authority: "Civil Court Final Decree",
     description:
-      "If the court holds the Will to be forged, invalid, or executed under undue influence, the Will is struck down. The deceased's properties then divide equally among all legal heirs under regular intestate succession rules.",
+      "If the court holds the Will to be forged, invalid, or signed under undue influence, the Will is struck down. The deceased's assets then divide equally among all legal heirs under regular no-Will estate rules.",
   },
 ];
 
@@ -158,25 +158,25 @@ const DEFENSIVE_CARDS = [
     title: "Doctor Fitness Certificate",
     icon: Stethoscope,
     badge: "Medical Proof",
-    desc: "Have an MBBS or MD physician examine the testator on the signing day. The doctor confirms sound mental state, memory, and cognitive understanding right on the Will.",
+    desc: "Have an MBBS or MD physician examine the Will maker on the signing day. The doctor confirms sound mental state, memory, and cognitive understanding right on the Will.",
   },
   {
     title: "Video Recording of Signing",
     icon: Video,
     badge: "Digital Evidence",
-    desc: "Record uninterrupted high-definition video of the testator reading key clauses aloud and signing before witnesses. Section 61 of BSA 2023 accepts verified electronic evidence.",
+    desc: "Record uninterrupted high-definition video of the Will maker reading key clauses aloud and signing before witnesses. Section 61 of BSA 2023 accepts checked electronic evidence.",
   },
   {
     title: "Independent Young Witnesses",
     icon: Users,
     badge: "Section 63 & 67 ISA",
-    desc: "Select two healthy adult witnesses who receive nothing under the Will. Ensure they understand their duty to testify in court if disgruntled relatives file false challenges.",
+    desc: "Select two healthy adult witnesses who receive nothing under the Will. Ensure they understand their duty to testify in court if disgruntled relatives file false fights.",
   },
   {
     title: "SRO Biometric Registration",
     icon: Landmark,
     badge: "Government Record",
-    desc: "Register the Will at the Sub-Registrar Office under Section 18 of the Registration Act. The government official captures fingerprints, photographs, and identity cards in official records.",
+    desc: "Register the Will at the SRO office under Section 18 of the Filing Act. The government official captures fingerprints, photographs, and identity cards in official records.",
   },
 ];
 
@@ -184,65 +184,65 @@ const SCENARIOS = [
   {
     title: "Complete Disinheritance of Children",
     icon: AlertCircle,
-    desc: "A parent has the absolute legal right to leave self-acquired property to anyone. However, excluding a child without writing a clear reason invites suspicious circumstance claims. Stating explicit reasons in the Will protects the gift.",
+    desc: "A parent has the absolute legal right to leave self-acquired asset to anyone. However, excluding a child without writing a clear reason invites suspicious circumstance claims. Stating explicit reasons in the Will protects the gift.",
   },
   {
     title: "Second Marriage & Stepchildren",
     icon: Split,
-    desc: "Disputes frequently erupt between children from a first marriage and a surviving second spouse. Without airtight drafting and registration, stepchildren routinely allege coercion or fabricated deathbed papers.",
+    desc: "Fights frequently erupt between children from a first marriage and a surviving second spouse. Without airtight drafting and filing, stepchildren routinely allege coercion or fabricated deathbed papers.",
   },
   {
     title: "NRI Properties & Cross-Border Assets",
     icon: Globe2,
-    desc: "NRIs living in the UK, USA, Canada, or Gulf often face fabricated Wills produced by relatives managing property in India. Section 228 of the Indian Succession Act governs proving foreign probate copies in Indian courts.",
+    desc: "NRIs living in the UK, USA, Canada, or Gulf often face fabricated Wills produced by relatives managing asset in India. Section 228 of the Indian Succession Act governs proving foreign probate copies in Indian courts.",
   },
   {
     title: "Ancestral Property Willed Away",
     icon: Home,
-    desc: "A testator can only give away self-acquired property by Will. An attempt to distribute undivided ancestral coparcenary property beyond the testator's personal notional share is void under Section 6 of the Hindu Succession Act.",
+    desc: "A Will maker can only give away self-acquired asset by Will. An attempt to distribute undivided family joint asset beyond the Will maker's personal notional share is void under Section 6 of the Hindu Succession Act.",
   },
 ];
 
 const FAQ_ITEMS = [
   {
-    q: "Who has the legal right to challenge a Will in India?",
-    a: "Only persons who have a direct legal interest in the deceased person's estate have legal standing (locus standi) to challenge a Will. This includes natural legal heirs under personal laws (such as children, surviving spouse, or parents under Section 8 of the Hindu Succession Act) or beneficiaries named in an earlier valid Will who stand to lose their inheritance.",
+    q: "Who has the legal right to fight a Will in India?",
+    a: "Only persons who have a direct legal interest in the deceased person's estate have legal standing (locus standi) to fight a Will. This includes natural legal heirs under personal laws (such as children, surviving spouse, or parents under Section 8 of the Hindu Succession Act) or heirs named in an earlier valid Will who stand to lose their estate.",
   },
   {
-    q: "Can you challenge a Will while the testator is still alive?",
-    a: "No. Under Indian succession law, a Will has zero legal effect during the lifetime of the testator. The person who made the Will can revoke, alter, or cancel it at any time. A Will only becomes operative upon death, so no court will entertain a challenge before the testator passes away.",
+    q: "Can you fight a Will while the Will maker is still alive?",
+    a: "No. Under Indian succession law, a Will has zero legal effect during the lifetime of the Will maker. The person who made the Will can revoke, alter, or cancel it at any time. A Will only becomes operative upon death, so no court will entertain a fight before the Will maker passes away.",
   },
   {
-    q: "What is the limitation period to challenge a Will in Indian courts?",
+    q: "What is the limitation period to fight a Will in Indian courts?",
     a: "Under the Limitation Act, 1963, a civil suit to declare a Will void or cancel an instrument (under Article 59 or Article 137) must generally be filed within 3 years from the date the right to sue accrues, or within 3 years from when the challenger first discovers the existence of the disputed Will or alleged fraud.",
   },
   {
-    q: "Can a registered Will be challenged in an Indian court?",
-    a: "Yes. Registration under the Registration Act, 1908 proves that the document was presented to a Sub-Registrar, but it does not grant absolute immunity. The Supreme Court of India in Rani Purnima Debi v. Kumar Khagendra Narayan Deb ruled that if suspicious circumstances or undue influence exist, registration alone does not validate an otherwise invalid Will.",
+    q: "Can a filed Will be challenged in an Indian court?",
+    a: "Yes. Filing under the Filing Act, 1908 proves that the paper was presented to a SRO, but it does not grant absolute immunity. The Supreme Court of India in Rani Purnima Debi v. Kumar Khagendra Narayan Deb ruled that if suspicious circumstances or undue influence exist, filing alone does not validate an otherwise invalid Will.",
   },
   {
     q: "How does Section 67 of Bharatiya Sakshya Adhiniyam 2023 apply to Wills?",
-    a: "Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (which replaces Section 68 of the Indian Evidence Act, 1872) mandates that if a Will is contested, at least one attesting witness who signed the document must be examined in court to prove proper execution, provided that witness is alive and capable of giving evidence.",
+    a: "Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (which replaces Section 68 of the Indian Evidence Act, 1872) mandates that if a Will is contested, at least one signing witness who signed the paper must be examined in court to prove proper signing, provided that witness is alive and capable of giving evidence.",
   },
   {
     q: "What constitutes suspicious circumstances in a Will contest?",
-    a: "Suspicious circumstances include situations where the main beneficiary took an active part in preparing or executing the Will, where natural legal heirs were excluded without explanation, where the testator signed with a shaky hand shortly before death, or where the Will was kept secret for many years.",
+    a: "Suspicious circumstances include situations where the main heir took an active part in preparing or signing the Will, where natural legal heirs were excluded without explanation, where the Will maker signed with a shaky hand shortly before death, or where the Will was kept secret for many years.",
   },
   {
     q: "What happens if a court declares a Will invalid or forged?",
-    a: "If a court declares a Will invalid and no earlier valid Will exists, the estate of the deceased is distributed according to intestate succession rules (such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925). Under these rules, all Class 1 legal heirs receive equal statutory shares.",
+    a: "If a court declares a Will invalid and no earlier valid Will exists, the estate of the deceased is distributed according to no-Will estate rules (such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925). Under these rules, all Class 1 legal heirs receive equal legal shares.",
   },
   {
-    q: "How can someone make their own Will completely challenge-proof?",
-    a: "To make your Will dispute-proof: attach a mental fitness certificate from a qualified doctor, record high-definition video of the execution and reading, choose two younger independent witnesses who receive nothing under the Will, register the document at the Sub-Registrar Office, and explicitly explain any exclusion of natural heirs.",
+    q: "How can someone make their own Will completely fight-proof?",
+    a: "To make your Will fight-proof: attach a mental fitness paper from a qualified doctor, record high-definition video of the signing and reading, choose two younger independent witnesses who receive nothing under the Will, register the paper at the SRO office, and explicitly explain any exclusion of natural heirs.",
   },
   {
     q: "What is a Caveat petition in probate court and when should you file one?",
-    a: "Under Section 284 of the Indian Succession Act, 1925, a Caveat is a formal legal notice filed in probate court warning the judge not to grant probate or letters of administration to another party without first serving notice and hearing your objections.",
+    a: "Under Section 284 of the Indian Succession Act, 1925, a Caveat is a formal legal notice filed in probate court warning the judge not to grant probate or letters of care to another party without first serving notice and hearing your objections.",
   },
   {
-    q: "Can an attesting witness be a beneficiary under the Will?",
-    a: "No. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness or their spouse becomes completely void. The Will remains valid, but the witness forfeits their entire inheritance. Attesting witnesses must always be independent third parties.",
+    q: "Can an signing witness be a heir under the Will?",
+    a: "No. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an signing witness or their spouse becomes completely void. The Will remains valid, but the witness forfeits their entire estate. Signing witnesses must always be independent third parties.",
   },
 ];
 
@@ -264,7 +264,7 @@ export default function HowToChallengeAWillClient() {
     window.dispatchEvent(new Event(OPEN_SIGNUP_EVENT));
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-grounds");
+  const [activeId, setActiveId] = useState<string>("legal-grounds");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -316,12 +316,12 @@ export default function HowToChallengeAWillClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            How to Challenge a Will in India: Complete Legal Guide
+            How to Fight a Will in India: Complete Legal Guide
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Understand the valid legal grounds, 3-year limitation periods, and BSA 2023 evidence rules to contest a forged or coerced Will. Learn how to draft a dispute-proof Will that stands strong in court.
+            Understand the valid legal grounds, 3-year limitation periods, and BSA 2023 evidence rules to contest a forged or coerced Will. Learn how to draft a fight-proof Will that stands strong in court.
           </p>
 
           {/* CTA Buttons */}
@@ -356,7 +356,7 @@ export default function HowToChallengeAWillClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Testamentary Experience
+                Will Experience
               </span>
             </div>
 
@@ -461,7 +461,7 @@ export default function HowToChallengeAWillClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authorities</span>
+                <span>Legal Offices</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Section 59, 61 &amp; 63 of ISA 1925, Limitation Act 1963, and Section 67 of BSA 2023.
@@ -488,25 +488,25 @@ export default function HowToChallengeAWillClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Only Direct Heirs Can Challenge:</strong> You must have a direct legal interest (locus standi). Only natural heirs who would inherit under intestate laws or beneficiaries under an earlier Will have standing.
+                    <strong>Only Direct Heirs Can Fight:</strong> You must have a direct legal interest (locus standi). Only natural heirs who would inherit under no-Will laws or heirs under an earlier Will have standing.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Strict 3-Year Limitation Deadline:</strong> Under the Limitation Act 1963, you cannot sleep on your rights. Civil suits must be filed within 3 years from the date you discover the disputed document.
+                    <strong>Strict 3-Year Limitation Deadline:</strong> Under the Limitation Act 1963, you cannot sleep on your rights. Civil suits must be filed within 3 years from the date you discover the disputed paper.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registration Does Not Equal Immunity:</strong> A registered Will can still be canceled if there was mental incapacity, fraud, or undue influence (Supreme Court ruling in Rani Purnima Debi).
+                    <strong>Filing Does Not Equal Immunity:</strong> A filed Will can still be canceled if there was mental incapacity, fraud, or undue influence (Supreme Court ruling in Rani Purnima Debi).
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Defensive Drafting Prevents Contests:</strong> If you are writing a Will, attaching a doctor mental fitness certificate and recording a video eliminates 99% of future legal challenges.
+                    <strong>Defensive Drafting Prevents Contests:</strong> If you are writing a Will, attaching a doctor mental fitness paper and recording a video eliminates 99% of future legal fights.
                   </span>
                 </li>
               </ul>
@@ -516,35 +516,35 @@ export default function HowToChallengeAWillClient() {
             <section id="statutory-grounds" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Grounds</span>
+                <span>Legal Grounds</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                1. Grounds to Challenge a Will: Core Legal Basis in India
+                1. Grounds to Fight a Will: Core Legal Basis in India
               </h2>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under Indian succession law, a Will is not set in stone merely because it exists on paper. While courts respect the final wishes of a deceased person, judges examine disputed documents with extreme vigilance. If a Will fails to satisfy statutory standards, any person with a direct legal interest can challenge it in a competent civil court.
+                Under Indian succession law, a Will is not set in stone merely because it exists on paper. While courts respect the final wishes of a deceased person, judges examine disputed papers with extreme vigilance. If a Will fails to satisfy legal standards, any person with a direct legal interest can fight it in a competent civil court.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                To challenge a Will, you must first possess legal standing (known in law as <em>locus standi</em>). This means you must be someone whose inheritance rights are directly damaged by the Will. Eligible persons include natural Class 1 legal heirs (such as sons, daughters, surviving spouses, and mothers) or beneficiaries named in an earlier genuine Will. Strangers, distant relatives, or neighbors cannot challenge a Will simply because they dislike how property was given away.
+                To fight a Will, you must first possess legal standing (known in law as <em>locus standi</em>). This means you must be someone whose estate rights are directly damaged by the Will. Eligible persons include natural Class 1 legal heirs (such as sons, daughters, surviving spouses, and mothers) or heirs named in an earlier genuine Will. Strangers, distant relatives, or neighbors cannot fight a Will simply because they dislike how asset was given away.
               </p>
               <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2">
                 <span className="font-bold text-slate-900 uppercase tracking-wide">
-                  The Five Recognized Grounds of Challenge:
+                  The Five Recognized Grounds of Fight:
                 </span>
                 <p>
-                  1. <strong>Lack of Testamentary Capacity:</strong> The testator was not of sound mind, memory, and understanding (Section 59, Indian Succession Act, 1925).
+                  1. <strong>Lack of Will Capacity:</strong> The Will maker was not of sound mind, memory, and understanding (Section 59, Indian Succession Act, 1925).
                 </p>
                 <p>
-                  2. <strong>Undue Influence and Coercion:</strong> The testator was pressured, manipulated, or intimidated, destroying their free choice (Section 61, Indian Succession Act, 1925).
+                  2. <strong>Undue Influence and Coercion:</strong> The Will maker was pressured, manipulated, or intimidated, destroying their free choice (Section 61, Indian Succession Act, 1925).
                 </p>
                 <p>
                   3. <strong>Forgery and Fraud:</strong> The signature is forged, or pages were substituted after signing (Section 67, Bharatiya Sakshya Adhiniyam, 2023).
                 </p>
                 <p>
-                  4. <strong>Defective Execution:</strong> The Will was not signed in the physical visual presence of at least two independent adult witnesses (Section 63, Indian Succession Act, 1925).
+                  4. <strong>Defective Signing:</strong> The Will was not signed in the physical visual presence of at least two independent adult witnesses (Section 63, Indian Succession Act, 1925).
                 </p>
                 <p>
-                  5. <strong>Subsequent Revocation:</strong> The testator executed a newer valid Will or tore up the old document to cancel it (Section 62 &amp; Section 70, Indian Succession Act, 1925).
+                  5. <strong>Subsequent Revocation:</strong> The Will maker signed a newer valid Will or tore up the old paper to cancel it (Section 62 &amp; Section 70, Indian Succession Act, 1925).
                 </p>
               </div>
             </section>
@@ -556,13 +556,13 @@ export default function HowToChallengeAWillClient() {
                 <span>Section 61 ISA 1925</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Undue Influence &amp; Coercion: Proving Involuntary Execution
+                2. Undue Influence &amp; Coercion: Proving Involuntary Signing
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under Section 61 of the Indian Succession Act, a Will obtained by fraud, coercion, or importunity is completely void. Coercion involves physical threats or duress. Undue influence is more subtle. It occurs when a person in a position of dominance overpowers the testator&apos;s mental freedom so that the Will reflects the influencer&apos;s desires rather than the testator&apos;s genuine wishes.
+                Under Section 61 of the Indian Succession Act, a Will obtained by fraud, coercion, or importunity is completely void. Coercion involves physical threats or duress. Undue influence is more subtle. It occurs when a person in a position of dominance overpowers the Will maker&apos;s mental freedom so that the Will reflects the influencer&apos;s desires rather than the Will maker&apos;s genuine wishes.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Indian courts make a sharp distinction between legitimate filial affection and illegal undue influence. Simply caring for an elderly parent or asking for property does not amount to undue influence. To establish undue influence, the challenger must prove that the testator was completely dependent, isolated from other family members, and could not exercise independent judgment.
+                Indian courts make a sharp distinction between legitimate filial affection and illegal undue influence. Simply caring for an elderly parent or asking for asset does not amount to undue influence. To establish undue influence, the challenger must prove that the Will maker was completely dependent, isolated from other family members, and could not exercise independent judgment.
               </p>
               <div className="bg-rose-50/70 border border-rose-200/80 rounded-2xl p-5">
                 <div className="flex items-center gap-2 text-[#C65378] font-bold text-sm mb-2">
@@ -570,7 +570,7 @@ export default function HowToChallengeAWillClient() {
                   <span>The Active Participation Trap (Supreme Court Warning)</span>
                 </div>
                 <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
-                  In landmark judgments including <em>H. Venkatachala Iyengar v. B.N. Thimmajamma</em> and <em>Kavita Kanwar v. Pamela Mehta (2020)</em>, the Supreme Court held that where the primary beneficiary takes a leading part in drafting or executing the Will, a grave suspicious circumstance arises. The beneficiary must satisfy the conscience of the court that the testator acted out of free will.
+                  In landmark judgments including <em>H. Venkatachala Iyengar v. B.N. Thimmajamma</em> and <em>Kavita Kanwar v. Pamela Mehta (2020)</em>, the Supreme Court held that where the primary heir takes a leading part in drafting or signing the Will, a grave suspicious circumstance arises. The heir must satisfy the conscience of the court that the Will maker acted out of free will.
                 </p>
               </div>
             </section>
@@ -579,24 +579,24 @@ export default function HowToChallengeAWillClient() {
             <section id="mental-capacity" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Stethoscope className="w-4 h-4" />
-                <span>Testamentary Capacity</span>
+                <span>Will Capacity</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. Mental Capacity: Testamentary Soundness Under Section 59
+                3. Mental Capacity: Will Soundness Under Section 59
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Section 59 of the Indian Succession Act mandates that every person of sound mind who is not a minor may dispose of their property by Will. To possess testamentary capacity, the testator must understand three essential things: the nature of making a Will, the extent of the property they own, and the persons who naturally expect to inherit from them.
+                Section 59 of the Indian Succession Act mandates that every person of sound mind who is not a minor may dispose of their asset by Will. To possess Will capacity, the Will maker must understand three essential things: the nature of making a Will, the extent of the asset they own, and the persons who naturally expect to inherit from them.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Physical illness is not the same as mental unsoundness. An elderly person may suffer from diabetes, high blood pressure, physical weakness, or trembling hands. That physical frailty alone does not destroy testamentary capacity. Similarly, under Explanation 4 of Section 59, a person who is ordinarily insane may execute a completely valid Will during a clear, lucid interval.
+                Physical illness is not the same as mental unsoundness. An elderly person may suffer from diabetes, high blood pressure, physical weakness, or trembling hands. That physical frailty alone does not destroy Will capacity. Similarly, under Explanation 4 of Section 59, a person who is ordinarily insane may execute a completely valid Will during a clear, lucid interval.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-2xs">
                   <div className="font-bold text-sm text-slate-900 mb-1">
-                    Challenger&apos;s Evidentiary Burden
+                    Challenger&apos;s Proof Burden
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The challenger must present hospital admission sheets, psychiatric evaluations, or proof of severe dementia demonstrating that the testator could not comprehend their actions when signing.
+                    The challenger must present hospital admission sheets, psychiatric evaluations, or proof of severe dementia demonstrating that the Will maker could not comprehend their actions when signing.
                   </p>
                 </div>
                 <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-2xs">
@@ -604,7 +604,7 @@ export default function HowToChallengeAWillClient() {
                     Propounder&apos;s Ultimate Shield
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A formal medical fitness certificate endorsed by a licensed physician on the signing date. It confirms orientation to time, place, and mental clarity, conclusively neutralizing capacity disputes.
+                    A formal medical fitness paper endorsed by a licensed physician on the signing date. It confirms orientation to time, place, and mental clarity, conclusively neutralizing capacity fights.
                   </p>
                 </div>
               </div>
@@ -620,10 +620,10 @@ export default function HowToChallengeAWillClient() {
                 4. Forgery &amp; Suspicious Circumstances: Section 67 BSA 2023
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                When a family member manufactures a fake Will after a parent&apos;s death, the challenger must plead forgery and fraud. Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (which replaces Section 68 of the repealed Indian Evidence Act, 1872), a document required by law to be attested cannot be used in evidence until at least one attesting witness has been called to prove its execution in court.
+                When a family member manufactures a fake Will after a parent&apos;s death, the challenger must plead forgery and fraud. Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (which replaces Section 68 of the repealed Indian Evidence Act, 1872), a paper required by law to be attested cannot be used in evidence until at least one signing witness has been called to prove its signing in court.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                In addition to proving direct forgery through forensic handwriting examiners, courts rely on the doctrine of <em>suspicious circumstances</em>. If the execution of a Will is surrounded by unusual facts, the legal burden rests entirely on the person defending the Will (the propounder) to dispel every reasonable doubt.
+                In addition to proving direct forgery through forensic handwriting examiners, courts rely on the doctrine of <em>suspicious circumstances</em>. If the signing of a Will is surrounded by unusual facts, the legal burden rests entirely on the person defending the Will (the propounder) to dispel every reasonable doubt.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
                 <table className="w-full text-left text-xs md:text-sm">
@@ -640,7 +640,7 @@ export default function HowToChallengeAWillClient() {
                         Total exclusion of natural heirs
                       </td>
                       <td className="py-3 px-4">
-                        Courts question why a loving child or spouse was left zero property.
+                        Courts question why a loving child or spouse was left zero asset.
                       </td>
                       <td className="py-3 px-4 text-[#5F7E75] font-medium">
                         Explicit clause in Will explaining reasons for exclusion.
@@ -648,13 +648,13 @@ export default function HowToChallengeAWillClient() {
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">
-                        Beneficiary prepared the draft
+                        Heir prepared the draft
                       </td>
                       <td className="py-3 px-4">
                         Creates an immediate presumption of self-serving manipulation.
                       </td>
                       <td className="py-3 px-4 text-[#5F7E75] font-medium">
-                        Engagement of independent advocate without beneficiary present.
+                        Engagement of independent lawyer without heir present.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
@@ -662,7 +662,7 @@ export default function HowToChallengeAWillClient() {
                         Shaky or uncharacteristic signature
                       </td>
                       <td className="py-3 px-4">
-                        Suggests either forgery or that the testator was near death.
+                        Suggests either forgery or that the Will maker was near death.
                       </td>
                       <td className="py-3 px-4 text-[#5F7E75] font-medium">
                         Doctor note explaining physical tremor alongside video recording.
@@ -673,10 +673,10 @@ export default function HowToChallengeAWillClient() {
                         Will produced years after death
                       </td>
                       <td className="py-3 px-4">
-                        Late emergence suggests the document was fabricated when land prices rose.
+                        Late emergence suggests the paper was fabricated when land prices rose.
                       </td>
                       <td className="py-3 px-4 text-[#5F7E75] font-medium">
-                        Immediate SRO registration and safe deposit with named executor.
+                        Immediate SRO filing and safe deposit with named executor.
                       </td>
                     </tr>
                   </tbody>
@@ -694,7 +694,7 @@ export default function HowToChallengeAWillClient() {
                 5. Limitation Period: Legal Deadlines to Contest a Will
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Many heirs make the tragic error of waiting years before disputing a suspicious Will. The Limitation Act, 1963 sets strict time bars for initiating legal proceedings. If you sleep on your legal rights, the court will dismiss your challenge on the threshold without even evaluating the merits of the fraud.
+                Many heirs make the tragic error of waiting years before disputing a suspicious Will. The Limitation Act, 1963 sets strict time bars for initiating legal proceedings. If you sleep on your legal rights, the court will dismiss your fight on the threshold without even evaluating the merits of the fraud.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 bg-white rounded-2xl border border-slate-200">
@@ -702,7 +702,7 @@ export default function HowToChallengeAWillClient() {
                     Article 137 Limitation Act
                   </span>
                   <h4 className="font-bold text-sm text-slate-900 mb-2">
-                    3 Years for General Civil Applications
+                    3 Years for General Civil Forms
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Article 137, where no specific limitation period is given, the deadline is 3 years from the date when the right to apply accrues. For probate revocation petitions under Section 263 ISA, this begins when the applicant discovers the fraudulent grant.
@@ -721,7 +721,7 @@ export default function HowToChallengeAWillClient() {
                 </div>
               </div>
               <div className="p-4 bg-amber-50/70 border border-amber-200/80 rounded-xl text-xs text-slate-700">
-                <strong>CRITICAL LEGAL RULE:</strong> You cannot challenge a Will while the person who wrote it is still alive. A Will confers zero rights during the testator&apos;s lifetime. The limitation clock only starts running after the testator passes away and the disputed Will is asserted against your rights.
+                <strong>CRITICAL LEGAL RULE:</strong> You cannot fight a Will while the person who wrote it is still alive. A Will confers zero rights during the Will maker&apos;s lifetime. The limitation clock only starts running after the Will maker passes away and the disputed Will is asserted against your rights.
               </div>
             </section>
 
@@ -729,13 +729,13 @@ export default function HowToChallengeAWillClient() {
             <section id="court-procedure" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Building className="w-4 h-4" />
-                <span>Litigation Procedure</span>
+                <span>Court Fights Step</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Court Procedure: How to File a Will Challenge in India
+                6. Court Step: How to File a Will Fight in India
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The exact court procedure depends on whether the opposing side has filed for probate or is attempting to mutate properties directly at the local revenue office. Here are the procedural pathways governed by the Indian Succession Act, 1925 and the Code of Civil Procedure, 1908 (CPC).
+                The exact court step depends on whether the opposing side has filed for probate or is attempting to mutate assets directly at the local revenue office. Here are the procedural pathways governed by the Indian Succession Act, 1925 and the Code of Civil Step, 1908 (CPC).
               </p>
               <div className="space-y-3">
                 <div className="p-4 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
@@ -747,7 +747,7 @@ export default function HowToChallengeAWillClient() {
                       Filing a Caveat Petition (Section 284 ISA)
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                      If you anticipate that another heir will apply for probate, immediately lodge a Caveat in the District Court or High Court. Under Section 284, no probate can be granted without serving you notice and hearing your objections. Once you file objections, the petition converts into a contested Civil Testamentary Suit.
+                      If you anticipate that another heir will apply for probate, right away lodge a Caveat in the District Court or High Court. Under Section 284, no probate can be granted without serving you notice and hearing your objections. Once you file objections, the petition converts into a contested Civil Will Suit.
                     </p>
                   </div>
                 </div>
@@ -761,7 +761,7 @@ export default function HowToChallengeAWillClient() {
                       Civil Declaration Suit &amp; Temporary Injunction
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                      If the opposing party is not seeking probate (outside mandatory presidency towns like Mumbai, Kolkata, Chennai), you must file a Civil Suit for Declaration under Section 34 of the Specific Relief Act. Concurrently file an application under Order 39 Rules 1 &amp; 2 CPC to obtain an ad-interim injunction restraining the sale or transfer of estate properties.
+                      If the opposing party is not seeking probate (outside needed presidency towns like Mumbai, Kolkata, Chennai), you must file a Civil Suit for Declaration under Section 34 of the Specific Relief Act. Concurrently file an form under Order 39 Rules 1 &amp; 2 CPC to obtain an ad-interim injunction restraining the sale or transfer of estate assets.
                     </p>
                   </div>
                 </div>
@@ -789,17 +789,17 @@ export default function HowToChallengeAWillClient() {
                 <span>Grounds vs Defenses Matrix</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                7. Will Contest Comparison: Challenge Grounds vs Defenses
+                7. Will Contest Comparison: Fight Grounds vs Defenses
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Whether you are disputing a suspicious Will or protecting your genuine inheritance against hostile relatives, understanding the statutory burden of proof and the required evidentiary standard is vital. This matrix contrasts key challenge grounds with their corresponding legal defenses.
+                Whether you are disputing a suspicious Will or protecting your genuine estate against hostile relatives, understanding the legal burden of proof and the required proof standard is vital. This matrix contrasts key fight grounds with their corresponding legal defenses.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
                 <table className="w-full text-left text-xs md:text-sm">
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="py-3.5 px-4 font-bold">Ground of Contest</th>
-                      <th className="py-3.5 px-4 font-bold">Statutory Authority</th>
+                      <th className="py-3.5 px-4 font-bold">Legal Office</th>
                       <th className="py-3.5 px-4 font-bold">Burden of Proof</th>
                       <th className="py-3.5 px-4 font-bold">Required Evidence</th>
                       <th className="py-3.5 px-4 font-bold">Strongest Defense</th>
@@ -840,7 +840,7 @@ export default function HowToChallengeAWillClient() {
                 8. Visual Blueprint: The Will Contest &amp; Defense Framework
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Will litigation in India sits at the exact intersection of three primary statutory codes: the Indian Succession Act 1925, the Limitation Act 1963, and the new Bharatiya Sakshya Adhiniyam 2023. The diagram below illustrates the balance between testamentary disposition, family rights, and judicial scrutiny.
+                Will court fights in India sits at the exact intersection of three primary legal codes: the Indian Succession Act 1925, the Limitation Act 1963, and the new Bharatiya Sakshya Adhiniyam 2023. The diagram below illustrates the balance between Will gift, family rights, and judicial scrutiny.
               </p>
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="relative aspect-video w-full bg-slate-100">
@@ -858,7 +858,7 @@ export default function HowToChallengeAWillClient() {
                     <strong>Visual Framework:</strong> Indian Succession Act, Limitation Act, Bharatiya Sakshya Adhiniyam 2023 &amp; Estate Division.
                   </span>
                   <span className="text-[11px] text-[#C65378] font-bold">
-                    WillDrafting.in &bull; Succession Planning
+                    WillDrafting.in &bull; Estate Planning
                   </span>
                 </div>
               </div>
@@ -910,13 +910,13 @@ export default function HowToChallengeAWillClient() {
             <section id="defensive-drafting" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Challenge-Proof Drafting</span>
+                <span>Fight-Proof Drafting</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                10. Defensive Drafting: Make Your Will 100% Challenge-Proof
+                10. Defensive Drafting: Make Your Will 100% Fight-Proof
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                If you are planning your own estate, your goal is the exact opposite: ensuring that no disgruntled relative, estranged child, or in-law can tie up your life savings in litigation. By embedding these four defensive safeguards during drafting, you make your Will virtually unassailable in court.
+                If you are planning your own estate, your goal is the exact opposite: ensuring that no disgruntled relative, estranged child, or in-law can tie up your life savings in court fights. By embedding these four defensive safeguards during drafting, you make your Will virtually unassailable in court.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {DEFENSIVE_CARDS.map((card, idx) => {
@@ -945,7 +945,7 @@ export default function HowToChallengeAWillClient() {
                 })}
               </div>
               <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700">
-                <strong>Crucial Drafting Technique:</strong> Never ignore an excluded heir in silence. Always include a clear sentence explaining the reason: for instance, <em>&quot;I have made adequate financial provisions for my eldest son during my lifetime through university education and a wedding gift, and therefore make no further bequests to him under this Will.&quot;</em> This removes any suspicion of oversight or confusion.
+                <strong>Crucial Drafting Technique:</strong> Never ignore an excluded heir in silence. Always include a clear sentence explaining the reason: for instance, <em>&quot;I have made adequate financial rules for my eldest son during my lifetime through university education and a wedding gift, and therefore make no further bequests to him under this Will.&quot;</em> This removes any suspicion of oversight or confusion.
               </div>
             </section>
 
@@ -956,17 +956,17 @@ export default function HowToChallengeAWillClient() {
                 <span>The Conversion Bridge</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                11. How a Valid Will Would Have Avoided Costly Court Disputes
+                11. How a Valid Will Would Have Avoided Costly Court Fights
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Over 90% of all inheritance lawsuits in India originate from homemade, ambiguous, or poorly witnessed Wills. When family members are left guessing, or when vague handwritten notes surface years after death, bitter civil suits inevitably drag through the courts for 10 to 20 years.
+                Over 90% of all estate lawsuits in India originate from homemade, ambiguous, or poorly witnessed Wills. When family members are left guessing, or when vague handwritten notes surface years after death, bitter civil suits inevitably drag through the courts for 10 to 20 years.
               </p>
               <div className="bg-gradient-to-br from-[#172228] to-[#24353f] text-white rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl">
                 <span className="text-xs font-black uppercase tracking-wider text-rose-300">
                   Protect Your Family Today
                 </span>
                 <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight">
-                  Draft an Airtight, Advocate-Verified Will in 15 Minutes
+                  Draft an Airtight, Lawyer-Checked Will in 15 Minutes
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
                   Do not leave your children to fight in civil court. WillDrafting provides lawyer-vetted formats, doctor certification clauses, and Section 63 witness compliance to protect your life&apos;s hard work.
@@ -1000,7 +1000,7 @@ export default function HowToChallengeAWillClient() {
                 12. Specialized Scenarios: Disinherited Heirs &amp; NRI Estates
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Inheritance disputes frequently involve complex family dynamics or assets spread across jurisdictions. Here is how Indian courts handle four common specialized dispute scenarios.
+                Estate fights frequently involve complex family dynamics or assets spread across areas. Here is how Indian courts handle four common specialized fight scenarios.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {SCENARIOS.map((sc, i) => {
@@ -1035,7 +1035,7 @@ export default function HowToChallengeAWillClient() {
                 Frequently Asked Questions: Challenging a Will in India
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Straightforward legal answers to the most common questions regarding Will disputes, court time limits, witness rules, and defensive drafting.
+                Straightforward legal answers to the most common questions regarding Will fights, court time limits, witness rules, and defensive drafting.
               </p>
               <div className="space-y-3 pt-2">
                 {FAQ_ITEMS.map((faq, index) => {
@@ -1072,20 +1072,20 @@ export default function HowToChallengeAWillClient() {
             <section id="statutory-citations" className="scroll-target space-y-4 pt-6 border-t border-slate-200">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-slate-500">
                 <BookOpen className="w-4 h-4 text-[#5F7E75]" />
-                <span>Legal Authority &amp; Statutory Sources</span>
+                <span>Legal Office &amp; Legal Sources</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                Official Legal Authorities, Statutory Sections &amp; Precedents
+                Official Legal Offices, Legal Sections &amp; Precedents
               </h3>
               <ul className="space-y-2 text-xs text-slate-600 list-disc list-inside leading-relaxed">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 59 (soundness of mind), Section 61 (undue influence &amp; coercion), Section 63 (execution &amp; attestation), Section 67 (void bequests to witnesses), Section 263 (revocation of probate), Section 284 (caveats).
+                  <strong>Indian Succession Act, 1925:</strong> Section 59 (soundness of mind), Section 61 (undue influence &amp; coercion), Section 63 (signing &amp; witness signing), Section 67 (void bequests to witnesses), Section 263 (revocation of probate), Section 284 (caveats).
                 </li>
                 <li>
-                  <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023):</strong> Section 67 (mandatory examination of attesting witness; replaces Section 68 of the repealed Indian Evidence Act, 1872), Section 61 &amp; 63 (electronic records &amp; video evidence).
+                  <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023):</strong> Section 67 (needed examination of signing witness; replaces Section 68 of the repealed Indian Evidence Act, 1872), Section 61 &amp; 63 (electronic records &amp; video evidence).
                 </li>
                 <li>
-                  <strong>Limitation Act, 1963:</strong> Article 59 (cancellation of instrument within 3 years) &amp; Article 137 (general 3-year limitation for civil applications).
+                  <strong>Limitation Act, 1963:</strong> Article 59 (cancellation of instrument within 3 years) &amp; Article 137 (general 3-year limitation for civil forms).
                 </li>
                 <li>
                   <strong>Supreme Court of India Precedents:</strong> <em>H. Venkatachala Iyengar v. B.N. Thimmajamma</em> (1959 AIR 443), <em>Rani Purnima Debi v. Kumar Khagendra Narayan Deb</em> (1962 AIR 567), <em>Kavita Kanwar v. Pamela Mehta</em> (2020 SCC Online SC 714).
@@ -1119,18 +1119,40 @@ export default function HowToChallengeAWillClient() {
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
-                    Property Transfer After Death
+                    Asset Transfer After Death
                   </Link>
                   <Link
                     href="/blogs/legal-heir-certificate-vs-succession-certificate"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
-                    Legal Heir vs Succession Certificate
+                    Legal Heir vs Estate Paper
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1150,16 +1172,16 @@ export default function HowToChallengeAWillClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, probate matters, and estate structuring in India.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, probate matters, and estate structuring in India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
@@ -1186,17 +1208,17 @@ export default function HowToChallengeAWillClient() {
                 <span>CONFIDENTIAL LITIGATION ADVICE</span>
               </div>
               <h3 className="text-lg font-bold leading-tight">
-                Will Contested or Suspect a Fake Document?
+                Will Contested or Suspect a Fake Paper?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect with our specialized testamentary lawyers for immediate caveat lodging, forensic signature analysis, and court representation.
+                Connect with our specialized Will lawyers for immediate caveat lodging, forensic signature analysis, and court representation.
               </p>
               <button
                 type="button"
                 onClick={handleConsultLawyer}
                 className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-xs font-bold transition-all shadow-md cursor-pointer"
               >
-                <span>Consult a Dispute Lawyer</span>
+                <span>Consult a Fight Lawyer</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
               <div className="pt-1 flex items-center justify-center gap-1 text-[11px] text-slate-400">
@@ -1208,7 +1230,7 @@ export default function HowToChallengeAWillClient() {
             {/* CARD 3: TRUST & BENEFITS CHECKLIST */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 block">
-                Litigation Support Services
+                Court Fights Support Services
               </span>
               <ul className="space-y-2.5 text-xs text-slate-700">
                 <li className="flex items-start gap-2">
@@ -1226,13 +1248,13 @@ export default function HowToChallengeAWillClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Stay Orders:</strong> Immediate restraint on property sale or mutation.
+                    <strong>Stay Orders:</strong> Immediate restraint on asset sale or name change.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Pan-India Representation:</strong> Litigating across major metro jurisdictions.
+                    <strong>Pan-India Representation:</strong> Litigating across major metro areas.
                   </span>
                 </li>
               </ul>
@@ -1241,7 +1263,7 @@ export default function HowToChallengeAWillClient() {
             {/* CARD 4: RELATED GUIDES */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 block">
-                Recommended Succession Guides
+                Recommended Estate Guides
               </span>
               <div className="space-y-2">
                 <Link
@@ -1275,10 +1297,10 @@ export default function HowToChallengeAWillClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
                 >
                   <div className="font-bold text-xs text-slate-900">
-                    Property Transfer After Death
+                    Asset Transfer After Death
                   </div>
                   <div className="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1">
-                    <span>Intestate succession roadmap</span>
+                    <span>No-Will estate roadmap</span>
                     <ArrowRight className="w-2.5 h-2.5 text-[#C65378]" />
                   </div>
                 </Link>
@@ -1306,13 +1328,13 @@ export default function HowToChallengeAWillClient() {
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Property Transfer After Death
+                  Asset Transfer After Death
                 </Link>
                 <Link
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
               </div>
             </div>

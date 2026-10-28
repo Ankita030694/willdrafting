@@ -92,7 +92,7 @@ export default function BankDeceasedClaimPage() {
         url: canonicalUrl,
         name: "Bank Deceased Claim Documents Checklist | WillDrafting.in",
         description:
-          "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.",
+          "Generate your bank deceased claim papers checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -132,7 +132,7 @@ export default function BankDeceasedClaimPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory compliance tool for generating bank deceased claim document checklists across top 12 Indian banks, comparing RBI.",
+          "Free legal compliance tool for generating bank deceased claim paper checklists across top 12 Indian banks, comparing RBI.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -149,7 +149,7 @@ export default function BankDeceasedClaimPage() {
             name: "How do I claim money from a deceased person's bank account in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "To claim money from a deceased depositor's account, check if a nominee is registered. If a registered nominee exists, submit the bank claim form, original death certificate, nominee KYC documents, and passbook. The bank will release funds within 15 days. If no nominee exists, all legal heirs must jointly submit claim forms, legal heir certificate, letter of disclaimer, and an indemnity bond with sureties.",
+              text: "To claim money from a deceased depositor's account, check if a nominee is filed. If a filed nominee exists, submit the bank claim form, original death paper, nominee KYC papers, and passbook. The bank will release funds within 15 days. If no nominee exists, all legal heirs must jointly submit claim forms, legal heir paper, letter of disclaimer, and an indemnity bond with sureties.",
             },
           },
           {
@@ -157,7 +157,7 @@ export default function BankDeceasedClaimPage() {
             name: "What is the maximum balance a bank can settle without a succession certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under RBI Master Directions, every bank's Board fixes an indemnity threshold for settling claims without demanding a court succession certificate. For State Bank of India, Punjab National Bank, Bank of Baroda, and Axis Bank, this threshold is ₹5,00,000. ICICI Bank allows simplified settlement up to ₹10,00,000 against an indemnity bond and solvent sureties.",
+              text: "Under RBI Master Directions, every bank's Board fixes an indemnity threshold for settling claims without demanding a court estate paper. For State Bank of India, Punjab National Bank, Bank of Baroda, and Axis Bank, this threshold is ₹5,00,000. ICICI Bank allows simplified deal up to ₹10,00,000 against an indemnity bond and solvent sureties.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function BankDeceasedClaimPage() {
             name: "Does a nominee become the absolute owner of the deceased's bank account?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court of India held in Smt. Sarbati Devi v. Smt. Usha Devi and Ram Chander Talwar v. Devender Kumar Talwar that a nominee is merely a statutory trustee authorized to receive funds and give a valid discharge to the bank. The money forms part of the deceased person's estate and belongs to the legal heirs under personal succession law.",
+              text: "No. The Supreme Court of India held in Smt. Sarbati Devi v. Smt. Usha Devi and Ram Chander Talwar v. Devender Kumar Talwar that a nominee is merely a legal trustee authorized to receive funds and give a valid discharge to the bank. The money forms part of the deceased person's estate and belongs to the legal heirs under personal estate law.",
             },
           },
           {
@@ -181,7 +181,7 @@ export default function BankDeceasedClaimPage() {
             name: "What documents are required to claim a bank account without a nominee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Documents required for non-nominee claims include: (1) Prescribed Bank Deceased Claim Form signed by all legal heirs, (2) Original death certificate, (3) Revenue Legal Heir Certificate or Surviving Member Certificate, (4) Letter of Disclaimer (Annexure C) from heirs relinquishing rights, (5) Indemnity Bond (Annexure D) on non-judicial stamp paper, (6) Two solvent sureties with income proof, and (7) KYC documents of all heirs.",
+              text: "Papers required for non-nominee claims include: (1) Prescribed Bank Deceased Claim Form signed by all legal heirs, (2) Original death paper, (3) Revenue Legal Heir Paper or Surviving Member Paper, (4) Letter of Disclaimer (Annexure C) from heirs relinquishing rights, (5) Indemnity Bond (Annexure D) on non-judicial stamp paper, (6) Two solvent sureties with income proof, and (7) KYC papers of all heirs.",
             },
           },
           {
@@ -189,7 +189,7 @@ export default function BankDeceasedClaimPage() {
             name: "Why do banks ask for two sureties or guarantors on an indemnity bond?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When a claim is settled without a court order, banks require an Indemnity Bond signed by the claimant and two independent solvent sureties. This protects the bank against financial liability in case another unknown legal heir or creditor subsequently emerges and claims the deposited funds.",
+              text: "When a claim is settled without a court order, banks require an Indemnity Bond signed by the claimant and two independent solvent sureties. This protects the bank against financial liability in case another unknown legal heir or creditor then emerges and claims the deposited funds.",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function BankDeceasedClaimPage() {
             name: "How can legal heirs claim contents of a bank safety locker after the holder dies?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 45ZE of the Banking Regulation Act, 1949, if a locker has a registered nominee, the bank allows locker access to the nominee after preparing an inventory in the presence of the branch manager, nominee, and two independent witnesses. If there is no nominee, all legal heirs must jointly attend the inventory or provide a registered power of attorney.",
+              text: "Under Section 45ZE of the Banking Regulation Act, 1949, if a locker has a filed nominee, the bank allows locker access to the nominee after preparing an inventory in the presence of the branch manager, nominee, and two independent witnesses. If there is no nominee, all legal heirs must jointly attend the inventory or provide a filed power of attorney.",
             },
           },
           {
@@ -205,7 +205,7 @@ export default function BankDeceasedClaimPage() {
             name: "What can I do if a bank branch manager refuses to settle a claim without a court order?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If the account balance is below the bank Board threshold and no court injunction exists, demanding a succession certificate violates RBI circular DBOD.No.Leg.BC.95/2004-05. You can submit a formal written grievance to the Branch Manager citing RBI directions. If unresolved within 30 days, file an online complaint with the RBI Banking Ombudsman on the CMS portal.",
+              text: "If the account balance is below the bank Board threshold and no court injunction exists, demanding a estate paper violates RBI circular DBOD.No.Leg.BC.95/2004-05. You can submit a formal written grievance to the Branch Manager citing RBI directions. If unresolved within 30 days, file an online complaint with the RBI Banking Ombudsman on the CMS portal.",
             },
           },
         ],

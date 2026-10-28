@@ -141,7 +141,7 @@ export default function MysuruLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mysuru: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation.",
+          "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset split, and lawyer talk.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function MysuruLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mysuru - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Karnataka Kaveri 2.0 Sub-Registrar registration, and Karnataka High Court probate guidance.",
+          "Professional Will drafting, lawyer check, Karnataka Kaveri 2.0 SRO filing, and Karnataka High Court probate guidance.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -255,38 +255,38 @@ export default function MysuruLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Mysuru",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Karnataka.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Karnataka.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Mysuru Assets and Beneficiaries",
-            text: "Itemize your Mysuru assets including MUDA plots, ancestral homes, bank accounts, demat investments, and pension benefits. Appoint your beneficiaries and a trusted executor.",
+            text: "Itemize your Mysuru assets including MUDA plots, family homes, bank accounts, demat investments, and pension benefits. Appoint your heirs and a trusted executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Statutory Succession Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate survivorship, specific bequest, and revocation clauses under the Indian Succession Act, 1925.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate survivorship, specific bequest, and revocation clauses under the Indian Succession Act, 1925.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Appointment on Karnataka Kaveri 2.0 Portal",
-            text: "Schedule an appointment on kaveri.karnataka.gov.in for your jurisdictional Sub-Registrar office in Mysuru and pay the nominal ₹200 registration fee online.",
+            text: "Schedule an appointment on kaveri.karnataka.gov.in for your local SRO office in Mysuru and pay the nominal ₹200 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Attend the Sub-Registrar office with both witnesses and original IDs for biometric thumbprinting, web-camera photo capture, and official Book III registration.",
+            text: "Attend the SRO office with both witnesses and original IDs for biometric thumbprinting, web-camera photo capture, and official Book III filing.",
           },
         ],
       },

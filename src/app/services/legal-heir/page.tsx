@@ -353,12 +353,12 @@ export default function LegalHeirPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-21" className="text-[#6B7280]">
@@ -374,16 +374,16 @@ export default function LegalHeirPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
-                <span>Legal Heir Certificate &amp; Succession Advisory · Revenue Dept &amp; SRO</span>
+                <span>Legal Heir Paper &amp; Estate Advisory · Revenue Dept &amp; SRO</span>
               </div>
 
               {/* Single Strict H1: 53 characters */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Legal Heir Certificate Services in India &amp; Legal Help
+                Legal Heir Paper Services in India &amp; Legal Help
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                When a person dies without a Will, the family needs a legal heir certificate. This document proves who the legal heirs are under Indian law. Our advocates help you make family tree papers. We guide you through revenue office checks. We also help you transfer property and claim bank funds quickly.
+                When a person dies without a Will, the family needs a legal heir paper. This paper proves who the legal heirs are under Indian law. Our lawyers help you make family tree papers. We guide you through revenue office checks. We also help you transfer asset and claim bank funds quickly.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -391,14 +391,14 @@ export default function LegalHeirPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Apply for Legal Heir Assistance</span>
+                  <span>Apply for Legal Heir Help</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <a
                   href="#comparison-matrix"
                   className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#172228]/20 hover:border-[#C65378] text-[#172228] hover:text-[#C65378] text-[15px] font-semibold px-6 py-3.5 transition-all"
                 >
-                  <span>Legal Heir vs Court Certificate</span>
+                  <span>Legal Heir vs Court Paper</span>
                 </a>
               </div>
 
@@ -413,11 +413,11 @@ export default function LegalHeirPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Property Mutation Ready</span>
+                  <span>Asset Name Change Ready</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Lawyer Verified</span>
+                  <span>Lawyer Checked</span>
                 </div>
               </div>
             </div>
@@ -428,25 +428,25 @@ export default function LegalHeirPage() {
                 Critical Legal Distinction
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
-                When a Legal Heir Certificate is Not Enough
+                When a Legal Heir Paper is Not Enough
               </h2>
               <ul className="space-y-3.5 text-[14px] leading-[1.6] text-[#374151] mb-6">
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Demat Shares and High-Value Funds:</strong> Indian banks often reject revenue papers for sums above 5 lakh rupees. For higher sums, you need a court Succession Certificate under Section 372 of the Indian Succession Act.
+                    <strong>Demat Shares and High-Value Funds:</strong> Indian banks often reject revenue papers for sums above 5 lakh rupees. For higher sums, you need a court Estate Paper under Section 372 of the Indian Succession Act.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Sibling Disputes:</strong> Revenue officers cannot decide family disputes. If a sibling objects to the request, the officer rejects it. In such cases, heirs must go to civil court to divide the estate.
+                    <strong>Sibling Fights:</strong> Revenue officers cannot decide family fights. If a sibling objects to the request, the officer rejects it. In such cases, heirs must go to civil court to divide the estate.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Selling Inherited Property:</strong> This certificate updates names in tax records. However, selling the home requires all heirs to sign the sale deed. Alternatively, co-heirs can sign a registered Relinquishment Deed.
+                    <strong>Selling Inherited Asset:</strong> This paper updates names in tax records. However, selling the home requires all heirs to sign the sale deed. Alternatively, co-heirs can sign a filed Release Deed.
                   </span>
                 </li>
               </ul>
@@ -454,7 +454,7 @@ export default function LegalHeirPage() {
                 href="/blogs/legal-heir-certificate-vs-succession-certificate"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Read Legal Heir vs Succession Certificate Guide</span>
+                <span>Read Legal Heir vs Estate Paper Guide</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -475,13 +475,13 @@ export default function LegalHeirPage() {
           <div className="max-w-3xl mb-8">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileCheck className="w-4 h-4" />
-              <span>Official Document Anatomy</span>
+              <span>Official Paper Anatomy</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Official Legal Heir Document Anatomy
+              Official Legal Heir Paper Anatomy
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Here is how an official succession paper looks in India. It includes an official state seal, revenue office stamp, and a verified family tree.
+              Here is how an official estate paper looks in India. It includes an official state seal, revenue office stamp, and a checked family tree.
             </p>
           </div>
 
@@ -496,7 +496,7 @@ export default function LegalHeirPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Official Legal Heir paper framework showing family lineage and authority stamp.
+                <strong>Figure 1:</strong> Official Legal Heir paper framework showing family lineage and office stamp.
               </span>
               <span>Source: WillDrafting Editorial Team &amp; AMA Legal Solutions</span>
             </figcaption>
@@ -510,13 +510,13 @@ export default function LegalHeirPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Scale className="w-4 h-4" />
-              <span>Statutory Comparison Matrix</span>
+              <span>Legal Comparison Matrix</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Legal Heir Certificate vs Court Succession Certificate
+              Legal Heir Paper vs Court Estate Paper
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Choosing the right legal path saves you time and money. Check the differences between revenue certificates and court orders below.
+              Choosing the right legal path saves you time and money. Check the differences between revenue papers and court orders below.
             </p>
           </div>
 
@@ -526,9 +526,9 @@ export default function LegalHeirPage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[20%]">Legal Feature</th>
-                    <th className="py-4 px-6 w-[26%] text-[#111827]">Legal Heir Certificate</th>
-                    <th className="py-4 px-6 w-[27%] text-[#C65378]">Court Succession Certificate</th>
-                    <th className="py-4 px-6 w-[27%]">Letter of Administration</th>
+                    <th className="py-4 px-6 w-[26%] text-[#111827]">Legal Heir Paper</th>
+                    <th className="py-4 px-6 w-[27%] text-[#C65378]">Court Estate Paper</th>
+                    <th className="py-4 px-6 w-[27%]">Letter of Care</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -556,10 +556,10 @@ export default function LegalHeirPage() {
               <span>5-Step Revenue Protocol</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              How to Get a Legal Heir Certificate in India
+              How to Get a Legal Heir Paper in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Follow this 5-step roadmap made by our high court lawyers. It helps your application pass local revenue checks without delay.
+              Follow this 5-step roadmap made by our high court lawyers. It helps your form pass local revenue checks without delay.
             </p>
           </div>
 
@@ -568,12 +568,12 @@ export default function LegalHeirPage() {
               {
                 step: "01",
                 title: "Get Death Certificate",
-                desc: "Get the official death paper from the municipal registrar where the person died.",
+                desc: "Get the official death paper from the city registrar where the person died.",
               },
               {
                 step: "02",
                 title: "Draft Family Affidavit",
-                desc: "A lawyer drafts the family tree affidavit on stamp paper with heir ID cards.",
+                desc: "A lawyer drafts the family tree sworn note on stamp paper with heir ID cards.",
               },
               {
                 step: "03",
@@ -588,7 +588,7 @@ export default function LegalHeirPage() {
               {
                 step: "05",
                 title: "Digital Certificate Issued",
-                desc: "The Tehsildar signs and issues the digital QR-coded certificate for bank and land records.",
+                desc: "The Tehsildar signs and issues the digital QR-coded paper for bank and land records.",
               },
             ].map((item) => (
               <div
@@ -615,16 +615,16 @@ export default function LegalHeirPage() {
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
                 <Users className="w-4 h-4" />
-                <span>Family Settlement &amp; Dispute Protection</span>
+                <span>Family Deal &amp; Fight Protection</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
-                Handling Sibling Disputes, Sisters &amp; NRI Co-Heirs
+                Handling Sibling Fights, Sisters &amp; NRI Co-Heirs
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Estate issues often start when siblings disagree or live abroad. Sometimes brothers try to leave married sisters out of property papers.
+                Estate issues often start when siblings disagree or live abroad. Sometimes brothers try to leave married sisters out of asset papers.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                Under Indian law, married daughters have equal rights by birth. The Supreme Court confirmed this in the Vineeta Sharma ruling. If one family member wants to keep the house, other heirs can sign a registered <Link href="/templates/release-deed-format" className="text-[#C65378] font-bold underline hover:text-[#a13c5d]">Relinquishment Deed</Link>. For heirs living in the US, UK, or UAE, our team drafts embassy-stamped powers of attorney. We ensure your family settles property peacefully.
+                Under Indian law, married daughters have equal rights by birth. The Supreme Court confirmed this in the Vineeta Sharma ruling. If one family member wants to keep the house, other heirs can sign a filed <Link href="/templates/release-deed-format" className="text-[#C65378] font-bold underline hover:text-[#a13c5d]">Release Deed</Link>. For heirs living in the US, UK, or UAE, our team drafts embassy-stamped powers of attorney. We ensure your family settles asset peacefully.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -632,14 +632,14 @@ export default function LegalHeirPage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Consult Our Succession Advocates</span>
+                <span>Consult Our Estate Lawyers</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/templates/release-deed-format"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white border border-[#172228]/15 hover:border-[#C65378] text-[#172228] text-xs font-bold uppercase tracking-[0.12em] px-5 py-3.5 transition-colors text-center"
               >
-                <span>Relinquishment Deed (Haq Tyag) Format</span>
+                <span>Release Deed (Haq Tyag) Format</span>
               </Link>
             </div>
           </div>
@@ -652,10 +652,10 @@ export default function LegalHeirPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Legal Heir Statutory FAQs</span>
+              <span>Legal Heir Legal FAQs</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions on Legal Heir Certificates
+              Frequently Asked Questions on Legal Heir Papers
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Here are clear legal answers from our team at AMA Legal Solutions:
@@ -680,10 +680,10 @@ export default function LegalHeirPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Succession Resources &amp; Tools
+                Related Estate Resources &amp; Tools
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore related statutory guides and calculators to resolve inheritance questions:
+                Explore related legal guides and tools to resolve estate questions:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -691,28 +691,28 @@ export default function LegalHeirPage() {
                 href="/blogs/legal-heir-certificate-vs-succession-certificate"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Legal Heir vs Succession Certificate</span>
+                <span>Legal Heir vs Estate Paper</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/succession-certificate"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Court Succession Certificate Lawyers</span>
+                <span>Court Estate Paper Lawyers</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/tools/succession-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Launch Succession Calculator</span>
+                <span>Launch Estate Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/templates/release-deed-format"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Relinquishment Deed Format</span>
+                <span>Release Deed Format</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -725,7 +725,7 @@ export default function LegalHeirPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -735,12 +735,12 @@ export default function LegalHeirPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This statutory guide follows the Hindu Succession Act, 1956 and state revenue rules. It provides general legal information. For complex family property disputes, consult our succession advocates directly.
+              This legal guide follows the Hindu Succession Act, 1956 and state revenue rules. It provides general legal information. For complex family asset fights, consult our estate lawyers directly.
             </p>
           </div>
           <a

@@ -142,7 +142,7 @@ export default function TiruchirappalliLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
         description:
-          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET signing guidance, and hassle-free City Corporation Patta.",
+          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET signing guidance, and hassle-free City City Board Patta.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TiruchirappalliLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tiruchirappalli - Estate Planning & TNREGINET Registration",
         description:
-          "Professional Will drafting, advocate check, TNREGINET online token booking, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, TNREGINET online token booking, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -254,26 +254,26 @@ export default function TiruchirappalliLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Tiruchirappalli",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Tiruchirappalli.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Tiruchirappalli.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Tiruchirappalli real estate including City Corporation apartments, Srirangam heritage properties, BHEL industrial units, Kaveri delta farmland, and financial assets. Designate heirs and an executor.",
+            text: "List your Tiruchirappalli real estate including City City Board apartments, Srirangam heritage assets, BHEL plant units, Kaveri delta farmland, and financial assets. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
@@ -285,7 +285,7 @@ export default function TiruchirappalliLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Tiruchirappalli SRO",
-            text: "Visit the SRO office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III signing.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III signing.",
           },
         ],
       },

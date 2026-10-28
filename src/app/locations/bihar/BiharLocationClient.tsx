@@ -126,7 +126,7 @@ const BIHAR_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Print on plain A4 sheets. Under Bihar rules, stamp paper is not needed.",
     checked: true,
   },
@@ -256,7 +256,7 @@ export default function BiharLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 54 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Bihar: Land Succession Guide
+                Will Drafting Services in Bihar: Land Estate Guide
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -316,7 +316,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Bihar Urban &amp; Land Succession Blueprint
+                  Bihar Urban &amp; Land Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -430,10 +430,10 @@ export default function BiharLocationClient({ faqs }: Props) {
               {/* QUICK CTA CARD */}
               <div className="rounded-2xl bg-gradient-to-br from-[#172228] to-[#2B3B42] text-white p-5 shadow-md space-y-3">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-rose-300">
-                  Verified Legal Service
+                  Checked Legal Service
                 </span>
                 <div className="font-extrabold text-sm text-white leading-snug">
-                  Protect Your Bihar Family Land &amp; Property
+                  Protect Your Bihar Family Land &amp; Asset
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   Draft a clear Will online in 15 minutes. Avoid painful court fights and delayed Dakhil Kharij.
@@ -460,16 +460,16 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>BIHAR ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Bihar
+                  Key Highlights: Will Making &amp; Filing in Bihar
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A plain paper Will signed before two witnesses is valid. Registering your Will in Book III gives permanent proof against family fights.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. A plain paper Will signed before two witnesses is valid. Registering your Will in Book III gives permanent proof against family fights.
                     </p>
                   </div>
 
@@ -479,7 +479,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Bihar is not a presidency town. Under Section 213 of the Indian Succession Act, court probate is optional in Bihar. You can transfer property directly with a registered Will.
+                      Bihar is not a presidency town. Under Section 213 of the Indian Succession Act, court probate is a choice in Bihar. You can transfer asset directly with a filed Will.
                     </p>
                   </div>
 
@@ -489,7 +489,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Zero Bihar Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from stamp duty across Bihar. You pay only a small ₹100 registration fee plus scanning charges at your SRO office.
+                      Wills are 100% exempt from stamp duty across Bihar. You pay only a small ₹100 filing fee plus scanning charges at your SRO office.
                     </p>
                   </div>
 
@@ -499,7 +499,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Bihar Bhumi Dakhil Kharij</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will helps you get fast land name change on the Bihar Bhumi portal. Circle Officers use registered Wills to update Jamabandi records without civil court cases.
+                      A filed Will helps you get fast land name change on the Bihar Bhumi portal. Circle Officers use filed Wills to update Jamabandi records without civil court cases.
                     </p>
                   </div>
                 </div>
@@ -514,10 +514,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>INDIAN SUCCESSION ACT &amp; BIHAR LAWS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Will Drafting &amp; Land Succession in Bihar
+                  1. Will Drafting &amp; Land Estate in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a Will in Bihar protects both city homes and family farm plots. Testamentary succession follows the Indian Succession Act, 1925 and the Bihar Land Name Change Act, 2011. Here are three key legal rules you must know:
+                  Making a Will in Bihar protects both city homes and family farm plots. Will estate follows the Indian Succession Act, 1925 and the Bihar Land Name Change Act, 2011. Here are three key legal rules you must know:
                 </p>
               </div>
 
@@ -527,7 +527,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <FileText className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Section 59: Testamentary Capacity
+                    Section 59: Will Capacity
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Any adult of sound mind can make a Will in Bihar. This includes senior citizens with family land or city flats. A doctor fitness paper proves clear mental health and stops false claims.
@@ -542,7 +542,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     Section 63: Two Witnesses Rule
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    You must sign your Will before two adult witnesses. The witnesses must watch you sign. Witnesses must not receive any land, money, or property in the Will.
+                    You must sign your Will before two adult witnesses. The witnesses must watch you sign. Witnesses must not receive any land, money, or asset in the Will.
                   </p>
                 </div>
 
@@ -568,10 +568,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT 1908 ANALYSIS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Bihar?
+                  2. Is Will Filing Needed in Bihar?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Section 18(e) of the Registration Act, 1908 makes Will registration optional in Bihar. A Will on plain paper with two witness signatures is legally valid. However, an unregistered Will often faces objections during land name change before the Circle Officer. Registering your Will gives permanent safety.
+                  Section 18(e) of the Filing Act, 1908 makes Will filing a choice in Bihar. A Will on plain paper with two witness signatures is legally valid. However, an plain Will often faces objections during land name change before the Circle Officer. Registering your Will gives permanent safety.
                 </p>
               </div>
 
@@ -580,9 +580,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-slate-50 border-b border-slate-200 text-slate-700">
                     <tr>
-                      <th className="p-4 font-extrabold">Succession Parameter</th>
-                      <th className="p-4 font-extrabold text-slate-500">Unregistered Will</th>
-                      <th className="p-4 font-extrabold text-[#C65378]">Registered Will (Book III)</th>
+                      <th className="p-4 font-extrabold">Estate Parameter</th>
+                      <th className="p-4 font-extrabold text-slate-500">Plain Will</th>
+                      <th className="p-4 font-extrabold text-[#C65378]">Filed Will (Book III)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-600">
@@ -602,9 +602,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <td className="p-4 font-bold text-emerald-700">Safe in government Book III custody</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-bold text-slate-900">Patna Municipal Corporation</td>
-                      <td className="p-4">Requires court succession papers</td>
-                      <td className="p-4 font-bold text-emerald-700">Quick name change on property tax records</td>
+                      <td className="p-4 font-bold text-slate-900">Patna City City Board</td>
+                      <td className="p-4">Requires court estate papers</td>
+                      <td className="p-4 font-bold text-emerald-700">Quick name change on asset tax records</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Official Govt Fee</td>
@@ -624,10 +624,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>PATNA HIGH COURT JURISPRUDENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Bihar Probate Law: Optional Under Patna High Court
+                  3. Bihar Probate Law: A Choice Under Patna High Court
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Probate means getting a court order to confirm a Will. Many property owners in Bihar think probate is required before land transfer. This is not true. Here is how probate works in Bihar:
+                  Probate means getting a court order to confirm a Will. Many asset owners in Bihar think probate is required before land transfer. This is not true. Here is how probate works in Bihar:
                 </p>
               </div>
 
@@ -638,10 +638,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                     Section 213 ISA: Non-Presidency Exemption
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Why Court Probate is Optional in Bihar
+                    Why Court Probate is A Choice in Bihar
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 213 of the Indian Succession Act requires probate only in Mumbai, Kolkata, and Chennai. Bihar is outside these areas. The Patna High Court has confirmed that probate is optional in Bihar. You can transfer property directly with a registered Will.
+                    Section 213 of the Indian Succession Act requires probate only in Mumbai, Kolkata, and Chennai. Bihar is outside these areas. The Patna High Court has confirmed that probate is a choice in Bihar. You can transfer asset directly with a filed Will.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -658,11 +658,11 @@ export default function BiharLocationClient({ faqs }: Props) {
                     When is Probate Filed in Bihar Civil Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor files for probate only if family members file a court case or challenge the Will. A court probate order settles all claims for good.
+                    An executor files for probate only if family members file a court case or fight the Will. A court probate order settles all claims for good.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Court order stops all third-party property fights</span>
+                    <span>Court order stops all third-party asset fights</span>
                   </div>
                 </div>
               </div>
@@ -676,10 +676,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Bihar Sub-Registrar Offices: SRO Area Directory
+                  4. Bihar SRO Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Bihar runs Sub-Registrar Offices under the Registration Department. Under Section 32 of the Registration Act, you can register your Will where you live or where your property is located.
+                  Bihar runs SRO Offices under the Filing Office. Under Section 32 of the Filing Act, you can register your Will where you live or where your asset is located.
                 </p>
               </div>
 
@@ -723,7 +723,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-[11px] font-bold uppercase tracking-wider text-[#C65378]">
-                        Selected Registration Authority
+                        Selected Filing Office
                       </span>
                       <h3 className="font-extrabold text-base text-slate-900">
                         {activeHubData.sro}
@@ -782,7 +782,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Bihar include city flats along Bailey Road in Patna, family homes in Gaya, textile shops in Muzaffarpur, silk units in Bhagalpur, family Mithila havelis in Darbhanga, and fertile farms across Seemanchal and Shahabad. Our estate lawyers provide expert legal drafting and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate assets in Bihar include city flats along Bailey Road in Patna, family homes in Gaya, textile shops in Muzaffarpur, silk units in Bhagalpur, family Mithila havelis in Darbhanga, and fertile farms across Seemanchal and Shahabad. Our estate lawyers provide expert legal drafting and SRO accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -814,7 +814,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Patna</strong> and Danapur for city apartments, PRDA home plots, shop shops, and bank lockers. We handle Patna Municipal Corporation (PMC) property tax name change, parking allocations, and demat account transfers to keep family peace.
+                      Specialized <strong>Will drafting services in Patna</strong> and Danapur for city apartments, PRDA home plots, shop shops, and bank lockers. We handle Patna City City Board (PMC) asset tax name change, parking allocations, and demat account transfers to keep family peace.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -878,7 +878,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Parisar, Civil Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Family estate planning, asset mapping, and fast Book III registration at Gaya Sadar SRO.
+                        Family estate planning, asset mapping, and fast Book III filing at Gaya Sadar SRO.
                       </p>
                     </div>
                   </div>
@@ -933,7 +933,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Company Bagh Road, Muzaffarpur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Business estate planning, lychee land check, and e-Nibandhan registration.
+                        Business estate planning, lychee land check, and e-Nibandhan filing.
                       </p>
                     </div>
                   </div>
@@ -1123,7 +1123,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Industrial Capital of Bihar
+                        Plant Capital of Bihar
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Begusarai Sadar
@@ -1144,7 +1144,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting services in Begusarai</strong> and Barauni for industrial units, home plots, BIADA industrial lease land, and farmland. We set clear rules for company shares, factory equipment, and homes.
+                      Focused <strong>Will drafting services in Begusarai</strong> and Barauni for plant units, home plots, BIADA plant lease land, and farmland. We set clear rules for company shares, factory equipment, and homes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1153,13 +1153,13 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Pokhariya Overbridge</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        BIADA lease transfer clauses, industrial equity planning, and SRO signing.
+                        BIADA lease transfer clauses, plant equity planning, and SRO signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial Units &amp; Real Estate</span>
+                    <span className="text-xs font-bold text-slate-500">Plant Units &amp; Real Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1208,7 +1208,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Compound, Bhojpur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Canal farm record checks, family settlement terms, and e-Nibandhan registration.
+                        Canal farm record checks, family deal terms, and e-Nibandhan filing.
                       </p>
                     </div>
                   </div>
@@ -1255,7 +1255,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Asset Mapping &amp; Khatiyan / Jamabandi Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Make a list of all your assets. For farmland, write down the Revenue Thana, Khata, Khesra, and Jamabandi numbers. For city flats, list the sale deed, municipal holding, and bank accounts.
+                      Make a list of all your assets. For farmland, write down the Revenue Thana, Khata, Khesra, and Jamabandi numbers. For city flats, list the sale deed, city holding, and bank accounts.
                     </p>
                   </div>
                 </div>
@@ -1282,7 +1282,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Physical Attestation Before Two Independent Witnesses
+                      Physical Witness Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print your Will on plain A4 sheets. Sign each page in front of two adult witnesses. Witnesses sign right after you. Attach a doctor paper for seniors.
@@ -1312,7 +1312,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      SRO Attendance &amp; Book III Permanent Registration
+                      SRO Attendance &amp; Book III Permanent Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Visit the SRO office with your two witnesses. Our lawyer helps you finish ID checks, photo capture, and thumbprints for Book III custody.
@@ -1330,10 +1330,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION IN BIHAR</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration in Bihar
+                  7. Section 31 Doorstep SRO Filing in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 31 of the Registration Act, 1908, elderly or unwell citizens can register a Will from home or hospital in Bihar.
+                  Under Section 31 of the Filing Act, 1908, elderly or unwell citizens can register a Will from home or hospital in Bihar.
                 </p>
               </div>
 
@@ -1344,7 +1344,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Eligibility &amp; Medical Prerequisites
                     </span>
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Doctor&apos;s Fitness &amp; Inability Certificate
+                      Doctor&apos;s Fitness &amp; Inability Paper
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       An MBBS doctor issues a paper stating the person cannot travel but has a sound mind. This protects the Will against false claims.
@@ -1356,10 +1356,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Official Commission Step
                     </span>
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Sub-Registrar Residence Visit
+                      SRO Residence Visit
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits your home with portable biometric tools. They record thumbprints and digital photos right in your living room.
+                      The SRO visits your home with portable biometric tools. They record thumbprints and digital photos right in your living room.
                     </p>
                   </div>
                 </div>
@@ -1370,7 +1370,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <span className="font-bold text-slate-900 block mb-0.5">
                       AMA Legal Solutions Doorstep Coordination
                     </span>
-                    Our legal team drafts the commission petition, liaises with the District Registrar, files the medical dossier, and coordinates the official Sub-Registrar visit to make sure complete comfort for your elderly family members.
+                    Our legal team drafts the commission petition, liaises with the District Registrar, files the medical dossier, and coordinates the official SRO visit to make sure complete comfort for your elderly family members.
                   </div>
                 </div>
               </div>
@@ -1384,7 +1384,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE DOCUMENT AUDIT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Bihar Sub-Registrar Offices
+                  8. Paper Checklist for Bihar SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Before going to the SRO office, make sure you have all required papers. Use this simple checklist to get ready:
@@ -1394,7 +1394,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 shadow-xs space-y-5">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <span className="font-extrabold text-sm text-slate-900">
-                    Testamentary Dossier Checklist
+                    Will Dossier Checklist
                   </span>
                   <span className="text-xs font-bold text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                     {checkedCount} of {checklist.length} Completed
@@ -1449,10 +1449,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATIONS IN BIHAR</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Bihar Property Types: Land, Houses &amp; BIADA Plots
+                  9. Bihar Asset Types: Land, Houses &amp; BIADA Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A strong Will in Bihar lists every property type according to its land record and revenue rules:
+                  A strong Will in Bihar lists every asset type according to its land record and revenue rules:
                 </p>
               </div>
 
@@ -1460,7 +1460,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Home className="w-4 h-4 text-[#C65378]" />
-                    <span>Urban Apartments &amp; Municipal Houses</span>
+                    <span>Urban Apartments &amp; City Houses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Flats and houses in Patna, Gaya, Muzaffarpur, and Bhagalpur. We list sale deeds, tax numbers, and parking slots so your heirs get easy name change.
@@ -1480,7 +1480,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Factory className="w-4 h-4 text-[#C65378]" />
-                    <span>BIADA Industrial Plots &amp; Shop Shops</span>
+                    <span>BIADA Plant Plots &amp; Shop Shops</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Retail shops in wholesale markets and factory lease land from BIADA. We add clauses that follow lease terms and company rules.
@@ -1507,10 +1507,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>STATUTORY FEE BREAKDOWN</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Bihar e-Nibandhan Registration Fees
+                  10. Official Bihar e-Nibandhan Filing Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds, testamentary Wills enjoy complete stamp duty exemption in Bihar:
+                  Unlike sale deeds or gift deeds, Will Wills enjoy complete stamp duty exemption in Bihar:
                 </p>
               </div>
 
@@ -1530,9 +1530,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <td className="p-4">Wills can be signed on plain white A4 paper</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-bold text-slate-900">SRO Registration Fee</td>
+                      <td className="p-4 font-bold text-slate-900">SRO Filing Fee</td>
                       <td className="p-4">Nominal Flat Fee (Approx ₹100)</td>
-                      <td className="p-4">Standard Book III registration charge under Bihar rules</td>
+                      <td className="p-4">Standard Book III filing charge under Bihar rules</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Computer Scanning Charges</td>
@@ -1540,7 +1540,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <td className="p-4">Digital scanning and permanent Book III electronic custody</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-bold text-slate-900">Property Price Check Charges</td>
+                      <td className="p-4 font-bold text-slate-900">Asset Price Check Charges</td>
                       <td className="p-4">Nil (0%)</td>
                       <td className="p-4">No percentage fee based on circle rates or market value</td>
                     </tr>
@@ -1560,7 +1560,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Fees in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Bihar:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in Bihar:
                 </p>
               </div>
 
@@ -1578,12 +1578,12 @@ export default function BiharLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with urban flats, bank savings, and demat investments.
+                      Ideal for single homeowners with urban flats, bank savings, and demat investments.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Bihar Will creator</span>
+                        <span>Free Bihar Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1656,13 +1656,13 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Bihar SRO office or home visit.
+                      End-to-end filing coordination across any Bihar SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1704,7 +1704,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Essential legal answers regarding Will drafting, e-Nibandhan portal registration, probate exemptions, and land succession across Bihar:
+                  Essential legal answers regarding Will drafting, e-Nibandhan portal filing, probate exemptions, and land estate across Bihar:
                 </p>
               </div>
 
@@ -1746,7 +1746,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Bihar Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Bihar state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Bihar state filing systems:
                 </p>
               </div>
 
@@ -1762,10 +1762,10 @@ export default function BiharLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1814,7 +1814,29 @@ export default function BiharLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1833,7 +1855,7 @@ export default function BiharLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Will Drafting &amp; Land Succession in Bihar
+                Visual Blueprint: Will Drafting &amp; Land Estate in Bihar
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1852,7 +1874,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Bihar e-Nibandhan Registered &amp; Bihar Bhumi Name Change Compliant</span>
+              <span>Bihar e-Nibandhan Filed &amp; Bihar Bhumi Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={handleStartDraft}

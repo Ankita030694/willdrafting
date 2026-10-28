@@ -40,54 +40,54 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Legal Foundation: Ancestral vs Self-Acquired" },
-  { id: "interactive-classifier", label: "2. Interactive Property Provenance Classifier" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: Family vs Self-Acquired" },
+  { id: "interactive-classifier", label: "2. Free Asset Provenance Classifier" },
   { id: "chander-sen-rule", label: "3. Section 8 vs Section 6: Landmark Chander Sen Rule" },
   { id: "four-generation-lineage", label: "4. The 4-Generation Lineage Test Under Hindu Law" },
-  { id: "father-inheritance-test", label: "5. Property Inherited from Father: Section 8 Test" },
-  { id: "partition-deeds-severance", label: "6. Partition Deeds: How Division Alters Status" },
+  { id: "father-inheritance-test", label: "5. Asset Inherited from Father: Section 8 Test" },
+  { id: "partition-deeds-severance", label: "6. Split Deeds: How Division Alters Status" },
   { id: "daughters-coparcenary-rights", label: "7. Daughters' Equal Rights: Vineeta Sharma" },
-  { id: "comparison-table", label: "8. Legal Comparison: Ancestral vs Self-Acquired" },
+  { id: "comparison-table", label: "8. Legal Comparison: Family vs Self-Acquired" },
   { id: "step-by-step-sop", label: "9. Step-by-Step SOP: Tracing Title Provenance" },
   { id: "practical-case-studies", label: "10. Practical Case Studies: Delhi, Bengaluru, Mumbai" },
   { id: "legal-recital-templates", label: "11. Legal Recital Templates & Checklist" },
   { id: "institutional-profile", label: "12. Institutional Profile: Legal Excellence" },
-  { id: "frequently-asked-questions", label: "13. Frequently Asked Questions: Ancestral Assets" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Judicial Portals" },
+  { id: "frequently-asked-questions", label: "13. Frequently Asked Questions: Family Assets" },
+  { id: "statutory-citations", label: "14. Legal Citations & Judicial Portals" },
 ];
 
 const FAQS = [
   {
-    q: "Is property inherited from my father ancestral or self-acquired?",
-    a: "Under Supreme Court rulings, property inherited from a father who died after 1956 is self-acquired property under Section 8. It is not ancestral coparcenary property. The son holds it in his individual capacity. His children do not get any birthright in it.",
+    q: "Is asset inherited from my father family or self-acquired?",
+    a: "Under Supreme Court rulings, asset inherited from a father who died after 1956 is self-acquired asset under Section 8. It is not family joint asset. The son holds it in his single capacity. His children do not get any birthright in it.",
   },
   {
-    q: "What makes a property legally ancestral in India?",
-    a: "A property is legally ancestral only if it passes undivided through four generations of male lineage. It must come from the paternal great-grandfather down to the father without any partition deed. It must not have passed under a Will or gift.",
+    q: "What makes a asset legally family in India?",
+    a: "A asset is legally family only if it passes undivided through four generations of male lineage. It must come from the paternal great-grandfather down to the father without any split deed. It must not have passed under a Will or gift.",
   },
   {
-    q: "Can my father sell or Will away property he inherited from his father?",
-    a: "Yes. If your father inherited the property under Section 8 after 1956, he is the sole owner. He has 100% legal freedom to sell, gift, or make a Will for the whole house. He does not need consent or signatures from his children.",
+    q: "Can my father sell or Will away asset he inherited from his father?",
+    a: "Yes. If your father inherited the asset under Section 8 after 1956, he is the sole owner. He has 100% legal freedom to sell, gift, or make a Will for the whole house. He does not need consent or signatures from his children.",
   },
   {
-    q: "What happens to ancestral property after a partition deed is registered?",
-    a: "Once family members divide ancestral land through a registered deed, the joint family ends. In Uttam v. Saubhag Singh (2016), the Supreme Court ruled that each divided share becomes separate property. Children born later cannot claim to reopen the partition.",
+    q: "What happens to family asset after a split deed is filed?",
+    a: "Once family members divide family land through a filed deed, the joint family ends. In Uttam v. Saubhag Singh (2016), the Supreme Court ruled that each divided share becomes separate asset. Children born later cannot claim to reopen the split.",
   },
   {
-    q: "Do daughters have equal rights in ancestral property in India?",
+    q: "Do daughters have equal rights in family asset in India?",
     a: "Yes. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court ruled that daughters are equal coparceners by birth under Section 6. A daughter has the same rights as a son, even if her father died before 2005.",
   },
   {
-    q: "Can a grandson claim a share in his grandfather's self-acquired property?",
-    a: "No. A grandchild has zero birthright in a grandfather's self-acquired home while the grandfather is alive. The grandfather can sell or Will the property to anyone. Even if the father passes away, the grandson cannot demand a partition.",
+    q: "Can a grandson claim a share in his grandfather's self-acquired asset?",
+    a: "No. A grandchild has zero birthright in a grandfather's self-acquired home while the grandfather is alive. The grandfather can sell or Will the asset to anyone. Even if the father passes away, the grandson cannot demand a split.",
   },
   {
-    q: "Is property received via a Gift Deed or Will considered ancestral?",
-    a: "No. The Supreme Court in Arunachala Mudaliar (1953) ruled that property received through a Will or gift deed is self-acquired property. It is not ancestral unless the donor specifically wrote that it belongs to the joint family.",
+    q: "Is asset received via a Gift Deed or Will considered family?",
+    a: "No. The Supreme Court in Arunachala Mudaliar (1953) ruled that asset received through a Will or gift deed is self-acquired asset. It is not family unless the donor mainly wrote that it belongs to the joint family.",
   },
   {
-    q: "Can a coparcener make a Will of their share in ancestral property?",
-    a: "Yes. Under Section 30 of the Hindu Succession Act, 1956, any coparcener can make a Will for their undivided share in ancestral property. However, they cannot make a Will for the whole property or for other members' shares.",
+    q: "Can a coparcener make a Will of their share in family asset?",
+    a: "Yes. Under Section 30 of the Hindu Succession Act, 1956, any coparcener can make a Will for their undivided share in family asset. However, they cannot make a Will for the whole asset or for other members' shares.",
   },
 ];
 
@@ -104,7 +104,7 @@ export default function AncestralClassifierClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
@@ -317,12 +317,12 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Ancestral vs Self-Acquired Property Classifier India
+            Family vs Self-Acquired Asset Classifier India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Check your property rights under Hindu law. Trace Section 8 versus Section 6 rules. Test
+            Check your asset rights under Hindu law. Trace Section 8 versus Section 6 rules. Test
             children&rsquo;s birthrights and verify your 100% legal power to make a Will.
           </p>
 
@@ -341,7 +341,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -419,7 +419,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 6, 8, and 30 of the Hindu Succession Act, 1956. Backed by Supreme
@@ -442,8 +442,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Top Legal Myth in India:</strong> Most people think property from a grandfather
-                    is ancestral. Under Supreme Court law, this is false. If your grandfather bought it with
+                    <strong>Top Legal Myth in India:</strong> Most people think asset from a grandfather
+                    is family. Under Supreme Court law, this is false. If your grandfather bought it with
                     his own money and died after 1956, it is self-acquired. Grandchildren have no right by
                     birth.
                   </span>
@@ -451,7 +451,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>100% Will Rights for Self-Acquired Assets:</strong> If property is self-acquired,
+                    <strong>100% Will Rights for Self-Acquired Assets:</strong> If asset is self-acquired,
                     the owner has total control under Section 30. They can make a Will leaving 100% to
                     anyone. They can exclude any child without legal trouble.
                   </span>
@@ -459,8 +459,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Strict 4-Generation Lineage Test:</strong> Property is ancestral only if it
-                    passes undivided through four generations of direct male lineage without any partition
+                    <strong>Strict 4-Generation Lineage Test:</strong> Asset is family only if it
+                    passes undivided through four generations of direct male lineage without any split
                     deed.
                   </span>
                 </li>
@@ -468,7 +468,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Daughters Hold Equal Rights:</strong> In Vineeta Sharma (2020), the Supreme
-                    Court gave daughters equal coparcenary rights by birth in genuine ancestral property.
+                    Court gave daughters equal joint rights by birth in genuine family asset.
                   </span>
                 </li>
               </ul>
@@ -481,24 +481,24 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>LEGAL FRAMEWORK</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Legal Foundation: Ancestral vs Self-Acquired Property
+                1. Legal Foundation: Family vs Self-Acquired Asset
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Property disputes often happen when families confuse family inheritance with ancestral
-                  land. Hindu law divides property into two clear classes. These are ancestral property and
-                  self-acquired property.
+                  Asset fights often happen when families confuse family estate with family
+                  land. Hindu law divides asset into two clear classes. These are family asset and
+                  self-acquired asset.
                 </p>
                 <p>
-                  <strong>Self-acquired property</strong> includes real estate bought with your personal
-                  income. It also includes gifts, assets from a Will, or property inherited under Section 8.
+                  <strong>Self-acquired asset</strong> includes real estate bought with your personal
+                  income. It also includes gifts, assets from a Will, or asset inherited under Section 8.
                   The owner has total control over the asset. You can sell, gift, or make a Will for the
-                  whole property without asking your children.
+                  whole asset without asking your children.
                 </p>
                 <p>
-                  <strong>Ancestral property</strong> is inherited from a paternal ancestor across four
-                  unbroken generations. In true ancestral property, sons and daughters get an equal share at
-                  birth under Section 6. An owner cannot sell or Will away the whole property without the
+                  <strong>Family asset</strong> is inherited from a paternal ancestor across four
+                  unbroken generations. In true family asset, sons and daughters get an equal share at
+                  birth under Section 6. An owner cannot sell or Will away the whole asset without the
                   consent of all family members.
                 </p>
               </div>
@@ -511,7 +511,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>PROVENANCE TRACE WIZARD</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Property Provenance Classifier Tool
+                2. Free Asset Provenance Classifier Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answer the 5 diagnostic questions below. Classify your real estate under Hindu law and
@@ -524,7 +524,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <div className="space-y-3">
                   <label className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                     <Building2 className="w-4 h-4 text-[#C65378]" />
-                    <span>Question 1: How did the current owner acquire this property?</span>
+                    <span>Question 1: How did the current owner acquire this asset?</span>
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {[
@@ -535,7 +535,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       },
                       {
                         id: "gift_or_will",
-                        label: "Registered Gift / Will",
+                        label: "Filed Gift / Will",
                         desc: "Received through a gift deed or probated Will from a relative",
                       },
                       {
@@ -550,13 +550,13 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       },
                       {
                         id: "partition_allotment",
-                        label: "Partition / Family Settlement",
-                        desc: "Allotted as an individual share following family division",
+                        label: "Split / Family Deal",
+                        desc: "Allotted as an single share following family division",
                       },
                       {
                         id: "huf_blended",
                         label: "HUF / Joint Family Nucleus",
-                        desc: "Acquired using undivided ancestral business or HUF funds",
+                        desc: "Acquired using undivided family business or HUF funds",
                       },
                     ].map((option) => (
                       <button
@@ -594,7 +594,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                           {
                             id: "before_1956",
                             label: "Before June 17, 1956",
-                            desc: "Governed by classical old Mitakshara coparcenary law",
+                            desc: "Governed by classical old Mitakshara joint law",
                           },
                           {
                             id: "alive_today",
@@ -622,24 +622,24 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                         <GitBranch className="w-4 h-4 text-[#C65378]" />
-                        <span>Question 3: Who originally bought the property?</span>
+                        <span>Question 3: Who originally bought the asset?</span>
                       </label>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         {[
                           {
                             id: "father_or_grandfather_bought",
                             label: "Father or Grandfather Bought It",
-                            desc: "Purchased with their individual income (Not ancestral lineage)",
+                            desc: "Purchased with their single income (Not family lineage)",
                           },
                           {
                             id: "four_unbroken",
                             label: "Unbroken 4 Generations",
-                            desc: "Inherited from Great-Grandfather with zero intermediate partition",
+                            desc: "Inherited from Great-Grandfather with zero intermediate split",
                           },
                           {
                             id: "divided_earlier",
                             label: "Divided Earlier in Family",
-                            desc: "A partition or settlement divided it in a previous generation",
+                            desc: "A split or deal divided it in a previous generation",
                           },
                         ].map((opt) => (
                           <button
@@ -667,24 +667,24 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <div className="space-y-3 pt-4 border-t border-slate-100">
                     <label className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                       <FileText className="w-4 h-4 text-[#C65378]" />
-                      <span>Question 4: Was a registered partition deed executed?</span>
+                      <span>Question 4: Was a filed split deed signed?</span>
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                       {[
                         {
                           id: "no_partition",
-                          label: "No Partition Done",
-                          desc: "Property was never formally divided among siblings or coparceners",
+                          label: "No Split Done",
+                          desc: "Asset was never formally divided among siblings or coparceners",
                         },
                         {
                           id: "registered_partition",
-                          label: "Registered Partition Deed",
-                          desc: "Registered at Sub-Registrar Office (or decree by civil court)",
+                          label: "Filed Split Deed",
+                          desc: "Filed at SRO office (or decree by civil court)",
                         },
                         {
                           id: "oral_informal",
-                          label: "Oral / Unregistered Agreement",
-                          desc: "Informal family settlement or mutual understanding on paper",
+                          label: "Oral / Plain Pact",
+                          desc: "Informal family deal or mutual understanding on paper",
                         },
                       ].map((opt) => (
                         <button
@@ -716,11 +716,11 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       {
                         id: "draft_will",
                         label: "Making a Legal Will",
-                        desc: "Can I bequeath 100% of this property freely?",
+                        desc: "Can I bequeath 100% of this asset freely?",
                       },
                       {
                         id: "sell_property",
-                        label: "Selling the Property",
+                        label: "Selling the Asset",
                         desc: "Do I need signatures from children or siblings?",
                       },
                       {
@@ -730,8 +730,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       },
                       {
                         id: "family_dispute",
-                        label: "Partition Dispute Defense",
-                        desc: "A relative has sent a legal notice claiming coparcenary share",
+                        label: "Split Fight Defense",
+                        desc: "A relative has sent a legal notice claiming joint share",
                       },
                     ].map((opt) => (
                       <button
@@ -830,7 +830,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   {/* Tool Action Conversion */}
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="text-xs text-slate-300 text-center sm:text-left">
-                      Ready to safeguard this asset? Execute a registered, legally sound Will.
+                      Ready to safeguard this asset? Execute a filed, legally sound Will.
                     </div>
                     <button
                       onClick={handleStartDraft}
@@ -864,8 +864,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 />
               </div>
               <p className="text-[11px] text-slate-500 text-center pt-1">
-                Visualizing property classification under the Hindu Succession Act: Mitakshara coparcenary
-                versus Section 8 individual separate property.
+                Visualizing asset classification under the Hindu Succession Act: Mitakshara joint
+                versus Section 8 single separate asset.
               </p>
             </div>
 
@@ -880,7 +880,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many people believe that property inherited from a father is always ancestral. This is the
+                  Many people believe that asset inherited from a father is always family. This is the
                   top legal myth in India. It leads to many unnecessary court cases.
                 </p>
                 <p>
@@ -894,8 +894,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     The court ruled that Section 8 replaces old Hindu law. When a father dies without a Will
-                    after 1956, his property passes to his heirs as separate property. In the son&rsquo;s
-                    hands, it is self-acquired property. The grandson gets no birthright in it.
+                    after 1956, his asset passes to his heirs as separate asset. In the son&rsquo;s
+                    hands, it is self-acquired asset. The grandson gets no birthright in it.
                   </p>
                 </div>
                 <p>
@@ -917,7 +917,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To be legally ancestral, property must meet four clear conditions. It must pass down four
+                  To be legally family, asset must meet four clear conditions. It must pass down four
                   generations of male lineage without any division:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
@@ -927,7 +927,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   </li>
                   <li>
                     <strong>Generation 2 (Paternal Grandfather / Dada):</strong> Inherited through male
-                    lineage without partition.
+                    lineage without split.
                   </li>
                   <li>
                     <strong>Generation 3 (Father):</strong> Received down the unbroken male line without
@@ -941,11 +941,11 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <div className="rounded-2xl bg-amber-50/60 border border-amber-200 p-4 text-xs text-amber-950 space-y-2">
                   <div className="font-extrabold flex items-center gap-2">
                     <AlertTriangle className="w-4 h-4 text-amber-600" />
-                    <span>Inheritance from Maternal Relatives Is Never Ancestral</span>
+                    <span>Estate from Maternal Relatives Is Never Family</span>
                   </div>
                   <p className="leading-relaxed">
-                    Property from your mother, maternal grandfather (Nana), or uncle is never ancestral.
-                    Under Hindu law, maternal property is always separate property. Children have no
+                    Asset from your mother, maternal grandfather (Nana), or uncle is never family.
+                    Under Hindu law, maternal asset is always separate asset. Children have no
                     birthright in it.
                   </p>
                 </div>
@@ -959,11 +959,11 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>STATUTORY SUCCESSION TESTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Property Inherited from Father: Section 8 Test
+                5. Asset Inherited from Father: Section 8 Test
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To check property inherited from a father, apply three simple statutory tests:
+                  To check asset inherited from a father, apply three simple legal tests:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2 text-xs">
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
@@ -972,17 +972,17 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     </div>
                     <div className="font-bold text-slate-800">Did Father Die After 1956?</div>
                     <p className="text-slate-600 leading-relaxed">
-                      If the father died after June 17, 1956, Section 8 applies. The property becomes the
-                      son&rsquo;s separate property.
+                      If the father died after June 17, 1956, Section 8 applies. The asset becomes the
+                      son&rsquo;s separate asset.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
                     <div className="font-black text-slate-900 uppercase tracking-wider text-[11px] text-[#C65378]">
-                      Stage 2: Testamentary Bequest
+                      Stage 2: Will Bequest
                     </div>
                     <div className="font-bold text-slate-800">Did Father Leave a Will or Gift?</div>
                     <p className="text-slate-600 leading-relaxed">
-                      If the father left a Will or Gift deed, it is 100% self-acquired property under Supreme
+                      If the father left a Will or Gift deed, it is 100% self-acquired asset under Supreme
                       Court rulings.
                     </p>
                   </div>
@@ -993,7 +993,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     <div className="font-bold text-slate-800">Did Father Buy with Own Income?</div>
                     <p className="text-slate-600 leading-relaxed">
                       If the father bought it with his own salary or business earnings, it was never
-                      ancestral property.
+                      family asset.
                     </p>
                   </div>
                 </div>
@@ -1007,27 +1007,27 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>SEVERANCE OF COPARCENARY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Partition Deeds: How Division Alters Legal Status
+                6. Split Deeds: How Division Alters Legal Status
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When family members divide ancestral land through a registered deed, the joint family
+                  When family members divide family land through a filed deed, the joint family
                   ends. In Uttam v. Saubhag Singh (2016), the Supreme Court clarified the law.
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
                   <li>
-                    When a partition takes place, the joint family ends for the divided property.
+                    When a split takes place, the joint family ends for the divided asset.
                   </li>
                   <li>
-                    The share allotted to each person becomes their individual separate property.
+                    The share allotted to each person becomes their single separate asset.
                   </li>
                   <li>
-                    Children born after the division cannot ask to reopen the partition.
+                    Children born after the division cannot ask to reopen the split.
                   </li>
                 </ul>
                 <p>
-                  Under Section 6(5), only a registered deed or court decree is valid. An oral or informal
-                  agreement on plain paper can be challenged in court.
+                  Under Section 6(5), only a filed deed or court decree is valid. An oral or informal
+                  pact on plain paper can be challenged in court.
                 </p>
               </div>
             </section>
@@ -1039,11 +1039,11 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>GENDER EQUALITY UNDER SECTION 6</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Daughters&rsquo; Equal Coparcenary Rights: Vineeta Sharma
+                7. Daughters&rsquo; Equal Joint Rights: Vineeta Sharma
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Before 2005, only male heirs held birthrights in joint family property. The landmark
+                  Before 2005, only male heirs held birthrights in joint family asset. The landmark
                   Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020) changed Indian succession
                   law forever.
                 </p>
@@ -1054,7 +1054,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   </div>
                   <ol className="list-decimal pl-5 space-y-1.5 text-xs sm:text-sm text-slate-700">
                     <li>
-                      <strong>Daughters Are Equal Heirs:</strong> Daughters hold the exact same coparcenary
+                      <strong>Daughters Are Equal Heirs:</strong> Daughters hold the exact same joint
                       rights as sons from birth under Section 6.
                     </li>
                     <li>
@@ -1066,7 +1066,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       as Karta.
                     </li>
                     <li>
-                      <strong>Protected Partitions:</strong> Registered partitions completed before December
+                      <strong>Protected Partitions:</strong> Filed partitions completed before December
                       20, 2004 cannot be reopened.
                     </li>
                   </ol>
@@ -1081,10 +1081,10 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>COMPREHENSIVE COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Legal Comparison: Ancestral vs Self-Acquired Assets
+                8. Legal Comparison: Family vs Self-Acquired Assets
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Compare rights of ownership, Will making, and partition claims under the Hindu Succession
+                Compare rights of ownership, Will making, and split claims under the Hindu Succession
                 Act, 1956.
               </p>
 
@@ -1093,8 +1093,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="p-3.5 sm:p-4 font-extrabold">Legal Parameter</th>
-                      <th className="p-3.5 sm:p-4 font-extrabold text-rose-200">Ancestral Property</th>
-                      <th className="p-3.5 sm:p-4 font-extrabold text-emerald-300">Self-Acquired Property</th>
+                      <th className="p-3.5 sm:p-4 font-extrabold text-rose-200">Family Asset</th>
+                      <th className="p-3.5 sm:p-4 font-extrabold text-emerald-300">Self-Acquired Asset</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1117,18 +1117,18 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/60">
-                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Testamentary Will Freedom</td>
+                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Will Will Freedom</td>
                       <td className="p-3.5 sm:p-4">
                         Restricted. Owner can only Will away their specific undivided share under Section 30.
                       </td>
                       <td className="p-3.5 sm:p-4 text-emerald-800 font-bold">
-                        100% Absolute. Owner can bequeath 100% of property to anyone freely.
+                        100% Absolute. Owner can bequeath 100% of asset to anyone freely.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/60">
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">Sale Without Heirs&rsquo; Consent</td>
                       <td className="p-3.5 sm:p-4 text-rose-700">
-                        Cannot sell whole property without legal necessity or family consent.
+                        Cannot sell whole asset without legal necessity or family consent.
                       </td>
                       <td className="p-3.5 sm:p-4 text-emerald-800 font-bold">
                         Full right to sell or gift without asking children for NOC.
@@ -1149,7 +1149,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                         Only the debtor&rsquo;s undivided share can be attached for debts.
                       </td>
                       <td className="p-3.5 sm:p-4">
-                        Entire property can be attached to pay personal debts.
+                        Entire asset can be attached to pay personal debts.
                       </td>
                     </tr>
                   </tbody>
@@ -1176,7 +1176,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 href="/tools/capital-gains-tax-calculator-inherited-property"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-bold text-xs shrink-0 transition-transform hover:-translate-y-0.5 shadow-sm"
               >
-                <span>Open Tax Calculator</span>
+                <span>Open Tax Tool</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -1193,24 +1193,24 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Before selling real estate or drafting a Will, trace title provenance to avoid family
-                  disputes:
+                  fights:
                 </p>
                 <div className="space-y-3 pt-1">
                   {[
                     {
                       step: "Step 1",
                       title: "Get 30-Year Prior Title Deeds",
-                      desc: "Apply at the Sub-Registrar Office for certified copies of title deeds for the past 30 years. Identify the original buyer and transfer mode.",
+                      desc: "Apply at the SRO office for certified copies of title deeds for the past 30 years. Identify the original buyer and transfer mode.",
                     },
                     {
                       step: "Step 2",
                       title: "Verify Date of Predecessor's Demise",
-                      desc: "Check the official death certificate. If the demise happened after June 17, 1956, Section 8 applies, creating separate property in the son's hands.",
+                      desc: "Check the official death paper. If the demise happened after June 17, 1956, Section 8 applies, creating separate asset in the son's hands.",
                     },
                     {
                       step: "Step 3",
                       title: "Inspect Encumbrance Certificate (EC)",
-                      desc: "Obtain Form 15 for 30 years from the registry office. Confirm that no partition suit or family mortgage is registered.",
+                      desc: "Obtain Form 15 for 30 years from the registry office. Confirm that no split suit or family mortgage is filed.",
                     },
                     {
                       step: "Step 4",
@@ -1253,7 +1253,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 {/* Case 1: Delhi */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2.5">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-                    <span className="font-black text-slate-900 text-xs">Delhi DDA Flat Dispute</span>
+                    <span className="font-black text-slate-900 text-xs">Delhi DDA Flat Fight</span>
                     <span className="px-2 py-0.5 rounded-full bg-rose-50 text-[#C65378] font-bold text-[10px]">
                       Case 1
                     </span>
@@ -1264,7 +1264,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <p className="text-slate-600 leading-relaxed">
                     <strong>Facts:</strong> Grandfather bought a flat in Delhi in 1982. He died without a
                     Will in 2012. The father mutated the flat in his name. In 2024, the grandson filed a
-                    suit claiming it was ancestral property.
+                    suit claiming it was family asset.
                   </p>
                   <p className="text-emerald-800 font-semibold leading-relaxed">
                     <strong>Verdict:</strong> The court dismissed the grandson&rsquo;s suit under{" "}
@@ -1282,7 +1282,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     </span>
                   </div>
                   <div className="font-bold text-slate-800">
-                    Daughter Claims Coparcenary Share in Undivided Land
+                    Daughter Claims Joint Share in Undivided Land
                   </div>
                   <p className="text-slate-600 leading-relaxed">
                     <strong>Facts:</strong> 10 acres of land passed undivided across four generations. In
@@ -1305,16 +1305,16 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     </span>
                   </div>
                   <div className="font-bold text-slate-800">
-                    Son Challenges Father&rsquo;s Will Leaving Flat to Sister
+                    Son Fights Father&rsquo;s Will Leaving Flat to Sister
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    <strong>Facts:</strong> A father received a Mumbai flat as a registered gift from his
+                    <strong>Facts:</strong> A father received a Mumbai flat as a filed gift from his
                     mother in 1995. In 2023, he made a Will leaving the flat to his daughter. His son claimed
-                    ancestral rights.
+                    family rights.
                   </p>
                   <p className="text-emerald-800 font-semibold leading-relaxed">
                     <strong>Verdict:</strong> The High Court granted probate to the daughter. Under{" "}
-                    <em>Arunachala Mudaliar</em>, gifts from parents are self-acquired property. The father
+                    <em>Arunachala Mudaliar</em>, gifts from parents are self-acquired asset. The father
                     had full right to Will it freely.
                   </p>
                 </div>
@@ -1328,14 +1328,14 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>LEGAL DRAFTING CLAUSES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Legal Recital Templates &amp; Verification Checklist
+                11. Legal Recital Templates &amp; Check Checklist
               </h3>
 
               {/* Template Box 1: Self-Acquired Declaration Recital */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Self-Acquired Property Testamentary Recital for Will Deed
+                    Self-Acquired Asset Will Recital for Will Deed
                   </div>
                   <button
                     type="button"
@@ -1368,7 +1368,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Document Checklist: Proving Self-Acquired Status in India
+                    Paper Checklist: Proving Self-Acquired Status in India
                   </div>
                   <button
                     type="button"
@@ -1391,19 +1391,19 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Registered Sale Deed showing personal purchase</span>
+                    <span>Filed Sale Deed showing personal purchase</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Father/Grandfather Death Certificate (Post-1956)</span>
+                    <span>Father/Grandfather Death Paper (Post-1956)</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>30-Year SRO Encumbrance Certificate (Form 15)</span>
+                    <span>30-Year SRO Encumbrance Paper (Form 15)</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Revenue Mutation Record (Individual name Patta/Khata)</span>
+                    <span>Revenue Name Change Record (Single name Patta/Khata)</span>
                   </div>
                 </div>
               </div>
@@ -1425,19 +1425,19 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Legal Editorial &amp; Property Succession Bench
+                      WillDrafting.in Legal Editorial &amp; Asset Estate Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Succession Counsel</span>
+                    <span>Bar Council Checked Estate Counsel</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   WillDrafting.in is India&rsquo;s leading digital estate planning platform, powered by AMA
-                  Legal Solutions. Our senior High Court litigators have drafted thousands of dispute-free
-                  Wills. We resolve complex family partitions and property disputes pan-India.
+                  Legal Solutions. Our senior High Court litigators have drafted thousands of fight-free
+                  Wills. We resolve complex family partitions and asset fights pan-India.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1446,7 +1446,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     href="/tools/huf-coparcenary-share-partition-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>HUF Partition Calculator</span>
+                    <span>HUF Split Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1481,7 +1481,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: Ancestral Assets
+                13. Frequently Asked Questions: Family Assets
               </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
@@ -1521,7 +1521,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <span>OFFICIAL STATUTORY PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Judicial Portals
+                14. Legal Citations &amp; Judicial Portals
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-4 text-xs text-slate-600">
                 <p>
@@ -1560,32 +1560,32 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Tools &amp; Succession Guides
+                    Related WillDrafting Tools &amp; Estate Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/huf-coparcenary-share-partition-calculator"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      HUF Partition Calculator
+                      HUF Split Tool
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1597,7 +1597,29 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1610,21 +1632,21 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu succession law, coparcenary partition defense, High Court probate
-                litigation, and challenge-proof testamentary Will structuring.
+                Expert in Hindu succession law, joint split defense, High Court probate
+                court fights, and fight-proof Will Will structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1638,10 +1660,10 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <span>PREVENT FAMILY PARTITION LAWSUITS</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Self-Acquired Home with a Registered Will
+                  Protect Your Self-Acquired Home with a Filed Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Your property is self-acquired. You have 100% legal freedom to bequeath it to your
+                  Your asset is self-acquired. You have 100% legal freedom to bequeath it to your
                   chosen heirs and bar unwanted claims.
                 </p>
                 <button
@@ -1664,18 +1686,18 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <span>PROPERTY DISPUTE &amp; PARTITION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Facing a Coparcenary Claim or Partition Legal Notice?
+                  Facing a Joint Claim or Split Legal Notice?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our civil litigators handle title verification, Section 8 defense petitions, and
-                  challenge baseless grandson claims pan-India.
+                  Our civil litigators handle title check, Section 8 defense petitions, and
+                  fight baseless grandson claims pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1695,13 +1717,13 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>100% Will Defense:</strong> Inserts bulletproof non-coparcenary declarations.
+                      <strong>100% Will Defense:</strong> Inserts bulletproof non-joint declarations.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Zero Hidden Flaws:</strong> Analyzes SRO registration, partition, and mutation
+                      <strong>Zero Hidden Flaws:</strong> Analyzes SRO filing, split, and name change
                       legality.
                     </span>
                   </li>

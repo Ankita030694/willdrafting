@@ -42,38 +42,38 @@ const TOC_ITEMS = [
   { id: "shariat-foundation", label: "1. Legal Foundation: Muslim Will Rules" },
   { id: "one-third-rule", label: "2. The One-Third Bequest Limit (Al-Thuluth)" },
   { id: "sunni-vs-shia-wills", label: "3. Sunni vs Shia Rules on Legal Heirs" },
-  { id: "interactive-wasiyat-validator", label: "4. Interactive Sharia Estate Calculator" },
+  { id: "interactive-wasiyat-validator", label: "4. Free Sharia Estate Tool" },
   { id: "free-wasiyatnama-format", label: "5. Free Muslim Wasiyatnama Format" },
   { id: "heir-consent-annex", label: "6. Post-Death Legal Heir Consent Deed" },
   { id: "wasi-executor-duties", label: "7. Role & Duties of the Executor (Al-Wasi)" },
   { id: "comparison-table", label: "8. Comparative Analysis: Muslim vs ISA Will" },
-  { id: "step-by-step-sop", label: "9. Step-by-Step SOP: Execution Protocol" },
+  { id: "step-by-step-sop", label: "9. Step-by-Step SOP: Signing Protocol" },
   { id: "common-drafting-mistakes", label: "10. Common Mistakes & How to Prevent Them" },
   { id: "institutional-profile", label: "11. Legal Excellence by AMA Legal Solutions" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Authorities" },
+  { id: "statutory-citations", label: "13. Legal Citations & Offices" },
 ];
 
 const FAQS = [
   {
-    q: "Can a Muslim in India write a Will for their entire property?",
-    a: "No. Under the Muslim Personal Law (Shariat) Application Act, 1937 and Section 118 of Mulla's Mahomedan Law, a Muslim can bequeath at most one-third (1/3rd) of their net estate after debts and funeral costs. The remaining two-thirds (2/3rds) must compulsorily go to legal Quranic heirs under Faraid. Any bequest exceeding one-third is void unless all legal heirs consent after the testator's death.",
+    q: "Can a Muslim in India write a Will for their entire asset?",
+    a: "No. Under the Muslim Personal Law (Shariat) Form Act, 1937 and Section 118 of Mulla's Mahomedan Law, a Muslim can bequeath at most one-third (1/3rd) of their net estate after debts and funeral costs. The remaining two-thirds (2/3rds) must compulsorily go to legal Quranic heirs under Faraid. Any bequest exceeding one-third is void unless all legal heirs consent after the Will maker's death.",
   },
   {
-    q: "Can a Sunni Muslim leave property to one of their legal heirs in a Will?",
-    a: "Under Sunni jurisprudence (Hanafi, Shafii, Maliki, Hanbali), a bequest to a legal heir who already inherits under Faraid is void from the start. It becomes valid only if all other surviving heirs consent to it AFTER the testator dies. As held by the Privy Council in Ghulam Mohammad v. Ghulam Husain, consent given while the testator is alive has zero legal effect under Sunni law.",
+    q: "Can a Sunni Muslim leave asset to one of their legal heirs in a Will?",
+    a: "Under Sunni jurisprudence (Hanafi, Shafii, Maliki, Hanbali), a bequest to a legal heir who already inherits under Faraid is void from the start. It becomes valid only if all other surviving heirs consent to it AFTER the Will maker dies. As held by the Privy Council in Ghulam Mohammad v. Ghulam Husain, consent given while the Will maker is alive has zero legal effect under Sunni law.",
   },
   {
     q: "How do Shia rules differ from Sunni rules regarding bequests to legal heirs?",
-    a: "Under Shia law (Ithna-Ashari / Imami), a person can validly bequeath up to one-third of their net estate to an heir without needing consent from other heirs. In addition, if a bequest exceeds one-third, heir consent can be validly granted either during the testator's lifetime or after death, unlike Sunni law which requires post-death consent.",
+    a: "Under Shia law (Ithna-Ashari / Imami), a person can validly bequeath up to one-third of their net estate to an heir without needing consent from other heirs. In addition, if a bequest exceeds one-third, heir consent can be validly granted either during the Will maker's lifetime or after death, unlike Sunni law which requires post-death consent.",
   },
   {
-    q: "Does a Muslim Will (Wasiyatnama) require stamp paper or registration in India?",
-    a: "No stamp paper is needed. Under Indian law, a Wasiyatnama can be executed on plain white A4 paper with zero stamp duty. Registration is voluntary under Section 18(e) of the Registration Act, 1908. While an unregistered written Wasiyat attested by two competent witnesses is legally valid, registering it before the Sub-Registrar provides strong evidential protection against future challenges.",
+    q: "Does a Muslim Will (Wasiyatnama) require stamp paper or filing in India?",
+    a: "No stamp paper is needed. Under Indian law, a Wasiyatnama can be signed on plain white A4 paper with zero stamp duty. Filing is voluntary under Section 18(e) of the Filing Act, 1908. While an plain written Wasiyat attested by two competent witnesses is legally valid, registering it before the SRO provides strong evidential protection against future fights.",
   },
   {
     q: "Does the Indian Succession Act, 1925 apply to Muslim Wills in India?",
-    a: "Generally, no. Sections 57 and 58 of the Indian Succession Act, 1925 expressly exempt Muslims from testamentary succession provisions. Muslim wills follow personal law preserved by the Muslim Personal Law (Shariat) Application Act, 1937. However, procedural rules for probate or letters of administration under Section 213 apply optionally.",
+    a: "Generally, no. Sections 57 and 58 of the Indian Succession Act, 1925 expressly exempt Muslims from Will estate rules. Muslim wills follow personal law preserved by the Muslim Personal Law (Shariat) Form Act, 1937. However, procedural rules for probate or letters of care under Section 213 apply optionally.",
   },
   {
     q: "What happens if a Muslim bequeaths more than one-third and heirs refuse consent?",
@@ -81,19 +81,19 @@ const FAQS = [
   },
   {
     q: "What debts must be settled before calculating the one-third disposable estate?",
-    a: "Estate liabilities follow a strict legal priority: (1) Funeral and burial costs, (2) Court fees and administration charges, (3) All personal debts, commercial loans, and unpaid prompt or deferred Mahr (dower) owed to the surviving wife. Only after deducting these payments from the gross estate is the net distributable estate determined.",
+    a: "Estate liabilities follow a strict legal priority: (1) Funeral and burial costs, (2) Court fees and care charges, (3) All personal debts, shop loans, and unpaid prompt or deferred Mahr (dower) owed to the surviving wife. Only after deducting these payments from the gross estate is the net distributable estate determined.",
   },
   {
     q: "Can an oral (verbal) Wasiyat be legally recognized by Indian civil courts?",
-    a: "Yes, Mahomedan law recognizes an oral Will made before witnesses, as upheld in Abdul Manan Khan v. Mirtaza Khan. However, Indian courts require strict, clear proof of an oral will. Claimants must prove the exact date, time, words spoken, and the testator's sound mind. Drafting a signed and witnessed written Wasiyatnama is essential to avoid court disputes.",
+    a: "Yes, Mahomedan law recognizes an oral Will made before witnesses, as upheld in Abdul Manan Khan v. Mirtaza Khan. However, Indian courts require strict, clear proof of an oral will. Claimants must prove the exact date, time, words spoken, and the Will maker's sound mind. Drafting a signed and witnessed written Wasiyatnama is essential to avoid court fights.",
   },
   {
-    q: "Can a Muslim woman execute a Wasiyatnama for her own property?",
-    a: "Yes. An adult Muslim woman has absolute legal ownership of her self-acquired assets, inherited properties, and Mahr. She possesses full testamentary capacity to execute a Wasiyatnama bequeathing up to one-third of her net estate to non-heirs or charities, completely independent of her husband, father, or brothers.",
+    q: "Can a Muslim woman execute a Wasiyatnama for her own asset?",
+    a: "Yes. An adult Muslim woman has absolute legal ownership of her self-acquired assets, inherited assets, and Mahr. She possesses full Will capacity to execute a Wasiyatnama bequeathing up to one-third of her net estate to non-heirs or charities, completely independent of her husband, father, or brothers.",
   },
   {
     q: "Can a non-Muslim be appointed as an Executor (Wasi) of a Muslim Will in India?",
-    a: "Yes. Indian High Courts have confirmed that under Section 301 and Part IX of the Indian Succession Act, 1925, any competent adult of sound mind, including a non-Muslim advocate, chartered accountant, or family friend, can be legally appointed as an Executor (Al-Wasi) to administer the estate according to Shariat rules.",
+    a: "Yes. Indian High Courts have confirmed that under Section 301 and Part IX of the Indian Succession Act, 1925, any competent adult of sound mind, including a non-Muslim lawyer, chartered accountant, or family friend, can be legally appointed as an Executor (Al-Wasi) to administer the estate according to Shariat rules.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function MuslimWillClient() {
   const [activeTab, setActiveTab] = useState<"full" | "bequest" | "faraid" | "mahr" | "wasi">("full");
   const [copiedState, setCopiedState] = useState<string | null>(null);
 
-  // Interactive Calculator State
+  // Free Tool State
   const [calcSect, setCalcSect] = useState<"sunni" | "shia">("sunni");
   const [grossEstate, setGrossEstate] = useState<number>(9000000); // 90 Lakhs default
   const [debtsMahr, setDebtsMahr] = useState<number>(600000); // 6 Lakhs default
@@ -309,9 +309,9 @@ WITNESSES:
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download a verified, plain paper <strong>Sharia-compliant Wasiyatnama format</strong> under
+            Download a checked, plain paper <strong>Sharia-compliant Wasiyatnama format</strong> under
             the Muslim Personal Law (Shariat) Application Act, 1937. Accurately separate the{" "}
-            <strong>1/3rd discretionary bequest</strong> from mandatory 2/3rd Quranic Faraid shares with
+            <strong>1/3rd discretionary bequest</strong> from needed 2/3rd Quranic Faraid shares with
             a post-death legal heir consent annex.
           </p>
 
@@ -408,10 +408,10 @@ WITNESSES:
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Muslim Personal Law (Shariat) Application Act, 1937, Mulla&rsquo;s Principles
+                Governed under Muslim Personal Law (Shariat) Form Act, 1937, Mulla&rsquo;s Principles
                 of Mahomedan Law (ss. 115&ndash;133), Indian Majority Act, 1875, and landmark precedents
                 Ghulam Mohammad (1932) and Khajoorunissa (1876).
               </p>
@@ -441,8 +441,8 @@ WITNESSES:
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Sunni Bequests to Legal Heirs are Void Without Post-Death Consent:</strong> A Sunni cannot
-                    leave extra property to a legal heir unless all other heirs consent AFTER the testator dies.
-                    Consent given during the testator&rsquo;s lifetime is legally ineffective.
+                    leave extra asset to a legal heir unless all other heirs consent AFTER the Will maker dies.
+                    Consent given during the Will maker&rsquo;s lifetime is legally ineffective.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -456,7 +456,7 @@ WITNESSES:
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Zero Stamp Duty on Plain Paper:</strong> A Wasiyatnama requires no stamp paper and can
-                    be drafted on plain white A4 sheets with two witnesses. Registration is voluntary but recommended.
+                    be drafted on plain white A4 sheets with two witnesses. Filing is voluntary but recommended.
                   </span>
                 </li>
               </ul>
@@ -475,7 +475,7 @@ WITNESSES:
                 />
               </div>
               <p className="text-center text-xs text-slate-500 italic">
-                Statutory Wasiyatnama Drafting Architecture: Aligning 1/3rd Discretionary Legacies with Quranic Faraid Shares under Indian Civil Courts.
+                Legal Wasiyatnama Drafting Architecture: Aligning 1/3rd Discretionary Legacies with Quranic Faraid Shares under Indian Civil Courts.
               </p>
             </div>
 
@@ -490,24 +490,24 @@ WITNESSES:
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In India, succession and testamentary dispositions are not uniform across all citizens.
+                  In India, estate and Will gifts are not uniform across all citizens.
                   While Hindus, Christians, and Parsis are governed by the Indian Succession Act, 1925,
-                  Muslims are expressly excluded from its testamentary rules by virtue of Sections 57 and 58.
-                  Instead, a Muslim&rsquo;s testamentary capacity is governed by uncodified Islamic jurisprudence
-                  enforced through the <strong>Muslim Personal Law (Shariat) Application Act, 1937</strong>.
+                  Muslims are expressly excluded from its Will rules by virtue of Sections 57 and 58.
+                  Instead, a Muslim&rsquo;s Will capacity is governed by uncodified Islamic jurisprudence
+                  enforced through the <strong>Muslim Personal Law (Shariat) Form Act, 1937</strong>.
                 </p>
                 <p>
                   Under Mahomedan Law (codified by Sir Dinshaw Mulla in <em>Principles of Mahomedan Law</em>,
-                  Sections 115&ndash;133), a Will is termed a <strong>Wasiyat</strong>, and the document is known
-                  as a <strong>Wasiyatnama</strong>. The person making the Will is the <em>Musi</em> (testator),
-                  the beneficiary is the <em>Musa lahu</em> (legatee), and the appointed executor is the{" "}
+                  Sections 115&ndash;133), a Will is termed a <strong>Wasiyat</strong>, and the paper is known
+                  as a <strong>Wasiyatnama</strong>. The person making the Will is the <em>Musi</em> (Will maker),
+                  the heir is the <em>Musa lahu</em> (legatee), and the appointed executor is the{" "}
                   <em>Wasi</em>.
                 </p>
                 <p>
-                  To execute a valid Wasiyatnama in India, the testator must be of sound mind and must have
+                  To execute a valid Wasiyatnama in India, the Will maker must be of sound mind and must have
                   attained majority under <strong>Section 3 of the Indian Majority Act, 1875</strong> (18 years of
                   age). While classical Sharia recognized puberty as the threshold of capacity, Indian civil
-                  courts strictly apply the 18-year statutory age requirement for executing a property Will.
+                  courts strictly apply the 18-year legal age rule for signing a asset Will.
                 </p>
               </div>
             </section>
@@ -524,8 +524,8 @@ WITNESSES:
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The most critical legal rule governing Muslim wills is the <strong>One-Third Rule (Al-Thuluth)</strong>.
-                  Unlike a non-Muslim who can bequeath 100% of self-acquired property to anyone, a Muslim has
-                  testamentary freedom over only <strong>one-third (1/3rd)</strong> of their net estate.
+                  Unlike a non-Muslim who can bequeath 100% of self-acquired asset to anyone, a Muslim has
+                  Will freedom over only <strong>one-third (1/3rd)</strong> of their net estate.
                 </p>
                 <p>
                   This restriction traces back to the historic Hadith of the Prophet Muhammad (peace be upon him)
@@ -534,7 +534,7 @@ WITNESSES:
                   <em>&ldquo;One-third, and one-third is much. It is better to leave your heirs rich than to leave them poor and begging from people.&rdquo;</em>
                 </p>
                 <p>
-                  Before computing this 1/3rd quota, Indian courts apply a strict statutory hierarchy of claims under
+                  Before computing this 1/3rd quota, Indian courts apply a strict legal hierarchy of claims under
                   Section 115 of Mulla&rsquo;s Mahomedan Law:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -562,7 +562,7 @@ WITNESSES:
                     </div>
                     <div className="font-extrabold text-xs text-slate-900">Net Distributable Estate</div>
                     <p className="text-[11px] text-slate-600">
-                      Max 1/3rd to discretionary legatees; compulsory 2/3rds to Quranic Faraid heirs.
+                      Max 1/3rd to discretionary legatees; needed 2/3rds to Quranic Faraid heirs.
                     </p>
                   </div>
                 </div>
@@ -582,7 +582,7 @@ WITNESSES:
                 <p>
                   Indian courts recognize crucial jurisprudential differences between the Sunni school (Hanafi,
                   Shafii, Maliki, Hanbali) and the Shia school (Ithna-Ashari / Imami). Failing to account for these
-                  differences is the #1 cause of Wasiyat challenges in Indian High Courts.
+                  differences is the #1 cause of Wasiyat fights in Indian High Courts.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -598,7 +598,7 @@ WITNESSES:
                       <li className="flex items-start gap-2">
                         <X className="w-3.5 h-3.5 text-rose-600 shrink-0 mt-0.5" />
                         <span>
-                          <strong>Bequest to an Heir is VOID ab initio:</strong> A Sunni cannot bequeath property to a
+                          <strong>Bequest to an Heir is VOID ab initio:</strong> A Sunni cannot bequeath asset to a
                           person who is already an heir under Faraid (e.g., favoring one son or wife).
                         </span>
                       </li>
@@ -606,7 +606,7 @@ WITNESSES:
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                         <span>
                           <strong>Valid ONLY with Post-Death Heir Consent:</strong> As settled in{" "}
-                          <em>Ghulam Mohammad v. Ghulam Husain (1932)</em>, consent given while the testator is alive
+                          <em>Ghulam Mohammad v. Ghulam Husain (1932)</em>, consent given while the Will maker is alive
                           is completely void. Consent must be ratified after death.
                         </span>
                       </li>
@@ -632,7 +632,7 @@ WITNESSES:
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                         <span>
-                          <strong>Bequest to an Heir is VALID up to 1/3rd:</strong> A Shia testator can bequeath up to
+                          <strong>Bequest to an Heir is VALID up to 1/3rd:</strong> A Shia Will maker can bequeath up to
                           1/3rd of the net estate to any legal heir WITHOUT needing consent from other heirs.
                         </span>
                       </li>
@@ -640,7 +640,7 @@ WITNESSES:
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                         <span>
                           <strong>Consent During Lifetime or Post-Death:</strong> If a bequest exceeds 1/3rd, heir
-                          consent can be granted either during the testator&rsquo;s life or after death.
+                          consent can be granted either during the Will maker&rsquo;s life or after death.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
@@ -663,11 +663,11 @@ WITNESSES:
                 <span>INTERACTIVE COMPLIANCE TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Sharia Estate &amp; Bequest Calculator
+                4. Free Sharia Estate &amp; Bequest Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use our diagnostic calculator to verify whether your planned bequests comply with the 1/3rd
-                discretionary limit or trigger the mandatory legal heir consent requirement under Indian law.
+                Use our diagnostic tool to verify whether your planned bequests comply with the 1/3rd
+                discretionary limit or trigger the needed legal heir consent rule under Indian law.
               </p>
 
               {/* Calculator Box */}
@@ -709,7 +709,7 @@ WITNESSES:
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <UserCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Legatee / Beneficiary Type</span>
+                      <span>Legatee / Heir Type</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -806,7 +806,7 @@ WITNESSES:
                     <div className="text-[10px] text-slate-500">Al-Thuluth discretionary allowance</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-[11px] font-bold uppercase text-slate-500">Mandatory 2/3rd Faraid Share</div>
+                    <div className="text-[11px] font-bold uppercase text-slate-500">Needed 2/3rd Faraid Share</div>
                     <div className="text-lg font-black text-emerald-800">{formatINR(compulsoryTwoThirdsReserve)}</div>
                     <div className="text-[10px] text-slate-500">Strictly reserved for Quranic heirs</div>
                   </div>
@@ -853,7 +853,7 @@ WITNESSES:
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a lawyer-vetted Indian Wasiyatnama format drafted in accordance with the Shariat
-                Application Act, 1937. Use the tabs below to copy the full document or individual clauses.
+                Form Act, 1937. Use the tabs below to copy the full paper or single clauses.
               </p>
 
               {/* Template Container */}
@@ -956,11 +956,11 @@ WITNESSES:
                   Most online Islamic will templates are drafted for the UK or US and fail to address Indian
                   personal law realities. Under Section 117 of Mulla&rsquo;s Mahomedan Law, if a Sunni Muslim
                   bequeaths any asset to a legal heir or bequeaths more than 1/3rd to a stranger, the legacy is
-                  wholly invalid <strong>unless the surviving legal heirs sign a deed of consent after the testator&rsquo;s death</strong>.
+                  wholly invalid <strong>unless the surviving legal heirs sign a deed of consent after the Will maker&rsquo;s death</strong>.
                 </p>
                 <p>
-                  This post-death <strong>Iqrar-Nama (Deed of Declaration and Consent)</strong> must be executed
-                  by all surviving Quranic heirs and produced before the Sub-Registrar during property mutation
+                  This post-death <strong>Iqrar-Nama (Deed of Declaration and Consent)</strong> must be signed
+                  by all surviving Quranic heirs and produced before the SRO during asset name change
                   to prevent protracted civil title suits.
                 </p>
               </div>
@@ -1006,7 +1006,7 @@ WITNESSES:
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Islamic testamentary jurisprudence, an executor is known as <strong>Al-Wasi</strong>.
+                  In Islamic Will jurisprudence, an executor is known as <strong>Al-Wasi</strong>.
                   The executor occupies a fiduciary position of supreme trust, tasked with collecting debts,
                   discharging liabilities, and allocating the 1/3rd and 2/3rd shares.
                 </p>
@@ -1019,17 +1019,17 @@ WITNESSES:
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Any adult of sound mind can be appointed. While classical Hanafi texts preferred Muslim
-                      executors, Indian civil courts have confirmed that appointing a non-Muslim advocate,
+                      executors, Indian civil courts have confirmed that appointing a non-Muslim lawyer,
                       chartered accountant, or close family friend is legally valid under Indian law.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                     <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                      <span>Is Probate Mandatory for Muslims?</span>
+                      <span>Is Probate Needed for Muslims?</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      No. Under Section 213(2) of the Indian Succession Act, 1925, probate is <strong>not mandatory</strong>{" "}
+                      No. Under Section 213(2) of the Indian Succession Act, 1925, probate is <strong>not needed</strong>{" "}
                       for a Muslim Will, even in Presidency towns (Mumbai, Kolkata, Chennai). The executor derives
                       direct legal power from the Wasiyatnama itself upon the testator&rsquo;s death.
                     </p>
@@ -1049,7 +1049,7 @@ WITNESSES:
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding how an Islamic Wasiyatnama differs from a standard Indian Will under the Indian
-                Succession Act is vital to drafting an unchallengeable document.
+                Estate Act is vital to drafting an unchallengeable paper.
               </p>
 
               {/* Table Container */}
@@ -1068,12 +1068,12 @@ WITNESSES:
                       <td className="p-3.5 font-bold text-slate-900">Governing Act</td>
                       <td className="p-3.5 font-semibold text-[#C65378]">Shariat Act, 1937</td>
                       <td className="p-3.5">Indian Succession Act, 1925</td>
-                      <td className="p-3.5 text-slate-500">Exempt from ISA testamentary provisions</td>
+                      <td className="p-3.5 text-slate-500">Exempt from ISA Will rules</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Disposable Quota</td>
                       <td className="p-3.5 font-semibold text-[#C65378]">Max 1/3rd (Al-Thuluth)</td>
-                      <td className="p-3.5">100% of self-acquired property</td>
+                      <td className="p-3.5">100% of self-acquired asset</td>
                       <td className="p-3.5 text-slate-500">2/3rds compulsorily protected for Faraid heirs</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
@@ -1089,9 +1089,9 @@ WITNESSES:
                       <td className="p-3.5 text-slate-500">Written draft recommended to avoid court delays</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Mandatory Probate</td>
-                      <td className="p-3.5 font-semibold text-emerald-700">Not mandatory anywhere in India</td>
-                      <td className="p-3.5">Mandatory in Mumbai, Kolkata, Chennai</td>
+                      <td className="p-3.5 font-bold text-slate-900">Needed Probate</td>
+                      <td className="p-3.5 font-semibold text-emerald-700">Not needed anywhere in India</td>
+                      <td className="p-3.5">Needed in Mumbai, Kolkata, Chennai</td>
                       <td className="p-3.5 text-slate-500">Saves massive court fees and legal delay</td>
                     </tr>
                   </tbody>
@@ -1106,7 +1106,7 @@ WITNESSES:
                 <span>EXECUTION PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Drafting &amp; Executing a Wasiyatnama
+                9. Step-by-Step SOP: Drafting &amp; Signing a Wasiyatnama
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -1123,7 +1123,7 @@ WITNESSES:
                   {
                     step: "03",
                     title: "Appoint Executor (Al-Wasi)",
-                    desc: "Name a trusted family member, adult son/daughter, or advocate as Executor, with an alternate executor in case of prior demise.",
+                    desc: "Name a trusted family member, adult son/daughter, or lawyer as Executor, with an alternate executor in case of prior demise.",
                   },
                   {
                     step: "04",
@@ -1138,7 +1138,7 @@ WITNESSES:
                   {
                     step: "06",
                     title: "Optional SRO Registration",
-                    desc: "Book an appointment at the Sub-Registrar Office to register your Wasiyatnama for complete evidential protection.",
+                    desc: "Book an appointment at the SRO office to register your Wasiyatnama for complete evidential protection.",
                   },
                 ].map((item) => (
                   <div
@@ -1170,10 +1170,10 @@ WITNESSES:
                 <div className="p-5 rounded-2xl bg-white border border-rose-200 shadow-xs space-y-2">
                   <div className="font-extrabold text-sm text-rose-900 flex items-center gap-2">
                     <X className="w-4 h-4 text-rose-600" />
-                    <span>Attempting to Bequeath 100% of Property</span>
+                    <span>Attempting to Bequeath 100% of Asset</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A Muslim testator cannot leave their entire estate to a single favorite son or outsider.
+                    A Muslim Will maker cannot leave their entire estate to a single favorite son or outsider.
                     Any bequest exceeding 1/3rd is legally abated back to 1/3rd unless all legal heirs consent
                     post-demise.
                   </p>
@@ -1184,8 +1184,8 @@ WITNESSES:
                     <span>Obtaining Heir Consent During Lifetime</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Sunni law, legal heirs cannot consent to a bequest while the testator is alive.
-                    Any consent deed signed prior to the testator&rsquo;s death is void under <em>Ghulam Mohammad (1932)</em>.
+                    Under Sunni law, legal heirs cannot consent to a bequest while the Will maker is alive.
+                    Any consent deed signed prior to the Will maker&rsquo;s death is void under <em>Ghulam Mohammad (1932)</em>.
                   </p>
                 </div>
                 <div className="p-5 rounded-2xl bg-white border border-rose-200 shadow-xs space-y-2">
@@ -1204,7 +1204,7 @@ WITNESSES:
                     <span>Attempting to Disinherit Daughters</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A Muslim father cannot exclude his daughters from inheriting their compulsory Quranic share.
+                    A Muslim father cannot exclude his daughters from inheriting their needed Quranic share.
                     Any clause disinheriting a daughter is completely void under Indian personal law.
                   </p>
                 </div>
@@ -1232,10 +1232,10 @@ WITNESSES:
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  WillDrafting.in is led by senior succession litigators and estate planning counsel at AMA Legal
-                  Solutions. Our bench possesses deep expertise in the Muslim Personal Law (Shariat) Application Act,
-                  1937, High Court letters of administration petitions, Sub-Registrar Wasiyat registrations, and
-                  dispute-free cross-generational property transmission across India.
+                  WillDrafting.in is led by senior estate litigators and estate planning counsel at AMA Legal
+                  Solutions. Our bench possesses deep expertise in the Muslim Personal Law (Shariat) Form Act,
+                  1937, High Court letters of care petitions, SRO Wasiyat registrations, and
+                  fight-free cross-generational asset transfer across India.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold text-slate-700">
                   <div className="p-3 bg-slate-50 rounded-xl flex items-center gap-2">
@@ -1248,7 +1248,7 @@ WITNESSES:
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Pan-India Advocate Support</span>
+                    <span>Pan-India Lawyer Support</span>
                   </div>
                 </div>
               </div>
@@ -1301,35 +1301,35 @@ WITNESSES:
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Islamic Legal Authorities
+                13. Legal Citations &amp; Islamic Legal Offices
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900">
-                    Governing Statutory Acts &amp; Landmark Indian Precedents:
+                    Governing Legal Acts &amp; Landmark Indian Precedents:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600 leading-relaxed">
                     <li>
-                      <strong>Muslim Personal Law (Shariat) Application Act, 1937 (Act No. 26 of 1937):</strong> Section
-                      2 mandates the application of Muslim personal law in testamentary succession, gifts, and trusts.
+                      <strong>Muslim Personal Law (Shariat) Form Act, 1937 (Act No. 26 of 1937):</strong> Section
+                      2 mandates the form of Muslim personal law in Will estate, gifts, and trusts.
                     </li>
                     <li>
                       <strong>Indian Majority Act, 1875:</strong> Section 3 fixes the legal age of majority at 18
-                      years for testamentary capacity in Indian civil courts.
+                      years for Will capacity in Indian civil courts.
                     </li>
                     <li>
-                      <strong>Indian Registration Act, 1908:</strong> Section 18(e) classifies Will registration as optional.
+                      <strong>Indian Registration Act, 1908:</strong> Section 18(e) classifies Will filing as a choice.
                     </li>
                     <li>
                       <strong>Indian Succession Act, 1925:</strong> Sections 57 &amp; 58 (exemption of Muslims); Section 213
-                      (probate optional for Muslims).
+                      (probate a choice for Muslims).
                     </li>
                     <li>
                       <strong>Ghulam Mohammad v. Ghulam Husain (1932) 59 IA 74:</strong> Landmark Privy Council ruling
                       establishing that legal heir consent under Sunni law must be granted post-demise.
                     </li>
                     <li>
-                      <strong>Khajoorunissa v. Rowshan Jehan (1876) ILR 2 Cal 184:</strong> Affirmed that a Muslim testator
+                      <strong>Khajoorunissa v. Rowshan Jehan (1876) ILR 2 Cal 184:</strong> Affirmed that a Muslim Will maker
                       cannot defeat the Quranic rights of heirs by bequeathing more than 1/3rd without heir consent.
                     </li>
                     <li>
@@ -1346,7 +1346,7 @@ WITNESSES:
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>India Code: Shariat Application Act 1937</span>
+                    <span>India Code: Shariat Form Act 1937</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1362,32 +1362,32 @@ WITNESSES:
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Succession Calculators &amp; Legal Guides
+                    Related WillDrafting Estate Tools &amp; Legal Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Succession Share Calculator
+                      Estate Share Tool
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1399,13 +1399,35 @@ WITNESSES:
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      SRO Will Registration Service
+                      SRO Will Filing Service
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1418,21 +1440,21 @@ WITNESSES:
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Muslim Personal Law (Shariat Act, 1937),
-                Faraid estate structuring, and Sub-Registrar Wasiyat registrations pan-India.
+                Expert in Indian testamentary jurisprudence, Muslim Personal Law (Shariat Act, 1937),
+                Faraid estate structuring, and SRO Wasiyat registrations pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1449,7 +1471,7 @@ WITNESSES:
                   Draft a Sharia-Compliant Wasiyatnama Online
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Our guided wizard automatically enforces the 1/3rd discretionary limit and protects mandatory
+                  Our guided wizard automatically enforces the 1/3rd discretionary limit and protects needed
                   Faraid shares for your lawful heirs.
                 </p>
                 <button
@@ -1472,18 +1494,18 @@ WITNESSES:
                   <span>SHARIAT SUCCESSION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Complex Muslim Estate or High-Value Property?
+                  Complex Muslim Estate or High-Value Asset?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Consult experienced High Court succession advocates for legal heir consent documentation,
-                  Wasiyat registration, and ancestral title verification.
+                  Consult experienced High Court estate lawyers for legal heir consent papers,
+                  Wasiyat filing, and family title check.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <FileCheck className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1496,7 +1518,7 @@ WITNESSES:
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Strict 1/3rd Verification:</strong> Enforces Quranic Al-Thuluth limits automatically.
+                      <strong>Strict 1/3rd Check:</strong> Enforces Quranic Al-Thuluth limits automatically.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -1525,7 +1547,7 @@ WITNESSES:
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Wasiyat Calculator</span>
+          <span>Wasiyat Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

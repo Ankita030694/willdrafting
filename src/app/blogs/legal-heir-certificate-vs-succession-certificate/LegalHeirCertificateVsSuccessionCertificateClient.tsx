@@ -37,15 +37,15 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Which Certificate Do You Need?" },
+  { id: "statutory-framework", label: "1. Which Paper Do You Need?" },
   { id: "comparison-matrix", label: "2. Direct Comparison: Key Differences" },
-  { id: "asset-decision-matrix", label: "3. Asset-by-Asset Guide (Which Certificate for What?)" },
-  { id: "succession-cert-procedure", label: "4. How to Get a Succession Certificate from Court" },
-  { id: "legal-heir-procedure", label: "5. How to Get a Legal Heir Certificate from Tehsildar" },
+  { id: "asset-decision-matrix", label: "3. Asset-by-Asset Guide (Which Paper for What?)" },
+  { id: "succession-cert-procedure", label: "4. How to Get a Estate Paper from Court" },
+  { id: "legal-heir-procedure", label: "5. How to Get a Legal Heir Paper from Tehsildar" },
   { id: "visual-blueprint", label: "6. Visual Flowchart: Which One Should You Apply For?" },
-  { id: "documents-required", label: "7. Documents Needed for Both Certificates" },
+  { id: "documents-required", label: "7. Papers Needed for Both Papers" },
   { id: "state-portals", label: "8. State-by-State Online Portals" },
-  { id: "post-issuance-steps", label: "9. What to Do After You Receive the Certificate" },
+  { id: "post-issuance-steps", label: "9. What to Do After You Receive the Paper" },
   { id: "cost-and-timeline", label: "10. Costs & Timelines Compared" },
   { id: "avoid-with-a-will", label: "11. How Writing a Will Saves You from Both" },
   { id: "legal-services", label: "12. Our Legal Support & Services" },
@@ -271,44 +271,44 @@ const STATE_PORTAL_DATA = [
 
 const FAQ_ITEMS = [
   {
-    q: "What is the main difference between a Legal Heir Certificate and a Succession Certificate?",
-    a: "A Legal Heir Certificate (also known as Varisu or Surviving Member Certificate) is a quick government document issued by your local revenue officer (Tehsildar or SDM) within 15 to 30 days for just ₹20 to ₹100. It proves family relationship for government pensions, employment dues, and property tax changes. A Succession Certificate is a formal judicial order issued only by a District Civil Court after 6 to 12 months, requiring 2% to 7.5% court fees. It is needed strictly to claim bank balances, fixed deposits, shares, and mutual funds left by someone who died without a Will.",
+    q: "What is the main difference between a Legal Heir Paper and a Estate Paper?",
+    a: "A Legal Heir Paper (also known as Varisu or Surviving Member Paper) is a quick government paper issued by your local revenue officer (Tehsildar or SDM) within 15 to 30 days for just ₹20 to ₹100. It proves family relationship for government pensions, employment dues, and asset tax changes. A Estate Paper is a formal judicial order issued only by a District Civil Court after 6 to 12 months, requiring 2% to 7.5% court fees. It is needed strictly to claim bank balances, fixed deposits, shares, and mutual funds left by someone who died without a Will.",
   },
   {
-    q: "Can I get a Succession Certificate for a house, flat, or land?",
-    a: "No! Under Section 370 of the Indian Succession Act, 1925, a Succession Certificate cannot be issued for real estate or agricultural land. To transfer inherited land or a flat left without a Will, the family must use a Legal Heir Certificate and register a family Release Deed at the Sub-Registrar Office, or apply for Letters of Administration in court.",
+    q: "Can I get a Estate Paper for a house, flat, or land?",
+    a: "No! Under Section 370 of the Indian Succession Act, 1925, a Estate Paper cannot be issued for real estate or farm land. To transfer inherited land or a flat left without a Will, the family must use a Legal Heir Paper and register a family Release Deed at the SRO office, or apply for Letters of Care in court.",
   },
   {
-    q: "Can I use a Legal Heir Certificate to claim bank money and shares?",
-    a: "For smaller amounts (usually under ₹5 Lakhs), many banks and mutual funds will release the money using a Legal Heir Certificate and an indemnity bond. However, for larger amounts (often above ₹5 to ₹15 Lakhs) or if there is any dispute among family members, banks and share registries will legally demand a court-issued Succession Certificate (under Section 381).",
+    q: "Can I use a Legal Heir Paper to claim bank money and shares?",
+    a: "For smaller amounts (usually under ₹5 Lakhs), many banks and mutual funds will release the money using a Legal Heir Paper and an indemnity bond. However, for larger amounts (often above ₹5 to ₹15 Lakhs) or if there is any fight among family members, banks and share registries will legally demand a court-issued Estate Paper (under Section 381).",
   },
   {
-    q: "Who issues a Legal Heir Certificate in India?",
-    a: "A Legal Heir Certificate is issued by local government revenue authorities, usually the Tehsildar, Talukdar, Mandal Revenue Officer (MRO), or Sub-Divisional Magistrate (SDM) of the district where the deceased person lived.",
+    q: "Who issues a Legal Heir Paper in India?",
+    a: "A Legal Heir Paper is issued by local government revenue offices, usually the Tehsildar, Talukdar, Mandal Revenue Officer (MRO), or Sub-Divisional Magistrate (SDM) of the district where the deceased person lived.",
   },
   {
-    q: "How much does each certificate cost?",
-    a: "A Legal Heir Certificate costs only a nominal fee of ₹20 to ₹100 on your state government portal. A Succession Certificate is much more expensive: the court fee alone is 2% to 7.5% of the total bank money and shares (up to ₹75,000+ in states like Maharashtra, and uncapped in others), plus ₹6,000 to ₹12,000 for mandatory newspaper advertisements and lawyer fees.",
+    q: "How much does each paper cost?",
+    a: "A Legal Heir Paper costs only a nominal fee of ₹20 to ₹100 on your state government portal. A Estate Paper is much more expensive: the court fee alone is 2% to 7.5% of the total bank money and shares (up to ₹75,000+ in states like Maharashtra, and uncapped in others), plus ₹6,000 to ₹12,000 for needed newspaper advertisements and lawyer fees.",
   },
   {
-    q: "How long does it take to get each certificate?",
-    a: "A Legal Heir Certificate usually takes only 15 to 30 days after local revenue verification. A Succession Certificate takes 6 to 12 months in court, because the court must publish public notices in newspapers, allow 30 to 45 days for anyone to object, conduct hearings, and prepare the final sealed decree.",
+    q: "How long does it take to get each paper?",
+    a: "A Legal Heir Paper usually takes only 15 to 30 days after local revenue check. A Estate Paper takes 6 to 12 months in court, because the court must publish public notices in newspapers, allow 30 to 45 days for anyone to object, conduct hearings, and prepare the final sealed decree.",
   },
   {
-    q: "Can a Legal Heir Certificate be cancelled if someone cheated?",
-    a: "Yes. If an applicant fraudulently left out a sister, brother, or mother from the application, the Sub-Divisional Magistrate (SDM) or District Collector can cancel the certificate immediately upon complaint. The aggrieved family member can also file a civil suit in court.",
+    q: "Can a Legal Heir Paper be cancelled if someone cheated?",
+    a: "Yes. If an applicant fraudulently left out a sister, brother, or mother from the form, the Sub-Divisional Magistrate (SDM) or District Collector can cancel the paper right away upon complaint. The aggrieved family member can also file a civil suit in court.",
   },
   {
     q: "What happens if there is already a nominee on the bank account?",
-    a: "Under Supreme Court rulings (Sarbati Devi and Shakti Yezdani) and RBI rules, a nominee can collect the money from the bank immediately without needing any court certificate. However, the nominee does not become the owner; they must distribute the money among all rightful legal heirs.",
+    a: "Under Supreme Court rulings (Sarbati Devi and Shakti Yezdani) and RBI rules, a nominee can collect the money from the bank right away without needing any court paper. However, the nominee does not become the owner; they must distribute the money among all rightful legal heirs.",
   },
   {
-    q: "How does writing a Will save my family from both certificates?",
-    a: "Yes! If the person wrote a valid Will, the beneficiaries inherit directly. Banks and financial institutions transfer money and shares based on the Will and death certificate. Your family never needs to pay thousands in court fees or spend months visiting government offices.",
+    q: "How does writing a Will save my family from both papers?",
+    a: "Yes! If the person wrote a valid Will, the heirs inherit directly. Banks and financial institutions transfer money and shares based on the Will and death paper. Your family never needs to pay thousands in court fees or spend months visiting government offices.",
   },
   {
-    q: "Where can I apply online for a Legal Heir Certificate?",
-    a: "Most states offer easy online applications through state portals: e-District Delhi in Delhi, Aaple Sarkar in Maharashtra, e-Sevai in Tamil Nadu, Seva Sindhu in Karnataka, eSathi in Uttar Pradesh, and MeeSeva in Telangana and Andhra Pradesh.",
+    q: "Where can I apply online for a Legal Heir Paper?",
+    a: "Most states offer easy online forms through state portals: e-District Delhi in Delhi, Aaple Sarkar in Maharashtra, e-Sevai in Tamil Nadu, Seva Sindhu in Karnataka, eSathi in Uttar Pradesh, and MeeSeva in Telangana and Andhra Pradesh.",
   },
 ];
 
@@ -325,7 +325,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState<"legal-heir" | "succession">("legal-heir");
 
@@ -376,12 +376,12 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Legal Heir Certificate vs Succession Certificate Explained
+            Legal Heir Paper vs Estate Paper Explained
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Compare an administrative Legal Heir Certificate from the Tehsildar with a judicial Succession Certificate from the Civil Court. Learn asset rules, court fees, timelines, and how a valid Will bypasses both.
+            Compare an office Legal Heir Paper from the Tehsildar with a judicial Estate Paper from the Civil Court. Learn asset rules, court fees, timelines, and how a valid Will bypasses both.
           </p>
 
           {/* CTA Buttons */}
@@ -416,7 +416,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -497,7 +497,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <div className="flex items-start gap-2 bg-[#FAF7F0] p-2.5 rounded-xl border border-[#172228]/5">
                   <ShieldCheck className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <p className="text-[11px] text-[#55636D] leading-tight">
-                    Statutory Compliance: Part X, Indian Succession Act, 1925 &amp; State Revenue Rules
+                    Legal Compliance: Part X, Indian Succession Act, 1925 &amp; State Revenue Rules
                   </p>
                 </div>
               </div>
@@ -516,37 +516,37 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Executive Legal Brief</span>
               </div>
               <h2 className="text-lg sm:text-xl font-bold text-[#172228] mb-4">
-                Key Takeaways: Choosing Between Both Certificates
+                Key Takeaways: Choosing Between Both Papers
               </h2>
               <ul className="space-y-2.5 text-xs sm:text-sm text-[#55636D]">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-[#172228]">Different Issuers:</strong> A Legal Heir Certificate comes from the local Tehsildar. A Succession Certificate comes from a Civil District Judge.
+                    <strong className="text-[#172228]">Different Issuers:</strong> A Legal Heir Paper comes from the local Tehsildar. A Estate Paper comes from a Civil District Judge.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-[#172228]">No Real Estate for Succession Certificate:</strong> Under Section 370 of the Indian Succession Act, courts cannot grant a Succession Certificate for land, houses, or flats.
+                    <strong className="text-[#172228]">No Real Estate for Estate Paper:</strong> Under Section 370 of the Indian Succession Act, courts cannot grant a Estate Paper for land, houses, or flats.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-[#172228]">Bank Claim Limits:</strong> Small bank deposits can often be settled using a Legal Heir Certificate. Large balances require a Succession Certificate.
+                    <strong className="text-[#172228]">Bank Claim Limits:</strong> Small bank deposits can often be settled using a Legal Heir Paper. Large balances require a Estate Paper.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-[#172228]">Cost and Time Gap:</strong> A Legal Heir Certificate takes 15 to 30 days and costs under ₹100. A Succession Certificate takes 6 to 12 months in court and incurs court fees up to 7.5%.
+                    <strong className="text-[#172228]">Cost and Time Gap:</strong> A Legal Heir Paper takes 15 to 30 days and costs under ₹100. A Estate Paper takes 6 to 12 months in court and incurs court fees up to 7.5%.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-[#172228]">Best Protection:</strong> Writing a valid Will avoids both certificates. The named executor transfers assets directly under Section 211.
+                    <strong className="text-[#172228]">Best Protection:</strong> Writing a valid Will avoids both papers. The named executor transfers assets directly under Section 211.
                   </span>
                 </li>
               </ul>
@@ -556,19 +556,19 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <section id="statutory-framework" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4 text-[#C65378]" />
-                <span>Statutory Authority &amp; Legal Hierarchy</span>
+                <span>Legal Office &amp; Legal Hierarchy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                1. Statutory Framework: Indian Succession Act &amp; State Rules
+                1. Legal Framework: Indian Succession Act &amp; State Rules
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                When a person dies without a Will in India, their estate follows intestate succession rules. Family members face strict demands from banks, mutual funds, and revenue offices. Each agency asks for legal proof before releasing money or transferring property records.
+                When a person dies without a Will in India, their estate follows no-Will estate rules. Family members face strict demands from banks, mutual funds, and revenue offices. Each agency asks for legal proof before releasing money or transferring asset records.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                The main difference begins with legal origin. A <strong>Succession Certificate</strong> is created by a central law. It is governed by Part X of the Indian Succession Act, 1925 (Sections 370 to 390). Only a Civil District Judge can issue it after a formal court hearing.
+                The main difference begins with legal origin. A <strong>Estate Paper</strong> is created by a central law. It is governed by Part X of the Indian Succession Act, 1925 (Sections 370 to 390). Only a Civil District Judge can issue it after a formal court hearing.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                In contrast, a <strong>Legal Heir Certificate</strong> has no central parliamentary act. It is an administrative document issued under state land revenue codes. Local officers like the Tehsildar, Talukdar, or SDM issue it after local Patwari field verification.
+                In contrast, a <strong>Legal Heir Paper</strong> has no central parliamentary act. It is an office paper issued under state land revenue codes. Local officers like the Tehsildar, Talukdar, or SDM issue it after local Patwari field check.
               </p>
               <div className="bg-amber-50/70 border border-amber-200 rounded-xl p-4 text-xs sm:text-sm text-amber-900 flex items-start gap-3">
                 <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
@@ -576,7 +576,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <strong className="font-bold text-amber-950 block mb-1">
                     Crucial Legal Distinction:
                   </strong>
-                  A Legal Heir Certificate only proves family relationship. It does not give legal title to any specific bank deposit or share. Only a court Succession Certificate protects banks from future liability under Section 381.
+                  A Legal Heir Paper only proves family relationship. It does not give legal title to any specific bank deposit or share. Only a court Estate Paper protects banks from future liability under Section 381.
                 </div>
               </div>
             </section>
@@ -600,8 +600,8 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="py-3.5 px-4 font-bold">Parameter</th>
-                        <th className="py-3.5 px-4 font-bold">Legal Heir Certificate</th>
-                        <th className="py-3.5 px-4 font-bold">Succession Certificate</th>
+                        <th className="py-3.5 px-4 font-bold">Legal Heir Paper</th>
+                        <th className="py-3.5 px-4 font-bold">Estate Paper</th>
                         <th className="py-3.5 px-4 font-bold">Practical Advantage</th>
                       </tr>
                     </thead>
@@ -631,10 +631,10 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Decision Flowchart</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                3. Which Certificate Do You Need: Asset-by-Asset Guide
+                3. Which Paper Do You Need: Asset-by-Asset Guide
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                The document you need depends on the type of asset. Follow this guide to see whether you should visit the Tehsildar or approach the District Court.
+                The paper you need depends on the type of asset. Follow this guide to see whether you should visit the Tehsildar or approach the District Court.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -672,7 +672,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Part X Indian Succession Act</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                4. Succession Certificate in Court: Part X Jurisdiction
+                4. Estate Paper in Court: Part X Area
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Part X of the Indian Succession Act, 1925 governs the judicial recovery of debts and securities. Understanding these core sections protects your rights during court proceedings:
@@ -684,10 +684,10 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     <span className="px-2 py-0.5 rounded bg-slate-100 text-[#C65378] font-mono">
                       Section 370
                     </span>
-                    <span>No Immovable Real Estate</span>
+                    <span>No Land Real Estate</span>
                   </div>
                   <p className="text-xs sm:text-sm text-[#55636D] mt-1.5 leading-relaxed">
-                    This section bars courts from granting succession certificates for real estate. Land and apartments require partition deeds, Letters of Administration, or probate.
+                    This section bars courts from granting estate papers for real estate. Land and apartments require split deeds, Letters of Care, or probate.
                   </p>
                 </div>
 
@@ -711,7 +711,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     <span>Complete Protection for Banks</span>
                   </div>
                   <p className="text-xs sm:text-sm text-[#55636D] mt-1.5 leading-relaxed">
-                    This key rule protects debtors. Any bank or company that pays money to the certificate holder is completely freed from all future legal liability.
+                    This key rule protects debtors. Any bank or company that pays money to the paper holder is completely freed from all future legal liability.
                   </p>
                 </div>
 
@@ -723,7 +723,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     <span>Revocation and Appeals</span>
                   </div>
                   <p className="text-xs sm:text-sm text-[#55636D] mt-1.5 leading-relaxed">
-                    A judge can cancel a certificate obtained by fraud or false statements. Any appeal against the District Judge decision goes directly to the High Court.
+                    A judge can cancel a paper obtained by fraud or false statements. Any appeal against the District Judge decision goes directly to the High Court.
                   </p>
                 </div>
               </div>
@@ -733,7 +733,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   href="/services/succession-certificate"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C65378] hover:underline"
                 >
-                  <span>Need an advocate to file your succession petition? View WillDrafting.in service</span>
+                  <span>Need an lawyer to file your estate petition? View WillDrafting.in service</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -743,19 +743,19 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <section id="legal-heir-procedure" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Building className="w-4 h-4 text-[#C65378]" />
-                <span>Administrative Revenue Hierarchy</span>
+                <span>Office Revenue Hierarchy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                5. Legal Heir Certificate: Tehsildar &amp; SDM Procedure
+                5. Legal Heir Paper: Tehsildar &amp; SDM Step
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Getting a Legal Heir Certificate is an administrative process. Family members apply online through the state revenue portal or visit the local Tehsil office.
+                Getting a Legal Heir Paper is an office process. Family members apply online through the state revenue portal or visit the local Tehsil office.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Next, the file goes to the local Patwari or Village Administrative Officer. The officer visits your neighborhood to verify surviving family members against death and birth records.
+                Next, the file goes to the local Patwari or Village Office Officer. The officer visits your neighborhood to verify surviving family members against death and birth records.
               </p>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                After the field officer submits their report, the Tehsildar or SDM approves the certificate. The entire procedure usually takes between 15 and 30 business days.
+                After the field officer submits their report, the Tehsildar or SDM approves the paper. The entire step usually takes between 15 and 30 business days.
               </p>
               <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-xs">
                 <h3 className="text-sm font-bold text-[#172228] mb-2">
@@ -775,13 +775,13 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <section id="visual-blueprint" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Layers className="w-4 h-4 text-[#C65378]" />
-                <span>Statutory Blueprint</span>
+                <span>Legal Blueprint</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 6. Visual Blueprint: Decision Flowchart &amp; Framework
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                The visual comparison below illustrates the core distinction between a Legal Heir Certificate and a Succession Certificate. Notice how property mutation and family kinship follow the revenue track, while bank accounts, shares, and court decrees follow the judicial track.
+                The visual comparison below illustrates the core distinction between a Legal Heir Paper and a Estate Paper. Notice how asset name change and family kinship follow the revenue track, while bank accounts, shares, and court decrees follow the judicial track.
               </p>
 
               <div className="rounded-2xl border border-[#172228]/10 bg-white p-4 sm:p-6 shadow-xs overflow-hidden">
@@ -798,7 +798,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <div className="mt-4 pt-3 border-t border-[#172228]/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#55636D]">
                   <div className="flex items-center gap-2">
                     <Info className="w-4 h-4 text-[#C65378]" />
-                    <span>Visual comparison: Legal Heir Certificate (Revenue Tehsildar) vs Succession Certificate (Civil Court)</span>
+                    <span>Visual comparison: Legal Heir Paper (Revenue Tehsildar) vs Estate Paper (Civil Court)</span>
                   </div>
                   <a
                     href="/images/legal-heir-certificate-vs-succession-certificate-comparison.jpg"
@@ -817,13 +817,13 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <section id="documents-required" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileText className="w-4 h-4 text-[#C65378]" />
-                <span>Documentation SOP</span>
+                <span>Papers SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                7. Documents Required: Comprehensive Preparation SOP
+                7. Papers Required: Full Preparation SOP
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Missing paperwork causes delay in both revenue offices and courts. Select a tab below to check the exact document list for each procedure.
+                Missing paperwork causes delay in both revenue offices and courts. Select a tab below to check the exact paper list for each step.
               </p>
 
               {/* Document Tabs */}
@@ -836,7 +836,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                       : "bg-white text-[#55636D] hover:bg-slate-100"
                   }`}
                 >
-                  Legal Heir Certificate (Tehsildar Pack)
+                  Legal Heir Paper (Tehsildar Pack)
                 </button>
                 <button
                   onClick={() => setActiveTab("succession")}
@@ -846,19 +846,19 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                       : "bg-white text-[#55636D] hover:bg-slate-100"
                   }`}
                 >
-                  Succession Certificate (Court Pack)
+                  Estate Paper (Court Pack)
                 </button>
               </div>
 
               {activeTab === "legal-heir" ? (
                 <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 space-y-3 shadow-xs">
                   <h3 className="text-base font-bold text-[#172228]">
-                    Required Paperwork for Revenue Tehsildar Application:
+                    Required Paperwork for Revenue Tehsildar Form:
                   </h3>
                   <ul className="space-y-2 text-xs sm:text-sm text-[#55636D]">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span><strong>Original Death Certificate:</strong> Issued by the Municipal Corporation or Registrar of Births &amp; Deaths.</span>
+                      <span><strong>Original Death Paper:</strong> Issued by the City City Board or Registrar of Births &amp; Deaths.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -866,11 +866,11 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span><strong>Family Tree Affidavit:</strong> Notarized self-declaration on ₹10 or ₹100 stamp paper naming all legitimate heirs.</span>
+                      <span><strong>Family Tree Sworn Note:</strong> Notarized self-declaration on ₹10 or ₹100 stamp paper naming all legitimate heirs.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span><strong>Deceased Residence Proof:</strong> Electricity bill, voter ID, or registered sale deed confirming permanent address.</span>
+                      <span><strong>Deceased Residence Proof:</strong> Electricity bill, voter ID, or filed sale deed confirming permanent address.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -890,27 +890,27 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <ul className="space-y-2 text-xs sm:text-sm text-[#55636D]">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Verified Court Petition:</strong> Drafted by an advocate specifying date of death, ordinary residence, and legal grounds.</span>
+                      <span><strong>Checked Court Petition:</strong> Drafted by an lawyer specifying date of death, ordinary residence, and legal grounds.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Certified Schedule of Debts &amp; Securities:</strong> Bank passbooks, FD receipts, demat client master list (CML), share certificates.</span>
+                      <span><strong>Certified Schedule of Debts &amp; Securities:</strong> Bank passbooks, FD receipts, demat client master list (CML), share papers.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Original Death Certificate:</strong> Municipal death certificate of the deceased.</span>
+                      <span><strong>Original Death Paper:</strong> City death paper of the deceased.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>List of Surviving Class I / Class II Relatives:</strong> Full names, ages, occupations, and residential addresses.</span>
+                      <span><strong>List of Surviving Class I / Class II Relatives:</strong> Full names, ages, occupations, and home addresses.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Ad Valorem Court Fee Stamp:</strong> State-specific court fee receipt calculated on total asset valuation.</span>
+                      <span><strong>Ad Valorem Court Fee Stamp:</strong> State-specific court fee receipt calculated on total asset price check.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Indemnity Bond &amp; Surety Undertakings:</strong> Signed surety bonds with local property owners or solvency guarantees as directed by the judge.</span>
+                      <span><strong>Indemnity Bond &amp; Surety Undertakings:</strong> Signed surety bonds with local asset owners or solvency guarantees as directed by the judge.</span>
                     </li>
                   </ul>
                 </div>
@@ -927,7 +927,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 8. State Portal Directory: Where to Apply Across India
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Most states offer online applications for Legal Heir certificates. The directory below lists the designated portals, fees, and processing times for major states:
+                Most states offer online forms for Legal Heir papers. The directory below lists the designated portals, fees, and processing times for major states:
               </p>
 
               <div className="rounded-2xl border border-[#172228]/10 overflow-hidden bg-white shadow-xs">
@@ -937,8 +937,8 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                       <tr>
                         <th className="py-3 px-3.5 font-bold">State / UT</th>
                         <th className="py-3 px-3.5 font-bold">Designated Portal</th>
-                        <th className="py-3 px-3.5 font-bold">Certificate Name</th>
-                        <th className="py-3 px-3.5 font-bold">Issuing Authority</th>
+                        <th className="py-3 px-3.5 font-bold">Paper Name</th>
+                        <th className="py-3 px-3.5 font-bold">Issuing Office</th>
                         <th className="py-3 px-3.5 font-bold">Fee &amp; SLA</th>
                         <th className="py-3 px-3.5 font-bold">Action</th>
                       </tr>
@@ -979,10 +979,10 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Post-Issuance Roadmap</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                9. Next Steps: Claiming Assets After Certificate Issuance
+                9. Next Steps: Claiming Assets After Paper Issuance
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                Getting the certificate is only the first step. To transfer title or access funds, heirs submit certified copies to each asset institution:
+                Getting the paper is only the first step. To transfer title or access funds, heirs submit certified copies to each asset institution:
               </p>
 
               <div className="space-y-3">
@@ -990,16 +990,16 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <Building className="w-5 h-5 text-[#5F7E75] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-sm font-bold text-[#172228]">
-                      1. Immovable Property Mutation
+                      1. Land Asset Name Change
                     </h3>
                     <p className="text-xs text-[#55636D] mt-1 leading-relaxed">
                       Submit your Legal Heir Certificate and a registered{" "}
                       <Link href="/templates/release-deed-format" className="text-[#C65378] underline font-medium">
-                        relinquishment deed
+                        release deed
                       </Link>{" "}
                       to the local municipality. This updates property tax records. Read our guide on{" "}
                       <Link href="/blogs/property-transfer-after-death-without-will-india" className="text-[#C65378] underline font-medium">
-                        property transfer after death without a Will
+                        asset transfer after death without a Will
                       </Link>.
                     </p>
                   </div>
@@ -1029,7 +1029,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     <p className="text-xs text-[#55636D] mt-1 leading-relaxed">
                       Submit Form ISR-5 and certified court certificates to depository participants. Read our complete guide on{" "}
                       <Link href="/blogs/demat-shares-transmission-after-death-sebi" className="text-[#C65378] underline font-medium">
-                        SEBI demat transmission rules after death
+                        SEBI demat transfer rules after death
                       </Link>.
                     </p>
                   </div>
@@ -1047,7 +1047,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 10. Cost &amp; Timeline Comparison: Court Fees vs SRO Delays
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                A Succession Certificate costs more because of ad valorem court fees. Instead of a flat charge, state laws calculate fees as a percentage of total assets:
+                A Estate Paper costs more because of ad valorem court fees. Instead of a flat charge, state laws calculate fees as a percentage of total assets:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -1069,12 +1069,12 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               </div>
 
               <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm">
-                <span>Want to calculate your exact state court fee for movable assets?</span>
+                <span>Want to calculate your exact state court fee for cash assets?</span>
                 <Link
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="px-4 py-2 rounded-full bg-[#172228] text-white font-bold hover:bg-black transition-all whitespace-nowrap"
                 >
-                  Use Free Court Fee Calculator
+                  Use Free Court Fee Tool
                 </Link>
               </div>
             </section>
@@ -1086,7 +1086,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Strategic Estate Planning</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                11. How a Valid Will Avoids Both Certificates Entirely
+                11. How a Valid Will Avoids Both Papers Entirely
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 The struggle of visiting revenue offices, newspaper notices, and court hearings happens only when someone dies without a Will.
@@ -1099,14 +1099,14 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <div className="p-5 rounded-2xl bg-rose-50/50 border border-rose-200/80 space-y-2">
                   <div className="flex items-center gap-2 text-xs font-black uppercase text-rose-700">
                     <AlertCircle className="w-4 h-4" />
-                    <span>Without a Will (Intestate)</span>
+                    <span>Without a Will (No-Will)</span>
                   </div>
                   <h3 className="text-base font-bold text-[#172228]">Months of Bureaucracy</h3>
                   <ul className="space-y-1.5 text-xs text-[#55636D]">
                     <li>&bull; Heirs must apply to Tehsildar or file court petitions</li>
                     <li>&bull; Pay 2% to 7.5% in ad valorem court fees</li>
                     <li>&bull; Wait 6 to 12 months for newspaper citation windows</li>
-                    <li>&bull; High risk of bitter family disputes over asset shares</li>
+                    <li>&bull; High risk of bitter family fights over asset shares</li>
                     <li>&bull; Locked bank accounts and demat portfolios during court delay</li>
                   </ul>
                 </div>
@@ -1114,15 +1114,15 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <div className="p-5 rounded-2xl bg-emerald-50/50 border border-emerald-200/80 space-y-2">
                   <div className="flex items-center gap-2 text-xs font-black uppercase text-emerald-700">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span>With a Will (Testamentary)</span>
+                    <span>With a Will (Will)</span>
                   </div>
                   <h3 className="text-base font-bold text-[#172228]">Direct, Immediate Vesting</h3>
                   <ul className="space-y-1.5 text-xs text-[#55636D]">
-                    <li>&bull; Named executor holds legal authority under Section 211</li>
-                    <li>&bull; Zero succession court fees on debts and securities</li>
-                    <li>&bull; Immediate transmission to designated beneficiaries</li>
-                    <li>&bull; Clear distribution eliminates sibling and family friction</li>
-                    <li>&bull; Print-ready, advocate-verified Will in 15 minutes</li>
+                    <li>&bull; Named executor holds legal office under Section 211</li>
+                    <li>&bull; Zero estate court fees on debts and securities</li>
+                    <li>&bull; Immediate transfer to designated heirs</li>
+                    <li>&bull; Clear split eliminates sibling and family friction</li>
+                    <li>&bull; Print-ready, lawyer-checked Will in 15 minutes</li>
                   </ul>
                 </div>
               </div>
@@ -1133,7 +1133,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   Protect Your Family from Court Battles and Heavy Fees
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-                  Draft an advocate-verified, legally binding Will customized for Indian law. Free from stamp duty, completely private, and valid across all Indian states.
+                  Draft an lawyer-checked, legally binding Will customized for Indian law. Free from stamp duty, completely private, and valid across all Indian states.
                 </p>
                 <div className="pt-2">
                   <a
@@ -1155,16 +1155,16 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>WillDrafting.in</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                12. Professional Succession Legal Services by AMA
+                12. Professional Estate Legal Services by AMA
               </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                If your family is handling an intestate demise, dealing with revenue departments and civil courts can be hard. WillDrafting.in offers full legal support:
+                If your family is handling an no-Will demise, dealing with revenue departments and civil courts can be hard. WillDrafting.in offers full legal support:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-xs space-y-2">
                   <Gavel className="w-5 h-5 text-[#C65378]" />
-                  <h3 className="text-sm font-bold text-[#172228]">Succession Petition</h3>
+                  <h3 className="text-sm font-bold text-[#172228]">Estate Petition</h3>
                   <p className="text-xs text-[#55636D]">
                     Drafting, filing, newspaper citations, and court appearances before the District Judge.
                   </p>
@@ -1177,7 +1177,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <Scale className="w-5 h-5 text-[#5F7E75]" />
                   <h3 className="text-sm font-bold text-[#172228]">Probate of Will</h3>
                   <p className="text-xs text-[#55636D]">
-                    Mandatory probate petitions in Mumbai, Chennai, Kolkata, and High Court jurisdictions.
+                    Needed probate petitions in Mumbai, Chennai, Kolkata, and High Court areas.
                   </p>
                   <Link href="/services/probate-lawyer" className="text-xs font-bold text-[#C65378] inline-flex items-center gap-1">
                     <span>Learn More</span> &rarr;
@@ -1186,7 +1186,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
 
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-xs space-y-2">
                   <FileText className="w-5 h-5 text-blue-600" />
-                  <h3 className="text-sm font-bold text-[#172228]">Succession Calculator</h3>
+                  <h3 className="text-sm font-bold text-[#172228]">Estate Tool</h3>
                   <p className="text-xs text-[#55636D]">
                     Calculate exact legal shares under Hindu, Muslim, and Christian personal laws.
                   </p>
@@ -1204,7 +1204,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Direct Answers</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                13. Frequently Asked Questions: Succession &amp; Heirship
+                13. Frequently Asked Questions: Estate &amp; Heirship
               </h3>
 
               <div className="space-y-3 pt-2">
@@ -1245,22 +1245,22 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span>Authoritative Legal Sources</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
-                14. Statutory Citations &amp; Official Government Portals
+                14. Legal Citations &amp; Official Government Portals
               </h3>
 
               <div className="space-y-2 text-xs text-[#55636D] leading-relaxed">
                 <p><strong>Primary Legislation:</strong></p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Indian Succession Act, 1925 (Act No. 39 of 1925), Part X, Sections 370–390.</li>
-                  <li>Court Fees Act, 1870 (Act No. 7 of 1870), Schedule I, Article 12 (Ad Valorem Succession Fees).</li>
+                  <li>Court Fees Act, 1870 (Act No. 7 of 1870), Schedule I, Article 12 (Ad Valorem Estate Fees).</li>
                   <li>Hindu Succession Act, 1956 (Act No. 30 of 1956), Sections 8, 9, 10, &amp; Schedule of Class I Heirs.</li>
-                  <li>Insurance Act, 1938, Section 39 (Beneficial Nominee Provisions).</li>
+                  <li>Insurance Act, 1938, Section 39 (Beneficial Nominee Rules).</li>
                   <li>State Land Revenue Acts (e.g. Maharashtra Land Revenue Code 1966, UP Revenue Code 2006).</li>
                 </ul>
               </div>
 
               <div className="pt-2">
-                <span className="text-xs font-bold text-[#172228] block mb-2">Verified Government Portals:</span>
+                <span className="text-xs font-bold text-[#172228] block mb-2">Checked Government Portals:</span>
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="https://www.indiacode.nic.in"
@@ -1299,25 +1299,25 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                     href="/services/succession-certificate"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Succession Certificate Lawyer Service
+                    Estate Paper Lawyer Service
                   </Link>
                   <Link
                     href="/tools/succession-certificate-court-fee-calculator"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Court Fee Calculator India
+                    Court Fee Tool India
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Succession Share Calculator
+                    Estate Share Tool
                   </Link>
                   <Link
                     href="/templates/release-deed-format"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
-                    Relinquishment Deed Format
+                    Release Deed Format
                   </Link>
                 </div>
               </div>
@@ -1344,18 +1344,18 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
-                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Succession Counsel</p>
+                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Estate Counsel</p>
                 </div>
               </div>
               <p className="text-xs text-[#55636D] leading-relaxed">
-                Advocate Anuj Anand Malik has over 15 years of experience in testamentary law, civil court succession petitions, and high-value estate planning at WillDrafting.in.
+                Lawyer Anuj Anand Malik has over 15 years of experience in Will law, civil court estate petitions, and high-value estate planning at WillDrafting.in.
               </p>
               <div className="mt-3 pt-3 border-t border-[#172228]/10 flex items-center justify-between text-[11px]">
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1379,14 +1379,14 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 Facing Frozen Bank Accounts or Shares?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Our estate lawyers draft and file Section 372 succession petitions across all major Indian District Courts. Fast turnaround, transparent fees.
+                Our estate lawyers draft and file Section 372 estate petitions across all major Indian District Courts. Fast turnaround, transparent fees.
               </p>
               <div className="pt-1">
                 <Link
                   href="/services/succession-certificate"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all cursor-pointer"
                 >
-                  <span>Consult Succession Lawyers</span>
+                  <span>Consult Estate Lawyers</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1404,7 +1404,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               <ul className="space-y-2.5 text-xs text-[#55636D]">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Zero Court Fees:</strong> Saves up to 7.5% ad valorem court fees on movable assets.</span>
+                  <span><strong>Zero Court Fees:</strong> Saves up to 7.5% ad valorem court fees on cash assets.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1412,11 +1412,11 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Advocate Verified:</strong> Every draft reviewed by senior succession counsel.</span>
+                  <span><strong>Lawyer Checked:</strong> Every draft reviewed by senior estate counsel.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Section 63 Compliant:</strong> Two-witness execution blocks ready for printing.</span>
+                  <span><strong>Section 63 Compliant:</strong> Two-witness signing blocks ready for printing.</span>
                 </li>
               </ul>
             </div>
@@ -1424,16 +1424,16 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             {/* CARD 4: RELATED GUIDES */}
             <div className="hidden lg:block bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5 space-y-3">
               <h3 className="font-bold text-xs uppercase tracking-wider text-[#172228]">
-                Related Succession Guides
+                Related Estate Guides
               </h3>
               <div className="space-y-2">
                 <Link
                   href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Succession Certificate Lawyers</div>
+                  <div className="font-bold text-xs text-[#172228]">Estate Paper Lawyers</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
-                    <span>Court Petition Procedure</span> &rarr;
+                    <span>Court Petition Step</span> &rarr;
                   </div>
                 </Link>
 
@@ -1441,7 +1441,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Succession Court Fee Calculator</div>
+                  <div className="font-bold text-xs text-[#172228]">Estate Court Fee Tool</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
                     <span>Estimate State Ad Valorem Fees</span> &rarr;
                   </div>
@@ -1451,7 +1451,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
-                  <div className="font-bold text-xs text-[#172228]">Intestate Succession Calculator</div>
+                  <div className="font-bold text-xs text-[#172228]">No-Will Estate Tool</div>
                   <div className="text-[10px] text-[#C65378] font-semibold mt-0.5 flex items-center gap-1">
                     <span>Calculate Legal Heir Shares</span> &rarr;
                   </div>
@@ -1468,25 +1468,25 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
                 <Link
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Property Transfer After Death
+                  Asset Transfer After Death
                 </Link>
               </div>
             </div>

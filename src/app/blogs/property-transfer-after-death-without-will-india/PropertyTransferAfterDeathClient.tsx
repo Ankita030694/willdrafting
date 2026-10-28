@@ -44,19 +44,19 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Understanding Intestate Property Transfer in India" },
+  { id: "statutory-framework", label: "1. Understanding No-Will Asset Transfer in India" },
   { id: "who-inherits-hsa", label: "2. Who Inherits: Hindu Succession Act Section 8 Rules" },
-  { id: "five-step-roadmap", label: "3. Complete 5-Step Property Transfer Roadmap" },
-  { id: "title-vs-mutation", label: "4. Title Ownership vs Municipal Property Mutation" },
-  { id: "document-checklist", label: "5. Essential Documents Checklist for Property Transfer" },
-  { id: "visual-blueprint", label: "6. Step-by-Step Visual Roadmap: Death to Mutation" },
+  { id: "five-step-roadmap", label: "3. Complete 5-Step Asset Transfer Roadmap" },
+  { id: "title-vs-mutation", label: "4. Title Ownership vs City Asset Name Change" },
+  { id: "document-checklist", label: "5. Essential Papers Checklist for Asset Transfer" },
+  { id: "visual-blueprint", label: "6. Step-by-Step Visual Roadmap: Death to Name Change" },
   { id: "will-vs-intestate", label: "7. Transfer With a Will vs Transfer Without a Will" },
-  { id: "relinquishment-deed", label: "8. Relinquishment Deed: Giving Up or Consolidating Shares" },
-  { id: "complex-scenarios", label: "9. Handling Complex Scenarios: Disputes, NRIs & Minors" },
-  { id: "avoid-with-a-will", label: "10. How Writing a Will Eliminates Succession Hardships" },
+  { id: "relinquishment-deed", label: "8. Release Deed: Giving Up or Consolidating Shares" },
+  { id: "complex-scenarios", label: "9. Handling Complex Scenarios: Fights, NRIs & Minors" },
+  { id: "avoid-with-a-will", label: "10. How Writing a Will Eliminates Estate Hardships" },
   { id: "legal-services", label: "11. Professional Legal Support from WillDrafting.in" },
-  { id: "frequently-asked-questions", label: "12. Frequently Asked Questions on Property Succession" },
-  { id: "statutory-citations", label: "13. Relevant Laws, Statutory Sections & Court Rulings" },
+  { id: "frequently-asked-questions", label: "12. Frequently Asked Questions on Asset Estate" },
+  { id: "statutory-citations", label: "13. Relevant Laws, Legal Sections & Court Rulings" },
 ];
 
 const CLASS_1_HEIRS = [
@@ -112,7 +112,7 @@ const ROADMAP_STEPS = [
     timeline: "Within 21 Days of Death",
     authority: "Municipal Corporation / Registrar of Births & Deaths",
     description:
-      "Under the Registration of Births and Deaths Act, 1969, report the demise within 21 days to the local civic body. Collect at least 10 to 15 original attested physical copies. Every revenue office, sub-registrar, utility provider, and society will demand an original or verified certified copy.",
+      "Under the Filing of Births and Deaths Act, 1969, report the demise within 21 days to the local civic body. Collect at least 10 to 15 original attested physical copies. Every revenue office, sub-registrar, utility provider, and society will demand an original or checked certified copy.",
     checklist: [
       "Hospital death summary or crematorium / burial receipt",
       "Deceased person's original Aadhaar card and voter ID",
@@ -127,7 +127,7 @@ const ROADMAP_STEPS = [
     timeline: "15 to 45 Days",
     authority: "Tehsildar / Talukdar / Revenue SDM Office",
     description:
-      "Apply for a Legal Heir Certificate (also called Surviving Member Certificate or Varisu Certificate). The local revenue inspector or Patwari conducts physical field verification at your residence to verify all surviving Class I legal heirs. Note: Section 370 of the Indian Succession Act bars civil courts from issuing a succession certificate for real estate.",
+      "Apply for a Legal Heir Paper (also called Surviving Member Paper or Varisu Paper). The local revenue inspector or Patwari conducts physical field check at your residence to verify all surviving Class I legal heirs. Note: Section 370 of the Indian Succession Act bars civil courts from issuing a estate paper for real estate.",
     checklist: [
       "Original Death Certificate",
       "Family pedigree affidavit on ₹100 stamp paper",
@@ -142,7 +142,7 @@ const ROADMAP_STEPS = [
     timeline: "1 to 2 Weeks",
     authority: "Sub-Registrar of Assurances (SRO)",
     description:
-      "When multiple heirs inherit undivided shares, they hold the property as tenants-in-common. If siblings agree that the surviving mother or one brother will retain sole ownership, all other heirs must execute a registered Relinquishment Deed (Release Deed). Plain-paper affidavits or non-registered NOCs have zero legal validity under Section 17 of the Registration Act, 1908.",
+      "When multiple heirs inherit undivided shares, they hold the asset as tenants-in-common. If siblings agree that the surviving mother or one brother will retain sole ownership, all other heirs must execute a filed Release Deed (Release Deed). Plain-paper sworn notes or non-filed NOCs have zero legal validity under Section 17 of the Filing Act, 1908.",
     checklist: [
       "Draft Relinquishment Deed or Family Settlement Agreement",
       "Title deeds / original sale deed of the deceased father",
@@ -158,7 +158,7 @@ const ROADMAP_STEPS = [
     timeline: "30 to 60 Days",
     authority: "Local Municipal Corporation / Revenue Tehsildar",
     description:
-      "Mutation (known as Dakhil Kharij, Namantaran, or Khata / Patta Transfer) records the new owners in municipal and land revenue records. While mutation does not create legal title (as ruled in Sawarni v. Inder Kaur), it is mandatory to assess property tax in your name, receive water bills, and prevent fraudulent secondary sales.",
+      "Name Change (known as Dakhil Kharij, Namantaran, or Khata / Patta Transfer) records the new owners in city and land revenue records. While name change does not create legal title (as ruled in Sawarni v. Inder Kaur), it is needed to assess asset tax in your name, receive water bills, and prevent fraudulent secondary sales.",
     checklist: [
       "Mutation application in prescribed municipal form",
       "Certified copy of registered Relinquishment Deed or Title Deed",
@@ -174,7 +174,7 @@ const ROADMAP_STEPS = [
     timeline: "15 to 30 Days",
     authority: "Discom / Jal Board / RWA / Cooperative Housing Society",
     description:
-      "Update utility and administrative records to reflect the new owner's name. In apartment societies (CHSs), submit the updated mutation order and registered deed to the society management to transfer the share certificate and membership register.",
+      "Update utility and office records to reflect the new owner's name. In apartment societies (CHSs), submit the updated name change order and filed deed to the society management to transfer the share paper and membership register.",
     checklist: [
       "Updated property tax bill / Khata certificate in new owner's name",
       "Application to electricity board (Discom) with security deposit transfer",
@@ -306,49 +306,49 @@ const DOCUMENT_CHECKLIST_ITEMS = [
 
 const FAQ_ITEMS = [
   {
-    question: "What happens to a father's property if he dies without a will in India?",
+    question: "What happens to a father's asset if he dies without a will in India?",
     answer:
-      "Under Section 8 of the Hindu Succession Act, 1956, when a male Hindu dies intestate (without a will), his entire estate devolves equally among his Class I legal heirs simultaneously. These include his surviving widow, mother, sons, and daughters. Each gets an undivided equal share as tenants-in-common.",
+      "Under Section 8 of the Hindu Succession Act, 1956, when a male Hindu dies no-Will (without a will), his entire estate devolves equally among his Class I legal heirs simultaneously. These include his surviving widow, mother, sons, and daughters. Each gets an undivided equal share as tenants-in-common.",
   },
   {
-    question: "Do married daughters have equal inheritance rights in their father's property?",
+    question: "Do married daughters have equal estate rights in their father's asset?",
     answer:
-      "Yes. Following the landmark 2005 Amendment to the Hindu Succession Act and the Supreme Court's Vineeta Sharma (2020) ruling, daughters possess identical coparcenary and inheritance rights as sons from birth, irrespective of their marital status or whether the father was alive when the amendment took effect.",
+      "Yes. Following the landmark 2005 Amendment to the Hindu Succession Act and the Supreme Court's Vineeta Sharma (2020) ruling, daughters possess identical joint and estate rights as sons from birth, irrespective of their marital status or whether the father was alive when the amendment took effect.",
   },
   {
-    question: "Can a mother transfer the entire property to one son without the other children's consent?",
+    question: "Can a mother transfer the entire asset to one son without the other children's consent?",
     answer:
-      "No. If the property was owned solely by the deceased father, the mother inherits only her individual fractional share (e.g. 1/3 if there are two children). She cannot legally sell, gift, or transfer the shares belonging to the other children without their executed and registered relinquishment deeds.",
+      "No. If the asset was owned solely by the deceased father, the mother inherits only her single fractional share (e.g. 1/3 if there are two children). She cannot legally sell, gift, or transfer the shares belonging to the other children without their signed and filed release deeds.",
   },
   {
-    question: "Is a succession certificate required to transfer real estate or houses in India?",
+    question: "Is a estate paper required to transfer real estate or houses in India?",
     answer:
-      "No. Under Section 370 of the Indian Succession Act, 1925, a succession certificate can only be granted for movable debts and securities (like bank accounts and shares). Immovable property transfer requires a Legal Heir Certificate, registered release/settlement deeds, and municipal mutation.",
+      "No. Under Section 370 of the Indian Succession Act, 1925, a estate paper can only be granted for cash debts and securities (like bank accounts and shares). Land asset transfer requires a Legal Heir Paper, filed release/deal deeds, and city name change.",
   },
   {
-    question: "Does property mutation (Dakhil Kharij) grant legal title and ownership?",
+    question: "Does asset name change (Dakhil Kharij) grant legal title and ownership?",
     answer:
-      "No. The Supreme Court of India in landmark rulings (including Sawarni v. Inder Kaur and Jitendra Singh v. State of MP) has settled that mutation entries in municipal or revenue records exist strictly for fiscal tax collection and do not confer, extinguish, or create proprietary title to immovable property.",
+      "No. The Supreme Court of India in landmark rulings (including Sawarni v. Inder Kaur and Jitendra Singh v. State of MP) has settled that name change entries in city or revenue records exist strictly for fiscal tax collection and do not confer, extinguish, or create proprietary title to land asset.",
   },
   {
-    question: "Can one legal heir sell their share of inherited property to an outsider?",
+    question: "Can one legal heir sell their share of inherited asset to an outsider?",
     answer:
-      "While an heir technically owns an undivided share, Section 22 of the Hindu Succession Act and Section 44 of the Transfer of Property Act give co-heirs a preferential right of pre-emption. Furthermore, an outside purchaser cannot force joint physical possession of a family dwelling without filing a civil partition suit.",
+      "While an heir technically owns an undivided share, Section 22 of the Hindu Succession Act and Section 44 of the Transfer of Property Act give co-heirs a preferential right of pre-emption. Also, an outside purchaser cannot force joint physical possession of a family dwelling without filing a civil split suit.",
   },
   {
     question: "How can an NRI legal heir relinquish or transfer their share from abroad?",
     answer:
-      "An NRI co-heir can execute a Special Power of Attorney (POA) or Relinquishment Deed in their country of residence. The document must be notarized and apostilled (or authenticated by the Indian Embassy/Consulate), sent to India, stamped with state duty within 90 days, and registered under the Registration Act.",
+      "An NRI co-heir can execute a Special Power of Attorney (POA) or Release Deed in their country of residence. The paper must be notarized and apostilled (or authenticated by the Indian Embassy/Consulate), sent to India, stamped with state duty within 90 days, and filed under the Filing Act.",
   },
   {
-    question: "Can a plain affidavit or unregistered NOC transfer property rights after death?",
+    question: "Can a plain sworn note or plain NOC transfer asset rights after death?",
     answer:
-      "No. Under Section 17(1)(b) and Section 49 of the Registration Act, 1908, any instrument that relinquishes or transfers an interest in immovable property valued over 100 rupees must be compulsorily registered at the Sub-Registrar Office. Plain paper affidavits and NOCs have zero legal validity to extinguish title.",
+      "No. Under Section 17(1)(b) and Section 49 of the Filing Act, 1908, any instrument that relinquishes or transfers an interest in land asset valued over 100 rupees must be compulsorily filed at the SRO office. Plain paper sworn notes and NOCs have zero legal validity to extinguish title.",
   },
   {
-    question: "What should family members do if one legal heir refuses to sign mutation papers?",
+    question: "What should family members do if one legal heir refuses to sign name change papers?",
     answer:
-      "If a co-heir refuses mutual cooperation or disputes shares, municipal authorities will refuse consensus mutation. The only legal remedy is for the consenting heirs to file a Civil Suit for Partition in the competent civil court to obtain a preliminary and final partition decree specifying separate metes and bounds.",
+      "If a co-heir refuses mutual cooperation or fights shares, city offices will refuse consensus name change. The only legal remedy is for the consenting heirs to file a Civil Suit for Split in the competent civil court to obtain a preliminary and final split decree specifying separate metes and bounds.",
   },
 ];
 
@@ -365,7 +365,7 @@ export default function PropertyTransferAfterDeathClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [checkedDocs, setCheckedDocs] = useState<Record<string, boolean>>({});
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
@@ -431,12 +431,12 @@ export default function PropertyTransferAfterDeathClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Transferring Property After Death Without a Will in India
+            Transferring Asset After Death Without a Will in India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            A comprehensive, plain-language guide for grieving families. Learn how Hindu Succession Act Section 8 works, how to navigate mutation and relinquishment deeds, and how to avoid costly family disputes.
+            A full, plain-language guide for grieving families. Learn how Hindu Succession Act Section 8 works, how to navigate name change and release deeds, and how to avoid costly family fights.
           </p>
 
           {/* CTA Buttons */}
@@ -453,7 +453,7 @@ export default function PropertyTransferAfterDeathClient() {
               href="#five-step-roadmap"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all"
             >
-              <span>View 5-Step Mutation Roadmap</span>
+              <span>View 5-Step Name Change Roadmap</span>
             </a>
           </div>
         </div>
@@ -471,7 +471,7 @@ export default function PropertyTransferAfterDeathClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Property Succession Law
+                Asset Estate Law
               </span>
             </div>
 
@@ -531,7 +531,7 @@ export default function PropertyTransferAfterDeathClient() {
                   1,300+
                 </span>
                 <span className="text-[9px] sm:text-[10px] uppercase tracking-wider text-[#55636D] font-semibold">
-                  Verified Reviews
+                  Checked Reviews
                 </span>
               </div>
             </div>
@@ -576,10 +576,10 @@ export default function PropertyTransferAfterDeathClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed by Section 8 of the Hindu Succession Act, 1956, Section 17 of the Registration Act, 1908 & Section 370 of the Indian Succession Act, 1925.
+                Governed by Section 8 of the Hindu Succession Act, 1956, Section 17 of the Filing Act, 1908 & Section 370 of the Indian Succession Act, 1925.
               </p>
             </div>
 
@@ -587,16 +587,16 @@ export default function PropertyTransferAfterDeathClient() {
             <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-4 text-xs">
               <div className="flex items-center gap-1.5 text-emerald-950 font-bold mb-1">
                 <PhoneCall className="w-3.5 h-3.5 text-emerald-700" />
-                <span>Need Property Lawyers?</span>
+                <span>Need Asset Lawyers?</span>
               </div>
               <p className="text-emerald-900/80 text-[11px] leading-relaxed mb-2.5">
-                Our advocates assist with Legal Heir Certificates, Relinquishment Deeds, and municipal mutation.
+                Our lawyers assist with Legal Heir Papers, Release Deeds, and city name change.
               </p>
               <Link
                 href="/services/succession-certificate"
                 className="text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center gap-1"
               >
-                <span>Succession Services &rarr;</span>
+                <span>Estate Services &rarr;</span>
               </Link>
             </div>
           </aside>
@@ -614,31 +614,31 @@ export default function PropertyTransferAfterDeathClient() {
                 </span>
               </div>
               <div className="text-lg font-bold text-slate-900 mb-3">
-                What You Must Know Before Applying for Property Transfer
+                What You Must Know Before Applying for Asset Transfer
               </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Equal Fractional Rights:</strong> Under Section 8 of the Hindu Succession Act, the deceased father&apos;s widow, mother, sons, and daughters inherit equal undivided shares. No single child can claim the entire property automatically.
+                    <strong>Equal Fractional Rights:</strong> Under Section 8 of the Hindu Succession Act, the deceased father&apos;s widow, mother, sons, and daughters inherit equal undivided shares. No single child can claim the entire asset automatically.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Married Daughters Have Equal Shares:</strong> As reaffirmed by the Supreme Court in <em>Vineeta Sharma (2020)</em>, married daughters hold identical coparcenary and inheritance rights as sons from birth.
+                    <strong>Married Daughters Have Equal Shares:</strong> As reaffirmed by the Supreme Court in <em>Vineeta Sharma (2020)</em>, married daughters hold identical joint and estate rights as sons from birth.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mutation Does NOT Equal Ownership:</strong> Supreme Court rulings establish that municipal mutation (<em>Dakhil Kharij</em>) only transfers tax liability. Proprietary title requires registered settlement or succession documents.
+                    <strong>Name Change Does NOT Equal Ownership:</strong> Supreme Court rulings establish that city name change (<em>Dakhil Kharij</em>) only transfers tax liability. Proprietary title requires filed deal or estate papers.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Plain NOCs Are Legally Void:</strong> To transfer a share from siblings to the mother, a registered Relinquishment Deed under Section 17 of the Registration Act is mandatory. A plain paper affidavit cannot extinguish ownership.
+                    <strong>Plain NOCs Are Legally Void:</strong> To transfer a share from siblings to the mother, a filed Release Deed under Section 17 of the Filing Act is needed. A plain paper sworn note cannot extinguish ownership.
                   </span>
                 </li>
               </ul>
@@ -651,17 +651,17 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>INTESTATE SUCCESSION BASICS</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                1. Understanding Intestate Property Transfer in India
+                1. Understanding No-Will Asset Transfer in India
               </h2>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  When a property owner passes away without leaving a valid Last Will and Testament, legal experts describe the situation as dying <strong>intestate</strong>. In the absence of written instructions from the deceased, private preferences cease to apply, and the distribution of immovable assets (such as residential houses, apartments, commercial shops, and agricultural land) is governed strictly by statutory personal inheritance laws.
+                  When a asset owner passes away without leaving a valid Last Will and Testament, legal experts describe the situation as dying <strong>no-Will</strong>. In the absence of written instructions from the deceased, private preferences cease to apply, and the split of land assets (such as home houses, apartments, shop shops, and farm land) is governed strictly by legal personal estate laws.
                 </p>
                 <p>
-                  For Hindus, Buddhists, Jains, and Sikhs, intestate succession is controlled by the <strong>Hindu Succession Act, 1956</strong> (amended significantly in 2005). For Muslims, succession follows Islamic Personal Law (Shariat). For Christians, Parsis, and Jews, property transmission is governed by Part V of the <strong>Indian Succession Act, 1925</strong>.
+                  For Hindus, Buddhists, Jains, and Sikhs, no-Will estate is controlled by the <strong>Hindu Succession Act, 1956</strong> (amended significantly in 2005). For Muslims, estate follows Islamic Personal Law (Shariat). For Christians, Parsis, and Jews, asset transfer is governed by Part V of the <strong>Indian Succession Act, 1925</strong>.
                 </p>
                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-sm">
-                  <strong>The Critical Common Mistake:</strong> Many families assume that a surviving spouse (mother) automatically becomes the sole owner of her late husband&apos;s self-acquired house. Under Indian law, this is completely untrue. The surviving wife, surviving mother, and all surviving children immediately become joint co-owners (tenants-in-common), each holding an undivided fractional percentage of the real estate.
+                  <strong>The Critical Common Mistake:</strong> Many families assume that a surviving spouse (mother) automatically becomes the sole owner of her late husband&apos;s self-acquired house. Under Indian law, this is completely untrue. The surviving wife, surviving mother, and all surviving children right away become joint co-owners (tenants-in-common), each holding an undivided fractional percentage of the real estate.
                 </div>
               </div>
             </section>
@@ -677,7 +677,7 @@ export default function PropertyTransferAfterDeathClient() {
               </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Section 8 of the Hindu Succession Act, 1956 lays down a strict priority order for who inherits a deceased male&apos;s property. The law groups relatives into four distinct tiers:
+                  Section 8 of the Hindu Succession Act, 1956 lays down a strict priority order for who inherits a deceased male&apos;s asset. The law groups relatives into four distinct tiers:
                 </p>
                 <ol className="list-decimal pl-5 space-y-1.5 text-sm">
                   <li><strong>Class I Heirs:</strong> Immediate family (widow, mother, sons, daughters, and deceased children&apos;s heirs). They inherit simultaneously to the total exclusion of all other relatives.</li>
@@ -690,7 +690,7 @@ export default function PropertyTransferAfterDeathClient() {
                 <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs">
                   <div className="bg-slate-900 px-5 py-3 text-white">
                     <h3 className="font-bold text-sm tracking-wide">
-                      Class I Legal Heirs: Statutory Share Entitlement
+                      Class I Legal Heirs: Legal Share Entitlement
                     </h3>
                   </div>
                   <div className="overflow-x-auto">
@@ -698,7 +698,7 @@ export default function PropertyTransferAfterDeathClient() {
                       <thead className="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold">
                         <tr>
                           <th className="p-3.5">Legal Heir Category</th>
-                          <th className="p-3.5">Statutory Share</th>
+                          <th className="p-3.5">Legal Share</th>
                           <th className="p-3.5">Governing Rule</th>
                           <th className="p-3.5">Practical Legal Note</th>
                         </tr>
@@ -727,7 +727,7 @@ export default function PropertyTransferAfterDeathClient() {
                     Suppose Mr. Sharma dies leaving a self-acquired house in Delhi. He is survived by his <strong>wife, his elderly mother, two sons, and one married daughter</strong>. Under Section 10 rules:
                   </p>
                   <p className="text-slate-800 font-semibold bg-white p-2.5 rounded-lg border border-slate-200">
-                    Total primary Class I heirs = 5 (Wife + Mother + Son 1 + Son 2 + Daughter). Each person receives an equal undivided <strong>1/5th share (20%)</strong> of the property. The house cannot be sold or rebuilt without the written, registered consent of all five individuals.
+                    Total primary Class I heirs = 5 (Wife + Mother + Son 1 + Son 2 + Daughter). Each person receives an equal undivided <strong>1/5th share (20%)</strong> of the asset. The house cannot be sold or rebuilt without the written, filed consent of all five people.
                   </p>
                 </div>
               </div>
@@ -740,10 +740,10 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>STEP-BY-STEP PROCEDURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                3. Complete 5-Step Property Transfer Roadmap
+                3. Complete 5-Step Asset Transfer Roadmap
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Transferring real estate when there is no Will requires completing five chronological phases across civic, revenue, and registration authorities. Skipping any step creates defective title that prevents bank loans and future sales.
+                Transferring real estate when there is no Will requires completing five chronological phases across civic, revenue, and filing offices. Skipping any step creates defective title that prevents bank loans and future sales.
               </p>
 
               <div className="space-y-4">
@@ -776,7 +776,7 @@ export default function PropertyTransferAfterDeathClient() {
 
                     <div className="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
                       <Building className="w-3.5 h-3.5 text-slate-400" />
-                      <span>Competent Authority: <strong>{step.authority}</strong></span>
+                      <span>Competent Office: <strong>{step.authority}</strong></span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -785,7 +785,7 @@ export default function PropertyTransferAfterDeathClient() {
 
                     <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
                       <div className="text-xs font-bold text-slate-800 mb-1.5">
-                        Key Requirements & Documents:
+                        Key Rules & Papers:
                       </div>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-slate-600">
                         {step.checklist.map((c, i) => (
@@ -808,26 +808,26 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>LANDMARK JUDICIAL PRINCIPLES</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                4. Title Ownership vs Municipal Property Mutation
+                4. Title Ownership vs City Asset Name Change
               </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  One of the most dangerous misconceptions in Indian real estate is treating a <strong>mutation entry (Dakhil Kharij / Khata / Patta)</strong> as proof of property ownership. Thousands of families assume that because their name appears on the municipal property tax receipt or electricity bill, they hold unshakeable legal title.
+                  One of the most dangerous misconceptions in Indian real estate is treating a <strong>name change entry (Dakhil Kharij / Khata / Patta)</strong> as proof of asset ownership. Thousands of families assume that because their name appears on the city asset tax receipt or electricity bill, they hold unshakeable legal title.
                 </p>
                 <div className="p-5 rounded-2xl bg-rose-50/70 border border-rose-200 space-y-2 text-xs sm:text-sm text-rose-950">
                   <div className="font-bold flex items-center gap-1.5 text-rose-900 text-sm">
                     <AlertTriangle className="w-4 h-4 text-[#C65378]" />
-                    <span>The Supreme Court Rule: Mutation Does NOT Confer Title</span>
+                    <span>The Supreme Court Rule: Name Change Does NOT Confer Title</span>
                   </div>
                   <p className="leading-relaxed">
                     In a long line of consistent judgments—most notably <em>Sawarni v. Inder Kaur (1996) 6 SCC 223</em>, <em>Bhimabai Mahadeo Kambekar v. Arthur Import &amp; Export Co. (2019) 3 SCC 191</em>, and <em>Jitendra Singh v. State of Madhya Pradesh (2021) SCC OnLine SC 802</em>—the Supreme Court of India ruled:
                   </p>
                   <blockquote className="border-l-4 border-[#C65378] pl-3 py-1 italic bg-white/60 rounded-r text-slate-800 text-xs sm:text-sm">
-                    &ldquo;Mutation of property in revenue or municipal records neither creates nor extinguishes title to the property, nor has it any presumptive value on title. Such an entry is made purely for fiscal purposes to collect property land revenue and municipal taxes.&rdquo;
+                    &ldquo;Name Change of asset in revenue or city records neither creates nor extinguishes title to the asset, nor has it any presumptive value on title. Such an entry is made purely for fiscal purposes to collect asset land revenue and city taxes.&rdquo;
                   </blockquote>
                 </div>
                 <p>
-                  What does this mean for your family? Even if a revenue official mistakenly mutates the entire house in one brother&apos;s name, the other siblings remain lawful co-owners by virtue of Section 8 of the Hindu Succession Act. They can challenge the mutation at any point in civil court and demand their statutory 1/nth share. To ensure clear, unassailable title, heirs must execute and register formal conveyance or relinquishment documents.
+                  What does this mean for your family? Even if a revenue official mistakenly mutates the entire house in one brother&apos;s name, the other siblings remain lawful co-owners by virtue of Section 8 of the Hindu Succession Act. They can fight the name change at any point in civil court and demand their legal 1/nth share. To ensure clear, unassailable title, heirs must execute and register formal conveyance or release papers.
                 </p>
               </div>
             </section>
@@ -839,16 +839,16 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>COMPREHENSIVE DOSSIER</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                5. Essential Documents Checklist for Property Transfer
+                5. Essential Papers Checklist for Asset Transfer
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Before submitting applications to the Sub-Registrar Office or Municipal Corporation, assemble this 12-point document pack. Use the interactive checkboxes below to track your readiness.
+                Before submitting forms to the SRO office or City City Board, assemble this 12-point paper pack. Use the free checkboxes below to track your readiness.
               </p>
 
               {/* Progress and Copy Toolbar */}
               <div className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
                 <div className="text-xs font-semibold text-slate-700">
-                  Document Progress: <span className="font-extrabold text-[#C65378]">{checkedCount}</span> of {DOCUMENT_CHECKLIST_ITEMS.length} ready
+                  Paper Progress: <span className="font-extrabold text-[#C65378]">{checkedCount}</span> of {DOCUMENT_CHECKLIST_ITEMS.length} ready
                 </div>
                 <button
                   onClick={handleCopyChecklist}
@@ -862,7 +862,7 @@ export default function PropertyTransferAfterDeathClient() {
                   ) : (
                     <>
                       <Copy className="w-3.5 h-3.5 text-slate-600" />
-                      <span>Copy Document Checklist</span>
+                      <span>Copy Paper Checklist</span>
                     </>
                   )}
                 </button>
@@ -921,10 +921,10 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>VISUAL ROADMAP & SUCCESSION OVERVIEW</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                6. Step-by-Step Visual Roadmap: Death to Mutation
+                6. Step-by-Step Visual Roadmap: Death to Name Change
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                The visual guide below illustrates the transition from original property ownership under the deceased father to legal mutation among surviving heirs under the Hindu Succession Act.
+                The visual guide below illustrates the transition from original asset ownership under the deceased father to legal name change among surviving heirs under the Hindu Succession Act.
               </p>
 
               {/* Uploaded Image Component */}
@@ -942,7 +942,7 @@ export default function PropertyTransferAfterDeathClient() {
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
                     <span>
-                      Figure 1.0: Real estate succession workflow, Property Title Deed verification, and statutory legal heir rights under Indian property law.
+                      Figure 1.0: Real estate estate workflow, Asset Title Deed check, and legal legal heir rights under Indian property law.
                     </span>
                   </div>
                   <a
@@ -968,7 +968,7 @@ export default function PropertyTransferAfterDeathClient() {
                 7. Transfer With a Will vs Transfer Without a Will
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                When a family member dies with a Will, property transfer is an orderly administrative task. Without a Will, it often turns into a multi-year ordeal involving Sub-Registrar queues, legal notices, and family friction.
+                When a family member dies with a Will, asset transfer is an orderly office task. Without a Will, it often turns into a multi-year ordeal involving SRO queues, legal notices, and family friction.
               </p>
 
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs">
@@ -986,10 +986,10 @@ export default function PropertyTransferAfterDeathClient() {
                       <tr>
                         <th className="p-3.5 w-1/4">Evaluation Metric</th>
                         <th className="p-3.5 w-3/8 text-emerald-800 bg-emerald-50/40">
-                          With a Registered / Valid Will
+                          With a Filed / Valid Will
                         </th>
                         <th className="p-3.5 w-3/8 text-rose-800 bg-rose-50/40">
-                          Without a Will (Intestate)
+                          Without a Will (No-Will)
                         </th>
                       </tr>
                     </thead>
@@ -1023,7 +1023,7 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>LEGAL TRANSFER INSTRUMENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                8. Relinquishment Deed: Giving Up or Consolidating Shares
+                8. Release Deed: Giving Up or Consolidating Shares
               </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
@@ -1033,17 +1033,17 @@ export default function PropertyTransferAfterDeathClient() {
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                     <div className="font-bold text-slate-900 flex items-center gap-1.5 text-sm">
                       <FileCheck className="w-4 h-4 text-[#5F7E75]" />
-                      <span>Relinquishment Deed (Release Deed)</span>
+                      <span>Release Deed (Release Deed)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Used when a co-heir gives up their undivided share <strong>strictly in favor of another legal co-heir</strong> (such as the mother or a brother). Governed by Section 17 of the Registration Act, 1908. Most states offer concessional stamp duty for release deeds executed among Class I blood relatives (e.g., ₹1,000 in Delhi or 200 in Maharashtra).
+                      Used when a co-heir gives up their undivided share <strong>strictly in favor of another legal co-heir</strong> (such as the mother or a brother). Governed by Section 17 of the Filing Act, 1908. Most states offer concessional stamp duty for release deeds signed among Class I blood relatives (e.g., ₹1,000 in Delhi or 200 in Maharashtra).
                     </p>
                     <div className="pt-2">
                       <Link
                         href="/templates/release-deed-format"
                         className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                       >
-                        <span>Download Relinquishment Deed Format &rarr;</span>
+                        <span>Download Release Deed Format &rarr;</span>
                       </Link>
                     </div>
                   </div>
@@ -1051,17 +1051,17 @@ export default function PropertyTransferAfterDeathClient() {
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                     <div className="font-bold text-slate-900 flex items-center gap-1.5 text-sm">
                       <Split className="w-4 h-4 text-[#C65378]" />
-                      <span>Partition Deed vs Gift Deed</span>
+                      <span>Split Deed vs Gift Deed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If the heirs want to divide the physical property (e.g. Son 1 takes the Ground Floor, Son 2 takes the First Floor), a <strong>Partition Deed</strong> must be executed, demarcating specific metes and bounds. A <strong>Gift Deed</strong> cannot be used by one co-heir to release an undivided ancestral share to another co-heir without triggering standard gift tax implications.
+                      If the heirs want to divide the physical asset (e.g. Son 1 takes the Ground Floor, Son 2 takes the First Floor), a <strong>Split Deed</strong> must be signed, demarcating specific metes and bounds. A <strong>Gift Deed</strong> cannot be used by one co-heir to release an undivided family share to another co-heir without triggering standard gift tax implications.
                     </p>
                     <div className="pt-2">
                       <Link
                         href="/blogs/legal-heir-certificate-vs-succession-certificate"
                         className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                       >
-                        <span>Legal Heir vs Succession Certificate &rarr;</span>
+                        <span>Legal Heir vs Estate Paper &rarr;</span>
                       </Link>
                     </div>
                   </div>
@@ -1070,10 +1070,10 @@ export default function PropertyTransferAfterDeathClient() {
                 <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-red-950 text-xs sm:text-sm space-y-1.5">
                   <div className="font-bold text-red-900 flex items-center gap-1.5">
                     <AlertTriangle className="w-4 h-4 text-red-700" />
-                    <span>Statutory Warning: Beware of Unregistered Affidavits</span>
+                    <span>Legal Warning: Beware of Plain Affidavits</span>
                   </div>
                   <p className="leading-relaxed">
-                    Under Section 49 of the Registration Act, 1908, an unregistered document purporting to extinguish an interest in real estate has no legal effect. Many families sign a ₹10 stamp paper affidavit or &ldquo;No Objection Certificate&rdquo; (NOC) and submit it to the municipality. While a corrupt clerk might process mutation, that affidavit has <strong>zero legal standing</strong>. Ten years later, any child can approach a civil court, declare the NOC null and void, and reclaim their share. Always register the deed at the Sub-Registrar Office.
+                    Under Section 49 of the Filing Act, 1908, an plain paper purporting to extinguish an interest in real estate has no legal effect. Many families sign a ₹10 stamp paper sworn note or &ldquo;No Objection Paper&rdquo; (NOC) and submit it to the town office. While a corrupt clerk might process name change, that sworn note has <strong>zero legal standing</strong>. Ten years later, any child can approach a civil court, declare the NOC null and void, and reclaim their share. Always register the deed at the SRO office.
                   </p>
                 </div>
               </div>
@@ -1086,7 +1086,7 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>PRACTICAL OBSTACLES</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                9. Handling Complex Scenarios: Disputes, NRIs & Minors
+                9. Handling Complex Scenarios: Fights, NRIs & Minors
               </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 {/* Scenario 1: Disputes */}
@@ -1096,7 +1096,7 @@ export default function PropertyTransferAfterDeathClient() {
                     <span>1. When Legal Heirs Disagree or Refuse to Sign</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Municipal mutation offices only process transfers on unanimous consent. If one brother or daughter refuses to execute a relinquishment deed or claims an unfair share, municipal mutation will be stayed. The consenting heirs have only one statutory remedy: filing a <strong>Civil Suit for Partition</strong> under Section 26 and Order VII of the Code of Civil Procedure (CPC). The court will issue a preliminary decree determining shares, appoint a Court Commissioner to assess physical division, and order an auction sale under the Partition Act, 1893 if division is impossible.
+                    City name change offices only process transfers on unanimous consent. If one brother or daughter refuses to execute a release deed or claims an unfair share, city name change will be stayed. The consenting heirs have only one legal remedy: filing a <strong>Civil Suit for Split</strong> under Section 26 and Order VII of the Code of Civil Step (CPC). The court will issue a preliminary decree determining shares, appoint a Court Commissioner to assess physical division, and order an auction sale under the Split Act, 1893 if division is impossible.
                   </p>
                 </div>
 
@@ -1107,7 +1107,7 @@ export default function PropertyTransferAfterDeathClient() {
                     <span>2. NRI Legal Heirs Living Abroad</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If an NRI son or daughter cannot fly to India for Sub-Registrar registration, they can execute a <strong>Special Power of Attorney (POA)</strong> or Relinquishment Deed in their country of residence. The document must be executed before a local Notary Public and apostilled under the Hague Convention (in countries like the USA, UK, Canada, Australia) or authenticated by the Indian Embassy / Consulate. Once sent to India, the POA must be adjudicated and stamped with state stamp duty within 90 days under Section 18 of the Indian Stamp Act, 1899.
+                    If an NRI son or daughter cannot fly to India for SRO filing, they can execute a <strong>Special Power of Attorney (POA)</strong> or Release Deed in their country of residence. The paper must be signed before a local Notary Public and apostilled under the Hague Convention (in countries like the USA, UK, Canada, Australia) or authenticated by the Indian Embassy / Consulate. Once sent to India, the POA must be adjudicated and stamped with state stamp duty within 90 days under Section 18 of the Indian Stamp Act, 1899.
                   </p>
                 </div>
 
@@ -1118,7 +1118,7 @@ export default function PropertyTransferAfterDeathClient() {
                     <span>3. Minor Legal Heirs</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If one of the deceased father&apos;s children is a minor (under 18 years), their surviving mother acts as the natural guardian under the Hindu Minority and Guardianship Act, 1956. However, under <strong>Section 8 of that Act</strong>, a natural guardian cannot sell, mortgage, gift, or relinquish the minor&apos;s undivided share in immovable property without obtaining prior permission from the District Civil Court. Any unauthorized relinquishment is voidable at the minor&apos;s option upon turning 18.
+                    If one of the deceased father&apos;s children is a minor (under 18 years), their surviving mother acts as the natural guardian under the Hindu Minority and Child Care Act, 1956. However, under <strong>Section 8 of that Act</strong>, a natural guardian cannot sell, mortgage, gift, or relinquish the minor&apos;s undivided share in land asset without obtaining prior permission from the District Civil Court. Any unauthorized release is voidable at the minor&apos;s option upon turning 18.
                   </p>
                 </div>
               </div>
@@ -1131,19 +1131,19 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>PREVENTIVE ESTATE PLANNING</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                10. How Writing a Will Eliminates Succession Hardships
+                10. How Writing a Will Eliminates Estate Hardships
               </h3>
               <div className="p-6 sm:p-8 rounded-3xl bg-[#172228] text-white shadow-xl space-y-6">
                 <div className="space-y-3">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 text-xs font-bold uppercase tracking-wider">
                     <Lock className="w-3.5 h-3.5" />
-                    The Power of Testamentary Succession
+                    The Power of Will Estate
                   </span>
                   <h3 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
                     Don&apos;t Leave Your Family with Court Visits and Bureaucratic Deadlocks
                   </h3>
                   <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                    Every single headache described on this page—gathering pedigree proofs, negotiating with reluctant siblings, paying stamp duty on release deeds, and navigating civic mutation delays—stems from a single oversight: <strong>not drafting a simple Last Will</strong>.
+                    Every single headache described on this page—gathering pedigree proofs, negotiating with reluctant siblings, paying stamp duty on release deeds, and navigating civic name change delays—stems from a single oversight: <strong>not drafting a simple Last Will</strong>.
                   </p>
                 </div>
 
@@ -1154,7 +1154,7 @@ export default function PropertyTransferAfterDeathClient() {
                       <span>Instant Clarity for Heirs</span>
                     </div>
                     <p className="text-slate-300 text-xs leading-relaxed">
-                      A Will specifies exactly who gets which floor, house, or savings. Zero ambiguity, zero scope for disputes among siblings.
+                      A Will specifies exactly who gets which floor, house, or savings. Zero ambiguity, zero scope for fights among siblings.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white/10 border border-white/10 space-y-1.5">
@@ -1163,7 +1163,7 @@ export default function PropertyTransferAfterDeathClient() {
                       <span>Save Thousands in Stamp Duty</span>
                     </div>
                     <p className="text-slate-300 text-xs leading-relaxed">
-                      Property transferring under a Will does not require siblings to execute expensive registered relinquishment deeds at the SRO.
+                      Asset transferring under a Will does not require siblings to execute expensive filed release deeds at the SRO.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white/10 border border-white/10 space-y-1.5">
@@ -1181,7 +1181,7 @@ export default function PropertyTransferAfterDeathClient() {
                       <span>Complete in 15 Minutes Online</span>
                     </div>
                     <p className="text-slate-300 text-xs leading-relaxed">
-                      Using our guided wizard, you can draft a legally binding, advocate-approved Will on plain paper from the comfort of your home.
+                      Using our guided wizard, you can draft a legally binding, lawyer-approved Will on plain paper from the comfort of your home.
                     </p>
                   </div>
                 </div>
@@ -1199,7 +1199,7 @@ export default function PropertyTransferAfterDeathClient() {
                     href="/tools/succession-calculator"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all text-xs sm:text-sm"
                   >
-                    <span>Use Succession Calculator</span>
+                    <span>Use Estate Tool</span>
                   </Link>
                 </div>
               </div>
@@ -1215,7 +1215,7 @@ export default function PropertyTransferAfterDeathClient() {
                 11. Professional Legal Support from WillDrafting.in
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                If your family is currently dealing with the aftermath of an intestate demise, navigating municipal offices and drafting registered deeds can feel overwhelming. The experienced property advocates at WillDrafting.in provide end-to-end representation:
+                If your family is currently dealing with the aftermath of an no-Will demise, navigating city offices and drafting filed deeds can feel overwhelming. The experienced asset lawyers at WillDrafting.in provide end-to-end representation:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1224,16 +1224,16 @@ export default function PropertyTransferAfterDeathClient() {
                     <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold">
                       <Landmark className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900">Succession Certificates</h3>
+                    <h3 className="font-bold text-sm text-slate-900">Estate Papers</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      For movable estate assets including bank accounts, demat portfolios, and mutual funds under Section 370 of ISA 1925.
+                      For cash estate assets including bank accounts, demat portfolios, and mutual funds under Section 370 of ISA 1925.
                     </p>
                   </div>
                   <Link
                     href="/services/succession-certificate"
                     className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                   >
-                    <span>Succession Lawyers &rarr;</span>
+                    <span>Estate Lawyers &rarr;</span>
                   </Link>
                 </div>
 
@@ -1244,14 +1244,14 @@ export default function PropertyTransferAfterDeathClient() {
                     </div>
                     <h3 className="font-bold text-sm text-slate-900">Probate & Letters of Admin</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      High Court and District Court petitions for grant of Probate or Letters of Administration across India.
+                      High Court and District Court petitions for grant of Probate or Letters of Care across India.
                     </p>
                   </div>
                   <Link
                     href="/services/probate-lawyer"
                     className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                   >
-                    <span>Probate Advocates &rarr;</span>
+                    <span>Probate Lawyers &rarr;</span>
                   </Link>
                 </div>
 
@@ -1260,9 +1260,9 @@ export default function PropertyTransferAfterDeathClient() {
                     <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center font-bold">
                       <Scroll className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900">Relinquishment & Mutation</h3>
+                    <h3 className="font-bold text-sm text-slate-900">Release & Name Change</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Custom drafting of registered Release Deeds, SRO appointment assistance, and municipal Dakhil Kharij liaison.
+                      Custom drafting of filed Release Deeds, SRO appointment help, and city Dakhil Kharij liaison.
                     </p>
                   </div>
                   <Link
@@ -1282,10 +1282,10 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>COMMONLY ASKED QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                12. Frequently Asked Questions on Property Succession
+                12. Frequently Asked Questions on Asset Estate
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Clear, straightforward answers to the practical legal questions families encounter when transferring property after death without a Will.
+                Clear, straightforward answers to the practical legal questions families encounter when transferring asset after death without a Will.
               </p>
 
               <div className="space-y-3">
@@ -1325,7 +1325,7 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>OFFICIAL STATUTES & CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                13. Relevant Laws, Statutory Sections & Court Rulings
+                13. Relevant Laws, Legal Sections & Court Rulings
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-3">
                 <p>
@@ -1333,24 +1333,46 @@ export default function PropertyTransferAfterDeathClient() {
                 </p>
                 <ul className="space-y-2 list-disc pl-5 text-slate-600 text-xs">
                   <li>
-                    <strong>Hindu Succession Act, 1956 (Act No. 30 of 1956):</strong> Section 6 (equal coparcenary rights for daughters), Section 8 (general rules of intestate succession for males), Section 9 (order of succession among Class I heirs), Section 10 (distribution rules among heirs in Class I).
+                    <strong>Hindu Succession Act, 1956 (Act No. 30 of 1956):</strong> Section 6 (equal joint rights for daughters), Section 8 (general rules of no-Will estate for males), Section 9 (order of estate among Class I heirs), Section 10 (split rules among heirs in Class I).
                   </li>
                   <li>
-                    <strong>Indian Succession Act, 1925 (Act No. 39 of 1925):</strong> Section 211 (character of executor and administrator), Part X Section 370 (statutory bar against granting succession certificates for immovable property).
+                    <strong>Indian Succession Act, 1925 (Act No. 39 of 1925):</strong> Section 211 (character of executor and head), Part X Section 370 (legal bar against granting estate papers for land asset).
                   </li>
                   <li>
-                    <strong>Registration Act, 1908 (Act No. 16 of 1908):</strong> Section 17(1)(b) (compulsory registration of non-testamentary instruments transferring rights in immovable property), Section 49 (effects of non-registration of compulsory documents).
+                    <strong>Filing Act, 1908 (Act No. 16 of 1908):</strong> Section 17(1)(b) (needed filing of non-Will instruments transferring rights in land asset), Section 49 (effects of non-filing of needed papers).
                   </li>
                   <li>
-                    <strong>Hindu Minority and Guardianship Act, 1956:</strong> Section 8 (prohibiting natural guardians from selling, mortgaging, or relinquishing a minor&apos;s immovable property share without prior permission from the District Court).
+                    <strong>Hindu Minority and Child Care Act, 1956:</strong> Section 8 (prohibiting natural guardians from selling, mortgaging, or relinquishing a minor&apos;s land asset share without prior permission from the District Court).
                   </li>
                   <li>
-                    <strong>Landmark Supreme Court Rulings:</strong> <em>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1</em> (retroactive coparcenary rights for daughters); <em>Sawarni v. Inder Kaur (1996) 6 SCC 223</em> (mutation does not create or extinguish proprietary title); <em>Jitendra Singh v. State of MP (2021)</em> (reaffirming mutation is purely for revenue tax collection).
+                    <strong>Landmark Supreme Court Rulings:</strong> <em>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1</em> (retroactive joint rights for daughters); <em>Sawarni v. Inder Kaur (1996) 6 SCC 223</em> (name change does not create or extinguish proprietary title); <em>Jitendra Singh v. State of MP (2021)</em> (reaffirming name change is purely for revenue tax collection).
                   </li>
                 </ul>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1370,21 +1392,21 @@ export default function PropertyTransferAfterDeathClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Estate &amp; Succession Counsel
+                    Senior Estate &amp; Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, intestate estate disputes, and high-value property partitions at WillDrafting.in.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, no-Will estate fights, and high-value asset partitions at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1406,10 +1428,10 @@ export default function PropertyTransferAfterDeathClient() {
                 <span>PROTECT YOUR FAMILY</span>
               </div>
               <h3 className="text-lg font-bold leading-snug">
-                Avoid Intestate Nightmares for Your Family
+                Avoid No-Will Nightmares for Your Family
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Don&apos;t leave your heirs to face bureaucratic delays and property litigation. Create an advocate-approved, court-ready Will in 15 minutes.
+                Don&apos;t leave your heirs to face bureaucratic delays and asset court fights. Create an lawyer-approved, court-ready Will in 15 minutes.
               </p>
               <a
                 href="/start"
@@ -1421,14 +1443,14 @@ export default function PropertyTransferAfterDeathClient() {
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Call our property advocates</span>
+                <span>Call our asset lawyers</span>
               </div>
             </div>
 
             {/* CARD 3: TRUST / BENEFITS CHECKLIST */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">
-                Key Succession Rules at a Glance
+                Key Estate Rules at a Glance
               </h4>
               <ul className="space-y-2.5 text-xs text-slate-600">
                 <li className="flex items-start gap-2">
@@ -1446,13 +1468,13 @@ export default function PropertyTransferAfterDeathClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mutation &ne; Ownership:</strong> Mutation is for tax only.
+                    <strong>Name Change &ne; Ownership:</strong> Name Change is for tax only.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registered Release Required:</strong> Stamp paper affidavits are void.
+                    <strong>Filed Release Required:</strong> Stamp paper sworn notes are void.
                   </span>
                 </li>
               </ul>
@@ -1468,25 +1490,25 @@ export default function PropertyTransferAfterDeathClient() {
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Legal Heir vs Succession Certificate</div>
+                  <div className="font-bold text-xs text-slate-900">Legal Heir vs Estate Paper</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Which document do you need for which asset? &rarr;
+                    Which paper do you need for which asset? &rarr;
                   </div>
                 </Link>
                 <Link
                   href="/templates/release-deed-format"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Relinquishment Deed Format</div>
+                  <div className="font-bold text-xs text-slate-900">Release Deed Format</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Free registered release deed template &rarr;
+                    Free filed release deed template &rarr;
                   </div>
                 </Link>
                 <Link
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir fractional shares &rarr;
                   </div>
@@ -1495,9 +1517,9 @@ export default function PropertyTransferAfterDeathClient() {
                   href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Certificate Service</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Paper Service</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Civil court representation by WillDrafting.in advocates &rarr;
+                    Civil court representation by WillDrafting.in lawyers &rarr;
                   </div>
                 </Link>
               </div>
@@ -1512,19 +1534,19 @@ export default function PropertyTransferAfterDeathClient() {
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
                 <Link
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
                 <Link
                   href="/templates/will-format-india"

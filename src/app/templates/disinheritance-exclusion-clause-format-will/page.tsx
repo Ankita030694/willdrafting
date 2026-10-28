@@ -92,7 +92,7 @@ export default function DisinheritanceClausePage() {
         url: canonicalUrl,
         name: "How to Write Disinheritance Clause in Will | WillDrafting",
         description:
-          "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.",
+          "Download valid leaving out clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -151,7 +151,7 @@ export default function DisinheritanceClausePage() {
             name: "Can I legally disinherit my son or daughter in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, you can legally disinherit any son or daughter from your self-acquired property under Section 59 of the Indian Succession Act, 1925 and Section 30 of the Hindu Succession Act, 1956. However, you cannot disinherit a child from their undivided share in ancestral coparcenary property, as they acquire a birthright in such property.",
+              text: "Yes, you can legally disinherit any son or daughter from your self-acquired asset under Section 59 of the Indian Succession Act, 1925 and Section 30 of the Hindu Succession Act, 1956. However, you cannot disinherit a child from their undivided share in family joint asset, as they acquire a birthright in such asset.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function DisinheritanceClausePage() {
             name: "Why is unexplained exclusion treated as a suspicious circumstance in court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under landmark Supreme Court rulings such as Kavita Kanwar v. Pamela Mehta (2020) and Ram Piari v. Bhagwant (1990), an unnatural or unexplained exclusion of a natural legal heir casts suspicion on the Will. The court requires the propounder to prove that the testator acted consciously without fraud, coercion, or undue influence under Section 61 of the Indian Succession Act.",
+              text: "Under landmark Supreme Court rulings such as Kavita Kanwar v. Pamela Mehta (2020) and Ram Piari v. Bhagwant (1990), an unnatural or unexplained exclusion of a natural legal heir casts suspicion on the Will. The court requires the propounder to prove that the Will maker acted consciously without fraud, coercion, or undue influence under Section 61 of the Indian Succession Act.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function DisinheritanceClausePage() {
             name: "What is an in terrorem or no-contest clause in an Indian Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An in terrorem clause stipulates that if any legal heir challenges the validity of the Will, files a probate caveat, or disputes property distribution in court, any conditional bequest or token legacy allocated to them is immediately forfeited and revoked.",
+              text: "An in terrorem clause stipulates that if any legal heir fights the validity of the Will, files a probate caveat, or fights asset split in court, any conditional bequest or token legacy allocated to them is right away forfeited and revoked.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function DisinheritanceClausePage() {
             name: "Does registering a Will prevent an excluded heir from filing a lawsuit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration at the Sub-Registrar Office under Section 18 of the Registration Act, 1908 does not completely block a lawsuit, but it provides a strong presumption of genuine execution. When supported by a contemporaneous medical fitness certificate and video recording, it makes court challenges exceedingly difficult for excluded heirs.",
+              text: "Filing at the SRO office under Section 18 of the Filing Act, 1908 does not completely block a lawsuit, but it provides a strong presumption of genuine signing. When supported by a contemporaneous medical fitness paper and video recording, it makes court fights exceedingly difficult for excluded heirs.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function DisinheritanceClausePage() {
             name: "Should the favored beneficiary be present when the Will is executed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court in Kavita Kanwar ruled that active participation or presence of the favored beneficiary during drafting or execution creates a strong suspicion of undue influence. The beneficiary must remain strictly separate from drafting, witnessing, and registration.",
+              text: "No. The Supreme Court in Kavita Kanwar ruled that active participation or presence of the favored heir during drafting or signing creates a strong suspicion of undue influence. The heir must remain strictly separate from drafting, witnessing, and filing.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function DisinheritanceClausePage() {
             name: "Can my married daughter claim a share in my self-acquired property if I exclude her?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. While the 2005 Hindu Succession Amendment granted daughters equal coparcenary rights in ancestral property, self-acquired property remains under the absolute testamentary freedom of the owner. A parent can leave self-acquired property entirely to other beneficiaries through a valid Will.",
+              text: "No. While the 2005 Hindu Succession Amendment granted daughters equal joint rights in family asset, self-acquired asset remains under the absolute Will freedom of the owner. A parent can leave self-acquired asset entirely to other heirs through a valid Will.",
             },
           },
         ],

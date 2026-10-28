@@ -141,7 +141,7 @@ export default function KarnatakaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Karnataka: Expert Online Will Services",
         description:
-          "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession.",
+          "Create a legally binding Will in Karnataka. Get Kaveri 2.0 filing guidance, tech estate planning, and farm land estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function KarnatakaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Karnataka - Estate Planning & Kaveri 2.0 Registration",
         description:
-          "Professional Will drafting, advocate verification, Kaveri 2.0 online slot booking, and doorstep execution support across Bengaluru, Mysuru.",
+          "Professional Will drafting, lawyer check, Kaveri 2.0 online slot booking, and doorstep signing support across Bengaluru, Mysuru.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -253,38 +253,38 @@ export default function KarnatakaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Karnataka",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Karnataka.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Karnataka.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Karnataka real estate including BBMP flats, BDA plots, tech company ESOPs, and Bhoomi agricultural lands. Designate beneficiaries and an executor.",
+            text: "List your Karnataka real estate including BBMP flats, BDA plots, tech company ESOPs, and Bhoomi farm lands. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, tech equity inheritance, survivorship, guardian appointments, and revocation of prior wills.",
+            text: "Draft your Will using checked legal clauses for clear asset split, tech equity estate, survivorship, guardian appointments, and revocation of prior wills.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Kaveri 2.0 SRO Slot Online",
-            text: "Schedule your registration appointment on the Kaveri 2.0 portal for your relevant Karnataka SRO and pay the nominal ₹200 registration fee via KII-challan.",
+            text: "Schedule your filing appointment on the Kaveri 2.0 portal for your relevant Karnataka SRO and pay the nominal ₹200 filing fee via KII-challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Karnataka SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

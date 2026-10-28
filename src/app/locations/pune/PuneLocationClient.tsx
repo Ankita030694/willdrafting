@@ -146,8 +146,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS practitioner certifying sound sound mind to eliminate dementia fights.",
+    label: "Doctor's Mental Capacity Paper (For Seniors)",
+    detail: "Issued by a filed MBBS practitioner certifying sound sound mind to eliminate dementia fights.",
     checked: false,
   },
   {
@@ -158,8 +158,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Property Chain Documents (PMC / PCMC / Society Share)",
-    detail: "Copies of registered sale deeds, Index-II, latest PMC/PCMC property tax receipts, or cooperative society share papers.",
+    label: "Asset Chain Papers (PMC / PCMC / Society Share)",
+    detail: "Copies of filed sale deeds, Index-II, latest PMC/PCMC asset tax receipts, or cooperative society share papers.",
     checked: false,
   },
   {
@@ -263,7 +263,7 @@ export default function PuneLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally binding Will for your PMC and PCMC apartments, bungalow plots, mutual funds, and tech equity.
-                Get lawyer drafting, IGR Maharashtra Sarita registration help, and doorstep signing for senior citizens across Pune.
+                Get lawyer drafting, IGR Maharashtra Sarita filing help, and doorstep signing for senior citizens across Pune.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -496,16 +496,16 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>PUNE &amp; PCMC SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Pune
+                  Key Highlights: Will Making &amp; Filing in Pune
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional SRO Registration</span>
+                      <span>A Choice SRO Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Registering a Will is optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will on white paper is legally binding if signed before two independent witnesses.
+                      Registering a Will is a choice under Section 18(e) of the Filing Act, 1908. A handwritten or typed Will on white paper is legally binding if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -525,7 +525,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       <span>₹0 Maharashtra Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills carry zero stamp duty under Article 64 of the Maharashtra Stamp Act. At Pune Sub-Registrar offices, testators pay only a flat one hundred rupee fee plus scanning costs.
+                      Wills carry zero stamp duty under Article 64 of the Maharashtra Stamp Act. At Pune SRO offices, Will makers pay only a flat one hundred rupee fee plus scanning costs.
                     </p>
                   </div>
 
@@ -535,7 +535,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       <span>Fast PMC &amp; PCMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites property tax name transfer (Varasdar Nond) across PMC and PCMC, as well as cooperative housing society share paper transfers.
+                      A filed Will expedites asset tax name transfer (Varasdar Nond) across PMC and PCMC, as well as cooperative housing society share paper transfers.
                     </p>
                   </div>
                 </div>
@@ -550,10 +550,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Will Drafting &amp; Succession Laws in Pune
+                  1. Will Drafting &amp; Estate Laws in Pune
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a Will in Pune is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Maharashtra Co-operative Societies Act, 1960</strong>.
+                  Writing a Will in Pune is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Maharashtra Co-operative Societies Act, 1960</strong>.
                   Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, bank deposits, mutual funds, and business shares.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
@@ -614,15 +614,15 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Will Registration in Pune: Rules &amp; Legal Value
+                  2. Will Filing in Pune: Rules &amp; Legal Value
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is <strong>a choice</strong>.
                   A Will written on plain A4 paper is fully valid in Indian courts if properly signed and attested by two witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, registering your Will at a Pune SRO office provides vital legal advantages.
-                  The document is preserved in government Book III registers, which stops false claims of forgery or tampering:
+                  The paper is preserved in government Book III registers, which stops false claims of forgery or tampering:
                 </p>
               </div>
 
@@ -631,15 +631,15 @@ export default function PuneLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Pune SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Factor</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Pune SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Government Archival</td>
-                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Maharashtra Registration Department</td>
+                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Maharashtra Filing Office</td>
                       <td className="p-4 bg-slate-50/20">Held in private custody; exposed to physical damage, loss, or intentional concealment</td>
                     </tr>
                     <tr>
@@ -649,8 +649,8 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">PMC &amp; PCMC Name Change</td>
-                      <td className="p-4 bg-rose-50/20">Accepted smoothly for property tax name change and city survey updates</td>
-                      <td className="p-4 bg-slate-50/20">Municipal officers may require supplementary affidavits, NOCs, or legal heir bonds</td>
+                      <td className="p-4 bg-rose-50/20">Accepted smoothly for asset tax name change and city survey updates</td>
+                      <td className="p-4 bg-slate-50/20">City officers may require supplementary sworn notes, NOCs, or legal heir bonds</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Cooperative Society Transfer</td>
@@ -659,7 +659,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Government Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee plus nominal scanning</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 filing fee plus nominal scanning</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
                   </tbody>
@@ -679,7 +679,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate is a court decree issued by a competent court certifying the legal validity of a Will.
-                  It confers official authority on the appointed executor to administer the deceased Will maker&apos;s estate.
+                  It confers official office on the appointed executor to administer the deceased Will maker&apos;s estate.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, probate is needed only for Wills made within the historical presidency towns of Mumbai, Kolkata, and Chennai, or where land and flats is situated within those presidency limits.
@@ -709,14 +709,14 @@ export default function PuneLocationClient({ faqs }: Props) {
                     When Court Intervention Arises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    When is Probate or Succession Advice Needed?
+                    When is Probate or Estate Advice Needed?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    While probate is non-needed in Pune, families may still seek probate or Letters of Administration if an estranged legal heir fights the Will in the Pune District Court, or if institutional financial bodies insist on court confirmation.
+                    While probate is non-needed in Pune, families may still seek probate or Letters of Care if an estranged legal heir fights the Will in the Pune District Court, or if institutional financial bodies insist on court confirmation.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>A registered Will drastically minimizes any fight risks</span>
+                    <span>A filed Will drastically minimizes any fight risks</span>
                   </div>
                 </div>
               </div>
@@ -725,7 +725,7 @@ export default function PuneLocationClient({ faqs }: Props) {
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
                 <div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Do you also hold family property or flats in Mumbai?
+                    Do you also hold family asset or flats in Mumbai?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
                     If your Pune Will covers assets situated within Greater Mumbai, Bombay High Court probate rules may apply to those specific assets.
@@ -735,7 +735,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                   href="/tools/succession-calculator"
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors shrink-0"
                 >
-                  <span>Check Succession Rights</span>
+                  <span>Check Estate Rights</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -749,11 +749,11 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Pune Sub-Registrar Offices &amp; SRO Directory
+                  4. Pune SRO Offices &amp; SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across Pune and Pimpri-Chinchwad is supervised by the Department of Registration and Stamps (IGR Maharashtra).
-                  Under Section 32 of the Registration Act, you can present your Will at the SRO office having area over your residence.
+                  Will filing across Pune and Pimpri-Chinchwad is supervised by the Office of Filing and Stamps (IGR Maharashtra).
+                  Under Section 32 of the Filing Act, you can present your Will at the SRO office having area over your residence.
                 </p>
               </div>
 
@@ -835,7 +835,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <div className="flex items-center gap-2">
                     <ExternalLink className="w-4 h-4 text-amber-700 shrink-0" />
                     <span>
-                      Registration slots must be pre-booked online via the IGR Maharashtra SARITA / e-Stepin portal before visiting the SRO.
+                      Filing slots must be pre-booked online via the IGR Maharashtra SARITA / e-Stepin portal before visiting the SRO.
                     </span>
                   </div>
                   <a
@@ -861,7 +861,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Pune Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Hinjewadi, Kothrud, Baner, or Kharadi</strong>? Our senior estate planning lawyers provide end-to-end legal drafting, IGR Maharashtra Sarita portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Pune and Pimpri-Chinchwad:
+                  Looking for legally checked <strong>Will drafting services in Hinjewadi, Kothrud, Baner, or Kharadi</strong>? Our senior estate planning lawyers provide end-to-end legal drafting, IGR Maharashtra Sarita portal slot booking, and SRO accompaniment tailored to the specific asset dynamics of Pune and Pimpri-Chinchwad:
                 </p>
               </div>
 
@@ -892,7 +892,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kothrud</strong>, Karve Nagar, and Erandwane for family wadas, independent bungalows, cooperative housing society flats, and bank fixed deposits, preventing bitter inheritance conflicts among legal heirs.
+                      Specialized <strong>Will drafting services in Kothrud</strong>, Karve Nagar, and Erandwane for family wadas, independent bungalows, cooperative housing society flats, and bank fixed deposits, preventing bitter estate conflicts among legal heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -901,7 +901,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Paud Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        IGR Maharashtra Sarita slot scheduling, lawyer representation, and Section 31 home visits for elderly testators across Kothrud and Karve Road.
+                        IGR Maharashtra Sarita slot scheduling, lawyer representation, and Section 31 home visits for elderly Will makers across Kothrud and Karve Road.
                       </p>
                     </div>
                   </div>
@@ -946,7 +946,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Premium <strong>Will drafting services in Baner</strong>, Balewadi, and Aundh for luxury gated enclaves, high-rise penthouses, company equities, mutual fund portfolios, and seamless PMC property tax name change.
+                      Premium <strong>Will drafting services in Baner</strong>, Balewadi, and Aundh for luxury gated enclaves, high-rise penthouses, company equities, mutual fund portfolios, and seamless PMC asset tax name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -955,7 +955,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Government Office Complex, Aundh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Rapid e-Stepin appointment scheduling, lawyer representation, and smooth Book III registration for Baner, Balewadi, and Aundh homeowners.
+                        Rapid e-Stepin appointment scheduling, lawyer representation, and smooth Book III filing for Baner, Balewadi, and Aundh homeowners.
                       </p>
                     </div>
                   </div>
@@ -1008,7 +1008,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: MIDC Office Annex, Hinjewadi Phase 1</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast online draft finalization, cross-border NRI asset structuring, and priority weekend SRO registration slots for IT professionals.
+                        Fast online draft finalization, cross-border NRI asset structuring, and priority weekend SRO filing slots for IT professionals.
                       </p>
                     </div>
                   </div>
@@ -1062,7 +1062,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Yerwada Registry Complex, Off Nagar Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online Sarita token generation, doctor paper coordination, and physical lawyer help at the Yerwada Sub-Registrar counter.
+                        Online Sarita token generation, doctor paper coordination, and physical lawyer help at the Yerwada SRO counter.
                       </p>
                     </div>
                   </div>
@@ -1116,7 +1116,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Solapur Road Office Office, Hadapsar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full check of township allotment letters, society membership documents, and fast-track Haveli 14 SRO signing.
+                        Full check of township allotment letters, society membership papers, and fast-track Haveli 14 SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1161,7 +1161,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Heritage <strong>Will drafting services in Shivaji Nagar</strong>, Deccan Gymkhana, and Pune Camp for high-value family wadas, shop buildings, multi-tier testamentary trusts, and business succession safeguarding.
+                      Heritage <strong>Will drafting services in Shivaji Nagar</strong>, Deccan Gymkhana, and Pune Camp for high-value family wadas, shop buildings, multi-tier Will trusts, and business estate safeguarding.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1170,7 +1170,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Photozinco Press Compound, Central Building</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Expert lawyer liaison, doorstep medical examination, and Book III registration at Pune&apos;s apex Sub-Registrar registry office.
+                        Expert lawyer liaison, doorstep medical examination, and Book III filing at Pune&apos;s apex SRO registry office.
                       </p>
                     </div>
                   </div>
@@ -1195,7 +1195,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        PCMC Industrial &amp; Home
+                        PCMC Plant &amp; Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Haveli 16, 18 &amp; 20
@@ -1215,7 +1215,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Pimpri</strong>, Chinchwad, and Pimple Saudagar for auto ancillary entrepreneurs, MSME factory owners, and modern society apartments with clear demarcation between personal and industrial assets.
+                      Custom <strong>Will drafting services in Pimpri</strong>, Chinchwad, and Pimple Saudagar for auto ancillary entrepreneurs, MSME factory owners, and modern society apartments with clear demarcation between personal and plant assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1224,7 +1224,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: PCMC Sub-Divisional Office, Akurdi Pradhikaran</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        PCMC property tax name change guidance, industrial land ferfar advisory, and Morwadi court legal check.
+                        PCMC asset tax name change guidance, plant land ferfar advisory, and Morwadi court legal check.
                       </p>
                     </div>
                   </div>
@@ -1278,7 +1278,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Gultekdi Market Yard Shop Building</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep home registration under Section 31 for senior citizens and fast-track property tax name change with Pune Municipal Corporation.
+                        Doorstep home filing under Section 31 for senior citizens and fast-track asset tax name change with Pune City City Board.
                       </p>
                     </div>
                   </div>
@@ -1307,10 +1307,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP SOP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to Registration
+                  6. Step-by-Step SOP: Will Drafting to Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified standard operating step to prepare, execute, and optionally register your Will in Pune:
+                  Follow this checked standard operating step to prepare, execute, and optionally register your Will in Pune:
                 </p>
               </div>
 
@@ -1325,7 +1325,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       Inventory Assets &amp; Identify Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a full schedule of your movable and immovable assets in Pune and beyond. Include PMC/PCMC property tax numbers, index-II registered sale deeds, bank accounts, demat folios, and insurance policies. Designate an executor to administer the estate.
+                      Compile a full schedule of your cash and land assets in Pune and beyond. Include PMC/PCMC asset tax numbers, index-II filed sale deeds, bank accounts, demat folios, and insurance policies. Designate an executor to administer the estate.
                     </p>
                   </div>
                 </div>
@@ -1337,10 +1337,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Draft Legal Will with Succession Lawyer
+                      Draft Legal Will with Estate Lawyer
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Work with our specialized succession lawyers to frame custom legal clauses. Include explicit revocation of past Wills, specific bequests, survivorship rules, and a residual clause to capture any future assets.
+                      Work with our specialized estate lawyers to frame custom legal clauses. Include explicit revocation of past Wills, specific bequests, survivorship rules, and a residual clause to capture any future assets.
                     </p>
                   </div>
                 </div>
@@ -1370,7 +1370,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       Book IGR Maharashtra Sarita Appointment Online
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log in to the IGR Maharashtra Sarita portal (igrmaharashtra.gov.in) and navigate to the e-Stepin appointment module. Select your designated Haveli SRO office, upload party details, pay the nominal ₹100 registration fee online, and download the appointment receipt.
+                      Log in to the IGR Maharashtra Sarita portal (igrmaharashtra.gov.in) and navigate to the e-Stepin appointment module. Select your designated Haveli SRO office, upload party details, pay the nominal ₹100 filing fee online, and download the appointment receipt.
                     </p>
                   </div>
                 </div>
@@ -1385,7 +1385,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       Complete Biometric Check at Pune SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the SRO office during your allotted slot with both witnesses, original Aadhaar cards, and passport photos. The Sub-Registrar captures biometric thumbprints and digital photographs, enters the Will into Book III registers, and returns the registered document.
+                      Visit the SRO office during your allotted slot with both witnesses, original Aadhaar cards, and passport photos. The SRO captures biometric thumbprints and digital photographs, enters the Will into Book III registers, and returns the filed paper.
                     </p>
                   </div>
                 </div>
@@ -1400,17 +1400,17 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>DOORSTEP CONVENIENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration in Pune
+                  7. Section 31 Doorstep SRO Filing in Pune
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting crowded government registry offices can be exhausting for senior citizens, hospitalized people, or those with mobility fights.
-                  <strong> Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the Will maker&apos;s home or hospital in special cases.
+                  <strong> Section 31 of the Filing Act, 1908</strong> allows the SRO to visit the Will maker&apos;s home or hospital in special cases.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-5">
                 <h3 className="text-lg font-bold text-slate-900">
-                  How Home Registration Works Across Pune &amp; PCMC:
+                  How Home Filing Works Across Pune &amp; PCMC:
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1418,9 +1418,9 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <span className="w-7 h-7 rounded-lg bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-xs">
                       1
                     </span>
-                    <h4 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h4>
+                    <h4 className="font-bold text-sm text-slate-900">Doctor Fitness Paper</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner examines the Will maker and issues a medical paper stating they are mentally sound but physically unable to travel.
+                      A filed MBBS practitioner examines the Will maker and issues a medical paper stating they are mentally sound but physically unable to travel.
                     </p>
                   </div>
 
@@ -1430,7 +1430,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">SRO Commission Form</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our legal team files a formal Section 31 petition before the Haveli Sub-Registrar along with the doctor&apos;s paper and pays the official government commission visit fee.
+                      Our legal team files a formal Section 31 petition before the Haveli SRO along with the doctor&apos;s paper and pays the official government commission visit fee.
                     </p>
                   </div>
 
@@ -1440,7 +1440,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Officer Home Visit</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar attends your Pune residence or hospital room with portable biometric kit, verifies witnesses, records fingerprints, and registers the Will.
+                      The SRO attends your Pune residence or hospital room with portable biometric kit, verifies witnesses, records fingerprints, and registers the Will.
                     </p>
                   </div>
                 </div>
@@ -1462,10 +1462,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>PREPARATION CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Needed Document Checklist for Pune Wills
+                  8. Needed Paper Checklist for Pune Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these verified records ready before signing and registering your Will in Pune:
+                  Keep these checked records ready before signing and registering your Will in Pune:
                 </p>
               </div>
 
@@ -1539,10 +1539,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                 {/* ASSET 2 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    PMC &amp; PCMC Municipal Name Change (Varasdar Nond)
+                    PMC &amp; PCMC City Name Change (Varasdar Nond)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Property tax records (*Milkat Kar*) must reflect the heir&apos;s name post-demise. A registered Will accompanied by an form for name change (*Farkhat* / *Varasdar Nond*) and Death Certificate ensures swift name transfer without costly court succession papers.
+                    Asset tax records (*Milkat Kar*) must reflect the heir&apos;s name post-demise. A filed Will accompanied by an form for name change (*Farkhat* / *Varasdar Nond*) and Death Paper ensures swift name transfer without costly court estate papers.
                   </p>
                 </div>
 
@@ -1552,7 +1552,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     Farm Land &amp; 7/12 Extract (Satbara Ferfar)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For family farmland or Gunthewari plots in Haveli, Mulshi, or Shirur, name change on the 7/12 extract (*Satbara Utara*) is carried out by the Talathi under the Maharashtra Land Revenue Code, 1966 using the registered Will as proof of succession.
+                    For family farmland or Gunthewari plots in Haveli, Mulshi, or Shirur, name change on the 7/12 extract (*Satbara Utara*) is carried out by the Talathi under the Maharashtra Land Revenue Code, 1966 using the filed Will as proof of estate.
                   </p>
                 </div>
 
@@ -1576,10 +1576,10 @@ export default function PuneLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Registration Charges &amp; Zero Stamp Duty in Pune
+                  10. Filing Charges &amp; Zero Stamp Duty in Pune
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property buy sale deeds that attract 6% to 7% stamp duty in Pune, Will registration is heavily subsidized by the Maharashtra State Government:
+                  Unlike asset buy sale deeds that attract 6% to 7% stamp duty in Pune, Will filing is heavily subsidized by the Maharashtra State Government:
                 </p>
               </div>
 
@@ -1592,8 +1592,8 @@ export default function PuneLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
                   <span className="text-2xl font-black text-slate-900">₹100</span>
-                  <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">SRO Registration Fee</h4>
-                  <p className="text-[11px] text-slate-500">Fixed legal government registration fee across Haveli</p>
+                  <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">SRO Filing Fee</h4>
+                  <p className="text-[11px] text-slate-500">Fixed legal government filing fee across Haveli</p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
@@ -1644,7 +1644,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Signing &amp; attestation guide</span>
+                        <span>Signing &amp; witness signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1700,7 +1700,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Full</span>
-                    <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Registration</h3>
+                    <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Filing</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Full turnkey service including IGR Maharashtra Sarita booking and doorstep help.
@@ -1728,7 +1728,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors text-center cursor-pointer"
                   >
-                    Request Registration
+                    Request Filing
                   </a>
                 </div>
               </div>
@@ -1745,7 +1745,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                   Frequently Asked Questions: Will Drafting in Pune
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key succession, registration, and property transfer questions for Pune residents:
+                  Clear answers to key estate, filing, and asset transfer questions for Pune residents:
                 </p>
               </div>
 
@@ -1805,16 +1805,16 @@ export default function PuneLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59, 61, 63, 67, 213):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs sound testamentary mind, voluntary consent, two-witness signing, and specifies that court probate is non-needed outside historical presidency limits.
+                    Governs sound Will mind, voluntary consent, two-witness signing, and specifies that court probate is non-needed outside historical presidency limits.
                   </p>
                 </div>
 
                 <div className="space-y-1 pt-2 border-t border-slate-100">
                   <span className="font-bold text-slate-900 block">
-                    Registration Act, 1908 (Sections 18(e), 31, 32, 51):
+                    Filing Act, 1908 (Sections 18(e), 31, 32, 51):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Establishes that Will registration is optional, authorizes Section 31 home visits for infirm or elderly testators, and mandates permanent custody in Book III archives.
+                    Establishes that Will filing is a choice, authorizes Section 31 home visits for infirm or elderly Will makers, and mandates permanent custody in Book III archives.
                   </p>
                 </div>
 
@@ -1823,7 +1823,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     Maharashtra Stamp Act (Article 64):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Grants complete exemption from ad-valorem stamp duty for Wills signed and presented for registration anywhere in the State of Maharashtra.
+                    Grants complete exemption from ad-valorem stamp duty for Wills signed and presented for filing anywhere in the State of Maharashtra.
                   </p>
                 </div>
 
@@ -1847,7 +1847,29 @@ export default function PuneLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1865,7 +1887,7 @@ export default function PuneLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Pune Will Drafting &amp; SRO Registration Architecture
+                Visual Blueprint: Pune Will Drafting &amp; SRO Filing Architecture
               </span>
               <button
                 type="button"

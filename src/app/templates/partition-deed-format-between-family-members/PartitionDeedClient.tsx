@@ -51,17 +51,17 @@ import {
 
 // Table of Contents Items (matching H2 IDs, <= 70 chars, 0 em-dashes)
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Rules: Partition Deeds" },
-  { id: "interactive-calculator", label: "2. Interactive Owelty & UDS Tool" },
-  { id: "comparison-table", label: "3. Partition Deed vs Family Settlement" },
+  { id: "statutory-foundation", label: "1. Legal Rules: Split Deeds" },
+  { id: "interactive-calculator", label: "2. Free Owelty & UDS Tool" },
+  { id: "comparison-table", label: "3. Split Deed vs Family Deal" },
   { id: "uds-floor-demarcation", label: "4. Floor-Wise Demarcation & UDS" },
   { id: "owelty-clauses", label: "5. Owelty Equalization & Tax Rules" },
   { id: "stamp-duty-guide", label: "6. State-Wise Stamp Duty Guide" },
-  { id: "partition-deed-template", label: "7. Registered Partition Deed Format" },
-  { id: "sro-registration-sop", label: "8. SRO Registration SOP & Checklist" },
-  { id: "coparcenary-rights", label: "9. Coparcenary Rights: Daughters & HUF" },
+  { id: "partition-deed-template", label: "7. Filed Split Deed Format" },
+  { id: "sro-registration-sop", label: "8. SRO Filing SOP & Checklist" },
+  { id: "coparcenary-rights", label: "9. Joint Rights: Daughters & HUF" },
   { id: "case-studies", label: "10. Real Case Studies: Delhi & Bengaluru" },
-  { id: "statutory-citations", label: "11. Statutory Citations & Advocate Profile" },
+  { id: "statutory-citations", label: "11. Legal Citations & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
 ];
 
@@ -108,44 +108,44 @@ const STATE_STAMP_RATES: Record<string, { label: string; ratePercent: number; fi
 
 const FAQS = [
   {
-    q: "What is a Partition Deed under Indian property law?",
-    a: "A Partition Deed is an official legal instrument governed by Section 2(15) of the Indian Stamp Act, 1899 and Section 17 of the Registration Act, 1908. It legally divides jointly owned or ancestral property among co-owners or legal heirs, severing joint title and converting joint tenancy into separate, distinct, and individual ownership.",
+    q: "What is a Split Deed under Indian property law?",
+    a: "A Split Deed is an official legal instrument governed by Section 2(15) of the Indian Stamp Act, 1899 and Section 17 of the Filing Act, 1908. It legally divides jointly owned or family asset among co-owners or legal heirs, severing joint title and converting joint tenancy into separate, distinct, and single ownership.",
   },
   {
-    q: "Is registration of a Partition Deed mandatory in India?",
-    a: "Yes. Under Section 17(1)(b) of the Registration Act, 1908, any non-testamentary instrument that creates, declares, assigns, limits, or extinguishes any right, title, or interest in immovable property valued over ₹100 must be registered with the Sub-Registrar. Under Section 49, an unregistered partition deed cannot affect title or be admitted as evidence of partition.",
+    q: "Is filing of a Split Deed needed in India?",
+    a: "Yes. Under Section 17(1)(b) of the Filing Act, 1908, any non-Will instrument that creates, declares, assigns, limits, or extinguishes any right, title, or interest in land asset valued over ₹100 must be filed with the SRO. Under Section 49, an plain split deed cannot affect title or be admitted as evidence of split.",
   },
   {
-    q: "How does a Partition Deed differ from a Family Settlement Agreement?",
-    a: "A Partition Deed operates in praesenti, creating new separate legal titles on the spot and requiring full registration and statutory stamp duty. In contrast, a Memorandum of Family Settlement (as upheld in Kale v. Dy. Director of Consolidation) merely records a past oral arrangement, settling antecedent claims without creating new title, often requiring lower stamp duty.",
+    q: "How does a Split Deed differ from a Family Deal Pact?",
+    a: "A Split Deed operates in praesenti, creating new separate legal titles on the spot and requiring full filing and legal stamp duty. In contrast, a Memorandum of Family Deal (as upheld in Kale v. Dy. Director of Consolidation) merely records a past oral arrangement, settling antecedent claims without creating new title, often requiring lower stamp duty.",
   },
   {
-    q: "How are multi-story residential houses divided among brothers?",
-    a: "When dividing a multi-floor residential building, the deed must incorporate four specific schedules: Schedule A for the entire land and building, Schedule B allocating a specific floor and proportionate Undivided Share of Land (UDS) to the first brother, Schedule C allocating another floor and UDS to the second brother, and Schedule D governing shared easements like staircases, terrace access, and water tanks.",
+    q: "How are multi-story home houses divided among brothers?",
+    a: "When dividing a multi-floor home building, the deed must incorporate four specific schedules: Schedule A for the entire land and building, Schedule B allocating a specific floor and proportionate Undivided Share of Land (UDS) to the first brother, Schedule C allocating another floor and UDS to the second brother, and Schedule D governing shared easements like staircases, terrace access, and water tanks.",
   },
   {
-    q: "What is an Owelty clause in a partition deed?",
-    a: "An Owelty (or Owlat) clause provides for monetary equalization when immovable properties cannot be divided into mathematically equal portions. The co-sharer receiving a more valuable physical portion (e.g. Ground Floor or commercial frontage) pays an agreed sum of cash compensation to equalize the shares, which is completely tax-exempt under Section 47(i) of the Income Tax Act.",
+    q: "What is an Owelty clause in a split deed?",
+    a: "An Owelty (or Owlat) clause provides for monetary equalization when land assets cannot be divided into mathematically equal portions. The co-sharer receiving a more valuable physical portion (e.g. Ground Floor or shop frontage) pays an agreed sum of cash compensation to equalize the shares, which is completely tax-exempt under Section 47(i) of the Income Tax Act.",
   },
   {
-    q: "Do daughters have equal coparcenary rights in a family partition deed?",
-    a: "Yes. Under the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal coparcenary rights by birth in ancestral property under Section 6 of the Hindu Succession Act. A family partition deed that excludes daughters without their registered Relinquishment Deed (Haq Tyag) is voidable and can be set aside by civil courts.",
+    q: "Do daughters have equal joint rights in a family split deed?",
+    a: "Yes. Under the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal joint rights by birth in family asset under Section 6 of the Hindu Succession Act. A family split deed that excludes daughters without their filed Release Deed (Haq Tyag) is voidable and can be set aside by civil courts.",
   },
   {
-    q: "How much stamp duty is payable on a partition deed between family members?",
-    a: "Stamp duty varies by state. Most states offer concessional rates for partition deeds among blood relatives. For example, Maharashtra levies a nominal duty of ₹200 to ₹500, Delhi charges 1% to 2%, Karnataka applies slab-based flat duties (₹1,000 to ₹5,000 for urban family partitions), and Uttar Pradesh charges 1% of the value of the separated shares.",
+    q: "How much stamp duty is payable on a split deed between family members?",
+    a: "Stamp duty varies by state. Most states offer concessional rates for split deeds among blood relatives. For example, Maharashtra levies a nominal duty of ₹200 to ₹500, Delhi charges 1% to 2%, Karnataka applies slab-based flat duties (₹1,000 to ₹5,000 for urban family partitions), and Uttar Pradesh charges 1% of the value of the separated shares.",
   },
   {
-    q: "Does executing a partition deed attract capital gains tax?",
-    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets on the total or partial partition of a Hindu Undivided Family (HUF) or among co-owners is expressly excluded from the definition of transfer under Section 45. No capital gains tax or income tax is payable on a genuine partition.",
+    q: "Does signing a split deed attract capital gains tax?",
+    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any split of capital assets on the total or partial split of a Hindu Undivided Family (HUF) or among co-owners is expressly excluded from the definition of transfer under Section 45. No capital gains tax or income tax is payable on a genuine split.",
   },
   {
-    q: "What happens if one brother refuses to sign the partition deed?",
-    a: "If a co-owner refuses to execute a mutual partition deed, the remaining co-sharers must file a Civil Partition Suit under Order XX Rule 18 of the Code of Civil Procedure (CPC) in the jurisdictional civil court. The court will determine individual shares in a Preliminary Decree and physically divide the assets through a Court Commissioner in a Final Decree.",
+    q: "What happens if one brother refuses to sign the split deed?",
+    a: "If a co-owner refuses to execute a mutual split deed, the remaining co-sharers must file a Civil Split Suit under Order XX Rule 18 of the Code of Civil Step (CPC) in the local civil court. The court will determine single shares in a Preliminary Decree and physically divide the assets through a Court Commissioner in a Final Decree.",
   },
   {
-    q: "What documents are required to register a partition deed at the Sub-Registrar Office?",
-    a: "You require: (1) Original parent title deeds or registered sale deeds of the property, (2) Non-judicial e-stamp paper with paid duty, (3) Architectural site plan showing floor-wise demarcation, (4) Municipal tax paid receipts and Khata/mutation extract, (5) Non-Encumbrance Certificate (EC), and (6) Original Aadhaar and PAN cards of all co-sharers and two independent adult witnesses.",
+    q: "What papers are required to register a split deed at the SRO office?",
+    a: "You require: (1) Original parent title deeds or filed sale deeds of the asset, (2) Non-judicial e-stamp paper with paid duty, (3) Architectural site plan showing floor-wise demarcation, (4) City tax paid receipts and Khata/name change extract, (5) Non-Encumbrance Paper (EC), and (6) Original Aadhaar and PAN cards of all co-sharers and two independent adult witnesses.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function PartitionDeedClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
@@ -389,14 +389,14 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Partition Deed Format for Family Property Division
+            Split Deed Format for Family Asset Division
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download lawyer-vetted partition deed formats between brothers and legal heirs in India.
+            Download lawyer-vetted split deed formats between brothers and legal heirs in India.
             Master floor-wise Schedule A to D demarcation, Undivided Share of Land (UDS) allocation,
-            and tax-neutral Owelty cash equalization under Section 17 of the Registration Act.
+            and tax-neutral Owelty cash equalization under Section 17 of the Filing Act.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -406,7 +406,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4" />
-              <span>Get Partition Deed Format</span>
+              <span>Get Split Deed Format</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -414,14 +414,14 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
             <Link
               href="/services/family-settlement-deed-lawyer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm sm:text-base border border-white/20 transition-colors"
             >
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Consult Partition Advocate</span>
+              <span>Consult Split Lawyer</span>
             </Link>
           </div>
         </div>
@@ -500,10 +500,10 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Registration Act 1908 s. 17, Indian Stamp Act 1899 s. 2(15),
+                Governed under Filing Act 1908 s. 17, Indian Stamp Act 1899 s. 2(15),
                 Transfer of Property Act 1882, Hindu Succession Act 1956 s. 6, and Income Tax Act
                 1961 s. 47(i).
               </p>
@@ -516,8 +516,8 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>Deed Formatting Guide</span>
               </div>
               <p className="text-[11px] text-slate-600 leading-relaxed">
-                Need to print this deed format for Sub-Registrar execution? Copy the vetted template or
-                schedule an advocate review for local municipal compliance.
+                Need to print this deed format for SRO signing? Copy the vetted template or
+                schedule an lawyer review for local city compliance.
               </p>
               <a
                 href="#partition-deed-template"
@@ -549,7 +549,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <p className="text-xs sm:text-sm font-semibold text-slate-700 flex items-center justify-center gap-2">
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>
-                    Official Registered Partition Deed Anatomy: Section 17 Registration Act, Floor-Wise UDS Demarcation &amp; Owelty Equalization
+                    Official Filed Split Deed Anatomy: Section 17 Filing Act, Floor-Wise UDS Demarcation &amp; Owelty Equalization
                   </span>
                 </p>
               </div>
@@ -565,16 +565,16 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Operative in Praesenti:</strong> Unlike a mere memorandum, a registered Partition
-                    Deed extinguishes joint ownership immediately and vests distinct, independent title to
+                    <strong>Operative in Praesenti:</strong> Unlike a mere memorandum, a filed Split
+                    Deed extinguishes joint ownership right away and vests distinct, independent title to
                     each co-sharer.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory SRO Registration:</strong> Under Section 17 of the Registration Act, 1908,
-                    an unregistered partition deed cannot convey title, support municipal mutation, or satisfy
+                    <strong>Needed SRO Filing:</strong> Under Section 17 of the Filing Act, 1908,
+                    an plain split deed cannot convey title, support city name change, or satisfy
                     bank loan scrutiny.
                   </span>
                 </li>
@@ -596,9 +596,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Coparcenary Parity for Daughters:</strong> Under the Supreme Court ruling in <em>Vineeta Sharma (2020)</em>,
-                    daughters are equal coparceners by birth. Any partition excluding daughters without a registered
-                    Relinquishment Deed is voidable.
+                    <strong>Joint Parity for Daughters:</strong> Under the Supreme Court ruling in <em>Vineeta Sharma (2020)</em>,
+                    daughters are equal coparceners by birth. Any split excluding daughters without a filed
+                    Release Deed is voidable.
                   </span>
                 </li>
               </ul>
@@ -611,33 +611,33 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Partition Deeds Under Indian Law
+                1. Legal Rules: Split Deeds Under Indian Law
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When brothers, sisters, or family members inherit real estate jointly from parents or ancestors,
-                  they hold the property as co-owners or coparceners. While joint enjoyment is common initially,
-                  practical challenges quickly arise when family members wish to construct additional floors,
+                  they hold the asset as co-owners or coparceners. While joint enjoyment is common initially,
+                  practical fights quickly arise when family members wish to construct additional floors,
                   obtain independent home loans, mortgage their share, or sell their portion.
                 </p>
                 <p>
-                  In Indian jurisprudence, an <strong>Instrument of Partition</strong> is governed under{" "}
-                  <strong>Section 2(15) of the Indian Stamp Act, 1899</strong>. It is defined as any non-testamentary
-                  instrument whereby co-owners divide or agree to divide property in severalty. Once executed, the
-                  joint title dissolves into individual, exclusive titles.
+                  In Indian jurisprudence, an <strong>Instrument of Split</strong> is governed under{" "}
+                  <strong>Section 2(15) of the Indian Stamp Act, 1899</strong>. It is defined as any non-Will
+                  instrument whereby co-owners divide or agree to divide asset in severalty. Once signed, the
+                  joint title dissolves into single, exclusive titles.
                 </p>
                 <p>
-                  Under <strong>Section 17(1)(b) of the Registration Act, 1908</strong>, registration of any
+                  Under <strong>Section 17(1)(b) of the Filing Act, 1908</strong>, registration of any
                   instrument that creates, declares, assigns, limits, or extinguishes rights in immovable property
                   exceeding ₹100 in value is strictly compulsory. If a partition deed is left unregistered,{" "}
-                  <strong>Section 49 of the Registration Act</strong> bars it from affecting the property or being
+                  <strong>Section 49 of the Filing Act</strong> bars it from affecting the asset or being
                   received as evidence of any transaction affecting the title.
                 </p>
                 <p>
-                  Consequently, an unregistered partition agreement cannot be used to obtain a separate municipal
+                  So, an plain split pact cannot be used to obtain a separate city
                   Khata, separate electricity or water meters, building plan approvals, or bank loans. To establish
-                  ironclad legal ownership, all co-sharers must execute a formal partition deed before the local
-                  Sub-Registrar.
+                  ironclad legal ownership, all co-sharers must execute a formal split deed before the local
+                  SRO.
                 </p>
               </div>
             </section>
@@ -649,10 +649,10 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>INTERACTIVE PARTITION &amp; OWELTY CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Partition &amp; Owelty Equalization Tool
+                2. Free Split &amp; Owelty Equalization Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use this statutory partition calculator to allocate multi-floor or land shares among brothers,
+                Use this legal split tool to allocate multi-floor or land shares among brothers,
                 calculate the required Undivided Share of Land (UDS) percentage, determine Owelty equalization
                 cash settlements, and estimate state stamp duty.
               </p>
@@ -682,7 +682,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Registration State</span>
+                      <span>Filing State</span>
                     </label>
                     <select
                       value={selectedState}
@@ -701,7 +701,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Property Structure</span>
+                      <span>Asset Structure</span>
                     </label>
                     <select
                       value={propertyStructure}
@@ -710,7 +710,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                     >
                       <option value="multi_floor">Multi-Story House (Floor-Wise)</option>
                       <option value="plots">Land / Plot Parcels</option>
-                      <option value="commercial">Commercial / Mixed-Use</option>
+                      <option value="commercial">Shop / Mixed-Use</option>
                     </select>
                   </div>
                 </div>
@@ -743,7 +743,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 {/* Physical Allotment Sliders for each brother */}
                 <div className="space-y-4 pt-2">
                   <div className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center justify-between">
-                    <span>Individual Floor / Share Valuations</span>
+                    <span>Single Floor / Share Valuations</span>
                     <span className="text-emerald-700 font-semibold text-xs">
                       Statutory Parity per Share: {formatINR(statutoryEntitlement)}
                     </span>
@@ -897,12 +897,12 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>LEGAL INSTRUMENT COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Partition Deed vs Family Settlement Agreement
+                3. Split Deed vs Family Deal Pact
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Choosing the wrong legal instrument can lead to severe stamp duty penalties, registration
-                rejections, or title disputes. Review how a registered Partition Deed compares to a Family
-                Settlement Agreement and a Relinquishment Deed:
+                Choosing the wrong legal instrument can lead to severe stamp duty penalties, filing
+                rejections, or title fights. Review how a filed Split Deed compares to a Family
+                Deal Pact and a Release Deed:
               </p>
 
               {/* Table Container */}
@@ -911,9 +911,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                   <thead>
                     <tr className="bg-slate-50 border-b border-slate-200 text-slate-900 font-extrabold">
                       <th className="py-3.5 px-4">Key Legal Feature</th>
-                      <th className="py-3.5 px-4 text-[#C65378]">Registered Partition Deed</th>
-                      <th className="py-3.5 px-4">Family Settlement Agreement</th>
-                      <th className="py-3.5 px-4">Relinquishment Deed (Haq Tyag)</th>
+                      <th className="py-3.5 px-4 text-[#C65378]">Filed Split Deed</th>
+                      <th className="py-3.5 px-4">Family Deal Pact</th>
+                      <th className="py-3.5 px-4">Release Deed (Haq Tyag)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -924,15 +924,15 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                       <td className="py-3 px-4">Immediate release of undivided share</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Registration Mandatory?</td>
-                      <td className="py-3 px-4 font-bold text-rose-700">YES (Section 17 Registration Act)</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Filing Needed?</td>
+                      <td className="py-3 px-4 font-bold text-rose-700">YES (Section 17 Filing Act)</td>
                       <td className="py-3 px-4">NO (If drafted as past memorandum)</td>
-                      <td className="py-3 px-4 font-bold text-rose-700">YES (Section 17 Registration Act)</td>
+                      <td className="py-3 px-4 font-bold text-rose-700">YES (Section 17 Filing Act)</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Applicable Stamp Duty</td>
                       <td className="py-3 px-4">State concessional rates (0.5% - 2% or flat fee)</td>
-                      <td className="py-3 px-4">Standard agreement duty (₹100 to ₹500)</td>
+                      <td className="py-3 px-4">Standard pact duty (₹100 to ₹500)</td>
                       <td className="py-3 px-4">Concessional blood relative duty</td>
                     </tr>
                     <tr>
@@ -942,21 +942,21 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                       <td className="py-3 px-4">Extinguishes share of releasing co-heir</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Sub-Registrar Mutation</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">SRO Name Change</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">Seamless floor-wise Khata bifurcation</td>
-                      <td className="py-3 px-4">Requires civil court decree or consent affidavit</td>
-                      <td className="py-3 px-4">Straightforward mutation to remaining heirs</td>
+                      <td className="py-3 px-4">Requires civil court decree or consent sworn note</td>
+                      <td className="py-3 px-4">Straightforward name change to remaining heirs</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Bank Home Loan Approval</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">100% accepted by all scheduled banks</td>
-                      <td className="py-3 px-4 text-rose-700">Banks frequently reject unregistered memos</td>
-                      <td className="py-3 px-4">Accepted once registered</td>
+                      <td className="py-3 px-4 text-rose-700">Banks frequently reject plain memos</td>
+                      <td className="py-3 px-4">Accepted once filed</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Capital Gains Tax</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">Zero (Exempt under Section 47(i))</td>
-                      <td className="py-3 px-4 font-bold text-emerald-700">Zero (Family settlement is not a transfer)</td>
+                      <td className="py-3 px-4 font-bold text-emerald-700">Zero (Family deal is not a transfer)</td>
                       <td className="py-3 px-4">Zero if without monetary consideration</td>
                     </tr>
                   </tbody>
@@ -975,13 +975,13 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The single biggest error found in online partition deed templates is the total absence of
-                  statutory schedules demarcating <strong>Undivided Share of Land (UDS)</strong> and floor boundaries.
-                  Sub-Registrars across Indian states routinely issue defect notices or refuse registration when a
+                  The single biggest error found in online split deed templates is the total absence of
+                  legal schedules demarcating <strong>Undivided Share of Land (UDS)</strong> and floor boundaries.
+                  Sub-Registrars across Indian states routinely issue defect notices or refuse filing when a
                   deed merely states &ldquo;Brother A gets the ground floor and Brother B gets the first floor.&rdquo;
                 </p>
                 <p>
-                  To secure an unobstructed, mortgageable title, a registered partition deed for a multi-story
+                  To secure an unobstructed, mortgageable title, a filed split deed for a multi-story
                   building must contain <strong>four distinct schedules</strong>:
                 </p>
               </div>
@@ -991,7 +991,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-black uppercase text-[#C65378]">Schedule A</span>
-                    <span className="text-[11px] font-bold text-slate-500">Entire Joint Property</span>
+                    <span className="text-[11px] font-bold text-slate-500">Entire Joint Asset</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">
                     Total Plot Dimensions &amp; Four Boundaries
@@ -1059,18 +1059,18 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <p>
                   In practice, real estate rarely divides into mathematically identical shares. For instance, in a
                   two-story house, the Ground Floor typically carries a significantly higher market value than the
-                  First or Second Floor due to independent garden space, accessibility, or commercial frontage.
+                  First or Second Floor due to independent garden space, accessibility, or shop frontage.
                 </p>
                 <p>
-                  Under Indian law, this imbalance is resolved through an <strong>Owelty of Partition</strong> (or Owlat).
+                  Under Indian law, this imbalance is resolved through an <strong>Owelty of Split</strong> (or Owlat).
                   As affirmed by the Supreme Court of India in <em>T.S. Swaminatha Odayar v. Official Receiver of West Tanjore</em>,
                   an Owelty payment represents the financial difference required to balance unequal physical portions.
-                  The court held that Owelty creates a legal charge on the higher-valued property until paid.
+                  The court held that Owelty creates a legal charge on the higher-valued asset until paid.
                 </p>
                 <p>
-                  Crucially, an Owelty payment does <strong>NOT</strong> convert the partition into a sale or transfer.
-                  Under <strong>Section 47(i) of the Income Tax Act, 1961</strong>, any distribution of capital assets
-                  on partition is expressly excluded from capital gains taxation. Both the Income Tax Appellate Tribunal (ITAT)
+                  Crucially, an Owelty payment does <strong>NOT</strong> convert the split into a sale or transfer.
+                  Under <strong>Section 47(i) of the Income Tax Act, 1961</strong>, any split of capital assets
+                  on split is expressly excluded from capital gains taxation. Both the Income Tax Appellate Tribunal (ITAT)
                   and High Courts have confirmed that Owelty cash received by a co-sharer is purely a capital adjustment
                   and attracts zero capital gains tax or income tax.
                 </p>
@@ -1081,7 +1081,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                     <CheckCheck className="w-4 h-4" />
-                    <span>Statutory Owelty Clause Formulation</span>
+                    <span>Legal Owelty Clause Formulation</span>
                   </div>
                   <button
                     onClick={copyOweltyClauseToClipboard}
@@ -1101,9 +1101,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                   </button>
                 </div>
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 font-mono text-[11px] leading-relaxed text-slate-800 overflow-x-auto">
-                  &ldquo;AND WHEREAS, by reason of the immovable properties being incapable of partition into mathematically
+                  &ldquo;AND WHEREAS, by reason of the land assets being incapable of split into mathematically
                   equal portions, the Party of the First Part agrees to pay an equalization amount of Rs. [Amount]/- (Owelty
-                  of Partition) to the Party of the Second Part vide Cheque / RTGS No. [UTR], receipt whereof is hereby
+                  of Split) to the Party of the Second Part vide Cheque / RTGS No. [UTR], receipt whereof is hereby
                   acknowledged. It is agreed that this payment is an adjustment of co-ownership rights under Section 2(15) of
                   the Indian Stamp Act and non-taxable under Section 47(i) of the Income Tax Act, 1961.&rdquo;
                 </div>
@@ -1117,11 +1117,11 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>STATE REVENUE LAWS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. State-Wise Stamp Duty &amp; SRO Registration Charges
+                6. State-Wise Stamp Duty &amp; SRO Filing Charges
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Under the Indian Constitution, Stamp Duty on property instruments falls under the concurrent and state
-                lists. Most states provide significant concessions for partition deeds executed among blood relatives:
+                Under the Indian Constitution, Stamp Duty on asset instruments falls under the concurrent and state
+                lists. Most states provide significant concessions for split deeds signed among blood relatives:
               </p>
 
               {/* State Rate Cards */}
@@ -1143,7 +1143,7 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
                 <span>
                   <strong>Important Rule on Separated Shares:</strong> In most states (including UP, Maharashtra, and Delhi),
-                  stamp duty is calculated not on the total property value, but on the <em>separated shares</em> (i.e. the total
+                  stamp duty is calculated not on the total asset value, but on the <em>separated shares</em> (i.e. the total
                   market value minus the largest allotted share). This provides substantial cost savings.
                 </span>
               </div>
@@ -1156,11 +1156,11 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <span>LAWYER-VETTED LEGAL DRAFT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Complete Registered Partition Deed Format Template
+                7. Complete Filed Split Deed Format Template
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is the complete, Sub-Registrar compliant Partition Deed format designed specifically for brothers
-                and family members dividing multi-floor residential property or plots:
+                Below is the complete, SRO compliant Split Deed format designed mainly for brothers
+                and family members dividing multi-floor home asset or plots:
               </p>
 
               {/* Template Container Box */}
@@ -1261,7 +1261,7 @@ WITNESSES:
                 <span>PROCEDURAL STEP-BY-STEP PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Sub-Registrar Office Execution &amp; Registration SOP
+                8. SRO office Signing &amp; Filing SOP
               </h3>
               <div className="space-y-4">
                 {[
@@ -1273,27 +1273,27 @@ WITNESSES:
                   {
                     step: 2,
                     title: "Purchase of Non-Judicial E-Stamp Paper",
-                    desc: "Calculate the exact stamp duty on the separated shares under your state's Stamp Act and procure non-judicial e-stamp certificates from authorized SHCIL centers or state treasury portals.",
+                    desc: "Calculate the exact stamp duty on the separated shares under your state's Stamp Act and procure non-judicial e-stamp papers from authorized SHCIL centers or state treasury portals.",
                   },
                   {
                     step: 3,
                     title: "Title & Municipal Verification",
-                    desc: "Procure the parent sale deed, death certificate of the deceased ancestor, Surviving Member Certificate, up-to-date property tax receipts, and a 13-year Non-Encumbrance Certificate (EC).",
+                    desc: "Procure the parent sale deed, death paper of the deceased ancestor, Surviving Member Paper, up-to-date asset tax receipts, and a 13-year Non-Encumbrance Paper (EC).",
                   },
                   {
                     step: 4,
                     title: "SRO Online Appointment Booking",
-                    desc: "Upload the draft deed and party KYC on the state registration portal (such as e-Sub Registrar Delhi, IGR Maharashtra, Kaveri Karnataka, or IGRS UP) and schedule an execution slot.",
+                    desc: "Upload the draft deed and party KYC on the state filing portal (such as e-Sub Registrar Delhi, IGR Maharashtra, Kaveri Karnataka, or IGRS UP) and schedule an signing slot.",
                   },
                   {
                     step: 5,
                     title: "In-Person Appearance & Biometric Capture",
-                    desc: "All co-sharers and two independent adult witnesses must appear physically before the Sub-Registrar with original Aadhaar cards, PAN cards, and passport photographs for biometric fingerprint scanning.",
+                    desc: "All co-sharers and two independent adult witnesses must appear physically before the SRO with original Aadhaar cards, PAN cards, and passport photographs for biometric fingerprint scanning.",
                   },
                   {
                     step: 6,
                     title: "Collection of Registered Deed & Municipal Mutation",
-                    desc: "Collect the registered deed with SRO endorsement seal. Proceed to file for independent Khata bifurcation and separate municipal property tax assessments before the Municipal Corporation / Tehsildar.",
+                    desc: "Collect the filed deed with SRO endorsement seal. Proceed to file for independent Khata bifurcation and separate city asset tax assessments before the City City Board / Tehsildar.",
                   },
                 ].map((item) => (
                   <div
@@ -1315,10 +1315,10 @@ WITNESSES:
               <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex items-center justify-between">
                 <div>
                   <div className="font-extrabold text-slate-900 text-xs">
-                    Need the Complete SRO Registration Checklist?
+                    Need the Complete SRO Filing Checklist?
                   </div>
                   <div className="text-[11px] text-slate-500">
-                    Includes all 10 statutory documents required for hassle-free Sub-Registrar endorsement.
+                    Includes all 10 legal papers required for hassle-free SRO endorsement.
                   </div>
                 </div>
                 <button
@@ -1347,37 +1347,37 @@ WITNESSES:
                 <span>LANDMARK PRECEDENTS &amp; DAUGHTER RIGHTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Coparcenary Rights: Daughters, HUF &amp; Minors
+                9. Joint Rights: Daughters, HUF &amp; Minors
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A critical legal risk that invalidates dozens of family partition deeds in civil court is the
+                  A critical legal risk that invalidates dozens of family split deeds in civil court is the
                   unlawful exclusion of daughters or sisters.
                 </p>
                 <p>
                   In the landmark ruling <strong>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1</strong>, a three-judge
                   bench of the Supreme Court settled the law definitively: under Section 6 of the Hindu Succession
                   Act, daughters are coparceners by birth with the same rights and liabilities as sons. The court
-                  ruled that this right is retroactive, meaning a daughter holds coparcenary rights regardless of
+                  ruled that this right is retroactive, meaning a daughter holds joint rights regardless of
                   whether her father was alive on September 9, 2005 (the date the amendment came into force).
                 </p>
                 <p>
-                  The Supreme Court further held that any oral family partition or unregistered memorandum executed
+                  The Supreme Court further held that any oral family split or plain memorandum signed
                   post-December 20, 2004 that excludes a daughter has no legal standing. Therefore:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-700">
                   <li>
                     <strong>Daughters Must Be Parties:</strong> All surviving daughters (married or unmarried) must
-                    be named parties and sign the registered Partition Deed.
+                    be named parties and sign the filed Split Deed.
                   </li>
                   <li>
-                    <strong>Alternative Relinquishment Deed:</strong> If a sister does not desire a physical share in the
-                    property, she must execute and register a separate <strong>Relinquishment Deed (Haq Tyag)</strong> or
-                    Release Deed before the Partition Deed is registered. An informal NOC or affidavit is legally insufficient.
+                    <strong>Alternative Release Deed:</strong> If a sister does not desire a physical share in the
+                    asset, she must execute and register a separate <strong>Release Deed (Haq Tyag)</strong> or
+                    Release Deed before the Split Deed is filed. An informal NOC or sworn note is legally insufficient.
                   </li>
                   <li>
-                    <strong>Minor Coparceners:</strong> If any co-sharer is a minor, the partition must be fair and
-                    equitable. Under Section 8 of the Hindu Minority and Guardianship Act, 1956, any partition prejudicial
+                    <strong>Minor Coparceners:</strong> If any co-sharer is a minor, the split must be fair and
+                    equitable. Under Section 8 of the Hindu Minority and Child Care Act, 1956, any split prejudicial
                     to a minor can be challenged within 3 years of attaining majority.
                   </li>
                 </ul>
@@ -1397,34 +1397,34 @@ WITNESSES:
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-[#C65378]">
                     <span>CASE STUDY 1: GREATER KAILASH, NEW DELHI</span>
-                    <span className="text-slate-500 font-semibold">Multi-Floor Residential House</span>
+                    <span className="text-slate-500 font-semibold">Multi-Floor Home House</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">
                     Two Brothers Dividing a 3-Floor House with Terrace Rights
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Two brothers inherited a 300 sq. yd. plot with Ground, First, and Second floors in South Delhi.
-                    Brother A took the Ground Floor (valuation ₹3.50 Cr) and Brother B took the First and Second
-                    Floors (combined valuation ₹4.00 Cr). By executing a registered Partition Deed with Schedule A to E,
+                    Brother A took the Ground Floor (price check ₹3.50 Cr) and Brother B took the First and Second
+                    Floors (combined price check ₹4.00 Cr). By signing a filed Split Deed with Schedule A to E,
                     Brother B paid an Owelty of ₹25 Lakhs to Brother A. Both obtained separate SDMC water meters,
-                    independent electricity meters, and bifurcated property tax IDs without litigation.
+                    independent electricity meters, and bifurcated asset tax IDs without court fights.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-[#C65378]">
                     <span>CASE STUDY 2: WHITEFIELD, BENGALURU</span>
-                    <span className="text-slate-500 font-semibold">Ancestral Land Division</span>
+                    <span className="text-slate-500 font-semibold">Family Land Division</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">
-                    Overcoming Sister Exclusion Dispute via Relinquishment
+                    Overcoming Sister Exclusion Fight via Release
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Three brothers in Bengaluru attempted to partition 2 acres of ancestral land among themselves,
-                    excluding their two married sisters. A scheduled bank rejected their construction loan application
-                    citing <em>Vineeta Sharma (2020)</em>. With AMA Legal Solutions, the family executed registered
-                    Relinquishment Deeds for the sisters with fair monetary consideration, followed by a registered
-                    Partition Deed under Article 39 of Karnataka Stamp Act, clearing the title for bank disbursement.
+                    Three brothers in Bengaluru attempted to split 2 acres of family land among themselves,
+                    excluding their two married sisters. A scheduled bank rejected their construction loan form
+                    citing <em>Vineeta Sharma (2020)</em>. With AMA Legal Solutions, the family signed filed
+                    Release Deeds for the sisters with fair monetary consideration, followed by a filed
+                    Split Deed under Article 39 of Karnataka Stamp Act, clearing the title for bank disbursement.
                   </p>
                 </div>
               </div>
@@ -1437,27 +1437,27 @@ WITNESSES:
                 <span>LEGAL CITATIONS &amp; DESK</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Statutory Citations &amp; Advocate Profile
+                11. Legal Citations &amp; Lawyer Profile
               </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="font-extrabold text-slate-900 text-sm">
-                  Primary Governing Provisions of Indian Law:
+                  Primary Governing Rules of Indian Law:
                 </div>
                 <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
                   <li>
-                    <strong>Registration Act, 1908 s. 17(1)(b) &amp; s. 49:</strong> Mandatory registration of
-                    instruments creating or extinguishing title to immovable property.
+                    <strong>Filing Act, 1908 s. 17(1)(b) &amp; s. 49:</strong> Needed filing of
+                    instruments creating or extinguishing title to land asset.
                   </li>
                   <li>
-                    <strong>Indian Stamp Act, 1899 s. 2(15):</strong> Statutory definition of &ldquo;Instrument of
-                    Partition&rdquo; and chargeable stamp duty principles.
+                    <strong>Indian Stamp Act, 1899 s. 2(15):</strong> Legal definition of &ldquo;Instrument of
+                    Split&rdquo; and chargeable stamp duty principles.
                   </li>
                   <li>
-                    <strong>Hindu Succession Act, 1956 s. 6 &amp; s. 8:</strong> Coparcenary rights of daughters by
-                    birth and Class I legal heir intestate succession.
+                    <strong>Hindu Succession Act, 1956 s. 6 &amp; s. 8:</strong> Joint rights of daughters by
+                    birth and Class I legal heir no-Will estate.
                   </li>
                   <li>
-                    <strong>Income Tax Act, 1961 s. 47(i):</strong> Total exemption of property partition and Owelty
+                    <strong>Income Tax Act, 1961 s. 47(i):</strong> Total exemption of asset split and Owelty
                     equalization payments from capital gains tax.
                   </li>
                   <li>
@@ -1471,19 +1471,19 @@ WITNESSES:
                     href="/tools/capital-gains-tax-calculator-inherited-property"
                     className="px-3 py-1.5 rounded-lg bg-rose-50 text-[#C65378] hover:bg-rose-100 font-bold"
                   >
-                    Inherited Property Tax Calculator
+                    Inherited Asset Tax Tool
                   </Link>
                   <Link
                     href="/services/family-settlement-deed-lawyer"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-bold"
                   >
-                    Family Settlement Deed Counsel
+                    Family Deal Deed Counsel
                   </Link>
                   <Link
                     href="/templates/family-settlement-agreement-format-india"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-bold"
                   >
-                    Family Settlement Agreement Template
+                    Family Deal Pact Template
                   </Link>
                   <Link
                     href="/templates/gift-deed-format-blood-relatives-india"
@@ -1501,7 +1501,7 @@ WITNESSES:
                     href="/services/will-registration"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-bold"
                   >
-                    Sub-Registrar Registration Desk
+                    SRO Filing Desk
                   </Link>
                 </div>
               </div>
@@ -1514,7 +1514,7 @@ WITNESSES:
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Frequently Asked Questions: Partition Deeds
+                12. Frequently Asked Questions: Split Deeds
               </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
@@ -1545,7 +1545,29 @@ WITNESSES:
                 })}
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1558,21 +1580,21 @@ WITNESSES:
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian partition jurisprudence, coparcenary title scrutiny, Sub-Registrar
-                conveyancing, and family property dispute settlements at AMA Legal Solutions.
+                Expert in Indian partition jurisprudence, joint title scrutiny, SRO
+                conveyancing, and family asset fight settlements at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1586,11 +1608,11 @@ WITNESSES:
                   <span>PREVENT FUTURE PARTITION DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children from Co-Heir Partition Lawsuits
+                  Protect Your Children from Co-Heir Split Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A clearly drafted, legally registered Will establishes precise ownership shares,
-                  preventing protracted civil partition suits among your children.
+                  A clearly drafted, legally filed Will establishes precise ownership shares,
+                  preventing protracted civil split suits among your children.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1612,18 +1634,18 @@ WITNESSES:
                   <span>PARTITION LITIGATION &amp; SRO DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Dividing High-Value Ancestral Property or Multi-Floor House?
+                  Dividing High-Value Family Asset or Multi-Floor House?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our senior succession counsels draft custom Schedule A to D deeds, calculate state stamp duties,
-                  and ensure seamless SRO registration without family friction.
+                  Our senior estate counsels draft custom Schedule A to D deeds, calculate state stamp duties,
+                  and ensure seamless SRO filing without family friction.
                 </p>
                 <Link
                   href="/services/family-settlement-deed-lawyer"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <Scale className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1636,13 +1658,13 @@ WITNESSES:
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 17 Precision:</strong> Fully compliant with Registration Act mandates.
+                      <strong>Section 17 Precision:</strong> Fully compliant with Filing Act mandates.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Floor-Wise UDS:</strong> Prevents municipal mutation rejections.
+                      <strong>Floor-Wise UDS:</strong> Prevents city name change rejections.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

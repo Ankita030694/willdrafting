@@ -39,13 +39,13 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. What is a Succession Certificate?" },
+  { id: "statutory-framework", label: "1. What is a Estate Paper?" },
   { id: "eligible-assets", label: "2. Which Assets Qualify (Bank Accounts, Shares & FDs)" },
-  { id: "comparison-matrix", label: "3. Succession Certificate vs Legal Heir Certificate" },
+  { id: "comparison-matrix", label: "3. Estate Paper vs Legal Heir Paper" },
   { id: "eligibility-criteria", label: "4. Who is Eligible to Apply?" },
   { id: "visual-blueprint", label: "5. Visual Guide to the Court Process" },
   { id: "step-by-step-sop", label: "6. Step-by-Step Court Process" },
-  { id: "mandatory-documents", label: "7. Documents & Paperwork Required" },
+  { id: "mandatory-documents", label: "7. Papers & Paperwork Required" },
   { id: "court-fee-structure", label: "8. State Court Fees & Maximum Limits" },
   { id: "procedural-timeline", label: "9. Expected Court Timelines" },
   { id: "caveats-and-objections", label: "10. What Happens if a Relative Objects?" },
@@ -57,44 +57,44 @@ const TOC_ITEMS = [
 
 const FAQS = [
   {
-    q: "What is a Succession Certificate in simple words?",
-    a: "A Succession Certificate is an official document issued by a District Civil Court under Part X (Sections 370-390) of the Indian Succession Act, 1925. When someone passes away without leaving a Will, this court certificate gives their legal heirs the official authority to claim bank balances, fixed deposits, shares, and mutual funds.",
+    q: "What is a Estate Paper in simple words?",
+    a: "A Estate Paper is an official paper issued by a District Civil Court under Part X (Sections 370-390) of the Indian Succession Act, 1925. When someone passes away without leaving a Will, this court paper gives their legal heirs the official office to claim bank balances, fixed deposits, shares, and mutual funds.",
   },
   {
-    q: "Can I use a Succession Certificate for a house, flat, or land?",
-    a: "No! Under Section 370 of the Indian Succession Act, a Succession Certificate is strictly for movable assets (bank accounts, shares, mutual funds, PF, or money owed to the deceased). It can NEVER be used for land, flats, or houses. For land or property left without a Will, family heirs must get a Legal Heir Certificate for revenue mutation or apply for Letters of Administration in court.",
+    q: "Can I use a Estate Paper for a house, flat, or land?",
+    a: "No! Under Section 370 of the Indian Succession Act, a Estate Paper is strictly for cash assets (bank accounts, shares, mutual funds, PF, or money owed to the deceased). It can NEVER be used for land, flats, or houses. For land or asset left without a Will, family heirs must get a Legal Heir Paper for revenue name change or apply for Letters of Care in court.",
   },
   {
-    q: "What is the difference between a Succession Certificate and a Legal Heir Certificate?",
-    a: "A Legal Heir Certificate (also called Varisu or Surviving Member Certificate) is issued by a local revenue officer (like the Tehsildar or SDM) to establish family relationships for government pensions, employment dues, and property tax name changes. A Succession Certificate is a formal judicial order issued ONLY by a District Court, and is required by banks and mutual funds when someone passes away without a Will and significant money (usually over ₹5 to ₹15 Lakhs) is involved.",
+    q: "What is the difference between a Estate Paper and a Legal Heir Paper?",
+    a: "A Legal Heir Paper (also called Varisu or Surviving Member Paper) is issued by a local revenue officer (like the Tehsildar or SDM) to establish family relationships for government pensions, employment dues, and asset tax name changes. A Estate Paper is a formal judicial order issued ONLY by a District Court, and is required by banks and mutual funds when someone passes away without a Will and significant money (usually over ₹5 to ₹15 Lakhs) is involved.",
   },
   {
     q: "Which court do I need to go to?",
     a: "Under Section 371 of the Act, you must file the petition in the District Civil Court where the deceased person was permanently living at the time of death. If they had no permanent residence in India, it can be filed in the District Court where their bank accounts or shares are located.",
   },
   {
-    q: "How long does it take to get a Succession Certificate from court?",
-    a: "If no family member objects (uncontested), it typically takes 3 to 6 months. This gives the court time to issue public newspaper notices (giving 30 to 45 days for anyone to object), verify family identity papers, and calculate the court fees. If a relative disputes the claim, the case can take 12 to 24 months.",
+    q: "How long does it take to get a Estate Paper from court?",
+    a: "If no family member objects (uncontested), it typically takes 3 to 6 months. This gives the court time to issue public newspaper notices (giving 30 to 45 days for anyone to object), verify family identity papers, and calculate the court fees. If a relative fights the claim, the case can take 12 to 24 months.",
   },
   {
-    q: "How much is the court fee for a Succession Certificate?",
-    a: "Court fees are calculated as a percentage (typically 2% to 7%) of the total bank balances and shares being claimed. Some states place a ceiling cap (for example, Maharashtra caps the maximum fee at ₹75,000), while other states have no maximum cap. You can check the exact fee for your state using our online court fee calculator.",
+    q: "How much is the court fee for a Estate Paper?",
+    a: "Court fees are calculated as a percentage (typically 2% to 7%) of the total bank balances and shares being claimed. Some states place a ceiling cap (for example, Maharashtra caps the maximum fee at ₹75,000), while other states have no maximum cap. You can check the exact fee for your state using our online court fee tool.",
   },
   {
     q: "Can all siblings apply together in one petition?",
-    a: "Yes! All legal heirs can apply together as joint petitioners. Alternatively, one family member can apply on behalf of everyone, provided all other brothers, sisters, and the surviving parent sign written No Objection Certificates (NOCs) and consent affidavits.",
+    a: "Yes! All legal heirs can apply together as joint petitioners. Alternatively, one family member can apply on behalf of everyone, provided all other brothers, sisters, and the surviving parent sign written No Objection Papers (NOCs) and consent sworn notes.",
   },
   {
-    q: "Does a bank nominee own the money instead of the certificate holder?",
-    a: "No. The Supreme Court of India (Sarbati Devi and Shakti Yezdani) has clarified that a bank nominee is merely a temporary caretaker (trustee) who holds the funds for the true legal heirs. The person holding a court Succession Certificate has the full legal right to receive the funds from the nominee.",
+    q: "Does a bank nominee own the money instead of the paper holder?",
+    a: "No. The Supreme Court of India (Sarbati Devi and Shakti Yezdani) has clarified that a bank nominee is merely a temporary caretaker (trustee) who holds the funds for the true legal heirs. The person holding a court Estate Paper has the full legal right to receive the funds from the nominee.",
   },
   {
-    q: "Can an NRI apply for a Succession Certificate without visiting India?",
-    a: "Yes. An NRI can execute a Special Power of Attorney (PoA) in their country of residence, attested by the local Indian Embassy or apostilled. Their authorized lawyer or relative in India can then file the court petition, attend hearings, and collect the certificate without the NRI having to travel to India.",
+    q: "Can an NRI apply for a Estate Paper without visiting India?",
+    a: "Yes. An NRI can execute a Special Power of Attorney (PoA) in their country of residence, attested by the local Indian Embassy or apostilled. Their authorized lawyer or relative in India can then file the court petition, attend hearings, and collect the paper without the NRI having to travel to India.",
   },
   {
     q: "How does writing a Will avoid this court process entirely?",
-    a: "A Succession Certificate is needed strictly when someone dies without a Will. If the deceased wrote a valid Will naming an executor and beneficiaries, banks and mutual funds transfer the money directly based on the Will and death certificate. This completely spares your family from paying 2% to 7% court fees, spending on newspaper advertisements, and waiting 6 months in court.",
+    a: "A Estate Paper is needed strictly when someone dies without a Will. If the deceased wrote a valid Will naming an executor and heirs, banks and mutual funds transfer the money directly based on the Will and death paper. This completely spares your family from paying 2% to 7% court fees, spending on newspaper advertisements, and waiting 6 months in court.",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function SuccessionCertificateClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -161,7 +161,7 @@ export default function SuccessionCertificateClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Succession Certificate in India: Court Process &amp; Lawyers
+            Estate Paper in India: Court Process &amp; Lawyers
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -211,7 +211,7 @@ export default function SuccessionCertificateClient() {
                 1,200+ Petitions
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Certificates Secured
+                Papers Secured
               </span>
             </div>
 
@@ -257,7 +257,7 @@ export default function SuccessionCertificateClient() {
                   <div className="flex text-amber-500 text-xs">★★★★★</div>
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-0.5">
-                  350+ Verified Reviews
+                  350+ Checked Reviews
                 </span>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function SuccessionCertificateClient() {
               </nav>
               <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75] shrink-0" />
-                <span>Part X ISA 1925 Verified</span>
+                <span>Part X ISA 1925 Checked</span>
               </div>
             </div>
           </aside>
@@ -320,31 +320,31 @@ export default function SuccessionCertificateClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Statutory Jurisdiction:</strong> Issued exclusively by a competent District Civil Court under Part X (Sections 370 to 390) of the Indian Succession Act, 1925.
+                    <strong>Legal Area:</strong> Issued exclusively by a competent District Civil Court under Part X (Sections 370 to 390) of the Indian Succession Act, 1925.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Movable Financial Scope:</strong> Applies strictly to debts and securities (bank balances, fixed deposits, mutual funds, shares, and government securities). It does NOT transfer title to immovable real estate.
+                    <strong>Cash Financial Scope:</strong> Applies strictly to debts and securities (bank balances, fixed deposits, mutual funds, shares, and government securities). It does NOT transfer title to land real estate.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Conclusive Statutory Indemnity:</strong> Under Section 381, a court-issued Succession Certificate affords complete legal indemnity to banks and debtors upon disbursing funds to the certificate holder.
+                    <strong>Strong Legal Indemnity:</strong> Under Section 381, a court-issued Estate Paper affords complete legal indemnity to banks and debtors upon disbursing funds to the paper holder.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Nominee Status Overridden:</strong> Nominees are legal custodians, not absolute owners. The certificate holder has paramount authority to receive and distribute deceased estate assets among lawful heirs.
+                    <strong>Nominee Status Overridden:</strong> Nominees are legal custodians, not absolute owners. The paper holder has paramount office to receive and distribute deceased estate assets among lawful heirs.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Procedural Timeline:</strong> Uncontested court petitions require 3 to 6 months including mandatory newspaper publication. Having an executed Will completely avoids this court process.
+                    <strong>Procedural Timeline:</strong> Uncontested court petitions require 3 to 6 months including needed newspaper publication. Having an signed Will completely avoids this court process.
                   </span>
                 </li>
               </ul>
@@ -357,17 +357,17 @@ export default function SuccessionCertificateClient() {
                 <span>PART X OF THE INDIAN SUCCESSION ACT, 1925</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                1. Statutory Definition: Succession Certificate Framework
+                1. Legal Definition: Estate Paper Framework
               </h2>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  When an individual dies intestate in India without leaving an operative Last Will and Testament, their movable financial assets become legally frozen. Commercial banks, mutual fund asset management companies, depository participants (NSDL and CDSL), and insurance corporations cannot lawfully release funds to family members without formal judicial protection.
+                  When an single dies no-Will in India without leaving an operative Last Will and Testament, their cash financial assets become legally frozen. Shop banks, mutual fund asset management companies, depository participants (NSDL and CDSL), and insurance corporations cannot lawfully release funds to family members without formal judicial protection.
                 </p>
                 <p>
-                  Part X of the Indian Succession Act, 1925 provides the statutory mechanism for unfreezing these funds. Under <strong>Section 370</strong>, the District Civil Court grants a Succession Certificate to the rightful legal heirs, empowering them to collect outstanding debts and securities and give a valid discharge to the debtors.
+                  Part X of the Indian Succession Act, 1925 provides the legal mechanism for unfreezing these funds. Under <strong>Section 370</strong>, the District Civil Court grants a Estate Paper to the rightful legal heirs, empowering them to collect outstanding debts and securities and give a valid discharge to the debtors.
                 </p>
                 <p>
-                  Crucially, <strong>Section 381</strong> creates a statutory indemnity shield. Any commercial bank, corporation, or debtor that disburses money in good faith to the holder of a Succession Certificate is permanently indemnified against all future claims by rival relatives or claimants. This legal guarantee is why institutions routinely demand a Succession Certificate before transmitting substantial assets.
+                  Crucially, <strong>Section 381</strong> creates a legal indemnity shield. Any shop bank, city board, or debtor that disburses money in good faith to the holder of a Estate Paper is permanently indemnified against all future claims by rival relatives or claimants. This legal guarantee is why institutions routinely demand a Estate Paper before transmitting substantial assets.
                 </p>
               </div>
 
@@ -376,10 +376,10 @@ export default function SuccessionCertificateClient() {
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1">
                     <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <span>Section 371: Court Jurisdiction</span>
+                    <span>Section 371: Court Area</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Petitions must be filed before the District Court within whose territorial limits the deceased had their permanent ordinary residence at the time of death, or where their movable assets are situated.
+                    Petitions must be filed before the District Court within whose territorial limits the deceased had their permanent ordinary residence at the time of death, or where their cash assets are situated.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
@@ -388,7 +388,7 @@ export default function SuccessionCertificateClient() {
                     <span>Section 381: Complete Discharge</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The certificate establishes conclusive title against debtors. Payment made to the certificate holder affords absolute legal protection to the issuing bank or financial entity.
+                    The paper establishes strong title against debtors. Payment made to the paper holder affords absolute legal protection to the issuing bank or financial entity.
                   </p>
                 </div>
               </div>
@@ -401,14 +401,14 @@ export default function SuccessionCertificateClient() {
                 <span>SCOPE OF MOVABLE DEBTS &amp; SECURITIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Eligible Movable Assets: Debts &amp; Securities Covered
+                2. Eligible Cash Assets: Debts &amp; Securities Covered
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Section 370 of the Indian Succession Act strictly delineates the scope of a Succession Certificate to <strong>&quot;debts and securities&quot;</strong>. It cannot be utilized to transfer title to real estate, agricultural parcels, or residential buildings.
+                  Section 370 of the Indian Succession Act strictly delineates the scope of a Estate Paper to <strong>&quot;debts and securities&quot;</strong>. It cannot be utilized to transfer title to real estate, farm parcels, or home buildings.
                 </p>
                 <p>
-                  The table below outlines the movable asset categories routinely covered in our court petitions and how financial authorities evaluate claims:
+                  The table below outlines the cash asset categories routinely covered in our court petitions and how financial offices evaluate claims:
                 </p>
               </div>
 
@@ -416,7 +416,7 @@ export default function SuccessionCertificateClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Movable Asset Classification &amp; Institutional Authority
+                    Cash Asset Classification &amp; Institutional Office
                   </div>
                 </div>
                 <div className="overflow-x-auto">
@@ -425,32 +425,32 @@ export default function SuccessionCertificateClient() {
                       <tr>
                         <th className="px-4 py-3">Asset Category</th>
                         <th className="px-4 py-3">Verifying Institution</th>
-                        <th className="px-4 py-3">Typical Statutory Limit</th>
-                        <th className="px-4 py-3">Court Certificate Role</th>
+                        <th className="px-4 py-3">Typical Legal Limit</th>
+                        <th className="px-4 py-3">Court Paper Role</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Bank Savings &amp; Fixed Deposits</td>
-                        <td className="px-4 py-3">Scheduled Commercial Banks (RBI)</td>
+                        <td className="px-4 py-3">Scheduled Shop Banks (RBI)</td>
                         <td className="px-4 py-3 font-mono">Above ₹5 Lakh (without nominee)</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">Mandatory for Full Disbursal</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">Needed for Full Disbursal</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Demat Equity Shares &amp; Debentures</td>
                         <td className="px-4 py-3">NSDL, CDSL &amp; Listed Corporates</td>
                         <td className="px-4 py-3 font-mono">Above ₹5 Lakh (SEBI circulars)</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">Compulsory for Transmission</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">Needed for Transfer</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Mutual Fund Folios &amp; SIPs</td>
                         <td className="px-4 py-3">AMFI, CAMS &amp; KFintech RTAs</td>
                         <td className="px-4 py-3 font-mono">Above ₹5 Lakh threshold</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">Mandatory for Redemption</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">Needed for Redemption</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Unclaimed Shares &amp; Dividends</td>
-                        <td className="px-4 py-3">IEPF Authority (Ministry of Corporate Affairs)</td>
+                        <td className="px-4 py-3">IEPF Office (Ministry of Corporate Affairs)</td>
                         <td className="px-4 py-3 font-mono">Form IEPF-5 Claims</td>
                         <td className="px-4 py-3 text-emerald-700 font-bold">Primary Legal Proof for Heirs</td>
                       </tr>
@@ -462,7 +462,7 @@ export default function SuccessionCertificateClient() {
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Post Office PPF, NSC &amp; KVP</td>
-                        <td className="px-4 py-3">Department of Posts (India Post)</td>
+                        <td className="px-4 py-3">Office of Posts (India Post)</td>
                         <td className="px-4 py-3 font-mono">Accounts above ₹1 Lakh</td>
                         <td className="px-4 py-3 text-emerald-700 font-bold">Required in Absence of Nomination</td>
                       </tr>
@@ -479,11 +479,11 @@ export default function SuccessionCertificateClient() {
                 <span>HEAD-TO-HEAD COMPARISON MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. Comparison Guide: Succession vs Legal Heir Certificate
+                3. Comparison Guide: Estate vs Legal Heir Paper
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  A common point of confusion for bereaved families is whether they need a <strong>Legal Heir Certificate (Varisu)</strong> or a <strong>Succession Certificate</strong>. Both prove family lineage, but their legal weight and institutional acceptance differ fundamentally.
+                  A common point of confusion for bereaved families is whether they need a <strong>Legal Heir Paper (Varisu)</strong> or a <strong>Estate Paper</strong>. Both prove family lineage, but their legal weight and institutional acceptance differ fundamentally.
                 </p>
                 <p>
                   While a Legal Heir Certificate is an administrative document issued by local revenue officials (Tehsildar), a Succession Certificate is a decree issued by a Civil Court under judicial stamp. For an in-depth exploration, review our detailed guide on{" "}
@@ -491,7 +491,7 @@ export default function SuccessionCertificateClient() {
                     href="/blogs/legal-heir-certificate-vs-succession-certificate"
                     className="text-[#C65378] font-bold hover:underline"
                   >
-                    Legal Heir Certificate vs Succession Certificate
+                    Legal Heir Paper vs Estate Paper
                   </Link>.
                 </p>
               </div>
@@ -500,7 +500,7 @@ export default function SuccessionCertificateClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Legal Instrument Comparison: Court Grant vs Administrative Order
+                    Legal Instrument Comparison: Court Grant vs Office Order
                   </div>
                 </div>
                 <div className="overflow-x-auto">
@@ -508,14 +508,14 @@ export default function SuccessionCertificateClient() {
                     <thead className="bg-slate-100 text-slate-900 font-bold border-b border-slate-200 uppercase tracking-wider">
                       <tr>
                         <th className="px-4 py-3">Parameter</th>
-                        <th className="px-4 py-3">Succession Certificate</th>
-                        <th className="px-4 py-3">Legal Heir Certificate (Varisu)</th>
-                        <th className="px-4 py-3">Letters of Administration</th>
+                        <th className="px-4 py-3">Estate Paper</th>
+                        <th className="px-4 py-3">Legal Heir Paper (Varisu)</th>
+                        <th className="px-4 py-3">Letters of Care</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
                       <tr>
-                        <td className="px-4 py-3 font-semibold text-slate-900">Issuing Authority</td>
+                        <td className="px-4 py-3 font-semibold text-slate-900">Issuing Office</td>
                         <td className="px-4 py-3 font-semibold text-emerald-800">District Civil Court / High Court</td>
                         <td className="px-4 py-3 text-slate-600">Tehsildar / Taluk Revenue Officer</td>
                         <td className="px-4 py-3 font-semibold text-emerald-800">District Judge / High Court</td>
@@ -523,20 +523,20 @@ export default function SuccessionCertificateClient() {
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Governing Statute</td>
                         <td className="px-4 py-3 font-mono">Part X (Sec 370-390) ISA 1925</td>
-                        <td className="px-4 py-3 font-mono">State Revenue Department Rules</td>
+                        <td className="px-4 py-3 font-mono">State Revenue Office Rules</td>
                         <td className="px-4 py-3 font-mono">Sec 218 &amp; 232 ISA 1925</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Permissible Assets</td>
-                        <td className="px-4 py-3 font-bold text-slate-900">Movable Debts &amp; Securities Only</td>
-                        <td className="px-4 py-3 text-slate-600">Lineage verification &amp; family pensions</td>
-                        <td className="px-4 py-3 font-bold text-slate-900">Both Movable &amp; Immovable Estates</td>
+                        <td className="px-4 py-3 font-bold text-slate-900">Cash Debts &amp; Securities Only</td>
+                        <td className="px-4 py-3 text-slate-600">Lineage check &amp; family pensions</td>
+                        <td className="px-4 py-3 font-bold text-slate-900">Both Cash &amp; Land Estates</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Bank Acceptance</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">100% Conclusive (Sec 381)</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">100% Strong (Sec 381)</td>
                         <td className="px-4 py-3 text-rose-700 font-semibold">Rejected for claims &gt; ₹5 Lakh</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">100% Conclusive</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">100% Strong</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Typical Processing Time</td>
@@ -567,7 +567,7 @@ export default function SuccessionCertificateClient() {
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Under Section 372 of the Indian Succession Act, any individual claiming a beneficial interest in the debts or securities of the deceased has locus standi to petition the court. The applicant must establish their exact statutory pedigree under their respective personal succession laws:
+                  Under Section 372 of the Indian Succession Act, any single claiming a beneficial interest in the debts or securities of the deceased has locus standi to petition the court. The applicant must establish their exact legal pedigree under their respective personal estate laws:
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function SuccessionCertificateClient() {
                     <span>Class I Heirs (Hindu Succession Act, 1956)</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Widow, sons, daughters, and mother inherit simultaneously in equal shares. Class I heirs have the foremost priority to file the petition or grant mutual No Objection Certificates (NOCs) to a co-heir.
+                    Widow, sons, daughters, and mother inherit simultaneously in equal shares. Class I heirs have the foremost priority to file the petition or grant mutual No Objection Papers (NOCs) to a co-heir.
                   </p>
                 </div>
 
@@ -596,7 +596,7 @@ export default function SuccessionCertificateClient() {
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
                   <h3 className="font-bold text-slate-900 text-sm mb-1.5 flex items-center gap-2">
                     <Landmark className="w-4 h-4 text-purple-600" />
-                    <span>Christian &amp; Parsi Statutory Rules</span>
+                    <span>Christian &amp; Parsi Legal Rules</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Governed directly by Chapter II &amp; III of the Indian Succession Act, 1925. The surviving spouse takes one-third of the estate, with two-thirds distributed equally among surviving children.
@@ -625,7 +625,7 @@ export default function SuccessionCertificateClient() {
                 5. Visual Blueprint: Court Petition &amp; Issuance Flowchart
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The diagram below illustrates the complete statutory journey under Part X of the Indian Succession Act, 1925. From gathering asset schedules and filing the verified petition to newspaper publication and certificate sealing, every milestone requires precise legal compliance.
+                The diagram below illustrates the complete legal journey under Part X of the Indian Succession Act, 1925. From gathering asset schedules and filing the checked petition to newspaper publication and paper sealing, every milestone requires precise legal compliance.
               </p>
 
               {/* Responsive Container for Blueprint Image */}
@@ -642,7 +642,7 @@ export default function SuccessionCertificateClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: Official Succession Certificate filing framework, court citations, and financial asset transmission
+                    Figure 1.1: Official Estate Paper filing framework, court citations, and financial asset transfer
                   </span>
                   <Link
                     href="/images/succession-certificate-og.jpg"
@@ -663,7 +663,7 @@ export default function SuccessionCertificateClient() {
                 <span>SIX-STAGE STATUTORY PROCEDURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Step-by-Step SOP: Six-Stage Court Petition Procedure
+                6. Step-by-Step SOP: Six-Stage Court Petition Step
               </h3>
               <div className="space-y-4">
                 {/* Step 1 */}
@@ -673,11 +673,11 @@ export default function SuccessionCertificateClient() {
                       1
                     </span>
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Stage 1: Asset Auditing &amp; Locus Standi Verification
+                      Stage 1: Asset Auditing &amp; Locus Standi Check
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    Our testamentary advocates conduct an exhaustive audit of all frozen assets. We verify bank passbooks, fixed deposit receipts, demat account statements, and mutual fund folios. We confirm that the deceased had no known testamentary Will and establish the petitioner&apos;s legal pedigree under personal succession laws.
+                    Our Will lawyers conduct an exhaustive audit of all frozen assets. We verify bank passbooks, fixed deposit receipts, demat account statements, and mutual fund folios. We confirm that the deceased had no known Will Will and establish the petitioner&apos;s legal pedigree under personal estate laws.
                   </p>
                 </div>
 
@@ -692,7 +692,7 @@ export default function SuccessionCertificateClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    We prepare a comprehensive court petition detailing: (a) exact date and time of demise; (b) ordinary place of residence of the deceased; (c) full family genealogical tree; (d) detailed Schedule of Debts and Securities with exact asset valuations; and (e) solemn verification that no prior petition or conflicting grant exists.
+                    We prepare a full court petition detailing: (a) exact date and time of demise; (b) ordinary place of residence of the deceased; (c) full family genealogical tree; (d) detailed Schedule of Debts and Securities with exact asset valuations; and (e) solemn check that no prior petition or conflicting grant exists.
                   </p>
                 </div>
 
@@ -707,7 +707,7 @@ export default function SuccessionCertificateClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    The petition is filed before the competent District Judge or Senior Civil Judge. The court examines preliminary documentation, admits the case, registers a testamentary civil miscellaneous petition (TEST CAS), and issues formal summons to all non-applicant legal heirs.
+                    The petition is filed before the competent District Judge or Senior Civil Judge. The court examines preliminary papers, admits the case, registers a Will civil miscellaneous petition (TEST CAS), and issues formal summons to all non-applicant legal heirs.
                   </p>
                 </div>
 
@@ -718,11 +718,11 @@ export default function SuccessionCertificateClient() {
                       4
                     </span>
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Stage 4: Mandatory Newspaper Publication &amp; 30-Day Notice
+                      Stage 4: Needed Newspaper Publication &amp; 30-Day Notice
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    Under Section 373(1), the judge orders publication of public citations in two daily newspapers—one in the regional vernacular language and one in English circulated in the district. The citation grants the general public and potential creditors a statutory window of 30 to 45 days to file written objections (caveats).
+                    Under Section 373(1), the judge orders publication of public citations in two daily newspapers—one in the regional vernacular language and one in English circulated in the district. The citation grants the general public and potential creditors a legal window of 30 to 45 days to file written objections (caveats).
                   </p>
                 </div>
 
@@ -737,7 +737,7 @@ export default function SuccessionCertificateClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    Upon expiry of the public citation window without objections, the court conducts a summary judicial inquiry under Section 373(2). Our counsel presents the petitioner, marks the original Death Certificate as Exhibit P1, and tenders supporting affidavits and NOCs from other legal heirs.
+                    Upon expiry of the public citation window without objections, the court conducts a summary judicial inquiry under Section 373(2). Our counsel presents the petitioner, marks the original Death Paper as Exhibit P1, and tenders supporting sworn notes and NOCs from other legal heirs.
                   </p>
                 </div>
 
@@ -748,11 +748,11 @@ export default function SuccessionCertificateClient() {
                       6
                     </span>
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Stage 6: Court Fee Deposit, Surety Bond &amp; Certificate Grant
+                      Stage 6: Court Fee Deposit, Surety Bond &amp; Paper Grant
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                    The District Judge passes the final judgment granting the Succession Certificate. The petitioner deposits the requisite state judicial stamp duty, executes an indemnity bond with sureties under Section 375 if ordered, and receives the sealed parchment certificate signed by the Registrar.
+                    The District Judge passes the final judgment granting the Estate Paper. The petitioner deposits the requisite state judicial stamp duty, executes an indemnity bond with sureties under Section 375 if ordered, and receives the sealed parchment paper signed by the Registrar.
                   </p>
                 </div>
               </div>
@@ -765,11 +765,11 @@ export default function SuccessionCertificateClient() {
                 <span>COMPREHENSIVE FILING DOSSIER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                7. Mandatory Documents: Filing Checklist &amp; Affidavits
+                7. Needed Papers: Filing Checklist &amp; Affidavits
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Defective documentation is the primary reason petitions languish in court registries. Our legal team drafts, reviews, and assembles the complete court dossier prior to filing:
+                  Defective papers is the primary reason petitions languish in court registries. Our legal team drafts, reviews, and assembles the complete court dossier prior to filing:
                 </p>
               </div>
 
@@ -778,13 +778,13 @@ export default function SuccessionCertificateClient() {
                 <div className="p-4 rounded-xl bg-white border border-slate-200">
                   <h4 className="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600" />
-                    <span>Petitioner &amp; Deceased Identification</span>
+                    <span>Petitioner &amp; Deceased ID</span>
                   </h4>
                   <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
-                    <li>Original Death Certificate issued by Municipal Corporation</li>
+                    <li>Original Death Paper issued by City City Board</li>
                     <li>Aadhaar Card, PAN Card, and Voter ID of the deceased</li>
-                    <li>KYC documentation of all petitioners and surviving legal heirs</li>
-                    <li>Notarized Surviving Member Certificate or family tree affidavit</li>
+                    <li>KYC papers of all petitioners and surviving legal heirs</li>
+                    <li>Notarized Surviving Member Paper or family tree sworn note</li>
                   </ul>
                 </div>
 
@@ -809,8 +809,8 @@ export default function SuccessionCertificateClient() {
                   <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
                     <li>NOC Affidavits from non-petitioner heirs on non-judicial stamp paper</li>
                     <li>Passport copies and Embassy-notarized PoA for overseas NRIs</li>
-                    <li>Relinquishment or disclaimer statements for specific securities</li>
-                    <li>Guardianship affidavits where minor children are co-heirs</li>
+                    <li>Release or disclaimer statements for specific securities</li>
+                    <li>Child Care sworn notes where minor children are co-heirs</li>
                   </ul>
                 </div>
 
@@ -820,8 +820,8 @@ export default function SuccessionCertificateClient() {
                     <span>Court Registry Compliances</span>
                   </h4>
                   <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
-                    <li>Verified Petition under Section 372 signed by advocate</li>
-                    <li>Vakalatnama authorizing AMA Legal Solutions advocates</li>
+                    <li>Checked Petition under Section 372 signed by lawyer</li>
+                    <li>Vakalatnama authorizing AMA Legal Solutions lawyers</li>
                     <li>Process fee chalan for service of summons to respondents</li>
                     <li>Draft citation formats for vernacular and English newspapers</li>
                   </ul>
@@ -840,7 +840,7 @@ export default function SuccessionCertificateClient() {
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Court fees for Succession Certificates are regulated by individual State Court Fees Acts. While some states impose an ad-valorem percentage with an upper ceiling, other states calculate fees proportionally without any maximum cap.
+                  Court fees for Estate Papers are regulated by single State Court Fees Acts. While some states impose an ad-valorem percentage with an upper ceiling, other states calculate fees proportionally without any maximum cap.
                 </p>
                 <p>
                   Understanding your exact court fee liability prevents surprise expenses before the final grant:
@@ -851,17 +851,17 @@ export default function SuccessionCertificateClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Succession Certificate Court Fee Matrix Across Major States
+                    Estate Paper Court Fee Matrix Across Major States
                   </div>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs text-left text-slate-700 min-w-[620px]">
                     <thead className="bg-slate-100 text-slate-900 font-bold border-b border-slate-200 uppercase tracking-wider">
                       <tr>
-                        <th className="px-4 py-3">State / Jurisdiction</th>
+                        <th className="px-4 py-3">State / Area</th>
                         <th className="px-4 py-3">Applicable Act</th>
                         <th className="px-4 py-3">Fee Rate</th>
-                        <th className="px-4 py-3">Statutory Upper Cap</th>
+                        <th className="px-4 py-3">Legal Upper Cap</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
@@ -909,7 +909,7 @@ export default function SuccessionCertificateClient() {
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Calculate Your Exact Court Fee</h4>
                     <p className="text-xs text-slate-600">
-                      Use our interactive calculator to see exact state fees and stamp paper duty for your asset valuation.
+                      Use our free tool to see exact state fees and stamp paper duty for your asset price check.
                     </p>
                   </div>
                 </div>
@@ -917,7 +917,7 @@ export default function SuccessionCertificateClient() {
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] shrink-0"
                 >
-                  <span>Open Fee Calculator</span>
+                  <span>Open Fee Tool</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -934,7 +934,7 @@ export default function SuccessionCertificateClient() {
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  While judicial procedures in India can occasionally encounter scheduling delays, an uncontested Succession Certificate petition managed by experienced counsel follows a structured, milestone-driven progression:
+                  While judicial steps in India can occasionally encounter scheduling delays, an uncontested Estate Paper petition managed by experienced counsel follows a structured, milestone-driven progression:
                 </p>
               </div>
 
@@ -942,7 +942,7 @@ export default function SuccessionCertificateClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Testamentary Milestone Timeline (Uncontested Petition)
+                    Will Milestone Timeline (Uncontested Petition)
                   </div>
                 </div>
                 <div className="overflow-x-auto">
@@ -958,8 +958,8 @@ export default function SuccessionCertificateClient() {
                     <tbody className="divide-y divide-slate-100 bg-white">
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900 font-mono">Weeks 1 to 2</td>
-                        <td className="px-4 py-3">Asset audit, KYC verification &amp; petition drafting</td>
-                        <td className="px-4 py-3">Registry scrutiny and filing registration</td>
+                        <td className="px-4 py-3">Asset audit, KYC check &amp; petition drafting</td>
+                        <td className="px-4 py-3">Registry scrutiny and filing filing</td>
                         <td className="px-4 py-3 text-blue-700 font-bold">Filing Completed</td>
                       </tr>
                       <tr>
@@ -970,27 +970,27 @@ export default function SuccessionCertificateClient() {
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900 font-mono">Weeks 5 to 9</td>
-                        <td className="px-4 py-3">Statutory public notice window</td>
+                        <td className="px-4 py-3">Legal public notice window</td>
                         <td className="px-4 py-3">Waiting period for objections (30 to 45 days)</td>
                         <td className="px-4 py-3 text-slate-700 font-mono">Notice Window</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900 font-mono">Weeks 10 to 13</td>
                         <td className="px-4 py-3">Summary judicial hearing &amp; evidence recording</td>
-                        <td className="px-4 py-3">Petitioner statement recorded; NOCs verified</td>
+                        <td className="px-4 py-3">Petitioner statement recorded; NOCs checked</td>
                         <td className="px-4 py-3 text-emerald-700 font-bold">Evidence Closed</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900 font-mono">Weeks 14 to 17</td>
                         <td className="px-4 py-3">Final arguments &amp; judgment pronouncement</td>
-                        <td className="px-4 py-3">Court passes order granting Succession Certificate</td>
+                        <td className="px-4 py-3">Court passes order granting Estate Paper</td>
                         <td className="px-4 py-3 text-emerald-700 font-bold">Order Pronounced</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900 font-mono">Weeks 18 to 22</td>
-                        <td className="px-4 py-3">Stamp paper deposit, bond execution &amp; certificate seal</td>
-                        <td className="px-4 py-3">Registrar signs and seals the physical certificate</td>
-                        <td className="px-4 py-3 text-emerald-800 font-extrabold">Final Certificate Issued</td>
+                        <td className="px-4 py-3">Stamp paper deposit, bond signing &amp; paper seal</td>
+                        <td className="px-4 py-3">Registrar signs and seals the physical paper</td>
+                        <td className="px-4 py-3 text-emerald-800 font-extrabold">Final Paper Issued</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1005,11 +1005,11 @@ export default function SuccessionCertificateClient() {
                 <span>CONTESTED SUCCESSION ADVOCACY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                10. Caveats &amp; Objections: Handling Contested Succession
+                10. Caveats &amp; Objections: Handling Contested Estate
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  While the majority of petitions proceed smoothly on uncontested grounds, complications arise when a estranged relative, rival claimant, or purported testamentary legatee enters the fray:
+                  While the majority of petitions proceed smoothly on uncontested grounds, complications arise when a estranged relative, rival claimant, or purported Will legatee enters the fray:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
@@ -1018,7 +1018,7 @@ export default function SuccessionCertificateClient() {
                       <span>Filing of Caveats Under Section 284</span>
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A party anticipating foul play can file a caveat before the District Judge. Once registered, no order or certificate can be granted without first serving formal notice to the caveator.
+                      A party anticipating foul play can file a caveat before the District Judge. Once filed, no order or paper can be granted without first serving formal notice to the caveator.
                     </p>
                   </div>
 
@@ -1028,7 +1028,7 @@ export default function SuccessionCertificateClient() {
                       <span>Production of an Alleged Will</span>
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If an objector produces a purported Last Will, the summary inquiry is suspended. Under Section 370, if a Will exists, probate or letters of administration must be determined before a succession certificate can issue.
+                      If an objector produces a purported Last Will, the summary inquiry is suspended. Under Section 370, if a Will exists, probate or letters of care must be determined before a estate paper can issue.
                     </p>
                   </div>
                 </div>
@@ -1049,10 +1049,10 @@ export default function SuccessionCertificateClient() {
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Applying for a Succession Certificate is an emergency post-death remedy required only because the deceased did not execute an operative Last Will and Testament during their lifetime.
+                  Applying for a Estate Paper is an emergency post-death remedy required only because the deceased did not execute an operative Last Will and Testament during their lifetime.
                 </p>
                 <p>
-                  Consider what families endure during the succession certificate process:
+                  Consider what families endure during the estate paper process:
                 </p>
               </div>
 
@@ -1061,26 +1061,26 @@ export default function SuccessionCertificateClient() {
                 <div className="p-4 rounded-xl bg-rose-50/60 border border-rose-200">
                   <h4 className="font-bold text-rose-950 text-sm mb-2 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 text-rose-600" />
-                    <span>Dying Without a Will (Intestate)</span>
+                    <span>Dying Without a Will (No-Will)</span>
                   </h4>
                   <ul className="text-xs text-rose-900/80 space-y-1.5 list-disc pl-5">
                     <li>3 to 6 months of frozen bank accounts and mutual funds</li>
                     <li>2% to 7% state court fees on total financial wealth</li>
                     <li>Public newspaper notices disclosing family wealth</li>
-                    <li>Mandatory court appearances and surety indemnity bonds</li>
+                    <li>Needed court appearances and surety indemnity bonds</li>
                   </ul>
                 </div>
 
                 <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-200">
                   <h4 className="font-bold text-emerald-950 text-sm mb-2 flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Executing a Registered Will With WillDrafting</span>
+                    <span>Signing a Filed Will With WillDrafting</span>
                   </h4>
                   <ul className="text-xs text-emerald-900/80 space-y-1.5 list-disc pl-5">
-                    <li>Direct transmission to designated beneficiaries in 15 days</li>
+                    <li>Direct transfer to designated heirs in 15 days</li>
                     <li>Zero ad-valorem civil court fees (no percentage tax)</li>
                     <li>Total privacy without public newspaper notices</li>
-                    <li>Complete protection against distant family disputes</li>
+                    <li>Complete protection against distant family fights</li>
                   </ul>
                 </div>
               </div>
@@ -1092,7 +1092,7 @@ export default function SuccessionCertificateClient() {
                     Protect Your Family From Court Delays
                   </h4>
                   <p className="text-xs text-slate-300">
-                    Draft a legally valid, lawyer-verified Last Will and Testament online in under 15 minutes.
+                    Draft a legally valid, lawyer-checked Last Will and Testament online in under 15 minutes.
                   </p>
                 </div>
                 <button
@@ -1116,7 +1116,7 @@ export default function SuccessionCertificateClient() {
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  AMA Legal Solutions is a premier Indian law firm with a dedicated Testamentary and Estate Succession Practice. We take complete ownership of your succession certificate proceedings from initial filing to institutional payout:
+                  AMA Legal Solutions is a premier Indian law firm with a dedicated Will and Estate Estate Practice. We take complete ownership of your estate paper proceedings from initial filing to institutional payout:
                 </p>
               </div>
 
@@ -1128,7 +1128,7 @@ export default function SuccessionCertificateClient() {
                   </div>
                   <h4 className="font-bold text-slate-900 text-sm mb-1">Petition Drafting</h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Custom drafting under Section 372 of ISA with verified asset schedules, eliminating court registry scrutiny objections.
+                    Custom drafting under Section 372 of ISA with checked asset schedules, eliminating court registry scrutiny objections.
                   </p>
                 </div>
 
@@ -1148,7 +1148,7 @@ export default function SuccessionCertificateClient() {
                   </div>
                   <h4 className="font-bold text-slate-900 text-sm mb-1">Bank Liaison</h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Post-grant execution with bank nodal officers, NSDL/CDSL depositories, and mutual fund RTAs for seamless fund release.
+                    Post-grant signing with bank nodal officers, NSDL/CDSL depositories, and mutual fund RTAs for seamless fund release.
                   </p>
                 </div>
               </div>
@@ -1161,10 +1161,10 @@ export default function SuccessionCertificateClient() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Speak Directly With an Estate Advocate
+                      Speak Directly With an Estate Lawyer
                     </h4>
                     <p className="text-xs text-slate-600">
-                      Discuss your frozen bank accounts or mutual funds with senior testamentary counsel.
+                      Discuss your frozen bank accounts or mutual funds with senior Will counsel.
                     </p>
                   </div>
                 </div>
@@ -1172,7 +1172,7 @@ export default function SuccessionCertificateClient() {
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#172228] text-white text-xs font-bold hover:bg-[#2b3c45] transition-all shrink-0"
                 >
-                  <span>Book Case Consultation</span>
+                  <span>Book Case Talk</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1185,7 +1185,7 @@ export default function SuccessionCertificateClient() {
                 <span>CLEAR ANSWERS TO CRITICAL QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                Frequently Asked Questions: Succession Certificate India
+                Frequently Asked Questions: Estate Paper India
               </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
@@ -1224,24 +1224,24 @@ export default function SuccessionCertificateClient() {
                 <span>STATUTORY CITATIONS &amp; LANDMARK PRECEDENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                14. Statutory Citations: High Court Precedents &amp; Acts
+                14. Legal Citations: High Court Precedents &amp; Acts
               </h3>
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
-                  Every succession petition drafted by AMA Legal Solutions adheres strictly to codified statutes and landmark Supreme Court of India precedents:
+                  Every estate petition drafted by AMA Legal Solutions adheres strictly to codified statutes and landmark Supreme Court of India precedents:
                 </p>
                 <ul className="space-y-2 list-disc pl-5 text-xs text-slate-600">
                   <li>
-                    <strong>Part X (Sections 370 to 390), Indian Succession Act, 1925:</strong> The foundational statutory scheme governing the grant of succession certificates for debts and securities across India.
+                    <strong>Part X (Sections 370 to 390), Indian Succession Act, 1925:</strong> The foundational legal scheme governing the grant of estate papers for debts and securities across India.
                   </li>
                   <li>
                     <strong>Ram Chander Talwar &amp; Anr v. Devinder Kumar Talwar &amp; Ors (2010) 10 SCC 671:</strong> The Supreme Court affirmed that a nominee under Section 45ZA of the Banking Regulation Act holds money only as a trustee for legal heirs, and does not gain beneficial title.
                   </li>
                   <li>
-                    <strong>Shakti Yezdani &amp; Anr v. Jayanand Salgaonkar &amp; Ors (2023) 14 SCC 512:</strong> The Supreme Court held that nomination provisions under the Companies Act do not create a separate line of succession or override the succession certificate granted to statutory heirs.
+                    <strong>Shakti Yezdani &amp; Anr v. Jayanand Salgaonkar &amp; Ors (2023) 14 SCC 512:</strong> The Supreme Court held that nomination rules under the Companies Act do not create a separate line of estate or override the estate paper granted to legal heirs.
                   </li>
                   <li>
-                    <strong>Smt. Sarbati Devi &amp; Anr v. Smt. Usha Devi (1984) 1 SCC 424:</strong> Landmark ruling establishing that life insurance nomination serves only to provide a valid receipt to the insurer without affecting distribution among Class I heirs.
+                    <strong>Smt. Sarbati Devi &amp; Anr v. Smt. Usha Devi (1984) 1 SCC 424:</strong> Landmark ruling establishing that life insurance nomination serves only to provide a valid receipt to the insurer without affecting split among Class I heirs.
                   </li>
                 </ul>
 
@@ -1255,13 +1255,13 @@ export default function SuccessionCertificateClient() {
                       href="/blogs/legal-heir-certificate-vs-succession-certificate"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors border border-slate-200"
                     >
-                      Legal Heir vs Succession Certificate Guide
+                      Legal Heir vs Estate Paper Guide
                     </Link>
                     <Link
                       href="/tools/succession-certificate-court-fee-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors border border-slate-200"
                     >
-                      Court Fee Calculator India
+                      Court Fee Tool India
                     </Link>
                     <Link
                       href="/services/probate-lawyer"
@@ -1279,7 +1279,7 @@ export default function SuccessionCertificateClient() {
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors border border-slate-200"
                     >
-                      Will Registration Service
+                      Will Filing Service
                     </Link>
                   </div>
                 </div>
@@ -1305,20 +1305,20 @@ export default function SuccessionCertificateClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Testamentary Counsel
+                    Senior Will Counsel
                   </p>
                   <p className="text-[10px] text-slate-500">Bar Council of Delhi &bull; 18+ Yrs</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Specializing in high-value civil court estate petitions, succession certificates, and financial asset transmission before District Courts and High Courts pan-India.
+                Specializing in high-value civil court estate petitions, estate papers, and financial asset transfer before District Courts and High Courts pan-India.
               </p>
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                <span className="text-slate-500">Verified Legal Counsel</span>
+                <span className="text-slate-500">Checked Legal Counsel</span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
                   target="_blank"
@@ -1343,13 +1343,13 @@ export default function SuccessionCertificateClient() {
                 Facing Frozen Bank Accounts or Shares?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Let our advocates analyze your deceased asset schedule and advise whether a succession certificate or legal heir certificate is needed.
+                Let our lawyers analyze your deceased asset schedule and advise whether a estate paper or legal heir paper is needed.
               </p>
               <Link
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#C65378] text-white font-bold text-xs hover:bg-[#a13c5d] transition-all cursor-pointer shadow-md mb-2.5"
               >
-                <span>Schedule Advocate Consultation</span>
+                <span>Schedule Lawyer Talk</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
               <p className="text-[10px] text-slate-400">
@@ -1385,7 +1385,7 @@ export default function SuccessionCertificateClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 mt-0.5 shrink-0" />
                   <span>
-                    <strong>Direct Bank Transmission:</strong> Liaison with bank managers until frozen funds reach your account.
+                    <strong>Direct Bank Transfer:</strong> Liaison with bank managers until frozen funds reach your account.
                   </span>
                 </li>
               </ul>
@@ -1402,7 +1402,7 @@ export default function SuccessionCertificateClient() {
                   className="block p-2.5 rounded-xl border border-slate-200 hover:border-[#C65378] hover:bg-rose-50/30 transition-all group"
                 >
                   <div className="text-xs font-bold text-slate-900 group-hover:text-[#C65378]">
-                    Court Fee Calculator &rarr;
+                    Court Fee Tool &rarr;
                   </div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Check state percentages &amp; maximum caps
@@ -1429,7 +1429,7 @@ export default function SuccessionCertificateClient() {
                     Probate of Will Lawyers &rarr;
                   </div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    High Court testamentary petition representation
+                    High Court Will petition representation
                   </div>
                 </Link>
               </div>
@@ -1444,19 +1444,19 @@ export default function SuccessionCertificateClient() {
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
                 <Link
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
                 <Link
                   href="/services/probate-lawyer"

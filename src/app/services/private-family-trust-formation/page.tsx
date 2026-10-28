@@ -387,7 +387,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
@@ -414,11 +414,11 @@ export default function PrivateFamilyTrustFormationPage() {
 
               {/* Single H1: 54 characters (Strictly 30 to 65 chars, distinct from Title) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Private Family Trust Formation &amp; Registration in India
+                Private Family Trust Formation &amp; Filing in India
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Protect family wealth from business risks, debt, and long court delays. The Indian Trusts Act, 1882 lets you set up a Private Family Trust. Our High Court advocates draft custom trust deeds. This shields family assets across generations with total privacy.
+                Protect family wealth from business risks, debt, and long court delays. The Indian Trusts Act, 1882 lets you set up a Private Family Trust. Our High Court lawyers draft custom trust deeds. This shields family assets across generations with total privacy.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -426,7 +426,7 @@ export default function PrivateFamilyTrustFormationPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Book Trust Consultation</span>
+                  <span>Book Trust Talk</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <Link
@@ -444,7 +444,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Sub-Registrar Ready</span>
+                  <span>SRO Ready</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
@@ -470,19 +470,19 @@ export default function PrivateFamilyTrustFormationPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Zero Court Probate Delays:</strong> A Will requires 12 to 24 months for High Court probate in major cities. A Private Trust transfers income and assets immediately without court intervention.
+                    <strong>Zero Court Probate Delays:</strong> A Will requires 12 to 24 months for High Court probate in major cities. A Private Trust transfers income and assets right away without court intervention.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Ironclad Asset Protection:</strong> Assets placed in an irrevocable trust are protected from business creditors, future bankruptcies, and family partition claims.
+                    <strong>Ironclad Asset Protection:</strong> Assets placed in an irrevocable trust are protected from business creditors, future bankruptcies, and family split claims.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>100% Financial Confidentiality:</strong> Unlike a probated Will which becomes a public court document, a private trust deed remains confidential among trustees and family members.
+                    <strong>100% Financial Confidentiality:</strong> Unlike a probated Will which becomes a public court paper, a private trust deed remains confidential among trustees and family members.
                   </span>
                 </li>
               </ul>
@@ -490,7 +490,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 href="/services/family-settlement-deed-lawyer"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Compare Family Settlement Deed Options</span>
+                <span>Compare Family Deal Deed Options</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -518,7 +518,7 @@ export default function PrivateFamilyTrustFormationPage() {
               Visual Blueprint: Private Trust Architecture in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              A registered Private Family Trust splits asset ownership from control. Trustees hold legal title under the Indian Trusts Act, 1882. Beneficiaries receive steady income and protection.
+              A filed Private Family Trust splits asset ownership from control. Trustees hold legal title under the Indian Trusts Act, 1882. Heirs receive steady income and protection.
             </p>
           </div>
 
@@ -533,7 +533,7 @@ export default function PrivateFamilyTrustFormationPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Private Family Trust architecture in India under the Indian Trusts Act, 1882 — ring-fencing family assets, establishing trustee governance, and safeguarding beneficiaries.
+                <strong>Figure 1:</strong> Private Family Trust architecture in India under the Indian Trusts Act, 1882 — ring-fencing family assets, establishing trustee governance, and safeguarding heirs.
               </span>
               <span>Source: WillDrafting Editorial Team &amp; AMA Legal Solutions</span>
             </figcaption>
@@ -551,7 +551,7 @@ export default function PrivateFamilyTrustFormationPage() {
             </div>
             {/* H2 #4: 53 characters */}
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Statutory Comparison: Revocable vs Irrevocable Trusts
+              Legal Comparison: Revocable vs Irrevocable Trusts
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Every family has clear wealth goals. Income tax laws set simple rules under Sections 160 to 164. Review this guide to pick the right trust for your family.
@@ -567,7 +567,7 @@ export default function PrivateFamilyTrustFormationPage() {
                     <th className="py-4 px-6 w-[20%]">Legal Ownership &amp; Control</th>
                     <th className="py-4 px-6 w-[20%]">Taxation (IT Act 1961)</th>
                     <th className="py-4 px-6 w-[18%]">Creditor Ring-Fencing</th>
-                    <th className="py-4 px-6 w-[20%]">Ideal Family Application</th>
+                    <th className="py-4 px-6 w-[20%]">Ideal Family Form</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -608,13 +608,13 @@ export default function PrivateFamilyTrustFormationPage() {
                 Special Needs Child Trust: Lifetime Care Protection
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-3">
-                Parents of special needs children worry about lifetime care. Leaving cash or property directly to a disabled child creates high risks. Relatives or court guardians might mismanage the funds.
+                Parents of special needs children worry about lifetime care. Leaving cash or asset directly to a disabled child creates high risks. Relatives or court guardians might mismanage the funds.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-3">
                 A Special Needs Trust helps your child. It works under the Indian Trusts Act, 1882. You can name trusted co-trustees. They release funds for health, care, and home costs.
               </p>
               <p className="text-[14px] text-[#047857] font-semibold bg-white/70 p-3.5 rounded-xl border border-[#047857]/20">
-                The Income Tax Act offers key tax relief. Under the Proviso to Section 164(1), special needs trusts pay normal individual slab rates. They do not face the high Maximum Marginal Rate.
+                The Income Tax Act offers key tax relief. Under the Proviso to Section 164(1), special needs trusts pay normal single slab rates. They do not face the high Maximum Marginal Rate.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -629,7 +629,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 href="/tools/succession-calculator"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white border border-[#172228]/15 hover:border-[#C65378] text-[#172228] text-xs font-bold uppercase tracking-[0.12em] px-5 py-3.5 transition-colors text-center"
               >
-                <span>Calculate Succession Shares</span>
+                <span>Calculate Estate Shares</span>
               </Link>
             </div>
           </div>
@@ -646,10 +646,10 @@ export default function PrivateFamilyTrustFormationPage() {
             </div>
             {/* H2 #6: 53 characters */}
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              4-Step Execution Protocol for Private Trust Formation
+              4-Step Signing Protocol for Private Trust Formation
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Setting up a trust is simple with expert counsel. Our High Court advocates handle the whole process. Here is our 4-step roadmap from drafting to registration:
+              Setting up a trust is simple with expert counsel. Our High Court lawyers handle the whole process. Here is our 4-step roadmap from drafting to filing:
             </p>
           </div>
 
@@ -658,22 +658,22 @@ export default function PrivateFamilyTrustFormationPage() {
               {
                 step: "01",
                 title: "Trust Structuring",
-                desc: "Identify trust assets, choose between revocable or irrevocable formats, and define beneficiary payout milestones.",
+                desc: "Identify trust assets, choose between revocable or irrevocable formats, and define heir payout milestones.",
               },
               {
                 step: "02",
                 title: "Advocate Legal Drafting",
-                desc: "High Court counsel drafts the Trust Deed with protective spendthrift clauses, trustee succession lines, and tax safeguards.",
+                desc: "High Court counsel drafts the Trust Deed with protective spendthrift clauses, trustee estate lines, and tax safeguards.",
               },
               {
                 step: "03",
                 title: "SRO Registration",
-                desc: "Execute the deed on required state stamp paper and complete registration before the Sub-Registrar under Section 17.",
+                desc: "Execute the deed on required state stamp paper and complete filing before the SRO under Section 17.",
               },
               {
                 step: "04",
                 title: "PAN & Asset Settlement",
-                desc: "Procure a permanent Trust PAN card, open a dedicated bank account, and transfer the initial settlement corpus seamlessly.",
+                desc: "Procure a permanent Trust PAN card, open a dedicated bank account, and transfer the initial deal corpus seamlessly.",
               },
             ].map((item) => (
               <div
@@ -720,7 +720,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 Section 161: Determinate Trusts
               </h3>
               <p className="text-[14px] leading-[1.65] text-[#49585F] mb-3">
-                Where beneficiaries are identifiable and their percentage shares are expressly declared in the trust deed, income is taxed at each beneficiary individual tax slab rate.
+                Where heirs are identifiable and their percentage shares are expressly declared in the trust deed, income is taxed at each heir single tax slab rate.
               </p>
               <div className="text-xs font-semibold text-[#047857] bg-[#047857]/10 p-2.5 rounded-lg">
                 Advantage: Avoids high corporate rates; ideal for clear family maintenance.
@@ -760,7 +760,7 @@ export default function PrivateFamilyTrustFormationPage() {
           <div className="max-w-3xl mb-4">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-2">
               <FileCheck className="w-4 h-4" />
-              <span>Standard Statutory Wording</span>
+              <span>Standard Legal Wording</span>
             </div>
             {/* H2 #8: 50 characters */}
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
@@ -844,11 +844,11 @@ export default function PrivateFamilyTrustFormationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Statutory FAQs</span>
+              <span>Legal FAQs</span>
             </div>
             {/* H2 #10: 54 characters */}
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions: Private Trust Registration
+              Frequently Asked Questions: Private Trust Filing
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Find quick answers to common questions about private trust formation, taxes, and court rules:
@@ -875,10 +875,10 @@ export default function PrivateFamilyTrustFormationPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Estate Planning &amp; Succession Resources
+                Related Estate Planning &amp; Estate Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore our statutory guides, partition formats, and interactive calculators:
+                Explore our legal guides, split formats, and free tools:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -893,7 +893,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 href="/services/family-settlement-deed-lawyer"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Family Settlement Deed Lawyer</span>
+                <span>Family Deal Deed Lawyer</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -907,7 +907,7 @@ export default function PrivateFamilyTrustFormationPage() {
                 href="/tools/succession-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Succession Calculator Tool</span>
+                <span>Estate Tool Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -920,7 +920,7 @@ export default function PrivateFamilyTrustFormationPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -930,12 +930,12 @@ export default function PrivateFamilyTrustFormationPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This advisory guide is prepared in accordance with the Indian Trusts Act, 1882, the Registration Act, 1908, the Indian Stamp Act, 1889, the Income Tax Act, 1961, and the National Trust Act, 1999. It provides legal information for estate planning and does not replace individualized legal representation.
+              This advisory guide is prepared in accordance with the Indian Trusts Act, 1882, the Filing Act, 1908, the Indian Stamp Act, 1889, the Income Tax Act, 1961, and the National Trust Act, 1999. It provides legal information for estate planning and does not replace individualized legal representation.
             </p>
           </div>
           <a

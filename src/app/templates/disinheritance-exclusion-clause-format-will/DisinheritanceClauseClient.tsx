@@ -46,31 +46,31 @@ import {
 const TOC_ITEMS = [
   { id: "statutory-power", label: "1. Freedom of Will: Section 59 Indian Succession Act" },
   { id: "suspicious-circumstances", label: "2. Supreme Court Doctrine: Suspicious Circumstances Rule" },
-  { id: "ancestral-vs-self-acquired", label: "3. Property Limits: Self-Acquired vs Ancestral Estates" },
-  { id: "interactive-clause-generator", label: "4. Interactive Exclusion Clause Drafter & Risk Tool" },
-  { id: "five-vetted-templates", label: "5. Five Legally Vetted Disinheritance Clause Templates" },
+  { id: "ancestral-vs-self-acquired", label: "3. Asset Limits: Self-Acquired vs Family Estates" },
+  { id: "interactive-clause-generator", label: "4. Free Exclusion Clause Drafter & Risk Tool" },
+  { id: "five-vetted-templates", label: "5. Five Legally Vetted Leaving Out Clause Templates" },
   { id: "comparison-table", label: "6. Legal Comparison: Silent Omission vs Explicit Clause" },
   { id: "seven-guardrails", label: "7. Seven Essential Guardrails for a Bulletproof Will" },
   { id: "landmark-precedents", label: "8. Landmark Precedents: Ram Piari to Kavita Kanwar" },
   { id: "step-by-step-sop", label: "9. Step-by-Step SOP: Drafting and Registering the Will" },
   { id: "senior-citizens-act", label: "10. Neglect Defense: Senior Citizens Act 2007 Link" },
-  { id: "institutional-profile", label: "11. Legal Backing: AMA Legal Solutions Succession Desk" },
+  { id: "institutional-profile", label: "11. Legal Backing: AMA Legal Solutions Estate Desk" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions: Disinheriting Legal Heirs" },
-  { id: "statutory-citations", label: "13. Statutory Citations & High Court Precedents" },
+  { id: "statutory-citations", label: "13. Legal Citations & High Court Precedents" },
 ];
 
 const FAQS = [
   {
     q: "Can I legally disinherit my son or daughter in India?",
-    a: "Yes. You have full legal authority to disinherit any son or daughter from your self-acquired property. Section 59 of the Indian Succession Act, 1925 gives every person of sound mind the power to distribute their self-acquired assets as they wish. However, you cannot disinherit a child from their birthright in ancestral coparcenary property under Hindu law.",
+    a: "Yes. You have full legal office to disinherit any son or daughter from your self-acquired asset. Section 59 of the Indian Succession Act, 1925 gives every person of sound mind the power to distribute their self-acquired assets as they wish. However, you cannot disinherit a child from their birthright in family joint asset under Hindu law.",
   },
   {
     q: "Why is unexplained exclusion of a child treated as a suspicious circumstance?",
-    a: "The Supreme Court of India has ruled in several landmark cases, including Kavita Kanwar v. Pamela Mehta (2020) and Ram Piari v. Bhagwant (1990), that completely excluding a natural heir without any clear explanation in the Will raises legal suspicion. The court examines whether the testator was coerced, suffered from memory loss, or was misled by other relatives.",
+    a: "The Supreme Court of India has ruled in several landmark cases, including Kavita Kanwar v. Pamela Mehta (2020) and Ram Piari v. Bhagwant (1990), that completely excluding a natural heir without any clear explanation in the Will raises legal suspicion. The court examines whether the Will maker was coerced, suffered from memory loss, or was misled by other relatives.",
   },
   {
-    q: "How should an exclusion clause be worded to prevent court challenges?",
-    a: "First, identify the child by their full name and relationship. This proves you were fully aware of them and did not forget them due to memory loss. Second, state a calm, factual reason for their exclusion, such as substantial financial support already given during your lifetime, foreign settlement with high income, or a prior registered gift deed. Avoid defamatory language.",
+    q: "How should an exclusion clause be worded to prevent court fights?",
+    a: "First, identify the child by their full name and relationship. This proves you were fully aware of them and did not forget them due to memory loss. Second, state a calm, factual reason for their exclusion, such as substantial financial support already given during your lifetime, foreign deal with high income, or a prior filed gift deed. Avoid defamatory language.",
   },
   {
     q: "Can I disinherit an adult child who neglected or abandoned me?",
@@ -78,19 +78,19 @@ const FAQS = [
   },
   {
     q: "What is an in terrorem or no-contest clause in an Indian Will?",
-    a: "An in terrorem clause is a protective provision. It states that if any excluded heir or dissatisfied family member files a court challenge, caveat, or partition suit to dispute your Will, any token legacy or conditional bequest given to them will be immediately revoked and redirected to the primary beneficiaries.",
+    a: "An in terrorem clause is a protective rule. It states that if any excluded heir or dissatisfied family member files a court fight, caveat, or split suit to fight your Will, any token legacy or conditional bequest given to them will be right away revoked and redirected to the primary heirs.",
   },
   {
-    q: "Does registering the Will at the Sub-Registrar Office prevent court disputes?",
-    a: "Registration under Section 18 of the Registration Act, 1908 does not make a Will immune from lawsuits, but it creates a strong legal presumption that the Will was genuine and executed voluntarily. When combined with a doctor's certificate of mental fitness and a video recording of the signing, it makes challenging the Will very difficult for excluded heirs.",
+    q: "Does registering the Will at the SRO office prevent court fights?",
+    a: "Filing under Section 18 of the Filing Act, 1908 does not make a Will immune from lawsuits, but it creates a strong legal presumption that the Will was genuine and signed voluntarily. When combined with a doctor's paper of mental fitness and a video recording of the signing, it makes challenging the Will very difficult for excluded heirs.",
   },
   {
     q: "Should the favored child be present in the room when the Will is signed?",
-    a: "No. Never allow the primary beneficiary to be present during drafting, execution, or registration. The Supreme Court has repeatedly observed that active involvement or presence of the favored beneficiary during the Will execution creates a strong suspicion of undue influence under Section 61 of the Indian Succession Act.",
+    a: "No. Never allow the primary heir to be present during drafting, signing, or filing. The Supreme Court has repeatedly observed that active involvement or presence of the favored heir during the Will signing creates a strong suspicion of undue influence under Section 61 of the Indian Succession Act.",
   },
   {
-    q: "Can a married daughter claim a share in my self-acquired property if excluded?",
-    a: "No. While the 2005 amendment to the Hindu Succession Act gave daughters equal rights in ancestral coparcenary property, self-acquired property is governed entirely by the owner's choice. A parent can leave their self-acquired house, savings, or business entirely to other beneficiaries through a validly executed Will.",
+    q: "Can a married daughter claim a share in my self-acquired asset if excluded?",
+    a: "No. While the 2005 amendment to the Hindu Succession Act gave daughters equal rights in family joint asset, self-acquired asset is governed entirely by the owner's choice. A parent can leave their self-acquired house, savings, or business entirely to other heirs through a validly signed Will.",
   },
 ];
 
@@ -107,13 +107,13 @@ export default function DisinheritanceClauseClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-power");
+  const [activeId, setActiveId] = useState<string>("legal-power");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplateIndex, setCopiedTemplateIndex] = useState<number | null>(null);
   const [copiedGeneratedClause, setCopiedGeneratedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Interactive Generator Form State
+  // Free Generator Form State
   const [heirRole, setHeirRole] = useState<string>("eldest_son");
   const [heirName, setHeirName] = useState<string>("Vikram Sharma");
   const [testatorName, setTestatorName] = useState<string>("Ramesh Chandra Sharma");
@@ -337,14 +337,14 @@ I have a son/daughter named [Full Name of Excluded Heir]. I deeply regret to sta
     },
     {
       title: "Template 4: Prior Registered Gift Deed or Family Settlement",
-      subtitle: "Ideal when the child already received property via a registered deed or release deed",
+      subtitle: "Ideal when the child already received asset via a filed deed or release deed",
       clause: `"EXCLUSION CLAUSE CITING REGISTERED LIFETIME TRANSFER:
 WHEREAS I have already transferred and conveyed absolute ownership of [Description of Property] in favor of my son/daughter, [Full Name], vide Registered Deed of Gift / Settlement dated [Date], registered as Document No. [Doc No.] in the Office of the Sub-Registrar at [SRO Name]. AND WHEREAS the said transfer was accepted by him/her in full and final settlement of all his/her claims and expectations from my assets. NOW THEREFORE, I declare that the said [Full Name] has no further claim, right, or interest in any remaining movable or immovable properties owned by me, and he/she is hereby excluded from any inheritance under this testamentary instrument."`,
       notes: "References registered documents at the Sub-Registrar Office, creating an estoppel against future inheritance claims.",
     },
     {
       title: "Template 5: Complete Spousal Protection & Preservation of Dignity",
-      subtitle: "Ideal when leaving 100% of property to a surviving spouse to prevent eviction by children",
+      subtitle: "Ideal when leaving 100% of asset to a surviving spouse to prevent eviction by children",
       clause: `"TOTAL BEQUEST TO SPOUSE & CONDITIONAL EXCLUSION OF CHILDREN:
 I declare that all my movable and immovable properties are my self-acquired assets. I hereby bequeath the absolute, unencumbered ownership of my entire estate exclusively to my beloved wife/husband, [Spouse Full Name], should he/she survive me. I have consciously and deliberately chosen not to bequeath any share to my sons or daughters, [Names of all children], during the lifetime of my said spouse. My prime objective is to ensure that my spouse retains complete financial autonomy and dignity, without being dependent on or subjected to any partition demands or interference by our children. My children shall not question, contest, or obstruct my spouse's absolute enjoyment of these properties."`,
       notes: "Safeguards the surviving spouse against immediate partition suits or eviction attempts by adult children.",
@@ -370,7 +370,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            How to Write a Disinheritance Clause in an Indian Will
+            How to Write a Leaving Out Clause in an Indian Will
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -395,7 +395,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -473,7 +473,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Compliant with Indian Succession Act 1925 (Sections 59, 61, 63 &amp; 67), Hindu Succession Act 1956
@@ -497,28 +497,28 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Absolute Right on Self-Acquired Assets:</strong> Under Section 59 of the Indian Succession Act,
-                    you can legally exclude any son, daughter, or natural heir from self-acquired property.
+                    you can legally exclude any son, daughter, or natural heir from self-acquired asset.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Unexplained Exclusion Is Suspicious:</strong> The Supreme Court warns that leaving out a
-                    natural heir without a clear reason invites probate challenges. You must state a valid rationale.
+                    natural heir without a clear reason invites probate fights. You must state a valid rationale.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Ancestral Coparcenary Limits:</strong> You cannot disinherit a child from their birthright
-                    in ancestral property under Mitakshara Hindu law. You can only bequeath your own undivided share.
+                    <strong>Family Joint Limits:</strong> You cannot disinherit a child from their birthright
+                    in family asset under Mitakshara Hindu law. You can only bequeath your own undivided share.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Three Shield Protocol:</strong> Combine an explicit exclusion clause with a doctor&apos;s
-                    medical certificate, SRO registration, and beneficiary absence during execution.
+                    medical paper, SRO filing, and heir absence during signing.
                   </span>
                 </li>
               </ul>
@@ -537,18 +537,18 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <p>
                   Every adult of sound mind has the legal right to write a Will in India. Section 59 of the
                   Indian Succession Act, 1925 confirms that any person capable of understanding their actions
-                  can dispose of their property. You are not legally required to distribute your assets equally
+                  can dispose of their asset. You are not legally required to distribute your assets equally
                   among your children.
                 </p>
                 <p>
-                  The purpose of writing a Will is often to change the default rules of intestate succession.
+                  The purpose of writing a Will is often to change the default rules of no-Will estate.
                   When someone dies without a Will, the law divides their estate equally among all Class I legal
-                  heirs. However, by executing a valid Will, you can choose who inherits your property and who
+                  heirs. However, by signing a valid Will, you can choose who inherits your asset and who
                   does not.
                 </p>
                 <p>
-                  Section 30 of the Hindu Succession Act, 1956 also gives full testamentary authority to dispose
-                  of separate or self-acquired property. You can leave your hard-earned home, savings, or investments
+                  Section 30 of the Hindu Succession Act, 1956 also gives full Will office to dispose
+                  of separate or self-acquired asset. You can leave your hard-earned home, savings, or investments
                   to one child, your spouse, or even a charitable organization.
                 </p>
               </div>
@@ -597,18 +597,18 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <span>PROPERTY RIGHTS BOUNDARIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Property Limits: Self-Acquired vs Ancestral Estates
+                3. Asset Limits: Self-Acquired vs Family Estates
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Before writing an exclusion clause, you must verify the legal character of your property. Under
-                  Hindu law, property is divided into two distinct legal classes:
+                  Before writing an exclusion clause, you must verify the legal character of your asset. Under
+                  Hindu law, asset is divided into two distinct legal classes:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2 text-emerald-700">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                      <span>Self-Acquired Property (100% Free)</span>
+                      <span>Self-Acquired Asset (100% Free)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Assets purchased using your own salary, savings, loans, or gifts from friends. You have total
@@ -618,11 +618,11 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2 text-rose-700">
                       <AlertTriangle className="w-4 h-4 text-rose-600" />
-                      <span>Ancestral Property (Coparcenary Birthright)</span>
+                      <span>Family Asset (Joint Birthright)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Property inherited undivided through four generations of male lineage. Children and daughters
-                      acquire an automatic birthright as coparceners. You cannot disinherit them from their ancestral
+                      Asset inherited undivided through four generations of male lineage. Children and daughters
+                      acquire an automatic birthright as coparceners. You cannot disinherit them from their family
                       share.
                     </p>
                   </div>
@@ -633,7 +633,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     href="/tools/ancestral-vs-self-acquired-property-classifier"
                     className="text-[#C65378] font-bold hover:underline"
                   >
-                    Ancestral vs Self-Acquired Property Classifier
+                    Family vs Self-Acquired Asset Classifier
                   </Link>{" "}
                   before writing your clause.
                 </p>
@@ -660,7 +660,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 />
               </div>
               <p className="text-[11px] text-slate-500 text-center italic">
-                Figure: Statutory framework and guardrails for disinheriting legal heirs in India under Sections 59 and 61.
+                Figure: Legal framework and guardrails for disinheriting legal heirs in India under Sections 59 and 61.
               </p>
             </div>
 
@@ -671,11 +671,11 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <span>INTERACTIVE LEGAL TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Exclusion Clause Drafter &amp; Risk Tool
+                4. Free Exclusion Clause Drafter &amp; Risk Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Customize your exclusion clause below. Select the family member, legal justification, and protective
-                safeguards to generate a court-tested clause and evaluate your Will contest vulnerability.
+                safeguards to generate a court-tested clause and evaluate your Will contest risk.
               </p>
 
               {/* Interactive Tool Panel Container */}
@@ -686,7 +686,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <UserCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Testator Full Name</span>
+                      <span>Will maker Full Name</span>
                     </label>
                     <input
                       type="text"
@@ -735,15 +735,15 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Landmark className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Property Category</span>
+                      <span>Asset Category</span>
                     </label>
                     <select
                       value={propertyType}
                       onChange={(e) => setPropertyType(e.target.value)}
                       className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#FAF7F0]/40 focus:outline-hidden focus:ring-2 focus:ring-[#C65378] font-medium"
                     >
-                      <option value="self_acquired">100% Self-Acquired Property</option>
-                      <option value="ancestral">Ancestral / Coparcenary Property</option>
+                      <option value="self_acquired">100% Self-Acquired Asset</option>
+                      <option value="ancestral">Family / Joint Asset</option>
                       <option value="mixed">Mixed Estate (Both Types)</option>
                     </select>
                   </div>
@@ -760,7 +760,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                       className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#FAF7F0]/40 focus:outline-hidden focus:ring-2 focus:ring-[#C65378] font-medium"
                     >
                       <option value="prior_financial_support">
-                        1. Already Provided Substantial Financial Support / Settlement During Lifetime
+                        1. Already Provided Substantial Financial Support / Deal During Lifetime
                       </option>
                       <option value="settled_abroad">
                         2. Child Settled Abroad with Independent Affluence &amp; High Income
@@ -769,7 +769,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                         3. Voluntary Estrangement, Abandonment &amp; Failure to Provide Filial Care
                       </option>
                       <option value="prior_gift_deed">
-                        4. Prior Lifetime Registered Gift Deed / Release Deed Executed
+                        4. Prior Lifetime Filed Gift Deed / Release Deed Signed
                       </option>
                       <option value="spousal_protection">
                         5. Complete Protection &amp; Dignity of Surviving Elderly Spouse
@@ -793,8 +793,8 @@ I declare that all my movable and immovable properties are my self-acquired asse
                         className="mt-0.5 rounded text-[#C65378] focus:ring-[#C65378]"
                       />
                       <div className="text-xs">
-                        <span className="font-bold text-slate-900 block">Doctor Fitness Certificate</span>
-                        <span className="text-slate-500 text-[11px]">MBBS doctor signs on execution day</span>
+                        <span className="font-bold text-slate-900 block">Doctor Fitness Paper</span>
+                        <span className="text-slate-500 text-[11px]">MBBS doctor signs on signing day</span>
                       </div>
                     </label>
 
@@ -806,8 +806,8 @@ I declare that all my movable and immovable properties are my self-acquired asse
                         className="mt-0.5 rounded text-[#C65378] focus:ring-[#C65378]"
                       />
                       <div className="text-xs">
-                        <span className="font-bold text-slate-900 block">Sub-Registrar Registration</span>
-                        <span className="text-slate-500 text-[11px]">Registered at local SRO office</span>
+                        <span className="font-bold text-slate-900 block">SRO Filing</span>
+                        <span className="text-slate-500 text-[11px]">Filed at local SRO office</span>
                       </div>
                     </label>
 
@@ -819,8 +819,8 @@ I declare that all my movable and immovable properties are my self-acquired asse
                         className="mt-0.5 rounded text-[#C65378] focus:ring-[#C65378]"
                       />
                       <div className="text-xs">
-                        <span className="font-bold text-slate-900 block">Video Execution Recording</span>
-                        <span className="text-slate-500 text-[11px]">Testator reads exclusion clause aloud</span>
+                        <span className="font-bold text-slate-900 block">Video Signing Recording</span>
+                        <span className="text-slate-500 text-[11px]">Will maker reads exclusion clause aloud</span>
                       </div>
                     </label>
 
@@ -845,7 +845,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                         className="mt-0.5 rounded text-[#C65378] focus:ring-[#C65378]"
                       />
                       <div className="text-xs">
-                        <span className="font-bold text-slate-900 block">Favored Beneficiary Absent</span>
+                        <span className="font-bold text-slate-900 block">Favored Heir Absent</span>
                         <span className="text-slate-500 text-[11px]">No coercion risk (Kavita Kanwar)</span>
                       </div>
                     </label>
@@ -871,7 +871,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <div className="flex items-center gap-2">
                       <Scale className="w-4 h-4 text-[#C65378]" />
                       <span className="text-xs font-black uppercase tracking-wider text-slate-800">
-                        Will Contest &amp; Challenge Vulnerability Score
+                        Will Contest &amp; Fight Vulnerability Score
                       </span>
                     </div>
                     <div className={`inline-flex items-center px-3 py-1 rounded-full border text-xs font-bold ${riskBadgeColor}`}>
@@ -948,7 +948,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <span>MANDATORY ON-PAGE ASSET</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Five Legally Vetted Disinheritance Clause Templates
+                5. Five Legally Vetted Leaving Out Clause Templates
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Choose from five standardized, lawyer-approved exclusion clauses. Each template addresses a specific
@@ -1027,18 +1027,18 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Judicial Presumption</td>
                       <td className="p-3.5 text-rose-700">Memory lapse, dementia, or coercion suspected</td>
-                      <td className="p-3.5 text-amber-700">Unnatural bequest; burden on beneficiary</td>
-                      <td className="p-3.5 text-emerald-700">Conscious, voluntary testamentary intention</td>
+                      <td className="p-3.5 text-amber-700">Unnatural bequest; burden on heir</td>
+                      <td className="p-3.5 text-emerald-700">Conscious, voluntary Will intention</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Burden of Proof (Section 61)</td>
-                      <td className="p-3.5">Heavy burden to prove testator knew of child</td>
+                      <td className="p-3.5">Heavy burden to prove Will maker knew of child</td>
                       <td className="p-3.5">Moderate burden to prove absence of malice</td>
                       <td className="p-3.5">Discharged; objective rationale recorded in Will</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Probate Caveat Vulnerability</td>
-                      <td className="p-3.5 font-bold text-rose-600">Extremely High (Years of litigation)</td>
+                      <td className="p-3.5 font-bold text-rose-600">Extremely High (Years of court fights)</td>
                       <td className="p-3.5 font-bold text-amber-600">High (Claims of spite or influence)</td>
                       <td className="p-3.5 font-bold text-emerald-600">Very Low (Caveats dismissed early)</td>
                     </tr>
@@ -1051,7 +1051,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Protection for Primary Heirs</td>
                       <td className="p-3.5 text-rose-700">Weak; high risk of stay orders</td>
-                      <td className="p-3.5 text-amber-700">Moderate; protracted family disputes</td>
+                      <td className="p-3.5 text-amber-700">Moderate; protracted family fights</td>
                       <td className="p-3.5 text-emerald-700">Maximum; supported by medical and SRO proof</td>
                     </tr>
                   </tbody>
@@ -1069,14 +1069,14 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 7. Seven Essential Guardrails for a Bulletproof Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Follow this seven-point checklist to ensure your disinheritance clause withstands judicial review in
+                Follow this seven-point checklist to ensure your leaving out clause withstands judicial review in
                 any civil court or High Court probate proceeding.
               </p>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 sm:p-6 space-y-4">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">
-                    Execution Defense Checklist
+                    Signing Defense Checklist
                   </span>
                   <button
                     onClick={copyChecklistToClipboard}
@@ -1117,22 +1117,22 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">3. Contemporaneous Medical Fitness</strong>
-                      <span>Obtain a doctor&apos;s certificate of mental alertness on the exact date of signing.</span>
+                      <span>Obtain a doctor&apos;s paper of mental alertness on the exact date of signing.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">4. Independent Attesting Witnesses</strong>
-                      <span>Choose two witnesses who receive no property under the Will (Section 67 ISA).</span>
+                      <strong className="text-slate-900 block">4. Independent Signing Witnesses</strong>
+                      <span>Choose two witnesses who receive no asset under the Will (Section 67 ISA).</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">5. Beneficiary Separation</strong>
+                      <strong className="text-slate-900 block">5. Heir Separation</strong>
                       <span>Ensure the favored heir is completely absent during drafting and signing.</span>
                     </div>
                   </div>
@@ -1140,16 +1140,16 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">6. Sub-Registrar Registration</strong>
-                      <span>Register the Will under Section 18 of the Registration Act, 1908.</span>
+                      <strong className="text-slate-900 block">6. SRO Filing</strong>
+                      <span>Register the Will under Section 18 of the Filing Act, 1908.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80 md:col-span-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">7. Video Recording of Execution</strong>
-                      <span>Record the testator reading the exclusion clause aloud and signing before witnesses.</span>
+                      <strong className="text-slate-900 block">7. Video Recording of Signing</strong>
+                      <span>Record the Will maker reading the exclusion clause aloud and signing before witnesses.</span>
                     </div>
                   </div>
                 </div>
@@ -1168,7 +1168,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian judicial history demonstrates that the validity of an exclusion clause depends heavily on
-                  how well the testator&apos;s genuine mindset was documented:
+                  how well the Will maker&apos;s genuine mindset was documented:
                 </p>
 
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1177,10 +1177,10 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <span>Ram Piari v. Bhagwant (1990) 3 SCC 364 (Supreme Court of India)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator executed a Will disinheriting his married daughter in favor of another heir. The Will
+                    The Will maker signed a Will disinheriting his married daughter in favor of another heir. The Will
                     failed to assign any reason for depriving the daughter. The Supreme Court held that the unnatural
                     exclusion of a daughter without explanation casts grave suspicion on the voluntary nature of the
-                    Will, especially when the propounder took an active part in execution.
+                    Will, especially when the propounder took an active part in signing.
                   </p>
                 </div>
 
@@ -1190,9 +1190,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <span>Kavita Kanwar v. Pamela Mehta (2020) 7 SCC 657 (Supreme Court of India)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testatrix left her entire property to one daughter while completely excluding other children.
-                    The favored daughter played a dominant role in preparing and executing the Will. The Supreme Court
-                    reaffirmed that unexplained exclusion of natural heirs, coupled with the beneficiary&apos;s active
+                    The testatrix left her entire asset to one daughter while completely excluding other children.
+                    The favored daughter played a dominant role in preparing and signing the Will. The Supreme Court
+                    reaffirmed that unexplained exclusion of natural heirs, coupled with the heir&apos;s active
                     participation, makes the Will invalid under Section 61.
                   </p>
                 </div>
@@ -1203,9 +1203,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     <span>Rabindra Nath Mukherjee v. Panchanan Banerjee (1995) 4 SCC 459</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Supreme Court clarified that the mere fact that a natural heir is deprived of property is not
+                    The Supreme Court clarified that the mere fact that a natural heir is deprived of asset is not
                     per se an unnatural circumstance, because the whole purpose of writing a Will is to alter the
-                    default rules of succession. If the testator clearly articulates their reasons, the court will
+                    default rules of estate. If the Will maker clearly articulates their reasons, the court will
                     respect their decision.
                   </p>
                 </div>
@@ -1224,19 +1224,19 @@ I declare that all my movable and immovable properties are my self-acquired asse
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <ol className="list-decimal pl-5 space-y-3 text-xs sm:text-sm">
                   <li>
-                    <strong>Identify Property Titles:</strong> Gather original sale deeds, conveyance deeds, or share
-                    certificates. Verify that the properties to be willed are strictly self-acquired.
+                    <strong>Identify Asset Titles:</strong> Gather original sale deeds, conveyance deeds, or share
+                    papers. Verify that the assets to be willed are strictly self-acquired.
                   </li>
                   <li>
                     <strong>Select the Relevant Exclusion Rationale:</strong> Pick the accurate legal template (e.g.
-                    prior gifts, foreign settlement, spousal care, or filial neglect).
+                    prior gifts, foreign deal, spousal care, or filial neglect).
                   </li>
                   <li>
-                    <strong>Medical Examination on Execution Day:</strong> Visit a registered medical practitioner (MBBS).
-                    Have the doctor sign a fitness certificate confirming you are oriented in time, place, and memory.
+                    <strong>Medical Examination on Signing Day:</strong> Visit a filed medical practitioner (MBBS).
+                    Have the doctor sign a fitness paper confirming you are oriented in time, place, and memory.
                   </li>
                   <li>
-                    <strong>Independent Witness Attestation:</strong> Under Section 63(c) of the Indian Succession Act,
+                    <strong>Independent Witness Witness Signing:</strong> Under Section 63(c) of the Indian Succession Act,
                     two witnesses must see you sign the Will, and you must see them sign in your presence.
                   </li>
                   <li>
@@ -1244,8 +1244,8 @@ I declare that all my movable and immovable properties are my self-acquired asse
                     on video. Store the digital video file on a USB flash drive alongside the original paper Will.
                   </li>
                   <li>
-                    <strong>Registration at the Sub-Registrar Office:</strong> Present the Will for registration under
-                    Section 18 of the Registration Act. Both witnesses must accompany you for biometric verification.
+                    <strong>Filing at the SRO office:</strong> Present the Will for filing under
+                    Section 18 of the Filing Act. Both witnesses must accompany you for biometric check.
                   </li>
                 </ol>
               </div>
@@ -1285,18 +1285,18 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <span>LEGAL EXPERTISE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Legal Backing: AMA Legal Solutions Succession Desk
+                11. Legal Backing: AMA Legal Solutions Estate Desk
               </h3>
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting is backed by senior testamentary counsels and High Court advocates at AMA Legal
+                  WillDrafting is backed by senior Will counsels and High Court lawyers at AMA Legal
                   Solutions. Our legal team regularly advises families across India and NRIs worldwide on complex estate
-                  matters, including disinheritance defense, family settlements, and probate litigation.
+                  matters, including leaving out defense, family settlements, and probate court fights.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-center">
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <div className="font-extrabold text-slate-900 text-base">25+ Years</div>
-                    <div className="text-[10px] text-slate-500 font-bold uppercase">Succession Law Practice</div>
+                    <div className="text-[10px] text-slate-500 font-bold uppercase">Estate Law Practice</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <div className="font-extrabold text-slate-900 text-base">100% Vetted</div>
@@ -1304,7 +1304,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <div className="font-extrabold text-slate-900 text-base">Pan-India SRO</div>
-                    <div className="text-[10px] text-slate-500 font-bold uppercase">Registration Guidance</div>
+                    <div className="text-[10px] text-slate-500 font-bold uppercase">Filing Guidance</div>
                   </div>
                 </div>
               </div>
@@ -1320,7 +1320,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 12. Frequently Asked Questions: Disinheriting Legal Heirs
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Common questions answered by testamentary lawyers on excluding natural heirs in Indian Wills.
+                Common questions answered by Will lawyers on excluding natural heirs in Indian Wills.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1360,12 +1360,12 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <span>STATUTORY AUTHORITIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; High Court Precedents
+                13. Legal Citations &amp; High Court Precedents
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-3 text-xs text-slate-700">
                 <p className="leading-relaxed">
                   All clauses and legal recommendations in this guide are drafted in strict accordance with the
-                  governing statutory enactments of India:
+                  governing legal enactments of India:
                 </p>
                 <div className="flex flex-wrap gap-2 pt-1">
                   <a
@@ -1408,20 +1408,20 @@ I declare that all my movable and immovable properties are my self-acquired asse
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Succession Tools &amp; Legal Templates
+                    Related WillDrafting Estate Tools &amp; Legal Templates
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/will-contest-challenge-risk-calculator"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Will Contest Risk Calculator
+                      Will Contest Risk Tool
                     </Link>
                     <Link
                       href="/tools/ancestral-vs-self-acquired-property-classifier"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Ancestral vs Self-Acquired Classifier
+                      Family vs Self-Acquired Classifier
                     </Link>
                     <Link
                       href="/tools/will-validity-section-63-audit-checker"
@@ -1439,13 +1439,35 @@ I declare that all my movable and immovable properties are my self-acquired asse
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Registration SRO Assistance
+                      Will Filing SRO Help
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1458,21 +1480,21 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   AMA
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section 59 exclusion
-                clause defense, and cross-border succession disputes.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section 59 exclusion
+                clause defense, and cross-border estate fights.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1486,10 +1508,10 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <span>PREVENT FUTURE PROBATE CHALLENGES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Chosen Beneficiaries from Lawsuits
+                  Protect Your Chosen Heirs from Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A clearly drafted, legally registered Will with customized exclusion clauses protects your chosen
+                  A clearly drafted, legally filed Will with customized exclusion clauses protects your chosen
                   family members against long probate battles.
                 </p>
                 <button
@@ -1515,15 +1537,15 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   Excluding an Heir or Anticipating Family Objections?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our testamentary litigators advise on video execution protocols, doctor certificates, and SRO
-                  registration to make your Will airtight.
+                  Our Will litigators advise on video signing protocols, doctor papers, and SRO
+                  filing to make your Will airtight.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <UserCheck className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1542,7 +1564,7 @@ I declare that all my movable and immovable properties are my self-acquired asse
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>No-Contest Safeguards:</strong> Includes in terrorem forfeiture provisions.
+                      <strong>No-Contest Safeguards:</strong> Includes in terrorem forfeiture rules.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

@@ -50,10 +50,10 @@ import {
 const TOC_ITEMS = [
   { id: "executive-summary", label: "Executive Brief: Executor Roles in India" },
   { id: "statutory-framework", label: "1. Legal Definition & Duties Under the ISA" },
-  { id: "executor-vs-administrator", label: "2. Executor vs Administrator vs Nominee" },
+  { id: "executor-vs-administrator", label: "2. Executor vs Head vs Nominee" },
   { id: "priority-of-debts", label: "3. Priority of Debts & ISA Section 325" },
   { id: "first-90-days-checklist", label: "4. Printable 90-Day Executor Action Plan" },
-  { id: "interactive-checklist", label: "5. Interactive Legal Compliance Checklist" },
+  { id: "interactive-checklist", label: "5. Free Legal Compliance Checklist" },
   { id: "visual-blueprint", label: "6. Visual Blueprint: First 90 Days Roadmap" },
   { id: "step-by-step-sop", label: "7. Step-by-Step SOP: Settling an Estate" },
   { id: "powers-and-limitations", label: "8. Legal Powers & Restrictions of Executors" },
@@ -61,7 +61,7 @@ const TOC_ITEMS = [
   { id: "common-mistakes", label: "10. Common Mistakes by First-Time Executors" },
   { id: "avoid-with-a-will", label: "11. Why Naming an Executor Saves Your Family" },
   { id: "specialized-scenarios", label: "12. NRI Executors & Multiple Co-Executors" },
-  { id: "legal-services", label: "13. Estate Settlement Lawyers at WillDrafting.in" },
+  { id: "legal-services", label: "13. Estate Deal Lawyers at WillDrafting.in" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions: Executor Duties" },
   { id: "statutory-citations", label: "15. Official Acts, Sections & Court Rulings" },
 ];
@@ -107,12 +107,12 @@ const CHECKLIST_ITEMS = [
   {
     id: "check-1",
     label: "Original Will Secured in Safe Custody",
-    subtext: "Original document retrieved and inspected for signatures, dates, and codicils.",
+    subtext: "Original paper retrieved and inspected for signatures, dates, and codicils.",
   },
   {
     id: "check-2",
-    label: "Death Certificates Issued by Municipal Body",
-    subtext: "At least 15 verified copies secured for banks, registrar, and asset transmission.",
+    label: "Death Papers Issued by City Body",
+    subtext: "At least 15 checked copies secured for banks, registrar, and asset transfer.",
   },
   {
     id: "check-3",
@@ -121,18 +121,18 @@ const CHECKLIST_ITEMS = [
   },
   {
     id: "check-4",
-    label: "Probate Jurisdiction Evaluated Under ISA Section 213",
-    subtext: "Assessed whether court probate is legally mandatory in Mumbai, Kolkata, or Chennai.",
+    label: "Probate Area Evaluated Under ISA Section 213",
+    subtext: "Assessed whether court probate is legally needed in Mumbai, Kolkata, or Chennai.",
   },
   {
     id: "check-5",
     label: "Priority Debts & Deceased ITR Discharged",
-    subtext: "Funeral, medical, and tax liabilities settled before any beneficiary payouts.",
+    subtext: "Funeral, medical, and tax liabilities settled before any heir payouts.",
   },
   {
     id: "check-6",
     label: "Written Executor Assent & Accounting Completed",
-    subtext: "Final accounts rendered and signed releases collected from all beneficiaries.",
+    subtext: "Final accounts rendered and signed releases collected from all heirs.",
   },
 ];
 
@@ -188,7 +188,7 @@ const DEBT_PRIORITY_ROWS = [
     rank: "Rank 2",
     category: "Probate & Estate Administration Costs",
     statute: "ISA Section 321",
-    description: "Court fees, advocate retainers, asset security, and preservation expenses.",
+    description: "Court fees, lawyer retainers, asset security, and preservation expenses.",
     status: "Essential",
     color: "text-blue-700 font-bold",
   },
@@ -220,7 +220,7 @@ const DEBT_PRIORITY_ROWS = [
     rank: "Rank 6",
     category: "Specific & Residuary Legacies",
     statute: "ISA Sections 327 & 332",
-    description: "Only remaining net assets can be paid to beneficiaries named in the Will.",
+    description: "Only remaining net assets can be paid to heirs named in the Will.",
     status: "Final Stage",
     color: "text-rose-700 font-bold",
   },
@@ -285,7 +285,7 @@ const STEP_STAGES = [
     title: "Locate Original Will & Order Death Certificates",
     authority: "Municipal Corporation / Panchayat",
     description:
-      "Locate the signed original Will and any Codicils. Store them in a secure, fireproof location. Apply for at least 15 to 20 certified copies of the official death certificate from the local registrar. Banks, insurance firms, and revenue departments insist on original stamped certificates.",
+      "Locate the signed original Will and any Codicils. Store them in a secure, fireproof location. Apply for at least 15 to 20 certified copies of the official death paper from the local registrar. Banks, insurance firms, and revenue departments insist on original stamped papers.",
   },
   {
     number: "02",
@@ -293,7 +293,7 @@ const STEP_STAGES = [
     title: "Assemble Comprehensive Asset & Liability Ledger",
     authority: "Banks, Depository Participants & Tax Portals",
     description:
-      "Compile a complete inventory of everything the deceased owned. Gather bank savings details, fixed deposits, demat holdings, mutual fund folios, gold locker records, real estate title deeds, and vehicle registrations. Document every outstanding loan, credit card, and utility liability.",
+      "Compile a complete inventory of everything the deceased owned. Gather bank savings details, fixed deposits, demat holdings, mutual fund folios, gold locker records, real estate title deeds, and vehicle registrations. Paper every outstanding loan, credit card, and utility liability.",
   },
   {
     number: "03",
@@ -301,7 +301,7 @@ const STEP_STAGES = [
     title: "Serve Formal Notice to Financial Institutions",
     authority: "Branch Managers & Depository Participants",
     description:
-      "Issue written death notices with death certificates to all banks and depository participants. This protects the estate by stopping unauthorized withdrawals and standing orders. Request official certificates of balance as of the exact date of death for estate accounting.",
+      "Issue written death notices with death papers to all banks and depository participants. This protects the estate by stopping unauthorized withdrawals and standing orders. Request official papers of balance as of the exact date of death for estate accounting.",
   },
   {
     number: "04",
@@ -309,7 +309,7 @@ const STEP_STAGES = [
     title: "Assess Probate Mandate & File Court Petition",
     authority: "District Court or High Court Jurisdiction",
     description:
-      "Determine if the estate requires a court probate. Under Section 213 of the Indian Succession Act, probate is mandatory for Hindu, Sikh, Jain, and Buddhist Wills executed in Mumbai, Kolkata, or Chennai, or covering properties located there. In other states, an executor can act without court grant unless challenged.",
+      "Determine if the estate requires a court probate. Under Section 213 of the Indian Succession Act, probate is needed for Hindu, Sikh, Jain, and Buddhist Wills signed in Mumbai, Kolkata, or Chennai, or covering assets located there. In other states, an executor can act without court grant unless challenged.",
   },
   {
     number: "05",
@@ -317,7 +317,7 @@ const STEP_STAGES = [
     title: "Clear Debts & File Section 159 Income Tax Returns",
     authority: "Income Tax Department & Verified Creditors",
     description:
-      "Pay outstanding liabilities in statutory priority order under ISA Sections 320 to 325. As the legal representative under Section 159 of the Income Tax Act, 1961, register on the e-filing portal and file the deceased person's final income tax return up to the date of demise.",
+      "Pay outstanding liabilities in legal priority order under ISA Sections 320 to 325. As the legal agent under Section 159 of the Income Tax Act, 1961, register on the e-filing portal and file the deceased person's final income tax return up to the date of demise.",
   },
   {
     number: "06",
@@ -325,7 +325,7 @@ const STEP_STAGES = [
     title: "Execute Executor Assent & Complete Final Accounts",
     authority: "Beneficiaries & Sub-Registrar Office",
     description:
-      "Under Section 332 of the ISA, provide formal Executor Assent to complete the beneficiaries' legal title. Hand over specific bequests, assist with revenue mutation for real estate, distribute remaining funds, and obtain signed receipts and indemnity releases from every heir.",
+      "Under Section 332 of the ISA, provide formal Executor Assent to complete the heirs' legal title. Hand over specific bequests, assist with revenue name change for real estate, distribute remaining funds, and obtain signed receipts and indemnity releases from every heir.",
   },
 ];
 
@@ -334,7 +334,7 @@ const POWERS_GRID = [
     title: "Universal Legal Representation",
     statute: "Section 211, ISA 1925",
     badge: "Core Authority",
-    desc: "The executor stands as the legal representative of the deceased for all purposes. All real and personal property of the deceased person vests legally in the executor upon death.",
+    desc: "The executor stands as the legal agent of the deceased for all purposes. All real and personal asset of the deceased person vests legally in the executor upon death.",
   },
   {
     title: "Power to Sue & Defend Claims",
@@ -352,7 +352,7 @@ const POWERS_GRID = [
     title: "Fiduciary Duty & Immunity",
     statute: "Section 319 & 368, ISA 1925",
     badge: "Legal Protection",
-    desc: "Executors who act in good faith and with reasonable diligence are fully protected. Personal liability only arises if an executor wastes property or favors one heir improperly.",
+    desc: "Executors who act in good faith and with reasonable diligence are fully protected. Personal liability only arises if an executor wastes asset or favors one heir improperly.",
   },
 ];
 
@@ -360,65 +360,65 @@ const SCENARIOS = [
   {
     title: "NRI Appointed as Sole Executor",
     icon: Globe2,
-    desc: "An NRI can legally serve as an executor in India. However, managing physical property, visiting bank branches, and attending court hearings from overseas is challenging. Appointing a resident co-executor or granting a Special Power of Attorney to a trusted Indian advocate simplifies the entire process.",
+    desc: "An NRI can legally serve as an executor in India. However, managing physical asset, visiting bank branches, and attending court hearings from overseas is challenging. Appointing a resident co-executor or granting a Special Power of Attorney to a trusted Indian advocate simplifies the entire process.",
   },
   {
     title: "Executor Who is Also a Beneficiary",
     icon: Users,
-    desc: "It is 100% legal for an executor to receive property under the Will. A spouse or adult child is very often appointed as executor. The critical legal safeguard is that this person must never sign the Will as an attesting witness, because Section 67 voids bequests made to witnesses.",
+    desc: "It is 100% legal for an executor to receive asset under the Will. A spouse or adult child is very often appointed as executor. The critical legal safeguard is that this person must never sign the Will as an signing witness, because Section 67 voids bequests made to witnesses.",
   },
   {
     title: "Multiple Co-Executors in Disagreement",
     icon: Split,
-    desc: "Under Section 311 of the ISA, when several executors are appointed, probate may be granted to them all. Any one executor can perform ordinary acts of administration, but major property transfers generally require joint consent. If deadlocks occur, any co-executor can seek court directions.",
+    desc: "Under Section 311 of the ISA, when several executors are appointed, probate may be granted to them all. Any one executor can perform ordinary acts of care, but major asset transfers generally require joint consent. If deadlocks occur, any co-executor can seek court directions.",
   },
   {
     title: "Executor Refuses, Resigns, or Dies",
     icon: AlertCircle,
-    desc: "No person can be forced to act as an executor. Under Sections 229 and 230, an executor can formally renounce probate before intermeddling. If the executor renounces or passes away, beneficiaries can petition the court for Letters of Administration with the Will annexed under Section 232.",
+    desc: "No person can be forced to act as an executor. Under Sections 229 and 230, an executor can formally renounce probate before intermeddling. If the executor renounces or passes away, heirs can petition the court for Letters of Care with the Will annexed under Section 232.",
   },
 ];
 
 const FAQ_ITEMS = [
   {
     q: "What is an executor of a Will in India?",
-    a: "Under Section 2(c) of the Indian Succession Act, 1925, an executor is a trusted individual appointed by the testator in their Will to manage and distribute their estate. The executor stands as the legal representative of the deceased for all purposes under Section 211.",
+    a: "Under Section 2(c) of the Indian Succession Act, 1925, an executor is a trusted single appointed by the Will maker in their Will to manage and distribute their estate. The executor stands as the legal agent of the deceased for all purposes under Section 211.",
   },
   {
     q: "What are the primary legal duties of an executor in India?",
-    a: "An executor has five core legal duties: (1) Secure the original Will and obtain death certificates; (2) Collect and preserve all estate assets with due diligence; (3) Pay statutory debts in priority order under Sections 320 to 325; (4) Obtain probate if required by jurisdiction; and (5) Distribute assets to beneficiaries and file an estate inventory under Section 317.",
+    a: "An executor has five core legal duties: (1) Secure the original Will and obtain death papers; (2) Collect and preserve all estate assets with due diligence; (3) Pay legal debts in priority order under Sections 320 to 325; (4) Obtain probate if required by area; and (5) Distribute assets to heirs and file an estate inventory under Section 317.",
   },
   {
     q: "Is an executor personally liable for the debts of the deceased person?",
-    a: "No. An executor is never personally liable for the debts of the deceased out of their own private pocket. Debts are cleared strictly using the assets left behind by the deceased. However, if an executor distributes estate assets to beneficiaries without paying known creditors first, they may become personally liable for wasting estate property (devastavit) under Section 368.",
+    a: "No. An executor is never personally liable for the debts of the deceased out of their own private pocket. Debts are cleared strictly using the assets left behind by the deceased. However, if an executor distributes estate assets to heirs without paying known creditors first, they may become personally liable for wasting estate asset (devastavit) under Section 368.",
   },
   {
-    q: "Can an executor also be a beneficiary in the same Will?",
-    a: "Yes. Under Indian law, an executor can absolutely be a beneficiary. In fact, many individuals appoint a primary heir (such as an adult son, daughter, or spouse) as their executor. However, an executor who is also a beneficiary must never witness the Will, as Section 67 voids gifts to attesting witnesses.",
+    q: "Can an executor also be a heir in the same Will?",
+    a: "Yes. Under Indian law, an executor can absolutely be a heir. In fact, many people appoint a primary heir (such as an adult son, daughter, or spouse) as their executor. However, an executor who is also a heir must never witness the Will, as Section 67 voids gifts to signing witnesses.",
   },
   {
-    q: "Does an executor have the power to sell estate property?",
-    a: "Under Section 307 of the Indian Succession Act, an executor has general power to dispose of estate property to pay funeral costs, court expenses, and valid debts of the deceased, unless the Will explicitly restricts this power. When probate is granted, court restrictions on property sales must be strictly obeyed.",
+    q: "Does an executor have the power to sell estate asset?",
+    a: "Under Section 307 of the Indian Succession Act, an executor has general power to dispose of estate asset to pay funeral costs, court expenses, and valid debts of the deceased, unless the Will explicitly restricts this power. When probate is granted, court restrictions on asset sales must be strictly obeyed.",
   },
   {
     q: "Can a named executor refuse to take up the role?",
-    a: "Yes. No person is legally forced to serve as an executor. Under Sections 229 and 230 of the Indian Succession Act, a named executor can formally renounce their appointment in writing or orally before the court before intermeddling with estate assets. In that case, beneficiaries can apply for Letters of Administration with the Will annexed.",
+    a: "Yes. No person is legally forced to serve as an executor. Under Sections 229 and 230 of the Indian Succession Act, a named executor can formally renounce their appointment in writing or orally before the court before intermeddling with estate assets. In that case, heirs can apply for Letters of Care with the Will annexed.",
   },
   {
-    q: "What is the difference between an executor and an administrator?",
-    a: "An executor is appointed directly by the testator inside a written Will. An administrator is appointed by a court through Letters of Administration when there is no Will (intestate death), or when the Will does not name an executor, or when the named executor renounces or passes away.",
+    q: "What is the difference between an executor and an head?",
+    a: "An executor is appointed directly by the Will maker inside a written Will. An head is appointed by a court through Letters of Care when there is no Will (no-Will death), or when the Will does not name an executor, or when the named executor renounces or passes away.",
   },
   {
-    q: "How long does an executor have to complete estate distribution in India?",
-    a: "Under Section 317 of the Indian Succession Act, an executor must exhibit a full inventory of the property and credits within 6 months of probate, and submit a final accounting within 1 year. Section 343 provides an 'executor's year'—meaning an executor cannot generally be compelled to pay out legacies until one year after the testator's death.",
+    q: "How long does an executor have to complete estate split in India?",
+    a: "Under Section 317 of the Indian Succession Act, an executor must exhibit a full inventory of the asset and credits within 6 months of probate, and submit a final accounting within 1 year. Section 343 provides an 'executor's year'—meaning an executor cannot generally be compelled to pay out legacies until one year after the Will maker's death.",
   },
   {
-    q: "Is probate always mandatory for an executor in India?",
-    a: "Under Section 213 of the Indian Succession Act, probate is mandatory for Wills made by Hindus, Buddhists, Jains, or Sikhs only if made within the historic presidential towns of Mumbai, Kolkata, or Chennai, or if immovable properties are situated within those limits. In other states, probate is optional unless a bank or housing society specifically demands a court grant.",
+    q: "Is probate always needed for an executor in India?",
+    a: "Under Section 213 of the Indian Succession Act, probate is needed for Wills made by Hindus, Buddhists, Jains, or Sikhs only if made within the historic presidential towns of Mumbai, Kolkata, or Chennai, or if land assets are situated within those limits. In other states, probate is a choice unless a bank or housing society mainly demands a court grant.",
   },
   {
     q: "Can an executor be removed by court for mismanaging estate assets?",
-    a: "Yes. Under Section 301 of the Indian Succession Act, the High Court has inherent power to suspend, remove, or discharge an executor on grounds of gross negligence, fraud, conflict of interest, or unreasonable delay, and appoint a court administrator to safeguard beneficiary interests.",
+    a: "Yes. Under Section 301 of the Indian Succession Act, the High Court has inherent power to suspend, remove, or discharge an executor on grounds of gross negligence, fraud, conflict of interest, or unreasonable delay, and appoint a court head to safeguard heir interests.",
   },
 ];
 
@@ -556,7 +556,7 @@ export default function ExecutorOfWillDutiesClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Appointed as an executor? Discover your statutory duties under the Indian Succession Act, follow our printable 90-day execution checklist, and settle the estate smoothly without personal liability.
+            Appointed as an executor? Discover your legal duties under the Indian Succession Act, follow our printable 90-day signing checklist, and settle the estate smoothly without personal liability.
           </p>
 
           {/* CTA Buttons */}
@@ -591,7 +591,7 @@ export default function ExecutorOfWillDutiesClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Estate Administration
+                Estate Care
               </span>
             </div>
 
@@ -716,13 +716,13 @@ export default function ExecutorOfWillDutiesClient() {
                 Executive Brief: Executor Roles in India
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Serving as an executor in India is a fiduciary honor and a serious legal responsibility. Here are the core statutory realities every executor must understand:
+                Serving as an executor in India is a fiduciary honor and a serious legal responsibility. Here are the core legal realities every executor must understand:
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Owner:</strong> Under Section 211, all estate property legally vests in the executor.
+                    <strong>Legal Owner:</strong> Under Section 211, all estate asset legally vests in the executor.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -734,13 +734,13 @@ export default function ExecutorOfWillDutiesClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Strict Priority Rules:</strong> Funeral and taxes must be cleared before any beneficiary payout.
+                    <strong>Strict Priority Rules:</strong> Funeral and taxes must be cleared before any heir payout.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Probate Boundary:</strong> Mandatory only in Mumbai, Kolkata, Chennai or where land lies therein.
+                    <strong>Probate Boundary:</strong> Needed only in Mumbai, Kolkata, Chennai or where land lies therein.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -752,7 +752,7 @@ export default function ExecutorOfWillDutiesClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Freedom to Refuse:</strong> Any named executor may renounce probate before starting administration.
+                    <strong>Freedom to Refuse:</strong> Any named executor may renounce probate before starting care.
                   </span>
                 </li>
               </ul>
@@ -762,7 +762,7 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="statutory-framework" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 1. Legal Definition &amp; Duties Under the ISA
@@ -771,10 +771,10 @@ export default function ExecutorOfWillDutiesClient() {
                 When a family member or friend passes away and leaves a Last Will, someone must take charge of carrying out their final wishes. In Indian law, this person is known as the <strong>Executor</strong>.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under <strong>Section 2(c) of the Indian Succession Act, 1925</strong>, an executor is formally defined as: <em>&ldquo;a person to whom the execution of the last will of a deceased person is, by the testator&rsquo;s appointment, confided.&rdquo;</em> In plain words, the deceased trusted you above everyone else to settle their debts, handle their accounts, and give their hard-earned assets to their chosen beneficiaries.
+                Under <strong>Section 2(c) of the Indian Succession Act, 1925</strong>, an executor is formally defined as: <em>&ldquo;a person to whom the signing of the last will of a deceased person is, by the Will maker&rsquo;s appointment, confided.&rdquo;</em> In plain words, the deceased trusted you above everyone else to settle their debts, handle their accounts, and give their hard-earned assets to their chosen heirs.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The most important legal provision is <strong>Section 211 of the Indian Succession Act</strong>. This section declares that the executor is the <em>legal representative of the deceased for all purposes</em>. All the real estate, bank deposits, shares, and personal belongings of the deceased person automatically vest in the executor upon death.
+                The most important legal rule is <strong>Section 211 of the Indian Succession Act</strong>. This section declares that the executor is the <em>legal agent of the deceased for all purposes</em>. All the real estate, bank deposits, shares, and personal belongings of the deceased person automatically vest in the executor upon death.
               </p>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-2">
                 <span className="font-bold text-[#172228] block flex items-center gap-1.5">
@@ -782,7 +782,7 @@ export default function ExecutorOfWillDutiesClient() {
                   What Does &ldquo;Vesting&rdquo; Mean in Plain English?
                 </span>
                 <p>
-                  Vesting does <strong>not</strong> mean you become the personal owner of the wealth. Instead, you hold legal title strictly as a <strong>fiduciary trustee</strong>. You hold the keys so that no unauthorized person can sell the house, empty the bank accounts, or take the jewellery until debts are paid and the Will is properly executed.
+                  Vesting does <strong>not</strong> mean you become the personal owner of the wealth. Instead, you hold legal title strictly as a <strong>fiduciary trustee</strong>. You hold the keys so that no unauthorized person can sell the house, empty the bank accounts, or take the jewellery until debts are paid and the Will is properly signed.
                 </p>
               </div>
             </section>
@@ -794,10 +794,10 @@ export default function ExecutorOfWillDutiesClient() {
                 <span>Legal Comparison</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Executor vs Administrator vs Nominee
+                2. Executor vs Head vs Nominee
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Many families confuse an executor with an administrator or a bank nominee. These three roles are completely distinct under Indian law. Understanding who has what legal power prevents bitter disputes:
+                Many families confuse an executor with an head or a bank nominee. These three roles are completely distinct under Indian law. Understanding who has what legal power prevents bitter fights:
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
@@ -806,7 +806,7 @@ export default function ExecutorOfWillDutiesClient() {
                     <tr className="bg-[#172228] text-white">
                       <th className="p-3.5 sm:p-4 font-bold border-r border-slate-800">Feature</th>
                       <th className="p-3.5 sm:p-4 font-bold border-r border-slate-800">Executor</th>
-                      <th className="p-3.5 sm:p-4 font-bold border-r border-slate-800">Administrator</th>
+                      <th className="p-3.5 sm:p-4 font-bold border-r border-slate-800">Head</th>
                       <th className="p-3.5 sm:p-4 font-bold">Nominee (Bank / Demat)</th>
                     </tr>
                   </thead>
@@ -832,7 +832,7 @@ export default function ExecutorOfWillDutiesClient() {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 italic">
-                <strong>Crucial Takeaway:</strong> As confirmed by the Supreme Court of India in <em>Sarbati Devi (1984)</em> and reaffirmed in <em>Shakti Yezdani v. Jamshed Irani (2024)</em>, a nominee is merely a temporary recipient who receives funds on behalf of the true legal heirs or beneficiaries specified in the Will.
+                <strong>Crucial Takeaway:</strong> As confirmed by the Supreme Court of India in <em>Sarbati Devi (1984)</em> and reaffirmed in <em>Shakti Yezdani v. Jamshed Irani (2024)</em>, a nominee is merely a temporary recipient who receives funds on behalf of the true legal heirs or heirs specified in the Will.
               </p>
             </section>
 
@@ -840,13 +840,13 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="priority-of-debts" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <DollarSign className="w-4 h-4" />
-                <span>Statutory Order of Settlement</span>
+                <span>Legal Order of Deal</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Priority of Debts &amp; ISA Section 325
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The most dangerous mistake an inexperienced executor can make is handing over cash, jewellery, or property to beneficiaries right away. Under <strong>Section 325 of the Indian Succession Act</strong>, all debts of the deceased person <strong>must be paid before any legacy or inheritance is distributed</strong>.
+                The most dangerous mistake an inexperienced executor can make is handing over cash, jewellery, or asset to heirs right away. Under <strong>Section 325 of the Indian Succession Act</strong>, all debts of the deceased person <strong>must be paid before any legacy or estate is distributed</strong>.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The Indian Succession Act sets down a strict mathematical order of priority for settling expenses. You must clear higher-ranking debts first:
@@ -890,10 +890,10 @@ export default function ExecutorOfWillDutiesClient() {
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-900 space-y-1">
                 <span className="font-bold flex items-center gap-1.5">
                   <AlertTriangle className="w-4 h-4 text-amber-700" />
-                  Warning: The Legal Risk of &ldquo;Devastavit&rdquo; (Wasting Estate Property)
+                  Warning: The Legal Risk of &ldquo;Devastavit&rdquo; (Wasting Estate Asset)
                 </span>
                 <p>
-                  Under <strong>Section 368 of the Indian Succession Act</strong>, if an executor hands out assets to children or relatives and leaves a bank loan or tax bill unpaid, the executor becomes <strong>personally liable</strong> to repay that creditor out of their own private pocket. Always pay creditors before beneficiaries.
+                  Under <strong>Section 368 of the Indian Succession Act</strong>, if an executor hands out assets to children or relatives and leaves a bank loan or tax bill unpaid, the executor becomes <strong>personally liable</strong> to repay that creditor out of their own private pocket. Always pay creditors before heirs.
                 </p>
               </div>
             </section>
@@ -908,7 +908,7 @@ export default function ExecutorOfWillDutiesClient() {
                 4. Printable 90-Day Executor Action Plan
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Estate administration can feel overwhelming during bereavement. This comprehensive, lawyer-approved 90-day checklist organizes every single statutory responsibility into clean weekly phases.
+                Estate care can feel overwhelming during bereavement. This full, lawyer-approved 90-day checklist organizes every single legal responsibility into clean weekly phases.
               </p>
 
               {/* Action Toolbar */}
@@ -956,10 +956,10 @@ export default function ExecutorOfWillDutiesClient() {
                 <span>Live Audit Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                5. Interactive Legal Compliance Checklist
+                5. Free Legal Compliance Checklist
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Track your real-time administration progress. Click each compliance checkpoint as you complete it to verify statutory readiness under the Indian Succession Act:
+                Track your real-time care progress. Click each compliance checkpoint as you complete it to verify legal readiness under the Indian Succession Act:
               </p>
 
               {/* Progress Bar */}
@@ -1027,13 +1027,13 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="visual-blueprint" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Eye className="w-4 h-4" />
-                <span>Statutory Blueprint</span>
+                <span>Legal Blueprint</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Visual Blueprint: First 90 Days Roadmap
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The chart below visually diagrams the complete ecosystem of an executor&rsquo;s duties in India, from securing the physical Will to institutional bank freezes, real estate mutation, and final accounting:
+                The chart below visually diagrams the complete ecosystem of an executor&rsquo;s duties in India, from securing the physical Will to institutional bank freezes, real estate name change, and final accounting:
               </p>
 
               <div className="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs">
@@ -1050,7 +1050,7 @@ export default function ExecutorOfWillDutiesClient() {
                 <div className="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
                   <div>
                     <span className="font-bold text-slate-800">Visual Guide: </span>
-                    <span>Anatomy of Estate Administration under the Indian Succession Act, 1925.</span>
+                    <span>Anatomy of Estate Care under the Indian Succession Act, 1925.</span>
                   </div>
                   <a
                     href="/images/executor-of-will-duties-india.jpg"
@@ -1075,7 +1075,7 @@ export default function ExecutorOfWillDutiesClient() {
                 7. Step-by-Step SOP: Settling an Estate
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Follow this verified 6-stage Standard Operating Procedure (SOP) to ensure zero legal errors, rapid transmission, and clean asset transfers:
+                Follow this checked 6-stage Standard Operating Step (SOP) to ensure zero legal errors, rapid transfer, and clean asset transfers:
               </p>
 
               <div className="space-y-4">
@@ -1112,13 +1112,13 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="powers-and-limitations" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Fiduciary Authority</span>
+                <span>Fiduciary Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Legal Powers &amp; Restrictions of Executors
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                An executor is vested with broad statutory powers to manage the estate, but these powers come with strict fiduciary boundaries. You cannot treat estate property as your own personal domain:
+                An executor is vested with broad legal powers to manage the estate, but these powers come with strict fiduciary boundaries. You cannot treat estate asset as your own personal domain:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1151,13 +1151,13 @@ export default function ExecutorOfWillDutiesClient() {
                 </span>
                 <ul className="list-disc list-inside space-y-1 text-slate-600">
                   <li>
-                    <strong>No Self-Dealing:</strong> An executor cannot purchase estate property for themselves without court sanction (Section 310).
+                    <strong>No Self-Dealing:</strong> An executor cannot purchase estate asset for themselves without court sanction (Section 310).
                   </li>
                   <li>
                     <strong>No Unreasonable Delay:</strong> An executor must submit accounts within 1 year; courts can remove executors for stalling.
                   </li>
                   <li>
-                    <strong>No Changing the Will:</strong> An executor has zero power to alter beneficiary shares or favor one child over another.
+                    <strong>No Changing the Will:</strong> An executor has zero power to alter heir shares or favor one child over another.
                   </li>
                 </ul>
               </div>
@@ -1167,16 +1167,16 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="renunciation-rules" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <UserCheck className="w-4 h-4" />
-                <span>Statutory Renunciation</span>
+                <span>Legal Giving Up</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Can an Executor Refuse or Resign?
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Yes. In India, nobody can force you to serve as an executor against your will. Being appointed in someone&rsquo;s Will is a proposal, not a mandatory legal summons.
+                Yes. In India, nobody can force you to serve as an executor against your will. Being appointed in someone&rsquo;s Will is a proposal, not a needed legal summons.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under <strong>Sections 229 and 230 of the Indian Succession Act</strong>, a named executor may formally renounce probate. Renunciation can be done either orally before the judge or through a signed written statement.
+                Under <strong>Sections 229 and 230 of the Indian Succession Act</strong>, a named executor may formally renounce probate. Giving Up can be done either orally before the judge or through a signed written statement.
               </p>
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-950 space-y-2">
                 <span className="font-bold flex items-center gap-1.5 text-amber-900">
@@ -1184,11 +1184,11 @@ export default function ExecutorOfWillDutiesClient() {
                   Crucial Condition: You Must Renounce BEFORE &ldquo;Intermeddling&rdquo;
                 </span>
                 <p>
-                  If you start operating the deceased&rsquo;s bank accounts, selling property, or taking physical possession of estate assets (&ldquo;intermeddling&rdquo;), the court considers you to have accepted the office. After intermeddling, you cannot simply walk away without formal permission from the High Court under Section 301.
+                  If you start operating the deceased&rsquo;s bank accounts, selling asset, or taking physical possession of estate assets (&ldquo;intermeddling&rdquo;), the court considers you to have accepted the office. After intermeddling, you cannot simply walk away without formal permission from the High Court under Section 301.
                 </p>
               </div>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                If the executor formally renounces, the Will does not die. Under <strong>Section 232</strong>, the court will issue <strong>Letters of Administration with the Will annexed</strong> to the primary beneficiaries or residuary heirs to administer the estate.
+                If the executor formally renounces, the Will does not die. Under <strong>Section 232</strong>, the court will issue <strong>Letters of Care with the Will annexed</strong> to the primary heirs or residuary heirs to administer the estate.
               </p>
             </section>
 
@@ -1202,7 +1202,7 @@ export default function ExecutorOfWillDutiesClient() {
                 10. Common Mistakes by First-Time Executors
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Most executors are grieving relatives who have never administered an estate before. Avoid these four common legal errors that lead to family disputes and court litigation:
+                Most executors are grieving relatives who have never administered an estate before. Avoid these four common legal errors that lead to family fights and court court fights:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1222,7 +1222,7 @@ export default function ExecutorOfWillDutiesClient() {
                     <span>Mistake 2: Ignoring Deceased Taxes</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 159 of the Income Tax Act, the legal representative must file the deceased&rsquo;s ITR. Ignoring this invites assessment notices and penalties against estate funds.
+                    Under Section 159 of the Income Tax Act, the legal agent must file the deceased&rsquo;s ITR. Ignoring this invites assessment notices and penalties against estate funds.
                   </p>
                 </div>
 
@@ -1242,7 +1242,7 @@ export default function ExecutorOfWillDutiesClient() {
                     <span>Mistake 4: Missing Inventory Deadlines</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 317, an executor must exhibit a full property inventory within 6 months of probate and final accounts within 12 months. Non-compliance invites court citations.
+                    Under Section 317, an executor must exhibit a full asset inventory within 6 months of probate and final accounts within 12 months. Non-compliance invites court citations.
                   </p>
                 </div>
               </div>
@@ -1261,7 +1261,7 @@ export default function ExecutorOfWillDutiesClient() {
                 11. Why Naming an Executor Saves Your Family
               </h3>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                When someone dies without a Will in India (intestate), there is no executor. The entire family is thrown into administrative chaos. Relatives must spend months arguing over who should manage the assets, obtaining legal heir certificates, and petitioning civil courts for Letters of Administration or Succession Certificates.
+                When someone dies without a Will in India (no-Will), there is no executor. The entire family is thrown into office chaos. Relatives must spend months arguing over who should manage the assets, obtaining legal heir papers, and petitioning civil courts for Letters of Care or Estate Papers.
               </p>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
                 By taking 15 minutes to draft a legally binding Will online and naming a primary and alternate executor, you save your grieving family years of court visits, tens of thousands in legal fees, and unnecessary institutional freezes.
@@ -1327,13 +1327,13 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="legal-services" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Building className="w-4 h-4" />
-                <span>Advocate Support</span>
+                <span>Lawyer Support</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                13. Estate Settlement Lawyers at WillDrafting.in
+                13. Estate Deal Lawyers at WillDrafting.in
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Estate administration does not have to be handled alone. WillDrafting.in provides comprehensive legal counsel to executors, administrators, and beneficiaries across all major Indian states:
+                Estate care does not have to be handled alone. WillDrafting.in provides full legal counsel to executors, administrators, and heirs across all major Indian states:
               </p>
 
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
@@ -1344,17 +1344,17 @@ export default function ExecutorOfWillDutiesClient() {
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-slate-900 block">Bank &amp; Demat Claims</span>
-                    <span className="text-slate-600">Drafting indemnity bonds, NOCs, and handling transmission with DPs.</span>
+                    <span className="text-slate-600">Drafting indemnity bonds, NOCs, and handling transfer with DPs.</span>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-                    <span className="font-bold text-slate-900 block">Property Mutation</span>
-                    <span className="text-slate-600">Title search, revenue mutation, and registration of Executor Assents.</span>
+                    <span className="font-bold text-slate-900 block">Asset Name Change</span>
+                    <span className="text-slate-600">Title search, revenue name change, and filing of Executor Assents.</span>
                   </div>
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100">
                   <div className="text-xs text-slate-600">
-                    Need professional assistance administering an Indian estate?
+                    Need professional help administering an Indian estate?
                   </div>
                   <button
                     type="button"
@@ -1379,7 +1379,7 @@ export default function ExecutorOfWillDutiesClient() {
                 14. Frequently Asked Questions: Executor Duties
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Clear, straightforward answers to the most common legal questions about executor duties, probate requirements, personal liability, and asset transmission under Indian law:
+                Clear, straightforward answers to the most common legal questions about executor duties, probate rules, personal liability, and asset transfer under Indian law:
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1417,17 +1417,17 @@ export default function ExecutorOfWillDutiesClient() {
             <section id="statutory-citations" className="scroll-target space-y-4 pt-6 border-t border-slate-200">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-slate-500">
                 <BookOpen className="w-4 h-4 text-[#5F7E75]" />
-                <span>Legal Authority &amp; Statutory Sources</span>
+                <span>Legal Office &amp; Legal Sources</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 15. Official Acts, Sections &amp; Court Rulings
               </h3>
               <ul className="space-y-2 text-xs text-slate-600 list-disc list-inside leading-relaxed">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 2(c) (definition of executor), Section 211 (property vests in executor), Section 213 (probate requirements), Section 222 (probate only to appointed executor), Section 229 &amp; 230 (renunciation of probate), Section 307 (power to dispose property), Section 317 (inventory &amp; account within 6/12 months), Sections 320 to 325 (priority of debts), Section 332 (assent of executor), Section 368 (liability for devastavit).
+                  <strong>Indian Succession Act, 1925:</strong> Section 2(c) (definition of executor), Section 211 (asset vests in executor), Section 213 (probate rules), Section 222 (probate only to appointed executor), Section 229 &amp; 230 (giving up of probate), Section 307 (power to dispose asset), Section 317 (inventory &amp; account within 6/12 months), Sections 320 to 325 (priority of debts), Section 332 (assent of executor), Section 368 (liability for devastavit).
                 </li>
                 <li>
-                  <strong>Income Tax Act, 1961:</strong> Section 159 (legal representative liability to file deceased tax returns).
+                  <strong>Income Tax Act, 1961:</strong> Section 159 (legal agent liability to file deceased tax returns).
                 </li>
                 <li>
                   <strong>Supreme Court of India Precedents:</strong> <em>Sarbati Devi v. Usha Devi</em> (1984 AIR 346 - nominee holds funds as trustee for heirs), <em>Shakti Yezdani v. Jamshed Irani</em> (2024 INSC 77 - demat nominee has no ownership rights overriding a Will), <em>Falan v. Dalan</em> (fiduciary character of executors).
@@ -1461,24 +1461,46 @@ export default function ExecutorOfWillDutiesClient() {
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
-                    Property Transfer After Death
+                    Asset Transfer After Death
                   </Link>
                   <Link
                     href="/blogs/legal-heir-certificate-vs-succession-certificate"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
-                    Legal Heir vs Succession Certificate
+                    Legal Heir vs Estate Paper
                   </Link>
                   <Link
                     href="/blogs/how-to-challenge-a-will-in-india"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
-                    How to Challenge a Will
+                    How to Fight a Will
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1498,16 +1520,16 @@ export default function ExecutorOfWillDutiesClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary administration, probate petitions, and estate structuring at WillDrafting.in.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will care, probate petitions, and estate structuring at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
@@ -1537,7 +1559,7 @@ export default function ExecutorOfWillDutiesClient() {
                 Need Help Administering an Estate in India?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect with our specialized succession advocates for probate petitions, bank transmission, asset mutation, and estate tax compliance.
+                Connect with our specialized estate lawyers for probate petitions, bank transfer, asset name change, and estate tax compliance.
               </p>
               <button
                 type="button"
@@ -1569,13 +1591,13 @@ export default function ExecutorOfWillDutiesClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Bank Transmission:</strong> Indemnity bonds &amp; NOC documentation.
+                    <strong>Bank Transfer:</strong> Indemnity bonds &amp; NOC papers.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Property Mutation:</strong> SRO &amp; municipal revenue registration.
+                    <strong>Asset Name Change:</strong> SRO &amp; city revenue filing.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1590,7 +1612,7 @@ export default function ExecutorOfWillDutiesClient() {
             {/* CARD 4: RECOMMENDED SUCCESSION GUIDES */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 block">
-                Recommended Succession Guides
+                Recommended Estate Guides
               </span>
               <div className="space-y-2">
                 <Link
@@ -1624,10 +1646,10 @@ export default function ExecutorOfWillDutiesClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
                 >
                   <div className="font-bold text-xs text-slate-900">
-                    Property Transfer After Death
+                    Asset Transfer After Death
                   </div>
                   <div className="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1">
-                    <span>Inheritance roadmap &amp; mutation</span>
+                    <span>Estate roadmap &amp; name change</span>
                     <ArrowRight className="w-2.5 h-2.5 text-[#C65378]" />
                   </div>
                 </Link>
@@ -1637,7 +1659,7 @@ export default function ExecutorOfWillDutiesClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
                 >
                   <div className="font-bold text-xs text-slate-900">
-                    How to Challenge a Will in India
+                    How to Fight a Will in India
                   </div>
                   <div className="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1">
                     <span>Grounds, evidence &amp; limitation</span>
@@ -1668,7 +1690,7 @@ export default function ExecutorOfWillDutiesClient() {
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Property Transfer After Death
+                  Asset Transfer After Death
                 </Link>
                 <Link
                   href="/templates/will-format-india"

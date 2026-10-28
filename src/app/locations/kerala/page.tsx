@@ -142,7 +142,7 @@ export default function KeralaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
         description:
-          "Draft a legally binding Will in Kerala. Full support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
+          "Draft a legally binding Will in Kerala. Full support for Gulf NRI asset owners, Christian estate law, and PEARLS portal SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function KeralaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kerala - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate check, PEARLS portal signing, Gulf NRI estate planning, and doorstep execution support across.",
+          "Professional Will drafting, lawyer check, PEARLS portal signing, Gulf NRI estate planning, and doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -256,32 +256,32 @@ export default function KeralaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Kerala",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Kerala.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Kerala.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Full Asset Inventory",
-            text: "List your Kerala land and flats including apartments in Kochi or Trivandrum, ancestral homes, rubber plantations, bank deposits, and cross-border Gulf assets. Designate heirs and an executor.",
+            text: "List your Kerala land and flats including apartments in Kochi or Trivandrum, family homes, rubber plantations, bank deposits, and cross-border Gulf assets. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Tailored Legal Clauses",
-            text: "Draft your Will incorporating statutory provisions under the Indian Succession Act, survivorship terms, minor guardianships, and explicit revocation of prior testamentary instruments.",
+            text: "Draft your Will incorporating legal rules under the Indian Succession Act, survivorship terms, minor guardianships, and explicit revocation of prior Will instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book PEARLS Portal SRO Slot",
-            text: "Schedule your signing appointment on the Registration Department Kerala PEARLS portal (keralasigning.gov.in) and pay nominal statutory fees through the e-Treasury portal.",
+            text: "Schedule your signing appointment on the Filing Office Kerala PEARLS portal (keralasigning.gov.in) and pay nominal legal fees through the e-Treasury portal.",
           },
           {
             "@type": "HowToStep",

@@ -135,7 +135,7 @@ export default function MaduraiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Madurai: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and.",
+          "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset split, and lawyer talk in Madurai and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -182,7 +182,7 @@ export default function MaduraiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Madurai - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Tamil Nadu TNREGINET Sub-Registrar registration, and Madras High Court Madurai Bench probate.",
+          "Professional Will drafting, lawyer check, Tamil Nadu TNREGINET SRO filing, and Madras High Court Madurai Bench probate.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -249,38 +249,38 @@ export default function MaduraiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Madurai",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Tamil Nadu.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Tamil Nadu.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Madurai Assets and Beneficiaries",
-            text: "Itemize your Madurai assets including residential plots, ancestral properties, commercial shops, bank deposits, and demat accounts. Appoint your beneficiaries and a trusted executor.",
+            text: "Itemize your Madurai assets including home plots, family assets, shop shops, bank deposits, and demat accounts. Appoint your heirs and a trusted executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Statutory Succession Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate survivorship, specific bequest, and revocation clauses under the Indian Succession Act.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate survivorship, specific bequest, and revocation clauses under the Indian Succession Act.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Appointment on TNREGINET Portal",
-            text: "Schedule an appointment on tnreginet.gov.in for your jurisdictional Madurai Sub-Registrar office and pay the nominal ₹100 registration fee online.",
+            text: "Schedule an appointment on tnreginet.gov.in for your local Madurai SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Attend the Sub-Registrar office with both witnesses and original Aadhaar cards for biometric thumbprinting, web-camera photo capture, and official Book III registration.",
+            text: "Attend the SRO office with both witnesses and original Aadhaar cards for biometric thumbprinting, web-camera photo capture, and official Book III filing.",
           },
         ],
       },

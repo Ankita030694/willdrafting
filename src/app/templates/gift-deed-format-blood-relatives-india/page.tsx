@@ -151,7 +151,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "Is a gift deed between blood relatives legally revocable in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "As a general rule under Section 126 of the Transfer of Property Act, 1882, a registered gift deed is irrevocable once accepted. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if an elderly parent includes an explicit condition in the deed that the child must provide basic amenities and physical needs, and the child fails to do so, the Maintenance Tribunal (SDM Court) has statutory power to declare the gift deed null and void.",
+              text: "As a general rule under Section 126 of the Transfer of Property Act, 1882, a filed gift deed is irrevocable once accepted. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if an elderly parent includes an explicit condition in the deed that the child must provide basic amenities and physical needs, and the child fails to do so, the Maintenance Tribunal (SDM Court) has legal power to declare the gift deed null and void.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "What is the stamp duty on a gift deed to blood relatives across Indian states?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Many Indian states offer substantial stamp duty concessions for blood relatives (parents, children, spouse, siblings). In Maharashtra (Article 34), stamp duty is capped at Rs. 200 or 1% for residential/agricultural property gifted to direct heirs. In Uttar Pradesh, stamp duty is a nominal Rs. 5,000 plus Rs. 1,000 registration fee. In Haryana and Punjab, stamp duty on blood relative gifts is 0%, requiring only nominal registration fees.",
+              text: "Many Indian states offer substantial stamp duty concessions for blood relatives (parents, children, spouse, siblings). In Maharashtra (Article 34), stamp duty is capped at Rs. 200 or 1% for home/farm asset gifted to direct heirs. In Uttar Pradesh, stamp duty is a nominal Rs. 5,000 plus Rs. 1,000 filing fee. In Haryana and Punjab, stamp duty on blood relative gifts is 0%, requiring only nominal filing fees.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "Is there any income tax on property received as a gift from blood relatives?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, immovable property received from a defined 'relative' (which includes parents, children, spouse, brothers, sisters, and grandparents) is 100% exempt from income tax in the hands of the donee, regardless of the property value.",
+              text: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, land asset received from a defined 'relative' (which includes parents, children, spouse, brothers, sisters, and grandparents) is 100% exempt from income tax in the hands of the donee, regardless of the asset value.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "Is registration of a gift deed mandatory for immovable property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 123 of the Transfer of Property Act, 1882 read with Section 17(1)(a) of the Registration Act, 1908, a gift of immovable property can only be effected through a registered instrument signed by the donor, accepted by the donee, and attested by at least two independent witnesses. An unregistered gift deed has zero legal validity in court.",
+              text: "Yes. Under Section 123 of the Transfer of Property Act, 1882 read with Section 17(1)(a) of the Filing Act, 1908, a gift of land asset can only be effected through a filed instrument signed by the donor, accepted by the donee, and attested by at least two independent witnesses. An plain gift deed has zero legal validity in court.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "Can ancestral property be transferred through a gift deed to one child?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Hindu Law, a person cannot gift their undivided ancestral coparcenary property to one child without the explicit written consent of all other coparceners, unless it is a small portion gifted for pious or charitable purposes. Only self-acquired property can be freely gifted to any chosen child without restriction.",
+              text: "Under Hindu Law, a person cannot gift their undivided family joint asset to one child without the explicit written consent of all other coparceners, unless it is a small portion gifted for pious or charitable purposes. Only self-acquired asset can be freely gifted to any chosen child without restriction.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function GiftDeedBloodRelativesPage() {
             name: "What happens to capital gains tax when the child sells the gifted property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 49(1) of the Income Tax Act, 1961, the child's cost of acquisition is deemed to be the purchase price paid by the parent. Furthermore, under Section 2(42A), the parent's holding period is combined with the child's holding period to determine long-term capital gains status.",
+              text: "Under Section 49(1) of the Income Tax Act, 1961, the child's cost of acquisition is deemed to be the purchase price paid by the parent. Also, under Section 2(42A), the parent's holding period is combined with the child's holding period to determine long-term capital gains status.",
             },
           },
         ],

@@ -123,7 +123,7 @@ const LUDHIANA_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Punjab stamp laws, zero stamp paper is required for registering a Will.",
     checked: true,
   },
@@ -136,19 +136,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo ID proof and must not be heirs receiving property under the Will.",
+    detail: "Witnesses must carry original photo ID proof and must not be heirs receiving asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (MBBS Practitioner)",
-    detail: "Strongly advised for senior citizens and NRI testators. Confirms sound mind and memory at the time of signing.",
+    label: "Doctor's Mental Fitness Paper (MBBS Practitioner)",
+    detail: "Strongly advised for senior citizens and NRI Will makers. Confirms sound mind and memory at the time of signing.",
     checked: false,
   },
   {
     id: "item-5",
     label: "GLADA Allotment Letter / Conveyance Deed",
-    detail: "Required for urban estates in Dugri, Sector 32A, or Chandigarh Road to make sure exact property schedule accuracy.",
+    detail: "Required for urban estates in Dugri, Sector 32A, or Chandigarh Road to make sure exact asset schedule accuracy.",
     checked: false,
   },
   {
@@ -159,8 +159,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-7",
-    label: "Industrial Firm & Factory Ownership Papers",
-    detail: "Partnership deed, MSME Udyam registration, or ROC share papers for Focal Point manufacturing entities.",
+    label: "Plant Firm & Factory Ownership Papers",
+    detail: "Partnership deed, MSME Udyam filing, or ROC share papers for Focal Point manufacturing entities.",
     checked: false,
   },
   {
@@ -262,8 +262,8 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect your industrial enterprises, GLADA urban estates, and NRI family farmland in Ludhiana.
-                Receive senior lawyer legal drafting, NGDRS Punjab e-appointment help, and doorstep registration support across Punjab.
+                Protect your plant enterprises, GLADA urban estates, and NRI family farmland in Ludhiana.
+                Receive senior lawyer legal drafting, NGDRS Punjab e-appointment help, and doorstep filing support across Punjab.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -319,7 +319,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Ludhiana NRI &amp; Industrial Estate Architecture
+                  Ludhiana NRI &amp; Plant Estate Architecture
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -362,7 +362,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Sec 213 ISA Punjab Exemption
@@ -445,7 +445,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-[#172228]">
                 <FileText className="w-4 h-4 text-[#C65378]" />
                 <div className="font-extrabold text-xs uppercase tracking-wider text-slate-900">
-                  Document Navigation
+                  Paper Navigation
                 </div>
               </div>
               <nav className="space-y-1">
@@ -510,25 +510,25 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 1</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                1. Estate Planning in Ludhiana: Industrial &amp; NRI Realities
+                1. Estate Planning in Ludhiana: Plant &amp; NRI Realities
               </h2>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Ludhiana is the shop capital of Punjab and the thriving industrial heartbeat of Northern India.
-                From premier manufacturing operations in Focal Point and Industrial Area to upscale home sectors in Sarabha Nagar and Model Town, estates in Ludhiana encompass dynamic assets that require meticulous succession planning.
+                Ludhiana is the shop capital of Punjab and the thriving plant heartbeat of Northern India.
+                From premier manufacturing operations in Focal Point and Plant Area to upscale home sectors in Sarabha Nagar and Model Town, estates in Ludhiana encompass dynamic assets that require meticulous estate planning.
               </p>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Also, Ludhiana has one of India&apos;s highest densities of Non-Resident Indian (NRI) families.
                 NRIs living in Canada, the United Kingdom, the United States, and Australia retain valuable family farmland, shop showrooms, and GLADA urban plots across Ludhiana district.
-                Without a clearly registered Will, these cross-border assets face serious threats of unlawful tenant encroachment, fraudulent revenue record falsification, and protracted split court fights among extended cousins.
+                Without a clearly filed Will, these cross-border assets face serious threats of unlawful tenant encroachment, fraudulent revenue record falsification, and protracted split court fights among extended cousins.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs">
                   <Factory className="w-5 h-5 text-[#C65378] mb-2" />
                   <h3 className="font-extrabold text-sm text-[#172228]">
-                    Industrial Succession
+                    Plant Estate
                   </h3>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                     Protect hosiery, bicycle components, and textile units from corporate freeze upon the patriarch&apos;s demise.
@@ -548,10 +548,10 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs">
                   <Building className="w-5 h-5 text-indigo-600 mb-2" />
                   <h3 className="font-extrabold text-sm text-[#172228]">
-                    GLADA &amp; Municipal Name Change
+                    GLADA &amp; City Name Change
                   </h3>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Facilitate seamless title substitution for freehold and leasehold plots under GLADA and Ludhiana Municipal Corporation.
+                    Facilitate seamless title substitution for freehold and leasehold plots under GLADA and Ludhiana City City Board.
                   </p>
                 </div>
               </div>
@@ -563,7 +563,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 2</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                2. Punjab Legal Framework: Why Probate Is Optional
+                2. Punjab Legal Framework: Why Probate Is A Choice
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
@@ -578,13 +578,13 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 </div>
                 <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
                   In seminal judgments including <span className="font-semibold italic">Ram Chand v. Sardara Singh (AIR 1962 P&amp;H 382)</span> and <span className="font-semibold italic">Madan Lal v. Dev Raj</span>, the Punjab &amp; Haryana High Court conclusively ruled that Section 213 of the Indian Succession Act, 1925 does not apply to Wills signed by Hindus, Sikhs, Jains, or Buddhists in Punjab, Haryana, and Chandigarh.
-                  Heirs are <strong>not legally obligated</strong> to get a probate paper before exercising property rights or seeking revenue name change.
+                  Heirs are <strong>not legally obligated</strong> to get a probate paper before exercising asset rights or seeking revenue name change.
                 </p>
               </div>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Because probate is optional, registering your Will at the Ludhiana SRO office assumes heightened proof importance.
-                An official registration record under Book III of the Registration Act, 1908 satisfies GLADA officials, Punjab revenue patwaris, and shop banks that the document is genuine, avoiding years of court scrutiny.
+                Because probate is a choice, registering your Will at the Ludhiana SRO office assumes heightened proof importance.
+                An official filing record under Book III of the Filing Act, 1908 satisfies GLADA officials, Punjab revenue patwaris, and shop banks that the paper is genuine, avoiding years of court scrutiny.
               </p>
             </section>
 
@@ -594,11 +594,11 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 3</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                3. Registered vs Unregistered Wills: GLADA &amp; Land Name Change
+                3. Filed vs Plain Wills: GLADA &amp; Land Name Change
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Under Section 18(e) of the Registration Act, 1908, Will registration is optional.
+                Under Section 18(e) of the Filing Act, 1908, Will filing is a choice.
                 A handwritten or typed Will signed before two competent witnesses on plain paper is legally valid in the eyes of the law.
                 However, for high-value assets in Punjab, the practical difference during asset transfer is substantial:
               </p>
@@ -608,9 +608,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-[#172228] text-white">
                     <tr>
-                      <th className="p-3 sm:p-4 font-bold">Succession Parameter</th>
-                      <th className="p-3 sm:p-4 font-bold">Unregistered Will</th>
-                      <th className="p-3 sm:p-4 font-bold bg-[#C65378]">NGDRS Registered Will</th>
+                      <th className="p-3 sm:p-4 font-bold">Estate Parameter</th>
+                      <th className="p-3 sm:p-4 font-bold">Plain Will</th>
+                      <th className="p-3 sm:p-4 font-bold bg-[#C65378]">NGDRS Filed Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -642,7 +642,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Bank Locker &amp; Accounts</td>
                       <td className="p-3 sm:p-4">
-                        Bank legal desk often demands legal heir affidavits from all relatives
+                        Bank legal desk often demands legal heir sworn notes from all relatives
                       </td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-800 bg-emerald-50/50">
                         Rapid clearance under RBI model operational guidelines
@@ -661,7 +661,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Government Stamp Duty</td>
                       <td className="p-3 sm:p-4">₹0 (Exempt)</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-800 bg-emerald-50/50">
-                        ₹0 Stamp Duty + Nominal ₹100 registration fee
+                        ₹0 Stamp Duty + Nominal ₹100 filing fee
                       </td>
                     </tr>
                   </tbody>
@@ -675,12 +675,12 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 4</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. Succession Planning for Focal Point &amp; Industrial Units
+                4. Estate Planning for Focal Point &amp; Plant Units
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Ludhiana produces roughly 90% of India&apos;s winter knitwear, over 70% of bicycles and bicycle parts, and massive quantities of precision engineering tools.
-                Much of this industrial wealth is concentrated in family-owned proprietary concerns, Hindu Undivided Families (HUFs), partnership firms, and closely held private limited entities across Focal Point (Phases 1 to 8), Industrial Area A, and Industrial Area B.
+                Much of this plant wealth is concentrated in family-owned proprietary concerns, Hindu Undivided Families (HUFs), partnership firms, and closely held private limited entities across Focal Point (Phases 1 to 8), Plant Area A, and Plant Area B.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
@@ -691,18 +691,18 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under the Indian Partnership Act, 1932, a partnership dissolves automatically upon a partner&apos;s death unless the partnership deed provides otherwise.
-                    Our lawyers draft specialized testamentary clauses enabling specific heirs to succeed directly to the deceased&apos;s capital account and factory real estate without liquidation battles.
+                    Our lawyers draft specialized Will clauses enabling specific heirs to succeed directly to the deceased&apos;s capital account and factory real estate without liquidation battles.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-2xs space-y-3">
                   <div className="flex items-center gap-2 font-bold text-[#172228] text-sm">
                     <Layers className="w-4 h-4 text-[#5F7E75]" />
-                    <span>PSIEC Industrial Plots &amp; Leases</span>
+                    <span>PSIEC Plant Plots &amp; Leases</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Punjab Small Industries &amp; Export Corporation (PSIEC) and GLADA industrial plots carry strict leasehold and utilization covenants.
-                    A tailored Will ensures seamless industrial lease transfer and uninterrupted continuity for factory power sanctions, GST credentials, and MSME registrations.
+                    Punjab Small Industries &amp; Export City Board (PSIEC) and GLADA plant plots carry strict leasehold and utilization covenants.
+                    A tailored Will ensures seamless plant lease transfer and uninterrupted continuity for factory power sanctions, GST credentials, and MSME registrations.
                   </p>
                 </div>
               </div>
@@ -725,7 +725,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-2xs space-y-3">
                 <h3 className="font-extrabold text-sm text-[#172228] flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  Key Precautions for NRI Land Succession
+                  Key Precautions for NRI Land Estate
                 </h3>
                 <ul className="text-xs text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
                   <li>
@@ -738,7 +738,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     <strong>Elimination of Ambiguous oral bequests:</strong> Unrecorded oral promises are the primary catalyst for adverse possession claims by tenant cultivators or distant relatives.
                   </li>
                   <li>
-                    <strong>Multi-Country Harmonization:</strong> If you maintain assets abroad (such as home property in Canada or pensions in the UK), your Indian Will should clearly operate as a concurrent document covering Indian assets without accidentally revoking your overseas Will.
+                    <strong>Multi-Country Harmonization:</strong> If you maintain assets abroad (such as home asset in Canada or pensions in the UK), your Indian Will should clearly operate as a concurrent paper covering Indian assets without accidentally revoking your overseas Will.
                   </li>
                 </ul>
               </div>
@@ -750,12 +750,12 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 6</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                6. Ludhiana Sub-Registrar Offices: Locations &amp; Contacts
+                6. Ludhiana SRO Offices: Locations &amp; Contacts
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Will registration in Punjab is administered by the Department of Revenue, Rehabilitation and Disaster Management via the <strong>National Generic Document Registration System (NGDRS Punjab)</strong>.
-                Ludhiana district is divided into specialized office Sub-Registrar areas:
+                Will filing in Punjab is administered by the Office of Revenue, Rehabilitation and Disaster Management via the <strong>National Generic Paper Filing System (NGDRS Punjab)</strong>.
+                Ludhiana district is divided into specialized office SRO areas:
               </p>
 
               {/* SEARCH FILTER */}
@@ -796,7 +796,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   ))}
                   {filteredDistricts.length === 0 && (
                     <div className="p-4 text-center text-xs text-slate-400">
-                      No matching Sub-Registrar offices found.
+                      No matching SRO offices found.
                     </div>
                   )}
                 </div>
@@ -839,7 +839,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     <div className="flex items-start gap-2.5">
                       <Building className="w-4 h-4 text-indigo-600 shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-bold text-slate-900 block">Jurisdictional Areas:</span>
+                        <span className="font-bold text-slate-900 block">Local Areas:</span>
                         <span className="text-slate-600 leading-relaxed">
                           {activeDistrictData.areas}
                         </span>
@@ -873,8 +873,8 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   7. Local Neighborhood Coverage Across Ludhiana District
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Sarabha Nagar, Model Town, BRS Nagar, Focal Point, or Sahnewal</strong>? Assets across Ludhiana district range from established heritage kothis and GLADA planned plots to high-output industrial manufacturing complexes in Focal Point and sprawling NRI family farmland in Malwa tehsils.
-                  Our senior lawyers provide verified legal drafting, NGDRS Punjab slot booking, and Sub-Registrar accompaniment across all key home and industrial clusters:
+                  Looking for legally checked <strong>Will drafting services in Sarabha Nagar, Model Town, BRS Nagar, Focal Point, or Sahnewal</strong>? Assets across Ludhiana district range from established heritage kothis and GLADA planned plots to high-output plant manufacturing complexes in Focal Point and sprawling NRI family farmland in Malwa tehsils.
+                  Our senior lawyers provide checked legal drafting, NGDRS Punjab slot booking, and SRO accompaniment across all key home and plant clusters:
                 </p>
               </div>
 
@@ -904,7 +904,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for premier <strong>Will drafting services in Sarabha Nagar &amp; Gurdev Nagar</strong>? Sarabha Nagar and Gurdev Nagar represent Ludhiana&apos;s most prestigious heritage residences and bungalows, with substantial senior citizen residency. Our legal team drafts meticulous succession structures, lifepath covenants, and Section 31 doorstep home visit petitions for elderly testators.
+                      Looking for premier <strong>Will drafting services in Sarabha Nagar &amp; Gurdev Nagar</strong>? Sarabha Nagar and Gurdev Nagar represent Ludhiana&apos;s most prestigious heritage residences and bungalows, with substantial senior citizen residency. Our legal team drafts meticulous estate structures, lifepath covenants, and Section 31 doorstep home visit petitions for elderly Will makers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -913,7 +913,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat (DAC), Ferozepur Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doctor medical fitness papers, heritage kothi succession, and doorstep biometric registration.
+                        Doctor medical fitness papers, heritage kothi estate, and doorstep biometric filing.
                       </p>
                     </div>
                   </div>
@@ -957,7 +957,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in Model Town &amp; Dugri</strong>. Assets in these planned GLADA urban estates require precise conveyance deed tracking and clear allotment schedule descriptions. We structure single-window GLADA substitution clauses and municipal property tax name change safeguards to prevent joint tenancy gridlocks.
+                      Secure expert <strong>Will drafting services in Model Town &amp; Dugri</strong>. Assets in these planned GLADA urban estates require precise conveyance deed tracking and clear allotment schedule descriptions. We structure single-window GLADA substitution clauses and city asset tax name change safeguards to prevent joint tenancy gridlocks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -966,7 +966,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Complex Gill &amp; Mini Secretariat</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GLADA allotment deed check, single-window municipal name change, and Book III registration.
+                        GLADA allotment deed check, single-window city name change, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1010,16 +1010,16 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in BRS Nagar, Aggar Nagar &amp; South City</strong>. The Ferozepur Road and South City corridor features upscale designer villas, NRI residences, and luxury multi-storey condominiums. Our senior lawyers formulate multi-heir bequest structures, survivor benefit clauses, and NRI asset succession frameworks.
+                      Opt for premier <strong>Will drafting services in BRS Nagar, Aggar Nagar &amp; South City</strong>. The Ferozepur Road and South City corridor features upscale designer villas, NRI residences, and luxury multi-storey condominiums. Our senior lawyers formulate multi-heir bequest structures, survivor benefit clauses, and NRI asset estate frameworks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sub-Registrar West, Tehsil Complex</span>
+                        <span>SRO Hub: SRO West, Tehsil Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Authority villa substitution, NRI multi-area clauses, and NGDRS biometric appointments.
+                        Office villa substitution, NRI multi-area clauses, and NGDRS biometric appointments.
                       </p>
                     </div>
                   </div>
@@ -1044,7 +1044,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Focal Point Industrial Belt
+                        Focal Point Plant Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ludhiana East
@@ -1052,18 +1052,18 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting Services in Focal Point &amp; Industrial Areas A &amp; B
+                      Will Drafting Services in Focal Point &amp; Plant Areas A &amp; B
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Focal Point (Phases 1 to 8)</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Industrial Area A &amp; B</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Plant Area A &amp; B</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Cheema Chowk</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Transport Nagar</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get authoritative <strong>Will drafting services in Focal Point &amp; Industrial Areas A &amp; B</strong>. Ludhiana&apos;s manufacturing hub powers textile, knitwear, bicycle components, and precision engineering enterprises. We draft specialized corporate succession clauses for proprietary firms, PSIEC industrial plot transfers, and partnership equity transmissions.
+                      Get authoritative <strong>Will drafting services in Focal Point &amp; Plant Areas A &amp; B</strong>. Ludhiana&apos;s manufacturing hub powers textile, knitwear, bicycle components, and precision engineering enterprises. We draft specialized corporate estate clauses for proprietary firms, PSIEC plant plot transfers, and partnership equity transmissions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1072,20 +1072,20 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Tehsil East, Near Samrala Chowk</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        PSIEC industrial lease transfer, factory machinery bequests, and partnership deed harmonization.
+                        PSIEC plant lease transfer, factory machinery bequests, and partnership deed harmonization.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial Capital Hub</span>
+                    <span className="text-xs font-bold text-slate-500">Plant Capital Hub</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
                       aria-label="Will Drafting Services in Focal Point"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1116,7 +1116,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for dedicated <strong>Will drafting services in Chandigarh Road &amp; Sector 32A</strong>? This dynamic eastern growth corridor combines planned GLADA home sectors with high-density shop complexes and multi-storey apartments. Our lawyers draft clear title succession clauses, shop shop bequests, and builder agreement transfers.
+                      Looking for dedicated <strong>Will drafting services in Chandigarh Road &amp; Sector 32A</strong>? This dynamic eastern growth corridor combines planned GLADA home sectors with high-density shop complexes and multi-storey apartments. Our lawyers draft clear title estate clauses, shop shop bequests, and builder pact transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1125,7 +1125,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Samrala Chowk Tehsil Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GLADA shop plot name change, apartment succession clauses, and e-appointment token scheduling.
+                        GLADA shop plot name change, apartment estate clauses, and e-appointment token scheduling.
                       </p>
                     </div>
                   </div>
@@ -1169,7 +1169,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Protect valuable farm holdings with expert <strong>Will drafting services for NRI farmland in Sahnewal, Jagraon &amp; Khanna</strong>. Our lawyers integrate verified revenue khasra and khatauni records from the Punjab Web-HALRIS portal, designate trustworthy local executors, and shield family land against fraudulent name change and unlawful possession.
+                      Protect valuable farm holdings with expert <strong>Will drafting services for NRI farmland in Sahnewal, Jagraon &amp; Khanna</strong>. Our lawyers integrate checked revenue khasra and khatauni records from the Punjab Web-HALRIS portal, designate trustworthy local executors, and shield family land against fraudulent name change and unlawful possession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1184,7 +1184,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Agro-Industrial &amp; NRI Belt</span>
+                    <span className="text-xs font-bold text-slate-500">Agro-Plant &amp; NRI Belt</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1205,7 +1205,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 8</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                8. Step-by-Step SOP: Drafting to NGDRS Registration
+                8. Step-by-Step SOP: Drafting to NGDRS Filing
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
@@ -1222,22 +1222,22 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   {
                     step: "02",
                     title: "Draft Customized Legal Will with Estate Clauses",
-                    desc: "Collaborate with our senior estate lawyers to incorporate industrial succession rules, multi-area NRI clauses, and specific survivorship directions.",
+                    desc: "Collaborate with our senior estate lawyers to incorporate plant estate rules, multi-area NRI clauses, and specific survivorship directions.",
                   },
                   {
                     step: "03",
                     title: "Physical Signing Before Two Independent Witnesses",
-                    desc: "Print the finalized document on clean A4 paper. Sign or thumb-impression each page in the physical presence of two independent adult witnesses who are not heirs.",
+                    desc: "Print the finalized paper on clean A4 paper. Sign or thumb-impression each page in the physical presence of two independent adult witnesses who are not heirs.",
                   },
                   {
                     step: "04",
                     title: "Book Ludhiana SRO Appointment on NGDRS Punjab",
-                    desc: "Log onto igr.punjab.gov.in. Upload document details, enter party and witness data, remit the nominal ₹100 fee, and secure a confirmed appointment slot.",
+                    desc: "Log onto igr.punjab.gov.in. Upload paper details, enter party and witness data, remit the nominal ₹100 fee, and secure a confirmed appointment slot.",
                   },
                   {
                     step: "05",
                     title: "Biometric Registration at the SRO office",
-                    desc: "Visit the Mini Secretariat or your local Sub-Tehsil with both witnesses. Complete digital photography, biometric fingerprinting, and receive the registered Book III endorsement.",
+                    desc: "Visit the Mini Secretariat or your local Sub-Tehsil with both witnesses. Complete digital photography, biometric fingerprinting, and receive the filed Book III endorsement.",
                   },
                 ].map((item) => (
                   <div
@@ -1264,33 +1264,33 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 9</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                9. Section 31 Doorstep Home Registration in Ludhiana
+                9. Section 31 Doorstep Home Filing in Ludhiana
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 For many elderly, bedridden, or medically unwell residents in Model Town, Sarabha Nagar, or Civil Lines, traveling to the bustling Mini Secretariat is a painful physical ordeal.
-                Section 31 of the Registration Act, 1908 provides a compassionate and completely legal solution:
+                Section 31 of the Filing Act, 1908 provides a compassionate and completely legal solution:
               </p>
 
               <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-2xs space-y-4">
                 <div className="flex items-center gap-2 font-bold text-[#172228] text-sm">
                   <Home className="w-4 h-4 text-[#C65378]" />
-                  <span>Doorstep Commission by the Sub-Registrar</span>
+                  <span>Doorstep Commission by the SRO</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Under Section 31, an form can be presented to the Sub-Registrar citing medical grounds accompanied by a paper issued by a registered MBBS physician.
-                  Upon payment of the official government travel commission fee, the Sub-Registrar personally visits the Will maker&apos;s residence or hospital room with the mobile biometric kit.
-                  The registration is finalized at the bedside in full compliance with Punjab registration manual guidelines.
+                  Under Section 31, an form can be presented to the SRO citing medical grounds accompanied by a paper issued by a filed MBBS physician.
+                  Upon payment of the official government travel commission fee, the SRO personally visits the Will maker&apos;s residence or hospital room with the mobile biometric kit.
+                  The filing is finalized at the bedside in full compliance with Punjab filing manual guidelines.
                 </p>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-1.5">
                   <span className="font-bold text-slate-900 block">
-                    Our Ludhiana Home Registration Service Includes:
+                    Our Ludhiana Home Filing Service Includes:
                   </span>
                   <ul className="list-disc list-inside space-y-1 text-slate-600">
-                    <li>Drafting the formal Section 31 commission petition to the Sub-Registrar</li>
+                    <li>Drafting the formal Section 31 commission petition to the SRO</li>
                     <li>Liaising with the SRO office to schedule the official home visit</li>
-                    <li>Assisting with registered MBBS doctor paper formatting</li>
+                    <li>Assisting with filed MBBS doctor paper formatting</li>
                     <li>On-site legal supervision to make sure flawless witness signing</li>
                   </ul>
                 </div>
@@ -1303,11 +1303,11 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 10</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                10. Document Checklist for Ludhiana Will Registration
+                10. Paper Checklist for Ludhiana Will Filing
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Use our interactive readiness checklist before heading to the SRO office or booking your NGDRS slot:
+                Use our free readiness checklist before heading to the SRO office or booking your NGDRS slot:
               </p>
 
               <div className="p-6 rounded-2xl bg-white border border-[#172228]/10 shadow-xs space-y-5">
@@ -1372,7 +1372,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                A common reason residents hesitate to make a Will is the fear of paying high stamp duty equivalent to property sale deeds.
+                A common reason residents hesitate to make a Will is the fear of paying high stamp duty equivalent to asset sale deeds.
                 In Punjab, the law provides complete relief:
               </p>
 
@@ -1387,7 +1387,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs text-center space-y-1">
                   <span className="text-2xl font-extrabold text-[#172228] block">₹100</span>
-                  <span className="text-xs font-bold text-slate-900 block">Registration Fee</span>
+                  <span className="text-xs font-bold text-slate-900 block">Filing Fee</span>
                   <span className="text-[11px] text-slate-500 block leading-tight">
                     Flat legal fee payable online via NGDRS Punjab portal
                   </span>
@@ -1413,7 +1413,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                Choose the service package that aligns with your estate complexity, whether you require a straightforward personal Will or full industrial succession planning:
+                Choose the service package that aligns with your estate complexity, whether you require a straightforward personal Will or full plant estate planning:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
@@ -1431,16 +1431,16 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500 ml-1">all-inclusive</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individual flats, single houses, bank accounts, and demat holdings.
+                      Ideal for single flats, single houses, bank accounts, and demat holdings.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                        <span>Interactive online legal questionnaire</span>
+                        <span>Free online legal questionnaire</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                        <span>Estate lawyer document review</span>
+                        <span>Estate lawyer paper review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
@@ -1515,7 +1515,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                       Full Service
                     </span>
                     <h3 className="font-extrabold text-lg text-[#172228]">
-                      Complete Ludhiana SRO Registration
+                      Complete Ludhiana SRO Filing
                     </h3>
                     <div className="pt-2 pb-1">
                       <span className="text-3xl font-extrabold text-[#172228]">₹9,990</span>
@@ -1602,20 +1602,20 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <span>Section 14</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                14. Legal Citations: Succession &amp; Registration Laws
+                14. Legal Citations: Estate &amp; Filing Laws
               </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
-                All Will drafting, witnessing, and registration protocols signed by WillDrafting in Ludhiana strictly comply with Indian statutory legislation and Punjab revenue directions:
+                All Will drafting, witnessing, and filing protocols signed by WillDrafting in Ludhiana strictly comply with Indian statutory legislation and Punjab revenue directions:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs space-y-1.5">
                   <span className="font-bold text-slate-900 block">
-                    Section 18(e), Registration Act, 1908
+                    Section 18(e), Filing Act, 1908
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Classifies the registration of a Will as optional across India, confirming that an unregistered Will is legally binding if properly signed.
+                    Classifies the filing of a Will as a choice across India, confirming that an plain Will is legally binding if properly signed.
                   </p>
                 </div>
 
@@ -1624,7 +1624,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     Section 63, Indian Succession Act, 1925
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Mandates that the Will maker execute the document in the presence of at least two adult witnesses who attest each other&apos;s signatures.
+                    Mandates that the Will maker execute the paper in the presence of at least two adult witnesses who attest each other&apos;s signatures.
                   </p>
                 </div>
 
@@ -1639,10 +1639,10 @@ export default function LudhianaLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs space-y-1.5">
                   <span className="font-bold text-slate-900 block">
-                    Section 31, Registration Act, 1908
+                    Section 31, Filing Act, 1908
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Authorizes Sub-Registrars to attend private residences or hospital rooms to register documents for medically infirm or elderly citizens.
+                    Authorizes Sub-Registrars to attend private residences or hospital rooms to register papers for medically infirm or elderly citizens.
                   </p>
                 </div>
 
@@ -1651,16 +1651,16 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     Punjab Land Revenue Act, 1887 &amp; Web-HALRIS
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Regulates the name change of farm Jamabandi records in rural Punjab based on testamentary dispositions.
+                    Regulates the name change of farm Jamabandi records in rural Punjab based on Will gifts.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-2xs space-y-1.5">
                   <span className="font-bold text-slate-900 block">
-                    Greater Ludhiana Area Development Authority Act
+                    Greater Ludhiana Area Development Office Act
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs property substitution and inheritance transfer steps for urban estate sectors in Ludhiana.
+                    Governs asset substitution and estate transfer steps for urban estate sectors in Ludhiana.
                   </p>
                 </div>
               </div>
@@ -1684,7 +1684,29 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 </a>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1702,7 +1724,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Ludhiana NRI &amp; Industrial Estate Architecture
+                Visual Blueprint: Ludhiana NRI &amp; Plant Estate Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

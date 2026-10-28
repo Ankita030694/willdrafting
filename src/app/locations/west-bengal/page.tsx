@@ -199,7 +199,7 @@ export default function WestBengalLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting West Bengal - Estate Planning, Probate & SRO Registration Desk",
         description:
-          "Professional Will drafting, advocate verification, Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and.",
+          "Professional Will drafting, lawyer check, Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -265,38 +265,38 @@ export default function WestBengalLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in West Bengal",
         description:
-          "Five clear legal steps to draft, execute, and register an enforceable Will before the Sub-Registrar or ARA in West Bengal.",
+          "Five clear legal steps to draft, execute, and register an enforceable Will before the SRO or ARA in West Bengal.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your West Bengal assets including Kolkata flats, Salt Lake leaseholds, Banglarbhumi land parcels, bank accounts, and investments. Nominate your beneficiaries and an executor.",
+            text: "List your West Bengal assets including Kolkata flats, Salt Lake leaseholds, Banglarbhumi land parcels, bank accounts, and investments. Nominate your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will incorporating Dayabhaga legal principles, complete asset descriptions, executor authority, guardian appointments for minors, and explicit revocation of prior instruments.",
+            text: "Draft your Will incorporating Dayabhaga legal principles, complete asset descriptions, executor office, guardian appointments for minors, and explicit revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses holding valid government photo identification.",
+            text: "Print the Will on standard A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses holding valid government photo ID.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book e-District West Bengal Appointment",
-            text: "Generate an e-Deed assessment token on wbregistration.gov.in, remit the flat ₹100 registration fee via the GRIPS payment gateway, and select your preferred SRO or ARA office.",
+            text: "Generate an e-Deed assessment token on wbregistration.gov.in, remit the flat ₹100 filing fee via the GRIPS payment gateway, and select your preferred SRO or ARA office.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at SRO or ARA Counter",
-            text: "Attend the registration office with your witnesses for verbal attestation, photo capture, and electronic thumbprint recording to finalize permanent Book III registration.",
+            text: "Attend the filing office with your witnesses for verbal witness signing, photo capture, and electronic thumbprint recording to finalize permanent Book III filing.",
           },
         ],
       },

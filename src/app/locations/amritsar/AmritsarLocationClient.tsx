@@ -103,7 +103,7 @@ const AMRITSAR_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Punjab law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -121,7 +121,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Registered Doctor Sound Mind Note (MBBS / MD)",
+    label: "Filed Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+ to certify sound sound mind and lucidity.",
     checked: false,
   },
@@ -133,8 +133,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "ADA Allotment Letters & MCA Property Tax Receipts",
-    detail: "Ownership records for Amritsar Development Authority plots or Municipal Corporation Amritsar assessments.",
+    label: "ADA Allotment Letters & MCA Asset Tax Receipts",
+    detail: "Ownership records for Amritsar Development Office plots or City City Board Amritsar assessments.",
     checked: false,
   },
   {
@@ -146,7 +146,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-8",
     label: "NRI Passport & Foreign Residence Proof (If Applicable)",
-    detail: "Essential for NRI testators bequeathing family Punjabi assets or cross-border assets.",
+    detail: "Essential for NRI Will makers bequeathing family Punjabi assets or cross-border assets.",
     checked: false,
   },
 ];
@@ -239,7 +239,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 56 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Amritsar: NRI Succession Guide
+                Will Drafting Services in Amritsar: NRI Estate Guide
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -299,7 +299,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Amritsar Urban &amp; NRI Agro-Succession Blueprint
+                  Amritsar Urban &amp; NRI Agro-Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -337,14 +337,14 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Testamentary Asset Exemption
+                Will Asset Exemption
               </span>
             </div>
 
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Punjab &amp; Haryana HC Rule
@@ -485,16 +485,16 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>AMRITSAR ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Amritsar
+                  Key Highlights: Will Making &amp; Filing in Amritsar
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills written on plain paper before two witnesses are legally binding under Section 18(e) of the Registration Act. However, Book III registration on NGDRS Punjab shields against fraudulent name change fights.
+                      Wills written on plain paper before two witnesses are legally binding under Section 18(e) of the Filing Act. However, Book III filing on NGDRS Punjab shields against fraudulent name change fights.
                     </p>
                   </div>
 
@@ -504,7 +504,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 read with Section 57 of the Indian Succession Act, court probate is strictly non-needed across Punjab. A registered Will enables direct name change with ADA and the Revenue Department.
+                      Under Section 213 read with Section 57 of the Indian Succession Act, court probate is strictly non-needed across Punjab. A filed Will enables direct name change with ADA and the Revenue Office.
                     </p>
                   </div>
 
@@ -514,7 +514,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       <span>NRI Family Land Protection</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Custom cross-border testamentary bequests prevent illegal encroachers (kabza) from forging power of attorney deeds over valuable farmlands in Ajnala, Majitha, and Baba Bakala during overseas stays.
+                      Custom cross-border Will bequests prevent illegal encroachers (kabza) from forging power of attorney deeds over valuable farmlands in Ajnala, Majitha, and Baba Bakala during overseas stays.
                     </p>
                   </div>
 
@@ -524,7 +524,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       <span>Flat ₹500 Government Fee</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Zero ad-valorem stamp duty applies on testamentary Wills in Punjab. Registration requires solely a legal fee of ₹500 plus nominal computer scanning charges via the official Cyber Treasury portal.
+                      Zero ad-valorem stamp duty applies on Will Wills in Punjab. Filing requires solely a legal fee of ₹500 plus nominal computer scanning charges via the official Cyber Treasury portal.
                     </p>
                   </div>
                 </div>
@@ -542,7 +542,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   1. Punjab Estate Framework: Indian Succession Act Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Amritsar is governed by the Indian Succession Act, 1925, alongside the Hindu Succession Act, 1956 and the Punjab Land Revenue Act, 1887. Whether you own self-acquired bungalows in Ranjit Avenue, family farm land in Ajnala, or shop havelis near the Golden Temple, signing a verified Will eliminates ambiguous without a Will inheritance.
+                  Estate in Amritsar is governed by the Indian Succession Act, 1925, alongside the Hindu Succession Act, 1956 and the Punjab Land Revenue Act, 1887. Whether you own self-acquired bungalows in Ranjit Avenue, family farm land in Ajnala, or shop havelis near the Golden Temple, signing a checked Will eliminates ambiguous without a Will estate.
                 </p>
               </div>
 
@@ -552,10 +552,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     01
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Section 59: Testamentary Capacity
+                    Section 59: Will Capacity
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Every major of sound mind, including married women, can dispose of their property by Will. Senior citizens can protect their Will from undue influence fights by getting an MBBS mental fitness paper.
+                    Every major of sound mind, including married women, can dispose of their asset by Will. Senior citizens can protect their Will from undue influence fights by getting an MBBS mental fitness paper.
                   </p>
                 </div>
 
@@ -564,7 +564,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     02
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Section 63: Attestation Rules
+                    Section 63: Witness Signing Rules
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The Will maker must sign or affix their thumb impression in the presence of at least two adult witnesses. Each witness must attest the Will in the visual presence of the Will maker to make sure legal validity.
@@ -579,7 +579,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     Section 67: Heir Disqualification
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Any bequest or appointment made to an attesting witness, or their spouse, is void. In Amritsar, make sure your witnesses are independent people with no beneficial interest in the bequeathed assets.
+                    Any bequest or appointment made to an signing witness, or their spouse, is void. In Amritsar, make sure your witnesses are independent people with no beneficial interest in the bequeathed assets.
                   </p>
                 </div>
               </div>
@@ -593,10 +593,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>REGISTRATION LEGALITIES &amp; EVIDENTIARY VALUE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Voluntary Registration: NGDRS Punjab Book III Rules
+                  2. Voluntary Filing: NGDRS Punjab Book III Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Punjab. A Will written on ordinary white paper is legally valid if properly signed. However, registering your Will at an Amritsar SRO office through NGDRS Punjab provides decisive proof advantages.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is a choice in Punjab. A Will written on ordinary white paper is legally valid if properly signed. However, registering your Will at an Amritsar SRO office through NGDRS Punjab provides decisive proof advantages.
                 </p>
               </div>
 
@@ -604,7 +604,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378]">
-                      Unregistered Will
+                      Plain Will
                     </span>
                     <h3 className="text-lg font-bold text-slate-900">
                       Vulnerable to Forgery Allegations
@@ -612,11 +612,11 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-start gap-2">
                         <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-                        <span>Disgruntled legal heirs often allege the document was signed under duress, coercion, or mental illness.</span>
+                        <span>Disgruntled legal heirs often allege the paper was signed under duress, coercion, or mental illness.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-                        <span>The Amritsar Development Authority (ADA) mandates public newspaper notices with a needed 30-day objection window.</span>
+                        <span>The Amritsar Development Office (ADA) mandates public newspaper notices with a needed 30-day objection window.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
@@ -627,7 +627,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
 
                   <div className="space-y-3">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700">
-                      NGDRS Registered Will
+                      NGDRS Filed Will
                     </span>
                     <h3 className="text-lg font-bold text-slate-900">
                       Book III Permanent Custody
@@ -639,7 +639,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                        <span>Sub-Registrar verbal inquiry and biometric thumbprints create an official presumption of genuine signing.</span>
+                        <span>SRO verbal inquiry and biometric thumbprints create an official presumption of genuine signing.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -662,7 +662,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   3. Probate Exemption: Punjab &amp; Haryana High Court Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among property owners in Amritsar is that a court-issued probate is needed to inherit or mutate property. Under the Indian Succession Act, probate is needed only within the presidency towns of Mumbai, Kolkata, and Chennai.
+                  One of the most persistent misconceptions among asset owners in Amritsar is that a court-issued probate is needed to inherit or mutate asset. Under the Indian Succession Act, probate is needed only within the presidency towns of Mumbai, Kolkata, and Chennai.
                 </p>
               </div>
 
@@ -691,7 +691,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     When is Probate Filed in Amritsar District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of management before the District Judge in Amritsar only if hostile co-heirs initiate split suits or challenge sound mind. A decree of probate acts as a judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily file for probate or letters of management before the District Judge in Amritsar only if hostile co-heirs initiate split suits or fight sound mind. A decree of probate acts as a judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -709,10 +709,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Amritsar Sub-Registrar Offices: SRO District Directory
+                  4. Amritsar SRO Offices: SRO District Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Amritsar district operates designated Sub-Registrar Offices under the Department of Revenue, Rehabilitation and Disaster Management Punjab (NGDRS Punjab). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any part of your real estate is situated.
+                  Amritsar district operates designated SRO Offices under the Office of Revenue, Rehabilitation and Disaster Management Punjab (NGDRS Punjab). Under Section 32 of the Filing Act, your Will can be filed at the SRO office having area over your permanent residence or where any part of your real estate is situated.
                 </p>
               </div>
 
@@ -763,7 +763,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Amritsar Registration District
+                        Amritsar Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -816,7 +816,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   5. Localities Covered: Area-Wise Will Drafting in Amritsar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate in Amritsar spans prestigious planned home sectors in Ranjit Avenue and Green Avenue, historic shop trade hubs around the Golden Temple, defense bungalows in Cantonment, and NRI family farmlands in Ajnala and Baba Bakala. Our estate planning lawyers provide specialized drafting, NGDRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
+                  Real estate in Amritsar spans prestigious planned home sectors in Ranjit Avenue and Green Avenue, historic shop trade hubs around the Golden Temple, defense bungalows in Cantonment, and NRI family farmlands in Ajnala and Baba Bakala. Our estate planning lawyers provide specialized drafting, NGDRS slot booking, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -846,7 +846,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Ranjit Avenue</strong> and Green Avenue for premium independent kothis, ADA plotted developments, and corporate business assets. Drafts clear clauses for Amritsar Development Authority plot re-allotment, Municipal Corporation tax record substitutions, and liquid financial assets.
+                      Specialized <strong>Will drafting services in Ranjit Avenue</strong> and Green Avenue for premium independent kothis, ADA plotted developments, and corporate business assets. Drafts clear clauses for Amritsar Development Office plot re-allotment, City City Board tax record substitutions, and liquid financial assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -908,7 +908,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Courts, Kachehri Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth estate structuring, private family asset mapping, and expedited Book III registration.
+                        High-net-worth estate structuring, private family asset mapping, and expedited Book III filing.
                       </p>
                     </div>
                   </div>
@@ -961,7 +961,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kachehri Compound, Amritsar 1</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Family haveli succession, partnership deed alignment, and seamless registration.
+                        Family haveli estate, partnership deed alignment, and seamless filing.
                       </p>
                     </div>
                   </div>
@@ -1067,7 +1067,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Courts Kachehri Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for elderly veterans, NGDRS booking, and lawyer accompaniment.
+                        Doorstep filing for elderly veterans, NGDRS booking, and lawyer accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1173,7 +1173,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Complex, Baba Bakala</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Farm land succession, GT Road shop showroom transfer, and Book III registration.
+                        Farm land estate, GT Road shop showroom transfer, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1198,7 +1198,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; Processing
+                        Plant &amp; Processing
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Amritsar 1 &amp; 2
@@ -1206,7 +1206,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting Services in Verka &amp; GT Road Industrial
+                      Will Drafting Services in Verka &amp; GT Road Plant
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1217,7 +1217,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Verka and Focal Point</strong> for manufacturing founders, dairy processing units, logistics owners, and PSIEC industrial plot holders. Outlines transfer of private limited shares, machinery, trademark licenses, and executive authority.
+                      Customized <strong>Will drafting services in Verka and Focal Point</strong> for manufacturing founders, dairy processing units, logistics owners, and PSIEC plant plot holders. Outlines transfer of private limited shares, machinery, trademark licenses, and executive office.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1226,7 +1226,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Majitha Road / Kachehri Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset audit, partnership continuity clauses, and PSIEC leasehold transfer guidance.
+                        Plant asset audit, partnership continuity clauses, and PSIEC leasehold transfer guidance.
                       </p>
                     </div>
                   </div>
@@ -1239,7 +1239,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Verka Industrial"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1255,10 +1255,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>SYSTEMATIC REGISTRATION PROTOCOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Online Will Registration in Amritsar
+                  6. Step-by-Step SOP: Online Will Filing in Amritsar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Amritsar through the NGDRS Punjab portal ensures seamless legal protection. Our five-step standard operating step guarantees full compliance with the Registration Act and Punjab Revenue department standards:
+                  Registering a Will in Amritsar through the NGDRS Punjab portal ensures seamless legal protection. Our five-step standard operating step guarantees full compliance with the Filing Act and Punjab Revenue office standards:
                 </p>
               </div>
 
@@ -1270,10 +1270,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
-                      Asset Inventory &amp; NRI Property Compilation
+                      Asset Inventory &amp; NRI Asset Compilation
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile an exhaustive schedule of all immovable and movable assets. For Amritsar assets, gather ADA plot allotment numbers, MCA property tax assessments, and computerized Jamabandi fards with Khasra/Khewat numbers from plrs.org.in. Designate specific heirs and an independent executor.
+                      Compile an exhaustive schedule of all land and cash assets. For Amritsar assets, gather ADA plot allotment numbers, MCA asset tax assessments, and computerized Jamabandi fards with Khasra/Khewat numbers from plrs.org.in. Designate specific heirs and an independent executor.
                     </p>
                   </div>
                 </div>
@@ -1288,7 +1288,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       High Court Lawyer Will Drafting &amp; Review
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our senior Punjab &amp; Haryana High Court lawyers draft your customized Will. The draft incorporates clear revocation of previous wills, clear survivorship clauses, minor guardianship rules under Section 60 of the Indian Succession Act, and anti-court fights no-contest clauses.
+                      Our senior Punjab &amp; Haryana High Court lawyers draft your customized Will. The draft incorporates clear revocation of previous wills, clear survivorship clauses, minor child care rules under Section 60 of the Indian Succession Act, and anti-court fights no-contest clauses.
                     </p>
                   </div>
                 </div>
@@ -1300,7 +1300,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
-                      Attestation by Two Independent Adult Witnesses
+                      Witness Signing by Two Independent Adult Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the final Will on standard white A4 sheets. The Will maker signs or affixes thumb impressions on every page in the simultaneous presence of two independent adult witnesses. Under Section 67, witnesses must have zero beneficial interest in the bequeathed assets.
@@ -1318,7 +1318,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       NGDRS Punjab Appointment Booking &amp; Fee Payment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal operations desk logs into the NGDRS Punjab portal (igr.punjab.gov.in), uploads the document data, inputs Will maker and witness KYC, generates the Cyber Treasury e-Challan for the legal ₹500 fee, and reserves an appointment slot at the jurisdictional SRO.
+                      Our legal operations desk logs into the NGDRS Punjab portal (igr.punjab.gov.in), uploads the paper data, inputs Will maker and witness KYC, generates the Cyber Treasury e-Challan for the legal ₹500 fee, and reserves an appointment slot at the local SRO.
                     </p>
                   </div>
                 </div>
@@ -1333,7 +1333,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       Biometric SRO Signing &amp; Book III Certified Copy
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Will maker and both witnesses appear before the Amritsar Sub-Registrar. Following verbal attestation, live digital webcam photos and biometric thumbprints are captured. The Will receives its Book III registration seal, and certified true copies are delivered to your residence.
+                      The Will maker and both witnesses appear before the Amritsar SRO. Following verbal witness signing, live digital webcam photos and biometric thumbprints are captured. The Will receives its Book III filing seal, and certified true copies are delivered to your residence.
                     </p>
                   </div>
                 </div>
@@ -1351,7 +1351,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep Registry: Senior Citizen Home Visits
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visiting the busy Kachehri or Majitha Road Sub-Registrar offices can be physically challenging for elderly testators, ailing people, or persons with mobility restrictions. Section 31 of the Registration Act, 1908 provides a legal mechanism for official home visits across Amritsar.
+                  Visiting the busy Kachehri or Majitha Road SRO offices can be physically challenging for elderly Will makers, ailing people, or persons with mobility restrictions. Section 31 of the Filing Act, 1908 provides a legal mechanism for official home visits across Amritsar.
                 </p>
               </div>
 
@@ -1359,13 +1359,13 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-2">
                     <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Medical Certificate
+                      Medical Paper
                     </span>
                     <h3 className="font-bold text-base text-slate-900">
-                      Doctor Fitness Affidavit
+                      Doctor Fitness Sworn Note
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered medical practitioner (MBBS/MD) issues a paper confirming the Will maker&apos;s physical inability to visit the SRO while affirming complete testamentary soundness of mind.
+                      A filed medical practitioner (MBBS/MD) issues a paper confirming the Will maker&apos;s physical inability to visit the SRO while affirming complete Will soundness of mind.
                     </p>
                   </div>
 
@@ -1374,10 +1374,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       Official Requisition
                     </span>
                     <h3 className="font-bold text-base text-slate-900">
-                      Sub-Registrar Order
+                      SRO Order
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our lawyers draft and file the formal Section 31 form along with the legal government visit fee, getting prior approval from the Amritsar Sub-Registrar.
+                      Our lawyers draft and file the formal Section 31 form along with the legal government visit fee, getting prior approval from the Amritsar SRO.
                     </p>
                   </div>
 
@@ -1389,7 +1389,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       Doorstep Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits your residence in Ranjit Avenue, Civil Lines, or Mall Road with mobile biometric scanners and digital cameras to complete Book III registration at home.
+                      The SRO visits your residence in Ranjit Avenue, Civil Lines, or Mall Road with mobile biometric scanners and digital cameras to complete Book III filing at home.
                     </p>
                   </div>
                 </div>
@@ -1404,10 +1404,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE DOCUMENT AUDIT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Amritsar Will Document Checklist: Check Protocol
+                  8. Amritsar Will Paper Checklist: Check Protocol
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Before booking your NGDRS Punjab appointment, make sure you have all needed original documents and verified copies ready. Check off each item below:
+                  Before booking your NGDRS Punjab appointment, make sure you have all needed original papers and checked copies ready. Check off each item below:
                 </p>
               </div>
 
@@ -1467,10 +1467,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATIONS &amp; CLAUSE DRAFTING</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Amritsar Property Bequests: ADA, MCA &amp; Farmlands
+                  9. Amritsar Asset Bequests: ADA, MCA &amp; Farmlands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Amritsar represent varied legal ownership structures. Each property category requires custom legal clauses to make sure clean transfer:
+                  Estate assets in Amritsar represent varied legal ownership structures. Each asset category requires custom legal clauses to make sure clean transfer:
                 </p>
               </div>
 
@@ -1481,10 +1481,10 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     <span>ADA Home &amp; Shop Schemes</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Amritsar Development Authority Plots
+                    Amritsar Development Office Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    ADA urban estates in Ranjit Avenue and surrounding sectors require specific reference to the original allotment letter, transfer permissions, and dues clearance. Registered Wills allow direct name change under ADA policy without needed public notice delays.
+                    ADA urban estates in Ranjit Avenue and surrounding sectors require specific reference to the original allotment letter, transfer permissions, and dues clearance. Filed Wills allow direct name change under ADA policy without needed public notice delays.
                   </p>
                 </div>
 
@@ -1507,23 +1507,23 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     <span>Farm Farmlands &amp; Jamabandi</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Farmland Succession in Ajnala &amp; Majitha
+                    Farmland Estate in Ajnala &amp; Majitha
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farm land succession follows Section 34 of the Punjab Land Revenue Act. Bequests must identify Murabba, Khasra, and Khewat numbers. A registered Will enables the Patwari to record Inteqal in Parat Patwar and update the digital Jamabandi fard on plrs.org.in.
+                    Farm land estate follows Section 34 of the Punjab Land Revenue Act. Bequests must identify Murabba, Khasra, and Khewat numbers. A filed Will enables the Patwari to record Inteqal in Parat Patwar and update the digital Jamabandi fard on plrs.org.in.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-xs font-bold text-[#C65378] uppercase">
                     <Factory className="w-4 h-4" />
-                    <span>Industrial &amp; Business Assets</span>
+                    <span>Plant &amp; Business Assets</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
                     Manufacturing Units &amp; Shop Firms
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Succession for industrial units in Focal Point or Verka involves private limited share transfers, machinery ownership, and partnership capital distributions. Appointing an executor ensures business continuity without frozen operational bank accounts.
+                    Estate for plant units in Focal Point or Verka involves private limited share transfers, machinery ownership, and partnership capital distributions. Appointing an executor ensures business continuity without frozen operational bank accounts.
                   </p>
                 </div>
               </div>
@@ -1537,20 +1537,20 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PUNJAB REVENUE SCHEDULE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Government Fees: Punjab Registration &amp; Stamp Exemption
+                  10. Government Fees: Punjab Filing &amp; Stamp Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds that attract 5% to 7% stamp duty in Punjab, testamentary Wills are completely exempt from ad-valorem stamp duty under the Indian Stamp Act, 1899.
+                  Unlike sale deeds or gift deeds that attract 5% to 7% stamp duty in Punjab, Will Wills are completely exempt from ad-valorem stamp duty under the Indian Stamp Act, 1899.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-xs">
                 <div className="p-5 sm:p-6 bg-slate-50 border-b border-slate-200/80">
                   <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
-                    Official Fee Schedule for Will Registration in Amritsar
+                    Official Fee Schedule for Will Filing in Amritsar
                   </h3>
                   <p className="text-xs text-slate-500 mt-1">
-                    Applicable across all Amritsar Sub-Registrar Offices under NGDRS Punjab
+                    Applicable across all Amritsar SRO Offices under NGDRS Punjab
                   </p>
                 </div>
 
@@ -1558,7 +1558,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <div className="p-4 sm:p-5 flex items-center justify-between">
                     <div>
                       <span className="font-bold text-slate-900 block">Punjab Stamp Duty</span>
-                      <span className="text-xs text-slate-500">Indian Stamp Act testamentary exemption</span>
+                      <span className="text-xs text-slate-500">Indian Stamp Act Will exemption</span>
                     </div>
                     <span className="font-mono font-extrabold text-emerald-600 text-sm sm:text-base">
                       ₹0 (100% Exempt)
@@ -1567,7 +1567,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
 
                   <div className="p-4 sm:p-5 flex items-center justify-between">
                     <div>
-                      <span className="font-bold text-slate-900 block">Legal Registration Fee</span>
+                      <span className="font-bold text-slate-900 block">Legal Filing Fee</span>
                       <span className="text-xs text-slate-500">Government fee deposited via Cyber Treasury</span>
                     </div>
                     <span className="font-mono font-extrabold text-slate-900 text-sm sm:text-base">
@@ -1587,7 +1587,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
 
                   <div className="p-4 sm:p-5 flex items-center justify-between">
                     <div>
-                      <span className="font-bold text-slate-900 block">Section 31 Doorstep Visit Fee (Optional)</span>
+                      <span className="font-bold text-slate-900 block">Section 31 Doorstep Visit Fee (A Choice)</span>
                       <span className="text-xs text-slate-500">Home attendance fee for senior citizens</span>
                     </div>
                     <span className="font-mono font-bold text-slate-700 text-sm sm:text-base">
@@ -1628,7 +1628,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individual homeowners in Ranjit Avenue, Green Avenue, or Basant Avenue bequeathing standard home and financial assets.
+                      Ideal for single homeowners in Ranjit Avenue, Green Avenue, or Basant Avenue bequeathing standard home and financial assets.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1637,11 +1637,11 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>ADA plot &amp; MCA property clauses</span>
+                        <span>ADA plot &amp; MCA asset clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Signing &amp; attestation instructions</span>
+                        <span>Signing &amp; witness signing instructions</span>
                       </li>
                     </ul>
                   </div>
@@ -1684,7 +1684,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Life-interest &amp; minor guardianship</span>
+                        <span>Life-interest &amp; minor child care</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1758,7 +1758,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Amritsar Will Services
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Essential legal answers regarding Will drafting, Punjab registration, probate non-needed status, and NRI succession:
+                  Essential legal answers regarding Will drafting, Punjab filing, probate non-needed status, and NRI estate:
                 </p>
               </div>
 
@@ -1805,7 +1805,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <span>AUTHORITATIVE STATUTES &amp; CODES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Legal Rules: Governing Succession in Punjab
+                  13. Legal Rules: Governing Estate in Punjab
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted by our legal team is constructed strictly in accordance with Indian testamentary jurisprudence and Punjab State land codes:
@@ -1818,16 +1818,16 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     The Indian Succession Act, 1925 (Act No. 39 of 1925)
                   </span>
                   <p>
-                    Sections 59 (sound mind), 63 (signing &amp; attestation), 67 (void bequests to witnesses), 70 (revocation), 213 &amp; 57 (presidency town probate limitations confirming non-needed status in Punjab).
+                    Sections 59 (sound mind), 63 (signing &amp; witness signing), 67 (void bequests to witnesses), 70 (revocation), 213 &amp; 57 (presidency town probate limitations confirming non-needed status in Punjab).
                   </p>
                 </div>
 
                 <div className="space-y-1 pt-3 border-t border-slate-100">
                   <span className="font-bold text-slate-900 block">
-                    The Registration Act, 1908 (Act No. 16 of 1908)
+                    The Filing Act, 1908 (Act No. 16 of 1908)
                   </span>
                   <p>
-                    Sections 18(e) (optional registration of Wills), 31 (registration at private residence in special cases), 32 (persons to present documents), 40 (persons entitled to present Wills), 51 (Book III registry custody).
+                    Sections 18(e) (a choice filing of Wills), 31 (filing at private residence in special cases), 32 (persons to present papers), 40 (persons entitled to present Wills), 51 (Book III registry custody).
                   </p>
                 </div>
 
@@ -1836,7 +1836,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     The Punjab Land Revenue Act, 1887 (Act No. 17 of 1887)
                   </span>
                   <p>
-                    Section 34 (making of that part of annual record which relates to landowners, Inteqal name change entries by Halqa Patwari based on registered testament).
+                    Section 34 (making of that part of annual record which relates to landowners, Inteqal name change entries by Halqa Patwari based on filed testament).
                   </p>
                 </div>
 
@@ -1845,7 +1845,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                     The Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023)
                   </span>
                   <p>
-                    Section 68 read with Section 114 (proof of signing of document required by law to be attested; judicial presumption of registered documents).
+                    Section 68 read with Section 114 (proof of signing of paper required by law to be attested; judicial presumption of filed papers).
                   </p>
                 </div>
               </div>
@@ -1880,7 +1880,29 @@ export default function AmritsarLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1899,7 +1921,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Amritsar Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Amritsar Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1918,7 +1940,7 @@ export default function AmritsarLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Amritsar SRO Registered &amp; ADA Name Change Compliant</span>
+              <span>Amritsar SRO Filed &amp; ADA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

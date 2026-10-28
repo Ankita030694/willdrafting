@@ -144,7 +144,7 @@ export default function KanpurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kanpur: Online Will Registration Guide",
         description:
-          "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online.",
+          "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS filing help, and KDA asset estate support online.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function KanpurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kanpur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Kanpur Nagar district.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across Kanpur Nagar district.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -260,38 +260,38 @@ export default function KanpurLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Kanpur Nagar",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Kanpur, Uttar Pradesh.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Kanpur, Uttar Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets and Choose Beneficiaries",
-            text: "List your Kanpur properties including KDA plots, commercial units in Panki, residential flats, bank accounts, and demat holdings. Designate beneficiaries and an executor.",
+            text: "List your Kanpur assets including KDA plots, shop units in Panki, home flats, bank accounts, and demat holdings. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Will",
-            text: "Draft your Will using our online legal platform or with a senior estate advocate to include specific bequests, survivorship clauses, and agricultural compliance under UP Revenue Code.",
+            text: "Draft your Will using our online legal platform or with a senior estate lawyer to include specific bequests, survivorship clauses, and farm compliance under UP Revenue Code.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on durable paper and sign every page in the presence of two adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on durable paper and sign every page in the presence of two adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Kanpur SRO Appointment on IGRSUP",
-            text: "Schedule an e-appointment on the UP Stamps & Registration portal (igrsup.gov.in) for your tehsil SRO (Sadar, Kalyanpur, or Govind Nagar) and pay the ₹100 fee.",
+            text: "Schedule an e-appointment on the UP Stamps & Filing portal (igrsup.gov.in) for your tehsil SRO (Sadar, Kalyanpur, or Govind Nagar) and pay the ₹100 fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Registration at Sub-Registrar Office",
-            text: "Visit the Kanpur Sub-Registrar office with your two witnesses, original Aadhaar cards, and PAN to complete biometric verification, photography, and Book III registration.",
+            text: "Visit the Kanpur SRO office with your two witnesses, original Aadhaar cards, and PAN to complete biometric check, photography, and Book III filing.",
           },
         ],
       },

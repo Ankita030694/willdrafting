@@ -255,7 +255,7 @@ export default function AmaravatiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Amaravati",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Amaravati.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Amaravati.",
         totalTime: "P3D",
         step: [
           {
@@ -274,7 +274,7 @@ export default function AmaravatiLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
@@ -286,7 +286,7 @@ export default function AmaravatiLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Amaravati SRO",
-            text: "Visit the SRO office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete official Book III signing.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete official Book III signing.",
           },
         ],
       },

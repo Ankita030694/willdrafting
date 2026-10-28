@@ -126,7 +126,7 @@ const SURAT_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Original Will Document",
+    label: "Original Will Paper",
     detail: "Printed neatly on standard A4 paper with precise shop bequests and two witness signature blocks.",
     checked: true,
   },
@@ -144,20 +144,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "MBBS Doctor Fitness Certificate",
+    label: "MBBS Doctor Fitness Paper",
     detail: "Medical paper certifying sound mind and sound mind, strongly recommended for seniors aged 60+.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Garvi Gujarat Appointment Receipt",
-    detail: "Official e-appointment receipt with pre-paid ₹100 registration fee booked on garvi.gujarat.gov.in.",
+    detail: "Official e-appointment receipt with pre-paid ₹100 filing fee booked on garvi.gujarat.gov.in.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "SMC Property Tax / City Survey Card",
-    detail: "Latest Surat Municipal Corporation (SMC) tax bill, Index II, or 7/12 land extract from AnyRoR Gujarat.",
+    label: "SMC Asset Tax / City Survey Card",
+    detail: "Latest Surat City City Board (SMC) tax bill, Index II, or 7/12 land extract from AnyRoR Gujarat.",
     checked: false,
   },
   {
@@ -267,7 +267,7 @@ export default function SuratLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect your diamond trading shares, textile business assets, GIDC industrial plots, and SMC home assets.
+                Protect your diamond trading shares, textile business assets, GIDC plant plots, and SMC home assets.
                 Get expert lawyer drafting, Garvi Gujarat SRO appointment guidance, and Section 31 doorstep signing across Surat.
               </p>
 
@@ -340,7 +340,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                 8+ SRO Zones
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Surat City &amp; Industrial Belts
+                Surat City &amp; Plant Belts
               </span>
             </div>
 
@@ -357,7 +357,7 @@ export default function SuratLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rules
@@ -503,16 +503,16 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 50 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Surat
+                  Key Highlights: Will Making &amp; Filing in Surat
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Gujarat under Section 18(e) of the Registration Act, 1908. A Will written on plain white paper is legally valid if signed before two independent witnesses.
+                      Will filing is a choice in Gujarat under Section 18(e) of the Filing Act, 1908. A Will written on plain white paper is legally valid if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -532,7 +532,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty in Gujarat</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty across Gujarat under the Gujarat Stamp Act, 1958. At Surat Sub-Registrar offices, testators pay only a flat ₹100 registration fee plus nominal scanning charges.
+                      Wills incur ₹0 stamp duty across Gujarat under the Gujarat Stamp Act, 1958. At Surat SRO offices, Will makers pay only a flat ₹100 filing fee plus nominal scanning charges.
                     </p>
                   </div>
 
@@ -542,7 +542,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       <span>Garvi Gujarat &amp; SMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Sub-Registrar appointment booking is integrated online via the Garvi Gujarat portal, speeding up title name change before the Surat Municipal Corporation (SMC), SUDA, and City Survey.
+                      SRO appointment booking is integrated online via the Garvi Gujarat portal, speeding up title name change before the Surat City City Board (SMC), SUDA, and City Survey.
                     </p>
                   </div>
                 </div>
@@ -561,8 +561,8 @@ export default function SuratLocationClient({ faqs }: Props) {
                   1. Legal Framework: Will Drafting in Surat, Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession in Surat is governed by the <strong>Indian Succession Act, 1925</strong> alongside the <strong>Registration Act, 1908</strong> and <strong>Gujarat Stamp Act, 1958</strong>.
-                  Any individual of sound mind who has attained majority can draft a Will to determine the exact split of their self-acquired real estate, shop businesses, company equity, bank balances, and precious assets.
+                  Will estate in Surat is governed by the <strong>Indian Succession Act, 1925</strong> alongside the <strong>Filing Act, 1908</strong> and <strong>Gujarat Stamp Act, 1958</strong>.
+                  Any single of sound mind who has attained majority can draft a Will to determine the exact split of their self-acquired real estate, shop businesses, company equity, bank balances, and precious assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Surat presents an intricate shop landscape.
@@ -578,7 +578,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be at least 18 years old and in sound testamentary mind (Section 59).
+                    The Will maker must be at least 18 years old and in sound Will mind (Section 59).
                   </p>
                 </div>
 
@@ -623,14 +623,14 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Surat, Gujarat?
+                  2. Is Will Filing Needed in Surat, Gujarat?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong> across Gujarat.
-                  An unregistered Will signed on plain white paper is legally valid and admissible in Indian courts, provided it complies with the formal signing rules under Section 63 of the Indian Succession Act.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will is strictly <strong>a choice</strong> across Gujarat.
+                  An plain Will signed on plain white paper is legally valid and admissible in Indian courts, provided it complies with the formal signing rules under Section 63 of the Indian Succession Act.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Still, given the high asset price check of shop assets and industrial units in Surat, registering your Will at the local SRO office is strongly advised by senior legal counsel:
+                  Still, given the high asset price check of shop assets and plant units in Surat, registering your Will at the local SRO office is strongly advised by senior legal counsel:
                 </p>
               </div>
 
@@ -639,9 +639,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Surat SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Factor</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Surat SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -652,22 +652,22 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Risk of Forgery Claims</td>
-                      <td className="p-4 bg-rose-50/20">Negligible. Biometrics, thumbprints, and photos recorded before Sub-Registrar</td>
+                      <td className="p-4 bg-rose-50/20">Negligible. Biometrics, thumbprints, and photos recorded before SRO</td>
                       <td className="p-4 bg-slate-50/20">High. Dissatisfied heirs often claim forged signatures or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SMC &amp; SUDA Property Name Change</td>
-                      <td className="p-4 bg-rose-50/20">Swift approval with certified Book III copy from Sub-Registrar</td>
-                      <td className="p-4 bg-slate-50/20">Revenue offices may demand NOC affidavits or court succession paper</td>
+                      <td className="p-4 font-semibold">SMC &amp; SUDA Asset Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Swift approval with certified Book III copy from SRO</td>
+                      <td className="p-4 bg-slate-50/20">Revenue offices may demand NOC sworn notes or court estate paper</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">GIDC Plot / Industry Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Recognized directly by GIDC regional office for industrial plot lease transfer</td>
+                      <td className="p-4 bg-rose-50/20">Recognized directly by GIDC regional office for plant plot lease transfer</td>
                       <td className="p-4 bg-slate-50/20">Requires exhaustive indemnity bonds and multiple family no-objection declarations</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Gujarat Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 filing fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -687,19 +687,19 @@ export default function SuratLocationClient({ faqs }: Props) {
                   3. Surat Probate Rules: Gujarat Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common concern among Surat business founders and property holders is whether court probate is needed to implement a Will.
+                  A common concern among Surat business founders and asset holders is whether court probate is needed to implement a Will.
                   The definitive legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only if a Will is signed within, or pertains to land and flats situated inside, the historical presidency towns of Mumbai, Kolkata, and Chennai.
-                  Because Surat is located in the non-presidency state of Gujarat, probate is not needed for Hindu, Jain, Sikh, or Buddhist testators.
+                  Because Surat is located in the non-presidency state of Gujarat, probate is not needed for Hindu, Jain, Sikh, or Buddhist Will makers.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    General Rule: Probate Optional
+                    General Rule: Probate A Choice
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Gujarat High Court Precedents
@@ -709,7 +709,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables direct property name change with certified registered Will</span>
+                    <span>Enables direct asset name change with certified filed Will</span>
                   </div>
                 </div>
 
@@ -740,11 +740,11 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 51 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Surat Sub-Registrar Offices: SRO Zone Directory
+                  4. Surat SRO Offices: SRO Zone Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Surat district is administered through dedicated Sub-Registrar circles covering urban municipal zones and major industrial corridors.
-                  Under Section 32 of the Registration Act, your Will can be registered at the SRO area where you reside or where any part of your estate is located.
+                  Surat district is administered through dedicated SRO circles covering urban city zones and major plant corridors.
+                  Under Section 32 of the Filing Act, your Will can be filed at the SRO area where you reside or where any part of your estate is located.
                 </p>
               </div>
 
@@ -849,8 +849,8 @@ export default function SuratLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Surat Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Vesu, Varachha, Ring Road, Adajan, or DREAM City</strong>?
-                  From diamond trading bourses and bustling Ring Road textile markets to high-end home towers in Vesu and waterfront assets in Adajan, our senior lawyers provide specialized legal drafting, Garvi Gujarat portal appointment scheduling, and Sub-Registrar accompaniment across Surat:
+                  Looking for legally checked <strong>Will drafting services in Vesu, Varachha, Ring Road, Adajan, or DREAM City</strong>?
+                  From diamond trading bourses and bustling Ring Road textile markets to high-end home towers in Vesu and waterfront assets in Adajan, our senior lawyers provide specialized legal drafting, Garvi Gujarat portal appointment scheduling, and SRO accompaniment across Surat:
                 </p>
               </div>
 
@@ -880,7 +880,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our specialized <strong>Will drafting services in Vesu, VIP Road &amp; Dumas Road</strong> represent Surat&apos;s most sought-after luxury home and high-net-worth business addresses. Our Will drafts mainly address high-value penthouses, undivided land share (UDL) in multi-tier gated societies, mutual fund portfolios, and succession of family private limited companies.
+                      Our specialized <strong>Will drafting services in Vesu, VIP Road &amp; Dumas Road</strong> represent Surat&apos;s most sought-after luxury home and high-net-worth business addresses. Our Will drafts mainly address high-value penthouses, undivided land share (UDL) in multi-tier gated societies, mutual fund portfolios, and estate of family private limited companies.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -933,7 +933,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Through dedicated <strong>Will drafting services in Varachha, Katargam &amp; Mini Bazar</strong>, we cater to the pulsing heart of India&apos;s diamond cutting, polishing, and merchant trade. We prepare specialized business succession Wills addressing diamond firm partnership shares, inventory transfer protocol, safe vault bequests, and smooth leadership transition for Patel family enterprises.
+                      Through dedicated <strong>Will drafting services in Varachha, Katargam &amp; Mini Bazar</strong>, we cater to the pulsing heart of India&apos;s diamond cutting, polishing, and merchant trade. We prepare specialized business estate Wills addressing diamond firm partnership shares, inventory transfer protocol, safe vault bequests, and smooth leadership transition for Patel family enterprises.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -942,13 +942,13 @@ export default function SuratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Bazar Complex (Varachha) &amp; Katargam SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Diamond enterprise succession clauses, doctor medical certification, and Book III registration support.
+                        Diamond enterprise estate clauses, doctor medical certification, and Book III filing support.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Diamond Business Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Diamond Business Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -995,7 +995,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bahumali Bhavan, Majura Gate (SRO Majura)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Shop asset succession, partnership deed harmonization, and swift Sub-Registrar signing.
+                        Shop asset estate, partnership deed harmonization, and swift SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1039,7 +1039,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our expert <strong>Will drafting services in Adajan, Pal &amp; Jahangirpura</strong> cover Surat&apos;s prime western riverfront corridor featuring modern high-rise home towers and cooperative housing societies. A registered Will ensures hassle-free society share paper transfer, SMC property tax name change, and bank deposit succession without requiring civil court succession papers.
+                      Our expert <strong>Will drafting services in Adajan, Pal &amp; Jahangirpura</strong> cover Surat&apos;s prime western riverfront corridor featuring modern high-rise home towers and cooperative housing societies. A filed Will ensures hassle-free society share paper transfer, SMC asset tax name change, and bank deposit estate without requiring civil court estate papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1092,7 +1092,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      We provide bespoke <strong>Will drafting services in Piplod, Athwalines &amp; City Light</strong> for prominent business dynasties, high-value independent bungalows, and retail showrooms. Our lawyers prepare full testamentary instruments covering shop real estate, corporate promoter voting rights, art collections, and multi-generational trusts.
+                      We provide bespoke <strong>Will drafting services in Piplod, Athwalines &amp; City Light</strong> for prominent business dynasties, high-value independent bungalows, and retail showrooms. Our lawyers prepare full Will instruments covering shop real estate, corporate promoter voting rights, art collections, and multi-generational trusts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1126,7 +1126,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5 text-[#C65378]" />
-                        GIDC Industrial Belts
+                        GIDC Plant Belts
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Udhna &amp; Choryasi
@@ -1138,14 +1138,14 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sachin GIDC Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sachin GIDC Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pandesara GIDC Weaving Units</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Khatodara Industrial Estate</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Khatodara Plant Estate</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hazira Port Corridor</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our specialized <strong>Will drafting services in Sachin GIDC &amp; Pandesara GIDC</strong> serve thousands of heavy manufacturing, textile processing, chemical, and engineering factories. We make sure exact compliance with Gujarat Industrial Development Corporation (GIDC) transfer bylaws, plant machinery bequests, environmental compliance transfers, and corporate succession.
+                      Our specialized <strong>Will drafting services in Sachin GIDC &amp; Pandesara GIDC</strong> serve thousands of heavy manufacturing, textile processing, chemical, and engineering factories. We make sure exact compliance with Gujarat Plant Development City Board (GIDC) transfer bylaws, plant machinery bequests, environmental compliance transfers, and corporate estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1154,7 +1154,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Udhna Station Road (SRO Udhna) &amp; Choryasi SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GIDC plot succession structuring, industrial leasehold transfer clauses, and witness attestation.
+                        GIDC plot estate structuring, plant leasehold transfer clauses, and witness witness signing.
                       </p>
                     </div>
                   </div>
@@ -1251,7 +1251,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in DREAM City &amp; Surat Diamond Bourse</strong> cater to the world&apos;s largest office complex and trade nexus. We draft corporate succession instruments for diamond merchants, covering international shop offices, cross-border business interests (Dubai/Antwerp trade links), and multi-director governance structures.
+                      Full <strong>Will drafting services in DREAM City &amp; Surat Diamond Bourse</strong> cater to the world&apos;s largest office complex and trade nexus. We draft corporate estate instruments for diamond merchants, covering international shop offices, cross-border business interests (Dubai/Antwerp trade links), and multi-director governance structures.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1260,7 +1260,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Choryasi Taluka Seva Sadan, Sachin / Nanpura</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Corporate estate structuring, diamond trading firm succession, and expedited Book III SRO registration.
+                        Corporate estate structuring, diamond trading firm estate, and expedited Book III SRO filing.
                       </p>
                     </div>
                   </div>
@@ -1290,11 +1290,11 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 51 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Surat, Gujarat
+                  6. Step-by-Step Will Filing in Surat, Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will before a Surat Sub-Registrar follows a defined legal workflow under Gujarat Revenue Department rules.
-                  Here is the verified 5-step step:
+                  Registering a Will before a Surat SRO follows a defined legal workflow under Gujarat Revenue Office rules.
+                  Here is the checked 5-step step:
                 </p>
               </div>
 
@@ -1322,7 +1322,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       Doctor Fitness Certification
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Secure an MBBS doctor fitness paper certifying sound mind, essential for senior testators.
+                      Secure an MBBS doctor fitness paper certifying sound mind, essential for senior Will makers.
                     </p>
                   </div>
                 </div>
@@ -1347,7 +1347,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       4
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Sub-Registrar Appearance
+                      SRO Appearance
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Will maker and two witnesses visit Surat SRO with original Aadhaar cards for verbal examination by the officer.
@@ -1380,24 +1380,24 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 44 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Registration in Surat
+                  7. Section 31 Doorstep Filing in Surat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or mobility-impaired testators across Surat, navigating busy government complexes like Bahumali Bhavan or Mini Bazar can be stressful.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend the Will maker&apos;s private residence or healthcare facility to execute registration.
+                  For elderly, unwell, or mobility-impaired Will makers across Surat, navigating busy government complexes like Bahumali Bhavan or Mini Bazar can be stressful.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO is legally empowered to attend the Will maker&apos;s private residence or healthcare facility to execute filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Will Registration Works in Surat:
+                  How Doorstep Will Filing Works in Surat:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Mobility Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS doctor certifies that the Will maker is medically infirm or advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Mobility Paper</strong>
+                      <span className="text-slate-600">A filed MBBS doctor certifies that the Will maker is medically infirm or advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1405,7 +1405,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Petition</strong>
-                      <span className="text-slate-600">Our legal counsel drafts and submits the formal Section 31 commission form to the zonal Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal counsel drafts and submits the formal Section 31 commission form to the zonal SRO.</span>
                     </div>
                   </div>
 
@@ -1421,7 +1421,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometrics at Home</strong>
-                      <span className="text-slate-600">The Sub-Registrar brings mobile digital biometric devices to record thumb impressions and identity photos at your doorstep.</span>
+                      <span className="text-slate-600">The SRO brings mobile digital biometric devices to record thumb impressions and identity photos at your doorstep.</span>
                     </div>
                   </div>
                 </div>
@@ -1437,7 +1437,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Surat Sub-Registrar
+                  8. Papers Checklist for Surat SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your essential papers before attending the SRO office.
@@ -1489,10 +1489,10 @@ export default function SuratLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Surat Asset Succession: Diamonds, Textiles &amp; GIDC
+                  9. Surat Asset Estate: Diamonds, Textiles &amp; GIDC
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning in Surat requires careful structuring based on specific shop and legal regulations governing local businesses:
+                  Estate planning in Surat requires careful structuring based on specific shop and legal regulations governing local businesses:
                 </p>
               </div>
 
@@ -1505,7 +1505,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     Diamond Units &amp; SDB Offices
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Testators can bequeath partnership capital in Varachha and Katargam trading firms alongside shop offices in Surat Diamond Bourse (SDB), specifying operational management rights to avoid deadlock.
+                    Will makers can bequeath partnership capital in Varachha and Katargam trading firms alongside shop offices in Surat Diamond Bourse (SDB), specifying operational management rights to avoid deadlock.
                   </p>
                 </div>
 
@@ -1517,19 +1517,19 @@ export default function SuratLocationClient({ faqs }: Props) {
                     Ring Road Shops &amp; Tenancies
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Shops across Millennium, STM, and Japan Markets often hold pagdi or tenancy rights. A registered Will directs lawful inheritance of shop leases, trade stocks, and distributor credit balances.
+                    Shops across Millennium, STM, and Japan Markets often hold pagdi or tenancy rights. A filed Will directs lawful estate of shop leases, trade stocks, and distributor credit balances.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    GIDC Industrial Plots
+                    GIDC Plant Plots
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Sachin &amp; Pandesara GIDC Sheds
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Leasehold industrial plots granted by GIDC demand clear testamentary nomination. A registered Will enables the designated successor partner or director to effectuate title transfer without cumbersome NOC hurdles.
+                    Leasehold plant plots granted by GIDC demand clear Will nomination. A filed Will enables the designated successor partner or director to effectuate title transfer without cumbersome NOC hurdles.
                   </p>
                 </div>
               </div>
@@ -1547,8 +1547,8 @@ export default function SuratLocationClient({ faqs }: Props) {
                   10. Official Gujarat Government Fees &amp; Stamp Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyance deeds that incur significant ad-valorem stamp duty and municipal surcharges, Wills are 100% exempt from stamp duty across Gujarat under the Gujarat Stamp Act, 1958.
-                  Official government fees at Surat Sub-Registrar offices are strictly nominal:
+                  Unlike asset conveyance deeds that incur significant ad-valorem stamp duty and city surcharges, Wills are 100% exempt from stamp duty across Gujarat under the Gujarat Stamp Act, 1958.
+                  Official government fees at Surat SRO offices are strictly nominal:
                 </p>
               </div>
 
@@ -1568,7 +1568,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Gujarat</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Surat SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">Surat SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Superintendent of Stamps / Garvi Gujarat</td>
                     </tr>
@@ -1599,7 +1599,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                   11. Transparent Surat Will Packages &amp; Legal Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the level of legal support tailored to your family&apos;s asset structure and business succession needs in Surat:
+                  Select the level of legal support tailored to your family&apos;s asset structure and business estate needs in Surat:
                 </p>
               </div>
 
@@ -1617,12 +1617,12 @@ export default function SuratLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual estates comprising bank accounts, mutual funds, demat equity, and home flats.
+                      Ideal for single estates comprising bank accounts, mutual funds, demat equity, and home flats.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Surat Will drafting platform</span>
+                        <span>Free Surat Will drafting platform</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1659,7 +1659,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate lawyer review for diamond firms, textile shops, GIDC plots, and HUF business succession.
+                      Senior estate lawyer review for diamond firms, textile shops, GIDC plots, and HUF business estate.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1695,13 +1695,13 @@ export default function SuratLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration coordination at any of Surat&apos;s Sub-Registrar offices or home signing.
+                      Full end-to-end filing coordination at any of Surat&apos;s SRO offices or home signing.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1718,7 +1718,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1744,7 +1744,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Surat Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Authoritative answers to common questions regarding Will drafting, diamond business planning, and SRO registration in Surat:
+                  Authoritative answers to common questions regarding Will drafting, diamond business planning, and SRO filing in Surat:
                 </p>
               </div>
 
@@ -1790,7 +1790,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                   13. Legal References &amp; Gujarat Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  All WillDrafting protocols comply strictly with central statutes, Gujarat state legislation, and official registration systems:
+                  All WillDrafting protocols comply strictly with central statutes, Gujarat state legislation, and official filing systems:
                 </p>
               </div>
 
@@ -1806,10 +1806,10 @@ export default function SuratLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1839,7 +1839,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                 Protect Your Surat Businesses &amp; Family Assets Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not allow your shop diamond firms, textile trading shares, or SMC real estate to get trapped in protracted succession fights.
+                Do not allow your shop diamond firms, textile trading shares, or SMC real estate to get trapped in protracted estate fights.
                 Draft a legally binding Will online in minutes or consult our senior estate planning lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1859,7 +1859,29 @@ export default function SuratLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>

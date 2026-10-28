@@ -139,7 +139,7 @@ export default function JaipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jaipur: Online Will & Succession Guide",
         description:
-          "Draft a legally binding Will in Jaipur. Expert guidance on ancestral property succession, Rajasthan Sub-Registrar registration, and estate safety.",
+          "Draft a legally binding Will in Jaipur. Expert guidance on family asset estate, Rajasthan SRO filing, and estate safety.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -186,7 +186,7 @@ export default function JaipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jaipur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Rajasthan Sub-Registrar Office ePanjiyan registration support across Jaipur circles.",
+          "Professional Will drafting, lawyer check, and Rajasthan SRO office ePanjiyan filing support across Jaipur circles.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -256,26 +256,26 @@ export default function JaipurLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Jaipur Rajasthan",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Jaipur using ePanjiyan Rajasthan.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Jaipur using ePanjiyan Rajasthan.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets and Beneficiaries",
-            text: "List your Jaipur properties including JDA plots, freehold houses, ancestral coparcenary shares, bank deposits, and demat folios. Nominate beneficiaries and an executor.",
+            text: "List your Jaipur assets including JDA plots, freehold houses, family joint shares, bank deposits, and demat folios. Nominate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Mitakshara & JDA Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate ancestral coparcenary protections, revocation, and JDA transfer covenants.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate family joint protections, revocation, and JDA transfer covenants.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on standard white A4 sheets and sign every page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on standard white A4 sheets and sign every page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
@@ -287,7 +287,7 @@ export default function JaipurLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Jaipur SRO",
-            text: "Visit the designated Jaipur Sub-Registrar office with witnesses and original photo IDs for biometric verification, photo capture, and official Book III deed registration.",
+            text: "Visit the designated Jaipur SRO office with witnesses and original photo IDs for biometric check, photo capture, and official Book III deed filing.",
           },
         ],
       },

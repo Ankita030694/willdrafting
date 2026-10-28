@@ -63,7 +63,7 @@ const TOC_ITEMS = [
   { id: "when-will-better", label: "7. When Will is Better" },
   { id: "senior-citizens-act-23", label: "8. Senior Citizens Act Sec 23" },
   { id: "decision-flowchart", label: "9. Decision Protocol & Steps" },
-  { id: "cost-calculator", label: "10. Interactive Cost Calculator" },
+  { id: "cost-calculator", label: "10. Free Cost Tool" },
   { id: "printable-checklist", label: "11. Estate Planning Checklist" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
   { id: "statutory-citations", label: "13. Official Legal Citations" },
@@ -274,7 +274,7 @@ export default function GiftDeedVsWillClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [showImageModal, setShowImageModal] = useState<boolean>(false);
 
-  // Interactive Calculator State
+  // Free Tool State
   const [calcState, setCalcState] = useState<string>("Maharashtra");
   const [calcValue, setCalcValue] = useState<number>(5000000);
   const [calcRelation, setCalcRelation] = useState<"family" | "non-family">("family");
@@ -436,12 +436,12 @@ export default function GiftDeedVsWillClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Gift Deed vs Will: Which Is Better for Property in India?
+            Gift Deed vs Will: Which Is Better for Asset in India?
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Compare legal control, upfront stamp duty, Section 56(2)(x) income tax exemptions, and elder protection. Learn when to gift property immediately versus when a Will safeguards family harmony.
+            Compare legal control, upfront stamp duty, Section 56(2)(x) income tax exemptions, and elder protection. Learn when to gift asset right away versus when a Will safeguards family harmony.
           </p>
 
           {/* CTA Buttons */}
@@ -492,7 +492,7 @@ export default function GiftDeedVsWillClient() {
             <div>
               <p className="text-2xl sm:text-3xl font-extrabold text-[#172228]">4.9 / 5 Rating</p>
               <p className="text-xs uppercase tracking-wider font-semibold text-slate-600 mt-1">
-                15,000+ Succession Plans
+                15,000+ Estate Plans
               </p>
             </div>
           </div>
@@ -550,7 +550,7 @@ export default function GiftDeedVsWillClient() {
                 Executive Decision Summary: Gift Deed vs Will in India
               </h2>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                When transferring real estate or family wealth in India, property owners face a fundamental dilemma: should they execute an immediate <strong className="text-[#172228]">Gift Deed</strong> or draft a testamentary <strong className="text-[#172228]">Last Will and Testament</strong>? The decision boils down to three decisive legal pillars: <strong className="text-[#C65378]">Control</strong>, <strong className="text-[#C65378]">Certainty</strong>, and <strong className="text-[#C65378]">Upfront Cost</strong>.
+                When transferring real estate or family wealth in India, asset owners face a fundamental dilemma: should they execute an immediate <strong className="text-[#172228]">Gift Deed</strong> or draft a Will <strong className="text-[#172228]">Last Will and Testament</strong>? The decision boils down to three decisive legal pillars: <strong className="text-[#C65378]">Control</strong>, <strong className="text-[#C65378]">Certainty</strong>, and <strong className="text-[#C65378]">Upfront Cost</strong>.
               </p>
 
               {/* Uploaded Comparison Graphic Display */}
@@ -581,7 +581,7 @@ export default function GiftDeedVsWillClient() {
                       Gift Deed: Immediate Transfer
                     </p>
                     <p className="text-slate-600 leading-relaxed">
-                      Ownership transfers immediately. Donee gets keys and title today. Irrevocable, but incurs 3%–7% state stamp duty.
+                      Ownership transfers right away. Donee gets keys and title today. Irrevocable, but incurs 3%–7% state stamp duty.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 text-xs">
@@ -599,7 +599,7 @@ export default function GiftDeedVsWillClient() {
                       Will: Post-Death Protection
                     </p>
                     <p className="text-slate-600 leading-relaxed">
-                      Operates only after death. Testator keeps full ownership, rent, and rights. 100% revocable with ₹0 stamp duty.
+                      Operates only after death. Will maker keeps full ownership, rent, and rights. 100% revocable with ₹0 stamp duty.
                     </p>
                   </div>
                 </div>
@@ -616,7 +616,7 @@ export default function GiftDeedVsWillClient() {
                 1. Quick Decision Matrix: Gift Deed vs Will at a Glance
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                The comprehensive comparison below highlights the statutory, financial, and practical distinctions between transferring property under a Gift Deed versus bequeathing it through a Will.
+                The full comparison below highlights the legal, financial, and practical distinctions between transferring asset under a Gift Deed versus bequeathing it through a Will.
               </p>
 
               <div className="overflow-x-auto bg-white rounded-2xl border border-slate-200/80 shadow-xs">
@@ -625,7 +625,7 @@ export default function GiftDeedVsWillClient() {
                     <tr className="bg-slate-100/90 text-slate-800 border-b border-slate-200 font-extrabold">
                       <th className="py-3.5 px-4">Evaluation Dimension</th>
                       <th className="py-3.5 px-4 bg-rose-50/60 text-[#C65378]">Gift Deed (Immediate Transfer)</th>
-                      <th className="py-3.5 px-4 bg-emerald-50/60 text-emerald-800">Last Will (Testamentary)</th>
+                      <th className="py-3.5 px-4 bg-emerald-50/60 text-emerald-800">Last Will (Will)</th>
                       <th className="py-3.5 px-4 hidden md:table-cell">Strategic Takeaway</th>
                     </tr>
                   </thead>
@@ -647,7 +647,7 @@ export default function GiftDeedVsWillClient() {
             <section id="core-differences" className="scroll-target space-y-5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                 <Gavel className="w-4 h-4" />
-                <span>Statutory Framework</span>
+                <span>Legal Framework</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Core Legal Differences: Ownership, Control &amp; Timing
@@ -664,12 +664,12 @@ export default function GiftDeedVsWillClient() {
                       <span>How a Gift Deed Operates</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Under <strong className="text-slate-800">Section 122 of the Transfer of Property Act, 1882</strong>, a gift is a voluntary transfer of existing movable or immovable property made without consideration by a donor to a donee.
+                      Under <strong className="text-slate-800">Section 122 of the Transfer of Property Act, 1882</strong>, a gift is a voluntary transfer of existing cash or land asset made without consideration by a donor to a donee.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 list-disc pl-4">
                       <li><strong>Acceptance is Vital:</strong> The donee must accept the gift during the donor&apos;s lifetime while the donor is capable of giving.</li>
-                      <li><strong>Mandatory Registration:</strong> Under Section 123 of TPA and Section 17 of the Registration Act, 1908, immovable property gift deeds must be registered with the Sub-Registrar.</li>
-                      <li><strong>Total Surrender of Title:</strong> Once registered, the donor completely divests all legal ownership, rental income, and rights.</li>
+                      <li><strong>Needed Filing:</strong> Under Section 123 of TPA and Section 17 of the Filing Act, 1908, land asset gift deeds must be filed with the SRO.</li>
+                      <li><strong>Total Surrender of Title:</strong> Once filed, the donor completely divests all legal ownership, rental income, and rights.</li>
                     </ul>
                   </div>
 
@@ -679,12 +679,12 @@ export default function GiftDeedVsWillClient() {
                       <span>How a Will Operates</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Under <strong className="text-slate-800">Section 2(h) and Section 59 of the Indian Succession Act, 1925</strong>, a Will is a legal declaration of the intention of the testator regarding their property to be carried into effect after their death.
+                      Under <strong className="text-slate-800">Section 2(h) and Section 59 of the Indian Succession Act, 1925</strong>, a Will is a legal declaration of the intention of the Will maker regarding their asset to be carried into effect after their death.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 list-disc pl-4">
-                      <li><strong>Ambulatory Nature:</strong> A Will has zero legal effect during the testator&apos;s lifetime. It only speaks from death.</li>
+                      <li><strong>Ambulatory Nature:</strong> A Will has zero legal effect during the Will maker&apos;s lifetime. It only speaks from death.</li>
                       <li><strong>Absolute Revocability:</strong> Under Section 62 of ISA, a Will can be revoked, superseded, or rewritten at any time.</li>
-                      <li><strong>Uninterrupted Enjoyment:</strong> The testator can live in the property, collect rent, or even sell it at any time without anyone&apos;s permission.</li>
+                      <li><strong>Uninterrupted Enjoyment:</strong> The Will maker can live in the asset, collect rent, or even sell it at any time without anyone&apos;s permission.</li>
                     </ul>
                   </div>
                 </div>
@@ -692,7 +692,7 @@ export default function GiftDeedVsWillClient() {
                 <div className="p-4 rounded-xl bg-amber-50/80 border border-amber-200/80 text-xs sm:text-sm text-amber-950 flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="font-bold">Plain Layman Rule:</strong> A Gift Deed gives away your property <span className="underline font-bold">today</span>. A Will gives away your property <span className="underline font-bold">tomorrow</span> (only after your demise). If you give it away today, you cannot change your mind tomorrow if family dynamics turn hostile.
+                    <strong className="font-bold">Plain Layman Rule:</strong> A Gift Deed gives away your asset <span className="underline font-bold">today</span>. A Will gives away your asset <span className="underline font-bold">tomorrow</span> (only after your demise). If you give it away today, you cannot change your mind tomorrow if family dynamics turn hostile.
                   </div>
                 </div>
               </div>
@@ -705,10 +705,10 @@ export default function GiftDeedVsWillClient() {
                 <span>Financial Outflow Analysis</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                3. Stamp Duty &amp; Registration Charges: State-Wise Analysis
+                3. Stamp Duty &amp; Filing Charges: State-Wise Analysis
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                The most significant barrier to executing a Gift Deed is the immediate government fee. While Wills are completely exempt from stamp duty across every state in India, Gift Deeds attract varying stamp duties, often reaching several lakhs of rupees.
+                The most significant barrier to signing a Gift Deed is the immediate government fee. While Wills are completely exempt from stamp duty across every state in India, Gift Deeds attract varying stamp duties, often reaching several lakhs of rupees.
               </p>
 
               <div className="overflow-x-auto bg-white rounded-2xl border border-slate-200/80 shadow-xs">
@@ -718,7 +718,7 @@ export default function GiftDeedVsWillClient() {
                       <th className="py-3 px-4">State</th>
                       <th className="py-3 px-4">Gift Duty (Family / Blood Relative)</th>
                       <th className="py-3 px-4">Gift Duty (Non-Family)</th>
-                      <th className="py-3 px-4">Registration Fee</th>
+                      <th className="py-3 px-4">Filing Fee</th>
                       <th className="py-3 px-4 text-emerald-800">Will Stamp Duty</th>
                     </tr>
                   </thead>
@@ -738,7 +738,7 @@ export default function GiftDeedVsWillClient() {
 
               <div className="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600 space-y-1.5">
                 <p>
-                  <strong>⚠️ Statutory Verification Note:</strong> Stamp duty rates are subject to annual state budget amendments and local municipal cesses (such as the 1% Metro Cess in Mumbai, Pune, Nagpur, and Thane). Always verify the prevailing circle rate and municipal notifications before executing a Gift Deed.
+                  <strong>⚠️ Legal Check Note:</strong> Stamp duty rates are subject to annual state budget amendments and local city cesses (such as the 1% Metro Cess in Mumbai, Pune, Nagpur, and Thane). Always verify the prevailing circle rate and city notifications before signing a Gift Deed.
                 </p>
               </div>
             </section>
@@ -750,10 +750,10 @@ export default function GiftDeedVsWillClient() {
                 <span>Financial Case Study</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. Worked Cost Case Study: ₹50 Lakh Property in Maharashtra
+                4. Worked Cost Case Study: ₹50 Lakh Asset in Maharashtra
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Consider an elderly father in Pune or Mumbai gifting a residential apartment with a ready reckoner market value of <strong className="text-slate-900">₹50,00,000</strong> to his adult son. Here is the exact mathematical cost difference between executing a Gift Deed versus drafting a Will:
+                Consider an elderly father in Pune or Mumbai gifting a home apartment with a ready reckoner market value of <strong className="text-slate-900">₹50,00,000</strong> to his adult son. Here is the exact mathematical cost difference between signing a Gift Deed versus drafting a Will:
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs space-y-6">
@@ -774,15 +774,15 @@ export default function GiftDeedVsWillClient() {
                         <span className="font-bold text-slate-900">₹50,000</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>SRO Registration Fee (Capped):</span>
+                        <span>SRO Filing Fee (Capped):</span>
                         <span className="font-bold text-slate-900">₹30,000</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>Advocate Drafting &amp; SRO Verification:</span>
+                        <span>Lawyer Drafting &amp; SRO Check:</span>
                         <span className="font-bold text-slate-900">₹15,000</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>Document Handling &amp; Challan Charges:</span>
+                        <span>Paper Handling &amp; Challan Charges:</span>
                         <span className="font-bold text-slate-900">₹1,500</span>
                       </div>
                       <div className="flex justify-between py-2 text-base font-extrabold text-rose-900 border-t-2 border-rose-300">
@@ -796,7 +796,7 @@ export default function GiftDeedVsWillClient() {
                   <div className="p-5 rounded-xl bg-emerald-50/50 border border-emerald-200/80 space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="font-extrabold text-sm text-emerald-800 uppercase tracking-wider">Option B: Last Will Route</span>
-                      <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">Testamentary Handover</span>
+                      <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">Will Handover</span>
                     </div>
                     <div className="space-y-2 text-xs sm:text-sm text-slate-700 pt-1 divide-y divide-emerald-100">
                       <div className="flex justify-between py-1.5">
@@ -804,11 +804,11 @@ export default function GiftDeedVsWillClient() {
                         <span className="font-bold text-emerald-700">₹0</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>Mandatory Registration Fee:</span>
+                        <span>Needed Filing Fee:</span>
                         <span className="font-bold text-emerald-700">₹0</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>Optional SRO Registration (if desired):</span>
+                        <span>A Choice SRO Filing (if desired):</span>
                         <span className="font-bold text-slate-900">₹100</span>
                       </div>
                       <div className="flex justify-between py-1.5">
@@ -816,7 +816,7 @@ export default function GiftDeedVsWillClient() {
                         <span className="font-bold text-slate-900">₹1,499</span>
                       </div>
                       <div className="flex justify-between py-1.5">
-                        <span>Witness Attestation (Two Witnesses):</span>
+                        <span>Witness Witness Signing (Two Witnesses):</span>
                         <span className="font-bold text-emerald-700">₹0</span>
                       </div>
                       <div className="flex justify-between py-2 text-base font-extrabold text-emerald-950 border-t-2 border-emerald-300">
@@ -857,7 +857,7 @@ export default function GiftDeedVsWillClient() {
               </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  India abolished the Gift Tax Act in 1998, but gifts are now regulated under <strong className="text-slate-900">Section 56(2)(x) of the Income Tax Act, 1961</strong> as &apos;Income from Other Sources&apos;. Understanding these tax rules is critical before drafting any document.
+                  India abolished the Gift Tax Act in 1998, but gifts are now regulated under <strong className="text-slate-900">Section 56(2)(x) of the Income Tax Act, 1961</strong> as &apos;Income from Other Sources&apos;. Understanding these tax rules is critical before drafting any paper.
                 </p>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs space-y-3">
@@ -865,7 +865,7 @@ export default function GiftDeedVsWillClient() {
                     The General Rule &amp; The ₹50,000 Threshold
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If an individual receives any immovable property without consideration (a gift) and the stamp duty value exceeds <strong className="text-slate-900">₹50,000</strong>, the entire stamp duty value is added to the recipient&apos;s taxable income and taxed at their applicable slab rate (which can reach over 30%).
+                    If an single receives any land asset without consideration (a gift) and the stamp duty value exceeds <strong className="text-slate-900">₹50,000</strong>, the entire stamp duty value is added to the recipient&apos;s taxable income and taxed at their applicable slab rate (which can reach over 30%).
                   </p>
                 </div>
 
@@ -875,11 +875,11 @@ export default function GiftDeedVsWillClient() {
                     <span>Who Qualifies as a &quot;Relative&quot; for 100% Tax Exemption?</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-emerald-950 leading-relaxed">
-                    Under the fifth proviso to Section 56(2)(x), gifts received from specified &quot;relatives&quot; are completely exempt from income tax, regardless of the property value. For individuals, relatives include:
+                    Under the fifth proviso to Section 56(2)(x), gifts received from specified &quot;relatives&quot; are completely exempt from income tax, regardless of the asset value. For people, relatives include:
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-900 pt-1">
-                    <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Spouse of the individual</div>
-                    <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Brother or sister of the individual</div>
+                    <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Spouse of the single</div>
+                    <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Brother or sister of the single</div>
                     <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Brother or sister of spouse</div>
                     <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Brother or sister of either parent (Uncle/Aunt)</div>
                     <div className="p-2 rounded-lg bg-white/80 border border-emerald-200">✓ Lineal ascendant or descendant (Parents, Grandparents, Children, Grandchildren)</div>
@@ -893,7 +893,7 @@ export default function GiftDeedVsWillClient() {
                     <span>The Nephew &amp; Friend Tax Trap: Why a Will Wins</span>
                   </div>
                   <p className="text-rose-900 leading-relaxed text-xs">
-                    <strong>Crucial Warning:</strong> Nephews, nieces, first cousins, and friends are <span className="underline font-bold">NOT</span> classified as relatives under Section 56. If you execute a Gift Deed of a ₹60 Lakh flat to your nephew, he must pay income tax on ₹60 Lakh! In contrast, <strong className="text-slate-900">Clause (I) of the Section 56(2)(x) proviso</strong> explicitly exempts ANY property received <em>&quot;under a will or by way of inheritance&quot;</em>. Bequeathing property to a nephew via a Will attracts <strong className="font-bold">₹0 Income Tax</strong>.
+                    <strong>Crucial Warning:</strong> Nephews, nieces, first cousins, and friends are <span className="underline font-bold">NOT</span> classified as relatives under Section 56. If you execute a Gift Deed of a ₹60 Lakh flat to your nephew, he must pay income tax on ₹60 Lakh! In contrast, <strong className="text-slate-900">Clause (I) of the Section 56(2)(x) proviso</strong> explicitly exempts ANY asset received <em>&quot;under a will or by way of estate&quot;</em>. Bequeathing asset to a nephew via a Will attracts <strong className="font-bold">₹0 Income Tax</strong>.
                   </p>
                 </div>
 
@@ -901,11 +901,11 @@ export default function GiftDeedVsWillClient() {
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-2">
                   <p className="font-bold text-slate-900 text-sm">Capital Gains Tax on Subsequent Sale by Donee or Legal Heir</p>
                   <p className="leading-relaxed">
-                    Neither a Gift Deed nor an inheritance triggers capital gains tax at the moment of transfer. However, when the beneficiary eventually sells the property:
+                    Neither a Gift Deed nor an estate triggers capital gains tax at the moment of transfer. However, when the heir eventually sells the asset:
                   </p>
                   <ul className="list-disc pl-4 space-y-1">
-                    <li><strong>Cost of Acquisition (Section 49(1)):</strong> The cost for which the previous owner bought the property becomes the beneficiary&apos;s cost basis.</li>
-                    <li><strong>Holding Period Tacking (Section 2(42A)):</strong> The period during which the donor or testator held the property is added to the beneficiary&apos;s holding period to determine long-term status.</li>
+                    <li><strong>Cost of Acquisition (Section 49(1)):</strong> The cost for which the previous owner bought the asset becomes the heir&apos;s cost basis.</li>
+                    <li><strong>Holding Period Tacking (Section 2(42A)):</strong> The period during which the donor or Will maker held the asset is added to the heir&apos;s holding period to determine long-term status.</li>
                   </ul>
                 </div>
               </div>
@@ -921,17 +921,17 @@ export default function GiftDeedVsWillClient() {
                 6. When a Gift Deed Is Better: 4 Realistic Family Scenarios
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Despite higher upfront stamp duty and loss of control, a registered Gift Deed is the superior legal vehicle in specific circumstances:
+                Despite higher upfront stamp duty and loss of control, a filed Gift Deed is the superior legal vehicle in specific circumstances:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-rose-800 font-bold text-sm">
                     <Users className="w-4 h-4 text-[#C65378]" />
-                    <span>1. Eliminating Post-Death Sibling Disputes</span>
+                    <span>1. Eliminating Post-Death Sibling Fights</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If you anticipate that other siblings or disgruntled relatives will challenge a Will by alleging lack of testamentary capacity, undue influence, or forged signatures, an irrevocable Gift Deed registered while you are fully healthy settles the question permanently.
+                    If you anticipate that other siblings or disgruntled relatives will fight a Will by alleging lack of Will capacity, undue influence, or forged signatures, an irrevocable Gift Deed filed while you are fully healthy settles the question permanently.
                   </p>
                 </div>
 
@@ -941,17 +941,17 @@ export default function GiftDeedVsWillClient() {
                     <span>2. Child Needs Title for Loans or Redevelopment</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    When a son or daughter requires clear, undisputed title in their own name to apply for a substantial home renovation loan, business mortgage, or sign a tripartite redevelopment agreement with a real estate builder.
+                    When a son or daughter requires clear, undisputed title in their own name to apply for a substantial home renovation loan, business mortgage, or sign a tripartite redevelopment pact with a real estate builder.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-rose-800 font-bold text-sm">
                     <Clock className="w-4 h-4 text-[#C65378]" />
-                    <span>3. Bypassing Mandatory Probate in Metro Cities</span>
+                    <span>3. Bypassing Needed Probate in Metro Cities</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In the presidency towns of Mumbai, Kolkata, and Chennai, probate of a Will is mandatory under Section 57 and Section 213 of the Indian Succession Act. Probate can take 12 to 24 months and involve court fees. A Gift Deed executes instant municipal mutation.
+                    In the presidency towns of Mumbai, Kolkata, and Chennai, probate of a Will is needed under Section 57 and Section 213 of the Indian Succession Act. Probate can take 12 to 24 months and involve court fees. A Gift Deed executes instant city name change.
                   </p>
                 </div>
 
@@ -977,7 +977,7 @@ export default function GiftDeedVsWillClient() {
                 7. When a Will Is Better: Retaining Control &amp; Flexibility
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                For over 80% of Indian families, drafting a comprehensive Last Will is the far superior legal strategy. Here is why estate planning advocates consistently recommend Wills:
+                For over 80% of Indian families, drafting a full Last Will is the far superior legal strategy. Here is why estate planning lawyers consistently recommend Wills:
               </p>
 
               <div className="space-y-3">
@@ -987,7 +987,7 @@ export default function GiftDeedVsWillClient() {
                     <span>1. You Retain 100% Lifetime Ownership and Rental Dignity</span>
                   </p>
                   <p className="text-xs text-emerald-900 leading-relaxed">
-                    You never risk becoming a guest or tenant in your own house. You collect all rental yields, make property decisions independently, and maintain financial autonomy until your very last breath.
+                    You never risk becoming a guest or tenant in your own house. You collect all rental yields, make asset decisions independently, and maintain financial autonomy until your very last breath.
                   </p>
                 </div>
 
@@ -1027,14 +1027,14 @@ export default function GiftDeedVsWillClient() {
             <section id="senior-citizens-act-23" className="scroll-target space-y-5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Elder Remedy</span>
+                <span>Legal Elder Remedy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Senior Citizens Act Section 23: Cancelling a Gift Deed
               </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Can parents cancel a registered Gift Deed if their children abandon them? Under standard property law (Section 126 of TPA), a gift cannot be revoked unilaterally. However, Parliament introduced a potent statutory exception for aging parents.
+                  Can parents cancel a filed Gift Deed if their children abandon them? Under standard asset law (Section 126 of TPA), a gift cannot be revoked unilaterally. However, Parliament introduced a potent legal exception for aging parents.
                 </p>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-xs space-y-3">
@@ -1043,7 +1043,7 @@ export default function GiftDeedVsWillClient() {
                     <span>Section 23 of the Senior Citizens Act, 2007 (MWPSC Act)</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under <strong className="text-slate-800">Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007</strong>, where a senior citizen (aged 60+) has transferred property by gift or otherwise, subject to the condition that the transferee shall provide the basic amenities and physical needs to the transferor, and the transferee fails or refuses to provide such amenities, the transfer of property is deemed to have been made by fraud or coercion or undue influence and shall at the option of the transferor be declared <strong className="text-rose-700 font-bold">void</strong> by the Maintenance Tribunal.
+                    Under <strong className="text-slate-800">Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007</strong>, where a senior citizen (aged 60+) has transferred asset by gift or otherwise, subject to the condition that the transferee shall provide the basic amenities and physical needs to the transferor, and the transferee fails or refuses to provide such amenities, the transfer of asset is deemed to have been made by fraud or coercion or undue influence and shall at the option of the transferor be declared <strong className="text-rose-700 font-bold">void</strong> by the Maintenance Tribunal.
                   </p>
                 </div>
 
@@ -1053,7 +1053,7 @@ export default function GiftDeedVsWillClient() {
                     <span>Landmark Supreme Court Ruling: Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</span>
                   </p>
                   <p className="text-xs text-rose-900 leading-relaxed">
-                    In January 2025, the Supreme Court of India in <strong className="text-rose-950">Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</strong> reaffirmed that the Maintenance Tribunal possesses statutory authority to set aside conditional gift deeds when children breach their filial support obligations. Read our comprehensive statutory analysis on <Link href="/blogs/gift-deed-cancellation-senior-citizens-act-section-23" className="underline font-bold text-rose-950 hover:text-rose-700">cancelling gift deeds under Section 23 of the Senior Citizens Act</Link>.
+                    In January 2025, the Supreme Court of India in <strong className="text-rose-950">Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</strong> reaffirmed that the Maintenance Tribunal possesses legal office to set aside conditional gift deeds when children breach their filial support obligations. Read our full legal analysis on <Link href="/blogs/gift-deed-cancellation-senior-citizens-act-section-23" className="underline font-bold text-rose-950 hover:text-rose-700">cancelling gift deeds under Section 23 of the Senior Citizens Act</Link>.
                   </p>
                 </div>
 
@@ -1061,7 +1061,7 @@ export default function GiftDeedVsWillClient() {
                 <div className="p-4 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950 space-y-2">
                   <p className="font-bold text-amber-900">⚠️ Essential Drafting Tip for Senior Citizens:</p>
                   <p className="leading-relaxed">
-                    If you must execute a Gift Deed, <span className="underline font-bold">never use a generic typist template</span>. You MUST insert an explicit recital clause stating: <em>&quot;This gift is executed subject to the express condition that the Donee shall provide all basic amenities, medical expenses, physical care, and financial maintenance to the Donor throughout the Donor&apos;s natural life under Section 23 of the MWPSC Act, 2007.&quot;</em> Without this clause, cancellation in court becomes prolonged and contested.
+                    If you must execute a Gift Deed, <span className="underline font-bold">never use a generic typist template</span>. You MUST insert an explicit recital clause stating: <em>&quot;This gift is signed subject to the express condition that the Donee shall provide all basic amenities, medical expenses, physical care, and financial maintenance to the Donor throughout the Donor&apos;s natural life under Section 23 of the MWPSC Act, 2007.&quot;</em> Without this clause, cancellation in court becomes prolonged and contested.
                   </p>
                 </div>
               </div>
@@ -1082,8 +1082,8 @@ export default function GiftDeedVsWillClient() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-xs space-y-2">
-                  <span className="text-xs font-black uppercase text-[#C65378]">Step 1: Residential &amp; Rental Need</span>
-                  <p className="font-bold text-slate-900 text-sm">Do you rely on the property for shelter or rent?</p>
+                  <span className="text-xs font-black uppercase text-[#C65378]">Step 1: Home &amp; Rental Need</span>
+                  <p className="font-bold text-slate-900 text-sm">Do you rely on the asset for shelter or rent?</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     If YES: Choose a <strong className="text-emerald-700 font-bold">WILL</strong>. Never gift away your primary residence or primary rental income while alive.
                   </p>
@@ -1109,7 +1109,7 @@ export default function GiftDeedVsWillClient() {
                   <span className="text-xs font-black uppercase text-[#C65378]">Step 4: Immediate Construction / Loan Need</span>
                   <p className="font-bold text-slate-900 text-sm">Does the child need immediate loan collateral?</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If YES: Execute a <strong className="text-rose-700 font-bold">GIFT DEED</strong> with an explicit Section 23 maintenance covenant, or consider a <Link href="/templates/release-deed-format" className="underline font-bold text-slate-900 hover:text-[#C65378]">Release Deed</Link> if sharing ancestral property.
+                    If YES: Execute a <strong className="text-rose-700 font-bold">GIFT DEED</strong> with an explicit Section 23 maintenance covenant, or consider a <Link href="/templates/release-deed-format" className="underline font-bold text-slate-900 hover:text-[#C65378]">Release Deed</Link> if sharing family asset.
                   </p>
                 </div>
               </div>
@@ -1122,10 +1122,10 @@ export default function GiftDeedVsWillClient() {
                 <span>Dynamic Assessment Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                10. Interactive Cost &amp; Decision Calculator: Plan Your Asset
+                10. Free Cost &amp; Decision Tool: Plan Your Asset
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Test your property value and state to see immediate estimated stamp duty, registration charges, and how much cash you save by choosing a Will:
+                Test your asset value and state to see immediate estimated stamp duty, filing charges, and how much cash you save by choosing a Will:
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-7 shadow-xs space-y-6">
@@ -1172,7 +1172,7 @@ export default function GiftDeedVsWillClient() {
 
                   {/* Property Value Presets */}
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-700">Property Market Value</label>
+                    <label className="text-xs font-bold text-slate-700">Asset Market Value</label>
                     <div className="flex gap-1.5">
                       {[3000000, 5000000, 10000000].map((preset) => (
                         <button
@@ -1265,19 +1265,19 @@ export default function GiftDeedVsWillClient() {
             <section id="printable-checklist" className="scroll-target space-y-5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                 <CheckSquare className="w-4 h-4" />
-                <span>Verified Legal Checklist</span>
+                <span>Checked Legal Checklist</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Printable Estate Planning Checklist: Gift Deed vs Will
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Use this actionable, practitioner-verified checklist to conduct due diligence before signing any title document or transferring assets to children:
+                Use this actionable, practitioner-checked checklist to conduct due diligence before signing any title paper or transferring assets to children:
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
                   <span className="text-xs font-extrabold uppercase text-slate-600">
-                    Mandatory Due Diligence Verification
+                    Needed Due Diligence Check
                   </span>
                   <div className="flex items-center gap-2">
                     <button
@@ -1299,12 +1299,12 @@ export default function GiftDeedVsWillClient() {
 
                 <div className="space-y-3">
                   {[
-                    { id: "check-1", label: "Check if you require lifetime residence & rental income from this property." },
+                    { id: "check-1", label: "Check if you require lifetime residence & rental income from this asset." },
                     { id: "check-2", label: "Verify whether recipient is a recognized 'Relative' under IT Act Section 56." },
                     { id: "check-3", label: "Calculate exact state stamp duty (3%–7%) vs ₹0 for a Will." },
-                    { id: "check-4", label: "If executing a Gift Deed as a senior citizen, insert a Section 23 MWPSC maintenance clause." },
+                    { id: "check-4", label: "If signing a Gift Deed as a senior citizen, insert a Section 23 MWPSC maintenance clause." },
                     { id: "check-5", label: "Verify that the donee signs formal written acceptance during the donor's lifetime." },
-                    { id: "check-6", label: "If executing a Will, arrange two independent adult witnesses who are not beneficiaries." },
+                    { id: "check-6", label: "If signing a Will, arrange two independent adult witnesses who are not heirs." },
                   ].map((chk) => (
                     <div
                       key={chk.id}
@@ -1341,43 +1341,43 @@ export default function GiftDeedVsWillClient() {
                 {[
                   {
                     q: "What is the primary difference between a Gift Deed and a Will in India?",
-                    a: "A Gift Deed transfers property immediately during the donor's lifetime under Section 122 of the Transfer of Property Act, 1882, and is generally irrevocable once accepted. In contrast, a Will takes effect only after the testator's demise under the Indian Succession Act, 1925, and can be revoked, updated, or rewritten at any time while the testator is alive and of sound mind.",
+                    a: "A Gift Deed transfers asset right away during the donor's lifetime under Section 122 of the Transfer of Property Act, 1882, and is generally irrevocable once accepted. In contrast, a Will takes effect only after the Will maker's demise under the Indian Succession Act, 1925, and can be revoked, updated, or rewritten at any time while the Will maker is alive and of sound mind.",
                   },
                   {
-                    q: "Which is cheaper: transferring property via a Gift Deed or a Will?",
-                    a: "A Will is substantially cheaper. Wills attract ₹0 stamp duty across all Indian states and can be executed on plain paper. A Gift Deed of immovable property requires compulsory registration and payment of state stamp duty (ranging from 1% to 7% of market value plus local cess) along with registration fees (up to ₹30,000 or 1%).",
+                    q: "Which is cheaper: transferring asset via a Gift Deed or a Will?",
+                    a: "A Will is substantially cheaper. Wills attract ₹0 stamp duty across all Indian states and can be signed on plain paper. A Gift Deed of land asset requires needed filing and payment of state stamp duty (ranging from 1% to 7% of market value plus local cess) along with filing fees (up to ₹30,000 or 1%).",
                   },
                   {
-                    q: "Can a parent cancel a registered Gift Deed if their child mistreats them?",
-                    a: "Yes. Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if a senior citizen (aged 60+) gifts property with a condition that the child must provide basic amenities and care, and the child fails to do so, the Maintenance Tribunal can declare the gift deed void. The Supreme Court affirmed this in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20). However, establishing this requires court litigation, whereas a Will can be revoked unilaterally without court intervention.",
+                    q: "Can a parent cancel a filed Gift Deed if their child mistreats them?",
+                    a: "Yes. Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, if a senior citizen (aged 60+) gifts asset with a condition that the child must provide basic amenities and care, and the child fails to do so, the Maintenance Tribunal can declare the gift deed void. The Supreme Court affirmed this in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20). However, establishing this requires court court fights, whereas a Will can be revoked unilaterally without court intervention.",
                   },
                   {
                     q: "Is stamp duty payable on a Will in India?",
-                    a: "No. Under Schedule I of the Indian Stamp Act, 1899, Wills are completely exempt from stamp duty throughout India. Registration of a Will is also optional under Section 18(e) of the Registration Act, 1908. Even if registered, only a nominal administrative fee (typically ₹50 to ₹500) applies.",
+                    a: "No. Under Schedule I of the Indian Stamp Act, 1899, Wills are completely exempt from stamp duty throughout India. Filing of a Will is also a choice under Section 18(e) of the Filing Act, 1908. Even if filed, only a nominal office fee (typically ₹50 to ₹500) applies.",
                   },
                   {
-                    q: "Are gifts of property taxable under Income Tax Section 56(2)(x)?",
-                    a: "Under Section 56(2)(x) of the Income Tax Act, 1961, gifts of immovable property received from specified 'relatives' (such as spouse, children, siblings, parents, and lineal ascendants/descendants) are 100% tax-exempt. Gifts to non-relatives exceeding ₹50,000 in stamp duty value are taxed as Income from Other Sources. In contrast, property received under a Will or by inheritance is completely tax-free regardless of whether the recipient is a relative or not.",
+                    q: "Are gifts of asset taxable under Income Tax Section 56(2)(x)?",
+                    a: "Under Section 56(2)(x) of the Income Tax Act, 1961, gifts of land asset received from specified 'relatives' (such as spouse, children, siblings, parents, and lineal ascendants/descendants) are 100% tax-exempt. Gifts to non-relatives exceeding ₹50,000 in stamp duty value are taxed as Income from Other Sources. In contrast, asset received under a Will or by estate is completely tax-free regardless of whether the recipient is a relative or not.",
                   },
                   {
-                    q: "When is a Gift Deed better than a Will for property transfer?",
-                    a: "A Gift Deed is preferable when the donor wishes to eliminate any risk of post-death litigation among legal heirs, when the donee urgently requires legal title to secure a home renovation mortgage or redevelop the property, or when the transferor wants to settle assets cleanly during their own lifetime with immediate municipal mutation.",
+                    q: "When is a Gift Deed better than a Will for asset transfer?",
+                    a: "A Gift Deed is preferable when the donor wishes to eliminate any risk of post-death court fights among legal heirs, when the donee urgently requires legal title to secure a home renovation mortgage or redevelop the asset, or when the transferor wants to settle assets cleanly during their own lifetime with immediate city name change.",
                   },
                   {
                     q: "When is a Will better than a Gift Deed?",
-                    a: "A Will is superior when the property owner wishes to retain 100% control, ownership, and rental income during their life, avoid hefty stamp duty and registration expenses upfront, retain the freedom to change beneficiaries if relationships evolve, and ensure protection against elder abandonment or neglect by children.",
+                    a: "A Will is superior when the asset owner wishes to retain 100% control, ownership, and rental income during their life, avoid hefty stamp duty and filing expenses upfront, retain the freedom to change heirs if relationships evolve, and ensure protection against elder abandonment or neglect by children.",
                   },
                   {
-                    q: "Does a donee pay capital gains tax upon receiving a gifted property?",
-                    a: "No, receiving a gift or inheritance does not trigger capital gains tax at the time of transfer. However, if the donee or heir subsequently sells the property, capital gains tax applies. Under Section 49(1) of the Income Tax Act, the cost of acquisition is deemed to be the original cost paid by the donor/previous owner, and the holding period of the previous owner is included under Section 2(42A).",
+                    q: "Does a donee pay capital gains tax upon receiving a gifted asset?",
+                    a: "No, receiving a gift or estate does not trigger capital gains tax at the time of transfer. However, if the donee or heir then sells the asset, capital gains tax applies. Under Section 49(1) of the Income Tax Act, the cost of acquisition is deemed to be the original cost paid by the donor/previous owner, and the holding period of the previous owner is included under Section 2(42A).",
                   },
                   {
-                    q: "Is registration mandatory for both Gift Deeds and Wills in India?",
-                    a: "No. Under Section 17 of the Registration Act, 1908 and Section 123 of the Transfer of Property Act, registration of a Gift Deed of immovable property is strictly mandatory; an unregistered gift deed confers zero title. For a Will, registration is strictly optional under Section 18(e); a Will executed on plain A4 paper attested by two witnesses is 100% valid.",
+                    q: "Is filing needed for both Gift Deeds and Wills in India?",
+                    a: "No. Under Section 17 of the Filing Act, 1908 and Section 123 of the Transfer of Property Act, filing of a Gift Deed of land asset is strictly needed; an plain gift deed confers zero title. For a Will, filing is strictly a choice under Section 18(e); a Will signed on plain A4 paper attested by two witnesses is 100% valid.",
                   },
                   {
-                    q: "Can I gift self-acquired property as well as ancestral property?",
-                    a: "An individual has an absolute right to gift their self-acquired property to anyone. However, ancestral coparcenary property under Hindu law cannot be unilaterally gifted without the consent of other coparceners, except for small gifts of affection or pious purposes. A Will can only dispose of the individual's undivided deemed coparcenary share under Section 30 of the Hindu Succession Act.",
+                    q: "Can I gift self-acquired asset as well as family asset?",
+                    a: "An single has an absolute right to gift their self-acquired asset to anyone. However, family joint asset under Hindu law cannot be unilaterally gifted without the consent of other coparceners, except for small gifts of affection or pious purposes. A Will can only dispose of the single's undivided deemed joint share under Section 30 of the Hindu Succession Act.",
                   },
                 ].map((faq, idx) => (
                   <div
@@ -1409,17 +1409,17 @@ export default function GiftDeedVsWillClient() {
             <section id="statutory-citations" className="scroll-target space-y-5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory References</span>
+                <span>Legal References</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                Official Statutory Authorities &amp; Landmark Judicial Rulings
+                Official Legal Offices &amp; Landmark Judicial Rulings
               </h3>
 
               <div className="overflow-x-auto bg-white rounded-2xl border border-slate-200/80 shadow-xs">
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">
                   <thead>
                     <tr className="bg-slate-100 text-slate-800 border-b border-slate-200 font-extrabold">
-                      <th className="py-3 px-4">Statutory Provision / Case Law</th>
+                      <th className="py-3 px-4">Legal Rule / Case Law</th>
                       <th className="py-3 px-4">Core Legal Principle</th>
                       <th className="py-3 px-4">Practical Relevance</th>
                     </tr>
@@ -1427,13 +1427,13 @@ export default function GiftDeedVsWillClient() {
                   <tbody className="divide-y divide-slate-100 text-xs">
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Transfer of Property Act, 1882 s. 122–123</td>
-                      <td className="py-3 px-4 text-slate-600">Gift requires acceptance during lifetime and compulsory registration for immovable properties.</td>
-                      <td className="py-3 px-4 text-slate-500">Unregistered gift deeds convey zero legal ownership.</td>
+                      <td className="py-3 px-4 text-slate-600">Gift requires acceptance during lifetime and needed filing for land assets.</td>
+                      <td className="py-3 px-4 text-slate-500">Plain gift deeds convey zero legal ownership.</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Indian Succession Act, 1925 ss. 59, 62, 63</td>
-                      <td className="py-3 px-4 text-slate-600">Testator retains 100% power to revoke or alter Will; takes effect only on death.</td>
-                      <td className="py-3 px-4 text-slate-500">Plain paper execution with 2 witnesses is fully valid.</td>
+                      <td className="py-3 px-4 text-slate-600">Will maker retains 100% power to revoke or alter Will; takes effect only on death.</td>
+                      <td className="py-3 px-4 text-slate-500">Plain paper signing with 2 witnesses is fully valid.</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Income Tax Act, 1961 s. 56(2)(x) &amp; Proviso (I)</td>
@@ -1448,14 +1448,36 @@ export default function GiftDeedVsWillClient() {
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</td>
                       <td className="py-3 px-4 text-slate-600">Supreme Court affirmed Tribunal&apos;s power to void gift deed and restore parental possession.</td>
-                      <td className="py-3 px-4 text-slate-500">Landmark precedent reinforcing elder property rights.</td>
+                      <td className="py-3 px-4 text-slate-500">Landmark precedent reinforcing elder asset rights.</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author, CTA, Trust Cards)
@@ -1475,21 +1497,21 @@ export default function GiftDeedVsWillClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </p>
                   <p className="text-[11px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu succession, coparcenary partition suits, and high-value testamentary estate planning with over 18 years of court experience.
+                Expert in Hindu succession, joint split suits, and high-value Will estate planning with over 18 years of court experience.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1508,13 +1530,13 @@ export default function GiftDeedVsWillClient() {
             <div className="hidden lg:block rounded-2xl bg-[#172228] p-6 text-white text-center space-y-4 shadow-lg shadow-[#172228]/15">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold tracking-wider uppercase text-rose-200">
                 <Lock className="w-3 h-3 text-[#C65378]" />
-                <span>Challenge-Proof Drafting</span>
+                <span>Fight-Proof Drafting</span>
               </div>
               <h3 className="text-lg font-extrabold leading-tight">
-                Transferring Property to Family?
+                Transferring Asset to Family?
               </h3>
               <p className="text-xs text-white/80 leading-relaxed">
-                Avoid bitter disputes. Create a customized, lawyer-verified Will clearly securing your property with ₹0 stamp duty in 15 minutes.
+                Avoid bitter fights. Create a customized, lawyer-checked Will clearly securing your asset with ₹0 stamp duty in 15 minutes.
               </p>
               <button
                 onClick={handleStartDraft}
@@ -1525,7 +1547,7 @@ export default function GiftDeedVsWillClient() {
               </button>
               <div className="pt-2 border-t border-white/10 text-[11px] text-white/70 flex items-center justify-center gap-2">
                 <PhoneCall className="w-3 h-3 text-rose-300" />
-                <span>Advocate consultation included</span>
+                <span>Lawyer talk included</span>
               </div>
             </div>
 
@@ -1539,7 +1561,7 @@ export default function GiftDeedVsWillClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Precision:</strong> Clauses verified under TPA s.122 &amp; ISA s.63.
+                    <strong>Legal Precision:</strong> Clauses checked under TPA s.122 &amp; ISA s.63.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1575,7 +1597,7 @@ export default function GiftDeedVsWillClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Release / Relinquishment Deed Format
+                    Release / Release Deed Format
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
                     Read Format <ArrowRight className="w-2.5 h-2.5" />
@@ -1586,7 +1608,7 @@ export default function GiftDeedVsWillClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    HUF Property After Death of Karta
+                    HUF Asset After Death of Karta
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
                     Read Guide <ArrowRight className="w-2.5 h-2.5" />
@@ -1597,7 +1619,7 @@ export default function GiftDeedVsWillClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Property Transfer After Death Without Will
+                    Asset Transfer After Death Without Will
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
                     Read Guide <ArrowRight className="w-2.5 h-2.5" />
@@ -1608,10 +1630,10 @@ export default function GiftDeedVsWillClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Interactive Hindu Succession Calculator
+                    Free Hindu Succession Tool
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
-                    Open Calculator <ArrowRight className="w-2.5 h-2.5" />
+                    Open Tool <ArrowRight className="w-2.5 h-2.5" />
                   </span>
                 </Link>
               </div>
@@ -1632,13 +1654,13 @@ export default function GiftDeedVsWillClient() {
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
                 <Link
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
                 <Link
                   href="/templates/will-format-india"
@@ -1685,7 +1707,7 @@ export default function GiftDeedVsWillClient() {
               />
             </div>
             <p className="text-xs text-slate-500 text-center">
-              Gift Deed (Immediate property and keys transfer, high stamp duty) vs Last Will (Operates on death, ₹0 stamp duty, complete control).
+              Gift Deed (Immediate asset and keys transfer, high stamp duty) vs Last Will (Operates on death, ₹0 stamp duty, complete control).
             </p>
           </div>
         </div>

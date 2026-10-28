@@ -90,7 +90,7 @@ export default function PostDeathTrackerPage() {
         url: canonicalUrl,
         name: "What to Do After Death in India Checklist | WillDrafting",
         description:
-          "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical.",
+          "Free free checklist for legal formalities after death in India. Track 21-day death papers, RTO Form 31, bank claims, and critical.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function PostDeathTrackerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory compliance tracker and deadline calculator for legal formalities after death in India under Registration of Births and.",
+          "Free legal compliance tracker and deadline tool for legal formalities after death in India under Filing of Births and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function PostDeathTrackerPage() {
             name: "What are the most urgent legal formalities required within 21 days of death in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 8 of the Registration of Births and Deaths Act, 1969, reporting the death to the local Registrar of Births and Deaths (Municipal Corporation, Municipality, or Gram Panchayat) within 21 days is legally mandatory. Timely reporting ensures issuance of the official Death Certificate without requiring delayed registration approvals or late fees. Families should also collect the Medical Certificate of Cause of Death (MCCD Form 4/4A) from the hospital and secure cremation or burial receipts.",
+              text: "Under Section 8 of the Filing of Births and Deaths Act, 1969, reporting the death to the local Registrar of Births and Deaths (City City Board, Town Office, or Gram Panchayat) within 21 days is legally needed. Timely reporting ensures issuance of the official Death Paper without requiring delayed filing approvals or late fees. Families should also collect the Medical Paper of Cause of Death (MCCD Form 4/4A) from the hospital and secure cremation or burial receipts.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function PostDeathTrackerPage() {
             name: "Why should families NEVER surrender the deceased person's PAN card immediately?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Surrendering or cancelling the deceased's PAN card immediately is a major legal blunder. Under Section 159 of the Income Tax Act, 1961, the legal representative must file the deceased's final Income Tax Return (ITR) and claim any pending tax refunds using the deceased's PAN. Furthermore, banks, mutual fund AMCs, depositories (NSDL/CDSL), and the Sub-Registrar require active PAN verification to process asset transmissions. PAN should only be surrendered after all transmissions and tax assessments are fully completed.",
+              text: "Surrendering or cancelling the deceased's PAN card right away is a major legal blunder. Under Section 159 of the Income Tax Act, 1961, the legal agent must file the deceased's final Income Tax Return (ITR) and claim any pending tax refunds using the deceased's PAN. Also, banks, mutual fund AMCs, depositories (NSDL/CDSL), and the SRO require active PAN check to process asset transmissions. PAN should only be surrendered after all transmissions and tax assessments are fully completed.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function PostDeathTrackerPage() {
             name: "Why must the deceased person's mobile number and SIM card be kept active?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In India, virtually all financial and statutory portals rely on Aadhaar-based OTP verification and mobile two-factor authentication. DigiLocker, net banking logins, Income Tax e-filing registrations, EPFO UAN portals, mutual fund platforms, and demat accounts transmit verification codes to the mobile number registered in the deceased's name. If you deactivate the SIM card, access to these accounts is locked, creating administrative bottlenecks. Families should maintain an active recharge on the SIM for at least 12 to 18 months.",
+              text: "In India, virtually all financial and legal portals rely on Aadhaar-based OTP check and mobile two-factor check. DigiLocker, net banking logins, Income Tax e-filing registrations, EPFO UAN portals, mutual fund platforms, and demat accounts transmit check codes to the mobile number filed in the deceased's name. If you deactivate the SIM card, access to these accounts is locked, creating office bottlenecks. Families should maintain an active recharge on the SIM for at least 12 to 18 months.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function PostDeathTrackerPage() {
             name: "What is the 30-day legal deadline for vehicle ownership transfer under CMVR Rule 56?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Rule 56(1) of the Central Motor Vehicles Rules, 1989, the person succeeding to the possession of the vehicle must intimate the demise of the registered owner to the Regional Transport Office (RTO) within 30 days of death. Thereafter, under Rule 56(2), a formal application for transfer of ownership using Form 31 must be submitted within 3 months. Failure to report can invalidate third-party motor insurance coverage and lead to vehicle seizure under the Motor Vehicles Act.",
+              text: "Under Rule 56(1) of the Central Motor Vehicles Rules, 1989, the person succeeding to the possession of the vehicle must intimate the demise of the filed owner to the Regional Transport Office (RTO) within 30 days of death. Thereafter, under Rule 56(2), a formal form for transfer of ownership using Form 31 must be submitted within 3 months. Failure to report can invalidate third-party motor insurance coverage and lead to vehicle seizure under the Motor Vehicles Act.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function PostDeathTrackerPage() {
             name: "How do bank nominee claims differ from legal heir inheritance rights in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the Banking Regulation Act, 1949 (Section 45ZA) and landmark Supreme Court rulings (Ram Chander Talwar v. Devinder Kumar Talwar and Sarbati Devi), a bank nominee is merely a statutory trustee authorized to receive the deposit funds to give a valid discharge to the bank. A nominee does not become the absolute owner of the money unless they are also the sole legal heir under a valid Will or personal succession laws. The nominee holds the funds in trust for distribution among all legal heirs.",
+              text: "Under the Banking Regulation Act, 1949 (Section 45ZA) and landmark Supreme Court rulings (Ram Chander Talwar v. Devinder Kumar Talwar and Sarbati Devi), a bank nominee is merely a legal trustee authorized to receive the deposit funds to give a valid discharge to the bank. A nominee does not become the absolute owner of the money unless they are also the sole legal heir under a valid Will or personal estate laws. The nominee holds the funds in trust for split among all legal heirs.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function PostDeathTrackerPage() {
             name: "Can bank deposits be claimed without a Succession Certificate if there is no nominee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Reserve Bank of India (RBI) Master Directions, banks have established simplified claim thresholds (typically between ₹50,000 to ₹5,00,000 depending on bank policy) for accounts without nomination. Within this limit, legal heirs can claim funds by submitting a Deceased Claim Form, original death certificate, KYC documents, a joint Indemnity Bond, and an Affidavit signed by all surviving legal heirs, without requiring an expensive court-issued Succession Certificate.",
+              text: "Yes. Under Reserve Bank of India (RBI) Master Directions, banks have established simplified claim thresholds (typically between ₹50,000 to ₹5,00,000 depending on bank policy) for accounts without nomination. Within this limit, legal heirs can claim funds by submitting a Deceased Claim Form, original death paper, KYC papers, a joint Indemnity Bond, and an Sworn Note signed by all surviving legal heirs, without requiring an expensive court-issued Estate Paper.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function PostDeathTrackerPage() {
             name: "What is the deadline for filing the deceased person's Income Tax Return under Section 159?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 159 of the Income Tax Act, 1961, the legal representative is liable to file the return of income for all income earned by the deceased from April 1 of the financial year up to the date of death. The return must be filed by the standard statutory deadline (typically July 31 for non-audit individual taxpayers). The legal representative must register on the Income Tax e-Filing portal by submitting the death certificate, proof of legal representation, and an indemnity bond.",
+              text: "Under Section 159 of the Income Tax Act, 1961, the legal agent is liable to file the return of income for all income earned by the deceased from April 1 of the financial year up to the date of death. The return must be filed by the standard legal deadline (typically July 31 for non-audit single taxpayers). The legal agent must register on the Income Tax e-Filing portal by submitting the death paper, proof of legal representation, and an indemnity bond.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function PostDeathTrackerPage() {
             name: "What happens if a death is not registered within 21 days in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 13 of the Registration of Births and Deaths Act, 1969: (1) Registration between 21 and 30 days requires payment of a late fee to the Registrar. (2) Registration between 30 days and 1 year requires written permission from the designated authority (such as the Sub-Divisional Magistrate or Tehsildar) along with an affidavit. (3) Registration after 1 year can only be done following a formal judicial verification order from a First Class Magistrate or Executive Magistrate.",
+              text: "Under Section 13 of the Filing of Births and Deaths Act, 1969: (1) Filing between 21 and 30 days requires payment of a late fee to the Registrar. (2) Filing between 30 days and 1 year requires written permission from the designated office (such as the Sub-Divisional Magistrate or Tehsildar) along with an sworn note. (3) Filing after 1 year can only be done following a formal judicial check order from a First Class Magistrate or Executive Magistrate.",
             },
           },
         ],

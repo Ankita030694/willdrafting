@@ -40,10 +40,10 @@ const TOC_ITEMS = [
   { id: "visual-blueprint", label: "5. Parts of an Indian Will" },
   { id: "step-by-step-sop", label: "6. Easy 6-Step Guide" },
   { id: "three-diy-mistakes", label: "7. 3 Common Mistakes to Avoid" },
-  { id: "comparison-matrix", label: "8. Plain Paper vs Registered Will" },
+  { id: "comparison-matrix", label: "8. Plain Paper vs Filed Will" },
   { id: "procedural-timeline", label: "9. How Long Does It Take?" },
-  { id: "specialized-scenarios", label: "10. Own Property vs Ancestral Property" },
-  { id: "institutional-backing", label: "11. Lawyer Verified & Trusted" },
+  { id: "specialized-scenarios", label: "10. Own Asset vs Family Asset" },
+  { id: "institutional-backing", label: "11. Lawyer Checked & Trusted" },
   { id: "frequently-asked-questions", label: "12. Questions People Often Ask" },
   { id: "statutory-citations", label: "13. Official Legal References" },
 ];
@@ -177,13 +177,13 @@ const CHECKLIST_ITEMS = [
   },
   {
     id: "check-5",
-    label: "Clear Property & Account Details",
+    label: "Clear Asset & Account Details",
     subtext: "Flats have full addresses; bank accounts and demat accounts have their numbers listed.",
   },
   {
     id: "check-6",
-    label: "Leftover Property Clause Included",
-    subtext: "A safety clause covering any future savings, property, or overlooked assets so nothing gets stuck.",
+    label: "Leftover Asset Clause Included",
+    subtext: "A safety clause covering any future savings, asset, or overlooked assets so nothing gets stuck.",
   },
 ];
 
@@ -194,15 +194,15 @@ const FAQS = [
   },
   {
     q: "How many witnesses do I need, and who can be a witness?",
-    a: "You need at least two adult witnesses (above 18 years). They must see you sign the Will, and you must see them sign. They can be trusted friends, neighbours, colleagues, or your family doctor. Just make sure they are not receiving any property or money in the Will.",
+    a: "You need at least two adult witnesses (above 18 years). They must see you sign the Will, and you must see them sign. They can be trusted friends, neighbours, colleagues, or your family doctor. Just make sure they are not receiving any asset or money in the Will.",
   },
   {
     q: "Can my son, daughter, or spouse sign as a witness?",
-    a: "Never let someone who is getting property in the Will (or their husband/wife) sign as a witness. Under Section 67 of the Indian Succession Act, if a beneficiary signs as a witness, the Will remains valid, BUT that person completely loses their inheritance! To protect their share, always ask independent friends or outsiders to witness.",
+    a: "Never let someone who is getting asset in the Will (or their husband/wife) sign as a witness. Under Section 67 of the Indian Succession Act, if a heir signs as a witness, the Will remains valid, BUT that person completely loses their estate! To protect their share, always ask independent friends or outsiders to witness.",
   },
   {
-    q: "Is it compulsory to register my Will at the government office?",
-    a: "No, registration is completely optional under Section 18 of the Registration Act, 1908. A Will written on plain paper at home is just as legally valid. However, registering it at the Sub-Registrar's office provides extra proof that you signed it yourself and were of sound mind, making it very hard for anyone to challenge later.",
+    q: "Is it needed to register my Will at the government office?",
+    a: "No, filing is completely a choice under Section 18 of the Filing Act, 1908. A Will written on plain paper at home is just as legally valid. However, registering it at the SRO's office provides extra proof that you signed it yourself and were of sound mind, making it very hard for anyone to fight later.",
   },
   {
     q: "Can I type my Will on a computer, or must it be handwritten?",
@@ -213,20 +213,20 @@ const FAQS = [
     a: "Yes! The Supreme Court of India has made it very clear that a nominee is only a temporary caretaker to collect the money from the bank. The permanent, legal ownership belongs to whoever is named in your Will.",
   },
   {
-    q: "Can I give away ancestral family property in my Will?",
-    a: "You can only give away your own individual share in ancestral property. You cannot give away the whole family property or take away the lawful birthright shares of your children or other family members.",
+    q: "Can I give away family family asset in my Will?",
+    a: "You can only give away your own single share in family asset. You cannot give away the whole family asset or take away the lawful birthright shares of your children or other family members.",
   },
   {
-    q: "Can the executor also receive property in the Will?",
-    a: "Yes. An executor can also be a beneficiary (for example, many people name their spouse or elder child as executor). Just remember: that person must NOT sign as a witness.",
+    q: "Can the executor also receive asset in the Will?",
+    a: "Yes. An executor can also be a heir (for example, many people name their spouse or elder child as executor). Just remember: that person must NOT sign as a witness.",
   },
   {
     q: "What is a Codicil, and when should I use one?",
-    a: "A Codicil is simply a small official update note attached to an existing Will (for example, to update a new bank account or change an executor). If you want to make big changes to how you divide your property, it is much cleaner and safer to make a fresh new Will.",
+    a: "A Codicil is simply a small official update note attached to an existing Will (for example, to update a new bank account or change an executor). If you want to make big changes to how you divide your asset, it is much cleaner and safer to make a fresh new Will.",
   },
   {
-    q: "How do I make sure no one challenges my Will in court?",
-    a: "To make your Will rock-solid: (1) Get a simple fitness certificate from a MBBS doctor confirming you are healthy and thinking clearly; (2) Take a short video on your phone while signing with your two witnesses; (3) Do not let beneficiaries sign as witnesses; and (4) If you are leaving out a close family member, politely mention the reason so nobody can claim you forgot them.",
+    q: "How do I make sure no one fights my Will in court?",
+    a: "To make your Will rock-solid: (1) Get a simple fitness paper from a MBBS doctor confirming you are healthy and thinking clearly; (2) Take a short video on your phone while signing with your two witnesses; (3) Do not let heirs sign as witnesses; and (4) If you are leaving out a close family member, politely mention the reason so nobody can claim you forgot them.",
   },
 ];
 
@@ -319,7 +319,7 @@ export default function WillFormatIndiaClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Legally Valid Will Format in India for Property & Assets
+            Legally Valid Will Format in India for Asset & Assets
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -465,7 +465,7 @@ export default function WillFormatIndiaClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Drafted under Section 63 of the Indian Succession Act, 1925 & Schedule I of the Indian Stamp Act, 1899.
@@ -498,7 +498,7 @@ export default function WillFormatIndiaClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Two adult witnesses are compulsory:</strong> Two people above 18 years must watch you sign the Will and then sign it themselves in front of you (Section 63).
+                    <strong>Two adult witnesses are needed:</strong> Two people above 18 years must watch you sign the Will and then sign it themselves in front of you (Section 63).
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -510,7 +510,7 @@ export default function WillFormatIndiaClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registration is optional:</strong> You do not have to visit a government office. A Will made and signed at home is fully enforceable in court.
+                    <strong>Filing is a choice:</strong> You do not have to visit a government office. A Will made and signed at home is fully enforceable in court.
                   </span>
                 </li>
               </ul>
@@ -526,7 +526,7 @@ export default function WillFormatIndiaClient() {
                 1. Is a Will on Plain Paper Really Legal in India?
               </h2>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Yes, absolutely. Many people in India believe that a Will is only valid if it is bought on expensive green or blue court stamp paper, notarized, or registered. That is completely untrue.
+                Yes, absolutely. Many people in India believe that a Will is only valid if it is bought on expensive green or blue court stamp paper, notarized, or filed. That is completely untrue.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under the Indian Stamp Act, 1899, the government stamp duty on a Will is exactly zero. Under Section 63 of the Indian Succession Act, 1925, the law only requires three simple things: (1) You write down your wishes clearly on plain paper, (2) You sign it yourself, and (3) Two adult witnesses watch you sign and sign in front of you. That is all it takes to make a legally binding Will.
@@ -536,7 +536,7 @@ export default function WillFormatIndiaClient() {
                   What the Supreme Court of India Says
                 </p>
                 <p>
-                  The Supreme Court has confirmed in multiple landmark rulings (such as <em>Ishwardeo Narain Singh v. Kamta Devi</em>) that an informal handwritten or typed document on ordinary paper has full legal force as long as your intention is clear and two witnesses signed it.
+                  The Supreme Court has confirmed in multiple landmark rulings (such as <em>Ishwardeo Narain Singh v. Kamta Devi</em>) that an informal handwritten or typed paper on ordinary paper has full legal force as long as your intention is clear and two witnesses signed it.
                 </p>
               </div>
             </section>
@@ -548,10 +548,10 @@ export default function WillFormatIndiaClient() {
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Checklist: Section 63 Legal Requirements
+                2. Free Checklist: Section 63 Legal Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Before printing your Will, review these essential statutory criteria. Check each item to verify that your document complies with Indian law.
+                Before printing your Will, review these essential legal criteria. Check each item to verify that your paper complies with Indian law.
               </p>
 
               {/* Checklist Box */}
@@ -596,7 +596,7 @@ export default function WillFormatIndiaClient() {
                   <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-2.5 text-xs text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>
-                      Excellent. Your Will meets every requirement under Section 63 of the Indian Succession Act, 1925.
+                      Excellent. Your Will meets every rule under Section 63 of the Indian Succession Act, 1925.
                     </span>
                   </div>
                 ) : (
@@ -620,7 +620,7 @@ export default function WillFormatIndiaClient() {
                 3. Clause-Annotated Will Format: Free Downloadable Template
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is a comprehensive, advocate-approved Will format tailored for Indian properties and financial assets. You can copy it directly or print it for execution.
+                Below is a full, lawyer-approved Will format tailored for Indian properties and financial assets. You can copy it directly or print it for signing.
               </p>
 
               {/* Template Container with Copy & Print Toolbar */}
@@ -716,13 +716,13 @@ export default function WillFormatIndiaClient() {
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-3 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
-                  <span>Crucial Rule: Beneficiaries Must Never Sign as Witnesses</span>
+                  <span>Crucial Rule: Heirs Must Never Sign as Witnesses</span>
                 </div>
                 <p className="text-xs sm:text-sm leading-relaxed">
-                  Never ask your son, daughter, spouse, or anyone who is receiving property in your Will to sign as a witness. Under Section 67 of the Indian Succession Act, if someone getting property signs as a witness, <strong>they legally lose their entire inheritance</strong>!
+                  Never ask your son, daughter, spouse, or anyone who is receiving asset in your Will to sign as a witness. Under Section 67 of the Indian Succession Act, if someone getting asset signs as a witness, <strong>they legally lose their entire estate</strong>!
                 </p>
                 <p className="text-xs sm:text-sm leading-relaxed">
-                  The Will remains valid for others, but the person who signed as a witness gets nothing by law. To keep your family members safe, always choose two independent adult witnesses who have no financial share in your property.
+                  The Will remains valid for others, but the person who signed as a witness gets nothing by law. To keep your family members safe, always choose two independent adult witnesses who have no financial share in your asset.
                 </p>
                 <div className="pt-2 border-t border-amber-200 text-xs font-semibold text-amber-950 flex flex-wrap items-center gap-4">
                   <span>&bull; Trusted friends or neighbours</span>
@@ -742,7 +742,7 @@ export default function WillFormatIndiaClient() {
                 5. Visual Blueprint: Anatomy of an Enforceable Indian Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                An enforceable Will follows a logical statutory anatomy. Below is the blueprint illustrating the proper structural hierarchy from title to witness attestation.
+                An enforceable Will follows a logical legal anatomy. Below is the blueprint illustrating the proper structural hierarchy from title to witness witness signing.
               </p>
 
               {/* Full width container: edge-to-edge on mobile (0px side margin), 100% content column width on desktop */}
@@ -791,7 +791,7 @@ export default function WillFormatIndiaClient() {
                   {
                     step: "1",
                     title: "Make a Simple List of What You Own",
-                    desc: "List your home, flat, plot, bank savings, fixed deposits, mutual funds, gold, and insurance. Keep self-bought assets separate from ancestral property.",
+                    desc: "List your home, flat, plot, bank savings, fixed deposits, mutual funds, gold, and insurance. Keep self-bought assets separate from family asset.",
                   },
                   {
                     step: "2",
@@ -811,7 +811,7 @@ export default function WillFormatIndiaClient() {
                   {
                     step: "5",
                     title: "Sign in Front of Two Witnesses",
-                    desc: "Sign (or put your thumbprint) at the bottom of every page. Two adult witnesses must see you sign and sign in front of you. Remember: witnesses must not be beneficiaries.",
+                    desc: "Sign (or put your thumbprint) at the bottom of every page. Two adult witnesses must see you sign and sign in front of you. Remember: witnesses must not be heirs.",
                   },
                   {
                     step: "6",
@@ -845,7 +845,7 @@ export default function WillFormatIndiaClient() {
                 7. Three Common Mistakes to Avoid
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Simple oversights can cause unnecessary confusion or court disputes for your family. Watch out for these three common traps:
+                Simple oversights can cause unnecessary confusion or court fights for your family. Watch out for these three common traps:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -869,7 +869,7 @@ export default function WillFormatIndiaClient() {
                     Having a Family Heir Sign as Witness
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If your spouse or child signs as a witness, Section 67 cancels their inheritance! Always ask trusted friends, colleagues, or your family doctor to be witnesses.
+                    If your spouse or child signs as a witness, Section 67 cancels their estate! Always ask trusted friends, colleagues, or your family doctor to be witnesses.
                   </p>
                 </div>
 
@@ -878,10 +878,10 @@ export default function WillFormatIndiaClient() {
                     #3
                   </div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Writing Vague Property Descriptions
+                    Writing Vague Asset Descriptions
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Writing just &ldquo;my flat&rdquo; without the flat number, building name, city, or bank account details can cause disputes. Always write the exact address and account numbers.
+                    Writing just &ldquo;my flat&rdquo; without the flat number, building name, city, or bank account details can cause fights. Always write the exact address and account numbers.
                   </p>
                 </div>
               </div>
@@ -894,10 +894,10 @@ export default function WillFormatIndiaClient() {
                 <span>SECTION 8: LEGAL COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Comparative Matrix: Plain Paper, Notarized, and Registered
+                8. Comparative Matrix: Plain Paper, Notarized, and Filed
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Evaluate the legal differences between plain paper execution, notary attestation, and sub-registrar registration.
+                Evaluate the legal differences between plain paper signing, notary witness signing, and sub-registrar filing.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -907,7 +907,7 @@ export default function WillFormatIndiaClient() {
                       <th className="p-3.5 sm:p-4">Feature / Metric</th>
                       <th className="p-3.5 sm:p-4">Plain Paper Will</th>
                       <th className="p-3.5 sm:p-4">Notarized Will</th>
-                      <th className="p-3.5 sm:p-4">Registered Will</th>
+                      <th className="p-3.5 sm:p-4">Filed Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -921,25 +921,25 @@ export default function WillFormatIndiaClient() {
                       <td className="p-3.5 font-bold text-slate-900">Stamp Duty Cost</td>
                       <td className="p-3.5">₹0 (Completely Exempt)</td>
                       <td className="p-3.5">₹0 (Notary Fee only)</td>
-                      <td className="p-3.5">Nominal Registration Fee</td>
+                      <td className="p-3.5">Nominal Filing Fee</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Witness Requirement</td>
+                      <td className="p-3.5 font-bold text-slate-900">Witness Rule</td>
                       <td className="p-3.5">Minimum 2 Adults</td>
                       <td className="p-3.5">Minimum 2 Adults</td>
                       <td className="p-3.5">2 Witnesses Present at Registrar</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Evidentiary Strength</td>
+                      <td className="p-3.5 font-bold text-slate-900">Proof Strength</td>
                       <td className="p-3.5 text-slate-600">Standard Burden of Proof</td>
                       <td className="p-3.5 text-slate-700">Notary Register Entry</td>
                       <td className="p-3.5 text-emerald-700 font-semibold">Government Certified Record</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Execution Speed</td>
+                      <td className="p-3.5 font-bold text-slate-900">Signing Speed</td>
                       <td className="p-3.5 text-emerald-600 font-semibold">Immediate (15 Minutes)</td>
                       <td className="p-3.5">Same Day</td>
-                      <td className="p-3.5">Requires Sub-Registrar Slot</td>
+                      <td className="p-3.5">Requires SRO Slot</td>
                     </tr>
                   </tbody>
                 </table>
@@ -953,10 +953,10 @@ export default function WillFormatIndiaClient() {
                 <span>SECTION 9: TIMELINE & MILESTONES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Procedural Timeline: Drafting to Estate Transmission
+                9. Procedural Timeline: Drafting to Estate Transfer
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understand the lifecycle of your Will from the day of execution through final asset transmission to your loved ones.
+                Understand the lifecycle of your Will from the day of signing through final asset transfer to your loved ones.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -965,7 +965,7 @@ export default function WillFormatIndiaClient() {
                     <tr>
                       <th className="p-3">Stage</th>
                       <th className="p-3">Action Item</th>
-                      <th className="p-3">Statutory Governing Authority</th>
+                      <th className="p-3">Legal Governing Office</th>
                       <th className="p-3">Standard Duration</th>
                     </tr>
                   </thead>
@@ -978,8 +978,8 @@ export default function WillFormatIndiaClient() {
                     </tr>
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 2</td>
-                      <td className="p-3">Optional Sub-Registrar Registration</td>
-                      <td className="p-3 font-mono text-xs">Sec 18, Registration Act</td>
+                      <td className="p-3">A Choice SRO Filing</td>
+                      <td className="p-3 font-mono text-xs">Sec 18, Filing Act</td>
                       <td className="p-3">3 to 7 Days</td>
                     </tr>
                     <tr>
@@ -990,14 +990,14 @@ export default function WillFormatIndiaClient() {
                     </tr>
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 4</td>
-                      <td className="p-3">Executor Assumes Administration</td>
+                      <td className="p-3">Executor Assumes Care</td>
                       <td className="p-3 font-mono text-xs">Sec 211, ISA 1925</td>
                       <td className="p-3">Post Demise (Immediate)</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 5</td>
-                      <td className="p-3">Bank Transmission & Title Mutation</td>
-                      <td className="p-3 font-mono text-xs">Municipal & Banking Norms</td>
+                      <td className="p-3">Bank Transfer & Title Name Change</td>
+                      <td className="p-3 font-mono text-xs">City & Banking Norms</td>
                       <td className="p-3">15 to 45 Days</td>
                     </tr>
                   </tbody>
@@ -1012,30 +1012,30 @@ export default function WillFormatIndiaClient() {
                 <span>SECTION 10: PROPERTY TYPES EXPLAINED</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Can You Give Away Any Property? (Own Property vs Ancestral Property)
+                10. Can You Give Away Any Asset? (Own Asset vs Family Asset)
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                What you can give in your Will depends on how you acquired the property. Here is how Indian law treats different situations:
+                What you can give in your Will depends on how you acquired the asset. Here is how Indian law treats different situations:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>Property Bought with Your Own Money</span>
+                    <span>Asset Bought with Your Own Money</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    You have 100% freedom to give properties bought with your own earnings to anyone you wish—your spouse, one child, a friend, or a charity. Nobody in your family can legally stop you.
+                    You have 100% freedom to give assets bought with your own earnings to anyone you wish—your spouse, one child, a friend, or a charity. Nobody in your family can legally stop you.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Scale className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Ancestral Family Property</span>
+                    <span>Family Family Asset</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If property came down from your father or grandfather without being divided, you can only give away your own individual share under Section 30 of the Hindu Succession Act. You cannot give away the entire family property.
+                    If asset came down from your father or grandfather without being divided, you can only give away your own single share under Section 30 of the Hindu Succession Act. You cannot give away the entire family asset.
                   </p>
                 </div>
 
@@ -1045,7 +1045,7 @@ export default function WillFormatIndiaClient() {
                     <span>Young Children (Under 18 Years)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If your children are minors, name a trusted legal guardian in your Will under Section 9 of the Hindu Minority and Guardianship Act, 1956 to look after them and their inheritance until they turn 18.
+                    If your children are minors, name a trusted legal guardian in your Will under Section 9 of the Hindu Minority and Child Care Act, 1956 to look after them and their estate until they turn 18.
                   </p>
                 </div>
 
@@ -1055,7 +1055,7 @@ export default function WillFormatIndiaClient() {
                     <span>Leaving Out a Family Member</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If you decide not to leave anything to a child or relative from your self-bought property, briefly write a polite, clear reason (for example: &ldquo;I already helped them buy a home&rdquo;). This stops disputes in court.
+                    If you decide not to leave anything to a child or relative from your self-bought asset, briefly write a polite, clear reason (for example: &ldquo;I already helped them buy a home&rdquo;). This stops fights in court.
                   </p>
                 </div>
               </div>
@@ -1075,7 +1075,7 @@ export default function WillFormatIndiaClient() {
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">WillDrafting.in</h3>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      India&apos;s Dedicated Estate Planning & Succession Portal
+                      India&apos;s Dedicated Estate Planning & Estate Portal
                     </p>
                   </div>
                   <div className="flex items-center gap-3 bg-[#FAF7F0] border border-slate-200 px-4 py-2 rounded-xl text-xs font-semibold text-slate-700">
@@ -1085,7 +1085,7 @@ export default function WillFormatIndiaClient() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Every template, legal clause, and automated workflow on WillDrafting.in is designed and regularly audited by experienced advocates from AMA Legal Solutions. We ensure complete alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-level registration norms.
+                  Every template, legal clause, and automated workflow on WillDrafting.in is designed and regularly audited by experienced lawyers from AMA Legal Solutions. We ensure complete alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-level filing norms.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -1095,7 +1095,7 @@ export default function WillFormatIndiaClient() {
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Zero Stamp Duty</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Statutory Exemption</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Legal Exemption</div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Court Ready PDF</div>
@@ -1115,7 +1115,7 @@ export default function WillFormatIndiaClient() {
                 Frequently Asked Questions: Will Formats and Indian Law
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Find clear answers to common questions about executing, witnessing, and registering your Will in India.
+                Find clear answers to common questions about signing, witnessing, and registering your Will in India.
               </p>
 
               <div className="space-y-3">
@@ -1153,17 +1153,17 @@ export default function WillFormatIndiaClient() {
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900">
-                Statutory Citations and Official Government Resources
+                Legal Citations and Official Government Resources
               </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 59 (testamentary capacity), Section 62 (revocability), Section 63 (attestation rules), Section 67 (witness disqualification), and Section 222 (probate granted to executor).
+                  <strong>Indian Succession Act, 1925:</strong> Section 59 (Will capacity), Section 62 (revocability), Section 63 (witness signing rules), Section 67 (witness disqualification), and Section 222 (probate granted to executor).
                 </li>
                 <li>
                   <strong>Indian Stamp Act, 1899:</strong> Schedule I, Entry 64 (wills exempt from stamp duty).
                 </li>
                 <li>
-                  <strong>Registration Act, 1908:</strong> Section 18(e) (registration of wills is optional).
+                  <strong>Filing Act, 1908:</strong> Section 18(e) (filing of wills is a choice).
                 </li>
                 <li>
                   <strong>Supreme Court of India:</strong> <em>Shakti Yezdani v. Jayanand Salgaonkar (2023)</em> (Will overrides nominee rights); <em>Ishwardeo Narain Singh v. Kamta Devi</em> (probate principles).
@@ -1195,13 +1195,13 @@ export default function WillFormatIndiaClient() {
                     href="/blogs/notarized-will-vs-registered-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Notarized Will vs Registered Will &rarr;
+                    Notarized Will vs Filed Will &rarr;
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Indian Succession Calculator &rarr;
+                    Indian Succession Tool &rarr;
                   </Link>
                   <Link
                     href="/services/nri-will-india"
@@ -1212,7 +1212,29 @@ export default function WillFormatIndiaClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1232,21 +1254,21 @@ export default function WillFormatIndiaClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, probate matters, and estate structuring at AMA Legal Solutions.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, probate matters, and estate structuring at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1271,7 +1293,7 @@ export default function WillFormatIndiaClient() {
                 Want Your Custom Will Drafted in 15 Minutes?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Avoid drafting errors. Use our guided step-by-step wizard to produce an advocate-verified, court-ready Will for your family.
+                Avoid drafting errors. Use our guided step-by-step wizard to produce an lawyer-checked, court-ready Will for your family.
               </p>
               <a
                 href="/start"
@@ -1283,7 +1305,7 @@ export default function WillFormatIndiaClient() {
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Questions? Call our advocates</span>
+                <span>Questions? Call our lawyers</span>
               </div>
             </div>
 
@@ -1302,7 +1324,7 @@ export default function WillFormatIndiaClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 63 Compliant:</strong> Built-in two-witness attestation block.
+                    <strong>Section 63 Compliant:</strong> Built-in two-witness witness signing block.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1314,7 +1336,7 @@ export default function WillFormatIndiaClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Dispute Resistant:</strong> Structured to withstand court probate scrutiny.
+                    <strong>Fight Resistant:</strong> Structured to withstand court probate scrutiny.
                   </span>
                 </li>
               </ul>
@@ -1348,7 +1370,7 @@ export default function WillFormatIndiaClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Notarized vs Registered Will</div>
+                  <div className="font-bold text-xs text-slate-900">Notarized vs Filed Will</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Which provides stronger evidence? &rarr;
                   </div>
@@ -1357,7 +1379,7 @@ export default function WillFormatIndiaClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares under personal law &rarr;
                   </div>
@@ -1380,7 +1402,7 @@ export default function WillFormatIndiaClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/tools/will-checklist"
@@ -1392,7 +1414,7 @@ export default function WillFormatIndiaClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
               </div>
             </div>

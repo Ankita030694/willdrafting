@@ -366,7 +366,7 @@ export default function SurvivorMemberCertificatePage() {
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
-              Survivor Member Certificate
+              Survivor Member Paper
             </span>
           </nav>
 
@@ -379,12 +379,12 @@ export default function SurvivorMemberCertificatePage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-21" className="text-[#6B7280]">
@@ -400,16 +400,16 @@ export default function SurvivorMemberCertificatePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
-                <span>Revenue Department &amp; SDM Fast-Track Certification · All Indian States</span>
+                <span>Revenue Office &amp; SDM Fast-Track Certification · All Indian States</span>
               </div>
 
               {/* Single Strict H1: 56 characters (Strictly 30-65 chars for Screaming Frog) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Surviving Member Certificate Online Application in India
+                Surviving Member Paper Online Form in India
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                A <strong className="text-[#111827]">Surviving Member Certificate (SMC)</strong> is an official revenue document. The local SDM or Tehsildar issues this form. It lists all legal heirs of a deceased person. Families need it for bank claims. It is also needed for property mutation. Our team helps you prepare your papers. We file your application for quick approval.
+                A <strong className="text-[#111827]">Surviving Member Paper (SMC)</strong> is an official revenue paper. The local SDM or Tehsildar issues this form. It lists all legal heirs of a deceased person. Families need it for bank claims. It is also needed for asset name change. Our team helps you prepare your papers. We file your form for quick approval.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -435,7 +435,7 @@ export default function SurvivorMemberCertificatePage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>DDA Mutation Ready</span>
+                  <span>DDA Name Change Ready</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
@@ -454,13 +454,13 @@ export default function SurvivorMemberCertificatePage() {
                 Why Families Need SMC
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
-                Why Surviving Member Certificate Is Vital for Heirs
+                Why Surviving Member Paper Is Vital for Heirs
               </h2>
               <ul className="space-y-3.5 text-[14px] leading-[1.6] text-[#374151] mb-6">
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Unblocks municipal mutation:</strong> Civic bodies like DDA and MCD need this paper. They will not transfer property without it.
+                    <strong>Unblocks city name change:</strong> Civic bodies like DDA and MCD need this paper. They will not transfer asset without it.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -472,7 +472,7 @@ export default function SurvivorMemberCertificatePage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Needed for Relinquishment Deeds:</strong> Sub-Registrars mandate an SMC first. It proves all co-heirs before any share transfer.
+                    <strong>Needed for Release Deeds:</strong> Sub-Registrars mandate an SMC first. It proves all co-heirs before any share transfer.
                   </span>
                 </li>
               </ul>
@@ -480,7 +480,7 @@ export default function SurvivorMemberCertificatePage() {
                 href="/services/relinquishment-deed"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Learn About Relinquishment Deeds for Co-Heirs</span>
+                <span>Learn About Release Deeds for Co-Heirs</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -502,10 +502,10 @@ export default function SurvivorMemberCertificatePage() {
               <span>Comparative Legal Analysis</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              Surviving Member vs Legal Heir vs Succession Certificate
+              Surviving Member vs Legal Heir vs Estate Paper
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Families often confuse these three legal papers. An SMC is an executive order from an SDM. A Legal Heir paper comes from a Tehsildar. A Succession Certificate comes only from a civil court. You need court papers for high-value stocks and debts. Check the simple table below to compare your choices:
+              Families often confuse these three legal papers. An SMC is an executive order from an SDM. A Legal Heir paper comes from a Tehsildar. A Estate Paper comes only from a civil court. You need court papers for high-value stocks and debts. Check the simple table below to compare your choices:
             </p>
           </div>
 
@@ -515,9 +515,9 @@ export default function SurvivorMemberCertificatePage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[20%]">Feature</th>
-                    <th className="py-4 px-6 w-[27%] text-[#C65378]">Surviving Member Certificate (SMC)</th>
-                    <th className="py-4 px-6 w-[26%]">Legal Heir Certificate</th>
-                    <th className="py-4 px-6 w-[27%]">Court Succession Certificate</th>
+                    <th className="py-4 px-6 w-[27%] text-[#C65378]">Surviving Member Paper (SMC)</th>
+                    <th className="py-4 px-6 w-[26%]">Legal Heir Paper</th>
+                    <th className="py-4 px-6 w-[27%]">Court Estate Paper</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -542,7 +542,7 @@ export default function SurvivorMemberCertificatePage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Landmark className="w-4 h-4" />
-              <span>Statutory Usage Matrix</span>
+              <span>Legal Usage Matrix</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Purpose Matrix: When You Need a Surviving Member Paper
@@ -558,9 +558,9 @@ export default function SurvivorMemberCertificatePage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[26%]">Legal Purpose</th>
-                    <th className="py-4 px-6 w-[20%]">Requirement Level</th>
-                    <th className="py-4 px-6 w-[24%]">Receiving Department</th>
-                    <th className="py-4 px-6 w-[30%]">Statutory Rule &amp; Impact</th>
+                    <th className="py-4 px-6 w-[20%]">Rule Level</th>
+                    <th className="py-4 px-6 w-[24%]">Receiving Office</th>
+                    <th className="py-4 px-6 w-[30%]">Legal Rule &amp; Impact</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -585,10 +585,10 @@ export default function SurvivorMemberCertificatePage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>Step-by-Step Procedure</span>
+              <span>Step-by-Step Step</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              4-Step Application Protocol for Quick SMC Issuance
+              4-Step Form Protocol for Quick SMC Issuance
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Applying for an SMC is simple when your papers are ready. Our team guides you through four clear steps. We help you avoid delays:
@@ -600,22 +600,22 @@ export default function SurvivorMemberCertificatePage() {
               {
                 step: "01",
                 title: "Document Verification",
-                desc: "We check the official death certificate. We also check identity cards of all living heirs.",
+                desc: "We check the official death paper. We also check identity cards of all living heirs.",
               },
               {
                 step: "02",
                 title: "Affidavit Drafting",
-                desc: "Our team drafts the family tree affidavit on stamp paper. It includes full details of all heirs.",
+                desc: "Our team drafts the family tree sworn note on stamp paper. It includes full details of all heirs.",
               },
               {
                 step: "03",
                 title: "Portal Submission",
-                desc: "We file your case on the state revenue portal. We track application progress with local officers.",
+                desc: "We file your case on the state revenue portal. We track form progress with local officers.",
               },
               {
                 step: "04",
                 title: "Field Inquiry & Issuance",
-                desc: "The local revenue inspector checks the family details. Then the SDM issues the digital certificate.",
+                desc: "The local revenue inspector checks the family details. Then the SDM issues the digital paper.",
               },
             ].map((item) => (
               <div
@@ -651,7 +651,7 @@ export default function SurvivorMemberCertificatePage() {
                 Overseas family members do not need to travel to India. NRI siblings can sign papers from their home abroad.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                An NRI heir can sign an affidavit or NOC abroad. You get it apostilled or verified at the Indian Embassy. Our legal team submits the file to the SDM office for you.
+                An NRI heir can sign an sworn note or NOC abroad. You get it apostilled or checked at the Indian Embassy. Our legal team submits the file to the SDM office for you.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -659,7 +659,7 @@ export default function SurvivorMemberCertificatePage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Consult an NRI Succession Advocate</span>
+                <span>Consult an NRI Estate Lawyer</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
@@ -707,10 +707,10 @@ export default function SurvivorMemberCertificatePage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Succession &amp; Property Services
+                Related Estate &amp; Asset Services
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore related legal services for property transfer and estate planning:
+                Explore related legal services for asset transfer and estate planning:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -718,14 +718,14 @@ export default function SurvivorMemberCertificatePage() {
                 href="/services/relinquishment-deed"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Relinquishment Deed Services</span>
+                <span>Release Deed Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/legal-heir"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Legal Heir Certificate Services</span>
+                <span>Legal Heir Paper Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -739,7 +739,7 @@ export default function SurvivorMemberCertificatePage() {
                 href="/tools/succession-calculator"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Succession Calculator Tool</span>
+                <span>Estate Tool Tool</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -752,7 +752,7 @@ export default function SurvivorMemberCertificatePage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -762,12 +762,12 @@ export default function SurvivorMemberCertificatePage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors underline decoration-[#C65378]/30 underline-offset-4"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This guide is prepared under the Hindu Succession Act, 1956, the Indian Succession Act, 1925, and state revenue guidelines. It is intended for educational purposes and does not constitute formal legal representation until an advocate engagement is signed.
+              This guide is prepared under the Hindu Succession Act, 1956, the Indian Succession Act, 1925, and state revenue guidelines. It is intended for educational purposes and does not constitute formal legal representation until an lawyer engagement is signed.
             </p>
           </div>
           <a

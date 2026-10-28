@@ -89,7 +89,7 @@ export default function MinorChildTrustEstimatorPage() {
         url: canonicalUrl,
         name: "Minor Child Inheritance Rules India | WillDrafting.in",
         description:
-          "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your.",
+          "Learn minor child estate rules in India. Compare legal child care vs Will trusts, model staggered payouts, and protect your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function MinorChildTrustEstimatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive estate planning tool comparing Section 9 HMGA testamentary guardianship vs Indian Trusts Act testamentary private trusts and.",
+          "Free estate planning tool comparing Section 9 HMGA Will child care vs Indian Trusts Act Will private trusts and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -146,7 +146,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "Can a minor child directly inherit property and money in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, a minor child can be named as a legal heir or beneficiary in a Will. However, under Section 11 of the Indian Contract Act, 1872, a minor lacks the legal capacity to enter into contracts, operate bank accounts independently, or execute sale deeds. A legal guardian or testamentary trust must manage the assets until the child attains majority.",
+              text: "Yes, a minor child can be named as a legal heir or heir in a Will. However, under Section 11 of the Indian Contract Act, 1872, a minor lacks the legal capacity to enter into contracts, operate bank accounts independently, or execute sale deeds. A legal guardian or Will trust must manage the assets until the child attains majority.",
             },
           },
           {
@@ -154,7 +154,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "What happens if both parents pass away without naming a guardian in a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If parents pass away without appointing a testamentary guardian under Section 9 of the Hindu Minority and Guardianship Act, 1956, relatives must petition the District Court under the Guardians and Wards Act, 1890. This court process can take 12 to 24 months, requires court sureties, and may lead to contested family custody battles.",
+              text: "If parents pass away without appointing a Will guardian under Section 9 of the Hindu Minority and Child Care Act, 1956, relatives must petition the District Court under the Guardians and Wards Act, 1890. This court process can take 12 to 24 months, requires court sureties, and may lead to contested family custody battles.",
             },
           },
           {
@@ -162,7 +162,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "What is the difference between a Testamentary Guardian and a Testamentary Trust?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A testamentary guardian handles the personal care and custody of the child until age 18, but cannot sell immovable property without District Court permission under Section 8 of the HMGA. A testamentary trust, created under the Indian Trusts Act, 1882, holds assets under appointed trustees who can disburse funds smoothly and enforce staggered distributions beyond age 18 without court orders.",
+              text: "A Will guardian handles the personal care and custody of the child until age 18, but cannot sell land asset without District Court permission under Section 8 of the HMGA. A Will trust, created under the Indian Trusts Act, 1882, holds assets under appointed trustees who can disburse funds smoothly and enforce staggered distributions beyond age 18 without court orders.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "Can a legal guardian sell an inherited property to pay for the child's education?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 8(2) of the Hindu Minority and Guardianship Act, 1956 and Section 29 of the Guardians and Wards Act, 1890, a guardian cannot sell, mortgage, or gift any immovable property of the minor without prior permission from the District Court. Obtaining this court order often takes several years.",
+              text: "No. Under Section 8(2) of the Hindu Minority and Child Care Act, 1956 and Section 29 of the Guardians and Wards Act, 1890, a guardian cannot sell, mortgage, or gift any land asset of the minor without prior permission from the District Court. Obtaining this court order often takes several years.",
             },
           },
           {
@@ -178,7 +178,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "Why is leaving a lump sum inheritance at age 18 risky for a child?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Indian law, a minor attains majority at 18. Under simple guardianship, the entire estate (including multi-crore life insurance payouts and real estate) must be handed over in full at age 18. Most 18-year-olds lack financial experience, making the corpus vulnerable to impulsive spending, peer pressure, or predatory relatives.",
+              text: "Under Indian law, a minor attains majority at 18. Under simple child care, the entire estate (including multi-crore life insurance payouts and real estate) must be handed over in full at age 18. Most 18-year-olds lack financial experience, making the corpus vulnerable to impulsive spending, peer pressure, or predatory relatives.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "What is Section 6 of the Married Women's Property Act (MWP Act)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 6 of the MWP Act, 1874 allows a married person to take a life insurance policy specifically for the benefit of their spouse and/or children. The policy proceeds create an immediate trust, operate outside the gross estate, and cannot be attached by business creditors, lenders, or court execution decrees.",
+              text: "Section 6 of the MWP Act, 1874 allows a married person to take a life insurance policy mainly for the benefit of their spouse and/or children. The policy proceeds create an immediate trust, operate outside the gross estate, and cannot be attached by business creditors, lenders, or court signing decrees.",
             },
           },
           {
@@ -194,7 +194,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "How does a staggered payout schedule work in a Testamentary Will Trust?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A staggered payout schedule releases portions of the inheritance at key life milestones rather than all at once. For example: 15% at age 18 for college admissions, 25% at age 21 for graduation, 30% at age 25 for career or marriage, and the remaining 30% at age 30 once mature.",
+              text: "A staggered payout schedule releases portions of the estate at key life milestones rather than all at once. For example: 15% at age 18 for college admissions, 25% at age 21 for graduation, 30% at age 25 for career or marriage, and the remaining 30% at age 30 once mature.",
             },
           },
           {
@@ -210,7 +210,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "Does a testamentary trust created inside a Will need immediate registration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A testamentary trust is created through specific clauses inside a Will. It does not exist during your lifetime and requires no separate trust registration or annual tax returns while you are alive. It springs into legal existence only upon the demise of the testator and probate or execution of the Will.",
+              text: "No. A Will trust is created through specific clauses inside a Will. It does not exist during your lifetime and requires no separate trust filing or annual tax returns while you are alive. It springs into legal existence only upon the demise of the Will maker and probate or signing of the Will.",
             },
           },
           {
@@ -218,7 +218,7 @@ export default function MinorChildTrustEstimatorPage() {
             name: "How are the assets and income of a minor's testamentary trust taxed in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 161 of the Income Tax Act, 1961, trustees are taxed as representative assessees. If the trust is a specific (determinate) trust created by Will exclusively for the benefit of minor children, income is taxed at the individual progressive slab rates of the beneficiary, rather than the Maximum Marginal Rate (MMR).",
+              text: "Under Section 161 of the Income Tax Act, 1961, trustees are taxed as agent assessees. If the trust is a specific (determinate) trust created by Will exclusively for the benefit of minor children, income is taxed at the single progressive slab rates of the heir, rather than the Maximum Marginal Rate (MMR).",
             },
           },
         ],

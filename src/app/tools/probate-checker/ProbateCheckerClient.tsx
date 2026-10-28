@@ -51,7 +51,7 @@ const QUESTIONS: QuestionConfig[] = [
     number: 1,
     question: "Is the Will contested or likely to be challenged by any legal heir?",
     subtitle:
-      "Disputes regarding mental capacity, forged signatures, or unequal asset shares among children or siblings.",
+      "Fights regarding mental capacity, forged signatures, or unequal asset shares among children or siblings.",
     rationale:
       "Sections 276 & 289, Indian Succession Act: If any family member disputes the Will, getting a court probate provides conclusive proof that the Will is genuine. Once the court grants probate, it binds the entire world and stops civil property lawsuits.",
     statute: "Section 276 & 289, Indian Succession Act, 1925",
@@ -59,7 +59,7 @@ const QUESTIONS: QuestionConfig[] = [
   {
     id: "q2_foreign",
     number: 2,
-    question: "Was the Will executed abroad, or does it cover overseas NRI assets?",
+    question: "Was the Will signed abroad, or does it cover overseas NRI assets?",
     subtitle:
       "Wills made in the USA, UK, Canada, UAE, Australia, or Singapore concerning assets located in India.",
     rationale:
@@ -69,9 +69,9 @@ const QUESTIONS: QuestionConfig[] = [
   {
     id: "q3_location",
     number: 3,
-    question: "Does the estate include immovable property in Mumbai, Chennai, or Kolkata?",
+    question: "Does the estate include land asset in Mumbai, Chennai, or Kolkata?",
     subtitle:
-      "Flats, plots, houses, or commercial shops located within the municipal limits of these three cities.",
+      "Flats, plots, houses, or shop shops located within the city limits of these three cities.",
     rationale:
       "Sections 57 & 213, Indian Succession Act: Probate is 100% compulsory by law for Hindu, Buddhist, Sikh, and Jain Wills that deal with real estate situated in Mumbai, Chennai, or Kolkata.",
     statute: "Section 57 & Section 213, Indian Succession Act, 1925",
@@ -91,7 +91,7 @@ const QUESTIONS: QuestionConfig[] = [
     number: 5,
     question: "Is an executor named in the Will who is alive, competent, and willing to act?",
     subtitle:
-      "Check whether a specific person was named in the Will to distribute your property.",
+      "Check whether a specific person was named in the Will to distribute your asset.",
     rationale:
       "Section 222, Indian Succession Act: Court probate can ONLY be granted to an executor named in the Will. If no executor is named, or if that person has passed away, your family must apply for 'Letters of Administration with Will Annexed' instead.",
     statute: "Section 222 & Section 232, Indian Succession Act, 1925",
@@ -100,13 +100,13 @@ const QUESTIONS: QuestionConfig[] = [
 
 const TOC_ITEMS = [
   { id: "statutory-framework", label: "1. What is Probate & When is It Needed?" },
-  { id: "interactive-diagnostic-tool", label: "2. Interactive Probate Checker Tool" },
-  { id: "presidential-towns-rule", label: "3. The 3 Mandatory Cities (Mumbai, Chennai, Kolkata)" },
+  { id: "interactive-diagnostic-tool", label: "2. Free Probate Checker Tool" },
+  { id: "presidential-towns-rule", label: "3. The 3 Needed Cities (Mumbai, Chennai, Kolkata)" },
   { id: "diagnostic-matrix", label: "4. The 5 Common Reasons Courts Require Probate" },
   { id: "state-by-state-guide", label: "5. State-by-State Rules Across India" },
   { id: "visual-blueprint", label: "6. Visual Guide to the Probate Process" },
   { id: "step-by-step-sop", label: "7. Step-by-Step Court Process" },
-  { id: "legal-instruments-compared", label: "8. Probate vs Letters of Administration vs Succession Certificate" },
+  { id: "legal-instruments-compared", label: "8. Probate vs Letters of Care vs Estate Paper" },
   { id: "court-fees-and-timelines", label: "9. State Court Fees & Expected Timelines" },
   { id: "defensive-estate-planning", label: "10. How to Avoid Probate Hassles in Advance" },
   { id: "specialized-scenarios", label: "11. Special Scenarios (NRIs, Lost Wills & Foreign Grants)" },
@@ -118,31 +118,31 @@ const TOC_ITEMS = [
 const FAQS = [
   {
     q: "What is Probate of a Will in simple words?",
-    a: "Probate is an official certificate issued by a court confirming that a Will is genuine and that the executor named in it has the legal right to distribute the deceased person's property (Section 2(f), Indian Succession Act, 1925). It is the court's stamp of authenticity, proving to banks, registrars, and society offices that no one can dispute the executor's authority.",
+    a: "Probate is an official paper issued by a court confirming that a Will is genuine and that the executor named in it has the legal right to distribute the deceased person's asset (Section 2(f), Indian Succession Act, 1925). It is the court's stamp of authenticity, proving to banks, registrars, and society offices that no one can fight the executor's office.",
   },
   {
-    q: "Where in India is Probate compulsory by law?",
-    a: "Under Sections 57 and 213 of the Indian Succession Act, probate is compulsory by law ONLY if: (1) The Will was signed in Mumbai, Chennai, or Kolkata, or (2) The Will deals with property (flats, land, houses) located in Mumbai, Chennai, or Kolkata (for Hindu, Buddhist, Sikh, and Jain testators). Outside these three cities, probate is generally optional.",
+    q: "Where in India is Probate needed by law?",
+    a: "Under Sections 57 and 213 of the Indian Succession Act, probate is needed by law ONLY if: (1) The Will was signed in Mumbai, Chennai, or Kolkata, or (2) The Will deals with asset (flats, land, houses) located in Mumbai, Chennai, or Kolkata (for Hindu, Buddhist, Sikh, and Jain Will makers). Outside these three cities, probate is generally a choice.",
   },
   {
-    q: "Do I need probate for properties in Delhi, Bengaluru, Pune, or Hyderabad?",
-    a: "No, probate is not required by law in cities like Delhi NCR, Bengaluru, Hyderabad, Pune, Ahmedabad, Lucknow, or Chandigarh. The Supreme Court of India (Kanta Yadav v. Om Prakash Yadav, 2020) confirmed that property rights under a valid Will can be established outside Mumbai, Chennai, and Kolkata without getting a court probate.",
+    q: "Do I need probate for assets in Delhi, Bengaluru, Pune, or Hyderabad?",
+    a: "No, probate is not required by law in cities like Delhi NCR, Bengaluru, Hyderabad, Pune, Ahmedabad, Lucknow, or Chandigarh. The Supreme Court of India (Kanta Yadav v. Om Prakash Yadav, 2020) confirmed that asset rights under a valid Will can be established outside Mumbai, Chennai, and Kolkata without getting a court probate.",
   },
   {
-    q: "Why do banks or housing societies still ask for probate if it is not mandatory?",
-    a: "Banks and cooperative housing societies often ask for probate for safety, especially when large bank balances (over ₹25 Lakhs) or valuable flats are involved, or if other relatives object. Under Section 216 of the Act, if a bank pays out based on a court probate, the bank cannot be sued later by angry relatives. However, if all legal heirs agree and sign an Indemnity Bond and No Objection Certificates (NOCs), institutions can release funds without court probate.",
+    q: "Why do banks or housing societies still ask for probate if it is not needed?",
+    a: "Banks and cooperative housing societies often ask for probate for safety, especially when large bank balances (over ₹25 Lakhs) or valuable flats are involved, or if other relatives object. Under Section 216 of the Act, if a bank pays out based on a court probate, the bank cannot be sued later by angry relatives. However, if all legal heirs agree and sign an Indemnity Bond and No Objection Papers (NOCs), institutions can release funds without court probate.",
   },
   {
     q: "What happens if the Will does not name an executor?",
-    a: "Under Section 222 of the Act, a court can only grant probate to a person explicitly named as 'Executor' in the Will. If no executor was named, or if the named executor has passed away or refuses to act, the court cannot grant probate. Instead, the family heirs must apply for Letters of Administration with Will Annexed (under Section 232).",
+    a: "Under Section 222 of the Act, a court can only grant probate to a person explicitly named as 'Executor' in the Will. If no executor was named, or if the named executor has passed away or refuses to act, the court cannot grant probate. Instead, the family heirs must apply for Letters of Care with Will Annexed (under Section 232).",
   },
   {
-    q: "Can a plain paper, unregistered Will get court probate?",
-    a: "Yes! In India, registering a Will is completely optional under Section 18(e) of the Registration Act, 1908. A Will written on ordinary white paper is 100% legally valid as long as the person signed it in front of two witnesses who also signed (Section 63). Courts across India grant probate for unregistered plain-paper Wills every day.",
+    q: "Can a plain paper, plain Will get court probate?",
+    a: "Yes! In India, registering a Will is completely a choice under Section 18(e) of the Filing Act, 1908. A Will written on ordinary white paper is 100% legally valid as long as the person signed it in front of two witnesses who also signed (Section 63). Courts across India grant probate for plain plain-paper Wills every day.",
   },
   {
-    q: "What is the difference between Probate and a Succession Certificate?",
-    a: "A Probate is issued only when there is a valid Will, and covers both land/flats (immovable assets) and money/shares (movable assets). A Succession Certificate is used when someone passes away without a Will, and can ONLY be used to claim bank balances, shares, mutual funds, or debts (movable assets)—it cannot be used for land or flats.",
+    q: "What is the difference between Probate and a Estate Paper?",
+    a: "A Probate is issued only when there is a valid Will, and covers both land/flats (land assets) and money/shares (cash assets). A Estate Paper is used when someone passes away without a Will, and can ONLY be used to claim bank balances, shares, mutual funds, or debts (cash assets)—it cannot be used for land or flats.",
   },
   {
     q: "How long does it take to get probate from court?",
@@ -154,7 +154,7 @@ const FAQS = [
   },
   {
     q: "Do NRIs need Indian court approval for a Will made abroad?",
-    a: "Yes. If an NRI leaves an overseas Will (made in the US, UK, Canada, UAE, etc.) that was probated in a foreign court, Indian sub-registrars and banks will not accept that foreign order directly. Under Section 228 of the Indian Succession Act, the family must file an application in an Indian court to get Letters of Administration based on the certified foreign Will.",
+    a: "Yes. If an NRI leaves an overseas Will (made in the US, UK, Canada, UAE, etc.) that was probated in a foreign court, Indian sub-registrars and banks will not accept that foreign order directly. Under Section 228 of the Indian Succession Act, the family must file an form in an Indian court to get Letters of Care based on the certified foreign Will.",
   },
 ];
 
@@ -171,7 +171,7 @@ export default function ProbateCheckerClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [expandedRationale, setExpandedRationale] = useState<Record<string, boolean>>({});
 
@@ -247,7 +247,7 @@ export default function ProbateCheckerClient() {
         badge: "Answer Questions to Check",
         title: "Complete the 5 Diagnostic Questions Above",
         description:
-          "Select Yes or No for each statutory question to instantly determine your court probate necessity, applicable High Court rules, and cost-effective alternatives.",
+          "Select Yes or No for each legal question to instantly determine your court probate necessity, applicable High Court rules, and cost-effective alternatives.",
         mandatory: false,
         requiresLoa: false,
         actionType: "neutral",
@@ -266,7 +266,7 @@ export default function ProbateCheckerClient() {
           badge: "Court Grant Mandatory",
           title: "Letters of Administration with Will Annexed Required",
           description:
-            "Because real estate is located in Mumbai, Chennai, or Kolkata, court certification is mandatory under Section 57 and Section 213. Since no executor is named or available, the court must grant Letters of Administration with Will Annexed under Section 232.",
+            "Because real estate is located in Mumbai, Chennai, or Kolkata, court certification is needed under Section 57 and Section 213. Since no executor is named or available, the court must grant Letters of Care with Will Annexed under Section 232.",
           mandatory: true,
           requiresLoa: true,
           actionType: "lawyer",
@@ -279,7 +279,7 @@ export default function ProbateCheckerClient() {
         badge: "Court Probate Mandatory",
         title: "High Court Probate Petition Required Under Section 213",
         description:
-          "Under Section 57 and Section 213 of the Indian Succession Act, 1925, probate is legally compulsory for Hindu, Buddhist, Sikh, and Jain Wills concerning immovable property in Mumbai, Chennai, or Kolkata. Sub-Registrars and housing societies cannot mutate ownership without court probate.",
+          "Under Section 57 and Section 213 of the Indian Succession Act, 1925, probate is legally needed for Hindu, Buddhist, Sikh, and Jain Wills concerning land asset in Mumbai, Chennai, or Kolkata. Sub-Registrars and housing societies cannot mutate ownership without court probate.",
         mandatory: true,
         requiresLoa: false,
         actionType: "lawyer",
@@ -295,7 +295,7 @@ export default function ProbateCheckerClient() {
         badge: "Court Probate Essential",
         title: "Probate Petition Strongly Advised to Settle Legal Title",
         description:
-          "Your Will is facing dispute or caveat from legal heirs. Outside presidency towns, an unprobated Will has weak evidentiary defense against civil suits. A court probate order is a judgment in rem that conclusively establishes validity against all disputing relatives.",
+          "Your Will is facing fight or caveat from legal heirs. Outside presidency towns, an unprobated Will has weak proof defense against civil suits. A court probate order is a judgment in rem that conclusively establishes validity against all disputing relatives.",
         mandatory: false,
         requiresLoa: q5_executor === false,
         actionType: "lawyer",
@@ -311,7 +311,7 @@ export default function ProbateCheckerClient() {
         badge: "Section 228 Filing Needed",
         title: "Indian Ancillary Letters of Administration Required",
         description:
-          "Indian authorities do not execute foreign court probate decrees directly. Under Section 228 of the Act, you must file an ancillary petition for Letters of Administration with an authenticated copy of the foreign Will in the competent Indian District or High Court.",
+          "Indian authorities do not execute foreign court probate decrees directly. Under Section 228 of the Act, you must file an ancillary petition for Letters of Care with an authenticated copy of the foreign Will in the competent Indian District or High Court.",
         mandatory: true,
         requiresLoa: true,
         actionType: "lawyer",
@@ -327,7 +327,7 @@ export default function ProbateCheckerClient() {
         badge: "Institution Demands Clearance",
         title: "Probate or Legal Heir Indemnity Clearance Required",
         description:
-          "While probate is not mandated by statute outside Mumbai, Chennai, and Kolkata, financial institutions demand it for statutory immunity under Section 216. Our advocates can petition the court or negotiate release via comprehensive Indemnity Bonds and legal heir NOCs.",
+          "While probate is not mandated by statute outside Mumbai, Chennai, and Kolkata, financial institutions demand it for legal immunity under Section 216. Our lawyers can petition the court or negotiate release via full Indemnity Bonds and legal heir NOCs.",
         mandatory: false,
         requiresLoa: q5_executor === false,
         actionType: "lawyer",
@@ -343,7 +343,7 @@ export default function ProbateCheckerClient() {
         badge: "Section 232 Applicable",
         title: "Letters of Administration Required Instead of Probate",
         description:
-          "Under Section 222, probate is granted only to a named executor. If you need court certification outside presidency towns, your petition must be for Letters of Administration with Will Annexed under Section 232, filed by the primary beneficiary.",
+          "Under Section 222, probate is granted only to a named executor. If you need court certification outside presidency towns, your petition must be for Letters of Care with Will Annexed under Section 232, filed by the primary heir.",
         mandatory: false,
         requiresLoa: true,
         actionType: "lawyer",
@@ -358,7 +358,7 @@ export default function ProbateCheckerClient() {
       badge: "Zero Court Mandate",
       title: "Probate is Not Compulsory Under Indian Succession Law",
       description:
-        "Your estate is located outside Mumbai, Chennai, and Kolkata, the Will is uncontested, domestic, and has a named executor. Under Supreme Court precedent (Kanta Yadav, 2020), Section 213 does not apply. You can transfer property and bank assets directly using legal heirship documents and an Indemnity Bond.",
+        "Your estate is located outside Mumbai, Chennai, and Kolkata, the Will is uncontested, domestic, and has a named executor. Under Supreme Court precedent (Kanta Yadav, 2020), Section 213 does not apply. You can transfer asset and bank assets directly using legal heirship papers and an Indemnity Bond.",
       mandatory: false,
       requiresLoa: false,
       actionType: "start",
@@ -391,9 +391,9 @@ export default function ProbateCheckerClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Answer 5 quick statutory questions to determine if your Will requires High Court
+            Answer 5 quick legal questions to determine if your Will requires High Court
             probate under Section 57 and Section 213 of the Indian Succession Act, 1925. Discover
-            jurisdiction rules for Mumbai, Chennai, and Kolkata, manage bank deadlocks, and download
+            area rules for Mumbai, Chennai, and Kolkata, manage bank deadlocks, and download
             your legal diagnostic summary.
           </p>
 
@@ -489,7 +489,7 @@ export default function ProbateCheckerClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 57, 211, 213, 222, 228, 232 & 276 of the Indian Succession
@@ -513,9 +513,9 @@ export default function ProbateCheckerClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Presidency Towns Mandate:</strong> Probate is legally compulsory ONLY
+                    <strong>Presidency Towns Mandate:</strong> Probate is legally needed ONLY
                     for Hindu, Sikh, Jain, and Buddhist Wills made in Mumbai, Chennai, and Kolkata,
-                    or concerning immovable property situated within those 3 cities (Section 57 &
+                    or concerning land asset situated within those 3 cities (Section 57 &
                     213).
                   </span>
                 </li>
@@ -524,7 +524,7 @@ export default function ProbateCheckerClient() {
                   <span>
                     <strong>Non-Presidency Exemption:</strong> Outside Mumbai, Chennai, and Kolkata
                     (e.g., Delhi NCR, Bengaluru, Pune, Hyderabad, UP), probate is NOT legally
-                    mandatory. An unprobated Will is fully valid under Supreme Court precedent.
+                    needed. An unprobated Will is fully valid under Supreme Court precedent.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -532,7 +532,7 @@ export default function ProbateCheckerClient() {
                   <span>
                     <strong>The Named Executor Rule:</strong> Under Section 222, probate can be
                     granted ONLY to an executor explicitly named in the Will. If no executor is
-                    named, the court issues Letters of Administration with Will Annexed under
+                    named, the court issues Letters of Care with Will Annexed under
                     Section 232.
                   </span>
                 </li>
@@ -540,8 +540,8 @@ export default function ProbateCheckerClient() {
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Foreign Wills & NRIs:</strong> Overseas Wills probated abroad cannot be
-                    used directly in India. Beneficiaries must obtain ancillary Letters of
-                    Administration under Section 228 from an Indian court.
+                    used directly in India. Heirs must obtain ancillary Letters of
+                    Care under Section 228 from an Indian court.
                   </span>
                 </li>
               </ul>
@@ -554,16 +554,16 @@ export default function ProbateCheckerClient() {
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Framework: Definition & Evidentiary Value
+                1. Legal Framework: Definition & Proof Value
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Indian estate law, probate is the formal certificate issued by a court of
-                  competent jurisdiction confirming that a Will was genuinely executed by a
-                  testator of sound mind. Under Section 2(f) of the Indian Succession Act, 1925,
+                  In Indian estate law, probate is the formal paper issued by a court of
+                  competent area confirming that a Will was genuinely signed by a
+                  Will maker of sound mind. Under Section 2(f) of the Indian Succession Act, 1925,
                   probate is defined as &ldquo;the copy of a Will certified under the seal of a
-                  court of competent jurisdiction with a grant of administration to the estate of the
-                  testator.&rdquo;
+                  court of competent area with a grant of care to the estate of the
+                  Will maker.&rdquo;
                 </p>
                 <p>
                   A probate order has extraordinary legal weight because it operates as a{" "}
@@ -575,8 +575,8 @@ export default function ProbateCheckerClient() {
                 </p>
                 <p>
                   Under Section 211 of the Indian Succession Act, the executor named in the Will
-                  becomes the legal representative of the deceased for all purposes. Furthermore,
-                  Section 216 provides statutory indemnity to any bank, tenant, or debtor who pays
+                  becomes the legal agent of the deceased for all purposes. Also,
+                  Section 216 provides legal indemnity to any bank, tenant, or debtor who pays
                   money to an executor holding a court probate.
                 </p>
               </div>
@@ -592,10 +592,10 @@ export default function ProbateCheckerClient() {
                 <span>5-STEP PROBATE CHECKER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Diagnostic Tool: Check Probate Requirement
+                2. Free Diagnostic Tool: Check Probate Rule
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select Yes or No for the 5 statutory criteria below. The diagnostic engine applies
+                Select Yes or No for the 5 legal criteria below. The diagnostic engine applies
                 Sections 57, 213, 222, and 228 of the Indian Succession Act to determine if your
                 estate requires court probate.
               </p>
@@ -773,9 +773,9 @@ export default function ProbateCheckerClient() {
                         <span>Recommended Legal Course of Action:</span>
                       </div>
                       <p className="text-slate-700">
-                        Probate is completely optional for your estate. You do not need expensive court
-                        litigation. Ensure your Will has Section 63 compliant attestation, medical fitness
-                        certification, and registered nominations to enable direct property transfer.
+                        Probate is completely a choice for your estate. You do not need expensive court
+                        court fights. Ensure your Will has Section 63 compliant witness signing, medical fitness
+                        certification, and filed nominations to enable direct asset transfer.
                       </p>
                     </div>
                   )}
@@ -790,13 +790,13 @@ export default function ProbateCheckerClient() {
                         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm transition-transform hover:-translate-y-0.5"
                       >
                         <UserCheck className="w-4 h-4 text-rose-300" />
-                        <span>Consult Senior Probate Advocates</span>
+                        <span>Consult Senior Probate Lawyers</span>
                       </Link>
                       <button
                         onClick={handleStartDraft}
                         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-bold text-sm"
                       >
-                        <span>Draft Challenge-Proof Will</span>
+                        <span>Draft Fight-Proof Will</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
                     </>
@@ -829,20 +829,20 @@ export default function ProbateCheckerClient() {
                 <span>GEOGRAPHIC JURISDICTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Presidential Towns Rule: Section 57 & 213 Jurisdictions
+                3. Presidential Towns Rule: Section 57 & 213 Areas
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A common point of confusion among Indian families is why probate is required in
-                  Mumbai or Kolkata but completely optional in Delhi or Bengaluru. The answer lies
-                  in the colonial statutory architecture preserved in Section 57 and Section 213 of
+                  Mumbai or Kolkata but completely a choice in Delhi or Bengaluru. The answer lies
+                  in the colonial legal architecture preserved in Section 57 and Section 213 of
                   the Indian Succession Act, 1925.
                 </p>
                 <p>
                   Section 213(1) establishes the general principle that no executor or legatee can
                   establish any right in court under a Will without obtaining probate. However,
-                  Section 213(2) creates a massive statutory carve-out for Hindus, Buddhists, Sikhs,
-                  and Jains. Under Section 213(2), this requirement applies ONLY to Wills specified
+                  Section 213(2) creates a massive legal carve-out for Hindus, Buddhists, Sikhs,
+                  and Jains. Under Section 213(2), this rule applies ONLY to Wills specified
                   in Section 57, clauses (a) and (b):
                 </p>
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-3">
@@ -851,8 +851,8 @@ export default function ProbateCheckerClient() {
                       A
                     </span>
                     <div className="text-xs sm:text-sm text-slate-700">
-                      <strong>Section 57(a) — Territorial Execution:</strong> Wills made within the
-                      local limits of the ordinary original civil jurisdiction of the High Courts of
+                      <strong>Section 57(a) — Territorial Signing:</strong> Wills made within the
+                      local limits of the ordinary original civil area of the High Courts of
                       Judicature at Fort William (Kolkata), Madras (Chennai), and Bombay (Mumbai).
                     </div>
                   </div>
@@ -861,22 +861,22 @@ export default function ProbateCheckerClient() {
                       B
                     </span>
                     <div className="text-xs sm:text-sm text-slate-700">
-                      <strong>Section 57(b) — Property Situate Rule:</strong> Wills made outside
-                      those territories, but relating to immovable property situated within the
-                      ordinary original civil jurisdiction of Mumbai, Chennai, or Kolkata.
+                      <strong>Section 57(b) — Asset Situate Rule:</strong> Wills made outside
+                      those territories, but relating to land asset situated within the
+                      ordinary original civil area of Mumbai, Chennai, or Kolkata.
                     </div>
                   </div>
                 </div>
                 <p>
                   In the landmark judgment <strong>Clarence Pais v. Union of India (2001) 4 SCC 325</strong>,
-                  the Supreme Court affirmed that Section 213 does not apply to Wills executed outside
-                  these three historic presidential cities unless the Will affects immovable property
+                  the Supreme Court affirmed that Section 213 does not apply to Wills signed outside
+                  these three historic presidential cities unless the Will affects land asset
                   located inside them.
                 </p>
                 <p>
                   This position was reaffirmed in <strong>Kanta Yadav v. Om Prakash Yadav (2020) 14 SCC 102</strong>,
                   where the Supreme Court held that in Delhi, Haryana, and Punjab, probate of a Hindu
-                  Will is not mandatory, and beneficiaries can establish rights directly in court
+                  Will is not needed, and heirs can establish rights directly in court
                   without prior probate certification.
                 </p>
               </div>
@@ -903,7 +903,7 @@ export default function ProbateCheckerClient() {
                       <tr className="bg-slate-900 text-white border-b border-slate-800">
                         <th className="py-3 px-4 font-bold">Diagnostic Trigger</th>
                         <th className="py-3 px-4 font-bold">Condition Tested</th>
-                        <th className="py-3 px-4 font-bold">Statutory Section</th>
+                        <th className="py-3 px-4 font-bold">Legal Section</th>
                         <th className="py-3 px-4 font-bold">Legal Consequence</th>
                       </tr>
                     </thead>
@@ -912,7 +912,7 @@ export default function ProbateCheckerClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">
                           1. Contested Will
                         </td>
-                        <td className="py-3 px-4">Caveat filed or heirs dispute validity</td>
+                        <td className="py-3 px-4">Caveat filed or heirs fight validity</td>
                         <td className="py-3 px-4 font-mono text-[11px]">Sec 276 & 284 ISA</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">
                           Probate judgment in rem required
@@ -922,7 +922,7 @@ export default function ProbateCheckerClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">
                           2. Foreign Will / NRI
                         </td>
-                        <td className="py-3 px-4">Executed abroad with Indian property</td>
+                        <td className="py-3 px-4">Signed abroad with Indian property</td>
                         <td className="py-3 px-4 font-mono text-[11px]">Sec 228 ISA</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">
                           Ancillary Letters of Admin required
@@ -930,12 +930,12 @@ export default function ProbateCheckerClient() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="py-3 px-4 font-bold text-slate-900">
-                          3. Property in Mumbai / Chennai / Kolkata
+                          3. Asset in Mumbai / Chennai / Kolkata
                         </td>
-                        <td className="py-3 px-4">Immovable property in presidency towns</td>
+                        <td className="py-3 px-4">Land asset in presidency towns</td>
                         <td className="py-3 px-4 font-mono text-[11px]">Sec 57 & 213 ISA</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">
-                          Statutorily mandatory for Hindus
+                          Statutorily needed for Hindus
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
@@ -971,13 +971,13 @@ export default function ProbateCheckerClient() {
                 <span>STATEWISE LEGAL GUIDE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. State-by-State Guide: Where Probate is Mandatory in India
+                5. State-by-State Guide: Where Probate is Needed in India
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Court probate rules vary dramatically across Indian states. The table below details
-                  the practical and statutory requirements enforced by High Courts and revenue
-                  authorities across India:
+                  the practical and legal rules enforced by High Courts and revenue
+                  offices across India:
                 </p>
 
                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
@@ -996,7 +996,7 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Mumbai (Maharashtra)
                           </td>
-                          <td className="py-3 px-4 text-rose-600 font-bold">Mandatory</td>
+                          <td className="py-3 px-4 text-rose-600 font-bold">Needed</td>
                           <td className="py-3 px-4">Sec 57(a)/(b) & Bombay HC Rules</td>
                           <td className="py-3 px-4">
                             Co-op housing societies and SRO insist on Bombay HC probate. Capped at
@@ -1007,32 +1007,32 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Rest of Maharashtra (Pune, Nagpur)
                           </td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Mandatory</td>
-                          <td className="py-3 px-4">Outside Bombay HC original jurisdiction</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Needed</td>
+                          <td className="py-3 px-4">Outside Bombay HC original area</td>
                           <td className="py-3 px-4">
-                            Direct mutation permitted with death cert, Will copy, and heir
-                            affidavits.
+                            Direct name change permitted with death cert, Will copy, and heir
+                            sworn notes.
                           </td>
                         </tr>
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Kolkata (West Bengal)
                           </td>
-                          <td className="py-3 px-4 text-rose-600 font-bold">Mandatory</td>
-                          <td className="py-3 px-4">Fort William original jurisdiction</td>
+                          <td className="py-3 px-4 text-rose-600 font-bold">Needed</td>
+                          <td className="py-3 px-4">Fort William original area</td>
                           <td className="py-3 px-4">
                             Calcutta High Court or City Civil Court probate required for Kolkata
-                            properties.
+                            assets.
                           </td>
                         </tr>
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Chennai (Tamil Nadu)
                           </td>
-                          <td className="py-3 px-4 text-rose-600 font-bold">Mandatory</td>
-                          <td className="py-3 px-4">Madras High Court original jurisdiction</td>
+                          <td className="py-3 px-4 text-rose-600 font-bold">Needed</td>
+                          <td className="py-3 px-4">Madras High Court original area</td>
                           <td className="py-3 px-4">
-                            Madras High Court probate required for property within Chennai city
+                            Madras High Court probate required for asset within Chennai city
                             limits.
                           </td>
                         </tr>
@@ -1040,10 +1040,10 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Delhi NCR
                           </td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Mandatory</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Needed</td>
                           <td className="py-3 px-4">Kanta Yadav v. Om Prakash Yadav (SC 2020)</td>
                           <td className="py-3 px-4">
-                            DDA, MCD, and banks process transfer via registered Will, NOC, and
+                            DDA, MCD, and banks process transfer via filed Will, NOC, and
                             indemnity bond.
                           </td>
                         </tr>
@@ -1051,10 +1051,10 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Karnataka (Bengaluru)
                           </td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Mandatory</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Needed</td>
                           <td className="py-3 px-4">Karnataka HC rulings on Sec 213</td>
                           <td className="py-3 px-4">
-                            BBMP khata transfer requires registered Will, family tree affidavit,
+                            BBMP khata transfer requires filed Will, family tree sworn note,
                             and death cert.
                           </td>
                         </tr>
@@ -1062,10 +1062,10 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Telangana & Andhra Pradesh
                           </td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Mandatory</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Needed</td>
                           <td className="py-3 px-4">Hyderabad HC precedents</td>
                           <td className="py-3 px-4">
-                            GHMC and registration departments accept unprobated Wills with legal
+                            GHMC and filing departments accept unprobated Wills with legal
                             heir consent.
                           </td>
                         </tr>
@@ -1073,10 +1073,10 @@ export default function ProbateCheckerClient() {
                           <td className="py-3 px-4 font-bold text-slate-900">
                             Punjab & Haryana
                           </td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Mandatory</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Not Needed</td>
                           <td className="py-3 px-4">Behari Lal Ram Charan (AIR 1968 P&H 108)</td>
                           <td className="py-3 px-4">
-                            Section 213 has no application in Punjab or Haryana. Unprobated Will is
+                            Section 213 has no form in Punjab or Haryana. Unprobated Will is
                             binding.
                           </td>
                         </tr>
@@ -1097,8 +1097,8 @@ export default function ProbateCheckerClient() {
                 6. Visual Blueprint: Indian Probate Assessment Architecture
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                An authoritative roadmap illustrating how the 5 statutory criteria direct an estate
-                toward mandatory probate, Letters of Administration, or seamless direct transfer.
+                An authoritative roadmap illustrating how the 5 legal criteria direct an estate
+                toward needed probate, Letters of Care, or seamless direct transfer.
               </p>
 
               {/* Infographic Image Card */}
@@ -1115,7 +1115,7 @@ export default function ProbateCheckerClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: 5-Step Statutory Decision Matrix for Indian Probate under ISA 1925
+                    Figure 1.1: 5-Step Legal Decision Matrix for Indian Probate under ISA 1925
                   </span>
                   <Link
                     href="/images/probate-checker-og.jpg"
@@ -1139,8 +1139,8 @@ export default function ProbateCheckerClient() {
                 7. Step-by-Step SOP: High Court Probate Petition Protocol
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                When probate is required, the named executor must follow a strict statutory
-                procedure under the Indian Succession Act, 1925, and relevant High Court Original
+                When probate is required, the named executor must follow a strict legal
+                step under the Indian Succession Act, 1925, and relevant High Court Original
                 Side Rules.
               </p>
 
@@ -1152,12 +1152,12 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-slate-900 text-base">
-                      Stage 1: Petition Drafting & Jurisdiction Check (Section 270)
+                      Stage 1: Petition Drafting & Area Check (Section 270)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Verify that the deceased had a fixed place of abode or left immovable property
-                      within the court jurisdiction. The named executor prepares the formal probate
-                      petition along with Schedule of Assets (movable and immovable) and list of all
+                      Verify that the deceased had a fixed place of abode or left land asset
+                      within the court area. The named executor prepares the formal probate
+                      petition along with Schedule of Assets (cash and land) and list of all
                       Class I legal heirs.
                     </p>
                   </div>
@@ -1169,12 +1169,12 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-slate-900 text-base">
-                      Stage 2: Verification of Original Will & Filing (Section 276 & 280)
+                      Stage 2: Check of Original Will & Filing (Section 276 & 280)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The original Will is deposited in the court registry. The petition is verified
-                      by the executor, declaring that the Will is the testator&rsquo;s last testament
-                      and that it was executed with full mental competence.
+                      The original Will is deposited in the court registry. The petition is checked
+                      by the executor, declaring that the Will is the Will maker&rsquo;s last testament
+                      and that it was signed with full mental competence.
                     </p>
                   </div>
                 </div>
@@ -1185,12 +1185,12 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-slate-900 text-base">
-                      Stage 3: Attesting Witness Affidavit (Section 281 ISA & Section 68 Evidence Act)
+                      Stage 3: Signing Witness Sworn Note (Section 281 ISA & Section 68 Evidence Act)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      At least one attesting witness must submit a sworn affidavit under Section 281,
-                      confirming that they personally saw the testator sign the Will and signed in
-                      the testator&rsquo;s physical presence. This step is statutorily mandatory.
+                      At least one signing witness must submit a sworn sworn note under Section 281,
+                      confirming that they personally saw the Will maker sign the Will and signed in
+                      the Will maker&rsquo;s physical presence. This step is statutorily needed.
                     </p>
                   </div>
                 </div>
@@ -1204,7 +1204,7 @@ export default function ProbateCheckerClient() {
                       Stage 4: Citations & Newspaper Publication (Section 283)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The court issues formal citations to all surviving legal heirs. Additionally, a
+                      The court issues formal citations to all surviving legal heirs. Also, a
                       public notice is published in two prominent daily newspapers (one English, one
                       regional language) inviting any objections within 30 to 45 days.
                     </p>
@@ -1217,11 +1217,11 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-slate-900 text-base">
-                      Stage 5: Asset Valuation & Ad Valorem Court Fee Payment
+                      Stage 5: Asset Price Check & Ad Valorem Court Fee Payment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The court refers property details to the Collector / Superintendent of Stamps
-                      to verify property valuation. The executor deposits the applicable ad valorem
+                      The court refers asset details to the Collector / Superintendent of Stamps
+                      to verify asset price check. The executor deposits the applicable ad valorem
                       court fee (capped at ₹75,000 in Maharashtra).
                     </p>
                   </div>
@@ -1255,12 +1255,12 @@ export default function ProbateCheckerClient() {
                 <span>COMPARATIVE JURISPRUDENCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Legal Instruments Compared: Probate vs LOA vs Succession
+                8. Legal Instruments Compared: Probate vs LOA vs Estate
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian law provides three distinct court instruments to administer or clear title
-                  to an estate. Choosing the wrong document leads to dismissals and wasted court fees:
+                  to an estate. Choosing the wrong paper leads to dismissals and wasted court fees:
                 </p>
 
                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
@@ -1279,35 +1279,35 @@ export default function ProbateCheckerClient() {
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">Probate</td>
                           <td className="py-3 px-4 font-mono text-[11px]">Sec 222 & 276 ISA</td>
-                          <td className="py-3 px-4 text-emerald-600 font-bold">Yes (Mandatory)</td>
+                          <td className="py-3 px-4 text-emerald-600 font-bold">Yes (Needed)</td>
                           <td className="py-3 px-4">Named Executor ONLY</td>
-                          <td className="py-3 px-4">All Movable & Immovable assets</td>
+                          <td className="py-3 px-4">All Cash & Land assets</td>
                         </tr>
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">
-                            Letters of Administration (With Will)
+                            Letters of Care (With Will)
                           </td>
                           <td className="py-3 px-4 font-mono text-[11px]">Sec 232 & 234 ISA</td>
                           <td className="py-3 px-4 text-emerald-600 font-bold">Yes</td>
-                          <td className="py-3 px-4">Beneficiary / Universal Legatee</td>
-                          <td className="py-3 px-4">All Movable & Immovable assets</td>
+                          <td className="py-3 px-4">Heir / Universal Legatee</td>
+                          <td className="py-3 px-4">All Cash & Land assets</td>
                         </tr>
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">
-                            Letters of Administration (Without Will)
+                            Letters of Care (Without Will)
                           </td>
                           <td className="py-3 px-4 font-mono text-[11px]">Sec 218 ISA</td>
-                          <td className="py-3 px-4 text-rose-600 font-bold">No (Intestate)</td>
+                          <td className="py-3 px-4 text-rose-600 font-bold">No (No-Will)</td>
                           <td className="py-3 px-4">Class I Legal Heirs</td>
-                          <td className="py-3 px-4">All Movable & Immovable assets</td>
+                          <td className="py-3 px-4">All Cash & Land assets</td>
                         </tr>
                         <tr className="hover:bg-slate-50/80">
                           <td className="py-3 px-4 font-bold text-slate-900">
-                            Succession Certificate
+                            Estate Paper
                           </td>
                           <td className="py-3 px-4 font-mono text-[11px]">Sec 370–390 ISA</td>
                           <td className="py-3 px-4 text-amber-600 font-bold">Either</td>
-                          <td className="py-3 px-4">Legal Heirs or Beneficiaries</td>
+                          <td className="py-3 px-4">Legal Heirs or Heirs</td>
                           <td className="py-3 px-4 text-rose-600 font-semibold">
                             Debts & Securities ONLY (No Real Estate)
                           </td>
@@ -1343,9 +1343,9 @@ export default function ProbateCheckerClient() {
                     <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[620px]">
                       <thead>
                         <tr className="bg-slate-900 text-white border-b border-slate-800">
-                          <th className="py-3 px-4 font-bold">Jurisdiction / Forum</th>
+                          <th className="py-3 px-4 font-bold">Area / Forum</th>
                           <th className="py-3 px-4 font-bold">Ad Valorem Court Fee</th>
-                          <th className="py-3 px-4 font-bold">Statutory Maximum Cap</th>
+                          <th className="py-3 px-4 font-bold">Legal Maximum Cap</th>
                           <th className="py-3 px-4 font-bold">Average Uncontested Duration</th>
                         </tr>
                       </thead>
@@ -1376,7 +1376,7 @@ export default function ProbateCheckerClient() {
                           </td>
                           <td className="py-3 px-4">Approx 3% under TN Court Fees Act</td>
                           <td className="py-3 px-4 text-rose-600 font-semibold">
-                            Subject to valuation schedule
+                            Subject to price check schedule
                           </td>
                           <td className="py-3 px-4">6 to 12 Months</td>
                         </tr>
@@ -1408,7 +1408,7 @@ export default function ProbateCheckerClient() {
                 10. Defensive Estate Planning: Avoiding Court Friction
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                If your property is outside Mumbai, Chennai, and Kolkata, you can completely avoid
+                If your asset is outside Mumbai, Chennai, and Kolkata, you can completely avoid
                 expensive court probate by following 4 defensive estate drafting rules:
               </p>
 
@@ -1421,7 +1421,7 @@ export default function ProbateCheckerClient() {
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Section 63, use two witnesses who are younger than you and receive zero
-                    bequests under the Will. This avoids the Section 67 beneficiary witness
+                    bequests under the Will. This avoids the Section 67 heir witness
                     forfeiture trap and ensures they can depose in court if ever questioned.
                   </p>
                 </div>
@@ -1429,11 +1429,11 @@ export default function ProbateCheckerClient() {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-base">
                     <FileCheck className="w-5 h-5 text-indigo-600" />
-                    <span>Doctor Mental Fitness Certificate</span>
+                    <span>Doctor Mental Fitness Paper</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 59, having a registered medical practitioner certify sound mental
-                    disposing capacity on the date of execution destroys allegations of cognitive
+                    Under Section 59, having a filed medical practitioner certify sound mental
+                    disposing capacity on the date of signing destroys allegations of cognitive
                     decline, dementia, or undue influence by disgruntled relatives.
                   </p>
                 </div>
@@ -1446,18 +1446,18 @@ export default function ProbateCheckerClient() {
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     As held by the Supreme Court in Sarbati Devi and Shakti Yezdani, nominees are
                     merely trustees. Align your bank FD and demat nominations to match your Will
-                    beneficiaries so institutions release funds without court friction.
+                    heirs so institutions release funds without court friction.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-base">
                     <Award className="w-5 h-5 text-emerald-600" />
-                    <span>Optional SRO Registration</span>
+                    <span>A Choice SRO Filing</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    While optional under Section 18 of the Registration Act, registering your Will
-                    at the Sub-Registrar Office creates a public record under Section 114 of the
+                    While a choice under Section 18 of the Filing Act, registering your Will
+                    at the SRO office creates a public record under Section 114 of the
                     Indian Evidence Act, making allegations of post-death forgery nearly impossible.
                   </p>
                 </div>
@@ -1478,7 +1478,7 @@ export default function ProbateCheckerClient() {
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Certain estate scenarios involve unique legal hurdles that demand specialized
-                statutory compliance:
+                legal compliance:
               </p>
 
               {/* 2x2 Scenario Cards */}
@@ -1492,7 +1492,7 @@ export default function ProbateCheckerClient() {
                     If an NRI executes a Will in the US, UK, or UAE covering Indian property,
                     foreign probate decrees cannot directly transfer Indian real estate. Under
                     Section 228 of the Indian Succession Act, an ancillary petition for Letters of
-                    Administration with an authenticated copy of the Will must be filed in India.
+                    Care with an authenticated copy of the Will must be filed in India.
                   </p>
                 </div>
 
@@ -1503,8 +1503,8 @@ export default function ProbateCheckerClient() {
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     When an excluded child or relative files a caveat in court, the probate
-                    petition is automatically converted into a regular civil testamentary suit. The
-                    propounder of the Will must examine attesting witnesses and prove testamentary
+                    petition is automatically converted into a regular civil Will suit. The
+                    propounder of the Will must examine signing witnesses and prove Will
                     capacity under stringent scrutiny.
                   </p>
                 </div>
@@ -1515,9 +1515,9 @@ export default function ProbateCheckerClient() {
                     <span>Predeceased or Refusing Executor (Sec 232)</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If the named executor dies before the testator, or formally renounces
-                    executorship under Section 230, the beneficiaries cannot obtain probate. They
-                    must petition the court for Letters of Administration with Will Annexed under
+                    If the named executor dies before the Will maker, or formally renounces
+                    executorship under Section 230, the heirs cannot obtain probate. They
+                    must petition the court for Letters of Care with Will Annexed under
                     Section 232 to distribute the estate.
                   </p>
                 </div>
@@ -1529,9 +1529,9 @@ export default function ProbateCheckerClient() {
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Bye-Law 35 of the Maharashtra Cooperative Societies Bye-Laws, housing
-                    societies in Mumbai require Bombay High Court probate or a court succession
-                    order before transferring share certificates and membership to a legatee,
-                    despite nominee provisions.
+                    societies in Mumbai require Bombay High Court probate or a court estate
+                    order before transferring share papers and membership to a legatee,
+                    despite nominee rules.
                   </p>
                 </div>
               </div>
@@ -1561,17 +1561,17 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Advocates</span>
+                    <span>Bar Council Checked Lawyers</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier estate planning and succession technology
-                  platform, powered by AMA Legal Solutions. Our senior testamentary bench possesses
+                  WillDrafting.in is India&rsquo;s premier estate planning and estate technology
+                  platform, powered by AMA Legal Solutions. Our senior Will bench possesses
                   over a decade of trial and appellate experience across the Supreme Court of India,
                   Delhi High Court, Bombay High Court, Calcutta High Court, and District Courts
-                  nationwide. We have structured over 15,000 challenge-proof Wills and successfully
-                  navigated hundreds of complex probate petitions and Letters of Administration.
+                  nationwide. We have structured over 15,000 fight-proof Wills and successfully
+                  navigated hundreds of complex probate petitions and Letters of Care.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1594,7 +1594,7 @@ export default function ProbateCheckerClient() {
                     href="/tools/succession-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Succession Calculator</span>
+                    <span>Estate Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1615,7 +1615,7 @@ export default function ProbateCheckerClient() {
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to the most common legal questions about court probate,
-                jurisdiction rules, timelines, and costs in India:
+                area rules, timelines, and costs in India:
               </p>
 
               {/* Accordion Stack */}
@@ -1660,14 +1660,14 @@ export default function ProbateCheckerClient() {
                 <span>AUTHORITY & CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Statutory Citations: Acts, Rules & Authoritative Portals
+                Legal Citations: Acts, Rules & Authoritative Portals
               </h3>
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <p>This diagnostic tool is calibrated under the following statutory provisions:</p>
+                <p>This diagnostic tool is calibrated under the following legal rules:</p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-600">
                   <li>Indian Succession Act, 1925 (Sections 2(f), 57, 211, 213, 216, 222, 228, 232, 276, 281 & 289)</li>
                   <li>Indian Evidence Act, 1872 (Section 41 & Section 68)</li>
-                  <li>Registration Act, 1908 (Section 18(e) optional registration of Wills)</li>
+                  <li>Filing Act, 1908 (Section 18(e) a choice filing of Wills)</li>
                   <li>Supreme Court of India: Clarence Pais & Ors v. Union of India (2001) 4 SCC 325</li>
                   <li>Supreme Court of India: Kanta Yadav v. Om Prakash Yadav (2020) 14 SCC 102</li>
                   <li>Bombay High Court Original Side Rules & Maharashtra Court Fees Act, 1959</li>
@@ -1675,7 +1675,7 @@ export default function ProbateCheckerClient() {
 
                 <div className="pt-4 space-y-2">
                   <div className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                    Verified Government Portals
+                    Checked Government Portals
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <a
@@ -1728,7 +1728,7 @@ export default function ProbateCheckerClient() {
 
                 <div className="pt-3 space-y-2">
                   <div className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                    Related Internal Succession Guides & Tools
+                    Related Internal Estate Guides & Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1747,7 +1747,7 @@ export default function ProbateCheckerClient() {
                       href="/tools/succession-calculator"
                       className="text-[11px] px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 transition-colors font-bold"
                     >
-                      Indian Legal Heir Succession Calculator
+                      Indian Legal Heir Estate Tool
                     </Link>
                     <Link
                       href="/services/nri-will-india"
@@ -1765,7 +1765,29 @@ export default function ProbateCheckerClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1785,23 +1807,23 @@ export default function ProbateCheckerClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, high-value High Court probate
-                litigation, Section 228 foreign Will ancillary grants, and cross-border NRI estate
+                Expert in Indian testamentary jurisprudence, high-value High Court probate
+                court fights, Section 228 foreign Will ancillary grants, and cross-border NRI estate
                 planning.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1826,14 +1848,14 @@ export default function ProbateCheckerClient() {
                 Facing Bank Deadlock or Probate Demand?
               </h3>
               <p className="text-xs text-white/80 leading-relaxed">
-                Our senior High Court probate advocates handle petition filings, heir citations,
+                Our senior High Court probate lawyers handle petition filings, heir citations,
                 witness depositions, and asset release negotiation nationwide.
               </p>
               <Link
                 href="/services/probate-lawyer"
                 className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5"
               >
-                <span>Speak With Probate Advocate</span>
+                <span>Speak With Probate Lawyer</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
               <div className="pt-2 text-[11px] text-white/70 flex items-center justify-center gap-1.5">
@@ -1851,13 +1873,13 @@ export default function ProbateCheckerClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Precision:</strong> Calibrated strictly to Sections 57 & 213.
+                    <strong>Legal Precision:</strong> Calibrated strictly to Sections 57 & 213.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Pan-India Bar Licensed:</strong> High Court enrolled testamentary bench.
+                    <strong>Pan-India Bar Licensed:</strong> High Court enrolled Will bench.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1878,14 +1900,14 @@ export default function ProbateCheckerClient() {
             {/* CARD 4: RELATED TOOLS & GUIDES */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="font-extrabold text-slate-900 text-xs uppercase tracking-wider">
-                Related Succession Tools
+                Related Estate Tools
               </div>
               <div className="space-y-2">
                 <Link
                   href="/tools/succession-calculator"
                   className="block p-3 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/50 transition-colors"
                 >
-                  <div className="font-bold text-slate-900 text-xs">Succession Calculator</div>
+                  <div className="font-bold text-slate-900 text-xs">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5 flex items-center justify-between">
                     <span>Calculate exact legal heir shares</span>
                     <ArrowRight className="w-3 h-3 text-[#C65378]" />
@@ -1931,19 +1953,19 @@ export default function ProbateCheckerClient() {
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/blogs/how-to-challenge-a-will-in-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  How to Challenge a Will
+                  How to Fight a Will
                 </Link>
                 <Link
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
               </div>
             </div>

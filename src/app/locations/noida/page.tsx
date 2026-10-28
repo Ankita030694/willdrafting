@@ -140,7 +140,7 @@ export default function NoidaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Noida: Online Will Registration Support",
         description:
-          "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal.",
+          "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, SRO filing, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function NoidaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Noida - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Noida, Greater Noida, and Gautam.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across Noida, Greater Noida, and Gautam.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -252,14 +252,14 @@ export default function NoidaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Noida & Greater Noida NCR",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Gautam Buddha Nagar Sub-Registrar in Noida.",
+          "Five clear steps to create a legally binding Will and register it before the Gautam Buddha Nagar SRO in Noida.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Authority Properties",
-            text: "Compile your Noida real estate details including tripartite sub-lease deeds, builder-buyer agreements, bank accounts, and demat holdings. Name your beneficiaries and an executor.",
+            text: "Compile your Noida real estate details including tripartite sub-lease deeds, builder-buyer agreements, bank accounts, and demat holdings. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -271,19 +271,19 @@ export default function NoidaLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries in the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs in the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Noida SRO Appointment on IGRSUP Portal",
-            text: "Book an e-appointment on igrsup.gov.in for Sector 33 Noida or Surajpur Greater Noida SRO and pay the nominal ₹100 registration fee online.",
+            text: "Book an e-appointment on igrsup.gov.in for Sector 33 Noida or Surajpur Greater Noida SRO and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

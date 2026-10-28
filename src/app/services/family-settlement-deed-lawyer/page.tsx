@@ -386,7 +386,7 @@ export default function FamilySettlementDeedLawyerPage() {
               aria-current="page"
               className="text-[#111827] font-semibold"
             >
-              Family Settlement Agreement Lawyer India
+              Family Deal Pact Lawyer India
             </span>
           </nav>
 
@@ -399,7 +399,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
@@ -422,13 +422,13 @@ export default function FamilySettlementDeedLawyerPage() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
                 <span>
-                  High Court Advocates · SRO Registration · Pan-India Counsel
+                  High Court Lawyers · SRO Filing · Pan-India Counsel
                 </span>
               </div>
 
               {/* Single H1: 47 chars (Strictly between 30 and 65 chars) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Family Settlement Agreement &amp; Partition Lawyers
+                Family Deal Pact &amp; Split Lawyers
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
@@ -438,10 +438,10 @@ export default function FamilySettlementDeedLawyerPage() {
                 <strong className="text-[#111827]">
                   Kale v. Deputy Director of Consolidation (1976 SC)
                 </strong>
-                , families can sign a settlement deed. This deed settles property
-                disputes peacefully. Our High Court advocates draft clean
-                agreements, help with stamp duty, and handle Sub-Registrar
-                registration.
+                , families can sign a deal deed. This deed settles asset
+                fights peacefully. Our High Court lawyers draft clean
+                agreements, help with stamp duty, and handle SRO
+                filing.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -449,7 +449,7 @@ export default function FamilySettlementDeedLawyerPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Consult Property Advocate</span>
+                  <span>Consult Asset Lawyer</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <a
@@ -471,11 +471,11 @@ export default function FamilySettlementDeedLawyerPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>SRO Sub-Registrar Support</span>
+                  <span>SRO SRO Support</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
               </div>
             </div>
@@ -483,10 +483,10 @@ export default function FamilySettlementDeedLawyerPage() {
             {/* Right Summary Box */}
             <div className="lg:col-span-5 bg-white rounded-[28px] border border-[#172228]/10 p-6 sm:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
               <div className="text-xs font-bold uppercase tracking-[0.16em] text-[#C65378] mb-3">
-                Why DIY Settlement Templates Fail
+                Why DIY Deal Templates Fail
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
-                The Section 17 Registration Act Bottleneck
+                The Section 17 Filing Act Bottleneck
               </h2>
               <ul className="space-y-3.5 text-[14px] leading-[1.6] text-[#374151] mb-6">
                 <li className="flex items-start gap-2.5">
@@ -494,7 +494,7 @@ export default function FamilySettlementDeedLawyerPage() {
                   <span>
                     <strong>Operative Words Trigger 5% Stamp Duty:</strong> Online
                     drafts use words that transfer land on the spot. This triggers
-                    mandatory registration under Section 17 of the Registration
+                    needed filing under Section 17 of the Filing
                     Act and high stamp duty.
                   </span>
                 </li>
@@ -519,7 +519,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 href="/templates/family-settlement-agreement-format-india"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                <span>Explore Family Settlement Deed Formats &amp; Rules</span>
+                <span>Explore Family Deal Deed Formats &amp; Rules</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -538,15 +538,15 @@ export default function FamilySettlementDeedLawyerPage() {
           <div className="max-w-3xl mb-8">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileCheck className="w-4 h-4" />
-              <span>Visual Legal Documentation</span>
+              <span>Visual Legal Papers</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Visual Legal Framework: Settlement Deed vs Partition
+              Visual Legal Framework: Deal Deed vs Split
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How an ironclad Family Settlement Deed drafted by High Court
-              advocates secures your family title, complies with Sub-Registrar
-              norms, and prevents civil litigation:
+              How an ironclad Family Deal Deed drafted by High Court
+              lawyers secures your family title, complies with SRO
+              norms, and prevents civil court fights:
             </p>
           </div>
 
@@ -561,8 +561,8 @@ export default function FamilySettlementDeedLawyerPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Overview of Family Settlement Deed
-                drafting under the Kale precedent and Registration Act, 1908.
+                <strong>Figure 1:</strong> Overview of Family Deal Deed
+                drafting under the Kale precedent and Filing Act, 1908.
               </span>
               <span>
                 Source: WillDrafting Editorial Team &amp; AMA Legal Solutions
@@ -578,16 +578,16 @@ export default function FamilySettlementDeedLawyerPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Landmark className="w-4 h-4" />
-              <span>Statutory Comparison Table</span>
+              <span>Legal Comparison Table</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Deed vs Memorandum: Key Legal Differences
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the wrong legal instrument leads to heavy stamp duty
-              penalties or future court disputes. Compare how Indian law treats
-              an Oral Settlement Memorandum, a Registered Partition Deed, and a
-              Court Partition Suit:
+              penalties or future court fights. Compare how Indian law treats
+              an Oral Deal Memorandum, a Filed Split Deed, and a
+              Court Split Suit:
             </p>
           </div>
 
@@ -601,10 +601,10 @@ export default function FamilySettlementDeedLawyerPage() {
                       Oral Memorandum (Kale Rule)
                     </th>
                     <th className="py-4 px-6 w-[26%]">
-                      Registered Partition Deed
+                      Filed Split Deed
                     </th>
                     <th className="py-4 px-6 w-[26%]">
-                      Civil Partition Suit (Court)
+                      Civil Split Suit (Court)
                     </th>
                   </tr>
                 </thead>
@@ -641,13 +641,13 @@ export default function FamilySettlementDeedLawyerPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>SRO Execution Protocol</span>
+              <span>SRO Signing Protocol</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Statutory 4-Step Family Settlement Roadmap
+              Legal 4-Step Family Deal Roadmap
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Our High Court advocates handle the complete settlement lifecycle.
+              Our High Court lawyers handle the complete deal lifecycle.
               Follow this structured 4-step path to divide family assets
               peacefully:
             </p>
@@ -663,17 +663,17 @@ export default function FamilySettlementDeedLawyerPage() {
               {
                 step: "02",
                 title: "Bespoke Advocate Drafting",
-                desc: "Our advocates draft the deed with past-tense clauses (for oral memos) or detailed schedules showing floor boundaries and shared access.",
+                desc: "Our lawyers draft the deed with past-tense clauses (for oral memos) or detailed schedules showing floor boundaries and shared access.",
               },
               {
                 step: "03",
                 title: "Consensus & Owelty Advisory",
-                desc: "We help value properties fairly. We record owelty cash payments through banks so no one faces capital gains tax issues later.",
+                desc: "We help value assets fairly. We record owelty cash payments through banks so no one faces capital gains tax issues later.",
               },
               {
                 step: "04",
                 title: "SRO Registration or Mutation",
-                desc: "We book registry slots at the Sub-Registrar office for biometric signing. We also submit registered deeds to update local property tax records.",
+                desc: "We book registry slots at the SRO office for biometric signing. We also submit filed deeds to update local asset tax records.",
               },
             ].map((item) => (
               <div
@@ -710,8 +710,8 @@ export default function FamilySettlementDeedLawyerPage() {
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               In Kale v. Deputy Director of Consolidation, the Supreme Court ruled
-              that word choice decides registration. Present-tense words create
-              new rights and require registration under Section 17. A valid memo
+              that word choice decides filing. Present-tense words create
+              new rights and require filing under Section 17. A valid memo
               must use strict past-tense words:
             </p>
           </div>
@@ -729,18 +729,18 @@ export default function FamilySettlementDeedLawyerPage() {
                 <blockquote className="font-mono text-[13px] sm:text-[13.5px] leading-[1.7] text-white/90 bg-white/5 p-4 rounded-xl border border-white/10 mb-4">
                   &ldquo;WHEREAS the Parties hereto had, by mutual consensus and
                   oral arrangement entered into on [Past Date], partitioned and
-                  divided their ancestral properties among themselves, and took
+                  divided their family assets among themselves, and took
                   separate physical possession of their respective demarcated
-                  portions; AND WHEREAS this Memorandum of Family Settlement
+                  portions; AND WHEREAS this Memorandum of Family Deal
                   does not create, declare, assign, or extinguish any right,
-                  title, or interest in praesenti, but is merely executed to
-                  formally record the past oral settlement already acted upon,
+                  title, or interest in praesenti, but is merely signed to
+                  formally record the past oral deal already acted upon,
                   for the record and memory of the parties.&rdquo;
                 </blockquote>
                 <p className="text-xs text-white/60 leading-relaxed">
                   * Note: If any party has not taken prior physical possession,
-                  or if immediate municipal tax transfer requires a registered
-                  conveyance, our advocates draft an operative partition deed
+                  or if immediate city tax transfer requires a filed
+                  conveyance, our lawyers draft an operative split deed
                   instead.
                 </p>
               </div>
@@ -807,12 +807,12 @@ export default function FamilySettlementDeedLawyerPage() {
               </div>
               <div>
                 <h4 className="text-sm font-semibold text-[#111827] mb-1">
-                  Need to Calculate Coparcenary Shares Before Drafting?
+                  Need to Calculate Joint Shares Before Drafting?
                 </h4>
                 <p className="text-xs sm:text-[13px] text-[#55636D]">
-                  Use our free statutory calculator to evaluate ancestral HUF
+                  Use our free legal tool to evaluate family HUF
                   shares across Class-I legal heirs under Section 6 of the Hindu
-                  Succession Act.
+                  Estate Act.
                 </p>
               </div>
             </div>
@@ -837,7 +837,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 <span>Hindu Succession Act Compliance</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
-                Ancestral Property &amp; Coparcenary Rights
+                Family Asset &amp; Joint Rights
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Under Section 6 of the Hindu Succession Act, 1956, coparceners
@@ -845,14 +845,14 @@ export default function FamilySettlementDeedLawyerPage() {
                 <strong className="text-[#111827]">
                   Vineeta Sharma v. Rakesh Sharma (2020 SC)
                 </strong>
-                , the Supreme Court held that daughters have equal coparcenary
+                , the Supreme Court held that daughters have equal joint
                 rights just like sons.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
                 Leaving out a married daughter or sister breaks the law. An
-                excluded heir can challenge the partition in court within 12
+                excluded heir can fight the split in court within 12
                 years under Article 110 of the Limitation Act, 1963. Our High
-                Court advocates make sure all heirs sign the settlement. This
+                Court lawyers make sure all heirs sign the deal. This
                 protects your family from future lawsuits.
               </p>
             </div>
@@ -861,7 +861,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-sm font-semibold px-6 py-4 transition-colors"
               >
-                <span>Book Advocate Settlement Consultation</span>
+                <span>Book Lawyer Deal Talk</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
               <Link
@@ -881,7 +881,7 @@ export default function FamilySettlementDeedLawyerPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Settlement Law FAQs</span>
+              <span>Deal Law FAQs</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Family Settlements
@@ -916,10 +916,10 @@ export default function FamilySettlementDeedLawyerPage() {
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
-                Related Indian Succession &amp; Property Resources
+                Related Indian Succession &amp; Asset Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore statutory templates, partition formats, and related
+                Explore legal templates, split formats, and related
                 legal services:
               </p>
             </div>
@@ -928,7 +928,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 href="/services/relinquishment-deed"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Relinquishment Deed (Haq Tyag) Services</span>
+                <span>Release Deed (Haq Tyag) Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -942,7 +942,7 @@ export default function FamilySettlementDeedLawyerPage() {
                 href="/templates/partition-deed-format-between-family-members"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Family Partition Deed Format</span>
+                <span>Family Split Deed Format</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -955,7 +955,7 @@ export default function FamilySettlementDeedLawyerPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -965,17 +965,17 @@ export default function FamilySettlementDeedLawyerPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This legal guide is prepared under the Registration Act, 1908, the
+              This legal guide is prepared under the Filing Act, 1908, the
               Indian Stamp Act, 1899, the Hindu Succession Act, 1956, and the
-              Code of Civil Procedure, 1908. Judicial precedents cited include
+              Code of Civil Step, 1908. Judicial precedents cited include
               Kale v. Deputy Director of Consolidation (AIR 1976 SC 807) and
               Vineeta Sharma v. Rakesh Sharma (2020 SC). This content provides
-              statutory education and does not replace individualized advocate
+              legal education and does not replace individualized lawyer
               counsel.
             </p>
           </div>

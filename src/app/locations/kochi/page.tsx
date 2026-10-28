@@ -146,7 +146,7 @@ export default function KochiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kochi: Online Will & NRI Estate Guide",
         description:
-          "Draft a legally binding Will in Kochi. Comprehensive support for NRI property owners, Christian inheritance law, and Kerala SRO registration.",
+          "Draft a legally binding Will in Kochi. Full support for NRI asset owners, Christian estate law, and Kerala SRO filing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function KochiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kochi - Estate Planning & Kerala SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Gulf NRI estate planning, and Sub-Registrar Office e-registration support across Ernakulam.",
+          "Professional Will drafting, lawyer check, Gulf NRI estate planning, and SRO office e-filing support across Ernakulam.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -264,14 +264,14 @@ export default function KochiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Kochi Ernakulam",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Kerala using PEARLS portal.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Kerala using PEARLS portal.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets, Thandapper Records & Beneficiaries",
-            text: "List your Kochi real estate with Village Office survey numbers, Thandapper accounts, bank accounts, Gulf NRI investments, and name your beneficiaries.",
+            text: "List your Kochi real estate with Village Office survey numbers, Thandapper accounts, bank accounts, Gulf NRI investments, and name your heirs.",
           },
           {
             "@type": "HowToStep",
@@ -283,19 +283,19 @@ export default function KochiLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Kerala SRO Appointment on PEARLS Portal",
-            text: "Book an e-token on the Kerala Registration Department PEARLS portal (keralaregistration.gov.in) for your Ernakulam Sub-Registrar Office and pay the nominal ₹1,000 fee.",
+            text: "Book an e-token on the Kerala Filing Office PEARLS portal (keralaregistration.gov.in) for your Ernakulam SRO office and pay the nominal ₹1,000 fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

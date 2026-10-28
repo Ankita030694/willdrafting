@@ -142,7 +142,7 @@ export default function MeerutLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Meerut: Online Will Registration Guide",
         description:
-          "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer.",
+          "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS filing help, and MDA home asset transfer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MeerutLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Meerut - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP e-Challan appointment booking, and doorstep execution support across Meerut.",
+          "Professional Will drafting, lawyer check, UP IGRSUP e-Challan appointment booking, and doorstep signing support across Meerut.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -255,38 +255,38 @@ export default function MeerutLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Meerut",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Meerut.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Meerut.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Meerut real estate including MDA plots, residential bungalows, sports manufacturing units, Mawana farmland, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Meerut real estate including MDA plots, home bungalows, sports manufacturing units, Mawana farmland, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, minor guardianship, and explicit revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, minor child care, and explicit revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two independent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book UP IGRSUP e-Appointment Slot",
-            text: "Schedule your registration appointment on the Stamps and Registration UP portal (igrsup.gov.in) for your relevant Meerut SRO and remit the flat ₹100 registration fee via e-Challan.",
+            text: "Schedule your filing appointment on the Stamps and Filing UP portal (igrsup.gov.in) for your relevant Meerut SRO and remit the flat ₹100 filing fee via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Meerut SRO",
-            text: "Visit the Sub-Registrar office at Kutchery Collectorate, Mawana, or Sardhana with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office at Kutchery Collectorate, Mawana, or Sardhana with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

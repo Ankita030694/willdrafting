@@ -87,7 +87,7 @@ export default function WillChecklistPage() {
         url: canonicalUrl,
         name: "Documents Required for Will in India | WillDrafting",
         description:
-          "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
+          "Checklist of papers required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -127,7 +127,7 @@ export default function WillChecklistPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive checklist tool for Indian estate planning covering 15 asset classes, executor and guardian appointments, Section 63 witness.",
+          "Free checklist tool for Indian estate planning covering 15 asset classes, executor and guardian appointments, Section 63 witness.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -157,7 +157,7 @@ export default function WillChecklistPage() {
             name: "What documents are legally mandatory to write a Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the Indian Succession Act, 1925, no specific document is legally mandatory to create a valid Will. You can write your Will on plain white A4 paper. However, to make the Will enforceable and dispute-free during probate and municipal mutation, you must compile your Aadhaar or PAN card, registered title deeds for real estate, bank passbook copies, Demat Client Master Reports, and identification proofs for two independent witnesses.",
+              text: "Under the Indian Succession Act, 1925, no specific paper is legally needed to create a valid Will. You can write your Will on plain white A4 paper. However, to make the Will enforceable and fight-free during probate and city name change, you must compile your Aadhaar or PAN card, filed title deeds for real estate, bank passbook copies, Demat Client Master Reports, and ID proofs for two independent witnesses.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function WillChecklistPage() {
             name: "Do I need original property title deeds while drafting a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. You do not need to attach or surrender original title deeds when making a Will. Clear photocopies or digital PDF scans are sufficient to extract essential legal details, including the registered deed number, survey number, Khata/Patta details, exact carpet area, and four-side boundary demarcations.",
+              text: "No. You do not need to attach or surrender original title deeds when making a Will. Clear photocopies or digital PDF scans are sufficient to extract essential legal details, including the filed deed number, survey number, Khata/Patta details, exact carpet area, and four-side boundary demarcations.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function WillChecklistPage() {
             name: "Is a doctor medical fitness certificate compulsory for making a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "While Section 59 of the Indian Succession Act does not explicitly mandate a medical certificate, obtaining one from a registered MBBS or MD practitioner is strongly recommended for senior citizens aged 60 and above. The doctor attests that the testator is of sound mind, memory, and disposing understanding, effectively eliminating future allegations of dementia or coercion.",
+              text: "While Section 59 of the Indian Succession Act does not explicitly mandate a medical paper, obtaining one from a filed MBBS or MD practitioner is strongly recommended for senior citizens aged 60 and above. The doctor attests that the Will maker is of sound mind, memory, and disposing understanding, effectively eliminating future allegations of dementia or coercion.",
             },
           },
           {
@@ -181,7 +181,7 @@ export default function WillChecklistPage() {
             name: "What documents are required from attesting witnesses?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Each witness must provide their full legal name, father's or spouse's name, permanent residential address, and a valid government identity number such as Aadhaar, PAN, Voter ID, or Passport. Under Section 67 of the Indian Succession Act, neither witness nor their spouses may be beneficiaries under the Will.",
+              text: "Each witness must provide their full legal name, father's or spouse's name, permanent home address, and a valid government identity number such as Aadhaar, PAN, Voter ID, or Passport. Under Section 67 of the Indian Succession Act, neither witness nor their spouses may be heirs under the Will.",
             },
           },
           {
@@ -213,7 +213,7 @@ export default function WillChecklistPage() {
             name: "What documents do I need to register a Will at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Will registration is optional under Section 18(e) of the Registration Act, 1908. If you choose to register, you need two physical printouts of the Will, original PAN and Aadhaar cards of the testator, original identity proofs of two witnesses, two passport-sized photographs of each person, and a doctor's medical fitness certificate.",
+              text: "Will filing is a choice under Section 18(e) of the Filing Act, 1908. If you choose to register, you need two physical printouts of the Will, original PAN and Aadhaar cards of the Will maker, original identity proofs of two witnesses, two passport-sized photographs of each person, and a doctor's medical fitness paper.",
             },
           },
           {
@@ -221,7 +221,7 @@ export default function WillChecklistPage() {
             name: "How should digital assets, cryptocurrency, and email accounts be listed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "List the account platform name, username or registered email ID, and public crypto wallet addresses. Never write confidential private keys, master passwords, or recovery seed phrases inside the text of the Will itself, as Wills become public upon probate or registration. Instead, refer to a separate private digital vault entrusted to your digital executor.",
+              text: "List the account platform name, username or filed email ID, and public crypto wallet addresses. Never write confidential private keys, master passwords, or recovery seed phrases inside the text of the Will itself, as Wills become public upon probate or filing. Instead, refer to a separate private digital vault entrusted to your digital executor.",
             },
           },
           {
@@ -229,7 +229,7 @@ export default function WillChecklistPage() {
             name: "What is a residuary clause and why is it essential in a Will checklist?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 102 and Section 103 of the Indian Succession Act, 1925, a residuary clause disposes of any property not specifically mentioned in the Will or acquired after its execution. Including a residuary clause ensures that forgotten bank accounts or future investments do not trigger partial intestacy or family disputes.",
+              text: "Under Section 102 and Section 103 of the Indian Succession Act, 1925, a residuary clause disposes of any asset not mainly mentioned in the Will or acquired after its signing. Including a residuary clause ensures that forgotten bank accounts or future investments do not trigger partial intestacy or family fights.",
             },
           },
         ],

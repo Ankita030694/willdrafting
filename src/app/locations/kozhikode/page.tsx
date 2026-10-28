@@ -142,7 +142,7 @@ export default function KozhikodeLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kozhikode: Online Will & NRI Guide",
         description:
-          "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate.",
+          "Secure your family assets in Kozhikode. Full guidance for Gulf NRI asset owners, PEARLS portal filing, and lawful estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function KozhikodeLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kozhikode - Legal Estate Planning & PEARLS Registration",
         description:
-          "Professional Will drafting, advocate verification, Kerala PEARLS registration, Gulf NRI asset planning, and doorstep execution support across.",
+          "Professional Will drafting, lawyer check, Kerala PEARLS filing, Gulf NRI asset planning, and doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -271,13 +271,13 @@ export default function KozhikodeLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets, Gulf Portfolios & Heirs",
-            text: "List your Kozhikode properties including Corporation land, flats, commercial trading assets, Gulf NRI bank accounts, and demat holdings. Name beneficiaries and a trusted executor.",
+            text: "List your Kozhikode assets including City Board land, flats, shop trading assets, Gulf NRI bank accounts, and demat holdings. Name heirs and a trusted executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Will Clauses",
-            text: "Draft your Will using our online legal platform or consult with a senior Kerala estate advocate to craft specific bequests, survivorship clauses, and cross-border provisions.",
+            text: "Draft your Will using our online legal platform or consult with a senior Kerala estate lawyer to craft specific bequests, survivorship clauses, and cross-border rules.",
           },
           {
             "@type": "HowToStep",
@@ -289,13 +289,13 @@ export default function KozhikodeLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book PEARLS Token Online",
-            text: "Schedule an online registration token on the Kerala Registration PEARLS portal (keralaregistration.gov.in) for your local Kozhikode SRO and pay the nominal ₹1,000 fee via e-Challan.",
+            text: "Schedule an online filing token on the Kerala Filing PEARLS portal (keralaregistration.gov.in) for your local Kozhikode SRO and pay the nominal ₹1,000 fee via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric SRO Registration",
-            text: "Visit the designated Kozhikode Sub-Registrar Office with your two witnesses and original Aadhaar cards for biometric thumbprints, digital photos, and official Book III archiving.",
+            text: "Visit the designated Kozhikode SRO office with your two witnesses and original Aadhaar cards for biometric thumbprints, digital photos, and official Book III archiving.",
           },
         ],
       },

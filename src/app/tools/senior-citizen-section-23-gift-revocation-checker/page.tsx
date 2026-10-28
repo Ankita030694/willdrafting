@@ -89,7 +89,7 @@ export default function SeniorCitizenGiftRevocationPage() {
         url: canonicalUrl,
         name: "Cancel Gift Deed Eligibility Checker | WillDrafting",
         description:
-          "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme.",
+          "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess legal conditions and Supreme.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function SeniorCitizenGiftRevocationPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic tool evaluating the 4 statutory conditions under Section 23 of the Maintenance and Welfare of Parents and Senior.",
+          "Free diagnostic tool evaluating the 4 legal conditions under Section 23 of the Maintenance and Welfare of Parents and Senior.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -146,7 +146,7 @@ export default function SeniorCitizenGiftRevocationPage() {
             name: "Can parents cancel a registered gift deed given to their child in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, an elderly parent who transferred property by gift deed can petition the Maintenance Tribunal to declare the transfer void if the child fails or refuses to provide basic amenities and physical needs.",
+              text: "Yes. Under Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, an elderly parent who transferred asset by gift deed can petition the Maintenance Tribunal to declare the transfer void if the child fails or refuses to provide basic amenities and physical needs.",
             },
           },
           {
@@ -154,7 +154,7 @@ export default function SeniorCitizenGiftRevocationPage() {
             name: "What are the 4 mandatory conditions required under Section 23(1)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The 4 statutory conditions are: (1) The transferor was a Senior Citizen (aged 60 or above) on the date of the transfer, (2) The transfer occurred after the commencement of the Act (post-December 2007), (3) The transfer was subject to the condition (express or contemporaneous) that the child provide basic amenities and physical needs, and (4) The child neglected, refused, or failed to provide such care.",
+              text: "The 4 legal conditions are: (1) The transferor was a Senior Citizen (aged 60 or above) on the date of the transfer, (2) The transfer occurred after the commencement of the Act (post-December 2007), (3) The transfer was subject to the condition (express or contemporaneous) that the child provide basic amenities and physical needs, and (4) The child neglected, refused, or failed to provide such care.",
             },
           },
           {
@@ -162,7 +162,7 @@ export default function SeniorCitizenGiftRevocationPage() {
             name: "What did the Supreme Court decide in Urmila Dixit v. Sunil Sharan Dixit (2025)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20), the Supreme Court ruled that the Senior Citizens Act is beneficial social legislation that must be interpreted purposively. The Court held that even if the registered gift deed itself lacks an express maintenance clause, contemporaneous documents such as a promissory note (vachan patra) or undertaking establish the conditional transfer under Section 23.",
+              text: "In Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20), the Supreme Court ruled that the Senior Citizens Act is beneficial social legislation that must be interpreted purposively. The Court held that even if the filed gift deed itself lacks an express maintenance clause, contemporaneous papers such as a promissory note (vachan patra) or undertaking establish the conditional transfer under Section 23.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function SeniorCitizenGiftRevocationPage() {
             name: "How does the Sudesh Chhikara ruling affect gift deed cancellation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Sudesh Chhikara v. Ramti Devi (2022), the Supreme Court emphasized that both elements of Section 23 must be present: an obligation to maintain the parent and a subsequent failure to do so. A completely unconditional gift deed executed out of pure affection without any written promise of care cannot be cancelled arbitrarily by the Tribunal without civil court proceedings.",
+              text: "In Sudesh Chhikara v. Ramti Devi (2022), the Supreme Court emphasized that both elements of Section 23 must be present: an obligation to maintain the parent and a subsequent failure to do so. A completely unconditional gift deed signed out of pure affection without any written promise of care cannot be cancelled arbitrarily by the Tribunal without civil court proceedings.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function SeniorCitizenGiftRevocationPage() {
             name: "Why is a Will legally safer for parents than executing a lifetime Gift Deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Will is 100% revocable during your entire lifetime. You retain absolute ownership, title, and rental income until your demise. You can alter or revoke your Will at any time without asking for your children's consent. Conversely, a gift deed immediately strips you of legal ownership, leaving you vulnerable to abandonment.",
+              text: "A Will is 100% revocable during your entire lifetime. You retain absolute ownership, title, and rental income until your demise. You can alter or revoke your Will at any time without asking for your children's consent. Conversely, a gift deed right away strips you of legal ownership, leaving you vulnerable to abandonment.",
             },
           },
         ],

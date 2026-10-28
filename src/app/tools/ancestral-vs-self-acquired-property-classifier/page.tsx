@@ -91,7 +91,7 @@ export default function AncestralPropertyClassifierPage() {
         url: canonicalUrl,
         name: "Ancestral vs Self-Acquired Property Checker | WillDrafting",
         description:
-          "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.",
+          "Check if asset is family or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -131,7 +131,7 @@ export default function AncestralPropertyClassifierPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic tool to classify real estate as ancestral or self-acquired under Hindu Succession Act 1956, tracing provenance across.",
+          "Free diagnostic tool to classify real estate as family or self-acquired under Hindu Succession Act 1956, tracing provenance across.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -148,7 +148,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "Is property inherited from my father ancestral or self-acquired?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the landmark Supreme Court ruling in Commissioner of Wealth Tax v. Chander Sen (1986), property inherited by a son from his father who died intestate after 1956 devolves under Section 8 of the Hindu Succession Act. In the hands of the son, this property is held as his separate and self-acquired property, not as ancestral coparcenary property. His own children do not acquire any birthright in it.",
+              text: "Under the landmark Supreme Court ruling in Commissioner of Wealth Tax v. Chander Sen (1986), asset inherited by a son from his father who died no-Will after 1956 devolves under Section 8 of the Hindu Succession Act. In the hands of the son, this asset is held as his separate and self-acquired asset, not as family joint asset. His own children do not acquire any birthright in it.",
             },
           },
           {
@@ -156,7 +156,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "What makes a property legally ancestral in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "To qualify as ancestral property under Hindu law, four conditions must be met: (1) It must have been inherited through four generations of male lineage (paternal great-grandfather, grandfather, father, to current owner), (2) It must have remained completely undivided without any partition deed, (3) It must not have passed under a Will, gift deed, or Section 8 intestate succession, and (4) It must not have been acquired with individual separate income.",
+              text: "To qualify as family asset under Hindu law, four conditions must be met: (1) It must have been inherited through four generations of male lineage (paternal great-grandfather, grandfather, father, to current owner), (2) It must have remained completely undivided without any split deed, (3) It must not have passed under a Will, gift deed, or Section 8 no-Will estate, and (4) It must not have been acquired with single separate income.",
             },
           },
           {
@@ -164,7 +164,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "Can my father sell or Will away property he inherited from his father?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. If your father inherited the property under Section 8 of the Hindu Succession Act after 1956 (or via his father's registered Will or Gift Deed), it is his self-acquired property. He holds 100% testamentary and alienation freedom. He can sell it, gift it, or bequeath 100% of it to anyone through a Will without seeking consent from his children.",
+              text: "Yes. If your father inherited the asset under Section 8 of the Hindu Succession Act after 1956 (or via his father's filed Will or Gift Deed), it is his self-acquired asset. He holds 100% Will and alienation freedom. He can sell it, gift it, or bequeath 100% of it to anyone through a Will without seeking consent from his children.",
             },
           },
           {
@@ -172,7 +172,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "What happens to ancestral property after a partition deed is registered?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Once a valid partition takes place among coparceners through a registered partition deed or court decree, the joint family character is severed. Under the Supreme Court ruling in Uttam v. Saubhag Singh (2016), the divided share received by an individual becomes his separate property vis-a-vis his collaterals. Any child born after the succession cannot claim a coparcenary share in the divided property.",
+              text: "Once a valid split takes place among coparceners through a filed split deed or court decree, the joint family character is severed. Under the Supreme Court ruling in Uttam v. Saubhag Singh (2016), the divided share received by an single becomes his separate asset vis-a-vis his collaterals. Any child born after the estate cannot claim a joint share in the divided asset.",
             },
           },
           {
@@ -188,7 +188,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "Can a grandson claim a share in his grandfather's self-acquired property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A grandchild has zero birthright in their grandfather's self-acquired property during the grandfather's lifetime. The grandfather can sell, mortgage, gift, or execute a Will bequeathing the property to anyone. Even if the father passes away, the grandchild cannot demand partition of the grandfather's self-acquired assets.",
+              text: "No. A grandchild has zero birthright in their grandfather's self-acquired asset during the grandfather's lifetime. The grandfather can sell, mortgage, gift, or execute a Will bequeathing the asset to anyone. Even if the father passes away, the grandchild cannot demand split of the grandfather's self-acquired assets.",
             },
           },
           {
@@ -196,7 +196,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "Is property received via a Gift Deed or Will considered ancestral?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under the Supreme Court judgment in C.N. Arunachala Mudaliar v. C.A. Muruganatha Mudaliar (1953), property received by an heir through a Gift Deed or a Will from a parent is treated as self-acquired property, unless the grantor expressly stipulated in the document that the property is meant for the benefit of the family coparcenary.",
+              text: "No. Under the Supreme Court judgment in C.N. Arunachala Mudaliar v. C.A. Muruganatha Mudaliar (1953), asset received by an heir through a Gift Deed or a Will from a parent is treated as self-acquired asset, unless the grantor expressly stipulated in the paper that the asset is meant for the benefit of the family joint.",
             },
           },
           {
@@ -204,7 +204,7 @@ export default function AncestralPropertyClassifierPage() {
             name: "Can a coparcener make a Will of their share in ancestral property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 30 of the Hindu Succession Act, 1956, any Hindu coparcener has the legal right to dispose of their undivided coparcenary interest (their specific mathematical share) by executing a Will. However, they cannot Will away the entire ancestral estate or the shares belonging to other coparceners.",
+              text: "Yes. Under Section 30 of the Hindu Succession Act, 1956, any Hindu coparcener has the legal right to dispose of their undivided joint interest (their specific mathematical share) by signing a Will. However, they cannot Will away the entire family estate or the shares belonging to other coparceners.",
             },
           },
         ],

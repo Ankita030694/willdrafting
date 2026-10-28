@@ -101,7 +101,7 @@ export default function WillFormatPunjabiPage() {
         url: canonicalUrl,
         name: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting",
         description:
-          "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO.",
+          "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with farm land clauses and Punjab SRO.",
         inLanguage: "pa-IN",
         primaryImageOfPage: {
           "@type": "ImageObject",
@@ -147,7 +147,7 @@ export default function WillFormatPunjabiPage() {
         name: "ਕਾਨੂੰਨੀ ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (Punjabi Legal Will Format)",
         url: canonicalUrl,
         description:
-          "Statutory Punjabi Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment.",
+          "Legal Punjabi Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -166,7 +166,7 @@ export default function WillFormatPunjabiPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: ਕਾਨੂੰਨੀ ਵਸੀਅਤ ਨਮੂਨਾ ਅਤੇ ਨਿਯਮ",
         description:
-          "Complete legal guide, printable Unicode Gurmukhi Punjabi Vasiyatnama format, agricultural land schedule (Khewat, Khatauni, Khasra), NRI.",
+          "Complete legal guide, printable Unicode Gurmukhi Punjabi Vasiyatnama format, farm land schedule (Khewat, Khatauni, Khasra), NRI.",
         image: imageUrl,
         inLanguage: "pa-IN",
         mainEntityOfPage: canonicalUrl,
@@ -197,7 +197,7 @@ export default function WillFormatPunjabiPage() {
             name: "ਕੀ ਪੰਜਾਬੀ ਵਿੱਚ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ ਕਾਨੂੰਨੀ ਤੌਰ ਤੇ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਹੈ? (Is a Punjabi Will legally valid?)",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "ਹਾਂ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਾਨੂੰਨੀ ਹੈ। ਭਾਰਤੀ ਉੱਤਰਾਧਿਕਾਰ ਕਾਨੂੰਨ, 1925 (Indian Succession Act, 1925) ਦੀ ਧਾਰਾ 63 ਅਤੇ 74 ਅਨੁਸਾਰ ਵਸੀਅਤ ਕਿਸੇ ਵੀ ਭਾਸ਼ਾ ਵਿੱਚ ਲਿਖੀ ਜਾ ਸਕਦੀ ਹੈ। ਗੁਰਮੁਖੀ ਪੰਜਾਬੀ ਵਿੱਚ ਸਾਦੇ ਕਾਗਜ਼ ਤੇ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ, ਜੇਕਰ ਉਸ ਤੇ ਵਸੀਅਤ-ਕਰਤਾ ਦੇ ਦਸਤਖਤ ਅਤੇ ਦੋ ਬਾਲਗ ਗਵਾਹਾਂ ਦੀ ਹਾਜ਼ਰੀ ਹੋਵੇ, ਤਾਂ ਭਾਰਤੀ ਅਦਾਲਤਾਂ ਅਤੇ ਮਾਲ ਵਿਭਾਗ (Revenue Department) ਵਿੱਚ 100% ਜਾਇਜ਼ ਹੈ।",
+              text: "ਹਾਂ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਾਨੂੰਨੀ ਹੈ। ਭਾਰਤੀ ਉੱਤਰਾਧਿਕਾਰ ਕਾਨੂੰਨ, 1925 (Indian Succession Act, 1925) ਦੀ ਧਾਰਾ 63 ਅਤੇ 74 ਅਨੁਸਾਰ ਵਸੀਅਤ ਕਿਸੇ ਵੀ ਭਾਸ਼ਾ ਵਿੱਚ ਲਿਖੀ ਜਾ ਸਕਦੀ ਹੈ। ਗੁਰਮੁਖੀ ਪੰਜਾਬੀ ਵਿੱਚ ਸਾਦੇ ਕਾਗਜ਼ ਤੇ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ, ਜੇਕਰ ਉਸ ਤੇ ਵਸੀਅਤ-ਕਰਤਾ ਦੇ ਦਸਤਖਤ ਅਤੇ ਦੋ ਬਾਲਗ ਗਵਾਹਾਂ ਦੀ ਹਾਜ਼ਰੀ ਹੋਵੇ, ਤਾਂ ਭਾਰਤੀ ਅਦਾਲਤਾਂ ਅਤੇ ਮਾਲ ਵਿਭਾਗ (Revenue Office) ਵਿੱਚ 100% ਜਾਇਜ਼ ਹੈ।",
             },
           },
           {
@@ -253,7 +253,7 @@ export default function WillFormatPunjabiPage() {
             name: "ਕੀ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣੀ ਜ਼ਰੂਰੀ ਹੈ?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਕਟ, 1908 ਦੀ ਧਾਰਾ 18(e) ਤਹਿਤ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣਾ ਮਰਜ਼ੀ ਅਨੁਸਾਰ (Optional) ਹੈ। ਬਿਨਾਂ ਰਜਿਸਟਰੀ ਵਾਲੀ ਵਸੀਅਤ ਵੀ ਜਾਇਜ਼ ਹੁੰਦੀ ਹੈ। ਪ੍ਰੰਤੂ ਪੰਜਾਬ ਵਿੱਚ NGDRS ਪੋਰਟਲ ਰਾਹੀਂ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਰਜਿਸਟਰੀ ਕਰਵਾਉਣ ਨਾਲ ਭਵਿੱਖ ਵਿੱਚ ਜਾਅਲਸਾਜ਼ੀ ਜਾਂ ਜ਼ਬਰਦਸਤੀ ਦੇ ਝੂਠੇ ਦੋਸ਼ਾਂ ਤੋਂ ਬਚਾਅ ਹੁੰਦਾ ਹੈ।",
+              text: "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਕਟ, 1908 ਦੀ ਧਾਰਾ 18(e) ਤਹਿਤ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣਾ ਮਰਜ਼ੀ ਅਨੁਸਾਰ (A Choice) ਹੈ। ਬਿਨਾਂ ਰਜਿਸਟਰੀ ਵਾਲੀ ਵਸੀਅਤ ਵੀ ਜਾਇਜ਼ ਹੁੰਦੀ ਹੈ। ਪ੍ਰੰਤੂ ਪੰਜਾਬ ਵਿੱਚ NGDRS ਪੋਰਟਲ ਰਾਹੀਂ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਰਜਿਸਟਰੀ ਕਰਵਾਉਣ ਨਾਲ ਭਵਿੱਖ ਵਿੱਚ ਜਾਅਲਸਾਜ਼ੀ ਜਾਂ ਜ਼ਬਰਦਸਤੀ ਦੇ ਝੂਠੇ ਦੋਸ਼ਾਂ ਤੋਂ ਬਚਾਅ ਹੁੰਦਾ ਹੈ।",
             },
           },
           {

@@ -90,7 +90,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
         url: canonicalUrl,
         name: "Can My Will Be Challenged in Court India | WillDrafting",
         description:
-          "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk.",
+          "Use our free free tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate fight risk.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive judicial risk assessment tool quantifying testamentary dispute probability under Indian Succession Act ss. 59, 61, 63 and landmark.",
+          "Free judicial risk assessment tool quantifying Will fight probability under Indian Succession Act ss. 59, 61, 63 and landmark.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "Can my Will be challenged in court in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Any legal heir or interested person who would inherit under intestate succession can challenge a Will by filing a caveat or lawsuit in civil court. Common grounds include lack of sound mind under Section 59, undue influence or coercion under Section 61, suspicious circumstances under Kavita Kanwar (2020 SC), or failure to comply with two-witness attestation under Section 63.",
+              text: "Yes. Any legal heir or interested person who would inherit under no-Will estate can fight a Will by filing a caveat or lawsuit in civil court. Common grounds include lack of sound mind under Section 59, undue influence or coercion under Section 61, suspicious circumstances under Kavita Kanwar (2020 SC), or failure to comply with two-witness witness signing under Section 63.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "Can I legally disinherit my married daughter or son in my Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. In India, a person has complete testamentary freedom over self-acquired property and can exclude any child or legal heir. However, under the Supreme Court ruling in Shivakumar v. Sharanabasappa (2020), total exclusion of natural heirs is treated as a suspicious circumstance unless the Will explicitly recites the factual, rational reasons for their exclusion.",
+              text: "Yes. In India, a person has complete Will freedom over self-acquired asset and can exclude any child or legal heir. However, under the Supreme Court ruling in Shivakumar v. Sharanabasappa (2020), total exclusion of natural heirs is treated as a suspicious circumstance unless the Will explicitly recites the factual, rational reasons for their exclusion.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "Does registering a Will make it 100% unchallengeable?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. While registration under Book 3 of the Registration Act, 1908 creates a strong statutory presumption of regular execution and authentic signature, it does not bar a challenge. As held by the Supreme Court in Murthy v. C. Saradambal (2022), if the testator lacked cognitive testamentary capacity or was under undue influence, even a registered Will can be declared null and void.",
+              text: "No. While filing under Book 3 of the Filing Act, 1908 creates a strong legal presumption of regular signing and authentic signature, it does not bar a fight. As held by the Supreme Court in Murthy v. C. Saradambal (2022), if the Will maker lacked cognitive Will capacity or was under undue influence, even a filed Will can be declared null and void.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "What happens if a beneficiary was present when the Will was drafted and signed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the landmark Supreme Court decision in Kavita Kanwar v. Pamela Mehta (2020), active participation by a major beneficiary (such as hiring the lawyer, dictating terms, arranging witnesses, or staying in the room during execution) casts a heavy cloud of judicial suspicion. The court will deny probate unless the beneficiary proves beyond doubt that the testator acted with independent free will.",
+              text: "Under the landmark Supreme Court decision in Kavita Kanwar v. Pamela Mehta (2020), active participation by a major heir (such as hiring the lawyer, dictating terms, arranging witnesses, or staying in the room during signing) casts a heavy cloud of judicial suspicion. The court will deny probate unless the heir proves beyond doubt that the Will maker acted with independent free will.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "Can a beneficiary also sign as an attesting witness to the Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Never. Under Section 67 of the Indian Succession Act, 1925, if a person to whom any bequest or legacy is given signs as an attesting witness, the Will remains valid but the bequest to that person (or their spouse) becomes completely void. Always use two independent witnesses who have zero financial interest in the estate.",
+              text: "Never. Under Section 67 of the Indian Succession Act, 1925, if a person to whom any bequest or legacy is given signs as an signing witness, the Will remains valid but the bequest to that person (or their spouse) becomes completely void. Always use two independent witnesses who have zero financial interest in the estate.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "Why is a doctor's certificate essential for testators above age 70?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 59 of the Indian Succession Act, a testator must possess a sound disposing state of mind. When a Will is executed by a senior citizen, disinherited relatives frequently allege dementia, memory loss, or delirium. A contemporaneous certificate from a registered MBBS or MD doctor issued on the day of signing provides vital court proof to defeat such allegations.",
+              text: "Under Section 59 of the Indian Succession Act, a Will maker must possess a sound disposing state of mind. When a Will is signed by a senior citizen, disinherited relatives frequently allege dementia, memory loss, or delirium. A contemporaneous paper from a filed MBBS or MD doctor issued on the day of signing provides vital court proof to defeat such allegations.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
             name: "How can I make my Will unchallengeable in court in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Follow the 5-point fortification protocol: (1) Obtain a same-day doctor certificate of mental capacity, (2) Keep all beneficiaries outside the room during drafting and execution, (3) Include clear recital clauses explaining unequal shares or disinheritance, (4) Register the Will before the Sub-Registrar Office, and (5) Record a continuous video of the testator answering testamentary capacity questions.",
+              text: "Follow the 5-point fortification protocol: (1) Obtain a same-day doctor paper of mental capacity, (2) Keep all heirs outside the room during drafting and signing, (3) Include clear recital clauses explaining unequal shares or leaving out, (4) Register the Will before the SRO office, and (5) Record a continuous video of the Will maker answering Will capacity questions.",
             },
           },
         ],

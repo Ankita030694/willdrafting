@@ -128,7 +128,7 @@ export default function ChristianWillPage() {
         name: "Christian Will Format in India (Indian Succession Act Legal Template)",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted legal Will format for Indian Christians under the Indian Succession Act, 1925. Features Section 67 witness-beneficiary.",
+          "Lawyer-vetted legal Will format for Indian Christians under the Indian Succession Act, 1925. Features Section 67 witness-heir.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {
@@ -149,7 +149,7 @@ export default function ChristianWillPage() {
             name: "Which law governs Wills made by Christians in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Wills made by Indian Christians are governed by Part VI (Testamentary Succession, Sections 57 to 191) of the Indian Succession Act, 1925. In case of intestacy (passing away without a valid Will), Part V (Sections 31 to 49) governs the distribution of assets among legal heirs.",
+              text: "Wills made by Indian Christians are governed by Part VI (Will Estate, Sections 57 to 191) of the Indian Succession Act, 1925. In case of intestacy (passing away without a valid Will), Part V (Sections 31 to 49) governs the split of assets among legal heirs.",
             },
           },
           {
@@ -157,7 +157,7 @@ export default function ChristianWillPage() {
             name: "What is Section 67 and why does it disqualify Christian witnesses?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness, or to the spouse of an attesting witness, is strictly void. While the Will itself remains valid, the witness or their spouse receives nothing. This rule applies strictly to Christians (unlike Hindus who are exempt), meaning family beneficiaries must never sign as attesting witnesses.",
+              text: "Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an signing witness, or to the spouse of an signing witness, is strictly void. While the Will itself remains valid, the witness or their spouse receives nothing. This rule applies strictly to Christians (unlike Hindus who are exempt), meaning family heirs must never sign as signing witnesses.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function ChristianWillPage() {
             name: "Does getting married automatically revoke an existing Christian Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 69 of the Indian Succession Act, 1925, every Will made by a Christian is automatically revoked upon their subsequent marriage. If you wrote a Will while single or widowed and later marry or remarry, your prior Will becomes a nullity by operation of law. A fresh Will must be executed post-marriage.",
+              text: "Yes. Under Section 69 of the Indian Succession Act, 1925, every Will made by a Christian is automatically revoked upon their subsequent marriage. If you wrote a Will while single or widowed and later marry or remarry, your prior Will becomes a nullity by operation of law. A fresh Will must be signed post-marriage.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function ChristianWillPage() {
             name: "What did the Supreme Court decide in the Mary Roy case?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Mary Roy v. State of Kerala (1986 AIR 1011), the Supreme Court struck down the archaic Travancore Christian Succession Act, 1916 and Cochin Christian Succession Act, 1921. The Court held that the Indian Succession Act, 1925 applies uniformly across Kerala, granting Christian daughters equal intestate succession rights identical to sons.",
+              text: "In Mary Roy v. State of Kerala (1986 AIR 1011), the Supreme Court struck down the archaic Travancore Christian Estate Act, 1916 and Cochin Christian Estate Act, 1921. The Court held that the Indian Succession Act, 1925 applies uniformly across Kerala, granting Christian daughters equal no-Will estate rights identical to sons.",
             },
           },
           {
@@ -181,7 +181,7 @@ export default function ChristianWillPage() {
             name: "Can an Indian Christian leave 100% of their property to anyone?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under the Indian Succession Act, 1925, an adult Indian Christian of sound mind enjoys 100% testamentary freedom over all self-acquired and absolute properties. There are no forced shares or one-third limits (unlike Muslim personal law). The only exception applies in the state of Goa, where the Portuguese Civil Code disposable quota system applies.",
+              text: "Yes. Under the Indian Succession Act, 1925, an adult Indian Christian of sound mind enjoys 100% Will freedom over all self-acquired and absolute assets. There are no forced shares or one-third limits (unlike Muslim personal law). The only exception applies in the state of Goa, where the Portuguese Civil Code disposable quota system applies.",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function ChristianWillPage() {
             name: "Is probate mandatory for Christian Wills in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Following the Indian Succession (Amendment) Act, 2002 (Act 26 of 2002), probate is generally not mandatory for Christian Wills executed outside the historic Presidency Towns (Mumbai, Kolkata, Chennai). However, obtaining probate from a District Court or High Court remains the strongest legal proof of title when dealing with high-value real estate or banking transmissions.",
+              text: "Following the Indian Succession (Amendment) Act, 2002 (Act 26 of 2002), probate is generally not needed for Christian Wills signed outside the historic Presidency Towns (Mumbai, Kolkata, Chennai). However, obtaining probate from a District Court or High Court remains the strongest legal proof of title when dealing with high-value real estate or banking transmissions.",
             },
           },
           {
@@ -205,7 +205,7 @@ export default function ChristianWillPage() {
             name: "Does a Christian Will require stamp paper or registration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No stamp paper is required under Indian law. A Christian Will can be executed on plain white A4 paper with zero stamp duty. Registration under Section 18 of the Registration Act, 1908 is voluntary. However, registering before the Sub-Registrar provides strong evidence against allegations of fraud or coercion.",
+              text: "No stamp paper is required under Indian law. A Christian Will can be signed on plain white A4 paper with zero stamp duty. Filing under Section 18 of the Filing Act, 1908 is voluntary. However, registering before the SRO provides strong evidence against allegations of fraud or coercion.",
             },
           },
           {
@@ -213,7 +213,7 @@ export default function ChristianWillPage() {
             name: "How many witnesses are required to execute a valid Christian Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 63 of the Indian Succession Act, 1925, the Will must be attested by at least two competent adult witnesses. Each witness must see the testator sign or acknowledge their signature, and each witness must sign in the personal presence of the testator. Remember that neither witness nor their spouse should be a beneficiary.",
+              text: "Under Section 63 of the Indian Succession Act, 1925, the Will must be attested by at least two competent adult witnesses. Each witness must see the Will maker sign or acknowledge their signature, and each witness must sign in the personal presence of the Will maker. Remember that neither witness nor their spouse should be a heir.",
             },
           },
           {

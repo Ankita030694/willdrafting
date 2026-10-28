@@ -347,12 +347,12 @@ export default function NriWillIndiaPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
-              Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
+              Legally Checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
             <time dateTime="2026-10-17" className="text-[#6B7280]">
@@ -377,7 +377,7 @@ export default function NriWillIndiaPage() {
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Under <strong className="text-[#111827]">Section 5 of the Indian Succession Act, 1925</strong> (<em>Lex Situs</em>), succession to immovable property in India is governed strictly by Indian law, regardless of your citizenship or foreign domicile. Draft a separate, lawyer-verified <strong className="text-[#111827]">Indian Will from abroad</strong> so your family never faces 18 months of Section 228 foreign probate re-sealing.
+                Under <strong className="text-[#111827]">Section 5 of the Indian Succession Act, 1925</strong> (<em>Lex Situs</em>), estate to land asset in India is governed strictly by Indian law, regardless of your citizenship or foreign domicile. Draft a separate, lawyer-checked <strong className="text-[#111827]">Indian Will from abroad</strong> so your family never faces 18 months of Section 228 foreign probate re-sealing.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -411,7 +411,7 @@ export default function NriWillIndiaPage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0" />
-                  <span>Advocate Verified</span>
+                  <span>Lawyer Checked</span>
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@ export default function NriWillIndiaPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>US Living Trusts are not recognized:</strong> Indian Sub-Registrars and housing societies require a statutory Will or Indian court order, not a US Revocable Living Trust.
+                    <strong>US Living Trusts are not recognized:</strong> Indian Sub-Registrars and housing societies require a legal Will or Indian court order, not a US Revocable Living Trust.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -473,7 +473,7 @@ export default function NriWillIndiaPage() {
               Infographic: Foreign Will vs. NRI Two-Will Strategy
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How a separate Indian Will bypasses foreign probate re-sealing under Section 228 of the Indian Succession Act, 1925 and accelerates NRO repatriation:
+              How a separate Indian Will bypasses foreign probate re-sealing under Section 228 of the Indian Succession Act, 1925 and accelerates NRO sending cash home:
             </p>
           </div>
 
@@ -487,7 +487,7 @@ export default function NriWillIndiaPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Comparison of Indian asset transmission timelines under a Single Foreign Will (Section 228 ISA) vs. a Dedicated Indian Will (Section 63 ISA).
+                <strong>Figure 1:</strong> Comparison of Indian asset transfer timelines under a Single Foreign Will (Section 228 ISA) vs. a Dedicated Indian Will (Section 63 ISA).
               </span>
               <span>Source: WillDrafting Editorial Team &amp; AMA Legal Solutions</span>
             </figcaption>
@@ -501,13 +501,13 @@ export default function NriWillIndiaPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Landmark className="w-4 h-4" />
-              <span>FEMA 1999 &amp; RBI Repatriation Rules</span>
+              <span>FEMA 1999 &amp; RBI Sending Cash Home Rules</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              FEMA Rules &amp; USD 1 Million Repatriation for NRIs
+              FEMA Rules &amp; USD 1 Million Sending Cash Home for NRIs
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Inheriting property in India is 100% tax-free under Section 56(2)(x) of the Income Tax Act, 1961. However, mutating title and wiring sale proceeds abroad through an Authorised Dealer (AD) bank requires strict compliance with the <strong className="text-[#111827]">Foreign Exchange Management Act (FEMA), 1999</strong>:
+              Inheriting asset in India is 100% tax-free under Section 56(2)(x) of the Income Tax Act, 1961. However, mutating title and wiring sale proceeds abroad through an Authorised Dealer (AD) bank requires strict compliance with the <strong className="text-[#111827]">Foreign Exchange Management Act (FEMA), 1999</strong>:
             </p>
           </div>
 
@@ -517,9 +517,9 @@ export default function NriWillIndiaPage() {
                 <thead>
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[24%]">Indian Asset Class</th>
-                    <th className="py-4 px-6 w-[24%]">Governing FEMA / Statutory Rule</th>
-                    <th className="py-4 px-6 w-[22%]">NRI / OCI Inheritance Status</th>
-                    <th className="py-4 px-6 w-[30%]">Repatriation &amp; Bank Release Requirement</th>
+                    <th className="py-4 px-6 w-[24%]">Governing FEMA / Legal Rule</th>
+                    <th className="py-4 px-6 w-[22%]">NRI / OCI Estate Status</th>
+                    <th className="py-4 px-6 w-[30%]">Sending Cash Home &amp; Bank Release Rule</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -544,13 +544,13 @@ export default function NriWillIndiaPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <ShieldCheck className="w-4 h-4" />
-              <span>Section 63 Execution Protocol</span>
+              <span>Section 63 Signing Protocol</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               How NRIs Sign a Valid Indian Will from Abroad
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              You do not need to travel to India or purchase non-judicial stamp paper to make a legally enforceable Indian Will. Follow these 4 statutory steps from your home abroad:
+              You do not need to travel to India or purchase non-judicial stamp paper to make a legally enforceable Indian Will. Follow these 4 legal steps from your home abroad:
             </p>
           </div>
 
@@ -564,17 +564,17 @@ export default function NriWillIndiaPage() {
               {
                 step: "02",
                 title: "Advocate Verification",
-                desc: "An Indian succession advocate at AMA Legal Solutions reviews your draft for Hindu Succession Act, Muslim Wasiyat (1/3rd rule), or Indian Succession Act compliance.",
+                desc: "An Indian succession lawyer at AMA Legal Solutions reviews your draft for Hindu Succession Act, Muslim Wasiyat (1/3rd rule), or Indian Succession Act compliance.",
               },
               {
                 step: "03",
                 title: "Sign on Plain A4 Paper",
-                desc: "Print your court-ready Will PDF on plain A4 paper abroad and sign in the simultaneous presence of two independent adult witnesses (who are not beneficiaries).",
+                desc: "Print your court-ready Will PDF on plain A4 paper abroad and sign in the simultaneous presence of two independent adult witnesses (who are not heirs).",
               },
               {
                 step: "04",
                 title: "Optional Apostille or SRO",
-                desc: "Your signed Will is immediately valid under Section 63 ISA. For extra protection, you may get it apostilled locally or register it at an Indian Sub-Registrar on a future visit.",
+                desc: "Your signed Will is right away valid under Section 63 ISA. For extra protection, you may get it apostilled locally or register it at an Indian Sub-Registrar on a future visit.",
               },
             ].map((item) => (
               <div
@@ -607,10 +607,10 @@ export default function NriWillIndiaPage() {
                 Helping Elderly Parents in India Make Their Will
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                One of the most stressful situations for NRIs in the US, UK, UAE, Canada, and Australia occurs when aging parents in Delhi, Mumbai, Bengaluru, Chennai, Pune, Hyderabad, or Kolkata pass away without a clear Will, leaving NRI children to take repeated international flights for court Succession Certificates and bank KYC clearances.
+                One of the most stressful situations for NRIs in the US, UK, UAE, Canada, and Australia occurs when aging parents in Delhi, Mumbai, Bengaluru, Chennai, Pune, Hyderabad, or Kolkata pass away without a clear Will, leaving NRI children to take repeated international flights for court Estate Papers and bank KYC clearances.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                With WillDrafting.in, your parents can complete their Will from home using our <strong className="text-[#111827]">Bilingual (English &amp; Hindi) interface and AI Voice Assistant</strong>, attach a Doctor&apos;s Medical Fitness Certificate, and have an <strong className="text-[#111827]">AMA Legal Solutions</strong> advocate verify that every bequest and bank nomination matches.
+                With WillDrafting.in, your parents can complete their Will from home using our <strong className="text-[#111827]">Bilingual (English &amp; Hindi) interface and AI Voice Assistant</strong>, attach a Doctor&apos;s Medical Fitness Paper, and have an <strong className="text-[#111827]">AMA Legal Solutions</strong> lawyer verify that every bequest and bank nomination matches.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -638,13 +638,13 @@ export default function NriWillIndiaPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>NRI Succession Law FAQs</span>
+              <span>NRI Estate Law FAQs</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on NRI Wills in India
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Clear statutory answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>:
+              Clear legal answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and checked by <strong className="text-[#111827]">AMA Legal Solutions</strong>:
             </p>
           </div>
 
@@ -669,7 +669,7 @@ export default function NriWillIndiaPage() {
                 Related Indian Succession Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore our statutory guides and transparent pricing tiers for Resident Indians and NRIs:
+                Explore our legal guides and transparent pricing tiers for Resident Indians and NRIs:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -704,7 +704,7 @@ export default function NriWillIndiaPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -714,12 +714,12 @@ export default function NriWillIndiaPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This guide is prepared in accordance with the Indian Succession Act, 1925, the Hindu Succession Act, 1956, the Muslim Personal Law (Shariat) Application Act, 1937, and the Foreign Exchange Management Act (FEMA), 1999. It is intended for informational purposes and does not substitute individualized cross-border tax counsel.
+              This guide is prepared in accordance with the Indian Succession Act, 1925, the Hindu Succession Act, 1956, the Muslim Personal Law (Shariat) Form Act, 1937, and the Foreign Exchange Management Act (FEMA), 1999. It is intended for informational purposes and does not substitute individualized cross-border tax counsel.
             </p>
           </div>
           <a

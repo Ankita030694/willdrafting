@@ -123,7 +123,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     title: "Original Printed Will Document",
-    description: "Two clean printed copies of the Will document on durable white legal paper.",
+    description: "Two clean printed copies of the Will paper on durable white legal paper.",
     checked: false,
   },
   {
@@ -135,19 +135,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-5",
     title: "KDA / KNN Property Documents",
-    description: "KDA allotment letter, possession paper, registered sale deed, or municipal tax receipt for property ID.",
+    description: "KDA allotment letter, possession paper, filed sale deed, or city tax receipt for asset ID.",
     checked: false,
   },
   {
     id: "item-6",
     title: "Doctor's Medical Fitness Certificate",
-    description: "Fitness paper from a registered MBBS doctor confirming sound mental disposing capacity (essential for seniors 60+).",
+    description: "Fitness paper from a filed MBBS doctor confirming sound mental disposing capacity (essential for seniors 60+).",
     checked: false,
   },
   {
     id: "item-7",
     title: "IGRSUP Online Appointment Token",
-    description: "Official e-appointment booking receipt and ₹100 online registration fee receipt from igrsup.gov.in.",
+    description: "Official e-appointment booking receipt and ₹100 online filing fee receipt from igrsup.gov.in.",
     checked: false,
   },
 ];
@@ -400,7 +400,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect your KDA plots, shop units, and family family estates in Kanpur.
-                Get expert lawyer drafting, UP IGRSUP e-registration guidance, and doorstep signing for senior citizens across Kanpur Nagar.
+                Get expert lawyer drafting, UP IGRSUP e-filing guidance, and doorstep signing for senior citizens across Kanpur Nagar.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -488,7 +488,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Allahabad HC Area
@@ -634,16 +634,16 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 52 chars (dec), 56 chars (raw) - Strictly <= 70 chars */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Kanpur
+                  Key Highlights: Will Making &amp; Filing in Kanpur
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional UP Registration</span>
+                      <span>A Choice UP Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional across Uttar Pradesh under Section 18(e) of the Registration Act, 1908. An unregistered Will on plain white paper signed before two witnesses is legally enforceable.
+                      Will filing is a choice across Uttar Pradesh under Section 18(e) of the Filing Act, 1908. An plain Will on plain white paper signed before two witnesses is legally enforceable.
                     </p>
                   </div>
 
@@ -663,7 +663,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty in UP</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty in Uttar Pradesh. At Kanpur Sub-Registrar offices, testators pay only a nominal flat government registration fee of ₹100 plus scanning charges.
+                      Wills incur ₹0 stamp duty in Uttar Pradesh. At Kanpur SRO offices, Will makers pay only a nominal flat government filing fee of ₹100 plus scanning charges.
                     </p>
                   </div>
 
@@ -673,7 +673,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       <span>Smooth KDA &amp; KNN Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will drastically accelerates property substitution before the Kanpur Development Authority (KDA) and Kanpur Nagar Nigam, bypassing 30-day public objection notices.
+                      A filed Will drastically accelerates asset substitution before the Kanpur Development Office (KDA) and Kanpur Nagar Nigam, bypassing 30-day public objection notices.
                     </p>
                   </div>
                 </div>
@@ -692,12 +692,12 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Kanpur, UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession and Will drafting in Kanpur are governed by two principal central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, complemented by state-level enactments including the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
+                  Estate estate and Will drafting in Kanpur are governed by two principal central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>, complemented by state-level enactments including the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
                   Any competent adult possessing sound mind can execute a Will to bequeath their self-acquired real estate, shop assets, business shares, bank deposits, and jewelry.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kanpur presents a distinct blend of assets. Families often hold high-value KDA home plots in Swaroop Nagar or Civil Lines, bustling retail shops in Govind Nagar or General Ganj, industrial factories in Panki and Dada Nagar, or family farmland in Bilhaur and Ghatampur.
-                  Without an clear legal Will, these multi-generational estates face severe succession bottlenecks and property name change fights before local municipal offices.
+                  Kanpur presents a distinct blend of assets. Families often hold high-value KDA home plots in Swaroop Nagar or Civil Lines, bustling retail shops in Govind Nagar or General Ganj, plant factories in Panki and Dada Nagar, or family farmland in Bilhaur and Ghatampur.
+                  Without an clear legal Will, these multi-generational estates face severe estate bottlenecks and asset name change fights before local city offices.
                 </p>
               </div>
 
@@ -753,14 +753,14 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 44 chars - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Kanpur?
+                  2. Is Will Filing Needed in Kanpur?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong> in the State of Uttar Pradesh.
-                  An unregistered Will signed on plain paper and duly attested by two independent witnesses is legally enforceable in Indian courts.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is entirely <strong>a choice</strong> in the State of Uttar Pradesh.
+                  An plain Will signed on plain paper and duly attested by two independent witnesses is legally enforceable in Indian courts.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, in industrial and shop cities like Kanpur, registering your Will at the local SRO office via the UP IGRS portal is strongly advised by senior legal counsel.
+                  However, in plant and shop cities like Kanpur, registering your Will at the local SRO office via the UP IGRS portal is strongly advised by senior legal counsel.
                   The table below highlights the crucial differences:
                 </p>
               </div>
@@ -770,12 +770,12 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-900 font-extrabold">
-                      <th className="p-4 sm:p-5">Succession Parameter</th>
+                      <th className="p-4 sm:p-5">Estate Parameter</th>
                       <th className="p-4 sm:p-5 text-emerald-800 bg-emerald-50/50">
-                        Registered Will (UP IGRS SRO Kanpur)
+                        Filed Will (UP IGRS SRO Kanpur)
                       </th>
                       <th className="p-4 sm:p-5 text-slate-600">
-                        Unregistered Will (Plain Paper)
+                        Plain Will (Plain Paper)
                       </th>
                     </tr>
                   </thead>
@@ -790,9 +790,9 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       </td>
                     </tr>
                     <tr>
-                      <td className="p-4 sm:p-5 font-bold text-slate-900">KDA &amp; Municipal Name Change</td>
+                      <td className="p-4 sm:p-5 font-bold text-slate-900">KDA &amp; City Name Change</td>
                       <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
-                        Expedited property transfer at KDA Moti Jheel and Kanpur Nagar Nigam.
+                        Expedited asset transfer at KDA Moti Jheel and Kanpur Nagar Nigam.
                       </td>
                       <td className="p-4 sm:p-5">
                         Triggers needed newspaper notices, 30-day objection wait, and indemnity bonds.
@@ -801,7 +801,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 sm:p-5 font-bold text-slate-900">Stamp Duty in UP</td>
                       <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
-                        ₹0 stamp duty. Fixed flat registration fee of ₹100 on IGRSUP.
+                        ₹0 stamp duty. Fixed flat filing fee of ₹100 on IGRSUP.
                       </td>
                       <td className="p-4 sm:p-5">
                         ₹0 stamp duty (signed on plain white paper).
@@ -810,7 +810,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 sm:p-5 font-bold text-slate-900">Proof Strength</td>
                       <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
-                        Sub-Registrar confirms identity and sound mental state under official seal.
+                        SRO confirms identity and sound mental state under official seal.
                       </td>
                       <td className="p-4 sm:p-5">
                         Frequently contested for suspicious circumstances, coercion, or signature forgery.
@@ -842,10 +842,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   3. Kanpur Probate Rules: Allahabad High Court Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common misconception among Kanpur property owners is that getting probate from a civil court is needed to transfer inherited assets. Under Section 213 read with Section 57 of the <strong>Indian Succession Act, 1925</strong>, probate is needed only for estates situated in the three historical British presidency towns: <strong>Mumbai, Kolkata, and Chennai</strong>.
+                  A common misconception among Kanpur asset owners is that getting probate from a civil court is needed to transfer inherited assets. Under Section 213 read with Section 57 of the <strong>Indian Succession Act, 1925</strong>, probate is needed only for estates situated in the three historical British presidency towns: <strong>Mumbai, Kolkata, and Chennai</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kanpur is a non-presidency metropolitan district under the appellate area of the <strong>Hon&apos;ble Allahabad High Court</strong>. In catena of landmark rulings, the Allahabad High Court has affirmed that getting court probate is <strong>strictly optional</strong> in Uttar Pradesh for Hindu, Sikh, Jain, and Buddhist testators.
+                  Kanpur is a non-presidency metropolitan district under the appellate area of the <strong>Hon&apos;ble Allahabad High Court</strong>. In catena of landmark rulings, the Allahabad High Court has affirmed that getting court probate is <strong>strictly a choice</strong> in Uttar Pradesh for Hindu, Sikh, Jain, and Buddhist Will makers.
                 </p>
               </div>
 
@@ -858,7 +858,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     Saves Substantial Court Fees
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Probate petitions in civil courts require ad-valorem court fees based on property market value. In Kanpur, a registered Will bypasses these hefty court duties altogether.
+                    Probate petitions in civil courts require ad-valorem court fees based on asset market value. In Kanpur, a filed Will bypasses these hefty court duties altogether.
                   </p>
                 </div>
 
@@ -870,7 +870,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     Avoids 2 to 4 Years of Court Delays
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Civil court probate proceedings involve general citations, hearings, and family notices that often take 24 to 48 months. A registered Will allows immediate KDA and bank transfer.
+                    Civil court probate proceedings involve general citations, hearings, and family notices that often take 24 to 48 months. A filed Will allows immediate KDA and bank transfer.
                   </p>
                 </div>
               </div>
@@ -885,11 +885,11 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 46 chars (dec), 50 chars (raw) - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. KDA Property Will Transfer &amp; Name Change Guide
+                  4. KDA Asset Will Transfer &amp; Name Change Guide
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  The <strong>Kanpur Development Authority (KDA)</strong>, headquartered at Moti Jheel, regulates planned urban developments across Kanpur under the Uttar Pradesh Urban Planning and Development Act, 1973.
-                  Whether your property is an independent home plot in Swaroop Nagar, a shop complex in Kakadeo, or a multi-unit housing flat in Barra, succession name change requires adherence to KDA guidelines.
+                  The <strong>Kanpur Development Office (KDA)</strong>, headquartered at Moti Jheel, regulates planned urban developments across Kanpur under the Uttar Pradesh Urban Planning and Development Act, 1973.
+                  Whether your asset is an independent home plot in Swaroop Nagar, a shop complex in Kakadeo, or a multi-unit housing flat in Barra, estate name change requires adherence to KDA guidelines.
                 </p>
               </div>
 
@@ -900,16 +900,16 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">Step 1</span>
-                    <h4 className="font-bold text-sm text-slate-900">Document Filing</h4>
+                    <h4 className="font-bold text-sm text-slate-900">Paper Filing</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submit form at KDA Moti Jheel with original allotment letter, death paper, registered Will copy, and surviving legal heir affidavit.
+                      Submit form at KDA Moti Jheel with original allotment letter, death paper, filed Will copy, and surviving legal heir sworn note.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">Step 2</span>
                     <h4 className="font-bold text-sm text-slate-900">Notice &amp; Check</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      For registered Wills, KDA verifies the SRO Book III record. Unregistered Wills require public advertisement in daily Hindi and English newspapers.
+                      For filed Wills, KDA verifies the SRO Book III record. Plain Wills require public advertisement in daily Hindi and English newspapers.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
@@ -936,11 +936,11 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kanpur Nagar district encompasses vast farm belts across Bilhaur, Ghatampur, Bithoor, and Narwal.
-                  Succession of farm land in Uttar Pradesh is not governed by personal religious laws, but exclusively by the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
+                  Estate of farm land in Uttar Pradesh is not governed by personal religious laws, but exclusively by the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 107</strong> of the UP Revenue Code, a Bhumidhar with transferable rights can bequeath their landholding by Will.
-                  However, testators must carefully respect legal ceilings and succession rules under <strong>Section 108</strong> to prevent the Will from being challenged during Tehsil Khatauni name change on the UP Bhulekh portal.
+                  However, Will makers must carefully respect legal ceilings and estate rules under <strong>Section 108</strong> to prevent the Will from being challenged during Tehsil Khatauni name change on the UP Bhulekh portal.
                 </p>
               </div>
 
@@ -954,7 +954,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     <strong>Bhumidhari Status:</strong> Only Bhumidhars with transferable rights can make a valid Will. Asamis and government licensees cannot bequeath land.
                   </li>
                   <li>
-                    <strong>Scheduled Caste Landholdings:</strong> Land belonging to a person of Scheduled Caste cannot be transferred to a non-SC individual through a Will without prior legal sanction from the District Collector.
+                    <strong>Scheduled Caste Landholdings:</strong> Land belonging to a person of Scheduled Caste cannot be transferred to a non-SC single through a Will without prior legal sanction from the District Collector.
                   </li>
                   <li>
                     <strong>Khatauni Records:</strong> Always cross-check that Khasra numbers, Gata numbers, and Tehsil Khatauni entries match the revenue records on UP Bhulekh exactly.
@@ -972,11 +972,11 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 49 chars - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Kanpur Sub-Registrar Offices: Tehsil Directory
+                  6. Kanpur SRO Offices: Tehsil Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration appointments across Kanpur Nagar district are booked online on the Stamps and Registration Department Uttar Pradesh portal (<strong>IGRSUP</strong> - <code>igrsup.gov.in</code>).
-                  Locate your jurisdictional SRO office below based on where you reside or own property:
+                  Will filing appointments across Kanpur Nagar district are booked online on the Stamps and Filing Office Uttar Pradesh portal (<strong>IGRSUP</strong> - <code>igrsup.gov.in</code>).
+                  Locate your local SRO office below based on where you reside or own asset:
                 </p>
               </div>
 
@@ -1038,7 +1038,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kanpur&apos;s diverse real estate encompasses premium KDA bungalows, high-rise builder floors, bustling trade shops, large manufacturing complexes, and rural farmlands.
-                  Review the strategic succession nuances tailored for prominent Kanpur neighborhoods:
+                  Review the strategic estate nuances tailored for prominent Kanpur neighborhoods:
                 </p>
               </div>
 
@@ -1117,10 +1117,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 47 chars - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Step-by-Step Will Registration SOP on IGRSUP
+                  8. Step-by-Step Will Filing SOP on IGRSUP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified five-step protocol to prepare, draft, execute, and register your Will before the Sub-Registrar in Kanpur Nagar:
+                  Follow this checked five-step protocol to prepare, draft, execute, and register your Will before the SRO in Kanpur Nagar:
                 </p>
               </div>
 
@@ -1176,7 +1176,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       Generate Online e-Appointment on igrsup.gov.in
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Access the UP Stamps &amp; Registration portal, enter Kanpur Nagar, select your tehsil SRO office (Sadar, Kalyanpur, Govind Nagar, etc.), upload draft particulars, pay ₹100 registration fee, and download your e-token.
+                      Access the UP Stamps &amp; Filing portal, enter Kanpur Nagar, select your tehsil SRO office (Sadar, Kalyanpur, Govind Nagar, etc.), upload draft particulars, pay ₹100 filing fee, and download your e-token.
                     </p>
                   </div>
                 </div>
@@ -1187,10 +1187,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Biometric SRO Registration &amp; Book III Preservation
+                      Biometric SRO Filing &amp; Book III Preservation
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Appear before the Sub-Registrar with both witnesses carrying original Aadhaar cards. Complete digital photo and biometric fingerprint capture. The SRO seals the Will under Book III archives and issues your registered copy.
+                      Appear before the SRO with both witnesses carrying original Aadhaar cards. Complete digital photo and biometric fingerprint capture. The SRO seals the Will under Book III archives and issues your filed copy.
                     </p>
                   </div>
                 </div>
@@ -1206,11 +1206,11 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 52 chars - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Section 31 Doorstep Will Registration for Seniors
+                  9. Section 31 Doorstep Will Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting crowded government tehsils like the Collectorate in Civil Lines can be exhausting for senior citizens, bedridden elders, or medically infirm people.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds discretionary authority to attend the residence or private hospital of a Will maker to complete formal Will registration.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO holds discretionary office to attend the residence or private hospital of a Will maker to complete formal Will filing.
                 </p>
               </div>
 
@@ -1225,13 +1225,13 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   <div className="space-y-1.5">
                     <h3 className="font-bold text-sm text-slate-900">2. Commission Petition</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      File a Section 31 doorstep petition with the jurisdictional Sub-Registrar in Kanpur along with the doctor&apos;s note, paying official government inspection travel fees.
+                      File a Section 31 doorstep petition with the local SRO in Kanpur along with the doctor&apos;s note, paying official government inspection travel fees.
                     </p>
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-bold text-sm text-slate-900">3. Doorstep Signing</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits your home in Swaroop Nagar, Civil Lines, or Kidwai Nagar, captures biometrics, verifies witnesses, and completes registration on site.
+                      The SRO visits your home in Swaroop Nagar, Civil Lines, or Kidwai Nagar, captures biometrics, verifies witnesses, and completes filing on site.
                     </p>
                   </div>
                 </div>
@@ -1247,10 +1247,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 48 chars - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Document Checklist for Kanpur Sub-Registrar
+                  10. Paper Checklist for Kanpur SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Interactive document validator for your Kanpur Sub-Registrar appointment. Check items off to verify your readiness before visiting the registry office:
+                  Free paper validator for your Kanpur SRO appointment. Check items off to verify your readiness before visiting the registry office:
                 </p>
               </div>
 
@@ -1323,10 +1323,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 47 chars (dec), 51 chars (raw) - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. Kanpur Property Types: KDA, Freehold &amp; Land
+                  11. Kanpur Asset Types: KDA, Freehold &amp; Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning requires tailoring specific testamentary clauses based on the legal nature of each asset category in Kanpur:
+                  Estate planning requires tailoring specific Will clauses based on the legal nature of each asset category in Kanpur:
                 </p>
               </div>
 
@@ -1337,7 +1337,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     KDA Leasehold &amp; Freehold Plots
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Allotted by Kanpur Development Authority in Swaroop Nagar, Kidwai Nagar, and Barra. Specify original scheme name, allotment letter number, possession slip, and lease terms clearly.
+                    Allotted by Kanpur Development Office in Swaroop Nagar, Kidwai Nagar, and Barra. Specify original scheme name, allotment letter number, possession slip, and lease terms clearly.
                   </p>
                 </div>
 
@@ -1354,7 +1354,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] uppercase">Type 3</span>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Industrial Units &amp; Shop Shops
+                    Plant Units &amp; Shop Shops
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     UPSIDA factory sheds in Panki, MSME engineering units in Dada Nagar, leather export firms in Jajmau, and retail shops in General Ganj. Specify partnership equity transfers and trade licenses.
@@ -1382,10 +1382,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 48 chars (dec), 52 chars (raw) - Strictly <= 70 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. IGRSUP Portal Registration Fees &amp; Exemptions
+                  12. IGRSUP Portal Filing Fees &amp; Exemptions
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds which attract substantial ad-valorem stamp duties in Uttar Pradesh, testamentary Wills are completely exempt from stamp duty under the Indian Stamp Act, 1899:
+                  Unlike sale deeds or gift deeds which attract substantial ad-valorem stamp duties in Uttar Pradesh, Will Wills are completely exempt from stamp duty under the Indian Stamp Act, 1899:
                 </p>
               </div>
 
@@ -1407,14 +1407,14 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       </td>
                     </tr>
                     <tr>
-                      <td className="p-4 sm:p-5 font-bold text-slate-900">Registration Fee</td>
+                      <td className="p-4 sm:p-5 font-bold text-slate-900">Filing Fee</td>
                       <td className="p-4 sm:p-5 font-bold text-slate-900">₹100 flat</td>
                       <td className="p-4 sm:p-5 text-slate-600">
                         Standard fixed fee on IGRSUP portal (igrsup.gov.in)
                       </td>
                     </tr>
                     <tr>
-                      <td className="p-4 sm:p-5 font-bold text-slate-900">Document Scanning &amp; Pasting</td>
+                      <td className="p-4 sm:p-5 font-bold text-slate-900">Paper Scanning &amp; Pasting</td>
                       <td className="p-4 sm:p-5 font-bold text-slate-900">₹100 to ₹200</td>
                       <td className="p-4 sm:p-5 text-slate-600">
                         Official digital archival fee for Book III scanning
@@ -1424,7 +1424,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       <td className="p-4 sm:p-5 font-bold text-slate-900">Section 31 Doorstep Commission</td>
                       <td className="p-4 sm:p-5 font-bold text-slate-900">Prescribed travel fee</td>
                       <td className="p-4 sm:p-5 text-slate-600">
-                        Applicable only when SRO visits home for elderly testators
+                        Applicable only when SRO visits home for elderly Will makers
                       </td>
                     </tr>
                   </tbody>
@@ -1444,7 +1444,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   13. Transparent Will Packages &amp; Legal Pricing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose a tailored estate planning package designed mainly for Kanpur property owners, business houses, and families:
+                  Choose a tailored estate planning package designed mainly for Kanpur asset owners, business houses, and families:
                 </p>
               </div>
 
@@ -1458,7 +1458,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     <h3 className="font-extrabold text-xl text-slate-900">Online Lawyer Will</h3>
                     <div className="text-2xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individual homeowners in Kanpur with straightforward home and financial assets.
+                      Ideal for single homeowners in Kanpur with straightforward home and financial assets.
                     </p>
                     <ul className="text-xs text-slate-700 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1467,7 +1467,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>KDA Property Clauses Included</span>
+                        <span>KDA Asset Clauses Included</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1552,7 +1552,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor Medical Certificate Format</span>
+                        <span>Doctor Medical Paper Format</span>
                       </li>
                     </ul>
                   </div>
@@ -1579,7 +1579,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   14. Frequently Asked Questions: Kanpur Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Answers to legal queries regarding Will making, SRO registration, KDA property mutations, and farm succession in Kanpur Nagar:
+                  Answers to legal queries regarding Will making, SRO filing, KDA asset mutations, and farm estate in Kanpur Nagar:
                 </p>
               </div>
 
@@ -1627,7 +1627,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                   15. Legal References &amp; Kanpur Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Authoritative statutes, government portals, and office guidelines governing estate planning and property name change across Kanpur, Uttar Pradesh:
+                  Authoritative statutes, government portals, and office guidelines governing estate planning and asset name change across Kanpur, Uttar Pradesh:
                 </p>
               </div>
 
@@ -1642,10 +1642,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     OFFICIAL PORTAL
                   </span>
                   <h3 className="font-bold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                    IGRSUP Registration Portal
+                    IGRSUP Filing Portal
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Stamps &amp; Registration Department UP e-appointment booking for Kanpur SROs.
+                    Stamps &amp; Filing Office UP e-appointment booking for Kanpur SROs.
                   </p>
                 </a>
 
@@ -1659,10 +1659,10 @@ export default function KanpurLocationClient({ faqs }: Props) {
                     CIVIC AUTHORITY
                   </span>
                   <h3 className="font-bold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                    Kanpur Development Authority
+                    Kanpur Development Office
                   </h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    KDA Moti Jheel portal for home and shop property name change.
+                    KDA Moti Jheel portal for home and shop asset name change.
                   </p>
                 </a>
 
@@ -1691,7 +1691,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 Protect Your Kanpur Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Kanpur assets and shop enterprises to painful municipal succession fights.
+                Do not leave your hard-earned Kanpur assets and shop enterprises to painful city estate fights.
                 Draft a legally robust Will online in minutes or consult our senior Uttar Pradesh estate lawyers.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1711,7 +1711,29 @@ export default function KanpurLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1729,7 +1751,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Kanpur Estate Planning &amp; Registration Architecture
+                Visual Blueprint: Kanpur Estate Planning &amp; Filing Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1748,7 +1770,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Kanpur Nagar SRO Registered &amp; KDA Name Change Compliant</span>
+              <span>Kanpur Nagar SRO Filed &amp; KDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={handleStartDraft}

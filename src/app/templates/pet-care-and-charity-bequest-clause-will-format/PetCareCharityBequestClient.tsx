@@ -53,53 +53,53 @@ import {
 
 // Table of Contents Items (strictly <= 70 chars, 0 em-dashes, unique IDs)
 const TOC_ITEMS = [
-  { id: "legal-status-animals", label: "1. Pet Inheritance Law: Legal Status" },
+  { id: "legal-status-animals", label: "1. Pet Estate Law: Legal Status" },
   { id: "interactive-calculator", label: "2. Pet Care & Charity Allocation Tool" },
   { id: "direct-vs-trust-comparison", label: "3. Direct Bequest vs Caretaker Trust" },
   { id: "conditional-caretaker-bequest", label: "4. Conditional Caretaker Gift-Over" },
-  { id: "testamentary-pet-trust", label: "5. Testamentary Pet Care Trust Model" },
+  { id: "testamentary-pet-trust", label: "5. Will Pet Care Trust Model" },
   { id: "charitable-bequests-80g", label: "6. Charitable Bequests & Section 80G" },
   { id: "section-118-supreme-court", label: "7. Section 118: Supreme Court Ruling" },
   { id: "verifiable-clauses-templates", label: "8. Verifiable Pet & Charity Clauses" },
-  { id: "sro-witness-rules", label: "9. SRO Registration & Witness Rules" },
+  { id: "sro-witness-rules", label: "9. SRO Filing & Witness Rules" },
   { id: "practical-case-studies", label: "10. Real Case Studies: Delhi & Mumbai" },
   { id: "institutional-profile", label: "11. Institutional Profile: AMA Legal" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Legal Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Legal Portals" },
 ];
 
 const FAQS = [
   {
     q: "Can I leave money directly to my pet dog or cat in an Indian Will?",
-    a: "No. Under Section 112 of the Indian Succession Act, 1925, a bequest cannot be made to an entity that is not recognized as a legal person under Indian jurisprudence. Animals lack legal personhood, cannot maintain bank accounts, and cannot hold title to immovable or movable assets. A direct clause such as 'I bequeath ₹20 Lakhs to my dog Max' is void ab initio. The legally enforceable approach is structuring a Conditional Caretaker Bequest under Section 127 with a Gift-Over under Section 131, or a Testamentary Pet Care Trust under the Indian Trusts Act, 1882.",
+    a: "No. Under Section 112 of the Indian Succession Act, 1925, a bequest cannot be made to an entity that is not recognized as a legal person under Indian jurisprudence. Animals lack legal personhood, cannot maintain bank accounts, and cannot hold title to land or cash assets. A direct clause such as 'I bequeath ₹20 Lakhs to my dog Max' is void ab initio. The legally enforceable approach is structuring a Conditional Caretaker Bequest under Section 127 with a Gift-Over under Section 131, or a Will Pet Care Trust under the Indian Trusts Act, 1882.",
   },
   {
     q: "How does a Conditional Caretaker Bequest with Gift-Over operate under Indian law?",
-    a: "Under Section 127 of the Indian Succession Act, 1925, a bequest can be made to a human beneficiary (friend, relative, or caretaker) subject to the fulfillment of a condition subsequent, namely providing lifelong humane shelter, veterinary healthcare, food, and companionship to your pet. Crucially, under Section 131, the Will includes a 'gift-over' provision: if the caretaker neglects, abandons, or mistreats the animal, custody of the pet and the remaining financial corpus immediately divest from them and transfer to a nominated animal welfare NGO or alternate guardian.",
+    a: "Under Section 127 of the Indian Succession Act, 1925, a bequest can be made to a human heir (friend, relative, or caretaker) subject to the fulfillment of a condition subsequent, namely providing lifelong humane shelter, veterinary healthcare, food, and companionship to your pet. Crucially, under Section 131, the Will includes a 'gift-over' rule: if the caretaker neglects, abandons, or mistreats the animal, custody of the pet and the remaining financial corpus right away divest from them and transfer to a nominated animal welfare NGO or alternate guardian.",
   },
   {
     q: "Can a Christian, Parsi, or Hindu leave money to a charity or temple in a Will?",
-    a: "Yes, without any statutory waiting period. In the landmark Constitution Bench ruling of John Vallamattom & Anr. v. Union of India (2003) 6 SCC 611, the Supreme Court of India struck down Section 118 of the Indian Succession Act, 1925 as unconstitutional and violative of Article 14. Section 118 had previously restricted Christians and others from bequeathing property to religious or charitable causes unless executed 12 months prior to death and deposited in safe custody within 6 months. Following John Vallamattom, all Indian testators enjoy unrestricted testamentary freedom to donate to charitable trusts, temples, ashrams, churches, and NGOs.",
+    a: "Yes, without any legal waiting period. In the landmark Constitution Bench ruling of John Vallamattom & Anr. v. Union of India (2003) 6 SCC 611, the Supreme Court of India struck down Section 118 of the Indian Succession Act, 1925 as unconstitutional and violative of Article 14. Section 118 had previously restricted Christians and others from bequeathing asset to religious or charitable causes unless signed 12 months prior to death and deposited in safe custody within 6 months. Following John Vallamattom, all Indian testators enjoy unrestricted Will freedom to donate to charitable trusts, temples, ashrams, churches, and NGOs.",
   },
   {
     q: "What is a Corpus Donation under Section 11(1)(d) of the Income Tax Act?",
-    a: "When bequeathing funds to a charitable trust or Section 8 company in a Will, it is vital to specify that the bequest is made as a 'Corpus Donation' under Section 11(1)(d) of the Income Tax Act, 1961. A corpus donation is credited directly to the capital fund of the NGO and is 100% exempt from the mandatory 85% annual application requirement. If not specified as corpus, the NGO may be taxed on the unspent portion if it cannot deploy 85% of the bequest within the same financial year.",
+    a: "When bequeathing funds to a charitable trust or Section 8 company in a Will, it is vital to specify that the bequest is made as a 'Corpus Donation' under Section 11(1)(d) of the Income Tax Act, 1961. A corpus donation is credited directly to the capital fund of the NGO and is 100% exempt from the needed 85% annual form rule. If not specified as corpus, the NGO may be taxed on the unspent portion if it cannot deploy 85% of the bequest within the same financial year.",
   },
   {
-    q: "Can the designated pet caretaker or charity trustee act as an attesting witness to the Will?",
-    a: "Strictly NO. Under Section 67 of the Indian Succession Act, 1925, any legacy, bequest, or interest given to an attesting witness, or to the husband or wife of an attesting witness, is entirely VOID. If the nominated caretaker signs as an attesting witness, the Will remains valid but the caretaker forfeits the entire financial fund and honorarium. Always ensure two neutral, independent adult witnesses who have zero financial interest under the Will attest the document.",
+    q: "Can the designated pet caretaker or charity trustee act as an signing witness to the Will?",
+    a: "Strictly NO. Under Section 67 of the Indian Succession Act, 1925, any legacy, bequest, or interest given to an signing witness, or to the husband or wife of an signing witness, is entirely VOID. If the nominated caretaker signs as an signing witness, the Will remains valid but the caretaker forfeits the entire financial fund and honorarium. Always ensure two neutral, independent adult witnesses who have zero financial interest under the Will attest the paper.",
   },
   {
     q: "What happens to the remaining pet care fund after the pet passes away?",
-    a: "An enforceable Will must always include a 'residuary bequest-over' clause. This instructs the executor or trustee that upon the pet's natural death (verified by a registered veterinary surgeon's certificate of humane demise), any unspent principal amount and accrued interest shall transfer to a named charitable animal welfare organization (such as Blue Cross of India, Friendicoes SECA, or People For Animals) or return to the testator's residuary family estate.",
+    a: "An enforceable Will must always include a 'residuary bequest-over' clause. This instructs the executor or trustee that upon the pet's natural death (checked by a filed veterinary surgeon's paper of humane demise), any unspent principal amount and accrued interest shall transfer to a named charitable animal welfare organization (such as Blue Cross of India, Friendicoes SECA, or People For Animals) or return to the Will maker's residuary family estate.",
   },
   {
     q: "How can I prevent family members from challenging my charitable or pet care Will?",
-    a: "Disinherited family members often challenge animal or charity bequests alleging 'undue influence' or 'insane delusion'. To insulate your testament: (1) state clear, objective reasons in the recital for prioritizing animal welfare or philanthropic causes, (2) obtain a contemporaneous medical certificate from a registered MBBS or MD doctor confirming testamentary capacity on the date of execution, (3) register the Will at the Sub-Registrar Office under Book 3, and (4) record an unedited video of the Will execution and attestation.",
+    a: "Disinherited family members often fight animal or charity bequests alleging 'undue influence' or 'insane delusion'. To insulate your testament: (1) state clear, objective reasons in the recital for prioritizing animal welfare or philanthropic causes, (2) obtain a contemporaneous medical paper from a filed MBBS or MD doctor confirming Will capacity on the date of signing, (3) register the Will at the SRO office under Book 3, and (4) record an unedited video of the Will signing and witness signing.",
   },
   {
     q: "What is an Honorary Pet Trust and how is it structured under the Indian Trusts Act, 1882?",
-    a: "In Indian law, an Honorary Trust is a testamentary arrangement where funds are placed in the custody of a human Trustee with instructions to expend income and principal for a non-human purpose. Because an animal cannot sue to enforce fiduciary obligations, the Will designates an independent 'Trust Protector' or 'Enforcer' (such as a practicing advocate or veterinary doctor). The Enforcer possesses legal standing to review veterinary expense accounts, inspect living conditions, and apply to court for replacement of a delinquent trustee.",
+    a: "In Indian law, an Honorary Trust is a Will arrangement where funds are placed in the custody of a human Trustee with instructions to expend income and principal for a non-human purpose. Because an animal cannot sue to enforce fiduciary obligations, the Will designates an independent 'Trust Protector' or 'Enforcer' (such as a practicing lawyer or veterinary doctor). The Enforcer possesses legal standing to review veterinary expense accounts, inspect living conditions, and apply to court for replacement of a delinquent trustee.",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function PetCareCharityBequestClient() {
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedCustomClause, setCopiedCustomClause] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [petType, setPetType] = useState<"dog" | "cat" | "horse" | "multiple">("dog");
   const [petName, setPetName] = useState<string>("Bruno");
   const [petLifeExpectancyYears, setPetLifeExpectancyYears] = useState<number>(8);
@@ -334,7 +334,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Under Indian law, a pet is not a legal person and cannot hold a bank account. A direct
             bequest fails unless structured as a <strong>Conditional Caretaker Bequest</strong> or{" "}
-            <strong>Testamentary Pet Trust</strong> with a strict gift-over. Learn how to draft
+            <strong>Will Pet Trust</strong> with a strict gift-over. Learn how to draft
             enforceable animal care funds and 80G charitable corpus donations.
           </p>
 
@@ -353,7 +353,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -431,7 +431,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 67, 112, 114, 117, 127 &amp; 131 of Indian Succession Act,
@@ -472,7 +472,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <div className="flex items-center gap-2">
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>
-                    Official Legal Template &amp; Statutory Guidelines: Indian Succession Act, 1925
+                    Official Legal Template &amp; Legal Guidelines: Indian Succession Act, 1925
                   </span>
                 </div>
                 <button
@@ -495,17 +495,17 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Animals Cannot Own Property in India:</strong> Under Indian legal jurisprudence,
+                    <strong>Animals Cannot Own Asset in India:</strong> Under Indian legal jurisprudence,
                     a dog, cat, or horse is not a juristic person capable of receiving funds or owning a bank
-                    account. Direct testamentary gifts to animals are void under Section 112 of the Indian
-                    Succession Act, 1925.
+                    account. Direct Will gifts to animals are void under Section 112 of the Indian
+                    Estate Act, 1925.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Conditional Caretaker Bequests with Gift-Over:</strong> Under Sections 127 and
-                    131, testators bequeath funds to a designated human caregiver conditional on proper animal
+                    131, Will makers bequeath funds to a designated human caregiver conditional on proper animal
                     shelter and healthcare. If the caretaker defaults, funds and pet custody automatically
                     transfer to a secondary animal welfare charity.
                   </span>
@@ -524,7 +524,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <span>
                     <strong>Corpus Donation Directives Under Section 11(1)(d):</strong> Charitable bequests
                     must specify a 'Corpus Donation' direction to ensure the NGO permanently capitalizes the
-                    fund without attracting tax penalties under income tax application thresholds.
+                    fund without attracting tax penalties under income tax form thresholds.
                   </span>
                 </li>
               </ul>
@@ -535,12 +535,12 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 =================================================================== */}
             <section id="legal-status-animals" className="space-y-4">
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                1. Pet Inheritance Law: Legal Status of Animals in India
+                1. Pet Estate Law: Legal Status of Animals in India
               </h2>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Animal lovers and single or childless testators frequently ask:{" "}
-                <em>"Can I leave ₹20 Lakhs or my residential flat to my dog or cat in my Will?"</em> While
-                the emotional bond between human guardians and their pets is profound, the statutory reality
+                <em>"Can I leave ₹20 Lakhs or my home flat to my dog or cat in my Will?"</em> While
+                the emotional bond between human guardians and their pets is profound, the legal reality
                 under Indian succession law is governed strictly by the Indian Succession Act, 1925.
               </p>
 
@@ -551,11 +551,11 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     <span>The Fatal Pitfall: Direct Bequests are Void</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Indian civil law, an animal is legally classified as movable property (personal
+                    Under Indian civil law, an animal is legally classified as cash asset (personal
                     chattel), not a <strong>juristic person</strong>. Section 112 of the Indian Succession
                     Act, 1925 specifies that a bequest cannot be made to a person who is not in existence at
-                    the testator&apos;s death, and courts have consistently held that non-human entities
-                    cannot hold title to property. A direct clause naming an animal as beneficiary causes the
+                    the Will maker&apos;s death, and courts have consistently held that non-human entities
+                    cannot hold title to asset. A direct clause naming an animal as heir causes the
                     legacy to fail completely.
                   </p>
                 </div>
@@ -567,9 +567,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     To guarantee lifelong quality of life for companion animals, Indian estate planners
-                    utilize two battle-tested statutory structures:
-                    <strong> (1) Conditional Caretaker Bequest</strong> under Section 127 with a mandatory
-                    Gift-Over under Section 131, or <strong>(2) A Testamentary Honorary Pet Care Trust</strong>{" "}
+                    utilize two battle-tested legal structures:
+                    <strong> (1) Conditional Caretaker Bequest</strong> under Section 127 with a needed
+                    Gift-Over under Section 131, or <strong>(2) A Will Honorary Pet Care Trust</strong>{" "}
                     under the Indian Trusts Act, 1882 with an independent Trust Protector.
                   </p>
                 </div>
@@ -579,9 +579,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <p className="leading-relaxed">
                   <strong>Judicial Doctrine:</strong> While the Supreme Court of India in{" "}
                   <em>Animal Welfare Board of India v. A. Nagaraja (2014) 7 SCC 547</em> recognized animals
-                  as having statutory rights under the Prevention of Cruelty to Animals Act, 1960 and Article
+                  as having legal rights under the Prevention of Cruelty to Animals Act, 1960 and Article
                   21 of the Constitution, this has not been extended to encompass legal estate ownership or
-                  testamentary capacity. Property must always vest in a human or juristic legal entity.
+                  Will capacity. Asset must always vest in a human or juristic legal entity.
                 </p>
               </div>
             </section>
@@ -600,7 +600,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     <span>STATUTORY ESTATE ALLOCATION CALCULATOR</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1">
-                    2. Interactive Pet Care &amp; Charity Allocation Calculator
+                    2. Free Pet Care &amp; Charity Allocation Tool
                   </h3>
                 </div>
                 <span className="self-start sm:self-auto px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
@@ -888,7 +888,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 3. Direct Bequest vs Caretaker Trust: Legal Comparison
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Choosing the appropriate testamentary framework determines whether your intentions will
+                Choosing the appropriate Will framework determines whether your intentions will
                 stand in court or be struck down as invalid. The table below compares the legal mechanics,
                 enforceability, and tax consequences of four distinct structuring methods in India.
               </p>
@@ -938,7 +938,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="p-3.5 font-extrabold text-[#172228]">
-                        Testamentary Honorary Pet Care Trust
+                        Will Honorary Pet Care Trust
                       </td>
                       <td className="p-3.5">Indian Trusts Act, 1882 ss. 5 &amp; 6</td>
                       <td className="p-3.5">
@@ -979,7 +979,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 4. Conditional Caretaker Bequest: Gift-Over Mechanics
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                The most popular and legally robust solution for single testators is naming a human caregiver
+                The most popular and legally robust solution for single Will makers is naming a human caregiver
                 (such as a domestic help, trusted sibling, or friend) and attaching strict conditions
                 subsequent. If not drafted precisely, however, the caretaker may pocket the funds and neglect
                 the animal without consequences.
@@ -988,7 +988,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               <div className="space-y-3 bg-white p-5 rounded-2xl border border-slate-200">
                 <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                  <span>The Four Statutory Pillars of an Enforceable Caretaker Clause</span>
+                  <span>The Four Legal Pillars of an Enforceable Caretaker Clause</span>
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
@@ -1000,17 +1000,17 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">
-                      2. Mandatory Section 131 Gift-Over:
+                      2. Needed Section 131 Gift-Over:
                     </span>
                     Explicitly invoke Section 131 of the Indian Succession Act, providing that on neglect or
-                    abandonment, legal title immediately terminates and vests in a designated secondary NGO.
+                    abandonment, legal title right away terminates and vests in a designated secondary NGO.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">
                       3. Periodic Veterinary Certification:
                     </span>
                     Condition the release of quarterly maintenance on the caretaker presenting a physical
-                    health and vaccination certificate signed by a licensed registered veterinary surgeon.
+                    health and vaccination paper signed by a licensed filed veterinary surgeon.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">
@@ -1028,19 +1028,19 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 =================================================================== */}
             <section id="testamentary-pet-trust" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                5. Testamentary Pet Care Trust: Indian Trusts Act Model
+                5. Will Pet Care Trust: Indian Trusts Act Model
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                For High-Net-Worth Individuals (HNIs) owning multiple companion animals, horses, or rare
+                For High-Net-Worth People (HNIs) owning multiple companion animals, horses, or rare
                 species with extended life expectancies, a simple caretaker bequest may lack sufficient
-                institutional governance. Under Sections 5 and 6 of the Indian Trusts Act, 1882, a testator
-                can direct the creation of a private testamentary trust upon demise.
+                institutional governance. Under Sections 5 and 6 of the Indian Trusts Act, 1882, a Will maker
+                can direct the creation of a private Will trust upon demise.
               </p>
 
               <div className="p-5 rounded-2xl bg-[#FAF7F0] border border-slate-300 space-y-3 text-xs text-slate-700">
                 <div className="font-bold text-sm text-[#172228] flex items-center gap-2">
                   <Landmark className="w-4 h-4 text-[#5F7E75]" />
-                  <span>The Tripartite Governance Structure of a Testamentary Pet Trust</span>
+                  <span>The Tripartite Governance Structure of a Will Pet Trust</span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
                   <div className="p-3 rounded-xl bg-white border border-slate-200">
@@ -1051,11 +1051,11 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <div className="p-3 rounded-xl bg-white border border-slate-200">
                     <span className="font-bold text-slate-900 block mb-1 text-xs">The Caregiver / Guardian</span>
                     Provides day-to-day physical custody, housing, and emotional care at their home or the
-                    testator&apos;s dedicated estate property.
+                    Will maker&apos;s dedicated estate asset.
                   </div>
                   <div className="p-3 rounded-xl bg-white border border-slate-200">
                     <span className="font-bold text-slate-900 block mb-1 text-xs">The Trust Protector (Enforcer)</span>
-                    An independent third party (such as an advocate or veterinary doctor) empowered to audit
+                    An independent third party (such as an lawyer or veterinary doctor) empowered to audit
                     accounts, inspect the premises, and remove the Trustee if fiduciary duty is breached.
                   </div>
                 </div>
@@ -1071,8 +1071,8 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Leaving a legacy to charitable causes, such as animal sanctuaries, cancer research hospitals,
-                orphanages, or religious institutions, is one of the most noble acts of testamentary planning.
-                However, to protect the donation from being diluted by taxes, specific provisions under the
+                orphanages, or religious institutions, is one of the most noble acts of Will planning.
+                However, to protect the donation from being diluted by taxes, specific rules under the
                 Income Tax Act, 1961 must be strictly observed.
               </p>
 
@@ -1085,7 +1085,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Indian tax law, charitable trusts are legally required to spend at least 85% of their
                     annual income in the same financial year. If you leave ₹1 Crore without a specific
-                    direction, the charity may face tax scrutiny if it cannot deploy ₹85 Lakhs immediately.
+                    direction, the charity may face tax scrutiny if it cannot deploy ₹85 Lakhs right away.
                     By inserting a <strong>Corpus Donation Direction under Section 11(1)(d)</strong>, the funds
                     are capitalized permanently, allowing the NGO to invest the principal and utilize only the
                     annual interest.
@@ -1095,13 +1095,13 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-2">
                   <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#C65378]" />
-                    <span>Mandatory NGO Verification Checklist</span>
+                    <span>Needed NGO Check Checklist</span>
                   </div>
                   <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                    <li>Valid registration under Section 12AB of the Income Tax Act.</li>
-                    <li>Active Section 80G approval certificate number.</li>
-                    <li>Permanent Account Number (PAN) issued to the official registered trust name.</li>
-                    <li>Registered Darpan Unique ID issued by NITI Aayog for government compliance.</li>
+                    <li>Valid filing under Section 12AB of the Income Tax Act.</li>
+                    <li>Active Section 80G approval paper number.</li>
+                    <li>Permanent Account Number (PAN) issued to the official filed trust name.</li>
+                    <li>Filed Darpan Unique ID issued by NITI Aayog for government compliance.</li>
                   </ul>
                 </div>
               </div>
@@ -1116,7 +1116,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Many outdated legal guides and templates cite Section 118 of the Indian Succession Act,
-                1925, warning testators that charitable bequests will be declared void if executed less than
+                1925, warning Will makers that charitable bequests will be declared void if signed less than
                 12 months before death. This is an obsolete myth.
               </p>
 
@@ -1135,16 +1135,16 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <span className="font-bold text-slate-900 block">Supreme Court Holding:</span>
                   <em>
                     &quot;Section 118 of the Indian Succession Act imposes an unreasonable restriction on the
-                    right of a person to bequeath their self-acquired property for religious or charitable
-                    purposes. A testator with near relatives was unfairly prevented from donating to charity
+                    right of a person to bequeath their self-acquired asset for religious or charitable
+                    purposes. A Will maker with near relatives was unfairly prevented from donating to charity
                     if death occurred within one year. Such discrimination between Christians and non-Christians
                     is wholly arbitrary and void.&quot;
                   </em>
                 </div>
                 <p className="text-[11px] text-rose-900">
                   <strong>Practical Takeaway:</strong> You can execute a Will leaving assets to a charity,
-                  animal sanctuary, temple, or church at any time before death without statutory waiting
-                  periods or deposit requirements.
+                  animal sanctuary, temple, or church at any time before death without legal waiting
+                  periods or deposit rules.
                 </p>
               </div>
             </section>
@@ -1159,10 +1159,10 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <span>INHERITANCE TAX &amp; CAPITAL GAINS TOOLS</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-black text-white leading-snug">
-                  Selling Inherited Property to Fund Your Pet Trust or Charity?
+                  Selling Inherited Asset to Fund Your Pet Trust or Charity?
                 </h3>
                 <p className="text-xs text-slate-300 max-w-xl leading-relaxed">
-                  Use our interactive Capital Gains Tax Calculator for inherited real estate to compute
+                  Use our free Capital Gains Tax Tool for inherited real estate to compute
                   Section 49(1) deemed cost, compare Budget 2024 grandfathering (12.5% vs 20% indexation),
                   and maximize Section 54 deductions.
                 </p>
@@ -1171,7 +1171,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 href="/tools/capital-gains-tax-calculator-inherited-property"
                 className="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-lg transition-transform hover:-translate-y-0.5"
               >
-                <span>Launch Tax Calculator</span>
+                <span>Launch Tax Tool</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1258,36 +1258,36 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 =================================================================== */}
             <section id="sro-witness-rules" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                9. SRO Registration &amp; Witness Selection Guidelines
+                9. SRO Filing &amp; Witness Selection Guidelines
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                When drafting non-standard testamentary provisions (such as conditioning bequests for animal
+                When drafting non-standard Will rules (such as conditioning bequests for animal
                 welfare or allocating substantial capital to public trusts), relatives are far more prone to
-                challenge the Will. Rigorous execution compliance before the Sub-Registrar Office (SRO) is
-                mandatory.
+                fight the Will. Rigorous signing compliance before the SRO office (SRO) is
+                needed.
               </p>
 
               <div className="p-5 rounded-2xl bg-white border border-rose-200 space-y-4">
                 <div className="flex items-center gap-2 font-bold text-rose-900 text-sm">
                   <AlertTriangle className="w-4 h-4 text-rose-600 shrink-0" />
-                  <span>The Section 67 Attesting Witness Disqualification Trap</span>
+                  <span>The Section 67 Signing Witness Disqualification Trap</span>
                 </div>
                 <p className="text-xs text-slate-700 leading-relaxed">
                   Under <strong>Section 67 of the Indian Succession Act, 1925</strong>, any bequest, legacy,
-                  or beneficial appointment given to an attesting witness (or to their husband or wife) is
+                  or beneficial appointment given to an signing witness (or to their husband or wife) is
                   declared <strong>completely void</strong>. If you ask your nominated pet caretaker, or an
-                  official/trustee of the charitable NGO, to sign as an attesting witness, the Will will be
+                  official/trustee of the charitable NGO, to sign as an signing witness, the Will will be
                   admitted to probate, but the caretaker will forfeit 100% of their maintenance stipend and
                   honorarium!
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
                   <div className="p-3 bg-emerald-50 rounded-xl border border-emerald-100 text-emerald-950 font-semibold">
-                    ✅ Eligible Attesting Witnesses: Independent family physician, neighbors, colleagues,
-                    chartered accountants, or advocates who receive ZERO financial benefit under the Will.
+                    ✅ Eligible Signing Witnesses: Independent family physician, neighbors, colleagues,
+                    chartered accountants, or lawyers who receive ZERO financial benefit under the Will.
                   </div>
                   <div className="p-3 bg-rose-50 rounded-xl border border-rose-100 text-rose-950 font-semibold">
                     ❌ Strictly Ineligible as Witnesses: Nominated caretaker, secondary animal shelter
-                    representatives, charity founders, or executors who are also beneficiaries.
+                    agents, charity founders, or executors who are also heirs.
                   </div>
                 </div>
               </div>
@@ -1295,24 +1295,24 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               {/* Step by Step Checklist */}
               <div className="bg-white p-5 rounded-2xl border border-slate-200 space-y-3">
                 <h3 className="font-bold text-slate-900 text-sm">
-                  Six-Step Execution Checklist for Animal &amp; Charity Wills
+                  Six-Step Signing Checklist for Animal &amp; Charity Wills
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-600">
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                    <span className="font-bold text-slate-900 block mb-1">Step 1: Medical Certificate</span>
-                    Obtain a sound mental health certificate on doctor&apos;s letterhead on the day of signing.
+                    <span className="font-bold text-slate-900 block mb-1">Step 1: Medical Paper</span>
+                    Obtain a sound mental health paper on doctor&apos;s letterhead on the day of signing.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">Step 2: Two Witnesses</span>
-                    Ensure both witnesses observe the testator sign each page in their concurrent presence.
+                    Ensure both witnesses observe the Will maker sign each page in their concurrent presence.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                    <span className="font-bold text-slate-900 block mb-1">Step 3: Sub-Registrar Book 3</span>
-                    Register the document at the local SRO under Book 3 (Register of Wills) with biometric scans.
+                    <span className="font-bold text-slate-900 block mb-1">Step 3: SRO Book 3</span>
+                    Register the paper at the local SRO under Book 3 (Register of Wills) with biometric scans.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">Step 4: Microchip ID Records</span>
-                    Attach the pet&apos;s municipal licensing number and microchip veterinary certificate.
+                    Attach the pet&apos;s city licensing number and microchip veterinary paper.
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">Step 5: NGO Acceptance Letter</span>
@@ -1320,7 +1320,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="font-bold text-slate-900 block mb-1">Step 6: Video Recording</span>
-                    Capture an unedited video of the testator explaining reasons for the pet and charity gifts.
+                    Capture an unedited video of the Will maker explaining reasons for the pet and charity gifts.
                   </div>
                 </div>
               </div>
@@ -1334,9 +1334,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 10. Real Case Studies: Delhi, Mumbai &amp; Bengaluru
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Examining practical scenarios drafted by our succession attorneys illustrates how to balance
+                Examining practical scenarios drafted by our estate attorneys illustrates how to balance
                 compassion for companion animals with rock-solid legal protection against predatory family
-                challenges.
+                fights.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1345,7 +1345,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-[#C65378] uppercase">Case Study 1: South Delhi</span>
                     <span className="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-bold">
-                      Childless Testator
+                      Childless Will maker
                     </span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm leading-snug">
@@ -1353,10 +1353,10 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A retired senior executive in Vasant Vihar wished to ensure his two elderly dogs were cared
-                    for by his longtime domestic help. Our advocates drafted a Section 127 conditional clause
+                    for by his longtime domestic help. Our lawyers drafted a Section 127 conditional clause
                     granting ₹15,000/month stipend and direct hospital reimbursement. A Section 131 gift-over
                     named Friendicoes SECA as alternate guardian with unannounced bi-monthly inspections.
-                    Estranged nephews could not challenge the disposition.
+                    Estranged nephews could not fight the gift.
                   </p>
                 </div>
 
@@ -1395,22 +1395,22 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-black text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </h3>
                     <p className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel • AMA Legal Solutions
+                      Senior Estate Counsel • AMA Legal Solutions
                     </p>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      Enrolled with Bar Council of Delhi • Specialization in Testamentary Trusts &amp; Estate Planning
+                      Enrolled with Bar Council of Delhi • Specialization in Will Trusts &amp; Estate Planning
                     </p>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  AMA Legal Solutions is India&apos;s premier estate planning, succession litigation, and
-                  testamentary advisory chamber. Our team of senior advocates and trust lawyers has drafted
+                  AMA Legal Solutions is India&apos;s premier estate planning, estate court fights, and
+                  Will advisory chamber. Our team of senior lawyers and trust lawyers has drafted
                   hundreds of enforceable Wills for animal lovers, single guardians, and high-net-worth
-                  philanthropists. We advise on cross-border estate transfers, Sub-Registrar Book 3
+                  philanthropists. We advise on cross-border estate transfers, SRO Book 3
                   registrations, and High Court probate proceedings pan-India.
                 </p>
 
@@ -1421,7 +1421,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="text-base font-extrabold text-slate-900">15+ Yrs</span>
-                    <span className="text-[10px] text-slate-500 block uppercase">Succession Experience</span>
+                    <span className="text-[10px] text-slate-500 block uppercase">Estate Experience</span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="text-base font-extrabold text-slate-900">500+</span>
@@ -1429,7 +1429,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <span className="text-base font-extrabold text-slate-900">Pan-India</span>
-                    <span className="text-[10px] text-slate-500 block uppercase">SRO Registration Desk</span>
+                    <span className="text-[10px] text-slate-500 block uppercase">SRO Filing Desk</span>
                   </div>
                 </div>
 
@@ -1441,7 +1441,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     href="/contact"
                     className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold transition-colors"
                   >
-                    <span>Consult Succession Advocate</span>
+                    <span>Consult Estate Lawyer</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1497,16 +1497,16 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 =================================================================== */}
             <section id="statutory-citations" className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Official Legal Authorities
+                13. Legal Citations &amp; Official Legal Offices
               </h3>
               <div className="rounded-2xl bg-white border border-slate-200 p-5 space-y-3 text-xs text-slate-600">
                 <p className="leading-relaxed">
-                  The clauses and legal rules presented on this page are governed by the following statutory
-                  enactments and judicial authorities:
+                  The clauses and legal rules presented on this page are governed by the following legal
+                  enactments and judicial offices:
                 </p>
                 <ul className="space-y-2 list-disc pl-4 text-slate-700">
                   <li>
-                    <strong>Indian Succession Act, 1925:</strong> Section 67 (void gifts to attesting
+                    <strong>Indian Succession Act, 1925:</strong> Section 67 (void gifts to signing
                     witnesses), Section 112 (bequests to non-existent persons void), Section 114 (rule
                     against perpetuity), Section 117 (direction for accumulation), Section 127 (conditional
                     bequests), and Section 131 (gift-over upon breach).
@@ -1516,17 +1516,17 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     (2003) 6 SCC 611 (declaring Section 118 ISA unconstitutional).
                   </li>
                   <li>
-                    <strong>Indian Trusts Act, 1882:</strong> Sections 5 and 6 (creation of testamentary
+                    <strong>Indian Trusts Act, 1882:</strong> Sections 5 and 6 (creation of Will
                     trusts), Section 11 (fiduciary obligations of trustees).
                   </li>
                   <li>
                     <strong>Income Tax Act, 1961:</strong> Section 11(1)(d) (corpus donations exempt from 85%
-                    application threshold), Section 12AB (registration of charitable institutions), and
+                    form threshold), Section 12AB (filing of charitable institutions), and
                     Section 80G (deduction for donations).
                   </li>
                   <li>
-                    <strong>Registration Act, 1908:</strong> Section 17 &amp; Section 18(e) (optional Will
-                    registration before Sub-Registrar under Book 3).
+                    <strong>Filing Act, 1908:</strong> Section 17 &amp; Section 18(e) (a choice Will
+                    filing before SRO under Book 3).
                   </li>
                 </ul>
               </div>
@@ -1548,7 +1548,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
               <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 Protect your loyal companion from abandonment and ensure your charitable donations reach
                 genuine animal welfare causes. Start our self-serve online Will drafting flow or consult
-                with a succession advocate today.
+                with a estate lawyer today.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -1564,7 +1564,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                 >
                   <PhoneCall className="w-4 h-4 text-[#C65378]" />
-                  <span>Consult Succession Advocate</span>
+                  <span>Consult Estate Lawyer</span>
                 </Link>
               </div>
 
@@ -1579,11 +1579,33 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 </span>
                 <span className="flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Sub-Registrar Book 3 Formatted</span>
+                  <span>SRO Book 3 Formatted</span>
                 </span>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1596,21 +1618,21 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, conditional caretaker bequests, high-value
-                charitable foundations, and probate petition litigation before High Courts.
+                Expert in Indian testamentary jurisprudence, conditional caretaker bequests, high-value
+                charitable foundations, and probate petition court fights before High Courts.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1627,8 +1649,8 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   Protect Your Furry Child from Family Disregard
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Without a registered Will and Section 131 Gift-Over clause, pets are frequently given away
-                  or abandoned by relatives after a testator passes away.
+                  Without a filed Will and Section 131 Gift-Over clause, pets are frequently given away
+                  or abandoned by relatives after a Will maker passes away.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1653,7 +1675,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   Structuring Large Charitable Endowments or Complex Pet Trusts?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates structure private honorary trusts, corporate Section 8 animal
+                  Our estate lawyers structure private honorary trusts, corporate Section 8 animal
                   foundations, and temple endowment covenants pan-India.
                 </p>
                 <Link
@@ -1661,7 +1683,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1677,7 +1699,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                       href="/templates/testamentary-trust-clause-minor-child-will-format"
                       className="text-slate-600 hover:text-[#C65378] flex items-center justify-between group"
                     >
-                      <span>Testamentary Trust Clause Format</span>
+                      <span>Will Trust Clause Format</span>
                       <ArrowRight className="w-3 h-3 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
                     </Link>
                   </li>
@@ -1695,7 +1717,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                       href="/services/will-registration"
                       className="text-slate-600 hover:text-[#C65378] flex items-center justify-between group"
                     >
-                      <span>SRO Will Registration Service</span>
+                      <span>SRO Will Filing Service</span>
                       <ArrowRight className="w-3 h-3 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
                     </Link>
                   </li>
@@ -1704,7 +1726,7 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="text-slate-600 hover:text-[#C65378] flex items-center justify-between group"
                     >
-                      <span>Inherited Property Tax Calculator</span>
+                      <span>Inherited Asset Tax Tool</span>
                       <ArrowRight className="w-3 h-3 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
                     </Link>
                   </li>

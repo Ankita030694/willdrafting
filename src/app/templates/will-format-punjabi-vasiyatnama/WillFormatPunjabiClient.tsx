@@ -48,25 +48,25 @@ import {
 const TOC_ITEMS = [
   { id: "statutory-validity", label: "1. Legal Validity of Punjabi Will" },
   { id: "complete-punjabi-will-template", label: "2. Native Punjabi Vasiyatnama Format" },
-  { id: "agricultural-land-schedule", label: "3. Agricultural Land Schedule (Khewat/Khasra)" },
-  { id: "nri-children-inheritance", label: "4. NRI Children Inheritance & FEMA Rules" },
-  { id: "legal-comparison-table", label: "5. Registered vs Unregistered vs No Will" },
-  { id: "punjab-sro-registration-guide", label: "6. Punjab SRO NGDRS Registration SOP" },
-  { id: "revenue-mutation-sop", label: "7. Revenue Mutation (Jamabandi & Intiqal)" },
-  { id: "disinheritance-exclusion-clauses", label: "8. Disinheritance & Exclusion Clauses" },
-  { id: "witness-doctor-mandate", label: "9. Attesting Witnesses & Doctor Certificate" },
+  { id: "agricultural-land-schedule", label: "3. Farm Land Schedule (Khewat/Khasra)" },
+  { id: "nri-children-inheritance", label: "4. NRI Children Estate & FEMA Rules" },
+  { id: "legal-comparison-table", label: "5. Filed vs Plain vs No Will" },
+  { id: "punjab-sro-registration-guide", label: "6. Punjab SRO NGDRS Filing SOP" },
+  { id: "revenue-mutation-sop", label: "7. Revenue Name Change (Jamabandi & Intiqal)" },
+  { id: "disinheritance-exclusion-clauses", label: "8. Leaving Out & Exclusion Clauses" },
+  { id: "witness-doctor-mandate", label: "9. Signing Witnesses & Doctor Paper" },
   { id: "punjabi-legal-glossary", label: "10. Punjabi Revenue Terms Glossary" },
   { id: "landmark-case-studies", label: "11. Landmark Case Studies (Punjab)" },
   { id: "will-drafting-sop", label: "12. Step-by-Step Will Drafting SOP" },
-  { id: "institutional-profile", label: "13. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "13. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "15. Statutory Citations & Punjab Portals" },
+  { id: "statutory-citations", label: "15. Legal Citations & Punjab Portals" },
 ];
 
 const FAQS = [
   {
     q: "ਕੀ ਪੰਜਾਬੀ ਵਿੱਚ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ ਕਾਨੂੰਨੀ ਤੌਰ ਤੇ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਹੈ? (Is a Punjabi Will legally valid?)",
-    a: "ਹਾਂ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਾਨੂੰਨੀ ਹੈ। ਭਾਰਤੀ ਉੱਤਰਾਧਿਕਾਰ ਕਾਨੂੰਨ, 1925 (Indian Succession Act, 1925) ਦੀ ਧਾਰਾ 63 ਅਤੇ 74 ਅਨੁਸਾਰ ਵਸੀਅਤ ਕਿਸੇ ਵੀ ਭਾਸ਼ਾ ਵਿੱਚ ਲਿਖੀ ਜਾ ਸਕਦੀ ਹੈ। ਗੁਰਮੁਖੀ ਪੰਜਾਬੀ ਵਿੱਚ ਸਾਦੇ ਕਾਗਜ਼ ਤੇ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ, ਜੇਕਰ ਉਸ ਤੇ ਵਸੀਅਤ-ਕਰਤਾ ਦੇ ਦਸਤਖਤ ਅਤੇ ਦੋ ਬਾਲਗ ਗਵਾਹਾਂ ਦੀ ਹਾਜ਼ਰੀ ਹੋਵੇ, ਤਾਂ ਭਾਰਤੀ ਅਦਾਲਤਾਂ ਅਤੇ ਮਾਲ ਵਿਭਾਗ (Revenue Department) ਵਿੱਚ 100% ਜਾਇਜ਼ ਹੈ।",
+    a: "ਹਾਂ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਾਨੂੰਨੀ ਹੈ। ਭਾਰਤੀ ਉੱਤਰਾਧਿਕਾਰ ਕਾਨੂੰਨ, 1925 (Indian Succession Act, 1925) ਦੀ ਧਾਰਾ 63 ਅਤੇ 74 ਅਨੁਸਾਰ ਵਸੀਅਤ ਕਿਸੇ ਵੀ ਭਾਸ਼ਾ ਵਿੱਚ ਲਿਖੀ ਜਾ ਸਕਦੀ ਹੈ। ਗੁਰਮੁਖੀ ਪੰਜਾਬੀ ਵਿੱਚ ਸਾਦੇ ਕਾਗਜ਼ ਤੇ ਲਿਖਿਆ ਵਸੀਅਤਨਾਮਾ, ਜੇਕਰ ਉਸ ਤੇ ਵਸੀਅਤ-ਕਰਤਾ ਦੇ ਦਸਤਖਤ ਅਤੇ ਦੋ ਬਾਲਗ ਗਵਾਹਾਂ ਦੀ ਹਾਜ਼ਰੀ ਹੋਵੇ, ਤਾਂ ਭਾਰਤੀ ਅਦਾਲਤਾਂ ਅਤੇ ਮਾਲ ਵਿਭਾਗ (Revenue Office) ਵਿੱਚ 100% ਜਾਇਜ਼ ਹੈ।",
   },
   {
     q: "ਕੀ ਪੰਜਾਬ ਵਿੱਚ ਵਸੀਅਤਨਾਮੇ ਦੀ ਪ੍ਰੋਬੇਟ (Probate) ਲੈਣੀ ਜ਼ਰੂਰੀ ਹੈ?",
@@ -89,12 +89,12 @@ const FAQS = [
     a: "ਬਿਲਕੁਲ ਨਹੀਂ! ਭਾਰਤੀ ਉੱਤਰਾਧਿਕਾਰ ਕਾਨੂੰਨ ਦੀ ਧਾਰਾ 67 ਅਨੁਸਾਰ, ਜੇਕਰ ਕੋਈ ਵਿਅਕਤੀ ਵਸੀਅਤ ਵਿੱਚ ਗਵਾਹ ਬਣਦਾ ਹੈ, ਤਾਂ ਉਸਨੂੰ ਜਾਂ ਉਸਦੇ ਪਤੀ/ਪਤਨੀ ਨੂੰ ਦਿੱਤੀ ਗਈ ਜਾਇਦਾਦ ਕਾਨੂੰਨੀ ਤੌਰ ਤੇ ਰੱਦ (Void) ਹੋ ਜਾਂਦੀ ਹੈ। ਇਸ ਲਈ ਬੱਚਿਆਂ, ਪਤਨੀ ਜਾਂ ਕਿਸੇ ਵੀ ਵਾਰਸ ਨੂੰ ਕਦੇ ਗਵਾਹ ਨਾ ਬਣਾਓ। ਗਵਾਹ ਹਮੇਸ਼ਾ ਨਿਰਪੱਖ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਜਿਵੇਂ ਪਰਿਵਾਰਕ ਡਾਕਟਰ, ਨੰਬਰਦਾਰ ਜਾਂ ਵਕੀਲ।",
   },
   {
-    q: "ਵਸੀਅਤ ਤੋਂ ਬਾਅਦ ਪਟਵਾਰੀ ਪਾਸੋਂ ਇੰਤਕਾਲ (Mutation) ਕਿਵੇਂ ਦਰਜ ਹੁੰਦਾ ਹੈ?",
+    q: "ਵਸੀਅਤ ਤੋਂ ਬਾਅਦ ਪਟਵਾਰੀ ਪਾਸੋਂ ਇੰਤਕਾਲ (Name Change) ਕਿਵੇਂ ਦਰਜ ਹੁੰਦਾ ਹੈ?",
     a: "ਵਸੀਅਤ-ਕਰਤਾ ਦੇ ਦੇਹਾਂਤ ਤੋਂ ਬਾਅਦ ਵਾਰਸ ਪੰਜਾਬ ਲੈਂਡ ਰੈਵੇਨਿਊ ਐਕਟ ਦੀ ਧਾਰਾ 34 ਤਹਿਤ ਹਲਕਾ ਪਟਵਾਰੀ ਕੋਲ ਮੌਤ ਦਾ ਸਰਟੀਫਿਕੇਟ, ਵਸੀਅਤ ਦੀ ਕਾਪੀ ਅਤੇ ਜਮ੍ਹਾਬੰਦੀ ਪੇਸ਼ ਕਰਦਾ ਹੈ। ਪਟਵਾਰੀ ਪਰਤ ਪਤਵਾਰ ਵਿੱਚ ਇੰਤਕਾਲ ਦਰਜ ਕਰਦਾ ਹੈ। ਕਾਨੂੰਨਗੋ ਦੀ ਤਸਦੀਕ ਤੋਂ ਬਾਅਦ ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਜਾਂ ਤਹਿਸੀਲਦਾਰ ਪਿੰਡ ਦੇ ਜਲਸਾ-ਏ-ਆਮ ਵਿੱਚ ਖੁੱਲ੍ਹੀ ਤਸਦੀਕ ਕਰਕੇ ਇੰਤਕਾਲ ਮਨਜ਼ੂਰ ਕਰਦਾ ਹੈ।",
   },
   {
     q: "ਕੀ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣੀ ਜ਼ਰੂਰੀ ਹੈ?",
-    a: "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਕਟ, 1908 ਦੀ ਧਾਰਾ 18(e) ਤਹਿਤ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣਾ ਮਰਜ਼ੀ ਅਨੁਸਾਰ (Optional) ਹੈ। ਬਿਨਾਂ ਰਜਿਸਟਰੀ ਵਾਲੀ ਵਸੀਅਤ ਵੀ ਜਾਇਜ਼ ਹੁੰਦੀ ਹੈ। ਪ੍ਰੰਤੂ ਪੰਜਾਬ ਵਿੱਚ NGDRS ਪੋਰਟਲ ਰਾਹੀਂ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਰਜਿਸਟਰੀ ਕਰਵਾਉਣ ਨਾਲ ਭਵਿੱਖ ਵਿੱਚ ਜਾਅਲਸਾਜ਼ੀ ਜਾਂ ਜ਼ਬਰਦਸਤੀ ਦੇ ਝੂਠੇ ਦੋਸ਼ਾਂ ਤੋਂ ਬਚਾਅ ਹੁੰਦਾ ਹੈ।",
+    a: "ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਕਟ, 1908 ਦੀ ਧਾਰਾ 18(e) ਤਹਿਤ ਵਸੀਅਤ ਰਜਿਸਟਰ ਕਰਵਾਉਣਾ ਮਰਜ਼ੀ ਅਨੁਸਾਰ (A Choice) ਹੈ। ਬਿਨਾਂ ਰਜਿਸਟਰੀ ਵਾਲੀ ਵਸੀਅਤ ਵੀ ਜਾਇਜ਼ ਹੁੰਦੀ ਹੈ। ਪ੍ਰੰਤੂ ਪੰਜਾਬ ਵਿੱਚ NGDRS ਪੋਰਟਲ ਰਾਹੀਂ ਸੁਬ-ਰਜਿਸਟਰਾਰ ਦਫ਼ਤਰ ਵਿੱਚ ਰਜਿਸਟਰੀ ਕਰਵਾਉਣ ਨਾਲ ਭਵਿੱਖ ਵਿੱਚ ਜਾਅਲਸਾਜ਼ੀ ਜਾਂ ਜ਼ਬਰਦਸਤੀ ਦੇ ਝੂਠੇ ਦੋਸ਼ਾਂ ਤੋਂ ਬਚਾਅ ਹੁੰਦਾ ਹੈ।",
   },
   {
     q: "ਕੀ ਕਿਸੇ ਨਾਫ਼ਰਮਾਨ ਪੁੱਤਰ ਜਾਂ ਧੀ ਨੂੰ ਜਾਇਦਾਦ ਵਿੱਚੋਂ ਬੇਦਖ਼ਲ (Disinherit) ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
@@ -107,19 +107,19 @@ const FAQS = [
 ];
 
 const GLOSSARY_TERMS = [
-  { pa: "ਵਸੀਅਤਨਾਮਾ (Vasiyatnama)", en: "Last Will and Testament", desc: "Legal declaration of the testator's intention regarding disposal of their property after death." },
+  { pa: "ਵਸੀਅਤਨਾਮਾ (Vasiyatnama)", en: "Last Will and Testament", desc: "Legal declaration of the Will maker's intention regarding disposal of their asset after death." },
   { pa: "ਵਸੀਅਤ-ਕਰਤਾ (Vasiyatkarta)", en: "Testator", desc: "The person of sound mind who executes, signs, and authorizes the Will." },
-  { pa: "ਵਸੀਕਾਰ / ਕਾਰਕੁੰਨ (Vaseekar)", en: "Executor", desc: "The trusted person appointed to administer, distribute, and execute the testamentary wishes." },
-  { pa: "ਵਸੀਅਤ-ਗ੍ਰਹੀਤਾ / ਵਾਰਸ (Waris)", en: "Beneficiary / Legatee", desc: "The individual or legal heir who receives the designated bequest or property under the Will." },
+  { pa: "ਵਸੀਕਾਰ / ਕਾਰਕੁੰਨ (Vaseekar)", en: "Executor", desc: "The trusted person appointed to administer, distribute, and execute the Will wishes." },
+  { pa: "ਵਸੀਅਤ-ਗ੍ਰਹੀਤਾ / ਵਾਰਸ (Waris)", en: "Beneficiary / Legatee", desc: "The single or legal heir who receives the designated bequest or asset under the Will." },
   { pa: "ਜਮ੍ਹਾਬੰਦੀ (Jamabandi)", en: "Record of Rights (RoR)", desc: "The core Punjab revenue land register prepared quadrennially detailing ownership and cultivation." },
-  { pa: "ਖੇਵਟ ਨੰਬਰ (Khewat Number)", en: "Ownership Khata Number", desc: "The serial number in Jamabandi identifying an individual or group of co-owners holding land." },
+  { pa: "ਖੇਵਟ ਨੰਬਰ (Khewat Number)", en: "Ownership Khata Number", desc: "The serial number in Jamabandi identifying an single or group of co-owners holding land." },
   { pa: "ਖਤੌਨੀ ਨੰਬਰ (Khatauni Number)", en: "Cultivator Holding Number", desc: "The number identifying the specific cultivator, tenant, or co-sharer working the parcel." },
   { pa: "ਖਸਰਾ ਨੰਬਰ (Khasra Number)", en: "Survey Field Parcel Number", desc: "The specific cadastral plot number designating exact physical field boundaries on village map." },
-  { pa: "ਮੁਰੱਬਾ (Murabba)", en: "Square Block (25 Acres)", desc: "A standard agricultural revenue block in Punjab comprising 25 killas (acres)." },
+  { pa: "ਮੁਰੱਬਾ (Murabba)", en: "Square Block (25 Acres)", desc: "A standard farm revenue block in Punjab comprising 25 killas (acres)." },
   { pa: "ਕਿੱਲਾ / ਕਨਾਲ / ਮਰਲਾ (Killa / Kanal / Marla)", en: "Land Measurement Units", desc: "1 Killa = 8 Kanals = 1 Acre; 1 Kanal = 20 Marlas (each Marla = approx 272 sq ft in Punjab standard)." },
-  { pa: "ਹੱਦਬਸਤ ਨੰਬਰ (Hadbast Number)", en: "Revenue Estate Village Code", desc: "The permanent administrative census number assigned to each revenue village (Mauza) in Punjab." },
-  { pa: "ਇੰਤਕਾਲ / ਦਾਖ਼ਲ-ਖ਼ਾਰਿਜ (Intiqal)", en: "Mutation of Title", desc: "The official administrative updating of land title in revenue records following succession or sale." },
-  { pa: "ਫਰਦ (Fard)", en: "Certified Revenue Extract", desc: "Official copy of the Jamabandi record issued by the Revenue Department (PLRS) verifying ownership." },
+  { pa: "ਹੱਦਬਸਤ ਨੰਬਰ (Hadbast Number)", en: "Revenue Estate Village Code", desc: "The permanent office census number assigned to each revenue village (Mauza) in Punjab." },
+  { pa: "ਇੰਤਕਾਲ / ਦਾਖ਼ਲ-ਖ਼ਾਰਿਜ (Intiqal)", en: "Mutation of Title", desc: "The official office updating of land title in revenue records following estate or sale." },
+  { pa: "ਫਰਦ (Fard)", en: "Certified Revenue Extract", desc: "Official copy of the Jamabandi record issued by the Revenue Office (PLRS) verifying ownership." },
   { pa: "ਨਹਿਰੀ / ਚਾਹੀ / ਬਾਰਾਨੀ (Nehri / Chahi / Barani)", en: "Irrigation Classifications", desc: "Nehri = Canal-fed water share; Chahi = Tube-well irrigated land; Barani = Rainfed non-irrigated soil." },
 ];
 
@@ -136,7 +136,7 @@ export default function WillFormatPunjabiClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-validity");
+  const [activeId, setActiveId] = useState<string>("legal-validity");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [templateLanguage, setTemplateLanguage] = useState<"punjabi" | "english">("punjabi");
   const [copiedMainWill, setCopiedMainWill] = useState<boolean>(false);
@@ -378,9 +378,9 @@ Doctor Signature & Official Seal: __________________________"`;
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Complete legal guide and free copyable Gurmukhi Punjabi Will format. Features agricultural
+            Complete legal guide and free copyable Gurmukhi Punjabi Will format. Features farm
             land schedules with <strong>Khewat, Khatauni &amp; Khasra</strong> numbers, NRI children
-            bequests, and Punjab Sub-Registrar execution rules.
+            bequests, and Punjab SRO signing rules.
           </p>
 
           {/* Hero Action CTAs */}
@@ -398,7 +398,7 @@ Doctor Signature & Official Seal: __________________________"`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -476,11 +476,11 @@ Doctor Signature & Official Seal: __________________________"`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 59, 63, 67, 74 &amp; 213 of the Indian Succession Act, 1925,
-                read with the Punjab Land Revenue Act, 1887 and Punjab Registration Rules.
+                read with the Punjab Land Revenue Act, 1887 and Punjab Filing Rules.
               </p>
             </div>
           </aside>
@@ -508,26 +508,26 @@ Doctor Signature & Official Seal: __________________________"`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Agricultural Revenue Precision:</strong> Generic property descriptions fail in
-                    Punjab. Agricultural land bequests must explicitly enumerate <em>Khewat</em>,{" "}
+                    <strong>Farm Revenue Precision:</strong> Generic asset descriptions fail in
+                    Punjab. Farm land bequests must explicitly enumerate <em>Khewat</em>,{" "}
                     <em>Khatauni</em>, <em>Khasra</em>, <em>Murabba</em>, <em>Killa</em>, and canal water
-                    irrigation turns (Nehri Warabandi) to ensure seamless Jamabandi mutation.
+                    irrigation turns (Nehri Warabandi) to ensure seamless Jamabandi name change.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>No Mandatory Probate in Punjab:</strong> Under Section 213(2) read with Section 57,
-                    probate from a civil court is <em>not mandatory</em> in the State of Punjab. Beneficiaries
-                    can present the registered Will directly before the Halqa Patwari for title mutation.
+                    <strong>No Needed Probate in Punjab:</strong> Under Section 213(2) read with Section 57,
+                    probate from a civil court is <em>not needed</em> in the State of Punjab. Heirs
+                    can present the filed Will directly before the Halqa Patwari for title name change.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>FEMA Protection for NRI Children:</strong> Under Section 6(5) of FEMA, non-resident
-                    Indian children residing in Canada, the UK, or the USA can legally inherit agricultural
-                    land and ancestral real estate in Punjab without prior RBI approval.
+                    Indian children residing in Canada, the UK, or the USA can legally inherit farm
+                    land and family real estate in Punjab without prior RBI approval.
                   </span>
                 </li>
               </ul>
@@ -540,29 +540,29 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Validity: Section 63 Succession Act in Punjab
+                1. Legal Validity: Section 63 Estate Act in Punjab
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Punjab, estate planning for agricultural families and urban property owners is deeply
-                  intertwined with cultural traditions and ancestral land holdings. A frequent misconception is
-                  that a legally binding Will must be drafted in English by an advocate or typed on judicial
+                  In Punjab, estate planning for farm families and urban asset owners is deeply
+                  intertwined with cultural traditions and family land holdings. A frequent misconception is
+                  that a legally binding Will must be drafted in English by an lawyer or typed on judicial
                   stamp paper.
                 </p>
                 <p>
                   Under Section 63 of the <strong>Indian Succession Act, 1925</strong>, any person of sound
                   disposing mind who is not a minor may execute a Will in any vernacular language, including
                   Gurmukhi Punjabi. Section 74 clarifies that the wording of a Will needs no technical terms.
-                  The only statutory requirements are that the testator signs or affixes their thumb impression,
-                  and at least two competent witnesses attest the document in the testator&apos;s physical presence.
+                  The only legal rules are that the Will maker signs or affixes their thumb impression,
+                  and at least two competent witnesses attest the paper in the Will maker&apos;s physical presence.
                 </p>
                 <p>
-                  Furthermore, under Section 18(e) of the Registration Act, 1908, registration of a Will remains
-                  optional throughout Punjab. An unregistered handwritten Punjabi Will (ਹੱਥ-ਲਿਖਤ ਵਸੀਅਤਨਾਮਾ) on
+                  Also, under Section 18(e) of the Filing Act, 1908, filing of a Will remains
+                  a choice throughout Punjab. An plain handwritten Punjabi Will (ਹੱਥ-ਲਿਖਤ ਵਸੀਅਤਨਾਮਾ) on
                   plain A4 paper carries equal legal validity in court. However, given the high prevalence of
-                  land litigation in agricultural belts like Jalandhar, Ludhiana, Hoshiarpur, and Bathinda,
-                  voluntary registration at the Sub-Registrar Office via the NGDRS portal provides an unshakeable
-                  evidentiary shield.
+                  land court fights in farm belts like Jalandhar, Ludhiana, Hoshiarpur, and Bathinda,
+                  voluntary filing at the SRO office via the NGDRS portal provides an unshakeable
+                  proof shield.
                 </p>
               </div>
             </section>
@@ -577,7 +577,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 2. Complete Punjabi Vasiyatnama Format: Gurmukhi Template
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is the comprehensive, lawyer-vetted Punjabi Vasiyatnama template. Use the toggle to view
+                Below is the full, lawyer-vetted Punjabi Vasiyatnama template. Use the toggle to view
                 either the authentic Gurmukhi Punjabi script or the official English translation.
               </p>
 
@@ -647,7 +647,7 @@ Doctor Signature & Official Seal: __________________________"`;
 
                 <div className="text-[11px] text-slate-500 flex items-center justify-between pt-2">
                   <span>Standard Plain Paper / Green Ledger Format</span>
-                  <span>Section 63 Succession Act &bull; Two Witnesses Required</span>
+                  <span>Section 63 Estate Act &bull; Two Witnesses Required</span>
                 </div>
               </div>
             </section>
@@ -667,7 +667,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 <div className="flex items-center gap-2">
                   <FileCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>
-                    <strong>Official Visual Guide:</strong> Gurmukhi Punjabi Vasiyatnama Architecture &amp; Execution Essentials
+                    <strong>Official Visual Guide:</strong> Gurmukhi Punjabi Vasiyatnama Architecture &amp; Signing Essentials
                   </span>
                 </div>
                 <span className="text-[11px] text-white/60">
@@ -683,12 +683,12 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>PUNJAB REVENUE SYSTEM</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Agricultural Land Schedule: Khewat, Khatauni &amp; Khasra
+                3. Farm Land Schedule: Khewat, Khatauni &amp; Khasra
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The most common reason for mutation rejection or bitter court litigation in Punjab is an
-                  ambiguous land description. Merely writing <em>&quot;my 5 killas of agricultural land in village
+                  The most common reason for name change rejection or bitter court court fights in Punjab is an
+                  ambiguous land description. Merely writing <em>&quot;my 5 killas of farm land in village
                   Nurpur&quot;</em> is legally defective because it does not identify which specific parcel or
                   co-ownership share is being bequeathed.
                 </p>
@@ -703,7 +703,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     revenue village (Mauza).
                   </li>
                   <li>
-                    <strong>Khewat Number (ਖੇਵਟ ਨੰਬਰ):</strong> The joint or individual ownership account of
+                    <strong>Khewat Number (ਖੇਵਟ ਨੰਬਰ):</strong> The joint or single ownership account of
                     proprietors. If co-shared, state whether you are bequeathing the entire parcel or your
                     undivided fractional share (e.g. 1/3rd share).
                   </li>
@@ -728,7 +728,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Wheat className="w-4 h-4 text-[#C65378]" />
-                    <span>Copy-Paste Agricultural Land Schedule Block (Gurmukhi)</span>
+                    <span>Copy-Paste Farm Land Schedule Block (Gurmukhi)</span>
                   </div>
                   <button
                     type="button"
@@ -764,20 +764,20 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>CROSS-BORDER SUCCESSION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. NRI Children Inheritance: Cross-Border Asset Bequests
+                4. NRI Children Estate: Cross-Border Asset Bequests
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   With millions of Punjabi families settled in Canada, the United Kingdom, the United States,
-                  Australia, and Europe, cross-border transmission of ancestral land in the Doaba, Majha, and
+                  Australia, and Europe, cross-border transfer of family land in the Doaba, Majha, and
                   Malwa regions is a high-stakes legal priority.
                 </p>
                 <p>
                   Under <strong>Section 6(5) of the Foreign Exchange Management Act, 1999 (FEMA)</strong>, an
                   NRI or OCI (Overseas Citizen of India) may hold, own, transfer, or invest in Indian real estate
-                  if such property was acquired by way of inheritance from a person resident in India. While NRIs
-                  are strictly prohibited from *purchasing* agricultural land or farmhouses in India, inheritance
-                  through a valid testamentary Will is completely legal and protected by statute.
+                  if such asset was acquired by way of estate from a person resident in India. While NRIs
+                  are strictly prohibited from *purchasing* farm land or farmhouses in India, estate
+                  through a valid Will Will is completely legal and protected by statute.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2">
@@ -785,7 +785,7 @@ Doctor Signature & Official Seal: __________________________"`;
                       SEPARATE INDIAN WILL ADVANTAGE
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Executing an independent Indian Will for assets in Punjab avoids costly probate re-sealing
+                      Signing an independent Indian Will for assets in Punjab avoids costly probate re-sealing
                       petitions in foreign courts (such as Ontario or British Columbia Supreme Courts) and saves
                       months of bureaucratic delays.
                     </p>
@@ -795,7 +795,7 @@ Doctor Signature & Official Seal: __________________________"`;
                       REPATRIATION OF SALE PROCEEDS
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      When NRI children subsequently sell inherited land, RBI allows repatriation of up to
+                      When NRI children then sell inherited land, RBI allows sending cash home of up to
                       <strong> USD 1,000,000 per financial year</strong> from their NRO account upon submitting
                       Form 15CA and Form 15CB certified by a Chartered Accountant.
                     </p>
@@ -811,11 +811,11 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Legal Comparison: Registered vs Unregistered Punjabi Will
+                5. Legal Comparison: Filed vs Plain Punjabi Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Examine how different testamentary options compare under Punjab land revenue laws and civil
-                court procedures:
+                Examine how different Will options compare under Punjab land revenue laws and civil
+                court steps:
               </p>
 
               {/* Comparison Table */}
@@ -824,9 +824,9 @@ Doctor Signature & Official Seal: __________________________"`;
                   <thead className="bg-slate-900 text-white text-[11px] font-bold uppercase tracking-wider">
                     <tr>
                       <th className="py-3 px-4">Evaluation Criteria</th>
-                      <th className="py-3 px-4 text-[#C65378]">Registered Punjabi Will (NGDRS)</th>
-                      <th className="py-3 px-4">Plain Paper Unregistered Will</th>
-                      <th className="py-3 px-4">No Will (Intestate Succession)</th>
+                      <th className="py-3 px-4 text-[#C65378]">Filed Punjabi Will (NGDRS)</th>
+                      <th className="py-3 px-4">Plain Paper Plain Will</th>
+                      <th className="py-3 px-4">No Will (No-Will Estate)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -840,22 +840,22 @@ Doctor Signature & Official Seal: __________________________"`;
                       <td className="py-3 px-4 font-bold text-slate-900">Stamp Duty in Punjab</td>
                       <td className="py-3 px-4">₹0 (Zero Stamp Duty)</td>
                       <td className="py-3 px-4">₹0 (Plain paper allowed)</td>
-                      <td className="py-3 px-4">Partition deed stamp duties apply</td>
+                      <td className="py-3 px-4">Split deed stamp duties apply</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-bold text-slate-900">Evidentiary Presumption</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Proof Presumption</td>
                       <td className="py-3 px-4 font-semibold text-emerald-700">
-                        Strong statutory presumption under Section 114 Evidence Act
+                        Strong legal presumption under Section 114 Evidence Act
                       </td>
                       <td className="py-3 px-4">
-                        Requires attesting witness proof under Section 68
+                        Requires signing witness proof under Section 68
                       </td>
                       <td className="py-3 px-4 text-rose-700">
-                        Subject to legal heir certificate disputes
+                        Subject to legal heir paper fights
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-bold text-slate-900">Jamabandi Mutation Ease</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Jamabandi Name Change Ease</td>
                       <td className="py-3 px-4 font-semibold text-emerald-700">
                         Swift sanction by Tehsildar in Jalsa-e-Aam
                       </td>
@@ -885,7 +885,7 @@ Doctor Signature & Official Seal: __________________________"`;
                         Can be contested while NRI is abroad
                       </td>
                       <td className="py-3 px-4 text-rose-700">
-                        Co-sharers may file vexatious partition suits
+                        Co-sharers may file vexatious split suits
                       </td>
                     </tr>
                   </tbody>
@@ -900,13 +900,13 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>PUNJAB REGISTRATION SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Punjab SRO Registration Guide: NGDRS Appointment &amp; Fees
+                6. Punjab SRO Filing Guide: NGDRS Appointment &amp; Fees
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Punjab, document registration is digitized under the <strong>National Generic Document
-                  Registration System (NGDRS Punjab)</strong> via the portal{" "}
-                  <code>ngdrs.punjab.gov.in</code>. Registering a Will at the Sub-Registrar Office (SRO) in
+                  In Punjab, paper filing is digitized under the <strong>National Generic Paper
+                  Filing System (NGDRS Punjab)</strong> via the portal{" "}
+                  <code>ngdrs.punjab.gov.in</code>. Registering a Will at the SRO office (SRO) in
                   Ludhiana, Jalandhar, Amritsar, SAS Nagar (Mohali), Patiala, or Bathinda follows a structured
                   protocol:
                 </p>
@@ -927,7 +927,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     </div>
                     <div className="font-extrabold text-xs text-slate-900">In-Person SRO Appearance</div>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
-                      The Testator and two attesting witnesses must appear before the Sub-Registrar with original
+                      The Will maker and two signing witnesses must appear before the SRO with original
                       Aadhaar cards and passport photos.
                     </p>
                   </div>
@@ -937,7 +937,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     </div>
                     <div className="font-extrabold text-xs text-slate-900">Biometrics &amp; Book III Archival</div>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
-                      Thumbprints and digital web-camera photos are recorded. The registered Will is entered into
+                      Thumbprints and digital web-camera photos are recorded. The filed Will is entered into
                       confidential Book III.
                     </p>
                   </div>
@@ -946,7 +946,7 @@ Doctor Signature & Official Seal: __________________________"`;
                   <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
                   <span>
                     <strong>Fee Schedule in Punjab:</strong> Zero stamp duty is payable on a Will. A nominal
-                    registration fee (typically ₹200 to ₹500 plus pasting/facilitation charges) is deposited at the
+                    filing fee (typically ₹200 to ₹500 plus pasting/facilitation charges) is deposited at the
                     SRO counter.
                   </span>
                 </div>
@@ -960,20 +960,20 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>PUNJAB LAND REVENUE ACT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Revenue Mutation SOP: Jamabandi &amp; Patwari Intiqal Process
+                7. Revenue Name Change SOP: Jamabandi &amp; Patwari Intiqal Process
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A Will takes effect only upon the testator&apos;s death. In Punjab, transferring agricultural land
-                  title from the deceased parent to the legatee requires a formal Mutation (ਇੰਤਕਾਲ / Dakhil Kharij)
+                  A Will takes effect only upon the Will maker&apos;s death. In Punjab, transferring farm land
+                  title from the deceased parent to the legatee requires a formal Name Change (ਇੰਤਕਾਲ / Dakhil Kharij)
                   under <strong>Section 34 of the Punjab Land Revenue Act, 1887</strong>.
                 </p>
                 <div className="space-y-3 pt-1">
                   <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200/90 text-xs">
                     <span className="font-bold text-[#C65378] shrink-0">Step 1:</span>
                     <span>
-                      <strong>Submission to Halqa Patwari:</strong> The beneficiary submits an application along with
-                      the original death certificate, copy of the Will, and the latest Jamabandi / Fard copy.
+                      <strong>Submission to Halqa Patwari:</strong> The heir submits an form along with
+                      the original death paper, copy of the Will, and the latest Jamabandi / Fard copy.
                     </span>
                   </div>
                   <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200/90 text-xs">
@@ -986,8 +986,8 @@ Doctor Signature & Official Seal: __________________________"`;
                   <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200/90 text-xs">
                     <span className="font-bold text-[#C65378] shrink-0">Step 3:</span>
                     <span>
-                      <strong>Kanungo Verification:</strong> The Field Kanungo visits the village, compares the
-                      mutation entry against the previous quadrennial Jamabandi, and signs the verification report.
+                      <strong>Kanungo Check:</strong> The Field Kanungo visits the village, compares the
+                      name change entry against the previous quadrennial Jamabandi, and signs the check report.
                     </span>
                   </div>
                   <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200/90 text-xs">
@@ -995,7 +995,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     <span>
                       <strong>Sanction in Jalsa-e-Aam:</strong> The Naib Tehsildar or Tehsildar convenes an open
                       village assembly (ਜਲਸਾ-ਏ-ਆਮ). In the presence of the village Lambardar and local residents, the
-                      officer verifies the absence of objections and sanctions the mutation order.
+                      officer verifies the absence of objections and sanctions the name change order.
                     </span>
                   </div>
                 </div>
@@ -1009,7 +1009,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>LITIGATION DEFENSE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Specific Disinheritance Clauses: Preventing Land Disputes
+                8. Specific Leaving Out Clauses: Preventing Land Fights
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1020,8 +1020,8 @@ Doctor Signature & Official Seal: __________________________"`;
                   left unexplained.
                 </p>
                 <p>
-                  To bulletproof your Punjabi Will against court challenges under Section 61 (allegations of fraud or
-                  coercion), you must incorporate a specific disinheritance clause stating rational, factual grounds
+                  To bulletproof your Punjabi Will against court fights under Section 61 (allegations of fraud or
+                  coercion), you must incorporate a specific leaving out clause stating rational, factual grounds
                   for exclusion (e.g. past cash advancements, separate business setups, or abandonment of elderly parents).
                 </p>
               </div>
@@ -1031,7 +1031,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <AlertTriangle className="w-4 h-4 text-[#C65378]" />
-                    <span>Copyable Disinheritance Clause (Gurmukhi Script)</span>
+                    <span>Copyable Leaving Out Clause (Gurmukhi Script)</span>
                   </div>
                   <button
                     type="button"
@@ -1067,27 +1067,27 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>EXECUTION PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Execution Mandate: Attesting Witnesses &amp; Doctor Certificate
+                9. Signing Mandate: Signing Witnesses &amp; Doctor Paper
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Execution rules under Section 63(c) are mandatory. The Supreme Court in{" "}
-                  <em>Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003)</em> held that if both attesting witnesses
-                  fail to prove due execution, the entire Will collapses.
+                  <em>Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003)</em> held that if both signing witnesses
+                  fail to prove due signing, the entire Will collapses.
                 </p>
                 <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-950 space-y-1.5">
                   <div className="font-extrabold uppercase tracking-wider text-[#C65378]">
                     CRITICAL: SECTION 67 WITNESS DISQUALIFICATION
                   </div>
                   <p>
-                    Under Section 67 of the Indian Succession Act, if any beneficiary (or their spouse) signs as an
-                    attesting witness, the bequest in their favour is <strong>strictly void</strong>. Never allow
-                    your children, wife, or relatives who stand to inherit property to sign as witnesses.
+                    Under Section 67 of the Indian Succession Act, if any heir (or their spouse) signs as an
+                    signing witness, the bequest in their favour is <strong>strictly void</strong>. Never allow
+                    your children, wife, or relatives who stand to inherit asset to sign as witnesses.
                   </p>
                 </div>
                 <p>
-                  For senior citizens executing a Will in Punjab, obtaining a Mental Fitness Certificate from a
-                  registered MBBS doctor on the date of execution is strongly advised.
+                  For senior citizens signing a Will in Punjab, obtaining a Mental Fitness Paper from a
+                  filed MBBS doctor on the date of signing is strongly advised.
                 </p>
               </div>
 
@@ -1096,7 +1096,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <UserCheck className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Copyable Doctor Medical Fitness Certificate Format</span>
+                    <span>Copyable Doctor Medical Fitness Paper Format</span>
                   </div>
                   <button
                     type="button"
@@ -1111,7 +1111,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Certificate</span>
+                        <span>Copy Paper</span>
                       </>
                     )}
                   </button>
@@ -1160,7 +1160,7 @@ Doctor Signature & Official Seal: __________________________"`;
                 11. Landmark Case Studies: Amritsar, Jalandhar &amp; Ludhiana
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Real-world testamentary disputes resolved under Punjab High Court and Supreme Court rulings:
+                Real-world Will fights resolved under Punjab High Court and Supreme Court rulings:
               </p>
 
               <div className="space-y-3 pt-1">
@@ -1175,14 +1175,14 @@ Doctor Signature & Official Seal: __________________________"`;
                     </span>
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Challenge by Resident Sibling Claiming Adverse Possession against Canadian NRI Sister
+                    Fight by Resident Sibling Claiming Adverse Possession against Canadian NRI Sister
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A father in Jalandhar bequeathed his 8-acre agricultural holding to his Canadian NRI daughter
-                    via a registered Gurmukhi Will, explicitly identifying Khewat No. 42 and Khasra parcels. The
+                    A father in Jalandhar bequeathed his 8-acre farm holding to his Canadian NRI daughter
+                    via a filed Gurmukhi Will, explicitly identifying Khewat No. 42 and Khasra parcels. The
                     resident brother claimed that NRIs cannot hold farmland and alleged adverse possession. The
-                    Punjab &amp; Haryana High Court dismissed the challenge, ruling that under FEMA Section 6(5)
-                    and the Succession Act, an NRI has absolute title by inheritance, and a co-heir cannot plead
+                    Punjab &amp; Haryana High Court dismissed the fight, ruling that under FEMA Section 6(5)
+                    and the Estate Act, an NRI has absolute title by estate, and a co-heir cannot plead
                     adverse possession.
                   </p>
                 </div>
@@ -1198,14 +1198,14 @@ Doctor Signature & Official Seal: __________________________"`;
                     </span>
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Son-in-Law Signed as Attesting Witness to House Property Bequest
+                    Son-in-Law Signed as Signing Witness to House Asset Bequest
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In a Ludhiana estate, the testator bequeathed a prime commercial shop to his youngest daughter.
-                    However, her husband signed as the second attesting witness. Upon the testator&apos;s demise, the
+                    In a Ludhiana estate, the Will maker bequeathed a prime shop shop to his youngest daughter.
+                    However, her husband signed as the second signing witness. Upon the Will maker&apos;s demise, the
                     other siblings invoked Section 67 of the Indian Succession Act. The civil court held that
                     although the Will was genuine, the bequest to the daughter was legally void because her husband
-                    was an attesting witness, reverting the shop back to joint intestate succession.
+                    was an signing witness, reverting the shop back to joint no-Will estate.
                   </p>
                 </div>
 
@@ -1216,17 +1216,17 @@ Doctor Signature & Official Seal: __________________________"`;
                       CASE STUDY 3: AMRITSAR MISSING KHASRA MUTATION REJECTION
                     </span>
                     <span className="text-[11px] font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md">
-                      Mutation Disputed
+                      Name Change Disputed
                     </span>
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Unregistered Will Mentioning Generic &quot;Ancestral Land&quot; without Khewat Numbers
+                    Plain Will Mentioning Generic &quot;Family Land&quot; without Khewat Numbers
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    An unregistered Will drafted in Amritsar bequeathed &quot;all my ancestral agricultural lands in
+                    An plain Will drafted in Amritsar bequeathed &quot;all my family farm lands in
                     Majha&quot; without mentioning Khewat, Khatauni, or Khasra survey numbers. The Halqa Patwari
-                    refused to record the Intiqal, stating that the testator was only a co-sharer in joint khewat.
-                    The matter resulted in a protracted 6-year partition dispute before the Revenue Collector.
+                    refused to record the Intiqal, stating that the Will maker was only a co-sharer in joint khewat.
+                    The matter resulted in a protracted 6-year split fight before the Revenue Collector.
                   </p>
                 </div>
               </div>
@@ -1243,7 +1243,7 @@ Doctor Signature & Official Seal: __________________________"`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Follow this 6-step Standard Operating Procedure to draft, execute, and safeguard your Punjabi Will:
+                  Follow this 6-step Standard Operating Step to draft, execute, and safeguard your Punjabi Will:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
@@ -1256,8 +1256,8 @@ Doctor Signature & Official Seal: __________________________"`;
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
                     <span className="font-bold text-xs text-[#C65378]">Step 2: Appoint Independent Executor</span>
                     <p className="text-xs text-slate-600">
-                      Nominate a trustworthy individual (or a professional executor) with authority to manage
-                      revenue mutation and bank distribution.
+                      Nominate a trustworthy single (or a professional executor) with office to manage
+                      revenue name change and bank split.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
@@ -1270,21 +1270,21 @@ Doctor Signature & Official Seal: __________________________"`;
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
                     <span className="font-bold text-xs text-[#C65378]">Step 4: Secure Doctor Fitness Proof</span>
                     <p className="text-xs text-slate-600">
-                      Obtain an MBBS mental fitness certificate on the date of execution to pre-empt cognitive
-                      incapacity challenges.
+                      Obtain an MBBS mental fitness paper on the date of signing to pre-empt cognitive
+                      incapacity fights.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
                     <span className="font-bold text-xs text-[#C65378]">Step 5: Two Neutral Witnesses</span>
                     <p className="text-xs text-slate-600">
-                      Execute in the simultaneous presence of two independent non-beneficiary witnesses (Section 67
+                      Execute in the simultaneous presence of two independent non-heir witnesses (Section 67
                       compliance).
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 space-y-1">
-                    <span className="font-bold text-xs text-[#C65378]">Step 6: Optional SRO Registration</span>
+                    <span className="font-bold text-xs text-[#C65378]">Step 6: A Choice SRO Filing</span>
                     <p className="text-xs text-slate-600">
-                      Book an NGDRS Punjab slot and register the Will before the Sub-Registrar for permanent digital
+                      Book an NGDRS Punjab slot and register the Will before the SRO for permanent digital
                       archival in Book III.
                     </p>
                   </div>
@@ -1300,10 +1300,10 @@ Doctor Signature & Official Seal: __________________________"`;
                     Planning to Sell Inherited Land in Punjab? Calculate Capital Gains Tax
                   </h3>
                   <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
-                    Under the Finance (No. 2) Act, 2024 grandfathering provisions, properties acquired prior to July
+                    Under the Finance (No. 2) Act, 2024 grandfathering rules, assets acquired prior to July
                     23, 2024 can choose between <strong>12.5% flat tax vs 20% indexation</strong>. In addition,
-                    multiple siblings inheriting agricultural land each receive a separate ₹50 Lakh Section 54EC bond
-                    limit. Use our statutory tax tool to evaluate potential savings:
+                    multiple siblings inheriting farm land each receive a separate ₹50 Lakh Section 54EC bond
+                    limit. Use our legal tax tool to evaluate potential savings:
                   </p>
                   <div className="pt-2 flex flex-wrap gap-3">
                     <Link
@@ -1311,7 +1311,7 @@ Doctor Signature & Official Seal: __________________________"`;
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-md transition-colors"
                     >
                       <Calculator className="w-3.5 h-3.5" />
-                      <span>Inherited Property Tax Calculator</span>
+                      <span>Inherited Asset Tax Tool</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                     <Link
@@ -1319,7 +1319,7 @@ Doctor Signature & Official Seal: __________________________"`;
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-colors"
                     >
                       <Users className="w-3.5 h-3.5" />
-                      <span>Legal Heir Share Calculator</span>
+                      <span>Legal Heir Share Tool</span>
                     </Link>
                   </div>
                 </div>
@@ -1342,21 +1342,21 @@ Doctor Signature & Official Seal: __________________________"`;
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Vernacular Succession Bench
+                      WillDrafting.in Vernacular Estate Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Succession Counsel</span>
+                    <span>Bar Council Checked Estate Counsel</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&apos;s leading succession planning and estate transmission platform,
+                  WillDrafting.in is India&apos;s leading estate planning and estate transfer platform,
                   operated in collaboration with AMA Legal Solutions. Our specialized Punjab estate desk handles
-                  Gurmukhi Will drafting, agricultural land title verification, cross-border NRI asset bequests,
-                  and Sub-Registrar execution across Ludhiana, Jalandhar, Amritsar, Mohali, and Patiala. Over 15,000
-                  families have secured their legacy through our dispute-proof testamentary instruments.
+                  Gurmukhi Will drafting, farm land title check, cross-border NRI asset bequests,
+                  and SRO signing across Ludhiana, Jalandhar, Amritsar, Mohali, and Patiala. Over 15,000
+                  families have secured their legacy through our fight-proof Will instruments.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1372,14 +1372,14 @@ Doctor Signature & Official Seal: __________________________"`;
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>SRO Will Registration</span>
+                    <span>SRO Will Filing</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/probate-checker"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1396,8 +1396,8 @@ Doctor Signature & Official Seal: __________________________"`;
                 14. Frequently Asked Questions: Punjabi Vasiyatnama Guide
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Plain-language answers to vital legal questions regarding Gurmukhi Wills, agricultural mutation,
-                and NRI inheritance in Punjab:
+                Plain-language answers to vital legal questions regarding Gurmukhi Wills, farm name change,
+                and NRI estate in Punjab:
               </p>
 
               {/* Accordion Stack */}
@@ -1439,20 +1439,20 @@ Doctor Signature & Official Seal: __________________________"`;
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Citations &amp; Official Punjab Revenue Portals
+                15. Legal Citations &amp; Official Punjab Revenue Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Primary Statutory Authorities &amp; Landmark Precedents:
+                    Primary Legal Offices &amp; Landmark Precedents:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>Indian Succession Act, 1925 - Sections 59, 63, 67, 74 &amp; 213</li>
-                    <li>Punjab Land Revenue Act, 1887 - Section 34 (Mutation Protocol)</li>
-                    <li>Registration Act, 1908 - Sections 18(e), 40, 41 (Book III Will Registration)</li>
-                    <li>Foreign Exchange Management Act, 1999 (FEMA) - Section 6(5) (NRI Inheritance)</li>
+                    <li>Punjab Land Revenue Act, 1887 - Section 34 (Name Change Protocol)</li>
+                    <li>Filing Act, 1908 - Sections 18(e), 40, 41 (Book III Will Filing)</li>
+                    <li>Foreign Exchange Management Act, 1999 (FEMA) - Section 6(5) (NRI Estate)</li>
                     <li>Supreme Court of India: <em>Kanta Yadav v. Om Prakash Yadav (2020)</em> (No Probate in Punjab)</li>
-                    <li>Supreme Court of India: <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (1959)</em> (Attestation Proof)</li>
+                    <li>Supreme Court of India: <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (1959)</em> (Witness Signing Proof)</li>
                   </ul>
                 </div>
 
@@ -1472,7 +1472,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>NGDRS Punjab Registration Portal</span>
+                    <span>NGDRS Punjab Filing Portal</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1513,13 +1513,35 @@ Doctor Signature & Official Seal: __________________________"`;
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Sub-Registrar Will Registration Desk
+                      SRO Will Filing Desk
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (NO MOBILE NUMBER)
@@ -1532,21 +1554,21 @@ Doctor Signature & Official Seal: __________________________"`;
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Punjab Land Revenue Act mutations, Section 63
-                evidentiary defense, and cross-border NRI inheritance structuring.
+                Expert in Indian testamentary jurisprudence, Punjab Land Revenue Act mutations, Section 63
+                proof defense, and cross-border NRI estate structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1560,11 +1582,11 @@ Doctor Signature & Official Seal: __________________________"`;
                   <span>PREVENT AGRICULTURAL LAND DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Farmland from Protracted Partition Lawsuits
+                  Protect Your Farmland from Protracted Split Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
                   A precisely drafted, lawyer-vetted Will with exact Khewat &amp; Khasra details ensures clean
-                  revenue mutation and protects your children&apos;s inheritance rights.
+                  revenue name change and protects your children&apos;s estate rights.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1586,18 +1608,18 @@ Doctor Signature & Official Seal: __________________________"`;
                   <span>PUNJAB SUCCESSION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need Help with High-Value Farmland or NRI Inheritance?
+                  Need Help with High-Value Farmland or NRI Estate?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our High Court testamentary advocates advise on agricultural land partition, SRO NGDRS
-                  registration in Punjab, and FEMA cross-border bequests.
+                  Our High Court Will lawyers advise on farm land split, SRO NGDRS
+                  filing in Punjab, and FEMA cross-border bequests.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1616,13 +1638,13 @@ Doctor Signature & Official Seal: __________________________"`;
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Revenue Compliant:</strong> Formatted for Halqa Patwari &amp; Tehsildar mutation.
+                      <strong>Revenue Compliant:</strong> Formatted for Halqa Patwari &amp; Tehsildar name change.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>FEMA Sec 6(5) Protected:</strong> Safeguards inheritance for NRI children in Canada/UK/USA.
+                      <strong>FEMA Sec 6(5) Protected:</strong> Safeguards estate for NRI children in Canada/UK/USA.
                     </span>
                   </li>
                 </ul>

@@ -142,7 +142,7 @@ export default function TelanganaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Telangana: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Telangana. Easy signing via IGRS Telangana, Dharani portal land transfer, and experienced advocate review.",
+          "Draft a legally valid Will in Telangana. Easy signing via IGRS Telangana, Dharani portal land transfer, and experienced lawyer review.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TelanganaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Telangana - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate check, IGRS Telangana slot scheduling, Dharani portal land succession, and doorstep execution.",
+          "Professional Will drafting, lawyer check, IGRS Telangana slot scheduling, Dharani portal land estate, and doorstep signing.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -254,26 +254,26 @@ export default function TelanganaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Telangana",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Telangana.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Telangana.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Telangana assets including GHMC flats, HMDA plots, Dharani agricultural land records, bank accounts, and demat shares. Designate heirs and an executor.",
+            text: "List your Telangana assets including GHMC flats, HMDA plots, Dharani farm land records, bank accounts, and demat shares. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",

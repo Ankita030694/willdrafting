@@ -113,12 +113,12 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving asset in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
     detail: "Issued by an MBBS doctor. Confirms sound sound mind and protects against incapacity fights.",
     checked: false,
   },
@@ -234,7 +234,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally sound Will for your MUDA allotted sites, heritage family homes, demat portfolios, and retirement savings.
-                Receive expert Karnataka lawyer drafting, Kaveri 2.0 Sub-Registrar registration support, and estate planning guidance across Mysuru.
+                Receive expert Karnataka lawyer drafting, Kaveri 2.0 SRO filing support, and estate planning guidance across Mysuru.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -285,7 +285,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white/90 bg-black/40 backdrop-blur-xs px-3 py-1.5 rounded-xl border border-white/10">
-                  <span className="font-semibold truncate">Mysuru Estate Succession Blueprint</span>
+                  <span className="font-semibold truncate">Mysuru Estate Estate Blueprint</span>
                   <span className="text-[10px] text-rose-300 font-bold shrink-0">Click to expand</span>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/80 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Probate Optional
+                Probate A Choice
               </span>
               <span className="text-[10px] min-[390px]:text-[11px] sm:text-xs font-semibold text-slate-600 mt-1 leading-tight">
                 Section 213 (Non-Presidency)
@@ -430,10 +430,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Mysuru under Section 18(e) of the Registration Act, 1908. An unregistered Will on plain white paper is legally valid if signed before two independent witnesses.
+                      Will filing is a choice in Mysuru under Section 18(e) of the Filing Act, 1908. An plain Will on plain white paper is legally valid if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -463,7 +463,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       <span>Direct MUDA &amp; MCC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables your heirs to execute direct e-Aasthi Khata transfer with Mysuru City Corporation and title name change with the Mysuru Urban Development Authority (MUDA).
+                      A filed Will enables your heirs to execute direct e-Aasthi Khata transfer with Mysuru City City Board and title name change with the Mysuru Urban Development Office (MUDA).
                     </p>
                   </div>
                 </div>
@@ -481,13 +481,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   1. Legal Framework for Will Drafting in Mysuru
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and estate planning in Mysuru are governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
-                  Any individual who is of sound mind and at least 18 years of age can execute a Will to dispose of self-acquired movable and immovable assets.
+                  Will drafting and estate planning in Mysuru are governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
+                  Any single who is of sound mind and at least 18 years of age can execute a Will to dispose of self-acquired cash and land assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Mysuru families possess distinctive property portfolios.
+                  Mysuru families possess distinctive asset portfolios.
                   These encompass MUDA plotted layouts, family heritage homes in Gokulam, retirement savings, pension benefits, and tech investments in Hebbal Electronic City.
-                  A professionally prepared Will prevents ambiguous inheritance claims among legal heirs.
+                  A professionally prepared Will prevents ambiguous estate claims among legal heirs.
                 </p>
               </div>
 
@@ -508,7 +508,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Choice</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testamentary document must be signed voluntarily without coercion, undue influence, or fraud (Section 61).
+                    The Will paper must be signed voluntarily without coercion, undue influence, or fraud (Section 61).
                   </p>
                 </div>
 
@@ -528,7 +528,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not receive any legacy or property bequest under the Will (Section 67).
+                    Witnesses must not receive any legacy or asset bequest under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -542,15 +542,15 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Mysuru?
+                  2. Is Will Filing Needed in Mysuru?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
-                  An unregistered Will signed on plain white A4 paper is legally valid and recognized by Indian courts if signed before two independent witnesses.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is <strong>a choice</strong>.
+                  An plain Will signed on plain white A4 paper is legally valid and recognized by Indian courts if signed before two independent witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, registering your Will at a Mysuru SRO office provides vital legal safeguards.
-                  Here is how a registered Will compares against an unregistered document:
+                  Here is how a filed Will compares against an plain paper:
                 </p>
               </div>
 
@@ -559,9 +559,9 @@ export default function MysuruLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-[#C65378]">Registered Will (Kaveri 2.0 SRO)</th>
-                      <th className="p-4 font-bold text-slate-600">Unregistered Plain Paper Will</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-[#C65378]">Filed Will (Kaveri 2.0 SRO)</th>
+                      <th className="p-4 font-bold text-slate-600">Plain Plain Paper Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -583,7 +583,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Bank &amp; Demat Transfer</td>
                       <td className="p-4 text-emerald-800 font-bold">Accepted smoothly by nationalized banks and brokers</td>
-                      <td className="p-4">Often requires additional surety bonds or affidavits</td>
+                      <td className="p-4">Often requires additional surety bonds or sworn notes</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Archival &amp; Certified Copy</td>
@@ -612,7 +612,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only for Wills signed in historic presidency towns (Mumbai, Kolkata, Chennai).
                   Mysuru is a non-presidency city in Karnataka.
-                  The Karnataka High Court has clarified that Hindus, Sikhs, Jains, and Buddhists do not need needed probate to set up testamentary rights in Karnataka.
+                  The Karnataka High Court has clarified that Hindus, Sikhs, Jains, and Buddhists do not need needed probate to set up Will rights in Karnataka.
                 </p>
               </div>
 
@@ -625,11 +625,11 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     Understanding Key Legal Distinctions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Signing a Will involves drafting, signing, and attesting the instrument. Registration records the document with the Karnataka Stamps and Registration Department. Probate is a formal judicial decree from the District Court or High Court.
+                    Signing a Will involves drafting, signing, and signing the instrument. Filing records the paper with the Karnataka Stamps and Filing Office. Probate is a formal judicial decree from the District Court or High Court.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Letters of Administration apply when no executor is named</span>
+                    <span>Letters of Care apply when no executor is named</span>
                   </div>
                 </div>
 
@@ -641,7 +641,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     When is Probate Advisable in Mysuru?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing a probate petition before the Principal District and Sessions Court in Mysuru becomes advisable when legal heirs challenge the Will. It is also prudent when handling high-value disputed estates or real estate situated in presidency cities.
+                    Filing a probate petition before the Principal District and Sessions Court in Mysuru becomes advisable when legal heirs fight the Will. It is also prudent when handling high-value disputed estates or real estate situated in presidency cities.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -681,8 +681,8 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   4. Mysuru SRO office Directory &amp; SROs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across Mysuru is administered by the Department of Stamps and Registration, Government of Karnataka.
-                  Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your land and flats are situated.
+                  Will filing across Mysuru is administered by the Office of Stamps and Filing, Government of Karnataka.
+                  Under Section 32 of the Filing Act, you can register your Will before the SRO where you reside or where your land and flats are situated.
                 </p>
               </div>
 
@@ -784,7 +784,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Mysuru
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Seeking lawyer-supervised <strong>Will drafting services in Gokulam, Vijayanagar, Kuvempunagar, or Jayalakshmipuram</strong>? Property ownership frameworks, MUDA leasehold stipulations, and Sub-Registrar areas vary across Mysuru.
+                  Seeking lawyer-supervised <strong>Will drafting services in Gokulam, Vijayanagar, Kuvempunagar, or Jayalakshmipuram</strong>? Asset ownership frameworks, MUDA leasehold stipulations, and SRO areas vary across Mysuru.
                   Whether you own an family bungalow in Gokulam, a MUDA site in Vijayanagar, or a software engineer portfolio in Hebbal, our estate lawyers provide customized solutions:
                 </p>
               </div>
@@ -865,13 +865,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to retired state officials, university professors, and bank executives. We prepare full estate plans covering home duplexes, government pensions, fixed deposits, and MCC e-Aasthi property mutations.
+                      Home to retired state officials, university professors, and bank executives. We prepare full estate plans covering home duplexes, government pensions, fixed deposits, and MCC e-Aasthi asset mutations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Doctor mental capacity certifications and Section 31 doorstep signing make sure seamless registration for elderly retirees.
+                        Doctor mental capacity certifications and Section 31 doorstep signing make sure seamless filing for elderly retirees.
                       </p>
                     </div>
                   </div>
@@ -911,17 +911,17 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vijayanagar Stages 1, 2, 3 &amp; 4</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hootagalli</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Belavadi</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Koorgalli Industrial Belt</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Koorgalli Plant Belt</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Mysuru&apos;s largest planned home suburb with thousands of MUDA allotted sites and newly built homes. We draft clear succession instruments detailing site allotment letters, title deeds, and clear inheritance shares.
+                      Mysuru&apos;s largest planned home suburb with thousands of MUDA allotted sites and newly built homes. We draft clear estate instruments detailing site allotment letters, title deeds, and clear estate shares.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Registered Wills enable direct MUDA Khata transfer and Building Completion Certificate (BCC) compliance for successors.
+                        Filed Wills enable direct MUDA Khata transfer and Building Completion Paper (BCC) compliance for successors.
                       </p>
                     </div>
                   </div>
@@ -965,13 +965,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Encompasses princely heritage estates, shop assets, and prominent business lineages. We structure high-net-worth estate plans featuring corporate shareholdings, shop leasing income, and testamentary trusts.
+                      Encompasses princely heritage estates, shop assets, and prominent business lineages. We structure high-net-worth estate plans featuring corporate shareholdings, shop leasing income, and Will trusts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Executor nomination and explicit revocation of prior testaments prevent cross-heir shop property court fights.
+                        Executor nomination and explicit revocation of prior testaments prevent cross-heir shop asset court fights.
                       </p>
                     </div>
                   </div>
@@ -1015,13 +1015,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sought-after home sectors featuring independent villas and housing cooperative society layouts. Our legal instruments provide straightforward bequests and specific shares for grandchildren, avoiding without a Will succession confusion.
+                      Sought-after home sectors featuring independent villas and housing cooperative society layouts. Our legal instruments provide straightforward bequests and specific shares for grandchildren, avoiding without a Will estate confusion.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Cooperative housing society membership transfers require registered Will check for speedy share endorsement.
+                        Cooperative housing society membership transfers require filed Will check for speedy share endorsement.
                       </p>
                     </div>
                   </div>
@@ -1060,7 +1060,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Infosys Mysore Campus Belt</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hebbal 1st &amp; 2nd Stages</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Belagola Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Belagola Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Outer Ring Road Apartments</span>
                     </div>
 
@@ -1115,13 +1115,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Established neighborhoods with CITB older site allotments and generational family residences. Our lawyers draft tailored testamentary solutions guaranteeing clear division of built-up floors and family land rights.
+                      Established neighborhoods with CITB older site allotments and generational family residences. Our lawyers draft tailored Will solutions guaranteeing clear division of built-up floors and family land rights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Accurate schedule of property and MCC ward details make sure trouble-free title name change.
+                        Accurate schedule of asset and MCC ward details make sure trouble-free title name change.
                       </p>
                     </div>
                   </div>
@@ -1165,13 +1165,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Picturesque home zones, independent farm villas, and developing tourist hospitality corridors. We prepare legally validated testamentary documents addressing peripheral land parcels and luxury home homes.
+                      Picturesque home zones, independent farm villas, and developing tourist hospitality corridors. We prepare legally validated Will papers addressing peripheral land parcels and luxury home homes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Clear survey numbers and conversion status prevent revenue department inheritance objections.
+                        Clear survey numbers and conversion status prevent revenue office estate objections.
                       </p>
                     </div>
                   </div>
@@ -1200,10 +1200,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL BLUEPRINT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Karnataka
+                  6. Step-by-Step Will Filing in Karnataka
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Mysuru under the Karnataka Stamps and Registration Department requires a structured 5-step legal protocol:
+                  Registering a Will in Mysuru under the Karnataka Stamps and Filing Office requires a structured 5-step legal protocol:
                 </p>
               </div>
 
@@ -1233,7 +1233,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       Legal Drafting &amp; Lawyer Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft the instrument with formal testamentary rules. Include sound mental declaration, explicit revocation of prior testaments, survivorship clauses, and residuary estate allocation vetted by an experienced Karnataka High Court lawyer.
+                      Draft the instrument with formal Will rules. Include sound mental declaration, explicit revocation of prior testaments, survivorship clauses, and residuary estate allocation vetted by an experienced Karnataka High Court lawyer.
                     </p>
                   </div>
                 </div>
@@ -1245,10 +1245,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Physical Signing &amp; Independent Attestation
+                      Physical Signing &amp; Independent Witness Signing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the drafted Will on clean white A4 paper. The Will maker signs each page in the simultaneous presence of two independent adult witnesses who are not heirs under the document, fulfilling Section 63 of the Indian Succession Act.
+                      Print the drafted Will on clean white A4 paper. The Will maker signs each page in the simultaneous presence of two independent adult witnesses who are not heirs under the paper, fulfilling Section 63 of the Indian Succession Act.
                     </p>
                   </div>
                 </div>
@@ -1263,7 +1263,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       Kaveri 2.0 Portal Submission &amp; Slot Booking
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log in to Karnataka&apos;s Kaveri 2.0 portal (kaveri.karnataka.gov.in). Input Will maker and witness demographic data, upload draft copies, pay the nominal government registration fee of ₹200 online, and schedule an appointment at your local Mysuru SRO.
+                      Log in to Karnataka&apos;s Kaveri 2.0 portal (kaveri.karnataka.gov.in). Input Will maker and witness demographic data, upload draft copies, pay the nominal government filing fee of ₹200 online, and schedule an appointment at your local Mysuru SRO.
                     </p>
                   </div>
                 </div>
@@ -1278,7 +1278,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       SRO Biometric Check &amp; Book III Archival
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Attend the appointed SRO office with both witnesses carrying original Aadhaar cards. Complete biometric thumbprinting, web-camera photo capture, and official Book III archival. Receive the sealed registered Will deed.
+                      Attend the appointed SRO office with both witnesses carrying original Aadhaar cards. Complete biometric thumbprinting, web-camera photo capture, and official Book III archival. Receive the sealed filed Will deed.
                     </p>
                   </div>
                 </div>
@@ -1293,11 +1293,11 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <span>SPECIAL COMMISSION VISITS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Doorstep Will Registration for Senior Citizens
+                  7. Doorstep Will Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Mysuru is known as a pensioner&apos;s paradise with a substantial senior citizen population.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, testators who are elderly, ill, or physically unable to visit a government office can request the Sub-Registrar to attend their home or hospital room:
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, Will makers who are elderly, ill, or physically unable to visit a government office can request the SRO to attend their home or hospital room:
                 </p>
               </div>
 
@@ -1308,7 +1308,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Medical Fitness</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Obtain a paper from a registered MBBS doctor attesting that the Will maker is mentally sound but unable to travel.
+                    Obtain a paper from a filed MBBS doctor signing that the Will maker is mentally sound but unable to travel.
                   </p>
                 </div>
 
@@ -1318,7 +1318,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Section 31 Petition</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Submit a formal commission request to the Senior Sub-Registrar detailing home address and clinical grounds.
+                    Submit a formal commission request to the Senior SRO detailing home address and clinical grounds.
                   </p>
                 </div>
 
@@ -1338,7 +1338,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Portable Biometrics</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Sub-Registrar visits with mobile fingerprint scanners and cameras to execute registration in your living room.
+                    The SRO visits with mobile fingerprint scanners and cameras to execute filing in your living room.
                   </p>
                 </div>
               </div>
@@ -1352,10 +1352,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE VERIFICATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Will Registration
+                  8. Papers Checklist for Will Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare these essential documents before booking your appointment at a Mysuru SRO office. Click each item to track your registration readiness:
+                  Prepare these essential papers before booking your appointment at a Mysuru SRO office. Click each item to track your filing readiness:
                 </p>
               </div>
 
@@ -1422,8 +1422,8 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   9. Mysuru Real Estate: MUDA Sites &amp; Heritage Homes
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate in Mysuru encompasses planned urban authority layouts, historic family bungalows, and modern apartment complexes.
-                  Each property category requires tailored legal drafting:
+                  Real estate in Mysuru encompasses planned urban office layouts, historic family bungalows, and modern apartment complexes.
+                  Each asset category requires tailored legal drafting:
                 </p>
               </div>
 
@@ -1436,7 +1436,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     MUDA Allotted Layouts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Sites in Vijayanagar, Dattagalli, and Bogadi require accurate allotment numbers, conditional lease-cum-sale references, and possession papers to enable direct authority name change.
+                    Sites in Vijayanagar, Dattagalli, and Bogadi require accurate allotment numbers, conditional lease-cum-sale references, and possession papers to enable direct office name change.
                   </p>
                 </div>
 
@@ -1474,10 +1474,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Stamp Duty &amp; Registration Fees: Mysuru
+                  10. Official Stamp Duty &amp; Filing Fees: Mysuru
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyance deeds which attract heavy ad-valorem stamp duties in Karnataka, Wills are 100 percent exempt from stamp duty across the state.
+                  Unlike asset conveyance deeds which attract heavy ad-valorem stamp duties in Karnataka, Wills are 100 percent exempt from stamp duty across the state.
                   Under the Karnataka Stamp Act, 1957, government fees for registering a Will are purely nominal:
                 </p>
               </div>
@@ -1498,19 +1498,19 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Karnataka</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹200 (Flat Fee)</td>
                       <td className="p-4">Kaveri 2.0 Portal / SRO Account</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; Data Entry Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹300</td>
-                      <td className="p-4">Sub-Registrar Counter</td>
+                      <td className="p-4">SRO Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Doorstep Commission</td>
                       <td className="p-4 font-bold">₹500 – ₹1,000</td>
-                      <td className="p-4">Sub-Registrar Official Visit Fee</td>
+                      <td className="p-4">SRO Official Visit Fee</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1546,12 +1546,12 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with bank deposits, mutual funds, and a single home property.
+                      Ideal for simple estates with bank deposits, mutual funds, and a single home asset.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Mysuru Will maker</span>
+                        <span>Free Mysuru Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1588,7 +1588,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate lawyer review for MUDA sites, family bungalows, and retiree succession planning.
+                      Senior estate lawyer review for MUDA sites, family bungalows, and retiree estate planning.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1624,13 +1624,13 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at Sub-Registrar offices across Mysuru District.
+                      Full end-to-end filing help at SRO offices across Mysuru District.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1647,7 +1647,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1732,10 +1732,10 @@ export default function MysuruLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission Visits).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission Visits).
                   </p>
                 </div>
 
@@ -1744,7 +1744,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
                     Karnataka Kaveri 2.0 Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official registration portal: <code>kaveri.karnataka.gov.in</code>.
+                    Official filing portal: <code>kaveri.karnataka.gov.in</code>.
                   </p>
                 </div>
 
@@ -1784,7 +1784,29 @@ export default function MysuruLocationClient({ faqs }: Props) {
                 </Link>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1802,7 +1824,7 @@ export default function MysuruLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Mysuru Estate Succession &amp; Will Registration Architecture
+                Visual Blueprint: Mysuru Estate Estate &amp; Will Filing Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

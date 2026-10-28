@@ -140,7 +140,7 @@ export default function MizoramLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mizoram: Online Will & Succession Guide",
         description:
-          "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property.",
+          "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Estate Act rules, and Land Deal Paper (LSC) asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function MizoramLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mizoram - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Settlement Certificate (LSC) succession, and Sub-Registrar execution support across.",
+          "Professional Will drafting, lawyer check, Land Deal Paper (LSC) estate, and SRO signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -251,38 +251,38 @@ export default function MizoramLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Mizoram",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Mizoram.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Mizoram.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Mizoram properties including Land Settlement Certificates (LSC), Periodic Pattas, residential houses in Aizawl, agricultural plantations, and financial accounts. Designate beneficiaries and an executor.",
+            text: "List your Mizoram assets including Land Deal Papers (LSC), Periodic Pattas, home houses in Aizawl, farm plantations, and financial accounts. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses under The Mizo Marriage, Divorce and Inheritance of Property Act 2014 and Indian Succession Act 1925, detailing survivorship and minor guardianships.",
+            text: "Draft your Will using checked legal clauses under The Mizo Marriage, Divorce and Estate of Asset Act 2014 and Indian Succession Act 1925, detailing survivorship and minor guardianships.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Submit at District Sub-Registrar Office",
-            text: "Present the executed Will at your local Mizoram DC Office Sub-Registrar counter and remit the nominal statutory registration fee.",
+            text: "Present the signed Will at your local Mizoram DC Office SRO counter and remit the nominal legal filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics & Custody",
-            text: "Attend the Sub-Registrar office with both witnesses for verbal verification, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Attend the SRO office with both witnesses for verbal check, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

@@ -142,7 +142,7 @@ export default function OdishaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Odisha: Legal Online Will Making Guide",
         description:
-          "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection.",
+          "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Filing help, Bhulekh land name change, and family wealth protection.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function OdishaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Odisha - Estate Planning & SRO Registration Desk",
         description:
-          "Professional Will drafting, advocate verification, Odisha e-Registration assistance, Bhulekh land record guidance, and Section 31 doorstep.",
+          "Professional Will drafting, lawyer check, Odisha e-Filing help, Bhulekh land record guidance, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -253,38 +253,38 @@ export default function OdishaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Odisha",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Odisha.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Odisha.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Audit Assets and Verify Leasehold Titles",
-            text: "List your movable and immovable properties across Odisha, including GA leaseholds in Bhubaneswar, BDA or CDA allotments, Bhulekh agricultural land, and banking investments.",
+            text: "List your cash and land assets across Odisha, including GA leaseholds in Bhubaneswar, BDA or CDA allotments, Bhulekh farm land, and banking investments.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Statutory Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, executor appointment, and complete revocation of past testamentary instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, executor appointment, and complete revocation of past Will instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Odisha e-Registration Slot",
-            text: "Schedule an appointment on the Directorate of Registration Odisha portal (igrodisha.gov.in) and pay the nominal Book III registration fee online.",
+            text: "Schedule an appointment on the Directorate of Filing Odisha portal (igrodisha.gov.in) and pay the nominal Book III filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Odisha SRO",
-            text: "Attend the Sub-Registrar Office with both attesting witnesses for personal appearance, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Attend the SRO office with both signing witnesses for personal appearance, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

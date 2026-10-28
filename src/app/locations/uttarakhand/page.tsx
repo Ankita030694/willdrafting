@@ -190,7 +190,7 @@ export default function UttarakhandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Uttarakhand - Estate Planning & e-Prerna SRO Registration",
         description:
-          "Professional Will drafting, advocate check, e-Prerna signing help, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, e-Prerna signing help, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -256,26 +256,26 @@ export default function UttarakhandLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Uttarakhand",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Uttarakhand.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Uttarakhand.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Uttarakhand Asset Inventory and Successors",
-            text: "List your Uttarakhand real estate including MDDA residential plots, Nagar Nigam flats, rural land holdings, bank accounts, and defense pension portfolios. Designate heirs and an executor.",
+            text: "List your Uttarakhand real estate including MDDA home plots, Nagar Nigam flats, rural land holdings, bank accounts, and defense pension portfolios. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Section 154 Compliant Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset split, Section 154 UPZA&LR land ceiling compliance, guardian appointments for minors, and revocation of prior wills.",
+            text: "Draft your Will using checked legal clauses for clear asset split, Section 154 UPZA&LR land ceiling compliance, guardian appointments for minors, and revocation of prior wills.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 plain paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 plain paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",

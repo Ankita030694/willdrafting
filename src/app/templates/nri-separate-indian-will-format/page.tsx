@@ -147,7 +147,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Why should an NRI have a separate Indian Will for assets in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 5 of the Indian Succession Act, 1925, succession to immovable property in India is strictly governed by Indian law (lex situs), regardless of the deceased's overseas domicile. Having a dedicated Indian Will avoids complex cross-border probate delays, prevents heavy exemplification expenses, and eliminates the catastrophic risk of accidentally revoking your foreign estate plan.",
+              text: "Under Section 5 of the Indian Succession Act, 1925, estate to land asset in India is strictly governed by Indian law (lex situs), regardless of the deceased's overseas domicile. Having a dedicated Indian Will avoids complex cross-border probate delays, prevents heavy exemplification expenses, and eliminates the catastrophic risk of accidentally revoking your foreign estate plan.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function NriSeparateIndianWillPage() {
             name: "How does a standard Indian Will template accidentally revoke a US, UK, or UAE Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Almost all generic Will templates contain a boilerplate clause stating: 'I hereby revoke all my previous Wills and testamentary dispositions.' Under Section 62 of the Indian Succession Act and international private law, signing this clause revokes all prior wills executed globally, including your US living trust, UK will, or UAE DIFC will. An NRI Will must use a territorial non-conflict revocation clause restricting revocation strictly to prior Indian wills.",
+              text: "Almost all generic Will templates contain a boilerplate clause stating: 'I hereby revoke all my previous Wills and Will gifts.' Under Section 62 of the Indian Succession Act and international private law, signing this clause revokes all prior wills signed globally, including your US living trust, UK will, or UAE DIFC will. An NRI Will must use a territorial non-conflict revocation clause restricting revocation strictly to prior Indian wills.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Can an NRI bequeath agricultural land or farmhouses in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under FEMA Regulations (Notification No. FEMA 21(R)/2018-RB), an NRI or OCI cannot purchase agricultural land, plantation property, or farmhouses in India. However, an NRI or OCI can inherit agricultural land from a resident Indian. An NRI can bequeath such inherited agricultural land by Will to an Indian citizen residing in India. Bequeathing agricultural land to foreign citizens who are not of Indian origin requires prior RBI approval.",
+              text: "Under FEMA Regulations (Notification No. FEMA 21(R)/2018-RB), an NRI or OCI cannot purchase farm land, plantation asset, or farmhouses in India. However, an NRI or OCI can inherit farm land from a resident Indian. An NRI can bequeath such inherited farm land by Will to an Indian citizen residing in India. Bequeathing farm land to foreign citizens who are not of Indian origin requires prior RBI approval.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Is probate mandatory in India for a Will executed overseas by an NRI?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory if the Will is made within or pertains to immovable properties situated within the ordinary original civil jurisdiction of the High Courts of Bombay, Calcutta, or Chennai. For properties in Delhi, Bengaluru, Hyderabad, or other regions, probate is optional unless required by local housing societies, banks, or revenue authorities.",
+              text: "Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed if the Will is made within or pertains to land assets situated within the ordinary original civil area of the High Courts of Bombay, Calcutta, or Chennai. For assets in Delhi, Bengaluru, Hyderabad, or other regions, probate is a choice unless required by local housing societies, banks, or revenue offices.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Can a foreign court probate order be directly executed in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A foreign probate decree cannot be directly executed in India to transfer land or bank accounts. Under Section 228 of the Indian Succession Act, 1925, the executor must file a petition before an Indian District Court or High Court for the grant of Ancillary Letters of Administration with a certified copy of the foreign Will annexed. This process often takes 18 to 36 months, which is why a separate Indian Will is strongly recommended.",
+              text: "No. A foreign probate decree cannot be directly signed in India to transfer land or bank accounts. Under Section 228 of the Indian Succession Act, 1925, the executor must file a petition before an Indian District Court or High Court for the grant of Ancillary Letters of Care with a certified copy of the foreign Will annexed. This process often takes 18 to 36 months, which is why a separate Indian Will is strongly recommended.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Can an NRI appoint an Indian resident as an executor?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, and it is highly recommended. Appointing a trusted Indian resident, such as a family member, chartered accountant, or an advocate from AMA Legal Solutions, ensures that physical court appearances, Sub-Registrar visits, and bank verifications can proceed smoothly without requiring the NRI executor to travel to India.",
+              text: "Yes, and it is highly recommended. Appointing a trusted Indian resident, such as a family member, chartered accountant, or an lawyer from AMA Legal Solutions, ensures that physical court appearances, SRO visits, and bank verifications can proceed smoothly without requiring the NRI executor to travel to India.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function NriSeparateIndianWillPage() {
             name: "How should an NRI execute an Indian Will while living abroad?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 63 of the Indian Succession Act, 1925, the Will must be signed by the testator in the presence of at least two independent adult witnesses who sign in the testator's presence. For foreign execution, it is best practice to have the Will signed before a Notary Public and apostilled (for Hague Convention countries like the USA, UK, Australia) or attested at the nearest Indian Embassy or High Commission.",
+              text: "Under Section 63 of the Indian Succession Act, 1925, the Will must be signed by the Will maker in the presence of at least two independent adult witnesses who sign in the Will maker's presence. For foreign signing, it is best practice to have the Will signed before a Notary Public and apostilled (for Hague Convention countries like the USA, UK, Australia) or attested at the nearest Indian Embassy or High Commission.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Can sale proceeds of inherited property be repatriated abroad by an NRI?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under RBI FEMA regulations and the Liberalised Remittance Scheme (LRS), an NRI or OCI can repatriate up to USD 1,000,000 (One Million US Dollars) per financial year out of balances held in their NRO account representing the sale proceeds of inherited property, subject to payment of applicable capital gains taxes and submission of Form 15CA and Form 15CB.",
+              text: "Yes. Under RBI FEMA regulations and the Liberalised Remittance Scheme (LRS), an NRI or OCI can repatriate up to USD 1,000,000 (One Million US Dollars) per financial year out of balances held in their NRO account representing the sale proceeds of inherited asset, subject to payment of applicable capital gains taxes and submission of Form 15CA and Form 15CB.",
             },
           },
           {
@@ -211,7 +211,7 @@ export default function NriSeparateIndianWillPage() {
             name: "What is Section 195 TDS when an NRI sells inherited property in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 195 of the Income Tax Act, 1961, the buyer must deduct TDS at 12.5% or 20% plus surcharge and cess on payments to an NRI seller. Without a Lower Deduction Certificate, TDS is deducted on the gross sale consideration rather than the net capital gain. NRI sellers should apply for a Section 197 certificate (Form 13) on the TRACES portal before executing the conveyance deed.",
+              text: "Under Section 195 of the Income Tax Act, 1961, the buyer must deduct TDS at 12.5% or 20% plus surcharge and cess on payments to an NRI seller. Without a Lower Deduction Paper, TDS is deducted on the gross sale consideration rather than the net capital gain. NRI sellers should apply for a Section 197 paper (Form 13) on the TRACES portal before signing the conveyance deed.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function NriSeparateIndianWillPage() {
             name: "Does an NRI need to register an Indian Will at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration is voluntary under Section 18(e) of the Registration Act, 1908. An unregistered Will executed before two independent witnesses on plain paper is legally valid. However, if the NRI visits India, registering the Will before the Sub-Registrar where the immovable property is located provides formidable legal protection against frivolous challenges by distant relatives.",
+              text: "Filing is voluntary under Section 18(e) of the Filing Act, 1908. An plain Will signed before two independent witnesses on plain paper is legally valid. However, if the NRI visits India, registering the Will before the SRO where the land asset is located provides formidable legal protection against frivolous fights by distant relatives.",
             },
           },
         ],

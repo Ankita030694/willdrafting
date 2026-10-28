@@ -34,48 +34,48 @@ import {
 
 // Table of Contents Items (strictly <= 70 chars, 0 em-dashes, unique matching anchor IDs)
 const TOC_ITEMS = [
-  { id: "huf-will-statutory-rules", label: "1. Statutory Rules: Bequeathing HUF Share" },
-  { id: "notional-partition-simulator", label: "2. Interactive HUF Notional Partition Tool" },
+  { id: "huf-will-statutory-rules", label: "1. Legal Rules: Bequeathing HUF Share" },
+  { id: "notional-partition-simulator", label: "2. Free HUF Notional Split Tool" },
   { id: "void-vs-valid-comparison", label: "3. Void vs Valid HUF Bequest Clauses" },
   { id: "section-30-coparcenary-rights", label: "4. Section 30 Hindu Succession Act Rights" },
   { id: "radhamma-supreme-court-precedent", label: "5. Radhamma v. Muddukrishna Ruling" },
-  { id: "huf-will-clause-template", label: "6. Section 30 HUF Coparcenary Clause Format" },
+  { id: "huf-will-clause-template", label: "6. Section 30 HUF Joint Clause Format" },
   { id: "karta-powers-and-limitations", label: "7. HUF Karta Powers: Self vs HUF Estate" },
   { id: "daughter-coparcenary-shares", label: "8. Daughter Rights Under Vineeta Sharma" },
   { id: "step-by-step-drafting-sop", label: "9. Step-by-Step SOP: HUF Will Drafting" },
   { id: "common-fatal-mistakes", label: "10. Five Fatal HUF Bequest Mistakes" },
   { id: "frequently-asked-questions", label: "11. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "12. Statutory Citations & Precedents" },
+  { id: "statutory-citations", label: "12. Legal Citations & Precedents" },
 ];
 
 const FAQS = [
   {
-    q: "Can a Karta bequeath the entire HUF property in his Will?",
-    a: "No. A Karta does not own the whole HUF property. Joint family property belongs to all coparceners together by birth. Any clause giving away the entire house is void from the start. A Karta can only give his own undivided share in a Will.",
+    q: "Can a Karta bequeath the entire HUF asset in his Will?",
+    a: "No. A Karta does not own the whole HUF asset. Joint family asset belongs to all coparceners together by birth. Any clause giving away the entire house is void from the start. A Karta can only give his own undivided share in a Will.",
   },
   {
     q: "What is the correct way to mention an HUF share in a Will?",
-    a: "Under Section 30 of the Hindu Succession Act, 1956, you must state: 'I bequeath my undivided coparcenary share in the HUF as determined on notional partition under Section 6 immediately before my death.' This legal formula keeps your Will valid.",
+    a: "Under Section 30 of the Hindu Succession Act, 1956, you must state: 'I bequeath my undivided joint share in the HUF as determined on notional split under Section 6 right away before my death.' This legal formula keeps your Will valid.",
   },
   {
     q: "What did the Supreme Court hold in Radhamma v. Muddukrishna (2019)?",
-    a: "In Radhamma v. H.N. Muddukrishna (2019), the Supreme Court ruled that Section 30 gives a coparcener the right to bequeath his share by Will. However, the bequest applies only to his individual notional share. He cannot give away shares of other coparceners.",
+    a: "In Radhamma v. H.N. Muddukrishna (2019), the Supreme Court ruled that Section 30 gives a coparcener the right to bequeath his share by Will. However, the bequest applies only to his single notional share. He cannot give away shares of other coparceners.",
   },
   {
-    q: "How is the testator's undivided coparcenary share calculated?",
-    a: "Under Section 6(3) of the Act, the share is found by a notional partition. The law assumes a partition happened just before death. The property is divided equally among the living coparceners and the wife to determine the testator's exact fraction.",
+    q: "How is the Will maker's undivided joint share calculated?",
+    a: "Under Section 6(3) of the Act, the share is found by a notional split. The law assumes a split happened just before death. The asset is divided equally among the living coparceners and the wife to determine the Will maker's exact fraction.",
   },
   {
-    q: "Do daughters have equal coparcenary rights in an HUF?",
-    a: "Yes. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court ruled that daughters are equal coparceners by birth. They hold the exact same rights as sons. In any notional partition calculation, daughters receive equal shares with sons.",
+    q: "Do daughters have equal joint rights in an HUF?",
+    a: "Yes. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court ruled that daughters are equal coparceners by birth. They hold the exact same rights as sons. In any notional split calculation, daughters receive equal shares with sons.",
   },
   {
     q: "Can an HUF coparcener bequeath his share to a non-family outsider?",
-    a: "Yes. Section 30 gives you testamentary power over your own share. You can leave your share to your spouse, one child, a trust, or an outside legatee. The person who gets the share can then ask for a formal partition.",
+    a: "Yes. Section 30 gives you Will power over your own share. You can leave your share to your spouse, one child, a trust, or an outside legatee. The person who gets the share can then ask for a formal split.",
   },
   {
     q: "Does bequeathing an HUF share dissolve the HUF for income tax purposes?",
-    a: "No. Bequeathing your share does not automatically close the HUF entity. Under Section 171 of the Income Tax Act, 1961, the HUF continues under its PAN until a complete partition by metes and bounds is accepted by the tax officer.",
+    a: "No. Bequeathing your share does not automatically close the HUF entity. Under Section 171 of the Income Tax Act, 1961, the HUF continues under its PAN until a complete split by metes and bounds is accepted by the tax officer.",
   },
   {
     q: "Who becomes the new Karta after the death of the existing Karta?",
@@ -96,7 +96,7 @@ export default function HufKartaCoparcenaryWillClauseClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("huf-will-statutory-rules");
+  const [activeId, setActiveId] = useState<string>("huf-will-legal-rules");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause1, setCopiedClause1] = useState<boolean>(false);
   const [copiedClause2, setCopiedClause2] = useState<boolean>(false);
@@ -111,7 +111,7 @@ export default function HufKartaCoparcenaryWillClauseClient() {
   const [hasSpouse, setHasSpouse] = useState<boolean>(true);
   const [totalHufValue, setTotalHufValue] = useState<number>(40000000); // ₹4.00 Cr default
 
-  // Total shares on notional partition:
+  // Total shares on notional split:
   // Karta (1) + Spouse (1, if alive) + Sons + Daughters
   const totalPartitionUnits = 1 + (hasSpouse ? 1 : 0) + numSons + numDaughters;
   const unitPercentage = 100 / totalPartitionUnits;
@@ -235,14 +235,14 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            How to Mention HUF Coparcenary Share in Will Format
+            How to Mention HUF Joint Share in Will Format
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Learn the exact statutory formula to bequeath an undivided coparcenary interest in your Will.
             Master Section 30 wording, notional partition math, and the landmark Supreme Court ruling in{" "}
-            <strong>Radhamma v. Muddukrishna</strong> to avoid costly family litigation.
+            <strong>Radhamma v. Muddukrishna</strong> to avoid costly family court fights.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -260,14 +260,14 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
             <Link
               href="/contact"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm sm:text-base border border-white/20 transition-colors"
             >
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Consult Succession Counsel</span>
+              <span>Consult Estate Counsel</span>
             </Link>
           </div>
         </div>
@@ -368,14 +368,14 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>The Fatal Error:</strong> Never write <em>&quot;I give the HUF property at Connaught Place to my son.&quot;</em>{" "}
+                    <strong>The Fatal Error:</strong> Never write <em>&quot;I give the HUF asset at Connaught Place to my son.&quot;</em>{" "}
                     A Karta does not own the whole building. Writing this makes your clause legally void.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>The Legal Formula:</strong> State: <em>&quot;I give my undivided coparcenary share in the HUF as determined on notional partition under Section 30 of the Hindu Succession Act, 1956.&quot;</em>
+                    <strong>The Legal Formula:</strong> State: <em>&quot;I give my undivided joint share in the HUF as determined on notional split under Section 30 of the Hindu Succession Act, 1956.&quot;</em>
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -387,7 +387,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Daughters Hold Equal Shares:</strong> Under the <em>Vineeta Sharma (2020)</em> ruling, daughters are equal coparceners by birth. Each daughter receives an equal share in the notional partition pool.
+                    <strong>Daughters Hold Equal Shares:</strong> Under the <em>Vineeta Sharma (2020)</em> ruling, daughters are equal coparceners by birth. Each daughter receives an equal share in the notional split pool.
                   </span>
                 </li>
               </ul>
@@ -400,22 +400,22 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Bequeathing HUF Share in a Will
+                1. Legal Rules: Bequeathing HUF Share in a Will
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A Hindu Undivided Family (HUF) holds joint family property. In old Hindu law, this property passed by
+                  A Hindu Undivided Family (HUF) holds joint family asset. In old Hindu law, this asset passed by
                   survivorship. When a family member died, his share went to the remaining members. A person could not give
                   away this share in a will.
                 </p>
                 <p>
                   In 1956, Parliament changed this rule. Section 30 of the Hindu Succession Act created a new right. Now,
-                  a coparcener can give his own share in a will. But the Karta cannot give the entire property. The joint
+                  a coparcener can give his own share in a will. But the Karta cannot give the entire asset. The joint
                   house belongs to all members by birth. You only own an undivided share. This guide shows how to write that
                   share correctly.
                 </p>
                 <p>
-                  Because the property is not split during life, the testator does not own a single room or floor. If a Karta
+                  Because the asset is not split during life, the Will maker does not own a single room or floor. If a Karta
                   names a specific room in his will, the clause fails in court. The will must refer to the undivided interest.
                 </p>
               </div>
@@ -428,11 +428,11 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>INTERACTIVE SIMULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Tool: HUF Notional Partition Calculator
+                2. Free Tool: HUF Notional Split Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Under Section 6(3) of the Act, your share is found by a legal fiction. This is called a notional partition.
-                The law assumes a partition happened just before death. Use this tool to compute your exact share.
+                Under Section 6(3) of the Act, your share is found by a legal fiction. This is called a notional split.
+                The law assumes a split happened just before death. Use this tool to compute your exact share.
               </p>
 
               {/* Calculator Box */}
@@ -569,7 +569,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
 
                     <div>
                       <div className="text-xs text-rose-900/80 font-bold uppercase tracking-wider">
-                        Karta / Testator Coparcenary Share
+                        Karta / Will maker Joint Share
                       </div>
                       <div className="text-3xl sm:text-4xl font-black text-[#C65378] mt-1">
                         {kartaSharePercent}%
@@ -598,7 +598,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
 
                     <div>
                       <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">
-                        Protected Family Coparcenary Share
+                        Protected Family Joint Share
                       </div>
                       <div className="text-3xl sm:text-4xl font-black text-slate-800 mt-1">
                         {remainingSharePercent}%
@@ -617,13 +617,13 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                       )}
                       {numSons > 0 && (
                         <div className="flex justify-between">
-                          <span>Each Son&apos;s Coparcenary Share:</span>
+                          <span>Each Son&apos;s Joint Share:</span>
                           <span className="font-bold text-slate-900">{kartaSharePercent}% ({formatINR(unitValue)})</span>
                         </div>
                       )}
                       {numDaughters > 0 && (
                         <div className="flex justify-between">
-                          <span>Each Daughter&apos;s Coparcenary Share:</span>
+                          <span>Each Daughter&apos;s Joint Share:</span>
                           <span className="font-bold text-emerald-700">{kartaSharePercent}% ({formatINR(unitValue)})</span>
                         </div>
                       )}
@@ -635,7 +635,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900">
                   <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div className="leading-relaxed">
-                    <strong>Critical Legal Warning:</strong> If your Will states <em>&quot;I give the entire HUF property to my younger son,&quot;</em>{" "}
+                    <strong>Critical Legal Warning:</strong> If your Will states <em>&quot;I give the entire HUF asset to my younger son,&quot;</em>{" "}
                     other coparceners can file a civil suit. The court will declare the bequest void for their {remainingSharePercent}% share. Always use the Section 30 formula.
                   </div>
                 </div>
@@ -647,7 +647,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     href="/tools/huf-coparcenary-share-partition-calculator"
                     className="font-bold text-[#C65378] hover:underline inline-flex items-center gap-1"
                   >
-                    <span>Open HUF Partition Calculator</span>
+                    <span>Open HUF Split Tool</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -676,7 +676,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <p className="text-xs sm:text-sm font-semibold text-slate-700 flex items-center justify-center gap-2">
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>
-                    Official Section 30 HUF Coparcenary Bequest Architecture: Notional Partition Calculation &amp; Supreme Court Precedent
+                    Official Section 30 HUF Joint Bequest Architecture: Notional Split Calculation &amp; Supreme Court Precedent
                   </span>
                 </p>
               </div>
@@ -693,7 +693,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Compare common drafting mistakes against the Supreme Court approved Section 30 wording.
-                Using incorrect phrasing leads to probate disputes and civil court injunctions.
+                Using incorrect phrasing leads to probate fights and civil court injunctions.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 shadow-xs bg-white">
@@ -712,7 +712,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/70">
                       <td className="py-3.5 px-4 font-semibold text-slate-900">
-                        Bequest of Physical Immovable Asset
+                        Bequest of Physical Land Asset
                       </td>
                       <td className="py-3.5 px-4 text-rose-700 bg-rose-50/40">
                         <em>&quot;I give the family home at Plot 12, belonging to our HUF, to my elder son.&quot;</em>
@@ -721,9 +721,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                         </div>
                       </td>
                       <td className="py-3.5 px-4 text-emerald-800 bg-emerald-50/40 font-medium">
-                        <em>&quot;I give my undivided coparcenary share in Plot 12 as determined on notional partition to my elder son.&quot;</em>
+                        <em>&quot;I give my undivided joint share in Plot 12 as determined on notional split to my elder son.&quot;</em>
                         <div className="text-[11px] text-slate-600 mt-1 font-sans">
-                          <strong>Outcome:</strong> VALID. Confined strictly to the testator&apos;s individual notional share.
+                          <strong>Outcome:</strong> VALID. Confined strictly to the Will maker&apos;s single notional share.
                         </div>
                       </td>
                     </tr>
@@ -734,13 +734,13 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                       <td className="py-3.5 px-4 text-rose-700 bg-rose-50/40">
                         <em>&quot;I give the Ground Floor of our family house to my wife and First Floor to my daughter.&quot;</em>
                         <div className="text-[11px] text-slate-500 mt-1 font-sans">
-                          <strong>Outcome:</strong> VOID. No member can split physical floors in a Will before actual partition.
+                          <strong>Outcome:</strong> VOID. No member can split physical floors in a Will before actual split.
                         </div>
                       </td>
                       <td className="py-3.5 px-4 text-emerald-800 bg-emerald-50/40 font-medium">
                         <em>&quot;I give my undivided share in the house to my wife for life, with remainder to my daughter.&quot;</em>
                         <div className="text-[11px] text-slate-600 mt-1 font-sans">
-                          <strong>Outcome:</strong> VALID. Heirs receive financial or physical shares after partition.
+                          <strong>Outcome:</strong> VALID. Heirs receive financial or physical shares after split.
                         </div>
                       </td>
                     </tr>
@@ -755,7 +755,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                         </div>
                       </td>
                       <td className="py-3.5 px-4 text-emerald-800 bg-emerald-50/40 font-medium">
-                        <em>&quot;I give my personal undivided share to my son; my daughter keeps her own coparcenary share.&quot;</em>
+                        <em>&quot;I give my personal undivided share to my son; my daughter keeps her own joint share.&quot;</em>
                         <div className="text-[11px] text-slate-600 mt-1 font-sans">
                           <strong>Outcome:</strong> VALID. Does not touch the daughter&apos;s independent share.
                         </div>
@@ -774,7 +774,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                       <td className="py-3.5 px-4 text-emerald-800 bg-emerald-50/40 font-medium">
                         <em>&quot;My undivided share in all HUF bank balances and investments shall pass to my second son.&quot;</em>
                         <div className="text-[11px] text-slate-600 mt-1 font-sans">
-                          <strong>Outcome:</strong> VALID. Disposes only of testator&apos;s percentage share.
+                          <strong>Outcome:</strong> VALID. Disposes only of Will maker&apos;s percentage share.
                         </div>
                       </td>
                     </tr>
@@ -790,28 +790,28 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>STATUTORY ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Section 30 Hindu Succession Act: Coparcenary Rights
+                4. Section 30 Hindu Succession Act: Joint Rights
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 30 of the Hindu Succession Act grants full power to write a will for your HUF share. Before 1956,
-                  this was not allowed. The law treats your undivided share as personal property for your will.
+                  this was not allowed. The law treats your undivided share as personal asset for your will.
                 </p>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                   <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                     <Award className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory Text: Section 30 Explanation</span>
+                    <span>Legal Text: Section 30 Explanation</span>
                   </div>
                   <blockquote className="italic text-xs text-slate-600 leading-relaxed pl-3 border-l-2 border-[#C65378]">
-                    &quot;The interest of a Hindu Mitakshara coparcener in an undivided coparcenary property shall,
+                    &quot;The interest of a Hindu Mitakshara coparcener in an undivided joint asset shall,
                     notwithstanding anything contained in this Act or in any other law for the time being in force,
-                    be deemed to be property capable of being disposed of by him or by her within the meaning of this sub-section.&quot;
+                    be deemed to be asset capable of being disposed of by him or by her within the meaning of this sub-section.&quot;
                   </blockquote>
                 </div>
                 <p>
                   You can leave this share to your wife, a single child, or any chosen person. But you must not name
                   specific rooms or physical floors. Your will gives a share of the whole estate. After death, the person
-                  who receives the share can ask for a formal division of the property.
+                  who receives the share can ask for a formal division of the asset.
                 </p>
               </div>
             </section>
@@ -838,7 +838,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   </div>
                   <ul className="space-y-2 text-xs text-slate-600">
                     <li className="flex items-start gap-2">
-                      <span className="font-bold text-slate-800">The Dispute:</span>
+                      <span className="font-bold text-slate-800">The Fight:</span>
                       <span>
                         Family members claimed that joint family land passes only by survivorship and cannot be given in a will.
                       </span>
@@ -852,14 +852,14 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     <li className="flex items-start gap-2">
                       <span className="font-bold text-slate-800">The Limit:</span>
                       <span>
-                        However, the Court set one strict limit. The will only covers the testator&apos;s personal share. It cannot take away the shares of other coparceners. That share is fixed by notional partition right before death.
+                        However, the Court set one strict limit. The will only covers the Will maker&apos;s personal share. It cannot take away the shares of other coparceners. That share is fixed by notional split right before death.
                       </span>
                     </li>
                   </ul>
                 </div>
                 <p>
                   This judgment protects will drafters. By citing Section 30 and the Radhamma precedent in your clause,
-                  you prevent costly court challenges.
+                  you prevent costly court fights.
                 </p>
               </div>
             </section>
@@ -871,10 +871,10 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>LAWYER-VETTED CLAUSE TEMPLATES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Download Section 30 HUF Coparcenary Will Clause Format
+                6. Download Section 30 HUF Joint Will Clause Format
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Copy and insert these lawyer-vetted statutory clauses directly into your Will. Each template is drafted
+                Copy and insert these lawyer-vetted legal clauses directly into your Will. Each template is drafted
                 to withstand scrutiny in High Courts and probate proceedings.
               </p>
 
@@ -1019,7 +1019,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-slate-900">3.</span>
-                    <span>Parent title deeds showing ancestral origin through three generations.</span>
+                    <span>Parent title deeds showing family origin through three generations.</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-slate-900">4.</span>
@@ -1027,7 +1027,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-slate-900">5.</span>
-                    <span>Equal inclusion of married and unmarried daughters in the notional partition pool.</span>
+                    <span>Equal inclusion of married and unmarried daughters in the notional split pool.</span>
                   </div>
                 </div>
               </div>
@@ -1040,7 +1040,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>POWERS &amp; RESTRICTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. HUF Karta Powers: Self-Acquired vs Coparcenary Estate
+                7. HUF Karta Powers: Self-Acquired vs Joint Estate
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1055,7 +1055,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       During his lifetime, a Karta can sell joint land only for genuine legal necessity or estate benefit.
-                      He manages the property for all family members.
+                      He manages the asset for all family members.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-2">
@@ -1079,7 +1079,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>GENDER EQUALITY &amp; COPARCENARY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Daughter Coparcenary Rights Under Vineeta Sharma Ruling
+                8. Daughter Joint Rights Under Vineeta Sharma Ruling
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1088,10 +1088,10 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-700">
                   <li>
-                    A daughter receives coparcenary rights by birth, even if her father died before 2005.
+                    A daughter receives joint rights by birth, even if her father died before 2005.
                   </li>
                   <li>
-                    Marriage does not end her rights. Married daughters keep full coparcenary shares.
+                    Marriage does not end her rights. Married daughters keep full joint shares.
                   </li>
                   <li>
                     When calculating the notional division, daughters get equal shares with sons. This applies even if
@@ -1108,7 +1108,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>PRACTICAL DRAFTING SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Drafting HUF Coparcenary Will Clauses
+                9. Step-by-Step SOP: Drafting HUF Joint Will Clauses
               </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
@@ -1147,7 +1147,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   </div>
                   <div>
                     <strong className="text-slate-900 text-sm block">Sign with Independent Witnesses</strong>
-                    Sign the will before two adult witnesses who are not family coparceners or beneficiaries under the will.
+                    Sign the will before two adult witnesses who are not family coparceners or heirs under the will.
                   </div>
                 </div>
               </div>
@@ -1199,7 +1199,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     <span>Mistake 4: Mixing Salary into HUF Accounts</span>
                   </strong>
                   <p className="text-slate-600 leading-relaxed">
-                    Depositing personal salary into HUF bank accounts mixes the funds and causes heavy tax disputes.
+                    Depositing personal salary into HUF bank accounts mixes the funds and causes heavy tax fights.
                   </p>
                 </div>
 
@@ -1209,7 +1209,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     <span>Mistake 5: Not Registering the Will</span>
                   </strong>
                   <p className="text-slate-600 leading-relaxed">
-                    Registering your will at the Sub-Registrar Office proves you were of sound mind and stops false claims.
+                    Registering your will at the SRO office proves you were of sound mind and stops false claims.
                   </p>
                 </div>
               </div>
@@ -1225,7 +1225,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 11. Frequently Asked Questions: HUF Share Will Formats
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm">
-                Get direct legal answers to common questions about bequeathing HUF coparcenary interests in India.
+                Get direct legal answers to common questions about bequeathing HUF joint interests in India.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1266,7 +1266,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <span>AUTHORITY &amp; CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Statutory Citations &amp; High Court Precedents
+                12. Legal Citations &amp; High Court Precedents
               </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4 text-xs leading-relaxed">
@@ -1280,13 +1280,13 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                       equal birth rights for daughters.
                     </li>
                     <li>
-                      <strong>Hindu Succession Act, 1956 s. 30:</strong> Power to make a will for undivided coparcenary share.
+                      <strong>Hindu Succession Act, 1956 s. 30:</strong> Power to make a will for undivided joint share.
                     </li>
                     <li>
-                      <strong>Indian Succession Act, 1925 ss. 63 &amp; 67:</strong> Signing, witness rules, and safe execution of wills.
+                      <strong>Indian Succession Act, 1925 ss. 63 &amp; 67:</strong> Signing, witness rules, and safe signing of wills.
                     </li>
                     <li>
-                      <strong>Income Tax Act, 1961 s. 171:</strong> Tax rules for partition of a Hindu Undivided Family.
+                      <strong>Income Tax Act, 1961 s. 171:</strong> Tax rules for split of a Hindu Undivided Family.
                     </li>
                   </ul>
                 </div>
@@ -1334,20 +1334,20 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/huf-coparcenary-share-partition-calculator"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      HUF Coparcenary Partition Calculator
+                      HUF Joint Split Tool
                     </Link>
                     <Link
                       href="/blogs/huf-property-after-death-of-karta"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      HUF Property After Death of Karta Guide
+                      HUF Asset After Death of Karta Guide
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1359,19 +1359,41 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                       href="/templates/partition-deed-format-between-family-members"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Partition Deed Format Between Family Members
+                      Split Deed Format Between Family Members
                     </Link>
                     <Link
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Registration &amp; SRO Verification
+                      Will Filing &amp; SRO Check
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1384,21 +1406,21 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu Succession Act jurisprudence, HUF coparcenary partitions, High Court probate
-                petitions, and family estate dispute resolution pan-India.
+                Expert in Hindu Succession Act jurisprudence, HUF joint partitions, High Court probate
+                petitions, and family estate fight resolution pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1412,10 +1434,10 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   <span>PREVENT FUTURE FAMILY DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children from HUF Partition Lawsuits
+                  Protect Your Children from HUF Split Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally sound Will drafted with the exact Section 30 coparcenary formula prevents disputes among
+                  A legally sound Will drafted with the exact Section 30 joint formula prevents fights among
                   brothers, sisters, and surviving coparceners.
                 </p>
                 <button
@@ -1438,18 +1460,18 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   <span>HUF ESTATE DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Complex HUF Assets or Business Properties?
+                  Complex HUF Assets or Business Assets?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates assist with HUF notional partition deeds, family settlement agreements,
-                  and Sub-Registrar Office will registration across India.
+                  Our estate lawyers assist with HUF notional split deeds, family deal agreements,
+                  and SRO office will filing across India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1468,7 +1490,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Radhamma Compliance:</strong> Aligns fully with Supreme Court coparcenary precedents.
+                      <strong>Radhamma Compliance:</strong> Aligns fully with Supreme Court joint precedents.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

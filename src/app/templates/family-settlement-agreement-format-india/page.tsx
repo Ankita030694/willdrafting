@@ -90,7 +90,7 @@ export default function FamilySettlementAgreementPage() {
         url: canonicalUrl,
         name: "Family Settlement Agreement Format India | WillDrafting",
         description:
-          "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.",
+          "Download legally valid family deal pact format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function FamilySettlementAgreementPage() {
         name: "Family Settlement Agreement & Memorandum Formats India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted family settlement agreement templates for Indian families dividing ancestral and self-acquired properties, featuring past oral.",
+          "Lawyer-vetted family deal pact templates for Indian families dividing family and self-acquired assets, featuring past oral.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -151,7 +151,7 @@ export default function FamilySettlementAgreementPage() {
             name: "What is a Family Settlement Agreement in Indian law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Family Settlement Agreement (or Family Arrangement) is an amicable agreement among family members who possess some antecedent title, claim, or interest in shared or ancestral property. It resolves rival claims, avoids protracted partition litigation, and maintains family peace without creating new titles.",
+              text: "A Family Deal Pact (or Family Arrangement) is an amicable pact among family members who possess some antecedent title, claim, or interest in shared or family asset. It resolves rival claims, avoids protracted split court fights, and maintains family peace without creating new titles.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function FamilySettlementAgreementPage() {
             name: "Is registration mandatory for a Family Settlement Agreement in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "It depends entirely on the drafting tense and purpose. Under the Supreme Court ruling in Kale v. Deputy Director of Consolidation (1976), if the document merely records an antecedent past oral partition as a Memorandum (Yadasht), it does not create rights in praesenti and does NOT require registration under Section 17(1)(b) of the Registration Act. However, if the agreement itself divides property or extinguishes rights on the spot, registration and full stamp duty are mandatory.",
+              text: "It depends entirely on the drafting tense and purpose. Under the Supreme Court ruling in Kale v. Deputy Director of Consolidation (1976), if the paper merely records an antecedent past oral split as a Memorandum (Yadasht), it does not create rights in praesenti and does NOT require filing under Section 17(1)(b) of the Filing Act. However, if the pact itself divides asset or extinguishes rights on the spot, filing and full stamp duty are needed.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function FamilySettlementAgreementPage() {
             name: "How much stamp duty is payable on a family settlement deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A registered Operative Partition Deed or Family Settlement Deed attracts full stamp duty under the relevant State Stamp Act (typically 2% to 6% of the market or circle rate value of the separated shares). In contrast, a Memorandum of Past Oral Settlement recorded on non-judicial stamp paper attracts only standard agreement stamp duty (typically Rs. 100 to Rs. 500 depending on state amendments).",
+              text: "A filed Operative Split Deed or Family Deal Deed attracts full stamp duty under the relevant State Stamp Act (typically 2% to 6% of the market or circle rate value of the separated shares). In contrast, a Memorandum of Past Oral Deal recorded on non-judicial stamp paper attracts only standard pact stamp duty (typically Rs. 100 to Rs. 500 depending on state amendments).",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function FamilySettlementAgreementPage() {
             name: "What is the five-point test laid down in Kale v. Deputy Director of Consolidation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The Supreme Court in Kale v. Deputy Director (AIR 1976 SC 807) held: (1) The settlement must be bona fide to resolve family disputes; (2) The division must be fair and equitable; (3) It must be voluntary without fraud, coercion, or undue influence; (4) It may be oral in the first instance, followed by a written memorandum; and (5) The parties must have antecedent title, claim, or interest in the property.",
+              text: "The Supreme Court in Kale v. Deputy Director (AIR 1976 SC 807) held: (1) The deal must be bona fide to resolve family fights; (2) The division must be fair and equitable; (3) It must be voluntary without fraud, coercion, or undue influence; (4) It may be oral in the first instance, followed by a written memorandum; and (5) The parties must have antecedent title, claim, or interest in the asset.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function FamilySettlementAgreementPage() {
             name: "Can an unregistered family settlement memorandum be used in court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under the Supreme Court rulings in Korukonda Chalapathi Rao (2021) and Subraya M.N. v. Vittala M.N. (2016), an unregistered memorandum of past oral family settlement is fully admissible under the proviso to Section 49 of the Registration Act for collateral purposes, including proving the nature and character of possession and the severance of joint family status.",
+              text: "Yes. Under the Supreme Court rulings in Korukonda Chalapathi Rao (2021) and Subraya M.N. v. Vittala M.N. (2016), an plain memorandum of past oral family deal is fully admissible under the proviso to Section 49 of the Filing Act for collateral purposes, including proving the nature and character of possession and the severance of joint family status.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function FamilySettlementAgreementPage() {
             name: "Does a family settlement attract capital gains tax under Income Tax Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets on total or partial partition of a Hindu Undivided Family (HUF) or bona fide family arrangement is expressly excluded from the definition of transfer under Section 45. Hence, no capital gains tax is payable when the settlement is executed.",
+              text: "No. Under Section 47(i) of the Income Tax Act, 1961, any split of capital assets on total or partial split of a Hindu Undivided Family (HUF) or bona fide family arrangement is expressly excluded from the definition of transfer under Section 45. Hence, no capital gains tax is payable when the deal is signed.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function FamilySettlementAgreementPage() {
             name: "Can a married daughter or sister claim share in a family settlement?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal coparcenary rights by birth in ancestral property. Any family settlement executed without the free, informed consent and signature of daughters or sisters is vulnerable to being set aside by civil courts.",
+              text: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal joint rights by birth in family asset. Any family deal signed without the free, informed consent and signature of daughters or sisters is vulnerable to being set aside by civil courts.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function FamilySettlementAgreementPage() {
             name: "What is an Owelty clause in a family settlement agreement?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Owelty clause provides for monetary equalization when immovable properties cannot be divided into mathematically equal physical parcels. The party receiving a more valuable physical share pays a specified cash compensation (owelty) to the other parties to equalize their statutory entitlements.",
+              text: "An Owelty clause provides for monetary equalization when land assets cannot be divided into mathematically equal physical parcels. The party receiving a more valuable physical share pays a specified cash compensation (owelty) to the other parties to equalize their legal entitlements.",
             },
           },
           {
@@ -215,7 +215,7 @@ export default function FamilySettlementAgreementPage() {
             name: "How does the doctrine of estoppel apply to family settlements?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the landmark precedent in Subraya M.N. v. Vittala M.N. (2016), once family members enter into an oral settlement, sign a memorandum, and take possession or benefit of their allotted parcels, the doctrine of estoppel estops them from challenging the settlement or demanding a fresh partition later.",
+              text: "Under the landmark precedent in Subraya M.N. v. Vittala M.N. (2016), once family members enter into an oral deal, sign a memorandum, and take possession or benefit of their allotted parcels, the doctrine of estoppel estops them from challenging the deal or demanding a fresh split later.",
             },
           },
           {
@@ -223,7 +223,7 @@ export default function FamilySettlementAgreementPage() {
             name: "How do you mutate revenue records after executing a family settlement?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Parties submit the family settlement memorandum or registered deed along with a joint affidavit, death certificates of ancestors, and property tax receipts to the local revenue authority (Tehsildar for agricultural land or Municipal Corporation for urban property) to mutate the property card, Khata, or Dakhil Kharij into the respective individual names.",
+              text: "Parties submit the family deal memorandum or filed deed along with a joint sworn note, death papers of ancestors, and asset tax receipts to the local revenue office (Tehsildar for farm land or City City Board for urban asset) to mutate the asset card, Khata, or Dakhil Kharij into the respective single names.",
             },
           },
         ],

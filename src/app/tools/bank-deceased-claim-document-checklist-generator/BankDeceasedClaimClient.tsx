@@ -266,53 +266,53 @@ const STAMP_DUTY_BY_STATE: Record<string, { stampDuty: string; notaryRequired: b
 };
 
 const TOC_ITEMS = [
-  { id: "rbi-statutory-framework", label: "1. RBI Master Directions: Settlement of Deceased Claims" },
-  { id: "interactive-checklist-tool", label: "2. Bank Deceased Claim Document Checklist Generator" },
+  { id: "rbi-statutory-framework", label: "1. RBI Master Directions: Deal of Deceased Claims" },
+  { id: "interactive-checklist-tool", label: "2. Bank Deceased Claim Paper Checklist Generator" },
   { id: "nominee-vs-legal-heir", label: "3. Nominee vs Legal Heir Rights: Banking Regulation Act" },
   { id: "bank-threshold-comparison", label: "4. Top 12 Indian Banks Deceased Claim Threshold Limits" },
-  { id: "indemnity-surety-rules", label: "5. Indemnity Bond & Surety Requirements for Bank Claims" },
+  { id: "indemnity-surety-rules", label: "5. Indemnity Bond & Surety Rules for Bank Claims" },
   { id: "locker-safe-custody-rules", label: "6. Safety Locker & Safe Custody Claim Rules After Demise" },
-  { id: "succession-certificate-trigger", label: "7. When Is a Court Succession Certificate Truly Mandatory?" },
+  { id: "succession-certificate-trigger", label: "7. When Is a Court Estate Paper Truly Needed?" },
   { id: "step-by-step-claim-sop", label: "8. Step-by-Step SOP: Claiming Bank Balance of Deceased" },
   { id: "practical-case-studies", label: "9. Practical Case Studies: SBI, HDFC & ICICI Bank Claims" },
   { id: "copy-paste-templates", label: "10. Copy-Paste Bank Deceased Claim Affidavits & Bonds" },
   { id: "institutional-profile", label: "11. Institutional Profile: Legal Excellence & Trust" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions: Bank Deceased Claims" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Official Banking Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Official Banking Portals" },
 ];
 
 const FAQS = [
   {
     q: "How do I claim money from a deceased person's bank account in India?",
-    a: "To claim money from a deceased depositor's account, check if a nominee is registered. If a registered nominee exists, submit the bank claim form, original death certificate, nominee KYC documents, and passbook. The bank will release funds within 15 days. If no nominee exists, all legal heirs must jointly submit claim forms, legal heir certificate, letter of disclaimer, and an indemnity bond with sureties.",
+    a: "To claim money from a deceased depositor's account, check if a nominee is filed. If a filed nominee exists, submit the bank claim form, original death paper, nominee KYC papers, and passbook. The bank will release funds within 15 days. If no nominee exists, all legal heirs must jointly submit claim forms, legal heir paper, letter of disclaimer, and an indemnity bond with sureties.",
   },
   {
-    q: "What is the maximum balance a bank can settle without a succession certificate?",
-    a: "Under RBI Master Directions, every bank's Board fixes an indemnity threshold for settling claims without demanding a court succession certificate. For State Bank of India, Punjab National Bank, Bank of Baroda, and Axis Bank, this threshold is ₹5,00,000. ICICI Bank allows simplified settlement up to ₹10,00,000 against an indemnity bond and solvent sureties.",
+    q: "What is the maximum balance a bank can settle without a estate paper?",
+    a: "Under RBI Master Directions, every bank's Board fixes an indemnity threshold for settling claims without demanding a court estate paper. For State Bank of India, Punjab National Bank, Bank of Baroda, and Axis Bank, this threshold is ₹5,00,000. ICICI Bank allows simplified deal up to ₹10,00,000 against an indemnity bond and solvent sureties.",
   },
   {
     q: "Does a nominee become the absolute owner of the deceased's bank account?",
-    a: "No. The Supreme Court of India held in Smt. Sarbati Devi v. Smt. Usha Devi and Ram Chander Talwar v. Devender Kumar Talwar that a nominee is merely a statutory trustee authorized to receive funds and give a valid discharge to the bank. The money forms part of the deceased person's estate and belongs to the legal heirs under personal succession law.",
+    a: "No. The Supreme Court of India held in Smt. Sarbati Devi v. Smt. Usha Devi and Ram Chander Talwar v. Devender Kumar Talwar that a nominee is merely a legal trustee authorized to receive funds and give a valid discharge to the bank. The money forms part of the deceased person's estate and belongs to the legal heirs under personal estate law.",
   },
   {
     q: "How much time does a bank have to settle a deceased claim under RBI guidelines?",
     a: "Under RBI Master Direction on Customer Service in Banks (DBR.No.Leg.BC.21/09.07.006/2015-16), banks are strictly mandated to settle claims in respect of deceased depositors and release payments to survivors or nominees within a period not exceeding 15 calendar days from the date of receipt of the complete claim.",
   },
   {
-    q: "What documents are required to claim a bank account without a nominee?",
-    a: "Documents required for non-nominee claims include: (1) Prescribed Bank Deceased Claim Form signed by all legal heirs, (2) Original death certificate, (3) Revenue Legal Heir Certificate or Surviving Member Certificate, (4) Letter of Disclaimer (Annexure C) from heirs relinquishing rights, (5) Indemnity Bond (Annexure D) on non-judicial stamp paper, (6) Two solvent sureties with income proof, and (7) KYC documents of all heirs.",
+    q: "What papers are required to claim a bank account without a nominee?",
+    a: "Papers required for non-nominee claims include: (1) Prescribed Bank Deceased Claim Form signed by all legal heirs, (2) Original death paper, (3) Revenue Legal Heir Paper or Surviving Member Paper, (4) Letter of Disclaimer (Annexure C) from heirs relinquishing rights, (5) Indemnity Bond (Annexure D) on non-judicial stamp paper, (6) Two solvent sureties with income proof, and (7) KYC papers of all heirs.",
   },
   {
     q: "Why do banks ask for two sureties or guarantors on an indemnity bond?",
-    a: "When a claim is settled without a court order, banks require an Indemnity Bond signed by the claimant and two independent solvent sureties. This protects the bank against financial liability in case another unknown legal heir or creditor subsequently emerges and claims the deposited funds.",
+    a: "When a claim is settled without a court order, banks require an Indemnity Bond signed by the claimant and two independent solvent sureties. This protects the bank against financial liability in case another unknown legal heir or creditor then emerges and claims the deposited funds.",
   },
   {
     q: "How can legal heirs claim contents of a bank safety locker after the holder dies?",
-    a: "Under Section 45ZE of the Banking Regulation Act, 1949, if a locker has a registered nominee, the bank allows locker access to the nominee after preparing an inventory in the presence of the branch manager, nominee, and two independent witnesses. If there is no nominee, all legal heirs must jointly attend the inventory or provide a registered power of attorney.",
+    a: "Under Section 45ZE of the Banking Regulation Act, 1949, if a locker has a filed nominee, the bank allows locker access to the nominee after preparing an inventory in the presence of the branch manager, nominee, and two independent witnesses. If there is no nominee, all legal heirs must jointly attend the inventory or provide a filed power of attorney.",
   },
   {
     q: "What can I do if a bank branch manager refuses to settle a claim without a court order?",
-    a: "If the account balance is below the bank Board threshold and no court injunction exists, demanding a succession certificate violates RBI circular DBOD.No.Leg.BC.95/2004-05. You can submit a formal written grievance to the Branch Manager citing RBI directions. If unresolved within 30 days, file an online complaint with the RBI Banking Ombudsman on the CMS portal.",
+    a: "If the account balance is below the bank Board threshold and no court injunction exists, demanding a estate paper violates RBI circular DBOD.No.Leg.BC.95/2004-05. You can submit a formal written grievance to the Branch Manager citing RBI directions. If unresolved within 30 days, file an online complaint with the RBI Banking Ombudsman on the CMS portal.",
   },
 ];
 
@@ -329,7 +329,7 @@ export default function BankDeceasedClaimClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("rbi-statutory-framework");
+  const [activeId, setActiveId] = useState<string>("rbi-legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<string | null>(null);
 
@@ -343,7 +343,7 @@ export default function BankDeceasedClaimClient() {
   const [suretiesAvailable, setSuretiesAvailable] = useState<"yes" | "no">("yes");
   const [selectedState, setSelectedState] = useState<string>("maharashtra");
 
-  // Checklist interactive tick items
+  // Checklist free tick items
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -491,7 +491,7 @@ export default function BankDeceasedClaimClient() {
       title: "Original Death Certificate of Deceased Depositor",
       category: "Identity & Demise",
       mandatory: true,
-      description: "Computerized Municipal Corporation or Registrar of Births and Deaths certificate. Carry original for branch verification plus self-attested copies.",
+      description: "Computerized City City Board or Registrar of Births and Deaths paper. Carry original for branch check plus self-attested copies.",
     },
     {
       id: "doc-passbook",
@@ -505,7 +505,7 @@ export default function BankDeceasedClaimClient() {
       title: "Officially Valid KYC Documents of Claimant(s) / Nominee",
       category: "Identity & Demise",
       mandatory: true,
-      description: "Self-attested PAN Card and proof of address (Aadhaar Card, Passport, or Voter ID) of all claiming individuals, along with passport photographs.",
+      description: "Self-attested PAN Card and proof of address (Aadhaar Card, Passport, or Voter ID) of all claiming people, along with passport photographs.",
     },
   ];
 
@@ -516,7 +516,7 @@ export default function BankDeceasedClaimClient() {
         title: "Survivorship Operation Request Letter",
         category: "Bank Forms",
         mandatory: true,
-        description: "Application by surviving account holder(s) requesting deletion of deceased holder's name and continuation or closure of the account.",
+        description: "Form by surviving account holder(s) requesting deletion of deceased holder's name and continuation or closure of the account.",
       });
     } else {
       checklistDocs.push({
@@ -524,14 +524,14 @@ export default function BankDeceasedClaimClient() {
         title: `${bank.shortName} Deceased Claim Form for Nominee (DA-1 Record)`,
         category: "Bank Forms",
         mandatory: true,
-        description: "Standard claim format for registered nominee. Branch cross-verifies against the original Form DA-1 recorded in core banking software.",
+        description: "Standard claim format for filed nominee. Branch cross-verifies against the original Form DA-1 recorded in core banking software.",
       });
       checklistDocs.push({
         id: "doc-bank-account-proof",
         title: "Cancelled Cheque / Bank Statement of Nominee Account",
         category: "Identity & Demise",
         mandatory: true,
-        description: "For electronic credit of claim proceeds via NEFT/RTGS into nominee's individual bank account.",
+        description: "For electronic credit of claim proceeds via NEFT/RTGS into nominee's single bank account.",
       });
     }
   }
@@ -549,7 +549,7 @@ export default function BankDeceasedClaimClient() {
       title: "Revenue Legal Heir Certificate / Surviving Member Certificate",
       category: "Legal Heir Proof",
       mandatory: true,
-      description: "Official certificate issued by the Revenue Tahsildar, Sub-Divisional Magistrate (SDM), or Municipal Authority establishing family tree.",
+      description: "Official paper issued by the Revenue Tahsildar, Sub-Divisional Magistrate (SDM), or City Office establishing family tree.",
     });
     checklistDocs.push({
       id: "doc-disclaimer-relinquishment",
@@ -601,7 +601,7 @@ export default function BankDeceasedClaimClient() {
       title: `${bank.shortName} Formal Disbursement Application by Certificate Holder`,
       category: "Bank Forms",
       mandatory: true,
-      description: "Disbursement request submitted by the person in whose name the court has granted succession certificate / letters of administration.",
+      description: "Disbursement request submitted by the person in whose name the court has granted estate paper / letters of care.",
     });
   }
 
@@ -641,14 +641,14 @@ export default function BankDeceasedClaimClient() {
 
           {/* Strict H1 Tag (Length 48 chars, 0 em-dashes, distinct from title) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Bank Deceased Claim Document Checklist Generator
+            Bank Deceased Claim Paper Checklist Generator
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Instantly generate your customized bank deceased account claim checklist across top 12 Indian
             banks. Compare Board-approved <strong>simplified indemnity limits (₹5L to ₹10L)</strong> against
-            court succession certificate rules, and enforce the <strong>RBI 15-day settlement mandate</strong>.
+            court estate paper rules, and enforce the <strong>RBI 15-day deal mandate</strong>.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -658,7 +658,7 @@ export default function BankDeceasedClaimClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileSpreadsheet className="w-4 h-4" />
-              <span>Generate Bank Document Checklist</span>
+              <span>Generate Bank Paper Checklist</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -744,7 +744,7 @@ export default function BankDeceasedClaimClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under RBI Master Direction on Customer Service in Banks (DBR.No.Leg.BC.21/09.07.006/2015-16),
@@ -769,16 +769,16 @@ export default function BankDeceasedClaimClient() {
                   <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Nominee 15-Day Direct Release:</strong> Under RBI circulars, if a valid nominee
-                    is registered on bank records, the branch manager must release funds within 15 calendar days.
-                    Banks are prohibited from demanding legal heir certificates or indemnity bonds from nominees.
+                    is filed on bank records, the branch manager must release funds within 15 calendar days.
+                    Banks are prohibited from demanding legal heir papers or indemnity bonds from nominees.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Simplified Claim Threshold (₹5L - ₹10L):</strong> When an account lacks a nominee,
-                    banks cannot routinely demand court succession certificates for balances up to Board-approved
-                    thresholds (SBI, PNB, BoB: ₹5,00,000; ICICI: ₹10,00,000). Settlement is done against an
+                    banks cannot routinely demand court estate papers for balances up to Board-approved
+                    thresholds (SBI, PNB, BoB: ₹5,00,000; ICICI: ₹10,00,000). Deal is done against an
                     Indemnity Bond with two solvent sureties.
                   </span>
                 </li>
@@ -787,13 +787,13 @@ export default function BankDeceasedClaimClient() {
                   <span>
                     <strong>Nominee is Trustee, Not Owner:</strong> The Supreme Court has repeatedly confirmed
                     that a nominee receives funds merely as a custodian for the legal heirs. The money remains
-                    subject to the laws of succession under the Hindu Succession Act or Indian Succession Act.
+                    subject to the laws of estate under the Hindu Succession Act or Indian Succession Act.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Right to Ombudsman Remedy:</strong> If a branch manager delays settlement beyond 15
+                    <strong>Right to Ombudsman Remedy:</strong> If a branch manager delays deal beyond 15
                     days or unlawfully demands a court order for claims below ₹5 Lakhs, claimants can file an
                     instant complaint with the RBI Banking Ombudsman under the Integrated Ombudsman Scheme, 2021.
                   </span>
@@ -808,26 +808,26 @@ export default function BankDeceasedClaimClient() {
                 <span>STATUTORY FRAMEWORK</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. RBI Master Directions: Settlement of Deceased Claims
+                1. RBI Master Directions: Deal of Deceased Claims
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Every year, thousands of grieving Indian families encounter bureaucratic roadblocks when
                   attempting to access bank accounts, fixed deposits, and lockers left behind by deceased family
-                  members. Branch managers frequently confuse claimants by asking for court succession certificates,
-                  even when clear regulatory mechanisms exist for swift settlement.
+                  members. Branch managers frequently confuse claimants by asking for court estate papers,
+                  even when clear regulatory mechanisms exist for swift deal.
                 </p>
                 <p>
                   To eliminate harassment of surviving family members, the Reserve Bank of India issued clear
                   directives in its <strong>Master Direction on Customer Service in Banks</strong> (updating
-                  landmark circular DBOD.No.Leg.BC.95/09.07.005/2004-05). Under these statutory directions, banks
+                  landmark circular DBOD.No.Leg.BC.95/09.07.005/2004-05). Under these legal directions, banks
                   must follow a simplified, time-bound protocol to settle claims of deceased depositors.
                 </p>
                 <p>
                   The RBI guidelines divide deceased depositor settlements into two distinct categories:
-                  accounts with a registered nomination or survivorship clause, and accounts without nomination.
-                  For accounts without nomination, the RBI explicitly directs banks not to insist on succession
-                  certificates or letters of administration in claims up to a threshold limit fixed by the
+                  accounts with a filed nomination or survivorship clause, and accounts without nomination.
+                  For accounts without nomination, the RBI explicitly directs banks not to insist on estate
+                  papers or letters of care in claims up to a threshold limit fixed by the
                   bank&rsquo;s Board of Directors.
                 </p>
               </div>
@@ -840,12 +840,12 @@ export default function BankDeceasedClaimClient() {
                 <span>INTERACTIVE COMPLIANCE ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Bank Deceased Claim Document Checklist Generator
+                2. Bank Deceased Claim Paper Checklist Generator
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select the bank, account type, claim balance, and nominee status below. Our legal engine will
-                diagnose whether your claim qualifies for simplified settlement, display exact bank annexures,
-                calculate required stamp duty, and produce an instant printable document checklist.
+                diagnose whether your claim qualifies for simplified deal, display exact bank annexures,
+                calculate required stamp duty, and produce an instant printable paper checklist.
               </p>
 
               {/* Generator Panel Container */}
@@ -956,8 +956,8 @@ export default function BankDeceasedClaimClient() {
                     </label>
                     <div className="space-y-1.5">
                       {[
-                        { id: "registered", title: "Valid Nominee Registered", desc: "Form DA-1 registered with bank" },
-                        { id: "no_nominee", title: "No Nominee Appointed", desc: "Intestate or blank nomination" },
+                        { id: "registered", title: "Valid Nominee Registered", desc: "Form DA-1 filed with bank" },
+                        { id: "no_nominee", title: "No Nominee Appointed", desc: "No-Will or blank nomination" },
                         { id: "predeceased", title: "Nominee Pre-Deceased", desc: "Nominee died before depositor" },
                       ].map((item) => (
                         <button
@@ -987,7 +987,7 @@ export default function BankDeceasedClaimClient() {
                       {[
                         { id: "sole_heir", title: "Sole Surviving Legal Heir", desc: "No other Class I / surviving heirs" },
                         { id: "multiple_amicable", title: "Multiple Heirs with Mutual Consent", desc: "All heirs agree; NOC / disclaimer available" },
-                        { id: "disputed", title: "Contested / Disputed Heirs", desc: "Objection raised or court dispute pending" },
+                        { id: "disputed", title: "Contested / Disputed Heirs", desc: "Objection raised or court fight pending" },
                       ].map((item) => (
                         <button
                           key={item.id}
@@ -1018,8 +1018,8 @@ export default function BankDeceasedClaimClient() {
                         onChange={(e) => setWillStatus(e.target.value as typeof willStatus)}
                         className="w-full py-2 px-3 rounded-xl border border-slate-300 bg-white text-slate-900 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#C65378]"
                       >
-                        <option value="no_will">No Will (Intestate Succession)</option>
-                        <option value="registered_will">Registered Will Available</option>
+                        <option value="no_will">No Will (No-Will Estate)</option>
+                        <option value="registered_will">Filed Will Available</option>
                         <option value="probated_will">Probated Will / Letters of Admin</option>
                       </select>
                     </div>
@@ -1167,7 +1167,7 @@ export default function BankDeceasedClaimClient() {
                               </span>
                               {doc.mandatory && (
                                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-50 text-[#C65378] border border-rose-200">
-                                  Mandatory
+                                  Needed
                                 </span>
                               )}
                             </div>
@@ -1189,7 +1189,7 @@ export default function BankDeceasedClaimClient() {
                     <p className="leading-relaxed">
                       For non-nominee claims requiring an Indemnity Bond (Annexure D / Form 8B), purchase{" "}
                       <strong>{stateDuty.stampDuty}</strong>. The bond must be attested before a First-Class
-                      Judicial Magistrate or an Advocate Notary Public registered with the Government of India.
+                      Judicial Magistrate or an Lawyer Notary Public filed with the Government of India.
                     </p>
                   </div>
                 </div>
@@ -1218,7 +1218,7 @@ export default function BankDeceasedClaimClient() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1 text-xs text-slate-600">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
-                  <span>Verified against Banking Regulation Act Sections 45ZA to 45ZF &amp; Top 12 Bank Annexures</span>
+                  <span>Checked against Banking Regulation Act Sections 45ZA to 45ZF &amp; Top 12 Bank Annexures</span>
                 </div>
                 <div className="text-[11px] text-slate-500 font-medium">
                   Official Standardized Banking Dossier
@@ -1251,9 +1251,9 @@ export default function BankDeceasedClaimClient() {
                 <p>
                   This principle was reaffirmed for banking deposits in <strong>Ram Chander Talwar v. Devender
                   Kumar Talwar (2010 10 SCC 671)</strong>, where the Supreme Court confirmed that the money
-                  belongs to the legal heirs according to the deceased&rsquo;s personal succession law (such as
+                  belongs to the legal heirs according to the deceased&rsquo;s personal estate law (such as
                   the Hindu Succession Act or Indian Succession Act). If the nominee refuses to distribute the
-                  money among legal heirs, the heirs can initiate a civil suit for recovery and partition.
+                  money among legal heirs, the heirs can initiate a civil suit for recovery and split.
                 </p>
               </div>
 
@@ -1264,13 +1264,13 @@ export default function BankDeceasedClaimClient() {
                     <tr className="bg-slate-50 border-b border-slate-200 text-slate-900 font-extrabold">
                       <th className="py-3 px-4">Parameter</th>
                       <th className="py-3 px-4">Nominee (Sec 45ZA)</th>
-                      <th className="py-3 px-4">Legal Heir (Succession Law)</th>
+                      <th className="py-3 px-4">Legal Heir (Estate Law)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Legal Status</td>
-                      <td className="py-3 px-4">Statutory Custodian / Trustee</td>
+                      <td className="py-3 px-4">Legal Custodian / Trustee</td>
                       <td className="py-3 px-4 font-bold text-blue-700">Beneficial Absolute Owner</td>
                     </tr>
                     <tr>
@@ -1285,11 +1285,11 @@ export default function BankDeceasedClaimClient() {
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Overridden by Will?</td>
-                      <td className="py-3 px-4 text-rose-700">Yes, a valid registered Will overrides nominee</td>
+                      <td className="py-3 px-4 text-rose-700">Yes, a valid filed Will overrides nominee</td>
                       <td className="py-3 px-4 font-bold text-blue-700">Legatee named in Will inherits funds</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Dispute Jurisdiction</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Fight Area</td>
                       <td className="py-3 px-4">Bank Ombudsman / Branch Grievance</td>
                       <td className="py-3 px-4 font-bold text-slate-900">Competent Civil Court / District Judge</td>
                     </tr>
@@ -1347,13 +1347,13 @@ export default function BankDeceasedClaimClient() {
                 <span>RISK MITIGATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Indemnity Bond &amp; Surety Requirements for Bank Claims
+                5. Indemnity Bond &amp; Surety Rules for Bank Claims
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When settling a deceased depositor claim without a registered nominee or court order, the bank
+                  When settling a deceased depositor claim without a filed nominee or court order, the bank
                   assumes legal risk. If an estranged child, a subsequent spouse, or an undisclosed creditor
-                  appears later with claims against the estate, the bank could face litigation.
+                  appears later with claims against the estate, the bank could face court fights.
                 </p>
                 <p>
                   To protect against this financial exposure, banks require the claimant to execute an
@@ -1365,7 +1365,7 @@ export default function BankDeceasedClaimClient() {
                   Banks also mandate <strong>two solvent sureties (guarantors)</strong> who sign the indemnity bond.
                   The sureties must possess a combined net worth equal to or greater than the claim amount.
                   Acceptable proof of solvency includes recent Income Tax Return (ITR-V) acknowledgments, employer
-                  salary certificates, or municipal property tax receipts.
+                  salary papers, or city asset tax receipts.
                 </p>
               </div>
             </section>
@@ -1381,20 +1381,20 @@ export default function BankDeceasedClaimClient() {
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Claiming the contents of a bank safety locker follows specialized statutory protocols under
+                  Claiming the contents of a bank safety locker follows specialized legal protocols under
                   <strong>Sections 45ZC to 45ZF of the Banking Regulation Act, 1949</strong>. Unlike savings
                   deposits, banks do not own or hold title to locker contents; they act strictly as bailees.
                 </p>
                 <p>
                   <strong>Locker With Nomination:</strong> Under Section 45ZE, if a sole hirer dies with a
-                  registered nominee, the branch manager must grant locker access to the nominee. Before handing
+                  filed nominee, the branch manager must grant locker access to the nominee. Before handing
                   over contents, an inventory is prepared in the presence of the branch manager, nominee, and two
-                  independent witnesses. The bank does not demand a succession certificate from the nominee.
+                  independent witnesses. The bank does not demand a estate paper from the nominee.
                 </p>
                 <p>
                   <strong>Locker Without Nomination:</strong> All legal heirs must jointly attend the branch to
                   open the locker, conduct inventory, and receive contents. If one heir cannot attend in person,
-                  they must execute a registered Power of Attorney or formal Letter of Relinquishment in favor of
+                  they must execute a filed Power of Attorney or formal Letter of Release in favor of
                   the attending heir.
                 </p>
               </div>
@@ -1407,13 +1407,13 @@ export default function BankDeceasedClaimClient() {
                 <span>JUDICIAL INTERVENTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. When Is a Court Succession Certificate Truly Mandatory?
+                7. When Is a Court Estate Paper Truly Needed?
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Branch managers sometimes unlawfully demand court orders for small balances. Claimants should
-                  know exactly when a <strong>Succession Certificate</strong> under Section 372 of the Indian
-                  Succession Act, 1925 is legally required:
+                  know exactly when a <strong>Estate Paper</strong> under Section 372 of the Indian
+                  Estate Act, 1925 is legally required:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-slate-700 text-xs sm:text-sm">
                   <li>
@@ -1422,7 +1422,7 @@ export default function BankDeceasedClaimClient() {
                     &gt; ₹10 Lakhs in ICICI).
                   </li>
                   <li>
-                    <strong>Active Legal Dispute Among Heirs:</strong> If any family member submits a written
+                    <strong>Active Legal Fight Among Heirs:</strong> If any family member submits a written
                     objection or legal notice to the branch asserting a conflicting claim.
                   </li>
                   <li>
@@ -1431,7 +1431,7 @@ export default function BankDeceasedClaimClient() {
                   </li>
                   <li>
                     <strong>Doubtful Title or Conflicting Wills:</strong> When multiple unprobated Wills or
-                    conflicting testamentary documents are submitted to the bank.
+                    conflicting Will papers are submitted to the bank.
                   </li>
                 </ul>
                 <p>
@@ -1456,7 +1456,7 @@ export default function BankDeceasedClaimClient() {
                   {
                     step: 1,
                     title: "Inform Branch & Freeze Debit Operations",
-                    desc: "Submit a written notice of demise along with a photocopy of the death certificate. The bank freezes debit mandates, standing instructions, and auto-debits to prevent fraudulent withdrawals.",
+                    desc: "Submit a written notice of demise along with a photocopy of the death paper. The bank freezes debit mandates, standing instructions, and auto-debits to prevent fraudulent withdrawals.",
                   },
                   {
                     step: 2,
@@ -1466,17 +1466,17 @@ export default function BankDeceasedClaimClient() {
                   {
                     step: 3,
                     title: "Obtain Revenue Legal Heir / Surviving Member Certificate",
-                    desc: "If no nominee is recorded, apply to the local Revenue Tahsildar or Municipal Corporation for a formal Legal Heir Certificate or Surviving Member Certificate establishing the family tree.",
+                    desc: "If no nominee is recorded, apply to the local Revenue Tahsildar or City City Board for a formal Legal Heir Paper or Surviving Member Paper establishing the family tree.",
                   },
                   {
                     step: 4,
                     title: "Execute Non-Judicial Stamp Paper Indemnity & NOC",
-                    desc: "Purchase non-judicial stamp paper in accordance with state stamp duty. Have the indemnity bond and co-heir disclaimer letters executed and attested by a Notary Public.",
+                    desc: "Purchase non-judicial stamp paper in accordance with state stamp duty. Have the indemnity bond and co-heir disclaimer letters signed and attested by a Notary Public.",
                   },
                   {
                     step: 5,
                     title: "Submit Complete Dossier with Acknowledgment Slip",
-                    desc: "Submit all original forms, death certificate, and KYC proofs at the home branch. Obtain a stamped duplicate acknowledgment slip with the branch inward date.",
+                    desc: "Submit all original forms, death paper, and KYC proofs at the home branch. Obtain a stamped duplicate acknowledgment slip with the branch inward date.",
                   },
                   {
                     step: 6,
@@ -1523,7 +1523,7 @@ export default function BankDeceasedClaimClient() {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A father in Lucknow passed away leaving ₹4.20 Lakhs in an SBI savings account without a nominee.
-                    The branch manager initially demanded a court succession certificate.
+                    The branch manager initially demanded a court estate paper.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
@@ -1553,7 +1553,7 @@ export default function BankDeceasedClaimClient() {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Mother left fixed deposits worth ₹18 Lakhs across 3 accounts without nomination. Because the sum
-                    exceeded HDFC&rsquo;s ₹10 Lakh discretionary ceiling, succession certificate was mandatory.
+                    exceeded HDFC&rsquo;s ₹10 Lakh discretionary ceiling, estate paper was needed.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
@@ -1587,7 +1587,7 @@ export default function BankDeceasedClaimClient() {
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Statutory Bank Deceased Claim Indemnity Bond (Annexure D / Form 8B Format)
+                    Legal Bank Deceased Claim Indemnity Bond (Annexure D / Form 8B Format)
                   </div>
                   <button
                     type="button"
@@ -1645,7 +1645,7 @@ NOW THEREFORE, in consideration of the Bank paying the deposit balance to [Claim
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Letter of Disclaimer / Relinquishment / NOC from Legal Heirs (Annexure C)
+                    Letter of Disclaimer / Release / NOC from Legal Heirs (Annexure C)
                   </div>
                   <button
                     type="button"
@@ -1699,7 +1699,7 @@ Date: [Date], Place: [Place]`,
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                    <span>Can be executed on plain paper or ₹100 stamp paper</span>
+                    <span>Can be signed on plain paper or ₹100 stamp paper</span>
                   </div>
                 </div>
               </div>
@@ -1774,21 +1774,21 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Banking &amp; Succession Advocacy Bench
+                      WillDrafting.in Banking &amp; Estate Advocacy Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-900 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-blue-600" />
-                    <span>Bar Council Verified Banking Counsel</span>
+                    <span>Bar Council Checked Banking Counsel</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier estate planning and succession technology platform,
-                  powered by AMA Legal Solutions. Our multidisciplinary legal bench specializes in testamentary
-                  disputes, District Court succession certificate petitions, Banking Ombudsman escalations,
+                  WillDrafting.in is India&rsquo;s premier estate planning and estate technology platform,
+                  powered by AMA Legal Solutions. Our multidisciplinary legal bench specializes in Will
+                  fights, District Court estate paper petitions, Banking Ombudsman escalations,
                   and deceased depositor transmissions across all 12 major public and private banks. We have assisted
-                  over 15,000 Indian families in drafting challenge-proof Wills and expediting asset transmissions.
+                  over 15,000 Indian families in drafting fight-proof Wills and expediting asset transmissions.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1811,7 +1811,7 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                     href="/tools/probate-checker"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1828,7 +1828,7 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 12. Frequently Asked Questions: Bank Deceased Claims
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Clear, legally verified answers to common questions about bank account claims, indemnity bonds,
+                Clear, legally checked answers to common questions about bank account claims, indemnity bonds,
                 nomination rules, and RBI timelines:
               </p>
 
@@ -1871,12 +1871,12 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Official Banking Portals
+                13. Legal Citations &amp; Official Banking Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Banking &amp; Succession Enactments in India:
+                    Governing Banking &amp; Estate Enactments in India:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
@@ -1889,7 +1889,7 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                       <strong>Reserve Bank - Integrated Ombudsman Scheme, 2021:</strong> Redressal of bank claim delays.
                     </li>
                     <li>
-                      <strong>Indian Succession Act, 1925:</strong> Sections 370 to 389 (Succession Certificate for bank debts).
+                      <strong>Indian Succession Act, 1925:</strong> Sections 370 to 389 (Estate Paper for bank debts).
                     </li>
                     <li>
                       <strong>Supreme Court Landmark Precedents:</strong> Smt. Sarbati Devi (1984) and Ram Chander Talwar (2010).
@@ -1929,26 +1929,26 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Tools
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Inherited Capital Gains Tax Calculator
+                      Inherited Capital Gains Tax Tool
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Legal Heir Share Calculator
+                      Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1960,7 +1960,29 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (NO GREEN)
@@ -1973,21 +1995,21 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian banking jurisprudence, High Court succession petitions, deceased depositor
-                indemnity litigation, and RBI Ombudsman proceedings.
+                Expert in Indian banking jurisprudence, High Court estate petitions, deceased depositor
+                indemnity court fights, and RBI Ombudsman proceedings.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-blue-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2021,8 +2043,8 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                   Protect Your Family from Bank Indemnity Headaches
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally registered Will clearly designates bank account bequeathals, preventing branch
-                  freeze disputes and eliminating the need for costly court succession certificates.
+                  A legally filed Will clearly designates bank account bequeathals, preventing branch
+                  freeze fights and eliminating the need for costly court estate papers.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -2047,15 +2069,15 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                   Facing Branch Delays or Unlawful Court Demands?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our banking advocates issue formal RBI demand notices, draft challenge-proof indemnity bonds,
-                  and file District Court succession certificate petitions.
+                  Our banking lawyers issue formal RBI demand notices, draft fight-proof indemnity bonds,
+                  and file District Court estate paper petitions.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -2080,7 +2102,7 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>State Stamp Duty Guidance:</strong> Calculates exact stamp paper requirements.
+                      <strong>State Stamp Duty Guidance:</strong> Calculates exact stamp paper rules.
                     </span>
                   </li>
                 </ul>

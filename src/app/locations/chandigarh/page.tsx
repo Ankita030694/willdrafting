@@ -140,7 +140,7 @@ export default function ChandigarhLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Chandigarh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession.",
+          "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of asset, SRO filing, and family estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function ChandigarhLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Chandigarh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office registration support across Chandigarh, Mohali, and Panchkula.",
+          "Professional Will drafting, lawyer check, and SRO office filing support across Chandigarh, Mohali, and Panchkula.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -248,38 +248,38 @@ export default function ChandigarhLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Chandigarh Tricity",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Chandigarh, Mohali, or Panchkula.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Chandigarh, Mohali, or Panchkula.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Tricity Assets and Beneficiaries",
-            text: "List your Chandigarh Estate Office plots, CHB flats, GMADA/HSVP properties, bank accounts, and demat folios. Name your beneficiaries and an executor.",
+            text: "List your Chandigarh Estate Office plots, CHB flats, GMADA/HSVP assets, bank accounts, and demat folios. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Specific Impartibility Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate UT Chandigarh building bylaws, impartibility, and survivorship clauses.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate UT Chandigarh building bylaws, impartibility, and survivorship clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain white A4 paper and sign each page in the physical presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain white A4 paper and sign each page in the physical presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment",
-            text: "Book an appointment at the Sector 17 Sub-Registrar Office in Chandigarh, or Mohali DAC Complex, or Panchkula Mini Secretariat.",
+            text: "Book an appointment at the Sector 17 SRO office in Chandigarh, or Mohali DAC Complex, or Panchkula Mini Secretariat.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at SRO",
-            text: "Visit the Sub-Registrar Office with your two witnesses and original Aadhaar cards for biometric verification, photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original Aadhaar cards for biometric check, photo capture, and official Book III filing.",
           },
         ],
       },

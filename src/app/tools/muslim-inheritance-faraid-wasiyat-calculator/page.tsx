@@ -90,7 +90,7 @@ export default function MuslimInheritanceCalculatorPage() {
         url: canonicalUrl,
         name: "Muslim Inheritance Calculator India | WillDrafting.in",
         description:
-          "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.",
+          "Use our free free Muslim estate tool India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function MuslimInheritanceCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory legal calculator to compute Muslim inheritance shares, 1/3rd Wasiyat bequests, Quranic Sharers (Zawil-Furuz).",
+          "Free legal legal tool to compute Muslim estate shares, 1/3rd Wasiyat bequests, Quranic Sharers (Zawil-Furuz).",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function MuslimInheritanceCalculatorPage() {
             name: "Which law governs Muslim inheritance and Wills in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Muslim inheritance in India is governed by the Muslim Personal Law (Shariat) Application Act, 1937 and uncodified principles compiled in Sir Dinshaw Mulla's Principles of Mahomedan Law. The Indian Succession Act, 1925 does not govern Muslim testamentary succession, unless the marriage was registered under the Special Marriage Act, 1954.",
+              text: "Muslim estate in India is governed by the Muslim Personal Law (Shariat) Form Act, 1937 and uncodified principles compiled in Sir Dinshaw Mulla's Principles of Mahomedan Law. The Indian Succession Act, 1925 does not govern Muslim Will estate, unless the marriage was filed under the Special Marriage Act, 1954.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function MuslimInheritanceCalculatorPage() {
             name: "What is the 1/3rd Wasiyat (Will) rule in Islamic law in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Muslim can bequeath at most one-third (1/3rd) of their net estate (after paying funeral expenses and debts) through a Will (Wasiyat). Under Sunni Hanafi law, this 1/3rd can only go to non-heirs; a bequest to a legal heir is invalid unless all other heirs consent after the testator's death. Under Shia law, up to 1/3rd can be bequeathed to an heir or non-heir without consent.",
+              text: "A Muslim can bequeath at most one-third (1/3rd) of their net estate (after paying funeral expenses and debts) through a Will (Wasiyat). Under Sunni Hanafi law, this 1/3rd can only go to non-heirs; a bequest to a legal heir is invalid unless all other heirs consent after the Will maker's death. Under Shia law, up to 1/3rd can be bequeathed to an heir or non-heir without consent.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function MuslimInheritanceCalculatorPage() {
             name: "Why do brothers inherit when a Sunni Muslim dies leaving only daughters?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Sunni (Hanafi) law, daughters are Quranic Sharers entitled to a maximum collective share of 2/3rds (or 1/2 for an only daughter). The remaining residue (1/3rd or 1/2) passes to agnatic residuaries (Asabah), which includes the deceased's father, grandfather, or full brothers and their sons. To prevent brothers from inheriting ancestral estate away from daughters, parents frequently execute lifetime gifts (Hiba) or maximum 1/3rd Wasiyat bequests.",
+              text: "Under Sunni (Hanafi) law, daughters are Quranic Sharers entitled to a maximum collective share of 2/3rds (or 1/2 for an only daughter). The remaining residue (1/3rd or 1/2) passes to agnatic residuaries (Asabah), which includes the deceased's father, grandfather, or full brothers and their sons. To prevent brothers from inheriting family estate away from daughters, parents frequently execute lifetime gifts (Hiba) or maximum 1/3rd Wasiyat bequests.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function MuslimInheritanceCalculatorPage() {
             name: "Is probate mandatory for a Muslim Will (Wasiyat) in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 213(2) of the Indian Succession Act, 1925, probate is explicitly exempt for Wills made by Muslims across all states in India, including Mumbai, Chennai, and Kolkata. An executor or legatee under a valid Muslim Will can enforce rights without seeking probate from a High Court, though an application for Letters of Administration or Legal Heir Certificate is often obtained for municipal mutation.",
+              text: "No. Under Section 213(2) of the Indian Succession Act, 1925, probate is explicitly exempt for Wills made by Muslims across all states in India, including Mumbai, Chennai, and Kolkata. An executor or legatee under a valid Muslim Will can enforce rights without seeking probate from a High Court, though an form for Letters of Care or Legal Heir Paper is often obtained for city name change.",
             },
           },
           {
@@ -227,7 +227,7 @@ export default function MuslimInheritanceCalculatorPage() {
             name: "Can a Muslim give 100% of their property to a daughter through a lifetime gift (Hiba)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. The 1/3rd testamentary restriction applies only to a Will (Wasiyat) that takes effect after death. During their lifetime, a Muslim has absolute freedom to gift (Hiba) up to 100% of their self-acquired or ancestral property to a daughter, wife, or any person. A valid Hiba requires declaration (Ijab), acceptance (Qabul), and delivery of possession (Qabda), and cannot be challenged under Faraid rules after death.",
+              text: "Yes. The 1/3rd Will restriction applies only to a Will (Wasiyat) that takes effect after death. During their lifetime, a Muslim has absolute freedom to gift (Hiba) up to 100% of their self-acquired or family asset to a daughter, wife, or any person. A valid Hiba requires declaration (Ijab), acceptance (Qabul), and delivery of possession (Qabda), and cannot be challenged under Faraid rules after death.",
             },
           },
         ],

@@ -189,7 +189,7 @@ export default function ThiruvananthapuramLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Thiruvananthapuram - Legal Estate Planning & PEARLS Registration",
         description:
-          "Professional Will drafting, advocate check, Kerala PEARLS signing, Technopark digital asset planning, and doorstep execution.",
+          "Professional Will drafting, lawyer check, Kerala PEARLS signing, Technopark digital asset planning, and doorstep signing.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -270,7 +270,7 @@ export default function ThiruvananthapuramLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets, Tech Portfolios & Heirs",
-            text: "List your Thiruvananthapuram properties including TMC flats, land plots, Technopark stock equity, demat accounts, and bank deposits. Name heirs and a trusted executor.",
+            text: "List your Thiruvananthapuram assets including TMC flats, land plots, Technopark stock equity, demat accounts, and bank deposits. Name heirs and a trusted executor.",
           },
           {
             "@type": "HowToStep",
@@ -288,7 +288,7 @@ export default function ThiruvananthapuramLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book PEARLS Token Online",
-            text: "Generate an online signing token on the Kerala Registration PEARLS portal (keralasigning.gov.in) for your local SRO and pay the nominal ₹1,000 fee via e-Challan.",
+            text: "Generate an online signing token on the Kerala Filing PEARLS portal (keralasigning.gov.in) for your local SRO and pay the nominal ₹1,000 fee via e-Challan.",
           },
           {
             "@type": "HowToStep",

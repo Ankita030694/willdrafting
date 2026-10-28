@@ -137,7 +137,7 @@ export default function WillFormatTamilPage() {
         name: "உயில் சாசனம் மாதிரி (Will Format in Tamil)",
         url: canonicalUrl,
         description:
-          "Bilingual Tamil and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Tamil Nadu Registration.",
+          "Bilingual Tamil and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Tamil Nadu Filing.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -211,7 +211,7 @@ export default function WillFormatTamilPage() {
             name: "உயிலில் எத்தனை சாட்சிகள் கையெழுத்திட வேண்டும்?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "சட்டப்பிரிவு 63(c)-ன் படி குறைந்தது 2 சாட்சிகள் (Attesting Witnesses) உயில் எழுதுபவர் கையெழுத்திடுவதை நேரில் பார்த்துவிட்டு கையெழுத்திட வேண்டும். சாட்சிகள் உயிலின் மூலம் சொத்து பலன் பெறும் பயனாளிகளாக (Beneficiaries) இருக்கக்கூடாது.",
+              text: "சட்டப்பிரிவு 63(c)-ன் படி குறைந்தது 2 சாட்சிகள் (Signing Witnesses) உயில் எழுதுபவர் கையெழுத்திடுவதை நேரில் பார்த்துவிட்டு கையெழுத்திட வேண்டும். சாட்சிகள் உயிலின் மூலம் சொத்து பலன் பெறும் பயனாளிகளாக (Heirs) இருக்கக்கூடாது.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function WillFormatTamilPage() {
             name: "பூர்வீக சொத்தை உயில் மூலம் முழுமையாக எழுதி வைக்க முடியுமா?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "இல்லை. ஒருவர் தனது சுய சம்பாத்திய சொத்துக்களை (Self-Acquired Property) மட்டுமே தனது விருப்பப்படி யாருக்கு வேண்டுமானாலும் உயில் மூலம் எழுதி வைக்க முடியும். பூர்வீக கூட்டு குடும்ப சொத்தில் (Ancestral Property) தனக்கு சட்டப்படி கிடைக்கக்கூடிய பிரிக்கப்படாத பங்குக்கு (Undivided Coparcenary Share) மட்டுமே உயில் எழுத முடியும்.",
+              text: "இல்லை. ஒருவர் தனது சுய சம்பாத்திய சொத்துக்களை (Self-Acquired Asset) மட்டுமே தனது விருப்பப்படி யாருக்கு வேண்டுமானாலும் உயில் மூலம் எழுதி வைக்க முடியும். பூர்வீக கூட்டு குடும்ப சொத்தில் (Family Asset) தனக்கு சட்டப்படி கிடைக்கக்கூடிய பிரிக்கப்படாத பங்குக்கு (Undivided Joint Share) மட்டுமே உயில் எழுத முடியும்.",
             },
           },
           {

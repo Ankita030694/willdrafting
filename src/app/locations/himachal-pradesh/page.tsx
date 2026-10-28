@@ -144,7 +144,7 @@ export default function HimachalPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Himachal Pradesh: Online Will Guide",
         description:
-          "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO.",
+          "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard estate, and e-Himsugam SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function HimachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Himachal Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam SRO registration, and Section 31 doorstep.",
+          "Professional Will drafting, lawyer check, Section 118 HP Tenancy Act compliance, e-Himsugam SRO filing, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -261,38 +261,38 @@ export default function HimachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Himachal Pradesh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Himachal Pradesh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Himachal Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Estate Assets & HimBhoomi Land Records",
-            text: "List your residential properties, HIMUDA flats, bank investments, and agricultural apple orchards with exact Khasra and Khatauni numbers from the HimBhoomi portal. Designate beneficiaries and an executor.",
+            text: "List your home assets, HIMUDA flats, bank investments, and farm apple orchards with exact Khasra and Khatauni numbers from the HimBhoomi portal. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Section 118 Compliant Testamentary Clauses",
-            text: "Structure your Will with verified statutory clauses that comply with Section 118 of the HP Tenancy Act, establish unambiguous bequests to legal heirs, and provide clear executor powers.",
+            text: "Structure your Will with checked legal clauses that comply with Section 118 of the HP Tenancy Act, establish clear bequests to legal heirs, and provide clear executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Attesting Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or property under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or asset under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment on e-Himsugam",
-            text: "Access the e-Himsugam portal to book a time slot with your jurisdictional Himachal Tehsil Sub-Registrar Office and pay nominal government registration charges.",
+            text: "Access the e-Himsugam portal to book a time slot with your local Himachal Tehsil SRO office and pay nominal government filing charges.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Himachal SRO",
-            text: "Attend the Sub-Registrar Office with both attesting witnesses for verbal verification, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Attend the SRO office with both signing witnesses for verbal check, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

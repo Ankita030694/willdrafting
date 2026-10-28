@@ -128,7 +128,7 @@ export default function HousingSocietyTransmissionPage() {
         name: "Housing Society Transmission and Indemnity Appendix Formats",
         url: canonicalUrl,
         description:
-          "Statutory form pack and legal templates under Maharashtra Co-operative Societies Act Model Bye-Laws including Appendix 15 Nominee Application.",
+          "Legal form pack and legal templates under Maharashtra Co-operative Societies Act Model Bye-Laws including Appendix 15 Nominee Form.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -147,7 +147,7 @@ export default function HousingSocietyTransmissionPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "Housing Society Transmission Application & Appendix Formats",
         description:
-          "Comprehensive legal guide and editable appendix templates for transmitting cooperative housing society shares and flat ownership after a.",
+          "Full legal guide and editable appendix templates for transmitting cooperative housing society shares and flat ownership after a.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: "en-IN",
@@ -178,7 +178,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "Does nomination in a housing society make the nominee the absolute owner?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. In the landmark judgment Indrani Wahi v. Registrar of Co-operative Societies (2016) 6 SCC 440, the Supreme Court ruled that a nominee in a cooperative society holds the shares and flat only as a trustee or fiduciary on behalf of all lawful legal heirs. Nomination does not override the personal law of succession or testamentary bequests in a Will. The society must transfer shares to the nominee, but ownership remains subject to inheritance rights.",
+              text: "No. In the landmark judgment Indrani Wahi v. Registrar of Co-operative Societies (2016) 6 SCC 440, the Supreme Court ruled that a nominee in a cooperative society holds the shares and flat only as a trustee or fiduciary on behalf of all lawful legal heirs. Nomination does not override the personal law of estate or Will bequests in a Will. The society must transfer shares to the nominee, but ownership remains subject to estate rights.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "Can a housing society demand transfer fees or donations after a member dies?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Strictly NO. Under Maharashtra Government Circular No. CHS 2001/M.No.188/14-C dated 09-08-2001 and Section 79A of the MCS Act, the ₹25,000 transfer premium cap applies only to voluntary sales. For transmission upon death to a nominee or legal heir, the allowable transfer premium is ₹0. The society may only charge a ₹100 entrance fee and ₹500 nominal share transfer fee. Any demand for building funds or donations is illegal.",
+              text: "Strictly NO. Under Maharashtra Government Circular No. CHS 2001/M.No.188/14-C dated 09-08-2001 and Section 79A of the MCS Act, the ₹25,000 transfer premium cap applies only to voluntary sales. For transfer upon death to a nominee or legal heir, the allowable transfer premium is ₹0. The society may only charge a ₹100 entrance fee and ₹500 nominal share transfer fee. Any demand for building funds or donations is illegal.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "Is a Succession Certificate or Probate mandatory if no nomination exists?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No, a court-issued Succession Certificate or Probate is not mandatory in all cases. Under Model Bye-Law 35 of the Maharashtra Housing Society Bye-Laws, if no nomination exists, the managing committee can admit the legal heir upon receiving Appendix 16, Appendix 17 newspaper notice (14 days without valid objection), Appendix 19 Indemnity Bond on stamp paper, and Appendix 20 consent letters from other heirs.",
+              text: "No, a court-issued Estate Paper or Probate is not needed in all cases. Under Model Bye-Law 35 of the Maharashtra Housing Society Bye-Laws, if no nomination exists, the managing committee can admit the legal heir upon receiving Appendix 16, Appendix 17 newspaper notice (14 days without valid objection), Appendix 19 Indemnity Bond on stamp paper, and Appendix 20 consent letters from other heirs.",
             },
           },
           {
@@ -210,7 +210,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "What is an Appendix 19 Indemnity Bond and how much stamp duty is required?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Appendix 19 is a statutory indemnity bond executed by the applicant legal heir or nominee. It indemnifies the society, its committee members, and officers against any future claims, losses, or legal costs arising from the share transmission. In Maharashtra, it must be executed on non-judicial stamp paper of ₹200 or ₹500 (as per the Maharashtra Stamp Act) and attested by a Notary Public.",
+              text: "Appendix 19 is a legal indemnity bond signed by the applicant legal heir or nominee. It indemnifies the society, its committee members, and officers against any future claims, losses, or legal costs arising from the share transfer. In Maharashtra, it must be signed on non-judicial stamp paper of ₹200 or ₹500 (as per the Maharashtra Stamp Act) and attested by a Notary Public.",
             },
           },
           {
@@ -218,7 +218,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "Why does the society publish a public notice (Appendix 17) in two newspapers?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Model Bye-Law 35, when transmission is requested without a registered nomination or probated Will, the society must publish a 14-day public notice in two local newspapers (one in Marathi and one in English) at the applicant's expense. This invites any unknown heirs, creditors, or claimants to submit written objections before the society transfers the share certificate.",
+              text: "Under Model Bye-Law 35, when transfer is requested without a filed nomination or probated Will, the society must publish a 14-day public notice in two local newspapers (one in Marathi and one in English) at the applicant's expense. This invites any unknown heirs, creditors, or claimants to submit written objections before the society transfers the share paper.",
             },
           },
           {
@@ -226,7 +226,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "What should an heir do if the housing society delays transmission beyond 90 days?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 154B-13 and Bye-Law 35, the managing committee must decide on the transmission application within 90 days. If the society fails to decide or unlawfully rejects the application, the applicant can file an appeal before the Deputy Registrar of Co-operative Societies under Section 23(2) of the MCS Act to secure deemed membership.",
+              text: "Under Section 154B-13 and Bye-Law 35, the managing committee must decide on the transfer form within 90 days. If the society fails to decide or unlawfully rejects the form, the applicant can file an appeal before the Deputy Registrar of Co-operative Societies under Section 23(2) of the MCS Act to secure deemed membership.",
             },
           },
           {
@@ -234,7 +234,7 @@ export default function HousingSocietyTransmissionPage() {
             name: "Can married daughters claim transmission of a deceased father's housing society flat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under the Hindu Succession (Amendment) Act, 2005 and Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), married daughters are coparceners and Class-I legal heirs with equal inheritance rights. A housing society cannot deny transmission or membership to a daughter, nor can brothers exclude sisters without a registered Relinquishment Deed.",
+              text: "Yes. Under the Hindu Succession (Amendment) Act, 2005 and Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), married daughters are coparceners and Class-I legal heirs with equal estate rights. A housing society cannot deny transfer or membership to a daughter, nor can brothers exclude sisters without a filed Release Deed.",
             },
           },
         ],

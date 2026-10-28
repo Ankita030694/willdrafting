@@ -54,17 +54,17 @@ const TOC_ITEMS = [
   { id: "dayabhaga-law", label: "1. Dayabhaga Law: Absolute Freedom in Bengal" },
   { id: "bengali-will-format", label: "2. Complete Bengali Ichchapatra Format" },
   { id: "english-translation", label: "3. English Translation & Clause Explanations" },
-  { id: "clause-selector", label: "4. Interactive Clause Selector & Customizer" },
+  { id: "clause-selector", label: "4. Free Clause Selector & Customizer" },
   { id: "kolkata-probate-rules", label: "5. Kolkata High Court Probate Moat (Sec 213)" },
-  { id: "west-bengal-sro-fees", label: "6. West Bengal SRO Registration & Fee Guide" },
-  { id: "comparison-table", label: "7. Comparison: Registered Will vs Warish Patra" },
-  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to Registration" },
+  { id: "west-bengal-sro-fees", label: "6. West Bengal SRO Filing & Fee Guide" },
+  { id: "comparison-table", label: "7. Comparison: Filed Will vs Warish Patra" },
+  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to Filing" },
   { id: "practical-case-studies", label: "9. Practical Case Studies: Kolkata & Bengal" },
-  { id: "checklist-medical-cert", label: "10. Sub-Registrar Checklist & Doctor Cert" },
-  { id: "succession-tools", label: "11. Contextual Calculators & Estate Tools" },
-  { id: "legal-backing", label: "12. Legal Backing: Succession Counsel Profile" },
+  { id: "checklist-medical-cert", label: "10. SRO Checklist & Doctor Cert" },
+  { id: "succession-tools", label: "11. Contextual Tools & Estate Tools" },
+  { id: "legal-backing", label: "12. Legal Backing: Estate Counsel Profile" },
   { id: "faqs", label: "13. Frequently Asked Questions: Bengali Will" },
-  { id: "statutory-citations", label: "14. Statutory Citations: Bengal Land & Acts" },
+  { id: "statutory-citations", label: "14. Legal Citations: Bengal Land & Acts" },
 ];
 
 const FAQS_DATA = [
@@ -74,7 +74,7 @@ const FAQS_DATA = [
   },
   {
     q: "দায়ভাগ হিন্দু আইনে পৈতৃক সম্পত্তির ওপর বাবার কি সম্পূর্ণ উইল করার অধিকার আছে?",
-    a: "হ্যাঁ। পশ্চিমবঙ্গ ও আসামে প্রচলিত ঐতিহাসিক দায়ভাগ হিন্দু আইন (Dayabhaga School of Hindu Law) অনুযায়ী পিতা জীবিত থাকা পর্যন্ত সন্তানদের পৈতৃক সম্পত্তিতে কোনো জন্মগত সমস্বত্বাধিকার (Coparcenary Right) থাকে না। ফলে একজন বাঙালি হিন্দু পিতা তাঁর স্বোপার্জিত এবং পৈতৃক উভয় সম্পত্তির ওপরই ১০০% নিরঙ্কুশ উইল বা হস্তান্তরের ক্ষমতা রাখেন।",
+    a: "হ্যাঁ। পশ্চিমবঙ্গ ও আসামে প্রচলিত ঐতিহাসিক দায়ভাগ হিন্দু আইন (Dayabhaga School of Hindu Law) অনুযায়ী পিতা জীবিত থাকা পর্যন্ত সন্তানদের পৈতৃক সম্পত্তিতে কোনো জন্মগত সমস্বত্বাধিকার (Joint Right) থাকে না। ফলে একজন বাঙালি হিন্দু পিতা তাঁর স্বোপার্জিত এবং পৈতৃক উভয় সম্পত্তির ওপরই ১০০% নিরঙ্কুশ উইল বা হস্তান্তরের ক্ষমতা রাখেন।",
   },
   {
     q: "কলকাতায় কি উইলের জন্য কোর্ট থেকে প্রোবেট (Probate) নেওয়া বাধ্যতামূলক?",
@@ -82,11 +82,11 @@ const FAQS_DATA = [
   },
   {
     q: "উইলে কতজন সাক্ষী থাকা আইনত আবশ্যক?",
-    a: "ভারতীয় উত্তরাধিকার আইনের ধারা ৬৩(গ) অনুসারে, কমপক্ষে ২ জন নিরপেক্ষ সাক্ষীর (Attesting Witnesses) উপস্থিত থাকা আবশ্যক। সাক্ষীদের উপস্থিতিতে উইলকারী সই করবেন এবং উইলকারীর উপস্থিতিতে সাক্ষীরা স্বাক্ষর করবেন। ধারা ৬৭ অনুসারে, উইলের সুবিধাভোগী (Beneficiary) বা তাঁর স্বামী/স্ত্রী কোনোভাবেই উইলের সাক্ষী হতে পারবেন না।",
+    a: "ভারতীয় উত্তরাধিকার আইনের ধারা ৬৩(গ) অনুসারে, কমপক্ষে ২ জন নিরপেক্ষ সাক্ষীর (Signing Witnesses) উপস্থিত থাকা আবশ্যক। সাক্ষীদের উপস্থিতিতে উইলকারী সই করবেন এবং উইলকারীর উপস্থিতিতে সাক্ষীরা স্বাক্ষর করবেন। ধারা ৬৭ অনুসারে, উইলের সুবিধাভোগী (Heir) বা তাঁর স্বামী/স্ত্রী কোনোভাবেই উইলের সাক্ষী হতে পারবেন না।",
   },
   {
-    q: "ওয়ারিশান সার্টিফিকেট (Warish Certificate) এবং উইলের মধ্যে পার্থক্য কী?",
-    a: "যদি কোনো ব্যক্তি উইল না রেখে মারা যান (Intestate Succession), তবে তাঁর সমস্ত স্বাভাবিক উত্তরাধিকারীদের তালিকাভুক্ত করে গ্রাম পঞ্চায়েত প্রধান বা মিউনিসিপ্যালিটি কাউন্সিলর থেকে ওয়ারিশান সার্টিফিকেট নিয়ে বাংলারভূমি পোর্টালে মিউটেশন করা হয়। কিন্তু কোনো ব্যক্তি জীবিতাবস্থায় বৈধ উইল রেখে গেলে ওয়ারিশান সার্টিফিকেটের পরিবর্তে সেই উইলের (কলকাতায় প্রোবেট সহ) ভিত্তিতে একক বা নির্দিষ্ট মনোনীত উত্তরাধিকারীর নামে নামপত্তন হয়।",
+    q: "ওয়ারিশান সার্টিফিকেট (Warish Paper) এবং উইলের মধ্যে পার্থক্য কী?",
+    a: "যদি কোনো ব্যক্তি উইল না রেখে মারা যান (No-Will Estate), তবে তাঁর সমস্ত স্বাভাবিক উত্তরাধিকারীদের তালিকাভুক্ত করে গ্রাম পঞ্চায়েত প্রধান বা মিউনিসিপ্যালিটি কাউন্সিলর থেকে ওয়ারিশান সার্টিফিকেট নিয়ে বাংলারভূমি পোর্টালে মিউটেশন করা হয়। কিন্তু কোনো ব্যক্তি জীবিতাবস্থায় বৈধ উইল রেখে গেলে ওয়ারিশান সার্টিফিকেটের পরিবর্তে সেই উইলের (কলকাতায় প্রোবেট সহ) ভিত্তিতে একক বা নির্দিষ্ট মনোনীত উত্তরাধিকারীর নামে নামপত্তন হয়।",
   },
   {
     q: "পশ্চিমবঙ্গে রেজিস্ট্রি অফিসে (ADSR / ARA) উইল রেজিস্ট্রেশন খরচ কত?",
@@ -125,7 +125,7 @@ export default function WillFormatBengaliClient() {
   >("dayabhaga");
   const [copiedCustomClause, setCopiedCustomClause] = useState<boolean>(false);
 
-  // SRO Fee Calculator state for West Bengal
+  // SRO Fee Tool state for West Bengal
   const [propertyDistrict, setPropertyDistrict] = useState<string>("kolkata");
   const [numberOfPages, setNumberOfPages] = useState<number>(4);
   const [registrationMode, setRegistrationMode] = useState<"office" | "commission">("office");
@@ -376,9 +376,9 @@ Official Clinic Seal: [Rubber Stamp]`;
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download our legally verified Bengali Will format (উইল বা ইচ্ছাপত্র ফরম্যাট). Understand the
-            Dayabhaga Hindu law rule giving fathers 100% testamentary freedom over ancestral property,
-            Section 213 Kolkata High Court probate requirements, and West Bengal SRO registration SOP.
+            Download our legally checked Bengali Will format (উইল বা ইচ্ছাপত্র ফরম্যাট). Understand the
+            Dayabhaga Hindu law rule giving fathers 100% Will freedom over family asset,
+            Section 213 Kolkata High Court probate rules, and West Bengal SRO filing SOP.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -474,7 +474,7 @@ Official Clinic Seal: [Rubber Stamp]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 57, 59, 63 &amp; 213 of the Indian Succession Act, 1925,
@@ -500,31 +500,31 @@ Official Clinic Seal: [Rubber Stamp]`;
                   <span>
                     <strong>Dayabhaga Law Superpower:</strong> Bengali Hindus follow Dayabhaga law.
                     Unlike Mitakshara law elsewhere in India, sons and daughters have zero birthright
-                    coparcenary claim while the father lives. A father can bequeath 100% of ancestral
-                    property through an Ichchapatra to anyone.
+                    joint claim while the father lives. A father can bequeath 100% of family
+                    asset through an Ichchapatra to anyone.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Section 213 Kolkata Probate Moat:</strong> If the Will is made within Kolkata
-                    Presidency town or covers immovable assets inside KMC jurisdiction, court probate
-                    from the Calcutta High Court or Alipore Court is strictly mandatory.
+                    Presidency town or covers land assets inside KMC area, court probate
+                    from the Calcutta High Court or Alipore Court is strictly needed.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Plain Paper Legality:</strong> No non-judicial stamp paper is required in West
-                    Bengal. A Will executed on plain white or green ledger paper with two valid witnesses
+                    Bengal. A Will signed on plain white or green ledger paper with two valid witnesses
                     is 100% legally enforceable.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Nominal SRO Registration:</strong> Registration under Section 18(e) at the
-                    Sub-Registrar (ADSR / ARA) is optional but provides unbeatable evidence against
+                    <strong>Nominal SRO Filing:</strong> Filing under Section 18(e) at the
+                    SRO (ADSR / ARA) is a choice but provides unbeatable evidence against
                     future fraud allegations. Total official fee is only ₹100 to ₹250.
                   </span>
                 </li>
@@ -538,7 +538,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>LEGAL DOCTRINE IN BENGAL</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                1. Dayabhaga Law: Absolute Testamentary Freedom in Bengal
+                1. Dayabhaga Law: Absolute Will Freedom in Bengal
               </h2>
               <div className="text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
@@ -556,9 +556,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                       Mitakshara Law (Rest of India)
                     </span>
                     <p className="text-xs text-amber-800 leading-relaxed">
-                      Sons and daughters acquire an automatic birthright coparcenary interest in ancestral
-                      joint family property the moment they are born. The father cannot freely bequeath
-                      the entire ancestral home without consent.
+                      Sons and daughters acquire an automatic birthright joint interest in family
+                      joint family asset the moment they are born. The father cannot freely bequeath
+                      the entire family home without consent.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/80">
@@ -567,18 +567,18 @@ Official Clinic Seal: [Rubber Stamp]`;
                     </span>
                     <p className="text-xs text-emerald-800 leading-relaxed">
                       Children have <strong>NO birthright interest</strong> while their father is alive.
-                      The father is the absolute, singular master of both self-acquired AND ancestral
-                      properties. He has 100% testamentary freedom to bequeath ancestral assets to anyone
+                      The father is the absolute, singular master of both self-acquired AND family
+                      assets. He has 100% Will freedom to bequeath family assets to anyone
                       under his Ichchapatra.
                     </p>
                   </div>
                 </div>
                 <p>
-                  Under Section 30 of the Hindu Succession Act, 1956, any Hindu may dispose of any property
+                  Under Section 30 of the Hindu Succession Act, 1956, any Hindu may dispose of any asset
                   capable of being disposed of by him. Because Dayabhaga vests absolute title in the living
-                  father, a Bengali father can legally bequeath an ancestral family house in Kolkata,
+                  father, a Bengali father can legally bequeath an family family house in Kolkata,
                   Howrah, or Durgapur to his daughter, spouse, or third party, entirely excluding an errant
-                  son without facing coparcenary partition challenges.
+                  son without facing joint split fights.
                 </p>
               </div>
             </section>
@@ -594,8 +594,8 @@ Official Clinic Seal: [Rubber Stamp]`;
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Below is the complete legal text of a valid Will in Bengali (উইল বা ইচ্ছাপত্র). This draft
-                incorporates Dayabhaga title declarations, Section 63 attestation clauses, executor
-                appointment, and property schedules. Click the button to copy the entire template.
+                incorporates Dayabhaga title declarations, Section 63 witness signing clauses, executor
+                appointment, and asset schedules. Click the button to copy the entire template.
               </p>
 
               <div className="relative rounded-2xl bg-white border border-slate-200 shadow-md overflow-hidden">
@@ -638,7 +638,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 3. English Translation: Bengali Will Clauses Explained
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                If you are an NRI or drafting a bilingual Will for properties in West Bengal, here is the
+                If you are an NRI or drafting a bilingual Will for assets in West Bengal, here is the
                 exact English equivalent of each Bengali clause. This ensures complete alignment between
                 vernacular terms and English legal proceedings.
               </p>
@@ -647,7 +647,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <div className="flex items-center justify-between px-4 py-3 bg-slate-800 text-white">
                   <div className="flex items-center gap-2 text-xs font-bold tracking-wide">
                     <Globe className="w-4 h-4 text-emerald-400" />
-                    <span>English Translation &amp; Succession Act Clauses</span>
+                    <span>English Translation &amp; Estate Act Clauses</span>
                   </div>
                   <button
                     onClick={copyEnglishToClipboard}
@@ -680,11 +680,11 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>TAILOR YOUR WILL DRAFT</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                4. Interactive Clause Selector: Tailor Your Bengali Will
+                4. Free Clause Selector: Tailor Your Bengali Will
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Select specific legal situations below to view and copy specialized legal clauses designed
-                specifically for West Bengal property laws and Dayabhaga jurisprudence:
+                mainly for West Bengal asset laws and Dayabhaga jurisprudence:
               </p>
 
               <div className="rounded-2xl bg-white border border-slate-200 shadow-xs p-5 space-y-4">
@@ -692,8 +692,8 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <div className="flex flex-wrap gap-2 border-b border-slate-200 pb-3">
                   {(
                     [
-                      { key: "dayabhaga", label: "Dayabhaga Ancestral" },
-                      { key: "exclusion", label: "Disinheritance (ত্যাজ্য)" },
+                      { key: "dayabhaga", label: "Dayabhaga Family" },
+                      { key: "exclusion", label: "Leaving Out (ত্যাজ্য)" },
                       { key: "executor", label: "Executor & Probate" },
                       { key: "life_interest", label: "Spouse Life Estate" },
                       { key: "residuary", label: "Residuary Estate" },
@@ -793,7 +793,7 @@ Official Clinic Seal: [Rubber Stamp]`;
               <div className="text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Section 213 read with Section 57(a) &amp; (b) of the Indian Succession Act, 1925
-                  creates a strict jurisdictional distinction between the historic Presidency town of
+                  creates a strict local distinction between the historic Presidency town of
                   Kolkata and the rest of West Bengal:
                 </p>
 
@@ -808,16 +808,16 @@ Official Clinic Seal: [Rubber Stamp]`;
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-semibold text-slate-900">Probate Requirement</td>
+                        <td className="p-3.5 font-semibold text-slate-900">Probate Rule</td>
                         <td className="p-3.5 text-rose-700 font-bold">
-                          Strictly Mandatory (Sec 213)
+                          Strictly Needed (Sec 213)
                         </td>
                         <td className="p-3.5 text-emerald-700 font-medium">
-                          Optional / Not Mandatory
+                          A Choice / Not Needed
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-semibold text-slate-900">Jurisdictional Courts</td>
+                        <td className="p-3.5 font-semibold text-slate-900">Local Courts</td>
                         <td className="p-3.5">
                           Calcutta High Court (Original Side) or Alipore District Court
                         </td>
@@ -826,12 +826,12 @@ Official Clinic Seal: [Rubber Stamp]`;
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-semibold text-slate-900">Municipal / Land Mutation</td>
+                        <td className="p-3.5 font-semibold text-slate-900">City / Land Name Change</td>
                         <td className="p-3.5">
-                          KMC will refuse Assessment Book mutation without Court Probate Order
+                          KMC will refuse Assessment Book name change without Court Probate Order
                         </td>
                         <td className="p-3.5">
-                          BL&amp;LRO mutates based on Registered Will + Legal Heir NOC on Banglarbhumi
+                          BL&amp;LRO mutates based on Filed Will + Legal Heir NOC on Banglarbhumi
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50">
@@ -850,11 +850,11 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 space-y-1.5">
                   <div className="flex items-center gap-1.5 font-bold text-amber-950">
                     <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0" />
-                    <span>Crucial Warning for Kolkata Property Owners:</span>
+                    <span>Crucial Warning for Kolkata Asset Owners:</span>
                   </div>
                   <p>
                     If your flat or house is located in South Kolkata, North Kolkata, or Central Kolkata
-                    under KMC wards, do not rely solely on a registered Will for future transfer. Your
+                    under KMC wards, do not rely solely on a filed Will for future transfer. Your
                     appointed executor must file for Probate before the Calcutta High Court or Alipore
                     Court upon your demise to establish legal title under Section 213.
                   </p>
@@ -869,10 +869,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>OFFICIAL WBDOR FEES CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                6. West Bengal SRO Registration: e-Nathikaran Fee Guide
+                6. West Bengal SRO Filing: e-Nathikaran Fee Guide
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Will registration in West Bengal is conducted under the Directorate of Registration and
+                Will filing in West Bengal is conducted under the Directorate of Filing and
                 Stamp Revenue (WBDOR) via the <strong>e-Nathikaran portal</strong>. Because a Will does not
                 transfer immediate title, it is exempt from ad-valorem stamp duty.
               </p>
@@ -883,7 +883,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                   <div className="flex items-center gap-2">
                     <Coins className="w-5 h-5 text-[#C65378]" />
                     <span className="font-bold text-sm sm:text-base text-[#172228]">
-                      West Bengal Sub-Registrar Fee Estimator
+                      West Bengal SRO Fee Estimator
                     </span>
                   </div>
                   <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
@@ -893,7 +893,7 @@ Official Clinic Seal: [Rubber Stamp]`;
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                   <div>
-                    <label className="font-bold text-slate-700 block mb-1">Registration District</label>
+                    <label className="font-bold text-slate-700 block mb-1">Filing District</label>
                     <select
                       value={propertyDistrict}
                       onChange={(e) => setPropertyDistrict(e.target.value)}
@@ -922,13 +922,13 @@ Official Clinic Seal: [Rubber Stamp]`;
                   </div>
 
                   <div>
-                    <label className="font-bold text-slate-700 block mb-1">Execution Mode</label>
+                    <label className="font-bold text-slate-700 block mb-1">Signing Mode</label>
                     <select
                       value={registrationMode}
                       onChange={(e) => setRegistrationMode(e.target.value as "office" | "commission")}
                       className="w-full p-2.5 rounded-lg border border-slate-300 bg-white focus:ring-2 focus:ring-[#C65378]/30 outline-hidden font-medium"
                     >
-                      <option value="office">At Sub-Registrar Office (Normal)</option>
+                      <option value="office">At SRO office (Normal)</option>
                       <option value="commission">Home Visit Commission (Bedridden Senior)</option>
                     </select>
                   </div>
@@ -954,7 +954,7 @@ Official Clinic Seal: [Rubber Stamp]`;
 
                   <div className="text-center sm:text-right shrink-0">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
-                      Total Govt Registration Cost
+                      Total Govt Filing Cost
                     </span>
                     <span className="text-2xl font-extrabold text-[#172228]">
                       {formatINR(totalEstimatedSroCost)}
@@ -971,11 +971,11 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>LEGAL PATHWAY COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                7. Legal Comparison: Registered Will vs Warish Certificate
+                7. Legal Comparison: Filed Will vs Warish Paper
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                When someone passes away in West Bengal, property transmission follows either intestate
-                succession (via Warish Certificate) or testamentary succession (via Will/Probate). Here is
+                When someone passes away in West Bengal, asset transfer follows either no-Will
+                estate (via Warish Paper) or Will estate (via Will/Probate). Here is
                 how they compare across key parameters:
               </p>
 
@@ -984,7 +984,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                   <thead>
                     <tr className="bg-[#172228] text-white">
                       <th className="p-3.5 font-bold">Feature</th>
-                      <th className="p-3.5 font-bold">Registered Will (উইল)</th>
+                      <th className="p-3.5 font-bold">Filed Will (উইল)</th>
                       <th className="p-3.5 font-bold">Warish Patra (ওয়ারিশান)</th>
                       <th className="p-3.5 font-bold">Gift Deed (দানপত্র)</th>
                     </tr>
@@ -992,20 +992,20 @@ Official Clinic Seal: [Rubber Stamp]`;
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-semibold text-slate-900">Effective Date</td>
-                      <td className="p-3.5">Only after death of testator</td>
-                      <td className="p-3.5">Applies when deceased dies intestate</td>
+                      <td className="p-3.5">Only after death of Will maker</td>
+                      <td className="p-3.5">Applies when deceased dies no-Will</td>
                       <td className="p-3.5">Immediate transfer during lifetime</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-semibold text-slate-900">Stamp Duty in WB</td>
                       <td className="p-3.5 text-emerald-700 font-bold">₹0 (Zero Stamp Duty)</td>
-                      <td className="p-3.5 text-emerald-700 font-bold">₹0 (Administrative)</td>
+                      <td className="p-3.5 text-emerald-700 font-bold">₹0 (Office)</td>
                       <td className="p-3.5 text-rose-700 font-semibold">
                         0.5% (Family) / 5%-7% (Others)
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-semibold text-slate-900">Disinheritance Freedom</td>
+                      <td className="p-3.5 font-semibold text-slate-900">Leaving Out Freedom</td>
                       <td className="p-3.5 text-emerald-700 font-bold">
                         100% (Dayabhaga permits exclusion)
                       </td>
@@ -1015,10 +1015,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                       <td className="p-3.5">Immediate irrevocable gift</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-semibold text-slate-900">KMC / Banglarbhumi Mutation</td>
+                      <td className="p-3.5 font-semibold text-slate-900">KMC / Banglarbhumi Name Change</td>
                       <td className="p-3.5">Probate order (Kolkata) or Will + Death Cert</td>
-                      <td className="p-3.5">Panchayat / Councillor Warish Certificate</td>
-                      <td className="p-3.5">Registered Gift Deed copy</td>
+                      <td className="p-3.5">Panchayat / Councillor Warish Paper</td>
+                      <td className="p-3.5">Filed Gift Deed copy</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-semibold text-slate-900">Revocability</td>
@@ -1040,14 +1040,14 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>EXECUTION PROTOCOL IN WEST BENGAL</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                8. Step-by-Step SOP: Drafting to Registration in Bengal
+                8. Step-by-Step SOP: Drafting to Filing in Bengal
               </h3>
               <div className="space-y-4">
                 {[
                   {
                     step: "Step 1",
                     title: "Asset Cataloging & Dayabhaga Title Verification",
-                    desc: "List all properties with exact mouza, J.L. number, khatian, and dag numbers from Banglarbhumi. Confirm that properties in West Bengal fall under Dayabhaga law with no pre-existing court attachment.",
+                    desc: "List all assets with exact mouza, J.L. number, khatian, and dag numbers from Banglarbhumi. Confirm that assets in West Bengal fall under Dayabhaga law with no pre-existing court attachment.",
                   },
                   {
                     step: "Step 2",
@@ -1057,17 +1057,17 @@ Official Clinic Seal: [Rubber Stamp]`;
                   {
                     step: "Step 3",
                     title: "Obtaining Registered Medical Practitioner's Fitness Certificate",
-                    desc: "For testators over 60 years or with health conditions, have a registered MBBS doctor examine the testator on the day of execution and issue a Sound Mind Fitness Certificate.",
+                    desc: "For Will makers over 60 years or with health conditions, have a filed MBBS doctor examine the Will maker on the day of signing and issue a Sound Mind Fitness Paper.",
                   },
                   {
                     step: "Step 4",
                     title: "Execution Before Two Independent Witnesses (Sec 63)",
-                    desc: "Sign all pages in the presence of two independent witnesses who are NOT beneficiaries and not spouses of beneficiaries (Section 67 rule). Witnesses then attest in your presence.",
+                    desc: "Sign all pages in the presence of two independent witnesses who are NOT heirs and not spouses of heirs (Section 67 rule). Witnesses then attest in your presence.",
                   },
                   {
                     step: "Step 5",
                     title: "e-Nathikaran Appointment & Sub-Registrar Office Visit",
-                    desc: "Generate e-appointment on the West Bengal e-Nathikaran portal. Visit the ADSR / ARA Kolkata with witnesses, Aadhaar cards, doctor's certificate, and original draft for biometric capture and registration.",
+                    desc: "Generate e-appointment on the West Bengal e-Nathikaran portal. Visit the ADSR / ARA Kolkata with witnesses, Aadhaar cards, doctor's paper, and original draft for biometric capture and filing.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -1104,11 +1104,11 @@ Official Clinic Seal: [Rubber Stamp]`;
                     Alipore High Court Probate Victory
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A father in Ballygunge bequeathed his entire residential house to his younger
+                    A father in Ballygunge bequeathed his entire home house to his younger
                     daughter, excluding his estranged son. Upon demise, the daughter applied for probate
-                    at Calcutta High Court. The son challenged claiming Mitakshara coparcenary right.
+                    at Calcutta High Court. The son challenged claiming Mitakshara joint right.
                     The Court upheld the Will under Dayabhaga doctrine, confirming the father had 100%
-                    disposition authority.
+                    gift office.
                   </p>
                 </div>
 
@@ -1120,10 +1120,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                     Bidhannagar Leasehold Flat Transfer
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A testator held a 999-year leasehold property in Salt Lake under the Urban
-                    Development &amp; Municipal Affairs Department. The registered Will clearly appointed
-                    his wife as primary executor. The UD Department mutated the leasehold rights smoothly
-                    because the Will specifically referred to Government lease terms.
+                    A Will maker held a 999-year leasehold asset in Salt Lake under the Urban
+                    Development &amp; City Affairs Office. The filed Will clearly appointed
+                    his wife as primary executor. The UD Office mutated the leasehold rights smoothly
+                    because the Will mainly referred to Government lease terms.
                   </p>
                 </div>
 
@@ -1132,13 +1132,13 @@ Official Clinic Seal: [Rubber Stamp]`;
                     CASE STUDY 3 • HOWRAH
                   </div>
                   <h3 className="text-sm font-bold text-[#172228]">
-                    District Banglarbhumi Mutation
+                    District Banglarbhumi Name Change
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     In Howrah district (outside Kolkata Presidency area), the legal heir presented a
-                    registered Bengali Ichchapatra to the BL&amp;LRO. Because Section 213 does not
-                    mandate probate outside Kolkata, the BL&amp;LRO verified witness affidavits and mutated
-                    the agricultural and homestead land on Banglarbhumi within 45 days.
+                    filed Bengali Ichchapatra to the BL&amp;LRO. Because Section 213 does not
+                    mandate probate outside Kolkata, the BL&amp;LRO checked witness sworn notes and mutated
+                    the farm and homestead land on Banglarbhumi within 45 days.
                   </p>
                 </div>
               </div>
@@ -1151,14 +1151,14 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>REGISTRATION CHECKLIST &amp; DOCTOR CERT</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                10. Sub-Registrar Document Checklist &amp; Medical Certificate
+                10. SRO Paper Checklist &amp; Medical Paper
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Checklist Card */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
                   <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-[#172228]">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Sub-Registrar (ADSR) Mandatory Checklist</span>
+                    <span>SRO (ADSR) Needed Checklist</span>
                   </div>
                   <ul className="text-xs text-slate-700 space-y-2 leading-relaxed">
                     <li className="flex items-start gap-2">
@@ -1167,15 +1167,15 @@ Official Clinic Seal: [Rubber Stamp]`;
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Original Aadhaar Card and PAN Card of Testator + Self-attested copies.</span>
+                      <span>Original Aadhaar Card and PAN Card of Will maker + Self-attested copies.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Original ID proofs (Aadhaar / Voter ID) of 2 attesting witnesses.</span>
+                      <span>Original ID proofs (Aadhaar / Voter ID) of 2 signing witnesses.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Recent passport-size photographs of Testator and both witnesses.</span>
+                      <span>Recent passport-size photographs of Will maker and both witnesses.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -1183,7 +1183,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Doctor's Sound Mind Fitness Certificate on official letterhead.</span>
+                      <span>Doctor's Sound Mind Fitness Paper on official letterhead.</span>
                     </li>
                   </ul>
                 </div>
@@ -1193,7 +1193,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-[#C65378]">
                       <Award className="w-4 h-4" />
-                      <span>Doctor's Sound Mind Certificate</span>
+                      <span>Doctor's Sound Mind Paper</span>
                     </div>
                     <button
                       onClick={copyMedicalToClipboard}
@@ -1226,10 +1226,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>INTERACTIVE ESTATE PLANNING TOOLS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                11. Contextual Estate Calculators &amp; Succession Tools
+                11. Contextual Estate Tools &amp; Estate Tools
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Use our suite of legal calculators to estimate tax on inherited property, verify court
+                Use our suite of legal tools to estimate tax on inherited asset, verify court
                 probate expenses, and check witness eligibility under Indian succession laws:
               </p>
 
@@ -1243,10 +1243,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                       <Calculator className="w-4 h-4" />
                     </div>
                     <h3 className="text-sm font-bold text-[#172228] group-hover:text-[#C65378] transition-colors">
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compare 12.5% flat vs 20% indexation on sale of inherited property under Budget
+                      Compare 12.5% flat vs 20% indexation on sale of inherited asset under Budget
                       2024 grandfathering.
                     </p>
                   </div>
@@ -1265,7 +1265,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                       <Gavel className="w-4 h-4" />
                     </div>
                     <h3 className="text-sm font-bold text-[#172228] group-hover:text-emerald-700 transition-colors">
-                      Probate Court Fee Calculator
+                      Probate Court Fee Tool
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Estimate Calcutta High Court and Alipore Court fee caps and timelines for probate
@@ -1287,10 +1287,10 @@ Official Clinic Seal: [Rubber Stamp]`;
                       <Building2 className="w-4 h-4" />
                     </div>
                     <h3 className="text-sm font-bold text-[#172228] group-hover:text-blue-700 transition-colors">
-                      West Bengal SRO Will Registration
+                      West Bengal SRO Will Filing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Assisted registration service at ADSR offices across Kolkata, Howrah, and Bengal.
+                      Assisted filing service at ADSR offices across Kolkata, Howrah, and Bengal.
                     </p>
                   </div>
                   <div className="mt-3 flex items-center gap-1 text-xs font-bold text-blue-700">
@@ -1308,7 +1308,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>EDITORIAL &amp; LEGAL OVERSIGHT</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                12. Legal Backing: Senior Succession Counsel Profile
+                12. Legal Backing: Senior Estate Counsel Profile
               </h3>
               <div className="rounded-2xl bg-white border border-slate-200 p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="w-20 h-20 rounded-full bg-[#172228] text-white flex items-center justify-center font-extrabold text-2xl shrink-0 shadow-md">
@@ -1317,20 +1317,20 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <div className="space-y-2 text-center sm:text-left">
                   <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                     <h3 className="text-base font-extrabold text-[#172228]">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </h3>
                     <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#C65378]/10 text-[#C65378]">
-                      Senior Succession Counsel
+                      Senior Estate Counsel
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 font-medium">
                     AMA Legal Solutions • Bar Council of Delhi &amp; Supreme Court Bar Association
                   </p>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Advocate Anuj Anand Malik has over 15 years of experience in cross-border estate
-                    planning, high-stakes probate litigation, and testamentary dispute defense. He has
-                    advised hundreds of Bengali and NRI families on Dayabhaga ancestral succession,
-                    Calcutta High Court probate petitions, and dispute-proof Will drafting.
+                    Lawyer Anuj Anand Malik has over 15 years of experience in cross-border estate
+                    planning, high-stakes probate court fights, and Will fight defense. He has
+                    advised hundreds of Bengali and NRI families on Dayabhaga family estate,
+                    Calcutta High Court probate petitions, and fight-proof Will drafting.
                   </p>
                   <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs font-semibold text-slate-600">
                     <span className="flex items-center gap-1">
@@ -1392,7 +1392,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>STATUTORY REPOSITORY</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                14. Statutory Citations: Bengal Land &amp; Succession Acts
+                14. Legal Citations: Bengal Land &amp; Estate Acts
               </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                 <table className="w-full text-left text-xs border-collapse">
@@ -1410,7 +1410,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                       </td>
                       <td className="p-3.5 font-mono text-[#C65378]">Section 63</td>
                       <td className="p-3.5">
-                        Execution requirements: signature by testator and mandatory attestation by 2
+                        Signing rules: signature by Will maker and needed witness signing by 2
                         independent witnesses.
                       </td>
                     </tr>
@@ -1420,7 +1420,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                       </td>
                       <td className="p-3.5 font-mono text-[#C65378]">Sections 57 &amp; 213</td>
                       <td className="p-3.5">
-                        Mandatory probate requirement for Wills executed or governing property within
+                        Needed probate rule for Wills signed or governing asset within
                         Kolkata Presidency limits.
                       </td>
                     </tr>
@@ -1430,18 +1430,18 @@ Official Clinic Seal: [Rubber Stamp]`;
                       </td>
                       <td className="p-3.5 font-mono text-[#C65378]">Jimutavahana Ch. 2</td>
                       <td className="p-3.5">
-                        Absence of birthright coparcenary; living father possesses absolute, unfettered
-                        disposition rights.
+                        Absence of birthright joint; living father possesses absolute, unfettered
+                        gift rights.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-semibold text-slate-900">
-                        Registration Act, 1908
+                        Filing Act, 1908
                       </td>
                       <td className="p-3.5 font-mono text-[#C65378]">Section 18(e)</td>
                       <td className="p-3.5">
-                        Registration of Wills is strictly optional; unregistered plain paper Wills are
-                        fully valid if verified.
+                        Filing of Wills is strictly a choice; plain plain paper Wills are
+                        fully valid if checked.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
@@ -1450,15 +1450,37 @@ Official Clinic Seal: [Rubber Stamp]`;
                       </td>
                       <td className="p-3.5 font-mono text-[#C65378]">Section 50</td>
                       <td className="p-3.5">
-                        Procedure for mutation of land records on Banglarbhumi upon testamentary or
-                        intestate succession.
+                        Step for name change of land records on Banglarbhumi upon Will or
+                        no-Will estate.
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1471,8 +1493,8 @@ Official Clinic Seal: [Rubber Stamp]`;
                   AM
                 </div>
                 <div>
-                  <h3 className="text-sm font-extrabold text-[#172228]">Advocate Anuj Anand Malik</h3>
-                  <p className="text-[11px] text-[#C65378] font-bold">Senior Succession Counsel</p>
+                  <h3 className="text-sm font-extrabold text-[#172228]">Lawyer Anuj Anand Malik</h3>
+                  <p className="text-[11px] text-[#C65378] font-bold">Senior Estate Counsel</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
@@ -1480,7 +1502,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                 1925, and Calcutta High Court Probate Rules.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-semibold">
-                <span>Verified Legal Draft</span>
+                <span>Checked Legal Draft</span>
                 <span className="text-emerald-600 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> 100% Enforceable
                 </span>
@@ -1494,11 +1516,11 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <span>LEGAL WILL DRAFTING</span>
               </div>
               <h3 className="text-lg font-extrabold leading-snug">
-                Protect Your Family with a Dispute-Proof Will
+                Protect Your Family with a Fight-Proof Will
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Draft your legally binding Will online in 10 minutes with our smart questionnaire, or
-                consult senior High Court advocates for custom estate planning in West Bengal.
+                consult senior High Court lawyers for custom estate planning in West Bengal.
               </p>
               <div className="space-y-2.5 pt-2">
                 <button
@@ -1513,7 +1535,7 @@ Official Clinic Seal: [Rubber Stamp]`;
                   className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all border border-white/10"
                 >
                   <Gavel className="w-3.5 h-3.5 text-rose-300" />
-                  <span>Consult Succession Advocate</span>
+                  <span>Consult Estate Lawyer</span>
                 </Link>
               </div>
             </div>

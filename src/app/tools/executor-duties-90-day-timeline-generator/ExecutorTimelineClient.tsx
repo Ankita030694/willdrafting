@@ -68,7 +68,7 @@ interface MilestoneTask {
 
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. What is an Executor in India?" },
-  { id: "interactive-timeline", label: "2. Interactive 90-Day Executor Timeline" },
+  { id: "interactive-timeline", label: "2. Free 90-Day Executor Timeline" },
   { id: "first-14-days-custody", label: "3. First 14 Days: Immediate Custody" },
   { id: "asset-freezing-debt-hierarchy", label: "4. Days 15 to 45: Freezing & Debts" },
   { id: "probate-tax-compliance", label: "5. Days 46 to 90: Probate & Section 159" },
@@ -78,43 +78,43 @@ const TOC_ITEMS = [
   { id: "step-by-step-bank-demat-sop", label: "9. Step-by-Step Bank & Demat Claims" },
   { id: "practical-case-studies", label: "10. Real Case Studies: Delhi & Mumbai" },
   { id: "legal-notice-templates", label: "11. Section 360 Notice & Assent Deed" },
-  { id: "institutional-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
-    q: "What should an executor do first after the death of the testator?",
-    a: "Under Section 316 of the Indian Succession Act, 1925, the executor's immediate statutory duty is to provide a suitable funeral for the deceased according to their religious rites and station in life. Under Section 319, necessary funeral and medical expenses hold first legal charge on the deceased estate and must be paid before any other debts or legacies.",
+    q: "What should an executor do first after the death of the Will maker?",
+    a: "Under Section 316 of the Indian Succession Act, 1925, the executor's immediate legal duty is to provide a suitable funeral for the deceased according to their religious rites and station in life. Under Section 319, necessary funeral and medical expenses hold first legal charge on the deceased estate and must be paid before any other debts or legacies.",
   },
   {
-    q: "Is probate mandatory for an executor to act in India?",
-    a: "Under Sections 57 and 213 of the Indian Succession Act, 1925, probate is mandatory for Wills made by Hindus, Buddhists, Sikhs, and Jains only if executed within the ordinary original civil jurisdiction of the High Courts of Mumbai, Chennai, or Kolkata, or if immovable property bequeathed is located within these cities. Outside these presidency towns, probate is optional unless demanded by institutions or contested by heirs.",
+    q: "Is probate needed for an executor to act in India?",
+    a: "Under Sections 57 and 213 of the Indian Succession Act, 1925, probate is needed for Wills made by Hindus, Buddhists, Sikhs, and Jains only if signed within the ordinary original civil area of the High Courts of Mumbai, Chennai, or Kolkata, or if land asset bequeathed is located within these cities. Outside these presidency towns, probate is a choice unless demanded by institutions or contested by heirs.",
   },
   {
-    q: "What is the statutory deadline to exhibit an asset inventory in court?",
-    a: "Under Section 317(1) of the Indian Succession Act, 1925, an executor who has been granted probate must exhibit a full and true inventory of all property in possession and credits within 6 months from the grant. The executor must also exhibit a full account of the administration of the estate within 1 year.",
+    q: "What is the legal deadline to exhibit an asset inventory in court?",
+    a: "Under Section 317(1) of the Indian Succession Act, 1925, an executor who has been granted probate must exhibit a full and true inventory of all asset in possession and credits within 6 months from the grant. The executor must also exhibit a full account of the care of the estate within 1 year.",
   },
   {
     q: "What is the legal order of paying debts from a deceased estate in India?",
-    a: "The statutory hierarchy under Sections 319 to 323 is: (1) Funeral and deathbed medical expenses (Section 319), (2) Expenses of obtaining probate and legal administration (Section 320), (3) Wages of domestic servants and laborers for 3 months preceding death (Section 321), (4) All other unsecured debts rateably and equally (Section 322). All debts must be fully cleared before any specific or general legacies are distributed (Section 323).",
+    a: "The legal hierarchy under Sections 319 to 323 is: (1) Funeral and deathbed medical expenses (Section 319), (2) Expenses of obtaining probate and legal care (Section 320), (3) Wages of domestic servants and laborers for 3 months preceding death (Section 321), (4) All other unsecured debts rateably and equally (Section 322). All debts must be fully cleared before any specific or general legacies are distributed (Section 323).",
   },
   {
     q: "What are the executor's tax duties under Section 159 of the Income Tax Act?",
-    a: "Under Section 159 of the Income Tax Act, 1961, the executor or legal representative is deemed to be an assessee liable to file the income tax return of the deceased for income earned up to the date of death and pay any outstanding taxes. The executor's personal liability is strictly capped at the value of the estate assets that come into their possession.",
+    a: "Under Section 159 of the Income Tax Act, 1961, the executor or legal agent is deemed to be an assessee liable to file the income tax return of the deceased for income earned up to the date of death and pay any outstanding taxes. The executor's personal liability is strictly capped at the value of the estate assets that come into their possession.",
   },
   {
     q: "What is executor assent under Section 332 of the Indian Succession Act?",
     a: "Under Section 332, the assent of the executor is legally necessary to complete a legatee's title to any specific bequest. Until the executor assents, legal title remains vested in the executor. Once the executor verifies that estate debts are satisfied and issues formal written assent, title relates back to the date of death under Section 333.",
   },
   {
-    q: "Can an executor be held personally liable for wasting estate property?",
-    a: "Yes. Under Section 369 of the Indian Succession Act, 1925 (devastavit), an executor who misapplies the estate or suffers it to be wasted or lost is personally liable to make good the loss to the beneficiaries and creditors. Publishing a statutory notice to creditors under Section 360 protects the executor from unknown liabilities.",
+    q: "Can an executor be held personally liable for wasting estate asset?",
+    a: "Yes. Under Section 369 of the Indian Succession Act, 1925 (devastavit), an executor who misapplies the estate or suffers it to be wasted or lost is personally liable to make good the loss to the heirs and creditors. Publishing a legal notice to creditors under Section 360 protects the executor from unknown liabilities.",
   },
   {
     q: "Can an appointed executor refuse to act or renounce their appointment?",
-    a: "Yes. An individual named as executor has the legal right to renounce probate under Section 229 of the Indian Succession Act, provided they have not intermeddled with estate assets or acted as executor. Renunciation can be made orally before the district judge or by writing signed by the person renouncing.",
+    a: "Yes. An single named as executor has the legal right to renounce probate under Section 229 of the Indian Succession Act, provided they have not intermeddled with estate assets or acted as executor. Giving Up can be made orally before the district judge or by writing signed by the person renouncing.",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function ExecutorTimelineClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedNotice, setCopiedNotice] = useState<boolean>(false);
   const [copiedAssent, setCopiedAssent] = useState<boolean>(false);
@@ -248,7 +248,7 @@ export default function ExecutorTimelineClient() {
       title: "Perform Funeral Rites & Secure First Charge on Estate",
       statute: "Section 316 & 319, Indian Succession Act",
       description:
-        "Provide a suitable funeral for the deceased according to religious customs. Preserve all burial/cremation bills; funeral costs are the highest statutory priority debt under Section 319.",
+        "Provide a suitable funeral for the deceased according to religious customs. Preserve all burial/cremation bills; funeral costs are the highest legal priority debt under Section 319.",
       mandatory: true,
     },
     {
@@ -260,7 +260,7 @@ export default function ExecutorTimelineClient() {
       title: "Take Physical Custody of Original Will & Safe Custody of Keys",
       statute: "Section 211 & 318, Indian Succession Act",
       description:
-        "Locate the signed original Will, codicils, and title deeds. Secure physical premises, change locks if necessary, and prevent relatives from removing movable valuables.",
+        "Locate the signed original Will, codicils, and title deeds. Secure physical premises, change locks if necessary, and prevent relatives from removing cash valuables.",
       mandatory: true,
     },
     {
@@ -272,7 +272,7 @@ export default function ExecutorTimelineClient() {
       title: "Obtain 15-20 Certified Copies of Death Certificate",
       statute: "Registration of Births and Deaths Act, 1969",
       description:
-        "Apply at the local municipal corporation / registrar office. Certified copies are required for every bank, mutual fund house, demat DP, SRO, and court registry.",
+        "Apply at the local city city board / registrar office. Certified copies are required for every bank, mutual fund house, demat DP, SRO, and court registry.",
       mandatory: true,
     },
     {
@@ -284,7 +284,7 @@ export default function ExecutorTimelineClient() {
       title: "Notify Banks to Freeze Accounts & Stop Auto-Debits",
       statute: "RBI Circular DBOD.No.Leg.BC.95/09.07.005/2004-05",
       description:
-        "Send written intimation with death certificate to all bank branches. Instruct the bank to freeze individual accounts, stop recurring SIPs and ECS auto-debits to protect estate cash.",
+        "Send written intimation with death paper to all bank branches. Instruct the bank to freeze single accounts, stop recurring SIPs and ECS auto-debits to protect estate cash.",
       mandatory: true,
     },
     {
@@ -296,7 +296,7 @@ export default function ExecutorTimelineClient() {
       title: "Intimate NSDL / CDSL Depository Participants",
       statute: "SEBI Master Circular SEBI/HO/MIRSD/POD-1/P/CIR/2024/37",
       description:
-        "Notify demat brokers and RTAs (CAMS / KFintech). Ensure shares cannot be unlawfully transacted or transferred until formal transmission documents are submitted.",
+        "Notify demat brokers and RTAs (CAMS / KFintech). Ensure shares cannot be unlawfully transacted or transferred until formal transfer papers are submitted.",
       mandatory: hasDematShares,
     },
     {
@@ -332,7 +332,7 @@ export default function ExecutorTimelineClient() {
       title: "Execute Statutory Debt Priority Settlement Hierarchy",
       statute: "Sections 319-323, Indian Succession Act",
       description:
-        "Pay debts strictly in legal order: (1) Funeral & deathbed medical bills, (2) Testamentary/probate costs, (3) Domestic servant wages (3 months), (4) General unsecured creditors rateably. No legacies may be paid before debts.",
+        "Pay debts strictly in legal order: (1) Funeral & deathbed medical bills, (2) Will/probate costs, (3) Domestic servant wages (3 months), (4) General unsecured creditors rateably. No legacies may be paid before debts.",
       mandatory: true,
     },
     {
@@ -344,7 +344,7 @@ export default function ExecutorTimelineClient() {
       title: "Register as Legal Representative on Income Tax Portal",
       statute: "Section 159, Income Tax Act, 1961",
       description:
-        "Upload the registered Will, death certificate, and PAN on the e-filing portal under 'Register as Legal Representative' to obtain access to the deceased assessee's tax account.",
+        "Upload the filed Will, death paper, and PAN on the e-filing portal under 'Register as Legal Agent' to obtain access to the deceased assessee's tax account.",
       mandatory: true,
     },
     {
@@ -368,7 +368,7 @@ export default function ExecutorTimelineClient() {
       title: "File Mandatory Probate Petition in High Court",
       statute: "Sections 57 & 213, Indian Succession Act",
       description:
-        "Mandatory for Wills executed in Mumbai, Chennai, or Kolkata, or involving immovable property within these limits. File Testamentary Petition with court fees (capped at ₹75,000 in Maharashtra).",
+        "Needed for Wills signed in Mumbai, Chennai, or Kolkata, or involving land asset within these limits. File Will Petition with court fees (capped at ₹75,000 in Maharashtra).",
       mandatory: jurisdiction === "presidency",
       presidencyOnly: true,
     },
@@ -381,7 +381,7 @@ export default function ExecutorTimelineClient() {
       title: "Apply for Municipal & Land Revenue Mutation",
       statute: "State Land Revenue Code & Municipal Corporation Act",
       description:
-        "Outside presidency towns, probate is not mandatory. Apply to the Tehsildar / Municipal Corporation for mutation into the legatee's name using the registered Will and indemnity bond.",
+        "Outside presidency towns, probate is not needed. Apply to the Tehsildar / City City Board for name change into the legatee's name using the filed Will and indemnity bond.",
       mandatory: jurisdiction === "non_presidency" && hasImmovable,
       nonPresidencyOnly: true,
     },
@@ -394,7 +394,7 @@ export default function ExecutorTimelineClient() {
       title: "Serve Citations & Monitor for Section 284 Caveats",
       statute: "Section 283 & 284, Indian Succession Act",
       description:
-        "Serve formal citations to all Class I legal heirs. If heirs are hostile or contested, prepare for a caveat and testamentary suit conversion.",
+        "Serve formal citations to all Class I legal heirs. If heirs are hostile or contested, prepare for a caveat and Will suit conversion.",
       mandatory: heirHarmony === "contested",
     },
     {
@@ -406,7 +406,7 @@ export default function ExecutorTimelineClient() {
       title: "Exhibit Statutory Asset Inventory within 6 Months",
       statute: "Section 317(1), Indian Succession Act",
       description:
-        "File a verified inventory of all immovable and movable properties, debts, and credits in the court registry. Failure to exhibit within 6 months is an offense under Section 176 of IPC.",
+        "File a checked inventory of all land and cash assets, debts, and credits in the court registry. Failure to exhibit within 6 months is an offense under Section 176 of IPC.",
       mandatory: jurisdiction === "presidency",
     },
     {
@@ -418,7 +418,7 @@ export default function ExecutorTimelineClient() {
       title: "Execute Formal Deed of Assent to Vest Legatee Title",
       statute: "Sections 332 & 333, Indian Succession Act",
       description:
-        "Execute a formal registered Deed of Assent or written declaration. Under Section 332, legatee title is incomplete without executor assent; once granted, it relates back to death.",
+        "Execute a formal filed Deed of Assent or written declaration. Under Section 332, legatee title is incomplete without executor assent; once granted, it relates back to death.",
       mandatory: hasImmovable,
     },
     {
@@ -430,7 +430,7 @@ export default function ExecutorTimelineClient() {
       title: "Submit Transmission Claims to Banks & Depository",
       statute: "RBI 15-Day Claim Settlement Circular",
       description:
-        "Submit Form Annexure A with KYC, death certificate, probate or registered Will and Indemnity. Banks must settle claims within 15 calendar days of receipt.",
+        "Submit Form Annexure A with KYC, death paper, probate or filed Will and Indemnity. Banks must settle claims within 15 calendar days of receipt.",
       mandatory: hasBankAccounts || hasDematShares,
     },
     {
@@ -442,7 +442,7 @@ export default function ExecutorTimelineClient() {
       title: "Distribute General Legacies upon 1-Year Statutory Protection",
       statute: "Section 337, Indian Succession Act",
       description:
-        "Executors are not bound to pay legacies until 1 year has elapsed from death. This allows full discovery of latent debts and shields from premature distribution claims.",
+        "Executors are not bound to pay legacies until 1 year has elapsed from death. This allows full discovery of latent debts and shields from premature split claims.",
       mandatory: true,
     },
     {
@@ -581,9 +581,9 @@ DEPONENT (EXECUTOR)`;
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Named as executor of a Will in India? Generate your personalized{" "}
-            <strong>90-day and 180-day statutory roadmap</strong>. Track funeral expenses priority under
+            <strong>90-day and 180-day legal roadmap</strong>. Track funeral expenses priority under
             Section 316, bank asset freezing, High Court probate filings, Section 159 ITR, and Deed of
-            Assent execution under Indian succession law.
+            Assent signing under Indian succession law.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -601,7 +601,7 @@ DEPONENT (EXECUTOR)`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -679,7 +679,7 @@ DEPONENT (EXECUTOR)`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Indian Succession Act, 1925 (Sections 57, 211, 213, 217, 316-369) read
@@ -703,32 +703,32 @@ DEPONENT (EXECUTOR)`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>First Statutory Charge (Section 316 &amp; 319):</strong> Funeral and deathbed
+                    <strong>First Legal Charge (Section 316 &amp; 319):</strong> Funeral and deathbed
                     medical expenses must be settled before all debts and legacies. The executor holds legal
-                    authority to reimburse these directly from estate liquid assets.
+                    office to reimburse these directly from estate liquid assets.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory Probate Jurisdictions (Sections 57 &amp; 213):</strong> If the Will
-                    was made in Mumbai, Chennai, or Kolkata, or bequeaths immovable property within these
-                    cities, High Court probate is mandatory before the executor can establish legal title.
+                    <strong>Needed Probate Areas (Sections 57 &amp; 213):</strong> If the Will
+                    was made in Mumbai, Chennai, or Kolkata, or bequeaths land asset within these
+                    cities, High Court probate is needed before the executor can establish legal title.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Section 159 Tax Representation:</strong> The executor is a deemed assessee
-                    under the Income Tax Act. You must register as legal representative on the e-filing
+                    under the Income Tax Act. You must register as legal agent on the e-filing
                     portal, file the final ITR up to death, and settle tax dues from estate assets.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 332 Executor Assent:</strong> Beneficiaries do not automatically obtain
-                    registered title upon death. Legal title vests in the executor under Section 211 until
+                    <strong>Section 332 Executor Assent:</strong> Heirs do not automatically obtain
+                    filed title upon death. Legal title vests in the executor under Section 211 until
                     the executor executes a formal Deed of Assent.
                   </span>
                 </li>
@@ -742,24 +742,24 @@ DEPONENT (EXECUTOR)`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Indian Succession Act: Executor Statutory Framework
+                1. Indian Succession Act: Executor Legal Framework
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Being named an executor in an Indian Will is a solemn fiduciary duty governed by Part IX
                   of the Indian Succession Act, 1925 (Sections 316 to 369). An executor is not merely an
-                  informal family coordinator; they are the <strong>legal representative of the deceased</strong>.
-                  Under Section 211 of the Act, all property of the deceased person vests in the executor
-                  immediately upon death.
+                  informal family coordinator; they are the <strong>legal agent of the deceased</strong>.
+                  Under Section 211 of the Act, all asset of the deceased person vests in the executor
+                  right away upon death.
                 </p>
                 <p>
                   Many executors in India face immense confusion after a loved one passes away. Western
-                  checklists do not apply in India because Indian estate administration involves unique
-                  statutory mechanisms: municipal mutation under state revenue codes, mandatory High Court
+                  checklists do not apply in India because Indian estate care involves unique
+                  legal mechanisms: city name change under state revenue codes, needed High Court
                   probate in presidency towns, RBI deceased depositor circulars, and Section 159 tax liability.
                 </p>
                 <p>
-                  If an executor distributes property to legatees without settling debts or publishing a
+                  If an executor distributes asset to legatees without settling debts or publishing a
                   notice to creditors under Section 360, they become personally liable for any unpaid debts
                   under <strong>Section 369 (devastavit)</strong>. Following a disciplined 90-day protocol
                   protects the executor and preserves family peace.
@@ -774,11 +774,11 @@ DEPONENT (EXECUTOR)`;
                 <span>INTERACTIVE 90-DAY &amp; 180-DAY ROADMAP ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive 90-Day Executor Timeline Generator
+                2. Free 90-Day Executor Timeline Generator
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select the date of death, city jurisdiction, asset classes, and family harmony status.
-                Our engine automatically calculates your precise calendar milestones, statutory court
+                Select the date of death, city area, asset classes, and family harmony status.
+                Our engine automatically calculates your precise calendar milestones, legal court
                 deadlines, and step-by-step checklist.
               </p>
 
@@ -790,7 +790,7 @@ DEPONENT (EXECUTOR)`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Date of Demise (Testator)</span>
+                      <span>Date of Demise (Will maker)</span>
                     </label>
                     <input
                       type="date"
@@ -814,9 +814,9 @@ DEPONENT (EXECUTOR)`;
                       onChange={(e) => handleCityChange(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-900 bg-white focus:outline-hidden focus:ring-2 focus:ring-[#C65378]/30 focus:border-[#C65378]"
                     >
-                      <option value="Mumbai">Mumbai (Mandatory Probate)</option>
-                      <option value="Chennai">Chennai (Mandatory Probate)</option>
-                      <option value="Kolkata">Kolkata (Mandatory Probate)</option>
+                      <option value="Mumbai">Mumbai (Needed Probate)</option>
+                      <option value="Chennai">Chennai (Needed Probate)</option>
+                      <option value="Kolkata">Kolkata (Needed Probate)</option>
                       <option value="Delhi NCR">Delhi NCR (Non-Presidency)</option>
                       <option value="Bengaluru">Bengaluru (Non-Presidency)</option>
                       <option value="Hyderabad">Hyderabad (Non-Presidency)</option>
@@ -839,7 +839,7 @@ DEPONENT (EXECUTOR)`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <FileSignature className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Will Registration Type</span>
+                      <span>Will Filing Type</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -851,7 +851,7 @@ DEPONENT (EXECUTOR)`;
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Registered Will
+                        Filed Will
                       </button>
                       <button
                         type="button"
@@ -862,7 +862,7 @@ DEPONENT (EXECUTOR)`;
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Unregistered
+                        Plain
                       </button>
                     </div>
                     <div className="text-[11px] text-slate-500 font-medium">
@@ -876,7 +876,7 @@ DEPONENT (EXECUTOR)`;
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Briefcase className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Select Asset Classes In Testator&rsquo;s Estate</span>
+                      <span>Select Asset Classes In Will maker&rsquo;s Estate</span>
                     </label>
                     <span className="text-[11px] text-slate-500 font-medium">
                       Select all assets left by the deceased
@@ -941,7 +941,7 @@ DEPONENT (EXECUTOR)`;
                   <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 text-xs">
                     <span className="font-bold text-slate-800 flex items-center gap-2">
                       <Users className="w-4 h-4 text-[#C65378]" />
-                      <span>Beneficiary Harmony &amp; Dispute Risk:</span>
+                      <span>Heir Harmony &amp; Fight Risk:</span>
                     </span>
                     <div className="flex gap-2">
                       <button
@@ -979,14 +979,14 @@ DEPONENT (EXECUTOR)`;
                     </div>
                     <p className="text-xs text-amber-900/90 leading-relaxed">
                       Under Sections 57 and 213 of the Indian Succession Act, 1925, probate is{" "}
-                      <strong>strictly mandatory</strong> for Hindu, Buddhist, Sikh, and Jain Wills
+                      <strong>strictly needed</strong> for Hindu, Buddhist, Sikh, and Jain Wills
                       executed in {cityName}, or where immovable property is situated in {cityName}. Banks
                       and cooperative housing societies in {cityName} will not transfer flat shares without
                       an official grant of probate from the High Court.
                     </p>
                     <div className="pt-1 flex items-center justify-between">
                       <span className="text-[11px] font-bold text-amber-800">
-                        Need High Court testamentary counsel?
+                        Need High Court Will counsel?
                       </span>
                       <Link
                         href="/services/probate-lawyer"
@@ -1005,7 +1005,7 @@ DEPONENT (EXECUTOR)`;
                     </div>
                     <p className="text-xs text-blue-900/90 leading-relaxed">
                       Under settled Supreme Court law (Clarence Pais v. Union of India), probate is{" "}
-                      <strong>not mandatory</strong> in {cityName}. As executor, you can directly approach
+                      <strong>not needed</strong> in {cityName}. As executor, you can directly approach
                       the local municipal corporation and land revenue authorities (Tehsildar) for property
                       mutation using the registered Will, certified death certificate, and Section 332 Deed
                       of Assent.
@@ -1051,7 +1051,7 @@ DEPONENT (EXECUTOR)`;
                       { id: "immediate", label: "Immediate (Days 1-14)" },
                       { id: "freezing_debts", label: "Freezing & Debts (Days 15-45)" },
                       { id: "tax_court", label: "Tax & Probate (Days 46-90)" },
-                      { id: "transmission_closing", label: "Transmission (Days 91-365)" },
+                      { id: "transmission_closing", label: "Transfer (Days 91-365)" },
                     ].map((tab) => (
                       <button
                         key={tab.id}
@@ -1189,7 +1189,7 @@ DEPONENT (EXECUTOR)`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The first 14 days after the testator&rsquo;s demise are critical for preventing asset loss
+                  The first 14 days after the Will maker&rsquo;s demise are critical for preventing asset loss
                   and family discord. Under Section 316 of the Indian Succession Act, the executor&rsquo;s
                   paramount legal obligation is to provide a funeral suitable to the deceased person&rsquo;s
                   religious rites and social condition.
@@ -1207,10 +1207,10 @@ DEPONENT (EXECUTOR)`;
                   </p>
                 </div>
                 <p>
-                  Concurrently, under Section 318, the executor must collect and secure all property of the
-                  deceased. This includes taking possession of original registered title deeds, locker keys,
-                  vehicle registration certificates, and stock certificates. Changing physical door locks
-                  on residential flats is standard practice if estranged relatives or tenants threaten illegal
+                  Concurrently, under Section 318, the executor must collect and secure all asset of the
+                  deceased. This includes taking possession of original filed title deeds, locker keys,
+                  vehicle filing papers, and stock papers. Changing physical door locks
+                  on home flats is standard practice if estranged relatives or tenants threaten illegal
                   possession.
                 </p>
               </div>
@@ -1227,9 +1227,9 @@ DEPONENT (EXECUTOR)`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Once death certificates are issued by the Municipal Corporation, the executor must formally
-                  notify institutional custodians. Sending written notices with certified death certificates
-                  freezes individual bank accounts and stops recurring ECS mandates, SIPs, and standing orders.
+                  Once death papers are issued by the City City Board, the executor must formally
+                  notify institutional custodians. Sending written notices with certified death papers
+                  freezes single bank accounts and stops recurring ECS mandates, SIPs, and standing orders.
                 </p>
                 <p>
                   When settling debts, Indian law forbids paying general debts haphazardly. Sections 319 to 323
@@ -1285,9 +1285,9 @@ DEPONENT (EXECUTOR)`;
                     <li>Log into the Income Tax e-filing portal using your personal PAN credentials.</li>
                     <li>
                       Navigate to &lsquo;Authorized Partners&rsquo; &gt; &lsquo;Register as Legal
-                      Representative&rsquo;.
+                      Agent&rsquo;.
                     </li>
-                    <li>Upload copy of death certificate, PAN card of deceased, and the registered Will.</li>
+                    <li>Upload copy of death paper, PAN card of deceased, and the filed Will.</li>
                     <li>
                       File the final Income Tax Return (ITR) for the broken period (April 1 to death date).
                     </li>
@@ -1298,9 +1298,9 @@ DEPONENT (EXECUTOR)`;
                   </ul>
                 </div>
                 <p>
-                  In cities like Mumbai, Chennai, and Kolkata, testamentary petitions for probate must be
-                  lodged with the High Court registry within this window, accompanied by affidavits of the
-                  attesting witnesses.
+                  In cities like Mumbai, Chennai, and Kolkata, Will petitions for probate must be
+                  lodged with the High Court registry within this window, accompanied by sworn notes of the
+                  signing witnesses.
                 </p>
               </div>
             </section>
@@ -1312,11 +1312,11 @@ DEPONENT (EXECUTOR)`;
                 <span>STATUTORY TIME LIMITS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Section 317 Statutory Deadlines: 6 &amp; 12 Month SOP
+                6. Section 317 Legal Deadlines: 6 &amp; 12 Month SOP
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Section 317(1) of the Indian Succession Act imposes two strict statutory deadlines on an
+                  Section 317(1) of the Indian Succession Act imposes two strict legal deadlines on an
                   executor who has been granted probate:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
@@ -1326,8 +1326,8 @@ DEPONENT (EXECUTOR)`;
                       <span>6-Month Deadline: Asset Inventory</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Within 6 months from the date of grant of probate, the executor must exhibit a verified
-                      inventory in the court registry. This inventory must list all immovable properties,
+                      Within 6 months from the date of grant of probate, the executor must exhibit a checked
+                      inventory in the court registry. This inventory must list all land assets,
                       credits, bank balances, and jewellery in their possession. Failure to file can be
                       penalized under Section 176 of the Indian Penal Code.
                     </p>
@@ -1339,7 +1339,7 @@ DEPONENT (EXECUTOR)`;
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Within 1 year from the grant, the executor must exhibit a true and audited account of the
-                      estate administration. This account demonstrates all debts paid, funeral costs
+                      estate care. This account demonstrates all debts paid, funeral costs
                       discharged, and bequests delivered. Once exhibited, the executor is shielded from future
                       misconduct allegations.
                     </p>
@@ -1359,7 +1359,7 @@ DEPONENT (EXECUTOR)`;
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Whether you need to file a formal High Court probate petition depends strictly on geographic
-                jurisdiction under Sections 57 and 213 of the Indian Succession Act:
+                area under Sections 57 and 213 of the Indian Succession Act:
               </p>
 
               {/* Table Container */}
@@ -1374,9 +1374,9 @@ DEPONENT (EXECUTOR)`;
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Probate Requirement</td>
-                      <td className="py-3 px-4 font-bold text-rose-700">Mandatory under Section 213(1)</td>
-                      <td className="py-3 px-4 font-bold text-emerald-700">Not Mandatory (Optional)</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Probate Rule</td>
+                      <td className="py-3 px-4 font-bold text-rose-700">Needed under Section 213(1)</td>
+                      <td className="py-3 px-4 font-bold text-emerald-700">Not Needed (A Choice)</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Governing Statute</td>
@@ -1386,17 +1386,17 @@ DEPONENT (EXECUTOR)`;
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Typical Timeline</td>
                       <td className="py-3 px-4">9 to 18 Months (High Court process)</td>
-                      <td className="py-3 px-4">30 to 90 Days (Direct revenue mutation)</td>
+                      <td className="py-3 px-4">30 to 90 Days (Direct revenue name change)</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Court Fee Cap</td>
                       <td className="py-3 px-4">Capped at ₹75,000 in Maharashtra</td>
-                      <td className="py-3 px-4">Nominal mutation fee / Ad valorem if probate sought</td>
+                      <td className="py-3 px-4">Nominal name change fee / Ad valorem if probate sought</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Co-op Housing Society Transfer</td>
                       <td className="py-3 px-4">Demands certified copy of Probate</td>
-                      <td className="py-3 px-4">Accepts registered Will + Indemnity Bond</td>
+                      <td className="py-3 px-4">Accepts filed Will + Indemnity Bond</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Title Vesting</td>
@@ -1420,14 +1420,14 @@ DEPONENT (EXECUTOR)`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 369 of the Indian Succession Act codifies the doctrine of <em>devastavit</em> (waste
-                  of estate assets). When an executor misapplies estate funds or allows property to be damaged,
+                  of estate assets). When an executor misapplies estate funds or allows asset to be damaged,
                   stolen, or depreciated through gross negligence, they are personally liable to make good the
                   loss out of their personal bank account.
                 </p>
                 <div className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200 text-xs text-amber-950 space-y-2">
                   <div className="font-extrabold flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>How to Immunize Yourself: Section 360 Statutory Notice</span>
+                    <span>How to Immunize Yourself: Section 360 Legal Notice</span>
                   </div>
                   <p className="leading-relaxed">
                     Under Section 360, if the executor publishes a formal notice in newspapers giving creditors
@@ -1457,17 +1457,17 @@ DEPONENT (EXECUTOR)`;
                   {
                     step: 2,
                     title: "Submit RBI 15-Day Bank Transmission Form",
-                    desc: "Submit Annexure claim form with certified death certificate, KYC of executor/legatees, and registered Will copy. RBI circulars strictly mandate that banks must settle claims within 15 calendar days.",
+                    desc: "Submit Annexure claim form with certified death paper, KYC of executor/legatees, and filed Will copy. RBI circulars strictly mandate that banks must settle claims within 15 calendar days.",
                   },
                   {
                     step: 3,
                     title: "SEBI Simplified Demat Transmission up to ₹50 Lakhs",
-                    desc: "Under SEBI circular 2024, shares valued up to ₹50 Lakhs per listed company can be transmitted without court probate by submitting a registered Will, legal heir indemnity bond, and no-objection certificate.",
+                    desc: "Under SEBI circular 2024, shares valued up to ₹50 Lakhs per listed company can be transmitted without court probate by submitting a filed Will, legal heir indemnity bond, and no-objection paper.",
                   },
                   {
                     step: 4,
                     title: "Execute Executor Assent under Section 332",
-                    desc: "Draft and execute a formal Deed of Assent specifying that estate liabilities are discharged and consenting to the transfer of shares and bank deposits to the specified beneficiaries.",
+                    desc: "Draft and execute a formal Deed of Assent specifying that estate liabilities are discharged and consenting to the transfer of shares and bank deposits to the specified heirs.",
                   },
                 ].map((item) => (
                   <div
@@ -1501,21 +1501,21 @@ DEPONENT (EXECUTOR)`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case A: South Mumbai CHS Flat (Mandatory Probate)
+                      Case A: South Mumbai CHS Flat (Needed Probate)
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">
                       Mumbai
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testator passed away in Colaba, Mumbai leaving a flat to his daughter. Society refused to
-                    transfer shares without probate. The executor filed a Testamentary Petition in Bombay High
+                    Will maker passed away in Colaba, Mumbai leaving a flat to his daughter. Society refused to
+                    transfer shares without probate. The executor filed a Will Petition in Bombay High
                     Court, paid capped court fee of ₹75,000, and exhibited the Section 317 inventory in 5 months.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
                       <span className="text-slate-600">Court Fee Paid:</span>
-                      <span className="font-bold text-slate-900">₹75,000 (Statutory Max Cap)</span>
+                      <span className="font-bold text-slate-900">₹75,000 (Legal Max Cap)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600">Probate Grant:</span>
@@ -1532,16 +1532,16 @@ DEPONENT (EXECUTOR)`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case B: South Delhi Villa (Fast-Track Mutation)
+                      Case B: South Delhi Villa (Fast-Track Name Change)
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">
                       Delhi NCR
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testator died in Vasant Vihar, Delhi leaving a registered Will. Because Delhi is outside
+                    Will maker died in Vasant Vihar, Delhi leaving a filed Will. Because Delhi is outside
                     presidency towns, the executor published a Section 360 notice, cleared Section 159 ITR, and
-                    applied directly to MCD and DDA for mutation without probate.
+                    applied directly to MCD and DDA for name change without probate.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
@@ -1549,12 +1549,12 @@ DEPONENT (EXECUTOR)`;
                       <span className="font-bold text-emerald-700">Saved ₹3.50 Lakhs Legal Fees</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Mutation Timeline:</span>
+                      <span className="text-slate-600">Name Change Timeline:</span>
                       <span className="font-bold text-slate-900">45 Days Complete</span>
                     </div>
                     <div className="pt-1 text-emerald-700 font-bold flex justify-between border-t border-slate-200">
                       <span>Outcome:</span>
-                      <span>MCD Property Tax Mutation Completed</span>
+                      <span>MCD Asset Tax Name Change Completed</span>
                     </div>
                   </div>
                 </div>
@@ -1633,7 +1633,7 @@ DEPONENT (EXECUTOR)`;
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 317(1) Court Inventory Affidavit Format
+                    Section 317(1) Court Inventory Sworn Note Format
                   </div>
                   <button
                     type="button"
@@ -1675,22 +1675,22 @@ DEPONENT (EXECUTOR)`;
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Testamentary &amp; Probate Practice Bench
+                      WillDrafting.in Will &amp; Probate Practice Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s foremost estate planning and testamentary litigation
-                  platform, powered by AMA Legal Solutions. Our senior High Court advocates, probate litigators,
-                  and estate tax counsels have structured over 15,000 challenge-proof Wills and successfully
+                  WillDrafting.in is India&rsquo;s foremost estate planning and Will court fights
+                  platform, powered by AMA Legal Solutions. Our senior High Court lawyers, probate litigators,
+                  and estate tax counsels have structured over 15,000 fight-proof Wills and successfully
                   guided executors across Mumbai, Delhi NCR, Bengaluru, Chennai, and Kolkata through complex
-                  estate administration, High Court probate grants, Section 159 ITR filings, and transmission
-                  disputes.
+                  estate care, High Court probate grants, Section 159 ITR filings, and transfer
+                  fights.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1706,7 +1706,7 @@ DEPONENT (EXECUTOR)`;
                     href="/tools/probate-checker"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Probate Requirement Checker</span>
+                    <span>Probate Rule Checker</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1773,16 +1773,16 @@ DEPONENT (EXECUTOR)`;
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Testamentary Links
+                14. Legal Citations &amp; Official Will Links
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Provisions of the Indian Succession Act, 1925:
+                    Governing Rules of the Indian Succession Act, 1925:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Section 211:</strong> Immediate vesting of testator&rsquo;s estate in the
+                      <strong>Section 211:</strong> Immediate vesting of Will maker&rsquo;s estate in the
                       executor upon death.
                     </li>
                     <li>
@@ -1794,12 +1794,12 @@ DEPONENT (EXECUTOR)`;
                       and station in life.
                     </li>
                     <li>
-                      <strong>Section 317:</strong> Statutory timeline to exhibit inventory (6 months) and
+                      <strong>Section 317:</strong> Legal timeline to exhibit inventory (6 months) and
                       accounts (12 months).
                     </li>
                     <li>
                       <strong>Sections 319-323:</strong> Strict legal hierarchy of debts and prohibition of
-                      premature legacy distribution.
+                      premature legacy split.
                     </li>
                     <li>
                       <strong>Section 332:</strong> Necessity of executor&rsquo;s assent to complete
@@ -1832,7 +1832,7 @@ DEPONENT (EXECUTOR)`;
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>Income Tax Portal: Legal Representative Filing</span>
+                    <span>Income Tax Portal: Legal Agent Filing</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1848,14 +1848,14 @@ DEPONENT (EXECUTOR)`;
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Calculators &amp; Legal Tools
+                    Related WillDrafting Tools &amp; Legal Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/bank-deceased-claim-document-checklist-generator"
@@ -1867,13 +1867,13 @@ DEPONENT (EXECUTOR)`;
                       href="/tools/demat-mutual-fund-transmission-document-finder"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Demat &amp; MF Transmission Finder
+                      Demat &amp; MF Transfer Finder
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </Link>
                     <Link
                       href="/tools/will-validity-section-63-audit-checker"
@@ -1885,7 +1885,29 @@ DEPONENT (EXECUTOR)`;
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1898,21 +1920,21 @@ DEPONENT (EXECUTOR)`;
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section
-                316-369 executor liability defense, and estate mutation pan-India.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section
+                316-369 executor liability defense, and estate name change pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1929,8 +1951,8 @@ DEPONENT (EXECUTOR)`;
                   Protect Your Family from Executor Paralysis
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Appointing clear primary and substitute executors in your Will prevents probate disputes
-                  and ensures smooth transmission across banks, demat accounts, and real estate.
+                  Appointing clear primary and substitute executors in your Will prevents probate fights
+                  and ensures smooth transfer across banks, demat accounts, and real estate.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1955,15 +1977,15 @@ DEPONENT (EXECUTOR)`;
                   Facing Probate or Contested Heirs in Court?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our testamentary litigators handle High Court probate petitions, Section 284 caveats,
-                  Section 317 inventory filings, and bank transmission pan-India.
+                  Our Will litigators handle High Court probate petitions, Section 284 caveats,
+                  Section 317 inventory filings, and bank transfer pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1976,14 +1998,14 @@ DEPONENT (EXECUTOR)`;
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Statutory Precision:</strong> Built strictly upon Indian Succession Act ss.
+                      <strong>Legal Precision:</strong> Built strictly upon Indian Succession Act ss.
                       316-369 and IT Act s. 159.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Jurisdiction Sensitive:</strong> Flags mandatory High Court probate in
+                      <strong>Area Sensitive:</strong> Flags needed High Court probate in
                       presidency towns.
                     </span>
                   </li>

@@ -125,7 +125,7 @@ const TAMIL_NADU_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Tamil Nadu law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -144,7 +144,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental soundness and lucidity.",
     checked: false,
   },
   {
@@ -161,8 +161,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-7",
-    label: "GCC / Municipal Tax Receipts & Parent Title Deeds",
-    detail: "Copy of Greater Chennai Corporation or municipal property tax assessment and registered buy deed.",
+    label: "GCC / City Tax Receipts & Parent Title Deeds",
+    detail: "Copy of Greater Chennai City Board or city asset tax assessment and filed buy deed.",
     checked: false,
   },
 ];
@@ -257,11 +257,11 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 58 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Tamil Nadu: Succession &amp; Probate
+                Will Drafting Services in Tamil Nadu: Estate &amp; Probate
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will in Tamil Nadu. We cover Chennai flats, Coimbatore businesses, and family Patta lands. Benefit from lawyer drafting, TNREGINET registration guidance, and Madras High Court probate advice.
+                Draft a legally valid Will in Tamil Nadu. We cover Chennai flats, Coimbatore businesses, and family Patta lands. Benefit from lawyer drafting, TNREGINET filing guidance, and Madras High Court probate advice.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -316,7 +316,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Tamil Nadu Urban &amp; Rural Succession Blueprint
+                  Tamil Nadu Urban &amp; Rural Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -474,20 +474,20 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>EXECUTIVE SUMMARY</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-4">
-                  Key Highlights: Will Making &amp; Registration in Tamil Nadu
+                  Key Highlights: Will Making &amp; Filing in Tamil Nadu
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
-                  Tamil Nadu has clear succession rules. Probate is needed only within Chennai municipal limits. For the rest of the state, probate is strictly optional. Registering your Will on TNREGINET creates permanent government records. This ensures smooth Patta name changes on the Tamil Nilam portal without family fights.
+                  Tamil Nadu has clear estate rules. Probate is needed only within Chennai city limits. For the rest of the state, probate is strictly a choice. Registering your Will on TNREGINET creates permanent government records. This ensures smooth Patta name changes on the Tamil Nilam portal without family fights.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>TNREGINET Book III Registration</span>
+                      <span>TNREGINET Book III Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration at a Tamil Nadu SRO prevents forgery allegations and title fights.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. While an plain Will signed before two witnesses is valid, official Book III filing at a Tamil Nadu SRO prevents forgery allegations and title fights.
                     </p>
                   </div>
 
@@ -497,7 +497,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       <span>Madras HC Probate Nuances</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Probate is needed under Section 213 ISA only within the historic ordinary original civil area of Chennai municipal limits. For assets across all other 37 districts of Tamil Nadu, probate is non-needed.
+                      Probate is needed under Section 213 ISA only within the historic ordinary original civil area of Chennai city limits. For assets across all other 37 districts of Tamil Nadu, probate is non-needed.
                     </p>
                   </div>
 
@@ -507,7 +507,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       <span>Zero Tamil Nadu Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from stamp duty across Tamil Nadu. Testators only pay a flat ₹100 registration fee plus ₹100 computer scanning charges at the SRO office via TNREGINET.
+                      Will Wills are completely exempt from stamp duty across Tamil Nadu. Will makers only pay a flat ₹100 filing fee plus ₹100 computer scanning charges at the SRO office via TNREGINET.
                     </p>
                   </div>
 
@@ -517,7 +517,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       <span>Tamil Nilam e-Patta Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables swift revenue record name change on the Tamil Nilam portal (eservices.tn.gov.in). Heirs secure updated Patta, Chitta, and TSLR records through local e-Sevai centers without delays.
+                      A filed Will enables swift revenue record name change on the Tamil Nilam portal (eservices.tn.gov.in). Heirs secure updated Patta, Chitta, and TSLR records through local e-Sevai centers without delays.
                     </p>
                   </div>
                 </div>
@@ -535,10 +535,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Tamil Nadu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Three primary laws govern Will drafting in Tamil Nadu. These include the Indian Succession Act, the Registration Act, and the Tamil Nadu Patta Pass Book Act. Any adult of sound mind can legally bequeath personal assets, farmlands, and business assets.
+                  Three primary laws govern Will drafting in Tamil Nadu. These include the Indian Succession Act, the Filing Act, and the Tamil Nadu Patta Pass Book Act. Any adult of sound mind can legally bequeath personal assets, farmlands, and business assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Tamil Nadu families often hold diverse assets. These include Chennai flats, Coimbatore industrial units, Tiruppur textile firms, and rural farmlands with e-Pattas. A clear legal Will prevents painful succession fights between legal heirs.
+                  Tamil Nadu families often hold diverse assets. These include Chennai flats, Coimbatore plant units, Tiruppur textile firms, and rural farmlands with e-Pattas. A clear legal Will prevents painful estate fights between legal heirs.
                 </p>
               </div>
 
@@ -549,7 +549,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59 ISA).
+                    The Will maker must be a major aged 18 years or older with sound Will mental capacity (Section 59 ISA).
                   </p>
                 </div>
 
@@ -579,7 +579,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67 ISA).
+                    Witnesses and their spouses must not receive any legacy or asset under the Will (Section 67 ISA).
                   </p>
                 </div>
               </div>
@@ -593,13 +593,13 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Tamil Nadu?
+                  2. Is Will Filing Needed in Tamil Nadu?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is valid and legally enforceable.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will Will is strictly <strong>a choice</strong>. An plain Will signed on standard white paper before two independent witnesses is valid and legally enforceable.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Even so, registering your Will on TNREGINET provides major legal advantages. The document enters permanent Book III custody. This blocks false claims of forged signatures and speeds up property transfers with local municipal bodies and banks.
+                  Even so, registering your Will on TNREGINET provides major legal advantages. The paper enters permanent Book III custody. This blocks false claims of forged signatures and speeds up asset transfers with local city bodies and banks.
                 </p>
               </div>
 
@@ -608,9 +608,9 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (TNREGINET SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (TNREGINET SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -630,14 +630,14 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Tahsildars often demand indemnity bonds and NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GCC Municipal Tax Transfer</td>
+                      <td className="p-4 font-semibold">GCC City Tax Transfer</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer of assessment records</td>
-                      <td className="p-4 bg-slate-50/20">Corporation officials often insist on court orders</td>
+                      <td className="p-4 bg-slate-50/20">City Board officials often insist on court orders</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Bank Locker &amp; Asset Claim</td>
                       <td className="p-4 bg-rose-50/20">Accepted by nationalized and private banks</td>
-                      <td className="p-4 bg-slate-50/20">Banks often demand succession papers</td>
+                      <td className="p-4 bg-slate-50/20">Banks often demand estate papers</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Government Fee</td>
@@ -660,7 +660,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   3. Madras High Court Probate Rules: Section 213 ISA
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession law in Tamil Nadu has an important geographic rule. Whether you need probate depends on where the property is located.
+                  Estate law in Tamil Nadu has an important geographic rule. Whether you need probate depends on where the asset is located.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Section 213 of the Indian Succession Act sets the legal rules. Under Section 57, probate is needed only for assets in historic presidency towns. Chennai is one of India&apos;s three presidency towns alongside Mumbai and Kolkata.
@@ -688,13 +688,13 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Optional: Rest of Tamil Nadu
+                    A Choice: Rest of Tamil Nadu
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Assets Outside Chennai (Coimbatore, Madurai, Trichy)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Madras High Court has ruled clearly on this issue. Section 213 does not apply outside Chennai presidency limits. Assets in Coimbatore, Madurai, Trichy, Salem, and other districts do not require probate. A registered Will is fully valid for direct title transfer.
+                    The Madras High Court has ruled clearly on this issue. Section 213 does not apply outside Chennai presidency limits. Assets in Coimbatore, Madurai, Trichy, Salem, and other districts do not require probate. A filed Will is fully valid for direct title transfer.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -715,7 +715,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   4. Tamil Nadu SRO Directory &amp; TNREGINET Slot Booking
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 32 of the Registration Act, you can register your Will locally. Choose the SRO office where you reside or where your property is situated. You can book time slots online using the TNREGINET portal.
+                  Under Section 32 of the Filing Act, you can register your Will locally. Choose the SRO office where you reside or where your asset is situated. You can book time slots online using the TNREGINET portal.
                 </p>
               </div>
 
@@ -761,7 +761,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Tamil Nadu Registration Zone
+                        Tamil Nadu Filing Zone
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -820,7 +820,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting Across Tamil Nadu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Tamil Nadu has vibrant shop and home hubs. Our legal team provides Will drafting, TNREGINET appointment scheduling, and Sub-Registrar accompaniment across all primary cities:
+                  Tamil Nadu has vibrant shop and home hubs. Our legal team provides Will drafting, TNREGINET appointment scheduling, and SRO accompaniment across all primary cities:
                 </p>
               </div>
 
@@ -850,7 +850,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Chennai</strong> for Corporation flats, CMDA layouts, and family homes. Addresses Section 213 Madras High Court probate rules, undivided land share allocations, and mutual fund bequests.
+                      Specialized <strong>Will drafting services in Chennai</strong> for City Board flats, CMDA layouts, and family homes. Addresses Section 213 Madras High Court probate rules, undivided land share allocations, and mutual fund bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -859,7 +859,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Saidapet, Anna Nagar &amp; Periamet</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        TNREGINET token booking, Madras High Court probate petition support, and Section 31 doorstep registration for senior residents.
+                        TNREGINET token booking, Madras High Court probate petition support, and Section 31 doorstep filing for senior residents.
                       </p>
                     </div>
                   </div>
@@ -884,7 +884,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; Textile Hub
+                        Plant &amp; Textile Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Coimbatore Joint 1 &amp; 2
@@ -903,7 +903,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Coimbatore</strong> for textile mills, engineering MSMEs, and home villas. Because Coimbatore lies outside Chennai presidency limits, probate is optional. A registered Will enables direct Patta transfer.
+                      Customized <strong>Will drafting in Coimbatore</strong> for textile mills, engineering MSMEs, and home villas. Because Coimbatore lies outside Chennai presidency limits, probate is a choice. A filed Will enables direct Patta transfer.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -912,7 +912,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate Campus</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online slot reservations on TNREGINET, lawyer representation, and business succession planning for industrial entrepreneurs.
+                        Online slot reservations on TNREGINET, lawyer representation, and business estate planning for plant entrepreneurs.
                       </p>
                     </div>
                   </div>
@@ -956,7 +956,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Structured <strong>Will drafting in Madurai</strong> protecting shop shops, trading businesses, and home plots in KK Nagar. Prevents family split fights and simplifies municipal tax name change with Madurai Corporation.
+                      Structured <strong>Will drafting in Madurai</strong> protecting shop shops, trading businesses, and home plots in KK Nagar. Prevents family split fights and simplifies city tax name change with Madurai City Board.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -965,7 +965,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mahal Vadampokki Street</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Registration token generation, lawyer witnessing, and doorstep signing for senior citizens across Madurai district.
+                        Filing token generation, lawyer witnessing, and doorstep signing for senior citizens across Madurai district.
                       </p>
                     </div>
                   </div>
@@ -1018,7 +1018,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Combined Court Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Cantonment court complex registration support, witness coordination, and Tamil Nilam online record synchronization.
+                        Cantonment court complex filing support, witness coordination, and Tamil Nilam online record synchronization.
                       </p>
                     </div>
                   </div>
@@ -1043,7 +1043,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; Mining Belt
+                        Plant &amp; Mining Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Salem West
@@ -1062,7 +1062,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting in Salem</strong> for sago mills, textile enterprises, and Fairlands home houses. Clarifies business shares and makes municipal tax transfer fast and hassle-free.
+                      Full <strong>Will drafting in Salem</strong> for sago mills, textile enterprises, and Fairlands home houses. Clarifies business shares and makes city tax transfer fast and hassle-free.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1168,13 +1168,13 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting in Erode</strong> for turmeric trading firms, powerloom weaving businesses, and home plots. Handles family HUF property allocations alongside individual assets to prevent future court fights.
+                      Focused <strong>Will drafting in Erode</strong> for turmeric trading firms, powerloom weaving businesses, and home plots. Handles family HUF asset allocations alongside single assets to prevent future court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Perundurai Road Registration Office</span>
+                        <span>SRO Hub: Perundurai Road Filing Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         TNREGINET slot management, Tamil Nilam Chitta extract integration, and senior lawyer talk.
@@ -1221,7 +1221,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Professional <strong>Will drafting in Vellore and Ranipet</strong> for doctors, professors, and leather business owners. Ensures direct SIPCOT industrial leasehold transfers and swift municipal tax record updates.
+                      Professional <strong>Will drafting in Vellore and Ranipet</strong> for doctors, professors, and leather business owners. Ensures direct SIPCOT plant leasehold transfers and swift city tax record updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1230,7 +1230,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Katpadi Road SRO Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online appointment coordination, witness attestation help, and Section 31 home visits for elderly testators.
+                        Online appointment coordination, witness witness signing help, and Section 31 home visits for elderly Will makers.
                       </p>
                     </div>
                   </div>
@@ -1259,10 +1259,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to SRO Registration
+                  6. Step-by-Step SOP: Will Drafting to SRO Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Tamil Nadu:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Tamil Nadu:
                 </p>
               </div>
 
@@ -1318,7 +1318,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       TNREGINET Token
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your registration token on tnreginet.gov.in and remit the flat ₹100 registration fee plus scanning charges online.
+                      Schedule your filing token on tnreginet.gov.in and remit the flat ₹100 filing fee plus scanning charges online.
                     </p>
                   </div>
                 </div>
@@ -1347,23 +1347,23 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Seniors
+                  7. Section 31 Doorstep SRO Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing across Chennai, Coimbatore, or rural districts, traveling to the SRO office can be physically demanding. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing across Chennai, Coimbatore, or rural districts, traveling to the SRO office can be physically demanding. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates in Tamil Nadu:
+                  How Doorstep SRO Filing Operates in Tamil Nadu:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound testamentary mind but medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound Will mind but medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1371,7 +1371,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the jurisdictional Tamil Nadu Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the local Tamil Nadu SRO.</span>
                     </div>
                   </div>
 
@@ -1387,7 +1387,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric thumb scanners and webcams to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric thumb scanners and webcams to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1402,10 +1402,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Tamil Nadu Sub-Registrars
+                  8. Paper Checklist for Tamil Nadu Sub-Registrars
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1450,10 +1450,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Tamil Nadu Property Types: GCC, Patta &amp; Farmland
+                  9. Tamil Nadu Asset Types: GCC, Patta &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Tamil Nadu depend heavily on the classification of the property title and the governing office body:
+                  Estate steps in Tamil Nadu depend heavily on the classification of the asset title and the governing office body:
                 </p>
               </div>
 
@@ -1466,7 +1466,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     GCC Flats &amp; CMDA Layouts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For apartments in Chennai and Coimbatore, explicit bequeathal of undivided land share is essential. Registered Wills facilitate instant property tax assessment name substitution with Greater Chennai Corporation.
+                    For apartments in Chennai and Coimbatore, explicit bequeathal of undivided land share is essential. Filed Wills facilitate instant asset tax assessment name substitution with Greater Chennai City Board.
                   </p>
                 </div>
 
@@ -1478,19 +1478,19 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     Tamil Nilam Patta &amp; Chitta
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland and home plots across Madurai, Trichy, and Thanjavur demand precise survey numbers. A registered Will allows the Zonal Deputy Tahsildar to update the digital Patta passbook without family objections.
+                    Farmland and home plots across Madurai, Trichy, and Thanjavur demand precise survey numbers. A filed Will allows the Zonal Deputy Tahsildar to update the digital Patta passbook without family objections.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Industrial Enterprises
+                    Plant Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    SIDCO &amp; SIPCOT Industrial Units
+                    SIDCO &amp; SIPCOT Plant Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For factory plots in Ambattur, Guindy, or Ranipet SIPCOT, leasehold succession is critical. Clearly bequeath lease rights, partner capital, and plant machinery to prevent operational freeze.
+                    For factory plots in Ambattur, Guindy, or Ranipet SIPCOT, leasehold estate is critical. Clearly bequeath lease rights, partner capital, and plant machinery to prevent operational freeze.
                   </p>
                 </div>
               </div>
@@ -1504,10 +1504,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. TNREGINET Registration Fees &amp; Stamp Duty Rules
+                  10. TNREGINET Filing Fees &amp; Stamp Duty Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale deeds or gift deeds that attract up to 7% stamp duty in Tamil Nadu, testamentary Wills are completely exempt from stamp duty. Government charges are purely nominal:
+                  Unlike shop sale deeds or gift deeds that attract up to 7% stamp duty in Tamil Nadu, Will Wills are completely exempt from stamp duty. Government charges are purely nominal:
                 </p>
               </div>
 
@@ -1517,7 +1517,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1527,14 +1527,14 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Tamil Nadu</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">TNREGINET Portal (tnreginet.gov.in)</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Service Charges</td>
                       <td className="p-4 font-bold">₹100</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1557,7 +1557,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Tamil Nadu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Tamil Nadu:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in Tamil Nadu:
                 </p>
               </div>
 
@@ -1575,12 +1575,12 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with GCC flats, bank deposits, and demat assets.
+                      Ideal for single homeowners with GCC flats, bank deposits, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Tamil Nadu Will creator</span>
+                        <span>Free Tamil Nadu Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1651,13 +1651,13 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Tamil Nadu SRO office or home visit.
+                      End-to-end filing coordination across any Tamil Nadu SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1698,7 +1698,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Tamil Nadu Will Drafting
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting, probate, and property registration in Tamil Nadu:
+                  Clear, authoritative answers to common legal questions regarding Will drafting, probate, and asset filing in Tamil Nadu:
                 </p>
               </div>
 
@@ -1742,7 +1742,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Tamil Nadu Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Tamil Nadu state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Tamil Nadu state filing systems:
                 </p>
               </div>
 
@@ -1758,10 +1758,10 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1770,7 +1770,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     Tamil Nadu Stamp Act
                   </span>
                   <p className="text-xs text-slate-600">
-                    Schedule I Exemption (100% Stamp Duty Exemption for Testamentary Wills).
+                    Schedule I Exemption (100% Stamp Duty Exemption for Will Wills).
                   </p>
                 </div>
 
@@ -1779,7 +1779,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     TNREGINET Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official e-registration portal: <code>tnreginet.gov.in</code> &amp; Tamil Nilam.
+                    Official e-filing portal: <code>tnreginet.gov.in</code> &amp; Tamil Nilam.
                   </p>
                 </div>
               </div>
@@ -1791,7 +1791,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                 Protect Your Tamil Nadu Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Chennai flats, Coimbatore businesses, or family Patta lands to inheritance court fights. Draft a legally binding Will online today or consult our senior Madras High Court lawyers.
+                Do not leave your hard-earned Chennai flats, Coimbatore businesses, or family Patta lands to estate court fights. Draft a legally binding Will online today or consult our senior Madras High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/start"
@@ -1808,7 +1808,29 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1827,7 +1849,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Tamil Nadu Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Tamil Nadu Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1846,7 +1868,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Tamil Nadu TNREGINET Registered &amp; Tamil Nilam Name Change Compliant</span>
+              <span>Tamil Nadu TNREGINET Filed &amp; Tamil Nilam Name Change Compliant</span>
               <Link href="/start"
                 onClick={(e) => {
                   setShowHighResModal(false);

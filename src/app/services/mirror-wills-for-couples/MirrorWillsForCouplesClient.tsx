@@ -77,7 +77,7 @@ CLAUSE 5: FULL RIGHT TO CHANGE THIS WILL
 export default function MirrorWillsForCouplesClient() {
   const router = useRouter();
   const { data: session } = useSession();
-  const [activeId, setActiveId] = useState<string>("statutory-distinction");
+  const [activeId, setActiveId] = useState<string>("legal-distinction");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [copiedSample, setCopiedSample] = useState(false);
   const [showHighResModal, setShowHighResModal] = useState(false);
@@ -233,10 +233,10 @@ export default function MirrorWillsForCouplesClient() {
             <div className="bg-white rounded-2xl border border-slate-200/80 p-4 shadow-xs">
               <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="mt-1 text-[11px] text-slate-500 leading-relaxed">
-                Complies with Sections 59, 62, 63 &amp; 67 of the Indian Succession Act, 1925 and Section 18 of the Registration Act, 1908.
+                Complies with Sections 59, 62, 63 &amp; 67 of the Indian Succession Act, 1925 and Section 18 of the Filing Act, 1908.
               </p>
             </div>
           </aside>
@@ -257,13 +257,13 @@ export default function MirrorWillsForCouplesClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Two Separate Legal Papers:</strong> Mirror wills use two separate documents. Each spouse signs their own will. The terms match and protect the family.
+                    <strong>Two Separate Legal Papers:</strong> Mirror wills use two separate papers. Each spouse signs their own will. The terms match and protect the family.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Avoids Joint Will Disputes:</strong> A single joint will is very risky in India. Land registry offices often reject them. Courts find them hard to settle.
+                    <strong>Avoids Joint Will Fights:</strong> A single joint will is very risky in India. Land registry offices often reject them. Courts find them hard to settle.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -294,17 +294,17 @@ export default function MirrorWillsForCouplesClient() {
                 <span>LEGAL FRAMEWORK</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                1. Statutory Distinction: Mirror Wills vs Risky Joint Wills
+                1. Legal Distinction: Mirror Wills vs Risky Joint Wills
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many married couples in India ask if they can sign one single will together.
-                A single document may sound easy, but Indian law treats joint wills with great caution.
+                A single paper may sound easy, but Indian law treats joint wills with great caution.
                 Most top estate lawyers advise couples to use mirror wills instead.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Under the Indian Succession Act, 1925, a will declares how one person wants their property distributed after death.
+                Under the Indian Succession Act, 1925, a will declares how one person wants their asset distributed after death.
                 With mirror wills, the husband signs his own will, and the wife signs hers.
-                The main terms match. Each spouse leaves their property to the other.
+                The main terms match. Each spouse leaves their asset to the other.
                 When the second spouse dies, all assets pass to the children.
               </p>
               <div className="bg-rose-50/70 border border-[#C65378]/30 rounded-2xl p-5 text-xs sm:text-sm text-slate-800 leading-relaxed">
@@ -328,12 +328,12 @@ export default function MirrorWillsForCouplesClient() {
                 <span>PORTFOLIO ALLOCATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Asset Protection Matrix: Representative Couple Estate Plan
+                2. Asset Protection Matrix: Agent Couple Estate Plan
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Most modern Indian families own many kinds of assets.
                 These include joint flats, single bank accounts, mutual funds, and gold.
-                The table below shows how mirror wills protect family property.
+                The table below shows how mirror wills protect family asset.
               </p>
 
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs bg-white">
@@ -358,7 +358,7 @@ export default function MirrorWillsForCouplesClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Shares &amp; Mutual Funds</td>
                         <td className="py-3 px-4">Single Name of Spouse</td>
                         <td className="py-3 px-4 text-rose-600 font-medium">Nominee only holds funds; other heirs can sue</td>
-                        <td className="py-3 px-4 text-emerald-700 font-medium">Given directly to spouse with zero dispute</td>
+                        <td className="py-3 px-4 text-emerald-700 font-medium">Given directly to spouse with zero fight</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Bank Fixed Deposits</td>
@@ -374,7 +374,7 @@ export default function MirrorWillsForCouplesClient() {
                       </tr>
                       <tr className="bg-slate-50/90 font-bold text-slate-900">
                         <td className="py-3.5 px-4" colSpan={2}>Overall Family Protection</td>
-                        <td className="py-3.5 px-4 text-rose-600">High Risk of Family Disputes</td>
+                        <td className="py-3.5 px-4 text-rose-600">High Risk of Family Fights</td>
                         <td className="py-3.5 px-4 text-emerald-700">100% Peace of Mind for Both Spouses</td>
                       </tr>
                     </tbody>
@@ -411,10 +411,10 @@ export default function MirrorWillsForCouplesClient() {
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700">
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Number of Documents</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Number of Papers</td>
                         <td className="py-3 px-4 text-emerald-700 font-semibold">Two separate wills</td>
-                        <td className="py-3 px-4 text-rose-600">One single document for both</td>
-                        <td className="py-3 px-4 text-slate-600">One or two documents</td>
+                        <td className="py-3 px-4 text-rose-600">One single paper for both</td>
+                        <td className="py-3 px-4 text-slate-600">One or two papers</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Right to Change During Life</td>
@@ -435,8 +435,8 @@ export default function MirrorWillsForCouplesClient() {
                         <td className="py-3 px-4 text-amber-700">Often challenged by other heirs</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Registration at SRO</td>
-                        <td className="py-3 px-4 text-emerald-700 font-semibold">Easy; registered per person</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Filing at SRO</td>
+                        <td className="py-3 px-4 text-emerald-700 font-semibold">Easy; filed per person</td>
                         <td className="py-3 px-4 text-rose-600 font-medium">Registry offices often object</td>
                         <td className="py-3 px-4 text-slate-600">Requires complex contract terms</td>
                       </tr>
@@ -444,7 +444,7 @@ export default function MirrorWillsForCouplesClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Risk of Lawsuits</td>
                         <td className="py-3 px-4 text-emerald-700 font-semibold">Very low; clear legal rules</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">Very high; frequent family suits</td>
-                        <td className="py-3 px-4 text-rose-600 font-semibold">High; costly civil disputes</td>
+                        <td className="py-3 px-4 text-rose-600 font-semibold">High; costly civil fights</td>
                       </tr>
                     </tbody>
                   </table>
@@ -473,13 +473,13 @@ export default function MirrorWillsForCouplesClient() {
                     <span className="w-6 h-6 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center text-xs font-black">
                       1
                     </span>
-                    Sub-Registrar Office Difficulties
+                    SRO office Difficulties
                   </h3>
                   <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                    Under the Registration Act, 1908, wills are filed in Book 3.
+                    Under the Filing Act, 1908, wills are filed in Book 3.
                     Government software systems require a single name for each will.
-                    When two people present one joint document, officers often raise objections.
-                    This can delay or block registration for months.
+                    When two people present one joint paper, officers often raise objections.
+                    This can delay or block filing for months.
                   </p>
                 </div>
 
@@ -494,7 +494,7 @@ export default function MirrorWillsForCouplesClient() {
                     Probate is required by law in cities like Mumbai, Kolkata, and Chennai.
                     When one spouse passes away, the court must decide how to handle a will when the other spouse is still alive.
                     The Supreme Court stated in <em>Kochu Govindan Kaimal v. Gopalan Nair</em> that a joint will works as two separate wills.
-                    Even so, separating joint properties in one paper often leads to years of court delays.
+                    Even so, separating joint assets in one paper often leads to years of court delays.
                   </p>
                 </div>
 
@@ -508,7 +508,7 @@ export default function MirrorWillsForCouplesClient() {
                   <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                     Life changes after a spouse dies.
                     A surviving partner may need to sell a house to pay for hospital care.
-                    A joint will may trap the surviving spouse, making it hard to sell or manage property.
+                    A joint will may trap the surviving spouse, making it hard to sell or manage asset.
                     Relatives might claim the will cannot be changed, leading to painful lawsuits.
                     Mirror wills avoid this problem completely.
                   </p>
@@ -527,7 +527,7 @@ export default function MirrorWillsForCouplesClient() {
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Visualizing the legal structure of Mirror Wills ensures no essential protection is overlooked.
-                Click on the diagram below to inspect the structure, attestation blocks, and clauses in high resolution.
+                Click on the diagram below to inspect the structure, witness signing blocks, and clauses in high resolution.
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
@@ -545,7 +545,7 @@ export default function MirrorWillsForCouplesClient() {
                 </div>
 
                 <div className="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-600">
-                  <span>Figure 1: Standard structure and attestation of coordinated Mirror Wills for couples</span>
+                  <span>Figure 1: Standard structure and witness signing of coordinated Mirror Wills for couples</span>
                   <a
                     href="/images/mirror-wills-for-couples-og.jpg"
                     target="_blank"
@@ -566,7 +566,7 @@ export default function MirrorWillsForCouplesClient() {
                 <span>EXECUTION WORKFLOW</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Step-by-Step SOP: Executing Dual Mirror Wills in India
+                6. Step-by-Step SOP: Signing Dual Mirror Wills in India
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Writing mirror wills requires two steps: matching the plans and signing separate papers.
@@ -581,7 +581,7 @@ export default function MirrorWillsForCouplesClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">List All Your Family Assets</h3>
                     <p className="mt-1 text-sm text-slate-600 leading-relaxed">
-                      Make a list of all your properties and investments.
+                      Make a list of all your assets and investments.
                       Include home deed numbers, bank accounts, mutual funds, and shares.
                       Write down all existing nominee names.
                     </p>
@@ -610,7 +610,7 @@ export default function MirrorWillsForCouplesClient() {
                     <h3 className="text-base font-bold text-slate-900">Draft Two Separate Wills</h3>
                     <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                       Prepare one will for the husband and one for the wife.
-                      Each will gives property to the surviving spouse first.
+                      Each will gives asset to the surviving spouse first.
                       Both wills must state that each person keeps the right to change their own will.
                     </p>
                   </div>
@@ -624,7 +624,7 @@ export default function MirrorWillsForCouplesClient() {
                     <h3 className="text-base font-bold text-slate-900">Pick Two Independent Witnesses</h3>
                     <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                       Choose two adults who are not getting anything from the will.
-                      Under Section 67 of the law, a beneficiary cannot be a witness.
+                      Under Section 67 of the law, a heir cannot be a witness.
                       You can use the same two witnesses for both wills, but sign each will separately.
                     </p>
                   </div>
@@ -639,7 +639,7 @@ export default function MirrorWillsForCouplesClient() {
                     <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                       Print both wills on clean white A4 paper. Stamp paper is not required in India.
                       Each spouse signs every page while the two witnesses watch.
-                      Then, both witnesses sign the attestation block.
+                      Then, both witnesses sign the witness signing block.
                     </p>
                   </div>
                 </div>
@@ -651,8 +651,8 @@ export default function MirrorWillsForCouplesClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">Register and Keep in Safe Custody</h3>
                     <p className="mt-1 text-sm text-slate-600 leading-relaxed">
-                      Registration is optional under Section 18 of the Registration Act, but it adds safety.
-                      Both spouses can register their wills at the local Sub-Registrar office.
+                      Filing is a choice under Section 18 of the Filing Act, but it adds safety.
+                      Both spouses can register their wills at the local SRO office.
                       Store the signed originals in a bank locker and share copies with your executor.
                     </p>
                   </div>
@@ -682,7 +682,7 @@ export default function MirrorWillsForCouplesClient() {
                   <h3 className="text-base font-bold text-slate-900">30-Day Survival Clause</h3>
                   <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
                     This clause states that your spouse must live for 30 days after your death to inherit.
-                    If both die in the same accident, property goes right to the children.
+                    If both die in the same accident, asset goes right to the children.
                     This avoids double probate fees and double stamp duty.
                   </p>
                 </div>
@@ -716,7 +716,7 @@ export default function MirrorWillsForCouplesClient() {
                   <h3 className="text-base font-bold text-slate-900">Access to Digital Assets</h3>
                   <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
                     This gives your spouse or executor the legal right to access bank apps, demat accounts, and email.
-                    It helps your family manage your accounts without long legal disputes.
+                    It helps your family manage your accounts without long legal fights.
                   </p>
                 </div>
               </div>
@@ -759,11 +759,11 @@ export default function MirrorWillsForCouplesClient() {
                 <span>RISK MANAGEMENT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                8. Statutory Risk Matrix: Blended Families &amp; Inherited Assets
+                8. Legal Risk Matrix: Blended Families &amp; Inherited Assets
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Standard mirror wills work great when both spouses have the same children.
-                However, for blended families or ancestral property, you need extra care.
+                However, for blended families or family asset, you need extra care.
                 The table below outlines common risks and their legal fixes.
               </p>
 
@@ -789,13 +789,13 @@ export default function MirrorWillsForCouplesClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Blended Family with Stepchildren</td>
                         <td className="py-3 px-4 text-rose-600 font-bold">High Risk</td>
                         <td className="py-3 px-4">Surviving spouse could change will and exclude stepkids</td>
-                        <td className="py-3 px-4 text-slate-900 font-medium">Life-interest will: spouse gets income, kids get property</td>
+                        <td className="py-3 px-4 text-slate-900 font-medium">Life-interest will: spouse gets income, kids get asset</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Ancestral Family Property</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Family Family Asset</td>
                         <td className="py-3 px-4 text-amber-700 font-bold">High Risk</td>
                         <td className="py-3 px-4">Cannot gift undivided family land by will</td>
-                        <td className="py-3 px-4 text-slate-900 font-medium">Include only self-acquired property and your own share</td>
+                        <td className="py-3 px-4 text-slate-900 font-medium">Include only self-acquired asset and your own share</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Family Business or Startup</td>
@@ -816,7 +816,7 @@ export default function MirrorWillsForCouplesClient() {
                 <span>SUCCESSION TIMELINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                9. Procedural Timeline: First Death to Final Asset Distribution
+                9. Procedural Timeline: First Death to Final Asset Split
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Knowing how mirror wills work over time gives couples peace of mind.
@@ -831,26 +831,26 @@ export default function MirrorWillsForCouplesClient() {
                         <th className="py-3 px-4 font-bold">Stage</th>
                         <th className="py-3 px-4 font-bold">What Happens</th>
                         <th className="py-3 px-4 font-bold">Legal Action Needed</th>
-                        <th className="py-3 px-4 font-bold">Property Status</th>
+                        <th className="py-3 px-4 font-bold">Asset Status</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700">
                       <tr className="bg-blue-50/40">
                         <td className="py-3 px-4 font-mono font-bold text-blue-900">STAGE 1</td>
                         <td className="py-3 px-4 font-medium">Both Spouses Alive</td>
-                        <td className="py-3 px-4">Sign wills before 2 witnesses; optional SRO visit</td>
+                        <td className="py-3 px-4">Sign wills before 2 witnesses; a choice SRO visit</td>
                         <td className="py-3 px-4 text-emerald-700 font-semibold">100% Owned by Spouses</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-mono font-bold text-slate-800">STAGE 2</td>
                         <td className="py-3 px-4 font-medium">First Spouse Dies</td>
-                        <td className="py-3 px-4">Get death certificate; inform banks and societies</td>
+                        <td className="py-3 px-4">Get death paper; inform banks and societies</td>
                         <td className="py-3 px-4 text-slate-600">30-day survival clock starts</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-mono font-bold text-slate-800">STAGE 3</td>
                         <td className="py-3 px-4 font-medium">Day 31 After Demise</td>
-                        <td className="py-3 px-4">Surviving spouse claims full property using will</td>
+                        <td className="py-3 px-4">Surviving spouse claims full asset using will</td>
                         <td className="py-3 px-4 text-emerald-700 font-semibold">Transfers to Survivor</td>
                       </tr>
                       <tr className="bg-amber-50/50">
@@ -863,7 +863,7 @@ export default function MirrorWillsForCouplesClient() {
                         <td className="py-3 px-4 font-mono font-bold text-slate-800">STAGE 5</td>
                         <td className="py-3 px-4 font-medium">Second Spouse Dies</td>
                         <td className="py-3 px-4">Executor steps in; fallback clauses take effect</td>
-                        <td className="py-3 px-4 text-blue-700 font-medium">Ready for Distribution</td>
+                        <td className="py-3 px-4 text-blue-700 font-medium">Ready for Split</td>
                       </tr>
                       <tr className="bg-emerald-50/40">
                         <td className="py-3 px-4 font-mono font-bold text-emerald-900">STAGE 6</td>
@@ -949,7 +949,7 @@ export default function MirrorWillsForCouplesClient() {
                 <span>PLANS &amp; PRICING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                11. AMA Couple Will Service: Advocate Drafting &amp; Transparent Fees
+                11. AMA Couple Will Service: Lawyer Drafting &amp; Transparent Fees
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 We offer clear, fixed pricing with no hidden charges.
@@ -961,7 +961,7 @@ export default function MirrorWillsForCouplesClient() {
                 <div className="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between shadow-xs">
                   <div>
                     <span className="text-xs font-black uppercase tracking-wider text-[#55636D]">Tier 1</span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-1">Auto Verified</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1">Auto Checked</h3>
                     <div className="mt-4 mb-4">
                       <span className="text-3xl font-extrabold text-[#172228]">₹2,490</span>
                       <span className="text-xs text-slate-500 block mt-1">One-time &bull; Print Ready</span>
@@ -969,7 +969,7 @@ export default function MirrorWillsForCouplesClient() {
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant statutory plain-paper draft</span>
+                        <span>Instant legal plain-paper draft</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -981,7 +981,7 @@ export default function MirrorWillsForCouplesClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Couple execution checklist</span>
+                        <span>Couple signing checklist</span>
                       </li>
                     </ul>
                   </div>
@@ -1001,15 +1001,15 @@ export default function MirrorWillsForCouplesClient() {
                   </div>
                   <div>
                     <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">Tier 2</span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-1">Lawyer Verified</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1">Lawyer Checked</h3>
                     <div className="mt-4 mb-4">
                       <span className="text-3xl font-extrabold text-[#172228]">₹4,990</span>
-                      <span className="text-xs text-slate-500 block mt-1">High Court Advocate Review</span>
+                      <span className="text-xs text-slate-500 block mt-1">High Court Lawyer Review</span>
                     </div>
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Dual Will vetting by succession counsel</span>
+                        <span>Dual Will vetting by estate counsel</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1021,7 +1021,7 @@ export default function MirrorWillsForCouplesClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Priority advocate email support</span>
+                        <span>Priority lawyer email support</span>
                       </li>
                     </ul>
                   </div>
@@ -1030,7 +1030,7 @@ export default function MirrorWillsForCouplesClient() {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white font-bold text-xs text-center hover:bg-[#a13c5d] transition-all cursor-pointer shadow-sm"
                   >
-                    Select Lawyer Verified
+                    Select Lawyer Checked
                   </a>
                 </div>
 
@@ -1050,7 +1050,7 @@ export default function MirrorWillsForCouplesClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Multi-property &amp; cross-border asset structuring</span>
+                        <span>Multi-asset &amp; cross-border asset structuring</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1090,19 +1090,19 @@ export default function MirrorWillsForCouplesClient() {
                 {[
                   {
                     q: "What is the difference between a Mirror Will and a Joint Will in India?",
-                    a: "A Mirror Will is made up of two separate documents: one for the husband and one for the wife. Each spouse leaves their assets to the other, and then to their children. A Joint Will is a single piece of paper signed by both spouses together. In India, lawyers strongly advise against Joint Wills because if one spouse passes away, the survivor cannot easily update the Will or sell property without court battles. Two separate Mirror Wills give both spouses complete peace of mind.",
+                    a: "A Mirror Will is made up of two separate papers: one for the husband and one for the wife. Each spouse leaves their assets to the other, and then to their children. A Joint Will is a single piece of paper signed by both spouses together. In India, lawyers strongly advise against Joint Wills because if one spouse passes away, the survivor cannot easily update the Will or sell asset without court battles. Two separate Mirror Wills give both spouses complete peace of mind.",
                   },
                   {
                     q: "Are Joint Wills legal in India, and why are they risky?",
-                    a: "While Joint Wills are technically recognized by courts, they cause major practical nightmares. If one spouse dies, sub-registrars and banks often freeze transfers because the document belongs to two people. Furthermore, if the surviving spouse later needs to sell a house to pay for medical care, they may be blocked by relatives claiming the joint will cannot be changed.",
+                    a: "While Joint Wills are technically recognized by courts, they cause major practical nightmares. If one spouse dies, sub-registrars and banks often freeze transfers because the paper belongs to two people. Also, if the surviving spouse later needs to sell a house to pay for medical care, they may be blocked by relatives claiming the joint will cannot be changed.",
                   },
                   {
                     q: "Can a surviving spouse change their Mirror Will after the first spouse dies?",
-                    a: "Yes. Under Section 62 of the Indian Succession Act, every person has the legal right to update or change their own Will during their lifetime. Because Mirror Wills are two separate documents, the surviving spouse can freely adapt their Will to new life circumstances (such as helping a child buy a house or handling medical needs).",
+                    a: "Yes. Under Section 62 of the Indian Succession Act, every person has the legal right to update or change their own Will during their lifetime. Because Mirror Wills are two separate papers, the surviving spouse can freely adapt their Will to new life circumstances (such as helping a child buy a house or handling medical needs).",
                   },
                   {
                     q: "What is a 30-day survivorship clause and why is it important?",
-                    a: "A 30-day survivorship clause says that your spouse must survive you by at least 30 days to inherit your property. If both husband and wife unfortunately pass away together or within days in a common car or flight accident, your property passes straight to your children, completely avoiding double court cases, double stamp duty, and unnecessary delays.",
+                    a: "A 30-day survivorship clause says that your spouse must survive you by at least 30 days to inherit your asset. If both husband and wife unfortunately pass away together or within days in a common car or flight accident, your asset passes straight to your children, completely avoiding double court cases, double stamp duty, and unnecessary delays.",
                   },
                   {
                     q: "How do Mirror Wills protect young children under 18?",
@@ -1110,11 +1110,11 @@ export default function MirrorWillsForCouplesClient() {
                   },
                   {
                     q: "Do husband and wife need separate witnesses or the same witnesses?",
-                    a: "You can use the exact same two trusted adult witnesses (such as family friends or neighbors). However, husband and wife each sign their own separate document in front of both witnesses. Remember: neither spouse nor any of your children can act as a witness (Section 67).",
+                    a: "You can use the exact same two trusted adult witnesses (such as family friends or neighbors). However, husband and wife each sign their own separate paper in front of both witnesses. Remember: neither spouse nor any of your children can act as a witness (Section 67).",
                   },
                   {
-                    q: "Do Mirror Wills have to be registered at the Sub-Registrar Office?",
-                    a: "No, registering a Will is optional under Section 18(e) of the Registration Act, 1908. A Will written on plain white paper with two witnesses is 100% legally valid. However, registering both Wills at the local Sub-Registrar Office provides permanent government proof that neither spouse was pressured or forced.",
+                    q: "Do Mirror Wills have to be filed at the SRO office?",
+                    a: "No, registering a Will is a choice under Section 18(e) of the Filing Act, 1908. A Will written on plain white paper with two witnesses is 100% legally valid. However, registering both Wills at the local SRO office provides permanent government proof that neither spouse was pressured or forced.",
                   },
                   {
                     q: "What happens if a couple gets divorced after making Mirror Wills?",
@@ -1165,7 +1165,7 @@ export default function MirrorWillsForCouplesClient() {
                 <span>LEGAL CITATIONS &amp; VERIFIED SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                13. Statutory Authority Citations &amp; Official Judicial Precedents
+                13. Legal Office Citations &amp; Official Judicial Precedents
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 This legal analysis is grounded in codified Indian succession statutes and binding Supreme Court decisions:
@@ -1175,15 +1175,15 @@ export default function MirrorWillsForCouplesClient() {
                 <div className="p-3 bg-white rounded-xl border border-slate-200">
                   <strong className="text-slate-900">Indian Succession Act, 1925:</strong>
                   <span className="block mt-0.5">
-                    Section 59 (Testamentary capacity of adult persons of sound mind); Section 60 (Testamentary guardianship);
-                    Section 62 (Statutory revocability and alteration of Wills during life); Section 63 (Mandatory execution before two witnesses);
-                    Section 67 (Disqualification of beneficiary witnesses); Section 70 (Methods of revocation).
+                    Section 59 (Will capacity of adult persons of sound mind); Section 60 (Will child care);
+                    Section 62 (Legal revocability and alteration of Wills during life); Section 63 (Needed signing before two witnesses);
+                    Section 67 (Disqualification of heir witnesses); Section 70 (Methods of revocation).
                   </span>
                 </div>
                 <div className="p-3 bg-white rounded-xl border border-slate-200">
-                  <strong className="text-slate-900">Registration Act, 1908:</strong>
+                  <strong className="text-slate-900">Filing Act, 1908:</strong>
                   <span className="block mt-0.5">
-                    Section 18(e) (Optional registration of testamentary documents); Section 40 &amp; 41 (Persons entitled to present Wills and registration procedure);
+                    Section 18(e) (A Choice filing of Will papers); Section 40 &amp; 41 (Persons entitled to present Wills and filing step);
                     Book 3 registry protocols.
                   </span>
                 </div>
@@ -1191,13 +1191,13 @@ export default function MirrorWillsForCouplesClient() {
                   <strong className="text-slate-900">Landmark Judicial Precedents:</strong>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>
-                      <em>Kochu Govindan Kaimal v. Thayankoot Thekkethil Gopalan Nair (AIR 1959 SC 71)</em>: Supreme Court establishing that joint wills operate as the separate will of each testator with respect to their property.
+                      <em>Kochu Govindan Kaimal v. Thayankoot Thekkethil Gopalan Nair (AIR 1959 SC 71)</em>: Supreme Court establishing that joint wills operate as the separate will of each Will maker with respect to their asset.
                     </li>
                     <li>
                       <em>Dilharshankar C. Bhachech v. Controller of Estate Duty (AIR 1986 SC 1707)</em>: Distinction between mutual wills, agreements, and constructive trusts upon first demise.
                     </li>
                     <li>
-                      <em>Ram Chander Talwar &amp; Anr. v. Devender Kumar Talwar (2010 10 SCC 671)</em>: Supreme Court confirming that bank nomination does not confer ownership over the lawful testamentary heirs.
+                      <em>Ram Chander Talwar &amp; Anr. v. Devender Kumar Talwar (2010 10 SCC 671)</em>: Supreme Court confirming that bank nomination does not confer ownership over the lawful Will heirs.
                     </li>
                   </ul>
                 </div>
@@ -1205,7 +1205,7 @@ export default function MirrorWillsForCouplesClient() {
 
               <div className="pt-2">
                 <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-2">
-                  Verified Government &amp; Legal Authorities:
+                  Checked Government &amp; Legal Offices:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   <a
@@ -1247,7 +1247,7 @@ export default function MirrorWillsForCouplesClient() {
                     href="/services/will-registration"
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition-all"
                   >
-                    <span>Will Registration Service</span>
+                    <span>Will Filing Service</span>
                   </Link>
                   <Link
                     href="/services/probate-lawyer"
@@ -1265,13 +1265,35 @@ export default function MirrorWillsForCouplesClient() {
                     href="/tools/will-checklist"
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition-all"
                   >
-                    <span>Documents Checklist Tool</span>
+                    <span>Papers Checklist Tool</span>
                   </Link>
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* RIGHT COLUMN: STICKY SIDEBAR */}
           <aside className="space-y-5 sticky top-6">
@@ -1290,20 +1312,20 @@ export default function MirrorWillsForCouplesClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
-                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Succession Counsel</p>
+                  <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate Counsel</p>
                   <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
                 </div>
               </div>
               <p className="mt-3 text-xs text-slate-600 leading-relaxed">
-                Specializing in high-value family estate planning, cross-border NRI inheritance, and contested probate representation across High Courts in India.
+                Specializing in high-value family estate planning, cross-border NRI estate, and contested probate representation across High Courts in India.
               </p>
               <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Legal Author</span>
+                  <span>Checked Legal Author</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1329,7 +1351,7 @@ export default function MirrorWillsForCouplesClient() {
                 Planning Your Estate as a Couple?
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Avoid costly single joint wills. Protect your spouse and children with customized, legally verified Mirror Wills today.
+                Avoid costly single joint wills. Protect your spouse and children with customized, legally checked Mirror Wills today.
               </p>
               <a
                 href="/start"
@@ -1341,7 +1363,7 @@ export default function MirrorWillsForCouplesClient() {
               </a>
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-center gap-2 text-[11px] text-slate-400">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>100% Confidential Advocate Consultation</span>
+                <span>100% Confidential Lawyer Talk</span>
               </div>
             </div>
 
@@ -1361,13 +1383,13 @@ export default function MirrorWillsForCouplesClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-slate-900">Section 63 Compliant:</strong> Two-witness attestation guidelines included with every draft.
+                    <strong className="text-slate-900">Section 63 Compliant:</strong> Two-witness witness signing guidelines included with every draft.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-slate-900">High Court Advocate Vetting:</strong> Backed by senior estate counsel at AMA Legal Solutions.
+                    <strong className="text-slate-900">High Court Lawyer Vetting:</strong> Backed by senior estate counsel at AMA Legal Solutions.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1390,9 +1412,9 @@ export default function MirrorWillsForCouplesClient() {
                 href="/services/will-registration"
                 className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-all"
               >
-                <span className="font-bold text-xs text-slate-900 block">Will Registration Service</span>
+                <span className="font-bold text-xs text-slate-900 block">Will Filing Service</span>
                 <span className="text-[10px] text-slate-500 flex items-center gap-1 mt-0.5">
-                  Sub-Registrar process &amp; home visits &rarr;
+                  SRO process &amp; home visits &rarr;
                 </span>
               </Link>
 
@@ -1402,7 +1424,7 @@ export default function MirrorWillsForCouplesClient() {
               >
                 <span className="font-bold text-xs text-slate-900 block">Will Preparation Checklist</span>
                 <span className="text-[10px] text-slate-500 flex items-center gap-1 mt-0.5">
-                  Interactive asset checklist for couples &rarr;
+                  Free asset checklist for couples &rarr;
                 </span>
               </Link>
 
@@ -1426,7 +1448,7 @@ export default function MirrorWillsForCouplesClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/tools/will-checklist"

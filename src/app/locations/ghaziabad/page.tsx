@@ -144,7 +144,7 @@ export default function GhaziabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ghaziabad: Online Will Services in NCR",
         description:
-          "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance.",
+          "Secure family asset in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and SRO filing guidance.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function GhaziabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ghaziabad - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP registration, and doorstep execution support across Ghaziabad, Indirapuram.",
+          "Professional Will drafting, lawyer check, UP IGRSUP filing, and doorstep signing support across Ghaziabad, Indirapuram.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -257,38 +257,38 @@ export default function GhaziabadLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Ghaziabad",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Ghaziabad.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Ghaziabad.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Ghaziabad real estate including GDA flats, high-rise society apartments in Indirapuram or Vaishali, industrial plots, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Ghaziabad real estate including GDA flats, high-rise society apartments in Indirapuram or Vaishali, plant plots, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book UP IGRSUP Appointment Slot",
-            text: "Schedule your registration appointment on the UP Stamps and Registration portal (igrsup.gov.in) for your relevant Ghaziabad SRO and remit the flat ₹100 registration fee online.",
+            text: "Schedule your filing appointment on the UP Stamps and Filing portal (igrsup.gov.in) for your relevant Ghaziabad SRO and remit the flat ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Ghaziabad SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

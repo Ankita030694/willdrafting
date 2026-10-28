@@ -141,7 +141,7 @@ export default function AgraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Agra: Online Will Registration Support",
         description:
-          "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer.",
+          "Protect your family asset in Agra. Expert lawyer Will drafting, UP SRO filing help, and ADA home asset transfer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function AgraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Agra - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP registration support, and doorstep execution assistance across Agra, ADA schemes.",
+          "Professional Will drafting, lawyer check, UP IGRSUP filing support, and doorstep signing help across Agra, ADA schemes.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -257,14 +257,14 @@ export default function AgraLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Agra",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Agra.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Agra.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Agra properties including ADA residential plots, municipal houses, commercial footwear units, bank savings, and agricultural land. Name your beneficiaries and an executor.",
+            text: "List your Agra assets including ADA home plots, city houses, shop footwear units, bank savings, and farm land. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -276,19 +276,19 @@ export default function AgraLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Agra SRO Appointment on IGRSUP Portal",
-            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Agra SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

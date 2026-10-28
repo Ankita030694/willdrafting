@@ -38,10 +38,10 @@ import {
 // Table of Contents Items (strictly <= 70 chars, 0 em-dashes, unique matching anchor IDs)
 const TOC_ITEMS = [
   { id: "statutory-purpose-scope", label: "1. Section 284 Probate Caveat: Purpose & Scope" },
-  { id: "caveat-limitation-calculator", label: "2. Interactive Caveat & Limitation Calculator" },
+  { id: "caveat-limitation-calculator", label: "2. Free Caveat & Limitation Tool" },
   { id: "cpc-vs-isa-caveat-comparison", label: "3. Section 148A CPC vs Section 284 ISA Caveat" },
-  { id: "schedule-v-caveat-format", label: "4. Statutory Schedule V Probate Caveat Format" },
-  { id: "affidavit-in-support-format", label: "5. Affidavit in Support of Caveat Legal Format" },
+  { id: "schedule-v-caveat-format", label: "4. Legal Schedule V Probate Caveat Format" },
+  { id: "affidavit-in-support-format", label: "5. Sworn Note in Support of Caveat Legal Format" },
   { id: "caveatable-interest-precedents", label: "6. Establishing Caveatable Interest Precedents" },
   { id: "high-court-testamentary-rules", label: "7. High Court Rules: Bombay, Calcutta & Delhi" },
   { id: "contentious-suit-conversion", label: "8. Section 295 ISA: Conversion to Regular Suit" },
@@ -49,40 +49,40 @@ const TOC_ITEMS = [
   { id: "common-caveat-mistakes", label: "10. Four Fatal Mistakes When Opposing Probate" },
   { id: "institutional-profile", label: "11. Institutional Profile: Legal Excellence" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions: Probate Caveat" },
-  { id: "statutory-citations", label: "13. Statutory Provisions & High Court Rules" },
+  { id: "statutory-citations", label: "13. Legal Rules & High Court Rules" },
 ];
 
 const FAQS = [
   {
     q: "What is a caveat against probate under Section 284 of the Indian Succession Act?",
-    a: "A probate caveat is a formal notice filed in court under Section 284 and Schedule V of the Indian Succession Act, 1925. It directs the judge not to grant probate or letters of administration without giving you written notice first.",
+    a: "A probate caveat is a formal notice filed in court under Section 284 and Schedule V of the Indian Succession Act, 1925. It directs the judge not to grant probate or letters of care without giving you written notice first.",
   },
   {
     q: "How does a Section 284 ISA probate caveat differ from a Section 148A CPC caveat?",
-    a: "A civil caveat under Section 148A of the CPC lasts for only 90 days. A probate caveat under Section 284 of the Indian Succession Act stays active under court rules. Once citation is served, you must file a sworn supporting affidavit within 8 to 14 days.",
+    a: "A civil caveat under Section 148A of the CPC lasts for only 90 days. A probate caveat under Section 284 of the Indian Succession Act stays active under court rules. Once citation is served, you must file a sworn supporting sworn note within 8 to 14 days.",
   },
   {
-    q: "What is the strict time limit to file the Affidavit in Support of Caveat?",
-    a: "You must file your affidavit within 8 days in the Bombay High Court under Rule 402. In the Calcutta and Delhi High Courts, you have 14 days. If you miss this deadline, the court will dismiss your caveat and may grant probate.",
+    q: "What is the strict time limit to file the Sworn Note in Support of Caveat?",
+    a: "You must file your sworn note within 8 days in the Bombay High Court under Rule 402. In the Calcutta and Delhi High Courts, you have 14 days. If you miss this deadline, the court will dismiss your caveat and may grant probate.",
   },
   {
     q: "Who possesses a valid caveatable interest to oppose probate?",
-    a: "Under Supreme Court rulings in Elizabeth Antony and Krishna Kumar Birla, any person who would inherit property if the Will fails holds a valid interest. Class I and Class II legal heirs always hold an automatic right to object.",
+    a: "Under Supreme Court rulings in Elizabeth Antony and Krishna Kumar Birla, any person who would inherit asset if the Will fails holds a valid interest. Class I and Class II legal heirs always hold an automatic right to object.",
   },
   {
-    q: "Can a person claiming adverse title to the property file a probate caveat?",
-    a: "No. A probate court only tests whether the Will is genuine. It cannot decide who owns the property. If you claim that the deceased did not own the house, you must file a regular civil title suit under the CPC.",
+    q: "Can a person claiming adverse title to the asset file a probate caveat?",
+    a: "No. A probate court only tests whether the Will is genuine. It cannot decide who owns the asset. If you claim that the deceased did not own the house, you must file a regular civil title suit under the CPC.",
   },
   {
     q: "Can I file a caveat before my sibling applies for probate in court?",
     a: "Yes. Under Section 284(4) of the Act, you can enter a caveat at any time before probate is granted. You can file an advance caveat in the District Court or High Court as soon as you suspect a fake Will.",
   },
   {
-    q: "What happens to the probate petition once a caveat and affidavit are filed?",
+    q: "What happens to the probate petition once a caveat and sworn note are filed?",
     a: "Under Section 295 of the Act, the case converts from a simple petition into a regular suit. The applicant becomes the Plaintiff and you become the Defendant. The court conducts a full trial with witness cross-examination.",
   },
   {
-    q: "What are the common legal grounds to dispute a Will in the supporting affidavit?",
+    q: "What are the common legal grounds to fight a Will in the supporting sworn note?",
     a: "Common legal grounds include suspicious circumstances, lack of sound mind, dementia, coercion, fraud, forged signatures, or a newer valid Will that cancels the old one.",
   },
 ];
@@ -100,7 +100,7 @@ export default function CaveatAgainstProbateClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-purpose-scope");
+  const [activeId, setActiveId] = useState<string>("legal-purpose-scope");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedCaveat, setCopiedCaveat] = useState<boolean>(false);
   const [copiedAffidavit, setCopiedAffidavit] = useState<boolean>(false);
@@ -312,7 +312,7 @@ DEPONENT`;
           {/* Subtitle Paragraph (Plain language, readable, active voice) */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Protect your legal rights if you suspect a forged Will. Download our free Section 284 caveat format
-            and affidavit template. Stop a secret probate grant in High Court or District Court today.
+            and sworn note template. Stop a secret probate grant in High Court or District Court today.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -330,7 +330,7 @@ DEPONENT`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -408,7 +408,7 @@ DEPONENT`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 This page covers Sections 284, 285, 286, and 295 of the Indian Succession Act, 1925. It follows
@@ -423,7 +423,7 @@ DEPONENT`;
                 <span>Critical Warning</span>
               </div>
               <p className="leading-relaxed text-[11px] text-rose-900">
-                A caveat buys you time. You must file your sworn affidavit within 8 days in Bombay or 14 days in
+                A caveat buys you time. You must file your sworn sworn note within 8 days in Bombay or 14 days in
                 Delhi and Calcutta after court notice. Missing this date dismisses your caveat.
               </p>
             </div>
@@ -457,14 +457,14 @@ DEPONENT`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Strict Filing Deadline:</strong> You must file your sworn supporting affidavit within
+                    <strong>Strict Filing Deadline:</strong> You must file your sworn supporting sworn note within
                     8 or 14 days of getting court notice.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Conversion to Regular Suit:</strong> Under Section 295, filing your affidavit turns
+                    <strong>Conversion to Regular Suit:</strong> Under Section 295, filing your sworn note turns
                     the case into a full lawsuit with witness examination.
                   </span>
                 </li>
@@ -485,7 +485,7 @@ DEPONENT`;
               </div>
               <div className="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
                 <span className="font-semibold text-slate-700">
-                  Testamentary Litigation Series: Section 284 &amp; Schedule V Caveat Formats
+                  Will Court Fights Series: Section 284 &amp; Schedule V Caveat Formats
                 </span>
                 <span className="text-[11px] font-mono text-[#C65378] font-bold">
                   UPDATED FOR 2026 HIGH COURT RULES
@@ -514,7 +514,7 @@ DEPONENT`;
                 </p>
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                   <div className="font-extrabold text-slate-900 text-xs uppercase tracking-wider">
-                    Statutory Language: Schedule V Form of Caveat
+                    Legal Language: Schedule V Form of Caveat
                   </div>
                   <p className="text-xs text-slate-700 italic">
                     Let nothing be done in the matter of the estate of the late deceased without notice to the
@@ -535,11 +535,11 @@ DEPONENT`;
                 <span>DIAGNOSTIC &amp; LIMITATION CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Caveat &amp; Limitation Calculator
+                2. Free Caveat &amp; Limitation Tool
               </h3>
               <p className="text-xs sm:text-sm text-slate-600">
                 Check if you have the legal right to object to a Will. Find your exact deadline to file your sworn
-                affidavit in court.
+                sworn note in court.
               </p>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-6">
@@ -556,8 +556,8 @@ DEPONENT`;
                     >
                       <option value="class1_heir">Class I Legal Heir (Child, Spouse, Mother)</option>
                       <option value="class2_heir">Class II Legal Heir (Sibling, Father, Grandchild)</option>
-                      <option value="prior_will_beneficiary">Beneficiary under an Earlier or Later Will</option>
-                      <option value="outside_title_claimant">Claimant Asserting Independent Property Title</option>
+                      <option value="prior_will_beneficiary">Heir under an Earlier or Later Will</option>
+                      <option value="outside_title_claimant">Claimant Asserting Independent Asset Title</option>
                       <option value="unsecured_creditor">Unsecured Personal Creditor of Deceased</option>
                     </select>
                   </div>
@@ -565,7 +565,7 @@ DEPONENT`;
                   {/* Select 2: Forum */}
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Court Jurisdiction / Forum:
+                      Court Area / Forum:
                     </label>
                     <select
                       value={courtJurisdiction}
@@ -583,18 +583,18 @@ DEPONENT`;
                   {/* Select 3: Grounds */}
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Primary Challenge Ground:
+                      Primary Fight Ground:
                     </label>
                     <select
                       value={challengeGround}
                       onChange={(e) => setChallengeGround(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#C65378]"
                     >
-                      <option value="suspicious_circumstances">Suspicious Circumstances &amp; Beneficiary Role</option>
-                      <option value="forgery_fraud">Forged Signature / Fake Document</option>
+                      <option value="suspicious_circumstances">Suspicious Circumstances &amp; Heir Role</option>
+                      <option value="forgery_fraud">Forged Signature / Fake Paper</option>
                       <option value="lack_of_capacity">Lack of Sound Mind / Dementia</option>
                       <option value="undue_influence">Coercion, Duress &amp; Undue Pressure</option>
-                      <option value="subsequent_revocation">Revoked by Subsequent Registered Will</option>
+                      <option value="subsequent_revocation">Revoked by Subsequent Filed Will</option>
                     </select>
                   </div>
 
@@ -738,20 +738,20 @@ DEPONENT`;
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-bold text-slate-900">Governing Statute</td>
-                      <td className="p-3.5">Code of Civil Procedure, 1908 (Section 148A)</td>
+                      <td className="p-3.5">Code of Civil Step, 1908 (Section 148A)</td>
                       <td className="p-3.5 font-semibold text-[#172228]">
                         Indian Succession Act, 1925 (Section 284 &amp; Schedule V)
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Subject Jurisdiction</td>
+                      <td className="p-3.5 font-bold text-slate-900">Subject Area</td>
                       <td className="p-3.5">General civil suits and interim stay orders</td>
                       <td className="p-3.5 font-semibold text-[#172228]">
-                        Probate and Letters of Administration petitions
+                        Probate and Letters of Care petitions
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Statutory Lifespan</td>
+                      <td className="p-3.5 font-bold text-slate-900">Legal Lifespan</td>
                       <td className="p-3.5 text-rose-700 font-bold">
                         Strictly 90 Days from filing (Section 148A(5))
                       </td>
@@ -763,7 +763,7 @@ DEPONENT`;
                       <td className="p-3.5 font-bold text-slate-900">Post-Notice Obligation</td>
                       <td className="p-3.5">Party appears only to oppose interim stay</td>
                       <td className="p-3.5 font-semibold text-[#172228]">
-                        Must file sworn affidavit within 8 days (Bombay) or 14 days (Delhi)
+                        Must file sworn sworn note within 8 days (Bombay) or 14 days (Delhi)
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
@@ -792,7 +792,7 @@ DEPONENT`;
                 <span>COPY-PASTE TEMPLATE 1</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Statutory Schedule V Probate Caveat Format
+                4. Legal Schedule V Probate Caveat Format
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Use this legal format to lodge a caveat before a District Judge or High Court. Fill in your
@@ -802,7 +802,7 @@ DEPONENT`;
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-xs sm:text-sm text-slate-900">
-                    Section 284 &amp; Schedule V Statutory Caveat Petition
+                    Section 284 &amp; Schedule V Legal Caveat Petition
                   </div>
                   <button
                     type="button"
@@ -871,17 +871,17 @@ ADVOCATE FOR CAVEATOR                                CAVEATOR
                 <span>COPY-PASTE TEMPLATE 2</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Affidavit in Support of Caveat Legal Format
+                5. Sworn Note in Support of Caveat Legal Format
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                This affidavit is your main defense against a disputed Will. You must file it within 8 days in
+                This sworn note is your main defense against a disputed Will. You must file it within 8 days in
                 Bombay or 14 days in Delhi and Calcutta after getting court notice.
               </p>
 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-xs sm:text-sm text-slate-900">
-                    Sworn Affidavit in Support of Caveat (Disputing Will)
+                    Sworn Sworn Note in Support of Caveat (Disputing Will)
                   </div>
                   <button
                     type="button"
@@ -961,7 +961,7 @@ DEPONENT`}
                       1. Elizabeth Antony v. Michel Charles John Chown Lengro (1990) 3 SCC 333
                     </div>
                     <p className="text-xs text-slate-600">
-                      You must show that you would inherit property if the Will is set aside. Direct legal heirs always
+                      You must show that you would inherit asset if the Will is set aside. Direct legal heirs always
                       have this right.
                     </p>
                   </div>
@@ -971,8 +971,8 @@ DEPONENT`}
                       2. Krishna Kumar Birla v. Rajendra Singh Lodha (2008) 4 SCC 300
                     </div>
                     <p className="text-xs text-slate-600">
-                      A probate court only tests if the Will is valid. It cannot decide who owns the property. You
-                      cannot fight property title in probate court.
+                      A probate court only tests if the Will is valid. It cannot decide who owns the asset. You
+                      cannot fight asset title in probate court.
                     </p>
                   </div>
 
@@ -1007,7 +1007,7 @@ DEPONENT`}
                   </div>
                   <p className="text-slate-600">
                     You file a caveat in Form 113. Once you get court citation, you have just 8 days to file your sworn
-                    affidavit under Rule 402. Missing this date cancels your caveat.
+                    sworn note under Rule 402. Missing this date cancels your caveat.
                   </p>
                 </div>
 
@@ -1018,7 +1018,7 @@ DEPONENT`}
                     <span className="text-[10px] text-rose-600 font-bold">Chapter XXXV</span>
                   </div>
                   <p className="text-slate-600">
-                    You file your caveat in the court office. You have 14 days to file your supporting affidavit. The
+                    You file your caveat in the court office. You have 14 days to file your supporting sworn note. The
                     case then becomes a full suit before a judge.
                   </p>
                 </div>
@@ -1030,7 +1030,7 @@ DEPONENT`}
                     <span className="text-[10px] text-rose-600 font-bold">Chapter XXIX</span>
                   </div>
                   <p className="text-slate-600">
-                    You file under Section 284 and Delhi High Court rules. You must file your reply and affidavit within
+                    You file under Section 284 and Delhi High Court rules. You must file your reply and sworn note within
                     14 days of getting court notice.
                   </p>
                 </div>
@@ -1048,7 +1048,7 @@ DEPONENT`}
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
-                  Once you file your supporting affidavit, the case changes completely. Under Section 295 of the Act,
+                  Once you file your supporting sworn note, the case changes completely. Under Section 295 of the Act,
                   it stops being a simple request. It turns into a regular civil lawsuit.
                 </p>
                 <p>
@@ -1059,8 +1059,8 @@ DEPONENT`}
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
                     <div className="font-bold text-slate-900 mb-1">Plaintiff Duties</div>
                     <p className="text-slate-600">
-                      The Plaintiff must bring at least one attesting witness to court. The witness must prove that the
-                      testator signed the Will in sound mind.
+                      The Plaintiff must bring at least one signing witness to court. The witness must prove that the
+                      Will maker signed the Will in sound mind.
                     </p>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
@@ -1116,7 +1116,7 @@ DEPONENT`}
                     <div>
                       <div className="font-bold text-slate-900 text-xs">Lodge with Registry</div>
                       <p className="text-slate-600 mt-0.5">
-                        File the caveat with court fees and a signed advocate Vakalatnama. Get your official caveat number.
+                        File the caveat with court fees and a signed lawyer Vakalatnama. Get your official caveat number.
                       </p>
                     </div>
                   </div>
@@ -1150,9 +1150,9 @@ DEPONENT`}
                       6
                     </div>
                     <div>
-                      <div className="font-bold text-slate-900 text-xs">File Your Affidavit</div>
+                      <div className="font-bold text-slate-900 text-xs">File Your Sworn Note</div>
                       <p className="text-slate-600 mt-0.5">
-                        Submit your sworn affidavit within 8 or 14 days. Detail why the Will is invalid.
+                        Submit your sworn sworn note within 8 or 14 days. Detail why the Will is invalid.
                       </p>
                     </div>
                   </div>
@@ -1176,7 +1176,7 @@ DEPONENT`}
                     <span>Missing the 8 or 14-Day Limit</span>
                   </div>
                   <p className="text-slate-600">
-                    Missing the 8 or 14-Day Limit: If you file a caveat but miss the affidavit deadline, the judge will
+                    Missing the 8 or 14-Day Limit: If you file a caveat but miss the sworn note deadline, the judge will
                     dismiss your caveat.
                   </p>
                 </div>
@@ -1187,7 +1187,7 @@ DEPONENT`}
                     <span>Arguing Title Instead of the Will</span>
                   </div>
                   <p className="text-slate-600">
-                    Arguing Title Instead of the Will: Never argue about property ownership in probate court. Focus on
+                    Arguing Title Instead of the Will: Never argue about asset ownership in probate court. Focus on
                     proving the Will is fake or forced.
                   </p>
                 </div>
@@ -1209,7 +1209,7 @@ DEPONENT`}
                     <span>Skipping Land Office Objections</span>
                   </div>
                   <p className="text-slate-600">
-                    Skipping Land Office Objections: A court caveat does not stop land mutation. Send written objections
+                    Skipping Land Office Objections: A court caveat does not stop land name change. Send written objections
                     to the local registrar as well.
                   </p>
                 </div>
@@ -1227,7 +1227,7 @@ DEPONENT`}
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
                 Before launching a long court contest, check your baseline legal rights and family entitlements with our
-                interactive legal tools:
+                free legal tools:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold">
                 <Link
@@ -1241,7 +1241,7 @@ DEPONENT`}
                   href="/tools/succession-calculator"
                   className="p-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-between transition-colors"
                 >
-                  <span>Heir Share Calculator</span>
+                  <span>Heir Share Tool</span>
                   <ArrowRight className="w-4 h-4 text-rose-300" />
                 </Link>
                 <Link
@@ -1270,19 +1270,19 @@ DEPONENT`}
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Testamentary Litigation Bench
+                      WillDrafting.in Will Court Fights Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is powered by AMA Legal Solutions. Our senior advocates represent heirs across India.
+                  WillDrafting.in is powered by AMA Legal Solutions. Our senior lawyers represent heirs across India.
                   We file urgent Section 284 caveats in the High Courts of Bombay, Calcutta, and Delhi. We also handle
-                  full Will contest trials and forensic document checks.
+                  full Will contest trials and forensic paper checks.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold text-slate-800">
@@ -1290,14 +1290,14 @@ DEPONENT`}
                     href="/services/will-dispute-contest-litigation-lawyer"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Will Contest Litigation Desk</span>
+                    <span>Will Contest Court Fights Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>SRO Registration Desk</span>
+                    <span>SRO Filing Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1358,29 +1358,29 @@ DEPONENT`}
                 <span>STATUTORY CITATIONS &amp; OFFICIAL PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Provisions &amp; High Court Rules
+                13. Legal Rules &amp; High Court Rules
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900">
-                    Governing Provisions of the Indian Succession Act, 1925:
+                    Governing Rules of the Indian Succession Act, 1925:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Section 284:</strong> Lodging caveats against probate or letters of administration with
+                      <strong>Section 284:</strong> Lodging caveats against probate or letters of care with
                       District Judge or District Delegate.
                     </li>
                     <li>
                       <strong>Section 285:</strong> Form of notice prescribed in Schedule V.
                     </li>
                     <li>
-                      <strong>Schedule V:</strong> Statutory text and statutory language for lodging a testamentary caveat.
+                      <strong>Schedule V:</strong> Legal text and legal language for lodging a Will caveat.
                     </li>
                     <li>
-                      <strong>Section 288:</strong> Procedure when contention arises before a District Delegate.
+                      <strong>Section 288:</strong> Step when contention arises before a District Delegate.
                     </li>
                     <li>
-                      <strong>Section 295:</strong> Mandatory transformation of contentious petitions into regular suits.
+                      <strong>Section 295:</strong> Needed transformation of contentious petitions into regular suits.
                     </li>
                   </ul>
                 </div>
@@ -1410,27 +1410,27 @@ DEPONENT`}
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>Bombay High Court Testamentary Department</span>
+                    <span>Bombay High Court Will Office</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Succession Guides &amp; Templates
+                    Related WillDrafting Estate Guides &amp; Templates
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/templates/attesting-witness-affidavit-probate-format"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Attesting Witness Affidavit Format
+                      Signing Witness Sworn Note Format
                     </Link>
                     <Link
                       href="/templates/affidavit-of-legal-heirs-pedigree-tree-format"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Legal Heir Pedigree Affidavit Format
+                      Legal Heir Pedigree Sworn Note Format
                     </Link>
                     <Link
                       href="/templates/revocation-of-will-deed-format-india"
@@ -1442,19 +1442,41 @@ DEPONENT`}
                       href="/templates/disinheritance-exclusion-clause-format-will"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Disinheritance Exclusion Clause Format
+                      Leaving Out Exclusion Clause Format
                     </Link>
                     <Link
                       href="/templates/family-settlement-agreement-format-india"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Family Settlement Agreement Format
+                      Family Deal Pact Format
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1467,21 +1489,21 @@ DEPONENT`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary law, High Court probate caveats, Section 295 contentious suits, and
+                Expert in Indian testamentary law, High Court probate caveats, Section 295 contentious suits, and
                 Will defense pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1495,10 +1517,10 @@ DEPONENT`}
                   <span>PREVENT FUTURE PROBATE LITIGATION</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Draft a Challenge-Proof Will for Your Family
+                  Draft a Fight-Proof Will for Your Family
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A clear, registered Will protects your family. It prevents siblings from filing caveats or claiming
+                  A clear, filed Will protects your family. It prevents siblings from filing caveats or claiming
                   fraud.
                 </p>
                 <button
@@ -1521,10 +1543,10 @@ DEPONENT`}
                   <span>HIGH COURT LITIGATION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Facing a Secret or Forged Probate Application?
+                  Facing a Secret or Forged Probate Form?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Facing a fake Will? Our team drafts urgent Section 284 caveats and files affidavits in High Courts and
+                  Facing a fake Will? Our team drafts urgent Section 284 caveats and files sworn notes in High Courts and
                   District Courts across India.
                 </p>
                 <Link
@@ -1541,7 +1563,7 @@ DEPONENT`}
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-xs text-slate-900 flex items-center gap-1.5">
                     <CheckSquare className="w-4 h-4 text-[#C65378]" />
-                    <span>Filing Documents Required</span>
+                    <span>Filing Papers Required</span>
                   </div>
                   <button
                     type="button"
@@ -1562,7 +1584,7 @@ DEPONENT`}
                   </li>
                   <li className="flex items-start gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Testator Death Certificate copy</span>
+                    <span>Will maker Death Paper copy</span>
                   </li>
                   <li className="flex items-start gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -1570,7 +1592,7 @@ DEPONENT`}
                   </li>
                   <li className="flex items-start gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Affidavit in Support (8/14 Days)</span>
+                    <span>Sworn Note in Support (8/14 Days)</span>
                   </li>
                 </ul>
               </div>

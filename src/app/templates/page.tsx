@@ -79,7 +79,7 @@ export default function TemplatesPage() {
     "@type": "CollectionPage",
     name: "WillDrafting Legal Will & Succession Templates Directory",
     description:
-      "Complete directory of lawyer-vetted legal templates for Wills, Codicils, Living Wills, and Relinquishment Deeds.",
+      "Complete directory of lawyer-vetted legal templates for Wills, Codicils, Living Wills, and Release Deeds.",
     url: "https://www.willdrafting.in/templates",
     isPartOf: {
       "@type": "WebSite",

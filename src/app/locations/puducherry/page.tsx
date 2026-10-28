@@ -142,7 +142,7 @@ export default function PuducherryLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Puducherry: Online Will Making Guide",
         description:
-          "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar.",
+          "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function PuducherryLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Puducherry - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, French Civil Code and Indian Succession Act consultation, and SRO registration support.",
+          "Professional Will drafting, lawyer check, French Civil Code and Indian Succession Act talk, and SRO filing support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -254,38 +254,38 @@ export default function PuducherryLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Puducherry",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Puducherry.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Puducherry.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Identify Succession Regime and Compile Assets",
-            text: "Determine whether the testator is governed by the French Civil Code (Renonçant) or the Indian Succession Act. Compile all immovable properties in White Town, Oulgaret, Karaikal, or agricultural tracts.",
+            text: "Determine whether the Will maker is governed by the French Civil Code (Renonçant) or the Indian Succession Act. Compile all land assets in White Town, Oulgaret, Karaikal, or farm tracts.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Statutory Bequest Clauses",
-            text: "Draft legal clauses ensuring adherence to disposable quotas (quotité disponible) under French law or full testamentary discretion under the Indian Succession Act, including executor appointments.",
+            text: "Draft legal clauses ensuring adherence to disposable quotas (quotité disponible) under French law or full Will discretion under the Indian Succession Act, including executor appointments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain white A4 paper. The testator and two independent non-beneficiary witnesses sign each page in each other's physical presence.",
+            text: "Print the Will on plain white A4 paper. The Will maker and two independent non-heir witnesses sign each page in each other's physical presence.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Office Appointment",
-            text: "Book an appointment slot at the relevant Sub-Registrar Office in Puducherry, Oulgaret, Villianur, Bahour, Karaikal, Mahe, or Yanam and pay nominal official registration fees.",
+            text: "Book an appointment slot at the relevant SRO office in Puducherry, Oulgaret, Villianur, Bahour, Karaikal, Mahe, or Yanam and pay nominal official filing fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at the Sub-Registrar Office",
-            text: "Attend the SRO with both attesting witnesses. Complete verbal verification, digital photograph capture, and thumbprint impression to secure permanent Book III government registration.",
+            text: "Attend the SRO with both signing witnesses. Complete verbal check, digital photograph capture, and thumbprint impression to secure permanent Book III government filing.",
           },
         ],
       },

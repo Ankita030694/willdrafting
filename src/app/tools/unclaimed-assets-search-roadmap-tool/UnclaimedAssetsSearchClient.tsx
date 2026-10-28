@@ -61,54 +61,54 @@ import {
 // Strict Screaming Frog Compliance: All H2s strictly <= 70 chars, 0 em-dashes
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. The Unclaimed Wealth Crisis & Tracing Law" },
-  { id: "interactive-roadmap-tool", label: "2. Interactive Asset Detective Roadmap Tool" },
+  { id: "interactive-roadmap-tool", label: "2. Free Asset Detective Roadmap Tool" },
   { id: "section-159-income-tax-ais", label: "3. Income Tax AIS: Section 159 Legal Heir SOP" },
   { id: "mutual-funds-demat-cas", label: "4. Mutual Funds & Demat: CAS Search Protocol" },
   { id: "rbi-udgam-bank-deposits", label: "5. RBI UDGAM: Inactive & Dormant Bank Accounts" },
-  { id: "iepf-shares-unpaid-dividends", label: "6. IEPF Shares: MCA Verification & Recovery" },
+  { id: "iepf-shares-unpaid-dividends", label: "6. IEPF Shares: MCA Check & Recovery" },
   { id: "bima-bharosa-life-insurance", label: "7. Bima Bharosa: Finding Forgotten Policies" },
   { id: "epfo-post-office-schemes", label: "8. EPFO & Post Office: Provident Fund & PPF" },
-  { id: "portals-comparison-matrix", label: "9. Portals Comparison: Authority & Access Rules" },
-  { id: "step-by-step-discovery-sop", label: "10. Step-by-Step SOP: Discovery to Transmission" },
+  { id: "portals-comparison-matrix", label: "9. Portals Comparison: Office & Access Rules" },
+  { id: "step-by-step-discovery-sop", label: "10. Step-by-Step SOP: Discovery to Transfer" },
   { id: "practical-case-studies", label: "11. Case Studies: Delhi, Mumbai & Bengaluru" },
-  { id: "legal-templates-clauses", label: "12. Statutory Letter Templates: Bank & RTA" },
-  { id: "institutional-profile", label: "13. Institutional Backing: Senior Succession Bar" },
+  { id: "legal-templates-clauses", label: "12. Legal Letter Templates: Bank & RTA" },
+  { id: "institutional-profile", label: "13. Institutional Backing: Senior Estate Bar" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions: Asset Search" },
-  { id: "statutory-citations", label: "15. Statutory Citations & Government Portals" },
+  { id: "statutory-citations", label: "15. Legal Citations & Government Portals" },
 ];
 
 const FAQS = [
   {
     q: "Can I find all my deceased parents bank accounts and investments using their PAN?",
-    a: "Yes. In India, PAN is the universal financial identifier. While no single government dashboard reveals every asset on one screen, your parent's PAN unlocks: (1) Consolidated Account Statements (CAS) across CDSL, NSDL, and MFCentral for 100% of mutual funds and demat shares, (2) Annual Information Statement (AIS/TIS) on the Income Tax portal via Section 159 Legal Heir registration which reveals bank interest and fixed deposits, (3) RBI UDGAM for dormant bank accounts, and (4) IEPF portal for unclaimed dividends and shares.",
+    a: "Yes. In India, PAN is the universal financial identifier. While no single government dashboard reveals every asset on one screen, your parent's PAN unlocks: (1) Consolidated Account Statements (CAS) across CDSL, NSDL, and MFCentral for 100% of mutual funds and demat shares, (2) Annual Information Statement (AIS/TIS) on the Income Tax portal via Section 159 Legal Heir filing which reveals bank interest and fixed deposits, (3) RBI UDGAM for dormant bank accounts, and (4) IEPF portal for unclaimed dividends and shares.",
   },
   {
     q: "How do legal heirs register on the Income Tax portal under Section 159 to view AIS and 26AS?",
-    a: "Under Section 159 of the Income Tax Act, 1961, the legal representative of a deceased taxpayer can register on incometax.gov.in. The heir logs into their own e-Filing profile, navigates to Authorized Partners > Register as Representative Assessee, selects Deceased (Legal Heir), and uploads: (1) Copy of PAN of both deceased and heir, (2) Certified Death Certificate, and (3) Legal Heir Certificate, Surviving Member Certificate, or Registered Will/Probate. Once approved by the Assessing Officer, the heir can access the deceased's Annual Information Statement (AIS) and Form 26AS.",
+    a: "Under Section 159 of the Income Tax Act, 1961, the legal agent of a deceased taxpayer can register on incometax.gov.in. The heir logs into their own e-Filing profile, navigates to Authorized Partners > Register as Agent Assessee, selects Deceased (Legal Heir), and uploads: (1) Copy of PAN of both deceased and heir, (2) Certified Death Paper, and (3) Legal Heir Paper, Surviving Member Paper, or Filed Will/Probate. Once approved by the Assessing Officer, the heir can access the deceased's Annual Information Statement (AIS) and Form 26AS.",
   },
   {
     q: "What is the RBI UDGAM portal and which bank deposits can be tracked through it?",
-    a: "UDGAM (Unclaimed Deposits Gateway to Access Information) is an official centralized search portal established by the Reserve Bank of India (RBI). Under Section 26A of the Banking Regulation Act, 1949, balances in savings and current accounts inactive for 10 or more years, and term deposits unclaimed for 10 years past maturity, are transferred to the RBI's Depositor Education and Awareness (DEA) Fund. UDGAM enables citizens to search across 30+ major commercial, private, and regional rural banks using the deceased's name combined with PAN, voter ID, passport, or date of birth.",
+    a: "UDGAM (Unclaimed Deposits Gateway to Access Information) is an official centralized search portal established by the Reserve Bank of India (RBI). Under Section 26A of the Banking Regulation Act, 1949, balances in savings and current accounts inactive for 10 or more years, and term deposits unclaimed for 10 years past maturity, are transferred to the RBI's Depositor Education and Awareness (DEA) Fund. UDGAM enables citizens to search across 30+ major shop, private, and regional rural banks using the deceased's name combined with PAN, voter ID, passport, or date of birth.",
   },
   {
     q: "How can I track all mutual funds owned by a deceased parent across CAMS and KFintech?",
-    a: "All 44+ mutual fund houses in India are administered by two primary Registrars and Transfer Agents (RTAs): CAMS and KFintech. Instead of querying fund houses individually, legal heirs can obtain a Consolidated Account Statement (CAS). Through MFCentral (mfcentral.com) or the CAMS and KFintech online portals, you can generate a PAN-level CAS. If the parent's registered mobile number is no longer active, heirs can submit a physical CAS request form at any local CAMS or KFintech Investor Service Centre (ISC) along with an attested death certificate and legal heir documentation.",
+    a: "All 44+ mutual fund houses in India are administered by two primary Registrars and Transfer Agents (RTAs): CAMS and KFintech. Instead of querying fund houses individually, legal heirs can obtain a Consolidated Account Statement (CAS). Through MFCentral (mfcentral.com) or the CAMS and KFintech online portals, you can generate a PAN-level CAS. If the parent's filed mobile number is no longer active, heirs can submit a physical CAS request form at any local CAMS or KFintech Investor Service Centre (ISC) along with an attested death paper and legal heir papers.",
   },
   {
-    q: "What is the process to find forgotten shares transferred to the IEPF authority?",
+    q: "What is the process to find forgotten shares transferred to the IEPF office?",
     a: "Under Section 124(6) of the Companies Act, 2013, if dividends on shares remain unpaid or unclaimed for 7 consecutive years, the company must legally transfer both the accumulated dividends and the underlying equity shares to the Investor Education and Protection Fund (IEPF). To check whether shares were transferred, visit iepf.gov.in and search the Unclaimed and Unpaid Amounts database using your parent's PAN, folio number, or name. To recover the shares, heirs must secure an Entitlement Letter from the company's RTA (Form ISR-4) and submit Form IEPF-5 online on MCA21.",
   },
   {
-    q: "How do I trace life insurance policies when I do not have policy documents or numbers?",
+    q: "How do I trace life insurance policies when I do not have policy papers or numbers?",
     a: "If you suspect your deceased parent held life insurance policies but cannot find paper bonds, you should utilize three channels: (1) The IRDAI Bima Bharosa portal (bimabharosa.irdai.gov.in), (2) The official LIC Unclaimed Policy search portal (licindia.in), which searches across all LIC branches nationwide by policyholder name and date of birth, and (3) Auditing bank statements and Income Tax AIS/TIS for premium debits or Section 80C life insurance tax deduction entries.",
   },
   {
     q: "Will a bank freeze my deceased parent's account as soon as they are notified of the death?",
-    a: "Yes. Upon receiving formal intimation and a death certificate, banks are legally mandated to place an immediate debit freeze on the deceased's sole accounts to prevent unauthorized ATM withdrawals, cheques, or net banking transfers. Inward credits like dividends and pension interest continue. If a nominee was registered, the bank must settle the claim within 15 calendar days under RBI guidelines. If no nominee exists, funds are disbursed to Class I legal heirs upon submitting an Indemnity Bond, NOCs, and a Legal Heir or Succession Certificate.",
+    a: "Yes. Upon receiving formal intimation and a death paper, banks are legally mandated to place an immediate debit freeze on the deceased's sole accounts to prevent unauthorized ATM withdrawals, cheques, or net banking transfers. Inward credits like dividends and pension interest continue. If a nominee was filed, the bank must settle the claim within 15 calendar days under RBI guidelines. If no nominee exists, funds are disbursed to Class I legal heirs upon submitting an Indemnity Bond, NOCs, and a Legal Heir or Estate Paper.",
   },
   {
-    q: "When is a Succession Certificate mandatory instead of a basic Legal Heir Certificate?",
-    a: "A Legal Heir Certificate is an administrative certificate issued by local revenue authorities (Tehsildar or SDM) establishing relationship status, suitable for bank claims below institutional threshold limits (typically ₹1 Lakh to ₹5 Lakhs). In contrast, a Succession Certificate is a judicial decree issued by a Civil District Court under Section 372 of the Indian Succession Act, 1925, certifying legal title to debts and securities. A Succession Certificate or Court Probate of Will is mandatory when claiming high-value demat shares, IEPF refunds exceeding ₹5 Lakhs, or bank balances exceeding branch settlement thresholds.",
+    q: "When is a Estate Paper needed instead of a basic Legal Heir Paper?",
+    a: "A Legal Heir Paper is an office paper issued by local revenue offices (Tehsildar or SDM) establishing relationship status, suitable for bank claims below institutional threshold limits (typically ₹1 Lakh to ₹5 Lakhs). In contrast, a Estate Paper is a judicial decree issued by a Civil District Court under Section 372 of the Indian Succession Act, 1925, certifying legal title to debts and securities. A Estate Paper or Court Probate of Will is needed when claiming high-value demat shares, IEPF refunds exceeding ₹5 Lakhs, or bank balances exceeding branch deal thresholds.",
   },
 ];
 
@@ -132,8 +132,8 @@ const DOCUMENT_OPTIONS: DocumentOption[] = [
   },
   {
     id: "death_certificate",
-    label: "Death Certificate & Legal Heir Certificate",
-    description: "Essential for Section 159 Representative Assessee registration and bank branch access.",
+    label: "Death Paper & Legal Heir Paper",
+    description: "Essential for Section 159 Agent Assessee filing and bank branch access.",
     category: "Identity & Tax",
     weight: 20,
     unlockedPortals: ["it_ais", "rbi_udgam", "iepf", "epfo", "india_post"],
@@ -141,7 +141,7 @@ const DOCUMENT_OPTIONS: DocumentOption[] = [
   {
     id: "mobile_sim",
     label: "Active Mobile Number / SIM Card (SMS OTP Access)",
-    description: "Allows instant self-service OTP verification on MFCentral, CDSL CAS, and Camsonline.",
+    description: "Allows instant self-service OTP check on MFCentral, CDSL CAS, and Camsonline.",
     category: "Access & Communications",
     weight: 15,
     unlockedPortals: ["mf_central", "cdsl_nsdl", "rbi_udgam"],
@@ -157,7 +157,7 @@ const DOCUMENT_OPTIONS: DocumentOption[] = [
   {
     id: "itr_login",
     label: "Past ITR Returns, ITR-V Ack or Income Tax Password",
-    description: "Instant access to historical Form 26AS, AIS/TIS, and registered bank accounts.",
+    description: "Instant access to historical Form 26AS, AIS/TIS, and filed bank accounts.",
     category: "Identity & Tax",
     weight: 10,
     unlockedPortals: ["it_ais"],
@@ -172,7 +172,7 @@ const DOCUMENT_OPTIONS: DocumentOption[] = [
   },
   {
     id: "share_certificates",
-    label: "Old Paper Share Certificates / Dividend Warrants",
+    label: "Old Paper Share Papers / Dividend Warrants",
     description: "Crucial for tracing legacy holdings from the 1980s-90s transferred to IEPF.",
     category: "Financial Records",
     weight: 10,
@@ -402,13 +402,13 @@ export default function UnclaimedAssetsSearchClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedBankLetter, setCopiedBankLetter] = useState<boolean>(false);
   const [copiedRtaLetter, setCopiedRtaLetter] = useState<boolean>(false);
   const [copiedActionPlan, setCopiedActionPlan] = useState<boolean>(false);
 
-  // Document Checklist State (Default: PAN + Death Certificate)
+  // Paper Checklist State (Default: PAN + Death Paper)
   const [selectedDocs, setSelectedDocs] = useState<string[]>([
     "pan_card",
     "death_certificate",
@@ -613,7 +613,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Over <strong>₹1.8 Lakh Crore</strong> in unclaimed bank deposits, shares, mutual funds, and
-            policies sits forgotten in India. Use our free interactive <strong>Asset Detective Roadmap</strong>{" "}
+            policies sits forgotten in India. Use our free free <strong>Asset Detective Roadmap</strong>{" "}
             to systematically trace hidden financial assets across 8 official statutory portals.
           </p>
 
@@ -710,11 +710,11 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authorities</span>
+                <span>Legal Offices</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Income Tax Act Sec 159, Banking Regulation Act Sec 26A, Companies Act
-                Sec 124(6), SEBI Transmission Master Circulars &amp; Indian Succession Act, 1925.
+                Sec 124(6), SEBI Transfer Master Circulars &amp; Indian Succession Act, 1925.
               </p>
             </div>
           </aside>
@@ -741,7 +741,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 159 Legal Heir AIS:</strong> Register as a Representative Assessee
+                    <strong>Section 159 Legal Heir AIS:</strong> Register as a Agent Assessee
                     on the Income Tax portal under Section 159. Download the deceased parent&apos;s AIS/TIS
                     to see all banks paying interest, fixed deposits, and dividend records.
                   </span>
@@ -758,7 +758,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>IEPF Shares Recovery:</strong> Shares with 7 consecutive years of unpaid
-                    dividends are transferred to the MCA IEPF Authority. Legal heirs can reclaim them via
+                    dividends are transferred to the MCA IEPF Office. Legal heirs can reclaim them via
                     Form IEPF-5 and an RTA Entitlement Letter.
                   </span>
                 </li>
@@ -782,12 +782,12 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     STATUTORY ASSET DISCOVERY PROTOCOL
                   </div>
                   <div className="text-sm font-extrabold text-slate-900">
-                    8-Portal Verification Blueprint for Indian Legal Heirs
+                    8-Portal Check Blueprint for Indian Legal Heirs
                   </div>
                 </div>
                 <div className="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>Verified Legal Heir Workflow</span>
+                  <span>Checked Legal Heir Workflow</span>
                 </div>
               </div>
             </div>
@@ -806,7 +806,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   Every year in India, thousands of families face an overwhelming crisis when an elderly
                   parent passes away suddenly without having documented their financial assets. In traditional
                   Indian households, parents often maintained bank accounts, fixed deposits, post office
-                  certificates, and physical shares across multiple institutions without discussing them with
+                  papers, and physical shares across multiple institutions without discussing them with
                   their children or spouse.
                 </p>
                 <p>
@@ -825,7 +825,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     Most heirs assume they must manually visit dozens of physical bank branches or hire
                     unlicensed recovery agents charging 20% to 30% cuts. In reality, modern Indian financial
                     regulations have linked virtually every legitimate financial holding to the deceased&apos;s
-                    Permanent Account Number (PAN). By utilizing the 8 statutory portals detailed in this roadmap,
+                    Permanent Account Number (PAN). By utilizing the 8 legal portals detailed in this roadmap,
                     legal heirs can systematically identify and claim up to 98% of all domestic assets directly.
                   </p>
                 </div>
@@ -844,7 +844,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                     <Search className="w-3.5 h-3.5" />
-                    <span>Interactive Asset Detective Engine</span>
+                    <span>Free Asset Detective Engine</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <button
@@ -865,11 +865,11 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   </div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-                  2. Interactive Asset Detective: 8-Portal Discovery Roadmap
+                  2. Free Asset Detective: 8-Portal Discovery Roadmap
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Select the documents and credentials you currently have in hand. The tool dynamically
-                  calculates your asset traceability score and reveals the exact statutory discovery steps.
+                  Select the papers and credentials you currently have in hand. The tool dynamically
+                  calculates your asset traceability score and reveals the exact legal discovery steps.
                 </p>
               </div>
 
@@ -1146,7 +1146,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
 
                 <div className="text-xs text-slate-500 flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>100% Free Public Verification Protocols</span>
+                  <span>100% Free Public Check Protocols</span>
                 </div>
               </div>
             </section>
@@ -1158,14 +1158,14 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <span>CENTRALIZED TAX DATABASE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Income Tax AIS: Section 159 Legal Heir Registration SOP
+                3. Income Tax AIS: Section 159 Legal Heir Filing SOP
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The Single Most Comprehensive Tool for tracing unknown financial assets in India is the{" "}
                   <strong>Annual Information Statement (AIS)</strong> and{" "}
                   <strong>Taxpayer Information Summary (TIS)</strong> maintained by the Directorate of Income
-                  Tax (Systems). Under the Income Tax Act, 1961, all scheduled commercial banks, cooperative
+                  Tax (Systems). Under the Income Tax Act, 1961, all scheduled shop banks, cooperative
                   banks, depository participants, mutual fund registrars, and asset management companies are
                   mandated to report financial transactions through the Statement of Financial Transactions
                   (SFT).
@@ -1184,8 +1184,8 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600">
                     Heirs often mistakenly attempt to log in using the deceased parent&apos;s credentials, only
-                    to find that the registered mobile number has been disconnected by the telecom operator.
-                    The official legal procedure under Section 159 is as follows:
+                    to find that the filed mobile number has been disconnected by the telecom operator.
+                    The official legal step under Section 159 is as follows:
                   </p>
                   <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-700">
                     <li>
@@ -1193,8 +1193,8 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       personal e-Filing portal profile at <code>incometax.gov.in</code>.
                     </li>
                     <li>
-                      <strong>Representative Assessee Request:</strong> Navigate to{" "}
-                      <em>Authorized Partners &gt; Register as Representative Assessee</em> and click{" "}
+                      <strong>Agent Assessee Request:</strong> Navigate to{" "}
+                      <em>Authorized Partners &gt; Register as Agent Assessee</em> and click{" "}
                       <em>Create New Request</em>.
                     </li>
                     <li>
@@ -1202,12 +1202,12 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     </li>
                     <li>
                       <strong>Upload Proof Docket:</strong> Provide: (a) PAN of the deceased, (b) Date of
-                      death, (c) Certified death certificate, (d) Legal Heir Certificate, Surviving Member
-                      Certificate, or registered Will / Probate, and (e) Indemnity Bond if applicable.
+                      death, (c) Certified death paper, (d) Legal Heir Paper, Surviving Member
+                      Paper, or filed Will / Probate, and (e) Indemnity Bond if applicable.
                     </li>
                     <li>
-                      <strong>Assessing Officer Approval:</strong> The jurisdictional Assessing Officer
-                      reviews the documents and approves access within 3 to 7 working days.
+                      <strong>Assessing Officer Approval:</strong> The local Assessing Officer
+                      reviews the papers and approves access within 3 to 7 working days.
                     </li>
                     <li>
                       <strong>Switch Account &amp; Download AIS:</strong> Once approved, the heir uses the{" "}
@@ -1232,7 +1232,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Tracing stock portfolios and mutual fund folios was historically an exhausting process
-                  requiring correspondence with dozens of individual asset management companies. Under SEBI
+                  requiring correspondence with dozens of single asset management companies. Under SEBI
                   guidelines, all market holdings are now mapped to the investor&apos;s PAN in centralized
                   depository databases.
                 </p>
@@ -1275,7 +1275,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Under Section 26A of the Banking Regulation Act, 1949, all commercial and cooperative banks
+                  Under Section 26A of the Banking Regulation Act, 1949, all shop and cooperative banks
                   in India are required to transfer balances from savings and current accounts that have not
                   been operated for 10 consecutive years, or term deposits unclaimed for 10 years after
                   maturity, to the <strong>Depositor Education and Awareness (DEA) Fund</strong> maintained by
@@ -1297,8 +1297,8 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     UDGAM provides the specific Bank Name, Branch Name, and Unclaimed Deposit Reference Number
                     (UDRN). Once you locate an entry, you do not file the claim with the RBI; you visit the
                     identified home branch. If a nominee exists, the branch must settle within 15 days under
-                    RBI guidelines. If no nominee is registered, Class I legal heirs submit Form DA-2 along
-                    with an Indemnity Bond and Legal Heir Certificate.
+                    RBI guidelines. If no nominee is filed, Class I legal heirs submit Form DA-2 along
+                    with an Indemnity Bond and Legal Heir Paper.
                   </p>
                 </div>
               </div>
@@ -1311,22 +1311,22 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <span>MINISTRY OF CORPORATE AFFAIRS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. IEPF Shares &amp; Dividends: MCA Verification &amp; Recovery
+                6. IEPF Shares &amp; Dividends: MCA Check &amp; Recovery
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 124(6) of the Companies Act, 2013, if dividends declared by a listed Indian
                   corporation remain unpaid or unclaimed for seven consecutive years, the company is legally
                   obligated to transfer both the unpaid dividends and the underlying equity shares to the{" "}
-                  <strong>Investor Education and Protection Fund (IEPF) Authority</strong> under the Ministry of
+                  <strong>Investor Education and Protection Fund (IEPF) Office</strong> under the Ministry of
                   Corporate Affairs (MCA).
                 </p>
                 <p>
                   In many Indian families, grandparents or parents bought 100 shares of blue-chip companies
                   (like Reliance, Tata Motors, L&amp;T, ITC, or HUL) in the 1980s or 1990s as physical paper
-                  certificates. Because physical dividends were sent by post to old ancestral addresses, they
+                  papers. Because physical dividends were sent by post to old family addresses, they
                   went unclaimed. Today, with stock splits and bonus issues, those 100 shares are frequently
-                  worth ₹20 Lakhs to ₹1.5 Crores, but sit held in the name of the IEPF Authority!
+                  worth ₹20 Lakhs to ₹1.5 Crores, but sit held in the name of the IEPF Office!
                 </p>
                 <p>
                   To verify and reclaim these shares, legal heirs must:
@@ -1340,11 +1340,11 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     Letter).
                   </li>
                   <li>
-                    Obtain a Civil District Court Succession Certificate or Probate if the total market value
+                    Obtain a Civil District Court Estate Paper or Probate if the total market value
                     exceeds ₹5 Lakhs (or execute an Indemnity Bond under Rule 7 if below threshold).
                   </li>
                   <li>
-                    E-file Form IEPF-5 on the MCA21 portal and submit the verified physical claim docket.
+                    E-file Form IEPF-5 on the MCA21 portal and submit the checked physical claim docket.
                   </li>
                 </ul>
               </div>
@@ -1361,9 +1361,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Life Insurance Corporation of India (LIC) and private life insurers hold thousands of crores
-                  in unclaimed maturity proceeds, survival benefits, and death claims. When policy documents
-                  are lost or damaged, legal heirs have two primary statutory search mechanisms:
+                  Life Insurance City Board of India (LIC) and private life insurers hold thousands of crores
+                  in unclaimed maturity proceeds, survival benefits, and death claims. When policy papers
+                  are lost or damaged, legal heirs have two primary legal search mechanisms:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="rounded-2xl bg-white border border-slate-200 p-5 space-y-2 shadow-xs">
@@ -1408,7 +1408,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-700">
                   <li>
                     <strong>EPF Accumulation (Form 20):</strong> The full employee and employer provident fund
-                    balance with compound interest credited up to the date of settlement.
+                    balance with compound interest credited up to the date of deal.
                   </li>
                   <li>
                     <strong>EPS 1995 Survivor Pension (Form 10D):</strong> Monthly life pension payable to the
@@ -1417,15 +1417,15 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   <li>
                     <strong>EDLI Life Insurance Cover (Form 5IF):</strong> Under the Employees&apos; Deposit
                     Linked Insurance Scheme, legal heirs are entitled to an automatic, free life insurance payout
-                    of up to <strong>₹7,00,000</strong> without any separate insurance policy document.
+                    of up to <strong>₹7,00,000</strong> without any separate insurance policy paper.
                   </li>
                 </ol>
                 <p className="pt-2">
                   Similarly, elderly parents frequently invested in India Post Small Savings Schemes like
-                  National Savings Certificates (NSC), Senior Citizen Savings Scheme (SCSS), and Public
+                  National Savings Papers (NSC), Senior Citizen Savings Scheme (SCSS), and Public
                   Provident Fund (PPF). Under the Government Savings Promotion Rules, 2018, claims up to ₹5
                   Lakhs can be settled by the Head Postmaster against an Indemnity Bond (Form 13) and Legal Heir
-                  Certificate without requiring a court order.
+                  Paper without requiring a court order.
                 </p>
               </div>
             </section>
@@ -1437,19 +1437,19 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <span>COMPARATIVE STATUTORY DIRECTORY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Official Portals Comparison: Authority &amp; Access Rules
+                9. Official Portals Comparison: Office &amp; Access Rules
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The following comparison table summarizes the 8 statutory portals, their governing legal
-                  authorities, the primary search parameters required, and typical turnaround times:
+                  The following comparison table summarizes the 8 legal portals, their governing legal
+                  offices, the primary search parameters required, and typical turnaround times:
                 </p>
                 <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                   <table className="min-w-full divide-y divide-slate-200 text-left text-xs sm:text-sm">
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="py-3 px-4 font-bold">Portal / Channel</th>
-                        <th className="py-3 px-4 font-bold">Governing Authority</th>
+                        <th className="py-3 px-4 font-bold">Governing Office</th>
                         <th className="py-3 px-4 font-bold">What is Traced</th>
                         <th className="py-3 px-4 font-bold">Search Input</th>
                         <th className="py-3 px-4 font-bold">Resolution Period</th>
@@ -1485,7 +1485,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                         <td className="py-3 px-4">Instant Search</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">IEPF Authority</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">IEPF Office</td>
                         <td className="py-3 px-4">Ministry of Corporate Affairs</td>
                         <td className="py-3 px-4">Shares &amp; Dividends unpaid for 7 years</td>
                         <td className="py-3 px-4">PAN, Folio Number, or Name</td>
@@ -1507,7 +1507,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">India Post POSB</td>
-                        <td className="py-3 px-4">Department of Posts</td>
+                        <td className="py-3 px-4">Office of Posts</td>
                         <td className="py-3 px-4">PPF, NSC, KVP, SCSS Small Savings</td>
                         <td className="py-3 px-4">Passbook / Form 11 at Head PO</td>
                         <td className="py-3 px-4">15 to 45 Days</td>
@@ -1525,7 +1525,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <span>PROCEDURAL ROADMAP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Step-by-Step SOP: Asset Discovery to Claim Transmission
+                10. Step-by-Step SOP: Asset Discovery to Claim Transfer
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1542,8 +1542,8 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       <span>Phase 1: Securing Foundational Credentials</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Secure the original Death Certificate (obtain at least 15-20 certified copies from the
-                      municipal registrar), keep the deceased parent&apos;s physical PAN card, Aadhaar card,
+                      Secure the original Death Paper (obtain at least 15-20 certified copies from the
+                      city registrar), keep the deceased parent&apos;s physical PAN card, Aadhaar card,
                       and maintain their mobile SIM card active for at least 6 to 12 months.
                     </p>
                   </div>
@@ -1570,10 +1570,10 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       <span>Phase 3: Legal Heirship Fortification</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an administrative Legal Heir Certificate or Surviving Member Certificate from the
+                      Obtain an office Legal Heir Paper or Surviving Member Paper from the
                       Tehsildar / SDM. If total share portfolios exceed ₹5-15 Lakhs or bank claims exceed branch
-                      limits, file for a Court Succession Certificate under Section 372 of the Indian
-                      Succession Act.
+                      limits, file for a Court Estate Paper under Section 372 of the Indian
+                      Estate Act.
                     </p>
                   </div>
 
@@ -1582,10 +1582,10 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       <span className="w-6 h-6 rounded-full bg-amber-100 text-amber-700 text-xs flex items-center justify-center font-bold">
                         4
                       </span>
-                      <span>Phase 4: Transmission Execution</span>
+                      <span>Phase 4: Transfer Signing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submit transmission claims: Form DA-2 for banks with nominees, SEBI Form ISR-4 for
+                      Submit transfer claims: Form DA-2 for banks with nominees, SEBI Form ISR-4 for
                       demat/mutual fund units, Form IEPF-5 for MCA shares, and Form 11 at post offices.
                       Coordinate mutual releases among co-heirs.
                     </p>
@@ -1616,7 +1616,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Following the death of a retired Central Government engineer in Rohini, Delhi, his two
-                    daughters had no documentation other than his pension passbook. By registering as legal
+                    daughters had no papers other than his pension passbook. By registering as legal
                     heirs under Section 159 on the Income Tax portal, their counsel downloaded his AIS, which
                     revealed two previously unknown fixed deposit accounts in a public sector bank paying ₹1.8
                     Lakh annual interest. Further search on RBI UDGAM uncovered an inoperative savings account
@@ -1635,10 +1635,10 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     </span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    A family in Matunga discovered 200 physical share certificates of an Indian FMCG major
+                    A family in Matunga discovered 200 physical share papers of an Indian FMCG major
                     dating back to 1994 in an old metal trunk. Querying the IEPF portal confirmed that the
                     shares and 14 unpaid dividend tranches had been transferred to IEPF under Section 124(6).
-                    AMA Legal Solutions filed a Section 372 Succession Certificate petition before the Bombay
+                    AMA Legal Solutions filed a Section 372 Estate Paper petition before the Bombay
                     High Court, secured an Entitlement Letter from the RTA, and filed Form IEPF-5, crediting
                     12,000 split shares directly into the widow&apos;s demat account.
                   </p>
@@ -1655,10 +1655,10 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     </span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An IT professional in Whitefield passed away intestate. While the spouse had access to
+                    An IT professional in Whitefield passed away no-Will. While the spouse had access to
                     his primary bank account, he had invested in 6 different equity mutual funds across CAMS and
                     KFintech without registering a nominee. Using MFCentral CAS, the surviving spouse mapped
-                    all folios. With a Surviving Member Certificate and mutual No-Objection Affidavits from the
+                    all folios. With a Surviving Member Paper and mutual No-Objection Affidavits from the
                     deceased&apos;s parents, the units were transmitted to the spouse under SEBI Form ISR-4
                     within 18 days.
                   </p>
@@ -1673,7 +1673,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <span>DOWNLOADABLE LEGAL FORMATS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Statutory Letter Templates: Bank Intimation &amp; Folio Search
+                12. Legal Letter Templates: Bank Intimation &amp; Folio Search
               </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Use these lawyer-drafted, copy-pasteable legal notice templates to formally request account
@@ -1688,7 +1688,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                       TEMPLATE 1: BANK BRANCH ASSET INTIMATION
                     </div>
                     <div className="text-sm font-bold text-slate-900">
-                      Deceased Account Balance &amp; Statement Disclosure Application
+                      Deceased Account Balance &amp; Statement Disclosure Form
                     </div>
                   </div>
                   <button
@@ -1703,7 +1703,7 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Bank Application</span>
+                        <span>Copy Bank Form</span>
                       </>
                     )}
                   </button>
@@ -1785,7 +1785,7 @@ Yours sincerely,
                 <span>LEGAL COUNSEL &amp; LITIGATION DESK</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Institutional Backing: Senior Succession Advocates &amp; Team
+                13. Institutional Backing: Senior Estate Lawyers &amp; Team
               </h3>
               <div className="rounded-3xl bg-white border border-slate-200 p-6 sm:p-7 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -1794,10 +1794,10 @@ Yours sincerely,
                   </div>
                   <div>
                     <h3 className="text-lg font-extrabold text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </h3>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; High Court Probate Counsel • AMA Legal Solutions
+                      Senior Estate &amp; High Court Probate Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-500 mt-1 flex items-center gap-2">
                       <Scale className="w-3.5 h-3.5 text-slate-400" />
@@ -1806,15 +1806,15 @@ Yours sincerely,
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Specializing in complex testamentary disputes, Section 372 Succession Certificate
-                  petitions, high-stakes IEPF share recovery litigation, and Section 159 legal heir
+                  Specializing in complex Will fights, Section 372 Estate Paper
+                  petitions, high-stakes IEPF share recovery court fights, and Section 159 legal heir
                   representation across North India, Maharashtra, and Karnataka. Backed by AMA Legal
-                  Solutions&apos; dedicated corporate secretarial and High Court litigation bench.
+                  Solutions&apos; dedicated corporate secretarial and High Court court fights bench.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-600">
                   <div className="flex items-center gap-1 text-emerald-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Verified Advocate Representation</span>
+                    <span>Checked Lawyer Representation</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Building className="w-4 h-4 text-slate-400" />
@@ -1870,7 +1870,7 @@ Yours sincerely,
                 <span>OFFICIAL STATUTORY PORTAL DIRECTORY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Authorities &amp; Official Government Portal Directory
+                15. Legal Offices &amp; Official Government Portal Directory
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
                 <a
@@ -1919,7 +1919,7 @@ Yours sincerely,
                   className="rounded-2xl bg-white border border-slate-200 p-4 hover:border-[#C65378] transition-colors flex items-center justify-between gap-2 shadow-2xs"
                 >
                   <div>
-                    <div className="font-bold text-slate-900">MCA IEPF Authority Portal</div>
+                    <div className="font-bold text-slate-900">MCA IEPF Office Portal</div>
                     <div className="text-slate-500 text-[11px]">iepf.gov.in</div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400" />
@@ -1955,7 +1955,7 @@ Yours sincerely,
               {/* Related Internal Tools Navigation Matrix */}
               <div className="pt-6 border-t border-slate-200">
                 <div className="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3">
-                  Related Succession Micro-Tools &amp; Calculators
+                  Related Estate Micro-Tools &amp; Tools
                 </div>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <Link
@@ -1974,24 +1974,46 @@ Yours sincerely,
                     href="/tools/demat-mutual-fund-transmission-document-finder"
                     className="px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Demat Transmission Finder
+                    Demat Transfer Finder
                   </Link>
                   <Link
                     href="/tools/legal-heir-vs-succession-certificate-decision-tool"
                     className="px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Legal Heir vs Succession Certificate Tool
+                    Legal Heir vs Estate Paper Tool
                   </Link>
                   <Link
                     href="/tools/capital-gains-tax-calculator-inherited-property"
                     className="px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Inherited Property Capital Gains Calculator
+                    Inherited Asset Capital Gains Tool
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -2004,21 +2026,21 @@ Yours sincerely,
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Section 159 asset disclosure petitions,
-                High Court Succession Certificates, and MCA IEPF recovery litigation.
+                Expert in Indian testamentary jurisprudence, Section 159 asset disclosure petitions,
+                High Court Estate Papers, and MCA IEPF recovery court fights.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2061,7 +2083,7 @@ Yours sincerely,
                   Need Help Recovering Shares from IEPF or Banks?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our High Court advocates obtain District Court Succession Certificates, file Form
+                  Our High Court lawyers obtain District Court Estate Papers, file Form
                   IEPF-5 with the Ministry of Corporate Affairs, and settle complex non-nominee claims.
                 </p>
                 <div className="space-y-2 pt-1">
@@ -2077,7 +2099,7 @@ Yours sincerely,
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5" />
-                    <span>Schedule Advocate Consultation</span>
+                    <span>Schedule Lawyer Talk</span>
                   </Link>
                 </div>
               </div>
@@ -2091,22 +2113,22 @@ Yours sincerely,
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>100% Free Public Verification:</strong> No middlemen fees to discover what
+                      <strong>100% Free Public Check:</strong> No middlemen fees to discover what
                       is rightfully yours.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Statutory Legal Backing:</strong> Directly citing Section 159, RBI DEA rules,
+                      <strong>Legal Legal Backing:</strong> Directly citing Section 159, RBI DEA rules,
                       and Companies Act Section 124(6).
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>High Court Litigators:</strong> In-house advocates for Succession
-                      Certificates and contested claims.
+                      <strong>High Court Litigators:</strong> In-house lawyers for Estate
+                      Papers and contested claims.
                     </span>
                   </li>
                 </ul>

@@ -145,7 +145,7 @@ export default function GangtokLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gangtok: Online Will & Land Law Guide",
         description:
-          "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok.",
+          "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha estate, GMC asset name change, and SRO Gangtok.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function GangtokLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gangtok - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Revenue Order No. 1 compliance, and Sub-Registrar registration support across Gangtok.",
+          "Professional Will drafting, lawyer check, Revenue Order No. 1 compliance, and SRO filing support across Gangtok.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -260,38 +260,38 @@ export default function GangtokLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Gangtok",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Gangtok, Sikkim.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Gangtok, Sikkim.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Gangtok real estate including GMC residential houses, commercial hotel leases, rural land parchas, bank accounts, and investments. Identify beneficiaries and choose a dependable executor.",
+            text: "List your Gangtok real estate including GMC home houses, shop hotel leases, rural land parchas, bank accounts, and investments. Identify heirs and choose a dependable executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Verify Revenue Order No. 1 and Land Rights",
-            text: "Confirm ancestral tribal land classifications under Revenue Order No. 1 of 1917 and Article 371F, ensuring bequests comply strictly with community land laws.",
+            text: "Confirm family tribal land classifications under Revenue Order No. 1 of 1917 and Article 371F, ensuring bequests comply strictly with community land laws.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for asset distribution, executor powers, minor guardianships, and explicit revocation of any prior testamentary documents.",
+            text: "Draft your Will using checked legal clauses for asset split, executor powers, minor guardianships, and explicit revocation of any prior Will papers.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult non-beneficiary witnesses holding valid government photo identification.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult non-heir witnesses holding valid government photo ID.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at SRO Gangtok DAC Sichey",
-            text: "Present the executed Will before the Sub-Registrar at District Administrative Centre Sichey with both witnesses for verbal verification and Book III archival entry.",
+            text: "Present the signed Will before the SRO at District Office Centre Sichey with both witnesses for verbal check and Book III archival entry.",
           },
         ],
       },

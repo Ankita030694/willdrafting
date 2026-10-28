@@ -118,7 +118,7 @@ const WB_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under West Bengal law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -137,19 +137,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental soundness and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "wbregistration.gov.in e-Appointment Slip & GRIPS Challan",
-    detail: "Official token receipt generated from the West Bengal Registration portal with confirmed time slot.",
+    detail: "Official token receipt generated from the West Bengal Filing portal with confirmed time slot.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "KMC Property Tax Receipts & Municipal Name Change Records",
-    detail: "Copy of Kolkata Municipal Corporation tax bills, society share papers, or town office assessment records.",
+    label: "KMC Asset Tax Receipts & City Name Change Records",
+    detail: "Copy of Kolkata City City Board tax bills, society share papers, or town office assessment records.",
     checked: false,
   },
   {
@@ -252,7 +252,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally sound Will under West Bengal Dayabhaga Hindu law. Get Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and Section 31 doorstep registration across Kolkata and all 23 districts.
+                Draft a legally sound Will under West Bengal Dayabhaga Hindu law. Get Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and Section 31 doorstep filing across Kolkata and all 23 districts.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -336,7 +336,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 23 Districts + ARAs
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Statewide Registration Coverage
+                Statewide Filing Coverage
               </span>
             </div>
 
@@ -471,7 +471,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>Dayabhaga Law Protected</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  Drafted by verified lawyers in compliance with Calcutta High Court rules and West Bengal Registration Directorate.
+                  Drafted by checked lawyers in compliance with Calcutta High Court rules and West Bengal Filing Directorate.
                 </p>
                 <Link
                   href="/start"
@@ -495,7 +495,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>EXECUTIVE OVERVIEW</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Executive Summary: Will Drafting &amp; Registration in West Bengal
+                  Executive Summary: Will Drafting &amp; Filing in West Bengal
                 </h2>
               </div>
 
@@ -506,9 +506,9 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <h3>Key Legal Facts in West Bengal</h3>
                   </div>
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <li>• <strong>Dayabhaga School:</strong> Testators enjoy total testamentary freedom over family and self-acquired assets without joint family restrictions.</li>
-                    <li>• <strong>Dual Probate Rule:</strong> Section 213 ISA makes probate needed in Kolkata presidency town, but optional across remaining district areas.</li>
-                    <li>• <strong>100% Stamp Duty Exemption:</strong> Wills attract zero ad-valorem stamp duty across West Bengal; only nominal ₹100 registration fee applies.</li>
+                    <li>• <strong>Dayabhaga School:</strong> Will makers enjoy total Will freedom over family and self-acquired assets without joint family restrictions.</li>
+                    <li>• <strong>Dual Probate Rule:</strong> Section 213 ISA makes probate needed in Kolkata presidency town, but a choice across remaining district areas.</li>
+                    <li>• <strong>100% Stamp Duty Exemption:</strong> Wills attract zero ad-valorem stamp duty across West Bengal; only nominal ₹100 filing fee applies.</li>
                     <li>• <strong>Online Token System:</strong> e-District portal (wbregistration.gov.in) enables slot booking across ARAs and Sub-Registrars.</li>
                   </ul>
                 </div>
@@ -520,15 +520,15 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </div>
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
                     <li>• <strong>Unwanted Fragmentation:</strong> Without a Will death triggers equal split among Class I heirs, leading to gridlock over heritage family homes.</li>
-                    <li>• <strong>KMC Name Change Freezes:</strong> Kolkata Municipal Corporation blocks name substitution when conflicting legal heir claims emerge.</li>
-                    <li>• <strong>Salt Lake Lease Fights:</strong> Urban Development Department leasehold transfers stall indefinitely without explicit testamentary bequest.</li>
-                    <li>• <strong>Succession Certificate Costs:</strong> District civil court succession suits consume 2 to 5 years with heavy legal expenses.</li>
+                    <li>• <strong>KMC Name Change Freezes:</strong> Kolkata City City Board blocks name substitution when conflicting legal heir claims emerge.</li>
+                    <li>• <strong>Salt Lake Lease Fights:</strong> Urban Development Office leasehold transfers stall indefinitely without explicit Will bequest.</li>
+                    <li>• <strong>Estate Paper Costs:</strong> District civil court estate suits consume 2 to 5 years with heavy legal expenses.</li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Whether you own a high-value flat in Ballygunge or Salt Lake, an industrial unit in Asansol or Durgapur, or tea gardens and farmlands in North Bengal, a legally watertight Will is indispensable. Our dedicated legal platform delivers customized lawyer drafting, Calcutta High Court testamentary petition support, and Sub-Registrar appointment coordination.
+                Whether you own a high-value flat in Ballygunge or Salt Lake, an plant unit in Asansol or Durgapur, or tea gardens and farmlands in North Bengal, a legally watertight Will is indispensable. Our dedicated legal platform delivers customized lawyer drafting, Calcutta High Court Will petition support, and SRO appointment coordination.
               </p>
             </section>
 
@@ -540,19 +540,19 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>SUCCESSION JURISPRUDENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. West Bengal Legal Framework: Succession &amp; Dayabhaga Law
+                  1. West Bengal Legal Framework: Estate &amp; Dayabhaga Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in West Bengal is governed by a distinct legal heritage that separates it from other Indian states:
+                  Estate in West Bengal is governed by a distinct legal heritage that separates it from other Indian states:
                 </p>
               </div>
 
               <div className="space-y-4 text-sm text-slate-700 leading-relaxed bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs">
                 <h3 className="font-extrabold text-base text-slate-900">
-                  The Dayabhaga Advantage: Absolute Testamentary Freedom
+                  The Dayabhaga Advantage: Absolute Will Freedom
                 </h3>
                 <p>
-                  In the vast majority of India, Hindu property inheritance follows the <strong>Mitakshara School</strong>, where sons and daughters acquire an automatic joint family share by birth in family property. So, a parent under Mitakshara cannot easily will away family joint family property without potential fights from children.
+                  In the vast majority of India, Hindu property estate follows the <strong>Mitakshara School</strong>, where sons and daughters acquire an automatic joint family share by birth in family asset. So, a parent under Mitakshara cannot easily will away family joint family asset without potential fights from children.
                 </p>
                 <p>
                   In contrast, West Bengal historically adheres to the <strong>Dayabhaga School of Hindu Law</strong>. Under Dayabhaga principles:
@@ -568,10 +568,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="font-bold text-slate-900 block text-xs uppercase tracking-wider text-[#C65378]">
-                      Complete Testamentary Right
+                      Complete Will Right
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The property holder can bequeath both family and self-acquired assets to any chosen person or charity through a Will, without requiring children&apos;s consent.
+                      The asset holder can bequeath both family and self-acquired assets to any chosen person or charity through a Will, without requiring children&apos;s consent.
                     </p>
                   </div>
                 </div>
@@ -581,8 +581,8 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Codified Statutes Governing West Bengal Wills:
                   </h4>
                   <ul className="space-y-1 text-xs text-slate-600">
-                    <li>• <strong>Indian Succession Act, 1925 (ISA):</strong> Sections 59 (sound mind), 61 (freedom from coercion), 63 (needed attestation by two witnesses), and 213 (probate rules).</li>
-                    <li>• <strong>Registration Act, 1908:</strong> Section 18(e) (optional registration) and Section 31 (doorstep registration by special commission).</li>
+                    <li>• <strong>Indian Succession Act, 1925 (ISA):</strong> Sections 59 (sound mind), 61 (freedom from coercion), 63 (needed witness signing by two witnesses), and 213 (probate rules).</li>
+                    <li>• <strong>Filing Act, 1908:</strong> Section 18(e) (a choice filing) and Section 31 (doorstep filing by special commission).</li>
                     <li>• <strong>West Bengal Land Reforms Act, 1955:</strong> Sets ceiling limits and farm name change steps on the Banglarbhumi portal.</li>
                     <li>• <strong>West Bengal Co-operative Societies Act, 2006:</strong> Governs share transfer steps in housing societies.</li>
                   </ul>
@@ -598,10 +598,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUTE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed Across West Bengal?
+                  2. Is Will Filing Needed Across West Bengal?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Indian law, registration of a Will remains optional, but the strategic advantages of registering in West Bengal are immense:
+                  Under Indian law, filing of a Will remains a choice, but the strategic advantages of registering in West Bengal are immense:
                 </p>
               </div>
 
@@ -610,8 +610,8 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Legal Parameter</th>
-                      <th className="p-4 font-bold">Unregistered Will</th>
-                      <th className="p-4 font-bold text-[#C65378]">Registered Will (Book III WB)</th>
+                      <th className="p-4 font-bold">Plain Will</th>
+                      <th className="p-4 font-bold text-[#C65378]">Filed Will (Book III WB)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -626,9 +626,9 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       <td className="p-4">Permanently archived in Book III SRO vault</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">KMC / Municipality Name Change</td>
+                      <td className="p-4 font-semibold">KMC / Town Office Name Change</td>
                       <td className="p-4">Frequently contested; lengthy scrutiny</td>
-                      <td className="p-4 font-bold text-slate-900">Accelerated name change across municipal bodies</td>
+                      <td className="p-4 font-bold text-slate-900">Accelerated name change across city bodies</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Proof Value in Court</td>
@@ -638,7 +638,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Government Fee in WB</td>
                       <td className="p-4">₹0 (No stamp paper needed)</td>
-                      <td className="p-4">Flat ₹100 registration fee + scanning</td>
+                      <td className="p-4">Flat ₹100 filing fee + scanning</td>
                     </tr>
                   </tbody>
                 </table>
@@ -647,7 +647,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               <div className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200/80 text-xs sm:text-sm text-amber-900 space-y-1.5">
                 <strong className="block font-bold">Legal Recommendation for West Bengal Residents:</strong>
                 <p>
-                  While unregistered Wills are technically valid under Section 18(e), property offices such as Kolkata Municipal Corporation (KMC), Bidhannagar Municipality, and BL&amp;LRO offices subject unregistered Wills to strict inquiry. Registering your Will before an ARA or Sub-Registrar establishes undeniable official proof of signing.
+                  While plain Wills are technically valid under Section 18(e), asset offices such as Kolkata City City Board (KMC), Bidhannagar Town Office, and BL&amp;LRO offices subject plain Wills to strict inquiry. Registering your Will before an ARA or SRO establishes undeniable official proof of signing.
                 </p>
               </div>
             </section>
@@ -663,7 +663,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   3. Calcutta High Court Probate Rules &amp; District Exemptions
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Probate is the official court process where a competent court certifies the authenticity of a Will. In West Bengal, Section 213 of the Indian Succession Act establishes a crucial jurisdictional distinction:
+                  Probate is the official court process where a competent court certifies the authenticity of a Will. In West Bengal, Section 213 of the Indian Succession Act establishes a crucial local distinction:
                 </p>
               </div>
 
@@ -682,10 +682,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600">
                     <li>• The Will was signed within the historical presidency limits of Kolkata.</li>
-                    <li>• Land and flats bequeathed under the Will is situated within Kolkata municipal presidency limits.</li>
+                    <li>• Land and flats bequeathed under the Will is situated within Kolkata city presidency limits.</li>
                   </ul>
                   <p className="text-xs text-slate-500">
-                    Financial institutions, KMC, and registry offices in Kolkata will not transfer title without a Probate or Letters of Administration granted by the Calcutta High Court.
+                    Financial institutions, KMC, and registry offices in Kolkata will not transfer title without a Probate or Letters of Care granted by the Calcutta High Court.
                   </p>
                   <div className="pt-2">
                     <Link
@@ -702,7 +702,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-4">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-100">
                     <MapPin className="w-3.5 h-3.5" />
-                    District Jurisdictions (Probate Optional)
+                    District Areas (Probate A Choice)
                   </div>
                   <h3 className="font-extrabold text-lg text-slate-900">
                     All Districts Outside Kolkata Presidency
@@ -711,11 +711,11 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     For assets situated outside Kolkata presidency town (such as Howrah, Paschim Bardhaman, Siliguri, Hooghly, North/South 24 Parganas districts, Murshidabad, and Medinipur), <strong>probate is NOT needed</strong> under Section 213.
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600">
-                    <li>• A registered Will allows direct name change with local municipal corporations and BL&amp;LRO offices.</li>
+                    <li>• A filed Will allows direct name change with local city corporations and BL&amp;LRO offices.</li>
                     <li>• Probate becomes necessary only if a disgruntled legal heir fights the Will in a civil district court.</li>
                   </ul>
                   <p className="text-xs text-slate-500">
-                    District judges possess testamentary area under Section 264 ISA if a probate petition is filed voluntarily to silence future fights.
+                    District judges possess Will area under Section 264 ISA if a probate petition is filed voluntarily to silence future fights.
                   </p>
                   <div className="pt-2">
                     <Link
@@ -738,10 +738,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>REGISTRATION HUBS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. West Bengal Sub-Registrar &amp; ARA Office Directory
+                  4. West Bengal SRO &amp; ARA Office Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  West Bengal operates Additional Registrar of Assurances (ARA) offices in Kolkata and District Sub-Registrar (DSR) complexes across its 23 districts. Search key offices below:
+                  West Bengal operates Additional Registrar of Assurances (ARA) offices in Kolkata and District SRO (DSR) complexes across its 23 districts. Search key offices below:
                 </p>
               </div>
 
@@ -779,7 +779,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   ))}
                   {filteredHubs.length === 0 && (
                     <div className="p-4 text-xs text-slate-500 bg-white rounded-2xl border border-slate-200 text-center">
-                      No matching registration office found.
+                      No matching filing office found.
                     </div>
                   )}
                 </div>
@@ -844,7 +844,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting in West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in West Bengal span high-value heritage mansions and modern condominiums in Kolkata, dense urban enclaves in Howrah, planned industrial townships in Asansol and Durgapur, tea gardens and tourism hubs in Siliguri, port assets in Haldia, and farm lands across Bardhaman and Murshidabad. Our legal team delivers customized legal drafting, wbregistration.gov.in appointment booking, and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate assets in West Bengal span high-value heritage mansions and modern condominiums in Kolkata, dense urban enclaves in Howrah, planned plant townships in Asansol and Durgapur, tea gardens and tourism hubs in Siliguri, port assets in Haldia, and farm lands across Bardhaman and Murshidabad. Our legal team delivers customized legal drafting, wbregistration.gov.in appointment booking, and SRO accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -876,7 +876,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kolkata</strong> covering luxury high-rises, heritage assets, and housing society apartments. Structures clear clauses addressing Calcutta High Court probate mandates under Section 213 ISA, KMC name change compliance, and Salt Lake 99-year leasehold succession.
+                      Specialized <strong>Will drafting services in Kolkata</strong> covering luxury high-rises, heritage assets, and housing society apartments. Structures clear clauses addressing Calcutta High Court probate mandates under Section 213 ISA, KMC name change compliance, and Salt Lake 99-year leasehold estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -910,7 +910,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Industrial &amp; Riverbank Corridor
+                        Plant &amp; Riverbank Corridor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DSR Howrah &amp; Serampore
@@ -931,7 +931,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Howrah</strong> and the historic Hooghly riverbank for shop warehouses, foundry enterprises, and home family assets. Clarifies probate exemption outside Kolkata presidency limits for rapid Howrah Municipal Corporation name change.
+                      Customized <strong>Will drafting in Howrah</strong> and the historic Hooghly riverbank for shop warehouses, foundry enterprises, and home family assets. Clarifies probate exemption outside Kolkata presidency limits for rapid Howrah City City Board name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -965,7 +965,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Mining &amp; Heavy Industrial Belt
+                        Mining &amp; Heavy Plant Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DSR Asansol &amp; Raniganj
@@ -985,7 +985,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Legal Will drafting for shop holdings, industrial machinery leases, home plots, and mining transport fleets in Asansol Municipal Corporation (AMC) wards. Ensures seamless Asansol District Court probate exemption recognition.
+                      Legal Will drafting for shop holdings, plant machinery leases, home plots, and mining transport fleets in Asansol City City Board (AMC) wards. Ensures seamless Asansol District Court probate exemption recognition.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1039,7 +1039,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting in Durgapur</strong> for retired PSU engineers, SAIL/DSP employees, and plotted homeowners in City Centre and Bidhannagar. Codifies bank savings, mutual funds, and DMC property succession.
+                      Tailored <strong>Will drafting in Durgapur</strong> for retired PSU engineers, SAIL/DSP employees, and plotted homeowners in City Centre and Bidhannagar. Codifies bank savings, mutual funds, and DMC asset estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1156,7 +1156,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Midnapore Collectorate &amp; Kharagpur SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        e-Registration slot booking, document review, and Sub-Registrar accompaniment across Medinipur region.
+                        e-Filing slot booking, paper review, and SRO accompaniment across Medinipur region.
                       </p>
                     </div>
                   </div>
@@ -1255,7 +1255,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated legal support for family Rajbaris, silk trading businesses, mango orchard parcels, and home assets across Murshidabad and Malda. Resolves multi-branch inheritance complexity under Dayabhaga law.
+                      Dedicated legal support for family Rajbaris, silk trading businesses, mango orchard parcels, and home assets across Murshidabad and Malda. Resolves multi-branch estate complexity under Dayabhaga law.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1293,10 +1293,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to WB Registration
+                  6. Step-by-Step SOP: Will Drafting to WB Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will in West Bengal:
+                  Follow this checked 5-stage legal operating step to draft, execute, and register your Will in West Bengal:
                 </p>
               </div>
 
@@ -1310,7 +1310,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile full details of KMC/municipality flats, Salt Lake leaseholds, Banglarbhumi land records, bank accounts, and investments.
+                      Compile full details of KMC/town office flats, Salt Lake leaseholds, Banglarbhumi land records, bank accounts, and investments.
                     </p>
                   </div>
                 </div>
@@ -1352,7 +1352,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       e-Deed Token
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on wbregistration.gov.in and remit the flat ₹100 registration fee online through the GRIPS gateway.
+                      Schedule your slot on wbregistration.gov.in and remit the flat ₹100 filing fee online through the GRIPS gateway.
                     </p>
                   </div>
                 </div>
@@ -1366,7 +1366,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Attend the ARA or Sub-Registrar counter with witnesses for verbal attestation, photo capture, and biometric thumbprinting.
+                      Attend the ARA or SRO counter with witnesses for verbal witness signing, photo capture, and biometric thumbprinting.
                     </p>
                   </div>
                 </div>
@@ -1381,23 +1381,23 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Kolkata heritage homes, Salt Lake, New Town, or across West Bengal districts, visiting the registry office can be physically burdensome. Under <strong>Section 31 of the Registration Act, 1908</strong>, the registering officer is legally empowered to attend a private residence or hospital.
+                  For elderly, unwell, or bedridden citizens residing in Kolkata heritage homes, Salt Lake, New Town, or across West Bengal districts, visiting the registry office can be physically burdensome. Under <strong>Section 31 of the Filing Act, 1908</strong>, the registering officer is legally empowered to attend a private residence or hospital.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Registration Operates Across West Bengal:
+                  How Doorstep Filing Operates Across West Bengal:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is mentally lucid but physically unable to travel.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is mentally lucid but physically unable to travel.</span>
                     </div>
                   </div>
 
@@ -1405,7 +1405,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal lawyers draft and submit the formal Section 31 special commission petition before the jurisdictional ARA or Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal lawyers draft and submit the formal Section 31 special commission petition before the local ARA or SRO.</span>
                     </div>
                   </div>
 
@@ -1421,7 +1421,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric scanners and cameras to register the Will in Book III.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric scanners and cameras to register the Will in Book III.</span>
                     </div>
                   </div>
                 </div>
@@ -1436,10 +1436,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for West Bengal Registration Offices
+                  8. Paper Checklist for West Bengal Filing Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1484,17 +1484,17 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Asset Classes &amp; Succession Rules Across West Bengal
+                  9. Asset Classes &amp; Estate Rules Across West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in West Bengal depend substantially on the nature of property title and regulatory authority:
+                  Estate steps in West Bengal depend substantially on the nature of asset title and regulatory office:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Municipal &amp; Society Flats
+                    City &amp; Society Flats
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     KMC &amp; Housing Societies
@@ -1512,7 +1512,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Banglarbhumi RoR (Parcha)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland parcels and rural homesteads in Purba Bardhaman, Nadia, or Hooghly require careful drafting to respect land ceilings. The heir submits the registered Will to the local BL&amp;LRO to update the Khatian on banglarbhumi.gov.in.
+                    Farmland parcels and rural homesteads in Purba Bardhaman, Nadia, or Hooghly require careful drafting to respect land ceilings. The heir submits the filed Will to the local BL&amp;LRO to update the Khatian on banglarbhumi.gov.in.
                   </p>
                 </div>
 
@@ -1524,7 +1524,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Salt Lake &amp; New Town Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Home plots leased by the Urban Development Department in Salt Lake (Bidhannagar) or WBHIDCO in New Town demand explicit testamentary bequest. Fresh lease substitution deeds are signed upon submission of testamentary proof.
+                    Home plots leased by the Urban Development Office in Salt Lake (Bidhannagar) or WBHIDCO in New Town demand explicit Will bequest. Fresh lease substitution deeds are signed upon submission of Will proof.
                   </p>
                 </div>
               </div>
@@ -1538,10 +1538,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Registration Fees &amp; Stamp Duty in West Bengal
+                  10. Filing Fees &amp; Stamp Duty in West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop property sales that incur 5% to 7% stamp duty in West Bengal, testamentary Wills are completely exempt from stamp duty. Government charges at ARAs and Sub-Registrar offices are purely nominal:
+                  Unlike shop asset sales that incur 5% to 7% stamp duty in West Bengal, Will Wills are completely exempt from stamp duty. Government charges at ARAs and SRO offices are purely nominal:
                 </p>
               </div>
 
@@ -1551,7 +1551,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1561,14 +1561,14 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of West Bengal</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
-                      <td className="p-4">Directorate of Registration via GRIPS</td>
+                      <td className="p-4">Directorate of Filing via GRIPS</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Service Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹240</td>
-                      <td className="p-4">Sub-Registrar / ARA Counter</td>
+                      <td className="p-4">SRO / ARA Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1591,7 +1591,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   11. Transparent Pricing Plans for West Bengal Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in West Bengal:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in West Bengal:
                 </p>
               </div>
 
@@ -1609,12 +1609,12 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with Kolkata/district apartments, bank savings, and demat assets.
+                      Ideal for single homeowners with Kolkata/district apartments, bank savings, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive West Bengal Will creator</span>
+                        <span>Free West Bengal Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1687,13 +1687,13 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       Doorstep SRO / ARA
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across ARA Kolkata or any West Bengal District SRO office.
+                      End-to-end filing coordination across ARA Kolkata or any West Bengal District SRO office.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1735,7 +1735,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: West Bengal Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Authoritative answers to common legal questions regarding Will drafting, probate, and property registration in West Bengal:
+                  Authoritative answers to common legal questions regarding Will drafting, probate, and asset filing in West Bengal:
                 </p>
               </div>
 
@@ -1779,7 +1779,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; West Bengal Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our estate drafting complies strictly with codified Indian statutes and West Bengal registration systems:
+                  Our estate drafting complies strictly with codified Indian statutes and West Bengal filing systems:
                 </p>
               </div>
 
@@ -1795,10 +1795,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1807,13 +1807,13 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Indian Stamp Act (WB)
                   </span>
                   <p className="text-xs text-slate-600">
-                    Testamentary Wills are 100% exempt from ad-valorem stamp duty across West Bengal.
+                    Will Wills are 100% exempt from ad-valorem stamp duty across West Bengal.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    WB Registration Portal
+                    WB Filing Portal
                   </span>
                   <p className="text-xs text-slate-600">
                     Official e-District portal: <code>wbregistration.gov.in</code>.
@@ -1828,7 +1828,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 Protect Your West Bengal Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned West Bengal apartments, business enterprises, or family lands to inheritance fights. Draft a legally binding Will online today or consult our senior Calcutta High Court lawyers.
+                Do not leave your hard-earned West Bengal apartments, business enterprises, or family lands to estate fights. Draft a legally binding Will online today or consult our senior Calcutta High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1847,7 +1847,29 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1866,7 +1888,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: West Bengal Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: West Bengal Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1885,7 +1907,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>West Bengal SRO Registered &amp; Calcutta High Court Probate Compliant</span>
+              <span>West Bengal SRO Filed &amp; Calcutta High Court Probate Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

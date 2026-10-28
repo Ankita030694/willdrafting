@@ -141,7 +141,7 @@ export default function SrinagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Srinagar: Online Will & Property Guide",
         description:
-          "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession.",
+          "Draft a valid Will in Srinagar. Guidance on NGDRS J&K filing, apple orchard and hotel estate, SMC name change, and Indian Succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function SrinagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Srinagar - Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration, and doorstep execution support across Srinagar, Rajbagh, Lal Chowk.",
+          "Professional Will drafting, lawyer check, NGDRS J&K filing, and doorstep signing support across Srinagar, Rajbagh, Lal Chowk.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -257,38 +257,38 @@ export default function SrinagarLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Srinagar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Srinagar.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Srinagar.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Srinagar real estate including SMC residential houses, Dal Lake houseboats, commercial hotels, apple orchards in Harwan or Nishat, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Srinagar real estate including SMC home houses, Dal Lake houseboats, shop hotels, apple orchards in Harwan or Nishat, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS J&K Appointment Slot",
-            text: "Schedule your registration appointment on the NGDRS J&K portal (ngdrs.jk.gov.in) for your relevant Srinagar SRO and remit nominal fees via J&K GRAS.",
+            text: "Schedule your filing appointment on the NGDRS J&K portal (ngdrs.jk.gov.in) for your relevant Srinagar SRO and remit nominal fees via J&K GRAS.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Srinagar SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

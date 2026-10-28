@@ -54,48 +54,48 @@ const TOC_ITEMS = [
   { id: "special-needs-trust", label: "6. Special Needs Child Safeguards" },
   { id: "spendthrift-protection", label: "7. Spendthrift Protection Clause" },
   { id: "ready-legal-clauses", label: "8. Ready-to-Use Legal Clauses" },
-  { id: "step-by-step-sop", label: "9. Step-by-Step Execution SOP" },
-  { id: "income-tax-treatment", label: "10. Income Tax & Representative Slabs" },
+  { id: "step-by-step-sop", label: "9. Step-by-Step Signing SOP" },
+  { id: "income-tax-treatment", label: "10. Income Tax & Agent Slabs" },
   { id: "practical-case-studies", label: "11. Real Indian Family Case Studies" },
-  { id: "diagnostic-tool", label: "12. Interactive Diagnostic Tool" },
+  { id: "diagnostic-tool", label: "12. Free Diagnostic Tool" },
   { id: "trustee-checklist", label: "13. Trustee Operational Checklist" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions" },
-  { id: "legal-backing", label: "15. Legal Backing & Advocate Profile" },
-  { id: "statutory-citations", label: "16. Statutory Citations & Acts" },
+  { id: "legal-backing", label: "15. Legal Backing & Lawyer Profile" },
+  { id: "statutory-citations", label: "16. Legal Citations & Acts" },
 ];
 
 const FAQS = [
   {
-    q: "What is a testamentary trust clause in a Will under Indian law?",
-    a: "A testamentary trust clause is a specific provision inserted into a Will that directs the testator's executor to transfer designated assets into a private trust upon the testator's demise, rather than handing them over directly to beneficiaries. Governed under Section 5 of the Indian Trusts Act, 1882, the trust comes into legal existence only after the death of the testator when the Will takes effect.",
+    q: "What is a Will trust clause in a Will under Indian law?",
+    a: "A Will trust clause is a specific rule inserted into a Will that directs the Will maker's executor to transfer designated assets into a private trust upon the Will maker's demise, rather than handing them over directly to heirs. Governed under Section 5 of the Indian Trusts Act, 1882, the trust comes into legal existence only after the death of the Will maker when the Will takes effect.",
   },
   {
-    q: "Does creating a testamentary trust require stamp duty during my lifetime?",
-    a: "No. Unlike an inter-vivos (living) trust which requires an immediate registered trust deed attracting state stamp duty (often 3% to 5% of asset value) and annual accounting compliance, a testamentary trust created under Section 5 of the Indian Trusts Act, 1882 requires ZERO upfront stamp duty or registration during your lifetime. It is established directly through your validly executed Will at no additional setup expense.",
+    q: "Does creating a Will trust require stamp duty during my lifetime?",
+    a: "No. Unlike an inter-vivos (living) trust which requires an immediate filed trust deed attracting state stamp duty (often 3% to 5% of asset value) and annual accounting compliance, a Will trust created under Section 5 of the Indian Trusts Act, 1882 requires ZERO upfront stamp duty or filing during your lifetime. It is established directly through your validly signed Will at no additional setup expense.",
   },
   {
-    q: "Why should I create a testamentary trust instead of leaving property directly to my minor child?",
-    a: "If a minor child inherits immovable property directly, Section 29 of the Guardians and Wards Act, 1890 strictly prohibits any legal guardian from selling, mortgaging, or leasing the property for more than 5 years without prior permission from the District Court. This often traps family assets in judicial delays during educational emergencies. Furthermore, at age 18, the child gets sudden unrestricted access to substantial wealth. A testamentary trust bypasses court approvals and staggers distributions over mature milestones.",
+    q: "Why should I create a Will trust instead of leaving asset directly to my minor child?",
+    a: "If a minor child inherits land asset directly, Section 29 of the Guardians and Wards Act, 1890 strictly prohibits any legal guardian from selling, mortgaging, or leasing the asset for more than 5 years without prior permission from the District Court. This often traps family assets in judicial delays during educational emergencies. Also, at age 18, the child gets sudden unrestricted access to substantial wealth. A Will trust bypasses court approvals and staggers distributions over mature milestones.",
   },
   {
     q: "How does a milestone payout schedule (e.g., ages 18, 21, and 25) work under Indian law?",
-    a: "Under Section 119 and 120 of the Indian Succession Act, 1925, a testator has testamentary freedom to specify contingent or deferred vesting terms. The clause provides that the corpus remains with the trustees who fund medical and educational needs until age 18, release a partial lump-sum (e.g., 20%) at 18 for undergraduate studies, another tranche (e.g., 30%) at age 21 for post-graduate education or career launch, and the final 50% capital at age 25 when the child possesses mature financial judgment.",
+    a: "Under Section 119 and 120 of the Indian Succession Act, 1925, a Will maker has Will freedom to specify contingent or deferred vesting terms. The clause provides that the corpus remains with the trustees who fund medical and educational needs until age 18, release a partial lump-sum (e.g., 20%) at 18 for undergraduate studies, another tranche (e.g., 30%) at age 21 for post-graduate education or career launch, and the final 50% capital at age 25 when the child possesses mature financial judgment.",
   },
   {
-    q: "Can a testamentary trust protect my child's inheritance from creditors or spendthrift spouses?",
-    a: "Yes. By incorporating an express 'Spendthrift / Protective Clause', the legal title remains vested in the trustees while the beneficiary holds only a beneficial right to discretionary distributions. Under Indian trust jurisprudence, because the child does not possess absolute ownership of the underlying capital until milestone vesting, creditors, business liabilities, or estranged matrimonial partners cannot attach or liquidate the trust corpus.",
+    q: "Can a Will trust protect my child's estate from creditors or spendthrift spouses?",
+    a: "Yes. By incorporating an express 'Spendthrift / Protective Clause', the legal title remains vested in the trustees while the heir holds only a beneficial right to discretionary distributions. Under Indian trust jurisprudence, because the child does not possess absolute ownership of the underlying capital until milestone vesting, creditors, business liabilities, or estranged matrimonial partners cannot attach or liquidate the trust corpus.",
   },
   {
-    q: "How does a testamentary trust safeguard a child with special needs or intellectual disability?",
-    a: "For children with physical or intellectual disabilities, a Special Needs Testamentary Trust ensures lifelong medical treatment, caretaking, and assisted living without terminating upon reaching majority. The clause coordinates with Section 14 of the National Trust Act, 1999 and the Rights of Persons with Disabilities Act, 2016 to appoint a Local Level Committee guardian alongside independent co-trustees or corporate fiduciary managers.",
+    q: "How does a Will trust safeguard a child with special needs or intellectual disability?",
+    a: "For children with physical or intellectual disabilities, a Special Needs Will Trust ensures lifelong medical treatment, caretaking, and assisted living without terminating upon reaching majority. The clause coordinates with Section 14 of the National Trust Act, 1999 and the Rights of Persons with Disabilities Act, 2016 to appoint a Local Level Committee guardian alongside independent co-trustees or corporate fiduciary managers.",
   },
   {
-    q: "How is income earned by a testamentary trust taxed under the Income Tax Act, 1961?",
-    a: "Under Section 160(1)(iv) and Section 161 of the Income Tax Act, 1961, trustees of a testamentary trust are assessed as 'Representative Assessees'. When the trust is created for a minor child with determinate beneficiaries and defined shares (a Specific Trust created under a Will), the income is taxed at the individual personal tax slab rate of the beneficiary, rather than at the punitive Maximum Marginal Rate (MMR) of 42.744% that applies to discretionary living trusts.",
+    q: "How is income earned by a Will trust taxed under the Income Tax Act, 1961?",
+    a: "Under Section 160(1)(iv) and Section 161 of the Income Tax Act, 1961, trustees of a Will trust are assessed as 'Agent Assessees'. When the trust is created for a minor child with determinate heirs and defined shares (a Specific Trust created under a Will), the income is taxed at the single personal tax slab rate of the heir, rather than at the punitive Maximum Marginal Rate (MMR) of 42.744% that applies to discretionary living trusts.",
   },
   {
     q: "Can the legal guardian of the child also be appointed as the trustee?",
-    a: "While legally permissible, it is strongly advised by succession lawyers to separate the role of 'Guardian of the Person' (who provides daily care, shelter, and emotional nurture) from the 'Trustee of the Property' (who manages investments, bank accounts, and approvals). Alternatively, appoint a trusted financial advisor or professional co-trustee alongside the guardian to provide vital fiduciary checks and balances.",
+    a: "While legally permissible, it is strongly advised by estate lawyers to separate the role of 'Guardian of the Person' (who provides daily care, shelter, and emotional nurture) from the 'Trustee of the Asset' (who manages investments, bank accounts, and approvals). Alternatively, appoint a trusted financial advisor or professional co-trustee alongside the guardian to provide vital fiduciary checks and balances.",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function TestamentaryTrustClauseClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [selectedVariant, setSelectedVariant] = useState<
     "minor_milestone" | "special_needs" | "trustee_powers"
@@ -222,14 +222,14 @@ export default function TestamentaryTrustClauseClient() {
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Testamentary Trust Clause in Will Format for Minor Children
+            Will Trust Clause in Will Format for Minor Children
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Create an ironclad Private Trust inside your Will at <strong>zero upfront registration cost</strong>.
-            Stagger inheritance distributions across mature milestones (ages 18, 21, and 25), bypass cumbersome
-            Guardianship Court restrictions, and protect your child from financial predators.
+            Create an ironclad Private Trust inside your Will at <strong>zero upfront filing cost</strong>.
+            Stagger estate distributions across mature milestones (ages 18, 21, and 25), bypass cumbersome
+            Child Care Court restrictions, and protect your child from financial predators.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -326,7 +326,7 @@ export default function TestamentaryTrustClauseClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 5 &amp; 6 of the Indian Trusts Act, 1882; Sections 119, 120
@@ -352,33 +352,33 @@ export default function TestamentaryTrustClauseClient() {
                   <span>
                     <strong>Zero Upfront Stamp Duty:</strong> Under Section 5 of the Indian Trusts Act,
                     1882, a private family trust can be lawfully created directly inside a Will. Unlike a
-                    living trust, it requires ₹0 upfront stamp duty, zero registration fees, and zero
+                    living trust, it requires ₹0 upfront stamp duty, zero filing fees, and zero
                     annual compliance filings while you are alive.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Bypassing Guardianship Court Hurdles:</strong> If a minor inherits property
+                    <strong>Bypassing Child Care Court Hurdles:</strong> If a minor inherits asset
                     directly, Section 29 of the Guardians and Wards Act, 1890 forbids the guardian from selling
-                    or leasing the asset without prior District Court permission. A testamentary trust avoids
+                    or leasing the asset without prior District Court permission. A Will trust avoids
                     this bottleneck completely.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Preventing 18th Birthday Wealth Destruction:</strong> Standard inheritance hands
-                    unfettered wealth to a child the minute they turn 18. A testamentary trust allows you
+                    <strong>Preventing 18th Birthday Wealth Destruction:</strong> Standard estate hands
+                    unfettered wealth to a child the minute they turn 18. A Will trust allows you
                     to legally stagger capital releases across mature ages: 20% at 18, 30% at 21, and 50% at 25.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Beneficiary Slab Taxation:</strong> Under Sections 160 and 161 of the Income
-                    Tax Act, 1961, a determinate testamentary trust for minor children is taxed at the
-                    beneficiary&apos;s personal income tax slab rate, avoiding the punitive 42.744% Maximum Marginal Rate.
+                    <strong>Heir Slab Taxation:</strong> Under Sections 160 and 161 of the Income
+                    Tax Act, 1961, a determinate Will trust for minor children is taxed at the
+                    heir&apos;s personal income tax slab rate, avoiding the punitive 42.744% Maximum Marginal Rate.
                   </span>
                 </li>
               </ul>
@@ -399,10 +399,10 @@ export default function TestamentaryTrustClauseClient() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 text-xs text-slate-500 border-t border-slate-100">
                 <span className="font-semibold text-slate-700 flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                  Statutory Format: Indian Trusts Act, 1882 &amp; Indian Succession Act, 1925
+                  Legal Format: Indian Trusts Act, 1882 &amp; Indian Succession Act, 1925
                 </span>
                 <span className="text-[11px] text-slate-400">
-                  WillDrafting.in Editorial Archive • Verified by Senior Succession Counsel
+                  WillDrafting.in Editorial Archive • Checked by Senior Estate Counsel
                 </span>
               </div>
             </div>
@@ -414,32 +414,32 @@ export default function TestamentaryTrustClauseClient() {
                 <span>STATUTORY FOUNDATION &amp; COMPETITOR MOAT</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Foundation: Indian Trusts Act Section 5 Moat
+                1. Legal Foundation: Indian Trusts Act Section 5 Moat
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Most wealth managers and high-net-worth individuals in India assume that protecting minor
+                  Most wealth managers and high-net-worth people in India assume that protecting minor
                   children requires creating an immediate <strong>Private Family Living Trust</strong> during
                   their lifetime. However, setting up a living trust requires drafting an extensive indenture of
                   trust, paying state stamp duty (ranging from 2% to 5% of asset values in states like
-                  Maharashtra and Karnataka), registering with the Sub-Registrar Office, applying for a PAN card,
+                  Maharashtra and Karnataka), registering with the SRO office, applying for a PAN card,
                   and filing separate annual income tax returns year after year.
                 </p>
                 <p>
                   Almost nobody in India realizes that the Indian legal system provides a vastly superior,
                   cost-free alternative: <strong>Section 5 of the Indian Trusts Act, 1882</strong> explicitly
-                  mandates that a valid trust in relation to immovable property can be declared:
+                  mandates that a valid trust in relation to land asset can be declared:
                 </p>
                 <div className="p-4 rounded-xl bg-slate-50 border-l-4 border-[#C65378] text-xs sm:text-sm font-mono text-slate-800">
-                  &ldquo;No trust in relation to immovable property is valid unless declared by a non-testamentary
-                  instrument in writing signed by the author of the trust or the trustee and registered, OR BY
+                  &ldquo;No trust in relation to land asset is valid unless declared by a non-Will
+                  instrument in writing signed by the author of the trust or the trustee and filed, OR BY
                   THE WILL OF THE AUTHOR OF THE TRUST OR OF THE TRUSTEE.&rdquo;
                 </div>
                 <p>
-                  This single statutory phrase creates the ultimate legal moat: a <strong>Testamentary Trust</strong>.
-                  By inserting a tailored testamentary trust clause directly inside your plain-paper or registered
+                  This single legal phrase creates the ultimate legal moat: a <strong>Will Trust</strong>.
+                  By inserting a tailored Will trust clause directly inside your plain-paper or filed
                   Will, the trust comes into legal existence <em>only upon your demise</em>. You retain 100%
-                  unfettered ownership, modification rights, and asset control throughout your lifetime without
+                  unfettered ownership, change rights, and asset control throughout your lifetime without
                   spending a single rupee on stamp duty or trust compliance today.
                 </p>
               </div>
@@ -469,7 +469,7 @@ export default function TestamentaryTrustClauseClient() {
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under Section 29 of the Guardians and Wards Act, 1890, a legal guardian cannot mortgage,
-                      charge, sell, gift, or exchange immovable property belonging to a minor, nor lease it for
+                      charge, sell, gift, or exchange land asset belonging to a minor, nor lease it for
                       more than 5 years, without prior permission of the District Court. If your child requires
                       urgent funds for foreign medical treatment or university tuition, the surviving spouse or
                       guardian faces 18 to 36 months of tedious court proceedings.
@@ -483,7 +483,7 @@ export default function TestamentaryTrustClauseClient() {
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under the Indian Majority Act, 1875, childhood legally ends at midnight on the 18th
-                      birthday. Direct bequests force bank accounts, demat portfolios, and property titles to pass
+                      birthday. Direct bequests force bank accounts, demat portfolios, and asset titles to pass
                       entirely into the teenager&apos;s independent control. Very few 18-year-olds possess the emotional
                       maturity to manage multi-crore wealth, leaving them vulnerable to reckless spending, peer
                       exploitation, or predatory influences.
@@ -492,7 +492,7 @@ export default function TestamentaryTrustClauseClient() {
                 </div>
 
                 <p>
-                  A testamentary trust completely eliminates both hazards. Because legal ownership is held by
+                  A Will trust completely eliminates both hazards. Because legal ownership is held by
                   responsible adult Trustees, Section 29 court permission is bypassed, and distributions can be
                   graduated across the child&apos;s early adulthood milestones.
                 </p>
@@ -506,10 +506,10 @@ export default function TestamentaryTrustClauseClient() {
                 <span>STRUCTURED COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Legal Comparison: Direct Inheritance vs Testamentary Trust
+                3. Legal Comparison: Direct Estate vs Will Trust
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Examine how a Testamentary Trust compares against direct Will bequests and living private trusts
+                Examine how a Will Trust compares against direct Will bequests and living private trusts
                 under Indian succession and trust statutes:
               </p>
 
@@ -522,7 +522,7 @@ export default function TestamentaryTrustClauseClient() {
                         <th className="py-3.5 px-4 sm:px-6">Parameter</th>
                         <th className="py-3.5 px-4 sm:px-6">Direct Bequest in Will</th>
                         <th className="py-3.5 px-4 sm:px-6 bg-[#C65378]/20 text-rose-200">
-                          Testamentary Trust in Will (Recommended)
+                          Will Trust in Will (Recommended)
                         </th>
                         <th className="py-3.5 px-4 sm:px-6">Living Private Family Trust</th>
                       </tr>
@@ -547,7 +547,7 @@ export default function TestamentaryTrustClauseClient() {
                       <tr className="hover:bg-slate-50/70">
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-slate-900">District Court Approval</td>
                         <td className="py-3.5 px-4 sm:px-6 text-rose-700">
-                          Mandatory under Sec 29 GWA to sell property
+                          Needed under Sec 29 GWA to sell asset
                         </td>
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-emerald-700 bg-rose-50/30">
                           Completely Bypassed (Trustees execute)
@@ -556,7 +556,7 @@ export default function TestamentaryTrustClauseClient() {
                       </tr>
                       <tr className="hover:bg-slate-50/70">
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-slate-900">Age of Asset Control</td>
-                        <td className="py-3.5 px-4 sm:px-6 text-rose-700">18 Years (Mandatory statutory age)</td>
+                        <td className="py-3.5 px-4 sm:px-6 text-rose-700">18 Years (Needed legal age)</td>
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-emerald-700 bg-rose-50/30">
                           Custom Milestones (e.g. 18, 21, 25 Yrs)
                         </td>
@@ -568,13 +568,13 @@ export default function TestamentaryTrustClauseClient() {
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-emerald-700 bg-rose-50/30">
                           None (Trust forms only post-death)
                         </td>
-                        <td className="py-3.5 px-4 sm:px-6 text-rose-700">Mandatory ITR-5 + Audit annually</td>
+                        <td className="py-3.5 px-4 sm:px-6 text-rose-700">Needed ITR-5 + Audit annually</td>
                       </tr>
                       <tr className="hover:bg-slate-50/70">
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-slate-900">Income Tax Rate Post-Death</td>
                         <td className="py-3.5 px-4 sm:px-6">Clubbed with parent under Sec 64(1A)</td>
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-emerald-700 bg-rose-50/30">
-                          Beneficiary Personal Slab (Sec 161)
+                          Heir Personal Slab (Sec 161)
                         </td>
                         <td className="py-3.5 px-4 sm:px-6 text-amber-700">
                           42.744% MMR if discretionary
@@ -586,7 +586,7 @@ export default function TestamentaryTrustClauseClient() {
                         <td className="py-3.5 px-4 sm:px-6 font-bold text-emerald-700 bg-rose-50/30">
                           High (Protected until milestone transfer)
                         </td>
-                        <td className="py-3.5 px-4 sm:px-6 text-emerald-700">High (Protected until distribution)</td>
+                        <td className="py-3.5 px-4 sm:px-6 text-emerald-700">High (Protected until split)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -606,8 +606,8 @@ export default function TestamentaryTrustClauseClient() {
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 6 of the Indian Trusts Act, 1882, a valid private trust requires four essential
-                  legal certainties: certainty of intention, certainty of purpose, certainty of beneficiaries,
-                  and certainty of trust property. To ensure your testamentary trust clause is legally challenge-proof,
+                  legal certainties: certainty of intention, certainty of purpose, certainty of heirs,
+                  and certainty of trust asset. To ensure your Will trust clause is legally fight-proof,
                   it must clearly define these four pillars:
                 </p>
 
@@ -618,7 +618,7 @@ export default function TestamentaryTrustClauseClient() {
                       <span>1. Specific Trust Corpus</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Explicitly identify which assets pass into the trust: residential apartments, ancestral shares,
+                      Explicitly identify which assets pass into the trust: home apartments, family shares,
                       fixed deposits, mutual fund folios, insurance proceeds, or a defined percentage of your residuary
                       estate. Ambiguity invalidates trust creation.
                     </p>
@@ -643,7 +643,7 @@ export default function TestamentaryTrustClauseClient() {
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A vital estate planning best practice is appointing one person as the <em>Guardian of the Person</em>
-                      (who handles parenting, emotional care, and daily home life) while appointing a separate individual
+                      (who handles parenting, emotional care, and daily home life) while appointing a separate single
                       or co-trustees as <em>Trustees of the Estate</em> (who manage investments and approve funds). This
                       creates vital checks and balances.
                     </p>
@@ -675,7 +675,7 @@ export default function TestamentaryTrustClauseClient() {
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Under Sections 119 and 120 of the Indian Succession Act, 1925, testators have the statutory right
+                  Under Sections 119 and 120 of the Indian Succession Act, 1925, Will makers have the legal right
                   to create contingent and deferred interests. Instead of an all-or-nothing release, our tested
                   Indian testamentary trust clause utilizes a <strong>three-tier milestone framework</strong>:
                 </p>
@@ -690,7 +690,7 @@ export default function TestamentaryTrustClauseClient() {
                         Milestone 1: Undergraduate Launch Tranche (20% Corpus)
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Released upon reaching 18 years of age. Designated specifically for college admission fees,
+                        Released upon reaching 18 years of age. Designated mainly for college admission fees,
                         hostel deposits, laptops, and undergraduate stipends. The remaining 80% remains locked in the
                         trust under professional trustee management.
                       </p>
@@ -722,9 +722,9 @@ export default function TestamentaryTrustClauseClient() {
                         Milestone 3: Final Capital Vesting &amp; Dissolution (Remaining 50% Corpus)
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        At age 25, the beneficiary has entered the workforce, developed financial awareness, and gained
+                        At age 25, the heir has entered the workforce, developed financial awareness, and gained
                         real-world experience. The trustees convey the remaining liquid assets and execute conveyance of
-                        immovable properties, dissolving the trust.
+                        land assets, dissolving the trust.
                       </p>
                     </div>
                   </div>
@@ -745,11 +745,11 @@ export default function TestamentaryTrustClauseClient() {
                 <p>
                   For parents of children with physical, cognitive, or psychiatric disabilities (such as autism,
                   cerebral palsy, or intellectual impairment), estate planning is a matter of survival. An ordinary
-                  Will that passes assets to a special needs child upon age 18 creates catastrophic vulnerability: the
+                  Will that passes assets to a special needs child upon age 18 creates catastrophic risk: the
                   child cannot manage accounts, while unscrupulous relatives or third parties can siphon off assets.
                 </p>
                 <p>
-                  A <strong>Special Needs Testamentary Trust</strong> established inside your Will solves this through
+                  A <strong>Special Needs Will Trust</strong> established inside your Will solves this through
                   three vital safeguards:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
@@ -769,7 +769,7 @@ export default function TestamentaryTrustClauseClient() {
                       <span>National Trust Act Sync</span>
                     </div>
                     <p className="text-slate-600 leading-relaxed">
-                      Coordinates with Section 14 of the National Trust Act, 1999 for statutory legal guardianship
+                      Coordinates with Section 14 of the National Trust Act, 1999 for legal legal child care
                       via Local Level Committees (LLC headed by District Collector).
                     </p>
                   </div>
@@ -798,13 +798,13 @@ export default function TestamentaryTrustClauseClient() {
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A major risk in modern estate transmission is that a child may face future business insolvency,
+                  A major risk in modern estate transfer is that a child may face future business insolvency,
                   personal loans, startup liquidation, or acrimonious divorce proceedings. If assets were inherited
                   outright, creditors or estranged spouses can attach bank accounts, claim alimony charges, or auction
-                  properties under the Insolvency and Bankruptcy Code (IBC) or Code of Civil Procedure (CPC).
+                  assets under the Insolvency and Bankruptcy Code (IBC) or Code of Civil Step (CPC).
                 </p>
                 <p>
-                  By inserting a <strong>Spendthrift &amp; Anti-Alienation Clause</strong> into your testamentary trust:
+                  By inserting a <strong>Spendthrift &amp; Anti-Alienation Clause</strong> into your Will trust:
                 </p>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700 list-disc pl-5">
                   <li>
@@ -812,12 +812,12 @@ export default function TestamentaryTrustClauseClient() {
                     right to discretionary income and milestone tranches, not legal title.
                   </li>
                   <li>
-                    <strong>Immunity from Attachment:</strong> Because the beneficiary cannot assign, pledge, or
+                    <strong>Immunity from Attachment:</strong> Because the heir cannot assign, pledge, or
                     mortgage their future expectancy, creditors have zero legal standing to attach the trust corpus.
                   </li>
                   <li>
-                    <strong>Matrimonial Separation:</strong> Assets held inside an irrevocable testamentary trust do not
-                    constitute shared marital property or personal assets in maintenance or alimony disputes.
+                    <strong>Matrimonial Separation:</strong> Assets held inside an irrevocable Will trust do not
+                    constitute shared marital asset or personal assets in maintenance or alimony fights.
                   </li>
                 </ul>
               </div>
@@ -833,7 +833,7 @@ export default function TestamentaryTrustClauseClient() {
                 8. Ready-to-Use Legal Clauses: Complete Copyable Formats
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select your required clause variant below. These clauses have been vetted by Senior Succession Counsel
+                Select your required clause variant below. These clauses have been vetted by Senior Estate Counsel
                 compliant with the Indian Trusts Act, 1882 and Indian Succession Act, 1925. Click &ldquo;Copy Clause to Clipboard&rdquo;
                 to insert directly into your Will draft.
               </p>
@@ -929,12 +929,12 @@ export default function TestamentaryTrustClauseClient() {
                 <span>OPERATIONAL PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Executing a Will with a Trust Clause
+                9. Step-by-Step SOP: Signing a Will with a Trust Clause
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To ensure that your testamentary trust clause executes seamlessly upon your demise without family
-                  litigation or revenue rejection, follow this verified five-step protocol:
+                  To ensure that your Will trust clause executes seamlessly upon your demise without family
+                  court fights or revenue rejection, follow this checked five-step protocol:
                 </p>
 
                 <div className="space-y-3">
@@ -944,10 +944,10 @@ export default function TestamentaryTrustClauseClient() {
                     </span>
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-sm">
-                        Embed Clauses Inside the Main Will Document
+                        Embed Clauses Inside the Main Will Paper
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Do not execute a separate trust deed during your lifetime. Embed the testamentary trust clause
+                        Do not execute a separate trust deed during your lifetime. Embed the Will trust clause
                         directly within your Will, designating the Executor and Trustees by name, PAN, and Aadhaar.
                       </p>
                     </div>
@@ -964,7 +964,7 @@ export default function TestamentaryTrustClauseClient() {
                       <p className="text-xs text-slate-600 leading-relaxed">
                         Under Section 63 of the Indian Succession Act, 1925, sign the Will in the simultaneous presence
                         of two witnesses. Crucially, under Section 67 ISA, neither the designated Trustees, nor the
-                        Guardian, nor the minor child should be attesting witnesses to prevent legacy disqualification.
+                        Guardian, nor the minor child should be signing witnesses to prevent legacy disqualification.
                       </p>
                     </div>
                   </div>
@@ -975,12 +975,12 @@ export default function TestamentaryTrustClauseClient() {
                     </span>
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-sm">
-                        Register the Will at Sub-Registrar Office (Recommended)
+                        Register the Will at SRO office (Recommended)
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        While Will registration is optional under Section 18 of the Registration Act, 1908, registering
-                        a Will containing a testamentary trust at the SRO establishes undisputed authenticity, mental
-                        soundness, and date of execution, dramatically minimizing probate contests.
+                        While Will filing is a choice under Section 18 of the Filing Act, 1908, registering
+                        a Will containing a Will trust at the SRO establishes undisputed authenticity, mental
+                        soundness, and date of signing, dramatically minimizing probate contests.
                       </p>
                     </div>
                   </div>
@@ -991,12 +991,12 @@ export default function TestamentaryTrustClauseClient() {
                     </span>
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-sm">
-                        Post-Demise Activation &amp; PAN Application
+                        Post-Demise Activation &amp; PAN Form
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Upon the testator&apos;s death, the Executor obtains the Death Certificate. The Trustees apply online
+                        Upon the Will maker&apos;s death, the Executor obtains the Death Paper. The Trustees apply online
                         on NSDL/UTIITSL for a separate PAN card for the trust under category &ldquo;Trust / Association of
-                        Persons (AOP)&rdquo; using the registered Will as the constitutional charter document.
+                        Persons (AOP)&rdquo; using the filed Will as the constitutional charter paper.
                       </p>
                     </div>
                   </div>
@@ -1007,7 +1007,7 @@ export default function TestamentaryTrustClauseClient() {
                     </span>
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-sm">
-                        Bank Transmission &amp; Milestone Tracking
+                        Bank Transfer &amp; Milestone Tracking
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
                         The Trustees open a bank account in the name of &ldquo;[Family Name] Minor Child Trust&rdquo;, transmit
@@ -1026,37 +1026,37 @@ export default function TestamentaryTrustClauseClient() {
                 <span>INCOME TAX ACT, 1961</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Income Tax Treatment: Representative Assessee Slabs
+                10. Income Tax Treatment: Agent Assessee Slabs
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A common worry among parents is how rental yield, interest, and dividends earned by the testamentary
+                  A common worry among parents is how rental yield, interest, and dividends earned by the Will
                   trust will be taxed before the child turns 18. Under Indian tax law, the rules are highly favorable:
                 </p>
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-3 shadow-xs">
                   <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                     <Scale className="w-4 h-4 text-[#C65378]" />
-                    <span>Sections 160(1)(iv) &amp; 161: Representative Assessee Mechanism</span>
+                    <span>Sections 160(1)(iv) &amp; 161: Agent Assessee Mechanism</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Trustees are treated as &ldquo;Representative Assessees&rdquo; on behalf of the minor beneficiary. Under
+                    Trustees are treated as &ldquo;Agent Assessees&rdquo; on behalf of the minor heir. Under
                     Section 161, tax is levied upon and recoverable from the trustee in like manner and to the same
-                    extent as it would be leviable upon the beneficiary.
+                    extent as it would be leviable upon the heir.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs">
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                       <div className="font-bold text-slate-900">Specific Determinate Trust</div>
                       <p className="text-slate-600 mt-1">
                         Because the Will clearly identifies the child and their percentage share, it is a &ldquo;determinate
-                        trust&rdquo;. Tax is charged at the beneficiary&apos;s individual personal income tax slab rate
+                        trust&rdquo;. Tax is charged at the heir&apos;s single personal income tax slab rate
                         (benefiting from the basic exemption limit), NOT the Maximum Marginal Rate.
                       </p>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                       <div className="font-bold text-slate-900">Clubbing Exemption Post-Death</div>
                       <p className="text-slate-600 mt-1">
-                        Section 64(1A) clubbing provisions apply when income arises to a minor child whose parents are
-                        alive. Upon the demise of the parent who created the testamentary trust, income belongs to the
+                        Section 64(1A) clubbing rules apply when income arises to a minor child whose parents are
+                        alive. Upon the demise of the parent who created the Will trust, income belongs to the
                         trust/minor and is not clubbed with unrelated third parties.
                       </p>
                     </div>
@@ -1083,7 +1083,7 @@ export default function TestamentaryTrustClauseClient() {
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Two software executives held 2 flats and ₹4.5 Crores in ESOPs. Feared sudden accidental demise
                       leaving minor child under the control of distant relatives. They created mirror Wills with a
-                      testamentary trust, appointing the maternal aunt as Guardian of Person and a trusted CA friend
+                      Will trust, appointing the maternal aunt as Guardian of Person and a trusted CA friend
                       as Trustee of Estate with 18/21/25 milestone vesting.
                     </p>
                   </div>
@@ -1094,8 +1094,8 @@ export default function TestamentaryTrustClauseClient() {
                     <div className="font-bold text-slate-900 text-sm">Business Family &amp; Special Needs Child</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A textile industrialist in South Mumbai had a 12-year-old child with severe autism. Standard
-                      succession would leave the child helpless. A Special Needs Testamentary Trust was drafted
-                      appointing a family elder and a registered national disability trust as joint trustees with
+                      estate would leave the child helpless. A Special Needs Will Trust was drafted
+                      appointing a family elder and a filed national disability trust as joint trustees with
                       lifelong caregiver funding and spendthrift protection.
                     </p>
                   </div>
@@ -1106,8 +1106,8 @@ export default function TestamentaryTrustClauseClient() {
                     <div className="font-bold text-slate-900 text-sm">Single Mother Protecting from In-Laws</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A widowed doctor in Delhi with an 8-year-old daughter faced pressure from aggressive in-laws.
-                      Direct bequest would give estranged in-laws leverage to apply for Section 29 court guardianship.
-                      By using a testamentary trust, legal title was securely vested in her own brother and an advocate
+                      Direct bequest would give estranged in-laws leverage to apply for Section 29 court child care.
+                      By using a Will trust, legal title was securely vested in her own brother and an lawyer
                       co-trustee, shielding the child completely.
                     </p>
                   </div>
@@ -1123,19 +1123,19 @@ export default function TestamentaryTrustClauseClient() {
                   <span>INTERACTIVE DIAGNOSTIC CALCULATOR</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-                  12. Diagnostic Tool: Minor Trust vs Guardianship Estimator
+                  12. Diagnostic Tool: Minor Trust vs Child Care Estimator
                 </h3>
                 <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
                   Wondering whether your family situation requires a simple guardian nomination or an advanced
-                  Testamentary Trust? Use our interactive diagnostic tool to calculate Section 29 court approval
-                  timelines, stamp duty differences, and milestone distribution modeling.
+                  Will Trust? Use our free diagnostic tool to calculate Section 29 court approval
+                  timelines, stamp duty differences, and milestone split modeling.
                 </p>
                 <div className="pt-2">
                   <Link
                     href="/tools/minor-child-trust-vs-guardianship-estimator"
                     className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs sm:text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                   >
-                    <span>Launch Minor Child Trust vs Guardianship Tool</span>
+                    <span>Launch Minor Child Trust vs Child Care Tool</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -1153,7 +1153,7 @@ export default function TestamentaryTrustClauseClient() {
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Share this practical 10-point operational checklist with your nominated trustees so they know exact
-                post-demise legal procedures:
+                post-demise legal steps:
               </p>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4">
@@ -1181,10 +1181,10 @@ export default function TestamentaryTrustClauseClient() {
                 </div>
 
                 <ol className="space-y-2.5 text-xs text-slate-700 leading-relaxed list-decimal pl-4">
-                  <li>Obtain certified original Death Certificate from Municipal Corporation / Gram Panchayat.</li>
-                  <li>Locate original registered Will containing the Section 5 Testamentary Trust Clause.</li>
+                  <li>Obtain certified original Death Paper from City City Board / Gram Panchayat.</li>
+                  <li>Locate original filed Will containing the Section 5 Will Trust Clause.</li>
                   <li>
-                    If property is situated in Kolkata, Chennai, or Mumbai, apply for High Court Probate (ISA Section 213).
+                    If asset is situated in Kolkata, Chennai, or Mumbai, apply for High Court Probate (ISA Section 213).
                   </li>
                   <li>
                     Apply for separate PAN Card for the Trust under category &ldquo;Trust / Association of Persons&rdquo; (Section 160/161).
@@ -1193,16 +1193,16 @@ export default function TestamentaryTrustClauseClient() {
                     Open dedicated joint bank current/savings account in name of &ldquo;[Family Name] Minor Child Trust&rdquo;.
                   </li>
                   <li>
-                    Submit transmission claims for demat equities, mutual funds, and fixed deposits into the trust bank account.
+                    Submit transfer claims for demat equities, mutual funds, and fixed deposits into the trust bank account.
                   </li>
                   <li>
-                    Record Revenue Mutation in Land Records / Municipal Records reflecting Trustees as Legal Representatives.
+                    Record Revenue Name Change in Land Records / City Records reflecting Trustees as Legal Agents.
                   </li>
                   <li>
-                    Configure automated calendar alerts for beneficiary milestone birthdays (18th: 20%, 21st: 30%, 25th: 50%).
+                    Configure automated calendar alerts for heir milestone birthdays (18th: 20%, 21st: 30%, 25th: 50%).
                   </li>
                   <li>
-                    Appoint independent Chartered Accountant to audit annual accounts and file ITR-5 at beneficiary slab rates.
+                    Appoint independent Chartered Accountant to audit annual accounts and file ITR-5 at heir slab rates.
                   </li>
                   <li>
                     Strictly segregate Trustee personal funds from Trust funds to avoid breach of trust under Section 51 Indian Trusts Act.
@@ -1218,7 +1218,7 @@ export default function TestamentaryTrustClauseClient() {
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Frequently Asked Questions: Testamentary Trust Clauses
+                Frequently Asked Questions: Will Trust Clauses
               </h3>
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, idx) => {
@@ -1258,7 +1258,7 @@ export default function TestamentaryTrustClauseClient() {
                 <span>LEGAL EXPERTISE &amp; INSTITUTIONAL BACKING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Legal Backing: Senior Succession Counsel &amp; AMA Solutions
+                Legal Backing: Senior Estate Counsel &amp; AMA Solutions
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 space-y-4 shadow-xs">
                 <div className="flex items-center gap-4">
@@ -1267,28 +1267,28 @@ export default function TestamentaryTrustClauseClient() {
                   </div>
                   <div>
                     <div className="font-extrabold text-slate-900 text-base sm:text-lg">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel • AMA Legal Solutions
+                      Senior Estate Counsel • AMA Legal Solutions
                     </div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Specializing in testamentary trust engineering, cross-border NRI estate structuring, High Court
-                  probate litigation, and Guardians and Wards Act defense. All templates and clauses on WillDrafting.in
-                  are continuously vetted to conform with latest Supreme Court precedents and statutory amendments.
+                  Specializing in Will trust engineering, cross-border NRI estate structuring, High Court
+                  probate court fights, and Guardians and Wards Act defense. All templates and clauses on WillDrafting.in
+                  are continuously vetted to conform with latest Supreme Court precedents and legal amendments.
                 </p>
                 <div className="flex flex-wrap items-center gap-4 pt-2 text-xs font-semibold text-slate-600 border-t border-slate-100">
                   <span className="flex items-center gap-1.5 text-emerald-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    Bar Council of India Verified
+                    Bar Council of India Checked
                   </span>
                   <span>•</span>
-                  <span>Pan-India Testamentary Trust Advisory</span>
+                  <span>Pan-India Will Trust Advisory</span>
                   <span>•</span>
                   <Link href="/contact" className="text-[#C65378] hover:underline font-bold">
-                    Schedule Private Consultation
+                    Schedule Private Talk
                   </Link>
                 </div>
               </div>
@@ -1301,32 +1301,54 @@ export default function TestamentaryTrustClauseClient() {
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Statutory Citations: Governing Indian Acts &amp; Precedents
+                Legal Citations: Governing Indian Acts &amp; Precedents
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1">
                   <div className="font-bold text-slate-900">Indian Trusts Act, 1882</div>
                   <div className="text-slate-500">Sections 5, 6, 11, 20 &amp; 51</div>
-                  <div className="text-[11px] text-slate-400">Creation of testamentary trusts without stamp duty.</div>
+                  <div className="text-[11px] text-slate-400">Creation of Will trusts without stamp duty.</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1">
                   <div className="font-bold text-slate-900">Indian Succession Act, 1925</div>
                   <div className="text-slate-500">Sections 63, 67, 119, 120 &amp; 307</div>
-                  <div className="text-[11px] text-slate-400">Attestation, contingent vesting, and executor powers.</div>
+                  <div className="text-[11px] text-slate-400">Witness Signing, contingent vesting, and executor powers.</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1">
                   <div className="font-bold text-slate-900">Guardians and Wards Act, 1890</div>
                   <div className="text-slate-500">Sections 7, 28 &amp; 29</div>
-                  <div className="text-[11px] text-slate-400">Restrictions on alienation of minor property.</div>
+                  <div className="text-[11px] text-slate-400">Restrictions on alienation of minor asset.</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1">
                   <div className="font-bold text-slate-900">Income Tax Act, 1961</div>
                   <div className="text-slate-500">Sections 160, 161 &amp; 164</div>
-                  <div className="text-[11px] text-slate-400">Representative assessee tax slabs for trusts.</div>
+                  <div className="text-[11px] text-slate-400">Agent assessee tax slabs for trusts.</div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Matching Exact Reference Style)
@@ -1339,21 +1361,21 @@ export default function TestamentaryTrustClauseClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Section 5 private trust creation inside Wills,
+                Expert in Indian testamentary jurisprudence, Section 5 private trust creation inside Wills,
                 minor child estate protection, and High Court probate representation.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1367,10 +1389,10 @@ export default function TestamentaryTrustClauseClient() {
                   <span>PREVENT GUARDIANSHIP COURT RED TAPE</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Minor Child with a Testamentary Trust Will
+                  Protect Your Minor Child with a Will Trust Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Draft a comprehensive Indian Will incorporating milestone payout schedules (18, 21, 25 years),
+                  Draft a full Indian Will incorporating milestone payout schedules (18, 21, 25 years),
                   trusted guardian nominations, and zero upfront trust stamp duty.
                 </p>
                 <button
@@ -1396,15 +1418,15 @@ export default function TestamentaryTrustClauseClient() {
                   High-Net-Worth Estate or Special Needs Child?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Consult Senior Succession Advocates at AMA Legal Solutions for custom multi-generational family
-                  trust structuring, institutional trusteeship, and business succession.
+                  Consult Senior Estate Lawyers at AMA Legal Solutions for custom multi-generational family
+                  trust structuring, institutional trusteeship, and business estate.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1417,7 +1439,7 @@ export default function TestamentaryTrustClauseClient() {
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Indian Trusts Act Section 5:</strong> Zero upfront stamp duty or registration costs.
+                      <strong>Indian Trusts Act Section 5:</strong> Zero upfront stamp duty or filing costs.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -1435,7 +1457,7 @@ export default function TestamentaryTrustClauseClient() {
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Spendthrift Protection:</strong> Shields child from creditors and marital disputes.
+                      <strong>Spendthrift Protection:</strong> Shields child from creditors and marital fights.
                     </span>
                   </li>
                 </ul>

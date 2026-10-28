@@ -142,7 +142,7 @@ export default function MumbaiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mumbai: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai.",
+          "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset split, and lawyer talk across Mumbai.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MumbaiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mumbai - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Maharashtra IGR Sub-Registrar registration, and Bombay High Court probate guidance across.",
+          "Professional Will drafting, lawyer check, Maharashtra IGR SRO filing, and Bombay High Court probate guidance across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -256,38 +256,38 @@ export default function MumbaiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Mumbai",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Maharashtra.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Maharashtra.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Mumbai Assets and Beneficiaries",
-            text: "Itemize your Mumbai assets including CHS apartments, commercial units, demat portfolios, and bank accounts. Appoint your beneficiaries and a trusted executor.",
+            text: "Itemize your Mumbai assets including CHS apartments, shop units, demat portfolios, and bank accounts. Appoint your heirs and a trusted executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Statutory Succession Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate survivorship, specific bequest, and revocation clauses.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate survivorship, specific bequest, and revocation clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 sheets and sign each page before two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Appointment on IGR Maharashtra e-Stepin",
-            text: "Schedule an e-appointment on igrmaharashtra.gov.in for your jurisdictional Sub-Registrar office and pay the nominal ₹100 registration fee online.",
+            text: "Schedule an e-appointment on igrmaharashtra.gov.in for your local SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Attend the Sub-Registrar office with both witnesses and original IDs for biometric thumbprinting, web-camera photo capture, and official Book III registration.",
+            text: "Attend the SRO office with both witnesses and original IDs for biometric thumbprinting, web-camera photo capture, and official Book III filing.",
           },
         ],
       },

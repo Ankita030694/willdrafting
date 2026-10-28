@@ -180,7 +180,7 @@ export default function MaharashtraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Maharashtra - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, IGR Maharashtra e-Stepin filing, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -263,38 +263,38 @@ export default function MaharashtraLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Maharashtra",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Maharashtra.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Maharashtra.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Assets and Designate Beneficiaries",
-            text: "List your Maharashtra assets including CHS apartments, CIDCO/MHADA units, agricultural 7/12 plots, bank FDs, mutual funds, and demat portfolios. Nominate primary beneficiaries and an alternate executor.",
+            text: "List your Maharashtra assets including CHS apartments, CIDCO/MHADA units, farm 7/12 plots, bank FDs, mutual funds, and demat portfolios. Nominate primary heirs and an alternate executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Mandatory Legal Clauses",
-            text: "Draft your Will using our online legal platform or with a senior High Court advocate to incorporate revocation, survivorship, specific bequests, and executor appointment.",
+            text: "Draft your Will using our online legal platform or with a senior High Court lawyer to incorporate revocation, survivorship, specific bequests, and executor appointment.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book SRO Slot on IGR Maharashtra e-Stepin Portal",
-            text: "Book an appointment on the IGR Maharashtra e-Stepin portal (igrmaharashtra.gov.in) for your local Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an appointment on the IGR Maharashtra e-Stepin portal (igrmaharashtra.gov.in) for your local SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, live webcam photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, live webcam photo capture, and official Book III filing.",
           },
         ],
       },

@@ -130,7 +130,7 @@ export default function ExecutorDutiesTimelinePage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Personalized 90-day and 180-day Indian executor roadmap generating statutory deadlines under Indian Succession Act, 1925 (Sections 316-369).",
+          "Personalized 90-day and 180-day Indian executor roadmap generating legal deadlines under Indian Succession Act, 1925 (Sections 316-369).",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "What should an executor do first after the death of the testator?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 316 of the Indian Succession Act, 1925, the executor's immediate statutory duty is to provide a suitable funeral for the deceased according to their religious rites and station in life. Under Section 319, necessary funeral and medical expenses hold first legal charge on the deceased estate and must be paid before any other debts or legacies.",
+              text: "Under Section 316 of the Indian Succession Act, 1925, the executor's immediate legal duty is to provide a suitable funeral for the deceased according to their religious rites and station in life. Under Section 319, necessary funeral and medical expenses hold first legal charge on the deceased estate and must be paid before any other debts or legacies.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "Is probate mandatory for an executor to act in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Sections 57 and 213 of the Indian Succession Act, 1925, probate is mandatory for Wills made by Hindus, Buddhists, Sikhs, and Jains only if executed within the ordinary original civil jurisdiction of the High Courts of Mumbai, Chennai, or Kolkata, or if immovable property bequeathed is located within these cities. Outside these presidency towns, probate is optional unless demanded by institutions or contested by heirs.",
+              text: "Under Sections 57 and 213 of the Indian Succession Act, 1925, probate is needed for Wills made by Hindus, Buddhists, Sikhs, and Jains only if signed within the ordinary original civil area of the High Courts of Mumbai, Chennai, or Kolkata, or if land asset bequeathed is located within these cities. Outside these presidency towns, probate is a choice unless demanded by institutions or contested by heirs.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "What is the statutory deadline to exhibit an asset inventory in court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 317(1) of the Indian Succession Act, 1925, an executor who has been granted probate must exhibit a full and true inventory of all property in possession and credits within 6 months from the grant. The executor must also exhibit a full account of the administration of the estate within 1 year.",
+              text: "Under Section 317(1) of the Indian Succession Act, 1925, an executor who has been granted probate must exhibit a full and true inventory of all asset in possession and credits within 6 months from the grant. The executor must also exhibit a full account of the care of the estate within 1 year.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "What is the legal order of paying debts from a deceased estate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The statutory hierarchy under Sections 319 to 323 is: (1) Funeral and deathbed medical expenses (Section 319), (2) Expenses of obtaining probate and legal administration (Section 320), (3) Wages of domestic servants and laborers for 3 months preceding death (Section 321), (4) All other unsecured debts rateably and equally (Section 322). All debts must be fully cleared before any specific or general legacies are distributed (Section 323).",
+              text: "The legal hierarchy under Sections 319 to 323 is: (1) Funeral and deathbed medical expenses (Section 319), (2) Expenses of obtaining probate and legal care (Section 320), (3) Wages of domestic servants and laborers for 3 months preceding death (Section 321), (4) All other unsecured debts rateably and equally (Section 322). All debts must be fully cleared before any specific or general legacies are distributed (Section 323).",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "What are the executor's tax duties under Section 159 of the Income Tax Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 159 of the Income Tax Act, 1961, the executor or legal representative is deemed to be an assessee liable to file the income tax return of the deceased for income earned up to the date of death and pay any outstanding taxes. The executor's personal liability is strictly capped at the value of the estate assets that come into their possession.",
+              text: "Under Section 159 of the Income Tax Act, 1961, the executor or legal agent is deemed to be an assessee liable to file the income tax return of the deceased for income earned up to the date of death and pay any outstanding taxes. The executor's personal liability is strictly capped at the value of the estate assets that come into their possession.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "Can an executor be held personally liable for wasting estate property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 369 of the Indian Succession Act, 1925 (devastavit), an executor who misapplies the estate or suffers it to be wasted or lost is personally liable to make good the loss to the beneficiaries and creditors. Publishing a statutory notice to creditors under Section 360 protects the executor from unknown liabilities.",
+              text: "Yes. Under Section 369 of the Indian Succession Act, 1925 (devastavit), an executor who misapplies the estate or suffers it to be wasted or lost is personally liable to make good the loss to the heirs and creditors. Publishing a legal notice to creditors under Section 360 protects the executor from unknown liabilities.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function ExecutorDutiesTimelinePage() {
             name: "Can an appointed executor refuse to act or renounce their appointment?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An individual named as executor has the legal right to renounce probate under Section 229 of the Indian Succession Act, provided they have not intermeddled with estate assets or acted as executor. Renunciation can be made orally before the district judge or by writing signed by the person renouncing.",
+              text: "Yes. An single named as executor has the legal right to renounce probate under Section 229 of the Indian Succession Act, provided they have not intermeddled with estate assets or acted as executor. Giving Up can be made orally before the district judge or by writing signed by the person renouncing.",
             },
           },
         ],

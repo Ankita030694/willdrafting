@@ -126,7 +126,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
     detail: "Issued by an MBBS practitioner. Attests to sound mental capacity and shields the estate against incapacity claims.",
     checked: false,
   },
@@ -138,8 +138,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Property Patta & Registered Sale Deed Copies",
-    detail: "Document copies verifying ownership, Patta number from Tamil Nilam portal, and Town Survey Land Register extract.",
+    label: "Asset Patta & Filed Sale Deed Copies",
+    detail: "Paper copies verifying ownership, Patta number from Tamil Nilam portal, and Town Survey Land Register extract.",
     checked: false,
   },
   {
@@ -242,7 +242,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally valid Will for your Madurai home houses, family lands, shop spaces, and bank investments.
-                Get senior lawyer drafting, TNREGINET registration guidance, and Madurai Bench High Court legal clarity across Madurai and southern Tamil Nadu.
+                Get senior lawyer drafting, TNREGINET filing guidance, and Madurai Bench High Court legal clarity across Madurai and southern Tamil Nadu.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -473,10 +473,10 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Madurai under Section 18(e) of the Registration Act, 1908. A Will on plain paper is valid if signed before two independent witnesses.
+                      Will filing is a choice in Madurai under Section 18(e) of the Filing Act, 1908. A Will on plain paper is valid if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -486,7 +486,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       <span>Madras HC Probate Context</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 read with Section 57, probate is not needed for Hindu Wills outside Chennai. In Madurai, a registered Will provides direct authority for asset transfer.
+                      Under Section 213 read with Section 57, probate is not needed for Hindu Wills outside Chennai. In Madurai, a filed Will provides direct office for asset transfer.
                     </p>
                   </div>
 
@@ -506,7 +506,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       <span>Online Patta Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables swift Patta transfer on the Tamil Nilam portal and Madurai Corporation tax record updates without waiting for civil court decrees.
+                      A filed Will enables swift Patta transfer on the Tamil Nilam portal and Madurai City Board tax record updates without waiting for civil court decrees.
                     </p>
                   </div>
                 </div>
@@ -524,13 +524,13 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   1. Legal Framework for Will Drafting in Madurai
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a Will in Madurai is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
+                  Writing a Will in Madurai is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
                   Any adult of sound mind who has reached 18 years can make a Will to distribute their self-acquired assets and defined joint family shares.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Madurai families often hold a diverse mix of assets.
                   These include home houses in K.K. Nagar, shop shops near Meenakshi Amman Temple, farm holdings in Melur, and bank deposits.
-                  A clearly drafted Will protects your loved ones from bitter property fights and complex split lawsuits.
+                  A clearly drafted Will protects your loved ones from bitter asset fights and complex split lawsuits.
                 </p>
               </div>
 
@@ -585,15 +585,15 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Madurai?
+                  2. Is Will Filing Needed in Madurai?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
-                  An unregistered Will signed on plain white paper is legally valid in Indian courts if attested by two witnesses.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is <strong>a choice</strong>.
+                  An plain Will signed on plain white paper is legally valid in Indian courts if attested by two witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, registering your Will at a Madurai SRO office via TNREGINET offers decisive legal benefits.
-                  Here is how registered Wills compare against unregistered papers:
+                  Here is how filed Wills compare against plain papers:
                 </p>
               </div>
 
@@ -602,15 +602,15 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Madurai SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Factor</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Madurai SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Government Custody</td>
-                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Tamil Nadu Registration Department</td>
+                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Tamil Nadu Filing Office</td>
                       <td className="p-4 bg-slate-50/20">Kept in private custody; vulnerable to destruction, damage, or loss</td>
                     </tr>
                     <tr>
@@ -621,16 +621,16 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Tamil Nilam Patta Transfer</td>
                       <td className="p-4 bg-rose-50/20">Enables direct revenue name change and Patta transfer with certified SRO copy</td>
-                      <td className="p-4 bg-slate-50/20">Tahsildar offices often insist on court succession papers or legal heir consensus</td>
+                      <td className="p-4 bg-slate-50/20">Tahsildar offices often insist on court estate papers or legal heir consensus</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Judicial Proof Value</td>
-                      <td className="p-4 bg-rose-50/20">Legal presumption of genuine signing under Section 60 of Registration Act</td>
-                      <td className="p-4 bg-slate-50/20">Heirs must formally prove Will maker capacity and attestation from scratch in court</td>
+                      <td className="p-4 bg-rose-50/20">Legal presumption of genuine signing under Section 60 of Filing Act</td>
+                      <td className="p-4 bg-slate-50/20">Heirs must formally prove Will maker capacity and witness signing from scratch in court</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Tamil Nadu Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 legal registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 legal filing fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -650,7 +650,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate is an official court decree certifying that a Will is genuine.
-                  It grants the named executor legal authority to administer and distribute estate assets.
+                  It grants the named executor legal office to administer and distribute estate assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only within the historical presidency towns of Chennai, Mumbai, and Kolkata.
@@ -668,11 +668,11 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     Understanding Key Legal Distinctions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Signing a Will means signing and attesting the deed before two witnesses. Registration records it with the Tamil Nadu Sub-Registrar. In contrast, probate is a formal court decree from the Principal District Court or High Court.
+                    Signing a Will means signing and signing the deed before two witnesses. Filing records it with the Tamil Nadu SRO. In contrast, probate is a formal court decree from the Principal District Court or High Court.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Letters of Administration apply when no executor is named</span>
+                    <span>Letters of Care apply when no executor is named</span>
                   </div>
                 </div>
 
@@ -724,8 +724,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   4. Madurai SRO office SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration in Madurai is administered by the Shop Taxes and Registration Department (TNREGINET).
-                  Under Section 32 of the Registration Act, you can register your Will where you reside or where your land and flats are situated.
+                  Will filing in Madurai is administered by the Shop Taxes and Filing Office (TNREGINET).
+                  Under Section 32 of the Filing Act, you can register your Will where you reside or where your land and flats are situated.
                 </p>
               </div>
 
@@ -829,8 +829,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Madurai Zones
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in K.K. Nagar, Anna Nagar, Tallakulam, or SS Colony</strong>? Revenue records, Tamil Nilam patta steps, and Sub-Registrar areas vary across Madurai.
-                  Whether you own an independent home in K.K. Nagar, shop shops near Meenakshi Temple, an family property in Mahal Road, or a plot in Othakadai, our High Court lawyers deliver tailored drafting, TNREGINET registration, and probate advisory:
+                  Looking for legally checked <strong>Will drafting services in K.K. Nagar, Anna Nagar, Tallakulam, or SS Colony</strong>? Revenue records, Tamil Nilam patta steps, and SRO areas vary across Madurai.
+                  Whether you own an independent home in K.K. Nagar, shop shops near Meenakshi Temple, an family asset in Mahal Road, or a plot in Othakadai, our High Court lawyers deliver tailored drafting, TNREGINET filing, and probate advisory:
                 </p>
               </div>
 
@@ -861,7 +861,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in K.K. Nagar &amp; Anna Nagar</strong>? These upscale home sectors feature independent villas, Tamil Nadu Housing Board (TNHB) layouts, and shop establishments.
-                      Our lawyers draft precise succession clauses to make sure your property tax assessment records with the Madurai Corporation transfer smoothly without family conflict.
+                      Our lawyers draft precise estate clauses to make sure your asset tax assessment records with the Madurai City Board transfer smoothly without family conflict.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -870,7 +870,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Court Complex, K.K. Nagar / Melur Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Help with TNREGINET token booking, Book III registration, and Section 31 home visits for senior residents across K.K. Nagar and Anna Nagar.
+                        Help with TNREGINET token booking, Book III filing, and Section 31 home visits for senior residents across K.K. Nagar and Anna Nagar.
                       </p>
                     </div>
                   </div>
@@ -924,7 +924,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Arasaradi SRO office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full lawyer-accompanied registration, doorstep home visits for elderly citizens, and seamless bank deposit transfer support.
+                        Full lawyer-accompanied filing, doorstep home visits for elderly citizens, and seamless bank deposit transfer support.
                       </p>
                     </div>
                   </div>
@@ -969,16 +969,16 @@ export default function MaduraiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Secure professional <strong>Will drafting in Central Heritage Madurai</strong>. The areas surrounding Sri Meenakshi Amman Temple feature century-old family assets, jewelry showrooms, and wholesale textile houses.
-                      Our lawyers draft airtight testamentary bequests to protect family trade assets and prevent prolonged joint family split suits.
+                      Our lawyers draft airtight Will bequests to protect family trade assets and prevent prolonged joint family split suits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Palace Road Registration Complex</span>
+                        <span>SRO Hub: Palace Road Filing Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Expert handling of family property titles, shop tenancy succession clauses, and prompt TNREGINET Book III signing.
+                        Expert handling of family asset titles, shop tenancy estate clauses, and prompt TNREGINET Book III signing.
                       </p>
                     </div>
                   </div>
@@ -1023,7 +1023,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Benefit from legal <strong>Will drafting in Mattuthavani &amp; Othakadai</strong>. This high-growth corridor along the Madurai Bench of Madras High Court hosts new gated layouts, DTCP-approved house sites, and modern IT professionals.
-                      We make sure exact survey boundary schedules to facilitate smooth Tamil Nilam Patta transfer upon succession.
+                      We make sure exact survey boundary schedules to facilitate smooth Tamil Nilam Patta transfer upon estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1057,7 +1057,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South-West Industrial Hub
+                        South-West Plant Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Thiruparankundram
@@ -1076,8 +1076,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will with top lawyers in <strong>Thiruparankundram &amp; Pasumalai</strong>. With historic home settlements, textile spinning mills, and manufacturing units in Kappalur SIDCO, business owners require structured succession.
-                      We draft clear bequeathals for private limited equity, industrial machinery, and personal real estate.
+                      Draft your Will with top lawyers in <strong>Thiruparankundram &amp; Pasumalai</strong>. With historic home settlements, textile spinning mills, and manufacturing units in Kappalur SIDCO, business owners require structured estate.
+                      We draft clear bequeathals for private limited equity, plant machinery, and personal real estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1086,13 +1086,13 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Thiruparankundram Station Road SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Coordination of industrial asset bequests, partnership interest transfers, and TNREGINET document registration.
+                        Coordination of plant asset bequests, partnership interest transfers, and TNREGINET paper filing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Textile Estate</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Textile Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1169,10 +1169,10 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Tamil Nadu
+                  6. Step-by-Step Will Filing in Tamil Nadu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will in Madurai follows five clear procedural steps established by the Tamil Nadu Registration Department:
+                  Registering your Will in Madurai follows five clear procedural steps established by the Tamil Nadu Filing Office:
                 </p>
               </div>
 
@@ -1197,10 +1197,10 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Doctor Certificate
+                      Doctor Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an MBBS medical fitness paper confirming sound mental health, especially for senior testators.
+                      Obtain an MBBS medical fitness paper confirming sound mental health, especially for senior Will makers.
                     </p>
                   </div>
                 </div>
@@ -1214,7 +1214,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       TNREGINET Token
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Book an appointment on tnreginet.gov.in, upload witness details, and pay the flat ₹100 registration fee online.
+                      Book an appointment on tnreginet.gov.in, upload witness details, and pay the flat ₹100 filing fee online.
                     </p>
                   </div>
                 </div>
@@ -1228,7 +1228,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       SRO Appearance
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar with two adult independent witnesses carrying original Aadhaar cards and photographs.
+                      Visit the SRO with two adult independent witnesses carrying original Aadhaar cards and photographs.
                     </p>
                   </div>
                 </div>
@@ -1242,7 +1242,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       Book III Archival
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Record biometric thumbprints and live digital photographs. Receive the registered Book III document safely.
+                      Record biometric thumbprints and live digital photographs. Receive the filed Book III paper safely.
                     </p>
                   </div>
                 </div>
@@ -1257,24 +1257,24 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Doorstep Will Registration for Senior Citizens
+                  7. Doorstep Will Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Navigating stairs and crowded government complexes can be difficult for senior citizens in Madurai.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar can visit your home, hospital, or care home to complete Will registration.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO can visit your home, hospital, or care home to complete Will filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Registration Operates in Madurai:
+                  How Doorstep Filing Operates in Madurai:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Inability Certificate</strong>
-                      <span className="text-slate-600">A registered medical practitioner certifies that the senior citizen is bedridden or cannot travel safely.</span>
+                      <strong className="text-slate-900 block">Doctor Inability Paper</strong>
+                      <span className="text-slate-600">A filed medical practitioner certifies that the senior citizen is bedridden or cannot travel safely.</span>
                     </div>
                   </div>
 
@@ -1282,7 +1282,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Petition</strong>
-                      <span className="text-slate-600">Our lawyers prepare and file the special commission petition before the jurisdictional Madurai Sub-Registrar.</span>
+                      <span className="text-slate-600">Our lawyers prepare and file the special commission petition before the local Madurai SRO.</span>
                     </div>
                   </div>
 
@@ -1313,7 +1313,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Will Registration
+                  8. Papers Checklist for Will Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your paperwork before visiting the SRO office in Madurai.
@@ -1367,8 +1367,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   9. Madurai Real Estate: Freehold, Plots &amp; Apartments
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property succession in Madurai depends on how title and land records are held.
-                  Here is how a Will affects major Madurai property categories:
+                  Asset estate in Madurai depends on how title and land records are held.
+                  Here is how a Will affects major Madurai asset categories:
                 </p>
               </div>
 
@@ -1419,7 +1419,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Stamp Duty &amp; Registration Fees in Madurai
+                  10. Official Stamp Duty &amp; Filing Fees in Madurai
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate sale deeds incur heavy stamp duty in Tamil Nadu.
@@ -1444,19 +1444,19 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Tamil Nadu</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">TNREGINET SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">TNREGINET SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Fee)</td>
-                      <td className="p-4">Shop Taxes &amp; Registration Dept</td>
+                      <td className="p-4">Shop Taxes &amp; Filing Dept</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; Portal Service Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹150</td>
-                      <td className="p-4">Sub-Registrar Counter / e-Sevai</td>
+                      <td className="p-4">SRO Counter / e-Sevai</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Doorstep Commission</td>
                       <td className="p-4 font-bold">₹500 – ₹1,000</td>
-                      <td className="p-4">Sub-Registrar Official Visit Fee</td>
+                      <td className="p-4">SRO Official Visit Fee</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1492,12 +1492,12 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for straightforward estates with bank deposits, mutual funds, and home property.
+                      Ideal for straightforward estates with bank deposits, mutual funds, and home asset.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Madurai Will maker</span>
+                        <span>Free Madurai Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1534,7 +1534,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate lawyer review for Madurai home houses, family lands, and business succession.
+                      Senior estate lawyer review for Madurai home houses, family lands, and business estate.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1570,13 +1570,13 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at Sub-Registrar offices across Madurai district.
+                      Full end-to-end filing help at SRO offices across Madurai district.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1593,7 +1593,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1679,10 +1679,10 @@ export default function MaduraiLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1691,7 +1691,7 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                     Tamil Nadu TNREGINET Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official registration portal: <code>tnreginet.gov.in</code> &amp; <code>eservices.tn.gov.in</code>.
+                    Official filing portal: <code>tnreginet.gov.in</code> &amp; <code>eservices.tn.gov.in</code>.
                   </p>
                 </div>
 
@@ -1731,7 +1731,29 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                 </Link>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

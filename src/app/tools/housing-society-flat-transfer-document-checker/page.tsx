@@ -92,7 +92,7 @@ export default function HousingSocietyDocumentCheckerPage() {
         url: canonicalUrl,
         name: "CHS Flat Transfer After Death Documents | WillDrafting",
         description:
-          "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.",
+          "Check cooperative housing society flat transfer after death papers under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -157,7 +157,7 @@ export default function HousingSocietyDocumentCheckerPage() {
             name: "Can a society demand Probate if a valid registered Will or Nominee exists?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Maharashtra Model Bye-Law 35, 36, and Section 154B-13, a society cannot insist on Probate if all legal heirs provide consent affidavits and execute an Indemnity Bond (Appendix 17) alongside public notice in newspapers. Probate is compulsory only if a court stay order exists or rival claimants file formal legal objections.",
+              text: "No. Under Maharashtra Model Bye-Law 35, 36, and Section 154B-13, a society cannot insist on Probate if all legal heirs provide consent sworn notes and execute an Indemnity Bond (Appendix 17) alongside public notice in newspapers. Probate is needed only if a court stay order exists or rival claimants file formal legal objections.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function HousingSocietyDocumentCheckerPage() {
             name: "What is the maximum transfer fee a housing society can charge upon death?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Maharashtra Government Notification issued under Section 79A of the MCS Act, the maximum transfer premium of Rs. 25,000 applies only to open-market sales. For flat transmission to legal heirs or nominees upon death, the transfer premium is strictly Rs. 0. The society may only charge a nominal Entrance Fee of Rs. 100 and a share transfer fee of Rs. 500.",
+              text: "Under Maharashtra Government Notification issued under Section 79A of the MCS Act, the maximum transfer premium of Rs. 25,000 applies only to open-market sales. For flat transfer to legal heirs or nominees upon death, the transfer premium is strictly Rs. 0. The society may only charge a nominal Entrance Fee of Rs. 100 and a share transfer fee of Rs. 500.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function HousingSocietyDocumentCheckerPage() {
             name: "What are the key Appendix Forms required for CHS flat transfer in Maharashtra?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The primary forms are: Appendix 14 (application by nominee), Appendix 15 (application by legal heir where no nomination exists), Appendix 16 (15-day newspaper public notice inviting objections), Appendix 17 (registered indemnity bond to the society), and Appendix 19 (release deed or consent NOC from co-heirs).",
+              text: "The primary forms are: Appendix 14 (form by nominee), Appendix 15 (form by legal heir where no nomination exists), Appendix 16 (15-day newspaper public notice inviting objections), Appendix 17 (filed indemnity bond to the society), and Appendix 19 (release deed or consent NOC from co-heirs).",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function HousingSocietyDocumentCheckerPage() {
             name: "What is the difference between an Associate Member and a Nominee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Associate Member is a person whose name appears jointly on the share certificate alongside the primary owner (under Section 154B-1(18)(b)). A Nominee is merely a person appointed by the original owner during their lifetime to receive shares in trust upon demise. An associate member who is also a co-purchaser has immediate rights to membership.",
+              text: "An Associate Member is a person whose name appears jointly on the share paper alongside the primary owner (under Section 154B-1(18)(b)). A Nominee is merely a person appointed by the original owner during their lifetime to receive shares in trust upon demise. An associate member who is also a co-purchaser has immediate rights to membership.",
             },
           },
           {
@@ -205,7 +205,7 @@ export default function HousingSocietyDocumentCheckerPage() {
             name: "Can legal heirs sell an inherited society flat without entering their names in the share certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Before executing a registered sale deed with an external buyer, the share certificate must first be formally transferred and endorsed in the name of the legal heirs by the society, and the property tax records must be mutated in the municipal corporation register.",
+              text: "No. Before signing a filed sale deed with an external buyer, the share paper must first be formally transferred and endorsed in the name of the legal heirs by the society, and the asset tax records must be mutated in the city city board register.",
             },
           },
         ],

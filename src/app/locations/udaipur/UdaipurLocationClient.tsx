@@ -118,8 +118,8 @@ const UDAIPUR_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
-    detail: "Printed on standard white A4 sheets. Under Rajasthan registration rules, non-judicial stamp paper is not required.",
+    label: "Two Printed Copies of the Will Paper",
+    detail: "Printed on standard white A4 sheets. Under Rajasthan filing rules, non-judicial stamp paper is not required.",
     checked: true,
   },
   {
@@ -131,31 +131,31 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be heirs receiving any property or bequest under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or bequest under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly recommended for senior citizens aged 60+. Certifies testamentary mental capacity, soundness, and voluntary intent.",
+    detail: "Strongly recommended for senior citizens aged 60+. Certifies Will mental capacity, soundness, and voluntary intent.",
     checked: false,
   },
   {
     id: "item-5",
     label: "ePanjiyan Rajasthan Online Appointment Slip",
-    detail: "Official slot receipt downloaded from epanjiyan.rajasthan.gov.in along with the e-GRAS nominal registration fee challan.",
+    detail: "Official slot receipt downloaded from epanjiyan.rajasthan.gov.in along with the e-GRAS nominal filing fee challan.",
     checked: false,
   },
   {
     id: "item-6",
     label: "UDA / UIT Allotment Letters & Nagar Nigam Tax Receipts",
-    detail: "Copies of Udaipur Development Authority lease deeds, municipal patta records, or property tax receipts for urban houses.",
+    detail: "Copies of Udaipur Development Office lease deeds, city patta records, or asset tax receipts for urban houses.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Marble Mining Lease Deeds & RIICO Allotment Papers",
-    detail: "Documents for marble processing units in Sukher, mineral quarrying permits, or RIICO industrial sheds in Madri/Kaladwas.",
+    detail: "Papers for marble processing units in Sukher, mineral quarrying permits, or RIICO plant sheds in Madri/Kaladwas.",
     checked: false,
   },
 ];
@@ -346,14 +346,14 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Rajasthan Testamentary Exemption
+                Rajasthan Will Exemption
               </span>
             </div>
 
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rule
@@ -494,16 +494,16 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>UDAIPUR ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Udaipur
+                  Key Highlights: Will Making &amp; Filing in Udaipur
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but Book III registration on ePanjiyan Rajasthan provides unassailable legal authenticity against split claims.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. An plain Will signed before two witnesses is valid, but Book III filing on ePanjiyan Rajasthan provides unassailable legal authenticity against split claims.
                     </p>
                   </div>
 
@@ -513,7 +513,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Udaipur is a non-presidency district under the Rajasthan High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Rajasthan, enabling direct property transfer with a registered Will.
+                      Udaipur is a non-presidency district under the Rajasthan High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Rajasthan, enabling direct asset transfer with a filed Will.
                     </p>
                   </div>
 
@@ -523,17 +523,17 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <span>Zero Rajasthan Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from ad-valorem stamp duty across Rajasthan. You only pay a flat ₹100 registration fee plus nominal scanning charges at the SRO office via ePanjiyan Rajasthan.
+                      Wills are 100% exempt from ad-valorem stamp duty across Rajasthan. You only pay a flat ₹100 filing fee plus nominal scanning charges at the SRO office via ePanjiyan Rajasthan.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>UDA &amp; Municipal Name Change</span>
+                      <span>UDA &amp; City Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership name change with the Udaipur Development Authority (UDA) and Nagar Nigam records for home plots, heritage havelis, and Sukher marble enterprises.
+                      A filed Will expedites ownership name change with the Udaipur Development Office (UDA) and Nagar Nigam records for home plots, heritage havelis, and Sukher marble enterprises.
                     </p>
                   </div>
                 </div>
@@ -551,10 +551,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession in Udaipur is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>. Any adult citizen possessing sound sound mind can lawfully bequeath self-acquired urban plots, heritage hotels, marble industrial assets, and financial investments.
+                  Will estate in Udaipur is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>. Any adult citizen possessing sound sound mind can lawfully bequeath self-acquired urban plots, heritage hotels, marble plant assets, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Udaipur presents a unique synthesis of heritage hospitality, marble processing enterprises, and planned urban housing schemes. A family estate may comprise a heritage haveli near Lake Pichola, an industrial marble sawing plant in Sukher or Kaladwas, and UDA plotted bungalows in Hiran Magri or Fatehpura. Without a tailored Will, surviving successors face prolonged office hurdles across municipal tax desks, development offices, and mineral departments.
+                  Udaipur presents a unique synthesis of heritage hospitality, marble processing enterprises, and planned urban housing schemes. A family estate may comprise a heritage haveli near Lake Pichola, an plant marble sawing plant in Sukher or Kaladwas, and UDA plotted bungalows in Hiran Magri or Fatehpura. Without a tailored Will, surviving successors face prolonged office hurdles across city tax desks, development offices, and mineral departments.
                 </p>
               </div>
 
@@ -565,7 +565,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound Will mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -595,7 +595,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -609,13 +609,13 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Udaipur?
+                  2. Is Will Filing Needed in Udaipur?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will drafted on plain white paper and signed in the presence of two independent witnesses is legally valid and admissible in Indian courts.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will Will is strictly <strong>a choice</strong>. An plain Will drafted on plain white paper and signed in the presence of two independent witnesses is legally valid and admissible in Indian courts.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly rising land values across Hiran Magri, Fatehpura, and Lake Pichola corridors, senior lawyers strongly advise formal registration at the SRO office. An official Book III registration eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
+                  However, with rapidly rising land values across Hiran Magri, Fatehpura, and Lake Pichola corridors, senior lawyers strongly advise formal filing at the SRO office. An official Book III filing eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
                 </p>
               </div>
 
@@ -624,9 +624,9 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Udaipur SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Udaipur SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -636,7 +636,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Stored privately; susceptible to misplacement or theft</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Protection from Challenge</td>
+                      <td className="p-4 font-semibold">Protection from Fight</td>
                       <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud or coercion</td>
                     </tr>
@@ -656,7 +656,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Frequent objections from other legal heirs during notice</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
+                      <td className="p-4 font-semibold">Government Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -676,7 +676,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   3. Udaipur Probate Law: Exemption Under Rajasthan Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most frequent misconceptions among Udaipur property owners is whether probate from the High Court is needed before inheriting real estate. The clear legal answer is <strong>no</strong>.
+                  One of the most frequent misconceptions among Udaipur asset owners is whether probate from the High Court is needed before inheriting real estate. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. Udaipur is a non-presidency district under the Rajasthan High Court. The High Court has consistently confirmed that court probate is non-needed for Hindu, Jain, Sikh, and Buddhist Wills in Rajasthan.
@@ -692,7 +692,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     Rajasthan High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Rajasthan High Court has firmly established that probate is optional for residents of Rajasthan. An executor or heir does not need to undergo lengthy probate proceedings to set up title before the Udaipur Development Authority, municipal bodies, or shop banks.
+                    The Rajasthan High Court has firmly established that probate is a choice for residents of Rajasthan. An executor or heir does not need to undergo lengthy probate proceedings to set up title before the Udaipur Development Office, city bodies, or shop banks.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -708,7 +708,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     When is Probate Filed in Udaipur District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate before the District Judge in Udaipur if disgruntled co-heirs file split suits or contest the Will maker mental capacity. A judicial probate grant provides a strong judgment <em>in rem</em> that shuts down any future challenge.
+                    An executor may voluntarily petition for probate before the District Judge in Udaipur if disgruntled co-heirs file split suits or contest the Will maker mental capacity. A judicial probate grant provides a strong judgment <em>in rem</em> that shuts down any future fight.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -726,10 +726,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Udaipur Sub-Registrar Offices: SRO Area Guide
+                  4. Udaipur SRO Offices: SRO Area Guide
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Udaipur operates designated Sub-Registrar Offices under the Registration and Stamps Department Rajasthan (ePanjiyan Rajasthan). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your residence or where any portion of your land and flats is situated.
+                  Udaipur operates designated SRO Offices under the Filing and Stamps Office Rajasthan (ePanjiyan Rajasthan). Under Section 32 of the Filing Act, your Will can be filed at the SRO office having area over your residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -780,7 +780,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Udaipur Registration District
+                        Udaipur Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -833,7 +833,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Udaipur span prime home corridors along Panchwati and Saheli Nagar, extensive planned UDA plotted sectors in Hiran Magri, world-renowned heritage hotels along Lake Pichola, mineral processing hubs in Sukher, and regional satellite trading hubs like Mavli and Fatehnagar. Our estate lawyers deliver customized legal drafting, ePanjiyan Rajasthan appointment scheduling, and Sub-Registrar accompaniment across all key sectors:
+                  Estate assets in Udaipur span prime home corridors along Panchwati and Saheli Nagar, extensive planned UDA plotted sectors in Hiran Magri, world-renowned heritage hotels along Lake Pichola, mineral processing hubs in Sukher, and regional satellite trading hubs like Mavli and Fatehnagar. Our estate lawyers deliver customized legal drafting, ePanjiyan Rajasthan appointment scheduling, and SRO accompaniment across all key sectors:
                 </p>
               </div>
 
@@ -916,7 +916,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Hiran Magri</strong> and Goverdhan Vilas for planned UDA (UIT) home plots, independent row houses, and shop complexes. Structures clear title devolution to facilitate quick UDA leasehold name change and property tax substitution.
+                      Customized <strong>Will drafting services in Hiran Magri</strong> and Goverdhan Vilas for planned UDA (UIT) home plots, independent row houses, and shop complexes. Structures clear title devolution to facilitate quick UDA leasehold name change and asset tax substitution.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -925,7 +925,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 4 Main Road, Hiran Magri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track ePanjiyan appointment scheduling, witness attestation, and certified copy retrieval.
+                        Fast-track ePanjiyan appointment scheduling, witness witness signing, and certified copy retrieval.
                       </p>
                     </div>
                   </div>
@@ -978,7 +978,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate / SRO 1</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Family haveli succession mapping, shop hospitality license transfers, and Book III registration.
+                        Family haveli estate mapping, shop hospitality license transfers, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1018,11 +1018,11 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sukher Market</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Bhuwana Bypass</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Amberi</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">NH-8 Industrial Belt</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">NH-8 Plant Belt</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Sukher and Bhuwana</strong> for marble industry entrepreneurs, gang-saw processing plants, and mineral trading houses. Governs leasehold plot succession, heavy equipment bequeathal, and partnership share transitions under corporate laws.
+                      Specialized <strong>Will drafting services in Sukher and Bhuwana</strong> for marble industry entrepreneurs, gang-saw processing plants, and mineral trading houses. Governs leasehold plot estate, heavy equipment bequeathal, and partnership share transitions under corporate laws.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1031,7 +1031,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Badgaon, NH-8</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset audit, mining leaseholder succession, and official ePanjiyan Rajasthan booking.
+                        Plant asset audit, mining leaseholder estate, and official ePanjiyan Rajasthan booking.
                       </p>
                     </div>
                   </div>
@@ -1075,7 +1075,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Shobhagpura</strong> and Navratna Complex for contemporary multi-storey apartments, luxury penthouses, and shop offices. Clarifies undivided land share (UDS) allocation, parking space succession, and mutual fund nominations.
+                      Tailored <strong>Will drafting services in Shobhagpura</strong> and Navratna Complex for contemporary multi-storey apartments, luxury penthouses, and shop offices. Clarifies undivided land share (UDS) allocation, parking space estate, and mutual fund nominations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1109,7 +1109,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; MSME Belt
+                        Plant &amp; MSME Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Girwa / Udaipur 2
@@ -1128,7 +1128,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Madri and Kaladwas</strong> for manufacturing unit owners, chemical/mineral processors, and engineering fabricators. Coordinates RIICO industrial lease transfers, corporate equity succession, and shop loan indemnities.
+                      Full <strong>Will drafting services in Madri and Kaladwas</strong> for manufacturing unit owners, chemical/mineral processors, and engineering fabricators. Coordinates RIICO plant lease transfers, corporate equity estate, and shop loan indemnities.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1137,7 +1137,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Girwa / Sector 4 Hiran Magri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        RIICO lease transfer compliance, partner equity succession, and Book III registration.
+                        RIICO lease transfer compliance, partner equity estate, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1150,7 +1150,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Madri RIICO Udaipur"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1181,7 +1181,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Mavli and Fatehnagar</strong> for farm landowners, trading firms, grain merchants, and regional enterprise owners. Structures clear farm land succession under the Rajasthan Tenancy Act without rural revenue fights.
+                      Dedicated <strong>Will drafting services in Mavli and Fatehnagar</strong> for farm landowners, trading firms, grain merchants, and regional enterprise owners. Structures clear farm land estate under the Rajasthan Tenancy Act without rural revenue fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1275,7 +1275,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to ePanjiyan in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Udaipur:
+                  Follow this checked 5-stage legal operating step to draft, execute, and register your Will before the SRO in Udaipur:
                 </p>
               </div>
 
@@ -1331,7 +1331,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       ePanjiyan Slot
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on ePanjiyan Rajasthan (epanjiyan.rajasthan.gov.in) and pay the ₹100 registration fee via e-GRAS challan.
+                      Schedule your slot on ePanjiyan Rajasthan (epanjiyan.rajasthan.gov.in) and pay the ₹100 filing fee via e-GRAS challan.
                     </p>
                   </div>
                 </div>
@@ -1360,23 +1360,23 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration in Udaipur
+                  7. Section 31 Doorstep SRO Filing in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Panchwati, Saheli Nagar, Hiran Magri, or regional rural areas, traveling to the SRO office can be a physical hardship. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital room to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Panchwati, Saheli Nagar, Hiran Magri, or regional rural areas, traveling to the SRO office can be a physical hardship. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private residence or hospital room to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates in Udaipur District:
+                  How Doorstep SRO Filing Operates in Udaipur District:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1384,7 +1384,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Udaipur Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the local Udaipur SRO.</span>
                     </div>
                   </div>
 
@@ -1400,7 +1400,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric thumb scanners and webcams to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric thumb scanners and webcams to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1415,10 +1415,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Udaipur Sub-Registrar Offices
+                  8. Paper Checklist for Udaipur SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1465,10 +1465,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Udaipur Property Types: UDA Plots, Mines &amp; Heritage
+                  9. Udaipur Asset Types: UDA Plots, Mines &amp; Heritage
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Udaipur differ substantially according to title classification and office regulatory authority:
+                  Estate steps in Udaipur differ substantially according to title classification and office regulatory office:
                 </p>
               </div>
 
@@ -1481,7 +1481,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     UDA Home Plots &amp; Villas
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Udaipur Development Authority leasehold and freehold plots across Hiran Magri, Fatehpura, and Shobhagpura require explicit testamentary bequest to effectuate rapid name change without civil succession papers.
+                    Udaipur Development Office leasehold and freehold plots across Hiran Magri, Fatehpura, and Shobhagpura require explicit Will bequest to effectuate rapid name change without civil estate papers.
                   </p>
                 </div>
 
@@ -1499,13 +1499,13 @@ export default function UdaipurLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Industrial Enterprises
+                    Plant Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Marble Units &amp; RIICO Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For marble processing units in Sukher and RIICO sheds in Madri/Kaladwas, leasehold succession requires clear bequeathal of lease rights, partner equity, and processing machinery in line with state industrial guidelines.
+                    For marble processing units in Sukher and RIICO sheds in Madri/Kaladwas, leasehold estate requires clear bequeathal of lease rights, partner equity, and processing machinery in line with state plant guidelines.
                   </p>
                 </div>
               </div>
@@ -1519,10 +1519,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official ePanjiyan Rajasthan Registration Fees
+                  10. Official ePanjiyan Rajasthan Filing Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale deeds or gift transfers that attract 5% to 7% stamp duty in Rajasthan, testamentary Wills are completely exempt from stamp duty. Government registration charges in Udaipur are strictly nominal:
+                  Unlike shop sale deeds or gift transfers that attract 5% to 7% stamp duty in Rajasthan, Will Wills are completely exempt from stamp duty. Government filing charges in Udaipur are strictly nominal:
                 </p>
               </div>
 
@@ -1532,7 +1532,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1542,14 +1542,14 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Rajasthan</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">ePanjiyan Rajasthan via e-GRAS Portal</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Pasting Charges</td>
                       <td className="p-4 font-bold">₹150 – ₹300</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1572,7 +1572,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family estate planning and property portfolio in Udaipur:
+                  Choose the legal help package tailored to your family estate planning and asset portfolio in Udaipur:
                 </p>
               </div>
 
@@ -1590,12 +1590,12 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with UDA plots, bank accounts, and demat assets.
+                      Ideal for single homeowners with UDA plots, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Rajasthan Will creator</span>
+                        <span>Free Rajasthan Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1668,13 +1668,13 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Udaipur SRO office or doorstep visit.
+                      End-to-end filing coordination across any Udaipur SRO office or doorstep visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1716,7 +1716,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Making in Udaipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Udaipur:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset filing in Udaipur:
                 </p>
               </div>
 
@@ -1761,7 +1761,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Rajasthan Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Rajasthan state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Rajasthan state filing systems:
                 </p>
               </div>
 
@@ -1777,10 +1777,10 @@ export default function UdaipurLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1789,7 +1789,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
                     Rajasthan Stamp Act 1998
                   </span>
                   <p className="text-xs text-slate-600">
-                    Legal schedule exemption providing 100% stamp duty exemption for testamentary Wills.
+                    Legal schedule exemption providing 100% stamp duty exemption for Will Wills.
                   </p>
                 </div>
 
@@ -1829,7 +1829,29 @@ export default function UdaipurLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1848,7 +1870,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Udaipur Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Udaipur Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1867,7 +1889,7 @@ export default function UdaipurLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Udaipur SRO Registered &amp; UDA Name Change Compliant</span>
+              <span>Udaipur SRO Filed &amp; UDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

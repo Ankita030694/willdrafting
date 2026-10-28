@@ -42,8 +42,8 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Rules: MCS Act 1960" },
-  { id: "interactive-checker", label: "2. Interactive Document Checker" },
+  { id: "statutory-foundation", label: "1. Legal Rules: MCS Act 1960" },
+  { id: "interactive-checker", label: "2. Free Paper Checker" },
   { id: "section-154b-13-hierarchy", label: "3. Section 154B-13 Legal Hierarchy" },
   { id: "supreme-court-precedents", label: "4. Supreme Court: Indrani Wahi Precedent" },
   { id: "model-bye-law-forms", label: "5. Appendix Forms: 14, 15, 17 & 19" },
@@ -53,43 +53,43 @@ const TOC_ITEMS = [
   { id: "step-by-step-sop", label: "9. Step-by-Step SOP for Heirs" },
   { id: "practical-case-scenarios", label: "10. Real Case Scenarios: Mumbai & Pune" },
   { id: "legal-templates-box", label: "11. Appendix 17 & 19 Copyable Formats" },
-  { id: "institutional-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
-    q: "Does a registered nominee become the absolute owner of the society flat?",
-    a: "No. Under the Supreme Court landmark ruling in Indrani Wahi v. Registrar of Co-operative Societies (2016) and Sarbati Devi (1984), a nominee is only an agent or trustee for the rightful legal heirs. Under Section 154B-13 of the Maharashtra Co-operative Societies Act, the nominee is admitted only as a Provisional Member until the succession rights are decided among lawful heirs.",
+    q: "Does a filed nominee become the absolute owner of the society flat?",
+    a: "No. Under the Supreme Court landmark ruling in Indrani Wahi v. Registrar of Co-operative Societies (2016) and Sarbati Devi (1984), a nominee is only an agent or trustee for the rightful legal heirs. Under Section 154B-13 of the Maharashtra Co-operative Societies Act, the nominee is admitted only as a Provisional Member until the estate rights are decided among lawful heirs.",
   },
   {
     q: "Can the Society Managing Committee demand a Probate before transferring the flat?",
-    a: "No, a society cannot insist on Probate if all legal heirs are united and execute an Indemnity Bond (Appendix 17) and Consent Affidavits (Appendix 19) along with a 15-day newspaper public notice (Appendix 16). Under Maharashtra Model Bye-Laws 35 and 36, and the Bombay High Court ruling in Ramdas Shivram Sattur, probate is mandatory only if rival family claimants file formal disputes in court.",
+    a: "No, a society cannot insist on Probate if all legal heirs are united and execute an Indemnity Bond (Appendix 17) and Consent Affidavits (Appendix 19) along with a 15-day newspaper public notice (Appendix 16). Under Maharashtra Model Bye-Laws 35 and 36, and the Bombay High Court ruling in Ramdas Shivram Sattur, probate is needed only if rival family claimants file formal fights in court.",
   },
   {
     q: "What is the maximum transfer fee a housing society can charge upon death?",
-    a: "Under the Maharashtra Government Notification under Section 79A of the MCS Act, the maximum transfer fee of Rs. 25,000 applies strictly to regular open-market sales. For transmission upon death to legal heirs or nominees, the transfer fee is strictly Rs. 0. The society can only collect a nominal Entrance Fee of Rs. 100 and a share transfer fee of Rs. 500.",
+    a: "Under the Maharashtra Government Notification under Section 79A of the MCS Act, the maximum transfer fee of Rs. 25,000 applies strictly to regular open-market sales. For transfer upon death to legal heirs or nominees, the transfer fee is strictly Rs. 0. The society can only collect a nominal Entrance Fee of Rs. 100 and a share transfer fee of Rs. 500.",
   },
   {
     q: "What happens if the housing society fails to respond within 90 days?",
-    a: "Under Section 154B-13(3) and Section 22(2) of the Maharashtra Co-operative Societies Act, the Managing Committee must decide on the membership transmission application within 90 days. If the society fails to communicate any decision within 90 days, the applicant is deemed to have been admitted as a member, and an immediate appeal lies to the Deputy Registrar under Section 23.",
+    a: "Under Section 154B-13(3) and Section 22(2) of the Maharashtra Co-operative Societies Act, the Managing Committee must decide on the membership transfer form within 90 days. If the society fails to communicate any decision within 90 days, the applicant is deemed to have been admitted as a member, and an immediate appeal lies to the Deputy Registrar under Section 23.",
   },
   {
     q: "What are the essential Appendix Forms required under Maharashtra Model Bye-Laws?",
-    a: "The primary forms are: Appendix 14 (membership application by nominee), Appendix 15 (membership application by legal heirs when no nomination exists), Appendix 16 (15-day newspaper notice inviting objections), Appendix 17 (registered indemnity bond to protect society), and Appendix 19 (consent and no-objection deed from other legal heirs).",
+    a: "The primary forms are: Appendix 14 (membership form by nominee), Appendix 15 (membership form by legal heirs when no nomination exists), Appendix 16 (15-day newspaper notice inviting objections), Appendix 17 (filed indemnity bond to protect society), and Appendix 19 (consent and no-objection deed from other legal heirs).",
   },
   {
     q: "What is the difference between an Associate Member and a Nominee?",
-    a: "An Associate Member holds joint ownership of shares on the share certificate during the lifetime of the member under Section 154B-1(18)(b). A Nominee is merely named in the society register to receive shares in trust upon death. An associate member who is also a co-owner in the registered sale deed has direct survivorship claims.",
+    a: "An Associate Member holds joint ownership of shares on the share paper during the lifetime of the member under Section 154B-1(18)(b). A Nominee is merely named in the society register to receive shares in trust upon death. An associate member who is also a co-owner in the filed sale deed has direct survivorship claims.",
   },
   {
-    q: "Is public notice in two newspapers compulsory for flat transmission?",
-    a: "Yes. When transferring flat shares without a court probate or succession certificate, Bye-Laws 35 and 36 require the society to publish a 15-day public notice in two local newspapers (one in English and one in the vernacular language, such as Marathi or Hindi) inviting objections at the applicant's expense.",
+    q: "Is public notice in two newspapers needed for flat transfer?",
+    a: "Yes. When transferring flat shares without a court probate or estate paper, Bye-Laws 35 and 36 require the society to publish a 15-day public notice in two local newspapers (one in English and one in the vernacular language, such as Marathi or Hindi) inviting objections at the applicant's expense.",
   },
   {
-    q: "Can legal heirs sell the flat before transferring the society share certificate?",
-    a: "No. Prospective buyers and home loan banks require a clear chain of title. The share certificate must first be formally endorsed with the names of the legal heirs, and municipal property tax records must be mutated before executing a registered sale deed.",
+    q: "Can legal heirs sell the flat before transferring the society share paper?",
+    a: "No. Prospective buyers and home loan banks require a clear chain of title. The share paper must first be formally endorsed with the names of the legal heirs, and city asset tax records must be mutated before signing a filed sale deed.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function HousingSocietyDocumentCheckerClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedBond, setCopiedBond] = useState<boolean>(false);
   const [copiedNoc, setCopiedNoc] = useState<boolean>(false);
@@ -173,7 +173,7 @@ export default function HousingSocietyDocumentCheckerClient() {
         },
         {
           name: "Certified Death Certificate",
-          desc: "Issued by the Municipal Corporation / local registrar of births & deaths.",
+          desc: "Issued by the City City Board / local registrar of births & deaths.",
           mandatory: true,
         },
         {
@@ -207,12 +207,12 @@ export default function HousingSocietyDocumentCheckerClient() {
       formsList = [
         {
           name: "Appendix 15 (Heir Membership Form)",
-          desc: "Statutory application under Section 154B-13 supported by registered Will.",
+          desc: "Legal form under Section 154B-13 supported by filed Will.",
           mandatory: true,
         },
         {
           name: "Certified Copy of Registered Will",
-          desc: "Photocopy with registration seal from Sub-Registrar Office alongside original for verification.",
+          desc: "Photocopy with filing seal from SRO office alongside original for check.",
           mandatory: true,
         },
         {
@@ -222,7 +222,7 @@ export default function HousingSocietyDocumentCheckerClient() {
         },
         {
           name: "Appendix 19 (Consent / NOC from Co-Heirs)",
-          desc: "Affidavit by other surviving family members affirming no objection to transmission.",
+          desc: "Sworn Note by other surviving family members affirming no objection to transfer.",
           mandatory: coHeirStatus === "amicable",
         },
         {
@@ -241,12 +241,12 @@ export default function HousingSocietyDocumentCheckerClient() {
       formsList = [
         {
           name: "Appendix 14 (Nominee Membership Form)",
-          desc: "Application for membership by registered nominee with nomination reference number.",
+          desc: "Form for membership by filed nominee with nomination reference number.",
           mandatory: true,
         },
         {
           name: "Certified Death Certificate",
-          desc: "Original or notarized copy issued by Municipal Corporation.",
+          desc: "Original or notarized copy issued by City City Board.",
           mandatory: true,
         },
         {
@@ -256,7 +256,7 @@ export default function HousingSocietyDocumentCheckerClient() {
         },
         {
           name: "Appendix 17 (Indemnity Bond by Nominee)",
-          desc: "Executed on Rs. 500 stamp paper acknowledging trustee status for legal heirs.",
+          desc: "Signed on Rs. 500 stamp paper acknowledging trustee status for legal heirs.",
           mandatory: true,
         },
         {
@@ -278,12 +278,12 @@ export default function HousingSocietyDocumentCheckerClient() {
       formsList = [
         {
           name: "Appendix 15 (Heir Membership Application)",
-          desc: "Application by testamentary heir under unregistered Will.",
+          desc: "Form by Will heir under plain Will.",
           mandatory: true,
         },
         {
           name: "Original Unregistered Will",
-          desc: "Original document signed by testator and two attesting witnesses.",
+          desc: "Original paper signed by Will maker and two signing witnesses.",
           mandatory: true,
         },
         {
@@ -293,12 +293,12 @@ export default function HousingSocietyDocumentCheckerClient() {
         },
         {
           name: "Appendix 19 (Consent Affidavits from All Class-I Heirs)",
-          desc: "Mandatory signed consent from spouse, children, and mother of deceased.",
+          desc: "Needed signed consent from spouse, children, and mother of deceased.",
           mandatory: true,
         },
         {
           name: "Appendix 16 (15-Day Public Notice in 2 Newspapers)",
-          desc: "Compulsory public objection window in English and local language newspapers.",
+          desc: "Needed public objection window in English and local language newspapers.",
           mandatory: true,
         },
       ];
@@ -312,7 +312,7 @@ export default function HousingSocietyDocumentCheckerClient() {
       formsList = [
         {
           name: "Appendix 15 (Legal Heir Membership Application)",
-          desc: "Application submitted jointly or by the designated family representative.",
+          desc: "Form submitted jointly or by the designated family agent.",
           mandatory: true,
         },
         {
@@ -322,7 +322,7 @@ export default function HousingSocietyDocumentCheckerClient() {
         },
         {
           name: "Appendix 19 (Registered Release Deed or Consent NOC)",
-          desc: "Relinquishment deed or notarized NOC from siblings and mother.",
+          desc: "Release deed or notarized NOC from siblings and mother.",
           mandatory: true,
         },
         {
@@ -347,17 +347,17 @@ export default function HousingSocietyDocumentCheckerClient() {
       formsList = [
         {
           name: "Appendix 15 (Sole Heir Membership Application)",
-          desc: "Standard application form for transmission of deceased member shares.",
+          desc: "Standard form form for transfer of deceased member shares.",
           mandatory: true,
         },
         {
           name: "Sole Heir Certificate / Family Pedigree Affidavit",
-          desc: "Affidavit affirmed before Executive Magistrate confirming no other Class-I heirs exist.",
+          desc: "Sworn Note affirmed before Executive Magistrate confirming no other Class-I heirs exist.",
           mandatory: true,
         },
         {
           name: "Appendix 17 (Indemnity Bond)",
-          desc: "Executed on Rs. 500 stamp paper safeguarding the society.",
+          desc: "Signed on Rs. 500 stamp paper safeguarding the society.",
           mandatory: true,
         },
         {
@@ -371,7 +371,7 @@ export default function HousingSocietyDocumentCheckerClient() {
     if (shareCertificateStatus === "lost") {
       formsList.push({
         name: "Police Lost Document FIR & Form 39 Indemnity",
-        desc: "Police Non-Cognizable report (NCR/FIR) and indemnity bond on Rs. 500 stamp paper for issuance of duplicate share certificate.",
+        desc: "Police Non-Cognizable report (NCR/FIR) and indemnity bond on Rs. 500 stamp paper for issuance of duplicate share paper.",
         mandatory: true,
       });
     }
@@ -379,7 +379,7 @@ export default function HousingSocietyDocumentCheckerClient() {
     if (saleDeedStatus === "old_unregistered") {
       formsList.push({
         name: "Stamp Duty Adjudication & Regularization Petition",
-        desc: "Old allotment agreements or unregistered deeds must be regularized at the Collector of Stamps before clean conveyance.",
+        desc: "Old allotment agreements or plain deeds must be regularized at the Collector of Stamps before clean conveyance.",
         mandatory: true,
       });
     }
@@ -528,7 +528,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Cooperative Housing Society Flat Transfer Document Checker
+            Cooperative Housing Society Flat Transfer Paper Checker
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -543,7 +543,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Building2 className="w-4 h-4" />
-              <span>Check Society Flat Documents</span>
+              <span>Check Society Flat Papers</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -551,7 +551,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -629,7 +629,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Sections 30, 79A, and 154B-13 of the MCS Act 1960, Model Bye-Laws 34-39, Delhi DCS Act 2003, and Supreme Court rulings in Indrani Wahi &amp; Sarbati Devi.
@@ -654,15 +654,15 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <strong>Nominee is Trustee, Not Absolute Owner:</strong> Under the landmark Supreme
                     Court ruling in <em>Indrani Wahi v. Registrar</em>, the cooperative society is bound to
                     transfer shares to the nominee, but the nominee holds title solely as a trustee for the
-                    lawful legal heirs under succession law.
+                    lawful legal heirs under estate law.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 154B-13 Statutory Hierarchy:</strong> In Maharashtra, Section 154B-13
-                    establishes that transmission takes place first via registered Will, followed by
-                    Heirship Certificate, Succession Certificate, Family Arrangement, or Nomination.
+                    <strong>Section 154B-13 Legal Hierarchy:</strong> In Maharashtra, Section 154B-13
+                    establishes that transfer takes place first via filed Will, followed by
+                    Heirship Paper, Estate Paper, Family Arrangement, or Nomination.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -691,13 +691,13 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Flat Transmission under MCS Act 1960
+                1. Legal Rules: Flat Transfer under MCS Act 1960
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In cities like Mumbai, Pune, Thane, and Delhi, cooperative housing societies (CHS)
                   manage most apartment buildings. When a flat owner dies, the family must transfer the
-                  share certificate. In legal terms, this is called <strong>transmission</strong>. It is
+                  share paper. In legal terms, this is called <strong>transfer</strong>. It is
                   different from a regular flat sale.
                 </p>
                 <p>
@@ -707,7 +707,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 </p>
                 <p>
                   Under <strong>Section 154B-13</strong>, housing societies must follow a clear priority
-                  order. The society must transfer the flat using a registered Will, a heir certificate, a
+                  order. The society must transfer the flat using a filed Will, a heir paper, a
                   court order, a family deed, or a nomination. A nominee who gets the flat without heir
                   consent is only a <strong>Provisional Member</strong>. The nominee holds the flat in trust
                   for the true legal heirs.
@@ -722,7 +722,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <span>DIAGNOSTIC COMPLIANCE ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Housing Society Flat Transfer Document Checker
+                2. Free Housing Society Flat Transfer Paper Checker
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your state, legal status, and family situation. Get an instant checklist of Appendix forms, fee limits, and probate rules.
@@ -734,7 +734,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                     <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Step 1: Select State / City Jurisdiction</span>
+                    <span>Step 1: Select State / City Area</span>
                   </label>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                     {[
@@ -767,7 +767,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                     <Users className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Step 2: Applicant Legal Standing / Document Held</span>
+                    <span>Step 2: Applicant Legal Standing / Paper Held</span>
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
                     {[
@@ -779,17 +779,17 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       {
                         id: "associate_joint",
                         title: "Associate / Joint Owner",
-                        desc: "Name already entered on share certificate as joint owner.",
+                        desc: "Name already entered on share paper as joint owner.",
                       },
                       {
                         id: "registered_will",
                         title: "Legal Heir with Registered Will",
-                        desc: "Named legatee in registered Last Will & Testament.",
+                        desc: "Named legatee in filed Last Will & Testament.",
                       },
                       {
                         id: "unregistered_will",
                         title: "Heir with Unregistered Will",
-                        desc: "Testament signed by deceased with 2 witnesses, not registered.",
+                        desc: "Testament signed by deceased with 2 witnesses, not filed.",
                       },
                       {
                         id: "intestate_heir",
@@ -885,12 +885,12 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <FileCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Step 4: Original Documents Available</span>
+                      <span>Step 4: Original Papers Available</span>
                     </label>
                     <div className="space-y-3">
                       <div>
                         <div className="text-[11px] font-semibold text-slate-600 mb-1">
-                          Original Society Share Certificate:
+                          Original Society Share Paper:
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                           <button
@@ -920,7 +920,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
 
                       <div>
                         <div className="text-[11px] font-semibold text-slate-600 mb-1">
-                          Flat Sale / Allotment Agreement:
+                          Flat Sale / Allotment Pact:
                         </div>
                         <div className="grid grid-cols-2 gap-2">
                           <button
@@ -932,7 +932,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                                 : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                             }`}
                           >
-                            Registered Sale Deed
+                            Filed Sale Deed
                           </button>
                           <button
                             type="button"
@@ -943,7 +943,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                                 : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                             }`}
                           >
-                            Old Unregistered Allotment
+                            Old Plain Allotment
                           </button>
                         </div>
                       </div>
@@ -977,7 +977,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       </div>
                     </div>
                     <div className="text-left sm:text-right text-xs text-white/70">
-                      <div className="font-semibold text-emerald-400">Statutory SLA: 90 Days</div>
+                      <div className="font-semibold text-emerald-400">Legal SLA: 90 Days</div>
                       <div>{results.statuteRef}</div>
                     </div>
                   </div>
@@ -992,7 +992,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 space-y-1">
                       <div className="text-[10px] font-bold text-white/60 uppercase tracking-wider flex items-center gap-1">
                         <Scale className="w-3 h-3 text-[#C65378]" />
-                        <span>Probate Requirement</span>
+                        <span>Probate Rule</span>
                       </div>
                       <div className="text-xs font-extrabold text-white">
                         {results.probateRequirement}
@@ -1016,7 +1016,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 space-y-1">
                       <div className="text-[10px] font-bold text-white/60 uppercase tracking-wider flex items-center gap-1">
                         <HandCoins className="w-3 h-3 text-emerald-400" />
-                        <span>Statutory Transfer Fee Cap</span>
+                        <span>Legal Transfer Fee Cap</span>
                       </div>
                       <div className="text-xs font-extrabold text-emerald-300">
                         {results.feeCap}
@@ -1046,7 +1046,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                   <div className="space-y-3 pt-2">
                     <div className="text-xs font-bold text-rose-200 uppercase tracking-wider flex items-center gap-2">
                       <FileCheck className="w-4 h-4 text-[#C65378]" />
-                      <span>Mandatory Application Documents &amp; Appendix Forms:</span>
+                      <span>Needed Form Papers &amp; Appendix Forms:</span>
                     </div>
                     <div className="space-y-2">
                       {results.formsList.map((form, idx) => (
@@ -1066,7 +1066,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                               <span>{form.name}</span>
                               {form.mandatory && (
                                 <span className="text-[9px] px-1.5 py-0.5 rounded bg-rose-500/30 text-rose-200 font-bold uppercase">
-                                  Mandatory
+                                  Needed
                                 </span>
                               )}
                             </div>
@@ -1085,7 +1085,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <span>
                       <strong>Section 154B-13(3) Deemed Membership Clause:</strong> If the Society
                       Managing Committee fails to communicate its decision within 90 days of receiving your
-                      complete application, you are legally deemed admitted as a member. If the committee
+                      complete form, you are legally deemed admitted as a member. If the committee
                       illegally stalls or demands unauthorized donations, you can file an appeal before the
                       Deputy Registrar under Section 23 of the MCS Act.
                     </span>
@@ -1137,7 +1137,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 </p>
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 shadow-xs">
                   <h3 className="font-extrabold text-slate-900 text-sm">
-                    Statutory Priority Order Under Section 154B-13:
+                    Legal Priority Order Under Section 154B-13:
                   </h3>
                   <div className="space-y-3 text-xs sm:text-sm">
                     <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-200/70">
@@ -1145,8 +1145,8 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                         1
                       </span>
                       <div>
-                        <strong>Registered Will:</strong> The highest priority instrument. If the deceased
-                        executed a registered Will, the society must transfer flat interest to the named
+                        <strong>Filed Will:</strong> The highest priority instrument. If the deceased
+                        signed a filed Will, the society must transfer flat interest to the named
                         legatee, provided no court injunction exists.
                       </div>
                     </div>
@@ -1156,9 +1156,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                         2
                       </span>
                       <div>
-                        <strong>Heirship Certificate or Succession Certificate:</strong> Where no Will
-                        exists, transmission proceeds upon production of a Legal Heir Certificate from the
-                        competent revenue authority or a court Succession Certificate.
+                        <strong>Heirship Paper or Estate Paper:</strong> Where no Will
+                        exists, transfer proceeds upon production of a Legal Heir Paper from the
+                        competent revenue office or a court Estate Paper.
                       </div>
                     </div>
 
@@ -1167,8 +1167,8 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                         3
                       </span>
                       <div>
-                        <strong>Family Arrangement / Partition Deed:</strong> A registered family settlement
-                        executed and signed by all surviving legal heirs designating the recipient member.
+                        <strong>Family Arrangement / Split Deed:</strong> A filed family deal
+                        signed and signed by all surviving legal heirs designating the recipient member.
                       </div>
                     </div>
 
@@ -1180,7 +1180,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                         <strong>Nomination (Provisional Membership Only):</strong> Where no documents under (1)
                         to (3) are submitted, the society transfers shares to the registered nominee as a{" "}
                         <strong>Provisional Member</strong> under Section 154B-13(2). The nominee holds the flat
-                        as a trustee and cannot sell or mortgage the property.
+                        as a trustee and cannot sell or mortgage the asset.
                       </div>
                     </div>
                   </div>
@@ -1201,7 +1201,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <p>
                   Managing committees frequently misunderstand the legal consequences of nomination. Two
                   pivotal Supreme Court judgments delineate the precise legal boundaries between society
-                  record updates and true property ownership.
+                  record updates and true asset ownership.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
@@ -1213,7 +1213,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <p className="text-xs text-slate-600 leading-relaxed">
                       The Supreme Court held that a society cannot reject a valid nominee. But this transfer
                       is only on paper. The nominee holds the flat in trust. The nominee must share the flat
-                      with all lawful legal heirs under succession law.
+                      with all lawful legal heirs under estate law.
                     </p>
                   </div>
 
@@ -1225,7 +1225,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     <p className="text-xs text-slate-600 leading-relaxed">
                       This is the key Supreme Court ruling on nominee rights. The Court held that a nomination
                       is not a Will. A nomination gives no ownership title. The nominee is only a caretaker
-                      until legal heirs divide the property.
+                      until legal heirs divide the asset.
                     </p>
                   </div>
                 </div>
@@ -1237,7 +1237,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                   </div>
                   <p className="leading-relaxed">
                     The Bombay High Court held that a society cannot force united families into costly probate
-                    court. If all legal heirs sign an indemnity bond (Appendix 17) and consent affidavits
+                    court. If all legal heirs sign an indemnity bond (Appendix 17) and consent sworn notes
                     (Appendix 19), the society must transfer the flat.
                   </p>
                 </div>
@@ -1256,8 +1256,8 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Maharashtra, the Commissioner for Co-operation and Registrar of Co-operative Societies
-                  notifies standard Model Bye-Laws. Transmission applications must strictly follow these
-                  numbered statutory appendix forms:
+                  notifies standard Model Bye-Laws. Transfer forms must strictly follow these
+                  numbered legal appendix forms:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1266,10 +1266,10 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <span className="px-2 py-0.5 rounded bg-rose-100 text-[#C65378] font-black text-xs">
                         Form 14
                       </span>
-                      <span>Nominee Membership Application</span>
+                      <span>Nominee Membership Form</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submitted under Bye-Law 35 by a registered nominee. Includes details of deceased member,
+                      Submitted under Bye-Law 35 by a filed nominee. Includes details of deceased member,
                       flat number, distinctive share numbers, and undertaking to hold shares in trust.
                     </p>
                   </div>
@@ -1279,11 +1279,11 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <span className="px-2 py-0.5 rounded bg-rose-100 text-[#C65378] font-black text-xs">
                         Form 15
                       </span>
-                      <span>Legal Heir Membership Application</span>
+                      <span>Legal Heir Membership Form</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Used when the deceased left no nomination. Submitted by the designated family heir along
-                      with heirship certificates or testamentary documents.
+                      with heirship papers or Will papers.
                     </p>
                   </div>
 
@@ -1304,11 +1304,11 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <span className="px-2 py-0.5 rounded bg-rose-100 text-[#C65378] font-black text-xs">
                         Form 17
                       </span>
-                      <span>Statutory Indemnity Bond</span>
+                      <span>Legal Indemnity Bond</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Executed on Rs. 500 stamp paper and notarized. The applicant indemnifies the society, its
-                      committee members, and successors against any future adverse inheritance claims.
+                      Signed on Rs. 500 stamp paper and notarized. The applicant indemnifies the society, its
+                      committee members, and successors against any future adverse estate claims.
                     </p>
                   </div>
 
@@ -1317,10 +1317,10 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <span className="px-2 py-0.5 rounded bg-rose-100 text-[#C65378] font-black text-xs">
                         Form 19
                       </span>
-                      <span>Consent NOC Affidavit from Co-Heirs</span>
+                      <span>Consent NOC Sworn Note from Co-Heirs</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Executed on Rs. 100 stamp paper by each surviving co-heir (e.g. siblings, surviving spouse),
+                      Signed on Rs. 100 stamp paper by each surviving co-heir (e.g. siblings, surviving spouse),
                       formally waiving separate membership objections in favor of the designated applicant.
                     </p>
                   </div>
@@ -1345,20 +1345,20 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <div className="rounded-2xl bg-emerald-50/70 border border-emerald-200 p-5 text-xs text-emerald-950 space-y-2">
                   <div className="font-extrabold text-sm flex items-center gap-2 text-emerald-900">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Statutory Ceiling Under Section 79A Government Directive:</span>
+                    <span>Legal Ceiling Under Section 79A Government Directive:</span>
                   </div>
                   <p className="leading-relaxed">
                     The Maharashtra Government issued strict rules under Section 79A of the MCS Act:
                   </p>
                   <ul className="list-disc pl-5 space-y-1">
                     <li>
-                      <strong>For Commercial / Open-Market Sale:</strong> The maximum transfer premium a
+                      <strong>For Shop / Open-Market Sale:</strong> The maximum transfer premium a
                       society can charge is strictly capped at <strong>Rs. 25,000</strong>.
                     </li>
                     <li>
-                      <strong>For Transmission to Family / Legal Heirs on Death:</strong> The transfer premium
+                      <strong>For Transfer to Family / Legal Heirs on Death:</strong> The transfer premium
                       is strictly <strong>Rs. 0 (ZERO)</strong>. Coercing any donation or premium upon
-                      transmission is a punishable violation of law.
+                      transfer is a punishable violation of law.
                     </li>
                     <li>
                       <strong>Lawful Charges Payable:</strong> The applicant only pays a nominal{" "}
@@ -1391,7 +1391,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-3 shadow-xs">
                   <h3 className="font-extrabold text-slate-900 text-sm">
-                    Mandatory Steps for Publishing Appendix 16 Notice:
+                    Needed Steps for Publishing Appendix 16 Notice:
                   </h3>
                   <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-700">
                     <li>
@@ -1413,7 +1413,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     </li>
                     <li>
                       <strong>Absence of Claims:</strong> If no valid legal objections are filed within 15 days,
-                      the society is legally mandated to proceed with flat transmission.
+                      the society is legally mandated to proceed with flat transfer.
                     </li>
                   </ol>
                 </div>
@@ -1430,7 +1430,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 8. State Comparison: Maharashtra, Delhi &amp; Karnataka Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                While cooperative principles remain similar, specific statutory sections, fee caps, and
+                While cooperative principles remain similar, specific legal sections, fee caps, and
                 nominee rights vary across major Indian states:
               </p>
 
@@ -1460,13 +1460,13 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <td className="p-3.5">Nominee recognized as holding in trust</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Probate Requirement</td>
+                      <td className="p-3.5 font-bold text-slate-900">Probate Rule</td>
                       <td className="p-3.5">Avoidable via Appendix 17 &amp; 19 if united</td>
                       <td className="p-3.5">Exempt unless contested by heirs</td>
                       <td className="p-3.5">Exempt if Legal Heir Cert produced</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Statutory Transfer Fee Cap</td>
+                      <td className="p-3.5 font-bold text-slate-900">Legal Transfer Fee Cap</td>
                       <td className="p-3.5">
                         <span className="font-bold text-emerald-700">Rs. 0 Premium</span> (Rs. 100 entry)
                       </td>
@@ -1480,7 +1480,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                       <td className="p-3.5">15-30 Days based on bye-laws</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Appellate Authority</td>
+                      <td className="p-3.5 font-bold text-slate-900">Appellate Office</td>
                       <td className="p-3.5">Deputy Registrar of Co-op Societies</td>
                       <td className="p-3.5">Registrar Co-operative Societies (RCS)</td>
                       <td className="p-3.5">Joint Registrar of Co-op Societies</td>
@@ -1515,12 +1515,12 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <span>PRACTICAL EXECUTION ROADMAP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Flat Transmission Protocol for Heirs
+                9. Step-by-Step SOP: Flat Transfer Protocol for Heirs
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To secure an orderly transfer without litigation or bureaucratic rejection, follow this
-                  standard 7-step operating procedure:
+                  To secure an orderly transfer without court fights or bureaucratic rejection, follow this
+                  standard 7-step operating step:
                 </p>
 
                 <div className="space-y-3">
@@ -1528,17 +1528,17 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     {
                       step: "1",
                       title: "Procure Municipal Death Certificate",
-                      text: "Obtain at least 5 certified copies from the local municipal birth and death registrar.",
+                      text: "Obtain at least 5 certified copies from the local city birth and death registrar.",
                     },
                     {
                       step: "2",
                       title: "Locate Original Share Certificate & Registered Deed",
-                      text: "Verify that the distinctive share numbers match the flat registered conveyance deed and society records.",
+                      text: "Verify that the distinctive share numbers match the flat filed conveyance deed and society records.",
                     },
                     {
                       step: "3",
                       title: "Execute Appendix 17 Indemnity & Appendix 19 NOC",
-                      text: "Purchase Rs. 500 stamp paper for Indemnity Bond and Rs. 100 stamp papers for each co-heir NOC affidavit; attest before a Notary Public.",
+                      text: "Purchase Rs. 500 stamp paper for Indemnity Bond and Rs. 100 stamp papers for each co-heir NOC sworn note; attest before a Notary Public.",
                     },
                     {
                       step: "4",
@@ -1553,12 +1553,12 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     {
                       step: "6",
                       title: "Managing Committee Resolution (within 90 Days)",
-                      text: "The committee approves membership in its monthly meeting and records the transmission in the J and I Membership Registers.",
+                      text: "The committee approves membership in its monthly meeting and records the transfer in the J and I Membership Registers.",
                     },
                     {
                       step: "7",
                       title: "Endorsement on Original Share Certificate",
-                      text: "The Chairman and Secretary endorse the applicant name on the reverse of the original share certificate with the society official seal.",
+                      text: "The Chairman and Secretary endorse the applicant name on the reverse of the original share paper with the society official seal.",
                     },
                   ].map((s) => (
                     <div
@@ -1597,13 +1597,13 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <strong>Facts:</strong> Father nominated his elder daughter in society records. Upon his
-                    death, his two sons residing in the United States claimed their 1/3rd inheritance share
+                    death, his two sons residing in the United States claimed their 1/3rd estate share
                     under the Hindu Succession Act. The society refused to transfer without a probate.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <strong>Resolution:</strong> Under Section 154B-13, the daughter was admitted as a{" "}
                     <strong>Provisional Member</strong> using Appendix 14 and Appendix 17. Later, the
-                    siblings executed a registered Family Settlement Deed in the US (authenticated by the
+                    siblings signed a filed Family Deal Deed in the US (authenticated by the
                     Indian Consulate), enabling permanent title transfer without expensive probate.
                   </p>
                 </div>
@@ -1621,9 +1621,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                     to a deceased owner widow.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Resolution:</strong> The widow issued a statutory legal notice citing Section 79A
+                    <strong>Resolution:</strong> The widow issued a legal legal notice citing Section 79A
                     and the August 2001 Government Notification. The Deputy Registrar directed the society
-                    to effect transmission upon payment of only Rs. 100 entrance fee and Rs. 500 share transfer
+                    to effect transfer upon payment of only Rs. 100 entrance fee and Rs. 500 share transfer
                     fee, warning the managing committee of supersession.
                   </p>
                 </div>
@@ -1637,10 +1637,10 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <span>COPY-PASTEABLE STATUTORY FORMATS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Appendix 17 Indemnity Bond &amp; Heir NOC Affidavit Formats
+                11. Appendix 17 Indemnity Bond &amp; Heir NOC Sworn Note Formats
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use these legal formats for your indemnity bond and co-heir NOC affidavits. Click copy to paste the text onto stamp paper.
+                Use these legal formats for your indemnity bond and co-heir NOC sworn notes. Click copy to paste the text onto stamp paper.
               </p>
 
               {/* Template Tabs & Copy Boxes */}
@@ -1650,7 +1650,7 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <div className="font-extrabold text-xs text-slate-900 flex items-center gap-2">
                       <FileCheck className="w-4 h-4 text-[#C65378]" />
-                      <span>Appendix 17: Statutory Indemnity Bond (Rs. 500 Stamp Paper)</span>
+                      <span>Appendix 17: Legal Indemnity Bond (Rs. 500 Stamp Paper)</span>
                     </div>
                     <button
                       type="button"
@@ -1686,7 +1686,7 @@ I, [Full Name of Applicant], residing at Flat No. [Flat No.], [Society Name]...
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <div className="font-extrabold text-xs text-slate-900 flex items-center gap-2">
                       <FileCheck className="w-4 h-4 text-emerald-600" />
-                      <span>Appendix 19: Co-Heir Consent NOC Affidavit (Rs. 100 Stamp Paper)</span>
+                      <span>Appendix 19: Co-Heir Consent NOC Sworn Note (Rs. 100 Stamp Paper)</span>
                     </div>
                     <button
                       type="button"
@@ -1722,7 +1722,7 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <div className="font-extrabold text-xs text-slate-900 flex items-center gap-2">
                       <FileCheck className="w-4 h-4 text-blue-600" />
-                      <span>Master 12-Point Submission Document Checklist</span>
+                      <span>Master 12-Point Submission Paper Checklist</span>
                     </div>
                     <button
                       type="button"
@@ -1743,8 +1743,8 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                     </button>
                   </div>
                   <p className="text-xs text-slate-600">
-                    Complete 12-item checklist covering Death Certificate, Share Certificate, Appendix forms,
-                    newspaper tear-sheets, and statutory fee payments.
+                    Complete 12-item checklist covering Death Paper, Share Paper, Appendix forms,
+                    newspaper tear-sheets, and legal fee payments.
                   </p>
                 </div>
               </div>
@@ -1757,7 +1757,7 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 <span>LEGAL REVIEW &amp; AUTHORSHIP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Institutional Legal Backing &amp; Advocate Profile
+                12. Institutional Legal Backing &amp; Lawyer Profile
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -1766,10 +1766,10 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   </div>
                   <div className="space-y-1">
                     <div className="font-extrabold text-slate-900 text-base sm:text-lg">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; Real Estate Counsel • AMA Legal Solutions
+                      Senior Estate &amp; Real Estate Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-600">
                       Bar Council of Maharashtra &amp; Goa • Supreme Court Bar Association
@@ -1777,15 +1777,15 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Specializing in complex cooperative housing society litigation, Maharashtra MCS Act Section
-                  154B-13 transmission petitions, High Court testamentary probate proceedings, and protection
+                  Specializing in complex cooperative housing society court fights, Maharashtra MCS Act Section
+                  154B-13 transfer petitions, High Court Will probate proceedings, and protection
                   of legal heirs against coercive society transfer premiums.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-slate-600">
                   <span>Reviewed: October 2026</span>
                   <span className="text-emerald-700 flex items-center gap-1 font-bold">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Statutory &amp; Model Bye-Law Compliant</span>
+                    <span>Legal &amp; Model Bye-Law Compliant</span>
                   </span>
                 </div>
               </div>
@@ -1838,11 +1838,11 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 <span>OFFICIAL PORTALS &amp; REFERENCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Cooperative Portals
+                14. Legal Citations &amp; Official Cooperative Portals
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 text-xs text-slate-700 leading-relaxed">
                 <p>
-                  Official statutory portals and government repositories for verifying cooperative housing
+                  Official legal portals and government repositories for verifying cooperative housing
                   society bye-laws and filing grievance appeals:
                 </p>
                 <div className="flex flex-wrap gap-2.5 pt-1">
@@ -1852,7 +1852,7 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"
                   >
-                    <span>Maharashtra Co-operation Department</span>
+                    <span>Maharashtra Co-operation Office</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1877,20 +1877,20 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Diagnostic Calculators &amp; Checkers
+                    Related WillDrafting Diagnostic Tools &amp; Checkers
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/ancestral-vs-self-acquired-property-classifier"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Ancestral Property Classifier
+                      Family Asset Classifier
                     </Link>
                     <Link
                       href="/tools/bank-deceased-claim-document-checklist-generator"
@@ -1902,7 +1902,7 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Tax Calculator
+                      Inherited Asset Tax Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1914,7 +1914,29 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1927,21 +1949,21 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Maharashtra Co-operative Societies Act, Section 154B-13 flat transmission,
+                Expert in Maharashtra Co-operative Societies Act, Section 154B-13 flat transfer,
                 Model Bye-Laws Appendix compliance, and High Court probate defense.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1955,10 +1977,10 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   <span>PREVENT FUTURE SOCIETY FLAT DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Family from Society Transmission Hurdles
+                  Protect Your Family from Society Transfer Hurdles
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A registered Will with explicit society flat bequests eliminates ambiguity between nominees
+                  A filed Will with explicit society flat bequests eliminates ambiguity between nominees
                   and legal heirs, safeguarding your children from probate expenses.
                 </p>
                 <button
@@ -1984,15 +2006,15 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                   Facing Managing Committee Harassment or Illegal Fee Demands?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our real estate litigators handle Section 23 appeals before the Deputy Registrar, challenge
-                  unlawful donation demands, and draft comprehensive transmission indemnities.
+                  Our real estate litigators handle Section 23 appeals before the Deputy Registrar, fight
+                  unlawful donation demands, and draft full transfer indemnities.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <Scale className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
             </div>

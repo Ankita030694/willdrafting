@@ -153,7 +153,7 @@ export default function VadodaraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Vadodara: Legal Online Will Making Help",
         description:
-          "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
+          "Draft a legally compliant Will in Vadodara. Expert lawyer help, Garvi Gujarat filing advice, and family business estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -200,7 +200,7 @@ export default function VadodaraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Vadodara - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across all revenue divisions of Vadodara.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across all revenue divisions of Vadodara.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -272,38 +272,38 @@ export default function VadodaraLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Vadodara, Gujarat",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Vadodara Sub-Registrar via the Garvi Gujarat portal.",
+          "Five clear steps to create a legally binding Will and register it before the Vadodara SRO via the Garvi Gujarat portal.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Inventory Assets & Designate Beneficiaries",
-            text: "List your Vadodara immovable assets (VMC residential units, VUDA plots, commercial shops) and movables (bank fixed deposits, demat shares, GIDC enterprise equity). Designate primary and contingent beneficiaries and an executor.",
+            text: "List your Vadodara land assets (VMC home units, VUDA plots, shop shops) and movables (bank fixed deposits, demat shares, GIDC enterprise equity). Designate primary and contingent heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Custom Legal Clauses",
-            text: "Draft your Will using our online legal platform or with our senior estate advocates, inserting specific survivorship, revocation, debt indemnification, and business succession clauses.",
+            text: "Draft your Will using our online legal platform or with our senior estate lawyers, inserting specific survivorship, revocation, debt indemnification, and business estate clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Generate Garvi Gujarat Token & Pay Nominal Fee",
-            text: "Log into the Garvi Gujarat portal (garvi.gujarat.gov.in), enter document details for your local Vadodara SRO (Kothi, Akota, Manjalpur, etc.), generate Cyber Treasury e-Challan for ₹100 registration fee, and select an appointment slot.",
+            text: "Log into the Garvi Gujarat portal (garvi.gujarat.gov.in), enter paper details for your local Vadodara SRO (Kothi, Akota, Manjalpur, etc.), generate Cyber Treasury e-Challan for ₹100 filing fee, and select an appointment slot.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Biometric Verification at Vadodara Sub-Registrar Office",
-            text: "Visit the Vadodara Sub-Registrar office with two witnesses and original Aadhaar cards for biometric thumbprint scanning, live photograph capture, and Book III registration certificate issuance.",
+            text: "Visit the Vadodara SRO office with two witnesses and original Aadhaar cards for biometric thumbprint scanning, live photograph capture, and Book III filing paper issuance.",
           },
         ],
       },

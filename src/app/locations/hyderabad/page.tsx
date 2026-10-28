@@ -151,7 +151,7 @@ export default function HyderabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Hyderabad: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your.",
+          "Draft a legally valid Will in Hyderabad. Easy filing via IGRS Telangana, asset estate, and experienced lawyer review for your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -198,7 +198,7 @@ export default function HyderabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Hyderabad - Estate Planning & IGRS Telangana Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Hyderabad, Secunderabad, and Cyberabad.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across Hyderabad, Secunderabad, and Cyberabad.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -271,38 +271,38 @@ export default function HyderabadLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Hyderabad",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Hyderabad.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Hyderabad.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Hyderabad real estate including GHMC flats, HMDA plots, bank FDs, demat holdings, and jewellery. Name your beneficiaries and an executor.",
+            text: "List your Hyderabad real estate including GHMC flats, HMDA plots, bank FDs, demat holdings, and jewellery. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Precision Legal Clauses",
-            text: "Draft your Will using our online legal platform or with an experienced estate advocate to include revocation, survivorship, and specific asset bequests.",
+            text: "Draft your Will using our online legal platform or with an experienced estate lawyer to include revocation, survivorship, and specific asset bequests.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book IGRS Telangana Portal Slot",
-            text: "Book an e-appointment on the IGRS Telangana portal (registration.telangana.gov.in) for your local Sub-Registrar Office and pay the nominal government fee.",
+            text: "Book an e-appointment on the IGRS Telangana portal (filing.telangana.gov.in) for your local SRO office and pay the nominal government fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses and original IDs for biometric thumb verification, digital photo capture, and official Book-III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric thumb check, digital photo capture, and official Book-III filing.",
           },
         ],
       },

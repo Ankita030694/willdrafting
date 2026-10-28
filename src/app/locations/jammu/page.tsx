@@ -145,7 +145,7 @@ export default function JammuLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jammu: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with.",
+          "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate estate advice with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function JammuLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jammu - Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration, JDA plot mutation guidance, and doorstep execution support across.",
+          "Professional Will drafting, lawyer check, NGDRS J&K filing, JDA plot name change guidance, and doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -262,38 +262,38 @@ export default function JammuLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Jammu",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Jammu via NGDRS.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Jammu via NGDRS.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Jammu properties including JDA residential plots, JMC freehold houses, agricultural land in RS Pura or Bishnah, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Jammu assets including JDA home plots, JMC freehold houses, farm land in RS Pura or Bishnah, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses compliant with the Indian Succession Act, 1925, detailing survivorship, executor powers, minor guardian designations, and prior instrument revocation.",
+            text: "Draft your Will using checked legal clauses compliant with the Indian Succession Act, 1925, detailing survivorship, executor powers, minor guardian designations, and prior instrument revocation.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS J&K Portal Appointment",
-            text: "Schedule your registration appointment on the NGDRS J&K portal for your relevant Jammu Sub-Registrar Office and remit the nominal registration fee online.",
+            text: "Schedule your filing appointment on the NGDRS J&K portal for your relevant Jammu SRO office and remit the nominal filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Jammu SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

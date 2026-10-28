@@ -46,7 +46,7 @@ const TOC_ITEMS = [
   { id: "three-fatal-mistakes", label: "9. 3 Common Mistakes to Avoid" },
   { id: "will-conversion-bridge", label: "10. How a Will Avoids This Hassle" },
   { id: "specialized-scenarios", label: "11. 4 Everyday Situations" },
-  { id: "institutional-backing", label: "12. Lawyer Verified & Trusted" },
+  { id: "institutional-backing", label: "12. Lawyer Checked & Trusted" },
   { id: "frequently-asked-questions", label: "13. Questions People Often Ask" },
   { id: "statutory-citations", label: "14. Official Legal References" },
 ];
@@ -178,16 +178,16 @@ const CHECKLIST_ITEMS = [
   {
     id: "check-1",
     label: "Both Parties are Already Legal Co-Owners",
-    subtext: "Both the person giving up and receiving are legal co-heirs who inherited the property.",
+    subtext: "Both the person giving up and receiving are legal co-heirs who inherited the asset.",
   },
   {
     id: "check-2",
-    label: "Death Certificate & Heir Certificate Ready",
-    subtext: "Municipal death certificate of the original owner and family legal heir proof are available.",
+    label: "Death Paper & Heir Paper Ready",
+    subtext: "City death paper of the original owner and family legal heir proof are available.",
   },
   {
     id: "check-3",
-    label: "Accurate Property Details & Boundaries",
+    label: "Accurate Asset Details & Boundaries",
     subtext: "Flat number, survey/khasra number, and East-West-North-South boundaries are clearly written.",
   },
   {
@@ -197,56 +197,56 @@ const CHECKLIST_ITEMS = [
   },
   {
     id: "check-5",
-    label: "Sub-Registrar Slot Booked for Registration",
-    subtext: "Compulsory registration booked at the Sub-Registrar's office under Section 17.",
+    label: "SRO Slot Booked for Filing",
+    subtext: "Needed filing booked at the SRO's office under Section 17.",
   },
   {
     id: "check-6",
     label: "Two Adult Witnesses with Original Aadhaar Cards",
-    subtext: "Two witnesses ready to accompany you to the registrar office for biometric verification.",
+    subtext: "Two witnesses ready to accompany you to the registrar office for biometric check.",
   },
 ];
 
 const FAQS = [
   {
-    q: "What is a relinquishment deed under Indian property law?",
-    a: "A relinquishment deed (also called a Release Deed or Haq-Tyag Patra) is a formal legal document where one family member willingly gives up their share of an inherited property to another co-owner (for example, a brother giving his share to his sister, or children giving their shares to their mother). Once registered, the person giving up the share has no legal claim left over that property.",
+    q: "What is a release deed under Indian property law?",
+    a: "A release deed (also called a Release Deed or Haq-Tyag Patra) is a formal legal paper where one family member willingly gives up their share of an inherited asset to another co-owner (for example, a brother giving his share to his sister, or children giving their shares to their mother). Once filed, the person giving up the share has no legal claim left over that asset.",
   },
   {
-    q: "Can I give away property I bought myself using a release deed?",
-    a: "No. A release deed is strictly for property inherited together by legal heirs. If you bought the house yourself with your own money, your children do not own any share while you are alive. To transfer your self-bought home to a family member, you must use a Gift Deed, a Sale Deed, or write a Will.",
+    q: "Can I give away asset I bought myself using a release deed?",
+    a: "No. A release deed is strictly for asset inherited together by legal heirs. If you bought the house yourself with your own money, your children do not own any share while you are alive. To transfer your self-bought home to a family member, you must use a Gift Deed, a Sale Deed, or write a Will.",
   },
   {
-    q: "Can I give up my property share in favor of someone outside the family?",
-    a: "No. Under Indian law (settled by the Supreme Court in Kuppuswamy Chettiar v. Arumugam Chettiar), a release deed can only give more share to someone who is already a co-owner of that inherited property. If you want to transfer property to an outsider or distant friend, you must execute a Gift Deed or Sale Deed, which requires paying full commercial stamp duty.",
+    q: "Can I give up my asset share in favor of someone outside the family?",
+    a: "No. Under Indian law (settled by the Supreme Court in Kuppuswamy Chettiar v. Arumugam Chettiar), a release deed can only give more share to someone who is already a co-owner of that inherited asset. If you want to transfer asset to an outsider or distant friend, you must execute a Gift Deed or Sale Deed, which requires paying full shop stamp duty.",
   },
   {
     q: "Do I have to register a release deed, or is a notary stamp enough?",
-    a: "Registration at the local Sub-Registrar Office (SRO) is 100% compulsory under Section 17 of the Registration Act, 1908. A release deed on plain paper, notary stamp, or ₹100 affidavit has zero legal standing in court (Section 49). Without government registration, the property remains legally shared.",
+    a: "Filing at the local SRO office (SRO) is 100% needed under Section 17 of the Filing Act, 1908. A release deed on plain paper, notary stamp, or ₹100 sworn note has zero legal standing in court (Section 49). Without government filing, the asset remains legally shared.",
   },
   {
     q: "What is the difference between a Release Deed and a Gift Deed?",
-    a: "A Release Deed is only for inherited property between co-heirs (e.g. siblings), usually costs very low government stamp duty (often ₹1,000 to ₹5,000 in many states), and allows one co-owner to step aside. A Gift Deed can transfer any property (including self-bought flats) to anyone (family or outsider), but usually attracts much higher government stamp duty (3% to 7% of property value in most states).",
+    a: "A Release Deed is only for inherited asset between co-heirs (e.g. siblings), usually costs very low government stamp duty (often ₹1,000 to ₹5,000 in many states), and allows one co-owner to step aside. A Gift Deed can transfer any asset (including self-bought flats) to anyone (family or outsider), but usually attracts much higher government stamp duty (3% to 7% of asset value in most states).",
   },
   {
-    q: "How much stamp duty and registration fee do I need to pay?",
-    a: "Because it keeps property within the family, many states offer huge discounts: (1) Delhi: Fixed ₹1,000 stamp duty + ₹100 registration fee. (2) Maharashtra: Nominal ₹200 duty under Article 52 between blood relatives. (3) Uttar Pradesh: Nominal ₹5,000 duty for blood relatives. Non-family transfers or releases involving cash payment attract standard market stamp duty rates.",
+    q: "How much stamp duty and filing fee do I need to pay?",
+    a: "Because it keeps asset within the family, many states offer huge discounts: (1) Delhi: Fixed ₹1,000 stamp duty + ₹100 filing fee. (2) Maharashtra: Nominal ₹200 duty under Article 52 between blood relatives. (3) Uttar Pradesh: Nominal ₹5,000 duty for blood relatives. Non-family transfers or releases involving cash payment attract standard market stamp duty rates.",
   },
   {
     q: "Can I cancel a release deed after signing it if I change my mind?",
-    a: "No. Once a release deed is registered at the Sub-Registrar Office, it is permanent and cannot be cancelled unilaterally. You cannot simply go back and ask for it to be undone. A civil court will only cancel it if you can prove you were cheated, threatened, or forced into signing (fraud or coercion) within 3 years under the Limitation Act.",
+    a: "No. Once a release deed is filed at the SRO office, it is permanent and cannot be cancelled unilaterally. You cannot simply go back and ask for it to be undone. A civil court will only cancel it if you can prove you were cheated, threatened, or forced into signing (fraud or coercion) within 3 years under the Limitation Act.",
   },
   {
-    q: "Can a married daughter give up her share in ancestral or father's property?",
-    a: "Yes. Under the Hindu Succession Act (and reaffirmed by the Supreme Court in Vineeta Sharma v. Rakesh Sharma), daughters have equal birth rights in ancestral property just like sons, whether married or unmarried. If a married daughter wishes to let her mother or brother keep the ancestral house, she can legally execute a registered release deed.",
+    q: "Can a married daughter give up her share in family or father's asset?",
+    a: "Yes. Under the Hindu Succession Act (and reaffirmed by the Supreme Court in Vineeta Sharma v. Rakesh Sharma), daughters have equal birth rights in family asset just like sons, whether married or unmarried. If a married daughter wishes to let her mother or brother keep the family house, she can legally execute a filed release deed.",
   },
   {
-    q: "What documents do I need to take to the Sub-Registrar's office?",
-    a: "You will need: (1) Original property title deed (Registry/Sale deed of the deceased owner), (2) Death certificate of the deceased parent/owner, (3) Legal Heir Certificate or Surviving Member Certificate showing all family heirs, (4) Original Aadhaar & PAN cards of all family members giving up or receiving shares, (5) Two adult witnesses with original Aadhaar cards, and (6) Government e-stamp paper and appointment receipt.",
+    q: "What papers do I need to take to the SRO's office?",
+    a: "You will need: (1) Original asset title deed (Registry/Sale deed of the deceased owner), (2) Death paper of the deceased parent/owner, (3) Legal Heir Paper or Surviving Member Paper showing all family heirs, (4) Original Aadhaar & PAN cards of all family members giving up or receiving shares, (5) Two adult witnesses with original Aadhaar cards, and (6) Government e-stamp paper and appointment receipt.",
   },
   {
     q: "How does writing a Will save my family from needing release deeds later?",
-    a: "If you write a clear Will during your lifetime specifying who gets each property, your beneficiaries inherit directly. If you don't leave a Will, all legal heirs automatically become joint co-owners. Later, to sell or transfer the house, all siblings must visit government registrar offices, gather paperwork, pay fees, and execute release deeds. A simple Will saves your family from this hassle.",
+    a: "If you write a clear Will during your lifetime specifying who gets each asset, your heirs inherit directly. If you don't leave a Will, all legal heirs automatically become joint co-owners. Later, to sell or transfer the house, all siblings must visit government registrar offices, gather paperwork, pay fees, and execute release deeds. A simple Will saves your family from this hassle.",
   },
 ];
 
@@ -263,7 +263,7 @@ export default function ReleaseDeedFormatClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [copied, setCopied] = useState<boolean>(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({
@@ -339,12 +339,12 @@ export default function ReleaseDeedFormatClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Relinquishment Deed Format in India: Complete Legal Template
+            Release Deed Format in India: Complete Legal Template
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Download our free, clause-annotated Relinquishment Deed format for inherited properties. Compare Release Deeds versus Gift Deeds, check state stamp duties, and register at the Sub-Registrar safely.
+            Download our free, clause-annotated Release Deed format for inherited assets. Compare Release Deeds versus Gift Deeds, check state stamp duties, and register at the SRO safely.
           </p>
 
           {/* CTA Buttons */}
@@ -379,7 +379,7 @@ export default function ReleaseDeedFormatClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Property & Succession
+                Asset & Estate
               </span>
             </div>
 
@@ -484,10 +484,10 @@ export default function ReleaseDeedFormatClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed by Section 17 &amp; 49 of the Registration Act, 1908 and Section 8 of the Hindu Succession Act, 1956.
+                Governed by Section 17 &amp; 49 of the Filing Act, 1908 and Section 8 of the Hindu Succession Act, 1956.
               </p>
             </div>
           </aside>
@@ -505,19 +505,19 @@ export default function ReleaseDeedFormatClient() {
                 </span>
               </div>
               <div className="text-lg font-bold text-slate-900 mb-3">
-                Key Legal Rules for Relinquishing Inherited Property Shares
+                Key Legal Rules for Relinquishing Inherited Asset Shares
               </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Co-Owners Only:</strong> A relinquishment deed can only transfer shares to existing legal co-heirs. You cannot relinquish property to an outsider or stranger.
+                    <strong>Co-Owners Only:</strong> A release deed can only transfer shares to existing legal co-heirs. You cannot relinquish asset to an outsider or stranger.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Compulsory Registration:</strong> Under Section 17(1)(b) of the Registration Act, 1908, registration at the Sub-Registrar Office is mandatory. Unregistered deeds are void.
+                    <strong>Needed Filing:</strong> Under Section 17(1)(b) of the Filing Act, 1908, filing at the SRO office is needed. Plain deeds are void.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -529,7 +529,7 @@ export default function ReleaseDeedFormatClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Irrevocable Once Registered:</strong> Once registered, a release deed cannot be cancelled unilaterally. It requires a civil court order proving fraud or coercion.
+                    <strong>Irrevocable Once Filed:</strong> Once filed, a release deed cannot be cancelled unilaterally. It requires a civil court order proving fraud or coercion.
                   </span>
                 </li>
               </ul>
@@ -542,20 +542,20 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 1: STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Framework: Relinquishment vs Release Deed
+                1. Legal Framework: Release vs Release Deed
               </h2>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                When a Hindu, Sikh, Jain, or Buddhist property owner passes away intestate without leaving a valid Will, their property devolves upon their legal heirs as co-owners. Under Section 8 and Section 10 of the Hindu Succession Act, 1956, all Class I heirs receive undivided shares. For example, if a father dies leaving a widow, son, and daughter, each heir inherits a 1/3rd undivided share.
+                When a Hindu, Sikh, Jain, or Buddhist asset owner passes away no-Will without leaving a valid Will, their asset devolves upon their legal heirs as co-owners. Under Section 8 and Section 10 of the Hindu Succession Act, 1956, all Class I heirs receive undivided shares. For example, if a father dies leaving a widow, son, and daughter, each heir inherits a 1/3rd undivided share.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Often, family members decide that one co-heir should hold the entire property. A daughter or son may wish to surrender their legal share to their mother or brother without dividing the house. In Indian property law, this transfer is accomplished through a <strong>Relinquishment Deed</strong> (known locally as a <em>Haq-Tyag Patra</em>).
+                Often, family members decide that one co-heir should hold the entire asset. A daughter or son may wish to surrender their legal share to their mother or brother without dividing the house. In Indian property law, this transfer is accomplished through a <strong>Release Deed</strong> (known locally as a <em>Haq-Tyag Patra</em>).
               </p>
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-sm text-slate-700 space-y-2">
                 <p className="font-semibold text-slate-900">
                   The Doctrine of Enlargement of Pre-Existing Title
                 </p>
                 <p>
-                  In the landmark ruling <em>Kuppuswamy Chettiar v. A.S.P.A. Arumugam Chettiar (AIR 1967 SC 1395)</em>, the Supreme Court of India established that a release deed does not create a new title. Instead, it extinguishes the releasor&apos;s interest and enlarges the pre-existing interest of the co-owner. Therefore, a relinquishment deed can only be executed between persons who are already joint co-owners.
+                  In the landmark ruling <em>Kuppuswamy Chettiar v. A.S.P.A. Arumugam Chettiar (AIR 1967 SC 1395)</em>, the Supreme Court of India established that a release deed does not create a new title. Instead, it extinguishes the releasor&apos;s interest and enlarges the pre-existing interest of the co-owner. Therefore, a release deed can only be signed between persons who are already joint co-owners.
                 </p>
               </div>
             </section>
@@ -567,10 +567,10 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Audit: Section 17 Registration Checklist
+                2. Free Audit: Section 17 Filing Checklist
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Before presenting your relinquishment deed at the Sub-Registrar Office, verify your preparation against these six essential statutory checkpoints.
+                Before presenting your release deed at the SRO office, verify your preparation against these six essential legal checkpoints.
               </p>
 
               {/* Checklist Box */}
@@ -615,14 +615,14 @@ export default function ReleaseDeedFormatClient() {
                   <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-2.5 text-xs text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>
-                      All checkpoints verified. Your documentation complies with Section 17 of the Registration Act, 1908.
+                      All checkpoints checked. Your papers complies with Section 17 of the Filing Act, 1908.
                     </span>
                   </div>
                 ) : (
                   <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex items-center gap-2.5 text-xs text-amber-800">
                     <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
                     <span>
-                      Please complete all items. Missing death certificates or incorrect e-stamps lead to immediate SRO rejection.
+                      Please complete all items. Missing death papers or incorrect e-stamps lead to immediate SRO rejection.
                     </span>
                   </div>
                 )}
@@ -639,7 +639,7 @@ export default function ReleaseDeedFormatClient() {
                 3. Clause-Annotated Format: Free Printable Release Deed
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is a full legal template for a Relinquishment Deed approved by succession and real estate advocates. Copy the text directly or print it for execution on non-judicial e-stamp paper.
+                Below is a full legal template for a Release Deed approved by estate and real estate lawyers. Copy the text directly or print it for signing on non-judicial e-stamp paper.
               </p>
 
               {/* Template Container with Copy & Print Toolbar */}
@@ -686,7 +686,7 @@ export default function ReleaseDeedFormatClient() {
 
                 <div className="p-4 bg-rose-50/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
                   <span className="text-center sm:text-left">
-                    Want to avoid release deeds entirely? A Will transfers property directly without SRO fees.
+                    Want to avoid release deeds entirely? A Will transfers asset directly without SRO fees.
                   </span>
                   <a
                     href="/start"
@@ -730,10 +730,10 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 4: COMPARATIVE ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. 3-Way Matrix: Release vs Gift vs Relinquishment Deed
+                4. 3-Way Matrix: Release vs Gift vs Release Deed
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Homeowners frequently confuse Relinquishment Deeds, Release Deeds, and Gift Deeds. Choosing the incorrect instrument leads to Sub-Registrar rejections and unnecessary stamp duty.
+                Homeowners frequently confuse Release Deeds, Release Deeds, and Gift Deeds. Choosing the incorrect instrument leads to SRO rejections and unnecessary stamp duty.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -741,8 +741,8 @@ export default function ReleaseDeedFormatClient() {
                   <thead className="bg-slate-900 text-white font-semibold">
                     <tr>
                       <th className="p-3.5 sm:p-4">Comparison Parameter</th>
-                      <th className="p-3.5 sm:p-4">Relinquishment Deed</th>
-                      <th className="p-3.5 sm:p-4">Commercial Release Deed</th>
+                      <th className="p-3.5 sm:p-4">Release Deed</th>
+                      <th className="p-3.5 sm:p-4">Shop Release Deed</th>
                       <th className="p-3.5 sm:p-4">Gift Deed</th>
                     </tr>
                   </thead>
@@ -754,8 +754,8 @@ export default function ReleaseDeedFormatClient() {
                       <td className="p-3.5 text-slate-700 font-medium">Anyone (relatives or third parties)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Eligible Property Type</td>
-                      <td className="p-3.5 text-emerald-700 font-medium">Inherited / ancestral property</td>
+                      <td className="p-3.5 font-bold text-slate-900">Eligible Asset Type</td>
+                      <td className="p-3.5 text-emerald-700 font-medium">Inherited / family asset</td>
                       <td className="p-3.5 text-slate-700 font-medium">Jointly purchased assets</td>
                       <td className="p-3.5 text-slate-700 font-medium">Self-acquired or partitioned share</td>
                     </tr>
@@ -778,15 +778,15 @@ export default function ReleaseDeedFormatClient() {
                       <td className="p-3.5 text-amber-700 font-medium">Moderate to full market duty</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Registration Requirement</td>
-                      <td className="p-3.5 text-rose-600 font-bold">Mandatory (Section 17)</td>
-                      <td className="p-3.5 text-rose-600 font-bold">Mandatory (Section 17)</td>
-                      <td className="p-3.5 text-rose-600 font-bold">Mandatory (Section 123 TPA)</td>
+                      <td className="p-3.5 font-bold text-slate-900">Filing Rule</td>
+                      <td className="p-3.5 text-rose-600 font-bold">Needed (Section 17)</td>
+                      <td className="p-3.5 text-rose-600 font-bold">Needed (Section 17)</td>
+                      <td className="p-3.5 text-rose-600 font-bold">Needed (Section 123 TPA)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Best Practical Use Case</td>
                       <td className="p-3.5 text-emerald-700 font-medium">Transferring inherited house to mother</td>
-                      <td className="p-3.5 text-slate-700 font-medium">Settling co-investor disputes</td>
+                      <td className="p-3.5 text-slate-700 font-medium">Settling co-investor fights</td>
                       <td className="p-3.5 text-slate-700 font-medium">Living parent transferring home</td>
                     </tr>
                   </tbody>
@@ -801,36 +801,36 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 5: CRITICAL LEGAL WARNING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Critical Rules: When NOT to Use a Relinquishment Deed
+                5. Critical Rules: When NOT to Use a Release Deed
               </h3>
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-4 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
-                  <span>Four Situations Where Relinquishment Deeds Are Legally Invalid</span>
+                  <span>Four Situations Where Release Deeds Are Legally Invalid</span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
                   <div className="p-4 bg-white/80 rounded-xl border border-amber-200 space-y-1.5">
-                    <h4 className="font-bold text-slate-900">1. Self-Acquired Property of Living Owner</h4>
+                    <h4 className="font-bold text-slate-900">1. Self-Acquired Asset of Living Owner</h4>
                     <p className="text-slate-600 leading-relaxed">
-                      A parent cannot execute a relinquishment deed to transfer self-acquired property to their son or daughter. Children possess no pre-existing co-ownership interest during the parent&apos;s lifetime. The parent must execute a Gift Deed or a Will.
+                      A parent cannot execute a release deed to transfer self-acquired asset to their son or daughter. Children possess no pre-existing co-ownership interest during the parent&apos;s lifetime. The parent must execute a Gift Deed or a Will.
                     </p>
                   </div>
                   <div className="p-4 bg-white/80 rounded-xl border border-amber-200 space-y-1.5">
                     <h4 className="font-bold text-slate-900">2. Transfer to Third Parties or Strangers</h4>
                     <p className="text-slate-600 leading-relaxed">
-                      You cannot relinquish property in favour of a distant relative, in-law, or stranger who is not an inherited co-heir. The Sub-Registrar will reclassify the deed as a conveyance or sale deed and demand full market stamp duty with penalties.
+                      You cannot relinquish asset in favour of a distant relative, in-law, or stranger who is not an inherited co-heir. The SRO will reclassify the deed as a conveyance or sale deed and demand full market stamp duty with penalties.
                     </p>
                   </div>
                   <div className="p-4 bg-white/80 rounded-xl border border-amber-200 space-y-1.5">
-                    <h4 className="font-bold text-slate-900">3. Undivided Coparcenary Prior to Partition</h4>
+                    <h4 className="font-bold text-slate-900">3. Undivided Joint Prior to Split</h4>
                     <p className="text-slate-600 leading-relaxed">
-                      A coparcener cannot selectively relinquish their share in one specific parcel of joint family property while holding onto others. Coparcenary interests require either a complete family settlement or formal partition deed.
+                      A coparcener cannot selectively relinquish their share in one specific parcel of joint family asset while holding onto others. Joint interests require either a complete family deal or formal split deed.
                     </p>
                   </div>
                   <div className="p-4 bg-white/80 rounded-xl border border-amber-200 space-y-1.5">
                     <h4 className="font-bold text-slate-900">4. Attempting to Defraud Debt Creditors</h4>
                     <p className="text-slate-600 leading-relaxed">
-                      Relinquishing property to escape bank recoveries or civil court attachments violates Section 53 of the Transfer of Property Act. Creditors can file a suit to declare such transfers fraudulent and void.
+                      Relinquishing asset to escape bank recoveries or civil court attachments violates Section 53 of the Transfer of Property Act. Creditors can file a suit to declare such transfers fraudulent and void.
                     </p>
                   </div>
                 </div>
@@ -847,7 +847,7 @@ export default function ReleaseDeedFormatClient() {
                 6. State Stamp Duty Guide: Rates for Blood Relatives
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Stamp duty rates on release deeds vary significantly across Indian states. Most state legislatures provide concessional rates when the deed is executed between immediate family members without monetary consideration.
+                Stamp duty rates on release deeds vary significantly across Indian states. Most state legislatures provide concessional rates when the deed is signed between immediate family members without monetary consideration.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -856,7 +856,7 @@ export default function ReleaseDeedFormatClient() {
                     <tr>
                       <th className="p-3.5 sm:p-4">State / Union Territory</th>
                       <th className="p-3.5 sm:p-4">Duty (Blood Relatives)</th>
-                      <th className="p-3.5 sm:p-4">Registration Fee</th>
+                      <th className="p-3.5 sm:p-4">Filing Fee</th>
                       <th className="p-3.5 sm:p-4">Governing Legal Schedule</th>
                     </tr>
                   </thead>
@@ -876,13 +876,13 @@ export default function ReleaseDeedFormatClient() {
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Uttar Pradesh</td>
                       <td className="p-3.5 text-emerald-700 font-semibold">₹5,000 nominal duty</td>
-                      <td className="p-3.5 text-slate-600">1% of valuation (max ₹10,000)</td>
+                      <td className="p-3.5 text-slate-600">1% of price check (max ₹10,000)</td>
                       <td className="p-3.5 text-slate-600">UP Stamp Notification (Family Remission)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Karnataka</td>
                       <td className="p-3.5 text-emerald-700 font-semibold">₹1,000 to ₹5,000 (area based)</td>
-                      <td className="p-3.5 text-slate-600">₹500 fixed registration fee</td>
+                      <td className="p-3.5 text-slate-600">₹500 fixed filing fee</td>
                       <td className="p-3.5 text-slate-600">Article 44, Karnataka Stamp Act</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
@@ -902,7 +902,7 @@ export default function ReleaseDeedFormatClient() {
               </div>
 
               <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-600">
-                <span className="font-bold text-slate-800">State Revenue Caveat:</span> State stamp duty rates and municipal surcharges are subject to periodic state budgetary notifications. Always verify current fees at your local Sub-Registrar Office before purchasing non-judicial e-stamp paper.
+                <span className="font-bold text-slate-800">State Revenue Caveat:</span> State stamp duty rates and city surcharges are subject to periodic state budgetary notifications. Always verify current fees at your local SRO office before purchasing non-judicial e-stamp paper.
               </div>
             </section>
 
@@ -916,7 +916,7 @@ export default function ReleaseDeedFormatClient() {
                 7. Visual Blueprint: Anatomy of an Indian Release Deed
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                A legally enforceable Relinquishment Deed follows an orderly statutory structure. Below is the blueprint illustrating how title recitals, share extinction, municipal mutation consent, and SRO registration connect.
+                A legally enforceable Release Deed follows an orderly legal structure. Below is the blueprint illustrating how title recitals, share extinction, city name change consent, and SRO filing connect.
               </p>
 
               {/* Full width image card container */}
@@ -933,7 +933,7 @@ export default function ReleaseDeedFormatClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: Complete statutory architecture and registration workflow of a Release Deed
+                    Figure 1.1: Complete legal architecture and filing workflow of a Release Deed
                   </span>
                   <Link
                     href="/images/release-deed-format-og.jpg"
@@ -954,10 +954,10 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 8: EXECUTION WORKFLOW</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Step-by-Step SOP: Five Milestones to SRO Registration
+                8. Step-by-Step SOP: Five Milestones to SRO Filing
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Registering a Relinquishment Deed in India requires following five strict procedural milestones.
+                Registering a Release Deed in India requires following five strict procedural milestones.
               </p>
 
               <div className="space-y-3.5">
@@ -965,17 +965,17 @@ export default function ReleaseDeedFormatClient() {
                   {
                     step: "1",
                     title: "Establish Legal Heirship and Chain of Title",
-                    desc: "Obtain the official death certificate of the deceased owner and a legal heir certificate from the revenue tehsildar or municipal authority. Gather original parent title deeds.",
+                    desc: "Obtain the official death paper of the deceased owner and a legal heir paper from the revenue tehsildar or city office. Gather original parent title deeds.",
                   },
                   {
                     step: "2",
                     title: "Draft Deed with Specific Property Schedule",
-                    desc: "Draft the relinquishment deed defining the exact fractional share surrendered and listing 4-sided North, South, East, and West boundaries with survey and ward details.",
+                    desc: "Draft the release deed defining the exact fractional share surrendered and listing 4-sided North, South, East, and West boundaries with survey and ward details.",
                   },
                   {
                     step: "3",
                     title: "Purchase State e-Stamp Paper",
-                    desc: "Procure the non-judicial e-stamp paper through Stock Holding Corporation of India (SHCIL) or state portal under the designated family release deed article.",
+                    desc: "Procure the non-judicial e-stamp paper through Stock Holding City Board of India (SHCIL) or state portal under the designated family release deed article.",
                   },
                   {
                     step: "4",
@@ -985,7 +985,7 @@ export default function ReleaseDeedFormatClient() {
                   {
                     step: "5",
                     title: "Collect Registered Deed & File for Property Mutation",
-                    desc: "Collect the registered deed containing the Sub-Registrar seal and volume number. File a mutation petition at the municipal corporation or tehsil to update tax records.",
+                    desc: "Collect the filed deed containing the SRO seal and volume number. File a name change petition at the city city board or tehsil to update tax records.",
                   },
                 ].map((item) => (
                   <div
@@ -1014,7 +1014,7 @@ export default function ReleaseDeedFormatClient() {
                 9. Three Fatal Mistakes That Trigger SRO Rejections
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Avoid these three common drafting and procedural errors when executing an Indian release deed.
+                Avoid these three common drafting and procedural errors when signing an Indian release deed.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1023,10 +1023,10 @@ export default function ReleaseDeedFormatClient() {
                     #1
                   </div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Relying on Unregistered ₹100 Notary Affidavits
+                    Relying on Plain ₹100 Notary Affidavits
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 17 &amp; 49 of the Registration Act, an unregistered affidavit on ₹100 stamp paper has zero legal validity in court. It cannot transfer title or allow municipal mutation.
+                    Under Section 17 &amp; 49 of the Filing Act, an plain sworn note on ₹100 stamp paper has zero legal validity in court. It cannot transfer title or allow city name change.
                   </p>
                 </div>
 
@@ -1038,7 +1038,7 @@ export default function ReleaseDeedFormatClient() {
                     Relinquishing to Non-Heir or In-Law
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executing a release deed in favour of a son-in-law or distant cousin who was not an inherited co-heir leads to cancellation by the SRO or reclassification as a costly sale deed.
+                    Signing a release deed in favour of a son-in-law or distant cousin who was not an inherited co-heir leads to cancellation by the SRO or reclassification as a costly sale deed.
                   </p>
                 </div>
 
@@ -1047,10 +1047,10 @@ export default function ReleaseDeedFormatClient() {
                     #3
                   </div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Relinquishing Living Parent&apos;s Property
+                    Relinquishing Living Parent&apos;s Asset
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A living person cannot relinquish self-acquired property to their heirs. You can only relinquish inherited joint co-ownership. Living owners must use a Gift Deed or Will.
+                    A living person cannot relinquish self-acquired asset to their heirs. You can only relinquish inherited joint co-ownership. Living owners must use a Gift Deed or Will.
                   </p>
                 </div>
               </div>
@@ -1075,17 +1075,17 @@ export default function ReleaseDeedFormatClient() {
                       Why Families Incur Unnecessary Costs Without a Will
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Relinquishment deeds are only required when someone dies intestate without a Will.
+                      Release deeds are only required when someone dies no-Will without a Will.
                     </p>
                   </div>
                 </div>
 
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  When a property owner dies without a Will, all legal heirs automatically become co-owners. Transferring the family home to the surviving mother or a designated son then forces daughters, brothers, and sisters to spend weeks coordinating appointments, traveling to the Sub-Registrar Office, and paying registration charges.
+                  When a asset owner dies without a Will, all legal heirs automatically become co-owners. Transferring the family home to the surviving mother or a designated son then forces daughters, brothers, and sisters to spend weeks coordinating appointments, traveling to the SRO office, and paying filing charges.
                 </p>
 
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  If the owner writes a simple, legally valid Will during their lifetime, the property passes directly to the intended beneficiary. No release deed is needed. No co-owner consent is required. Municipal mutation proceeds directly on the basis of the Will.
+                  If the owner writes a simple, legally valid Will during their lifetime, the asset passes directly to the intended heir. No release deed is needed. No co-owner consent is required. City name change proceeds directly on the basis of the Will.
                 </p>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
@@ -1114,10 +1114,10 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 11: COMMON USE CASES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Four Specialized Scenarios for Property Release
+                11. Four Specialized Scenarios for Asset Release
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Review these four common real-world scenarios where executing a registered Relinquishment Deed is the standard legal procedure.
+                Review these four common real-world scenarios where signing a filed Release Deed is the standard legal step.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1127,24 +1127,24 @@ export default function ReleaseDeedFormatClient() {
                     <span>Siblings Relinquishing to Widowed Mother</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Following the father&apos;s intestate demise, adult children execute a registered release deed surrendering their 2/3rd collective shares to their mother, making her the sole 100% owner.
+                    Following the father&apos;s no-Will demise, adult children execute a filed release deed surrendering their 2/3rd collective shares to their mother, making her the sole 100% owner.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Building className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Married Daughter Releasing Ancestral Share</span>
+                    <span>Married Daughter Releasing Family Share</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under the 2005 Hindu Succession Amendment, daughters are equal coparceners. A married daughter can formally release her ancestral share in favour of her brother to prevent future partition claims.
+                    Under the 2005 Hindu Succession Amendment, daughters are equal coparceners. A married daughter can formally release her family share in favour of her brother to prevent future split claims.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Calendar className="w-4 h-4 text-[#D29E0D]" />
-                    <span>NRI Co-Heir Executing via Special POA</span>
+                    <span>NRI Co-Heir Signing via Special POA</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     An NRI co-heir residing abroad signs a Special Power of Attorney (POA) attested by the Indian Consulate, authorizing a trusted family member in India to register the release deed on their behalf.
@@ -1157,7 +1157,7 @@ export default function ReleaseDeedFormatClient() {
                     <span>Co-Owner Buyout with Financial Consideration</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    One co-heir pays an agreed financial settlement to another co-heir to acquire their share. The release deed recites the exact bank transaction details and acts as proof of full satisfaction.
+                    One co-heir pays an agreed financial deal to another co-heir to acquire their share. The release deed recites the exact bank transaction details and acts as proof of full satisfaction.
                   </p>
                 </div>
               </div>
@@ -1170,14 +1170,14 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 12: INSTITUTIONAL BACKING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Institutional Verification: Powered by AMA Legal
+                12. Institutional Check: Powered by AMA Legal
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">WillDrafting.in</h3>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      India&apos;s Dedicated Estate Planning &amp; Succession Portal
+                      India&apos;s Dedicated Estate Planning &amp; Estate Portal
                     </p>
                   </div>
                   <div className="flex items-center gap-3 bg-[#FAF7F0] border border-slate-200 px-4 py-2 rounded-xl text-xs font-semibold text-slate-700">
@@ -1187,20 +1187,20 @@ export default function ReleaseDeedFormatClient() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Every legal template, statutory analysis, and estate planning workflow on WillDrafting.in is drafted and regularly audited by experienced succession advocates from AMA Legal Solutions. We ensure strict alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-specific Sub-Registrar registration guidelines.
+                  Every legal template, legal analysis, and estate planning workflow on WillDrafting.in is drafted and regularly audited by experienced estate lawyers from AMA Legal Solutions. We ensure strict alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-specific SRO filing guidelines.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Section 17 Compliant</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Registration Ready</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Filing Ready</div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">State Stamp Check</div>
                     <div className="text-[11px] text-slate-500 mt-0.5">Duty Optimization</div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
-                    <div className="font-extrabold text-slate-900 text-sm">Advocate Verified</div>
+                    <div className="font-extrabold text-slate-900 text-sm">Lawyer Checked</div>
                     <div className="text-[11px] text-slate-500 mt-0.5">Court Tested Clauses</div>
                   </div>
                 </div>
@@ -1214,10 +1214,10 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 13: DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Frequently Asked Questions: Relinquishment Deeds
+                Frequently Asked Questions: Release Deeds
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Find clear answers to common questions about executing, witnessing, and registering a Relinquishment Deed in India.
+                Find clear answers to common questions about signing, witnessing, and registering a Release Deed in India.
               </p>
 
               <div className="space-y-3">
@@ -1255,14 +1255,14 @@ export default function ReleaseDeedFormatClient() {
                 <span>SECTION 14: STATUTORY CITATIONS &amp; REFERENCES</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900">
-                Statutory Citations and Official Legal Resources
+                Legal Citations and Official Legal Resources
               </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
-                  <strong>Registration Act, 1908:</strong> Section 17(1)(b) (compulsory registration of non-testamentary instruments transferring or extinguishing immovable property rights) and Section 49 (inadmissibility of unregistered documents).
+                  <strong>Filing Act, 1908:</strong> Section 17(1)(b) (needed filing of non-Will instruments transferring or extinguishing land asset rights) and Section 49 (inadmissibility of plain papers).
                 </li>
                 <li>
-                  <strong>Hindu Succession Act, 1956:</strong> Section 8 (general rules of succession in case of males), Section 10 (distribution among Class I heirs), and 2005 Amendment Section 6 (coparcenary rights of daughters).
+                  <strong>Hindu Succession Act, 1956:</strong> Section 8 (general rules of estate in case of males), Section 10 (split among Class I heirs), and 2005 Amendment Section 6 (joint rights of daughters).
                 </li>
                 <li>
                   <strong>Supreme Court of India:</strong> <em>Kuppuswamy Chettiar v. A.S.P.A. Arumugam Chettiar (AIR 1967 SC 1395)</em> (release deed valid only between pre-existing co-owners) and <em>Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1</em> (daughters as coparceners by birth).
@@ -1303,12 +1303,34 @@ export default function ReleaseDeedFormatClient() {
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Succession Calculator &rarr;
+                    Estate Tool &rarr;
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1328,21 +1350,21 @@ export default function ReleaseDeedFormatClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, property succession, and estate structuring at AMA Legal Solutions.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, asset estate, and estate structuring at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1367,7 +1389,7 @@ export default function ReleaseDeedFormatClient() {
                 Avoid Release Deeds with a Legal Will
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Prevent future property disputes among children. Use our guided wizard to create an advocate-verified, challenge-proof Will in 15 minutes.
+                Prevent future asset fights among children. Use our guided wizard to create an lawyer-checked, fight-proof Will in 15 minutes.
               </p>
               <a
                 href="/start"
@@ -1379,7 +1401,7 @@ export default function ReleaseDeedFormatClient() {
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Questions? Call our advocates</span>
+                <span>Questions? Call our lawyers</span>
               </div>
             </div>
 
@@ -1392,7 +1414,7 @@ export default function ReleaseDeedFormatClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 17 Compliant:</strong> Ready for Sub-Registrar biometric registration.
+                    <strong>Section 17 Compliant:</strong> Ready for SRO biometric filing.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1404,13 +1426,13 @@ export default function ReleaseDeedFormatClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mutation Ready:</strong> Includes explicit municipal tax and khata transfer clause.
+                    <strong>Name Change Ready:</strong> Includes explicit city tax and khata transfer clause.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Dispute Resistant:</strong> Contains perpetual waiver of future partition suits.
+                    <strong>Fight Resistant:</strong> Contains perpetual waiver of future split suits.
                   </span>
                 </li>
               </ul>
@@ -1453,7 +1475,7 @@ export default function ReleaseDeedFormatClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares &rarr;
                   </div>
@@ -1482,13 +1504,13 @@ export default function ReleaseDeedFormatClient() {
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
               </div>
             </div>

@@ -144,7 +144,7 @@ export default function AndhraPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Andhra Pradesh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset.",
+          "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS filing guidance, and statewide farm & urban asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function AndhraPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Andhra Pradesh - Estate Planning & AP IGRS Registration",
         description:
-          "Professional Will drafting, advocate verification, AP IGRS registration guidance, Meebhoomi land record integration, and doorstep execution.",
+          "Professional Will drafting, lawyer check, AP IGRS filing guidance, Meebhoomi land record integration, and doorstep signing.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -259,38 +259,38 @@ export default function AndhraPradeshLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Andhra Pradesh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Andhra Pradesh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Andhra Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Andhra Pradesh assets including GVMC or VMC apartments, commercial units, APCRDA or VMRDA plots, Meebhoomi agricultural farmlands, and bank investments. Designate beneficiaries and an executor.",
+            text: "List your Andhra Pradesh assets including GVMC or VMC apartments, shop units, APCRDA or VMRDA plots, Meebhoomi farm farmlands, and bank investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 executive bond or plain paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 executive bond or plain paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book AP IGRS Online Appointment",
-            text: "Schedule your registration appointment on the AP IGRS portal for your local Sub-Registrar Office and remit the nominal registration fee via CFMS Cyber Treasury challan.",
+            text: "Schedule your filing appointment on the AP IGRS portal for your local SRO office and remit the nominal filing fee via CFMS Cyber Treasury challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at AP Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

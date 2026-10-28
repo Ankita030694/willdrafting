@@ -110,7 +110,7 @@ const GWALIOR_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard durable white A4 sheets. Under Madhya Pradesh law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -129,19 +129,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity, soundness, and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental capacity, soundness, and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "MP Sampada Online Appointment Slip & Challan",
-    detail: "Official time-slot booking token downloaded from sampada.mpigr.gov.in with the ₹1,000 registration fee receipt.",
+    detail: "Official time-slot booking token downloaded from sampada.mpigr.gov.in with the ₹1,000 filing fee receipt.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "GDA Allotment Letters / Registered Sale Deeds",
-    detail: "For GDA plots in City Center or Patel Nagar, or registered family sale deeds for Havelis in Lashkar.",
+    label: "GDA Allotment Letters / Filed Sale Deeds",
+    detail: "For GDA plots in City Center or Patel Nagar, or filed family sale deeds for Havelis in Lashkar.",
     checked: false,
   },
   {
@@ -300,7 +300,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Gwalior Estate &amp; Heritage Succession Blueprint
+                  Gwalior Estate &amp; Heritage Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -345,7 +345,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 MP High Court Gwalior Rule
@@ -481,16 +481,16 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>GWALIOR ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Gwalior
+                  Key Highlights: Will Making &amp; Filing in Gwalior
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III registration via MP Sampada eliminates signature fights and ensures smooth GDA title transfers.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. An plain Will signed before two witnesses is valid, but official Book III filing via MP Sampada eliminates signature fights and ensures smooth GDA title transfers.
                     </p>
                   </div>
 
@@ -500,7 +500,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Gwalior is a non-presidency town under the territorial area of the MP High Court Gwalior Bench. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed, allowing direct property name change with a registered Will.
+                      Gwalior is a non-presidency town under the territorial area of the MP High Court Gwalior Bench. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed, allowing direct asset name change with a filed Will.
                     </p>
                   </div>
 
@@ -510,17 +510,17 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       <span>Zero MP Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from stamp duty across Madhya Pradesh under the Indian Stamp Act, 1899. Testators only pay a nominal government registration fee of ₹1,000 on the MP Sampada portal plus standard scanning charges.
+                      Wills are completely exempt from stamp duty across Madhya Pradesh under the Indian Stamp Act, 1899. Will makers only pay a nominal government filing fee of ₹1,000 on the MP Sampada portal plus standard scanning charges.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GDA &amp; Municipal Name Change</span>
+                      <span>GDA &amp; City Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will accelerates property tax name change (Sampattikar Namantaran) with the Gwalior Municipal Corporation and enables fast freehold plot transfer with the Gwalior Development Authority (GDA).
+                      A filed Will accelerates asset tax name change (Sampattikar Namantaran) with the Gwalior City City Board and enables fast freehold plot transfer with the Gwalior Development Office (GDA).
                     </p>
                   </div>
                 </div>
@@ -538,10 +538,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Gwalior
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary dispositions in Gwalior district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Madhya Pradesh Land Revenue Code, 1959</strong>. Any adult of sound mind can legally bequeath self-acquired home property, family joint family shares, shop establishments, and financial holdings.
+                  Estate planning and Will gifts in Gwalior district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Madhya Pradesh Land Revenue Code, 1959</strong>. Any adult of sound mind can legally bequeath self-acquired home asset, family joint family shares, shop establishments, and financial holdings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gwalior presents a historic confluence of asset classes. Families often possess multi-generational Havelis or Kothis in Lashkar, modern freehold bungalows in GDA schemes across City Center and Patel Nagar, shop retail shops in Maharaj Bada, or farm farmland in Dabra. Without a meticulously drafted Will, surviving legal heirs face protracted office hurdles before municipal revenue inspectors, GDA estate officers, and rural revenue Tehsildars.
+                  Gwalior presents a historic confluence of asset classes. Families often possess multi-generational Havelis or Kothis in Lashkar, modern freehold bungalows in GDA schemes across City Center and Patel Nagar, shop retail shops in Maharaj Bada, or farm farmland in Dabra. Without a meticulously drafted Will, surviving legal heirs face protracted office hurdles before city revenue inspectors, GDA estate officers, and rural revenue Tehsildars.
                 </p>
               </div>
 
@@ -552,7 +552,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older possessing sound Will mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -596,13 +596,13 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Gwalior?
+                  2. Is Will Filing Needed in Gwalior?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will Will is strictly <strong>a choice</strong>. An plain Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly appreciating real estate valuations across City Center, University Road, and GDA plotted townships, our senior lawyers strongly advise formal registration at the SRO office. An official Book III registration eliminates suspicion of forged signatures, ensures high evidential value before the Gwalior Bench of the MP High Court, and guarantees prompt ownership name change.
+                  However, with rapidly appreciating real estate valuations across City Center, University Road, and GDA plotted townships, our senior lawyers strongly advise formal filing at the SRO office. An official Book III filing eliminates suspicion of forged signatures, ensures high evidential value before the Gwalior Bench of the MP High Court, and guarantees prompt ownership name change.
                 </p>
               </div>
 
@@ -611,9 +611,9 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (MP Sampada)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (MP Sampada)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -629,11 +629,11 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">GDA Freehold Plot Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Smooth name change on presenting certified registration copy</td>
+                      <td className="p-4 bg-rose-50/20">Smooth name change on presenting certified filing copy</td>
                       <td className="p-4 bg-slate-50/20">GDA officers often insist on court decrees or family NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMC Municipal Tax Name Change</td>
+                      <td className="p-4 font-semibold">GMC City Tax Name Change</td>
                       <td className="p-4 bg-rose-50/20">Prompt name substitution on e-Nagar Palika portal</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections during needed public notice period</td>
                     </tr>
@@ -643,7 +643,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Requires prolonged witness testimonies and legal heir citations</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
+                      <td className="p-4 font-semibold">Government Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹1,000 fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 fee</td>
                     </tr>
@@ -663,10 +663,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   3. Gwalior Probate Law: MP High Court Exemption Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most widespread legal myths among property owners in Gwalior is whether probate from the District Court or High Court is needed before property can be inherited. The clear legal position under Indian law is <strong>no</strong>.
+                  One of the most widespread legal myths among asset owners in Gwalior is whether probate from the District Court or High Court is needed before asset can be inherited. The clear legal position under Indian law is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Madhya Pradesh has repeatedly affirmed that in non-presidency areas such as Gwalior, getting court probate is non-needed. A valid registered Will provides sufficient legal authority to mutate title before government bodies.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Madhya Pradesh has repeatedly affirmed that in non-presidency areas such as Gwalior, getting court probate is non-needed. A valid filed Will provides sufficient legal office to mutate title before government bodies.
                 </p>
               </div>
 
@@ -679,7 +679,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     MP High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Madhya Pradesh (Gwalior Bench) has consistently held that Hindu, Buddhist, Sikh, and Jain testators in MP do not require probate to set up executor or legatee rights. A registered Will serves as strong evidence for GDA plot transfers, bank deposit transfers, and municipal name change without incurring court fee expenses.
+                    The High Court of Madhya Pradesh (Gwalior Bench) has consistently held that Hindu, Buddhist, Sikh, and Jain Will makers in MP do not require probate to set up executor or legatee rights. A filed Will serves as strong evidence for GDA plot transfers, bank deposit transfers, and city name change without incurring court fee expenses.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -695,7 +695,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     When is Probate Filed in Gwalior District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of management before the Principal District and Sessions Judge in Gwalior if disgruntled family members file split suits or challenge the Will maker&apos;s mental soundness. A decree of probate represents a judgment <em>in rem</em> that conclusively settles legal title against all claimants.
+                    An executor may voluntarily file for probate or letters of management before the Principal District and Sessions Judge in Gwalior if disgruntled family members file split suits or fight the Will maker&apos;s mental soundness. A decree of probate represents a judgment <em>in rem</em> that conclusively settles legal title against all claimants.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -713,10 +713,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Gwalior Sub-Registrar Offices: MP Sampada SRO Directory
+                  4. Gwalior SRO Offices: MP Sampada SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gwalior district operates designated Sub-Registrar Offices under the MP Shop Tax &amp; Registration Department, managed electronically via the <strong>MP Sampada</strong> portal. Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your place of residence or where your land and flats are located.
+                  Gwalior district operates designated SRO Offices under the MP Shop Tax &amp; Filing Office, managed electronically via the <strong>MP Sampada</strong> portal. Under Section 32 of the Filing Act, your Will can be filed at the SRO office having area over your place of residence or where your land and flats are located.
                 </p>
               </div>
 
@@ -765,7 +765,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Gwalior Registration District
+                        Gwalior Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -818,7 +818,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Gwalior
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Gwalior span modern high-rises and GDA plotted townships in City Center, multi-generational royal Havelis in Lashkar, Cantonment assets in Morar, industrial manufacturing factories in Banmore and Malanpur, and fertile farm farmland in Dabra. Our estate lawyers deliver customized legal drafting, MP Sampada slot scheduling, and Sub-Registrar accompaniment across all key zones:
+                  Estate assets across Gwalior span modern high-rises and GDA plotted townships in City Center, multi-generational royal Havelis in Lashkar, Cantonment assets in Morar, plant manufacturing factories in Banmore and Malanpur, and fertile farm farmland in Dabra. Our estate lawyers deliver customized legal drafting, MP Sampada slot scheduling, and SRO accompaniment across all key zones:
                 </p>
               </div>
 
@@ -848,7 +848,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in City Center</strong> and University Road for premium multi-story apartments, luxury duplexes, and shop office spaces. Codifies GDA leasehold-to-freehold succession rights, demat share transfers, and bank locker nominations to protect family wealth.
+                      Specialized <strong>Will drafting services in City Center</strong> and University Road for premium multi-story apartments, luxury duplexes, and shop office spaces. Codifies GDA leasehold-to-freehold estate rights, demat share transfers, and bank locker nominations to protect family wealth.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -901,7 +901,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Lashkar</strong> and Maharaj Bada for historic Havelis, family Kothis, and generational shop establishments. Clears joint family confusion, outlines floor-by-floor bequests, and secures business goodwill and trademark succession.
+                      Customized <strong>Will drafting services in Lashkar</strong> and Maharaj Bada for historic Havelis, family Kothis, and generational shop establishments. Clears joint family confusion, outlines floor-by-floor bequests, and secures business goodwill and trademark estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -910,7 +910,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Collectorate, Kampoo Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Family property split clauses, medical sanity certifications, and Book III registration support.
+                        Family asset split clauses, medical sanity certifications, and Book III filing support.
                       </p>
                     </div>
                   </div>
@@ -1007,16 +1007,16 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Thatipur</strong> and Gandhi Nagar for established government housing schemes, MP Housing Board duplexes, and private home plots. Facilitates smooth succession and direct name substitution in Gwalior Municipal Corporation tax ledgers.
+                      Tailored <strong>Will drafting services in Thatipur</strong> and Gandhi Nagar for established government housing schemes, MP Housing Board duplexes, and private home plots. Facilitates smooth estate and direct name substitution in Gwalior City City Board tax ledgers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: City Center Registration Office</span>
+                        <span>SRO Hub: City Center Filing Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete MP Sampada booking, witness check, and municipal name change advisory.
+                        Complete MP Sampada booking, witness check, and city name change advisory.
                       </p>
                     </div>
                   </div>
@@ -1147,26 +1147,26 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; MSME Belt
+                        Plant &amp; MSME Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
-                        SRO Industrial Border
+                        SRO Plant Border
                       </span>
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting Services in Banmore &amp; Malanpur Industrial Belt
+                      Will Drafting Services in Banmore &amp; Malanpur Plant Belt
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Banmore Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Banmore Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Malanpur MPIDC</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gwalior Growth Centre</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">AB Road Highway</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Banmore and Malanpur</strong> for manufacturing entrepreneurs, foundry owners, and MSME industrialists. Formulates succession of MPIDC industrial leasehold rights, private limited company equity, factory plant and machinery, and director guarantees.
+                      Specialized <strong>Will drafting services in Banmore and Malanpur</strong> for manufacturing entrepreneurs, foundry owners, and MSME industrialists. Formulates estate of MPIDC plant leasehold rights, private limited company equity, factory plant and machinery, and director guarantees.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1175,7 +1175,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                         <span>SRO Hub: AB Road Highway Sub-Registry Corridor</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        MPIDC leasehold transfer compliance, corporate succession clauses, and industrial asset inventories.
+                        MPIDC leasehold transfer compliance, corporate estate clauses, and plant asset inventories.
                       </p>
                     </div>
                   </div>
@@ -1188,7 +1188,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Banmore Malanpur Industrial Belt"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1260,7 +1260,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to MP Sampada Entry
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Gwalior:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Gwalior:
                 </p>
               </div>
 
@@ -1316,7 +1316,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       MP Sampada Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on MP Sampada (sampada.mpigr.gov.in) and pay the ₹1,000 government registration fee online.
+                      Schedule your slot on MP Sampada (sampada.mpigr.gov.in) and pay the ₹1,000 government filing fee online.
                     </p>
                   </div>
                 </div>
@@ -1345,23 +1345,23 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in City Center, Lashkar, Thatipur, Morar, or rural family estates, traveling to the SRO office can be a significant physical burden. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital room to complete registration.
+                  For elderly, unwell, or bedridden citizens residing in City Center, Lashkar, Thatipur, Morar, or rural family estates, traveling to the SRO office can be a significant physical burden. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private residence or hospital room to complete filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates in Gwalior District:
+                  How Doorstep SRO Filing Operates in Gwalior District:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound testamentary mind but medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound Will mind but medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1369,7 +1369,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Gwalior Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the local Gwalior SRO.</span>
                     </div>
                   </div>
 
@@ -1385,7 +1385,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric fingerprint scanners and digital cameras to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric fingerprint scanners and digital cameras to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1400,10 +1400,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Gwalior Sub-Registrar Offices
+                  8. Paper Checklist for Gwalior SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1448,10 +1448,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Gwalior Property Types: GDA Plots, Havelis &amp; Land
+                  9. Gwalior Asset Types: GDA Plots, Havelis &amp; Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps across Gwalior district vary considerably depending on the nature of the property title and local office authority:
+                  Estate steps across Gwalior district vary considerably depending on the nature of the asset title and local office office:
                 </p>
               </div>
 
@@ -1464,7 +1464,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     GDA Plots &amp; Townships
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For plots and houses in GDA schemes across City Center and Patel Nagar, presenting a registered Will alongside the original allotment letter and death paper allows direct signing of a freehold conveyance deed without prolonged succession suits.
+                    For plots and houses in GDA schemes across City Center and Patel Nagar, presenting a filed Will alongside the original allotment letter and death paper allows direct signing of a freehold conveyance deed without prolonged estate suits.
                   </p>
                 </div>
 
@@ -1476,19 +1476,19 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     Lashkar Havelis &amp; Kothis
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Historic Havelis and Kothis in Lashkar require clear demarcation between the Will maker&apos;s individual share and family joint family interests. A registered Will prevents family partitions from escalating into contested court fights in civil court.
+                    Historic Havelis and Kothis in Lashkar require clear demarcation between the Will maker&apos;s single share and family joint family interests. A filed Will prevents family partitions from escalating into contested court fights in civil court.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Farm &amp; Industrial
+                    Farm &amp; Plant
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Dabra Farmland &amp; Banmore MIDC
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland in Dabra and Ghatigaon requires compliance with the MP Land Revenue Code 1959 for Tehsildar name change. Industrial units in Banmore and Malanpur require specific bequeathal of leasehold rights and company shares.
+                    Farmland in Dabra and Ghatigaon requires compliance with the MP Land Revenue Code 1959 for Tehsildar name change. Plant units in Banmore and Malanpur require specific bequeathal of leasehold rights and company shares.
                   </p>
                 </div>
               </div>
@@ -1502,10 +1502,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official MP Sampada Registration Fees &amp; Charges
+                  10. Official MP Sampada Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale deeds or gift transfers that attract 7% to 9.5% stamp duty in Madhya Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration charges in Gwalior are purely nominal:
+                  Unlike shop sale deeds or gift transfers that attract 7% to 9.5% stamp duty in Madhya Pradesh, Will Wills are completely exempt from stamp duty. Government filing charges in Gwalior are purely nominal:
                 </p>
               </div>
 
@@ -1515,7 +1515,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1525,14 +1525,14 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Madhya Pradesh</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹1,000 (Flat Legal Fee)</td>
                       <td className="p-4">MP Sampada Portal (sampada.mpigr.gov.in)</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Service Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹200</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1555,7 +1555,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Gwalior
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Gwalior:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in Gwalior:
                 </p>
               </div>
 
@@ -1573,12 +1573,12 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with GDA home plots, bank accounts, and demat assets.
+                      Ideal for single homeowners with GDA home plots, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Madhya Pradesh Will creator</span>
+                        <span>Free Madhya Pradesh Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1651,13 +1651,13 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Gwalior SRO office or doorstep home visit.
+                      End-to-end filing coordination across any Gwalior SRO office or doorstep home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1699,7 +1699,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Gwalior
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Gwalior:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset filing in Gwalior:
                 </p>
               </div>
 
@@ -1743,7 +1743,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Madhya Pradesh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Madhya Pradesh state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Madhya Pradesh state filing systems:
                 </p>
               </div>
 
@@ -1759,10 +1759,10 @@ export default function GwaliorLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1780,7 +1780,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
                     MP Sampada Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official e-registration &amp; booking system: <code>sampada.mpigr.gov.in</code>.
+                    Official e-filing &amp; booking system: <code>sampada.mpigr.gov.in</code>.
                   </p>
                 </div>
               </div>
@@ -1811,7 +1811,29 @@ export default function GwaliorLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1830,7 +1852,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Gwalior Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Gwalior Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1849,7 +1871,7 @@ export default function GwaliorLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Gwalior SRO Registered &amp; GDA Name Change Compliant</span>
+              <span>Gwalior SRO Filed &amp; GDA Name Change Compliant</span>
               <Link
                 href="/start"
                 onClick={(e) => {

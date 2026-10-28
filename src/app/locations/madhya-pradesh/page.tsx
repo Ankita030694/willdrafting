@@ -142,7 +142,7 @@ export default function MadhyaPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Madhya Pradesh: Online Will & MP Guide",
         description:
-          "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal.",
+          "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 filing guidance, family land estate rules, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MadhyaPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Madhya Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, MP Sampada 2.0 registration, and Section 31 doorstep execution support across Indore.",
+          "Professional Will drafting, lawyer check, MP Sampada 2.0 filing, and Section 31 doorstep signing support across Indore.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -251,38 +251,38 @@ export default function MadhyaPradeshLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Madhya Pradesh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Madhya Pradesh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Madhya Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Complete Asset Inventory and Successors",
-            text: "List your Madhya Pradesh real estate including IDA, BDA, or JDA plots, MP Housing Board flats, agricultural farmland recorded on MP Bhulekh, and financial securities. Designate beneficiaries and an executor.",
+            text: "List your Madhya Pradesh real estate including IDA, BDA, or JDA plots, MP Housing Board flats, farm farmland recorded on MP Bhulekh, and financial securities. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses with Advocate Review",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior testamentary instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior Will instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book MP Sampada 2.0 SRO Slot & Generate Cyber Challan",
-            text: "Schedule your registration appointment on the MP Commercial Tax & Registration portal (sampada.mpigr.gov.in) for your relevant district SRO and remit nominal registration fees.",
+            text: "Schedule your filing appointment on the MP Shop Tax & Filing portal (sampada.mpigr.gov.in) for your relevant district SRO and remit nominal filing fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete permanent Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete permanent Book III filing.",
           },
         ],
       },

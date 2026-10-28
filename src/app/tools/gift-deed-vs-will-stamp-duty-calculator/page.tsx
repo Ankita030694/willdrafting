@@ -130,7 +130,7 @@ export default function GiftDeedCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory stamp duty calculator for gift deeds, release deeds, and Wills across Indian states including Maharashtra, Uttar.",
+          "Free legal stamp duty tool for gift deeds, release deeds, and Wills across Indian states including Maharashtra, Uttar.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function GiftDeedCalculatorPage() {
             name: "How much stamp duty is charged on a Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Will attracts exactly zero (₹0) stamp duty in every Indian state and union territory. A Will is a testamentary instrument under the Indian Succession Act, 1925, and does not require stamp paper under the Indian Stamp Act, 1899. Writing a Will on plain white paper is completely valid.",
+              text: "A Will attracts exactly zero (₹0) stamp duty in every Indian state and union territory. A Will is a Will instrument under the Indian Succession Act, 1925, and does not require stamp paper under the Indian Stamp Act, 1899. Writing a Will on plain white paper is completely valid.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function GiftDeedCalculatorPage() {
             name: "Why is a Gift Deed more expensive than a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Gift Deed transfers property ownership during the donor's lifetime (inter vivos). Under Section 17 of the Registration Act, 1908, it requires mandatory registration and ad valorem or concessional state stamp duty ranging from ₹200 to 7% of property value, plus 1% registration fees. A Will costs ₹0 stamp duty and registration is entirely optional.",
+              text: "A Gift Deed transfers asset ownership during the donor's lifetime (inter vivos). Under Section 17 of the Filing Act, 1908, it requires needed filing and ad valorem or concessional state stamp duty ranging from ₹200 to 7% of asset value, plus 1% filing fees. A Will costs ₹0 stamp duty and filing is entirely a choice.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function GiftDeedCalculatorPage() {
             name: "What is the stamp duty on a gift deed to blood relatives in Maharashtra?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Article 34 proviso of the Maharashtra Stamp Act, 1958, a gift deed of residential or agricultural property made to a spouse, son, daughter, grandchild, or wife of a deceased son attracts a fixed stamp duty of only ₹200. A registration fee of 1% applies, capped at a maximum of ₹30,000.",
+              text: "Under Article 34 proviso of the Maharashtra Stamp Act, 1958, a gift deed of home or farm asset made to a spouse, son, daughter, grandchild, or wife of a deceased son attracts a fixed stamp duty of only ₹200. A filing fee of 1% applies, capped at a maximum of ₹30,000.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function GiftDeedCalculatorPage() {
             name: "What is the flat ₹5,000 gift deed stamp duty rule in Uttar Pradesh?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The Government of Uttar Pradesh notified a concessional flat stamp duty of ₹5,000 under Article 33 for gift deeds executed between defined blood relatives (parents, spouse, children, siblings, grandchildren, and daughter-in-law). The registration fee is 1%, subject to a maximum cap of ₹10,000.",
+              text: "The Government of Uttar Pradesh notified a concessional flat stamp duty of ₹5,000 under Article 33 for gift deeds signed between defined blood relatives (parents, spouse, children, siblings, grandchildren, and daughter-in-law). The filing fee is 1%, subject to a maximum cap of ₹10,000.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function GiftDeedCalculatorPage() {
             name: "Can a parent cancel a registered Gift Deed if their child neglects them?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under general property law, a registered gift deed is irrevocable. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, a senior citizen can petition the Maintenance Tribunal to cancel the gift deed if the deed contains an express clause stating the gift was conditional upon providing basic physical needs, as affirmed in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20).",
+              text: "Under general asset law, a filed gift deed is irrevocable. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, a senior citizen can petition the Maintenance Tribunal to cancel the gift deed if the deed contains an express clause stating the gift was conditional upon providing basic physical needs, as affirmed in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20).",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function GiftDeedCalculatorPage() {
             name: "Can I use a Release Deed instead of a Gift Deed to avoid stamp duty?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A Release Deed (or Relinquishment Deed) can only be executed between existing co-owners or coparceners who already hold a pre-existing legal share in ancestral or jointly owned property. A sole living owner cannot execute a Release Deed for self-acquired property; attempting to do so is legally void.",
+              text: "No. A Release Deed (or Release Deed) can only be signed between existing co-owners or coparceners who already hold a pre-existing legal share in family or jointly owned asset. A sole living owner cannot execute a Release Deed for self-acquired asset; attempting to do so is legally void.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function GiftDeedCalculatorPage() {
             name: "Is income tax applicable on gifts received from blood relatives?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 56(2)(x) of the Income Tax Act, 1961, any immovable property or sum of money received as a gift from a defined relative (spouse, parents, siblings, children, grandchildren) is 100% exempt from income tax in the hands of the receiver. However, gifts from non-relatives exceeding ₹50,000 are taxed as income.",
+              text: "Under Section 56(2)(x) of the Income Tax Act, 1961, any land asset or sum of money received as a gift from a defined relative (spouse, parents, siblings, children, grandchildren) is 100% exempt from income tax in the hands of the receiver. However, gifts from non-relatives exceeding ₹50,000 are taxed as income.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function GiftDeedCalculatorPage() {
             name: "What happens to ownership when I make a Gift Deed vs a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "With a Gift Deed, ownership transfers immediately upon registration. You lose all ownership rights, cannot sell or mortgage the property, and cannot revoke the gift easily. With a Will, you retain 100% absolute ownership and control during your entire lifetime; property only passes to beneficiaries after your demise.",
+              text: "With a Gift Deed, ownership transfers right away upon filing. You lose all ownership rights, cannot sell or mortgage the asset, and cannot revoke the gift easily. With a Will, you retain 100% absolute ownership and control during your entire lifetime; asset only passes to heirs after your demise.",
             },
           },
           {
@@ -211,7 +211,7 @@ export default function GiftDeedCalculatorPage() {
             name: "What is the stamp duty cap on family gift deeds in Tamil Nadu?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Article 33 of the Tamil Nadu Stamp Act, a gift deed made in favor of family members (spouse, children, parents, grandchildren, siblings) attracts 1% stamp duty subject to a maximum ceiling of ₹25,000, and a 1% registration fee capped at ₹4,000. Non-family gifts attract 7% stamp duty and 4% registration fees.",
+              text: "Under Article 33 of the Tamil Nadu Stamp Act, a gift deed made in favor of family members (spouse, children, parents, grandchildren, siblings) attracts 1% stamp duty subject to a maximum ceiling of ₹25,000, and a 1% filing fee capped at ₹4,000. Non-family gifts attract 7% stamp duty and 4% filing fees.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function GiftDeedCalculatorPage() {
             name: "Does a Will need to be registered in India to be legally valid?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 18(e) of the Registration Act, 1908, registration of a Will is completely optional in India. An unregistered Will written on plain paper and signed by the testator in the presence of two attesting witnesses under Section 63 of the Indian Succession Act is 100% legally valid.",
+              text: "No. Under Section 18(e) of the Filing Act, 1908, filing of a Will is completely a choice in India. An plain Will written on plain paper and signed by the Will maker in the presence of two signing witnesses under Section 63 of the Indian Succession Act is 100% legally valid.",
             },
           },
         ],

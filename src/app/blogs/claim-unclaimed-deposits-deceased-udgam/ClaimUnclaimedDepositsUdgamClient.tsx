@@ -49,11 +49,11 @@ const TOC_ITEMS: TocItem[] = [
   { id: "what-is-udgam-portal", label: "1. What is the RBI UDGAM Portal?" },
   { id: "scale-of-unclaimed-dea-fund", label: "2. The RBI DEA Fund Explained" },
   { id: "step-by-step-udgam-search", label: "3. Step-by-Step UDGAM Search Guide" },
-  { id: "required-documents-nominee-rules", label: "4. Documents: With or Without Nominee" },
+  { id: "required-documents-nominee-rules", label: "4. Papers: With or Without Nominee" },
   { id: "bank-claim-thresholds-limits", label: "5. Small Claims vs Large Claims" },
   { id: "account-types-savings-fd-ppf", label: "6. Claims by Account: Savings, FD, PPF" },
   { id: "claim-pathways-comparison", label: "7. Comparison of 3 Claim Pathways" },
-  { id: "timeline-expectations-settlement", label: "8. Settlement Timeline Expectations" },
+  { id: "timeline-expectations-settlement", label: "8. Deal Timeline Expectations" },
   { id: "how-will-prevents-frozen-money", label: "9. How a Will Prevents Frozen Money" },
   { id: "common-rejections-solutions", label: "10. Common Rejection Pitfalls" },
   { id: "statutory-citations-framework", label: "11. Legal Framework & Citations" },
@@ -119,7 +119,7 @@ const FAQS = [
   },
   {
     q: "Can I receive the unclaimed money directly online through UDGAM?",
-    a: "No. UDGAM is strictly an information discovery portal, not a payment gateway. It helps you identify where unclaimed deposits exist and generates a unique Unclaimed Deposit Reference Number (UDRN). To claim the money, the registered nominee or legal heirs must visit the respective bank branch and submit physical claim documentation.",
+    a: "No. UDGAM is strictly an information discovery portal, not a payment gateway. It helps you identify where unclaimed deposits exist and generates a unique Unclaimed Deposit Reference Number (UDRN). To claim the money, the filed nominee or legal heirs must visit the respective bank branch and submit physical claim papers.",
   },
   {
     q: "What happens to a bank account after 10 years of inactivity?",
@@ -127,31 +127,31 @@ const FAQS = [
   },
   {
     q: "Can legal heirs still claim the money after it goes to the RBI DEA Fund?",
-    a: "Yes, 100%. Transferring funds to the RBI DEA Fund never takes away your ownership rights. The depositor, registered nominee, or lawful legal heirs retain an absolute, permanent right to reclaim the principal balance plus applicable interest from the bank at any time. The bank settles your claim from its own funds and subsequently claims reimbursement from the RBI.",
+    a: "Yes, 100%. Transferring funds to the RBI DEA Fund never takes away your ownership rights. The depositor, filed nominee, or lawful legal heirs retain an absolute, permanent right to reclaim the principal balance plus applicable interest from the bank at any time. The bank settles your claim from its own funds and then claims reimbursement from the RBI.",
   },
   {
-    q: "How fast must a bank settle a claim if a nominee is registered?",
-    a: "Under RBI Master Directions on Settlement of Claims in respect of Deceased Depositors, banks are mandated to settle claims submitted by registered nominees within a strict maximum of 15 calendar days from receiving all completed claim documents and KYC proofs.",
+    q: "How fast must a bank settle a claim if a nominee is filed?",
+    a: "Under RBI Master Directions on Deal of Claims in respect of Deceased Depositors, banks are mandated to settle claims submitted by filed nominees within a strict maximum of 15 calendar days from receiving all completed claim papers and KYC proofs.",
   },
   {
     q: "Does a nominee become the absolute owner of the deceased's bank balance?",
-    a: "No. In landmark rulings including Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023) and Sarbati Devi (1983), the Supreme Court of India confirmed that a bank nominee is merely a fiduciary trustee and provisional custodian. The nominee receives the money to give valid discharge to the bank, but holds the funds in trust for the legal heirs entitled under personal succession law or the deceased's Will.",
+    a: "No. In landmark rulings including Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023) and Sarbati Devi (1983), the Supreme Court of India confirmed that a bank nominee is merely a fiduciary trustee and provisional custodian. The nominee receives the money to give valid discharge to the bank, but holds the funds in trust for the legal heirs entitled under personal estate law or the deceased's Will.",
   },
   {
-    q: "Can legal heirs claim unclaimed bank deposits without a court succession certificate?",
-    a: "Yes, provided the total deposit balance falls within the bank's simplified threshold (typically up to ₹1 Lakh to ₹5 Lakhs, depending on the individual bank board's approved policy). In such cases, legal heirs can settle the account by submitting an Indemnity Bond with sureties, Affidavits, NOCs from other co-heirs, and a Legal Heir Certificate without entering civil court.",
+    q: "Can legal heirs claim unclaimed bank deposits without a court estate paper?",
+    a: "Yes, provided the total deposit balance falls within the bank's simplified threshold (typically up to ₹1 Lakh to ₹5 Lakhs, depending on the single bank board's approved policy). In such cases, legal heirs can settle the account by submitting an Indemnity Bond with sureties, Affidavits, NOCs from other co-heirs, and a Legal Heir Paper without entering civil court.",
   },
   {
-    q: "When does a bank insist on a court Succession Certificate or Probate?",
-    a: "Banks mandate a Succession Certificate issued by a competent Civil Court under Part X of the Indian Succession Act, 1925 (Sections 370-390) when: (1) The claim exceeds the bank's simplified ceiling (e.g. over ₹5 Lakhs at SBI), (2) There are conflicting claims or disputes among family members, or (3) There is suspicion of fraud or absence of clear legal heirship proofs.",
+    q: "When does a bank insist on a court Estate Paper or Probate?",
+    a: "Banks mandate a Estate Paper issued by a competent Civil Court under Part X of the Indian Succession Act, 1925 (Sections 370-390) when: (1) The claim exceeds the bank's simplified ceiling (e.g. over ₹5 Lakhs at SBI), (2) There are conflicting claims or fights among family members, or (3) There is suspicion of fraud or absence of clear legal heirship proofs.",
   },
   {
     q: "How does having a Will prevent bank deposits from becoming unclaimed?",
-    a: "A comprehensive Will drafted on WillDrafting.in creates an itemized Schedule of Assets listing every bank, branch, account number, and FD folio. It names an Executor empowered under Section 211 of the Indian Succession Act to collect all estate assets, and harmonizes nominations with testamentary bequests. This prevents forgotten accounts from drifting into dormancy and avoids years of court litigation.",
+    a: "A full Will drafted on WillDrafting.in creates an itemized Schedule of Assets listing every bank, branch, account number, and FD folio. It names an Executor empowered under Section 211 of the Indian Succession Act to collect all estate assets, and harmonizes nominations with Will bequests. This prevents forgotten accounts from drifting into dormancy and avoids years of court court fights.",
   },
   {
     q: "What details are required to search for a deceased person on UDGAM?",
-    a: "To search on UDGAM, you need the deceased account holder's full legal name and at least one matching official identifier: PAN card number, Voter ID, Passport number, Driving License, Date of Birth, Date of Death, or their registered postal address.",
+    a: "To search on UDGAM, you need the deceased account holder's full legal name and at least one matching official identifier: PAN card number, Voter ID, Passport number, Driving License, Date of Birth, Date of Death, or their filed postal address.",
   },
 ];
 
@@ -164,7 +164,7 @@ const SEARCH_STEPS = [
   {
     step: "02",
     title: "Select 'Deceased Person' Tab",
-    desc: "Switch the search toggle from 'Individual' to 'Deceased Person' on the search dashboard to enable family search parameters.",
+    desc: "Switch the search toggle from 'Single' to 'Deceased Person' on the search dashboard to enable family search parameters.",
   },
   {
     step: "03",
@@ -184,7 +184,7 @@ const SEARCH_STEPS = [
   {
     step: "06",
     title: "Visit the Bank Branch with Documents",
-    desc: "Take the UDRN slip, death certificate, identity proofs, and relationship certificates to the branch to initiate formal claim processing.",
+    desc: "Take the UDRN slip, death paper, identity proofs, and relationship papers to the branch to initiate formal claim processing.",
   },
 ];
 
@@ -271,7 +271,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Step-by-step statutory roadmap to find forgotten accounts on RBI&apos;s UDGAM portal, submit deceased depositor claim forms, navigate small claim thresholds, and reclaim money from the DEA Fund.
+            Step-by-step legal roadmap to find forgotten accounts on RBI&apos;s UDGAM portal, submit deceased depositor claim forms, navigate small claim thresholds, and reclaim money from the DEA Fund.
           </p>
 
           {/* CTA Buttons */}
@@ -359,7 +359,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   4.9 / 5.0
                 </span>
                 <span className="text-[10px] sm:text-xs font-semibold text-[#55636D] mt-1">
-                  Verified Legal Team
+                  Checked Legal Team
                 </span>
               </div>
             </div>
@@ -404,7 +404,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Section 26 & Section 26A of Banking Regulation Act, 1949 and RBI Master Directions on Deceased Depositors.
@@ -443,7 +443,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Nominees Get Paid in 15 Days:</strong> If a nominee was registered by the deceased, RBI rules strictly mandate that the bank settle the claim within 15 calendar days without demanding probate or succession certificates.
+                    <strong>Nominees Get Paid in 15 Days:</strong> If a nominee was filed by the deceased, RBI rules strictly mandate that the bank settle the claim within 15 calendar days without demanding probate or estate papers.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -496,7 +496,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 When a loved one passes away, families often struggle to piece together their financial footprint. Old bank passbooks get misplaced, fixed deposit receipts are lost during house moves, or senior citizens quietly maintain savings accounts that their children never knew existed.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                To solve this national challenge, the Reserve Bank of India (RBI), in collaboration with Reserve Bank Information Technology Pvt. Ltd. (ReBIT) and Indian Financial Technology &amp; Allied Services (IFTAS), launched the <strong>UDGAM portal</strong> (Unclaimed Deposits - Gateway to Access inforMation).
+                To solve this national fight, the Reserve Bank of India (RBI), in collaboration with Reserve Bank Information Technology Pvt. Ltd. (ReBIT) and Indian Financial Technology &amp; Allied Services (IFTAS), launched the <strong>UDGAM portal</strong> (Unclaimed Deposits - Gateway to Access inforMation).
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -520,9 +520,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   </div>
                   <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed pl-1">
                     <li>&bull; It does NOT disburse money directly into your bank account.</li>
-                    <li>&bull; It cannot bypass physical document verification at the branch.</li>
-                    <li>&bull; It does not override court orders or succession rules.</li>
-                    <li>&bull; It cannot settle disputes among rival legal heirs.</li>
+                    <li>&bull; It cannot bypass physical paper check at the branch.</li>
+                    <li>&bull; It does not override court orders or estate rules.</li>
+                    <li>&bull; It cannot settle fights among rival legal heirs.</li>
                   </ul>
                 </div>
               </div>
@@ -549,7 +549,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   Section 26A and the Depositor Education and Awareness (DEA) Fund
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  In 2014, Parliament amended the Banking Regulation Act to introduce Section 26A, creating the Depositor Education and Awareness (DEA) Fund managed directly by the RBI. Every month, scheduled commercial banks and cooperative banks must transfer all balances remaining unclaimed for 10 years to this fund.
+                  In 2014, Parliament amended the Banking Regulation Act to introduce Section 26A, creating the Depositor Education and Awareness (DEA) Fund managed directly by the RBI. Every month, scheduled shop banks and cooperative banks must transfer all balances remaining unclaimed for 10 years to this fund.
                 </p>
                 <div className="p-4 bg-slate-50 rounded-xl border border-slate-200/70 text-xs text-slate-700 space-y-2">
                   <div className="font-semibold text-slate-900 flex items-center gap-1.5">
@@ -561,7 +561,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   </p>
                 </div>
                 <div className="p-3 bg-emerald-50/70 border border-emerald-100 rounded-xl text-xs text-emerald-900 font-medium">
-                  <strong>Statutory Guarantee:</strong> Transfer of your deceased relative&apos;s money to the DEA Fund does NOT mean the Government has confiscated it. You have an irrevocable statutory right to claim both the principal and accrued interest anytime. The bank pays you first, and then seeks reimbursement from the RBI DEA Fund.
+                  <strong>Legal Guarantee:</strong> Transfer of your deceased relative&apos;s money to the DEA Fund does NOT mean the Government has confiscated it. You have an irrevocable legal right to claim both the principal and accrued interest anytime. The bank pays you first, and then seeks reimbursement from the RBI DEA Fund.
                 </div>
               </div>
             </section>
@@ -606,7 +606,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   <span>Pro Tip for Accurate Search Results</span>
                 </div>
                 <p>
-                  Senior citizens often registered accounts decades ago with slight spelling variations, or only initial letters (e.g., &quot;R. K. Sharma&quot; instead of &quot;Ramesh Kumar Sharma&quot;). If your first search returns zero results, try searching with PAN card number or Date of Birth. PAN is the most reliable cross-bank identifier.
+                  Senior citizens often filed accounts decades ago with slight spelling variations, or only initial letters (e.g., &quot;R. K. Sharma&quot; instead of &quot;Ramesh Kumar Sharma&quot;). If your first search returns zero results, try searching with PAN card number or Date of Birth. PAN is the most reliable cross-bank identifier.
                 </p>
               </div>
             </section>
@@ -618,10 +618,10 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <span>SECTION 4: VERIFICATION DOSSIER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Required Documents: Claiming with or Without a Nominee
+                4. Required Papers: Claiming with or Without a Nominee
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Once you have identified the bank and generated the UDRN, you must assemble the claim dossier. The exact paperwork depends entirely on whether a registered nominee exists on the account.
+                Once you have identified the bank and generated the UDRN, you must assemble the claim dossier. The exact paperwork depends entirely on whether a filed nominee exists on the account.
               </p>
 
               {/* Tab Selector */}
@@ -634,7 +634,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                       : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
                   }`}
                 >
-                  Scenario A: With Registered Nominee
+                  Scenario A: With Filed Nominee
                 </button>
                 <button
                   onClick={() => setActiveTab("small")}
@@ -663,14 +663,14 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-4">
                   <div className="flex items-center justify-between">
                     <h3 className="font-bold text-sm text-slate-900">
-                      Checklist for Registered Nominee Claim (Fast-Track 15-Day Route)
+                      Checklist for Filed Nominee Claim (Fast-Track 15-Day Route)
                     </h3>
                     <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                       RBI Fast-Track
                     </span>
                   </div>
                   <p className="text-xs text-slate-600">
-                    If the deceased registered your name as nominee during their lifetime, the procedure is simple and cannot be delayed by bank staff.
+                    If the deceased filed your name as nominee during their lifetime, the step is simple and cannot be delayed by bank staff.
                   </p>
                   <ul className="space-y-2.5 text-xs text-slate-700">
                     <li className="flex items-start gap-2">
@@ -679,7 +679,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span><strong>Original Death Certificate:</strong> Issued by the Municipal Corporation / Registrar of Births &amp; Deaths (branch verifies and returns original).</span>
+                      <span><strong>Original Death Paper:</strong> Issued by the City City Board / Registrar of Births &amp; Deaths (branch verifies and returns original).</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -695,7 +695,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     </li>
                   </ul>
                   <div className="p-3 bg-slate-50 rounded-xl text-[11px] text-slate-600">
-                    <strong>Crucial Supreme Court Rule:</strong> As established in <em>Shakti Yezdani (2023)</em>, the nominee receives money as a trustee. If other legal heirs exist, the nominee must distribute their statutory shares or risk civil litigation.
+                    <strong>Crucial Supreme Court Rule:</strong> As established in <em>Shakti Yezdani (2023)</em>, the nominee receives money as a trustee. If other legal heirs exist, the nominee must distribute their legal shares or risk civil court fights.
                   </div>
                 </div>
               )}
@@ -711,7 +711,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600">
-                    When no nominee was registered, but the balance is within the bank&apos;s board-approved limit (e.g. up to ₹5 Lakhs), no court succession certificate is required.
+                    When no nominee was filed, but the balance is within the bank&apos;s board-approved limit (e.g. up to ₹5 Lakhs), no court estate paper is required.
                   </p>
                   <ul className="space-y-2.5 text-xs text-slate-700">
                     <li className="flex items-start gap-2">
@@ -720,19 +720,19 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                      <span><strong>Legal Heir Certificate / Surviving Member Certificate:</strong> Issued by the Tehsildar, Revenue Authority, or Sub-Divisional Magistrate (SDM).</span>
+                      <span><strong>Legal Heir Paper / Surviving Member Paper:</strong> Issued by the Tehsildar, Revenue Office, or Sub-Divisional Magistrate (SDM).</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                      <span><strong>Letter of Disclaimer / Relinquishment (Annexure C):</strong> Signed by other heirs if they wish payment made into one heir&apos;s account.</span>
+                      <span><strong>Letter of Disclaimer / Release (Annexure C):</strong> Signed by other heirs if they wish payment made into one heir&apos;s account.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                      <span><strong>Stamped Letter of Indemnity (Annexure B):</strong> Executed on state-mandated non-judicial stamp paper with 1 or 2 independent sureties.</span>
+                      <span><strong>Stamped Letter of Indemnity (Annexure B):</strong> Signed on state-mandated non-judicial stamp paper with 1 or 2 independent sureties.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                      <span><strong>Sureties&apos; KYC &amp; Worth Proof:</strong> Salary slips, ITR copies, or municipal tax receipts proving financial solvency of the sureties.</span>
+                      <span><strong>Sureties&apos; KYC &amp; Worth Proof:</strong> Salary slips, ITR copies, or city tax receipts proving financial solvency of the sureties.</span>
                     </li>
                   </ul>
                 </div>
@@ -754,11 +754,11 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   <ul className="space-y-2.5 text-xs text-slate-700">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Court Succession Certificate:</strong> Issued by a competent Senior Civil Judge / District Court under Part X (Sections 370-390) of the Indian Succession Act, 1925, specifically listing the bank accounts and FD numbers.</span>
+                      <span><strong>Court Estate Paper:</strong> Issued by a competent Senior Civil Judge / District Court under Part X (Sections 370-390) of the Indian Succession Act, 1925, mainly listing the bank accounts and FD numbers.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>Probate of Will / Letters of Administration:</strong> If the deceased left a Will, and the property falls in Kolkata, Chennai, Mumbai or where probate is mandatory under Section 213.</span>
+                      <span><strong>Probate of Will / Letters of Care:</strong> If the deceased left a Will, and the asset falls in Kolkata, Chennai, Mumbai or where probate is needed under Section 213.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
@@ -766,16 +766,16 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
-                      <span><strong>KYC of the Court-Appointed Administrator / Legal Successor:</strong> Complete identity proofs and bank account details.</span>
+                      <span><strong>KYC of the Court-Appointed Head / Legal Successor:</strong> Complete identity proofs and bank account details.</span>
                     </li>
                   </ul>
                   <div className="p-3 bg-rose-50 rounded-xl text-xs text-[#C65378] flex items-center justify-between">
-                    <span>Need help applying for a Succession Certificate in court?</span>
+                    <span>Need help applying for a Estate Paper in court?</span>
                     <Link
                       href="/services/succession-certificate"
                       className="font-bold underline hover:text-[#a13c5d] inline-flex items-center gap-1"
                     >
-                      <span>Succession Lawyers</span>
+                      <span>Estate Lawyers</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -802,8 +802,8 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     <tr className="bg-slate-100 text-slate-900 border-b border-slate-200">
                       <th className="p-3 font-extrabold">Bank / Institution</th>
                       <th className="p-3 font-extrabold">Simplified Ceiling (No Court Order)</th>
-                      <th className="p-3 font-extrabold">Surety Requirement</th>
-                      <th className="p-3 font-extrabold">Authority Level for Approval</th>
+                      <th className="p-3 font-extrabold">Surety Rule</th>
+                      <th className="p-3 font-extrabold">Office Level for Approval</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -841,7 +841,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 </table>
               </div>
               <p className="text-[11px] text-slate-500 italic">
-                *Note: Bank board policies are revised periodically. Always request the specific bank branch&apos;s latest Deceased Depositor Claim Policy circular before executing stamp papers.
+                *Note: Bank board policies are revised periodically. Always request the specific bank branch&apos;s latest Deceased Depositor Claim Policy circular before signing stamp papers.
               </p>
             </section>
 
@@ -855,7 +855,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 6. Claim Process by Account: Savings, FDs, RDs &amp; PPF
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Different financial products have distinct interest calculation rules and operational procedures when transferred to the DEA Fund:
+                Different financial products have distinct interest calculation rules and operational steps when transferred to the DEA Fund:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -865,7 +865,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     <span>Savings &amp; Current Accounts</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Once marked inoperative, savings accounts continue to earn regular savings interest until they hit the 10-year mark. After transfer to the DEA Fund, the RBI specifies a statutory interest rate (currently around 3% per annum). Current accounts do not earn interest unless held under specific court-mandated escrow arrangements.
+                    Once marked inoperative, savings accounts continue to earn regular savings interest until they hit the 10-year mark. After transfer to the DEA Fund, the RBI specifies a legal interest rate (currently around 3% per annum). Current accounts do not earn interest unless held under specific court-mandated escrow arrangements.
                   </p>
                 </div>
 
@@ -895,7 +895,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     <span>Safe Deposit Lockers</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If an operative account linked to a bank locker becomes dormant and rent is unpaid, banks follow RBI locker breaking guidelines. Breaking is conducted before independent witnesses, a panchnama and video recording are executed, and inventoried contents are sealed in an envelope for the legal heirs or court-appointed executor.
+                    If an operative account linked to a bank locker becomes dormant and rent is unpaid, banks follow RBI locker breaking guidelines. Breaking is conducted before independent witnesses, a panchnama and video recording are signed, and inventoried contents are sealed in an envelope for the legal heirs or court-appointed executor.
                   </p>
                 </div>
               </div>
@@ -911,7 +911,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 7. Head-to-Head Comparison: Three Bank Claim Pathways
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding which route your family qualifies for is essential before you spend money on stamp paper, affidavits, or legal counsel:
+                Understanding which route your family qualifies for is essential before you spend money on stamp paper, sworn notes, or legal counsel:
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
@@ -921,8 +921,8 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                       <th className="p-3.5 font-extrabold min-w-[140px]">Feature</th>
                       <th className="p-3.5 font-extrabold min-w-[170px] bg-[#1f2d35]">1. Nominee Route</th>
                       <th className="p-3.5 font-extrabold min-w-[180px]">2. Simplified Indemnity</th>
-                      <th className="p-3.5 font-extrabold min-w-[190px]">3. Succession Certificate</th>
-                      <th className="p-3.5 font-extrabold min-w-[180px] bg-rose-950/40 text-rose-200">4. Registered Will</th>
+                      <th className="p-3.5 font-extrabold min-w-[190px]">3. Estate Paper</th>
+                      <th className="p-3.5 font-extrabold min-w-[180px] bg-rose-950/40 text-rose-200">4. Filed Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -947,16 +947,16 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <span>SECTION 8: TURNAROUND TIMES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Timeline Expectations: How Long Does Settlement Take?
+                8. Timeline Expectations: How Long Does Deal Take?
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                How quickly will the bank transfer the money to your account? The answer depends strictly on documentation completeness and regulatory deadlines:
+                How quickly will the bank transfer the money to your account? The answer depends strictly on papers completeness and regulatory deadlines:
               </p>
 
               <div className="space-y-3">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div>
-                    <div className="font-bold text-sm text-slate-900">Nominee Claim (Complete KYC &amp; Death Certificate)</div>
+                    <div className="font-bold text-sm text-slate-900">Nominee Claim (Complete KYC &amp; Death Paper)</div>
                     <div className="text-xs text-slate-500">RBI Master Direction mandates strict disposal</div>
                   </div>
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold self-start sm:self-center">
@@ -967,7 +967,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div>
                     <div className="font-bold text-sm text-slate-900">Simplified Legal Heir Claim (Indemnity &amp; NOCs)</div>
-                    <div className="text-xs text-slate-500">Internal branch verification and surety validation</div>
+                    <div className="text-xs text-slate-500">Internal branch check and surety validation</div>
                   </div>
                   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-extrabold self-start sm:self-center">
                     30 to 45 Working Days
@@ -976,7 +976,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div>
-                    <div className="font-bold text-sm text-slate-900">Succession Certificate Route (Civil Court)</div>
+                    <div className="font-bold text-sm text-slate-900">Estate Paper Route (Civil Court)</div>
                     <div className="text-xs text-slate-500">Court filings, newspaper notice, hearings &amp; decree</div>
                   </div>
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold self-start sm:self-center">
@@ -986,7 +986,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
               </div>
 
               <p className="text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200">
-                <strong>Crucial Consumer Right:</strong> You do NOT have to wait for the RBI to release money to the bank. The bank is legally obligated to settle your verified claim from its own liquidity first. The bank later files an internal monthly claim for reimbursement with the RBI DEA Fund.
+                <strong>Crucial Consumer Right:</strong> You do NOT have to wait for the RBI to release money to the bank. The bank is legally obligated to settle your checked claim from its own liquidity first. The bank later files an internal monthly claim for reimbursement with the RBI DEA Fund.
               </p>
             </section>
 
@@ -1006,7 +1006,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1.5">
                   <div className="font-bold text-slate-900 text-sm">1. Zero Asset Catalog</div>
-                  <p className="text-slate-600">Family members had no single document listing where the deceased held bank accounts, FD certificates, or demat holdings.</p>
+                  <p className="text-slate-600">Family members had no single paper listing where the deceased held bank accounts, FD papers, or demat holdings.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1.5">
                   <div className="font-bold text-slate-900 text-sm">2. Mismatched or Missing Nominees</div>
@@ -1062,10 +1062,10 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <div className="bg-white rounded-2xl border border-slate-200 p-4 space-y-1">
                   <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-red-500" />
-                    <span>Name Discrepancies Between Bank Records and Death Certificate</span>
+                    <span>Name Discrepancies Between Bank Records and Death Paper</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-4">
-                    If the deceased is recorded as &quot;S. P. Gupta&quot; in the passbook but &quot;Satya Prakash Gupta&quot; on the death certificate, submit a Notarized One-and-the-Same Person Affidavit along with supporting Aadhaar/PAN history.
+                    If the deceased is recorded as &quot;S. P. Gupta&quot; in the passbook but &quot;Satya Prakash Gupta&quot; on the death paper, submit a Notarized One-and-the-Same Person Sworn Note along with supporting Aadhaar/PAN history.
                   </p>
                 </div>
 
@@ -1098,17 +1098,17 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <span>SECTION 11: REGULATORY CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Legal Framework and Official Statutory Citations
+                11. Legal Framework and Official Legal Citations
               </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-2 leading-relaxed">
                 <li>
                   <strong>Banking Regulation Act, 1949:</strong> Section 26 (Return of Unclaimed Deposits), Section 26A (Depositor Education and Awareness Fund), Section 45ZA to 45ZF (Nomination Facilities).
                 </li>
                 <li>
-                  <strong>RBI Master Directions:</strong> Master Direction on Settlement of Claims in respect of Deceased Depositors (DBOD.No.Leg.BC.95/09.07.005/2004-05 &amp; subsequent updates).
+                  <strong>RBI Master Directions:</strong> Master Direction on Deal of Claims in respect of Deceased Depositors (DBOD.No.Leg.BC.95/09.07.005/2004-05 &amp; subsequent updates).
                 </li>
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 211 (Character and property of executor or administrator as such), Section 213 (Right of executor or legatee when established), Part X (Sections 370-390, Grant of Succession Certificate).
+                  <strong>Indian Succession Act, 1925:</strong> Section 211 (Character and asset of executor or head as such), Section 213 (Right of executor or legatee when established), Part X (Sections 370-390, Grant of Estate Paper).
                 </li>
                 <li>
                   <strong>Supreme Court of India Precedents:</strong> <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>, <em>Smt. Sarbati Devi v. Smt. Usha Devi (1983) 1 SCC 500</em>, and <em>Ram Chander Talwar v. Devender Kumar Talwar (2010)</em>.
@@ -1122,25 +1122,25 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     href="/blogs/legal-heir-certificate-vs-succession-certificate"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Legal Heir vs Succession Certificate &rarr;
+                    Legal Heir vs Estate Paper &rarr;
                   </Link>
                   <Link
                     href="/services/succession-certificate"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Succession Certificate Legal Service &rarr;
+                    Estate Paper Legal Service &rarr;
                   </Link>
                   <Link
                     href="/blogs/demat-shares-transmission-after-death-sebi"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Demat Shares Transmission SEBI Guide &rarr;
+                    Demat Shares Transfer SEBI Guide &rarr;
                   </Link>
                   <Link
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Property Transfer After Death Without Will &rarr;
+                    Asset Transfer After Death Without Will &rarr;
                   </Link>
                   <Link
                     href="/templates/will-format-india"
@@ -1162,7 +1162,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 Frequently Asked Questions: Claiming Deceased Deposits
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Find clear statutory answers to common questions about claiming unclaimed money from UDGAM and the RBI DEA Fund.
+                Find clear legal answers to common questions about claiming unclaimed money from UDGAM and the RBI DEA Fund.
               </p>
 
               <div className="space-y-3">
@@ -1192,7 +1192,29 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 ))}
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author & Action Cards)
@@ -1212,21 +1234,21 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, bank claim dispute settlements, and probate matters at WillDrafting.in.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, bank claim fight settlements, and probate matters at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1251,7 +1273,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 Protect Your Family&apos;s Bank Accounts
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Avoid frozen accounts and court delays. Draft an advocate-verified, court-ready Will in 15 minutes with our step-by-step wizard.
+                Avoid frozen accounts and court delays. Draft an lawyer-checked, court-ready Will in 15 minutes with our step-by-step wizard.
               </p>
               <a
                 href="/start"
@@ -1270,14 +1292,14 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
             {/* CARD 3: INTERACTIVE TOOLS */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">
-                Interactive Succession Tools
+                Free Estate Tools
               </h4>
               <div className="space-y-2">
                 <Link
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares under Hindu/Muslim law &rarr;
                   </div>
@@ -1295,9 +1317,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   href="/tools/probate-checker"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Probate Requirement Checker</div>
+                  <div className="font-bold text-xs text-slate-900">Probate Rule Checker</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Check if court probate is mandatory in your city &rarr;
+                    Check if court probate is needed in your city &rarr;
                   </div>
                 </Link>
               </div>
@@ -1313,18 +1335,18 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Legal Heir vs Succession Cert</div>
+                  <div className="font-bold text-xs text-slate-900">Legal Heir vs Estate Cert</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Which certificate do you need for banks? &rarr;
+                    Which paper do you need for banks? &rarr;
                   </div>
                 </Link>
                 <Link
                   href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Court Succession Certificate</div>
+                  <div className="font-bold text-xs text-slate-900">Court Estate Paper</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Advocate assistance for court petitions &rarr;
+                    Lawyer help for court petitions &rarr;
                   </div>
                 </Link>
                 <Link
@@ -1340,7 +1362,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   href="/blogs/demat-shares-transmission-after-death-sebi"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">SEBI Demat Transmission</div>
+                  <div className="font-bold text-xs text-slate-900">SEBI Demat Transfer</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     ₹15 Lakh threshold &amp; Form ISR-5 rules &rarr;
                   </div>
@@ -1357,19 +1379,19 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   href="/blogs/legal-heir-certificate-vs-succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Legal Heir vs Succession Certificate
+                  Legal Heir vs Estate Paper
                 </Link>
                 <Link
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/templates/will-format-india"

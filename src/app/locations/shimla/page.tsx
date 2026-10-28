@@ -140,7 +140,7 @@ export default function ShimlaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Shimla: Online Will & Property Guide",
         description:
-          "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO.",
+          "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard estate, Shimla MC name change, and SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function ShimlaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Shimla - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam registration, and doorstep execution.",
+          "Professional Will drafting, lawyer check, Section 118 HP Tenancy Act compliance, e-Himsugam filing, and doorstep signing.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -255,38 +255,38 @@ export default function ShimlaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Shimla",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Shimla.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Shimla.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Shimla assets including Shimla Municipal Corporation properties, HIMUDA flats, apple orchards in Theog or Kotkhai with HimBhoomi Khasra numbers, and financial savings. Designate beneficiaries and an executor.",
+            text: "List your Shimla assets including Shimla City City Board assets, HIMUDA flats, apple orchards in Theog or Kotkhai with HimBhoomi Khasra numbers, and financial savings. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Section 118 Compliant Clauses",
-            text: "Draft your Will using verified statutory clauses that comply with Section 118 of the HP Tenancy Act, clear orchard succession, survivorship, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses that comply with Section 118 of the HP Tenancy Act, clear orchard estate, survivorship, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment",
-            text: "Book your registration appointment for the relevant Shimla Sub-Registrar Office via the e-Himsugam portal and pay the nominal government fee.",
+            text: "Book your filing appointment for the relevant Shimla SRO office via the e-Himsugam portal and pay the nominal government fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Shimla SRO",
-            text: "Visit the Sub-Registrar Office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

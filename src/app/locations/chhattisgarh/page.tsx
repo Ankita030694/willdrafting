@@ -154,7 +154,7 @@ export default function ChhattisgarhLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Chhattisgarh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business.",
+          "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal name change, and shop business.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -201,7 +201,7 @@ export default function ChhattisgarhLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Chhattisgarh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS e-Panjiyan registration, and Section 31 doorstep execution support across Raipur.",
+          "Professional Will drafting, lawyer check, NGDRS e-Panjiyan filing, and Section 31 doorstep signing support across Raipur.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -265,38 +265,38 @@ export default function ChhattisgarhLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Chhattisgarh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Chhattisgarh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Chhattisgarh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Chhattisgarh immovable assets including RDA/NRDA plots, Bhuiyan agricultural parcels, and business equity. Designate beneficiaries and an executor.",
+            text: "List your Chhattisgarh land assets including RDA/NRDA plots, Bhuiyan farm parcels, and business equity. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS Chhattisgarh e-Panjiyan Slot",
-            text: "Schedule your registration appointment on the NGDRS Chhattisgarh portal for your relevant SRO and remit the nominal registration fee via e-Challan.",
+            text: "Schedule your filing appointment on the NGDRS Chhattisgarh portal for your relevant SRO and remit the nominal filing fee via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Chhattisgarh SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

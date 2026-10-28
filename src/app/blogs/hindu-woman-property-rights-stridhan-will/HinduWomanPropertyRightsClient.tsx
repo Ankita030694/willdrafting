@@ -49,13 +49,13 @@ import {
 
 const TOC_ITEMS = [
   { id: "executive-summary", label: "Executive Summary: Stridhan & Rights" },
-  { id: "property-classification", label: "1. Property Classification Matrix" },
+  { id: "property-classification", label: "1. Asset Classification Matrix" },
   { id: "section-14-absolute-ownership", label: "2. HSA Section 14: Absolute Ownership" },
   { id: "stridhan-legal-definition", label: "3. What is Stridhan vs Dowry?" },
   { id: "section-15-intestate-succession", label: "4. Section 15: Dying Without a Will" },
   { id: "section-15-2-reversion-trap", label: "5. The Section 15(2) Reversion Trap" },
-  { id: "visual-blueprint", label: "6. Visual Blueprint: Succession System" },
-  { id: "interactive-share-calculator", label: "7. Interactive Share Calculator" },
+  { id: "visual-blueprint", label: "6. Visual Blueprint: Estate System" },
+  { id: "interactive-share-calculator", label: "7. Free Share Tool" },
   { id: "landmark-supreme-court-rulings", label: "8. Landmark Supreme Court Rulings" },
   { id: "stridhan-recovery-sop", label: "9. Stridhan Recovery Protocol" },
   { id: "how-to-draft-will-sop", label: "10. Step-by-Step Will Drafting SOP" },
@@ -165,43 +165,43 @@ const PROPERTY_CLASSES = [
 const FAQS = [
   {
     q: "What is Stridhan under Indian succession law?",
-    a: "Stridhan refers to all voluntary gifts, jewelry, cash, movable assets, and real estate given to a Hindu woman before, during, or after her marriage by her parents, in-laws, husband, relatives, or friends, as well as her own self-acquired earnings. Under Section 14(1) of the Hindu Succession Act, she is the sole, absolute owner of her Stridhan.",
+    a: "Stridhan refers to all voluntary gifts, jewelry, cash, cash assets, and real estate given to a Hindu woman before, during, or after her marriage by her parents, in-laws, husband, relatives, or friends, as well as her own self-acquired earnings. Under Section 14(1) of the Hindu Succession Act, she is the sole, absolute owner of her Stridhan.",
   },
   {
     q: "Can my husband or in-laws legally sell my jewelry?",
-    a: "No. The Supreme Court in Pratibha Rani v. Suraj Kumar (1985) ruled that Stridhan is the exclusive, unchallengeable property of the woman. Even if the jewelry is kept in a joint locker or family safe, the husband and in-laws hold it purely as trustees. Refusing to return it upon demand constitutes Criminal Breach of Trust under Section 316 of BNS (formerly Section 406 IPC).",
+    a: "No. The Supreme Court in Pratibha Rani v. Suraj Kumar (1985) ruled that Stridhan is the exclusive, unchallengeable asset of the woman. Even if the jewelry is kept in a joint locker or family safe, the husband and in-laws hold it purely as trustees. Refusing to return it upon demand constitutes Criminal Breach of Trust under Section 316 of BNS (formerly Section 406 IPC).",
   },
   {
     q: "What happens if a Hindu woman dies without leaving a Will?",
-    a: "If a Hindu woman dies without a Will (intestate), her property devolves strictly according to Section 15 of the Hindu Succession Act, 1956. Under Section 15(1)(a), it passes equally to her husband and children. However, if she dies childless, special reversion rules under Section 15(2) redirect inherited property depending on whether it came from her parents or her husband.",
+    a: "If a Hindu woman dies without a Will (no-Will), her asset devolves strictly according to Section 15 of the Hindu Succession Act, 1956. Under Section 15(1)(a), it passes equally to her husband and children. However, if she dies childless, special reversion rules under Section 15(2) redirect inherited asset depending on whether it came from her parents or her husband.",
   },
   {
     q: "What is the Section 15(2) trap in the Hindu Succession Act?",
-    a: "Under Section 15(2)(a), if a childless woman dies without a Will, any property she inherited from her parents does not go to her husband; it reverts to her father's heirs. Conversely, under Section 15(2)(b), property inherited from her husband reverts to his heirs. However, her self-acquired wealth and Stridhan do not revert to her parents; they go to her husband or his family, leaving her parents with nothing unless she writes a Will.",
+    a: "Under Section 15(2)(a), if a childless woman dies without a Will, any asset she inherited from her parents does not go to her husband; it reverts to her father's heirs. Conversely, under Section 15(2)(b), asset inherited from her husband reverts to his heirs. However, her self-acquired wealth and Stridhan do not revert to her parents; they go to her husband or his family, leaving her parents with nothing unless she writes a Will.",
   },
   {
-    q: "Can a married woman Will away all her property to her parents instead of her husband?",
-    a: "Yes. Under Section 30 of the Hindu Succession Act, every Hindu woman has absolute testamentary power over all her self-acquired property, Stridhan, inherited assets, and her coparcenary share. She does not require the consent or signature of her husband or children to bequeath her estate to her parents, siblings, or any person of her choice.",
+    q: "Can a married woman Will away all her asset to her parents instead of her husband?",
+    a: "Yes. Under Section 30 of the Hindu Succession Act, every Hindu woman has absolute Will power over all her self-acquired asset, Stridhan, inherited assets, and her joint share. She does not require the consent or signature of her husband or children to bequeath her estate to her parents, siblings, or any person of her choice.",
   },
   {
     q: "Is Stridhan the same as Dowry under Indian law?",
-    a: "No, Stridhan and Dowry are legally opposite. Dowry is an illegal demand made as a condition of marriage, which is strictly prohibited and punishable under the Dowry Prohibition Act, 1961. Stridhan consists of voluntary gifts presented to the bride out of love and affection, which remain her absolute personal property for life.",
+    a: "No, Stridhan and Dowry are legally opposite. Dowry is an illegal demand made as a condition of marriage, which is strictly prohibited and punishable under the Dowry Prohibition Act, 1961. Stridhan consists of voluntary gifts presented to the bride out of love and affection, which remain her absolute personal asset for life.",
   },
   {
-    q: "Can a Hindu woman bequeath her ancestral coparcenary share in a Will?",
-    a: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the Supreme Court's ruling in Vineeta Sharma (2020), a daughter is an equal coparcener by birth. Under Section 30 of the Act, she can validly bequeath her undivided coparcenary interest in ancestral property through a properly executed Will.",
+    q: "Can a Hindu woman bequeath her family joint share in a Will?",
+    a: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the Supreme Court's ruling in Vineeta Sharma (2020), a daughter is an equal coparcener by birth. Under Section 30 of the Act, she can validly bequeath her undivided joint interest in family asset through a properly signed Will.",
   },
   {
-    q: "What documents prove that jewelry or assets belong to Stridhan?",
+    q: "What papers prove that jewelry or assets belong to Stridhan?",
     a: "Strong evidence includes jeweler purchase invoices in the bride or her parents' names, a signed gift list witnessed during wedding ceremonies under the Dowry Prohibition Rules, wedding photographs and video footage showing the bride wearing specific ornaments, and bank locker access registers.",
   },
   {
     q: "Does a Hindu woman need her husband's permission to make a Will?",
-    a: "Absolutely not. Indian law treats a woman as an independent legal individual. Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind can make a Will. Her husband has no legal authority to inspect, consent to, or veto her testamentary disposition.",
+    a: "Absolutely not. Indian law treats a woman as an independent legal single. Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind can make a Will. Her husband has no legal office to inspect, consent to, or veto her Will gift.",
   },
   {
     q: "How can a woman recover Stridhan if her husband refuses to return it?",
-    a: "First, issue a formal Legal Demand Notice through an advocate detailing the itemized inventory. Second, file an application under Section 12 and Section 18 of the Protection of Women from Domestic Violence Act (PWDVA) for recovery and interim protection. Third, file a criminal complaint under Section 316 BNS (Section 406 IPC) for Criminal Breach of Trust.",
+    a: "First, issue a formal Legal Demand Notice through an lawyer detailing the itemized inventory. Second, file an form under Section 12 and Section 18 of the Protection of Women from Domestic Violence Act (PWDVA) for recovery and interim protection. Third, file a criminal complaint under Section 316 BNS (Section 406 IPC) for Criminal Breach of Trust.",
   },
 ];
 
@@ -224,12 +224,12 @@ export default function HinduWomanPropertyRightsClient() {
   const [selectedClassId, setSelectedClassId] = useState<string>("stridhan");
   const [showImageModal, setShowImageModal] = useState<boolean>(false);
 
-  // Interactive Share Calculator State
+  // Free Share Tool State
   const [calcMaritalStatus, setCalcMaritalStatus] = useState<"married" | "childless_married" | "unmarried" | "widow_childless">("childless_married");
   const [calcPropertySource, setCalcPropertySource] = useState<"stridhan_self" | "inherited_father" | "inherited_husband">("stridhan_self");
   const [calcEstateValueLakhs, setCalcEstateValueLakhs] = useState<number>(100);
 
-  // Checklist interactive state
+  // Checklist free state
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({
     "check-1": true,
     "check-2": true,
@@ -296,7 +296,7 @@ export default function HinduWomanPropertyRightsClient() {
         husbandValueRupees: Math.round(totalRupees * 0.333),
         parentsValueRupees: 0,
         description:
-          "Under Section 15(1)(a), all property divides equally per capita among the surviving husband and children. Her own parents receive 0%. A Will allows her to allocate shares to aging parents.",
+          "Under Section 15(1)(a), all asset divides equally per capita among the surviving husband and children. Her own parents receive 0%. A Will allows her to allocate shares to aging parents.",
       };
     }
 
@@ -311,7 +311,7 @@ export default function HinduWomanPropertyRightsClient() {
           husbandValueRupees: 0,
           parentsValueRupees: totalRupees,
           description:
-            "Under Section 15(2)(a), property inherited from her parents does NOT go to her husband. It reverts entirely to her father's heirs. The husband receives 0% of this parental asset.",
+            "Under Section 15(2)(a), asset inherited from her parents does NOT go to her husband. It reverts entirely to her father's heirs. The husband receives 0% of this parental asset.",
         };
       }
       if (calcPropertySource === "inherited_husband") {
@@ -324,7 +324,7 @@ export default function HinduWomanPropertyRightsClient() {
           husbandValueRupees: totalRupees,
           parentsValueRupees: 0,
           description:
-            "Under Section 15(2)(b), property inherited from her husband reverts to the husband's heirs. Her own parents and siblings receive 0%.",
+            "Under Section 15(2)(b), asset inherited from her husband reverts to the husband's heirs. Her own parents and siblings receive 0%.",
         };
       }
       // Stridhan or Self-Acquired
@@ -352,7 +352,7 @@ export default function HinduWomanPropertyRightsClient() {
           husbandValueRupees: 0,
           parentsValueRupees: totalRupees,
           description:
-            "Because she passed away as a childless widow, property inherited from her parents bypasses her in-laws and reverts 100% to her father's family.",
+            "Because she passed away as a childless widow, asset inherited from her parents bypasses her in-laws and reverts 100% to her father's family.",
         };
       }
       // Inherited from husband or self-acquired
@@ -406,12 +406,12 @@ export default function HinduWomanPropertyRightsClient() {
 
           {/* H1 Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Hindu Woman Property Rights: Stridhan, Succession &amp; Wills
+            Hindu Woman Asset Rights: Stridhan, Estate &amp; Wills
           </h1>
 
           {/* Subtitle */}
           <p className="text-sm sm:text-base md:text-lg text-white/95 max-w-3xl mx-auto leading-relaxed mb-8">
-            Learn your absolute legal ownership under Section 14, how Section 15 governs inheritance without a Will, and
+            Learn your absolute legal ownership under Section 14, how Section 15 governs estate without a Will, and
             why drafting a Will protects your jewelry and hard-earned savings.
           </p>
 
@@ -429,7 +429,7 @@ export default function HinduWomanPropertyRightsClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm transition-all"
             >
               <Calculator className="w-4 h-4 text-rose-300" />
-              <span>Open Section 15 Calculator</span>
+              <span>Open Section 15 Tool</span>
             </Link>
           </div>
         </div>
@@ -507,10 +507,10 @@ export default function HinduWomanPropertyRightsClient() {
             <div className="p-3.5 rounded-2xl bg-[#FAF2EB] border border-[#C65378]/20 text-[11px] text-slate-700 space-y-1">
               <div className="flex items-center gap-1.5 font-bold text-[#C65378]">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed">
-                Sections 14, 15, 16 &amp; 30, Hindu Succession Act, 1956 &amp; ISA 1925. Verified by WillDrafting.in.
+                Sections 14, 15, 16 &amp; 30, Hindu Succession Act, 1956 &amp; ISA 1925. Checked by WillDrafting.in.
               </p>
             </div>
           </aside>
@@ -529,11 +529,11 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Executive Summary</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                Executive Summary: Hindu Woman Property &amp; Stridhan Rights
+                Executive Summary: Hindu Woman Asset &amp; Stridhan Rights
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  Before 1956, Hindu women held property as mere &ldquo;limited owners&rdquo; with no right to sell or will
+                  Before 1956, Hindu women held asset as mere &ldquo;limited owners&rdquo; with no right to sell or will
                   away assets. The <strong>Hindu Succession Act, 1956 (HSA)</strong> revolutionized this framework.
                   Under <strong>Section 14(1)</strong>, any property held by a Hindu woman becomes her{" "}
                   <strong>full, absolute ownership</strong>. She can sell, mortgage, gift, or will it away at her sole
@@ -541,13 +541,13 @@ export default function HinduWomanPropertyRightsClient() {
                 </p>
                 <p>
                   Her <strong>Stridhan</strong> (wedding jewelry, gifts from relatives, cash, and self-acquired savings)
-                  is her exclusive property. The Supreme Court in <strong>Pratibha Rani v. Suraj Kumar (1985)</strong>{" "}
+                  is her exclusive asset. The Supreme Court in <strong>Pratibha Rani v. Suraj Kumar (1985)</strong>{" "}
                   ruled that husbands and in-laws who refuse to return Stridhan commit criminal breach of trust.
                 </p>
                 <p>
-                  However, if a Hindu woman dies <strong>without a Will (intestate)</strong>, her estate triggers the
+                  However, if a Hindu woman dies <strong>without a Will (no-Will)</strong>, her estate triggers the
                   complex rules of <strong>Section 15</strong>. Crucially, under the <strong>Section 15(2) trap</strong>,
-                  if she is childless, parental property reverts to her father&apos;s heirs, while self-acquired wealth
+                  if she is childless, parental asset reverts to her father&apos;s heirs, while self-acquired wealth
                   passes entirely to her husband or his family, leaving her own parents with 0%. Every Hindu woman must
                   write a Will under <strong>Section 30</strong> to protect her legacy.
                 </p>
@@ -579,7 +579,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Estate Categorization</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                1. Property Classification: Stridhan, Inherited &amp; Self-Acquired
+                1. Asset Classification: Stridhan, Inherited &amp; Self-Acquired
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Indian succession law treats assets held by a Hindu woman under distinct categories. While she enjoys
@@ -636,12 +636,12 @@ export default function HinduWomanPropertyRightsClient() {
                           <p className="mt-0.5">{item.lifetimeRight}</p>
                         </div>
                         <div>
-                          <p className="text-slate-500 font-bold uppercase text-[11px]">Testamentary Power (Will)</p>
+                          <p className="text-slate-500 font-bold uppercase text-[11px]">Will Power (Will)</p>
                           <p className="mt-0.5 font-semibold text-blue-700">{item.willRight}</p>
                         </div>
                       </div>
                       <div className="p-3 rounded-xl bg-rose-50/70 border border-rose-100 text-xs text-rose-950">
-                        <p className="font-bold">What happens if you die without a Will (Intestate)?</p>
+                        <p className="font-bold">What happens if you die without a Will (No-Will)?</p>
                         <p className="mt-0.5">{item.intestateDevolution}</p>
                       </div>
                     </div>
@@ -658,7 +658,7 @@ export default function HinduWomanPropertyRightsClient() {
                       <th className="p-3.5">Key Components</th>
                       <th className="p-3.5">Husband Rights</th>
                       <th className="p-3.5">Can You Will It?</th>
-                      <th className="p-3.5">Intestate Fate (No Will)</th>
+                      <th className="p-3.5">No-Will Fate (No Will)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -685,17 +685,17 @@ export default function HinduWomanPropertyRightsClient() {
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3.5 font-bold text-slate-900">Inherited (Husband)</td>
-                      <td className="p-3.5">Property from late husband or in-laws</td>
+                      <td className="p-3.5">Asset from late husband or in-laws</td>
                       <td className="p-3.5 text-slate-600">N/A (already inherited)</td>
                       <td className="p-3.5 text-emerald-700 font-bold">100% Yes (Sec 30)</td>
                       <td className="p-3.5 text-purple-700 font-bold">Reverts to Husband heirs if childless</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="p-3.5 font-bold text-slate-900">Coparcenary Share</td>
-                      <td className="p-3.5">Birthright ancestral HUF partition</td>
+                      <td className="p-3.5 font-bold text-slate-900">Joint Share</td>
+                      <td className="p-3.5">Birthright family HUF split</td>
                       <td className="p-3.5 text-rose-600 font-bold">Zero claim</td>
                       <td className="p-3.5 text-emerald-700 font-bold">100% Yes (Sec 30)</td>
-                      <td className="p-3.5 text-slate-600">Deemed partition (HSA Sec 6)</td>
+                      <td className="p-3.5 text-slate-600">Deemed split (HSA Sec 6)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -706,14 +706,14 @@ export default function HinduWomanPropertyRightsClient() {
             <section id="section-14-absolute-ownership" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 2. HSA Section 14: Woman Absolute Ownership vs Limited Estate
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Section 14 of the Hindu Succession Act, 1956 is the single most important statutory provision for
+                  Section 14 of the Hindu Succession Act, 1956 is the single most important legal rule for
                   women&apos;s financial independence in modern Indian jurisprudence. It abolished the archaic Shastric
                   concept of &ldquo;limited estate&rdquo; (where widows could only collect rental income and had no power
                   to sell or will the corpus).
@@ -724,12 +724,12 @@ export default function HinduWomanPropertyRightsClient() {
                     Section 14(1) Hindu Succession Act Text &amp; Scope:
                   </p>
                   <p className="italic text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    &ldquo;Any property possessed by a female Hindu, whether acquired before or after the commencement of
+                    &ldquo;Any asset possessed by a female Hindu, whether acquired before or after the commencement of
                     this Act, shall be held by her as full owner thereof and not as a limited owner.&rdquo;
                   </p>
                   <p className="text-xs text-slate-700 font-medium">
-                    The statutory explanation clarifies that this includes movable and immovable property acquired by
-                    inheritance, partition, maintenance, gift from any relative or stranger, self-acquired exertion, or
+                    The legal explanation clarifies that this includes cash and land asset acquired by
+                    estate, split, maintenance, gift from any relative or stranger, self-acquired exertion, or
                     purchase.
                   </p>
                 </div>
@@ -742,8 +742,8 @@ export default function HinduWomanPropertyRightsClient() {
                       Section 14(1) General Rule (Absolute)
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Whenever property is given to a woman in recognition of a pre-existing right (such as maintenance,
-                      inheritance, or wedding gift), it immediately blossoms into <strong>100% absolute ownership</strong>.
+                      Whenever asset is given to a woman in recognition of a pre-existing right (such as maintenance,
+                      estate, or wedding gift), it right away blossoms into <strong>100% absolute ownership</strong>.
                       She can sell or will it at will.
                     </p>
                   </div>
@@ -754,7 +754,7 @@ export default function HinduWomanPropertyRightsClient() {
                       Section 14(2) Restricted Exception
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If property is gifted or willed for the first time with an <strong>express written restriction</strong>{" "}
+                      If asset is gifted or willed for the first time with an <strong>express written restriction</strong>{" "}
                       (e.g., life-interest only, with no power of sale or bequest), Section 14(1) does not apply. She holds
                       only a life-interest.
                     </p>
@@ -763,8 +763,8 @@ export default function HinduWomanPropertyRightsClient() {
 
                 <p className="text-xs sm:text-sm text-slate-600">
                   In <strong>V. Tulasamma v. Sesha Reddy (1977) 3 SCC 99</strong>, the Supreme Court ruled that Section
-                  14(1) must be given the widest possible meaning. Property given for a woman&apos;s maintenance always
-                  becomes absolute property.
+                  14(1) must be given the widest possible meaning. Asset given for a woman&apos;s maintenance always
+                  becomes absolute asset.
                 </p>
               </div>
             </section>
@@ -781,7 +781,7 @@ export default function HinduWomanPropertyRightsClient() {
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   The word <strong>Stridhan</strong> translates directly to &ldquo;woman&apos;s personal wealth&rdquo;
-                  (Stri = woman, Dhan = wealth). Under classical Mitakshara law and modern statutory enactments, it
+                  (Stri = woman, Dhan = wealth). Under classical Mitakshara law and modern legal enactments, it
                   encompasses all voluntary offerings made to a woman at all stages of her life.
                 </p>
 
@@ -871,7 +871,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Intestacy Rules</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                4. HSA Section 15 &amp; 16: Dying Without a Will Inheritance Rules
+                4. HSA Section 15 &amp; 16: Dying Without a Will Estate Rules
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
@@ -949,7 +949,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <div className="p-4 rounded-xl bg-blue-50/60 border border-blue-100 text-xs sm:text-sm text-slate-700 flex items-start gap-3">
                   <Info className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                   <p>
-                    <strong>Section 16 Distribution Rules:</strong> Heirs in Entry (a) take simultaneously. An heir in an
+                    <strong>Section 16 Split Rules:</strong> Heirs in Entry (a) take simultaneously. An heir in an
                     earlier entry completely excludes all heirs in later entries. For example, if a woman leaves a husband
                     and no children, the husband takes 100%, and her parents receive ₹0.
                   </p>
@@ -969,7 +969,7 @@ export default function HinduWomanPropertyRightsClient() {
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Section 15(2) contains a non-obstante clause that overrides the general rules of Section 15(1). It was
-                  designed to prevent inherited ancestral property from passing out of the family lineage if a woman
+                  designed to prevent inherited family asset from passing out of the family lineage if a woman
                   dies without issue. However, for modern working women, it often creates severe, unintended consequences.
                 </p>
 
@@ -977,11 +977,11 @@ export default function HinduWomanPropertyRightsClient() {
                   <div className="p-4 rounded-xl border border-amber-200 bg-amber-50/60 space-y-2">
                     <p className="text-xs font-bold text-amber-900 uppercase flex items-center gap-1.5">
                       <Home className="w-4 h-4 text-amber-700" />
-                      Section 15(2)(a): Property from Parents
+                      Section 15(2)(a): Asset from Parents
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       If a Hindu woman inherits a flat or land from her father or mother and dies leaving{" "}
-                      <strong>no son or daughter</strong>, that property does <strong>NOT</strong> go to her husband! It
+                      <strong>no son or daughter</strong>, that asset does <strong>NOT</strong> go to her husband! It
                       reverts directly to the <strong>heirs of her father</strong> (her brothers or sisters).
                     </p>
                   </div>
@@ -989,7 +989,7 @@ export default function HinduWomanPropertyRightsClient() {
                   <div className="p-4 rounded-xl border border-purple-200 bg-purple-50/60 space-y-2">
                     <p className="text-xs font-bold text-purple-900 uppercase flex items-center gap-1.5">
                       <Building className="w-4 h-4 text-purple-700" />
-                      Section 15(2)(b): Property from Husband
+                      Section 15(2)(b): Asset from Husband
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       If she inherited property from her late husband or father-in-law and dies childless, it does{" "}
@@ -1005,13 +1005,13 @@ export default function HinduWomanPropertyRightsClient() {
                     The Unfair Asymmetry for Childless Career Women:
                   </p>
                   <p className="leading-relaxed">
-                    Notice that Section 15(2) only covers <em>inherited</em> property. It does <strong>NOT</strong> protect
+                    Notice that Section 15(2) only covers <em>inherited</em> asset. It does <strong>NOT</strong> protect
                     her self-acquired savings or Stridhan! If a childless working woman passes away without a Will, her
                     salary, investments, and jewelry pass to her husband. If he dies shortly after, everything goes to her
                     in-laws, leaving her elderly parents with nothing.
                   </p>
                   <p className="font-bold pt-1">
-                    The only legal defense: Under Section 30 of the Hindu Succession Act, executing a valid Will completely
+                    The only legal defense: Under Section 30 of the Hindu Succession Act, signing a valid Will completely
                     bypasses Section 15(2) and guarantees that your assets go to whoever you designate!
                   </p>
                 </div>
@@ -1025,11 +1025,11 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Visual Legal Blueprint</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                6. Visual Blueprint: Hindu Woman Estate &amp; Succession System
+                6. Visual Blueprint: Hindu Woman Estate &amp; Estate System
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                The comprehensive infographic below details the complete framework of Hindu female property rights,
-                connecting statutory authorities under Sections 14, 15, and 16 with Stridhan, inherited estates, and Will
+                The full infographic below details the complete framework of Hindu female asset rights,
+                connecting legal offices under Sections 14, 15, and 16 with Stridhan, inherited estates, and Will
                 drafting under Section 30.
               </p>
 
@@ -1061,7 +1061,7 @@ export default function HinduWomanPropertyRightsClient() {
                       Stridhan (Jewelry &amp; Gifts)
                     </p>
                     <p className="text-slate-600 leading-relaxed">
-                      Absolute property under Section 14. Fully protected against in-laws&apos; custody claims under Pratibha
+                      Absolute asset under Section 14. Fully protected against in-laws&apos; custody claims under Pratibha
                       Rani verdict.
                     </p>
                   </div>
@@ -1069,7 +1069,7 @@ export default function HinduWomanPropertyRightsClient() {
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs">
                     <p className="font-extrabold text-[#5F7E75] flex items-center gap-1.5 mb-1">
                       <Home className="w-3.5 h-3.5" />
-                      Inherited Property (Sec 15(2))
+                      Inherited Asset (Sec 15(2))
                     </p>
                     <p className="text-slate-600 leading-relaxed">
                       Reverts to father&apos;s heirs if childless without a Will. A Will permanently overrides this reversion.
@@ -1079,10 +1079,10 @@ export default function HinduWomanPropertyRightsClient() {
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs">
                     <p className="font-extrabold text-[#172228] flex items-center gap-1.5 mb-1">
                       <FileCheck className="w-3.5 h-3.5" />
-                      The Will Document (Sec 30)
+                      The Will Paper (Sec 30)
                     </p>
                     <p className="text-slate-600 leading-relaxed">
-                      The single legal instrument that guarantees your assets go to your chosen beneficiaries without court
+                      The single legal instrument that guarantees your assets go to your chosen heirs without court
                       battles.
                     </p>
                   </div>
@@ -1097,7 +1097,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Diagnostic Simulation Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                7. Calculate Intestate Shares: Interactive Succession Tool
+                7. Calculate No-Will Shares: Free Estate Tool
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Simulate who inherits your estate if you pass away without a Will under Section 15, and see how drafting
@@ -1135,7 +1135,7 @@ export default function HinduWomanPropertyRightsClient() {
                     >
                       <option value="stridhan_self">Self-Acquired Savings, Salary &amp; Stridhan</option>
                       <option value="inherited_father">Real Estate Inherited from Parents</option>
-                      <option value="inherited_husband">Property Inherited from Husband / In-Laws</option>
+                      <option value="inherited_husband">Asset Inherited from Husband / In-Laws</option>
                     </select>
                   </div>
                 </div>
@@ -1189,13 +1189,13 @@ export default function HinduWomanPropertyRightsClient() {
 
                   <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <span className="text-xs font-semibold text-slate-600">
-                      Want to customize shares and bypass default statutory splits?
+                      Want to customize shares and bypass default legal splits?
                     </span>
                     <Link
                       href="/tools/succession-calculator"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#172228] text-white text-xs font-bold hover:bg-slate-800 transition-all shrink-0"
                     >
-                      <span>Open Section 15 Calculator</span>
+                      <span>Open Section 15 Tool</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1214,7 +1214,7 @@ export default function HinduWomanPropertyRightsClient() {
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Over decades, the Supreme Court of India has firmly fortified women&apos;s property rights, ensuring
+                  Over decades, the Supreme Court of India has firmly fortified women&apos;s asset rights, ensuring
                   that patriarchal interpretations do not extinguish their financial security.
                 </p>
 
@@ -1231,7 +1231,7 @@ export default function HinduWomanPropertyRightsClient() {
                       Pratibha Rani v. Suraj Kumar: Stridhan Criminal Breach of Trust
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A three-judge bench of the Supreme Court held that Stridhan is the exclusive property of the wife.
+                      A three-judge bench of the Supreme Court held that Stridhan is the exclusive asset of the wife.
                       Entrusting jewelry to the husband or in-laws does not create co-ownership. Refusing to return
                       Stridhan upon demand constitutes Criminal Breach of Trust under Section 406 IPC (now Section 316
                       of Bharatiya Nyaya Sanhita, 2023).
@@ -1241,7 +1241,7 @@ export default function HinduWomanPropertyRightsClient() {
                   {/* Case 2 */}
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-[#5F7E75] uppercase">Female Inheritance &amp; Section 15</span>
+                      <span className="text-xs font-bold text-[#5F7E75] uppercase">Female Estate &amp; Section 15</span>
                       <span className="text-[10px] bg-slate-200 text-slate-700 font-bold px-2 py-0.5 rounded-full">
                         (2022) 11 SCC 520
                       </span>
@@ -1250,8 +1250,8 @@ export default function HinduWomanPropertyRightsClient() {
                       Arunachala Gounder v. Ponnusamy: Reversion to Father Heirs
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Supreme Court held that self-acquired property of a Hindu male dying intestate devolves upon
-                      his daughter by inheritance. Furthermore, if a female Hindu dies without issue, property inherited
+                      The Supreme Court held that self-acquired asset of a Hindu male dying no-Will devolves upon
+                      his daughter by estate. Also, if a female Hindu dies without issue, asset inherited
                       from her father goes back to the source (the heirs of her father) under Section 15(2)(a), not her
                       husband&apos;s family.
                     </p>
@@ -1269,9 +1269,9 @@ export default function HinduWomanPropertyRightsClient() {
                       V. Tulasamma v. Sesha Reddy: Wide Amplitude of Section 14(1)
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Supreme Court settled that Section 14(1) must be given the widest possible scope. Any property
-                      allotted to a widow in lieu of maintenance becomes her absolute property with unrestricted powers
-                      of alienation and testamentary disposition.
+                      The Supreme Court settled that Section 14(1) must be given the widest possible scope. Any asset
+                      allotted to a widow in lieu of maintenance becomes her absolute asset with unrestricted powers
+                      of alienation and Will gift.
                     </p>
                   </div>
                 </div>
@@ -1288,8 +1288,8 @@ export default function HinduWomanPropertyRightsClient() {
                 9. Stridhan Recovery SOP: Protecting Jewelry from In-Laws
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                If your husband or in-laws have locked away your wedding gold, jewelry, or documents and refuse to return
-                them, execute this 5-stage legal protocol immediately.
+                If your husband or in-laws have locked away your wedding gold, jewelry, or papers and refuse to return
+                them, execute this 5-stage legal protocol right away.
               </p>
 
               <div className="space-y-4">
@@ -1302,7 +1302,7 @@ export default function HinduWomanPropertyRightsClient() {
                   </div>
                   <h3 className="text-base font-extrabold text-slate-900">Compile Jewel Receipts &amp; Gift Lists</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Retrieve jeweler invoices, hallmarked weight certificates, and the signed gift list prepared under
+                    Retrieve jeweler invoices, hallmarked weight papers, and the signed gift list prepared under
                     the Dowry Prohibition Rules, 1985. Gather wedding photographs and videos showing you wearing each
                     specific piece.
                   </p>
@@ -1312,12 +1312,12 @@ export default function HinduWomanPropertyRightsClient() {
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-[#C65378] uppercase">Stage 2 • Days 11 to 20</span>
                     <span className="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full">
-                      Advocate Notice
+                      Lawyer Notice
                     </span>
                   </div>
                   <h3 className="text-base font-extrabold text-slate-900">Issue Formal Legal Demand Notice</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Have an advocate dispatch a registered Legal Notice demanding unconditional return of all Stridhan
+                    Have an lawyer dispatch a filed Legal Notice demanding unconditional return of all Stridhan
                     articles within 15 days, citing <em>Pratibha Rani v. Suraj Kumar</em>. This creates vital evidence of
                     demand and refusal.
                   </p>
@@ -1331,12 +1331,12 @@ export default function HinduWomanPropertyRightsClient() {
                     </span>
                   </div>
                   <h3 className="text-base font-extrabold text-slate-900">
-                    File Application Under PWDVA Section 12 &amp; 18
+                    File Form Under PWDVA Section 12 &amp; 18
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    File an application before the Metropolitan Magistrate under the Protection of Women from Domestic
+                    File an form before the Metropolitan Magistrate under the Protection of Women from Domestic
                     Violence Act (PWDVA). The court can pass urgent interim orders restraining in-laws from alienating
-                    the jewelry and directing police assistance for recovery.
+                    the jewelry and directing police help for recovery.
                   </p>
                 </div>
 
@@ -1368,8 +1368,8 @@ export default function HinduWomanPropertyRightsClient() {
                     Transfer to Sole Bank Locker &amp; Execute a Will
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Once recovered, immediately place all gold and ornaments in a sole-operated bank locker in your name.
-                    Draft a Will specifying who inherits the jewelry to avoid future family disputes.
+                    Once recovered, right away place all gold and ornaments in a sole-operated bank locker in your name.
+                    Draft a Will specifying who inherits the jewelry to avoid future family fights.
                   </p>
                 </div>
               </div>
@@ -1379,7 +1379,7 @@ export default function HinduWomanPropertyRightsClient() {
             <section id="how-to-draft-will-sop" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileCheck className="w-4 h-4" />
-                <span>Testamentary Planning SOP</span>
+                <span>Will Planning SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 10. Step-by-Step Protocol: How a Hindu Woman Can Make a Will
@@ -1394,14 +1394,14 @@ export default function HinduWomanPropertyRightsClient() {
                   <p className="text-xs font-black text-[#C65378] uppercase">Step 1: Complete Asset Audit</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     List all your assets: bank accounts, fixed deposits, demat shares, Stridhan gold jewelry, flat or
-                    land parcels, and your undivided coparcenary share in ancestral family property.
+                    land parcels, and your undivided joint share in family family asset.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-2">
-                  <p className="text-xs font-black text-[#C65378] uppercase">Step 2: Appoint Beneficiaries</p>
+                  <p className="text-xs font-black text-[#C65378] uppercase">Step 2: Appoint Heirs</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Clearly name primary and alternate beneficiaries. You have full freedom to distribute assets to your
+                    Clearly name primary and alternate heirs. You have full freedom to distribute assets to your
                     children, aging parents, siblings, or spouse in whatever proportions you choose.
                   </p>
                 </div>
@@ -1426,15 +1426,15 @@ export default function HinduWomanPropertyRightsClient() {
                   <p className="text-xs font-black text-[#C65378] uppercase">Step 5: Sign with Two Witnesses</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Section 63 of the Indian Succession Act, sign the Will in the physical presence of two adult
-                    witnesses who are NOT beneficiaries under the Will.
+                    witnesses who are NOT heirs under the Will.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-2">
-                  <p className="text-xs font-black text-[#C65378] uppercase">Step 6: Optional SRO Registration</p>
+                  <p className="text-xs font-black text-[#C65378] uppercase">Step 6: A Choice SRO Filing</p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A plain paper Will is 100% legal. However, registering it at the Sub-Registrar&apos;s Office (SRO) creates
-                    an official government record that makes forgery challenges virtually impossible.
+                    A plain paper Will is 100% legal. However, registering it at the SRO&apos;s Office (SRO) creates
+                    an official government record that makes forgery fights virtually impossible.
                   </p>
                 </div>
               </div>
@@ -1472,8 +1472,8 @@ export default function HinduWomanPropertyRightsClient() {
                     <span>Scenario B: Divorced Woman &amp; Alimony</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Alimony lump sums and properties transferred during divorce constitute your absolute Stridhan under
-                    Section 14. Your ex-husband has zero inheritance claim. However, you must execute a Will to designate
+                    Alimony lump sums and assets transferred during divorce constitute your absolute Stridhan under
+                    Section 14. Your ex-husband has zero estate claim. However, you must execute a Will to designate
                     guardians and trustees for minor children.
                   </p>
                 </div>
@@ -1484,8 +1484,8 @@ export default function HinduWomanPropertyRightsClient() {
                     <span>Scenario C: Remarried Woman with Blended Family</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If you have children from a prior marriage and remarry, dying intestate splits your estate among your
-                    new husband and all children. A Will is essential to ring-fence specific properties for your first-marriage
+                    If you have children from a prior marriage and remarry, dying no-Will splits your estate among your
+                    new husband and all children. A Will is essential to ring-fence specific assets for your first-marriage
                     children.
                   </p>
                 </div>
@@ -1515,7 +1515,7 @@ export default function HinduWomanPropertyRightsClient() {
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Writing a Will is not just for the elderly or wealthy; it is the ultimate tool of personal sovereignty
-                  for every Indian woman. It transforms your legal rights from uncertain statutory formulas into an
+                  for every Indian woman. It transforms your legal rights from uncertain legal formulas into an
                   ironclad, enforceable plan.
                 </p>
 
@@ -1533,7 +1533,7 @@ export default function HinduWomanPropertyRightsClient() {
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Who Inherits?</td>
                         <td className="p-3 text-emerald-700 font-bold">100% your choice (parents, kids, friends)</td>
-                        <td className="p-3 text-rose-600">Fixed statutory formula (husband&apos;s family prioritized)</td>
+                        <td className="p-3 text-rose-600">Fixed legal formula (husband&apos;s family prioritized)</td>
                       </tr>
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Aging Parents Protection</td>
@@ -1548,7 +1548,7 @@ export default function HinduWomanPropertyRightsClient() {
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Bank &amp; Locker Access</td>
                         <td className="p-3 text-emerald-700 font-bold">Executor releases funds in weeks</td>
-                        <td className="p-3 text-slate-600">Frozen until court Succession Certificate (6-12 mos)</td>
+                        <td className="p-3 text-slate-600">Frozen until court Estate Paper (6-12 mos)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1558,7 +1558,7 @@ export default function HinduWomanPropertyRightsClient() {
                   <p className="text-base sm:text-lg font-bold">Draft Your Legally Valid Will Online in 15 Minutes</p>
                   <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
                     WillDrafting provides clause-by-clause legal guidance tailored to Indian succession acts. Your draft
-                    is checked by senior advocates at WillDrafting.in.
+                    is checked by senior lawyers at WillDrafting.in.
                   </p>
                   <button
                     onClick={handleStartDraft}
@@ -1578,10 +1578,10 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Actionable Audit</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                13. Interactive Checklist: Stridhan &amp; Property Record Audit
+                13. Free Checklist: Stridhan &amp; Asset Record Audit
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Use this interactive 6-point checklist to audit your property ownership records and ensure your assets
+                Use this free 6-point checklist to audit your asset ownership records and ensure your assets
                 remain 100% protected.
               </p>
 
@@ -1619,7 +1619,7 @@ export default function HinduWomanPropertyRightsClient() {
                     {
                       id: "check-2",
                       title: "2. Certified Title Deeds Retained",
-                      desc: "Retained certified copies of registered sale deeds for self-acquired and parental real estate.",
+                      desc: "Retained certified copies of filed sale deeds for self-acquired and parental real estate.",
                     },
                     {
                       id: "check-3",
@@ -1629,7 +1629,7 @@ export default function HinduWomanPropertyRightsClient() {
                     {
                       id: "check-4",
                       title: "4. Section 15(2) Reversion Understood",
-                      desc: "Understood that parental property reverts to father's heirs if dying childless without a Will.",
+                      desc: "Understood that parental asset reverts to father's heirs if dying childless without a Will.",
                     },
                     {
                       id: "check-5",
@@ -1639,7 +1639,7 @@ export default function HinduWomanPropertyRightsClient() {
                     {
                       id: "check-6",
                       title: "6. Trusted Independent Executor Named",
-                      desc: "Designated a trusted family member or professional to manage probate and execution smoothly.",
+                      desc: "Designated a trusted family member or professional to manage probate and signing smoothly.",
                     },
                   ].map((chk) => (
                     <div
@@ -1681,7 +1681,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Direct Answers</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                14. Frequently Asked Questions: Stridhan &amp; Women Property
+                14. Frequently Asked Questions: Stridhan &amp; Women Asset
               </h3>
 
               <div className="space-y-3">
@@ -1719,19 +1719,19 @@ export default function HinduWomanPropertyRightsClient() {
             <section id="statutory-citations" className="scroll-target border-t border-slate-200 pt-8 space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <BookOpen className="w-4 h-4" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                15. Statutory Citations: Acts, Precedents &amp; Legal Sources
+                15. Legal Citations: Acts, Precedents &amp; Legal Sources
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-3 text-xs text-slate-700">
                 <p className="font-bold text-slate-900">Primary Acts &amp; Sections Cited:</p>
                 <ul className="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
                   <li>
-                    <strong>Hindu Succession Act, 1956:</strong> Section 14 (Absolute ownership), Section 15 (Female intestate succession), Section 16 (Order of distribution), Section 30 (Testamentary disposition).
+                    <strong>Hindu Succession Act, 1956:</strong> Section 14 (Absolute ownership), Section 15 (Female no-Will estate), Section 16 (Order of split), Section 30 (Will gift).
                   </li>
                   <li>
-                    <strong>Indian Succession Act, 1925:</strong> Section 59 (Sound mind testamentary capacity), Section 63 (Execution and attestation of Wills).
+                    <strong>Indian Succession Act, 1925:</strong> Section 59 (Sound mind Will capacity), Section 63 (Signing and witness signing of Wills).
                   </li>
                   <li>
                     <strong>Protection of Women from Domestic Violence Act, 2005 (PWDVA):</strong> Sections 12 &amp; 18 (Stridhan recovery &amp; protection orders).
@@ -1745,7 +1745,7 @@ export default function HinduWomanPropertyRightsClient() {
                 </ul>
 
                 <div className="pt-2">
-                  <p className="font-bold text-slate-900 mb-2">Verified Government Portals:</p>
+                  <p className="font-bold text-slate-900 mb-2">Checked Government Portals:</p>
                   <div className="flex flex-wrap gap-2">
                     <a
                       href="https://www.indiacode.nic.in"
@@ -1784,7 +1784,7 @@ export default function HinduWomanPropertyRightsClient() {
                       href="/blogs/married-daughter-rights-in-fathers-property"
                       className="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#C65378] text-[11px] font-bold"
                     >
-                      Married Daughter Property Rights
+                      Married Daughter Asset Rights
                     </Link>
                     <Link
                       href="/blogs/second-wife-children-property-rights-india"
@@ -1796,7 +1796,7 @@ export default function HinduWomanPropertyRightsClient() {
                       href="/tools/succession-calculator"
                       className="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-[#C65378] text-[11px] font-bold"
                     >
-                      Section 15 Succession Calculator
+                      Section 15 Estate Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1828,21 +1828,21 @@ export default function HinduWomanPropertyRightsClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h4>
-                  <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
+                  <p className="text-[11px] font-bold text-[#C65378]">Senior Estate Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu Succession Act litigations, Stridhan recovery petitions, and testamentary estate
+                Expert in Hindu Succession Act litigations, Stridhan recovery petitions, and Will estate
                 structuring with over 15 years of bar experience.
               </p>
               <div className="pt-1 border-t border-slate-100 flex items-center justify-between text-[11px]">
                 <span className="font-bold text-emerald-700 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  Verified Counsel
+                  Checked Counsel
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1892,13 +1892,13 @@ export default function HinduWomanPropertyRightsClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Accuracy:</strong> Compliant with Section 14 &amp; Section 30 HSA.
+                    <strong>Legal Accuracy:</strong> Compliant with Section 14 &amp; Section 30 HSA.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Lawyer Verified:</strong> Reviewed by senior advocates at WillDrafting.in.
+                    <strong>Lawyer Checked:</strong> Reviewed by senior lawyers at WillDrafting.in.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1910,7 +1910,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Print-Ready A4:</strong> Formatted for immediate two-witness execution.
+                    <strong>Print-Ready A4:</strong> Formatted for immediate two-witness signing.
                   </span>
                 </li>
               </ul>
@@ -1920,15 +1920,15 @@ export default function HinduWomanPropertyRightsClient() {
             <div className="hidden lg:block rounded-3xl border border-slate-200/80 bg-white p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100 text-slate-900 font-extrabold text-xs uppercase tracking-wider">
                 <FileText className="w-4 h-4 text-[#C65378]" />
-                <span>Related Succession Guides</span>
+                <span>Related Estate Guides</span>
               </div>
               <div className="space-y-2 text-xs">
                 <Link
                   href="/blogs/married-daughter-rights-in-fathers-property"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-all"
                 >
-                  <p className="font-bold text-slate-900">Married Daughter Property Rights</p>
-                  <p className="text-[10px] text-slate-500 mt-0.5">Ancestral coparcenary &amp; 2005 Amendment →</p>
+                  <p className="font-bold text-slate-900">Married Daughter Asset Rights</p>
+                  <p className="text-[10px] text-slate-500 mt-0.5">Family joint &amp; 2005 Amendment →</p>
                 </Link>
                 <Link
                   href="/blogs/second-wife-children-property-rights-india"
@@ -1941,8 +1941,8 @@ export default function HinduWomanPropertyRightsClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-all"
                 >
-                  <p className="font-bold text-slate-900">Section 15 Succession Calculator</p>
-                  <p className="text-[10px] text-slate-500 mt-0.5">Interactive heir share calculation tool →</p>
+                  <p className="font-bold text-slate-900">Section 15 Estate Tool</p>
+                  <p className="text-[10px] text-slate-500 mt-0.5">Free heir share calculation tool →</p>
                 </Link>
               </div>
             </div>
@@ -1956,7 +1956,7 @@ export default function HinduWomanPropertyRightsClient() {
                   href="/blogs/married-daughter-rights-in-fathers-property"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Married Daughter Property Rights
+                  Married Daughter Asset Rights
                 </Link>
                 <Link
                   href="/blogs/second-wife-children-property-rights-india"
@@ -1968,7 +1968,7 @@ export default function HinduWomanPropertyRightsClient() {
                   href="/blogs/huf-property-after-death-of-karta"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  HUF Property After Karta Death
+                  HUF Asset After Karta Death
                 </Link>
                 <Link
                   href="/templates/will-format-india"
@@ -1980,6 +1980,28 @@ export default function HinduWomanPropertyRightsClient() {
             </div>
           </aside>
         </div>
+      
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
       </main>
 
       {/* =========================================================================
@@ -1997,10 +2019,10 @@ export default function HinduWomanPropertyRightsClient() {
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
                 <h3 className="text-base font-extrabold text-slate-900">
-                  Hindu Woman Property Rights &amp; Stridhan Framework
+                  Hindu Woman Asset Rights &amp; Stridhan Framework
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Statutory blueprint under Hindu Succession Act, 1956 (Sections 14, 15, 16 &amp; 30)
+                  Legal blueprint under Hindu Succession Act, 1956 (Sections 14, 15, 16 &amp; 30)
                 </p>
               </div>
               <button

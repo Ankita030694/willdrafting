@@ -142,7 +142,7 @@ export default function VijayawadaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Vijayawada: Registration & Probate Guide",
         description:
-          "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation.",
+          "Draft your Will in Vijayawada with lawyer help. Smooth AP IGRS filing guidance, shop asset transfer, and VMC name change.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function VijayawadaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Vijayawada - Estate Planning, Commercial Succession & AP IGRS Registration",
         description:
-          "Professional Will drafting, commercial business estate succession advisory, APCRDA plot inheritance, and AP IGRS Sub-Registrar registration.",
+          "Professional Will drafting, shop business estate estate advisory, APCRDA plot estate, and AP IGRS SRO filing.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,38 +262,38 @@ export default function VijayawadaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Vijayawada Andhra Pradesh",
         description:
-          "Five straightforward steps to create a legally binding Will and register it before the Sub-Registrar in Vijayawada.",
+          "Five straightforward steps to create a legally binding Will and register it before the SRO in Vijayawada.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Properties, Commercial Assets, and Beneficiaries",
-            text: "Compile your Vijayawada residential flats, APCRDA plots, commercial shops, bank accounts, demat holdings, and agricultural lands. Appoint your beneficiaries and an executor.",
+            text: "Compile your Vijayawada home flats, APCRDA plots, shop shops, bank accounts, demat holdings, and farm lands. Appoint your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Exact Legal Clauses",
-            text: "Draft your Will using our legally verified platform or with a senior advocate to include non-presidency probate clarity, specific commercial bequests, and executor powers.",
+            text: "Draft your Will using our legally checked platform or with a senior lawyer to include non-presidency probate clarity, specific shop bequests, and executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets or ledger paper and sign every page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 sheets or ledger paper and sign every page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Vijayawada SRO Slot on AP IGRS",
-            text: "Schedule an appointment token on registration.ap.gov.in for your jurisdictional Vijayawada SRO and pay the nominal ₹1,000 registration fee via CFMS challan online.",
+            text: "Schedule an appointment token on filing.ap.gov.in for your local Vijayawada SRO and pay the nominal ₹1,000 filing fee via CFMS challan online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photo capture, and Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photo capture, and Book III filing.",
           },
         ],
       },

@@ -78,54 +78,54 @@ const CII_TABLE: Record<string, number> = {
 };
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. What is Inherited Property Tax?" },
-  { id: "interactive-calculator", label: "2. Interactive Capital Gains Calculator" },
+  { id: "statutory-foundation", label: "1. What is Inherited Asset Tax?" },
+  { id: "interactive-calculator", label: "2. Free Capital Gains Tool" },
   { id: "budget-2024-amendment", label: "3. Budget 2024: 12.5% Flat vs 20% Indexation" },
   { id: "section-49-cost-holding", label: "4. Section 49(1) Cost & Bombay HC Precedent" },
   { id: "pre-2001-valuation-fmv", label: "5. Pre-2001 Valuations: FMV vs Circle Rate" },
   { id: "section-54-multi-heir", label: "6. Multi-Heir Exemption Multiplier (Sec 54EC)" },
   { id: "nri-tds-section-195", label: "7. NRI Sellers: Sec 195 TDS & Form 13" },
   { id: "comparison-table-regimes", label: "8. Regime Comparison: Old vs New vs Grandfathered" },
-  { id: "step-by-step-sale-sop", label: "9. Step-by-Step SOP: Inherited Property Sale" },
+  { id: "step-by-step-sale-sop", label: "9. Step-by-Step SOP: Inherited Asset Sale" },
   { id: "practical-case-studies", label: "10. Real Case Studies: Delhi, Pune, Mumbai" },
   { id: "legal-clause-templates", label: "11. Section 49(1) Recital & Form 13 Checklist" },
-  { id: "institutional-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
-    q: "Do I have to pay tax when I inherit a property in India?",
-    a: "No. Under Section 47(iii) of the Income Tax Act, 1961, receiving property through a Will, gift, or intestate succession is strictly excluded from the definition of transfer. There is no inheritance tax or gift tax when the title transfers into your name. Tax liability arises only when you subsequently sell that inherited property.",
+    q: "Do I have to pay tax when I inherit a asset in India?",
+    a: "No. Under Section 47(iii) of the Income Tax Act, 1961, receiving asset through a Will, gift, or no-Will estate is strictly excluded from the definition of transfer. There is no estate tax or gift tax when the title transfers into your name. Tax liability arises only when you then sell that inherited asset.",
   },
   {
-    q: "How do I calculate the cost of acquisition for inherited property?",
-    a: "Under Section 49(1) of the Income Tax Act, the cost of acquisition is deemed to be the cost for which the previous owner purchased the property. If the previous owner also inherited it, you trace back to the last owner who bought it with cash. If bought before April 1, 2001, you can adopt the Fair Market Value (FMV) as of April 1, 2001, capped at the Stamp Duty circle rate as per Section 55(2)(b)(ii).",
+    q: "How do I calculate the cost of acquisition for inherited asset?",
+    a: "Under Section 49(1) of the Income Tax Act, the cost of acquisition is deemed to be the cost for which the previous owner purchased the asset. If the previous owner also inherited it, you trace back to the last owner who bought it with cash. If bought before April 1, 2001, you can adopt the Fair Market Value (FMV) as of April 1, 2001, capped at the Stamp Duty circle rate as per Section 55(2)(b)(ii).",
   },
   {
     q: "Does indexation start from my father's purchase year or the year he passed away?",
-    a: "Under the landmark Bombay High Court decision in CIT v. Manjula J. Shah (2013) 355 ITR 474 (affirmed by the Supreme Court and followed by Delhi, Karnataka, and Gujarat High Courts), the Cost Inflation Index (CII) benefit applies from the year in which the PREVIOUS owner purchased the asset (or 2001-02 if purchased earlier), not from the date of inheritance or probate. This saves significant tax for heirs.",
+    a: "Under the landmark Bombay High Court decision in CIT v. Manjula J. Shah (2013) 355 ITR 474 (affirmed by the Supreme Court and followed by Delhi, Karnataka, and Gujarat High Courts), the Cost Inflation Index (CII) benefit applies from the year in which the PREVIOUS owner purchased the asset (or 2001-02 if purchased earlier), not from the date of estate or probate. This saves significant tax for heirs.",
   },
   {
-    q: "What is the Budget 2024 grandfathering option for properties bought before July 23, 2024?",
-    a: "In the Finance (No. 2) Act, 2024, the Central Government inserted a grandfathering proviso into Section 112. For immovable property acquired before July 23, 2024 by Resident Individuals or HUFs, taxpayers can compute capital gains under both options: (1) 20% with indexation, or (2) 12.5% flat without indexation, and pay whichever calculates to lower tax.",
+    q: "What is the Budget 2024 grandfathering option for assets bought before July 23, 2024?",
+    a: "In the Finance (No. 2) Act, 2024, the Central Government inserted a grandfathering proviso into Section 112. For land asset acquired before July 23, 2024 by Resident People or HUFs, taxpayers can compute capital gains under both options: (1) 20% with indexation, or (2) 12.5% flat without indexation, and pay whichever calculates to lower tax.",
   },
   {
-    q: "Can multiple legal heirs selling one property each claim ₹50 Lakh in Section 54EC bonds?",
+    q: "Can multiple legal heirs selling one asset each claim ₹50 Lakh in Section 54EC bonds?",
     a: "Yes! Co-heirs who inherit a house as tenants-in-common are separate independent taxpayers under Section 26 of the Income Tax Act. Each co-owner is taxed only on their proportionate share of the capital gain, and each co-owner can independently invest up to ₹50 Lakhs in Section 54EC capital gains bonds (REC, NHAI, PFC, IRFC). For example, three siblings can legally shelter ₹1.5 Crore in capital gains across the family.",
   },
   {
     q: "How can an NRI seller avoid 20% to 23.9% TDS on gross consideration under Section 195?",
-    a: "When an NRI sells property in India, the buyer is legally obligated to deduct TDS under Section 195. If no lower deduction certificate is presented, the buyer deducts TDS on the FULL sale price at 12.5% or 20% plus surcharge and cess. To avoid locking up tens of lakhs in cash, the NRI seller must apply online on TRACES for a Lower Deduction Certificate under Section 197 (Form 13) before executing the sale deed.",
+    a: "When an NRI sells asset in India, the buyer is legally obligated to deduct TDS under Section 195. If no lower deduction paper is presented, the buyer deducts TDS on the FULL sale price at 12.5% or 20% plus surcharge and cess. To avoid locking up tens of lakhs in cash, the NRI seller must apply online on TRACES for a Lower Deduction Paper under Section 197 (Form 13) before signing the sale deed.",
   },
   {
-    q: "How does Section 54 exemption apply to inherited residential house sale?",
-    a: "Under Section 54, if the inherited property sold was a residential house held for more than 24 months (including previous owner's holding tenure), you can claim 100% exemption on the long-term capital gain by purchasing another residential house in India within 1 year before or 2 years after the sale, or constructing within 3 years. The maximum exemption limit is capped at ₹10 Crore.",
+    q: "How does Section 54 exemption apply to inherited home house sale?",
+    a: "Under Section 54, if the inherited asset sold was a home house held for more than 24 months (including previous owner's holding tenure), you can claim 100% exemption on the long-term capital gain by purchasing another home house in India within 1 year before or 2 years after the sale, or constructing within 3 years. The maximum exemption limit is capped at ₹10 Crore.",
   },
   {
-    q: "What documents are required to prove cost of acquisition to the Income Tax Department?",
-    a: "You need: (1) The registered sale deed or conveyance deed of the previous owner, (2) Mutation extract or property card showing your name as heir, (3) Probate copy or registered Will or Legal Heir Certificate, (4) For pre-2001 properties, a certified valuation report from a Government Registered Valuer showing April 1, 2001 FMV alongside the circle rate certificate from the Sub-Registrar Office, and (5) Bank statements or receipts of transfer expenses.",
+    q: "What papers are required to prove cost of acquisition to the Income Tax Office?",
+    a: "You need: (1) The filed sale deed or conveyance deed of the previous owner, (2) Name Change extract or asset card showing your name as heir, (3) Probate copy or filed Will or Legal Heir Paper, (4) For pre-2001 assets, a certified price check report from a Government Filed Valuer showing April 1, 2001 FMV alongside the circle rate paper from the SRO office, and (5) Bank statements or receipts of transfer expenses.",
   },
 ];
 
@@ -142,12 +142,12 @@ export default function CapitalGainsCalculatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [residency, setResidency] = useState<"resident" | "nri">("resident");
   const [propertyType, setPropertyType] = useState<"residential" | "commercial_plot">("residential");
   const [acquisitionEra, setAcquisitionEra] = useState<"pre_2001" | "between_2001_and_2024" | "post_july_2024">("between_2001_and_2024");
@@ -383,7 +383,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Capital Gains Tax on Inherited Property Calculator India
+            Capital Gains Tax on Inherited Asset Tool India
           </h1>
 
           {/* Subtitle Paragraph */}
@@ -400,7 +400,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Calculator className="w-4 h-4" />
-              <span>Calculate Inherited Property Tax</span>
+              <span>Calculate Inherited Asset Tax</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -408,7 +408,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -486,7 +486,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 2(42A), 45, 47(iii), 48, 49(1), 50C, 54, 54EC, 55(2)(b),
@@ -510,8 +510,8 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Zero Tax on Inheritance:</strong> Under Section 47(iii), receiving property
-                    through a registered Will or intestate legal heir succession attracts 0% capital gains
+                    <strong>Zero Tax on Estate:</strong> Under Section 47(iii), receiving asset
+                    through a filed Will or no-Will legal heir estate attracts 0% capital gains
                     or income tax. Tax is triggered only when the heir sells.
                   </span>
                 </li>
@@ -526,8 +526,8 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Budget 2024 Grandfathering:</strong> If your parent acquired the immovable
-                    property before July 23, 2024, resident taxpayers can compute tax under both 20% with
+                    <strong>Budget 2024 Grandfathering:</strong> If your parent acquired the land
+                    asset before July 23, 2024, resident taxpayers can compute tax under both 20% with
                     indexation and 12.5% flat without indexation and pay whichever is lower.
                   </span>
                 </li>
@@ -549,29 +549,29 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Tax on Inherited Property in India
+                1. Legal Rules: Tax on Inherited Asset in India
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A common misconception among property owners in India is that inheriting real estate
+                  A common misconception among asset owners in India is that inheriting real estate
                   triggers estate tax or gift tax. Following the complete abolition of the Estate Duty Act
-                  in 1985, India levies <strong>zero inheritance tax</strong>. Under Section 47(iii) of the
+                  in 1985, India levies <strong>zero estate tax</strong>. Under Section 47(iii) of the
                   Income Tax Act, 1961, any transfer of a capital asset under a gift, Will, or irrevocable
                   trust is expressly excluded from capital gains taxation.
                 </p>
                 <p>
-                  However, when the legal heir or legatee subsequently enters into a registered agreement
+                  However, when the legal heir or legatee then enters into a filed pact
                   to sell that inherited real estate, Section 45 of the Act charges capital gains tax.
                   Because the heir acquired the asset without paying consideration, the Income Tax Act
-                  invokes special statutory mechanics under <strong>Section 49(1)</strong>, treating the
+                  invokes special legal mechanics under <strong>Section 49(1)</strong>, treating the
                   cost of acquisition as the cost incurred by the previous owner who acquired it by
                   purchase.
                 </p>
                 <p>
-                  Furthermore, Section 2(42A) Explanation 1(i)(b) mandates that the period for which the
-                  previous owner held the property must be aggregated with the heir&rsquo;s holding period.
+                  Also, Section 2(42A) Explanation 1(i)(b) mandates that the period for which the
+                  previous owner held the asset must be aggregated with the heir&rsquo;s holding period.
                   Because Indian family real estate is typically held for decades, virtually all inherited
-                  property sales qualify as Long-Term Capital Assets (holding period exceeding 24 months).
+                  asset sales qualify as Long-Term Capital Assets (holding period exceeding 24 months).
                 </p>
               </div>
             </section>
@@ -583,10 +583,10 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>INTERACTIVE TAX CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Capital Gains Tax &amp; Grandfathering Tool
+                2. Free Capital Gains Tax &amp; Grandfathering Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Enter your property details below to compare the 12.5% Flat Tax Regime against the 20%
+                Enter your asset details below to compare the 12.5% Flat Tax Regime against the 20%
                 Indexation Regime under the Finance (No. 2) Act 2024 grandfathering clause.
               </p>
 
@@ -630,7 +630,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Property Category</span>
+                      <span>Asset Category</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -642,7 +642,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Residential Flat/House
+                        Home Flat/House
                       </button>
                       <button
                         type="button"
@@ -653,7 +653,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Plot / Commercial
+                        Plot / Shop
                       </button>
                     </div>
                   </div>
@@ -690,7 +690,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                     <Clock className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>When Did Previous Owner / Parent Acquire The Property?</span>
+                    <span>When Did Previous Owner / Parent Acquire The Asset?</span>
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <button
@@ -828,7 +828,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                           onChange={(e) => setFmv2001(Number(e.target.value))}
                           className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#C65378] bg-slate-50"
                         />
-                        <p className="text-[10px] text-slate-500">Certified by Registered Valuer.</p>
+                        <p className="text-[10px] text-slate-500">Certified by Filed Valuer.</p>
                       </div>
 
                       {/* SDV Circle Rate as on April 1, 2001 */}
@@ -844,7 +844,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                           onChange={(e) => setSdv2001(Number(e.target.value))}
                           className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#C65378] bg-slate-50"
                         />
-                        <p className="text-[10px] text-slate-500">Section 55(2)(b)(ii) statutory ceiling.</p>
+                        <p className="text-[10px] text-slate-500">Section 55(2)(b)(ii) legal ceiling.</p>
                       </div>
                     </>
                   ) : (
@@ -886,7 +886,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                           onChange={(e) => setOriginalPurchaseCost(Number(e.target.value))}
                           className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#C65378] bg-slate-50"
                         />
-                        <p className="text-[10px] text-slate-500">From parent&rsquo;s registered sale deed.</p>
+                        <p className="text-[10px] text-slate-500">From parent&rsquo;s filed sale deed.</p>
                       </div>
 
                       {/* Sale Year */}
@@ -918,7 +918,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                         <span>Reinvestment Tax Exemptions (Section 54 &amp; 54EC)</span>
                       </div>
                       <p className="text-xs text-slate-600">
-                        Reduce your capital gains tax legally through verified statutory reinvestments.
+                        Reduce your capital gains tax legally through checked legal reinvestments.
                       </p>
                     </div>
                     <div className="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
@@ -930,7 +930,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     {/* Section 54 Slider */}
                     <div className="bg-slate-50/80 rounded-2xl p-4 border border-slate-200 space-y-2">
                       <div className="flex items-center justify-between text-xs font-bold text-slate-800">
-                        <span>Sec 54: Reinvestment in New Residential House</span>
+                        <span>Sec 54: Reinvestment in New Home House</span>
                         <span className="text-[#C65378]">{formatINR(section54Investment)}</span>
                       </div>
                       <input
@@ -944,7 +944,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       />
                       <div className="flex items-center justify-between text-[10px] text-slate-500">
                         <span>₹0</span>
-                        <span>Max statutory cap: ₹10 Crores</span>
+                        <span>Max legal cap: ₹10 Crores</span>
                         <span>{formatINR(Math.min(grossSalePrice, 50000000))}</span>
                       </div>
                     </div>
@@ -1018,7 +1018,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                         </h3>
                       </div>
                       <div className="text-left md:text-right">
-                        <div className="text-xs uppercase font-bold opacity-75">Statutory Savings</div>
+                        <div className="text-xs uppercase font-bold opacity-75">Legal Savings</div>
                         <div className="text-xl sm:text-2xl font-black text-emerald-700">
                           {isGrandfatheringEligible && taxDifference > 0
                             ? `Saves ${formatINR(taxDifference)} in Tax!`
@@ -1038,8 +1038,8 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                         </>
                       ) : (
                         <>
-                          Because the seller is an NRI or the property was acquired after July 23, 2024,
-                          the grandfathering indexation option is unavailable by statute. The property is
+                          Because the seller is an NRI or the asset was acquired after July 23, 2024,
+                          the grandfathering indexation option is unavailable by statute. The asset is
                           taxed at the flat 12.5% rate under amended Section 112.
                         </>
                       )}
@@ -1186,7 +1186,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                           </div>
                         </div>
                         <div className="p-3 bg-white rounded-xl border border-emerald-100">
-                          <div className="text-slate-500 font-semibold">Individual Tax Liability</div>
+                          <div className="text-slate-500 font-semibold">Single Tax Liability</div>
                           <div className="font-black text-[#C65378] text-sm mt-0.5">
                             {formatINR(taxPerHeir)}
                           </div>
@@ -1208,7 +1208,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                         </span>
                       </div>
                       <p className="text-xs text-amber-900 leading-relaxed">
-                        Without a Lower Deduction Certificate under Section 197 (Form 13), Indian property
+                        Without a Lower Deduction Paper under Section 197 (Form 13), Indian property
                         buyers are legally required to deduct TDS on the <strong>gross sale price</strong>{" "}
                         at 14.3% to 23.9%, locking up your funds until income tax refund processing.
                       </p>
@@ -1234,13 +1234,13 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       </div>
                       <div className="pt-1 flex items-center justify-between">
                         <span className="text-[11px] text-amber-800">
-                          Need Form 13 filed on TRACES before registration?
+                          Need Form 13 filed on TRACES before filing?
                         </span>
                         <Link
                           href="/services/nri-will-india"
                           className="inline-flex items-center gap-1 text-xs font-bold text-[#C65378] hover:underline"
                         >
-                          <span>Explore NRI Property Repatriation Service</span>
+                          <span>Explore NRI Asset Sending Cash Home Service</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
                       </div>
@@ -1282,16 +1282,16 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   On July 23, 2024, the Union Budget initially proposed eliminating indexation benefits
-                  for immovable property and slashing the Long-Term Capital Gains (LTCG) tax rate from 20%
+                  for land asset and slashing the Long-Term Capital Gains (LTCG) tax rate from 20%
                   to 12.5%. This sparked widespread outrage among middle-class homeowners and inherited
-                  property legatees, as assets held over 15 to 30 years face massive inflation gains
+                  asset legatees, as assets held over 15 to 30 years face massive inflation gains
                   without corresponding real financial appreciation.
                 </p>
                 <p>
                   In response, Parliament passed an official amendment introducing a{" "}
                   <strong>Grandfathering Proviso in Section 112</strong> of the Income Tax Act. For any
-                  house, apartment, or land acquired before July 23, 2024 by Resident Individuals or HUFs,
-                  the assessee holds the statutory option to calculate tax under both regimes:
+                  house, apartment, or land acquired before July 23, 2024 by Resident People or HUFs,
+                  the assessee holds the legal option to calculate tax under both regimes:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
                   <li>
@@ -1308,8 +1308,8 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   </li>
                 </ul>
                 <p>
-                  In the case of inherited property, the date of acquisition for grandfathering is governed
-                  by the date the <strong>previous owner</strong> bought the property. Thus, if your father
+                  In the case of inherited asset, the date of acquisition for grandfathering is governed
+                  by the date the <strong>previous owner</strong> bought the asset. Thus, if your father
                   purchased a home in 1998 and passed away in 2025, you retain the grandfathering option to
                   choose 20% with indexation!
                 </p>
@@ -1328,12 +1328,12 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 49(1) of the Income Tax Act provides that where an assessee acquires an asset
-                  under a gift, Will, succession, inheritance, or distribution on partition of a Hindu
+                  under a gift, Will, estate, estate, or split on split of a Hindu
                   Undivided Family (HUF), the cost of acquisition is deemed to be the cost for which the
                   previous owner acquired it.
                 </p>
                 <p>
-                  For years, the Income Tax Department argued that while the cost is deemed from the
+                  For years, the Income Tax Office argued that while the cost is deemed from the
                   previous owner, the Cost Inflation Index (CII) could only be applied from the year the
                   heir actually became the owner. This bureaucratic interpretation caused immense tax
                   hardship.
@@ -1347,7 +1347,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     The Bombay High Court conclusively held that when computing indexed cost of acquisition
                     under Section 48 read with Section 49(1) and Section 2(42A), the indexation multiplier
                     must be calculated with reference to the financial year in which the{" "}
-                    <strong>previous owner acquired the property</strong>. This ruling was subsequently
+                    <strong>previous owner acquired the asset</strong>. This ruling was then
                     upheld by the Delhi High Court (Arun Shungloo Trust), Gujarat High Court, and Karnataka
                     High Court, becoming settled law across India.
                   </p>
@@ -1385,10 +1385,10 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   </p>
                   <ol className="list-decimal pl-5 space-y-1">
                     <li>
-                      A formal Valuation Report from an IBBI or Income Tax Department Registered Valuer.
+                      A formal Price Check Report from an IBBI or Income Tax Office Filed Valuer.
                     </li>
                     <li>
-                      A certified extract of the April 1, 2001 Circle Rate from the local Sub-Registrar
+                      A certified extract of the April 1, 2001 Circle Rate from the local SRO
                       Office (SRO).
                     </li>
                   </ol>
@@ -1408,10 +1408,10 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   One of the most powerful tax-saving opportunities in Indian real estate occurs when
-                  multiple siblings or legal heirs inherit a property together as tenants-in-common.
+                  multiple siblings or legal heirs inherit a asset together as tenants-in-common.
                 </p>
                 <p>
-                  Under Section 26 of the Income Tax Act, where property is owned by two or more persons
+                  Under Section 26 of the Income Tax Act, where asset is owned by two or more persons
                   having definite and ascertainable shares, they are assessed not as an Association of
                   Persons (AOP), but <strong>individually as independent assessees</strong>.
                 </p>
@@ -1435,9 +1435,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Each co-heir can independently decide how to reinvest their share. One sibling can
-                      purchase a new residential apartment under Section 54, while another invests in
+                      purchase a new home apartment under Section 54, while another invests in
                       Section 54EC bonds, and a third pays the 12.5% tax. Each heir files their own
-                      individual ITR.
+                      single ITR.
                     </p>
                   </div>
                 </div>
@@ -1468,14 +1468,14 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-3 shadow-xs">
                   <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>The Solution: Section 197 Lower Deduction Certificate (Form 13)</span>
+                    <span>The Solution: Section 197 Lower Deduction Paper (Form 13)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    To prevent 20%+ of your gross property value being locked with the Indian Tax
-                    Department for over 12 to 18 months, the NRI seller must submit an online application
-                    in <strong>Form 13 on the TRACES portal</strong> before executing the sale deed. The
+                    To prevent 20%+ of your gross asset value being locked with the Indian Tax
+                    Office for over 12 to 18 months, the NRI seller must submit an online form
+                    in <strong>Form 13 on the TRACES portal</strong> before signing the sale deed. The
                     Assessing Officer examines the Section 49(1) purchase deeds and Section 54/54EC
-                    reinvestments, issuing a statutory certificate directing the buyer to deduct TDS only on
+                    reinvestments, issuing a legal paper directing the buyer to deduct TDS only on
                     the actual net capital gain, or at NIL rate.
                   </p>
                   <div className="pt-1">
@@ -1483,7 +1483,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       href="/services/nri-will-india"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a33b5c]"
                     >
-                      <span>Learn about AMA Legal Solutions NRI Property Sale &amp; Repatriation Desk</span>
+                      <span>Learn about AMA Legal Solutions NRI Asset Sale &amp; Sending Cash Home Desk</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1502,7 +1502,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Key differences between the pre-Budget 2024 regime, the flat 12.5% amendment, and the
-                grandfathered relaxation for inherited property:
+                grandfathered relaxation for inherited asset:
               </p>
 
               {/* Table Container */}
@@ -1530,7 +1530,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       <td className="py-3 px-4">Available under 20% option</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Inheritance Cost Base</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Estate Cost Base</td>
                       <td className="py-3 px-4">Section 49(1) Parent&rsquo;s Cost</td>
                       <td className="py-3 px-4">Section 49(1) Parent&rsquo;s Cost</td>
                       <td className="py-3 px-4">Section 49(1) Parent&rsquo;s Cost</td>
@@ -1548,7 +1548,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       <td className="py-3 px-4">Capped at Circle Rate 2001</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">NRI TDS Requirement</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">NRI TDS Rule</td>
                       <td className="py-3 px-4">Sec 195 at 20.8% on Gross</td>
                       <td className="py-3 px-4">Sec 195 at 12.5% on Gross</td>
                       <td className="py-3 px-4">Sec 195 (Apply for Form 13)</td>
@@ -1565,39 +1565,39 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Inherited Property Sale Checklist
+                9. Step-by-Step SOP: Inherited Asset Sale Checklist
               </h3>
               <div className="space-y-4">
                 {[
                   {
                     step: 1,
                     title: "Establish Undisputed Title & Revenue Mutation",
-                    desc: "Before advertising or negotiating with buyers, ensure the municipal mutation, Khata transfer, or property card reflects all legal heirs. Obtain probate (if in Mumbai, Chennai, or Kolkata) or Letters of Administration, or registered Surviving Member Certificate.",
+                    desc: "Before advertising or negotiating with buyers, ensure the city name change, Khata transfer, or asset card reflects all legal heirs. Obtain probate (if in Mumbai, Chennai, or Kolkata) or Letters of Care, or filed Surviving Member Paper.",
                   },
                   {
                     step: 2,
                     title: "Obtain Ancestor Title Deeds & Cost Records",
-                    desc: "Locate the registered deed under which the previous owner acquired the property. If lost, apply for certified copies from the Sub-Registrar Office under Section 57 of the Registration Act, 1908.",
+                    desc: "Locate the filed deed under which the previous owner acquired the asset. If lost, apply for certified copies from the SRO office under Section 57 of the Filing Act, 1908.",
                   },
                   {
                     step: 3,
                     title: "Commission Registered Valuation for Pre-2001 Assets",
-                    desc: "If acquired before April 1, 2001, commission a registered valuer for an April 1, 2001 FMV report. Concurrently obtain a written circle rate certificate as of April 1, 2001 from the SRO.",
+                    desc: "If acquired before April 1, 2001, commission a filed valuer for an April 1, 2001 FMV report. Concurrently obtain a written circle rate paper as of April 1, 2001 from the SRO.",
                   },
                   {
                     step: 4,
                     title: "Execute Multi-Heir Partition or Family Settlement Deed",
-                    desc: "If multiple heirs hold shares, executing a registered Family Settlement Deed or Relinquishment Deed clarifies individual percentage entitlements for Section 26 independent assessment.",
+                    desc: "If multiple heirs hold shares, signing a filed Family Deal Deed or Release Deed clarifies single percentage entitlements for Section 26 independent assessment.",
                   },
                   {
                     step: 5,
                     title: "Draft Clear Section 49(1) Sale Deed Recitals",
-                    desc: "Ensure the draft sale deed recites the exact chain of title, testamentary bequest, and indemnity, protecting the buyer from unknown claims and verifying cost records for your ITR.",
+                    desc: "Ensure the draft sale deed recites the exact chain of title, Will bequest, and indemnity, protecting the buyer from unknown claims and verifying cost records for your ITR.",
                   },
                   {
                     step: 6,
                     title: "File Form 13 (If NRI) & Invest in Section 54/54EC",
-                    desc: "NRI sellers must submit Form 13 on TRACES 4 to 6 weeks before registration. Upon receipt of sale proceeds, execute Section 54 residential purchase within 2 years or Section 54EC bond deposit within 6 months.",
+                    desc: "NRI sellers must submit Form 13 on TRACES 4 to 6 weeks before filing. Upon receipt of sale proceeds, execute Section 54 home purchase within 2 years or Section 54EC bond deposit within 6 months.",
                   },
                 ].map((item) => (
                   <div
@@ -1623,7 +1623,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>REAL-WORLD APPLICATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Practical Case Studies: Real Inheritance Tax Scenarios
+                10. Practical Case Studies: Real Estate Tax Scenarios
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1631,7 +1631,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Scenario A: Ancestral Delhi House (Bought 1996)
+                      Scenario A: Family Delhi House (Bought 1996)
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">
                       Delhi NCR
@@ -1675,7 +1675,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Individual Gain Each:</span>
+                      <span className="text-slate-600">Single Gain Each:</span>
                       <span className="font-bold text-slate-900">₹38,70,000</span>
                     </div>
                     <div className="flex justify-between">
@@ -1705,7 +1705,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 49(1) Sale Deed Recital Clause for Inherited Property
+                    Section 49(1) Sale Deed Recital Clause for Inherited Asset
                   </div>
                   <button
                     type="button"
@@ -1738,7 +1738,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    NRI Form 13 TRACES Application Checklist (Section 197)
+                    NRI Form 13 TRACES Form Checklist (Section 197)
                   </div>
                   <button
                     type="button"
@@ -1761,19 +1761,19 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Agreement to Sell / MOU with the buyer</span>
+                    <span>Pact to Sell / MOU with the buyer</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Parent purchase deed &amp; registered Will/Probate</span>
+                    <span>Parent purchase deed &amp; filed Will/Probate</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>April 1, 2001 Valuation report &amp; SRO Circle rate</span>
+                    <span>April 1, 2001 Price Check report &amp; SRO Circle rate</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Section 54/54EC reinvestment proof documents</span>
+                    <span>Section 54/54EC reinvestment proof papers</span>
                   </div>
                 </div>
               </div>
@@ -1800,17 +1800,17 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier succession technology and estate planning
+                  WillDrafting.in is India&rsquo;s premier estate technology and estate planning
                   platform, powered by AMA Legal Solutions. Our multidisciplinary bench includes senior
-                  High Court testamentary litigators, chartered property valuation experts, and cross-border
-                  tax advocates. We have structured over 15,000 challenge-proof Wills and assisted hundreds
-                  of resident families and NRIs in seamless inheritance transmission, Form 13 TDS
-                  clearances, and dispute-free property liquidations.
+                  High Court Will litigators, chartered asset price check experts, and cross-border
+                  tax lawyers. We have structured over 15,000 fight-proof Wills and assisted hundreds
+                  of resident families and NRIs in seamless estate transfer, Form 13 TDS
+                  clearances, and fight-free asset liquidations.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1819,7 +1819,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     href="/services/nri-will-india"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>NRI Inherited Property Desk</span>
+                    <span>NRI Inherited Asset Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1833,7 +1833,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     href="/tools/succession-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Legal Heir Share Calculator</span>
+                    <span>Legal Heir Share Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1847,11 +1847,11 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: Inherited Property Tax
+                13. Frequently Asked Questions: Inherited Asset Tax
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to common questions about capital gains tax, grandfathering, indexation,
-                and NRI sale procedures in India:
+                and NRI sale steps in India:
               </p>
 
               {/* Accordion Stack */}
@@ -1893,12 +1893,12 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Income Tax Portals
+                14. Legal Citations &amp; Official Income Tax Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Provisions of the Income Tax Act, 1961:
+                    Governing Rules of the Income Tax Act, 1961:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
@@ -1907,11 +1907,11 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     </li>
                     <li>
                       <strong>Section 47(iii):</strong> Express exclusion of transfers under Will or
-                      inheritance from capital gains tax.
+                      estate from capital gains tax.
                     </li>
                     <li>
-                      <strong>Section 49(1):</strong> Deemed cost of acquisition for property acquired
-                      under succession, inheritance, or Will.
+                      <strong>Section 49(1):</strong> Deemed cost of acquisition for asset acquired
+                      under estate, estate, or Will.
                     </li>
                     <li>
                       <strong>Section 55(2)(b):</strong> Substitution of April 1, 2001 Fair Market Value
@@ -1923,7 +1923,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     </li>
                     <li>
                       <strong>Section 195 &amp; 197:</strong> Withholding tax on Non-Resident Indian
-                      property transfers and Form 13 Lower Deduction Certificate.
+                      asset transfers and Form 13 Lower Deduction Paper.
                     </li>
                   </ul>
                 </div>
@@ -1935,7 +1935,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>Income Tax Department Portal</span>
+                    <span>Income Tax Office Portal</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1960,26 +1960,26 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Drafting Document Checklist
+                      Will Drafting Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1991,13 +1991,35 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       href="/services/nri-will-india"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      NRI Property Sale Repatriation Desk
+                      NRI Asset Sale Sending Cash Home Desk
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -2010,21 +2032,21 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section
-                49(1) inheritance dispute defense, and cross-border NRI estate structuring.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section
+                49(1) estate fight defense, and cross-border NRI estate structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2038,10 +2060,10 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   <span>PREVENT FUTURE CAPITAL GAINS DISPUTES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children from Co-Heir Partition Lawsuits
+                  Protect Your Children from Co-Heir Split Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A clearly drafted, legally registered Will establishes precise ownership shares,
+                  A clearly drafted, legally filed Will establishes precise ownership shares,
                   enabling your children to each claim independent ₹50 Lakh Section 54EC exemptions.
                 </p>
                 <button
@@ -2064,18 +2086,18 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   <span>TAX SCRUTINY &amp; FORM 13 DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Selling High-Value Inherited Property or NRI Asset?
+                  Selling High-Value Inherited Asset or NRI Asset?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Our tax litigators handle Section 197 Form 13 Lower TDS petitions, Section 50C circle rate
-                  challenges, and ancestral title verification pan-India.
+                  fights, and family title check pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -2117,7 +2139,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Tax Calculator</span>
+          <span>Tax Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

@@ -151,7 +151,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "Can I mention my crypto wallet seed phrases or passwords directly in my Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a registered Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial document open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your cryptocurrency in seconds.",
+              text: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a filed Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial paper open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your cryptocurrency in seconds.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "What is the recommended two-part format for bequeathing cryptocurrency in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The gold-standard legal architecture consists of: (1) A formal Public Will Clause bequeathing ownership of the underlying digital assets, tokens, hardware devices, and domains to designated beneficiaries and appointing a Digital Executor, and (2) A confidential, offline Sealed Digital Access Memorandum stored in a secure bank safe deposit locker or steel vault containing technical access coordinates, hardware PIN locations, and password recovery instructions.",
+              text: "The gold-standard legal architecture consists of: (1) A formal Public Will Clause bequeathing ownership of the underlying digital assets, tokens, hardware devices, and domains to designated heirs and appointing a Digital Executor, and (2) A confidential, offline Sealed Digital Access Memorandum stored in a secure bank safe deposit locker or steel vault containing technical access coordinates, hardware PIN locations, and password recovery instructions.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "Is cryptocurrency inheritance taxable under Section 115BBH in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, any property received under a Will or by way of inheritance is completely exempt from income tax in the hands of the legal heir. While Section 115BBH levies a flat 30% tax plus surcharge and cess on the transfer of Virtual Digital Assets (VDAs), inheritance is excluded from taxable transfer. However, when the beneficiary subsequently sells or exchanges the inherited crypto for fiat currency, the 30% tax applies on the net gains.",
+              text: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, any asset received under a Will or by way of estate is completely exempt from income tax in the hands of the legal heir. While Section 115BBH levies a flat 30% tax plus surcharge and cess on the transfer of Virtual Digital Assets (VDAs), estate is excluded from taxable transfer. However, when the heir then sells or exchanges the inherited crypto for fiat currency, the 30% tax applies on the net gains.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "What powers does a Digital Executor have under the Information Technology Act, 2000?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unauthorized access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and executing custodial transfers.",
+              text: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unauthorized access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and signing custodial transfers.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "How do Indian exchanges like CoinDCX and WazirX handle the death of an account holder?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Indian FIU-registered exchanges require: (1) Certified copy of the death certificate, (2) Probated Will or Succession Certificate or Legal Heir Certificate issued by the competent revenue authority or civil court, (3) KYC documents and PAN of the claiming legal heir, and (4) An indemnity bond executed by all legal heirs with two solvent sureties. The account is frozen upon notification, and assets are transferred only to verified beneficiary bank accounts.",
+              text: "Indian FIU-filed exchanges require: (1) Certified copy of the death paper, (2) Probated Will or Estate Paper or Legal Heir Paper issued by the competent revenue office or civil court, (3) KYC papers and PAN of the claiming legal heir, and (4) An indemnity bond signed by all legal heirs with two solvent sureties. The account is frozen upon notification, and assets are transferred only to checked heir bank accounts.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "What happens to self-custody cold wallets (Ledger, Trezor) if no seed phrase is left behind?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If a testator dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the cryptocurrency stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, succession certificates, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
+              text: "If a Will maker dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the cryptocurrency stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, estate papers, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "Can I transfer domain names, SaaS accounts, and social media through a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Domain names registered on ICANN-accredited registrars (such as GoDaddy or Namecheap) and proprietary intellectual property or software codes are recognized as intangible personal property. The Will should authorize the Digital Executor to request registry transfer. For accounts with Google and Apple, testators should configure Inactive Account Manager and Apple Legacy Contacts prior to demise.",
+              text: "Yes. Domain names filed on ICANN-accredited registrars (such as GoDaddy or Namecheap) and proprietary intellectual asset or software codes are recognized as intangible personal asset. The Will should authorize the Digital Executor to request registry transfer. For accounts with Google and Apple, Will makers should configure Inactive Account Manager and Apple Legacy Contacts prior to demise.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
             name: "Is a separate Sealed Digital Access Memorandum legally binding in an Indian court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a testamentary instrument that disposes of property title. The legal bequest of title is executed via the registered Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating property, it does not require probate or public filing, preserving complete technical confidentiality.",
+              text: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a Will instrument that disposes of asset title. The legal bequest of title is signed via the filed Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating asset, it does not require probate or public filing, preserving complete technical confidentiality.",
             },
           },
         ],

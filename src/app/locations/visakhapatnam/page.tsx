@@ -142,7 +142,7 @@ export default function VisakhapatnamLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Visakhapatnam: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate.",
+          "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS filing guidance, coastal asset protection, and senior lawyer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function VisakhapatnamLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Visakhapatnam - Estate Planning, Naval Succession & AP IGRS Registration",
         description:
-          "Professional Will drafting, naval veteran estate succession advisory, and AP IGRS Sub-Registrar Office registration support across.",
+          "Professional Will drafting, naval veteran estate estate advisory, and AP IGRS SRO office filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,38 +262,38 @@ export default function VisakhapatnamLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Visakhapatnam Andhra Pradesh",
         description:
-          "Five straightforward steps to create a legally binding Will and register it before the Sub-Registrar in Visakhapatnam.",
+          "Five straightforward steps to create a legally binding Will and register it before the SRO in Visakhapatnam.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Properties, Naval Assets, and Beneficiaries",
-            text: "Compile your Visakhapatnam residential flats, VMRDA plots, naval pension benefits, bank accounts, and demat shares. Appoint your beneficiaries and an executor.",
+            text: "Compile your Visakhapatnam home flats, VMRDA plots, naval pension benefits, bank accounts, and demat shares. Appoint your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Exact Legal Clauses",
-            text: "Draft your Will using our legally verified platform or with a senior advocate to include non-presidency probate clarity, specific asset bequests, and executor powers.",
+            text: "Draft your Will using our legally checked platform or with a senior lawyer to include non-presidency probate clarity, specific asset bequests, and executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign every page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 sheets and sign every page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Visakhapatnam SRO Slot on AP IGRS",
-            text: "Schedule an appointment token on registration.ap.gov.in for your jurisdictional Visakhapatnam SRO and pay the nominal ₹1,000 registration fee online.",
+            text: "Schedule an appointment token on filing.ap.gov.in for your local Visakhapatnam SRO and pay the nominal ₹1,000 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses, original Aadhaar cards, and photographs for biometric fingerprinting, digital photo capture, and Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and photographs for biometric fingerprinting, digital photo capture, and Book III filing.",
           },
         ],
       },

@@ -36,9 +36,9 @@ import {
 
 const TOC_ITEMS = [
   { id: "statutory-framework", label: "1. What is Probate & Why is It Needed?" },
-  { id: "mandatory-jurisdictions", label: "2. The 3 Cities Where Probate is Compulsory" },
-  { id: "comparison-matrix", label: "3. Probate vs Letters of Administration (Key Differences)" },
-  { id: "letters-of-administration", label: "4. How Letters of Administration Work" },
+  { id: "mandatory-jurisdictions", label: "2. The 3 Cities Where Probate is Needed" },
+  { id: "comparison-matrix", label: "3. Probate vs Letters of Care (Key Differences)" },
+  { id: "letters-of-administration", label: "4. How Letters of Care Work" },
   { id: "visual-blueprint", label: "5. Visual Guide to the Probate Process" },
   { id: "step-by-step-protocol", label: "6. Step-by-Step Court Process" },
   { id: "four-practice-tracks", label: "7. Types of Probate Cases Handled" },
@@ -53,30 +53,30 @@ const TOC_ITEMS = [
 const FAQS = [
   {
     q: "What is Probate of a Will in simple words?",
-    a: "Probate is an official certificate issued by a court confirming that a Will is genuine and that the executor named in it has full legal power to distribute the deceased person's property (Section 2(f), Indian Succession Act, 1925). It gives banks, housing societies, and property registrars complete confidence that they are dealing with the rightful person.",
+    a: "Probate is an official paper issued by a court confirming that a Will is genuine and that the executor named in it has full legal power to distribute the deceased person's asset (Section 2(f), Indian Succession Act, 1925). It gives banks, housing societies, and asset registrars complete confidence that they are dealing with the rightful person.",
   },
   {
     q: "Is probate required for all Wills across India?",
-    a: "No. Under Sections 57 and 213 of the Indian Succession Act, probate is compulsory by law ONLY for Wills signed in Mumbai, Kolkata, or Chennai, or Wills dealing with real estate in those three cities (for Hindus, Buddhists, Sikhs, and Jains). Outside these cities, probate is voluntary by law, though banks or buyers may sometimes request it for high-value properties.",
+    a: "No. Under Sections 57 and 213 of the Indian Succession Act, probate is needed by law ONLY for Wills signed in Mumbai, Kolkata, or Chennai, or Wills dealing with real estate in those three cities (for Hindus, Buddhists, Sikhs, and Jains). Outside these cities, probate is voluntary by law, though banks or buyers may sometimes request it for high-value assets.",
   },
   {
     q: "Who can apply for probate in court?",
-    a: "Under Section 222 of the Act, only the executor explicitly named in the Will can apply for and receive probate. If no executor was named, or if the executor has passed away, the beneficiaries cannot get probate; they must apply for Letters of Administration with Will Annexed instead.",
+    a: "Under Section 222 of the Act, only the executor explicitly named in the Will can apply for and receive probate. If no executor was named, or if the executor has passed away, the heirs cannot get probate; they must apply for Letters of Care with Will Annexed instead.",
   },
   {
-    q: "What is the difference between Probate and Letters of Administration?",
-    a: "A Probate is granted only when there is a valid Will and an active named executor. Letters of Administration are granted by the court when either: (1) The person died without any Will at all, or (2) There is a Will, but no executor was appointed (or the executor has passed away). Both documents give official court authority to manage and distribute the estate.",
+    q: "What is the difference between Probate and Letters of Care?",
+    a: "A Probate is granted only when there is a valid Will and an active named executor. Letters of Care are granted by the court when either: (1) The person died without any Will at all, or (2) There is a Will, but no executor was appointed (or the executor has passed away). Both papers give official court office to manage and distribute the estate.",
   },
   {
     q: "How much is the court fee for probate in Mumbai?",
-    a: "In Mumbai (Maharashtra), probate fees are calculated as a percentage of the property value, but the government has capped the maximum court fee at ₹75,000 under the Maharashtra Court Fees Act. This protects families with large estates from paying huge court fees.",
+    a: "In Mumbai (Maharashtra), probate fees are calculated as a percentage of the asset value, but the government has capped the maximum court fee at ₹75,000 under the Maharashtra Court Fees Act. This protects families with large estates from paying huge court fees.",
   },
   {
     q: "How long does it take to get probate from court?",
     a: "If no family member objects (uncontested), it typically takes 5 to 9 months in most courts. If a disgruntled relative files an objection (a caveat), the case turns into a regular civil trial, which can take 18 to 36 months.",
   },
   {
-    q: "Can a relative challenge the Will during the probate case?",
+    q: "Can a relative fight the Will during the probate case?",
     a: "Yes. When a probate case is filed, the court issues public newspaper notices and sends summons to all legal heirs. Any heir who feels cheated can file an objection (called a Caveat under Section 284) within the 30-day notice window. The court will then hear their arguments before deciding whether to approve the Will.",
   },
   {
@@ -85,11 +85,11 @@ const FAQS = [
   },
   {
     q: "What happens if the original Will is lost or damaged?",
-    a: "Under Section 237 of the Indian Succession Act, a court can grant probate based on a photocopy or carbon copy of a lost Will, provided the family can prove that the original was genuinely executed and was not cancelled or destroyed by the deceased.",
+    a: "Under Section 237 of the Indian Succession Act, a court can grant probate based on a photocopy or carbon copy of a lost Will, provided the family can prove that the original was genuinely signed and was not cancelled or destroyed by the deceased.",
   },
   {
     q: "Do banks always require probate to release money?",
-    a: "Not always. For smaller bank accounts with registered nominees, banks usually release the funds upon receiving a death certificate, nominee KYC, and an indemnity bond. However, if the balance is large (e.g. over ₹25 Lakhs) or if multiple family members make conflicting claims, banks will demand a court probate for safety.",
+    a: "Not always. For smaller bank accounts with filed nominees, banks usually release the funds upon receiving a death paper, nominee KYC, and an indemnity bond. However, if the balance is large (e.g. over ₹25 Lakhs) or if multiple family members make conflicting claims, banks will demand a court probate for safety.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function ProbateLawyerClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -161,7 +161,7 @@ export default function ProbateLawyerClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Secure your legal title with confidence. We file uncontested probate petitions, defend contested Wills, and obtain Letters of Administration across High Courts and District Courts nationwide.
+            Secure your legal title with confidence. We file uncontested probate petitions, defend contested Wills, and obtain Letters of Care across High Courts and District Courts nationwide.
           </p>
 
           {/* CTA Buttons */}
@@ -196,7 +196,7 @@ export default function ProbateLawyerClient() {
                 18+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Testamentary Counsel
+                Will Counsel
               </span>
             </div>
 
@@ -256,7 +256,7 @@ export default function ProbateLawyerClient() {
                   1,300+
                 </span>
                 <span className="text-[9px] sm:text-[10px] uppercase tracking-wider text-[#55636D] font-semibold">
-                  Verified Reviews
+                  Checked Reviews
                 </span>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function ProbateLawyerClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Sections 2(f), 57, 213, 218, 222, and 276 of the Indian Succession Act, 1925.
@@ -328,25 +328,25 @@ export default function ProbateLawyerClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Definition:</strong> Under Section 2(f) of the Indian Succession Act, probate is the certified court copy of a Will granting estate administration.
+                    <strong>Legal Definition:</strong> Under Section 2(f) of the Indian Succession Act, probate is the certified court copy of a Will granting estate care.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory Presidency Jurisdictions:</strong> Wills executed or covering immovable property in Mumbai, Kolkata, and Chennai require mandatory probate under Section 57 and Section 213.
+                    <strong>Needed Presidency Areas:</strong> Wills signed or covering land asset in Mumbai, Kolkata, and Chennai require needed probate under Section 57 and Section 213.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Executor Exclusive Standing:</strong> Under Section 222, only the executor named in the Will can apply for probate. Legal heirs apply for Letters of Administration if no executor is active.
+                    <strong>Executor Exclusive Standing:</strong> Under Section 222, only the executor named in the Will can apply for probate. Legal heirs apply for Letters of Care if no executor is active.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Conclusive Title Proof:</strong> A grant of probate operates in rem under Section 216. It binds the entire world and protects banks, buyers, and registrars from conflicting claims.
+                    <strong>Strong Title Proof:</strong> A grant of probate operates in rem under Section 216. It binds the entire world and protects banks, buyers, and registrars from conflicting claims.
                   </span>
                 </li>
               </ul>
@@ -359,17 +359,17 @@ export default function ProbateLawyerClient() {
                 <span>SECTION 2(F) &amp; SECTION 222 OF ISA 1925</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                1. Statutory Framework: Definition of Probate in India
+                1. Legal Framework: Definition of Probate in India
               </h2>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Probate is an official court order. It proves that a Will is genuine. Under Section 2(f) of the Indian Succession Act, 1925, probate gives the executor full legal power to manage the estate. The court issues a certified copy of the Will under its official seal.
                 </p>
                 <p>
-                  The court does not change the Will. It only checks if the person signed the Will freely. The court also checks if the person had a sound mind. Two adult witnesses must attest the signature under Section 63. Once granted, probate protects the executor. It confirms their legal authority over all assets.
+                  The court does not change the Will. It only checks if the person signed the Will freely. The court also checks if the person had a sound mind. Two adult witnesses must attest the signature under Section 63. Once granted, probate protects the executor. It confirms their legal office over all assets.
                 </p>
                 <p>
-                  Under Section 222, only the executor named in the Will can apply for probate. If no executor is named, the heirs must apply for Letters of Administration instead.
+                  Under Section 222, only the executor named in the Will can apply for probate. If no executor is named, the heirs must apply for Letters of Care instead.
                 </p>
               </div>
             </section>
@@ -381,17 +381,17 @@ export default function ProbateLawyerClient() {
                 <span>SECTIONS 57 &amp; 213: TERRITORIAL JURISDICTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Mandatory Jurisdictions: High Court vs District Court
+                2. Needed Areas: High Court vs District Court
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Whether you need probate depends on where the property is. Under Section 57 and Section 213 of the Indian Succession Act, probate is mandatory for Hindu, Buddhist, Sikh, and Jain Wills in two cases.
+                  Whether you need probate depends on where the asset is. Under Section 57 and Section 213 of the Indian Succession Act, probate is needed for Hindu, Buddhist, Sikh, and Jain Wills in two cases.
                 </p>
                 <p>
                   First, the Will was signed in Mumbai, Kolkata, or Chennai. Second, the Will deals with land or buildings located inside Mumbai, Kolkata, or Chennai.
                 </p>
                 <p>
-                  In other cities like Delhi, Bengaluru, and Pune, probate is not mandatory by law. Even so, banks, housing societies, and buyers often ask for probate. They need court proof before they release large assets.
+                  In other cities like Delhi, Bengaluru, and Pune, probate is not needed by law. Even so, banks, housing societies, and buyers often ask for probate. They need court proof before they release large assets.
                 </p>
               </div>
 
@@ -399,14 +399,14 @@ export default function ProbateLawyerClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs mt-4">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Testamentary Court Jurisdiction Matrix Across India
+                    Will Court Area Matrix Across India
                   </div>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs text-left text-slate-700">
                     <thead className="bg-slate-100 text-slate-900 font-bold border-b border-slate-200 uppercase tracking-wider">
                       <tr>
-                        <th className="px-4 py-3">Jurisdiction</th>
+                        <th className="px-4 py-3">Area</th>
                         <th className="px-4 py-3">Competent Forum</th>
                         <th className="px-4 py-3">Legal Basis</th>
                         <th className="px-4 py-3">Probate Status</th>
@@ -417,19 +417,19 @@ export default function ProbateLawyerClient() {
                         <td className="px-4 py-3 font-semibold text-slate-900">Mumbai (Ordinary Original)</td>
                         <td className="px-4 py-3">Bombay High Court (Original Side)</td>
                         <td className="px-4 py-3">Section 57(a) &amp; 213 ISA</td>
-                        <td className="px-4 py-3 text-rose-700 font-bold">Mandatory by Law</td>
+                        <td className="px-4 py-3 text-rose-700 font-bold">Needed by Law</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Kolkata (Presidency Limits)</td>
                         <td className="px-4 py-3">Calcutta High Court (Original Side)</td>
                         <td className="px-4 py-3">Section 57(a) &amp; 213 ISA</td>
-                        <td className="px-4 py-3 text-rose-700 font-bold">Mandatory by Law</td>
+                        <td className="px-4 py-3 text-rose-700 font-bold">Needed by Law</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Chennai (City Limits)</td>
                         <td className="px-4 py-3">Madras High Court (Original Side)</td>
                         <td className="px-4 py-3">Section 57(a) &amp; 213 ISA</td>
-                        <td className="px-4 py-3 text-rose-700 font-bold">Mandatory by Law</td>
+                        <td className="px-4 py-3 text-rose-700 font-bold">Needed by Law</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Delhi &amp; NCR</td>
@@ -456,11 +456,11 @@ export default function ProbateLawyerClient() {
                 <span>COMPARISON MATRIX: TESTAMENTARY INSTRUMENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. Legal Pathways: Probate vs Letters of Administration
+                3. Legal Pathways: Probate vs Letters of Care
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Choosing the right court petition saves both time and legal fees. Many families confuse Probate with Letters of Administration. They also confuse it with Succession Certificates.
+                  Choosing the right court petition saves both time and legal fees. Many families confuse Probate with Letters of Care. They also confuse it with Estate Papers.
                 </p>
                 <p>
                   Review the guide below. It helps you find the right court process for your family estate.
@@ -470,7 +470,7 @@ export default function ProbateLawyerClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    Testamentary Legal Instrument Comparison
+                    Will Legal Instrument Comparison
                   </div>
                 </div>
                 <div className="overflow-x-auto">
@@ -481,7 +481,7 @@ export default function ProbateLawyerClient() {
                         <th className="px-4 py-3">Probate of Will</th>
                         <th className="px-4 py-3">Letters of Admin (Will)</th>
                         <th className="px-4 py-3">Letters of Admin (No Will)</th>
-                        <th className="px-4 py-3">Succession Certificate</th>
+                        <th className="px-4 py-3">Estate Paper</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
@@ -494,9 +494,9 @@ export default function ProbateLawyerClient() {
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Will Required?</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">Yes (Mandatory)</td>
-                        <td className="px-4 py-3 text-emerald-700 font-bold">Yes (Mandatory)</td>
-                        <td className="px-4 py-3 text-rose-700 font-bold">No (Intestate Demise)</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">Yes (Needed)</td>
+                        <td className="px-4 py-3 text-emerald-700 font-bold">Yes (Needed)</td>
+                        <td className="px-4 py-3 text-rose-700 font-bold">No (No-Will Demise)</td>
                         <td className="px-4 py-3 text-slate-600">Either (Usually No Will)</td>
                       </tr>
                       <tr>
@@ -508,10 +508,10 @@ export default function ProbateLawyerClient() {
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Asset Coverage</td>
-                        <td className="px-4 py-3 text-emerald-700 font-semibold">Movable &amp; Immovable</td>
-                        <td className="px-4 py-3 text-emerald-700 font-semibold">Movable &amp; Immovable</td>
-                        <td className="px-4 py-3 text-emerald-700 font-semibold">Movable &amp; Immovable</td>
-                        <td className="px-4 py-3 text-rose-700 font-semibold">Movable Debts Only</td>
+                        <td className="px-4 py-3 text-emerald-700 font-semibold">Cash &amp; Land</td>
+                        <td className="px-4 py-3 text-emerald-700 font-semibold">Cash &amp; Land</td>
+                        <td className="px-4 py-3 text-emerald-700 font-semibold">Cash &amp; Land</td>
+                        <td className="px-4 py-3 text-rose-700 font-semibold">Cash Debts Only</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-semibold text-slate-900">Surety Bond Needed?</td>
@@ -540,28 +540,28 @@ export default function ProbateLawyerClient() {
                 <span>SECTION 218 &amp; SECTION 232 PROCEDURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                4. Letters of Administration: Estates Without an Executor
+                4. Letters of Care: Estates Without an Executor
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Letters of Administration help when probate is not an option. Under Indian law, families need this court order in two situations.
+                  Letters of Care help when probate is not an option. Under Indian law, families need this court order in two situations.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
-                    <h4 className="font-bold text-slate-900 text-sm mb-1">Letters of Administration with Will Annexed</h4>
+                    <h4 className="font-bold text-slate-900 text-sm mb-1">Letters of Care with Will Annexed</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      First, the deceased left a valid Will, but did not name an executor. It also applies if the executor died or stepped down. This is called Letters of Administration with Will Annexed under Section 232.
+                      First, the deceased left a valid Will, but did not name an executor. It also applies if the executor died or stepped down. This is called Letters of Care with Will Annexed under Section 232.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-white border border-slate-200">
-                    <h4 className="font-bold text-slate-900 text-sm mb-1">Intestate Letters of Administration</h4>
+                    <h4 className="font-bold text-slate-900 text-sm mb-1">No-Will Letters of Care</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Second, the person died without leaving any Will. The court appoints an administrator to divide the estate among legal heirs under Section 218.
+                      Second, the person died without leaving any Will. The court appoints an head to divide the estate among legal heirs under Section 218.
                     </p>
                   </div>
                 </div>
                 <p>
-                  An administrator must sign a court bond with sureties under Section 291. This bond makes sure that the administrator protects the assets. It ensures they divide them fairly.
+                  An head must sign a court bond with sureties under Section 291. This bond makes sure that the head protects the assets. It ensures they divide them fairly.
                 </p>
               </div>
             </section>
@@ -573,7 +573,7 @@ export default function ProbateLawyerClient() {
                 <span>VISUAL COURT PROTOCOL BLUEPRINT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                5. Visual Blueprint: End to End Probate Court Procedure
+                5. Visual Blueprint: End to End Probate Court Step
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The diagram below shows the four main stages of the probate process in India. It guides you from checking court rules to getting the final grant under the official court seal.
@@ -593,7 +593,7 @@ export default function ProbateLawyerClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: High Court testamentary petition file, advocate desk, and grant of probate under court seal
+                    Figure 1.1: High Court Will petition file, lawyer desk, and grant of probate under court seal
                   </span>
                   <Link
                     href="/images/probate-lawyer-og.jpg"
@@ -624,10 +624,10 @@ export default function ProbateLawyerClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-base text-slate-900 mb-1">
-                      Document Audit &amp; Legal Heir Family Tree Verification
+                      Paper Audit &amp; Legal Heir Family Tree Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our advocates check the original Will, death certificate, and property papers. We also prepare a complete family tree of all legal heirs.
+                      Our lawyers check the original Will, death paper, and asset papers. We also prepare a complete family tree of all legal heirs.
                     </p>
                   </div>
                 </div>
@@ -639,10 +639,10 @@ export default function ProbateLawyerClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-base text-slate-900 mb-1">
-                      Drafting the Petition &amp; Witness Verification Affidavit
+                      Drafting the Petition &amp; Witness Check Sworn Note
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      We draft the probate petition under Section 276. At least one attesting witness must sign a court affidavit under Section 281 to confirm the signing.
+                      We draft the probate petition under Section 276. At least one signing witness must sign a court sworn note under Section 281 to confirm the signing.
                     </p>
                   </div>
                 </div>
@@ -654,10 +654,10 @@ export default function ProbateLawyerClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-base text-slate-900 mb-1">
-                      Court Filing &amp; Valuation by District Revenue Collector
+                      Court Filing &amp; Price Check by District Revenue Collector
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      We file the case in the High Court or District Court. The court checks the papers. It asks the local revenue officer for a property valuation report.
+                      We file the case in the High Court or District Court. The court checks the papers. It asks the local revenue officer for a asset price check report.
                     </p>
                   </div>
                 </div>
@@ -684,7 +684,7 @@ export default function ProbateLawyerClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-base text-slate-900 mb-1">
-                      Recording Attesting Witness Evidence in Court
+                      Recording Signing Witness Evidence in Court
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       If no one objects, the witness appears in court. The witness confirms that the person signed the Will freely. They confirm the person was in good health.
@@ -725,7 +725,7 @@ export default function ProbateLawyerClient() {
                     <h3 className="font-bold text-slate-900 text-base">Uncontested Fast-Track Probate</h3>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    This fast track suits families where all heirs agree. We prepare no-objection affidavits. This helps secure the court grant within 5 to 7 months.
+                    This fast track suits families where all heirs agree. We prepare no-objection sworn notes. This helps secure the court grant within 5 to 7 months.
                   </p>
                 </div>
 
@@ -742,10 +742,10 @@ export default function ProbateLawyerClient() {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-[#172228]">
                     <Users className="w-5 h-5" />
-                    <h3 className="font-bold text-slate-900 text-base">Letters of Administration</h3>
+                    <h3 className="font-bold text-slate-900 text-base">Letters of Care</h3>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    We help heirs apply for court administration when there is no Will. We also help when there is no active executor. We manage court bonds and asset division.
+                    We help heirs apply for court care when there is no Will. We also help when there is no active executor. We manage court bonds and asset division.
                   </p>
                 </div>
 
@@ -782,16 +782,16 @@ export default function ProbateLawyerClient() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs mt-4">
                 <div className="bg-[#172228] px-5 py-3 text-white">
                   <div className="font-bold text-sm tracking-wide">
-                    State-Wise Probate Court Fee Schedules &amp; Statutory Limits
+                    State-Wise Probate Court Fee Schedules &amp; Legal Limits
                   </div>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs text-left text-slate-700">
                     <thead className="bg-slate-100 text-slate-900 font-bold border-b border-slate-200 uppercase tracking-wider">
                       <tr>
-                        <th className="px-4 py-3">State / Jurisdiction</th>
+                        <th className="px-4 py-3">State / Area</th>
                         <th className="px-4 py-3">Ad Valorem Fee Rate</th>
-                        <th className="px-4 py-3">Statutory Maximum Cap</th>
+                        <th className="px-4 py-3">Legal Maximum Cap</th>
                         <th className="px-4 py-3">Governing Act</th>
                       </tr>
                     </thead>
@@ -854,8 +854,8 @@ export default function ProbateLawyerClient() {
                 <div className="divide-y divide-slate-100 bg-white text-xs">
                   <div className="p-4 flex flex-col sm:flex-row justify-between sm:items-center gap-2 bg-rose-50/40">
                     <div>
-                      <div className="font-bold text-slate-900">Stage 1: Petition Preparation &amp; Affidavit Attestation</div>
-                      <div className="text-slate-500 text-[11px]">Drafting under Section 276, witness verification affidavit, asset schedules</div>
+                      <div className="font-bold text-slate-900">Stage 1: Petition Preparation &amp; Sworn Note Witness Signing</div>
+                      <div className="text-slate-500 text-[11px]">Drafting under Section 276, witness check sworn note, asset schedules</div>
                     </div>
                     <div className="font-mono font-bold text-[#C65378] text-sm shrink-0">Weeks 1 to 3</div>
                   </div>
@@ -869,14 +869,14 @@ export default function ProbateLawyerClient() {
                   <div className="p-4 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                     <div>
                       <div className="font-bold text-slate-900">Stage 3: Citations, Newspaper Notices &amp; Collector Report</div>
-                      <div className="text-slate-500 text-[11px]">Service on natural heirs, 30-day publication window, circle rate valuation</div>
+                      <div className="text-slate-500 text-[11px]">Service on natural heirs, 30-day publication window, circle rate price check</div>
                     </div>
                     <div className="font-mono font-bold text-slate-700 text-sm shrink-0">Months 2 to 4</div>
                   </div>
                   <div className="p-4 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                     <div>
-                      <div className="font-bold text-slate-900">Stage 4: Recording Evidence of Attesting Witness</div>
-                      <div className="text-slate-500 text-[11px]">Formal deposition proving testamentary capacity and signature</div>
+                      <div className="font-bold text-slate-900">Stage 4: Recording Evidence of Signing Witness</div>
+                      <div className="text-slate-500 text-[11px]">Formal deposition proving Will capacity and signature</div>
                     </div>
                     <div className="font-mono font-bold text-slate-700 text-sm shrink-0">Months 4 to 6</div>
                   </div>
@@ -937,7 +937,7 @@ export default function ProbateLawyerClient() {
                     <h3 className="font-bold text-slate-900 text-sm">Overseas NRI Executors &amp; Foreign Wills</h3>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    NRI executors can sign a power of attorney abroad. Our advocates then handle all court hearings in India on their behalf.
+                    NRI executors can sign a power of attorney abroad. Our lawyers then handle all court hearings in India on their behalf.
                   </p>
                 </div>
               </div>
@@ -950,7 +950,7 @@ export default function ProbateLawyerClient() {
                 <span>AMA LEGAL SOLUTIONS ADVOCATES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                11. Legal Representation: Expert Succession Advocates
+                11. Legal Representation: Expert Estate Lawyers
               </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
@@ -971,7 +971,7 @@ export default function ProbateLawyerClient() {
                   </div>
                 </div>
                 <p>
-                  You may need a quick uncontested grant. Or you may need strong courtroom defense. Our advocates protect your rights with full privacy.
+                  You may need a quick uncontested grant. Or you may need strong courtroom defense. Our lawyers protect your rights with full privacy.
                 </p>
               </div>
             </section>
@@ -986,7 +986,7 @@ export default function ProbateLawyerClient() {
                 Frequently Asked Questions: Probate Law in India
               </h3>
               <p className="text-xs sm:text-sm text-slate-600">
-                Explore definitive answers prepared by senior succession advocates regarding probate procedures, costs, and court timelines:
+                Explore definitive answers prepared by senior estate lawyers regarding probate steps, costs, and court timelines:
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1030,36 +1030,36 @@ export default function ProbateLawyerClient() {
                 <span>AUTHORITY REFERENCES &amp; INTERNAL RESOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                Statutory Citations: Indian Succession Act Provisions
+                Legal Citations: Indian Succession Act Rules
               </h3>
 
               <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc pl-5">
                 <li>
-                  <strong>Section 2(f), Indian Succession Act, 1925:</strong> Statutory definition of probate as court-certified copy with grant of administration.
+                  <strong>Section 2(f), Indian Succession Act, 1925:</strong> Legal definition of probate as court-certified copy with grant of care.
                 </li>
                 <li>
-                  <strong>Sections 57 &amp; 213, Indian Succession Act, 1925:</strong> Mandatory probate requirements for Presidency towns (Mumbai, Kolkata, Chennai).
+                  <strong>Sections 57 &amp; 213, Indian Succession Act, 1925:</strong> Needed probate rules for Presidency towns (Mumbai, Kolkata, Chennai).
                 </li>
                 <li>
-                  <strong>Section 216, Indian Succession Act, 1925:</strong> Conclusive effect of grant in rem against all parties.
+                  <strong>Section 216, Indian Succession Act, 1925:</strong> Strong effect of grant in rem against all parties.
                 </li>
                 <li>
-                  <strong>Section 218 &amp; 232, Indian Succession Act, 1925:</strong> Grant of Letters of Administration for intestate estates and absent executors.
+                  <strong>Section 218 &amp; 232, Indian Succession Act, 1925:</strong> Grant of Letters of Care for no-Will estates and absent executors.
                 </li>
                 <li>
                   <strong>Section 222, Indian Succession Act, 1925:</strong> Probate grant strictly restricted to named executors.
                 </li>
                 <li>
-                  <strong>Section 276 &amp; 281, Indian Succession Act, 1925:</strong> Mandatory contents of probate petition and attesting witness verification.
+                  <strong>Section 276 &amp; 281, Indian Succession Act, 1925:</strong> Needed contents of probate petition and signing witness check.
                 </li>
                 <li>
-                  <strong>Section 284, Indian Succession Act, 1925:</strong> Lodging caveats and conversion into contested testamentary suits.
+                  <strong>Section 284, Indian Succession Act, 1925:</strong> Lodging caveats and conversion into contested Will suits.
                 </li>
               </ul>
 
               <div className="pt-4 space-y-3">
                 <div className="text-xs font-bold uppercase tracking-wider text-slate-700">
-                  Related Succession Tools &amp; Service Pages
+                  Related Estate Tools &amp; Service Pages
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Link
@@ -1072,7 +1072,7 @@ export default function ProbateLawyerClient() {
                     href="/services/succession-certificate"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Succession Certificate Lawyer &rarr;
+                    Estate Paper Lawyer &rarr;
                   </Link>
                   <Link
                     href="/services/nri-will-india"
@@ -1084,13 +1084,13 @@ export default function ProbateLawyerClient() {
                     href="/services/will-registration"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Will Registration Service &rarr;
+                    Will Filing Service &rarr;
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Succession Calculator &rarr;
+                    Estate Tool &rarr;
                   </Link>
                   <Link
                     href="/templates/will-format-india"
@@ -1101,7 +1101,29 @@ export default function ProbateLawyerClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Action CTAs)
@@ -1121,21 +1143,21 @@ export default function ProbateLawyerClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in High Court testamentary petitions, probate litigation, and cross-border estate administration at AMA Legal Solutions.
+                Bar Council enrolled lawyer with 18+ years of expertise in High Court Will petitions, probate court fights, and cross-border estate care at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Counsel</span>
+                  <span>Checked Legal Counsel</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1157,16 +1179,16 @@ export default function ProbateLawyerClient() {
                 <span>CONFIDENTIAL &amp; PRIVILEGED</span>
               </div>
               <h3 className="text-lg font-bold leading-snug">
-                Need Help with Probate or Letters of Administration?
+                Need Help with Probate or Letters of Care?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Speak directly with our senior testamentary counsel. We evaluate your Will, assess court jurisdiction, and outline the exact legal costs within 24 hours.
+                Speak directly with our senior Will counsel. We evaluate your Will, assess court area, and outline the exact legal costs within 24 hours.
               </p>
               <Link
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C65378] text-white font-bold text-sm hover:bg-[#a13c5d] transition-all transform hover:-translate-y-0.5 shadow-md cursor-pointer"
               >
-                <span>Book Advocate Case Evaluation</span>
+                <span>Book Lawyer Case Evaluation</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <div className="pt-1">
@@ -1175,7 +1197,7 @@ export default function ProbateLawyerClient() {
                   onClick={handleStartDraft}
                   className="text-xs text-slate-300 hover:text-white underline underline-offset-2"
                 >
-                  Or draft a challenge-proof Will online &rarr;
+                  Or draft a fight-proof Will online &rarr;
                 </a>
               </div>
             </div>
@@ -1195,13 +1217,13 @@ export default function ProbateLawyerClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>100% Transparent Fees:</strong> Fixed fee agreements with no hidden litigation overheads.
+                    <strong>100% Transparent Fees:</strong> Fixed fee agreements with no hidden court fights overheads.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Caveat &amp; Dispute Defense:</strong> Proven track record defending contested Wills.
+                    <strong>Caveat &amp; Fight Defense:</strong> Proven track record defending contested Wills.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1216,7 +1238,7 @@ export default function ProbateLawyerClient() {
             {/* CARD 4: RELATED TOOLS */}
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">
-                Testamentary Diagnostic Tools
+                Will Diagnostic Tools
               </h4>
               <div className="space-y-2">
                 <Link
@@ -1232,7 +1254,7 @@ export default function ProbateLawyerClient() {
                   href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Certificate Service</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Paper Service</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Court petitions for bank deposits and shares &rarr;
                   </div>
@@ -1241,7 +1263,7 @@ export default function ProbateLawyerClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Hindu Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Hindu Succession Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares under Section 8 &rarr;
                   </div>
@@ -1273,19 +1295,19 @@ export default function ProbateLawyerClient() {
                   href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Certificate Lawyers
+                  Estate Paper Lawyers
                 </Link>
                 <Link
                   href="/tools/succession-certificate-court-fee-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Court Fee Calculator India
+                  Court Fee Tool India
                 </Link>
                 <Link
                   href="/blogs/how-to-challenge-a-will-in-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  How to Challenge a Will
+                  How to Fight a Will
                 </Link>
               </div>
             </div>

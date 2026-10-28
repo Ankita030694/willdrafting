@@ -21,7 +21,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive statutory court fee calculator for probate and Letters of Administration in India under Court Fees Act 1870. Compare state ad valorem rates, the Mumbai ₹75,000 cap, Delhi 4% uncapped fee, citation costs, and High Court timelines.",
+      "Free legal court fee tool for probate and Letters of Care in India under Court Fees Act 1870. Compare state ad valorem rates, the Mumbai ₹75,000 cap, Delhi 4% uncapped fee, citation costs, and High Court timelines.",
     meta: "Court Fees Act 1870 • Bombay Court Fees Act • ISA 1925 ss. 57 & 213",
     keywords: [
       "probate court fee calculator india",
@@ -45,7 +45,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive asset detective roadmap to find deceased parents bank accounts, mutual funds, demat shares, IEPF, and insurance policies across 8 official Indian statutory portals.",
+      "Free asset detective roadmap to find deceased parents bank accounts, mutual funds, demat shares, IEPF, and insurance policies across 8 official Indian statutory portals.",
     meta: "RBI UDGAM • Section 159 Legal Heir AIS • CAMS/KFintech CAS • IEPF",
     keywords: [
       "how to find deceased parents bank accounts and investments india",
@@ -71,7 +71,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive post-death legal compliance checklist and statutory deadline calculator under Registration of Births and Deaths Act 1969, Central Motor Vehicles Rules Form 31, and Income Tax Act Section 159. Track 21-day death certificates, RTO notices, and bank claims.",
+      "Free post-death legal compliance checklist and legal deadline tool under Filing of Births and Deaths Act 1969, Central Motor Vehicles Rules Form 31, and Income Tax Act Section 159. Track 21-day death papers, RTO notices, and bank claims.",
     meta: "RBD Act 1969 • CMVR Rule 56 Form 31 • Income Tax s. 159",
     keywords: [
       "what to do after death of family member in india checklist",
@@ -96,7 +96,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive minor child inheritance rules tool comparing Section 9 HMGA testamentary guardianship vs Indian Trusts Act private trusts. Model staggered payouts at 18, 21, 25, 30, bypass Section 8 court lockups, and generate protective Will clauses.",
+      "Free minor child estate rules tool comparing Section 9 HMGA Will child care vs Indian Trusts Act private trusts. Model staggered payouts at 18, 21, 25, 30, bypass Section 8 court lockups, and generate protective Will clauses.",
     meta: "HMGA 1956 ss. 6 & 9 • Indian Trusts Act • MWP Act s. 6",
     keywords: [
       "minor child inheritance rules india",
@@ -119,7 +119,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive cooperative housing society flat transfer document checker under Maharashtra MCS Act Section 154B-13 and Model Bye-Laws. Check Appendix Forms 14-19, nominee trustee rights, fee caps, and probate rules.",
+      "Free cooperative housing society flat transfer paper checker under Maharashtra MCS Act Section 154B-13 and Model Bye-Laws. Check Appendix Forms 14-19, nominee trustee rights, fee caps, and probate rules.",
     meta: "MCS Act s. 154B-13 • Forms 14-19 • Supreme Court Indrani Wahi",
     keywords: [
       "cooperative housing society flat transfer after death documents",
@@ -143,7 +143,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Assess whether your Will can be challenged in Indian court under Indian Succession Act ss. 59, 61, 63, and landmark Supreme Court rulings. Quantify judicial litigation risk, Class I heir disinheritance red flags, and 5-point fortification steps.",
+      "Assess whether your Will can be challenged in Indian court under Indian Succession Act ss. 59, 61, 63, and landmark Supreme Court rulings. Quantify judicial court fights risk, Class I heir leaving out red flags, and 5-point fortification steps.",
     meta: "ISA ss. 59, 61, 63 • Kavita Kanwar 2020 SC • 5 Fortification Safeguards",
     keywords: [
       "can my will be challenged in court india",
@@ -215,7 +215,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Interactive 90-day executor timeline generator under Indian Succession Act ss. 316-369 and IT Act s. 159. Calculate milestone dates for funeral expenses, bank freezing, probate filings, and Section 332 assent.",
+      "Free 90-day executor timeline generator under Indian Succession Act ss. 316-369 and IT Act s. 159. Calculate milestone dates for funeral expenses, bank freezing, probate filings, and Section 332 assent.",
     meta: "ISA ss. 316-369 • Section 159 ITR • 90-Day SOP",
     keywords: [
       "executor of will checklist india",
@@ -238,7 +238,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "27-10-2026",
     description:
-      "Check if property is ancestral or self-acquired under the Hindu Succession Act. Trace title provenance across Section 8 vs Section 6, partition deeds, and verify 100% testamentary Will rights.",
+      "Check if asset is family or self-acquired under the Hindu Succession Act. Trace title provenance across Section 8 vs Section 6, split deeds, and verify 100% Will Will rights.",
     meta: "Section 8 vs Section 6 • 100% Will Rights",
     keywords: [
       "how to check if property is ancestral or self acquired",
@@ -260,7 +260,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Check if parents can cancel a registered gift deed under Section 23 of the Senior Citizens Act. Evaluate the 4 statutory conditions and Supreme Court rulings in Urmila Dixit (2025) and Sudesh Chhikara.",
+      "Check if parents can cancel a filed gift deed under Section 23 of the Senior Citizens Act. Evaluate the 4 legal conditions and Supreme Court rulings in Urmila Dixit (2025) and Sudesh Chhikara.",
     meta: "Section 23 MWPSC Act • Urmila Dixit (2025)",
     keywords: [
       "can parents cancel gift deed eligibility checker",
@@ -282,7 +282,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Calculate Section 195 TDS on NRI property sale, Form 13 lower tax savings, and RBI USD 1M repatriation via 15CA/15CB under Indian Income Tax Act.",
+      "Calculate Section 195 TDS on NRI asset sale, Form 13 lower tax savings, and RBI USD 1M sending cash home via 15CA/15CB under Indian Income Tax Act.",
     meta: "Section 195 vs Form 13 Savings • FEMA USD 1M",
     keywords: [
       "nri inherited property sale tds calculator",
@@ -304,8 +304,8 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Diagnostic 4-click tool to identify whether your family needs a Legal Heir Certificate, Succession Certificate, Probate, or Surviving Member Certificate across bank, demat, and property claims.",
-    meta: "4-Click Diagnostic & Statutory Rules",
+      "Diagnostic 4-click tool to identify whether your family needs a Legal Heir Paper, Estate Paper, Probate, or Surviving Member Paper across bank, demat, and asset claims.",
+    meta: "4-Click Diagnostic & Legal Rules",
     keywords: [
       "do i need succession certificate or legal heir certificate",
       "which certificate is required after death in india",
@@ -326,7 +326,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Run a 12-question statutory audit to check if your Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get a 0 to 100 Court-Defensibility Score.",
+      "Run a 12-question legal audit to check if your Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get a 0 to 100 Court-Defensibility Score.",
     meta: "Section 63 & 67 Audit • 0-100 Score",
     keywords: [
       "check if will is valid in india",
@@ -348,8 +348,8 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Calculate 2-stage HUF ancestral property division under Section 6 notional partition, daughter equal rights (Vineeta Sharma), and Section 30 Will bequests.",
-    meta: "Section 6 Notional Partition • Section 30 Will",
+      "Calculate 2-stage HUF family asset division under Section 6 notional split, daughter equal rights (Vineeta Sharma), and Section 30 Will bequests.",
+    meta: "Section 6 Notional Split • Section 30 Will",
     keywords: [
       "huf property share calculator",
       "ancestral property share calculator india",
@@ -370,7 +370,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-emerald-50 text-emerald-800 border-emerald-200/80",
     date: "26-10-2026",
     description:
-      "Calculate Islamic legal heir shares under Muslim Personal Law (Shariat) Application Act, 1937. Compute Sunni Hanafi and Shia rules, 1/3rd Wasiyat bequests, Zawil Furuz, Asabah, and Aul/Radd adjustments.",
+      "Calculate Islamic legal heir shares under Muslim Personal Law (Shariat) Form Act, 1937. Compute Sunni Hanafi and Shia rules, 1/3rd Wasiyat bequests, Zawil Furuz, Asabah, and Aul/Radd adjustments.",
     meta: "Sunni & Shia Faraid • 1/3 Wasiyat Slider",
     keywords: [
       "muslim inheritance calculator india",
@@ -412,7 +412,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Interactive SEBI demat and AMFI mutual fund transmission document finder. Instantly identify Form ISR-5, AMFI T2/T3, simplified ₹15L/₹5L limits, and succession certificate requirements.",
+      "Free SEBI demat and AMFI mutual fund transfer paper finder. Instantly identify Form ISR-5, AMFI T2/T3, simplified ₹15L/₹5L limits, and estate paper rules.",
     meta: "SEBI ₹15L & ₹5L Thresholds • Form ISR-5 & T2/T3",
     keywords: [
       "demat transmission documents checker sebi",
@@ -456,8 +456,8 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
     date: "26-10-2026",
     description:
-      "Generate bank deceased claim document checklists across top 12 Indian banks. Compare RBI simplified indemnity limits (₹5L to ₹10L) vs succession certificates.",
-    meta: "RBI 15-Day Settlement & Annexures",
+      "Generate bank deceased claim paper checklists across top 12 Indian banks. Compare RBI simplified indemnity limits (₹5L to ₹10L) vs estate papers.",
+    meta: "RBI 15-Day Deal & Annexures",
     keywords: [
       "bank deceased claim documents checklist",
       "sbi deceased claim calculator documents",
@@ -476,7 +476,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-blue-50 text-blue-700 border-blue-200/80",
     date: "18-10-2026",
     description:
-      "Calculate exact intestate heir shares under Hindu Succession Act (Sec 8 & 15), Muslim 1/3 Wasiyat rules, and Christian/Parsi succession.",
+      "Calculate exact no-Will heir shares under Hindu Succession Act (Sec 8 & 15), Muslim 1/3 Wasiyat rules, and Christian/Parsi estate.",
     meta: "Hindu, Muslim, Christian & Parsi Law",
     keywords: [
       "succession calculator",
@@ -502,7 +502,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-blue-50 text-blue-700 border-blue-200/80",
     date: "20-10-2026",
     description:
-      "Calculate state-wise succession certificate court fees and ad valorem stamp duty across Delhi, Maharashtra, Karnataka, and all Indian High Courts.",
+      "Calculate state-wise estate paper court fees and ad valorem stamp duty across Delhi, Maharashtra, Karnataka, and all Indian High Courts.",
     meta: "State-Wise Ad Valorem Rates & Caps",
     keywords: [
       "court fee calculator",
@@ -525,8 +525,8 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-purple-50 text-purple-700 border-purple-200/80",
     date: "20-10-2026",
     description:
-      "Interactive diagnostic framework under Section 213 & 57 for Mumbai, Kolkata, Chennai, bank claims, society transfers, and property mutation.",
-    meta: "Section 213 & 57 Statutory Test",
+      "Free diagnostic framework under Section 213 & 57 for Mumbai, Kolkata, Chennai, bank claims, society transfers, and asset name change.",
+    meta: "Section 213 & 57 Legal Test",
     keywords: [
       "probate checker",
       "is probate mandatory",
@@ -569,7 +569,7 @@ export const toolsData: ToolItem[] = [
     badgeStyle: "bg-amber-50 text-amber-800 border-amber-200/80",
     date: "20-10-2026",
     description:
-      "Interactive 4-stage readiness checklist covering title deeds, bank accounts, demat folios, witness KYC, and doctor medical fitness certificates.",
+      "Free 4-stage readiness checklist covering title deeds, bank accounts, demat folios, witness KYC, and doctor medical fitness papers.",
     meta: "4-Stage Pre-Drafting Readiness",
     keywords: [
       "will checklist",

@@ -64,7 +64,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
     notarizedWill: "Low addition: Merely establishes testator identity; no presumption of mental fitness.",
     registeredWill: "Highest: Presumption of genuineness under Section 60, Registration Act.",
     verdict: "registered",
-    note: "Official Sub-Registrar seal creates a strong barrier against claims of forgery.",
+    note: "Official SRO seal creates a strong barrier against claims of forgery.",
   },
   {
     parameter: "Government Stamp Duty",
@@ -80,7 +80,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
     notarizedWill: "Moderate: Requires visiting an advocate / Notary Public with your witnesses.",
     registeredWill: "Highest: Requires online booking, physical Sub-Registrar visit, and biometrics.",
     verdict: "plain",
-    note: "Plain Will can be executed in 15 minutes without visiting any government office.",
+    note: "Plain Will can be signed in 15 minutes without visiting any government office.",
   },
   {
     parameter: "Turnaround Time",
@@ -96,7 +96,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
     notarizedWill: "Simple: Draft a new Will or Codicil with two witnesses.",
     registeredWill: "Moderate: Can be revoked on plain paper, but registering revocation is safer.",
     verdict: "plain",
-    note: "Section 62 allows revocation anytime; later registered revocation avoids record confusion.",
+    note: "Section 62 allows revocation anytime; later filed revocation avoids record confusion.",
   },
   {
     parameter: "Vulnerability to Court Challenge",
@@ -104,7 +104,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
     notarizedWill: "Equally vulnerable: A notary stamp does not prevent disputes over mental health.",
     registeredWill: "Strong defense: Sub-Registrar identity check and biometrics defeat forgery claims.",
     verdict: "registered",
-    note: "Opponents challenging a registered Will bear a much heavier burden of proof.",
+    note: "Opponents challenging a filed Will bear a much heavier burden of proof.",
   },
   {
     parameter: "Custody & Government Backup",
@@ -128,7 +128,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
     notarizedWill: "Often mistaken by bank clerks as 'sufficient', but legally same as plain Will.",
     registeredWill: "Widely trusted: Revenue authorities and banks process mutations smoothly.",
     verdict: "registered",
-    note: "Municipal bodies and housing societies heavily favor registered documents.",
+    note: "City bodies and housing societies heavily favor filed papers.",
   },
 ];
 
@@ -137,58 +137,58 @@ const TOC_ITEMS = [
   { id: "comparison-matrix", label: "1. Three-Way Matrix" },
   { id: "legal-reality-notarization", label: "2. Notarization Legal Force" },
   { id: "section-63-mandate", label: "3. Section 63 Mandate" },
-  { id: "evidentiary-weight-registration", label: "4. Evidentiary Weight" },
+  { id: "evidentiary-weight-registration", label: "4. Proof Weight" },
   { id: "section-18-registration-act", label: "5. Section 18 Analysis" },
-  { id: "when-registration-worth-it", label: "6. When Registration is Worth It" },
+  { id: "when-registration-worth-it", label: "6. When Filing is Worth It" },
   { id: "when-notarization-sufficient", label: "7. When Plain or Notarized Suffices" },
   { id: "execution-sop", label: "8. Step-by-Step SOP" },
-  { id: "visual-breakdown", label: "9. Visual Document Breakdown" },
+  { id: "visual-breakdown", label: "9. Visual Paper Breakdown" },
   { id: "common-myths", label: "10. Four Common Myths" },
-  { id: "interactive-decision-tool", label: "11. Interactive Decision Tool" },
+  { id: "interactive-decision-tool", label: "11. Free Decision Tool" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-provisions", label: "13. Statutory Provisions" },
+  { id: "statutory-provisions", label: "13. Legal Rules" },
 ];
 
 const FAQS = [
   {
     q: "Is a notarized Will legally valid in India?",
-    a: "Yes, a notarized Will is legally valid in India, but NOT because of the notary's stamp or signature. It is valid solely because it satisfies Section 63 of the Indian Succession Act, 1925—meaning it is in writing, signed by the testator, and attested by at least two independent witnesses. The notary stamp itself adds zero extra legal validity under succession law.",
+    a: "Yes, a notarized Will is legally valid in India, but NOT because of the notary's stamp or signature. It is valid solely because it satisfies Section 63 of the Indian Succession Act, 1925—meaning it is in writing, signed by the Will maker, and attested by at least two independent witnesses. The notary stamp itself adds zero extra legal validity under estate law.",
   },
   {
-    q: "Is an unregistered Will valid in India?",
-    a: "Yes, 100%. Under Section 18(e) of the Registration Act, 1908, the registration of a Will is purely optional across India. An unregistered Will executed on a plain sheet of A4 paper with the signatures of two independent witnesses is just as legally enforceable as a registered Will. Registration is never a condition of validity.",
+    q: "Is an plain Will valid in India?",
+    a: "Yes, 100%. Under Section 18(e) of the Filing Act, 1908, the filing of a Will is purely a choice across India. An plain Will signed on a plain sheet of A4 paper with the signatures of two independent witnesses is just as legally enforceable as a filed Will. Filing is never a condition of validity.",
   },
   {
     q: "What is the key difference between notarizing and registering a Will?",
-    a: "Notarization is performed by an advocate appointed as a Notary Public under the Notaries Act, 1952. The notary simply certifies the identity of the person signing before them. Registration is an official government process carried out by the Sub-Registrar under the Registration Act, 1908. Registration creates a permanent government record in Book 3, records biometrics and photos, and grants a legal presumption of genuineness in court.",
+    a: "Notarization is performed by an lawyer appointed as a Notary Public under the Notaries Act, 1952. The notary simply certifies the identity of the person signing before them. Filing is an official government process carried out by the SRO under the Filing Act, 1908. Filing creates a permanent government record in Book 3, records biometrics and photos, and grants a legal presumption of genuineness in court.",
   },
   {
-    q: "Does a notary stamp protect a Will from family court challenges?",
-    a: "No. A notary stamp does not prevent disputes, nor does it establish that the testator was of sound mind or free from coercion. In any court dispute or probate proceeding, the propounder of the Will must examine at least one attesting witness under Section 68 of the Indian Evidence Act. A notary's testimony or stamp cannot replace this statutory witness requirement.",
+    q: "Does a notary stamp protect a Will from family court fights?",
+    a: "No. A notary stamp does not prevent fights, nor does it establish that the Will maker was of sound mind or free from coercion. In any court fight or probate proceeding, the propounder of the Will must examine at least one signing witness under Section 68 of the Indian Evidence Act. A notary's testimony or stamp cannot replace this legal witness rule.",
   },
   {
     q: "What are the biggest benefits of registering a Will in India?",
-    a: "The three primary advantages are: (1) Evidentiary presumption under Sections 58 and 60 of the Registration Act, making false claims of forgery or signature theft virtually impossible; (2) Permanent safe custody in government records, allowing certified copies if the original paper is lost, stolen, or burned; and (3) Faster processing by municipal authorities, revenue departments, and banks during property mutation.",
+    a: "The three primary advantages are: (1) Proof presumption under Sections 58 and 60 of the Filing Act, making false claims of forgery or signature theft virtually impossible; (2) Permanent safe custody in government records, allowing certified copies if the original paper is lost, stolen, or burned; and (3) Faster processing by city offices, revenue departments, and banks during asset name change.",
   },
   {
-    q: "Can a registered Will still be challenged in an Indian court?",
-    a: "Yes. Registration does not make a Will bulletproof. A registered Will can be challenged on valid legal grounds, such as lack of testamentary capacity (dementia, severe mental illness), undue influence, fraud, coercion, suspicious circumstances surrounding its creation, or the discovery of a later valid Will. However, the legal burden on the person challenging a registered Will is much higher.",
+    q: "Can a filed Will still be challenged in an Indian court?",
+    a: "Yes. Filing does not make a Will bulletproof. A filed Will can be challenged on valid legal grounds, such as lack of Will capacity (dementia, severe mental illness), undue influence, fraud, coercion, suspicious circumstances surrounding its creation, or the discovery of a later valid Will. However, the legal burden on the person challenging a filed Will is much higher.",
   },
   {
     q: "Do I need non-judicial stamp paper to make a valid Will?",
     a: "No. Under Schedule I of the Indian Stamp Act, 1899, Wills are completely exempt from stamp duty across all states and Union Territories in India. Drafting a Will on ₹50, ₹100, or ₹500 non-judicial stamp paper is an unnecessary misconception. A Will written or printed on standard plain white A4 paper is 100% valid.",
   },
   {
-    q: "Can a Notary Public act as one of my two attesting witnesses?",
-    a: "Legally, a notary could act as an attesting witness only if they specifically witnessed the testator sign and signed with the 'animus attestandi' (intent to attest as a private statutory witness). However, doing so is strongly discouraged. Courts distinguish between a public officer attesting a signature in their official capacity and a private witness attesting execution under Section 63.",
+    q: "Can a Notary Public act as one of my two signing witnesses?",
+    a: "Legally, a notary could act as an signing witness only if they mainly witnessed the Will maker sign and signed with the 'animus attestandi' (intent to attest as a private legal witness). However, doing so is strongly discouraged. Courts distinguish between a public officer signing a signature in their official capacity and a private witness signing signing under Section 63.",
   },
   {
-    q: "Can a registered Will be revoked or amended by an unregistered Will?",
-    a: "Yes. Under Section 62 of the Indian Succession Act, a Will is revocable at any time during the testator's life. A subsequent valid unregistered Will or Codicil executed with two witnesses legally revokes or modifies an earlier registered Will. However, to prevent suspicion and contested mutation proceedings, it is best practice to register the revocation or newer Will as well.",
+    q: "Can a filed Will be revoked or amended by an plain Will?",
+    a: "Yes. Under Section 62 of the Indian Succession Act, a Will is revocable at any time during the Will maker's life. A subsequent valid plain Will or Codicil signed with two witnesses legally revokes or modifies an earlier filed Will. However, to prevent suspicion and contested name change proceedings, it is best practice to register the revocation or newer Will as well.",
   },
   {
-    q: "How much does it cost to register a Will at the Sub-Registrar Office?",
-    a: "The statutory government registration fee for a Will is minimal in most Indian states—usually between ₹50 and ₹1,000, along with nominal scanning charges of ₹200 to ₹500. There is zero stamp duty. If you hire a professional lawyer or legal platform for end-to-end documentation, scheduling, and SRO assistance, professional fees typically range between ₹5,000 and ₹15,000.",
+    q: "How much does it cost to register a Will at the SRO office?",
+    a: "The legal government filing fee for a Will is minimal in most Indian states—usually between ₹50 and ₹1,000, along with nominal scanning charges of ₹200 to ₹500. There is zero stamp duty. If you hire a professional lawyer or legal platform for end-to-end papers, scheduling, and SRO help, professional fees typically range between ₹5,000 and ₹15,000.",
   },
 ];
 
@@ -200,7 +200,7 @@ export default function NotarizedVsRegisteredWillClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
 
-  // Interactive Decision Tool state
+  // Free Decision Tool state
   const [estateValue, setEstateValue] = useState<"modest" | "substantial">("substantial");
   const [familyHarmony, setFamilyHarmony] = useState<"peaceful" | "disputed">("disputed");
   const [healthStatus, setHealthStatus] = useState<"healthy" | "elderly">("healthy");
@@ -268,7 +268,7 @@ export default function NotarizedVsRegisteredWillClient() {
         color: "text-rose-700 bg-rose-50 border-rose-200",
         badge: "High Legal Shield Required",
         summary:
-          "Because your scenario involves either high asset value, disinherited heirs, potential family friction, or elderly health scrutiny, registering your Will at the Sub-Registrar Office provides essential evidentiary weight under Section 60 of the Registration Act.",
+          "Because your scenario involves either high asset value, disinherited heirs, potential family friction, or elderly health scrutiny, registering your Will at the SRO office provides essential proof weight under Section 60 of the Filing Act.",
         actionUrl: "/services/will-registration",
         actionText: "Book Advocate-Assisted Will Registration",
       };
@@ -278,7 +278,7 @@ export default function NotarizedVsRegisteredWillClient() {
         color: "text-emerald-700 bg-emerald-50 border-emerald-200",
         badge: "Safe for Unanimous Estates",
         summary:
-          "For harmonious families with equal distribution and straightforward assets, a properly drafted Will executed on plain A4 paper with two independent witnesses is 100% legally enforceable under Section 63. You do not need to spend money on registration or notarization.",
+          "For harmonious families with equal split and straightforward assets, a properly drafted Will signed on plain A4 paper with two independent witnesses is 100% legally enforceable under Section 63. You do not need to spend money on filing or notarization.",
         actionUrl: "/start",
         actionText: "Draft Your Legally Valid Will in 15 Mins",
       };
@@ -311,7 +311,7 @@ export default function NotarizedVsRegisteredWillClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Discover why notarization adds zero legal force under Section 63 of the Indian Succession Act, compare Plain vs Notarized vs Registered Wills, and learn when registration is truly worth it.
+            Discover why notarization adds zero legal force under Section 63 of the Indian Succession Act, compare Plain vs Notarized vs Filed Wills, and learn when filing is truly worth it.
           </p>
 
           {/* CTA Buttons */}
@@ -346,7 +346,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -356,7 +356,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 10,000+
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Wills Drafted & Registered
+                Wills Drafted & Filed
               </span>
             </div>
 
@@ -427,7 +427,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 <div className="flex items-start gap-2 text-[#55636D]">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <p className="text-[11px] leading-relaxed">
-                    Verified under the Indian Succession Act, 1925 &amp; Registration Act, 1908.
+                    Checked under the Indian Succession Act, 1925 &amp; Filing Act, 1908.
                   </p>
                 </div>
               </div>
@@ -453,11 +453,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                Executive Summary: Notarized vs Registered Will
+                Executive Summary: Notarized vs Filed Will
               </h2>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                In India, thousands of testators pay advocates outside civil courts to get their Wills stamped by a Notary Public, believing it confers ironclad government protection. Here is what Indian statutory law and the Supreme Court actually hold:
+                In India, thousands of Will makers pay lawyers outside civil courts to get their Wills stamped by a Notary Public, believing it confers ironclad government protection. Here is what Indian statutory law and the Supreme Court actually hold:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -477,10 +477,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs sm:text-sm font-bold text-[#172228] block">
-                      Registration is Purely Optional
+                      Filing is Purely A Choice
                     </strong>
                     <span className="text-xs text-slate-600 leading-relaxed">
-                      Section 18(e) of the Registration Act 1908 explicitly makes Will registration optional. An unregistered plain paper Will is fully enforceable.
+                      Section 18(e) of the Filing Act 1908 explicitly makes Will filing a choice. An plain plain paper Will is fully enforceable.
                     </span>
                   </div>
                 </div>
@@ -489,10 +489,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs sm:text-sm font-bold text-[#172228] block">
-                      Registration Adds Evidentiary Weight
+                      Filing Adds Proof Weight
                     </strong>
                     <span className="text-xs text-slate-600 leading-relaxed">
-                      Registration creates a statutory presumption of genuineness under Section 60. Challenging a registered Will requires overcoming a heavy burden of proof.
+                      Filing creates a legal presumption of genuineness under Section 60. Challenging a filed Will requires overcoming a heavy burden of proof.
                     </span>
                   </div>
                 </div>
@@ -501,10 +501,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-xs sm:text-sm font-bold text-[#172228] block">
-                      Section 63 Witnesses Are Mandatory
+                      Section 63 Witnesses Are Needed
                     </strong>
                     <span className="text-xs text-slate-600 leading-relaxed">
-                      Neither a notary seal nor a registrar's endorsement can cure a Will lacking two independent adult attesting witnesses under Section 63 of the ISA.
+                      Neither a notary seal nor a registrar's endorsement can cure a Will lacking two independent adult signing witnesses under Section 63 of the ISA.
                     </span>
                   </div>
                 </div>
@@ -523,11 +523,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                1. Three-Way Matrix: Plain vs Notarized vs Registered
+                1. Three-Way Matrix: Plain vs Notarized vs Filed
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                To understand where each option stands, examine this side-by-side comparison of a Plain Paper Will, a Notarized Will, and a Registered Will across ten vital legal and procedural parameters:
+                To understand where each option stands, examine this side-by-side comparison of a Plain Paper Will, a Notarized Will, and a Filed Will across ten vital legal and procedural parameters:
               </p>
 
               {/* Responsive 3-Column Table */}
@@ -545,7 +545,7 @@ export default function NotarizedVsRegisteredWillClient() {
                         Notarized Will
                       </th>
                       <th className="p-3.5 sm:p-4 font-bold text-xs uppercase tracking-wider w-1/4">
-                        Registered Will
+                        Filed Will
                       </th>
                     </tr>
                   </thead>
@@ -578,7 +578,7 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-900 flex items-start gap-3">
                 <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
                 <p>
-                  <strong>The Takeaway:</strong> A notarized Will costs more time and money than a plain paper Will, yet provides <em>identical baseline legal value</em> in an Indian courtroom. If you seek legal invulnerability, skip the notary and go straight to the Sub-Registrar.
+                  <strong>The Takeaway:</strong> A notarized Will costs more time and money than a plain paper Will, yet provides <em>identical baseline legal value</em> in an Indian courtroom. If you seek legal invulnerability, skip the notary and go straight to the SRO.
                 </p>
               </div>
             </section>
@@ -590,7 +590,7 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2">
                 <AlertCircle className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory Analysis
+                  Legal Analysis
                 </span>
               </div>
 
@@ -599,7 +599,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                A widespread misconception across urban and rural India is that getting a Will stamped by an advocate with a red or blue notary seal makes it &quot;government approved&quot;. In legal reality, notarization does nothing of the sort.
+                A widespread misconception across urban and rural India is that getting a Will stamped by an lawyer with a red or blue notary seal makes it &quot;government approved&quot;. In legal reality, notarization does nothing of the sort.
               </p>
 
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 sm:p-6 space-y-4 shadow-xs">
@@ -609,7 +609,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 </h3>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Section 8 of the Notaries Act, 1952, a Notary Public is authorized to verify, authenticate, certify, or attest the execution of any instrument, administer oaths, and note negotiable instruments. When a notary stamps a document, they are merely certifying:
+                  Under Section 8 of the Notaries Act, 1952, a Notary Public is authorized to verify, authenticate, certify, or attest the signing of any instrument, administer oaths, and note negotiable instruments. When a notary stamps a paper, they are merely certifying:
                 </p>
 
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700 list-disc pl-5">
@@ -618,13 +618,13 @@ export default function NotarizedVsRegisteredWillClient() {
                 </ul>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Crucially, <strong>a Notary Public does not certify the mental soundness of the testator</strong>, does not evaluate whether the testator acted under coercion or family pressure, and does not retain a full permanent archive of the document text.
+                  Crucially, <strong>a Notary Public does not certify the mental soundness of the Will maker</strong>, does not evaluate whether the Will maker acted under coercion or family pressure, and does not retain a full permanent archive of the paper text.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs sm:text-sm text-blue-950">
                 <p className="leading-relaxed">
-                  <strong>Supreme Court Jurisprudence:</strong> The Supreme Court of India has repeatedly held that testamentary documents must be proven strictly in accordance with Section 68 of the Indian Evidence Act, 1872 (now Bharatiya Sakshya Adhiniyam, 2023). A notary stamp cannot substitute for the oral testimony of an attesting witness, nor does it create a presumption that the Will is free from suspicious circumstances.
+                  <strong>Supreme Court Jurisprudence:</strong> The Supreme Court of India has repeatedly held that Will papers must be proven strictly in accordance with Section 68 of the Indian Evidence Act, 1872 (now Bharatiya Sakshya Adhiniyam, 2023). A notary stamp cannot substitute for the oral testimony of an signing witness, nor does it create a presumption that the Will is free from suspicious circumstances.
                 </p>
               </div>
             </section>
@@ -636,7 +636,7 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2">
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory Core
+                  Legal Core
                 </span>
               </div>
 
@@ -645,7 +645,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                If neither stamp paper nor notarization creates validity, what does? The answer lies exclusively in <strong>Section 63 of the Indian Succession Act, 1925</strong>. If these statutory prerequisites are satisfied, the Will is 100% enforceable in any Indian court:
+                If neither stamp paper nor notarization creates validity, what does? The answer lies exclusively in <strong>Section 63 of the Indian Succession Act, 1925</strong>. If these legal prerequisites are satisfied, the Will is 100% enforceable in any Indian court:
               </p>
 
               {/* 3 Prerequisite Cards */}
@@ -673,10 +673,10 @@ export default function NotarizedVsRegisteredWillClient() {
                       2
                     </span>
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base mb-2">
-                      Signed or Thumb Marked by Testator
+                      Signed or Thumb Marked by Will maker
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The testator must sign or affix their mark with clear intention to give effect to the writing as their testamentary deed.
+                      The Will maker must sign or affix their mark with clear intention to give effect to the writing as their Will deed.
                     </p>
                   </div>
                   <span className="text-[11px] font-semibold text-[#5F7E75] mt-4 block">
@@ -693,7 +693,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Attested by Two Independent Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      At least two witnesses must see the testator sign and must sign in the presence of the testator. Beneficiaries must never sign as witnesses!
+                      At least two witnesses must see the Will maker sign and must sign in the presence of the Will maker. Heirs must never sign as witnesses!
                     </p>
                   </div>
                   <span className="text-[11px] font-semibold text-[#5F7E75] mt-4 block">
@@ -707,10 +707,10 @@ export default function NotarizedVsRegisteredWillClient() {
                 <ShieldAlert className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
                 <div className="text-xs sm:text-sm leading-relaxed space-y-1">
                   <strong className="font-bold block text-rose-900">
-                    Warning: Never Let a Beneficiary Witness Your Will (Section 67)
+                    Warning: Never Let a Heir Witness Your Will (Section 67)
                   </strong>
                   <p>
-                    Under Section 67 of the Indian Succession Act, if a beneficiary (or their spouse) signs as an attesting witness, the Will remains valid, but <strong>their legacy or bequest becomes completely void!</strong> Always use independent adult witnesses like trusted friends, neighbors, or colleagues.
+                    Under Section 67 of the Indian Succession Act, if a heir (or their spouse) signs as an signing witness, the Will remains valid, but <strong>their legacy or bequest becomes completely void!</strong> Always use independent adult witnesses like trusted friends, neighbors, or colleagues.
                   </p>
                 </div>
               </div>
@@ -720,7 +720,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-black uppercase tracking-wider text-[#172228] flex items-center gap-1.5">
                     <FileSignature className="w-4 h-4 text-[#C65378]" />
-                    Recommended Section 63 Attestation Clause
+                    Recommended Section 63 Witness Signing Clause
                   </span>
                   <button
                     onClick={copySection63Clause}
@@ -741,7 +741,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 font-mono text-[11px] sm:text-xs text-slate-700 leading-relaxed overflow-x-auto">
-                  &quot;Signed and declared by the above-named Testator, [Full Name], as and for their Last Will and Testament, in the presence of us, who in their presence and at their request, and in the presence of each other, have hereunto subscribed our names as attesting witnesses, after seeing the Testator sign the same. We both confirm that we are independent witnesses and neither we nor our spouses receive any benefit under this Will.&quot;
+                  &quot;Signed and declared by the above-named Will maker, [Full Name], as and for their Last Will and Testament, in the presence of us, who in their presence and at their request, and in the presence of each other, have hereunto subscribed our names as signing witnesses, after seeing the Will maker sign the same. We both confirm that we are independent witnesses and neither we nor our spouses receive any benefit under this Will.&quot;
                 </div>
               </div>
             </section>
@@ -758,11 +758,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. Evidentiary Weight: Why Registration Matters in Court
+                4. Proof Weight: Why Filing Matters in Court
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                If an unregistered Will is 100% legally valid, why do succession advocates strongly advise registering Wills for significant estates? The difference lies not in validity, but in <strong>evidentiary weight and survivability under litigation</strong>.
+                If an plain Will is 100% legally valid, why do estate lawyers strongly advise registering Wills for significant estates? The difference lies not in validity, but in <strong>proof weight and survivability under court fights</strong>.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -774,7 +774,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 60 of the Registration Act, 1908, the Sub-Registrar&apos;s endorsement is admissible in court as proof that the document was presented by the testator, that identity was verified, and that the testator admitted execution.
+                    Under Section 60 of the Filing Act, 1908, the SRO&apos;s endorsement is admissible in court as proof that the paper was presented by the Will maker, that identity was checked, and that the Will maker admitted signing.
                   </p>
                 </div>
 
@@ -786,7 +786,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    At the Sub-Registrar Office, the testator&apos;s live photo, biometric thumb impressions, and government ID numbers are officially stamped and sealed into the state register, eliminating claims of forged signatures.
+                    At the SRO office, the Will maker&apos;s live photo, biometric thumb impressions, and government ID numbers are officially stamped and sealed into the state register, eliminating claims of forged signatures.
                   </p>
                 </div>
 
@@ -798,7 +798,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Sub-Registrar enters registered Wills into a confidential permanent ledger known as &quot;Book 3&quot;. If the original paper is misplaced, torn, or hidden by disgruntled relatives, an authenticated certified copy can be issued upon proof of death.
+                    The SRO enters filed Wills into a confidential permanent ledger known as &quot;Book 3&quot;. If the original paper is misplaced, torn, or hidden by disgruntled relatives, an authenticated certified copy can be issued upon proof of death.
                   </p>
                 </div>
 
@@ -806,11 +806,11 @@ export default function NotarizedVsRegisteredWillClient() {
                   <div className="flex items-center gap-2 mb-3">
                     <RefreshCw className="w-5 h-5 text-emerald-600" />
                     <h3 className="font-bold text-[#172228] text-sm sm:text-base">
-                      Frictionless Property Mutation &amp; Banking
+                      Frictionless Asset Name Change &amp; Banking
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Municipal corporations, land revenue tehsildars, and co-operative housing societies frequently raise roadblocks for unregistered Wills, demanding court probates or indemnity bonds. Registered Wills are accepted with far fewer bureaucratic hurdles.
+                    City corporations, land revenue tehsildars, and co-operative housing societies frequently raise roadblocks for plain Wills, demanding court probates or indemnity bonds. Filed Wills are accepted with far fewer bureaucratic hurdles.
                   </p>
                 </div>
               </div>
@@ -823,29 +823,29 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory Exemption
+                  Legal Exemption
                 </span>
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                5. Section 18 Analysis: Registration is Never Compulsory
+                5. Section 18 Analysis: Filing is Never Needed
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Many citizens ask: <em>&quot;If an unregistered Will is challenged, will the judge throw it out because I didn&apos;t go to the registry office?&quot;</em> The categorical answer is <strong>NO</strong>.
+                Many citizens ask: <em>&quot;If an plain Will is challenged, will the judge throw it out because I didn&apos;t go to the registry office?&quot;</em> The categorical answer is <strong>NO</strong>.
               </p>
 
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 sm:p-6 space-y-4 shadow-xs">
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  While Section 17 of the Registration Act, 1908 specifies documents that <em>must</em> be compulsorily registered (such as Sale Deeds, Gift Deeds of immovable property, or long-term lease deeds), <strong>Wills are deliberately placed under Section 18(e)</strong>, which lists documents whose registration is strictly optional:
+                  While Section 17 of the Filing Act, 1908 specifies papers that <em>must</em> be compulsorily filed (such as Sale Deeds, Gift Deeds of land asset, or long-term lease deeds), <strong>Wills are deliberately placed under Section 18(e)</strong>, which lists papers whose filing is strictly a choice:
                 </p>
 
                 <div className="p-4 rounded-xl bg-slate-50 border-l-4 border-l-[#5F7E75] font-serif italic text-xs sm:text-sm text-slate-800">
-                  &quot;Section 18. Documents of which registration is optional.—Any of the following documents may be registered under this Act, namely: ... (e) wills; ...&quot;
+                  &quot;Section 18. Papers of which filing is a choice.—Any of the following papers may be filed under this Act, namely: ... (e) wills; ...&quot;
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Because Parliament made Will registration optional, no Indian court can dismiss, invalidate, or reject a Will simply because it is unregistered. The propounder merely has to prove execution under Section 68 of the Evidence Act.
+                  Because Parliament made Will filing a choice, no Indian court can dismiss, invalidate, or reject a Will simply because it is plain. The propounder merely has to prove signing under Section 68 of the Evidence Act.
                 </p>
               </div>
             </section>
@@ -862,11 +862,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                6. When Registration is Worth It: High-Risk Scenarios
+                6. When Filing is Worth It: High-Risk Scenarios
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                While registration requires scheduling an appointment, paying nominal fees, and visiting the Sub-Registrar Office with two witnesses, it is strongly advised in the following five high-stakes circumstances:
+                While filing requires scheduling an appointment, paying nominal fees, and visiting the SRO office with two witnesses, it is strongly advised in the following five high-stakes circumstances:
               </p>
 
               <div className="space-y-3">
@@ -876,10 +876,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-sm sm:text-base text-[#172228]">
-                      Unequal Distribution or Disinheriting Legal Heirs
+                      Unequal Split or Disinheriting Legal Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
-                      If you are leaving more property to one child, gifting property to a daughter-in-law, or completely excluding a legal heir who would inherit under intestate succession, expect fierce resistance. Registration provides the necessary evidence to withstand challenges.
+                      If you are leaving more asset to one child, gifting asset to a daughter-in-law, or completely excluding a legal heir who would inherit under no-Will estate, expect fierce resistance. Filing provides the necessary evidence to withstand fights.
                     </p>
                   </div>
                 </div>
@@ -893,7 +893,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       High-Value Real Estate in Metropolitan Cities
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
-                      If your estate includes prime residential flats, commercial shops, or ancestral parcels worth crores in cities like Delhi NCR, Mumbai, Bengaluru, or Hyderabad, the cost and effort of registration is negligible compared to potential title disputes.
+                      If your estate includes prime home flats, shop shops, or family parcels worth crores in cities like Delhi NCR, Mumbai, Bengaluru, or Hyderabad, the cost and effort of filing is negligible compared to potential title fights.
                     </p>
                   </div>
                 </div>
@@ -907,7 +907,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Elderly Age, Fragile Health, or Impending Medical Treatment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
-                      When a senior citizen drafts a Will in their late 70s or 80s, dissatisfied relatives routinely file lawsuits alleging dementia, Alzheimer&apos;s, or undue influence by the caretaking child. An SRO registration, combined with a doctor&apos;s fitness certificate, decisively neutralizes this claim.
+                      When a senior citizen drafts a Will in their late 70s or 80s, dissatisfied relatives routinely file lawsuits alleging dementia, Alzheimer&apos;s, or undue influence by the caretaking child. An SRO filing, combined with a doctor&apos;s fitness paper, decisively neutralizes this claim.
                     </p>
                   </div>
                 </div>
@@ -918,10 +918,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   </div>
                   <div>
                     <h3 className="font-bold text-sm sm:text-base text-[#172228]">
-                      Properties in Former Presidential Towns (Mandatory Probate)
+                      Assets in Former Presidential Towns (Needed Probate)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
-                      Under Section 213 and Section 57 of the ISA, immovable properties situated within the original civil jurisdictions of Mumbai, Kolkata, and Chennai require court probate. Having a registered Will significantly expedites the High Court probate citation process.
+                      Under Section 213 and Section 57 of the ISA, land assets situated within the original civil areas of Mumbai, Kolkata, and Chennai require court probate. Having a filed Will significantly expedites the High Court probate citation process.
                     </p>
                   </div>
                 </div>
@@ -935,7 +935,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Second Marriages, Stepchildren, or NRI Heirs Living Abroad
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">
-                      Blended family dynamics or non-resident heirs who cannot easily attend lengthy court hearings benefit enormously from the conclusive public record of a registered Will.
+                      Blended family dynamics or non-resident heirs who cannot easily attend lengthy court hearings benefit enormously from the strong public record of a filed Will.
                     </p>
                   </div>
                 </div>
@@ -945,17 +945,17 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="p-5 rounded-2xl bg-gradient-to-r from-rose-50 to-white border border-[#C65378]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                   <h4 className="font-bold text-[#172228] text-sm sm:text-base">
-                    Need Lawyer-Assisted Will Registration at Your Local SRO?
+                    Need Lawyer-Assisted Will Filing at Your Local SRO?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    WillDrafting.in handles slot booking, documentation, and advocate accompaniment at your Sub-Registrar Office.
+                    WillDrafting.in handles slot booking, papers, and lawyer accompaniment at your SRO office.
                   </p>
                 </div>
                 <Link
                   href="/services/will-registration"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#172228] text-white text-xs font-bold hover:bg-[#C65378] transition-colors shrink-0"
                 >
-                  <span>Explore Will Registration</span>
+                  <span>Explore Will Filing</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -977,7 +977,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                You do not need to register your Will in every circumstance. Executing a valid Section 63 Will on plain paper (or obtaining a quick notarization for personal comfort) is completely practical and legally adequate in these situations:
+                You do not need to register your Will in every circumstance. Signing a valid Section 63 Will on plain paper (or obtaining a quick notarization for personal comfort) is completely practical and legally adequate in these situations:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -986,7 +986,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     Harmonious Families &amp; Equal Division
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    When parents divide their estate equally among all biological children without animosity, the likelihood of a lawsuit is near zero. A plain paper Will executed with two trusted family friends satisfies every legal standard.
+                    When parents divide their estate equally among all biological children without animosity, the likelihood of a lawsuit is near zero. A plain paper Will signed with two trusted family friends satisfies every legal standard.
                   </p>
                 </div>
 
@@ -995,16 +995,16 @@ export default function NotarizedVsRegisteredWillClient() {
                     Urgent Medical or Travel Timelines
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If you are undergoing major surgery in 48 hours or embarking on an overseas trip, there is no time to wait for a Sub-Registrar appointment. Drafting and executing a Section 63 Will immediately secures your loved ones.
+                    If you are undergoing major surgery in 48 hours or embarking on an overseas trip, there is no time to wait for a SRO appointment. Drafting and signing a Section 63 Will right away secures your loved ones.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <h3 className="font-bold text-[#172228] text-sm sm:text-base mb-2">
-                    Movable Wealth with Updated Nominations
+                    Cash Wealth with Updated Nominations
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If your estate consists primarily of bank fixed deposits, mutual funds, demat equity shares, and insurance policies with updated nominee designations, a plain paper Will serves as a definitive testamentary bridge without SRO visits.
+                    If your estate consists primarily of bank fixed deposits, mutual funds, demat equity shares, and insurance policies with updated nominee designations, a plain paper Will serves as a definitive Will bridge without SRO visits.
                   </p>
                 </div>
 
@@ -1013,7 +1013,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     Absolute Privacy from Public Registers
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    When a Will is registered, any person with the testator&apos;s death certificate can apply for a copy under the Registration Act after demise. A plain paper Will stored in your private bank locker remains confidential until disclosed by your named executor.
+                    When a Will is filed, any person with the Will maker&apos;s death paper can apply for a copy under the Filing Act after demise. A plain paper Will stored in your private bank locker remains confidential until disclosed by your named executor.
                   </p>
                 </div>
               </div>
@@ -1026,16 +1026,16 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2">
                 <Sliders className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Standard Operating Procedure
+                  Standard Operating Step
                 </span>
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                8. Step-by-Step SOP: Executing and Registering a Will
+                8. Step-by-Step SOP: Signing and Registering a Will
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Follow this verified 5-step roadmap to draft, execute, and optionally register your Will without costly legal mistakes:
+                Follow this checked 5-step roadmap to draft, execute, and optionally register your Will without costly legal mistakes:
               </p>
 
               <div className="space-y-4">
@@ -1049,7 +1049,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Draft Clear Clauses on Plain Paper (No Stamp Duty)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Prepare your Last Will and Testament identifying your assets (properties, bank accounts, demat holdings), naming beneficiaries, appointing an Executor, and revoking all prior Wills. Use plain white A4 paper.
+                      Prepare your Last Will and Testament identifying your assets (assets, bank accounts, demat holdings), naming heirs, appointing an Executor, and revoking all prior Wills. Use plain white A4 paper.
                     </p>
                     <div className="pt-1">
                       <Link
@@ -1073,7 +1073,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Select Two Independent Adult Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Choose two adults who are younger than you and have no financial interest in your estate. Ensure neither they nor their spouses receive any property under the Will to avoid Section 67 disqualification.
+                      Choose two adults who are younger than you and have no financial interest in your estate. Ensure neither they nor their spouses receive any asset under the Will to avoid Section 67 disqualification.
                     </p>
                   </div>
                 </div>
@@ -1088,7 +1088,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Conduct the Simultaneous Physical Signing Ceremony
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sit together in one room. Sign your initials at the bottom of every page and your full signature on the final execution page. Both witnesses must watch you sign, and you must watch both witnesses sign.
+                      Sit together in one room. Sign your initials at the bottom of every page and your full signature on the final signing page. Both witnesses must watch you sign, and you must watch both witnesses sign.
                     </p>
                   </div>
                 </div>
@@ -1100,10 +1100,10 @@ export default function NotarizedVsRegisteredWillClient() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-[#172228]">
-                      (Optional) Book SRO Appointment for Registration
+                      (A Choice) Book SRO Appointment for Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      If choosing registration, visit your state&apos;s land portal (e.g. IGRS Maharashtra, Kaveri Karnataka, or Revenue Dept Delhi) to pay nominal fees (₹100–₹1,000) and book a timeslot at the Sub-Registrar jurisdiction where you reside or own property.
+                      If choosing filing, visit your state&apos;s land portal (e.g. IGRS Maharashtra, Kaveri Karnataka, or Revenue Dept Delhi) to pay nominal fees (₹100–₹1,000) and book a timeslot at the SRO area where you reside or own asset.
                     </p>
                   </div>
                 </div>
@@ -1118,7 +1118,7 @@ export default function NotarizedVsRegisteredWillClient() {
                       Biometrics at SRO &amp; Archive in Book 3
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the SRO with your original Will, Aadhaar/PAN cards, and both witnesses. The Sub-Registrar captures photos, biometrics, verifies identities, and issues an official registered endorsement in Book 3.
+                      Visit the SRO with your original Will, Aadhaar/PAN cards, and both witnesses. The SRO captures photos, biometrics, verifies identities, and issues an official filed endorsement in Book 3.
                     </p>
                   </div>
                 </div>
@@ -1141,7 +1141,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Notice the three distinct physical appearances of testamentary documents in India. Each reflects a different statutory treatment under Indian succession law:
+                Notice the three distinct physical appearances of Will papers in India. Each reflects a different legal treatment under Indian succession law:
               </p>
 
               {/* High-Resolution Infographic Showcase */}
@@ -1169,7 +1169,7 @@ export default function NotarizedVsRegisteredWillClient() {
                           : "bg-white text-slate-600 hover:text-slate-900 border border-slate-200"
                       }`}
                     >
-                      Document Stamps Close-Up
+                      Paper Stamps Close-Up
                     </button>
                   </div>
                   <a
@@ -1211,7 +1211,7 @@ export default function NotarizedVsRegisteredWillClient() {
                         1. Plain Will (Left)
                       </span>
                       <p className="text-[11px] text-slate-600 leading-relaxed">
-                        Executed on ordinary A4 paper with a pen. 100% legally enforceable under Section 63 once signed and attested by two witnesses. Zero government fee.
+                        Signed on ordinary A4 paper with a pen. 100% legally enforceable under Section 63 once signed and attested by two witnesses. Zero government fee.
                       </p>
                     </div>
 
@@ -1220,16 +1220,16 @@ export default function NotarizedVsRegisteredWillClient() {
                         2. Notarised Will (Center)
                       </span>
                       <p className="text-[11px] text-slate-600 leading-relaxed">
-                        Includes a blue circular seal from a Notary Public. Verifies identity of the signer, but creates zero presumption of testamentary capacity or mental fitness.
+                        Includes a blue circular seal from a Notary Public. Verifies identity of the signer, but creates zero presumption of Will capacity or mental fitness.
                       </p>
                     </div>
 
                     <div className="p-3.5 rounded-xl bg-[#FAF7F0] border border-[#172228]/10">
                       <span className="text-xs font-bold text-[#172228] block mb-1">
-                        3. Registered Will (Right)
+                        3. Filed Will (Right)
                       </span>
                       <p className="text-[11px] text-slate-600 leading-relaxed">
-                        Official red Sub-Registrar seal with volume and book registration numbers. Archived in Book 3 with biometric audit trails and maximum evidentiary strength.
+                        Official red SRO seal with volume and book filing numbers. Archived in Book 3 with biometric audit trails and maximum proof strength.
                       </p>
                     </div>
                   </div>
@@ -1253,7 +1253,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Let us dispel the most damaging folklore that leads Indian citizens into unnecessary expenses or bitter court disputes:
+                Let us dispel the most damaging folklore that leads Indian citizens into unnecessary expenses or bitter court fights:
               </p>
 
               <div className="space-y-3">
@@ -1263,27 +1263,27 @@ export default function NotarizedVsRegisteredWillClient() {
                     <span>Myth 1: &quot;A plain paper Will has zero legal standing in court.&quot;</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Fact:</strong> Section 63 of the Indian Succession Act contains zero requirements regarding stamp paper, government seals, or registration. Hundreds of thousands of plain paper Wills are probated and upheld by Indian High Courts every year.
+                    <strong>Fact:</strong> Section 63 of the Indian Succession Act contains zero rules regarding stamp paper, government seals, or filing. Hundreds of thousands of plain paper Wills are probated and upheld by Indian High Courts every year.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <div className="flex items-center gap-2 text-rose-700 font-bold text-sm sm:text-base mb-1">
                     <X className="w-4 h-4 shrink-0" />
-                    <span>Myth 2: &quot;A notarized Will is equal to a registered Will.&quot;</span>
+                    <span>Myth 2: &quot;A notarized Will is equal to a filed Will.&quot;</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Fact:</strong> A notary is not a Sub-Registrar. Notarization falls under the Notaries Act 1952, which carries no evidentiary presumption under Section 60 of the Registration Act. In a litigation battle, notarization adds practically nothing beyond proving your signature.
+                    <strong>Fact:</strong> A notary is not a SRO. Notarization falls under the Notaries Act 1952, which carries no proof presumption under Section 60 of the Filing Act. In a court fights battle, notarization adds practically nothing beyond proving your signature.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <div className="flex items-center gap-2 text-rose-700 font-bold text-sm sm:text-base mb-1">
                     <X className="w-4 h-4 shrink-0" />
-                    <span>Myth 3: &quot;A registered Will can never be challenged or cancelled.&quot;</span>
+                    <span>Myth 3: &quot;A filed Will can never be challenged or cancelled.&quot;</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Fact:</strong> Registration does not confer absolute immunity. If an excluded relative proves by cogent medical evidence that the testator suffered from advanced dementia, or proves coercion or fraud, the court will strike down even a registered Will.
+                    <strong>Fact:</strong> Filing does not confer absolute immunity. If an excluded relative proves by cogent medical evidence that the Will maker suffered from advanced dementia, or proves coercion or fraud, the court will strike down even a filed Will.
                   </p>
                 </div>
 
@@ -1311,11 +1311,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                11. Interactive Decision Tool: Do You Need Registration?
+                11. Free Decision Tool: Do You Need Filing?
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Answer these four quick questions to determine whether a plain paper Section 63 Will is sufficient for your family, or whether registering your Will at the Sub-Registrar Office is essential:
+                Answer these four quick questions to determine whether a plain paper Section 63 Will is sufficient for your family, or whether registering your Will at the SRO office is essential:
               </p>
 
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 sm:p-7 space-y-6 shadow-xs">
@@ -1334,7 +1334,7 @@ export default function NotarizedVsRegisteredWillClient() {
                           : "border-slate-200 hover:border-slate-300 text-slate-700"
                       }`}
                     >
-                      Under ₹50 Lakhs (Movable / Modest)
+                      Under ₹50 Lakhs (Cash / Modest)
                     </button>
                     <button
                       type="button"
@@ -1345,7 +1345,7 @@ export default function NotarizedVsRegisteredWillClient() {
                           : "border-slate-200 hover:border-slate-300 text-slate-700"
                       }`}
                     >
-                      Above ₹50 Lakhs / Multiple Properties
+                      Above ₹50 Lakhs / Multiple Assets
                     </button>
                   </div>
                 </div>
@@ -1353,7 +1353,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 {/* Question 2 */}
                 <div className="space-y-2">
                   <label className="text-xs sm:text-sm font-bold text-[#172228] block">
-                    2. Family Dynamics &amp; Expected Distribution:
+                    2. Family Dynamics &amp; Expected Split:
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
@@ -1376,7 +1376,7 @@ export default function NotarizedVsRegisteredWillClient() {
                           : "border-slate-200 hover:border-slate-300 text-slate-700"
                       }`}
                     >
-                      Excluding an Heir / Unequal Distribution
+                      Excluding an Heir / Unequal Split
                     </button>
                   </div>
                 </div>
@@ -1384,7 +1384,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 {/* Question 3 */}
                 <div className="space-y-2">
                   <label className="text-xs sm:text-sm font-bold text-[#172228] block">
-                    3. Age &amp; Medical Health of the Testator:
+                    3. Age &amp; Medical Health of the Will maker:
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
@@ -1415,7 +1415,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 {/* Question 4 */}
                 <div className="space-y-2">
                   <label className="text-xs sm:text-sm font-bold text-[#172228] block">
-                    4. Property Located in Mumbai, Kolkata, or Chennai?
+                    4. Asset Located in Mumbai, Kolkata, or Chennai?
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
@@ -1438,7 +1438,7 @@ export default function NotarizedVsRegisteredWillClient() {
                           : "border-slate-200 hover:border-slate-300 text-slate-700"
                       }`}
                     >
-                      Yes (Mandatory Probate Jurisdictions)
+                      Yes (Needed Probate Areas)
                     </button>
                   </div>
                 </div>
@@ -1481,11 +1481,11 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                12. Frequently Asked Questions: Notarized vs Registered
+                12. Frequently Asked Questions: Notarized vs Filed
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Clear, straightforward answers to the most common questions regarding Will notarization, registration, and Section 63 validity in India:
+                Clear, straightforward answers to the most common questions regarding Will notarization, filing, and Section 63 validity in India:
               </p>
 
               <div className="space-y-3">
@@ -1526,16 +1526,16 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory References
+                  Legal References
                 </span>
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                13. Statutory Provisions: Section 63 &amp; Registration Act
+                13. Legal Rules: Section 63 &amp; Filing Act
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Authoritative legislative provisions governing the drafting, attestation, notarization, and registration of Wills in India:
+                Authoritative legislative rules governing the drafting, witness signing, notarization, and filing of Wills in India:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1544,22 +1544,22 @@ export default function NotarizedVsRegisteredWillClient() {
                     Indian Succession Act, 1925
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
-                    <li>&bull; Section 59: Soundness of mind and testamentary capacity.</li>
-                    <li>&bull; Section 62: Wills are revocable during the testator&apos;s lifetime.</li>
-                    <li>&bull; Section 63: Execution and mandatory attestation by two witnesses.</li>
-                    <li>&bull; Section 67: Invalidation of bequests to attesting witnesses.</li>
+                    <li>&bull; Section 59: Soundness of mind and Will capacity.</li>
+                    <li>&bull; Section 62: Wills are revocable during the Will maker&apos;s lifetime.</li>
+                    <li>&bull; Section 63: Signing and needed witness signing by two witnesses.</li>
+                    <li>&bull; Section 67: Invalidation of bequests to signing witnesses.</li>
                   </ul>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-[#172228]/10 shadow-xs">
                   <strong className="text-xs sm:text-sm font-bold text-[#172228] block mb-1">
-                    Registration Act, 1908
+                    Filing Act, 1908
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
-                    <li>&bull; Section 18(e): Registration of Wills is strictly optional.</li>
-                    <li>&bull; Section 40: Persons entitled to present Wills for registration.</li>
-                    <li>&bull; Section 41: Special procedure on registration of Wills.</li>
-                    <li>&bull; Section 60: Certificate of registration and presumption of due execution.</li>
+                    <li>&bull; Section 18(e): Filing of Wills is strictly a choice.</li>
+                    <li>&bull; Section 40: Persons entitled to present Wills for filing.</li>
+                    <li>&bull; Section 41: Special step on filing of Wills.</li>
+                    <li>&bull; Section 60: Paper of filing and presumption of due signing.</li>
                   </ul>
                 </div>
 
@@ -1569,7 +1569,7 @@ export default function NotarizedVsRegisteredWillClient() {
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
                     <li>&bull; Section 8: Functions of notaries (verifying signatures and oaths).</li>
-                    <li>&bull; Judicial Principle: Notary seal does not prove sound testamentary mind.</li>
+                    <li>&bull; Judicial Principle: Notary seal does not prove sound Will mind.</li>
                   </ul>
                 </div>
 
@@ -1579,7 +1579,7 @@ export default function NotarizedVsRegisteredWillClient() {
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
                     <li>&bull; Schedule I: Complete exemption of Wills from stamp duty nationwide.</li>
-                    <li>&bull; Plain paper execution has full legal enforceability.</li>
+                    <li>&bull; Plain paper signing has full legal enforceability.</li>
                   </ul>
                 </div>
               </div>
@@ -1592,7 +1592,7 @@ export default function NotarizedVsRegisteredWillClient() {
                   Ready to Protect Your Family with a Section 63 Compliant Will?
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-                  Draft your legally verified Will in 15 minutes online or book an advocate for registration assistance at your local Sub-Registrar Office.
+                  Draft your legally checked Will in 15 minutes online or book an lawyer for filing help at your local SRO office.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
@@ -1612,7 +1612,29 @@ export default function NotarizedVsRegisteredWillClient() {
                 </Link>
               </div>
             </div>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY AUTHOR / TRUST / CTA CARDS
@@ -1633,21 +1655,21 @@ export default function NotarizedVsRegisteredWillClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h4>
                   <span className="text-[11px] text-[#55636D] block">
-                    Succession Counsel, WillDrafting.in
+                    Estate Counsel, WillDrafting.in
                   </span>
                 </div>
               </div>
               <p className="text-[11px] text-slate-600 leading-relaxed">
-                Reviewed under Indian Succession Act 1925 and Registration Act 1908. Member of the Bar Council of Delhi with 15+ years experience.
+                Reviewed under Indian Succession Act 1925 and Filing Act 1908. Member of the Bar Council of Delhi with 15+ years experience.
               </p>
               <div className="flex items-center justify-between gap-1.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
                 <span className="flex items-center gap-1.5">
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>Bar Council Verified</span>
+                  <span>Bar Council Checked</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1689,20 +1711,20 @@ export default function NotarizedVsRegisteredWillClient() {
               <div className="flex items-center gap-2 mb-2 text-[#5F7E75]">
                 <Building className="w-4 h-4" />
                 <span className="text-[10px] font-black uppercase tracking-wider">
-                  SRO Registration Service
+                  SRO Filing Service
                 </span>
               </div>
               <h3 className="text-sm font-bold text-[#172228] mb-1.5">
-                Need Sub-Registrar Assistance?
+                Need SRO Help?
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Our senior advocates handle slot booking, witness coordination, and Sub-Registrar accompaniment across Delhi NCR, Mumbai, Bengaluru, and Pune.
+                Our senior lawyers handle slot booking, witness coordination, and SRO accompaniment across Delhi NCR, Mumbai, Bengaluru, and Pune.
               </p>
               <Link
                 href="/services/will-registration"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:underline"
               >
-                <span>Book Will Registration Service</span>
+                <span>Book Will Filing Service</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -1734,7 +1756,7 @@ export default function NotarizedVsRegisteredWillClient() {
             <div className="hidden lg:block rounded-2xl bg-[#FAF7F0] border border-[#172228]/10 p-4 space-y-2">
               <div className="flex items-center gap-2 text-xs font-bold text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>100% Statutory Guarantee</span>
+                <span>100% Legal Guarantee</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
@@ -1742,7 +1764,7 @@ export default function NotarizedVsRegisteredWillClient() {
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Bank &amp; Municipal Registrar Accepted</span>
+                <span>Bank &amp; City Registrar Accepted</span>
               </div>
             </div>
             </div>
@@ -1755,7 +1777,7 @@ export default function NotarizedVsRegisteredWillClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/templates/will-format-india"

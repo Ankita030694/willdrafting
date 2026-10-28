@@ -90,7 +90,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
         url: canonicalUrl,
         name: "NRI Inherited Property Sale TDS Calculator | WillDrafting",
         description:
-          "Calculate Section 195 TDS on NRI property sale, Form 13 lower tax savings, and RBI USD 1M repatriation via 15CA/15CB under Indian Income Tax Act.",
+          "Calculate Section 195 TDS on NRI asset sale, Form 13 lower tax savings, and RBI USD 1M sending cash home via 15CA/15CB under Indian Income Tax Act.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
         applicationCategory: "TaxApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory micro-tool for NRI property sales in India. Computes Section 195 gross TDS deduction, Form 13 lower deduction.",
+          "Free legal micro-tool for NRI asset sales in India. Computes Section 195 gross TDS deduction, Form 13 lower deduction.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "Why does the buyer deduct TDS on the full sale price instead of my capital gain?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 195 of the Income Tax Act, 1961, the buyer is legally obligated to withhold tax on payments to non-residents. Because buyers fear heavy penalties and interest under Section 201 for short deduction, they routinely deduct TDS on the entire gross sale consideration unless the NRI seller furnishes an official Lower or Nil Deduction Certificate under Section 197 issued by the Assessing Officer.",
+              text: "Under Section 195 of the Income Tax Act, 1961, the buyer is legally obligated to withhold tax on payments to non-residents. Because buyers fear heavy penalties and interest under Section 201 for short deduction, they routinely deduct TDS on the entire gross sale consideration unless the NRI seller furnishes an official Lower or Nil Deduction Paper under Section 197 issued by the Assessing Officer.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "How much cash-flow blockage does Form 13 save for an NRI selling inherited property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Form 13 Lower Deduction Certificate limits the withholding tax strictly to the actual capital gains tax liability rather than the gross sale price. For example, on a ₹3.00 Crore property with ₹80 Lakhs in capital gains, default Section 195 TDS blocks approximately ₹44.85 Lakhs (at 14.95%), whereas Form 13 limits tax to approximately ₹11.96 Lakhs, immediately unlocking ₹32.89 Lakhs in liquid funds.",
+              text: "A Form 13 Lower Deduction Paper limits the withholding tax strictly to the actual capital gains tax liability rather than the gross sale price. For example, on a ₹3.00 Crore asset with ₹80 Lakhs in capital gains, default Section 195 TDS blocks about ₹44.85 Lakhs (at 14.95%), whereas Form 13 limits tax to about ₹11.96 Lakhs, right away unlocking ₹32.89 Lakhs in liquid funds.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "What documents are required to file Form 15CA and Form 15CB for outward remittance?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Repatriation requires: (1) Form 15CB certified by a Chartered Accountant verifying tax compliance, (2) Form 15CA filed online on the Income Tax e-filing portal, (3) Registered Agreement for Sale / Conveyance Deed, (4) Registered Will, Probate, or Legal Heir Certificate proving inherited title, (5) Proof of tax payment (TDS certificate Form 16A or advance tax challan), and (6) Form A2 and FEMA declaration submitted to your bank.",
+              text: "Sending Cash Home requires: (1) Form 15CB certified by a Chartered Accountant verifying tax compliance, (2) Form 15CA filed online on the Income Tax e-filing portal, (3) Filed Pact for Sale / Conveyance Deed, (4) Filed Will, Probate, or Legal Heir Paper proving inherited title, (5) Proof of tax payment (TDS paper Form 16A or advance tax challan), and (6) Form A2 and FEMA declaration submitted to your bank.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "How long does it take to obtain a Section 197 Lower TDS Certificate via TRACES?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Processing typically requires 3 to 6 weeks from online submission on the TRACES portal. The file is assigned to the International Taxation Ward having jurisdiction over non-residents. Sellers should initiate the application immediately after signing the Agreement for Sale / MoU and well before executing the final registered sale deed.",
+              text: "Processing typically requires 3 to 6 weeks from online submission on the TRACES portal. The file is assigned to the International Taxation Ward having area over non-residents. Sellers should initiate the form right away after signing the Pact for Sale / MoU and well before signing the final filed sale deed.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "Can multiple NRI siblings selling one inherited property each repatriate USD 1 Million?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. The RBI USD 1 Million annual limit applies individually to each separate legal heir holding a distinct PAN card. If three NRI siblings jointly inherit ancestral property in India, each co-owner can independently repatriate up to USD 1 Million per financial year through their respective NRO accounts, enabling up to USD 3 Million in aggregate family transfers.",
+              text: "Yes. The RBI USD 1 Million annual limit applies individually to each separate legal heir holding a distinct PAN card. If three NRI siblings jointly inherit family asset in India, each co-owner can independently repatriate up to USD 1 Million per financial year through their respective NRO accounts, enabling up to USD 3 Million in aggregate family transfers.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
             name: "Can NRI sellers claim Double Taxation Relief (DTAA) in the US, UK, or Canada?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Article 13 of the India-US DTAA (and corresponding capital gains provisions in UK and Canada treaties), capital gains on immovable real estate are primarily taxable in India where the property is located. However, you can claim a Foreign Tax Credit (FTC) in your home jurisdiction (such as IRS Form 1116 in the United States) to eliminate double taxation.",
+              text: "Yes. Under Article 13 of the India-US DTAA (and corresponding capital gains rules in UK and Canada treaties), capital gains on land real estate are primarily taxable in India where the asset is located. However, you can claim a Foreign Tax Credit (FTC) in your home area (such as IRS Form 1116 in the United States) to eliminate double taxation.",
             },
           },
         ],

@@ -148,7 +148,7 @@ export default function DnhDdLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Daman, Diu & Dadra: Online Will Guide",
         description:
-          "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO.",
+          "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law estate heritage, plant estate transfer, and SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -196,7 +196,7 @@ export default function DnhDdLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Dadra and Nagar Haveli and Daman and Diu - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Sub-Registrar registration, and doorstep execution support across Silvassa, Daman, Diu, and.",
+          "Professional Will drafting, lawyer check, SRO filing, and doorstep signing support across Silvassa, Daman, Diu, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -264,38 +264,38 @@ export default function DnhDdLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Dadra and Nagar Haveli and Daman and Diu",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Silvassa, Daman, or Diu.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Silvassa, Daman, or Diu.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your industrial manufacturing units in Silvassa, Portuguese-era bungalows in Daman, coastal properties in Diu, agricultural farmlands, and bank accounts. Appoint beneficiaries and a dependable executor.",
+            text: "List your plant manufacturing units in Silvassa, Portuguese-era bungalows in Daman, coastal assets in Diu, farm farmlands, and bank accounts. Appoint heirs and a dependable executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using legally vetted clauses harmonizing Portuguese Civil Code aspects where applicable, providing clear asset bequests, minor guardianship, and debt exoneration.",
+            text: "Draft your Will using legally vetted clauses harmonizing Portuguese Civil Code aspects where applicable, providing clear asset bequests, minor child care, and debt exoneration.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment",
-            text: "Book your registration slot at the Sub-Registrar Office in Silvassa, Daman, or Diu and remit nominal statutory government fees.",
+            text: "Book your filing slot at the SRO office in Silvassa, Daman, or Diu and remit nominal legal government fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at UT Sub-Registrar Office",
-            text: "Visit the SRO with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

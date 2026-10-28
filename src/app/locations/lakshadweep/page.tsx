@@ -249,7 +249,7 @@ export default function LakshadweepLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Lakshadweep",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Lakshadweep.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Lakshadweep.",
         totalTime: "P3D",
         step: [
           {
@@ -262,13 +262,13 @@ export default function LakshadweepLocationPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal and Local Clauses",
-            text: "Draft your Will using verified legal clauses adhering to Section 63 of the Indian Succession Act, island land revenue rules, and local matrilineal rules.",
+            text: "Draft your Will using checked legal clauses adhering to Section 63 of the Indian Succession Act, island land revenue rules, and local matrilineal rules.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",

@@ -422,7 +422,7 @@ export default function LettersOfAdministrationPage() {
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
-              Letters of Administration Lawyer India
+              Letters of Care Lawyer India
             </span>
           </nav>
 
@@ -435,7 +435,7 @@ export default function LettersOfAdministrationPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span className="hidden sm:inline">·</span>
@@ -458,13 +458,13 @@ export default function LettersOfAdministrationPage() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4">
                 <span>
-                  High Court Testamentary Practice · Pan-India Court Representation
+                  High Court Will Practice · Pan-India Court Representation
                 </span>
               </div>
 
               {/* Single H1: 59 characters (Strictly < 70 chars for Screaming Frog) */}
               <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.35rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-5">
-                Letters of Administration Lawyer in India &amp; Court Petitions
+                Letters of Care Lawyer in India &amp; Court Petitions
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
@@ -474,8 +474,8 @@ export default function LettersOfAdministrationPage() {
                 <strong className="text-[#111827]">
                   Sections 218 and 232 of the Indian Succession Act, 1925
                 </strong>
-                , our High Court advocates petition the civil courts for Letters of
-                Administration (LOA) to establish lawful estate control and title.
+                , our High Court lawyers petition the civil courts for Letters of
+                Care (LOA) to establish lawful estate control and title.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -483,7 +483,7 @@ export default function LettersOfAdministrationPage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white text-[15px] sm:text-[16px] font-semibold px-7 py-3.5 shadow-sm transition-all"
                 >
-                  <span>Consult High Court Advocate</span>
+                  <span>Consult High Court Lawyer</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <Link
@@ -520,23 +520,23 @@ export default function LettersOfAdministrationPage() {
                 Crucial Legal Distinction
               </div>
               <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4 leading-snug">
-                Why Succession Certificates Fail for Land &amp; Lockers
+                Why Estate Papers Fail for Land &amp; Lockers
               </h2>
               <ul className="space-y-3.5 text-[14px] leading-[1.6] text-[#374151] mb-6">
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Section 370 ISA Bars Real Estate:</strong> Succession
-                    Certificates apply only to debts and listed securities. Sub-Registrars
-                    cannot mutate apartments or plots based on a Succession Certificate.
+                    <strong>Section 370 ISA Bars Real Estate:</strong> Estate
+                    Papers apply only to debts and listed securities. Sub-Registrars
+                    cannot mutate apartments or plots based on a Estate Paper.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
                     <strong>Bank Lockers Demand Letters of Admin:</strong> Physical
-                    contents like gold ornaments, bullion, and property deeds cannot be
-                    claimed through Section 370 certificates.
+                    contents like gold ornaments, bullion, and asset deeds cannot be
+                    claimed through Section 370 papers.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -544,7 +544,7 @@ export default function LettersOfAdministrationPage() {
                   <span>
                     <strong>Will with No Named Executor:</strong> When a Will does not
                     appoint an executor, Probate is barred under Section 222. Letters of
-                    Administration cum testamento annexo is compulsory.
+                    Care cum testamento annexo is needed.
                   </span>
                 </li>
               </ul>
@@ -569,11 +569,11 @@ export default function LettersOfAdministrationPage() {
               <span>Court Strategy Navigator</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Interactive Letters of Administration Decision Tool
+              Free Letters of Care Decision Tool
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Determine whether your deceased estate requires Section 218 Letters of
-              Administration, Section 232 Will Annexed administration, or Probate:
+              Care, Section 232 Will Annexed care, or Probate:
             </p>
           </div>
 
@@ -587,15 +587,15 @@ export default function LettersOfAdministrationPage() {
           <div className="max-w-3xl mb-8">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <Gavel className="w-4 h-4" />
-              <span>Courtroom &amp; Testamentary Practice</span>
+              <span>Courtroom &amp; Will Practice</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              High Court Testamentary Practice: Representation Asset
+              High Court Will Practice: Representation Asset
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Testamentary and intestate proceedings under the Indian Succession Act,
+              Will and no-Will proceedings under the Indian Succession Act,
               1925 require meticulous compliance with High Court Original Side rules,
-              revenue circle valuations, and Section 291 administration bond sureties:
+              revenue circle valuations, and Section 291 care bond sureties:
             </p>
           </div>
 
@@ -611,10 +611,10 @@ export default function LettersOfAdministrationPage() {
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
                 <strong>Court Practice Overview:</strong> Petition drafting, citation
-                issuance under Section 283, and administration bond execution under
+                issuance under Section 283, and care bond signing under
                 Section 291 of the Indian Succession Act, 1925.
               </span>
-              <span>Advocate Anuj Anand Malik &amp; AMA Legal Solutions</span>
+              <span>Lawyer Anuj Anand Malik &amp; AMA Legal Solutions</span>
             </figcaption>
           </figure>
         </section>
@@ -626,14 +626,14 @@ export default function LettersOfAdministrationPage() {
           <div className="max-w-3xl mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <FileCheck className="w-4 h-4" />
-              <span>Statutory Comparison Matrix</span>
+              <span>Legal Comparison Matrix</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
-              3-Way Matrix: Probate vs Admin Letters vs Succession
+              3-Way Matrix: Probate vs Admin Letters vs Estate
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Understand the precise statutory boundaries separating Probate, Letters
-              of Administration, and Succession Certificates under the Indian Succession
+              Understand the precise legal boundaries separating Probate, Letters
+              of Care, and Estate Papers under the Indian Succession
               Act, 1925:
             </p>
           </div>
@@ -645,8 +645,8 @@ export default function LettersOfAdministrationPage() {
                   <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
                     <th className="py-4 px-6 w-[22%]">Legal Parameter</th>
                     <th className="py-4 px-6 w-[26%]">Probate of Will</th>
-                    <th className="py-4 px-6 w-[26%]">Letters of Administration</th>
-                    <th className="py-4 px-6 w-[26%]">Succession Certificate</th>
+                    <th className="py-4 px-6 w-[26%]">Letters of Care</th>
+                    <th className="py-4 px-6 w-[26%]">Estate Paper</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
@@ -683,13 +683,13 @@ export default function LettersOfAdministrationPage() {
               <span>Court-Ready Legal Drafting</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Statutory Format: Section 278 Petition Verification
+              Legal Format: Section 278 Petition Check
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Every petition for Letters of Administration must satisfy the strict
+              Every petition for Letters of Care must satisfy the strict
               pleading rules under Section 278 of the Indian Succession Act, 1925.
               Review the court-tested title, body, and prayer format utilized by our
-              testamentary advocates:
+              Will lawyers:
             </p>
           </div>
 
@@ -714,10 +714,10 @@ export default function LettersOfAdministrationPage() {
                 Estimate Court Fees &amp; Filing Timelines in Your State
               </h3>
               <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl mb-4">
-                State court fees for Letters of Administration vary from statutory
+                State court fees for Letters of Care vary from legal
                 maximum caps (such as ₹75,000 in Maharashtra) to percentage-based
-                ad-valorem schedules in Delhi and Karnataka. Use our interactive
-                calculator before initiating court proceedings:
+                ad-valorem schedules in Delhi and Karnataka. Use our free
+                tool before initiating court proceedings:
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-semibold text-gray-300">
                 <span className="flex items-center gap-1.5">
@@ -743,7 +743,7 @@ export default function LettersOfAdministrationPage() {
                 href="/tools/legal-heir-vs-succession-certificate-decision-tool"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/15 text-xs font-bold uppercase tracking-wider px-5 py-3.5 transition-colors text-center"
               >
-                <span>Check Legal Heir Certificate Tool</span>
+                <span>Check Legal Heir Paper Tool</span>
               </Link>
             </div>
           </div>
@@ -762,7 +762,7 @@ export default function LettersOfAdministrationPage() {
               Step-by-Step Court Roadmap for Letters of Admin
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Obtaining Letters of Administration requires adherence to procedural
+              Obtaining Letters of Care requires adherence to procedural
               mandates under the Indian Succession Act, 1925 and High Court Original
               Side rules:
             </p>
@@ -773,32 +773,32 @@ export default function LettersOfAdministrationPage() {
               {
                 step: "01",
                 title: "Legal Heir & Estate Audit",
-                desc: "Identify all Class-I legal heirs, verify original Death Certificate, and collect title deeds, mutation records, and bank locker allocation numbers.",
+                desc: "Identify all Class-I legal heirs, verify original Death Paper, and collect title deeds, name change records, and bank locker allocation numbers.",
               },
               {
                 step: "02",
                 title: "Petition Drafting (s. 278)",
-                desc: "Prepare the petition with verified Schedule of Properties (movable and immovable), valuation declarations, and Section 281 witness affidavits.",
+                desc: "Prepare the petition with checked Schedule of Assets (cash and land), price check declarations, and Section 281 witness sworn notes.",
               },
               {
                 step: "03",
                 title: "Court Filing & Registry Check",
-                desc: "File before the competent District Court or High Court Original Jurisdiction. Pass registry scrutiny and rectify objections within statutory timelines.",
+                desc: "File before the competent District Court or High Court Original Area. Pass registry scrutiny and rectify objections within legal timelines.",
               },
               {
                 step: "04",
                 title: "Citations & Public Notice",
-                desc: "Court issues individual citations to all surviving legal heirs and orders newspaper advertisements in English and vernacular dailies (s. 283).",
+                desc: "Court issues single citations to all surviving legal heirs and orders newspaper advertisements in English and vernacular dailies (s. 283).",
               },
               {
                 step: "05",
                 title: "Valuation & Court Fee Deposit",
-                desc: "The District Collector assesses the net valuation of the estate. Deposit applicable state court fee stamp charges before the court registrar.",
+                desc: "The District Collector assesses the net price check of the estate. Deposit applicable state court fee stamp charges before the court registrar.",
               },
               {
                 step: "06",
                 title: "Administration Bond & Grant",
-                desc: "Execute the Section 291 Administration Bond with approved sureties. Court issues Letters of Administration under formal seal for property mutation.",
+                desc: "Execute the Section 291 Care Bond with approved sureties. Court issues Letters of Care under formal seal for asset name change.",
               },
             ].map((item) => (
               <div
@@ -829,26 +829,26 @@ export default function LettersOfAdministrationPage() {
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
                 <Lock className="w-4 h-4" />
-                <span>Specialized Testamentary Scenarios</span>
+                <span>Specialized Will Scenarios</span>
               </div>
               <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
-                Bank Locker Release &amp; Section 232 Will Administration
+                Bank Locker Release &amp; Section 232 Will Care
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Two circumstances frequently demand Letters of Administration in Indian courts:
+                Two circumstances frequently demand Letters of Care in Indian courts:
               </p>
               <div className="space-y-3 text-[14.5px] text-[#374151] mb-2">
                 <p>
-                  <strong>1. Physical Bank Locker Inventory:</strong> Commercial banks
-                  strictly refuse to open a deceased individual&apos;s safe deposit
-                  locker without a joint survivor, registered nominee, or court decree.
-                  Because Section 370 excludes physical locker articles, our advocates
-                  petition the court for Letters of Administration coupled with an
+                  <strong>1. Physical Bank Locker Inventory:</strong> Shop banks
+                  strictly refuse to open a deceased single&apos;s safe deposit
+                  locker without a joint survivor, filed nominee, or court decree.
+                  Because Section 370 excludes physical locker articles, our lawyers
+                  petition the court for Letters of Care coupled with an
                   interim prayer to appoint a Court Commissioner to oversee locker drilling
                   and prepare a sealed inventory.
                 </p>
                 <p>
-                  <strong>2. Letters of Administration cum testamento annexo (Section 232):</strong>{" "}
+                  <strong>2. Letters of Care cum testamento annexo (Section 232):</strong>{" "}
                   When a testator prepares a valid Will but omits appointing an executor,
                   or where the nominated executor passes away or formally renounces probate,
                   Section 222 prevents probate. The universal or residuary legatees must
@@ -870,7 +870,7 @@ export default function LettersOfAdministrationPage() {
                 href="/services/property-mutation-dakhil-kharij-service"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white border border-[#172228]/15 hover:border-[#C65378] text-[#172228] text-xs font-bold uppercase tracking-[0.12em] px-5 py-3.5 transition-colors text-center"
               >
-                <span>Property Mutation Guidance</span>
+                <span>Asset Name Change Guidance</span>
               </Link>
             </div>
           </div>
@@ -883,10 +883,10 @@ export default function LettersOfAdministrationPage() {
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <BookOpen className="w-4 h-4" />
-              <span>Statutory FAQs</span>
+              <span>Legal FAQs</span>
             </div>
             <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
-              Frequently Asked Questions: Letters of Administration
+              Frequently Asked Questions: Letters of Care
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Authoritative statutory guidance prepared by the{" "}
@@ -918,7 +918,7 @@ export default function LettersOfAdministrationPage() {
                 Related Indian Testamentary Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore our statutory court services and asset transmission tools:
+                Explore our legal court services and asset transfer tools:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -933,14 +933,14 @@ export default function LettersOfAdministrationPage() {
                 href="/services/succession-certificate"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Succession Certificate Services</span>
+                <span>Estate Paper Services</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
               <Link
                 href="/services/legal-heir"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
-                <span>Legal Heir Certificate Assistance</span>
+                <span>Legal Heir Paper Help</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -953,7 +953,7 @@ export default function LettersOfAdministrationPage() {
         <section className="w-full p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1">
-              Editorial &amp; Statutory Compliance Attribution
+              Editorial &amp; Legal Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
               Authored by{" "}
@@ -963,7 +963,7 @@ export default function LettersOfAdministrationPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>{" "}
               · Reviewed by AMA Legal Solutions
             </div>
@@ -971,7 +971,7 @@ export default function LettersOfAdministrationPage() {
               This guide is prepared in accordance with the Indian Succession Act, 1925,
               the Hindu Succession Act, 1956, and High Court Original Side Rules. It is
               intended for general informational and procedural guidance and does not
-              substitute individualized advocate representation in testamentary court proceedings.
+              substitute individualized lawyer representation in Will court proceedings.
             </p>
           </div>
           <a

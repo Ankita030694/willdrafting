@@ -144,7 +144,7 @@ export default function RajkotLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Rajkot: Legal Online Will Making Help",
         description:
-          "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession.",
+          "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat filing advice, and seamless family business estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function RajkotLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Rajkot - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, Garvi Gujarat portal appointment booking, and doorstep execution support across Rajkot.",
+          "Professional Will drafting, lawyer talk, Garvi Gujarat portal appointment booking, and doorstep signing support across Rajkot.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -260,38 +260,38 @@ export default function RajkotLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Rajkot",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Rajkot.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Rajkot.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Rajkot assets including RUDA residential plots, RMC apartments, GIDC industrial units, gold bullion, and bank accounts. Designate beneficiaries and an executor.",
+            text: "List your Rajkot assets including RUDA home plots, RMC apartments, GIDC plant units, gold bullion, and bank accounts. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, business continuity, minor guardianship, and revocation of prior wills.",
+            text: "Draft your Will using checked legal clauses for clear asset split, business continuity, minor child care, and revocation of prior wills.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Garvi Gujarat Appointment Slot",
-            text: "Schedule your registration appointment on the Garvi Gujarat portal for your relevant Rajkot SRO and pay the flat ₹100 registration fee via Cyber Treasury.",
+            text: "Schedule your filing appointment on the Garvi Gujarat portal for your relevant Rajkot SRO and pay the flat ₹100 filing fee via Cyber Treasury.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Rajkot SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for identity verification, digital photograph capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for identity check, digital photograph capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

@@ -79,7 +79,7 @@ export default function ToolsPage() {
     "@type": "CollectionPage",
     name: "WillDrafting Legal Succession Tools & Calculators Directory",
     description:
-      "Complete index of interactive succession tools, court fee calculators, NRI Will checkers, and probate diagnostic engines.",
+      "Complete index of free estate tools, court fee tools, NRI Will checkers, and probate diagnostic engines.",
     url: "https://www.willdrafting.in/tools",
     isPartOf: {
       "@type": "WebSite",

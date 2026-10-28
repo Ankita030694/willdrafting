@@ -416,37 +416,37 @@ const FAQS = [
   {
     question: "Are there any recurring subscription fees or hidden platform charges?",
     answer:
-      "No. WillDrafting operates on a strictly transparent one-time pricing model. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden advocate retainers. You receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset distribution or family circumstances change.",
+      "No. WillDrafting operates on a strictly transparent one-time pricing model. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden lawyer retainers. You receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset split or family circumstances change.",
   },
   {
     question: "Is an online-drafted Will legally enforceable in Indian courts?",
     answer:
-      "Yes, absolutely. Under Section 63 of the Indian Succession Act, 1925, any Will written in clear language, declaring testamentary intent, executed by an individual of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India.",
+      "Yes, absolutely. Under Section 63 of the Indian Succession Act, 1925, any Will written in clear language, declaring Will intent, signed by an single of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India.",
   },
   {
     question: "Do I need to purchase non-judicial stamp paper or have the Will notarized?",
     answer:
-      "No. Under Schedule I of the Indian Stamp Act, 1899, a Will is completely exempt from stamp duty across all Indian states and Union Territories. Printing on plain white A4 paper is legally standard. Notarization is also optional and does not replace the mandatory requirement of two independent witnesses.",
+      "No. Under Schedule I of the Indian Stamp Act, 1899, a Will is completely exempt from stamp duty across all Indian states and Union Territories. Printing on plain white A4 paper is legally standard. Notarization is also a choice and does not replace the needed rule of two independent witnesses.",
   },
   {
-    question: "Is registration at the Sub-Registrar office mandatory for a valid Will?",
+    question: "Is filing at the SRO office needed for a valid Will?",
     answer:
-      "Registration is purely optional under Section 18(e) of the Registration Act, 1908. The Supreme Court of India has repeatedly affirmed that an unregistered Will executed in accordance with Section 63 holds equal legal validity in court. Registration provides optional official record-keeping.",
+      "Filing is purely a choice under Section 18(e) of the Filing Act, 1908. The Supreme Court of India has repeatedly affirmed that an plain Will signed in accordance with Section 63 holds equal legal validity in court. Filing provides a choice official record-keeping.",
   },
   {
     question: "Can I edit and update my Will later if my assets change?",
     answer:
-      "Yes. Every WillDrafting account includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change beneficiaries or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will.",
+      "Yes. Every WillDrafting account includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change heirs or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will.",
   },
   {
     question: "Why choose WillDrafting instead of traditional law firm retainers?",
     answer:
-      "Traditional law firms charge ₹15,000 to ₹45,000+ due to manual drafting rounds and hourly billing. Powered by AMA Legal Solutions, WillDrafting combines automated statutory assembly with High Court advocate verification, delivering law-firm accuracy at a transparent fixed fee.",
+      "Traditional law firms charge ₹15,000 to ₹45,000+ due to manual drafting rounds and hourly billing. Powered by AMA Legal Solutions, WillDrafting combines automated legal assembly with High Court lawyer check, delivering law-firm accuracy at a transparent fixed fee.",
   },
   {
-    question: "Can I distribute ancestral property or only self-acquired assets?",
+    question: "Can I distribute family asset or only self-acquired assets?",
     answer:
-      "Under Indian succession law, you have testamentary power to bequeath 100% of your self-acquired properties, bank accounts, and investments. For undivided ancestral coparcenary property (under Section 30 of the Hindu Succession Act, 1956), you can bequeath your specific undivided share.",
+      "Under Indian succession law, you have Will power to bequeath 100% of your self-acquired assets, bank accounts, and investments. For undivided family joint asset (under Section 30 of the Hindu Succession Act, 1956), you can bequeath your specific undivided share.",
   },
   {
     question: "Which payment methods are accepted and how is financial security handled?",
@@ -489,7 +489,7 @@ export default function PricingPage() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 text-[#C65378] bg-[#C65378]/10 px-3.5 py-1.5 rounded-full text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Statutory Estate Planning · AMA Legal Solutions</span>
+                <span>Legal Estate Planning · AMA Legal Solutions</span>
               </div>
 
               {/* Single H1 (< 70 chars: 50 chars) */}
@@ -498,7 +498,7 @@ export default function PricingPage() {
               </h1>
 
               <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.68] text-[#49585F] max-w-[680px] mb-8">
-                Clear, fixed-price <strong className="text-[#172228]">online Will making cost in India</strong> with zero hidden lawyer retainers or annual vault subscriptions. Whether you need an instant court-ready Will under Section 63, a manual High Court advocate audit, or a bespoke <Link href="/services/nri-will-india" className="text-[#C65378] font-semibold underline underline-offset-4">NRI Two-Will estate plan</Link>, pay once and edit free for life.
+                Clear, fixed-price <strong className="text-[#172228]">online Will making cost in India</strong> with zero hidden lawyer retainers or annual vault subscriptions. Whether you need an instant court-ready Will under Section 63, a manual High Court lawyer audit, or a bespoke <Link href="/services/nri-will-india" className="text-[#C65378] font-semibold underline underline-offset-4">NRI Two-Will estate plan</Link>, pay once and edit free for life.
               </p>
 
               {/* Editorial Guarantee Strip */}
@@ -559,7 +559,7 @@ export default function PricingPage() {
                       </span>
                     </div>
                     <p className="text-xs text-[#49585F]">
-                      One-time fee · Instant PDF or Bar Advocate verified · Free lifetime updates
+                      One-time fee · Instant PDF or Bar Lawyer checked · Free lifetime updates
                     </p>
                   </div>
 
@@ -587,7 +587,7 @@ export default function PricingPage() {
                       </span>
                     </div>
                     <p className="text-xs text-[#55636D]">
-                      Recurring annual custody charges + percentage cut during estate execution
+                      Recurring annual custody charges + percentage cut during estate signing
                     </p>
                   </div>
                 </div>
@@ -621,11 +621,11 @@ export default function PricingPage() {
                 id="ledger-plans-heading"
                 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.75rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827]"
               >
-                Select Your Level of Legal Verification
+                Select Your Level of Legal Check
               </h2>
             </div>
             <p className="text-sm sm:text-[0.95rem] text-[#49585F] max-w-md">
-              Start with our self-service Essential Will and upgrade to Advocate Review or 1-on-1 Senior Counsel at any stage by paying only the difference.
+              Start with our self-service Essential Will and upgrade to Lawyer Review or 1-on-1 Senior Counsel at any stage by paying only the difference.
             </p>
           </div>
 
@@ -758,7 +758,7 @@ export default function PricingPage() {
               Why Making a Will in India Costs Less Than You Think
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] text-[#49585F] leading-relaxed">
-              Many families overpay for stamp papers, mandatory registration brokers, or recurring codicil fees. Here is what Indian statutory law actually states:
+              Many families overpay for stamp papers, needed filing brokers, or recurring codicil fees. Here is what Indian statutory law actually states:
             </p>
           </div>
 
@@ -779,7 +779,7 @@ export default function PricingPage() {
                   No Stamp Paper Required
                 </h3>
                 <p className="text-sm text-white/85 leading-relaxed">
-                  Under Schedule I of the Indian Stamp Act, 1899, testamentary Wills are 100% exempt from stamp duty across all Indian states. A Will printed on plain white A4 paper carries full legal validity in court.
+                  Under Schedule I of the Indian Stamp Act, 1899, Will Wills are 100% exempt from stamp duty across all Indian states. A Will printed on plain white A4 paper carries full legal validity in court.
                 </p>
               </div>
             </div>
@@ -788,7 +788,7 @@ export default function PricingPage() {
             <div className="rounded-[28px] bg-white border border-[#172228]/10 p-8 sm:p-9 flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
               <div className="flex items-center justify-between mb-6">
                 <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-[#C65378]">
-                  Registration Act, 1908
+                  Filing Act, 1908
                 </span>
                 <Scale className="w-5 h-5 text-[#C65378]" />
               </div>
@@ -797,10 +797,10 @@ export default function PricingPage() {
                   Section 18(e)
                 </div>
                 <h3 className="text-lg font-semibold text-[#111827] mb-2">
-                  Sub-Registrar Visit Is Optional
+                  SRO Visit Is A Choice
                 </h3>
                 <p className="text-sm text-[#49585F] leading-relaxed">
-                  The Supreme Court of India (<em>Ishwardeo Narain Singh v. Smt. Kamta Devi</em>) affirmed that an unregistered Will signed before two independent witnesses under Section 63 holds equal legal standing to a registered Will.
+                  The Supreme Court of India (<em>Ishwardeo Narain Singh v. Smt. Kamta Devi</em>) affirmed that an plain Will signed before two independent witnesses under Section 63 holds equal legal standing to a filed Will.
                 </p>
               </div>
             </div>
@@ -821,7 +821,7 @@ export default function PricingPage() {
                   Unlimited Lifetime Amendments
                 </h3>
                 <p className="text-sm text-[#172228]/80 leading-relaxed">
-                  Offline advocates charge ₹5,000–₹15,000 every time you draft a Codicil or add a new bank account or property. With WillDrafting.in, you can update your Will and generate a fresh PDF free for life.
+                  Offline lawyers charge ₹5,000–₹15,000 every time you draft a Codicil or add a new bank account or asset. With WillDrafting.in, you can update your Will and generate a fresh PDF free for life.
                 </p>
               </div>
             </div>
@@ -841,10 +841,10 @@ export default function PricingPage() {
               id="comparison-matrix-heading"
               className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.75rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3"
             >
-              Full Feature &amp; Statutory Comparison Matrix
+              Full Feature &amp; Legal Comparison Matrix
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] text-[#49585F] leading-relaxed">
-              Compare every clause, advocate verification step, and execution deliverable across our three plans and traditional law firm retainers.
+              Compare every clause, lawyer check step, and signing deliverable across our three plans and traditional law firm retainers.
             </p>
           </div>
 
@@ -853,11 +853,11 @@ export default function PricingPage() {
               <table className="w-full text-left border-collapse min-w-[860px]">
                 <thead>
                   <tr className="bg-[#172228] text-white text-xs font-bold uppercase tracking-[0.12em]">
-                    <th className="py-5 px-6 w-[32%]">Feature &amp; Statutory Provision</th>
+                    <th className="py-5 px-6 w-[32%]">Feature &amp; Legal Rule</th>
                     <th className="py-5 px-5 w-[17%] bg-[#C65378] text-white">
-                      Auto Verified (₹2,490)
+                      Auto Checked (₹2,490)
                     </th>
-                    <th className="py-5 px-5 w-[18%]">Lawyer Verified (₹4,990)</th>
+                    <th className="py-5 px-5 w-[18%]">Lawyer Checked (₹4,990)</th>
                     <th className="py-5 px-5 w-[18%]">Connect Lawyer (₹9,990)</th>
                     <th className="py-5 px-5 w-[15%] text-white/70">Offline Law Firm</th>
                   </tr>
@@ -926,7 +926,7 @@ export default function PricingPage() {
                 Frequently Asked Questions on Will Charges
               </h3>
               <p className="text-sm sm:text-[0.95rem] text-[#49585F] leading-relaxed mb-6">
-                Straightforward answers about our one-time fee structure, stamp duty exemptions, and advocate verification under Indian succession law.
+                Straightforward answers about our one-time fee structure, stamp duty exemptions, and lawyer check under Indian succession law.
               </p>
 
               <div className="rounded-[24px] bg-white border border-[#172228]/10 p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
@@ -940,7 +940,7 @@ export default function PricingPage() {
                   </div>
                 </div>
                 <p className="text-xs text-[#49585F] leading-relaxed mb-4">
-                  Unsure whether your estate needs the ₹2,490 Auto-Verified plan, ₹4,990 Lawyer-Verified plan, or ₹9,990 NRI/Bespoke plan?
+                  Unsure whether your estate needs the ₹2,490 Auto-Checked plan, ₹4,990 Lawyer-Checked plan, or ₹9,990 NRI/Bespoke plan?
                 </p>
                 <Link
                   href="/contact"
@@ -973,6 +973,28 @@ export default function PricingPage() {
             </div>
           </div>
         </section>
+      
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
       </main>
 
       <CTA />

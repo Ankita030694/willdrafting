@@ -45,7 +45,7 @@ const TOC_ITEMS = [
   { id: "three-fatal-mistakes", label: "8. 3 Common Mistakes to Avoid" },
   { id: "conflict-resolution-rules", label: "9. How Codicils & Wills Work Together" },
   { id: "specialized-scenarios", label: "10. 4 Everyday Situations" },
-  { id: "institutional-backing", label: "11. Lawyer Verified & Trusted" },
+  { id: "institutional-backing", label: "11. Lawyer Checked & Trusted" },
   { id: "frequently-asked-questions", label: "12. Questions People Often Ask" },
   { id: "statutory-citations", label: "13. Official Legal References" },
 ];
@@ -183,23 +183,23 @@ const FAQS = [
   },
   {
     q: "How many witnesses are needed for a Codicil?",
-    a: "You need at least two adult witnesses (above 18 years), just like a regular Will (Section 63). They must watch you sign, and then sign in front of you. They should not be people who receive property under the Will.",
+    a: "You need at least two adult witnesses (above 18 years), just like a regular Will (Section 63). They must watch you sign, and then sign in front of you. They should not be people who receive asset under the Will.",
   },
   {
     q: "Can I just cross out words with a pen on my original Will?",
     a: "Never do this! Under Section 71 of the Indian Succession Act, crossing out words, writing in the margins, or using white correction fluid on a signed Will has zero legal value. In fact, it makes courts and banks suspicious of tampering. Always make a clean Codicil instead.",
   },
   {
-    q: "Can someone who gets property in my Will sign as a witness to the Codicil?",
-    a: "No! Under Section 67 of the Indian Succession Act, if any beneficiary (or their spouse) signs as a witness, they completely lose their inheritance. Always choose independent friends, colleagues, or your family doctor.",
+    q: "Can someone who gets asset in my Will sign as a witness to the Codicil?",
+    a: "No! Under Section 67 of the Indian Succession Act, if any heir (or their spouse) signs as a witness, they completely lose their estate. Always choose independent friends, colleagues, or your family doctor.",
   },
   {
     q: "When should I make a Codicil vs making a fresh new Will?",
-    a: "Use a Codicil for small, simple updates: changing an executor, adding a new bank account, or updating an address. If you want to make major changes to how your property is divided, or if you got married or divorced, it is much safer and cleaner to make a brand-new Will that replaces the old one.",
+    a: "Use a Codicil for small, simple updates: changing an executor, adding a new bank account, or updating an address. If you want to make major changes to how your asset is divided, or if you got married or divorced, it is much safer and cleaner to make a brand-new Will that replaces the old one.",
   },
   {
-    q: "Does a Codicil need to be registered at the government office?",
-    a: "Registration is optional. A Codicil on plain paper is legally valid. However, if your original Will was registered at the Sub-Registrar's office, it is good practice to register the Codicil there too so government records match.",
+    q: "Does a Codicil need to be filed at the government office?",
+    a: "Filing is a choice. A Codicil on plain paper is legally valid. However, if your original Will was filed at the SRO's office, it is good practice to register the Codicil there too so government records match.",
   },
   {
     q: "What happens if a Codicil conflicts with the original Will?",
@@ -211,7 +211,7 @@ const FAQS = [
   },
   {
     q: "Does my existing executor handle the Codicil too?",
-    a: "Yes. Unless your Codicil specifically changes the executor, the executor named in your original Will has full legal authority to carry out both the original Will and the Codicil together.",
+    a: "Yes. Unless your Codicil mainly changes the executor, the executor named in your original Will has full legal office to carry out both the original Will and the Codicil together.",
   },
 ];
 
@@ -228,7 +228,7 @@ export default function CodicilFormatIndiaClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [copied, setCopied] = useState<boolean>(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({
@@ -344,7 +344,7 @@ export default function CodicilFormatIndiaClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -449,7 +449,7 @@ export default function CodicilFormatIndiaClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Section 2(b), Section 62 & Section 63 of the Indian Succession Act, 1925.
@@ -488,7 +488,7 @@ export default function CodicilFormatIndiaClient() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Two Witnesses Required:</strong> Two adult witnesses must see you sign. Never let someone who receives property sign as a witness (Section 67).
+                    <strong>Two Witnesses Required:</strong> Two adult witnesses must see you sign. Never let someone who receives asset sign as a witness (Section 67).
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -513,7 +513,7 @@ export default function CodicilFormatIndiaClient() {
                 Life changes over time. You might open a new bank account, sell a plot, or realize that the executor you chose years ago has moved abroad or become unwell. In India, you do not need to rewrite your entire Will from scratch for minor updates.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Under Section 2(b) of the Indian Succession Act, 1925, a Codicil is simply a formal legal document that adds to, updates, or explains parts of your existing Will. Once signed, the law treats your original Will and your Codicil together as a single complete document.
+                Under Section 2(b) of the Indian Succession Act, 1925, a Codicil is simply a formal legal paper that adds to, updates, or explains parts of your existing Will. Once signed, the law treats your original Will and your Codicil together as a single complete paper.
               </p>
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-sm text-slate-700">
                 <p className="font-semibold text-slate-900 mb-1">
@@ -532,10 +532,10 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Audit: Section 63 & 71 Validity Checklist
+                2. Free Audit: Section 63 & 71 Validity Checklist
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Before signing your Codicil, audit it against these six statutory checkpoints. Ensure your amendment complies with Section 63 and Section 71 of the Indian Succession Act.
+                Before signing your Codicil, audit it against these six legal checkpoints. Ensure your amendment complies with Section 63 and Section 71 of the Indian Succession Act.
               </p>
 
               {/* Checklist Box */}
@@ -580,14 +580,14 @@ export default function CodicilFormatIndiaClient() {
                   <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-2.5 text-xs text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>
-                      All criteria met. Your Codicil satisfies Section 63 and Section 71 execution standards.
+                      All criteria met. Your Codicil satisfies Section 63 and Section 71 signing standards.
                     </span>
                   </div>
                 ) : (
                   <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex items-center gap-2.5 text-xs text-amber-800">
                     <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
                     <span>
-                      Please review all criteria to prevent probate objections or statutory invalidation.
+                      Please review all criteria to prevent probate objections or legal invalidation.
                     </span>
                   </div>
                 )}
@@ -604,7 +604,7 @@ export default function CodicilFormatIndiaClient() {
                 3. Clause-Annotated Codicil Format: Free Printable Template
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is a comprehensive Codicil format approved by succession advocates. It covers executor replacement, specific bequest modifications, and statutory republication. Copy it directly or print it for execution.
+                Below is a full Codicil format approved by estate lawyers. It covers executor replacement, specific bequest changes, and legal republication. Copy it directly or print it for signing.
               </p>
 
               {/* Template Container with Copy & Print Toolbar */}
@@ -651,7 +651,7 @@ export default function CodicilFormatIndiaClient() {
 
                 <div className="p-4 bg-rose-50/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
                   <span className="text-center sm:text-left">
-                    Want this custom-filled and reviewed by an advocate in 15 minutes?
+                    Want this custom-filled and reviewed by an lawyer in 15 minutes?
                   </span>
                   <a
                     href="/start"
@@ -695,10 +695,10 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 4: DECISION MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Codicil or New Will: Comprehensive Decision Matrix
+                4. Codicil or New Will: Full Decision Matrix
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Deciding between executing a Codicil and drafting an entirely new Will depends on the scope of changes and future litigation risk. Use this comparison table to choose the safest path.
+                Deciding between signing a Codicil and drafting an entirely new Will depends on the scope of changes and future court fights risk. Use this comparison table to choose the safest path.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -708,15 +708,15 @@ export default function CodicilFormatIndiaClient() {
                       <th className="p-3.5 sm:p-4">Decision Parameter</th>
                       <th className="p-3.5 sm:p-4">When to Use a Codicil</th>
                       <th className="p-3.5 sm:p-4">When to Draft a New Will</th>
-                      <th className="p-3.5 sm:p-4">Advocate Recommendation</th>
+                      <th className="p-3.5 sm:p-4">Lawyer Recommendation</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Scope of Amendment</td>
-                      <td className="p-3.5 text-emerald-700 font-medium">Minor administrative updates</td>
+                      <td className="p-3.5 text-emerald-700 font-medium">Minor office updates</td>
                       <td className="p-3.5 text-slate-700 font-medium">Major estate redistribution</td>
-                      <td className="p-3.5 font-semibold text-[#C65378]">New Will for property shares</td>
+                      <td className="p-3.5 font-semibold text-[#C65378]">New Will for asset shares</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Executor Changes</td>
@@ -727,7 +727,7 @@ export default function CodicilFormatIndiaClient() {
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Life Events (Marriage/Divorce)</td>
                       <td className="p-3.5 text-rose-600 font-medium">Not recommended</td>
-                      <td className="p-3.5 text-emerald-700 font-medium">Essential requirement</td>
+                      <td className="p-3.5 text-emerald-700 font-medium">Essential rule</td>
                       <td className="p-3.5 font-semibold text-[#C65378]">Always draft fresh Will</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
@@ -739,14 +739,14 @@ export default function CodicilFormatIndiaClient() {
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Probate Scrutiny Risk</td>
                       <td className="p-3.5 text-slate-600">Low if cleanly cross-referenced</td>
-                      <td className="p-3.5 text-emerald-700 font-medium">Lowest (Single clean document)</td>
+                      <td className="p-3.5 text-emerald-700 font-medium">Lowest (Single clean paper)</td>
                       <td className="p-3.5 font-semibold text-emerald-700">New Will avoids confusion</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Sub-Registrar Process</td>
+                      <td className="p-3.5 font-bold text-slate-900">SRO Process</td>
                       <td className="p-3.5 text-slate-600">Register at same original SRO</td>
                       <td className="p-3.5 text-slate-700">Can register fresh anywhere</td>
-                      <td className="p-3.5 font-semibold text-slate-800">Match original registration</td>
+                      <td className="p-3.5 font-semibold text-slate-800">Match original filing</td>
                     </tr>
                   </tbody>
                 </table>
@@ -768,10 +768,10 @@ export default function CodicilFormatIndiaClient() {
                   <span>The Pen-and-Ink Trap Under Section 71 of the Indian Succession Act</span>
                 </div>
                 <p className="text-xs sm:text-sm leading-relaxed">
-                  Many testators try to cross out lines with a pen. Some write notes in the margins or use white correction fluid. Never do this. Under Section 71 of the Indian Succession Act, handwritten marks made after signing have no legal effect.
+                  Many Will makers try to cross out lines with a pen. Some write notes in the margins or use white correction fluid. Never do this. Under Section 71 of the Indian Succession Act, handwritten marks made after signing have no legal effect.
                 </p>
                 <p className="text-xs sm:text-sm leading-relaxed">
-                  Pen scribbles create grave suspicion in court. Judges may suspect tampering or fraud. This can tie your family in bitter court disputes. Always execute a clean, separate Codicil to change your Will.
+                  Pen scribbles create grave suspicion in court. Judges may suspect tampering or fraud. This can tie your family in bitter court fights. Always execute a clean, separate Codicil to change your Will.
                 </p>
                 <div className="pt-2 border-t border-amber-200 text-xs font-semibold text-amber-950 flex flex-wrap items-center gap-4">
                   <span>&bull; Never strike out text with a pen</span>
@@ -788,10 +788,10 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 6: VISUAL BLUEPRINT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Visual Blueprint: Anatomy of an Indian Codicil Document
+                6. Visual Blueprint: Anatomy of an Indian Codicil Paper
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                An enforceable Codicil follows an orderly statutory structure. Below is the blueprint showing how recitals, specific amendments, republication, and Section 63 witness attestation connect.
+                An enforceable Codicil follows an orderly legal structure. Below is the blueprint showing how recitals, specific amendments, republication, and Section 63 witness witness signing connect.
               </p>
 
               {/* Full width image card container */}
@@ -808,7 +808,7 @@ export default function CodicilFormatIndiaClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: Standard structure and attestation of a Section 63 compliant Codicil
+                    Figure 1.1: Standard structure and witness signing of a Section 63 compliant Codicil
                   </span>
                   <Link
                     href="/images/codicil-format-india-og.jpg"
@@ -832,7 +832,7 @@ export default function CodicilFormatIndiaClient() {
                 7. Step-by-Step SOP: Five Milestones to Execute a Codicil
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Executing a Codicil in India is straightforward when you follow these five sequential milestones.
+                Signing a Codicil in India is straightforward when you follow these five sequential milestones.
               </p>
 
               <div className="space-y-3.5">
@@ -840,7 +840,7 @@ export default function CodicilFormatIndiaClient() {
                   {
                     step: "1",
                     title: "Locate and Review Baseline Will",
-                    desc: "Retrieve your original Will. Check its signing date and registration details. Note the exact clause numbers you want to change.",
+                    desc: "Retrieve your original Will. Check its signing date and filing details. Note the exact clause numbers you want to change.",
                   },
                   {
                     step: "2",
@@ -860,7 +860,7 @@ export default function CodicilFormatIndiaClient() {
                   {
                     step: "5",
                     title: "Attach to Original Will & Store Securely",
-                    desc: "Attach the signed Codicil securely to your original Will. Keep both documents in a safe place with your named executor.",
+                    desc: "Attach the signed Codicil securely to your original Will. Keep both papers in a safe place with your named executor.",
                   },
                 ].map((item) => (
                   <div
@@ -886,10 +886,10 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 8: COMMON MISTAKES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Three Fatal Codicil Mistakes That Trigger Court Disputes
+                8. Three Fatal Codicil Mistakes That Trigger Court Fights
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Avoid these three common drafting and execution mistakes when amending an Indian Will.
+                Avoid these three common drafting and signing mistakes when amending an Indian Will.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -913,7 +913,7 @@ export default function CodicilFormatIndiaClient() {
                     Allowing an Heir to Sign as Witness
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67, any bequest made to an attesting witness or their spouse becomes void. An heir who witnesses your Codicil legally forfeits their share.
+                    Under Section 67, any bequest made to an signing witness or their spouse becomes void. An heir who witnesses your Codicil legally forfeits their share.
                   </p>
                 </div>
 
@@ -941,7 +941,7 @@ export default function CodicilFormatIndiaClient() {
                 9. How a Codicil Relates to the Original Will in Court
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding how Indian courts interpret a Will and its Codicil together is essential for dispute-free estate administration.
+                Understanding how Indian courts interpret a Will and its Codicil together is essential for fight-free estate care.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -951,14 +951,14 @@ export default function CodicilFormatIndiaClient() {
                     <span>The Doctrine of Republication</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Signing a valid Codicil republishes the original Will. The court reads both documents together as one single estate plan.
+                    Signing a valid Codicil republishes the original Will. The court reads both papers together as one single estate plan.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Scale className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Rule of Later Testamentary Intent</span>
+                    <span>Rule of Later Will Intent</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     If an amended clause in your Codicil conflicts with an old clause, the Codicil prevails. It reflects your most recent wishes.
@@ -968,10 +968,10 @@ export default function CodicilFormatIndiaClient() {
 
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs sm:text-sm text-slate-700">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Probate Procedure When a Codicil Exists
+                  Probate Step When a Codicil Exists
                 </p>
                 <p>
-                  In mandatory probate jurisdictions like Mumbai, Chennai, and Kolkata, submit both documents together. The court grants probate of the Will and Codicil as one unified document.
+                  In needed probate areas like Mumbai, Chennai, and Kolkata, submit both papers together. The court grants probate of the Will and Codicil as one unified paper.
                 </p>
               </div>
             </section>
@@ -986,7 +986,7 @@ export default function CodicilFormatIndiaClient() {
                 10. Four Specialized Scenarios for Codicils in India
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Review these four common real-world scenarios where executing a Codicil is the ideal legal solution.
+                Review these four common real-world scenarios where signing a Codicil is the ideal legal solution.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -996,7 +996,7 @@ export default function CodicilFormatIndiaClient() {
                     <span>Replacing an Executor</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If your executor passes away or moves abroad, use a Codicil. You can name a new executor without changing any property gifts.
+                    If your executor passes away or moves abroad, use a Codicil. You can name a new executor without changing any asset gifts.
                   </p>
                 </div>
 
@@ -1016,7 +1016,7 @@ export default function CodicilFormatIndiaClient() {
                     <span>Updating a Married Name</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If a family member changes their surname after marriage, update it with a Codicil. This avoids delays during bank transmission.
+                    If a family member changes their surname after marriage, update it with a Codicil. This avoids delays during bank transfer.
                   </p>
                 </div>
 
@@ -1039,14 +1039,14 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 11: INSTITUTIONAL BACKING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Institutional Verification: Powered by AMA Legal
+                11. Institutional Check: Powered by AMA Legal
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">WillDrafting.in</h3>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      India&apos;s Dedicated Estate Planning & Succession Portal
+                      India&apos;s Dedicated Estate Planning & Estate Portal
                     </p>
                   </div>
                   <div className="flex items-center gap-3 bg-[#FAF7F0] border border-slate-200 px-4 py-2 rounded-xl text-xs font-semibold text-slate-700">
@@ -1056,7 +1056,7 @@ export default function CodicilFormatIndiaClient() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Every template, legal clause, and automated workflow on WillDrafting.in is designed and regularly audited by experienced advocates from AMA Legal Solutions. We ensure complete alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-level registration norms.
+                  Every template, legal clause, and automated workflow on WillDrafting.in is designed and regularly audited by experienced lawyers from AMA Legal Solutions. We ensure complete alignment with the Indian Succession Act, 1925, Hindu Succession Act, 1956, and state-level filing norms.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -1066,7 +1066,7 @@ export default function CodicilFormatIndiaClient() {
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Zero Stamp Duty</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Statutory Exemption</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Legal Exemption</div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Court Ready PDF</div>
@@ -1086,7 +1086,7 @@ export default function CodicilFormatIndiaClient() {
                 Frequently Asked Questions: Codicils & Will Amendments
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Find clear answers to common questions about executing, witnessing, and registering a Codicil in India.
+                Find clear answers to common questions about signing, witnessing, and registering a Codicil in India.
               </p>
 
               <div className="space-y-3">
@@ -1124,20 +1124,20 @@ export default function CodicilFormatIndiaClient() {
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900">
-                Statutory Citations and Official Legal Resources
+                Legal Citations and Official Legal Resources
               </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 2(b) (definition of codicil), Section 59 (testamentary capacity), Section 62 (revocability), Section 63 (two-witness attestation rules), Section 64 (incorporation of papers), Section 67 (bequest to witness void), and Section 71 (effect of obliteration or alteration).
+                  <strong>Indian Succession Act, 1925:</strong> Section 2(b) (definition of codicil), Section 59 (Will capacity), Section 62 (revocability), Section 63 (two-witness witness signing rules), Section 64 (incorporation of papers), Section 67 (bequest to witness void), and Section 71 (effect of obliteration or alteration).
                 </li>
                 <li>
                   <strong>Indian Stamp Act, 1899:</strong> Schedule I, Entry 64 (wills and codicils exempt from stamp duty).
                 </li>
                 <li>
-                  <strong>Registration Act, 1908:</strong> Section 18(e) (optional registration of wills and codicils).
+                  <strong>Filing Act, 1908:</strong> Section 18(e) (a choice filing of wills and codicils).
                 </li>
                 <li>
-                  <strong>Supreme Court of India:</strong> Principles of testamentary construction and doctrine of republication in succession disputes.
+                  <strong>Supreme Court of India:</strong> Principles of Will construction and doctrine of republication in estate fights.
                 </li>
               </ul>
 
@@ -1166,24 +1166,46 @@ export default function CodicilFormatIndiaClient() {
                     href="/blogs/notarized-will-vs-registered-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Notarized Will vs Registered Will &rarr;
+                    Notarized Will vs Filed Will &rarr;
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Will Registration Service &rarr;
+                    Will Filing Service &rarr;
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Succession Calculator &rarr;
+                    Estate Tool &rarr;
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1203,21 +1225,21 @@ export default function CodicilFormatIndiaClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, probate matters, and estate structuring at AMA Legal Solutions.
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights, probate matters, and estate structuring at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1242,7 +1264,7 @@ export default function CodicilFormatIndiaClient() {
                 Need to Amend or Update Your Will?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Avoid drafting errors. Use our guided step-by-step wizard to create an advocate-verified, court-ready Will or Codicil in 15 minutes.
+                Avoid drafting errors. Use our guided step-by-step wizard to create an lawyer-checked, court-ready Will or Codicil in 15 minutes.
               </p>
               <a
                 href="/start"
@@ -1254,7 +1276,7 @@ export default function CodicilFormatIndiaClient() {
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Questions? Call our advocates</span>
+                <span>Questions? Call our lawyers</span>
               </div>
             </div>
 
@@ -1273,19 +1295,19 @@ export default function CodicilFormatIndiaClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 63 Compliant:</strong> Built-in two-witness attestation block.
+                    <strong>Section 63 Compliant:</strong> Built-in two-witness witness signing block.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Republication:</strong> Ratifies all unchanged original clauses.
+                    <strong>Legal Republication:</strong> Ratifies all unchanged original clauses.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Dispute Resistant:</strong> Prevents Section 71 pen scribble invalidation.
+                    <strong>Fight Resistant:</strong> Prevents Section 71 pen scribble invalidation.
                   </span>
                 </li>
               </ul>
@@ -1319,16 +1341,16 @@ export default function CodicilFormatIndiaClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Notarized vs Registered Will</div>
+                  <div className="font-bold text-xs text-slate-900">Notarized vs Filed Will</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Evidentiary weight comparison &rarr;
+                    Proof weight comparison &rarr;
                   </div>
                 </Link>
                 <Link
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares &rarr;
                   </div>
@@ -1351,7 +1373,7 @@ export default function CodicilFormatIndiaClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/templates/living-will-format-india"
@@ -1363,7 +1385,7 @@ export default function CodicilFormatIndiaClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
               </div>
             </div>

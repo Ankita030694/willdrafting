@@ -22,7 +22,7 @@ export const templatesData: TemplateItem[] = [
     date: "27-10-2026",
     description:
       "ഇന്ത്യൻ പിന്തുടർച്ചാവകാശ നിയമം 1925 സെക്ഷൻ 63 പ്രകാരമുള്ള നിയമസാധുതയുള്ള മരണപത്രം ഫോർമാറ്റ് മലയാളം (Will Format in Malayalam), റീ-സർവ്വേ ഷെഡ്യൂൾ, കേരള PEARL എസ്.ആർ.ഒ രജിസ്ട്രേഷൻ ഗൈഡ്.",
-    meta: "Indian Succession Act 1925 s. 63, Kerala Registration Rules (PEARL) & High Court Precedent Pack (Malayalam/English)",
+    meta: "Indian Succession Act 1925 s. 63, Kerala Filing Rules (PEARL) & High Court Precedent Pack (Malayalam/English)",
     keywords: [
       "മരണപത്രം ഫോർമാറ്റ് മലയാളം",
       "will format in malayalam",
@@ -95,7 +95,7 @@ export const templatesData: TemplateItem[] = [
     date: "27-10-2026",
     description:
       "ಭಾರತೀಯ ಉತ್ತರಾಧಿಕಾರ ಕಾಯ್ದೆ 1925 ರ ಸೆಕ್ಷನ್ 63 ಪ್ರಕಾರ ಕಾನೂನುಬದ್ಧ ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (Will Format in Kannada), ಉಯಿಲು ಪತ್ರ ಕರಡು, ಇಬ್ಬರು ಸಾಕ್ಷಿಗಳು ಮತ್ತು ಕರ್ನಾಟಕ ಕಾವೇರಿ 2.0 ನೋಂದಣಿ ಮಾರ್ಗದರ್ಶಿ.",
-    meta: "Indian Succession Act 1925 ss. 59, 63 & Karnataka Kaveri 2.0 Registration Pack (Kannada/English)",
+    meta: "Indian Succession Act 1925 ss. 59, 63 & Karnataka Kaveri 2.0 Filing Pack (Kannada/English)",
     keywords: [
       "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ",
       "will format in kannada",
@@ -147,7 +147,7 @@ export const templatesData: TemplateItem[] = [
     date: "27-10-2026",
     description:
       "भारतीय वारसा कायदा १९२५ च्या कलम ६३ नुसार कायदेशीररित्या वैध मृत्यूपत्र फॉरमॅट मराठी (Will Format in Marathi) साध्या कागदावर नमुना, २ साक्षीदार व मुंबई प्रोबेट नियम.",
-    meta: "Indian Succession Act 1925 ss. 59, 63, 74, 213 & Maharashtra Registration Pack (Marathi/English)",
+    meta: "Indian Succession Act 1925 ss. 59, 63, 74, 213 & Maharashtra Filing Pack (Marathi/English)",
     keywords: [
       "मृत्यूपत्र फॉरमॅट मराठी",
       "will format in marathi",
@@ -168,8 +168,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925 s. 63 with sample clauses, two witness rules, and Gujarat SRO registration SOP.",
-    meta: "Indian Succession Act 1925 s. 63 & Gujarat Registration Rules Pack (Gujarati/English)",
+      "Legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925 s. 63 with sample clauses, two witness rules, and Gujarat SRO filing SOP.",
+    meta: "Indian Succession Act 1925 s. 63 & Gujarat Filing Rules Pack (Gujarati/English)",
     keywords: [
       "વસીયતનામું ફોર્મેટ ગુજરાતી",
       "will format in gujarati",
@@ -192,8 +192,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Legally valid உயில் சாசனம் மாதிரி (will format in tamil) under Indian Succession Act 1925 s. 63 with Chennai probate rules and SRO registration checklist.",
-    meta: "Indian Succession Act 1925 ss. 57, 63, 213 & TN Registration Rules Pack (Tamil/English)",
+      "Legally valid உயில் சாசனம் மாதிரி (will format in tamil) under Indian Succession Act 1925 s. 63 with Chennai probate rules and SRO filing checklist.",
+    meta: "Indian Succession Act 1925 ss. 57, 63, 213 & TN Filing Rules Pack (Tamil/English)",
     keywords: [
       "உயில் எழுதுவது எப்படி மாதிரி",
       "will format in tamil",
@@ -216,7 +216,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Model Bye-Law 34 & 35 compliant transmission pack under MCS Act s. 154B-13 including Appendix 15, 16, 17, and 19 indemnity bond with zero illegal fee protection.",
+      "Model Bye-Law 34 & 35 compliant transfer pack under MCS Act s. 154B-13 including Appendix 15, 16, 17, and 19 indemnity bond with zero illegal fee protection.",
     meta: "Maharashtra Co-operative Societies Act 1960 s. 154B-13 & Model Bye-Laws 34-35 (English)",
     keywords: [
       "housing society share transfer after death application format",
@@ -241,7 +241,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory Section 284 Indian Succession Act Schedule V caveat format and supporting affidavit template to block secret probate applications in High Court or District Court.",
+      "Legal Section 284 Indian Succession Act Schedule V caveat format and supporting sworn note template to block secret probate forms in High Court or District Court.",
     meta: "Indian Succession Act 1925 ss. 284, 285 & Schedule V Court Pack (English)",
     keywords: [
       "caveat against probate format india",
@@ -265,7 +265,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory pet care conditional caretaker clauses with Section 131 gift-over, testamentary pet trusts, and Section 11(1)(d) 80G charitable corpus donations.",
+      "Legal pet care conditional caretaker clauses with Section 131 gift-over, Will pet trusts, and Section 11(1)(d) 80G charitable corpus donations.",
     meta: "Indian Succession Act 1925 ss. 112-117, 127, 131 & Trusts Act 1882 Pack (English)",
     keywords: [
       "leaving money to charity or pet in will india format",
@@ -289,8 +289,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory Section 30 Hindu Succession Act clause format to bequeath undivided coparcenary interest in HUF property with notional partition calculation and Supreme Court precedent.",
-    meta: "Hindu Succession Act 1956 ss. 6 & 30 Coparcenary Clause Pack (English)",
+      "Legal Section 30 Hindu Succession Act clause format to bequeath undivided joint interest in HUF asset with notional split calculation and Supreme Court precedent.",
+    meta: "Hindu Succession Act 1956 ss. 6 & 30 Joint Clause Pack (English)",
     keywords: [
       "how to mention huf share in will format",
       "section 30 hindu succession act will clause format",
@@ -313,8 +313,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory Deed of Revocation of Will format in India under Section 70 Indian Succession Act with SRO cancellation protocol and comparison against drafting a new Will.",
-    meta: "Indian Succession Act 1925 s. 70 & Registration Act 1908 Book 3 Revocation Pack (English)",
+      "Legal Deed of Revocation of Will format in India under Section 70 Indian Succession Act with SRO cancellation protocol and comparison against drafting a new Will.",
+    meta: "Indian Succession Act 1925 s. 70 & Filing Act 1908 Book 3 Revocation Pack (English)",
     keywords: [
       "how to cancel a registered will in india format",
       "deed of revocation of will format india",
@@ -337,8 +337,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Anti-misuse restricted Special Power of Attorney format for Non-Resident Indians to manage revenue mutation, court probate, and society transfer with 90-day stamp adjudication.",
-    meta: "Powers of Attorney Act 1882 & Registration Act ss. 32 & 33 Template (English)",
+      "Anti-misuse restricted Special Power of Attorney format for Non-Resident Indians to manage revenue name change, court probate, and society transfer with 90-day stamp adjudication.",
+    meta: "Powers of Attorney Act 1882 & Filing Act ss. 32 & 33 Template (English)",
     keywords: [
       "nri power of attorney format for property mutation and probate",
       "special poa format for nri selling inherited property india",
@@ -362,8 +362,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Legally valid partition deed format between brothers and family members under Section 17 Registration Act with floor-wise UDS schedules, Owelty clause & stamp duty.",
-    meta: "Registration Act 1908 s. 17 & Indian Stamp Act 1899 Floor-Wise Partition Pack (English)",
+      "Legally valid split deed format between brothers and family members under Section 17 Filing Act with floor-wise UDS schedules, Owelty clause & stamp duty.",
+    meta: "Filing Act 1908 s. 17 & Indian Stamp Act 1899 Floor-Wise Split Pack (English)",
     keywords: [
       "partition deed format between brothers india",
       "family property partition deed format word pdf",
@@ -386,7 +386,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory executor consent letter and Section 230 Indian Succession Act renunciation deed formats with court affidavit and NRI consular apostille protocol.",
+      "Legal executor consent letter and Section 230 Indian Succession Act giving up deed formats with court sworn note and NRI consular apostille protocol.",
     meta: "Indian Succession Act Sections 229, 230 & 232 Probate & LOA Pack (English)",
     keywords: [
       "renunciation of executorship format india",
@@ -410,7 +410,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory testamentary trust clause format for minor and special needs children under Section 5 Indian Trusts Act with 18/21/25 milestone payouts and spendthrift protection.",
+      "Legal Will trust clause format for minor and special needs children under Section 5 Indian Trusts Act with 18/21/25 milestone payouts and spendthrift protection.",
     meta: "Indian Trusts Act 1882 & ISA 1925 Minor Trust Clause Pack (English)",
     keywords: [
       "testamentary trust clause in will format india",
@@ -482,7 +482,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Download legally vetted disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.",
+      "Download legally vetted leaving out clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.",
     meta: "Indian Succession Act Sections 59 & 61 Vetted Clauses (English)",
     keywords: [
       "how to write disinheritance clause in will india",
@@ -504,7 +504,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory legal heir affidavit format with embedded genealogical pedigree tree (Vamshavali / Pedhinama), Class I heir shares, and revenue notary verification.",
+      "Legal legal heir sworn note format with embedded genealogical pedigree tree (Vamshavali / Pedhinama), Class I heir shares, and revenue notary check.",
     meta: "Hindu Succession Act & BSA 2023 Template (English)",
     keywords: [
       "legal heir affidavit format india",
@@ -528,7 +528,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Statutory affidavit of attesting witness for probate under Section 281 ISA and contemporaneous witness affidavit format for Will execution with doctor certificate.",
+      "Legal sworn note of signing witness for probate under Section 281 ISA and contemporaneous witness sworn note format for Will signing with doctor paper.",
     meta: "Section 281 ISA Probate & Contemporaneous Witness Affidavits (English)",
     keywords: [
       "affidavit of attesting witness for probate of will format",
@@ -572,8 +572,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration Act rules.",
-    meta: "4-in-1 Bank, Municipal, RTO & Court Probate NOC Pack (English)",
+      "Download legally valid noc format from legal heirs for asset transfer, bank claims & vehicle name change. Understand Section 17 Filing Act rules.",
+    meta: "4-in-1 Bank, City, RTO & Court Probate NOC Pack (English)",
     keywords: [
       "noc format from legal heirs for property transfer",
       "no objection affidavit from legal heirs for bank claim",
@@ -618,8 +618,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Legally valid family settlement formats under Registration Act 1908 and Kale Supreme Court rule, featuring past oral memorandum and registered deed drafts.",
-    meta: "Past Oral Memorandum & Partition Deed Formats (English)",
+      "Legally valid family deal formats under Filing Act 1908 and Kale Supreme Court rule, featuring past oral memorandum and filed deed drafts.",
+    meta: "Past Oral Memorandum & Split Deed Formats (English)",
     keywords: [
       "family settlement agreement format india",
       "memorandum of family settlement format word pdf",
@@ -662,7 +662,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Legally valid Indian situs Will format for NRIs and OCIs with non-conflict territorial revocation clause, Section 5 compliance, and FEMA repatriation guidance.",
+      "Legally valid Indian situs Will format for NRIs and OCIs with non-conflict territorial revocation clause, Section 5 compliance, and FEMA sending cash home guidance.",
     meta: "Indian Situs Will Template for NRIs & OCIs (English)",
     keywords: [
       "nri will format for indian property",
@@ -684,7 +684,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "27-10-2026",
     description:
-      "Sharia-compliant Muslim Wasiyatnama format under Application Act 1937 with 1/3rd discretionary bequest rule, heir consent deed, and execution protocol.",
+      "Sharia-compliant Muslim Wasiyatnama format under Form Act 1937 with 1/3rd discretionary bequest rule, heir consent deed, and signing protocol.",
     meta: "Plain Paper Sharia Legal Template (English)",
     keywords: [
       "muslim will format in india",
@@ -728,7 +728,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
     date: "19-10-2026",
     description:
-      "Standard English plain paper Will format compliant with Section 63 Indian Succession Act, two-witness execution rules, and asset schedules.",
+      "Standard English plain paper Will format compliant with Section 63 Indian Succession Act, two-witness signing rules, and asset schedules.",
     meta: "Plain Paper Legal Template (English)",
     keywords: [
       "will format in india",
@@ -772,7 +772,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-indigo-50 text-indigo-700 border-indigo-200/80",
     date: "19-10-2026",
     description:
-      "Section 2(b) supplementary legal instrument to amend, add, or revoke specific clauses in an existing Will without rewriting the whole document.",
+      "Section 2(b) supplementary legal instrument to amend, add, or revoke specific clauses in an existing Will without rewriting the whole paper.",
     meta: "Section 2(b) Will Amendment Format",
     keywords: [
       "codicil format in india",
@@ -794,7 +794,7 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-teal-50 text-teal-800 border-teal-200/80",
     date: "19-10-2026",
     description:
-      "Supreme Court 2023 simplified guidelines compliant advance medical directive format for withholding life support with notary attestation.",
+      "Supreme Court 2023 simplified guidelines compliant advance medical directive format for withholding life support with notary witness signing.",
     meta: "SC 2023 Simplified Guidelines",
     keywords: [
       "living will format india",
@@ -816,8 +816,8 @@ export const templatesData: TemplateItem[] = [
     badgeStyle: "bg-rose-50 text-rose-700 border-rose-200/80",
     date: "20-10-2026",
     description:
-      "Haq Tyag legal deed under Section 17 Registration Act for co-heirs surrendering undivided shares in ancestral property without monetary consideration.",
-    meta: "Section 17 Registration Act Haq Tyag",
+      "Haq Tyag legal deed under Section 17 Filing Act for co-heirs surrendering undivided shares in family asset without monetary consideration.",
+    meta: "Section 17 Filing Act Haq Tyag",
     keywords: [
       "relinquishment deed format",
       "release deed format",

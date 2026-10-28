@@ -56,21 +56,21 @@ const STATE_STAMP_RATES: Record<string, { stampDuty: number; description: string
   delhi: { stampDuty: 100, description: "₹100 e-Stamp Paper + Notarization" },
   karnataka: { stampDuty: 200, description: "₹200 e-Stamp Paper (Article 29)" },
   tamilnadu: { stampDuty: 100, description: "₹100 Non-Judicial Stamp Paper" },
-  westbengal: { stampDuty: 100, description: "₹100 Stamp Paper + Notary Attestation" },
+  westbengal: { stampDuty: 100, description: "₹100 Stamp Paper + Notary Witness Signing" },
   gujarat: { stampDuty: 300, description: "₹300 e-Stamp Paper (Article 33)" },
-  uttarpradesh: { stampDuty: 100, description: "₹100 Stamp Paper + Notary Affidavit" },
+  uttarpradesh: { stampDuty: 100, description: "₹100 Stamp Paper + Notary Sworn Note" },
   other: { stampDuty: 100, description: "₹100 or State Prescribed Stamp Paper" },
 };
 
 const TOC_ITEMS = [
   { id: "regulatory-framework", label: "1. SEBI & AMFI Regulatory Rules" },
-  { id: "interactive-document-finder", label: "2. Interactive Document Finder" },
+  { id: "interactive-document-finder", label: "2. Free Paper Finder" },
   { id: "sebi-transmission-limits", label: "3. ₹5 Lakh vs ₹15 Lakh Thresholds" },
   { id: "supreme-court-nominee-ruling", label: "4. Supreme Court Shakti Yezdani Ruling" },
   { id: "depository-transmission-guide", label: "5. CDSL & NSDL Form ISR-5 Guide" },
   { id: "mutual-fund-transmission-guide", label: "6. CAMS & KFintech Form T2 & T3" },
   { id: "physical-shares-transmission", label: "7. Physical Shares Form ISR-4 SOP" },
-  { id: "regulatory-comparison-table", label: "8. Transmission Route Comparison" },
+  { id: "regulatory-comparison-table", label: "8. Transfer Route Comparison" },
   { id: "step-by-step-sop", label: "9. Step-by-Step SOP Protocol" },
   { id: "practical-case-studies", label: "10. Real Case Studies: CDSL & CAMS" },
   { id: "legal-recital-templates", label: "11. Copy-Paste Indemnity Clauses" },
@@ -81,36 +81,36 @@ const TOC_ITEMS = [
 
 const FAQS = [
   {
-    q: "What is the revised SEBI threshold for demat share transmission without court documents?",
-    a: "Under the SEBI Master Circular on Simplification of Transmission Procedures, the threshold limit for securities held in dematerialized mode (CDSL or NSDL) without requiring a Succession Certificate or Probate is ₹15,00,000 (Rupees Fifteen Lakh) per depository participant account as of the application date. For physical shares, the simplified limit is ₹5,00,000 per listed company.",
+    q: "What is the revised SEBI threshold for demat share transfer without court papers?",
+    a: "Under the SEBI Master Circular on Simplification of Transfer Steps, the threshold limit for securities held in dematerialized mode (CDSL or NSDL) without requiring a Estate Paper or Probate is ₹15,00,000 (Rupees Fifteen Lakh) per depository participant account as of the form date. For physical shares, the simplified limit is ₹5,00,000 per listed company.",
   },
   {
-    q: "Does a registered nominee become the absolute owner of demat shares after the holder dies?",
-    a: "No. The Supreme Court of India in Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023) held that a nominee is only a fiduciary custodian or trustee of the securities. Depository participants (CDSL/NSDL) and RTAs legally discharge their liability by transferring shares to the nominee. However, beneficial ownership vests in legal heirs under the deceased person's Will or personal succession laws.",
+    q: "Does a filed nominee become the absolute owner of demat shares after the holder dies?",
+    a: "No. The Supreme Court of India in Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023) held that a nominee is only a fiduciary custodian or trustee of the securities. Depository participants (CDSL/NSDL) and RTAs legally discharge their liability by transferring shares to the nominee. However, beneficial ownership vests in legal heirs under the deceased person's Will or personal estate laws.",
   },
   {
     q: "What is Form ISR-5 and when is it required?",
-    a: "Form ISR-5 is SEBI's standardized Request for Transmission of Securities by Nominee or Legal Heir. It is mandatory for transferring demat and physical shares from a deceased investor's account. It captures deceased investor details, claimant details, depository account information, and is submitted with annexures including Indemnity Bond (Annexure B) and NOC (Annexure C).",
+    a: "Form ISR-5 is SEBI's standardized Request for Transfer of Securities by Nominee or Legal Heir. It is needed for transferring demat and physical shares from a deceased investor's account. It captures deceased investor details, claimant details, depository account information, and is submitted with annexures including Indemnity Bond (Annexure B) and NOC (Annexure C).",
   },
   {
-    q: "How are mutual fund units transmitted when a nominee is registered?",
-    a: "When a registered nominee claims mutual fund folios through RTAs like CAMS or KFintech, they must submit AMFI Form T2 (Transmission Request Form for Nominee). They need to attach an attested copy of the death certificate, KYC verification, and bank details verification (such as a cancelled cheque with pre-printed name or Form T3 Annexure I bank attestation).",
+    q: "How are mutual fund units transmitted when a nominee is filed?",
+    a: "When a filed nominee claims mutual fund folios through RTAs like CAMS or KFintech, they must submit AMFI Form T2 (Transfer Request Form for Nominee). They need to attach an attested copy of the death paper, KYC check, and bank details check (such as a cancelled cheque with pre-printed name or Form T3 Annexure I bank witness signing).",
   },
   {
-    q: "What documents are required to claim mutual funds if there is no nominee?",
-    a: "If there is no nominee and total folio value is up to ₹5,00,000, heirs use AMFI Form T3 along with a Legal Heirship Certificate or Surviving Member Certificate, Indemnity Bond (Annexure II), Affidavits from all heirs (Annexure III), and NOC from relinquishing heirs (Annexure IV). If folio value exceeds ₹5,00,000, a court-issued Succession Certificate or Probated Will is required.",
+    q: "What papers are required to claim mutual funds if there is no nominee?",
+    a: "If there is no nominee and total folio value is up to ₹5,00,000, heirs use AMFI Form T3 along with a Legal Heirship Paper or Surviving Member Paper, Indemnity Bond (Annexure II), Affidavits from all heirs (Annexure III), and NOC from relinquishing heirs (Annexure IV). If folio value exceeds ₹5,00,000, a court-issued Estate Paper or Probated Will is required.",
   },
   {
     q: "What happens to joint demat accounts when one holder passes away?",
-    a: "In a joint demat account with survivorship ('Either or Survivor' or joint holding), shares do not go through succession. The surviving holder submits a name deletion request along with the original or attested death certificate and Client Master List (CML). The deceased holder's name is removed and the account is converted to the surviving holder.",
+    a: "In a joint demat account with survivorship ('Either or Survivor' or joint holding), shares do not go through estate. The surviving holder submits a name deletion request along with the original or attested death paper and Client Master List (CML). The deceased holder's name is removed and the account is converted to the surviving holder.",
   },
   {
-    q: "Can physical share certificates still be transmitted into physical format?",
-    a: "No. SEBI LODR Regulation 40 mandates that RTAs cannot issue physical share certificates upon transmission. Instead, the RTA processes transmission and issues a Letter of Confirmation (Form ISR-4). The legal heir must submit this Letter of Confirmation to their Depository Participant within 120 days to credit the shares in demat format.",
+    q: "Can physical share papers still be transmitted into physical format?",
+    a: "No. SEBI LODR Regulation 40 mandates that RTAs cannot issue physical share papers upon transfer. Instead, the RTA processes transfer and issues a Letter of Confirmation (Form ISR-4). The legal heir must submit this Letter of Confirmation to their Depository Participant within 120 days to credit the shares in demat format.",
   },
   {
-    q: "When is a Succession Certificate mandatory for shares and mutual funds?",
-    a: "A Succession Certificate issued under Section 372 of the Indian Succession Act, 1925 is mandatory when the deceased investor held securities as a sole holder without a valid nominee, and the portfolio value exceeds ₹15 Lakhs for demat shares or ₹5 Lakhs for physical shares and mutual funds, or when legal heirs have conflicting claims.",
+    q: "When is a Estate Paper needed for shares and mutual funds?",
+    a: "A Estate Paper issued under Section 372 of the Indian Succession Act, 1925 is needed when the deceased investor held securities as a sole holder without a valid nominee, and the portfolio value exceeds ₹15 Lakhs for demat shares or ₹5 Lakhs for physical shares and mutual funds, or when legal heirs have conflicting claims.",
   },
 ];
 
@@ -199,7 +199,7 @@ export default function DematTransmissionFinderClient() {
     id: "death_cert",
     name: "Death Certificate of Deceased Investor",
     mandatory: true,
-    description: "Original or notarized / gazetted copy of municipal Death Certificate reflecting registration number and QR code.",
+    description: "Original or notarized / gazetted copy of city Death Paper reflecting filing number and QR code.",
     authority: "Local Municipal Corporation / Registrar of Births and Deaths",
   });
 
@@ -228,7 +228,7 @@ export default function DematTransmissionFinderClient() {
     id: "bank_verification",
     name: "Bank Account Proof / Cancelled Cheque Leaf",
     mandatory: true,
-    description: "Original cancelled cheque leaf with claimant's name pre-printed, or bank attestation letter with authorized signature.",
+    description: "Original cancelled cheque leaf with claimant's name pre-printed, or bank witness signing letter with authorized signature.",
     authority: "Claimant's Scheduled Commercial Bank",
   });
 
@@ -246,7 +246,7 @@ export default function DematTransmissionFinderClient() {
       id: "nominee_form",
       name: `${primaryFormCode}: Transmission Form by Nominee`,
       mandatory: true,
-      description: "Duly signed transmission request form executed by the registered nominee.",
+      description: "Duly signed transfer request form signed by the filed nominee.",
       authority: "Depository Participant / RTA",
     });
   } else if (isSimplifiedEligible) {
@@ -256,7 +256,7 @@ export default function DematTransmissionFinderClient() {
       name: "Legal Heirship / Surviving Member Certificate",
       code: "Revenue Proof",
       mandatory: true,
-      description: "Legal Heir Certificate or Surviving Member Certificate issued by the Tahsildar, Sub-Divisional Magistrate (SDM), or e-District Portal.",
+      description: "Legal Heir Paper or Surviving Member Paper issued by the Tahsildar, Sub-Divisional Magistrate (SDM), or e-District Portal.",
       authority: "Competent Revenue Authority / District Magistrate",
     });
     requiredDocuments.push({
@@ -264,7 +264,7 @@ export default function DematTransmissionFinderClient() {
       name: `${primaryFormCode}: Transmission Request Form`,
       code: primaryFormCode,
       mandatory: true,
-      description: "Standardized transmission request form signed by the claiming legal heir.",
+      description: "Standardized transfer request form signed by the claiming legal heir.",
       authority: "SEBI / AMFI",
     });
     requiredDocuments.push({
@@ -289,7 +289,7 @@ export default function DematTransmissionFinderClient() {
         name: "Individual Affidavits from All Surviving Legal Heirs",
         code: holdingMode === "mutual_fund" ? "AMFI Annexure III" : "Form ISR-5 Annexure D",
         mandatory: true,
-        description: "Affidavit verifying the full family tree and confirming no other legal heirs exist.",
+        description: "Sworn Note verifying the full family tree and confirming no other legal heirs exist.",
         authority: "Notary Public",
       });
     }
@@ -300,7 +300,7 @@ export default function DematTransmissionFinderClient() {
       name: "Court Succession Certificate / Probated Will",
       code: "Section 372 Indian Succession Act",
       mandatory: true,
-      description: "Certified true copy of Succession Certificate issued by District Court / High Court with schedule listing the specific DP account, folios, or ISINs.",
+      description: "Certified true copy of Estate Paper issued by District Court / High Court with schedule listing the specific DP account, folios, or ISINs.",
       authority: "Competent Civil Court / High Court having Jurisdiction",
     });
     requiredDocuments.push({
@@ -308,7 +308,7 @@ export default function DematTransmissionFinderClient() {
       name: `${primaryFormCode}: Transmission Form with Court Decree`,
       code: primaryFormCode,
       mandatory: true,
-      description: "Transmission form submitted by the court-certified legal representative or administrator.",
+      description: "Transfer form submitted by the court-certified legal agent or head.",
       authority: "Depository Participant / RTA",
     });
   }
@@ -319,7 +319,7 @@ export default function DematTransmissionFinderClient() {
       id: "original_share_certs",
       name: "Original Physical Share Certificates",
       mandatory: true,
-      description: "Original paper share certificates surrendered to the RTA for cancellation and dematerialization.",
+      description: "Original paper share papers surrendered to the RTA for cancellation and dematerialization.",
       authority: "Issuing Listed Company",
     });
     requiredDocuments.push({
@@ -327,7 +327,7 @@ export default function DematTransmissionFinderClient() {
       name: "Form ISR-4 (Request for Issue of Letter of Confirmation)",
       code: "Form ISR-4",
       mandatory: true,
-      description: "Application for Letter of Confirmation to dematerialize physical shares into claimant's demat account within 120 days.",
+      description: "Form for Letter of Confirmation to dematerialize physical shares into claimant's demat account within 120 days.",
       authority: "SEBI / Listed Company RTA",
     });
   }
@@ -404,14 +404,14 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            SEBI Demat &amp; Mutual Fund Transmission Document Finder
+            SEBI Demat &amp; Mutual Fund Transfer Paper Finder
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Instantly identify exact <strong>SEBI Form ISR-5</strong> and <strong>AMFI Form T2/T3</strong> requirements.
-            Verify whether your demat shares, mutual fund units, or physical certificates qualify for the
-            <strong> ₹15 Lakh simplified threshold</strong> or require a court-issued Succession Certificate.
+            Instantly identify exact <strong>SEBI Form ISR-5</strong> and <strong>AMFI Form T2/T3</strong> rules.
+            Verify whether your demat shares, mutual fund units, or physical papers qualify for the
+            <strong> ₹15 Lakh simplified threshold</strong> or require a court-issued Estate Paper.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -421,7 +421,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileCheck className="w-4 h-4" />
-              <span>Find Required Transmission Documents</span>
+              <span>Find Required Transfer Papers</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -429,7 +429,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -507,7 +507,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under SEBI Master Circular for RTAs &amp; Depositories, SEBI LODR Regulation 40,
@@ -530,7 +530,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Transmission vs Transfer:</strong> Transmission occurs by operation of law
+                    <strong>Transfer vs Transfer:</strong> Transfer occurs by operation of law
                     upon death. No stamp duty or consideration is payable on transfer of ownership,
                     unlike voluntary secondary market trades.
                   </span>
@@ -538,16 +538,16 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Revised SEBI ₹15 Lakh Limit:</strong> If no nominee is registered, demat
-                    portfolios up to ₹15,00,000 can be claimed without court probate or succession
-                    certificates by submitting Form ISR-5, Indemnity Bond, and family NOC affidavits.
+                    <strong>Revised SEBI ₹15 Lakh Limit:</strong> If no nominee is filed, demat
+                    portfolios up to ₹15,00,000 can be claimed without court probate or estate
+                    papers by submitting Form ISR-5, Indemnity Bond, and family NOC sworn notes.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Nominee Fiduciary Duty:</strong> Under Supreme Court ruling in <em>Shakti Yezdani (2023)</em>,
-                    a registered nominee receives title only as a custodian. The nominee is legally bound to
+                    a filed nominee receives title only as a custodian. The nominee is legally bound to
                     distribute proceeds to lawful legal heirs.
                   </span>
                 </li>
@@ -555,7 +555,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Mutual Fund ₹5 Lakh Limit:</strong> Mutual fund folios without nominees follow
-                    AMFI Form T3 up to ₹5,00,000. Portfolios above ₹5,00,000 strictly require court succession documents.
+                    AMFI Form T3 up to ₹5,00,000. Portfolios above ₹5,00,000 strictly require court estate papers.
                   </span>
                 </li>
               </ul>
@@ -568,28 +568,28 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>REGULATORY FRAMEWORK</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Regulatory Framework: SEBI &amp; AMFI Transmission Rules
+                1. Regulatory Framework: SEBI &amp; AMFI Transfer Rules
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Transmission of financial securities in India is governed by strict regulatory circulars
+                  Transfer of financial securities in India is governed by strict regulatory circulars
                   issued by the Securities and Exchange Board of India (SEBI) and the Association of Mutual
                   Funds in India (AMFI). When an investor passes away, their shares, debentures, exchange-traded
                   funds (ETFs), and mutual fund folios cannot be sold directly. They must undergo formal
-                  transmission to the surviving joint holder, registered nominee, or legal heirs.
+                  transfer to the surviving joint holder, filed nominee, or legal heirs.
                 </p>
                 <p>
                   Historically, claiming securities after death was one of the most bureaucratic processes in India.
-                  Heirs had to obtain court succession certificates even for modest shareholdings. In May 2022,
+                  Heirs had to obtain court estate papers even for modest shareholdings. In May 2022,
                   SEBI issued Circular <strong>SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65</strong>, establishing a
-                  unified operational framework that raised simplified transmission thresholds to ₹15 Lakhs for
+                  unified operational framework that raised simplified transfer thresholds to ₹15 Lakhs for
                   demat holdings and ₹5 Lakhs for physical shares.
                 </p>
                 <p>
                   Today, Registrars and Share Transfer Agents (RTAs) like CAMS, KFintech, Link Intime, and Bigshare,
                   along with depositories Central Depository Services India Limited (CDSL) and National Securities
                   Depository Limited (NSDL), follow standardized forms. This tool unifies these fragmented rules
-                  into an actionable, personalized document checklist.
+                  into an actionable, personalized paper checklist.
                 </p>
               </div>
             </section>
@@ -601,11 +601,11 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>INTERACTIVE COMPLIANCE TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Demat &amp; Mutual Fund Document Finder Tool
+                2. Free Demat &amp; Mutual Fund Paper Finder Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select your asset details below to instantly determine exact form codes, document checklists,
-                and whether court succession intervention is mandatory under current SEBI and AMFI regulations.
+                Select your asset details below to instantly determine exact form codes, paper checklists,
+                and whether court estate intervention is needed under current SEBI and AMFI regulations.
               </p>
 
               {/* Tool Card Container */}
@@ -669,11 +669,11 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                       }`}
                     >
                       <div className="font-extrabold text-sm text-slate-900 flex items-center justify-between">
-                        <span>Physical Share Certificates</span>
+                        <span>Physical Share Papers</span>
                         {holdingMode === "physical" && <Check className="w-4 h-4 text-[#C65378]" />}
                       </div>
                       <div className="text-[11px] text-slate-600 mt-1">
-                        Paper certificates issued by listed companies
+                        Paper papers issued by listed companies
                       </div>
                       <div className="mt-2 inline-block px-2 py-0.5 rounded bg-amber-100/80 text-amber-800 text-[10px] font-bold">
                         Simplified limit: Up to ₹5 Lakhs
@@ -686,7 +686,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                     <UserCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Step 2: Ownership &amp; Nominee Registration Status</span>
+                    <span>Step 2: Ownership &amp; Nominee Filing Status</span>
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <button
@@ -715,7 +715,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     >
                       <div className="font-extrabold text-xs text-slate-900">Sole Holder WITH Nominee</div>
                       <div className="text-[11px] text-slate-600 mt-0.5">
-                        Valid nominee registered on depository / AMC records.
+                        Valid nominee filed on depository / AMC records.
                       </div>
                     </button>
 
@@ -900,7 +900,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                           href="/services/succession-certificate"
                           className="px-4 py-2 rounded-xl bg-purple-900 hover:bg-purple-800 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm"
                         >
-                          <span>Succession Certificate Help</span>
+                          <span>Estate Paper Help</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
                       ) : (
@@ -946,7 +946,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                         <span>Statutory Document Checklist ({requiredDocuments.length} Required)</span>
                       </div>
                       <div className="text-[11px] text-slate-500">
-                        Check off each item as you assemble your transmission dossier.
+                        Check off each item as you assemble your transfer dossier.
                       </div>
                     </div>
 
@@ -1016,7 +1016,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                                 </span>
                               )}
                               <span className="px-2 py-0.5 rounded bg-rose-50 text-rose-700 text-[10px] font-bold">
-                                Mandatory
+                                Needed
                               </span>
                             </div>
                             <p className="text-xs text-slate-600 leading-relaxed">{doc.description}</p>
@@ -1053,7 +1053,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 />
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1 text-xs text-slate-600">
-                <span>Unified transmission documentation protocol under SEBI Master Circular 2024 and AMFI guidelines.</span>
+                <span>Unified transfer papers protocol under SEBI Master Circular 2024 and AMFI guidelines.</span>
                 <span className="text-[11px] font-bold text-[#C65378] shrink-0">Updated for CDSL, NSDL, CAMS &amp; KFintech</span>
               </div>
             </div>
@@ -1065,12 +1065,12 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>STATUTORY THRESHOLDS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. SEBI Transmission Limits: ₹5 Lakh vs ₹15 Lakh Threshold
+                3. SEBI Transfer Limits: ₹5 Lakh vs ₹15 Lakh Threshold
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To eliminate undue hardship on grieving families, SEBI established separate simplified limits
-                  depending on whether securities are held in electronic demat mode or paper physical share certificates:
+                  depending on whether securities are held in electronic demat mode or paper physical share papers:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-3">
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1080,30 +1080,30 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     </div>
                     <div className="text-2xl font-extrabold text-[#C65378]">Up to ₹15,00,000</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Calculated per Depository Participant account as on the date of application. If the total
+                      Calculated per Depository Participant account as on the date of form. If the total
                       market value across all holdings in that single demat account is ₹15 Lakhs or less, legal heirs
-                      can claim securities without presenting a court succession certificate.
+                      can claim securities without presenting a court estate paper.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                     <div className="text-sm font-black text-slate-900 flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-[#5F7E75]" />
-                      <span>Physical Share Certificates</span>
+                      <span>Physical Share Papers</span>
                     </div>
                     <div className="text-2xl font-extrabold text-[#5F7E75]">Up to ₹5,00,000</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Calculated per listed entity as on the application date. For physical shares, each listed company
+                      Calculated per listed entity as on the form date. For physical shares, each listed company
                       evaluates the ₹5 Lakh threshold independently. However, once transmitted, shares cannot be
                       delivered in physical format; they must be converted to demat.
                     </p>
                   </div>
                 </div>
                 <p>
-                  If a single demat account holds shares valued at ₹15,00,001 or higher and there is no registered
-                  nominee, the Depository Participant has zero statutory discretion. They are prohibited by law
-                  from releasing the portfolio until a certified copy of a Succession Certificate, Probated Will,
-                  or Letters of Administration is presented.
+                  If a single demat account holds shares valued at ₹15,00,001 or higher and there is no filed
+                  nominee, the Depository Participant has zero legal discretion. They are prohibited by law
+                  from releasing the portfolio until a certified copy of a Estate Paper, Probated Will,
+                  or Letters of Care is presented.
                 </p>
               </div>
             </section>
@@ -1132,10 +1132,10 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     <span>The Supreme Court Ratio Decidendi:</span>
                   </div>
                   <p>
-                    The Supreme Court held that nomination does not constitute a "third line of succession". A nominee
+                    The Supreme Court held that nomination does not constitute a "third line of estate". A nominee
                     is merely a fiduciary trustee or custodian whose appointment ensures the company or depository can
-                    discharge its liability. Beneficial ownership and succession rights remain strictly governed by the
-                    deceased person&rsquo;s Will or intestate succession laws (such as the Hindu Succession Act, 1956 or
+                    discharge its liability. Beneficial ownership and estate rights remain strictly governed by the
+                    deceased person&rsquo;s Will or no-Will estate laws (such as the Hindu Succession Act, 1956 or
                     Indian Succession Act, 1925).
                   </p>
                 </div>
@@ -1143,8 +1143,8 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <strong>What this means in practice:</strong> When a father nominates one child on his demat account,
                   the broker and depository legally transfer the shares to that nominated child. However, the other legal
                   heirs (such as siblings or surviving spouse) retain full legal entitlement to their proportionate shares.
-                  If the nominee refuses to partition or distribute the portfolio, the heirs can file a civil partition
-                  suit to compel distribution.
+                  If the nominee refuses to split or distribute the portfolio, the heirs can file a civil split
+                  suit to compel split.
                 </p>
               </div>
             </section>
@@ -1156,24 +1156,24 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>DEPOSITORY OPERATIONAL GUIDE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Depository Transmission: CDSL vs NSDL Form ISR-5 Guide
+                5. Depository Transfer: CDSL vs NSDL Form ISR-5 Guide
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Both Central Depository Services India Limited (CDSL) and National Securities Depository Limited (NSDL)
-                  mandate <strong>Form ISR-5</strong> as the universal transmission application. However, operational
-                  workflows involve several specific technical requirements:
+                  mandate <strong>Form ISR-5</strong> as the universal transfer form. However, operational
+                  workflows involve several specific technical rules:
                 </p>
                 <div className="space-y-3">
                   <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1.5">
                     <div className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                      <span>Client Master Report (CMR / CML) Verification</span>
+                      <span>Client Master Report (CMR / CML) Check</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Securities cannot be transferred into a bank account. The claimant must possess an active demat
                       account in their own name. The DP requires a physically signed and stamped Client Master Report
-                      verifying the claimant&rsquo;s 16-digit Beneficiary Owner ID (BOID).
+                      verifying the claimant&rsquo;s 16-digit Heir Owner ID (BOID).
                     </p>
                   </div>
 
@@ -1184,8 +1184,8 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       If the deceased investor&rsquo;s signature on the old DP account records differs from the death
-                      intimation documents, or if the claimant&rsquo;s bank signature does not match their PAN card, SEBI
-                      mandates <strong>Form ISR-2</strong> (Banker&rsquo;s Verification of Signature).
+                      intimation papers, or if the claimant&rsquo;s bank signature does not match their PAN card, SEBI
+                      mandates <strong>Form ISR-2</strong> (Banker&rsquo;s Check of Signature).
                     </p>
                   </div>
 
@@ -1196,7 +1196,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       For accounts without nominees under ₹15 Lakhs, Annexure B must be printed on non-judicial stamp
-                      paper as prescribed by the claimant&rsquo;s state stamp act, executed by the claimant and two
+                      paper as prescribed by the claimant&rsquo;s state stamp act, signed by the claimant and two
                       financially sound third-party sureties, and attested by a Notary Public.
                     </p>
                   </div>
@@ -1211,7 +1211,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>MUTUAL FUND SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Mutual Fund Transmission: CAMS &amp; KFintech Form T2 &amp; T3
+                6. Mutual Fund Transfer: CAMS &amp; KFintech Form T2 &amp; T3
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1220,27 +1220,27 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   (Computer Age Management Services) and <strong>KFintech</strong>.
                 </p>
                 <p>
-                  AMFI guidelines standardize mutual fund transmission into specific form codes:
+                  AMFI guidelines standardize mutual fund transfer into specific form codes:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm text-slate-700">
                   <li>
-                    <strong>AMFI Form T2 (Transmission to Nominee):</strong> Used when a registered nominee claims the
-                    folio. Requires KYC acknowledgment, attested death certificate, and a cancelled cheque leaf of the
+                    <strong>AMFI Form T2 (Transfer to Nominee):</strong> Used when a filed nominee claims the
+                    folio. Requires KYC acknowledgment, attested death paper, and a cancelled cheque leaf of the
                     nominee with name pre-printed.
                   </li>
                   <li>
-                    <strong>AMFI Form T3 (Transmission where No Nominee is Registered):</strong> Used when no nominee
+                    <strong>AMFI Form T3 (Transfer where No Nominee is Filed):</strong> Used when no nominee
                     exists and the aggregate holding value is up to ₹5,00,000. Requires Annexure II (Indemnity Bond on
                     stamp paper), Annexure III (Affidavits from all heirs), and Annexure IV (NOC from non-claimants).
                   </li>
                   <li>
-                    <strong>Minor Nominee Transmission:</strong> If the nominee is a minor, the legal or natural parent
-                    must submit proof of birth date (Birth Certificate or Passport) and proof of legal guardianship.
+                    <strong>Minor Nominee Transfer:</strong> If the nominee is a minor, the legal or natural parent
+                    must submit proof of birth date (Birth Paper or Passport) and proof of legal child care.
                   </li>
                   <li>
-                    <strong>Folio Reinvestment vs Payout:</strong> Upon transmission, the RTA issues new unit certificates
+                    <strong>Folio Reinvestment vs Payout:</strong> Upon transfer, the RTA issues new unit papers
                     or updates the folio under the claimant&rsquo;s PAN. The claimant can choose to retain the ongoing SIP
-                    investments or redeem the accumulated corpus into their verified bank account.
+                    investments or redeem the accumulated corpus into their checked bank account.
                   </li>
                 </ul>
               </div>
@@ -1253,16 +1253,16 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>PHYSICAL SHARES PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Physical Shares Transmission: SEBI Form ISR-4 Demat SOP
+                7. Physical Shares Transfer: SEBI Form ISR-4 Demat SOP
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Millions of Indian families hold physical paper share certificates purchased in the 1980s and 1990s
-                  by deceased parents. Under Regulation 40 of SEBI (Listing Obligations and Disclosure Requirements)
-                  Regulations, 2015, listed companies are strictly barred from re-issuing physical share certificates.
+                  Millions of Indian families hold physical paper share papers purchased in the 1980s and 1990s
+                  by deceased parents. Under Regulation 40 of SEBI (Listing Obligations and Disclosure Rules)
+                  Regulations, 2015, listed companies are strictly barred from re-issuing physical share papers.
                 </p>
                 <p>
-                  The modern statutory procedure for transmitting physical share certificates requires two connected steps:
+                  The modern legal step for transmitting physical share papers requires two connected steps:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1.5">
@@ -1273,7 +1273,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                       <span>Submission of Form ISR-4 to RTA</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Legal heirs submit the original share certificates, Form ISR-5, Indemnity Bond, and Form ISR-4 to
+                      Legal heirs submit the original share papers, Form ISR-5, Indemnity Bond, and Form ISR-4 to
                       the respective company&rsquo;s RTA. The RTA verifies the signature, title, and cancels the physical paper.
                     </p>
                   </div>
@@ -1305,7 +1305,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 8. Regulatory Comparison: Joint vs Nominee vs Legal Heirs
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm">
-                The table below summarizes transmission procedures across all holding formats and regulatory routes:
+                The table below summarizes transfer steps across all holding formats and regulatory routes:
               </p>
 
               {/* Structured HTML Comparison Table */}
@@ -1376,7 +1376,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                       <td className="p-3.5 font-bold text-rose-950">Sole Holder WITHOUT Nominee</td>
                       <td className="p-3.5">Demat Shares</td>
                       <td className="p-3.5 font-extrabold text-rose-700">&gt; ₹15 Lakhs</td>
-                      <td className="p-3.5 font-mono">Succession Cert. + ISR-5</td>
+                      <td className="p-3.5 font-mono">Estate Cert. + ISR-5</td>
                       <td className="p-3.5">
                         <span className="px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-bold">MANDATORY</span>
                       </td>
@@ -1386,7 +1386,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                       <td className="p-3.5 font-bold text-rose-950">Sole Holder WITHOUT Nominee</td>
                       <td className="p-3.5">Mutual Funds / Physical</td>
                       <td className="p-3.5 font-extrabold text-rose-700">&gt; ₹5 Lakhs</td>
-                      <td className="p-3.5 font-mono">Succession Cert. + Form T3</td>
+                      <td className="p-3.5 font-mono">Estate Cert. + Form T3</td>
                       <td className="p-3.5">
                         <span className="px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-bold">MANDATORY</span>
                       </td>
@@ -1404,7 +1404,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>PROCEDURAL BLUEPRINT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Securities Transmission Procedure
+                9. Step-by-Step SOP: Securities Transfer Step
               </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
@@ -1413,7 +1413,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     <span>Intimation of Death &amp; Account Freezing</span>
                   </div>
                   <p className="text-slate-600">
-                    Immediately notify the Depository Participant or RTA with an attested copy of the death certificate.
+                    Right away notify the Depository Participant or RTA with an attested copy of the death paper.
                     The DP freezes the account to prevent unauthorized debit transactions while allowing dividend accruals.
                   </p>
                 </div>
@@ -1421,10 +1421,10 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <div className="font-extrabold text-slate-900 flex items-center gap-2">
                     <span className="px-2 py-0.5 rounded bg-slate-900 text-white text-[10px]">STAGE 2</span>
-                    <span>Portfolio Valuation on Application Date</span>
+                    <span>Portfolio Price Check on Form Date</span>
                   </div>
                   <p className="text-slate-600">
-                    Request an official Holding Statement showing the closing market valuation of all securities.
+                    Request an official Holding Statement showing the closing market price check of all securities.
                     This establishes whether total value falls below the ₹15 Lakh demat or ₹5 Lakh physical/MF threshold.
                   </p>
                 </div>
@@ -1432,22 +1432,22 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <div className="font-extrabold text-slate-900 flex items-center gap-2">
                     <span className="px-2 py-0.5 rounded bg-slate-900 text-white text-[10px]">STAGE 3</span>
-                    <span>Execution of Stamp Paper Documents</span>
+                    <span>Signing of Stamp Paper Papers</span>
                   </div>
                   <p className="text-slate-600">
                     Procure e-Stamp or non-judicial stamp paper of appropriate state value. Execute the Indemnity Bond
-                    (Annexure B / Annexure II) with two independent witnesses/sureties and notarize the NOC affidavits.
+                    (Annexure B / Annexure II) with two independent witnesses/sureties and notarize the NOC sworn notes.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <div className="font-extrabold text-slate-900 flex items-center gap-2">
                     <span className="px-2 py-0.5 rounded bg-slate-900 text-white text-[10px]">STAGE 4</span>
-                    <span>Dossier Submission &amp; Depository Verification</span>
+                    <span>Dossier Submission &amp; Depository Check</span>
                   </div>
                   <p className="text-slate-600">
                     Submit the complete physical dossier to the DP or RTA branch. The DP issues an acknowledgment slip
-                    and verifies signatures, KYC records, and relationship certificates against PAN and municipal databases.
+                    and verifies signatures, KYC records, and relationship papers against PAN and city databases.
                   </p>
                 </div>
 
@@ -1457,8 +1457,8 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     <span>Credit of Securities &amp; Deceased Account Closure</span>
                   </div>
                   <p className="text-slate-600">
-                    Upon verification (typically 15 to 30 days), the depository transfers the securities into the
-                    claimant&rsquo;s demat account via an off-market transmission transaction and formally closes the deceased account.
+                    Upon check (typically 15 to 30 days), the depository transfers the securities into the
+                    claimant&rsquo;s demat account via an off-market transfer transaction and formally closes the deceased account.
                   </p>
                 </div>
               </div>
@@ -1478,9 +1478,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <div className="text-xs font-bold uppercase tracking-wider text-[#C65378]">CASE STUDY A: MUMBAI</div>
                   <div className="font-extrabold text-sm text-slate-900">₹12.5L Demat Portfolio with No Nominee</div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A resident died intestate leaving shares worth ₹12,50,000 in a Zerodha CDSL account without nomination.
+                    A resident died no-Will leaving shares worth ₹12,50,000 in a Zerodha CDSL account without nomination.
                     His widow and two adult children submitted Form ISR-5, a ₹500 Maharashtra Indemnity Bond, and two
-                    notarized NOC affidavits. The entire portfolio was successfully transmitted in 24 days without court probate.
+                    notarized NOC sworn notes. The entire portfolio was successfully transmitted in 24 days without court probate.
                   </p>
                 </div>
 
@@ -1490,7 +1490,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A deceased investor held mutual fund folios across HDFC and ICICI Prudential valued at ₹32 Lakhs with
                     predeceased nominee. Because the portfolio exceeded the ₹5 Lakh AMFI cap, AMA Legal Solutions petitioned
-                    the Saket District Court for a Succession Certificate, successfully securing title for the heirs.
+                    the Saket District Court for a Estate Paper, successfully securing title for the heirs.
                   </p>
                 </div>
 
@@ -1498,7 +1498,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <div className="text-xs font-bold uppercase tracking-wider text-slate-700">CASE STUDY C: BENGALURU</div>
                   <div className="font-extrabold text-sm text-slate-900">₹4.2L Legacy Physical Shares (Form ISR-4)</div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Heirs discovered physical certificates of a blue-chip company valued at ₹4,20,000. Under SEBI rules,
+                    Heirs discovered physical papers of a blue-chip company valued at ₹4,20,000. Under SEBI rules,
                     they submitted Form ISR-5 and Form ISR-4 to KFintech. The RTA issued a Letter of Confirmation, and the
                     shares were credited electronically into the son&rsquo;s demat account within 45 days.
                   </p>
@@ -1555,7 +1555,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    SEBI Form ISR-5 Annexure C: Legal Heir No-Objection Affidavit
+                    SEBI Form ISR-5 Annexure C: Legal Heir No-Objection Sworn Note
                   </div>
                   <button
                     type="button"
@@ -1570,7 +1570,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Affidavit</span>
+                        <span>Copy Sworn Note</span>
                       </>
                     )}
                   </button>
@@ -1602,20 +1602,20 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Testamentary &amp; Securities Practice
+                      WillDrafting.in Will &amp; Securities Practice
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s leading estate planning and wealth succession technology platform, backed
-                  by senior advocates at AMA Legal Solutions. Our multidisciplinary team assists families across India and
-                  NRI investors in handling complex demat share transmission, mutual fund portfolio claims, IEPF
-                  unclaimed dividend recoveries, and High Court Succession Certificate petitions.
+                  WillDrafting.in is India&rsquo;s leading estate planning and wealth estate technology platform, backed
+                  by senior lawyers at AMA Legal Solutions. Our multidisciplinary team assists families across India and
+                  NRI investors in handling complex demat share transfer, mutual fund portfolio claims, IEPF
+                  unclaimed dividend recoveries, and High Court Estate Paper petitions.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1624,14 +1624,14 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     href="/services/succession-certificate"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Succession Certificate Desk</span>
+                    <span>Estate Paper Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/legal-heir-vs-succession-certificate-decision-tool"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Succession vs Legal Heir Tool</span>
+                    <span>Estate vs Legal Heir Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -1652,7 +1652,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: Securities Transmission
+                13. Frequently Asked Questions: Securities Transfer
               </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
@@ -1697,28 +1697,28 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Circulars &amp; Statutory Authority:
+                    Governing Circulars &amp; Legal Office:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
                       <strong>SEBI Circular SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65:</strong> Simplification of
-                      procedure for transmission of securities in dematerialized and physical format.
+                      step for transfer of securities in dematerialized and physical format.
                     </li>
                     <li>
-                      <strong>SEBI LODR Regulation 40:</strong> Mandatory dematerialization and prohibition on physical
-                      share certificate issuance upon transmission.
+                      <strong>SEBI LODR Regulation 40:</strong> Needed dematerialization and prohibition on physical
+                      share paper issuance upon transfer.
                     </li>
                     <li>
-                      <strong>AMFI Circular on Standardization of Transmission:</strong> AMFI Best Practices Guidelines
-                      Circular No. 97/2021-22 for mutual fund transmission forms T1, T2, T3, T4, and T5.
+                      <strong>AMFI Circular on Standardization of Transfer:</strong> AMFI Best Practices Guidelines
+                      Circular No. 97/2021-22 for mutual fund transfer forms T1, T2, T3, T4, and T5.
                     </li>
                     <li>
                       <strong>Supreme Court of India:</strong> <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>{" "}
                       holding that a nominee is only a fiduciary custodian for legal heirs.
                     </li>
                     <li>
-                      <strong>Indian Succession Act, 1925:</strong> Section 372 governing jurisdiction and grant of
-                      Succession Certificates for debts and securities exceeding simplified thresholds.
+                      <strong>Indian Succession Act, 1925:</strong> Section 372 governing area and grant of
+                      Estate Papers for debts and securities exceeding simplified thresholds.
                     </li>
                   </ul>
                 </div>
@@ -1773,44 +1773,66 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Succession Tools &amp; Legal Guides
+                    Related WillDrafting Estate Tools &amp; Legal Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/legal-heir-vs-succession-certificate-decision-tool"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Legal Heir vs Succession Certificate Tool
+                      Legal Heir vs Estate Paper Tool
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/services/succession-certificate"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Succession Certificate Legal Service
+                      Estate Paper Legal Service
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Capital Gains Tax Calculator
+                      Inherited Capital Gains Tax Tool
                     </Link>
                     <Link
                       href="/tools"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      All Succession &amp; Will Tools
+                      All Estate &amp; Will Tools
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1823,21 +1845,21 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, SEBI transmission disputes, High Court probate
-                petitions, and nominee-vs-heir litigation under the Indian Succession Act, 1925.
+                Expert in Indian testamentary jurisprudence, SEBI transfer fights, High Court probate
+                petitions, and nominee-vs-heir court fights under the Indian Succession Act, 1925.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1854,8 +1876,8 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   Protect Your Demat Shares &amp; Mutual Funds
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally registered Will clearly designates who inherits your shares and mutual fund folios,
-                  preventing family disputes and bypassing costly court succession certificate delays.
+                  A legally filed Will clearly designates who inherits your shares and mutual fund folios,
+                  preventing family fights and bypassing costly court estate paper delays.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1877,10 +1899,10 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <span>PORTFOLIOS OVER ₹15 LAKHS?</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need a Court Succession Certificate?
+                  Need a Court Estate Paper?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our High Court advocates file and expedite Succession Certificate and Probate petitions pan-India
+                  Our High Court lawyers file and expedite Estate Paper and Probate petitions pan-India
                   for demat accounts, mutual funds, and physical shares.
                 </p>
                 <Link
@@ -1888,7 +1910,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Get Succession Certificate Assistance</span>
+                  <span>Get Estate Paper Help</span>
                 </Link>
               </div>
 
@@ -1913,7 +1935,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>State Stamp Duty Calculator:</strong> State-wise indemnity bond stamp rates.
+                      <strong>State Stamp Duty Tool:</strong> State-wise indemnity bond stamp rates.
                     </span>
                   </li>
                 </ul>
@@ -1930,7 +1952,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <FileCheck className="w-3.5 h-3.5" />
-          <span>Document Finder</span>
+          <span>Paper Finder</span>
         </a>
         <button
           onClick={handleStartDraft}

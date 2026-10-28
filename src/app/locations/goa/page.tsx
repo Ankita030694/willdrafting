@@ -193,7 +193,7 @@ export default function GoaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Goa - Portuguese Civil Code & Estate Succession",
         description:
-          "Professional Will drafting, Portuguese Civil Code consultation, disposable quota allocation, Civil Registrar registration, and doorstep.",
+          "Professional Will drafting, Portuguese Civil Code talk, disposable quota allocation, Civil Registrar filing, and doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -270,7 +270,7 @@ export default function GoaLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Audit Marital Regime and Asset Portfolio",
-            text: "Determine your matrimonial property regime (Communion of Assets or Antenuptial Contract) and compile Form I & XIV extracts, Comunidade documents, and personal investment portfolios.",
+            text: "Determine your matrimonial asset regime (Communion of Assets or Antenuptial Contract) and compile Form I & XIV extracts, Comunidade papers, and personal investment portfolios.",
           },
           {
             "@type": "HowToStep",
@@ -282,7 +282,7 @@ export default function GoaLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Draft Customized Legal Clauses",
-            text: "Draft statutory clauses incorporating Portuguese Civil Code principles, appointing an executor (Cabeça de Casal), specifying asset bequests, and revoking prior instruments.",
+            text: "Draft legal clauses incorporating Portuguese Civil Code principles, appointing an executor (Cabeça de Casal), specifying asset bequests, and revoking prior instruments.",
           },
           {
             "@type": "HowToStep",
@@ -294,7 +294,7 @@ export default function GoaLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Execute Before Registrar and Independent Witnesses",
-            text: "Appear before the Special Notary or Civil Registrar with two independent witnesses for formal attestation, thumbprint recording, and official Book III government custody.",
+            text: "Appear before the Special Notary or Civil Registrar with two independent witnesses for formal witness signing, thumbprint recording, and official Book III government custody.",
           },
         ],
       },

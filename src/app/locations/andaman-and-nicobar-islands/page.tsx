@@ -139,7 +139,7 @@ export default function AndamanLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Andaman & Nicobar: Online Will Guide",
         description:
-          "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset.",
+          "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO filing, island revenue regulations, and family asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -186,7 +186,7 @@ export default function AndamanLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Andaman & Nicobar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Port Blair Sub-Registrar registration, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, Port Blair SRO filing, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -253,38 +253,38 @@ export default function AndamanLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Andaman & Nicobar",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Andaman and Nicobar Islands.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Andaman and Nicobar Islands.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your island properties including PBMC houses, revenue grant holdings under the 1966 Regulation, Swaraj Dweep tourism assets, bank accounts, and designate beneficiaries with an executor.",
+            text: "List your island assets including PBMC houses, revenue grant holdings under the 1966 Regulation, Swaraj Dweep tourism assets, bank accounts, and designate heirs with an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior testamentary instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior Will instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment",
-            text: "Book your appointment at the Port Blair Sub-Registrar Office or your jurisdictional Tehsil registry office and prepare necessary identity documentation.",
+            text: "Book your appointment at the Port Blair SRO office or your local Tehsil registry office and prepare necessary identity papers.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at SRO Port Blair",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete permanent Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete permanent Book III filing.",
           },
         ],
       },

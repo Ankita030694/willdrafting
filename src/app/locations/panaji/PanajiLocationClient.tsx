@@ -119,7 +119,7 @@ const PANAJI_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Drafts of the Will Document",
+    label: "Two Printed Drafts of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Goa law, non-judicial stamp paper is not needed for Wills.",
     checked: true,
   },
@@ -138,19 +138,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Essential for senior citizens aged 60+. Certifies testamentary mental capacity, soundness of mind, and lucidity.",
+    detail: "Essential for senior citizens aged 60+. Certifies Will mental capacity, soundness of mind, and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "Form I & XIV Records & Municipal Tax Receipts",
-    detail: "Recent computerized Form I & XIV extract from the Directorate of Land Records and City Corporation of Panaji (CCP) tax receipts.",
+    label: "Form I & XIV Records & City Tax Receipts",
+    detail: "Recent computerized Form I & XIV extract from the Directorate of Land Records and City City Board of Panaji (CCP) tax receipts.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Marriage Certificate & Antenuptial Deed (If Any)",
-    detail: "Verifies whether marriage is under default Communion of Assets (Comunhão de Bens) or registered antenuptial separation.",
+    label: "Marriage Paper & Antenuptial Deed (If Any)",
+    detail: "Verifies whether marriage is under default Communion of Assets (Comunhão de Bens) or filed antenuptial separation.",
     checked: false,
   },
   {
@@ -249,11 +249,11 @@ export default function PanajiLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 59 characters (User matched: begins with will drafting services in PANAJI) */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Panaji: Legal Succession Planning
+                Will Drafting Services in Panaji: Legal Estate Planning
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will in Panaji under the Goa Civil Code. Protect family succession for Miramar flats, Dona Paula villas, Altinho heritage homes, and Comunidade plots. Get senior lawyer drafting, Civil Registrar registration, and Section 31 doorstep signing.
+                Draft a legally watertight Will in Panaji under the Goa Civil Code. Protect family estate for Miramar flats, Dona Paula villas, Altinho heritage homes, and Comunidade plots. Get senior lawyer drafting, Civil Registrar filing, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -309,7 +309,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Panaji &amp; Goa Succession Blueprint
+                  Panaji &amp; Goa Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -347,7 +347,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                No Ad-Valorem Property Tax
+                No Ad-Valorem Asset Tax
               </span>
             </div>
 
@@ -419,7 +419,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 Need Help with Goa Civil Code Wills?
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect with our succession lawyers for legitime calculations, inventory help, and Civil Registrar registration.
+                Connect with our estate lawyers for legitime calculations, inventory help, and Civil Registrar filing.
               </p>
               <Link
                 href="/contact"
@@ -480,7 +480,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Panaji
+                  Key Highlights: Will Making &amp; Filing in Panaji
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
@@ -489,7 +489,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                       <span>Goa Civil Code Governance</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Panaji testators are governed by the Goa Civil Code and Portuguese Civil Code of 1867. Forced heirs hold a protected legal claim (Legitime) over 50% of the estate, leaving the remaining 50% as Disposable Quota.
+                      Panaji Will makers are governed by the Goa Civil Code and Portuguese Civil Code of 1867. Forced heirs hold a protected legal claim (Legitime) over 50% of the estate, leaving the remaining 50% as Disposable Quota.
                     </p>
                   </div>
 
@@ -499,7 +499,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                       <span>Inventory Proceedings Over Probate</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      High Court probate under Section 213 of the Indian Succession Act is not standard in Goa. Estate split and succession are conducted via Inventory Proceedings before the Civil Court or Special Notary.
+                      High Court probate under Section 213 of the Indian Succession Act is not standard in Goa. Estate split and estate are conducted via Inventory Proceedings before the Civil Court or Special Notary.
                     </p>
                   </div>
 
@@ -509,7 +509,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                       <span>Zero Ad-Valorem Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from ad-valorem stamp duty based on property market value in Goa. Only nominal registration, scanning, and Notary Public fees apply at the Civil Registrar office.
+                      Wills are completely exempt from ad-valorem stamp duty based on asset market value in Goa. Only nominal filing, scanning, and Notary Public fees apply at the Civil Registrar office.
                     </p>
                   </div>
 
@@ -519,7 +519,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                       <span>Form I &amp; XIV Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites record of rights name change on Form I &amp; XIV with the Tiswadi Mamlatdar and accelerates property tax register substitution with the City Corporation of Panaji (CCP).
+                      A filed Will expedites record of rights name change on Form I &amp; XIV with the Tiswadi Mamlatdar and accelerates asset tax register substitution with the City City Board of Panaji (CCP).
                     </p>
                   </div>
                 </div>
@@ -538,10 +538,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Goa Civil Code Framework in Panaji
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and estate planning in Panaji and across the state of Goa are distinct from any other area in India. Instead of being governed primarily by the Indian Succession Act, 1925, succession matters in Panaji are governed by the <strong>Goa Civil Code</strong> (derived from the Portuguese Civil Code of 1867) and the <strong>Goa Succession, Special Notaries and Inventory Proceeding Act, 2012</strong>.
+                  Will drafting and estate planning in Panaji and across the state of Goa are distinct from any other area in India. Instead of being governed primarily by the Indian Succession Act, 1925, estate matters in Panaji are governed by the <strong>Goa Civil Code</strong> (derived from the Portuguese Civil Code of 1867) and the <strong>Goa Estate, Special Notaries and Inventory Proceeding Act, 2012</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testators in Panaji must carefully navigate three legal realities: the <strong>Communion of Assets (Comunhão de Bens)</strong> marital regime, the reservation of the <strong>Legitime (Quota Indisponível)</strong> for forced heirs, and the exact bequeathal of the <strong>Disposable Quota (Quota Disponível)</strong>. Any Will signed without accounting for these specific rules risks being challenged or reduced during subsequent inventory proceedings.
+                  Will makers in Panaji must carefully navigate three legal realities: the <strong>Communion of Assets (Comunhão de Bens)</strong> marital regime, the reservation of the <strong>Legitime (Quota Indisponível)</strong> for forced heirs, and the exact bequeathal of the <strong>Disposable Quota (Quota Disponível)</strong>. Any Will signed without accounting for these specific rules risks being challenged or reduced during subsequent inventory proceedings.
                 </p>
               </div>
 
@@ -550,7 +550,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     18+
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Testamentary Capacity</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Will Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The Will maker must be a major aged 18 years or older with sound mental capacity and clear lucidity at signing.
                   </p>
@@ -597,10 +597,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Panaji &amp; Goa?
+                  2. Is Will Filing Needed in Panaji &amp; Goa?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is technically optional across India, including Goa. A Will handwritten or typed on plain paper and signed before two witnesses is legally valid. However, in the context of Goa&apos;s legal framework, signing an unregistered Will creates significant hurdles during inventory proceedings and property mutations.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, registering a Will is technically a choice across India, including Goa. A Will handwritten or typed on plain paper and signed before two witnesses is legally valid. However, in the context of Goa&apos;s legal framework, signing an plain Will creates significant hurdles during inventory proceedings and asset mutations.
                 </p>
               </div>
 
@@ -608,7 +608,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
               <div className="rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-xs">
                 <div className="p-5 bg-slate-50 border-b border-slate-200/80">
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Comparative Analysis: Public Will vs Sealed Will vs Unregistered Will in Panaji
+                    Comparative Analysis: Public Will vs Sealed Will vs Plain Will in Panaji
                   </h3>
                 </div>
                 <div className="overflow-x-auto">
@@ -618,7 +618,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                         <th className="p-3 sm:p-4">Legal Parameter</th>
                         <th className="p-3 sm:p-4 text-[#C65378]">Public Will (Testamento Público)</th>
                         <th className="p-3 sm:p-4">Sealed Will (Testamento Cerrado)</th>
-                        <th className="p-3 sm:p-4">Unregistered White Paper Will</th>
+                        <th className="p-3 sm:p-4">Plain White Paper Will</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-600">
@@ -638,7 +638,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                         <td className="p-3 sm:p-4 font-semibold text-slate-900">Form I &amp; XIV Name Change</td>
                         <td className="p-3 sm:p-4">Accepted right away by Tiswadi Mamlatdar &amp; Talathi</td>
                         <td className="p-3 sm:p-4">Accepted upon official opening in court</td>
-                        <td className="p-3 sm:p-4">Requires extensive inquiry and heir affidavits</td>
+                        <td className="p-3 sm:p-4">Requires extensive inquiry and heir sworn notes</td>
                       </tr>
                       <tr>
                         <td className="p-3 sm:p-4 font-semibold text-slate-900">Inventory Proceedings</td>
@@ -670,10 +670,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   3. Probate vs Inventory Proceedings in Panaji Courts
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In most Indian states, property fights after death lead to applications for Probate or Letters of Administration under Section 213 of the Indian Succession Act. In Panaji and across Goa, however, estate management follows a fundamentally different legal mechanism: <strong>Inventory Proceedings (Processo de Inventário)</strong>.
+                  In most Indian states, asset fights after death lead to forms for Probate or Letters of Care under Section 213 of the Indian Succession Act. In Panaji and across Goa, however, estate management follows a fundamentally different legal mechanism: <strong>Inventory Proceedings (Processo de Inventário)</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under the <strong>Goa Succession, Special Notaries and Inventory Proceeding Act, 2012</strong>, when a person passes away, any legal heir or testamentary legatee can initiate inventory proceedings before the Civil Court or designated Special Notary. The court catalogues the entire estate (Ativo), accounts for debts (Passivo), calculates the 50% Legitime of forced heirs, and allocates the 50% Disposable Quota in accordance with the deceased&apos;s registered Will.
+                  Under the <strong>Goa Estate, Special Notaries and Inventory Proceeding Act, 2012</strong>, when a person passes away, any legal heir or Will legatee can initiate inventory proceedings before the Civil Court or designated Special Notary. The court catalogues the entire estate (Ativo), accounts for debts (Passivo), calculates the 50% Legitime of forced heirs, and allocates the 50% Disposable Quota in accordance with the deceased&apos;s filed Will.
                 </p>
               </div>
 
@@ -684,7 +684,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-bold text-sm text-slate-900">Head of Family (Cabecelha de Casal)</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The surviving spouse or eldest heir is appointed as the legal administrator to submit a full list of family assets and debts.
+                    The surviving spouse or eldest heir is appointed as the legal head to submit a full list of family assets and debts.
                   </p>
                 </div>
 
@@ -694,7 +694,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-bold text-sm text-slate-900">Legitime Apportionment</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Civil Court safeguards the 50% legal reserve for children or forced heirs before verifying the testamentary bequests.
+                    The Civil Court safeguards the 50% legal reserve for children or forced heirs before verifying the Will bequests.
                   </p>
                 </div>
 
@@ -719,10 +719,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Panaji Sub-Registrar &amp; Notary Public Directory
+                  4. Panaji SRO &amp; Notary Public Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In Goa, the Sub-Registrar also functions as the Civil Registrar and Special Notary for testamentary deeds. Filter through the official registry offices across Tiswadi, Salcete, Bardez, Mormugao, and other Goa talukas:
+                  In Goa, the SRO also functions as the Civil Registrar and Special Notary for Will deeds. Filter through the official registry offices across Tiswadi, Salcete, Bardez, Mormugao, and other Goa talukas:
                 </p>
               </div>
 
@@ -789,7 +789,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-100 text-xs">
                     <span className="text-slate-500">
-                      Goa State Registration Portal: <strong>ngdrs.goa.gov.in</strong>
+                      Goa State Filing Portal: <strong>ngdrs.goa.gov.in</strong>
                     </span>
                     <Link
                       href="/contact"
@@ -1041,7 +1041,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Port &amp; Industrial Gateway
+                        Port &amp; Plant Gateway
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         Civil Registrar Mormugao (Vasco)
@@ -1061,13 +1061,13 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Vasco da Gama</strong> for marine captains, shipping executives, industrial port business owners, and apartment owners across Dabolim and Chicalim. Formulates cross-border bank account mandates and overseas asset coordination.
+                      Dedicated <strong>Will drafting services in Vasco da Gama</strong> for marine captains, shipping executives, plant port business owners, and apartment owners across Dabolim and Chicalim. Formulates cross-border bank account mandates and overseas asset coordination.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Municipal Office Building, Vasco</span>
+                        <span>SRO Hub: City Office Building, Vasco</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Mormugao sub-registry signing, Goa Civil Code compliance, and home visit coordination for senior citizens.
@@ -1149,7 +1149,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Central Industrial &amp; Cultural Hub
+                        Central Plant &amp; Cultural Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         Civil Registrar Ponda
@@ -1169,7 +1169,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Ponda</strong> for spice plantation owners, temple town family assets, and industrial manufacturing plants in Kundaim and Marcaim Industrial Estates. Establishes clear succession for multi-generational business families.
+                      Expert <strong>Will drafting services in Ponda</strong> for spice plantation owners, temple town family assets, and plant manufacturing plants in Kundaim and Marcaim Plant Estates. Establishes clear estate for multi-generational business families.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1178,13 +1178,13 @@ export default function PanajiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Government Office Complex, Tisk, Ponda</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Central Goa taluka registry, industrial unit succession planning, and farm land division.
+                        Central Goa taluka registry, plant unit estate planning, and farm land division.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Agro-Plantations &amp; Industrial Units</span>
+                    <span className="text-xs font-bold text-slate-500">Agro-Plantations &amp; Plant Units</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1223,7 +1223,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Bicholim and Valpoi</strong> for horticultural cashew orchards, betel nut plantations, and family property titles. Ensures compliance with Mamlatdar name change guidelines and prevents protracted rural succession fights.
+                      Custom <strong>Will drafting services in Bicholim and Valpoi</strong> for horticultural cashew orchards, betel nut plantations, and family asset titles. Ensures compliance with Mamlatdar name change guidelines and prevents protracted rural estate fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1232,7 +1232,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mamlatdar Complex, Bicholim</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Inland farm record check, Form I &amp; XIV title mapping, and Civil Registrar registration.
+                        Inland farm record check, Form I &amp; XIV title mapping, and Civil Registrar filing.
                       </p>
                     </div>
                   </div>
@@ -1262,7 +1262,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to Registration in Panaji
+                  6. Step-by-Step SOP: Drafting to Filing in Panaji
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Signing a fully enforceable Will in Panaji requires systematic legal planning under Goa Civil Code rules. Follow our 5-step Standard Operating Step:
@@ -1290,7 +1290,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 2: Confirm Matrimonial Property Regime
+                      Step 2: Confirm Matrimonial Asset Regime
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Verify whether you were married under the default Communion of Assets (Comunhão de Bens) or an Antenuptial Contract. Ensure the Will mainly bequests only your undivided 50% half-share (meeação), respecting your spouse&apos;s equal co-ownership.
@@ -1304,10 +1304,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 3: Draft Watertight Goa Succession Clauses
+                      Step 3: Draft Watertight Goa Estate Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our senior lawyers draft customized clauses detailing your specific assets, Form I &amp; XIV survey numbers, bank account numbers, Comunidade allotment numbers, and executor designations while formally revoking prior testamentary deeds.
+                      Our senior lawyers draft customized clauses detailing your specific assets, Form I &amp; XIV survey numbers, bank account numbers, Comunidade allotment numbers, and executor designations while formally revoking prior Will deeds.
                     </p>
                   </div>
                 </div>
@@ -1332,10 +1332,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 5: Registration Before Civil Registrar of Tiswadi
+                      Step 5: Filing Before Civil Registrar of Tiswadi
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Appear at the Civil Registrar office in Junta House, Panaji with two independent adult witnesses. Complete verbal attestation, photo capture, and biometric thumbprinting to receive your permanent registered instrument.
+                      Appear at the Civil Registrar office in Junta House, Panaji with two independent adult witnesses. Complete verbal witness signing, photo capture, and biometric thumbprinting to receive your permanent filed instrument.
                     </p>
                   </div>
                 </div>
@@ -1351,20 +1351,20 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Notary Registration in Panaji
+                  7. Section 31 Doorstep Notary Filing in Panaji
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden people, or persons recovering from medical illness in Panaji, traveling to the Civil Registrar office at Junta House is often physically challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the law explicitly empowers the Civil Registrar and Special Notary to conduct official registration directly at your private residence.
+                  For senior citizens, bedridden people, or persons recovering from medical illness in Panaji, traveling to the Civil Registrar office at Junta House is often physically challenging. Under <strong>Section 31 of the Filing Act, 1908</strong>, the law explicitly empowers the Civil Registrar and Special Notary to conduct official filing directly at your private residence.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-4">
                 <h3 className="font-extrabold text-base text-slate-900">
-                  How Home Visit Registration Operates in Panaji
+                  How Home Visit Filing Operates in Panaji
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5">
-                    <span className="font-bold text-slate-900 block">1. Medical Fitness Certificate</span>
+                    <span className="font-bold text-slate-900 block">1. Medical Fitness Paper</span>
                     <p className="leading-relaxed">
                       An MBBS or MD doctor certifies the Will maker&apos;s sound mental capacity while stating their physical inability to travel to the registry office.
                     </p>
@@ -1394,10 +1394,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Panaji Registration &amp; Notary
+                  8. Paper Checklist for Panaji Filing &amp; Notary
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Interactive checklist for registering your Will before the Civil Registrar or Special Notary in Panaji. Check off each document before scheduling your appointment:
+                  Free checklist for registering your Will before the Civil Registrar or Special Notary in Panaji. Check off each paper before scheduling your appointment:
                 </p>
               </div>
 
@@ -1452,10 +1452,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Panaji Property Types: Comunidade, Villas &amp; Flats
+                  9. Panaji Asset Types: Comunidade, Villas &amp; Flats
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate in Panaji and surrounding Tiswadi encompasses distinct categories of property tenure, each requiring specialized legal draftsmanship under Goan land management:
+                  Real estate in Panaji and surrounding Tiswadi encompasses distinct categories of asset tenure, each requiring specialized legal draftsmanship under Goan land management:
                 </p>
               </div>
 
@@ -1483,7 +1483,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     Miramar &amp; Caranzalem Coastal Apartments
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Modern high-rise home flats in Miramar, Caranzalem, and Dona Paula. The Will details housing society share transmissions, stilt parking rights, and exclusive terrace easements, preventing nomination fights upon succession.
+                    Modern high-rise home flats in Miramar, Caranzalem, and Dona Paula. The Will details housing society share transmissions, stilt parking rights, and exclusive terrace easements, preventing nomination fights upon estate.
                   </p>
                 </div>
 
@@ -1507,10 +1507,10 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Goa Registration Fees &amp; Notary Charges
+                  10. Official Goa Filing Fees &amp; Notary Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds, signing and registering a Will in Panaji does not attract ad-valorem stamp duty based on property market price check. The legal costs are strictly nominal:
+                  Unlike sale deeds or gift deeds, signing and registering a Will in Panaji does not attract ad-valorem stamp duty based on asset market price check. The legal costs are strictly nominal:
                 </p>
               </div>
 
@@ -1542,7 +1542,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold text-slate-900">Section 31 Doorstep Visit</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹500 to ₹1,000</td>
-                      <td className="p-3 sm:p-4">Conveyance charge for home registration under Section 31</td>
+                      <td className="p-3 sm:p-4">Conveyance charge for home filing under Section 31</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1582,7 +1582,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Goa legal clause builder</span>
+                        <span>Free Goa legal clause builder</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1623,7 +1623,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-200 pt-2 border-t border-white/10">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span>Dedicated Goa succession lawyer review</span>
+                        <span>Dedicated Goa estate lawyer review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -1653,7 +1653,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
                     <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                      Full SRO Registration &amp; Visit
+                      Full SRO Filing &amp; Visit
                     </span>
                     <div>
                       <span className="text-3xl font-extrabold text-slate-900">₹9,990</span>
@@ -1704,7 +1704,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Panaji
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key legal questions on Will drafting, the Goa Civil Code, forced heir quotas, and Civil Registrar registration in Panaji:
+                  Clear answers to key legal questions on Will drafting, the Goa Civil Code, forced heir quotas, and Civil Registrar filing in Panaji:
                 </p>
               </div>
 
@@ -1749,7 +1749,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Goa Legal Framework References
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Every legal principle and procedural mandate outlined on this page is rooted in governing Indian statutes and Goa-specific succession enactments:
+                  Every legal principle and procedural mandate outlined on this page is rooted in governing Indian statutes and Goa-specific estate enactments:
                 </p>
               </div>
 
@@ -1759,25 +1759,25 @@ export default function PanajiLocationClient({ faqs }: Props) {
                     Goa Civil Code (Portuguese Civil Code of 1867)
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs forced heirship (Legitime), Communion of Assets matrimonial property regime, Public Wills, and Sealed Wills across Goa.
+                    Governs forced heirship (Legitime), Communion of Assets matrimonial asset regime, Public Wills, and Sealed Wills across Goa.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <h3 className="font-bold text-slate-900">
-                    Goa Succession, Special Notaries and Inventory Act, 2012
+                    Goa Estate, Special Notaries and Inventory Act, 2012
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Modern codification of testamentary succession, powers of Special Notaries, and the conduct of Inventory Proceedings in Goa courts.
+                    Modern codification of Will estate, powers of Special Notaries, and the conduct of Inventory Proceedings in Goa courts.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <h3 className="font-bold text-slate-900">
-                    Section 18(e) &amp; Section 31, Registration Act, 1908
+                    Section 18(e) &amp; Section 31, Filing Act, 1908
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs optional registration of Wills and doorstep registration at home for senior citizens and medically incapacitated testators.
+                    Governs a choice filing of Wills and doorstep filing at home for senior citizens and medically incapacitated Will makers.
                   </p>
                 </div>
 
@@ -1824,7 +1824,29 @@ export default function PanajiLocationClient({ faqs }: Props) {
               </div>
             </div>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1847,7 +1869,7 @@ export default function PanajiLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="p-4 bg-[#172228] flex items-center justify-between border-t border-white/10 text-xs text-slate-300">
-              <span>Panaji &amp; Goa Civil Code Succession Blueprint</span>
+              <span>Panaji &amp; Goa Civil Code Estate Blueprint</span>
               <button
                 onClick={() => setShowHighResModal(false)}
                 className="px-4 py-1.5 rounded-xl bg-white/10 text-white hover:bg-white/20 font-bold transition-colors cursor-pointer"

@@ -109,17 +109,17 @@ const CHECKLIST_ITEMS = [
   {
     id: "item-1",
     title: "Aadhaar Card and PAN of Testator",
-    desc: "Primary government photo identity proof verifying full legal name, date of birth, and permanent Ranchi residential address.",
+    desc: "Primary government photo identity proof verifying full legal name, date of birth, and permanent Ranchi home address.",
   },
   {
     id: "item-2",
     title: "Khatiyan & Registered Land Title Deeds (CS/RS)",
-    desc: "Cadastral Survey (CS) or Revisional Survey (RS) Khatiyan extract, registered sale deed, or partition deed showing undisputed raiyati ownership.",
+    desc: "Cadastral Survey (CS) or Revisional Survey (RS) Khatiyan extract, filed sale deed, or split deed showing undisputed raiyati ownership.",
   },
   {
     id: "item-3",
     title: "RRDA Allotment Letters & RMC Holding Tax Receipts",
-    desc: "Ranchi Regional Development Authority (RRDA) layout approval, RMC municipal property tax receipt with holding number, or housing board allotment.",
+    desc: "Ranchi Regional Development Office (RRDA) layout approval, RMC city asset tax receipt with holding number, or housing board allotment.",
   },
   {
     id: "item-4",
@@ -129,12 +129,12 @@ const CHECKLIST_ITEMS = [
   {
     id: "item-5",
     title: "Details of Two Non-Beneficiary Adult Witnesses",
-    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two independent adult witnesses who will not receive any property under the Will.",
+    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two independent adult witnesses who will not receive any asset under the Will.",
   },
   {
     id: "item-6",
     title: "MBBS Doctor Fitness Certificate (For Seniors)",
-    desc: "Medical certificate from a registered physician verifying mental soundness and lucid testamentary disposing capacity of the testator.",
+    desc: "Medical paper from a filed physician verifying mental soundness and lucid Will disposing capacity of the Will maker.",
   },
 ];
 
@@ -237,7 +237,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect family home assets, RRDA plots, Chota Nagpur raiyati lands, and shop business assets across Ranchi.
-                Get experienced lawyer drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep home visits for senior testators.
+                Get experienced lawyer drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep home visits for senior Will makers.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -270,7 +270,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Optional Probate</span>
+                  <span>A Choice Probate</span>
                 </div>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Section 213 ISA Exemption
@@ -459,7 +459,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 52 characters (<= 70) */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Ranchi
+                  Key Highlights: Will Making &amp; Filing in Ranchi
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
@@ -468,7 +468,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>Probate Not Needed in Jharkhand</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ranchi is a non-presidency capital under the High Court of Jharkhand. Under Section 213 of the Indian Succession Act, court probate is strictly optional for Hindu, Jain, Sikh, and Buddhist Wills.
+                      Ranchi is a non-presidency capital under the High Court of Jharkhand. Under Section 213 of the Indian Succession Act, court probate is strictly a choice for Hindu, Jain, Sikh, and Buddhist Wills.
                     </p>
                   </div>
 
@@ -478,7 +478,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty across State</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills in Jharkhand are completely exempt from stamp duty. Sub-Registrars charge only a flat nominal registration fee of about ₹1,000 for official Book III archival.
+                      Wills in Jharkhand are completely exempt from stamp duty. Sub-Registrars charge only a flat nominal filing fee of about ₹1,000 for official Book III archival.
                     </p>
                   </div>
 
@@ -488,7 +488,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>RMC &amp; RRDA Direct Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables swift municipal holding tax name change in Ranchi Municipal Corporation (RMC) and hassle-free plot transmissions with RRDA without court delays.
+                      A filed Will enables swift city holding tax name change in Ranchi City City Board (RMC) and hassle-free plot transmissions with RRDA without court delays.
                     </p>
                   </div>
 
@@ -498,7 +498,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>Section 31 Doorstep Facility</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Elderly or bedridden citizens in Ashok Nagar, Morabadi, and Kanke Road can request the Sub-Registrar to visit their home or hospital with an MBBS doctor fitness paper.
+                      Elderly or bedridden citizens in Ashok Nagar, Morabadi, and Kanke Road can request the SRO to visit their home or hospital with an MBBS doctor fitness paper.
                     </p>
                   </div>
                 </div>
@@ -517,8 +517,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   1. Legal Framework for Will Drafting in Ranchi
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession in Ranchi and across Jharkhand is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and state-specific land legislations including the <strong>Chota Nagpur Tenancy Act, 1908 (CNT Act)</strong>.
-                  Whether you are planning succession for family home bungalows in Ashok Nagar, modern apartments along Kanke Road, shop shops in Upper Bazar, or farm lands in Namkum and Ormanjhi, your Will must satisfy precise legal standards.
+                  Will estate in Ranchi and across Jharkhand is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and state-specific land legislations including the <strong>Chota Nagpur Tenancy Act, 1908 (CNT Act)</strong>.
+                  Whether you are planning estate for family home bungalows in Ashok Nagar, modern apartments along Kanke Road, shop shops in Upper Bazar, or farm lands in Namkum and Ormanjhi, your Will must satisfy precise legal standards.
                 </p>
               </div>
 
@@ -529,17 +529,17 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>Will maker Capacity</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 59 of the Indian Succession Act, every person of sound mind who has attained majority can make a Will. Senior citizens with physical ailments can validly execute provided they possess testamentary disposing clarity.
+                    Under Section 59 of the Indian Succession Act, every person of sound mind who has attained majority can make a Will. Senior citizens with physical ailments can validly execute provided they possess Will disposing clarity.
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-white border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <FileCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Attestation by Two Witnesses</span>
+                    <span>Witness Signing by Two Witnesses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 63, the Will must be signed by the Will maker in the presence of at least two independent adult witnesses. Under Section 67, witnesses must never be heirs receiving any bequest under the document.
+                    Under Section 63, the Will must be signed by the Will maker in the presence of at least two independent adult witnesses. Under Section 67, witnesses must never be heirs receiving any bequest under the paper.
                   </p>
                 </div>
 
@@ -559,7 +559,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="space-y-1">
                   <span className="font-bold text-[#C65378]">Crucial Chota Nagpur Tenancy Act (CNT Act) Nuance:</span>
                   <p className="text-slate-700 leading-relaxed">
-                    Under Section 46 of the CNT Act, family lands belonging to Scheduled Tribes cannot be alienated, transferred, or bequeathed to non-tribals or contrary to customary tribal succession. Our Ranchi legal team meticulously verifies Khatiyan entries, Jamabandi records, and land categories to make sure your Will is 100% compliant with local tenancy jurisprudence.
+                    Under Section 46 of the CNT Act, family lands belonging to Scheduled Tribes cannot be alienated, transferred, or bequeathed to non-tribals or contrary to customary tribal estate. Our Ranchi legal team meticulously verifies Khatiyan entries, Jamabandi records, and land categories to make sure your Will is 100% compliant with local tenancy jurisprudence.
                   </p>
                 </div>
               </div>
@@ -574,12 +574,12 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 45 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Ranchi?
+                  2. Is Will Filing Needed in Ranchi?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional throughout Jharkhand.
-                  An unregistered Will drafted on plain A4 paper and signed before two witnesses has lawful standing.
-                  However, registering your Will before the Sub-Registrar provides critical legal protection against land grabbers, fraudulent split claims, and property fights.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, registering a Will is legally a choice throughout Jharkhand.
+                  An plain Will drafted on plain A4 paper and signed before two witnesses has lawful standing.
+                  However, registering your Will before the SRO provides critical legal protection against land grabbers, fraudulent split claims, and asset fights.
                 </p>
               </div>
 
@@ -589,24 +589,24 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 text-slate-800 border-b border-slate-200">
                       <th className="p-3 sm:p-4 font-bold">Feature</th>
-                      <th className="p-3 sm:p-4 font-bold text-slate-600">Unregistered Will</th>
-                      <th className="p-3 sm:p-4 font-bold text-[#C65378]">Registered Will (NGDRS Jharkhand)</th>
+                      <th className="p-3 sm:p-4 font-bold text-slate-600">Plain Will</th>
+                      <th className="p-3 sm:p-4 font-bold text-[#C65378]">Filed Will (NGDRS Jharkhand)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">Legal Validity</td>
                       <td className="p-3 sm:p-4">Valid under Section 63 ISA</td>
-                      <td className="p-3 sm:p-4 font-semibold text-slate-900">Valid under Section 63 ISA &amp; Registration Act</td>
+                      <td className="p-3 sm:p-4 font-semibold text-slate-900">Valid under Section 63 ISA &amp; Filing Act</td>
                     </tr>
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">Official Record</td>
-                      <td className="p-3 sm:p-4">Private document only</td>
+                      <td className="p-3 sm:p-4">Private paper only</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Archived in Book III at Ranchi SRO</td>
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">RMC Holding Tax Name Change</td>
-                      <td className="p-3 sm:p-4">Requires extensive legal heir affidavits &amp; notices</td>
+                      <td className="p-3 sm:p-4">Requires extensive legal heir sworn notes &amp; notices</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Swift processing by RMC revenue inspectors</td>
                     </tr>
                     <tr className="bg-slate-50/50">
@@ -641,8 +641,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   3. Jharkhand Probate Rules: Section 213 Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Ranchi is whether a Will must receive court probate before heirs can take possession.
-                  Under Indian succession law, this is completely optional for assets located in Jharkhand.
+                  A common question among asset owners in Ranchi is whether a Will must receive court probate before heirs can take possession.
+                  Under Indian succession law, this is completely a choice for assets located in Jharkhand.
                 </p>
               </div>
 
@@ -655,7 +655,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Ranchi is a non-presidency capital under the area of the <strong>High Court of Jharkhand</strong>.
-                  The Supreme Court of India in the landmark decision of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> and repeated rulings by the Jharkhand High Court confirm that probate is non-needed for Hindu, Jain, Sikh, and Buddhist testators outside historical presidency areas.
+                  The Supreme Court of India in the landmark decision of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> and repeated rulings by the Jharkhand High Court confirm that probate is non-needed for Hindu, Jain, Sikh, and Buddhist Will makers outside historical presidency areas.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
@@ -669,7 +669,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-xs uppercase tracking-wider text-[#C65378] block">
-                      Why Registration is Vital
+                      Why Filing is Vital
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Since court probate is not needed, registering your Will at the Ranchi SRO office serves as the gold standard of authenticity before RMC, banks, and revenue circle officers.
@@ -691,8 +691,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   4. Ranchi SRO office Directory &amp; SROs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across Ranchi is administered by the Department of Registration, Government of Jharkhand through the <strong>National Generic Document Registration System (NGDRS Jharkhand)</strong>.
-                  Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar within whose sub-district you reside or where your property is situated.
+                  Will filing across Ranchi is administered by the Office of Filing, Government of Jharkhand through the <strong>National Generic Paper Filing System (NGDRS Jharkhand)</strong>.
+                  Under Section 32 of the Filing Act, you can register your Will before the SRO within whose sub-district you reside or where your asset is situated.
                 </p>
               </div>
 
@@ -796,7 +796,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Seeking lawyer-supervised <strong>Will drafting services in Ashok Nagar, Morabadi, Bariatu, Kanke Road, Doranda, or Lalpur</strong>?
-                  Ranchi encompasses distinct property ownership frameworks, RRDA housing board covenants, RMC municipal bylaws, and Chota Nagpur Tenancy Act classifications.
+                  Ranchi encompasses distinct asset ownership frameworks, RRDA housing board covenants, RMC city bylaws, and Chota Nagpur Tenancy Act classifications.
                   Whether you own an family bungalow in Morabadi, an RRDA plot in Ashok Nagar, or shop units on Main Road, our estate lawyers provide tailored legal solutions:
                 </p>
               </div>
@@ -933,7 +933,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Separation of shop clinic leases from personal home assets guarantees smooth inheritance without institutional roadblocks.
+                        Separation of shop clinic leases from personal home assets guarantees smooth estate without institutional roadblocks.
                       </p>
                     </div>
                   </div>
@@ -977,7 +977,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Fastest-growing upscale corridor with premium lakeside apartments, expansive farmhouses, and plotted colonies. We handle complex multi-property portfolios, NRI cross-border bequests, and lakeside property succession.
+                      Fastest-growing upscale corridor with premium lakeside apartments, expansive farmhouses, and plotted colonies. We handle complex multi-asset portfolios, NRI cross-border bequests, and lakeside asset estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1027,7 +1027,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Historic office hub housing government secretariats, defense cantonment officers, and well-settled family households. We assist senior government pensioners and defense families with seamless testamentary planning.
+                      Historic office hub housing government secretariats, defense cantonment officers, and well-settled family households. We assist senior government pensioners and defense families with seamless Will planning.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1077,7 +1077,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ranchi&apos;s business epicenter with wholesale traders, jewellers, textile merchants, and shop complex owners. We formulate robust business succession plans protecting shop freeholds, partnership shares, and warehouse leases.
+                      Ranchi&apos;s business epicenter with wholesale traders, jewellers, textile merchants, and shop complex owners. We formulate robust business estate plans protecting shop freeholds, partnership shares, and warehouse leases.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1113,10 +1113,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 46 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Jharkhand
+                  6. Step-by-Step Will Filing in Jharkhand
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Ranchi is conducted through the <strong>Department of Registration, Government of Jharkhand (NGDRS Jharkhand)</strong>.
+                  Registering a Will in Ranchi is conducted through the <strong>Office of Filing, Government of Jharkhand (NGDRS Jharkhand)</strong>.
                   Our senior lawyers guide you seamlessly through each legal phase:
                 </p>
               </div>
@@ -1132,7 +1132,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       Asset Inventory &amp; CNT Act Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile complete ownership documents of your Ranchi assets, including RMC municipal holding tax receipts, RRDA plot allotment letters, bank account details, demat portfolios, and Khatiyan survey land records. Verify that lands are non-tribal general raiyati assets under CNT Act parameters.
+                      Compile complete ownership papers of your Ranchi assets, including RMC city holding tax receipts, RRDA plot allotment letters, bank account details, demat portfolios, and Khatiyan survey land records. Verify that lands are non-tribal general raiyati assets under CNT Act parameters.
                     </p>
                   </div>
                 </div>
@@ -1147,7 +1147,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       Lawyer Drafting &amp; Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal experts draft a tailored testamentary document. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate rules, Jharkhand High Court probate exemption affirmations, and clear office powers for your executor.
+                      Our legal experts draft a tailored Will paper. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate rules, Jharkhand High Court probate exemption affirmations, and clear office powers for your executor.
                     </p>
                   </div>
                 </div>
@@ -1159,7 +1159,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Signing &amp; Attestation by Two Witnesses
+                      Signing &amp; Witness Signing by Two Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the drafted Will on durable bond or standard executive paper. The Will maker signs or affixes their thumb impression at the bottom of each page in the concurrent presence of two independent adult witnesses who sign as attestors. If the Will maker is elderly, an MBBS doctor mental fitness paper is appended.
@@ -1177,7 +1177,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       NGDRS Jharkhand Online Slot Booking &amp; e-Gras Challan
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our team logs into the NGDRS Jharkhand portal (<em>ngdrs.jharkhand.gov.in</em>), inputs document particulars under Book III, selects your jurisdictional Ranchi SRO (such as Ranchi Sadar Kutchery or Kanke), and pays the legal ₹1,000 fee via e-Gras online government challan. We confirm your preferred time slot appointment slip.
+                      Our team logs into the NGDRS Jharkhand portal (<em>ngdrs.jharkhand.gov.in</em>), inputs paper particulars under Book III, selects your local Ranchi SRO (such as Ranchi Sadar Kutchery or Kanke), and pays the legal ₹1,000 fee via e-Gras online government challan. We confirm your preferred time slot appointment slip.
                     </p>
                   </div>
                 </div>
@@ -1192,7 +1192,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       SRO Attendance, Biometrics &amp; Book III Archival
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Will maker and both witnesses visit the SRO office with original Aadhaar cards and appointment slips. The Sub-Registrar captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified registered Will copy with official endorsement stamps.
+                      The Will maker and both witnesses visit the SRO office with original Aadhaar cards and appointment slips. The SRO captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified filed Will copy with official endorsement stamps.
                     </p>
                   </div>
                 </div>
@@ -1208,10 +1208,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 49 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Doorstep Will Registration for Senior Citizens
+                  7. Doorstep Will Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or hospitalized testators residing in Ashok Nagar, Morabadi, Bariatu, or anywhere in Ranchi district, travelling to an SRO may be physically impossible.
+                  For elderly, infirm, or hospitalized Will makers residing in Ashok Nagar, Morabadi, Bariatu, or anywhere in Ranchi district, travelling to an SRO may be physically impossible.
                   The law provides a compassionate, lawful mechanism.
                 </p>
               </div>
@@ -1223,30 +1223,30 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </span>
                   <div>
                     <h3 className="text-lg font-extrabold text-slate-900">
-                      Sub-Registrar Home Visit under Section 31
+                      SRO Home Visit under Section 31
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Applicable across all Sub-Registrar areas in Jharkhand
+                      Applicable across all SRO areas in Jharkhand
                     </p>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has discretionary authority to attend the private residence or hospital bedside of a Will maker who cannot travel to the registration office due to age or medical infirmity.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO has discretionary office to attend the private residence or hospital bedside of a Will maker who cannot travel to the filing office due to age or medical infirmity.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
-                    <span className="font-bold text-slate-900 block">Medical Certificate Mandate:</span>
+                    <span className="font-bold text-slate-900 block">Medical Paper Mandate:</span>
                     <p className="text-slate-600">
-                      A registered medical practitioner (MBBS doctor) must issue a written paper confirming that the Will maker is mentally lucid and in sound testamentary disposing state of mind.
+                      A filed medical practitioner (MBBS doctor) must issue a written paper confirming that the Will maker is mentally lucid and in sound Will disposing state of mind.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                     <span className="font-bold text-slate-900 block">Official Commission Fee:</span>
                     <p className="text-slate-600">
-                      A legal private attendance commission fee is paid through the Jharkhand e-Gras portal, covering the Sub-Registrar official visit and travel escort.
+                      A legal private attendance commission fee is paid through the Jharkhand e-Gras portal, covering the SRO official visit and travel escort.
                     </p>
                   </div>
                 </div>
@@ -1256,7 +1256,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#172228] text-white text-xs sm:text-sm font-bold hover:bg-slate-800 transition-all"
                   >
-                    <span>Request Doorstep Will Registration in Ranchi</span>
+                    <span>Request Doorstep Will Filing in Ranchi</span>
                     <ArrowRight className="w-4 h-4 text-rose-300" />
                   </Link>
                 </div>
@@ -1272,10 +1272,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 44 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Ranchi Will Making
+                  8. Papers Checklist for Ranchi Will Making
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Before visiting the SRO office in Ranchi or finalizing your document online, verify that you have gathered all necessary proofs. Use our interactive checklist to track your readiness:
+                  Before visiting the SRO office in Ranchi or finalizing your paper online, verify that you have gathered all necessary proofs. Use our free checklist to track your readiness:
                 </p>
               </div>
 
@@ -1283,7 +1283,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
               <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 md:p-8 shadow-xs space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                   <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                    Interactive Readiness Tracker
+                    Free Readiness Tracker
                   </span>
                   <span className="text-xs font-mono font-bold px-3 py-1 rounded-full bg-rose-50 text-[#C65378]">
                     {checkedCount} of {checklist.length} Completed
@@ -1337,7 +1337,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   9. Ranchi Real Estate: RRDA Plots &amp; CNT Act Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Asset bequeathal in Ranchi involves distinct municipal, urban development, and Chota Nagpur Tenancy Act rules. Here is how our legal drafts make sure title clarity across local asset categories:
+                  Asset bequeathal in Ranchi involves distinct city, urban development, and Chota Nagpur Tenancy Act rules. Here is how our legal drafts make sure title clarity across local asset categories:
                 </p>
               </div>
 
@@ -1349,7 +1349,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>RRDA Approved Home Plots</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Thousands of families in Ranchi own home and shop plots developed under Ranchi Regional Development Authority (RRDA) schemes. Our drafts record exact RRDA layout sanction numbers, plot measurements, and name change rights to make sure smooth title transfer.
+                    Thousands of families in Ranchi own home and shop plots developed under Ranchi Regional Development Office (RRDA) schemes. Our drafts record exact RRDA layout sanction numbers, plot measurements, and name change rights to make sure smooth title transfer.
                   </p>
                 </div>
 
@@ -1360,7 +1360,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>RMC Freehold Apartments &amp; Houses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Assets within Ranchi Municipal Corporation (RMC) limits require specific holding numbers, ward entries, and registered deed citations. A registered Will allows the heir to achieve name name change directly through the RMC citizen portal without bureaucratic delays.
+                    Assets within Ranchi City City Board (RMC) limits require specific holding numbers, ward entries, and filed deed citations. A filed Will allows the heir to achieve name name change directly through the RMC citizen portal without bureaucratic delays.
                   </p>
                 </div>
 
@@ -1382,7 +1382,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>Shop Showrooms &amp; Small Enterprises</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Shop assets in Upper Bazar, Lalpur, Main Road, or Tupudana industrial park require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to make sure uninterrupted business continuity.
+                    Shop assets in Upper Bazar, Lalpur, Main Road, or Tupudana plant park require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to make sure uninterrupted business continuity.
                   </p>
                 </div>
               </div>
@@ -1397,10 +1397,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Stamp Duty &amp; Registration Fees: Ranchi
+                  10. Official Stamp Duty &amp; Filing Fees: Ranchi
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds that attract 4% stamp duty plus 3% registration fee in Jharkhand, registering a Will is exceptionally economical under state law:
+                  Unlike sale deeds or gift deeds that attract 4% stamp duty plus 3% filing fee in Jharkhand, registering a Will is exceptionally economical under state law:
                 </p>
               </div>
 
@@ -1420,7 +1420,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4">100% exempt under Indian Stamp Act, 1899</td>
                     </tr>
                     <tr className="bg-slate-50/50">
-                      <td className="p-3 sm:p-4 font-semibold">Book III Registration Fee</td>
+                      <td className="p-3 sm:p-4 font-semibold">Book III Filing Fee</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹1,000</td>
                       <td className="p-3 sm:p-4">Flat legal fee payable via e-Gras online challan</td>
                     </tr>
@@ -1432,12 +1432,12 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">Section 31 Doorstep Attendance</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Prescribed Tariff</td>
-                      <td className="p-3 sm:p-4">Official government commission for Sub-Registrar home visit</td>
+                      <td className="p-3 sm:p-4">Official government commission for SRO home visit</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-semibold">Certified Copy of Registered Will</td>
+                      <td className="p-3 sm:p-4 font-semibold">Certified Copy of Filed Will</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Nominal Form Fee</td>
-                      <td className="p-3 sm:p-4">Available from SRO archives after registration</td>
+                      <td className="p-3 sm:p-4">Available from SRO archives after filing</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1533,7 +1533,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Custom Succession Planning</span>
+                        <span>Custom Estate Planning</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1555,7 +1555,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between hover:shadow-md transition-all">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
-                      Full SRO Registration &amp; Doorstep
+                      Full SRO Filing &amp; Doorstep
                     </span>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
@@ -1589,7 +1589,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-full bg-slate-900 text-white font-bold text-xs hover:bg-slate-800 transition-all text-center block"
                   >
-                    Book Full Registration
+                    Book Full Filing
                   </Link>
                 </div>
               </div>
@@ -1607,7 +1607,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Ranchi Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Essential legal answers regarding Will drafting, NGDRS Jharkhand registration, and probate exemption in Ranchi:
+                  Essential legal answers regarding Will drafting, NGDRS Jharkhand filing, and probate exemption in Ranchi:
                 </p>
               </div>
 
@@ -1664,7 +1664,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     ISA Section 59 &amp; 63
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Testamentary Capacity &amp; Attestation
+                    Will Capacity &amp; Witness Signing
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Mandates sound disposing mind and signature before two independent witnesses who are not heirs.
@@ -1679,31 +1679,31 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     Non-Presidency Probate Exemption
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Exempts Hindu, Sikh, Jain, and Buddhist testators in Jharkhand from needed court probate proceedings.
+                    Exempts Hindu, Sikh, Jain, and Buddhist Will makers in Jharkhand from needed court probate proceedings.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] block">
-                    Registration Act Section 18(e) &amp; 51
+                    Filing Act Section 18(e) &amp; 51
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Optional Registration &amp; Book III
+                    A Choice Filing &amp; Book III
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Will registration is optional, but once registered, it is permanently preserved in official government Book III records.
+                    Will filing is a choice, but once filed, it is permanently preserved in official government Book III records.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] block">
-                    Registration Act Section 31
+                    Filing Act Section 31
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Sub-Registrar Doorstep Attendance
+                    SRO Doorstep Attendance
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Empowers the Sub-Registrar to visit homes or hospitals for testators unable to attend the office due to illness.
+                    Empowers the SRO to visit homes or hospitals for Will makers unable to attend the office due to illness.
                   </p>
                 </div>
 
@@ -1715,25 +1715,47 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     Chota Nagpur Tenancy Compliance
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Safeguards tribal land from unlawful alienation and clarifies raiyati non-tribal urban succession rights.
+                    Safeguards tribal land from unlawful alienation and clarifies raiyati non-tribal urban estate rights.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] block">
-                    RRDA &amp; RMC Municipal Regulations
+                    RRDA &amp; RMC City Regulations
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Municipal &amp; Urban Land Name Change
+                    City &amp; Urban Land Name Change
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Framework for transferring approved RRDA layouts and municipal holding tax records through Circle Offices and RMC.
+                    Framework for transferring approved RRDA layouts and city holding tax records through Circle Offices and RMC.
                   </p>
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1759,7 +1781,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
             </div>
             <div className="p-4 bg-slate-900 text-white flex items-center justify-between">
               <span className="text-xs font-medium">
-                Online Will Drafting &amp; Registration Guidance in Ranchi (Ranchi District, Jharkhand)
+                Online Will Drafting &amp; Filing Guidance in Ranchi (Ranchi District, Jharkhand)
               </span>
               <button
                 type="button"

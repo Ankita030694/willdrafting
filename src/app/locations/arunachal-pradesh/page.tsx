@@ -143,7 +143,7 @@ export default function ArunachalPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Arunachal Pradesh: Online Will Guide",
         description:
-          "Draft a valid Will in Arunachal Pradesh. Guidance on local tribal passing assets practices, Land Holding Certificates (LHC), and legal.",
+          "Draft a valid Will in Arunachal Pradesh. Guidance on local tribal passing assets practices, Land Holding Papers (LHC), and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function ArunachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Arunachal Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer check, Land Holding Certificate (LHC) estate compliance, SRO Book III signing, and.",
+          "Professional Will drafting, lawyer check, Land Holding Paper (LHC) estate compliance, SRO Book III signing, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -259,26 +259,26 @@ export default function ArunachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Arunachal Pradesh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar or Deputy Commissioner office in Arunachal Pradesh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO or Deputy Commissioner office in Arunachal Pradesh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Estate Assets & Land Holding Certificates (LHC)",
-            text: "List your urban homes, shop buildings, bank investments, and tribal land parcels with exact Land Holding Certificate (LHC) numbers, issuing DC office details, circle, and boundary descriptions. Designate trusted heirs and an executor.",
+            text: "List your urban homes, shop buildings, bank investments, and tribal land parcels with exact Land Holding Paper (LHC) numbers, issuing DC office details, circle, and boundary descriptions. Designate trusted heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Local & Legal Compliant Testamentary Clauses",
-            text: "Structure your Will with verified legal clauses aligning with the Arunachal Pradesh (Land Settlement and Records) Act, 2000, making sure bequests of tribal lands are made to eligible tribal heirs and set uping clear executor powers.",
+            text: "Structure your Will with checked legal clauses aligning with the Arunachal Pradesh (Land Deal and Records) Act, 2000, making sure bequests of tribal lands are made to eligible tribal heirs and set uping clear executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Adult Witnesses with ID",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or asset under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or asset under the Will.",
           },
           {
             "@type": "HowToStep",

@@ -124,14 +124,14 @@ const MIZORAM_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 paper. Under Indian and Mizoram law, non-judicial stamp paper is not required.",
     checked: true,
   },
   {
     id: "item-2",
     label: "Original Aadhaar Card & Voter ID of Will maker",
-    detail: "Essential for identity validation, electronic thumbprint, and digital photograph at the Sub-Registrar counter.",
+    detail: "Essential for identity validation, electronic thumbprint, and digital photograph at the SRO counter.",
     checked: true,
   },
   {
@@ -143,25 +143,25 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly recommended for senior citizens aged 60+. Certifies testamentary mental capacity, soundness, and lucidity.",
+    detail: "Strongly recommended for senior citizens aged 60+. Certifies Will mental capacity, soundness, and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "Land Settlement Certificate (LSC) / Pass Copies",
-    detail: "Certified copies of Land Settlement Certificates (LSC) or Periodic Pattas issued by Land Revenue & Settlement.",
+    label: "Land Deal Paper (LSC) / Pass Copies",
+    detail: "Certified copies of Land Deal Papers (LSC) or Periodic Pattas issued by Land Revenue & Deal.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Sub-Registrar Registration Fee Receipt / Challan",
-    detail: "Official challan receipt for the nominal legal registration fee paid at the District Treasury counter.",
+    label: "SRO Filing Fee Receipt / Challan",
+    detail: "Official challan receipt for the nominal legal filing fee paid at the District Treasury counter.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Autonomous District Council (ADC) Revenue Passes",
-    detail: "For assets in Lawngtlai or Siaha, land settlement passes issued by LADC, MADC, or CADC revenue branches.",
+    detail: "For assets in Lawngtlai or Siaha, land deal passes issued by LADC, MADC, or CADC revenue branches.",
     checked: false,
   },
 ];
@@ -254,11 +254,11 @@ export default function MizoramLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Exactly 60 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Mizoram: Property Succession Guide
+                Will Drafting Services in Mizoram: Asset Estate Guide
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will in Mizoram. Clear legal guidance on Mizo customary inheritance, The Mizo Marriage, Divorce and Inheritance of Property Act 2014, Land Settlement Certificates (LSC), and Gauhati High Court rules.
+                Draft a legally watertight Will in Mizoram. Clear legal guidance on Mizo customary estate, The Mizo Marriage, Divorce and Estate of Asset Act 2014, Land Deal Papers (LSC), and Gauhati High Court rules.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -314,7 +314,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Mizoram Land &amp; Succession Blueprint
+                  Mizoram Land &amp; Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -352,14 +352,14 @@ export default function MizoramLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Exempt on Testamentary Wills
+                Exempt on Will Wills
               </span>
             </div>
 
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Gauhati High Court Precedent
@@ -500,36 +500,36 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>MIZORAM ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Succession in Mizoram
+                  Key Highlights: Will Making &amp; Estate in Mizoram
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional SRO Registration</span>
+                      <span>A Choice SRO Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Registration under Section 18(e) is optional, but Book III registration at District Registry counters prevents post-demise fights and accelerates revenue name change.
+                      Filing under Section 18(e) is a choice, but Book III filing at District Registry counters prevents post-demise fights and accelerates revenue name change.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Mizo Inheritance Act 2014</span>
+                      <span>Mizo Estate Act 2014</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Enables testators of sound mind to dispose of self-acquired property freely by Will (Thurochhiah), empowering daughters and widows alongside sons.
+                      Enables Will makers of sound mind to dispose of self-acquired asset freely by Will (Thurochhiah), empowering daughters and widows alongside sons.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Land Settlement Certificates (LSC)</span>
+                      <span>Land Deal Papers (LSC)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Urban and rural LSC holdings are protected under Mizoram land laws. A verified Will guarantees seamless ownership name transfer (Hming Thlak) in state revenue rolls.
+                      Urban and rural LSC holdings are protected under Mizoram land laws. A checked Will guarantees seamless ownership name transfer (Hming Thlak) in state revenue rolls.
                     </p>
                   </div>
 
@@ -554,20 +554,20 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>CUSTOMARY &amp; STATUTORY COEXISTENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Legal Framework: Mizo Customary Law &amp; Succession
+                  1. Legal Framework: Mizo Customary Law &amp; Estate
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Mizoram is an intricate blend of indigenous customary traditions, constitutional protections under Article 371G, and progressive state statutes.
+                  Estate in Mizoram is an intricate blend of indigenous customary traditions, constitutional protections under Article 371G, and progressive state statutes.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-5">
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
-                    Traditional Mizo custom followed patrilineal inheritance and ultimogeniture. Under this tradition, the youngest son (<em>naupang ber</em>) inherited the family home and main estate. Elder brothers set up separate homes upon marriage. Under ancient customs, daughters and surviving widows had few independent claims to family property.
+                    Traditional Mizo custom followed patrilineal estate and ultimogeniture. Under this tradition, the youngest son (<em>naupang ber</em>) inherited the family home and main estate. Elder brothers set up separate homes upon marriage. Under ancient customs, daughters and surviving widows had few independent claims to family asset.
                   </p>
                   <p>
-                    The Mizoram Legislative Assembly modernized these rules by passing <strong>The Mizo Marriage, Divorce and Inheritance of Property Act, 2014</strong>. Under Sections 43 to 45, every adult of sound mind has the legal right to make a Will (known as <em>Thurochhiah</em> or <em>Thuthlung</em>). You can freely bequeath your self-acquired property as you choose.
+                    The Mizoram Legislative Assembly modernized these rules by passing <strong>The Mizo Marriage, Divorce and Estate of Asset Act, 2014</strong>. Under Sections 43 to 45, every adult of sound mind has the legal right to make a Will (known as <em>Thurochhiah</em> or <em>Thuthlung</em>). You can freely bequeath your self-acquired asset as you choose.
                   </p>
                   <p>
                     A clear Will bridges old traditions and modern family needs. It lets parents provide equally for daughters, elder sons, and surviving spouses. It also prevents painful fights before Village Councils or Civil Courts.
@@ -577,7 +577,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
                   <div className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                    <strong>Article 371G &amp; Tribal Land Protection:</strong> Under Article 371G of the Constitution and state revenue laws, tribal land cannot go to non-tribals. This rule protects Land Settlement Certificates (LSC). Any Will clause leaving tribal land to a non-tribal is void under the law.
+                    <strong>Article 371G &amp; Tribal Land Protection:</strong> Under Article 371G of the Constitution and state revenue laws, tribal land cannot go to non-tribals. This rule protects Land Deal Papers (LSC). Any Will clause leaving tribal land to a non-tribal is void under the law.
                   </div>
                 </div>
               </div>
@@ -591,10 +591,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PROVISIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Registration Status: Needed vs Optional Rules
+                  2. Filing Status: Needed vs A Choice Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Understanding whether a Will must be registered before the Sub-Registrar in Mizoram is critical for every property owner:
+                  Understanding whether a Will must be filed before the SRO in Mizoram is critical for every asset owner:
                 </p>
               </div>
 
@@ -602,13 +602,13 @@ export default function MizoramLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-3 flex flex-col justify-between">
                   <div className="space-y-3">
                     <span className="inline-flex px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-800">
-                      Section 18(e) Registration Act
+                      Section 18(e) Filing Act
                     </span>
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Unregistered Will (White Paper)
+                      Plain Will (White Paper)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      A Will drafted on plain white paper and signed before two independent adult witnesses is legally valid under Section 63 of the Indian Succession Act. Registration is not strictly needed by statute.
+                      A Will drafted on plain white paper and signed before two independent adult witnesses is legally valid under Section 63 of the Indian Succession Act. Filing is not strictly needed by statute.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -626,20 +626,20 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <div className="text-[11px] text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100 mt-3">
-                    Legal validity exists, but lacks the unassailable proof weight of official government registration.
+                    Legal validity exists, but lacks the unassailable proof weight of official government filing.
                   </div>
                 </div>
 
                 <div className="rounded-3xl bg-white border-2 border-[#C65378] p-6 shadow-md space-y-3 flex flex-col justify-between relative">
                   <div className="space-y-3">
                     <span className="inline-flex px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
-                      Sub-Registrar Book III Registry
+                      SRO Book III Registry
                     </span>
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Registered Will (Recommended)
+                      Filed Will (Recommended)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Registered before the Sub-Registrar at the DC Office Complex in Aizawl, Lunglei, or other districts. The document enters permanent Book III government custody with biometric thumbprints.
+                      Filed before the SRO at the DC Office Complex in Aizawl, Lunglei, or other districts. The paper enters permanent Book III government custody with biometric thumbprints.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -648,7 +648,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Fast LSC name change in Revenue Department</span>
+                        <span>Fast LSC name change in Revenue Office</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -657,7 +657,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <div className="text-[11px] text-rose-800 bg-rose-50/70 p-3 rounded-xl border border-rose-100 mt-3 font-medium">
-                    Strongly recommended for all Land Settlement Certificate (LSC) holders, multi-story buildings, and businesses.
+                    Strongly recommended for all Land Deal Paper (LSC) holders, multi-story buildings, and businesses.
                   </div>
                 </div>
               </div>
@@ -674,7 +674,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   3. Probate in Mizoram: Gauhati High Court Legal Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Is court probate needed to transfer property under a Will in Mizoram? The legal position is crystal clear:
+                  Is court probate needed to transfer asset under a Will in Mizoram? The legal position is crystal clear:
                 </p>
               </div>
 
@@ -684,10 +684,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     Under Section 213 read with Section 57 of the <strong>Indian Succession Act, 1925</strong>, getting probate (court certification of a Will) is needed strictly within the historical presidency towns of Mumbai, Kolkata, and Chennai.
                   </p>
                   <p>
-                    Mizoram falls under the area of the <strong>Gauhati High Court</strong>, through its permanent <strong>Aizawl Bench</strong>. Rulings of the High Court confirm that probate is <strong>strictly optional</strong> in Mizoram. This applies to tribals, Christians, Hindus, and all local residents.
+                    Mizoram falls under the area of the <strong>Gauhati High Court</strong>, through its permanent <strong>Aizawl Bench</strong>. Rulings of the High Court confirm that probate is <strong>strictly a choice</strong> in Mizoram. This applies to tribals, Christians, Hindus, and all local residents.
                   </p>
                   <p>
-                    Heirs in Aizawl, Lunglei, or Champhai do not need costly probate orders. You can transfer Land Settlement Certificates (LSC) directly with a registered Will. Revenue officers, banks, and municipal bodies accept the Will alongside a death paper.
+                    Heirs in Aizawl, Lunglei, or Champhai do not need costly probate orders. You can transfer Land Deal Papers (LSC) directly with a filed Will. Revenue officers, banks, and city bodies accept the Will alongside a death paper.
                   </p>
                 </div>
 
@@ -698,7 +698,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   </div>
                   <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100">
                     <span className="block font-bold text-slate-900 text-sm">Direct LSC Name Change</span>
-                    <span className="text-[11px] text-slate-500">Revenue Directorate accepts registered Will</span>
+                    <span className="text-[11px] text-slate-500">Revenue Directorate accepts filed Will</span>
                   </div>
                   <div className="p-3 rounded-2xl bg-slate-50 border border-slate-100">
                     <span className="block font-bold text-slate-900 text-sm">Fast Bank Claims</span>
@@ -716,10 +716,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>REGISTRATION HUBS ACROSS MIZORAM</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Sub-Registrar Directory: SRO Offices in Mizoram
+                  4. SRO Directory: SRO Offices in Mizoram
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Locate your district SRO office under the Directorate of Land Revenue &amp; Settlement and Deputy Commissioner offices:
+                  Locate your district SRO office under the Directorate of Land Revenue &amp; Deal and Deputy Commissioner offices:
                 </p>
               </div>
 
@@ -824,7 +824,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Mizoram
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property assets in Mizoram span multi-story home buildings in Aizawl, shop retail complexes in Lunglei, border trade godowns in Champhai, and farm plantations across the hill districts. Our lawyers provide customized legal drafting and Sub-Registrar accompaniment across all key regional cities:
+                  Asset assets in Mizoram span multi-story home buildings in Aizawl, shop retail complexes in Lunglei, border trade godowns in Champhai, and farm plantations across the hill districts. Our lawyers provide customized legal drafting and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -843,7 +843,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting Services in Aizawl &amp; Municipal Areas
+                      Will Drafting Services in Aizawl &amp; City Areas
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -856,7 +856,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Aizawl</strong> for multi-story homes, Land Settlement Certificates (LSC), and shop shops. We also cover Bara Bazar assets, mutual funds, and church bequests under the 2014 Mizo Inheritance Act.
+                      Specialized <strong>Will drafting services in Aizawl</strong> for multi-story homes, Land Deal Papers (LSC), and shop shops. We also cover Bara Bazar assets, mutual funds, and church bequests under the 2014 Mizo Estate Act.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -865,7 +865,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Treasury Square, Tuikual South</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        DC Office registration booking, Gauhati High Court Aizawl Bench lawyer review, and Section 31 doorstep signing.
+                        DC Office filing booking, Gauhati High Court Aizawl Bench lawyer review, and Section 31 doorstep signing.
                       </p>
                     </div>
                   </div>
@@ -910,7 +910,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Lunglei</strong> for Main Bazar shops, homesteads, and plantations. We balance customary rules with the 2014 Act to make sure a clean property division without family conflict.
+                      Tailored <strong>Will drafting services in Lunglei</strong> for Main Bazar shops, homesteads, and plantations. We balance customary rules with the 2014 Act to make sure a clean asset division without family conflict.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -919,7 +919,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Venglai DC Complex, Lunglei</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        DC Office registration support, lawyer document vetting, and independent witness attestation.
+                        DC Office filing support, lawyer paper vetting, and independent witness witness signing.
                       </p>
                     </div>
                   </div>
@@ -973,7 +973,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Keifangtlang</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Revenue pass validation, farm land inheritance structuring, and Book III registration.
+                        Revenue pass validation, farm land estate structuring, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1027,7 +1027,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Project Veng DC Office, Kolasib</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Shop highway title audit, legal Will drafting, and Sub-Registrar accompaniment.
+                        Shop highway title audit, legal Will drafting, and SRO accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1081,7 +1081,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, New Serchhip</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Handloom enterprise succession, village revenue pass validation, and Book III registration.
+                        Handloom enterprise estate, village revenue pass validation, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1135,7 +1135,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District DC &amp; Autonomous Council Registries</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        LADC and MADC revenue coordination, village council check, and legal attestation.
+                        LADC and MADC revenue coordination, village council check, and legal witness signing.
                       </p>
                     </div>
                   </div>
@@ -1189,7 +1189,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Field Veng, Mamit</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Plantation lease check, doctor mental fitness certification, and Sub-Registrar registration.
+                        Plantation lease check, doctor mental fitness certification, and SRO filing.
                       </p>
                     </div>
                   </div>
@@ -1274,7 +1274,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: 5-Step Will Process in Mizoram
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Mizoram:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Mizoram:
                 </p>
               </div>
 
@@ -1288,7 +1288,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile Land Settlement Certificates (LSC), Periodic Pattas, home houses, vehicles, bank accounts, and investments.
+                      Compile Land Deal Papers (LSC), Periodic Pattas, home houses, vehicles, bank accounts, and investments.
                     </p>
                   </div>
                 </div>
@@ -1302,7 +1302,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Draft customized legal clauses under The Mizo Inheritance Act 2014, detailing survivorship, executor powers, and minor guardianships.
+                      Draft customized legal clauses under The Mizo Estate Act 2014, detailing survivorship, executor powers, and minor guardianships.
                     </p>
                   </div>
                 </div>
@@ -1330,7 +1330,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       SRO Submission
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Present documents at your District SRO office and pay the nominal legal registration fee.
+                      Present papers at your District SRO office and pay the nominal legal filing fee.
                     </p>
                   </div>
                 </div>
@@ -1359,23 +1359,23 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Step: Doorstep Registration at Home
+                  7. Section 31 Step: Doorstep Filing at Home
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Traveling across the steep hills of Aizawl and Lunglei can be difficult for seniors. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar can visit your home or hospital. This allows elderly testators to complete registration safely.
+                  Traveling across the steep hills of Aizawl and Lunglei can be difficult for seniors. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO can visit your home or hospital. This allows elderly Will makers to complete filing safely.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates in Mizoram:
+                  How Doorstep SRO Filing Operates in Mizoram:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound testamentary mind but medically advised against travel.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound Will mind but medically advised against travel.</span>
                     </div>
                   </div>
 
@@ -1383,7 +1383,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional District Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the local District SRO.</span>
                     </div>
                   </div>
 
@@ -1399,7 +1399,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your residence or hospital (e.g. Civil Hospital Aizawl, Synod Hospital Durtlang) with check tools.</span>
+                      <span className="text-slate-600">The SRO visits your residence or hospital (e.g. Civil Hospital Aizawl, Synod Hospital Durtlang) with check tools.</span>
                     </div>
                   </div>
                 </div>
@@ -1414,10 +1414,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist: Rules for Mizoram Wills
+                  8. Paper Checklist: Rules for Mizoram Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before visiting the SRO office. You have organized <strong>{checkedCount} of {checklist.length}</strong> recommended documents:
+                  Prepare your papers before visiting the SRO office. You have organized <strong>{checkedCount} of {checklist.length}</strong> recommended papers:
                 </p>
               </div>
 
@@ -1464,10 +1464,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>PROPERTY TENURE IN MIZORAM</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Mizoram Property Types: LSC Lands, Leases &amp; Assets
+                  9. Mizoram Asset Types: LSC Lands, Leases &amp; Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Mizoram depend strictly on the category of land title and issuing authority:
+                  Estate steps in Mizoram depend strictly on the category of land title and issuing office:
                 </p>
               </div>
 
@@ -1477,10 +1477,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     Urban Title Instruments
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Land Settlement Certificates (LSC)
+                    Land Deal Papers (LSC)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under the Mizoram (Land Revenue) Act 2013, an LSC represents permanent, heritable, and transferable title. A registered Will allows the Directorate of Land Revenue &amp; Settlement to update ownership records (Hming Thlak) smoothly.
+                    Under the Mizoram (Land Revenue) Act 2013, an LSC represents permanent, heritable, and transferable title. A filed Will allows the Directorate of Land Revenue &amp; Deal to update ownership records (Hming Thlak) smoothly.
                   </p>
                 </div>
 
@@ -1504,7 +1504,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     Autonomous Council Lands (LADC/MADC)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For assets situated within Lai, Mara, or Chakma Autonomous District Councils, land passes are issued under District Council Land Revenue regulations. Testamentary clauses must align with Council land rules.
+                    For assets situated within Lai, Mara, or Chakma Autonomous District Councils, land passes are issued under District Council Land Revenue regulations. Will clauses must align with Council land rules.
                   </p>
                 </div>
               </div>
@@ -1518,10 +1518,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Fees &amp; Charges: Government Registration in Mizoram
+                  10. Fees &amp; Charges: Government Filing in Mizoram
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property sale deeds that attract percentage-based stamp duties, testamentary Wills are completely exempt from ad valorem duty in Mizoram. Registration fees are purely nominal:
+                  Unlike asset sale deeds that attract percentage-based stamp duties, Will Wills are completely exempt from ad valorem duty in Mizoram. Filing fees are purely nominal:
                 </p>
               </div>
 
@@ -1531,24 +1531,24 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Mizoram Stamp Duty on Testamentary Will</td>
+                      <td className="p-4 font-semibold">Mizoram Stamp Duty on Will Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt)</td>
                       <td className="p-4">Government of Mizoram</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 – ₹500 (Flat Legal Fee)</td>
-                      <td className="p-4">District Sub-Registrar / Treasury</td>
+                      <td className="p-4">District SRO / Treasury</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Pasting Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹250</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1589,16 +1589,16 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with LSC residences, bank savings, and simple succession wishes.
+                      Ideal for single homeowners with LSC residences, bank savings, and simple estate wishes.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Mizoram Will creator</span>
+                        <span>Free Mizoram Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Mizo Inheritance Act 2014 compliant</span>
+                        <span>Mizo Estate Act 2014 compliant</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1667,13 +1667,13 @@ export default function MizoramLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across district Sub-Registrar offices or home visits.
+                      End-to-end filing coordination across district SRO offices or home visits.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1712,10 +1712,10 @@ export default function MizoramLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Frequently Asked Questions: Mizoram Succession
+                  12. Frequently Asked Questions: Mizoram Estate
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property succession in Mizoram:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset estate in Mizoram:
                 </p>
               </div>
 
@@ -1776,7 +1776,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Mizo Inheritance Act 2014
+                    Mizo Estate Act 2014
                   </span>
                   <p className="text-xs text-slate-600">
                     Sections 43 to 45 (Legal Freedom to Dispose Self-Acquired Assets by Will).
@@ -1788,16 +1788,16 @@ export default function MizoramLocationClient({ faqs }: Props) {
                     Mizoram Land Revenue Act 2013
                   </span>
                   <p className="text-xs text-slate-600">
-                    Rules for Land Settlement Certificate (LSC) issuance, name change, and tribal title protection.
+                    Rules for Land Deal Paper (LSC) issuance, name change, and tribal title protection.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
               </div>
@@ -1828,7 +1828,29 @@ export default function MizoramLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1847,7 +1869,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Mizoram Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Mizoram Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1866,7 +1888,7 @@ export default function MizoramLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Mizoram SRO Registered &amp; LSC Revenue Name Change Compliant</span>
+              <span>Mizoram SRO Filed &amp; LSC Revenue Name Change Compliant</span>
               <Link
                 href="/start"
                 onClick={(e) => {

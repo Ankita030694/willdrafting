@@ -97,7 +97,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
         url: canonicalUrl,
         name: "Succession vs Legal Heir Certificate Tool | WillDrafting",
         description:
-          "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and.",
+          "Determine if you need a estate paper or legal heir paper in India. Check cash and land asset rules, bank limits, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -137,7 +137,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic wizard under Indian Succession Act 1925 (Part VIII & Part X) and State Revenue Rules. Instantly identifies whether you.",
+          "Free diagnostic wizard under Indian Succession Act 1925 (Part VIII & Part X) and State Revenue Rules. Instantly identifies whether you.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -154,7 +154,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "Do I need a succession certificate or a legal heir certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "It depends on the asset type and claim value. A Legal Heir Certificate is issued by the local Tehsildar or revenue authority for administrative purposes like family pension, employee dues, and property tax record updates. A Succession Certificate is issued only by a competent Civil Court under Section 370 of the Indian Succession Act, 1925 for movable assets (bank balances, fixed deposits, demat shares, mutual funds) where no nominee is registered and the claim exceeds simplified institutional thresholds.",
+              text: "It depends on the asset type and claim value. A Legal Heir Paper is issued by the local Tehsildar or revenue office for office purposes like family pension, employee dues, and asset tax record updates. A Estate Paper is issued only by a competent Civil Court under Section 370 of the Indian Succession Act, 1925 for cash assets (bank balances, fixed deposits, demat shares, mutual funds) where no nominee is filed and the claim exceeds simplified institutional thresholds.",
             },
           },
           {
@@ -162,7 +162,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "Can a bank reject a Tehsildar Legal Heir Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under RBI guidelines and Section 381 of the Indian Succession Act, banks have full legal discretion to demand a Civil Court Succession Certificate if the deceased account has no nominee and the balance exceeds the bank's internal threshold (commonly ₹5 Lakhs to ₹15 Lakhs), or if there are conflicting claims among heirs. A Tehsildar certificate does not grant statutory indemnity to a debtor bank.",
+              text: "Yes. Under RBI guidelines and Section 381 of the Indian Succession Act, banks have full legal discretion to demand a Civil Court Estate Paper if the deceased account has no nominee and the balance exceeds the bank's internal threshold (commonly ₹5 Lakhs to ₹15 Lakhs), or if there are conflicting claims among heirs. A Tehsildar paper does not grant legal indemnity to a debtor bank.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "Can a succession certificate be granted for immovable property or land?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 370(1) of the Indian Succession Act, 1925, a Succession Certificate can be granted only for debts and securities (movable assets). It cannot be granted for immovable real estate, agricultural land, or flats. For transferring immovable property, heirs must apply for revenue mutation using a registered Will, Legal Heir Certificate, or obtain Letters of Administration from a Civil Court.",
+              text: "No. Under Section 370(1) of the Indian Succession Act, 1925, a Estate Paper can be granted only for debts and securities (cash assets). It cannot be granted for land real estate, farm land, or flats. For transferring land asset, heirs must apply for revenue name change using a filed Will, Legal Heir Paper, or obtain Letters of Care from a Civil Court.",
             },
           },
           {
@@ -178,7 +178,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "What is the simplified SEBI threshold for transmitting demat shares without court orders?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under SEBI Master Circular guidelines, if no nominee is registered, legal heirs can transmit demat shares up to a market value of ₹15 Lakhs per registered account through a simplified procedure using Form ISR-5, a notarized indemnity bond, and NOC from co-heirs. For portfolios exceeding ₹15 Lakhs without nomination, a Civil Court Succession Certificate, Probate, or Letters of Administration is mandatory.",
+              text: "Under SEBI Master Circular guidelines, if no nominee is filed, legal heirs can transmit demat shares up to a market value of ₹15 Lakhs per filed account through a simplified step using Form ISR-5, a notarized indemnity bond, and NOC from co-heirs. For portfolios exceeding ₹15 Lakhs without nomination, a Civil Court Estate Paper, Probate, or Letters of Care is needed.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "What is a Surviving Member Certificate and where is it used?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Surviving Member Certificate (SMC) is an official document issued primarily in Delhi by the Revenue Department (SDM/Tehsildar) through the Delhi e-District portal. It lists all surviving family members of the deceased. In Delhi, Sub-Registrar Offices and local civic bodies insist on an SMC rather than a traditional Legal Heir Certificate for mutating real estate and closing administrative accounts.",
+              text: "A Surviving Member Paper (SMC) is an official paper issued primarily in Delhi by the Revenue Office (SDM/Tehsildar) through the Delhi e-District portal. It lists all surviving family members of the deceased. In Delhi, SRO Offices and local civic bodies insist on an SMC rather than a traditional Legal Heir Paper for mutating real estate and closing office accounts.",
             },
           },
           {
@@ -194,7 +194,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "When is Probate of a Will strictly mandatory in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 57 and Section 213 of the Indian Succession Act, 1925, Probate is strictly mandatory for Wills executed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency Towns of Mumbai, Kolkata, and Chennai, or where the immovable property bequeathed under the Will is situated within those territorial limits. In other parts of India, probate is optional unless demanded by institutional authorities or contested in court.",
+              text: "Under Section 57 and Section 213 of the Indian Succession Act, 1925, Probate is strictly needed for Wills signed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency Towns of Mumbai, Kolkata, and Chennai, or where the land asset bequeathed under the Will is situated within those territorial limits. In other parts of India, probate is a choice unless demanded by institutional offices or contested in court.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "How much court fee is charged for a succession certificate petition?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Court fees for succession certificates are levied ad valorem as a percentage of the gross movable debt or security value under State Court Fees Acts. For example, in Maharashtra, the court fee is 2% to 7.5% but strictly capped at a statutory maximum of ₹75,000. In Delhi, it is approximately 4% of the asset value. In Karnataka and Tamil Nadu, state-specific graduated slabs apply.",
+              text: "Court fees for estate papers are levied ad valorem as a percentage of the gross cash debt or security value under State Court Fees Acts. For example, in Maharashtra, the court fee is 2% to 7.5% but strictly capped at a legal maximum of ₹75,000. In Delhi, it is about 4% of the asset value. In Karnataka and Tamil Nadu, state-specific graduated slabs apply.",
             },
           },
           {
@@ -210,7 +210,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
             name: "How long does it take to get a Succession Certificate from a Civil Court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Obtaining a Succession Certificate typically takes 6 to 9 months in an uncontested civil court proceeding. The timeline is dictated by mandatory statutory procedures: filing the verified petition under Section 372, issuing newspaper publication citations in English and vernacular dailies, waiting 30 to 45 days for public objections, recording petitioner evidence, and depositing court fees before the final certificate is drawn up.",
+              text: "Obtaining a Estate Paper typically takes 6 to 9 months in an uncontested civil court proceeding. The timeline is dictated by needed legal steps: filing the checked petition under Section 372, issuing newspaper publication citations in English and vernacular dailies, waiting 30 to 45 days for public objections, recording petitioner evidence, and depositing court fees before the final paper is drawn up.",
             },
           },
         ],

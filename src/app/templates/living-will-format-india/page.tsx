@@ -89,7 +89,7 @@ export default function LivingWillFormatIndiaPage() {
         url: canonicalUrl,
         name: "Living Will Format India: 2023 Guidelines | WillDrafting",
         description:
-          "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital.",
+          "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary witness signing and hospital.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function LivingWillFormatIndiaPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Execute a Legally Valid Living Will in India",
         description:
-          "Step-by-step statutory procedure to execute an Advance Medical Directive (Living Will) in India under the simplified 2023 Supreme Court.",
+          "Step-by-step legal step to execute an Advance Medical Directive (Living Will) in India under the simplified 2023 Supreme Court.",
         image: imageUrl,
         totalTime: "PT20M",
         supply: [
@@ -172,19 +172,19 @@ export default function LivingWillFormatIndiaPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Sign Before Two Independent Witnesses",
-            text: "Sign or mark every page of the document in the direct physical presence of two independent adult witnesses who attest to your sound disposing mind.",
+            text: "Sign or mark every page of the paper in the direct physical presence of two independent adult witnesses who attest to your sound disposing mind.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Attestation by a Notary Public or Gazetted Officer",
-            text: "Have the signed document authenticated by a practicing Notary Public or Gazetted Officer, who certifies that the execution was voluntary. No Judicial Magistrate is required under the 2023 Supreme Court order.",
+            text: "Have the signed paper authenticated by a practicing Notary Public or Gazetted Officer, who certifies that the signing was voluntary. No Judicial Magistrate is required under the 2023 Supreme Court order.",
           },
           {
             "@type": "HowToStep",
             position: 6,
             name: "Deposit Certified Copies with Custodians and Digital Registry",
-            text: "Provide certified copies to your named surrogate, your family physician, and the designated custodian at your local municipal corporation or digital health account (ABHA).",
+            text: "Provide certified copies to your named surrogate, your family physician, and the designated custodian at your local city city board or digital health account (ABHA).",
           },
         ],
       },
@@ -205,7 +205,7 @@ export default function LivingWillFormatIndiaPage() {
             name: "Do I need to visit a magistrate court to execute a Living Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court January 2023 order completely removed the requirement for countersigning before a Judicial Magistrate First Class (JMFC). You only need attestation by a Notary Public or a Gazetted Officer in the presence of two witnesses.",
+              text: "No. The Supreme Court January 2023 order completely removed the rule for countersigning before a Judicial Magistrate First Class (JMFC). You only need witness signing by a Notary Public or a Gazetted Officer in the presence of two witnesses.",
             },
           },
           {
@@ -221,7 +221,7 @@ export default function LivingWillFormatIndiaPage() {
             name: "Who can act as an attesting witness to a Living Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Any two competent adults who possess mental capacity can attest the document. They must sign in your physical presence confirming that you executed the directive voluntarily and understood its implications.",
+              text: "Any two competent adults who possess mental capacity can attest the paper. They must sign in your physical presence confirming that you signed the directive voluntarily and understood its implications.",
             },
           },
           {
@@ -253,7 +253,7 @@ export default function LivingWillFormatIndiaPage() {
             name: "What is the difference between a Living Will and a regular property Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A regular Will under the Indian Succession Act governs the distribution of your property after death. A Living Will (Advance Medical Directive) operates solely while you are alive and incapacitated, governing end-of-life medical care and life-support withdrawal.",
+              text: "A regular Will under the Indian Succession Act governs the split of your asset after death. A Living Will (Advance Medical Directive) operates solely while you are alive and incapacitated, governing end-of-life medical care and life-support withdrawal.",
             },
           },
           {
@@ -269,7 +269,7 @@ export default function LivingWillFormatIndiaPage() {
             name: "Where should I keep or register copies of my executed Living Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Keep the original safely at home. Provide certified copies to your primary surrogate, your alternate surrogate, and your family physician. A copy can also be deposited with the local municipal authority or linked to your digital health records (ABHA).",
+              text: "Keep the original safely at home. Provide certified copies to your primary surrogate, your alternate surrogate, and your family physician. A copy can also be deposited with the local city office or linked to your digital health records (ABHA).",
             },
           },
         ],

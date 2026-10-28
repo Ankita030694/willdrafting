@@ -68,14 +68,14 @@ const COMPARISON_DATA: ComparisonRow[] = [
   },
   {
     parameter: "When it Takes Effect",
-    willIndia: "Only upon death of the testator. Zero effect while alive.",
+    willIndia: "Only upon death of the Will maker. Zero effect while alive.",
     familyTrust: "Immediately upon execution or upon specified trigger events.",
     verdict: "trust",
     note: "Trusts can manage wealth during your lifetime, illness, or mental incapacity.",
   },
   {
     parameter: "Initial Setup Cost",
-    willIndia: "Extremely low: ₹0 stamp duty nationwide. Plain paper execution valid.",
+    willIndia: "Extremely low: ₹0 stamp duty nationwide. Plain paper signing valid.",
     familyTrust: "Substantial: State stamp duty on trust deed, registration, and legal structuring.",
     verdict: "will",
     note: "A Will costs 95% less to create than a private family trust.",
@@ -103,7 +103,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
   },
   {
     parameter: "Staged & Conditional Payouts",
-    willIndia: "Rigid: Assets pass outright in a single lump-sum upon probate and transmission.",
+    willIndia: "Rigid: Assets pass outright in a single lump-sum upon probate and transfer.",
     familyTrust: "Highly flexible: Payouts can be tied to age (e.g. 25 or 30), marriage, or milestones.",
     verdict: "trust",
     note: "Trusts protect young or vulnerable heirs from squandering large fortunes.",
@@ -117,7 +117,7 @@ const COMPARISON_DATA: ComparisonRow[] = [
   },
   {
     parameter: "Court Probate Requirement",
-    willIndia: "Mandatory in Kolkata, Chennai, Mumbai, or if any legal heir contests.",
+    willIndia: "Needed in Kolkata, Chennai, Mumbai, or if any legal heir contests.",
     familyTrust: "Completely exempt: Assets transfer smoothly without setting foot in a court.",
     verdict: "trust",
     note: "Trusts eliminate the 2 to 7 year delay typical of contested Indian probate cases.",
@@ -127,11 +127,11 @@ const COMPARISON_DATA: ComparisonRow[] = [
     willIndia: "Simple: Can be modified or replaced anytime on plain paper with two witnesses.",
     familyTrust: "Depends: Revocable trusts are easy to change; irrevocable trusts cannot be cancelled.",
     verdict: "will",
-    note: "Section 62 of the Indian Succession Act allows testators to alter Wills freely.",
+    note: "Section 62 of the Indian Succession Act allows Will makers to alter Wills freely.",
   },
   {
     parameter: "Income Tax Treatment",
-    willIndia: "100% Tax-free transfer to beneficiaries under Section 56(2)(x) proviso.",
+    willIndia: "100% Tax-free transfer to heirs under Section 56(2)(x) proviso.",
     familyTrust: "Determinate trusts taxed at slab rates; discretionary trusts taxed at MMR (up to ~39%).",
     verdict: "will",
     note: "Discretionary trusts can incur high tax rates unless drafted with specific exemptions.",
@@ -157,7 +157,7 @@ const TOC_ITEMS = [
 const FAQS = [
   {
     q: "What is the main difference between a Will and a family trust in India?",
-    a: "A Will is a testamentary document that takes effect only after your death and can be revoked or changed anytime during your life. In contrast, a private family trust is a legal arrangement created under the Indian Trusts Act, 1882, where you transfer assets to trustees during your lifetime or upon death to manage for beneficiaries according to specific rules, staged milestones, and conditions.",
+    a: "A Will is a Will paper that takes effect only after your death and can be revoked or changed anytime during your life. In contrast, a private family trust is a legal arrangement created under the Indian Trusts Act, 1882, where you transfer assets to trustees during your lifetime or upon death to manage for heirs according to specific rules, staged milestones, and conditions.",
   },
   {
     q: "When is a simple Will enough for an Indian family?",
@@ -165,19 +165,19 @@ const FAQS = [
   },
   {
     q: "When does creating a private family trust make sense?",
-    a: "A family trust makes sense for High Net Worth Individuals (HNIs with assets of ₹5 Crores or more), business owners planning corporate succession, families with minor children or special needs dependents requiring lifetime financial care, blended families with children from previous marriages, or individuals seeking complete privacy to avoid public court probate.",
+    a: "A family trust makes sense for High Net Worth People (HNIs with assets of ₹5 Crores or more), business owners planning corporate estate, families with minor children or special needs dependents requiring lifetime financial care, blended families with children from previous marriages, or people seeking complete privacy to avoid public court probate.",
   },
   {
     q: "Does a family trust bypass probate in Mumbai, Chennai, or Kolkata?",
-    a: "Yes. While Section 213 of the Indian Succession Act makes probate mandatory for Wills of Hindus, Buddhists, Sikhs, and Jains executed in or covering immovable property within Mumbai, Chennai, or Kolkata, a private living trust bypasses probate completely. Trust assets pass directly to beneficiaries or remain under trustee management without any court proceedings or public scrutiny.",
+    a: "Yes. While Section 213 of the Indian Succession Act makes probate needed for Wills of Hindus, Buddhists, Sikhs, and Jains signed in or covering land asset within Mumbai, Chennai, or Kolkata, a private living trust bypasses probate completely. Trust assets pass directly to heirs or remain under trustee management without any court proceedings or public scrutiny.",
   },
   {
     q: "Is a private family trust completely private in India?",
-    a: "Yes. A private family trust is a confidential legal agreement between the settlor and the trustees. Unlike a Will that becomes a matter of public court record once a probate petition is filed with newspaper notices, a trust deed and its asset distributions remain private and confidential among the family members and trustees.",
+    a: "Yes. A private family trust is a confidential legal pact between the settlor and the trustees. Unlike a Will that becomes a matter of public court record once a probate petition is filed with newspaper notices, a trust deed and its asset distributions remain private and confidential among the family members and trustees.",
   },
   {
     q: "How are private family trusts taxed in India?",
-    a: "Under the Income Tax Act, 1961, trust taxation depends on its structure. A determinate (specific) trust where beneficiaries and their exact shares are named is taxed at the individual income slab rates of the beneficiaries (Section 161). A discretionary trust where trustees decide payouts is taxed at the Maximum Marginal Rate (MMR of approx. 39% or 42.74%) under Section 164, unless created under a Will exclusively for dependent relatives.",
+    a: "Under the Income Tax Act, 1961, trust taxation depends on its structure. A determinate (specific) trust where heirs and their exact shares are named is taxed at the single income slab rates of the heirs (Section 161). A discretionary trust where trustees decide payouts is taxed at the Maximum Marginal Rate (MMR of approx. 39% or 42.74%) under Section 164, unless created under a Will exclusively for dependent relatives.",
   },
   {
     q: "Does a family trust protect my assets from creditors or insolvency?",
@@ -189,11 +189,11 @@ const FAQS = [
   },
   {
     q: "How much does it cost to set up and maintain a family trust vs a Will?",
-    a: "A Will has zero stamp duty across India and negligible maintenance costs (₹0 per year). A private family trust requires state stamp duty on the trust deed (ranging from nominal fixed duty to 2% to 5% depending on state and whether immovable property is settled), registration fees, obtaining a PAN card, opening a dedicated bank account, and recurring annual accounting, audit, and ITR-5 tax filing fees (typically ₹25,000 to ₹1,00,000+ annually).",
+    a: "A Will has zero stamp duty across India and negligible maintenance costs (₹0 per year). A private family trust requires state stamp duty on the trust deed (ranging from nominal fixed duty to 2% to 5% depending on state and whether land asset is settled), filing fees, obtaining a PAN card, opening a dedicated bank account, and recurring annual accounting, audit, and ITR-5 tax filing fees (typically ₹25,000 to ₹1,00,000+ annually).",
   },
   {
     q: "Can I change my mind after creating a family trust in India?",
-    a: "If you create a Revocable Family Trust, you can alter, amend, or completely revoke the trust at any time under Section 77 and 78 of the Indian Trusts Act, 1882. However, if you create an Irrevocable Family Trust, you cannot cancel the trust or take back the assets without the consent of all beneficiaries, which is why irrevocable trusts require careful legal planning.",
+    a: "If you create a Revocable Family Trust, you can alter, amend, or completely revoke the trust at any time under Section 77 and 78 of the Indian Trusts Act, 1882. However, if you create an Irrevocable Family Trust, you cannot cancel the trust or take back the assets without the consent of all heirs, which is why irrevocable trusts require careful legal planning.",
   },
 ];
 
@@ -213,7 +213,7 @@ export default function WillVsFamilyTrustClient() {
   const [activeId, setActiveId] = useState<string>("executive-summary");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  // State for Interactive Estate Decision Tool
+  // State for Free Estate Decision Tool
   const [estateValue, setEstateValue] = useState<string>("below-1cr");
   const [familyProfile, setFamilyProfile] = useState<string>("adults-harmonious");
   const [assetNature, setAssetNature] = useState<string>("standard-liquid");
@@ -277,7 +277,7 @@ export default function WillVsFamilyTrustClient() {
         color: "text-blue-800 bg-blue-50 border-blue-300",
         badge: "Comprehensive Dual Protection",
         summary:
-          "Your estate benefits from establishing a living private trust for core businesses or sensitive assets, combined with a Section 63 Pour-Over Will that captures any personal property acquired later. This gives you both privacy and complete legal closure.",
+          "Your estate benefits from establishing a living private trust for core businesses or sensitive assets, combined with a Section 63 Pour-Over Will that captures any personal asset acquired later. This gives you both privacy and complete legal closure.",
         actionUrl: "https://www.willdrafting.in/contact",
         actionText: "Consult AMA Estate Advocates on Hybrid Planning",
         isExternal: true,
@@ -288,7 +288,7 @@ export default function WillVsFamilyTrustClient() {
         color: "text-rose-800 bg-rose-50 border-rose-300",
         badge: "Best for 90%+ of Indian Households",
         summary:
-          "For estates below ₹5 Crores with standard residential properties, bank deposits, and adult heirs, a simple Will executed under Section 63 of the Indian Succession Act is completely legally binding. It costs zero stamp duty and requires no expensive annual trust accounting.",
+          "For estates below ₹5 Crores with standard home assets, bank deposits, and adult heirs, a simple Will signed under Section 63 of the Indian Succession Act is completely legally binding. It costs zero stamp duty and requires no expensive annual trust accounting.",
         actionUrl: "/start",
         actionText: "Draft Your Legally Valid Will in 15 Mins",
         isExternal: false,
@@ -377,7 +377,7 @@ export default function WillVsFamilyTrustClient() {
                 10,000+
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Wills &amp; Trusts Executed
+                Wills &amp; Trusts Signed
               </span>
             </div>
 
@@ -438,7 +438,7 @@ export default function WillVsFamilyTrustClient() {
                 <div className="flex items-start gap-2 text-[#55636D]">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <p className="text-[11px] leading-relaxed">
-                    Verified under the Indian Trusts Act, 1882 &amp; Indian Succession Act, 1925.
+                    Checked under the Indian Trusts Act, 1882 &amp; Indian Succession Act, 1925.
                   </p>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function WillVsFamilyTrustClient() {
                       Trusts Enable Staged Payouts
                     </strong>
                     <span className="text-xs text-slate-600 leading-relaxed">
-                      A Will distributes property outright. A trust lets you release funds at milestones, such as age 25 or 30, protecting young heirs from rash spending.
+                      A Will distributes asset outright. A trust lets you release funds at milestones, such as age 25 or 30, protecting young heirs from rash spending.
                     </span>
                   </div>
                 </div>
@@ -529,7 +529,7 @@ export default function WillVsFamilyTrustClient() {
               <div className="flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
                 <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  Statutory Definitions
+                  Legal Definitions
                 </span>
               </div>
 
@@ -549,13 +549,13 @@ export default function WillVsFamilyTrustClient() {
                     <h3 className="text-base font-bold text-[#172228]">What is a Will in India?</h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
-                    Under Section 2(h) of the Indian Succession Act, 1925, a Will is a legal declaration of your intention regarding your property after your death. It is an <em>ambulatory instrument</em>, which means it has zero legal force while you are alive.
+                    Under Section 2(h) of the Indian Succession Act, 1925, a Will is a legal declaration of your intention regarding your asset after your death. It is an <em>ambulatory instrument</em>, which means it has zero legal force while you are alive.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
                     You remain the 100% absolute owner of your assets until your last breath. You can sell, mortgage, gift, or rewrite your Will whenever you wish under Section 62. The Will only springs to life once death is legally proven.
                   </p>
                   <div className="p-3 rounded-xl bg-[#FAF7F0] border border-[#172228]/5 text-xs text-[#55636D]">
-                    <strong>Statutory rule:</strong> Requires physical signature and attestation by two independent witnesses under Section 63. No stamp duty is required.
+                    <strong>Legal rule:</strong> Requires physical signature and witness signing by two independent witnesses under Section 63. No stamp duty is required.
                   </div>
                 </div>
 
@@ -566,13 +566,13 @@ export default function WillVsFamilyTrustClient() {
                     <h3 className="text-base font-bold text-[#172228]">What is a Private Family Trust?</h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
-                    Under Section 3 of the Indian Trusts Act, 1882, a private trust is an obligation annexed to the ownership of property. You (the <em>Settlor</em>) transfer property to trusted managers (the <em>Trustees</em>) to hold and manage for the benefit of chosen family members (the <em>Beneficiaries</em>).
+                    Under Section 3 of the Indian Trusts Act, 1882, a private trust is an obligation annexed to the ownership of asset. You (the <em>Settlor</em>) transfer asset to trusted managers (the <em>Trustees</em>) to hold and manage for the benefit of chosen family members (the <em>Heirs</em>).
                   </p>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
-                    Unlike a Will, a family trust can take effect immediately during your lifetime (a <em>Living Trust</em>). Legal title separates from beneficial enjoyment, allowing you to establish continuous rules that survive your death.
+                    Unlike a Will, a family trust can take effect right away during your lifetime (a <em>Living Trust</em>). Legal title separates from beneficial enjoyment, allowing you to establish continuous rules that survive your death.
                   </p>
                   <div className="p-3 rounded-xl bg-[#FAF7F0] border border-[#172228]/5 text-xs text-[#55636D]">
-                    <strong>Statutory rule:</strong> Trusts holding real estate must be registered under Section 5 of the Indian Trusts Act and Section 17 of the Registration Act.
+                    <strong>Legal rule:</strong> Trusts holding real estate must be filed under Section 5 of the Indian Trusts Act and Section 17 of the Filing Act.
                   </div>
                 </div>
               </div>
@@ -680,7 +680,7 @@ export default function WillVsFamilyTrustClient() {
                     Harmonious Family Dynamics
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If your children maintain cordial relationships and you are dividing property equally or amicably, there is minimal litigation risk. A registered or witnessed Will easily settles the estate upon death.
+                    If your children maintain cordial relationships and you are dividing asset equally or amicably, there is minimal court fights risk. A filed or witnessed Will easily settles the estate upon death.
                   </p>
                 </div>
 
@@ -690,7 +690,7 @@ export default function WillVsFamilyTrustClient() {
                     Mature, Financially Independent Heirs
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If your children are adults in stable careers, you do not need trustees micromanaging their allowances. A one-time outright inheritance via a Will gives them direct ownership with zero bureaucracy.
+                    If your children are adults in stable careers, you do not need trustees micromanaging their allowances. A one-time outright estate via a Will gives them direct ownership with zero bureaucracy.
                   </p>
                 </div>
 
@@ -751,7 +751,7 @@ export default function WillVsFamilyTrustClient() {
                       Minor Children or Special-Needs Dependents
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      If both parents pass away, leaving assets to minor children in a Will requires legal guardianship proceedings under the Guardians and Wards Act, 1890. For children with physical or cognitive disabilities, a Will leaves them vulnerable to predatory relatives. A Private Trust appoints corporate or trusted family trustees to manage monthly allowances, medical bills, and housing without court interference.
+                      If both parents pass away, leaving assets to minor children in a Will requires legal child care proceedings under the Guardians and Wards Act, 1890. For children with physical or cognitive disabilities, a Will leaves them vulnerable to predatory relatives. A Private Trust appoints corporate or trusted family trustees to manage monthly allowances, medical bills, and housing without court interference.
                     </p>
                   </div>
                 </div>
@@ -762,7 +762,7 @@ export default function WillVsFamilyTrustClient() {
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm sm:text-base text-[#172228] mb-1">
-                      Family Business Succession &amp; Voting Control
+                      Family Business Estate &amp; Voting Control
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Dividing shares in an operating private limited company among three children via a Will often causes boardroom deadlocks and destroys enterprise value. Placing operating equity into a Family Trust keeps shareholding unified under chosen managing trustees while distributing dividend income equally among heirs.
@@ -779,7 +779,7 @@ export default function WillVsFamilyTrustClient() {
                       Blended Families and Remarriage Concerns
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      In second marriages, testators frequently worry that if they leave everything to their surviving spouse in a Will, the spouse might later write a new Will disinheriting the children from the first marriage. A trust solves this by granting the spouse a lifetime right to income or residence, while legally guaranteeing that the principal property automatically devolves to biological children upon the spouse&apos;s death.
+                      In second marriages, Will makers frequently worry that if they leave everything to their surviving spouse in a Will, the spouse might later write a new Will disinheriting the children from the first marriage. A trust solves this by granting the spouse a lifetime right to income or residence, while legally guaranteeing that the principal asset automatically devolves to biological children upon the spouse&apos;s death.
                     </p>
                   </div>
                 </div>
@@ -793,7 +793,7 @@ export default function WillVsFamilyTrustClient() {
                       High Net Worth (₹5 Cr+) Seeking Absolute Privacy
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Prominent industrialists, celebrities, and HNI families often want to keep their wealth, corporate stakes, and family agreements private. In mandatory probate jurisdictions like Mumbai, probate proceedings require public newspaper advertisements and court filings. A trust completely bypasses court probate, keeping your family&apos;s net worth 100% confidential.
+                      Prominent industrialists, celebrities, and HNI families often want to keep their wealth, corporate stakes, and family agreements private. In needed probate areas like Mumbai, probate proceedings require public newspaper advertisements and court filings. A trust completely bypasses court probate, keeping your family&apos;s net worth 100% confidential.
                     </p>
                   </div>
                 </div>
@@ -816,7 +816,7 @@ export default function WillVsFamilyTrustClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                This diagram illustrates the core dichotomy between a straightforward testamentary Will and a private family trust:
+                This diagram illustrates the core dichotomy between a straightforward Will Will and a private family trust:
               </p>
 
               {/* Graphic Display Card */}
@@ -849,7 +849,7 @@ export default function WillVsFamilyTrustClient() {
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                       <div>
                         <strong className="text-[#172228] block">Easier to Create</strong>
-                        Can be drafted on plain A4 paper, signed before two adult witnesses, and executed at home without government bureaucracy.
+                        Can be drafted on plain A4 paper, signed before two adult witnesses, and signed at home without government bureaucracy.
                       </div>
                     </div>
 
@@ -935,10 +935,10 @@ export default function WillVsFamilyTrustClient() {
                     Revocable Family Trust
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                    In a revocable trust, the Settlor retains the legal right to amend, alter, or dissolve the trust at any point. You can reclaim trust property into your personal name whenever you wish.
+                    In a revocable trust, the Settlor retains the legal right to amend, alter, or dissolve the trust at any point. You can reclaim trust asset into your personal name whenever you wish.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Limitation:</strong> Because you retain control, the Income Tax Department treats the income as yours under Sections 61 to 63 of the Income Tax Act. Furthermore, it offers zero protection against personal bankruptcy or creditor attachments.
+                    <strong>Limitation:</strong> Because you retain control, the Income Tax Office treats the income as yours under Sections 61 to 63 of the Income Tax Act. Also, it offers zero protection against personal bankruptcy or creditor attachments.
                   </p>
                 </div>
 
@@ -950,40 +950,40 @@ export default function WillVsFamilyTrustClient() {
                     Irrevocable Family Trust
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                    In an irrevocable trust, the Settlor permanently parts with ownership and control of the settled assets. You cannot unilaterally cancel the trust or take back the property.
+                    In an irrevocable trust, the Settlor permanently parts with ownership and control of the settled assets. You cannot unilaterally cancel the trust or take back the asset.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Advantage:</strong> Because the property no longer belongs to you, it provides strong asset protection against future business debts, guarantees, and insolvency proceedings, assuming the trust was created before debts arose.
+                    <strong>Advantage:</strong> Because the asset no longer belongs to you, it provides strong asset protection against future business debts, guarantees, and insolvency proceedings, assuming the trust was created before debts arose.
                   </p>
                 </div>
 
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 text-[10px] font-black uppercase tracking-wider mb-2">
-                    Distribution Spectrum
+                    Split Spectrum
                   </span>
                   <h3 className="font-bold text-base text-[#172228] mb-2">
                     Determinate (Specific) Trust
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                    In a determinate trust, the trust deed explicitly names the beneficiaries and fixes their exact percentage entitlements (e.g. 50% to Son, 50% to Daughter). The trustees have zero discretion to change shares.
+                    In a determinate trust, the trust deed explicitly names the heirs and fixes their exact percentage entitlements (e.g. 50% to Son, 50% to Daughter). The trustees have zero discretion to change shares.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Tax Benefit:</strong> Under Section 161, trust income is taxed in the hands of the trustees as representative assessees at the beneficiaries&apos; individual personal tax slab rates, avoiding penal tax brackets.
+                    <strong>Tax Benefit:</strong> Under Section 161, trust income is taxed in the hands of the trustees as agent assessees at the heirs&apos; single personal tax slab rates, avoiding penal tax brackets.
                   </p>
                 </div>
 
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-black uppercase tracking-wider mb-2">
-                    Distribution Spectrum
+                    Split Spectrum
                   </span>
                   <h3 className="font-bold text-base text-[#172228] mb-2">
                     Discretionary Family Trust
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                    In a discretionary trust, the trustees have complete freedom to decide when, how much, and to which beneficiary funds are distributed, based on emerging life events, medical emergencies, or education needs.
+                    In a discretionary trust, the trustees have complete freedom to decide when, how much, and to which heir funds are distributed, based on emerging life events, medical emergencies, or education needs.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Tax Penalty:</strong> Under Section 164 of the Income Tax Act, discretionary trusts are taxed at the Maximum Marginal Rate (MMR of ~39% or 42.74%), making them tax-inefficient unless specific statutory exceptions apply.
+                    <strong>Tax Penalty:</strong> Under Section 164 of the Income Tax Act, discretionary trusts are taxed at the Maximum Marginal Rate (MMR of ~39% or 42.74%), making them tax-inefficient unless specific legal exceptions apply.
                   </p>
                 </div>
               </div>
@@ -1005,7 +1005,7 @@ export default function WillVsFamilyTrustClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Tax planning is a decisive factor in choosing between a Will and a Family Trust. India currently has zero inheritance tax or estate duty, but income tax rules apply differently to each structure:
+                Tax planning is a decisive factor in choosing between a Will and a Family Trust. India currently has zero estate tax or estate duty, but income tax rules apply differently to each structure:
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-[#172228]/10 bg-white shadow-xs">
@@ -1029,10 +1029,10 @@ export default function WillVsFamilyTrustClient() {
                         Transfer of Assets (Gift Tax)
                       </td>
                       <td className="p-3.5 sm:p-4 border-r border-[#172228]/10">
-                        100% Exempt under Section 56(2)(x) proviso. Inheriting property through a Will triggers ₹0 income tax.
+                        100% Exempt under Section 56(2)(x) proviso. Inheriting asset through a Will triggers ₹0 income tax.
                       </td>
                       <td className="p-3.5 sm:p-4 font-medium text-[#172228]">
-                        Exempt only if trust is created solely for the benefit of relative beneficiaries as defined under Section 56(2)(x).
+                        Exempt only if trust is created solely for the benefit of relative heirs as defined under Section 56(2)(x).
                       </td>
                     </tr>
                     <tr className="bg-[#FAF7F0]/40">
@@ -1043,12 +1043,12 @@ export default function WillVsFamilyTrustClient() {
                         Zero trust income tax. Heirs pay normal personal income tax slabs on income earned from inherited assets.
                       </td>
                       <td className="p-3.5 sm:p-4 font-medium text-[#172228]">
-                        Determinate trusts: Taxed at beneficiary individual slab rates (Sec 161). Discretionary trusts: Taxed at MMR (~39%-42.74%) under Sec 164.
+                        Determinate trusts: Taxed at heir single slab rates (Sec 161). Discretionary trusts: Taxed at MMR (~39%-42.74%) under Sec 164.
                       </td>
                     </tr>
                     <tr className="bg-white">
                       <td className="p-3.5 sm:p-4 font-semibold text-[#172228] border-r border-[#172228]/10">
-                        Clubbing Provisions
+                        Clubbing Rules
                       </td>
                       <td className="p-3.5 sm:p-4 border-r border-[#172228]/10">
                         Not applicable. A Will only operates upon death, so lifetime clubbing rules never arise.
@@ -1065,7 +1065,7 @@ export default function WillVsFamilyTrustClient() {
                         Section 47(iii) exempts transfers under a gift or Will from capital gains tax.
                       </td>
                       <td className="p-3.5 sm:p-4 font-medium text-[#172228]">
-                        Settling property into an irrevocable trust for relatives is generally exempt under Section 47(iii), but requires precise deed drafting.
+                        Settling asset into an irrevocable trust for relatives is generally exempt under Section 47(iii), but requires precise deed drafting.
                       </td>
                     </tr>
                   </tbody>
@@ -1075,7 +1075,7 @@ export default function WillVsFamilyTrustClient() {
               <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs sm:text-sm text-blue-900 flex items-start gap-3">
                 <Info className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                 <p>
-                  <strong>Tax Insight:</strong> If your primary goal is tax minimization and you have standard residential properties, a Will is vastly simpler and avoids the Maximum Marginal Rate trap that often catches carelessly drafted discretionary trusts.
+                  <strong>Tax Insight:</strong> If your primary goal is tax minimization and you have standard home assets, a Will is vastly simpler and avoids the Maximum Marginal Rate trap that often catches carelessly drafted discretionary trusts.
                 </p>
               </div>
             </section>
@@ -1096,7 +1096,7 @@ export default function WillVsFamilyTrustClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                For promoters, business directors, startup founders, and professionals facing commercial risks, asset protection is paramount. Here is how Indian courts handle creditor claims against Wills and Trusts:
+                For promoters, business directors, startup founders, and professionals facing shop risks, asset protection is paramount. Here is how Indian courts handle creditor claims against Wills and Trusts:
               </p>
 
               <div className="space-y-4">
@@ -1106,10 +1106,10 @@ export default function WillVsFamilyTrustClient() {
                     A Will Provides Zero Creditor Protection
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                    Because a Will only operates upon death, your assets remain in your personal name throughout your life. If your business defaults on bank loans, recovery tribunals (DRT) or insolvency courts (IBC 2016) can attach your properties, bank accounts, and shares under Section 60 of the Code of Civil Procedure.
+                    Because a Will only operates upon death, your assets remain in your personal name throughout your life. If your business defaults on bank loans, recovery tribunals (DRT) or insolvency courts (IBC 2016) can attach your assets, bank accounts, and shares under Section 60 of the Code of Civil Step.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Even after your death, Section 325 of the Indian Succession Act mandates that the executor must pay off all your debts and funeral expenses before distributing a single rupee to your beneficiaries. Your heirs only inherit what is left over.
+                    Even after your death, Section 325 of the Indian Succession Act mandates that the executor must pay off all your debts and funeral expenses before distributing a single rupee to your heirs. Your heirs only inherit what is left over.
                   </p>
                 </div>
 
@@ -1119,10 +1119,10 @@ export default function WillVsFamilyTrustClient() {
                     How an Irrevocable Trust Shields Wealth
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                    When you settle assets into an Irrevocable Private Family Trust, legal title transfers permanently to the trustees. The assets no longer form part of your personal balance sheet. Consequently, future personal creditors, bank guarantees, or commercial litigants cannot attach trust assets.
+                    When you settle assets into an Irrevocable Private Family Trust, legal title transfers permanently to the trustees. The assets no longer form part of your personal balance sheet. So, future personal creditors, bank guarantees, or shop litigants cannot attach trust assets.
                   </p>
                   <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 leading-relaxed">
-                    <strong>Critical Statutory Warning (Section 53, Transfer of Property Act, 1882):</strong> You cannot create a trust to hide assets from existing creditors. If a court finds that you transferred assets with the intention of defeating or delaying existing creditors, the transfer is voidable. To enjoy legal asset protection, the trust must be established well before commercial liabilities or bank claims arise.
+                    <strong>Critical Legal Warning (Section 53, Transfer of Property Act, 1882):</strong> You cannot create a trust to hide assets from existing creditors. If a court finds that you transferred assets with the intention of defeating or delaying existing creditors, the transfer is voidable. To enjoy legal asset protection, the trust must be established well before shop liabilities or bank claims arise.
                   </div>
                 </div>
               </div>
@@ -1144,7 +1144,7 @@ export default function WillVsFamilyTrustClient() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Many families overlook the privacy implications of estate planning until it is too late. The difference between a public probate proceeding and private trust administration is profound:
+                Many families overlook the privacy implications of estate planning until it is too late. The difference between a public probate proceeding and private trust care is profound:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -1156,7 +1156,7 @@ export default function WillVsFamilyTrustClient() {
                   <ul className="text-xs sm:text-sm text-slate-600 space-y-2.5">
                     <li className="flex items-start gap-2">
                       <span className="text-rose-600 font-bold">&bull;</span>
-                      <span><strong>Mandatory Jurisdictions:</strong> Section 213 of the ISA requires probate for Hindu, Buddhist, Sikh, and Jain Wills executed in or covering immovable property in Mumbai, Chennai, or Kolkata.</span>
+                      <span><strong>Needed Areas:</strong> Section 213 of the ISA requires probate for Hindu, Buddhist, Sikh, and Jain Wills signed in or covering land asset in Mumbai, Chennai, or Kolkata.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-rose-600 font-bold">&bull;</span>
@@ -1164,7 +1164,7 @@ export default function WillVsFamilyTrustClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-rose-600 font-bold">&bull;</span>
-                      <span><strong>Public Document:</strong> Once probate is granted, the Will becomes a matter of public judicial record. Distant relatives, journalists, or business rivals can obtain certified copies.</span>
+                      <span><strong>Public Paper:</strong> Once probate is granted, the Will becomes a matter of public judicial record. Distant relatives, journalists, or business rivals can obtain certified copies.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-rose-600 font-bold">&bull;</span>
@@ -1181,7 +1181,7 @@ export default function WillVsFamilyTrustClient() {
                   <ul className="text-xs sm:text-sm text-slate-600 space-y-2.5">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-600 font-bold">&bull;</span>
-                      <span><strong>Zero Probate Requirement:</strong> Trusts completely bypass the probate court. Property never gets stuck in judicial delays.</span>
+                      <span><strong>Zero Probate Rule:</strong> Trusts completely bypass the probate court. Asset never gets stuck in judicial delays.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-600 font-bold">&bull;</span>
@@ -1189,11 +1189,11 @@ export default function WillVsFamilyTrustClient() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-600 font-bold">&bull;</span>
-                      <span><strong>Immediate Continuity:</strong> If the Settlor becomes incapacitated or passes away, the successor trustees step in immediately without waiting for death certificates or court orders.</span>
+                      <span><strong>Immediate Continuity:</strong> If the Settlor becomes incapacitated or passes away, the successor trustees step in right away without waiting for death papers or court orders.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-600 font-bold">&bull;</span>
-                      <span><strong>No Interruption to Business:</strong> Operating companies held under a trust continue daily business without bank accounts being frozen during succession claims.</span>
+                      <span><strong>No Interruption to Business:</strong> Operating companies held under a trust continue daily business without bank accounts being frozen during estate claims.</span>
                     </li>
                   </ul>
                 </div>
@@ -1212,7 +1212,7 @@ export default function WillVsFamilyTrustClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                10. Hybrid Strategy: Pour-Over Wills &amp; Testamentary Trusts
+                10. Hybrid Strategy: Pour-Over Wills &amp; Will Trusts
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -1226,23 +1226,23 @@ export default function WillVsFamilyTrustClient() {
                     The Pour-Over Will Solution
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                    Even after settling a Living Family Trust, individuals frequently acquire new savings accounts, mutual fund folios, or inherit ancestral shares that were never transferred into the trust.
+                    Even after settling a Living Family Trust, people frequently acquire new savings accounts, mutual fund folios, or inherit family shares that were never transferred into the trust.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                    A <strong>Pour-Over Will</strong> acts as a legal net. It states: <em>&ldquo;Any property standing in my personal name at the time of my death shall be given entirely to the trustees of my Family Trust, to be added to the trust principal and administered according to its terms.&rdquo;</em>
+                    A <strong>Pour-Over Will</strong> acts as a legal net. It states: <em>&ldquo;Any asset standing in my personal name at the time of my death shall be given entirely to the trustees of my Family Trust, to be added to the trust principal and administered according to its terms.&rdquo;</em>
                   </p>
                   <div className="p-3 rounded-xl bg-[#FAF7F0] border border-[#172228]/5 text-xs text-[#55636D]">
-                    This ensures zero assets fall into intestate succession, creating a unified estate plan.
+                    This ensures zero assets fall into no-Will estate, creating a unified estate plan.
                   </div>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs">
                   <h3 className="font-extrabold text-base text-[#172228] mb-2 flex items-center gap-2">
                     <FileText className="w-5 h-5 text-[#5F7E75]" />
-                    Testamentary Trust: The Budget Alternative
+                    Will Trust: The Budget Alternative
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                    If you want trust protections for minor children or elderly parents, but do not want to pay annual accounting and audit fees while you are young and healthy, you can create a <strong>Testamentary Trust</strong> inside your Will.
+                    If you want trust protections for minor children or elderly parents, but do not want to pay annual accounting and audit fees while you are young and healthy, you can create a <strong>Will Trust</strong> inside your Will.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Section 5 of the Indian Trusts Act, a trust can be created by a Will. The trust only springs into existence upon your death. During your lifetime, you pay ₹0 trust maintenance fees, while still securing milestone protections for your family when you pass away.
@@ -1263,7 +1263,7 @@ export default function WillVsFamilyTrustClient() {
               </div>
 
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                11. Estate Strategy Selector: Interactive Decision Tool
+                11. Estate Strategy Selector: Free Decision Tool
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -1301,13 +1301,13 @@ export default function WillVsFamilyTrustClient() {
                 {/* Question 2: Family Profile */}
                 <div>
                   <label className="block text-xs sm:text-sm font-bold text-[#172228] mb-2.5">
-                    2. Family &amp; Beneficiary Situation
+                    2. Family &amp; Heir Situation
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                     {[
                       { id: "adults-harmonious", label: "Adult heirs, harmonious relationships" },
                       { id: "special-needs", label: "Minor children or special needs dependent" },
-                      { id: "blended-risk", label: "Blended family, remarriage, or dispute risk" },
+                      { id: "blended-risk", label: "Blended family, remarriage, or fight risk" },
                     ].map((opt) => (
                       <button
                         key={opt.id}
@@ -1332,9 +1332,9 @@ export default function WillVsFamilyTrustClient() {
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                     {[
-                      { id: "standard-liquid", label: "Residential home, bank FDs, demat shares" },
+                      { id: "standard-liquid", label: "Home home, bank FDs, demat shares" },
                       { id: "operating-business", label: "Operating family business or private shares" },
-                      { id: "nri-cross-border", label: "Cross-border / NRI multi-jurisdiction assets" },
+                      { id: "nri-cross-border", label: "Cross-border / NRI multi-area assets" },
                     ].map((opt) => (
                       <button
                         key={opt.id}
@@ -1359,7 +1359,7 @@ export default function WillVsFamilyTrustClient() {
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                     {[
-                      { id: "low-cost", label: "Lowest cost & simplest execution" },
+                      { id: "low-cost", label: "Lowest cost & simplest signing" },
                       { id: "privacy-no-probate", label: "Total privacy & avoiding court probate" },
                       { id: "creditor-protection", label: "Business creditor & insolvency shielding" },
                     ].map((opt) => (
@@ -1466,7 +1466,29 @@ export default function WillVsFamilyTrustClient() {
                 })}
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY AUTHOR / TRUST / CTA CARDS
@@ -1486,20 +1508,20 @@ export default function WillVsFamilyTrustClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h4>
                   <p className="text-[11px] text-[#C65378] font-bold">
-                    Senior Succession &amp; Trust Counsel
+                    Senior Estate &amp; Trust Counsel
                   </p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Advocate specializing in testamentary succession, private family trusts, and cross-border NRI estate governance under the Indian Trusts Act and Succession Act.
+                Lawyer specializing in Will estate, private family trusts, and cross-border NRI estate governance under the Indian Trusts Act and Estate Act.
               </p>
               <div className="pt-2 border-t border-[#172228]/5 flex items-center justify-between text-[11px] text-[#55636D]">
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1545,7 +1567,7 @@ export default function WillVsFamilyTrustClient() {
               <ul className="text-xs text-slate-600 space-y-2.5">
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Zero Family Disputes:</strong> Eliminates painful partition suits among legal heirs.</span>
+                  <span><strong>Zero Family Fights:</strong> Eliminates painful split suits among legal heirs.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -1584,7 +1606,7 @@ export default function WillVsFamilyTrustClient() {
                 >
                   Is a Notarized Will Valid in India?
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
-                    Section 63 witness rules vs SRO registration &rarr;
+                    Section 63 witness rules vs SRO filing &rarr;
                   </span>
                 </Link>
                 <Link
@@ -1600,7 +1622,7 @@ export default function WillVsFamilyTrustClient() {
                   href="/services/nri-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all font-semibold text-[#172228]"
                 >
-                  NRI Will Drafting &amp; Inheritance
+                  NRI Will Drafting &amp; Estate
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
                     FEMA compliance &amp; Two-Will Strategy &rarr;
                   </span>
@@ -1609,7 +1631,7 @@ export default function WillVsFamilyTrustClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all font-semibold text-[#172228]"
                 >
-                  Interactive Legal Succession Calculator
+                  Free Legal Estate Tool
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
                     HSA Section 8 &amp; 15 legal heir shares &rarr;
                   </span>
@@ -1632,7 +1654,7 @@ export default function WillVsFamilyTrustClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
                 <Link
                   href="/blogs/digital-assets-crypto-will-india"
@@ -1644,7 +1666,7 @@ export default function WillVsFamilyTrustClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
               </div>
             </div>

@@ -146,7 +146,7 @@ export default function PrayagrajLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Prayagraj: Legal Online Will Guide",
         description:
-          "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth.",
+          "Draft your Will in Prayagraj with High Court lawyer review. Reliable UP IGRS filing guidance, PDA asset name change, and family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function PrayagrajLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Prayagraj - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, High Court advocate review, UP IGRS portal registration, and doorstep execution support across Prayagraj, Civil.",
+          "Professional Will drafting, High Court lawyer review, UP IGRS portal filing, and doorstep signing support across Prayagraj, Civil.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,26 +262,26 @@ export default function PrayagrajLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Prayagraj",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Prayagraj.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Prayagraj.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Prayagraj properties including PDA plots, ancestral houses, agricultural land, bank accounts, and investments. Nominate your beneficiaries and choose an executor.",
+            text: "List your Prayagraj assets including PDA plots, family houses, farm land, bank accounts, and investments. Nominate your heirs and choose an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with High Court Advocate Oversight",
-            text: "Draft your Will using our online legal platform or consult our experienced succession advocates to add specific bequests, survivorship, and dispute-prevention clauses.",
+            text: "Draft your Will using our online legal platform or consult our experienced estate lawyers to add specific bequests, survivorship, and fight-prevention clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign each page in the physical presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 sheets and sign each page in the physical presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
@@ -293,7 +293,7 @@ export default function PrayagrajLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for digital biometric verification, webcam photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for digital biometric check, webcam photo capture, and official Book III filing.",
           },
         ],
       },

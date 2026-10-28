@@ -126,7 +126,7 @@ const TELANGANA_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Print on plain white A4 sheets. Under Telangana law, stamp paper is not needed for a Will.",
     checked: true,
   },
@@ -289,7 +289,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Dharani Land Succession</span>
+                  <span>Dharani Land Estate</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -316,7 +316,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Telangana Estate &amp; Land Succession Blueprint
+                  Telangana Estate &amp; Land Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -361,7 +361,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency State Rule
@@ -480,7 +480,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
 
               <div className="mt-8 pt-6 border-t border-slate-100 space-y-3">
                 <div className="text-xs font-bold text-slate-800">
-                  Telangana Succession Desk
+                  Telangana Estate Desk
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
                   Lawyer drafting, Dharani land name change, and IGRS signing across all 33 districts.
@@ -508,7 +508,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>CLEAR LEGAL HELP FOR TELANGANA FAMILIES</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Telangana
+                  Key Highlights: Will Making &amp; Filing in Telangana
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-600">
                   <div className="flex items-start gap-3">
@@ -570,7 +570,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Telangana
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Wills in Telangana follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Telangana Rights in Land and Pattadar Pass Books Act, 2020</strong>. A well-written Will gives you full legal power to pass your own house, shares, and farm land to the heirs you choose.
+                  Wills in Telangana follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Telangana Rights in Land and Pattadar Pass Books Act, 2020</strong>. A well-written Will gives you full legal power to pass your own house, shares, and farm land to the heirs you choose.
                 </p>
               </div>
 
@@ -621,10 +621,10 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>FILING GUIDE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Telangana?
+                  2. Is Will Filing Needed in Telangana?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, filing a Will at the SRO is optional in Telangana. A Will written on plain white paper is valid if you sign it in front of two witnesses. Still, an unfiled Will brings real risks when your family visits land offices:
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, filing a Will at the SRO is a choice in Telangana. A Will written on plain white paper is valid if you sign it in front of two witnesses. Still, an unfiled Will brings real risks when your family visits land offices:
                 </p>
               </div>
 
@@ -633,8 +633,8 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Key Factor</th>
-                      <th className="p-4 font-bold text-slate-900">Registered Will (IGRS Telangana)</th>
-                      <th className="p-4 font-bold text-slate-500">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold text-slate-900">Filed Will (IGRS Telangana)</th>
+                      <th className="p-4 font-bold text-slate-500">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -688,7 +688,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-slate-900 text-sm block">No Probate Needed in Telangana:</strong>
-                    <span>Telangana is outside the old presidency zones. The Telangana High Court in Hyderabad has ruled many times that probate is not needed for Hindus, Buddhists, Sikhs, and Jains leaving property in Telangana.</span>
+                    <span>Telangana is outside the old presidency zones. The Telangana High Court in Hyderabad has ruled many times that probate is not needed for Hindus, Buddhists, Sikhs, and Jains leaving asset in Telangana.</span>
                   </div>
                 </div>
 
@@ -696,7 +696,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-slate-900 text-sm block">Direct Town &amp; Land Transfers:</strong>
-                    <span>GHMC, HMDA, TSIIC, and village offices do not ask for court probate to change names. Your heirs only need a registered Will and a death paper.</span>
+                    <span>GHMC, HMDA, TSIIC, and village offices do not ask for court probate to change names. Your heirs only need a filed Will and a death paper.</span>
                   </div>
                 </div>
 
@@ -721,7 +721,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   4. Telangana SRO offices: SRO Area Guide
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 31 &amp; Section 32 of the Registration Act</strong>, a Will can be presented at any SRO office within Telangana or at the office of the District Registrar. Locate your nearest registry hub:
+                  Under <strong>Section 31 &amp; Section 32 of the Filing Act</strong>, a Will can be presented at any SRO office within Telangana or at the office of the District Registrar. Locate your nearest registry hub:
                 </p>
               </div>
 
@@ -795,7 +795,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Telangana
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Telangana span upscale gated communities and high-rise apartments in Hyderabad and Cyberabad, urban plotted developments in Warangal and Nizamabad, industrial and granite enterprises in Karimnagar, and fertile farmlands on the Dharani portal across Mahabubnagar and Nalgonda. Our estate lawyers provide customized legal drafting, IGRS Telangana slot scheduling, and Sub-Registrar accompaniment across all key regions:
+                  Estate assets in Telangana span upscale gated communities and high-rise apartments in Hyderabad and Cyberabad, urban plotted developments in Warangal and Nizamabad, plant and granite enterprises in Karimnagar, and fertile farmlands on the Dharani portal across Mahabubnagar and Nalgonda. Our estate lawyers provide customized legal drafting, IGRS Telangana slot scheduling, and SRO accompaniment across all key regions:
                 </p>
               </div>
 
@@ -826,7 +826,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Hyderabad &amp; Secunderabad</strong> for luxury high-rise apartments, gated villas, shop showrooms, and global tech equity portfolios. Streamlines GHMC property tax name change, share transfer, and corporate shareholding succession.
+                      Specialized <strong>Will drafting services in Hyderabad &amp; Secunderabad</strong> for luxury high-rise apartments, gated villas, shop showrooms, and global tech equity portfolios. Streamlines GHMC asset tax name change, share transfer, and corporate shareholding estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -880,7 +880,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Warangal &amp; Hanamkonda</strong> for home plots under KUDA (Kakatiya Urban Development Authority), educational institutions, retail shop set upments, and family family assets.
+                      Customized <strong>Will drafting services in Warangal &amp; Hanamkonda</strong> for home plots under KUDA (Kakatiya Urban Development Office), educational institutions, retail shop set upments, and family family assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -943,7 +943,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Road &amp; Bodhan Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full family asset audits, doctor papers for senior Will makers, and verified Book III custody.
+                        Full family asset audits, doctor papers for senior Will makers, and checked Book III custody.
                       </p>
                     </div>
                   </div>
@@ -968,7 +968,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Granite &amp; Industrial Power Belt
+                        Granite &amp; Plant Power Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Karimnagar &amp; Ramagundam
@@ -988,7 +988,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Karimnagar &amp; Ramagundam</strong> for granite quarry businesses, industrial employee savings, home plots, and farm orchards along the Manair river basin.
+                      Dedicated <strong>Will drafting services in Karimnagar &amp; Ramagundam</strong> for granite quarry businesses, plant employee savings, home plots, and farm orchards along the Manair river basin.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -997,13 +997,13 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Court Complex &amp; Ramagundam Sub-Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset bequeathal, retirement provident fund succession, and local Sub-Registrar accompaniment.
+                        Plant asset bequeathal, retirement provident fund estate, and local SRO accompaniment.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Granite Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Granite Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1022,7 +1022,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Eastern Agro-Industrial Gateway
+                        Eastern Agro-Plant Gateway
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Khammam &amp; Kothagudem
@@ -1051,7 +1051,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Khammam District Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Clear farm succession protocols, life-interest rights for spouses, and seamless SRO signing.
+                        Clear farm estate protocols, life-interest rights for spouses, and seamless SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1204,7 +1204,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Medchal &amp; Sangareddy</strong> for gated luxury villa townships along Outer Ring Road (ORR), industrial manufacturing factories, and suburban investment plots.
+                      Customized <strong>Will drafting services in Medchal &amp; Sangareddy</strong> for gated luxury villa townships along Outer Ring Road (ORR), plant manufacturing factories, and suburban investment plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1242,10 +1242,10 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to IGR Registration in Telangana
+                  6. Step-by-Step SOP: Drafting to IGR Filing in Telangana
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Telangana:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Telangana:
                 </p>
               </div>
 
@@ -1330,23 +1330,23 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Banjara Hills, Jubilee Hills, Secunderabad, Warangal, or regional towns, traveling to the SRO office can be a physical hardship. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private home or hospital room to complete signing.
+                  For elderly, unwell, or bedridden citizens residing in Banjara Hills, Jubilee Hills, Secunderabad, Warangal, or regional towns, traveling to the SRO office can be a physical hardship. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private home or hospital room to complete signing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates Across Telangana:
+                  How Doorstep SRO Filing Operates Across Telangana:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen possesses full sound mind but is medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen possesses full sound mind but is medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1354,7 +1354,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the areaal Telangana Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the areaal Telangana SRO.</span>
                     </div>
                   </div>
 
@@ -1370,7 +1370,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric scanners and webcams to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric scanners and webcams to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1385,10 +1385,10 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Telangana SRO offices
+                  8. Paper Checklist for Telangana SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1435,23 +1435,23 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Telangana Property Types: GHMC Flats, Dharani &amp; Plots
+                  9. Telangana Asset Types: GHMC Flats, Dharani &amp; Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Telangana vary considerably depending on whether the estate encompasses urban municipal assets or rural farm parcels:
+                  Estate steps in Telangana vary considerably depending on whether the estate encompasses urban city assets or rural farm parcels:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Urban Municipal Assets
+                    Urban City Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     GHMC Flats &amp; HMDA Gated Villas
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For apartments in HITEC City, Gachibowli, and Secunderabad, the registered Will serves as strong evidence for GHMC property tax name change and apartment owners association share transfer without fight.
+                    For apartments in HITEC City, Gachibowli, and Secunderabad, the filed Will serves as strong evidence for GHMC asset tax name change and apartment owners association share transfer without fight.
                   </p>
                 </div>
 
@@ -1475,7 +1475,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     Retail Units, Demat Shares &amp; RSUs
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For tech professionals and family businesses, clear clauses govern multinational stock units (RSUs), demat holdings, shop lease rentals, and proprietary partnership succession.
+                    For tech professionals and family businesses, clear clauses govern multinational stock units (RSUs), demat holdings, shop lease rentals, and proprietary partnership estate.
                   </p>
                 </div>
               </div>
@@ -1489,10 +1489,10 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official IGRS Telangana Registration Fees &amp; Charges
+                  10. Official IGRS Telangana Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale deeds or gift transfers that incur high ad-valorem stamp duty in Telangana, testamentary Wills are completely exempt from stamp duty. Government signing fees are purely nominal:
+                  Unlike shop sale deeds or gift transfers that incur high ad-valorem stamp duty in Telangana, Will Wills are completely exempt from stamp duty. Government signing fees are purely nominal:
                 </p>
               </div>
 
@@ -1502,7 +1502,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1512,14 +1512,14 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Telangana</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 – ₹200 (Nominal Fee)</td>
                       <td className="p-4">IGRS Telangana via Cyber Treasury</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">User Charges &amp; Document Scanning</td>
+                      <td className="p-4 font-semibold">User Charges &amp; Paper Scanning</td>
                       <td className="p-4 font-bold">₹100 – ₹300</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1542,7 +1542,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Telangana
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio across Telangana:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio across Telangana:
                 </p>
               </div>
 
@@ -1565,7 +1565,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Telangana Will creator</span>
+                        <span>Free Telangana Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1638,7 +1638,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
@@ -1747,10 +1747,10 @@ export default function TelanganaLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1759,7 +1759,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
                     Telangana ROR Act 2020
                   </span>
                   <p className="text-xs text-slate-600">
-                    Dharani digital land portal succession and e-Pattadar passbook transfer rules.
+                    Dharani digital land portal estate and e-Pattadar passbook transfer rules.
                   </p>
                 </div>
 
@@ -1818,7 +1818,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Telangana Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Telangana Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1837,7 +1837,7 @@ export default function TelanganaLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Telangana SRO Registered &amp; Dharani Portal Compliant</span>
+              <span>Telangana SRO Filed &amp; Dharani Portal Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

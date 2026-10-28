@@ -88,7 +88,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
         url: canonicalUrl,
         name: "How to Mention Huf Share in Will Format | WillDrafting.in",
         description:
-          "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid.",
+          "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted joint clauses and avoid.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
         name: "HUF Karta Coparcenary Will Clause Format & Section 30 Bequest Template",
         url: canonicalUrl,
         description:
-          "Statutory legal clause format for bequeathing undivided coparcenary interest in a Hindu Undivided Family (HUF) under Section 30 of the Hindu.",
+          "Legal legal clause format for bequeathing undivided joint interest in a Hindu Undivided Family (HUF) under Section 30 of the Hindu.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -149,7 +149,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "Can a Karta bequeath the entire HUF property in his Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A Karta does not own the entire HUF property. Under Hindu law, joint family property belongs to all coparceners jointly by birth. Any clause attempting to bequeath the whole HUF property or a specific physical room or floor is void ab initio.",
+              text: "No. A Karta does not own the entire HUF asset. Under Hindu law, joint family asset belongs to all coparceners jointly by birth. Any clause attempting to bequeath the whole HUF asset or a specific physical room or floor is void ab initio.",
             },
           },
           {
@@ -157,7 +157,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "What is the correct way to mention an HUF share in a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 30 of the Hindu Succession Act, 1956, the testator must explicitly state: 'I hereby bequeath my undivided coparcenary interest and share in the HUF as ascertained upon a notional partition under Section 6 immediately preceding my death.'",
+              text: "Under Section 30 of the Hindu Succession Act, 1956, the Will maker must explicitly state: 'I hereby bequeath my undivided joint interest and share in the HUF as ascertained upon a notional split under Section 6 right away preceding my death.'",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "What did the Supreme Court hold in Radhamma v. Muddukrishna (2019)?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Radhamma v. H.N. Muddukrishna (2019) 3 SCC 611, the Supreme Court confirmed that a Hindu coparcener can dispose of his undivided coparcenary interest by Will under Section 30. However, the bequest operates only on his individual notional partition share, and cannot infringe upon the shares of other coparceners.",
+              text: "In Radhamma v. H.N. Muddukrishna (2019) 3 SCC 611, the Supreme Court confirmed that a Hindu coparcener can dispose of his undivided joint interest by Will under Section 30. However, the bequest operates only on his single notional split share, and cannot infringe upon the shares of other coparceners.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "How is the testator's undivided coparcenary share calculated?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 6(3) of the Hindu Succession Act, the share is calculated by applying a statutory fiction of 'notional partition'. The law imagines a partition occurring immediately before the testator's death, calculating the exact percentage share that would have been allotted to him alongside his wife, sons, and daughters.",
+              text: "Under Section 6(3) of the Hindu Succession Act, the share is calculated by applying a legal fiction of 'notional split'. The law imagines a split occurring right away before the Will maker's death, calculating the exact percentage share that would have been allotted to him alongside his wife, sons, and daughters.",
             },
           },
           {
@@ -181,7 +181,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "Do daughters have equal coparcenary rights in an HUF?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Following the 2005 amendment and the landmark Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters are coparceners by birth with equal rights and liabilities. When computing the notional partition share, daughters receive equal shares alongside sons.",
+              text: "Yes. Following the 2005 amendment and the landmark Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters are coparceners by birth with equal rights and liabilities. When computing the notional split share, daughters receive equal shares alongside sons.",
             },
           },
           {
@@ -189,7 +189,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "Can an HUF coparcener bequeath his share to a non-family outsider?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Section 30 confers absolute testamentary power over one's own undivided coparcenary interest. A coparcener may bequeath his share to anyone, including one specific child, a spouse, a trust, or an outsider. The legatee steps into the shoes of the deceased coparcener and can claim that share via partition.",
+              text: "Yes. Section 30 confers absolute Will power over one's own undivided joint interest. A coparcener may bequeath his share to anyone, including one specific child, a spouse, a trust, or an outsider. The legatee steps into the shoes of the deceased coparcener and can claim that share via split.",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
             name: "Does bequeathing an HUF share dissolve the HUF for income tax purposes?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The execution of a Will bequeathing an undivided coparcenary share does not automatically dissolve the HUF. Under Section 171 of the Income Tax Act, 1961, the HUF continues as a distinct taxable entity until a full partition by metes and bounds is recognized by the Assessing Officer.",
+              text: "No. The signing of a Will bequeathing an undivided joint share does not automatically dissolve the HUF. Under Section 171 of the Income Tax Act, 1961, the HUF continues as a distinct taxable entity until a full split by metes and bounds is recognized by the Assessing Officer.",
             },
           },
           {

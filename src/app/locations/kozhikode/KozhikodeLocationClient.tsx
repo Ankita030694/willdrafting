@@ -146,8 +146,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS doctor. Certifies sound sound mind and prevents future fights.",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
+    detail: "Issued by a filed MBBS doctor. Certifies sound sound mind and prevents future fights.",
     checked: false,
   },
   {
@@ -159,19 +159,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "e-Treasury Fee Payment Challan (₹1,000)",
-    detail: "Official Kerala government registration fee receipt paid online through e-Treasury gateway.",
+    detail: "Official Kerala government filing fee receipt paid online through e-Treasury gateway.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Land Tax Receipt (Thandapper) & Title Deed Copies",
-    detail: "Verified copies showing Kozhikode Municipal Corporation property tax and revenue Thandapper details.",
+    detail: "Checked copies showing Kozhikode City City Board asset tax and revenue Thandapper details.",
     checked: false,
   },
   {
     id: "item-8",
     label: "Passport & Gulf Residence Visa (For NRIs)",
-    detail: "Required for Gulf NRI testators establishing foreign residency and declaring overseas bank holdings.",
+    detail: "Required for Gulf NRI Will makers establishing foreign residency and declaring overseas bank holdings.",
     checked: false,
   },
 ];
@@ -269,7 +269,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally binding Will for your Kozhikode shop assets, home assets, and Gulf diaspora wealth.
-                Get senior Kerala High Court lawyer vetting, PEARLS portal e-token registration, and Section 31 doorstep signing across Calicut.
+                Get senior Kerala High Court lawyer vetting, PEARLS portal e-token filing, and Section 31 doorstep signing across Calicut.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -356,7 +356,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Section 213 Kerala Exemption
@@ -494,7 +494,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
                 <p className="text-[10px] text-center text-slate-400 font-mono">
-                  Kerala Registration Act Compliant
+                  Kerala Filing Act Compliant
                 </p>
               </div>
             </div>
@@ -511,7 +511,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 1 · Overview
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                1. Legal Will Drafting in Kozhikode: Assets &amp; NRI Succession
+                1. Legal Will Drafting in Kozhikode: Assets &amp; NRI Estate
               </h2>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
@@ -521,9 +521,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   Protecting these diverse assets demands a tailored estate plan under Indian succession laws.
                 </p>
                 <p>
-                  Without a legally drafted Will, your self-acquired wealth falls into without a Will succession.
+                  Without a legally drafted Will, your self-acquired wealth falls into without a Will estate.
                   In Kerala, multi-heir partitions often result in bitter, decades-long civil suits before the District Court.
-                  A customized Will grants you total authority to determine exactly who inherits your property,
+                  A customized Will grants you total office to determine exactly who inherits your asset,
                   preventing family fights and guaranteeing financial security for your spouse and children.
                 </p>
               </div>
@@ -556,7 +556,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="text-sm font-bold text-slate-900">Swift KMC Name Change</h3>
                   <p className="text-xs text-slate-600 leading-normal">
-                    Ensure direct Pokkuvaravu and Thandapper title transfers in local Village and Corporation offices.
+                    Ensure direct Pokkuvaravu and Thandapper title transfers in local Village and City Board offices.
                   </p>
                 </div>
               </div>
@@ -570,11 +570,11 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 2 · Legal Framework
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                2. Kerala Succession Law: Governing Legal Acts &amp; Rules
+                2. Kerala Estate Law: Governing Legal Acts &amp; Rules
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
-                  Every testamentary document drafted in Kozhikode operates within central statutes and Kerala state rules.
+                  Every Will paper drafted in Kozhikode operates within central statutes and Kerala state rules.
                   Understanding these core enactments guarantees that your Will remains ironclad against courtroom fights:
                 </p>
               </div>
@@ -587,18 +587,18 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Section 59 governs sound mind, while Section 63 defines strict signing guidelines.
-                    The Will maker must sign the document in the direct physical presence of two independent witnesses.
+                    The Will maker must sign the paper in the direct physical presence of two independent witnesses.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2.5">
                   <div className="flex items-center gap-2 font-bold text-sm text-[#172228]">
                     <Stamp className="w-4 h-4 text-[#C65378]" />
-                    <span>Registration Act, 1908</span>
+                    <span>Filing Act, 1908</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 18(e) makes Will registration optional.
-                    Section 31 provides doorstep home registration for elderly or ailing testators who cannot visit the SRO.
+                    Section 18(e) makes Will filing a choice.
+                    Section 31 provides doorstep home filing for elderly or ailing Will makers who cannot visit the SRO.
                   </p>
                 </div>
 
@@ -619,8 +619,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     <span>Kerala Land Tax Act &amp; Pokkuvaravu</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs title name change (Pokkuvaravu) and Thandapper account updates in Kozhikode Corporation and Village Offices.
-                    A registered Will guarantees straightforward name change without complex court decrees.
+                    Governs title name change (Pokkuvaravu) and Thandapper account updates in Kozhikode City Board and Village Offices.
+                    A filed Will guarantees straightforward name change without complex court decrees.
                   </p>
                 </div>
               </div>
@@ -631,16 +631,16 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 ------------------------------------------------------------------- */}
             <section id="mandatory-vs-optional" className="scroll-target space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
-                Section 3 · Registration Analysis
+                Section 3 · Filing Analysis
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                3. Will Registration in Kerala: Needed vs Optional Rules
+                3. Will Filing in Kerala: Needed vs A Choice Rules
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Clients often ask whether they must register their Will at a Kozhikode SRO office.
-                  Under Indian law, an unregistered Will written on plain paper is legally valid if signed before two adult witnesses.
-                  However, registration creates an authentic government record that protects your estate against future fights.
+                  Under Indian law, an plain Will written on plain paper is legally valid if signed before two adult witnesses.
+                  However, filing creates an authentic government record that protects your estate against future fights.
                 </p>
               </div>
 
@@ -650,8 +650,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <thead className="bg-slate-50 border-b border-slate-200 text-slate-900 font-bold">
                     <tr>
                       <th className="p-3.5 sm:p-4">Key Legal Feature</th>
-                      <th className="p-3.5 sm:p-4">Unregistered Will</th>
-                      <th className="p-3.5 sm:p-4 text-[#C65378]">Registered Will (Recommended)</th>
+                      <th className="p-3.5 sm:p-4">Plain Will</th>
+                      <th className="p-3.5 sm:p-4 text-[#C65378]">Filed Will (Recommended)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-600">
@@ -663,17 +663,17 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Government Archiving</td>
                       <td className="p-3.5 sm:p-4">Kept at home; risk of loss or destruction</td>
-                      <td className="p-3.5 sm:p-4">Archived in Kerala Registration Book III records</td>
+                      <td className="p-3.5 sm:p-4">Archived in Kerala Filing Book III records</td>
                     </tr>
                     <tr>
-                      <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Vulnerability to Challenge</td>
+                      <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Vulnerability to Fight</td>
                       <td className="p-3.5 sm:p-4">High risk of forgery or mental fitness claims</td>
-                      <td className="p-3.5 sm:p-4">Very low; Sub-Registrar verifies identity directly</td>
+                      <td className="p-3.5 sm:p-4">Very low; SRO verifies identity directly</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">KMC Name Change &amp; Pokkuvaravu</td>
                       <td className="p-3.5 sm:p-4">Requires extensive inquiry and heir consent</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Swift processing by Village and Municipal staff</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Swift processing by Village and City staff</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Official Government Fee</td>
@@ -689,7 +689,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 <p className="leading-relaxed">
                   <strong>Lawyer Insight:</strong> For families with assets in Nadakkavu, Mavoor Road, or Beach Road,
                   registering your Will at the local Kozhikode SRO eliminates suspicions among siblings.
-                  Official Book III registration proves the document was signed voluntarily without coercion.
+                  Official Book III filing proves the paper was signed voluntarily without coercion.
                 </p>
               </div>
             </section>
@@ -702,18 +702,18 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 4 · Probate Guidance
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. Probate Exemption in Kerala: Court Order vs Succession Will
+                4. Probate Exemption in Kerala: Court Order vs Estate Will
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
-                  A common point of confusion is whether property owners in Kozhikode must get court probate.
+                  A common point of confusion is whether asset owners in Kozhikode must get court probate.
                   Under Section 213 read with Section 57 of the Indian Succession Act, probate is needed ONLY for Wills signed
                   within the historical presidency towns of Mumbai, Kolkata, and Chennai, or for assets located in those territories.
                 </p>
                 <p>
                   Kozhikode is a non-presidency area under the Kerala High Court.
-                  So, <strong>probate is strictly optional in Kerala</strong> for Hindus, Christians, Sikhs, Jains, and Buddhists.
-                  Legal heirs do not need to file an expensive testamentary suit before the High Court or District Court to inherit Calicut assets.
+                  So, <strong>probate is strictly a choice in Kerala</strong> for Hindus, Christians, Sikhs, Jains, and Buddhists.
+                  Legal heirs do not need to file an expensive Will suit before the High Court or District Court to inherit Calicut assets.
                 </p>
               </div>
 
@@ -723,7 +723,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <ul className="text-xs text-slate-600 space-y-2 leading-relaxed">
                     <li className="flex items-start gap-1.5">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Transferring Calicut Corporation home flats and bungalows.</span>
+                      <span>Transferring Calicut City Board home flats and bungalows.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -764,12 +764,12 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 5 · SRO Directory
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                5. Kozhikode Sub-Registrar Directory: SRO Office Timings
+                5. Kozhikode SRO Directory: SRO Office Timings
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
-                  Kozhikode district operates multiple Sub-Registrar Offices under the Registration Department of Kerala.
-                  Select your home or property zone below to find the designated office address, local area, and operational hours:
+                  Kozhikode district operates multiple SRO Offices under the Filing Office of Kerala.
+                  Select your home or asset zone below to find the designated office address, local area, and operational hours:
                 </p>
               </div>
 
@@ -858,8 +858,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   6. Kozhikode Regional Coverage: Calicut Hubs &amp; Suburbs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Nadakkavu, Mavoor Road, Beach Road, or Civil Station</strong>? Property ownership models, shop traditions, and Sub-Registrar areas vary across Kozhikode.
-                  Whether you own a shop trading enterprise on Big Bazaar, a high-rise apartment on Mavoor Road, an family Tharavadu in Chevayur, or Gulf NRI investments, our Kerala High Court lawyers deliver tailored drafting, registration, and succession advisory:
+                  Looking for legally checked <strong>Will drafting services in Nadakkavu, Mavoor Road, Beach Road, or Civil Station</strong>? Asset ownership models, shop traditions, and SRO areas vary across Kozhikode.
+                  Whether you own a shop trading enterprise on Big Bazaar, a high-rise apartment on Mavoor Road, an family Tharavadu in Chevayur, or Gulf NRI investments, our Kerala High Court lawyers deliver tailored drafting, filing, and estate advisory:
                 </p>
               </div>
 
@@ -891,7 +891,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in Mavoor Road &amp; Nadakkavu</strong>? This prominent shop and home spine houses prime healthcare centers, business establishments, and modern apartments.
-                      Under Kerala property laws and Kozhikode Municipal Corporation guidelines, an lawyer-drafted Will ensures your apartment deeds, shop office leases, and bank accounts pass directly to your nominated heirs without requiring expensive indemnity bonds or family fights.
+                      Under Kerala asset laws and Kozhikode City City Board guidelines, an lawyer-drafted Will ensures your apartment deeds, shop office leases, and bank accounts pass directly to your nominated heirs without requiring expensive indemnity bonds or family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -900,7 +900,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Civil Station Complex, Chevayur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Help with Kerala PEARLS online e-token booking, Book III registration, and Section 31 home visits for senior residents across Nadakkavu and Mavoor Road.
+                        Help with Kerala PEARLS online e-token booking, Book III filing, and Section 31 home visits for senior residents across Nadakkavu and Mavoor Road.
                       </p>
                     </div>
                   </div>
@@ -946,7 +946,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Get specialized <strong>Will drafting services in Beach Road &amp; Valiyangadi</strong>. Calicut&apos;s historic trading core hosts century-old wholesale merchant firms, family business partnerships, and family heritage assets.
-                      Our High Court lawyers draft full clauses protecting shop trading capital, merchant goodwill, and prime coastal land holdings, coordinating official registration at the Calicut Beach SRO office near the Old Custom House.
+                      Our High Court lawyers draft full clauses protecting shop trading capital, merchant goodwill, and prime coastal land holdings, coordinating official filing at the Calicut Beach SRO office near the Old Custom House.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -955,13 +955,13 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Old Custom House, Beach Road, Vellayil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full lawyer accompanied registration, shop partnership succession structuring, and Book III permanent record archiving.
+                        Full lawyer accompanied filing, shop partnership estate structuring, and Book III permanent record archiving.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Malabar Trading Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Malabar Trading Estate</span>
                     <a
                       href="/start"
                       onClick={handleStartDraft}
@@ -1010,7 +1010,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Station Campus, Wayanad Road, Eranhikkal</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct appointment token generation on the Kerala PEARLS portal, biometric thumbprint registration, and Section 31 senior home visits.
+                        Direct appointment token generation on the Kerala PEARLS portal, biometric thumbprint filing, and Section 31 senior home visits.
                       </p>
                     </div>
                   </div>
@@ -1056,7 +1056,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Secure expert <strong>Will drafting services in SM Street &amp; Palayam</strong>. The heart of Kozhikode features iconic retail establishments on Sweet Meat Street, traditional family residences in Chalappuram, and shop assets near Mananchira.
-                      Our legal team safeguards your shop assets through dedicated executor appointments, explicit tenancy bequests, and clean succession strategies that avert multi-heir split court fights.
+                      Our legal team safeguards your shop assets through dedicated executor appointments, explicit tenancy bequests, and clean estate strategies that avert multi-heir split court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1065,7 +1065,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Registrar Office Campus, Mananchira</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full legal advisory, witness check, and expedited registration support in the heart of Calicut city.
+                        Full legal advisory, witness check, and expedited filing support in the heart of Calicut city.
                       </p>
                     </div>
                   </div>
@@ -1110,8 +1110,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Protect your family assets with <strong>Will drafting services in Feroke &amp; Ramanattukara</strong>. Connecting Kozhikode city to Calicut International Airport, this rapidly expanding corridor features tile and industrial hubs alongside new home gated villas.
-                      We draft precise bequests for industrial lands, highway shop plots, and family homes, guaranteeing hassle-free Pokkuvaravu and Thandapper title name change in revenue registers.
+                      Protect your family assets with <strong>Will drafting services in Feroke &amp; Ramanattukara</strong>. Connecting Kozhikode city to Calicut International Airport, this rapidly expanding corridor features tile and plant hubs alongside new home gated villas.
+                      We draft precise bequests for plant lands, highway shop plots, and family homes, guaranteeing hassle-free Pokkuvaravu and Thandapper title name change in revenue registers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1120,7 +1120,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Chungam Junction, Old Calicut Road, Feroke</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online registration fee payment through Kerala e-Treasury, biometric check, and lawyer help at SRO Feroke.
+                        Online filing fee payment through Kerala e-Treasury, biometric check, and lawyer help at SRO Feroke.
                       </p>
                     </div>
                   </div>
@@ -1166,7 +1166,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Avail premier <strong>Will drafting services in Kunnamangalam &amp; Kakkodi</strong>. Home to premier academic institutions (IIM Kozhikode, NIT Calicut) and families with members working across UAE, Qatar, and Saudi Arabia.
-                      Our dual-Will strategy coordinates overseas Gulf bank accounts and foreign assets with domestic Calicut real estate, making sure your children inherit smoothly under Indian and international succession frameworks.
+                      Our dual-Will strategy coordinates overseas Gulf bank accounts and foreign assets with domestic Calicut real estate, making sure your children inherit smoothly under Indian and international estate frameworks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1175,7 +1175,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Main Road, Near Bus Stand, Kunnamangalam</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Gulf NRI cross-border estate coordination, doctor mental fitness certification, and seamless PEARLS registration.
+                        Gulf NRI cross-border estate coordination, doctor mental fitness certification, and seamless PEARLS filing.
                       </p>
                     </div>
                   </div>
@@ -1204,7 +1204,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 7 · Standard Operating Step
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                7. Five-Step Will Drafting SOP: Kerala PEARLS Registration
+                7. Five-Step Will Drafting SOP: Kerala PEARLS Filing
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
@@ -1260,8 +1260,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <div className="space-y-1">
                     <h3 className="text-sm font-bold text-slate-900">Step 4: Book e-Token on Kerala PEARLS Portal</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Log into the official Kerala Registration portal (keralaregistration.gov.in).
-                      Upload document details, pay the ₹1,000 nominal fee via e-Treasury challan, and download your SRO appointment token.
+                      Log into the official Kerala Filing portal (keralaregistration.gov.in).
+                      Upload paper details, pay the ₹1,000 nominal fee via e-Treasury challan, and download your SRO appointment token.
                     </p>
                   </div>
                 </div>
@@ -1274,7 +1274,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     <h3 className="text-sm font-bold text-slate-900">Step 5: Biometric Check at Kozhikode SRO</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Visit the SRO office in Civil Station, Chevayur, Beach Road, or Feroke with both witnesses.
-                      The Sub-Registrar captures biometric thumbprints, records digital photographs, and issues Book III registration.
+                      The SRO captures biometric thumbprints, records digital photographs, and issues Book III filing.
                     </p>
                   </div>
                 </div>
@@ -1289,25 +1289,25 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 8 · Doorstep Signing
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                8. Section 31 Doorstep Registration: Home Visits for Seniors
+                8. Section 31 Doorstep Filing: Home Visits for Seniors
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   For many senior citizens, retired teachers, and bedridden residents across Nadakkavu, Mavoor Road,
                   or Puthiyara, travelling to the SRO office and climbing office stairs can be physically exhausting.
-                  Section 31 of the Registration Act, 1908 mainly accommodates such people through official doorstep commissioner visits.
+                  Section 31 of the Filing Act, 1908 mainly accommodates such people through official doorstep commissioner visits.
                 </p>
                 <p>
-                  Under Section 31, the Kozhikode Sub-Registrar visits the Will maker&apos;s home or hospital bed to verify identity,
-                  record biometric thumbprints, and formalize registration in person.
+                  Under Section 31, the Kozhikode SRO visits the Will maker&apos;s home or hospital bed to verify identity,
+                  record biometric thumbprints, and formalize filing in person.
                 </p>
               </div>
 
               <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-4">
-                <h3 className="text-sm font-bold text-slate-900">Doorstep Registration Rules</h3>
+                <h3 className="text-sm font-bold text-slate-900">Doorstep Filing Rules</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-                    <span className="font-bold text-slate-800 block">Medical Certificate</span>
+                    <span className="font-bold text-slate-800 block">Medical Paper</span>
                     <p className="text-slate-600 leading-normal">
                       An MBBS doctor certifies that the Will maker is mentally alert but physically unable to travel.
                     </p>
@@ -1336,12 +1336,12 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 9 · Papers
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                9. Document Checklist: Rules for Kozhikode Wills
+                9. Paper Checklist: Rules for Kozhikode Wills
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Ensure you have all necessary paperwork prepared before visiting the Kozhikode SRO office.
-                  Use our interactive checklist below to verify your documents:
+                  Use our free checklist below to verify your papers:
                 </p>
               </div>
 
@@ -1349,7 +1349,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-5">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">SRO Registration Readiness Checklist</h3>
+                    <h3 className="text-sm font-bold text-slate-900">SRO Filing Readiness Checklist</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Click each rule as you assemble your paperwork.</p>
                   </div>
                   <div className="text-right">
@@ -1431,17 +1431,17 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Non-Resident Malayalis working in Dubai, Abu Dhabi, Doha, or Riyadh often maintain assets in both areas.
                     We implement a dual-Will architecture: an Indian Will for Kozhikode family lands, flats, and NRE accounts,
-                    alongside guidance for DIFC or UAE mainland Wills for Gulf assets, making sure seamless multi-country succession.
+                    alongside guidance for DIFC or UAE mainland Wills for Gulf assets, making sure seamless multi-country estate.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900">
                     <Home className="w-4 h-4 text-[#C65378]" />
-                    <span>Kozhikode Municipal Corporation (KMC) Flats &amp; Tharavadu Plots</span>
+                    <span>Kozhikode City City Board (KMC) Flats &amp; Tharavadu Plots</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Family Tharavadu split deeds and modern KMC apartment complexes require precise property descriptions.
+                    Family Tharavadu split deeds and modern KMC apartment complexes require precise asset descriptions.
                     Our drafts cross-reference the survey number, re-survey number, village area, and Thandapper account number,
                     making sure unhindered title name change before local revenue officers.
                   </p>
@@ -1457,7 +1457,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 Section 11 · Costs &amp; Fees
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
-                11. Kerala Registration Fees: Stamp Duty &amp; PEARLS Charges
+                11. Kerala Filing Fees: Stamp Duty &amp; PEARLS Charges
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
@@ -1524,7 +1524,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Kerala Succession Act compliant</span>
+                        <span>Kerala Estate Act compliant</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1607,7 +1607,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Complete Book III registered copy delivery</span>
+                        <span>Complete Book III filed copy delivery</span>
                       </li>
                     </ul>
                   </div>
@@ -1633,8 +1633,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
-                  Clear, authoritative legal answers to common questions regarding Will drafting, Kerala PEARLS registration,
-                  and Gulf NRI succession in Kozhikode:
+                  Clear, authoritative legal answers to common questions regarding Will drafting, Kerala PEARLS filing,
+                  and Gulf NRI estate in Kozhikode:
                 </p>
               </div>
 
@@ -1701,21 +1701,21 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-2xs space-y-1">
                   <span className="font-bold text-slate-900 block">Section 63, Indian Succession Act, 1925</span>
                   <p className="text-slate-600 leading-normal">
-                    Needed attestation rule. The Will maker must execute the document in the presence of two independent adult witnesses.
+                    Needed witness signing rule. The Will maker must execute the paper in the presence of two independent adult witnesses.
                   </p>
                 </div>
 
                 <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-2xs space-y-1">
-                  <span className="font-bold text-slate-900 block">Section 18(e), Registration Act, 1908</span>
+                  <span className="font-bold text-slate-900 block">Section 18(e), Filing Act, 1908</span>
                   <p className="text-slate-600 leading-normal">
-                    Codifies that registration of a Will is optional, while confirming the legal standing of unregistered Wills.
+                    Codifies that filing of a Will is a choice, while confirming the legal standing of plain Wills.
                   </p>
                 </div>
 
                 <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-2xs space-y-1">
-                  <span className="font-bold text-slate-900 block">Section 31, Registration Act, 1908</span>
+                  <span className="font-bold text-slate-900 block">Section 31, Filing Act, 1908</span>
                   <p className="text-slate-600 leading-normal">
-                    Grants discretionary power to the Sub-Registrar to attend private residences for elderly or infirm citizens.
+                    Grants discretionary power to the SRO to attend private residences for elderly or infirm citizens.
                   </p>
                 </div>
               </div>
@@ -1742,25 +1742,47 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     href="/tools/will-checklist"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-all font-medium"
                   >
-                    Interactive Will Checklist
+                    Free Will Checklist
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-all font-medium"
                   >
-                    SRO Will Registration Help
+                    SRO Will Filing Help
                   </Link>
                   <Link
                     href="/blogs/notarized-will-vs-registered-will-india"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-all font-medium"
                   >
-                    Notarized vs Registered Will in India
+                    Notarized vs Filed Will in India
                   </Link>
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

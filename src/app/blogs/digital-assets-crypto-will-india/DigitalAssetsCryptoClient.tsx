@@ -81,21 +81,21 @@ const COMPARISON_DATA: ComparisonRow[] = [
     inWill: "Valid bequest, but invites severe security risks before probate finishes.",
     twoDocMethod: "100% Enforceable: Will establishes legal title, while letter provides technical access.",
     verdict: "safe",
-    note: "Combines Section 30 Succession Act ownership with lawful IT Act electronic authorization.",
+    note: "Combines Section 30 Estate Act ownership with lawful IT Act electronic authorization.",
   },
   {
     parameter: "Centralized Exchange KYC Claims",
     inWill: "Exchanges (CoinDCX, WazirX) accept the Will for transmission, but reject password sharing.",
     twoDocMethod: "Seamless: Will proves heirship to exchange support, while memo handles self-custody.",
     verdict: "safe",
-    note: "FIU-IND registered platforms mandate legal heir documentation rather than informal logins.",
+    note: "FIU-IND filed platforms mandate legal heir papers rather than informal logins.",
   },
 ];
 
 const TOC_ITEMS = [
   { id: "executive-brief", label: "Executive Summary" },
   { id: "legal-status-india", label: "1. Legal Status of Crypto" },
-  { id: "two-document-method", label: "2. The Two-Document Method" },
+  { id: "two-document-method", label: "2. The Two-Paper Method" },
   { id: "digital-asset-inventory", label: "3. Digital Asset Inventory" },
   { id: "vda-taxation-rules", label: "4. VDA Taxation & Exemptions" },
   { id: "visual-blueprint", label: "5. Visual Blueprint" },
@@ -106,7 +106,7 @@ const TOC_ITEMS = [
   { id: "interactive-readiness-tool", label: "10. Digital Readiness Audit" },
   { id: "critical-mistakes", label: "11. Three Fatal Mistakes" },
   { id: "frequently-asked-questions", label: "12. Questions People Often Ask" },
-  { id: "statutory-citations", label: "13. Statutory Authority" },
+  { id: "statutory-citations", label: "13. Legal Office" },
 ];
 
 const DIGITAL_INVENTORY_TEMPLATE = `CONFIDENTIAL DIGITAL ASSET INVENTORY & ACCESS MEMORANDUM
@@ -212,19 +212,19 @@ Location: [City, State]`;
 const FAQS = [
   {
     q: "Can I legally bequeath crypto and Bitcoin in an Indian Will?",
-    a: "Yes. Under Section 30 of the Indian Succession Act, 1925, any competent person can dispose of any movable property by Will. The Supreme Court of India in the 2020 IMAI judgment affirmed that cryptocurrency is legal to hold and transact. Cryptocurrency is legally classified as Virtual Digital Assets (VDAs) under Section 2(47A) of the Income Tax Act, 1961, and can be legally bequeathed to your chosen heirs.",
+    a: "Yes. Under Section 30 of the Indian Succession Act, 1925, any competent person can dispose of any cash asset by Will. The Supreme Court of India in the 2020 IMAI judgment affirmed that cryptocurrency is legal to hold and transact. Cryptocurrency is legally classified as Virtual Digital Assets (VDAs) under Section 2(47A) of the Income Tax Act, 1961, and can be legally bequeathed to your chosen heirs.",
   },
   {
     q: "Why should I never put my crypto private keys or seed phrases in my Will?",
-    a: "A Will is not a confidential document. Under Section 63 of the Indian Succession Act, at least two independent witnesses must view your execution and can read the document. Furthermore, if your Will is submitted for probate in court or registered at the Sub-Registrar Office, it becomes a public record accessible by clerks and third parties. Anyone who reads your 12 or 24-word seed phrase can instantly steal your entire balance irreversibly. Always use the Two-Document Method.",
+    a: "A Will is not a confidential paper. Under Section 63 of the Indian Succession Act, at least two independent witnesses must view your signing and can read the paper. Also, if your Will is submitted for probate in court or filed at the SRO office, it becomes a public record accessible by clerks and third parties. Anyone who reads your 12 or 24-word seed phrase can instantly steal your entire balance irreversibly. Always use the Two-Paper Method.",
   },
   {
-    q: "What is the Two-Document Method for crypto and digital estate planning?",
-    a: "The Two-Document Method splits legal title from technical access. Document 1 is your formal Last Will and Testament, which names your beneficiaries and legally gifts your digital assets to them without exposing credentials. Document 2 is a separate, confidential Digital Asset Memorandum or sealed access letter (stored in a bank locker or encrypted password vault) that contains hardware wallet locations, PINs, seed phrases, and technical recovery instructions.",
+    q: "What is the Two-Paper Method for crypto and digital estate planning?",
+    a: "The Two-Paper Method splits legal title from technical access. Paper 1 is your formal Last Will and Testament, which names your heirs and legally gifts your digital assets to them without exposing credentials. Paper 2 is a separate, confidential Digital Asset Memorandum or sealed access letter (stored in a bank locker or encrypted password vault) that contains hardware wallet locations, PINs, seed phrases, and technical recovery instructions.",
   },
   {
     q: "Is inherited crypto taxed in India under the 30% VDA tax rule?",
-    a: "No, the inheritance itself is 100% tax-free upon receipt. Under the proviso to Section 56(2)(x) of the Income Tax Act, 1961, any property or virtual digital asset received under a Will or through inheritance is completely exempt from gift tax and income tax. However, when your heir later sells or exchanges that crypto for rupees, they will owe a flat 30% tax on net profits under Section 115BBH plus 1% TDS under Section 194S.",
+    a: "No, the estate itself is 100% tax-free upon receipt. Under the proviso to Section 56(2)(x) of the Income Tax Act, 1961, any asset or virtual digital asset received under a Will or through estate is completely exempt from gift tax and income tax. However, when your heir later sells or exchanges that crypto for rupees, they will owe a flat 30% tax on net profits under Section 115BBH plus 1% TDS under Section 194S.",
   },
   {
     q: "How does my heir calculate capital gains when selling inherited crypto?",
@@ -232,7 +232,7 @@ const FAQS = [
   },
   {
     q: "How can my family recover crypto kept on Indian centralized exchanges like CoinDCX or WazirX?",
-    a: "Centralized exchanges registered with FIU-IND require your legal heir or executor to submit a formal transmission claim. They will ask for an official death certificate, a copy of the probated Will or Legal Heir Certificate / Succession Certificate, complete KYC documents of the claimant, and an indemnity bond. Once verified, the exchange transfers the balance to the heir's verified account.",
+    a: "Centralized exchanges filed with FIU-IND require your legal heir or executor to submit a formal transfer claim. They will ask for an official death paper, a copy of the probated Will or Legal Heir Paper / Estate Paper, complete KYC papers of the claimant, and an indemnity bond. Once checked, the exchange transfers the balance to the heir's checked account.",
   },
   {
     q: "What happens to self-custodial wallets like MetaMask or Ledger if I do not leave instructions?",
@@ -244,11 +244,11 @@ const FAQS = [
   },
   {
     q: "How do I include domain names, social media channels, and YouTube revenue in my Will?",
-    a: "Digital media and revenue accounts represent commercial intellectual and contractual property. You can bequeath specific domain names, monetized YouTube channels, or online storefronts to named beneficiaries in your Will. Your confidential access memo should list the registrar (e.g. GoDaddy), Google AdSense account ID, and payout details so the executor can reassign ownership smoothly.",
+    a: "Digital media and revenue accounts represent shop intellectual and contractual asset. You can bequeath specific domain names, monetized YouTube channels, or online storefronts to named heirs in your Will. Your confidential access memo should list the registrar (e.g. GoDaddy), Google AdSense account ID, and payout details so the executor can reassign ownership smoothly.",
   },
   {
     q: "Do I need to update my Will every time I buy a new cryptocurrency or change a password?",
-    a: "No! This is the greatest advantage of the Two-Document Method. Your formal Will contains a broad legal bequest (e.g. 'all my virtual digital assets and cryptocurrency holdings'). When you buy new coins, open new wallets, or update passwords, you simply update your private Digital Asset Memorandum in your safe or password vault without paying advocate fees or executing a Codicil.",
+    a: "No! This is the greatest advantage of the Two-Paper Method. Your formal Will contains a broad legal bequest (e.g. 'all my virtual digital assets and cryptocurrency holdings'). When you buy new coins, open new wallets, or update passwords, you simply update your private Digital Asset Memorandum in your safe or password vault without paying lawyer fees or signing a Codicil.",
   },
 ];
 
@@ -269,7 +269,7 @@ export default function DigitalAssetsCryptoClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
 
-  // State for Interactive Digital Readiness Quiz
+  // State for Free Digital Readiness Quiz
   const [readinessChecklist, setReadinessChecklist] = useState<Record<string, boolean>>({
     step1: true,
     step2: false,
@@ -348,7 +348,7 @@ export default function DigitalAssetsCryptoClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Protect your Bitcoin, private keys, online investments, and cloud drives. Discover the Two-Document Method, Section 115BBH VDA tax exemptions, and our free downloadable inventory template.
+            Protect your Bitcoin, private keys, online investments, and cloud drives. Discover the Two-Paper Method, Section 115BBH VDA tax exemptions, and our free downloadable inventory template.
           </p>
 
           {/* CTA Buttons */}
@@ -383,7 +383,7 @@ export default function DigitalAssetsCryptoClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -484,7 +484,7 @@ export default function DigitalAssetsCryptoClient() {
               <div className="mt-4 pt-3 border-t border-[#172228]/10">
                 <div className="flex items-center gap-2 text-[11px] text-emerald-800 font-semibold">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Verified Legal Framework</span>
+                  <span>Checked Legal Framework</span>
                 </div>
                 <p className="text-[10px] text-[#55636D] mt-1 leading-normal">
                   Indian Succession Act 1925 &bull; IT Act 2000 &bull; Section 115BBH VDA Tax
@@ -504,7 +504,7 @@ export default function DigitalAssetsCryptoClient() {
             >
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378] mb-2">
                 <Sparkles className="w-4 h-4" />
-                <span>Executive Summary &bull; Digital Succession Rules</span>
+                <span>Executive Summary &bull; Digital Estate Rules</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 Executive Brief: Digital Estate Planning in India
@@ -513,19 +513,19 @@ export default function DigitalAssetsCryptoClient() {
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <p>
-                    <strong>Cryptocurrency is Legal Property:</strong> Bitcoin, Ethereum, and NFTs constitute Virtual Digital Assets (VDAs) under Section 2(47A) of the Income Tax Act, 1961, and can be legally bequeathed under Section 30 of the Indian Succession Act, 1925.
+                    <strong>Cryptocurrency is Legal Asset:</strong> Bitcoin, Ethereum, and NFTs constitute Virtual Digital Assets (VDAs) under Section 2(47A) of the Income Tax Act, 1961, and can be legally bequeathed under Section 30 of the Indian Succession Act, 1925.
                   </p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <p>
-                    <strong>The Two-Document Method is Mandatory:</strong> Never put seed phrases or passwords directly into a Will. A Will becomes public during probate and is read by witnesses. Use a formal Will for legal title and a separate, confidential access memo for credentials.
+                    <strong>The Two-Paper Method is Needed:</strong> Never put seed phrases or passwords directly into a Will. A Will becomes public during probate and is read by witnesses. Use a formal Will for legal title and a separate, confidential access memo for credentials.
                   </p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <p>
-                    <strong>100% Tax-Free Inheritance:</strong> Under Section 56(2)(x) proviso, crypto inherited under a Will or intestate succession is exempt from tax upon receipt. A 30% VDA capital gains tax applies only when the legal heir later liquidates the tokens.
+                    <strong>100% Tax-Free Estate:</strong> Under Section 56(2)(x) proviso, crypto inherited under a Will or no-Will estate is exempt from tax upon receipt. A 30% VDA capital gains tax applies only when the legal heir later liquidates the tokens.
                   </p>
                 </div>
                 <div className="flex items-start gap-2.5">
@@ -547,20 +547,20 @@ export default function DigitalAssetsCryptoClient() {
             <section id="legal-status-india" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Standing</span>
+                <span>Legal Standing</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Legal Status: Digital Assets &amp; Crypto in Indian Law
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  A common question Indian investors ask is whether cryptocurrency is legally recognized under inheritance laws. The answer is an unambiguous yes. In the landmark judgment <em>Internet and Mobile Association of India (IMAI) v. Reserve Bank of India (2020)</em>, the Supreme Court struck down the RBI banking ban, establishing that holding, trading, and owning virtual currencies is a constitutionally protected economic activity.
+                  A common question Indian investors ask is whether cryptocurrency is legally recognized under estate laws. The answer is an clear yes. In the landmark judgment <em>Internet and Mobile Association of India (IMAI) v. Reserve Bank of India (2020)</em>, the Supreme Court struck down the RBI banking ban, establishing that holding, trading, and owning virtual currencies is a constitutionally protected economic activity.
                 </p>
                 <p>
-                  Under the <strong>Indian Succession Act, 1925 (Section 30)</strong>, any person of sound mind has the unrestricted power to dispose of their movable property by executing a valid Will. Digital assets (including Bitcoin, Ethereum, NFTs, cloud accounts, domain names, and digital royalties) are legally classified as <em>incorporeal movable property</em>.
+                  Under the <strong>Indian Succession Act, 1925 (Section 30)</strong>, any person of sound mind has the unrestricted power to dispose of their cash asset by signing a valid Will. Digital assets (including Bitcoin, Ethereum, NFTs, cloud accounts, domain names, and digital royalties) are legally classified as <em>incorporeal cash asset</em>.
                 </p>
                 <p>
-                  Furthermore, the Finance Act, 2022 formally defined cryptocurrency under <strong>Section 2(47A) of the Income Tax Act, 1961</strong> as a &quot;Virtual Digital Asset&quot; (VDA). By taxing VDAs and regulating Virtual Asset Service Providers (VASPs) through the Financial Intelligence Unit (FIU-IND) under the Prevention of Money Laundering Act (PMLA), the Government of India has created an established statutory framework recognizing crypto as taxable personal property that forms part of a deceased person&apos;s legal estate.
+                  Also, the Finance Act, 2022 formally defined cryptocurrency under <strong>Section 2(47A) of the Income Tax Act, 1961</strong> as a &quot;Virtual Digital Asset&quot; (VDA). By taxing VDAs and regulating Virtual Asset Service Providers (VASPs) through the Financial Intelligence Unit (FIU-IND) under the Prevention of Money Laundering Act (PMLA), the Government of India has created an established legal framework recognizing crypto as taxable personal asset that forms part of a deceased person&apos;s legal estate.
                 </p>
               </div>
 
@@ -583,17 +583,17 @@ export default function DigitalAssetsCryptoClient() {
                 <span>The Core Security Strategy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                2. The Two-Document Method: Why Never Put Keys in a Will
+                2. The Two-Paper Method: Why Never Put Keys in a Will
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   The biggest mistake amateur estate planners make is writing cryptocurrency private keys, 12-word seed phrases, or email passwords directly into their Will. Doing so creates an immediate security disaster.
                 </p>
                 <p>
-                  Under Section 63 of the Indian Succession Act, a Will must be attested by a minimum of <strong>two independent witnesses</strong> who view the document. If you register your Will at the Sub-Registrar Office (SRO), your Will is scanned into government land databases. Moreover, if your estate undergoes court probate in Mumbai, Chennai, or Kolkata, the Will becomes a matter of public court record. Any witness, court clerk, lawyer, or family member who reads your 24-word recovery phrase can drain your blockchain wallets in seconds with zero paper trail.
+                  Under Section 63 of the Indian Succession Act, a Will must be attested by a minimum of <strong>two independent witnesses</strong> who view the paper. If you register your Will at the SRO office (SRO), your Will is scanned into government land databases. Moreover, if your estate undergoes court probate in Mumbai, Chennai, or Kolkata, the Will becomes a matter of public court record. Any witness, court clerk, lawyer, or family member who reads your 24-word recovery phrase can drain your blockchain wallets in seconds with zero paper trail.
                 </p>
                 <p>
-                  To solve this dilemma, WillDrafting.in pioneers the <strong>Two-Document Method</strong>:
+                  To solve this dilemma, WillDrafting.in pioneers the <strong>Two-Paper Method</strong>:
                 </p>
               </div>
 
@@ -602,13 +602,13 @@ export default function DigitalAssetsCryptoClient() {
                 <div className="rounded-2xl bg-white border border-[#172228]/10 p-5 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-xs font-bold text-[#172228] uppercase tracking-wider">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Document 1: The Formal Will</span>
+                    <span>Paper 1: The Formal Will</span>
                   </div>
                   <h3 className="font-extrabold text-sm text-[#172228]">
-                    Public Legal Title Document
+                    Public Legal Title Paper
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Signed before two witnesses and optionally registered at the Sub-Registrar Office. It includes a general legal bequest giving &quot;all my virtual digital assets, hardware wallets, and online accounts to my daughter Ananya.&quot;
+                    Signed before two witnesses and optionally filed at the SRO office. It includes a general legal bequest giving &quot;all my virtual digital assets, hardware wallets, and online accounts to my daughter Ananya.&quot;
                   </p>
                   <div className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1.5 rounded-lg border border-emerald-200">
                     &bull; Contains ZERO passwords or seed phrases
@@ -618,7 +618,7 @@ export default function DigitalAssetsCryptoClient() {
                 <div className="rounded-2xl bg-white border border-[#172228]/10 p-5 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-xs font-bold text-[#172228] uppercase tracking-wider">
                     <Lock className="w-4 h-4 text-emerald-600" />
-                    <span>Document 2: The Access Memorandum</span>
+                    <span>Paper 2: The Access Memorandum</span>
                   </div>
                   <h3 className="font-extrabold text-sm text-[#172228]">
                     Confidential Practical Access Key
@@ -627,7 +627,7 @@ export default function DigitalAssetsCryptoClient() {
                     A private supplementary letter stored inside a bank locker, tamper-evident sealed envelope, or encrypted password vault. It provides exact technical steps, hardware wallet locations, PINs, and recovery seeds.
                   </p>
                   <div className="text-[11px] font-semibold text-[#C65378] bg-rose-50 px-2.5 py-1.5 rounded-lg border border-rose-200">
-                    &bull; Updated anytime without advocate fees or new witnesses
+                    &bull; Updated anytime without lawyer fees or new witnesses
                   </div>
                 </div>
               </div>
@@ -636,7 +636,7 @@ export default function DigitalAssetsCryptoClient() {
               <div className="rounded-2xl bg-white border border-[#172228]/10 overflow-hidden shadow-xs mt-6">
                 <div className="px-5 py-3.5 bg-[#172228] text-white flex items-center justify-between">
                   <span className="text-xs font-bold uppercase tracking-wider">
-                    Comparison: Credentials in Will vs Two-Document Method
+                    Comparison: Credentials in Will vs Two-Paper Method
                   </span>
                   <span className="text-[11px] text-slate-300">Section 63 ISA Standard</span>
                 </div>
@@ -646,7 +646,7 @@ export default function DigitalAssetsCryptoClient() {
                       <tr className="bg-slate-50 border-b border-[#172228]/10 text-[#172228] font-bold">
                         <th className="p-3">Security &amp; Legal Metric</th>
                         <th className="p-3">Putting Keys in Will</th>
-                        <th className="p-3">Two-Document Method</th>
+                        <th className="p-3">Two-Paper Method</th>
                         <th className="p-3">Verdict</th>
                       </tr>
                     </thead>
@@ -679,7 +679,7 @@ export default function DigitalAssetsCryptoClient() {
                 3. Digital Asset Inventory Template: Checklist &amp; Assets
               </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                Use our comprehensive, clause-annotated Digital Asset Inventory and Access Memorandum. Fill this out, place it in a sealed envelope, and store it safely in your bank locker or safe with instructions for your named executor.
+                Use our full, clause-annotated Digital Asset Inventory and Access Memorandum. Fill this out, place it in a sealed envelope, and store it safely in your bank locker or safe with instructions for your named executor.
               </p>
 
               {/* Template Container */}
@@ -746,17 +746,17 @@ export default function DigitalAssetsCryptoClient() {
             <section id="vda-taxation-rules" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <DollarSign className="w-4 h-4" />
-                <span>Statutory Tax Implications</span>
+                <span>Legal Tax Implications</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. VDA Taxation: 30% Tax, 1% TDS &amp; Inheritance Exemptions
+                4. VDA Taxation: 30% Tax, 1% TDS &amp; Estate Exemptions
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Crypto tax laws in India are among the strictest in the world. However, Indian tax jurisprudence makes a crucial, positive distinction between an <strong>inheritance transfer</strong> and a <strong>commercial sale</strong>.
+                  Crypto tax laws in India are among the strictest in the world. However, Indian tax jurisprudence makes a crucial, positive distinction between an <strong>estate transfer</strong> and a <strong>shop sale</strong>.
                 </p>
                 <p>
-                  Here is the exact statutory tax roadmap every Indian crypto investor and heir must know:
+                  Here is the exact legal tax roadmap every Indian crypto investor and heir must know:
                 </p>
               </div>
 
@@ -765,13 +765,13 @@ export default function DigitalAssetsCryptoClient() {
                 <div className="rounded-2xl bg-white border border-[#172228]/10 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-xs font-bold text-emerald-800 uppercase tracking-wider">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Point of Inheritance: 100% Tax-Free</span>
+                    <span>Point of Estate: 100% Tax-Free</span>
                   </div>
                   <h3 className="font-extrabold text-sm text-[#172228]">
-                    Section 56(2)(x) Statutory Exemption
+                    Section 56(2)(x) Legal Exemption
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under the third proviso to Section 56(2)(x) of the Income Tax Act, 1961, any sum of money or property (expressly including Virtual Digital Assets) received under a Will or by way of inheritance is <strong>completely exempt from income tax</strong>. Your heir does not pay a single rupee in tax merely for receiving your Bitcoin, Ethereum, or hardware wallets.
+                    Under the third proviso to Section 56(2)(x) of the Income Tax Act, 1961, any sum of money or asset (expressly including Virtual Digital Assets) received under a Will or by way of estate is <strong>completely exempt from income tax</strong>. Your heir does not pay a single rupee in tax merely for receiving your Bitcoin, Ethereum, or hardware wallets.
                   </p>
                 </div>
 
@@ -800,7 +800,7 @@ export default function DigitalAssetsCryptoClient() {
                     <strong>1. Original Purchase:</strong> Ramesh bought 1 Bitcoin in 2021 for ₹25,00,000.
                   </p>
                   <p>
-                    <strong>2. Inheritance Upon Demise (2026):</strong> Ramesh passes away and leaves the Bitcoin to his son Rohan via Will. The Bitcoin is worth ₹60,00,000. Rohan pays <strong>₹0 Tax</strong> upon receiving it under Section 56(2)(x).
+                    <strong>2. Estate Upon Demise (2026):</strong> Ramesh passes away and leaves the Bitcoin to his son Rohan via Will. The Bitcoin is worth ₹60,00,000. Rohan pays <strong>₹0 Tax</strong> upon receiving it under Section 56(2)(x).
                   </p>
                   <p>
                     <strong>3. Cost of Acquisition (Section 49(1)):</strong> Under Section 49(1), Rohan&apos;s cost basis is treated as Ramesh&apos;s original purchase price of ₹25,00,000.
@@ -865,14 +865,14 @@ export default function DigitalAssetsCryptoClient() {
             <section id="crypto-specific-challenges" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Wallet className="w-4 h-4" />
-                <span>Technical Succession Realities</span>
+                <span>Technical Estate Realities</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                6. Crypto Challenges: Hardware Wallets, Keys &amp; Exchanges
+                6. Crypto Fights: Hardware Wallets, Keys &amp; Exchanges
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Unlike standard banking deposits where an RBI circular mandates smooth transmission to legal heirs or nominees within 15 days, cryptocurrency exists across decentralized ledgers and sovereign jurisdictions. Estate planning requires tailored handling across three distinct custody models:
+                  Unlike standard banking deposits where an RBI circular mandates smooth transfer to legal heirs or nominees within 15 days, cryptocurrency exists across decentralized ledgers and sovereign areas. Estate planning requires tailored handling across three distinct custody models:
                 </p>
               </div>
 
@@ -901,10 +901,10 @@ export default function DigitalAssetsCryptoClient() {
                     Indian Centralized Exchanges
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Platforms registered with FIU-IND (CoinDCX, WazirX, CoinSwitch, Mudrex) hold custodial funds. They operate strict AML/KYC checks and reject bot logins after death.
+                    Platforms filed with FIU-IND (CoinDCX, WazirX, CoinSwitch, Mudrex) hold custodial funds. They operate strict AML/KYC checks and reject bot logins after death.
                   </p>
                   <p className="text-[11px] font-semibold text-emerald-700">
-                    Solution: Name a nominee in the exchange app; executor files probate / heir certificate to transmit.
+                    Solution: Name a nominee in the exchange app; executor files probate / heir paper to transmit.
                   </p>
                 </div>
 
@@ -991,10 +991,10 @@ export default function DigitalAssetsCryptoClient() {
                 <span>6-Stage Implementation Protocol</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                8. Step-by-Step SOP: Executing Your Digital Estate Plan
+                8. Step-by-Step SOP: Signing Your Digital Estate Plan
               </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                Follow this battle-tested standard operating procedure to secure your digital and cryptocurrency holdings under Indian law:
+                Follow this battle-tested standard operating step to secure your digital and cryptocurrency holdings under Indian law:
               </p>
 
               {/* 6 Stage Vertical Cards */}
@@ -1003,17 +1003,17 @@ export default function DigitalAssetsCryptoClient() {
                   {
                     step: "Stage 1",
                     title: "Take a Complete Digital Asset Inventory",
-                    desc: "List every exchange account, hot wallet, hardware wallet, domain, and primary cloud account. Note the platform, registered email, and physical hardware locations.",
+                    desc: "List every exchange account, hot wallet, hardware wallet, domain, and primary cloud account. Note the platform, filed email, and physical hardware locations.",
                   },
                   {
                     step: "Stage 2",
                     title: "Draft Your Legal Will with a Digital Clause",
-                    desc: "Use WillDrafting.in to draft a legally compliant Section 63 Will. Insert a broad digital asset clause naming your beneficiary and appointing a designated Digital Executor.",
+                    desc: "Use WillDrafting.in to draft a legally compliant Section 63 Will. Insert a broad digital asset clause naming your heir and appointing a designated Digital Executor.",
                   },
                   {
                     step: "Stage 3",
                     title: "Execute Will Before Two Independent Witnesses",
-                    desc: "Sign your physical Will before two adult witnesses who are not beneficiaries. Keep the Will completely free of passwords, PINs, or private keys.",
+                    desc: "Sign your physical Will before two adult witnesses who are not heirs. Keep the Will completely free of passwords, PINs, or private keys.",
                   },
                   {
                     step: "Stage 4",
@@ -1028,7 +1028,7 @@ export default function DigitalAssetsCryptoClient() {
                   {
                     step: "Stage 6",
                     title: "Establish an Annual Audit Review Cycle",
-                    desc: "Review your access letter once every 12 months. When you change master passwords or buy new tokens, simply update the sealed letter in your locker with zero advocate fees.",
+                    desc: "Review your access letter once every 12 months. When you change master passwords or buy new tokens, simply update the sealed letter in your locker with zero lawyer fees.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -1067,7 +1067,7 @@ export default function DigitalAssetsCryptoClient() {
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Technology itself provides built-in tools to automate succession. Combining legal documents with automated triggers ensures your family is not locked out of vital accounts:
+                  Technology itself provides built-in tools to automate estate. Combining legal papers with automated triggers ensures your family is not locked out of vital accounts:
                 </p>
               </div>
 
@@ -1089,7 +1089,7 @@ export default function DigitalAssetsCryptoClient() {
                     <span>Apple Legacy Contact</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under iOS and macOS, generate an Apple Legacy Contact Key. Give this printed QR key to your heir. Upon presenting your official death certificate to Apple, they are granted access to your iCloud photos, notes, and messages.
+                    Under iOS and macOS, generate an Apple Legacy Contact Key. Give this printed QR key to your heir. Upon presenting your official death paper to Apple, they are granted access to your iCloud photos, notes, and messages.
                   </p>
                 </div>
 
@@ -1109,10 +1109,10 @@ export default function DigitalAssetsCryptoClient() {
             <section id="interactive-readiness-tool" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <CheckSquare className="w-4 h-4" />
-                <span>Interactive Assessment</span>
+                <span>Free Assessment</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                10. Interactive Tool: Digital Asset Readiness Assessment
+                10. Free Tool: Digital Asset Readiness Assessment
               </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Check off the items below to calculate your personal Digital Estate Readiness Score. Find out whether your crypto and online accounts are safe or at high risk of permanent loss.
@@ -1123,7 +1123,7 @@ export default function DigitalAssetsCryptoClient() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#172228]/10">
                   <div>
                     <h3 className="font-extrabold text-base text-[#172228]">
-                      Your Digital Succession Readiness
+                      Your Digital Estate Readiness
                     </h3>
                     <p className="text-xs text-slate-500">
                       Completed {completedCount} of 6 essential protection milestones
@@ -1156,7 +1156,7 @@ export default function DigitalAssetsCryptoClient() {
                     {
                       key: "step1",
                       title: "1. Executed a Formal Will with a Digital Asset Clause",
-                      desc: "You have a signed Will under Section 63 naming legal heirs for digital property.",
+                      desc: "You have a signed Will under Section 63 naming legal heirs for digital asset.",
                     },
                     {
                       key: "step2",
@@ -1176,7 +1176,7 @@ export default function DigitalAssetsCryptoClient() {
                     {
                       key: "step5",
                       title: "5. Named Nominees on Centralized Indian Exchanges",
-                      desc: "Verified that CoinDCX, WazirX, or Zerodha accounts have updated nominee records.",
+                      desc: "Checked that CoinDCX, WazirX, or Zerodha accounts have updated nominee records.",
                     },
                     {
                       key: "step6",
@@ -1249,7 +1249,7 @@ export default function DigitalAssetsCryptoClient() {
                     !
                   </div>
                   <h3 className="font-extrabold text-sm text-[#172228]">
-                    1. Putting Seed Phrases Inside the Registered Will
+                    1. Putting Seed Phrases Inside the Filed Will
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     As warned earlier, Wills are read by witnesses and court clerks. An exposed 12-word seed phrase invites instant, unrecoverable theft. Keep technical access strictly in your sealed memorandum.
@@ -1264,7 +1264,7 @@ export default function DigitalAssetsCryptoClient() {
                     2. Relying on Informal WhatsApp or Paper Notes
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Leaving a note saying &quot;Rohan gets my Bitcoin&quot; without a formal Will is legally void. Under Section 8 of the Hindu Succession Act, un-willed assets are divided equally among all Class-I heirs, sparking intense family disputes.
+                    Leaving a note saying &quot;Rohan gets my Bitcoin&quot; without a formal Will is legally void. Under Section 8 of the Hindu Succession Act, un-willed assets are divided equally among all Class-I heirs, sparking intense family fights.
                   </p>
                 </div>
 
@@ -1333,10 +1333,10 @@ export default function DigitalAssetsCryptoClient() {
             <section id="statutory-citations" className="scroll-target space-y-4 pt-6 border-t border-slate-200">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Landmark className="w-4 h-4" />
-                <span>Legal Authority &amp; Government Acts</span>
+                <span>Legal Office &amp; Government Acts</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                13. Statutory Authority: Income Tax &amp; Succession Acts
+                13. Legal Office: Income Tax &amp; Estate Acts
               </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 The legal principles, taxation rules, and procedural protections outlined in this guide are grounded in established Indian statutory law and Supreme Court precedents:
@@ -1362,10 +1362,10 @@ export default function DigitalAssetsCryptoClient() {
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
                     <li>&bull; Section 2(h): Definition of a Will as a Legal Declaration.</li>
-                    <li>&bull; Section 30: Testamentary Disposition of Movable Incorporeal Property.</li>
-                    <li>&bull; Section 59: Soundness of Mind and Testamentary Capacity.</li>
-                    <li>&bull; Section 63: Mandatory Execution Before Two Independent Witnesses.</li>
-                    <li>&bull; Section 211: Executor as Legal Representative of the Estate.</li>
+                    <li>&bull; Section 30: Will Gift of Cash Incorporeal Asset.</li>
+                    <li>&bull; Section 59: Soundness of Mind and Will Capacity.</li>
+                    <li>&bull; Section 63: Needed Signing Before Two Independent Witnesses.</li>
+                    <li>&bull; Section 211: Executor as Legal Agent of the Estate.</li>
                   </ul>
                 </div>
 
@@ -1385,9 +1385,9 @@ export default function DigitalAssetsCryptoClient() {
                     Precedents &amp; Regulatory Framework
                   </strong>
                   <ul className="text-xs text-slate-600 space-y-1">
-                    <li>&bull; Supreme Court IMAI Judgment (2020): Crypto is Legal Property.</li>
-                    <li>&bull; FIU-IND VASP Registration: KYC &amp; AML Compliance under PMLA.</li>
-                    <li>&bull; Registration Act Section 18(e): Optional Registration of Wills.</li>
+                    <li>&bull; Supreme Court IMAI Judgment (2020): Crypto is Legal Asset.</li>
+                    <li>&bull; FIU-IND VASP Filing: KYC &amp; AML Compliance under PMLA.</li>
+                    <li>&bull; Filing Act Section 18(e): A Choice Filing of Wills.</li>
                   </ul>
                 </div>
               </div>
@@ -1400,7 +1400,7 @@ export default function DigitalAssetsCryptoClient() {
                   Ready to Protect Your Crypto &amp; Digital Estate?
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-                  Draft a legally valid Section 63 Will with comprehensive digital asset clauses in 15 minutes, or consult our senior advocates for complex multi-sig crypto estate structuring.
+                  Draft a legally valid Section 63 Will with full digital asset clauses in 15 minutes, or consult our senior lawyers for complex multi-sig crypto estate structuring.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
@@ -1416,11 +1416,33 @@ export default function DigitalAssetsCryptoClient() {
                   href="/tools/will-checklist"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm transition-all border border-white/20"
                 >
-                  <span>Interactive Will Checklist</span>
+                  <span>Free Will Checklist</span>
                 </Link>
               </div>
             </div>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY AUTHOR / TRUST / CTA CARDS
@@ -1440,20 +1462,20 @@ export default function DigitalAssetsCryptoClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h4>
                   <p className="text-[11px] text-[#C65378] font-bold">
-                    Senior Succession &amp; Trust Counsel
+                    Senior Estate &amp; Trust Counsel
                   </p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Advocate specializing in testamentary succession, digital estate governance, and cross-border crypto inheritance under the Indian Succession Act and IT Act.
+                Lawyer specializing in Will estate, digital estate governance, and cross-border crypto estate under the Indian Succession Act and IT Act.
               </p>
               <div className="pt-2 border-t border-[#172228]/5 flex items-center justify-between text-[11px] text-[#55636D]">
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1511,7 +1533,7 @@ export default function DigitalAssetsCryptoClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Tax Clarity for Heirs:</strong> Secure the Section 56(2)(x) 100% tax-free inheritance shield.</span>
+                  <span><strong>Tax Clarity for Heirs:</strong> Secure the Section 56(2)(x) 100% tax-free estate shield.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -1531,9 +1553,9 @@ export default function DigitalAssetsCryptoClient() {
                   href="/tools/will-checklist"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all font-semibold text-[#172228]"
                 >
-                  Interactive Will Checklist
+                  Free Will Checklist
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
-                    15 asset classes &amp; document preparation tool &rarr;
+                    15 asset classes &amp; paper preparation tool &rarr;
                   </span>
                 </Link>
                 <Link
@@ -1542,7 +1564,7 @@ export default function DigitalAssetsCryptoClient() {
                 >
                   Is a Notarized Will Valid in India?
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
-                    Section 63 witness rules vs SRO registration &rarr;
+                    Section 63 witness rules vs SRO filing &rarr;
                   </span>
                 </Link>
                 <Link
@@ -1560,7 +1582,7 @@ export default function DigitalAssetsCryptoClient() {
                 >
                   Transparent Will Drafting Pricing
                   <span className="block text-[10px] text-[#55636D] font-normal mt-0.5">
-                    Instant DIY Will &amp; Senior Advocate Review &rarr;
+                    Instant DIY Will &amp; Senior Lawyer Review &rarr;
                   </span>
                 </Link>
               </div>
@@ -1593,7 +1615,7 @@ export default function DigitalAssetsCryptoClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
               </div>
             </div>

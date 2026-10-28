@@ -146,7 +146,7 @@ export default function BengaluruLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Bengaluru: Expert Online Will Services",
         description:
-          "Create a legally binding Will in Bengaluru. Get Kaveri 2.0 registration guidance, tech estate planning, and lawyer drafting for IT professionals.",
+          "Create a legally binding Will in Bengaluru. Get Kaveri 2.0 filing guidance, tech estate planning, and lawyer drafting for IT professionals.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function BengaluruLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bengaluru - Estate Planning & Kaveri 2.0 Registration",
         description:
-          "Professional Will drafting, tech startup estate advisory, and Kaveri 2.0 Sub-Registrar Office registration support across Bengaluru Urban and.",
+          "Professional Will drafting, tech startup estate advisory, and Kaveri 2.0 SRO office filing support across Bengaluru Urban and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,38 +262,38 @@ export default function BengaluruLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Bengaluru via Kaveri 2.0",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Karnataka using the Kaveri 2.0 portal.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Karnataka using the Kaveri 2.0 portal.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Assets, ESOPs and Beneficiaries",
-            text: "List your Bengaluru real estate (BBMP A or B Khata, BDA sites), demat portfolios, startup stock options (ESOPs/RSUs), and overseas accounts. Name your beneficiaries and an executor.",
+            text: "List your Bengaluru real estate (BBMP A or B Khata, BDA sites), demat portfolios, startup stock options (ESOPs/RSUs), and overseas accounts. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Tech & Property Clauses",
-            text: "Draft your Will using our online legal platform or with a senior advocate to incorporate specific asset distribution, survivorship, and digital estate clauses.",
+            text: "Draft your Will using our online legal platform or with a senior lawyer to incorporate specific asset split, survivorship, and digital estate clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not named as beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not named as heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Kaveri 2.0 SRO Appointment Online",
-            text: "Log in to Karnataka's Kaveri 2.0 portal, upload your Will details, pay the nominal government fee of ₹200, and book an appointment slot at your local Sub-Registrar office.",
+            text: "Log in to Karnataka's Kaveri 2.0 portal, upload your Will details, pay the nominal government fee of ₹200, and book an appointment slot at your local SRO office.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original Aadhaar cards for fingerprint scanning, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original Aadhaar cards for fingerprint scanning, digital photo capture, and official Book III filing.",
           },
         ],
       },

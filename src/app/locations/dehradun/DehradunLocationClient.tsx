@@ -139,32 +139,32 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-3",
-    label: "Two Independent Adult Attesting Witnesses",
+    label: "Two Independent Adult Signing Witnesses",
     detail: "Must be adults of sound mind who are not heirs or spouses of heirs under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Original KYC Documents for Both Witnesses",
-    detail: "Aadhaar Card, Voter ID, or Passport copies for both witnesses to satisfy Sub-Registrar identity check.",
+    label: "Original KYC Papers for Both Witnesses",
+    detail: "Aadhaar Card, Voter ID, or Passport copies for both witnesses to satisfy SRO identity check.",
     checked: true,
   },
   {
     id: "item-5",
-    label: "Registered MBBS Doctor Sound Mind Note",
-    detail: "Recommended for testators aged 60 and above, confirming sound disposing state of mind and sound mind.",
+    label: "Filed MBBS Doctor Sound Mind Note",
+    detail: "Recommended for Will makers aged 60 and above, confirming sound disposing state of mind and sound mind.",
     checked: false,
   },
   {
     id: "item-6",
     label: "MDDA Allotment Deeds & Revenue Khatauni Records",
-    detail: "Copies of sale deeds, MDDA allotment papers, cantonment leases, or Bhulekh Khatauni for accurate property schedules.",
+    detail: "Copies of sale deeds, MDDA allotment papers, cantonment leases, or Bhulekh Khatauni for accurate asset schedules.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Confirmed Uttarakhand e-Prerna Appointment Slip",
-    detail: "Digital appointment token downloaded from the Uttarakhand registration portal with official fee receipt.",
+    detail: "Digital appointment token downloaded from the Uttarakhand filing portal with official fee receipt.",
     checked: false,
   },
 ];
@@ -255,7 +255,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect your home, MDDA plots, and army pensions across Dehradun. Get expert lawyer help, easy online registration, and home visits for elderly parents.
+                Protect your home, MDDA plots, and army pensions across Dehradun. Get expert lawyer help, easy online filing, and home visits for elderly parents.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -343,7 +343,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Section 213 UK Exemption
@@ -356,7 +356,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 Section 31 Visit
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Home SRO Registration
+                Home SRO Filing
               </span>
             </div>
           </div>
@@ -446,7 +446,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </h2>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Dehradun is the capital of Uttarakhand. It sits in the peaceful Doon Valley. Many army veterans and families live here. Making a Will prevents family fights. It also ensures smooth transfer of your property.
+                  Dehradun is the capital of Uttarakhand. It sits in the peaceful Doon Valley. Many army veterans and families live here. Making a Will prevents family fights. It also ensures smooth transfer of your asset.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -484,7 +484,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/80 flex items-start gap-3 text-xs sm:text-sm text-amber-900">
                   <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold">Uttarakhand Land Purchase Restrictions:</span> Section 154 limits outsider land purchases. However, inheriting land through a Will is protected by law. A registered Will keeps family farms and orchards safe.
+                    <span className="font-bold">Uttarakhand Land Purchase Restrictions:</span> Section 154 limits outsider land purchases. However, inheriting land through a Will is protected by law. A filed Will keeps family farms and orchards safe.
                   </div>
                 </div>
               </div>
@@ -506,7 +506,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Will drafting in Dehradun follows the Indian Succession Act, 1925. Section 2(h) defines a Will. It is a legal declaration of your wishes for your property after death. Any adult of sound mind can make a valid Will. You can bequeath your homes, plots, savings, and personal assets.
+                  Will drafting in Dehradun follows the Indian Succession Act, 1925. Section 2(h) defines a Will. It is a legal declaration of your wishes for your asset after death. Any adult of sound mind can make a valid Will. You can bequeath your homes, plots, savings, and personal assets.
                 </p>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -537,7 +537,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  In Uttarakhand, succession to family farmland connects with state land reforms. Our legal team drafts your Will so city flats, bank funds, and farmland match state revenue rules.
+                  In Uttarakhand, estate to family farmland connects with state land reforms. Our legal team drafts your Will so city flats, bank funds, and farmland match state revenue rules.
                 </p>
               </div>
             </section>
@@ -554,15 +554,15 @@ export default function DehradunLocationClient({ faqs }: Props) {
 
                 {/* H2 #3: Length 46 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Dehradun?
+                  2. Is Will Filing Needed in Dehradun?
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Many people in Dehradun ask if Will registration is needed. Under Section 18(e) of the Registration Act, 1908, registration is optional in India. A Will written on plain paper is legally valid if properly signed and witnessed.
+                  Many people in Dehradun ask if Will filing is needed. Under Section 18(e) of the Filing Act, 1908, filing is a choice in India. A Will written on plain paper is legally valid if properly signed and witnessed.
                 </p>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Even so, lawyers strongly recommend registering your Will. Here is why registration gives you peace of mind:
+                  Even so, lawyers strongly recommend registering your Will. Here is why filing gives you peace of mind:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -572,7 +572,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>Official Book III Record</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Registration saves a permanent copy in government Book III. Nobody can steal, hide, or destroy the document.
+                      Filing saves a permanent copy in government Book III. Nobody can steal, hide, or destroy the paper.
                     </p>
                   </div>
 
@@ -582,7 +582,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>Biometric Proof</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar takes fingerprints and webcam photos. This stops false claims of fraud or forged signatures.
+                      The SRO takes fingerprints and webcam photos. This stops false claims of fraud or forged signatures.
                     </p>
                   </div>
 
@@ -592,7 +592,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>Faster MDDA Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      MDDA and Nagar Nigam process property transfers faster with a registered Will. This avoids court delays.
+                      MDDA and Nagar Nigam process asset transfers faster with a filed Will. This avoids court delays.
                     </p>
                   </div>
 
@@ -602,7 +602,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>Legal Presumption</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Courts trust official government records. A registered Will shifts the burden of proof to anyone contesting it.
+                      Courts trust official government records. A filed Will shifts the burden of proof to anyone contesting it.
                     </p>
                   </div>
                 </div>
@@ -629,16 +629,16 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </p>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Dehradun lies outside presidency areas. For that reason, court probate is strictly optional in Uttarakhand. The Supreme Court confirmed this in Clarence Pais v. Union of India. You save substantial time and high court fees.
+                  Dehradun lies outside presidency areas. For that reason, court probate is strictly a choice in Uttarakhand. The Supreme Court confirmed this in Clarence Pais v. Union of India. You save substantial time and high court fees.
                 </p>
 
                 <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200/80 space-y-2">
                   <div className="font-bold text-emerald-950 text-sm flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-700" />
-                    <span>Direct Property Transfer Without Probate</span>
+                    <span>Direct Asset Transfer Without Probate</span>
                   </div>
                   <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                    Heirs in Dehradun can transfer property directly. You only need the registered Will, death paper, and heir affidavit. You do not need to file long court petitions.
+                    Heirs in Dehradun can transfer asset directly. You only need the filed Will, death paper, and heir sworn note. You do not need to file long court petitions.
                   </p>
                 </div>
 
@@ -646,7 +646,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                   <div className="font-bold text-slate-900">When Might an Uttarakhand Court Probate Be Desirable?</div>
                   <ul className="list-disc list-inside space-y-1 text-xs text-slate-600">
                     <li>If surviving class-I legal heirs actively contest the Will alleging undue influence, coercion, or fraud.</li>
-                    <li>If the Will maker owned high-value assets situated in Mumbai, Kolkata, or Chennai where local municipal bodies mandate probate under Section 213.</li>
+                    <li>If the Will maker owned high-value assets situated in Mumbai, Kolkata, or Chennai where local city bodies mandate probate under Section 213.</li>
                     <li>When dealing with complex overseas assets or foreign bank accounts requiring an ancillary grant of probate through the High Court.</li>
                   </ul>
                 </div>
@@ -765,7 +765,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                     5. Area-Wise Will Drafting Services Across Dehradun
                   </h3>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                    Estate assets in Dehradun span heritage colonial bungalows along Rajpur Road and Dalanwala, institutional residences in Vasant Vihar, defense estates in Clement Town and Garhi Cantt, modern high-rises along Sahastradhara Road, and farm farmhouses in Doiwala. Our estate lawyers deliver customized legal drafting, Uttarakhand e-Prerna slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                    Estate assets in Dehradun span heritage colonial bungalows along Rajpur Road and Dalanwala, institutional residences in Vasant Vihar, defense estates in Clement Town and Garhi Cantt, modern high-rises along Sahastradhara Road, and farm farmhouses in Doiwala. Our estate lawyers deliver customized legal drafting, Uttarakhand e-Prerna slot scheduling, and SRO accompaniment across all key micro-markets:
                   </p>
                 </div>
 
@@ -796,7 +796,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       </div>
 
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        We draft <strong>Wills for colonial bungalows</strong>, litchi estates, and prime plots in Dalanwala. We mark exact boundary lines and private driveways. This keeps family property safe from fights.
+                        We draft <strong>Wills for colonial bungalows</strong>, litchi estates, and prime plots in Dalanwala. We mark exact boundary lines and private driveways. This keeps family asset safe from fights.
                       </p>
 
                       <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -805,7 +805,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: District Court Compound, Rajpur Road</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          e-Prerna online slot booking, senior lawyer physical accompaniment, and Book III registration.
+                          e-Prerna online slot booking, senior lawyer physical accompaniment, and Book III filing.
                         </p>
                       </div>
                     </div>
@@ -859,7 +859,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: Chakrata Road Office Annex</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          Expedited biometric scanning, senior lawyer vetting, and Section 31 doorstep signing for elderly testators.
+                          Expedited biometric scanning, senior lawyer vetting, and Section 31 doorstep signing for elderly Will makers.
                         </p>
                       </div>
                     </div>
@@ -913,7 +913,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: Prem Nagar &amp; Western Sub-Division</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          Defense pension nomination harmonization, AWHO society bylaws coordination, and doorstep registration.
+                          Defense pension nomination harmonization, AWHO society bylaws coordination, and doorstep filing.
                         </p>
                       </div>
                     </div>
@@ -1012,7 +1012,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       </div>
 
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        We assist business owners, traders, and families with <strong>shop estate succession</strong>. We protect shop freeholds, partnership shares, warehouse leases, and business bank accounts.
+                        We assist business owners, traders, and families with <strong>shop estate estate</strong>. We protect shop freeholds, partnership shares, warehouse leases, and business bank accounts.
                       </p>
 
                       <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1021,7 +1021,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: Transport Nagar Phase-1, Saharanpur Road</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          Shop title check, Book III Will registration, and municipal trade name change support.
+                          Shop title check, Book III Will filing, and city trade name change support.
                         </p>
                       </div>
                     </div>
@@ -1066,7 +1066,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       </div>
 
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        We handle <strong>farm and farmhouse succession</strong> across Doiwala and the airport corridor. Our Wills match state land records and protect family farm plots.
+                        We handle <strong>farm and farmhouse estate</strong> across Doiwala and the airport corridor. Our Wills match state land records and protect family farm plots.
                       </p>
 
                       <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1129,7 +1129,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: Tehsil Rishikesh Campus, Railway Road</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          e-Prerna slot booking, Ganga valley property name change, and senior citizen home visit coordination.
+                          e-Prerna slot booking, Ganga valley asset name change, and senior citizen home visit coordination.
                         </p>
                       </div>
                     </div>
@@ -1174,7 +1174,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       </div>
 
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        We draft specialized <strong>Wills in Mussoorie and Landour</strong> for historic hill cottages, homestays, and mountain estates. We secure complex lease deeds, municipal records, and private access roads.
+                        We draft specialized <strong>Wills in Mussoorie and Landour</strong> for historic hill cottages, homestays, and mountain estates. We secure complex lease deeds, city records, and private access roads.
                       </p>
 
                       <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1183,7 +1183,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                           <span>SRO Hub: Tehsil Mussoorie Office Block</span>
                         </div>
                         <p className="text-[11px] text-slate-500">
-                          Heritage lease transfer, Cantonment Board Landour coordination, and Book III registration.
+                          Heritage lease transfer, Cantonment Board Landour coordination, and Book III filing.
                         </p>
                       </div>
                     </div>
@@ -1217,7 +1217,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
 
                 {/* H2 #7: Length 48 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Uttarakhand
+                  6. Step-by-Step Will Filing in Uttarakhand
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -1285,7 +1285,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-sm">Visit the SRO office</div>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Visit the SRO with your witnesses and Aadhaar cards. Complete fingerprint scanning and receive your registered Will.
+                        Visit the SRO with your witnesses and Aadhaar cards. Complete fingerprint scanning and receive your filed Will.
                       </p>
                     </div>
                   </div>
@@ -1305,7 +1305,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
 
                 {/* H2 #8: Length 48 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Doorstep Will Registration for Senior Citizens
+                  7. Doorstep Will Filing for Senior Citizens
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -1316,7 +1316,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
                     <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                       <FileText className="w-4 h-4 text-[#C65378]" />
-                      <span>Doctor Medical Certificate</span>
+                      <span>Doctor Medical Paper</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A simple note from an MBBS doctor confirms the Will maker cannot travel easily, while being of sound mind.
@@ -1368,7 +1368,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
 
                 {/* H2 #9: Length 46 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Dehradun Will Making
+                  8. Papers Checklist for Dehradun Will Making
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -1429,7 +1429,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                  Real estate in Dehradun includes different types of property. Each category requires clear words in your Will:
+                  Real estate in Dehradun includes different types of asset. Each category requires clear words in your Will:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1440,7 +1440,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>MDDA Allotted Plots &amp; Housing Schemes</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Homes in MDDA schemes need exact allotment numbers. A registered Will allows direct lease transfer without civil court cases.
+                      Homes in MDDA schemes need exact allotment numbers. A filed Will allows direct lease transfer without civil court cases.
                     </p>
                   </div>
 
@@ -1473,7 +1473,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <span>Farm Lands &amp; Litchi Orchards</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Farms and orchards in Doon Valley follow state land laws. Succession through a Will is protected from outsider land buy curbs.
+                      Farms and orchards in Doon Valley follow state land laws. Estate through a Will is protected from outsider land buy curbs.
                     </p>
                   </div>
                 </div>
@@ -1492,7 +1492,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
 
                 {/* H2 #11: Length 52 chars decoded, 56 chars raw */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Stamp Duty &amp; Registration Fees: Dehradun
+                  10. Official Stamp Duty &amp; Filing Fees: Dehradun
                 </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -1505,7 +1505,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
                       <tr className="bg-slate-100 text-slate-800 font-extrabold">
                         <th className="p-3 border border-slate-200">Legal Fee Component</th>
                         <th className="p-3 border border-slate-200">Applicable Charge (Uttarakhand)</th>
-                        <th className="p-3 border border-slate-200">Legal Authority</th>
+                        <th className="p-3 border border-slate-200">Legal Office</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700">
@@ -1515,19 +1515,19 @@ export default function DehradunLocationClient({ faqs }: Props) {
                         <td className="p-3 border border-slate-200">Indian Stamp Act (Article 64 Exemption)</td>
                       </tr>
                       <tr className="bg-slate-50/50">
-                        <td className="p-3 border border-slate-200 font-bold">SRO Book III Registration Fee</td>
+                        <td className="p-3 border border-slate-200 font-bold">SRO Book III Filing Fee</td>
                         <td className="p-3 border border-slate-200 font-bold">₹100 (Flat legal fee)</td>
-                        <td className="p-3 border border-slate-200">Uttarakhand Registration Rules</td>
+                        <td className="p-3 border border-slate-200">Uttarakhand Filing Rules</td>
                       </tr>
                       <tr>
                         <td className="p-3 border border-slate-200 font-bold">Biometric &amp; Scanning Charges</td>
                         <td className="p-3 border border-slate-200 font-bold">Approx. ₹100 - ₹200</td>
-                        <td className="p-3 border border-slate-200">e-Prerna Digital Document Charges</td>
+                        <td className="p-3 border border-slate-200">e-Prerna Digital Paper Charges</td>
                       </tr>
                       <tr className="bg-slate-50/50">
                         <td className="p-3 border border-slate-200 font-bold">Section 31 Home Visit Commission</td>
                         <td className="p-3 border border-slate-200 font-bold">Official Treasury Commission</td>
-                        <td className="p-3 border border-slate-200">Section 31 &amp; 33 Registration Act</td>
+                        <td className="p-3 border border-slate-200">Section 31 &amp; 33 Filing Act</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1751,16 +1751,16 @@ export default function DehradunLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1.5">
-                    <div className="font-bold text-slate-900">Registration Act, 1908</div>
+                    <div className="font-bold text-slate-900">Filing Act, 1908</div>
                     <p className="text-slate-600 leading-relaxed">
-                      Section 18(e) makes Will registration optional. Section 31 allows the Sub-Registrar to visit homes of senior testators.
+                      Section 18(e) makes Will filing a choice. Section 31 allows the SRO to visit homes of senior Will makers.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1.5">
                     <div className="font-bold text-slate-900">Clarence Pais v. Union of India (2001)</div>
                     <p className="text-slate-600 leading-relaxed">
-                      The Supreme Court ruled that probate is optional in non-presidency states. You do not need court probate to claim assets in Dehradun.
+                      The Supreme Court ruled that probate is a choice in non-presidency states. You do not need court probate to claim assets in Dehradun.
                     </p>
                   </div>
 
@@ -1788,7 +1788,29 @@ export default function DehradunLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1814,7 +1836,7 @@ export default function DehradunLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="p-4 bg-[#172228] border-t border-white/10 flex items-center justify-between text-white text-xs">
-              <span>Will Drafting &amp; Registration Guide - Dehradun, Uttarakhand</span>
+              <span>Will Drafting &amp; Filing Guide - Dehradun, Uttarakhand</span>
               <button
                 onClick={() => setShowHighResModal(false)}
                 className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 font-bold"

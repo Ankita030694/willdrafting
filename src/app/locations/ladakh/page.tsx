@@ -142,7 +142,7 @@ export default function LadakhLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ladakh: Online Will & Succession Guide",
         description:
-          "Draft a valid Will in Ladakh. Expert guidance on local land inheritance practices, Leh and Kargil revenue records, and family asset distribution.",
+          "Draft a valid Will in Ladakh. Expert guidance on local land estate practices, Leh and Kargil revenue records, and family asset split.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function LadakhLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ladakh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Leh & Kargil revenue land records compliance, LAHDC succession, and Section 31 doorstep.",
+          "Professional Will drafting, lawyer check, Leh & Kargil revenue land records compliance, LAHDC estate, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -256,38 +256,38 @@ export default function LadakhLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Ladakh",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Ladakh.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Ladakh.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Ladakh properties including Leh and Kargil town plots, ancestral agricultural terraces, hotels or homestays, and bank deposits. Designate beneficiaries and an executor.",
+            text: "List your Ladakh assets including Leh and Kargil town plots, family farm terraces, hotels or homestays, and bank deposits. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, executor powers, guardian appointments for minors, and revocation of past instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, executor powers, guardian appointments for minors, and revocation of past instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment",
-            text: "Coordinate your registration appointment with the jurisdictional Sub-Registrar or Tehsildar office in Leh, Kargil, Nubra, or Zanskar.",
+            text: "Coordinate your filing appointment with the local SRO or Tehsildar office in Leh, Kargil, Nubra, or Zanskar.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Ladakh SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for identity verification, photograph capture, and thumb impression to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for identity check, photograph capture, and thumb impression to complete Book III filing.",
           },
         ],
       },

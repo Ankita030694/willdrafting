@@ -43,31 +43,31 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Statutory Rules: Indian Contract Act & RBI Directives" },
+  { id: "statutory-framework", label: "1. Legal Rules: Indian Contract Act & RBI Directives" },
   { id: "comparison-claim-pathways", label: "2. Claim Pathways: Nominee vs Indemnity Bond vs Probate" },
-  { id: "interactive-bond-selector", label: "3. Interactive Indemnity Bond Format & Clause Selector" },
+  { id: "interactive-bond-selector", label: "3. Free Indemnity Bond Format & Clause Selector" },
   { id: "bank-account-indemnity-template", label: "4. Format 1: Bank Deceased Account Claim Indemnity Bond" },
   { id: "bank-locker-indemnity-template", label: "5. Format 2: Bank Locker Claim Indemnity Bond Template" },
   { id: "two-surety-guarantee-clause", label: "6. Two-Surety Guarantee & Solvent Undertaking Clause" },
-  { id: "noc-disclaimer-affidavit", label: "7. Format 3: Legal Heir NOC & Affidavit of Disclaimer" },
+  { id: "noc-disclaimer-affidavit", label: "7. Format 3: Legal Heir NOC & Sworn Note of Disclaimer" },
   { id: "state-stamp-paper-table", label: "8. State Stamp Duty Denominations for Indemnity Bonds" },
   { id: "step-by-step-settlement-sop", label: "9. Step-by-Step SOP: Settling Bank Deceased Balances" },
   { id: "rbi-thresholds-bank-matrix", label: "10. Bank-Wise Threshold Limits for Deceased Claims" },
   { id: "common-rejection-mistakes", label: "11. Common Reasons Banks Reject Deceased Claim Bonds" },
-  { id: "practical-case-scenarios", label: "12. Real Settlement Case Studies: SBI, HDFC & PNB" },
-  { id: "institutional-profile", label: "13. Legal Review & Advocate Backing by AMA Solutions" },
+  { id: "practical-case-scenarios", label: "12. Real Deal Case Studies: SBI, HDFC & PNB" },
+  { id: "institutional-profile", label: "13. Legal Review & Lawyer Backing by AMA Solutions" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions: Bank Deceased Claims" },
-  { id: "statutory-citations", label: "15. Statutory Citations & Official Banking Circulars" },
+  { id: "statutory-citations", label: "15. Legal Citations & Official Banking Circulars" },
 ];
 
 const FAQS = [
   {
     q: "What is an Indemnity Bond for a deceased bank account claim?",
-    a: "An Indemnity Bond is a legally binding contract executed under Section 124 of the Indian Contract Act, 1872. The claiming legal heirs promise to protect and compensate the bank against any financial loss, damages, or legal expenses if another heir or third party later disputes the payout.",
+    a: "An Indemnity Bond is a legally binding contract signed under Section 124 of the Indian Contract Act, 1872. The claiming legal heirs promise to protect and compensate the bank against any financial loss, damages, or legal expenses if another heir or third party later fights the payout.",
   },
   {
-    q: "When does an Indian bank require an Indemnity Bond instead of a Succession Certificate?",
-    a: "When a depositor dies without a registered nominee or survivor clause, commercial banks allow claims on an Indemnity Bond with two solvent sureties up to board-approved threshold limits (typically ₹1 Lakh to ₹5 Lakhs). If the balance exceeds this limit or rival claims exist, banks require a court-issued Succession Certificate.",
+    q: "When does an Indian bank require an Indemnity Bond instead of a Estate Paper?",
+    a: "When a depositor dies without a filed nominee or survivor clause, shop banks allow claims on an Indemnity Bond with two solvent sureties up to board-approved threshold limits (typically ₹1 Lakh to ₹5 Lakhs). If the balance exceeds this limit or rival claims exist, banks require a court-issued Estate Paper.",
   },
   {
     q: "Who is eligible to act as a surety on a deceased depositor indemnity bond?",
@@ -75,31 +75,31 @@ const FAQS = [
   },
   {
     q: "What is the non-judicial stamp paper value required for an indemnity bond?",
-    a: "Stamp duty is governed by state stamp legislation. In Maharashtra, it is ₹500 under Article 35 of the Maharashtra Stamp Act. In Delhi, Uttar Pradesh, Tamil Nadu, and West Bengal, it is typically ₹100 under Article 34 of the Indian Stamp Act. In Karnataka, it is ₹200. The document must be executed on non-judicial stamp paper and notarized.",
+    a: "Stamp duty is governed by state stamp legislation. In Maharashtra, it is ₹500 under Article 35 of the Maharashtra Stamp Act. In Delhi, Uttar Pradesh, Tamil Nadu, and West Bengal, it is typically ₹100 under Article 34 of the Indian Stamp Act. In Karnataka, it is ₹200. The paper must be signed on non-judicial stamp paper and notarized.",
   },
   {
     q: "Does a nominee need to submit an indemnity bond to withdraw deceased funds?",
-    a: "No. Under Section 45ZA of the Banking Regulation Act, 1949 and RBI directives, payment to a valid registered nominee gives the bank a complete statutory discharge. Banks cannot legally demand an indemnity bond, surety, or succession certificate from a registered nominee unless a civil court has issued an injunction.",
+    a: "No. Under Section 45ZA of the Banking Regulation Act, 1949 and RBI directives, payment to a valid filed nominee gives the bank a complete legal discharge. Banks cannot legally demand an indemnity bond, surety, or estate paper from a filed nominee unless a civil court has issued an injunction.",
   },
   {
     q: "Can one legal heir claim the entire bank balance if other heirs sign an NOC?",
-    a: "Yes. When multiple legal heirs survive, they can execute a notarized Affidavit of Disclaimer or No Objection Certificate (NOC) relinquishing their claim in favor of one designated claimant heir. The claimant heir then submits the Indemnity Bond and receives the full payout on behalf of the family.",
+    a: "Yes. When multiple legal heirs survive, they can execute a notarized Sworn Note of Disclaimer or No Objection Paper (NOC) relinquishing their claim in favor of one designated claimant heir. The claimant heir then submits the Indemnity Bond and receives the full payout on behalf of the family.",
   },
   {
-    q: "What is the difference between an Indemnity Bond and a court Succession Certificate?",
-    a: "An Indemnity Bond is an out-of-court contractual settlement executed within days on non-judicial stamp paper with sureties. A Succession Certificate is a formal court decree issued by a civil judge under Section 372 of the Indian Succession Act, 1925, requiring 6 to 18 months, newspaper citations, and 2% to 4% ad valorem court fees.",
+    q: "What is the difference between an Indemnity Bond and a court Estate Paper?",
+    a: "An Indemnity Bond is an out-of-court contractual deal signed within days on non-judicial stamp paper with sureties. A Estate Paper is a formal court decree issued by a civil judge under Section 372 of the Indian Succession Act, 1925, requiring 6 to 18 months, newspaper citations, and 2% to 4% ad valorem court fees.",
   },
   {
     q: "Is an indemnity bond required for claiming contents of a deceased bank locker?",
-    a: "Yes. When a safe deposit locker has no registered nomination, banks require an Indemnity Bond with two sureties along with a formal inventory undertaking before opening the locker in the presence of legal heirs, bank officials, and independent witnesses.",
+    a: "Yes. When a safe deposit locker has no filed nomination, banks require an Indemnity Bond with two sureties along with a formal inventory undertaking before opening the locker in the presence of legal heirs, bank officials, and independent witnesses.",
   },
   {
     q: "What happens if an undisclosed legal heir later files a claim with the bank?",
-    a: "Under Sections 124 and 128 of the Indian Contract Act, 1872, the signing legal heirs and their sureties are jointly and severally liable. The bank can legally recover all disputed amounts, litigation expenses, and interest directly from the indemnifiers and sureties.",
+    a: "Under Sections 124 and 128 of the Indian Contract Act, 1872, the signing legal heirs and their sureties are jointly and severally liable. The bank can legally recover all disputed amounts, court fights expenses, and interest directly from the indemnifiers and sureties.",
   },
   {
     q: "How long do banks take to settle deceased claims after receiving the indemnity bond?",
-    a: "Under Reserve Bank of India circular instructions, commercial banks must settle deceased depositor claims within 15 calendar days from the date of submission of complete claim documents, including the duly stamped indemnity bond, surety affidavits, and legal heir proofs.",
+    a: "Under Reserve Bank of India circular instructions, shop banks must settle deceased depositor claims within 15 calendar days from the date of submission of complete claim papers, including the duly stamped indemnity bond, surety sworn notes, and legal heir proofs.",
   },
 ];
 
@@ -141,14 +141,14 @@ export default function IndemnityBondClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeFormatTab, setActiveFormatTab] = useState<"account" | "locker" | "noc" | "surety">("account");
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
   const [isInteractiveMode, setIsInteractiveMode] = useState<boolean>(false);
   const [stateSearch, setStateSearch] = useState<string>("");
 
-  // Interactive Live Draft Customizer State
+  // Free Live Draft Customizer State
   const [claimantName, setClaimantName] = useState<string>("Rajesh Kumar Sharma");
   const [claimantRelation, setClaimantRelation] = useState<string>("Son");
   const [claimantAddress, setClaimantAddress] = useState<string>("Flat 402, Shanti Vihar, Rohini Sector 14, New Delhi - 110085");
@@ -468,8 +468,8 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Download lawyer-vetted indemnity bond templates for settling deceased depositor bank balances and
-            lockers without a Succession Certificate. Includes two-surety guarantee clauses, legal heir NOC
-            affidavits, and state stamp paper denominations.
+            lockers without a Estate Paper. Includes two-surety guarantee clauses, legal heir NOC
+            sworn notes, and state stamp paper denominations.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -487,7 +487,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -565,7 +565,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed by Section 124 (Contract of Indemnity), Section 126 (Guarantee), and Section 128
@@ -589,15 +589,15 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Out-of-Court Settlement:</strong> If a deceased family member had no nominee on
+                    <strong>Out-of-Court Deal:</strong> If a deceased family member had no nominee on
                     their bank account, an Indemnity Bond with two sureties allows legal heirs to claim funds
-                    without spending months and thousands of rupees on a civil court Succession Certificate.
+                    without spending months and thousands of rupees on a civil court Estate Paper.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Foundation:</strong> Under Section 124 of the Indian Contract Act, 1872,
+                    <strong>Legal Foundation:</strong> Under Section 124 of the Indian Contract Act, 1872,
                     claimants legally undertake to compensate the bank for any loss if another heir later files
                     a claim. Section 128 makes sureties jointly liable.
                   </span>
@@ -605,7 +605,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>State Stamp Duty Compliance:</strong> The bond must be executed on non-judicial
+                    <strong>State Stamp Duty Compliance:</strong> The bond must be signed on non-judicial
                     stamp paper (e.g. ₹500 in Maharashtra and Rajasthan, ₹100 in Delhi and UP, ₹200 in Karnataka)
                     and attested before a Notary Public.
                   </span>
@@ -613,9 +613,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>RBI 15-Day SLA:</strong> Commercial banks are legally mandated under RBI guidelines
+                    <strong>RBI 15-Day SLA:</strong> Shop banks are legally mandated under RBI guidelines
                     to settle complete deceased claims within 15 calendar days of receiving the stamped bond and
-                    supporting heir documents.
+                    supporting heir papers.
                   </span>
                 </li>
               </ul>
@@ -650,26 +650,26 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>STATUTORY FRAMEWORK</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Indian Contract Act &amp; RBI Directives
+                1. Legal Rules: Indian Contract Act &amp; RBI Directives
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When an account holder dies without registering a nominee, their bank account is frozen.
                   Banks face a dilemma: paying money to one family member could expose the branch to lawsuits
                   if another legal heir surfaces later. To resolve this without forcing families into prolonged
-                  probate litigation, Indian banking law relies on <strong>Section 124 of the Indian Contract
+                  probate court fights, Indian banking law relies on <strong>Section 124 of the Indian Contract
                   Act, 1872</strong>.
                 </p>
                 <p>
-                  Section 124 defines a contract of indemnity as an agreement where one party promises to save
+                  Section 124 defines a contract of indemnity as an pact where one party promises to save
                   another from loss caused by the promisor or any other person. When you sign an Indemnity Bond
                   for a deceased account claim, you make an enforceable promise to reimburse the bank for any
-                  damages or legal expenses if another heir challenges the payout.
+                  damages or legal expenses if another heir fights the payout.
                 </p>
                 <p>
                   Under <strong>RBI Master Circular DBOD.No.Leg.BC.21/09.07.006/2014-15</strong>, banks must
-                  establish simplified operational procedures. The Reserve Bank directs commercial lenders not
-                  to insist on probate or succession certificates for claims up to internal board thresholds.
+                  establish simplified operational steps. The Reserve Bank directs shop lenders not
+                  to insist on probate or estate papers for claims up to internal board thresholds.
                   Instead, banks accept an Indemnity Bond with two independent solvent sureties to ensure fast
                   financial relief for surviving families.
                 </p>
@@ -686,7 +686,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 2. Claim Pathways: Nominee vs Indemnity Bond vs Probate
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Review how different deceased claim procedures compare in terms of court intervention, costs,
+                Review how different deceased claim steps compare in terms of court intervention, costs,
                 timelines, and legal risks.
               </p>
 
@@ -696,11 +696,11 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="py-3.5 px-4 font-bold">Feature</th>
-                      <th className="py-3.5 px-4 font-bold">1. Valid Nomination Registered</th>
+                      <th className="py-3.5 px-4 font-bold">1. Valid Nomination Filed</th>
                       <th className="py-3.5 px-4 font-bold bg-[#C65378] text-white">
                         2. No Nominee: Indemnity Bond
                       </th>
-                      <th className="py-3.5 px-4 font-bold">3. Succession Certificate</th>
+                      <th className="py-3.5 px-4 font-bold">3. Estate Paper</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -718,15 +718,15 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                       <td className="py-3 px-4 text-emerald-700 font-semibold bg-rose-50/30">
                         Not Required (Out of Court)
                       </td>
-                      <td className="py-3 px-4 text-rose-700 font-semibold">Mandatory Civil Court Petition</td>
+                      <td className="py-3 px-4 text-rose-700 font-semibold">Needed Civil Court Petition</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="py-3 px-4 font-bold text-slate-900">Indemnity Bond &amp; Sureties</td>
                       <td className="py-3 px-4">Strictly Prohibited by RBI</td>
                       <td className="py-3 px-4 font-semibold text-slate-900 bg-rose-50/30">
-                        Mandatory Bond + 2 Sureties
+                        Needed Bond + 2 Sureties
                       </td>
-                      <td className="py-3 px-4">Optional / Court Security Bond</td>
+                      <td className="py-3 px-4">A Choice / Court Security Bond</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="py-3 px-4 font-bold text-slate-900">Processing Time</td>
@@ -743,7 +743,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                         ₹500 to ₹1,500 (Stamp &amp; Notary)
                       </td>
                       <td className="py-3 px-4 text-rose-700">
-                        2% to 4% Court Fees + Advocate Fees
+                        2% to 4% Court Fees + Lawyer Fees
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
@@ -766,7 +766,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>INTERACTIVE DRAFT SELECTOR &amp; CUSTOMIZER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Interactive Indemnity Bond Format &amp; Clause Selector
+                3. Free Indemnity Bond Format &amp; Clause Selector
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your required template below. You can use standard bracketed placeholders or toggle
@@ -961,8 +961,8 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 4. Format 1: Bank Deceased Account Claim Indemnity Bond
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                This comprehensive format includes the Section 124 indemnity covenant, Section 128 joint and
-                several surety guarantee, court cost reimbursement clause, and notary public attestation block.
+                This full format includes the Section 124 indemnity covenant, Section 128 joint and
+                several surety guarantee, court cost reimbursement clause, and notary public witness signing block.
               </p>
 
               {/* Template Display Box */}
@@ -1026,7 +1026,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   valuer.
                 </p>
                 <p>
-                  This template contains the mandatory <strong>Inventory Undertaking</strong> and indemnifies
+                  This template contains the needed <strong>Inventory Undertaking</strong> and indemnifies
                   the bank if a missing key requires drilling or breaking open the lock.
                 </p>
               </div>
@@ -1115,7 +1115,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>FORMAT 3: HEIR DISCLAIMER &amp; NOC</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Format 3: Legal Heir NOC &amp; Affidavit of Disclaimer
+                7. Format 3: Legal Heir NOC &amp; Sworn Note of Disclaimer
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1124,7 +1124,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   Act, 1956. However, having four people jointly receive and operate a bank transfer is cumbersome.
                 </p>
                 <p>
-                  Instead, family members can execute this <strong>Affidavit-cum-No Objection Certificate (NOC)</strong>.
+                  Instead, family members can execute this <strong>Sworn Note-cum-No Objection Paper (NOC)</strong>.
                   By signing before a Notary Public, the other heirs formally relinquish their right to receive
                   the payment directly and authorize the bank to disburse the entire sum to one primary claimant.
                 </p>
@@ -1135,7 +1135,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <div className="bg-slate-900 text-white p-3.5 px-4 flex flex-wrap items-center justify-between gap-3 text-xs">
                   <div className="flex items-center gap-2 font-bold">
                     <FileCheck className="w-4 h-4 text-emerald-400" />
-                    <span>Legal Heir Affidavit-cum-NOC / Letter of Disclaimer</span>
+                    <span>Legal Heir Sworn Note-cum-NOC / Letter of Disclaimer</span>
                   </div>
                   <button
                     type="button"
@@ -1171,7 +1171,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 8. State Stamp Duty Denominations for Indemnity Bonds
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Under the Indian Stamp Act, 1899 and state amendments, an indemnity bond must be executed on
+                Under the Indian Stamp Act, 1899 and state amendments, an indemnity bond must be signed on
                 non-judicial stamp paper of the appropriate denomination. Using insufficient stamp duty renders
                 the bond inadmissible in evidence under Section 35 of the Stamp Act, causing banks to reject the claim.
               </p>
@@ -1194,7 +1194,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="py-3 px-4 font-bold">State / Territory</th>
-                      <th className="py-3 px-4 font-bold">Statutory Article</th>
+                      <th className="py-3 px-4 font-bold">Legal Article</th>
                       <th className="py-3 px-4 font-bold text-rose-200">Required Stamp Value</th>
                       <th className="py-3 px-4 font-bold">Mode of Purchase</th>
                       <th className="py-3 px-4 font-bold">Operational Guidance</th>
@@ -1230,9 +1230,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     1
                   </div>
                   <div className="space-y-1 text-xs sm:text-sm">
-                    <div className="font-extrabold text-slate-900">Step 1: Obtain Official Death Certificate</div>
+                    <div className="font-extrabold text-slate-900">Step 1: Obtain Official Death Paper</div>
                     <p className="text-slate-600 leading-relaxed">
-                      Collect the digitized Death Certificate issued by the Municipal Corporation or Registrar of
+                      Collect the digitized Death Paper issued by the City City Board or Registrar of
                       Births and Deaths. Banks verify the QR code online before initiating deceased claim files.
                     </p>
                   </div>
@@ -1245,7 +1245,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   <div className="space-y-1 text-xs sm:text-sm">
                     <div className="font-extrabold text-slate-900">Step 2: Collect Bank Deceased Claim Kit</div>
                     <p className="text-slate-600 leading-relaxed">
-                      Visit the home branch and obtain the standard Deceased Claim Application (Annexure-A). Ask
+                      Visit the home branch and obtain the standard Deceased Claim Form (Annexure-A). Ask
                       the branch manager for the maximum threshold balance allowed under their board policy.
                     </p>
                   </div>
@@ -1302,8 +1302,8 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 10. Bank-Wise Threshold Limits for Deceased Claims
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Under RBI rules, each commercial bank fixes its own threshold limit for settling claims without
-                a Succession Certificate. Balances below these limits are settled solely on an Indemnity Bond.
+                Under RBI rules, each shop bank fixes its own threshold limit for settling claims without
+                a Estate Paper. Balances below these limits are settled solely on an Indemnity Bond.
               </p>
 
               {/* Bank Thresholds Table */}
@@ -1342,12 +1342,12 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-1.5">
                   <div className="font-extrabold text-rose-700 flex items-center gap-1.5">
                     <AlertTriangle className="w-4 h-4" />
-                    <span>Name Mismatch on Death Certificate</span>
+                    <span>Name Mismatch on Death Paper</span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    If the name on the passbook is &ldquo;Satish K. Sharma&rdquo; but the municipal death
-                    certificate reads &ldquo;Satish Kumar Sharma&rdquo;, the bank will reject the claim unless an
-                    alias affidavit is enclosed.
+                    If the name on the passbook is &ldquo;Satish K. Sharma&rdquo; but the city death
+                    paper reads &ldquo;Satish Kumar Sharma&rdquo;, the bank will reject the claim unless an
+                    alias sworn note is enclosed.
                   </p>
                 </div>
 
@@ -1357,8 +1357,8 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     <span>Sureties Being Related Class-I Heirs</span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    Claimants often have their brother or sister sign as a surety. Banks immediately reject this
-                    because a co-heir cannot indemnify their own inheritance under Section 126.
+                    Claimants often have their brother or sister sign as a surety. Banks right away reject this
+                    because a co-heir cannot indemnify their own estate under Section 126.
                   </p>
                 </div>
 
@@ -1369,7 +1369,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   </div>
                   <p className="text-slate-600 leading-relaxed">
                     Printing a bond on a ₹100 stamp in Maharashtra or Rajasthan (where the law mandates ₹500)
-                    renders the document legally inadmissible under state stamp acts.
+                    renders the paper legally inadmissible under state stamp acts.
                   </p>
                 </div>
 
@@ -1379,7 +1379,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     <span>Missing Second Party on e-Stamp</span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    When purchasing e-stamp certificates, buyers often leave the second party blank. Bank legal
+                    When purchasing e-stamp papers, buyers often leave the second party blank. Bank legal
                     cells require the second party to explicitly name the bank and branch.
                   </p>
                 </div>
@@ -1393,7 +1393,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>PRACTICAL CASE STUDIES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Real Settlement Case Studies: SBI, HDFC &amp; PNB
+                12. Real Deal Case Studies: SBI, HDFC &amp; PNB
               </h3>
               <div className="space-y-4 text-xs sm:text-sm">
                 <div className="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-2">
@@ -1404,10 +1404,10 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     </span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    A father passed away intestate in Delhi leaving ₹4.20 Lakhs in an SBI savings account with no
-                    nominee. The bank initially asked the son for a succession certificate. The family cited the
+                    A father passed away no-Will in Delhi leaving ₹4.20 Lakhs in an SBI savings account with no
+                    nominee. The bank initially asked the son for a estate paper. The family cited the
                     RBI Master Circular and submitted our Two-Surety Indemnity Bond on ₹100 e-stamp paper with NOC
-                    affidavits from the mother and sister. SBI approved and disbursed the funds within 12 days.
+                    sworn notes from the mother and sister. SBI approved and disbursed the funds within 12 days.
                   </p>
                 </div>
 
@@ -1420,7 +1420,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   </div>
                   <p className="text-slate-600 leading-relaxed">
                     A mother held a locker in Mumbai without nomination. The key was safely in the house. The legal
-                    heirs executed Format 2 on ₹500 Maharashtra stamp paper with two colleague sureties. An HDFC
+                    heirs signed Format 2 on ₹500 Maharashtra stamp paper with two colleague sureties. An HDFC
                     custodian and empanelled valuer opened the locker, cataloged 18 items of jewelry, and released
                     the gold to the daughter without any court orders.
                   </p>
@@ -1430,13 +1430,13 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   <div className="flex items-center justify-between">
                     <div className="font-extrabold text-slate-900">Case Study 3: PNB Balances Exceeding ₹5 Lakhs</div>
                     <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold">
-                      Succession Petition
+                      Estate Petition
                     </span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
                     When a depositor left ₹18 Lakhs across multiple fixed deposits in PNB Lucknow, the balance
                     exceeded the bank&apos;s ₹5 Lakh board threshold. While the indemnity bond could not be accepted
-                    due to the high amount, AMA Legal Solutions filed an expedited Section 372 Succession Certificate
+                    due to the high amount, AMA Legal Solutions filed an expedited Section 372 Estate Paper
                     petition before the District Judge, securing release within 6 months.
                   </p>
                 </div>
@@ -1453,9 +1453,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 Track Post-Death Timelines or Trace Unclaimed Family Deposits
               </h3>
               <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
-                Settling bank accounts is only the first step. Use our free interactive tools to track mandatory
+                Settling bank accounts is only the first step. Use our free free tools to track needed
                 30-day legal compliances, search the RBI UDGAM portal for unclaimed deposits, or calculate capital
-                gains tax on inherited property.
+                gains tax on inherited asset.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <Link
@@ -1477,7 +1477,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/15 text-white hover:bg-white/20 text-xs font-bold transition-colors"
                 >
                   <Coins className="w-3.5 h-3.5 text-amber-300" />
-                  <span>Inherited Property Tax Calculator</span>
+                  <span>Inherited Asset Tax Tool</span>
                 </Link>
               </div>
             </div>
@@ -1489,7 +1489,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>LEGAL REVIEW &amp; ADVOCATE BACKING</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Legal Review &amp; Advocate Backing by AMA Solutions
+                13. Legal Review &amp; Lawyer Backing by AMA Solutions
               </h3>
               <div className="p-5 sm:p-6 bg-white rounded-3xl border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -1498,7 +1498,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   </div>
                   <div>
                     <div className="font-extrabold text-slate-900 text-base sm:text-lg">
-                      Vetted by AMA Legal Solutions Succession Desk
+                      Vetted by AMA Legal Solutions Estate Desk
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
                       Supreme Court &amp; High Court Estate Litigators
@@ -1506,17 +1506,17 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Every template and statutory provision on this page has been reviewed by senior succession
-                  advocates at AMA Legal Solutions. We represent families across India in contested bank account
-                  disputes, court Succession Certificate petitions, and high-value locker releases.
+                  Every template and legal rule on this page has been reviewed by senior estate
+                  lawyers at AMA Legal Solutions. We represent families across India in contested bank account
+                  fights, court Estate Paper petitions, and high-value locker releases.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
-                  <span className="font-bold text-slate-700">Verified Legal Standards • 100% Statutory Adherence</span>
+                  <span className="font-bold text-slate-700">Checked Legal Standards • 100% Legal Adherence</span>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-1 font-bold text-[#C65378] hover:underline"
                   >
-                    <span>Schedule Legal Consultation</span>
+                    <span>Schedule Legal Talk</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1576,7 +1576,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <span>STATUTORY CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Citations &amp; Official Banking Circulars
+                15. Legal Citations &amp; Official Banking Circulars
               </h3>
               <div className="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
@@ -1595,8 +1595,8 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   </li>
                   <li>
                     <strong>Reserve Bank of India Master Circular:</strong> DBOD.No.Leg.BC.21/09.07.006/2014-15
-                    dated July 1, 2014 on &ldquo;Settlement of Claims in respect of Deceased Depositors — Simplified
-                    Procedure&rdquo;.
+                    dated July 1, 2014 on &ldquo;Deal of Claims in respect of Deceased Depositors — Simplified
+                    Step&rdquo;.
                   </li>
                   <li>
                     <strong>Indian Stamp Act, 1899 &amp; State Stamp Acts:</strong> Article 34 / 35 (Stamp duty
@@ -1614,17 +1614,39 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                   <Link href="/services/succession-certificate" className="hover:underline flex items-center gap-1">
-                    <span>Succession Certificate Services</span>
+                    <span>Estate Paper Services</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                   <Link href="/services/will-registration" className="hover:underline flex items-center gap-1">
-                    <span>Will Registration in India</span>
+                    <span>Will Filing in India</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1637,21 +1659,21 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary law, bank deceased depositor claim disputes, High Court
-                succession certificate petitions, and estate transmission.
+                Expert in Indian testamentary law, bank deceased depositor claim fights, High Court
+                estate paper petitions, and estate transfer.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1668,7 +1690,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   Never Leave Your Family Trapped in Bank Formalities
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A registered Will and up-to-date bank nominations ensure your family can instantly access
+                  A filed Will and up-to-date bank nominations ensure your family can instantly access
                   your savings, fixed deposits, and lockers without needing court petitions or indemnity bonds.
                 </p>
                 <button
@@ -1694,14 +1716,14 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                   Facing Delays or High-Balance Bank Claims?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  If the bank refuses your indemnity bond or balances exceed the threshold limit, our succession
-                  advocates assist with expedited Succession Certificates and legal notices pan-India.
+                  If the bank refuses your indemnity bond or balances exceed the threshold limit, our estate
+                  lawyers assist with expedited Estate Papers and legal notices pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1729,7 +1751,7 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
                       <strong>Zero Hidden Phone Calls:</strong> Direct online access to lawyer-vetted formats and
-                      expert consultation.
+                      expert talk.
                     </span>
                   </li>
                 </ul>

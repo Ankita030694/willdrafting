@@ -48,60 +48,60 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-mandate", label: "1. Statutory Mandate: Section 63(c) & 281 ISA" },
-  { id: "bsa-evidence-rules", label: "2. BSA 2023 Section 67: Mandatory Witness Proof" },
+  { id: "statutory-mandate", label: "1. Legal Mandate: Section 63(c) & 281 ISA" },
+  { id: "bsa-evidence-rules", label: "2. BSA 2023 Section 67: Needed Witness Proof" },
   { id: "landmark-precedents", label: "3. Landmark Precedents: Janki Narayan to Iyengar" },
   { id: "dual-template-pack", label: "4. Dual Template Pack: Court & Contemporaneous" },
   { id: "comparison-table", label: "5. Comparison Table: Probate vs Contemporaneous" },
-  { id: "interactive-tool", label: "6. Interactive Witness Competency Diagnostic Tool" },
-  { id: "step-by-step-sop", label: "7. Step-by-Step SOP: Execution to Court Filing" },
+  { id: "interactive-tool", label: "6. Free Witness Competency Diagnostic Tool" },
+  { id: "step-by-step-sop", label: "7. Step-by-Step SOP: Signing to Court Filing" },
   { id: "critical-defects", label: "8. Critical Legal Defects Causing Rejection" },
   { id: "deceased-witness-protocol", label: "9. Deceased or Hostile Witnesses Protocol" },
   { id: "institutional-profile", label: "10. Professional Legal Backing: AMA Legal" },
   { id: "frequently-asked-questions", label: "11. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "12. Statutory Citations & High Court Rules" },
+  { id: "statutory-citations", label: "12. Legal Citations & High Court Rules" },
 ];
 
 const FAQS = [
   {
-    q: "What is an affidavit of an attesting witness for probate?",
-    a: "An affidavit of an attesting witness is a formal sworn statement required by testamentary courts. Under Section 281 of the Indian Succession Act, 1925, every petition for probate or letters of administration must be verified by at least one attesting witness. The witness deposes under oath that the testator executed the Will in their presence while possessing a sound and disposing mind.",
+    q: "What is an sworn note of an signing witness for probate?",
+    a: "An sworn note of an signing witness is a formal sworn statement required by Will courts. Under Section 281 of the Indian Succession Act, 1925, every petition for probate or letters of care must be checked by at least one signing witness. The witness deposes under oath that the Will maker signed the Will in their presence while possessing a sound and disposing mind.",
   },
   {
-    q: "Why is a contemporaneous witness affidavit executed at the time of Will signing?",
-    a: "A contemporaneous witness affidavit is signed on the very day the Will is executed. It records that both witnesses were physically present together, saw the testator sign of free will, and observed the testator in a sound state of mind. It serves as permanent preventative evidence, protecting the estate against future allegations of dementia, fraud, or coercion decades later.",
+    q: "Why is a contemporaneous witness sworn note signed at the time of Will signing?",
+    a: "A contemporaneous witness sworn note is signed on the very day the Will is signed. It records that both witnesses were physically present together, saw the Will maker sign of free will, and observed the Will maker in a sound state of mind. It serves as permanent preventative evidence, protecting the estate against future allegations of dementia, fraud, or coercion decades later.",
   },
   {
-    q: "Does a registered Will exempt the propounder from calling an attesting witness?",
-    a: "No. The Supreme Court in Ramesh Verma v. Lajwanti (2017) and Babu Singh v. Ram Sahai (2008) ruled that registration before the Sub-Registrar does not dispense with witness proof. Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), a Will cannot be admitted in evidence until at least one attesting witness is called to prove execution.",
+    q: "Does a filed Will exempt the propounder from calling an signing witness?",
+    a: "No. The Supreme Court in Ramesh Verma v. Lajwanti (2017) and Babu Singh v. Ram Sahai (2008) ruled that filing before the SRO does not dispense with witness proof. Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), a Will cannot be admitted in evidence until at least one signing witness is called to prove signing.",
   },
   {
     q: "What did the Supreme Court establish in Janki Narayan Bhoir v. Narayan Namdeo Kadam?",
-    a: "In Janki Narayan Bhoir (2003) 2 SCC 91, the Supreme Court established that to prove a Will under Section 68 of the Evidence Act, the single witness examined must depose that the testator signed in the presence of both witnesses and that both witnesses signed in the presence of the testator. If the witness cannot depose to the execution by the co-witness, Section 68 is not satisfied.",
+    a: "In Janki Narayan Bhoir (2003) 2 SCC 91, the Supreme Court established that to prove a Will under Section 68 of the Evidence Act, the single witness examined must depose that the Will maker signed in the presence of both witnesses and that both witnesses signed in the presence of the Will maker. If the witness cannot depose to the signing by the co-witness, Section 68 is not satisfied.",
   },
   {
-    q: "How is a Will proved in court if both attesting witnesses have passed away?",
-    a: "Under Section 68 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 69 of the Indian Evidence Act), if all attesting witnesses are deceased or untraceable, the propounder must prove two things: (1) that the signature of at least one attesting witness is in their handwriting, and (2) that the signature of the testator is in the testator's genuine handwriting.",
+    q: "How is a Will proved in court if both signing witnesses have passed away?",
+    a: "Under Section 68 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 69 of the Indian Evidence Act), if all signing witnesses are deceased or untraceable, the propounder must prove two things: (1) that the signature of at least one signing witness is in their handwriting, and (2) that the signature of the Will maker is in the Will maker's genuine handwriting.",
   },
   {
-    q: "Can a beneficiary under the Will sign as an attesting witness?",
-    a: "No, a beneficiary should never act as an attesting witness. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness or their spouse is void for Christians, Parsis, and Jews. For Hindus, Sikhs, Buddhists, and Jains, while Section 67 is not statutory, courts treat any Will attested by a beneficiary with extreme suspicion.",
+    q: "Can a heir under the Will sign as an signing witness?",
+    a: "No, a heir should never act as an signing witness. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an signing witness or their spouse is void for Christians, Parsis, and Jews. For Hindus, Sikhs, Buddhists, and Jains, while Section 67 is not legal, courts treat any Will attested by a heir with extreme suspicion.",
   },
   {
-    q: "Can an executor of the Will sign the attesting witness affidavit?",
-    a: "Yes. Under Section 68 of the Indian Succession Act, 1925, an executor is legally competent to act as an attesting witness, provided the executor does not receive a beneficial legacy or personal bequest under the Will. If the executor only receives reasonable administrative reimbursement, their attestation remains legally sound.",
+    q: "Can an executor of the Will sign the signing witness sworn note?",
+    a: "Yes. Under Section 68 of the Indian Succession Act, 1925, an executor is legally competent to act as an signing witness, provided the executor does not receive a beneficial legacy or personal bequest under the Will. If the executor only receives reasonable office reimbursement, their witness signing remains legally sound.",
   },
   {
-    q: "Before which authority must the probate attesting witness affidavit be sworn?",
-    a: "For probate petitions in High Courts (such as Bombay, Calcutta, or Madras) or District Courts, the witness affidavit must be sworn before an Oath Commissioner appointed by the High Court, the Court Registrar, or an authorized Notary Public. For contemporaneous preventative affidavits, execution before an Executive Magistrate or Notary Public with photographic proof is recommended.",
+    q: "Before which office must the probate signing witness sworn note be sworn?",
+    a: "For probate petitions in High Courts (such as Bombay, Calcutta, or Madras) or District Courts, the witness sworn note must be sworn before an Oath Commissioner appointed by the High Court, the Court Registrar, or an authorized Notary Public. For contemporaneous preventative sworn notes, signing before an Executive Magistrate or Notary Public with photographic proof is recommended.",
   },
   {
-    q: "What is animus attestandi and why is it essential for attestation?",
-    a: "Animus attestandi is the specific legal intention to attest the signature of the testator on the Will. In K. Laxmanan v. Thekkayil Padmini (2009), the Supreme Court clarified that a person who signs merely as a scribe, draftsperson, or registering identifier does not automatically become an attesting witness unless they signed with the conscious intention of witnessing execution.",
+    q: "What is animus attestandi and why is it essential for witness signing?",
+    a: "Animus attestandi is the specific legal intention to attest the signature of the Will maker on the Will. In K. Laxmanan v. Thekkayil Padmini (2009), the Supreme Court clarified that a person who signs merely as a scribe, draftsperson, or registering identifier does not automatically become an signing witness unless they signed with the conscious intention of witnessing signing.",
   },
   {
-    q: "What happens if an attesting witness turns hostile in court?",
-    a: "If an attesting witness turns hostile or denies execution, the propounder can invoke Section 70 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 71 of the Evidence Act). Under this section, the execution of the Will can be proved by other evidence, such as the testimony of the scribe, the registering officer, the attending doctor, or contemporaneous affidavits.",
+    q: "What happens if an signing witness turns hostile in court?",
+    a: "If an signing witness turns hostile or denies signing, the propounder can invoke Section 70 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 71 of the Evidence Act). Under this section, the signing of the Will can be proved by other evidence, such as the testimony of the scribe, the registering officer, the attending doctor, or contemporaneous sworn notes.",
   },
 ];
 
@@ -260,7 +260,7 @@ export default function AttestingWitnessAffidavitClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-mandate");
+  const [activeId, setActiveId] = useState<string>("legal-mandate");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState<"contemporaneous" | "probate_court" | "deceased_witness" | "oath_verification">("contemporaneous");
   const [copiedState, setCopiedState] = useState<string | null>(null);
@@ -393,7 +393,7 @@ export default function AttestingWitnessAffidavitClient() {
               Templates
             </Link>
             <span>/</span>
-            <span className="text-white/90 font-medium">Attesting Witness Affidavit</span>
+            <span className="text-white/90 font-medium">Signing Witness Sworn Note</span>
           </nav>
 
           {/* Statutory Pill Badge */}
@@ -404,12 +404,12 @@ export default function AttestingWitnessAffidavitClient() {
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Affidavit of Attesting Witness for Probate of Will Format
+            Sworn Note of Signing Witness for Probate of Will Format
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download legally validated affidavits for attesting witnesses under <strong>Section 281 of the Indian Succession Act</strong> and <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023</strong>. Includes both court probate filings and preventative contemporaneous execution drafts.
+            Download legally validated sworn notes for signing witnesses under <strong>Section 281 of the Indian Succession Act</strong> and <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023</strong>. Includes both court probate filings and preventative contemporaneous signing drafts.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -419,7 +419,7 @@ export default function AttestingWitnessAffidavitClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4" />
-              <span>Download Dual Affidavit Pack</span>
+              <span>Download Dual Sworn Note Pack</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -427,7 +427,7 @@ export default function AttestingWitnessAffidavitClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -506,10 +506,10 @@ export default function AttestingWitnessAffidavitClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Governance</span>
+                <span>Legal Governance</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Sections 63(c), 67, 68, 280, and 281 of the Indian Succession Act, 1925, read with Sections 67, 68, and 70 of the Bharatiya Sakshya Adhiniyam, 2023, and High Court Testamentary Rules.
+                Governed under Sections 63(c), 67, 68, 280, and 281 of the Indian Succession Act, 1925, read with Sections 67, 68, and 70 of the Bharatiya Sakshya Adhiniyam, 2023, and High Court Will Rules.
               </p>
             </div>
           </aside>
@@ -534,12 +534,12 @@ export default function AttestingWitnessAffidavitClient() {
                 <div className="flex items-center gap-2">
                   <PenTool className="w-4 h-4 text-[#C65378]" />
                   <span className="font-semibold text-slate-800">
-                    Official Judicial Affidavit Template Pack for Indian Testamentary Courts
+                    Official Judicial Sworn Note Template Pack for Indian Testamentary Courts
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[11px] font-bold text-[#5F7E75]">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>High Court Testamentary Bench Compliant</span>
+                  <span>High Court Will Bench Compliant</span>
                 </div>
               </div>
             </div>
@@ -554,25 +554,25 @@ export default function AttestingWitnessAffidavitClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory Section 281 Verification:</strong> Under Section 281 of the Indian Succession Act, 1925, no court will register or issue probate without a verification declaration executed by at least one attesting witness to the Will.
+                    <strong>Needed Section 281 Check:</strong> Under Section 281 of the Indian Succession Act, 1925, no court will register or issue probate without a check declaration signed by at least one signing witness to the Will.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registration Does Not Prove Execution:</strong> Registering a Will before the Sub-Registrar does not eliminate the requirement to produce an attesting witness in court. Under Section 67 BSA 2023 (former Section 68 IEA), witness proof is mandatory.
+                    <strong>Filing Does Not Prove Signing:</strong> Registering a Will before the SRO does not eliminate the rule to produce an signing witness in court. Under Section 67 BSA 2023 (former Section 68 IEA), witness proof is needed.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>The Janki Narayan Precedent:</strong> Under the Supreme Court ruling in <em>Janki Narayan Bhoir (2003)</em>, the deponent must expressly testify that the testator signed before both witnesses and that both witnesses signed in the testator's presence.
+                    <strong>The Janki Narayan Precedent:</strong> Under the Supreme Court ruling in <em>Janki Narayan Bhoir (2003)</em>, the deponent must expressly testify that the Will maker signed before both witnesses and that both witnesses signed in the Will maker's presence.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Dual Protection Strategy:</strong> Executing a contemporaneous witness affidavit at the time of Will drafting permanently preserves vital evidence of mental fitness and simultaneous presence, thwarting future challenges.
+                    <strong>Dual Protection Strategy:</strong> Signing a contemporaneous witness sworn note at the time of Will drafting permanently preserves vital evidence of mental fitness and simultaneous presence, thwarting future fights.
                   </span>
                 </li>
               </ul>
@@ -585,17 +585,17 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Mandate: Section 63(c) &amp; Section 281 ISA
+                1. Legal Mandate: Section 63(c) &amp; Section 281 ISA
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A Will is a solemn legal instrument that speaks only after the death of the person who wrote it. Because the testator is no longer alive to testify to their intentions, Indian law erects stringent statutory safeguards around the execution and proof of Wills.
+                  A Will is a solemn legal instrument that speaks only after the death of the person who wrote it. Because the Will maker is no longer alive to testify to their intentions, Indian law erects stringent legal safeguards around the signing and proof of Wills.
                 </p>
                 <p>
-                  Under <strong>Section 63(c) of the Indian Succession Act, 1925</strong>, every non-privileged Will must be attested by two or more witnesses. Each witness must either see the testator sign or affix their mark, or receive a personal acknowledgment of signature directly from the testator. Crucially, each witness must sign the Will in the physical presence of the testator.
+                  Under <strong>Section 63(c) of the Indian Succession Act, 1925</strong>, every non-privileged Will must be attested by two or more witnesses. Each witness must either see the Will maker sign or affix their mark, or receive a personal acknowledgment of signature directly from the Will maker. Crucially, each witness must sign the Will in the physical presence of the Will maker.
                 </p>
                 <p>
-                  When the executor applies for a grant of probate or letters of administration with the Will annexed, <strong>Section 281 of the Act</strong> mandates that the probate petition itself must be formally verified by at least one attesting witness. Without this verified declaration, the testamentary registry of the High Court or District Court will reject the petition at the threshold stage.
+                  When the executor applies for a grant of probate or letters of care with the Will annexed, <strong>Section 281 of the Act</strong> mandates that the probate petition itself must be formally checked by at least one signing witness. Without this checked declaration, the Will registry of the High Court or District Court will reject the petition at the threshold stage.
                 </p>
               </div>
             </section>
@@ -607,20 +607,20 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>EVIDENCE ACT &amp; BHARATIYA SAKSHYA ADHINIYAM</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. BSA 2023 Section 67: Why Registered Wills Need Witnesses
+                2. BSA 2023 Section 67: Why Filed Wills Need Witnesses
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many families believe that registering a Will at the Sub-Registrar Office (SRO) makes it self-proving and immune to legal challenge. This is a hazardous misconception.
+                  Many families believe that registering a Will at the SRO office (SRO) makes it self-proving and immune to legal fight. This is a hazardous misconception.
                 </p>
                 <p>
-                  Under <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced Section 68 of the Indian Evidence Act, 1872, any document required by law to be attested cannot be accepted as evidence in court until at least one attesting witness is called to prove execution.
+                  Under <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced Section 68 of the Indian Evidence Act, 1872, any paper required by law to be attested cannot be accepted as evidence in court until at least one signing witness is called to prove signing.
                 </p>
                 <p>
-                  While Section 67 BSA provides an exemption for registered deeds where execution is not specifically denied, the statute contains an express, non-negotiable exception: <em>&ldquo;Provided that it shall not be necessary to call an attesting witness in proof of the execution of any document, not being a will, which has been registered...&rdquo;</em>
+                  While Section 67 BSA provides an exemption for filed deeds where signing is not mainly denied, the statute contains an express, non-negotiable exception: <em>&ldquo;Provided that it shall not be necessary to call an signing witness in proof of the signing of any paper, not being a will, which has been filed...&rdquo;</em>
                 </p>
                 <p>
-                  This means a registered Will receives <strong>zero statutory exemption</strong>. Whether your Will is registered in Delhi, Mumbai, Bengaluru, or Chennai, the propounder must produce an attesting witness who can depose to the execution under oath.
+                  This means a filed Will receives <strong>zero legal exemption</strong>. Whether your Will is filed in Delhi, Mumbai, Bengaluru, or Chennai, the propounder must produce an signing witness who can depose to the signing under oath.
                 </p>
               </div>
             </section>
@@ -636,7 +636,7 @@ export default function AttestingWitnessAffidavitClient() {
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The Supreme Court of India has established authoritative jurisprudence defining what an attesting witness affidavit must contain:
+                  The Supreme Court of India has established authoritative jurisprudence defining what an signing witness sworn note must contain:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -644,10 +644,10 @@ export default function AttestingWitnessAffidavitClient() {
                       Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91
                     </div>
                     <div className="text-xs font-black text-slate-900">
-                      The Dual Execution Deposition Standard
+                      The Dual Signing Deposition Standard
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Supreme Court held that examining one attesting witness satisfies the law only if that witness deposes not merely to their own signature, but also confirms that the testator signed before both witnesses and that the co-witness signed in the testator&rsquo;s presence. If the witness cannot depose to the co-witness&rsquo;s presence, the Will fails.
+                      The Supreme Court held that examining one signing witness satisfies the law only if that witness deposes not merely to their own signature, but also confirms that the Will maker signed before both witnesses and that the co-witness signed in the Will maker&rsquo;s presence. If the witness cannot depose to the co-witness&rsquo;s presence, the Will fails.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -658,7 +658,7 @@ export default function AttestingWitnessAffidavitClient() {
                       Dispelling Suspicious Circumstances
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The historic constitutional bench ruled that the propounder must prove sound testamentary mind and dispel all suspicious circumstances (such as unnatural dispositions or active participation of the beneficiary). A detailed witness affidavit is the primary defense against such suspicions.
+                      The historic constitutional bench ruled that the propounder must prove sound Will mind and dispel all suspicious circumstances (such as unnatural gifts or active participation of the heir). A detailed witness sworn note is the primary defense against such suspicions.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -666,10 +666,10 @@ export default function AttestingWitnessAffidavitClient() {
                       K. Laxmanan v. Thekkayil Padmini (2009) 1 SCC 354
                     </div>
                     <div className="text-xs font-black text-slate-900">
-                      Requirement of Animus Attestandi
+                      Rule of Animus Attestandi
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Supreme Court established that an attesting witness must sign with <em>animus attestandi</em> (the conscious intention to attest the execution). A scribe, advocate draftsperson, or Sub-Registrar identifier who signs for administrative identification cannot be treated as an attesting witness unless animus is proven.
+                      The Supreme Court established that an signing witness must sign with <em>animus attestandi</em> (the conscious intention to attest the signing). A scribe, lawyer draftsperson, or SRO identifier who signs for office ID cannot be treated as an signing witness unless animus is proven.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -677,10 +677,10 @@ export default function AttestingWitnessAffidavitClient() {
                       Ramesh Verma v. Lajwanti (2017) 1 SCC 257
                     </div>
                     <div className="text-xs font-black text-slate-900">
-                      Registration Does Not Prove Attestation
+                      Filing Does Not Prove Witness Signing
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Affirmed that Section 68 of the Evidence Act (Section 67 BSA 2023) is mandatory even for registered Wills. The Court reiterated that the endorsement of the registering officer cannot substitute the substantive deposition of an attesting witness.
+                      Affirmed that Section 68 of the Evidence Act (Section 67 BSA 2023) is needed even for filed Wills. The Court reiterated that the endorsement of the registering officer cannot substitute the substantive deposition of an signing witness.
                     </p>
                   </div>
                 </div>
@@ -697,7 +697,7 @@ export default function AttestingWitnessAffidavitClient() {
                 4. Dual Template Pack: Court Probate &amp; Contemporaneous
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select between the <strong>Contemporaneous Preventative Affidavit</strong> (to execute alongside your Will today) and the <strong>High Court / District Court Probate Petition Affidavit</strong> (for filing under Section 281 ISA post-demise).
+                Select between the <strong>Contemporaneous Preventative Sworn Note</strong> (to execute alongside your Will today) and the <strong>High Court / District Court Probate Petition Sworn Note</strong> (for filing under Section 281 ISA post-demise).
               </p>
 
               {/* Template Tabs Container */}
@@ -714,7 +714,7 @@ export default function AttestingWitnessAffidavitClient() {
                     }`}
                   >
                     <PenTool className="w-3.5 h-3.5" />
-                    <span>Contemporaneous Affidavit</span>
+                    <span>Contemporaneous Sworn Note</span>
                   </button>
                   <button
                     type="button"
@@ -726,7 +726,7 @@ export default function AttestingWitnessAffidavitClient() {
                     }`}
                   >
                     <Gavel className="w-3.5 h-3.5" />
-                    <span>Probate Court Affidavit (Sec 281)</span>
+                    <span>Probate Court Sworn Note (Sec 281)</span>
                   </button>
                   <button
                     type="button"
@@ -750,7 +750,7 @@ export default function AttestingWitnessAffidavitClient() {
                     }`}
                   >
                     <Scroll className="w-3.5 h-3.5" />
-                    <span>Statutory Oath Endorsement</span>
+                    <span>Legal Oath Endorsement</span>
                   </button>
                 </div>
 
@@ -764,7 +764,7 @@ export default function AttestingWitnessAffidavitClient() {
                             TEMPLATE 1: CONTEMPORANEOUS WITNESS AFFIDAVIT
                           </div>
                           <div className="text-[11px] text-slate-600">
-                            Execute before Notary Public on the day of Will signing. Safeguards against future dementia or coercion challenges.
+                            Execute before Notary Public on the day of Will signing. Safeguards against future dementia or coercion fights.
                           </div>
                         </div>
                         <button
@@ -834,7 +834,7 @@ export default function AttestingWitnessAffidavitClient() {
                             TEMPLATE 3: DECEASED WITNESS HANDWRITING AFFIDAVIT (BSA § 68)
                           </div>
                           <div className="text-[11px] text-slate-600">
-                            Used when both attesting witnesses have passed away or cannot be traced. Proves handwriting under BSA Section 68.
+                            Used when both signing witnesses have passed away or cannot be traced. Proves handwriting under BSA Section 68.
                           </div>
                         </div>
                         <button
@@ -869,7 +869,7 @@ export default function AttestingWitnessAffidavitClient() {
                             TEMPLATE 4: STATUTORY VERIFICATION &amp; OATH COMMISSIONER CLAUSE
                           </div>
                           <div className="text-[11px] text-slate-600">
-                            Formal attestation endorsement clause under the Oaths Act, 1969 and High Court Original Side Rules.
+                            Formal witness signing endorsement clause under the Oaths Act, 1969 and High Court Original Side Rules.
                           </div>
                         </div>
                         <button
@@ -906,10 +906,10 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Comparison Table: Probate vs Contemporaneous Affidavit
+                5. Comparison Table: Probate vs Contemporaneous Sworn Note
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding the legal distinction between a contemporaneous witness affidavit and a post-death probate court affidavit is critical for estate planning.
+                Understanding the legal distinction between a contemporaneous witness sworn note and a post-death probate court sworn note is critical for estate planning.
               </p>
               
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 shadow-2xs bg-white">
@@ -917,40 +917,40 @@ export default function AttestingWitnessAffidavitClient() {
                   <thead className="bg-slate-50 text-slate-900 font-bold uppercase text-[11px] tracking-wider">
                     <tr>
                       <th className="py-3.5 px-4">Legal Parameter</th>
-                      <th className="py-3.5 px-4 text-[#C65378]">Contemporaneous Affidavit</th>
-                      <th className="py-3.5 px-4 text-slate-900">Section 281 Court Affidavit</th>
-                      <th className="py-3.5 px-4 text-[#5F7E75]">Sub-Registrar SRO Endorsement</th>
+                      <th className="py-3.5 px-4 text-[#C65378]">Contemporaneous Sworn Note</th>
+                      <th className="py-3.5 px-4 text-slate-900">Section 281 Court Sworn Note</th>
+                      <th className="py-3.5 px-4 text-[#5F7E75]">SRO SRO Endorsement</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/50">
-                      <td className="py-3 px-4 font-semibold text-slate-900">Timing of Execution</td>
+                      <td className="py-3 px-4 font-semibold text-slate-900">Timing of Signing</td>
                       <td className="py-3 px-4">Same day as Will signing</td>
                       <td className="py-3 px-4">Post-death (during probate petition)</td>
-                      <td className="py-3 px-4">Day of SRO registration</td>
+                      <td className="py-3 px-4">Day of SRO filing</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
-                      <td className="py-3 px-4 font-semibold text-slate-900">Statutory Governing Law</td>
+                      <td className="py-3 px-4 font-semibold text-slate-900">Legal Governing Law</td>
                       <td className="py-3 px-4">Indian Oaths Act, 1969 &amp; Sec 63 ISA</td>
                       <td className="py-3 px-4">Section 281 Indian Succession Act</td>
-                      <td className="py-3 px-4">Section 58 Registration Act, 1908</td>
+                      <td className="py-3 px-4">Section 58 Filing Act, 1908</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-3 px-4 font-semibold text-slate-900">Primary Evidential Purpose</td>
                       <td className="py-3 px-4">Freezes evidence of sound mind &amp; voluntariness</td>
-                      <td className="py-3 px-4">Proves execution to obtain court probate grant</td>
+                      <td className="py-3 px-4">Proves signing to obtain court probate grant</td>
                       <td className="py-3 px-4">Confirms identity of presenter to Registrar</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
-                      <td className="py-3 px-4 font-semibold text-slate-900">Authority Before Whom Sworn</td>
+                      <td className="py-3 px-4 font-semibold text-slate-900">Office Before Whom Sworn</td>
                       <td className="py-3 px-4">Executive Magistrate / Notary Public</td>
                       <td className="py-3 px-4">High Court Oath Commissioner / Registrar</td>
-                      <td className="py-3 px-4">Sub-Registrar of Assurances</td>
+                      <td className="py-3 px-4">SRO of Assurances</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-3 px-4 font-semibold text-slate-900">If Witness Dies Decades Later</td>
                       <td className="py-3 px-4 text-emerald-700 font-semibold">Admissible under Sec 26 BSA (former Sec 32 IEA)</td>
-                      <td className="py-3 px-4 text-rose-700">Cannot be executed; must invoke Sec 68 BSA</td>
+                      <td className="py-3 px-4 text-rose-700">Cannot be signed; must invoke Sec 68 BSA</td>
                       <td className="py-3 px-4 text-amber-700">Does not prove animus attestandi in court</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
@@ -971,10 +971,10 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>INTERACTIVE DIAGNOSTIC TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Interactive Witness Competency &amp; Legal Eligibility Tool
+                6. Free Witness Competency &amp; Legal Eligibility Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Test your attesting witnesses against Section 63(c) ISA, Section 67 BSA, and Supreme Court rulings to identify potential legal vulnerabilities before court submission.
+                Test your signing witnesses against Section 63(c) ISA, Section 67 BSA, and Supreme Court rulings to identify potential legal risks before court submission.
               </p>
 
               {/* Tool Widget Container */}
@@ -1048,7 +1048,7 @@ export default function AttestingWitnessAffidavitClient() {
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Lock className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Witness Beneficiary Check</span>
+                      <span>Witness Heir Check</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -1071,7 +1071,7 @@ export default function AttestingWitnessAffidavitClient() {
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Beneficiary / Spouse
+                        Heir / Spouse
                       </button>
                     </div>
                   </div>
@@ -1112,7 +1112,7 @@ export default function AttestingWitnessAffidavitClient() {
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Medical Capacity Certificate</span>
+                      <span>Medical Capacity Paper</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -1188,7 +1188,7 @@ export default function AttestingWitnessAffidavitClient() {
                     <div className="space-y-1 text-xs">
                       <div className="font-bold text-rose-900 flex items-center gap-1">
                         <AlertTriangle className="w-3.5 h-3.5 text-rose-600" />
-                        <span>Identified Statutory Risks:</span>
+                        <span>Identified Legal Risks:</span>
                       </div>
                       <ul className="list-disc pl-5 space-y-0.5 text-slate-700">
                         {issues.map((issue, idx) => (
@@ -1202,7 +1202,7 @@ export default function AttestingWitnessAffidavitClient() {
                     <div className="space-y-1 text-xs">
                       <div className="font-bold text-emerald-900 flex items-center gap-1">
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                        <span>Verified Legal Safeguards:</span>
+                        <span>Checked Legal Safeguards:</span>
                       </div>
                       <ul className="list-disc pl-5 space-y-0.5 text-slate-700">
                         {strengths.map((strength, idx) => (
@@ -1214,7 +1214,7 @@ export default function AttestingWitnessAffidavitClient() {
 
                   {!witnessAlive && (
                     <div className="p-3 bg-amber-100/70 border border-amber-300 rounded-xl text-xs text-amber-900 leading-relaxed">
-                      <strong>Statutory Recovery Procedure:</strong> Because witnesses are deceased, invoke Section 68 of the Bharatiya Sakshya Adhiniyam, 2023. File an affidavit proving the handwriting of at least one witness and the genuine signature of the testator (use Template 3 above).
+                      <strong>Legal Recovery Step:</strong> Because witnesses are deceased, invoke Section 68 of the Bharatiya Sakshya Adhiniyam, 2023. File an sworn note proving the handwriting of at least one witness and the genuine signature of the Will maker (use Template 3 above).
                     </div>
                   )}
                 </div>
@@ -1222,7 +1222,7 @@ export default function AttestingWitnessAffidavitClient() {
                 {/* Contextual Link to Tools */}
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <div className="space-y-0.5">
-                    <div className="font-bold text-slate-900">Planning the Transfer of Inherited Property?</div>
+                    <div className="font-bold text-slate-900">Planning the Transfer of Inherited Asset?</div>
                     <div className="text-slate-600">
                       Calculate long-term capital gains tax, Section 49(1) cost basis, and Budget 2024 grandfathering exemptions.
                     </div>
@@ -1232,7 +1232,7 @@ export default function AttestingWitnessAffidavitClient() {
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-colors shrink-0"
                   >
                     <Calculator className="w-3.5 h-3.5" />
-                    <span>Open Tax Calculator</span>
+                    <span>Open Tax Tool</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1246,7 +1246,7 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Step-by-Step SOP: Execution, Swearing &amp; Court Filing
+                7. Step-by-Step SOP: Signing, Swearing &amp; Court Filing
               </h3>
               <div className="space-y-4">
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1254,10 +1254,10 @@ export default function AttestingWitnessAffidavitClient() {
                     <div className="w-6 h-6 rounded-full bg-[#C65378] text-white flex items-center justify-center text-xs font-extrabold">
                       1
                     </div>
-                    <span>Pre-Execution Medical Evaluation</span>
+                    <span>Pre-Signing Medical Evaluation</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-8">
-                    Arrange for a Registered Medical Practitioner (MBBS/MD) to examine the testator within 24 to 48 hours of execution. The physician must issue a certificate certifying that the testator is oriented in time, place, and person, and possesses testamentary disposing capacity.
+                    Arrange for a Filed Medical Practitioner (MBBS/MD) to examine the Will maker within 24 to 48 hours of signing. The physician must issue a paper certifying that the Will maker is oriented in time, place, and person, and possesses Will disposing capacity.
                   </p>
                 </div>
 
@@ -1269,7 +1269,7 @@ export default function AttestingWitnessAffidavitClient() {
                     <span>Simultaneous Three-Party Signing</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-8">
-                    Gather the testator and both independent attesting witnesses in the same room. Ensure the testator reads and initials each page and executes the final signature. Both witnesses must observe the signing, and immediately sign as witnesses in the testator&rsquo;s presence and in view of each other.
+                    Gather the Will maker and both independent signing witnesses in the same room. Ensure the Will maker reads and initials each page and executes the final signature. Both witnesses must observe the signing, and right away sign as witnesses in the Will maker&rsquo;s presence and in view of each other.
                   </p>
                 </div>
 
@@ -1278,10 +1278,10 @@ export default function AttestingWitnessAffidavitClient() {
                     <div className="w-6 h-6 rounded-full bg-[#C65378] text-white flex items-center justify-center text-xs font-extrabold">
                       3
                     </div>
-                    <span>Executing the Contemporaneous Affidavit</span>
+                    <span>Signing the Contemporaneous Sworn Note</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-8">
-                    Have both attesting witnesses execute the Contemporaneous Affidavit (Template 1) on non-judicial stamp paper before a Notary Public or Executive Magistrate. Attach the medical certificate, passport photos, and government photo IDs as annexures.
+                    Have both signing witnesses execute the Contemporaneous Sworn Note (Template 1) on non-judicial stamp paper before a Notary Public or Executive Magistrate. Attach the medical paper, passport photos, and government photo IDs as annexures.
                   </p>
                 </div>
 
@@ -1290,10 +1290,10 @@ export default function AttestingWitnessAffidavitClient() {
                     <div className="w-6 h-6 rounded-full bg-[#C65378] text-white flex items-center justify-center text-xs font-extrabold">
                       4
                     </div>
-                    <span>Optional Sub-Registrar Registration</span>
+                    <span>A Choice SRO Filing</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-8">
-                    Present the original Will at the Sub-Registrar Office having jurisdiction over the testator&rsquo;s residence. Both witnesses should appear as identifiers to register the document under Section 18(e) of the Registration Act, 1908.
+                    Present the original Will at the SRO office having area over the Will maker&rsquo;s residence. Both witnesses should appear as identifiers to register the paper under Section 18(e) of the Filing Act, 1908.
                   </p>
                 </div>
 
@@ -1305,7 +1305,7 @@ export default function AttestingWitnessAffidavitClient() {
                     <span>Post-Death Section 281 Probate Filing</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed pl-8">
-                    Upon the demise of the testator, the executor files a probate petition in the competent court. Have at least one attesting witness execute the Section 281 affidavit (Template 2) before the Court Registrar or an authorized High Court Oath Commissioner.
+                    Upon the demise of the Will maker, the executor files a probate petition in the competent court. Have at least one signing witness execute the Section 281 sworn note (Template 2) before the Court Registrar or an authorized High Court Oath Commissioner.
                   </p>
                 </div>
               </div>
@@ -1318,7 +1318,7 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>JUDICIAL RISK PREVENTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Critical Legal Defects Causing Affidavit Rejection
+                8. Critical Legal Defects Causing Sworn Note Rejection
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-rose-200 shadow-2xs space-y-2">
@@ -1327,17 +1327,17 @@ export default function AttestingWitnessAffidavitClient() {
                     <span>Omission of Co-Witness Deposition</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under the <em>Janki Narayan Bhoir</em> doctrine, if the deponent states only &ldquo;I signed in the testator&rsquo;s presence&rdquo; without expressly stating that the co-witness also signed in the testator&rsquo;s presence, the court cannot grant probate.
+                    Under the <em>Janki Narayan Bhoir</em> doctrine, if the deponent states only &ldquo;I signed in the Will maker&rsquo;s presence&rdquo; without expressly stating that the co-witness also signed in the Will maker&rsquo;s presence, the court cannot grant probate.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-rose-200 shadow-2xs space-y-2">
                   <div className="text-xs font-bold text-rose-700 flex items-center gap-1.5">
                     <X className="w-4 h-4 text-rose-600" />
-                    <span>Beneficiary Acting as Witness</span>
+                    <span>Heir Acting as Witness</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67 ISA, any bequest to an attesting witness is completely void for Christians and Parsis. For Hindus, courts view beneficiary attestation as a conclusive badge of undue influence.
+                    Under Section 67 ISA, any bequest to an signing witness is completely void for Christians and Parsis. For Hindus, courts view heir witness signing as a strong badge of undue influence.
                   </p>
                 </div>
 
@@ -1347,17 +1347,17 @@ export default function AttestingWitnessAffidavitClient() {
                     <span>Signing Without Animus Attestandi</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In <em>K. Laxmanan (2009)</em>, the Supreme Court held that signing merely as a typist, scribe, or Sub-Registrar identifier does not count as attestation unless the witness signed specifically to attest execution.
+                    In <em>K. Laxmanan (2009)</em>, the Supreme Court held that signing merely as a typist, scribe, or SRO identifier does not count as witness signing unless the witness signed mainly to attest signing.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-rose-200 shadow-2xs space-y-2">
                   <div className="text-xs font-bold text-rose-700 flex items-center gap-1.5">
                     <X className="w-4 h-4 text-rose-600" />
-                    <span>Defective Verification Clause</span>
+                    <span>Defective Check Clause</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Failing to verify the affidavit under Section 280 ISA and the Oaths Act, or stating vague verification such as &ldquo;true to the best of my information and belief&rdquo; instead of &ldquo;true to my personal knowledge&rdquo;, leads to dismissal.
+                    Failing to verify the sworn note under Section 280 ISA and the Oaths Act, or stating vague check such as &ldquo;true to the best of my information and belief&rdquo; instead of &ldquo;true to my personal knowledge&rdquo;, leads to dismissal.
                   </p>
                 </div>
               </div>
@@ -1374,23 +1374,23 @@ export default function AttestingWitnessAffidavitClient() {
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Because Wills often surface decades after execution, it is very common for both attesting witnesses to have passed away or become incapacitated by the time probate is sought.
+                  Because Wills often surface decades after signing, it is very common for both signing witnesses to have passed away or become incapacitated by the time probate is sought.
                 </p>
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/90 space-y-2">
                   <div className="font-bold text-slate-900 text-sm">
                     Section 68 BSA 2023 (Former Section 69 Indian Evidence Act)
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    When no attesting witness can be found or produced, the law permits secondary proof. The propounder must prove through an acquaintance affidavit (Template 3) that:
+                    When no signing witness can be found or produced, the law permits secondary proof. The propounder must prove through an acquaintance sworn note (Template 3) that:
                   </p>
                   <ul className="list-disc pl-5 text-xs text-slate-700 space-y-1">
-                    <li>The attestation of at least one witness is in their genuine handwriting.</li>
-                    <li>The signature of the testator is in the testator&rsquo;s authentic handwriting.</li>
-                    <li>Official certified death certificates of both witnesses are filed on record.</li>
+                    <li>The witness signing of at least one witness is in their genuine handwriting.</li>
+                    <li>The signature of the Will maker is in the Will maker&rsquo;s authentic handwriting.</li>
+                    <li>Official certified death papers of both witnesses are filed on record.</li>
                   </ul>
                 </div>
                 <p>
-                  If an attesting witness turns hostile in court and colludes with disgruntled legal heirs to deny execution, Section 70 of BSA 2023 (former Section 71 IEA) empowers the propounder to prove execution through other evidence, including the testimony of the scribe, attending doctor, and contemporaneous notarized affidavits.
+                  If an signing witness turns hostile in court and colludes with disgruntled legal heirs to deny signing, Section 70 of BSA 2023 (former Section 71 IEA) empowers the propounder to prove signing through other evidence, including the testimony of the scribe, attending doctor, and contemporaneous notarized sworn notes.
                 </p>
               </div>
             </section>
@@ -1411,27 +1411,27 @@ export default function AttestingWitnessAffidavitClient() {
                   </div>
                   <div>
                     <div className="text-base sm:text-lg font-extrabold text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel • AMA Legal Solutions
+                      Senior Estate Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
-                      Testamentary Litigator &amp; High Court Probate Specialist
+                      Will Litigator &amp; High Court Probate Expert
                     </div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  The testamentary formats and statutory protocols published on WillDrafting are curated by Advocate Anuj Anand Malik and the succession litigation team at AMA Legal Solutions. With extensive experience before High Courts and testamentary benches across India, our counsel have handled complex probate disputes, hostile witness cross-examinations, and Section 281 ISA verifications.
+                  The Will formats and legal protocols published on WillDrafting are curated by Lawyer Anuj Anand Malik and the estate court fights team at AMA Legal Solutions. With extensive experience before High Courts and Will benches across India, our counsel have handled complex probate fights, hostile witness cross-examinations, and Section 281 ISA verifications.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-center text-xs font-bold text-slate-700 border-t border-slate-100">
                   <div className="p-2.5 rounded-xl bg-slate-50">
                     <div className="text-[#C65378] text-base font-extrabold">100%</div>
-                    <div className="text-[11px] text-slate-500 uppercase mt-0.5">Statutory Compliance</div>
+                    <div className="text-[11px] text-slate-500 uppercase mt-0.5">Legal Compliance</div>
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50">
                     <div className="text-[#C65378] text-base font-extrabold">Section 281</div>
-                    <div className="text-[11px] text-slate-500 uppercase mt-0.5">Verified Wording</div>
+                    <div className="text-[11px] text-slate-500 uppercase mt-0.5">Checked Wording</div>
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 col-span-2 sm:col-span-1">
                     <div className="text-[#C65378] text-base font-extrabold">High Court</div>
@@ -1448,7 +1448,7 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Frequently Asked Questions: Attesting Witness Rules
+                11. Frequently Asked Questions: Signing Witness Rules
               </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
@@ -1488,14 +1488,14 @@ export default function AttestingWitnessAffidavitClient() {
                 <span>STATUTORY CITATIONS &amp; HIGH COURT RULES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Statutory Citations &amp; High Court Procedural Rules
+                12. Legal Citations &amp; High Court Procedural Rules
               </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 shadow-2xs bg-white">
                 <table className="w-full text-left text-xs text-slate-700 divide-y divide-slate-200">
                   <thead className="bg-slate-50 text-slate-900 font-bold uppercase text-[11px] tracking-wider">
                     <tr>
                       <th className="py-3 px-4">Statute / Rule</th>
-                      <th className="py-3 px-4">Section / Provision</th>
+                      <th className="py-3 px-4">Section / Rule</th>
                       <th className="py-3 px-4">Subject Matter</th>
                     </tr>
                   </thead>
@@ -1503,39 +1503,61 @@ export default function AttestingWitnessAffidavitClient() {
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Indian Succession Act, 1925</td>
                       <td className="py-2.5 px-4">Section 63(c)</td>
-                      <td className="py-2.5 px-4">Mandatory attestation by two or more witnesses</td>
+                      <td className="py-2.5 px-4">Needed witness signing by two or more witnesses</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Indian Succession Act, 1925</td>
                       <td className="py-2.5 px-4">Section 281</td>
-                      <td className="py-2.5 px-4">Verification of petition for probate by attesting witness</td>
+                      <td className="py-2.5 px-4">Check of petition for probate by signing witness</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Bharatiya Sakshya Adhiniyam, 2023</td>
                       <td className="py-2.5 px-4">Section 67 (Ex-Sec 68 IEA)</td>
-                      <td className="py-2.5 px-4">Proof of execution of document required by law to be attested</td>
+                      <td className="py-2.5 px-4">Proof of signing of paper required by law to be attested</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Bharatiya Sakshya Adhiniyam, 2023</td>
                       <td className="py-2.5 px-4">Section 68 (Ex-Sec 69 IEA)</td>
-                      <td className="py-2.5 px-4">Proof where no attesting witness can be found (deceased witnesses)</td>
+                      <td className="py-2.5 px-4">Proof where no signing witness can be found (deceased witnesses)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Bombay High Court Rules</td>
                       <td className="py-2.5 px-4">Rules 374 to 400</td>
-                      <td className="py-2.5 px-4">Rules for Testamentary and Intestate Petitions &amp; Affidavits</td>
+                      <td className="py-2.5 px-4">Rules for Will and No-Will Petitions &amp; Affidavits</td>
                     </tr>
                     <tr className="hover:bg-slate-50/50">
                       <td className="py-2.5 px-4 font-semibold text-slate-900">Delhi High Court (Original Side) Rules</td>
                       <td className="py-2.5 px-4">Chapter XXIX</td>
-                      <td className="py-2.5 px-4">Testamentary and Intestate Jurisdiction verification standards</td>
+                      <td className="py-2.5 px-4">Will and No-Will Area check standards</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Strictly matching Capital Gains)
@@ -1548,20 +1570,20 @@ export default function AttestingWitnessAffidavitClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section 281 witness verifications, and contested estate defense pan-India.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section 281 witness verifications, and contested estate defense pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1575,10 +1597,10 @@ export default function AttestingWitnessAffidavitClient() {
                   <span>PREVENT FUTURE WITNESS CHALLENGES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Draft a Challenge-Proof Will with Inbuilt Attestation Safeguards
+                  Draft a Fight-Proof Will with Inbuilt Witness Signing Safeguards
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Our guided digital engine includes statutory attestation clauses, doctor fitness annexures, and Section 63(c) dual-witness protocols.
+                  Our guided digital engine includes legal witness signing clauses, doctor fitness annexures, and Section 63(c) dual-witness protocols.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1603,14 +1625,14 @@ export default function AttestingWitnessAffidavitClient() {
                   Filing a Probate Petition or Facing Hostile Witnesses?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our testamentary litigators handle High Court Section 281 petitions, deceased witness handwriting proof under BSA Section 68, and caveat defense pan-India.
+                  Our Will litigators handle High Court Section 281 petitions, deceased witness handwriting proof under BSA Section 68, and caveat defense pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PenTool className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1618,7 +1640,7 @@ export default function AttestingWitnessAffidavitClient() {
               <div className="rounded-3xl bg-white border border-slate-200/90 shadow-xs p-5 space-y-3">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#172228] uppercase tracking-wider">
                   <FileCheck className="w-4 h-4 text-[#5F7E75]" />
-                  <span>5 Rules of Legal Attestation</span>
+                  <span>5 Rules of Legal Witness Signing</span>
                 </div>
                 <ul className="space-y-2 text-xs text-slate-600">
                   <li className="flex items-start gap-2">
@@ -1627,11 +1649,11 @@ export default function AttestingWitnessAffidavitClient() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Witnesses must not be beneficiaries or their spouses</span>
+                    <span>Witnesses must not be heirs or their spouses</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Both must see testator sign and sign in testator&rsquo;s sight</span>
+                    <span>Both must see Will maker sign and sign in Will maker&rsquo;s sight</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
@@ -1639,7 +1661,7 @@ export default function AttestingWitnessAffidavitClient() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Attach contemporaneous medical fitness certificate</span>
+                    <span>Attach contemporaneous medical fitness paper</span>
                   </li>
                 </ul>
               </div>
@@ -1647,7 +1669,7 @@ export default function AttestingWitnessAffidavitClient() {
               {/* CARD 5: RELATED LEGAL SERVICES */}
               <div className="rounded-3xl bg-slate-50 border border-slate-200/90 p-5 space-y-2.5 text-xs">
                 <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                  Testamentary Services
+                  Will Services
                 </div>
                 <div className="space-y-1.5">
                   <Link
@@ -1660,7 +1682,7 @@ export default function AttestingWitnessAffidavitClient() {
                     href="/services/will-registration"
                     className="block p-2 rounded-xl bg-white hover:bg-rose-50/50 border border-slate-200/80 transition-colors font-medium text-slate-800"
                   >
-                    Sub-Registrar Will Registration →
+                    SRO Will Filing →
                   </Link>
                   <Link
                     href="/templates"

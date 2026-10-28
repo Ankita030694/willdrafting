@@ -346,19 +346,19 @@ const STATE_RULES: Record<string, StateRule> = {
 
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. What is Probate Court Fee?" },
-  { id: "interactive-calculator", label: "2. Interactive Court Fee Calculator" },
+  { id: "interactive-calculator", label: "2. Free Court Fee Tool" },
   { id: "state-slabs-and-caps", label: "3. State Ad Valorem Slabs & Caps" },
   { id: "citation-and-valuation-costs", label: "4. Citation & Collector Valuations" },
   { id: "high-court-jurisdiction", label: "5. High Court vs District Court" },
   { id: "uncontested-vs-contested", label: "6. Uncontested vs Contested Timelines" },
-  { id: "probate-vs-succession-cert", label: "7. Probate vs Succession Certificate" },
+  { id: "probate-vs-succession-cert", label: "7. Probate vs Estate Paper" },
   { id: "state-comparison-table", label: "8. State-by-State Fee Comparison" },
   { id: "step-by-step-sop", label: "9. Step-by-Step Probate Filing SOP" },
   { id: "practical-case-studies", label: "10. Real Case Studies: Mumbai & Delhi" },
   { id: "legal-templates-and-checklist", label: "11. Schedule III Form & Checklist" },
-  { id: "institutional-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "judicial-precedents", label: "14. Precedents & Statutory Citations" },
+  { id: "judicial-precedents", label: "14. Precedents & Legal Citations" },
 ];
 
 const FAQS = [
@@ -371,12 +371,12 @@ const FAQS = [
     a: "Yes. Under the Bombay Court Fees Act, 1959 (Article 11 Proviso), the court fee is strictly capped at Rs 75,000. Even if an estate is worth Rs 50 Crore or Rs 500 Crore, you never pay more than Rs 75,000 in court fees in Maharashtra courts.",
   },
   {
-    q: "Is probate mandatory in Delhi, Bengaluru, or other non-presidential cities?",
-    a: "No. Under Section 57 and Section 213 of the Indian Succession Act, probate is compulsory only in Mumbai, Kolkata, and Chennai. The Supreme Court in Kanta Yadav (2019) confirmed that probate is optional in Delhi, Bengaluru, and other cities unless a dispute arises.",
+    q: "Is probate needed in Delhi, Bengaluru, or other non-presidential cities?",
+    a: "No. Under Section 57 and Section 213 of the Indian Succession Act, probate is needed only in Mumbai, Kolkata, and Chennai. The Supreme Court in Kanta Yadav (2019) confirmed that probate is a choice in Delhi, Bengaluru, and other cities unless a fight arises.",
   },
   {
-    q: "What is the difference between Probate and Letters of Administration?",
-    a: "Probate is granted only to an executor named in a Will under Section 222. Letters of Administration are granted when there is no Will, or when the Will does not name an executor. Both processes give legal authority to transfer assets, but probate requires an existing Will.",
+    q: "What is the difference between Probate and Letters of Care?",
+    a: "Probate is granted only to an executor named in a Will under Section 222. Letters of Care are granted when there is no Will, or when the Will does not name an executor. Both processes give legal office to transfer assets, but probate requires an existing Will.",
   },
   {
     q: "What are the newspaper citation costs for probate in India?",
@@ -384,7 +384,7 @@ const FAQS = [
   },
   {
     q: "How long does it take to obtain an uncontested probate in India?",
-    a: "An uncontested probate usually takes 6 to 12 months in District Courts. In High Courts like Bombay or Calcutta, it takes about 8 to 14 months. This includes checking papers, publishing notices, waiting 30 days for objections, and getting the Collector valuation report.",
+    a: "An uncontested probate usually takes 6 to 12 months in District Courts. In High Courts like Bombay or Calcutta, it takes about 8 to 14 months. This includes checking papers, publishing notices, waiting 30 days for objections, and getting the Collector price check report.",
   },
   {
     q: "What happens to the timeline and costs if a probate petition is contested?",
@@ -409,12 +409,12 @@ export default function ProbateFeeCalculatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedSchedule, setCopiedSchedule] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [selectedState, setSelectedState] = useState<string>("maharashtra");
   const [petitionType, setPetitionType] = useState<"probate" | "loa_with_will" | "loa_intestate">("probate");
   const [litigationStatus, setLitigationStatus] = useState<"uncontested" | "contested">("uncontested");
@@ -529,12 +529,12 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Probate Court Fee &amp; Timeline Calculator India
+            Probate Court Fee &amp; Timeline Tool India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Instantly calculate state-wise probate court fees, statutory caps (Mumbai ₹75,000 cap vs
+            Instantly calculate state-wise probate court fees, legal caps (Mumbai ₹75,000 cap vs
             Delhi 4% uncapped), newspaper citation expenses, and realistic High Court procedural
             timelines under the Court Fees Act, 1870.
           </p>
@@ -554,7 +554,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -632,11 +632,11 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 57, 213, 218, 222, 276, 283 &amp; 295 of the Indian
-                Succession Act, 1925 read with the Court Fees Act, 1870 Schedule I Art. 11 and state
+                Estate Act, 1925 read with the Court Fees Act, 1870 Schedule I Art. 11 and state
                 amendment acts.
               </p>
             </div>
@@ -671,14 +671,14 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Delhi 4% Uncapped Rate:</strong> Delhi courts charge a flat 4% fee with no cap.
-                    A Rs 5 Crore property costs Rs 20,00,000 in court fees.
+                    A Rs 5 Crore asset costs Rs 20,00,000 in court fees.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Where Probate is Needed:</strong> Probate is mandatory only in Mumbai, Kolkata,
-                    and Chennai under Section 57 and Section 213. In Delhi or Bengaluru, it is optional.
+                    <strong>Where Probate is Needed:</strong> Probate is needed only in Mumbai, Kolkata,
+                    and Chennai under Section 57 and Section 213. In Delhi or Bengaluru, it is a choice.
                   </span>
                 </li>
               </ul>
@@ -691,25 +691,25 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Framework: Indian Probate &amp; Letters of Admin
+                1. Legal Framework: Indian Probate &amp; Letters of Admin
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Probate is a court order that proves a Will is genuine. It gives the executor legal power to
                   distribute assets. In India, rules for probate come under <strong>Part IX of the Indian
-                  Succession Act, 1925</strong>. Under Section 222, only the executor named in the Will can
+                  Estate Act, 1925</strong>. Under Section 222, only the executor named in the Will can
                   apply for probate.
                 </p>
                 <p>
-                  Under <strong>Section 57 and Section 213</strong> of the Act, probate is compulsory only in
+                  Under <strong>Section 57 and Section 213</strong> of the Act, probate is needed only in
                   three cities. These are <em>Mumbai, Kolkata, and Chennai</em>. This rule applies if the Will
-                  was signed in these cities, or if the property is located there.
+                  was signed in these cities, or if the asset is located there.
                 </p>
                 <p>
-                  In other cities like Delhi, Bengaluru, or Lucknow, probate is optional. The Supreme Court
+                  In other cities like Delhi, Bengaluru, or Lucknow, probate is a choice. The Supreme Court
                   confirmed this in <em>Clarence Pais (2001)</em> and <em>Kanta Yadav (2019)</em>. You do not
                   need probate to claim your share outside these three cities. But banks or housing societies
-                  may still ask for it if family members raise a dispute.
+                  may still ask for it if family members raise a fight.
                 </p>
               </div>
             </section>
@@ -721,11 +721,11 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>INTERACTIVE COURT FEE TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Probate Court Fee &amp; Timeline Calculator
+                2. Free Probate Court Fee &amp; Timeline Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your state, enter the asset valuations and allowable deductions, and choose your
-                litigation posture to compute exact ad-valorem court fees, statutory caps, publication
+                court fights posture to compute exact ad-valorem court fees, legal caps, publication
                 expenses, and realistic court timelines.
               </p>
 
@@ -737,7 +737,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="space-y-1.5 sm:col-span-2 lg:col-span-1">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Court Jurisdiction (State)</span>
+                      <span>Court Area (State)</span>
                     </label>
                     <select
                       value={selectedState}
@@ -760,7 +760,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <FileSignature className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Testamentary Proceeding</span>
+                      <span>Will Proceeding</span>
                     </label>
                     <select
                       value={petitionType}
@@ -770,8 +770,8 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       className="w-full py-2.5 px-3 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-900 focus:outline-hidden focus:ring-2 focus:ring-[#C65378]"
                     >
                       <option value="probate">Probate (Will with Named Executor)</option>
-                      <option value="loa_with_will">Letters of Administration (Will Annexed)</option>
-                      <option value="loa_intestate">Letters of Administration (Intestate - No Will)</option>
+                      <option value="loa_with_will">Letters of Care (Will Annexed)</option>
+                      <option value="loa_intestate">Letters of Care (No-Will - No Will)</option>
                     </select>
                     <div className="text-[11px] text-slate-500">
                       {petitionType === "probate"
@@ -786,7 +786,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Gavel className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Family Litigation Posture</span>
+                      <span>Family Court Fights Posture</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -825,7 +825,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-start gap-2.5">
                     <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong>Mandatory Probate Jurisdiction:</strong> In {activeRule.shortName}, probate
+                      <strong>Needed Probate Area:</strong> In {activeRule.shortName}, probate
                       or Letters of Administration is legally compulsory under Section 57(a) &amp; Section
                       213 of the Indian Succession Act for Wills executed here or covering immovable
                       property in the presidential city.
@@ -835,7 +835,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong>Optional Jurisdiction (Kanta Yadav Precedent):</strong> In{" "}
+                      <strong>A Choice Area (Kanta Yadav Precedent):</strong> In{" "}
                       {activeRule.shortName}, probate is legally optional for Hindus, Sikhs, Buddhists, and
                       Jains under Section 57(c). Filing is required only if title is disputed or
                       authorities demand formal court validation.
@@ -848,11 +848,11 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   {/* Gross Immovable Property Valuation */}
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between text-xs font-bold text-slate-800">
-                      <span>Immovable Assets (₹)</span>
+                      <span>Land Assets (₹)</span>
                       <span className="text-[#C65378] font-black">{formatINR(immovableValue)}</span>
                     </div>
                     <p className="text-[11px] text-slate-500">
-                      Circle rate / Ready Reckoner value of flats, plots, commercial shops.
+                      Circle rate / Ready Reckoner value of flats, plots, shop shops.
                     </p>
                     <input
                       type="number"
@@ -879,7 +879,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   {/* Gross Movable Assets Valuation */}
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between text-xs font-bold text-slate-800">
-                      <span>Movable Assets (₹)</span>
+                      <span>Cash Assets (₹)</span>
                       <span className="text-[#C65378] font-black">{formatINR(movableValue)}</span>
                     </div>
                     <p className="text-[11px] text-slate-500">
@@ -946,7 +946,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 {/* Reset & Quick Helper */}
                 <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
                   <span className="text-slate-500">
-                    Statutory Rule: <strong>{activeRule.statutoryBasis}</strong>
+                    Legal Rule: <strong>{activeRule.statutoryBasis}</strong>
                   </span>
                   <button
                     type="button"
@@ -1013,7 +1013,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
                       <div className="text-[11px] font-bold text-white/70 uppercase tracking-wider flex items-center gap-1">
                         <Layers className="w-3 h-3 text-[#C65378]" />
-                        <span>Total Statutory Cost</span>
+                        <span>Total Legal Cost</span>
                       </div>
                       <div className="text-2xl font-extrabold text-rose-300">
                         {formatINR(totalProbateExpenseEst)}
@@ -1044,7 +1044,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <div className="flex items-center gap-2.5">
                         <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
                         <div>
-                          <strong>Huge Statutory Cap Relief:</strong> In {activeRule.shortName}, the
+                          <strong>Huge Legal Cap Relief:</strong> In {activeRule.shortName}, the
                           uncapped ad-valorem fee would have been <strong>{formatINR(uncappedFee)}</strong>.
                           The statutory ceiling of ₹75,000 saves the estate{" "}
                           <strong>{formatINR(capSavings)}</strong>!
@@ -1061,8 +1061,8 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                           <strong>High Uncapped Fee Warning:</strong> Delhi does not cap probate court
                           fees. On an estate of {formatINR(netAssessableEstate)}, you are paying{" "}
                           <strong>{formatINR(courtFeePayable)}</strong> (4%). If the Will is uncontested
-                          and all heirs consent, consider exploring a registered Family Settlement Deed or
-                          title mutation without probate where legally feasible.
+                          and all heirs consent, consider exploring a filed Family Deal Deed or
+                          title name change without probate where legally feasible.
                         </div>
                       </div>
                     </div>
@@ -1078,7 +1078,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                         <div className="font-extrabold text-white">Weeks 1 to 6</div>
                         <div className="text-white/70 text-[11px] mt-0.5">
-                          Petition drafting, Schedule III valuation affidavits &amp; registry scrutiny.
+                          Petition drafting, Schedule III price check sworn notes &amp; registry scrutiny.
                         </div>
                       </div>
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10">
@@ -1090,13 +1090,13 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                         <div className="font-extrabold text-white">Weeks 13 to 22</div>
                         <div className="text-white/70 text-[11px] mt-0.5">
-                          30-day public caveat window &amp; Section 19-H Collector valuation report.
+                          30-day public caveat window &amp; Section 19-H Collector price check report.
                         </div>
                       </div>
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                         <div className="font-extrabold text-white">Weeks 23 to {activeRule.uncontestedMonthsMax * 4}</div>
                         <div className="text-white/70 text-[11px] mt-0.5">
-                          Attesting witness evidence, court fee deposit &amp; parchment grant delivery.
+                          Signing witness evidence, court fee deposit &amp; parchment grant delivery.
                         </div>
                       </div>
                     </div>
@@ -1133,7 +1133,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>STATE SLABS &amp; CEILINGS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. State-Wise Ad Valorem Court Fee Slabs &amp; Statutory Caps
+                3. State-Wise Ad Valorem Court Fee Slabs &amp; Legal Caps
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1152,7 +1152,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Governed under Schedule I, Article 11 of the Bombay Court Fees Act, 1959. Slabs
                       scale from 2% to 7.5% on estates above ₹3,00,000, but the fee is strictly capped at
-                      ₹75,000 under the statutory proviso inserted by Maharashtra Act No. 34 of 1994.
+                      ₹75,000 under the legal proviso inserted by Maharashtra Act No. 34 of 1994.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
@@ -1165,7 +1165,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Governed under the Court Fees Act, 1870 as applicable to Delhi. The rate is a flat 4%
                       ad-valorem on estates exceeding ₹50,000 with no maximum ceiling. On a ₹10 Crore
-                      property, the fee is ₹40,00,000.
+                      asset, the fee is ₹40,00,000.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
@@ -1189,7 +1189,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       </span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Governed under the Karnataka Court Fees and Suits Valuation Act, 1958. Levies 5% on
+                      Governed under the Karnataka Court Fees and Suits Price Check Act, 1958. Levies 5% on
                       estates between ₹1 Lakh and ₹5 Lakhs, and up to 5.5% to 6% on excess amounts without
                       a statewide cap.
                     </p>
@@ -1205,7 +1205,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>PROCEDURAL DISBURSEMENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Citation Publication &amp; Collector Valuation Expenses
+                4. Citation Publication &amp; Collector Price Check Expenses
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1226,7 +1226,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200 space-y-1.5">
                     <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                      <span>Collector Property Check (Section 19-H)</span>
+                      <span>Collector Asset Check (Section 19-H)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       The court sends a notice to the local Collector or Tehsildar under Section 19-H. The
@@ -1254,13 +1254,13 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>PECUNIARY JURISDICTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. High Court vs District Court: Jurisdiction &amp; Filing
+                5. High Court vs District Court: Area &amp; Filing
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Where do you file your probate case? Under Section 264 of the Indian Succession Act, you
                   usually file before the <strong>District Judge</strong>. But in big cities like Mumbai and
-                  Kolkata, you file directly in the <strong>High Court</strong> if the property value is high:
+                  Kolkata, you file directly in the <strong>High Court</strong> if the asset value is high:
                 </p>
                 <div className="overflow-x-auto rounded-2xl border border-slate-200/90 bg-white">
                   <table className="w-full text-xs text-left text-slate-700">
@@ -1299,7 +1299,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Calcutta High Court</td>
-                        <td className="py-3 px-4">Kolkata Municipal Limits (Original Side)</td>
+                        <td className="py-3 px-4">Kolkata City Limits (Original Side)</td>
                         <td className="py-3 px-4">Estates exceeding ₹1 Crore</td>
                         <td className="py-3 px-4">9 to 16 Months</td>
                       </tr>
@@ -1330,13 +1330,13 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <span>UNCONTESTED PROBATE (6 TO 12 MONTHS)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If all legal heirs agree and give no-objection affidavits, the case moves smoothly:
+                      If all legal heirs agree and give no-objection sworn notes, the case moves smoothly:
                     </p>
                     <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                       <li>The court checks your papers in 4 to 6 weeks.</li>
                       <li>Notices go to heirs and local papers in 3 to 4 weeks.</li>
                       <li>The public gets 30 days to raise objections.</li>
-                      <li>The local Collector sends the tax valuation report.</li>
+                      <li>The local Collector sends the tax price check report.</li>
                       <li>One Will witness confirms the signing under Section 281.</li>
                       <li>The judge signs the order and grants the sealed probate.</li>
                     </ul>
@@ -1370,12 +1370,12 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>LEGAL REMEDY COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Succession Certificate vs Probate Comparison
+                7. Estate Paper vs Probate Comparison
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many families ask whether they need a Probate, Letters of Administration, or a
-                  Succession Certificate. Here is how they differ:
+                  Many families ask whether they need a Probate, Letters of Care, or a
+                  Estate Paper. Here is how they differ:
                 </p>
                 <div className="overflow-x-auto rounded-2xl border border-slate-200/90 bg-white">
                   <table className="w-full text-xs text-left text-slate-700">
@@ -1383,40 +1383,40 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <tr>
                         <th className="py-3 px-4">Parameter</th>
                         <th className="py-3 px-4">Probate</th>
-                        <th className="py-3 px-4">Letters of Administration</th>
-                        <th className="py-3 px-4">Succession Certificate</th>
+                        <th className="py-3 px-4">Letters of Care</th>
+                        <th className="py-3 px-4">Estate Paper</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       <tr className="hover:bg-slate-50">
-                        <td className="py-3 px-4 font-bold text-slate-900">Governing Provision</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Governing Rule</td>
                         <td className="py-3 px-4">Section 222 Indian Succession Act</td>
                         <td className="py-3 px-4">Sections 218, 232 &amp; 234</td>
                         <td className="py-3 px-4">Section 370 to 390 (Part X)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Pre-requisite Will?</td>
-                        <td className="py-3 px-4 text-emerald-700 font-bold">Mandatory (Will must exist)</td>
-                        <td className="py-3 px-4">With Will or Intestate</td>
-                        <td className="py-3 px-4 text-rose-700 font-bold">Only for Intestate Succession</td>
+                        <td className="py-3 px-4 text-emerald-700 font-bold">Needed (Will must exist)</td>
+                        <td className="py-3 px-4">With Will or No-Will</td>
+                        <td className="py-3 px-4 text-rose-700 font-bold">Only for No-Will Estate</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Applicable Assets</td>
-                        <td className="py-3 px-4 font-bold">Immovable + Movable Assets</td>
-                        <td className="py-3 px-4 font-bold">Immovable + Movable Assets</td>
-                        <td className="py-3 px-4 text-[#C65378] font-bold">Strictly Movable Assets (FDs/Shares)</td>
+                        <td className="py-3 px-4 font-bold">Land + Cash Assets</td>
+                        <td className="py-3 px-4 font-bold">Land + Cash Assets</td>
+                        <td className="py-3 px-4 text-[#C65378] font-bold">Strictly Cash Assets (FDs/Shares)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Who Can Apply?</td>
                         <td className="py-3 px-4">Executor named in Will</td>
-                        <td className="py-3 px-4">Beneficiaries or Legal Heirs</td>
+                        <td className="py-3 px-4">Heirs or Legal Heirs</td>
                         <td className="py-3 px-4">Surviving Class I Legal Heirs</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Court Fee Treatment</td>
                         <td className="py-3 px-4">Ad-valorem with State Caps</td>
                         <td className="py-3 px-4">Ad-valorem with State Caps</td>
-                        <td className="py-3 px-4">Ad-valorem on Movable Value</td>
+                        <td className="py-3 px-4">Ad-valorem on Cash Value</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1431,7 +1431,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>STATE COMPARISON MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Comprehensive State-by-State Court Fee Comparison
+                8. Full State-by-State Court Fee Comparison
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1444,9 +1444,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       <tr>
                         <th className="py-3 px-4">State / Court</th>
                         <th className="py-3 px-4">Ad-Valorem Rate</th>
-                        <th className="py-3 px-4">Statutory Cap</th>
+                        <th className="py-3 px-4">Legal Cap</th>
                         <th className="py-3 px-4">Court Fee on ₹2.5 Cr</th>
-                        <th className="py-3 px-4">Mandatory Section 213?</th>
+                        <th className="py-3 px-4">Needed Section 213?</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
@@ -1462,7 +1462,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                         <td className="py-3 px-4">4% ad-valorem</td>
                         <td className="py-3 px-4 text-rose-700 font-bold">None (Uncapped)</td>
                         <td className="py-3 px-4 font-black text-rose-700">₹10,00,000</td>
-                        <td className="py-3 px-4 text-slate-600">No (Optional)</td>
+                        <td className="py-3 px-4 text-slate-600">No (A Choice)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">West Bengal (Kolkata)</td>
@@ -1483,14 +1483,14 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                         <td className="py-3 px-4">Up to 5.5%</td>
                         <td className="py-3 px-4 text-rose-700 font-bold">None (Uncapped)</td>
                         <td className="py-3 px-4 font-black text-rose-700">₹13,42,625</td>
-                        <td className="py-3 px-4 text-slate-600">No (Optional)</td>
+                        <td className="py-3 px-4 text-slate-600">No (A Choice)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="py-3 px-4 font-bold text-slate-900">Gujarat (Ahmedabad)</td>
                         <td className="py-3 px-4">2% to 6%</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">₹75,000 Cap</td>
                         <td className="py-3 px-4 font-black text-emerald-700">₹75,000</td>
-                        <td className="py-3 px-4 text-slate-600">No (Optional)</td>
+                        <td className="py-3 px-4 text-slate-600">No (A Choice)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1512,7 +1512,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   {
                     step: "1",
                     title: "Find the Original Will and Death Certificate",
-                    desc: "Find the original signed Will. Make sure two witnesses signed it under Section 63. Get the official death certificate from the municipal office.",
+                    desc: "Find the original signed Will. Make sure two witnesses signed it under Section 63. Get the official death paper from the city office.",
                   },
                   {
                     step: "2",
@@ -1522,7 +1522,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   {
                     step: "3",
                     title: "Get Witness Affidavit (Section 281)",
-                    desc: "Ask one Will witness to sign a short affidavit under Section 281. The witness confirms that the person made the Will in sound health.",
+                    desc: "Ask one Will witness to sign a short sworn note under Section 281. The witness confirms that the person made the Will in sound health.",
                   },
                   {
                     step: "4",
@@ -1537,7 +1537,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   {
                     step: "6",
                     title: "Wait 30 Days for Objections and Tax Check",
-                    desc: "Wait for the 30-day notice window to pass. The local Tehsildar checks the property value under Section 19-H.",
+                    desc: "Wait for the 30-day notice window to pass. The local Tehsildar checks the asset value under Section 19-H.",
                   },
                   {
                     step: "7",
@@ -1601,7 +1601,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <strong>Costs:</strong> Delhi charges 4% without any cap. That meant paying <strong>Rs
-                    12,00,000</strong> in court fees. Our lawyers showed the bank that probate is optional in
+                    12,00,000</strong> in court fees. Our lawyers showed the bank that probate is a choice in
                     Delhi under <em>Kanta Yadav</em>. The bank accepted an indemnity bond instead.
                   </p>
                   <div className="text-[11px] font-bold text-[#C65378] bg-rose-50 p-2 rounded-lg">
@@ -1618,7 +1618,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>LEGAL TEMPLATES &amp; CHECKLISTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Schedule III Valuation Form &amp; Petition Checklist
+                11. Schedule III Price Check Form &amp; Petition Checklist
               </h3>
 
               {/* Template Box 1: Schedule III Valuation Format */}
@@ -1626,7 +1626,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Schedule III Form of Valuation Affidavit (Court Fees Act, 1870)</span>
+                    <span>Schedule III Form of Price Check Sworn Note (Court Fees Act, 1870)</span>
                   </div>
                   <button
                     type="button"
@@ -1674,7 +1674,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>High Court Probate Filing Mandatory Checklist</span>
+                    <span>High Court Probate Filing Needed Checklist</span>
                   </div>
                   <button
                     type="button"
@@ -1699,19 +1699,19 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     <strong>1. Original Will:</strong> Signed under Section 63 with translation if regional.
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <strong>2. Death Certificate:</strong> Certified copy by Municipal Registrar.
+                    <strong>2. Death Paper:</strong> Certified copy by City Registrar.
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <strong>3. Section 281 Affidavit:</strong> Execution affidavit by attesting witness.
+                    <strong>3. Section 281 Sworn Note:</strong> Signing sworn note by signing witness.
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
                     <strong>4. Schedule III Forms:</strong> Annexure A assets + Annexure B debt deductions.
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <strong>5. Legal Heir Genealogy:</strong> Verified family tree of all Class I heirs.
+                    <strong>5. Legal Heir Genealogy:</strong> Checked family tree of all Class I heirs.
                   </div>
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <strong>6. Property Chain Deeds:</strong> Registered sale deeds and share certificates.
+                    <strong>6. Asset Chain Deeds:</strong> Filed sale deeds and share papers.
                   </div>
                 </div>
               </div>
@@ -1724,7 +1724,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>LEGAL EXPERTISE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. AMA Legal Solutions: High Court Testamentary Practice
+                12. AMA Legal Solutions: High Court Will Practice
               </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex items-center gap-4">
@@ -1733,10 +1733,10 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   </div>
                   <div>
                     <div className="text-lg font-extrabold text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; Testamentary Counsel
+                      Senior Estate &amp; Will Counsel
                     </div>
                     <div className="text-xs text-slate-500">
                       Bar Council of Delhi • Supreme Court &amp; High Courts Pan-India
@@ -1744,19 +1744,19 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Advocate Anuj Anand Malik leads the succession practice at AMA Legal Solutions. He has
+                  Lawyer Anuj Anand Malik leads the estate practice at AMA Legal Solutions. He has
                   guided hundreds of executors, NRIs, and families in Bombay High Court and Delhi courts.
                   His team helps you draft petitions, publish notices, and handle objections under Section 295.
                 </p>
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
                   <span className="font-bold text-slate-700">
-                    Verified Testamentary Practice • 100% Statutory Compliance
+                    Checked Will Practice • 100% Legal Compliance
                   </span>
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-900 text-white font-bold hover:bg-slate-800 transition-colors"
                   >
-                    <span>Schedule Case Consultation</span>
+                    <span>Schedule Case Talk</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1810,7 +1810,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <span>STATUTORY CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Governing Judicial Precedents &amp; Legal Authorities
+                14. Governing Judicial Precedents &amp; Legal Offices
               </h3>
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4 text-xs leading-relaxed">
                 <div className="space-y-2">
@@ -1819,7 +1819,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     <li>
                       <strong>Clarence Pais &amp; Ors. v. Union of India (2001) 4 SCC 325:</strong> Supreme
                       Court upheld the constitutional validity of Section 213, establishing that probate
-                      is mandatory only in Mumbai, Kolkata, and Chennai.
+                      is needed only in Mumbai, Kolkata, and Chennai.
                     </li>
                     <li>
                       <strong>Kanta Yadav v. Om Prakash Yadav (2019) 10 SCC 437:</strong> Supreme Court
@@ -1828,12 +1828,12 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                     </li>
                     <li>
                       <strong>Pamela Manmohan Singh v. State (Delhi High Court, 2000):</strong> Division
-                      Bench held that in Delhi, grant of probate is entirely optional for Hindus, Sikhs,
+                      Bench held that in Delhi, grant of probate is entirely a choice for Hindus, Sikhs,
                       Jains, and Buddhists.
                     </li>
                     <li>
                       <strong>Minaxiben Shashikant Patel v. District Collector (2007) 1 GLR 277:</strong> Gujarat
-                      High Court confirmed probate is not compulsory for real estate situated in Gujarat.
+                      High Court confirmed probate is not needed for real estate situated in Gujarat.
                     </li>
                   </ul>
                 </div>
@@ -1870,20 +1870,20 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Succession Tools &amp; Legal Guides
+                    Related WillDrafting Estate Tools &amp; Legal Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/succession-certificate-court-fee-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Succession Certificate Court Fee Calculator
+                      Estate Paper Court Fee Tool
                     </Link>
                     <Link
                       href="/tools/executor-duties-90-day-timeline-generator"
@@ -1901,13 +1901,35 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1920,21 +1942,21 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in High Court probate petitions, testamentary caveats defense, Schedule III
-                asset valuation, and cross-border NRI estate transmission pan-India.
+                Expert in High Court probate petitions, Will caveats defense, Schedule III
+                asset price check, and cross-border NRI estate transfer pan-India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1948,10 +1970,10 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   <span>PREVENT EXPENSIVE PROBATE BATTLES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Family from Lengthy Court Disputes
+                  Protect Your Family from Lengthy Court Fights
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A challenge-proof, legally drafted Will with named executors and clear attestation
+                  A fight-proof, legally drafted Will with named executors and clear witness signing
                   accelerates uncontested probate and eliminates family caveats.
                 </p>
                 <button
@@ -1977,7 +1999,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   Filing Probate or Facing a Caveat in High Court?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our testamentary litigators handle Section 276 petitions, citation publications,
+                  Our Will litigators handle Section 276 petitions, citation publications,
                   Collector inquiries, and caveat defense in Mumbai, Delhi, and pan-India courts.
                 </p>
                 <Link
@@ -1985,7 +2007,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 

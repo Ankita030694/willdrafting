@@ -148,7 +148,7 @@ export default function AhmedabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ahmedabad: Online Will & Asset Guide",
         description:
-          "Create a legally valid Will in Ahmedabad. Comprehensive HUF planning, Gujarat Sub-Registrar registration, and business asset succession guidance.",
+          "Create a legally valid Will in Ahmedabad. Full HUF planning, Gujarat SRO filing, and business asset estate guidance.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -195,7 +195,7 @@ export default function AhmedabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ahmedabad - Estate Planning, HUF & SRO Registration",
         description:
-          "Professional Will drafting, HUF estate structuring, and Sub-Registrar Office e-registration support across Ahmedabad and Gandhinagar revenue.",
+          "Professional Will drafting, HUF estate structuring, and SRO office e-filing support across Ahmedabad and Gandhinagar revenue.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -267,38 +267,38 @@ export default function AhmedabadLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Ahmedabad Gujarat",
         description:
-          "Five clear steps to create a legally binding Will, allocate HUF and business assets, and register before the Gujarat Sub-Registrar.",
+          "Five clear steps to create a legally binding Will, allocate HUF and business assets, and register before the Gujarat SRO.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Inventory Personal, HUF, and Business Assets",
-            text: "List your Ahmedabad properties including AMC flats, bungalows, GIDC industrial plots, partnership capital, and demat accounts. Clearly separate individual assets from joint HUF coparcenary assets.",
+            text: "List your Ahmedabad assets including AMC flats, bungalows, GIDC plant plots, partnership capital, and demat accounts. Clearly separate single assets from joint HUF joint assets.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Will with Estate Advocates",
-            text: "Draft your Will using our online legal platform or with our senior estate advocates. Incorporate specific bequest clauses, business succession pathways, executor appointments, and survivorship conditions.",
+            text: "Draft your Will using our online legal platform or with our senior estate lawyers. Incorporate specific bequest clauses, business estate pathways, executor appointments, and survivorship conditions.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book SRO Slot on Garvi Gujarat Portal",
-            text: "Book an e-appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your local Ahmedabad or Gandhinagar Sub-Registrar office and pay the nominal ₹100 registration fee online.",
+            text: "Book an e-appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your local Ahmedabad or Gandhinagar SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original photo IDs for biometric fingerprinting, digital photo capture, and official Book III registration entry.",
+            text: "Visit the SRO office with your two witnesses and original photo IDs for biometric fingerprinting, digital photo capture, and official Book III filing entry.",
           },
         ],
       },

@@ -41,50 +41,50 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Rules: Will Contest Law" },
-  { id: "interactive-calculator", label: "2. Interactive Challenge Risk Calculator" },
+  { id: "statutory-foundation", label: "1. Legal Rules: Will Contest Law" },
+  { id: "interactive-calculator", label: "2. Free Fight Risk Tool" },
   { id: "suspicious-circumstances-doctrine", label: "3. Kavita Kanwar & Suspicious Circumstances" },
   { id: "grounds-for-challenging-will", label: "4. Top 6 Grounds for Challenging a Will" },
-  { id: "registered-vs-unregistered-wills", label: "5. Unregistered vs Registered Wills in Court" },
-  { id: "section-67-witness-pitfalls", label: "6. Attestation Pitfalls: Section 67 Void Bequests" },
-  { id: "video-medical-fitness-protocol", label: "7. Video Recording & Doctor Certificate Protocol" },
-  { id: "comparison-table-grounds", label: "8. Grounds of Challenge vs Standard of Proof" },
+  { id: "registered-vs-unregistered-wills", label: "5. Plain vs Filed Wills in Court" },
+  { id: "section-67-witness-pitfalls", label: "6. Witness Signing Pitfalls: Section 67 Void Bequests" },
+  { id: "video-medical-fitness-protocol", label: "7. Video Recording & Doctor Paper Protocol" },
+  { id: "comparison-table-grounds", label: "8. Grounds of Fight vs Standard of Proof" },
   { id: "step-by-step-fortification-sop", label: "9. 5-Point Will Fortification Protocol" },
   { id: "practical-court-case-studies", label: "10. Supreme Court & High Court Case Studies" },
-  { id: "copy-paste-legal-templates", label: "11. Disinheritance Recitals & Fortification Checklist" },
-  { id: "institutional-advocate-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "copy-paste-legal-templates", label: "11. Leaving Out Recitals & Fortification Checklist" },
+  { id: "institutional-advocate-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations-portals", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations-portals", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "Can my Will be challenged in court in India?",
-    a: "Yes. Any legal heir or interested person who would inherit under intestate succession can challenge a Will by filing a caveat or lawsuit in civil court. Common grounds include lack of sound mind under Section 59, undue influence or coercion under Section 61, suspicious circumstances under Kavita Kanwar (2020 SC), or failure to comply with two-witness attestation under Section 63.",
+    a: "Yes. Any legal heir or interested person who would inherit under no-Will estate can fight a Will by filing a caveat or lawsuit in civil court. Common grounds include lack of sound mind under Section 59, undue influence or coercion under Section 61, suspicious circumstances under Kavita Kanwar (2020 SC), or failure to comply with two-witness witness signing under Section 63.",
   },
   {
     q: "Can I legally disinherit my married daughter or son in my Will?",
-    a: "Yes. In India, a person has complete testamentary freedom over self-acquired property and can exclude any child or legal heir. However, under the Supreme Court ruling in Shivakumar v. Sharanabasappa (2020), total exclusion of natural heirs is treated as a suspicious circumstance unless the Will explicitly recites the factual, rational reasons for their exclusion.",
+    a: "Yes. In India, a person has complete Will freedom over self-acquired asset and can exclude any child or legal heir. However, under the Supreme Court ruling in Shivakumar v. Sharanabasappa (2020), total exclusion of natural heirs is treated as a suspicious circumstance unless the Will explicitly recites the factual, rational reasons for their exclusion.",
   },
   {
     q: "Does registering a Will make it 100% unchallengeable?",
-    a: "No. While registration under Book 3 of the Registration Act, 1908 creates a strong statutory presumption of regular execution and authentic signature, it does not bar a challenge. As held by the Supreme Court in Murthy v. C. Saradambal (2022), if the testator lacked cognitive testamentary capacity or was under undue influence, even a registered Will can be declared null and void.",
+    a: "No. While filing under Book 3 of the Filing Act, 1908 creates a strong legal presumption of regular signing and authentic signature, it does not bar a fight. As held by the Supreme Court in Murthy v. C. Saradambal (2022), if the Will maker lacked cognitive Will capacity or was under undue influence, even a filed Will can be declared null and void.",
   },
   {
-    q: "What happens if a beneficiary was present when the Will was drafted and signed?",
-    a: "Under the landmark Supreme Court decision in Kavita Kanwar v. Pamela Mehta (2020), active participation by a major beneficiary (such as hiring the lawyer, dictating terms, arranging witnesses, or staying in the room during execution) casts a heavy cloud of judicial suspicion. The court will deny probate unless the beneficiary proves beyond doubt that the testator acted with independent free will.",
+    q: "What happens if a heir was present when the Will was drafted and signed?",
+    a: "Under the landmark Supreme Court decision in Kavita Kanwar v. Pamela Mehta (2020), active participation by a major heir (such as hiring the lawyer, dictating terms, arranging witnesses, or staying in the room during signing) casts a heavy cloud of judicial suspicion. The court will deny probate unless the heir proves beyond doubt that the Will maker acted with independent free will.",
   },
   {
-    q: "Can a beneficiary also sign as an attesting witness to the Will?",
-    a: "Never. Under Section 67 of the Indian Succession Act, 1925, if a person to whom any bequest or legacy is given signs as an attesting witness, the Will remains valid but the bequest to that person (or their spouse) becomes completely void. Always use two independent witnesses who have zero financial interest in the estate.",
+    q: "Can a heir also sign as an signing witness to the Will?",
+    a: "Never. Under Section 67 of the Indian Succession Act, 1925, if a person to whom any bequest or legacy is given signs as an signing witness, the Will remains valid but the bequest to that person (or their spouse) becomes completely void. Always use two independent witnesses who have zero financial interest in the estate.",
   },
   {
-    q: "Why is a doctor's certificate essential for testators above age 70?",
-    a: "Under Section 59 of the Indian Succession Act, a testator must possess a sound disposing state of mind. When a Will is executed by a senior citizen, disinherited relatives frequently allege dementia, memory loss, or delirium. A contemporaneous certificate from a registered MBBS or MD doctor issued on the day of signing provides vital court proof to defeat such allegations.",
+    q: "Why is a doctor's paper essential for Will makers above age 70?",
+    a: "Under Section 59 of the Indian Succession Act, a Will maker must possess a sound disposing state of mind. When a Will is signed by a senior citizen, disinherited relatives frequently allege dementia, memory loss, or delirium. A contemporaneous paper from a filed MBBS or MD doctor issued on the day of signing provides vital court proof to defeat such allegations.",
   },
   {
     q: "How can I make my Will unchallengeable in court in India?",
-    a: "Follow the 5-point fortification protocol: (1) Obtain a same-day doctor certificate of mental capacity, (2) Keep all beneficiaries outside the room during drafting and execution, (3) Include clear recital clauses explaining unequal shares or disinheritance, (4) Register the Will before the Sub-Registrar Office, and (5) Record a continuous video of the testator answering testamentary capacity questions.",
+    a: "Follow the 5-point fortification protocol: (1) Obtain a same-day doctor paper of mental capacity, (2) Keep all heirs outside the room during drafting and signing, (3) Include clear recital clauses explaining unequal shares or leaving out, (4) Register the Will before the SRO office, and (5) Record a continuous video of the Will maker answering Will capacity questions.",
   },
 ];
 
@@ -101,13 +101,13 @@ export default function WillContestRiskCalculatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedMedicalClause, setCopiedMedicalClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [testatorAge, setTestatorAge] = useState<"under_60" | "60_to_70" | "71_to_80" | "above_80">("71_to_80");
   const [distributionPattern, setDistributionPattern] = useState<
     "equal" | "unequal_justified" | "unequal_unjustified" | "disinherit_child" | "sole_outsider"
@@ -350,13 +350,13 @@ Official Seal & Registration Stamp: [Seal]`;
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Can My Will Be Challenged in Court? Dispute Risk Calculator
+            Can My Will Be Challenged in Court? Fight Risk Tool
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Assess whether your Will can withstand civil court challenge and probate caveats in India.
-            Quantify litigation risks based on <strong>testator age, legal heir exclusion, beneficiary role,
+            Assess whether your Will can withstand civil court fight and probate caveats in India.
+            Quantify court fights risks based on <strong>Will maker age, legal heir exclusion, heir role,
             and doctor certification</strong> under landmark Supreme Court rulings.
           </p>
 
@@ -375,7 +375,7 @@ Official Seal & Registration Stamp: [Seal]`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -453,11 +453,11 @@ Official Seal & Registration Stamp: [Seal]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 59, 61, 63, 67, 276 &amp; 278 of the Indian Succession Act,
-                1925, read with Sections 18, 58 &amp; 60 of the Registration Act, 1908, and landmark
+                1925, read with Sections 18, 58 &amp; 60 of the Filing Act, 1908, and landmark
                 Supreme Court precedents <em>Kavita Kanwar (2020)</em> and <em>Shivakumar (2020)</em>.
               </p>
             </div>
@@ -479,7 +479,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <span>
                     <strong>Burden of Proof on Propounder:</strong> Under Section 68 of the Indian Evidence
                     Act (now Section 67 of BSA 2023), the person presenting the Will for probate must prove
-                    valid execution by examining at least one attesting witness in court.
+                    valid signing by examining at least one signing witness in court.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -487,23 +487,23 @@ Official Seal & Registration Stamp: [Seal]`;
                   <span>
                     <strong>Doctrine of Suspicious Circumstances:</strong> As established in <em>Venkatachala
                     Iyengar (1959 SC)</em> and reaffirmed in <em>Shivakumar (2020 SC)</em>, any unnatural
-                    disposition, beneficiary involvement, or physical infirmity casts a cloud of suspicion
+                    gift, heir involvement, or physical infirmity casts a cloud of suspicion
                     that the propounder must dispel.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Beneficiary Participation Taint:</strong> The Supreme Court in <em>Kavita Kanwar
-                    (2020)</em> held that when a major beneficiary plays an active role in drafting or
+                    <strong>Heir Participation Taint:</strong> The Supreme Court in <em>Kavita Kanwar
+                    (2020)</em> held that when a major heir plays an active role in drafting or
                     procuring the Will, probate will be refused unless clear explanation is recorded.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 67 Disqualification:</strong> If a beneficiary or their spouse signs
-                    the Will as an attesting witness, the bequest to that person is entirely void under
+                    <strong>Section 67 Disqualification:</strong> If a heir or their spouse signs
+                    the Will as an signing witness, the bequest to that person is entirely void under
                     Section 67 of the Indian Succession Act, 1925.
                   </span>
                 </li>
@@ -517,28 +517,28 @@ Official Seal & Registration Stamp: [Seal]`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Will Contest Law in India
+                1. Legal Rules: Will Contest Law in India
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In India, making a Last Will and Testament is a fundamental legal right. Under the Indian
-                  Succession Act, 1925, any adult of sound mind can bequeath self-acquired property to any
-                  person, trust, or charity. However, testators often ask: <em>can my Will be challenged in
+                  Estate Act, 1925, any adult of sound mind can bequeath self-acquired asset to any
+                  person, trust, or charity. However, Will makers often ask: <em>can my Will be challenged in
                   court by disgruntled children, relatives, or excluded legal heirs?</em>
                 </p>
                 <p>
-                  The answer is yes. Any legal heir who would have inherited property under intestate
-                  succession (such as the Hindu Succession Act, 1956 or Indian Succession Act) has the
-                  statutory standing to lodge a caveat or file a civil challenge against the Will.
+                  The answer is yes. Any legal heir who would have inherited asset under no-Will
+                  estate (such as the Hindu Succession Act, 1956 or Indian Succession Act) has the
+                  legal standing to lodge a caveat or file a civil fight against the Will.
                 </p>
                 <p>
-                  Indian testamentary jurisprudence rests on three critical statutory pillars:
+                  Indian testamentary jurisprudence rests on three critical legal pillars:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-slate-700">
                   <li>
-                    <strong>Section 59 (Sound Mind &amp; Capacity):</strong> The testator must understand
+                    <strong>Section 59 (Sound Mind &amp; Capacity):</strong> The Will maker must understand
                     the nature of their act, the extent of their assets, and the claims of natural heirs.
-                    A person suffering from severe dementia, delirium, or intoxication lacks testamentary
+                    A person suffering from severe dementia, delirium, or intoxication lacks Will
                     capacity.
                   </li>
                   <li>
@@ -547,9 +547,9 @@ Official Seal & Registration Stamp: [Seal]`;
                     and void.
                   </li>
                   <li>
-                    <strong>Section 63 (Mandatory Attestation Formalities):</strong> The Will must be signed
-                    or marked by the testator and attested by <strong>two or more witnesses</strong>, each
-                    of whom saw the testator sign or received a personal acknowledgment of signature.
+                    <strong>Section 63 (Needed Witness Signing Formalities):</strong> The Will must be signed
+                    or marked by the Will maker and attested by <strong>two or more witnesses</strong>, each
+                    of whom saw the Will maker sign or received a personal acknowledgment of signature.
                   </li>
                 </ul>
               </div>
@@ -562,7 +562,7 @@ Official Seal & Registration Stamp: [Seal]`;
                 <span>INTERACTIVE RISK AUDIT TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Will Contest &amp; Challenge Risk Calculator
+                2. Free Will Contest &amp; Fight Risk Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your parameters below to evaluate how an Indian civil court or probate bench would
@@ -576,7 +576,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center justify-between">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Activity className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>1. Testator Age at Execution of Will</span>
+                      <span>1. Will maker Age at Signing of Will</span>
                     </label>
                     <span className="text-[11px] text-slate-500 font-semibold">Section 59 Scrutiny</span>
                   </div>
@@ -611,7 +611,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center justify-between">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Users className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>2. Estate Distribution Among Class I Legal Heirs</span>
+                      <span>2. Estate Split Among Class I Legal Heirs</span>
                     </label>
                     <span className="text-[11px] text-slate-500 font-semibold">Shivakumar Benchmark</span>
                   </div>
@@ -667,7 +667,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center justify-between">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>3. Beneficiary Active Role in Execution</span>
+                      <span>3. Heir Active Role in Signing</span>
                     </label>
                     <span className="text-[11px] text-slate-500 font-semibold">Kavita Kanwar Doctrine</span>
                   </div>
@@ -676,22 +676,22 @@ Official Seal & Registration Stamp: [Seal]`;
                       {
                         id: "zero",
                         title: "Zero Involvement",
-                        desc: "Beneficiary completely absent from lawyer consultation & signing",
+                        desc: "Heir completely absent from lawyer talk & signing",
                       },
                       {
                         id: "in_room",
                         title: "Present in Room",
-                        desc: "Beneficiary was physically present during execution",
+                        desc: "Heir was physically present during signing",
                       },
                       {
                         id: "arranged_lawyer",
                         title: "Arranged Lawyer & Scribe",
-                        desc: "Beneficiary hired lawyer, gave instructions & brought witnesses",
+                        desc: "Heir hired lawyer, gave instructions & brought witnesses",
                       },
                       {
                         id: "secret_custody",
                         title: "Secret Private Custody",
-                        desc: "Kept Will hidden until after testator demise",
+                        desc: "Kept Will hidden until after Will maker demise",
                       },
                     ].map((item) => (
                       <button
@@ -727,7 +727,7 @@ Official Seal & Registration Stamp: [Seal]`;
                       {
                         id: "doctor_certified",
                         title: "Same-Day MBBS/MD Cert",
-                        desc: "Doctor examined mental fitness on execution date",
+                        desc: "Doctor examined mental fitness on signing date",
                       },
                       {
                         id: "general_fit",
@@ -737,7 +737,7 @@ Official Seal & Registration Stamp: [Seal]`;
                       {
                         id: "no_cert_healthy",
                         title: "No Cert (Physically Fit)",
-                        desc: "Testator was active, but no medical slip taken",
+                        desc: "Will maker was active, but no medical slip taken",
                       },
                       {
                         id: "ill_no_cert",
@@ -769,31 +769,31 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center justify-between">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Lock className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>5. Registration &amp; Execution Setting</span>
+                      <span>5. Filing &amp; Signing Setting</span>
                     </label>
-                    <span className="text-[11px] text-slate-500 font-semibold">Registration Act Book 3</span>
+                    <span className="text-[11px] text-slate-500 font-semibold">Filing Act Book 3</span>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
                     {[
                       {
                         id: "sro_registered",
                         title: "SRO Book 3 Registered",
-                        desc: "Biometrics & photos captured before Sub-Registrar",
+                        desc: "Biometrics & photos captured before SRO",
                       },
                       {
                         id: "notarized",
                         title: "Notarized on Stamp",
-                        desc: "Signed before Notary Public (not registered)",
+                        desc: "Signed before Notary Public (not filed)",
                       },
                       {
                         id: "unregistered_typed",
                         title: "Unregistered Typed Paper",
-                        desc: "Executed on plain or non-judicial stamp paper",
+                        desc: "Signed on plain or non-judicial stamp paper",
                       },
                       {
                         id: "handwritten_deathbed",
                         title: "Handwritten Deathbed",
-                        desc: "Executed in hospital / emergency without formalities",
+                        desc: "Signed in hospital / emergency without formalities",
                       },
                     ].map((item) => (
                       <button
@@ -820,7 +820,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center justify-between">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Eye className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>6. Attesting Witness Profile</span>
+                      <span>6. Signing Witness Profile</span>
                     </label>
                     <span className="text-[11px] text-slate-500 font-semibold">Section 63 &amp; 67 Compliance</span>
                   </div>
@@ -829,7 +829,7 @@ Official Seal & Registration Stamp: [Seal]`;
                       {
                         id: "independent_professionals",
                         title: "Independent Professionals",
-                        desc: "Practicing advocate and doctor younger than testator",
+                        desc: "Practicing lawyer and doctor younger than Will maker",
                       },
                       {
                         id: "family_friends",
@@ -839,7 +839,7 @@ Official Seal & Registration Stamp: [Seal]`;
                       {
                         id: "beneficiary_relative",
                         title: "Beneficiary In-Laws / Relatives",
-                        desc: "Close associates of the primary beneficiary",
+                        desc: "Close associates of the primary heir",
                       },
                       {
                         id: "beneficiary_himself",
@@ -910,7 +910,7 @@ Official Seal & Registration Stamp: [Seal]`;
                     <div className="grid grid-cols-3 gap-2">
                       {[
                         { id: "self_acquired", label: "100% Self-Acquired" },
-                        { id: "ancestral_coparcenary", label: "HUF Coparcenary" },
+                        { id: "ancestral_coparcenary", label: "HUF Joint" },
                         { id: "disputed_title", label: "Disputed / Litigated" },
                       ].map((item) => (
                         <button
@@ -984,7 +984,7 @@ Official Seal & Registration Stamp: [Seal]`;
                     {/* Score Bar Meter */}
                     <div className="pt-4 space-y-2">
                       <div className="flex justify-between text-xs font-bold text-slate-700">
-                        <span>Litigation Vulnerability Gauge</span>
+                        <span>Court Fights Vulnerability Gauge</span>
                         <span>{litigationScore}% Vulnerability</span>
                       </div>
                       <div className="w-full h-3 rounded-full bg-slate-200/80 overflow-hidden">
@@ -1034,14 +1034,14 @@ Official Seal & Registration Stamp: [Seal]`;
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-slate-800">
                         <Sliders className="w-4 h-4 text-[#C65378]" />
-                        <span>Interactive Fortification Simulator: Watch Your Score Drop</span>
+                        <span>Free Fortification Simulator: Watch Your Score Drop</span>
                       </div>
                       <span className="text-[10px] font-bold text-[#C65378] bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
                         Live Impact
                       </span>
                     </div>
                     <p className="text-xs text-slate-600">
-                      Toggle standard Indian legal safeguards below to simulate how adding statutory protections
+                      Toggle standard Indian legal safeguards below to simulate how adding legal protections
                       reduces contest risk:
                     </p>
 
@@ -1054,8 +1054,8 @@ Official Seal & Registration Stamp: [Seal]`;
                           className="w-4 h-4 accent-[#C65378] rounded cursor-pointer"
                         />
                         <div className="text-xs">
-                          <div className="font-bold text-slate-800">Add Same-Day Doctor Certificate</div>
-                          <div className="text-[10px] text-slate-500">Defeats Section 59 capacity challenge</div>
+                          <div className="font-bold text-slate-800">Add Same-Day Doctor Paper</div>
+                          <div className="text-[10px] text-slate-500">Defeats Section 59 capacity fight</div>
                         </div>
                       </label>
 
@@ -1067,7 +1067,7 @@ Official Seal & Registration Stamp: [Seal]`;
                           className="w-4 h-4 accent-[#C65378] rounded cursor-pointer"
                         />
                         <div className="text-xs">
-                          <div className="font-bold text-slate-800">Add Sub-Registrar Registration</div>
+                          <div className="font-bold text-slate-800">Add SRO Filing</div>
                           <div className="text-[10px] text-slate-500">Activates Section 58/60 presumption</div>
                         </div>
                       </label>
@@ -1080,7 +1080,7 @@ Official Seal & Registration Stamp: [Seal]`;
                           className="w-4 h-4 accent-[#C65378] rounded cursor-pointer"
                         />
                         <div className="text-xs">
-                          <div className="font-bold text-slate-800">Add Disinheritance Recital Clause</div>
+                          <div className="font-bold text-slate-800">Add Leaving Out Recital Clause</div>
                           <div className="text-[10px] text-slate-500">Dispels Shivakumar suspicion</div>
                         </div>
                       </label>
@@ -1148,12 +1148,12 @@ Official Seal & Registration Stamp: [Seal]`;
                     <span>Kavita Kanwar v. Pamela Mehta (2020) 19 SCC 508</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    In this landmark ruling, the Supreme Court held that where a major beneficiary plays an
-                    active role in the execution of the Will (such as drafting instructions, arranging the
+                    In this landmark ruling, the Supreme Court held that where a major heir plays an
+                    active role in the signing of the Will (such as drafting instructions, arranging the
                     lawyer, bringing the witnesses, or being present during signing), a thick cloud of
                     suspicion is cast. If the Will also excludes other natural heirs without plausible
                     explanation, probate will be refused. The court reiterated that the active participation
-                    of the propounder-beneficiary is a decisive suspicious circumstance.
+                    of the propounder-heir is a decisive suspicious circumstance.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1164,10 +1164,10 @@ Official Seal & Registration Stamp: [Seal]`;
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     A three-judge bench of the Supreme Court comprehensively analyzed suspicious circumstances.
                     The court clarified that mere exclusion of natural legal heirs is not per se invalid,
-                    because the very purpose of making a Will is to alter the normal line of intestate
-                    succession. However, the propounder must demonstrate that the exclusion was intentional,
+                    because the very purpose of making a Will is to alter the normal line of no-Will
+                    estate. However, the propounder must demonstrate that the exclusion was intentional,
                     rational, and supported by reasons, rather than being the product of coercion, fraud, or
-                    testamentary incapacity.
+                    Will incapacity.
                   </p>
                 </div>
               </div>
@@ -1187,17 +1187,17 @@ Official Seal & Registration Stamp: [Seal]`;
                   {
                     num: "01",
                     title: "Lack of Testamentary Capacity (Section 59)",
-                    desc: "Alleging that the testator suffered from Alzheimer's, severe dementia, delirium, or coma, rendering them unable to comprehend what they were signing.",
+                    desc: "Alleging that the Will maker suffered from Alzheimer's, severe dementia, delirium, or coma, rendering them unable to comprehend what they were signing.",
                   },
                   {
                     num: "02",
                     title: "Undue Influence & Coercion (Section 61)",
-                    desc: "Proving that a dominant caregiver or child overpowered the testator's free agency through emotional blackmail, isolation, or physical confinement.",
+                    desc: "Proving that a dominant caregiver or child overpowered the Will maker's free agency through emotional blackmail, isolation, or physical confinement.",
                   },
                   {
                     num: "03",
                     title: "Defective Attestation (Section 63)",
-                    desc: "Showing that two witnesses were not present, did not see the testator sign, did not sign in the testator's presence, or signed before the testator did.",
+                    desc: "Showing that two witnesses were not present, did not see the Will maker sign, did not sign in the Will maker's presence, or signed before the Will maker did.",
                   },
                   {
                     num: "04",
@@ -1207,12 +1207,12 @@ Official Seal & Registration Stamp: [Seal]`;
                   {
                     num: "05",
                     title: "Beneficiary Witness Taint (Section 67)",
-                    desc: "Demonstrating that the primary beneficiary or their spouse signed as an attesting witness, triggering statutory forfeiture of the entire legacy.",
+                    desc: "Demonstrating that the primary heir or their spouse signed as an signing witness, triggering legal forfeiture of the entire legacy.",
                   },
                   {
                     num: "06",
                     title: "Revocation by Subsequent Valid Will",
-                    desc: "Producing a later dated registered Will or Codicil executed by the testator that explicitly revokes all prior testamentary instruments.",
+                    desc: "Producing a later dated filed Will or Codicil signed by the Will maker that explicitly revokes all prior Will instruments.",
                   },
                 ].map((item) => (
                   <div key={item.num} className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1233,41 +1233,41 @@ Official Seal & Registration Stamp: [Seal]`;
                 <span>EVIDENTIARY VALUE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Unregistered vs Registered Wills: Court Evidentiary Weight
+                5. Plain vs Filed Wills: Court Proof Weight
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will in India is
-                  optional, not mandatory. An unregistered Will written on a simple sheet of plain paper is
-                  fully valid in law if it satisfies the execution and attestation requirements of Section 63.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will in India is
+                  a choice, not needed. An plain Will written on a simple sheet of plain paper is
+                  fully valid in law if it satisfies the signing and witness signing rules of Section 63.
                 </p>
                 <p>
-                  However, from a courtroom litigation defense perspective, the difference is profound:
+                  However, from a courtroom court fights defense perspective, the difference is profound:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-2">
                     <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600" />
-                      <span>Registered Will (Book 3 at SRO)</span>
+                      <span>Filed Will (Book 3 at SRO)</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>Official Sub-Registrar verifies identity with Aadhaar and biometrics.</li>
-                      <li>Endorsement under Sections 58 &amp; 60 carries strong statutory presumption of regular execution.</li>
-                      <li>Government archive retains duplicate microfilmed copy, eliminating post-death document tampering.</li>
-                      <li>Shifts heavy evidentiary burden onto challenger to prove forgery or impersonation.</li>
+                      <li>Official SRO verifies identity with Aadhaar and biometrics.</li>
+                      <li>Endorsement under Sections 58 &amp; 60 carries strong legal presumption of regular signing.</li>
+                      <li>Government archive retains duplicate microfilmed copy, eliminating post-death paper tampering.</li>
+                      <li>Shifts heavy proof burden onto challenger to prove forgery or impersonation.</li>
                     </ul>
                   </div>
 
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-2">
                     <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                       <AlertTriangle className="w-4 h-4 text-rose-600" />
-                      <span>Unregistered Will (Plain / Stamp Paper)</span>
+                      <span>Plain Will (Plain / Stamp Paper)</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>Challengers routinely allege the document was created after the testator passed away.</li>
-                      <li>No government third-party record verifies execution date or physical presence.</li>
-                      <li>Propounder bears 100% burden to summon and examine attesting witnesses under BSA Section 67.</li>
-                      <li>Vulnerable to probate caveators seeking interim injunctions on bank accounts and property.</li>
+                      <li>Challengers routinely allege the paper was created after the Will maker passed away.</li>
+                      <li>No government third-party record verifies signing date or physical presence.</li>
+                      <li>Propounder bears 100% burden to summon and examine signing witnesses under BSA Section 67.</li>
+                      <li>Vulnerable to probate caveators seeking interim injunctions on bank accounts and asset.</li>
                     </ul>
                   </div>
                 </div>
@@ -1281,7 +1281,7 @@ Official Seal & Registration Stamp: [Seal]`;
                 <span>STATUTORY FORFEITURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Attestation Pitfalls: Section 67 Void Bequest Hazards
+                6. Witness Signing Pitfalls: Section 67 Void Bequest Hazards
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1290,19 +1290,19 @@ Official Seal & Registration Stamp: [Seal]`;
                 </p>
                 <div className="p-4 rounded-2xl bg-rose-50 border-l-4 border-l-rose-600 border border-rose-200 text-xs sm:text-sm text-slate-800 leading-relaxed">
                   <em>&ldquo;A Will shall not be deemed to be insufficiently attested by reason of any benefit being given
-                  by it to any person attesting it, or to his or her wife or husband; but the bequest shall be void so
+                  by it to any person signing it, or to his or her wife or husband; but the bequest shall be void so
                   far only as concerns such person or any person claiming under him or her.&rdquo;</em>
                 </div>
                 <p>
                   This means that if a father bequeaths his apartment to his son, and that son (or the son&rsquo;s
-                  wife) signs the Will as an attesting witness, the Will is not thrown out, but the <strong>bequest to
-                  the son is declared 100% void by operation of law</strong>! The apartment falls back into intestate
-                  succession, and all other siblings inherit equal statutory shares.
+                  wife) signs the Will as an signing witness, the Will is not thrown out, but the <strong>bequest to
+                  the son is declared 100% void by operation of law</strong>! The apartment falls back into no-Will
+                  estate, and all other siblings inherit equal legal shares.
                 </p>
                 <p>
-                  Additionally, under Section 67 of Bharatiya Sakshya Adhiniyam, 2023 (former Section 68 of the
-                  Indian Evidence Act), at least one attesting witness must appear in court to depose in the witness
-                  box. If you choose elderly or untraceable witnesses, your beneficiaries will face insurmountable
+                  Also, under Section 67 of Bharatiya Sakshya Adhiniyam, 2023 (former Section 68 of the
+                  Indian Evidence Act), at least one signing witness must appear in court to depose in the witness
+                  box. If you choose elderly or untraceable witnesses, your heirs will face insurmountable
                   delays proving the Will.
                 </p>
               </div>
@@ -1319,8 +1319,8 @@ Official Seal & Registration Stamp: [Seal]`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To make a Will practically unchallengeable in court, succession litigators recommend combining
-                  a same-day medical certificate with an uninterrupted audio-visual recording.
+                  To make a Will practically unchallengeable in court, estate litigators recommend combining
+                  a same-day medical paper with an uninterrupted audio-visual recording.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-2">
@@ -1331,7 +1331,7 @@ Official Seal & Registration Stamp: [Seal]`;
                     <p className="text-xs text-slate-600 leading-relaxed">
                       An MBBS or MD physician conducts a brief Mini-Mental State Examination (MMSE). The doctor
                       asks questions regarding orientation, date, names of family members, and extent of assets,
-                      then signs a medical certificate on their official letterhead certifying sound disposing
+                      then signs a medical paper on their official letterhead certifying sound disposing
                       mind under Section 59.
                     </p>
                   </div>
@@ -1339,13 +1339,13 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-2">
                     <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                       <Video className="w-4 h-4 text-[#C65378]" />
-                      <span>Video Attestation Protocol (BSA Section 63)</span>
+                      <span>Video Witness Signing Protocol (BSA Section 63)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Record a continuous, unedited video of the signing session. The testator states their name,
+                      Record a continuous, unedited video of the signing session. The Will maker states their name,
                       confirms they have read or had the Will read to them, explains why certain heirs are excluded,
                       and signs in the presence of both witnesses. The file hash is preserved with a Section 63
-                      BSA electronic certificate.
+                      BSA electronic paper.
                     </p>
                   </div>
                 </div>
@@ -1359,19 +1359,19 @@ Official Seal & Registration Stamp: [Seal]`;
                 <span>JUDICIAL MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Comparison Table: Grounds of Challenge vs Standard of Proof
+                8. Comparison Table: Grounds of Fight vs Standard of Proof
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                How Indian courts allocate the burden of proof when legal heirs challenge a Will:
+                How Indian courts allocate the burden of proof when legal heirs fight a Will:
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 bg-white shadow-xs">
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">
                   <thead>
                     <tr className="bg-slate-50 border-b border-slate-200 text-slate-900 font-extrabold">
-                      <th className="py-3.5 px-4">Ground of Challenge</th>
+                      <th className="py-3.5 px-4">Ground of Fight</th>
                       <th className="py-3.5 px-4">Challenger Initial Burden</th>
-                      <th className="py-3.5 px-4">Propounder Defense Requirement</th>
+                      <th className="py-3.5 px-4">Propounder Defense Rule</th>
                       <th className="py-3.5 px-4">Leading Supreme Court Precedent</th>
                     </tr>
                   </thead>
@@ -1379,7 +1379,7 @@ Official Seal & Registration Stamp: [Seal]`;
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Lack of Sound Mind (Sec 59)</td>
                       <td className="py-3 px-4">Hospital discharge summaries, psychiatric records</td>
-                      <td className="py-3 px-4 font-bold text-emerald-700">Same-day doctor fitness certificate</td>
+                      <td className="py-3 px-4 font-bold text-emerald-700">Same-day doctor fitness paper</td>
                       <td className="py-3 px-4">Murthy v. C. Saradambal (2022 SC)</td>
                     </tr>
                     <tr>
@@ -1389,21 +1389,21 @@ Official Seal & Registration Stamp: [Seal]`;
                       <td className="py-3 px-4">Afsar Shaikh v. Soleman Bibi (1976 SC)</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Beneficiary Taint</td>
-                      <td className="py-3 px-4">Evidence of beneficiary procuring scribe/lawyer</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Heir Taint</td>
+                      <td className="py-3 px-4">Evidence of heir procuring scribe/lawyer</td>
                       <td className="py-3 px-4 font-bold text-rose-700">Dispelling all suspicion beyond doubt</td>
                       <td className="py-3 px-4">Kavita Kanwar v. Pamela Mehta (2020 SC)</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Disinheritance of Children</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Leaving Out of Children</td>
                       <td className="py-3 px-4">Showing Class I status &amp; unnatural exclusion</td>
                       <td className="py-3 px-4">Factual justification clause in Will recitals</td>
                       <td className="py-3 px-4">Shivakumar v. Sharanabasappa (2020 SC)</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-bold text-slate-900">Defective Attestation (Sec 63)</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Defective Witness Signing (Sec 63)</td>
                       <td className="py-3 px-4">Cross-examination of witness in court box</td>
-                      <td className="py-3 px-4">Examining attesting witness under BSA Sec 67</td>
+                      <td className="py-3 px-4">Examining signing witness under BSA Sec 67</td>
                       <td className="py-3 px-4">Janki Narayan Bhoir (2003 SC)</td>
                     </tr>
                   </tbody>
@@ -1425,27 +1425,27 @@ Official Seal & Registration Stamp: [Seal]`;
                   {
                     step: 1,
                     title: "Commission Same-Day MBBS/MD Mental Fitness Certificate",
-                    desc: "On the exact morning of Will execution, have a registered physician conduct a cognitive exam and sign a certificate confirming sound disposing memory and understanding under Section 59.",
+                    desc: "On the exact morning of Will signing, have a filed physician conduct a cognitive exam and sign a paper confirming sound disposing memory and understanding under Section 59.",
                   },
                   {
                     step: 2,
                     title: "Draft Specific Justification Recitals for Excluded Heirs",
-                    desc: "Never disinherit a child silently. Insert a respectful, factual recital detailing lifetime gifts, separate properties already given, or lack of support, satisfying the Shivakumar v. Sharanabasappa standard.",
+                    desc: "Never disinherit a child silently. Insert a respectful, factual recital detailing lifetime gifts, separate assets already given, or lack of support, satisfying the Shivakumar v. Sharanabasappa standard.",
                   },
                   {
                     step: 3,
                     title: "Strictly Exclude All Beneficiaries from Drafting & Signing",
-                    desc: "Ensure the beneficiary never emails the draft, visits the lawyer's chamber, or enters the signing room. Independent execution directly defeats the Kavita Kanwar suspicious circumstance taint.",
+                    desc: "Ensure the heir never emails the draft, visits the lawyer's chamber, or enters the signing room. Independent signing directly defeats the Kavita Kanwar suspicious circumstance taint.",
                   },
                   {
                     step: 4,
                     title: "Select Two Independent, Younger Professional Witnesses",
-                    desc: "Choose attesting witnesses who have zero financial interest in the Will, are 15-20 years younger than the testator, and reside permanently in the same city. Have the doctor sign as one witness.",
+                    desc: "Choose signing witnesses who have zero financial interest in the Will, are 15-20 years younger than the Will maker, and reside permanently in the same city. Have the doctor sign as one witness.",
                   },
                   {
                     step: 5,
                     title: "Complete Sub-Registrar Office Book 3 Registration & Video",
-                    desc: "Present the Will before the Sub-Registrar of Assurances for biometric fingerprinting, and capture an unedited video of the execution session with Section 63 BSA electronic preservation.",
+                    desc: "Present the Will before the SRO of Assurances for biometric fingerprinting, and capture an unedited video of the signing session with Section 63 BSA electronic preservation.",
                   },
                 ].map((item) => (
                   <div
@@ -1479,7 +1479,7 @@ Official Seal & Registration Stamp: [Seal]`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case A: Disinherited Son Challenge in Delhi High Court
+                      Case A: Disinherited Son Fight in Delhi High Court
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">
                       Will Upheld
@@ -1497,11 +1497,11 @@ Official Seal & Registration Stamp: [Seal]`;
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600">Recital Clause:</span>
-                      <span className="font-bold text-slate-900">Detailed Son&rsquo;s US settlement &amp; gifts</span>
+                      <span className="font-bold text-slate-900">Detailed Son&rsquo;s US deal &amp; gifts</span>
                     </div>
                     <div className="pt-1 text-emerald-700 font-bold flex justify-between border-t border-slate-200">
                       <span>Court Holding:</span>
-                      <span>Probate Granted; Challenge Dismissed with Costs</span>
+                      <span>Probate Granted; Fight Dismissed with Costs</span>
                     </div>
                   </div>
                 </div>
@@ -1510,7 +1510,7 @@ Official Seal & Registration Stamp: [Seal]`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case B: Beneficiary Presence in Mumbai Probate Suit
+                      Case B: Heir Presence in Mumbai Probate Suit
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-800">
                       Will Struck Down
@@ -1518,7 +1518,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A younger son engaged his own lawyer to draft his ailing mother&rsquo;s Will leaving 100% of
-                    her South Mumbai flat to him, attended the execution, and kept the unregistered Will secret
+                    her South Mumbai flat to him, attended the signing, and kept the plain Will secret
                     for 3 years until after her death.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
@@ -1528,11 +1528,11 @@ Official Seal & Registration Stamp: [Seal]`;
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-600">Medical Proof:</span>
-                      <span className="font-bold text-slate-900">Zero doctor certificate during hospital care</span>
+                      <span className="font-bold text-slate-900">Zero doctor paper during hospital care</span>
                     </div>
                     <div className="pt-1 text-red-700 font-black flex justify-between border-t border-slate-200">
                       <span>Court Holding:</span>
-                      <span>Probate Refused; Intestate Succession Ordered</span>
+                      <span>Probate Refused; No-Will Estate Ordered</span>
                     </div>
                   </div>
                 </div>
@@ -1549,7 +1549,7 @@ Official Seal & Registration Stamp: [Seal]`;
                 11. Copy-Pasteable Legal Recital Clauses &amp; Fortification Checklist
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Copy and paste these verified clauses into your draft to safeguard against judicial suspicion:
+                Copy and paste these checked clauses into your draft to safeguard against judicial suspicion:
               </p>
 
               {/* Template Box 1: Disinheritance Recital */}
@@ -1558,7 +1558,7 @@ Official Seal & Registration Stamp: [Seal]`;
                   <div className="flex items-center gap-2">
                     <FileText className="w-4 h-4 text-[#C65378]" />
                     <span className="font-extrabold text-xs sm:text-sm text-slate-900">
-                      Clause 1: Disinheritance / Unequal Distribution Recital (Shivakumar Protection)
+                      Clause 1: Leaving Out / Unequal Split Recital (Shivakumar Protection)
                     </span>
                   </div>
                   <button
@@ -1590,7 +1590,7 @@ I expressly state that my exclusion of [Name of Son 1] from my residential prope
                   <div className="flex items-center gap-2">
                     <HeartHandshake className="w-4 h-4 text-[#C65378]" />
                     <span className="font-extrabold text-xs sm:text-sm text-slate-900">
-                      Clause 2: Doctor Sound Disposing Mind Certificate (Section 59 Compliance)
+                      Clause 2: Doctor Sound Disposing Mind Paper (Section 59 Compliance)
                     </span>
                   </div>
                   <button
@@ -1637,11 +1637,11 @@ Official Seal & Registration Stamp: [Seal]`}
                 <div className="text-xs text-slate-700 space-y-2 leading-relaxed">
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-[#C65378]">1.</span>
-                    <span><strong>Same-Day Doctor Examination:</strong> Obtain cognitive certificate on the date of execution.</span>
+                    <span><strong>Same-Day Doctor Examination:</strong> Obtain cognitive paper on the date of signing.</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-[#C65378]">2.</span>
-                    <span><strong>Beneficiary Exclusion:</strong> Keep all legatees outside during drafting and signing.</span>
+                    <span><strong>Heir Exclusion:</strong> Keep all legatees outside during drafting and signing.</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-[#C65378]">3.</span>
@@ -1649,7 +1649,7 @@ Official Seal & Registration Stamp: [Seal]`}
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-[#C65378]">4.</span>
-                    <span><strong>SRO Book 3 Registration:</strong> Register voluntarily before the Sub-Registrar.</span>
+                    <span><strong>SRO Book 3 Filing:</strong> Register voluntarily before the SRO.</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="font-bold text-[#C65378]">5.</span>
@@ -1666,7 +1666,7 @@ Official Seal & Registration Stamp: [Seal]`}
                 <span>INSTITUTIONAL CREDENTIALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Legal Backing &amp; Senior Succession Advocate Profile
+                12. Legal Backing &amp; Senior Estate Lawyer Profile
               </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
@@ -1674,9 +1674,9 @@ Official Seal & Registration Stamp: [Seal]`}
                     AAM
                   </div>
                   <div>
-                    <h3 className="font-black text-slate-900 text-lg">Advocate Anuj Anand Malik</h3>
+                    <h3 className="font-black text-slate-900 text-lg">Lawyer Anuj Anand Malik</h3>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; Testamentary Counsel • AMA Legal Solutions
+                      Senior Estate &amp; Will Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
                       Bar Council of Delhi • Supreme Court &amp; High Court of Delhi Practice
@@ -1684,10 +1684,10 @@ Official Seal & Registration Stamp: [Seal]`}
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Advocate Anuj Anand Malik leads the testamentary succession and estate dispute practice at
-                  AMA Legal Solutions. With extensive experience in contentious probate petitions, testamentary
-                  caveat litigation, suspicious circumstances defense under <em>Kavita Kanwar</em>, and
-                  high-stakes family property settlements across Delhi NCR, Mumbai, Bengaluru, and Chandigarh,
+                  Lawyer Anuj Anand Malik leads the Will estate and estate fight practice at
+                  AMA Legal Solutions. With extensive experience in contentious probate petitions, Will
+                  caveat court fights, suspicious circumstances defense under <em>Kavita Kanwar</em>, and
+                  high-stakes family asset settlements across Delhi NCR, Mumbai, Bengaluru, and Chandigarh,
                   the firm advises high-net-worth families, senior citizens, and NRIs on drafting unchallengeable
                   Wills.
                 </p>
@@ -1751,27 +1751,27 @@ Official Seal & Registration Stamp: [Seal]`}
                 <span>STATUTORY CITATIONS &amp; PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Judicial Portals
+                14. Legal Citations &amp; Official Judicial Portals
               </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 text-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Provisions of Indian Succession &amp; Evidence Laws:
+                    Governing Rules of Indian Succession &amp; Evidence Laws:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Indian Succession Act, 1925:</strong> Section 59 (testamentary capacity),
-                      Section 61 (fraud, coercion, undue influence), Section 63 (execution of unprivileged
-                      Wills), Section 67 (bequest to attesting witness void).
+                      <strong>Indian Succession Act, 1925:</strong> Section 59 (Will capacity),
+                      Section 61 (fraud, coercion, undue influence), Section 63 (signing of unprivileged
+                      Wills), Section 67 (bequest to signing witness void).
                     </li>
                     <li>
                       <strong>Bharatiya Sakshya Adhiniyam, 2023:</strong> Section 63 (electronic records &amp;
-                      video evidence admissibility), Section 67 (proof of execution of document required by law
+                      video evidence admissibility), Section 67 (proof of signing of paper required by law
                       to be attested).
                     </li>
                     <li>
-                      <strong>Registration Act, 1908:</strong> Section 18(e) (optional registration of Wills),
-                      Section 58 &amp; 60 (presumption of due execution on registration in Book 3).
+                      <strong>Filing Act, 1908:</strong> Section 18(e) (a choice filing of Wills),
+                      Section 58 &amp; 60 (presumption of due signing on filing in Book 3).
                     </li>
                     <li>
                       <strong>Supreme Court of India:</strong> <em>Kavita Kanwar v. Pamela Mehta (2020)</em>,
@@ -1813,7 +1813,7 @@ Official Seal & Registration Stamp: [Seal]`}
                 {/* Hub-and-Spoke Links */}
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Calculators &amp; Legal Guides
+                    Related WillDrafting Tools &amp; Legal Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1832,31 +1832,53 @@ Official Seal & Registration Stamp: [Seal]`}
                       href="/tools/ancestral-vs-self-acquired-property-classifier"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Ancestral vs Self-Acquired Classifier
+                      Family vs Self-Acquired Classifier
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Capital Gains Calculator
+                      Inherited Asset Capital Gains Tool
                     </Link>
                     <Link
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Registration Support Desk
+                      Will Filing Support Desk
                     </Link>
                     <Link
                       href="/tools"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      All Legal Succession Tools
+                      All Legal Estate Tools
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1869,21 +1891,21 @@ Official Seal & Registration Stamp: [Seal]`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section
-                63 attestation audits, and Kavita Kanwar suspicious circumstances defense.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section
+                63 witness signing audits, and Kavita Kanwar suspicious circumstances defense.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1900,8 +1922,8 @@ Official Seal & Registration Stamp: [Seal]`}
                   Draft an Unchallengeable Legal Will Online
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Our guided succession engine automatically integrates Section 59 capacity recitals,
-                  Shivakumar disinheritance justifications, and Section 67 witness safeguards.
+                  Our guided estate engine automatically integrates Section 59 capacity recitals,
+                  Shivakumar leaving out justifications, and Section 67 witness safeguards.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1926,15 +1948,15 @@ Official Seal & Registration Stamp: [Seal]`}
                   Excluding a Child or Facing a Caveat Threat?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our senior succession litigators review existing Wills, structure video attestation
-                  protocols, and manage Sub-Registrar Book 3 registrations pan-India.
+                  Our senior estate litigators review existing Wills, structure video witness signing
+                  protocols, and manage SRO Book 3 registrations pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1953,13 +1975,13 @@ Official Seal & Registration Stamp: [Seal]`}
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 67 Immunity:</strong> Prevents accidental forfeiture by beneficiary witnesses.
+                      <strong>Section 67 Immunity:</strong> Prevents accidental forfeiture by heir witnesses.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Evidence Act BSA Proof:</strong> Complete video attestation protocol.
+                      <strong>Evidence Act BSA Proof:</strong> Complete video witness signing protocol.
                     </span>
                   </li>
                 </ul>
@@ -1976,7 +1998,7 @@ Official Seal & Registration Stamp: [Seal]`}
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Risk Calculator</span>
+          <span>Risk Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

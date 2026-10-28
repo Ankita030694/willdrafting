@@ -163,7 +163,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "gidc-papers",
     label: "GIDC Factory Plot Lease Papers",
-    detail: "Plot allotment letter and lease papers for GIDC factory sheds or industrial plots.",
+    detail: "Plot allotment letter and lease papers for GIDC factory sheds or plant plots.",
     checked: false,
   },
   {
@@ -261,11 +261,11 @@ export default function GujaratLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 62 characters (Complies with SEO & User Request) */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Gujarat: Business Succession &amp; Wills
+                Will Drafting Services in Gujarat: Business Estate &amp; Wills
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally compliant Will for your home assets, HUF trading assets, GIDC industrial units, and AnyRoR farm land parcels in Gujarat. Consult seasoned estate lawyers for Garvi Gujarat SRO signing and family business succession planning.
+                Draft a legally compliant Will for your home assets, HUF trading assets, GIDC plant units, and AnyRoR farm land parcels in Gujarat. Consult seasoned estate lawyers for Garvi Gujarat SRO signing and family business estate planning.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -321,7 +321,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Gujarat Estate &amp; Business Succession Blueprint
+                  Gujarat Estate &amp; Business Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -366,7 +366,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Gujarat High Court Precedents
@@ -519,16 +519,16 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>GUJARAT WILL MAKING GUIDE</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Gujarat
+                  Key Highlights: Will Making &amp; Filing in Gujarat
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Filing a Will is optional under Section 18(e) of the Registration Act, 1908. A Will signed on plain paper before two witnesses is valid. Still, Book III filing on the Garvi Gujarat portal gives strong proof against family fights.
+                      Filing a Will is a choice under Section 18(e) of the Filing Act, 1908. A Will signed on plain paper before two witnesses is valid. Still, Book III filing on the Garvi Gujarat portal gives strong proof against family fights.
                     </p>
                   </div>
 
@@ -558,7 +558,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                       <span>AnyRoR 7/12 &amp; Business Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will makes e-Dhara (Pherfar) land updates smooth on AnyRoR, speeds up AMC, SMC, and VMC flat tax updates, and sets clear rules for HUF family businesses.
+                      A filed Will makes e-Dhara (Pherfar) land updates smooth on AnyRoR, speeds up AMC, SMC, and VMC flat tax updates, and sets clear rules for HUF family businesses.
                     </p>
                   </div>
                 </div>
@@ -596,7 +596,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Wills in Gujarat follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Hindu Succession Act, 1956</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Gujarat Tenancy and Farm Lands Act, 1948</strong>. Any adult with a sound mind can pass their own homes, shops, family firms, and farm land to chosen heirs.
+                  Wills in Gujarat follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Hindu Succession Act, 1956</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Gujarat Tenancy and Farm Lands Act, 1948</strong>. Any adult with a sound mind can pass their own homes, shops, family firms, and farm land to chosen heirs.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Gujarat has a strong business culture. A family estate often holds flats in Ahmedabad or Surat, textile or diamond offices, GIDC factory leases in Makarpura or Naroda, and farm land in Saurashtra or Central Gujarat. Careful drafting lets your heirs take over assets smoothly without business stops or court fights.
@@ -640,7 +640,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Neutral Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not get any gift or property in the Will (Section 67).
+                    Witnesses and their spouses must not get any gift or asset in the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -654,10 +654,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>FILING STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Gujarat?
+                  2. Is Will Filing Needed in Gujarat?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, filing a Will is <strong>optional</strong> in Gujarat. An unfiled Will on plain A4 paper signed before two witnesses meets all rules under Section 63 of the Indian Succession Act.
+                  Under Section 18(e) of the Filing Act, 1908, filing a Will is <strong>a choice</strong> in Gujarat. An unfiled Will on plain A4 paper signed before two witnesses meets all rules under Section 63 of the Indian Succession Act.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Still, urban homes in Ahmedabad, Surat, and Vadodara and farm land on AnyRoR have high value. Lawyers strongly advise filing your Will at the SRO. A Book III record gives strong proof and stops relatives from blocking your wishes on weak grounds.
@@ -670,8 +670,8 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Key Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Garvi Gujarat SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Garvi Gujarat SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -737,7 +737,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     Gujarat High Court Rulings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    In <em>Minaxiben Shashikant Patel v. Dave Sundarlal Chunilal</em> (AIR 2002 Guj 122) and <em>Kiritbhai Dayabhai Patel v. State of Gujarat</em> (2018), the Gujarat High Court ruled that heirs can claim rights under a Will in Gujarat without court probate. A registered Will works directly for AnyRoR land updates, AMC/SMC/VMC tax transfers, and bank claims.
+                    In <em>Minaxiben Shashikant Patel v. Dave Sundarlal Chunilal</em> (AIR 2002 Guj 122) and <em>Kiritbhai Dayabhai Patel v. State of Gujarat</em> (2018), the Gujarat High Court ruled that heirs can claim rights under a Will in Gujarat without court probate. A filed Will works directly for AnyRoR land updates, AMC/SMC/VMC tax transfers, and bank claims.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -747,7 +747,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Optional Filing: Family Fights
+                    A Choice Filing: Family Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Gujarat District Courts?
@@ -774,7 +774,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   4. Gujarat SRO Directory: Garvi Gujarat Online Booking
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gujarat operates over 250 SRO offices administered by the Inspector General of Registration (Superintendent of Stamps &amp; Inspector General of Registration Gujarat). Under Section 32 of the Registration Act, your Will can be registered at the SRO having area over your residence or where any portion of your land and flats is situated.
+                  Gujarat operates over 250 SRO offices administered by the Inspector General of Filing (Superintendent of Stamps &amp; Inspector General of Filing Gujarat). Under Section 32 of the Filing Act, your Will can be filed at the SRO having area over your residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -852,7 +852,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         onClick={handleStartDraft}
                         className="font-bold text-[#C65378] hover:underline"
                       >
-                        Schedule Gujarat SRO Will Registration →
+                        Schedule Gujarat SRO Will Filing →
                       </a>
                     </div>
                   </div>
@@ -871,7 +871,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Gujarat vary from high-rise home assets in Ahmedabad and Surat, heritage shop havelis, and petrochemical/chemical plants in Bharuch and Jamnagar, to farm farmland in Saurashtra. Our estate lawyers deliver customized legal drafting, Garvi Gujarat portal appointment scheduling, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate holdings across Gujarat vary from high-rise home assets in Ahmedabad and Surat, heritage shop havelis, and petrochemical/chemical plants in Bharuch and Jamnagar, to farm farmland in Saurashtra. Our estate lawyers deliver customized legal drafting, Garvi Gujarat portal appointment scheduling, and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -903,7 +903,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Ahmedabad and Gandhinagar</strong> for luxury high-rises, shop office suites, and family business holdings. Seamlessly integrates AMC property tax name change, AUDA approvals, and GIFT City demat investment accounts without family conflict.
+                      Specialized <strong>Will drafting services in Ahmedabad and Gandhinagar</strong> for luxury high-rises, shop office suites, and family business holdings. Seamlessly integrates AMC asset tax name change, AUDA approvals, and GIFT City demat investment accounts without family conflict.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -958,7 +958,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Surat</strong> for diamond trading firms, textile manufacturing looms, and premium home apartments in Vesu and Piplod. Full succession clauses for proprietary business entities, partnership capital, and SMC municipal flat transmissions.
+                      Customized <strong>Will drafting services in Surat</strong> for diamond trading firms, textile manufacturing looms, and premium home apartments in Vesu and Piplod. Full estate clauses for proprietary business entities, partnership capital, and SMC city flat transmissions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -967,13 +967,13 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Nanpura Jilla Seva Sadan &amp; Athwa Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HUF business partitioning, proprietary capital succession, and expedited Book III signing.
+                        HUF business partitioning, proprietary capital estate, and expedited Book III signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Diamond &amp; Textile Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Diamond &amp; Textile Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -992,7 +992,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Cultural &amp; Industrial Hub
+                        Cultural &amp; Plant Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Vadodara (Kothi &amp; Akota)
@@ -1021,13 +1021,13 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kothi Compound &amp; Akota Revenue Bhavan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full estate planning, VMC property record name change, and doorstep biometric signing.
+                        Full estate planning, VMC asset record name change, and doorstep biometric signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Home</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1046,7 +1046,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Saurashtra Industrial Gateway
+                        Saurashtra Plant Gateway
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Rajkot (Civil Court &amp; Nana Mava)
@@ -1066,7 +1066,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Rajkot</strong> for industrial engineering enterprises, casting foundry units in Aji GIDC, and modern home developments on Kalawad Road. Protects family legacy through tailored executor powers and RMC property tax succession.
+                      Specialized <strong>Will drafting services in Rajkot</strong> for plant engineering enterprises, casting foundry units in Aji GIDC, and modern home developments on Kalawad Road. Protects family legacy through tailored executor powers and RMC asset tax estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1075,7 +1075,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Shroff Road Collectorate &amp; Nana Mava</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Saurashtra trade enterprise continuity, HUF property split, and Garvi Gujarat slot booking.
+                        Saurashtra trade enterprise continuity, HUF asset split, and Garvi Gujarat slot booking.
                       </p>
                     </div>
                   </div>
@@ -1128,7 +1128,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bahumali Bhavan, Nawapara</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Maritime business wealth management, coastal land succession, and Sub-Registrar Book III signing.
+                        Maritime business wealth management, coastal land estate, and SRO Book III signing.
                       </p>
                     </div>
                   </div>
@@ -1172,7 +1172,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Jamnagar</strong> addressing brass parts manufacturing units, home bungalows in Patel Colony, and petrochemical vendor contracts. Prevents without a Will fights through precise succession clauses and guardian designations.
+                      Authoritative <strong>Will drafting services in Jamnagar</strong> addressing brass parts manufacturing units, home bungalows in Patel Colony, and petrochemical vendor contracts. Prevents without a Will fights through precise estate clauses and guardian designations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1181,13 +1181,13 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Lal Bungalow Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Brass industrial enterprise wills, home property succession, and senior citizen home signing.
+                        Brass plant enterprise wills, home asset estate, and senior citizen home signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Refinery &amp; Industrial</span>
+                    <span className="text-xs font-bold text-slate-500">Refinery &amp; Plant</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1206,7 +1206,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Chemical &amp; Industrial Capital
+                        Chemical &amp; Plant Capital
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Bharuch &amp; Ankleshwar
@@ -1225,7 +1225,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Bharuch and Ankleshwar</strong> for chemical plants, GIDC industrial plots, and riverfront assets. Codifies GIDC lease transfer compliance, partner equity, and smooth transfer of movable securities.
+                      Tailored <strong>Will drafting services in Bharuch and Ankleshwar</strong> for chemical plants, GIDC plant plots, and riverfront assets. Codifies GIDC lease transfer compliance, partner equity, and smooth transfer of cash securities.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1234,7 +1234,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Seva Sadan Bharuch &amp; GIDC Ankleshwar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GIDC leasehold rights succession, industrial asset bequeathal, and Garvi Gujarat digital token management.
+                        GIDC leasehold rights estate, plant asset bequeathal, and Garvi Gujarat digital token management.
                       </p>
                     </div>
                   </div>
@@ -1287,7 +1287,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bhuj Court Compound &amp; Junagadh Seva Sadan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Port enterprise succession, farm AnyRoR name change guidance, and NRG estate coordination.
+                        Port enterprise estate, farm AnyRoR name change guidance, and NRG estate coordination.
                       </p>
                     </div>
                   </div>
@@ -1316,10 +1316,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to Garvi Gujarat Registration
+                  6. Step-by-Step SOP: Drafting to Garvi Gujarat Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal standard operating step to create, execute, and register your Will before the Sub-Registrar in Gujarat:
+                  Follow this checked 5-stage legal standard operating step to create, execute, and register your Will before the SRO in Gujarat:
                 </p>
               </div>
 
@@ -1333,7 +1333,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of municipal flats, HUF shares, AnyRoR survey numbers, GIDC leases, and demat accounts.
+                      Compile complete details of city flats, HUF shares, AnyRoR survey numbers, GIDC leases, and demat accounts.
                     </p>
                   </div>
                 </div>
@@ -1347,7 +1347,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                       Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Draft customized legal clauses covering revocation of past wills, survivorship, business succession, and minor guardianship.
+                      Draft customized legal clauses covering revocation of past wills, survivorship, business estate, and minor child care.
                     </p>
                   </div>
                 </div>
@@ -1404,23 +1404,23 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden people, or persons with medical mobility restrictions residing across Gujarat, traveling to the SRO office can pose serious health fights. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence, nursing home, or hospital to register a Will.
+                  For senior citizens, bedridden people, or persons with medical mobility restrictions residing across Gujarat, traveling to the SRO office can pose serious health fights. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private residence, nursing home, or hospital to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates Across Gujarat:
+                  How Doorstep SRO Filing Operates Across Gujarat:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD physician certifies that the senior citizen is of sound testamentary mind but medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD physician certifies that the senior citizen is of sound Will mind but medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1428,7 +1428,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the areaal Gujarat Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the areaal Gujarat SRO.</span>
                     </div>
                   </div>
 
@@ -1444,7 +1444,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your residence with portable biometric thumb scanners and webcams to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your residence with portable biometric thumb scanners and webcams to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1459,10 +1459,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Gujarat SRO offices
+                  8. Paper Checklist for Gujarat SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1509,10 +1509,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Gujarat Property Types: HUF Firms, AnyRoR Land &amp; GIDC
+                  9. Gujarat Asset Types: HUF Firms, AnyRoR Land &amp; GIDC
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Gujarat vary considerably depending on the nature of property title and regulatory authority:
+                  Estate steps in Gujarat vary considerably depending on the nature of asset title and regulatory office:
                 </p>
               </div>
 
@@ -1522,7 +1522,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     Family Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    HUF Trading &amp; Business Succession
+                    HUF Trading &amp; Business Estate
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Section 30 of the Hindu Succession Act, an person coparcener can bequeath their undivided share in an HUF. Drafting clear rules for proprietary capital, company equity, and managerial handover prevents paralyzing business deadlocks.
@@ -1534,22 +1534,22 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     Farm Lands
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    AnyRoR 7/12 &amp; Farmland Succession
+                    AnyRoR 7/12 &amp; Farmland Estate
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farm land bequests must satisfy Section 63 of the Gujarat Tenancy and Farm Lands Act. Registered Wills submitted to the Talathi make sure smooth e-Dhara (Pherfar) name change on AnyRoR without fights over farm status.
+                    Farm land bequests must satisfy Section 63 of the Gujarat Tenancy and Farm Lands Act. Filed Wills submitted to the Talathi make sure smooth e-Dhara (Pherfar) name change on AnyRoR without fights over farm status.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Industrial Enterprises
+                    Plant Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     GIDC Factory Plots &amp; Leases
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Industrial factory plots in GIDC estates (Vatva, Naroda, Makarpura, Sachin, Aji) require precise Will of leasehold rights and machinery, enabling seamless transfer under GIDC divisional guidelines.
+                    Plant factory plots in GIDC estates (Vatva, Naroda, Makarpura, Sachin, Aji) require precise Will of leasehold rights and machinery, enabling seamless transfer under GIDC divisional guidelines.
                   </p>
                 </div>
               </div>
@@ -1563,10 +1563,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Garvi Gujarat Registration Fees &amp; Charges
+                  10. Official Garvi Gujarat Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyances or gift deeds that attract 4.9% stamp duty plus 1% signing surcharge in Gujarat, testamentary Wills are completely exempt from stamp duty. Government signing fees in Gujarat are purely nominal:
+                  Unlike asset conveyances or gift deeds that attract 4.9% stamp duty plus 1% signing surcharge in Gujarat, Will Wills are completely exempt from stamp duty. Government signing fees in Gujarat are purely nominal:
                 </p>
               </div>
 
@@ -1576,7 +1576,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1586,14 +1586,14 @@ export default function GujaratLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Gujarat</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Garvi Gujarat via Cyber Treasury Portal</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Processing Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹200</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1639,7 +1639,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Gujarat Will creator</span>
+                        <span>Free Gujarat Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1712,7 +1712,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
@@ -1760,7 +1760,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property signing in Gujarat:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset signing in Gujarat:
                 </p>
               </div>
 
@@ -1821,10 +1821,10 @@ export default function GujaratLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1833,7 +1833,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
                     Gujarat Stamp Act 1958
                   </span>
                   <p className="text-xs text-slate-600">
-                    Legal Stamp Duty Exemption for Testamentary Wills across Gujarat.
+                    Legal Stamp Duty Exemption for Will Wills across Gujarat.
                   </p>
                 </div>
 
@@ -1892,7 +1892,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Gujarat Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Gujarat Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1911,7 +1911,7 @@ export default function GujaratLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Garvi Gujarat SRO Registered &amp; AnyRoR Land Name Change Compliant</span>
+              <span>Garvi Gujarat SRO Filed &amp; AnyRoR Land Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

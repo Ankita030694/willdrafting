@@ -128,7 +128,7 @@ export default function IndemnityBondFormatPage() {
         name: "Indemnity Bond Format for Deceased Bank Account Claim",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted legal indemnity bond format with two-surety undertaking, affidavit of disclaimer NOC, and state stamp paper guide for claiming.",
+          "Lawyer-vetted legal indemnity bond format with two-surety undertaking, sworn note of disclaimer NOC, and state stamp paper guide for claiming.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -151,7 +151,7 @@ export default function IndemnityBondFormatPage() {
             name: "What is an Indemnity Bond for a deceased bank account claim?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Indemnity Bond for a deceased bank claim is a legally binding contract executed under Section 124 of the Indian Contract Act, 1872. Legal heirs promise to compensate the bank for any financial loss or legal expense if another claimant or legal heir later challenges the release of deceased depositor funds.",
+              text: "An Indemnity Bond for a deceased bank claim is a legally binding contract signed under Section 124 of the Indian Contract Act, 1872. Legal heirs promise to compensate the bank for any financial loss or legal expense if another claimant or legal heir later fights the release of deceased depositor funds.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function IndemnityBondFormatPage() {
             name: "When does an Indian bank require an Indemnity Bond instead of a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under RBI Master Circular guidelines, when a depositor dies without registering a nominee or survivor clause, banks allow settlement on an Indemnity Bond with two independent sureties up to specific internal board thresholds (typically ₹1 Lakh to ₹5 Lakhs, or higher in select banks). If balances exceed this threshold or disputes exist, banks insist on a court Succession Certificate.",
+              text: "Under RBI Master Circular guidelines, when a depositor dies without registering a nominee or survivor clause, banks allow deal on an Indemnity Bond with two independent sureties up to specific internal board thresholds (typically ₹1 Lakh to ₹5 Lakhs, or higher in select banks). If balances exceed this threshold or fights exist, banks insist on a court Estate Paper.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function IndemnityBondFormatPage() {
             name: "What is the non-judicial stamp paper value required for an indemnity bond?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Stamp duty is governed by state stamp legislation. In Maharashtra, it is ₹500 under Article 35 of the Maharashtra Stamp Act. In Delhi, Uttar Pradesh, Tamil Nadu, and West Bengal, it is typically ₹100 under Article 34 of the Indian Stamp Act. In Karnataka, it is ₹200. The bond must be executed on non-judicial stamp paper and notarized.",
+              text: "Stamp duty is governed by state stamp legislation. In Maharashtra, it is ₹500 under Article 35 of the Maharashtra Stamp Act. In Delhi, Uttar Pradesh, Tamil Nadu, and West Bengal, it is typically ₹100 under Article 34 of the Indian Stamp Act. In Karnataka, it is ₹200. The bond must be signed on non-judicial stamp paper and notarized.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function IndemnityBondFormatPage() {
             name: "Does a nominee need to submit an indemnity bond to withdraw deceased funds?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 45ZA of the Banking Regulation Act, 1949 and RBI directives, payment to a valid registered nominee gives the bank a complete statutory discharge. Banks cannot demand an indemnity bond, surety, or succession certificate from a registered nominee unless restrained by a civil court injunction.",
+              text: "No. Under Section 45ZA of the Banking Regulation Act, 1949 and RBI directives, payment to a valid filed nominee gives the bank a complete legal discharge. Banks cannot demand an indemnity bond, surety, or estate paper from a filed nominee unless restrained by a civil court injunction.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function IndemnityBondFormatPage() {
             name: "Can one legal heir claim the entire bank balance if other heirs sign an NOC?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. When multiple legal heirs survive, they can execute a notarized Affidavit of Disclaimer or No Objection Certificate (NOC) relinquishing their share in favor of one designated claimant heir. The claimant heir then submits the Indemnity Bond and receives the full payout.",
+              text: "Yes. When multiple legal heirs survive, they can execute a notarized Sworn Note of Disclaimer or No Objection Paper (NOC) relinquishing their share in favor of one designated claimant heir. The claimant heir then submits the Indemnity Bond and receives the full payout.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function IndemnityBondFormatPage() {
             name: "What is the difference between an Indemnity Bond and a court Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Indemnity Bond is an out-of-court contractual settlement executed within days on stamp paper with sureties. A Succession Certificate is a judicial order issued by a civil court under Section 372 of the Indian Succession Act, 1925, requiring 6 to 18 months, newspaper citations, and 2% to 4% court fees.",
+              text: "An Indemnity Bond is an out-of-court contractual deal signed within days on stamp paper with sureties. A Estate Paper is a judicial order issued by a civil court under Section 372 of the Indian Succession Act, 1925, requiring 6 to 18 months, newspaper citations, and 2% to 4% court fees.",
             },
           },
           {
@@ -215,7 +215,7 @@ export default function IndemnityBondFormatPage() {
             name: "What happens if an undisclosed legal heir later files a claim with the bank?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Sections 124 and 128 of the Indian Contract Act, 1872, the signing legal heirs and their sureties are jointly and severally liable to reimburse the bank for all damages, court costs, and legal fees incurred in defending or settling the dispute.",
+              text: "Under Sections 124 and 128 of the Indian Contract Act, 1872, the signing legal heirs and their sureties are jointly and severally liable to reimburse the bank for all damages, court costs, and legal fees incurred in defending or settling the fight.",
             },
           },
           {
@@ -223,7 +223,7 @@ export default function IndemnityBondFormatPage() {
             name: "How long do banks take to settle deceased claims after receiving the indemnity bond?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under RBI circular instructions, commercial banks must settle deceased depositor claims within 15 calendar days from the date of submission of complete claim documents, including the duly stamped indemnity bond, surety affidavits, and legal heir proofs.",
+              text: "Under RBI circular instructions, shop banks must settle deceased depositor claims within 15 calendar days from the date of submission of complete claim papers, including the duly stamped indemnity bond, surety sworn notes, and legal heir proofs.",
             },
           },
         ],

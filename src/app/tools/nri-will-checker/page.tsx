@@ -129,7 +129,7 @@ export default function NriWillCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive cross-border estate diagnostic tool for NRIs, OCIs, and PIOs to determine if a separate Indian Will is legally necessary under.",
+          "Free cross-border estate diagnostic tool for NRIs, OCIs, and PIOs to determine if a separate Indian Will is legally necessary under.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -162,7 +162,7 @@ export default function NriWillCheckerPage() {
             name: "Can an NRI or OCI inherit agricultural land in India through a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 6(5) of the Foreign Exchange Management Act (FEMA), an NRI or OCI can inherit agricultural land and farmhouses from a resident Indian. However, FEMA rules say you cannot sell or gift that farmland to another NRI. You can only sell it to an Indian citizen who lives in India.",
+              text: "Yes. Under Section 6(5) of the Foreign Exchange Management Act (FEMA), an NRI or OCI can inherit farm land and farmhouses from a resident Indian. However, FEMA rules say you cannot sell or gift that farmland to another NRI. You can only sell it to an Indian citizen who lives in India.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function NriWillCheckerPage() {
             name: "Does an NRI have to travel to India to sign or register an Indian Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. You can sign your Indian Will in your country of residence on plain A4 paper. Under Section 63 of the Indian Succession Act, you only need to sign before two adult witnesses who are physically present with you. Will registration is optional under Section 18 of the Registration Act. An unregistered Will on plain paper is 100% legal.",
+              text: "No. You can sign your Indian Will in your country of residence on plain A4 paper. Under Section 63 of the Indian Succession Act, you only need to sign before two adult witnesses who are physically present with you. Will filing is a choice under Section 18 of the Filing Act. An plain Will on plain paper is 100% legal.",
             },
           },
           {
@@ -178,7 +178,7 @@ export default function NriWillCheckerPage() {
             name: "What is Section 228 of the Indian Succession Act, and why is it a problem?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 228 applies when a Will is proved in a foreign court. Indian banks and land registries do not accept foreign court decrees directly. Your heirs must file a second case in an Indian court for Letters of Administration with Will Annexed. This process requires apostilled court records, newspaper notices, and court hearings that add heavy costs and 1 to 2 years of delays.",
+              text: "Section 228 applies when a Will is proved in a foreign court. Indian banks and land registries do not accept foreign court decrees directly. Your heirs must file a second case in an Indian court for Letters of Care with Will Annexed. This process requires apostilled court records, newspaper notices, and court hearings that add heavy costs and 1 to 2 years of delays.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function NriWillCheckerPage() {
             name: "How do NRI heirs repatriate money from inherited Indian assets abroad?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The Reserve Bank of India allows NRI heirs to send up to 1 million US Dollars abroad each financial year from an NRO account. You can send funds from property sales, bank deposits, and shares. Your chartered accountant must file Form 15CA and Form 15CB to certify tax compliance before the bank wires the funds.",
+              text: "The Reserve Bank of India allows NRI heirs to send up to 1 million US Dollars abroad each financial year from an NRO account. You can send funds from asset sales, bank deposits, and shares. Your chartered accountant must file Form 15CA and Form 15CB to certify tax compliance before the bank wires the funds.",
             },
           },
           {
@@ -210,7 +210,7 @@ export default function NriWillCheckerPage() {
             name: "Is a US Revocable Living Trust effective for real estate located in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Indian land registries and municipal bodies do not recognize US private living trusts for property title transfers. Moving Indian real estate into a foreign trust also breaks FEMA regulations. You must use a valid Indian Will to pass on Indian property cleanly.",
+              text: "No. Indian land registries and city bodies do not recognize US private living trusts for asset title transfers. Moving Indian real estate into a foreign trust also breaks FEMA regulations. You must use a valid Indian Will to pass on Indian property cleanly.",
             },
           },
           {
@@ -218,7 +218,7 @@ export default function NriWillCheckerPage() {
             name: "Does an Indian Will need Indian stamp paper or consular attestation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No Indian stamp paper is needed. Under the Indian Stamp Act, Wills are completely exempt from stamp duty. While getting your signature notarized or verified at an Indian Consulate adds strong proof of identity, it is not mandatory. Signing before two independent adult witnesses meets all legal rules under Section 63.",
+              text: "No Indian stamp paper is needed. Under the Indian Stamp Act, Wills are completely exempt from stamp duty. While getting your signature notarized or checked at an Indian Consulate adds strong proof of identity, it is not needed. Signing before two independent adult witnesses meets all legal rules under Section 63.",
             },
           },
         ],

@@ -51,20 +51,20 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-basis", label: "1. Statutory Basis: Indian Succession Act & TN Rules" },
+  { id: "statutory-basis", label: "1. Legal Basis: Indian Succession Act & TN Rules" },
   { id: "tamil-uyil-format", label: "2. Complete Uyil Sasanam Format: Native Tamil Draft" },
   { id: "english-translation", label: "3. English Translation: Tamil Uyil Clauses Explained" },
-  { id: "clause-selector", label: "4. Interactive Clause Selector: Tailor Your Uyil" },
+  { id: "clause-selector", label: "4. Free Clause Selector: Tailor Your Uyil" },
   { id: "chennai-probate-rules", label: "5. Chennai Probate Moat: Section 213 High Court Rules" },
-  { id: "sro-fee-calculator", label: "6. Tamil Nadu SRO Fee Calculator & Registration Rules" },
-  { id: "comparison-table", label: "7. Comparison: Registered Uyil vs Settlement vs Patta" },
-  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to Registration in TN" },
+  { id: "sro-fee-calculator", label: "6. Tamil Nadu SRO Fee Tool & Filing Rules" },
+  { id: "comparison-table", label: "7. Comparison: Filed Uyil vs Deal vs Patta" },
+  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to Filing in TN" },
   { id: "case-studies", label: "9. Practical Case Studies: Chennai, Madurai & Kovai" },
-  { id: "checklist-medical-cert", label: "10. Sub-Registrar Document Checklist & Medical Cert" },
-  { id: "succession-tools", label: "11. Contextual Estate Calculators & Succession Tools" },
-  { id: "legal-backing", label: "12. Legal Backing: Senior Counsel Succession Profile" },
+  { id: "checklist-medical-cert", label: "10. SRO Paper Checklist & Medical Cert" },
+  { id: "succession-tools", label: "11. Contextual Estate Tools & Estate Tools" },
+  { id: "legal-backing", label: "12. Legal Backing: Senior Counsel Estate Profile" },
   { id: "faqs", label: "13. Frequently Asked Questions: Tamil Uyil Sasanam" },
-  { id: "statutory-citations", label: "14. Official Tamil Nadu Statutory References & Acts" },
+  { id: "statutory-citations", label: "14. Official Tamil Nadu Legal References & Acts" },
 ];
 
 const FAQS_DATA = [
@@ -82,11 +82,11 @@ const FAQS_DATA = [
   },
   {
     q: "உயிலில் எத்தனை சாட்சிகள் கையெழுத்திட வேண்டும்?",
-    a: "சட்டப்பிரிவு 63(c)-ன் படி குறைந்தது 2 சாட்சிகள் (Attesting Witnesses) உயில் எழுதுபவர் கையெழுத்திடுவதை நேரில் பார்த்துவிட்டு கையெழுத்திட வேண்டும். சாட்சிகள் உயிலின் மூலம் சொத்து பலன் பெறும் பயனாளிகளாக (Beneficiaries) இருக்கக்கூடாது. இது பிரிவு 67-ன் கீழ் மிக முக்கிய நிபந்தனையாகும்.",
+    a: "சட்டப்பிரிவு 63(c)-ன் படி குறைந்தது 2 சாட்சிகள் (Signing Witnesses) உயில் எழுதுபவர் கையெழுத்திடுவதை நேரில் பார்த்துவிட்டு கையெழுத்திட வேண்டும். சாட்சிகள் உயிலின் மூலம் சொத்து பலன் பெறும் பயனாளிகளாக (Heirs) இருக்கக்கூடாது. இது பிரிவு 67-ன் கீழ் மிக முக்கிய நிபந்தனையாகும்.",
   },
   {
     q: "பூர்வீக சொத்தை உயில் மூலம் முழுமையாக எழுதி வைக்க முடியுமா?",
-    a: "இல்லை. ஒருவர் தனது சுய சம்பாத்திய சொத்துக்களை (Self-Acquired Property) மட்டுமே தனது விருப்பப்படி யாருக்கு வேண்டுமானாலும் உயில் மூலம் எழுதி வைக்க முடியும். பூர்வீக கூட்டு குடும்ப சொத்தில் (Ancestral Property) தனக்கு சட்டப்படி கிடைக்கக்கூடிய பிரிக்கப்படாத பங்குக்கு (Undivided Coparcenary Share) மட்டுமே உயில் எழுத முடியும்.",
+    a: "இல்லை. ஒருவர் தனது சுய சம்பாத்திய சொத்துக்களை (Self-Acquired Asset) மட்டுமே தனது விருப்பப்படி யாருக்கு வேண்டுமானாலும் உயில் மூலம் எழுதி வைக்க முடியும். பூர்வீக கூட்டு குடும்ப சொத்தில் (Family Asset) தனக்கு சட்டப்படி கிடைக்கக்கூடிய பிரிக்கப்படாத பங்குக்கு (Undivided Joint Share) மட்டுமே உயில் எழுத முடியும்.",
   },
   {
     q: "தமிழ்நாட்டில் உயில் பதிவு செய்ய கட்டணம் எவ்வளவு?",
@@ -115,7 +115,7 @@ export default function WillFormatTamilClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-basis");
+  const [activeId, setActiveId] = useState<string>("legal-basis");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTamil, setCopiedTamil] = useState<boolean>(false);
   const [copiedEnglish, setCopiedEnglish] = useState<boolean>(false);
@@ -358,7 +358,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Here is a complete Will format in Tamil and English. Learn how to write a valid Uyil in Tamil
             Nadu. Follow Section 63 of the Indian Succession Act. Read our Chennai High Court probate guide to
-            protect your family from future property disputes.
+            protect your family from future asset fights.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -454,11 +454,11 @@ WITNESS 2: [Name, Address, ID Proof]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 57, 59, 61, 62, 63, 67, 213 &amp; 214 of the Indian Succession Act,
-                1925, Section 18(e) of the Registration Act, 1908, and Tamil Nadu Registration Rules.
+                1925, Section 18(e) of the Filing Act, 1908, and Tamil Nadu Filing Rules.
               </p>
             </div>
           </aside>
@@ -478,7 +478,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                1. Statutory Basis: Indian Succession Act &amp; TN Rules
+                1. Legal Basis: Indian Succession Act &amp; TN Rules
               </h2>
 
               <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -489,14 +489,14 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                 Under Section 59, any adult of sound mind can make a Will. You have full freedom to give your
-                self-earned property to anyone you choose. You do not need to leave it only to blood heirs.
+                self-earned asset to anyone you choose. You do not need to leave it only to blood heirs.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200 space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Section 63(c) Execution Rules</span>
+                    <span>Section 63(c) Signing Rules</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The person making the Will must sign before two witnesses. Both witnesses must also sign in
@@ -510,7 +510,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     <span>Section 67: Who Cannot Be a Witness</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A person who gets property under the Will must not sign as a witness. If an heir signs as a
+                    A person who gets asset under the Will must not sign as a witness. If an heir signs as a
                     witness, their gift under the Will becomes void under Section 67.
                   </p>
                 </div>
@@ -557,7 +557,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                This legal draft uses clear Tamil words accepted by Sub-Registrar Offices across Tamil Nadu.
+                This legal draft uses clear Tamil words accepted by SRO Offices across Tamil Nadu.
                 You can print this text on plain white paper or green ledger paper.
               </p>
 
@@ -614,7 +614,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Here is the English meaning for each key clause in the Tamil Uyil. This helps NRI family
-                members, banks, and High Court staff understand your document.
+                members, banks, and High Court staff understand your paper.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -640,7 +640,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
                 <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200 space-y-2">
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Clause 6: Residuary Estate Provision (எஞ்சிய சொத்துக்கள்)
+                    Clause 6: Residuary Estate Rule (எஞ்சிய சொத்துக்கள்)
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     This clause covers any newly bought goods, bank deposits, or gold left out of the main list.
@@ -661,29 +661,29 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                4. Interactive Clause Selector: Tailor Your Uyil
+                4. Free Clause Selector: Tailor Your Uyil
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Choose your family setup and property type to create a custom clause in Tamil for your Will.
+                Choose your family setup and asset type to create a custom clause in Tamil for your Will.
               </p>
 
               {/* Controls */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Property Title Status</label>
+                  <label className="text-xs font-bold text-slate-700">Asset Title Status</label>
                   <select
                     value={selectedPropertyType}
                     onChange={(e) => setSelectedPropertyType(e.target.value as "self_acquired" | "coparcenary")}
                     className="w-full text-xs p-2.5 rounded-xl border border-slate-300 bg-white font-medium focus:ring-2 focus:ring-[#C65378] outline-none"
                   >
-                    <option value="self_acquired">சுயார்ஜித சொத்து (Self-Acquired Property)</option>
-                    <option value="coparcenary">பூர்வீக கூட்டு பங்கு (Undivided Coparcenary Share)</option>
+                    <option value="self_acquired">சுயார்ஜித சொத்து (Self-Acquired Asset)</option>
+                    <option value="coparcenary">பூர்வீக கூட்டு பங்கு (Undivided Joint Share)</option>
                   </select>
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Beneficiary Structure</label>
+                  <label className="text-xs font-bold text-slate-700">Heir Structure</label>
                   <select
                     value={beneficiaryType}
                     onChange={(e) => setBeneficiaryType(e.target.value as "single" | "multiple" | "spouse_life")}
@@ -717,7 +717,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     className="w-4 h-4 rounded text-[#C65378] focus:ring-[#C65378]"
                   />
                   <label htmlFor="chkDoctor" className="text-xs font-bold text-slate-700 cursor-pointer">
-                    Include Doctor Sound Mind Certificate Reference
+                    Include Doctor Sound Mind Paper Reference
                   </label>
                 </div>
               </div>
@@ -761,7 +761,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Many online guides miss the special probate rule for Chennai under Section 213 of the Indian
-                Succession Act, 1925.
+                Estate Act, 1925.
               </p>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-3">
@@ -807,7 +807,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                6. Tamil Nadu SRO Fee Calculator &amp; Registration Rules
+                6. Tamil Nadu SRO Fee Tool &amp; Filing Rules
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
@@ -817,14 +817,14 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="space-y-1">
-                  <label className="text-xs font-bold text-slate-700">Estimated Property Value (₹)</label>
+                  <label className="text-xs font-bold text-slate-700">Estimated Asset Value (₹)</label>
                   <input
                     type="number"
                     value={propertyEstimatedValue}
                     onChange={(e) => setPropertyEstimatedValue(Number(e.target.value))}
                     className="w-full text-xs p-2.5 rounded-xl border border-slate-300 font-mono font-bold"
                   />
-                  <span className="text-[10px] text-slate-500">Value does NOT affect registration fee</span>
+                  <span className="text-[10px] text-slate-500">Value does NOT affect filing fee</span>
                 </div>
 
                 <div className="space-y-1">
@@ -841,7 +841,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                 </div>
 
                 <div className="space-y-1 flex flex-col justify-center">
-                  <label className="text-xs font-bold text-slate-700">Sub-Registrar Home Visit?</label>
+                  <label className="text-xs font-bold text-slate-700">SRO Home Visit?</label>
                   <div className="flex items-center gap-2 pt-1.5">
                     <input
                       type="checkbox"
@@ -913,11 +913,11 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                7. Comparison: Registered Uyil vs Settlement vs Patta
+                7. Comparison: Filed Uyil vs Deal vs Patta
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                See how a registered Uyil differs from a Settlement Deed and an intestate Varisu Certificate.
+                See how a filed Uyil differs from a Deal Deed and an no-Will Varisu Paper.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200">
@@ -925,23 +925,23 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   <thead>
                     <tr className="bg-slate-900 text-white">
                       <th className="p-3 font-extrabold">Feature / Criterion</th>
-                      <th className="p-3 font-extrabold text-rose-300">Registered Uyil</th>
-                      <th className="p-3 font-extrabold">Settlement Deed</th>
-                      <th className="p-3 font-extrabold">Varisu Certificate</th>
+                      <th className="p-3 font-extrabold text-rose-300">Filed Uyil</th>
+                      <th className="p-3 font-extrabold">Deal Deed</th>
+                      <th className="p-3 font-extrabold">Varisu Paper</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 bg-white">
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 font-bold text-slate-900">Ownership Transfer Timing</td>
-                      <td className="p-3 font-semibold text-emerald-700">Only After Testator Death</td>
-                      <td className="p-3 text-slate-700">Immediate Upon SRO Registration</td>
-                      <td className="p-3 text-slate-700">After Death (Intestate)</td>
+                      <td className="p-3 font-semibold text-emerald-700">Only After Will maker Death</td>
+                      <td className="p-3 text-slate-700">Immediate Upon SRO Filing</td>
+                      <td className="p-3 text-slate-700">After Death (No-Will)</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 font-bold text-slate-900">Right to Revoke / Cancel</td>
                       <td className="p-3 font-semibold text-emerald-700">100% Revocable Anytime</td>
                       <td className="p-3 text-rose-700">Irrevocable (Unless Senior Citizen s.23)</td>
-                      <td className="p-3 text-slate-700">Not Applicable (Statutory)</td>
+                      <td className="p-3 text-slate-700">Not Applicable (Legal)</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 font-bold text-slate-900">Stamp Duty in Tamil Nadu</td>
@@ -957,7 +957,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 font-bold text-slate-900">Patta Transfer on Tamil Nilam</td>
-                      <td className="p-3 font-semibold text-slate-700">Directly in Beneficiary Name</td>
+                      <td className="p-3 font-semibold text-slate-700">Directly in Heir Name</td>
                       <td className="p-3 text-slate-700">Directly in Settlee Name</td>
                       <td className="p-3 text-slate-700">Joint Patta for All Legal Heirs</td>
                     </tr>
@@ -977,7 +977,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                8. Step-by-Step SOP: Drafting to Registration in TN
+                8. Step-by-Step SOP: Drafting to Filing in TN
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
@@ -991,11 +991,11 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Verify Title Deeds &amp; Encumbrance Certificate (வில்லங்கம்)
+                      Verify Title Deeds &amp; Encumbrance Paper (வில்லங்கம்)
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                      Check your title deed and get an Encumbrance Certificate from tnreginet.gov.in. Make
-                      sure the property is your own self-earned asset.
+                      Check your title deed and get an Encumbrance Paper from tnreginet.gov.in. Make
+                      sure the asset is your own self-earned asset.
                     </p>
                   </div>
                 </div>
@@ -1006,10 +1006,10 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Obtain Medical Mental Fitness Certificate (மனநல தகுதி சான்றிதழ்)
+                      Obtain Medical Mental Fitness Paper (மனநல தகுதி சான்றிதழ்)
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                      Visit an MBBS doctor on the day you sign. The doctor gives a simple fitness certificate to
+                      Visit an MBBS doctor on the day you sign. The doctor gives a simple fitness paper to
                       prove your mind was clear and sound.
                     </p>
                   </div>
@@ -1036,7 +1036,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Execution Before Two Independent Attesting Witnesses
+                      Signing Before Two Independent Signing Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
                       Sign every page of the Will before two independent witnesses. Both witnesses must watch
@@ -1051,10 +1051,10 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Sub-Registrar Office Registration (Book 3 Entry)
+                      SRO office Filing (Book 3 Entry)
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1">
-                      Book an online token on TNREGINET. Visit the Sub-Registrar Office with both witnesses to
+                      Book an online token on TNREGINET. Visit the SRO office with both witnesses to
                       record fingerprints, photos, and book entry.
                     </p>
                   </div>
@@ -1083,12 +1083,12 @@ WITNESS 2: [Name, Address, ID Proof]`;
               <div className="space-y-3 pt-2">
                 <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-slate-200 space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-slate-900 text-sm">Case 1: Chennai T. Nagar Property Probate</span>
+                    <span className="font-bold text-slate-900 text-sm">Case 1: Chennai T. Nagar Asset Probate</span>
                     <span className="text-[10px] bg-rose-100 text-[#C65378] px-2 py-0.5 rounded font-bold">Chennai City</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A father left a house in T. Nagar to his daughter. The local bank asked for court probate.
-                    Because the Will had two witnesses and a doctor certificate, the Madras High Court granted
+                    Because the Will had two witnesses and a doctor paper, the Madras High Court granted
                     probate under Section 213 with no delay.
                   </p>
                 </div>
@@ -1112,7 +1112,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A factory owner in Coimbatore divided his self-earned units equally between two daughters.
-                    Clear recitals proving his own funds defeated a partition suit brought by distant relatives.
+                    Clear recitals proving his own funds defeated a split suit brought by distant relatives.
                   </p>
                 </div>
               </div>
@@ -1138,11 +1138,11 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                10. Sub-Registrar Document Checklist &amp; Medical Cert
+                10. SRO Paper Checklist &amp; Medical Cert
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Carry these items when you visit the Sub-Registrar Office to register your Uyil.
+                Carry these items when you visit the SRO office to register your Uyil.
               </p>
 
               <div className="p-4 rounded-2xl bg-slate-900 text-slate-200 text-xs font-mono leading-relaxed space-y-2">
@@ -1151,9 +1151,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
                 </div>
                 <p>
                   &quot;I, Dr. [Doctor Name], MBBS, Reg. No. [Medical Council No.], practicing at [Clinic/Hospital Address],
-                  do hereby certify that I have this day examined Mr./Mrs. [Testator Name], aged [Age] years, residing at
+                  do hereby certify that I have this day examined Mr./Mrs. [Will maker Name], aged [Age] years, residing at
                   [Address]. I found him/her to be in sound physical and mental health, possessing full cognitive faculties,
-                  memory, and testamentary capacity to execute a Will of his/her free will without any signs of senility,
+                  memory, and Will capacity to execute a Will of his/her free will without any signs of senility,
                   delirium, or mental impairment.&quot;
                 </p>
                 <div className="pt-2 text-slate-400">
@@ -1173,12 +1173,12 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                11. Contextual Estate Calculators &amp; Succession Tools
+                11. Contextual Estate Tools &amp; Estate Tools
               </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Making a Will connects to capital gains tax, family property checks, and witness rules. Use
-                our free calculators to plan your estate.
+                Making a Will connects to capital gains tax, family asset checks, and witness rules. Use
+                our free tools to plan your estate.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -1191,7 +1191,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     <TrendingUp className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors leading-snug">
-                    Inherited Property Capital Gains Calculator
+                    Inherited Asset Capital Gains Tool
                   </h3>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                     Compare 12.5% Flat vs 20% Indexation under Budget 2024 grandfathering rules.
@@ -1211,10 +1211,10 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     <Building2 className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors leading-snug">
-                    Ancestral Property Title Classifier
+                    Family Asset Title Classifier
                   </h3>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Determine whether your Tamil Nadu property is self-acquired or coparcenary.
+                    Determine whether your Tamil Nadu asset is self-acquired or joint.
                   </p>
                   <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-[#5F7E75]">
                     <span>Classify Title</span>
@@ -1234,7 +1234,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                     Section 67 Witness Eligibility Checker
                   </h3>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Verify whether your chosen attesting witnesses are legally eligible under Section 67.
+                    Verify whether your chosen signing witnesses are legally eligible under Section 67.
                   </p>
                   <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-purple-700">
                     <span>Audit Witnesses</span>
@@ -1255,7 +1255,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                12. Legal Backing: Senior Counsel Succession Profile
+                12. Legal Backing: Senior Counsel Estate Profile
               </h3>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 rounded-2xl bg-[#FAF7F0] border border-slate-200">
@@ -1263,13 +1263,13 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   AAM
                 </div>
                 <div className="space-y-1">
-                  <div className="font-extrabold text-slate-900 text-base">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-base">Lawyer Anuj Anand Malik</div>
                   <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel • AMA Legal Solutions
+                    Senior Estate Counsel • AMA Legal Solutions
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Advocate Anuj Anand Malik is an experienced succession counsel. He handles Madras High Court
-                    probate cases, Will disputes, and estate planning across Tamil Nadu.
+                    Lawyer Anuj Anand Malik is an experienced estate counsel. He handles Madras High Court
+                    probate cases, Will fights, and estate planning across Tamil Nadu.
                   </p>
                 </div>
               </div>
@@ -1328,7 +1328,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
 
               {/* H2: <= 70 chars, NO em-dash */}
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                14. Official Tamil Nadu Statutory References &amp; Acts
+                14. Official Tamil Nadu Legal References &amp; Acts
               </h3>
 
               <ul className="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
@@ -1336,20 +1336,20 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   <ExternalLink className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
                     <strong>Indian Succession Act, 1925:</strong> Sections 57, 59, 63, 67, 213, and 214 (Will
-                    Execution and Probate Provisions).
+                    Signing and Probate Rules).
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ExternalLink className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registration Act, 1908:</strong> Section 18(e) (Optional registration of Wills)
+                    <strong>Filing Act, 1908:</strong> Section 18(e) (A Choice filing of Wills)
                     and Section 40 (Persons entitled to present Wills).
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ExternalLink className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Inspector General of Registration Tamil Nadu:</strong> Official Portal{" "}
+                    <strong>Inspector General of Filing Tamil Nadu:</strong> Official Portal{" "}
                     <a
                       href="https://tnreginet.gov.in"
                       target="_blank"
@@ -1378,7 +1378,29 @@ WITNESS 2: [Name, Address, ID Proof]`;
                 </li>
               </ul>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1391,9 +1413,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
@@ -1404,7 +1426,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1418,10 +1440,10 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   <span>PREVENT FAMILY PARTITION LAWSUITS</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children with a Challenge-Proof Will
+                  Protect Your Children with a Fight-Proof Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Stop painful court disputes before they start. Our lawyer-guided engine builds a valid Will in
+                  Stop painful court fights before they start. Our lawyer-guided engine builds a valid Will in
                   15 minutes.
                 </p>
                 <button
@@ -1444,10 +1466,10 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   <span>PROBATE &amp; DISPUTE DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need Chennai High Court Probate or SRO Assistance?
+                  Need Chennai High Court Probate or SRO Help?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our senior advocates help with Madras High Court probate petitions, caveats, and Will contests
+                  Our senior lawyers help with Madras High Court probate petitions, caveats, and Will contests
                   across Tamil Nadu.
                 </p>
                 <Link
@@ -1455,7 +1477,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1468,13 +1490,13 @@ WITNESS 2: [Name, Address, ID Proof]`;
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 63 Compliance:</strong> Verified two-witness attestation clauses.
+                      <strong>Section 63 Compliance:</strong> Checked two-witness witness signing clauses.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Chennai Probate Guidance:</strong> Explicit Section 213 jurisdictional notes.
+                      <strong>Chennai Probate Guidance:</strong> Explicit Section 213 local notes.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

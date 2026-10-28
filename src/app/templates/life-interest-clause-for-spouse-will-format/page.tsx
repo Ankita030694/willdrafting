@@ -128,7 +128,7 @@ export default function LifeInterestClausePage() {
         name: "Supreme Court-Tested Section 14(2) Life Interest Clause Format for Spouse",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted spousal life interest clause templates under Section 14(2) of the Hindu Succession Act, 1956, granting lifetime residential and.",
+          "Lawyer-vetted spousal life interest clause templates under Section 14(2) of the Hindu Succession Act, 1956, granting lifetime home and.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {
@@ -149,7 +149,7 @@ export default function LifeInterestClausePage() {
             name: "What is a life interest clause in a Will under Indian law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A life interest clause grants a designated beneficiary (such as a spouse or elderly parent) the legal right to possess, reside in, and enjoy income from a property for the duration of their natural life, without conferring absolute ownership. Upon the life tenant's death, the property automatically passes to the remaindermen (typically children) in absolute ownership.",
+              text: "A life interest clause grants a designated heir (such as a spouse or elderly parent) the legal right to possess, reside in, and enjoy income from a asset for the duration of their natural life, without conferring absolute ownership. Upon the life tenant's death, the asset automatically passes to the remaindermen (typically children) in absolute ownership.",
             },
           },
           {
@@ -157,7 +157,7 @@ export default function LifeInterestClausePage() {
             name: "What is the difference between Section 14(1) and Section 14(2) of the Hindu Succession Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 14(1), any property possessed by a female Hindu in lieu of a pre-existing maintenance right blossoms into full, absolute ownership, rendering any restrictive covenants void. In contrast, Section 14(2) protects limited estates created for the first time by gift, Will, or decree as an independent testamentary disposition. In Section 14(2), the restrictive conditions (such as the inability to sell or mortgage) remain fully binding.",
+              text: "Under Section 14(1), any asset possessed by a female Hindu in lieu of a pre-existing maintenance right blossoms into full, absolute ownership, rendering any restrictive covenants void. In contrast, Section 14(2) protects limited estates created for the first time by gift, Will, or decree as an independent Will gift. In Section 14(2), the restrictive conditions (such as the inability to sell or mortgage) remain fully binding.",
             },
           },
           {
@@ -165,7 +165,7 @@ export default function LifeInterestClausePage() {
             name: "Can a wife sell or mortgage a house if she is bequeathed a life interest?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Provided the life interest clause is drafted in strict compliance with Section 14(2) of the Hindu Succession Act, 1956, and judicial precedents like Sadhu Singh (2006 SC) and Ranvir Dewan (2018 SC), the wife possesses only a limited usufructuary estate. She has no legal authority to sell, gift, mortgage, exchange, or create any permanent charge on the property.",
+              text: "No. Provided the life interest clause is drafted in strict compliance with Section 14(2) of the Hindu Succession Act, 1956, and judicial precedents like Sadhu Singh (2006 SC) and Ranvir Dewan (2018 SC), the wife possesses only a limited usufructuary estate. She has no legal office to sell, gift, mortgage, exchange, or create any permanent charge on the asset.",
             },
           },
           {
@@ -173,7 +173,7 @@ export default function LifeInterestClausePage() {
             name: "What fatal mistake triggers the Section 14(1) trap in life interest Wills?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "The most dangerous drafting error is phrasing the bequest as being 'in lieu of maintenance' or 'in satisfaction of maintenance arrears'. Under the landmark Supreme Court ruling in V. Tulasamma v. Sesha Reddy (1977 SC), this wording links the disposition to an antecedent pre-existing right of maintenance, causing Section 14(1) to convert the limited life estate into 100% absolute ownership, allowing the spouse to alienate the property away from the children.",
+              text: "The most dangerous drafting error is phrasing the bequest as being 'in lieu of maintenance' or 'in satisfaction of maintenance arrears'. Under the landmark Supreme Court ruling in V. Tulasamma v. Sesha Reddy (1977 SC), this wording links the gift to an antecedent pre-existing right of maintenance, causing Section 14(1) to convert the limited life estate into 100% absolute ownership, allowing the spouse to alienate the asset away from the children.",
             },
           },
           {
@@ -189,7 +189,7 @@ export default function LifeInterestClausePage() {
             name: "When does ownership vest in the children under Section 119 of the Indian Succession Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 119 of the Indian Succession Act, 1925, the children acquire an immediate 'vested remainder in interest' on the day the testator dies, even though their 'vesting in possession' is deferred until the demise of the life tenant spouse. This prevents the life tenant from disinheriting the children and guarantees the property title belongs irrevocably to the children.",
+              text: "Under Section 119 of the Indian Succession Act, 1925, the children acquire an immediate 'vested remainder in interest' on the day the Will maker dies, even though their 'vesting in possession' is deferred until the demise of the life tenant spouse. This prevents the life tenant from disinheriting the children and guarantees the asset title belongs irrevocably to the children.",
             },
           },
           {
@@ -197,7 +197,7 @@ export default function LifeInterestClausePage() {
             name: "What happens if a child predeceases the parent who holds the life interest?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Because the child held an immediate vested interest from the testator's demise under Section 119, that interest does not lapse if the child dies before the life tenant. Instead, upon the life tenant's subsequent death, the deceased child's share passes to their legal heirs (such as their own children and spouse) per stirpes, unless the Will contains a survivorship substitution clause.",
+              text: "Because the child held an immediate vested interest from the Will maker's demise under Section 119, that interest does not lapse if the child dies before the life tenant. Instead, upon the life tenant's subsequent death, the deceased child's share passes to their legal heirs (such as their own children and spouse) per stirpes, unless the Will contains a survivorship substitution clause.",
             },
           },
           {
@@ -205,7 +205,7 @@ export default function LifeInterestClausePage() {
             name: "Can the life tenant spouse execute a Will bequeathing the property to third parties?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. As ruled by the Supreme Court in Ranvir Dewan v. Rashmi Khanna (2018 SC), a life tenant under Section 14(2) has no testamentary capacity over the corpus of the property. Any testamentary disposition, gift, or deed of settlement executed by the life tenant purporting to bequeath or transfer the property is void ab initio and non est in law.",
+              text: "No. As ruled by the Supreme Court in Ranvir Dewan v. Rashmi Khanna (2018 SC), a life tenant under Section 14(2) has no Will capacity over the corpus of the asset. Any Will gift, gift, or deed of deal signed by the life tenant purporting to bequeath or transfer the asset is void ab initio and non est in law.",
             },
           },
           {
@@ -213,7 +213,7 @@ export default function LifeInterestClausePage() {
             name: "Does a Will containing a life interest clause need to be registered at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 18(e) of the Registration Act, 1908, registration of a Will is optional in India. A Will executed on plain white paper before two competent witnesses is legally valid. However, registering a life interest Will before the Sub-Registrar provides strong evidential protection and assists the municipal corporation in recording the life estate and remaindermen correctly in land records.",
+              text: "Under Section 18(e) of the Filing Act, 1908, filing of a Will is a choice in India. A Will signed on plain white paper before two competent witnesses is legally valid. However, registering a life interest Will before the SRO provides strong evidential protection and assists the city city board in recording the life estate and remaindermen correctly in land records.",
             },
           },
         ],

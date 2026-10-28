@@ -70,7 +70,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "MH",
     article: "Maharashtra Stamp Act, 1958 (Article 34 Proviso)",
     summary:
-      "Fixed stamp duty of ₹200 for residential/agricultural property gifted to spouse, children, grandchildren, or wife of deceased son. 1% registration fee capped at ₹30,000.",
+      "Fixed stamp duty of ₹200 for home/farm asset gifted to spouse, children, grandchildren, or wife of deceased son. 1% filing fee capped at ₹30,000.",
     portalName: "IGR Maharashtra (e-Registration)",
     portalUrl: "https://igrmaharashtra.gov.in",
     calculate: (val, relation, propType) => {
@@ -83,7 +83,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty: 200,
           regFee,
           isCapped: true,
-          note: "Concessional ₹200 stamp duty under Article 34 proviso + 1% registration fee capped at ₹30,000.",
+          note: "Concessional ₹200 stamp duty under Article 34 proviso + 1% filing fee capped at ₹30,000.",
         };
       }
       if (isDirectBlood && !isResOrAgri) {
@@ -93,7 +93,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "Commercial property to blood relative attracts 3% stamp duty (with cess) + 1% reg fee (max ₹30,000).",
+          note: "Shop asset to blood relative attracts 3% stamp duty (with cess) + 1% reg fee (max ₹30,000).",
         };
       }
       if (["parents", "siblings"].includes(relation)) {
@@ -120,7 +120,7 @@ const STATE_RULES: Record<string, StateRule> = {
       isFlat: true,
       duty: 200,
       regFee: 200,
-      description: "Fixed ₹200 stamp duty + ₹200 registration fee between legal co-owners / coparceners.",
+      description: "Fixed ₹200 stamp duty + ₹200 filing fee between legal co-owners / coparceners.",
     },
   },
   UP: {
@@ -128,7 +128,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "UP",
     article: "Uttar Pradesh Stamp Act & Article 33 Concession Notification",
     summary:
-      "Flat ₹5,000 stamp duty on gift deeds executed between defined blood relatives (parents, spouse, children, siblings, grandchildren, daughter-in-law). 1% registration fee capped at ₹10,000.",
+      "Flat ₹5,000 stamp duty on gift deeds signed between defined blood relatives (parents, spouse, children, siblings, grandchildren, daughter-in-law). 1% filing fee capped at ₹10,000.",
     portalName: "IGRS Uttar Pradesh (Prerna Portal)",
     portalUrl: "https://igrsup.gov.in",
     calculate: (val, relation) => {
@@ -147,7 +147,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty: 5000,
           regFee,
           isCapped: true,
-          note: "Flat ₹5,000 stamp duty under UP Blood Relative Scheme + 1% registration fee capped at ₹10,000.",
+          note: "Flat ₹5,000 stamp duty under UP Blood Relative Scheme + 1% filing fee capped at ₹10,000.",
         };
       }
       // Non relative
@@ -157,7 +157,7 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-relative gift attracts full 7% conveyance stamp duty + 1% uncapped registration fee.",
+        note: "Non-relative gift attracts full 7% conveyance stamp duty + 1% uncapped filing fee.",
       };
     },
     releaseDeedRule: {
@@ -172,7 +172,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "DL",
     article: "Indian Stamp Act, 1899 (Delhi Schedule) & DMC Transfer Duty",
     summary:
-      "Gift deed to family members attracts 2% (female grantee) or 3% (male grantee) stamp duty + 1% municipal transfer duty + 1% registration fee.",
+      "Gift deed to family members attracts 2% (female grantee) or 3% (male grantee) stamp duty + 1% city transfer duty + 1% filing fee.",
     portalName: "DORIS Delhi (Revenue Department)",
     portalUrl: "https://esearch.delhigovt.nic.in",
     calculate: (val, relation) => {
@@ -190,7 +190,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "3.5% combined stamp & municipal duty (average male/female) + 1% registration fee + ₹100 pasting fee.",
+          note: "3.5% combined stamp & city duty (average male/female) + 1% filing fee + ₹100 pasting fee.",
         };
       }
       const stampDuty = val * 0.06;
@@ -199,14 +199,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-family gift attracts 6% combined transfer duty + 1% registration fee.",
+        note: "Non-family gift attracts 6% combined transfer duty + 1% filing fee.",
       };
     },
     releaseDeedRule: {
       isFlat: true,
       duty: 100,
       regFee: 100,
-      description: "Nominal ₹100 stamp paper + ₹100 registration for coparcenary ancestral relinquishment.",
+      description: "Nominal ₹100 stamp paper + ₹100 filing for joint family release.",
     },
   },
   KA: {
@@ -214,7 +214,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "KA",
     article: "Karnataka Stamp Act, 1957 (Article 28 Family Settlement / Gift)",
     summary:
-      "Concessional slab duty: Flat ₹1,000 to ₹5,000 for residential gifts between immediate family members within BBMP/municipal areas, with 1% registration fee capped at ₹1,000.",
+      "Concessional slab duty: Flat ₹1,000 to ₹5,000 for home gifts between immediate family members within BBMP/city areas, with 1% filing fee capped at ₹1,000.",
     portalName: "Kaveri 2.0 (Department of Stamps & Registration)",
     portalUrl: "https://kaveri.karnataka.gov.in",
     calculate: (val, relation) => {
@@ -226,7 +226,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty: 5000,
           regFee: 1000,
           isCapped: true,
-          note: "Concessional flat ₹5,000 stamp duty under Article 28 + ₹1,000 registration fee in municipal/BBMP limits.",
+          note: "Concessional flat ₹5,000 stamp duty under Article 28 + ₹1,000 filing fee in city/BBMP limits.",
         };
       }
       if (relation === "siblings") {
@@ -236,7 +236,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "Broader family gift attracts 2% concessional stamp duty + 1% registration fee.",
+          note: "Broader family gift attracts 2% concessional stamp duty + 1% filing fee.",
         };
       }
       const stampDuty = val * 0.055;
@@ -245,14 +245,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-family gift attracts 5.5% conveyance duty (including cess) + 2% registration fee.",
+        note: "Non-family gift attracts 5.5% conveyance duty (including cess) + 2% filing fee.",
       };
     },
     releaseDeedRule: {
       isFlat: true,
       duty: 5000,
       regFee: 1000,
-      description: "Flat ₹5,000 stamp duty + ₹1,000 registration fee for family co-owners.",
+      description: "Flat ₹5,000 stamp duty + ₹1,000 filing fee for family co-owners.",
     },
   },
   TN: {
@@ -260,7 +260,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "TN",
     article: "Tamil Nadu Stamp Act, 1899 (Article 33 Family Proviso)",
     summary:
-      "1% stamp duty subject to a maximum ceiling of ₹25,000, and 1% registration fee capped at ₹4,000 for family members. Non-family gifts attract 11% total.",
+      "1% stamp duty subject to a maximum ceiling of ₹25,000, and 1% filing fee capped at ₹4,000 for family members. Non-family gifts attract 11% total.",
     portalName: "TNREGINET (Inspector General of Registration)",
     portalUrl: "https://tnreginet.gov.in",
     calculate: (val, relation) => {
@@ -278,7 +278,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: true,
-          note: "1% stamp duty capped at ₹25,000 + 1% registration fee capped at ₹4,000 under Article 33.",
+          note: "1% stamp duty capped at ₹25,000 + 1% filing fee capped at ₹4,000 under Article 33.",
         };
       }
       const stampDuty = val * 0.07;
@@ -287,14 +287,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-family gift attracts 7% stamp duty + 4% registration fee (total 11% uncapped).",
+        note: "Non-family gift attracts 7% stamp duty + 4% filing fee (total 11% uncapped).",
       };
     },
     releaseDeedRule: {
       isFlat: false,
       duty: 0.01,
       regFee: 4000,
-      description: "1% stamp duty capped at ₹25,000 + ₹4,000 registration fee for family release.",
+      description: "1% stamp duty capped at ₹25,000 + ₹4,000 filing fee for family release.",
     },
   },
   GJ: {
@@ -302,7 +302,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "GJ",
     article: "Gujarat Stamp Act, 1958 (Article 28 / Schedule I)",
     summary:
-      "Concessional stamp duty of 1% to 2% for residential/agricultural property gifted to direct blood relatives, plus 1% registration fee.",
+      "Concessional stamp duty of 1% to 2% for home/farm asset gifted to direct blood relatives, plus 1% filing fee.",
     portalName: "Garvi Gujarat (Inspector General of Registration)",
     portalUrl: "https://garvi.gujarat.gov.in",
     calculate: (val, relation) => {
@@ -314,7 +314,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "Concessional 1.5% stamp duty for direct blood relatives + 1% registration fee.",
+          note: "Concessional 1.5% stamp duty for direct blood relatives + 1% filing fee.",
         };
       }
       const stampDuty = val * 0.049;
@@ -323,14 +323,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Standard 4.9% stamp duty + 1% registration fee for non-family transfers.",
+        note: "Standard 4.9% stamp duty + 1% filing fee for non-family transfers.",
       };
     },
     releaseDeedRule: {
       isFlat: true,
       duty: 1000,
       regFee: 500,
-      description: "Concessional nominal stamp duty and registration for ancestral co-sharers.",
+      description: "Concessional nominal stamp duty and filing for family co-sharers.",
     },
   },
   HR: {
@@ -338,7 +338,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "HR",
     article: "Haryana Government Blood Relation Property Transfer Notification",
     summary:
-      "ZERO (0%) stamp duty on transfer of immovable property between direct blood relations. Only nominal computerization processing fee of ₹2,000 applies.",
+      "ZERO (0%) stamp duty on transfer of land asset between direct blood relations. Only nominal computerization processing fee of ₹2,000 applies.",
     portalName: "Jamabandi Haryana (Revenue & Disaster Management)",
     portalUrl: "https://jamabandi.nic.in",
     calculate: (val, relation) => {
@@ -363,7 +363,7 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-blood transfers attract 6% conveyance duty + 1% registration fee.",
+        note: "Non-blood transfers attract 6% conveyance duty + 1% filing fee.",
       };
     },
     releaseDeedRule: {
@@ -378,7 +378,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "WB",
     article: "West Bengal Stamp Act & Article 33 Concession",
     summary:
-      "Concessional 0.5% stamp duty for gifts among family members under Article 33, with 1% registration fee.",
+      "Concessional 0.5% stamp duty for gifts among family members under Article 33, with 1% filing fee.",
     portalName: "WBI-Registration (Directorate of Registration)",
     portalUrl: "https://wbregistration.gov.in",
     calculate: (val, relation) => {
@@ -396,7 +396,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "0.5% concessional stamp duty for family members + 1% registration fee.",
+          note: "0.5% concessional stamp duty for family members + 1% filing fee.",
         };
       }
       const stampDuty = val * 0.06;
@@ -405,14 +405,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Standard 6% conveyance duty (urban) + 1% registration fee for non-family.",
+        note: "Standard 6% conveyance duty (urban) + 1% filing fee for non-family.",
       };
     },
     releaseDeedRule: {
       isFlat: false,
       duty: 0.005,
       regFee: 0.01,
-      description: "0.5% stamp duty + 1% registration fee for relinquishment among co-heirs.",
+      description: "0.5% stamp duty + 1% filing fee for release among co-heirs.",
     },
   },
   TS: {
@@ -420,7 +420,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "TS",
     article: "Indian Stamp Act (Telangana/AP Amendment, Article 29)",
     summary:
-      "Concessional 1% stamp duty + 0.5% transfer duty + 0.5% registration fee (total 2%) for family gifts. Non-family transfers attract 7.5% total.",
+      "Concessional 1% stamp duty + 0.5% transfer duty + 0.5% filing fee (total 2%) for family gifts. Non-family transfers attract 7.5% total.",
     portalName: "Registration & Stamps Department (TS / AP)",
     portalUrl: "https://registration.telangana.gov.in",
     calculate: (val, relation) => {
@@ -438,7 +438,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "1.5% combined duty (stamp + local transfer) + 0.5% registration fee = 2% total.",
+          note: "1.5% combined duty (stamp + local transfer) + 0.5% filing fee = 2% total.",
         };
       }
       const stampDuty = val * 0.065;
@@ -447,14 +447,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "6.5% duty + 1% registration fee (total 7.5%) for non-family transfers.",
+        note: "6.5% duty + 1% filing fee (total 7.5%) for non-family transfers.",
       };
     },
     releaseDeedRule: {
       isFlat: false,
       duty: 0.01,
       regFee: 0.005,
-      description: "1% stamp duty + 0.5% registration fee for release among family co-sharers.",
+      description: "1% stamp duty + 0.5% filing fee for release among family co-sharers.",
     },
   },
   RJ: {
@@ -462,7 +462,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "RJ",
     article: "Rajasthan Stamp Act, 1998 (Schedule Item 31)",
     summary:
-      "0% stamp duty in favor of wife. 1% to 2.5% concessional duty in favor of children and parents, plus 1% registration fee.",
+      "0% stamp duty in favor of wife. 1% to 2.5% concessional duty in favor of children and parents, plus 1% filing fee.",
     portalName: "E-Panjiyan Rajasthan (Registration & Stamps)",
     portalUrl: "https://epanjiyan.nic.in",
     calculate: (val, relation) => {
@@ -471,7 +471,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty: 0,
           regFee: Math.min(val * 0.01, 10000),
           isCapped: true,
-          note: "0% stamp duty on gift to wife + 1% registration fee (capped at ₹10,000).",
+          note: "0% stamp duty on gift to wife + 1% filing fee (capped at ₹10,000).",
         };
       }
       const isBlood = ["children", "parents", "grandchildren"].includes(relation);
@@ -482,7 +482,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee,
           isCapped: false,
-          note: "Concessional 1.5% stamp duty for children/parents + 1% registration fee.",
+          note: "Concessional 1.5% stamp duty for children/parents + 1% filing fee.",
         };
       }
       const stampDuty = val * 0.06;
@@ -491,14 +491,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Standard 6% stamp duty + 1% registration fee for non-family.",
+        note: "Standard 6% stamp duty + 1% filing fee for non-family.",
       };
     },
     releaseDeedRule: {
       isFlat: true,
       duty: 1000,
       regFee: 500,
-      description: "Nominal ₹1,000 stamp duty + ₹500 registration for coparceners.",
+      description: "Nominal ₹1,000 stamp duty + ₹500 filing for coparceners.",
     },
   },
   PB: {
@@ -506,7 +506,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "PB",
     article: "Punjab Government Blood Relation Exemption Policy",
     summary:
-      "ZERO (0%) stamp duty on transfer of property between direct blood relatives. Nominal social security / registration cess applies.",
+      "ZERO (0%) stamp duty on transfer of asset between direct blood relatives. Nominal social security / filing cess applies.",
     portalName: "NGDRS Punjab (Department of Revenue)",
     portalUrl: "https://revenue.punjab.gov.in",
     calculate: (val, relation) => {
@@ -531,7 +531,7 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Non-blood transfers attract 6% conveyance duty + 1% registration fee.",
+        note: "Non-blood transfers attract 6% conveyance duty + 1% filing fee.",
       };
     },
     releaseDeedRule: {
@@ -546,7 +546,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "KL",
     article: "Kerala Stamp Act, 1959 (Schedule Article 31)",
     summary:
-      "Concessional stamp duty of 2% subject to a maximum ceiling of ₹25,000 for family members, plus ₹1,000 registration fee.",
+      "Concessional stamp duty of 2% subject to a maximum ceiling of ₹25,000 for family members, plus ₹1,000 filing fee.",
     portalName: "PEARL Kerala (Registration Department)",
     portalUrl: "https://keralaregistration.gov.in",
     calculate: (val, relation) => {
@@ -563,7 +563,7 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty,
           regFee: 1000,
           isCapped: true,
-          note: "2% stamp duty capped at ₹25,000 + flat ₹1,000 registration fee under Article 31.",
+          note: "2% stamp duty capped at ₹25,000 + flat ₹1,000 filing fee under Article 31.",
         };
       }
       const stampDuty = val * 0.08;
@@ -572,14 +572,14 @@ const STATE_RULES: Record<string, StateRule> = {
         stampDuty,
         regFee,
         isCapped: false,
-        note: "Standard 8% stamp duty + 2% registration fee (total 10%) for non-family.",
+        note: "Standard 8% stamp duty + 2% filing fee (total 10%) for non-family.",
       };
     },
     releaseDeedRule: {
       isFlat: true,
       duty: 1000,
       regFee: 500,
-      description: "Flat ₹1,000 stamp duty + ₹500 registration for family co-owners.",
+      description: "Flat ₹1,000 stamp duty + ₹500 filing for family co-owners.",
     },
   },
   OTHER: {
@@ -587,7 +587,7 @@ const STATE_RULES: Record<string, StateRule> = {
     code: "OTHER",
     article: "Indian Stamp Act, 1899 & Respective State Schedules",
     summary:
-      "Concessional family rates range between 2% and 3% stamp duty + 1% registration fee in most Indian states.",
+      "Concessional family rates range between 2% and 3% stamp duty + 1% filing fee in most Indian states.",
     portalName: "National Generic Document Registration System (NGDRS)",
     portalUrl: "https://ngdrs.gov.in",
     calculate: (val, relation) => {
@@ -603,14 +603,14 @@ const STATE_RULES: Record<string, StateRule> = {
           stampDuty: val * 0.025,
           regFee: val * 0.01,
           isCapped: false,
-          note: "Estimated 2.5% concessional family stamp duty + 1% registration fee.",
+          note: "Estimated 2.5% concessional family stamp duty + 1% filing fee.",
         };
       }
       return {
         stampDuty: val * 0.06,
         regFee: val * 0.01,
         isCapped: false,
-        note: "Estimated standard 6% conveyance duty + 1% registration fee.",
+        note: "Estimated standard 6% conveyance duty + 1% filing fee.",
       };
     },
     releaseDeedRule: {
@@ -623,8 +623,8 @@ const STATE_RULES: Record<string, StateRule> = {
 };
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Foundation: Gift vs Release vs Will" },
-  { id: "interactive-calculator", label: "2. Interactive Stamp Duty Calculator" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: Gift vs Release vs Will" },
+  { id: "interactive-calculator", label: "2. Free Stamp Duty Tool" },
   { id: "state-stamp-schedules", label: "3. State Stamp Schedules & Blood Relative Concessions" },
   { id: "senior-citizens-act", label: "4. Senior Citizens Act Sec 23 & Revocation Rules" },
   { id: "income-tax-section-56", label: "5. Income Tax Treatment: Sec 56(2)(x) & Capital Gains" },
@@ -632,59 +632,59 @@ const TOC_ITEMS = [
   { id: "property-transfer-sop", label: "7. Step-by-Step SOP: Choosing the Right Transfer Mode" },
   { id: "real-family-scenarios", label: "8. Real Family Scenarios: MH, UP, Delhi & Karnataka" },
   { id: "legal-clause-templates", label: "9. Legal Clause Templates: Senior Citizen Gift vs Will" },
-  { id: "advocate-profile-ama", label: "10. Advocate Profile: AMA Legal Solutions Advisory" },
+  { id: "advocate-profile-ama", label: "10. Lawyer Profile: AMA Legal Solutions Advisory" },
   { id: "frequently-asked-questions", label: "11. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "12. Statutory Citations & Official State Portals" },
+  { id: "statutory-citations", label: "12. Legal Citations & Official State Portals" },
 ];
 
 const FAQS = [
   {
     q: "How much stamp duty is charged on a Will in India?",
-    a: "A Will attracts exactly zero (₹0) stamp duty in every Indian state and union territory. A Will is a testamentary instrument under the Indian Succession Act, 1925, and is completely exempt from stamp duty under the Indian Stamp Act, 1899. Writing a Will on plain white paper is 100% legally valid.",
+    a: "A Will attracts exactly zero (₹0) stamp duty in every Indian state and union territory. A Will is a Will instrument under the Indian Succession Act, 1925, and is completely exempt from stamp duty under the Indian Stamp Act, 1899. Writing a Will on plain white paper is 100% legally valid.",
   },
   {
     q: "Why is a Gift Deed more expensive than a Will?",
-    a: "A Gift Deed transfers property ownership immediately during the donor's lifetime (inter vivos). Under Section 17 of the Registration Act, 1908, it requires mandatory registration and ad valorem or concessional state stamp duty ranging from ₹200 to 7% of property value, plus 1% registration fees. A Will costs ₹0 stamp duty and registration is entirely optional.",
+    a: "A Gift Deed transfers asset ownership right away during the donor's lifetime (inter vivos). Under Section 17 of the Filing Act, 1908, it requires needed filing and ad valorem or concessional state stamp duty ranging from ₹200 to 7% of asset value, plus 1% filing fees. A Will costs ₹0 stamp duty and filing is entirely a choice.",
   },
   {
     q: "What is the stamp duty on a gift deed to blood relatives in Maharashtra?",
-    a: "Under Article 34 proviso of the Maharashtra Stamp Act, 1958, a gift deed of residential or agricultural property made to a spouse, son, daughter, grandchild, or wife of a deceased son attracts a fixed stamp duty of only ₹200. A registration fee of 1% applies, capped at a maximum of ₹30,000.",
+    a: "Under Article 34 proviso of the Maharashtra Stamp Act, 1958, a gift deed of home or farm asset made to a spouse, son, daughter, grandchild, or wife of a deceased son attracts a fixed stamp duty of only ₹200. A filing fee of 1% applies, capped at a maximum of ₹30,000.",
   },
   {
     q: "What is the flat ₹5,000 gift deed stamp duty rule in Uttar Pradesh?",
-    a: "The Government of Uttar Pradesh notified a concessional flat stamp duty of ₹5,000 under Article 33 for gift deeds executed between defined blood relatives (parents, spouse, children, siblings, grandchildren, and daughter-in-law). The registration fee is 1%, subject to a maximum cap of ₹10,000.",
+    a: "The Government of Uttar Pradesh notified a concessional flat stamp duty of ₹5,000 under Article 33 for gift deeds signed between defined blood relatives (parents, spouse, children, siblings, grandchildren, and daughter-in-law). The filing fee is 1%, subject to a maximum cap of ₹10,000.",
   },
   {
-    q: "Can a parent cancel a registered Gift Deed if their child neglects them?",
-    a: "Under general property law, a registered gift deed is irrevocable. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, a senior citizen can petition the Maintenance Tribunal to cancel the gift deed if the deed contains an express clause stating the gift was conditional upon providing basic physical needs, as affirmed in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20).",
+    q: "Can a parent cancel a filed Gift Deed if their child neglects them?",
+    a: "Under general asset law, a filed gift deed is irrevocable. However, under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, a senior citizen can petition the Maintenance Tribunal to cancel the gift deed if the deed contains an express clause stating the gift was conditional upon providing basic physical needs, as affirmed in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20).",
   },
   {
     q: "Can I use a Release Deed instead of a Gift Deed to avoid stamp duty?",
-    a: "No. A Release Deed (or Relinquishment Deed) can only be executed between existing co-owners or coparceners who already hold a pre-existing legal share in ancestral or jointly owned property. A sole living owner cannot execute a Release Deed for self-acquired property; attempting to do so is legally void.",
+    a: "No. A Release Deed (or Release Deed) can only be signed between existing co-owners or coparceners who already hold a pre-existing legal share in family or jointly owned asset. A sole living owner cannot execute a Release Deed for self-acquired asset; attempting to do so is legally void.",
   },
   {
     q: "Is income tax applicable on gifts received from blood relatives?",
-    a: "Under Section 56(2)(x) of the Income Tax Act, 1961, any immovable property or sum of money received as a gift from a defined relative (spouse, parents, siblings, children, grandchildren) is 100% exempt from income tax in the hands of the receiver. However, gifts from non-relatives exceeding ₹50,000 are taxed as income.",
+    a: "Under Section 56(2)(x) of the Income Tax Act, 1961, any land asset or sum of money received as a gift from a defined relative (spouse, parents, siblings, children, grandchildren) is 100% exempt from income tax in the hands of the receiver. However, gifts from non-relatives exceeding ₹50,000 are taxed as income.",
   },
   {
     q: "What happens to ownership when I make a Gift Deed vs a Will?",
-    a: "With a Gift Deed, ownership transfers immediately upon registration. You lose all ownership rights, cannot sell or mortgage the property, and cannot revoke the gift easily. With a Will, you retain 100% absolute ownership and control during your entire lifetime; property only passes to beneficiaries after your demise.",
+    a: "With a Gift Deed, ownership transfers right away upon filing. You lose all ownership rights, cannot sell or mortgage the asset, and cannot revoke the gift easily. With a Will, you retain 100% absolute ownership and control during your entire lifetime; asset only passes to heirs after your demise.",
   },
   {
     q: "What is the stamp duty cap on family gift deeds in Tamil Nadu?",
-    a: "Under Article 33 of the Tamil Nadu Stamp Act, a gift deed made in favor of family members (spouse, children, parents, grandchildren, siblings) attracts 1% stamp duty subject to a maximum ceiling of ₹25,000, and a 1% registration fee capped at ₹4,000. Non-family gifts attract 7% stamp duty and 4% registration fees.",
+    a: "Under Article 33 of the Tamil Nadu Stamp Act, a gift deed made in favor of family members (spouse, children, parents, grandchildren, siblings) attracts 1% stamp duty subject to a maximum ceiling of ₹25,000, and a 1% filing fee capped at ₹4,000. Non-family gifts attract 7% stamp duty and 4% filing fees.",
   },
   {
-    q: "Does a Will need to be registered in India to be legally valid?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registration of a Will is completely optional in India. An unregistered Will written on plain paper and signed by the testator in the presence of two attesting witnesses under Section 63 of the Indian Succession Act is 100% legally valid.",
+    q: "Does a Will need to be filed in India to be legally valid?",
+    a: "No. Under Section 18(e) of the Filing Act, 1908, filing of a Will is completely a choice in India. An plain Will written on plain paper and signed by the Will maker in the presence of two signing witnesses under Section 63 of the Indian Succession Act is 100% legally valid.",
   },
   {
-    q: "Can an NRI execute a gift deed or Will for property in India without traveling?",
+    q: "Can an NRI execute a gift deed or Will for asset in India without traveling?",
     a: "Yes. An NRI can execute a Will remotely from anywhere in the world before two local witnesses and have it attested. For a Gift Deed, the NRI donor can either execute a Specific Power of Attorney (POA) attested by the Indian Consulate or Embassy to appoint an Indian representative, or execute the gift deed before the Indian Consulate.",
   },
   {
-    q: "Which is better for avoiding family disputes: Gift Deed or Will?",
-    a: "A Will is far safer for parents because it preserves their shelter, dignity, and income for life while allowing unequal distribution without immediate family hostility. A Gift Deed executed prematurely often triggers abandonment of the elderly parent or immediate friction among children who did not receive property.",
+    q: "Which is better for avoiding family fights: Gift Deed or Will?",
+    a: "A Will is far safer for parents because it preserves their shelter, dignity, and income for life while allowing unequal split without immediate family hostility. A Gift Deed signed prematurely often triggers abandonment of the elderly parent or immediate friction among children who did not receive asset.",
   },
 ];
 
@@ -703,12 +703,12 @@ export default function GiftDeedCalculatorClient() {
   // Calculator State
   const [selectedState, setSelectedState] = useState<string>("MH");
   const [relationship, setRelationship] = useState<string>("children");
-  const [propertyType, setPropertyType] = useState<string>("residential");
+  const [propertyType, setPropertyType] = useState<string>("home");
   const [propertyValue, setPropertyValue] = useState<number>(10000000); // 1 Crore default
   const [coOwnership, setCoOwnership] = useState<string>("sole_owner");
 
-  // UI Interactive State
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  // UI Free State
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [copiedClauseIndex, setCopiedClauseIndex] = useState<number | null>(null);
 
@@ -803,12 +803,12 @@ export default function GiftDeedCalculatorClient() {
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Gift Deed vs Will Stamp Duty Calculator for Blood Relatives
+            Gift Deed vs Will Stamp Duty Tool for Blood Relatives
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Calculate exact state stamp duty and registration fees for property gift deeds across
+            Calculate exact state stamp duty and filing fees for asset gift deeds across
             Maharashtra, Uttar Pradesh, Delhi, Karnataka, and Tamil Nadu. Compare blood-relative
             concessions against a <strong>₹0 Stamp Duty Will</strong> and avoid lifetime title loss.
           </p>
@@ -828,7 +828,7 @@ export default function GiftDeedCalculatorClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will (Save ₹Lakhs)</span>
+              <span>Draft Fight-Proof Will (Save ₹Lakhs)</span>
             </button>
           </div>
         </div>
@@ -906,10 +906,10 @@ export default function GiftDeedCalculatorClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Transfer of Property Act 1882 (ss. 122–129), Registration Act 1908
+                Governed under Transfer of Property Act 1882 (ss. 122–129), Filing Act 1908
                 (ss. 17 &amp; 18), Indian Succession Act 1925 (ss. 2(h), 59 &amp; 63), and
                 Maintenance and Welfare of Parents and Senior Citizens Act 2007 (s. 23).
               </p>
@@ -950,16 +950,16 @@ export default function GiftDeedCalculatorClient() {
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
                     <strong>Zero Stamp Duty on Wills:</strong> Under the Indian Stamp Act, 1899,
-                    drafting and executing a Will attracts exactly ₹0 stamp duty in all 28 states.
-                    Registration is also completely optional under Section 18 of the Registration Act.
+                    drafting and signing a Will attracts exactly ₹0 stamp duty in all 28 states.
+                    Filing is also completely a choice under Section 18 of the Filing Act.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <span>
                     <strong>Immediate Loss of Ownership with Gift Deeds:</strong> Under Section 122 of
-                    the Transfer of Property Act, 1882, a registered gift deed transfers title
-                    immediately. The donor permanently loses all ownership rights and cannot revoke the
+                    the Transfer of Property Act, 1882, a filed gift deed transfers title
+                    right away. The donor permanently loses all ownership rights and cannot revoke the
                     gift unilaterally.
                   </span>
                 </li>
@@ -978,7 +978,7 @@ export default function GiftDeedCalculatorClient() {
                     <strong>Supreme Court Senior Citizen Protection:</strong> In{" "}
                     <em>Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</em>, the Supreme Court ruled
                     that a senior citizen can revoke a gift deed under Section 23 of the MWPSC Act only
-                    if an express maintenance condition was inserted into the registered deed.
+                    if an express maintenance condition was inserted into the filed deed.
                   </span>
                 </li>
               </ul>
@@ -991,30 +991,30 @@ export default function GiftDeedCalculatorClient() {
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Foundation: Gift Deed vs Release Deed vs Will
+                1. Legal Foundation: Gift Deed vs Release Deed vs Will
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When Indian parents contemplate passing family real estate to their children, they
                   frequently confuse three distinct legal instruments: a <strong>Gift Deed</strong>, a{" "}
                   <strong>Release Deed</strong> (also known as a Relinquishment Deed), and a{" "}
-                  <strong>Will (Vasiyat)</strong>. While property portals frequently show generic
+                  <strong>Will (Vasiyat)</strong>. While asset portals frequently show generic
                   stamp duty percentages, choosing the wrong instrument can cost your family lakhs in
                   needless government duties and strip senior citizens of their constitutional right
                   to shelter.
                 </p>
                 <p>
                   A <strong>Gift Deed</strong> is an inter-vivos transfer governed under Section 122 of
-                  the Transfer of Property Act, 1882. It takes effect immediately during the donor&apos;s
-                  lifetime, requires mandatory registration under Section 17 of the Registration Act,
+                  the Transfer of Property Act, 1882. It takes effect right away during the donor&apos;s
+                  lifetime, requires needed filing under Section 17 of the Filing Act,
                   1908, and attracts state stamp duty ranging from ₹200 up to 7% of circle value.
                 </p>
                 <p>
-                  Conversely, a <strong>Will</strong> is a testamentary declaration governed under
+                  Conversely, a <strong>Will</strong> is a Will declaration governed under
                   Section 2(h) and Section 63 of the Indian Succession Act, 1925. It takes effect
-                  strictly after the testator&apos;s demise. Under the Indian Stamp Act, 1899, a Will is
+                  strictly after the Will maker&apos;s demise. Under the Indian Stamp Act, 1899, a Will is
                   subject to <strong>₹0 Stamp Duty</strong> across all Indian states and Union
-                  Territories, and registration is entirely optional under Section 18(e).
+                  Territories, and filing is entirely a choice under Section 18(e).
                 </p>
               </div>
 
@@ -1030,13 +1030,13 @@ export default function GiftDeedCalculatorClient() {
                       <strong>Governed by:</strong> Section 122, Transfer of Property Act, 1882.
                     </p>
                     <p>
-                      <strong>Timing:</strong> Transfers title immediately while the donor is alive.
+                      <strong>Timing:</strong> Transfers title right away while the donor is alive.
                     </p>
                     <p>
-                      <strong>Stamp Duty:</strong> 1% to 7% state stamp duty + 1% registration.
+                      <strong>Stamp Duty:</strong> 1% to 7% state stamp duty + 1% filing.
                     </p>
                     <p className="text-rose-700 font-semibold">
-                      <strong>Irrevocable:</strong> Donor immediately loses all ownership rights.
+                      <strong>Irrevocable:</strong> Donor right away loses all ownership rights.
                     </p>
                   </div>
                 </div>
@@ -1044,20 +1044,20 @@ export default function GiftDeedCalculatorClient() {
                 <div className="p-4 rounded-xl border border-slate-300 bg-slate-50 space-y-2">
                   <div className="text-xs font-black text-slate-900 uppercase tracking-wide flex items-center gap-1.5">
                     <FileCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Will (Testamentary)</span>
+                    <span>Will (Will)</span>
                   </div>
                   <div className="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <p>
                       <strong>Governed by:</strong> Indian Succession Act, 1925 (ss. 2(h) &amp; 63).
                     </p>
                     <p>
-                      <strong>Timing:</strong> Operates only after the demise of the testator.
+                      <strong>Timing:</strong> Operates only after the demise of the Will maker.
                     </p>
                     <p className="text-[#C65378] font-black">
                       <strong>Stamp Duty:</strong> ₹0 (ZERO across all 28 Indian States).
                     </p>
                     <p className="text-slate-900 font-bold">
-                      <strong>100% Control:</strong> Testator retains full ownership &amp; can revoke.
+                      <strong>100% Control:</strong> Will maker retains full ownership &amp; can revoke.
                     </p>
                   </div>
                 </div>
@@ -1065,11 +1065,11 @@ export default function GiftDeedCalculatorClient() {
                 <div className="p-4 rounded-xl border border-blue-200 bg-blue-50/50 space-y-2">
                   <div className="text-xs font-black text-blue-800 uppercase tracking-wide flex items-center gap-1.5">
                     <Layers className="w-4 h-4 text-blue-600" />
-                    <span>Release Deed (Relinquishment)</span>
+                    <span>Release Deed (Release)</span>
                   </div>
                   <div className="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <p>
-                      <strong>Governed by:</strong> Registration Act, 1908 (Section 17(1)(b)).
+                      <strong>Governed by:</strong> Filing Act, 1908 (Section 17(1)(b)).
                     </p>
                     <p>
                       <strong>Timing:</strong> Immediate release of pre-existing co-ownership share.
@@ -1078,7 +1078,7 @@ export default function GiftDeedCalculatorClient() {
                       <strong>Stamp Duty:</strong> Concessional flat duty (₹200 to ₹5,000).
                     </p>
                     <p className="text-amber-800 font-semibold">
-                      <strong>Sole Owner Trap:</strong> CANNOT be used for 100% self-acquired property.
+                      <strong>Sole Owner Trap:</strong> CANNOT be used for 100% self-acquired asset.
                     </p>
                   </div>
                 </div>
@@ -1092,11 +1092,11 @@ export default function GiftDeedCalculatorClient() {
                 <span>INTERACTIVE STAMP DUTY CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Stamp Duty &amp; Registration Fee Calculator
+                2. Free Stamp Duty &amp; Filing Fee Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select your property state, family relationship, and property valuation to
-                instantly calculate exact stamp duty, registration fees, and compare your financial
+                Select your asset state, family relationship, and asset price check to
+                instantly calculate exact stamp duty, filing fees, and compare your financial
                 outflow against a ₹0 Stamp Duty Will.
               </p>
 
@@ -1108,7 +1108,7 @@ export default function GiftDeedCalculatorClient() {
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Globe className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>1. State / Jurisdiction</span>
+                      <span>1. State / Area</span>
                     </label>
                     <select
                       value={selectedState}
@@ -1130,7 +1130,7 @@ export default function GiftDeedCalculatorClient() {
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Users className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>2. Beneficiary Relationship</span>
+                      <span>2. Heir Relationship</span>
                     </label>
                     <select
                       value={relationship}
@@ -1154,7 +1154,7 @@ export default function GiftDeedCalculatorClient() {
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>3. Property Category</span>
+                      <span>3. Asset Category</span>
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -1166,7 +1166,7 @@ export default function GiftDeedCalculatorClient() {
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Residential
+                        Home
                       </button>
                       <button
                         type="button"
@@ -1177,7 +1177,7 @@ export default function GiftDeedCalculatorClient() {
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Plot / Commercial
+                        Plot / Shop
                       </button>
                     </div>
                   </div>
@@ -1212,7 +1212,7 @@ export default function GiftDeedCalculatorClient() {
                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                         }`}
                       >
-                        Joint / Ancestral
+                        Joint / Family
                       </button>
                     </div>
                     <p className="text-[10px] text-slate-500">
@@ -1294,7 +1294,7 @@ export default function GiftDeedCalculatorClient() {
                         </h3>
                       </div>
                       <div className="text-left md:text-right">
-                        <div className="text-xs uppercase font-bold text-slate-300">Statutory Savings</div>
+                        <div className="text-xs uppercase font-bold text-slate-300">Legal Savings</div>
                         <div className="text-xl sm:text-2xl font-black text-rose-300">
                           Saves {formatINR(savingsAmount)} in Upfront Fees!
                         </div>
@@ -1336,14 +1336,14 @@ export default function GiftDeedCalculatorClient() {
                           </span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
-                          <span className="text-slate-600">Registration Fee</span>
+                          <span className="text-slate-600">Filing Fee</span>
                           <span className="font-semibold text-rose-900">
                             {formatINR(giftResult.regFee)}
                           </span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
                           <span className="text-slate-600 font-bold">Operational Timing</span>
-                          <span className="font-bold text-slate-900">Immediate upon registration</span>
+                          <span className="font-bold text-slate-900">Immediate upon filing</span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
                           <span className="text-slate-600 font-bold">Donor Living Rights</span>
@@ -1351,7 +1351,7 @@ export default function GiftDeedCalculatorClient() {
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
                           <span className="text-slate-600 font-bold">Revocability</span>
-                          <span className="font-bold text-rose-700">Irrevocable without court dispute</span>
+                          <span className="font-bold text-rose-700">Irrevocable without court fight</span>
                         </div>
                         <div className="flex justify-between pt-2 text-sm font-black text-rose-800">
                           <span>Total Government Outflow</span>
@@ -1382,12 +1382,12 @@ export default function GiftDeedCalculatorClient() {
                           <span className="font-black text-[#C65378] text-sm">₹0 (ZERO)</span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
-                          <span className="text-slate-600">Mandatory Registration Fee</span>
-                          <span className="font-black text-[#C65378] text-sm">₹0 (Optional)</span>
+                          <span className="text-slate-600">Needed Filing Fee</span>
+                          <span className="font-black text-[#C65378] text-sm">₹0 (A Choice)</span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
                           <span className="text-slate-600 font-bold">Operational Timing</span>
-                          <span className="font-bold text-slate-900">Only post-demise of testator</span>
+                          <span className="font-bold text-slate-900">Only post-demise of Will maker</span>
                         </div>
                         <div className="flex justify-between py-1 border-b border-slate-50">
                           <span className="text-slate-600 font-bold">Donor Living Rights</span>
@@ -1409,7 +1409,7 @@ export default function GiftDeedCalculatorClient() {
                   <div className="bg-blue-50/60 rounded-2xl border border-blue-200 p-5 space-y-2">
                     <div className="flex items-center gap-2 font-extrabold text-blue-950 text-sm">
                       <Layers className="w-4 h-4 text-blue-700" />
-                      <span>Option C: Release Deed Status (Relinquishment of Co-Ownership)</span>
+                      <span>Option C: Release Deed Status (Release of Co-Ownership)</span>
                     </div>
                     {isReleaseApplicable ? (
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
@@ -1420,7 +1420,7 @@ export default function GiftDeedCalculatorClient() {
                           </div>
                         </div>
                         <div className="p-3 bg-white rounded-xl border border-blue-100">
-                          <div className="text-slate-500 font-semibold">Registration Fee</div>
+                          <div className="text-slate-500 font-semibold">Filing Fee</div>
                           <div className="font-black text-slate-900 text-sm mt-0.5">
                             {formatINR(releaseReg)}
                           </div>
@@ -1435,8 +1435,8 @@ export default function GiftDeedCalculatorClient() {
                     ) : (
                       <p className="text-xs text-slate-600 pt-1">
                         <strong>Not Applicable for Sole Owner:</strong> A Release Deed can only be
-                        executed between existing co-owners or coparceners who already hold a pre-existing
-                        share in ancestral property. A sole owner cannot release self-acquired property.
+                        signed between existing co-owners or coparceners who already hold a pre-existing
+                        share in family asset. A sole owner cannot release self-acquired asset.
                       </p>
                     )}
                   </div>
@@ -1456,9 +1456,9 @@ export default function GiftDeedCalculatorClient() {
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under the Indian Constitution (Seventh Schedule, Entry 63 of the State List), stamp
-                  duties on instruments other than bills of exchange are enacted by individual state
-                  legislatures. Consequently, stamp duty on family gift deeds varies dramatically
-                  across India. Below is the verified statutory breakdown for high-volume states.
+                  duties on instruments other than bills of exchange are enacted by single state
+                  legislatures. So, stamp duty on family gift deeds varies dramatically
+                  across India. Below is the checked legal breakdown for high-volume states.
                 </p>
               </div>
 
@@ -1475,10 +1475,10 @@ export default function GiftDeedCalculatorClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If residential or agricultural property is gifted to a spouse, son, daughter,
+                    If home or farm asset is gifted to a spouse, son, daughter,
                     grandson, granddaughter, or the wife of a deceased son, the stamp duty is a flat
-                    ₹200. Registration fee is 1% of market value, capped at a maximum of ₹30,000.
-                    However, commercial properties gifted to blood relatives attract 2% stamp duty
+                    ₹200. Filing fee is 1% of market value, capped at a maximum of ₹30,000.
+                    However, shop assets gifted to blood relatives attract 2% stamp duty
                     plus 1% metro cess/LBT (total 3%). Gifts to brothers, sisters, or parents do not
                     qualify for the ₹200 concession and attract 3% duty.
                   </p>
@@ -1495,11 +1495,11 @@ export default function GiftDeedCalculatorClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under the landmark notification issued by the UP Government, gift deeds executed
+                    Under the landmark notification issued by the UP Government, gift deeds signed
                     between blood relatives (parents, spouse, children, siblings, grandchildren,
-                    and daughter-in-law) for residential or agricultural property attract a flat
-                    stamp duty of ₹5,000. Registration fee is 1%, subject to a maximum ceiling of
-                    ₹10,000. For a ₹1 Crore property in Noida or Lucknow, total government outflow is
+                    and daughter-in-law) for home or farm asset attract a flat
+                    stamp duty of ₹5,000. Filing fee is 1%, subject to a maximum ceiling of
+                    ₹10,000. For a ₹1 Crore asset in Noida or Lucknow, total government outflow is
                     just ₹15,000, compared to ₹8 Lakhs for a non-relative!
                   </p>
                 </div>
@@ -1517,8 +1517,8 @@ export default function GiftDeedCalculatorClient() {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Delhi does NOT offer flat-fee concessions for blood relatives. The stamp duty on
                     a gift deed in Delhi is 2% of circle rate if the donee is female and 3% if the
-                    donee is male. Additionally, 1% municipal transfer duty is charged by MCD, plus
-                    1% registration fee (plus ₹100 pasting charges). Gifting a ₹3 Crore house in
+                    donee is male. Also, 1% city transfer duty is charged by MCD, plus
+                    1% filing fee (plus ₹100 pasting charges). Gifting a ₹3 Crore house in
                     South Delhi to a son costs over ₹12 Lakhs in government fees, whereas a Will
                     costs ₹0.
                   </p>
@@ -1537,9 +1537,9 @@ export default function GiftDeedCalculatorClient() {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     For family members (spouse, children, parents, grandchildren, and siblings),
                     Tamil Nadu charges 1% stamp duty subject to a strict maximum ceiling of ₹25,000,
-                    plus a 1% registration fee capped at ₹4,000. Total government charges for a ₹1
+                    plus a 1% filing fee capped at ₹4,000. Total government charges for a ₹1
                     Crore or ₹5 Crore home in Chennai are capped at just ₹29,000! For non-family,
-                    the duty is an exorbitant 7% stamp duty + 4% registration (total 11%).
+                    the duty is an exorbitant 7% stamp duty + 4% filing (total 11%).
                   </p>
                 </div>
 
@@ -1557,8 +1557,8 @@ export default function GiftDeedCalculatorClient() {
                     Under Article 28, gifts among immediate family members (spouse, children,
                     parents, grandchildren) within BBMP or city corporations attract a flat stamp
                     duty of ₹5,000 (and ₹1,000 in village/gram panchayat areas), plus a 1%
-                    registration fee capped at ₹1,000. Non-family gifts attract 5.5% stamp duty (with
-                    cess) + 2% registration fee.
+                    filing fee capped at ₹1,000. Non-family gifts attract 5.5% stamp duty (with
+                    cess) + 2% filing fee.
                   </p>
                 </div>
 
@@ -1574,7 +1574,7 @@ export default function GiftDeedCalculatorClient() {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Both the Haryana and Punjab state governments have completely exempted stamp duty
-                    on the transfer of immovable property between direct blood relatives (parents to
+                    on the transfer of land asset between direct blood relatives (parents to
                     children, grandparents to grandchildren, and between spouses). Only nominal
                     computerization processing charges (₹1,000 to ₹2,000) apply.
                   </p>
@@ -1593,10 +1593,10 @@ export default function GiftDeedCalculatorClient() {
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The most severe risk of executing a Gift Deed is legal finality. Under Section 126
-                  of the Transfer of Property Act, 1882, a registered gift deed cannot be revoked
+                  The most severe risk of signing a Gift Deed is legal finality. Under Section 126
+                  of the Transfer of Property Act, 1882, a filed gift deed cannot be revoked
                   unilaterally by the donor unless an express revocation condition was agreed upon in
-                  writing before execution. Once the deed is registered, the child becomes the sole
+                  writing before signing. Once the deed is filed, the child becomes the sole
                   absolute owner and the parent legally becomes a licensee in their own home.
                 </p>
               </div>
@@ -1614,9 +1614,9 @@ export default function GiftDeedCalculatorClient() {
                   In January 2025, the Supreme Court of India delivered a landmark judgment in{" "}
                   <strong>Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20)</strong>. The Apex Court
                   reiterated that under Section 23 of the Maintenance and Welfare of Parents and
-                  Senior Citizens Act, 2007, where a senior citizen transfers property by gift
+                  Senior Citizens Act, 2007, where a senior citizen transfers asset by gift
                   subject to the condition that the transferee shall provide basic amenities and
-                  physical needs, and the child fails or refuses to do so, the transfer of property
+                  physical needs, and the child fails or refuses to do so, the transfer of asset
                   shall be deemed to have been made by fraud, coercion, or undue influence and may be
                   declared void by the Maintenance Tribunal.
                 </p>
@@ -1626,7 +1626,7 @@ export default function GiftDeedCalculatorClient() {
                     Earlier Supreme Court rulings, including <em>Sudesh Chhikara v. Ram Tiwary (2022)</em>,
                     established that if the Gift Deed does NOT contain an express maintenance
                     condition clause in writing, the Tribunal cannot declare the gift deed void. If
-                    you gift without this exact recital, your property is lost forever.
+                    you gift without this exact recital, your asset is lost forever.
                   </p>
                 </div>
               </div>
@@ -1644,8 +1644,8 @@ export default function GiftDeedCalculatorClient() {
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Both Gift Deeds and Wills enjoy favorable income tax exemptions at the moment of
-                  transfer, but their downstream capital gains tax rules when the property is
-                  subsequently sold differ significantly under Finance (No. 2) Act, 2024.
+                  transfer, but their downstream capital gains tax rules when the asset is
+                  then sold differ significantly under Finance (No. 2) Act, 2024.
                 </p>
               </div>
 
@@ -1656,7 +1656,7 @@ export default function GiftDeedCalculatorClient() {
                     <span>Section 56(2)(x) Exemption for Relatives</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 56(2)(x) of the Income Tax Act, 1961, receiving property without
+                    Under Section 56(2)(x) of the Income Tax Act, 1961, receiving asset without
                     consideration from defined relatives (spouse, siblings, lineal ascendants, and
                     lineal descendants) is 100% exempt from income tax in the hands of the
                     recipient. However, if gifted to a non-relative, the ready reckoner value is
@@ -1672,7 +1672,7 @@ export default function GiftDeedCalculatorClient() {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Section 47(iii), any transfer of a capital asset under a Will or an
                     irrevocable trust is not regarded as a transfer for capital gains tax. The
-                    beneficiary pays zero tax when inheriting under a Will.
+                    heir pays zero tax when inheriting under a Will.
                   </p>
                 </div>
               </div>
@@ -1683,12 +1683,12 @@ export default function GiftDeedCalculatorClient() {
                   <span>Subsequent Sale: Section 49(1) Cost to Previous Owner</span>
                 </div>
                 <p>
-                  When your child eventually sells the gifted or inherited property, their capital
+                  When your child eventually sells the gifted or inherited asset, their capital
                   gains tax is computed using <strong>Section 49(1)</strong>. The cost of
                   acquisition is deemed to be the cost paid by the parent. Under the landmark Bombay
                   High Court ruling in <em>CIT v. Manjula J. Shah</em>, the holding period includes
-                  the period during which the parent held the property. Under Budget 2024 rules,
-                  for properties acquired by parents before July 23, 2024, the seller can compare
+                  the period during which the parent held the asset. Under Budget 2024 rules,
+                  for assets acquired by parents before July 23, 2024, the seller can compare
                   12.5% flat tax vs 20% with indexation.
                 </p>
               </div>
@@ -1704,7 +1704,7 @@ export default function GiftDeedCalculatorClient() {
                 6. Structural Comparison Table: Gift Deed vs Will vs Release
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Compare all three instruments side-by-side across statutory parameters, costs,
+                Compare all three instruments side-by-side across legal parameters, costs,
                 revocability, and operational timing.
               </p>
 
@@ -1731,12 +1731,12 @@ export default function GiftDeedCalculatorClient() {
                         Effective Timing
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200 font-semibold text-rose-800">
-                        Immediate upon registration
+                        Immediate upon filing
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200 font-bold text-slate-900">
-                        Only after demise of testator
+                        Only after demise of Will maker
                       </td>
-                      <td className="p-3 sm:p-4">Immediate upon execution</td>
+                      <td className="p-3 sm:p-4">Immediate upon signing</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold bg-slate-50 border-r border-slate-200">
@@ -1752,15 +1752,15 @@ export default function GiftDeedCalculatorClient() {
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold bg-slate-50 border-r border-slate-200">
-                        Registration Mandatory?
+                        Filing Needed?
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200">
-                        Yes, strictly mandatory (Sec 17)
+                        Yes, strictly needed (Sec 17)
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200 font-bold text-slate-900">
-                        No, optional (Sec 18(e))
+                        No, a choice (Sec 18(e))
                       </td>
-                      <td className="p-3 sm:p-4">Yes, strictly mandatory</td>
+                      <td className="p-3 sm:p-4">Yes, strictly needed</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold bg-slate-50 border-r border-slate-200">
@@ -1784,31 +1784,31 @@ export default function GiftDeedCalculatorClient() {
                       <td className="p-3 sm:p-4 border-r border-slate-200 font-bold text-slate-900">
                         100% revocable anytime for free
                       </td>
-                      <td className="p-3 sm:p-4">Irrevocable once registered</td>
+                      <td className="p-3 sm:p-4">Irrevocable once filed</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold bg-slate-50 border-r border-slate-200">
-                        Applicable Property
+                        Applicable Asset
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200">
                         Self-acquired or sole share
                       </td>
                       <td className="p-3 sm:p-4 border-r border-slate-200">
-                        Self-acquired or coparcenary share
+                        Self-acquired or joint share
                       </td>
                       <td className="p-3 sm:p-4 text-amber-800 font-semibold">
-                        Ancestral / Joint co-owned ONLY
+                        Family / Joint co-owned ONLY
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="p-3 sm:p-4 font-bold bg-slate-50 border-r border-slate-200">
-                        Witness Attestation
+                        Witness Witness Signing
                       </td>
-                      <td className="p-3 sm:p-4 border-r border-slate-200">2 witnesses mandatory</td>
+                      <td className="p-3 sm:p-4 border-r border-slate-200">2 witnesses needed</td>
                       <td className="p-3 sm:p-4 border-r border-slate-200">
-                        2 witnesses mandatory (Sec 63)
+                        2 witnesses needed (Sec 63)
                       </td>
-                      <td className="p-3 sm:p-4">2 witnesses mandatory</td>
+                      <td className="p-3 sm:p-4">2 witnesses needed</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1844,11 +1844,11 @@ export default function GiftDeedCalculatorClient() {
                 <span>VERIFIED PRACTICE PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Step-by-Step SOP: Choosing the Right Property Transfer Mode
+                7. Step-by-Step SOP: Choosing the Right Asset Transfer Mode
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Follow this verified 5-step protocol prepared by AMA Legal Solutions senior estate
-                advocates before signing any deed or executing a property transfer.
+                Follow this checked 5-step protocol prepared by AMA Legal Solutions senior estate
+                lawyers before signing any deed or signing a asset transfer.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -1858,12 +1858,12 @@ export default function GiftDeedCalculatorClient() {
                   </div>
                   <div className="space-y-1 text-xs sm:text-sm">
                     <div className="font-extrabold text-[#172228]">
-                      Verify Property Title Classification
+                      Verify Asset Title Classification
                     </div>
                     <p className="text-slate-600 leading-relaxed">
-                      Check your title deed. If the property is 100% self-acquired, a Release Deed
+                      Check your title deed. If the asset is 100% self-acquired, a Release Deed
                       is legally prohibited. You can only choose between a Gift Deed and a Will. If
-                      the property is ancestral or jointly inherited with siblings, a Release Deed
+                      the asset is family or jointly inherited with siblings, a Release Deed
                       can be used to surrender shares.
                     </p>
                   </div>
@@ -1880,7 +1880,7 @@ export default function GiftDeedCalculatorClient() {
                     <p className="text-slate-600 leading-relaxed">
                       Ask yourself: Does your child urgently require immediate legal title to obtain
                       a bank construction loan, or can the title pass peacefully upon demise? If
-                      there is no urgent commercial necessity, executing a Gift Deed surrenders your
+                      there is no urgent shop necessity, signing a Gift Deed surrenders your
                       roof needlessly.
                     </p>
                   </div>
@@ -1892,10 +1892,10 @@ export default function GiftDeedCalculatorClient() {
                   </div>
                   <div className="space-y-1 text-xs sm:text-sm">
                     <div className="font-extrabold text-[#172228]">
-                      Calculate State Stamp Duty &amp; Registration Outflow
+                      Calculate State Stamp Duty &amp; Filing Outflow
                     </div>
                     <p className="text-slate-600 leading-relaxed">
-                      Use our interactive calculator above. Check if your state provides a flat
+                      Use our free tool above. Check if your state provides a flat
                       concession (e.g. Maharashtra ₹200, UP ₹5,000, TN ₹25,000 cap) or charges
                       percentage duty (e.g. Delhi 4%). Compare this outflow against a ₹0 Stamp Duty
                       Will.
@@ -1909,13 +1909,13 @@ export default function GiftDeedCalculatorClient() {
                   </div>
                   <div className="space-y-1 text-xs sm:text-sm">
                     <div className="font-extrabold text-[#172228]">
-                      Incorporate Mandatory Statutory Safeguards
+                      Incorporate Needed Legal Safeguards
                     </div>
                     <p className="text-slate-600 leading-relaxed">
                       If you must execute a Gift Deed as a senior citizen, you MUST insert an
                       express Section 23 MWPSC maintenance recital. If you draft a Will, ensure
-                      strict Section 63 attestation by two independent witnesses who are not
-                      beneficiaries.
+                      strict Section 63 witness signing by two independent witnesses who are not
+                      heirs.
                     </p>
                   </div>
                 </div>
@@ -1929,8 +1929,8 @@ export default function GiftDeedCalculatorClient() {
                       Execute and Preserve the Instrument
                     </div>
                     <p className="text-slate-600 leading-relaxed">
-                      For a Gift Deed, visit the Sub-Registrar Office (SRO) for biometric
-                      registration. For a Will, store the signed original securely, register it if
+                      For a Gift Deed, visit the SRO office (SRO) for biometric
+                      filing. For a Will, store the signed original securely, register it if
                       desired under Section 18, and inform your appointed executor.
                     </p>
                   </div>
@@ -1960,7 +1960,7 @@ export default function GiftDeedCalculatorClient() {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Mr. Deshmukh (68) wanted to transfer his Pune flat to his married daughter. A
                     local agent advised a Gift Deed, estimating ₹30,200 total cost (₹200 stamp duty +
-                    ₹30,000 registration cap). However, after signing, marital friction arose
+                    ₹30,000 filing cap). However, after signing, marital friction arose
                     between the daughter and son-in-law, who demanded the flat be mortgaged for his
                     business. Mr. Deshmukh was forced to file a police complaint. Had Mr. Deshmukh
                     drafted a Will, he would have paid ₹0, kept complete ownership, and bequeathed
@@ -1975,12 +1975,12 @@ export default function GiftDeedCalculatorClient() {
                     Case Study 2: Senior Citizen Mother in Noida, Uttar Pradesh
                   </div>
                   <h3 className="text-sm font-extrabold text-[#172228]">
-                    Availing UP ₹5,000 Concession with Mandatory Section 23 Clause
+                    Availing UP ₹5,000 Concession with Needed Section 23 Clause
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Mrs. Sharma (72) decided to gift her Noida villa (market value ₹2 Crore) to her
                     younger son under UP&apos;s ₹5,000 blood-relative scheme. On AMA Legal
-                    Solutions&apos; advice, she insisted on including the statutory maintenance
+                    Solutions&apos; advice, she insisted on including the legal maintenance
                     recital under Section 23 of the Senior Citizens Act. Total fees paid: ₹15,000
                     (₹5,000 stamp + ₹10,000 reg). Two years later, when the son attempted to sell
                     the house without her consent, the Maintenance Tribunal promptly declared the
@@ -1998,9 +1998,9 @@ export default function GiftDeedCalculatorClient() {
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A family in Greater Kailash, Delhi, owned a bungalow valued at ₹5 Crore. Gifting
-                    the property to their two sons would have attracted 4% duty (3% stamp + 1%
-                    municipal) + 1% registration, requiring an upfront cash outflow of ₹25 Lakhs! By
-                    consulting an estate advocate and executing a registered Will, the family paid
+                    the asset to their two sons would have attracted 4% duty (3% stamp + 1%
+                    city) + 1% filing, requiring an upfront cash outflow of ₹25 Lakhs! By
+                    consulting an estate lawyer and signing a filed Will, the family paid
                     ₹0 in stamp duty, saved ₹25 Lakhs in capital, and clearly demarcated each floor
                     between both brothers.
                   </p>
@@ -2018,7 +2018,7 @@ export default function GiftDeedCalculatorClient() {
                 9. Legal Clause Templates: Senior Citizen Gift vs Will Clause
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use these verified statutory clauses drafted by AMA Legal Solutions senior advocates
+                Use these checked legal clauses drafted by AMA Legal Solutions senior lawyers
                 to protect your legal rights.
               </p>
 
@@ -2026,7 +2026,7 @@ export default function GiftDeedCalculatorClient() {
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 23 MWPSC Mandatory Maintenance Recital (For Gift Deeds)
+                    Section 23 MWPSC Needed Maintenance Recital (For Gift Deeds)
                   </div>
                   <button
                     type="button"
@@ -2098,7 +2098,7 @@ export default function GiftDeedCalculatorClient() {
                 <span>LEGAL EXPERTISE &amp; PRACTICE BENCH</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Advocate Profile: AMA Legal Solutions Estate Advisory
+                10. Lawyer Profile: AMA Legal Solutions Estate Advisory
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
@@ -2112,16 +2112,16 @@ export default function GiftDeedCalculatorClient() {
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&apos;s premier succession technology and estate planning
+                  WillDrafting.in is India&apos;s premier estate technology and estate planning
                   platform, powered by AMA Legal Solutions. With over 10,000+ Wills, family
                   settlements, and gift deeds structured across Maharashtra, Delhi NCR, Karnataka,
                   Tamil Nadu, and Uttar Pradesh, AMA Legal Solutions protects family wealth from
-                  crippling stamp duties, unnecessary litigation, and elder vulnerability.
+                  crippling stamp duties, unnecessary court fights, and elder risk.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -2130,7 +2130,7 @@ export default function GiftDeedCalculatorClient() {
                     href="/contact"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Talk to Senior Advocate</span>
+                    <span>Talk to Senior Lawyer</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -2162,7 +2162,7 @@ export default function GiftDeedCalculatorClient() {
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear layman explanations for the most common questions raised by Indian families
-                and senior citizens regarding property transfer duties.
+                and senior citizens regarding asset transfer duties.
               </p>
 
               <div className="divide-y divide-slate-200 pt-2 bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs">
@@ -2200,12 +2200,12 @@ export default function GiftDeedCalculatorClient() {
                 <span>STATUTORY CITATIONS &amp; PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Statutory Citations &amp; Official State Stamp Duty Portals
+                12. Legal Citations &amp; Official State Stamp Duty Portals
               </h3>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-xs space-y-4 text-xs">
                 <div className="font-extrabold text-slate-900 mb-1">
-                  Governing State Portals for Biometric Property Registration:
+                  Governing State Portals for Biometric Asset Filing:
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
@@ -2245,10 +2245,10 @@ export default function GiftDeedCalculatorClient() {
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 text-[11px] text-slate-600 leading-relaxed space-y-1">
-                  <div className="font-bold text-[#172228]">Core Statutory Authorities:</div>
+                  <div className="font-bold text-[#172228]">Core Legal Offices:</div>
                   <p>
                     • Indian Stamp Act, 1899 (Schedule I) &amp; Respective State Stamp Amendments •
-                    Registration Act, 1908 (Section 17, Section 18) • Transfer of Property Act, 1882
+                    Filing Act, 1908 (Section 17, Section 18) • Transfer of Property Act, 1882
                     (Sections 122–129) • Indian Succession Act, 1925 (Sections 2(h), 59, 62, 63) •
                     Income Tax Act, 1961 (Sections 47(iii), 49(1), 56(2)(x)) • Maintenance and
                     Welfare of Parents and Senior Citizens Act, 2007 (Section 23).
@@ -2256,7 +2256,29 @@ export default function GiftDeedCalculatorClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Brand Navy & Rose, No Green)
@@ -2269,21 +2291,21 @@ export default function GiftDeedCalculatorClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, property stamp duty exemptions,
+                Expert in Indian testamentary jurisprudence, asset stamp duty exemptions,
                 Section 23 elder protection petitions, and cross-border family estate structuring.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-[#C65378] flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#C65378]" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2300,8 +2322,8 @@ export default function GiftDeedCalculatorClient() {
                   Save ₹Lakhs in Stamp Duty and Retain 100% Lifetime Control
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally registered Will costs ₹0 in stamp duty, preserves your shelter and living
-                  rights, and prevents premature family property disputes.
+                  A legally filed Will costs ₹0 in stamp duty, preserves your shelter and living
+                  rights, and prevents premature family asset fights.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -2326,15 +2348,15 @@ export default function GiftDeedCalculatorClient() {
                   Unsure Whether to Gift, Release, or Will Your Home?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our testamentary advocates verify circle rates, insert mandatory Section 23 elder
-                  protection recitals, and handle SRO document registration pan-India.
+                  Our Will lawyers verify circle rates, insert needed Section 23 elder
+                  protection recitals, and handle SRO paper filing pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -2347,7 +2369,7 @@ export default function GiftDeedCalculatorClient() {
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                     <span>
-                      <strong>State Statutory Precision:</strong> Calculates exact blood-relative
+                      <strong>State Legal Precision:</strong> Calculates exact blood-relative
                       concessions for MH, UP, DL, TN, and all states.
                     </span>
                   </li>
@@ -2362,7 +2384,7 @@ export default function GiftDeedCalculatorClient() {
                     <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                     <span>
                       <strong>Zero Stamp Duty Solution:</strong> Empowers families to preserve wealth
-                      with challenge-proof Wills.
+                      with fight-proof Wills.
                     </span>
                   </li>
                 </ul>
@@ -2379,7 +2401,7 @@ export default function GiftDeedCalculatorClient() {
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Stamp Calculator</span>
+          <span>Stamp Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

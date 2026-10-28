@@ -133,7 +133,7 @@ export default function HaryanaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Haryana: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate.",
+          "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot estate rules, and fight-free family estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -180,7 +180,7 @@ export default function HaryanaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Haryana - Legal Estate Planning & Jamabandi Registration",
         description:
-          "Professional Will drafting, advocate verification, Jamabandi Haryana e-token registration, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, lawyer check, Jamabandi Haryana e-token filing, and Section 31 doorstep signing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -256,26 +256,26 @@ export default function HaryanaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Haryana",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Tehsil Sub-Registrar in Haryana.",
+          "Five clear steps to create a legally binding Will and register it before the Tehsil SRO in Haryana.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Assets and Designate Beneficiaries",
-            text: "List your Haryana assets including HSVP plots, builder floors, condominium flats, agricultural Jamabandi land, bank deposits, and shares. Designate primary beneficiaries and an alternate executor.",
+            text: "List your Haryana assets including HSVP plots, builder floors, condominium flats, farm Jamabandi land, bank deposits, and shares. Designate primary heirs and an alternate executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Mandatory Legal Clauses",
-            text: "Draft your Will using our legal platform or consult our senior advocate to include revocation clauses, specific bequests, terrace and parking allocations, and executor powers.",
+            text: "Draft your Will using our legal platform or consult our senior lawyer to include revocation clauses, specific bequests, terrace and parking allocations, and executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
@@ -287,7 +287,7 @@ export default function HaryanaLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Tehsil",
-            text: "Visit the Tehsil Sub-Registrar office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, photograph capture, and Book III registration.",
+            text: "Visit the Tehsil SRO office with your two witnesses and original Aadhaar cards for biometric thumbprint scanning, photograph capture, and Book III filing.",
           },
         ],
       },

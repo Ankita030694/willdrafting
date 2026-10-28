@@ -46,62 +46,62 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "what-is-family-settlement", label: "1. What is a Family Settlement in India?" },
+  { id: "what-is-family-settlement", label: "1. What is a Family Deal in India?" },
   { id: "kale-supreme-court-precedent", label: "2. Supreme Court Precedents: The Kale Rule" },
-  { id: "memorandum-vs-partition-deed", label: "3. Memorandum vs Partition Deed Comparison" },
-  { id: "interactive-drafting-selector", label: "4. Interactive Settlement Drafting Selector" },
-  { id: "memorandum-oral-settlement-template", label: "5. Format 1: Past Oral Settlement (Yadasht)" },
-  { id: "operative-settlement-deed-template", label: "6. Format 2: Registered Settlement Deed" },
+  { id: "memorandum-vs-partition-deed", label: "3. Memorandum vs Split Deed Comparison" },
+  { id: "interactive-drafting-selector", label: "4. Free Deal Drafting Selector" },
+  { id: "memorandum-oral-settlement-template", label: "5. Format 1: Past Oral Deal (Yadasht)" },
+  { id: "operative-settlement-deed-template", label: "6. Format 2: Filed Deal Deed" },
   { id: "essential-settlement-clauses", label: "7. Key Clauses: Estoppel, Owelty & Title" },
-  { id: "registration-stamp-duty-rules", label: "8. Registration Act Sec 17 & Stamp Duty" },
+  { id: "registration-stamp-duty-rules", label: "8. Filing Act Sec 17 & Stamp Duty" },
   { id: "taxation-capital-gains-rules", label: "9. Tax Exemptions: Section 47 IT Act" },
-  { id: "step-by-step-execution-sop", label: "10. Step-by-Step SOP: Execution to Mutation" },
-  { id: "practical-case-studies", label: "11. Real Family Settlement Case Studies" },
+  { id: "step-by-step-execution-sop", label: "10. Step-by-Step SOP: Signing to Name Change" },
+  { id: "practical-case-studies", label: "11. Real Family Deal Case Studies" },
   { id: "institutional-profile", label: "12. Legal Review by AMA Legal Solutions" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
-    q: "What is a Family Settlement Agreement in Indian law?",
-    a: "A Family Settlement Agreement is an amicable agreement among family members who share antecedent rights, claims, or title in family properties. Instead of fighting expensive partition lawsuits in civil court, the family agrees to divide their shared properties peacefully. It preserves family harmony and resolves rival property claims permanently.",
+    q: "What is a Family Deal Pact in Indian law?",
+    a: "A Family Deal Pact is an amicable pact among family members who share antecedent rights, claims, or title in family assets. Instead of fighting expensive split lawsuits in civil court, the family agrees to divide their shared assets peacefully. It preserves family harmony and resolves rival asset claims permanently.",
   },
   {
-    q: "Is an oral family settlement legally valid without registration in India?",
-    a: "Yes, 100%. The Supreme Court of India in Kale v. Deputy Director of Consolidation (AIR 1976 SC 807) held that an oral family settlement is completely valid in law. When family members orally partition property and later record the agreed terms in a Memorandum (Yadasht), that memorandum does not require compulsory registration under Section 17 of the Registration Act, 1908.",
+    q: "Is an oral family deal legally valid without filing in India?",
+    a: "Yes, 100%. The Supreme Court of India in Kale v. Deputy Director of Consolidation (AIR 1976 SC 807) held that an oral family deal is completely valid in law. When family members orally split asset and later record the agreed terms in a Memorandum (Yadasht), that memorandum does not require needed filing under Section 17 of the Filing Act, 1908.",
   },
   {
-    q: "What is the crucial difference between a Memorandum of Settlement and a Partition Deed?",
-    a: "A Partition Deed creates new rights and divides property on the spot (in praesenti). Therefore, Section 17(1)(b) of the Registration Act makes its registration compulsory, attracting heavy state stamp duty (often 2% to 6%). A Memorandum of Past Oral Settlement merely records a partition that already took place orally in the past. It does not create new title, so it avoids heavy stamp duty and mandatory registration.",
+    q: "What is the crucial difference between a Memorandum of Deal and a Split Deed?",
+    a: "A Split Deed creates new rights and divides asset on the spot (in praesenti). Therefore, Section 17(1)(b) of the Filing Act makes its filing needed, attracting heavy state stamp duty (often 2% to 6%). A Memorandum of Past Oral Deal merely records a split that already took place orally in the past. It does not create new title, so it avoids heavy stamp duty and needed filing.",
   },
   {
     q: "How does the Supreme Court ruling in Korukonda Chalapathi Rao (2021) protect families?",
-    a: "In Korukonda Chalapathi Rao v. Korukonda Annapurna Sampath Kumar (2021), the Supreme Court ruled that an unregistered family settlement memorandum is admissible in evidence under the proviso to Section 49 of the Registration Act for collateral purposes. This includes proving the nature and character of separate possession and the severance of joint family status.",
+    a: "In Korukonda Chalapathi Rao v. Korukonda Annapurna Sampath Kumar (2021), the Supreme Court ruled that an plain family deal memorandum is admissible in evidence under the proviso to Section 49 of the Filing Act for collateral purposes. This includes proving the nature and character of separate possession and the severance of joint family status.",
   },
   {
-    q: "Do married daughters and sisters have equal rights in a family settlement?",
-    a: "Yes. Under Section 6 of the Hindu Succession Act, 1956 (amended in 2005) and the Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal coparcenary rights by birth. Any family settlement that excludes married daughters or sisters without their written consent can be challenged and overturned in civil court.",
+    q: "Do married daughters and sisters have equal rights in a family deal?",
+    a: "Yes. Under Section 6 of the Hindu Succession Act, 1956 (amended in 2005) and the Supreme Court judgment in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal joint rights by birth. Any family deal that excludes married daughters or sisters without their written consent can be challenged and overturned in civil court.",
   },
   {
-    q: "Does a family settlement agreement attract capital gains tax in India?",
-    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets during a family partition or settlement is not regarded as a transfer. Therefore, executing a family settlement attracts zero capital gains tax. Tax liability arises only when a family member subsequently sells their allotted share to a third-party buyer.",
+    q: "Does a family deal pact attract capital gains tax in India?",
+    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any split of capital assets during a family split or deal is not regarded as a transfer. Therefore, signing a family deal attracts zero capital gains tax. Tax liability arises only when a family member then sells their allotted share to a third-party buyer.",
   },
   {
     q: "What is an Owelty clause, and when is it required?",
-    a: "An Owelty clause is used when properties cannot be physically divided into equal financial shares. For example, if one sibling receives the primary family bungalow and another receives a smaller apartment, the party receiving the more valuable property pays a cash sum (owelty) to equalize the division.",
+    a: "An Owelty clause is used when assets cannot be physically divided into equal financial shares. For example, if one sibling receives the primary family bungalow and another receives a smaller apartment, the party receiving the more valuable asset pays a cash sum (owelty) to equalize the division.",
   },
   {
-    q: "How does the doctrine of estoppel prevent family members from reopening a settlement?",
-    a: "Under the Supreme Court ruling in Subraya M.N. v. Vittala M.N. (2016), once a family member agrees to an oral settlement, signs the memorandum, and takes possession of their allocated share, they are legally estopped from challenging the settlement later. They cannot claim that the document was unregistered to reopen the partition.",
+    q: "How does the doctrine of estoppel prevent family members from reopening a deal?",
+    a: "Under the Supreme Court ruling in Subraya M.N. v. Vittala M.N. (2016), once a family member agrees to an oral deal, signs the memorandum, and takes possession of their allocated share, they are legally estopped from challenging the deal later. They cannot claim that the paper was plain to reopen the split.",
   },
   {
-    q: "Can a family settlement agreement be registered voluntarily before the Sub-Registrar?",
-    a: "Yes. While a past oral memorandum does not require compulsory registration, families can choose to register an Operative Family Settlement Deed voluntarily under Section 18 or Section 17 of the Registration Act. This provides registered public notice and eliminates any risk when obtaining bank mortgages or buyer title clearance.",
+    q: "Can a family deal pact be filed voluntarily before the SRO?",
+    a: "Yes. While a past oral memorandum does not require needed filing, families can choose to register an Operative Family Deal Deed voluntarily under Section 18 or Section 17 of the Filing Act. This provides filed public notice and eliminates any risk when obtaining bank mortgages or buyer title clearance.",
   },
   {
-    q: "What documents are required to mutate property records after a family settlement?",
-    a: "You need: (1) The executed Family Settlement Memorandum or registered deed, (2) Joint affidavit and no-objection certificates from all participating members, (3) Death certificates of original property owners, (4) Title documents and previous purchase deeds, and (5) Latest municipal property tax receipts and electricity bills.",
+    q: "What papers are required to mutate asset records after a family deal?",
+    a: "You need: (1) The signed Family Deal Memorandum or filed deed, (2) Joint sworn note and no-objection papers from all participating members, (3) Death papers of original asset owners, (4) Title papers and previous purchase deeds, and (5) Latest city asset tax receipts and electricity bills.",
   },
 ];
 
@@ -118,12 +118,12 @@ export default function FamilySettlementAgreementClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("what-is-family-settlement");
+  const [activeId, setActiveId] = useState<string>("what-is-family-deal");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState<"memorandum" | "operative" | "clauses">("memorandum");
   const [copiedState, setCopiedState] = useState<string | null>(null);
 
-  // Interactive Selector State
+  // Free Selector State
   const [settlementTiming, setSettlementTiming] = useState<"past_oral" | "fresh_today">("past_oral");
   const [propertyNature, setPropertyNature] = useState<"ancestral" | "self_acquired" | "mixed">("ancestral");
   const [propertyState, setPropertyState] = useState<string>("delhi");
@@ -210,14 +210,14 @@ export default function FamilySettlementAgreementClient() {
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Family Settlement Agreement Format India: Legal Templates
+            Family Deal Pact Format India: Legal Templates
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Divide ancestral and self-acquired family property amicably. Compare the past-tense{" "}
-            <strong>Memorandum of Past Oral Settlement (Yadasht)</strong> against a registered{" "}
-            <strong>Partition Deed</strong> to prevent family disputes and save heavy state stamp duty.
+            <strong>Memorandum of Past Oral Deal (Yadasht)</strong> against a registered{" "}
+            <strong>Split Deed</strong> to prevent family fights and save heavy state stamp duty.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -227,7 +227,7 @@ export default function FamilySettlementAgreementClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Calculator className="w-4 h-4" />
-              <span>Select Settlement Format</span>
+              <span>Select Deal Format</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -235,7 +235,7 @@ export default function FamilySettlementAgreementClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft a Challenge-Proof Will</span>
+              <span>Draft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -313,10 +313,10 @@ export default function FamilySettlementAgreementClient() {
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Sections 17 &amp; 49 of the Registration Act, 1908, Indian Stamp Act, 1899,
+                Governed under Sections 17 &amp; 49 of the Filing Act, 1908, Indian Stamp Act, 1899,
                 and Section 47(i) of the Income Tax Act, 1961, read with landmark Supreme Court precedents
                 Kale v. Deputy Director (1976) and Korukonda Chalapathi Rao (2021).
               </p>
@@ -337,8 +337,8 @@ export default function FamilySettlementAgreementClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Oral Partition is Completely Valid:</strong> Under settled Indian law, coparceners
-                    and co-heirs can partition family property orally. A written agreement is not mandatory at
+                    <strong>Oral Split is Completely Valid:</strong> Under settled Indian law, coparceners
+                    and co-heirs can split family asset orally. A written pact is not needed at
                     the time of oral division.
                   </span>
                 </li>
@@ -346,8 +346,8 @@ export default function FamilySettlementAgreementClient() {
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Supreme Court Kale Rule:</strong> If you later record the past oral division as
-                    a <em>Memorandum of Family Settlement (Yadasht)</em>, it does not create rights on the spot
-                    (in praesenti). Therefore, it does NOT require mandatory registration under Section 17.
+                    a <em>Memorandum of Family Deal (Yadasht)</em>, it does not create rights on the spot
+                    (in praesenti). Therefore, it does NOT require needed filing under Section 17.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -355,14 +355,14 @@ export default function FamilySettlementAgreementClient() {
                   <span>
                     <strong>Avoid the Present-Tense Drafting Trap:</strong> Online templates that use phrases
                     like &ldquo;parties hereby transfer and assign&rdquo; create an operative deed. This triggers
-                    full partition stamp duty (2% to 6%) and requires SRO registration.
+                    full split stamp duty (2% to 6%) and requires SRO filing.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Zero Capital Gains Tax:</strong> Under Section 47(i) of the Income Tax Act, a bona
-                    fide family settlement is not a transfer. No capital gains tax is triggered during family
+                    fide family deal is not a transfer. No capital gains tax is triggered during family
                     division.
                   </span>
                 </li>
@@ -376,26 +376,26 @@ export default function FamilySettlementAgreementClient() {
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. What is a Family Settlement Agreement in India?
+                1. What is a Family Deal Pact in India?
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When parents pass away or joint family assets grow complex, disputes often arise among
-                  siblings, coparceners, and legal heirs. In India, civil partition lawsuits take 15 to 25
-                  years to reach a final decree. A <strong>Family Settlement Agreement</strong> (also known as a
-                  Family Arrangement) is an amicable, legally recognized mechanism to divide properties without
-                  litigation.
+                  When parents pass away or joint family assets grow complex, fights often arise among
+                  siblings, coparceners, and legal heirs. In India, civil split lawsuits take 15 to 25
+                  years to reach a final decree. A <strong>Family Deal Pact</strong> (also known as a
+                  Family Arrangement) is an amicable, legally recognized mechanism to divide assets without
+                  court fights.
                 </p>
                 <p>
                   Unlike a Sale Deed or Gift Deed, a family arrangement does not create a new title from a
                   stranger. Instead, it recognizes and reorganizes existing, pre-existing rights among family
-                  members who already hold an antecedent title, interest, or claim in the property.
+                  members who already hold an antecedent title, interest, or claim in the asset.
                 </p>
                 <p>
                   Indian courts lean strongly in favor of upholding family arrangements. In the words of the
                   Supreme Court in <em>Ram Charan Das v. Girja Nandini Devi (AIR 1966 SC 323)</em>, the courts
                   view family settlements with favor because they maintain peace, prevent family feuds, and
-                  shield the family honor from protracted public litigation.
+                  shield the family honor from protracted public court fights.
                 </p>
               </div>
 
@@ -412,7 +412,7 @@ export default function FamilySettlementAgreementClient() {
                 <div className="p-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
                   <span className="flex items-center gap-1.5 font-medium">
                     <Scale className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory Drafting Protocol • Registration Act 1908 &amp; Supreme Court Precedents</span>
+                    <span>Legal Drafting Protocol • Filing Act 1908 &amp; Supreme Court Precedents</span>
                   </span>
                   <span className="font-bold text-slate-800">WillDrafting.in Legal Desk</span>
                 </div>
@@ -431,7 +431,7 @@ export default function FamilySettlementAgreementClient() {
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 The foundational judgment governing all family settlements in India is the three-judge bench
                 ruling of the Supreme Court in <strong>Kale v. Deputy Director of Consolidation (AIR 1976 SC 807)</strong>.
-                The apex court laid down five mandatory tests for a valid family arrangement:
+                The apex court laid down five needed tests for a valid family arrangement:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -440,11 +440,11 @@ export default function FamilySettlementAgreementClient() {
                     <div className="w-6 h-6 rounded-full bg-rose-100 text-[#C65378] flex items-center justify-center text-xs">
                       1
                     </div>
-                    <span>Bona Fide Resolution of Disputes</span>
+                    <span>Bona Fide Resolution of Fights</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The arrangement must be genuine, aimed at resolving real family disputes, rival claims, or
-                    competing property expectations once and for all.
+                    The arrangement must be genuine, aimed at resolving real family fights, rival claims, or
+                    competing asset expectations once and for all.
                   </p>
                 </div>
 
@@ -456,7 +456,7 @@ export default function FamilySettlementAgreementClient() {
                     <span>Fair and Equitable Allotment</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The division of properties must be fair to all branches. It should not be an unfair sham
+                    The division of assets must be fair to all branches. It should not be an unfair sham
                     intended to defraud creditors or exclude rightful legal heirs.
                   </p>
                 </div>
@@ -482,7 +482,7 @@ export default function FamilySettlementAgreementClient() {
                     <span>Antecedent Title or Possible Claim</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Parties must have some antecedent title, claim, or interest in the property. It can also
+                    Parties must have some antecedent title, claim, or interest in the asset. It can also
                     include a possible claim based on family ties or moral claims.
                   </p>
                 </div>
@@ -491,13 +491,13 @@ export default function FamilySettlementAgreementClient() {
               <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200 text-slate-800 text-xs sm:text-sm leading-relaxed space-y-2">
                 <div className="flex items-center gap-2 font-extrabold text-amber-900">
                   <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-                  <span>The Fifth Test: Oral Settlement Followed by Written Memorandum</span>
+                  <span>The Fifth Test: Oral Deal Followed by Written Memorandum</span>
                 </div>
                 <p>
                   Justice S. Murtaza Fazal Ali explicitly held: <em>&ldquo;The family arrangement may be even
-                  oral in which case no registration is necessary. The terms may be subsequently reduced into
+                  oral in which case no filing is necessary. The terms may be then reduced into
                   writing as a memorandum of what had been agreed upon by the parties. In such cases the
-                  memorandum does not create or extinguish any rights and does not require registration.&rdquo;</em>
+                  memorandum does not create or extinguish any rights and does not require filing.&rdquo;</em>
                 </p>
               </div>
             </section>
@@ -509,10 +509,10 @@ export default function FamilySettlementAgreementClient() {
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Memorandum of Oral Settlement vs Partition Deed Table
+                3. Memorandum of Oral Deal vs Split Deed Table
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding whether you need a past-tense Memorandum or a registered Partition Deed is
+                Understanding whether you need a past-tense Memorandum or a filed Split Deed is
                 essential to avoid legal delays and save substantial stamp duty costs:
               </p>
 
@@ -523,18 +523,18 @@ export default function FamilySettlementAgreementClient() {
                     <tr className="bg-[#172228] text-white border-b border-slate-700">
                       <th className="p-4 font-bold">Feature</th>
                       <th className="p-4 font-bold text-rose-200">
-                        Format 1: Memorandum of Past Oral Settlement
+                        Format 1: Memorandum of Past Oral Deal
                       </th>
                       <th className="p-4 font-bold text-emerald-200">
-                        Format 2: Registered Operative Settlement Deed
+                        Format 2: Filed Operative Deal Deed
                       </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr className="hover:bg-slate-50/70 transition-colors">
-                      <td className="p-4 font-bold text-slate-900">Timing of Partition</td>
-                      <td className="p-4">Partition already completed orally in the past.</td>
-                      <td className="p-4">Partition occurs on the spot upon deed signing.</td>
+                      <td className="p-4 font-bold text-slate-900">Timing of Split</td>
+                      <td className="p-4">Split already completed orally in the past.</td>
+                      <td className="p-4">Split occurs on the spot upon deed signing.</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
                       <td className="p-4 font-bold text-slate-900">Operative Grammatical Tense</td>
@@ -545,49 +545,49 @@ export default function FamilySettlementAgreementClient() {
                       </td>
                       <td className="p-4">
                         <span className="font-mono bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded text-xs">
-                          Present Tense (&ldquo;hereby partition, convey and release&rdquo;)
+                          Present Tense (&ldquo;hereby split, convey and release&rdquo;)
                         </span>
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
-                      <td className="p-4 font-bold text-slate-900">Registration under Sec 17</td>
+                      <td className="p-4 font-bold text-slate-900">Filing under Sec 17</td>
                       <td className="p-4">
-                        <strong className="text-emerald-700">NOT Compulsory</strong> (Exempt under Kale Rule).
+                        <strong className="text-emerald-700">NOT Needed</strong> (Exempt under Kale Rule).
                       </td>
                       <td className="p-4">
-                        <strong className="text-rose-700">Mandatory Registration</strong> before Sub-Registrar.
+                        <strong className="text-rose-700">Needed Filing</strong> before SRO.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
                       <td className="p-4 font-bold text-slate-900">Stamp Duty Expense</td>
                       <td className="p-4">
-                        Nominal agreement stamp (₹100 to ₹500 depending on state).
+                        Nominal pact stamp (₹100 to ₹500 depending on state).
                       </td>
                       <td className="p-4">
-                        Full partition stamp duty (typically 2% to 6% of property value).
+                        Full split stamp duty (typically 2% to 6% of asset value).
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
                       <td className="p-4 font-bold text-slate-900">Legal Precedent Basis</td>
                       <td className="p-4">Kale (1976 SC) &amp; Korukonda Chalapathi Rao (2021 SC).</td>
-                      <td className="p-4">Section 17(1)(b) of Registration Act &amp; Sita Ram (2018 SC).</td>
+                      <td className="p-4">Section 17(1)(b) of Filing Act &amp; Sita Ram (2018 SC).</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
                       <td className="p-4 font-bold text-slate-900">Bank Mortgage Feasibility</td>
                       <td className="p-4">
-                        Accepted by many lenders along with continuous revenue mutation records.
+                        Accepted by many lenders along with continuous revenue name change records.
                       </td>
                       <td className="p-4">
                         Universally accepted by all nationalized and private banks.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/70 transition-colors">
-                      <td className="p-4 font-bold text-slate-900">Revenue Mutation (Dakhil Kharij)</td>
+                      <td className="p-4 font-bold text-slate-900">Revenue Name Change (Dakhil Kharij)</td>
                       <td className="p-4">
-                        Mutated via joint affidavit, memorandum, and possession proof.
+                        Mutated via joint sworn note, memorandum, and possession proof.
                       </td>
                       <td className="p-4">
-                        Direct mutation on production of registered deed from SRO.
+                        Direct name change on production of filed deed from SRO.
                       </td>
                     </tr>
                   </tbody>
@@ -602,11 +602,11 @@ export default function FamilySettlementAgreementClient() {
                 <span>INTERACTIVE DRAFTING SELECTOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Family Settlement Drafting Selector
+                4. Free Family Deal Drafting Selector
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use our diagnostic selector below to determine whether your family needs a Past-Tense
-                Memorandum or a Registered Partition Deed, and estimate your state stamp duty savings:
+                Memorandum or a Filed Split Deed, and estimate your state stamp duty savings:
               </p>
 
               {/* Selector Box */}
@@ -631,7 +631,7 @@ export default function FamilySettlementAgreementClient() {
                   {/* Property State */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      State Where Property is Located
+                      State Where Asset is Located
                     </label>
                     <select
                       value={propertyState}
@@ -659,9 +659,9 @@ export default function FamilySettlementAgreementClient() {
                       aria-label="Property nature selector"
                       className="w-full p-3 rounded-xl border border-slate-200 text-sm font-semibold bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#C65378]/20 focus:border-[#C65378]"
                     >
-                      <option value="ancestral">Ancestral / Coparcenary / Joint Family Property</option>
+                      <option value="ancestral">Family / Joint / Joint Family Asset</option>
                       <option value="self_acquired">Self-Acquired by Parents (Inherited by Co-Heirs)</option>
-                      <option value="mixed">Mixed Assets (Properties + Family Business + Gold)</option>
+                      <option value="mixed">Mixed Assets (Assets + Family Business + Gold)</option>
                     </select>
                   </div>
 
@@ -677,7 +677,7 @@ export default function FamilySettlementAgreementClient() {
                       className="w-full p-3 rounded-xl border border-slate-200 text-sm font-semibold bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#C65378]/20 focus:border-[#C65378]"
                     >
                       <option value="unanimous">100% Unanimous Consent (All adult heirs agree)</option>
-                      <option value="dispute_risk">Minor heir involved or risk of future dispute</option>
+                      <option value="dispute_risk">Minor heir involved or risk of future fight</option>
                     </select>
                   </div>
                 </div>
@@ -734,7 +734,7 @@ export default function FamilySettlementAgreementClient() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
                     <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                      <div className="text-white/60 text-[11px]">Standard Partition Stamp Duty</div>
+                      <div className="text-white/60 text-[11px]">Standard Split Stamp Duty</div>
                       <div className="text-base sm:text-lg font-black text-rose-300 mt-1">
                         ₹{standardPartitionDuty.toLocaleString("en-IN")}
                       </div>
@@ -776,11 +776,11 @@ export default function FamilySettlementAgreementClient() {
                 <span>LEGAL TEMPLATE 1</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Format 1: Memorandum of Past Oral Family Settlement
+                5. Format 1: Memorandum of Past Oral Family Deal
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this format when family members have <strong>already orally partitioned</strong> their
-                properties on an earlier date and are now putting the agreed terms into writing merely for
+                assets on an earlier date and are now putting the agreed terms into writing merely for
                 future record and peace. This format strictly follows the <em>Kale v. Deputy Director</em> rule
                 using past-tense non-operative language:
               </p>
@@ -789,7 +789,7 @@ export default function FamilySettlementAgreementClient() {
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Memorandum of Oral Family Settlement (Yadasht / Yad-dasht)
+                    Memorandum of Oral Family Deal (Yadasht / Yad-dasht)
                   </div>
                   <button
                     type="button"
@@ -898,11 +898,11 @@ NOW, THEREFORE, THIS MEMORANDUM CONFIRMS:
                 <span>LEGAL TEMPLATE 2</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Format 2: Registered Operative Family Settlement Deed
+                6. Format 2: Filed Operative Family Deal Deed
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use this format when the family wishes to divide properties <strong>fresh today</strong> in
-                writing and register the deed formally before the Sub-Registrar Office (SRO). This format uses
+                Use this format when the family wishes to divide assets <strong>fresh today</strong> in
+                writing and register the deed formally before the SRO office (SRO). This format uses
                 operative present-tense conveyance clauses:
               </p>
 
@@ -910,7 +910,7 @@ NOW, THEREFORE, THIS MEMORANDUM CONFIRMS:
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Operative Family Settlement cum Partition Deed (For Registration)
+                    Operative Family Deal cum Split Deed (For Filing)
                   </div>
                   <button
                     type="button"
@@ -978,11 +978,11 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>MANDATORY DRAFTING CLAUSES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Essential Clauses Every Family Settlement Must Have
+                7. Essential Clauses Every Family Deal Must Have
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Whether you draft an oral memorandum or an operative deed, including these four protective
-                clauses prevents future litigation and protects family titles:
+                clauses prevents future court fights and protects family titles:
               </p>
 
               <div className="space-y-4">
@@ -990,7 +990,7 @@ Each party covenants that their allotted share is free from any individual charg
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="font-extrabold text-slate-900 text-sm">
-                      1. Doctrine of Estoppel &amp; Covenant Against Future Litigation
+                      1. Doctrine of Estoppel &amp; Covenant Against Future Court Fights
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800">
                       Subraya M.N. Rule
@@ -998,8 +998,8 @@ Each party covenants that their allotted share is free from any individual charg
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <em>&ldquo;Each Party hereby unconditionally covenants and agrees that having participated in
-                    the family settlement and having taken benefit or possession thereunder, they and their legal
-                    heirs shall be permanently estopped from filing any suit for partition, declaration, or
+                    the family deal and having taken benefit or possession thereunder, they and their legal
+                    heirs shall be permanently estopped from filing any suit for split, declaration, or
                     injunction to reopen the division.&rdquo;</em>
                   </p>
                 </div>
@@ -1033,7 +1033,7 @@ Each party covenants that their allotted share is free from any individual charg
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <em>&ldquo;WHEREAS the Parties herein are co-owners holding pre-existing undivided shares in
-                    the properties as Class I legal heirs, and this instrument only reorganizes antecedent titles
+                    the assets as Class I legal heirs, and this instrument only reorganizes antecedent titles
                     rather than creating any new conveyance from strangers.&rdquo;</em>
                   </p>
                 </div>
@@ -1042,7 +1042,7 @@ Each party covenants that their allotted share is free from any individual charg
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="font-extrabold text-slate-900 text-sm">
-                      4. Revenue Mutation &amp; Khata Transfer Power
+                      4. Revenue Name Change &amp; Khata Transfer Power
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">
                       Dakhil Kharij
@@ -1050,7 +1050,7 @@ Each party covenants that their allotted share is free from any individual charg
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     <em>&ldquo;Each Party is expressly authorized to present this instrument to the Tehsildar,
-                    Panchayat, or Municipal Corporation to record independent mutation and Khata transfer
+                    Panchayat, or City City Board to record independent name change and Khata transfer
                     without requiring the physical presence of other parties.&rdquo;</em>
                   </p>
                 </div>
@@ -1064,20 +1064,20 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>REGISTRATION &amp; STAMP LAWS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Section 17 Registration Act &amp; Stamp Duty Analysis
+                8. Section 17 Filing Act &amp; Stamp Duty Analysis
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The legal validity of a family settlement in court hinges upon Section 17 and Section 49 of
-                  the Registration Act, 1908. Under Section 17(1)(b), any non-testamentary instrument that purports
+                  The legal validity of a family deal in court hinges upon Section 17 and Section 49 of
+                  the Filing Act, 1908. Under Section 17(1)(b), any non-Will instrument that purports
                   to create, declare, assign, limit, or extinguish any right, title, or interest of the value of
-                  one hundred rupees and upwards in immovable property must be compulsorily registered.
+                  one hundred rupees and upwards in land asset must be compulsorily filed.
                 </p>
                 <p>
                   However, the Supreme Court has consistently held that a <strong>Memorandum of Past Oral
-                  Settlement</strong> does not fall within Section 17(1)(b) because it merely records a
+                  Deal</strong> does not fall within Section 17(1)(b) because it merely records a
                   pre-existing factual status. In <em>Korukonda Chalapathi Rao (2021)</em>, the Supreme Court
-                  reiterated that when a document does not itself create rights, Section 49 does not bar its
+                  reiterated that when a paper does not itself create rights, Section 49 does not bar its
                   admission into evidence.
                 </p>
 
@@ -1086,28 +1086,28 @@ Each party covenants that their allotted share is free from any individual charg
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200">
                     <div className="font-extrabold text-slate-900">Maharashtra (Article 46)</div>
                     <div className="text-slate-600 mt-1">
-                      Registered Partition: 2% of the market value of the separated share. Past Oral Memorandum:
-                      Stamp duty on agreement under Article 5(h).
+                      Filed Split: 2% of the market value of the separated share. Past Oral Memorandum:
+                      Stamp duty on pact under Article 5(h).
                     </div>
                   </div>
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200">
                     <div className="font-extrabold text-slate-900">Delhi (Article 45)</div>
                     <div className="text-slate-600 mt-1">
-                      Registered Partition: 2% (women) or 3% (men) of separated shares. Memorandum: Fixed stamp
+                      Filed Split: 2% (women) or 3% (men) of separated shares. Memorandum: Fixed stamp
                       paper with notarization.
                     </div>
                   </div>
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200">
                     <div className="font-extrabold text-slate-900">Uttar Pradesh</div>
                     <div className="text-slate-600 mt-1">
-                      Registered Partition: Concessional rates for co-heirs or 5% circle rate. Memorandum used
-                      for Tehsildar mutation under Land Revenue Code.
+                      Filed Split: Concessional rates for co-heirs or 5% circle rate. Memorandum used
+                      for Tehsildar name change under Land Revenue Code.
                     </div>
                   </div>
                   <div className="p-3.5 bg-white rounded-xl border border-slate-200">
                     <div className="font-extrabold text-slate-900">Karnataka (Article 39)</div>
                     <div className="text-slate-600 mt-1">
-                      Partition Deed: Fixed slabs for family members or percentage for non-family. Past
+                      Split Deed: Fixed slabs for family members or percentage for non-family. Past
                       memorandum recognized under customary Hindu Law.
                     </div>
                   </div>
@@ -1126,20 +1126,20 @@ Each party covenants that their allotted share is free from any individual charg
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A critical financial advantage of executing a family settlement agreement is its complete
+                  A critical financial advantage of signing a family deal pact is its complete
                   neutrality under the Income Tax Act, 1961:
                 </p>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700 pl-4 list-disc">
                   <li>
-                    <strong>Zero Capital Gains on Settlement:</strong> Under Section 47(i) of the Income Tax
-                    Act, any distribution of capital assets on the total or partial partition of a Hindu
-                    Undivided Family (HUF) or a bona fide family settlement is not treated as a &ldquo;transfer&rdquo;.
-                    No capital gains tax is payable when the agreement is signed.
+                    <strong>Zero Capital Gains on Deal:</strong> Under Section 47(i) of the Income Tax
+                    Act, any split of capital assets on the total or partial split of a Hindu
+                    Undivided Family (HUF) or a bona fide family deal is not treated as a &ldquo;transfer&rdquo;.
+                    No capital gains tax is payable when the pact is signed.
                   </li>
                   <li>
                     <strong>No Gift Tax under Section 56(2)(x):</strong> Section 56(2)(x) exempts transfers
                     received from &ldquo;relatives&rdquo; (including siblings, parents, spouses, and lineal
-                    descendants) or under inheritance. An amicable family arrangement attracts zero income tax.
+                    descendants) or under estate. An amicable family arrangement attracts zero income tax.
                   </li>
                   <li>
                     <strong>Subsequent Sale Tax Computation:</strong> When an heir eventually sells their
@@ -1153,17 +1153,17 @@ Each party covenants that their allotted share is free from any individual charg
                 <div className="p-4 rounded-2xl bg-rose-50 border border-rose-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <div>
                     <div className="font-extrabold text-rose-950">
-                      Selling Inherited Property After Family Settlement?
+                      Selling Inherited Asset After Family Deal?
                     </div>
                     <div className="text-rose-800 mt-0.5">
-                      Calculate your post-settlement capital gains tax and compare 12.5% flat vs 20% indexation.
+                      Calculate your post-deal capital gains tax and compare 12.5% flat vs 20% indexation.
                     </div>
                   </div>
                   <Link
                     href="/tools/capital-gains-tax-calculator-inherited-property"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#C65378] text-white font-bold hover:bg-[#a33b5c] transition-colors shrink-0"
                   >
-                    <span>Use Capital Gains Calculator</span>
+                    <span>Use Capital Gains Tool</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1177,7 +1177,7 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>STEP-BY-STEP SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Step-by-Step SOP: Execution to Revenue Mutation
+                10. Step-by-Step SOP: Signing to Revenue Name Change
               </h3>
 
               <div className="space-y-3">
@@ -1185,7 +1185,7 @@ Each party covenants that their allotted share is free from any individual charg
                   {
                     step: "1",
                     title: "Asset Inventory & Title Verification",
-                    desc: "Collate original title deeds, sale deeds of parents, property tax receipts, Khata extracts, and death certificates of deceased family owners.",
+                    desc: "Collate original title deeds, sale deeds of parents, asset tax receipts, Khata extracts, and death papers of deceased family owners.",
                   },
                   {
                     step: "2",
@@ -1195,17 +1195,17 @@ Each party covenants that their allotted share is free from any individual charg
                   {
                     step: "3",
                     title: "Drafting the Past-Tense Memorandum or Deed",
-                    desc: "Draft the document using precise legal language. Ensure past-tense recitals for an oral settlement memorandum, or present-tense operative clauses for a partition deed.",
+                    desc: "Draft the paper using precise legal language. Ensure past-tense recitals for an oral deal memorandum, or present-tense operative clauses for a split deed.",
                   },
                   {
                     step: "4",
                     title: "Execution and Attestation",
-                    desc: "Execute on required non-judicial stamp paper in the presence of two independent adult witnesses who are not beneficiaries of the partition.",
+                    desc: "Execute on required non-judicial stamp paper in the presence of two independent adult witnesses who are not heirs of the split.",
                   },
                   {
                     step: "5",
                     title: "Revenue Mutation (Dakhil Kharij / Khata Transfer)",
-                    desc: "Submit the executed instrument along with joint affidavits to the municipal corporation or Tehsildar office to transfer property records into individual names.",
+                    desc: "Submit the signed instrument along with joint sworn notes to the city city board or Tehsildar office to transfer asset records into single names.",
                   },
                 ].map((item) => (
                   <div
@@ -1256,7 +1256,7 @@ Each party covenants that their allotted share is free from any individual charg
                       <span className="font-bold text-slate-900">Past Oral Memorandum + Owelty Recital</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Standard Partition Duty Saved:</span>
+                      <span className="text-slate-600">Standard Split Duty Saved:</span>
                       <span className="font-bold text-emerald-700">₹18,00,000 Saved!</span>
                     </div>
                     <div className="pt-1 text-slate-700 font-medium border-t border-slate-200">
@@ -1269,7 +1269,7 @@ Each party covenants that their allotted share is free from any individual charg
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Scenario B: Ancestral Agricultural Land in UP
+                      Scenario B: Family Farm Land in UP
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                       Uttar Pradesh
@@ -1277,7 +1277,7 @@ Each party covenants that their allotted share is free from any individual charg
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Four cousins inherited 12 acres of farmland. They had already farmed separate physical parcels
-                    for 7 years. They executed a Memorandum of Past Oral Settlement and submitted it before the
+                    for 7 years. They signed a Memorandum of Past Oral Deal and submitted it before the
                     Revenue Court of the Sub-Divisional Magistrate (SDM).
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
@@ -1286,7 +1286,7 @@ Each party covenants that their allotted share is free from any individual charg
                       <span className="font-bold text-emerald-700">Mutual Khatauni Division under Sec 116</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Litigation Averted:</span>
+                      <span className="text-slate-600">Court Fights Averted:</span>
                       <span className="font-bold text-slate-900">Zero Court Feud / Instant Revenue Record</span>
                     </div>
                     <div className="pt-1 text-slate-700 font-medium border-t border-slate-200">
@@ -1304,28 +1304,28 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>INSTITUTIONAL PROFILE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Legal Backing &amp; Senior Advocate Review Bench
+                12. Legal Backing &amp; Senior Lawyer Review Bench
               </h3>
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-7 space-y-4 shadow-xs">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
                   <div>
                     <h3 className="text-lg font-black text-slate-900">AMA Legal Solutions</h3>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      Senior Property Partition, Succession &amp; High Court Appellate Practice
+                      Senior Asset Split, Estate &amp; High Court Appellate Practice
                     </p>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Property Bench</span>
+                    <span>Bar Council Checked Asset Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s leading estate planning and succession technology platform,
-                  powered by AMA Legal Solutions. Our property bench includes senior advocates practicing in
+                  WillDrafting.in is India&rsquo;s leading estate planning and estate technology platform,
+                  powered by AMA Legal Solutions. Our asset bench includes senior lawyers practicing in
                   the Supreme Court of India, Delhi High Court, Bombay High Court, and regional revenue courts.
-                  We specialize in challenge-proof family settlement agreements, HUF coparcenary partitions,
-                  and estate dispute mediation pan-India.
+                  We specialize in fight-proof family deal agreements, HUF joint partitions,
+                  and estate fight mediation pan-India.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1334,21 +1334,21 @@ Each party covenants that their allotted share is free from any individual charg
                     href="/services/family-settlement-deed-lawyer"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Settlement Deed Lawyer</span>
+                    <span>Deal Deed Lawyer</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/tools/ancestral-vs-self-acquired-property-classifier"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Property Classifier</span>
+                    <span>Asset Classifier</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>SRO Registration Desk</span>
+                    <span>SRO Filing Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1362,10 +1362,10 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: Family Settlement
+                13. Frequently Asked Questions: Family Deal
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Answers to common legal questions regarding family settlement agreements, stamp duty, and
+                Answers to common legal questions regarding family deal agreements, stamp duty, and
                 oral memorandum validity in India:
               </p>
 
@@ -1408,29 +1408,29 @@ Each party covenants that their allotted share is free from any individual charg
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Judicial Portals
+                14. Legal Citations &amp; Official Judicial Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Statutory Framework &amp; Key Sections:
+                    Governing Legal Framework &amp; Key Sections:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Registration Act, 1908:</strong> Section 17(1)(b) (compulsory registration of
-                      non-testamentary instruments) &amp; Section 49 (admissibility for collateral purpose).
+                      <strong>Filing Act, 1908:</strong> Section 17(1)(b) (needed filing of
+                      non-Will instruments) &amp; Section 49 (admissibility for collateral purpose).
                     </li>
                     <li>
-                      <strong>Indian Stamp Act, 1899:</strong> Article 45 (Instrument of Partition) vs Article
-                      5 (Agreement or Memorandum of Agreement).
+                      <strong>Indian Stamp Act, 1899:</strong> Article 45 (Instrument of Split) vs Article
+                      5 (Pact or Memorandum of Pact).
                     </li>
                     <li>
-                      <strong>Income Tax Act, 1961:</strong> Section 47(i) (exclusion of partition distribution
+                      <strong>Income Tax Act, 1961:</strong> Section 47(i) (exclusion of split split
                       from capital gains transfer) &amp; Section 49(1) (cost of acquisition).
                     </li>
                     <li>
-                      <strong>Hindu Succession Act, 1956:</strong> Section 6 (coparcenary rights of daughters)
-                      and Section 8 (general rules of succession).
+                      <strong>Hindu Succession Act, 1956:</strong> Section 6 (joint rights of daughters)
+                      and Section 8 (general rules of estate).
                     </li>
                     <li>
                       <strong>Landmark Supreme Court Judgments:</strong> Kale v. Deputy Director of Consolidation
@@ -1456,7 +1456,7 @@ Each party covenants that their allotted share is free from any individual charg
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>India Code: Registration Act 1908</span>
+                    <span>India Code: Filing Act 1908</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1472,7 +1472,7 @@ Each party covenants that their allotted share is free from any individual charg
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1485,31 +1485,53 @@ Each party covenants that their allotted share is free from any individual charg
                       href="/templates/release-deed-format"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Relinquishment Deed Format
+                      Release Deed Format
                     </Link>
                     <Link
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Capital Gains Calculator
+                      Inherited Capital Gains Tool
                     </Link>
                     <Link
                       href="/tools/ancestral-vs-self-acquired-property-classifier"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Ancestral Property Classifier
+                      Family Asset Classifier
                     </Link>
                     <Link
                       href="/services/family-settlement-deed-lawyer"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Family Settlement Deed Lawyer
+                      Family Deal Deed Lawyer
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1522,21 +1544,21 @@ Each party covenants that their allotted share is free from any individual charg
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in ancestral partition litigation, High Court appellate practice, Section 17
-                Registration Act compliance, and family dispute resolution across India.
+                Expert in family split court fights, High Court appellate practice, Section 17
+                Filing Act compliance, and family fight resolution across India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1550,11 +1572,11 @@ Each party covenants that their allotted share is free from any individual charg
                   <span>PREVENT FAMILY PARTITION FEUDS</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children from Bitter Property Lawsuits
+                  Protect Your Children from Bitter Asset Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A clearly drafted, legally registered Will eliminates ambiguity between siblings,
-                  preventing painful partition litigation after your lifetime.
+                  A clearly drafted, legally filed Will eliminates ambiguity between siblings,
+                  preventing painful split court fights after your lifetime.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1577,18 +1599,18 @@ Each party covenants that their allotted share is free from any individual charg
                   <span>DISPUTE RESOLUTION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need an Advocate to Draft Your Family Settlement?
+                  Need an Lawyer to Draft Your Family Deal?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our senior succession and partition advocates structure custom settlement agreements,
-                  draft past oral memorandums, and assist with revenue mutation across India.
+                  Our senior estate and split lawyers structure custom deal agreements,
+                  draft past oral memorandums, and assist with revenue name change across India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <Landmark className="w-3.5 h-3.5" />
-                  <span>Consult Succession Advocate</span>
+                  <span>Consult Estate Lawyer</span>
                 </Link>
               </div>
 
@@ -1608,7 +1630,7 @@ Each party covenants that their allotted share is free from any individual charg
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Stamp Duty Optimization:</strong> Legally save lakhs in state partition stamp
+                      <strong>Stamp Duty Optimization:</strong> Legally save lakhs in state split stamp
                       fees.
                     </span>
                   </li>

@@ -71,62 +71,62 @@ interface WitnessProfile {
 
 const TOC_ITEMS = [
   { id: "section-67-explained", label: "1. Section 67 Explained: Who Can Witness" },
-  { id: "interactive-checker", label: "2. Interactive Witness Eligibility Checker" },
+  { id: "interactive-checker", label: "2. Free Witness Eligibility Checker" },
   { id: "hindu-vs-christian-schedule-iii", label: "3. Hindu vs Christian: Schedule III" },
-  { id: "beneficiaries-and-spouses-as-witnesses", label: "4. Can Beneficiaries & Heirs Witness?" },
+  { id: "beneficiaries-and-spouses-as-witnesses", label: "4. Can Heirs & Heirs Witness?" },
   { id: "doctors-and-lawyers-evidentiary-value", label: "5. Doctors & Lawyers as Witnesses" },
   { id: "executor-competency-section-68", label: "6. Executor as Witness: Section 68" },
   { id: "bsa-2023-section-67-probate-proof", label: "7. Section 67 BSA 2023: Probate Proof" },
   { id: "disqualified-witness-categories", label: "8. Disqualified Witnesses: Minors & Blind" },
   { id: "witness-comparison-matrix", label: "9. Witness Category Comparison Table" },
-  { id: "step-by-step-execution-sop", label: "10. Step-by-Step Will Execution SOP" },
+  { id: "step-by-step-execution-sop", label: "10. Step-by-Step Will Signing SOP" },
   { id: "landmark-supreme-court-precedents", label: "11. Landmark Supreme Court Rulings" },
-  { id: "standard-attestation-clauses", label: "12. Attestation Clause & Certificate" },
-  { id: "advocate-verification-profile", label: "13. Advocate Verification & Scrutiny" },
+  { id: "standard-attestation-clauses", label: "12. Witness Signing Clause & Paper" },
+  { id: "advocate-verification-profile", label: "13. Lawyer Check & Scrutiny" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions" },
-  { id: "statutory-citations-portals", label: "15. Statutory References & Portals" },
+  { id: "statutory-citations-portals", label: "15. Legal References & Portals" },
 ];
 
 const FAQS = [
   {
-    q: "Who can legally be an attesting witness to a Will in India?",
-    a: "Under Section 63(c) of the Indian Succession Act, 1925, any person who is 18 years of age or older, of sound mind, and physically capable of seeing the testator sign can be an attesting witness. The witness must sign with animus attestandi, which means the clear legal intent to verify that the testator executed the Will voluntarily.",
+    q: "Who can legally be an signing witness to a Will in India?",
+    a: "Under Section 63(c) of the Indian Succession Act, 1925, any person who is 18 years of age or older, of sound mind, and physically capable of seeing the Will maker sign can be an signing witness. The witness must sign with animus attestandi, which means the clear legal intent to verify that the Will maker signed the Will voluntarily.",
   },
   {
-    q: "Can my wife, son, or daughter sign as an attesting witness to my Will?",
-    a: "Legally, a family member can witness a Will only if they receive no property or benefit under that Will. If a beneficiary or their spouse attests a Christian or Parsi Will, Section 67 makes their bequest completely void. For Hindu, Sikh, and Jain Wills, Section 67 is excluded by Schedule III, but having a beneficiary child or spouse attest creates a heavy suspicious circumstance in court that often leads to the Will being set aside in probate.",
+    q: "Can my wife, son, or daughter sign as an signing witness to my Will?",
+    a: "Legally, a family member can witness a Will only if they receive no asset or benefit under that Will. If a heir or their spouse attests a Christian or Parsi Will, Section 67 makes their bequest completely void. For Hindu, Sikh, and Jain Wills, Section 67 is excluded by Schedule III, but having a heir child or spouse attest creates a heavy suspicious circumstance in court that often leads to the Will being set aside in probate.",
   },
   {
     q: "What does Section 67 of the Indian Succession Act state?",
-    a: "Section 67 provides that if any person attests a Will, any bequest or legacy given to that person, or to their wife or husband, shall be entirely void. The execution of the Will remains valid, but the witness and their spouse lose all inheritance under that Will. However, under Section 57 read with Schedule III, this statutory forfeiture does not apply to Hindus, Sikhs, Buddhists, and Jains.",
+    a: "Section 67 provides that if any person attests a Will, any bequest or legacy given to that person, or to their wife or husband, shall be entirely void. The signing of the Will remains valid, but the witness and their spouse lose all estate under that Will. However, under Section 57 read with Schedule III, this legal forfeiture does not apply to Hindus, Sikhs, Buddhists, and Jains.",
   },
   {
     q: "Why is a doctor considered the best witness for an Indian Will?",
-    a: "A Registered Medical Practitioner (MBBS or MD) can examine the testator immediately prior to signing and endorse a contemporaneous Medical Fitness Certificate directly on the Will. This provides undeniable proof that the testator possessed sound disposing mind and memory, effectively neutralizing future claims of dementia, Alzheimer's, or lack of capacity.",
+    a: "A Filed Medical Practitioner (MBBS or MD) can examine the Will maker right away prior to signing and endorse a contemporaneous Medical Fitness Paper directly on the Will. This provides undeniable proof that the Will maker possessed sound disposing mind and memory, effectively neutralizing future claims of dementia, Alzheimer's, or lack of capacity.",
   },
   {
-    q: "Can the Executor of a Will also be an attesting witness?",
-    a: "Yes. Under Section 68 of the Indian Succession Act, 1925, no person is disqualified from being a witness merely because they are appointed as an Executor of the Will. As long as the Executor receives no personal beneficial legacy or property under the Will, their attestation is completely valid and court-defensible.",
+    q: "Can the Executor of a Will also be an signing witness?",
+    a: "Yes. Under Section 68 of the Indian Succession Act, 1925, no person is disqualified from being a witness merely because they are appointed as an Executor of the Will. As long as the Executor receives no personal beneficial legacy or asset under the Will, their witness signing is completely valid and court-defensible.",
   },
   {
     q: "Can a lawyer or Chartered Accountant sign as a witness to a Will?",
-    a: "Yes. An independent practicing advocate or Chartered Accountant is an ideal attesting witness. They understand legal formalities, maintain professional contemporaneous files, and provide credible, objective testimony when called to depose in probate court under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023.",
+    a: "Yes. An independent practicing lawyer or Chartered Accountant is an ideal signing witness. They understand legal formalities, maintain professional contemporaneous files, and provide credible, objective testimony when called to depose in probate court under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023.",
   },
   {
-    q: "How many witnesses are mandatory for a valid Will in India?",
-    a: "Section 63(c) mandates at least two attesting witnesses. While each witness must see the testator sign or receive personal acknowledgment, it is not legally mandatory that both witnesses sign at the exact same moment. However, having both witnesses physically present together during signing is the recommended gold standard.",
+    q: "How many witnesses are needed for a valid Will in India?",
+    a: "Section 63(c) mandates at least two signing witnesses. While each witness must see the Will maker sign or receive personal acknowledgment, it is not legally needed that both witnesses sign at the exact same moment. However, having both witnesses physically present together during signing is the recommended gold standard.",
   },
   {
     q: "How is a Will proved in court if the witnesses pass away?",
-    a: "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), at least one living attesting witness must be examined in court. If both witnesses have died or cannot be found, Section 68 BSA allows the Will to be proved by establishing the handwriting and signature of at least one witness and the testator.",
+    a: "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 68 of the Evidence Act), at least one living signing witness must be examined in court. If both witnesses have died or cannot be found, Section 68 BSA allows the Will to be proved by establishing the handwriting and signature of at least one witness and the Will maker.",
   },
   {
-    q: "Can a visually impaired or blind person be an attesting witness to a Will?",
-    a: "No. Under Section 63(c) and established case law, attestation requires physical visual perception of the testator signing the document. A blind person cannot visually verify the act of execution, rendering their attestation legally incompetent.",
+    q: "Can a visually impaired or blind person be an signing witness to a Will?",
+    a: "No. Under Section 63(c) and established case law, witness signing requires physical visual perception of the Will maker signing the paper. A blind person cannot visually verify the act of signing, rendering their witness signing legally incompetent.",
   },
   {
     q: "Is digital signature or Aadhaar eSign valid for a Will witness?",
-    a: "No. Under the First Schedule of the Information Technology Act, 2000, Wills and testamentary dispositions are expressly excluded from electronic signatures. Both the testator and both attesting witnesses must sign physically using ink on paper.",
+    a: "No. Under the First Schedule of the Information Technology Act, 2000, Wills and Will gifts are expressly excluded from electronic signatures. Both the Will maker and both signing witnesses must sign physically using ink on paper.",
   },
 ];
 
@@ -424,7 +424,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -502,7 +502,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 57, 63(c), 67, 68 &amp; Schedule III of the Indian Succession
@@ -526,22 +526,22 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Mandatory Two Witnesses:</strong> Section 63(c) requires at least two adult,
-                    sane witnesses who physically see the testator sign or receive personal acknowledgment.
+                    <strong>Needed Two Witnesses:</strong> Section 63(c) requires at least two adult,
+                    sane witnesses who physically see the Will maker sign or receive personal acknowledgment.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Section 67 Void Bequest Rule:</strong> For Christian and Parsi Wills, if a
-                    beneficiary or their spouse signs as a witness, their entire inheritance is void.
+                    heir or their spouse signs as a witness, their entire estate is void.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Hindu Schedule III Nuance:</strong> For Hindu, Sikh, Jain, and Buddhist Wills,
-                    Section 67 does not apply statutorily. However, having a beneficiary witness creates a
+                    Section 67 does not apply statutorily. However, having a heir witness creates a
                     grave suspicious circumstance in probate court.
                   </span>
                 </li>
@@ -549,7 +549,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Doctor &amp; Lawyer Gold Standard:</strong> Having an independent MBBS doctor
-                    and an advocate sign provides rock-solid defense against claims of dementia or undue
+                    and an lawyer sign provides rock-solid defense against claims of dementia or undue
                     influence.
                   </span>
                 </li>
@@ -567,17 +567,17 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Executing a Will requires strict adherence to statutory formalities. Under Section 63(c)
+                  Signing a Will requires strict adherence to legal formalities. Under Section 63(c)
                   of the Indian Succession Act, 1925, a Will must be attested by two or more witnesses.
-                  Each witness must see the testator sign, or receive personal acknowledgment of the signature.
+                  Each witness must see the Will maker sign, or receive personal acknowledgment of the signature.
                 </p>
                 <p>
                   The most perilous pitfall in Indian testamentary drafting is choosing the wrong witnesses.
-                  Section 67 of the Act addresses gifts made to attesting witnesses. It provides that if a
+                  Section 67 of the Act addresses gifts made to signing witnesses. It provides that if a
                   person attests a Will, any bequest given to that person, or to their spouse, is completely void.
                 </p>
                 <p>
-                  Importantly, the Will itself does not fail. The attestation remains valid to prove the Will.
+                  Importantly, the Will itself does not fail. The witness signing remains valid to prove the Will.
                   However, the witness and their spouse lose every rupee and parcel of land bequeathed to them.
                   Understanding who can safely witness your Will protects both your estate and your loved ones.
                 </p>
@@ -591,11 +591,11 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>INTERACTIVE DIAGNOSTIC TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Witness Eligibility &amp; Section 67 Checker
+                2. Free Witness Eligibility &amp; Section 67 Checker
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your religion and configure the profile of both proposed witnesses below. Get an
-                instant statutory evaluation, void bequest risk analysis, and Court-Defensibility Score.
+                instant legal evaluation, void bequest risk analysis, and Court-Defensibility Score.
               </p>
 
               {/* Calculator Panel Container */}
@@ -605,7 +605,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center justify-between">
                     <span className="flex items-center gap-1.5">
                       <Globe className="w-4 h-4 text-[#C65378]" />
-                      <span>Testator Personal Law / Religion</span>
+                      <span>Will maker Personal Law / Religion</span>
                     </span>
                     <span className="text-[11px] font-semibold text-slate-500">Determines Sec 67 Applicability</span>
                   </label>
@@ -716,12 +716,12 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
                         <Users className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>Role &amp; Relationship to Testator</span>
+                        <span>Role &amp; Relationship to Will maker</span>
                       </label>
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                         {[
                           { id: "doctor", label: "Doctor (MBBS/MD)", icon: Stethoscope },
-                          { id: "lawyer", label: "Advocate / Lawyer", icon: Briefcase },
+                          { id: "lawyer", label: "Lawyer / Lawyer", icon: Briefcase },
                           { id: "ca", label: "Chartered Accountant", icon: Calculator },
                           { id: "colleague_friend", label: "Colleague / Friend", icon: UserCheck },
                           { id: "executor", label: "Executor Named in Will", icon: Gavel },
@@ -875,7 +875,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                       {/* Financial / Beneficiary Interest Check */}
                       <div className="bg-white p-3.5 rounded-xl border border-slate-200/80 space-y-2">
                         <div className="text-xs font-bold text-slate-800 flex items-center justify-between">
-                          <span>Receives Legacy or Property?</span>
+                          <span>Receives Legacy or Asset?</span>
                           <span className={`text-[11px] font-black ${activeWitness.isBeneficiary ? "text-rose-700" : "text-emerald-700"}`}>
                             {activeWitness.isBeneficiary ? "Named Beneficiary" : "Zero Benefit"}
                           </span>
@@ -937,7 +937,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <div className="bg-white p-3.5 rounded-xl border border-slate-200/80 flex items-center justify-between gap-4">
                       <div>
                         <div className="text-xs font-bold text-slate-800">
-                          Is this witness younger &amp; healthy enough to survive testator?
+                          Is this witness younger &amp; healthy enough to survive Will maker?
                         </div>
                         <div className="text-[11px] text-slate-500">
                           Section 67 BSA 2023 requires at least one living witness to testify in court.
@@ -1071,13 +1071,13 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   {/* Immediate Actionable Advice */}
                   <div className="pt-2 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <div className="text-xs text-white/80">
-                      Want an advocate to cross-verify your Will execution and witness affidavits?
+                      Want an lawyer to cross-verify your Will signing and witness sworn notes?
                     </div>
                     <Link
                       href="/contact"
                       className="px-5 py-2.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-xs shadow-sm transition-transform hover:-translate-y-0.5 shrink-0"
                     >
-                      Consult Succession Advocate
+                      Consult Estate Lawyer
                     </Link>
                   </div>
                 </div>
@@ -1126,9 +1126,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                       <span>Christians, Parsis, Jews &amp; Special Marriage Act</span>
                     </div>
                     <p className="text-xs text-slate-700 leading-relaxed">
-                      Section 67 applies in full force. If an attesting witness, or the husband or wife of an
-                      attesting witness, is named as a beneficiary, <strong>the bequest is void</strong>. The
-                      witness cannot take the property, though the Will remains validly executed.
+                      Section 67 applies in full force. If an signing witness, or the husband or wife of an
+                      signing witness, is named as a heir, <strong>the bequest is void</strong>. The
+                      witness cannot take the asset, though the Will remains validly signed.
                     </p>
                   </div>
                   <div className="bg-amber-50/60 p-4 rounded-2xl border border-amber-200/80 space-y-2">
@@ -1146,8 +1146,8 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 </div>
                 <p>
                   Therefore, even though Hindu law does not automatically forfeit the bequest by statute,
-                  probate courts view a beneficiary witness with acute suspicion. If disinherited children
-                  challenge the Will, the propounder must prove beyond doubt that the testator was not coerced.
+                  probate courts view a heir witness with acute suspicion. If disinherited children
+                  fight the Will, the propounder must prove beyond doubt that the Will maker was not coerced.
                 </p>
               </div>
             </section>
@@ -1159,7 +1159,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>FAMILY WITNESSES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Can Beneficiaries, Spouses, or Heirs Be Witnesses?
+                4. Can Heirs, Spouses, or Heirs Be Witnesses?
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1173,13 +1173,13 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   <li>
                     <strong>Wife or Husband as Witness:</strong> If the spouse inherits the matrimonial home
                     or bank accounts, having them sign as a witness triggers Section 67 for Christians and Parsis,
-                    voiding their life estate. For Hindus, it invites immediate challenges from excluded children.
+                    voiding their life estate. For Hindus, it invites immediate fights from excluded children.
                   </li>
                   <li>
-                    <strong>Favored Child as Witness:</strong> If one child receives a larger share of ancestral
-                    or self-acquired property and attests the Will, courts presume undue influence. The Supreme
+                    <strong>Favored Child as Witness:</strong> If one child receives a larger share of family
+                    or self-acquired asset and attests the Will, courts presume undue influence. The Supreme
                     Court in <em>Kavita Kanwar v. Pamela Mehta (2021)</em> held that active participation by a major
-                    beneficiary in the execution process vitiates the probate petition if unexplained.
+                    heir in the signing process vitiates the probate petition if unexplained.
                   </li>
                   <li>
                     <strong>Son-in-law or Daughter-in-law as Witness:</strong> While Section 67 explicitly
@@ -1188,7 +1188,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   </li>
                   <li>
                     <strong>Disinherited Child as Witness:</strong> If a child who receives nothing signs as
-                    a witness, the attestation is legally valid. However, in probate litigation, that disinherited
+                    a witness, the witness signing is legally valid. However, in probate court fights, that disinherited
                     child can easily turn hostile and refuse to depose under Section 67 BSA 2023.
                   </li>
                 </ul>
@@ -1202,12 +1202,12 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>EXPERT WITNESSES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Doctors &amp; Lawyers as Witnesses: Evidentiary Value
+                5. Doctors &amp; Lawyers as Witnesses: Proof Value
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The most effective strategy to create a challenge-proof Will in India is selecting
-                  independent professional witnesses. Indian courts give immense evidentiary weight to
+                  The most effective strategy to create a fight-proof Will in India is selecting
+                  independent professional witnesses. Indian courts give immense proof weight to
                   medical practitioners and legal professionals.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1217,20 +1217,20 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                       <span>The Family Doctor (MBBS / MD)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A doctor acts as both an attesting witness and an expert witness under Section 39 of BSA 2023.
-                      By certifying the testator's testamentary capacity at the exact moment of signing, the doctor
+                      A doctor acts as both an signing witness and an expert witness under Section 39 of BSA 2023.
+                      By certifying the Will maker's Will capacity at the exact moment of signing, the doctor
                       extinguishes future allegations of senile dementia, Alzheimer's, or medication-induced delirium.
                     </p>
                   </div>
                   <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-2">
                     <div className="flex items-center gap-2 text-sm font-extrabold text-slate-900">
                       <Briefcase className="w-4 h-4 text-[#5F7E75]" />
-                      <span>The Independent Advocate / CA</span>
+                      <span>The Independent Lawyer / CA</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An advocate understands procedural law and maintains contemporaneous office records.
+                      An lawyer understands procedural law and maintains contemporaneous office records.
                       When subpoenaed in a probate suit, their testimony carries high credibility because they have
-                      no financial interest in the estate and can confirm the testator gave voluntary instructions.
+                      no financial interest in the estate and can confirm the Will maker gave voluntary instructions.
                     </p>
                   </div>
                 </div>
@@ -1254,13 +1254,13 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 </p>
                 <div className="bg-[#FAF7F0] p-4 rounded-2xl border-l-4 border-l-[#5F7E75] border border-slate-200 text-xs sm:text-sm text-slate-800 italic">
                   "No person, by reason of interest in, or of his being an executor of, a will, shall be
-                  disqualified to be admitted as a witness to prove the execution of the will, or to prove
+                  disqualified to be admitted as a witness to prove the signing of the will, or to prove
                   the validity or invalidity thereof."
                 </div>
                 <p>
                   This means being named as an Executor does not disqualify a witness. An executor is a fiduciary
-                  who manages probate and asset transmission. However, if the Executor is <em>also</em> a primary
-                  beneficiary (for example, the eldest son who inherits 80% of the estate and is named executor),
+                  who manages probate and asset transfer. However, if the Executor is <em>also</em> a primary
+                  heir (for example, the eldest son who inherits 80% of the estate and is named executor),
                   the suspicious circumstance doctrine applies fully.
                 </p>
               </div>
@@ -1282,8 +1282,8 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   (corresponding to former Section 68 of the Evidence Act) governs how a Will is proven in court.
                 </p>
                 <p>
-                  Under Section 67 BSA, if a document is required by law to be attested, it
-                  <strong> cannot be used as evidence until at least one attesting witness is examined in court</strong>,
+                  Under Section 67 BSA, if a paper is required by law to be attested, it
+                  <strong> cannot be used as evidence until at least one signing witness is examined in court</strong>,
                   provided that witness is alive, capable of giving evidence, and subject to the process of the court.
                 </p>
                 <div className="rounded-2xl bg-slate-900 text-white p-5 space-y-3 text-xs sm:text-sm">
@@ -1302,8 +1302,8 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>
-                        <strong>Keep Verified Contact Details:</strong> Record Aadhaar numbers, residential
-                        addresses, and professional registration numbers of your witnesses in your Will dossier.
+                        <strong>Keep Checked Contact Details:</strong> Record Aadhaar numbers, home
+                        addresses, and professional filing numbers of your witnesses in your Will dossier.
                       </span>
                     </li>
                   </ul>
@@ -1322,7 +1322,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The following individuals are legally disqualified from being attesting witnesses in India:
+                  The following people are legally disqualified from being signing witnesses in India:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                   <div className="p-4 bg-white rounded-2xl border border-slate-200/90 space-y-1.5">
@@ -1332,7 +1332,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     </div>
                     <p className="text-slate-600 text-xs">
                       Under Section 3 of the Indian Majority Act, 1875, minors lack contractual and legal capacity.
-                      A minor cannot depose competently in court as an attesting witness.
+                      A minor cannot depose competently in court as an signing witness.
                     </p>
                   </div>
                   <div className="p-4 bg-white rounded-2xl border border-slate-200/90 space-y-1.5">
@@ -1341,7 +1341,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                       <span>Blind or Visually Impaired Persons</span>
                     </div>
                     <p className="text-slate-600 text-xs">
-                      Section 63(c) requires the witness to "see" the testator sign. Established precedents
+                      Section 63(c) requires the witness to "see" the Will maker sign. Established precedents
                       (including <em>In the Estate of Gibson</em>) confirm blind witnesses are legally incompetent.
                     </p>
                   </div>
@@ -1352,7 +1352,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     </div>
                     <p className="text-slate-600 text-xs">
                       Under the First Schedule of the Information Technology Act, 2000, Wills cannot be signed
-                      electronically. E-Sign or DocuSign attestation is completely invalid in India.
+                      electronically. E-Sign or DocuSign witness signing is completely invalid in India.
                     </p>
                   </div>
                   <div className="p-4 bg-white rounded-2xl border border-slate-200/90 space-y-1.5">
@@ -1383,7 +1383,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   <thead className="bg-slate-900 text-white text-[11px] uppercase tracking-wider font-extrabold">
                     <tr>
                       <th className="p-3.5 sm:p-4">Witness Category</th>
-                      <th className="p-3.5 sm:p-4">Statutory Eligibility</th>
+                      <th className="p-3.5 sm:p-4">Legal Eligibility</th>
                       <th className="p-3.5 sm:p-4">Section 67 Void Risk</th>
                       <th className="p-3.5 sm:p-4">Suspicious Circumstance</th>
                       <th className="p-3.5 sm:p-4">Recommended Action</th>
@@ -1393,14 +1393,14 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">MBBS / MD Doctor</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">100% Eligible</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700">None (if non-beneficiary)</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700">None (if non-heir)</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700">Zero Risk</td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Highly Recommended (Gold Standard)</td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
-                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Practicing Advocate</td>
+                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Practicing Lawyer</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">100% Eligible</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700">None (if non-beneficiary)</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700">None (if non-heir)</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700">Zero Risk</td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Ideal for Legal Scrutiny</td>
                     </tr>
@@ -1412,14 +1412,14 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Safe Choice</td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
-                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Executor (Non-Beneficiary)</td>
+                      <td className="p-3.5 sm:p-4 font-bold text-slate-900">Executor (Non-Heir)</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">Eligible (Sec 68)</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700">None</td>
                       <td className="p-3.5 sm:p-4 text-emerald-700">Low Risk</td>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Permitted under Section 68</td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors bg-rose-50/40">
-                      <td className="p-3.5 sm:p-4 font-bold text-rose-900">Beneficiary Child / Spouse</td>
+                      <td className="p-3.5 sm:p-4 font-bold text-rose-900">Heir Child / Spouse</td>
                       <td className="p-3.5 sm:p-4 text-amber-700 font-bold">Technically Eligible</td>
                       <td className="p-3.5 sm:p-4 text-rose-700 font-bold">100% Void (Non-Hindus)</td>
                       <td className="p-3.5 sm:p-4 text-rose-700 font-bold">Severe Suspicion (Hindus)</td>
@@ -1444,44 +1444,44 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>EXECUTION PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Step-by-Step SOP: Executing a Challenge-Proof Will
+                10. Step-by-Step SOP: Signing a Fight-Proof Will
               </h3>
               <div className="space-y-4">
                 {[
                   {
                     step: "1",
                     title: "Select Two Independent, Non-Beneficiary Witnesses",
-                    desc: "Ensure neither witness nor their spouse receives any asset, cash, or life interest under the Will. Ideal combination: 1 Doctor + 1 Advocate or Long-standing Colleague.",
+                    desc: "Ensure neither witness nor their spouse receives any asset, cash, or life interest under the Will. Ideal combination: 1 Doctor + 1 Lawyer or Long-standing Colleague.",
                   },
                   {
                     step: "2",
                     title: "Conduct Contemporaneous Medical Examination",
-                    desc: "Have the Registered Medical Practitioner examine the testator on the day of execution. Obtain a signed fitness certificate endorsed directly on the Will.",
+                    desc: "Have the Filed Medical Practitioner examine the Will maker on the day of signing. Obtain a signed fitness paper endorsed directly on the Will.",
                   },
                   {
                     step: "3",
                     title: "Assemble All Parties in One Room Simultaneously",
-                    desc: "Seat the testator, Witness 1, and Witness 2 at the same conference table. Do not allow signing in separate rooms or at different times.",
+                    desc: "Seat the Will maker, Witness 1, and Witness 2 at the same conference table. Do not allow signing in separate rooms or at different times.",
                   },
                   {
                     step: "4",
                     title: "Read Out and Acknowledge the Will",
-                    desc: "The testator must confirm: 'This is my Last Will and Testament, drafted according to my instructions, and I understand all bequests.'",
+                    desc: "The Will maker must confirm: 'This is my Last Will and Testament, drafted according to my instructions, and I understand all bequests.'",
                   },
                   {
                     step: "5",
                     title: "Testator Signs Every Page in Sight of Witnesses",
-                    desc: "The testator signs or places their thumb impression on each page and at the foot of the Will in full view of both witnesses.",
+                    desc: "The Will maker signs or places their thumb impression on each page and at the foot of the Will in full view of both witnesses.",
                   },
                   {
                     step: "6",
                     title: "Witnesses Sign the Attestation Clause Immediately",
-                    desc: "Each witness writes their full name, father's/spouse's name, age, address, and government ID number directly beneath the attestation clause.",
+                    desc: "Each witness writes their full name, father's/spouse's name, age, address, and government ID number directly beneath the witness signing clause.",
                   },
                   {
                     step: "7",
                     title: "Archive Video Recording & Medical Fitness Dossier",
-                    desc: "Record a 2-minute video of the signing ceremony and store it with the original Will in a fireproof safe or Sub-Registrar deposit.",
+                    desc: "Record a 2-minute video of the signing ceremony and store it with the original Will in a fireproof safe or SRO deposit.",
                   },
                 ].map((item) => (
                   <div key={item.step} className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
@@ -1504,7 +1504,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>CASE LAW PRECEDENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Landmark Supreme Court Rulings on Attesting Witnesses
+                11. Landmark Supreme Court Rulings on Signing Witnesses
               </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
@@ -1514,7 +1514,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The 3-judge bench established the universal test of suspicious circumstances. When a person
-                    who benefits substantially participates in the execution or attests the Will, a heavy burden
+                    who benefits substantially participates in the signing or attests the Will, a heavy burden
                     lies on the propounder to dispel all suspicion. If unresolved, the court must refuse probate.
                   </p>
                 </div>
@@ -1525,8 +1525,8 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <span className="text-[11px] font-bold text-[#5F7E75] bg-emerald-50 px-2 py-0.5 rounded-full">Supreme Court</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Supreme Court reaffirmed that where the major beneficiary took a leading role in arranging
-                    the witnesses and execution, without convincing explanation for disinheriting other natural
+                    The Supreme Court reaffirmed that where the major heir took a leading role in arranging
+                    the witnesses and signing, without convincing explanation for disinheriting other natural
                     heirs, the Will cannot be accepted as genuine.
                   </p>
                 </div>
@@ -1537,9 +1537,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                     <span className="text-[11px] font-bold text-slate-800 bg-slate-100 px-2 py-0.5 rounded-full">Section 63(c) Test</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Court held that attestation requires <em>animus attestandi</em>. Merely putting signatures
+                    The Court held that witness signing requires <em>animus attestandi</em>. Merely putting signatures
                     on paper is not enough; the witness must sign with the explicit intention of verifying the
-                    testator's execution.
+                    Will maker's signing.
                   </p>
                 </div>
               </div>
@@ -1552,10 +1552,10 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <span>LEGAL CLAUSE TEMPLATES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Standard Attestation Clauses &amp; Certificate Templates
+                12. Standard Witness Signing Clauses &amp; Paper Templates
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Copy and incorporate these statutory clauses into your Will draft to ensure full compliance
+                Copy and incorporate these legal clauses into your Will draft to ensure full compliance
                 with Section 63(c) of the Indian Succession Act, 1925.
               </p>
 
@@ -1564,7 +1564,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-900">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory Dual Attestation Clause (Section 63(c))</span>
+                    <span>Legal Dual Witness Signing Clause (Section 63(c))</span>
                   </div>
                   <button
                     type="button"
@@ -1610,7 +1610,7 @@ Aadhaar / Voter ID No: [Govt ID Proof Number]"`}
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-900">
                     <Stethoscope className="w-4 h-4 text-[#5F7E75]" />
-                    <span>Doctor's Contemporaneous Medical Fitness Certificate</span>
+                    <span>Doctor's Contemporaneous Medical Fitness Paper</span>
                   </div>
                   <button
                     type="button"
@@ -1625,7 +1625,7 @@ Aadhaar / Voter ID No: [Govt ID Proof Number]"`}
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5 text-[#5F7E75]" />
-                        <span>Copy Certificate</span>
+                        <span>Copy Paper</span>
                       </>
                     )}
                   </button>
@@ -1652,7 +1652,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 <span>LEGAL SCRUTINY &amp; COUNSEL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Advocate Verification &amp; Legal Scrutiny Process
+                13. Lawyer Check &amp; Legal Scrutiny Process
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-7 space-y-4">
                 <div className="flex items-center gap-4">
@@ -1660,22 +1660,22 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                     AMA
                   </div>
                   <div>
-                    <div className="font-extrabold text-slate-900 text-base">AMA Legal Solutions Testamentary Division</div>
+                    <div className="font-extrabold text-slate-900 text-base">AMA Legal Solutions Will Division</div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Bar Council of Delhi • High Court &amp; Supreme Court Advocates
+                      Bar Council of Delhi • High Court &amp; Supreme Court Lawyers
                     </div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Every Will template and diagnostic checker on WillDrafting.in is authored and reviewed by
-                  seasoned estate planning advocates. Our team verifies witness affidavits, ensures full compliance
+                  seasoned estate planning lawyers. Our team verifies witness sworn notes, ensures full compliance
                   with Section 63(c) and Section 67, and prepares clients for probate defense under the Bharatiya
                   Sakshya Adhiniyam, 2023.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-100 text-xs text-slate-600">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Witness Affidavit Drafting</span>
+                    <span>Witness Sworn Note Drafting</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1736,21 +1736,21 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 <span>OFFICIAL PORTALS &amp; CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory References &amp; Official Legislative Portals
+                15. Legal References &amp; Official Legislative Portals
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-6 space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="font-extrabold text-slate-900">
-                  Governing Acts &amp; Statutory Codes:
+                  Governing Acts &amp; Legal Codes:
                 </div>
                 <ul className="list-disc pl-5 space-y-1 text-slate-600">
                   <li>
-                    <strong>Indian Succession Act, 1925:</strong> Section 57 (Application of Part VI),
-                    Section 63(c) (Execution of unprivileged Wills), Section 67 (Effect of gift to attesting
+                    <strong>Indian Succession Act, 1925:</strong> Section 57 (Form of Part VI),
+                    Section 63(c) (Signing of unprivileged Wills), Section 67 (Effect of gift to signing
                     witness), Section 68 (Witness not disqualified by being executor), and Schedule III.
                   </li>
                   <li>
-                    <strong>Bharatiya Sakshya Adhiniyam, 2023:</strong> Section 67 (Proof of execution of
-                    document required by law to be attested) &amp; Section 68 (Proof where no witness found).
+                    <strong>Bharatiya Sakshya Adhiniyam, 2023:</strong> Section 67 (Proof of signing of
+                    paper required by law to be attested) &amp; Section 68 (Proof where no witness found).
                   </li>
                   <li>
                     <strong>Indian Majority Act, 1875:</strong> Section 3 (Age of majority).
@@ -1793,7 +1793,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Diagnostic Tools &amp; Succession Guides
+                    Related WillDrafting Diagnostic Tools &amp; Estate Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1806,13 +1806,13 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Mandatory Checker
+                      Probate Needed Checker
                     </Link>
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1830,7 +1830,29 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1843,21 +1865,21 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Section 63(c) attestation audits, High
-                Court probate disputes, and Section 67 BSA court witness examinations.
+                Expert in Indian testamentary jurisprudence, Section 63(c) witness signing audits, High
+                Court probate fights, and Section 67 BSA court witness examinations.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1871,10 +1893,10 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                   <span>PREVENT FUTURE PROBATE LITIGATION</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Draft a Challenge-Proof Will in 15 Minutes
+                  Draft a Fight-Proof Will in 15 Minutes
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Our guided online tool automatically inserts rock-solid Section 63(c) attestation clauses,
+                  Our guided online tool automatically inserts rock-solid Section 63(c) witness signing clauses,
                   doctor certification recitals, and independent executor appointments.
                 </p>
                 <button
@@ -1893,18 +1915,18 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                   <span>LAWYER REVIEW</span>
                 </div>
                 <h3 className="text-lg font-extrabold text-slate-900 leading-snug">
-                  Have an Advocate Audit Your Witnesses
+                  Have an Lawyer Audit Your Witnesses
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Worried that a relative might contest your Will? Get your draft and witness affidavits
-                  reviewed by senior succession advocates at AMA Legal Solutions.
+                  Worried that a relative might contest your Will? Get your draft and witness sworn notes
+                  reviewed by senior estate lawyers at AMA Legal Solutions.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5"
                 >
                   <Scale className="w-4 h-4 text-rose-300" />
-                  <span>Book Advocate Consultation</span>
+                  <span>Book Lawyer Talk</span>
                 </Link>
               </div>
 

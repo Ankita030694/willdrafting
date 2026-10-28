@@ -143,7 +143,7 @@ export default function GujaratLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gujarat: Legal Online Will Making Help",
         description:
-          "Draft a legally compliant Will in Gujarat. Expert lawyer help, Garvi Gujarat signing advice, and family business succession.",
+          "Draft a legally compliant Will in Gujarat. Expert lawyer help, Garvi Gujarat signing advice, and family business estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function GujaratLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gujarat - Business Succession & SRO Registration",
         description:
-          "Professional Will drafting, advocate check, Garvi Gujarat SRO signing, and business succession planning across Ahmedabad, Surat.",
+          "Professional Will drafting, lawyer check, Garvi Gujarat SRO signing, and business estate planning across Ahmedabad, Surat.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -258,26 +258,26 @@ export default function GujaratLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Gujarat",
         description:
-          "Five verified legal steps to draft and register an enforceable Will before the Sub-Registrar in Gujarat.",
+          "Five checked legal steps to draft and register an enforceable Will before the SRO in Gujarat.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Business Holdings",
-            text: "List residential flats, commercial properties, HUF shares, GIDC leasehold units, AnyRoR agricultural survey numbers, and financial assets.",
+            text: "List home flats, shop assets, HUF shares, GIDC leasehold units, AnyRoR farm survey numbers, and financial assets.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using legally vetted clauses for business succession, non-lapse splits, survivorship, and executor authority.",
+            text: "Draft your Will using legally vetted clauses for business estate, non-lapse splits, survivorship, and executor office.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent non-heir witnesses.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two independent non-heir witnesses.",
           },
           {
             "@type": "HowToStep",

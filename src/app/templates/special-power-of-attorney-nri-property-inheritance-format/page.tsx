@@ -94,7 +94,7 @@ export default function SpecialPowerOfAttorneyPage() {
         url: canonicalUrl,
         name: "NRI PoA Format: Property Mutation & Probate | WillDrafting",
         description:
-          "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy.",
+          "Download legally valid NRI power of attorney format for asset name change and probate. Powers of Attorney Act compliant draft with embassy.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -133,7 +133,7 @@ export default function SpecialPowerOfAttorneyPage() {
         url: canonicalUrl,
         encodingFormat: "application/pdf",
         description:
-          "Statutory Special Power of Attorney template compliant with Powers of Attorney Act 1882, Registration Act 1908 Sections 32 and 33, and Indian.",
+          "Legal Special Power of Attorney template compliant with Powers of Attorney Act 1882, Filing Act 1908 Sections 32 and 33, and Indian.",
         image: imageUrl,
         author: {
           "@type": "LegalService",
@@ -150,7 +150,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "What is an NRI Special Power of Attorney for inherited property in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An NRI Special Power of Attorney (PoA) is a legally binding deed executed by a Non-Resident Indian under the Powers of Attorney Act, 1882. It authorizes a trusted person in India to carry out specific, narrowly defined acts such as applying for revenue mutation, attending court probate hearings, or transferring society share certificates, while explicitly prohibiting any sale, gift, mortgage, or financial encumbrance of the property.",
+              text: "An NRI Special Power of Attorney (PoA) is a legally binding deed signed by a Non-Resident Indian under the Powers of Attorney Act, 1882. It authorizes a trusted person in India to carry out specific, narrowly defined acts such as applying for revenue name change, attending court probate hearings, or transferring society share papers, while explicitly prohibiting any sale, gift, mortgage, or financial encumbrance of the asset.",
             },
           },
           {
@@ -166,7 +166,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "Should an NRI choose Indian Embassy Attestation or the Hague Apostille route?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If you reside in a Hague Apostille Convention member country (such as the USA, UK, Canada, Australia, or Germany), getting the PoA notarized locally and apostilled by the designated state authority is legally sufficient and accepted across Indian land revenue offices. If you reside in a non-apostille country (such as the UAE, Saudi Arabia, or Singapore), you must get the PoA attested by the Consular Officer at the Indian Embassy or Consulate.",
+              text: "If you reside in a Hague Apostille Convention member country (such as the USA, UK, Canada, Australia, or Germany), getting the PoA notarized locally and apostilled by the designated state office is legally sufficient and accepted across Indian land revenue offices. If you reside in a non-apostille country (such as the UAE, Saudi Arabia, or Singapore), you must get the PoA attested by the Consular Officer at the Indian Embassy or Consulate.",
             },
           },
           {
@@ -174,7 +174,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "What is the 90-day adjudication rule under Section 18 of the Indian Stamp Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 18 of the Indian Stamp Act, 1899, any legal instrument executed outside India must be stamped and adjudicated before the Collector of Stamps or District Registrar within three months (90 days) of its first receipt in India. Missing this 90-day deadline attracts heavy statutory penalties ranging from two to ten times the deficit stamp duty.",
+              text: "Under Section 18 of the Indian Stamp Act, 1899, any legal instrument signed outside India must be stamped and adjudicated before the Collector of Stamps or District Registrar within three months (90 days) of its first receipt in India. Missing this 90-day deadline attracts heavy legal penalties ranging from two to ten times the deficit stamp duty.",
             },
           },
           {
@@ -182,7 +182,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "Does an NRI Special Power of Attorney for mutation require registration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 17 and 18 of the Registration Act, 1908, a Special PoA that is confined strictly to revenue mutation, court appearance, and utility transfer does not compulsorily require registration in all states because it creates no proprietary title. However, the PoA MUST be duly stamped and adjudicated under Section 18 of the Stamp Act. If the PoA authorizes execution of a registered conveyance or sale deed, registration before the Sub-Registrar under Sections 32 and 33 is mandatory.",
+              text: "Under Section 17 and 18 of the Filing Act, 1908, a Special PoA that is confined strictly to revenue name change, court appearance, and utility transfer does not compulsorily require filing in all states because it creates no proprietary title. However, the PoA MUST be duly stamped and adjudicated under Section 18 of the Stamp Act. If the PoA authorizes signing of a filed conveyance or sale deed, filing before the SRO under Sections 32 and 33 is needed.",
             },
           },
           {
@@ -190,7 +190,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "Can my attorney sign probate or letters of administration petitions for me?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Sections 228 and 241 of the Indian Succession Act, 1925, an authorized attorney can apply for Letters of Administration with the Will annexed or represent the NRI legal heir in ongoing probate proceedings before the District Judge or High Court.",
+              text: "Yes. Under Sections 228 and 241 of the Indian Succession Act, 1925, an authorized attorney can apply for Letters of Care with the Will annexed or represent the NRI legal heir in ongoing probate proceedings before the District Judge or High Court.",
             },
           },
           {
@@ -198,7 +198,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "How can an NRI revoke a Special Power of Attorney from abroad?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 201 of the Indian Contract Act, 1872, the principal can revoke a PoA at any time by executing a formal Deed of Revocation. To make it effective, the NRI must serve written notice of revocation upon the attorney, deliver copies to the Tehsildar, Sub-Registrar, and housing society, and publish a public notice in a local daily newspaper.",
+              text: "Under Section 201 of the Indian Contract Act, 1872, the principal can revoke a PoA at any time by signing a formal Deed of Revocation. To make it effective, the NRI must serve written notice of revocation upon the attorney, deliver copies to the Tehsildar, SRO, and housing society, and publish a public notice in a local daily newspaper.",
             },
           },
           {
@@ -206,7 +206,7 @@ export default function SpecialPowerOfAttorneyPage() {
             name: "Can the attorney receive inherited property sale proceeds in their own bank account?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Strictly no. To comply with Foreign Exchange Management Act (FEMA) regulations and prevent financial fraud, any sale deed executed through an attorney must mandate that all sale consideration cheques, RTGS, or wire transfers be drawn directly and exclusively in favor of the NRI principal's Indian NRO or NRE bank account.",
+              text: "Strictly no. To comply with Foreign Exchange Management Act (FEMA) regulations and prevent financial fraud, any sale deed signed through an attorney must mandate that all sale consideration cheques, RTGS, or wire transfers be drawn directly and exclusively in favor of the NRI principal's Indian NRO or NRE bank account.",
             },
           },
         ],

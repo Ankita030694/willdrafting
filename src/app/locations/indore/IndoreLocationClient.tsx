@@ -132,31 +132,31 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving asset in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Indore Development Authority (IDA) Allotment / Lease Deed",
+    label: "Indore Development Office (IDA) Allotment / Lease Deed",
     detail: "Required for IDA Scheme plots (Scheme 54, 78, 114, 140) to verify title description and lease terms.",
     checked: true,
   },
   {
     id: "item-5",
-    label: "Indore Municipal Corporation (IMC) Property Tax Receipt",
-    detail: "Recent property tax receipt confirming municipal house assessment number and ward classification.",
+    label: "Indore City City Board (IMC) Asset Tax Receipt",
+    detail: "Recent asset tax receipt confirming city house assessment number and ward classification.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "MBBS Registered Doctor's Mental Fitness Certificate",
+    label: "MBBS Filed Doctor's Mental Fitness Paper",
     detail: "Needed for senior citizens aged 60+ and doorstep Section 31 registrations to prove sound sound mind.",
     checked: false,
   },
   {
     id: "item-7",
     label: "MP Sampada 2.0 e-Appointment Slot Token Receipt",
-    detail: "Generated after paying the nominal ₹1,000 government registration fee on sampada.mpigr.gov.in.",
+    detail: "Generated after paying the nominal ₹1,000 government filing fee on sampada.mpigr.gov.in.",
     checked: false,
   },
 ];
@@ -255,7 +255,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally binding Will for your IDA plots, home assets, trading business shares, and farm lands in Indore.
-                Get experienced lawyer drafting, MP Sampada 2.0 registration guidance, and doorstep signing for senior citizens.
+                Get experienced lawyer drafting, MP Sampada 2.0 filing guidance, and doorstep signing for senior citizens.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -344,7 +344,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 MP High Court Rulings
@@ -482,12 +482,12 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 47 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Indore
+                  Key Highlights: Will Making &amp; Filing in Indore
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Indore is the shop and industrial capital of Madhya Pradesh. As families accumulate home real estate,
+                  Indore is the shop and plant capital of Madhya Pradesh. As families accumulate home real estate,
                   IDA leasehold plots, bullion assets in Sarafa Bazaar, and shares in Pithampur enterprises, estate planning becomes crucial.
-                  Writing a clear legal Will prevents devastating inheritance fights among legal heirs and guarantees that your hard-earned assets
+                  Writing a clear legal Will prevents devastating estate fights among legal heirs and guarantees that your hard-earned assets
                   pass strictly according to your wishes.
                 </p>
               </div>
@@ -496,21 +496,21 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
                     <Scale className="w-4 h-4 text-[#C65378]" />
-                    <span>Court Probate is Optional</span>
+                    <span>Court Probate is A Choice</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under the Indian Succession Act 1925, court probate is not needed in Madhya Pradesh.
-                    Heirs can directly transfer municipal and revenue titles without expensive court petitions.
+                    Heirs can directly transfer city and revenue titles without expensive court petitions.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>IDA Plot Succession Safeguards</span>
+                    <span>IDA Plot Estate Safeguards</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Indore Development Authority (IDA) requires a valid registered Will for seamless transfer of leasehold rights
+                    Indore Development Office (IDA) requires a valid filed Will for seamless transfer of leasehold rights
                     or freehold conversion across Scheme 54, Scheme 78, and Scheme 140.
                   </p>
                 </div>
@@ -522,7 +522,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Wills are 100% exempt from ad-valorem stamp duty across Madhya Pradesh.
-                    Testators only pay a nominal government registration fee of ₹1,000 on MP Sampada 2.0.
+                    Will makers only pay a nominal government filing fee of ₹1,000 on MP Sampada 2.0.
                   </p>
                 </div>
 
@@ -532,8 +532,8 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <span>Doorstep SRO Visits for Seniors</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 31 of the Registration Act, elderly and infirm testators can complete biometric registration
-                    at their homes in Palasia, Saket, or Manoramaganj via an official Sub-Registrar commission.
+                    Under Section 31 of the Filing Act, elderly and infirm Will makers can complete biometric filing
+                    at their homes in Palasia, Saket, or Manoramaganj via an official SRO commission.
                   </p>
                 </div>
               </div>
@@ -556,7 +556,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   1. Legal Framework: Will Drafting in Indore, MP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In Indore and across Madhya Pradesh, testamentary succession is governed by a combination of Central statutes,
+                  In Indore and across Madhya Pradesh, Will estate is governed by a combination of Central statutes,
                   state revenue laws, and landmark judicial rulings delivered by the Madhya Pradesh High Court Bench at Indore:
                 </p>
               </div>
@@ -567,7 +567,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     The Indian Succession Act, 1925
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600">
-                    Section 59 establishes that any adult of sound mind may dispose of their self-acquired property through a Will.
+                    Section 59 establishes that any adult of sound mind may dispose of their self-acquired asset through a Will.
                     Section 63 mandates that the Will must be in writing, signed or thumb-impressed by the Will maker, and attested
                     by at least two independent adult witnesses who observe the Will maker signing.
                   </p>
@@ -579,7 +579,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600">
                     Section 30 empowers Hindus, Jains, Sikhs, and Buddhists to bequeath their self-acquired assets as well as their
-                    undivided joint family interest in joint family property. In Indore mercantile families, this allows clear split
+                    undivided joint family interest in joint family asset. In Indore mercantile families, this allows clear split
                     of family trading shops and HUF shares.
                   </p>
                 </div>
@@ -589,7 +589,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     The Madhya Pradesh Land Revenue Code (MPLRC), 1959
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600">
-                    For farm farmlands in Sanwer, Depalpur, Rau, and Betma, testamentary bequests of Bhumiswami rights
+                    For farm farmlands in Sanwer, Depalpur, Rau, and Betma, Will bequests of Bhumiswami rights
                     must comply with the MPLRC. A clearly worded Will simplifies name change proceedings before the local Tehsildar
                     and avoids revenue split court fights.
                   </p>
@@ -611,11 +611,11 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Indore, MP?
+                  2. Is Will Filing Needed in Indore, MP?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is optional throughout India.
-                  An unregistered Will signed on plain A4 paper and signed before two witnesses possesses legal validity.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will is a choice throughout India.
+                  An plain Will signed on plain A4 paper and signed before two witnesses possesses legal validity.
                   However, in a high-value real estate hub like Indore, registering your Will at the local SRO office
                   via MP Sampada 2.0 provides vital legal protections.
                 </p>
@@ -626,7 +626,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-3xl bg-amber-50/60 border border-amber-200/80 space-y-3">
                   <div className="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
                     <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span>Unregistered Will in Indore</span>
+                    <span>Plain Will in Indore</span>
                   </div>
                   <ul className="space-y-2 text-xs text-amber-900/90">
                     <li className="flex items-start gap-1.5">
@@ -651,12 +651,12 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-3xl bg-emerald-50/60 border border-emerald-200/80 space-y-3">
                   <div className="flex items-center gap-2 text-emerald-900 font-extrabold text-sm">
                     <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Registered Will on MP Sampada 2.0</span>
+                    <span>Filed Will on MP Sampada 2.0</span>
                   </div>
                   <ul className="space-y-2 text-xs text-emerald-900/90">
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-600 font-bold">•</span>
-                      <span>Sub-Registrar personally verifies Will maker identity and mental capacity.</span>
+                      <span>SRO personally verifies Will maker identity and mental capacity.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-600 font-bold">•</span>
@@ -668,7 +668,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-600 font-bold">•</span>
-                      <span>Fast-track property name change before IMC and IDA Estate Section.</span>
+                      <span>Fast-track asset name change before IMC and IDA Estate Section.</span>
                     </li>
                   </ul>
                 </div>
@@ -692,8 +692,8 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   3. Indore Probate Rules: MP Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most frequent questions asked by Indore property owners is whether their legal heirs must get
-                  court probate to inherit property. Under Indian succession jurisprudence, Madhya Pradesh is a non-presidency state:
+                  One of the most frequent questions asked by Indore asset owners is whether their legal heirs must get
+                  court probate to inherit asset. Under Indian succession jurisprudence, Madhya Pradesh is a non-presidency state:
                 </p>
               </div>
 
@@ -706,10 +706,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   or where the land and flats bequeathed fall within those territories.
                 </p>
                 <p>
-                  Because Indore, Bhopal, Jabalpur, and Gwalior were never British presidency towns, probate is completely optional
-                  for Hindu, Sikh, Jain, and Buddhist testators in Madhya Pradesh. The Madhya Pradesh High Court Bench at Indore
+                  Because Indore, Bhopal, Jabalpur, and Gwalior were never British presidency towns, probate is completely a choice
+                  for Hindu, Sikh, Jain, and Buddhist Will makers in Madhya Pradesh. The Madhya Pradesh High Court Bench at Indore
                   has consistently reaffirmed that legal heirs can set up their rights, execute IDA lease transfers, and mutate IMC
-                  property tax records without first getting a probate order from the District Court.
+                  asset tax records without first getting a probate order from the District Court.
                 </p>
               </div>
 
@@ -721,7 +721,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       <th className="p-3 sm:p-4">Area</th>
                       <th className="p-3 sm:p-4">Probate Rule</th>
                       <th className="p-3 sm:p-4">Legal Rule</th>
-                      <th className="p-3 sm:p-4">Property Transfer Route</th>
+                      <th className="p-3 sm:p-4">Asset Transfer Route</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200/70">
@@ -730,13 +730,13 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         Indore &amp; Madhya Pradesh
                       </td>
                       <td className="p-3 sm:p-4 text-emerald-700 font-extrabold">
-                        Optional / Not Needed
+                        A Choice / Not Needed
                       </td>
                       <td className="p-3 sm:p-4">
                         Sec 213(2) read with Sec 57 ISA
                       </td>
                       <td className="p-3 sm:p-4">
-                        Direct name change via IDA, IMC, or Tehsildar using Registered Will
+                        Direct name change via IDA, IMC, or Tehsildar using Filed Will
                       </td>
                     </tr>
                     <tr className="bg-slate-50/50 hover:bg-slate-50">
@@ -750,7 +750,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         Sec 213(1) read with Sec 57(a)/(b) ISA
                       </td>
                       <td className="p-3 sm:p-4">
-                        Needed High Court testamentary probate petition required
+                        Needed High Court Will probate petition required
                       </td>
                     </tr>
                   </tbody>
@@ -772,12 +772,12 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Indore Sub-Registrar Offices: SRO Zone Directory
+                  4. Indore SRO Offices: SRO Zone Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Indore district is served by multiple Sub-Registrar Offices operating under the MP Shop Tax and Registration
-                  Department. All offices operate on the MP Sampada 2.0 digital registration system. Use our directory to identify
-                  your local registration zone:
+                  Indore district is served by multiple SRO Offices operating under the MP Shop Tax and Filing
+                  Office. All offices operate on the MP Sampada 2.0 digital filing system. Use our directory to identify
+                  your local filing zone:
                 </p>
               </div>
 
@@ -874,7 +874,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Indore Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Vijay Nagar, Palasia, Sarafa, or Rau</strong>? From shop jewelry showrooms in Sarafa and textile establishments in MT Cloth Market to high-end villas on Bypass Road and modern high-rises in Vijay Nagar, our senior lawyers provide tailored Will drafting, MP Sampada 2.0 slot booking, and Sub-Registrar accompaniment across Indore:
+                  Looking for legally checked <strong>Will drafting services in Vijay Nagar, Palasia, Sarafa, or Rau</strong>? From shop jewelry showrooms in Sarafa and textile establishments in MT Cloth Market to high-end villas on Bypass Road and modern high-rises in Vijay Nagar, our senior lawyers provide tailored Will drafting, MP Sampada 2.0 slot booking, and SRO accompaniment across Indore:
                 </p>
               </div>
 
@@ -904,7 +904,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Providing specialized <strong>Will drafting services in Vijay Nagar</strong>, Scheme 54, and Scheme 78 for IDA leasehold plots, freehold conversions, multi-storey penthouses, demat equity portfolios, and succession of private clinical practices and consulting firms.
+                      Providing specialized <strong>Will drafting services in Vijay Nagar</strong>, Scheme 54, and Scheme 78 for IDA leasehold plots, freehold conversions, multi-storey penthouses, demat equity portfolios, and estate of private clinical practices and consulting firms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -957,7 +957,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Palasia</strong>, Manoramaganj, and South Tukoganj for Indore&apos;s oldest industrialist and mercantile families. Our senior legal team assists with complex multi-crore family bungalows, shop showrooms along AB Road, family trusts, private company shareholdings, and Section 31 home visits for elderly testators.
+                      Expert <strong>Will drafting services in Palasia</strong>, Manoramaganj, and South Tukoganj for Indore&apos;s oldest industrialist and mercantile families. Our senior legal team assists with complex multi-crore family bungalows, shop showrooms along AB Road, family trusts, private company shareholdings, and Section 31 home visits for elderly Will makers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -966,7 +966,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Moti Bungalow, Near Collectorate (SRO 1)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doctor mental fitness certification, commissioner doorstep booking, and IMC municipal tax name change support.
+                        Doctor mental fitness certification, commissioner doorstep booking, and IMC city tax name change support.
                       </p>
                     </div>
                   </div>
@@ -1019,7 +1019,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Moti Bungalow (SRO 1) &amp; Kila Maidan (SRO 2)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HUF business succession clauses, partner dissolution safeguards, and fight-prevention arbitration terms.
+                        HUF business estate clauses, partner dissolution safeguards, and fight-prevention arbitration terms.
                       </p>
                     </div>
                   </div>
@@ -1125,7 +1125,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Revenue Zonal Complex, Near Bicholi Square (SRO 3)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Bypass home township registrations, joint ownership wills, and farm land succession advisory.
+                        Bypass home township registrations, joint ownership wills, and farm land estate advisory.
                       </p>
                     </div>
                   </div>
@@ -1150,7 +1150,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5 text-[#C65378]" />
-                        Industrial &amp; South Suburban
+                        Plant &amp; South Suburban
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Mhow &amp; Sanwer
@@ -1164,12 +1164,12 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Rau &amp; Silicon City</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Rajendra Nagar</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pithampur Industrial Units</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pithampur Plant Units</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sanwer Road MSME</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Rau</strong>, Rajendra Nagar, Silicon City, and the Mhow–Pithampur industrial belt. We address factory leaseholds, industrial plot transfers under MPIDC rules, shop machinery, MSME family succession, and home homeowner protection.
+                      Custom <strong>Will drafting services in Rau</strong>, Rajendra Nagar, Silicon City, and the Mhow–Pithampur plant belt. We address factory leaseholds, plant plot transfers under MPIDC rules, shop machinery, MSME family estate, and home homeowner protection.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1178,7 +1178,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Mhow Tehsil Complex &amp; Sanwer SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        MPIDC industrial plot wills, shop partnership transitions, and MPLRC farm succession.
+                        MPIDC plant plot wills, shop partnership transitions, and MPLRC farm estate.
                       </p>
                     </div>
                   </div>
@@ -1191,7 +1191,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Rau"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1213,11 +1213,11 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration on MP Sampada 2.0
+                  6. Step-by-Step Will Filing on MP Sampada 2.0
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Indore is signed digitally through the Madhya Pradesh Shop Tax and Registration
-                  Department system (MP Sampada 2.0). Here is the verified 5-step registration protocol:
+                  Registering a Will in Indore is signed digitally through the Madhya Pradesh Shop Tax and Filing
+                  Office system (MP Sampada 2.0). Here is the checked 5-step filing protocol:
                 </p>
               </div>
 
@@ -1251,7 +1251,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the drafted Will on plain white A4 paper. The Will maker and two adult witnesses sign each page together.
-                      Witnesses must not be heirs receiving property under the Will, preserving testamentary independence.
+                      Witnesses must not be heirs receiving asset under the Will, preserving Will independence.
                     </p>
                   </div>
                 </div>
@@ -1283,8 +1283,8 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       Biometric SRO Check &amp; Photo Capture
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar counter at your scheduled time with original Aadhaar cards, PAN cards, and witnesses.
-                      The Sub-Registrar conducts biometric fingerprint scanning, live digital photo capture, and personal inquiry
+                      Visit the SRO counter at your scheduled time with original Aadhaar cards, PAN cards, and witnesses.
+                      The SRO conducts biometric fingerprint scanning, live digital photo capture, and personal inquiry
                       regarding free consent.
                     </p>
                   </div>
@@ -1300,8 +1300,8 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       Official Book III Endorsement &amp; Certified Copy Download
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Sub-Registrar endorses the Will in Book III (Register of Wills). The original registered document
-                      with government seal and unique registration number is handed back to the Will maker, and a digitally signed
+                      The SRO endorses the Will in Book III (Register of Wills). The original filed paper
+                      with government seal and unique filing number is handed back to the Will maker, and a digitally signed
                       copy is permanently archived on MP Sampada 2.0.
                     </p>
                   </div>
@@ -1323,7 +1323,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 43 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Registration in Indore
+                  7. Section 31 Doorstep Filing in Indore
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden people, or hospital patients in Indore who cannot physically endure long waits
@@ -1338,17 +1338,17 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-extrabold">
-                      Section 31 of the Registration Act, 1908
+                      Section 31 of the Filing Act, 1908
                     </h3>
                     <p className="text-xs text-slate-300">
-                      Special Commissioner Home Visit for Senior Citizens &amp; Medically Infirm Testators
+                      Special Commissioner Home Visit for Senior Citizens &amp; Medically Infirm Will makers
                     </p>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
                   Under Section 31, an form can be submitted to the District Registrar along with a medical fitness paper
-                  from a registered MBBS practitioner. Upon approval, an official Sub-Registrar commissioner visits the Will maker&apos;s
+                  from a filed MBBS practitioner. Upon approval, an official SRO commissioner visits the Will maker&apos;s
                   residence or hospital room in Palasia, Manoramaganj, Saket, or Vijay Nagar. Biometrics, photographs, and signatures
                   are collected at your doorstep, making sure 100% legal validity without discomfort.
                 </p>
@@ -1356,10 +1356,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
                   <div className="bg-white/10 rounded-xl p-3 border border-white/10">
                     <span className="font-bold text-rose-300 block mb-1">
-                      1. Medical Certificate
+                      1. Medical Paper
                     </span>
                     <span className="text-slate-300">
-                      MBBS doctor certifies testamentary soundness of mind.
+                      MBBS doctor certifies Will soundness of mind.
                     </span>
                   </div>
                   <div className="bg-white/10 rounded-xl p-3 border border-white/10">
@@ -1375,7 +1375,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       3. Doorstep Signing
                     </span>
                     <span className="text-slate-300">
-                      Official commissioner completes Book III registration at home.
+                      Official commissioner completes Book III filing at home.
                     </span>
                   </div>
                 </div>
@@ -1396,17 +1396,17 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 44 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Indore Sub-Registrar
+                  8. Papers Checklist for Indore SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ensure you have all needed documents ready prior to your MP Sampada appointment at the Indore SRO office:
+                  Ensure you have all needed papers ready prior to your MP Sampada appointment at the Indore SRO office:
                 </p>
               </div>
 
               {/* PROGRESS BAR */}
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                 <div className="flex justify-between items-center text-xs font-bold">
-                  <span className="text-slate-700">Required Documents Ready:</span>
+                  <span className="text-slate-700">Required Papers Ready:</span>
                   <span className="text-[#C65378]">
                     {checkedCount} of {checklist.length} Completed
                   </span>
@@ -1467,10 +1467,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Indore Asset Succession: IDA Plots &amp; Businesses
+                  9. Indore Asset Estate: IDA Plots &amp; Businesses
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Indore presents unique real estate, shop, and farm asset structures. Each property category requires
+                  Indore presents unique real estate, shop, and farm asset structures. Each asset category requires
                   specialized legal treatment in your Will:
                 </p>
               </div>
@@ -1481,20 +1481,20 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     1. IDA Leasehold Plots &amp; Freehold Conversion
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Indore Development Authority (IDA) plots in Scheme 54, Scheme 78, Scheme 114, and Scheme 140 are governed by lease deeds.
-                    Upon the Will maker&apos;s demise, IDA requires a registered Will, death paper, indemnity bond, and public notice
+                    Indore Development Office (IDA) plots in Scheme 54, Scheme 78, Scheme 114, and Scheme 140 are governed by lease deeds.
+                    Upon the Will maker&apos;s demise, IDA requires a filed Will, death paper, indemnity bond, and public notice
                     in local newspapers to transfer the leasehold rights or process freehold conversion without civil court fights.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                   <h3 className="font-extrabold text-base text-slate-900">
-                    2. IMC Apartments &amp; Municipal Property Tax
+                    2. IMC Apartments &amp; City Asset Tax
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     For freehold builder floors and multi-storey apartments across Vijay Nagar, Saket, and South Tukoganj,
-                    Indore Municipal Corporation (IMC) mandates property tax name change (Sampattikar Namantaran).
-                    A registered Will speeds up the transfer of municipal records, building permissions, and water meter connections.
+                    Indore City City Board (IMC) mandates asset tax name change (Sampattikar Namantaran).
+                    A filed Will speeds up the transfer of city records, building permissions, and water meter connections.
                   </p>
                 </div>
 
@@ -1505,7 +1505,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Wholesale trading shops in Maharaja Tukojirao Cloth Market, bullion showrooms in Sarafa Bazaar,
                     and wholesale commodity establishments in Siyaganj often possess high shop goodwill and tenancy rights (pagdi).
-                    Our Wills provide bespoke partnership succession terms and protect inventory assets from family fights.
+                    Our Wills provide bespoke partnership estate terms and protect inventory assets from family fights.
                   </p>
                 </div>
 
@@ -1515,8 +1515,8 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Farm holdings in Sanwer, Depalpur, and Rau are subject to the Madhya Pradesh Land Revenue Code, 1959.
-                    Testators with Bhumiswami rights can bequeath specific survey numbers. The heir executes revenue name change
-                    (Fauti Namantaran) before the Tehsildar with the registered Will and Khasra-Khatoni land records.
+                    Will makers with Bhumiswami rights can bequeath specific survey numbers. The heir executes revenue name change
+                    (Fauti Namantaran) before the Tehsildar with the filed Will and Khasra-Khatoni land records.
                   </p>
                 </div>
               </div>
@@ -1539,7 +1539,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   10. Official MP Government Fees &amp; Stamp Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  There is a common misconception that registering a Will in Madhya Pradesh involves heavy property price check taxes.
+                  There is a common misconception that registering a Will in Madhya Pradesh involves heavy asset price check taxes.
                   Under the Indian Stamp Act, 1899 (as applicable to Madhya Pradesh), Wills are 100% exempt from stamp duty:
                 </p>
               </div>
@@ -1551,14 +1551,14 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <tr>
                       <th className="p-3 sm:p-4">Instrument</th>
                       <th className="p-3 sm:p-4">MP Stamp Duty</th>
-                      <th className="p-3 sm:p-4">Registration Fee</th>
+                      <th className="p-3 sm:p-4">Filing Fee</th>
                       <th className="p-3 sm:p-4">Revocable During Lifetime?</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200/70">
                     <tr className="bg-emerald-50/40">
                       <td className="p-3 sm:p-4 font-bold text-emerald-950">
-                        Registered Will (MP Sampada 2.0)
+                        Filed Will (MP Sampada 2.0)
                       </td>
                       <td className="p-3 sm:p-4 text-emerald-700 font-extrabold">
                         ₹0 (100% Exempt)
@@ -1575,10 +1575,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         Gift Deed to Family Member
                       </td>
                       <td className="p-3 sm:p-4 text-rose-700 font-bold">
-                        2.5% to 5% of property market value
+                        2.5% to 5% of asset market value
                       </td>
                       <td className="p-3 sm:p-4">
-                        3% of property market value
+                        3% of asset market value
                       </td>
                       <td className="p-3 sm:p-4 text-rose-700 font-bold">
                         Irrevocable upon signing
@@ -1589,7 +1589,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                         Sale Deed / Transfer Deed
                       </td>
                       <td className="p-3 sm:p-4 text-rose-700 font-bold">
-                        7.5% to 9.5% (Stamp + Municipal Cess)
+                        7.5% to 9.5% (Stamp + City Cess)
                       </td>
                       <td className="p-3 sm:p-4">
                         3% of guideline value
@@ -1604,9 +1604,9 @@ export default function IndoreLocationClient({ faqs }: Props) {
 
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-xs text-slate-600 leading-relaxed">
                 <span className="font-bold text-slate-900 block mb-1">
-                  Important Note for Indore Property Owners:
+                  Important Note for Indore Asset Owners:
                 </span>
-                Unlike a Gift Deed which attracts lakhs of rupees in stamp duty and municipal cess, a Will allows you to retain
+                Unlike a Gift Deed which attracts lakhs of rupees in stamp duty and city cess, a Will allows you to retain
                 complete ownership, rental income, and control of your Indore assets throughout your lifetime with zero upfront transfer tax.
               </div>
             </section>
@@ -1628,7 +1628,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   11. Transparent Indore Will Packages &amp; Legal Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the level of legal support tailored to your family&apos;s asset structure and business succession needs in Indore:
+                  Select the level of legal support tailored to your family&apos;s asset structure and business estate needs in Indore:
                 </p>
               </div>
 
@@ -1646,12 +1646,12 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual estates comprising bank accounts, mutual funds, demat equity, and home flats.
+                      Ideal for single estates comprising bank accounts, mutual funds, demat equity, and home flats.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Indore Will drafting platform</span>
+                        <span>Free Indore Will drafting platform</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1688,7 +1688,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate lawyer review for IDA plots, Sarafa jewelry assets, MT Cloth Market shops, and HUF business succession.
+                      Senior estate lawyer review for IDA plots, Sarafa jewelry assets, MT Cloth Market shops, and HUF business estate.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1724,7 +1724,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                       End-to-End
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
@@ -1778,7 +1778,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Indore Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key questions regarding Will drafting, MP Sampada registration, IDA plot inheritance, and probate in Indore:
+                  Clear answers to key questions regarding Will drafting, MP Sampada filing, IDA plot estate, and probate in Indore:
                 </p>
               </div>
 
@@ -1831,7 +1831,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                   13. Legal References &amp; MP Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  All WillDrafting protocols comply strictly with central statutes, Madhya Pradesh state legislation, and official registration systems:
+                  All WillDrafting protocols comply strictly with central statutes, Madhya Pradesh state legislation, and official filing systems:
                 </p>
               </div>
 
@@ -1847,10 +1847,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1859,7 +1859,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     MP Sampada 2.0 Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official MP Revenue registration portal: <code>sampada.mpigr.gov.in</code>.
+                    Official MP Revenue filing portal: <code>sampada.mpigr.gov.in</code>.
                   </p>
                 </div>
 
@@ -1868,7 +1868,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     MP Land Revenue Code 1959
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 165 and 168 governing Bhumiswami farm succession.
+                    Sections 165 and 168 governing Bhumiswami farm estate.
                   </p>
                 </div>
               </div>
@@ -1880,7 +1880,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 Protect Your Indore Assets &amp; Family Legacy Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your IDA plots, Sarafa jewelry assets, or Pithampur shop holdings to uncertain succession battles.
+                Do not leave your IDA plots, Sarafa jewelry assets, or Pithampur shop holdings to uncertain estate battles.
                 Draft a legally binding Will online in minutes or consult our senior estate planning lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1900,7 +1900,29 @@ export default function IndoreLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1919,7 +1941,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Indore Will Drafting &amp; Asset Succession Architecture
+                Visual Blueprint: Indore Will Drafting &amp; Asset Estate Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

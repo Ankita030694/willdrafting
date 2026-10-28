@@ -130,7 +130,7 @@ export default function CaveatAgainstProbatePage() {
         url: canonicalUrl,
         fileFormat: "text/html",
         description:
-          "Statutory legal template pack containing Section 284 Indian Succession Act Schedule V probate caveat form, supporting affidavit format, and.",
+          "Legal legal template pack containing Section 284 Indian Succession Act Schedule V probate caveat form, supporting sworn note format, and.",
         image: imageUrl,
         inLanguage: "en-IN",
         publisher: {
@@ -148,7 +148,7 @@ export default function CaveatAgainstProbatePage() {
             name: "What is a caveat against probate under Section 284 of the Indian Succession Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A probate caveat is a formal statutory notice lodged in the High Court or District Court under Section 284 and Schedule V of the Indian Succession Act, 1925. It directs the court not to grant probate or letters of administration without prior written notice to the caveator.",
+              text: "A probate caveat is a formal legal notice lodged in the High Court or District Court under Section 284 and Schedule V of the Indian Succession Act, 1925. It directs the court not to grant probate or letters of care without prior written notice to the caveator.",
             },
           },
           {
@@ -156,7 +156,7 @@ export default function CaveatAgainstProbatePage() {
             name: "How does a Section 284 ISA caveat differ from a Section 148A CPC caveat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Section 148A CPC caveat applies to general civil suits and automatically lapses after 90 days. In contrast, a probate caveat under Section 284 ISA is governed by testamentary rules, stays active until petition notice or renewable periods, and requires a mandatory supporting affidavit within 8 to 14 days once citation is served.",
+              text: "A Section 148A CPC caveat applies to general civil suits and automatically lapses after 90 days. In contrast, a probate caveat under Section 284 ISA is governed by Will rules, stays active until petition notice or renewable periods, and requires a needed supporting sworn note within 8 to 14 days once citation is served.",
             },
           },
           {
@@ -164,7 +164,7 @@ export default function CaveatAgainstProbatePage() {
             name: "What is the strict time limit to file the Affidavit in Support of Caveat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Once the propounder serves citation of the probate petition on you, you must file an Affidavit in Support of Caveat within the period set by the court's rules: 8 days in the Bombay High Court (Rule 402) and 14 days in the Calcutta and Delhi High Courts. Failing to file within this window results in the caveat being discharged.",
+              text: "Once the propounder serves citation of the probate petition on you, you must file an Sworn Note in Support of Caveat within the period set by the court's rules: 8 days in the Bombay High Court (Rule 402) and 14 days in the Calcutta and Delhi High Courts. Failing to file within this window results in the caveat being discharged.",
             },
           },
           {
@@ -172,7 +172,7 @@ export default function CaveatAgainstProbatePage() {
             name: "What constitutes a caveatable interest in probate proceedings?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Supreme Court rulings in Elizabeth Antony and Krishna Kumar Birla v. Rajendra Singh Lodha, a caveatable interest exists when a person's proprietary or succession rights would be prejudicially affected by probate. Any Class I or Class II legal heir who would inherit on intestacy has an unquestionable caveatable interest.",
+              text: "Under Supreme Court rulings in Elizabeth Antony and Krishna Kumar Birla v. Rajendra Singh Lodha, a caveatable interest exists when a person's proprietary or estate rights would be prejudicially affected by probate. Any Class I or Class II legal heir who would inherit on intestacy has an unquestionable caveatable interest.",
             },
           },
           {
@@ -180,7 +180,7 @@ export default function CaveatAgainstProbatePage() {
             name: "Can someone claiming independent ownership file a probate caveat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. A probate court does not determine title or ownership of property; it only decides whether the Will is genuine and legally valid. A third party claiming that the testator did not own the property cannot lodge a probate caveat. They must file a regular civil title suit under the Code of Civil Procedure.",
+              text: "No. A probate court does not determine title or ownership of asset; it only decides whether the Will is genuine and legally valid. A third party claiming that the Will maker did not own the asset cannot lodge a probate caveat. They must file a regular civil title suit under the Code of Civil Step.",
             },
           },
           {
@@ -188,7 +188,7 @@ export default function CaveatAgainstProbatePage() {
             name: "Can I lodge a caveat before my sibling files a probate petition in court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Section 284(4) of the Indian Succession Act allows a caveat to be entered at any time before probate or letters of administration are granted. You can lodge an anticipatory caveat in the relevant High Court or District Court as soon as you suspect a forged or coerced Will exists.",
+              text: "Yes. Section 284(4) of the Indian Succession Act allows a caveat to be entered at any time before probate or letters of care are granted. You can lodge an anticipatory caveat in the relevant High Court or District Court as soon as you suspect a forged or coerced Will exists.",
             },
           },
           {
@@ -196,7 +196,7 @@ export default function CaveatAgainstProbatePage() {
             name: "What happens to the probate petition after an affidavit in support is filed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 295 of the Indian Succession Act, 1925, as soon as a caveat with a valid supporting affidavit is filed, the uncontested petition converts into a Contentious Testamentary Suit. The petition is renumbered as a suit where the propounder becomes the Plaintiff and the caveator becomes the Defendant.",
+              text: "Under Section 295 of the Indian Succession Act, 1925, as soon as a caveat with a valid supporting sworn note is filed, the uncontested petition converts into a Contentious Will Suit. The petition is renumbered as a suit where the propounder becomes the Plaintiff and the caveator becomes the Defendant.",
             },
           },
           {
@@ -204,7 +204,7 @@ export default function CaveatAgainstProbatePage() {
             name: "What are the common grounds raised in an Affidavit in Support of Caveat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Common legal grounds include: (1) suspicious circumstances surrounding execution, (2) lack of sound disposing mind or cognitive capacity of the testator, (3) active coercion or undue influence by the propounder, (4) forged signature or fabricated execution, and (5) existence of a valid subsequent Will revoking the earlier document.",
+              text: "Common legal grounds include: (1) suspicious circumstances surrounding signing, (2) lack of sound disposing mind or cognitive capacity of the Will maker, (3) active coercion or undue influence by the propounder, (4) forged signature or fabricated signing, and (5) existence of a valid subsequent Will revoking the earlier paper.",
             },
           },
         ],

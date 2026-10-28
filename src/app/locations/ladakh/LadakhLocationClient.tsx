@@ -126,14 +126,14 @@ const LADAKH_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard durable white A4 sheets. Under UT Ladakh rules, non-judicial stamp paper is not required.",
     checked: true,
   },
   {
     id: "item-2",
     label: "Original Aadhaar Card & PAN of Will maker",
-    detail: "Essential for official identity check, digital biometric validation, and photo capture before the Sub-Registrar.",
+    detail: "Essential for official identity check, digital biometric validation, and photo capture before the SRO.",
     checked: true,
   },
   {
@@ -145,7 +145,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Advised for testators aged 60+. Issued by SNM Hospital Leh, District Hospital Kargil, or a licensed practitioner.",
+    detail: "Advised for Will makers aged 60+. Issued by SNM Hospital Leh, District Hospital Kargil, or a licensed practitioner.",
     checked: false,
   },
   {
@@ -156,14 +156,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "LAHDC Plot Allotment & Municipal Assessment Papers",
-    detail: "Council lease deeds, municipal tax receipts, or village panchayat check papers for town and rural dwellings.",
+    label: "LAHDC Plot Allotment & City Assessment Papers",
+    detail: "Council lease deeds, city tax receipts, or village panchayat check papers for town and rural dwellings.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Hotel & Homestay Tourism Registration Licenses",
-    detail: "Tourism department registration copies, partnership deeds, and shop bank account details for hospitality units.",
+    label: "Hotel & Homestay Tourism Filing Licenses",
+    detail: "Tourism office filing copies, partnership deeds, and shop bank account details for hospitality units.",
     checked: false,
   },
 ];
@@ -256,7 +256,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 53 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Ladakh: Property Succession
+                Will Drafting Services in Ladakh: Asset Estate
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -316,7 +316,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Ladakh Succession &amp; Revenue Blueprint
+                  Ladakh Estate &amp; Revenue Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -354,14 +354,14 @@ export default function LadakhLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Testamentary Exemption
+                Will Exemption
               </span>
             </div>
 
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 High Court Jurisprudence
@@ -497,16 +497,16 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>LADAKH ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Ladakh
+                  Key Highlights: Will Making &amp; Filing in Ladakh
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration before the Sub-Registrar establishes indisputable authenticity against family fights.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. While an plain Will signed before two witnesses is valid, official Book III filing before the SRO establishes indisputable authenticity against family fights.
                     </p>
                   </div>
 
@@ -516,7 +516,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ladakh lies outside presidency towns. Under Section 213 of the Indian Succession Act, court probate is non-needed in Ladakh. Revenue offices and banks can transfer titles directly upon presentation of a registered Will.
+                      Ladakh lies outside presidency towns. Under Section 213 of the Indian Succession Act, court probate is non-needed in Ladakh. Revenue offices and banks can transfer titles directly upon presentation of a filed Will.
                     </p>
                   </div>
 
@@ -526,7 +526,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty on Wills</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills do not attract ad valorem stamp duty across Ladakh. You only pay nominal registration and computerized document scanning fees at the designated Sub-Registrar or Tehsildar offices.
+                      Will Wills do not attract ad valorem stamp duty across Ladakh. You only pay nominal filing and computerized paper scanning fees at the designated SRO or Tehsildar offices.
                     </p>
                   </div>
 
@@ -536,7 +536,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       <span>LAHDC &amp; Land Revenue Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites revenue name change (Intiqal) with the local Tehsildar and Patwari, updating Jamabandi and Khasra Girdawari records for farm lands, orchards, and town plots in Leh and Kargil.
+                      A filed Will expedites revenue name change (Intiqal) with the local Tehsildar and Patwari, updating Jamabandi and Khasra Girdawari records for farm lands, orchards, and town plots in Leh and Kargil.
                     </p>
                   </div>
                 </div>
@@ -554,7 +554,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Ladakh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning across the Union Territory of Ladakh is governed by the <strong>Indian Succession Act, 1925</strong>, the central <strong>Registration Act, 1908</strong>, and local revenue regulations under the <strong>Ladakh Autonomous Hill Development Council Acts</strong>. Any adult of sound mind can legally bequeath self-acquired assets, shop hotels, homestays, and farm holdings.
+                  Estate planning across the Union Territory of Ladakh is governed by the <strong>Indian Succession Act, 1925</strong>, the central <strong>Filing Act, 1908</strong>, and local revenue regulations under the <strong>Ladakh Autonomous Hill Development Council Acts</strong>. Any adult of sound mind can legally bequeath self-acquired assets, shop hotels, homestays, and farm holdings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ladakh presents unique land governance dynamics. Families often own shop guest houses in Leh town, terraced barley fields and apricot orchards along the Indus or Suru rivers, and livestock or family homesteads in high-altitude valleys. A clear, customized Will prevents multi-year revenue stalemates, protects tribal land rights, and guarantees peace of mind for future generations.
@@ -568,7 +568,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound Will mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -612,13 +612,13 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Ladakh?
+                  2. Is Will Filing Needed in Ladakh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will Will is strictly <strong>a choice</strong>. An plain Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rising shop real estate values across Leh town, Choglamsar, and tourist centers in Nubra, senior lawyers strongly advise official registration. Storing your Will in Book III government custody at the SRO office prevents fraudulent substitution and guarantees smooth revenue name change.
+                  However, with rising shop real estate values across Leh town, Choglamsar, and tourist centers in Nubra, senior lawyers strongly advise official filing. Storing your Will in Book III government custody at the SRO office prevents fraudulent substitution and guarantees smooth revenue name change.
                 </p>
               </div>
 
@@ -627,9 +627,9 @@ export default function LadakhLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Ladakh SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Ladakh SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -651,7 +651,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">LAHDC Plot Transfer</td>
                       <td className="p-4 bg-rose-50/20">Streamlined check against council records</td>
-                      <td className="p-4 bg-slate-50/20">Heirs often directed to civil courts for succession papers</td>
+                      <td className="p-4 bg-slate-50/20">Heirs often directed to civil courts for estate papers</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Hotel / Homestay Licenses</td>
@@ -659,7 +659,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Submissions delayed by office objections from co-heirs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
+                      <td className="p-4 font-semibold">Government Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal fee (₹100 to ₹300)</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -679,7 +679,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   3. Ladakh Probate Law: Exemption Under High Court Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Leh and Kargil is whether court probate from the High Court is needed before heirs can take possession of inherited real estate. The established legal answer is <strong>no</strong>.
+                  A common question among asset owners in Leh and Kargil is whether court probate from the High Court is needed before heirs can take possession of inherited real estate. The established legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated inside the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial area of Ladakh is a non-presidency region. The High Court of Jammu &amp; Kashmir and Ladakh has confirmed that probate is strictly non-needed in Ladakh.
@@ -695,7 +695,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     High Court of J&amp;K and Ladakh Rulings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Judicial precedents governing the Union Territory hold that probate is optional for Buddhist, Hindu, Sikh, Jain, and Christian testators in Ladakh. A registered Will acts as definitive testamentary proof for revenue name change, bank account claims, and shop tourism license transfers.
+                    Judicial precedents governing the Union Territory hold that probate is a choice for Buddhist, Hindu, Sikh, Jain, and Christian Will makers in Ladakh. A filed Will acts as definitive Will proof for revenue name change, bank account claims, and shop tourism license transfers.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -715,7 +715,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Strong judicial decree against any collateral inheritance fights</span>
+                    <span>Strong judicial decree against any collateral estate fights</span>
                   </div>
                 </div>
               </div>
@@ -729,10 +729,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Ladakh Sub-Registrar Offices: Leh &amp; Kargil Directory
+                  4. Ladakh SRO Offices: Leh &amp; Kargil Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Document registration across the Union Territory of Ladakh is conducted under the Registration Act, 1908 by the designated Sub-Registrars and Tehsildars under the Revenue Department. Under Section 32 of the Act, your Will can be registered at the SRO office having area over your residence or where any portion of your land and flats is situated:
+                  Paper filing across the Union Territory of Ladakh is conducted under the Filing Act, 1908 by the designated Sub-Registrars and Tehsildars under the Revenue Office. Under Section 32 of the Act, your Will can be filed at the SRO office having area over your residence or where any portion of your land and flats is situated:
                 </p>
               </div>
 
@@ -781,7 +781,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Ladakh Registration District
+                        Ladakh Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -809,7 +809,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-200/70 text-xs">
                     <span className="text-slate-500">
-                      Office Authority: <strong>Revenue Department, UT Administration of Ladakh</strong>
+                      Office Office: <strong>Revenue Office, UT Care of Ladakh</strong>
                     </span>
                     <a
                       href="/contact"
@@ -834,7 +834,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   5. Regional Cities: District-Wise Will Drafting in Ladakh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Ladakh span shop hotels, guest houses, and home plots in Leh town and Choglamsar, office assets in Kargil and Baroo, tourism homestays in Nubra Valley, high-altitude family land in Zanskar, and fruit orchards in Sham and Suru valleys. Our estate lawyers deliver customized legal drafting and Sub-Registrar accompaniment across all regional hubs:
+                  Estate assets across Ladakh span shop hotels, guest houses, and home plots in Leh town and Choglamsar, office assets in Kargil and Baroo, tourism homestays in Nubra Valley, high-altitude family land in Zanskar, and fruit orchards in Sham and Suru valleys. Our estate lawyers deliver customized legal drafting and SRO accompaniment across all regional hubs:
                 </p>
               </div>
 
@@ -864,7 +864,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Leh</strong> and Choglamsar for premium hotels, boutique heritage resorts, shop market complexes, and home plots. Formulates explicit business succession protocols, minor guardianship, and LAHDC municipal tax name change instructions.
+                      Specialized <strong>Will drafting services in Leh</strong> and Choglamsar for premium hotels, boutique heritage resorts, shop market complexes, and home plots. Formulates explicit business estate protocols, minor child care, and LAHDC city tax name change instructions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -873,7 +873,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Polo Ground, Leh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Lawyer physical attendance, Book III registration, and Section 31 doorstep signing for elderly testators.
+                        Lawyer physical attendance, Book III filing, and Section 31 doorstep signing for elderly Will makers.
                       </p>
                     </div>
                   </div>
@@ -917,7 +917,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Kargil</strong> and Baroo addressing shop shops, home complexes, and riverbank assets. Structures testamentary allocations in strict harmony with Muslim Personal Law (Shariat) and LAHDC Kargil revenue steps.
+                      Customized <strong>Will drafting services in Kargil</strong> and Baroo addressing shop shops, home complexes, and riverbank assets. Structures Will allocations in strict harmony with Muslim Personal Law (Shariat) and LAHDC Kargil revenue steps.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -926,7 +926,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Baroo Office Complex, Kargil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Registration scheduling with Tehsildar Kargil, witness check, and Intiqal name change papers.
+                        Filing scheduling with Tehsildar Kargil, witness check, and Intiqal name change papers.
                       </p>
                     </div>
                   </div>
@@ -979,7 +979,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Complex, Diskit, Nubra</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Sub-divisional registration coordination, tourism permit transfer planning, and local revenue record protection.
+                        Sub-divisional filing coordination, tourism permit transfer planning, and local revenue record protection.
                       </p>
                     </div>
                   </div>
@@ -1032,7 +1032,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Drass</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Tehsildar attestation support, Shariat succession compliance, and village revenue record alignment.
+                        Tehsildar witness signing support, Shariat estate compliance, and village revenue record alignment.
                       </p>
                     </div>
                   </div>
@@ -1076,7 +1076,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting in Zanskar</strong> protecting family terraced lands, multi-generational family homes, and local eco-tourism guest houses. Formalizes customary succession arrangements into codified, legally enforceable instruments.
+                      Authoritative <strong>Will drafting in Zanskar</strong> protecting family terraced lands, multi-generational family homes, and local eco-tourism guest houses. Formalizes customary estate arrangements into codified, legally enforceable instruments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1085,7 +1085,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Complex, Padum, Zanskar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Sub-divisional registration, remote village coordination, and customary law harmonization.
+                        Sub-divisional filing, remote village coordination, and customary law harmonization.
                       </p>
                     </div>
                   </div>
@@ -1138,7 +1138,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Sankoo</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jamabandi check, Tehsildar Book III registration, and family consensus papers.
+                        Jamabandi check, Tehsildar Book III filing, and family consensus papers.
                       </p>
                     </div>
                   </div>
@@ -1191,7 +1191,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Complex, Khaltsi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Orchard asset audit, Sub-Registrar appointment scheduling, and doorstep attestation for seniors.
+                        Orchard asset audit, SRO appointment scheduling, and doorstep witness signing for seniors.
                       </p>
                     </div>
                   </div>
@@ -1235,7 +1235,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Changthang</strong> for highland pasture settlements, Pangong Tso tourist resorts and camps, astronomical homestays in Hanle, and livestock holdings. Codifies tribal community asset succession in full compliance with LAHDC regulations.
+                      Specialized <strong>Will drafting in Changthang</strong> for highland pasture settlements, Pangong Tso tourist resorts and camps, astronomical homestays in Hanle, and livestock holdings. Codifies tribal community asset estate in full compliance with LAHDC regulations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1244,7 +1244,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Divisional Complex, Nyoma &amp; Tangtse</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Tribal land succession safeguards, Sub-Registrar signing, and tourism leasehold protection.
+                        Tribal land estate safeguards, SRO signing, and tourism leasehold protection.
                       </p>
                     </div>
                   </div>
@@ -1273,10 +1273,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to Registration in Ladakh
+                  6. Step-by-Step SOP: Drafting to Filing in Ladakh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Ladakh:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Ladakh:
                 </p>
               </div>
 
@@ -1315,7 +1315,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Attestation
+                      Valid Witness Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Print on durable A4 paper and sign each page in the physical presence of two independent non-heir witnesses.
@@ -1332,7 +1332,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       SRO Scheduling
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your registration appearance with the jurisdictional Sub-Registrar in Leh, Kargil, Nubra, or Zanskar.
+                      Schedule your filing appearance with the local SRO in Leh, Kargil, Nubra, or Zanskar.
                     </p>
                   </div>
                 </div>
@@ -1346,7 +1346,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       Biometrics &amp; Seal
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the SRO office with witnesses for verbal attestation, photo capture, and official Book III entry.
+                      Visit the SRO office with witnesses for verbal witness signing, photo capture, and official Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1361,23 +1361,23 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, ailing, or bedridden citizens residing in Leh, Choglamsar, Kargil, or remote valley villages, traveling to the SRO office in severe winter or difficult terrain can be challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal power to attend a private residence or hospital to register a Will.
+                  For elderly, ailing, or bedridden citizens residing in Leh, Choglamsar, Kargil, or remote valley villages, traveling to the SRO office in severe winter or difficult terrain can be challenging. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO holds legal power to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates Across Ladakh:
+                  How Doorstep SRO Filing Operates Across Ladakh:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling in high-altitude conditions.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling in high-altitude conditions.</span>
                     </div>
                   </div>
 
@@ -1385,7 +1385,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Petition</strong>
-                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission form before the jurisdictional Sub-Registrar or Tehsildar.</span>
+                      <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission form before the local SRO or Tehsildar.</span>
                     </div>
                   </div>
 
@@ -1401,7 +1401,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Check</strong>
-                      <span className="text-slate-600">The Sub-Registrar attends your residence with portable biometric check equipment and records the registered Will on site.</span>
+                      <span className="text-slate-600">The SRO attends your residence with portable biometric check equipment and records the filed Will on site.</span>
                     </div>
                   </div>
                 </div>
@@ -1416,10 +1416,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Ladakh Registration Offices
+                  8. Paper Checklist for Ladakh Filing Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before appearing before the Sub-Registrar. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before appearing before the SRO. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1464,10 +1464,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Ladakh Property Types: Family Land &amp; Shop Units
+                  9. Ladakh Asset Types: Family Land &amp; Shop Units
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Ladakh vary depending on the asset classification and regulatory authority:
+                  Estate steps in Ladakh vary depending on the asset classification and regulatory office:
                 </p>
               </div>
 
@@ -1480,7 +1480,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     Hotels, Resorts &amp; Homestays
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Shop tourism enterprises in Leh and Nubra involve land titles, building structures, tourism department registration permits, and operational bank accounts. The Will articulates operational management rights and ownership shares among successors.
+                    Shop tourism enterprises in Leh and Nubra involve land titles, building structures, tourism office filing permits, and operational bank accounts. The Will articulates operational management rights and ownership shares among successors.
                   </p>
                 </div>
 
@@ -1492,7 +1492,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     Barley Terraces &amp; Orchards
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farm land and fruit orchards in Sham and Suru valleys require careful drafting referencing Khasra and Jamabandi numbers. Heirs present certified copies of the registered Will to the Patwari for smooth Intiqal name change.
+                    Farm land and fruit orchards in Sham and Suru valleys require careful drafting referencing Khasra and Jamabandi numbers. Heirs present certified copies of the filed Will to the Patwari for smooth Intiqal name change.
                   </p>
                 </div>
 
@@ -1504,7 +1504,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     Town Home Holdings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For urban dwellings and council-allotted plots in Leh Housing Colony or Baroo Kargil, a registered Will ensures clean substitution on municipal assessment registers and cooperative records without costly civil court court fights.
+                    For urban dwellings and council-allotted plots in Leh Housing Colony or Baroo Kargil, a filed Will ensures clean substitution on city assessment registers and cooperative records without costly civil court court fights.
                   </p>
                 </div>
               </div>
@@ -1518,10 +1518,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Ladakh SRO Registration Fees &amp; Stamp Duty
+                  10. Official Ladakh SRO Filing Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale conveyances or gift deeds that attract percentage-based stamp duties, testamentary Wills are exempt from stamp duty. Official registration charges across Ladakh are purely nominal:
+                  Unlike shop sale conveyances or gift deeds that attract percentage-based stamp duties, Will Wills are exempt from stamp duty. Official filing charges across Ladakh are purely nominal:
                 </p>
               </div>
 
@@ -1531,24 +1531,24 @@ export default function LadakhLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">UT Ladakh Stamp Duty on Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt)</td>
-                      <td className="p-4">UT Administration of Ladakh</td>
+                      <td className="p-4">UT Care of Ladakh</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">Nominal fee (₹100 to ₹200)</td>
-                      <td className="p-4">Sub-Registrar / Tehsildar Treasury</td>
+                      <td className="p-4">SRO / Tehsildar Treasury</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Pasting Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹300</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1571,7 +1571,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Ladakh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Ladakh:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in Ladakh:
                 </p>
               </div>
 
@@ -1589,12 +1589,12 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with town dwellings, bank accounts, and movable assets.
+                      Ideal for single homeowners with town dwellings, bank accounts, and cash assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Ladakh Will creator</span>
+                        <span>Free Ladakh Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1667,13 +1667,13 @@ export default function LadakhLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Ladakh SRO office or home visit.
+                      End-to-end filing coordination across any Ladakh SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1715,7 +1715,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Ladakh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Ladakh:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset filing in Ladakh:
                 </p>
               </div>
 
@@ -1775,10 +1775,10 @@ export default function LadakhLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1827,7 +1827,29 @@ export default function LadakhLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1846,7 +1868,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Ladakh Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Ladakh Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1865,7 +1887,7 @@ export default function LadakhLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Ladakh SRO Registered &amp; LAHDC Revenue Records Compliant</span>
+              <span>Ladakh SRO Filed &amp; LAHDC Revenue Records Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

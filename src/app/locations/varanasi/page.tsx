@@ -148,7 +148,7 @@ export default function VaranasiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Varanasi: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation.",
+          "Draft a legally valid Will in Varanasi. Complete guidance on family asset estate, UP IGRSUP filing, and VDA asset name change.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -195,7 +195,7 @@ export default function VaranasiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Varanasi - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, ancestral property succession, and Sub-Registrar Office e-registration support across.",
+          "Professional Will drafting, lawyer check, family asset estate, and SRO office e-filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -264,14 +264,14 @@ export default function VaranasiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Varanasi Uttar Pradesh",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Varanasi.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Varanasi.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Varanasi assets including VDA plots, ancestral havelis, handloom businesses, bank accounts, and gold jewelry. Name your beneficiaries and an executor.",
+            text: "List your Varanasi assets including VDA plots, family havelis, handloom businesses, bank accounts, and gold jewelry. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -283,19 +283,19 @@ export default function VaranasiLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain white A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain white A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Varanasi SRO Appointment on IGRSUP",
-            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

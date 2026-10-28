@@ -149,30 +149,30 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be heirs receiving any property under the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
     detail: "Signed by an MBBS doctor. Confirms sound sound mind and protects against future undue influence claims.",
     checked: false,
   },
   {
     id: "item-5",
     label: "TNREGINET Online Appointment Token Slip",
-    detail: "Official token confirmation downloaded from tnreginet.gov.in after paying the nominal ₹100 registration fee.",
+    detail: "Official token confirmation downloaded from tnreginet.gov.in after paying the nominal ₹100 filing fee.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Property Chain Deeds & Patta Documents",
-    detail: "Copies of registered parent deeds, CCMC tax receipts, and Tamil Nilam Patta/Chitta passbooks for exact scheduling.",
+    label: "Asset Chain Deeds & Patta Papers",
+    detail: "Copies of filed parent deeds, CCMC tax receipts, and Tamil Nilam Patta/Chitta passbooks for exact scheduling.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Factory Partnership Deeds or Company Share Certificates",
+    label: "Factory Partnership Deeds or Company Share Papers",
     detail: "Required if bequeathing textile spinning mills, foundry equity, Kovai pump units, or shop machinery.",
     checked: false,
   },
@@ -277,7 +277,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect family textile mills, foundries, motor manufacturing units, and home assets across Coimbatore.
-                Get experienced lawyer drafting, TNREGINET SRO appointment booking, and Section 31 home visits for senior testators.
+                Get experienced lawyer drafting, TNREGINET SRO appointment booking, and Section 31 home visits for senior Will makers.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -365,7 +365,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rules
@@ -505,7 +505,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>COIMBATORE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Coimbatore
+                  Key Highlights: Will Making &amp; Filing in Coimbatore
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
@@ -514,14 +514,14 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Coimbatore lies outside the presidency town boundaries of Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly optional for local assets.
+                      Coimbatore lies outside the presidency town boundaries of Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly a choice for local assets.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Industrial Asset Succession</span>
+                      <span>Plant Asset Estate</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Coimbatore families hold substantial equity in textile spinning mills, foundries, and pump manufacturing firms. Wills protect uninterrupted management continuity.
@@ -534,7 +534,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       <span>Zero Tamil Nadu Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills attract ₹0 stamp duty in Tamil Nadu. Registering at Coimbatore SROs through TNREGINET costs only a nominal ₹100 registration fee plus scanning charges.
+                      Wills attract ₹0 stamp duty in Tamil Nadu. Registering at Coimbatore SROs through TNREGINET costs only a nominal ₹100 filing fee plus scanning charges.
                     </p>
                   </div>
 
@@ -544,7 +544,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       <span>Direct Patta &amp; CCMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables direct Patta transfer on the Tamil Nilam portal and fast-track name name change before the Coimbatore City Municipal Corporation (CCMC).
+                      A filed Will enables direct Patta transfer on the Tamil Nilam portal and fast-track name name change before the Coimbatore City City City Board (CCMC).
                     </p>
                   </div>
                 </div>
@@ -562,13 +562,13 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Coimbatore
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning in Coimbatore is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
-                  Any individual of sound mind who has reached 18 years of age can execute a Will to dispose of self-acquired home real estate, shop shop sheds, bank accounts, and demat shares.
+                  Estate planning in Coimbatore is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
+                  Any single of sound mind who has reached 18 years of age can execute a Will to dispose of self-acquired home real estate, shop shop sheds, bank accounts, and demat shares.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Coimbatore is celebrated as the textile and precision manufacturing powerhouse of South India.
                   A single family estate often spans textile spinning units in Sulur, engineering foundries in Ganapathy, pump assembly sheds in Kurichi, and prime home assets in RS Puram or Race Course.
-                  Drafting a precise Will ensures seamless operational succession without bitter split suits between heirs.
+                  Drafting a precise Will ensures seamless operational estate without bitter split suits between heirs.
                 </p>
               </div>
 
@@ -609,7 +609,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent Heirs</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -623,15 +623,15 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Coimbatore?
+                  2. Is Will Filing Needed in Coimbatore?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong> in Coimbatore and throughout Tamil Nadu.
-                  An unregistered Will signed on plain paper and signed before two independent witnesses is legally enforceable in court.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is entirely <strong>a choice</strong> in Coimbatore and throughout Tamil Nadu.
+                  An plain Will signed on plain paper and signed before two independent witnesses is legally enforceable in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registered Wills hold supreme proof value during municipal tax name change and revenue Patta transfer.
-                  Here is how registered Wills compare against unregistered instruments under Tamil Nadu steps:
+                  However, filed Wills hold supreme proof value during city tax name change and revenue Patta transfer.
+                  Here is how filed Wills compare against plain instruments under Tamil Nadu steps:
                 </p>
               </div>
 
@@ -640,15 +640,15 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (TNREGINET SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (TNREGINET SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Government Custody</td>
-                      <td className="p-4 bg-rose-50/20">Preserved permanently in Book III archives of the Registration Dept</td>
+                      <td className="p-4 bg-rose-50/20">Preserved permanently in Book III archives of the Filing Dept</td>
                       <td className="p-4 bg-slate-50/20">Held in private storage; vulnerable to loss, fire, or suppression</td>
                     </tr>
                     <tr>
@@ -658,17 +658,17 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Tamil Nilam Patta Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Fast-tracked approval with certified registered copy from Sub-Registrar</td>
-                      <td className="p-4 bg-slate-50/20">Tahsildar officers may demand family tree papers and no-objection affidavits</td>
+                      <td className="p-4 bg-rose-50/20">Fast-tracked approval with certified filed copy from SRO</td>
+                      <td className="p-4 bg-slate-50/20">Tahsildar officers may demand family tree papers and no-objection sworn notes</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">CCMC Tax Name Change</td>
-                      <td className="p-4 bg-rose-50/20">Accepted directly by Coimbatore Municipal Corporation revenue ward offices</td>
+                      <td className="p-4 bg-rose-50/20">Accepted directly by Coimbatore City City Board revenue ward offices</td>
                       <td className="p-4 bg-slate-50/20">Extended delays; revenue inspectors often ask for court declarations</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Tamil Nadu Govt Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 filing fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -687,19 +687,19 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   3. Coimbatore Probate Rules: Non-Presidency Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Many Coimbatore property owners mistakenly assume they must approach the Madras High Court for a probate grant before transferring real estate.
+                  Many Coimbatore asset owners mistakenly assume they must approach the Madras High Court for a probate grant before transferring real estate.
                   Under Indian succession jurisprudence, this assumption is completely unfounded.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only if a Will is signed within, or relates to land and flats situated in, the historical presidency towns of Mumbai, Kolkata, and Chennai.
-                  Because Coimbatore lies outside Chennai municipal limits, <strong>probate is not needed</strong> for Hindu, Sikh, Jain, and Buddhist testators.
+                  Because Coimbatore lies outside Chennai city limits, <strong>probate is not needed</strong> for Hindu, Sikh, Jain, and Buddhist Will makers.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    General Rule: Probate Strictly Optional
+                    General Rule: Probate Strictly A Choice
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Madras High Court Ruling on Non-Presidency Areas
@@ -709,7 +709,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables instant Patta and municipal name change with a registered Will</span>
+                    <span>Enables instant Patta and city name change with a filed Will</span>
                   </div>
                 </div>
 
@@ -721,7 +721,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     When Should You Consider Probate in Coimbatore?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Applying for probate or Letters of Administration before the Principal District Court in Coimbatore is advisable when distant branches of a family challenge the validity of industrial shares, or when out-of-state financial institutions demand a court seal.
+                    Applying for probate or Letters of Care before the Principal District Court in Coimbatore is advisable when distant branches of a family fight the validity of plant shares, or when out-of-state financial institutions demand a court seal.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -739,7 +739,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>KONGU INDUSTRIAL SUCCESSION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Industrial &amp; Textile Enterprise Asset Succession
+                  4. Plant &amp; Textile Enterprise Asset Estate
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Coimbatore&apos;s shop economy is built upon generational entrepreneurship.
@@ -768,7 +768,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     Foundry &amp; Pump Engineering Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Clarify ownership of industrial land sheds in SIDCO Kurichi or Ganapathy, precision CNC tooling machinery, and shop bank credit guarantees to avoid factory freeze.
+                    Clarify ownership of plant land sheds in SIDCO Kurichi or Ganapathy, precision CNC tooling machinery, and shop bank credit guarantees to avoid factory freeze.
                   </p>
                 </div>
 
@@ -794,11 +794,11 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Coimbatore Sub-Registrar Directory: SRO Hubs
+                  5. Coimbatore SRO Directory: SRO Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Coimbatore district is served by multiple Sub-Registrar Offices under the Tamil Nadu Shop Taxes and Registration Department.
-                  Under Section 32 of the Registration Act, your Will can be registered at the SRO where you reside or where your family assets are located.
+                  Coimbatore district is served by multiple SRO Offices under the Tamil Nadu Shop Taxes and Filing Office.
+                  Under Section 32 of the Filing Act, your Will can be filed at the SRO where you reside or where your family assets are located.
                 </p>
               </div>
 
@@ -900,8 +900,8 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   6. Locality Coverage: RS Puram, Race Course &amp; Beyond
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in RS Puram, Race Course, Peelamedu, or Gandhipuram</strong>?
-                  Whether your estate comprises high-value home bungalows, shop shopping complexes, or textile manufacturing facilities, our lawyers provide full drafting and Sub-Registrar accompaniment:
+                  Looking for legally checked <strong>Will drafting services in RS Puram, Race Course, Peelamedu, or Gandhipuram</strong>?
+                  Whether your estate comprises high-value home bungalows, shop shopping complexes, or textile manufacturing facilities, our lawyers provide full drafting and SRO accompaniment:
                 </p>
               </div>
 
@@ -931,7 +931,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in RS Puram</strong> for family independent bungalows, prime shop retail spaces, and corporate demat folios. Registered Wills make sure direct CCMC tax record transfer without costly succession papers.
+                      Specialized <strong>Will drafting services in RS Puram</strong> for family independent bungalows, prime shop retail spaces, and corporate demat folios. Filed Wills make sure direct CCMC tax record transfer without costly estate papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -993,7 +993,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Coimbatore Central SRO office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete confidentiality, senior counsel consultations, and full family business succession structuring.
+                        Complete confidentiality, senior counsel consultations, and full family business estate structuring.
                       </p>
                     </div>
                   </div>
@@ -1046,7 +1046,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Avinashi Road SRO Office (Near PSG Tech)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track TNREGINET slot booking, expert witness coordination, and seamless municipal tax name change help.
+                        Fast-track TNREGINET slot booking, expert witness coordination, and seamless city tax name change help.
                       </p>
                     </div>
                   </div>
@@ -1090,22 +1090,22 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting in Gandhipuram</strong> for retail shop owners, textile wholesale distributors, and shop property owners. Codifies tenancy lease rent distributions and shop inheritance without legal ambiguities.
+                      Focused <strong>Will drafting in Gandhipuram</strong> for retail shop owners, textile wholesale distributors, and shop asset owners. Codifies tenancy lease rent distributions and shop estate without legal ambiguities.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Cross Cut Road Sub-Registrar Complex</span>
+                        <span>SRO Hub: Cross Cut Road SRO Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        End-to-end shop property title check, business succession clauses, and prompt SRO signing.
+                        End-to-end shop asset title check, business estate clauses, and prompt SRO signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Retail &amp; Trading Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Retail &amp; Trading Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1143,7 +1143,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting in Saibaba Colony</strong> for established home households, multi-tier builder apartments, and NRI assets. Streamlines CCMC water tax and property tax assessment updates after the Will maker&apos;s lifetime.
+                      Reliable <strong>Will drafting in Saibaba Colony</strong> for established home households, multi-tier builder apartments, and NRI assets. Streamlines CCMC water tax and asset tax assessment updates after the Will maker&apos;s lifetime.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1152,7 +1152,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO office Area</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for senior citizens under Section 31, legal heir talk, and Book III deed handover.
+                        Doorstep filing for senior citizens under Section 31, legal heir talk, and Book III deed handover.
                       </p>
                     </div>
                   </div>
@@ -1196,7 +1196,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Modern <strong>Will drafting in Saravanampatti</strong> tailored for tech executives, startup founders, and NRIs. Covers digital assets, US/Indian stock options (ESOPs), gated villa plots, and home loan insurance succession protections.
+                      Modern <strong>Will drafting in Saravanampatti</strong> tailored for tech executives, startup founders, and NRIs. Covers digital assets, US/Indian stock options (ESOPs), gated villa plots, and home loan insurance estate protections.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1242,14 +1242,14 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Singanallur Industrial Hub</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Singanallur Plant Hub</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ramanathapuram Junction</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ondipudur &amp; Irugur Border</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Neelikonampalayam</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting in Singanallur</strong> and Ramanathapuram for industrial sheds, shop showrooms on Trichy Road, and multi-flat housing societies. Pre-empts joint family fights regarding factory rent shares.
+                      Expert <strong>Will drafting in Singanallur</strong> and Ramanathapuram for plant sheds, shop showrooms on Trichy Road, and multi-flat housing societies. Pre-empts joint family fights regarding factory rent shares.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1264,7 +1264,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Trichy Road</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Trichy Road</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1296,7 +1296,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ganapathy Foundry Belt</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Avarampalayam Industrial Units</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Avarampalayam Plant Units</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sathy Main Road Pockets</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Athipalayam Road</span>
                     </div>
@@ -1311,7 +1311,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Ganapathy, Sathy Main Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Detailed industrial asset schedules, partnership resolution clauses, and in-person lawyer accompaniment.
+                        Detailed plant asset schedules, partnership resolution clauses, and in-person lawyer accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1340,11 +1340,11 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Step-by-Step TNREGINET Will Registration SOP
+                  7. Step-by-Step TNREGINET Will Filing SOP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will before a Coimbatore Sub-Registrar follows a structured protocol under Tamil Nadu Shop Taxes and Registration Department rules.
-                  Here is the verified 5-step step:
+                  Registering your Will before a Coimbatore SRO follows a structured protocol under Tamil Nadu Shop Taxes and Filing Office rules.
+                  Here is the checked 5-step step:
                 </p>
               </div>
 
@@ -1372,7 +1372,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       Medical Sound Mind Fit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an MBBS doctor paper for senior testators aged 60+ affirming sound mental capacity.
+                      Obtain an MBBS doctor paper for senior Will makers aged 60+ affirming sound mental capacity.
                     </p>
                   </div>
                 </div>
@@ -1397,7 +1397,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       4
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      SRO Sub-Registrar Visit
+                      SRO SRO Visit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Will maker and two independent witnesses present original Aadhaar cards for verbal inquiry by the officer.
@@ -1411,10 +1411,10 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       5
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Book III Registration
+                      Book III Filing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Biometric fingerprints and digital photos recorded. Endorsed registered Will returned within 24 to 48 hours.
+                      Biometric fingerprints and digital photos recorded. Endorsed filed Will returned within 24 to 48 hours.
                     </p>
                   </div>
                 </div>
@@ -1429,24 +1429,24 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Doorstep Registration for Seniors
+                  8. Section 31 Doorstep Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior industrialists, textile pioneers, and elderly citizens in Coimbatore find it physically strenuous to visit government offices or wait at busy counters.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally authorized to visit a person&apos;s residence or hospital room to conduct signing and registration.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO is legally authorized to visit a person&apos;s residence or hospital room to conduct signing and filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Will Registration Operates in Coimbatore:
+                  How Doorstep Will Filing Operates in Coimbatore:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered medical practitioner certifies that the senior citizen is bedridden or unwell for SRO travel.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed medical practitioner certifies that the senior citizen is bedridden or unwell for SRO travel.</span>
                     </div>
                   </div>
 
@@ -1454,7 +1454,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Special Commission Requisition</strong>
-                      <span className="text-slate-600">Our Coimbatore legal team files the official form before the jurisdictional Sub-Registrar.</span>
+                      <span className="text-slate-600">Our Coimbatore legal team files the official form before the local SRO.</span>
                     </div>
                   </div>
 
@@ -1470,7 +1470,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Home Biometric Check</strong>
-                      <span className="text-slate-600">The Sub-Registrar arrives at your home with portable biometric scanning equipment to complete signing.</span>
+                      <span className="text-slate-600">The SRO arrives at your home with portable biometric scanning equipment to complete signing.</span>
                     </div>
                   </div>
                 </div>
@@ -1485,11 +1485,11 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Documents Checklist for Coimbatore Registration
+                  9. Papers Checklist for Coimbatore Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before visiting the SRO office.
-                  You have verified <strong>{checkedCount} of {checklist.length}</strong> items:
+                  Prepare your papers before visiting the SRO office.
+                  You have checked <strong>{checkedCount} of {checklist.length}</strong> items:
                 </p>
               </div>
 
@@ -1534,10 +1534,10 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Property Categories: Mills, Foundries &amp; Homes
+                  10. Asset Categories: Mills, Foundries &amp; Homes
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession dynamics across Coimbatore vary substantially based on property tenure and shop nature.
+                  Estate dynamics across Coimbatore vary substantially based on asset tenure and shop nature.
                   Here is how a Will regulates different asset categories in the Kongu region:
                 </p>
               </div>
@@ -1545,13 +1545,13 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Industrial Mills
+                    Plant Mills
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Textile &amp; Spinning Mill Compounds
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Mills in Sulur, Palladam Road, and Annur involve industrial conversion land, EB HT power connections, and machinery. Wills must outline clear operational control.
+                    Mills in Sulur, Palladam Road, and Annur involve plant conversion land, EB HT power connections, and machinery. Wills must outline clear operational control.
                   </p>
                 </div>
 
@@ -1592,7 +1592,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   11. Official Tamil Nadu Government Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyance deeds that incur heavy stamp duty and transfer charges in Tamil Nadu, testamentary Wills are completely exempt from stamp duty under the Indian Stamp Act, 1899.
+                  Unlike asset conveyance deeds that incur heavy stamp duty and transfer charges in Tamil Nadu, Will Wills are completely exempt from stamp duty under the Indian Stamp Act, 1899.
                   Government charges at Coimbatore SRO counters are strictly nominal:
                 </p>
               </div>
@@ -1610,10 +1610,10 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Tamil Nadu Stamp Duty on Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt)</td>
-                      <td className="p-4">Shop Taxes &amp; Registration Dept</td>
+                      <td className="p-4">Shop Taxes &amp; Filing Dept</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">TNREGINET SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">TNREGINET SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">SRO office Book III Account</td>
                     </tr>
@@ -1666,7 +1666,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Coimbatore Will maker</span>
+                        <span>Free Coimbatore Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1739,13 +1739,13 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at any of Coimbatore&apos;s Sub-Registrar offices.
+                      Full end-to-end filing help at any of Coimbatore&apos;s SRO offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1762,7 +1762,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1831,7 +1831,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   14. Legal References &amp; Tamil Nadu Land Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our Will drafting protocols comply strictly with central succession statutes and Tamil Nadu revenue guidelines:
+                  Our Will drafting protocols comply strictly with central estate statutes and Tamil Nadu revenue guidelines:
                 </p>
               </div>
 
@@ -1847,10 +1847,10 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Home Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Home Commission).
                   </p>
                 </div>
 
@@ -1859,7 +1859,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                     Tamil Nadu TNREGINET Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Shop Taxes &amp; Registration Department: <code>tnreginet.gov.in</code>.
+                    Shop Taxes &amp; Filing Office: <code>tnreginet.gov.in</code>.
                   </p>
                 </div>
 
@@ -1900,7 +1900,29 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1920,7 +1942,7 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between px-2 pt-1">
               <span className="text-xs sm:text-sm font-bold text-white">
-                Visual Blueprint: Coimbatore Will Drafting &amp; Industrial Wealth Succession
+                Visual Blueprint: Coimbatore Will Drafting &amp; Plant Wealth Estate
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

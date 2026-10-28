@@ -36,15 +36,15 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Is Will Registration Compulsory in India?" },
-  { id: "registered-vs-unregistered", label: "2. Registered vs Unregistered Wills (Key Differences)" },
-  { id: "section-31-home-visit", label: "3. Home Registration for Seniors & Bedridden Persons" },
-  { id: "documents-checklist", label: "4. Documents Needed at the Registrar's Office" },
-  { id: "visual-blueprint", label: "5. Visual Guide to Will Registration" },
+  { id: "statutory-framework", label: "1. Is Will Filing Needed in India?" },
+  { id: "registered-vs-unregistered", label: "2. Filed vs Plain Wills (Key Differences)" },
+  { id: "section-31-home-visit", label: "3. Home Filing for Seniors & Bedridden Persons" },
+  { id: "documents-checklist", label: "4. Papers Needed at the Registrar's Office" },
+  { id: "visual-blueprint", label: "5. Visual Guide to Will Filing" },
   { id: "step-by-step-sop", label: "6. Step-by-Step Guide to Registering Your Will" },
-  { id: "strategic-defense", label: "7. When is Will Registration Strongly Recommended?" },
+  { id: "strategic-defense", label: "7. When is Will Filing Strongly Recommended?" },
   { id: "state-by-state-guide", label: "8. State Government Fees & Online Portals" },
-  { id: "procedural-timeline", label: "9. Expected Registration Timelines" },
+  { id: "procedural-timeline", label: "9. Expected Filing Timelines" },
   { id: "specialized-scenarios", label: "10. Special Situations: Seniors & Overseas NRIs" },
   { id: "service-pricing", label: "11. Service Plans & Transparent Fees" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
@@ -60,70 +60,70 @@ const CHECKLIST_ITEMS = [
   {
     id: "check-2",
     label: "Original Aadhaar & PAN Card (Yours)",
-    subtext: "Government photo identity proof for official biometric and fingerprint verification at the registrar's office.",
+    subtext: "Government photo identity proof for official biometric and fingerprint check at the registrar's office.",
   },
   {
     id: "check-3",
     label: "Two Independent Witnesses with Original IDs",
-    subtext: "Adult friends or neighbors who are not receiving any property or money under the Will (Section 67).",
+    subtext: "Adult friends or neighbors who are not receiving any asset or money under the Will (Section 67).",
   },
   {
     id: "check-4",
     label: "Passport-Sized Photographs for Everyone",
-    subtext: "Two recent passport-sized color photos each for you and both of your attesting witnesses.",
+    subtext: "Two recent passport-sized color photos each for you and both of your signing witnesses.",
   },
   {
     id: "check-5",
-    label: "Doctor's Mental Fitness Certificate",
+    label: "Doctor's Mental Fitness Paper",
     subtext: "Recommended for seniors aged 60 and above to prove sound mind and prevent false claims later.",
   },
   {
     id: "check-6",
-    label: "Sub-Registrar Appointment Receipt & Challan",
-    subtext: "Online appointment confirmation slip and fee payment receipt from your state government registration portal.",
+    label: "SRO Appointment Receipt & Challan",
+    subtext: "Online appointment confirmation slip and fee payment receipt from your state government filing portal.",
   },
 ];
 
 const FAQS = [
   {
-    q: "Is Will registration mandatory under Indian law?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is completely optional. A Will written on plain white paper and signed in front of two witnesses is 100% legally valid (Section 63, Indian Succession Act). However, registering your Will at the Sub-Registrar Office provides undeniable government proof that you personally signed it while in sound health, making it almost impossible for anyone to falsely claim forgery later.",
+    q: "Is Will filing needed under Indian law?",
+    a: "No. Under Section 18(e) of the Filing Act, 1908, registering a Will is completely a choice. A Will written on plain white paper and signed in front of two witnesses is 100% legally valid (Section 63, Indian Succession Act). However, registering your Will at the SRO office provides undeniable government proof that you personally signed it while in sound health, making it almost impossible for anyone to falsely claim forgery later.",
   },
   {
     q: "How much does it cost to register a Will with the government?",
-    a: "Unlike buying a house which attracts heavy 5% to 7% stamp duty, Wills are 100% exempt from stamp duty across India under the Indian Stamp Act, 1899. Government registration fees are nominal, usually between ₹100 and ₹500 depending on your state (for example, just ₹100 in Maharashtra and Delhi).",
+    a: "Unlike buying a house which attracts heavy 5% to 7% stamp duty, Wills are 100% exempt from stamp duty across India under the Indian Stamp Act, 1899. Government filing fees are nominal, usually between ₹100 and ₹500 depending on your state (for example, just ₹100 in Maharashtra and Delhi).",
   },
   {
     q: "Can a government officer visit my home to register a senior citizen's Will?",
-    a: "Yes! Under Section 31 of the Registration Act, 1908, if someone is elderly, sick, or cannot easily travel, the Sub-Registrar can personally visit their home or hospital room to complete registration. You simply submit a doctor's certificate and pay a small official home-visit fee. AMA Legal Solutions assists in organizing this entire doorstep visit.",
+    a: "Yes! Under Section 31 of the Filing Act, 1908, if someone is elderly, sick, or cannot easily travel, the SRO can personally visit their home or hospital room to complete filing. You simply submit a doctor's paper and pay a small official home-visit fee. AMA Legal Solutions assists in organizing this entire doorstep visit.",
   },
   {
     q: "Who can be witnesses for registering my Will?",
-    a: "You need two adult witnesses with original government ID proofs (such as Aadhaar or PAN card). CRITICAL: Under Section 67 of the Indian Succession Act, neither witness nor their spouse can receive any gift or property under the Will. If an heir signs as a witness, their inheritance becomes void.",
+    a: "You need two adult witnesses with original government ID proofs (such as Aadhaar or PAN card). CRITICAL: Under Section 67 of the Indian Succession Act, neither witness nor their spouse can receive any gift or asset under the Will. If an heir signs as a witness, their estate becomes void.",
   },
   {
-    q: "What documents must I take on registration day?",
-    a: "Bring two printed copies of your Will on plain A4 paper, original Aadhaar and PAN cards for yourself and both witnesses, two passport-size photographs of each person, photocopies of your property registry papers, and a doctor's mental fitness certificate (if you are a senior citizen).",
+    q: "What papers must I take on filing day?",
+    a: "Bring two printed copies of your Will on plain A4 paper, original Aadhaar and PAN cards for yourself and both witnesses, two passport-size photographs of each person, photocopies of your asset registry papers, and a doctor's mental fitness paper (if you are a senior citizen).",
   },
   {
-    q: "Can other relatives or the public read my registered Will while I am alive?",
-    a: "No. Under Section 57(2) of the Registration Act, 1908, Wills are stored in a special confidential government book called 'Book 3'. No one—not even your children, spouse, or relatives—can read, view, or obtain a copy of your registered Will during your lifetime without your written consent.",
+    q: "Can other relatives or the public read my filed Will while I am alive?",
+    a: "No. Under Section 57(2) of the Filing Act, 1908, Wills are stored in a special confidential government book called 'Book 3'. No one—not even your children, spouse, or relatives—can read, view, or obtain a copy of your filed Will during your lifetime without your written consent.",
   },
   {
-    q: "Can someone still challenge a registered Will in court?",
-    a: "Anyone can file a lawsuit, but challenging a registered Will is extremely difficult. Under Section 114 of the Indian Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023), courts presume that government officers performed their duties properly. The challenger must present solid evidence of fraud or mental incapacity to overturn a registered Will.",
+    q: "Can someone still fight a filed Will in court?",
+    a: "Anyone can file a lawsuit, but challenging a filed Will is extremely difficult. Under Section 114 of the Indian Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023), courts presume that government officers performed their duties properly. The challenger must present solid evidence of fraud or mental incapacity to overturn a filed Will.",
   },
   {
-    q: "Can I change or cancel my registered Will later?",
+    q: "Can I change or cancel my filed Will later?",
     a: "Yes! A Will only takes effect after your death. As long as you are alive and of sound mind, you can change or cancel your Will at any time (Section 62, Indian Succession Act). You can write a short amendment (a Codicil) or execute a completely new Will that revokes the earlier one.",
   },
   {
     q: "Can an NRI register a Will without visiting India?",
-    a: "To register a Will in India, the person must appear in person before the Sub-Registrar (a Power of Attorney cannot register a Will on your behalf). However, an NRI does not need to rush to India just for this: you can safely draft and sign a plain-paper Will in your country of residence before two witnesses under Section 63, and register it during your next trip to India if you wish.",
+    a: "To register a Will in India, the person must appear in person before the SRO (a Power of Attorney cannot register a Will on your behalf). However, an NRI does not need to rush to India just for this: you can safely draft and sign a plain-paper Will in your country of residence before two witnesses under Section 63, and register it during your next trip to India if you wish.",
   },
   {
-    q: "What happens if the original registered Will is lost?",
-    a: "If the original paper is lost or damaged, your executor can simply apply for an official certified copy from the Sub-Registrar Office where it was registered. Under Section 76 of the Evidence Act, this government-certified copy has full legal authority and is accepted by courts, banks, and municipal offices.",
+    q: "What happens if the original filed Will is lost?",
+    a: "If the original paper is lost or damaged, your executor can simply apply for an official certified copy from the SRO office where it was filed. Under Section 76 of the Evidence Act, this government-certified copy has full legal office and is accepted by courts, banks, and city offices.",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function WillRegistrationClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({
     "check-1": true,
@@ -205,12 +205,12 @@ export default function WillRegistrationClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Will Registration Service in India: SRO Process &amp; Home Visits
+            Will Filing Service in India: SRO Process &amp; Home Visits
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Secure done-for-you Will registration across Indian Sub-Registrar Offices. We manage SRO appointment booking, witness vetting, Section 31 private residence visits for senior citizens, and certified copy delivery.
+            Secure done-for-you Will filing across Indian Sub-Registrar Offices. We manage SRO appointment booking, witness vetting, Section 31 private residence visits for senior citizens, and certified copy delivery.
           </p>
 
           {/* CTA Buttons */}
@@ -220,7 +220,7 @@ export default function WillRegistrationClient() {
               onClick={handleStartDraft}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] text-white font-bold hover:bg-[#a13c5d] transition-all transform hover:-translate-y-0.5 shadow-lg shadow-rose-950/20 cursor-pointer"
             >
-              <span>Book Will Registration Service</span>
+              <span>Book Will Filing Service</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
@@ -245,7 +245,7 @@ export default function WillRegistrationClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Practice
+                Estate Practice
               </span>
             </div>
 
@@ -255,7 +255,7 @@ export default function WillRegistrationClient() {
                 10,000+
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Wills Registered
+                Wills Filed
               </span>
             </div>
 
@@ -350,10 +350,10 @@ export default function WillRegistrationClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Sections 18, 31, 40 &amp; 41 of the Registration Act, 1908 and Section 63 of the Indian Succession Act, 1925.
+                Governed under Sections 18, 31, 40 &amp; 41 of the Filing Act, 1908 and Section 63 of the Indian Succession Act, 1925.
               </p>
             </div>
           </aside>
@@ -371,25 +371,25 @@ export default function WillRegistrationClient() {
                 </span>
               </div>
               <div className="text-lg font-bold text-slate-900 mb-3">
-                Core Rules for Registering a Will at the Sub-Registrar Office
+                Core Rules for Registering a Will at the SRO office
               </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Optional Under Law:</strong> Section 18(e) of the Registration Act, 1908 makes Will registration optional. Unregistered plain-paper Wills are valid under Section 63 of the Indian Succession Act.
+                    <strong>A Choice Under Law:</strong> Section 18(e) of the Filing Act, 1908 makes Will filing a choice. Plain plain-paper Wills are valid under Section 63 of the Indian Succession Act.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Zero Ad-Valorem Stamp Duty:</strong> Wills are completely exempt from stamp duty across India. Only nominal government registration charges apply (typically ₹100 to ₹500).
+                    <strong>Zero Ad-Valorem Stamp Duty:</strong> Wills are completely exempt from stamp duty across India. Only nominal government filing charges apply (typically ₹100 to ₹500).
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Section 31 Doorstep Visits:</strong> Elderly, infirm, or bedridden testators can have the Sub-Registrar visit their private residence upon medical certification.
+                    <strong>Section 31 Doorstep Visits:</strong> Elderly, infirm, or bedridden Will makers can have the SRO visit their private residence upon medical certification.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -408,16 +408,16 @@ export default function WillRegistrationClient() {
                 <span>LEGAL JURISDICTION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                1. Statutory Framework: Will Registration Under 1908 Act
+                1. Legal Framework: Will Filing Under 1908 Act
               </h2>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Indian law gives you full control over your wealth. You can write your Will on plain paper. Section 18 of the Registration Act makes Will registration optional. A Will signed before two witnesses is fully valid in court. However, registering your Will turns it into an official public record.
+                Indian law gives you full control over your wealth. You can write your Will on plain paper. Section 18 of the Filing Act makes Will filing a choice. A Will signed before two witnesses is fully valid in court. However, registering your Will turns it into an official public record.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                During registration, you visit the Sub-Registrar. The officer checks your identity cards. They speak with your two witnesses. The officer checks that you sign freely and in good health. Under Section 114 of the Evidence Act, courts accept official government acts as genuine.
+                During filing, you visit the SRO. The officer checks your identity cards. They speak with your two witnesses. The officer checks that you sign freely and in good health. Under Section 114 of the Evidence Act, courts accept official government acts as genuine.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The Supreme Court backed this rule in the Pentakota case. The court held that a registrar seal proves real signing. Registration does not stop all lawsuits. But it places a heavy burden on anyone who tries to fight your Will.
+                The Supreme Court backed this rule in the Pentakota case. The court held that a registrar seal proves real signing. Filing does not stop all lawsuits. But it places a heavy burden on anyone who tries to fight your Will.
               </p>
             </section>
 
@@ -428,10 +428,10 @@ export default function WillRegistrationClient() {
                 <span>COMPARATIVE MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                2. Registered vs Unregistered Wills: Legal Protection Matrix
+                2. Filed vs Plain Wills: Legal Protection Matrix
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Many people ask if they should register their Will. Both registered and plain paper Wills are valid in India. But a registered Will gives stronger protection to your heirs. Review the table below to compare your choices.
+                Many people ask if they should register their Will. Both filed and plain paper Wills are valid in India. But a filed Will gives stronger protection to your heirs. Review the table below to compare your choices.
               </p>
 
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs bg-white">
@@ -440,9 +440,9 @@ export default function WillRegistrationClient() {
                     <thead>
                       <tr className="bg-[#172228] text-white">
                         <th className="py-3 px-4 font-bold">Legal Parameter</th>
-                        <th className="py-3 px-4 font-bold">Unregistered Plain Will</th>
+                        <th className="py-3 px-4 font-bold">Plain Plain Will</th>
                         <th className="py-3 px-4 font-bold">Notarized Will</th>
-                        <th className="py-3 px-4 font-bold">SRO Registered Will</th>
+                        <th className="py-3 px-4 font-bold">SRO Filed Will</th>
                         <th className="py-3 px-4 font-bold">Strategic Impact</th>
                       </tr>
                     </thead>
@@ -455,18 +455,18 @@ export default function WillRegistrationClient() {
                         <td className="py-3 px-4 text-slate-600">All three forms are legally recognized in India.</td>
                       </tr>
                       <tr className="bg-slate-50/60">
-                        <td className="py-3 px-4 font-bold text-slate-900">Evidentiary Presumption</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Proof Presumption</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">Zero Presumption</td>
-                        <td className="py-3 px-4 text-amber-600 font-semibold">Weak (Affidavit Only)</td>
+                        <td className="py-3 px-4 text-amber-600 font-semibold">Weak (Sworn Note Only)</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Strong (Section 114 BSA)</td>
-                        <td className="py-3 px-4 text-slate-600">SRO endorsement creates a legal presumption of due execution.</td>
+                        <td className="py-3 px-4 text-slate-600">SRO endorsement creates a legal presumption of due signing.</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-900">Posthumous Loss Recovery</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">Impossible if Lost</td>
                         <td className="py-3 px-4 text-rose-600 font-semibold">Rarely Traceable</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Certified Copy Available</td>
-                        <td className="py-3 px-4 text-slate-600">Sub-Registrar archives allow certified copy retrieval anytime.</td>
+                        <td className="py-3 px-4 text-slate-600">SRO archives allow certified copy retrieval anytime.</td>
                       </tr>
                       <tr className="bg-slate-50/60">
                         <td className="py-3 px-4 font-bold text-slate-900">Capacity &amp; Forgery Defense</td>
@@ -476,11 +476,11 @@ export default function WillRegistrationClient() {
                         <td className="py-3 px-4 text-slate-600">Live photograph and thumb impressions defeat forgery claims.</td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 font-bold text-slate-900">Bank &amp; Mutation Speed</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Bank &amp; Name Change Speed</td>
                         <td className="py-3 px-4 text-amber-600 font-semibold">Requires Affidavits</td>
                         <td className="py-3 px-4 text-amber-600 font-semibold">Moderate Acceptance</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Fast Institutional Acceptance</td>
-                        <td className="py-3 px-4 text-slate-600">Revenue officers process municipal mutation faster with SRO copies.</td>
+                        <td className="py-3 px-4 text-slate-600">Revenue officers process city name change faster with SRO copies.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -495,10 +495,10 @@ export default function WillRegistrationClient() {
                 <span>SENIOR CITIZEN ACCESS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. Section 31 Home Visit: Registration for Senior Citizens
+                3. Section 31 Home Visit: Filing for Senior Citizens
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Many senior citizens want to register their Will. But visiting a busy office can harm their health. Stairs and crowds cause real stress. Section 31 of the Registration Act solves this through home visits.
+                Many senior citizens want to register their Will. But visiting a busy office can harm their health. Stairs and crowds cause real stress. Section 31 of the Filing Act solves this through home visits.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Under Section 31, the registrar comes to your home or hospital room. You only need to show a valid medical reason. Old age, illness, or disability all qualify. You attach a doctor note showing you cannot travel safely.
@@ -515,10 +515,10 @@ export default function WillRegistrationClient() {
                 <span>PRE-APPOINTMENT AUDIT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                4. Essential Documents Checklist for SRO Will Registration
+                4. Essential Papers Checklist for SRO Will Filing
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Going to the registry office without the right papers wastes time. Missing papers cause delays. Use this checklist to ensure your documents are ready before your registration date.
+                Going to the registry office without the right papers wastes time. Missing papers cause delays. Use this checklist to ensure your papers are ready before your filing date.
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4">
@@ -570,10 +570,10 @@ export default function WillRegistrationClient() {
                 <span>PROCEDURAL BLUEPRINT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                5. Visual Blueprint: End-to-End Will Registration Workflow
+                5. Visual Blueprint: End-to-End Will Filing Workflow
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The visual below shows official Will registration at the Sub-Registrar Office under the 1908 Act. It features an authenticated Will, registrar endorsement, and official records.
+                The visual below shows official Will filing at the SRO office under the 1908 Act. It features an authenticated Will, registrar endorsement, and official records.
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs p-3 sm:p-4">
@@ -587,7 +587,7 @@ export default function WillRegistrationClient() {
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-3 px-1 text-xs text-slate-500">
-                  <span>Figure 1: Plain Will vs Notarized Will vs Registered Will on Advocate Chamber Desk in India.</span>
+                  <span>Figure 1: Plain Will vs Notarized Will vs Filed Will on Lawyer Chamber Desk in India.</span>
                   <div className="flex items-center gap-3">
                     <a
                       href="/images/notarized-will-vs-registered-will-india-og.jpg"
@@ -605,7 +605,7 @@ export default function WillRegistrationClient() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 font-semibold text-slate-600 hover:text-slate-900 hover:underline"
                     >
-                      <span>Statutory Flowchart (SVG)</span>
+                      <span>Legal Flowchart (SVG)</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -620,7 +620,7 @@ export default function WillRegistrationClient() {
                 <span>STANDARD OPERATING PROCEDURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Step-by-Step Protocol: SRO Will Registration SOP
+                6. Step-by-Step Protocol: SRO Will Filing SOP
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Our legal chamber uses a proven six-step path to register your Will. We make the entire process fast, simple, and free from courthouse stress.
@@ -633,9 +633,9 @@ export default function WillRegistrationClient() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-slate-900">Drafting &amp; Succession Law Audit</h3>
+                    <h3 className="text-base font-bold text-slate-900">Drafting &amp; Estate Law Audit</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      Our advocates draft your Will to ensure strict compliance with Section 63 of the Indian Succession Act. We verify asset schedules, executor nominations, and ensure plain-paper printouts require zero stamp duty.
+                      Our lawyers draft your Will to ensure strict compliance with Section 63 of the Indian Succession Act. We verify asset schedules, executor nominations, and ensure plain-paper printouts require zero stamp duty.
                     </p>
                   </div>
                 </div>
@@ -648,7 +648,7 @@ export default function WillRegistrationClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">SRO Portal Slot Booking &amp; Fee Challan</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      We submit your application on the relevant state portal (DORIS, Kaveri 2.0, IGRS, etc.), pay nominal government registration fees, and generate your priority appointment token.
+                      We submit your form on the relevant state portal (DORIS, Kaveri 2.0, IGRS, etc.), pay nominal government filing fees, and generate your priority appointment token.
                     </p>
                   </div>
                 </div>
@@ -661,7 +661,7 @@ export default function WillRegistrationClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">Witness Selection &amp; Section 67 Vetting</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      We screen your attesting witnesses to confirm that neither they nor their spouses receive any bequests under the Will. This safeguards your family against disqualification under Section 67.
+                      We screen your signing witnesses to confirm that neither they nor their spouses receive any bequests under the Will. This safeguards your family against disqualification under Section 67.
                     </p>
                   </div>
                 </div>
@@ -674,7 +674,7 @@ export default function WillRegistrationClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">SRO Appearance or Section 31 Doorstep Visit</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      Our advocate accompanies you to the Sub-Registrar Office for guided execution. If you opted for a Section 31 home visit, we coordinate the officer’s visit directly to your residence.
+                      Our lawyer accompanies you to the SRO office for guided signing. If you opted for a Section 31 home visit, we coordinate the officer’s visit directly to your residence.
                     </p>
                   </div>
                 </div>
@@ -685,9 +685,9 @@ export default function WillRegistrationClient() {
                     5
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-slate-900">Biometric Verification &amp; Statutory Endorsement</h3>
+                    <h3 className="text-base font-bold text-slate-900">Biometric Check &amp; Legal Endorsement</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      The Sub-Registrar captures live webcam photos and thumb impressions of all parties. The officer then stamps the statutory certificates under Section 58 and 59 on your original Will.
+                      The SRO captures live webcam photos and thumb impressions of all parties. The officer then stamps the legal papers under Section 58 and 59 on your original Will.
                     </p>
                   </div>
                 </div>
@@ -700,7 +700,7 @@ export default function WillRegistrationClient() {
                   <div>
                     <h3 className="text-base font-bold text-slate-900">Book 3 Entry &amp; Certified Copy Delivery</h3>
                     <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
-                      Your Will is officially entered in Book 3. You receive the original registered document bearing a government seal, and we provide digital vault backups for lifelong peace of mind.
+                      Your Will is officially entered in Book 3. You receive the original filed paper bearing a government seal, and we provide digital vault backups for lifelong peace of mind.
                     </p>
                   </div>
                 </div>
@@ -714,10 +714,10 @@ export default function WillRegistrationClient() {
                 <span>STRATEGIC ASSET SHIELD</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                7. Strategic Defense: When Will Registration Is Vital
+                7. Strategic Defense: When Will Filing Is Vital
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Any adult in India can register a Will. But registration is most critical in four family and property situations.
+                Any adult in India can register a Will. But filing is most critical in four family and asset situations.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -727,7 +727,7 @@ export default function WillRegistrationClient() {
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-1.5">Disinheriting Natural Legal Heirs</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    When you leave property to one child while excluding others, excluded heirs often allege coercion or fraud. A registered Will provides official proof of your voluntary intention.
+                    When you leave asset to one child while excluding others, excluded heirs often allege coercion or fraud. A filed Will provides official proof of your voluntary intention.
                   </p>
                 </div>
 
@@ -735,9 +735,9 @@ export default function WillRegistrationClient() {
                   <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-3">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-1.5">Multi-State Immovable Properties</h3>
+                  <h3 className="text-base font-bold text-slate-900 mb-1.5">Multi-State Land Assets</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Transferring apartments or commercial lands across different municipal corporations requires mutation. Revenue officers process municipal mutation much faster when presented with an SRO registered Will.
+                    Transferring apartments or shop lands across different city corporations requires name change. Revenue officers process city name change much faster when presented with an SRO filed Will.
                   </p>
                 </div>
 
@@ -747,7 +747,7 @@ export default function WillRegistrationClient() {
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-1.5">Second Marriages &amp; Blended Families</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Estate disputes frequently arise between stepchildren and surviving spouses. Registering your Will prevents hostile relatives from alleging that your signature was forged.
+                    Estate fights frequently arise between stepchildren and surviving spouses. Registering your Will prevents hostile relatives from alleging that your signature was forged.
                   </p>
                 </div>
 
@@ -757,7 +757,7 @@ export default function WillRegistrationClient() {
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-1.5">Senior Citizens Aged 70 and Above</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Litigants often challenge Wills made by seniors by alleging senility or dementia. The Sub-Registrar’s official endorsement and biometric capture decisively defeats such capacity challenges.
+                    Litigants often fight Wills made by seniors by alleging senility or dementia. The SRO’s official endorsement and biometric capture decisively defeats such capacity fights.
                   </p>
                 </div>
               </div>
@@ -782,8 +782,8 @@ export default function WillRegistrationClient() {
                     <thead>
                       <tr className="bg-[#172228] text-white">
                         <th className="py-3 px-4 font-bold">State / Union Territory</th>
-                        <th className="py-3 px-4 font-bold">Official Registration Portal</th>
-                        <th className="py-3 px-4 font-bold">SRO Registration Fee</th>
+                        <th className="py-3 px-4 font-bold">Official Filing Portal</th>
+                        <th className="py-3 px-4 font-bold">SRO Filing Fee</th>
                         <th className="py-3 px-4 font-bold">Section 31 Home Visit</th>
                       </tr>
                     </thead>
@@ -804,19 +804,19 @@ export default function WillRegistrationClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Karnataka (Bengaluru)</td>
                         <td className="py-3 px-4">Kaveri 2.0 Portal</td>
                         <td className="py-3 px-4 font-semibold text-emerald-600">₹200 + User charges</td>
-                        <td className="py-3 px-4">Available via SRO Application</td>
+                        <td className="py-3 px-4">Available via SRO Form</td>
                       </tr>
                       <tr className="bg-slate-50/60">
                         <td className="py-3 px-4 font-bold text-slate-900">Tamil Nadu (Chennai)</td>
                         <td className="py-3 px-4">TNREGINET Portal</td>
-                        <td className="py-3 px-4 font-semibold text-emerald-600">₹100 + Document fees</td>
+                        <td className="py-3 px-4 font-semibold text-emerald-600">₹100 + Paper fees</td>
                         <td className="py-3 px-4">Available for senior citizens</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-900">Uttar Pradesh (Noida/Lucknow)</td>
                         <td className="py-3 px-4">IGRSUP Portal</td>
                         <td className="py-3 px-4 font-semibold text-emerald-600">₹100 fixed fee</td>
-                        <td className="py-3 px-4">Available upon Doctor certificate</td>
+                        <td className="py-3 px-4">Available upon Doctor paper</td>
                       </tr>
                       <tr className="bg-slate-50/60">
                         <td className="py-3 px-4 font-bold text-slate-900">West Bengal (Kolkata)</td>
@@ -828,7 +828,7 @@ export default function WillRegistrationClient() {
                         <td className="py-3 px-4 font-bold text-slate-900">Telangana (Hyderabad)</td>
                         <td className="py-3 px-4">IGRS Telangana</td>
                         <td className="py-3 px-4 font-semibold text-emerald-600">₹100 to ₹500 fee</td>
-                        <td className="py-3 px-4">Available on application</td>
+                        <td className="py-3 px-4">Available on form</td>
                       </tr>
                     </tbody>
                   </table>
@@ -843,10 +843,10 @@ export default function WillRegistrationClient() {
                 <span>EXECUTION MILESTONES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                9. Procedural Timeline: Execution to Certified Delivery
+                9. Procedural Timeline: Signing to Certified Delivery
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                With our legal team guiding you, Will registration takes only 3 to 5 business days. The timeline below explains each step from first draft to final delivery.
+                With our legal team guiding you, Will filing takes only 3 to 5 business days. The timeline below explains each step from first draft to final delivery.
               </p>
 
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs bg-white">
@@ -864,7 +864,7 @@ export default function WillRegistrationClient() {
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-900">1. Draft Audit</td>
                         <td className="py-3 px-4 font-mono text-xs">Day 1</td>
-                        <td className="py-3 px-4">Succession lawyer verifies personal law &amp; assets</td>
+                        <td className="py-3 px-4">Estate lawyer verifies personal law &amp; assets</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Vetted Will Draft</td>
                       </tr>
                       <tr className="bg-slate-50/60">
@@ -880,22 +880,22 @@ export default function WillRegistrationClient() {
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Witness Pack Ready</td>
                       </tr>
                       <tr className="bg-slate-50/60">
-                        <td className="py-3 px-4 font-bold text-slate-900">4. Registration Day</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">4. Filing Day</td>
                         <td className="py-3 px-4 font-mono text-xs">Day 3</td>
-                        <td className="py-3 px-4">Physical visit or Section 31 home execution</td>
+                        <td className="py-3 px-4">Physical visit or Section 31 home signing</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Biometrics Recorded</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-900">5. SRO Endorsement</td>
                         <td className="py-3 px-4 font-mono text-xs">Day 3 - 4</td>
-                        <td className="py-3 px-4">Registrar stamps official registration certificate</td>
+                        <td className="py-3 px-4">Registrar stamps official filing paper</td>
                         <td className="py-3 px-4 text-emerald-600 font-semibold">Book 3 Catalog Entry</td>
                       </tr>
                       <tr className="bg-slate-50/60">
                         <td className="py-3 px-4 font-bold text-slate-900">6. Copy Delivery</td>
                         <td className="py-3 px-4 font-mono text-xs">Day 4 - 5</td>
-                        <td className="py-3 px-4">Original registered Will dispatched with backup</td>
-                        <td className="py-3 px-4 text-emerald-600 font-semibold">Official Registered Will</td>
+                        <td className="py-3 px-4">Original filed Will dispatched with backup</td>
+                        <td className="py-3 px-4 text-emerald-600 font-semibold">Official Filed Will</td>
                       </tr>
                     </tbody>
                   </table>
@@ -910,10 +910,10 @@ export default function WillRegistrationClient() {
                 <span>CASE ROADMAPS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                10. Specialized Scenarios: Senior Heirs &amp; NRI Testators
+                10. Specialized Scenarios: Senior Heirs &amp; NRI Will makers
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Will registration changes based on your family needs. Here is how our team handles four common client cases.
+                Will filing changes based on your family needs. Here is how our team handles four common client cases.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -923,7 +923,7 @@ export default function WillRegistrationClient() {
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-2">Bedridden Senior in Hospital or Home</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    We petition the Sub-Registrar under Section 31 with an official doctor’s capacity certificate. The officer visits the hospital or residence, captures biometrics, and registers the Will without disturbing the patient.
+                    We petition the SRO under Section 31 with an official doctor’s capacity paper. The officer visits the hospital or residence, captures biometrics, and registers the Will without disturbing the patient.
                   </p>
                 </div>
 
@@ -931,9 +931,9 @@ export default function WillRegistrationClient() {
                   <div className="flex items-center gap-2 text-xs font-bold text-[#C65378] mb-2 uppercase">
                     <span>Scenario B</span>
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-2">NRI Testator Visiting India on Short Leave</h3>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">NRI Will maker Visiting India on Short Leave</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For NRIs visiting Delhi, Mumbai, or Bengaluru on vacation, we prepare the draft and secure advance SRO appointment tokens before your flight lands, allowing registration within a 2-hour window.
+                    For NRIs visiting Delhi, Mumbai, or Bengaluru on vacation, we prepare the draft and secure advance SRO appointment tokens before your flight lands, allowing filing within a 2-hour window.
                   </p>
                 </div>
 
@@ -941,9 +941,9 @@ export default function WillRegistrationClient() {
                   <div className="flex items-center gap-2 text-xs font-bold text-[#C65378] mb-2 uppercase">
                     <span>Scenario C</span>
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-2">Amending an Already Registered Will</h3>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">Amending an Already Filed Will</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If your original Will was registered, amending it with an unregistered note can cause legal conflicts. We draft and register a formal Codicil at the same SRO office to maintain an unbroken public record.
+                    If your original Will was filed, amending it with an plain note can cause legal conflicts. We draft and register a formal Codicil at the same SRO office to maintain an unbroken public record.
                   </p>
                 </div>
 
@@ -953,7 +953,7 @@ export default function WillRegistrationClient() {
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-2">Sealed Cover Deposit (Sections 42 to 46)</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Testators who require complete secrecy can deposit their Will in a wax-sealed envelope with the District Registrar. The sealed cover is kept in a fireproof safe until death under Section 43.
+                    Will makers who require complete secrecy can deposit their Will in a wax-sealed envelope with the District Registrar. The sealed cover is kept in a fireproof safe until death under Section 43.
                   </p>
                 </div>
               </div>
@@ -977,7 +977,7 @@ export default function WillRegistrationClient() {
                 <div className="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between shadow-xs">
                   <div>
                     <span className="text-xs font-black uppercase tracking-wider text-[#55636D]">Tier 1</span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-1">Auto Verified</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1">Auto Checked</h3>
                     <div className="mt-4 mb-4">
                       <span className="text-3xl font-extrabold text-[#172228]">₹2,490</span>
                       <span className="text-xs text-slate-500 block mt-1">One-time &bull; Print Ready</span>
@@ -985,7 +985,7 @@ export default function WillRegistrationClient() {
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant statutory plain-paper draft</span>
+                        <span>Instant legal plain-paper draft</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -997,7 +997,7 @@ export default function WillRegistrationClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>SRO self-registration checklist</span>
+                        <span>SRO self-filing checklist</span>
                       </li>
                     </ul>
                   </div>
@@ -1017,15 +1017,15 @@ export default function WillRegistrationClient() {
                   </div>
                   <div>
                     <span className="text-xs font-black uppercase tracking-wider text-[#C65378]">Tier 2</span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-1">Lawyer Verified</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1">Lawyer Checked</h3>
                     <div className="mt-4 mb-4">
                       <span className="text-3xl font-extrabold text-[#172228]">₹4,990</span>
-                      <span className="text-xs text-slate-500 block mt-1">High Court Advocate Review</span>
+                      <span className="text-xs text-slate-500 block mt-1">High Court Lawyer Review</span>
                     </div>
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Personal review by succession counsel</span>
+                        <span>Personal review by estate counsel</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1033,11 +1033,11 @@ export default function WillRegistrationClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1 Phone consultation with advocate</span>
+                        <span>1 Phone talk with lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Sub-Registrar appointment booking pack</span>
+                        <span>SRO appointment booking pack</span>
                       </li>
                     </ul>
                   </div>
@@ -1046,7 +1046,7 @@ export default function WillRegistrationClient() {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white font-bold text-xs text-center hover:bg-[#a13c5d] transition-all cursor-pointer"
                   >
-                    Select Lawyer Verified
+                    Select Lawyer Checked
                   </a>
                 </div>
 
@@ -1057,12 +1057,12 @@ export default function WillRegistrationClient() {
                     <h3 className="text-lg font-bold text-slate-900 mt-1">Connect to Lawyer</h3>
                     <div className="mt-4 mb-4">
                       <span className="text-3xl font-extrabold text-[#172228]">₹9,990</span>
-                      <span className="text-xs text-slate-500 block mt-1">Senior Counsel Consultation</span>
+                      <span className="text-xs text-slate-500 block mt-1">Senior Counsel Talk</span>
                     </div>
                     <ul className="space-y-2 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Comprehensive 1-on-1 strategy call</span>
+                        <span>Full 1-on-1 strategy call</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1074,7 +1074,7 @@ export default function WillRegistrationClient() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Priority advocate accompaniment options</span>
+                        <span>Priority lawyer accompaniment options</span>
                       </li>
                     </ul>
                   </div>
@@ -1096,10 +1096,10 @@ export default function WillRegistrationClient() {
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                12. Frequently Asked Questions: Will Registration India
+                12. Frequently Asked Questions: Will Filing India
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Find direct answers to common questions about Will registration, state fees, and Section 31 home visits in India.
+                Find direct answers to common questions about Will filing, state fees, and Section 31 home visits in India.
               </p>
 
               <div className="space-y-3">
@@ -1135,11 +1135,11 @@ export default function WillRegistrationClient() {
             <section id="statutory-citations" className="scroll-target space-y-6 pt-6 border-t border-slate-200">
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  13. Statutory Citations &amp; Official Government Portals
+                  13. Legal Citations &amp; Official Government Portals
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-xs text-slate-600">
-                  <li>Registration Act, 1908: Section 18(e) (Optional registration of Wills), Section 31 (Registration at private residence), Section 40 &amp; 41 (Procedure on deposit and registration of Wills), Section 57(2) (Confidentiality of Book 3).</li>
-                  <li>Indian Succession Act, 1925: Section 63 (Execution of unprivileged Wills), Section 67 (Void bequests to attesting witnesses), Section 62 (Revocability of Wills).</li>
+                  <li>Filing Act, 1908: Section 18(e) (A Choice filing of Wills), Section 31 (Filing at private residence), Section 40 &amp; 41 (Step on deposit and filing of Wills), Section 57(2) (Confidentiality of Book 3).</li>
+                  <li>Indian Succession Act, 1925: Section 63 (Signing of unprivileged Wills), Section 67 (Void bequests to signing witnesses), Section 62 (Revocability of Wills).</li>
                   <li>Indian Stamp Act, 1899: Schedule I (Complete exemption of Wills and Codicils from stamp duty across India).</li>
                   <li>Bharatiya Sakshya Adhiniyam, 2023 / Indian Evidence Act, 1872: Section 114 (Presumption of regularity of official acts by public officers).</li>
                   <li>Supreme Court Landmark Precedents: <em>Pentakota Satyanarayana v. Pentakota Seetharanyam (2005) 8 SCC 67</em>; <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (1959) Supp 2 SCR 426</em>.</li>
@@ -1148,7 +1148,7 @@ export default function WillRegistrationClient() {
 
               <div>
                 <h3 className="text-xs font-black uppercase tracking-wider text-slate-700 mb-2.5">
-                  Verified Government Registration Portals
+                  Checked Government Filing Portals
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   <a
@@ -1201,7 +1201,7 @@ export default function WillRegistrationClient() {
 
               <div>
                 <h3 className="text-xs font-black uppercase tracking-wider text-slate-700 mb-2.5">
-                  Related Internal Succession Guides
+                  Related Internal Estate Guides
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   <Link
@@ -1232,7 +1232,7 @@ export default function WillRegistrationClient() {
                     href="/tools/probate-checker"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 text-slate-700 hover:text-[#C65378] text-xs font-semibold transition-colors"
                   >
-                    Probate Requirement Checker
+                    Probate Rule Checker
                   </Link>
                   <Link
                     href="/pricing"
@@ -1243,7 +1243,29 @@ export default function WillRegistrationClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1262,16 +1284,16 @@ export default function WillRegistrationClient() {
                     rel="noopener noreferrer"
                     className="font-bold text-slate-900 text-sm hover:text-[#C65378] transition-colors block"
                   >
-                    Advocate Anuj Anand Malik
+                    Lawyer Anuj Anand Malik
                   </a>
                   <div className="text-[11px] font-semibold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                   <div className="text-[10px] text-slate-500">High Court Bar Association</div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 mt-3 leading-relaxed">
-                Specialist in testamentary law, Sub-Registrar execution, probate petitions, and dispute-proof estate planning across India.
+                Expert in Will law, SRO signing, probate petitions, and fight-proof estate planning across India.
               </p>
               <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
@@ -1297,17 +1319,17 @@ export default function WillRegistrationClient() {
                 CONFIDENTIAL LEGAL DESK
               </div>
               <h3 className="text-lg md:text-xl font-bold leading-tight mb-2">
-                Need Sub-Registrar Registration Assistance?
+                Need SRO Filing Help?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed mb-5">
-                Our advocates handle SRO token booking, witness coordination, and Section 31 home visits across major Indian cities.
+                Our lawyers handle SRO token booking, witness coordination, and Section 31 home visits across major Indian cities.
               </p>
               <a
                 href="/start"
                 onClick={handleStartDraft}
                 className="w-full block py-3 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white font-bold text-xs transition-all shadow-md cursor-pointer"
               >
-                Schedule SRO Registration
+                Schedule SRO Filing
               </a>
               <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-center gap-2 text-xs text-slate-300">
                 <ShieldCheck className="w-3.5 h-3.5 text-rose-300" />
@@ -1323,7 +1345,7 @@ export default function WillRegistrationClient() {
             <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs">
               <div className="text-xs font-black uppercase tracking-wider text-slate-700 mb-3 flex items-center gap-1.5">
                 <Award className="w-4 h-4 text-[#C65378]" />
-                <span>Our Registration Guarantees</span>
+                <span>Our Filing Guarantees</span>
               </div>
               <ul className="space-y-2.5 text-xs text-slate-600">
                 <li className="flex items-start gap-2">
@@ -1347,7 +1369,7 @@ export default function WillRegistrationClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Digital Safe Vault:</strong> Lifelong encrypted backup of registered Will details.
+                    <strong>Digital Safe Vault:</strong> Lifelong encrypted backup of filed Will details.
                   </span>
                 </li>
               </ul>
@@ -1387,7 +1409,7 @@ export default function WillRegistrationClient() {
               >
                 <div className="font-bold text-xs text-slate-900">Will Drafting Pricing</div>
                 <div className="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1 text-[#C65378]">
-                  <span>Starting ₹2,490 with advocate review</span>
+                  <span>Starting ₹2,490 with lawyer review</span>
                   <ArrowRight className="w-3 h-3" />
                 </div>
               </Link>
@@ -1420,7 +1442,7 @@ export default function WillRegistrationClient() {
                   href="/blogs/notarized-will-vs-registered-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Notarized vs Registered Will
+                  Notarized vs Filed Will
                 </Link>
               </div>
             </div>

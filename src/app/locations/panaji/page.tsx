@@ -142,7 +142,7 @@ export default function PanajiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Panaji: Goa Civil Code Will Guide",
         description:
-          "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public.",
+          "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade asset estate, and Notary Public.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function PanajiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Panaji - Estate Planning & Civil Registrar Assistance",
         description:
-          "Professional Will drafting, advocate verification, Goa Civil Code compliance, and Civil Registrar registration support across Panaji, Miramar.",
+          "Professional Will drafting, lawyer check, Goa Civil Code compliance, and Civil Registrar filing support across Panaji, Miramar.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -270,13 +270,13 @@ export default function PanajiLocationPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Account for Communion of Assets",
-            text: "Confirm your matrimonial property regime. For default communion of assets marriages, ensure the Will covers only the testator's undivided 50% half-share (meeação).",
+            text: "Confirm your matrimonial asset regime. For default communion of assets marriages, ensure the Will covers only the Will maker's undivided 50% half-share (meeação).",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Draft Customized Goa Succession Clauses",
-            text: "Incorporate legally verified clauses specifying bequests, executor appointments, Form I & XIV details, Comunidade plot status, and revocation of earlier wills.",
+            text: "Incorporate legally checked clauses specifying bequests, executor appointments, Form I & XIV details, Comunidade plot status, and revocation of earlier wills.",
           },
           {
             "@type": "HowToStep",
@@ -288,7 +288,7 @@ export default function PanajiLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Register Before the Civil Registrar of Tiswadi",
-            text: "Appear at the Civil Registrar office in Panaji with two independent adult witnesses for identity verification, thumbprinting, and official record entry.",
+            text: "Appear at the Civil Registrar office in Panaji with two independent adult witnesses for identity check, thumbprinting, and official record entry.",
           },
         ],
       },

@@ -48,16 +48,16 @@ const TOC_ITEMS = [
   { id: "statutory-validity", label: "1. Legal Validity of Gujarati Will" },
   { id: "gujarati-vasiyatnama-template", label: "2. Native Gujarati Vasiyatnama Format" },
   { id: "gujarati-english-glossary", label: "3. Legal Terms Glossary" },
-  { id: "gujarat-sro-registration-sop", label: "4. Gujarat SRO Registration SOP" },
-  { id: "plain-paper-vs-registered", label: "5. Plain Paper vs Registered Will" },
-  { id: "agricultural-land-tenancy-act", label: "6. Agricultural Land Bequest Rules" },
-  { id: "section-63-checklist", label: "7. Section 63 Execution Checklist" },
-  { id: "succession-calculators-tools", label: "8. Inheritance & Tax Calculators" },
+  { id: "gujarat-sro-registration-sop", label: "4. Gujarat SRO Filing SOP" },
+  { id: "plain-paper-vs-registered", label: "5. Plain Paper vs Filed Will" },
+  { id: "agricultural-land-tenancy-act", label: "6. Farm Land Bequest Rules" },
+  { id: "section-63-checklist", label: "7. Section 63 Signing Checklist" },
+  { id: "succession-calculators-tools", label: "8. Estate & Tax Tools" },
   { id: "practical-regional-case-studies", label: "9. Gujarat Case Studies (Ahmedabad, Surat)" },
-  { id: "copy-paste-attestation-clause", label: "10. Copyable Attestation & Medical Form" },
-  { id: "institutional-profile", label: "11. Legal Backing & Advocate Profile" },
+  { id: "copy-paste-attestation-clause", label: "10. Copyable Witness Signing & Medical Form" },
+  { id: "institutional-profile", label: "11. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Portals" },
+  { id: "statutory-citations", label: "13. Legal Citations & Portals" },
 ];
 
 const FAQS = [
@@ -66,7 +66,7 @@ const FAQS = [
     a: "હા, સંપૂર્ણપણે કાયદેસર છે. ભારતીય ઉત્તરાધિકાર અધિનિયમ, 1925 (Indian Succession Act, 1925) ની કલમ 63 મુજબ વિલ કોઈપણ ભાષામાં લખી શકાય છે. ગુજરાતી ભાષામાં સાદા કાગળ પર લખેલું વસીયતનામું, જો તેના પર ટેસ્ટેટરની સહી અને બે પુખ્ત સાક્ષીઓની સાક્ષી હોય, તો ભારતીય અદાલતોમાં 100% માન્ય છે.",
   },
   {
-    q: "શું ગુજરાતમાં વસીયતનામું સ્ટેમ્પ પેપર પર બનાવવું ફરજિયાત છે? (Is stamp paper mandatory in Gujarat?)",
+    q: "શું ગુજરાતમાં વસીયતનામું સ્ટેમ્પ પેપર પર બનાવવું ફરજિયાત છે? (Is stamp paper needed in Gujarat?)",
     a: "ના, વસીયતનામું કોઈપણ સ્ટેમ્પ પેપર પર બનાવવું ફરજિયાત નથી. ગુજરાત સ્ટેમ્પ અધિનિયમ, 1958 અને ભારતીય સ્ટેમ્પ કાયદા હેઠળ વસીયતનામા પર સ્ટેમ્પ ડ્યુટીમાંથી સંપૂર્ણ મુક્તિ છે. તમે સાદા A4 કાગળ અથવા ગ્રીન લેજર પેપર પર વિલ લખી શકો છો.",
   },
   {
@@ -74,11 +74,11 @@ const FAQS = [
     a: "કલમ 63(c) મુજબ ઓછામાં ઓછા બે (2) પુખ્ત અને સક્ષમ સાક્ષીઓની સહી હોવી ફરજિયાત છે. બંને સાક્ષીઓએ ટેસ્ટેટરને સહી કરતા રૂબરૂ જોયેલા હોવા જોઈએ. સૌથી મહત્વનો નિયમ: કલમ 67 મુજબ વિલના લાભાર્થી (વારસદાર) કે તેના પતિ/પત્ની સાક્ષી બની શકતા નથી. સાક્ષી હંમેશા તટસ્થ વ્યક્તિ (જેમ કે ફેમિલી ડૉક્ટર, સીએ કે મિત્ર) હોવા જોઈએ.",
   },
   {
-    q: "શું ગુજરાતમાં વસીયતનામાની નોંધણી (Registration) કરાવવી ફરજિયાત છે? (Is registration mandatory?)",
-    a: "નોંધણી અધિનિયમ, 1908 (Registration Act) ની કલમ 18(e) મુજબ વસીયતનામાની રજિસ્ટ્રેશન મરજિયાત (optional) છે. બિન-નોંધાયેલું વિલ પણ કાયદેસર છે. જોકે સબ-રજિસ્ટ્રાર કચેરી (SRO) ખાતે રજિસ્ટ્રેશન કરાવવાથી બનાવટી દસ્તાવેજ કે દબાણના આક્ષેપો સામે મજબૂત કાનૂની પુરાવો મળે છે.",
+    q: "શું ગુજરાતમાં વસીયતનામાની નોંધણી (Filing) કરાવવી ફરજિયાત છે? (Is filing needed?)",
+    a: "નોંધણી અધિનિયમ, 1908 (Filing Act) ની કલમ 18(e) મુજબ વસીયતનામાની રજિસ્ટ્રેશન મરજિયાત (a choice) છે. બિન-નોંધાયેલું વિલ પણ કાયદેસર છે. જોકે સબ-રજિસ્ટ્રાર કચેરી (SRO) ખાતે રજિસ્ટ્રેશન કરાવવાથી બનાવટી દસ્તાવેજ કે દબાણના આક્ષેપો સામે મજબૂત કાનૂની પુરાવો મળે છે.",
   },
   {
-    q: "ખેતીની જમીનનું વસીયતનામું બિન-ખેડૂતને કરી શકાય? (Can agricultural land in Gujarat be bequeathed to non-agriculturists?)",
+    q: "ખેતીની જમીનનું વસીયતનામું બિન-ખેડૂતને કરી શકાય? (Can farm land in Gujarat be bequeathed to non-agriculturists?)",
     a: "મુંબઈ ગણોત વહીવટ અને ખેતીની જમીન અધિનિયમ, 1948 (Bombay Tenancy Act) ની કલમ 63 અને સુપ્રીમ કોર્ટના ચુકાદા મુજબ, ખેતીની જમીન વસીયતનામા દ્વારા પણ બિન-ખેડૂત વ્યક્તિને આપી શકાતી નથી. જો વિલ દ્વારા બિન-ખેડૂતને ખેતીની જમીન આપવામાં આવે તો તે ટ્રાન્સફર રદબાતલ ઠરી શકે છે અને કલમ 84C હેઠળ જમીન સરકાર હસ્તક જઈ શકે છે.",
   },
   {
@@ -90,24 +90,24 @@ const FAQS = [
     a: "હા, ટેસ્ટેટર પોતાના જીવનકાળ દરમિયાન અને સ્વસ્થ માનસિક સ્થિતિમાં હોય ત્યાં સુધી ગમે તેટલી વાર નવું વિલ બનાવી શકે છે અથવા જૂનું વિલ રદ (Revoke) કરી શકે છે. કલમ 62 મુજબ બનાવેલું છેલ્લું વસીયતનામું જ કાયદેસર અમલમાં આવે છે. નાના ફેરફારો માટે કોડિસિલ (Codicil) પણ બનાવી શકાય છે.",
   },
   {
-    q: "વિદેશમાં રહેતા NRI ગુજરાતીઓ પોતાની ગુજરાતની મિલકત માટે વિલ કેવી રીતે બનાવી શકે? (How can NRIs draft a Will for Gujarat property?)",
+    q: "વિદેશમાં રહેતા NRI ગુજરાતીઓ પોતાની ગુજરાતની મિલકત માટે વિલ કેવી રીતે બનાવી શકે? (How can NRIs draft a Will for Gujarat asset?)",
     a: "NRI ગુજરાતીઓ ભારતીય મિલકતો (અમદાવાદ, વડોદરા, સુરત, રાજકોટ વગેરે) માટે સ્વતંત્ર ભારતીય વિલ બનાવી શકે છે. તેઓ વિદેશમાં બે સાક્ષીઓની હાજરીમાં વિલ સહી કરીને ભારતીય વાણિજ્ય દૂતાવાસ (Indian Embassy/Consulate) માં નોટરાઈઝ અથવા એપોસ્ટિલ કરાવી શકે છે.",
   },
 ];
 
 const GLOSSARY_TERMS = [
-  { gu: "વસીયતનામું (Vasiyatnama)", en: "Last Will and Testament", desc: "A person's legal declaration of the intention regarding disposal of their property after death." },
-  { gu: "વસીયતકર્તા / ટેસ્ટેટર (Testator)", en: "Testator", desc: "The individual of sound mind who executes and signs the Will." },
-  { gu: "વહીવટકર્તા (Executor)", en: "Executor", desc: "The trusted fiduciary appointed by the testator to distribute assets and execute instructions." },
-  { gu: "લાભાર્થી / વારસદાર (Legatee)", en: "Beneficiary / Legatee", desc: "The person or entity named in the Will to receive movable or immovable assets." },
-  { gu: "સ્થાવર મિલકત (Sthavar Milkat)", en: "Immovable Property", desc: "Real estate assets including land, houses, residential flats, shops, and agricultural plots." },
+  { gu: "વસીયતનામું (Vasiyatnama)", en: "Last Will and Testament", desc: "A person's legal declaration of the intention regarding disposal of their asset after death." },
+  { gu: "વસીયતકર્તા / ટેસ્ટેટર (Testator)", en: "Testator", desc: "The single of sound mind who executes and signs the Will." },
+  { gu: "વહીવટકર્તા (Executor)", en: "Executor", desc: "The trusted fiduciary appointed by the Will maker to distribute assets and execute instructions." },
+  { gu: "લાભાર્થી / વારસદાર (Legatee)", en: "Beneficiary / Legatee", desc: "The person or entity named in the Will to receive cash or land assets." },
+  { gu: "સ્થાવર મિલકત (Sthavar Milkat)", en: "Immovable Property", desc: "Real estate assets including land, houses, home flats, shops, and farm plots." },
   { gu: "જંગમ મિલકત (Jangam Milkat)", en: "Movable Property", desc: "Liquid and portable assets including bank accounts, fixed deposits, gold jewellery, mutual funds, and cars." },
-  { gu: "સાક્ષી (Attesting Witness)", en: "Attesting Witness", desc: "Independent person who sees the testator sign the Will and attests in the testator's presence." },
-  { gu: "અવશેષ મિલકત (Residuary Estate)", en: "Residuary Estate", desc: "All remaining assets not specifically named or acquired after executing the Will." },
-  { gu: "કોડિસિલ (Codicil)", en: "Codicil", desc: "A supplementary legal document making minor amendments or additions to an existing Will." },
+  { gu: "સાક્ષી (Attesting Witness)", en: "Attesting Witness", desc: "Independent person who sees the Will maker sign the Will and attests in the Will maker's presence." },
+  { gu: "અવશેષ મિલકત (Residuary Estate)", en: "Residuary Estate", desc: "All remaining assets not mainly named or acquired after signing the Will." },
+  { gu: "કોડિસિલ (Codicil)", en: "Codicil", desc: "A supplementary legal paper making minor amendments or additions to an existing Will." },
   { gu: "પ્રોબેટ (Probate)", en: "Probate", desc: "Official court certification under court seal confirming the legal validity of a Will." },
-  { gu: "સ્વ-ઉપાર્જિત મિલકત (Self-Acquired)", en: "Self-Acquired Property", desc: "Property purchased with individual earnings over which the testator has 100% testamentary right." },
-  { gu: "વારસાગત મિલકત (Ancestral)", en: "Ancestral Property", desc: "Property inherited through 4 generations of coparcenary, where only the undivided coparcenary share can be willed." },
+  { gu: "સ્વ-ઉપાર્જિત મિલકત (Self-Acquired)", en: "Self-Acquired Property", desc: "Asset purchased with single earnings over which the Will maker has 100% Will right." },
+  { gu: "વારસાગત મિલકત (Ancestral)", en: "Ancestral Property", desc: "Asset inherited through 4 generations of joint, where only the undivided joint share can be willed." },
 ];
 
 export default function WillFormatGujaratiClient() {
@@ -123,7 +123,7 @@ export default function WillFormatGujaratiClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-validity");
+  const [activeId, setActiveId] = useState<string>("legal-validity");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
   const [copiedAttestation, setCopiedAttestation] = useState<boolean>(false);
@@ -352,7 +352,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 59, 63 &amp; 67 of the Indian Succession Act, 1925, Section 18(e)
-                of the Registration Act, 1908, and Gujarat Registration Rules, 1970.
+                of the Filing Act, 1908, and Gujarat Filing Rules, 1970.
               </p>
             </div>
           </aside>
@@ -435,7 +435,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
                 <span>કાનૂની સ્થાપના અને અધિકારક્ષેત્ર</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Rules: Will Legal Validity in Gujarat
+                1. Legal Rules: Will Legal Validity in Gujarat
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -453,7 +453,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
                   છે.
                 </p>
                 <p>
-                  ગુજરાત રજિસ્ટ્રેશન રૂલ્સ, ૧૯૭૦ (Gujarat Registration Rules, 1970) મુજબ વસીયતનામાની
+                  ગુજરાત રજિસ્ટ્રેશન રૂલ્સ, ૧૯૭૦ (Gujarat Filing Rules, 1970) મુજબ વસીયતનામાની
                   નોંધણી સ્થાનિક સબ-રજિસ્ટ્રાર કચેરી (SRO) ખાતે બુક-૩ (Book III) માં કરવામાં આવે છે.
                   રજિસ્ટ્રેશન મરજિયાત હોવા છતાં, તે ભવિષ્યમાં વારસદારો વચ્ચે થતા મુકદ્દમા સામે સુરક્ષા કવચ
                   પૂરું પાડે છે.
@@ -640,7 +640,7 @@ ______________________________
                 <span>સબ-રજિસ્ટ્રાર કચેરી નોંધણી પ્રક્રિયા</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Step-by-Step SOP: Will Registration in Gujarat
+                4. Step-by-Step SOP: Will Filing in Gujarat
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -703,7 +703,7 @@ ______________________________
                 <span>કાનૂની સરખામણી કોષ્ટક</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Comparison: Plain Paper vs Registered Will
+                5. Comparison: Plain Paper vs Filed Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 સાદા કાગળ પર કરેલા વિલ અને સબ-રજિસ્ટ્રાર કચેરીએ નોંધાયેલા વિલ વચ્ચેનો કાનૂની તફાવત:
@@ -717,7 +717,7 @@ ______________________________
                       <th className="py-3 px-4">સરખામણી પરિમાણ</th>
                       <th className="py-3 px-4">સાદા કાગળ પર ગુજરાતી વિલ</th>
                       <th className="py-3 px-4">નોંધાયેલું ગુજરાતી વિલ (SRO)</th>
-                      <th className="py-3 px-4">વિલ વગર અવસાન (Intestate)</th>
+                      <th className="py-3 px-4">વિલ વગર અવસાન (No-Will)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -763,7 +763,7 @@ ______________________________
                 <span>ખેતીની જમીન અને ગણોત ધારો</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Gujarat Tenancy Act: Agricultural Land Bequest
+                6. Gujarat Tenancy Act: Farm Land Bequest
               </h3>
               <div className="bg-amber-50/70 border border-amber-200/90 rounded-2xl p-5 space-y-3 text-xs sm:text-sm text-slate-800 leading-relaxed">
                 <div className="font-extrabold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
@@ -796,7 +796,7 @@ ______________________________
                 <span>કાનૂની પૂર્તતા ચેકલિસ્ટ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Crucial Clauses: Section 63 Execution Checklist
+                7. Crucial Clauses: Section 63 Signing Checklist
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs flex items-start gap-2.5">
@@ -837,7 +837,7 @@ ______________________________
                 <span>સંબંધિત કાનૂની અને ટેક્સ ટૂલ્સ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Succession Tools &amp; Capital Gains Calculators
+                8. Estate Tools &amp; Capital Gains Tools
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 વારસાગત મિલકતો પર ટેક્સ બચાવવા અને કાયદેસર હિસ્સાની ગણતરી કરવા માટે અમારા ઇન્ટરેક્ટિવ
@@ -854,7 +854,7 @@ ______________________________
                       <Percent className="w-4 h-4" />
                     </div>
                     <div className="font-extrabold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Capital Gains Tax Calculator
+                      Capital Gains Tax Tool
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       વારસાગત મિલકત વેચતી વખતે બજેટ ૨૦૨૪ હેઠળ ૧૨.૫% ફ્લેટ વિ. ૨૦% ઇન્ડેક્સેશન ટેક્સની સરખામણી
@@ -876,7 +876,7 @@ ______________________________
                       <Users className="w-4 h-4" />
                     </div>
                     <div className="font-extrabold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Legal Heir Share Calculator
+                      Legal Heir Share Tool
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       હિન્દુ ઉત્તરાધિકાર કાયદા હેઠળ વર્ગ-૧ અને વર્ગ-૨ ના કાયદેસર વારસદારોના હિસ્સાની આપમેળે
@@ -898,7 +898,7 @@ ______________________________
                       <Scale className="w-4 h-4" />
                     </div>
                     <div className="font-extrabold text-sm text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       તમારા વિલ માટે હાઇકોર્ટ પ્રોબેટની જરૂરિયાત છે કે નહીં તે કાયદાકીય નિયમો મુજબ ચેક કરો.
@@ -956,7 +956,7 @@ ______________________________
                 <span>કાનૂની અટેસ્ટેશન અને ફિટનેસ ફોર્મેટ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Copy-Paste Witness Attestation Clause in Gujarati
+                10. Copy-Paste Witness Witness Signing Clause in Gujarati
               </h3>
 
               {/* Clause Box 1 */}
@@ -992,7 +992,7 @@ ______________________________
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    ડૉક્ટરનું માનસિક સ્વસ્થતા પ્રમાણપત્ર (Medical Fitness Certificate)
+                    ડૉક્ટરનું માનસિક સ્વસ્થતા પ્રમાણપત્ર (Medical Fitness Paper)
                   </div>
                   <button
                     type="button"
@@ -1026,7 +1026,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                 <span>કાનૂની કુશળતા અને અનુભવ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Institutional Profile: Succession Legal Bench
+                11. Institutional Profile: Estate Legal Bench
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
@@ -1035,7 +1035,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Gujarati Testamentary &amp; Succession Desk
+                      WillDrafting.in Gujarati Will &amp; Estate Desk
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
@@ -1132,7 +1132,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                 <span>સત્તાવાર કાનૂની પોર્ટલ અને સંદર્ભો</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Gujarat Revenue Portals
+                13. Legal Citations &amp; Gujarat Revenue Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
@@ -1210,19 +1210,41 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      SRO Will Registration Service
+                      SRO Will Filing Service
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1235,21 +1257,21 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate petitions, Section
-                63 Will execution compliance, and NRI estate structuring across Gujarat.
+                Expert in Indian testamentary jurisprudence, High Court probate petitions, Section
+                63 Will signing compliance, and NRI estate structuring across Gujarat.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1300,7 +1322,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>સંપર્ક ફોર્મ ભરો (Advocate Consultation)</span>
+                  <span>સંપર્ક ફોર્મ ભરો (Lawyer Talk)</span>
                 </Link>
               </div>
 

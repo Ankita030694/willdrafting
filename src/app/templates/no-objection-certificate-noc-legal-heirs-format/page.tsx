@@ -90,7 +90,7 @@ export default function NoObjectionCertificatePage() {
         url: canonicalUrl,
         name: "Legal Heir NOC Format for Property Transfer | WillDrafting",
         description:
-          "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration.",
+          "Download legally valid noc format from legal heirs for asset transfer, bank claims & vehicle name change. Understand Section 17 Filing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function NoObjectionCertificatePage() {
         name: "No Objection Certificate (NOC) from Legal Heirs Format",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted No Objection Certificate (NOC) formats from legal heirs for property mutation, bank account claims, RTO vehicle transfer, and.",
+          "Lawyer-vetted No Objection Paper (NOC) formats from legal heirs for asset name change, bank account claims, RTO vehicle transfer, and.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -151,7 +151,7 @@ export default function NoObjectionCertificatePage() {
             name: "Is a plain NOC on stamp paper sufficient to give up my share in inherited property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 17(1)(b) of the Registration Act, 1908 and the Supreme Court ruling in Yellapu Uma Maheswari v. Buddha Jagadheeswararao (2015), any instrument that purports to extinguish, create, or transfer an undivided share in immovable property worth over Rs. 100 must be compulsorily registered. A simple NOC only permits administrative municipal mutation or utility transfer. To legally surrender co-ownership title, co-heirs must execute a registered Relinquishment Deed (Haq Tyag) or Gift Deed.",
+              text: "No. Under Section 17(1)(b) of the Filing Act, 1908 and the Supreme Court ruling in Yellapu Uma Maheswari v. Buddha Jagadheeswararao (2015), any instrument that purports to extinguish, create, or transfer an undivided share in land asset worth over Rs. 100 must be compulsorily filed. A simple NOC only permits office city name change or utility transfer. To legally surrender co-ownership title, co-heirs must execute a filed Release Deed (Haq Tyag) or Gift Deed.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function NoObjectionCertificatePage() {
             name: "What is the non-judicial stamp paper value required for a legal heir NOC affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "For administrative purposes like bank deceased claims, municipal mutation, or RTO vehicle transfer, a legal heir NOC affidavit is printed on non-judicial stamp paper of Rs. 10, Rs. 20, Rs. 50, or Rs. 100 depending on state stamp schedules (such as Rs. 100 in Maharashtra and Uttar Pradesh, Rs. 50 in Karnataka, and Rs. 10 in Delhi) and attested by a Notary Public or Oath Commissioner.",
+              text: "For office purposes like bank deceased claims, city name change, or RTO vehicle transfer, a legal heir NOC sworn note is printed on non-judicial stamp paper of Rs. 10, Rs. 20, Rs. 50, or Rs. 100 depending on state stamp schedules (such as Rs. 100 in Maharashtra and Uttar Pradesh, Rs. 50 in Karnataka, and Rs. 10 in Delhi) and attested by a Notary Public or Oath Commissioner.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function NoObjectionCertificatePage() {
             name: "Can a sibling who signed an NOC for property transfer later file a partition suit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Because an unregistered NOC does not extinguish title under the Transfer of Property Act, a sibling who signed an NOC for municipal mutation can file a partition suit in civil court within the 12-year limitation period. The Supreme Court has repeatedly held that mutation in municipal records does not confer or extinguish title. A registered Relinquishment Deed is required to permanently bar future partition claims.",
+              text: "Yes. Because an plain NOC does not extinguish title under the Transfer of Property Act, a sibling who signed an NOC for city name change can file a split suit in civil court within the 12-year limitation period. The Supreme Court has repeatedly held that name change in city records does not confer or extinguish title. A filed Release Deed is required to permanently bar future split claims.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function NoObjectionCertificatePage() {
             name: "What are the RBI rules for legal heir NOC in deceased bank account claims?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under RBI Master Circular DBOD.No.Leg.BC.21/09.07.006/2014-15, when a deceased depositor leaves savings or fixed deposit accounts without nomination, banks permit settlement to one legal heir provided all other Class I legal heirs submit a notarized No Objection Certificate alongside an Indemnity Bond (Form Annexure-A) and Letter of Disclaimer (Annexure-C).",
+              text: "Under RBI Master Circular DBOD.No.Leg.BC.21/09.07.006/2014-15, when a deceased depositor leaves savings or fixed deposit accounts without nomination, banks permit deal to one legal heir provided all other Class I legal heirs submit a notarized No Objection Paper alongside an Indemnity Bond (Form Annexure-A) and Letter of Disclaimer (Annexure-C).",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function NoObjectionCertificatePage() {
             name: "How is an NOC from legal heirs used for RTO vehicle RC transfer after death?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Rule 56 of the Central Motor Vehicles Rules, 1989 and Section 50 of the Motor Vehicles Act, 1988, legal heirs must apply via RTO Form 31 within 3 months of the owner's death. When multiple legal heirs survive, all other heirs must sign a joint No Objection Affidavit on stamp paper agreeing that the vehicle registration certificate (RC) be transferred to a single surviving heir.",
+              text: "Under Rule 56 of the Central Motor Vehicles Rules, 1989 and Section 50 of the Motor Vehicles Act, 1988, legal heirs must apply via RTO Form 31 within 3 months of the owner's death. When multiple legal heirs survive, all other heirs must sign a joint No Objection Sworn Note on stamp paper agreeing that the vehicle filing paper (RC) be transferred to a single surviving heir.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function NoObjectionCertificatePage() {
             name: "Is an NOC required from all legal heirs for electricity and water connection transfer?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. State power distribution companies and municipal water boards require an Indemnity Bond and a signed NOC on stamp paper from all other legal heirs before transferring an existing utility meter from the deceased parent's name to a single heir.",
+              text: "Yes. State power split companies and city water boards require an Indemnity Bond and a signed NOC on stamp paper from all other legal heirs before transferring an existing utility meter from the deceased parent's name to a single heir.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function NoObjectionCertificatePage() {
             name: "Can an NRI legal heir execute a valid NOC from outside India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An NRI legal heir can execute the NOC affidavit in their overseas country of residence before a Notary Public or the Indian Embassy / Consulate. Once received in India, the document must be adjudicated and stamped under Section 18 of the Indian Stamp Act, 1899 within three months of arrival.",
+              text: "Yes. An NRI legal heir can execute the NOC sworn note in their overseas country of residence before a Notary Public or the Indian Embassy / Consulate. Once received in India, the paper must be adjudicated and stamped under Section 18 of the Indian Stamp Act, 1899 within three months of arrival.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function NoObjectionCertificatePage() {
             name: "What is the difference between a probate consent NOC and a property release deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A probate consent NOC is an affidavit filed in the High Court or District Court confirming that the legal heir has no objection to the grant of probate or letters of administration under a specific Will. It validates testamentary execution. A Relinquishment Deed, by contrast, is an inter-vivos deed registered at the SRO when there is no Will, transferring an undivided ancestral share to a co-heir.",
+              text: "A probate consent NOC is an sworn note filed in the High Court or District Court confirming that the legal heir has no objection to the grant of probate or letters of care under a specific Will. It validates Will signing. A Release Deed, by contrast, is an inter-vivos deed filed at the SRO when there is no Will, transferring an undivided family share to a co-heir.",
             },
           },
         ],

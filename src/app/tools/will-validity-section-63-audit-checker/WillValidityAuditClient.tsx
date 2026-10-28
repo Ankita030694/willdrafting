@@ -45,8 +45,8 @@ import {
 
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. How to Check Will Validity in India" },
-  { id: "interactive-audit-checker", label: "2. Interactive Section 63 Audit Checker" },
-  { id: "section-63-three-pillars", label: "3. Section 63: 3 Mandatory Execution Rules" },
+  { id: "interactive-audit-checker", label: "2. Free Section 63 Audit Checker" },
+  { id: "section-63-three-pillars", label: "3. Section 63: 3 Needed Signing Rules" },
   { id: "section-67-witness-trap", label: "4. Section 67 Witness Disqualification Trap" },
   { id: "suspicious-circumstances-test", label: "5. Supreme Court Suspicious Circumstances" },
   { id: "plain-paper-vs-registered", label: "6. Plain Paper, Handwritten, eSign & Video" },
@@ -55,42 +55,42 @@ const TOC_ITEMS = [
   { id: "step-by-step-remediation-sop", label: "9. Step-by-Step SOP: Fix a Defective Will" },
   { id: "practical-case-studies", label: "10. Real Case Studies: Valid vs Void Wills" },
   { id: "legal-clause-templates", label: "11. Copy-Paste Section 63(c) & Doctor Clauses" },
-  { id: "institutional-profile", label: "12. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "12. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Portals" },
 ];
 
 const FAQS = [
   {
     q: "How do I check if a Will is valid in India?",
-    a: "You can check if a Will is valid by auditing four statutory requirements under the Indian Succession Act, 1925: (1) Under Section 59, the testator must be at least 18 years old and of sound mind, (2) Under Section 61, the Will must be free from fraud, coercion, or undue influence, (3) Under Section 63(a) and 63(b), the testator must sign or affix a thumb mark with the clear intention of executing a Will, and (4) Under Section 63(c), at least two witnesses must attest the Will in the testator's presence.",
+    a: "You can check if a Will is valid by auditing four legal rules under the Indian Succession Act, 1925: (1) Under Section 59, the Will maker must be at least 18 years old and of sound mind, (2) Under Section 61, the Will must be free from fraud, coercion, or undue influence, (3) Under Section 63(a) and 63(b), the Will maker must sign or affix a thumb mark with the clear intention of signing a Will, and (4) Under Section 63(c), at least two witnesses must attest the Will in the Will maker's presence.",
   },
   {
-    q: "Is a plain-paper DIY Will valid without registration or stamp paper?",
-    a: "Yes. Under Indian law, a Will attracts zero stamp duty and does not need to be written on stamp paper. Furthermore, Section 18(e) of the Registration Act, 1908 makes Will registration completely optional. A Will written or printed on plain white paper is 100% legally valid if it strictly satisfies the two-witness execution rules of Section 63 of the Indian Succession Act.",
+    q: "Is a plain-paper DIY Will valid without filing or stamp paper?",
+    a: "Yes. Under Indian law, a Will attracts zero stamp duty and does not need to be written on stamp paper. Also, Section 18(e) of the Filing Act, 1908 makes Will filing completely a choice. A Will written or printed on plain white paper is 100% legally valid if it strictly satisfies the two-witness signing rules of Section 63 of the Indian Succession Act.",
   },
   {
-    q: "What happens if a beneficiary or their spouse signs as an attesting witness?",
-    a: "This is one of the most common DIY Will mistakes. Under Section 67 of the Indian Succession Act, 1925, if an attesting witness (or their wife or husband) is given any property or cash in the Will, that specific gift becomes legally void. While Section 67 strictly voids the gift in Christian and Parsi Wills, Indian courts also treat a beneficiary witness in Hindu, Sikh, and Jain Wills as a grave suspicious circumstance indicating undue influence.",
+    q: "What happens if a heir or their spouse signs as an signing witness?",
+    a: "This is one of the most common DIY Will mistakes. Under Section 67 of the Indian Succession Act, 1925, if an signing witness (or their wife or husband) is given any asset or cash in the Will, that specific gift becomes legally void. While Section 67 strictly voids the gift in Christian and Parsi Wills, Indian courts also treat a heir witness in Hindu, Sikh, and Jain Wills as a grave suspicious circumstance indicating undue influence.",
   },
   {
-    q: "Does lack of a doctor's medical certificate make a Will invalid?",
-    a: "No. Section 63 does not require a doctor's certificate for a Will to be legally valid. However, if the testator is over 65 years old, hospitalized, or suffering from physical illness, rival family members often challenge the Will under Section 59 claiming dementia or mental incapacity. Having a registered MBBS or MD doctor sign a mental fitness certificate on the same day makes the Will nearly impossible to challenge on capacity grounds.",
+    q: "Does lack of a doctor's medical paper make a Will invalid?",
+    a: "No. Section 63 does not require a doctor's paper for a Will to be legally valid. However, if the Will maker is over 65 years old, hospitalized, or suffering from physical illness, rival family members often fight the Will under Section 59 claiming dementia or mental incapacity. Having a filed MBBS or MD doctor sign a mental fitness paper on the same day makes the Will nearly impossible to fight on capacity grounds.",
   },
   {
     q: "Is an Aadhaar eSign, DocuSign, or digitally signed PDF Will valid in India?",
-    a: "No, it is 100% void. Under Section 1(4) read with Entry 3 of the First Schedule to the Information Technology Act, 2000, testamentary dispositions and Wills are explicitly excluded from digital signature validity. You can draft your Will online, but you must print it on physical paper and sign it in wet ink (or physical thumbprint) in front of two physical witnesses.",
+    a: "No, it is 100% void. Under Section 1(4) read with Entry 3 of the First Schedule to the Information Technology Act, 2000, Will gifts and Wills are explicitly excluded from digital signature validity. You can draft your Will online, but you must print it on physical paper and sign it in wet ink (or physical thumbprint) in front of two physical witnesses.",
   },
   {
     q: "Is an unwitnessed handwritten Will valid in India?",
-    a: "No. Some foreign countries recognize unwitnessed handwritten (holographic) Wills, but Indian law does not. Under Section 63(c) of the Indian Succession Act, every unprivileged civilian Will in India, whether handwritten in a diary or typed on a computer, must be attested by at least two witnesses. Without two witnesses, a handwritten note has zero testamentary validity.",
+    a: "No. Some foreign countries recognize unwitnessed handwritten (holographic) Wills, but Indian law does not. Under Section 63(c) of the Indian Succession Act, every unprivileged civilian Will in India, whether handwritten in a diary or typed on a computer, must be attested by at least two witnesses. Without two witnesses, a handwritten note has zero Will validity.",
   },
   {
     q: "What are 'suspicious circumstances' under the Supreme Court's H. Venkatachala Iyengar ruling?",
-    a: "In H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443), the Supreme Court held that even if technical execution is proved, the propounder must dispel any suspicious circumstances surrounding the Will. Common red flags include: shaky or illogical signature placement, active participation of the main beneficiary in hiring the lawyer or bringing witnesses, unexplained exclusion of a dependent wife or child, and blank spaces filled in different ink.",
+    a: "In H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443), the Supreme Court held that even if technical signing is proved, the propounder must dispel any suspicious circumstances surrounding the Will. Common red flags include: shaky or illogical signature placement, active participation of the main heir in hiring the lawyer or bringing witnesses, unexplained exclusion of a dependent wife or child, and blank spaces filled in different ink.",
   },
   {
-    q: "How should I fix a defective Will that I already signed or registered?",
+    q: "How should I fix a defective Will that I already signed or filed?",
     a: "Never cross out lines, use whitener, or write margin notes on an already signed Will, as uninitialed alterations are invalid under Section 71 of the Indian Succession Act. Instead, under Section 62 and Section 70, you should execute a fresh, clean Will that includes an explicit Revocation Clause cancelling all prior Wills, and sign it before two independent adult witnesses.",
   },
 ];
@@ -120,7 +120,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 1,
     category: "Pillar I: Testamentary Capacity",
     statute: "Section 59, ISA 1925",
-    question: "Was the testator 18+ years old and of sound disposing mind when signing?",
+    question: "Was the Will maker 18+ years old and of sound disposing mind when signing?",
     helpText: "The testator must understand the nature of the act, the extent of their property, and the family members being included or excluded.",
     options: [
       {
@@ -157,7 +157,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 2,
     category: "Pillar II: Execution Medium",
     statute: "Section 63(a) ISA & IT Act Sch. I",
-    question: "How did the testator sign or execute the Will document?",
+    question: "How did the Will maker sign or execute the Will paper?",
     helpText: "Indian law requires physical execution on paper. Digital signatures and standalone videos are excluded by statute.",
     options: [
       {
@@ -216,7 +216,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
       },
       {
         value: "fail",
-        label: "0 Witnesses (Only Testator Signed or Only Notarized)",
+        label: "0 Witnesses (Only Will maker Signed or Only Notarized)",
         points: 0,
         isFatal: true,
         defectTitle: "FATAL DEFECT: Unwitnessed Will (Section 63(c) ISA)",
@@ -232,18 +232,18 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 4,
     category: "Pillar II: Presence Sequence",
     statute: "Section 63(c), ISA 1925",
-    question: "Did each witness sign the Will in the physical presence of the testator?",
+    question: "Did each witness sign the Will in the physical presence of the Will maker?",
     helpText: "Many DIY Wills fail because someone takes the signed paper to a neighbor's house or office in another room to get witness signatures.",
     options: [
       {
         value: "pass",
-        label: "Yes, Both Signed in Testator's Physical Presence",
+        label: "Yes, Both Signed in Will maker's Physical Presence",
         points: 10,
         passNote: "Satisfies Section 63(c) mutual presence and sight-line rule.",
       },
       {
         value: "fail",
-        label: "No, Witnesses Signed in Another Room or Later Away from Testator",
+        label: "No, Witnesses Signed in Another Room or Later Away from Will maker",
         points: 0,
         isFatal: true,
         defectTitle: "FATAL DEFECT: Witnesses Did Not Sign in Testator's Presence (Sec 63(c))",
@@ -259,18 +259,18 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 5,
     category: "Pillar III: Witness Independence",
     statute: "Section 67, ISA 1925",
-    question: "Is either attesting witness a beneficiary (or the spouse of a beneficiary) in the Will?",
+    question: "Is either signing witness a heir (or the spouse of a heir) in the Will?",
     helpText: "For example: Did your wife, son, daughter, or son-in-law (whose spouse inherits) sign as one of the two witnesses?",
     options: [
       {
         value: "pass",
-        label: "No, Both Are Neutral Non-Beneficiaries (Friends/Colleagues/CA)",
+        label: "No, Both Are Neutral Non-Heirs (Friends/Colleagues/CA)",
         points: 10,
         passNote: "Zero Section 67 conflict of interest; witnesses are 100% independent.",
       },
       {
         value: "fail",
-        label: "Yes, a Beneficiary or Beneficiary's Spouse Signed as Witness",
+        label: "Yes, a Heir or Heir's Spouse Signed as Witness",
         points: 0,
         isFatal: false, // Handled dynamically based on religion in scoring engine
         defectTitle: "CRITICAL TRAP: Beneficiary or Spouse Signed as Witness (Section 67 ISA)",
@@ -286,7 +286,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 6,
     category: "Pillar III: Probate Proof",
     statute: "Section 67, BSA 2023 (Sec 68 IEA)",
-    question: "Are the attesting witnesses younger than the testator and identifiable with KYC details?",
+    question: "Are the signing witnesses younger than the Will maker and identifiable with KYC details?",
     helpText: "Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023, at least one witness must testify in court after the testator's death.",
     options: [
       {
@@ -297,7 +297,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
       },
       {
         value: "warn",
-        label: "Witnesses Are 75+ / Older Than Testator / Missing Address",
+        label: "Witnesses Are 75+ / Older Than Will maker / Missing Address",
         points: 2,
         defectTitle: "Post-Death Probate Proof Risk (Section 67 & 68 BSA 2023)",
         defectDetail:
@@ -312,12 +312,12 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 7,
     category: "Pillar II: Drafting Formalities",
     statute: "Section 63(c) Read With Janki Narayan Bhoir SC",
-    question: "Does the Will contain a formal Section 63(c) Attestation Clause above the witness signatures?",
+    question: "Does the Will contain a formal Section 63(c) Witness Signing Clause above the witness signatures?",
     helpText: "An attestation clause explicitly records that the testator signed in the presence of the witnesses and the witnesses signed in the testator's presence.",
     options: [
       {
         value: "pass",
-        label: "Yes, Complete Section 63(c) Attestation Paragraph Included",
+        label: "Yes, Complete Section 63(c) Witness Signing Paragraph Included",
         points: 8,
         passNote: "Contains formal attestation recital establishing presumption of due execution.",
       },
@@ -338,7 +338,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 8,
     category: "Pillar III: Anti-Tampering",
     statute: "Section 71, ISA 1925 & SC Precedents",
-    question: "Is the Will signed by the testator on EVERY page, with zero uninitialed cuttings or ink changes?",
+    question: "Is the Will signed by the Will maker on EVERY page, with zero uninitialed cuttings or ink changes?",
     helpText: "Unsigned intermediate pages or handwritten corrections without full countersignatures are prime targets for probate objections.",
     options: [
       {
@@ -395,7 +395,7 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     options: [
       {
         value: "pass",
-        label: "Balanced Distribution OR Clear Reason Stated for Exclusion",
+        label: "Balanced Split OR Clear Reason Stated for Exclusion",
         points: 6,
         passNote: "Dispels unnatural disposition suspicion under H. Venkatachala Iyengar.",
       },
@@ -416,18 +416,18 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 11,
     category: "Pillar I: Medical Safeguard",
     statute: "Section 59 ISA Evidentiary Shield",
-    question: "Is a Doctor's Mental Fitness Certificate attached or endorsed on the Will?",
+    question: "Is a Doctor's Mental Fitness Paper attached or endorsed on the Will?",
     helpText: "Highly recommended for testators above age 65, or anyone with chronic illness, hospitalization, or unequal asset distribution.",
     options: [
       {
         value: "pass",
-        label: "Yes, MBBS/MD Doctor Certificate Signed on Same Date",
+        label: "Yes, MBBS/MD Doctor Paper Signed on Same Date",
         points: 5,
         passNote: "Gold-standard clinical defense against mental incapacity allegations.",
       },
       {
         value: "warn",
-        label: "No Doctor Certificate Attached",
+        label: "No Doctor Paper Attached",
         points: 2,
         defectTitle: "No Clinical Fitness Endorsement (Recommended for Seniors 65+)",
         defectDetail:
@@ -442,18 +442,18 @@ const AUDIT_QUESTIONS: AuditQuestion[] = [
     number: 12,
     category: "Pillar III: Undue Influence Shield",
     statute: "Section 61 ISA & Registration Act s. 18/40",
-    question: "Was the Will registered at the Sub-Registrar Office, and were beneficiaries kept out of the signing room?",
+    question: "Was the Will filed at the SRO office, and were heirs kept out of the signing room?",
     helpText: "Active participation by the main beneficiary during drafting or signing is the #1 ground for 'undue influence' under Section 61.",
     options: [
       {
         value: "pass",
-        label: "Registered at SRO (or Clean Execution With Beneficiaries Absent)",
+        label: "Filed at SRO (or Clean Signing With Heirs Absent)",
         points: 5,
         passNote: "Strong safeguard against Section 61 undue influence and forgery claims.",
       },
       {
         value: "warn",
-        label: "Major Beneficiary Arranged Execution / Sat in Signing Room",
+        label: "Major Heir Arranged Signing / Sat in Signing Room",
         points: 0,
         defectTitle: "Active Participation of Major Beneficiary (Section 61 & SC Rule)",
         defectDetail:
@@ -478,7 +478,7 @@ export default function WillValidityAuditClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedDoctorClause, setCopiedDoctorClause] = useState<boolean>(false);
@@ -491,7 +491,7 @@ export default function WillValidityAuditClient() {
   const [muslimExceedsOneThird, setMuslimExceedsOneThird] = useState<boolean>(false);
 
   // Answers state: index of selected option (0, 1, or 2) for each of the 12 questions
-  // Default represents a typical slightly flawed DIY Plain-Paper Will so users immediately see an insightful diagnostic
+  // Default represents a typical slightly flawed DIY Plain-Paper Will so users right away see an insightful diagnostic
   const [answers, setAnswers] = useState<Record<string, number>>({
     q1_capacity: 0,
     q2_signature_medium: 0,
@@ -689,7 +689,7 @@ export default function WillValidityAuditClient() {
     detectedDefects.unshift({
       title: "Shariat 1/3rd Wasiyat Limit & Heir Consent Trap",
       detail:
-        "Under the Muslim Personal Law (Shariat) Application Act, 1937 (Mulla's Principles ss. 115-118), a Muslim cannot bequeath more than 1/3rd of their net estate via Wasiyat, and under Sunni Hanafi law, any bequest to a legal heir is invalid unless the remaining Faraid legal heirs give express consent AFTER the testator's death.",
+        "Under the Muslim Personal Law (Shariat) Form Act, 1937 (Mulla's Principles ss. 115-118), a Muslim cannot bequeath more than 1/3rd of their net estate via Wasiyat, and under Sunni Hanafi law, any bequest to a legal heir is invalid unless the remaining Faraid legal heirs give express consent AFTER the Will maker's death.",
       remedy:
         "Restrict your Wasiyat bequest to 1/3rd of the net estate for non-heirs, obtain a post-death Heir Consent Annex, or use a lifetime Hiba (gift) for transferring shares above 1/3rd.",
       statute: "Shariat Act, 1937 & Mulla ss. 115-118",
@@ -782,9 +782,9 @@ Date & Official Clinic Stamp: [Date]"`;
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Run a free <strong>12-Question Statutory Diagnostic</strong> on your plain-paper or registered
+            Run a free <strong>12-Question Legal Diagnostic</strong> on your plain-paper or filed
             Will. Instantly calculate your <strong>0 to 100 Court-Defensibility Score</strong> and detect
-            fatal Section 63(c) attestation defects, Section 67 beneficiary-witness traps, and Supreme Court
+            fatal Section 63(c) witness signing defects, Section 67 heir-witness traps, and Supreme Court
             suspicious circumstances.
           </p>
 
@@ -803,7 +803,7 @@ Date & Official Clinic Stamp: [Date]"`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Redraft a Challenge-Proof Will</span>
+              <span>Redraft a Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -881,7 +881,7 @@ Date & Official Clinic Stamp: [Date]"`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 59, 61, 63, 67, 70 &amp; 71 of the Indian Succession Act, 1925,
@@ -906,23 +906,23 @@ Date & Official Clinic Stamp: [Date]"`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Plain-Paper Wills Are Valid:</strong> A Will does not need stamp paper or
-                    compulsory registration under Section 18(e) of the Registration Act, 1908. However, it
+                    needed filing under Section 18(e) of the Filing Act, 1908. However, it
                     must strictly satisfy Section 63 of the Indian Succession Act, 1925.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Two-Witness Rule Is Mandatory:</strong> Under Section 63(c), every civilian Will
+                    <strong>Two-Witness Rule Is Needed:</strong> Under Section 63(c), every civilian Will
                     (even if handwritten or notarized) must be attested by at least two adult witnesses who
-                    sign in the physical presence of the testator.
+                    sign in the physical presence of the Will maker.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Never Use a Beneficiary or Spouse as Witness:</strong> Under Section 67, if an
-                    attesting witness or their spouse is a beneficiary, their inheritance becomes void (for
+                    <strong>Never Use a Heir or Spouse as Witness:</strong> Under Section 67, if an
+                    signing witness or their spouse is a heir, their estate becomes void (for
                     Christian/Parsi Wills) or triggers a major court suspicion (for Hindu Wills).
                   </span>
                 </li>
@@ -930,7 +930,7 @@ Date & Official Clinic Stamp: [Date]"`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Aadhaar eSign &amp; Video-Only Wills Are Void:</strong> The Information Technology
-                    Act, 2000 First Schedule explicitly excludes Wills. Only a physical paper document signed
+                    Act, 2000 First Schedule explicitly excludes Wills. Only a physical paper paper signed
                     in wet ink or thumb mark is valid in court.
                   </span>
                 </li>
@@ -949,23 +949,23 @@ Date & Official Clinic Stamp: [Date]"`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Every week, thousands of Indian families ask whether a plain-paper or homemade Will is
-                  legally valid. The short answer is yes, provided it complies with the statutory execution
-                  rules. A fatal defect in a Will is rarely discovered while the testator is alive. It
+                  legally valid. The short answer is yes, provided it complies with the legal signing
+                  rules. A fatal defect in a Will is rarely discovered while the Will maker is alive. It
                   surfaces only after death, when a bank, housing society, Tehsildar, or Probate Court
-                  rejects the document.
+                  rejects the paper.
                 </p>
                 <p>
                   To check if a Will is valid in India, courts apply a two-tier legal test under the{" "}
-                  <strong>Indian Succession Act, 1925</strong>. First, the Will must pass the mandatory
-                  statutory execution checklist under <strong>Sections 59, 61, 63, and 67</strong>. If a Will
+                  <strong>Indian Succession Act, 1925</strong>. First, the Will must pass the needed
+                  legal signing checklist under <strong>Sections 59, 61, 63, and 67</strong>. If a Will
                   fails Section 63 (for example, having only one witness or being signed via Aadhaar eSign),
                   no judge can save it.
                 </p>
                 <p>
                   Second, even if a Will is properly signed and witnessed, it must survive the{" "}
                   <strong>Supreme Court&rsquo;s Suspicious Circumstances Test</strong> established in{" "}
-                  <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443)</em>. Our interactive
-                  audit tool below checks your draft against both statutory validity and courtroom
+                  <em>H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443)</em>. Our free
+                  audit tool below checks your draft against both legal validity and courtroom
                   defensibility in 60 seconds.
                 </p>
               </div>
@@ -978,12 +978,12 @@ Date & Official Clinic Stamp: [Date]"`;
                 <span>INTERACTIVE DIAGNOSTIC ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Section 63 Will Validity Audit Checker
+                2. Free Section 63 Will Validity Audit Checker
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Answer the 12 statutory questions below based on your current draft or existing Will. The tool
+                Answer the 12 legal questions below based on your current draft or existing Will. The tool
                 instantly computes your <strong>0 to 100 Court-Defensibility Score</strong> and flags every
-                legal vulnerability.
+                legal risk.
               </p>
 
               {/* Audit Tool Container */}
@@ -994,7 +994,7 @@ Date & Official Clinic Stamp: [Date]"`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Scale className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Testator&rsquo;s Personal Law / Religion</span>
+                      <span>Will maker&rsquo;s Personal Law / Religion</span>
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                       <button
@@ -1037,7 +1037,7 @@ Date & Official Clinic Stamp: [Date]"`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Testator&rsquo;s Age Group at Execution</span>
+                      <span>Will maker&rsquo;s Age Group at Signing</span>
                     </label>
                     <div className="grid grid-cols-3 gap-2">
                       <button
@@ -1086,7 +1086,7 @@ Date & Official Clinic Stamp: [Date]"`;
                           Muslim Personal Law (Shariat) Wasiyat Check:
                         </div>
                         <p className="text-xs text-emerald-900">
-                          Does the Will give more than 1/3rd of the net estate, or bequeath property to a
+                          Does the Will give more than 1/3rd of the net estate, or bequeath asset to a
                           Faraid legal heir (under Sunni law) without other heirs&rsquo; post-death consent?
                         </p>
                       </div>
@@ -1297,7 +1297,7 @@ Date & Official Clinic Stamp: [Date]"`;
                       {hasFatalDefect ? (
                         <>
                           <strong>Urgent Legal Warning:</strong> Your audit triggered at least one{" "}
-                          <strong>Fatal Statutory Defect</strong> under the Indian Succession Act, 1925. Even
+                          <strong>Fatal Legal Defect</strong> under the Indian Succession Act, 1925. Even
                           if other clauses are well-written, a fatal defect renders the Will (or the specific
                           witness bequest under Section 67) legally unenforceable in an Indian Probate Court.
                           See the exact defect breakdown below.
@@ -1310,7 +1310,7 @@ Date & Official Clinic Stamp: [Date]"`;
                         </>
                       ) : (
                         <>
-                          <strong>Action Recommended:</strong> Your Will meets basic execution thresholds,
+                          <strong>Action Recommended:</strong> Your Will meets basic signing thresholds,
                           but contains <strong>{detectedDefects.length} drafting or evidentiary gaps</strong>{" "}
                           that rival legal heirs can exploit in a Probate Caveat under Section 284 of the
                           Indian Succession Act. Review the remediation steps below.
@@ -1341,7 +1341,7 @@ Date & Official Clinic Stamp: [Date]"`;
                         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 space-y-1.5">
                           <div className="font-extrabold flex items-center gap-1.5">
                             <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                            <span>Zero Statutory Vulnerabilities Detected!</span>
+                            <span>Zero Legal Vulnerabilities Detected!</span>
                           </div>
                           <p className="leading-relaxed">
                             All 12 audit checkpoints passed. Ensure the original physical Will is stored
@@ -1424,8 +1424,8 @@ Date & Official Clinic Stamp: [Date]"`;
                         </div>
                         <p className="text-xs text-white/85 leading-relaxed">
                           Do not leave your family exposed to a 10-year Probate Court battle. Replace a
-                          defective DIY draft with a 100% Section 63 compliant Will or book Sub-Registrar
-                          registration support.
+                          defective DIY draft with a 100% Section 63 compliant Will or book SRO
+                          filing support.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                           <button
@@ -1441,7 +1441,7 @@ Date & Official Clinic Stamp: [Date]"`;
                             className="inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-white text-[#172228] hover:bg-slate-100 text-xs font-extrabold transition-colors"
                           >
                             <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                            <span>Will Registration Help</span>
+                            <span>Will Filing Help</span>
                           </Link>
                         </div>
                       </div>
@@ -1478,11 +1478,11 @@ Date & Official Clinic Stamp: [Date]"`;
                 <span>MANDATORY EXECUTION STATUTE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Section 63 Indian Succession Act: 3 Mandatory Rules
+                3. Section 63 Indian Succession Act: 3 Needed Rules
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Section 63 of the Indian Succession Act, 1925 is the backbone of testamentary validity in
+                  Section 63 of the Indian Succession Act, 1925 is the backbone of Will validity in
                   India. It applies to all unprivileged Wills made by Hindus, Buddhists, Sikhs, Jains,
                   Christians, Parsis, and persons married under the Special Marriage Act. Every valid Will
                   must satisfy three non-negotiable clauses:
@@ -1494,8 +1494,8 @@ Date & Official Clinic Stamp: [Date]"`;
                       <span>1. Section 63(a): Signature or Mark</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The testator must sign or affix their thumb mark to the Will, or another person must
-                      sign it in the testator&rsquo;s physical presence and strictly by their direction.
+                      The Will maker must sign or affix their thumb mark to the Will, or another person must
+                      sign it in the Will maker&rsquo;s physical presence and strictly by their direction.
                     </p>
                   </div>
                   <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2 shadow-xs">
@@ -1504,7 +1504,7 @@ Date & Official Clinic Stamp: [Date]"`;
                       <span>2. Section 63(b): Intent Placement</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The signature or mark must be placed so that it clearly appears the testator intended
+                      The signature or mark must be placed so that it clearly appears the Will maker intended
                       to give legal effect to the writing as a Last Will and Testament.
                     </p>
                   </div>
@@ -1514,8 +1514,8 @@ Date & Official Clinic Stamp: [Date]"`;
                       <span>3. Section 63(c): Two Witnesses</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      At least two witnesses must see the testator sign (or receive personal acknowledgment)
-                      and each witness must sign the Will in the physical presence of the testator.
+                      At least two witnesses must see the Will maker sign (or receive personal acknowledgment)
+                      and each witness must sign the Will in the physical presence of the Will maker.
                     </p>
                   </div>
                 </div>
@@ -1523,8 +1523,8 @@ Date & Official Clinic Stamp: [Date]"`;
                   In <em>Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91</em>, the Supreme Court
                   clarified how Section 63(c) interacts with Section 68 of the Indian Evidence Act (now{" "}
                   <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023</strong>). Even though only one
-                  attesting witness needs to be called to court to prove the Will, that witness must testify
-                  that <strong>both</strong> witnesses attested the document in the testator&rsquo;s presence.
+                  signing witness needs to be called to court to prove the Will, that witness must testify
+                  that <strong>both</strong> witnesses attested the paper in the Will maker&rsquo;s presence.
                 </p>
               </div>
             </section>
@@ -1547,9 +1547,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <p>
                   Under Section 67, a Will is not invalid merely because a witness is a beneficiary. However,
                   any bequest, legacy, or property gift made to an attesting witness (or to the{" "}
-                  <strong>wife or husband</strong> of that attesting witness) is <strong>utterly void</strong>!
+                  <strong>wife or husband</strong> of that signing witness) is <strong>utterly void</strong>!
                   In other words, the witness remains competent to prove the Will in court, but they and their
-                  spouse lose the inheritance given to them in that Will.
+                  spouse lose the estate given to them in that Will.
                 </p>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                   <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
@@ -1562,7 +1562,7 @@ Date & Official Clinic Stamp: [Date]"`;
                     Christian, Parsi, and Special Marriage Act Wills. However, even in a Hindu Will, having a
                     beneficiary or their spouse sign as a witness is treated by High Courts as a major{" "}
                     <strong>suspicious circumstance</strong> proving active interference. Always use two
-                    neutral, non-beneficiary witnesses!
+                    neutral, non-heir witnesses!
                   </p>
                 </div>
               </div>
@@ -1583,16 +1583,16 @@ Date & Official Clinic Stamp: [Date]"`;
                   <strong>H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443)</strong>, reaffirmed
                   in <em>Kavita Kanwar v. Pamela Mehta (2020) 11 SCC 209</em> and{" "}
                   <em>Shivakumar v. Sharanabasappa (2020) 11 SCC 277</em>, the Supreme Court held that a Will
-                  speaks from the death of the testator, when the author can no longer be called to verify it.
+                  speaks from the death of the Will maker, when the author can no longer be called to verify it.
                 </p>
                 <p>
                   Therefore, if a Will is surrounded by &ldquo;suspicious circumstances,&rdquo; the burden
-                  lies heavily on the beneficiary (propounder) to satisfy the judicial conscience of the
+                  lies heavily on the heir (propounder) to satisfy the judicial conscience of the
                   court. The top red flags that cause Indian courts to strike down even signed Wills include:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
                   <li>
-                    <strong>Active Participation of the Propounder:</strong> The main beneficiary hired the
+                    <strong>Active Participation of the Propounder:</strong> The main heir hired the
                     typist, dictated the clauses, brought their own personal friends as witnesses, or sat in
                     the room while the parent signed.
                   </li>
@@ -1602,7 +1602,7 @@ Date & Official Clinic Stamp: [Date]"`;
                   </li>
                   <li>
                     <strong>Abnormal Signature Placement:</strong> Cramped text on the last page or a
-                    signature floating far below the text, suggesting the testator signed a blank paper earlier.
+                    signature floating far below the text, suggesting the Will maker signed a blank paper earlier.
                   </li>
                   <li>
                     <strong>Contradictory Asset Descriptions:</strong> Listing HUF coparcenary property as
@@ -1611,21 +1611,21 @@ Date & Official Clinic Stamp: [Date]"`;
                       href="/tools/probate-checker"
                       className="text-[#C65378] font-bold hover:underline"
                     >
-                      court probate is mandatory in your city
+                      court probate is needed in your city
                     </Link>
                     .
                   </li>
                 </ul>
                 <div className="rounded-2xl bg-rose-50/60 border border-rose-200 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="text-xs text-slate-800">
-                    <strong>Preparing to Draft or Re-Execute Your Will?</strong> Use our interactive document
+                    <strong>Preparing to Draft or Re-Execute Your Will?</strong> Use our free paper
                     readiness tool before inviting witnesses.
                   </div>
                   <Link
                     href="/tools/will-checklist"
                     className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#C65378] hover:text-[#a33b5c] shrink-0"
                   >
-                    <span>Open Will Document Checklist Tool</span>
+                    <span>Open Will Paper Checklist Tool</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -1644,7 +1644,7 @@ Date & Official Clinic Stamp: [Date]"`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Modern technology and foreign movies have created widespread confusion in India regarding
-                  digital Wills, video Wills, and handwritten notes. Here is the exact statutory position for
+                  digital Wills, video Wills, and handwritten notes. Here is the exact legal position for
                   each format:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1690,7 +1690,7 @@ Date & Official Clinic Stamp: [Date]"`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under <strong>Section 59 of the Indian Succession Act, 1925</strong>, every person of sound
-                  mind who is not a minor can dispose of their property by Will. Importantly, Explanations 1,
+                  mind who is not a minor can dispose of their asset by Will. Importantly, Explanations 1,
                   2, and 3 to Section 59 clarify that a person who is deaf, dumb, or blind can make a valid
                   Will if they understand what they do by it, and a person who is ordinarily unwell can make a
                   valid Will during a lucid interval.
@@ -1698,8 +1698,8 @@ Date & Official Clinic Stamp: [Date]"`;
                 <p>
                   However, when a senior citizen (above 65 or 70 years) executes a Will, disgruntled relatives
                   almost always allege age-related cognitive decline, Alzheimer&rsquo;s, or heavy hospital
-                  medication. Having a registered MBBS or MD physician append a short clinical fitness
-                  certificate on the Will itself (or on the same date) neutralizes capacity challenges in
+                  medication. Having a filed MBBS or MD physician append a short clinical fitness
+                  paper on the Will itself (or on the same date) neutralizes capacity fights in
                   court.
                 </p>
                 <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200 text-xs text-amber-950 space-y-1.5">
@@ -1715,7 +1715,7 @@ Date & Official Clinic Stamp: [Date]"`;
                       href="/services/will-registration"
                       className="font-bold text-[#C65378] hover:underline"
                     >
-                      Book AMA Legal Solutions Will Registration Assistance
+                      Book AMA Legal Solutions Will Filing Help
                     </Link>
                     .
                   </p>
@@ -1733,8 +1733,8 @@ Date & Official Clinic Stamp: [Date]"`;
                 8. Comparison Table: Fatal Defects vs Curable Errors
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Use this quick statutory reference table to distinguish mistakes that make a Will completely
-                void from errors that create litigation risk or remain legally valid:
+                Use this quick legal reference table to distinguish mistakes that make a Will completely
+                void from errors that create court fights risk or remain legally valid:
               </p>
 
               {/* Table Container */}
@@ -1755,7 +1755,7 @@ Date & Official Clinic Stamp: [Date]"`;
                       </td>
                       <td className="py-3 px-4">Section 63(c) ISA</td>
                       <td className="py-3 px-4 font-bold text-rose-700">100% VOID</td>
-                      <td className="py-3 px-4">Re-execute immediately with 2 adult witnesses</td>
+                      <td className="py-3 px-4">Re-execute right away with 2 adult witnesses</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">
@@ -1775,7 +1775,7 @@ Date & Official Clinic Stamp: [Date]"`;
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Beneficiary or spouse signed as witness
+                        Heir or spouse signed as witness
                       </td>
                       <td className="py-3 px-4">Section 67 ISA</td>
                       <td className="py-3 px-4 font-bold text-amber-700">
@@ -1793,21 +1793,21 @@ Date & Official Clinic Stamp: [Date]"`;
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Written on plain paper (No stamp paper / Unregistered)
+                        Written on plain paper (No stamp paper / Plain)
                       </td>
-                      <td className="py-3 px-4">Registration Act s. 18(e)</td>
+                      <td className="py-3 px-4">Filing Act s. 18(e)</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">100% LEGALLY VALID</td>
-                      <td className="py-3 px-4">Optional SRO registration recommended for high value</td>
+                      <td className="py-3 px-4">A Choice SRO filing recommended for high value</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        No Doctor Certificate attached
+                        No Doctor Paper attached
                       </td>
                       <td className="py-3 px-4">Section 59 ISA</td>
                       <td className="py-3 px-4 font-bold text-emerald-700">
                         Valid (Vulnerable if age 65+)
                       </td>
-                      <td className="py-3 px-4">Attach MBBS/MD fitness certificate for seniors</td>
+                      <td className="py-3 px-4">Attach MBBS/MD fitness paper for seniors</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1828,12 +1828,12 @@ Date & Official Clinic Stamp: [Date]"`;
                   {
                     step: 1,
                     title: "Do Not Cross Out or Overwrite Your Old Will",
-                    desc: "Under Section 71 of the Indian Succession Act, striking out names or squeezing in handwritten lines after signing has zero legal effect unless countersigned by the testator and both witnesses. Overwriting also triggers forensic tampering objections.",
+                    desc: "Under Section 71 of the Indian Succession Act, striking out names or squeezing in handwritten lines after signing has zero legal effect unless countersigned by the Will maker and both witnesses. Overwriting also triggers forensic tampering objections.",
                   },
                   {
                     step: 2,
                     title: "Draft a Fresh Will With an Express Revocation Clause",
-                    desc: "Under Section 62 and Section 70, the cleanest way to cure any defect in an earlier unregistered or registered Will is to execute a brand-new Will that explicitly revokes all prior testamentary dispositions.",
+                    desc: "Under Section 62 and Section 70, the cleanest way to cure any defect in an earlier plain or filed Will is to execute a brand-new Will that explicitly revokes all prior Will gifts.",
                   },
                   {
                     step: 3,
@@ -1843,17 +1843,17 @@ Date & Official Clinic Stamp: [Date]"`;
                   {
                     step: 4,
                     title: "Select Two Younger, Non-Beneficiary Witnesses",
-                    desc: "Choose two adult witnesses (friends, neighbors, colleagues, or professionals) who are younger than you and who are neither beneficiaries nor married to any beneficiary in the Will.",
+                    desc: "Choose two adult witnesses (friends, neighbors, colleagues, or professionals) who are younger than you and who are neither heirs nor married to any heir in the Will.",
                   },
                   {
                     step: 5,
                     title: "Sign Every Page in One Sitting With Doctor Endorsement",
-                    desc: "Sign at the bottom of every page in wet ink in the physical presence of both witnesses, and have both witnesses sign the Section 63(c) attestation block in your presence. Have a doctor sign the mental fitness certificate on the same day.",
+                    desc: "Sign at the bottom of every page in wet ink in the physical presence of both witnesses, and have both witnesses sign the Section 63(c) witness signing block in your presence. Have a doctor sign the mental fitness paper on the same day.",
                   },
                   {
                     step: 6,
                     title: "Destroy the Defective Unregistered Draft or Register at SRO",
-                    desc: "Once the new Will is signed and witnessed, physically shred the old defective unregistered draft under Section 70 so two conflicting versions never surface after your lifetime.",
+                    desc: "Once the new Will is signed and witnessed, physically shred the old defective plain draft under Section 70 so two conflicting versions never surface after your lifetime.",
                   },
                 ].map((item) => (
                   <div
@@ -1909,7 +1909,7 @@ Date & Official Clinic Stamp: [Date]"`;
                     </div>
                     <div className="pt-1 text-emerald-700 font-bold flex justify-between border-t border-slate-200">
                       <span>Remediation by WillDrafting:</span>
-                      <span>Re-executed with 2 neutral witnesses (100/100)</span>
+                      <span>Re-signed with 2 neutral witnesses (100/100)</span>
                     </div>
                   </div>
                 </div>
@@ -1918,7 +1918,7 @@ Date & Official Clinic Stamp: [Date]"`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case B: Unregistered Plain-Paper Will (Bengaluru)
+                      Case B: Plain Plain-Paper Will (Bengaluru)
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                       Upheld Valid
@@ -1927,7 +1927,7 @@ Date & Official Clinic Stamp: [Date]"`;
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A 72-year-old retired engineer printed his Will on plain white A4 paper, signed every page
                     in front of two 45-year-old colleagues, attached an MBBS doctor fitness note, and included
-                    a clear reason for unequal distribution.
+                    a clear reason for unequal split.
                   </p>
                   <div className="p-3 bg-slate-50 rounded-xl text-xs space-y-1">
                     <div className="flex justify-between">
@@ -1935,8 +1935,8 @@ Date & Official Clinic Stamp: [Date]"`;
                       <span className="font-bold text-emerald-700">98 / 100 (Court-Defensible)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Stamp Duty &amp; Registration Paid:</span>
-                      <span className="font-bold text-slate-900">₹0 (Optional under Sec 18(e))</span>
+                      <span className="text-slate-600">Stamp Duty &amp; Filing Paid:</span>
+                      <span className="font-bold text-slate-900">₹0 (A Choice under Sec 18(e))</span>
                     </div>
                     <div className="pt-1 text-emerald-700 font-black flex justify-between border-t border-slate-200">
                       <span>Court Outcome:</span>
@@ -1954,14 +1954,14 @@ Date & Official Clinic Stamp: [Date]"`;
                 <span>COPY-PASTEABLE LEGAL ASSETS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Copy-Paste Section 63(c) Attestation and Doctor Clauses
+                11. Copy-Paste Section 63(c) Witness Signing and Doctor Clauses
               </h3>
 
               {/* Template Box 1: Section 63(c) Simultaneous Witness Attestation Clause */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 63(c) Simultaneous Witness Attestation Block
+                    Section 63(c) Simultaneous Witness Witness Signing Block
                   </div>
                   <button
                     type="button"
@@ -1976,7 +1976,7 @@ Date & Official Clinic Stamp: [Date]"`;
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Attestation Clause</span>
+                        <span>Copy Witness Signing Clause</span>
                       </>
                     )}
                   </button>
@@ -2002,7 +2002,7 @@ ID Proof (Aadhaar/PAN): [ID Number]"`}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 59 Registered Doctor Mental Fitness Certificate Block
+                    Section 59 Filed Doctor Mental Fitness Paper Block
                   </div>
                   <button
                     type="button"
@@ -2041,7 +2041,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Institutional Profile: Testamentary Legal Practice
+                12. Institutional Profile: Will Legal Practice
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
@@ -2050,21 +2050,21 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Testamentary Audit &amp; Probate Litigation Bench
+                      WillDrafting.in Will Audit &amp; Probate Court Fights Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Testamentary Bench</span>
+                    <span>Bar Council Checked Will Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier estate planning and succession platform, backed by
-                  AMA Legal Solutions. Our High Court testamentary litigators have audited, registered, and
+                  WillDrafting.in is India&rsquo;s premier estate planning and estate platform, backed by
+                  AMA Legal Solutions. Our High Court Will litigators have audited, filed, and
                   defended over 15,000 Wills across Mumbai, Delhi NCR, Bengaluru, Chennai, Kolkata, Pune, and
                   Hyderabad. Every Will generated on our platform automatically embeds Section 63(c)
-                  attestation blocks, Section 67 witness safeguards, and Supreme Court compliant exclusion
+                  witness signing blocks, Section 67 witness safeguards, and Supreme Court compliant exclusion
                   clauses.
                 </p>
 
@@ -2074,7 +2074,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Will Registration &amp; Home Visit</span>
+                    <span>Will Filing &amp; Home Visit</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
@@ -2088,7 +2088,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                     href="/tools"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>All Interactive Legal Tools</span>
+                    <span>All Free Legal Tools</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -2147,29 +2147,29 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations and Official Legal Portals
+                14. Legal Citations and Official Legal Portals
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Statutes &amp; Supreme Court Authorities:
+                    Governing Statutes &amp; Supreme Court Offices:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Section 59, Indian Succession Act, 1925:</strong> Testamentary capacity, adult
-                      age requirement, and sound disposing mind rules.
+                      <strong>Section 59, Indian Succession Act, 1925:</strong> Will capacity, adult
+                      age rule, and sound disposing mind rules.
                     </li>
                     <li>
                       <strong>Section 61, Indian Succession Act, 1925:</strong> Invalidity of Wills obtained
                       by fraud, coercion, or importunity taking away free agency.
                     </li>
                     <li>
-                      <strong>Section 63(a), (b) &amp; (c), Indian Succession Act, 1925:</strong> Mandatory
-                      signature, placement, and two-witness attestation rules.
+                      <strong>Section 63(a), (b) &amp; (c), Indian Succession Act, 1925:</strong> Needed
+                      signature, placement, and two-witness witness signing rules.
                     </li>
                     <li>
                       <strong>Section 67, Indian Succession Act, 1925:</strong> Disqualification of gifts to
-                      attesting witnesses and their spouses.
+                      signing witnesses and their spouses.
                     </li>
                     <li>
                       <strong>Section 67, Bharatiya Sakshya Adhiniyam, 2023 (formerly Sec 68 IEA):</strong>{" "}
@@ -2214,38 +2214,38 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Calculators, Checkers &amp; Templates
+                    Related WillDrafting Tools, Checkers &amp; Templates
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      All Succession Tools Hub
+                      All Estate Tools Hub
                     </Link>
                     <Link
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Drafting Document Checklist
+                      Will Drafting Paper Checklist
                     </Link>
                     <Link
                       href="/tools/gift-deed-vs-will-stamp-duty-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Gift Deed vs Will Stamp Duty Calculator
+                      Gift Deed vs Will Stamp Duty Tool
                     </Link>
                     <Link
                       href="/tools/huf-coparcenary-share-partition-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      HUF Coparcenary Share Calculator
+                      HUF Joint Share Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -2257,13 +2257,35 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Registration Service India
+                      Will Filing Service India
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -2276,21 +2298,21 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary litigation, Section 63 probate trials, caveat defense, and
-                challenge-proof estate structuring across Indian High Courts.
+                Expert in Indian testamentary court fights, Section 63 probate trials, caveat defense, and
+                fight-proof estate structuring across Indian High Courts.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -2307,8 +2329,8 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                   Found a Defect in Your DIY Will? Fix It Today
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Generate a court-defensible Will with built-in Section 63(c) attestation blocks, residuary
-                  clauses, and doctor fitness certificates in 15 minutes.
+                  Generate a court-defensible Will with built-in Section 63(c) witness signing blocks, residuary
+                  clauses, and doctor fitness papers in 15 minutes.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -2333,7 +2355,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                   Need a Lawyer to Audit, Register, or Contest a Will?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our advocates provide Sub-Registrar registration assistance, Section 31 home visits for
+                  Our lawyers provide SRO filing help, Section 31 home visits for
                   senior citizens, and High Court probate representation.
                 </p>
                 <Link
@@ -2341,7 +2363,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -2361,7 +2383,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 67 Detector:</strong> Prevents void bequests to beneficiary spouses.
+                      <strong>Section 67 Detector:</strong> Prevents void bequests to heir spouses.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

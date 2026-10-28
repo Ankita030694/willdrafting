@@ -52,16 +52,16 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Statutory Foundation: Minor Child Inheritance" },
+  { id: "statutory-foundation", label: "1. Legal Foundation: Minor Child Estate" },
   { id: "court-guardianship-dilemma", label: "2. The Guardian Trap: Section 8 HMGA Lockups" },
-  { id: "interactive-estimator", label: "3. Interactive Trust vs Guardianship Tool" },
+  { id: "interactive-estimator", label: "3. Free Trust vs Child Care Tool" },
   { id: "trust-vs-guardianship-comparison", label: "4. Comparative Matrix: Guardian vs Trust" },
   { id: "mwp-act-insurance-trust", label: "5. Section 6 MWP Act: Insurance Protection" },
   { id: "staggered-milestone-architecture", label: "6. Milestone Architecture: Staggered Payouts" },
   { id: "selecting-guardians-trustees", label: "7. Trustee & Guardian Selection: Governance" },
   { id: "real-life-case-studies", label: "8. Real Scenarios: Young Parents & Heirs" },
   { id: "step-by-step-protection-sop", label: "9. Step-by-Step Child Protection SOP" },
-  { id: "auto-generated-will-clauses", label: "10. Copy-Paste Testamentary Trust Clauses" },
+  { id: "auto-generated-will-clauses", label: "10. Copy-Paste Will Trust Clauses" },
   { id: "young-parents-checklist", label: "11. 10-Point Estate Planning Checklist" },
   { id: "institutional-advocacy-bench", label: "12. Institutional Profile & Legal Trust" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
@@ -70,31 +70,31 @@ const TOC_ITEMS = [
 
 const FAQS = [
   {
-    q: "Can a minor child directly inherit property and money in India?",
-    a: "Yes. A minor can legally inherit property through a Will or succession. However, under Section 11 of the Indian Contract Act, 1872, a minor cannot sign legal contracts. A child cannot operate bank accounts or sell real estate. A legal guardian or private trust must manage the assets until the child turns 18.",
+    q: "Can a minor child directly inherit asset and money in India?",
+    a: "Yes. A minor can legally inherit asset through a Will or estate. However, under Section 11 of the Indian Contract Act, 1872, a minor cannot sign legal contracts. A child cannot operate bank accounts or sell real estate. A legal guardian or private trust must manage the assets until the child turns 18.",
   },
   {
     q: "What happens if both parents pass away without naming a guardian in a Will?",
-    a: "If parents die without naming a guardian in a Will, relatives must go to court. They must file a petition under the Guardians and Wards Act, 1890. This court process takes 12 to 24 months. It often causes painful custody disputes between maternal and paternal families.",
+    a: "If parents die without naming a guardian in a Will, relatives must go to court. They must file a petition under the Guardians and Wards Act, 1890. This court process takes 12 to 24 months. It often causes painful custody fights between maternal and paternal families.",
   },
   {
-    q: "What is the key difference between a Testamentary Guardian and a Testamentary Trust?",
-    a: "A testamentary guardian handles the daily personal care of the child until age 18. Yet a guardian cannot sell inherited property without District Court approval. A testamentary trust holds the property under chosen trustees. Trustees can release money right away for school or medical needs without court delays.",
+    q: "What is the key difference between a Will Guardian and a Will Trust?",
+    a: "A Will guardian handles the daily personal care of the child until age 18. Yet a guardian cannot sell inherited asset without District Court approval. A Will trust holds the asset under chosen trustees. Trustees can release money right away for school or medical needs without court delays.",
   },
   {
     q: "Can a legal guardian sell an inherited house to pay for the child's overseas education?",
-    a: "No. Under Section 8(2) of the Hindu Minority and Guardianship Act, 1956, a guardian cannot sell or mortgage a minor's property without prior court sanction. Getting this court permission often takes two to four years in Indian courts.",
+    a: "No. Under Section 8(2) of the Hindu Minority and Child Care Act, 1956, a guardian cannot sell or mortgage a minor's asset without prior court sanction. Getting this court permission often takes two to four years in Indian courts.",
   },
   {
-    q: "Why is leaving a lump sum inheritance at age 18 risky for a child?",
-    a: "Under Indian law, a child attains majority at age 18. With simple guardianship, the entire inheritance is handed over all at once at 18. Most 18-year-olds lack financial experience. They risk losing large sums to risky investments, peer pressure, or bad advice.",
+    q: "Why is leaving a lump sum estate at age 18 risky for a child?",
+    a: "Under Indian law, a child attains majority at age 18. With simple child care, the entire estate is handed over all at once at 18. Most 18-year-olds lack financial experience. They risk losing large sums to risky investments, peer pressure, or bad advice.",
   },
   {
-    q: "What is Section 6 of the Married Women's Property Act (MWP Act)?",
-    a: "Section 6 of the MWP Act, 1874 allows a parent to buy a life insurance policy for the sole benefit of their spouse or children. The policy creates an instant statutory trust. Creditors, lenders, and tax recovery officers cannot touch this money.",
+    q: "What is Section 6 of the Married Women's Asset Act (MWP Act)?",
+    a: "Section 6 of the MWP Act, 1874 allows a parent to buy a life insurance policy for the sole benefit of their spouse or children. The policy creates an instant legal trust. Creditors, lenders, and tax recovery officers cannot touch this money.",
   },
   {
-    q: "How does a staggered payout schedule work in a Testamentary Will Trust?",
+    q: "How does a staggered payout schedule work in a Will Will Trust?",
     a: "A staggered schedule releases money in stages rather than all at once. For instance, 15% is released at age 18 for college admissions. Next, 25% is paid at age 21 for graduation. Then, 30% is released at age 25 for career setup. The remaining 30% is handed over at age 30.",
   },
   {
@@ -102,12 +102,12 @@ const FAQS = [
     a: "Yes, and legal experts strongly recommend this separation. You can name one loving relative as personal guardian to raise your child. You can name an independent relative or professional as financial trustee to manage the money.",
   },
   {
-    q: "Does a testamentary trust created inside a Will need immediate registration?",
-    a: "No. A testamentary trust is written as a clause inside your Will. It does not exist during your lifetime. You do not need to register a trust deed or file trust tax returns while alive. The trust activates only after your demise.",
+    q: "Does a Will trust created inside a Will need immediate filing?",
+    a: "No. A Will trust is written as a clause inside your Will. It does not exist during your lifetime. You do not need to register a trust deed or file trust tax returns while alive. The trust activates only after your demise.",
   },
   {
-    q: "How are the assets and income of a minor's testamentary trust taxed in India?",
-    a: "Under Section 161 of the Income Tax Act, 1961, trustees pay tax as representative assessees. When a trust is created by Will for minor children, income is taxed at the child's individual progressive slab rates, not the maximum marginal rate.",
+    q: "How are the assets and income of a minor's Will trust taxed in India?",
+    a: "Under Section 161 of the Income Tax Act, 1961, trustees pay tax as agent assessees. When a trust is created by Will for minor children, income is taxed at the child's single progressive slab rates, not the maximum marginal rate.",
   },
 ];
 
@@ -124,13 +124,13 @@ export default function MinorChildTrustEstimatorClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedGuardianClause, setCopiedGuardianClause] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // Calculator Form State
+  // Tool Form State
   const [childCount, setChildCount] = useState<number>(1);
   const [eldestChildAge, setEldestChildAge] = useState<number>(5);
   const [childName, setChildName] = useState<string>("Aarav");
@@ -326,11 +326,11 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Minor Child Inheritance: Trust vs Guardianship Tool
+            Minor Child Estate: Trust vs Child Care Tool
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Compare legal guardianship against private testamentary trusts in India. Protect your
+            Compare legal child care against private Will trusts in India. Protect your
             children from Section 8 court asset lockups. Model staggered payouts at ages 18, 21, 25,
             and 30, and generate protective Will clauses today.
           </p>
@@ -341,7 +341,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <Calculator className="w-4 h-4" />
-              <span>Launch Inheritance Estimator</span>
+              <span>Launch Estate Estimator</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <button
@@ -420,7 +420,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 6 and 9 of HMGA 1956, Guardians and Wards Act 1890,
@@ -463,19 +463,19 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <span>LEGAL FRAMEWORK IN INDIA</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Foundation: Minor Child Inheritance in India
+                1. Legal Foundation: Minor Child Estate in India
               </h2>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-sm text-slate-700 leading-relaxed">
                 <p>
-                  In India, anyone under 18 is a minor. A minor can legally inherit property through a Will.
+                  In India, anyone under 18 is a minor. A minor can legally inherit asset through a Will.
                   However, a minor cannot sign legal contracts. This rule is set by Section 11 of the Indian
                   Contract Act, 1872.
                 </p>
                 <p>
-                  This rule creates a big challenge if both parents pass away. A minor child cannot manage
+                  This rule creates a big fight if both parents pass away. A minor child cannot manage
                   stock portfolios. A minor cannot run bank accounts. A child cannot sell a home either.
-                  As a result, Indian law requires legal representation. Parents can choose court guardianship
-                  or a private testamentary trust.
+                  As a result, Indian law requires legal representation. Parents can choose court child care
+                  or a private Will trust.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
@@ -485,13 +485,13 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     </div>
                     <p className="text-xs text-slate-600">
                       Both parents are natural guardians of a Hindu minor. If both parents demise, natural
-                      guardianship ends at once.
+                      child care ends at once.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
                     <div className="font-bold text-slate-900 text-xs flex items-center gap-1.5">
                       <FileCheck className="w-4 h-4 text-[#5F7E75]" />
-                      <span>Testamentary Guardians (Section 9, HMGA)</span>
+                      <span>Will Guardians (Section 9, HMGA)</span>
                     </div>
                     <p className="text-xs text-slate-600">
                       Either parent may name a guardian in a Will. The appointee acts as guardian after both
@@ -516,7 +516,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   <ShieldAlert className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
                   <div>
                     <strong>Why Simply Appointing a Guardian in a Will is Not Enough:</strong> Under Section
-                    8(2) of the Hindu Minority and Guardianship Act, 1956, a guardian cannot sell, mortgage,
+                    8(2) of the Hindu Minority and Child Care Act, 1956, a guardian cannot sell, mortgage,
                     or gift any land or flat without previous court permission.
                   </div>
                 </div>
@@ -533,18 +533,18 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     years.
                   </li>
                   <li>
-                    <strong>Mandatory Surety Bonds:</strong> Courts often ask the guardian to give personal
-                    property sureties. The guardian must also file audited spending accounts each year.
+                    <strong>Needed Surety Bonds:</strong> Courts often ask the guardian to give personal
+                    asset sureties. The guardian must also file audited spending accounts each year.
                   </li>
                   <li>
-                    <strong>Lump Sum at Age 18:</strong> Guardianship ends automatically at age 18. The whole
+                    <strong>Lump Sum at Age 18:</strong> Child Care ends automatically at age 18. The whole
                     corpus is handed over in one single lump sum. Most 18-year-olds cannot manage crores of
                     rupees safely.
                   </li>
                 </ul>
 
                 <p>
-                  A <strong>Testamentary Private Trust</strong> avoids Section 8 court permission completely.
+                  A <strong>Will Private Trust</strong> avoids Section 8 court permission completely.
                   Your chosen trustees hold legal title. They can pay school and medical fees right away.
                 </p>
               </div>
@@ -559,7 +559,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     <span>INTERACTIVE DIAGNOSTIC ENGINE</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                    3. Minor Child Trust vs Guardianship Interactive Tool
+                    3. Minor Child Trust vs Child Care Free Tool
                   </h3>
                 </div>
                 <button
@@ -751,7 +751,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-2">
                       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-900">
                         <Clock className="w-4 h-4 text-[#C65378]" />
-                        <span>3. Staggered Capital Distribution Schedule</span>
+                        <span>3. Staggered Capital Split Schedule</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <button
@@ -830,7 +830,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                           <span>DIAGNOSTIC ARCHITECTURE RESULT</span>
                         </div>
                         <div className="text-lg sm:text-xl font-black text-white">
-                          Recommended: Two-Tier Testamentary Trust with Segregated Governance
+                          Recommended: Two-Tier Will Trust with Segregated Governance
                         </div>
                       </div>
                       <div className="text-left sm:text-right">
@@ -844,7 +844,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                         <div className="text-[11px] font-bold text-slate-300">Court Sanction Risk</div>
                         <div className="text-xl font-black text-emerald-400">0% With Trust</div>
                         <div className="text-[11px] text-slate-400 leading-snug">
-                          Avoids 2-year Section 8 HMGA District Court delays to sell property.
+                          Avoids 2-year Section 8 HMGA District Court delays to sell asset.
                         </div>
                       </div>
 
@@ -867,7 +867,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
 
                     <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-white/10">
                       <div className="text-xs text-slate-300">
-                        Ready to safeguard your child with legally verified clauses?
+                        Ready to safeguard your child with legally checked clauses?
                       </div>
                       <button
                         onClick={handleStartDraft}
@@ -889,7 +889,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <span>STRUCTURED COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Comparative Matrix: Guardian vs Testamentary Trust
+                4. Comparative Matrix: Guardian vs Will Trust
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden">
                 <div className="overflow-x-auto">
@@ -898,8 +898,8 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       <tr className="bg-slate-900 text-white font-black border-b border-slate-800">
                         <th className="p-3.5 sm:p-4">Key Legal Feature</th>
                         <th className="p-3.5 sm:p-4">Court-Appointed Guardian (GWA 1890)</th>
-                        <th className="p-3.5 sm:p-4">Testamentary Guardian (HMGA s. 9)</th>
-                        <th className="p-3.5 sm:p-4 bg-[#C65378] text-white">Testamentary Trust (Indian Trusts Act)</th>
+                        <th className="p-3.5 sm:p-4">Will Guardian (HMGA s. 9)</th>
+                        <th className="p-3.5 sm:p-4 bg-[#C65378] text-white">Will Trust (Indian Trusts Act)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -910,7 +910,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                         <td className="p-3.5 sm:p-4 font-semibold text-[#C65378]">Specific Trust clause inside a Will</td>
                       </tr>
                       <tr className="hover:bg-slate-50/70">
-                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Sale of Immovable Property</td>
+                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Sale of Land Asset</td>
                         <td className="p-3.5 sm:p-4 text-rose-700 font-semibold">Strict court permission required</td>
                         <td className="p-3.5 sm:p-4 text-rose-700 font-semibold">Strict court permission (Section 8)</td>
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">Trustees can sell without court sanction</td>
@@ -937,7 +937,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Time to Activate Upon Death</td>
                         <td className="p-3.5 sm:p-4 text-rose-700">12 to 24 months in court</td>
                         <td className="p-3.5 sm:p-4">Immediate custody</td>
-                        <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">Immediate upon Will execution</td>
+                        <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">Immediate upon Will signing</td>
                       </tr>
                     </tbody>
                   </table>
@@ -964,7 +964,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200 text-emerald-950 text-xs sm:text-sm space-y-2">
                   <div className="font-bold flex items-center gap-2 text-emerald-800">
                     <Lock className="w-4 h-4 text-emerald-600" />
-                    <span>The Married Women&rsquo;s Property Act (MWP Act), 1874 – Section 6 Endorsement</span>
+                    <span>The Married Women&rsquo;s Asset Act (MWP Act), 1874 – Section 6 Endorsement</span>
                   </div>
                   <p className="leading-relaxed">
                     Section 6 of the MWP Act solves this issue. When you buy a life policy under the MWP Act
@@ -1074,7 +1074,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       <span>Role B: Financial Trustee</span>
                     </div>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
-                      <li>Controls bank accounts, mutual funds, and property deeds.</li>
+                      <li>Controls bank accounts, mutual funds, and asset deeds.</li>
                       <li>Reviews fee slips and medical bills before releasing capital.</li>
                       <li>Maintains clean accounts and enforces milestone payout steps.</li>
                       <li>Best for: Financially skilled sibling, chartered accountant, or trust firm.</li>
@@ -1104,13 +1104,13 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> Both parents travel frequently on flights. They worried that
+                    <strong>Fight:</strong> Both parents travel frequently on flights. They worried that
                     if both passed away, paternal and maternal relatives would fight over the ₹3 Crore insurance
                     payout in court.
                   </p>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    <strong>Solution:</strong> They drafted mirror Wills with a Section 9 Testamentary Guardian
-                    clause naming the mother&rsquo;s sister for custody. They established a Testamentary Trust
+                    <strong>Solution:</strong> They drafted mirror Wills with a Section 9 Will Guardian
+                    clause naming the mother&rsquo;s sister for custody. They established a Will Trust
                     with the father&rsquo;s brother and a CA as joint financial trustees. Funds are staggered at
                     ages 18, 21, 25, and 30.
                   </p>
@@ -1126,13 +1126,13 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> She owned a 2BHK flat worth ₹1.8 Crore and ₹40 Lakh in mutual funds.
-                    Under intestate rules, her ex-husband could claim natural guardianship upon her death and seek
+                    <strong>Fight:</strong> She owned a 2BHK flat worth ₹1.8 Crore and ₹40 Lakh in mutual funds.
+                    Under no-Will rules, her ex-husband could claim natural child care upon her death and seek
                     to control the flat.
                   </p>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    <strong>Solution:</strong> She executed a registered Will appointing her own brother as
-                    testamentary guardian and creating a private trust clause. The clause explicitly gave the
+                    <strong>Solution:</strong> She signed a filed Will appointing her own brother as
+                    Will guardian and creating a private trust clause. The clause explicitly gave the
                     trustee power to lease the flat or sell it to fund her son&rsquo;s higher education without
                     court interference.
                   </p>
@@ -1148,7 +1148,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> The family held Indian bank accounts and an apartment in Delhi.
+                    <strong>Fight:</strong> The family held Indian bank accounts and an apartment in Delhi.
                     UAE local courts might freeze UAE accounts under local rules, while Indian assets required
                     Indian probate.
                   </p>
@@ -1207,7 +1207,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       4
                     </span>
                     <div>
-                      <strong>Draft a Will with an Express Testamentary Trust Clause:</strong> Include milestone
+                      <strong>Draft a Will with an Express Will Trust Clause:</strong> Include milestone
                       ages (18, 21, 25, 30), monthly maintenance guidelines, and spendthrift creditor protections.
                     </div>
                   </div>
@@ -1217,9 +1217,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       5
                     </span>
                     <div>
-                      <strong>Execute and Register the Will at the Sub-Registrar Office:</strong> While registration
-                      is optional under Section 18 of the Registration Act, registering a minor child protection Will
-                      strongly deters frivolous family challenges.
+                      <strong>Execute and Register the Will at the SRO office:</strong> While filing
+                      is a choice under Section 18 of the Filing Act, registering a minor child protection Will
+                      strongly deters frivolous family fights.
                     </div>
                   </div>
 
@@ -1243,13 +1243,13 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <span>LEGAL DRAFTING ASSETS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Copy-Paste Testamentary Trust Clauses &amp; Recitals
+                10. Copy-Paste Will Trust Clauses &amp; Recitals
               </h3>
 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Customized Testamentary Trust Clause for Minor Child (Indian Trusts Act, 1882)
+                    Customized Will Trust Clause for Minor Child (Indian Trusts Act, 1882)
                   </div>
                   <button
                     type="button"
@@ -1281,7 +1281,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Section 9 HMGA Testamentary Guardian &amp; Alternate Successor Clause
+                    Section 9 HMGA Will Guardian &amp; Alternate Successor Clause
                   </div>
                   <button
                     type="button"
@@ -1343,7 +1343,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   </div>
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Appoint primary &amp; alternate testamentary guardians in a registered Will.</span>
+                    <span>Appoint primary &amp; alternate Will guardians in a filed Will.</span>
                   </div>
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1367,7 +1367,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   </div>
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Store physical registered Will copies safely with trusted advocates.</span>
+                    <span>Store physical filed Will copies safely with trusted lawyers.</span>
                   </div>
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1375,7 +1375,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   </div>
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Review estate documents every 3 years or upon new child birth.</span>
+                    <span>Review estate papers every 3 years or upon new child birth.</span>
                   </div>
                 </div>
               </div>
@@ -1397,21 +1397,21 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Family Trust &amp; Succession Practice
+                      WillDrafting.in Family Trust &amp; Estate Practice
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Bench</span>
+                    <span>Bar Council Checked Bench</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier estate planning and succession technology platform,
-                  powered by AMA Legal Solutions. Our multidisciplinary testamentary bench structures
-                  customized family protection trusts, testamentary guardianship clauses, and Section 6 MWP Act
-                  insurance policies. We have advised over 15,000 Indian families and NRIs on dispute-free asset
-                  transmission and minor protection.
+                  WillDrafting.in is India&rsquo;s premier estate planning and estate technology platform,
+                  powered by AMA Legal Solutions. Our multidisciplinary Will bench structures
+                  customized family protection trusts, Will child care clauses, and Section 6 MWP Act
+                  insurance policies. We have advised over 15,000 Indian families and NRIs on fight-free asset
+                  transfer and minor protection.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold text-slate-800">
@@ -1433,7 +1433,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     href="/tools/succession-calculator"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Legal Heir Share Calculator</span>
+                    <span>Legal Heir Share Tool</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1447,11 +1447,11 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <span>DIRECT ANSWERS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Frequently Asked Questions: Minor Child Inheritance
+                13. Frequently Asked Questions: Minor Child Estate
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Plain-English answers to critical legal questions regarding minor child inheritance,
-                guardianship lockups, and testamentary trusts in India:
+                Plain-English answers to critical legal questions regarding minor child estate,
+                child care lockups, and Will trusts in India:
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1497,16 +1497,16 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Primary Statutory Authorities &amp; Landmark Precedents:
+                    Primary Legal Offices &amp; Landmark Precedents:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Hindu Minority and Guardianship Act, 1956:</strong> Section 6 (Natural Guardians)
-                      and Section 9 (Testamentary Guardians and their powers).
+                      <strong>Hindu Minority and Child Care Act, 1956:</strong> Section 6 (Natural Guardians)
+                      and Section 9 (Will Guardians and their powers).
                     </li>
                     <li>
-                      <strong>Hindu Minority and Guardianship Act, 1956:</strong> Section 8 (Restrictions on
-                      disposal of minor&rsquo;s immovable property without court permission).
+                      <strong>Hindu Minority and Child Care Act, 1956:</strong> Section 8 (Restrictions on
+                      disposal of minor&rsquo;s land asset without court permission).
                     </li>
                     <li>
                       <strong>Guardians and Wards Act, 1890:</strong> Section 29 (Limitation of powers of
@@ -1514,10 +1514,10 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     </li>
                     <li>
                       <strong>Indian Trusts Act, 1882:</strong> Creation of private trusts by Will, duties of
-                      trustees, and execution of protective trusts.
+                      trustees, and signing of protective trusts.
                     </li>
                     <li>
-                      <strong>Married Women&rsquo;s Property Act, 1874:</strong> Section 6 (Insurance policy
+                      <strong>Married Women&rsquo;s Asset Act, 1874:</strong> Section 6 (Insurance policy
                       effected for benefit of wife and children).
                     </li>
                     <li>
@@ -1559,7 +1559,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Calculators &amp; Legal Guides
+                    Related WillDrafting Tools &amp; Legal Guides
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1578,13 +1578,13 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                       href="/tools/probate-checker"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Requirement Checker
+                      Probate Rule Checker
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1596,7 +1596,29 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* RIGHT COLUMN: STICKY SIDEBAR */}
           <aside className="space-y-6 sticky top-24">
@@ -1607,21 +1629,21 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court guardianship petitions,
-                Section 9 HMGA testamentary appointments, and private family trust structures for minors.
+                Expert in Indian testamentary jurisprudence, High Court child care petitions,
+                Section 9 HMGA Will appointments, and private family trust structures for minors.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1639,7 +1661,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
                   A legally drafted Will appoints trusted guardians and establishes a private
-                  testamentary trust, ensuring immediate access to funds without 2-year court delays.
+                  Will trust, ensuring immediate access to funds without 2-year court delays.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1664,14 +1686,14 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   Structuring Large Estates or Special Needs Trusts?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates assist families with bespoke private family trusts, corporate
+                  Our estate lawyers assist families with bespoke private family trusts, corporate
                   trustee appointments, and cross-border NRI asset protection.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1685,7 +1707,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Section 9 Protection:</strong> Pre-empts messy contested family guardianship petitions.
+                      <strong>Section 9 Protection:</strong> Pre-empts messy contested family child care petitions.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

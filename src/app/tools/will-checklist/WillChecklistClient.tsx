@@ -54,16 +54,16 @@ import {
 
 const TOC_ITEMS = [
   { id: "executive-summary-brief", label: "1. Executive Summary & Core Rules" },
-  { id: "interactive-checklist-tool", label: "2. Interactive Will Checklist Tool" },
+  { id: "interactive-checklist-tool", label: "2. Free Will Checklist Tool" },
   { id: "testator-identity-fitness", label: "3. Your Identity & Fitness Proofs" },
-  { id: "asset-documentation-matrix", label: "4. Documents Needed for 15 Asset Types" },
+  { id: "asset-documentation-matrix", label: "4. Papers Needed for 15 Asset Types" },
   { id: "testamentary-appointments", label: "5. Choosing Your Executor & Guardian" },
   { id: "visual-blueprint", label: "6. The 4 Essential Pillars of a Will" },
   { id: "step-by-step-sop", label: "7. Step-by-Step Guide to Signing Your Will" },
   { id: "common-checklist-mistakes", label: "8. Common Mistakes to Avoid" },
   { id: "special-scenarios", label: "9. Special Rules: NRIs, HUF & Crypto" },
-  { id: "stamp-paper-registration-rules", label: "10. Plain Paper Legality vs Registration" },
-  { id: "institutional-backing", label: "11. Legal Backing & Verification" },
+  { id: "stamp-paper-registration-rules", label: "10. Plain Paper Legality vs Filing" },
+  { id: "institutional-backing", label: "11. Legal Backing & Check" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
   { id: "statutory-citations", label: "13. Relevant Laws & Official Portals" },
 ];
@@ -466,7 +466,7 @@ const APPOINTMENTS: AppointmentItem[] = [
   },
   {
     id: "residual_beneficiary",
-    role: "Receiver of Remaining Assets (Residuary Beneficiary)",
+    role: "Receiver of Remaining Assets (Residuary Heir)",
     statute: "Sections 102 & 103, Indian Succession Act, 1925",
     importance:
       "The person who inherits any leftover or future assets not specifically listed in your Will (such as new bank accounts, bonus shares, or forgotten deposits).",
@@ -484,20 +484,20 @@ const APPOINTMENTS: AppointmentItem[] = [
 
 const FAQS = [
   {
-    q: "Do I need any government documents to write a Will in India?",
-    a: "No special government stamp paper or certificate is required to make a valid Will. Under the Indian Succession Act, 1925, you can write your Will on plain white A4 paper. However, to make sure your family has zero problems later during bank transfers or property mutation, you should keep photocopies of your Aadhaar/PAN, property registry papers, bank passbooks, Demat Client Master Reports, and ID proofs for your two witnesses.",
+    q: "Do I need any government papers to write a Will in India?",
+    a: "No special government stamp paper or paper is required to make a valid Will. Under the Indian Succession Act, 1925, you can write your Will on plain white A4 paper. However, to make sure your family has zero problems later during bank transfers or asset name change, you should keep photocopies of your Aadhaar/PAN, asset registry papers, bank passbooks, Demat Client Master Reports, and ID proofs for your two witnesses.",
   },
   {
-    q: "Do I need original property registry papers while making a Will?",
-    a: "No. You never need to hand over or attach original property deeds. Clear photocopies or digital PDF scans are more than enough. You only need them to copy accurate legal details into the Will, such as the sale deed number, survey/khasra number, flat and carpet area, and boundary details.",
+    q: "Do I need original asset registry papers while making a Will?",
+    a: "No. You never need to hand over or attach original asset deeds. Clear photocopies or digital PDF scans are more than enough. You only need them to copy accurate legal details into the Will, such as the sale deed number, survey/khasra number, flat and carpet area, and boundary details.",
   },
   {
-    q: "Do I need a doctor's certificate to make a Will?",
-    a: "While Indian law does not strictly mandate a doctor's certificate for young adults, getting a simple fitness certificate from an MBBS or MD doctor is strongly recommended for seniors aged 60 and above. The doctor simply certifies that you are in sound mental health and understand your decisions, which prevents dissatisfied relatives from falsely claiming dementia or mental weakness later.",
+    q: "Do I need a doctor's paper to make a Will?",
+    a: "While Indian law does not strictly mandate a doctor's paper for young adults, getting a simple fitness paper from an MBBS or MD doctor is strongly recommended for seniors aged 60 and above. The doctor simply certifies that you are in sound mental health and understand your decisions, which prevents dissatisfied relatives from falsely claiming dementia or mental weakness later.",
   },
   {
-    q: "What documents do my two witnesses need to provide?",
-    a: "Each witness needs to provide their full legal name, father's or spouse's name, residential address, and an ID proof number (like Aadhaar, Voter ID, or Passport). Remember: under Section 67 of the Indian Succession Act, neither witness nor their spouse can receive any gift or property under the Will.",
+    q: "What papers do my two witnesses need to provide?",
+    a: "Each witness needs to provide their full legal name, father's or spouse's name, home address, and an ID proof number (like Aadhaar, Voter ID, or Passport). Remember: under Section 67 of the Indian Succession Act, neither witness nor their spouse can receive any gift or asset under the Will.",
   },
   {
     q: "Do I need stamp paper to make a valid Will?",
@@ -509,19 +509,19 @@ const FAQS = [
   },
   {
     q: "Does a bank nominee get the money instead of the person named in my Will?",
-    a: "No. The Supreme Court of India (in Sarbati Devi and Shakti Yezdani, Dec 2023) has ruled that a bank or demat nominee is merely a caretaker (trustee) who holds the funds temporarily. The ultimate legal ownership belongs strictly to the beneficiary you name in your Will.",
+    a: "No. The Supreme Court of India (in Sarbati Devi and Shakti Yezdani, Dec 2023) has ruled that a bank or demat nominee is merely a caretaker (trustee) who holds the funds temporarily. The ultimate legal ownership belongs strictly to the heir you name in your Will.",
   },
   {
-    q: "What documents do I need if I choose to register my Will?",
-    a: "Registration is completely optional under Section 18(e) of the Registration Act, 1908. If you want to register it at the Sub-Registrar Office, bring two printouts of the Will, original PAN and Aadhaar of the testator, original ID proofs of two witnesses, two passport-size photos of everyone, and a doctor's fitness certificate.",
+    q: "What papers do I need if I choose to register my Will?",
+    a: "Filing is completely a choice under Section 18(e) of the Filing Act, 1908. If you want to register it at the SRO office, bring two printouts of the Will, original PAN and Aadhaar of the Will maker, original ID proofs of two witnesses, two passport-size photos of everyone, and a doctor's fitness paper.",
   },
   {
     q: "How should I list digital accounts, cryptocurrencies, and emails?",
-    a: "List the platform name, your registered username or email, and public crypto wallet addresses. Never write confidential passwords, PINs, or 12-word seed phrases inside your Will, because Wills become public documents if probated or registered. Keep passwords in a secure password manager or offline vault.",
+    a: "List the platform name, your filed username or email, and public crypto wallet addresses. Never write confidential passwords, PINs, or 12-word seed phrases inside your Will, because Wills become public papers if probated or filed. Keep passwords in a secure password manager or offline vault.",
   },
   {
     q: "What is a 'leftover assets' clause and why is it important?",
-    a: "A 'leftover assets' clause (legally called a residuary clause under Sections 102 and 103 of the Indian Succession Act) names who gets any assets not specifically listed in the Will, as well as property or bank accounts you acquire in the future. This prevents any part of your estate from falling into legal limbo.",
+    a: "A 'leftover assets' clause (legally called a residuary clause under Sections 102 and 103 of the Indian Succession Act) names who gets any assets not mainly listed in the Will, as well as asset or bank accounts you acquire in the future. This prevents any part of your estate from falling into legal limbo.",
   },
 ];
 
@@ -754,12 +754,12 @@ export default function WillChecklistClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Documents Required for a Will in India: Complete Checklist
+            Papers Required for a Will in India: Complete Checklist
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Interactive verification checklist across 15 asset classes, executor appointments, and Section 63 witness formalities. Audit your paperwork before drafting your legally binding Will.
+            Free check checklist across 15 asset classes, executor appointments, and Section 63 witness formalities. Audit your paperwork before drafting your legally binding Will.
           </p>
 
           {/* Hero CTA Actions */}
@@ -776,7 +776,7 @@ export default function WillChecklistClient() {
               href="#interactive-checklist-tool"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all"
             >
-              <span>Launch Interactive Checklist</span>
+              <span>Launch Free Checklist</span>
             </a>
           </div>
         </div>
@@ -794,7 +794,7 @@ export default function WillChecklistClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Expertise
+                Estate Expertise
               </span>
             </div>
 
@@ -899,10 +899,10 @@ export default function WillChecklistClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Compliance</span>
+                <span>Legal Compliance</span>
               </div>
               <p className="text-[11px] leading-relaxed text-slate-500">
-                Verified under Indian Succession Act 1925, Hindu Succession Act 1956, and Registration Act 1908.
+                Checked under Indian Succession Act 1925, Hindu Succession Act 1956, and Filing Act 1908.
               </p>
             </div>
           </aside>
@@ -964,7 +964,7 @@ export default function WillChecklistClient() {
                   <CheckCircle2 className="w-5 h-5 text-[#5F7E75] shrink-0 mt-0.5" />
                   <div className="text-xs sm:text-sm text-slate-700">
                     <strong className="text-slate-900 block font-bold mb-0.5">
-                      Doctor Certificate for Seniors:
+                      Doctor Paper for Seniors:
                     </strong>
                     Medical fitness proof under Section 59 shields against future claims of dementia or coercion.
                   </div>
@@ -984,10 +984,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug mb-3">
-                2. Interactive Will Checklist: 15 Assets &amp; Appointments
+                2. Free Will Checklist: 15 Assets &amp; Appointments
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6 font-normal">
-                Select the asset categories you own below. Check off the documents you have gathered. The tool calculates your Will-Readiness Score in real time and compiles a personalized document dossier.
+                Select the asset categories you own below. Check off the papers you have gathered. The tool calculates your Will-Readiness Score in real time and compiles a personalized paper dossier.
               </p>
 
               {/* Progress & Scorecard Bar */}
@@ -1043,7 +1043,7 @@ export default function WillChecklistClient() {
                 <div className="flex items-center gap-2 mb-3">
                   <UserCheck className="w-4 h-4 text-[#172228]" />
                   <h4 className="text-sm sm:text-base font-extrabold text-[#172228]">
-                    Phase 1: Testator Core Proofs (You)
+                    Phase 1: Will maker Core Proofs (You)
                   </h4>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -1068,7 +1068,7 @@ export default function WillChecklistClient() {
                       className="mt-0.5 rounded text-[#C65378] focus:ring-[#C65378]"
                     />
                     <div className="text-xs text-slate-700">
-                      <span className="font-bold block text-slate-900">Residential Proof</span>
+                      <span className="font-bold block text-slate-900">Home Proof</span>
                       Voter ID, passport, or utility bill
                     </div>
                   </label>
@@ -1082,7 +1082,7 @@ export default function WillChecklistClient() {
                     />
                     <div className="text-xs text-slate-700">
                       <span className="font-bold block text-slate-900">Doctor Fitness Cert.</span>
-                      MBBS mental capacity certificate
+                      MBBS mental capacity paper
                     </div>
                   </label>
                 </div>
@@ -1100,7 +1100,7 @@ export default function WillChecklistClient() {
                   <div className="flex items-center gap-1.5 overflow-x-auto py-1">
                     {[
                       { id: "all", label: "All 15" },
-                      { id: "real_estate", label: "Property" },
+                      { id: "real_estate", label: "Asset" },
                       { id: "financial", label: "Banking & Equities" },
                       { id: "retirement", label: "Pension" },
                       { id: "personal", label: "Valuables" },
@@ -1220,7 +1220,7 @@ export default function WillChecklistClient() {
                 <div className="flex items-center gap-2 mb-3">
                   <Users className="w-4 h-4 text-[#172228]" />
                   <h4 className="text-sm sm:text-base font-extrabold text-[#172228]">
-                    Phase 3: Essential Appointments &amp; Witness Verification
+                    Phase 3: Essential Appointments &amp; Witness Check
                   </h4>
                 </div>
 
@@ -1313,10 +1313,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. Testator Identification &amp; Medical Fitness Documents
+                3. Will maker ID &amp; Medical Fitness Papers
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Under Section 59 of the Indian Succession Act, 1925, every person of sound mind not being a minor may dispose of their property by Will. To make a Will bulletproof against frivolous legal challenges, documentation begins with proof of legal identity and testamentary capacity.
+                Under Section 59 of the Indian Succession Act, 1925, every person of sound mind not being a minor may dispose of their asset by Will. To make a Will bulletproof against frivolous legal fights, papers begins with proof of legal identity and Will capacity.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -1333,10 +1333,10 @@ export default function WillChecklistClient() {
                 <div className="p-4 rounded-xl border border-slate-200 bg-[#FAF7F0] space-y-2">
                   <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
                     <Stethoscope className="w-4 h-4 text-[#C65378]" />
-                    <span>Doctor Fitness Certificate</span>
+                    <span>Doctor Fitness Paper</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Essential for testators aged 60 and above or those undergoing treatment. A certified MBBS or MD practitioner attests that you understand the nature of your assets and the effect of your dispositions.
+                    Essential for Will makers aged 60 and above or those undergoing treatment. A certified MBBS or MD practitioner attests that you understand the nature of your assets and the effect of your gifts.
                   </p>
                 </div>
 
@@ -1346,7 +1346,7 @@ export default function WillChecklistClient() {
                     <span>Free Will Declaration</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The text must explicitly state you are executing the document out of free volition, without coercion, undue influence, or fraud (Section 61, Indian Succession Act, 1925).
+                    The text must explicitly state you are signing the paper out of free volition, without coercion, undue influence, or fraud (Section 61, Indian Succession Act, 1925).
                   </p>
                 </div>
               </div>
@@ -1364,10 +1364,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                4. Comprehensive 15-Asset Documentation Matrix
+                4. Full 15-Asset Papers Matrix
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                The table below outlines the exact documents, critical identifying clauses, and legal risks for each asset category in India. Use this matrix when assembling your family records.
+                The table below outlines the exact papers, critical identifying clauses, and legal risks for each asset category in India. Use this matrix when assembling your family records.
               </p>
 
               {/* Data Table with Dark Navy Header */}
@@ -1377,14 +1377,14 @@ export default function WillChecklistClient() {
                     <tr>
                       <th className="py-3 px-4">Asset Class</th>
                       <th className="py-3 px-4">Primary Proof Required</th>
-                      <th className="py-3 px-4">Mandatory Will Identifiers</th>
+                      <th className="py-3 px-4">Needed Will Identifiers</th>
                       <th className="py-3 px-4">Consequence If Omitted</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 bg-white">
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Residential Flat</td>
-                      <td className="py-3 px-4">Sale Deed + Society Certificate</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Home Flat</td>
+                      <td className="py-3 px-4">Sale Deed + Society Paper</td>
                       <td className="py-3 px-4">CTS/Survey No., Carpet Area, UDS %</td>
                       <td className="py-3 px-4 text-rose-600 font-semibold">Society freezes transfer</td>
                     </tr>
@@ -1392,7 +1392,7 @@ export default function WillChecklistClient() {
                       <td className="py-3 px-4 font-bold text-slate-900">Bank Accounts &amp; FDs</td>
                       <td className="py-3 px-4">Passbook Front Page / FDR</td>
                       <td className="py-3 px-4">Account No., Branch IFSC, CIF ID</td>
-                      <td className="py-3 px-4 text-rose-600 font-semibold">Nominee dispute in court</td>
+                      <td className="py-3 px-4 text-rose-600 font-semibold">Nominee fight in court</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Demat &amp; Equities</td>
@@ -1414,25 +1414,25 @@ export default function WillChecklistClient() {
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Safe Deposit Locker</td>
-                      <td className="py-3 px-4">Locker Allotment Agreement</td>
+                      <td className="py-3 px-4">Locker Allotment Pact</td>
                       <td className="py-3 px-4">Locker No., Branch, Key Tag</td>
                       <td className="py-3 px-4 text-rose-600 font-semibold">Bank demands probate order</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Motor Vehicles</td>
-                      <td className="py-3 px-4">Registration Certificate (RC)</td>
-                      <td className="py-3 px-4">Registration No., Chassis/Engine No.</td>
-                      <td className="py-3 px-4 text-rose-600 font-semibold">RTO penalizes late succession</td>
+                      <td className="py-3 px-4">Filing Paper (RC)</td>
+                      <td className="py-3 px-4">Filing No., Chassis/Engine No.</td>
+                      <td className="py-3 px-4 text-rose-600 font-semibold">RTO penalizes late estate</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Gold &amp; Jewelry</td>
-                      <td className="py-3 px-4">Valuation Certificate / Invoices</td>
+                      <td className="py-3 px-4">Price Check Paper / Invoices</td>
                       <td className="py-3 px-4">Gross/Net Weight, Item Descriptions</td>
-                      <td className="py-3 px-4 text-rose-600 font-semibold">Family partition litigation</td>
+                      <td className="py-3 px-4 text-rose-600 font-semibold">Family split court fights</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Pvt Ltd / LLP Shares</td>
-                      <td className="py-3 px-4">Share Certificates / MoA / AoA</td>
+                      <td className="py-3 px-4">Share Papers / MoA / AoA</td>
                       <td className="py-3 px-4">CIN, No. of Shares, Folio Numbers</td>
                       <td className="py-3 px-4 text-rose-600 font-semibold">Board refuses transfer to heir</td>
                     </tr>
@@ -1459,10 +1459,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                5. Testamentary Appointments: Executor &amp; Guardian Rules
+                5. Will Appointments: Executor &amp; Guardian Rules
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                A Will is only as effective as the people appointed to execute it. In India, appointing the right legal officers avoids the high cost of applying for Letters of Administration from the District Court or High Court.
+                A Will is only as effective as the people appointed to execute it. In India, appointing the right legal officers avoids the high cost of applying for Letters of Care from the District Court or High Court.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1477,12 +1477,12 @@ export default function WillChecklistClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 211, the executor is your legal representative. All property vests in them upon your death. Always name an alternate executor in case the primary passes away or declines to act.
+                    Under Section 211, the executor is your legal agent. All asset vests in them upon your death. Always name an alternate executor in case the primary passes away or declines to act.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                     <li>Full legal name and relationship</li>
                     <li>Aadhaar / Voter ID number and permanent address</li>
-                    <li>Authority to collect funds, pay debts, and represent before SRO</li>
+                    <li>Office to collect funds, pay debts, and represent before SRO</li>
                   </ul>
                 </div>
 
@@ -1490,14 +1490,14 @@ export default function WillChecklistClient() {
                 <div className="p-5 rounded-2xl border border-slate-200 bg-[#FAF7F0] space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-extrabold text-slate-900">
-                      Testamentary Guardian
+                      Will Guardian
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">
                       Sec 60 ISA / HMGA 1956
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If you have children under 18 years, appoint a testamentary guardian. Without this appointment, relatives can fight over child custody and asset control in guardianship court.
+                    If you have children under 18 years, appoint a Will guardian. Without this appointment, relatives can fight over child custody and asset control in child care court.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                     <li>Name trusted adult relative or friend</li>
@@ -1517,7 +1517,7 @@ export default function WillChecklistClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A minimum of two adult witnesses must see you sign. Under Section 67, an attesting witness cannot receive any bequest under the Will. If an heir signs as a witness, their inheritance becomes void.
+                    A minimum of two adult witnesses must see you sign. Under Section 67, an signing witness cannot receive any bequest under the Will. If an heir signs as a witness, their estate becomes void.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                     <li>Use independent doctors, neighbors, or colleagues</li>
@@ -1537,12 +1537,12 @@ export default function WillChecklistClient() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The residuary legatee inherits everything not specifically bequeathed. This sweeps up future investments, unclaimed tax refunds, and forgotten bank accounts automatically.
+                    The residuary legatee inherits everything not mainly bequeathed. This sweeps up future investments, unclaimed tax refunds, and forgotten bank accounts automatically.
                   </p>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                     <li>Prevents partial intestacy under Section 102</li>
                     <li>Usually spouse, children, or a family trust</li>
-                    <li>Ensures zero wealth falls into intestate succession</li>
+                    <li>Ensures zero wealth falls into no-Will estate</li>
                   </ul>
                 </div>
               </div>
@@ -1560,10 +1560,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Visual Blueprint: 4 Pillars of a Challenge-Proof Will
+                6. Visual Blueprint: 4 Pillars of a Fight-Proof Will
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                This diagram illustrates the four essential statutory pillars of Indian Will drafting: Testator proof, asset ownership documents, legal appointments, and execution formalities under Section 63.
+                This diagram illustrates the four essential legal pillars of Indian Will drafting: Will maker proof, asset ownership papers, legal appointments, and signing formalities under Section 63.
               </p>
 
               {/* Infographic Image Container */}
@@ -1577,7 +1577,7 @@ export default function WillChecklistClient() {
                   />
                 </div>
                 <div className="p-3 bg-white border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
-                  <span>Figure 1: Statutory Documentation &amp; Execution Blueprint (ISA 1925)</span>
+                  <span>Figure 1: Legal Papers &amp; Signing Blueprint (ISA 1925)</span>
                   <a
                     href="/images/will-checklist-blueprint-infographic.svg"
                     target="_blank"
@@ -1603,10 +1603,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                7. Step-by-Step SOP: Checklist to Legally Executed Will
+                7. Step-by-Step SOP: Checklist to Legally Signed Will
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Follow this six-stage standard operating procedure to transition from gathering documents to executing a legally binding Will in India.
+                Follow this six-stage standard operating step to transition from gathering papers to signing a legally binding Will in India.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -1614,7 +1614,7 @@ export default function WillChecklistClient() {
                   {
                     step: "Stage 1",
                     title: "Compile Asset Documentation & Account Folios",
-                    desc: "Gather clear photocopies of title deeds, property tax receipts, Demat Client Master Reports (CMR), bank passbooks, and policy bonds. Do not surrender originals.",
+                    desc: "Gather clear photocopies of title deeds, asset tax receipts, Demat Client Master Reports (CMR), bank passbooks, and policy bonds. Do not surrender originals.",
                   },
                   {
                     step: "Stage 2",
@@ -1624,12 +1624,12 @@ export default function WillChecklistClient() {
                   {
                     step: "Stage 3",
                     title: "Obtain Registered Medical Practitioner Fitness Certificate",
-                    desc: "If aged 60 or older, visit an MBBS/MD doctor on the day of signing. Obtain a written certificate attesting to sound mind and memory under Section 59.",
+                    desc: "If aged 60 or older, visit an MBBS/MD doctor on the day of signing. Obtain a written paper signing to sound mind and memory under Section 59.",
                   },
                   {
                     step: "Stage 4",
                     title: "Select Two Independent Attesting Witnesses",
-                    desc: "Ensure neither witness nor their spouses are beneficiaries in the Will. Verify their Aadhaar cards and residential proofs under Section 67 compliance.",
+                    desc: "Ensure neither witness nor their spouses are heirs in the Will. Verify their Aadhaar cards and home proofs under Section 67 compliance.",
                   },
                   {
                     step: "Stage 5",
@@ -1639,7 +1639,7 @@ export default function WillChecklistClient() {
                   {
                     step: "Stage 6",
                     title: "Safe Custody & Optional Sub-Registrar Office Registration",
-                    desc: "Will registration is optional under Section 18(e) of Registration Act. Store the original Will in a bank locker or safe custody and inform your named executor.",
+                    desc: "Will filing is a choice under Section 18(e) of Filing Act. Store the original Will in a bank locker or safe custody and inform your named executor.",
                   },
                 ].map((item, idx) => (
                   <div
@@ -1682,17 +1682,17 @@ export default function WillChecklistClient() {
                 8. Four Fatal Checklist Mistakes to Avoid in India
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Even sophisticated families make documentation mistakes that lead to years of high court litigation. Avoid these four common traps.
+                Even sophisticated families make papers mistakes that lead to years of high court court fights. Avoid these four common traps.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                 <div className="p-5 rounded-2xl border border-rose-200 bg-rose-50/30 space-y-2">
                   <div className="flex items-center gap-2 text-rose-900 font-bold text-sm">
                     <BadgeAlert className="w-4 h-4 text-rose-600" />
-                    <span>Beneficiary Acting as Witness</span>
+                    <span>Heir Acting as Witness</span>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Under Section 67 of the Indian Succession Act, if a beneficiary or their spouse signs as an attesting witness, the Will remains valid but the bequest to that person becomes void. Never use your children or spouse as witnesses.
+                    Under Section 67 of the Indian Succession Act, if a heir or their spouse signs as an signing witness, the Will remains valid but the bequest to that person becomes void. Never use your children or spouse as witnesses.
                   </p>
                 </div>
 
@@ -1712,7 +1712,7 @@ export default function WillChecklistClient() {
                     <span>Omitting the Residuary Clause</span>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    If you list five properties but forget your Demat account or buy land next year, those unlisted assets trigger partial intestacy. A residuary clause disposes of all unlisted and future assets safely.
+                    If you list five assets but forget your Demat account or buy land next year, those unlisted assets trigger partial intestacy. A residuary clause disposes of all unlisted and future assets safely.
                   </p>
                 </div>
 
@@ -1722,7 +1722,7 @@ export default function WillChecklistClient() {
                     <span>Writing Passwords in Public Will</span>
                   </div>
                   <p className="text-xs text-slate-700 leading-relaxed">
-                    Never write crypto private keys, bank PINs, or email passwords in the body of a Will. Wills become public documents during probate or registration. Keep credentials in a private offline safe.
+                    Never write crypto private keys, bank PINs, or email passwords in the body of a Will. Wills become public papers during probate or filing. Keep credentials in a private offline safe.
                   </p>
                 </div>
               </div>
@@ -1743,7 +1743,7 @@ export default function WillChecklistClient() {
                 9. Special Scenarios: NRIs, HUF &amp; Digital Currencies
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Certain estate types require specialized documentation checklists to ensure cross-border and corporate compliance.
+                Certain estate types require specialized papers checklists to ensure cross-border and corporate compliance.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1753,7 +1753,7 @@ export default function WillChecklistClient() {
                     <span>Non-Resident Indians (NRIs)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    NRIs owning Indian property must execute an Indian Will specifically governed by Indian Succession Act, 1925. Foreign Wills require expensive ancillary probate and court fee stamps in India under Section 228.
+                    NRIs owning Indian property must execute an Indian Will mainly governed by Indian Succession Act, 1925. Foreign Wills require expensive ancillary probate and court fee stamps in India under Section 228.
                   </p>
                   <Link
                     href="/services/nri-will-india"
@@ -1770,13 +1770,13 @@ export default function WillChecklistClient() {
                     <span>Hindu Undivided Family (HUF)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A coparcener cannot bequeath entire HUF property. Under Section 30 of the Hindu Succession Act, 1956, you can only bequeath your undivided coparcenary share that would fall to you upon deemed partition.
+                    A coparcener cannot bequeath entire HUF asset. Under Section 30 of the Hindu Succession Act, 1956, you can only bequeath your undivided joint share that would fall to you upon deemed split.
                   </p>
                   <Link
                     href="/blogs/ancestral-vs-self-acquired-property-will-hindu-succession-act"
                     className="inline-flex items-center gap-1 text-xs text-[#C65378] font-bold hover:underline"
                   >
-                    <span>Ancestral vs Self-Acquired Guide</span>
+                    <span>Family vs Self-Acquired Guide</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
@@ -1797,7 +1797,7 @@ export default function WillChecklistClient() {
                     <span>MSME &amp; Private Company Equity</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Check the Articles of Association (AoA) for pre-emption rights or buy-sell restrictions. Ensure your Will coordinates with surviving directors to enable smooth transmission of share certificates.
+                    Check the Articles of Association (AoA) for pre-emption rights or buy-sell restrictions. Ensure your Will coordinates with surviving directors to enable smooth transfer of share papers.
                   </p>
                 </div>
               </div>
@@ -1815,10 +1815,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                10. Plain Paper Validity vs SRO Will Registration Rules
+                10. Plain Paper Validity vs SRO Will Filing Rules
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Many testators spend unnecessary money on stamp paper. Understand the statutory distinction between a plain paper Will and a registered Will in India.
+                Many Will makers spend unnecessary money on stamp paper. Understand the legal distinction between a plain paper Will and a filed Will in India.
               </p>
 
               <div className="overflow-x-auto rounded-xl border border-slate-200">
@@ -1827,7 +1827,7 @@ export default function WillChecklistClient() {
                     <tr>
                       <th className="py-3 px-4">Feature</th>
                       <th className="py-3 px-4">Plain Paper Will</th>
-                      <th className="py-3 px-4">Registered Will (SRO)</th>
+                      <th className="py-3 px-4">Filed Will (SRO)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 bg-white">
@@ -1839,25 +1839,25 @@ export default function WillChecklistClient() {
                     <tr className="hover:bg-slate-50">
                       <td className="py-3 px-4 font-bold text-slate-900">Stamp Paper Duty</td>
                       <td className="py-3 px-4">Zero (Exempt under Stamp Act)</td>
-                      <td className="py-3 px-4">Zero (Only nominal registration fee)</td>
+                      <td className="py-3 px-4">Zero (Only nominal filing fee)</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Witness Requirement</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Witness Rule</td>
                       <td className="py-3 px-4">Minimum 2 independent adults</td>
                       <td className="py-3 px-4">Minimum 2 independent adults present at SRO</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Registration Status</td>
-                      <td className="py-3 px-4">Optional under Sec 18(e) Reg. Act</td>
-                      <td className="py-3 px-4">Registered in Book 3 at SRO</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Filing Status</td>
+                      <td className="py-3 px-4">A Choice under Sec 18(e) Reg. Act</td>
+                      <td className="py-3 px-4">Filed in Book 3 at SRO</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Evidentiary Value</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Proof Value</td>
                       <td className="py-3 px-4">High Court proof required if contested</td>
-                      <td className="py-3 px-4 text-[#C65378] font-bold">Strong presumption of genuine execution</td>
+                      <td className="py-3 px-4 text-[#C65378] font-bold">Strong presumption of genuine signing</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
-                      <td className="py-3 px-4 font-bold text-slate-900">Loss of Document</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Loss of Paper</td>
                       <td className="py-3 px-4">Risk of loss unless copies stored</td>
                       <td className="py-3 px-4 text-emerald-700 font-semibold">Certified copy available from SRO</td>
                     </tr>
@@ -1878,10 +1878,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
-                11. Institutional Verification: AMA Succession Services
+                11. Institutional Check: AMA Estate Services
               </h3>
               <p className="text-sm md:text-base text-slate-200 leading-relaxed font-normal">
-                WillDrafting.in is powered by AMA Legal Solutions, a premier Indian succession law practice. Our advocates verify estate documents, resolve complex ancestral land titles, and draft customized testamentary instruments for families across 28 Indian states.
+                WillDrafting.in is powered by AMA Legal Solutions, a premier Indian succession law practice. Our lawyers verify estate papers, resolve complex family land titles, and draft customized Will instruments for families across 28 Indian states.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -1890,10 +1890,10 @@ export default function WillChecklistClient() {
                     DOCUMENT REVIEW
                   </span>
                   <h4 className="text-sm font-extrabold text-white">
-                    Advocate Title Audit
+                    Lawyer Title Audit
                   </h4>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    High court succession lawyers review property title deeds, Khata records, and share folios for unambiguous phrasing.
+                    High court estate lawyers review asset title deeds, Khata records, and share folios for clear phrasing.
                   </p>
                 </div>
 
@@ -1905,7 +1905,7 @@ export default function WillChecklistClient() {
                     SRO Section 31 Home Visit
                   </h4>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    For senior citizens and unwell testators, we arrange Sub-Registrar home visits under Section 31 of the Registration Act.
+                    For senior citizens and unwell Will makers, we arrange SRO home visits under Section 31 of the Filing Act.
                   </p>
                 </div>
 
@@ -1917,21 +1917,21 @@ export default function WillChecklistClient() {
                     High Court Probate
                   </h4>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Complete representation for mandatory probate in Mumbai, Kolkata, and Chennai, and Succession Certificates nationwide.
+                    Complete representation for needed probate in Mumbai, Kolkata, and Chennai, and Estate Papers nationwide.
                   </p>
                 </div>
               </div>
 
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10">
                 <span className="text-xs text-slate-300">
-                  Need an advocate to audit your gathered documents?
+                  Need an lawyer to audit your gathered papers?
                 </span>
                 <a
                   href="/contact"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-[#172228] text-xs font-bold hover:bg-slate-100 transition-all cursor-pointer"
                 >
                   <PhoneCall className="w-3.5 h-3.5 text-[#C65378]" />
-                  <span>Book Advocate Consultation</span>
+                  <span>Book Lawyer Talk</span>
                 </a>
               </div>
             </section>
@@ -1948,10 +1948,10 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                12. Frequently Asked Questions: Documents for Indian Will
+                12. Frequently Asked Questions: Papers for Indian Will
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                Clear answers to common questions regarding document requirements, stamp paper, registration, and witness formalities in India.
+                Clear answers to common questions regarding paper rules, stamp paper, filing, and witness formalities in India.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1996,21 +1996,21 @@ export default function WillChecklistClient() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                13. Statutory Citations &amp; Verified Government Portals
+                13. Legal Citations &amp; Checked Government Portals
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
-                All checklist rules on this page adhere to established Indian succession statutes and Supreme Court binding authorities.
+                All checklist rules on this page adhere to established Indian succession statutes and Supreme Court binding offices.
               </p>
 
               <ul className="text-xs text-slate-700 space-y-2 list-disc pl-5">
                 <li>
-                  <strong>Indian Succession Act, 1925:</strong> Section 59 (Testamentary capacity), Section 63 (Execution formalities), Section 67 (Witness voidance), Sections 102 &amp; 103 (Residuary bequests), Section 211 (Executor vesting).
+                  <strong>Indian Succession Act, 1925:</strong> Section 59 (Will capacity), Section 63 (Signing formalities), Section 67 (Witness voidance), Sections 102 &amp; 103 (Residuary bequests), Section 211 (Executor vesting).
                 </li>
                 <li>
-                  <strong>Hindu Succession Act, 1956:</strong> Section 30 (Testamentary disposition of coparcenary share in joint family property).
+                  <strong>Hindu Succession Act, 1956:</strong> Section 30 (Will gift of joint share in joint family asset).
                 </li>
                 <li>
-                  <strong>Registration Act, 1908:</strong> Section 18(e) (Optional registration of Wills), Section 31 (Registration at private residence for elderly/ill testators).
+                  <strong>Filing Act, 1908:</strong> Section 18(e) (A Choice filing of Wills), Section 31 (Filing at private residence for elderly/ill Will makers).
                 </li>
                 <li>
                   <strong>Indian Stamp Act, 1899:</strong> Schedule I (Exemption of Wills and Codicils from stamp duty).
@@ -2065,20 +2065,20 @@ export default function WillChecklistClient() {
                     rel="noopener noreferrer"
                     className="hover:text-[#C65378] transition-colors"
                   >
-                    Advocate Anuj Anand Malik
+                    Lawyer Anuj Anand Malik
                   </a>
                 </h4>
                 <p className="text-[11px] text-[#C65378] font-bold">
-                  Senior Succession Counsel, High Court of Delhi
+                  Senior Estate Counsel, High Court of Delhi
                 </p>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed font-normal">
-                15+ years advising families on estate planning, testamentary trust structuring, and contentious probate proceedings across India.
+                15+ years advising families on estate planning, Will trust structuring, and contentious probate proceedings across India.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-semibold">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Bar Council Verified</span>
+                  <span>Bar Council Checked</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -2102,7 +2102,7 @@ export default function WillChecklistClient() {
                 Ready to Draft Your Legally Binding Will?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed font-normal">
-                Our guided online software pre-fills your asset details, matches Section 63 witness requirements, and creates a court-ready Will in 15 minutes.
+                Our guided online software pre-fills your asset details, matches Section 63 witness rules, and creates a court-ready Will in 15 minutes.
               </p>
               <a
                 href="/start"
@@ -2126,7 +2126,7 @@ export default function WillChecklistClient() {
               <ul className="space-y-2 text-xs text-slate-700">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Section 63 ISA Compliant Attestation</span>
+                  <span>Section 63 ISA Compliant Witness Signing</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -2138,7 +2138,7 @@ export default function WillChecklistClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Vetted by High Court Succession Advocates</span>
+                  <span>Vetted by High Court Estate Lawyers</span>
                 </li>
               </ul>
             </div>
@@ -2154,7 +2154,7 @@ export default function WillChecklistClient() {
                   className="block p-2.5 rounded-xl border border-slate-200/80 hover:border-blue-200 hover:bg-blue-50/30 transition-all text-xs"
                 >
                   <span className="font-bold text-slate-900 block">
-                    Succession Share Calculator
+                    Estate Share Tool
                   </span>
                   <span className="text-[10px] text-slate-500">
                     Calculate legal heir shares under Hindu &amp; Muslim law &rarr;
@@ -2214,19 +2214,19 @@ export default function WillChecklistClient() {
                   href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Will Registration Service
+                  Will Filing Service
                 </Link>
                 <Link
                   href="/tools/probate-checker"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Probate Requirement Checker
+                  Probate Rule Checker
                 </Link>
                 <Link
                   href="/tools/succession-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Share Calculator
+                  Estate Share Tool
                 </Link>
               </div>
             </div>

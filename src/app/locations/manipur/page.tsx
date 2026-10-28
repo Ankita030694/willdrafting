@@ -144,7 +144,7 @@ export default function ManipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Manipur: Online Will Registration Guide",
         description:
-          "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review.",
+          "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary estate practices, and lawyer review.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function ManipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Manipur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Sub-Registrar registration, and Section 31 doorstep execution support across Imphal West.",
+          "Professional Will drafting, lawyer check, SRO filing, and Section 31 doorstep signing support across Imphal West.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -257,38 +257,38 @@ export default function ManipurLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Manipur",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Manipur.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Manipur.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Beneficiaries",
-            text: "List your Manipur assets including valley Patta land (Jamabandi records), Imphal residential homesteads, commercial holdings, and bank savings. Designate your beneficiaries and an executor.",
+            text: "List your Manipur assets including valley Patta land (Jamabandi records), Imphal home homesteads, shop holdings, and bank savings. Designate your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using legally vetted clauses for asset distribution, survivorship, minor guardian appointments, and revocation of prior instruments, respecting Section 158 MLR & LR Act rules.",
+            text: "Draft your Will using legally vetted clauses for asset split, survivorship, minor guardian appointments, and revocation of prior instruments, respecting Section 158 MLR & LR Act rules.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard white paper and sign each page in the presence of two independent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard white paper and sign each page in the presence of two independent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Office Visit",
-            text: "Submit your document and book an appointment with your jurisdictional Manipur Sub-Registrar Office (such as Lamphelpat, Porompat, Thoubal, or Churachandpur) and pay nominal statutory fees.",
+            text: "Submit your paper and book an appointment with your local Manipur SRO office (such as Lamphelpat, Porompat, Thoubal, or Churachandpur) and pay nominal legal fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Verification & Book III Registration",
-            text: "Visit the SRO with both witnesses for identity verification, photograph capture, and thumb impressions to complete official Book III registration.",
+            text: "Visit the SRO with both witnesses for identity check, photograph capture, and thumb impressions to complete official Book III filing.",
           },
         ],
       },

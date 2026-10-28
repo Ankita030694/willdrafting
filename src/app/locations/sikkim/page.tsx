@@ -137,7 +137,7 @@ export default function SikkimLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Sikkim: Online Will & Land Law Guide",
         description:
-          "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in.",
+          "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary estate, and SRO filing in.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -184,7 +184,7 @@ export default function SikkimLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Sikkim - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Revenue Order No. 1 land protection compliance, and SRO registration support across.",
+          "Professional Will drafting, lawyer check, Revenue Order No. 1 land protection compliance, and SRO filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -247,38 +247,38 @@ export default function SikkimLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Sikkim",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Sikkim.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Sikkim.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Check Land Category",
-            text: "List your residential flats, commercial properties, bank deposits, and verify whether any agricultural land falls under Revenue Order No. 1 Bhutia-Lepcha protections.",
+            text: "List your home flats, shop assets, bank deposits, and verify whether any farm land falls under Revenue Order No. 1 Bhutia-Lepcha protections.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will incorporating clear beneficiary allocations, survivorship clauses, executor appointment, and compliance with Article 371F provisions.",
+            text: "Draft your Will incorporating clear heir allocations, survivorship clauses, executor appointment, and compliance with Article 371F rules.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Pay Government Registration Fee",
-            text: "Obtain the official treasury challan for the nominal registration fee at the jurisdictional District Collectorate or Sub-Registrar Office in Sikkim.",
+            text: "Obtain the official treasury challan for the nominal filing fee at the local District Collectorate or SRO office in Sikkim.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Sikkim SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

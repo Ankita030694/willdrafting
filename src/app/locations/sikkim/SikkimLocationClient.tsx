@@ -118,7 +118,7 @@ const SIKKIM_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Sikkim state regulations, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -137,19 +137,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental soundness and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "Sikkim Certificate of ID (COI) / Home Proof",
-    detail: "Local home check or Certificate of ID confirming legal status and community lineage.",
+    label: "Sikkim Paper of ID (COI) / Home Proof",
+    detail: "Local home check or Paper of ID confirming legal status and community lineage.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Land Parcha / GMC Municipal Tax Receipts",
-    detail: "Official record of rights (Parcha / Khasra) or Gangtok Municipal Corporation property tax assessment receipts.",
+    label: "Land Parcha / GMC City Tax Receipts",
+    detail: "Official record of rights (Parcha / Khasra) or Gangtok City City Board asset tax assessment receipts.",
     checked: false,
   },
   {
@@ -252,7 +252,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your Gangtok apartments, shop buildings, cardamom plantations, and family businesses. Full legal guidance on Article 371F, Revenue Order No. 1 compliance, and Sub-Registrar registration.
+                Draft a legally watertight Will for your Gangtok apartments, shop buildings, cardamom plantations, and family businesses. Full legal guidance on Article 371F, Revenue Order No. 1 compliance, and SRO filing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -346,7 +346,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Testamentary Will Exemption
+                Will Will Exemption
               </span>
             </div>
 
@@ -366,7 +366,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                 Section 31
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Doorstep SRO Registration
+                Doorstep SRO Filing
               </span>
             </div>
           </div>
@@ -494,16 +494,16 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>SIKKIM ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Sikkim
+                  Key Highlights: Will Making &amp; Filing in Sikkim
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A handwritten or printed Will signed before two witnesses is valid. Official Book III registration at District Collectorate SROs provides strong protection against property fights.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. A handwritten or printed Will signed before two witnesses is valid. Official Book III filing at District Collectorate SROs provides strong protection against asset fights.
                     </p>
                   </div>
 
@@ -513,7 +513,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       <span>Revenue Order No. 1 Compliance</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Sikkim land laws strictly prohibit the transfer of Bhutia-Lepcha family and farm land to non-Bhutia-Lepcha people. Testamentary dispositions cannot circumvent Revenue Order No. 1 protections preserved under Article 371F.
+                      Sikkim land laws strictly prohibit the transfer of Bhutia-Lepcha family and farm land to non-Bhutia-Lepcha people. Will gifts cannot circumvent Revenue Order No. 1 protections preserved under Article 371F.
                     </p>
                   </div>
 
@@ -523,7 +523,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Sikkim lies outside historical presidency towns. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Sikkim, enabling direct land name change and municipal transfer with a registered Will.
+                      Sikkim lies outside historical presidency towns. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Sikkim, enabling direct land name change and city transfer with a filed Will.
                     </p>
                   </div>
 
@@ -533,7 +533,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty Exemption</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from ad-valorem stamp duty across Sikkim. You can execute your Will on standard A4 paper and remit only a nominal flat registration fee of ₹100 to ₹200 at the SRO office.
+                      Wills are 100% exempt from ad-valorem stamp duty across Sikkim. You can execute your Will on standard A4 paper and remit only a nominal flat filing fee of ₹100 to ₹200 at the SRO office.
                     </p>
                   </div>
                 </div>
@@ -551,10 +551,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and Will in Sikkim operate under a unique constitutional and legal framework. While the <strong>Indian Succession Act, 1925</strong> provides core procedural principles for signing a Will, succession in Sikkim is strongly anchored in <strong>Article 371F of the Constitution of India</strong>, the <strong>Registration Act, 1908</strong>, and historic land protection regulations.
+                  Estate planning and Will in Sikkim operate under a unique constitutional and legal framework. While the <strong>Indian Succession Act, 1925</strong> provides core procedural principles for signing a Will, estate in Sikkim is strongly anchored in <strong>Article 371F of the Constitution of India</strong>, the <strong>Filing Act, 1908</strong>, and historic land protection regulations.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Article 371F(k), all laws in force in Sikkim prior to its 1975 accession continue to apply until modified by the state legislature. This constitutional protection safeguards local customary succession norms and ensures that family holdings remain governed by indigenous tenancy statutes.
+                  Under Article 371F(k), all laws in force in Sikkim prior to its 1975 accession continue to apply until modified by the state legislature. This constitutional protection safeguards local customary estate norms and ensures that family holdings remain governed by indigenous tenancy statutes.
                 </p>
               </div>
 
@@ -565,12 +565,12 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     <span>Article 371F Constitutional Shield</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Article 371F preserves Sikkim&apos;s pre-accession laws, customary inheritance practices, and land ownership safeguards. Any Will signed in Sikkim must respect community-specific customary succession and home land tenure rules to withstand scrutiny before the High Court of Sikkim.
+                    Article 371F preserves Sikkim&apos;s pre-accession laws, customary estate practices, and land ownership safeguards. Any Will signed in Sikkim must respect community-specific customary estate and home land tenure rules to withstand scrutiny before the High Court of Sikkim.
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
                     <li className="flex items-center gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600" />
-                      <span>Preserves community customary inheritance rights</span>
+                      <span>Preserves community customary estate rights</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -585,7 +585,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     <span>Revenue Order No. 1 of 1917</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Revenue Order No. 1 strictly protects land owned by Bhutia and Lepcha communities. A Bhutia or Lepcha Will maker cannot transfer or bequeath farm or family land to a non-Bhutia-Lepcha individual through a Will. Any testamentary clause violating this legal prohibition is void ab initio.
+                    Revenue Order No. 1 strictly protects land owned by Bhutia and Lepcha communities. A Bhutia or Lepcha Will maker cannot transfer or bequeath farm or family land to a non-Bhutia-Lepcha single through a Will. Any Will clause violating this legal prohibition is void ab initio.
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
                     <li className="flex items-center gap-2">
@@ -609,13 +609,13 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>REGISTRATION DISCLOSURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Sikkim?
+                  2. Is Will Filing Needed in Sikkim?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Indian Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong> throughout Sikkim. An unregistered Will signed on plain white A4 paper before two competent witnesses carries full legal validity upon the Will maker&apos;s death.
+                  Under Section 18(e) of the Indian Registration Act, 1908, the filing of a Will is strictly <strong>a choice</strong> throughout Sikkim. An plain Will signed on plain white A4 paper before two competent witnesses carries full legal validity upon the Will maker&apos;s death.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registration before the Sub-Registrar at the District Office Centre in Gangtok, Namchi, Gyalshing, or Mangan provides decisive legal proof advantages:
+                  However, filing before the SRO at the District Office Centre in Gangtok, Namchi, Gyalshing, or Mangan provides decisive legal proof advantages:
                 </p>
               </div>
 
@@ -624,15 +624,15 @@ export default function SikkimLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-[#172228] text-white">
                     <tr>
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-200">Registered Will (Book III)</th>
-                      <th className="p-4 font-bold text-slate-300">Unregistered Will</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-200">Filed Will (Book III)</th>
+                      <th className="p-4 font-bold text-slate-300">Plain Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Legal Validity</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-emerald-700">Valid under Registration Act 1908</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-emerald-700">Valid under Filing Act 1908</td>
                       <td className="p-4 bg-slate-50/20">Valid if attested by two witnesses</td>
                     </tr>
                     <tr>
@@ -641,17 +641,17 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Higher risk to forgery allegations</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Gangtok Municipal (GMC) Name Change</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-emerald-700">Fast name change on municipal property tax register</td>
-                      <td className="p-4 bg-slate-50/20">Requires legal heir NOCs and affidavits</td>
+                      <td className="p-4 font-semibold">Gangtok City (GMC) Name Change</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-emerald-700">Fast name change on city asset tax register</td>
+                      <td className="p-4 bg-slate-50/20">Requires legal heir NOCs and sworn notes</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Land Revenue Department Parcha Transfer</td>
+                      <td className="p-4 font-semibold">Land Revenue Office Parcha Transfer</td>
                       <td className="p-4 bg-rose-50/20">Accepted by Revenue Inspector for smooth record update</td>
                       <td className="p-4 bg-slate-50/20">Prone to delays and objections by collateral heirs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Official Registration Cost</td>
+                      <td className="p-4 font-semibold">Official Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 - ₹200 fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -671,7 +671,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   3. Sikkim Probate Law: Exemption Outside Presidency Towns
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Sikkim is whether probate from the High Court of Sikkim or District Court is needed before property transfer. The established legal answer is <strong>no</strong>.
+                  A common question among asset owners in Sikkim is whether probate from the High Court of Sikkim or District Court is needed before asset transfer. The established legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, court probate is needed solely for Wills signed within or concerning assets located inside the historical presidency towns of Mumbai, Kolkata, and Chennai. Sikkim lies completely outside these presidency town boundaries.
@@ -687,7 +687,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     High Court of Sikkim Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Sikkim has consistently held that getting court probate is optional for residents in Sikkim. Heirs can directly present a registered Will along with the Will maker&apos;s death paper to the Land Revenue Department and Gangtok Municipal Corporation for immediate name change.
+                    The High Court of Sikkim has consistently held that getting court probate is a choice for residents in Sikkim. Heirs can directly present a filed Will along with the Will maker&apos;s death paper to the Land Revenue Office and Gangtok City City Board for immediate name change.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -703,7 +703,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     When is Probate Filed in Sikkim Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of management before the District Court in Gangtok or Namchi if disgruntled legal heirs challenge the Will maker&apos;s sound mind or allege coercion. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily file for probate or letters of management before the District Court in Gangtok or Namchi if disgruntled legal heirs fight the Will maker&apos;s sound mind or allege coercion. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -721,10 +721,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Sikkim Sub-Registrar Offices: District SRO Directory
+                  4. Sikkim SRO Offices: District SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registration of documents in Sikkim is administered by the Land Revenue and Disaster Management Department through Sub-Registrar Offices located within District Office Centres (DAC) and Sub-Divisional Magistrate (SDM) complexes. Under Section 32 of the Registration Act, your Will can be registered at the SRO having area over your permanent residence or where your property is situated.
+                  Filing of papers in Sikkim is administered by the Land Revenue and Disaster Management Office through SRO Offices located within District Office Centres (DAC) and Sub-Divisional Magistrate (SDM) complexes. Under Section 32 of the Filing Act, your Will can be filed at the SRO having area over your permanent residence or where your asset is situated.
                 </p>
               </div>
 
@@ -768,7 +768,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
                     <div>
                       <span className="text-[11px] font-bold uppercase tracking-wider text-[#C65378]">
-                        Designated Registration Authority
+                        Designated Filing Office
                       </span>
                       <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
                         {activeHubData.sro}
@@ -801,7 +801,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
 
                   <div className="space-y-1 pt-2 border-t border-slate-200/80 text-xs">
                     <span className="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">
-                      Local Jurisdictional Coverage
+                      Local Local Coverage
                     </span>
                     <p className="text-slate-700 leading-relaxed">
                       {activeHubData.areas}
@@ -822,7 +822,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   5. Regional Cities: District-Wise Will Drafting in Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Sikkim span high-value urban home flats in Gangtok, shop hotels in Pelling and Ravangla, pharmaceutical facilities along the Rangpo corridor, and protected farm holdings in Mangan and Namchi. Our estate lawyers deliver customized legal drafting, Revenue Order No. 1 compliance check, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate assets in Sikkim span high-value urban home flats in Gangtok, shop hotels in Pelling and Ravangla, pharmaceutical facilities along the Rangpo corridor, and protected farm holdings in Mangan and Namchi. Our estate lawyers deliver customized legal drafting, Revenue Order No. 1 compliance check, and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -852,7 +852,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Gangtok</strong> and Sichey for multi-storey home buildings, shop shops along MG Marg, and modern apartments. Codifies smooth name change on Gangtok Municipal Corporation (GMC) tax registers, mutual fund portfolios, and bank locker bequests to prevent future family fights.
+                      Specialized <strong>Will drafting services in Gangtok</strong> and Sichey for multi-storey home buildings, shop shops along MG Marg, and modern apartments. Codifies smooth name change on Gangtok City City Board (GMC) tax registers, mutual fund portfolios, and bank locker bequests to prevent future family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -905,7 +905,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Namchi</strong> and Jorethang for wholesale businesses, shop warehousing, and home homes. Includes clear rules for family business succession, doctor mental capacity papers, and life-interest protection for surviving spouses.
+                      Customized <strong>Will drafting services in Namchi</strong> and Jorethang for wholesale businesses, shop warehousing, and home homes. Includes clear rules for family business estate, doctor mental capacity papers, and life-interest protection for surviving spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -914,7 +914,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Centre, Namchi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        South Sikkim estate structuring, private asset mapping, and expedited Book III registration.
+                        South Sikkim estate structuring, private asset mapping, and expedited Book III filing.
                       </p>
                     </div>
                   </div>
@@ -958,7 +958,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Gyalshing</strong> and Pelling for boutique resorts, tourist homestays, and terraced orchards. Formulates clear share allocations among legal heirs, tenancy leasehold succession, and smooth Land Revenue Parcha record updates.
+                      Full <strong>Will drafting services in Gyalshing</strong> and Pelling for boutique resorts, tourist homestays, and terraced orchards. Formulates clear share allocations among legal heirs, tenancy leasehold estate, and smooth Land Revenue Parcha record updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -967,7 +967,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Centre, Kyongsa</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Tourism asset succession, independent witness attestation, and doorstep check for seniors.
+                        Tourism asset estate, independent witness witness signing, and doorstep check for seniors.
                       </p>
                     </div>
                   </div>
@@ -1011,7 +1011,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Rigorous <strong>Will drafting services in Mangan</strong> and the Dzongu reserve for indigenous Bhutia-Lepcha families. Guarantees 100% compliance with Revenue Order No. 1 of 1917, protecting cardamom estates, traditional family lands, and community succession protocols from legal contestation.
+                      Rigorous <strong>Will drafting services in Mangan</strong> and the Dzongu reserve for indigenous Bhutia-Lepcha families. Guarantees 100% compliance with Revenue Order No. 1 of 1917, protecting cardamom estates, traditional family lands, and community estate protocols from legal contestation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1020,7 +1020,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate Complex, Pentok</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Strict legal scrutiny under Article 371F, Revenue Order compliance, and Book III registration.
+                        Strict legal scrutiny under Article 371F, Revenue Order compliance, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1098,7 +1098,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Industrial &amp; Border Gateway
+                        Plant &amp; Border Gateway
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SDM SRO Rangpo
@@ -1117,7 +1117,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Rangpo</strong> and Singtam for industrial logistics hubs, pharmaceutical warehousing, and highway retail businesses. Drafts partnership share transfers, corporate succession clauses, and bank guarantee releases upon probate exemption.
+                      Strategic <strong>Will drafting services in Rangpo</strong> and Singtam for plant logistics hubs, pharmaceutical warehousing, and highway retail businesses. Drafts partnership share transfers, corporate estate clauses, and bank guarantee releases upon probate exemption.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1126,7 +1126,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Office Complex, National Highway 10</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Pharma enterprise asset planning, shop property bequests, and seamless local registration.
+                        Pharma enterprise asset planning, shop asset bequests, and seamless local filing.
                       </p>
                     </div>
                   </div>
@@ -1170,7 +1170,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Soreng</strong> and Nayabazar for horticultural farmland, ginger estates, and terraced farm assets. Coordinates clear boundary demarcations, family split settlements, and Land Revenue Department name change entries.
+                      Dedicated <strong>Will drafting services in Soreng</strong> and Nayabazar for horticultural farmland, ginger estates, and terraced farm assets. Coordinates clear boundary demarcations, family split settlements, and Land Revenue Office name change entries.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1179,7 +1179,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Complex, Soreng</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Horticultural farmland bequests, local witness check, and Sub-Registrar Book III filing.
+                        Horticultural farmland bequests, local witness check, and SRO Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1232,7 +1232,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Office Centre, Namchi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Eco-tourism property split, mental capacity validation, and SRO registration support.
+                        Eco-tourism asset split, mental capacity validation, and SRO filing support.
                       </p>
                     </div>
                   </div>
@@ -1262,10 +1262,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP WORKFLOW</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to SRO Registration in Sikkim
+                  6. Step-by-Step SOP: Drafting to SRO Filing in Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Drafting and signing a legally enforceable Will in Sikkim follows five structured stages designed to make sure complete adherence to both central succession acts and local land protection regulations:
+                  Drafting and signing a legally enforceable Will in Sikkim follows five structured stages designed to make sure complete adherence to both central estate acts and local land protection regulations:
                 </p>
               </div>
 
@@ -1307,7 +1307,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm text-slate-900">
-                      Physical Attestation Before Two Independent Witnesses
+                      Physical Witness Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Print the Will on standard white A4 sheets. The Will maker signs or affixes thumb impressions at the bottom of each page in the continuous visual presence of two adult witnesses who have no beneficial interest under the Will.
@@ -1325,7 +1325,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       SRO Challan Payment &amp; Papers Filing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Remit the official government registration fee (flat ₹100 - ₹200) through the designated Sikkim treasury portal or bank counter. Prepare the ID docket with Aadhaar, PAN, and witness KYC proofs.
+                      Remit the official government filing fee (flat ₹100 - ₹200) through the designated Sikkim treasury portal or bank counter. Prepare the ID docket with Aadhaar, PAN, and witness KYC proofs.
                     </p>
                   </div>
                 </div>
@@ -1337,10 +1337,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm text-slate-900">
-                      Biometric Appearance &amp; Book III SRO Registration
+                      Biometric Appearance &amp; Book III SRO Filing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the SRO office at the District Collectorate in Gangtok, Namchi, Gyalshing, or Mangan. Complete biometric thumb scans and digital photography. The registered Will is officially entered into permanent government Book III records.
+                      Visit the SRO office at the District Collectorate in Gangtok, Namchi, Gyalshing, or Mangan. Complete biometric thumb scans and digital photography. The filed Will is officially entered into permanent government Book III records.
                     </p>
                   </div>
                 </div>
@@ -1355,10 +1355,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Navigating Sikkim&apos;s steep Himalayan topography and traveling to District Office Centres can pose severe physical fights for elderly or bedridden citizens. <strong>Section 31 of the Registration Act, 1908</strong> provides a legal solution through home commission visits.
+                  Navigating Sikkim&apos;s steep Himalayan topography and traveling to District Office Centres can pose severe physical fights for elderly or bedridden citizens. <strong>Section 31 of the Filing Act, 1908</strong> provides a legal solution through home commission visits.
                 </p>
               </div>
 
@@ -1372,7 +1372,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       Doorstep SRO Commission Process in Sikkim
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Legal home signing facility under Section 31 of the Registration Act, 1908
+                      Legal home signing facility under Section 31 of the Filing Act, 1908
                     </p>
                   </div>
                 </div>
@@ -1380,10 +1380,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-xs text-slate-900 block">
-                      1. Medical Certificate
+                      1. Medical Paper
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain a medical paper from a registered physician (MBBS / MD) certifying physical inability to travel and mental fitness to execute the Will.
+                      Obtain a medical paper from a filed physician (MBBS / MD) certifying physical inability to travel and mental fitness to execute the Will.
                     </p>
                   </div>
 
@@ -1392,7 +1392,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       2. Formal Requisition
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submit an form under Section 31 to the District Sub-Registrar along with the medical paper and standard travel commission fee.
+                      Submit an form under Section 31 to the District SRO along with the medical paper and standard travel commission fee.
                     </p>
                   </div>
 
@@ -1401,7 +1401,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       3. Home Officer Attendance
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar attends your residence with portable biometric devices, validates ID, and registers the Will in Book III.
+                      The SRO attends your residence with portable biometric devices, validates ID, and registers the Will in Book III.
                     </p>
                   </div>
                 </div>
@@ -1416,17 +1416,17 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>PREPARATION AUDIT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Sikkim Sub-Registrar Offices
+                  8. Paper Checklist for Sikkim SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ensure all legal identity, property, and community lineage records are organized prior to your SRO appointment. Check off items below:
+                  Ensure all legal identity, asset, and community lineage records are organized prior to your SRO appointment. Check off items below:
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 shadow-xs space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <span className="text-xs font-bold text-slate-600">
-                    Interactive Readiness Checklist
+                    Free Readiness Checklist
                   </span>
                   <span className="px-3 py-1 rounded-full bg-rose-50 text-[#C65378] text-xs font-extrabold">
                     {checkedCount} of {checklist.length} Documents Ready
@@ -1468,10 +1468,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Sikkim Property Types: Gangtok Flats &amp; Family Land
+                  9. Sikkim Asset Types: Gangtok Flats &amp; Family Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Asset bequeathals in Sikkim require tailored clauses depending on whether the property consists of self-acquired urban real estate, protected farm land, or financial investments:
+                  Asset bequeathals in Sikkim require tailored clauses depending on whether the asset consists of self-acquired urban real estate, protected farm land, or financial investments:
                 </p>
               </div>
 
@@ -1484,7 +1484,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     Urban Gangtok Flats &amp; Shops
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Self-acquired home apartments, multi-storey buildings in Sichey and Tadong, and retail shops along MG Marg. 100% testamentary freedom allows bequests to children, spouse, or non-relatives with clear GMC name change directives.
+                    Self-acquired home apartments, multi-storey buildings in Sichey and Tadong, and retail shops along MG Marg. 100% Will freedom allows bequests to children, spouse, or non-relatives with clear GMC name change directives.
                   </p>
                 </div>
 
@@ -1496,7 +1496,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     Cardamom Estates &amp; Farmland
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farm parcels, large cardamom plantations, and terraced farmlands. If owned by Bhutia or Lepcha testators, bequests must strictly comply with Revenue Order No. 1 and pass exclusively to eligible community members.
+                    Farm parcels, large cardamom plantations, and terraced farmlands. If owned by Bhutia or Lepcha Will makers, bequests must strictly comply with Revenue Order No. 1 and pass exclusively to eligible community members.
                   </p>
                 </div>
 
@@ -1522,10 +1522,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <span>STATUTORY TARIFF</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Sikkim Registration Fees &amp; Stamp Duty Charges
+                  10. Official Sikkim Filing Fees &amp; Stamp Duty Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property gift deeds or conveyance deeds that attract percentage-based state stamp duty, testamentary Wills in Sikkim enjoy full legal exemptions from ad-valorem stamp duty:
+                  Unlike asset gift deeds or conveyance deeds that attract percentage-based state stamp duty, Will Wills in Sikkim enjoy full legal exemptions from ad-valorem stamp duty:
                 </p>
               </div>
 
@@ -1540,14 +1540,14 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Stamp Duty on Will Document</td>
+                      <td className="p-4 font-semibold">Stamp Duty on Will Paper</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-emerald-700">₹0 (100% Exempt)</td>
                       <td className="p-4 bg-slate-50/20">Will exemption</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Sub-Registrar Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 - ₹200</td>
-                      <td className="p-4 bg-slate-50/20">Sikkim Registration Tariff (Book III)</td>
+                      <td className="p-4 bg-slate-50/20">Sikkim Filing Tariff (Book III)</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Data Entry</td>
@@ -1557,7 +1557,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Doorstep Visit Commission</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-slate-900">Prescribed Govt Commission + Travel</td>
-                      <td className="p-4 bg-slate-50/20">Doorstep attendance for bedridden testators</td>
+                      <td className="p-4 bg-slate-50/20">Doorstep attendance for bedridden Will makers</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1575,7 +1575,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose from our structured estate planning packages tailored mainly for Sikkim residents, families, and property owners:
+                  Choose from our structured estate planning packages tailored mainly for Sikkim residents, families, and asset owners:
                 </p>
               </div>
 
@@ -1598,7 +1598,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Custom clauses for Sikkim movable assets</span>
+                        <span>Custom clauses for Sikkim cash assets</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1610,7 +1610,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Signing &amp; attestation instructions</span>
+                        <span>Signing &amp; witness signing instructions</span>
                       </li>
                     </ul>
                   </div>
@@ -1633,13 +1633,13 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       Full Talk
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Senior Lawyer Succession Review
+                      Senior Lawyer Estate Review
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Designed for estates with multiple assets, Revenue Order No. 1 land checks, and family business succession.
+                      Designed for estates with multiple assets, Revenue Order No. 1 land checks, and family business estate.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1652,7 +1652,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Bhutia-Lepcha customary succession checks</span>
+                        <span>Bhutia-Lepcha customary estate checks</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1675,13 +1675,13 @@ export default function SikkimLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Sikkim SRO office or doorstep home visit.
+                      End-to-end filing coordination across any Sikkim SRO office or doorstep home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1723,7 +1723,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Essential legal and practical answers regarding will drafting, land protections, and registration in Sikkim:
+                  Essential legal and practical answers regarding will drafting, land protections, and filing in Sikkim:
                 </p>
               </div>
 
@@ -1782,7 +1782,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     Article 371F of Constitution
                   </span>
                   <p className="text-xs text-slate-600">
-                    Clause (k) preserves Sikkim&apos;s pre-accession laws and indigenous customary succession rules.
+                    Clause (k) preserves Sikkim&apos;s pre-accession laws and indigenous customary estate rules.
                   </p>
                 </div>
 
@@ -1797,10 +1797,10 @@ export default function SikkimLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1809,7 +1809,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 59 (Testamentary Capacity), Section 63 (Attestation), and Section 213 (Probate Rules).
+                    Section 59 (Will Capacity), Section 63 (Witness Signing), and Section 213 (Probate Rules).
                   </p>
                 </div>
               </div>
@@ -1840,7 +1840,29 @@ export default function SikkimLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1859,7 +1881,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Sikkim Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Sikkim Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1878,7 +1900,7 @@ export default function SikkimLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Sikkim SRO Registered &amp; Revenue Order No. 1 Compliant</span>
+              <span>Sikkim SRO Filed &amp; Revenue Order No. 1 Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

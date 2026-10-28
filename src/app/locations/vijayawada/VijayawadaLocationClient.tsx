@@ -131,12 +131,12 @@ const CHECKLIST_ITEMS = [
   {
     id: "item-2",
     title: "APCRDA Allotment Letters & VMC Property Tax Receipts",
-    desc: "APCRDA plot allotment orders, VMC property tax assessment receipts, registered sale deeds, or apartment link documents in Vijayawada.",
+    desc: "APCRDA plot allotment orders, VMC asset tax assessment receipts, filed sale deeds, or apartment link papers in Vijayawada.",
   },
   {
     id: "item-3",
     title: "Commercial Enterprise & Trading Asset Records",
-    desc: "Partnership deeds, shop establishment registrations, GST certificates, current accounts, and demat holding statements for family enterprises.",
+    desc: "Partnership deeds, shop establishment registrations, GST papers, current accounts, and demat holding statements for family enterprises.",
   },
   {
     id: "item-4",
@@ -146,12 +146,12 @@ const CHECKLIST_ITEMS = [
   {
     id: "item-5",
     title: "Details of Two Non-Beneficiary Witnesses",
-    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two adult witnesses who will not receive any property under the Will.",
+    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two adult witnesses who will not receive any asset under the Will.",
   },
   {
     id: "item-6",
     title: "MBBS Doctor Fitness Certificate (For Seniors)",
-    desc: "Medical certificate from a registered physician verifying mental soundness and lucid testamentary disposing capacity of the testator.",
+    desc: "Medical paper from a filed physician verifying mental soundness and lucid Will disposing capacity of the Will maker.",
   },
 ];
 
@@ -254,7 +254,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect family home assets, APCRDA plots, shop wholesale enterprises, and Krishna delta farm lands across Vijayawada.
-                Get experienced lawyer drafting, AP IGRS slot booking, and Section 31 doorstep home visits for senior testators.
+                Get experienced lawyer drafting, AP IGRS slot booking, and Section 31 doorstep home visits for senior Will makers.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -342,7 +342,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Section 213 AP Rules
@@ -484,7 +484,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Vijayawada is a non-presidency town governed under the High Court of Andhra Pradesh. Under Section 213 of the Indian Succession Act, court probate is strictly optional for Hindu, Jain, Sikh, and Buddhist Wills.
+                      Vijayawada is a non-presidency town governed under the High Court of Andhra Pradesh. Under Section 213 of the Indian Succession Act, court probate is strictly a choice for Hindu, Jain, Sikh, and Buddhist Wills.
                     </p>
                   </div>
 
@@ -494,7 +494,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty in AP</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills in Andhra Pradesh are completely exempt from stamp duty. Sub-Registrars charge only a flat ₹1,000 Book III registration fee plus nominal card computer charges.
+                      Wills in Andhra Pradesh are completely exempt from stamp duty. Sub-Registrars charge only a flat ₹1,000 Book III filing fee plus nominal card computer charges.
                     </p>
                   </div>
 
@@ -504,7 +504,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       <span>APCRDA &amp; VMC Direct Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will allows smooth property name change across Vijayawada Municipal Corporation (VMC) and APCRDA Amaravati capital region layouts without civil court proceedings.
+                      A filed Will allows smooth asset name change across Vijayawada City City Board (VMC) and APCRDA Amaravati capital region layouts without civil court proceedings.
                     </p>
                   </div>
 
@@ -514,7 +514,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       <span>Section 31 Doorstep Facility</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Elderly or bedridden citizens in Benz Circle, Moghalrajpuram, and Patamata can request the Sub-Registrar to visit their residence with an MBBS doctor fitness paper.
+                      Elderly or bedridden citizens in Benz Circle, Moghalrajpuram, and Patamata can request the SRO to visit their residence with an MBBS doctor fitness paper.
                     </p>
                   </div>
                 </div>
@@ -532,8 +532,8 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   1. Legal Framework for Will Drafting in Vijayawada
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession in Vijayawada and across Andhra Pradesh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Transfer of Property Act, 1882</strong>.
-                  Whether you are planning succession for family home apartments in Benz Circle, shop shops in Governorpet, auto-ancillary industrial sheds in Jawahar Auto Nagar, or fertile farm lands in the Krishna delta, your Will must satisfy precise legal standards.
+                  Will estate in Vijayawada and across Andhra Pradesh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Transfer of Property Act, 1882</strong>.
+                  Whether you are planning estate for family home apartments in Benz Circle, shop shops in Governorpet, auto-ancillary plant sheds in Jawahar Auto Nagar, or fertile farm lands in the Krishna delta, your Will must satisfy precise legal standards.
                 </p>
               </div>
 
@@ -544,17 +544,17 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     <span>Will maker Capacity</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 59 of the Indian Succession Act, every person of sound mind who is not a minor may dispose of their property by Will. Persons who are deaf, dumb, or blind can make a Will if they understand its legal effect.
+                    Under Section 59 of the Indian Succession Act, every person of sound mind who is not a minor may dispose of their asset by Will. Persons who are deaf, dumb, or blind can make a Will if they understand its legal effect.
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-white border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <FileCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Attestation by Two Witnesses</span>
+                    <span>Witness Signing by Two Witnesses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 63, the Will must be signed by the Will maker and attested by at least two independent adult witnesses. Crucially, under Section 67, witnesses must not be heirs receiving any bequest under the document.
+                    Under Section 63, the Will must be signed by the Will maker and attested by at least two independent adult witnesses. Crucially, under Section 67, witnesses must not be heirs receiving any bequest under the paper.
                   </p>
                 </div>
 
@@ -574,7 +574,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                 <div className="space-y-1">
                   <span className="font-bold text-[#C65378]">Important Legal Nuance for Andhra Pradesh Families:</span>
                   <p className="text-slate-700 leading-relaxed">
-                    Under Hindu Succession Act, 1956, family property held as an undivided joint family interest cannot be arbitrarily willed away without partitioning or without recognizing daughters as equal coparceners post-2005 amendment. A skilled lawyer ensures distinct bequeathal of self-acquired assets to eliminate future split fights.
+                    Under Hindu Succession Act, 1956, family asset held as an undivided joint family interest cannot be arbitrarily willed away without partitioning or without recognizing daughters as equal coparceners post-2005 amendment. A skilled lawyer ensures distinct bequeathal of self-acquired assets to eliminate future split fights.
                   </p>
                 </div>
               </div>
@@ -588,12 +588,12 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Vijayawada?
+                  2. Is Will Filing Needed in Vijayawada?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional throughout Andhra Pradesh.
-                  An unregistered Will signed on plain A4 sheet before two witnesses holds valid legal force.
-                  However, registered Wills provide immense legal protection against false allegations of coercion, fraud, or mental incapacity.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, registering a Will is legally a choice throughout Andhra Pradesh.
+                  An plain Will signed on plain A4 sheet before two witnesses holds valid legal force.
+                  However, filed Wills provide immense legal protection against false allegations of coercion, fraud, or mental incapacity.
                 </p>
               </div>
 
@@ -603,29 +603,29 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 text-slate-800 border-b border-slate-200">
                       <th className="p-3 sm:p-4 font-bold">Feature</th>
-                      <th className="p-3 sm:p-4 font-bold text-slate-600">Unregistered Will</th>
-                      <th className="p-3 sm:p-4 font-bold text-[#C65378]">Registered Will (AP IGRS)</th>
+                      <th className="p-3 sm:p-4 font-bold text-slate-600">Plain Will</th>
+                      <th className="p-3 sm:p-4 font-bold text-[#C65378]">Filed Will (AP IGRS)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">Legal Validity</td>
                       <td className="p-3 sm:p-4">Valid under Section 63 ISA</td>
-                      <td className="p-3 sm:p-4 font-semibold text-slate-900">Valid under Section 63 ISA &amp; Registration Act</td>
+                      <td className="p-3 sm:p-4 font-semibold text-slate-900">Valid under Section 63 ISA &amp; Filing Act</td>
                     </tr>
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">Official Record</td>
-                      <td className="p-3 sm:p-4">Private document only</td>
+                      <td className="p-3 sm:p-4">Private paper only</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Archived in Book III at SRO office</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-semibold">VMC Property Name Change</td>
-                      <td className="p-3 sm:p-4">May require legal heir no-objection affidavits</td>
+                      <td className="p-3 sm:p-4 font-semibold">VMC Asset Name Change</td>
+                      <td className="p-3 sm:p-4">May require legal heir no-objection sworn notes</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Smooth name change via Ward Sachivalayam</td>
                     </tr>
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">APCRDA Plot Transfer</td>
-                      <td className="p-3 sm:p-4">Higher scrutiny by planning authority</td>
+                      <td className="p-3 sm:p-4">Higher scrutiny by planning office</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Direct transfer on record</td>
                     </tr>
                     <tr>
@@ -654,7 +654,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   3. Andhra Pradesh Probate Rules: Section 213 Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among property owners in Vijayawada is that a Will must be probated in court before assets can be transferred.
+                  One of the most persistent misconceptions among asset owners in Vijayawada is that a Will must be probated in court before assets can be transferred.
                   Under Indian succession law, this is strictly incorrect for Andhra Pradesh.
                 </p>
               </div>
@@ -668,7 +668,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Vijayawada is a non-presidency town governed under the <strong>High Court of Andhra Pradesh at Amaravati</strong>.
-                  The Supreme Court of India in the landmark ruling of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> affirmed that probate is strictly optional for Hindu, Jain, Sikh, and Buddhist testators outside historical presidency areas.
+                  The Supreme Court of India in the landmark ruling of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> affirmed that probate is strictly a choice for Hindu, Jain, Sikh, and Buddhist Will makers outside historical presidency areas.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
@@ -682,10 +682,10 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-xs uppercase tracking-wider text-[#C65378] block">
-                      Why Registration is Vital
+                      Why Filing is Vital
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Because probate is not needed, registering your Will at the local SRO acts as the highest proof of authenticity during bank transmissions and municipal transfers.
+                      Because probate is not needed, registering your Will at the local SRO acts as the highest proof of authenticity during bank transmissions and city transfers.
                     </p>
                   </div>
                 </div>
@@ -703,8 +703,8 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   4. Vijayawada SRO office Directory &amp; SROs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across Vijayawada is administered by the Registration and Stamps Department, Government of Andhra Pradesh (AP IGRS).
-                  Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your land and flats are situated.
+                  Will filing across Vijayawada is administered by the Filing and Stamps Office, Government of Andhra Pradesh (AP IGRS).
+                  Under Section 32 of the Filing Act, you can register your Will before the SRO where you reside or where your land and flats are situated.
                 </p>
               </div>
 
@@ -781,7 +781,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-200/70 text-xs">
                     <span className="text-slate-500">
-                      Official Appointment Booking: <strong>registration.ap.gov.in (AP IGRS)</strong>
+                      Official Appointment Booking: <strong>filing.ap.gov.in (AP IGRS)</strong>
                     </span>
                     <Link
                       href="/contact"
@@ -807,7 +807,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Seeking lawyer-supervised <strong>Will drafting services in Benz Circle, Governorpet, Patamata, Gunadala, or Gannavaram</strong>?
-                  Property ownership frameworks, APCRDA pooling layout conditions, VMC guidelines, and Sub-Registrar areas vary across the NTR district.
+                  Asset ownership frameworks, APCRDA pooling layout conditions, VMC guidelines, and SRO areas vary across the NTR district.
                   Whether you own an family shop building in Governorpet, a luxury high-rise apartment in Moghalrajpuram, or farm land in Kankipadu, our estate lawyers provide customized legal drafting:
                 </p>
               </div>
@@ -888,13 +888,13 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to multi-generational wholesale merchant families, cloth traders, and jewelers. We formulate robust shop business succession plans covering retail shops, trading partnerships, warehouse leases, and family firm shareholdings.
+                      Home to multi-generational wholesale merchant families, cloth traders, and jewelers. We formulate robust shop business estate plans covering retail shops, trading partnerships, warehouse leases, and family firm shareholdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Partnership clause harmonization, GST transfer clarity, and executor authority make sure uninterrupted business continuity without freezing accounts.
+                        Partnership clause harmonization, GST transfer clarity, and executor office make sure uninterrupted business continuity without freezing accounts.
                       </p>
                     </div>
                   </div>
@@ -938,7 +938,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Preferred by IT executives, professors, and non-resident Indian families with independent houses and modern gated villas. We assist with digital assets, overseas children inheritance structures, and NRI power-of-attorney signing.
+                      Preferred by IT executives, professors, and non-resident Indian families with independent houses and modern gated villas. We assist with digital assets, overseas children estate structures, and NRI power-of-attorney signing.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -969,7 +969,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Industrial &amp; Auto Ancillary Hub
+                        Plant &amp; Auto Ancillary Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Patamata / Gunadala
@@ -981,7 +981,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jawahar Auto Nagar Industrial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jawahar Auto Nagar Plant</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gunadala Church Road</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ramavarappadu Ring</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Nunna Agro Market Belt</span>
@@ -994,7 +994,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        APIIC allotment conditions, industrial leasehold renewal rights, and shop debt indemnifications protect successor generations.
+                        APIIC allotment conditions, plant leasehold renewal rights, and shop debt indemnifications protect successor generations.
                       </p>
                     </div>
                   </div>
@@ -1123,10 +1123,10 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <span>AP IGRS STANDARD OPERATING PROCEDURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Andhra Pradesh
+                  6. Step-by-Step Will Filing in Andhra Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Vijayawada is conducted through the <strong>Registration &amp; Stamps Department of Andhra Pradesh (AP IGRS)</strong>.
+                  Registering a Will in Vijayawada is conducted through the <strong>Filing &amp; Stamps Office of Andhra Pradesh (AP IGRS)</strong>.
                   Our senior lawyers guide you seamlessly through each legal phase:
                 </p>
               </div>
@@ -1142,7 +1142,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       Asset Inventory &amp; Heir Mapping
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile complete ownership records of your Vijayawada assets, including VMC property tax assessment numbers, APCRDA plot allotment orders, bank account numbers, demat portfolios, and Krishna delta farm survey numbers. Appoint trusted heirs, an executor, and a legal guardian for minor children.
+                      Compile complete ownership records of your Vijayawada assets, including VMC asset tax assessment numbers, APCRDA plot allotment orders, bank account numbers, demat portfolios, and Krishna delta farm survey numbers. Appoint trusted heirs, an executor, and a legal guardian for minor children.
                     </p>
                   </div>
                 </div>
@@ -1157,7 +1157,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       Lawyer Drafting &amp; Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal experts draft a tailored testamentary document. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate rules, non-presidency probate exemption affirmations, and explicit office powers for your executor.
+                      Our legal experts draft a tailored Will paper. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate rules, non-presidency probate exemption affirmations, and explicit office powers for your executor.
                     </p>
                   </div>
                 </div>
@@ -1169,7 +1169,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Signing &amp; Attestation by Two Witnesses
+                      Signing &amp; Witness Signing by Two Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the drafted Will on durable bond or standard executive paper. The Will maker signs or affixes their thumb impression at the bottom of each page in the concurrent presence of two independent adult witnesses who sign as attestors. If the Will maker is elderly, an MBBS doctor mental fitness paper is appended.
@@ -1187,7 +1187,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       AP IGRS Online Slot Booking &amp; CFMS Challan
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our team logs into the AP IGRS portal (<em>registration.ap.gov.in</em>), inputs document particulars under Book III, selects your local Vijayawada SRO, and generates the government fee challan through the Full Financial Management System (CFMS). We confirm your preferred time slot token.
+                      Our team logs into the AP IGRS portal (<em>filing.ap.gov.in</em>), inputs paper particulars under Book III, selects your local Vijayawada SRO, and generates the government fee challan through the Full Financial Management System (CFMS). We confirm your preferred time slot token.
                     </p>
                   </div>
                 </div>
@@ -1202,7 +1202,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       SRO Attendance, Biometrics &amp; Book III Entry
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Will maker and both witnesses visit the SRO office with original Aadhaar cards and appointment slips. The Sub-Registrar captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified registered Will copy with official endorsement seals.
+                      The Will maker and both witnesses visit the SRO office with original Aadhaar cards and appointment slips. The SRO captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified filed Will copy with official endorsement seals.
                     </p>
                   </div>
                 </div>
@@ -1217,10 +1217,10 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <span>SECTION 31 REGISTRATION ACT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Doorstep Will Registration for Senior Citizens
+                  7. Doorstep Will Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or hospitalized testators residing in Benz Circle, Moghalrajpuram, Suryaraopeta, or anywhere in the Vijayawada metropolitan area, visiting an SRO may be physically unfeasible.
+                  For elderly, infirm, or hospitalized Will makers residing in Benz Circle, Moghalrajpuram, Suryaraopeta, or anywhere in the Vijayawada metropolitan area, visiting an SRO may be physically unfeasible.
                   The law provides a compassionate, lawful solution.
                 </p>
               </div>
@@ -1232,30 +1232,30 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   </span>
                   <div>
                     <h3 className="text-lg font-extrabold text-slate-900">
-                      Sub-Registrar Home Visit under Section 31
+                      SRO Home Visit under Section 31
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Applicable across all Sub-Registrar areas in Andhra Pradesh
+                      Applicable across all SRO areas in Andhra Pradesh
                     </p>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds discretionary authority to attend the private residence or hospital room of a Will maker who cannot travel to the registration office due to age or medical disability.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO holds discretionary office to attend the private residence or hospital room of a Will maker who cannot travel to the filing office due to age or medical disability.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
-                    <span className="font-bold text-slate-900 block">Medical Certificate Mandate:</span>
+                    <span className="font-bold text-slate-900 block">Medical Paper Mandate:</span>
                     <p className="text-slate-600">
-                      A registered medical practitioner (MBBS doctor) must issue a written paper confirming that the Will maker is mentally lucid and in sound disposing state of mind.
+                      A filed medical practitioner (MBBS doctor) must issue a written paper confirming that the Will maker is mentally lucid and in sound disposing state of mind.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                     <span className="font-bold text-slate-900 block">Official Commission Fee:</span>
                     <p className="text-slate-600">
-                      A legal private attendance commission fee is paid through the Andhra Pradesh CFMS portal, covering the Sub-Registrar official visit and travel escort.
+                      A legal private attendance commission fee is paid through the Andhra Pradesh CFMS portal, covering the SRO official visit and travel escort.
                     </p>
                   </div>
                 </div>
@@ -1265,7 +1265,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#172228] text-white text-xs sm:text-sm font-bold hover:bg-slate-800 transition-all"
                   >
-                    <span>Request Doorstep Will Registration in Vijayawada</span>
+                    <span>Request Doorstep Will Filing in Vijayawada</span>
                     <ArrowRight className="w-4 h-4 text-rose-300" />
                   </Link>
                 </div>
@@ -1280,10 +1280,10 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <span>PREPARATION &amp; DOCUMENTATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Vijayawada Will Making
+                  8. Papers Checklist for Vijayawada Will Making
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Before visiting the SRO office in Vijayawada or finalizing your document online, make sure you have gathered all necessary proofs. Use our interactive checklist to track your readiness:
+                  Before visiting the SRO office in Vijayawada or finalizing your paper online, make sure you have gathered all necessary proofs. Use our free checklist to track your readiness:
                 </p>
               </div>
 
@@ -1291,7 +1291,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
               <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 md:p-8 shadow-xs space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                   <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                    Interactive Readiness Tracker
+                    Free Readiness Tracker
                   </span>
                   <span className="text-xs font-mono font-bold px-3 py-1 rounded-full bg-rose-50 text-[#C65378]">
                     {checkedCount} of {checklist.length} Completed
@@ -1344,7 +1344,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   9. Vijayawada Real Estate: APCRDA Plots &amp; VMC Estates
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Asset bequeathal in Vijayawada entails distinct municipal, urban development, and farm regulations. Here is how our legal drafts make sure title security across each local category:
+                  Asset bequeathal in Vijayawada entails distinct city, urban development, and farm regulations. Here is how our legal drafts make sure title security across each local category:
                 </p>
               </div>
 
@@ -1367,7 +1367,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     <span>VMC Freehold Apartments &amp; Homes</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Assets within Vijayawada Municipal Corporation (VMC) boundaries require municipal door numbers, assessment codes, and registered title deed citations. A registered Will enables the heir to achieve name name change directly through their local Ward Secretariat.
+                    Assets within Vijayawada City City Board (VMC) boundaries require city door numbers, assessment codes, and filed title deed citations. A filed Will enables the heir to achieve name name change directly through their local Ward Secretariat.
                   </p>
                 </div>
 
@@ -1375,10 +1375,10 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                 <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>Shop Wholesale &amp; Industrial Units</span>
+                    <span>Shop Wholesale &amp; Plant Units</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Shop assets in Governorpet wholesale markets, One Town, or Jawahar Auto Nagar manufacturing sheds require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to make sure smooth family business succession.
+                    Shop assets in Governorpet wholesale markets, One Town, or Jawahar Auto Nagar manufacturing sheds require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to make sure smooth family business estate.
                   </p>
                 </div>
 
@@ -1403,7 +1403,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT STATUTORY COSTS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official Stamp Duty &amp; Registration Fees: Vijayawada
+                  10. Official Stamp Duty &amp; Filing Fees: Vijayawada
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike conveyance deeds or gift deeds that attract 5% to 7.5% stamp duty plus transfer duty in Andhra Pradesh, registering a Will is exceptionally economical under state law:
@@ -1426,7 +1426,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4">100% exempt under Indian Stamp Act, 1899</td>
                     </tr>
                     <tr className="bg-slate-50/50">
-                      <td className="p-3 sm:p-4 font-semibold">Book III Registration Fee</td>
+                      <td className="p-3 sm:p-4 font-semibold">Book III Filing Fee</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹1,000</td>
                       <td className="p-3 sm:p-4">Flat legal fee payable via CFMS online challan</td>
                     </tr>
@@ -1438,12 +1438,12 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">Section 31 Doorstep Attendance</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Prescribed Tariff</td>
-                      <td className="p-3 sm:p-4">Official government commission for Sub-Registrar home visit</td>
+                      <td className="p-3 sm:p-4">Official government commission for SRO home visit</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-semibold">Certified Copy of Registered Will</td>
+                      <td className="p-3 sm:p-4 font-semibold">Certified Copy of Filed Will</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Nominal Form Fee</td>
-                      <td className="p-3 sm:p-4">Available from SRO records after registration</td>
+                      <td className="p-3 sm:p-4">Available from SRO records after filing</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1538,7 +1538,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Custom Succession Planning</span>
+                        <span>Custom Estate Planning</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1560,7 +1560,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between hover:shadow-md transition-all">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
-                      Full SRO Registration &amp; Doorstep
+                      Full SRO Filing &amp; Doorstep
                     </span>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
@@ -1594,7 +1594,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-full bg-slate-900 text-white font-bold text-xs hover:bg-slate-800 transition-all text-center block"
                   >
-                    Book Full Registration
+                    Book Full Filing
                   </Link>
                 </div>
               </div>
@@ -1611,7 +1611,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Vijayawada Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Essential legal answers regarding Will drafting, AP IGRS registration, and probate exemption in Vijayawada:
+                  Essential legal answers regarding Will drafting, AP IGRS filing, and probate exemption in Vijayawada:
                 </p>
               </div>
 
@@ -1667,7 +1667,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     ISA Section 59 &amp; 63
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Testamentary Capacity &amp; Attestation
+                    Will Capacity &amp; Witness Signing
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Mandates sound disposing mind and signature before two independent witnesses who are not heirs.
@@ -1682,31 +1682,31 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     Non-Presidency Probate Exemption
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Exempts Hindu, Sikh, Jain, and Buddhist testators in Andhra Pradesh from needed court probate proceedings.
+                    Exempts Hindu, Sikh, Jain, and Buddhist Will makers in Andhra Pradesh from needed court probate proceedings.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] block">
-                    Registration Act Section 18(e) &amp; 51
+                    Filing Act Section 18(e) &amp; 51
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Optional Registration &amp; Book III
+                    A Choice Filing &amp; Book III
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Will registration is optional, but once registered, it is permanently preserved in official government Book III records.
+                    Will filing is a choice, but once filed, it is permanently preserved in official government Book III records.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <span className="text-xs font-mono font-bold text-[#C65378] block">
-                    Registration Act Section 31
+                    Filing Act Section 31
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Sub-Registrar Doorstep Attendance
+                    SRO Doorstep Attendance
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Empowers the Sub-Registrar to visit homes or hospitals for testators unable to attend the office due to illness.
+                    Empowers the SRO to visit homes or hospitals for Will makers unable to attend the office due to illness.
                   </p>
                 </div>
 
@@ -1718,7 +1718,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     100% Stamp Duty Exemption
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Wills carry ₹0 stamp duty in Andhra Pradesh; testators pay only nominal Book III registration charges.
+                    Wills carry ₹0 stamp duty in Andhra Pradesh; Will makers pay only nominal Book III filing charges.
                   </p>
                 </div>
 
@@ -1727,16 +1727,38 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                     APCRDA &amp; VMC Regulations
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Municipal &amp; Capital Region Name Change
+                    City &amp; Capital Region Name Change
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Guidelines for transferring reconstituted LPS plots and municipal property assessments through Ward Sachivalayams.
+                    Guidelines for transferring reconstituted LPS plots and city asset assessments through Ward Sachivalayams.
                   </p>
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1762,7 +1784,7 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
             </div>
             <div className="p-4 bg-slate-900 text-white flex items-center justify-between">
               <span className="text-xs font-medium">
-                Online Will Drafting &amp; Registration Guidance in Vijayawada (NTR District, Andhra Pradesh)
+                Online Will Drafting &amp; Filing Guidance in Vijayawada (NTR District, Andhra Pradesh)
               </span>
               <button
                 type="button"

@@ -127,7 +127,7 @@ export default function JointMutualMirrorWillPage() {
         name: "Joint and Mirror Will Format for Husband and Wife in India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted paired mirror will templates and spousal estate succession format under the Indian Succession Act, 1925.",
+          "Lawyer-vetted paired mirror will templates and spousal estate estate format under the Indian Succession Act, 1925.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {
@@ -148,7 +148,7 @@ export default function JointMutualMirrorWillPage() {
             name: "Can husband and wife write a single joint Will on one paper in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, a joint Will on a single paper is legally permissible under Indian law, but lawyers strongly discourage it. As held by the Supreme Court in Kochu Govindan Kaimal v. Thayankoot Thekkot Lakshmi Amma (AIR 1959 SC 71), a joint Will operates as two separate wills. However, it cannot be easily probated on the first death without complex court proceedings and causes severe title transfer delays at Sub-Registrar offices and banks.",
+              text: "Yes, a joint Will on a single paper is legally permissible under Indian law, but lawyers strongly discourage it. As held by the Supreme Court in Kochu Govindan Kaimal v. Thayankoot Thekkot Lakshmi Amma (AIR 1959 SC 71), a joint Will operates as two separate wills. However, it cannot be easily probated on the first death without complex court proceedings and causes severe title transfer delays at SRO offices and banks.",
             },
           },
           {
@@ -156,7 +156,7 @@ export default function JointMutualMirrorWillPage() {
             name: "What is a Mirror Will, and why is it recommended for Indian couples?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Mirror Wills are two separate, independent legal documents executed concurrently by husband and wife. The husband writes a Will leaving his entire estate to his wife first (or to their children if she predeceases him), while the wife writes an identical reciprocal Will leaving her estate to her husband first (or to their children if he predeceases her). Each spouse retains independent legal capacity, avoids probate gridlock, and ensures smooth property mutation.",
+              text: "Mirror Wills are two separate, independent legal papers signed concurrently by husband and wife. The husband writes a Will leaving his entire estate to his wife first (or to their children if she predeceases him), while the wife writes an identical reciprocal Will leaving her estate to her husband first (or to their children if he predeceases her). Each spouse retains independent legal capacity, avoids probate gridlock, and ensures smooth asset name change.",
             },
           },
           {
@@ -164,7 +164,7 @@ export default function JointMutualMirrorWillPage() {
             name: "What is the difference between a Joint Will and a Mutual Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Joint Will is a single physical document executed by two or more testators. A Mutual Will arises when two testators execute wills containing reciprocal bequests based on a binding agreement not to revoke them. Under the Supreme Court ruling in Dilharshankar C. Bhachech v. Controller of Estate Duty (1986), once the first spouse dies and the survivor accepts benefits, an equitable trust is created, freezing the survivor from altering their will.",
+              text: "A Joint Will is a single physical paper signed by two or more Will makers. A Mutual Will arises when two Will makers execute wills containing reciprocal bequests based on a binding pact not to revoke them. Under the Supreme Court ruling in Dilharshankar C. Bhachech v. Controller of Estate Duty (1986), once the first spouse dies and the survivor accepts benefits, an equitable trust is created, freezing the survivor from altering their will.",
             },
           },
           {
@@ -172,7 +172,7 @@ export default function JointMutualMirrorWillPage() {
             name: "Can the surviving spouse change their Will after the other passes away?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In standard Mirror Wills, yes. Under Section 62 of the Indian Succession Act, 1925, a Will is inherently revocable during the testator's lifetime. The surviving spouse retains the freedom to modify their Will to address changing circumstances, such as supporting grandchildren or medical emergencies. In contrast, in a Mutual Will with a proved agreement not to revoke, courts may enforce a constructive trust restricting changes.",
+              text: "In standard Mirror Wills, yes. Under Section 62 of the Indian Succession Act, 1925, a Will is inherently revocable during the Will maker's lifetime. The surviving spouse retains the freedom to modify their Will to address changing circumstances, such as supporting grandchildren or medical emergencies. In contrast, in a Mutual Will with a proved pact not to revoke, courts may enforce a constructive trust restricting changes.",
             },
           },
           {
@@ -180,7 +180,7 @@ export default function JointMutualMirrorWillPage() {
             name: "What is a 30-day survivorship clause in a spousal Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A 30-day survivorship clause stipulates that a spouse must survive the testator by at least 30 days to inherit the estate. If both spouses die together in an accident or within 30 days of each other (commorientes), the estate passes directly to their children or secondary beneficiaries. This eliminates the expense and delay of double probate proceedings and double court fees on the same assets.",
+              text: "A 30-day survivorship clause stipulates that a spouse must survive the Will maker by at least 30 days to inherit the estate. If both spouses die together in an accident or within 30 days of each other (commorientes), the estate passes directly to their children or secondary heirs. This eliminates the expense and delay of double probate proceedings and double court fees on the same assets.",
             },
           },
           {
@@ -188,7 +188,7 @@ export default function JointMutualMirrorWillPage() {
             name: "Do husband and wife need to register their Mirror Wills at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration is optional. Under Section 18(e) of the Registration Act, 1908, registering a Will is voluntary in India. An unregistered Will executed on plain white A4 paper before two independent adult witnesses is legally valid. However, registering both Mirror Wills before the Sub-Registrar provides strong evidential value against future challenges.",
+              text: "Filing is a choice. Under Section 18(e) of the Filing Act, 1908, registering a Will is voluntary in India. An plain Will signed on plain white A4 paper before two independent adult witnesses is legally valid. However, registering both Mirror Wills before the SRO provides strong evidential value against future fights.",
             },
           },
           {
@@ -196,7 +196,7 @@ export default function JointMutualMirrorWillPage() {
             name: "Can a husband and wife witness each other's Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No! Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness or to the wife or husband of an attesting witness is completely void. Therefore, spouses must never sign as witnesses to each other's Will. You must use two independent adult witnesses who receive nothing under either document.",
+              text: "No! Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an signing witness or to the wife or husband of an signing witness is completely void. Therefore, spouses must never sign as witnesses to each other's Will. You must use two independent adult witnesses who receive nothing under either paper.",
             },
           },
           {
@@ -204,7 +204,7 @@ export default function JointMutualMirrorWillPage() {
             name: "How are jointly owned properties treated in spousal Mirror Wills?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In India, joint owners are generally presumed to hold property as tenants-in-common unless explicitly stated as joint tenants with right of survivorship. Each spouse can bequeath only their undivided share (typically 50%) in the property. A Mirror Will ensures the 50% share transfers smoothly to the surviving spouse, consolidating 100% sole ownership.",
+              text: "In India, joint owners are generally presumed to hold asset as tenants-in-common unless explicitly stated as joint tenants with right of survivorship. Each spouse can bequeath only their undivided share (typically 50%) in the asset. A Mirror Will ensures the 50% share transfers smoothly to the surviving spouse, consolidating 100% sole ownership.",
             },
           },
           {
@@ -212,7 +212,7 @@ export default function JointMutualMirrorWillPage() {
             name: "Can a couple appoint the same executor for both Mirror Wills?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. In fact, couples typically appoint each other as primary executors. The husband names his wife as primary executor, and the wife names her husband as primary executor. Both Wills should also name the same trusted adult child, relative, or professional advocate as alternate executor in case both spouses die simultaneously.",
+              text: "Yes. In fact, couples typically appoint each other as primary executors. The husband names his wife as primary executor, and the wife names her husband as primary executor. Both Wills should also name the same trusted adult child, relative, or professional lawyer as alternate executor in case both spouses die simultaneously.",
             },
           },
           {

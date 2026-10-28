@@ -146,7 +146,7 @@ export default function JharkhandLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jharkhand: Online Will Registration Help",
         description:
-          "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC.",
+          "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand filing advice, CNT/SPT Act land compliance, and RMC.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function JharkhandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jharkhand - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Jharkhand registration, and Section 31 doorstep execution support across Ranchi.",
+          "Professional Will drafting, lawyer check, NGDRS Jharkhand filing, and Section 31 doorstep signing support across Ranchi.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -256,38 +256,38 @@ export default function JharkhandLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Jharkhand",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Jharkhand.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Jharkhand.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory & Check Tenancy Classification",
-            text: "List your Jharkhand real estate including Ranchi municipal apartments, Tata Steel sub-leases in Jamshedpur, Dhanbad commercial shops, and Jharbhoomi land parcels. Verify CNT/SPT tenancy compliance.",
+            text: "List your Jharkhand real estate including Ranchi city apartments, Tata Steel sub-leases in Jamshedpur, Dhanbad shop shops, and Jharbhoomi land parcels. Verify CNT/SPT tenancy compliance.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, executor powers, guardian appointments for minors, and explicit revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, executor powers, guardian appointments for minors, and explicit revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS Jharkhand Appointment Slot",
-            text: "Schedule your registration appointment on the NGDRS Jharkhand portal (ngdrs.jharkhand.gov.in) for your relevant district SRO and remit the nominal ₹100 registration fee via e-Challan.",
+            text: "Schedule your filing appointment on the NGDRS Jharkhand portal (ngdrs.jharkhand.gov.in) for your relevant district SRO and remit the nominal ₹100 filing fee via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Jharkhand SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal verification, photo capture, and biometric thumbprinting to complete Book III government registration.",
+            text: "Visit the SRO office with both witnesses for verbal check, photo capture, and biometric thumbprinting to complete Book III government filing.",
           },
         ],
       },

@@ -118,7 +118,7 @@ const MP_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Madhya Pradesh law, stamp paper is not required for drafting a Will.",
     checked: true,
   },
@@ -137,7 +137,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly recommended for senior citizens aged 60+. Certifies testamentary mental capacity and lucidity.",
+    detail: "Strongly recommended for senior citizens aged 60+. Certifies Will mental capacity and lucidity.",
     checked: false,
   },
   {
@@ -148,8 +148,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "IDA, BDA, or JDA Allotment / Municipal Tax Papers",
-    detail: "Copy of development authority lease deed, property tax receipt, or MP Housing Board allotment paper.",
+    label: "IDA, BDA, or JDA Allotment / City Tax Papers",
+    detail: "Copy of development office lease deed, asset tax receipt, or MP Housing Board allotment paper.",
     checked: false,
   },
   {
@@ -248,11 +248,11 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 59 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Will Drafting Services in Madhya Pradesh: Online Succession
+                Will Drafting Services in Madhya Pradesh: Online Estate
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will for your IDA and BDA plots, Bhopal lakeview residences, shop assets in Indore, and MP Bhulekh farm land. Get senior lawyer drafting, MP Sampada 2.0 registration guidance, and Section 31 doorstep signing.
+                Draft a legally valid Will for your IDA and BDA plots, Bhopal lakeview residences, shop assets in Indore, and MP Bhulekh farm land. Get senior lawyer drafting, MP Sampada 2.0 filing guidance, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -354,7 +354,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Nominal Registration Fee
+                Nominal Filing Fee
               </span>
             </div>
             {/* Stat 4 */}
@@ -415,10 +415,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>MP Lawyer Support</span>
                 </div>
                 <div className="text-sm font-extrabold text-white leading-snug">
-                  Need Help with MP Sampada Registration?
+                  Need Help with MP Sampada Filing?
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Our estate lawyers draft your Will, schedule your Sub-Registrar slot, and guide you every step.
+                  Our estate lawyers draft your Will, schedule your SRO slot, and guide you every step.
                 </p>
                 <a
                   href="/start"
@@ -481,10 +481,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>COMPREHENSIVE SUCCESSION BLUEPRINT</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in MP
+                  Key Highlights: Will Making &amp; Filing in MP
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a Will in Madhya Pradesh protects your family from bitter succession battles and expensive property name change delays. Under the Indian Succession Act, 1925, every adult of sound mind can bequeath their self-acquired assets, development authority leaseholds, and their individual joint family share in family estates. Whether you reside in Indore, Bhopal, Jabalpur, Gwalior, or manage assets from abroad as an NRI, this guide covers the complete legal step in Madhya Pradesh.
+                  Making a Will in Madhya Pradesh protects your family from bitter estate battles and expensive asset name change delays. Under the Indian Succession Act, 1925, every adult of sound mind can bequeath their self-acquired assets, development office leaseholds, and their single joint family share in family estates. Whether you reside in Indore, Bhopal, Jabalpur, Gwalior, or manage assets from abroad as an NRI, this guide covers the complete legal step in Madhya Pradesh.
                 </p>
               </div>
 
@@ -506,17 +506,17 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>MP Sampada 2.0 Portal</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Registration slots are booked digitally via the Shop Tax Department portal (sampada.mpigr.gov.in) with cyber challan generation and nominal registration charges.
+                    Filing slots are booked digitally via the Shop Tax Office portal (sampada.mpigr.gov.in) with cyber challan generation and nominal filing charges.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2.5 text-slate-900 font-extrabold text-sm">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>IDA, BDA &amp; Municipal Name Change</span>
+                    <span>IDA, BDA &amp; City Name Change</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A registered Will enables direct name substitution in Indore Development Authority (IDA), Bhopal Development Authority (BDA), and MP Housing Board records without civil fights.
+                    A filed Will enables direct name substitution in Indore Development Office (IDA), Bhopal Development Office (BDA), and MP Housing Board records without civil fights.
                   </p>
                 </div>
 
@@ -526,7 +526,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>MP Bhulekh Farmland Transfer</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farm land succession follows Section 109 and Section 110 of the MP Land Revenue Code, 1959. Namantran is recorded smoothly in Khasra and Khatauni land registers.
+                    Farm land estate follows Section 109 and Section 110 of the MP Land Revenue Code, 1959. Namantran is recorded smoothly in Khasra and Khatauni land registers.
                   </p>
                 </div>
               </div>
@@ -543,7 +543,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Madhya Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession across Madhya Pradesh is governed by central statutes and state revenue laws. Understanding how these acts interact guarantees that your Will remains valid, contest-proof, and smoothly enforceable upon demise:
+                  Will estate across Madhya Pradesh is governed by central statutes and state revenue laws. Understanding how these acts interact guarantees that your Will remains valid, contest-proof, and smoothly enforceable upon demise:
                 </p>
               </div>
 
@@ -561,10 +561,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/80 space-y-2">
                   <h3 className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>Registration Act, 1908 (Section 18e)</span>
+                    <span>Filing Act, 1908 (Section 18e)</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 18(e) classifies Wills under optional registration. However, registering before an MP Sub-Registrar deposits the original instrument into permanent Book III government custody, eliminating allegations of tampering or fraud.
+                    Section 18(e) classifies Wills under a choice filing. However, registering before an MP SRO deposits the original instrument into permanent Book III government custody, eliminating allegations of tampering or fraud.
                   </p>
                 </div>
 
@@ -574,7 +574,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>MP Land Revenue Code, 1959</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 109 and Section 110 of the MPLRC, every person acquiring an interest in land by testamentary succession must report it to the Patwari or Tehsildar for online Namantran on the MP Bhulekh portal.
+                    Under Section 109 and Section 110 of the MPLRC, every person acquiring an interest in land by Will estate must report it to the Patwari or Tehsildar for online Namantran on the MP Bhulekh portal.
                   </p>
                 </div>
 
@@ -584,7 +584,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>Hindu Succession Act, 1956 (Section 30)</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Mitakshara joint family law, a Hindu testator can bequeath their individual undivided interest in joint family property, alongside 100% of their self-acquired real estate and personal wealth.
+                    Under Mitakshara joint family law, a Hindu testator can bequeath their single undivided interest in joint family asset, alongside 100% of their self-acquired real estate and personal wealth.
                   </p>
                 </div>
               </div>
@@ -593,7 +593,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
               <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-xs">
                 <div className="p-4 bg-slate-50 border-b border-slate-200">
                   <h3 className="text-sm font-extrabold text-slate-900">
-                    Comparative Overview: Unregistered vs. Registered Will in MP
+                    Comparative Overview: Plain vs. Filed Will in MP
                   </h3>
                 </div>
                 <div className="overflow-x-auto">
@@ -601,8 +601,8 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <thead className="bg-slate-100 text-slate-900 font-extrabold border-b border-slate-200">
                       <tr>
                         <th className="p-3 sm:p-3.5">Parameter</th>
-                        <th className="p-3 sm:p-3.5">Unregistered Will (White Paper)</th>
-                        <th className="p-3 sm:p-3.5">Registered Will (MP Sampada 2.0)</th>
+                        <th className="p-3 sm:p-3.5">Plain Will (White Paper)</th>
+                        <th className="p-3 sm:p-3.5">Filed Will (MP Sampada 2.0)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
@@ -645,10 +645,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>SECTION 18(e) REGISTRATION ACT ANALYSIS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Madhya Pradesh?
+                  2. Is Will Filing Needed in Madhya Pradesh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, Will registration is strictly <strong>optional</strong> across Madhya Pradesh. A Will written or typed on plain A4 paper is legally enforceable if properly signed. However, legal advisors strongly encourage registration for several practical reasons:
+                  Under Section 18(e) of the Filing Act, 1908, Will filing is strictly <strong>a choice</strong> across Madhya Pradesh. A Will written or typed on plain A4 paper is legally enforceable if properly signed. However, legal advisors strongly encourage filing for several practical reasons:
                 </p>
               </div>
 
@@ -659,7 +659,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">Government Record</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    When registered, the Sub-Registrar scans and archives the Will in Book III. If physical copies are misplaced, certified copies can be retrieved from the district registry.
+                    When filed, the SRO scans and archives the Will in Book III. If physical copies are misplaced, certified copies can be retrieved from the district registry.
                   </p>
                 </div>
 
@@ -669,7 +669,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">Biometric Authenticity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker and witnesses provide digital fingerprints and live photographs before the Sub-Registrar, rendering false signature claims legally unsustainable.
+                    The Will maker and witnesses provide digital fingerprints and live photographs before the SRO, rendering false signature claims legally unsustainable.
                   </p>
                 </div>
 
@@ -679,7 +679,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">Fast Name Change</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Municipal offices like IMC, BMC, and development offices process name name change swiftly without requiring prolonged court declarations or family affidavits.
+                    City offices like IMC, BMC, and development offices process name name change swiftly without requiring prolonged court declarations or family sworn notes.
                   </p>
                 </div>
               </div>
@@ -696,7 +696,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   3. MP Probate Law: Complete Exemption in Madhya Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most common legal questions from property owners in Madhya Pradesh is whether their executors must get a court probate before transferring assets. The legal answer under MP High Court precedents is clear and definitive:
+                  One of the most common legal questions from asset owners in Madhya Pradesh is whether their executors must get a court probate before transferring assets. The legal answer under MP High Court precedents is clear and definitive:
                 </p>
               </div>
 
@@ -712,7 +712,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   Under Section 213(2) read with Section 57 of the Indian Succession Act, 1925, probate is needed only for Wills signed within or concerning land and flats located in the historical presidency towns of Mumbai, Kolkata, and Chennai. 
                 </p>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  The High Court of Madhya Pradesh (through its Principal Seat at Jabalpur and Benches at Indore and Gwalior) has repeatedly held that a Hindu, Sikh, Jain, or Buddhist Will takes full legal effect right away upon the Will maker&apos;s demise. An executor does not need an expensive probate decree to apply for municipal name change or bank account transfers.
+                  The High Court of Madhya Pradesh (through its Principal Seat at Jabalpur and Benches at Indore and Gwalior) has repeatedly held that a Hindu, Sikh, Jain, or Buddhist Will takes full legal effect right away upon the Will maker&apos;s demise. An executor does not need an expensive probate decree to apply for city name change or bank account transfers.
                 </p>
                 <div className="pt-2 flex flex-wrap gap-2 text-xs text-rose-200">
                   <span className="px-2.5 py-1 rounded-full bg-white/10 border border-white/15">Principal Seat Jabalpur</span>
@@ -730,10 +730,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>REGISTRATION HUBS &amp; DISTRICT OFFICES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. MP Sub-Registrar Offices: District SRO Directory
+                  4. MP SRO Offices: District SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under MP Sampada 2.0, appointment slots can be booked at your local SRO office. Search our verified registry directory across Indore, Bhopal, Jabalpur, Gwalior, and Ujjain:
+                  Under MP Sampada 2.0, appointment slots can be booked at your local SRO office. Search our checked registry directory across Indore, Bhopal, Jabalpur, Gwalior, and Ujjain:
                 </p>
               </div>
 
@@ -811,7 +811,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   5. Regional Cities: District-Wise Will Drafting in MP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Madhya Pradesh span shop hubs and IDA townships in Indore, government office colonies in Bhopal, legal and military cantonments in Jabalpur, historic Havelis in Gwalior, and extensive farm acreage on MP Bhulekh. Our estate lawyers deliver customized legal drafting, MP Sampada 2.0 slot booking, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate assets in Madhya Pradesh span shop hubs and IDA townships in Indore, government office colonies in Bhopal, legal and military cantonments in Jabalpur, historic Havelis in Gwalior, and extensive farm acreage on MP Bhulekh. Our estate lawyers deliver customized legal drafting, MP Sampada 2.0 slot booking, and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -842,7 +842,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Indore</strong> for premium high-rise apartments, IDA home plots, industrial units in Pithampur, and shop showrooms along AB Road. Codifies Indore Municipal Corporation (IMC) tax transfer protocols, mutual fund portfolios, and business succession structures.
+                      Specialized <strong>Will drafting services in Indore</strong> for premium high-rise apartments, IDA home plots, plant units in Pithampur, and shop showrooms along AB Road. Codifies Indore City City Board (IMC) tax transfer protocols, mutual fund portfolios, and business estate structures.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -896,7 +896,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Bhopal</strong> for Bhopal Development Authority (BDA) 99-year leasehold plots, MP Housing Board duplexes, lakeview bungalows, and shop office suites in MP Nagar. Clear clauses for surviving spouses and life-interest protection.
+                      Customized <strong>Will drafting services in Bhopal</strong> for Bhopal Development Office (BDA) 99-year leasehold plots, MP Housing Board duplexes, lakeview bungalows, and shop office suites in MP Nagar. Clear clauses for surviving spouses and life-interest protection.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -905,7 +905,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Zone 1 MP Nagar &amp; Pari Bazar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth estate structuring, private family asset mapping, and expedited Book III registration.
+                        High-net-worth estate structuring, private family asset mapping, and expedited Book III filing.
                       </p>
                     </div>
                   </div>
@@ -950,7 +950,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Jabalpur</strong> for defense personnel, retired judicial officers, and civil service families. Addresses Jabalpur Development Authority (JDA) schemes, cantonment estates, and farm land in surrounding Mahakoshal tehsils.
+                      Full <strong>Will drafting services in Jabalpur</strong> for defense personnel, retired judicial officers, and civil service families. Addresses Jabalpur Development Office (JDA) schemes, cantonment estates, and farm land in surrounding Mahakoshal tehsils.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -959,7 +959,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate, Civil Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High Court lawyer drafting, Section 31 doorstep registration, and JDA name change support.
+                        High Court lawyer drafting, Section 31 doorstep filing, and JDA name change support.
                       </p>
                     </div>
                   </div>
@@ -1004,7 +1004,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Gwalior</strong> for family heritage Havelis and Kothis in Lashkar, shop establishments in Maharaj Bada, and GDA home plots in City Center and Morar. Protects multi-generational assets from succession claims.
+                      Reliable <strong>Will drafting services in Gwalior</strong> for family heritage Havelis and Kothis in Lashkar, shop establishments in Maharaj Bada, and GDA home plots in City Center and Morar. Protects multi-generational assets from estate claims.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1013,7 +1013,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: New Collectorate, City Center</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Family haveli asset mapping, e-registration booking, and Gwalior Development Authority transfer.
+                        Family haveli asset mapping, e-filing booking, and Gwalior Development Office transfer.
                       </p>
                     </div>
                   </div>
@@ -1038,7 +1038,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Heritage &amp; Industrial Belt
+                        Heritage &amp; Plant Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ujjain &amp; Dewas
@@ -1054,11 +1054,11 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Nanakheda</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dewas Road</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mahakal Belt</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dewas Industrial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dewas Plant</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Ujjain and Dewas</strong> covering Ujjain Development Authority (UDA) plots, hospitality assets near the Mahakal Corridor, and industrial manufacturing plants in Dewas. Seamless testamentary integration for family business enterprises.
+                      Expert <strong>Will drafting services in Ujjain and Dewas</strong> covering Ujjain Development Office (UDA) plots, hospitality assets near the Mahakal Corridor, and plant manufacturing plants in Dewas. Seamless Will integration for family business enterprises.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1073,7 +1073,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Shop &amp; Agro-Industrial</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Agro-Plant</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1112,7 +1112,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Sagar</strong> for university faculty estates, Makronia home assets, Bina industrial assets, and extensive Bundelkhand farmland. Complete guidance on revenue records and Patwari Namantran on MP Bhulekh.
+                      Strategic <strong>Will drafting services in Sagar</strong> for university faculty estates, Makronia home assets, Bina plant assets, and extensive Bundelkhand farmland. Complete guidance on revenue records and Patwari Namantran on MP Bhulekh.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1146,7 +1146,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Vindhya Industrial Corridor
+                        Vindhya Plant Corridor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Satna &amp; Rewa
@@ -1175,13 +1175,13 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Satna &amp; Rewa District Collectorates</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Mineral rights clarity, joint-family business shares, and MP Sampada online registration.
+                        Mineral rights clarity, joint-family business shares, and MP Sampada online filing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Mineral Belts</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Mineral Belts</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1229,7 +1229,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Ratlam Collectorate Campus</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Gold jewelry inventory succession, shop shop deeds, and Book III registration.
+                        Gold jewelry inventory estate, shop shop deeds, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1258,10 +1258,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>STANDARD OPERATING PROCEDURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to MP Sampada Registration
+                  6. Step-by-Step SOP: Drafting to MP Sampada Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this five-step standard operating step to prepare, execute, and register an enforceable Will before any Sub-Registrar across Madhya Pradesh:
+                  Follow this five-step standard operating step to prepare, execute, and register an enforceable Will before any SRO across Madhya Pradesh:
                 </p>
               </div>
 
@@ -1276,7 +1276,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       Compile Asset Inventory &amp; Heir Allocations
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      List all immovable assets across Madhya Pradesh including IDA, BDA, or JDA plots, MP Housing Board apartments, and MP Bhulekh farm land. Enumerate movable assets like bank deposits, demat portfolios, family jewelry, and motor vehicles. Designate heirs and an executor clearly.
+                      List all land assets across Madhya Pradesh including IDA, BDA, or JDA plots, MP Housing Board apartments, and MP Bhulekh farm land. Enumerate cash assets like bank deposits, demat portfolios, family jewelry, and motor vehicles. Designate heirs and an executor clearly.
                     </p>
                   </div>
                 </div>
@@ -1291,7 +1291,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       Draft Customized Clauses with Lawyer Review
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our senior succession lawyers draft your document incorporating explicit revocation of previous wills, alternate heirs in case of simultaneous death, testamentary guardian appointments for minor children, and clear life-interest rules.
+                      Our senior estate lawyers draft your paper incorporating explicit revocation of previous wills, alternate heirs in case of simultaneous death, Will guardian appointments for minor children, and clear life-interest rules.
                     </p>
                   </div>
                 </div>
@@ -1321,7 +1321,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       Book MP Sampada 2.0 Slot &amp; Remit Nominal Fees
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Access the MP Shop Tax &amp; Registration Department portal (sampada.mpigr.gov.in). Select your district SRO office, enter KYC details for the Will maker and witnesses, upload the draft, generate the cyber challan for nominal registration fees, and secure a confirmed time slot.
+                      Access the MP Shop Tax &amp; Filing Office portal (sampada.mpigr.gov.in). Select your district SRO office, enter KYC details for the Will maker and witnesses, upload the draft, generate the cyber challan for nominal filing fees, and secure a confirmed time slot.
                     </p>
                   </div>
                 </div>
@@ -1333,10 +1333,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                      Complete Biometrics &amp; Obtain Book III Certificate
+                      Complete Biometrics &amp; Obtain Book III Paper
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Appear before the Sub-Registrar with both witnesses carrying original Aadhaar cards. Complete live photography and digital biometric thumbprints. The Sub-Registrar registers the instrument in Book III, stamps the registration endorsement, and returns the original registered Will.
+                      Appear before the SRO with both witnesses carrying original Aadhaar cards. Complete live photography and digital biometric thumbprints. The SRO registers the instrument in Book III, stamps the filing endorsement, and returns the original filed Will.
                     </p>
                   </div>
                 </div>
@@ -1351,10 +1351,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SUB-REGISTRAR EXECUTION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visiting crowded government registry offices can be strenuous for elderly, bedridden, or medically unwell people. Section 31 of the Registration Act, 1908 provides a legal mechanism for doorstep registration:
+                  Visiting crowded government registry offices can be strenuous for elderly, bedridden, or medically unwell people. Section 31 of the Filing Act, 1908 provides a legal mechanism for doorstep filing:
                 </p>
               </div>
 
@@ -1368,28 +1368,28 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       Doorstep SRO Commission Across All MP Districts
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Legal home and hospital registration under Section 31 of the Registration Act, 1908
+                      Legal home and hospital filing under Section 31 of the Filing Act, 1908
                     </p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                   <div className="p-4 rounded-xl bg-slate-50 space-y-1.5 border border-slate-100">
-                    <span className="font-bold text-slate-900 block">1. Medical Certificate</span>
+                    <span className="font-bold text-slate-900 block">1. Medical Paper</span>
                     <p className="text-slate-600">
-                      A registered MBBS or MD doctor issues a fitness paper confirming testamentary mental soundness and inability to travel.
+                      A filed MBBS or MD doctor issues a fitness paper confirming Will mental soundness and inability to travel.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 space-y-1.5 border border-slate-100">
                     <span className="font-bold text-slate-900 block">2. Commission Petition</span>
                     <p className="text-slate-600">
-                      Our lawyer files an official commission request with the Sub-Registrar attaching the medical paper and doctor&apos;s report.
+                      Our lawyer files an official commission request with the SRO attaching the medical paper and doctor&apos;s report.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 space-y-1.5 border border-slate-100">
                     <span className="font-bold text-slate-900 block">3. Home Visit &amp; Biometrics</span>
                     <p className="text-slate-600">
-                      The Sub-Registrar attends the residence with portable biometric equipment to record signatures, thumbprints, and photos.
+                      The SRO attends the residence with portable biometric equipment to record signatures, thumbprints, and photos.
                     </p>
                   </div>
                 </div>
@@ -1403,7 +1403,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="font-bold text-[#C65378] hover:underline flex items-center gap-1"
                   >
-                    <span>Request Home Registration Visit</span>
+                    <span>Request Home Filing Visit</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -1418,10 +1418,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>VERIFICATION &amp; COMPLIANCE REQUIREMENTS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for MP Sub-Registrar Offices
+                  8. Paper Checklist for MP SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ensure you carry all needed documents to prevent delays during your MP Sampada appointment. Use our interactive checklist to track your preparation:
+                  Ensure you carry all needed papers to prevent delays during your MP Sampada appointment. Use our free checklist to track your preparation:
                 </p>
               </div>
 
@@ -1481,10 +1481,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>MADHYA PRADESH ASSET CATEGORIES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. MP Property Types: IDA, BDA Plots &amp; Farmland
+                  9. MP Asset Types: IDA, BDA Plots &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate in Madhya Pradesh comprises distinct legal tenures. Your Will should address each property category according to its specific succession dynamics:
+                  Real estate in Madhya Pradesh comprises distinct legal tenures. Your Will should address each asset category according to its specific estate dynamics:
                 </p>
               </div>
 
@@ -1492,10 +1492,10 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/80 space-y-2">
                   <h3 className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Building className="w-4 h-4 text-[#C65378]" />
-                    <span>Development Authority Plots (IDA / BDA / JDA)</span>
+                    <span>Development Office Plots (IDA / BDA / JDA)</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Allotment letters and 99-year leasehold deeds from IDA (Indore), BDA (Bhopal), or JDA (Jabalpur) require clear testamentary proof. An executor presents the registered Will to execute the tripartite lease assignment without court fights.
+                    Allotment letters and 99-year leasehold deeds from IDA (Indore), BDA (Bhopal), or JDA (Jabalpur) require clear Will proof. An executor presents the filed Will to execute the tripartite lease assignment without court fights.
                   </p>
                 </div>
 
@@ -1505,7 +1505,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>MP Housing Board &amp; Private Apartments</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Flats and duplexes built by the MP Housing &amp; Infrastructure Development Board or private builders require municipal tax name change. Nominations only transfer custody; lawful title requires a valid Will.
+                    Flats and duplexes built by the MP Housing &amp; Infrastructure Development Board or private builders require city tax name change. Nominations only transfer custody; lawful title requires a valid Will.
                   </p>
                 </div>
 
@@ -1515,7 +1515,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>Farm Farmland (MP Bhulekh)</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farm land succession follows Section 109 and Section 110 of the MP Land Revenue Code. Registered Wills allow Patwaris and Tehsildars to update the Khasra and Khatauni land extracts directly.
+                    Farm land estate follows Section 109 and Section 110 of the MP Land Revenue Code. Filed Wills allow Patwaris and Tehsildars to update the Khasra and Khatauni land extracts directly.
                   </p>
                 </div>
 
@@ -1525,7 +1525,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span>Shop Units &amp; Financial Holdings</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Shop plots in industrial parks (Pithampur, Mandideep, Govindpura), family business shares, demat accounts, and fixed deposits are structured with specific residual clauses.
+                    Shop plots in plant parks (Pithampur, Mandideep, Govindpura), family business shares, demat accounts, and fixed deposits are structured with specific residual clauses.
                   </p>
                 </div>
               </div>
@@ -1539,7 +1539,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <span>GOVERNMENT CHARGES &amp; STAMP EXEMPTION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official MP Sampada Registration Fees &amp; Charges
+                  10. Official MP Sampada Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, signing and registering a Will in Madhya Pradesh does not attract ad-valorem stamp duty. The government charges are purely nominal:
@@ -1562,12 +1562,12 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-3.5">Not Applicable</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-3.5 font-bold text-slate-900">SRO Registration Fee</td>
+                      <td className="p-3 sm:p-3.5 font-bold text-slate-900">SRO Filing Fee</td>
                       <td className="p-3 sm:p-3.5 font-semibold text-slate-900">₹200 to ₹500 (Nominal fixed fee)</td>
                       <td className="p-3 sm:p-3.5">MP Treasury Cyber Challan</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-3.5 font-bold text-slate-900">Document Scanning &amp; Service Fee</td>
+                      <td className="p-3 sm:p-3.5 font-bold text-slate-900">Paper Scanning &amp; Service Fee</td>
                       <td className="p-3 sm:p-3.5 font-semibold text-slate-900">₹100 to ₹200</td>
                       <td className="p-3 sm:p-3.5">MP Sampada 2.0 Portal</td>
                     </tr>
@@ -1609,12 +1609,12 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for people with straightforward estates seeking a legally vetted Will document.
+                      Ideal for people with straightforward estates seeking a legally vetted Will paper.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Interactive estate asset mapping</span>
+                        <span>Free estate asset mapping</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1654,7 +1654,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-300">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Direct talk with a senior succession lawyer for complex urban and farm holdings.
+                      Direct talk with a senior estate lawyer for complex urban and farm holdings.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-200 pt-2 border-t border-white/10">
                       <li className="flex items-center gap-2">
@@ -1688,9 +1688,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200 p-6 flex flex-col justify-between shadow-2xs hover:shadow-md transition-shadow">
                   <div className="space-y-4">
                     <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                      Full SRO Registration
+                      Full SRO Filing
                     </span>
-                    <h3 className="text-xl font-extrabold text-slate-900">Done-For-You Registration</h3>
+                    <h3 className="text-xl font-extrabold text-slate-900">Done-For-You Filing</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
                       <span className="text-xs text-slate-500">/ one-time</span>
@@ -1722,7 +1722,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-3 rounded-2xl bg-slate-900 text-white text-xs font-extrabold hover:bg-slate-800 transition-colors text-center cursor-pointer"
                   >
-                    Select Registration Plan
+                    Select Filing Plan
                   </a>
                 </div>
               </div>
@@ -1739,7 +1739,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in MP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key legal questions about Will drafting, MP Sampada registration, probate exemption, and property transfers in Madhya Pradesh:
+                  Clear answers to key legal questions about Will drafting, MP Sampada filing, probate exemption, and asset transfers in Madhya Pradesh:
                 </p>
               </div>
 
@@ -1796,7 +1796,7 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                     <span className="font-extrabold text-slate-900">Primary Statutes:</span>
                     <ul className="space-y-1 text-slate-600 list-disc list-inside">
                       <li>Indian Succession Act, 1925 (Sections 59, 63, &amp; 213)</li>
-                      <li>Registration Act, 1908 (Sections 18e, 31, &amp; Book III)</li>
+                      <li>Filing Act, 1908 (Sections 18e, 31, &amp; Book III)</li>
                       <li>Madhya Pradesh Land Revenue Code, 1959 (Sections 109 &amp; 110)</li>
                       <li>Hindu Succession Act, 1956 (Section 30 joint family wills)</li>
                       <li>Indian Stamp Act (Schedule 1-A MP adaptations)</li>
@@ -1806,22 +1806,44 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <div className="space-y-1.5">
                     <span className="font-extrabold text-slate-900">Official Government Portals:</span>
                     <ul className="space-y-1 text-slate-600 list-disc list-inside">
-                      <li>MP Shop Tax &amp; Registration: <code>sampada.mpigr.gov.in</code></li>
+                      <li>MP Shop Tax &amp; Filing: <code>sampada.mpigr.gov.in</code></li>
                       <li>MP Revenue &amp; Land Records: <code>mpbhulekh.gov.in</code></li>
                       <li>High Court of Madhya Pradesh: <code>mphc.gov.in</code></li>
-                      <li>Indore Development Authority: <code>idaindore.org</code></li>
-                      <li>Bhopal Development Authority: <code>bda.nic.in</code></li>
+                      <li>Indore Development Office: <code>idaindore.org</code></li>
+                      <li>Bhopal Development Office: <code>bda.nic.in</code></li>
                     </ul>
                   </div>
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 text-[11px] text-slate-500 leading-relaxed">
-                  Disclaimer: Legal information presented on this portal is for educational and procedural guidance regarding testamentary succession in Madhya Pradesh. Talk with an lawyer ensures individual facts and family dynamics are addressed effectively.
+                  Disclaimer: Legal information presented on this portal is for educational and procedural guidance regarding Will estate in Madhya Pradesh. Talk with an lawyer ensures single facts and family dynamics are addressed effectively.
                 </div>
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

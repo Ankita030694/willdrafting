@@ -118,7 +118,7 @@ const NASHIK_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Maharashtra law, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -137,7 +137,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies Will mental soundness and lucidity.",
     checked: false,
   },
   {
@@ -148,8 +148,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "NMC Property Tax Receipts & Society Share Certificates",
-    detail: "Copy of Nashik Municipal Corporation tax assessment and cooperative housing society share records.",
+    label: "NMC Asset Tax Receipts & Society Share Papers",
+    detail: "Copy of Nashik City City Board tax assessment and cooperative housing society share records.",
     checked: false,
   },
   {
@@ -248,11 +248,11 @@ export default function NashikLocationClient({ faqs }: Props) {
 
               {/* Strictly 1 H1 Tag: Length 51 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Property Succession in Nashik
+                Legal Will Drafting &amp; Asset Estate in Nashik
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your NMC home flats, cooperative housing societies, MIDC industrial plots, and Dindori vineyard farmlands. Get senior lawyer drafting, IGR Maharashtra e-Stepin booking, and Section 31 doorstep signing.
+                Draft a legally watertight Will for your NMC home flats, cooperative housing societies, MIDC plant plots, and Dindori vineyard farmlands. Get senior lawyer drafting, IGR Maharashtra e-Stepin booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -308,7 +308,7 @@ export default function NashikLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Nashik Urban &amp; Agro-Succession Blueprint
+                  Nashik Urban &amp; Agro-Estate Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -353,7 +353,7 @@ export default function NashikLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Outside Greater Mumbai Rule
@@ -489,16 +489,16 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>NASHIK ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Nashik
+                  Key Highlights: Will Making &amp; Filing in Nashik
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III SRO registration provides absolute authenticity against property fights.
+                      Will filing is a choice under Section 18(e) of the Filing Act, 1908. An plain Will signed before two witnesses is valid, but official Book III SRO filing provides absolute authenticity against asset fights.
                     </p>
                   </div>
 
@@ -508,7 +508,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Nashik lies outside the historical presidency limits of Mumbai. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Nashik, enabling direct title transfer with a registered Will.
+                      Nashik lies outside the historical presidency limits of Mumbai. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Nashik, enabling direct title transfer with a filed Will.
                     </p>
                   </div>
 
@@ -518,7 +518,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <span>Zero Maharashtra Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from stamp duty across Maharashtra under Article 64 of the Maharashtra Stamp Act. You only pay a flat ₹100 registration fee plus nominal scanning charges at the SRO office.
+                      Wills are completely exempt from stamp duty across Maharashtra under Article 64 of the Maharashtra Stamp Act. You only pay a flat ₹100 filing fee plus nominal scanning charges at the SRO office.
                     </p>
                   </div>
 
@@ -528,7 +528,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <span>NMC &amp; 7/12 Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership name change (Varasdar Nond) with the Nashik Municipal Corporation (NMC) and enables seamless 7/12 extract transfer for farm land and vineyards in Dindori and Niphad.
+                      A filed Will expedites ownership name change (Varasdar Nond) with the Nashik City City Board (NMC) and enables seamless 7/12 extract transfer for farm land and vineyards in Dindori and Niphad.
                     </p>
                   </div>
                 </div>
@@ -546,10 +546,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Nashik
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and succession planning across Nashik district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Maharashtra Co-operative Societies Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired home property, farm land, industrial assets, and financial investments.
+                  Will drafting and estate planning across Nashik district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Maharashtra Co-operative Societies Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired home asset, farm land, plant assets, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Nashik presents a unique convergence of asset classes. A family may own an upscale apartment on Gangapur Road or College Road, an industrial MSME manufacturing unit in Satpur or Ambad MIDC, and prime farm grape vineyards in Dindori or Niphad. Without a meticulously drafted Will, surviving heirs encounter multi-department bureaucratic friction across municipal tax desks, cooperative society committees, and rural revenue talathis.
+                  Nashik presents a unique convergence of asset classes. A family may own an upscale apartment on Gangapur Road or College Road, an plant MSME manufacturing unit in Satpur or Ambad MIDC, and prime farm grape vineyards in Dindori or Niphad. Without a meticulously drafted Will, surviving heirs encounter multi-office bureaucratic friction across city tax desks, cooperative society committees, and rural revenue talathis.
                 </p>
               </div>
 
@@ -560,7 +560,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound Will mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -590,7 +590,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -604,13 +604,13 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Nashik?
+                  2. Is Will Filing Needed in Nashik?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will Will is strictly <strong>a choice</strong>. An plain Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly escalating real estate valuations along Gangapur Road, College Road, and CIDCO, senior lawyers strongly advise formal registration at the SRO office. An official Book III registration eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
+                  However, with rapidly escalating real estate valuations along Gangapur Road, College Road, and CIDCO, senior lawyers strongly advise formal filing at the SRO office. An official Book III filing eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
                 </p>
               </div>
 
@@ -619,9 +619,9 @@ export default function NashikLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Nashik SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Nashik SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -631,12 +631,12 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Stored privately; susceptible to misplacement or theft</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Protection from Challenge</td>
+                      <td className="p-4 font-semibold">Protection from Fight</td>
                       <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">NMC Property Tax Name Change</td>
+                      <td className="p-4 font-semibold">NMC Asset Tax Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer on presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">NMC officials often demand indemnity bonds or NOCs</td>
                     </tr>
@@ -651,7 +651,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Frequent objections from other legal heirs during notice</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
+                      <td className="p-4 font-semibold">Government Filing Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -671,7 +671,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   3. Nashik Probate Law: Exemption Outside Greater Mumbai
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most frequent misconceptions among Nashik property owners is whether probate from the Bombay High Court is needed before inheriting real estate. The clear legal answer is <strong>no</strong>.
+                  One of the most frequent misconceptions among Nashik asset owners is whether probate from the Bombay High Court is needed before inheriting real estate. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial area of the original side of the Bombay High Court applies strictly to Greater Mumbai. Nashik is a mofussil district outside Mumbai presidency limits.
@@ -687,7 +687,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     Bombay High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Bombay High Court in landmark rulings including <em>Jyoti v. Snehalata</em> and <em>Percival Joseph Pareira</em> affirmed that probate is not needed for Hindu, Buddhist, Sikh, or Jain Wills signed outside the original civil area of Greater Mumbai. A registered Will is fully operational for NMC name change, banking access, and society flat succession.
+                    The Bombay High Court in landmark rulings including <em>Jyoti v. Snehalata</em> and <em>Percival Joseph Pareira</em> affirmed that probate is not needed for Hindu, Buddhist, Sikh, or Jain Wills signed outside the original civil area of Greater Mumbai. A filed Will is fully operational for NMC name change, banking access, and society flat estate.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -721,10 +721,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Nashik Sub-Registrar Offices: SRO Area Directory
+                  4. Nashik SRO Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Nashik district operates designated Sub-Registrar Offices under the Inspector General of Registration Maharashtra (IGR Maharashtra). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any portion of your land and flats is located.
+                  Nashik district operates designated SRO Offices under the Inspector General of Filing Maharashtra (IGR Maharashtra). Under Section 32 of the Filing Act, your Will can be filed at the SRO office having area over your permanent residence or where any portion of your land and flats is located.
                 </p>
               </div>
 
@@ -773,7 +773,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Nashik Registration District
+                        Nashik Filing District
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -826,7 +826,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   5. Localities Covered: Area-Wise Will Drafting in Nashik
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Nashik span upscale home societies along Gangapur Road and College Road, high-growth plotted row houses in CIDCO and Indira Nagar, industrial factories in Satpur and Ambad MIDC, and farm grape vineyards in Dindori and Niphad. Our estate lawyers deliver customized legal drafting, IGR Maharashtra e-Stepin slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Nashik span upscale home societies along Gangapur Road and College Road, high-growth plotted row houses in CIDCO and Indira Nagar, plant factories in Satpur and Ambad MIDC, and farm grape vineyards in Dindori and Niphad. Our estate lawyers deliver customized legal drafting, IGR Maharashtra e-Stepin slot scheduling, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -856,7 +856,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Gangapur Road</strong> and Anandwalli for premium high-rise apartments, penthouses, and gated bungalows. Codifies cooperative housing society share paper transfers under Section 30 of the MCS Act, exclusive car parking allocations, and mutual fund portfolios to prevent inheritance friction.
+                      Specialized <strong>Will drafting services in Gangapur Road</strong> and Anandwalli for premium high-rise apartments, penthouses, and gated bungalows. Codifies cooperative housing society share paper transfers under Section 30 of the MCS Act, exclusive car parking allocations, and mutual fund portfolios to prevent estate friction.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -909,7 +909,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in College Road</strong> and Mahatma Nagar for established family homes, shop showrooms, and doctors&apos; clinics. Includes clauses for family business succession, doctor mental capacity papers, and clear life-interest rules for surviving spouses.
+                      Customized <strong>Will drafting services in College Road</strong> and Mahatma Nagar for established family homes, shop showrooms, and doctors&apos; clinics. Includes clauses for family business estate, doctor mental capacity papers, and clear life-interest rules for surviving spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -918,7 +918,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Canada Corner &amp; Old Agra Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth estate structuring, private family asset mapping, and expedited Book III registration.
+                        High-net-worth estate structuring, private family asset mapping, and expedited Book III filing.
                       </p>
                     </div>
                   </div>
@@ -962,7 +962,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Indira Nagar</strong> and Govind Nagar for home row houses, cooperative apartments, and plotted developments along Mumbai-Agra Highway. Formulates clear share allocations for sons and daughters, bank locker nominations, and smooth NMC property tax assessment updates.
+                      Full <strong>Will drafting services in Indira Nagar</strong> and Govind Nagar for home row houses, cooperative apartments, and plotted developments along Mumbai-Agra Highway. Formulates clear share allocations for sons and daughters, bank locker nominations, and smooth NMC asset tax assessment updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -971,7 +971,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Lekha Nagar, CIDCO (SRO 4)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Seamless IGR Maharashtra slot booking, independent witness attestation, and doorstep check for seniors.
+                        Seamless IGR Maharashtra slot booking, independent witness witness signing, and doorstep check for seniors.
                       </p>
                     </div>
                   </div>
@@ -1015,7 +1015,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in CIDCO</strong> and Ambad Link Road for planned CIDCO leasehold and freehold housing schemes across Sectors 1 to 6. Eliminates risks of title clouds and inheritance fights, facilitating direct name substitution in CIDCO and NMC records upon the Will maker&apos;s demise.
+                      Tailored <strong>Will drafting services in CIDCO</strong> and Ambad Link Road for planned CIDCO leasehold and freehold housing schemes across Sectors 1 to 6. Eliminates risks of title clouds and estate fights, facilitating direct name substitution in CIDCO and NMC records upon the Will maker&apos;s demise.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1068,7 +1068,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Panchavati</strong> and Makhmalabad for historical family wadas, shop riverfront shops, and new suburban home complexes. Resolves complex co-parcenary split questions and ensures individual self-acquired bequests remain legally unassailable.
+                      Specialized <strong>Will drafting services in Panchavati</strong> and Makhmalabad for historical family wadas, shop riverfront shops, and new suburban home complexes. Resolves complex co-parcenary split questions and ensures single self-acquired bequests remain legally unassailable.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1077,7 +1077,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Nimani Bus Stand, Dindori Road (SRO 3)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Support for family property succession, family wada partitions, and Book III registration.
+                        Support for family asset estate, family wada partitions, and Book III filing.
                       </p>
                     </div>
                   </div>
@@ -1121,7 +1121,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Nashik Road</strong> and Deolali Camp for railway pensioners, defence personnel, and bungalow owners. Clarifies Cantonment Board lease rules, defence pension gratuities, and home property transfers without contentious probate steps.
+                      Expert <strong>Will drafting services in Nashik Road</strong> and Deolali Camp for railway pensioners, defence personnel, and bungalow owners. Clarifies Cantonment Board lease rules, defence pension gratuities, and home asset transfers without contentious probate steps.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1130,7 +1130,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Railway Station, Jail Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for elderly veterans and pensioners, IGR e-Stepin booking, and lawyer accompaniment.
+                        Doorstep filing for elderly veterans and pensioners, IGR e-Stepin booking, and lawyer accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1155,7 +1155,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; MSME Belt
+                        Plant &amp; MSME Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Satpur / Ambad
@@ -1168,13 +1168,13 @@ export default function NashikLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Satpur MIDC Estate</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ambad Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ambad Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Trimbak Road Engineering</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sinnar Malegaon MIDC</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Satpur and Ambad MIDC</strong> for industrial entrepreneurs, auto ancillary manufacturers, and MSME founders. Structures transfer of MIDC industrial leasehold rights, private limited company shareholdings, intellectual property, and factory machinery.
+                      Specialized <strong>Will drafting services in Satpur and Ambad MIDC</strong> for plant entrepreneurs, auto ancillary manufacturers, and MSME founders. Structures transfer of MIDC plant leasehold rights, private limited company shareholdings, intellectual asset, and factory machinery.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1183,7 +1183,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Trimbak Road Sub-Division / Lekha Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset inventory, cross-director share succession, and MIDC transfer compliance.
+                        Plant asset inventory, cross-director share estate, and MIDC transfer compliance.
                       </p>
                     </div>
                   </div>
@@ -1196,7 +1196,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Satpur Ambad MIDC"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Industrial Will</span>
+                      <span>Draft Plant Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1265,10 +1265,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to IGR Registration in Nashik
+                  6. Step-by-Step SOP: Drafting to IGR Filing in Nashik
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Nashik:
+                  Follow this checked 5-stage legal operating step to create, execute, and register your Will before the SRO in Nashik:
                 </p>
               </div>
 
@@ -1324,7 +1324,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                       e-Stepin Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on IGR Maharashtra (igrmaharashtra.gov.in) and pay the ₹100 registration fee online via GRAS challan.
+                      Schedule your slot on IGR Maharashtra (igrmaharashtra.gov.in) and pay the ₹100 filing fee online via GRAS challan.
                     </p>
                   </div>
                 </div>
@@ -1353,23 +1353,23 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep SRO Registration for Senior Citizens
+                  7. Section 31 Doorstep SRO Filing for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Gangapur Road, Mahatma Nagar, Indira Nagar, or rural estates, traveling to the SRO office can be a physical ordeal. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Gangapur Road, Mahatma Nagar, Indira Nagar, or rural estates, traveling to the SRO office can be a physical ordeal. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep SRO Registration Operates in Nashik District:
+                  How Doorstep SRO Filing Operates in Nashik District:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
+                      <span className="text-slate-600">A filed MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling.</span>
                     </div>
                   </div>
 
@@ -1377,7 +1377,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Nashik Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the local Nashik SRO.</span>
                     </div>
                   </div>
 
@@ -1393,7 +1393,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometric Equipment</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric thumb scanners and webcams to capture verified identity records.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric thumb scanners and webcams to capture checked identity records.</span>
                     </div>
                   </div>
                 </div>
@@ -1408,10 +1408,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Nashik Sub-Registrar Offices
+                  8. Paper Checklist for Nashik SRO Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your SRO appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required papers:
                 </p>
               </div>
 
@@ -1456,10 +1456,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Nashik Property Types: NMC Flats, Farmland &amp; MIDC Plots
+                  9. Nashik Asset Types: NMC Flats, Farmland &amp; MIDC Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Nashik vary considerably depending on the nature of property title and regulatory authority:
+                  Estate steps in Nashik vary considerably depending on the nature of asset title and regulatory office:
                 </p>
               </div>
 
@@ -1472,7 +1472,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     NMC Society Flats &amp; Shares
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 30 of the MCS Act, 1960, a society nominee holds shares only in fiduciary trust. The registered Will directs the managing committee to transfer the official share paper and apartment rights without court intervention.
+                    Under Section 30 of the MCS Act, 1960, a society nominee holds shares only in fiduciary trust. The filed Will directs the managing committee to transfer the official share paper and apartment rights without court intervention.
                   </p>
                 </div>
 
@@ -1484,19 +1484,19 @@ export default function NashikLocationClient({ faqs }: Props) {
                     7/12 Satbara &amp; Orchard Parcels
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland and vineyards in Dindori and Niphad require careful drafting to prevent violations of land ceiling limits or fragmentation. A certified copy of the registered Will is presented to the Talathi for a smooth Ferfar entry under Section 149 MLRC.
+                    Farmland and vineyards in Dindori and Niphad require careful drafting to prevent violations of land ceiling limits or fragmentation. A certified copy of the filed Will is presented to the Talathi for a smooth Ferfar entry under Section 149 MLRC.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Industrial Enterprises
+                    Plant Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Satpur &amp; Ambad MIDC Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For industrial factory plots in Satpur or Ambad, leasehold transfer with Maharashtra Industrial Development Corporation (MIDC) demands explicit testamentary bequeathal of lease rights, partner capital, and factory machinery.
+                    For plant factory plots in Satpur or Ambad, leasehold transfer with Maharashtra Plant Development City Board (MIDC) demands explicit Will bequeathal of lease rights, partner capital, and factory machinery.
                   </p>
                 </div>
               </div>
@@ -1510,10 +1510,10 @@ export default function NashikLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Official IGR Maharashtra Registration Fees &amp; Charges
+                  10. Official IGR Maharashtra Filing Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike shop sale conveyances or gift deeds that attract 5% to 7% stamp duty in Maharashtra, testamentary Wills are completely exempt from stamp duty under Article 64. Government registration fees in Nashik are purely nominal:
+                  Unlike shop sale conveyances or gift deeds that attract 5% to 7% stamp duty in Maharashtra, Will Wills are completely exempt from stamp duty under Article 64. Government filing fees in Nashik are purely nominal:
                 </p>
               </div>
 
@@ -1523,7 +1523,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
                       <th className="p-4 font-bold">Legal Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1533,14 +1533,14 @@ export default function NashikLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Maharashtra</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Book III Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">IGR Maharashtra via GRAS Portal</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Pasting Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹300</td>
-                      <td className="p-4">Sub-Registrar Service Counter</td>
+                      <td className="p-4">SRO Service Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
@@ -1563,7 +1563,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Nashik
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Nashik:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in Nashik:
                 </p>
               </div>
 
@@ -1581,12 +1581,12 @@ export default function NashikLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with NMC apartments, bank accounts, and demat assets.
+                      Ideal for single homeowners with NMC apartments, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Maharashtra Will creator</span>
+                        <span>Free Maharashtra Will creator</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1659,13 +1659,13 @@ export default function NashikLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Nashik SRO office or home visit.
+                      End-to-end filing coordination across any Nashik SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1707,7 +1707,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Nashik
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Nashik:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset filing in Nashik:
                 </p>
               </div>
 
@@ -1751,7 +1751,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                   13. Legal Citations &amp; Maharashtra Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Maharashtra state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Maharashtra state filing systems:
                 </p>
               </div>
 
@@ -1767,10 +1767,10 @@ export default function NashikLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Filing) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1779,7 +1779,7 @@ export default function NashikLocationClient({ faqs }: Props) {
                     Maharashtra Stamp Act 1958
                   </span>
                   <p className="text-xs text-slate-600">
-                    Article 64 of Schedule I (100% Stamp Duty Exemption for Testamentary Wills).
+                    Article 64 of Schedule I (100% Stamp Duty Exemption for Will Wills).
                   </p>
                 </div>
 
@@ -1819,7 +1819,29 @@ export default function NashikLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1838,7 +1860,7 @@ export default function NashikLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Nashik Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Nashik Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1857,7 +1879,7 @@ export default function NashikLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Nashik SRO Registered &amp; NMC Name Change Compliant</span>
+              <span>Nashik SRO Filed &amp; NMC Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

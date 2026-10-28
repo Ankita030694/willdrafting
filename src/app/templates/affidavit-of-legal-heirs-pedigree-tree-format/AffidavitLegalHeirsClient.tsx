@@ -50,62 +50,62 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "what-is-legal-heir-affidavit", label: "1. What is a Legal Heir & Pedigree Tree Affidavit?" },
-  { id: "statutory-framework-laws", label: "2. Statutory Foundation: HSA 1956 & BSA 2023 Rules" },
+  { id: "what-is-legal-heir-affidavit", label: "1. What is a Legal Heir & Pedigree Tree Sworn Note?" },
+  { id: "statutory-framework-laws", label: "2. Legal Foundation: HSA 1956 & BSA 2023 Rules" },
   { id: "predeceased-vs-surviving-heirs", label: "3. Predeceased vs Surviving Heirs: The Missing Moat" },
-  { id: "interactive-pedigree-calculator", label: "4. Interactive Legal Heir & Pedigree Tree Generator" },
-  { id: "comparison-lhc-smc-succession", label: "5. Legal Heir vs SMC vs Succession Certificate" },
-  { id: "master-affidavit-template", label: "6. Format 1: Legal Heir Affidavit with Pedigree Tree" },
+  { id: "interactive-pedigree-calculator", label: "4. Free Legal Heir & Pedigree Tree Generator" },
+  { id: "comparison-lhc-smc-succession", label: "5. Legal Heir vs SMC vs Estate Paper" },
+  { id: "master-affidavit-template", label: "6. Format 1: Legal Heir Sworn Note with Pedigree Tree" },
   { id: "regional-pedhinama-vamshavali", label: "7. State Revenue Formats: Pedhinama & Vamshavali" },
   { id: "essential-clauses-negative-declaration", label: "8. Key Clauses: Negative Declaration & Indemnity" },
   { id: "stamp-duty-notarization-sop", label: "9. Step-by-Step SOP: Stamping to Tehsildar Filing" },
   { id: "bank-and-property-case-studies", label: "10. Real Post-Death Case Studies in India" },
   { id: "copyable-legal-undertakings", label: "11. Copy-Paste Revenue & Bank Undertaking Clauses" },
-  { id: "institutional-profile", label: "12. Legal Review & Advocate Credentials" },
+  { id: "institutional-profile", label: "12. Legal Review & Lawyer Credentials" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions: Legal Heirship" },
-  { id: "statutory-citations", label: "14. Statutory Citations & Official Revenue Portals" },
+  { id: "statutory-citations", label: "14. Legal Citations & Official Revenue Portals" },
 ];
 
 const FAQS = [
   {
-    q: "What is a Legal Heir and Pedigree Tree Affidavit in India?",
-    a: "A Legal Heir Affidavit with a Pedigree Tree (also termed Vamshavali, Pedhinama, or Shajra-e-Nasab) is a sworn legal statement executed on non-judicial stamp paper. A close relative affirms under solemn oath all surviving Class I legal heirs of a deceased person who died intestate. The embedded pedigree tree details the deceased, surviving heirs, and any predeceased heirs to establish legal title for revenue, banking, and municipal authorities.",
+    q: "What is a Legal Heir and Pedigree Tree Sworn Note in India?",
+    a: "A Legal Heir Sworn Note with a Pedigree Tree (also termed Vamshavali, Pedhinama, or Shajra-e-Nasab) is a sworn legal statement signed on non-judicial stamp paper. A close relative affirms under solemn oath all surviving Class I legal heirs of a deceased person who died no-Will. The embedded pedigree tree details the deceased, surviving heirs, and any predeceased heirs to establish legal title for revenue, banking, and city offices.",
   },
   {
-    q: "Why is disclosing predeceased heirs compulsory in the affidavit?",
-    a: "Under Section 10 of the Hindu Succession Act, 1956, when a son or daughter dies before the parent (predeceased), their children and the predeceased son's widow inherit their branch's share per stirpes (by representation). If a deponent lists only living children and conceals a predeceased child's family, the affidavit constitutes perjury and fraud, and any revenue certificate issued is void ab initio.",
+    q: "Why is disclosing predeceased heirs needed in the sworn note?",
+    a: "Under Section 10 of the Hindu Succession Act, 1956, when a son or daughter dies before the parent (predeceased), their children and the predeceased son's widow inherit their branch's share per stirpes (by representation). If a deponent lists only living children and conceals a predeceased child's family, the sworn note constitutes perjury and fraud, and any revenue paper issued is void ab initio.",
   },
   {
-    q: "What is the stamp paper value required for a Legal Heir Affidavit?",
-    a: "The required non-judicial e-stamp paper value varies by state stamp schedule. In Delhi and Uttar Pradesh, it is typically ₹10 or ₹100; in Maharashtra, ₹100; in Karnataka, ₹20 or ₹50; and in Gujarat, ₹50 or ₹100. Always check your local District Collector or Sub-Registrar notification before purchasing e-stamp paper in the deponent's name.",
+    q: "What is the stamp paper value required for a Legal Heir Sworn Note?",
+    a: "The required non-judicial e-stamp paper value varies by state stamp schedule. In Delhi and Uttar Pradesh, it is typically ₹10 or ₹100; in Maharashtra, ₹100; in Karnataka, ₹20 or ₹50; and in Gujarat, ₹50 or ₹100. Always check your local District Collector or SRO notification before purchasing e-stamp paper in the deponent's name.",
   },
   {
-    q: "Can a Legal Heir Certificate transfer immovable property ownership?",
-    a: "A Legal Heir Certificate or Surviving Member Certificate is an administrative revenue record, not an absolute title deed. It allows legal heirs to mutate land revenue records, pay municipal property taxes, and establish tenancy-in-common. To sell or transfer registered ownership, all legal heirs must jointly execute a registered conveyance or release deed.",
+    q: "Can a Legal Heir Paper transfer land asset ownership?",
+    a: "A Legal Heir Paper or Surviving Member Paper is an office revenue record, not an absolute title deed. It allows legal heirs to mutate land revenue records, pay city asset taxes, and establish tenancy-in-common. To sell or transfer filed ownership, all legal heirs must jointly execute a filed conveyance or release deed.",
   },
   {
-    q: "What is the difference between a Legal Heir Certificate and a Succession Certificate?",
-    a: "A Legal Heir Certificate is issued by an administrative executive officer (Tehsildar or SDM) within 15 to 30 days at nominal cost, primarily used for bank accounts up to state limits, PF, and utility transfers. A Succession Certificate is granted only by a competent Civil Court under Part X of the Indian Succession Act, 1925, following newspaper publication and ad valorem court fees (often 2% to 7%), required for contested debts and high-value securities.",
+    q: "What is the difference between a Legal Heir Paper and a Estate Paper?",
+    a: "A Legal Heir Paper is issued by an office executive officer (Tehsildar or SDM) within 15 to 30 days at nominal cost, primarily used for bank accounts up to state limits, PF, and utility transfers. A Estate Paper is granted only by a competent Civil Court under Part X of the Indian Succession Act, 1925, following newspaper publication and ad valorem court fees (often 2% to 7%), required for contested debts and high-value securities.",
   },
   {
-    q: "What are the criminal penalties for filing a false legal heir affidavit?",
-    a: "Affidavits are sworn evidence under the Oaths Act, 1969. Submitting a false affidavit or concealing a legal heir attracts prosecution under Sections 229 and 236 of the Bharatiya Nyaya Sanhita, 2023 (formerly Sections 193 and 199 IPC) for perjury and fabricating false evidence, punishable by rigorous imprisonment up to 7 years plus fine.",
+    q: "What are the criminal penalties for filing a false legal heir sworn note?",
+    a: "Affidavits are sworn evidence under the Oaths Act, 1969. Submitting a false sworn note or concealing a legal heir attracts prosecution under Sections 229 and 236 of the Bharatiya Nyaya Sanhita, 2023 (formerly Sections 193 and 199 IPC) for perjury and fabricating false evidence, punishable by rigorous imprisonment up to 7 years plus fine.",
   },
   {
-    q: "Do married daughters have equal rights in a Legal Heir Affidavit?",
-    a: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters are coparceners by birth with rights identical to sons. Married daughters must be included with their marital status and address. Omitting a married daughter invalidates the affidavit.",
+    q: "Do married daughters have equal rights in a Legal Heir Sworn Note?",
+    a: "Yes. Following the Hindu Succession (Amendment) Act, 2005 and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters are coparceners by birth with rights identical to sons. Married daughters must be included with their marital status and address. Omitting a married daughter invalidates the sworn note.",
   },
   {
     q: "What is a Pedhinama in Gujarat and how does it relate to Vamshavali?",
-    a: "Pedhinama is the Gujarati administrative term for a certified genealogical family tree (Vamshavali). It is drafted as an affidavit on stamp paper, witnessed by two non-relative panch witnesses, and verified by the local Talati (Panchayat Secretary) or Revenue Circle Officer before mutating agricultural land records.",
+    a: "Pedhinama is the Gujarati office term for a certified genealogical family tree (Vamshavali). It is drafted as an sworn note on stamp paper, witnessed by two non-relative panch witnesses, and checked by the local Talati (Panchayat Secretary) or Revenue Circle Officer before mutating farm land records.",
   },
   {
-    q: "What is the Delhi Surviving Member Certificate (SMC) process?",
-    a: "Under the Revenue Department of GNCTD, Delhi residents apply online on the e-District portal for an SMC. The application requires a notarized self-declaration affidavit with a family tree, death certificate, Aadhaar cards of all heirs, and electricity bill. An SDM field inquiry confirms the surviving family before issuing the digital certificate.",
+    q: "What is the Delhi Surviving Member Paper (SMC) process?",
+    a: "Under the Revenue Office of GNCTD, Delhi residents apply online on the e-District portal for an SMC. The form requires a notarized self-declaration sworn note with a family tree, death paper, Aadhaar cards of all heirs, and electricity bill. An SDM field inquiry confirms the surviving family before issuing the digital paper.",
   },
   {
-    q: "How can banks settle deceased claims without a Civil Court Succession Certificate?",
-    a: "Under Reserve Bank of India (RBI) Master Directions on Deceased Depositors, banks settle claims where no nomination exists based on: (1) Sworn Legal Heir Affidavit with Pedigree Tree, (2) Death Certificate, (3) Letter of Disclaimer / NOC from non-claiming heirs, and (4) Stamped Indemnity Bond (Form Annexure) with two independent solvent sureties.",
+    q: "How can banks settle deceased claims without a Civil Court Estate Paper?",
+    a: "Under Reserve Bank of India (RBI) Master Directions on Deceased Depositors, banks settle claims where no nomination exists based on: (1) Sworn Legal Heir Sworn Note with Pedigree Tree, (2) Death Paper, (3) Letter of Disclaimer / NOC from non-claiming heirs, and (4) Stamped Indemnity Bond (Form Annexure) with two independent solvent sureties.",
   },
 ];
 
@@ -122,14 +122,14 @@ export default function AffidavitLegalHeirsClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("what-is-legal-heir-affidavit");
+  const [activeId, setActiveId] = useState<string>("what-is-legal-heir-sworn note");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedAffidavit, setCopiedAffidavit] = useState<boolean>(false);
   const [copiedNegativeClause, setCopiedNegativeClause] = useState<boolean>(false);
   const [copiedBankClause, setCopiedBankClause] = useState<boolean>(false);
   const [copiedCHSClause, setCopiedCHSClause] = useState<boolean>(false);
 
-  // Interactive Calculator State: Hindu Succession Act Class I Engine
+  // Free Tool State: Hindu Succession Act Class I Engine
   const [deceasedGender, setDeceasedGender] = useState<"male" | "female">("male");
   const [deceasedMaritalStatus, setDeceasedMaritalStatus] = useState<"married" | "widowed" | "unmarried">("married");
   const [hasSurvivingSpouse, setHasSurvivingSpouse] = useState<boolean>(true);
@@ -207,7 +207,7 @@ export default function AffidavitLegalHeirsClient() {
         return {
           totalBranches: 0,
           items: [],
-          summary: "No Class I legal heirs specified. Succession moves to Class II Agnates / Cognates.",
+          summary: "No Class I legal heirs specified. Estate moves to Class II Agnates / Cognates.",
         };
       }
 
@@ -515,12 +515,12 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            Legal Heir Affidavit &amp; Pedigree Tree Format in India
+            Legal Heir Sworn Note &amp; Pedigree Tree Format in India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download lawyer-vetted <strong>Legal Heirship &amp; Pedigree Tree (Vamshavali / Pedhinama)</strong> affidavits.
+            Download lawyer-vetted <strong>Legal Heirship &amp; Pedigree Tree (Vamshavali / Pedhinama)</strong> sworn notes.
             Includes complete Class I heir share calculations, predeceased branch disclosures, negative declarations,
             and state revenue SOPs for Tehsildars, SDMs, and banks.
           </p>
@@ -532,7 +532,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm sm:text-base shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <FileText className="w-4 h-4" />
-              <span>Download Affidavit Template</span>
+              <span>Download Sworn Note Template</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
@@ -618,7 +618,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 8, 9, 10, 15 &amp; 16 of the Hindu Succession Act, 1956, read with
@@ -642,31 +642,31 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>First Step in Post-Death Estate Administration:</strong> Every Tehsildar Legal
-                    Heir Certificate, Delhi Surviving Member Certificate (SMC), Gujarat Pedhinama, and bank
-                    deceased account claim requires a sworn Legal Heir Affidavit with a structured Pedigree Tree.
+                    <strong>First Step in Post-Death Estate Care:</strong> Every Tehsildar Legal
+                    Heir Paper, Delhi Surviving Member Paper (SMC), Gujarat Pedhinama, and bank
+                    deceased account claim requires a sworn Legal Heir Sworn Note with a structured Pedigree Tree.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>The Predeceased Heir Disclosure Mandate:</strong> Omitting a deceased son or
-                    daughter is the number one reason revenue officers reject applications. Children and widows
+                    daughter is the number one reason revenue officers reject forms. Children and widows
                     of predeceased heirs inherit per stirpes by representation under Section 10 of HSA 1956.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Married Daughters Have Equal Coparcenary Status:</strong> Under Supreme Court
+                    <strong>Married Daughters Have Equal Joint Status:</strong> Under Supreme Court
                     precedent Vineeta Sharma (2020), married daughters possess equal rights by birth. Any
-                    affidavit attempting to exclude married daughters is illegal.
+                    sworn note attempting to exclude married daughters is illegal.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Solemn Verification &amp; Perjury Liability:</strong> Affidavits must be sworn
+                    <strong>Solemn Check &amp; Perjury Liability:</strong> Affidavits must be sworn
                     before a Notary Public or Oath Commissioner with two independent local witnesses. Making
                     false declarations invites criminal prosecution under Section 229 of Bharatiya Nyaya Sanhita, 2023.
                   </span>
@@ -687,7 +687,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 />
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-500 px-2 py-1 gap-1">
-                <span>Figure 1: Statutory Legal Heir Affidavit &amp; Pedigree Tree Framework (Vamshavali / Pedhinama)</span>
+                <span>Figure 1: Legal Legal Heir Sworn Note &amp; Pedigree Tree Framework (Vamshavali / Pedhinama)</span>
                 <span className="font-semibold text-[#5F7E75]">Lawyer-Vetted Template</span>
               </div>
             </div>
@@ -699,28 +699,28 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>LEGAL DEFINITION &amp; PURPOSE</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. What is a Legal Heir &amp; Pedigree Tree Affidavit?
+                1. What is a Legal Heir &amp; Pedigree Tree Sworn Note?
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When an Indian citizen passes away without leaving a registered Will (known as dying <em>intestate</em>),
+                  When an Indian citizen passes away without leaving a filed Will (known as dying <em>no-Will</em>),
                   their estate does not automatically transfer to family members. Before government land revenue
-                  offices, municipal corporations, public sector banks, or co-operative housing societies can transfer
-                  the deceased person&rsquo;s properties or financial balances, they require lawful proof establishing
+                  offices, city corporations, public sector banks, or co-operative housing societies can transfer
+                  the deceased person&rsquo;s assets or financial balances, they require lawful proof establishing
                   the exact identities of all surviving family members.
                 </p>
                 <p>
-                  The foundational document required across all Indian states is a <strong>sworn Affidavit of Legal
+                  The foundational paper required across all Indian states is a <strong>sworn Sworn Note of Legal
                   Heirs with an embedded Genealogical Pedigree Tree</strong>. Known regionally as a <em>Vamshavali</em>,
-                  <em>Pedhinama</em>, <em>Warasnama</em>, or <em>Shajra-e-Nasab</em>, this document is an evidentiary
-                  sworn statement executed on non-judicial stamp paper. In it, a close family deponent solemnly affirms
+                  <em>Pedhinama</em>, <em>Warasnama</em>, or <em>Shajra-e-Nasab</em>, this paper is an proof
+                  sworn statement signed on non-judicial stamp paper. In it, a close family deponent solemnly affirms
                   under oath the complete family lineage of the deceased, explicitly accounting for every living and
                   predeceased heir.
                 </p>
                 <p>
-                  Without an accurate pedigree tree affidavit, revenue officers cannot determine whether other rightful
-                  claimants exist. An incomplete affidavit creates cloud on title, leads to instant rejection at the
-                  Tehsildar office, and exposes the family to protracted title disputes in civil court.
+                  Without an accurate pedigree tree sworn note, revenue officers cannot determine whether other rightful
+                  claimants exist. An incomplete sworn note creates cloud on title, leads to instant rejection at the
+                  Tehsildar office, and exposes the family to protracted title fights in civil court.
                 </p>
               </div>
             </section>
@@ -732,11 +732,11 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Statutory Foundation: HSA 1956 &amp; BSA 2023 Rules
+                2. Legal Foundation: HSA 1956 &amp; BSA 2023 Rules
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A legal heirship affidavit derives its legal validity from several key Indian statutes:
+                  A legal heirship sworn note derives its legal validity from several key Indian statutes:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -745,7 +745,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       <span>Hindu Succession Act, 1956 (Sec 8, 9 &amp; 10)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Defines the priority of succession for male intestates. Property passes simultaneously to Class I
+                      Defines the priority of estate for male intestates. Asset passes simultaneously to Class I
                       heirs: widow, mother, sons, daughters, and the branches of predeceased sons and daughters. Class II
                       heirs inherit only if no Class I heir survives.
                     </p>
@@ -757,7 +757,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Replaces Section 32(5) and 32(6) of the Indian Evidence Act, 1872. Recognizes genealogical trees,
-                      family records, and ancestral pedigrees executed <em>ante litem motam</em> (before disputes arose)
+                      family records, and family pedigrees signed <em>ante litem motam</em> (before fights arose)
                       as admissible substantive evidence of pedigree.
                     </p>
                   </div>
@@ -767,7 +767,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       <span>The Oaths Act, 1969 &amp; Notaries Act, 1952</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Mandates that affidavits must be sworn under solemn affirmation before an appointed Notary Public or
+                      Mandates that sworn notes must be sworn under solemn affirmation before an appointed Notary Public or
                       Oath Commissioner, bearing the official stamp, notarial register entry number, and notary seal.
                     </p>
                   </div>
@@ -777,7 +777,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       <span>Bharatiya Nyaya Sanhita, 2023 (Sec 229 &amp; 236)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Replaces IPC Sections 193 and 199. Submitting a false affidavit or concealing a legal heir carries
+                      Replaces IPC Sections 193 and 199. Submitting a false sworn note or concealing a legal heir carries
                       rigorous criminal punishment up to 7 years imprisonment for perjury and fabricating false evidence.
                     </p>
                   </div>
@@ -796,8 +796,8 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Most generic affidavit drafts found online make a catastrophic legal mistake: <strong>they only list
-                  surviving family members who are currently living</strong>. When this incomplete affidavit is submitted
+                  Most generic sworn note drafts found online make a catastrophic legal mistake: <strong>they only list
+                  surviving family members who are currently living</strong>. When this incomplete sworn note is submitted
                   to a Tehsildar, Sub-Divisional Magistrate, or bank legal cell, it is routinely rejected.
                 </p>
                 <div className="p-4 rounded-xl bg-amber-50/80 border border-amber-200 text-slate-800 text-xs sm:text-sm leading-relaxed space-y-2">
@@ -810,7 +810,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                     <strong> not</strong> vanish. Their surviving children (the deceased&rsquo;s grandchildren) and the
                     predeceased son&rsquo;s widow legally inherit that entire branch&rsquo;s share by representation (<em>per
                     stirpes</em>). If you omit the predeceased branch from your pedigree table, you are legally disinheriting
-                    lawful Class I heirs, rendering the certificate liable to be quashed in High Court.
+                    lawful Class I heirs, rendering the paper liable to be quashed in High Court.
                   </p>
                 </div>
                 <p>
@@ -836,11 +836,11 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>INTERACTIVE SUCCESSION ENGINE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Legal Heir &amp; Pedigree Tree Generator
+                4. Free Legal Heir &amp; Pedigree Tree Generator
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Configure the family tree below to compute exact statutory Class I shares under Section 10 of the
-                Hindu Succession Act, 1956, and generate a structured pedigree table for your stamp paper affidavit.
+                Configure the family tree below to compute exact legal Class I shares under Section 10 of the
+                Hindu Succession Act, 1956, and generate a structured pedigree table for your stamp paper sworn note.
               </p>
 
               {/* Calculator Box */}
@@ -1145,7 +1145,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   <div className="pt-2 text-[11px] text-white/70 flex items-center gap-2">
                     <Info className="w-3.5 h-3.5 text-rose-300 shrink-0" />
                     <span>
-                      Need a formal certificate for bank deceased claims or land mutation? Consult our succession advocates.
+                      Need a formal paper for bank deceased claims or land name change? Consult our estate lawyers.
                     </span>
                   </div>
                 </div>
@@ -1159,11 +1159,11 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>LEGAL CERTIFICATE COMPARISON</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Legal Heir vs SMC vs Succession Certificate
+                5. Legal Heir vs SMC vs Estate Paper
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Many families confuse revenue legal heir certificates with civil court decrees. The table below outlines
-                the exact differences across statutory authority, property coverage, fees, and processing times:
+                Many families confuse revenue legal heir papers with civil court decrees. The table below outlines
+                the exact differences across legal office, asset coverage, fees, and processing times:
               </p>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden">
@@ -1172,14 +1172,14 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="py-3.5 px-4 font-bold">Parameter</th>
-                        <th className="py-3.5 px-4 font-bold">Legal Heir Certificate (LHC)</th>
+                        <th className="py-3.5 px-4 font-bold">Legal Heir Paper (LHC)</th>
                         <th className="py-3.5 px-4 font-bold">Surviving Member Cert (SMC)</th>
-                        <th className="py-3.5 px-4 font-bold">Succession Certificate</th>
+                        <th className="py-3.5 px-4 font-bold">Estate Paper</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
                       <tr className="hover:bg-slate-50/80">
-                        <td className="py-3 px-4 font-bold text-slate-900">Issuing Authority</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Issuing Office</td>
                         <td className="py-3 px-4">Tehsildar / Taluk Office / Revenue Inspector</td>
                         <td className="py-3 px-4">Sub-Divisional Magistrate (SDM) / e-District</td>
                         <td className="py-3 px-4 font-semibold text-rose-800">Competent Civil Court (Civil Judge / District Judge)</td>
@@ -1192,15 +1192,15 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="py-3 px-4 font-bold text-slate-900">Asset Applicability</td>
-                        <td className="py-3 px-4">Land mutation, basic bank balances, pension transfer</td>
+                        <td className="py-3 px-4">Land name change, basic bank balances, pension transfer</td>
                         <td className="py-3 px-4">Bank accounts, DDA flats, electricity/water transfer</td>
-                        <td className="py-3 px-4 font-semibold text-emerald-800">Movable debts, shares, mutual funds, provident funds</td>
+                        <td className="py-3 px-4 font-semibold text-emerald-800">Cash debts, shares, mutual funds, provident funds</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="py-3 px-4 font-bold text-slate-900">Legal Conclusiveness</td>
-                        <td className="py-3 px-4">Administrative presumption; does not confer title</td>
-                        <td className="py-3 px-4">Administrative identification of living members</td>
-                        <td className="py-3 px-4 font-semibold text-emerald-800">Statutory immunity for debtors; conclusive legal indemnity</td>
+                        <td className="py-3 px-4">Office presumption; does not confer title</td>
+                        <td className="py-3 px-4">Office ID of living members</td>
+                        <td className="py-3 px-4 font-semibold text-emerald-800">Legal immunity for debtors; strong legal indemnity</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="py-3 px-4 font-bold text-slate-900">Time Required</td>
@@ -1210,7 +1210,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="py-3 px-4 font-bold text-slate-900">Government / Court Fee</td>
-                        <td className="py-3 px-4">Nominal (₹10 to ₹50 application fee)</td>
+                        <td className="py-3 px-4">Nominal (₹10 to ₹50 form fee)</td>
                         <td className="py-3 px-4">Nil or nominal user fee</td>
                         <td className="py-3 px-4 font-bold text-rose-800">Ad valorem court fees (typically 2% to 7% of estate value)</td>
                       </tr>
@@ -1227,7 +1227,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>LAWYER-VETTED LEGAL DRAFT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Format 1: Legal Heir Affidavit with Pedigree Tree
+                6. Format 1: Legal Heir Sworn Note with Pedigree Tree
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Print this format on prescribed non-judicial e-stamp paper (₹10 to ₹100 depending on state rules),
@@ -1240,7 +1240,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
                   <div>
                     <div className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Universal Legal Heirship &amp; Pedigree Tree Affidavit Format
+                      Universal Legal Heirship &amp; Pedigree Tree Sworn Note Format
                     </div>
                     <div className="text-xs text-slate-500">
                       Compliant with Hindu Succession Act, 1956 &amp; Bharatiya Sakshya Adhiniyam, 2023
@@ -1259,7 +1259,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                     ) : (
                       <>
                         <Copy className="w-4 h-4" />
-                        <span>Copy Complete Affidavit</span>
+                        <span>Copy Complete Sworn Note</span>
                       </>
                     )}
                   </button>
@@ -1348,19 +1348,19 @@ NOTARY PUBLIC / OATH COMMISSIONER
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  While the substantive rules of intestate succession are governed uniformly by the Hindu Succession Act,
-                  each Indian state revenue department prescribes distinct administrative nomenclatures and inquiry rules:
+                  While the substantive rules of no-Will estate are governed uniformly by the Hindu Succession Act,
+                  each Indian state revenue office prescribes distinct office nomenclatures and inquiry rules:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2 shadow-2xs">
                     <div className="font-bold text-slate-900 text-sm flex items-center justify-between">
-                      <span>Delhi: Surviving Member Certificate (SMC)</span>
+                      <span>Delhi: Surviving Member Paper (SMC)</span>
                       <span className="text-[10px] bg-rose-50 text-[#C65378] px-2 py-0.5 rounded font-black">e-District</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Issued exclusively online through the Revenue Department of GNCTD on the e-District portal.
-                      Requires a notarized self-declaration affidavit, municipal death certificate, photo IDs of all heirs,
-                      and residence proof. An SDM field verification precedes digital issuance.
+                      Issued exclusively online through the Revenue Office of GNCTD on the e-District portal.
+                      Requires a notarized self-declaration sworn note, city death paper, photo IDs of all heirs,
+                      and residence proof. An SDM field check precedes digital issuance.
                     </p>
                   </div>
 
@@ -1370,21 +1370,21 @@ NOTARY PUBLIC / OATH COMMISSIONER
                       <span className="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-black">Panchayat / Talati</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compulsory for mutating agricultural 7/12 land records and urban property cards. The deponent files
-                      an affidavit on stamp paper with 2 non-relative panch witnesses. The Talati-cum-Mantri verifies village
+                      Needed for mutating farm 7/12 land records and urban asset cards. The deponent files
+                      an sworn note on stamp paper with 2 non-relative panch witnesses. The Talati-cum-Mantri verifies village
                       registers and issues the signed Pedhinama.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2 shadow-2xs">
                     <div className="font-bold text-slate-900 text-sm flex items-center justify-between">
-                      <span>Maharashtra: Waras Certificate / Varasnama</span>
+                      <span>Maharashtra: Waras Paper / Varasnama</span>
                       <span className="text-[10px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-black">Sec 85 MLRC</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Governed under Section 85 of the Maharashtra Land Revenue Code, 1966. Filed before the Tahsildar
-                      with an affidavit on ₹100 stamp paper. The Talathi posts a 15-day public notice at the Chavdi before
-                      updating the 7/12 Ferfar (mutation entry).
+                      with an sworn note on ₹100 stamp paper. The Talathi posts a 15-day public notice at the Chavdi before
+                      updating the 7/12 Ferfar (name change entry).
                     </p>
                   </div>
 
@@ -1414,7 +1414,7 @@ NOTARY PUBLIC / OATH COMMISSIONER
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A legally robust legal heir affidavit must incorporate three critical statutory safeguards to prevent
+                  A legally robust legal heir sworn note must incorporate three critical legal safeguards to prevent
                   future revocation or criminal allegations:
                 </p>
 
@@ -1435,17 +1435,17 @@ NOTARY PUBLIC / OATH COMMISSIONER
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Under Section 32 of Bharatiya Sakshya Adhiniyam, statements regarding blood relationships are admissible
-                      only if made <em>ante litem motam</em> (before any controversy or dispute arose). Expressly stating that
-                      the family is harmonious and no suit is pending reinforces evidentiary credibility.
+                      only if made <em>ante litem motam</em> (before any controversy or fight arose). Expressly stating that
+                      the family is harmonious and no suit is pending reinforces proof credibility.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 space-y-2">
                     <div className="font-bold text-slate-900 text-sm">
-                      3. Statutory Perjury &amp; Institutional Indemnity Undertaking
+                      3. Legal Perjury &amp; Institutional Indemnity Undertaking
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The deponent must explicitly covenant to indemnify the issuing government department, registrar, or bank
+                      The deponent must explicitly covenant to indemnify the issuing government office, registrar, or bank
                       against any third-party claims, acknowledging direct liability under Section 229 of Bharatiya Nyaya Sanhita, 2023.
                     </p>
                   </div>
@@ -1463,7 +1463,7 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 9. Step-by-Step SOP: Stamping to Tehsildar Filing
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Follow this verified 6-step legal protocol to execute and submit your legal heir affidavit without
+                Follow this checked 6-step legal protocol to execute and submit your legal heir sworn note without
                 procedural delays:
               </p>
 
@@ -1472,17 +1472,17 @@ NOTARY PUBLIC / OATH COMMISSIONER
                   {
                     step: "Step 1",
                     title: "Procure Certified Municipal Death Certificate",
-                    desc: "Obtain the official death certificate issued by the Registrar of Births and Deaths (MCD, BMC, BBMP, or Gram Panchayat). Verify that the deceased's name spelling matches their Aadhaar and PAN cards.",
+                    desc: "Obtain the official death paper issued by the Registrar of Births and Deaths (MCD, BMC, BBMP, or Gram Panchayat). Verify that the deceased's name spelling matches their Aadhaar and PAN cards.",
                   },
                   {
                     step: "Step 2",
                     title: "Compile KYC Documents of All Surviving & Predeceased Heirs",
-                    desc: "Collect self-attested copies of Aadhaar card, PAN card, and voter ID for every surviving heir. If any heir predeceased the parent, collect their death certificate and the marriage certificate of their surviving spouse.",
+                    desc: "Collect self-attested copies of Aadhaar card, PAN card, and voter ID for every surviving heir. If any heir predeceased the parent, collect their death paper and the marriage paper of their surviving spouse.",
                   },
                   {
                     step: "Step 3",
                     title: "Purchase Non-Judicial e-Stamp Paper",
-                    desc: "Purchase e-stamp paper of appropriate denomination (₹10 to ₹100 depending on state rules) through Stock Holding Corporation of India (SHCIL) or licensed stamp vendor, naming the deponent as the first party.",
+                    desc: "Purchase e-stamp paper of appropriate denomination (₹10 to ₹100 depending on state rules) through Stock Holding City Board of India (SHCIL) or licensed stamp vendor, naming the deponent as the first party.",
                   },
                   {
                     step: "Step 4",
@@ -1492,12 +1492,12 @@ NOTARY PUBLIC / OATH COMMISSIONER
                   {
                     step: "Step 5",
                     title: "Execute Solemn Oath Before Notary Public with Two Witnesses",
-                    desc: "Sign each page before an appointed Notary Public or Oath Commissioner. Ensure two independent adult witnesses (not co-heirs, preferably local neighbors or an advocate) identify the deponent and sign.",
+                    desc: "Sign each page before an appointed Notary Public or Oath Commissioner. Ensure two independent adult witnesses (not co-heirs, preferably local neighbors or an lawyer) identify the deponent and sign.",
                   },
                   {
                     step: "Step 6",
                     title: "Submit on State e-District Portal or Tehsildar Office",
-                    desc: "Upload the notarized affidavit along with the application form, electricity bill, and death certificate on the state portal (Delhi e-District, UP e-Sathi, MahaDBT). Await the Patwari / Lekhpal field verification.",
+                    desc: "Upload the notarized sworn note along with the form form, electricity bill, and death paper on the state portal (Delhi e-District, UP e-Sathi, MahaDBT). Await the Patwari / Lekhpal field check.",
                   },
                 ].map((item, index) => (
                   <div
@@ -1537,13 +1537,13 @@ NOTARY PUBLIC / OATH COMMISSIONER
                     Predeceased Son Disclosure Overcomes SMC Rejection
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A family in Greater Kailash applied for an e-District Surviving Member Certificate listing only 2 living
-                    daughters. During field verification, the local Patwari discovered an elder son had passed away in 2021
-                    leaving a widow and a 12-year-old grandson. The SDM immediately issued a show-cause notice for suppression
+                    A family in Greater Kailash applied for an e-District Surviving Member Paper listing only 2 living
+                    daughters. During field check, the local Patwari discovered an elder son had passed away in 2021
+                    leaving a widow and a 12-year-old grandson. The SDM right away issued a show-cause notice for suppression
                     of facts.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    AMA Legal Solutions drafted a revised comprehensive Pedigree Tree Affidavit establishing the predeceased
+                    AMA Legal Solutions drafted a revised full Pedigree Tree Sworn Note establishing the predeceased
                     son&rsquo;s branch under Section 10 Rule 3. The SDM accepted the amended filing, issuing the SMC with 1/3rd
                     per stirpes protection for the minor grandchild.
                   </p>
@@ -1552,21 +1552,21 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold">
                     <span className="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">
-                      Case Study 2 • Bank Fixed Deposit Transmission
+                      Case Study 2 • Bank Fixed Deposit Transfer
                     </span>
                     <span className="text-slate-400">SBI Mumbai</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">
-                    ₹38 Lakhs Claim Released Without Succession Certificate
+                    ₹38 Lakhs Claim Released Without Estate Paper
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A deceased businessman in Borivali left ₹38 Lakhs across three fixed deposit accounts without registering
-                    a nomination. The branch initially demanded a High Court Succession Certificate, which would have cost
+                    a nomination. The branch initially demanded a High Court Estate Paper, which would have cost
                     ₹1.8 Lakhs in court fees and taken 9 months.
                   </p>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    By submitting our standardized Pedigree Tree Affidavit accompanied by a Stamped Bank Indemnity Bond and
-                    NOCs from the two married sisters, the branch legal department approved the claim under RBI Master Directions
+                    By submitting our standardized Pedigree Tree Sworn Note accompanied by a Stamped Bank Indemnity Bond and
+                    NOCs from the two married sisters, the branch legal office approved the claim under RBI Master Directions
                     within 18 working days, saving the family lakhs in legal expenses.
                   </p>
                 </div>
@@ -1587,7 +1587,7 @@ NOTARY PUBLIC / OATH COMMISSIONER
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Statutory Negative Declaration &amp; Non-Concealment Clause
+                    Legal Negative Declaration &amp; Non-Concealment Clause
                   </div>
                   <button
                     type="button"
@@ -1616,7 +1616,7 @@ NOTARY PUBLIC / OATH COMMISSIONER
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Bank Deceased Claim Settlement Indemnity Clause
+                    Bank Deceased Claim Deal Indemnity Clause
                   </div>
                   <button
                     type="button"
@@ -1647,7 +1647,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Co-Operative Housing Society Flat Transmission Clause
+                    Co-Operative Housing Society Flat Transfer Clause
                   </div>
                   <button
                     type="button"
@@ -1680,7 +1680,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Legal Review &amp; Advocate Credentials
+                12. Legal Review &amp; Lawyer Credentials
               </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
@@ -1689,12 +1689,12 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Legal Editorial &amp; Succession Advocacy Bench
+                      WillDrafting.in Legal Editorial &amp; Estate Advocacy Bench
                     </div>
                   </div>
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold self-start sm:self-auto">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Advocates</span>
+                    <span>Bar Council Checked Lawyers</span>
                   </div>
                 </div>
 
@@ -1702,22 +1702,22 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   <div className="space-y-1.5">
                     <div className="font-bold text-slate-900 text-sm">Lead Reviewer</div>
                     <p className="leading-relaxed">
-                      Advocate Anuj Anand Malik, Senior Succession &amp; Testamentary Counsel, Bar Council of Delhi.
-                      Over 12 years representing families before High Courts and Revenue Authorities.
+                      Lawyer Anuj Anand Malik, Senior Estate &amp; Will Counsel, Bar Council of Delhi.
+                      Over 12 years representing families before High Courts and Revenue Offices.
                     </p>
                   </div>
                   <div className="space-y-1.5">
                     <div className="font-bold text-slate-900 text-sm">Practice Specialization</div>
                     <p className="leading-relaxed">
                       Indian Succession Act, Hindu Succession Act, High Court Probate Petitions, Tehsildar Legal Heir
-                      Certificates, Delhi SMC applications, and bank deceased claim settlements.
+                      Papers, Delhi SMC forms, and bank deceased claim settlements.
                     </p>
                   </div>
                   <div className="space-y-1.5">
-                    <div className="font-bold text-slate-900 text-sm">Statutory Vetting</div>
+                    <div className="font-bold text-slate-900 text-sm">Legal Vetting</div>
                     <p className="leading-relaxed">
                       Every template is strictly checked for compliance with the Bharatiya Sakshya Adhiniyam, 2023,
-                      Registration Act, 1908, and State Revenue Department circulars.
+                      Filing Act, 1908, and State Revenue Office circulars.
                     </p>
                   </div>
                 </div>
@@ -1771,7 +1771,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <span>AUTHORITATIVE SOURCES &amp; PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Statutory Citations &amp; Official Revenue Portals
+                14. Legal Citations &amp; Official Revenue Portals
               </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -1817,7 +1817,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 font-semibold border border-slate-200/60"
                   >
-                    <span>UP e-Sathi: Varashat Application</span>
+                    <span>UP e-Sathi: Varashat Form</span>
                     <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
                   </a>
                   <a
@@ -1833,20 +1833,20 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Calculators
+                    Related WillDrafting Guides &amp; Estate Tools
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/tools/succession-calculator"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Hindu Legal Heir Share Calculator
+                      Hindu Legal Heir Share Tool
                     </Link>
                     <Link
                       href="/tools/probate-court-fee-timeline-calculator"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Probate Court Fee Calculator
+                      Probate Court Fee Tool
                     </Link>
                     <Link
                       href="/tools/post-death-30-day-legal-compliance-tracker"
@@ -1864,7 +1864,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       href="/tools/capital-gains-tax-calculator-inherited-property"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Inherited Property Capital Gains Calculator
+                      Inherited Asset Capital Gains Tool
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1876,13 +1876,35 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Sub-Registrar Will Registration
+                      SRO Will Filing
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Matching Reference Theme)
@@ -1895,21 +1917,21 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Tehsildar legal heir certificates, High Court
-                probate petitions, and disputed intestate estate distributions.
+                Expert in Indian testamentary jurisprudence, Tehsildar legal heir papers, High Court
+                probate petitions, and disputed no-Will estate distributions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1923,11 +1945,11 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   <span>PREVENT LEGAL HEIR CERTIFICATE HEADACHES</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-white leading-snug">
-                  Protect Your Children from Intestate Succession Delays
+                  Protect Your Children from No-Will Estate Delays
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  When you die intestate, your family faces months of Tehsildar visits, notary affidavits, and bank
-                  scrutiny. A registered Will bypasses the need for legal heir certificates.
+                  When you die no-Will, your family faces months of Tehsildar visits, notary sworn notes, and bank
+                  scrutiny. A filed Will bypasses the need for legal heir papers.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1952,7 +1974,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   Facing Disputed Legal Heirship or Bank Claim Rejection?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates handle Delhi e-District SMC petitions, Gujarat Talati Pedhinamas,
+                  Our estate lawyers handle Delhi e-District SMC petitions, Gujarat Talati Pedhinamas,
                   Revenue Court Varashat mutations, and bank deceased claim releases pan-India.
                 </p>
                 <Link
@@ -1960,7 +1982,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <Scale className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1985,7 +2007,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Bank Deceased Ready:</strong> Complies with RBI deceased depositor settlement guidelines.
+                      <strong>Bank Deceased Ready:</strong> Complies with RBI deceased depositor deal guidelines.
                     </span>
                   </li>
                 </ul>
@@ -2002,7 +2024,7 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
           className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-full bg-slate-900 text-white text-xs font-bold shadow-sm"
         >
           <Calculator className="w-3.5 h-3.5" />
-          <span>Heir Calculator</span>
+          <span>Heir Tool</span>
         </a>
         <button
           onClick={handleStartDraft}

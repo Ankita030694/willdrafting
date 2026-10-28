@@ -136,7 +136,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-2",
     label: "Original Aadhaar Card & PAN of Will maker",
-    detail: "Needed for biometric fingerprinting and live web-camera photography before the Gujarat Sub-Registrar.",
+    detail: "Needed for biometric fingerprinting and live web-camera photography before the Gujarat SRO.",
     checked: true,
   },
   {
@@ -147,26 +147,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Signed by an active MBBS practitioner. Certifies sound mind and testamentary alertness to eliminate fight grounds.",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
+    detail: "Signed by an active MBBS practitioner. Certifies sound mind and Will alertness to eliminate fight grounds.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Garvi Gujarat Portal Appointment Receipt",
-    detail: "Official token receipt downloaded after online document entry and fee payment on garvi.gujarat.gov.in.",
+    detail: "Official token receipt downloaded after online paper entry and fee payment on garvi.gujarat.gov.in.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Property Chain Documents (AMC / AUDA / GIDC / 7/12)",
-    detail: "Copies of registered allotment deeds, share papers, or e-Dhara 7/12 extracts for precise asset ID.",
+    label: "Asset Chain Papers (AMC / AUDA / GIDC / 7/12)",
+    detail: "Copies of filed allotment deeds, share papers, or e-Dhara 7/12 extracts for precise asset ID.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs of Will maker & Witnesses",
-    detail: "Recent color photographs with white background for physical archiving in Sub-Registrar Book III records.",
+    detail: "Recent color photographs with white background for physical archiving in SRO Book III records.",
     checked: false,
   },
 ];
@@ -263,7 +263,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will in Ahmedabad. Master HUF joint family planning, family business succession, and Gujarat Sub-Registrar registration across Ahmedabad and Gandhinagar circles.
+                Draft a legally binding Will in Ahmedabad. Master HUF joint family planning, family business estate, and Gujarat SRO filing across Ahmedabad and Gandhinagar circles.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -352,7 +352,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rules
@@ -498,7 +498,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 55 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Ahmedabad
+                  Key Highlights: Will Making &amp; Filing in Ahmedabad
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-[#FAF7F0] border border-[#172228]/10 space-y-1.5">
@@ -507,7 +507,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <span>Non-Presidency Town Rules</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Court probate is not needed for assets in Ahmedabad and Gandhinagar. A registered Will allows direct name change with AMC and AUDA.
+                      Court probate is not needed for assets in Ahmedabad and Gandhinagar. A filed Will allows direct name change with AMC and AUDA.
                     </p>
                   </div>
 
@@ -517,7 +517,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <span>HUF &amp; Business Structuring</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ensure smooth succession for family firms, partnership deeds, GIDC factory plots, and separate personal assets from joint HUF joint family pool.
+                      Ensure smooth estate for family firms, partnership deeds, GIDC factory plots, and separate personal assets from joint HUF joint family pool.
                     </p>
                   </div>
 
@@ -527,7 +527,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty in Gujarat</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from stamp duty under the Gujarat Stamp Act. Testators pay only a flat nominal registration charge of ₹100.
+                      Wills are 100% exempt from stamp duty under the Gujarat Stamp Act. Will makers pay only a flat nominal filing charge of ₹100.
                     </p>
                   </div>
 
@@ -537,7 +537,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <span>Garvi Gujarat Portal Booking</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Appointments are booked online via garvi.gujarat.gov.in. Our team handles data entry, challans, and Sub-Registrar accompaniment.
+                      Appointments are booked online via garvi.gujarat.gov.in. Our team handles data entry, challans, and SRO accompaniment.
                     </p>
                   </div>
                 </div>
@@ -556,17 +556,17 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Ahmedabad
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Gujarat is governed by the Indian Succession Act, 1925, along with the personal laws of the Will maker. For Hindus, Jains, Sikhs, and Buddhists, the Hindu Succession Act, 1956 applies under the Mitakshara legal school.
+                  Estate in Gujarat is governed by the Indian Succession Act, 1925, along with the personal laws of the Will maker. For Hindus, Jains, Sikhs, and Buddhists, the Hindu Succession Act, 1956 applies under the Mitakshara legal school.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 space-y-5 shadow-xs">
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Under Section 59 of the Indian Succession Act, 1925, any person of sound mind who has attained the age of majority may dispose of their property by Will. In Gujarat, understanding property classification is essential. A Will maker possesses complete testamentary freedom over self-acquired real estate, shop investments, jewellery, and personal bank accounts.
+                  Under Section 59 of the Indian Succession Act, 1925, any person of sound mind who has attained the age of majority may dispose of their asset by Will. In Gujarat, understanding asset classification is essential. A Will maker possesses complete Will freedom over self-acquired real estate, shop investments, jewellery, and personal bank accounts.
                 </p>
 
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  However, family property held under a Hindu Undivided Family (HUF) follows joint family principles. Under Section 30 of the Hindu Succession Act, 1956, a coparcener can dispose of their undivided interest in HUF property through a Will. A Karta cannot bequeath the entire family estate to the exclusion of other rightful coparceners.
+                  However, family asset held under a Hindu Undivided Family (HUF) follows joint family principles. Under Section 30 of the Hindu Succession Act, 1956, a coparcener can dispose of their undivided interest in HUF asset through a Will. A Karta cannot bequeath the entire family estate to the exclusion of other rightful coparceners.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -574,9 +574,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <span className="block text-xs font-mono font-bold text-[#C65378] uppercase mb-1">
                       Section 59
                     </span>
-                    <h3 className="font-bold text-sm text-slate-900 mb-1">Testamentary Capacity</h3>
+                    <h3 className="font-bold text-sm text-slate-900 mb-1">Will Capacity</h3>
                     <p className="text-xs text-slate-600">
-                      The Will maker must understand the nature of the act, the property disposed, and the claims of natural heirs.
+                      The Will maker must understand the nature of the act, the asset disposed, and the claims of natural heirs.
                     </p>
                   </div>
 
@@ -596,7 +596,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </span>
                     <h3 className="font-bold text-sm text-slate-900 mb-1">Witness Disqualification</h3>
                     <p className="text-xs text-slate-600">
-                      A heir or their spouse cannot be an attesting witness. Any bequest to an attesting witness becomes void.
+                      A heir or their spouse cannot be an signing witness. Any bequest to an signing witness becomes void.
                     </p>
                   </div>
                 </div>
@@ -612,23 +612,23 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Ahmedabad?
+                  2. Is Will Filing Needed in Ahmedabad?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is optional across Gujarat. An unregistered Will drafted on standard paper is legally enforceable if validly signed by the Will maker before two competent witnesses.
+                  Under Section 18(e) of the Filing Act, 1908, the filing of a Will is a choice across Gujarat. An plain Will drafted on standard paper is legally enforceable if validly signed by the Will maker before two competent witnesses.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 space-y-6 shadow-xs">
                 <div className="space-y-3">
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    Why Estate Lawyers Strongly Recommend Registration in Gujarat
+                    Why Estate Lawyers Strongly Recommend Filing in Gujarat
                   </h3>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                    While not needed by statute, registering your Will at the Ahmedabad SRO office provides undeniable proof weight. When you register a Will through the Garvi Gujarat portal, the Sub-Registrar captures biometric thumbprints and digital photographs of both the Will maker and witnesses.
+                    While not needed by statute, registering your Will at the Ahmedabad SRO office provides undeniable proof weight. When you register a Will through the Garvi Gujarat portal, the SRO captures biometric thumbprints and digital photographs of both the Will maker and witnesses.
                   </p>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                    This official Book III government record makes it virtually impossible for disgruntled relatives to allege forgery, coercion, or imposture later. Also, municipal offices like the Ahmedabad Municipal Corporation (AMC) and AUDA require registered documents to mutate property titles smoothly.
+                    This official Book III government record makes it virtually impossible for disgruntled relatives to allege forgery, coercion, or imposture later. Also, city offices like the Ahmedabad City City Board (AMC) and AUDA require filed papers to mutate asset titles smoothly.
                   </p>
                 </div>
 
@@ -638,8 +638,8 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="p-3.5 sm:p-4 font-bold">Feature</th>
-                        <th className="p-3.5 sm:p-4 font-bold">Registered Will (Garvi Gujarat)</th>
-                        <th className="p-3.5 sm:p-4 font-bold">Unregistered Will (White Paper)</th>
+                        <th className="p-3.5 sm:p-4 font-bold">Filed Will (Garvi Gujarat)</th>
+                        <th className="p-3.5 sm:p-4 font-bold">Plain Will (White Paper)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -695,7 +695,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-6 h-6 text-[#C65378] shrink-0 mt-0.5" />
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-base">
-                      Probate Is Completely Optional in Gujarat
+                      Probate Is Completely A Choice in Gujarat
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                       Under Section 213(2) read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, needed probate applies strictly to historical presidency towns. Since Ahmedabad was never a presidency town, getting a court-issued probate is not a legal prerequisite to set up heir rights.
@@ -705,13 +705,13 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
 
                 <div className="space-y-3">
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    Gujarat High Court Precedents on Testamentary Title
+                    Gujarat High Court Precedents on Will Title
                   </h3>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                     The Gujarat High Court has repeatedly held that an executor or heir can assert their title over land and flats without getting letters of management or probate. This saves families 12 to 24 months of civil court proceedings and costly ad-valorem court fees.
                   </p>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                    However, if your Will bequeaths immovable assets situated within Mumbai city limits or South Mumbai areas, probate from the Bombay High Court remains needed for those specific assets, even if the Will maker resided and signed the Will in Ahmedabad.
+                    However, if your Will bequeaths land assets situated within Mumbai city limits or South Mumbai areas, probate from the Bombay High Court remains needed for those specific assets, even if the Will maker resided and signed the Will in Ahmedabad.
                   </p>
                 </div>
 
@@ -736,10 +736,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. HUF Assets &amp; Family Business Succession in Gujarat
+                  4. HUF Assets &amp; Family Business Estate in Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ahmedabad is Gujarat&apos;s financial and shop engine. Structuring succession for Hindu Undivided Family (HUF) assets, corporate shareholdings, and industrial units requires strategic legal drafting.
+                  Ahmedabad is Gujarat&apos;s financial and shop engine. Structuring estate for Hindu Undivided Family (HUF) assets, corporate shareholdings, and plant units requires strategic legal drafting.
                 </p>
               </div>
 
@@ -772,10 +772,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       GIDC Plots, Shares &amp; Partnerships
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ahmedabad business owners often hold equity in Private Limited companies, capital accounts in partnership firms, and industrial leasehold plots across GIDC industrial estates like Vatva, Naroda, Odhav, and Sanand.
+                      Ahmedabad business owners often hold equity in Private Limited companies, capital accounts in partnership firms, and plant leasehold plots across GIDC plant estates like Vatva, Naroda, Odhav, and Sanand.
                     </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Your Will must harmonize with company Articles of Association (AoA) and partnership deeds. We draft explicit share transfer and management succession clauses to prevent operational deadlock.
+                      Your Will must harmonize with company Articles of Association (AoA) and partnership deeds. We draft explicit share transfer and management estate clauses to prevent operational deadlock.
                     </p>
                   </div>
                 </div>
@@ -786,7 +786,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <span>Cross-Circle Assets: Ahmedabad &amp; Gandhinagar</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Many Ahmedabad business founders own shop offices along S.G. Highway or Sindhu Bhavan Road, factories in Sanand, and home plots in Gandhinagar or GIFT City. A single unified Will registered at any competent SRO office legally covers all assets across Gujarat and other Indian states.
+                    Many Ahmedabad business founders own shop offices along S.G. Highway or Sindhu Bhavan Road, factories in Sanand, and home plots in Gandhinagar or GIFT City. A single unified Will filed at any competent SRO office legally covers all assets across Gujarat and other Indian states.
                   </p>
                 </div>
               </div>
@@ -801,10 +801,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Ahmedabad Sub-Registrar Offices: District Directory
+                  5. Ahmedabad SRO Offices: District Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under the Inspector General of Registration (IGR Gujarat), Ahmedabad and Gandhinagar are organized into designated Sub-Registrar revenue zones. Find your relevant jurisdictional office below:
+                  Under the Inspector General of Filing (IGR Gujarat), Ahmedabad and Gandhinagar are organized into designated SRO revenue zones. Find your relevant local office below:
                 </p>
               </div>
 
@@ -898,7 +898,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   6. Area-Wise Will Drafting Services Across Ahmedabad Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Navrangpura, Bodakdev, SG Highway, or Bopal</strong>? Assets in Ahmedabad span historic pol houses, premium bungalows along Ambli Road, high-rise apartments in Bopal, and shop offices on S.G. Highway. Our lawyers provide tailored drafting and Garvi Gujarat help:
+                  Looking for legally checked <strong>Will drafting services in Navrangpura, Bodakdev, SG Highway, or Bopal</strong>? Assets in Ahmedabad span historic pol houses, premium bungalows along Ambli Road, high-rise apartments in Bopal, and shop offices on S.G. Highway. Our lawyers provide tailored drafting and Garvi Gujarat help:
                 </p>
               </div>
 
@@ -928,7 +928,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for professional <strong>Will drafting services in Navrangpura, CG Road &amp; Ellisbridge</strong>? Home to established Gujarati mercantile families, shop showrooms on CG Road, and heritage assets. We structure complex Wills addressing family business succession, partnership capital transfer, and AMC property tax name change.
+                      Looking for professional <strong>Will drafting services in Navrangpura, CG Road &amp; Ellisbridge</strong>? Home to established Gujarati mercantile families, shop showrooms on CG Road, and heritage assets. We structure complex Wills addressing family business estate, partnership capital transfer, and AMC asset tax name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -937,7 +937,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bahumali Bhavan, Drive-In Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Garvi Gujarat slot scheduling, lawyer representation, and Section 31 home visits for elderly testators across Navrangpura and Paldi.
+                        Garvi Gujarat slot scheduling, lawyer representation, and Section 31 home visits for elderly Will makers across Navrangpura and Paldi.
                       </p>
                     </div>
                   </div>
@@ -990,7 +990,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Memnagar Bahumali Bhavan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete token generation, doctor paper coordination, and fast biometric registration for Bodakdev and Satellite families.
+                        Complete token generation, doctor paper coordination, and fast biometric filing for Bodakdev and Satellite families.
                       </p>
                     </div>
                   </div>
@@ -1034,7 +1034,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services on Sindhu Bhavan Road &amp; SG Highway</strong>. Ahmedabad&apos;s corporate high-growth belt. We draft customized testamentary instruments for company founders, managing partners, and NRGs holding luxury shop units, family trusts, and multi-jurisdictional real estate.
+                      Opt for premier <strong>Will drafting services on Sindhu Bhavan Road &amp; SG Highway</strong>. Ahmedabad&apos;s corporate high-growth belt. We draft customized Will instruments for company founders, managing partners, and NRGs holding luxury shop units, family trusts, and multi-local real estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1043,7 +1043,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <span>Corporate Estate &amp; NRI Specialization</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Bespoke business succession blueprints, non-compete succession arrangements, and NRI power of attorney estate management.
+                        Bespoke business estate blueprints, non-compete estate arrangements, and NRI power of attorney estate management.
                       </p>
                     </div>
                   </div>
@@ -1096,7 +1096,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Daskroi Taluka Seva Sadan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Seamless Garvi Gujarat digital token generation and Daskroi Sub-Registrar registration with zero hassle.
+                        Seamless Garvi Gujarat digital token generation and Daskroi SRO filing with zero hassle.
                       </p>
                     </div>
                   </div>
@@ -1121,7 +1121,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South Industrial &amp; Home
+                        South Plant &amp; Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ahmedabad 4 (Maninagar)
@@ -1135,12 +1135,12 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Maninagar East &amp; West</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kankaria Lake Environs</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vatva GIDC Industrial Plots</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vatva GIDC Plant Plots</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Narol &amp; Isanpur</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting services in Maninagar, Kankaria &amp; Vatva</strong>. Traditional family neighborhoods alongside vital GIDC chemical and textile manufacturing hubs. We make sure explicit bequest clauses for industrial leasehold plots, factory equipment, and family home plots.
+                      Full <strong>Will drafting services in Maninagar, Kankaria &amp; Vatva</strong>. Traditional family neighborhoods alongside vital GIDC chemical and textile manufacturing hubs. We make sure explicit bequest clauses for plant leasehold plots, factory equipment, and family home plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1149,7 +1149,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Maninagar Civil Station Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Convenient SRO registration near Kankaria with dedicated lawyer help and document pre-check.
+                        Convenient SRO filing near Kankaria with dedicated lawyer help and paper pre-check.
                       </p>
                     </div>
                   </div>
@@ -1232,10 +1232,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 54 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Step-by-Step Garvi Gujarat Portal Will Registration
+                  7. Step-by-Step Garvi Gujarat Portal Will Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow our verified five-stage step to draft, execute, and register your Will under the Gujarat revenue system:
+                  Follow our checked five-stage step to draft, execute, and register your Will under the Gujarat revenue system:
                 </p>
               </div>
 
@@ -1247,7 +1247,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-2">
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Asset Inventory &amp; Legal Succession Structuring
+                      Asset Inventory &amp; Legal Estate Structuring
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                       Compile a complete list of your self-acquired assets, bank accounts, demat holdings, company shares, and HUF joint family share. Appoint an independent executor to administer your estate smoothly.
@@ -1280,7 +1280,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Garvi Gujarat Portal Entry &amp; E-Challan Payment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      We submit document data on the official Garvi Gujarat portal (garvi.gujarat.gov.in). We pay the nominal ₹100 registration fee via the Cyber Treasury portal and lock your chosen date and time slot at the jurisdictional SRO.
+                      We submit paper data on the official Garvi Gujarat portal (garvi.gujarat.gov.in). We pay the nominal ₹100 filing fee via the Cyber Treasury portal and lock your chosen date and time slot at the local SRO.
                     </p>
                   </div>
                 </div>
@@ -1295,7 +1295,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Biometric Capture at Ahmedabad SRO office
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      On the appointment day, the Will maker and both witnesses visit the SRO office with our lawyer. The registration officer verifies original Aadhaar cards, captures digital photographs, and records biometric fingerprints.
+                      On the appointment day, the Will maker and both witnesses visit the SRO office with our lawyer. The filing officer verifies original Aadhaar cards, captures digital photographs, and records biometric fingerprints.
                     </p>
                   </div>
                 </div>
@@ -1310,7 +1310,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Official Book III Endorsement &amp; Will Collection
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      The Sub-Registrar endorses the official registration stamp and scans the document into government Book III archives. The original registered Will, bearing official seals and registration numbers, is handed back to the Will maker.
+                      The SRO endorses the official filing stamp and scans the paper into government Book III archives. The original filed Will, bearing official seals and filing numbers, is handed back to the Will maker.
                     </p>
                   </div>
                 </div>
@@ -1326,23 +1326,23 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Doorstep Registration for Seniors
+                  8. Section 31 Doorstep Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden testators, or hospital-admitted people who cannot visit an SRO in person, the law offers a compassionate doorstep rule:
+                  For senior citizens, bedridden Will makers, or hospital-admitted people who cannot visit an SRO in person, the law offers a compassionate doorstep rule:
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 space-y-5 shadow-xs">
                 <div className="space-y-3">
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    How Home Registration Operates in Ahmedabad
+                    How Home Filing Operates in Ahmedabad
                   </h3>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                    Under Section 31 of the Registration Act, 1908, the Sub-Registrar has the legal discretion to attend at the private residence or hospital of any person desiring to present or execute a Will. An form is submitted outlining the medical condition of the Will maker, accompanied by an MBBS doctor&apos;s paper.
+                    Under Section 31 of the Filing Act, 1908, the SRO has the legal discretion to attend at the private residence or hospital of any person desiring to present or execute a Will. An form is submitted outlining the medical condition of the Will maker, accompanied by an MBBS doctor&apos;s paper.
                   </p>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                    Upon approval and payment of government commission and conveyance fees, the Sub-Registrar visits your home in Ahmedabad or Gandhinagar with portable biometric equipment. The signing and thumbprints are recorded at your bedside, making sure total legal sanctity without physical discomfort.
+                    Upon approval and payment of government commission and conveyance fees, the SRO visits your home in Ahmedabad or Gandhinagar with portable biometric equipment. The signing and thumbprints are recorded at your bedside, making sure total legal sanctity without physical discomfort.
                   </p>
                 </div>
 
@@ -1364,8 +1364,8 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </span>
                     <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                       <li>Drafting and filing the Section 31 requisition letter.</li>
-                      <li>Liaison with jurisdictional Sub-Registrar and SDM.</li>
-                      <li>Full lawyer presence during the home registration visit.</li>
+                      <li>Liaison with local SRO and SDM.</li>
+                      <li>Full lawyer presence during the home filing visit.</li>
                     </ul>
                   </div>
                 </div>
@@ -1381,10 +1381,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 48 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Documents Checklist for Gujarat Sub-Registrar
+                  9. Papers Checklist for Gujarat SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Carry these verified documents to your Ahmedabad Sub-Registrar appointment. Use our interactive checklist to track your preparation:
+                  Carry these checked papers to your Ahmedabad SRO appointment. Use our free checklist to track your preparation:
                 </p>
               </div>
 
@@ -1434,7 +1434,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Ahmedabad Property Types: Freehold, HUF &amp; GIDC
+                  10. Ahmedabad Asset Types: Freehold, HUF &amp; GIDC
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in the Ahmedabad metropolitan region encompasses unique legal frameworks requiring careful legal drafting:
@@ -1452,7 +1452,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     Cooperative Societies &amp; Freehold Apartments
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Most apartments across Navrangpura, Satellite, and Bopal are organized under the Gujarat Co-operative Societies Act, 1961. While cooperative societies maintain share paper nominee records, the Supreme Court has clarified that nominees are merely custodians. A registered Will ensures absolute ownership passes directly to your intended heir.
+                    Most apartments across Navrangpura, Satellite, and Bopal are organized under the Gujarat Co-operative Societies Act, 1961. While cooperative societies maintain share paper nominee records, the Supreme Court has clarified that nominees are merely custodians. A filed Will ensures absolute ownership passes directly to your intended heir.
                   </p>
                 </div>
 
@@ -1460,13 +1460,13 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 space-y-3 shadow-xs">
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                     <Briefcase className="w-4 h-4 text-[#C65378]" />
-                    <span>GIDC Industrial Estates</span>
+                    <span>GIDC Plant Estates</span>
                   </div>
                   <h3 className="font-extrabold text-base sm:text-lg text-slate-900">
-                    Industrial Plots in Vatva, Naroda &amp; Odhav
+                    Plant Plots in Vatva, Naroda &amp; Odhav
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Industrial land allotted by the Gujarat Industrial Development Corporation (GIDC) is typically held on a 99-year leasehold basis. Your Will must reference the lease deed date, plot allotment letter, and comply with GIDC transfer norms to prevent forfeiture or heavy office transfer penalties.
+                    Plant land allotted by the Gujarat Plant Development City Board (GIDC) is typically held on a 99-year leasehold basis. Your Will must reference the lease deed date, plot allotment letter, and comply with GIDC transfer norms to prevent forfeiture or heavy office transfer penalties.
                   </p>
                 </div>
 
@@ -1480,7 +1480,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     Gujarat Tenancy Act &amp; Farmer Status
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 63 of the Gujarat Tenancy and Farm Lands Act, 1948, non-farmers cannot hold farm land. While testamentary succession allows inheritance by natural heirs, bequeathing farm land to a non-agriculturist outsider can attract revenue scrutiny. We make sure strict compliance with e-Dhara name change rules.
+                    Under Section 63 of the Gujarat Tenancy and Farm Lands Act, 1948, non-farmers cannot hold farm land. While Will estate allows estate by natural heirs, bequeathing farm land to a non-agriculturist outsider can attract revenue scrutiny. We make sure strict compliance with e-Dhara name change rules.
                   </p>
                 </div>
 
@@ -1494,7 +1494,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     SBR Towers, Manek Chowk &amp; Demat Portfolios
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Shop assets in Sindhu Bhavan Road high-rises or family wholesale shops in Manek Chowk and Relief Road yield substantial rental revenues. We incorporate explicit tenancy inheritance clauses and demat share transfer directions.
+                    Shop assets in Sindhu Bhavan Road high-rises or family wholesale shops in Manek Chowk and Relief Road yield substantial rental revenues. We incorporate explicit tenancy estate clauses and demat share transfer directions.
                   </p>
                 </div>
               </div>
@@ -1509,7 +1509,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. Official Gujarat Stamp Duty &amp; Registration Fees
+                  11. Official Gujarat Stamp Duty &amp; Filing Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the greatest legal benefits of creating a Will in Gujarat is its complete exemption from ad-valorem stamp duty:
@@ -1523,7 +1523,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <tr>
                         <th className="p-3.5 sm:p-4 font-bold">Expense Head</th>
                         <th className="p-3.5 sm:p-4 font-bold">Government Prescribed Rate</th>
-                        <th className="p-3.5 sm:p-4 font-bold">Legal Authority &amp; Notes</th>
+                        <th className="p-3.5 sm:p-4 font-bold">Legal Office &amp; Notes</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1533,9 +1533,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                         <td className="p-3.5 sm:p-4">Gujarat Stamp Act, 1958 (Article 64 exemption for Wills)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Government Registration Fee</td>
+                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Government Filing Fee</td>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">₹100 (Flat Nominal Fee)</td>
-                        <td className="p-3.5 sm:p-4">Gujarat Registration Rules (Paid online via Garvi portal)</td>
+                        <td className="p-3.5 sm:p-4">Gujarat Filing Rules (Paid online via Garvi portal)</td>
                       </tr>
                       <tr className="hover:bg-slate-50">
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Computer &amp; Scanning Fee</td>
@@ -1545,14 +1545,14 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       <tr className="hover:bg-slate-50">
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Section 31 Home Visit Commission</td>
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-800">Govt. Travel &amp; Commission Fee</td>
-                        <td className="p-3.5 sm:p-4">Applicable only when Sub-Registrar visits private residence</td>
+                        <td className="p-3.5 sm:p-4">Applicable only when SRO visits private residence</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  <strong className="text-slate-900">Financial Planning Tip:</strong> Registering a Gift Deed in Gujarat attracts heavy stamp duty (up to 4.9% for non-family) plus 1% registration fees. In contrast, bequeathing property through a Will involves zero stamp duty and ₹100 in registration fees, making it the most cost-effective estate succession method in India.
+                  <strong className="text-slate-900">Financial Planning Tip:</strong> Registering a Gift Deed in Gujarat attracts heavy stamp duty (up to 4.9% for non-family) plus 1% filing fees. In contrast, bequeathing asset through a Will involves zero stamp duty and ₹100 in filing fees, making it the most cost-effective estate estate method in India.
                 </div>
               </div>
             </section>
@@ -1581,7 +1581,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       TIER 1 · ONLINE DRAFT
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Standard Individual Will
+                      Standard Single Will
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹1,990
@@ -1645,7 +1645,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Business succession &amp; partnership shares</span>
+                        <span>Business estate &amp; partnership shares</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1725,7 +1725,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   13. Frequently Asked Questions: Ahmedabad Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Answers to common legal questions regarding Will drafting, HUF assets, and Garvi Gujarat Sub-Registrar registration:
+                  Answers to common legal questions regarding Will drafting, HUF assets, and Garvi Gujarat SRO filing:
                 </p>
               </div>
 
@@ -1784,16 +1784,16 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Indian Succession Act, 1925
                     </strong>
                     <p className="text-xs text-slate-600">
-                      Sections 59, 63, 67, 213, and 57 (Sound mind, signing, attestation, and non-presidency probate exceptions).
+                      Sections 59, 63, 67, 213, and 57 (Sound mind, signing, witness signing, and non-presidency probate exceptions).
                     </p>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                     <strong className="text-slate-900 block font-bold">
-                      Registration Act, 1908
+                      Filing Act, 1908
                     </strong>
                     <p className="text-xs text-slate-600">
-                      Section 18(e) (Optional registration of Wills) and Section 31 (Registration at private residence by Sub-Registrar).
+                      Section 18(e) (A Choice filing of Wills) and Section 31 (Filing at private residence by SRO).
                     </p>
                   </div>
 
@@ -1802,7 +1802,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Hindu Succession Act, 1956
                     </strong>
                     <p className="text-xs text-slate-600">
-                      Section 30 (Will of joint family interest in HUF property under Mitakshara law).
+                      Section 30 (Will of joint family interest in HUF asset under Mitakshara law).
                     </p>
                   </div>
 
@@ -1811,7 +1811,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                       Official Gujarat Revenue Portals
                     </strong>
                     <p className="text-xs text-slate-600">
-                      Garvi Gujarat Registration Portal (garvi.gujarat.gov.in) &amp; AnyROR e-Dhara Land Records (anyror.gujarat.gov.in).
+                      Garvi Gujarat Filing Portal (garvi.gujarat.gov.in) &amp; AnyROR e-Dhara Land Records (anyror.gujarat.gov.in).
                     </p>
                   </div>
                 </div>
@@ -1824,7 +1824,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 Protect Your Ahmedabad Assets &amp; Family Legacy Today
               </h3>
               <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                Prevent bitter court battles and safeguard your hard-earned assets. Draft a legally verified Will with expert Gujarat High Court estate lawyers in less than 20 minutes.
+                Prevent bitter court battles and safeguard your hard-earned assets. Draft a legally checked Will with expert Gujarat High Court estate lawyers in less than 20 minutes.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1845,7 +1845,29 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 
@@ -1866,7 +1888,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
               <span className="text-xs sm:text-sm font-bold text-white flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#C65378]" />
-                Visual Blueprint: Will Drafting &amp; Business Succession in Ahmedabad
+                Visual Blueprint: Will Drafting &amp; Business Estate in Ahmedabad
               </span>
               <button
                 type="button"

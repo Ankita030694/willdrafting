@@ -150,7 +150,7 @@ export default function PatnaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Patna: Online Will Registration Guide",
         description:
-          "Draft a legally binding Will in Patna. Clear guidance on Bihar land records, Sub-Registrar registration, and ancestral property succession rules.",
+          "Draft a legally binding Will in Patna. Clear guidance on Bihar land records, SRO filing, and family asset estate rules.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -197,7 +197,7 @@ export default function PatnaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Patna - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, and Sub-Registrar Office e-registration support across Patna district and Bihar.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across Patna district and Bihar.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -267,38 +267,38 @@ export default function PatnaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Patna Bihar",
         description:
-          "Five clear steps to create a legally binding Will and register it via Bihar e-Nibandhan before the Sub-Registrar in Patna.",
+          "Five clear steps to create a legally binding Will and register it via Bihar e-Nibandhan before the SRO in Patna.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets, Khatiyan Details & Beneficiaries",
-            text: "List your Patna properties including PMC houses, PRDA plots, ancestral Khatiyan shares, bank accounts, and demat folios. Nominate your beneficiaries and executor.",
+            text: "List your Patna assets including PMC houses, PRDA plots, family Khatiyan shares, bank accounts, and demat folios. Nominate your heirs and executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Bihar Specific Legal Clauses",
-            text: "Draft your Will using our online legal platform or with a senior succession advocate to include clear revocation, survivorship, and specific asset distribution clauses.",
+            text: "Draft your Will using our online legal platform or with a senior estate lawyer to include clear revocation, survivorship, and specific asset split clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain white A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain white A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Patna SRO Appointment on Bihar e-Nibandhan",
-            text: "Book an e-appointment on the Bihar e-Nibandhan portal (biharregservices.gov.in) for your local Sub-Registrar office and generate the official e-challan.",
+            text: "Book an e-appointment on the Bihar e-Nibandhan portal (biharregservices.gov.in) for your local SRO office and generate the official e-challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

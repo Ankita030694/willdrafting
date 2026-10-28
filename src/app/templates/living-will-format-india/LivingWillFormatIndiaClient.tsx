@@ -46,7 +46,7 @@ const TOC_ITEMS = [
   { id: "comparison-matrix", label: "8. 2018 vs 2023: What Changed?" },
   { id: "procedural-timeline", label: "9. Hospital Review Process" },
   { id: "specialized-scenarios", label: "10. Dementia, Pain Relief & Organs" },
-  { id: "institutional-backing", label: "11. Lawyer Verified & Trusted" },
+  { id: "institutional-backing", label: "11. Lawyer Checked & Trusted" },
   { id: "frequently-asked-questions", label: "12. Questions People Often Ask" },
   { id: "statutory-citations", label: "13. Official Legal References" },
 ];
@@ -185,7 +185,7 @@ const CHECKLIST_ITEMS = [
   {
     id: "check-1",
     label: "You are 18+ and Thinking Clearly",
-    subtext: "You understand your choices and are making this document of your own free choice.",
+    subtext: "You understand your choices and are making this paper of your own free choice.",
   },
   {
     id: "check-2",
@@ -225,7 +225,7 @@ const FAQS = [
   },
   {
     q: "Do I need stamp paper for a Living Will?",
-    a: "No stamp paper is needed. Under the Indian Stamp Act, 1899, stamp duty only applies to buying property or commercial agreements. Personal health directives like a Living Will carry zero stamp duty and can be printed on normal white A4 paper.",
+    a: "No stamp paper is needed. Under the Indian Stamp Act, 1899, stamp duty only applies to buying asset or shop agreements. Personal health directives like a Living Will carry zero stamp duty and can be printed on normal white A4 paper.",
   },
   {
     q: "Who can be my two witnesses?",
@@ -244,7 +244,7 @@ const FAQS = [
     a: "Yes, at any time. As long as you are healthy and thinking clearly, you can cancel your Living Will simply by writing a note or making a fresh one.",
   },
   {
-    q: "How is a Living Will different from a regular property Will?",
+    q: "How is a Living Will different from a regular asset Will?",
     a: "A regular Will deals with who gets your flat, money, and assets after your death. A Living Will (Advance Medical Directive) deals with your medical treatment choices while you are alive but unconscious. Everyone should have both.",
   },
   {
@@ -253,7 +253,7 @@ const FAQS = [
   },
   {
     q: "Where should I keep copies of my Living Will?",
-    a: "Keep the original safely at home. Give a signed copy to your healthcare proxy and your family doctor so they have it immediately during an emergency. You can also save a photo/PDF on your phone or link it to your Ayushman Bharat Health Account (ABHA).",
+    a: "Keep the original safely at home. Give a signed copy to your healthcare proxy and your family doctor so they have it right away during an emergency. You can also save a photo/PDF on your phone or link it to your Ayushman Bharat Health Account (ABHA).",
   },
 ];
 
@@ -351,7 +351,7 @@ export default function LivingWillFormatIndiaClient() {
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Download our free, advocate-drafted Living Will format updated for the January 2023 Supreme Court order. Learn notary attestation rules, medical board procedures, and protect your dignity.
+            Download our free, lawyer-drafted Living Will format updated for the January 2023 Supreme Court order. Learn notary witness signing rules, medical board steps, and protect your dignity.
           </p>
 
           {/* CTA Buttons */}
@@ -406,7 +406,7 @@ export default function LivingWillFormatIndiaClient() {
                 2023 Rules
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                SC Order Verified
+                SC Order Checked
               </span>
             </div>
 
@@ -491,7 +491,7 @@ export default function LivingWillFormatIndiaClient() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Constitutional Authority</span>
+                <span>Constitutional Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Drafted under Article 21 of the Indian Constitution & Supreme Court Order in Common Cause (M.A. 1699/2019).
@@ -552,7 +552,7 @@ export default function LivingWillFormatIndiaClient() {
                 1. What is a Living Will and Is It Legal in India?
               </h2>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                A Living Will (also called an Advance Medical Directive) is a legal document where you state your medical treatment choices in advance. If you ever become critically ill, slip into an irreversible coma, or are kept alive only on artificial machines with zero hope of recovery, this document tells doctors what you want.
+                A Living Will (also called an Advance Medical Directive) is a legal paper where you state your medical treatment choices in advance. If you ever become critically ill, slip into an irreversible coma, or are kept alive only on artificial machines with zero hope of recovery, this paper tells doctors what you want.
               </p>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 In a landmark ruling, the Supreme Court of India declared that every citizen has a constitutional right to live and die with dignity under Article 21. You have the right to refuse painful, artificial life-support machines if death is natural and unavoidable.
@@ -562,7 +562,7 @@ export default function LivingWillFormatIndiaClient() {
                   How the Supreme Court Simplified the Process in 2023
                 </p>
                 <p>
-                  Recognizing these bottlenecks, on 24 January 2023, a Constitution Bench headed by Justice K.M. Joseph simplified the entire procedure. Citizens no longer need to approach a magistrate to execute a Living Will. Attestation by a practicing Notary Public or Gazetted Officer is now sufficient, making the process fast, accessible, and practical.
+                  Recognizing these bottlenecks, on 24 January 2023, a Constitution Bench headed by Justice K.M. Joseph simplified the entire step. Citizens no longer need to approach a magistrate to execute a Living Will. Witness Signing by a practicing Notary Public or Gazetted Officer is now sufficient, making the process fast, accessible, and practical.
                 </p>
               </div>
             </section>
@@ -574,10 +574,10 @@ export default function LivingWillFormatIndiaClient() {
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Statutory Checklist: Advance Medical Directive Validity
+                2. Legal Checklist: Advance Medical Directive Validity
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Before printing your Living Will, review these statutory essentials. Check each item to confirm that your document adheres to current Indian legal standards.
+                Before printing your Living Will, review these legal essentials. Check each item to confirm that your paper adheres to current Indian legal standards.
               </p>
 
               {/* Checklist Box */}
@@ -622,7 +622,7 @@ export default function LivingWillFormatIndiaClient() {
                   <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-2.5 text-xs text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>
-                      Excellent. Your Advance Medical Directive satisfies all statutory criteria laid down by the Supreme Court of India.
+                      Excellent. Your Advance Medical Directive satisfies all legal criteria laid down by the Supreme Court of India.
                     </span>
                   </div>
                 ) : (
@@ -646,7 +646,7 @@ export default function LivingWillFormatIndiaClient() {
                 3. Clause-Annotated Living Will Format for India
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Below is a comprehensive, advocate-approved Living Will template aligned with the 2023 Supreme Court guidelines. You can copy the text or print it directly on standard paper.
+                Below is a full, lawyer-approved Living Will template aligned with the 2023 Supreme Court guidelines. You can copy the text or print it directly on standard paper.
               </p>
 
               {/* Template Container with Copy & Print Toolbar */}
@@ -693,7 +693,7 @@ export default function LivingWillFormatIndiaClient() {
 
                 <div className="p-4 bg-rose-50/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
                   <span className="text-center sm:text-left">
-                    Need a comprehensive estate plan covering both your Living Will and property Will?
+                    Need a full estate plan covering both your Living Will and asset Will?
                   </span>
                   <a
                     href="/start"
@@ -740,17 +740,17 @@ export default function LivingWillFormatIndiaClient() {
                 4. Surrogate Healthcare Decision-Maker Legal Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                A Living Will cannot enforce itself. When a patient falls into a coma or persistent vegetative state, someone must physically deliver the document to the hospital administration and advocate for the patient. This role is performed by the <strong>Surrogate Decision-Maker</strong>.
+                A Living Will cannot enforce itself. When a patient falls into a coma or persistent vegetative state, someone must physically deliver the paper to the hospital care and lawyer for the patient. This role is performed by the <strong>Surrogate Decision-Maker</strong>.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <UserCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Primary Surrogate Authority</span>
+                    <span>Primary Surrogate Office</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The primary surrogate is typically a spouse, adult child, or trusted companion. They possess the legal authority to give written consent for withholding or withdrawing futile treatment and to review medical charts.
+                    The primary surrogate is typically a spouse, adult child, or trusted companion. They possess the legal office to give written consent for withholding or withdrawing futile treatment and to review medical charts.
                   </p>
                 </div>
 
@@ -780,7 +780,7 @@ export default function LivingWillFormatIndiaClient() {
                     <span>Protection Against Financial Exploitation</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Surrogate powers are strictly confined to medical choices. The surrogate holds zero authority over bank accounts or real estate, protecting the declarant from property fraud.
+                    Surrogate powers are strictly confined to medical choices. The surrogate holds zero office over bank accounts or real estate, protecting the declarant from asset fraud.
                   </p>
                 </div>
               </div>
@@ -793,10 +793,10 @@ export default function LivingWillFormatIndiaClient() {
                 <span>SECTION 5: VISUAL BLUEPRINT</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Visual Blueprint: Living Will Execution & Review SOP
+                5. Visual Blueprint: Living Will Signing & Review SOP
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Executing and activating an Advance Medical Directive involves a two-phase protocol. The diagram below illustrates the complete statutory workflow under the 2023 Supreme Court guidelines.
+                Signing and activating an Advance Medical Directive involves a two-phase protocol. The diagram below illustrates the complete legal workflow under the 2023 Supreme Court guidelines.
               </p>
 
               {/* Responsive Container for Blueprint Image */}
@@ -813,7 +813,7 @@ export default function LivingWillFormatIndiaClient() {
                 </div>
                 <div className="px-4 py-3 sm:px-5 sm:py-3.5 bg-slate-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-200">
                   <span className="font-medium text-slate-700">
-                    Figure 1.1: Supreme Court of India 2023 procedure for Living Will execution and hospital panels
+                    Figure 1.1: Supreme Court of India 2023 step for Living Will signing and hospital panels
                   </span>
                   <Link
                     href="/images/living-will-process-infographic.svg"
@@ -837,7 +837,7 @@ export default function LivingWillFormatIndiaClient() {
                 6. Step-by-Step SOP: Six Stages from Drafting to Activation
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Executing an Advance Medical Directive does not require complex litigation. Follow these six progressive milestones to ensure your directive is legally water-tight.
+                Signing an Advance Medical Directive does not require complex court fights. Follow these six progressive milestones to ensure your directive is legally water-tight.
               </p>
 
               <div className="space-y-3.5">
@@ -850,7 +850,7 @@ export default function LivingWillFormatIndiaClient() {
                   {
                     step: "2",
                     title: "Appointing Primary and Alternate Surrogates",
-                    desc: "Designate two responsible individuals who understand your values and can represent your interests before doctors when you cannot communicate.",
+                    desc: "Designate two responsible people who understand your values and can represent your interests before doctors when you cannot communicate.",
                   },
                   {
                     step: "3",
@@ -860,12 +860,12 @@ export default function LivingWillFormatIndiaClient() {
                   {
                     step: "4",
                     title: "Attestation by a Notary Public or Gazetted Officer",
-                    desc: "Appear before a practicing Notary Public or Gazetted Officer. They record their official satisfaction that execution was voluntary. No JMFC visit needed.",
+                    desc: "Appear before a practicing Notary Public or Gazetted Officer. They record their official satisfaction that signing was voluntary. No JMFC visit needed.",
                   },
                   {
                     step: "5",
                     title: "Deposit Copies with Custodians and Family Doctor",
-                    desc: "Give certified copies to your surrogates and family doctor. Deposit a copy with the local municipal authority or integrate it into your ABHA digital health record.",
+                    desc: "Give certified copies to your surrogates and family doctor. Deposit a copy with the local city office or integrate it into your ABHA digital health record.",
                   },
                   {
                     step: "6",
@@ -899,7 +899,7 @@ export default function LivingWillFormatIndiaClient() {
                 7. Three Critical DIY Mistakes in Indian Living Wills
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Because living wills are relatively new in India, drafting errors are frequent. Avoid these three fatal pitfalls when creating your document.
+                Because living wills are relatively new in India, drafting errors are frequent. Avoid these three fatal pitfalls when creating your paper.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -911,7 +911,7 @@ export default function LivingWillFormatIndiaClient() {
                     Following Outdated 2018 Magistrate Rules
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Many outdated online templates still state that a Judicial Magistrate must countersign the directive. Following this obsolete procedure leads to wasted time and court rejections.
+                    Many outdated online templates still state that a Judicial Magistrate must countersign the directive. Following this obsolete step leads to wasted time and court rejections.
                   </p>
                 </div>
 
@@ -920,10 +920,10 @@ export default function LivingWillFormatIndiaClient() {
                     #2
                   </div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Mixing Medical Directives with Property Wills
+                    Mixing Medical Directives with Asset Wills
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Never combine your Advance Medical Directive and your property distribution into a single document. Property wills only take effect post-mortem, while living wills operate during life.
+                    Never combine your Advance Medical Directive and your asset split into a single paper. Asset wills only take effect post-mortem, while living wills operate during life.
                   </p>
                 </div>
 
@@ -951,7 +951,7 @@ export default function LivingWillFormatIndiaClient() {
                 8. Comparative Matrix: 2018 Judgment vs 2023 Modified Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Examine the profound differences between the original 2018 guidelines and the 2023 Supreme Court modifications that made living wills genuinely accessible.
+                Examine the profound differences between the original 2018 guidelines and the 2023 Supreme Court changes that made living wills genuinely accessible.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -965,14 +965,14 @@ export default function LivingWillFormatIndiaClient() {
                   </thead>
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/70">
-                      <td className="p-3.5 font-bold text-slate-900">Execution & Attestation</td>
-                      <td className="p-3.5 text-rose-700">Compulsory countersigning by JMFC</td>
-                      <td className="p-3.5 text-emerald-600 font-semibold">Attestation by Notary or Gazetted Officer</td>
+                      <td className="p-3.5 font-bold text-slate-900">Signing & Witness Signing</td>
+                      <td className="p-3.5 text-rose-700">Needed countersigning by JMFC</td>
+                      <td className="p-3.5 text-emerald-600 font-semibold">Witness Signing by Notary or Gazetted Officer</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Hospital Primary Board</td>
-                      <td className="p-3.5">Treating doctor + 3 specialists (20+ yrs)</td>
-                      <td className="p-3.5 text-emerald-600 font-semibold">Treating doctor + 2 specialists (5+ yrs)</td>
+                      <td className="p-3.5">Treating doctor + 3 experts (20+ yrs)</td>
+                      <td className="p-3.5 text-emerald-600 font-semibold">Treating doctor + 2 experts (5+ yrs)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Secondary Medical Board</td>
@@ -992,7 +992,7 @@ export default function LivingWillFormatIndiaClient() {
                     <tr className="hover:bg-slate-50/70">
                       <td className="p-3.5 font-bold text-slate-900">Digital Registry Custody</td>
                       <td className="p-3.5">Physical custody with District Court registry</td>
-                      <td className="p-3.5 text-emerald-600 font-semibold">Local municipal records & digital health accounts (ABHA)</td>
+                      <td className="p-3.5 text-emerald-600 font-semibold">Local city records & digital health accounts (ABHA)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1009,7 +1009,7 @@ export default function LivingWillFormatIndiaClient() {
                 9. Procedural Timeline: Primary and Secondary Medical Boards
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding the hospital activation timeline gives peace of mind that a patient will not be left to suffer prolonged invasive procedures against their will.
+                Understanding the hospital activation timeline gives peace of mind that a patient will not be left to suffer prolonged invasive steps against their will.
               </p>
 
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs bg-white">
@@ -1018,7 +1018,7 @@ export default function LivingWillFormatIndiaClient() {
                     <tr>
                       <th className="p-3">Stage</th>
                       <th className="p-3">Action Item</th>
-                      <th className="p-3">Statutory Panel</th>
+                      <th className="p-3">Legal Panel</th>
                       <th className="p-3">Mandated Timeline</th>
                     </tr>
                   </thead>
@@ -1032,19 +1032,19 @@ export default function LivingWillFormatIndiaClient() {
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 2</td>
                       <td className="p-3">Primary Medical Board Examination</td>
-                      <td className="p-3 font-mono text-xs">Treating Doctor + 2 Specialists</td>
+                      <td className="p-3 font-mono text-xs">Treating Doctor + 2 Experts</td>
                       <td className="p-3 font-semibold">Within 48 Hours</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 3</td>
                       <td className="p-3">Secondary Medical Board Concurrence</td>
-                      <td className="p-3 font-mono text-xs">CMO Nominee + 2 Specialists</td>
+                      <td className="p-3 font-mono text-xs">CMO Nominee + 2 Experts</td>
                       <td className="p-3 font-semibold">Within 48 Hours</td>
                     </tr>
                     <tr>
                       <td className="p-3 font-semibold text-slate-900">Stage 4</td>
                       <td className="p-3">Intimation Sent to Judicial Magistrate</td>
-                      <td className="p-3 font-mono text-xs">Jurisdictional JMFC</td>
+                      <td className="p-3 font-mono text-xs">Local JMFC</td>
                       <td className="p-3">Same Day (Information Only)</td>
                     </tr>
                     <tr>
@@ -1075,10 +1075,10 @@ export default function LivingWillFormatIndiaClient() {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <HeartPulse className="w-4 h-4 text-[#C65378]" />
-                    <span>Living Will vs Regular Property Will</span>
+                    <span>Living Will vs Regular Asset Will</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A property Will governs who inherits your assets after death. A Living Will protects your bodily autonomy while alive. Both are vital components of a complete estate plan.
+                    A asset Will governs who inherits your assets after death. A Living Will protects your bodily autonomy while alive. Both are vital components of a complete estate plan.
                   </p>
                 </div>
 
@@ -1088,7 +1088,7 @@ export default function LivingWillFormatIndiaClient() {
                     <span>Early-Stage Dementia & Alzheimer&apos;s</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A Living Will must be executed while you are mentally sound. Individuals in early stages of cognitive decline should execute their directive immediately, alongside a doctor&apos;s fitness certificate.
+                    A Living Will must be signed while you are mentally sound. People in early stages of cognitive decline should execute their directive right away, alongside a doctor&apos;s fitness paper.
                   </p>
                 </div>
 
@@ -1138,7 +1138,7 @@ export default function LivingWillFormatIndiaClient() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Every legal template, clause annotation, and workflow on WillDrafting.in is designed and verified by senior succession advocates from AMA Legal Solutions. We ensure strict compliance with constitutional precedents, the Indian Succession Act, and the latest Supreme Court modified guidelines.
+                  Every legal template, clause annotation, and workflow on WillDrafting.in is designed and checked by senior estate lawyers from AMA Legal Solutions. We ensure strict compliance with constitutional precedents, the Indian Succession Act, and the latest Supreme Court modified guidelines.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -1148,7 +1148,7 @@ export default function LivingWillFormatIndiaClient() {
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Zero Stamp Duty</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Statutory Exemption</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Legal Exemption</div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-xl text-center">
                     <div className="font-extrabold text-slate-900 text-sm">Court Ready PDF</div>
@@ -1168,7 +1168,7 @@ export default function LivingWillFormatIndiaClient() {
                 Frequently Asked Questions: Living Wills in India
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Find clear answers to common questions about executing, witnessing, and enforcing an Advance Medical Directive in India.
+                Find clear answers to common questions about signing, witnessing, and enforcing an Advance Medical Directive in India.
               </p>
 
               <div className="space-y-3">
@@ -1206,7 +1206,7 @@ export default function LivingWillFormatIndiaClient() {
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
               <h3 className="text-lg font-bold text-slate-900">
-                Statutory Citations: Supreme Court Orders and Article 21
+                Legal Citations: Supreme Court Orders and Article 21
               </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
@@ -1216,10 +1216,10 @@ export default function LivingWillFormatIndiaClient() {
                   <strong>Supreme Court of India:</strong> <em>Common Cause (A Regd. Society) v. Union of India (2018) 5 SCC 1</em> (Constitution Bench recognized validity of Living Wills and passive euthanasia).
                 </li>
                 <li>
-                  <strong>Supreme Court of India (Order dated 24 January 2023):</strong> <em>Miscellaneous Application No. 1699 of 2019 in Writ Petition (Civil) No. 215 of 2005</em> (Simplified procedure, substituted JMFC with Notary/Gazetted Officer attestation, expedited hospital medical boards).
+                  <strong>Supreme Court of India (Order dated 24 January 2023):</strong> <em>Miscellaneous Form No. 1699 of 2019 in Writ Petition (Civil) No. 215 of 2005</em> (Simplified step, substituted JMFC with Notary/Gazetted Officer witness signing, expedited hospital medical boards).
                 </li>
                 <li>
-                  <strong>National Health Authority (NHA):</strong> Guidelines for electronic storage of Advance Directives under Ayushman Bharat Digital Mission (ABDM / ABHA).
+                  <strong>National Health Office (NHA):</strong> Guidelines for electronic storage of Advance Directives under Ayushman Bharat Digital Mission (ABDM / ABHA).
                 </li>
               </ul>
 
@@ -1230,7 +1230,7 @@ export default function LivingWillFormatIndiaClient() {
                     href="/templates/will-format-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Will Format in India (Property & Assets) &rarr;
+                    Will Format in India (Asset & Assets) &rarr;
                   </Link>
                   <Link
                     href="/templates/will-format-hindi"
@@ -1242,7 +1242,7 @@ export default function LivingWillFormatIndiaClient() {
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
-                    Indian Succession Calculator &rarr;
+                    Indian Succession Tool &rarr;
                   </Link>
                   <Link
                     href="/services/nri-will-india"
@@ -1253,7 +1253,29 @@ export default function LivingWillFormatIndiaClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
@@ -1273,21 +1295,21 @@ export default function LivingWillFormatIndiaClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in succession planning, advance directives, and constitutional rights at AMA Legal Solutions.
+                Bar Council enrolled lawyer with 18+ years of expertise in estate planning, advance directives, and constitutional rights at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1312,7 +1334,7 @@ export default function LivingWillFormatIndiaClient() {
                 Protect Your Family & Bodily Dignity Today
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Draft your legally compliant Will and Advance Medical Directive with advocate verification in just 15 minutes.
+                Draft your legally compliant Will and Advance Medical Directive with lawyer check in just 15 minutes.
               </p>
               <a
                 href="/start"
@@ -1324,7 +1346,7 @@ export default function LivingWillFormatIndiaClient() {
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
                 <PhoneCall className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Questions? Call our advocates</span>
+                <span>Questions? Call our lawyers</span>
               </div>
             </div>
 
@@ -1337,7 +1359,7 @@ export default function LivingWillFormatIndiaClient() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>2023 SC Order Compliant:</strong> Notary attestation without court delays.
+                    <strong>2023 SC Order Compliant:</strong> Notary witness signing without court delays.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1373,7 +1395,7 @@ export default function LivingWillFormatIndiaClient() {
                 >
                   <div className="font-bold text-xs text-slate-900">Will Format in India</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Plain paper format for property & assets &rarr;
+                    Plain paper format for asset & assets &rarr;
                   </div>
                 </Link>
                 <Link
@@ -1389,7 +1411,7 @@ export default function LivingWillFormatIndiaClient() {
                   href="/tools/succession-calculator"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
-                  <div className="font-bold text-xs text-slate-900">Succession Calculator</div>
+                  <div className="font-bold text-xs text-slate-900">Estate Tool</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Calculate legal heir shares under personal law &rarr;
                   </div>
@@ -1424,7 +1446,7 @@ export default function LivingWillFormatIndiaClient() {
                   href="/tools/succession-calculator"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Succession Share Calculator
+                  Estate Share Tool
                 </Link>
               </div>
             </div>

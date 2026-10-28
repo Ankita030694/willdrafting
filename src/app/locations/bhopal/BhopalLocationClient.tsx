@@ -118,20 +118,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Property Title Documents",
-    detail: "BDA allotment letters, MP Housing Board registry, sale deeds, or municipal property tax receipts.",
+    label: "Asset Title Papers",
+    detail: "BDA allotment letters, MP Housing Board registry, sale deeds, or city asset tax receipts.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "Doctor Fitness Certificate (MBBS)",
-    detail: "Needed medical paper certifying sound mental capacity for testators aged 60 and above.",
+    label: "Doctor Fitness Paper (MBBS)",
+    detail: "Needed medical paper certifying sound mental capacity for Will makers aged 60 and above.",
     checked: false,
   },
   {
     id: "item-6",
     label: "MP Sampada E-Appointment Token",
-    detail: "Digital slot booking receipt and government registration fee challan from sampada.mpigr.gov.in.",
+    detail: "Digital slot booking receipt and government filing fee challan from sampada.mpigr.gov.in.",
     checked: false,
   },
   {
@@ -241,7 +241,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will in Bhopal. Protect your BDA plots, MP Housing Board homes, and family wealth with expert lawyer drafting, MP Sampada portal registration, and home signing support.
+                Draft a legally valid Will in Bhopal. Protect your BDA plots, MP Housing Board homes, and family wealth with expert lawyer drafting, MP Sampada portal filing, and home signing support.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -329,7 +329,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rules
@@ -474,16 +474,16 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>BHOPAL ESTATE SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Bhopal
+                  Key Highlights: Will Making &amp; Filing in Bhopal
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Madhya Pradesh under Section 18(e) of the Registration Act, 1908. An unregistered Will on plain white paper is legally valid if signed before two independent witnesses.
+                      Will filing is a choice in Madhya Pradesh under Section 18(e) of the Filing Act, 1908. An plain Will on plain white paper is legally valid if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -503,7 +503,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty in Madhya Pradesh. At the Bhopal SRO office, testators only pay a flat ₹1,000 MP Sampada registration fee and minor portal charges.
+                      Wills incur ₹0 stamp duty in Madhya Pradesh. At the Bhopal SRO office, Will makers only pay a flat ₹1,000 MP Sampada filing fee and minor portal charges.
                     </p>
                   </div>
 
@@ -513,7 +513,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       <span>Smooth BDA &amp; BMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Registering your Will speeds up ownership substitution before the Bhopal Development Authority (BDA), MP Housing Board (MPHB), and Bhopal Municipal Corporation (BMC).
+                      Registering your Will speeds up ownership substitution before the Bhopal Development Office (BDA), MP Housing Board (MPHB), and Bhopal City City Board (BMC).
                     </p>
                   </div>
                 </div>
@@ -531,10 +531,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Bhopal MP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a legally binding Will in Bhopal is governed by central and state legal frameworks, primarily the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Madhya Pradesh Land Revenue Code (MPLRC), 1959</strong>. Any adult of sound mind can write a Will to dispose of self-acquired property, bank deposits, mutual funds, company shares, and jewelry.
+                  Writing a legally binding Will in Bhopal is governed by central and state legal frameworks, primarily the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Madhya Pradesh Land Revenue Code (MPLRC), 1959</strong>. Any adult of sound mind can write a Will to dispose of self-acquired asset, bank deposits, mutual funds, company shares, and jewelry.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Bhopal features unique property tenures. Families often own BDA allotted plots in Salaiya or Katara Hills, MP Housing Board duplexes in Riviera Town, lakeview kothis in Arera Colony, or shop retail shops in New Market. Without a valid Will, legal heirs face costly succession fights and office hurdles during property name change.
+                  Bhopal features unique asset tenures. Families often own BDA allotted plots in Salaiya or Katara Hills, MP Housing Board duplexes in Riviera Town, lakeview kothis in Arera Colony, or shop retail shops in New Market. Without a valid Will, legal heirs face costly estate fights and office hurdles during asset name change.
                 </p>
               </div>
 
@@ -589,13 +589,13 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Bhopal?
+                  2. Is Will Filing Needed in Bhopal?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong>. An unregistered Will written on plain white paper is legally valid in Indian courts if properly signed and attested by two witnesses.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is entirely <strong>a choice</strong>. An plain Will written on plain white paper is legally valid in Indian courts if properly signed and attested by two witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, in urban centers like Bhopal, registering your Will at the SRO office through MP Sampada is strongly recommended by legal professionals. Here is how a registered Will compares against an unregistered document:
+                  However, in urban centers like Bhopal, registering your Will at the SRO office through MP Sampada is strongly recommended by legal professionals. Here is how a filed Will compares against an plain paper:
                 </p>
               </div>
 
@@ -604,9 +604,9 @@ export default function BhopalLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (MP Sampada)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Factor</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (MP Sampada)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -622,8 +622,8 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">BDA &amp; BMC Name Change</td>
-                      <td className="p-4 bg-rose-50/20">Fast-tracked approval with certified copy from Sub-Registrar</td>
-                      <td className="p-4 bg-slate-50/20">Offices may demand court succession orders or heir NOC affidavits</td>
+                      <td className="p-4 bg-rose-50/20">Fast-tracked approval with certified copy from SRO</td>
+                      <td className="p-4 bg-slate-50/20">Offices may demand court estate orders or heir NOC sworn notes</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Proof Presumption</td>
@@ -651,17 +651,17 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   3. Bhopal Probate Rules: Non-Presidency Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Many property owners in Bhopal ask whether their legal heirs must get court probate after their demise. The clear legal answer is <strong>no</strong>.
+                  Many asset owners in Bhopal ask whether their legal heirs must get court probate after their demise. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only if a Will is signed within, or involves immovable assets inside, the historic presidency towns of Mumbai, Kolkata, or Chennai. Because Bhopal was never a British presidency town, probate is strictly optional here.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only if a Will is signed within, or involves land assets inside, the historic presidency towns of Mumbai, Kolkata, or Chennai. Because Bhopal was never a British presidency town, probate is strictly a choice here.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    General Rule: Probate Optional
+                    General Rule: Probate A Choice
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     MP High Court Judicial Rulings
@@ -671,7 +671,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Direct property name change using certified registered Will copy</span>
+                    <span>Direct asset name change using certified filed Will copy</span>
                   </div>
                 </div>
 
@@ -701,10 +701,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Bhopal Sub-Registrar Offices: SRO Directory
+                  4. Bhopal SRO Offices: SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Bhopal district operates five major Sub-Registrar Offices. Under Section 32 of the Registration Act, your Will can be registered at the SRO office where the Will maker resides or where any immovable asset is situated.
+                  Bhopal district operates five major SRO Offices. Under Section 32 of the Filing Act, your Will can be filed at the SRO office where the Will maker resides or where any land asset is situated.
                 </p>
               </div>
 
@@ -808,7 +808,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Across Bhopal Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Need a legally verified <strong>Will drafted in Arera Colony, MP Nagar, Kolar Road, or TT Nagar</strong>? Property types across Bhopal vary from BDA freehold plots and MP Housing Board flats to lakefront kothis and shop retail shops. Our legal team provides customized drafting, MP Sampada portal slot booking, and Sub-Registrar accompaniment across all key micro-markets:
+                  Need a legally checked <strong>Will drafted in Arera Colony, MP Nagar, Kolar Road, or TT Nagar</strong>? Asset types across Bhopal vary from BDA freehold plots and MP Housing Board flats to lakefront kothis and shop retail shops. Our legal team provides customized drafting, MP Sampada portal slot booking, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -838,7 +838,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Arera Colony</strong> for prime freehold bungalows, multi-level duplexes, and lake-view assets. Clear succession planning ensures seamless Bhopal Municipal Corporation property tax name change without sibling fights.
+                      Specialized <strong>Will drafting in Arera Colony</strong> for prime freehold bungalows, multi-level duplexes, and lake-view assets. Clear estate planning ensures seamless Bhopal City City Board asset tax name change without sibling fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -897,10 +897,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Registration Complex, Zone-II, MP Nagar</span>
+                        <span>SRO Hub: Filing Complex, Zone-II, MP Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct access to SRO II counters, fast biometric capture, and complete family business succession structuring.
+                        Direct access to SRO II counters, fast biometric capture, and complete family business estate structuring.
                       </p>
                     </div>
                   </div>
@@ -944,7 +944,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Full <strong>Will drafting in Kolar Road</strong> for home township owners and modern duplex communities. Protects self-acquired real estate against frivolous succession fights and ensures smooth BMC property tax updates.
+                      Full <strong>Will drafting in Kolar Road</strong> for home township owners and modern duplex communities. Protects self-acquired real estate against frivolous estate fights and ensures smooth BMC asset tax updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -953,7 +953,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kolar Sub-Tehsil Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Convenient local registration for Kolar residents, document check, and independent witness attestation.
+                        Convenient local filing for Kolar residents, paper check, and independent witness witness signing.
                       </p>
                     </div>
                   </div>
@@ -997,7 +997,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Trusted <strong>Will drafting in TT Nagar</strong> for retail shop owners, government employee housing, and family residences near New Market. A registered Will expedites shop title inheritance and municipal license transfers.
+                      Trusted <strong>Will drafting in TT Nagar</strong> for retail shop owners, government employee housing, and family residences near New Market. A filed Will expedites shop title estate and city license transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1103,7 +1103,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Modern <strong>Will drafting in Hoshangabad Road</strong> for high-rise apartment owners, gated multi-story condominiums, and BDA plotted developments. Ensures clean property transfer without requiring court succession papers.
+                      Modern <strong>Will drafting in Hoshangabad Road</strong> for high-rise apartment owners, gated multi-story condominiums, and BDA plotted developments. Ensures clean asset transfer without requiring court estate papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1112,7 +1112,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO IV Kolar &amp; SRO II MP Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        BDA allotment clearance, builder-buyer agreement succession, and online token booking via MP Sampada.
+                        BDA allotment clearance, builder-buyer pact estate, and online token booking via MP Sampada.
                       </p>
                     </div>
                   </div>
@@ -1150,13 +1150,13 @@ export default function BhopalLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ayodhya Bypass Road</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Govindpura Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Govindpura Plant Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">BHEL Township</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Anand Nagar &amp; Piplani</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Practical <strong>Will drafting in Ayodhya Bypass</strong> and Govindpura for engineering enterprise owners, BHEL retired personnel, and home housing colonies. Guarantees smooth lease transfer and industrial plot succession.
+                      Practical <strong>Will drafting in Ayodhya Bypass</strong> and Govindpura for engineering enterprise owners, BHEL retired personnel, and home housing colonies. Guarantees smooth lease transfer and plant plot estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1165,13 +1165,13 @@ export default function BhopalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO II MP Nagar Zone-II Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial lease succession advisory, BHEL housing guidance, and doctor medical papers for seniors.
+                        Plant lease estate advisory, BHEL housing guidance, and doctor medical papers for seniors.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; BHEL Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; BHEL Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1218,7 +1218,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Pari Bazar, Near Taj-ul-Masajid (SRO I)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Expert handling of family revenue records, Khasra check, and doorstep visits for elderly testators.
+                        Expert handling of family revenue records, Khasra check, and doorstep visits for elderly Will makers.
                       </p>
                     </div>
                   </div>
@@ -1247,10 +1247,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Bhopal
+                  6. Step-by-Step Will Filing in Bhopal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will before a Bhopal Sub-Registrar follows a structured protocol under Madhya Pradesh Shop Tax and Registration Department guidelines:
+                  Registering your Will before a Bhopal SRO follows a structured protocol under Madhya Pradesh Shop Tax and Filing Office guidelines:
                 </p>
               </div>
 
@@ -1275,10 +1275,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Doctor Certificate
+                      Doctor Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an MBBS mental fitness paper for testators aged 60+ to prevent future capacity fights.
+                      Obtain an MBBS mental fitness paper for Will makers aged 60+ to prevent future capacity fights.
                     </p>
                   </div>
                 </div>
@@ -1320,7 +1320,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       Book III Archive
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Biometric thumbprints and digital photographs are captured. The registered deed is released in 24-48 hours.
+                      Biometric thumbprints and digital photographs are captured. The filed deed is released in 24-48 hours.
                     </p>
                   </div>
                 </div>
@@ -1335,22 +1335,22 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Registration for Seniors
+                  7. Section 31 Doorstep Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Many senior residents in Bhopal find it challenging to visit crowded government offices in MP Nagar or Pari Bazar. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal power to visit a citizen&apos;s residence, nursing home, or hospital to complete registration.
+                  Many senior residents in Bhopal find it challenging to visit crowded government offices in MP Nagar or Pari Bazar. Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO holds legal power to visit a citizen&apos;s residence, nursing home, or hospital to complete filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Will Registration Works in Bhopal:
+                  How Doorstep Will Filing Works in Bhopal:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
+                      <strong className="text-slate-900 block">Doctor Medical Paper</strong>
                       <span className="text-slate-600">An MBBS physician certifies that the senior citizen is bedridden or medically advised against traveling.</span>
                     </div>
                   </div>
@@ -1359,7 +1359,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our legal team files the official commission petition before the concerned Bhopal Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team files the official commission petition before the concerned Bhopal SRO.</span>
                     </div>
                   </div>
 
@@ -1375,7 +1375,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Home Biometric Capture</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric scanners to record signatures, thumbprints, and photos.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric scanners to record signatures, thumbprints, and photos.</span>
                     </div>
                   </div>
                 </div>
@@ -1390,7 +1390,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Bhopal Sub-Registrar
+                  8. Papers Checklist for Bhopal SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before heading to the SRO office. You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1440,10 +1440,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Bhopal Property Types: BDA, MPHB &amp; Freehold
+                  9. Bhopal Asset Types: BDA, MPHB &amp; Freehold
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Bhopal vary based on whether land ownership originated from a development authority, housing board, or private freehold:
+                  Estate steps in Bhopal vary based on whether land ownership originated from a development office, housing board, or private freehold:
                 </p>
               </div>
 
@@ -1453,10 +1453,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     BDA Plots &amp; Homes
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Bhopal Development Authority
+                    Bhopal Development Office
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    BDA requires a registered Will to mutate leasehold or freehold plots in Salaiya, Katara Hills, and Aerocity. Eliminates long heirship fights before the BDA Estate Branch.
+                    BDA requires a filed Will to mutate leasehold or freehold plots in Salaiya, Katara Hills, and Aerocity. Eliminates long heirship fights before the BDA Estate Branch.
                   </p>
                 </div>
 
@@ -1468,7 +1468,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     MPHB Flats &amp; Colonies
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Colonies such as Riviera Town, Shivaji Nagar, and Platinum Plaza require verified succession deeds to substitute names on allotment letters and signing deeds.
+                    Colonies such as Riviera Town, Shivaji Nagar, and Platinum Plaza require checked estate deeds to substitute names on allotment letters and signing deeds.
                   </p>
                 </div>
 
@@ -1480,7 +1480,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                     Farm Holdings (MPLRC)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmlands in Berasia and Phanda governed under the MP Land Revenue Code 1959 mutate smoothly (Fauti Namantaran) before the Tehsildar with a registered Will.
+                    Farmlands in Berasia and Phanda governed under the MP Land Revenue Code 1959 mutate smoothly (Fauti Namantaran) before the Tehsildar with a filed Will.
                   </p>
                 </div>
               </div>
@@ -1497,7 +1497,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   10. Official MP Government Fees &amp; SRO Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyance deeds that incur significant ad-valorem stamp duty, Wills are 100% exempt from stamp duty across Madhya Pradesh under the Indian Stamp Act, 1899:
+                  Unlike asset conveyance deeds that incur significant ad-valorem stamp duty, Wills are 100% exempt from stamp duty across Madhya Pradesh under the Indian Stamp Act, 1899:
                 </p>
               </div>
 
@@ -1517,9 +1517,9 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       <td className="p-4">Govt of Madhya Pradesh</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">MP Sampada Registration Fee</td>
+                      <td className="p-4 font-semibold">MP Sampada Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹1,000 (Flat Fee)</td>
-                      <td className="p-4">MP Shop Tax &amp; Registration Dept</td>
+                      <td className="p-4">MP Shop Tax &amp; Filing Dept</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; Portal Service Charges</td>
@@ -1565,12 +1565,12 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for nuclear families with home property, bank accounts, and demat folios.
+                      Ideal for nuclear families with home asset, bank accounts, and demat folios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Bhopal Will builder</span>
+                        <span>Free Bhopal Will builder</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1643,13 +1643,13 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help across all 5 Bhopal Sub-Registrar offices.
+                      Full end-to-end filing help across all 5 Bhopal SRO offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1666,7 +1666,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1736,7 +1736,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
                   13. Legal References &amp; MP Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols strictly follow codified Indian statutes and official Madhya Pradesh registration systems:
+                  Our drafting protocols strictly follow codified Indian statutes and official Madhya Pradesh filing systems:
                 </p>
               </div>
 
@@ -1752,10 +1752,10 @@ export default function BhopalLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1804,7 +1804,29 @@ export default function BhopalLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1823,7 +1845,7 @@ export default function BhopalLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-white/15">
               <span className="font-bold text-sm text-white">
-                Visual Blueprint: Bhopal Will Drafting &amp; Estate Succession
+                Visual Blueprint: Bhopal Will Drafting &amp; Estate Estate
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

@@ -90,7 +90,7 @@ export default function CapitalGainsTaxCalculatorPage() {
         url: canonicalUrl,
         name: "Inherited Property Capital Gains Calculator | WillDrafting",
         description:
-          "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.",
+          "Calculate capital gains tax on inherited asset in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function CapitalGainsTaxCalculatorPage() {
         applicationCategory: "TaxApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory tax calculator comparing Budget 2024 grandfathering relief (20% with indexation vs 12.5% flat), Section 49(1) cost to.",
+          "Free legal tax tool comparing Budget 2024 grandfathering relief (20% with indexation vs 12.5% flat), Section 49(1) cost to.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "Is there any tax on inheriting property in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 47(iii) of the Income Tax Act, 1961, transfer of capital assets under a Will or by inheritance is expressly excluded from the definition of transfer. Therefore, inheriting a house, land, or commercial property does not attract any capital gains tax or income tax at the time of inheritance.",
+              text: "No. Under Section 47(iii) of the Income Tax Act, 1961, transfer of capital assets under a Will or by estate is expressly excluded from the definition of transfer. Therefore, inheriting a house, land, or shop asset does not attract any capital gains tax or income tax at the time of estate.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "How is capital gains tax calculated when selling an inherited property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When you sell an inherited property, tax is calculated based on the gain made over the original cost paid by the previous owner who purchased it (Section 49(1)). The holding period includes the previous owner's ownership tenure (Section 2(42A)). If the combined holding period exceeds 24 months, it is treated as Long-Term Capital Gain (LTCG).",
+              text: "When you sell an inherited asset, tax is calculated based on the gain made over the original cost paid by the previous owner who purchased it (Section 49(1)). The holding period includes the previous owner's ownership tenure (Section 2(42A)). If the combined holding period exceeds 24 months, it is treated as Long-Term Capital Gain (LTCG).",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "What is the Budget 2024 grandfathering option for inherited property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the Finance (No. 2) Act, 2024 amendment to Section 112, for properties acquired before July 23, 2024 by resident individuals or HUFs, taxpayers have the legal right to compute capital gains under both regimes: (1) Old regime at 20% with Cost Inflation Index (CII), or (2) New regime at 12.5% flat without indexation, and pay whichever produces the lower tax liability.",
+              text: "Under the Finance (No. 2) Act, 2024 amendment to Section 112, for assets acquired before July 23, 2024 by resident people or HUFs, taxpayers have the legal right to compute capital gains under both regimes: (1) Old regime at 20% with Cost Inflation Index (CII), or (2) New regime at 12.5% flat without indexation, and pay whichever produces the lower tax liability.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "How is the cost determined for property acquired before April 1, 2001?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 55(2)(b) of the Income Tax Act, if the previous owner purchased the property before April 1, 2001, you can substitute the Fair Market Value (FMV) as on April 1, 2001 as your base cost. However, under Section 55(2)(b)(ii), this FMV cannot exceed the Stamp Duty Ready Reckoner Value of the property as on April 1, 2001.",
+              text: "Under Section 55(2)(b) of the Income Tax Act, if the previous owner purchased the asset before April 1, 2001, you can substitute the Fair Market Value (FMV) as on April 1, 2001 as your base cost. However, under Section 55(2)(b)(ii), this FMV cannot exceed the Stamp Duty Ready Reckoner Value of the asset as on April 1, 2001.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "Do multiple legal heirs each get a separate Section 54EC bond limit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. When siblings or co-heirs inherit a property as tenants-in-common, each co-owner is taxed separately on their proportionate share of the capital gains. Consequently, each legal heir is individually entitled to invest up to ₹50 Lakhs in Section 54EC capital gains bonds (REC, NHAI, PFC, IRFC). For example, three siblings can collectively shelter up to ₹1.5 Crore in capital gains from tax.",
+              text: "Yes. When siblings or co-heirs inherit a asset as tenants-in-common, each co-owner is taxed separately on their proportionate share of the capital gains. So, each legal heir is individually entitled to invest up to ₹50 Lakhs in Section 54EC capital gains bonds (REC, NHAI, PFC, IRFC). For example, three siblings can collectively shelter up to ₹1.5 Crore in capital gains from tax.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "How much TDS is deducted when an NRI sells inherited property in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 195 of the Income Tax Act, the buyer is required to deduct TDS on payments to Non-Resident Indians. By default, buyers deduct TDS on the FULL sale consideration at 12.5% or 20% plus surcharge and cess (often amounting to 20% to 23.9% of gross value). To prevent this massive cash lockup, NRI sellers should apply to the Income Tax Department for a Lower or Nil Deduction Certificate under Section 197 (Form 13) before executing the sale.",
+              text: "Under Section 195 of the Income Tax Act, the buyer is required to deduct TDS on payments to Non-Resident Indians. By default, buyers deduct TDS on the FULL sale consideration at 12.5% or 20% plus surcharge and cess (often amounting to 20% to 23.9% of gross value). To prevent this massive cash lockup, NRI sellers should apply to the Income Tax Office for a Lower or Nil Deduction Paper under Section 197 (Form 13) before signing the sale.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function CapitalGainsTaxCalculatorPage() {
             name: "How can Section 54 exemption be claimed on inherited residential property?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 54, if the inherited asset was a long-term residential house, you can exempt capital gains by purchasing a new residential house within 1 year before or 2 years after the sale, or constructing one within 3 years. The exemption is capped at ₹10 Crore. If the net long-term capital gain is up to ₹2 Crore, you may invest in two residential properties once in a lifetime.",
+              text: "Under Section 54, if the inherited asset was a long-term home house, you can exempt capital gains by purchasing a new home house within 1 year before or 2 years after the sale, or constructing one within 3 years. The exemption is capped at ₹10 Crore. If the net long-term capital gain is up to ₹2 Crore, you may invest in two home assets once in a lifetime.",
             },
           },
         ],

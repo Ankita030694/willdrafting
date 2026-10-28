@@ -138,7 +138,7 @@ export default function MeghalayaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Meghalaya: Matrilineal Succession Guide",
         description:
-          "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration.",
+          "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary estate, self-acquired asset bequests, and filing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -185,7 +185,7 @@ export default function MeghalayaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Meghalaya - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, customary succession legal counsel, advocate verification, and DC Office Sub-Registrar registration support across.",
+          "Professional Will drafting, customary estate legal counsel, lawyer check, and DC Office SRO filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -249,38 +249,38 @@ export default function MeghalayaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Meghalaya",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Meghalaya while respecting customary succession laws.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Meghalaya while respecting customary estate laws.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Distinguish Self-Acquired vs Ancestral Clan Assets",
-            text: "Identify all real estate and movable properties, carefully categorizing self-acquired assets (Kamai Nongkhynraw) versus ancestral clan assets (Ri Kur / A'king land) to ensure full testamentary legality.",
+            text: "Identify all real estate and cash assets, carefully categorizing self-acquired assets (Kamai Nongkhynraw) versus family clan assets (Ri Kur / A'king land) to ensure full Will legality.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Statutory Clauses with Legal Counsel",
-            text: "Draft your Will with explicit testamentary declarations, beneficiary allocations, executor appointment, and compliance with the Meghalaya Transfer of Land (Regulation) Act, 1971.",
+            text: "Draft your Will with explicit Will declarations, heir allocations, executor appointment, and compliance with the Meghalaya Transfer of Land (Regulation) Act, 1971.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Adult Witnesses",
-            text: "Print the Will on standard A4 paper and sign each page in the presence of two independent adult witnesses who hold no beneficial interest under the document.",
+            text: "Print the Will on standard A4 paper and sign each page in the presence of two independent adult witnesses who hold no beneficial interest under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Appointment at District DC Office",
-            text: "Schedule an appointment at the jurisdictional Sub-Registrar Office in Shillong, Tura, Jowai, or your local DC Office and deposit the nominal ₹100 registration fee.",
+            text: "Schedule an appointment at the local SRO office in Shillong, Tura, Jowai, or your local DC Office and deposit the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Registration for Book III Custody",
-            text: "Attend the Sub-Registrar Office with both witnesses for verbal verification, photo capture, and biometric thumbprinting to seal the Will in permanent Book III custody.",
+            text: "Attend the SRO office with both witnesses for verbal check, photo capture, and biometric thumbprinting to seal the Will in permanent Book III custody.",
           },
         ],
       },

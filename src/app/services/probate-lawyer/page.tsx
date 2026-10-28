@@ -94,7 +94,7 @@ export default function ProbateLawyerPage() {
         logo: "https://www.willdrafting.in/Logofinal.svg",
         image: imageUrl,
         description:
-          "Pan-India testamentary legal counsel specializing in High Court and District Court probate petitions, Letters of Administration, and contested.",
+          "Pan-India Will legal counsel specializing in High Court and District Court probate petitions, Letters of Care, and contested.",
         priceRange: "₹₹₹",
         address: {
           "@type": "PostalAddress",
@@ -123,7 +123,7 @@ export default function ProbateLawyerPage() {
               itemOffered: {
                 "@type": "Service",
                 name: "Contested Will Defense & Caveat Litigation",
-                description: "Trial advocacy and defense against caveats, allegations of fraud, coercion, or lack of testamentary capacity.",
+                description: "Trial advocacy and defense against caveats, allegations of fraud, coercion, or lack of Will capacity.",
               },
             },
             {
@@ -131,7 +131,7 @@ export default function ProbateLawyerPage() {
               itemOffered: {
                 "@type": "Service",
                 name: "Letters of Administration",
-                description: "Legal representation for estate administration where deceased died intestate or no executor was named.",
+                description: "Legal representation for estate care where deceased died no-Will or no executor was named.",
               },
             },
             {
@@ -139,7 +139,7 @@ export default function ProbateLawyerPage() {
               itemOffered: {
                 "@type": "Service",
                 name: "NRI Ancillary Probate Under Section 228",
-                description: "Validation and court grant for foreign Wills covering immovable or financial assets in India.",
+                description: "Validation and court grant for foreign Wills covering land or financial assets in India.",
               },
             },
           ],
@@ -151,7 +151,7 @@ export default function ProbateLawyerPage() {
         url: canonicalUrl,
         name: "Probate of Will Lawyers India: Get Court Probate Fast",
         description:
-          "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete.",
+          "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Care with complete.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -200,7 +200,7 @@ export default function ProbateLawyerPage() {
             name: "Is probate mandatory for all Wills across India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 57 and Section 213 of the Indian Succession Act, probate is compulsory only in Mumbai, Kolkata, and Chennai. It applies to Hindu, Buddhist, Sikh, and Jain Wills made in these cities or covering land there. Outside these cities, probate is voluntary by law. Still, banks and buyers often ask for probate before they release large assets.",
+              text: "Under Section 57 and Section 213 of the Indian Succession Act, probate is needed only in Mumbai, Kolkata, and Chennai. It applies to Hindu, Buddhist, Sikh, and Jain Wills made in these cities or covering land there. Outside these cities, probate is voluntary by law. Still, banks and buyers often ask for probate before they release large assets.",
             },
           },
           {
@@ -208,7 +208,7 @@ export default function ProbateLawyerPage() {
             name: "Who has the legal right to apply for probate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 222, only the executor named in the Will can get probate. If the Will does not name an executor, or if the executor dies, the heirs must apply for Letters of Administration under Section 232 instead.",
+              text: "Under Section 222, only the executor named in the Will can get probate. If the Will does not name an executor, or if the executor dies, the heirs must apply for Letters of Care under Section 232 instead.",
             },
           },
           {
@@ -216,7 +216,7 @@ export default function ProbateLawyerPage() {
             name: "What is the difference between Probate and Letters of Administration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Probate is granted only to the executor named in a Will. Letters of Administration are granted to legal heirs when there is no Will or when no executor is active. Both orders give legal authority over land, money, and property.",
+              text: "Probate is granted only to the executor named in a Will. Letters of Care are granted to legal heirs when there is no Will or when no executor is active. Both orders give legal office over land, money, and asset.",
             },
           },
           {
@@ -248,7 +248,7 @@ export default function ProbateLawyerPage() {
             name: "Can an NRI executor apply for probate without traveling to India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An NRI executor can sign a Special Power of Attorney abroad. The document must be apostilled or verified at the Indian Embassy. Their advocate can then file and run the probate petition in India without requiring travel.",
+              text: "Yes. An NRI executor can sign a Special Power of Attorney abroad. The paper must be apostilled or checked at the Indian Embassy. Their lawyer can then file and run the probate petition in India without requiring travel.",
             },
           },
           {
@@ -264,7 +264,7 @@ export default function ProbateLawyerPage() {
             name: "Do banks and mutual funds always require probate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Not always. For smaller bank accounts with nominees, banks pay out under RBI rules. But when amounts are high, when family claims clash, or when a Will is unregistered, banks often insist on court probate before paying out.",
+              text: "Not always. For smaller bank accounts with nominees, banks pay out under RBI rules. But when amounts are high, when family claims clash, or when a Will is plain, banks often insist on court probate before paying out.",
             },
           },
         ],

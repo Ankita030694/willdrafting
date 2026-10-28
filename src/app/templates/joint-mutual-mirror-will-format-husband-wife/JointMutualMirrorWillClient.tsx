@@ -43,25 +43,25 @@ const TOC_ITEMS = [
   { id: "free-mirror-will-formats", label: "5. Paired Mirror Will Drafts: Husband & Wife" },
   { id: "key-clauses-spousal-wills", label: "6. Key Clauses Every Spousal Will Needs" },
   { id: "interactive-assessment", label: "7. Couple Will Structure Assessment Tool" },
-  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Execution Protocol" },
+  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Signing Protocol" },
   { id: "common-drafting-mistakes", label: "9. Common Pitfalls to Avoid in India" },
   { id: "institutional-profile", label: "10. Legal Review by AMA Legal Solutions" },
   { id: "frequently-asked-questions", label: "11. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "12. Statutory Citations & Reference Guides" },
+  { id: "statutory-citations", label: "12. Legal Citations & Reference Guides" },
 ];
 
 const FAQS = [
   {
     q: "Can husband and wife write a single joint Will on one paper in India?",
-    a: "Yes, you can write one joint Will on a single paper. But lawyers strongly advise against it. The Supreme Court explained in Kochu Govindan (1959) that a joint Will is two Wills on one paper. It causes big delays in court when the first spouse dies. Land offices and banks often refuse to transfer property until both spouses pass away.",
+    a: "Yes, you can write one joint Will on a single paper. But lawyers strongly advise against it. The Supreme Court explained in Kochu Govindan (1959) that a joint Will is two Wills on one paper. It causes big delays in court when the first spouse dies. Land offices and banks often refuse to transfer asset until both spouses pass away.",
   },
   {
     q: "What is a Mirror Will, and why is it best for Indian couples?",
-    a: "Mirror Wills are two separate Wills made by husband and wife. The husband leaves his assets to his wife first. If she dies before him, his assets go to their children. The wife writes the exact same terms for her husband. Each spouse signs their own document. This avoids court delays and allows fast property transfer.",
+    a: "Mirror Wills are two separate Wills made by husband and wife. The husband leaves his assets to his wife first. If she dies before him, his assets go to their children. The wife writes the exact same terms for her husband. Each spouse signs their own paper. This avoids court delays and allows fast asset transfer.",
   },
   {
     q: "What is the difference between a Joint Will and a Mutual Will?",
-    a: "A Joint Will is one document signed by two people. A Mutual Will is two separate Wills made with a binding promise not to change them. In Dilharshankar (1986), the Supreme Court ruled that a Mutual Will binds the surviving partner. The survivor cannot change their Will later, even if family needs change.",
+    a: "A Joint Will is one paper signed by two people. A Mutual Will is two separate Wills made with a binding promise not to change them. In Dilharshankar (1986), the Supreme Court ruled that a Mutual Will binds the surviving partner. The survivor cannot change their Will later, even if family needs change.",
   },
   {
     q: "Can the surviving spouse change their Will after the first spouse dies?",
@@ -69,19 +69,19 @@ const FAQS = [
   },
   {
     q: "What is a 30-day survivorship clause in a spousal Will?",
-    a: "A 30-day survivorship clause requires a spouse to live for at least 30 days after the testator to inherit. If both spouses die in the same accident, the assets pass directly to the children. This saves your family from paying court fees and probate charges twice on the same assets.",
+    a: "A 30-day survivorship clause requires a spouse to live for at least 30 days after the Will maker to inherit. If both spouses die in the same accident, the assets pass directly to the children. This saves your family from paying court fees and probate charges twice on the same assets.",
   },
   {
     q: "Do husband and wife need to register their Mirror Wills at the registry office?",
-    a: "No, registration is voluntary under Section 18 of the Registration Act. A Will written on plain white paper with two witnesses is 100% legal. However, registering both Mirror Wills before the Sub-Registrar provides strong proof if relatives challenge the document later.",
+    a: "No, filing is voluntary under Section 18 of the Filing Act. A Will written on plain white paper with two witnesses is 100% legal. However, registering both Mirror Wills before the SRO provides strong proof if relatives fight the paper later.",
   },
   {
     q: "Can husband and wife witness each other's Will?",
-    a: "No, never sign as a witness for your spouse. Under Section 67 of the Indian Succession Act, any gift to an attesting witness is void. If you witness your spouse's Will, you lose your inheritance. You must use two independent adult witnesses who get no share in the estate.",
+    a: "No, never sign as a witness for your spouse. Under Section 67 of the Indian Succession Act, any gift to an signing witness is void. If you witness your spouse's Will, you lose your estate. You must use two independent adult witnesses who get no share in the estate.",
   },
   {
-    q: "How is jointly owned property handled in spousal Mirror Wills?",
-    a: "In India, joint owners hold property in shares, usually 50% each. You can only give away your own share in your Will. A Mirror Will gives your 50% share to your surviving spouse. This gives your partner full 100% ownership of the family home without disputes.",
+    q: "How is jointly owned asset handled in spousal Mirror Wills?",
+    a: "In India, joint owners hold asset in shares, usually 50% each. You can only give away your own share in your Will. A Mirror Will gives your 50% share to your surviving spouse. This gives your partner full 100% ownership of the family home without fights.",
   },
   {
     q: "Can a couple appoint the same executor for both Mirror Wills?",
@@ -106,7 +106,7 @@ export default function JointMutualMirrorWillClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState<"husband" | "wife" | "survivorship" | "executor" | "warning">("husband");
   const [copiedState, setCopiedState] = useState<string | null>(null);
@@ -276,9 +276,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Protect your spouse and children with verified paired Mirror Wills. Compare Joint,
+            Protect your spouse and children with checked paired Mirror Wills. Compare Joint,
             Mutual, and Mirror formats under the Supreme Court ruling in Kochu Govindan. Avoid
-            court delays and property transfer disputes.
+            court delays and asset transfer fights.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -418,7 +418,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs text-slate-600 space-y-1">
               <div className="flex items-center gap-1.5 text-slate-900 font-bold mb-1">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Drafted under Sections 62, 63 &amp; 70 of Indian Succession Act, 1925, and Supreme
@@ -447,7 +447,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
                     <strong>Two separate Wills are best:</strong> Husband and wife should each execute
-                    their own Will on plain paper. Writing one single joint document leads to court
+                    their own Will on plain paper. Writing one single joint paper leads to court
                     and bank delays.
                   </span>
                 </li>
@@ -455,7 +455,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
                     <strong>Spouses must NOT witness each other:</strong> Under Section 67, if a spouse
-                    signs as a witness, their inheritance is cancelled. Use two non-beneficiary adult
+                    signs as a witness, their estate is cancelled. Use two non-heir adult
                     witnesses.
                   </span>
                 </li>
@@ -469,8 +469,8 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registration is optional:</strong> An unregistered Will written on plain white
-                    A4 paper is 100% legal. SRO registration is voluntary under Section 18.
+                    <strong>Filing is a choice:</strong> An plain Will written on plain white
+                    A4 paper is 100% legal. SRO filing is voluntary under Section 18.
                   </span>
                 </li>
               </ul>
@@ -489,11 +489,11 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               </div>
               <div className="pt-3 px-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-[#49585F]">
                 <span className="font-semibold text-[#172228]">
-                  Paired Spousal Mirror Will Formats: Husband and Wife Succession in India
+                  Paired Spousal Mirror Will Formats: Husband and Wife Estate in India
                 </span>
                 <span className="inline-flex items-center gap-1 text-[#5F7E75]">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  Verified under Indian Succession Act, 1925
+                  Checked under Indian Succession Act, 1925
                 </span>
               </div>
             </div>
@@ -502,18 +502,18 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <section id="statutory-foundation" className="scroll-mt-28 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                 <Scale className="w-3.5 h-3.5" />
-                <span>Statutory Foundations</span>
+                <span>Legal Foundations</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 1. Joint Will vs Mirror Will: Understanding the Legal Basics
               </h2>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Many married couples in India want to write one combined Will together. A single
-                document signed by both partners looks simple at first. But under Indian succession
+                paper signed by both partners looks simple at first. But under Indian succession
                 law, writing one shared Will creates big legal traps.
               </p>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
-                Under the Indian Succession Act, each person owns property as a separate owner. A
+                Under the Indian Succession Act, each person owns asset as a separate owner. A
                 Will states what must happen to your own assets after death. Putting two people&apos;s
                 wishes on one paper leads to confusion in civil courts and registry offices.
               </p>
@@ -523,7 +523,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <div className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">
                     Single Joint Will
                   </div>
-                  <div className="text-sm font-bold text-[#172228] mb-1">One Shared Document</div>
+                  <div className="text-sm font-bold text-[#172228] mb-1">One Shared Paper</div>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     Both spouses sign one paper. It causes court delays because courts cannot easily
                     prove it until both spouses die.
@@ -533,7 +533,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <div className="text-xs font-bold text-purple-700 uppercase tracking-wide mb-1">
                     Mutual Will
                   </div>
-                  <div className="text-sm font-bold text-[#172228] mb-1">Binding Agreement</div>
+                  <div className="text-sm font-bold text-[#172228] mb-1">Binding Pact</div>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     Two Wills made with a binding promise not to change them. The surviving spouse
                     cannot update terms if family needs change.
@@ -556,7 +556,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <section id="supreme-court-precedents" className="scroll-mt-28 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5F7E75]/10 text-[#3d5951] text-xs font-bold uppercase tracking-wider">
                 <Gavel className="w-3.5 h-3.5" />
-                <span>Judicial Authority</span>
+                <span>Judicial Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 2. Supreme Court Precedents: Kochu Govindan &amp; Dilharshankar
@@ -603,12 +603,12 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </h3>
                   <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed mb-3">
                     The Supreme Court ruled on mutual wills. If spouses agree not to change their
-                    Wills, the surviving partner holds the property in trust. The survivor cannot
-                    change the distribution later, even if family situations change.
+                    Wills, the surviving partner holds the asset in trust. The survivor cannot
+                    change the split later, even if family situations change.
                   </p>
                   <div className="p-3 rounded-xl bg-amber-50/60 border border-amber-200/80 text-xs text-amber-950 font-medium">
-                    <strong>Warning:</strong> A Mutual Will locks your property. If the survivor
-                    faces high medical bills or needs money in old age, relatives can block property
+                    <strong>Warning:</strong> A Mutual Will locks your asset. If the survivor
+                    faces high medical bills or needs money in old age, relatives can block asset
                     sales in court.
                   </div>
                 </div>
@@ -647,7 +647,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </thead>
                   <tbody className="divide-y divide-[#172228]/10 text-[#49585F]">
                     <tr className="hover:bg-[#FAF7F0]/60 transition-colors">
-                      <td className="py-3 px-4 font-semibold text-[#172228]">Documents</td>
+                      <td className="py-3 px-4 font-semibold text-[#172228]">Papers</td>
                       <td className="py-3 px-4">1 single paper signed by both</td>
                       <td className="py-3 px-4">2 separate papers with contract</td>
                       <td className="py-3 px-4 font-semibold text-emerald-800 bg-emerald-50/30">
@@ -657,14 +657,14 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     <tr className="hover:bg-[#FAF7F0]/60 transition-colors">
                       <td className="py-3 px-4 font-semibold text-[#172228]">Right to Change (Sec 62)</td>
                       <td className="py-3 px-4">Each can change own part</td>
-                      <td className="py-3 px-4">Breaks agreement if changed</td>
+                      <td className="py-3 px-4">Breaks pact if changed</td>
                       <td className="py-3 px-4 font-semibold text-emerald-800 bg-emerald-50/30">
                         100% free to change anytime
                       </td>
                     </tr>
                     <tr className="hover:bg-[#FAF7F0]/60 transition-colors">
                       <td className="py-3 px-4 font-semibold text-[#172228]">Changes After 1st Death</td>
-                      <td className="py-3 px-4">Creates disputes on joint assets</td>
+                      <td className="py-3 px-4">Creates fights on joint assets</td>
                       <td className="py-3 px-4">Survivor cannot change terms</td>
                       <td className="py-3 px-4 font-semibold text-emerald-800 bg-emerald-50/30">
                         Survivor can adapt to emergencies
@@ -685,7 +685,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                       <td className="py-3 px-4 text-rose-700 font-medium">
                         Frequent objections by officers
                       </td>
-                      <td className="py-3 px-4">Can face challenges by heirs</td>
+                      <td className="py-3 px-4">Can face fights by heirs</td>
                       <td className="py-3 px-4 font-semibold text-emerald-800 bg-emerald-50/30">
                         Smooth and standard acceptance
                       </td>
@@ -727,9 +727,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     Land and Society Transfer Delays
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
-                    When the first spouse passes away, the survivor must update municipal records
+                    When the first spouse passes away, the survivor must update city records
                     and society papers. Officers often refuse transfer if the living spouse is named
-                    as co-testator on the same physical deed.
+                    as co-Will maker on the same physical deed.
                   </p>
                 </div>
 
@@ -742,7 +742,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     In cities like Mumbai, Kolkata, and Chennai, probate is required under Section
-                    213. Court clerks raise objections when asked to probate a joint document while
+                    213. Court clerks raise objections when asked to probate a joint paper while
                     one spouse is still alive.
                   </p>
                 </div>
@@ -752,11 +752,11 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     3
                   </div>
                   <h3 className="text-sm font-bold text-[#172228] mb-1.5">
-                    Locked Property in Old Age
+                    Locked Asset in Old Age
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     A Mutual Will can lock your assets. If the surviving spouse needs money for
-                    healthcare 10 years later, children or in-laws can go to court to block property
+                    healthcare 10 years later, children or in-laws can go to court to block asset
                     sales.
                   </p>
                 </div>
@@ -770,7 +770,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     If both spouses die together in an accident without a 30-day survival rule,
-                    property passes to the second spouse briefly before going to children. The
+                    asset passes to the second spouse briefly before going to children. The
                     family pays court fees twice on the same assets.
                   </p>
                 </div>
@@ -787,8 +787,8 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 5. Free Paired Mirror Will Formats: Husband &amp; Wife Drafts
               </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
-                Use these verified templates to prepare separate Mirror Wills on plain white paper.
-                Each partner must execute their own document before two independent adult
+                Use these checked templates to prepare separate Mirror Wills on plain white paper.
+                Each partner must execute their own paper before two independent adult
                 witnesses.
               </p>
 
@@ -897,7 +897,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <div>
                   <strong>Tip:</strong> Print on plain white A4 paper. No stamp paper is required
                   under the Indian Stamp Act. Spouses must not witness each other&apos;s Will. Use
-                  two adult witnesses who get no share in the property.
+                  two adult witnesses who get no share in the asset.
                 </div>
               </div>
             </section>
@@ -912,7 +912,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 6. Key Clauses Every Spousal Will Must Include in India
               </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
-                To protect your surviving partner from future disputes, include these five core
+                To protect your surviving partner from future fights, include these five core
                 clauses in your Mirror Wills:
               </p>
 
@@ -949,7 +949,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     <span className="w-6 h-6 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs flex items-center justify-center font-bold">
                       3
                     </span>
-                    <span>30-Day Survival Requirement</span>
+                    <span>30-Day Survival Rule</span>
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     If both spouses die in a shared accident, this clause prevents the assets from
@@ -978,7 +978,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     <span>Remaining Assets Clause</span>
                   </h3>
                   <p className="text-xs text-[#49585F] leading-relaxed">
-                    This clause covers future property, forgotten bank accounts, and tax refunds
+                    This clause covers future asset, forgotten bank accounts, and tax refunds
                     not listed in your asset schedules. It ensures nothing is left out.
                   </p>
                 </div>
@@ -992,7 +992,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <span>Couple Will Assessment Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                7. Interactive Assessment: Find the Right Will for Couples
+                7. Free Assessment: Find the Right Will for Couples
               </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Answer three quick questions to see whether standard Mirror Wills or a Life
@@ -1002,7 +1002,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-[#172228]/10 shadow-xs space-y-5">
                 <div>
                   <label className="block text-xs font-bold text-[#172228] mb-2 uppercase tracking-wide">
-                    Question 1: How is your family property owned?
+                    Question 1: How is your family asset owned?
                   </label>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                     <button
@@ -1025,7 +1025,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                           : "border-[#172228]/10 text-[#49585F] hover:bg-[#FAF7F0]"
                       }`}
                     >
-                      Individually Owned Property
+                      Individually Owned Asset
                     </button>
                     <button
                       type="button"
@@ -1107,7 +1107,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                           : "border-[#172228]/10 text-[#49585F] hover:bg-[#FAF7F0]"
                       }`}
                     >
-                      No, property must stay with children (Life Interest)
+                      No, asset must stay with children (Life Interest)
                     </button>
                   </div>
                 </div>
@@ -1135,7 +1135,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                       <>
                         Make paired Mirror Wills with a <strong>Life Interest</strong>. The survivor
                         can live in the home and take rent for life, but cannot sell the capital.
-                        The property passes directly to your children after the survivor dies.
+                        The asset passes directly to your children after the survivor dies.
                       </>
                     )}
                   </p>
@@ -1148,14 +1148,14 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               <div className="space-y-1">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 uppercase tracking-wide">
                   <Calculator className="w-3.5 h-3.5" />
-                  <span>Succession Planning Calculator</span>
+                  <span>Estate Planning Tool</span>
                 </div>
                 <h3 className="text-sm font-bold text-[#172228]">
-                  Estimate Probate Court Fees and Inheritance Tax in India
+                  Estimate Probate Court Fees and Estate Tax in India
                 </h3>
                 <p className="text-xs text-[#49585F] leading-relaxed max-w-xl">
                   Check probate fees across High Courts (Mumbai, Delhi, Calcutta, Madras) or
-                  calculate capital gains tax on inherited ancestral properties before executing
+                  calculate capital gains tax on inherited family assets before signing
                   your family estate plan.
                 </p>
               </div>
@@ -1164,14 +1164,14 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   href="/tools/probate-court-fee-timeline-calculator"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-teal-800 hover:bg-teal-900 text-white text-xs font-bold transition-colors text-center"
                 >
-                  <span>Probate Calculator</span>
+                  <span>Probate Tool</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-teal-300 hover:bg-teal-50 text-teal-900 text-xs font-bold transition-colors text-center"
                 >
-                  <span>Tax Calculator</span>
+                  <span>Tax Tool</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1181,10 +1181,10 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <section id="step-by-step-sop" className="scroll-mt-28 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5F7E75]/10 text-[#3d5951] text-xs font-bold uppercase tracking-wider">
                 <Clock className="w-3.5 h-3.5" />
-                <span>Execution Protocol</span>
+                <span>Signing Protocol</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                8. Step-by-Step SOP: Executing Your Mirror Wills Legally
+                8. Step-by-Step SOP: Signing Your Mirror Wills Legally
               </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Follow these six steps to execute your spousal Wills properly under Section 63 of
@@ -1201,7 +1201,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                       Make an Asset Inventory
                     </h3>
                     <p className="text-xs text-[#49585F] leading-relaxed">
-                      List all property details, registry numbers, bank accounts, deposits, and
+                      List all asset details, registry numbers, bank accounts, deposits, and
                       insurance policies. Note which assets are owned jointly versus solely.
                     </p>
                   </div>
@@ -1213,10 +1213,10 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-[#172228] mb-1">
-                      Print Two Separate Documents on Plain Paper
+                      Print Two Separate Papers on Plain Paper
                     </h3>
                     <p className="text-xs text-[#49585F] leading-relaxed">
-                      Do not merge both spouses into one Will. Print one document for the husband and
+                      Do not merge both spouses into one Will. Print one paper for the husband and
                       one for the wife on plain white A4 paper. No stamp paper is required.
                     </p>
                   </div>
@@ -1231,7 +1231,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                       Pick Two Independent Witnesses
                     </h3>
                     <p className="text-xs text-[#49585F] leading-relaxed">
-                      Choose two adult witnesses who get no share in the property. Spouses must
+                      Choose two adult witnesses who get no share in the asset. Spouses must
                       never witness each other&apos;s Will, as doing so voids the bequest under Section 67.
                     </p>
                   </div>
@@ -1258,10 +1258,10 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-[#172228] mb-1">
-                      Attach a Doctor&apos;s Fitness Certificate
+                      Attach a Doctor&apos;s Fitness Paper
                     </h3>
                     <p className="text-xs text-[#49585F] leading-relaxed">
-                      If either spouse is 60 or older, get an MBBS doctor to sign a certificate of
+                      If either spouse is 60 or older, get an MBBS doctor to sign a paper of
                       sound mind. This stops future false claims of illness or mental weakness.
                     </p>
                   </div>
@@ -1273,12 +1273,12 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-[#172228] mb-1">
-                      Optional Registration at Sub-Registrar Office
+                      A Choice Filing at SRO office
                     </h3>
                     <p className="text-xs text-[#49585F] leading-relaxed">
-                      Registration is optional under Section 18 of the Registration Act. But
+                      Filing is a choice under Section 18 of the Filing Act. But
                       registering your Mirror Wills creates an official government record that stops
-                      disputes.
+                      fights.
                     </p>
                   </div>
                 </div>
@@ -1307,7 +1307,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <p className="text-xs text-[#49585F] leading-relaxed">
                     Husband witnesses the wife&apos;s Will, or wife witnesses the husband&apos;s Will.
                     Under Section 67, any gift to a witness is void. The spouse loses their entire
-                    inheritance.
+                    estate.
                   </p>
                 </div>
 
@@ -1358,7 +1358,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 </h3>
                 <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                   Avoid generic joint will templates that get rejected by land offices. Create
-                  paired, lawyer-vetted Mirror Wills customized for your properties, children, and
+                  paired, lawyer-vetted Mirror Wills customized for your assets, children, and
                   survival terms in 15 minutes.
                 </p>
               </div>
@@ -1376,7 +1376,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm border border-white/20 transition-colors"
                 >
                   <UserCheck className="w-4 h-4" />
-                  <span>Consult an Estate Advocate</span>
+                  <span>Consult an Estate Lawyer</span>
                 </Link>
               </div>
             </div>
@@ -1385,7 +1385,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <section id="institutional-profile" className="scroll-mt-28 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5F7E75]/10 text-[#3d5951] text-xs font-bold uppercase tracking-wider">
                 <Award className="w-3.5 h-3.5" />
-                <span>Legal Authority</span>
+                <span>Legal Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 10. Professional Legal Support from AMA Legal Solutions
@@ -1393,7 +1393,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 WillDrafting.in is supported by <strong>AMA Legal Solutions</strong>, an Indian law
                 firm focused on estate planning, family trusts, High Court probate petitions, and
-                property succession.
+                asset estate.
               </p>
 
               <div className="p-5 rounded-2xl bg-white border border-[#172228]/10 shadow-xs flex flex-col sm:flex-row items-start gap-4">
@@ -1402,13 +1402,13 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 </div>
                 <div className="space-y-2 text-xs sm:text-sm text-[#49585F]">
                   <h3 className="text-base font-bold text-[#172228]">
-                    Succession Advocates &amp; Testamentary Solicitors
+                    Estate Lawyers &amp; Will Solicitors
                   </h3>
                   <p className="leading-relaxed">
-                    Our advocates are enrolled with the Bar Council of Delhi, High Court Bar
+                    Our lawyers are enrolled with the Bar Council of Delhi, High Court Bar
                     Associations, and the Supreme Court Bar Association. We have assisted hundreds
                     of couples across Delhi NCR, Mumbai, Bengaluru, Hyderabad, and Chennai in
-                    structuring clear succession plans and registering paired mirror wills.
+                    structuring clear estate plans and registering paired mirror wills.
                   </p>
                   <div className="pt-2 flex flex-wrap gap-3 text-xs text-[#172228] font-semibold">
                     <span className="inline-flex items-center gap-1">
@@ -1417,11 +1417,11 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     </span>
                     <span className="inline-flex items-center gap-1">
                       <Check className="w-3.5 h-3.5 text-emerald-600" />
-                      Section 63 Attestation Guidance
+                      Section 63 Witness Signing Guidance
                     </span>
                     <span className="inline-flex items-center gap-1">
                       <Check className="w-3.5 h-3.5 text-emerald-600" />
-                      Sub-Registrar Will Registration Services
+                      SRO Will Filing Services
                     </span>
                   </div>
                 </div>
@@ -1474,14 +1474,14 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
             <section id="statutory-citations" className="scroll-mt-28 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5F7E75]/10 text-[#3d5951] text-xs font-bold uppercase tracking-wider">
                 <Landmark className="w-3.5 h-3.5" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
-                12. Statutory Provisions &amp; Legal Citation Directory
+                12. Legal Rules &amp; Legal Citation Directory
               </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
-                Review the primary statutory provisions and court authorities governing spousal
-                wills and property succession in India:
+                Review the primary legal rules and court offices governing spousal
+                wills and asset estate in India:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs">
@@ -1499,7 +1499,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     Section 63, Indian Succession Act, 1925
                   </div>
                   <div className="text-[#49585F]">
-                    Sets signing rules: signed by the testator and witnessed by at least two adult
+                    Sets signing rules: signed by the Will maker and witnessed by at least two adult
                     witnesses.
                   </div>
                 </div>
@@ -1514,7 +1514,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-[#172228]/10">
                   <div className="font-bold text-[#172228] mb-0.5">
-                    Section 18(e), Registration Act, 1908
+                    Section 18(e), Filing Act, 1908
                   </div>
                   <div className="text-[#49585F]">
                     States that registering a Will is voluntary. A Will written on plain paper is
@@ -1526,7 +1526,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               {/* Related Internal Links Hub */}
               <div className="pt-4 border-t border-[#172228]/10">
                 <div className="text-xs font-bold uppercase tracking-wider text-[#49585F] mb-3">
-                  Related Succession Guides &amp; Services
+                  Related Estate Guides &amp; Services
                 </div>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <Link
@@ -1551,18 +1551,40 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     href="/services/will-registration"
                     className="px-3 py-1.5 rounded-lg bg-white border border-[#172228]/10 hover:border-[#C65378] text-[#172228] font-medium transition-colors"
                   >
-                    SRO Will Registration
+                    SRO Will Filing
                   </Link>
                   <Link
                     href="/tools/probate-court-fee-timeline-calculator"
                     className="px-3 py-1.5 rounded-lg bg-white border border-[#172228]/10 hover:border-[#C65378] text-[#172228] font-medium transition-colors"
                   >
-                    Probate Court Fee Calculator
+                    Probate Court Fee Tool
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Matching Exact User Layout)
@@ -1575,20 +1597,20 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation,
+                Bar Council enrolled lawyer with 18+ years of expertise in Will court fights,
                 probate matters, and estate structuring at AMA Legal Solutions.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Legal Review</span>
+                  <span>Checked Legal Review</span>
                 </span>
                 <span className="text-slate-500">AMA Legal</span>
               </div>
@@ -1606,7 +1628,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   Want Your Custom Will Drafted in 15 Minutes?
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Avoid drafting errors. Use our guided step-by-step wizard to produce an advocate-verified,
+                  Avoid drafting errors. Use our guided step-by-step wizard to produce an lawyer-checked,
                   court-ready Will for your family.
                 </p>
                 <button
@@ -1633,15 +1655,15 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   Need Custom Paired Mirror Wills for You &amp; Your Spouse?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates structure joint property clauses, 30-day survivorship terms,
-                  and Sub-Registrar registration across India.
+                  Our estate lawyers structure joint asset clauses, 30-day survivorship terms,
+                  and SRO filing across India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <UserCheck className="w-3.5 h-3.5 text-rose-300" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1672,7 +1694,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Smooth SRO &amp; Bank Mutation:</strong> Standard acceptance by Sub-Registrars and societies.
+                      <strong>Smooth SRO &amp; Bank Name Change:</strong> Standard acceptance by Sub-Registrars and societies.
                     </span>
                   </li>
                 </ul>
@@ -1715,7 +1737,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                     href="/tools/probate-court-fee-timeline-calculator"
                     className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                   >
-                    <div className="font-bold text-xs text-slate-900">Probate Court Fee Calculator</div>
+                    <div className="font-bold text-xs text-slate-900">Probate Court Fee Tool</div>
                     <div className="text-[10px] text-slate-500 mt-0.5">
                       Calculate High Court court fees &rarr;
                     </div>

@@ -1108,6 +1108,28 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </section>
             )}
 
+            {/* Plain-English Quick Guide Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/10">
+                <p className="text-xs font-bold text-[#111827] mb-1">Why Write a Will Now?</p>
+                <p className="text-xs text-[#49585F] leading-relaxed">
+                  A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+                </p>
+              </div>
+              <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/10">
+                <p className="text-xs font-bold text-[#111827] mb-1">Simple Plain Paper Rules</p>
+                <p className="text-xs text-[#49585F] leading-relaxed">
+                  You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+                </p>
+              </div>
+              <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/10">
+                <p className="text-xs font-bold text-[#111827] mb-1">How Our Team Helps</p>
+                <p className="text-xs text-[#49585F] leading-relaxed">
+                  Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+                </p>
+              </div>
+            </div>
+
             {/* Legal Disclaimer Box */}
             <div className="p-6 rounded-xl bg-neutral-100/70 border border-[#172228]/5 text-xs sm:text-[13px] leading-relaxed text-[#6B7280]">
               <span className="font-semibold text-[#374151]">Notice: </span>

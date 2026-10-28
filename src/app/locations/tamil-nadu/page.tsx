@@ -142,7 +142,7 @@ export default function TamilNaduLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tamil Nadu: Registration & Probate Law",
         description:
-          "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name.",
+          "Draft your Will in Tamil Nadu with lawyer help. Clear guidance on Madras High Court probate rules, TNREGINET filing, and Patta name.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TamilNaduLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tamil Nadu - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, TNREGINET token booking, Madras High Court probate counsel, and doorstep execution support.",
+          "Professional Will drafting, lawyer check, TNREGINET token booking, Madras High Court probate counsel, and doorstep signing support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -258,38 +258,38 @@ export default function TamilNaduLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Tamil Nadu",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Tamil Nadu.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Tamil Nadu.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Tamil Nadu real estate including GCC flats, CMDA plots, Tamil Nilam agricultural land, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Tamil Nadu real estate including GCC flats, CMDA plots, Tamil Nilam farm land, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book TNREGINET Appointment Token",
-            text: "Schedule your registration appointment on the TNREGINET portal (tnreginet.gov.in) for your relevant SRO and remit the flat ₹100 registration fee.",
+            text: "Schedule your filing appointment on the TNREGINET portal (tnreginet.gov.in) for your relevant SRO and remit the flat ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Tamil Nadu SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

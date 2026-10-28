@@ -93,7 +93,7 @@ export default function SuccessionCertificatePage() {
         logo: "https://www.willdrafting.in/Logofinal.svg",
         image: imageUrl,
         description:
-          "Pan-India civil court advocacy specializing in Succession Certificate petitions under Part X of the Indian Succession Act 1925, court.",
+          "Pan-India civil court advocacy specializing in Estate Paper petitions under Part X of the Indian Succession Act 1925, court.",
         priceRange: "₹₹₹",
         address: {
           "@type": "PostalAddress",
@@ -115,7 +115,7 @@ export default function SuccessionCertificatePage() {
                 "@type": "Service",
                 name: "Uncontested Succession Certificate Petition",
                 description:
-                  "Comprehensive representation for drafting petitions, filing before the competent District Judge, newspaper publication, and securing.",
+                  "Full representation for drafting petitions, filing before the competent District Judge, newspaper publication, and securing.",
               },
             },
             {
@@ -124,7 +124,7 @@ export default function SuccessionCertificatePage() {
                 "@type": "Service",
                 name: "Bank & Financial Asset Transmission",
                 description:
-                  "Legal liaison with commercial banks, mutual fund AMCs, depositories (NSDL/CDSL), and insurance companies to release deceased funds.",
+                  "Legal liaison with shop banks, mutual fund AMCs, depositories (NSDL/CDSL), and insurance companies to release deceased funds.",
               },
             },
             {
@@ -154,7 +154,7 @@ export default function SuccessionCertificatePage() {
         url: canonicalUrl,
         name: "How to Get Succession Certificate in India: Legal Guide",
         description:
-          "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under.",
+          "Apply for a estate paper in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transfer under.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function SuccessionCertificatePage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Obtain a Succession Certificate in India",
         description:
-          "Statutory procedure under Part X (Sections 370-390) of the Indian Succession Act 1925 to petition the competent District Civil Court and.",
+          "Legal step under Part X (Sections 370-390) of the Indian Succession Act 1925 to petition the competent District Civil Court and.",
         image: imageUrl,
         totalTime: "P120D",
         supply: [
@@ -219,19 +219,19 @@ export default function SuccessionCertificatePage() {
             "@type": "HowToStep",
             position: 1,
             name: "Inventory Debts and Securities",
-            text: "Compile an itemized schedule of all movable assets requiring transfer, including bank accounts, fixed deposits, demat shares, mutual fund folios, and government bonds with exact folio numbers and valuation.",
+            text: "Compile an itemized schedule of all cash assets requiring transfer, including bank accounts, fixed deposits, demat shares, mutual fund folios, and government bonds with exact folio numbers and price check.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Determine Territorial Jurisdiction",
-            text: "Establish jurisdiction under Section 371 of the Indian Succession Act based on where the deceased had their ordinary place of residence at the time of death, or where their movable assets are situated.",
+            text: "Establish area under Section 371 of the Indian Succession Act based on where the deceased had their ordinary place of residence at the time of death, or where their cash assets are situated.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Draft and Verify Court Petition",
-            text: "Draft a formal petition under Section 372 containing details of deceased, date of death, family tree, surviving legal heirs, right of petitioner, and statutory declaration regarding absence of any conflicting Will.",
+            text: "Draft a formal petition under Section 372 containing details of deceased, date of death, family tree, surviving legal heirs, right of petitioner, and legal declaration regarding absence of any conflicting Will.",
           },
           {
             "@type": "HowToStep",
@@ -243,13 +243,13 @@ export default function SuccessionCertificatePage() {
             "@type": "HowToStep",
             position: 5,
             name: "Summary Judicial Inquiry and Hearing",
-            text: "Upon expiry of notice period without objections, the court examines petitioners, verifies original death certificate and family tree, and concludes summary inquiry under Section 373.",
+            text: "Upon expiry of notice period without objections, the court examines petitioners, verifies original death paper and family tree, and concludes summary inquiry under Section 373.",
           },
           {
             "@type": "HowToStep",
             position: 6,
             name: "Furnish Judicial Stamp Paper and Surety Bond",
-            text: "Deposit requisite ad-valorem state court fees on non-judicial stamp paper, submit surety bond under Section 375 if mandated, and receive the sealed Succession Certificate under Section 377.",
+            text: "Deposit requisite ad-valorem state court fees on non-judicial stamp paper, submit surety bond under Section 375 if mandated, and receive the sealed Estate Paper under Section 377.",
           },
         ],
       },
@@ -262,7 +262,7 @@ export default function SuccessionCertificatePage() {
             name: "What is a Succession Certificate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Succession Certificate is a formal legal document granted by a competent District Civil Court under Part X (Sections 370-390) of the Indian Succession Act, 1925. It authorizes the legal heirs to collect debts, bank balances, fixed deposits, securities, and provident funds owed to a deceased person who died without leaving a valid Will.",
+              text: "A Estate Paper is a formal legal paper granted by a competent District Civil Court under Part X (Sections 370-390) of the Indian Succession Act, 1925. It authorizes the legal heirs to collect debts, bank balances, fixed deposits, securities, and provident funds owed to a deceased person who died without leaving a valid Will.",
             },
           },
           {
@@ -270,7 +270,7 @@ export default function SuccessionCertificatePage() {
             name: "Can a Succession Certificate transfer immovable property like land or flats?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 370 of the Indian Succession Act, a Succession Certificate applies strictly to debts and securities (movable assets such as bank accounts, shares, mutual funds, and debentures). It does not convey title to immovable properties like land, agricultural parcels, or residential apartments. For immovable property, heirs must apply for revenue mutation or Letters of Administration.",
+              text: "No. Under Section 370 of the Indian Succession Act, a Estate Paper applies strictly to debts and securities (cash assets such as bank accounts, shares, mutual funds, and debentures). It does not convey title to land assets like land, farm parcels, or home apartments. For land asset, heirs must apply for revenue name change or Letters of Care.",
             },
           },
           {
@@ -278,7 +278,7 @@ export default function SuccessionCertificatePage() {
             name: "What is the difference between a Succession Certificate and a Legal Heir Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Legal Heir Certificate (Varisu) is an administrative document issued by revenue officials (Tehsildar, Revenue Divisional Officer, or Municipal Corporation) primarily to establish family lineage for government dues, family pensions, and municipal mutation. A Succession Certificate is a judicial order issued exclusively by a Civil Court under Section 370 of ISA 1925. Financial institutions like banks, SEBI brokers, and insurance companies require a Succession Certificate when claims exceed statutory thresholds or lack valid nominations.",
+              text: "A Legal Heir Paper (Varisu) is an office paper issued by revenue officials (Tehsildar, Revenue Divisional Officer, or City City Board) primarily to establish family lineage for government dues, family pensions, and city name change. A Estate Paper is a judicial order issued exclusively by a Civil Court under Section 370 of ISA 1925. Financial institutions like banks, SEBI brokers, and insurance companies require a Estate Paper when claims exceed legal thresholds or lack valid nominations.",
             },
           },
           {
@@ -286,7 +286,7 @@ export default function SuccessionCertificatePage() {
             name: "Which court has jurisdiction to grant a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 371 of the Indian Succession Act, the petition must be filed before the District Court within whose territorial jurisdiction the deceased ordinarily resided at the time of death. If the deceased had no fixed place of residence in India, the petition may be filed in the District Court where any part of the deceased's movable property is located.",
+              text: "Under Section 371 of the Indian Succession Act, the petition must be filed before the District Court within whose territorial area the deceased ordinarily resided at the time of death. If the deceased had no fixed place of residence in India, the petition may be filed in the District Court where any part of the deceased's cash asset is located.",
             },
           },
           {
@@ -294,7 +294,7 @@ export default function SuccessionCertificatePage() {
             name: "How long does it take to obtain a Succession Certificate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An uncontested Succession Certificate petition typically takes between 3 to 6 months from initial filing to final issuance. This timeframe accounts for court notices, mandatory 30 to 45 day public notice publication in daily newspapers, court hearings, and verification of non-applicant heir affidavits. Contested cases where relatives raise caveats can take 12 to 24 months.",
+              text: "An uncontested Estate Paper petition typically takes between 3 to 6 months from initial filing to final issuance. This timeframe accounts for court notices, needed 30 to 45 day public notice publication in daily newspapers, court hearings, and check of non-applicant heir sworn notes. Contested cases where relatives raise caveats can take 12 to 24 months.",
             },
           },
           {
@@ -302,7 +302,7 @@ export default function SuccessionCertificatePage() {
             name: "How much court fee is payable for a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Court fees for a Succession Certificate vary by state under respective State Court Fees Acts. Fees generally range between 2% to 7% of the total value of the debts and securities claimed. Certain states impose an upper ceiling (for example, Maharashtra caps the maximum court fee at ₹75,000), while other states like Delhi or Karnataka calculate percentage fees without a cap. Exact amounts can be checked on our Court Fee Calculator.",
+              text: "Court fees for a Estate Paper vary by state under respective State Court Fees Acts. Fees generally range between 2% to 7% of the total value of the debts and securities claimed. Certain states impose an upper ceiling (for example, Maharashtra caps the maximum court fee at ₹75,000), while other states like Delhi or Karnataka calculate percentage fees without a cap. Exact amounts can be checked on our Court Fee Tool.",
             },
           },
           {
@@ -310,7 +310,7 @@ export default function SuccessionCertificatePage() {
             name: "Can multiple legal heirs file a joint petition for a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. All legal heirs can jointly file a single petition before the District Court, naming themselves as co-petitioners. Alternatively, one legal heir can apply as the sole petitioner, provided all other surviving legal heirs submit written No Objection Certificates (NOCs) and supporting affidavits consenting to the grant.",
+              text: "Yes. All legal heirs can jointly file a single petition before the District Court, naming themselves as co-petitioners. Alternatively, one legal heir can apply as the sole petitioner, provided all other surviving legal heirs submit written No Objection Papers (NOCs) and supporting sworn notes consenting to the grant.",
             },
           },
           {
@@ -318,7 +318,7 @@ export default function SuccessionCertificatePage() {
             name: "Does a nominee override the holder of a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court of India has settled in multiple judgments (including Ram Chander Talwar v. Devinder Kumar Talwar and Shakti Yezdani v. Jayanand Salgaonkar) that a nominee is merely a temporary custodian or trustee of the funds. A nominee holds the assets for the benefit of the true legal heirs. The holder of a court-issued Succession Certificate has absolute legal authority to claim the funds from the nominee.",
+              text: "No. The Supreme Court of India has settled in multiple judgments (including Ram Chander Talwar v. Devinder Kumar Talwar and Shakti Yezdani v. Jayanand Salgaonkar) that a nominee is merely a temporary custodian or trustee of the funds. A nominee holds the assets for the benefit of the true legal heirs. The holder of a court-issued Estate Paper has absolute legal office to claim the funds from the nominee.",
             },
           },
           {
@@ -326,7 +326,7 @@ export default function SuccessionCertificatePage() {
             name: "Can an NRI legal heir apply without physically attending court in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Non-Resident Indians (NRIs) can execute a Special Power of Attorney (PoA) in their country of residence, attested by the Indian Embassy or apostilled under the Hague Convention. The designated attorney in India or AMA Legal Solutions advocates can then file the petition, attend hearings, and secure the certificate on their behalf.",
+              text: "Yes. Non-Resident Indians (NRIs) can execute a Special Power of Attorney (PoA) in their country of residence, attested by the Indian Embassy or apostilled under the Hague Convention. The designated attorney in India or AMA Legal Solutions lawyers can then file the petition, attend hearings, and secure the paper on their behalf.",
             },
           },
           {
@@ -334,7 +334,7 @@ export default function SuccessionCertificatePage() {
             name: "Would drafting a Will avoid the need for a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. A Succession Certificate is needed specifically when an individual dies intestate (without a valid Will). When a person leaves a clear Last Will and Testament, designated executors and beneficiaries can claim bank balances, mutual funds, and shares directly or through probate/letters of administration, avoiding the time, court fees, and publication requirements of Part X.",
+              text: "Yes. A Estate Paper is needed mainly when an single dies no-Will (without a valid Will). When a person leaves a clear Last Will and Testament, designated executors and heirs can claim bank balances, mutual funds, and shares directly or through probate/letters of care, avoiding the time, court fees, and publication rules of Part X.",
             },
           },
         ],

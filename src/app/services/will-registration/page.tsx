@@ -93,7 +93,7 @@ export default function WillRegistrationPage() {
         url: canonicalUrl,
         name: "Will Registration Service India: SRO Process | WillDrafting",
         description:
-          "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
+          "Complete Will filing service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -157,7 +157,7 @@ export default function WillRegistrationPage() {
                 "@type": "Service",
                 name: "Auto Verified (Essential Will)",
                 description:
-                  "Instant plain-paper legally vetted Will draft compliant with Section 63 of the Indian Succession Act, ready for SRO registration.",
+                  "Instant plain-paper legally vetted Will draft compliant with Section 63 of the Indian Succession Act, ready for SRO filing.",
               },
             },
             {
@@ -168,7 +168,7 @@ export default function WillRegistrationPage() {
                 "@type": "Service",
                 name: "Manually Verified (Lawyer Verified)",
                 description:
-                  "Comprehensive review by a High Court succession advocate, customized clause structuring, and SRO registration checklist.",
+                  "Full review by a High Court estate lawyer, customized clause structuring, and SRO filing checklist.",
               },
             },
             {
@@ -179,7 +179,7 @@ export default function WillRegistrationPage() {
                 "@type": "Service",
                 name: "Connect to Lawyer (Premium Consultation)",
                 description:
-                  "1-on-1 strategic consultation with senior counsel, complex multi-asset succession roadmap, and end-to-end SRO coordination.",
+                  "1-on-1 strategic talk with senior counsel, complex multi-asset estate roadmap, and end-to-end SRO coordination.",
               },
             },
           ],
@@ -190,7 +190,7 @@ export default function WillRegistrationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Register a Will at the Sub-Registrar Office in India",
         description:
-          "Six-step legal procedure to execute, authenticate, and register an Indian Will under the Registration Act, 1908 and Indian Succession Act, 1925.",
+          "Six-step legal step to execute, authenticate, and register an Indian Will under the Filing Act, 1908 and Indian Succession Act, 1925.",
         image: imageUrl,
         totalTime: "P3D",
         supply: [
@@ -232,31 +232,31 @@ export default function WillRegistrationPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Online SRO Appointment & Fee Challan Payment",
-            text: "Book an appointment slot on your state land registry portal and pay the nominal government registration fee (typically 100 to 500 rupees).",
+            text: "Book an appointment slot on your state land registry portal and pay the nominal government filing fee (typically 100 to 500 rupees).",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Witness Verification under Section 67",
-            text: "Select two independent adult witnesses who hold valid government IDs and are not beneficiaries or spouses of beneficiaries under the Will.",
+            text: "Select two independent adult witnesses who hold valid government IDs and are not heirs or spouses of heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Sub-Registrar Appearance or Section 31 Home Visit",
-            text: "Appear before the Sub-Registrar at your scheduled time, or arrange a private residence visit under Section 31 if the testator is elderly or bedridden.",
+            text: "Appear before the SRO at your scheduled time, or arrange a private residence visit under Section 31 if the Will maker is elderly or bedridden.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Biometric Fingerprinting & Registrar Endorsement",
-            text: "The Sub-Registrar verifies personal identities, captures live digital photographs and thumb impressions, and endorses the statutory certificate.",
+            text: "The SRO verifies personal identities, captures live digital photographs and thumb impressions, and endorses the legal paper.",
           },
           {
             "@type": "HowToStep",
             position: 6,
             name: "Book 3 Entry & Certified Copy Delivery",
-            text: "The registered Will is entered into confidential Book 3. The testator receives the original endorsed Will, and certified copies can be retrieved at any time.",
+            text: "The filed Will is entered into confidential Book 3. The Will maker receives the original endorsed Will, and certified copies can be retrieved at any time.",
           },
         ],
       },
@@ -269,7 +269,7 @@ export default function WillRegistrationPage() {
             name: "Is Will registration mandatory under Indian law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 18(e) of the Registration Act, 1908, Will registration is optional. An unregistered Will written on plain paper and signed before two witnesses is legally valid under Section 63 of the Indian Succession Act. However, registration before the Sub-Registrar provides strong legal proof and removes suspicions of forgery in court.",
+              text: "No. Under Section 18(e) of the Filing Act, 1908, Will filing is a choice. An plain Will written on plain paper and signed before two witnesses is legally valid under Section 63 of the Indian Succession Act. However, filing before the SRO provides strong legal proof and removes suspicions of forgery in court.",
             },
           },
           {
@@ -277,7 +277,7 @@ export default function WillRegistrationPage() {
             name: "What are the government fees for registering a Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Unlike property sale deeds that attract heavy ad-valorem stamp duty of 5% to 7%, Wills are completely exempt from stamp duty across India under the Indian Stamp Act, 1899. Sub-Registrar registration fees are nominal, typically ranging from 100 to 500 rupees depending on your state (such as 100 rupees in Maharashtra and Delhi).",
+              text: "Unlike asset sale deeds that attract heavy ad-valorem stamp duty of 5% to 7%, Wills are completely exempt from stamp duty across India under the Indian Stamp Act, 1899. SRO filing fees are nominal, typically ranging from 100 to 500 rupees depending on your state (such as 100 rupees in Maharashtra and Delhi).",
             },
           },
           {
@@ -285,7 +285,7 @@ export default function WillRegistrationPage() {
             name: "Can the Sub-Registrar visit a senior citizen at home under Section 31?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Section 31 of the Registration Act, 1908 allows the Sub-Registrar to visit a private home or hospital for elderly, sick, or bedridden individuals. You must file a formal application with a doctor's fitness certificate and pay a government attendance fee. AMA Legal Solutions manages this entire doorstep process.",
+              text: "Yes. Section 31 of the Filing Act, 1908 allows the SRO to visit a private home or hospital for elderly, sick, or bedridden people. You must file a formal form with a doctor's fitness paper and pay a government attendance fee. AMA Legal Solutions manages this entire doorstep process.",
             },
           },
           {
@@ -293,7 +293,7 @@ export default function WillRegistrationPage() {
             name: "Who can be witnesses for Will registration at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You need two adult witnesses with valid government photo identification (such as Aadhaar or PAN card). Under Section 67 of the Indian Succession Act, neither the witnesses nor their spouses can be beneficiaries under the Will. Any bequest made to an attesting witness becomes legally void.",
+              text: "You need two adult witnesses with valid government photo ID (such as Aadhaar or PAN card). Under Section 67 of the Indian Succession Act, neither the witnesses nor their spouses can be heirs under the Will. Any bequest made to an signing witness becomes legally void.",
             },
           },
           {
@@ -301,7 +301,7 @@ export default function WillRegistrationPage() {
             name: "What documents are required on the day of Will registration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You need two printed physical copies of the Will on plain A4 paper, original Aadhaar and PAN cards of the testator and two witnesses, two passport-size photographs of each person, property title documents or municipal tax receipts, and an official doctor's fitness certificate for senior citizens.",
+              text: "You need two printed physical copies of the Will on plain A4 paper, original Aadhaar and PAN cards of the Will maker and two witnesses, two passport-size photographs of each person, asset title papers or city tax receipts, and an official doctor's fitness paper for senior citizens.",
             },
           },
           {
@@ -309,7 +309,7 @@ export default function WillRegistrationPage() {
             name: "Is a registered Will public information that anyone can read?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 57(2) of the Registration Act, 1908, registered Wills are recorded in Book 3 (Register of Wills). Book 3 records remain strictly confidential during the testator's lifetime. Nobody, including family members or children, can view or obtain copies of the Will without the testator's written authorization until after the testator's demise.",
+              text: "No. Under Section 57(2) of the Filing Act, 1908, filed Wills are recorded in Book 3 (Register of Wills). Book 3 records remain strictly confidential during the Will maker's lifetime. Nobody, including family members or children, can view or obtain copies of the Will without the Will maker's written authorization until after the Will maker's demise.",
             },
           },
           {
@@ -317,7 +317,7 @@ export default function WillRegistrationPage() {
             name: "Can a registered Will be challenged in an Indian court?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A registered Will can be challenged, but the burden of proof rests heavily on the challenger under Section 114 of the Indian Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023). The challenger must prove fraud, coercion, or lack of mental capacity. The Supreme Court in Pentakota Satyanarayana held that the Sub-Registrar's official endorsement creates a strong presumption of genuine execution.",
+              text: "A filed Will can be challenged, but the burden of proof rests heavily on the challenger under Section 114 of the Indian Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023). The challenger must prove fraud, coercion, or lack of mental capacity. The Supreme Court in Pentakota Satyanarayana held that the SRO's official endorsement creates a strong presumption of genuine signing.",
             },
           },
           {
@@ -325,7 +325,7 @@ export default function WillRegistrationPage() {
             name: "How can I change, revoke, or amend a registered Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 62 of the Indian Succession Act, a Will is always revocable during the testator's lifetime. You can amend it by executing a registered Codicil or revoke it completely by executing a fresh registered Will that revokes all earlier instruments. Registering the new instrument at the same Sub-Registrar office prevents conflicting public records.",
+              text: "Under Section 62 of the Indian Succession Act, a Will is always revocable during the Will maker's lifetime. You can amend it by signing a filed Codicil or revoke it completely by signing a fresh filed Will that revokes all earlier instruments. Registering the new instrument at the same SRO office prevents conflicting public records.",
             },
           },
           {
@@ -333,7 +333,7 @@ export default function WillRegistrationPage() {
             name: "Can an NRI register an Indian Will without being physically present?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Will can only be registered if the testator appears physically before the Sub-Registrar (or receives a Section 31 home visit in India). A Power of Attorney cannot sign or register a Will on your behalf. However, NRIs can draft their Will online with AMA Legal Solutions and complete registration during their trip to India, or execute a plain-paper Will abroad with two witnesses under Section 63.",
+              text: "A Will can only be filed if the Will maker appears physically before the SRO (or receives a Section 31 home visit in India). A Power of Attorney cannot sign or register a Will on your behalf. However, NRIs can draft their Will online with AMA Legal Solutions and complete filing during their trip to India, or execute a plain-paper Will abroad with two witnesses under Section 63.",
             },
           },
           {
@@ -341,7 +341,7 @@ export default function WillRegistrationPage() {
             name: "What happens if the original registered Will is lost or misplaced?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If an original registered Will is lost, you or your named executor can apply for an official certified copy from the Sub-Registrar Office where it was registered. Under Section 76 of the Evidence Act, an official certified copy issued by the Sub-Registrar is admissible as secondary evidence in court and accepted by banks, municipal corporations, and revenue authorities.",
+              text: "If an original filed Will is lost, you or your named executor can apply for an official certified copy from the SRO office where it was filed. Under Section 76 of the Evidence Act, an official certified copy issued by the SRO is admissible as secondary evidence in court and accepted by banks, city corporations, and revenue offices.",
             },
           },
         ],

@@ -144,7 +144,7 @@ export default function LucknowLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Lucknow: Online Will Registration Help",
         description:
-          "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior.",
+          "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS filing guidance, and legal asset estate advice by senior.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function LucknowLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Lucknow - Estate Planning & SRO Registration",
         description:
-          "Expert Will drafting, advocate verification, LDA property mutation guidance, and Sub-Registrar Office e-registration support across Lucknow.",
+          "Expert Will drafting, lawyer check, LDA asset name change guidance, and SRO office e-filing support across Lucknow.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,38 +262,38 @@ export default function LucknowLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Lucknow",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Lucknow.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Lucknow.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Assets and Beneficiaries",
-            text: "Compile details of all LDA plots, Awas Vikas flats, bank accounts, agricultural land under UP Revenue Code, and jewellery. Identify beneficiaries and name an executor.",
+            text: "Compile details of all LDA plots, Awas Vikas flats, bank accounts, farm land under UP Revenue Code, and jewellery. Identify heirs and name an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Legal Clauses",
-            text: "Draft your Will using our online legal platform or with our senior advocate to include proper revocation, residuary, and LDA mutation clauses.",
+            text: "Draft your Will using our online legal platform or with our senior lawyer to include proper revocation, residuary, and LDA name change clauses.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book IGRSUP Slot Online",
-            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local Lucknow Sub-Registrar Office and pay the nominal ₹100 registration fee online.",
+            text: "Book an e-appointment on the UP IGRSUP portal (igrsup.gov.in) for your local Lucknow SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office in Lucknow with two witnesses and original Aadhaar cards for biometric thumbprints, digital photograph, and official Book III registration.",
+            text: "Visit the SRO office in Lucknow with two witnesses and original Aadhaar cards for biometric thumbprints, digital photograph, and official Book III filing.",
           },
         ],
       },

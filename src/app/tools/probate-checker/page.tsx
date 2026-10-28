@@ -129,7 +129,7 @@ export default function ProbateCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic legal tool to calculate whether probate is mandatory, recommended, or unnecessary under Section 57 and Section 213 of.",
+          "Free diagnostic legal tool to calculate whether probate is needed, recommended, or unnecessary under Section 57 and Section 213 of.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -146,7 +146,7 @@ export default function ProbateCheckerPage() {
             name: "What is probate of a Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 2(f) of the Indian Succession Act, 1925, probate is an official copy of a Will certified under the seal of a court of competent jurisdiction, accompanied by a grant of administration to the estate of the deceased testator. It establishes conclusive proof of the Will's legal validity and the executor's authority against the entire world.",
+              text: "Under Section 2(f) of the Indian Succession Act, 1925, probate is an official copy of a Will certified under the seal of a court of competent area, accompanied by a grant of care to the estate of the deceased Will maker. It establishes strong proof of the Will's legal validity and the executor's office against the entire world.",
             },
           },
           {
@@ -154,7 +154,7 @@ export default function ProbateCheckerPage() {
             name: "Where is probate strictly mandatory in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 57 and Section 213 of the Indian Succession Act, 1925, probate is legally mandatory only for Wills made by Hindus, Buddhists, Sikhs, and Jains if the Will was executed within the historic ordinary original civil jurisdiction of Mumbai, Chennai, or Kolkata, or if it relates to immovable property situated in those three cities.",
+              text: "Under Section 57 and Section 213 of the Indian Succession Act, 1925, probate is legally needed only for Wills made by Hindus, Buddhists, Sikhs, and Jains if the Will was signed within the historic ordinary original civil area of Mumbai, Chennai, or Kolkata, or if it relates to land asset situated in those three cities.",
             },
           },
           {
@@ -162,7 +162,7 @@ export default function ProbateCheckerPage() {
             name: "Is probate required for property in Delhi, Bengaluru, or other cities?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Outside Mumbai, Chennai, and Kolkata, probate is not legally mandatory for Hindu, Sikh, Jain, or Buddhist Wills. The Supreme Court in Kanta Yadav v. Om Prakash Yadav (2020) confirmed that Section 213 does not apply in states like Delhi, Haryana, Punjab, Karnataka, or Uttar Pradesh. An unprobated Will is fully valid for property transfer.",
+              text: "No. Outside Mumbai, Chennai, and Kolkata, probate is not legally needed for Hindu, Sikh, Jain, or Buddhist Wills. The Supreme Court in Kanta Yadav v. Om Prakash Yadav (2020) confirmed that Section 213 does not apply in states like Delhi, Haryana, Punjab, Karnataka, or Uttar Pradesh. An unprobated Will is fully valid for asset transfer.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function ProbateCheckerPage() {
             name: "Why do banks and housing societies still demand probate in non-mandatory states?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Banks and cooperative housing societies often demand probate or Letters of Administration to protect themselves from rival legal heir claims. While law does not mandate probate in these areas, institutions exercise internal risk caution. Beneficiaries can frequently avoid probate by submitting an Indemnity Bond, NOC from all legal heirs, and a legal opinion.",
+              text: "Banks and cooperative housing societies often demand probate or Letters of Care to protect themselves from rival legal heir claims. While law does not mandate probate in these areas, institutions exercise internal risk caution. Heirs can frequently avoid probate by submitting an Indemnity Bond, NOC from all legal heirs, and a legal opinion.",
             },
           },
           {
@@ -178,7 +178,7 @@ export default function ProbateCheckerPage() {
             name: "What happens if a Will does not name an executor?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 222 of the Indian Succession Act, probate can only be granted to an executor explicitly appointed in the Will. If no executor is named, or if the named executor has died or renounced their duties, beneficiaries must petition for Letters of Administration with Will Annexed under Section 232 or 234.",
+              text: "Under Section 222 of the Indian Succession Act, probate can only be granted to an executor explicitly appointed in the Will. If no executor is named, or if the named executor has died or renounced their duties, heirs must petition for Letters of Care with Will Annexed under Section 232 or 234.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function ProbateCheckerPage() {
             name: "What is the difference between Probate and Letters of Administration?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Probate is granted exclusively to a named executor under a valid Will. Letters of Administration are granted when there is no named executor, the executor cannot act, or the deceased died intestate (without any Will). Both documents give court-certified authority to administer the estate.",
+              text: "Probate is granted exclusively to a named executor under a valid Will. Letters of Care are granted when there is no named executor, the executor cannot act, or the deceased died no-Will (without any Will). Both papers give court-certified office to administer the estate.",
             },
           },
           {
@@ -194,7 +194,7 @@ export default function ProbateCheckerPage() {
             name: "Can an unregistered Will written on plain paper be probated?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 18 of the Registration Act, 1908, Will registration is optional. An unregistered Will executed on plain A4 paper in compliance with Section 63 (signed by the testator before two witnesses) is 100% valid and can be probated by any competent High Court or District Court.",
+              text: "Yes. Under Section 18 of the Filing Act, 1908, Will filing is a choice. An plain Will signed on plain A4 paper in compliance with Section 63 (signed by the Will maker before two witnesses) is 100% valid and can be probated by any competent High Court or District Court.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function ProbateCheckerPage() {
             name: "What is the difference between Probate and a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Probate covers both movable and immovable assets specified in a Will. A Succession Certificate is issued under Part X of the Indian Succession Act exclusively for movable debts and securities (such as bank deposits, shares, and mutual funds) when there is no Will or when only movable assets need clearance. A Succession Certificate cannot be issued for real estate.",
+              text: "Probate covers both cash and land assets specified in a Will. A Estate Paper is issued under Part X of the Indian Succession Act exclusively for cash debts and securities (such as bank deposits, shares, and mutual funds) when there is no Will or when only cash assets need clearance. A Estate Paper cannot be issued for real estate.",
             },
           },
           {
@@ -218,7 +218,7 @@ export default function ProbateCheckerPage() {
             name: "Do Non-Resident Indians (NRIs) need an Indian probate for foreign Wills?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. If an NRI leaves a foreign Will probated in the US, UK, Canada, or UAE, Indian institutions will not automatically accept the foreign grant for Indian property. Under Section 228 of the Indian Succession Act, 1925, an ancillary petition for Letters of Administration with authenticated copy of the foreign Will must be filed in an Indian court.",
+              text: "Yes. If an NRI leaves a foreign Will probated in the US, UK, Canada, or UAE, Indian institutions will not automatically accept the foreign grant for Indian property. Under Section 228 of the Indian Succession Act, 1925, an ancillary petition for Letters of Care with authenticated copy of the foreign Will must be filed in an Indian court.",
             },
           },
         ],

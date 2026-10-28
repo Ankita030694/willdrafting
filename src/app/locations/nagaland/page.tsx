@@ -276,7 +276,7 @@ export default function NagalandLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page before two competent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page before two competent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",

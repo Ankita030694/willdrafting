@@ -43,10 +43,10 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-foundation", label: "1. Section 23 Statutory Ground" },
-  { id: "interactive-checker", label: "2. Interactive Section 23 Checker" },
+  { id: "statutory-foundation", label: "1. Section 23 Legal Ground" },
+  { id: "interactive-checker", label: "2. Free Section 23 Checker" },
   { id: "precedents-urmila-vs-sudesh", label: "3. Landmark Precedents: SC Rulings" },
-  { id: "four-statutory-conditions", label: "4. The 4 Statutory Conditions" },
+  { id: "four-statutory-conditions", label: "4. The 4 Legal Conditions" },
   { id: "why-will-beats-gift-deed", label: "5. Why a Will Beats a Gift Deed" },
   { id: "tribunal-filing-sop", label: "6. Tribunal Filing SOP & Timeline" },
   { id: "third-party-purchasers", label: "7. Third Party Sales & Section 23(2)" },
@@ -55,25 +55,25 @@ const TOC_ITEMS = [
   { id: "protective-clauses-templates", label: "10. Protective Clauses & Checklist" },
   { id: "institutional-profile", label: "11. AMA Legal Solutions Counsel" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Resources" },
+  { id: "statutory-citations", label: "13. Legal Citations & Resources" },
 ];
 
 const FAQS = [
   {
-    q: "Can parents cancel a registered gift deed given to their child in India?",
-    a: "Yes. Under Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, an elderly parent who transferred property by gift deed can petition the Maintenance Tribunal to declare the transfer void. If the child fails or refuses to provide basic amenities and physical needs, the law treats the transfer as tainted by fraud, coercion, or undue influence.",
+    q: "Can parents cancel a filed gift deed given to their child in India?",
+    a: "Yes. Under Section 23(1) of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, an elderly parent who transferred asset by gift deed can petition the Maintenance Tribunal to declare the transfer void. If the child fails or refuses to provide basic amenities and physical needs, the law treats the transfer as tainted by fraud, coercion, or undue influence.",
   },
   {
-    q: "What are the 4 mandatory conditions required under Section 23(1)?",
-    a: "The 4 conditions are: (1) The parent was at least 60 years old when signing the transfer, (2) The deed was executed after the Act commenced (post-December 2007), (3) The transfer was subject to the condition that the child provide basic amenities and physical needs, and (4) The child neglected, refused, or failed to provide such maintenance.",
+    q: "What are the 4 needed conditions required under Section 23(1)?",
+    a: "The 4 conditions are: (1) The parent was at least 60 years old when signing the transfer, (2) The deed was signed after the Act commenced (post-December 2007), (3) The transfer was subject to the condition that the child provide basic amenities and physical needs, and (4) The child neglected, refused, or failed to provide such maintenance.",
   },
   {
     q: "What did the Supreme Court hold in Urmila Dixit v. Sunil Sharan Dixit (2025)?",
-    a: "In Urmila Dixit (2025 INSC 20), the Supreme Court held that the Senior Citizens Act is beneficial social legislation that requires purposive interpretation. Even if the registered gift deed does not contain a specific maintenance clause, contemporaneous documents like a promissory note (vachan patra), affidavit, or mutual undertaking prove that the transfer was conditional upon care.",
+    a: "In Urmila Dixit (2025 INSC 20), the Supreme Court held that the Senior Citizens Act is beneficial social legislation that requires purposive interpretation. Even if the filed gift deed does not contain a specific maintenance clause, contemporaneous papers like a promissory note (vachan patra), sworn note, or mutual undertaking prove that the transfer was conditional upon care.",
   },
   {
     q: "How does the Sudesh Chhikara ruling affect gift deed cancellation?",
-    a: "In Sudesh Chhikara v. Ramti Devi (2022), the Supreme Court ruled that a Maintenance Tribunal cannot void a gift deed arbitrarily if it was executed out of pure affection with no condition of maintenance whatsoever. In such unconditional transfers, parents must establish neglect and seek monthly maintenance under Section 5 or file a regular civil court cancellation suit.",
+    a: "In Sudesh Chhikara v. Ramti Devi (2022), the Supreme Court ruled that a Maintenance Tribunal cannot void a gift deed arbitrarily if it was signed out of pure affection with no condition of maintenance whatsoever. In such unconditional transfers, parents must establish neglect and seek monthly maintenance under Section 5 or file a regular civil court cancellation suit.",
   },
   {
     q: "Can the Maintenance Tribunal evict an abusive child from the parent's home?",
@@ -85,11 +85,11 @@ const FAQS = [
   },
   {
     q: "What happens if the child has already mortgaged or sold the house to an outsider?",
-    a: "Under Section 23(2), if a senior citizen has a right to maintenance out of an estate, that right is enforceable against a third-party purchaser if the purchaser had notice of the right, or if the transfer was gratuitous. However, against a bona fide purchaser for value without notice, recovery through the summary Tribunal is difficult and requires civil court litigation.",
+    a: "Under Section 23(2), if a senior citizen has a right to maintenance out of an estate, that right is enforceable against a third-party purchaser if the purchaser had notice of the right, or if the transfer was gratuitous. However, against a bona fide purchaser for value without notice, recovery through the summary Tribunal is difficult and requires civil court court fights.",
   },
   {
-    q: "Why is drafting a Will safer for elderly parents than gifting property during life?",
-    a: "A Will takes effect only after death and remains 100% revocable during your entire lifetime. You retain absolute ownership, rental income, and sale rights while alive. You can alter or revoke your Will at any time without asking for your children's permission. A gift deed immediately surrenders title, leaving parents vulnerable.",
+    q: "Why is drafting a Will safer for elderly parents than gifting asset during life?",
+    a: "A Will takes effect only after death and remains 100% revocable during your entire lifetime. You retain absolute ownership, rental income, and sale rights while alive. You can alter or revoke your Will at any time without asking for your children's permission. A gift deed right away surrenders title, leaving parents vulnerable.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function SeniorCitizenGiftRevocationClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedRecital, setCopiedRecital] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
@@ -392,7 +392,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 5, 7, 23 & 24 of the Maintenance and Welfare of Parents and
@@ -416,16 +416,16 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Deeming Fiction:</strong> Under Section 23(1), if a child neglects
-                    their maintenance obligations after receiving property, the law deems the gift deed
-                    to have been executed through fraud, coercion, or undue influence.
+                    <strong>Legal Deeming Fiction:</strong> Under Section 23(1), if a child neglects
+                    their maintenance obligations after receiving asset, the law deems the gift deed
+                    to have been signed through fraud, coercion, or undue influence.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Urmila Dixit (2025) Benchmark:</strong> The Supreme Court clarified that
-                    separate undertakings, affidavits, or promissory notes (<em>vachan patra</em>) signed
+                    separate undertakings, sworn notes, or promissory notes (<em>vachan patra</em>) signed
                     around the time of the transfer are legally valid to prove that the gift was
                     conditional upon care.
                   </span>
@@ -435,14 +435,14 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   <span>
                     <strong>Summary SDM Tribunal:</strong> Parents do not need to fight decades-long
                     civil court trials. Petitions are heard by the Sub-Divisional Magistrate acting as
-                    the Maintenance Tribunal with a statutory 90-day disposal mandate.
+                    the Maintenance Tribunal with a legal 90-day disposal mandate.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Eviction of Defaulting Children:</strong> Tribunals and High Courts have the
-                    inherent authority to order the eviction of abusive children and restore peaceful
+                    inherent office to order the eviction of abusive children and restore peaceful
                     possession to the elderly parent.
                   </span>
                 </li>
@@ -456,30 +456,30 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Section 23 Statutory Ground: Voiding Property Transfers
+                1. Section 23 Legal Ground: Voiding Asset Transfers
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In Indian society, elderly parents frequently transfer residential properties or
-                  agricultural land to their adult children during their lifetime. This is often done
-                  through registered gift deeds or release deeds under the emotional promise of care
-                  and medical support. However, once title deeds are registered, parents sometimes face
+                  In Indian society, elderly parents frequently transfer home assets or
+                  farm land to their adult children during their lifetime. This is often done
+                  through filed gift deeds or release deeds under the emotional promise of care
+                  and medical support. However, once title deeds are filed, parents sometimes face
                   neglect, physical mistreatment, or outright abandonment.
                 </p>
                 <p>
                   To counter this social crisis, Parliament enacted the{" "}
                   <strong>Maintenance and Welfare of Parents and Senior Citizens Act, 2007 (MWPSC Act)</strong>.
-                  The most potent legal provision within this legislation is <strong>Section 23(1)</strong>.
+                  The most potent legal rule within this legislation is <strong>Section 23(1)</strong>.
                   This section creates an extraordinary legal remedy. It empowers senior citizens to
-                  approach a dedicated administrative tribunal rather than a lengthy civil court to have
+                  approach a dedicated office tribunal rather than a lengthy civil court to have
                   their gift deeds declared null and void.
                 </p>
                 <p>
-                  Section 23(1) establishes a statutory deeming fiction. Where a senior citizen transfers
-                  property subject to the condition of receiving basic amenities and physical needs, and
-                  the transferee child subsequently refuses or fails to provide them, the law presumes the
+                  Section 23(1) establishes a legal deeming fiction. Where a senior citizen transfers
+                  asset subject to the condition of receiving basic amenities and physical needs, and
+                  the transferee child then refuses or fails to provide them, the law presumes the
                   transfer was procured through <em>fraud, coercion, or undue influence</em>. The Maintenance
-                  Tribunal can void the transfer and order the local Sub-Registrar to cancel the deed.
+                  Tribunal can void the transfer and order the local SRO to cancel the deed.
                 </p>
               </div>
             </section>
@@ -491,10 +491,10 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>INTERACTIVE EVALUATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive Section 23 Gift Revocation Checker
+                2. Free Section 23 Gift Revocation Checker
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Answer the 5 statutory questions below to evaluate whether your property transfer qualifies
+                Answer the 5 legal questions below to evaluate whether your asset transfer qualifies
                 for cancellation under Section 23 and calculate your Tribunal recovery probability.
               </p>
 
@@ -549,7 +549,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     {/* Date Era */}
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center justify-between">
-                        <span>Execution Date of Transfer Deed</span>
+                        <span>Signing Date of Transfer Deed</span>
                         <span className="text-[11px] font-semibold text-slate-500">Act Timing</span>
                       </label>
                       <div className="grid grid-cols-2 gap-2">
@@ -597,7 +597,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     {/* Instrument Type */}
                     <div className="space-y-1.5">
                       <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                        Transfer Document Executed
+                        Transfer Paper Signed
                       </label>
                       <select
                         value={instrumentType}
@@ -608,12 +608,12 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                         }
                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 focus:outline-hidden focus:border-[#C65378] focus:ring-2 focus:ring-rose-100"
                       >
-                        <option value="gift_deed">Registered Gift Deed (Daanpatra / Hiba)</option>
+                        <option value="gift_deed">Filed Gift Deed (Daanpatra / Hiba)</option>
                         <option value="settlement_release">
-                          Settlement Deed or Release / Relinquishment Deed
+                          Deal Deed or Release / Release Deed
                         </option>
                         <option value="sale_nominal">
-                          Registered Sale Deed with Unpaid / Nominal Consideration
+                          Filed Sale Deed with Unpaid / Nominal Consideration
                         </option>
                       </select>
                     </div>
@@ -648,7 +648,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     <span>STEP 3: MAINTENANCE OBLIGATION &amp; UNDERTAKING (SC TEST)</span>
                   </div>
                   <p className="text-xs text-slate-600">
-                    Did the property transfer include an obligation to feed, house, or care for the parent?
+                    Did the asset transfer include an obligation to feed, house, or care for the parent?
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -684,7 +684,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                         <Award className="w-4 h-4 text-[#C65378]" />
                       </div>
                       <div className="text-[11px] text-slate-600 mt-1 leading-snug">
-                        Separate contemporaneous promissory note, affidavit, or letter executed alongside
+                        Separate contemporaneous promissory note, sworn note, or letter signed alongside
                         the deed (Urmila Dixit 2025 rule).
                       </div>
                     </button>
@@ -763,7 +763,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       {
                         id: "unauthorized_sale_attempt",
                         label: "Attempting to Sell or Mortgage",
-                        desc: "Negotiating with buyers or mortgaging property without consent.",
+                        desc: "Negotiating with buyers or mortgaging asset without consent.",
                       },
                     ].map((item) => {
                       const isSelected = selectedDefaults.includes(item.id);
@@ -812,7 +812,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     >
                       <div className="font-extrabold text-slate-900">Parent in Possession</div>
                       <div className="text-[11px] text-slate-600 mt-0.5">
-                        Senior citizen still resides in or holds physical keys to property.
+                        Senior citizen still resides in or holds physical keys to asset.
                       </div>
                     </button>
                     <button
@@ -840,7 +840,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     >
                       <div className="font-extrabold text-slate-900">Sold to Third Party</div>
                       <div className="text-[11px] text-slate-600 mt-0.5">
-                        Child executed registered deed to an outsider or bank mortgage.
+                        Child signed filed deed to an outsider or bank mortgage.
                       </div>
                     </button>
                   </div>
@@ -965,8 +965,8 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                           <strong>Action Plan:</strong> File an immediate statutory application under{" "}
                           <strong>Section 23(1) and Section 5</strong> of the MWPSC Act before the
                           Sub-Divisional Magistrate (SDM) / Maintenance Tribunal. Seek dual reliefs: (1) An
-                          order declaring the gift deed null and void with directions to the Sub-Registrar
-                          to record cancellation, and (2) Police assistance for eviction and restoration of
+                          order declaring the gift deed null and void with directions to the SRO
+                          to record cancellation, and (2) Police help for eviction and restoration of
                           peaceful possession.
                         </p>
                       )}
@@ -974,7 +974,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                         <p>
                           <strong>Action Plan:</strong> File a Section 23 petition relying directly on the
                           Supreme Court precedent in <em>Urmila Dixit v. Sunil Sharan Dixit (2025)</em>.
-                          Submit supporting affidavits from family relatives, WhatsApp communications,
+                          Submit supporting sworn notes from family relatives, WhatsApp communications,
                           and medical bills to establish that the gift was made on the condition of lifelong
                           support. Also pray for monthly maintenance under Section 5.
                         </p>
@@ -1014,7 +1014,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-bold text-xs sm:text-sm shadow-md transition-colors"
                     >
                       <PhoneCall className="w-4 h-4" />
-                      <span>Consult Tribunal Advocate</span>
+                      <span>Consult Tribunal Lawyer</span>
                     </Link>
                   </div>
                 </div>
@@ -1041,8 +1041,8 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 />
               </div>
               <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed italic">
-                Statutory diagnostic roadmap illustrating parental gift deed revocation grounds under Section 23(1),
-                the 4 mandatory prerequisite conditions, and landmark Supreme Court benchmarks in Urmila Dixit (2025)
+                Legal diagnostic roadmap illustrating parental gift deed revocation grounds under Section 23(1),
+                the 4 needed prerequisite conditions, and landmark Supreme Court benchmarks in Urmila Dixit (2025)
                 and Sudesh Chhikara.
               </p>
             </div>
@@ -1078,8 +1078,8 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       The Supreme Court held that Section 23(1) requires two conditions to be fulfilled
                       concurrently: (1) The transfer must be subject to the condition of providing basic
                       amenities, and (2) The transferee must have refused or failed to provide them. If a
-                      gift deed is strictly unconditional with no written requirement of care, the
-                      Tribunal cannot presume fraud merely because children subsequently fell out with
+                      gift deed is strictly unconditional with no written rule of care, the
+                      Tribunal cannot presume fraud merely because children then fell out with
                       parents.
                     </p>
                     <div className="text-[11px] font-bold text-slate-800 pt-1">
@@ -1098,7 +1098,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A division bench of Justices C.T. Ravikumar and Sanjay Karol affirmed that the MWPSC
                       Act is beneficial social welfare legislation designed to protect elderly citizens.
-                      The Court ruled that even if the registered gift deed did not contain an express
+                      The Court ruled that even if the filed gift deed did not contain an express
                       condition on its face, contemporaneous instruments such as a <em>Vachan Patra</em>{" "}
                       (promissory undertaking) execute a binding conditional transfer that triggers
                       Section 23 revocation upon neglect.
@@ -1124,7 +1124,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>STATUTORY CRITERIA</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. The 4 Statutory Prerequisite Conditions Explained
+                4. The 4 Legal Prerequisite Conditions Explained
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1139,12 +1139,12 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     </div>
                     <div className="space-y-1">
                       <div className="font-extrabold text-slate-900 text-sm">
-                        Senior Citizen Status on Date of Execution (Age 60+)
+                        Senior Citizen Status on Date of Signing (Age 60+)
                       </div>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Under Section 2(h) of the Act, a senior citizen means any individual who is a
+                        Under Section 2(h) of the Act, a senior citizen means any single who is a
                         citizen of India and has attained the age of 60 years or above. The transferor
-                        must have been at least 60 years old on the date the transfer deed was executed.
+                        must have been at least 60 years old on the date the transfer deed was signed.
                       </p>
                     </div>
                   </div>
@@ -1160,7 +1160,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       <p className="text-xs text-slate-600 leading-relaxed">
                         Section 23 explicitly applies to transfers made <em>"after the commencement of
                         this Act"</em>. Because the Central Act received Presidential assent on December
-                        29, 2007 and was notified across Indian states in 2008, property transfers executed
+                        29, 2007 and was notified across Indian states in 2008, asset transfers signed
                         prior to late 2007 cannot be voided under Section 23.
                       </p>
                     </div>
@@ -1210,13 +1210,13 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>SUCCESSION STRATEGY</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                5. Property Comparison: Why a Will Beats a Gift Deed
+                5. Asset Comparison: Why a Will Beats a Gift Deed
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Most parents execute gift deeds because they wish to avoid future probate procedures or
-                  family disputes after death. However, executing a lifetime gift deed is legally dangerous.
-                  It immediately alienates title, making the parent dependent upon the child&rsquo;s goodwill.
+                  Most parents execute gift deeds because they wish to avoid future probate steps or
+                  family fights after death. However, signing a lifetime gift deed is legally dangerous.
+                  It right away alienates title, making the parent dependent upon the child&rsquo;s goodwill.
                 </p>
                 <p>
                   A legally structured Will provides 100% security because it transfers ownership only upon
@@ -1229,7 +1229,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     <thead>
                       <tr className="bg-slate-900 text-white font-extrabold border-b border-slate-800">
                         <th className="py-3.5 px-4">Legal Parameter</th>
-                        <th className="py-3.5 px-4 bg-[#C65378] text-white">Registered Will (Recommended)</th>
+                        <th className="py-3.5 px-4 bg-[#C65378] text-white">Filed Will (Recommended)</th>
                         <th className="py-3.5 px-4 bg-slate-800 text-slate-200">Lifetime Gift Deed (Risky)</th>
                       </tr>
                     </thead>
@@ -1240,7 +1240,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                           Takes effect ONLY after demise. Parent remains 100% absolute owner for life.
                         </td>
                         <td className="py-3 px-4 text-rose-800 font-semibold">
-                          Takes effect immediately on registration. Parent ceases to own the house.
+                          Takes effect right away on filing. Parent ceases to own the house.
                         </td>
                       </tr>
                       <tr>
@@ -1253,9 +1253,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                         </td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 font-bold text-slate-900">Stamp Duty &amp; Registration</td>
+                        <td className="py-3 px-4 font-bold text-slate-900">Stamp Duty &amp; Filing</td>
                         <td className="py-3 px-4 text-emerald-800 font-semibold bg-rose-50/20">
-                          Nominal registration fee (₹100 to ₹1,000 depending on state). ₹0 Stamp Duty.
+                          Nominal filing fee (₹100 to ₹1,000 depending on state). ₹0 Stamp Duty.
                         </td>
                         <td className="py-3 px-4 text-rose-800 font-semibold">
                           Heavy stamp duty (2% to 7% of market circle rate, costing lakhs in many states).
@@ -1264,7 +1264,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-900">Rental Income &amp; Sale Rights</td>
                         <td className="py-3 px-4 text-emerald-800 font-semibold bg-rose-50/20">
-                          Parent keeps 100% rental income, right to mortgage, or right to sell property anytime.
+                          Parent keeps 100% rental income, right to mortgage, or right to sell asset anytime.
                         </td>
                         <td className="py-3 px-4 text-rose-800 font-semibold">
                           Child receives rents. Child can attempt to mortgage or sell house to third parties.
@@ -1287,7 +1287,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs text-emerald-900 flex items-center justify-between">
                     <div>
                       <strong>Need to Secure Your Assets Without Risking Neglect?</strong> Draft a customized,
-                      challenge-proof Indian Will online in 15 minutes.
+                      fight-proof Indian Will online in 15 minutes.
                     </div>
                     <button
                       onClick={handleStartDraft}
@@ -1307,14 +1307,14 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>PROCEDURAL ROADMAP</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Tribunal Filing SOP: Procedure Before the SDM Court
+                6. Tribunal Filing SOP: Step Before the SDM Court
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A petition under Section 23 is not filed in a regular Civil Court. It is presented before
                   the <strong>Maintenance Tribunal</strong> headed by the Sub-Divisional Magistrate (SDM)
-                  or Revenue Divisional Officer (RDO) possessing territorial jurisdiction where the senior
-                  citizen resides or where the property is situated.
+                  or Revenue Divisional Officer (RDO) possessing territorial area where the senior
+                  citizen resides or where the asset is situated.
                 </p>
 
                 <div className="space-y-3">
@@ -1361,7 +1361,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       <p className="text-xs text-slate-600 mt-0.5">
                         During pendency, the Tribunal can order monthly interim allowance (up to ₹10,000
                         or higher as per recent High Court directions) and restrain the child from creating
-                        third-party rights or mortgaging the property.
+                        third-party rights or mortgaging the asset.
                       </p>
                     </div>
                   </div>
@@ -1376,7 +1376,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       </div>
                       <p className="text-xs text-slate-600 mt-0.5">
                         The Tribunal passes an order declaring the gift deed void. A copy of the order is
-                        served on the local Sub-Registrar to record cancellation in Book I registers,
+                        served on the local SRO to record cancellation in Book I registers,
                         reverting legal title exclusively back to the senior citizen.
                       </p>
                     </div>
@@ -1392,7 +1392,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                       </div>
                       <p className="text-xs text-slate-600 mt-0.5">
                         If the child refuses to vacate the premises, the SDM directs the local police
-                        authorities to physically evict the child and hand over vacant keys to the parent
+                        offices to physically evict the child and hand over vacant keys to the parent
                         pursuant to <em>S. Vanitha (SC 2020)</em>.
                       </p>
                     </div>
@@ -1408,12 +1408,12 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>THIRD PARTY ALIENATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Section 23(2) Rule: When Property Is Sold to Third Party
+                7. Section 23(2) Rule: When Asset Is Sold to Third Party
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  A frequent challenge arises when a child who received a gift deed rapidly sells or
-                  mortgages the property to a third-party purchaser or commercial bank before the parent can
+                  A frequent fight arises when a child who received a gift deed rapidly sells or
+                  mortgages the asset to a third-party purchaser or shop bank before the parent can
                   approach the Maintenance Tribunal. Section 23(2) of the Act addresses this contingency:
                 </p>
                 <div className="p-4 rounded-2xl bg-rose-50/50 border border-rose-200 text-xs sm:text-sm text-slate-800 leading-relaxed">
@@ -1424,13 +1424,13 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   consideration and without notice of right."</em>
                 </div>
                 <p>
-                  This means that if the child gifted the property to their spouse (gratuitous transfer) or
-                  if the outside buyer purchased the property knowing the elderly parent was being ousted
+                  This means that if the child gifted the asset to their spouse (gratuitous transfer) or
+                  if the outside buyer purchased the asset knowing the elderly parent was being ousted
                   (transfer with notice), the senior citizen can enforce their rights against that buyer.
                 </p>
                 <p>
-                  However, if an outsider bought the property for fair market value in good faith without
-                  knowing of the family dispute, the Maintenance Tribunal cannot unilaterally cancel the
+                  However, if an outsider bought the asset for fair market value in good faith without
+                  knowing of the family fight, the Maintenance Tribunal cannot unilaterally cancel the
                   third-party sale deed. In such cases, the senior citizen must file a declaration suit in
                   the Civil Court while pursuing monthly maintenance and compensation against the child
                   before the Tribunal.
@@ -1449,7 +1449,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  In addition to civil property revocation under Section 23, the MWPSC Act imposes direct
+                  In addition to civil asset revocation under Section 23, the MWPSC Act imposes direct
                   criminal liability on children who abandon their elderly parents.
                 </p>
                 <p>
@@ -1461,7 +1461,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 </p>
                 <p>
                   Senior citizens facing physical assault or intimidation can also register an FIR under
-                  the relevant provisions of the Bharatiya Nyaya Sanhita, 2023 (BNS) for criminal
+                  the relevant rules of the Bharatiya Nyaya Sanhita, 2023 (BNS) for criminal
                   intimidation, wrongful confinement, and voluntarily causing hurt.
                 </p>
               </div>
@@ -1483,11 +1483,11 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     <span className="text-slate-500">Deed Cancelled in 75 Days</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A 72-year-old retired central government officer gifted his ancestral floor in Vasant
+                    A 72-year-old retired central government officer gifted his family floor in Vasant
                     Kunj to his elder son. The gift deed contained a recital that the son would care for the
                     father&rsquo;s medical needs. Within 8 months, the son cut electricity, locked the kitchen,
                     and stopped buying heart medication. Counsel filed a Section 23 petition before the SDM
-                    (South). The SDM declared the deed void, directed the Sub-Registrar to expunge the
+                    (South). The SDM declared the deed void, directed the SRO to expunge the
                     transfer, and deployed Delhi Police to evict the son within 15 days.
                   </p>
                 </div>
@@ -1499,7 +1499,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     In Bengaluru, a widowed mother was harassed by her son and daughter-in-law after gifting
-                    them a residential villa. The daughter-in-law filed domestic violence claims to resist
+                    them a home villa. The daughter-in-law filed domestic violence claims to resist
                     eviction. Applying the Supreme Court ruling in <em>S. Vanitha</em>, the Karnataka High
                     Court ruled that a senior citizen&rsquo;s right to live with peace and dignity overrides
                     conflicting claims under the DV Act, upholding the SDM&rsquo;s eviction order.
@@ -1534,7 +1534,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  If you are currently contemplating gifting property to a child, you must include a
+                  If you are currently contemplating gifting asset to a child, you must include a
                   watertight protective recital in the gift deed. If you are already facing neglect, use our
                   filing checklist to assemble your Tribunal petition docket.
                 </p>
@@ -1623,23 +1623,23 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-black text-slate-900">
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </h3>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession &amp; Elder Law Litigator • AMA Legal Solutions
+                      Senior Estate &amp; Elder Law Litigator • AMA Legal Solutions
                     </div>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Advocate Anuj Anand Malik has represented hundreds of senior citizens before Maintenance
+                  Lawyer Anuj Anand Malik has represented hundreds of senior citizens before Maintenance
                   Tribunals, Appellate Tribunals (District Magistrates), and High Courts across India. His
                   practice focuses on Section 23 gift cancellations, senior citizen eviction petitions,
-                  testamentary probate, and challenge-proof estate succession structuring.
+                  Will probate, and fight-proof estate estate structuring.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-center text-xs">
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div className="font-extrabold text-slate-900 text-base">500+</div>
-                    <div className="text-slate-600 text-[11px] mt-0.5">Succession Disputes Handled</div>
+                    <div className="text-slate-600 text-[11px] mt-0.5">Estate Fights Handled</div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div className="font-extrabold text-slate-900 text-base">Pan-India</div>
@@ -1700,7 +1700,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <span>STATUTORY CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Legal Redressal Resources
+                13. Legal Citations &amp; Legal Redressal Resources
               </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 space-y-3 text-xs text-slate-700 leading-relaxed">
                 <p>
@@ -1729,7 +1729,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                     href="/tools/gift-deed-vs-will-stamp-duty-calculator"
                     className="text-[#C65378] font-bold underline"
                   >
-                    Gift Deed vs Will Stamp Duty Calculator
+                    Gift Deed vs Will Stamp Duty Tool
                   </Link>{" "}
                   or check your estate plan using the{" "}
                   <Link
@@ -1742,7 +1742,29 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 </p>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1755,21 +1777,21 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Section 23 Tribunal petitions, elder property restitution, High Court
-                probate litigation, and challenge-proof Indian Will drafting.
+                Expert in Section 23 Tribunal petitions, elder asset restitution, High Court
+                probate court fights, and fight-proof Indian Will drafting.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1786,7 +1808,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   Retain 100% Ownership For Life With a Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Never surrender your title deeds to children during your lifetime. A registered Will keeps
+                  Never surrender your title deeds to children during your lifetime. A filed Will keeps
                   you in complete control of your home and rents until your demise.
                 </p>
                 <button
@@ -1809,7 +1831,7 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   <span>SECTION 23 LITIGATION DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Facing Neglect or Property Ouster by Children?
+                  Facing Neglect or Asset Ouster by Children?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Our elder law litigators handle Section 23 Tribunal petitions, police protection orders,
@@ -1820,14 +1842,14 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
                 <div className="pt-1">
                   <Link
                     href="/services/will-dispute-contest-litigation-lawyer"
                     className="text-[11px] font-semibold text-[#C65378] hover:underline"
                   >
-                    View Will Dispute &amp; Litigation Services →
+                    View Will Fight &amp; Court Fights Services →
                   </Link>
                 </div>
               </div>

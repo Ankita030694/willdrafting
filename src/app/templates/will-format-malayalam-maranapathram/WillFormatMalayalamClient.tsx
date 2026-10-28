@@ -38,22 +38,22 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-basis", label: "1. Statutory Basis: Indian Succession Act & Kerala Rules" },
+  { id: "statutory-basis", label: "1. Legal Basis: Indian Succession Act & Kerala Rules" },
   { id: "malayalam-maranapathram-format", label: "2. Complete Maranapathram Format: Native Malayalam Draft" },
   { id: "english-translation", label: "3. English Translation: Malayalam Will Clauses Explained" },
-  { id: "clause-selector", label: "4. Interactive Clause Selector: Customize Your Kerala Will" },
+  { id: "clause-selector", label: "4. Free Clause Selector: Customize Your Kerala Will" },
   { id: "kerala-land-schedule", label: "5. Kerala Land Schedule: Resurvey & Thandapper Details" },
   { id: "kerala-probate-exemption", label: "6. Kerala Probate Moat: Why High Court Probate Is Exempt" },
-  { id: "pearl-fee-calculator", label: "7. PEARL Portal Fee Guide & SRO Registration Rules" },
-  { id: "comparison-table", label: "8. Comparison: Registered Will vs Dhanam vs Ozhivupathram" },
-  { id: "registration-sop", label: "9. Step-by-Step SOP: Drafting to Registration in Kerala" },
+  { id: "pearl-fee-calculator", label: "7. PEARL Portal Fee Guide & SRO Filing Rules" },
+  { id: "comparison-table", label: "8. Comparison: Filed Will vs Dhanam vs Ozhivupathram" },
+  { id: "registration-sop", label: "9. Step-by-Step SOP: Drafting to Filing in Kerala" },
   { id: "pokkuvarav-sop", label: "10. Pokkuvarav SOP: Thandapper Transfer at Village Office" },
   { id: "case-studies", label: "11. Practical Case Studies: Kochi, Kozhikode & Thrissur" },
-  { id: "checklist-medical-cert", label: "12. Sub-Registrar Document Checklist & Doctor Certificate" },
-  { id: "succession-tools", label: "13. Contextual Estate Calculators & Succession Tools" },
-  { id: "legal-backing", label: "14. Legal Backing: Senior Counsel Succession Profile" },
+  { id: "checklist-medical-cert", label: "12. SRO Paper Checklist & Doctor Paper" },
+  { id: "succession-tools", label: "13. Contextual Estate Tools & Estate Tools" },
+  { id: "legal-backing", label: "14. Legal Backing: Senior Counsel Estate Profile" },
   { id: "faqs", label: "15. Frequently Asked Questions: Kerala Maranapathram" },
-  { id: "statutory-citations", label: "16. Official Kerala Statutory References & Portals" },
+  { id: "statutory-citations", label: "16. Official Kerala Legal References & Portals" },
 ];
 
 const FAQS_DATA = [
@@ -63,7 +63,7 @@ const FAQS_DATA = [
   },
   {
     q: "കേരളത്തിൽ മരണപത്രം സബ് രജിസ്ട്രാർ ഓഫീസിൽ രജിസ്റ്റർ ചെയ്യുന്നത് നിർബന്ധമാണോ?",
-    a: "രജിസ്ട്രേഷൻ ആക്ട് 1908 സെക്ഷൻ 18(e) പ്രകാരം വിൽപത്രം രജിസ്റ്റർ ചെയ്യുന്നത് നിർബന്ധമല്ല, ഐച്ഛികമാണ് (optional). എന്നാൽ രജിസ്ട്രേഷൻ വകുപ്പിന്റെ PEARL പോർട്ടൽ വഴി സബ് രജിസ്ട്രാർ ഓഫീസിൽ രജിസ്റ്റർ ചെയ്യുന്നത് ഭാവിയിൽ ഉയരാനിടയുള്ള വ്യാജരേഖാ ആരോപണങ്ങളും കോടതി തർക്കങ്ങളും ഒഴിവാക്കാൻ അതിശക്തമായ നിയമ പരിരക്ഷ നൽകുന്നു.",
+    a: "രജിസ്ട്രേഷൻ ആക്ട് 1908 സെക്ഷൻ 18(e) പ്രകാരം വിൽപത്രം രജിസ്റ്റർ ചെയ്യുന്നത് നിർബന്ധമല്ല, ഐച്ഛികമാണ് (a choice). എന്നാൽ രജിസ്ട്രേഷൻ വകുപ്പിന്റെ PEARL പോർട്ടൽ വഴി സബ് രജിസ്ട്രാർ ഓഫീസിൽ രജിസ്റ്റർ ചെയ്യുന്നത് ഭാവിയിൽ ഉയരാനിടയുള്ള വ്യാജരേഖാ ആരോപണങ്ങളും കോടതി തർക്കങ്ങളും ഒഴിവാക്കാൻ അതിശക്തമായ നിയമ പരിരക്ഷ നൽകുന്നു.",
   },
   {
     q: "കേരളത്തിലെ സ്വത്തുക്കൾക്കുള്ള മരണപത്രത്തിന് കോടതി പ്രൊബേറ്റ് (Probate) നിർബന്ധമാണോ?",
@@ -71,11 +71,11 @@ const FAQS_DATA = [
   },
   {
     q: "മരണപത്രത്തിൽ എത്ര സാക്ഷികൾ ഒപ്പുവെക്കണം?",
-    a: "സെക്ഷൻ 63(c) പ്രകാരം കുറഞ്ഞത് 2 സാക്ഷികൾ (Attesting Witnesses) വിൽപത്രം തയ്യാറാക്കുന്നയാൾ ഒപ്പിടുന്നത് നേരിട്ട് കണ്ട് സാക്ഷ്യപ്പെടുത്തി ഒപ്പിടണം. സെക്ഷൻ 67 പ്രകാരം വിൽപത്രത്തിലൂടെ സ്വത്ത് ലഭിക്കുന്ന ഗുണഭോക്താവോ അവരുടെ ജീവിതപങ്കാളിയോ സാക്ഷികളാകാൻ പാടില്ല. വിശ്വസ്തരായ സ്വതന്ത്ര വ്യക്തികളായിരിക്കണം സാക്ഷികൾ.",
+    a: "സെക്ഷൻ 63(c) പ്രകാരം കുറഞ്ഞത് 2 സാക്ഷികൾ (Signing Witnesses) വിൽപത്രം തയ്യാറാക്കുന്നയാൾ ഒപ്പിടുന്നത് നേരിട്ട് കണ്ട് സാക്ഷ്യപ്പെടുത്തി ഒപ്പിടണം. സെക്ഷൻ 67 പ്രകാരം വിൽപത്രത്തിലൂടെ സ്വത്ത് ലഭിക്കുന്ന ഗുണഭോക്താവോ അവരുടെ ജീവിതപങ്കാളിയോ സാക്ഷികളാകാൻ പാടില്ല. വിശ്വസ്തരായ സ്വതന്ത്ര വ്യക്തികളായിരിക്കണം സാക്ഷികൾ.",
   },
   {
-    q: "കുടുംബ സ്വത്ത് (Ancestral Property) വിൽപത്രത്തിലൂടെ പൂർണ്ണമായി എഴുതിക്കൊടുക്കാൻ കഴിയുമോ?",
-    a: "സ്വയം ആർജ്ജിച്ച സ്വത്തുക്കൾ (Self-Acquired Property) ആർക്കും തന്റെ ഇഷ്ടപ്രകാരം എഴുതിക്കൊടുക്കാം. കേരളത്തിൽ 1975 ലെ ജോയിന്റ് ഹിന്ദു ഫാമിലി സിസ്റ്റം (അബോലിഷൻ) ആക്ട് പ്രകാരം ജന്മാവകാശം റദ്ദാക്കപ്പെട്ടതിനാൽ, കുടുംബ സ്വത്തിൽ തനിക്ക് വിഭജനത്തിലൂടെ ലഭിച്ച നിയമപരമായ ഓഹരിയിൽ മാത്രമേ ഒരാൾക്ക് വിൽപത്രം എഴുതാൻ അവകാശമുള്ളൂ.",
+    q: "കുടുംബ സ്വത്ത് (Family Asset) വിൽപത്രത്തിലൂടെ പൂർണ്ണമായി എഴുതിക്കൊടുക്കാൻ കഴിയുമോ?",
+    a: "സ്വയം ആർജ്ജിച്ച സ്വത്തുക്കൾ (Self-Acquired Asset) ആർക്കും തന്റെ ഇഷ്ടപ്രകാരം എഴുതിക്കൊടുക്കാം. കേരളത്തിൽ 1975 ലെ ജോയിന്റ് ഹിന്ദു ഫാമിലി സിസ്റ്റം (അബോലിഷൻ) ആക്ട് പ്രകാരം ജന്മാവകാശം റദ്ദാക്കപ്പെട്ടതിനാൽ, കുടുംബ സ്വത്തിൽ തനിക്ക് വിഭജനത്തിലൂടെ ലഭിച്ച നിയമപരമായ ഓഹരിയിൽ മാത്രമേ ഒരാൾക്ക് വിൽപത്രം എഴുതാൻ അവകാശമുള്ളൂ.",
   },
   {
     q: "കേരള രജിസ്ട്രേഷൻ വകുപ്പിന്റെ PEARL പോർട്ടലിൽ വിൽപത്രം രജിസ്റ്റർ ചെയ്യുന്നതിനുള്ള ഫീസ് എത്രയാണ്?",
@@ -147,7 +147,7 @@ export default function WillFormatMalayalamClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-basis");
+  const [activeId, setActiveId] = useState<string>("legal-basis");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedMalayalam, setCopiedMalayalam] = useState<boolean>(false);
   const [copiedEnglish, setCopiedEnglish] = useState<boolean>(false);
@@ -155,7 +155,7 @@ export default function WillFormatMalayalamClient() {
   const [copiedDoctorCert, setCopiedDoctorCert] = useState<boolean>(false);
   const [selectedClauseId, setSelectedClauseId] = useState<string>("life-interest");
 
-  // PEARL Fee Calculator State
+  // PEARL Fee Tool State
   const [registrationMode, setRegistrationMode] = useState<"sro" | "commission">("sro");
   const [testatorCount, setTestatorCount] = useState<number>(1);
   const [pageCount, setPageCount] = useState<number>(4);
@@ -468,10 +468,10 @@ Date: [Date]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Indian Succession Act 1925 Section 63, Kerala Registration Rules 1958,
+                Governed under Indian Succession Act 1925 Section 63, Kerala Filing Rules 1958,
                 and Kerala Joint Hindu Family System (Abolition) Act 1975. Valid for Hindus, Christians,
                 and Muslims across Kerala.
               </p>
@@ -485,7 +485,7 @@ Date: [Date]`;
               </div>
               <p className="text-[11px] leading-relaxed">
                 <em>Mary Thomas v. Dr. K.E. Thomas</em> (1989 (2) KLT 414): Probate under Section 213 is
-                NOT compulsory for properties in Kerala. Registered Will directly enables mutation.
+                NOT needed for assets in Kerala. Filed Will directly enables name change.
               </p>
             </div>
           </aside>
@@ -542,7 +542,7 @@ Date: [Date]`;
                 <span>നിയമപരമായ അടിത്തറ</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Basis: Indian Succession Act &amp; Kerala Rules
+                1. Legal Basis: Indian Succession Act &amp; Kerala Rules
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -566,7 +566,7 @@ Date: [Date]`;
                   </div>
                   <div className="bg-white rounded-2xl border border-slate-200 p-4 space-y-2">
                     <div className="text-xs font-bold text-[#C65378] uppercase">സെക്ഷൻ 63(c)</div>
-                    <div className="font-extrabold text-slate-900 text-sm">2 സാക്ഷികൾ (Attestation)</div>
+                    <div className="font-extrabold text-slate-900 text-sm">2 സാക്ഷികൾ (Witness Signing)</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       വിൽപത്ര കർത്താവ് ഒപ്പിടുന്നത് നേരിൽ കണ്ട രണ്ട് സാക്ഷികൾ വേണം. അവർ ഗുണഭോക്താക്കൾ
                       ആകാൻ പാടില്ല (സെക്ഷൻ 67).
@@ -690,7 +690,7 @@ Date: [Date]`;
                 <span>പ്രത്യേക വ്യവസ്ഥകൾ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. Interactive Clause Selector: Customize Your Kerala Will
+                4. Free Clause Selector: Customize Your Kerala Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 കുടുംബത്തിന്റെ സവിശേഷ സാഹചര്യങ്ങൾക്കനുസരിച്ച് വിൽപത്രത്തിൽ ഉൾപ്പെടുത്തേണ്ട പ്രത്യേക
@@ -773,7 +773,7 @@ Date: [Date]`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   കേരളത്തിൽ രജിസ്ട്രേഷൻ നടത്തുമ്പോഴും വില്ലേജ് ഓഫീസിൽ പോക്കുവരവ് (പോക്കുവരവ് / കരമടയ്ക്കൽ)
-                  നടത്തുമ്പോഴും ഏറ്റവും കൂടുതൽ തടസ്സങ്ങൾ ഉണ്ടാകുന്നത് വസ്തു വിവരങ്ങൾ (Schedule of Property)
+                  നടത്തുമ്പോഴും ഏറ്റവും കൂടുതൽ തടസ്സങ്ങൾ ഉണ്ടാകുന്നത് വസ്തു വിവരങ്ങൾ (Schedule of Asset)
                   അപൂർണ്ണമായി എഴുതുന്നത് വഴിയാണ്.
                 </p>
                 <p>
@@ -890,7 +890,7 @@ Date: [Date]`;
                 <span>രജിസ്ട്രേഷൻ ഫീസ് കാൽക്കുലേറ്റർ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. PEARL Portal Fee Guide &amp; SRO Registration Rules
+                7. PEARL Portal Fee Guide &amp; SRO Filing Rules
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 കേരള രജിസ്ട്രേഷൻ വകുപ്പിന്റെ PEARL പോർട്ടൽ ചട്ടങ്ങൾ അനുസരിച്ചുള്ള ഔദ്യോഗിക സർക്കാർ ഫീസ്
@@ -902,7 +902,7 @@ Date: [Date]`;
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-6 border-b border-slate-100">
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      രജിസ്ട്രേഷൻ രീതി (Mode of Registration)
+                      രജിസ്ട്രേഷൻ രീതി (Mode of Filing)
                     </label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
@@ -932,14 +932,14 @@ Date: [Date]`;
 
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      വിൽപ്പത്ര കർത്താക്കളുടെ എണ്ണം (Testators)
+                      വിൽപ്പത്ര കർത്താക്കളുടെ എണ്ണം (Will makers)
                     </label>
                     <select
                       value={testatorCount}
                       onChange={(e) => setTestatorCount(Number(e.target.value))}
                       className="w-full py-2 px-3 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#C65378]"
                     >
-                      <option value={1}>1 വ്യക്തി (Individual Will)</option>
+                      <option value={1}>1 വ്യക്തി (Single Will)</option>
                       <option value={2}>2 വ്യക്തികൾ (Joint Will / ദമ്പതികൾ)</option>
                     </select>
                   </div>
@@ -955,7 +955,7 @@ Date: [Date]`;
                   <div>
                     <div className="text-xs text-slate-600 font-medium">രജിസ്ട്രേഷൻ ഫീസ്</div>
                     <div className="text-lg font-black text-slate-900">₹{baseRegFee}</div>
-                    <div className="text-[10px] text-slate-500">₹1,000 per testator</div>
+                    <div className="text-[10px] text-slate-500">₹1,000 per Will maker</div>
                   </div>
                   <div>
                     <div className="text-xs text-slate-600 font-medium">കമ്പ്യൂട്ടർ സർവീസ്</div>
@@ -990,12 +990,12 @@ Date: [Date]`;
                 <span>താരതമ്യ പട്ടിക</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Comparison: Registered Will vs Dhanam vs Ozhivupathram
+                8. Comparison: Filed Will vs Dhanam vs Ozhivupathram
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   കേരളത്തിൽ കുടുംബ സ്വത്തുക്കൾ അടുത്ത തലമുറയിലേക്ക് കൈമാറാൻ വിൽപത്രം കൂടാതെ ധനനിശ്ചയം
-                  (Dhanam), ഒഴിവുമുറി (Release Deed), ഭാഗപത്രം (Partition) എന്നിവയും ഉപയോഗിക്കാറുണ്ട്.
+                  (Dhanam), ഒഴിവുമുറി (Release Deed), ഭാഗപത്രം (Split) എന്നിവയും ഉപയോഗിക്കാറുണ്ട്.
                   അവ തമ്മിലുള്ള പ്രധാന വ്യത്യാസങ്ങൾ:
                 </p>
 
@@ -1053,7 +1053,7 @@ Date: [Date]`;
                 <span>ഘട്ടങ്ങൾ (SOP)</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Step-by-Step SOP: Drafting to Registration in Kerala
+                9. Step-by-Step SOP: Drafting to Filing in Kerala
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -1243,7 +1243,7 @@ Date: [Date]`;
                 <span>രേഖകളും മെഡിക്കൽ സർട്ടിഫിക്കറ്റും</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Sub-Registrar Document Checklist &amp; Doctor Certificate
+                12. SRO Paper Checklist &amp; Doctor Paper
               </h3>
 
               {/* SRO Checklist */}
@@ -1280,7 +1280,7 @@ Date: [Date]`;
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>ഡോക്ടറുടെ മാനസികാരോഗ്യ സർട്ടിഫിക്കറ്റ് (Doctor Certificate)</span>
+                    <span>ഡോക്ടറുടെ മാനസികാരോഗ്യ സർട്ടിഫിക്കറ്റ് (Doctor Paper)</span>
                   </div>
                   <button
                     onClick={() => copyToClipboard(DOCTOR_CERT_TEXT, "doctor")}
@@ -1294,7 +1294,7 @@ Date: [Date]`;
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Doctor Certificate</span>
+                        <span>Copy Doctor Paper</span>
                       </>
                     )}
                   </button>
@@ -1312,7 +1312,7 @@ Date: [Date]`;
                 <span>ബന്ധപ്പെട്ട കാൽക്കുലേറ്ററുകൾ &amp; ടൂളുകൾ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Contextual Estate Calculators &amp; Succession Tools
+                13. Contextual Estate Tools &amp; Estate Tools
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 വിൽപത്ര തയ്യാറാക്കലിനും അനന്തരാവകാശ സ്വത്തുക്കളുടെ നികുതി കണക്കാക്കലിനുമുള്ള മറ്റ് ഓൺലൈൻ ടൂളുകൾ:
@@ -1328,7 +1328,7 @@ Date: [Date]`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#C65378] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm">
-                    Inherited Property Capital Gains Calculator
+                    Inherited Asset Capital Gains Tool
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     പാരമ്പര്യമായി കിട്ടിയ ഭൂമിയോ വീടോ വിൽക്കുമ്പോൾ 12.5% ഫ്ലാറ്റ് ടാക്സും 20% ഇൻഡെക്സേഷനും താരതമ്യം ചെയ്യുക.
@@ -1344,7 +1344,7 @@ Date: [Date]`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#C65378] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm">
-                    Probate Requirement Checker India
+                    Probate Rule Checker India
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     നിങ്ങളുടെ സംസ്ഥാനത്തോ നഗരത്തിലോ വിൽപത്രത്തിന് പ്രൊബേറ്റ് നിർബന്ധമാണോ എന്ന് പരിശോധിക്കുക.
@@ -1360,7 +1360,7 @@ Date: [Date]`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#C65378] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm">
-                    Legal Heir Share Calculator
+                    Legal Heir Share Tool
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     വിൽപത്രം ഇല്ലാതെ മരിച്ചാൽ മക്കൾക്കും ഭാര്യക്കും മാതാവിനും ലഭിക്കുന്ന നിയമാനുസൃത ഓഹരി അറിയുക.
@@ -1376,7 +1376,7 @@ Date: [Date]`;
                     <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#C65378] transition-transform group-hover:translate-x-1" />
                   </div>
                   <div className="font-extrabold text-slate-900 text-sm">
-                    Will Registration Assistance Service
+                    Will Filing Help Service
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     കേരളത്തിലെ സബ് രജിസ്ട്രാർ ഓഫീസുകളിലും കമ്മീഷൻ ഹോം രജിസ്ട്രേഷനിലും അഭിഭാഷക സഹായം.
@@ -1392,7 +1392,7 @@ Date: [Date]`;
                 <span>അഭിഭാഷക മേൽനോട്ടം</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Legal Backing: Senior Counsel Succession Profile
+                14. Legal Backing: Senior Counsel Estate Profile
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -1400,9 +1400,9 @@ Date: [Date]`;
                     AAM
                   </div>
                   <div>
-                    <div className="font-extrabold text-slate-900 text-lg">Advocate Anuj Anand Malik</div>
+                    <div className="font-extrabold text-slate-900 text-lg">Lawyer Anuj Anand Malik</div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel • AMA Legal Solutions
+                      Senior Estate Counsel • AMA Legal Solutions
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
                       Expert in Indian Succession Act, High Court Probate Jurisprudence &amp; NRI Estate Structuring
@@ -1417,11 +1417,11 @@ Date: [Date]`;
                 <div className="pt-3 border-t border-slate-100 flex flex-wrap gap-4 text-xs font-bold text-slate-700">
                   <span className="flex items-center gap-1.5 text-emerald-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Verified Legal Practice</span>
+                    <span>Checked Legal Practice</span>
                   </span>
                   <span className="flex items-center gap-1.5 text-slate-700">
                     <Building className="w-4 h-4 text-slate-500" />
-                    <span>Bar Council Registered</span>
+                    <span>Bar Council Filed</span>
                   </span>
                 </div>
               </div>
@@ -1474,7 +1474,7 @@ Date: [Date]`;
                 <span>ഔദ്യോഗിക റഫറൻസുകൾ</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                16. Official Kerala Statutory References &amp; Portals
+                16. Official Kerala Legal References &amp; Portals
               </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
@@ -1538,7 +1538,29 @@ Date: [Date]`;
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1551,21 +1573,21 @@ Date: [Date]`;
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, Kerala High Court probate rules,
+                Expert in Indian testamentary jurisprudence, Kerala High Court probate rules,
                 and Gulf NRI estate planning across Ernakulam, Kozhikode, and Trivandrum.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Legal Counsel</span>
+                  <span>Checked Legal Counsel</span>
                 </span>
               </div>
             </div>
@@ -1598,7 +1620,7 @@ Date: [Date]`;
                 <span>അഭിഭാഷക സഹായം</span>
               </div>
               <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
-                Need Custom Will Drafting or SRO Assistance?
+                Need Custom Will Drafting or SRO Help?
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
                 കുടുംബ തർക്കങ്ങൾ, പ്രവാസി സ്വത്തുക്കൾ, വിൽപത്രം രജിസ്ട്രേഷൻ എന്നിവയിൽ AMA Legal Solutions
@@ -1608,7 +1630,7 @@ Date: [Date]`;
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5"
               >
-                <span>Consult Senior Succession Advocate</span>
+                <span>Consult Senior Estate Lawyer</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

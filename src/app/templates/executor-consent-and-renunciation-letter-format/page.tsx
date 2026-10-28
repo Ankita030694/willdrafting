@@ -97,7 +97,7 @@ export default function ExecutorConsentRenunciationPage() {
         url: canonicalUrl,
         name: "Renunciation of Executorship Format India | WillDrafting.in",
         description:
-          "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal.",
+          "Download giving up of executorship format India under Section 230 ISA. Includes executor consent letter, court giving up deed, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -136,7 +136,7 @@ export default function ExecutorConsentRenunciationPage() {
           "Renunciation of Executorship Format India: Section 230 Indian Succession Act Guide",
         name: "Renunciation of Executorship Format India | WillDrafting.in",
         description:
-          "Statutory legal formats and procedural SOP for executor consent and Section 230 renunciation under the Indian Succession Act, 1925.",
+          "Legal legal formats and procedural SOP for executor consent and Section 230 giving up under the Indian Succession Act, 1925.",
         image: imageUrl,
         inLanguage: "en-IN",
         mainEntityOfPage: canonicalUrl,
@@ -162,7 +162,7 @@ export default function ExecutorConsentRenunciationPage() {
         name: "Executor Consent and Renunciation of Executorship Format India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted templates for Pre-Death Executor Consent Letter and Post-Death Section 230 Court Renunciation Deed under the Indian Succession.",
+          "Lawyer-vetted templates for Pre-Death Executor Consent Letter and Post-Death Section 230 Court Giving Up Deed under the Indian Succession.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {
@@ -183,7 +183,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "Can an executor refuse to act after the testator dies?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An individual named as executor in a Will is never legally compelled to accept the office. Under Section 230 of the Indian Succession Act, 1925, an executor may renounce executorship either orally in court before the Judge or in writing through a signed renunciation declaration.",
+              text: "Yes. An single named as executor in a Will is never legally compelled to accept the office. Under Section 230 of the Indian Succession Act, 1925, an executor may renounce executorship either orally in court before the Judge or in writing through a signed giving up declaration.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "What happens if the named executor renounces executorship?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When an executor formally renounces under Section 230, the court cannot grant probate to them. Instead, under Section 231 and Section 232, the residuary legatees or legal heirs can apply directly for Letters of Administration with the Will Annexed, allowing them to administer and distribute the estate.",
+              text: "When an executor formally renounces under Section 230, the court cannot grant probate to them. Instead, under Section 231 and Section 232, the residuary legatees or legal heirs can apply directly for Letters of Care with the Will Annexed, allowing them to administer and distribute the estate.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "Can an executor renounce after taking charge of estate assets?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under the established legal doctrine of intermeddling (affirmed in In the Goods of Bholanath Mullick), once an executor takes control of estate assets, operates bank accounts, or acts in the administration, they have accepted the office and cannot arbitrarily renounce. In such cases, only the High Court can discharge them under Section 301 upon proper accounting.",
+              text: "No. Under the established legal doctrine of intermeddling (affirmed in In the Goods of Bholanath Mullick), once an executor takes control of estate assets, operates bank accounts, or acts in the care, they have accepted the office and cannot arbitrarily renounce. In such cases, only the High Court can discharge them under Section 301 upon proper accounting.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "Why is a Pre-Death Executor Consent Letter recommended during Will drafting?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Obtaining a written consent letter while the testator is alive confirms that the designated executor is willing and physically capable of handling the responsibility. This prevents unexpected probate delays, family disputes, and costly Section 229 court citations after the testator passes away.",
+              text: "Obtaining a written consent letter while the Will maker is alive confirms that the designated executor is willing and physically capable of handling the responsibility. This prevents unexpected probate delays, family fights, and costly Section 229 court citations after the Will maker passes away.",
             },
           },
           {
@@ -215,7 +215,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "How does an NRI executor renounce executorship from outside India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An NRI or foreign resident executor must execute the Renunciation Deed before an Indian Consular Officer or have it notarized and apostilled under the Hague Apostille Convention. Upon arrival in India, the document must be stamped within 3 months under Section 18 of the Indian Stamp Act, 1899 before submission to the probate court.",
+              text: "An NRI or foreign resident executor must execute the Giving Up Deed before an Indian Consular Officer or have it notarized and apostilled under the Hague Apostille Convention. Upon arrival in India, the paper must be stamped within 3 months under Section 18 of the Indian Stamp Act, 1899 before submission to the probate court.",
             },
           },
           {
@@ -231,7 +231,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "Does an executor renunciation need to be registered at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration at the Sub-Registrar Office is not mandatory for an executor renunciation under Section 230 ISA. However, executing the renunciation on non-judicial stamp paper attested by a public notary or filing an affidavit directly in the testamentary court is standard judicial practice across Indian High Courts and District Courts.",
+              text: "Filing at the SRO office is not needed for an executor giving up under Section 230 ISA. However, signing the giving up on non-judicial stamp paper attested by a public notary or filing an sworn note directly in the Will court is standard judicial practice across Indian High Courts and District Courts.",
             },
           },
           {
@@ -239,7 +239,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "Can an executor renounce executorship in part and keep the rest?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Renunciation of executorship must be complete and unconditional. An executor cannot accept the office for personal bank deposits while renouncing responsibility for disputed real estate. A partial renunciation is invalid under Section 230 of the Indian Succession Act.",
+              text: "No. Giving Up of executorship must be complete and unconditional. An executor cannot accept the office for personal bank deposits while renouncing responsibility for disputed real estate. A partial giving up is invalid under Section 230 of the Indian Succession Act.",
             },
           },
           {
@@ -247,7 +247,7 @@ export default function ExecutorConsentRenunciationPage() {
             name: "What stamp duty applies to an executor renunciation deed in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Stamp duty is governed by respective State Stamp Acts. Typically, an executor renunciation declaration is executed on non-judicial stamp paper of ₹100 in Maharashtra and Delhi, or ₹100 to ₹500 in Karnataka, Tamil Nadu, and Uttar Pradesh under the general article for release deeds or affidavits.",
+              text: "Stamp duty is governed by respective State Stamp Acts. Typically, an executor giving up declaration is signed on non-judicial stamp paper of ₹100 in Maharashtra and Delhi, or ₹100 to ₹500 in Karnataka, Tamil Nadu, and Uttar Pradesh under the general article for release deeds or sworn notes.",
             },
           },
         ],

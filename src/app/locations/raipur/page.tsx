@@ -143,7 +143,7 @@ export default function RaipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Raipur: Online Will & Estate Planning",
         description:
-          "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession.",
+          "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS filing advice, and seamless RDA asset estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function RaipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Raipur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Raipur, Nava Raipur Atal Nagar, and.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across Raipur, Nava Raipur Atal Nagar, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -261,26 +261,26 @@ export default function RaipurLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Raipur Chhattisgarh",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Raipur.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Raipur.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Inventory of Raipur Assets & Beneficiaries",
-            text: "List your RDA plots, Nava Raipur properties, steel and trading business equity, bank accounts, and family jewelry. Appoint beneficiaries and a dependable executor.",
+            text: "List your RDA plots, Nava Raipur assets, steel and trading business equity, bank accounts, and family jewelry. Appoint heirs and a dependable executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Robust Succession Clauses",
-            text: "Draft your Will using our online legal platform or with our estate advocates, incorporating specific bequests, residuary clauses, and executor powers.",
+            text: "Draft your Will using our online legal platform or with our estate lawyers, incorporating specific bequests, residuary clauses, and executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Sign and Execute Before Two Witnesses",
-            text: "Print the Will on plain white A4 paper. Sign every page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain white A4 paper. Sign every page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
@@ -292,7 +292,7 @@ export default function RaipurLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Raipur SRO",
-            text: "Visit the designated Sub-Registrar Office (Civil Lines, Pandri, or Nava Raipur) with your two witnesses for digital photography, thumb impressions, and Book III registration.",
+            text: "Visit the designated SRO office (Civil Lines, Pandri, or Nava Raipur) with your two witnesses for digital photography, thumb impressions, and Book III filing.",
           },
         ],
       },

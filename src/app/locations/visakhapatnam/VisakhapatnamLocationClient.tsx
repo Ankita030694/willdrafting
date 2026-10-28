@@ -133,27 +133,27 @@ const CHECKLIST_ITEMS = [
   {
     id: "item-2",
     title: "VMRDA Allotment Letters & GVMC Property Tax Receipts",
-    desc: "VMRDA plot allotment orders, GVMC property tax assessment receipts, sale deeds, or apartment link documents in Vizag.",
+    desc: "VMRDA plot allotment orders, GVMC asset tax assessment receipts, sale deeds, or apartment link papers in Vizag.",
   },
   {
     id: "item-3",
     title: "Naval, Defense Pension & Financial Asset Records",
-    desc: "Eastern Naval Command pension books, AWHO or AFNHB society allotment certificates, bank account statements, and demat holding sheets.",
+    desc: "Eastern Naval Command pension books, AWHO or AFNHB society allotment papers, bank account statements, and demat holding sheets.",
   },
   {
     id: "item-4",
     title: "Details of Two Non-Beneficiary Witnesses",
-    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two adult witnesses who will not receive any property under the Will.",
+    desc: "Names, permanent addresses, phone numbers, and Aadhaar cards of two adult witnesses who will not receive any asset under the Will.",
   },
   {
     id: "item-5",
     title: "MBBS Doctor Fitness Certificate (For Seniors)",
-    desc: "Medical fitness certificate from a registered physician verifying mental soundness and lucid testamentary disposing capacity.",
+    desc: "Medical fitness paper from a filed physician verifying mental soundness and lucid Will disposing capacity.",
   },
   {
     id: "item-6",
     title: "Executor and Guardian Appointment Details",
-    desc: "Identity and contact details of a trustworthy executor to administer the estate, and guardian for minor beneficiaries.",
+    desc: "Identity and contact details of a trustworthy executor to administer the estate, and guardian for minor heirs.",
   },
 ];
 
@@ -256,7 +256,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect family home assets, VMRDA plots, port shop assets, and Eastern Naval Command retirement estates across Visakhapatnam.
-                Get experienced lawyer drafting, AP IGRS slot booking, and Section 31 doorstep home visits for senior testators.
+                Get experienced lawyer drafting, AP IGRS slot booking, and Section 31 doorstep home visits for senior Will makers.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -344,7 +344,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Town Rules
@@ -488,7 +488,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>VISAKHAPATNAM SUCCESSION BRIEF</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Visakhapatnam
+                  Key Highlights: Will Making &amp; Filing in Visakhapatnam
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
@@ -497,7 +497,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visakhapatnam is a non-presidency town governed under Andhra Pradesh High Court. Under Section 213 of the Indian Succession Act, court probate is strictly optional.
+                      Visakhapatnam is a non-presidency town governed under Andhra Pradesh High Court. Under Section 213 of the Indian Succession Act, court probate is strictly a choice.
                     </p>
                   </div>
 
@@ -507,7 +507,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       <span>Naval &amp; Coastal Asset Planning</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Vizag houses Eastern Naval Command veterans and port logistics operators. Clear Wills protect service pensions, housing scheme flats, and industrial assets.
+                      Vizag houses Eastern Naval Command veterans and port logistics operators. Clear Wills protect service pensions, housing scheme flats, and plant assets.
                     </p>
                   </div>
 
@@ -517,17 +517,17 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       <span>Zero Andhra Pradesh Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills attract ₹0 stamp duty in Andhra Pradesh. AP IGRS registration costs a flat legal fee of ₹1,000 plus nominal user charges.
+                      Wills attract ₹0 stamp duty in Andhra Pradesh. AP IGRS filing costs a flat legal fee of ₹1,000 plus nominal user charges.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>VMRDA &amp; GVMC Property Name Change</span>
+                      <span>VMRDA &amp; GVMC Asset Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will facilitates swift plot transfer at VMRDA and direct property tax name name change across Greater Visakhapatnam Municipal Corporation wards.
+                      A filed Will facilitates swift plot transfer at VMRDA and direct asset tax name name change across Greater Visakhapatnam City City Board wards.
                     </p>
                   </div>
                 </div>
@@ -545,11 +545,11 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Visakhapatnam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a Will in Visakhapatnam follows the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
+                  Making a Will in Visakhapatnam follows the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
                   Any adult of sound mind can make a Will. It lets you pass on flats, plots, bank deposits, and shares to the people you choose.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visakhapatnam is a major port and industrial city. Many families own flats in MVP Colony, plots in Madhurawada, or shops in Gajuwaka.
+                  Visakhapatnam is a major port and plant city. Many families own flats in MVP Colony, plots in Madhurawada, or shops in Gajuwaka.
                   A clear Will helps your family inherit these assets smoothly and avoids fights among relatives.
                 </p>
               </div>
@@ -605,11 +605,11 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT PROVISIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Andhra Pradesh?
+                  2. Is Will Filing Needed in Andhra Pradesh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is optional in Andhra Pradesh.
-                  An unregistered Will written on plain paper and signed before two witnesses is legally valid.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, registering a Will is a choice in Andhra Pradesh.
+                  An plain Will written on plain paper and signed before two witnesses is legally valid.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, registering your Will at the Visakhapatnam SRO office gives strong legal proof.
@@ -621,7 +621,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-6 space-y-3">
                   <div className="flex items-center gap-2 font-bold text-base text-emerald-950">
                     <ShieldCheck className="w-5 h-5 text-emerald-700" />
-                    <span>Registered Will (AP IGRS Book III)</span>
+                    <span>Filed Will (AP IGRS Book III)</span>
                   </div>
                   <ul className="space-y-2 text-xs text-emerald-900">
                     <li className="flex items-start gap-2">
@@ -634,7 +634,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Accepted right away by GVMC, VMRDA, and nationalized banks without requiring a succession paper.</span>
+                      <span>Accepted right away by GVMC, VMRDA, and nationalized banks without requiring a estate paper.</span>
                     </li>
                   </ul>
                 </div>
@@ -642,7 +642,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-6 space-y-3">
                   <div className="flex items-center gap-2 font-bold text-base text-amber-950">
                     <AlertTriangle className="w-5 h-5 text-amber-700" />
-                    <span>Unregistered Will Risks</span>
+                    <span>Plain Will Risks</span>
                   </div>
                   <ul className="space-y-2 text-xs text-amber-900">
                     <li className="flex items-start gap-2">
@@ -655,7 +655,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                      <span>Banks and municipal offices may demand extensive court declarations or indemnity bonds before releasing assets.</span>
+                      <span>Banks and city offices may demand extensive court declarations or indemnity bonds before releasing assets.</span>
                     </li>
                   </ul>
                 </div>
@@ -677,14 +677,14 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   Probate is a court order that certifies a Will is genuine.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visakhapatnam is outside these old presidency towns. The Supreme Court of India in <em>Clarence Pais v. Union of India</em> confirmed that probate is optional in Andhra Pradesh.
-                  Your family can transfer house titles, land, and bank funds directly using a registered Will.
+                  Visakhapatnam is outside these old presidency towns. The Supreme Court of India in <em>Clarence Pais v. Union of India</em> confirmed that probate is a choice in Andhra Pradesh.
+                  Your family can transfer house titles, land, and bank funds directly using a filed Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-extrabold text-lg text-slate-900">
-                  Practical Impact for Vizag Property Owners
+                  Practical Impact for Vizag Asset Owners
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-2">
@@ -702,7 +702,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-2">
                     <span className="font-bold text-slate-900 block text-sm">Direct Bank Transfer</span>
                     <p className="text-slate-600 leading-relaxed">
-                      Banks and mutual fund depositories in Vizag accept registered Wills with death papers for direct transfer without probate decrees.
+                      Banks and mutual fund depositories in Vizag accept filed Wills with death papers for direct transfer without probate decrees.
                     </p>
                   </div>
                 </div>
@@ -717,11 +717,11 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>URBAN REVENUE MUTATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. VMRDA Plots &amp; GVMC Property Name Change by Will
+                  4. VMRDA Plots &amp; GVMC Asset Name Change by Will
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In Visakhapatnam, property records are updated by two main bodies:
-                  the <strong>VMRDA</strong> for planned layouts, and the <strong>GVMC</strong> for city property tax records.
+                  In Visakhapatnam, asset records are updated by two main bodies:
+                  the <strong>VMRDA</strong> for planned layouts, and the <strong>GVMC</strong> for city asset tax records.
                 </p>
               </div>
 
@@ -729,7 +729,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-6 space-y-4 shadow-xs">
                   <div className="flex items-center gap-2 font-bold text-base text-slate-900">
                     <Landmark className="w-5 h-5 text-[#C65378]" />
-                    <span>VMRDA Layout Plot Succession</span>
+                    <span>VMRDA Layout Plot Estate</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     VMRDA develops and regulates home layouts across Madhurawada, Rushikonda, Pendurthi, and Anandapuram. When an allottee passes away:
@@ -737,7 +737,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <ul className="space-y-2 text-xs text-slate-700">
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Submit registered Will and certified death paper to VMRDA.</span>
+                      <span>Submit filed Will and certified death paper to VMRDA.</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -753,10 +753,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-6 space-y-4 shadow-xs">
                   <div className="flex items-center gap-2 font-bold text-base text-slate-900">
                     <Home className="w-5 h-5 text-[#5F7E75]" />
-                    <span>GVMC Property Tax Name Name Change</span>
+                    <span>GVMC Asset Tax Name Name Change</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    GVMC manages 98 municipal wards divided into 8 office zones. For apartments and houses in MVP Colony, Seethammadhara, or Gajuwaka:
+                    GVMC manages 98 city wards divided into 8 office zones. For apartments and houses in MVP Colony, Seethammadhara, or Gajuwaka:
                   </p>
                   <ul className="space-y-2 text-xs text-slate-700">
                     <li className="flex items-center gap-2">
@@ -765,11 +765,11 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Attach registered Will copy, prior tax receipts, and death paper.</span>
+                      <span>Attach filed Will copy, prior tax receipts, and death paper.</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Ward Revenue Secretary verifies files and updates GVMC property tax records.</span>
+                      <span>Ward Revenue Secretary verifies files and updates GVMC asset tax records.</span>
                     </li>
                   </ul>
                 </div>
@@ -784,10 +784,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Visakhapatnam Sub-Registrar Directory: SRO Hubs
+                  5. Visakhapatnam SRO Directory: SRO Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under the Registration and Stamps Department of Andhra Pradesh (AP IGRS), Visakhapatnam district has designated Sub-Registrar Offices.
+                  Under the Filing and Stamps Office of Andhra Pradesh (AP IGRS), Visakhapatnam district has designated SRO Offices.
                   Search or select an SRO below to inspect its operational address, area, and official timings:
                 </p>
               </div>
@@ -826,7 +826,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">
                   <div>
                     <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Selected Registration Hub
+                      Selected Filing Hub
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black text-slate-900">
                       {activeSroData.sro}
@@ -911,7 +911,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in MVP Colony</strong> and Seethammadhara for defense veterans, retired naval officers, and senior civil servants. Tailored for independent duplex houses, AWHO/AFNHB defense apartments, and smooth GVMC property tax name change without requiring civil court probate decrees.
+                      Specialized <strong>Will drafting services in MVP Colony</strong> and Seethammadhara for defense veterans, retired naval officers, and senior civil servants. Tailored for independent duplex houses, AWHO/AFNHB defense apartments, and smooth GVMC asset tax name change without requiring civil court probate decrees.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -920,7 +920,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Registrar Office, Dwarakanagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS Book III registration, lawyer attendance at Dwarakanagar SRO, and Section 31 doorstep visits for elderly naval veterans.
+                        AP IGRS Book III filing, lawyer attendance at Dwarakanagar SRO, and Section 31 doorstep visits for elderly naval veterans.
                       </p>
                     </div>
                   </div>
@@ -999,7 +999,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Industrial Core &amp; Port
+                        Plant Core &amp; Port
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gajuwaka
@@ -1013,7 +1013,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Old Gajuwaka &amp; High School Road</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">New Gajuwaka &amp; Srinagar</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Auto Nagar Industrial Complex</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Auto Nagar Plant Complex</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kanithi &amp; Vadlapudi Railway Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tunglam &amp; Shop Corridors</span>
                     </div>
@@ -1028,13 +1028,13 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: High School Road, Gajuwaka</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Lawyer help at Gajuwaka SRO, business succession clauses for partnership firms, and multi-heir capital allocation protocols.
+                        Lawyer help at Gajuwaka SRO, business estate clauses for partnership firms, and multi-heir capital allocation protocols.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">MSME &amp; Industrial Succession</span>
+                    <span className="text-xs font-bold text-slate-500">MSME &amp; Plant Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1088,7 +1088,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Steel Plant Retiree Succession</span>
+                    <span className="text-xs font-bold text-slate-500">Steel Plant Retiree Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1136,7 +1136,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Main Road, Gopalapatnam</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete SRO token booking, senior citizen medical sanity check, and GVMC zone-wise property tax record transfer.
+                        Complete SRO token booking, senior citizen medical sanity check, and GVMC zone-wise asset tax record transfer.
                       </p>
                     </div>
                   </div>
@@ -1181,7 +1181,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Pendurthi</strong> and Bheemili for farmhouses, family land parcels, highway shop plots, and historic coastal real estate. Formulated with clear boundary schedules and revenue survey numbers for smooth Pattadar Passbook succession.
+                      Strategic <strong>Will drafting services in Pendurthi</strong> and Bheemili for farmhouses, family land parcels, highway shop plots, and historic coastal real estate. Formulated with clear boundary schedules and revenue survey numbers for smooth Pattadar Passbook estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1190,7 +1190,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Pendurthi / Bheemili SRO Offices</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Farmland demarcation under AP Land Revenue rules, family property split clarity, and Book III deed papers.
+                        Farmland demarcation under AP Land Revenue rules, family asset split clarity, and Book III deed papers.
                       </p>
                     </div>
                   </div>
@@ -1219,10 +1219,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROTOCOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Step-by-Step AP IGRS Will Registration Protocol
+                  7. Step-by-Step AP IGRS Will Filing Protocol
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Visakhapatnam is done via the AP IGRS portal (<code>registration.ap.gov.in</code>).
+                  Registering a Will in Visakhapatnam is done via the AP IGRS portal (<code>filing.ap.gov.in</code>).
                   Here are the 5 easy steps to register your Will:
                 </p>
               </div>
@@ -1239,7 +1239,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Prepare your Will using our online legal platform or consult with our senior estate lawyers.
-                      Ensure full enumeration of all land and flats (VMRDA plots, GVMC houses) and movable assets (defense pensions, bank accounts, demat portfolios), with precise revocable declarations and executor appointments.
+                      Ensure full enumeration of all land and flats (VMRDA plots, GVMC houses) and cash assets (defense pensions, bank accounts, demat portfolios), with precise revocable declarations and executor appointments.
                     </p>
                   </div>
                 </div>
@@ -1255,7 +1255,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Print the Will on clean A4 paper. The Will maker signs every page in the physical presence of two independent adult witnesses.
-                      Witnesses must not be heirs receiving assets under the Will. For elderly or medically frail testators, attach a medical fitness paper from an MBBS doctor.
+                      Witnesses must not be heirs receiving assets under the Will. For elderly or medically frail Will makers, attach a medical fitness paper from an MBBS doctor.
                     </p>
                   </div>
                 </div>
@@ -1270,7 +1270,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       Book SRO Appointment on AP IGRS Portal
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Log in to <code>registration.ap.gov.in</code>. Navigate to Public Data Entry and Book III (Will).
+                      Log in to <code>filing.ap.gov.in</code>. Navigate to Public Data Entry and Book III (Will).
                       Enter Will maker and witness details, choose your local Visakhapatnam SRO (e.g. Dwarakanagar or Madhurawada), generate the CFMS challan for the ₹1,000 legal fee, and download your confirmed appointment slot slip.
                     </p>
                   </div>
@@ -1286,7 +1286,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       Attend SRO for Biometric Check
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      On the appointment date, the Will maker and both witnesses appear before the Sub-Registrar.
+                      On the appointment date, the Will maker and both witnesses appear before the SRO.
                       The SRO officer conducts biometric thumb scanning, digital photograph capture, and verifies original Aadhaar cards. Our local lawyer physically accompanies you to facilitate quick token processing.
                     </p>
                   </div>
@@ -1299,10 +1299,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="text-base font-extrabold text-slate-900">
-                      Official Registration in Book III Registry
+                      Official Filing in Book III Registry
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar enters the Will into the confidential Book III register. The registered deed is stamped with a unique document number, scanned into the AP IGRS central database, and handed over to the Will maker or retained as an official sealed deposit.
+                      The SRO enters the Will into the confidential Book III register. The filed deed is stamped with a unique paper number, scanned into the AP IGRS central database, and handed over to the Will maker or retained as an official sealed deposit.
                     </p>
                   </div>
                 </div>
@@ -1317,35 +1317,35 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>DOORSTEP CONVENIENCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Doorstep Registration for Seniors
+                  8. Section 31 Doorstep Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar can visit your home or hospital bed.
-                  This service helps senior citizens and unwell people who cannot travel to the registration office.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO can visit your home or hospital bed.
+                  This service helps senior citizens and unwell people who cannot travel to the filing office.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-extrabold text-lg text-slate-900">
-                  How Home Visit Registration Operates in Visakhapatnam
+                  How Home Visit Filing Operates in Visakhapatnam
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-2">
-                    <span className="font-bold text-slate-900 block text-sm">Doctor Certificate</span>
+                    <span className="font-bold text-slate-900 block text-sm">Doctor Paper</span>
                     <p className="text-slate-600 leading-relaxed">
-                      An MBBS registered doctor must issue a formal paper confirming that the Will maker is medically unable to travel but is in a lucid, sound mental disposing state.
+                      An MBBS filed doctor must issue a formal paper confirming that the Will maker is medically unable to travel but is in a lucid, sound mental disposing state.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-2">
                     <span className="font-bold text-slate-900 block text-sm">SRO Commission Form</span>
                     <p className="text-slate-600 leading-relaxed">
-                      A formal Section 31 requisition letter is submitted to the jurisdictional Visakhapatnam Sub-Registrar along with the prescribed government commission travel fee.
+                      A formal Section 31 requisition letter is submitted to the local Visakhapatnam SRO along with the prescribed government commission travel fee.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/60 space-y-2">
                     <span className="font-bold text-slate-900 block text-sm">Doorstep Biometrics</span>
                     <p className="text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits the residence in MVP Colony, Seethammadhara, or Gajuwaka with portable biometric equipment to capture fingerprints and complete registration.
+                      The SRO visits the residence in MVP Colony, Seethammadhara, or Gajuwaka with portable biometric equipment to capture fingerprints and complete filing.
                     </p>
                   </div>
                 </div>
@@ -1360,10 +1360,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>PREPARATION TOOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Documents Checklist for Visakhapatnam Will
+                  9. Papers Checklist for Visakhapatnam Will
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Use this interactive checklist to confirm you have assembled all required paperwork before signing your Will or visiting the Visakhapatnam SRO office:
+                  Use this free checklist to confirm you have assembled all required paperwork before signing your Will or visiting the Visakhapatnam SRO office:
                 </p>
               </div>
 
@@ -1371,7 +1371,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
               <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs space-y-4">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Interactive Readiness Checklist
+                    Free Readiness Checklist
                   </span>
                   <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-rose-50 text-[#C65378]">
                     {checkedCount} of {checklist.length} Completed
@@ -1420,10 +1420,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Vizag Property Types: Port, Naval &amp; Urban Estates
+                  10. Vizag Asset Types: Port, Naval &amp; Urban Estates
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visakhapatnam&apos;s diverse economic landscape includes home developments, defense housing societies, shop logistics setups, and industrial manufacturing units:
+                  Visakhapatnam&apos;s diverse economic landscape includes home developments, defense housing societies, shop logistics setups, and plant manufacturing units:
                 </p>
               </div>
 
@@ -1472,9 +1472,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold text-sm">
                     <Scale className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Industrial &amp; Auto Nagar Units</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Plant &amp; Auto Nagar Units</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    MSME engineering sheds, APIIC industrial plots, partnership shares, and fabrication workshops in Auto Nagar and Parawada.
+                    MSME engineering sheds, APIIC plant plots, partnership shares, and fabrication workshops in Auto Nagar and Parawada.
                   </p>
                 </div>
 
@@ -1498,11 +1498,11 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. AP IGRS Registration Fees &amp; Stamp Duty Exemption
+                  11. AP IGRS Filing Fees &amp; Stamp Duty Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, signing a Will does not require payment of ad-valorem stamp duty in Andhra Pradesh.
-                  Here is the official breakdown of fees payable for Will registration in Visakhapatnam:
+                  Here is the official breakdown of fees payable for Will filing in Visakhapatnam:
                 </p>
               </div>
 
@@ -1519,10 +1519,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Andhra Pradesh Stamp Duty on Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt)</td>
-                      <td className="p-4">Registration &amp; Stamps Dept AP</td>
+                      <td className="p-4">Filing &amp; Stamps Dept AP</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">AP IGRS SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">AP IGRS SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹1,000 (Flat Legal Fee)</td>
                       <td className="p-4">SRO office Book III Account</td>
                     </tr>
@@ -1575,7 +1575,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Visakhapatnam Will maker</span>
+                        <span>Free Visakhapatnam Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1648,13 +1648,13 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at any of Visakhapatnam&apos;s Sub-Registrar offices.
+                      Full end-to-end filing help at any of Visakhapatnam&apos;s SRO offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1671,7 +1671,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1741,7 +1741,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   14. Legal References &amp; Andhra Pradesh Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our Will drafting protocols comply strictly with central succession statutes and Andhra Pradesh government regulations:
+                  Our Will drafting protocols comply strictly with central estate statutes and Andhra Pradesh government regulations:
                 </p>
               </div>
 
@@ -1757,10 +1757,10 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Home Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Home Commission).
                   </p>
                 </div>
 
@@ -1769,7 +1769,7 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                     AP IGRS Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Registration &amp; Stamps Dept, Government of Andhra Pradesh: <code>registration.ap.gov.in</code>.
+                    Filing &amp; Stamps Dept, Government of Andhra Pradesh: <code>filing.ap.gov.in</code>.
                   </p>
                 </div>
 
@@ -1810,7 +1810,29 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
 

@@ -46,55 +46,55 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-framework", label: "1. Statutory Framework for NRI PoA" },
+  { id: "statutory-framework", label: "1. Legal Framework for NRI PoA" },
   { id: "anti-misuse-safeguards", label: "2. Anti-Misuse Restrictive Clauses" },
-  { id: "interactive-poa-builder", label: "3. Interactive Special PoA Builder" },
+  { id: "interactive-poa-builder", label: "3. Free Special PoA Builder" },
   { id: "restricted-poa-format", label: "4. Restricted Non-Sale PoA Format" },
   { id: "sale-execution-poa-format", label: "5. Alternative Sale PoA with Escrow" },
   { id: "legal-comparison-matrix", label: "6. Special PoA vs GPA vs Sale PoA" },
-  { id: "embassy-vs-apostille-sop", label: "7. Embassy Attestation vs Apostille" },
+  { id: "embassy-vs-apostille-sop", label: "7. Embassy Witness Signing vs Apostille" },
   { id: "ninety-day-adjudication", label: "8. The 90-Day Adjudication Rule" },
-  { id: "mutation-probate-procedure", label: "9. Revenue Mutation & Court Probate" },
+  { id: "mutation-probate-procedure", label: "9. Revenue Name Change & Court Probate" },
   { id: "practical-case-scenarios", label: "10. Real NRI Case Scenarios" },
   { id: "mandatory-document-checklist", label: "11. Embassy & Adjudication Checklist" },
   { id: "capital-gains-tax-link", label: "12. Capital Gains Tax on Sale" },
-  { id: "institutional-profile", label: "13. Legal Backing & Advocate Profile" },
+  { id: "institutional-profile", label: "13. Legal Backing & Lawyer Profile" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "15. Statutory Citations & MEA Portals" },
+  { id: "statutory-citations", label: "15. Legal Citations & MEA Portals" },
 ];
 
 const FAQS = [
   {
-    q: "What is an NRI Special Power of Attorney for inherited property in India?",
-    a: "An NRI Special Power of Attorney (PoA) is a legally binding deed executed by a Non-Resident Indian under the Powers of Attorney Act, 1882. It authorizes a trusted representative in India to carry out specific, narrowly defined acts such as applying for revenue mutation, attending court probate hearings, or transferring society share certificates, while explicitly prohibiting any sale, gift, mortgage, or financial encumbrance of the property.",
+    q: "What is an NRI Special Power of Attorney for inherited asset in India?",
+    a: "An NRI Special Power of Attorney (PoA) is a legally binding deed signed by a Non-Resident Indian under the Powers of Attorney Act, 1882. It authorizes a trusted agent in India to carry out specific, narrowly defined acts such as applying for revenue name change, attending court probate hearings, or transferring society share papers, while explicitly prohibiting any sale, gift, mortgage, or financial encumbrance of the asset.",
   },
   {
-    q: "Can a Special Power of Attorney be misused by relatives to sell my property?",
+    q: "Can a Special Power of Attorney be misused by relatives to sell my asset?",
     a: "No, provided you use an 'Anti-Misuse' Restricted Special PoA. Under the landmark Supreme Court ruling in Church of Christ Charitable Trust v. P. Ponniamman, powers of attorney must be strictly construed. Our format incorporates an express negative covenant that explicitly strips the agent of any power to execute conveyance deeds, sign sale agreements, or receive buyer payments, making any attempted unauthorized sale void ab initio.",
   },
   {
-    q: "Should an NRI choose Indian Embassy Attestation or the Hague Apostille route?",
-    a: "If you reside in a Hague Apostille Convention member country (such as the USA, UK, Canada, Australia, or Germany), getting the PoA notarized locally and apostilled by the designated state authority is legally sufficient and accepted across Indian land revenue offices. If you reside in a non-apostille country (such as the UAE, Saudi Arabia, or Singapore), you must get the PoA attested by the Consular Officer at the Indian Embassy or Consulate.",
+    q: "Should an NRI choose Indian Embassy Witness Signing or the Hague Apostille route?",
+    a: "If you reside in a Hague Apostille Convention member country (such as the USA, UK, Canada, Australia, or Germany), getting the PoA notarized locally and apostilled by the designated state office is legally sufficient and accepted across Indian land revenue offices. If you reside in a non-apostille country (such as the UAE, Saudi Arabia, or Singapore), you must get the PoA attested by the Consular Officer at the Indian Embassy or Consulate.",
   },
   {
     q: "What is the 90-day adjudication rule under Section 18 of the Indian Stamp Act?",
-    a: "Under Section 18 of the Indian Stamp Act, 1899, any legal instrument executed outside India must be stamped and adjudicated before the Collector of Stamps or District Registrar within three months (90 days) of its first receipt in India. Missing this 90-day deadline attracts heavy statutory penalties ranging from two to ten times the deficit stamp duty.",
+    a: "Under Section 18 of the Indian Stamp Act, 1899, any legal instrument signed outside India must be stamped and adjudicated before the Collector of Stamps or District Registrar within three months (90 days) of its first receipt in India. Missing this 90-day deadline attracts heavy legal penalties ranging from two to ten times the deficit stamp duty.",
   },
   {
-    q: "Does an NRI Special Power of Attorney for mutation require registration?",
-    a: "Under Section 17 and 18 of the Registration Act, 1908, a Special PoA that is confined strictly to revenue mutation, court appearance, and utility transfer does not compulsorily require registration in all states because it creates no proprietary title. However, the PoA MUST be duly stamped and adjudicated under Section 18 of the Stamp Act. If the PoA authorizes execution of a registered conveyance or sale deed, registration before the Sub-Registrar under Sections 32 and 33 is mandatory.",
+    q: "Does an NRI Special Power of Attorney for name change require filing?",
+    a: "Under Section 17 and 18 of the Filing Act, 1908, a Special PoA that is confined strictly to revenue name change, court appearance, and utility transfer does not compulsorily require filing in all states because it creates no proprietary title. However, the PoA MUST be duly stamped and adjudicated under Section 18 of the Stamp Act. If the PoA authorizes signing of a filed conveyance or sale deed, filing before the SRO under Sections 32 and 33 is needed.",
   },
   {
-    q: "Can my attorney sign probate or letters of administration petitions for me?",
-    a: "Yes. Under Sections 228 and 241 of the Indian Succession Act, 1925, an authorized attorney can apply for Letters of Administration with the Will annexed or represent the NRI legal heir in ongoing probate proceedings before the District Judge or High Court.",
+    q: "Can my attorney sign probate or letters of care petitions for me?",
+    a: "Yes. Under Sections 228 and 241 of the Indian Succession Act, 1925, an authorized attorney can apply for Letters of Care with the Will annexed or represent the NRI legal heir in ongoing probate proceedings before the District Judge or High Court.",
   },
   {
     q: "How can an NRI revoke a Special Power of Attorney from abroad?",
-    a: "Under Section 201 of the Indian Contract Act, 1872, the principal can revoke a PoA at any time by executing a formal Deed of Revocation. To make it effective, the NRI must serve written notice of revocation upon the attorney, deliver copies to the Tehsildar, Sub-Registrar, and housing society, and publish a public notice in a local daily newspaper.",
+    a: "Under Section 201 of the Indian Contract Act, 1872, the principal can revoke a PoA at any time by signing a formal Deed of Revocation. To make it effective, the NRI must serve written notice of revocation upon the attorney, deliver copies to the Tehsildar, SRO, and housing society, and publish a public notice in a local daily newspaper.",
   },
   {
-    q: "Can the attorney receive inherited property sale proceeds in their own bank account?",
-    a: "Strictly no. To comply with Foreign Exchange Management Act (FEMA) regulations and prevent financial fraud, any sale deed executed through an attorney must mandate that all sale consideration cheques, RTGS, or wire transfers be drawn directly and exclusively in favor of the NRI principal's Indian NRO or NRE bank account.",
+    q: "Can the attorney receive inherited asset sale proceeds in their own bank account?",
+    a: "Strictly no. To comply with Foreign Exchange Management Act (FEMA) regulations and prevent financial fraud, any sale deed signed through an attorney must mandate that all sale consideration cheques, RTGS, or wire transfers be drawn directly and exclusively in favor of the NRI principal's Indian NRO or NRE bank account.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function SpecialPowerOfAttorneyClient() {
   const { data: session } = useSession();
 
   // Navigation & Scroll spy
-  const [activeId, setActiveId] = useState<string>("statutory-framework");
+  const [activeId, setActiveId] = useState<string>("legal-framework");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Copy feedbacks
@@ -112,7 +112,7 @@ export default function SpecialPowerOfAttorneyClient() {
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
   const [copiedCustomClause, setCopiedCustomClause] = useState<boolean>(false);
 
-  // Interactive Builder State
+  // Free Builder State
   const [nriCountry, setNriCountry] = useState<string>("USA");
   const [authRoute, setAuthRoute] = useState<string>("apostille");
   const [propertyState, setPropertyState] = useState<string>("Delhi");
@@ -355,14 +355,14 @@ ${expText}`;
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            NRI Special Power of Attorney Format for Inherited Property
+            NRI Special Power of Attorney Format for Inherited Asset
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download the legally vetted <strong>Anti-Misuse Special PoA format</strong> designed specifically
-            for Non-Resident Indians. Authorize trusted representatives in India for revenue mutation, court
-            probate, and housing society transmission with an express negative covenant strictly prohibiting
+            Download the legally vetted <strong>Anti-Misuse Special PoA format</strong> designed mainly
+            for Non-Resident Indians. Authorize trusted agents in India for revenue name change, court
+            probate, and housing society transfer with an express negative covenant strictly prohibiting
             unauthorized sale or encumbrance.
           </p>
 
@@ -381,7 +381,7 @@ ${expText}`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Users className="w-4 h-4 text-[#C65378]" />
-              <span>NRI Property Legal Services</span>
+              <span>NRI Asset Legal Services</span>
             </Link>
           </div>
         </div>
@@ -462,7 +462,7 @@ ${expText}`;
                 <span>Governing Statutes</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Powers of Attorney Act 1882, Registration Act 1908 (Sections 32 &amp; 33),
+                Governed under Powers of Attorney Act 1882, Filing Act 1908 (Sections 32 &amp; 33),
                 Indian Stamp Act 1899 (Section 18 adjudication), and Supreme Court precedents Suraj Lamp
                 and Church of Christ.
               </p>
@@ -475,7 +475,7 @@ ${expText}`;
                 <span>Need End-to-End Representation?</span>
               </div>
               <p className="text-white/80 leading-relaxed text-[11px]">
-                AMA Legal Solutions provides full consular attestation drafting, courier handling, stamp
+                AMA Legal Solutions provides full consular witness signing drafting, courier handling, stamp
                 adjudication, and Tehsildar representation.
               </p>
               <Link
@@ -503,8 +503,8 @@ ${expText}`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Anti-Misuse Protection:</strong> Generic PoAs grant broad powers that unscrupulous
-                    relatives misuse to sell or mortgage inherited property. Our restricted format limits
-                    authority strictly to mutation, court probate, and society transfer.
+                    relatives misuse to sell or mortgage inherited asset. Our restricted format limits
+                    office strictly to name change, court probate, and society transfer.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -512,8 +512,8 @@ ${expText}`;
                   <span>
                     <strong>Embassy vs. Apostille:</strong> If you reside in Hague Apostille countries (USA, UK,
                     Canada, Australia, Germany), local notarization plus state Apostille is legally valid in
-                    India. In non-apostille jurisdictions (UAE, Singapore, Saudi Arabia), Indian Embassy
-                    attestation is mandatory.
+                    India. In non-apostille areas (UAE, Singapore, Saudi Arabia), Indian Embassy
+                    witness signing is needed.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -554,7 +554,7 @@ ${expText}`;
                     <span>VERIFIED STATUTORY TEMPLATE • WAVE 2 CORE ASSET</span>
                   </div>
                   <div className="text-xs text-white/80">
-                    Compliant with Powers of Attorney Act 1882, Registration Act 1908 &amp; Indian Stamp Act 1899.
+                    Compliant with Powers of Attorney Act 1882, Filing Act 1908 &amp; Indian Stamp Act 1899.
                   </div>
                 </div>
                 <a
@@ -574,30 +574,30 @@ ${expText}`;
                 <span>LEGAL GOVERNANCE</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Framework: NRI Power of Attorney in India
+                1. Legal Framework: NRI Power of Attorney in India
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When Non-Resident Indians (NRIs), Overseas Citizens of India (OCIs), or Persons of Indian Origin
-                  (PIOs) inherit immovable property in India following the death of their parents or ancestors,
-                  they face a complex transmission gauntlet. Between local Tehsildar mutation hearings, Municipal
+                  (PIOs) inherit land asset in India following the death of their parents or ancestors,
+                  they face a complex transfer gauntlet. Between local Tehsildar name change hearings, City
                   Khata extraction, Housing Society share transfer meetings, and District or High Court probate
                   proceedings, physical presence in India is routinely required for 6 to 18 months.
                 </p>
                 <p>
                   Because residing in India for months is practically unfeasible for busy overseas professionals,
-                  the legal system provides a statutory bridge through the <strong>Powers of Attorney Act, 1882</strong>.
-                  Under Section 1A and Section 2 of the Act, an instrument of power of attorney executed by the
-                  principal authorizes the attorney to execute documents and perform acts with the same legal
+                  the legal system provides a legal bridge through the <strong>Powers of Attorney Act, 1882</strong>.
+                  Under Section 1A and Section 2 of the Act, an instrument of power of attorney signed by the
+                  principal authorizes the attorney to execute papers and perform acts with the same legal
                   force as if performed by the principal in person.
                 </p>
                 <p>
                   However, international execution introduces rigid jurisdictional hurdles under the{" "}
-                  <strong>Registration Act, 1908 (Sections 32 &amp; 33)</strong> and the{" "}
-                  <strong>Indian Stamp Act, 1899 (Section 18)</strong>. For a power of attorney executed abroad
+                  <strong>Filing Act, 1908 (Sections 32 &amp; 33)</strong> and the{" "}
+                  <strong>Indian Stamp Act, 1899 (Section 18)</strong>. For a power of attorney signed abroad
                   to be legally admissible before an Indian Sub-Registrar, revenue officer, or civil judge, it
-                  must strictly satisfy cross-border consular authentication or Hague Apostille certification,
-                  followed by statutory stamp duty adjudication upon entering Indian territory.
+                  must strictly satisfy cross-border consular check or Hague Apostille certification,
+                  followed by legal stamp duty adjudication upon entering Indian territory.
                 </p>
               </div>
             </section>
@@ -609,11 +609,11 @@ ${expText}`;
                 <span>RISK PREVENTION &amp; LITIGATION DEFENSE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Anti-Misuse Special PoA: Restricting Authority on Assets
+                2. Anti-Misuse Special PoA: Restricting Office on Assets
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The biggest blind spot in conventional legal documentation is the dangerous reliance on generic
+                  The biggest blind spot in conventional legal papers is the dangerous reliance on generic
                   &ldquo;General Power of Attorney&rdquo; (GPA) templates downloaded from internet forums or local
                   typists. These generic drafts routinely contain broad, unconstrained clauses authorizing the
                   attorney to <em>&ldquo;sell, mortgage, lease, exchange, manage, receive monies, execute deeds,
@@ -625,10 +625,10 @@ ${expText}`;
                     <span>The Danger of Overly Broad General Power of Attorney:</span>
                   </div>
                   <p>
-                    Every year, hundreds of NRIs find their ancestral apartments, agricultural holdings, and family
+                    Every year, hundreds of NRIs find their family apartments, farm holdings, and family
                     bungalows mortgaged or sold behind their backs by distant cousins, uncles, or domestic brokers
-                    who misused broad GPA clauses. Once a registered conveyance deed is executed before an SRO,
-                    cancelling it requires multi-year title litigation before civil courts.
+                    who misused broad GPA clauses. Once a filed conveyance deed is signed before an SRO,
+                    cancelling it requires multi-year title court fights before civil courts.
                   </p>
                 </div>
                 <p>
@@ -657,10 +657,10 @@ ${expText}`;
                 <span>INTERACTIVE CUSTOMIZER</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Interactive Tool: Custom Special PoA Clause Builder
+                3. Free Tool: Custom Special PoA Clause Builder
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Configure your specific overseas jurisdiction, target Indian state, and representation needs
+                Configure your specific overseas area, target Indian state, and representation needs
                 below to instantly generate a legally customized Special PoA clause pack.
               </p>
 
@@ -700,15 +700,15 @@ ${expText}`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Scale className="w-3.5 h-3.5 text-[#5F7E75]" />
-                      <span>Authentication Route</span>
+                      <span>Check Route</span>
                     </label>
                     <select
                       value={authRoute}
                       onChange={(e) => setAuthRoute(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 font-semibold text-xs sm:text-sm focus:ring-2 focus:ring-[#C65378] focus:bg-white outline-hidden"
                     >
-                      <option value="apostille">Hague Apostille Certificate (Apostille Convention)</option>
-                      <option value="embassy">Indian Embassy / Consulate Attestation</option>
+                      <option value="apostille">Hague Apostille Paper (Apostille Convention)</option>
+                      <option value="embassy">Indian Embassy / Consulate Witness Signing</option>
                     </select>
                   </div>
 
@@ -716,7 +716,7 @@ ${expText}`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Property Location (State)</span>
+                      <span>Asset Location (State)</span>
                     </label>
                     <select
                       value={propertyState}
@@ -738,16 +738,16 @@ ${expText}`;
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Lock className="w-3.5 h-3.5 text-[#C65378]" />
-                      <span>Scope of Authority Conferred</span>
+                      <span>Scope of Office Conferred</span>
                     </label>
                     <select
                       value={scopeOption}
                       onChange={(e) => setScopeOption(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 font-semibold text-xs sm:text-sm focus:ring-2 focus:ring-[#C65378] focus:bg-white outline-hidden"
                     >
-                      <option value="mutation_probate_only">Revenue Mutation &amp; Court Probate ONLY (Non-Sale)</option>
-                      <option value="society_khata_only">Housing Society Transmission &amp; Municipal Khata ONLY</option>
-                      <option value="sale_with_direct_nro">Sale Execution (Strict Direct NRO Wire Routing)</option>
+                      <option value="mutation_probate_only">Revenue Name Change &amp; Court Probate ONLY (Non-Sale)</option>
+                      <option value="society_khata_only">Housing Society Transfer &amp; City Khata ONLY</option>
+                      <option value="sale_with_direct_nro">Sale Signing (Strict Direct NRO Wire Routing)</option>
                     </select>
                   </div>
 
@@ -765,7 +765,7 @@ ${expText}`;
                       <option value="Sibling">Brother / Sister (Blood Relative)</option>
                       <option value="Parent">Surviving Parent / Spouse</option>
                       <option value="Cousin">Cousin / Uncle / Nephew (Extended Family)</option>
-                      <option value="Advocate">Practicing Advocate / Law Firm</option>
+                      <option value="Advocate">Practicing Lawyer / Law Firm</option>
                       <option value="Trusted Friend">Trusted Friend / Local Manager</option>
                     </select>
                   </div>
@@ -781,7 +781,7 @@ ${expText}`;
                       onChange={(e) => setValidityPeriod(e.target.value)}
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 font-semibold text-xs sm:text-sm focus:ring-2 focus:ring-[#C65378] focus:bg-white outline-hidden"
                     >
-                      <option value="completion">Expires Automatically upon Completion of Mutation</option>
+                      <option value="completion">Expires Automatically upon Completion of Name Change</option>
                       <option value="12months">Fixed 12 Months Expiry Window</option>
                     </select>
                   </div>
@@ -819,8 +819,8 @@ ${expText}`;
                 4. Downloadable Format: Restricted Non-Sale Special PoA
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                This is the complete, statutory <strong>Anti-Misuse Special Power of Attorney format</strong>.
-                It restricts the attorney solely to revenue mutation, municipal tax Khata, housing society share
+                This is the complete, legal <strong>Anti-Misuse Special Power of Attorney format</strong>.
+                It restricts the attorney solely to revenue name change, city tax Khata, housing society share
                 transfer, and court probate proceedings, while barring any sale, mortgage, or financial encumbrance.
               </p>
 
@@ -879,7 +879,7 @@ ${expText}`;
                 </p>
                 <p>
                   To eliminate the risk of the attorney pocketing token cash or depositing sale proceeds into
-                  personal accounts, this specialized format incorporates an <strong>Anti-Cash &amp; Mandatory
+                  personal accounts, this specialized format incorporates an <strong>Anti-Cash &amp; Needed
                   Direct NRO Bank Wire Covenant</strong>. Under this clause, any sale deed where consideration is
                   not drawn directly in favor of the NRI principal&rsquo;s Indian bank account is automatically voidable.
                 </p>
@@ -933,8 +933,8 @@ ${expText}`;
                 6. Legal Comparison: Special PoA vs GPA vs Sale Deed PoA
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Understanding the critical statutory distinctions between different powers of attorney prevents
-                costly litigation and unauthorized property alienation.
+                Understanding the critical legal distinctions between different powers of attorney prevents
+                costly court fights and unauthorized asset alienation.
               </p>
 
               {/* Comparison Table */}
@@ -945,15 +945,15 @@ ${expText}`;
                       <th className="py-3 px-4 font-bold">Key Legal Parameter</th>
                       <th className="py-3 px-4 font-bold text-rose-300">Restricted Special PoA (Our Template)</th>
                       <th className="py-3 px-4 font-bold text-slate-300">Generic General PoA (GPA)</th>
-                      <th className="py-3 px-4 font-bold text-emerald-300">Sale Execution PoA</th>
+                      <th className="py-3 px-4 font-bold text-emerald-300">Sale Signing PoA</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">Conferred Scope</td>
-                      <td className="py-3 px-4 font-medium text-[#C65378]">Specific acts ONLY (Mutation/Probate/CHS)</td>
-                      <td className="py-3 px-4 text-slate-600">Broad, universal authority on all properties</td>
-                      <td className="py-3 px-4 text-slate-600">Specific authority to sign Conveyance Deed</td>
+                      <td className="py-3 px-4 font-medium text-[#C65378]">Specific acts ONLY (Name Change/Probate/CHS)</td>
+                      <td className="py-3 px-4 text-slate-600">Broad, universal office on all assets</td>
+                      <td className="py-3 px-4 text-slate-600">Specific office to sign Conveyance Deed</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">Power to Sell / Mortgage</td>
@@ -963,7 +963,7 @@ ${expText}`;
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">Handling Sale Monies</td>
-                      <td className="py-3 px-4 text-slate-600">Zero monetary authority</td>
+                      <td className="py-3 px-4 text-slate-600">Zero monetary office</td>
                       <td className="py-3 px-4 font-bold text-rose-600">Attorney can collect cash / cheques</td>
                       <td className="py-3 px-4 font-medium text-emerald-600">Direct wire to NRI NRO/NRE account only</td>
                     </tr>
@@ -974,16 +974,16 @@ ${expText}`;
                       <td className="py-3 px-4 text-slate-600">Conveyance duty adjustment / SRO adjudication</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-900">SRO Registration Mandate</td>
-                      <td className="py-3 px-4 text-slate-600">Not compulsory in most states (Adjudication is)</td>
-                      <td className="py-3 px-4 text-slate-600">Compulsory in Maharashtra, UP, Punjab, Haryana</td>
-                      <td className="py-3 px-4 font-bold text-slate-900">Compulsory under Reg. Act ss. 32 &amp; 33</td>
+                      <td className="py-3 px-4 font-semibold text-slate-900">SRO Filing Mandate</td>
+                      <td className="py-3 px-4 text-slate-600">Not needed in most states (Adjudication is)</td>
+                      <td className="py-3 px-4 text-slate-600">Needed in Maharashtra, UP, Punjab, Haryana</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Needed under Reg. Act ss. 32 &amp; 33</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-semibold text-slate-900">Ease of Revocation</td>
                       <td className="py-3 px-4 text-slate-600">Revocable at any time by written notice</td>
                       <td className="py-3 px-4 text-slate-600">Difficult if coupled with consideration / interest</td>
-                      <td className="py-3 px-4 text-slate-600">Revocable before registration of Sale Deed</td>
+                      <td className="py-3 px-4 text-slate-600">Revocable before filing of Sale Deed</td>
                     </tr>
                   </tbody>
                 </table>
@@ -997,12 +997,12 @@ ${expText}`;
                 <span>OVERSEAS EXECUTION PROTOCOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Embassy Attestation vs Hague Apostille: Complete SOP
+                7. Embassy Witness Signing vs Hague Apostille: Complete SOP
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  To make a Power of Attorney executed abroad admissible in India, an NRI must follow one of two
-                  statutory authentication routes depending on the country of overseas residence:
+                  To make a Power of Attorney signed abroad admissible in India, an NRI must follow one of two
+                  legal check routes depending on the country of overseas residence:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1026,13 +1026,13 @@ ${expText}`;
                         witnesses and your passport. Sign the deed in the presence of the notary.
                       </li>
                       <li>
-                        <strong>Step 3:</strong> Submit the notarized PoA to the designated state authority
+                        <strong>Step 3:</strong> Submit the notarized PoA to the designated state office
                         (e.g., Secretary of State in the US, Foreign Commonwealth &amp; Development Office - FCDO in the UK)
-                        for an <strong>Apostille Certificate</strong> under the Hague Convention 1961.
+                        for an <strong>Apostille Paper</strong> under the Hague Convention 1961.
                       </li>
                       <li>
                         <strong>Step 4:</strong> Because India is a contracting member to the Apostille Convention
-                        since 2005, an apostilled PoA requires NO further attestation by the Indian Embassy!
+                        since 2005, an apostilled PoA requires NO further witness signing by the Indian Embassy!
                       </li>
                     </ul>
                   </div>
@@ -1063,7 +1063,7 @@ ${expText}`;
                       </li>
                       <li>
                         <strong>Step 4:</strong> The Consular Officer affixes the red official seal, consular stamp,
-                        and signature. The document is now ready for dispatch to India.
+                        and signature. The paper is now ready for dispatch to India.
                       </li>
                     </ul>
                   </div>
@@ -1082,17 +1082,17 @@ ${expText}`;
               </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Execution and consular attestation abroad is only half the battle. Once the physical document
-                  arrives in India, <strong>Section 18 of the Indian Stamp Act, 1899</strong> imposes a mandatory
-                  statutory timeline:
+                  Signing and consular witness signing abroad is only half the battle. Once the physical paper
+                  arrives in India, <strong>Section 18 of the Indian Stamp Act, 1899</strong> imposes a needed
+                  legal timeline:
                 </p>
                 <div className="rounded-2xl bg-rose-50/70 border-l-4 border-l-[#C65378] border border-rose-200/80 p-5 space-y-2 text-xs sm:text-sm text-rose-950">
                   <div className="font-bold flex items-center gap-1.5 text-[#C65378] text-sm">
                     <AlertTriangle className="w-4 h-4 shrink-0" />
-                    <span>Statutory Text of Section 18: Instruments Executed Out of India</span>
+                    <span>Legal Text of Section 18: Instruments Signed Out of India</span>
                   </div>
                   <p className="italic">
-                    &ldquo;Every instrument chargeable with duty executed out of India and not being a bill of exchange
+                    &ldquo;Every instrument chargeable with duty signed out of India and not being a bill of exchange
                     or promissory note, may be stamped within three months after it has been first received in India.&rdquo;
                   </p>
                 </div>
@@ -1104,22 +1104,22 @@ ${expText}`;
                   <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-600">
                     <li>
                       <strong>Preserve the International Courier Air Waybill (AWB):</strong> The 90-day countdown
-                      commences from the exact date the courier packet enters India, NOT the date of execution abroad.
+                      commences from the exact date the courier packet enters India, NOT the date of signing abroad.
                       Always retain the DHL / FedEx tracking printout as legal evidence of arrival.
                     </li>
                     <li>
                       <strong>Submit to the Collector of Stamps / District Registrar:</strong> The appointed attorney
-                      in India must submit the original attested PoA along with an adjudication application form to the
-                      office of the Sub-Divisional Magistrate (SDM) / Collector of Stamps having territorial jurisdiction
-                      over the property.
+                      in India must submit the original attested PoA along with an adjudication form form to the
+                      office of the Sub-Divisional Magistrate (SDM) / Collector of Stamps having territorial area
+                      over the asset.
                     </li>
                     <li>
                       <strong>Payment of State Stamp Duty:</strong> Pay the prescribed state stamp duty (e.g., ₹100 in
                       Delhi, ₹500 in Maharashtra, ₹100 in Punjab for blood relatives).
                     </li>
                     <li>
-                      <strong>Official Certificate of Adjudication (Section 32):</strong> The Collector endorses an
-                      official seal and signs a certificate certifying that proper stamp duty has been collected. The
+                      <strong>Official Paper of Adjudication (Section 32):</strong> The Collector endorses an
+                      official seal and signs a paper certifying that proper stamp duty has been collected. The
                       PoA is now 100% enforceable before every court and land registry in India.
                     </li>
                   </ol>
@@ -1127,7 +1127,7 @@ ${expText}`;
 
                 <p className="text-xs sm:text-sm text-slate-500">
                   <strong>Warning on Delay:</strong> If the PoA is presented after the 90-day window has expired,
-                  Section 35 and Section 40 of the Stamp Act mandate impounding of the document and statutory penalties
+                  Section 35 and Section 40 of the Stamp Act mandate impounding of the paper and legal penalties
                   ranging from <strong>2x to 10x</strong> the deficit stamp duty!
                 </p>
               </div>
@@ -1140,37 +1140,37 @@ ${expText}`;
                 <span>INHERITANCE TRANSMISSION WORKFLOW</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Mutation &amp; Court Probate Procedures for Non-Residents
+                9. Name Change &amp; Court Probate Steps for Non-Residents
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Once the Special PoA is stamped and adjudicated, your attorney can represent you across three
-                  key transmission stages:
+                  key transfer stages:
                 </p>
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <div className="p-4 rounded-xl border border-slate-200 bg-white">
-                    <strong className="text-slate-900 text-sm">Stage 1: Revenue Land Mutation (Khata / Patta / 7/12 Extract):</strong>
+                    <strong className="text-slate-900 text-sm">Stage 1: Revenue Land Name Change (Khata / Patta / 7/12 Extract):</strong>
                     <p className="mt-1 text-slate-600">
-                      The attorney presents the certified PoA before the local Tehsildar or Municipal Commissioner along
-                      with the registered death certificate and legal heir affidavit (Pedigree Tree / Vamshavali). The
-                      Tehsildar issues public notice inviting objections (typically 30 days) and subsequently sanctions
-                      the mutation order substituting the NRI heir&rsquo;s name on government land records.
+                      The attorney presents the certified PoA before the local Tehsildar or City Commissioner along
+                      with the filed death paper and legal heir sworn note (Pedigree Tree / Vamshavali). The
+                      Tehsildar issues public notice inviting objections (typically 30 days) and then sanctions
+                      the name change order substituting the NRI heir&rsquo;s name on government land records.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-slate-200 bg-white">
                     <strong className="text-slate-900 text-sm">Stage 2: Co-operative Housing Society (CHS) &amp; DDA Transfer:</strong>
                     <p className="mt-1 text-slate-600">
-                      For apartments in cities like Mumbai, Delhi, and Bengaluru, the attorney submits transmission
+                      For apartments in cities like Mumbai, Delhi, and Bengaluru, the attorney submits transfer
                       Form 14 / Appendix 15 along with indemnity bonds to the Society Secretary. The society committee
-                      endorses the original share certificate in the NRI&rsquo;s name and issues a fresh membership letter.
+                      endorses the original share paper in the NRI&rsquo;s name and issues a fresh membership letter.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-slate-200 bg-white">
-                    <strong className="text-slate-900 text-sm">Stage 3: Court Probate or Letters of Administration:</strong>
+                    <strong className="text-slate-900 text-sm">Stage 3: Court Probate or Letters of Care:</strong>
                     <p className="mt-1 text-slate-600">
                       Under Sections 228 and 241 of the Indian Succession Act, 1925, if the deceased left a Will covering
                       assets in presidency towns (Mumbai, Kolkata, Chennai) or if required by local banks, the attorney
-                      can sign court verification pleadings and engage advocates to secure the final Probate grant.
+                      can sign court check pleadings and engage lawyers to secure the final Probate grant.
                     </p>
                   </div>
                 </div>
@@ -1200,13 +1200,13 @@ ${expText}`;
                     Software Architect in San Jose Inheriting Vasant Kunj Flat
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> Rajesh lived in San Jose and lost his father in Delhi. DDA and MCD
-                    demanded personal appearance for biometric verification and mutation hearings.
+                    <strong>Fight:</strong> Rajesh lived in San Jose and lost his father in Delhi. DDA and MCD
+                    demanded personal appearance for biometric check and name change hearings.
                     <br />
-                    <strong>Solution:</strong> Rajesh executed our Restricted Special PoA in California, had it
+                    <strong>Solution:</strong> Rajesh signed our Restricted Special PoA in California, had it
                     apostilled by the California Secretary of State, and couriered it to his sister in Delhi. She got
                     it adjudicated under Section 18 at SDM Mehrauli within 28 days and completed the DDA conveyance
-                    and mutation without Rajesh taking a single day off from work.
+                    and name change without Rajesh taking a single day off from work.
                   </p>
                 </div>
 
@@ -1219,16 +1219,16 @@ ${expText}`;
                     <span className="text-xs text-slate-400">London, United Kingdom</span>
                   </div>
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                    Avoiding the &ldquo;GPA Fraud Trap&rdquo; in Jalandhar Agricultural Land
+                    Avoiding the &ldquo;GPA Fraud Trap&rdquo; in Jalandhar Farm Land
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> Jaspreet in Southall inherited 12 acres of agricultural land in
-                    Jalandhar. A local uncle requested a &ldquo;Standard GPA&rdquo; to handle the Tehsildar mutation.
+                    <strong>Fight:</strong> Jaspreet in Southall inherited 12 acres of farm land in
+                    Jalandhar. A local uncle requested a &ldquo;Standard GPA&rdquo; to handle the Tehsildar name change.
                     <br />
                     <strong>Solution:</strong> Suspecting potential unauthorized sale or mortgage, Jaspreet used our
-                    Anti-Misuse Special PoA format, which strictly permitted Tehsildar Jamabandi mutation while
+                    Anti-Misuse Special PoA format, which strictly permitted Tehsildar Jamabandi name change while
                     explicitly barring any sale or lien. When the uncle attempted to mortgage the land to a local
-                    credit cooperative, the bank&rsquo;s legal counsel rejected the transaction immediately due to the
+                    credit cooperative, the bank&rsquo;s legal counsel rejected the transaction right away due to the
                     express negative covenant.
                   </p>
                 </div>
@@ -1245,12 +1245,12 @@ ${expText}`;
                     NRI Executive Probating Father&rsquo;s Will for Bandra Flat
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <strong>Challenge:</strong> Sunita in Dubai needed to probate her deceased father&rsquo;s registered
+                    <strong>Fight:</strong> Sunita in Dubai needed to probate her deceased father&rsquo;s filed
                     Will before the Bombay High Court to transfer a Bandra West society flat.
                     <br />
                     <strong>Solution:</strong> Sunita attested the Special PoA at the Consulate General of India, Dubai.
                     Her attorney in Mumbai completed adjudication at the Old Customs House Stamp Office and represented
-                    her in the testamentary petition under Section 228 ISA, securing the final Probate grant.
+                    her in the Will petition under Section 228 ISA, securing the final Probate grant.
                   </p>
                 </div>
               </div>
@@ -1263,10 +1263,10 @@ ${expText}`;
                 <span>STEP-BY-STEP VERIFICATION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Mandatory Document Checklist for Embassy &amp; Collector
+                11. Needed Paper Checklist for Embassy &amp; Collector
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Ensure you carry and courier every document in this checklist to prevent delays or rejection
+                Ensure you carry and courier every paper in this checklist to prevent delays or rejection
                 before the Indian Embassy, state Apostille officer, or Indian Stamp Collector.
               </p>
 
@@ -1274,7 +1274,7 @@ ${expText}`;
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-700">
-                    Official 9-Point Document Checklist
+                    Official 9-Point Paper Checklist
                   </span>
                   <button
                     onClick={() => copyToClipboard(CHECKLIST_TEXT, setCopiedChecklist)}
@@ -1298,7 +1298,7 @@ ${expText}`;
                 <span>TAX OPTIMIZATION &amp; BUDGET 2024 COMPLIANCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                12. Calculate Capital Gains Tax on Future Property Sale
+                12. Calculate Capital Gains Tax on Future Asset Sale
               </h3>
 
               <div className="rounded-3xl border border-rose-200/90 bg-gradient-to-br from-rose-50/80 via-white to-amber-50/80 p-6 sm:p-8 space-y-4 shadow-sm">
@@ -1307,10 +1307,10 @@ ${expText}`;
                     <span>FINANCE (NO. 2) ACT, 2024 • SECTIONS 49(1) &amp; 195 TDS</span>
                   </div>
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">
-                    Planning to Sell the Inherited Property After Mutation?
+                    Planning to Sell the Inherited Asset After Name Change?
                   </h3>
                   <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                    Under Indian tax law, inheriting property attracts zero tax under Section 47(iii). However,
+                    Under Indian tax law, inheriting asset attracts zero tax under Section 47(iii). However,
                     when you sell it, the Income Tax Act calculates capital gains on the cost paid by your parents
                     under Section 49(1). Under Budget 2024, resident and NRI heirs can evaluate the 12.5% flat rate
                     versus 20% indexation grandfathering option to save lakhs in tax.
@@ -1323,7 +1323,7 @@ ${expText}`;
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#172228] hover:bg-slate-800 text-white font-bold text-xs sm:text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                   >
                     <Calculator className="w-4 h-4 text-rose-300" />
-                    <span>Open Inherited Property Capital Gains Calculator</span>
+                    <span>Open Inherited Asset Capital Gains Tool</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
@@ -1331,7 +1331,7 @@ ${expText}`;
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-100 text-[#172228] border border-slate-300 font-bold text-xs sm:text-sm transition-transform hover:-translate-y-0.5 shadow-xs"
                   >
                     <Globe className="w-4 h-4 text-[#5F7E75]" />
-                    <span>NRI 15CA/15CB Repatriation Legal Service</span>
+                    <span>NRI 15CA/15CB Sending Cash Home Legal Service</span>
                   </Link>
                 </div>
               </div>
@@ -1344,7 +1344,7 @@ ${expText}`;
                 <span>LEGAL VERIFICATION &amp; ETHICS COMPLIANCE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Institutional Legal Profile &amp; Advocate Verification
+                13. Institutional Legal Profile &amp; Lawyer Check
               </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-5">
@@ -1354,19 +1354,19 @@ ${expText}`;
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                      AMA Legal Solutions • Succession &amp; Cross-Border Real Estate Practice
+                      AMA Legal Solutions • Estate &amp; Cross-Border Real Estate Practice
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-500">
-                      Advocates &amp; Legal Consultants • Bar Council of Delhi &amp; Supreme Court Bar Association
+                      Lawyers &amp; Legal Consultants • Bar Council of Delhi &amp; Supreme Court Bar Association
                     </p>
                   </div>
                 </div>
 
                 <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
                   WillDrafting.in is an online technology portal backed by <strong>AMA Legal Solutions</strong>, a
-                  reputable Indian law firm specializing in cross-border estate succession, NRI property title
-                  transmission, and testamentary dispute resolution. Every format, checklist, and statutory recital
-                  provided on this platform is curated and regularly audited by senior practicing advocates.
+                  reputable Indian law firm specializing in cross-border estate estate, NRI asset title
+                  transfer, and Will fight resolution. Every format, checklist, and legal recital
+                  provided on this platform is curated and regularly audited by senior practicing lawyers.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-slate-100 text-xs">
@@ -1385,7 +1385,7 @@ ${expText}`;
                       <span>Fiduciary Privilege</span>
                     </div>
                     <p className="text-slate-500 text-[11px]">
-                      Full attorney-client privilege covering your title deeds and family inheritance assets.
+                      Full attorney-client privilege covering your title deeds and family estate assets.
                     </p>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
@@ -1394,7 +1394,7 @@ ${expText}`;
                       <span>Pan-India Coverage</span>
                     </div>
                     <p className="text-slate-500 text-[11px]">
-                      Revenue mutation and High Court probate representation across all 28 states and 8 UTs.
+                      Revenue name change and High Court probate representation across all 28 states and 8 UTs.
                     </p>
                   </div>
                 </div>
@@ -1412,7 +1412,7 @@ ${expText}`;
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear legal answers to the most common queries raised by Non-Resident Indians managing inherited
-                property transmission from abroad.
+                asset transfer from abroad.
               </p>
 
               <div className="space-y-3">
@@ -1452,7 +1452,7 @@ ${expText}`;
                 <span>STATUTORY AUTHORITIES &amp; EXTERNAL PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Citations &amp; Official Consular Portals
+                15. Legal Citations &amp; Official Consular Portals
               </h3>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3 text-xs sm:text-sm text-slate-700">
@@ -1461,14 +1461,14 @@ ${expText}`;
                     <strong className="text-slate-900">Key Acts &amp; Enactments:</strong>
                     <ul className="mt-1.5 space-y-1 text-slate-600 text-xs list-disc pl-4">
                       <li>Powers of Attorney Act, 1882 (Act No. 7 of 1882)</li>
-                      <li>Registration Act, 1908 (Sections 17, 18, 32 &amp; 33)</li>
+                      <li>Filing Act, 1908 (Sections 17, 18, 32 &amp; 33)</li>
                       <li>Indian Stamp Act, 1899 (Sections 18, 31 &amp; 32)</li>
                       <li>Indian Succession Act, 1925 (Sections 228 &amp; 241)</li>
                       <li>Diplomatic &amp; Consular Officers (Oaths and Fees) Act, 1948</li>
                     </ul>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                    <strong className="text-slate-900">Landmark Judicial Authorities:</strong>
+                    <strong className="text-slate-900">Landmark Judicial Offices:</strong>
                     <ul className="mt-1.5 space-y-1 text-slate-600 text-xs list-disc pl-4">
                       <li><em>Suraj Lamp &amp; Industries v. State of Haryana</em> (2012) 1 SCC 656</li>
                       <li><em>Church of Christ Trust v. P. Ponniamman</em> (2012) 8 SCC 706</li>
@@ -1494,12 +1494,12 @@ ${expText}`;
                   <span>TAILORED RESOLUTIONS FOR OVERSEAS SUCCESSION</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">
-                  Protect Your Indian Property Inheritance with Lawyer-Drafted Precision
+                  Protect Your Indian Property Estate with Lawyer-Drafted Precision
                 </h3>
                 <p className="text-white/80 text-xs sm:text-sm leading-relaxed">
-                  Draft a challenge-proof Indian Will today to ensure seamless future asset transmission, or book a
-                  confidential consultation with our senior NRI property advocates for end-to-end mutation and
-                  consular legal assistance.
+                  Draft a fight-proof Indian Will today to ensure seamless future asset transfer, or book a
+                  confidential talk with our senior NRI asset lawyers for end-to-end name change and
+                  consular legal help.
                 </p>
               </div>
 
@@ -1509,18 +1509,40 @@ ${expText}`;
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>Draft Challenge-Proof Will</span>
+                  <span>Draft Fight-Proof Will</span>
                 </button>
                 <Link
                   href="/services/nri-will-india"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                 >
                   <Users className="w-4 h-4 text-[#C65378]" />
-                  <span>Consult NRI Property Advocate</span>
+                  <span>Consult NRI Asset Lawyer</span>
                 </Link>
               </div>
             </div>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY CONVERSION & SERVICE SIDEBAR
@@ -1534,10 +1556,10 @@ ${expText}`;
                   <span>NRI PROPERTY LEGAL DESK</span>
                 </span>
                 <h3 className="text-base font-extrabold text-slate-900 leading-snug">
-                  Need Help with Mutation, Probate or Sale in India?
+                  Need Help with Name Change, Probate or Sale in India?
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our senior advocates handle complete consular PoA drafting, international courier guidance,
+                  Our senior lawyers handle complete consular PoA drafting, international courier guidance,
                   Collector stamp adjudication, and Tehsildar representation.
                 </p>
               </div>
@@ -1600,7 +1622,7 @@ ${expText}`;
                   className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100 group"
                 >
                   <div className="font-bold text-slate-900 group-hover:text-[#C65378] flex items-center justify-between">
-                    <span>Capital Gains Calculator</span>
+                    <span>Capital Gains Tool</span>
                     <ArrowRight className="w-3 h-3 text-slate-400 group-hover:text-[#C65378]" />
                   </div>
                   <div className="text-[11px] text-slate-500 mt-0.5">
@@ -1624,7 +1646,7 @@ ${expText}`;
                   className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100 group"
                 >
                   <div className="font-bold text-slate-900 group-hover:text-[#C65378] flex items-center justify-between">
-                    <span>Legal Heir Affidavit &amp; Pedigree</span>
+                    <span>Legal Heir Sworn Note &amp; Pedigree</span>
                     <ArrowRight className="w-3 h-3 text-slate-400 group-hover:text-[#C65378]" />
                   </div>
                   <div className="text-[11px] text-slate-500 mt-0.5">
@@ -1636,11 +1658,11 @@ ${expText}`;
                   className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-100 group"
                 >
                   <div className="font-bold text-slate-900 group-hover:text-[#C65378] flex items-center justify-between">
-                    <span>Sub-Registrar Will Registration</span>
+                    <span>SRO Will Filing</span>
                     <ArrowRight className="w-3 h-3 text-slate-400 group-hover:text-[#C65378]" />
                   </div>
                   <div className="text-[11px] text-slate-500 mt-0.5">
-                    SRO doorstep advocate service
+                    SRO doorstep lawyer service
                   </div>
                 </Link>
               </div>
@@ -1650,11 +1672,11 @@ ${expText}`;
             <div className="bg-slate-50 rounded-2xl border border-slate-200/80 p-4 text-[11px] text-slate-500 space-y-2">
               <div className="font-bold text-slate-800 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Statutory Trust Standard</span>
+                <span>Legal Trust Standard</span>
               </div>
               <p className="leading-relaxed">
                 Zero spam, zero cold calling. All inquiries are reviewed exclusively by qualified Indian legal
-                advocates compliant with Bar Council rules.
+                lawyers compliant with Bar Council rules.
               </p>
             </div>
           </aside>

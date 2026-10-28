@@ -147,7 +147,7 @@ export default function NashikLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Nashik: Legal Online Will Making Guide",
         description:
-          "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat.",
+          "Create a valid Will in Nashik with legal talk. Clear guidance on agro-plant assets, IGR Maharashtra filing, and NMC flat.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function NashikLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Nashik - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and doorstep execution support across Nashik.",
+          "Professional Will drafting, lawyer check, IGR Maharashtra e-Stepin filing, and doorstep signing support across Nashik.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -263,38 +263,38 @@ export default function NashikLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Nashik",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Nashik.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Nashik.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Nashik real estate including NMC apartments, cooperative society flats, Dindori or Niphad agricultural land, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Nashik real estate including NMC apartments, cooperative society flats, Dindori or Niphad farm land, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book IGR Maharashtra e-Stepin Slot",
-            text: "Schedule your registration appointment on the IGR Maharashtra portal for your relevant Nashik SRO and remit the flat ₹100 registration fee via GRAS.",
+            text: "Schedule your filing appointment on the IGR Maharashtra portal for your relevant Nashik SRO and remit the flat ₹100 filing fee via GRAS.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Nashik SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

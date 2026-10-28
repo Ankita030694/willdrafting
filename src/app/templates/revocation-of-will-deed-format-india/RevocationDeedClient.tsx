@@ -38,53 +38,53 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-grounds", label: "1. Section 70 Succession Act Grounds" },
+  { id: "statutory-grounds", label: "1. Section 70 Estate Act Grounds" },
   { id: "revocation-vs-new-will", label: "2. Revocation Deed vs Making New Will" },
-  { id: "decision-diagnostic", label: "3. Interactive Route Assessment" },
+  { id: "decision-diagnostic", label: "3. Free Route Assessment" },
   { id: "standalone-deed-template", label: "4. Standalone Revocation Deed Format" },
   { id: "express-clause-template", label: "5. Express Clause for a New Will" },
-  { id: "sub-registrar-protocol", label: "6. Sub-Registrar Cancellation Protocol" },
+  { id: "sub-registrar-protocol", label: "6. SRO Cancellation Protocol" },
   { id: "step-by-step-sop", label: "7. Step-by-Step Revocation SOP" },
   { id: "practical-case-studies", label: "8. Practical Case Studies" },
   { id: "common-revocation-mistakes", label: "9. Common Pitfalls to Avoid" },
-  { id: "sro-intimation-notice", label: "10. SRO Notice & Document Checklist" },
-  { id: "advocate-verification", label: "11. Senior Advocate Legal Review" },
+  { id: "sro-intimation-notice", label: "10. SRO Notice & Paper Checklist" },
+  { id: "advocate-verification", label: "11. Senior Lawyer Legal Review" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "13. Statutory Citations & Resources" },
+  { id: "statutory-citations", label: "13. Legal Citations & Resources" },
 ];
 
 const FAQS = [
   {
-    q: "Can a registered Will be cancelled in India?",
-    a: "Yes. Under Section 62 and Section 70 of the Indian Succession Act, 1925, any Will can be revoked or modified at any time by the testator during their lifetime, as long as they are of sound mind. Registration under the Registration Act, 1908 does not make a Will permanent or irrevocable.",
+    q: "Can a filed Will be cancelled in India?",
+    a: "Yes. Under Section 62 and Section 70 of the Indian Succession Act, 1925, any Will can be revoked or modified at any time by the Will maker during their lifetime, as long as they are of sound mind. Filing under the Filing Act, 1908 does not make a Will permanent or irrevocable.",
   },
   {
-    q: "What is the best way to revoke an old registered Will in India?",
-    a: "The most practical and secure method is to draft and register a brand new Will containing an express revocation clause. A new Will automatically invalidates all previous Wills and testamentary instruments while establishing a fresh asset distribution, avoiding the risk of intestate succession.",
+    q: "What is the best way to revoke an old filed Will in India?",
+    a: "The most practical and secure method is to draft and register a brand new Will containing an express revocation clause. A new Will automatically invalidates all previous Wills and Will instruments while establishing a fresh asset split, avoiding the risk of no-Will estate.",
   },
   {
-    q: "Can I cancel a registered Will simply by tearing or burning it?",
-    a: "While Section 70 recognises destruction with intent (animus revocandi) as valid revocation, doing this for a registered Will is risky. A certified copy remains on file in Book 3 at the Sub-Registrar Office. Disappointed heirs could attempt to enforce this copy after your death. A formal written instrument or new registered Will is far safer.",
+    q: "Can I cancel a filed Will simply by tearing or burning it?",
+    a: "While Section 70 recognises destruction with intent (animus revocandi) as valid revocation, doing this for a filed Will is risky. A certified copy remains on file in Book 3 at the SRO office. Disappointed heirs could attempt to enforce this copy after your death. A formal written instrument or new filed Will is far safer.",
   },
   {
-    q: "Is registration of a Deed of Revocation mandatory at the Sub-Registrar Office?",
-    a: "Registration is optional under Section 18 of the Registration Act, 1908. However, if your original Will was registered, registering your revocation deed or your new replacement Will at the same Sub-Registrar Office is crucial to update SRO Book 3 index records.",
+    q: "Is filing of a Deed of Revocation needed at the SRO office?",
+    a: "Filing is a choice under Section 18 of the Filing Act, 1908. However, if your original Will was filed, registering your revocation deed or your new replacement Will at the same SRO office is crucial to update SRO Book 3 index records.",
   },
   {
     q: "How many witnesses must attest a Deed of Revocation of Will?",
-    a: "Under Section 70 read with Section 63 of the Indian Succession Act, 1925, a written revocation deed must be signed by the testator in the presence of at least two independent attesting witnesses who see the testator sign, just like an original Will.",
+    a: "Under Section 70 read with Section 63 of the Indian Succession Act, 1925, a written revocation deed must be signed by the Will maker in the presence of at least two independent signing witnesses who see the Will maker sign, just like an original Will.",
   },
   {
     q: "Can an NRI cancel an Indian registered Will while residing abroad?",
-    a: "Yes. An NRI can execute a new Indian Will or a standalone Deed of Revocation abroad. The document should be attested by two witnesses, notarized, and attested by the Indian Embassy/Consulate or apostilled under the Hague Apostille Convention.",
+    a: "Yes. An NRI can execute a new Indian Will or a standalone Deed of Revocation abroad. The paper should be attested by two witnesses, notarized, and attested by the Indian Embassy/Consulate or apostilled under the Hague Apostille Convention.",
   },
   {
-    q: "What happens if I revoke my registered Will without making a new one?",
-    a: "If you cancel your Will without a replacement, you will die intestate. All your properties will be divided according to the personal succession laws applicable to your religion (such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925) equally among Class I legal heirs.",
+    q: "What happens if I revoke my filed Will without making a new one?",
+    a: "If you cancel your Will without a replacement, you will die no-Will. All your assets will be divided according to the personal estate laws applicable to your religion (such as the Hindu Succession Act, 1956 or Indian Succession Act, 1925) equally among Class I legal heirs.",
   },
   {
-    q: "Can beneficiaries challenge my revocation of a Will during my lifetime?",
-    a: "No. Beneficiaries have no legal claim or property rights while the testator is alive. A Will takes effect only upon the death of the testator. Therefore, beneficiaries cannot challenge your decision to cancel or alter your Will while you are alive.",
+    q: "Can heirs fight my revocation of a Will during my lifetime?",
+    a: "No. Heirs have no legal claim or asset rights while the Will maker is alive. A Will takes effect only upon the death of the Will maker. Therefore, heirs cannot fight your decision to cancel or alter your Will while you are alive.",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function RevocationDeedClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-grounds");
+  const [activeId, setActiveId] = useState<string>("legal-grounds");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTemplate, setCopiedTemplate] = useState<boolean>(false);
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
@@ -260,12 +260,12 @@ Contact Address: [Complete Address]`;
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            How to Cancel a Registered Will in India: Deed Format
+            How to Cancel a Filed Will in India: Deed Format
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Learn how to cancel an old registered Will under Section 70 of the Indian Succession Act. Compare a standalone revocation deed against making a new Will. Download verified formats for Sub-Registrar cancellation.
+            Learn how to cancel an old filed Will under Section 70 of the Indian Succession Act. Compare a standalone revocation deed against making a new Will. Download checked formats for SRO cancellation.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -283,7 +283,7 @@ Contact Address: [Complete Address]`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof New Will</span>
+              <span>Draft Fight-Proof New Will</span>
             </button>
           </div>
         </div>
@@ -361,11 +361,11 @@ Contact Address: [Complete Address]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
                 Governed under Sections 62, 70 &amp; 72 of the Indian Succession Act, 1925, and Sections 17 &amp; 18 of the
-                Registration Act, 1908. Interpreted by the Supreme Court of India in <em>Babu Singh v. Ram Sahai</em> and <em>Thakur Balwant Singh</em>.
+                Filing Act, 1908. Interpreted by the Supreme Court of India in <em>Babu Singh v. Ram Sahai</em> and <em>Thakur Balwant Singh</em>.
               </p>
             </div>
           </aside>
@@ -384,14 +384,14 @@ Contact Address: [Complete Address]`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Registered Wills Are Not Permanent:</strong> Under Section 62 of the Indian Succession Act, a Will is
+                    <strong>Filed Wills Are Not Permanent:</strong> Under Section 62 of the Indian Succession Act, a Will is
                     ambulatory. You can revoke it at any point in your lifetime as long as you are mentally capable.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Two Legal Pathways Exist:</strong> Under Section 70, you can cancel an old Will either by executing a
+                    <strong>Two Legal Pathways Exist:</strong> Under Section 70, you can cancel an old Will either by signing a
                     standalone Deed of Revocation or by drafting a new Will with an express revocation clause.
                   </span>
                 </li>
@@ -399,13 +399,13 @@ Contact Address: [Complete Address]`;
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Why a New Will is Safer:</strong> A standalone revocation deed leaves you without a Will. If you pass away
-                    before drafting a new one, your family faces intestate succession disputes. A new registered Will replaces the old one seamlessly.
+                    before drafting a new one, your family faces no-Will estate fights. A new filed Will replaces the old one seamlessly.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Sub-Registrar Record Clean-Up:</strong> Registering the revocation or new Will at the Sub-Registrar Office ensures
+                    <strong>SRO Record Clean-Up:</strong> Registering the revocation or new Will at the SRO office ensures
                     Book 3 index records are updated, preventing disinherited heirs from misusing certified copies.
                   </span>
                 </li>
@@ -428,7 +428,7 @@ Contact Address: [Complete Address]`;
                 <p className="text-xs sm:text-sm font-semibold text-slate-700 flex items-center justify-center gap-2">
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>
-                    Official Deed of Revocation of Will Anatomy: Section 70 Indian Succession Act, Sub-Registrar Book 3 Indexation &amp; Animus Revocandi
+                    Official Deed of Revocation of Will Anatomy: Section 70 Indian Succession Act, SRO Book 3 Indexation &amp; Animus Revocandi
                   </span>
                 </p>
               </div>
@@ -441,39 +441,39 @@ Contact Address: [Complete Address]`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Statutory Grounds: Section 70 Indian Succession Act
+                1. Legal Grounds: Section 70 Indian Succession Act
               </h2>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Many Indian families mistakenly believe that once a Will is registered before a Sub-Registrar, it becomes permanent.
+                  Many Indian families mistakenly believe that once a Will is filed before a SRO, it becomes permanent.
                   That belief is legally incorrect. Under Section 62 of the Indian Succession Act, 1925, a Will is defined as an
-                  ambulatory document. This means it takes effect only upon the testator&apos;s death and carries zero legal finality during their lifetime.
+                  ambulatory paper. This means it takes effect only upon the Will maker&apos;s death and carries zero legal finality during their lifetime.
                 </p>
                 <p>
-                  Section 70 of the Indian Succession Act, 1925 specifies the exact statutory methods by which an unprivileged Will may be revoked:
+                  Section 70 of the Indian Succession Act, 1925 specifies the exact legal methods by which an unprivileged Will may be revoked:
                 </p>
                 <div className="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs space-y-2 text-xs sm:text-sm">
-                  <div className="font-bold text-slate-900">Section 70 Statutory Methods of Revocation:</div>
+                  <div className="font-bold text-slate-900">Section 70 Legal Methods of Revocation:</div>
                   <ul className="list-disc pl-5 space-y-1.5 text-slate-700">
                     <li>
-                      <strong>By Marriage:</strong> Automatic statutory revocation under personal succession law (subject to statutory exceptions).
+                      <strong>By Marriage:</strong> Automatic legal revocation under personal estate law (subject to legal exceptions).
                     </li>
                     <li>
-                      <strong>By Subsequent Will or Codicil:</strong> Executing a later Will that expressly or impliedly revokes the earlier testament.
+                      <strong>By Subsequent Will or Codicil:</strong> Signing a later Will that expressly or impliedly revokes the earlier testament.
                     </li>
                     <li>
-                      <strong>By Written Declaration of Intention:</strong> Executing a formal written document declaring an intention to revoke, executed with the same two-witness solemnity as a Will under Section 63.
+                      <strong>By Written Declaration of Intention:</strong> Signing a formal written paper declaring an intention to revoke, signed with the same two-witness solemnity as a Will under Section 63.
                     </li>
                     <li>
-                      <strong>By Physical Destruction:</strong> Burning, tearing, or destroying the instrument by the testator, or in their presence, with genuine intent to revoke (<em>animus revocandi</em>).
+                      <strong>By Physical Destruction:</strong> Burning, tearing, or destroying the instrument by the Will maker, or in their presence, with genuine intent to revoke (<em>animus revocandi</em>).
                     </li>
                   </ul>
                 </div>
                 <p>
                   In the landmark case of <em>Babu Singh v. Ram Sahai (2008) 14 SCC 754</em>, the Supreme Court of India ruled that
                   mere physical destruction is insufficient without clear proof of <em>animus revocandi</em>. Similarly, the Allahabad High Court
-                  in <em>Thakur Balwant Singh v. Rao Maharaj Singh</em> confirmed that registration adds no legal irrevocability to a Will.
-                  The testator remains fully empowered to revoke a registered Will at their sole discretion.
+                  in <em>Thakur Balwant Singh v. Rao Maharaj Singh</em> confirmed that filing adds no legal irrevocability to a Will.
+                  The Will maker remains fully empowered to revoke a filed Will at their sole discretion.
                 </p>
               </div>
             </section>
@@ -499,7 +499,7 @@ Contact Address: [Complete Address]`;
                     <tr>
                       <th className="py-3 px-4">Evaluation Criteria</th>
                       <th className="py-3 px-4 bg-slate-800">Standalone Revocation Deed</th>
-                      <th className="py-3 px-4 bg-[#C65378]">Executing a New Will (Recommended)</th>
+                      <th className="py-3 px-4 bg-[#C65378]">Signing a New Will (Recommended)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -513,30 +513,30 @@ Contact Address: [Complete Address]`;
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">Estate Devolution Outcome</td>
                       <td className="py-3 px-4 text-rose-700 font-semibold">
-                        Leaves you intestate (no Will). Property divides equally among all legal heirs.
+                        Leaves you no-Will (no Will). Asset divides equally among all legal heirs.
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-semibold bg-emerald-50/40">
-                        Testate succession preserved. Your chosen beneficiaries inherit exactly as specified.
+                        Testate estate preserved. Your chosen heirs inherit exactly as specified.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-bold text-slate-900">Sub-Registrar Procedure</td>
-                      <td className="py-3 px-4">Registered under Book 3 as a Deed of Cancellation.</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">SRO Step</td>
+                      <td className="py-3 px-4">Filed under Book 3 as a Deed of Cancellation.</td>
                       <td className="py-3 px-4 bg-emerald-50/40">
-                        Registered under Book 3 as a fresh Will with explicit prior cancellation clause.
+                        Filed under Book 3 as a fresh Will with explicit prior cancellation clause.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-bold text-slate-900">Attestation Requirement</td>
-                      <td className="py-3 px-4">Mandatory 2 independent attesting witnesses (Sec. 63 &amp; 70).</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Witness Signing Rule</td>
+                      <td className="py-3 px-4">Needed 2 independent signing witnesses (Sec. 63 &amp; 70).</td>
                       <td className="py-3 px-4 bg-emerald-50/40">
-                        Mandatory 2 independent attesting witnesses (Sec. 63).
+                        Needed 2 independent signing witnesses (Sec. 63).
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-bold text-slate-900">Risk of Family Litigation</td>
+                      <td className="py-3 px-4 font-bold text-slate-900">Risk of Family Court Fights</td>
                       <td className="py-3 px-4 text-amber-700">
-                        High risk if you die before making a new Will; leads to partition suits among heirs.
+                        High risk if you die before making a new Will; leads to split suits among heirs.
                       </td>
                       <td className="py-3 px-4 text-emerald-800 font-semibold bg-emerald-50/40">
                         Extremely low risk; clear paper trail supersedes earlier bequests.
@@ -548,7 +548,7 @@ Contact Address: [Complete Address]`;
                         You want your estate to go strictly to all legal heirs by law, or need immediate cancellation.
                       </td>
                       <td className="py-3 px-4 font-semibold text-[#C65378] bg-emerald-50/40">
-                        You want to redistribute properties to your spouse, children, or specific heirs.
+                        You want to redistribute assets to your spouse, children, or specific heirs.
                       </td>
                     </tr>
                   </tbody>
@@ -563,7 +563,7 @@ Contact Address: [Complete Address]`;
                 <span>DECISION MATRIX</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. Interactive Route Assessment: Which Method Fits You?
+                3. Free Route Assessment: Which Method Fits You?
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your primary goal below to see the recommended legal pathway under Indian succession law.
@@ -587,9 +587,9 @@ Contact Address: [Complete Address]`;
                         Recommended
                       </span>
                     </div>
-                    <div className="font-extrabold text-sm text-slate-900">Change Beneficiaries</div>
+                    <div className="font-extrabold text-sm text-slate-900">Change Heirs</div>
                     <div className="text-xs text-slate-600 mt-1 leading-snug">
-                      I want to change who gets my assets and remove old beneficiaries.
+                      I want to change who gets my assets and remove old heirs.
                     </div>
                   </button>
 
@@ -610,7 +610,7 @@ Contact Address: [Complete Address]`;
                     </div>
                     <div className="font-extrabold text-sm text-slate-900">Equal Division by Law</div>
                     <div className="text-xs text-slate-600 mt-1 leading-snug">
-                      I want my property divided equally among all legal heirs under Hindu / Indian law.
+                      I want my asset divided equally among all legal heirs under Hindu / Indian law.
                     </div>
                   </button>
 
@@ -629,7 +629,7 @@ Contact Address: [Complete Address]`;
                         Standalone
                       </span>
                     </div>
-                    <div className="font-extrabold text-sm text-slate-900">Cancel Immediately</div>
+                    <div className="font-extrabold text-sm text-slate-900">Cancel Right away</div>
                     <div className="text-xs text-slate-600 mt-1 leading-snug">
                       I need to revoke my old Will right now, but I have not finalized my new Will.
                     </div>
@@ -642,10 +642,10 @@ Contact Address: [Complete Address]`;
                     <>
                       <div className="font-extrabold text-slate-900 text-base flex items-center gap-2 text-emerald-800">
                         <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-                        <span>Recommended Route: Draft a New Registered Will</span>
+                        <span>Recommended Route: Draft a New Filed Will</span>
                       </div>
                       <p>
-                        Executing a new Will containing an explicit revocation clause is the gold standard under Indian law. It automatically supersedes your old registered Will. You avoid the dangerous gap of dying without a Will, and your family avoids probate disputes.
+                        Signing a new Will containing an explicit revocation clause is the gold standard under Indian law. It automatically supersedes your old filed Will. You avoid the dangerous gap of dying without a Will, and your family avoids probate fights.
                       </p>
                       <div className="pt-2 flex items-center gap-3">
                         <button
@@ -699,7 +699,7 @@ Contact Address: [Complete Address]`;
                         <span>Recommended Route: Register Revocation Deed, Then Promptly Execute New Will</span>
                       </div>
                       <p>
-                        Execute the Standalone Deed of Revocation immediately on non-judicial stamp paper with two witnesses and submit it to the Sub-Registrar. However, schedule the drafting of your replacement Will promptly to prevent indefinite intestacy risks.
+                        Execute the Standalone Deed of Revocation right away on non-judicial stamp paper with two witnesses and submit it to the SRO. However, schedule the drafting of your replacement Will promptly to prevent indefinite intestacy risks.
                       </p>
                       <div className="pt-2 flex items-center gap-3">
                         <a
@@ -713,7 +713,7 @@ Contact Address: [Complete Address]`;
                           href="/contact"
                           className="text-xs font-bold text-slate-700 hover:text-[#C65378] underline"
                         >
-                          Consult Succession Advocate
+                          Consult Estate Lawyer
                         </Link>
                       </div>
                     </>
@@ -732,8 +732,8 @@ Contact Address: [Complete Address]`;
                 4. Standalone Deed of Revocation of Will Format (Full Text)
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                This complete statutory format is compliant with Section 70 of the Indian Succession Act, 1925 and Section 18 of the
-                Registration Act, 1908. It can be printed on non-judicial stamp paper of appropriate value as per state stamp rules.
+                This complete legal format is compliant with Section 70 of the Indian Succession Act, 1925 and Section 18 of the
+                Filing Act, 1908. It can be printed on non-judicial stamp paper of appropriate value as per state stamp rules.
               </p>
 
               {/* Template Box */}
@@ -741,7 +741,7 @@ Contact Address: [Complete Address]`;
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <FileCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory Deed of Revocation of Will Format</span>
+                    <span>Legal Deed of Revocation of Will Format</span>
                   </div>
                   <button
                     type="button"
@@ -833,8 +833,8 @@ Aadhaar No.: ___________________________`}
                 5. Express Revocation Clause to Insert into a New Will
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                If you are creating a new Will, inserting this express revocation clause at the beginning ensures that all prior registered
-                or unregistered Wills and codicils are legally superseded and extinguished.
+                If you are creating a new Will, inserting this express revocation clause at the beginning ensures that all prior filed
+                or plain Wills and codicils are legally superseded and extinguished.
               </p>
 
               {/* Clause Box */}
@@ -884,26 +884,26 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <span>SUB-REGISTRAR OFFICE PROCEDURE</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. SRO Cancellation Protocol: Notifying the Sub-Registrar
+                6. SRO Cancellation Protocol: Notifying the SRO
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  While registering a Will is optional under Section 18(e) of the Registration Act, 1908, cancelling an already-registered
-                  Will requires extra care. If the earlier Will is registered in SRO Book 3, disappointed beneficiaries can still apply
-                  for certified copies of that document.
+                  While registering a Will is a choice under Section 18(e) of the Filing Act, 1908, cancelling an already-filed
+                  Will requires extra care. If the earlier Will is filed in SRO Book 3, disappointed heirs can still apply
+                  for certified copies of that paper.
                 </p>
                 <p>
-                  To prevent unauthorized use of the old registered Will, follow the Sub-Registrar Cancellation Protocol:
+                  To prevent unauthorized use of the old filed Will, follow the SRO Cancellation Protocol:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                     <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                       <Landmark className="w-4 h-4 text-[#C65378]" />
-                      <span>Same SRO Jurisdiction</span>
+                      <span>Same SRO Area</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the exact Sub-Registrar Office where the earlier Will was registered. Present the Deed of Revocation or your
-                      new Will. The Sub-Registrar cross-references Book 3, Volume, and Document Number, making a note in Index II.
+                      Visit the exact SRO office where the earlier Will was filed. Present the Deed of Revocation or your
+                      new Will. The SRO cross-references Book 3, Volume, and Paper Number, making a note in Index II.
                     </p>
                   </div>
 
@@ -913,7 +913,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                       <span>Relocation to Another City</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If you moved to a new city, register your new Will or Revocation Deed at your current local SRO. Send a registered
+                      If you moved to a new city, register your new Will or Revocation Deed at your current local SRO. Send a filed
                       speed-post intimation with an acknowledgment due (RPAD) to the original SRO office citing the cancellation.
                     </p>
                   </div>
@@ -928,7 +928,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <span>PROCEDURAL PLAYBOOK</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                7. Step-by-Step SOP: Cancelling an Old Registered Will
+                7. Step-by-Step SOP: Cancelling an Old Filed Will
               </h3>
 
               <div className="space-y-3">
@@ -936,12 +936,12 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                   {
                     step: "1",
                     title: "Locate Earlier Will Details & Registration Particulars",
-                    desc: "Obtain the date of execution, Document Number, Book Number (Book 3), Volume, and Page Numbers from your earlier registered Will copy.",
+                    desc: "Obtain the date of signing, Paper Number, Book Number (Book 3), Volume, and Page Numbers from your earlier filed Will copy.",
                   },
                   {
                     step: "2",
                     title: "Choose Between a Standalone Deed and a Replacement Will",
-                    desc: "If you want to appoint new beneficiaries, draft a replacement Will. If you want properties to devolve equally to legal heirs, choose a standalone deed.",
+                    desc: "If you want to appoint new heirs, draft a replacement Will. If you want assets to devolve equally to legal heirs, choose a standalone deed.",
                   },
                   {
                     step: "3",
@@ -951,17 +951,17 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                   {
                     step: "4",
                     title: "Execute Before Two Independent Attesting Witnesses",
-                    desc: "Sign or thumb-impress the document in the presence of two witnesses who are not beneficiaries under the estate, complying with Section 63.",
+                    desc: "Sign or thumb-impress the paper in the presence of two witnesses who are not heirs under the estate, complying with Section 63.",
                   },
                   {
                     step: "5",
                     title: "Book SRO Biometric Appointment for Registration",
-                    desc: "Book an appointment at the Sub-Registrar Office via the state e-registration portal (e.g., Kaveri, IGR Maharashtra, NGDRS, or StockHolding).",
+                    desc: "Book an appointment at the SRO office via the state e-filing portal (e.g., Kaveri, IGR Maharashtra, NGDRS, or StockHolding).",
                   },
                   {
                     step: "6",
                     title: "Serve Written Notice to SRO & Update Bank Nominees",
-                    desc: "Submit a written intimation letter to the Sub-Registrar and update nomination forms in banks, housing societies, and demat accounts.",
+                    desc: "Submit a written intimation letter to the SRO and update nomination forms in banks, housing societies, and demat accounts.",
                   },
                 ].map((item) => (
                   <div
@@ -1002,9 +1002,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A retired central government officer registered a Will in 2012 leaving his Hauz Khas flat to his brother. After
+                    A retired central government officer filed a Will in 2012 leaving his Hauz Khas flat to his brother. After
                     marrying and having two children, the brother refused financial support during a medical crisis. The officer drafted a
-                    new registered Will in 2024 with an express revocation clause in favour of his wife and daughters.
+                    new filed Will in 2024 with an express revocation clause in favour of his wife and daughters.
                   </p>
                   <div className="p-3 bg-emerald-50 rounded-xl text-xs space-y-1 text-emerald-900">
                     <div className="font-bold flex items-center gap-1.5">
@@ -1012,7 +1012,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                       <span>Legal Outcome: Old Will 100% Extinguished</span>
                     </div>
                     <p className="text-[11px] text-emerald-800">
-                      The later registered Will completely nullified the brother&apos;s claim. Under Section 70, the brother has zero legal right to petition for probate on the 2012 document.
+                      The later filed Will completely nullified the brother&apos;s claim. Under Section 70, the brother has zero legal right to petition for probate on the 2012 paper.
                     </p>
                   </div>
                 </div>
@@ -1021,24 +1021,24 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                     <span className="font-extrabold text-sm text-slate-900">
-                      Case B: NRI Testator in London (Bengaluru Property)
+                      Case B: NRI Will maker in London (Bengaluru Asset)
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                       Bengaluru SRO
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    An IT executive residing in London had registered a Will in Bengaluru in 2016. Due to work commitments, he could not
-                    travel to India to revoke it. He executed a new Indian Will in London before two witnesses, had it attested at the High
-                    Commission of India in London, and registered the probate-ready copy.
+                    An IT executive residing in London had filed a Will in Bengaluru in 2016. Due to work commitments, he could not
+                    travel to India to revoke it. He signed a new Indian Will in London before two witnesses, had it attested at the High
+                    Commission of India in London, and filed the probate-ready copy.
                   </p>
                   <div className="p-3 bg-emerald-50 rounded-xl text-xs space-y-1 text-emerald-900">
                     <div className="font-bold flex items-center gap-1.5">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                      <span>Legal Outcome: Valid Consular Execution</span>
+                      <span>Legal Outcome: Valid Consular Signing</span>
                     </div>
                     <p className="text-[11px] text-emerald-800">
-                      The new Will complied with Section 70 and Diplomatic and Consular Officers (Oaths and Fees) Act, effectively revoking the Bengaluru registered Will without requiring an India visit.
+                      The new Will complied with Section 70 and Diplomatic and Consular Officers (Oaths and Fees) Act, effectively revoking the Bengaluru filed Will without requiring an India visit.
                     </p>
                   </div>
                 </div>
@@ -1052,7 +1052,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <span>LEGAL PITFALLS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                9. Common Mistakes When Revoking a Registered Will in India
+                9. Common Mistakes When Revoking a Filed Will in India
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1062,7 +1062,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                     <span>Writing &apos;Cancelled&apos; on a Photocopy</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Scribbling &apos;Void&apos; or &apos;Cancelled&apos; across a photocopy does not revoke a registered Will. The certified original remains safely logged in Sub-Registrar archives.
+                    Scribbling &apos;Void&apos; or &apos;Cancelled&apos; across a photocopy does not revoke a filed Will. The certified original remains safely logged in SRO archives.
                   </p>
                 </div>
 
@@ -1079,10 +1079,10 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <div className="p-4 rounded-2xl bg-white border border-rose-200/80 shadow-2xs space-y-2">
                   <div className="font-bold text-rose-900 text-xs sm:text-sm flex items-center gap-1.5">
                     <X className="w-4 h-4 text-rose-600 shrink-0" />
-                    <span>Executing an Unregistered Hand-Written Note</span>
+                    <span>Signing an Plain Hand-Written Note</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    An informal note lacking two attesting witnesses violates Section 63. Courts will dismiss it and enforce the earlier registered Will.
+                    An informal note lacking two signing witnesses violates Section 63. Courts will dismiss it and enforce the earlier filed Will.
                   </p>
                 </div>
 
@@ -1105,14 +1105,14 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <span>INTIMATION NOTICE &amp; CHECKLIST</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Sub-Registrar Revocation Notice &amp; Verification Checklist
+                10. SRO Revocation Notice &amp; Check Checklist
               </h3>
 
               {/* Template Box: Notice to SRO */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Formal Intimation Letter to Sub-Registrar (Book 3 Cancellation)
+                    Formal Intimation Letter to SRO (Book 3 Cancellation)
                   </div>
                   <button
                     type="button"
@@ -1172,12 +1172,12 @@ Name: [Full Legal Name of Testator]`}
               {/* SRO Checklist */}
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-3">
                 <div className="font-extrabold text-slate-900 text-sm">
-                  Required Documents Checklist for Sub-Registrar Submission:
+                  Required Papers Checklist for SRO Submission:
                 </div>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Original or certified copy of Earlier Registered Will</span>
+                    <span>Original or certified copy of Earlier Filed Will</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1185,19 +1185,19 @@ Name: [Full Legal Name of Testator]`}
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Aadhaar Card and PAN Card of Testator</span>
+                    <span>Aadhaar Card and PAN Card of Will maker</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>KYC &amp; Aadhaar copies of 2 Attesting Witnesses</span>
+                    <span>KYC &amp; Aadhaar copies of 2 Signing Witnesses</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Doctor&apos;s Fitness Certificate (if testator is senior citizen)</span>
+                    <span>Doctor&apos;s Fitness Paper (if Will maker is senior citizen)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Registration fee challan (typically ₹100–₹500)</span>
+                    <span>Filing fee challan (typically ₹100–₹500)</span>
                   </li>
                 </ul>
               </div>
@@ -1210,29 +1210,29 @@ Name: [Full Legal Name of Testator]`}
                 <span>SUCCESSION TOOLS &amp; DIAGNOSTICS</span>
               </div>
               <h3 className="text-lg sm:text-xl font-extrabold text-white">
-                Explore Free Interactive Estate &amp; Succession Calculators
+                Explore Free Free Estate &amp; Estate Tools
               </h3>
               <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
-                Check whether your estate requires mandatory probate, calculate legal heir percentage shares under personal succession law, or compute inherited property capital gains tax.
+                Check whether your estate requires needed probate, calculate legal heir percentage shares under personal estate law, or compute inherited asset capital gains tax.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 <Link
                   href="/tools/probate-checker"
                   className="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition-colors"
                 >
-                  Probate Requirement Checker &rarr;
+                  Probate Rule Checker &rarr;
                 </Link>
                 <Link
                   href="/tools/succession-calculator"
                   className="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition-colors"
                 >
-                  Hindu Legal Heir Share Calculator &rarr;
+                  Hindu Legal Heir Share Tool &rarr;
                 </Link>
                 <Link
                   href="/tools/capital-gains-tax-calculator-inherited-property"
                   className="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition-colors"
                 >
-                  Inherited Property Capital Gains Calculator &rarr;
+                  Inherited Asset Capital Gains Tool &rarr;
                 </Link>
               </div>
             </div>
@@ -1244,7 +1244,7 @@ Name: [Full Legal Name of Testator]`}
                 <span>INSTITUTIONAL CREDENTIALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Verified Legal Backing &amp; Senior Advocate Review
+                11. Checked Legal Backing &amp; Senior Lawyer Review
               </h3>
 
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
@@ -1253,24 +1253,24 @@ Name: [Full Legal Name of Testator]`}
                     AAM
                   </div>
                   <div className="space-y-1">
-                    <div className="font-extrabold text-slate-900 text-base">Advocate Anuj Anand Malik</div>
+                    <div className="font-extrabold text-slate-900 text-base">Lawyer Anuj Anand Malik</div>
                     <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
-                      Senior Succession Counsel, AMA Legal Solutions
+                      Senior Estate Counsel, AMA Legal Solutions
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed pt-1">
-                      Over 16 years of legal practice specializing in Indian testamentary jurisprudence, High Court probate litigation,
-                      testamentary dispute resolution, and cross-border NRI estate structuring across Delhi, Mumbai, Bengaluru, and Punjab.
+                      Over 16 years of legal practice specializing in Indian testamentary jurisprudence, High Court probate court fights,
+                      Will fight resolution, and cross-border NRI estate structuring across Delhi, Mumbai, Bengaluru, and Punjab.
                     </p>
                   </div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs text-slate-700 space-y-2">
-                  <div className="font-bold text-slate-900">Counsel Verification Note:</div>
+                  <div className="font-bold text-slate-900">Counsel Check Note:</div>
                   <p className="leading-relaxed">
-                    &quot;Under Section 70 of the Indian Succession Act, revocation of a registered Will is a unilateral statutory right of
-                    the living testator. In our litigation experience, testators who simply tear their copy or rely on oral discussions
-                    leave their heirs vulnerable to probate lawsuits based on SRO certified copies. Executing a fresh, registered Will with
-                    an unambiguous revocation clause is the most robust preventive measure available under Indian law.&quot;
+                    &quot;Under Section 70 of the Indian Succession Act, revocation of a filed Will is a unilateral legal right of
+                    the living Will maker. In our court fights experience, Will makers who simply tear their copy or rely on oral discussions
+                    leave their heirs vulnerable to probate lawsuits based on SRO certified copies. Signing a fresh, filed Will with
+                    an clear revocation clause is the most robust preventive measure available under Indian law.&quot;
                   </p>
                 </div>
               </div>
@@ -1324,16 +1324,16 @@ Name: [Full Legal Name of Testator]`}
                 <span>STATUTORY CITATIONS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                13. Statutory Citations &amp; Official Succession Portals
+                13. Legal Citations &amp; Official Estate Portals
               </h3>
 
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 text-xs">
                 <div className="font-extrabold text-slate-900 mb-1">
-                  Governing Statutory Provisions:
+                  Governing Legal Rules:
                 </div>
                 <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
                   <li>
-                    <strong>Indian Succession Act, 1925 s. 62:</strong> Inherent revocability and alteration of Wills during testator lifetime.
+                    <strong>Indian Succession Act, 1925 s. 62:</strong> Inherent revocability and alteration of Wills during Will maker lifetime.
                   </li>
                   <li>
                     <strong>Indian Succession Act, 1925 s. 70:</strong> Revocation of unprivileged Will or codicil by subsequent testament, writing, or destruction.
@@ -1342,10 +1342,10 @@ Name: [Full Legal Name of Testator]`}
                     <strong>Indian Succession Act, 1925 s. 72:</strong> Revocation of privileged Wills.
                   </li>
                   <li>
-                    <strong>Registration Act, 1908 s. 18(e):</strong> Optional registration of Wills and revocation instruments in Book 3.
+                    <strong>Filing Act, 1908 s. 18(e):</strong> A Choice filing of Wills and revocation instruments in Book 3.
                   </li>
                   <li>
-                    <strong>Registration Act, 1908 s. 32 &amp; 33:</strong> Persons eligible to present documents for registration.
+                    <strong>Filing Act, 1908 s. 32 &amp; 33:</strong> Persons eligible to present papers for filing.
                   </li>
                 </ul>
 
@@ -1372,7 +1372,7 @@ Name: [Full Legal Name of Testator]`}
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Templates &amp; Succession Guides:
+                    Related WillDrafting Templates &amp; Estate Guides:
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
@@ -1391,19 +1391,41 @@ Name: [Full Legal Name of Testator]`}
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Sub-Registrar Will Registration Service
+                      SRO Will Filing Service
                     </Link>
                     <Link
                       href="/tools/will-checklist"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Will Document Checklist
+                      Will Paper Checklist
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1416,20 +1438,20 @@ Name: [Full Legal Name of Testator]`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary law, High Court probate disputes, SRO registration compliance, and Section 70 Will revocation strategies.
+                Expert in Indian testamentary law, High Court probate fights, SRO filing compliance, and Section 70 Will revocation strategies.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1446,7 +1468,7 @@ Name: [Full Legal Name of Testator]`}
                   The Best Way to Revoke an Old Will is to Make a New Will
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Drafting a fresh Will automatically invalidates all previous registered testaments, guarantees your chosen beneficiaries inherit, and prevents intestate family disputes.
+                  Drafting a fresh Will automatically invalidates all previous filed testaments, guarantees your chosen heirs inherit, and prevents no-Will family fights.
                 </p>
                 <button
                   onClick={handleStartDraft}
@@ -1468,17 +1490,17 @@ Name: [Full Legal Name of Testator]`}
                   <span>SUB-REGISTRAR DESK</span>
                 </div>
                 <h4 className="font-black text-slate-900 text-sm leading-snug">
-                  Need Help Cancelling a Registered Will at the SRO?
+                  Need Help Cancelling a Filed Will at the SRO?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Our succession advocates assist with Sub-Registrar Book 3 record updates, legal notices, and challenge-proof replacement Wills pan-India.
+                  Our estate lawyers assist with SRO Book 3 record updates, legal notices, and fight-proof replacement Wills pan-India.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
-                  <span>Schedule Advocate Consultation</span>
+                  <span>Schedule Lawyer Talk</span>
                 </Link>
               </div>
 
@@ -1497,7 +1519,7 @@ Name: [Full Legal Name of Testator]`}
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <span>
-                      <strong>Sub-Registrar Endorsement:</strong> Complete notice format for SRO Book 3 records.
+                      <strong>SRO Endorsement:</strong> Complete notice format for SRO Book 3 records.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

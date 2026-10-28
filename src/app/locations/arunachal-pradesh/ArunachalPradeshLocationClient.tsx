@@ -110,7 +110,7 @@ const ARUNACHAL_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed on standard white A4 sheets. Under Arunachal Pradesh legal practice, non-judicial stamp paper is not required.",
     checked: true,
   },
@@ -129,13 +129,13 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Strongly recommended for senior Will makers aged 60+. Certifies testamentary mental capacity, lucidity, and free volition.",
+    detail: "Strongly recommended for senior Will makers aged 60+. Certifies Will mental capacity, lucidity, and free volition.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "Land Holding Certificate (LHC) Documents",
-    detail: "Certified copy of the Land Holding Certificate issued by the DC/ADC office specifying boundaries and circle details.",
+    label: "Land Holding Paper (LHC) Papers",
+    detail: "Certified copy of the Land Holding Paper issued by the DC/ADC office specifying boundaries and circle details.",
     checked: false,
   },
   {
@@ -147,7 +147,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "City House Tax Receipts & Trading Licenses",
-    detail: "Copies of Itanagar or Pasighat municipal asset tax records, trading licenses, or shop lease papers.",
+    detail: "Copies of Itanagar or Pasighat city asset tax records, trading licenses, or shop lease papers.",
     checked: false,
   },
 ];
@@ -248,7 +248,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your Land Holding Certificate (LHC) parcels, urban home buildings, shop businesses, and movable assets. Ensure compliance with local tribal estate, Bengal Eastern Frontier Regulation, and SRO Book III signing.
+                Draft a legally watertight Will for your Land Holding Paper (LHC) parcels, urban home buildings, shop businesses, and cash assets. Ensure compliance with local tribal estate, Bengal Eastern Frontier Regulation, and SRO Book III signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -453,14 +453,14 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
             {/* KEY HIGHLIGHTS BOX */}
             <div className="rounded-3xl bg-gradient-to-br from-rose-50/50 via-white to-amber-50/30 border border-rose-100/80 p-6 sm:p-8 shadow-xs">
               <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                Key Highlights: Will Making &amp; Registration in Arunachal
+                Key Highlights: Will Making &amp; Filing in Arunachal
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-bold">Land Holding Certificate (LHC) Safety:</strong>
-                    Directly bequeath surveyed land parcels recognized under the Arunachal Pradesh Land Settlement and Records Act, 2000.
+                    <strong className="text-slate-900 block font-bold">Land Holding Paper (LHC) Safety:</strong>
+                    Directly bequeath surveyed land parcels recognized under the Arunachal Pradesh Land Deal and Records Act, 2000.
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -501,13 +501,13 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  Estate planning in Arunachal Pradesh operates under a distinctive legal architecture that blends legal civil codes with time-honored tribal local laws. Unlike mainland areas where asset is governed strictly by general revenue registers, land and flats in Arunachal Pradesh is anchored by local local community ownership and formalized through <strong>Land Holding Certificates (LHC)</strong> issued under the <em>Arunachal Pradesh (Land Settlement and Records) Act, 2000</em>.
+                  Estate planning in Arunachal Pradesh operates under a distinctive legal architecture that blends legal civil codes with time-honored tribal local laws. Unlike mainland areas where asset is governed strictly by general revenue registers, land and flats in Arunachal Pradesh is anchored by local local community ownership and formalized through <strong>Land Holding Papers (LHC)</strong> issued under the <em>Arunachal Pradesh (Land Deal and Records) Act, 2000</em>.
                 </p>
                 <p>
-                  A testamentary Will enables an person to declare precise estate instructions for their self-acquired urban assets, LHC land parcels, shop businesses in Itanagar and Naharlagun, vehicle fleets, bank deposits, and government pension accumulations. Without a properly signed written Will, without a Will estates are subject to local clan determinations or prolonged fights before old village councils (such as the Kebang among Adis or Bulyang among Apatanis) and legal civil courts.
+                  A Will Will enables an person to declare precise estate instructions for their self-acquired urban assets, LHC land parcels, shop businesses in Itanagar and Naharlagun, vehicle fleets, bank deposits, and government pension accumulations. Without a properly signed written Will, without a Will estates are subject to local clan determinations or prolonged fights before old village councils (such as the Kebang among Adis or Bulyang among Apatanis) and legal civil courts.
                 </p>
                 <p>
-                  Our specialized estate lawyers draft robust Wills that comply strictly with the <em>Indian Succession Act, 1925</em>, respect law protections under Article 371H, and make sure seamless transfer of Land Holding Certificates without encountering bureaucratic or clan opposition.
+                  Our specialized estate lawyers draft robust Wills that comply strictly with the <em>Indian Succession Act, 1925</em>, respect law protections under Article 371H, and make sure seamless transfer of Land Holding Papers without encountering bureaucratic or clan opposition.
                 </p>
               </div>
 
@@ -527,7 +527,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     <span>LHC Title Precision</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-normal">
-                    Includes exact Land Holding Certificate allotment details, DC office records, and geographical boundaries.
+                    Includes exact Land Holding Paper allotment details, DC office records, and geographical boundaries.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2">
@@ -536,7 +536,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     <span>Local Alignment</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-normal">
-                    Harmonizes testamentary bequests with local tribal community norms to prevent post-demise fights.
+                    Harmonizes Will bequests with local tribal community norms to prevent post-demise fights.
                   </p>
                 </div>
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
@@ -570,16 +570,16 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 ANALYSIS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Arunachal Pradesh?
+                  2. Is Will Filing Needed in Arunachal Pradesh?
                 </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is entirely a choice in Arunachal Pradesh. A Will hand-written or typed on ordinary white paper is legally valid if it is signed voluntarily by a Will maker of sound mind in the presence of at least two adult witnesses.
+                  Under <strong>Section 18(e) of the Filing Act, 1908</strong>, registering a Will is entirely a choice in Arunachal Pradesh. A Will hand-written or typed on ordinary white paper is legally valid if it is signed voluntarily by a Will maker of sound mind in the presence of at least two adult witnesses.
                 </p>
                 <p>
-                  However, relying solely on an plain Will in Arunachal Pradesh poses significant risks. Where valuable shop assets along Bank Tinali in Itanagar or vast family horticultural lands in Pasighat or Ziro are concerned, disgruntled kin may allege fraud, impersonation, or undue influence before village Kebangs or civil courts. Registering your Will before the areaal Deputy Commissioner or Sub-Registrar places the document into permanent government custody under <strong>Book III</strong>, set uping strong legal proof of signing.
+                  However, relying solely on an plain Will in Arunachal Pradesh poses significant risks. Where valuable shop assets along Bank Tinali in Itanagar or vast family horticultural lands in Pasighat or Ziro are concerned, disgruntled kin may allege fraud, impersonation, or undue influence before village Kebangs or civil courts. Registering your Will before the areaal Deputy Commissioner or SRO places the paper into permanent government custody under <strong>Book III</strong>, set uping strong legal proof of signing.
                 </p>
               </div>
 
@@ -607,7 +607,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Risk of Fight</td>
                       <td className="p-3.5 sm:p-4">High risk of allegations of forgery or coercion</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Minimal risk; Sub-Registrar verifies sanity and identity</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Minimal risk; SRO verifies sanity and identity</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">LHC Revenue Name Change</td>
@@ -638,10 +638,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  A common question among asset owners in Arunachal Pradesh is whether a Will must be probated by a court before heirs can claim their passing assets. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, court probate is legally needed only for Wills signed within the historical presidency towns of Mumbai, Kolkata, and Chennai, or for Wills dealing with land and flats situated inside those colonial municipal limits.
+                  A common question among asset owners in Arunachal Pradesh is whether a Will must be probated by a court before heirs can claim their passing assets. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, court probate is legally needed only for Wills signed within the historical presidency towns of Mumbai, Kolkata, and Chennai, or for Wills dealing with land and flats situated inside those colonial city limits.
                 </p>
                 <p>
-                  Arunachal Pradesh falls under the territorial area of the <strong>Gauhati High Court (Itanagar Permanent Bench at Naharlagun)</strong>. The Gauhati High Court has consistently affirmed that geting probate is non-needed for Hindu, Buddhist, Christian, and local tribal Wills in Arunachal Pradesh. Heirs can directly apply for name change of Land Holding Certificates (LHC), shop trading licenses, and municipal asset records backed simply by the certified death paper and the filed Will.
+                  Arunachal Pradesh falls under the territorial area of the <strong>Gauhati High Court (Itanagar Permanent Bench at Naharlagun)</strong>. The Gauhati High Court has consistently affirmed that geting probate is non-needed for Hindu, Buddhist, Christian, and local tribal Wills in Arunachal Pradesh. Heirs can directly apply for name change of Land Holding Papers (LHC), shop trading licenses, and city asset records backed simply by the certified death paper and the filed Will.
                 </p>
               </div>
 
@@ -664,7 +664,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>DISTRICT ADMINISTRATIVE DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Arunachal Pradesh SRO Directory: Sub-Registrar Hubs
+                  4. Arunachal Pradesh SRO Directory: SRO Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Arunachal Pradesh, signing functions are administered under the Deputy Commissioner (DC) and Additional Deputy Commissioner (ADC) offices across each district headquarters. Search or select your areaal hub below for signing details:
@@ -758,7 +758,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Arunachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Arunachal Pradesh span urban home buildings in Itanagar and Naharlagun, high-value shop set upments along arterial highways, horticultural kiwi and apple orchards in Tawang and Bomdila, and rich bamboo plantations in Ziro. Our estate lawyers provide customized legal drafting, Land Holding Certificate (LHC) compliance, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate holdings across Arunachal Pradesh span urban home buildings in Itanagar and Naharlagun, high-value shop set upments along arterial highways, horticultural kiwi and apple orchards in Tawang and Bomdila, and rich bamboo plantations in Ziro. Our estate lawyers provide customized legal drafting, Land Holding Paper (LHC) compliance, and SRO accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -788,7 +788,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Itanagar</strong> for premium multi-storey residences, shop shop buildings, and government leaseholds. Codifies Land Holding Certificate (LHC) transfer under the 2000 Act, bank deposit split, and vehicle ownership to prevent family discord.
+                      Specialized <strong>Will drafting services in Itanagar</strong> for premium multi-storey residences, shop shop buildings, and government leaseholds. Codifies Land Holding Paper (LHC) transfer under the 2000 Act, bank deposit split, and vehicle ownership to prevent family discord.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -797,7 +797,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Itanagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Sub-Registrar appointment coordination, lawyer accompaniment, and Section 31 doorstep signing for elderly citizens.
+                        SRO appointment coordination, lawyer accompaniment, and Section 31 doorstep signing for elderly citizens.
                       </p>
                     </div>
                   </div>
@@ -894,7 +894,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Pasighat</strong> and the Siang River belt for urban homesteads, tea gardens, citrus orchards, and farm farm holdings. Reconciles Adi local passing assets practices with legal testamentary bequests.
+                      Custom <strong>Will drafting services in Pasighat</strong> and the Siang River belt for urban homesteads, tea gardens, citrus orchards, and farm farm holdings. Reconciles Adi local passing assets practices with legal Will bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1000,7 +1000,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Ziro Valley</strong> respecting the unique local land management of the Apatani community. Legally covers Land Holding Certificates (LHCs), bamboo groves, pine forest plantations, and home plots in Hapoli.
+                      Expert <strong>Will drafting services in Ziro Valley</strong> respecting the unique local land management of the Apatani community. Legally covers Land Holding Papers (LHCs), bamboo groves, pine forest plantations, and home plots in Hapoli.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1034,7 +1034,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Wheat className="w-3.5 h-3.5" />
-                        Agro-Industrial &amp; River Hub
+                        Agro-Plant &amp; River Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Namsai &amp; Lohit
@@ -1068,7 +1068,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Plantations &amp; Industrial Units</span>
+                    <span className="text-xs font-bold text-slate-500">Plantations &amp; Plant Units</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1091,7 +1091,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>SYSTEMATIC EXECUTION BLUEPRINT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Drafting to Registration in Arunachal
+                  6. Step-by-Step SOP: Drafting to Filing in Arunachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Signing a legally foolproof Will in Arunachal Pradesh follows five structured phases from initial estate asset compilation to formal government Book III signing:
@@ -1106,10 +1106,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Compile Estate Assets &amp; Land Holding Certificates (LHC)
+                      Compile Estate Assets &amp; Land Holding Papers (LHC)
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Assemble all asset documents including certified copies of Land Holding Certificates (LHC) issued by the Deputy Commissioner, allotment letters, building approvals from the Office of Town Planning, State Bank of India bank accounts, vehicle RC books, and shop business licenses.
+                      Assemble all asset papers including certified copies of Land Holding Papers (LHC) issued by the Deputy Commissioner, allotment letters, building approvals from the Office of Town Planning, State Bank of India bank accounts, vehicle RC books, and shop business licenses.
                     </p>
                   </div>
                 </div>
@@ -1121,10 +1121,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Draft Local &amp; Legal Compliant Testamentary Clauses
+                      Draft Local &amp; Legal Compliant Will Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal experts formulate precise testamentary clauses making sure bequests of local tribal lands are made exclusively to eligible tribal heirs under the Bengal Eastern Frontier Regulation, 1873, and the Arunachal Pradesh Land Settlement and Records Act, 2000. Includes clear executor powers and alternate heir clauses.
+                      Our legal experts formulate precise Will clauses making sure bequests of local tribal lands are made exclusively to eligible tribal heirs under the Bengal Eastern Frontier Regulation, 1873, and the Arunachal Pradesh Land Deal and Records Act, 2000. Includes clear executor powers and alternate heir clauses.
                     </p>
                   </div>
                 </div>
@@ -1136,7 +1136,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Physical Attestation Before Two Independent Witnesses
+                      Physical Witness Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       The Will is printed on durable standard white A4 sheets. The Will maker signs or affixes thumb impression on each page in the simultaneous presence of two independent adult witnesses who sign as witnesses under Section 63 of the Indian Succession Act. Witnesses must not be heirs under the Will.
@@ -1151,10 +1151,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Schedule Sub-Registrar / DC Office Registry Appointment
+                      Schedule SRO / DC Office Registry Appointment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal team coordinates with the areaal Deputy Commissioner or Sub-Registrar registry office in Itanagar, Naharlagun, Pasighat, Tawang, or Ziro, preparing the signing docket and paying nominal government signing and processing fees.
+                      Our legal team coordinates with the areaal Deputy Commissioner or SRO registry office in Itanagar, Naharlagun, Pasighat, Tawang, or Ziro, preparing the signing docket and paying nominal government signing and processing fees.
                     </p>
                   </div>
                 </div>
@@ -1166,10 +1166,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Biometric Check &amp; Book III Permanent Registration
+                      Biometric Check &amp; Book III Permanent Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Will maker and both witnesses attend the registry office accompanied by our lawyer. After identity validation, photograph capture, and electronic thumbprint recording, the Sub-Registrar formally issues the official signing endorsement under Book III.
+                      The Will maker and both witnesses attend the registry office accompanied by our lawyer. After identity validation, photograph capture, and electronic thumbprint recording, the SRO formally issues the official signing endorsement under Book III.
                     </p>
                   </div>
                 </div>
@@ -1184,16 +1184,16 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>DOORSTEP LEGAL ACCESSIBILITY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Will Registration in Arunachal
+                  7. Section 31 Doorstep Will Filing in Arunachal
                 </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  Given the rugged mountain topography and travel distances in Arunachal Pradesh, traveling to the district office headquarters can be exceptionally challenging for elderly, unwell, or bedridden citizens. Under <strong>Section 31 of the Registration Act, 1908</strong>, the law explicitly empowers the Sub-Registrar or registry officer to attend a private residence, nursing home, or hospital to execute signing in special cases of infirmity or illness.
+                  Given the rugged mountain topography and travel distances in Arunachal Pradesh, traveling to the district office headquarters can be exceptionally challenging for elderly, unwell, or bedridden citizens. Under <strong>Section 31 of the Filing Act, 1908</strong>, the law explicitly empowers the SRO or registry officer to attend a private residence, nursing home, or hospital to execute signing in special cases of infirmity or illness.
                 </p>
                 <p>
-                  Our legal team helps the complete Section 31 requisition process. We draft the formal petition to the Deputy Commissioner or Sub-Registrar, procure the needed medical fitness paper from an authorized filed doctor, deposit the nominal government home visit conveyance fee, and coordinate the officer’s visit with mobile biometric recording kits directly to the Will maker's residence.
+                  Our legal team helps the complete Section 31 requisition process. We draft the formal petition to the Deputy Commissioner or SRO, procure the needed medical fitness paper from an authorized filed doctor, deposit the nominal government home visit conveyance fee, and coordinate the officer’s visit with mobile biometric recording kits directly to the Will maker's residence.
                 </p>
               </div>
 
@@ -1204,11 +1204,11 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                 <ul className="space-y-2 text-xs text-slate-600">
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Medical practitioner’s paper certifying testamentary soundness and inability to travel.</span>
+                    <span>Medical practitioner’s paper certifying Will soundness and inability to travel.</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Written requisition petition submitted to the areaal Deputy Commissioner or Sub-Registrar.</span>
+                    <span>Written requisition petition submitted to the areaal Deputy Commissioner or SRO.</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1230,10 +1230,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>REGISTRATION DOCKET PREPARATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Required Documents for Will Registration in Arunachal
+                  8. Required Papers for Will Filing in Arunachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Interactive checklist for signing before the Sub-Registrar or Deputy Commissioner office. Use this to prepare your document file:
+                  Free checklist for signing before the SRO or Deputy Commissioner office. Use this to prepare your paper file:
                 </p>
               </div>
 
@@ -1302,10 +1302,10 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                 <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200 shadow-2xs space-y-3">
                   <div className="flex items-center gap-2 font-extrabold text-slate-900 text-base">
                     <Mountain className="w-5 h-5 text-[#C65378]" />
-                    <h3>Land Holding Certificate (LHC) Plots</h3>
+                    <h3>Land Holding Paper (LHC) Plots</h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under the Arunachal Pradesh Land Settlement and Records Act, 2000, LHCs set up recognized possession rights over surveyed land plots. Wills must specify the LHC paper number, issuing DC office, revenue circle, boundary descriptions, and size. Bequests are restricted exclusively to local tribal persons (APST).
+                    Under the Arunachal Pradesh Land Deal and Records Act, 2000, LHCs set up recognized possession rights over surveyed land plots. Wills must specify the LHC paper number, issuing DC office, revenue circle, boundary descriptions, and size. Bequests are restricted exclusively to local tribal persons (APST).
                   </p>
                 </div>
 
@@ -1352,19 +1352,19 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <span>GOVERNMENT STATUTORY SCHEDULE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. SRO Registration Fees &amp; Stamp Duty in Arunachal
+                  10. SRO Filing Fees &amp; Stamp Duty in Arunachal
                 </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  Unlike sale deeds, gift deeds, or split deeds that attract ad valorem stamp duty based on circle rates, testamentary Wills in Arunachal Pradesh are <strong>completely exempt from ad valorem stamp duty</strong>. A Will takes effect only post-demise and does not convey asset inter vivos.
+                  Unlike sale deeds, gift deeds, or split deeds that attract ad valorem stamp duty based on circle rates, Will Wills in Arunachal Pradesh are <strong>completely exempt from ad valorem stamp duty</strong>. A Will takes effect only post-demise and does not convey asset inter vivos.
                 </p>
               </div>
 
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200 shadow-2xs space-y-4">
                 <h3 className="font-extrabold text-base text-slate-900">
-                  Government Fee Schedule for Will Registration
+                  Government Fee Schedule for Will Filing
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
@@ -1373,7 +1373,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                     <p className="text-[11px] text-slate-500 mt-1">Non-conveyance instrument exemption</p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <span className="text-slate-500 font-bold block mb-1">Registration Fee:</span>
+                    <span className="text-slate-500 font-bold block mb-1">Filing Fee:</span>
                     <span className="text-base font-extrabold text-slate-900">₹100 - ₹500</span>
                     <p className="text-[11px] text-slate-500 mt-1">Nominal flat government registry fee</p>
                   </div>
@@ -1484,7 +1484,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                 <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Complete Registry Support</span>
-                    <h3 className="font-extrabold text-lg text-slate-900">SRO Registration &amp; Visit</h3>
+                    <h3 className="font-extrabold text-lg text-slate-900">SRO Filing &amp; Visit</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-2xl font-black text-slate-900">₹9,990</span>
                       <span className="text-xs text-slate-500 font-medium">all-inclusive</span>
@@ -1514,7 +1514,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="w-full inline-flex items-center justify-center py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs transition-colors"
                     >
-                      Choose Full Registration
+                      Choose Full Filing
                     </a>
                   </div>
                 </div>
@@ -1577,12 +1577,12 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-1">
-                  <span className="font-bold text-slate-900 block">Registration Act, 1908:</span>
+                  <span className="font-bold text-slate-900 block">Filing Act, 1908:</span>
                   <p>Section 18(e) a choice signing; Section 31 doorstep signing for infirm citizens.</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-1">
                   <span className="font-bold text-slate-900 block">Arunachal Pradesh Land Act, 2000:</span>
-                  <p>Arunachal Pradesh (Land Settlement and Records) Act, 2000 ruling Land Holding Certificates.</p>
+                  <p>Arunachal Pradesh (Land Deal and Records) Act, 2000 ruling Land Holding Papers.</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-1">
                   <span className="font-bold text-slate-900 block">Bengal Eastern Frontier Regulation, 1873:</span>
@@ -1590,7 +1590,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-1">
                   <span className="font-bold text-slate-900 block">Indian Succession Act, 1925:</span>
-                  <p>Section 59 sound mind, Section 63 attestation, Section 213 Gauhati HC probate exemption.</p>
+                  <p>Section 59 sound mind, Section 63 witness signing, Section 213 Gauhati HC probate exemption.</p>
                 </div>
               </div>
             </section>
@@ -1601,7 +1601,7 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                 Protect Your Family Estate in Arunachal Pradesh Today
               </h3>
               <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                Take the decisive step to secure your Land Holding Certificates (LHC), shop assets, and family legacy. Draft an ironclad Will with lawyer oversight and complete Book III signing.
+                Take the decisive step to secure your Land Holding Papers (LHC), shop assets, and family legacy. Draft an ironclad Will with lawyer oversight and complete Book III signing.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a

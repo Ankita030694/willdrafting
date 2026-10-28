@@ -181,7 +181,7 @@ export default function DehradunLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Dehradun - Estate Planning, Defense Pensioners & Uttarakhand IGR Registration",
         description:
-          "Professional Will drafting, defense veteran succession advisory, MDDA property inheritance, and Uttarakhand e-Prerna Sub-Registrar.",
+          "Professional Will drafting, defense veteran estate advisory, MDDA asset estate, and Uttarakhand e-Prerna SRO.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -254,38 +254,38 @@ export default function DehradunLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Dehradun Uttarakhand",
         description:
-          "Five straightforward steps to create a legally binding Will and register it before the Sub-Registrar in Dehradun.",
+          "Five straightforward steps to create a legally binding Will and register it before the SRO in Dehradun.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Properties, Pension Assets, and Beneficiaries",
-            text: "Compile your Dehradun residential homes, MDDA plots, defense housing units, bank savings, and orchard holdings. Appoint your beneficiaries and an executor.",
+            text: "Compile your Dehradun home homes, MDDA plots, defense housing units, bank savings, and orchard holdings. Appoint your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Exact Legal Succession Clauses",
-            text: "Draft your Will using our legally verified platform or with an advocate to include non-presidency probate clarity, specific bequests, and executor powers.",
+            text: "Draft your Will using our legally checked platform or with an lawyer to include non-presidency probate clarity, specific bequests, and executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries under the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs under the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Dehradun SRO Slot on Uttarakhand e-Prerna",
-            text: "Schedule an appointment token on registration.uk.gov.in for your jurisdictional Dehradun SRO and pay the nominal ₹100 registration fee online.",
+            text: "Schedule an appointment token on filing.uk.gov.in for your local Dehradun SRO and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photography, and Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and photographs for biometric thumbprinting, digital photography, and Book III filing.",
           },
         ],
       },

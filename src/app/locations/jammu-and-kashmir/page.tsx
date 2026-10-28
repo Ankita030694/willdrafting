@@ -142,7 +142,7 @@ export default function JammuAndKashmirLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jammu & Kashmir: Online Will Guide",
         description:
-          "Draft a valid Will in Jammu and Kashmir. Guidance on post-2019 land laws, NGDRS J&K registration, and apple orchard or hotel property succession.",
+          "Draft a valid Will in Jammu and Kashmir. Guidance on post-2019 land laws, NGDRS J&K filing, and apple orchard or hotel asset estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function JammuAndKashmirLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jammu & Kashmir - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration scheduling, and doorstep execution support across Srinagar, Jammu.",
+          "Professional Will drafting, lawyer check, NGDRS J&K filing scheduling, and doorstep signing support across Srinagar, Jammu.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -257,38 +257,38 @@ export default function JammuAndKashmirLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Jammu and Kashmir",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Jammu and Kashmir.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Jammu and Kashmir.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "Document your assets across J&K including residential houses, Dal Lake commercial hotels or houseboats, apple and walnut orchards, bank accounts, and investments. Nominate your executor and legal beneficiaries.",
+            text: "Paper your assets across J&K including home houses, Dal Lake shop hotels or houseboats, apple and walnut orchards, bank accounts, and investments. Nominate your executor and legal heirs.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Structure your Will using verified statutory clauses under the Indian Succession Act 1925 or Muslim Personal Law, designating clear share allotments, survivorship provisions, and revoking any prior instruments.",
+            text: "Structure your Will using checked legal clauses under the Indian Succession Act 1925 or Muslim Personal Law, designating clear share allotments, survivorship rules, and revoking any prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the simultaneous presence of two independent adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS J&K Registration Slot",
-            text: "Schedule an online registration appointment on the NGDRS J&K portal (ngdrs.jk.gov.in) for your local Sub-Registrar Office and pay the requisite registration fee via e-Challan.",
+            text: "Schedule an online filing appointment on the NGDRS J&K portal (ngdrs.jk.gov.in) for your local SRO office and pay the requisite filing fee via e-Challan.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Sub-Registrar Office",
-            text: "Attend the Sub-Registrar counter with both witnesses for biometric thumbprinting, identity verification, and photographic recording to place the Will in permanent Book III custody.",
+            text: "Attend the SRO counter with both witnesses for biometric thumbprinting, identity check, and photographic recording to place the Will in permanent Book III custody.",
           },
         ],
       },

@@ -89,7 +89,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
         url: canonicalUrl,
         name: "Succession Certificate Fees: Court Fee Calculator India",
         description:
-          "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, statutory caps, and see how drafting a Will avoids.",
+          "Calculate state-wise estate paper court fees in India. Check ad valorem rates, legal caps, and see how drafting a Will avoids.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic calculator to compute state-wise ad valorem court fees, statutory caps, and procedural expenses under Part X of the.",
+          "Free diagnostic tool to compute state-wise ad valorem court fees, legal caps, and procedural expenses under Part X of the.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -146,7 +146,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "What is the court fee for a succession certificate in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Court fees for a succession certificate are calculated on an ad valorem (percentage-of-value) basis under Schedule I, Article 12 of the Court Fees Act, 1870 (or state-specific amendments). Rates generally range between 2% and 7.5% of the total movable debts and securities declared in the petition. Some states enforce statutory maximum caps, such as ₹75,000 in Maharashtra and Gujarat, or ₹10,00,000 in Karnataka, while others scale without a ceiling.",
+              text: "Court fees for a estate paper are calculated on an ad valorem (percentage-of-value) basis under Schedule I, Article 12 of the Court Fees Act, 1870 (or state-specific amendments). Rates generally range between 2% and 7.5% of the total cash debts and securities declared in the petition. Some states enforce legal maximum caps, such as ₹75,000 in Maharashtra and Gujarat, or ₹10,00,000 in Karnataka, while others scale without a ceiling.",
             },
           },
           {
@@ -154,7 +154,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "Is court fee paid when filing the petition or when the certificate is granted?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 379(1) of the Indian Succession Act, 1925, the petitioner must deposit the estimated court fee or judicial stamps when the court pronounces the final judgment granting the certificate, prior to the physical preparation and sealing of the formal document. An initial nominal court fee stamp (usually ₹50 to ₹200) is paid when filing the original Section 372 petition.",
+              text: "Under Section 379(1) of the Indian Succession Act, 1925, the petitioner must deposit the estimated court fee or judicial stamps when the court pronounces the final judgment granting the paper, prior to the physical preparation and sealing of the formal paper. An initial nominal court fee stamp (usually ₹50 to ₹200) is paid when filing the original Section 372 petition.",
             },
           },
           {
@@ -162,7 +162,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "Can a succession certificate be granted for immovable property like land or a house?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Section 370 of the Indian Succession Act, 1925 explicitly restricts succession certificates to movable debts and securities. It can never be issued for immovable real estate, agricultural land, or flats. To establish title over real estate left without a Will, legal heirs must obtain a Legal Heir Certificate for revenue mutation or petition the District Court for Letters of Administration under Section 218.",
+              text: "No. Section 370 of the Indian Succession Act, 1925 explicitly restricts estate papers to cash debts and securities. It can never be issued for land real estate, farm land, or flats. To establish title over real estate left without a Will, legal heirs must obtain a Legal Heir Paper for revenue name change or petition the District Court for Letters of Care under Section 218.",
             },
           },
           {
@@ -170,7 +170,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "How does drafting a Will avoid succession certificate court fees completely?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When a person creates a legally valid Will, they appoint an executor and bequeath specific assets to chosen beneficiaries. Banks and financial institutions transfer deposits and securities directly upon verifying the Will and identity proofs. A succession certificate is strictly needed only for intestate succession (when someone dies without a Will). A valid Will completely avoids the 2% to 7.5% court fees, newspaper publication costs, and 6-month court delays.",
+              text: "When a person creates a legally valid Will, they appoint an executor and bequeath specific assets to chosen heirs. Banks and financial institutions transfer deposits and securities directly upon verifying the Will and identity proofs. A estate paper is strictly needed only for no-Will estate (when someone dies without a Will). A valid Will completely avoids the 2% to 7.5% court fees, newspaper publication costs, and 6-month court delays.",
             },
           },
           {
@@ -178,7 +178,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "Why do banks demand a succession certificate if there is already a nominee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Supreme Court of India precedents (including Sarbati Devi v. Usha Devi and Shakti Yezdani v. Jayanand Jayant Salgaonkar), a nominee is merely a statutory trustee or custodian holding funds for the rightful legal heirs, not the absolute owner. If the deposit amount is high (often above ₹5 Lakhs to ₹15 Lakhs depending on internal bank policy) or if any legal heir disputes the claim, banks demand a succession certificate to get full statutory immunity under Section 381.",
+              text: "Under Supreme Court of India precedents (including Sarbati Devi v. Usha Devi and Shakti Yezdani v. Jayanand Jayant Salgaonkar), a nominee is merely a legal trustee or custodian holding funds for the rightful legal heirs, not the absolute owner. If the deposit amount is high (often above ₹5 Lakhs to ₹15 Lakhs depending on internal bank policy) or if any legal heir fights the claim, banks demand a estate paper to get full legal immunity under Section 381.",
             },
           },
           {
@@ -186,7 +186,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "What is the maximum court fee cap for succession certificates in Maharashtra and Delhi?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Maharashtra, Schedule I, Article 12 of the Maharashtra Court-fees Act, 1959 imposes a strict maximum ceiling cap of ₹75,000, regardless of whether the estate value is ₹2 Crore or ₹50 Crore. In Delhi, progressive slabs typically peak around 3%, with district courts observing practical administrative caps around ₹75,000 depending on judicial valuation rules.",
+              text: "In Maharashtra, Schedule I, Article 12 of the Maharashtra Court-fees Act, 1959 imposes a strict maximum ceiling cap of ₹75,000, regardless of whether the estate value is ₹2 Crore or ₹50 Crore. In Delhi, progressive slabs typically peak around 3%, with district courts observing practical office caps around ₹75,000 depending on judicial price check rules.",
             },
           },
           {
@@ -194,7 +194,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "Are women, widows, or minor children exempt from court fees in any Indian state?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Certain states provide partial or total court fee concessions for specific vulnerable classes. For instance, Maharashtra government notifications have periodically granted court fee exemptions for female litigants in family and succession matters, subject to specific income thresholds. Petitioners should have their advocate review local state revenue notifications when filing.",
+              text: "Yes. Certain states provide partial or total court fee concessions for specific vulnerable classes. For instance, Maharashtra government notifications have periodically granted court fee exemptions for female litigants in family and estate matters, subject to specific income thresholds. Petitioners should have their lawyer review local state revenue notifications when filing.",
             },
           },
           {
@@ -202,7 +202,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "What other expenses are involved besides the ad valorem court fee?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In addition to the ad valorem court fee, petitioners must pay for mandatory public citations in two daily newspapers (one English, one vernacular, costing ₹6,000 to ₹12,000), advocate professional drafting and court appearance fees (typically ₹25,000 to ₹60,000), non-judicial stamp paper for the court surety bond under Section 375, and miscellaneous typing and court registry fees.",
+              text: "In addition to the ad valorem court fee, petitioners must pay for needed public citations in two daily newspapers (one English, one vernacular, costing ₹6,000 to ₹12,000), lawyer professional drafting and court appearance fees (typically ₹25,000 to ₹60,000), non-judicial stamp paper for the court surety bond under Section 375, and miscellaneous typing and court registry fees.",
             },
           },
           {
@@ -210,7 +210,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "How long does it take from filing the petition to receiving the succession certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An uncontested succession certificate petition generally takes between 4 and 8 months in Indian District Courts. The statutory timeline includes 30 to 45 days for public newspaper citation objections, court recording of petitioner testimony, valuation verification, payment of court fees under Section 379, and execution of a surety indemnity bond under Section 375.",
+              text: "An uncontested estate paper petition generally takes between 4 and 8 months in Indian District Courts. The legal timeline includes 30 to 45 days for public newspaper citation objections, court recording of petitioner testimony, price check check, payment of court fees under Section 379, and signing of a surety indemnity bond under Section 375.",
             },
           },
           {
@@ -218,7 +218,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
             name: "What is a surety bond under Section 375 of the Indian Succession Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 375 of the Indian Succession Act, 1925, the District Judge usually requires the person granted the certificate to furnish a personal bond with one or two solvent sureties. This bond guarantees that the certificate holder will indemnify anyone rightfully entitled to a share in the debt against wrongful appropriation.",
+              text: "Under Section 375 of the Indian Succession Act, 1925, the District Judge usually requires the person granted the paper to furnish a personal bond with one or two solvent sureties. This bond guarantees that the paper holder will indemnify anyone rightfully entitled to a share in the debt against wrongful appropriation.",
             },
           },
         ],

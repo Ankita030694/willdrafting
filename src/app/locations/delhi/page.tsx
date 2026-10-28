@@ -144,7 +144,7 @@ export default function DelhiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Delhi: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support.",
+          "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-filing guidance at SRO offices, and home signing support.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function DelhiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Delhi - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across all 11 revenue districts of Delhi NCR.",
+          "Professional Will drafting, lawyer check, and SRO office e-filing support across all 11 revenue districts of Delhi NCR.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -262,14 +262,14 @@ export default function DelhiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Delhi NCR",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Delhi.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Delhi.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Beneficiaries",
-            text: "List your Delhi properties including DDA flats, builder floors, bank accounts, and demat holdings. Name your beneficiaries and an executor.",
+            text: "List your Delhi assets including DDA flats, builder floors, bank accounts, and demat holdings. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -281,19 +281,19 @@ export default function DelhiLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Delhi SRO Appointment on DORIS",
-            text: "Book an e-appointment on the Delhi Revenue Department portal for your local Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an e-appointment on the Delhi Revenue Office portal for your local SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

@@ -194,18 +194,18 @@ export default function SuccessionCalculatorPage() {
           </Link>
           <span>/</span>
           <span className="text-[#172228] font-semibold">
-            Indian Succession Calculator
+            Indian Succession Tool
           </span>
         </nav>
 
         {/* Hero Section */}
         <header className="max-w-4xl mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-[#F4EFE6] border border-[#172228]/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-4">
-            <span>Free Statutory Tool · Verified by AMA Legal Solutions</span>
+            <span>Free Legal Tool · Checked by AMA Legal Solutions</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-[3.1rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4">
-            Indian Intestate Succession & Legal Heir Share Calculator
+            Indian Intestate Estate & Legal Heir Share Tool
           </h1>
 
           <p className="text-base sm:text-lg leading-[1.65] text-[#49585F] max-w-3xl">
@@ -233,7 +233,7 @@ export default function SuccessionCalculatorPage() {
                 rel="noopener noreferrer"
                 className="font-bold text-[#172228] hover:text-[#C65378] transition-colors"
               >
-                Advocate Anuj Anand Malik
+                Lawyer Anuj Anand Malik
               </a>
             </span>
             <span>•</span>
@@ -267,10 +267,10 @@ export default function SuccessionCalculatorPage() {
         <section className="mb-20 space-y-6">
           <div className="max-w-3xl">
             <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] block mb-2">
-              Statutory Reference Matrix
+              Legal Reference Matrix
             </span>
             <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827]">
-              Statutory Comparison: Intestate Succession vs. Written Will
+              Legal Comparison: No-Will Estate vs. Written Will
             </h3>
           </div>
 
@@ -282,7 +282,7 @@ export default function SuccessionCalculatorPage() {
                     Personal Law System
                   </th>
                   <th className="py-4 px-5 font-semibold border-r border-white/10">
-                    Governing Intestate Statute
+                    Governing No-Will Statute
                   </th>
                   <th className="py-4 px-5 font-semibold border-r border-white/10">
                     Default Share Without a Will
@@ -304,7 +304,7 @@ export default function SuccessionCalculatorPage() {
                     Equal split among Class I heirs: Widow, Sons, Daughters, and Mother (Father is Class II)
                   </td>
                   <td className="py-4 px-5 font-medium text-[#172228]">
-                    100% freedom over self-acquired property + undivided coparcenary share (Section 30)
+                    100% freedom over self-acquired asset + undivided joint share (Section 30)
                   </td>
                 </tr>
                 <tr className="bg-[#FAF7F0]/70">
@@ -315,10 +315,10 @@ export default function SuccessionCalculatorPage() {
                     Section 15(1) & 15(2), Hindu Succession Act, 1956
                   </td>
                   <td className="py-4 px-5 border-r border-[#172228]/10">
-                    Equal split among Husband, Sons & Daughters; parental property reverts under Sec 15(2) if childless
+                    Equal split among Husband, Sons & Daughters; parental asset reverts under Sec 15(2) if childless
                   </td>
                   <td className="py-4 px-5 font-medium text-[#172228]">
-                    100% freedom over all Stridhan, self-acquired, and inherited property (Section 30)
+                    100% freedom over all Stridhan, self-acquired, and inherited asset (Section 30)
                   </td>
                 </tr>
                 <tr className="bg-white">
@@ -326,7 +326,7 @@ export default function SuccessionCalculatorPage() {
                     Muslim - Sunni (Hanafi) & Shia (Ithna Ashari)
                   </td>
                   <td className="py-4 px-5 border-r border-[#172228]/10">
-                    Muslim Personal Law (Shariat) Application Act, 1937
+                    Muslim Personal Law (Shariat) Form Act, 1937
                   </td>
                   <td className="py-4 px-5 border-r border-[#172228]/10">
                     Fixed Quranic shares (Zawil-Furud) for Spouse/Parents + 2:1 Residuary (Asabah) for Sons & Daughters
@@ -346,7 +346,7 @@ export default function SuccessionCalculatorPage() {
                     1/3rd to Spouse and 2/3rds equally to Children (or 1/2 to Spouse & 1/2 to Kindred if childless)
                   </td>
                   <td className="py-4 px-5 font-medium text-[#172228]">
-                    100% testamentary freedom over entire estate (Section 59)
+                    100% Will freedom over entire estate (Section 59)
                   </td>
                 </tr>
                 <tr className="bg-white">
@@ -360,7 +360,7 @@ export default function SuccessionCalculatorPage() {
                     Spouse & each Child take 1 equal share; each surviving Parent takes half the share of a Child
                   </td>
                   <td className="py-4 px-5 font-medium text-[#172228]">
-                    100% testamentary freedom over entire estate (Section 59)
+                    100% Will freedom over entire estate (Section 59)
                   </td>
                 </tr>
               </tbody>
@@ -372,31 +372,31 @@ export default function SuccessionCalculatorPage() {
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
           <div className="lg:col-span-8 bg-white border border-[#172228]/10 rounded-3xl p-7 sm:p-10 space-y-5">
             <h3 className="text-2xl sm:text-3xl font-medium text-[#111827]">
-              How Intestate Succession Works Across 4 Personal Laws
+              How No-Will Estate Works Across 4 Personal Laws
             </h3>
             <p className="text-[16px] leading-[1.8] text-[#374151]">
               When an Indian citizen or NRI/OCI holding assets in India passes away without leaving a validly executed Will under{" "}
               <strong className="font-semibold text-[#111827]">
                 Section 63 of the Indian Succession Act, 1925
               </strong>
-              , they are legally deemed to have died <em>intestate</em>. Banks, mutual fund registrars (CAMS/KFintech), NSDL/CDSL depositories, and municipal mutation authorities cannot distribute assets based on family consensus alone, they are bound by the statutory schedules of the deceased&apos;s personal law.
+              , they are legally deemed to have died <em>no-Will</em>. Banks, mutual fund registrars (CAMS/KFintech), NSDL/CDSL depositories, and city name change offices cannot distribute assets based on family consensus alone, they are bound by the legal schedules of the deceased&apos;s personal law.
             </p>
             <p className="text-[16px] leading-[1.8] text-[#374151]">
               Even worse, as confirmed by the Supreme Court of India in{" "}
-              <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>, adding a nominee on your bank account or Demat portfolio only appoints a temporary caretaker to receive the funds. The nominee is legally required to distribute those funds according to your Will, or, if you have no Will, to every statutory heir shown in the calculator above.
+              <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>, adding a nominee on your bank account or Demat portfolio only appoints a temporary caretaker to receive the funds. The nominee is legally required to distribute those funds according to your Will, or, if you have no Will, to every legal heir shown in the tool above.
             </p>
             <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex items-start gap-2.5 text-sm text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-1" />
-                <span>Bypass 8–24 month Succession Certificate court delays</span>
+                <span>Bypass 8–24 month Estate Paper court delays</span>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-1" />
-                <span>Protect your spouse from forced property partition</span>
+                <span>Protect your spouse from forced asset split</span>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-1" />
-                <span>Align bank & Demat nominees with legal beneficiaries</span>
+                <span>Align bank & Demat nominees with legal heirs</span>
               </div>
               <div className="flex items-start gap-2.5 text-sm text-[#172228]">
                 <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0 mt-1" />
@@ -409,7 +409,7 @@ export default function SuccessionCalculatorPage() {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-[#C65378]">
                 <BookOpen className="w-4 h-4" />
-                <span>Related Statutory Guides</span>
+                <span>Related Legal Guides</span>
               </div>
               <h3 className="text-xl font-medium text-[#111827]">
                 Deep-Dive Legal Research
@@ -420,7 +420,7 @@ export default function SuccessionCalculatorPage() {
                     href="/blogs/ancestral-vs-self-acquired-property-will-hindu-succession-act"
                     className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1"
                   >
-                    <span>Ancestral vs. Self-Acquired Property (Sec 30)</span>
+                    <span>Family vs. Self-Acquired Asset (Sec 30)</span>
                     <ArrowUpRight className="w-4 h-4 shrink-0" />
                   </Link>
                 </li>

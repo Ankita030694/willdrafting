@@ -134,7 +134,7 @@ export default function ChennaiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Chennai: Registration & Probate Guide",
         description:
-          "Draft your Will in Chennai with expert legal consultation. Complete Madras High Court probate guidance and Sub-Registrar office registration help.",
+          "Draft your Will in Chennai with expert legal talk. Complete Madras High Court probate guidance and SRO office filing help.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -181,7 +181,7 @@ export default function ChennaiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Chennai - Estate Planning, Probate & SRO Registration",
         description:
-          "Professional Will drafting, Madras High Court probate advisory, and TNREGINET Sub-Registrar Office registration support across Chennai and.",
+          "Professional Will drafting, Madras High Court probate advisory, and TNREGINET SRO office filing support across Chennai and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -257,7 +257,7 @@ export default function ChennaiLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Chennai (Tamil Nadu)",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar via TNREGINET in Chennai.",
+          "Five clear steps to create a legally binding Will and register it before the SRO via TNREGINET in Chennai.",
         totalTime: "P3D",
         step: [
           {
@@ -270,25 +270,25 @@ export default function ChennaiLocationPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Specific Devise and Revocation Clauses",
-            text: "Draft your Will using our online legal engine or consult a senior estate advocate to incorporate essential legal clauses, survivorship rights, and clear partition barriers.",
+            text: "Draft your Will using our online legal engine or consult a senior estate lawyer to incorporate essential legal clauses, survivorship rights, and clear split barriers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Non-Beneficiary Witnesses",
-            text: "Print the Will on standard white A4 sheets. Sign each page in the simultaneous presence of two independent adult witnesses who do not inherit any property under the Will.",
+            text: "Print the Will on standard white A4 sheets. Sign each page in the simultaneous presence of two independent adult witnesses who do not inherit any asset under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book TNREGINET Appointment & Pay Official Fee",
-            text: "Generate an online token on the Tamil Nadu registration portal (tnreginet.gov.in) for your jurisdictional Sub-Registrar Office and pay the nominal ₹100 registration fee online.",
+            text: "Generate an online token on the Tamil Nadu filing portal (tnreginet.gov.in) for your local SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Registration at Chennai SRO",
-            text: "Visit the Chennai Sub-Registrar Office with your two witnesses and original photo IDs for biometric fingerprinting, digital photo capture, and permanent Book III entry.",
+            text: "Visit the Chennai SRO office with your two witnesses and original photo IDs for biometric fingerprinting, digital photo capture, and permanent Book III entry.",
           },
         ],
       },

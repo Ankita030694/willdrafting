@@ -150,7 +150,7 @@ export default function SuratLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Surat: Online Will & Business Planning",
         description:
-          "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration.",
+          "Draft your Will in Surat with expert lawyer review. Secure shop assets, family business shares, and Gujarat SRO filing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -197,7 +197,7 @@ export default function SuratLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Surat - Commercial Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, diamond and textile business succession, HUF asset planning, and Sub-Registrar Office e-registration support.",
+          "Professional Will drafting, diamond and textile business estate, HUF asset planning, and SRO office e-filing support.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -271,38 +271,38 @@ export default function SuratLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Surat, Gujarat",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Surat.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Surat.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and Business Interests",
-            text: "List your Surat properties including SMC residential apartments, textile commercial shops, diamond trading shares, GIDC plots, bank accounts, and demat folios. Name your beneficiaries and an executor.",
+            text: "List your Surat assets including SMC home apartments, textile shop shops, diamond trading shares, GIDC plots, bank accounts, and demat folios. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Commercial & Legal Clauses",
-            text: "Draft your Will using our online legal platform or with a senior estate lawyer to include business succession, survivorship, HUF partition, and specific asset bequests.",
+            text: "Draft your Will using our online legal platform or with a senior estate lawyer to include business estate, survivorship, HUF split, and specific asset bequests.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Surat SRO Appointment on Garvi Gujarat",
-            text: "Book an e-appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your local Sub-Registrar office and pay the nominal ₹100 registration fee online.",
+            text: "Book an e-appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) for your local SRO office and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric thumbprints, digital photograph capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric thumbprints, digital photograph capture, and official Book III filing.",
           },
         ],
       },

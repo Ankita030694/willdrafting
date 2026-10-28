@@ -142,7 +142,7 @@ export default function TripuraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tripura: Online Will Registration Guide",
         description:
-          "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in.",
+          "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act rules, tribal area Sixth Schedule land rules, and SRO filing in.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TripuraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tripura - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, TLR & LR Act compliance, and Sub-Registrar Office assistance across Agartala, Udaipur.",
+          "Professional Will drafting, lawyer check, TLR & LR Act compliance, and SRO office help across Agartala, Udaipur.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -253,38 +253,38 @@ export default function TripuraLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Tripura",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Tripura.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Tripura.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Tripura real estate including Agartala municipal holdings, Nal/Lunga/Tilla land Khatians, and financial investments. Designate beneficiaries and an executor.",
+            text: "List your Tripura real estate including Agartala city holdings, Nal/Lunga/Tilla land Khatians, and financial investments. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses compliant with the TLR & LR Act 1960, TTAADC protections, survivorship terms, and guardian appointments for minors.",
+            text: "Draft your Will using checked legal clauses compliant with the TLR & LR Act 1960, TTAADC protections, survivorship terms, and guardian appointments for minors.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar Office Visit",
-            text: "Prepare your application for your local Sub-Registrar Office in Agartala Sadar, Udaipur, Dharmanagar, or other district registries and pay nominal government Book III fees.",
+            text: "Prepare your form for your local SRO office in Agartala Sadar, Udaipur, Dharmanagar, or other district registries and pay nominal government Book III fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Tripura SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

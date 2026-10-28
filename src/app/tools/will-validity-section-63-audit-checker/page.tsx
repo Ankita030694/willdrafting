@@ -130,7 +130,7 @@ export default function WillValidityAuditCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive 12-question legal diagnostic tool that checks if a Will is valid in India under Sections 59, 61, 63, and 67 of the Indian.",
+          "Free 12-question legal diagnostic tool that checks if a Will is valid in India under Sections 59, 61, 63, and 67 of the Indian.",
         image: imageUrl,
         offers: {
           "@type": "Offer",
@@ -147,7 +147,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "How do I check if a Will is valid in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "To be legally valid in India, a Will must satisfy four statutory rules under the Indian Succession Act, 1925: (1) The testator must be an adult of sound mind under Section 59, (2) The Will must be made voluntarily without fraud or coercion under Section 61, (3) The testator must sign or affix a thumb mark with intent to give effect to the Will under Section 63(a) and 63(b), and (4) At least two witnesses must attest the Will in the testator's presence under Section 63(c).",
+              text: "To be legally valid in India, a Will must satisfy four legal rules under the Indian Succession Act, 1925: (1) The Will maker must be an adult of sound mind under Section 59, (2) The Will must be made voluntarily without fraud or coercion under Section 61, (3) The Will maker must sign or affix a thumb mark with intent to give effect to the Will under Section 63(a) and 63(b), and (4) At least two witnesses must attest the Will in the Will maker's presence under Section 63(c).",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "Is a plain-paper or unregistered Will legally valid in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 18(e) of the Registration Act, 1908, registration of a Will is completely optional. A Will written or printed on plain white paper carries zero stamp duty and is 100% legally valid if it is properly signed by the testator and attested by two witnesses under Section 63 of the Indian Succession Act, 1925.",
+              text: "Yes. Under Section 18(e) of the Filing Act, 1908, filing of a Will is completely a choice. A Will written or printed on plain white paper carries zero stamp duty and is 100% legally valid if it is properly signed by the Will maker and attested by two witnesses under Section 63 of the Indian Succession Act, 1925.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "What happens if a beneficiary or their spouse signs as a witness to a Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 67 of the Indian Succession Act, 1925, if an attesting witness or their spouse is given a bequest in the Will, that specific bequest becomes legally void (strictly enforced for Christian and Parsi Wills). For Hindu, Sikh, Jain, and Buddhist Wills, courts treat a beneficiary or their spouse acting as a witness as a severe suspicious circumstance indicating undue influence.",
+              text: "Under Section 67 of the Indian Succession Act, 1925, if an signing witness or their spouse is given a bequest in the Will, that specific bequest becomes legally void (strictly enforced for Christian and Parsi Wills). For Hindu, Sikh, Jain, and Buddhist Wills, courts treat a heir or their spouse acting as a witness as a severe suspicious circumstance indicating undue influence.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "Does a Will require a doctor certificate to be valid in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A doctor certificate is not mandatory by statute under Section 63. Look at Supreme Court rulings like H. Venkatachala Iyengar v. B.N. Thimmajamma: when a testator is a senior citizen (above age 65) or unwell, attaching a simultaneous mental fitness certificate from an MBBS or MD doctor prevents rival heirs from challenging testamentary capacity under Section 59.",
+              text: "A doctor paper is not needed by statute under Section 63. Look at Supreme Court rulings like H. Venkatachala Iyengar v. B.N. Thimmajamma: when a Will maker is a senior citizen (above age 65) or unwell, attaching a simultaneous mental fitness paper from an MBBS or MD doctor prevents rival heirs from challenging Will capacity under Section 59.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "Is a Will signed with Aadhaar eSign or Digital Signature valid in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 1(4) read with Entry 3 of the First Schedule to the Information Technology Act, 2000, testamentary dispositions and Wills are explicitly excluded from electronic signature validity. You can draft a Will online, but you must print it on physical paper and sign it in wet ink or thumb impression before two physical witnesses.",
+              text: "No. Under Section 1(4) read with Entry 3 of the First Schedule to the Information Technology Act, 2000, Will gifts and Wills are explicitly excluded from electronic signature validity. You can draft a Will online, but you must print it on physical paper and sign it in wet ink or thumb impression before two physical witnesses.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "Is a handwritten or diary Will valid without witnesses in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Unlike some foreign jurisdictions that allow unwitnessed holographic Wills, Section 63(c) of the Indian Succession Act requires every unprivileged Will in India, whether typed or handwritten, to be attested by at least two witnesses. An unwitnessed handwritten note is void.",
+              text: "No. Unlike some foreign areas that allow unwitnessed holographic Wills, Section 63(c) of the Indian Succession Act requires every unprivileged Will in India, whether typed or handwritten, to be attested by at least two witnesses. An unwitnessed handwritten note is void.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "Do both attesting witnesses need to sign the Will at the exact same time?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 63(c) of the Indian Succession Act, it is not strictly necessary for both witnesses to be present at the exact same moment, provided each witness either sees the testator sign or receives a personal acknowledgment of the signature from the testator, and each witness signs in the presence of the testator. However, signing together in one sitting is the safest practice.",
+              text: "Under Section 63(c) of the Indian Succession Act, it is not strictly necessary for both witnesses to be present at the exact same moment, provided each witness either sees the Will maker sign or receives a personal acknowledgment of the signature from the Will maker, and each witness signs in the presence of the Will maker. However, signing together in one sitting is the safest practice.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function WillValidityAuditCheckerPage() {
             name: "How can I fix a defective DIY Will while I am still alive?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 62 and Section 70 of the Indian Succession Act, 1925, a Will is revocable and can be replaced at any time during the testator's lifetime. Do not cross out or overwrite lines on an old Will. Instead, execute a fresh, properly structured Will containing an express revocation clause and sign it before two independent adult witnesses.",
+              text: "Under Section 62 and Section 70 of the Indian Succession Act, 1925, a Will is revocable and can be replaced at any time during the Will maker's lifetime. Do not cross out or overwrite lines on an old Will. Instead, execute a fresh, properly structured Will containing an express revocation clause and sign it before two independent adult witnesses.",
             },
           },
         ],

@@ -118,32 +118,32 @@ const NAGALAND_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
+    label: "Two Printed Copies of the Will Paper",
     detail: "Printed clearly on standard white A4 sheets. Non-judicial stamp paper is not required under Indian and Nagaland estate law.",
     checked: true,
   },
   {
     id: "item-2",
     label: "Original Aadhaar Card / Voter ID of Will maker",
-    detail: "Needed for verifying identity and recording official signatures before the Deputy Commissioner or Sub-Registrar.",
+    detail: "Needed for verifying identity and recording official signatures before the Deputy Commissioner or SRO.",
     checked: true,
   },
   {
     id: "item-3",
-    label: "Two Independent Adult Attesting Witnesses",
+    label: "Two Independent Adult Signing Witnesses",
     detail: "Must possess valid photo identity cards and must not be heirs receiving any bequest or asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor Sound Mind Note (MBBS / MD)",
-    detail: "Highly recommended for senior Will makers aged 60 and above to certify complete testamentary mental capacity and lucidity.",
+    detail: "Highly recommended for senior Will makers aged 60 and above to certify complete Will mental capacity and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Self-Acquired Asset Ownership Records",
-    detail: "Title deeds, leasehold signing papers, Dimapur/Kohima municipal tax receipts, bank fixed deposit receipts, and demat folios.",
+    detail: "Title deeds, leasehold signing papers, Dimapur/Kohima city tax receipts, bank fixed deposit receipts, and demat folios.",
     checked: false,
   },
   {
@@ -321,11 +321,11 @@ export default function NagalandLocationClient({ faqs }: Props) {
             </div>
             <div className="p-2 sm:p-3 border-r-0 md:border-r border-slate-200">
               <div className="text-xl sm:text-2xl font-black text-slate-900">16 Districts</div>
-              <div className="text-[11px] sm:text-xs text-slate-600 font-medium">DC Office Registration</div>
+              <div className="text-[11px] sm:text-xs text-slate-600 font-medium">DC Office Filing</div>
             </div>
             <div className="p-2 sm:p-3 border-r-0 md:border-r border-slate-200">
               <div className="text-xl sm:text-2xl font-black text-[#5F7E75]">₹0 Stamp Duty</div>
-              <div className="text-[11px] sm:text-xs text-slate-600 font-medium">Testamentary Exemption</div>
+              <div className="text-[11px] sm:text-xs text-slate-600 font-medium">Will Exemption</div>
             </div>
             <div className="p-2 sm:p-3">
               <div className="text-xl sm:text-2xl font-black text-slate-900">48 Hours</div>
@@ -464,7 +464,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     Estate planning in Nagaland presents a unique law landscape in India. Under <strong>Article 371A of the Constitution of India</strong>, local tribal laws and practices regarding ownership, transfer of land, and civil estate are granted special autonomy against general central statutes. So, estate over family clan land, community terraced fields, and old village village sites is governed by clear Naga tribal traditions (such as Angami, Ao, Sumi, Lotha, and Konyak customs).
                   </p>
                   <p>
-                    However, the rapid economic expansion of shop centers like <strong>Dimapur, Kohima, and Chumoukedima</strong> has created substantial modern wealth. Urban RCC residences, shop markets, transport fleets, corporate shares, insurance policies, and large bank fixed deposits represent <strong>self-acquired assets</strong>. Under the Indian Succession Act, 1925, an person possesses uninhibited testamentary power to bequeath these self-acquired assets to chosen heirs, including daughters, surviving spouses, and minor children.
+                    However, the rapid economic expansion of shop centers like <strong>Dimapur, Kohima, and Chumoukedima</strong> has created substantial modern wealth. Urban RCC residences, shop markets, transport fleets, corporate shares, insurance policies, and large bank fixed deposits represent <strong>self-acquired assets</strong>. Under the Indian Succession Act, 1925, an person possesses uninhibited Will power to bequeath these self-acquired assets to chosen heirs, including daughters, surviving spouses, and minor children.
                   </p>
                   <p>
                     Without an lawyer-drafted Will, families often face protracted passing assets fights between old village elders and urban successors. Our specialized legal platform bridges Naga local traditions with legal precision to make sure your hard-earned wealth is securely transferred without ambiguity.
@@ -505,7 +505,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   2. Legal Framework: Local Law vs Indian Succession Act
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate devolution in Nagaland operates under two concurrent legal mechanisms: law protections safeguarding tribal local heritage, and legal rules ruling self-acquired asset and movable assets.
+                  Estate devolution in Nagaland operates under two concurrent legal mechanisms: law protections safeguarding tribal local heritage, and legal rules ruling self-acquired asset and cash assets.
                 </p>
               </div>
 
@@ -526,13 +526,13 @@ export default function NagalandLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-4">
                   <div className="flex items-center gap-2 text-[#5F7E75] font-bold text-sm">
                     <FileCheck className="w-4 h-4" />
-                    <span>Self-Acquired &amp; Movable Wealth</span>
+                    <span>Self-Acquired &amp; Cash Wealth</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
                     Urban Real Estate &amp; Financial Portfolios
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind has full testamentary freedom to bequeath self-acquired assets. Shop showrooms in Dimapur, town bungalows in Kohima, bank savings, and businesses can be bequeathed freely to daughters, wives, sons, or trusts without local restrictions.
+                    Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind has full Will freedom to bequeath self-acquired assets. Shop showrooms in Dimapur, town bungalows in Kohima, bank savings, and businesses can be bequeathed freely to daughters, wives, sons, or trusts without local restrictions.
                   </p>
                 </div>
               </div>
@@ -554,10 +554,10 @@ export default function NagalandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Will Registration in Nagaland: DC Office &amp; Book III
+                  3. Will Filing in Nagaland: DC Office &amp; Book III
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is a choice in Nagaland. An unwritten or plain Will signed before two witnesses is legally valid. However, formal signing before the Deputy Commissioner provides decisive legal advantages.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is a choice in Nagaland. An unwritten or plain Will signed before two witnesses is legally valid. However, formal signing before the Deputy Commissioner provides decisive legal advantages.
                 </p>
               </div>
 
@@ -570,7 +570,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     Book III Government Custody
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Registration enters your Will into permanent Book III government records at the Deputy Commissioner registry. This permanently eliminates risks of physical tampering, theft, or deliberate destruction by disinherited parties.
+                    Filing enters your Will into permanent Book III government records at the Deputy Commissioner registry. This permanently eliminates risks of physical tampering, theft, or deliberate destruction by disinherited parties.
                   </p>
                 </div>
 
@@ -591,10 +591,10 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     3
                   </div>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Swift Municipal Name Change
+                    Swift City Name Change
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The Kohima Municipal Council (KMC) and Dimapur Municipal Council (DMC) recognize filed Wills for immediate asset tax name change, share paper substitution, and water connection transfer without expensive court declarations.
+                    The Kohima City Council (KMC) and Dimapur City Council (DMC) recognize filed Wills for immediate asset tax name change, share paper substitution, and water connection transfer without expensive court declarations.
                   </p>
                 </div>
               </div>
@@ -662,7 +662,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   5. District Directory: Nagaland SRO &amp; DC Legal Registry
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In Nagaland, the Deputy Commissioner (DC), Additional Deputy Commissioner (ADC), or Sub-Divisional Officer (Civil) functions as the District Registrar and Sub-Registrar under the Registration Act, 1908. Select your district hub below to view office registry details:
+                  In Nagaland, the Deputy Commissioner (DC), Additional Deputy Commissioner (ADC), or Sub-Divisional Officer (Civil) functions as the District Registrar and SRO under the Filing Act, 1908. Select your district hub below to view office registry details:
                 </p>
               </div>
 
@@ -840,7 +840,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Kohima</strong> for government officials, business proprietors, and set uped families. Balances Angami local land norms with the Indian Succession Act for multi-storey town houses, KMC municipal assets, and bank savings to guarantee seamless name change.
+                      Customized <strong>Will drafting services in Kohima</strong> for government officials, business proprietors, and set uped families. Balances Angami local land norms with the Indian Succession Act for multi-storey town houses, KMC city assets, and bank savings to guarantee seamless name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -849,7 +849,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Treasury Directorate Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Senior lawyer review, Kohima Bench jurisprudence alignment, and verified Book III signing.
+                        Senior lawyer review, Kohima Bench jurisprudence alignment, and checked Book III signing.
                       </p>
                     </div>
                   </div>
@@ -902,7 +902,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Complex, NH-29, Chumoukedima</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Registration help at newly set uped district registries with door-to-door legal help.
+                        Filing help at newly set uped district registries with door-to-door legal help.
                       </p>
                     </div>
                   </div>
@@ -946,7 +946,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative Will drafting across Mokokchung town and surrounding Ao regions. Structured to address Ao local land passing assets principles, industrial assets in Tuli, and self-acquired town home complexes without family conflict.
+                      Authoritative Will drafting across Mokokchung town and surrounding Ao regions. Structured to address Ao local land passing assets principles, plant assets in Tuli, and self-acquired town home complexes without family conflict.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -999,7 +999,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized legal solutions for oil palm plantations, agro-forestry estates, fishery farms along the Doyang River, and shop asset holdings in Wokha town. Incorporates clear guardianship and life-interest protections for farm heirs.
+                      Customized legal solutions for oil palm plantations, agro-forestry estates, fishery farms along the Doyang River, and shop asset holdings in Wokha town. Incorporates clear child care and life-interest protections for farm heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1086,7 +1086,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Konyak Belt &amp; Industrial Border
+                        Konyak Belt &amp; Plant Border
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DC Mon SRO
@@ -1099,7 +1099,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mon Town</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tizit Industrial Belt</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tizit Plant Belt</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Aboi Sub-Division</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Naginimora</span>
                     </div>
@@ -1114,13 +1114,13 @@ export default function NagalandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Mon Headquarters</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial asset mapping, trade lease estate, and DC office signing accompaniment.
+                        Plant asset mapping, trade lease estate, and DC office signing accompaniment.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Industrial &amp; Tea Plantations</span>
+                    <span className="text-xs font-bold text-slate-500">Plant &amp; Tea Plantations</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1200,7 +1200,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   7. 5-Step Process: Legal Will Drafting in Nagaland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Signing a legally binding Will in Nagaland requires strict adherence to law safeguards, legal attestation, and district signing protocols:
+                  Signing a legally binding Will in Nagaland requires strict adherence to law safeguards, legal witness signing, and district signing protocols:
                 </p>
               </div>
 
@@ -1230,7 +1230,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                       Step 2: Custom Legal Drafting &amp; Local Alignment
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our senior estate lawyers draft customized clauses making sure complete compliance with Article 371A and the Nagaland Land and Revenue Regulation (Amendment) Act, 1978. Clear executor designations and minor guardianship rules are codified.
+                      Our senior estate lawyers draft customized clauses making sure complete compliance with Article 371A and the Nagaland Land and Revenue Regulation (Amendment) Act, 1978. Clear executor designations and minor child care rules are codified.
                     </p>
                   </div>
                 </div>
@@ -1260,7 +1260,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                       Step 4: Presentation at Deputy Commissioner Registry
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Present the signed Will at the Office of the Deputy Commissioner or SDO (Civil) in your district center. Remit the nominal legal fee (₹200 to ₹500) and submit Will maker and witness KYC documents.
+                      Present the signed Will at the Office of the Deputy Commissioner or SDO (Civil) in your district center. Remit the nominal legal fee (₹200 to ₹500) and submit Will maker and witness KYC papers.
                     </p>
                   </div>
                 </div>
@@ -1275,7 +1275,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                       Step 5: Identity Check &amp; Book III Endorsement
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The registering officer verifies testamentary soundness and confirms signatures with both witnesses. The official seal and signing number are affixed, and the Will is safely archived in permanent Book III custody.
+                      The registering officer verifies Will soundness and confirms signatures with both witnesses. The official seal and signing number are affixed, and the Will is safely archived in permanent Book III custody.
                     </p>
                   </div>
                 </div>
@@ -1291,10 +1291,10 @@ export default function NagalandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Doorstep Signing: Section 31 Home Registration
+                  8. Doorstep Signing: Section 31 Home Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly Will makers, bedridden people, or persons with mobility restrictions in Kohima, Dimapur, or district hill areas, visiting government offices can be challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, signing can take place directly at your residence.
+                  For elderly Will makers, bedridden people, or persons with mobility restrictions in Kohima, Dimapur, or district hill areas, visiting government offices can be challenging. Under <strong>Section 31 of the Filing Act, 1908</strong>, signing can take place directly at your residence.
                 </p>
               </div>
 
@@ -1303,7 +1303,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block text-xs sm:text-sm">Doctor Medical Certificate</strong>
+                      <strong className="text-slate-900 block text-xs sm:text-sm">Doctor Medical Paper</strong>
                       <span className="text-slate-600 text-xs">A filed MBBS or MD doctor certifies that the senior citizen is of sound mind but medically advised against traveling.</span>
                     </div>
                   </div>
@@ -1320,7 +1320,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block text-xs sm:text-sm">Doorstep Biometric Capture</strong>
-                      <span className="text-slate-600 text-xs">The registering officer attends the residence to examine the Will maker, record signatures, and complete official Book III attestation.</span>
+                      <span className="text-slate-600 text-xs">The registering officer attends the residence to examine the Will maker, record signatures, and complete official Book III witness signing.</span>
                     </div>
                   </div>
 
@@ -1354,10 +1354,10 @@ export default function NagalandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Essential Documents for Nagaland Will Registration
+                  9. Essential Papers for Nagaland Will Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Interactive checklist for registering your Will in Nagaland. Click each document as you assemble your paperwork:
+                  Free checklist for registering your Will in Nagaland. Click each paper as you assemble your paperwork:
                 </p>
               </div>
 
@@ -1431,7 +1431,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     Town Houses, Flats &amp; RCC Buildings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Houses and home plots in Kohima, Dimapur, and Chumoukedima buyd through personal savings are 100% self-acquired. Wills specify municipal survey numbers, tax assessment IDs, and exact share partitions for surviving spouses and children.
+                    Houses and home plots in Kohima, Dimapur, and Chumoukedima buyd through personal savings are 100% self-acquired. Wills specify city survey numbers, tax assessment IDs, and exact share partitions for surviving spouses and children.
                   </p>
                 </div>
 
@@ -1470,7 +1470,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     Article 371A Local Alignments
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Village lands and hereditary clan terraced fields must respect tribal local rules. Our lawyers draft express testamentary declarations recording family clan lineage, preventing illegal alienation and avoiding village council fights.
+                    Village lands and hereditary clan terraced fields must respect tribal local rules. Our lawyers draft express Will declarations recording family clan lineage, preventing illegal alienation and avoiding village council fights.
                   </p>
                 </div>
               </div>
@@ -1485,10 +1485,10 @@ export default function NagalandLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. Registration Fees &amp; Stamp Duty Schedule in Nagaland
+                  11. Filing Fees &amp; Stamp Duty Schedule in Nagaland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike asset gifts or sale deeds which attract heavy ad-valorem stamp duty and signing fees, Wills are testamentary instruments and enjoy substantial legal exemptions across Nagaland:
+                  Unlike asset gifts or sale deeds which attract heavy ad-valorem stamp duty and signing fees, Wills are Will instruments and enjoy substantial legal exemptions across Nagaland:
                 </p>
               </div>
 
@@ -1499,7 +1499,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                       <tr>
                         <th className="py-3 px-4 sm:px-6">Devolution Method</th>
                         <th className="py-3 px-4 sm:px-6">Stamp Duty</th>
-                        <th className="py-3 px-4 sm:px-6">Registration Fee</th>
+                        <th className="py-3 px-4 sm:px-6">Filing Fee</th>
                         <th className="py-3 px-4 sm:px-6">Legal Enforceability</th>
                       </tr>
                     </thead>
@@ -1530,7 +1530,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                       </tr>
                       <tr>
                         <td className="py-3.5 px-4 sm:px-6 font-medium text-slate-900">
-                          Without a Will Estate Certificate
+                          Without a Will Estate Paper
                         </td>
                         <td className="py-3.5 px-4 sm:px-6 text-rose-700 font-semibold">
                           2% to 3% Court Fees
@@ -1558,7 +1558,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   12. Professional Will Drafting Packages in Nagaland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Fixed pricing packages with zero hidden fees. All options include legally vetted clauses, Article 371A safeguards, and complete testamentary safety:
+                  Fixed pricing packages with zero hidden fees. All options include legally vetted clauses, Article 371A safeguards, and complete Will safety:
                 </p>
               </div>
 
@@ -1577,7 +1577,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-600 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Lawyer-drafted testamentary document</span>
+                        <span>Lawyer-drafted Will paper</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1754,13 +1754,13 @@ export default function NagalandLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59 &amp; 63)
                   </div>
                   <p className="text-slate-600 leading-relaxed text-xs">
-                    Codifies sound mind to dispose of self-acquired asset, defining the rules of sound mind, writing, and attestation by two witnesses.
+                    Codifies sound mind to dispose of self-acquired asset, defining the rules of sound mind, writing, and witness signing by two witnesses.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <div className="font-extrabold text-slate-900">
-                    Registration Act, 1908 (Sections 18(e) &amp; 31)
+                    Filing Act, 1908 (Sections 18(e) &amp; 31)
                   </div>
                   <p className="text-slate-600 leading-relaxed text-xs">
                     Governs the a choice signing of Wills in permanent Book III custody and authorizes doorstep commission visits for infirm or elderly Will makers.
@@ -1778,7 +1778,7 @@ export default function NagalandLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-1.5">
                   <div className="font-extrabold text-slate-900">
-                    Rules for Administration of Justice &amp; Police in Nagaland
+                    Rules for Care of Justice &amp; Police in Nagaland
                   </div>
                   <p className="text-slate-600 leading-relaxed text-xs">
                     Empowers Deputy Commissioners, ADCs, and Dobashi (DB) Courts to administer justice according to local steps while respecting written legal instruments.

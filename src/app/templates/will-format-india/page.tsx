@@ -99,7 +99,7 @@ export default function WillFormatIndiaPage() {
         url: canonicalUrl,
         name: "Will Format in India: Free Legal Template | WillDrafting",
         description:
-          "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at.",
+          "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, asset schedules, and lawyer review at.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -136,7 +136,7 @@ export default function WillFormatIndiaPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Execute a Legally Valid Will in India",
         description:
-          "Step-by-step statutory procedure to execute a legally enforceable Will on plain paper in India under Section 63 of the Indian Succession Act.",
+          "Step-by-step legal step to execute a legally enforceable Will on plain paper in India under Section 63 of the Indian Succession Act.",
         image: imageUrl,
         totalTime: "PT15M",
         supply: [
@@ -172,7 +172,7 @@ export default function WillFormatIndiaPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Draft Specific Bequests and Residuary Clause",
-            text: "Designate specific beneficiaries for immovable and movable assets, and add a sweeper residuary clause to cover all future or omitted property.",
+            text: "Designate specific heirs for land and cash assets, and add a sweeper residuary clause to cover all future or omitted asset.",
           },
           {
             "@type": "HowToStep",
@@ -184,13 +184,13 @@ export default function WillFormatIndiaPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Sign Before Two Independent Witnesses",
-            text: "Sign or mark the bottom of every page in the visual presence of two independent adult witnesses who are not beneficiaries or spouses of beneficiaries.",
+            text: "Sign or mark the bottom of every page in the visual presence of two independent adult witnesses who are not heirs or spouses of heirs.",
           },
           {
             "@type": "HowToStep",
             position: 6,
             name: "Store in Safe Custody",
-            text: "Keep the original signed Will in a secure location and notify your named executor where the document is kept.",
+            text: "Keep the original signed Will in a secure location and notify your named executor where the paper is kept.",
           },
         ],
       },
@@ -211,7 +211,7 @@ export default function WillFormatIndiaPage() {
             name: "How many witnesses are required to execute a valid Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 63(c) of the Indian Succession Act, 1925 strictly mandates a minimum of two adult witnesses. Each witness must see the testator sign or acknowledge their signature, and each witness must sign in the presence of the testator.",
+              text: "Section 63(c) of the Indian Succession Act, 1925 strictly mandates a minimum of two adult witnesses. Each witness must see the Will maker sign or acknowledge their signature, and each witness must sign in the presence of the Will maker.",
             },
           },
           {
@@ -219,7 +219,7 @@ export default function WillFormatIndiaPage() {
             name: "Can a family member or beneficiary be an attesting witness?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A family member can be a witness ONLY if they and their spouse receive nothing under the Will. Under Section 67 of the Indian Succession Act, any bequest made to an attesting witness or their spouse is completely void.",
+              text: "A family member can be a witness ONLY if they and their spouse receive nothing under the Will. Under Section 67 of the Indian Succession Act, any bequest made to an signing witness or their spouse is completely void.",
             },
           },
           {
@@ -227,7 +227,7 @@ export default function WillFormatIndiaPage() {
             name: "Does a Will need to be registered at the Sub-Registrar office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Registration is optional. Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely voluntary. An unregistered Will written on plain paper is just as valid as a registered one.",
+              text: "Filing is a choice. Under Section 18(e) of the Filing Act, 1908, registering a Will is entirely voluntary. An plain Will written on plain paper is just as valid as a filed one.",
             },
           },
           {
@@ -235,7 +235,7 @@ export default function WillFormatIndiaPage() {
             name: "Can I type my Will on a computer, or must it be handwritten?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Both typed and handwritten (holographic) Wills are equally valid in India. A typed document on standard white paper is widely preferred because it eliminates handwriting ambiguities.",
+              text: "Both typed and handwritten (holographic) Wills are equally valid in India. A typed paper on standard white paper is widely preferred because it eliminates handwriting ambiguities.",
             },
           },
           {
@@ -243,7 +243,7 @@ export default function WillFormatIndiaPage() {
             name: "Does a Will override bank account and mutual fund nominations?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. In Shakti Yezdani v. Jayanand Salgaonkar (2023), the Supreme Court affirmed that a nominee is merely a temporary trustee. The nominee must hand over the funds to the beneficiaries named in the valid Will.",
+              text: "Yes. In Shakti Yezdani v. Jayanand Salgaonkar (2023), the Supreme Court affirmed that a nominee is merely a temporary trustee. The nominee must hand over the funds to the heirs named in the valid Will.",
             },
           },
           {
@@ -251,7 +251,7 @@ export default function WillFormatIndiaPage() {
             name: "Can I bequeath ancestral property through my Will in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You can only bequeath your own separate undivided coparcenary share in ancestral property under Section 30 of the Hindu Succession Act, 1956. You cannot bequeath the entire ancestral family estate.",
+              text: "You can only bequeath your own separate undivided joint share in family asset under Section 30 of the Hindu Succession Act, 1956. You cannot bequeath the entire family family estate.",
             },
           },
           {
@@ -259,7 +259,7 @@ export default function WillFormatIndiaPage() {
             name: "Can an executor also be named as a beneficiary in the Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An executor can also be a beneficiary. However, ensure that this beneficiary-executor does NOT sign as an attesting witness, so you do not violate Section 67.",
+              text: "Yes. An executor can also be a heir. However, ensure that this heir-executor does NOT sign as an signing witness, so you do not violate Section 67.",
             },
           },
           {
@@ -267,7 +267,7 @@ export default function WillFormatIndiaPage() {
             name: "What is a Codicil, and when should I use one instead of a new Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Codicil is a formal legal addendum used to make minor alterations to an existing Will. For major changes in property distribution, drafting a fresh Will that revokes the previous one is safer.",
+              text: "A Codicil is a formal legal addendum used to make minor alterations to an existing Will. For major changes in asset split, drafting a fresh Will that revokes the previous one is safer.",
             },
           },
           {
@@ -275,7 +275,7 @@ export default function WillFormatIndiaPage() {
             name: "How can I ensure my Will is not challenged in court after my death?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Attach a registered medical practitioner's fitness certificate, record a video of the signing, use independent non-beneficiary witnesses, give clear reasons if disinheriting natural heirs, and optionally register the document.",
+              text: "Attach a filed medical practitioner's fitness paper, record a video of the signing, use independent non-heir witnesses, give clear reasons if disinheriting natural heirs, and optionally register the paper.",
             },
           },
         ],

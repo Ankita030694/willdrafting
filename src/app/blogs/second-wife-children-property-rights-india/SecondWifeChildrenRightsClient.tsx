@@ -48,13 +48,13 @@ const TOC_ITEMS = [
   { id: "marriage-validity-status", label: "1. Second Marriage Status: Void vs Valid" },
   { id: "hma-section-16-legitimacy", label: "2. HMA Section 16: Child Legitimacy" },
   { id: "revanasiddappa-supreme-court", label: "3. Revanasiddappa Ruling (SC 2023)" },
-  { id: "who-gets-what-matrix", label: "4. Who Gets What: Comprehensive Matrix" },
-  { id: "visual-blueprint", label: "5. Visual Blueprint: Inheritance Law" },
-  { id: "interactive-share-estimator", label: "6. Interactive Share Estimator" },
-  { id: "second-wife-own-rights", label: "7. Second Wife: Maintenance vs Succession" },
+  { id: "who-gets-what-matrix", label: "4. Who Gets What: Full Matrix" },
+  { id: "visual-blueprint", label: "5. Visual Blueprint: Estate Law" },
+  { id: "interactive-share-estimator", label: "6. Free Share Estimator" },
+  { id: "second-wife-own-rights", label: "7. Second Wife: Maintenance vs Estate" },
   { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Claiming Your Share" },
   { id: "printable-checklist-section", label: "9. Printable Legal Action Protocol" },
-  { id: "inheritance-myths", label: "10. 6 Common Inheritance Myths" },
+  { id: "inheritance-myths", label: "10. 6 Common Estate Myths" },
   { id: "why-a-will-is-essential", label: "11. Why a Will is Essential in Blended Families" },
   { id: "other-personal-laws", label: "12. Muslim, Christian & Parsi Rules" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
@@ -203,7 +203,7 @@ export default function SecondWifeChildrenRightsClient() {
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
   const [showImageModal, setShowImageModal] = useState<boolean>(false);
 
-  // Interactive Share Calculator State
+  // Free Share Tool State
   const [secondMarriageType, setSecondMarriageType] = useState<"valid" | "void">("void");
   const [firstWifeAlive, setFirstWifeAlive] = useState<boolean>(true);
   const [fatherMotherAlive, setFatherMotherAlive] = useState<boolean>(false);
@@ -312,44 +312,44 @@ export default function SecondWifeChildrenRightsClient() {
 
   const FAQ_ITEMS = [
     {
-      q: "Do children born of a second wife have property rights in India?",
-      a: "Yes. Under Section 16 of the Hindu Marriage Act, 1955, children born of a second marriage are deemed legitimate by law, even if the marriage itself is void or bigamous. They inherit an equal share in their father's self-acquired property and his share in ancestral property alongside children of the first wife.",
+      q: "Do children born of a second wife have asset rights in India?",
+      a: "Yes. Under Section 16 of the Hindu Marriage Act, 1955, children born of a second marriage are deemed legitimate by law, even if the marriage itself is void or bigamous. They inherit an equal share in their father's self-acquired asset and his share in family asset alongside children of the first wife.",
     },
     {
       q: "What did the Supreme Court rule in Revanasiddappa v. Mallikarjun (2023)?",
-      a: "A three-judge bench of the Supreme Court held on September 1, 2023, that children of void or voidable marriages are entitled to inherit their parent's share in Hindu Undivided Family (HUF) coparcenary property through notional partition under Section 6(3) of the Hindu Succession Act.",
+      a: "A three-judge bench of the Supreme Court held on September 1, 2023, that children of void or voidable marriages are entitled to inherit their parent's share in Hindu Undivided Family (HUF) joint asset through notional split under Section 6(3) of the Hindu Succession Act.",
     },
     {
-      q: "Does a second wife have inheritance rights if the first wife is alive?",
-      a: "No. If a Hindu man marries a second wife while his first marriage is still legally active, the second marriage is null and void under Sections 5(i) and 11 of the Hindu Marriage Act. The second wife is not a legal heir under Section 8 of the Hindu Succession Act and receives no inheritance.",
+      q: "Does a second wife have estate rights if the first wife is alive?",
+      a: "No. If a Hindu man marries a second wife while his first marriage is still legally active, the second marriage is null and void under Sections 5(i) and 11 of the Hindu Marriage Act. The second wife is not a legal heir under Section 8 of the Hindu Succession Act and receives no estate.",
     },
     {
-      q: "When does a second wife have full legal inheritance rights?",
-      a: "A second wife possesses 100% legal inheritance rights if the second marriage occurred after the first marriage was legally dissolved through a court divorce decree, or after the death of the first wife. In this case, she is a legally wedded wife and a Class I legal heir.",
+      q: "When does a second wife have full legal estate rights?",
+      a: "A second wife possesses 100% legal estate rights if the second marriage occurred after the first marriage was legally dissolved through a court divorce decree, or after the death of the first wife. In this case, she is a legally wedded wife and a Class I legal heir.",
     },
     {
-      q: "Can children of a second wife demand partition of ancestral property while the father is alive?",
-      a: "No. Children born from a void or bigamous marriage are not independent coparceners by birth in the ancestral joint family. They cannot demand a partition during their father's lifetime. Their inheritance rights arise only upon the father's death out of his deemed coparcenary share.",
+      q: "Can children of a second wife demand split of family asset while the father is alive?",
+      a: "No. Children born from a void or bigamous marriage are not independent coparceners by birth in the family joint family. They cannot demand a split during their father's lifetime. Their estate rights arise only upon the father's death out of his deemed joint share.",
     },
     {
-      q: "How is father's self-acquired property divided if he dies without a Will?",
-      a: "Under Section 8 and Section 10 of the Hindu Succession Act, the father's self-acquired property is divided equally per capita among all Class I legal heirs. Children from the second marriage receive the exact same share as children from the first marriage and the surviving legal widow and mother.",
+      q: "How is father's self-acquired asset divided if he dies without a Will?",
+      a: "Under Section 8 and Section 10 of the Hindu Succession Act, the father's self-acquired asset is divided equally per capita among all Class I legal heirs. Children from the second marriage receive the exact same share as children from the first marriage and the surviving legal widow and mother.",
     },
     {
-      q: "Can a father give all his self-acquired property to the second wife or her children through a Will?",
-      a: "Yes. Under Section 30 of the Hindu Succession Act, an individual has absolute testamentary freedom over self-acquired property. A father can bequeath 100% of his self-acquired property to his second wife or second family through a valid Will, excluding the first family.",
+      q: "Can a father give all his self-acquired asset to the second wife or her children through a Will?",
+      a: "Yes. Under Section 30 of the Hindu Succession Act, an single has absolute Will freedom over self-acquired asset. A father can bequeath 100% of his self-acquired asset to his second wife or second family through a valid Will, excluding the first family.",
     },
     {
       q: "Can a second wife claim maintenance if her marriage is legally void?",
-      a: "While an invalid second marriage grants no succession rights, the Supreme Court in Badshah v. Urmila Badshah Godse (2014) held that if the husband concealed his existing marriage, the second wife is entitled to maintenance under Section 125 of the CrPC and the Domestic Violence Act, 2005.",
+      a: "While an invalid second marriage grants no estate rights, the Supreme Court in Badshah v. Urmila Badshah Godse (2014) held that if the husband concealed his existing marriage, the second wife is entitled to maintenance under Section 125 of the CrPC and the Domestic Violence Act, 2005.",
     },
     {
-      q: "What happens to ancestral property if the father leaves a Will?",
-      a: "Under Section 30 of the Hindu Succession Act, a father can only Will away his own undivided coparcenary share in ancestral property. He cannot Will away the independent coparcenary shares of his children from a valid marriage.",
+      q: "What happens to family asset if the father leaves a Will?",
+      a: "Under Section 30 of the Hindu Succession Act, a father can only Will away his own undivided joint share in family asset. He cannot Will away the independent joint shares of his children from a valid marriage.",
     },
     {
       q: "Why is drafting a Will essential in blended families with second marriages?",
-      a: "A Will prevents bitter disputes and multi-decade court battles between children of different marriages. It allows the father to clearly specify who receives what, grant life-interest residence rights to the second wife, and appoint an impartial executor.",
+      a: "A Will prevents bitter fights and multi-decade court battles between children of different marriages. It allows the father to clearly specify who receives what, grant life-interest residence rights to the second wife, and appoint an impartial executor.",
     },
   ];
 
@@ -372,12 +372,12 @@ export default function SecondWifeChildrenRightsClient() {
 
           {/* Single H1 Title (Strictly 30-65 chars, no em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6 drop-shadow-xs">
-            Second Wife and Children Property Rights in India
+            Second Wife and Children Asset Rights in India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
-            Understand property rights of second wives and children in India. Learn the landmark 2023 Supreme Court ruling in Revanasiddappa, HMA Section 16 legitimacy rules, ancestral shares, and how to protect your family with a Will.
+            Understand asset rights of second wives and children in India. Learn the landmark 2023 Supreme Court ruling in Revanasiddappa, HMA Section 16 legitimacy rules, family shares, and how to protect your family with a Will.
           </p>
 
           {/* CTA Buttons */}
@@ -421,7 +421,7 @@ export default function SecondWifeChildrenRightsClient() {
                 15+ Years
               </span>
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-2">
-                Succession Advocacy
+                Estate Advocacy
               </span>
             </div>
 
@@ -488,10 +488,10 @@ export default function SecondWifeChildrenRightsClient() {
             <div className="bg-[#FAF7F0] rounded-2xl border border-[#172228]/10 p-4 text-xs text-slate-700 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="text-[11px] leading-relaxed text-slate-600">
-                Verified under Section 16 of the Hindu Marriage Act, 1955 and Section 6 &amp; 8 of the Hindu Succession Act, 1956.
+                Checked under Section 16 of the Hindu Marriage Act, 1955 and Section 6 &amp; 8 of the Hindu Succession Act, 1956.
               </p>
             </div>
           </aside>
@@ -528,8 +528,8 @@ export default function SecondWifeChildrenRightsClient() {
                 <div className="flex items-start gap-3 bg-blue-50/50 p-4 rounded-xl border border-blue-100">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                   <div className="text-xs sm:text-sm text-slate-800 leading-relaxed">
-                    <strong className="block text-[#172228] font-bold mb-1">Ancestral Share Confirmed (SC 2023):</strong>
-                    The landmark Supreme Court ruling in <em>Revanasiddappa (2023)</em> confirmed that children of void marriages inherit their parent’s share in ancestral coparcenary property.
+                    <strong className="block text-[#172228] font-bold mb-1">Family Share Confirmed (SC 2023):</strong>
+                    The landmark Supreme Court ruling in <em>Revanasiddappa (2023)</em> confirmed that children of void marriages inherit their parent’s share in family joint asset.
                   </div>
                 </div>
 
@@ -537,15 +537,15 @@ export default function SecondWifeChildrenRightsClient() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div className="text-xs sm:text-sm text-slate-800 leading-relaxed">
                     <strong className="block text-[#172228] font-bold mb-1">Equal Class I Shares in Self-Acquired Assets:</strong>
-                    In their father's self-acquired property, children of the second wife share equally per capita with children of the first wife under Section 8 of the Hindu Succession Act.
+                    In their father's self-acquired asset, children of the second wife share equally per capita with children of the first wife under Section 8 of the Hindu Succession Act.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 bg-amber-50/50 p-4 rounded-xl border border-amber-100">
                   <CheckCircle2 className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div className="text-xs sm:text-sm text-slate-800 leading-relaxed">
-                    <strong className="block text-[#172228] font-bold mb-1">Second Wife's Own Inheritance:</strong>
-                    A second wife inherits ONLY if her marriage is legally valid (after divorce or first wife’s death). If bigamous, she receives no statutory inheritance without a Will.
+                    <strong className="block text-[#172228] font-bold mb-1">Second Wife's Own Estate:</strong>
+                    A second wife inherits ONLY if her marriage is legally valid (after divorce or first wife’s death). If bigamous, she receives no legal estate without a Will.
                   </div>
                 </div>
               </div>
@@ -555,13 +555,13 @@ export default function SecondWifeChildrenRightsClient() {
             <section id="marriage-validity-status" className="scroll-target bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Layers className="w-4 h-4" />
-                <span>Statutory Foundations</span>
+                <span>Legal Foundations</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Legal Status of Second Marriage: Void vs Valid
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Before analyzing property rights, one must examine the legal validity of the second marriage under the <strong>Hindu Marriage Act, 1955 (HMA)</strong>. Under Indian law, Hindu marriages are strictly monogamous. Whether a second wife has legal standing as a surviving spouse depends entirely on the status of the first marriage on the day the second wedding took place.
+                Before analyzing asset rights, one must examine the legal validity of the second marriage under the <strong>Hindu Marriage Act, 1955 (HMA)</strong>. Under Indian law, Hindu marriages are strictly monogamous. Whether a second wife has legal standing as a surviving spouse depends entirely on the status of the first marriage on the day the second wedding took place.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -571,7 +571,7 @@ export default function SecondWifeChildrenRightsClient() {
                   </span>
                   <h3 className="font-bold text-slate-900 text-sm mb-1">Section 5(i) Compliant</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Occurs when the first marriage has been lawfully dissolved by a court decree of divorce, or when the first spouse passed away prior to the second marriage. The second wife is a full legal wife with all inheritance rights.
+                    Occurs when the first marriage has been lawfully dissolved by a court decree of divorce, or when the first spouse passed away prior to the second marriage. The second wife is a full legal wife with all estate rights.
                   </p>
                 </div>
 
@@ -581,7 +581,7 @@ export default function SecondWifeChildrenRightsClient() {
                   </span>
                   <h3 className="font-bold text-slate-900 text-sm mb-1">Sections 5(i) &amp; 11 Violation</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Occurs while the first spouse is alive and the first marriage is still legally active. The marriage is <em>null and void ab initio</em> (invalid from the very beginning). The second wife gets no spousal inheritance under the Hindu Succession Act.
+                    Occurs while the first spouse is alive and the first marriage is still legally active. The marriage is <em>null and void ab initio</em> (invalid from the very beginning). The second wife gets no spousal estate under the Hindu Succession Act.
                   </p>
                 </div>
 
@@ -599,7 +599,7 @@ export default function SecondWifeChildrenRightsClient() {
               <div className="bg-amber-50/70 border border-amber-200 rounded-xl p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-3 mt-4">
                 <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div>
-                  <strong>Crucial Distinction:</strong> While the legal status of the marriage dictates whether the <em>wife</em> inherits as a surviving widow, it does NOT diminish the inheritance rights of her <em>children</em>. Indian law draws a firm line between the status of the marriage and the rights of children born from it.
+                  <strong>Crucial Distinction:</strong> While the legal status of the marriage dictates whether the <em>wife</em> inherits as a surviving widow, it does NOT diminish the estate rights of her <em>children</em>. Indian law draws a firm line between the status of the marriage and the rights of children born from it.
                 </div>
               </div>
             </section>
@@ -608,13 +608,13 @@ export default function SecondWifeChildrenRightsClient() {
             <section id="hma-section-16-legitimacy" className="scroll-target bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Users className="w-4 h-4" />
-                <span>Statutory Legitimacy</span>
+                <span>Legal Legitimacy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. HMA Section 16: Legitimacy of All Children
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Prior to legal reforms, children born of invalid or bigamous unions were historically branded with social stigma and denied property rights. To put an end to this injustice, Parliament enacted and later expanded <strong>Section 16 of the Hindu Marriage Act, 1955</strong>.
+                Prior to legal reforms, children born of invalid or bigamous unions were historically branded with social stigma and denied asset rights. To put an end to this injustice, Parliament enacted and later expanded <strong>Section 16 of the Hindu Marriage Act, 1955</strong>.
               </p>
 
               <div className="p-5 rounded-2xl bg-[#FAF7F0] border border-[#172228]/10 space-y-3">
@@ -626,17 +626,17 @@ export default function SecondWifeChildrenRightsClient() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
-                    <span><strong>Section 16(2):</strong> An identical protection applies to children born of voidable marriages that are subsequently annulled by a court under Section 12.</span>
+                    <span><strong>Section 16(2):</strong> An identical protection applies to children born of voidable marriages that are then annulled by a court under Section 12.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
-                    <span><strong>Section 16(3):</strong> Clarifies that such statutory legitimacy confers property rights in the property of their parents, eliminating any discrimination between children of a first and second marriage.</span>
+                    <span><strong>Section 16(3):</strong> Clarifies that such legal legitimacy confers asset rights in the asset of their parents, eliminating any discrimination between children of a first and second marriage.</span>
                   </li>
                 </ul>
               </div>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                As a direct result of Section 16, children born of a second marriage (even an unauthorized bigamous marriage) are treated as full <strong>Class I legal heirs</strong> under Section 8 of the Hindu Succession Act, 1956. When the father dies without a Will, these children inherit an equal per-capita share in the father's self-acquired property alongside his children from the first marriage.
+                As a direct result of Section 16, children born of a second marriage (even an unauthorized bigamous marriage) are treated as full <strong>Class I legal heirs</strong> under Section 8 of the Hindu Succession Act, 1956. When the father dies without a Will, these children inherit an equal per-capita share in the father's self-acquired asset alongside his children from the first marriage.
               </p>
             </section>
 
@@ -650,7 +650,7 @@ export default function SecondWifeChildrenRightsClient() {
                 3. Revanasiddappa Ruling: Supreme Court 2023 Verdict
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                For decades, there was intense judicial debate across Indian courts regarding whether Section 16(3) allowed children of void marriages to claim a share in <em>ancestral coparcenary property</em>, or only in their father's <em>self-acquired property</em>. Earlier rulings like <em>Jinia Keotin (2003)</em> had taken a restrictive view.
+                For decades, there was intense judicial debate across Indian courts regarding whether Section 16(3) allowed children of void marriages to claim a share in <em>family joint asset</em>, or only in their father's <em>self-acquired asset</em>. Earlier rulings like <em>Jinia Keotin (2003)</em> had taken a restrictive view.
               </p>
 
               <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50/80 to-slate-50 border border-blue-200/70 space-y-3">
@@ -669,14 +669,14 @@ export default function SecondWifeChildrenRightsClient() {
                   A three-judge bench of the Supreme Court of India, headed by <strong>Chief Justice D.Y. Chandrachud</strong>, alongside Justices J.B. Pardiwala and Manoj Misra, delivered a historic, unanimous judgment that fundamentally changed Indian property law.
                 </p>
                 <div className="border-t border-blue-200/60 pt-3 space-y-2 text-xs sm:text-sm text-slate-800">
-                  <p><strong>1. Harmonisation of Laws:</strong> The Court harmonised Section 16 of the Hindu Marriage Act with Section 6 of the Hindu Succession Act, ruling that constitutional principles of equality and social justice require that innocent children cannot be deprived of ancestral security due to the invalidity of their parents' marriage.</p>
-                  <p><strong>2. The Mechanism of Notional Partition:</strong> Under Section 6(3) of the Hindu Succession Act, when a Hindu male coparcener dies, the law presumes a deemed or notional partition immediately before his death. The father's undivided coparcenary share is separated from the joint family estate.</p>
-                  <p><strong>3. Entitlement to Parent's Share:</strong> The Supreme Court held that children born of void or voidable marriages are entitled to an equal inheritance share out of this separated coparcenary share of their father, alongside his other Class I legal heirs.</p>
+                  <p><strong>1. Harmonisation of Laws:</strong> The Court harmonised Section 16 of the Hindu Marriage Act with Section 6 of the Hindu Succession Act, ruling that constitutional principles of equality and social justice require that innocent children cannot be deprived of family security due to the invalidity of their parents' marriage.</p>
+                  <p><strong>2. The Mechanism of Notional Split:</strong> Under Section 6(3) of the Hindu Succession Act, when a Hindu male coparcener dies, the law presumes a deemed or notional split right away before his death. The father's undivided joint share is separated from the joint family estate.</p>
+                  <p><strong>3. Entitlement to Parent's Share:</strong> The Supreme Court held that children born of void or voidable marriages are entitled to an equal estate share out of this separated joint share of their father, alongside his other Class I legal heirs.</p>
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Important Limitation Clarified by Supreme Court:</strong> Children of void marriages do <em>not</em> become independent coparceners by birth in the ancestral joint family. Consequently, they cannot file a partition suit demanding a split while the father is still alive. Their right crystallizes only upon the parent’s death out of the parent’s own share.
+                <strong>Important Limitation Clarified by Supreme Court:</strong> Children of void marriages do <em>not</em> become independent coparceners by birth in the family joint family. So, they cannot file a split suit demanding a split while the father is still alive. Their right crystallizes only upon the parent’s death out of the parent’s own share.
               </div>
             </section>
 
@@ -687,10 +687,10 @@ export default function SecondWifeChildrenRightsClient() {
                 <span>Comparative Entitlements</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                4. Who Gets What: Comprehensive Rights Matrix Table
+                4. Who Gets What: Full Rights Matrix Table
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                This authoritative reference matrix breaks down the exact legal rights of each family member across different property categories, with and without a Will:
+                This authoritative reference matrix breaks down the exact legal rights of each family member across different asset categories, with and without a Will:
               </p>
 
               <div className="overflow-x-auto rounded-xl border border-slate-200">
@@ -699,8 +699,8 @@ export default function SecondWifeChildrenRightsClient() {
                     <tr className="bg-[#172228] text-white">
                       <th className="p-3 sm:p-4 font-bold border-r border-slate-700">Family Claimant</th>
                       <th className="p-3 sm:p-4 font-bold border-r border-slate-700">Legal Status</th>
-                      <th className="p-3 sm:p-4 font-bold border-r border-slate-700">Self-Acquired Property</th>
-                      <th className="p-3 sm:p-4 font-bold">Ancestral / Coparcenary Share</th>
+                      <th className="p-3 sm:p-4 font-bold border-r border-slate-700">Self-Acquired Asset</th>
+                      <th className="p-3 sm:p-4 font-bold">Family / Joint Share</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 bg-white">
@@ -736,7 +736,7 @@ export default function SecondWifeChildrenRightsClient() {
                 </table>
               </div>
               <div className="text-[11px] text-slate-500 italic">
-                * Note: In self-acquired property, if the father leaves a valid Will, the terms of the Will supersede intestate succession.
+                * Note: In self-acquired asset, if the father leaves a valid Will, the terms of the Will supersede no-Will estate.
               </div>
             </section>
 
@@ -747,10 +747,10 @@ export default function SecondWifeChildrenRightsClient() {
                 <span>Visual Legal Architecture</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                5. Visual Blueprint: Inheritance Law in Blended Families
+                5. Visual Blueprint: Estate Law in Blended Families
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                The visual framework below illustrates how the Supreme Court and Indian succession statutes balance property claims between first and second families, ensuring that the innocent children are never left without economic protection:
+                The visual framework below illustrates how the Supreme Court and Indian succession statutes balance asset claims between first and second families, ensuring that the innocent children are never left without economic protection:
               </p>
 
               {/* Responsive Next.js Image Container */}
@@ -772,7 +772,7 @@ export default function SecondWifeChildrenRightsClient() {
                   </div>
                 </div>
                 <div className="p-4 bg-slate-50 border-t border-slate-200 text-xs text-slate-600 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <span><strong>Figure 1:</strong> Balancing property rights in blended families: Scales of justice and children&apos;s statutory legitimacy.</span>
+                  <span><strong>Figure 1:</strong> Balancing asset rights in blended families: Scales of justice and children&apos;s legal legitimacy.</span>
                   <button
                     onClick={() => setShowImageModal(true)}
                     className="text-[#C65378] font-bold hover:underline inline-flex items-center gap-1 text-xs"
@@ -788,10 +788,10 @@ export default function SecondWifeChildrenRightsClient() {
             <section id="interactive-share-estimator" className="scroll-target bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-6">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Calculator className="w-4 h-4" />
-                <span>Interactive Legal Tool</span>
+                <span>Free Legal Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                6. Interactive Share Estimator: Blended Family Tool
+                6. Free Share Estimator: Blended Family Tool
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Calculate the exact percentage and estimated value in Rupees each family member inherits under the Hindu Succession Act and Supreme Court guidelines when the father dies without a Will:
@@ -887,7 +887,7 @@ export default function SecondWifeChildrenRightsClient() {
                   {/* Parameter 6: Estate Valuation in Lakhs */}
                   <div>
                     <label className="block text-xs font-bold text-[#172228] mb-1.5">
-                      Estimated Property Value (in Lakhs)
+                      Estimated Asset Value (in Lakhs)
                     </label>
                     <div className="flex items-center gap-2">
                       <input
@@ -908,7 +908,7 @@ export default function SecondWifeChildrenRightsClient() {
                 <div className="pt-4 border-t border-[#172228]/10 space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-[#55636D]">
                     <span>STATUTORY BREAKDOWN ({results.totalHeirsCount} EQUAL SHARES)</span>
-                    <span className="text-[#C65378]">Intestate Succession Result</span>
+                    <span className="text-[#C65378]">No-Will Estate Result</span>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -944,7 +944,7 @@ export default function SecondWifeChildrenRightsClient() {
                   </div>
 
                   <div className="p-3 bg-white/80 rounded-xl border border-slate-200 text-xs text-slate-600 leading-relaxed">
-                    <strong>Statutory Note:</strong> Under Section 8 and Section 10 of the Hindu Succession Act, property is divided equally per capita among all living Class I heirs. Because Section 16 of the HMA confers statutory legitimacy, each child of the second marriage receives the exact same share as each child of the first marriage.
+                    <strong>Legal Note:</strong> Under Section 8 and Section 10 of the Hindu Succession Act, asset is divided equally per capita among all living Class I heirs. Because Section 16 of the HMA confers legal legitimacy, each child of the second marriage receives the exact same share as each child of the first marriage.
                   </div>
                 </div>
               </div>
@@ -957,10 +957,10 @@ export default function SecondWifeChildrenRightsClient() {
                 <span>Spousal Entitlements</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                7. Second Wife Rights: Maintenance vs Inheritance
+                7. Second Wife Rights: Maintenance vs Estate
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                A critical distinction in Indian matrimonial jurisprudence is the difference between the <strong>right to property inheritance</strong> and the <strong>right to maintenance</strong>. While an invalid second marriage denies succession rights under the Hindu Succession Act, courts have progressively created legal shields to prevent destitute women from being abandoned.
+                A critical distinction in Indian matrimonial jurisprudence is the difference between the <strong>right to asset estate</strong> and the <strong>right to maintenance</strong>. While an invalid second marriage denies estate rights under the Hindu Succession Act, courts have progressively created legal shields to prevent destitute women from being abandoned.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -970,7 +970,7 @@ export default function SecondWifeChildrenRightsClient() {
                     <span>Maintenance Under Section 125 CrPC / BNSS</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    In the landmark case of <em>Badshah v. Urmila Badshah Godse (2014) 1 SCC 188</em>, the Supreme Court ruled that where a man marries a woman by concealing his first marriage, he cannot take advantage of his own wrongdoing to deny maintenance under Section 125 of the Criminal Procedure Code. The second wife is legally entitled to monthly financial maintenance.
+                    In the landmark case of <em>Badshah v. Urmila Badshah Godse (2014) 1 SCC 188</em>, the Supreme Court ruled that where a man marries a woman by concealing his first marriage, he cannot take advantage of his own wrongdoing to deny maintenance under Section 125 of the Criminal Step Code. The second wife is legally entitled to monthly financial maintenance.
                   </p>
                 </div>
 
@@ -980,17 +980,17 @@ export default function SecondWifeChildrenRightsClient() {
                     <span>Residence Rights Under Domestic Violence Act (PWDVA 2005)</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Under the Protection of Women from Domestic Violence Act, 2005, a woman who lived in a domestic relationship &ldquo;in the nature of marriage&rdquo; has a protected statutory right of residence in the shared household. The first family cannot summarily throw her onto the street upon the husband&apos;s demise without following due process of civil law.
+                    Under the Protection of Women from Domestic Violence Act, 2005, a woman who lived in a domestic relationship &ldquo;in the nature of marriage&rdquo; has a protected legal right of residence in the shared household. The first family cannot summarily throw her onto the street upon the husband&apos;s demise without following due process of civil law.
                   </p>
                 </div>
 
                 <div className="border border-slate-200 rounded-xl p-5 bg-slate-50/50">
                   <h3 className="font-bold text-slate-900 text-base mb-2 flex items-center gap-2">
                     <Lock className="w-4 h-4 text-[#C65378]" />
-                    <span>Why a Will is Her Only Guaranteed Inheritance Shield</span>
+                    <span>Why a Will is Her Only Guaranteed Estate Shield</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Because an invalid second marriage gives zero statutory inheritance under intestacy, the husband MUST execute a valid, registered Will specifically bequeathing self-acquired assets, life-interest in the residence, or dedicated financial investments to the second wife. Without a Will, she is completely dependent on discretionary court maintenance.
+                    Because an invalid second marriage gives zero legal estate under intestacy, the husband MUST execute a valid, filed Will mainly bequeathing self-acquired assets, life-interest in the residence, or dedicated financial investments to the second wife. Without a Will, she is completely dependent on discretionary court maintenance.
                   </p>
                 </div>
               </div>
@@ -1006,7 +1006,7 @@ export default function SecondWifeChildrenRightsClient() {
                 8. Step-by-Step SOP: How to Claim Your Legal Share
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                If children or family members of a second marriage face resistance, exclusion, or illegal property sale attempts from the first family, follow this proven 6-stage legal protocol:
+                If children or family members of a second marriage face resistance, exclusion, or illegal asset sale attempts from the first family, follow this proven 6-stage legal protocol:
               </p>
 
               <div className="space-y-4">
@@ -1014,32 +1014,32 @@ export default function SecondWifeChildrenRightsClient() {
                   {
                     step: "Stage 1",
                     title: "Gather Paternity and Identification Records",
-                    desc: "Secure certified municipal birth certificates, school marksheets, Aadhaar cards, and passport copies clearly establishing the deceased father's parentage. This establishes statutory legitimacy under HMA Section 16.",
+                    desc: "Secure certified city birth papers, school marksheets, Aadhaar cards, and passport copies clearly establishing the deceased father's parentage. This establishes legal legitimacy under HMA Section 16.",
                   },
                   {
                     step: "Stage 2",
                     title: "Obtain Land Title Records and Sub-Registrar Extracts",
-                    desc: "Procure certified copies of sale deeds from the local Sub-Registrar Office, along with the latest Khata, Jamabandi, or 7/12 extract from the Tehsil. Determine whether each asset is self-acquired or ancestral.",
+                    desc: "Procure certified copies of sale deeds from the local SRO office, along with the latest Khata, Jamabandi, or 7/12 extract from the Tehsil. Determine whether each asset is self-acquired or family.",
                   },
                   {
                     step: "Stage 3",
                     title: "Lodge Formal Revenue Objections & Caveat",
-                    desc: "Inspect the local revenue office for any pending unilateral mutation (Dakhil Kharij) applications filed by the first family. Submit a formal written objection and caveat before the Tehsildar or Municipal Commissioner.",
+                    desc: "Inspect the local revenue office for any pending unilateral name change (Dakhil Kharij) forms filed by the first family. Submit a formal written objection and caveat before the Tehsildar or City Commissioner.",
                   },
                   {
                     step: "Stage 4",
                     title: "Issue a Statutory Legal Notice for Partition",
-                    desc: "Engage an advocate to issue a formal Legal Notice to all co-heirs, demanding partition by metes and bounds. Explicitly cite Section 16 HMA, Section 8 HSA, and the Supreme Court Revanasiddappa (2023) benchmark.",
+                    desc: "Engage an lawyer to issue a formal Legal Notice to all co-heirs, demanding split by metes and bounds. Explicitly cite Section 16 HMA, Section 8 HSA, and the Supreme Court Revanasiddappa (2023) benchmark.",
                   },
                   {
                     step: "Stage 5",
                     title: "File Civil Suit for Partition & Injunction (CPC Order 39)",
-                    desc: "If the first family refuses amicable partition, file a Civil Suit for Partition and Separate Possession under CPC Order 20 Rule 18 in District Court, together with an urgent temporary injunction application under CPC Order 39 Rules 1 & 2 to prevent any sale.",
+                    desc: "If the first family refuses amicable split, file a Civil Suit for Split and Separate Possession under CPC Order 20 Rule 18 in District Court, together with an urgent temporary injunction form under CPC Order 39 Rules 1 & 2 to prevent any sale.",
                   },
                   {
                     step: "Stage 6",
                     title: "Secure Preliminary & Final Decree with Mutation",
-                    desc: "Obtain a Preliminary Decree defining the exact share fractions, followed by a Final Decree appointing a Court Commissioner to divide properties physically. Mutate your separate share in government revenue records.",
+                    desc: "Obtain a Preliminary Decree defining the exact share fractions, followed by a Final Decree appointing a Court Commissioner to divide assets physically. Mutate your separate share in government revenue records.",
                   },
                 ].map((s, idx) => (
                   <div key={idx} className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -1066,13 +1066,13 @@ export default function SecondWifeChildrenRightsClient() {
                 9. Printable Legal Protocol: Blended Family Checklist
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Use this comprehensive, clause-annotated legal checklist to safeguard your inheritance and navigate revenue and court proceedings without procedural missteps:
+                Use this full, clause-annotated legal checklist to safeguard your estate and navigate revenue and court proceedings without procedural missteps:
               </p>
 
               <div className="relative rounded-2xl border border-slate-300 bg-slate-900 text-slate-100 p-5 font-mono text-xs overflow-hidden">
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-700">
                   <span className="text-[11px] text-slate-400 font-bold uppercase tracking-wider">
-                    Format: Plain Text Legal Checklist &bull; Ready for Court / Advocate Use
+                    Format: Plain Text Legal Checklist &bull; Ready for Court / Lawyer Use
                   </span>
                   <div className="flex items-center gap-2">
                     <button
@@ -1113,10 +1113,10 @@ export default function SecondWifeChildrenRightsClient() {
                 <span>Legal Clarity</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                10. 6 Dangerous Inheritance Myths in Second Marriages
+                10. 6 Dangerous Estate Myths in Second Marriages
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Misinformation surrounding blended family property rights often leads to families losing their lawful inheritance or entering into fraudulent settlements:
+                Misinformation surrounding blended family asset rights often leads to families losing their lawful estate or entering into fraudulent settlements:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -1149,28 +1149,28 @@ export default function SecondWifeChildrenRightsClient() {
                 11. Why a Will is Essential in Blended Families
               </h3>
               <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                When a person passes away without a Will (intestate), the law applies rigid statutory formulas that almost inevitably trigger bitter, multi-decade litigation between the first and second families. The absence of a Will leaves bank accounts frozen, properties locked in injunctions, and vulnerable family members penniless.
+                When a person passes away without a Will (no-Will), the law applies rigid legal formulas that almost inevitably trigger bitter, multi-decade court fights between the first and second families. The absence of a Will leaves bank accounts frozen, assets locked in injunctions, and vulnerable family members penniless.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
                 <div className="bg-white/10 backdrop-blur-xs p-4 rounded-xl border border-white/15 space-y-1.5">
                   <strong className="block text-white font-bold">1. Guaranteed Shield for Second Wife</strong>
                   <p className="text-slate-300 leading-relaxed">
-                    If the second marriage was technically void under Section 5(i), a Will is the ONLY legal instrument in India that can leave her self-acquired property, apartments, and bank funds.
+                    If the second marriage was technically void under Section 5(i), a Will is the ONLY legal instrument in India that can leave her self-acquired asset, apartments, and bank funds.
                   </p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-xs p-4 rounded-xl border border-white/15 space-y-1.5">
                   <strong className="block text-white font-bold">2. Specific Bequests Avoid Conflict</strong>
                   <p className="text-slate-300 leading-relaxed">
-                    Instead of leaving properties as undivided fractions where co-heirs fight over physical possession, a Will assigns specific properties to specific children.
+                    Instead of leaving assets as undivided fractions where co-heirs fight over physical possession, a Will assigns specific assets to specific children.
                   </p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-xs p-4 rounded-xl border border-white/15 space-y-1.5">
                   <strong className="block text-white font-bold">3. Life Interest Protection</strong>
                   <p className="text-slate-300 leading-relaxed">
-                    You can grant a &ldquo;Life Interest&rdquo; allowing your second wife to reside in the family home for her lifetime, after which the property seamlessly transfers to your children without dispute.
+                    You can grant a &ldquo;Life Interest&rdquo; allowing your second wife to reside in the family home for her lifetime, after which the asset seamlessly transfers to your children without fight.
                   </p>
                 </div>
 
@@ -1187,7 +1187,7 @@ export default function SecondWifeChildrenRightsClient() {
                   onClick={handleStartWill}
                   className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#C65378] text-white font-bold hover:bg-[#a13c5d] transition-all transform hover:-translate-y-0.5 shadow-lg shadow-rose-950/30 cursor-pointer text-sm sm:text-base"
                 >
-                  <span>Create Your Legally Verified Will in 15 Minutes</span>
+                  <span>Create Your Legally Checked Will in 15 Minutes</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -1203,18 +1203,18 @@ export default function SecondWifeChildrenRightsClient() {
                 12. Other Personal Laws: Muslim, Christian &amp; Parsi Rules
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Succession laws in India vary significantly across different religious communities. Here is how second marriage property rights operate for other communities:
+                Estate laws in India vary significantly across different religious communities. Here is how second marriage asset rights operate for other communities:
               </p>
 
               <div className="space-y-3 pt-1">
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm">
-                  <strong className="block text-slate-900 font-bold mb-1">Muslim Law (Shariat Application Act, 1937):</strong>
+                  <strong className="block text-slate-900 font-bold mb-1">Muslim Law (Shariat Form Act, 1937):</strong>
                   Under Muslim Personal Law, polygamy up to four wives is legally recognized. Therefore, a second wife is a 100% legal wife. If the deceased husband has children, all surviving widows collectively share <strong>1/8th</strong> of his net estate equally between them. If there are no children, the widows share <strong>1/4th</strong>. Children of both wives inherit as full legitimate heirs (sons receive twice the share of daughters).
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm">
                   <strong className="block text-slate-900 font-bold mb-1">Christian Law (Indian Succession Act, 1925):</strong>
-                  Christian law strictly mandates monogamy. Bigamous marriages are null and void under civil law. A second bigamous wife has no statutory inheritance right in the husband&apos;s estate. However, children born of such unions can be provided for via testamentary bequests (Wills) without restriction, as Christians enjoy complete testamentary freedom over their property.
+                  Christian law strictly mandates monogamy. Bigamous marriages are null and void under civil law. A second bigamous wife has no legal estate right in the husband&apos;s estate. However, children born of such unions can be provided for via Will bequests (Wills) without restriction, as Christians enjoy complete Will freedom over their asset.
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm">
@@ -1234,7 +1234,7 @@ export default function SecondWifeChildrenRightsClient() {
                 Frequently Asked Questions: Second Wife &amp; Child Rights
               </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-                Direct, practical answers to common questions regarding second wife and child inheritance in India:
+                Direct, practical answers to common questions regarding second wife and child estate in India:
               </p>
 
               <div className="space-y-3 pt-2">
@@ -1269,17 +1269,17 @@ export default function SecondWifeChildrenRightsClient() {
             <section id="statutory-citations" className="scroll-target bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-4 border-t-2 border-t-[#C65378]">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Award className="w-4 h-4" />
-                <span>Statutory References</span>
+                <span>Legal References</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                Statutory Citations: Acts &amp; Landmark Precedents
+                Legal Citations: Acts &amp; Landmark Precedents
               </h3>
               <div className="text-xs sm:text-sm text-slate-700 space-y-2">
-                <p>This guide is authored with reference to primary statutory provisions and Supreme Court authorities:</p>
+                <p>This guide is authored with reference to primary legal rules and Supreme Court offices:</p>
                 <ul className="list-disc pl-5 space-y-1 text-slate-600 text-xs">
                   <li><strong>Hindu Marriage Act, 1955:</strong> Sections 5 (Conditions for Hindu Marriage), 11 (Void Marriages), 12 (Voidable Marriages), 16 (Legitimacy of Children of Void &amp; Voidable Marriages).</li>
-                  <li><strong>Hindu Succession Act, 1956:</strong> Section 6 (Devolution of Interest in Coparcenary Property), Section 8 (General Rules of Succession in Male Intestacy), Section 10 (Distribution of Property among Class I Heirs), Section 30 (Testamentary Succession).</li>
-                  <li><strong>Code of Civil Procedure, 1908:</strong> Order XX Rule 18 (Decree in Suit for Partition), Order XXXIX Rules 1 &amp; 2 (Temporary Injunctions).</li>
+                  <li><strong>Hindu Succession Act, 1956:</strong> Section 6 (Devolution of Interest in Joint Asset), Section 8 (General Rules of Estate in Male Intestacy), Section 10 (Split of Asset among Class I Heirs), Section 30 (Will Estate).</li>
+                  <li><strong>Code of Civil Step, 1908:</strong> Order XX Rule 18 (Decree in Suit for Split), Order XXXIX Rules 1 &amp; 2 (Temporary Injunctions).</li>
                   <li><strong>Supreme Court of India:</strong> <em>Revanasiddappa &amp; Ors. v. Mallikarjun &amp; Ors.</em> (2023) 10 SCC 1 &bull; <em>Badshah v. Urmila Badshah Godse</em> (2014) 1 SCC 188 &bull; <em>Vineeta Sharma v. Rakesh Sharma</em> (2020) 9 SCC 1.</li>
                 </ul>
               </div>
@@ -1294,34 +1294,56 @@ export default function SecondWifeChildrenRightsClient() {
                     href="/tools/succession-calculator"
                     className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors flex items-center gap-1"
                   >
-                    <span>Succession Calculator Tool</span>
+                    <span>Estate Tool Tool</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/blogs/married-daughter-rights-in-fathers-property"
                     className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors flex items-center gap-1"
                   >
-                    <span>Married Daughter Property Rights</span>
+                    <span>Married Daughter Asset Rights</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors flex items-center gap-1"
                   >
-                    <span>Property Transfer After Death Without Will</span>
+                    <span>Asset Transfer After Death Without Will</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/blogs/will-for-unmarried-childless-single-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors flex items-center gap-1"
                   >
-                    <span>Will for Single &amp; Childless Testators</span>
+                    <span>Will for Single &amp; Childless Will makers</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR CARDS
@@ -1342,20 +1364,20 @@ export default function SecondWifeChildrenRightsClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
-                  <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
+                  <p className="text-[11px] font-bold text-[#C65378]">Senior Estate Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                Specialist in family estate planning, partition litigation, coparcenary disputes, and complex blended family succession in High Courts and the Supreme Court.
+                Expert in family estate planning, split court fights, joint fights, and complex blended family estate in High Courts and the Supreme Court.
               </p>
               <div className="border-t border-slate-100 pt-3 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
                   <ShieldCheck className="w-3.5 h-3.5" />
-                  Verified Counsel
+                  Checked Counsel
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1379,7 +1401,7 @@ export default function SecondWifeChildrenRightsClient() {
                 Protect Your Second Family With a Valid Will
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Avoid multi-decade court battles between children of different marriages. Clearly bequeath properties, grant residence rights, and eliminate ambiguity.
+                Avoid multi-decade court battles between children of different marriages. Clearly bequeath assets, grant residence rights, and eliminate ambiguity.
               </p>
               <button
                 onClick={handleStartWill}
@@ -1389,7 +1411,7 @@ export default function SecondWifeChildrenRightsClient() {
               </button>
               <div className="flex items-center justify-center gap-2 text-[11px] text-slate-400">
                 <Lock className="w-3 h-3 text-[#5F7E75]" />
-                <span>100% Confidential &amp; Advocate Verified</span>
+                <span>100% Confidential &amp; Lawyer Checked</span>
               </div>
             </div>
 
@@ -1401,11 +1423,11 @@ export default function SecondWifeChildrenRightsClient() {
               <ul className="space-y-2.5 text-xs text-slate-700">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Statutorily Verified:</strong> Clauses strictly compliant with Section 63 ISA &amp; Section 30 HSA.</span>
+                  <span><strong>Statutorily Checked:</strong> Clauses strictly compliant with Section 63 ISA &amp; Section 30 HSA.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Dispute Elimination:</strong> Clear bequests leave zero room for bitter sibling litigation.</span>
+                  <span><strong>Fight Elimination:</strong> Clear bequests leave zero room for bitter sibling court fights.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1413,7 +1435,7 @@ export default function SecondWifeChildrenRightsClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Advocate Consultation:</strong> Direct legal counsel from WillDrafting.in succession advocates.</span>
+                  <span><strong>Lawyer Talk:</strong> Direct legal counsel from WillDrafting.in estate lawyers.</span>
                 </li>
               </ul>
             </div>
@@ -1421,7 +1443,7 @@ export default function SecondWifeChildrenRightsClient() {
             {/* CARD 4: RELATED GUIDES */}
             <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
               <div className="font-bold text-xs uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2">
-                Related Succession Guides
+                Related Estate Guides
               </div>
               <div className="space-y-2">
                 <Link
@@ -1432,7 +1454,7 @@ export default function SecondWifeChildrenRightsClient() {
                     Married Daughter Rights
                   </p>
                   <span className="text-[10px] text-slate-500 flex items-center gap-1 mt-0.5">
-                    Vineeta Sharma &bull; Ancestral Property &rarr;
+                    Vineeta Sharma &bull; Family Asset &rarr;
                   </span>
                 </Link>
 
@@ -1441,10 +1463,10 @@ export default function SecondWifeChildrenRightsClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors group"
                 >
                   <p className="font-bold text-slate-900 text-xs group-hover:text-[#C65378] transition-colors">
-                    Property Transfer After Death
+                    Asset Transfer After Death
                   </p>
                   <span className="text-[10px] text-slate-500 flex items-center gap-1 mt-0.5">
-                    Mutation &bull; Succession Roadmap &rarr;
+                    Name Change &bull; Estate Roadmap &rarr;
                   </span>
                 </Link>
 
@@ -1453,7 +1475,7 @@ export default function SecondWifeChildrenRightsClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors group"
                 >
                   <p className="font-bold text-slate-900 text-xs group-hover:text-[#C65378] transition-colors">
-                    How to Challenge a Will
+                    How to Fight a Will
                   </p>
                   <span className="text-[10px] text-slate-500 flex items-center gap-1 mt-0.5">
                     Legal Grounds &bull; Limitation Period &rarr;
@@ -1471,19 +1493,19 @@ export default function SecondWifeChildrenRightsClient() {
                   href="/blogs/married-daughter-rights-in-fathers-property"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Married Daughter Property Rights
+                  Married Daughter Asset Rights
                 </Link>
                 <Link
                   href="/blogs/property-transfer-after-death-without-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Property Transfer After Death
+                  Asset Transfer After Death
                 </Link>
                 <Link
                   href="/blogs/how-to-challenge-a-will-in-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  How to Challenge a Will
+                  How to Fight a Will
                 </Link>
                 <Link
                   href="/templates/will-format-india"
@@ -1509,7 +1531,7 @@ export default function SecondWifeChildrenRightsClient() {
           >
             <div className="flex items-center justify-between p-4 bg-slate-800 text-white">
               <span className="text-xs sm:text-sm font-bold">
-                Second Wife and Children Property Rights in India &bull; Visual Legal Architecture
+                Second Wife and Children Asset Rights in India &bull; Visual Legal Architecture
               </span>
               <button
                 onClick={() => setShowImageModal(false)}
@@ -1527,7 +1549,7 @@ export default function SecondWifeChildrenRightsClient() {
               />
             </div>
             <div className="p-4 bg-slate-800 text-xs text-slate-300 text-center">
-              Statutory Protection under Section 16 Hindu Marriage Act &amp; Revanasiddappa (2023) Supreme Court Precedent.
+              Legal Protection under Section 16 Hindu Marriage Act &amp; Revanasiddappa (2023) Supreme Court Precedent.
             </div>
           </div>
         </div>

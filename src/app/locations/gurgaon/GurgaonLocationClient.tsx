@@ -109,7 +109,7 @@ const GURGAON_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Original Will Document (Plain A4 Paper)",
+    label: "Original Will Paper (Plain A4 Paper)",
     detail: "Printed clearly on durable paper with explicit revocation clause and full asset schedule.",
     checked: true,
   },
@@ -139,8 +139,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "MBBS Doctor Fitness Certificate",
-    detail: "Recommended for testators aged 60+ certifying sound mind, memory, and understanding.",
+    label: "MBBS Doctor Fitness Paper",
+    detail: "Recommended for Will makers aged 60+ certifying sound mind, memory, and understanding.",
     checked: false,
   },
   {
@@ -352,7 +352,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 Section 31
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Doorstep SRO Registration
+                Doorstep SRO Filing
               </span>
             </div>
           </div>
@@ -485,16 +485,16 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 53 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Gurgaon
+                  Key Highlights: Will Making &amp; Filing in Gurgaon
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Haryana under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will signed before two witnesses is legally binding.
+                      Will filing is a choice in Haryana under Section 18(e) of the Filing Act, 1908. A handwritten or typed Will signed before two witnesses is legally binding.
                     </p>
                   </div>
 
@@ -514,7 +514,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills attract ₹0 stamp duty in Haryana. At Tehsil offices, testators only pay a flat ₹100 registration fee plus nominal HALRIS computerization charges.
+                      Wills attract ₹0 stamp duty in Haryana. At Tehsil offices, Will makers only pay a flat ₹100 filing fee plus nominal HALRIS computerization charges.
                     </p>
                   </div>
 
@@ -524,7 +524,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       <span>Direct HSVP Floor Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites re-allotment of HSVP plots and independent builder floors before Estate Officers without cumbersome newspaper advertisements.
+                      A filed Will expedites re-allotment of HSVP plots and independent builder floors before Estate Officers without cumbersome newspaper advertisements.
                     </p>
                   </div>
                 </div>
@@ -543,13 +543,13 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Gurgaon NCR
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession across Gurgaon and Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Haryana Apartment Ownership Act, 1983</strong>.
+                  Estate estate across Gurgaon and Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Filing Act, 1908</strong>, and the <strong>Haryana Apartment Ownership Act, 1983</strong>.
                   Any competent adult possessing sound mental faculties can execute a Will to dispose of self-acquired plots, builder floors, demat shares, and bank balances.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gurgaon presents specific property ownership patterns.
+                  Gurgaon presents specific asset ownership patterns.
                   A single family might hold an HSVP home plot in Sector 14, an independent builder floor in Sector 57, a luxury condominium in DLF Phase 5, and shop office units near Cyber City.
-                  Without an clear Will, transfer of ownership often gets stalled before the HSVP Estate Office and local municipal bodies.
+                  Without an clear Will, transfer of ownership often gets stalled before the HSVP Estate Office and local city bodies.
                 </p>
               </div>
 
@@ -605,15 +605,15 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Gurugram?
+                  2. Is Will Filing Needed in Gurugram?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong>.
-                  An unregistered Will signed on plain white paper is legally valid in Indian courts if it fulfills legal signature and attestation rules.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is strictly <strong>a choice</strong>.
+                  An plain Will signed on plain white paper is legally valid in Indian courts if it fulfills legal signature and witness signing rules.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, in high-value real estate micro-markets like Gurgaon, registering your Will at the Tehsil office offers substantial legal protection.
-                  Compare registered Wills with unregistered documents below:
+                  Compare filed Wills with plain papers below:
                 </p>
               </div>
 
@@ -622,9 +622,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Tehsil SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Parameter</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Tehsil SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -635,13 +635,13 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Forgery Claims</td>
-                      <td className="p-4 bg-rose-50/20">Substantial. Will maker biometrics, photos, and ID verified by Sub-Registrar</td>
+                      <td className="p-4 bg-rose-50/20">Substantial. Will maker biometrics, photos, and ID checked by SRO</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable. Excluded relatives can claim mental infirmity or fake signatures</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">HSVP Plot &amp; Floor Transfer</td>
                       <td className="p-4 bg-rose-50/20">Prompt re-allotment by Estate Officer using certified SRO copy</td>
-                      <td className="p-4 bg-slate-50/20">Requires affidavits from all legal heirs, public ads, and indemnity bonds</td>
+                      <td className="p-4 bg-slate-50/20">Requires sworn notes from all legal heirs, public ads, and indemnity bonds</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Presumption of Genuineness</td>
@@ -650,7 +650,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Haryana Government Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal ₹100 registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal ₹100 filing fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
                   </tbody>
@@ -667,28 +667,28 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. HSVP Plot &amp; Builder Floor Succession in Gurgaon
+                  3. HSVP Plot &amp; Builder Floor Estate in Gurgaon
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Home plots developed by the <strong>Haryana Shehri Vikas Pradhikaran (HSVP)</strong> and independent builder floors constructed on them are subject to specialized transfer rules upon the owner&apos;s death.
-                  Haryana allows the registration of independent home floors with individual conveyance deeds.
+                  Haryana allows the filing of independent home floors with single conveyance deeds.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Transferring an independent floor or HSVP plot after demise requires compliance with HSVP Estate Office guidelines (EO-I and EO-II Gurugram).
-                  Here is how succession differs with and without a registered Will:
+                  Here is how estate differs with and without a filed Will:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    With Registered Will: Direct Transfer
+                    With Filed Will: Direct Transfer
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Single-Window HSVP Re-Allotment
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The designated heir submits the certified copy of the registered Will from the Sub-Registrar along with the original death paper. The Estate Officer sanctions transfer of the plot or floor without requiring non-objection papers (NOCs) from other family members.
+                    The designated heir submits the certified copy of the filed Will from the SRO along with the original death paper. The Estate Officer sanctions transfer of the plot or floor without requiring non-objection papers (NOCs) from other family members.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -698,17 +698,17 @@ export default function GurgaonLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Without Registered Will: Lengthy Hurdles
+                    Without Filed Will: Lengthy Hurdles
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Complicated Without a Will Name Change
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    In the absence of a registered Will, HSVP mandates public notices in two newspapers (English and Hindi) with a 30-day objection period, affidavits from all surviving legal heirs, and high-value indemnity bonds before processing title name change.
+                    In the absence of a filed Will, HSVP mandates public notices in two newspapers (English and Hindi) with a 30-day objection period, sworn notes from all surviving legal heirs, and high-value indemnity bonds before processing title name change.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Any objection freezes property transfer for years in civil court</span>
+                    <span>Any objection freezes asset transfer for years in civil court</span>
                   </div>
                 </div>
               </div>
@@ -726,7 +726,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   4. Punjab &amp; Haryana HC Probate Rules in Gurgaon
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A frequent question from Gurgaon property owners is whether they must secure court probate before transferring estate assets.
+                  A frequent question from Gurgaon asset owners is whether they must secure court probate before transferring estate assets.
                   In Haryana, the legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
@@ -744,7 +744,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     Punjab &amp; Haryana High Court Rulings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    In landmark decisions including <em>Ram Chand v. Raghbir Singh</em> and <em>Kanta v. State of Haryana</em>, the Hon&apos;ble High Court affirmed that an executor or heir of a Hindu, Sikh, Jain, or Buddhist Will in Haryana does not need probate to assert property rights.
+                    In landmark decisions including <em>Ram Chand v. Raghbir Singh</em> and <em>Kanta v. State of Haryana</em>, the Hon&apos;ble High Court affirmed that an executor or heir of a Hindu, Sikh, Jain, or Buddhist Will in Haryana does not need probate to assert asset rights.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -760,7 +760,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     High-Fight Estate Scenarios
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing a probate petition before the District Judge at Gurugram District Court Complex is recommended when estranged family members challenge the Will, or when multi-crore family holdings face split claims.
+                    Filing a probate petition before the District Judge at Gurugram District Court Complex is recommended when estranged family members fight the Will, or when multi-crore family holdings face split claims.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
@@ -779,11 +779,11 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Gurugram Sub-Registrar Directory: SRO Tehsils
+                  5. Gurugram SRO Directory: SRO Tehsils
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gurugram district is divided into designated Tehsil and Sub-Tehsil registration areas.
-                  Under Section 32 of the Registration Act, your Will can be registered at the Tehsil where the Will maker resides, or where any part of the real estate is situated.
+                  Gurugram district is divided into designated Tehsil and Sub-Tehsil filing areas.
+                  Under Section 32 of the Filing Act, your Will can be filed at the Tehsil where the Will maker resides, or where any part of the real estate is situated.
                 </p>
               </div>
 
@@ -888,8 +888,8 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   6. Area-Wise Will Drafting Services Across Gurgaon NCR
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in DLF Phase 1-5, Golf Course Road, Sohna Road, or New Gurgaon</strong>? Assets across Gurgaon encompass freehold plots in HSVP sectors, gated condominium towers, independent builder floors, and luxury farmhouses.
-                  Our senior lawyers provide legally vetted drafting, Jamabandi e-token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Looking for legally checked <strong>Will drafting services in DLF Phase 1-5, Golf Course Road, Sohna Road, or New Gurgaon</strong>? Assets across Gurgaon encompass freehold plots in HSVP sectors, gated condominium towers, independent builder floors, and luxury farmhouses.
+                  Our senior lawyers provide legally vetted drafting, Jamabandi e-token scheduling, and SRO accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -981,7 +981,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Civil Lines Tehsil &amp; Sector 56 Wazirabad</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HSVP Estate Officer (EO-I &amp; EO-II) transfer guidance, name change paperwork, and Jamabandi e-registration.
+                        HSVP Estate Officer (EO-I &amp; EO-II) transfer guidance, name change paperwork, and Jamabandi e-filing.
                       </p>
                     </div>
                   </div>
@@ -1025,7 +1025,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services on Sohna Road &amp; Ext Road</strong>. Home to established gated villa enclaves and modern high-rise condominiums. Our Will formats make sure full compliance with the Haryana Apartment Ownership Act, clarifying condominium succession, society transfer steps, and mutual fund/demat portfolios.
+                      Opt for premier <strong>Will drafting services on Sohna Road &amp; Ext Road</strong>. Home to established gated villa enclaves and modern high-rise condominiums. Our Will formats make sure full compliance with the Haryana Apartment Ownership Act, clarifying condominium estate, society transfer steps, and mutual fund/demat portfolios.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1034,7 +1034,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                         <span>SRO Area: Sub-Tehsil Badshahpur (Sector 66)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Badshahpur SRO lawyer help, Jamabandi token scheduling, and senior citizen doorstep attestation.
+                        Badshahpur SRO lawyer help, Jamabandi token scheduling, and senior citizen doorstep witness signing.
                       </p>
                     </div>
                   </div>
@@ -1078,7 +1078,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in New Gurgaon &amp; Dwarka Expressway</strong>. Features newly occupied high-rises and ongoing projects. Where developer sub-lease registry is pending, our Will drafts bequeath contractual rights under Builder-Buyer Agreements (BBAs), making sure smooth succession before DTCP Haryana and builders.
+                      Secure expert <strong>Will drafting services in New Gurgaon &amp; Dwarka Expressway</strong>. Features newly occupied high-rises and ongoing projects. Where developer sub-lease registry is pending, our Will drafts bequeath contractual rights under Builder-Buyer Agreements (BBAs), making sure smooth estate before DTCP Haryana and builders.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1087,7 +1087,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Tehsil Manesar &amp; Sub-Tehsil Kadipur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jamabandi token generation, BBA contractual clause drafting, and registration signing at Manesar Tehsil.
+                        Jamabandi token generation, BBA contractual clause drafting, and filing signing at Manesar Tehsil.
                       </p>
                     </div>
                   </div>
@@ -1117,11 +1117,11 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Step-by-Step Will Registration on Jamabandi
+                  7. Step-by-Step Will Filing on Jamabandi
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Gurugram follows the Haryana land revenue computerized registration protocol (HALRIS).
-                  Here is the 5-step registration process:
+                  Registering a Will in Gurugram follows the Haryana land revenue computerized filing protocol (HALRIS).
+                  Here is the 5-step filing process:
                 </p>
               </div>
 
@@ -1146,10 +1146,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Doctor Certificate
+                      Doctor Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Procure an MBBS medical paper for testators aged 60+ confirming sound mental capacity.
+                      Procure an MBBS medical paper for Will makers aged 60+ confirming sound mental capacity.
                     </p>
                   </div>
                 </div>
@@ -1177,7 +1177,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       Tehsil SRO Visit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will maker and two witnesses appear before the Sub-Registrar with original Aadhaar cards for verbal inquiry.
+                      Will maker and two witnesses appear before the SRO with original Aadhaar cards for verbal inquiry.
                     </p>
                   </div>
                 </div>
@@ -1188,10 +1188,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       5
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Book III Registered
+                      Book III Filed
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      HALRIS biometric photos and thumbprints recorded. Registered document returned within 24 to 48 hours.
+                      HALRIS biometric photos and thumbprints recorded. Filed paper returned within 24 to 48 hours.
                     </p>
                   </div>
                 </div>
@@ -1207,23 +1207,23 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Section 31 Doorstep SRO Registration in Gurgaon
+                  8. Section 31 Doorstep SRO Filing in Gurgaon
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior citizens in Gurgaon find it physically demanding to climb stairs or navigate crowded corridors at Tehsil offices.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to visit a person&apos;s home, hospital room, or nursing care facility to register a Will.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO possesses legal office to visit a person&apos;s home, hospital room, or nursing care facility to register a Will.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Will Registration Operates in Gurugram NCR:
+                  How Doorstep Will Filing Operates in Gurugram NCR:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Inability Certificate</strong>
+                      <strong className="text-slate-900 block">Doctor Inability Paper</strong>
                       <span className="text-slate-600">An MBBS practitioner certifies that the senior citizen is bedridden or medically advised against travel.</span>
                     </div>
                   </div>
@@ -1248,7 +1248,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometrics at Residence</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric hardware to record signatures and photographs.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric hardware to record signatures and photographs.</span>
                     </div>
                   </div>
                 </div>
@@ -1264,10 +1264,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 48 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Documents Checklist for Gurugram Sub-Registrar
+                  9. Papers Checklist for Gurugram SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before visiting the Tehsil office.
+                  Prepare your papers before visiting the Tehsil office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
                 </p>
               </div>
@@ -1316,10 +1316,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Gurgaon Property Types: HSVP, DLF &amp; Condos
+                  10. Gurgaon Asset Types: HSVP, DLF &amp; Condos
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession steps in Gurgaon vary depending on property title structure and governing development offices:
+                  Estate steps in Gurgaon vary depending on asset title structure and governing development offices:
                 </p>
               </div>
 
@@ -1332,7 +1332,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     HSVP Home Sectors
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Sectors 14, 15, 23, 46, and 57. A registered Will allows the Estate Officer to sanction re-allotment and ownership transfer without demanding newspaper advertisements or civil court succession papers.
+                    Sectors 14, 15, 23, 46, and 57. A filed Will allows the Estate Officer to sanction re-allotment and ownership transfer without demanding newspaper advertisements or civil court estate papers.
                   </p>
                 </div>
 
@@ -1374,7 +1374,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   11. Official Haryana Government Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property conveyance deeds that incur 5% to 7% stamp duty, Wills are 100% exempt from stamp duty across Haryana under the Indian Stamp Act, 1899.
+                  Unlike asset conveyance deeds that incur 5% to 7% stamp duty, Wills are 100% exempt from stamp duty across Haryana under the Indian Stamp Act, 1899.
                   Government charges at Gurgaon Tehsil offices are strictly nominal:
                 </p>
               </div>
@@ -1395,9 +1395,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Haryana</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Tehsil Registration Fee</td>
+                      <td className="p-4 font-semibold">Tehsil Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Fee)</td>
-                      <td className="p-4">Haryana Revenue Department / Jamabandi</td>
+                      <td className="p-4">Haryana Revenue Office / Jamabandi</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">HALRIS Scanning &amp; Token Fee</td>
@@ -1444,12 +1444,12 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with bank accounts, mutual funds, and home property.
+                      Ideal for simple estates with bank accounts, mutual funds, and home asset.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Gurgaon Will maker</span>
+                        <span>Free Gurgaon Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1522,13 +1522,13 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration help at Gurugram, Wazirabad, Badshahpur, or Manesar Tehsils.
+                      End-to-end filing help at Gurugram, Wazirabad, Badshahpur, or Manesar Tehsils.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1545,7 +1545,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1633,10 +1633,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1645,7 +1645,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     Jamabandi Haryana Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official Revenue Department portal: <code>jamabandi.nic.in</code> (HALRIS).
+                    Official Revenue Office portal: <code>jamabandi.nic.in</code> (HALRIS).
                   </p>
                 </div>
 
@@ -1686,7 +1686,29 @@ export default function GurgaonLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1705,7 +1727,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Gurgaon NCR Will Drafting &amp; Registration Architecture
+                Visual Blueprint: Gurgaon NCR Will Drafting &amp; Filing Architecture
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}

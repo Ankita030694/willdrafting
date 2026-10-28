@@ -90,7 +90,7 @@ export default function AttestingWitnessAffidavitPage() {
         url: canonicalUrl,
         name: "Affidavit of Attesting Witness for Probate | WillDrafting",
         description:
-          "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and.",
+          "Download sworn note of signing witness for probate of will format in India. Dual templates for Section 281 ISA court check and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function AttestingWitnessAffidavitPage() {
         url: canonicalUrl,
         fileFormat: "text/html",
         description:
-          "Statutory legal template pack containing contemporaneous attesting witness affidavit and Section 281 Indian Succession Act probate court.",
+          "Legal legal template pack containing contemporaneous signing witness sworn note and Section 281 Indian Succession Act probate court.",
         image: imageUrl,
         inLanguage: "en-IN",
         publisher: {
@@ -147,7 +147,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "What is an affidavit of an attesting witness for probate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An affidavit of an attesting witness for probate is a sworn legal declaration submitted by one of the witnesses who signed the Will. Under Section 281 of the Indian Succession Act, 1925, every petition for probate or letters of administration must be verified by at least one attesting witness confirming that the testator executed the Will in their presence while possessing a sound mind.",
+              text: "An sworn note of an signing witness for probate is a sworn legal declaration submitted by one of the witnesses who signed the Will. Under Section 281 of the Indian Succession Act, 1925, every petition for probate or letters of care must be checked by at least one signing witness confirming that the Will maker signed the Will in their presence while possessing a sound mind.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "Why is a contemporaneous witness affidavit executed at the time of Will signing?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A contemporaneous witness affidavit is signed simultaneously on the date the Will is executed. It records that both witnesses were present together, saw the testator sign of free will, and observed the testator in a sound state of mind. It serves as preventative evidence to repel future allegations of incapacity or undue influence, especially if decades pass before the testator dies.",
+              text: "A contemporaneous witness sworn note is signed simultaneously on the date the Will is signed. It records that both witnesses were present together, saw the Will maker sign of free will, and observed the Will maker in a sound state of mind. It serves as preventative evidence to repel future allegations of incapacity or undue influence, especially if decades pass before the Will maker dies.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "Does a registered Will exempt the propounder from calling an attesting witness?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court in Ramesh Verma v. Lajwanti (2017) and landmark authorities established that registration before the Sub-Registrar does not dispense with Section 68 of the Evidence Act (now Section 67 of the Bharatiya Sakshya Adhiniyam, 2023). A Will, even if registered, cannot be used in evidence until at least one attesting witness is examined to prove execution.",
+              text: "No. The Supreme Court in Ramesh Verma v. Lajwanti (2017) and landmark offices established that filing before the SRO does not dispense with Section 68 of the Evidence Act (now Section 67 of the Bharatiya Sakshya Adhiniyam, 2023). A Will, even if filed, cannot be used in evidence until at least one signing witness is examined to prove signing.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "What did the Supreme Court rule in Janki Narayan Bhoir v. Narayan Namdeo Kadam?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Janki Narayan Bhoir (2003) 2 SCC 91, the Supreme Court ruled that to satisfy Section 68 of the Evidence Act, the single attesting witness called must depose that the testator signed in the presence of both witnesses and that both witnesses signed in the presence of the testator. If the witness cannot depose to the execution by the second witness, the Will is not proven.",
+              text: "In Janki Narayan Bhoir (2003) 2 SCC 91, the Supreme Court ruled that to satisfy Section 68 of the Evidence Act, the single signing witness called must depose that the Will maker signed in the presence of both witnesses and that both witnesses signed in the presence of the Will maker. If the witness cannot depose to the signing by the second witness, the Will is not proven.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "How is a Will proved if both attesting witnesses have passed away?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 68 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 69 of the Indian Evidence Act), if all attesting witnesses are dead or cannot be found, the propounder must prove two things: (1) that the signature of at least one attesting witness is in their handwriting, and (2) that the signature of the testator is in the testator's genuine handwriting.",
+              text: "Under Section 68 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 69 of the Indian Evidence Act), if all signing witnesses are dead or cannot be found, the propounder must prove two things: (1) that the signature of at least one signing witness is in their handwriting, and (2) that the signature of the Will maker is in the Will maker's genuine handwriting.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "Can an executor or a beneficiary sign the attesting witness affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An executor can be an attesting witness under Section 68 of the Indian Succession Act, 1925, provided they do not benefit from a legacy. However, a beneficiary should never be an attesting witness. For Christians and Parsis, Section 67 ISA renders any bequest to an attesting witness strictly void. For Hindus, while Section 67 is exempt, courts treat beneficiary-witnesses with extreme suspicion.",
+              text: "An executor can be an signing witness under Section 68 of the Indian Succession Act, 1925, provided they do not benefit from a legacy. However, a heir should never be an signing witness. For Christians and Parsis, Section 67 ISA renders any bequest to an signing witness strictly void. For Hindus, while Section 67 is exempt, courts treat heir-witnesses with extreme suspicion.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "What is animus attestandi in the context of Will attestation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Animus attestandi is the specific legal intention to attest the signature of the testator on the Will. In K. Laxmanan v. Thekkayil Padmini (2009), the Supreme Court clarified that a person who signs merely as a scribe, draftsperson, or registering identifier does not automatically become an attesting witness unless they signed with the conscious intention of witnessing execution.",
+              text: "Animus attestandi is the specific legal intention to attest the signature of the Will maker on the Will. In K. Laxmanan v. Thekkayil Padmini (2009), the Supreme Court clarified that a person who signs merely as a scribe, draftsperson, or registering identifier does not automatically become an signing witness unless they signed with the conscious intention of witnessing signing.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function AttestingWitnessAffidavitPage() {
             name: "Before whom must the probate attesting witness affidavit be sworn?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "For probate petitions filed in High Courts (Bombay, Calcutta, Madras) or District Courts, the witness affidavit must be sworn before the Court Registrar, an Oath Commissioner appointed by the High Court, or a Notary Public duly appointed under the Notaries Act, 1952. For contemporaneous affidavits, execution before an Executive Magistrate or Notary Public with photographic proof is standard practice.",
+              text: "For probate petitions filed in High Courts (Bombay, Calcutta, Madras) or District Courts, the witness sworn note must be sworn before the Court Registrar, an Oath Commissioner appointed by the High Court, or a Notary Public duly appointed under the Notaries Act, 1952. For contemporaneous sworn notes, signing before an Executive Magistrate or Notary Public with photographic proof is standard practice.",
             },
           },
         ],

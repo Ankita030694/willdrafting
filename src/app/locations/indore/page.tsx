@@ -156,7 +156,7 @@ export default function IndoreLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Indore: Online Will & Succession Help",
         description:
-          "Draft a valid Will in Indore. Complete MP e-registration guidance, ancestral land succession rules, and professional legal consultation online.",
+          "Draft a valid Will in Indore. Complete MP e-filing guidance, family land estate rules, and professional legal talk online.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -203,7 +203,7 @@ export default function IndoreLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Indore - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, MP Sampada 2.0 registration, and doorstep execution services across Indore district and.",
+          "Professional Will drafting, lawyer talk, MP Sampada 2.0 filing, and doorstep signing services across Indore district and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -279,38 +279,38 @@ export default function IndoreLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Indore, Madhya Pradesh",
         description:
-          "Five straightforward steps to draft an enforceable Will and register it before the Sub-Registrar in Indore.",
+          "Five straightforward steps to draft an enforceable Will and register it before the SRO in Indore.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Inventory Assets and Designate Beneficiaries",
-            text: "List your Indore properties, including IDA plots, residential bungalows, commercial shops in Sarafa or Cloth Market, bank accounts, demat shares, and agricultural lands in Sanwer or Depalpur. Appoint an executor and legal beneficiaries.",
+            text: "List your Indore assets, including IDA plots, home bungalows, shop shops in Sarafa or Cloth Market, bank accounts, demat shares, and farm lands in Sanwer or Depalpur. Appoint an executor and legal heirs.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Custom Will with MP and IDA Succession Clauses",
-            text: "Draft your Will using our online legal platform or with our senior estate advocates to incorporate specific clauses for IDA leasehold transfers, IMC tax records, HUF assets, and dispute-prevention provisions.",
+            text: "Draft your Will using our online legal platform or with our senior estate lawyers to incorporate specific clauses for IDA leasehold transfers, IMC tax records, HUF assets, and fight-prevention rules.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute in Presence of Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets. The testator and two adult independent witnesses sign each page together. Witnesses must not be named beneficiaries or their spouses.",
+            text: "Print the Will on plain A4 sheets. The Will maker and two adult independent witnesses sign each page together. Witnesses must not be named heirs or their spouses.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Slot Booking on MP Sampada 2.0 Registration Portal",
-            text: "Book an online appointment on the MP Sampada 2.0 portal for your designated Indore Sub-Registrar office (Moti Bungalow, Kila Maidan, Bicholi Mardana, or Scheme 78) and pay the nominal ₹1,000 registration fee.",
+            text: "Book an online appointment on the MP Sampada 2.0 portal for your designated Indore SRO office (Moti Bungalow, Kila Maidan, Bicholi Mardana, or Scheme 78) and pay the nominal ₹1,000 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Biometric Verification and Book III Registration at Indore SRO",
-            text: "Visit the Indore Sub-Registrar Office with your two witnesses for digital fingerprinting, iris biometric scanning, and official Book III endorsement, or opt for Section 31 doorstep execution for senior citizens.",
+            text: "Visit the Indore SRO office with your two witnesses for digital fingerprinting, iris biometric scanning, and official Book III endorsement, or opt for Section 31 doorstep signing for senior citizens.",
           },
         ],
       },

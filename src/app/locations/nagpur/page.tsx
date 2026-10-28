@@ -139,7 +139,7 @@ export default function NagpurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Nagpur: Legal Online Will Making Help",
         description:
-          "Draft your Will in Nagpur with confidence. Professional lawyer consultation, Vidarbha property succession rules, and IGR registration assistance.",
+          "Draft your Will in Nagpur with confidence. Professional lawyer talk, Vidarbha asset estate rules, and IGR filing help.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -186,7 +186,7 @@ export default function NagpurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Nagpur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, Vidarbha property succession, and IGR Maharashtra SRO registration support across Nagpur.",
+          "Professional Will drafting, lawyer talk, Vidarbha asset estate, and IGR Maharashtra SRO filing support across Nagpur.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -258,26 +258,26 @@ export default function NagpurLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Nagpur Maharashtra",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Nagpur.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Nagpur.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Inventory Vidarbha Assets and Select Heirs",
-            text: "List your Nagpur properties including NMC houses, NIT leasehold plots, 7/12 agricultural land, bank deposits, and shares. Designate beneficiaries and an executor.",
+            text: "List your Nagpur assets including NMC houses, NIT leasehold plots, 7/12 farm land, bank deposits, and shares. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Bombay High Court Compliant Clauses",
-            text: "Draft your Will using our online legal platform or with an advocate to include clear bequest clauses, executor appointment, and non-presidency succession declarations.",
+            text: "Draft your Will using our online legal platform or with an lawyer to include clear bequest clauses, executor appointment, and non-presidency estate declarations.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the physical presence of two adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
@@ -289,7 +289,7 @@ export default function NagpurLocationPage() {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Recording at Nagpur Sub-Registrar",
-            text: "Visit the Sub-Registrar Office with two witnesses and original Aadhaar cards for biometric thumbprint capture, digital photography, and Book III registration.",
+            text: "Visit the SRO office with two witnesses and original Aadhaar cards for biometric thumbprint capture, digital photography, and Book III filing.",
           },
         ],
       },

@@ -146,7 +146,7 @@ export default function CoimbatoreLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Coimbatore: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth.",
+          "Draft a legally valid Will in Coimbatore. Expert guidance on plant assets, Tamil Nadu SRO filing, and smooth family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function CoimbatoreLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Coimbatore - Estate Planning, Industrial Succession & SRO Registration",
         description:
-          "Professional Will drafting, industrial family enterprise succession advisory, and TNREGINET Sub-Registrar Office registration support across.",
+          "Professional Will drafting, plant family enterprise estate advisory, and TNREGINET SRO office filing support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -265,38 +265,38 @@ export default function CoimbatoreLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Coimbatore Tamil Nadu",
         description:
-          "Five straightforward steps to create a legally binding Will and register it before the Sub-Registrar in Coimbatore.",
+          "Five straightforward steps to create a legally binding Will and register it before the SRO in Coimbatore.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Properties, Industrial Holdings, and Heirs",
-            text: "Compile your Coimbatore residential properties, textile or foundry equity shares, bank accounts, and agricultural groves. Designate your beneficiaries and an executor.",
+            text: "Compile your Coimbatore home assets, textile or foundry equity shares, bank accounts, and farm groves. Designate your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Will with Exact Legal Clauses",
-            text: "Draft your Will using our legally verified platform or with a senior estate advocate to include non-presidency probate clarity, business survivorship, and specific asset bequests.",
+            text: "Draft your Will using our legally checked platform or with a senior estate lawyer to include non-presidency probate clarity, business survivorship, and specific asset bequests.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 sheets and sign every page in the presence of two independent adult witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 sheets and sign every page in the presence of two independent adult witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Coimbatore SRO Token on TNREGINET",
-            text: "Schedule an appointment token on tnreginet.gov.in for your jurisdictional Coimbatore SRO and pay the nominal ₹100 registration fee online.",
+            text: "Schedule an appointment token on tnreginet.gov.in for your local Coimbatore SRO and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Sub-Registrar Office with your two witnesses, original Aadhaar cards, and photos for biometric fingerprinting, digital photo capture, and Book III registration.",
+            text: "Visit the SRO office with your two witnesses, original Aadhaar cards, and photos for biometric fingerprinting, digital photo capture, and Book III filing.",
           },
         ],
       },

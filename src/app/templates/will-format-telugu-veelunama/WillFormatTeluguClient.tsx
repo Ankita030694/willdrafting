@@ -50,18 +50,18 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "statutory-basis", label: "1. Statutory Basis: Indian Succession Act & Telugu SRO Rules" },
+  { id: "statutory-basis", label: "1. Legal Basis: Indian Succession Act & Telugu SRO Rules" },
   { id: "telugu-veelunama-format", label: "2. Complete Veelunama Format: Native Telugu Will Draft" },
   { id: "english-translation", label: "3. English Translation: Telugu Veelunama Clauses Explained" },
-  { id: "clause-selector", label: "4. Interactive Clause Selector: Tailor Your Telugu Will" },
-  { id: "us-nri-telugu-checklist", label: "5. US-NRI Telugu Checklist: Property in Hyderabad & AP" },
-  { id: "sro-registration-rules", label: "6. Telangana & Andhra Pradesh SRO Will Registration Rules" },
-  { id: "comparison-table", label: "7. Comparison: Registered Veelunama vs Gift vs Varisu Nama" },
-  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to SRO Registration" },
+  { id: "clause-selector", label: "4. Free Clause Selector: Tailor Your Telugu Will" },
+  { id: "us-nri-telugu-checklist", label: "5. US-NRI Telugu Checklist: Asset in Hyderabad & AP" },
+  { id: "sro-registration-rules", label: "6. Telangana & Andhra Pradesh SRO Will Filing Rules" },
+  { id: "comparison-table", label: "7. Comparison: Filed Veelunama vs Gift vs Varisu Nama" },
+  { id: "step-by-step-sop", label: "8. Step-by-Step SOP: Drafting to SRO Filing" },
   { id: "case-studies", label: "9. Practical Case Studies: Hyderabad & Visakhapatnam Courts" },
-  { id: "checklist-doctor-cert", label: "10. Sub-Registrar Document Checklist & Doctor Certificate" },
-  { id: "succession-tools", label: "11. Contextual Succession Calculators & Estate Planning Tools" },
-  { id: "legal-authority", label: "12. Legal Authority: Senior Succession Counsel Profile" },
+  { id: "checklist-doctor-cert", label: "10. SRO Paper Checklist & Doctor Paper" },
+  { id: "succession-tools", label: "11. Contextual Estate Tools & Estate Planning Tools" },
+  { id: "legal-authority", label: "12. Legal Office: Senior Estate Counsel Profile" },
   { id: "faqs", label: "13. Frequently Asked Questions: Telugu Veelunama Format" },
   { id: "statutory-citations", label: "14. Official Telangana & Andhra Pradesh Legal References" },
 ];
@@ -73,7 +73,7 @@ const FAQS_DATA = [
   },
   {
     q: "తెలంగాణ మరియు ఆంధ్రప్రదేశ్‌లలో వీలునామా రిజిస్ట్రేషన్ తప్పనిసరిగా చేయాలా?",
-    a: "రిజిస్ట్రేషన్ చట్టం 1908 సెక్షన్ 18(e) ప్రకారం భారతదేశంలో వీలునామా రిజిస్ట్రేషన్ చేయడం చట్టరీత్యా తప్పనిసరి కాదు, అది ఐచ్ఛికం (Optional). అయితే, సబ్-రిజిస్ట్రార్ కార్యాలయం (SRO) లో రిజిస్ట్రేషన్ చేయించడం వలన భవిష్యత్తులో ఫోర్జరీ లేదా బలవంతపు ఆరోపణలు రాకుండా బలమైన చట్టపరమైన రక్షణ లభిస్తుంది. రెవెన్యూ రికార్డులు మరియు మున్సిపల్ మ్యుటేషన్‌లో చిక్కులు ఉండవు.",
+    a: "రిజిస్ట్రేషన్ చట్టం 1908 సెక్షన్ 18(e) ప్రకారం భారతదేశంలో వీలునామా రిజిస్ట్రేషన్ చేయడం చట్టరీత్యా తప్పనిసరి కాదు, అది ఐచ్ఛికం (A Choice). అయితే, సబ్-రిజిస్ట్రార్ కార్యాలయం (SRO) లో రిజిస్ట్రేషన్ చేయించడం వలన భవిష్యత్తులో ఫోర్జరీ లేదా బలవంతపు ఆరోపణలు రాకుండా బలమైన చట్టపరమైన రక్షణ లభిస్తుంది. రెవెన్యూ రికార్డులు మరియు మున్సిపల్ మ్యుటేషన్‌లో చిక్కులు ఉండవు.",
   },
   {
     q: "హైదరాబాద్ లేదా ఆంధ్రప్రదేశ్‌లో వీలునామాకు కోర్టు ప్రొబేట్ (Probate) అవసరమా?",
@@ -81,11 +81,11 @@ const FAQS_DATA = [
   },
   {
     q: "వీలునామాపై ఎంతమంది సాక్షులు సంతకాలు చేయాలి?",
-    a: "సెక్షన్ 63(c) ప్రకారం కనీసం ఇద్దరు స్వతంత్ర సాక్షులు (Two Attesting Witnesses) వీలునామా కర్త సంతకం చేయడాన్ని ప్రత్యక్షంగా చూసి సాక్షి సంతకాలు చేయాలి. అత్యంత ముఖ్యమైన నియమం: సెక్షన్ 67 ప్రకారం ఆస్తి పొందే లబ్ధిదారులు (Beneficiaries) లేదా వారి భార్య/భర్త సాక్షులుగా సంతకం చేయకూడదు. అలా చేస్తే వారికి ఇచ్చే ఆస్తి చెల్లకుండా పోతుంది.",
+    a: "సెక్షన్ 63(c) ప్రకారం కనీసం ఇద్దరు స్వతంత్ర సాక్షులు (Two Signing Witnesses) వీలునామా కర్త సంతకం చేయడాన్ని ప్రత్యక్షంగా చూసి సాక్షి సంతకాలు చేయాలి. అత్యంత ముఖ్యమైన నియమం: సెక్షన్ 67 ప్రకారం ఆస్తి పొందే లబ్ధిదారులు (Heirs) లేదా వారి భార్య/భర్త సాక్షులుగా సంతకం చేయకూడదు. అలా చేస్తే వారికి ఇచ్చే ఆస్తి చెల్లకుండా పోతుంది.",
   },
   {
-    q: "పూర్వీకుల ఆస్తిపై (Ancestral Property) పూర్తి వీలునామా రాయవచ్చా?",
-    a: "వ్యక్తి తన సొంత సంపాదనతో కొనుగోలు చేసిన ఆస్తులపై (Self-Acquired Property) మాత్రమే తన ఇష్టానుసారం పూర్తి వీలునామా రాయవచ్చును. పూర్వీకుల ఉమ్మడి కుటుంబ ఆస్తిలో (Ancestral Coparcenary Property) తనకు చట్టప్రకారం లభించే విభజించబడని వాటాకు (Undivided Share) మాత్రమే హిందూ వారసత్వ చట్టం సెక్షన్ 30 ప్రకారం వీలునామా రాయవచ్చును.",
+    q: "పూర్వీకుల ఆస్తిపై (Family Asset) పూర్తి వీలునామా రాయవచ్చా?",
+    a: "వ్యక్తి తన సొంత సంపాదనతో కొనుగోలు చేసిన ఆస్తులపై (Self-Acquired Asset) మాత్రమే తన ఇష్టానుసారం పూర్తి వీలునామా రాయవచ్చును. పూర్వీకుల ఉమ్మడి కుటుంబ ఆస్తిలో (Family Joint Asset) తనకు చట్టప్రకారం లభించే విభజించబడని వాటాకు (Undivided Share) మాత్రమే హిందూ వారసత్వ చట్టం సెక్షన్ 30 ప్రకారం వీలునామా రాయవచ్చును.",
   },
   {
     q: "తెలంగాణ మరియు ఏపీలలో వీలునామా రిజిస్ట్రేషన్ ఫీజు ఎంత?",
@@ -93,7 +93,7 @@ const FAQS_DATA = [
   },
   {
     q: "అమెరికాలో ఉన్న ఎన్నారై (US Telugu NRI) తల్లిదండ్రులు హైదరాబాద్ ఆస్తులపై వీలునామా ఎలా రాయాలి?",
-    a: "భారతదేశంలో ఉన్న స్థిరాస్తుల కొరకు ప్రత్యేకమైన భారతీయ వీలునామా (Separate Indian Will) రాయడం చట్టపరంగా ఉత్తమం. అమెరికా లివింగ్ ట్రస్ట్ (US Living Trust) లేదా విదేశీ వీలునామాను భారతీయ రెవెన్యూ అధికారులు, తహశీల్దార్ లేదా ధరణి పోర్టల్ నేరుగా అంగీకరించవు. ప్రత్యేక భారతీయ వీలునామా రాయడం ద్వారా వారసులకు ఎటువంటి కోర్టు కేసులు లేకుండా సులభంగా నామ మార్పిడి (Mutation) జరుగుతుంది.",
+    a: "భారతదేశంలో ఉన్న స్థిరాస్తుల కొరకు ప్రత్యేకమైన భారతీయ వీలునామా (Separate Indian Will) రాయడం చట్టపరంగా ఉత్తమం. అమెరికా లివింగ్ ట్రస్ట్ (US Living Trust) లేదా విదేశీ వీలునామాను భారతీయ రెవెన్యూ అధికారులు, తహశీల్దార్ లేదా ధరణి పోర్టల్ నేరుగా అంగీకరించవు. ప్రత్యేక భారతీయ వీలునామా రాయడం ద్వారా వారసులకు ఎటువంటి కోర్టు కేసులు లేకుండా సులభంగా నామ మార్పిడి (Name Change) జరుగుతుంది.",
   },
   {
     q: "జీవితకాలంలో వీలునామాను ఎన్నిసార్లు మార్చవచ్చు లేదా రద్దు చేయవచ్చు?",
@@ -114,7 +114,7 @@ export default function WillFormatTeluguClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-basis");
+  const [activeId, setActiveId] = useState<string>("legal-basis");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedTelugu, setCopiedTelugu] = useState<boolean>(false);
   const [copiedEnglish, setCopiedEnglish] = useState<boolean>(false);
@@ -374,7 +374,7 @@ Date: __________________________________`;
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Download a valid <strong>వీలునామా ఫార్మాట్ తెలుగు (Will Format in Telugu)</strong> for plain paper drafting.
-            Learn how to write a valid Will with two witnesses, a doctor fitness certificate, and simple SRO registration
+            Learn how to write a valid Will with two witnesses, a doctor fitness paper, and simple SRO filing
             rules in Telangana and Andhra Pradesh.
           </p>
 
@@ -393,7 +393,7 @@ Date: __________________________________`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will Online</span>
+              <span>Draft Fight-Proof Will Online</span>
             </button>
           </div>
         </div>
@@ -421,7 +421,7 @@ Date: __________________________________`;
               </div>
               <div>
                 <p className="text-xs text-[#172228]/70 font-medium">Two Witnesses</p>
-                <p className="text-sm font-bold text-[#172228]">Non-Beneficiary</p>
+                <p className="text-sm font-bold text-[#172228]">Non-Heir</p>
               </div>
             </div>
 
@@ -431,7 +431,7 @@ Date: __________________________________`;
               </div>
               <div>
                 <p className="text-xs text-[#172228]/70 font-medium">Hyderabad &amp; AP</p>
-                <p className="text-sm font-bold text-[#172228]">Probate Not Mandatory</p>
+                <p className="text-sm font-bold text-[#172228]">Probate Not Needed</p>
               </div>
             </div>
 
@@ -493,7 +493,7 @@ Date: __________________________________`;
                 మీ వీలునామాను 15 నిమిషాల్లో ఆన్‌లైన్‌లో రాయండి
               </div>
               <p className="text-xs text-white/80 leading-relaxed mb-4">
-                Draft a legally valid Will for your properties in Hyderabad and Andhra Pradesh.
+                Draft a legally valid Will for your assets in Hyderabad and Andhra Pradesh.
                 You can print it on plain paper right away.
               </p>
               <button
@@ -512,16 +512,16 @@ Date: __________________________________`;
                 <span>AMA Legal Solutions Advisory</span>
               </div>
               <div className="text-base font-bold text-[#172228] mb-2 leading-snug">
-                న్యాయవాది సలహా కావాలా? (Need Advocate Guidance?)
+                న్యాయవాది సలహా కావాలా? (Need Lawyer Guidance?)
               </div>
               <p className="text-xs text-[#172228]/80 leading-relaxed mb-4">
-                Talk to senior lawyers for custom Will drafting, NRI property advice, and dispute prevention.
+                Talk to senior lawyers for custom Will drafting, NRI asset advice, and fight prevention.
               </p>
               <Link
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white border border-[#C65378]/30 hover:border-[#C65378] text-[#172228] hover:text-[#C65378] text-xs font-bold transition-all shadow-xs"
               >
-                <span>న్యాయవాద సంప్రదింపు (Book Consultation)</span>
+                <span>న్యాయవాద సంప్రదింపు (Book Talk)</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -532,8 +532,8 @@ Date: __________________________________`;
                 AM
               </div>
               <div className="text-xs">
-                <p className="font-bold text-[#172228]">Advocate Anuj Anand Malik</p>
-                <p className="text-[#172228]/70">Senior Succession Counsel</p>
+                <p className="font-bold text-[#172228]">Lawyer Anuj Anand Malik</p>
+                <p className="text-[#172228]/70">Senior Estate Counsel</p>
                 <p className="text-[0.7rem] text-[#C65378] font-semibold mt-0.5">
                   Bar Council of Delhi • AMA Legal Solutions
                 </p>
@@ -597,10 +597,10 @@ Date: __________________________________`;
                 <span>చట్టపరమైన ఆధారం • STATUTORY BASIS</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                1. Statutory Basis: Indian Succession Act &amp; Telugu SRO Rules
+                1. Legal Basis: Indian Succession Act &amp; Telugu SRO Rules
               </h2>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
-                Making and registering a Will in Telangana and Andhra Pradesh is governed by clear statutory laws.
+                Making and registering a Will in Telangana and Andhra Pradesh is governed by clear legal laws.
                 Here are the core legal rules every family must know:
               </p>
 
@@ -619,22 +619,22 @@ Date: __________________________________`;
                 <div className="bg-white p-4 rounded-xl border border-[#172228]/10 shadow-xs">
                   <div className="flex items-center gap-2 text-[#5F7E75] font-bold text-xs mb-1.5">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span>Registration Act, 1908 (Section 18(e))</span>
+                    <span>Filing Act, 1908 (Section 18(e))</span>
                   </div>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    Under Section 18(e), registering a Will is optional in India. An unregistered Will on plain white paper
-                    is legally valid. But registering it at the Sub-Registrar Office in Telangana or AP gives strong proof against false claims of fraud.
+                    Under Section 18(e), registering a Will is a choice in India. An plain Will on plain white paper
+                    is legally valid. But registering it at the SRO office in Telangana or AP gives strong proof against false claims of fraud.
                   </p>
                 </div>
 
                 <div className="bg-white p-4 rounded-xl border border-[#172228]/10 shadow-xs">
                   <div className="flex items-center gap-2 text-[#C65378] font-bold text-xs mb-1.5">
                     <AlertTriangle className="w-4 h-4" />
-                    <span>Section 67: Disqualification of Beneficiary Witness</span>
+                    <span>Section 67: Disqualification of Heir Witness</span>
                   </div>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    Under Section 67, any person who gets property under the Will must NOT sign as a witness. Their spouse
-                    must not sign either. If a beneficiary signs as a witness, their gift under the Will becomes void.
+                    Under Section 67, any person who gets asset under the Will must NOT sign as a witness. Their spouse
+                    must not sign either. If a heir signs as a witness, their gift under the Will becomes void.
                   </p>
                 </div>
 
@@ -644,8 +644,8 @@ Date: __________________________________`;
                     <span>Section 213: No Probate Moat in Telangana &amp; AP</span>
                   </div>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    Under Sections 57 and 213, probate from a High Court is not mandatory in Telangana or Andhra Pradesh for
-                    Hindus. You do not need to go to court for probate. Revenue officers and municipal bodies can update property records directly.
+                    Under Sections 57 and 213, probate from a High Court is not needed in Telangana or Andhra Pradesh for
+                    Hindus. You do not need to go to court for probate. Revenue officers and city bodies can update asset records directly.
                   </p>
                 </div>
               </div>
@@ -775,7 +775,7 @@ Date: __________________________________`;
                     </h4>
                     <p>
                       ఈ క్రింది షెడ్యూలు &apos;ఎ&apos; మరియు &apos;బి&apos; లలో వివరించబడిన స్థిర మరియు చర ఆస్తులన్నీయు నా స్వంత సంపాదనతో, నా వ్యక్తిగత
-                      నిధులతో కొనుగోలు చేసిన స్వార్జితములు (Self-Acquired Properties). వీటిపై ఏ ఇతర కుటుంబ సభ్యులకు లేదా పూర్వీకుల
+                      నిధులతో కొనుగోలు చేసిన స్వార్జితములు (Self-Acquired Assets). వీటిపై ఏ ఇతర కుటుంబ సభ్యులకు లేదా పూర్వీకుల
                       ఉమ్మడి కుటుంబానికి ఎటువంటి జన్మహక్కు గాని, వాటా గాని లేదు. వీటిని నా ఇష్టము వచ్చిన రీతిలో సంక్రమింపజేయుటకు
                       నాకు సర్వాధికారములు కలవు.
                     </p>
@@ -789,7 +789,7 @@ Date: __________________________________`;
                       నా మరణానంతరం, ఈ క్రింది షెడ్యూల్ &apos;ఎ&apos; లో పేర్కొన్న స్థిరాస్తి నా [సంబంధం], <strong>[లబ్ధిదారుని పూర్తి పేరు]</strong>,
                       ఆధార్ సంఖ్య: [ఆధార్ నంబర్] వారికి సంపూర్ణ సర్వహక్కులతో (Absolute and unconditional ownership) చెందవలెను. సదరు
                       లబ్ధిదారుడు తమ పేరిట రెవెన్యూ రికార్డులు, పురపాలక సంఘం (GHMC / మున్సిపాలిటీ / గ్రామ పంచాయతీ) మరియు
-                      ధరణి/రిజిస్ట్రేషన్ శాఖలలో నామ మార్పిడి (Mutation) చేయించుకొనుటకు సంపూర్ణ అర్హులు.
+                      ధరణి/రిజిస్ట్రేషన్ శాఖలలో నామ మార్పిడి (Name Change) చేయించుకొనుటకు సంపూర్ణ అర్హులు.
                     </p>
                   </div>
 
@@ -870,7 +870,7 @@ Date: __________________________________`;
                   </h4>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
                     Under Section 70, writing a new Will cancels all old Wills. This stops any old letters or rough drafts
-                    from causing family disputes later.
+                    from causing family fights later.
                   </p>
                 </div>
 
@@ -879,8 +879,8 @@ Date: __________________________________`;
                     Clause 2: Sound Mental Capacity Recital (స్వస్థ చిత్తము ప్రకటన)
                   </h4>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    Under Section 59, you must be in good mental health to make a Will. A doctor certificate proves you knew
-                    what you were doing. This protects your Will if an unhappy relative challenges it in court.
+                    Under Section 59, you must be in good mental health to make a Will. A doctor paper proves you knew
+                    what you were doing. This protects your Will if an unhappy relative fights it in court.
                   </p>
                 </div>
 
@@ -896,10 +896,10 @@ Date: __________________________________`;
 
                 <div className="bg-white p-4 rounded-xl border border-[#172228]/10 shadow-xs">
                   <h4 className="text-xs font-bold text-[#5F7E75] uppercase tracking-wider mb-1">
-                    Clause 4 &amp; 5: Self-Acquired vs Coparcenary Title (స్వార్జిత ఆస్తి)
+                    Clause 4 &amp; 5: Self-Acquired vs Joint Title (స్వార్జిత ఆస్తి)
                   </h4>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    You can give away all properties bought with your own hard-earned money. For ancestral family property,
+                    You can give away all assets bought with your own hard-earned money. For family family asset,
                     you can only give your own legal share under Section 30.
                   </p>
                 </div>
@@ -925,7 +925,7 @@ Date: __________________________________`;
                 <span>అనుకూల నిబంధనలు • CLAUSE SELECTOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                4. Interactive Clause Selector: Tailor Your Telugu Will
+                4. Free Clause Selector: Tailor Your Telugu Will
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ప్రతి కుటుంబ పరిస్థితి విభిన్నంగా ఉంటుంది. మీ అవసరాలకు తగిన ప్రత్యేక నిబంధనను ఎంచుకుని వీలునామాలో చేర్చుకోండి:
@@ -1013,7 +1013,7 @@ Date: __________________________________`;
                 <span>ఎన్నారై మార్గదర్శకాలు • US-NRI TELUGU MOAT</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                5. US-NRI Telugu Checklist: Property in Hyderabad &amp; AP
+                5. US-NRI Telugu Checklist: Asset in Hyderabad &amp; AP
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Many Telugu families living in the USA own apartments and land in Hyderabad and Andhra Pradesh.
@@ -1048,7 +1048,7 @@ Date: __________________________________`;
                   <div className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <p>
-                      <strong>Make a Separate Indian Will:</strong> Make a separate Will for your properties in India.
+                      <strong>Make a Separate Indian Will:</strong> Make a separate Will for your assets in India.
                       Do not mix Indian lands with your American Will or living trust.
                     </p>
                   </div>
@@ -1056,8 +1056,8 @@ Date: __________________________________`;
                   <div className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <p>
-                      <strong>Include Survey and Municipal Numbers:</strong> Always write the survey number, flat number,
-                      and Dharani passbook or GHMC property tax number clearly.
+                      <strong>Include Survey and City Numbers:</strong> Always write the survey number, flat number,
+                      and Dharani passbook or GHMC asset tax number clearly.
                     </p>
                   </div>
 
@@ -1081,7 +1081,7 @@ Date: __________________________________`;
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <p>
                       <strong>Name a Local Executor in India:</strong> Appoint a trusted relative or lawyer in Hyderabad or AP.
-                      They can help update property names without your children flying to India.
+                      They can help update asset names without your children flying to India.
                     </p>
                   </div>
                 </div>
@@ -1097,7 +1097,7 @@ Date: __________________________________`;
                 <span>రిజిస్ట్రేషన్ ఫీజు • SRO FEE CALCULATOR</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                6. Telangana &amp; Andhra Pradesh SRO Will Registration Rules
+                6. Telangana &amp; Andhra Pradesh SRO Will Filing Rules
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Registering a Will in Telangana or Andhra Pradesh has very low government fees.
@@ -1174,7 +1174,7 @@ Date: __________________________________`;
                 <span>సమగ్ర పోలిక • COMPARISON TABLE</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                7. Comparison: Registered Veelunama vs Gift vs Varisu Nama
+                7. Comparison: Filed Veelunama vs Gift vs Varisu Nama
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ఆస్తి బదిలీ కొరకు రిజిస్టర్డ్ వీలునామా, గిఫ్ట్ డీడ్ (దాన పత్రం), మరియు లీగల్ హెయిర్ సర్టిఫికేట్ (వారిసు నామా)
@@ -1236,7 +1236,7 @@ Date: __________________________________`;
                 <span>విధాన క్రమం • STEP-BY-STEP SOP</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                8. Step-by-Step SOP: Drafting to SRO Registration
+                8. Step-by-Step SOP: Drafting to SRO Filing
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Follow these five simple steps to draft and register your Will in Telangana or Andhra Pradesh:
@@ -1248,9 +1248,9 @@ Date: __________________________________`;
                     1
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#172228]">Collect Property Documents and Title Deeds</h4>
+                    <h4 className="text-sm font-bold text-[#172228]">Collect Asset Papers and Title Deeds</h4>
                     <p className="text-xs text-[#172228]/80 mt-1 leading-relaxed">
-                      Gather property sale deeds, encumbrance certificates, and tax receipts.
+                      Gather asset sale deeds, encumbrance papers, and tax receipts.
                       List all your bank accounts and fixed deposit details clearly.
                     </p>
                   </div>
@@ -1264,7 +1264,7 @@ Date: __________________________________`;
                     <h4 className="text-sm font-bold text-[#172228]">Draft the Will in Telugu or English</h4>
                     <p className="text-xs text-[#172228]/80 mt-1 leading-relaxed">
                       Write your Will in Telugu or English using our format.
-                      Make sure that beneficiary names and property boundaries are completely accurate.
+                      Make sure that heir names and asset boundaries are completely accurate.
                     </p>
                   </div>
                 </div>
@@ -1274,10 +1274,10 @@ Date: __________________________________`;
                     3
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#172228]">Get a Doctor Fitness Certificate</h4>
+                    <h4 className="text-sm font-bold text-[#172228]">Get a Doctor Fitness Paper</h4>
                     <p className="text-xs text-[#172228]/80 mt-1 leading-relaxed">
                       Visit an MBBS doctor on the day you sign.
-                      The doctor can issue a certificate of mental fitness and can also act as one of your witnesses.
+                      The doctor can issue a paper of mental fitness and can also act as one of your witnesses.
                     </p>
                   </div>
                 </div>
@@ -1290,7 +1290,7 @@ Date: __________________________________`;
                     <h4 className="text-sm font-bold text-[#172228]">Sign Before Two Independent Witnesses</h4>
                     <p className="text-xs text-[#172228]/80 mt-1 leading-relaxed">
                       Sign every page of your Will in front of two witnesses.
-                      Remember that witnesses must not be beneficiaries receiving any property under the Will.
+                      Remember that witnesses must not be heirs receiving any asset under the Will.
                     </p>
                   </div>
                 </div>
@@ -1300,10 +1300,10 @@ Date: __________________________________`;
                     5
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#172228]">Register at the Sub-Registrar Office</h4>
+                    <h4 className="text-sm font-bold text-[#172228]">Register at the SRO office</h4>
                     <p className="text-xs text-[#172228]/80 mt-1 leading-relaxed">
-                      Book a slot on the registration portal.
-                      Visit the Sub-Registrar Office to submit biometric thumbprints, photographs, and collect your registered copy.
+                      Book a slot on the filing portal.
+                      Visit the SRO office to submit biometric thumbprints, photographs, and collect your filed copy.
                     </p>
                   </div>
                 </div>
@@ -1322,7 +1322,7 @@ Date: __________________________________`;
                 9. Practical Case Studies: Hyderabad &amp; Visakhapatnam Courts
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
-                Real disputes in civil courts teach valuable lessons about how to protect your estate from challenges:
+                Real fights in civil courts teach valuable lessons about how to protect your estate from fights:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1332,10 +1332,10 @@ Date: __________________________________`;
                     <span>Case 1: Jubilee Hills, Hyderabad (Sec 67 Infraction)</span>
                   </div>
                   <h4 className="text-xs sm:text-sm font-bold text-[#172228]">
-                    Beneficiary Signed as Witness
+                    Heir Signed as Witness
                   </h4>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    In a Hyderabad family dispute, a younger son signed as a witness while also being the main heir.
+                    In a Hyderabad family fight, a younger son signed as a witness while also being the main heir.
                     The court held that under Section 67, his share was void. Always choose two neutral witnesses who inherit nothing.
                   </p>
                 </div>
@@ -1343,14 +1343,14 @@ Date: __________________________________`;
                 <div className="bg-white p-5 rounded-2xl border border-[#172228]/10 shadow-xs space-y-2">
                   <div className="flex items-center gap-1.5 text-xs font-bold text-[#5F7E75]">
                     <MapPin className="w-3.5 h-3.5" />
-                    <span>Case 2: Visakhapatnam (Doctor Certificate Moat)</span>
+                    <span>Case 2: Visakhapatnam (Doctor Paper Moat)</span>
                   </div>
                   <h4 className="text-xs sm:text-sm font-bold text-[#172228]">
-                    Doctor Certificate Defeated Dementia Claim
+                    Doctor Paper Defeated Dementia Claim
                   </h4>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
                     In Visakhapatnam, sons challenged their father&apos;s Will claiming he had dementia.
-                    The daughter produced an MBBS doctor certificate issued on the registration date. The court upheld the Will.
+                    The daughter produced an MBBS doctor paper issued on the filing date. The court upheld the Will.
                   </p>
                 </div>
               </div>
@@ -1365,10 +1365,10 @@ Date: __________________________________`;
                 <span>డాక్యుమెంట్ చెక్‌లిస్ట్ • MANDATORY DOCUMENTS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                10. Sub-Registrar Document Checklist &amp; Doctor Certificate
+                10. SRO Paper Checklist &amp; Doctor Paper
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
-                Take these essential documents with you when you visit the Sub-Registrar Office:
+                Take these essential papers with you when you visit the SRO office:
               </p>
 
               <div className="bg-white p-5 sm:p-6 rounded-2xl border border-[#172228]/15 shadow-xs space-y-4">
@@ -1387,15 +1387,15 @@ Date: __________________________________`;
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Doctor mental fitness certificate signed by an MBBS doctor</span>
+                    <span>Doctor mental fitness paper signed by an MBBS doctor</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Original title deeds and recent Encumbrance Certificate (EC)</span>
+                    <span>Original title deeds and recent Encumbrance Paper (EC)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Recent passport size photos of the testator and witnesses</span>
+                    <span>Recent passport size photos of the Will maker and witnesses</span>
                   </div>
                 </div>
 
@@ -1403,7 +1403,7 @@ Date: __________________________________`;
                 <div className="pt-3 border-t border-[#172228]/10">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold text-[#C65378]">
-                      డాక్టర్ మెంటల్ ఫిట్‌నెస్ సర్టిఫికేట్ ఫార్మాట్ (Medical Certificate Draft)
+                      డాక్టర్ మెంటల్ ఫిట్‌నెస్ సర్టిఫికేట్ ఫార్మాట్ (Medical Paper Draft)
                     </span>
                     <button
                       onClick={copyDoctorCertToClipboard}
@@ -1429,10 +1429,10 @@ Date: __________________________________`;
                 <span>ఉచిత ఆన్‌లైన్ టూల్స్ • ESTATE PLANNING TOOLS</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                11. Contextual Succession Calculators &amp; Estate Planning Tools
+                11. Contextual Estate Tools &amp; Estate Planning Tools
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
-                Use our free legal tools to calculate taxes on inherited property or book professional Will registration:
+                Use our free legal tools to calculate taxes on inherited asset or book professional Will filing:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1445,10 +1445,10 @@ Date: __________________________________`;
                     <ArrowRight className="w-4 h-4 text-[#172228]/40 group-hover:text-[#C65378] group-hover:translate-x-1 transition-all" />
                   </div>
                   <h4 className="text-sm font-bold text-[#172228] group-hover:text-[#C65378] transition-colors">
-                    Inherited Property Capital Gains Calculator
+                    Inherited Asset Capital Gains Tool
                   </h4>
                   <p className="text-xs text-[#172228]/70 mt-1 leading-relaxed">
-                    Compare 12.5% flat tax with 20% indexation on selling inherited family property under Budget 2024 rules.
+                    Compare 12.5% flat tax with 20% indexation on selling inherited family asset under Budget 2024 rules.
                   </p>
                 </Link>
 
@@ -1461,10 +1461,10 @@ Date: __________________________________`;
                     <ArrowRight className="w-4 h-4 text-[#172228]/40 group-hover:text-[#5F7E75] group-hover:translate-x-1 transition-all" />
                   </div>
                   <h4 className="text-sm font-bold text-[#172228] group-hover:text-[#5F7E75] transition-colors">
-                    SRO Will Registration Legal Service
+                    SRO Will Filing Legal Service
                   </h4>
                   <p className="text-xs text-[#172228]/70 mt-1 leading-relaxed">
-                    Get end-to-end assistance from experienced advocates at Sub-Registrar Offices across Telangana and AP.
+                    Get end-to-end help from experienced lawyers at SRO Offices across Telangana and AP.
                   </p>
                 </Link>
               </div>
@@ -1479,10 +1479,10 @@ Date: __________________________________`;
                 <span>విశ్వసనీయత • LEGAL AUTHORITY</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
-                12. Legal Authority: Senior Succession Counsel Profile
+                12. Legal Office: Senior Estate Counsel Profile
               </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
-                All templates and guides on WillDrafting are verified by practicing succession lawyers:
+                All templates and guides on WillDrafting are checked by practicing estate lawyers:
               </p>
 
               <div className="bg-white p-5 sm:p-6 rounded-2xl border border-[#172228]/15 shadow-xs flex flex-col sm:flex-row items-center gap-5">
@@ -1490,18 +1490,18 @@ Date: __________________________________`;
                   AM
                 </div>
                 <div className="space-y-1.5 text-center sm:text-left">
-                  <h4 className="text-base font-bold text-[#172228]">Advocate Anuj Anand Malik</h4>
-                  <p className="text-xs text-[#C65378] font-bold">Senior Succession Counsel • AMA Legal Solutions</p>
+                  <h4 className="text-base font-bold text-[#172228]">Lawyer Anuj Anand Malik</h4>
+                  <p className="text-xs text-[#C65378] font-bold">Senior Estate Counsel • AMA Legal Solutions</p>
                   <p className="text-xs text-[#172228]/80 leading-relaxed">
-                    Over 15 years of experience in estate planning, Will drafting, and property dispute resolution.
-                    Guiding families across Hyderabad, Visakhapatnam, and Vijayawada on smooth asset transmission.
+                    Over 15 years of experience in estate planning, Will drafting, and asset fight resolution.
+                    Guiding families across Hyderabad, Visakhapatnam, and Vijayawada on smooth asset transfer.
                   </p>
                   <div className="pt-2">
                     <Link
                       href="/contact"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:underline"
                     >
-                      <span>వారసత్వ సలహా కొరకు సంప్రదించండి (Contact Succession Counsel)</span>
+                      <span>వారసత్వ సలహా కొరకు సంప్రదించండి (Contact Estate Counsel)</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1578,7 +1578,7 @@ Date: __________________________________`;
                 <div className="flex items-start gap-2">
                   <ExternalLink className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#172228]">The Registration Act, 1908:</span>
+                    <span className="font-bold text-[#172228]">The Filing Act, 1908:</span>
                     <p className="text-[#172228]/70">Sections 18(e), 31 (Private attendance at home), and 40 (Persons entitled to present Wills).</p>
                   </div>
                 </div>
@@ -1586,16 +1586,16 @@ Date: __________________________________`;
                 <div className="flex items-start gap-2">
                   <ExternalLink className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#172228]">Telangana Registration &amp; Stamps Department:</span>
-                    <p className="text-[#172228]/70">Official Portal: registration.telangana.gov.in &amp; Dharani Portal (dharani.telangana.gov.in).</p>
+                    <span className="font-bold text-[#172228]">Telangana Filing &amp; Stamps Office:</span>
+                    <p className="text-[#172228]/70">Official Portal: filing.telangana.gov.in &amp; Dharani Portal (dharani.telangana.gov.in).</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2">
                   <ExternalLink className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#172228]">Andhra Pradesh Registration &amp; Stamps (IGRS AP):</span>
-                    <p className="text-[#172228]/70">Official Portal: igrs.ap.gov.in (Market value search and Will registration appointment services).</p>
+                    <span className="font-bold text-[#172228]">Andhra Pradesh Filing &amp; Stamps (IGRS AP):</span>
+                    <p className="text-[#172228]/70">Official Portal: igrs.ap.gov.in (Market value search and Will filing appointment services).</p>
                   </div>
                 </div>
               </div>
@@ -1637,7 +1637,29 @@ Date: __________________________________`;
               సంక్లిష్టమైన కుటుంబ ఆస్తుల పంపకం మరియు ఎన్నారై స్థిరాస్తుల విషయంలో అర్హత కలిగిన న్యాయవాదిని సంప్రదించాల్సిందిగా
               సిఫార్సు చేయడమైనది.
             </div>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
         </div>
       </div>
     </div>

@@ -143,7 +143,7 @@ export default function KolkataLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kolkata: Registration & Probate Rules",
         description:
-          "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West.",
+          "Protect family and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and filing across West.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function KolkataLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kolkata - Estate Planning, SRO Registration & Calcutta HC Probate",
         description:
-          "Professional Will drafting, Dayabhaga ancestral asset guidance, Calcutta High Court probate compliance, and Sub-Registrar registration across.",
+          "Professional Will drafting, Dayabhaga family asset guidance, Calcutta High Court probate compliance, and SRO filing across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -256,14 +256,14 @@ export default function KolkataLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft, Register, and Probate a Will in Kolkata",
         description:
-          "Five clear steps to create a legally binding Will, register before the Sub-Registrar, and prepare for Calcutta High Court probate in West Bengal.",
+          "Five clear steps to create a legally binding Will, register before the SRO, and prepare for Calcutta High Court probate in West Bengal.",
         totalTime: "P4D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Catalog Assets Under Dayabhaga Rules",
-            text: "List your Kolkata properties including KMC flats, ancestral paras, Salt Lake leaseholds, bank accounts, and demat portfolios. Confirm sole ownership under Dayabhaga law.",
+            text: "List your Kolkata assets including KMC flats, family paras, Salt Lake leaseholds, bank accounts, and demat portfolios. Confirm sole ownership under Dayabhaga law.",
           },
           {
             "@type": "HowToStep",
@@ -275,13 +275,13 @@ export default function KolkataLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two adult independent witnesses who are not beneficiaries under the Will.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two adult independent witnesses who are not heirs under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book e-District West Bengal Appointment",
-            text: "Book an online appointment on the West Bengal Registration portal (wbregistration.gov.in) for the Registrar of Assurances or your district SRO.",
+            text: "Book an online appointment on the West Bengal Filing portal (wbregistration.gov.in) for the Registrar of Assurances or your district SRO.",
           },
           {
             "@type": "HowToStep",

@@ -39,14 +39,14 @@ import {
 } from "lucide-react";
 
 const TOC_ITEMS = [
-  { id: "executive-summary", label: "Executive Summary: HUF Succession" },
+  { id: "executive-summary", label: "Executive Summary: HUF Estate" },
   { id: "karta-death-huf-continuation", label: "1. What Happens When Karta Dies?" },
   { id: "who-becomes-new-karta", label: "2. Who Becomes the New Karta?" },
-  { id: "hsa-section-6-deemed-partition", label: "3. Section 6: Deemed Partition" },
-  { id: "can-karta-will-huf-property", label: "4. Can Karta Will HUF Property?" },
-  { id: "huf-vs-personal-property", label: "5. HUF vs Personal Property Matrix" },
+  { id: "hsa-section-6-deemed-partition", label: "3. Section 6: Deemed Split" },
+  { id: "can-karta-will-huf-property", label: "4. Can Karta Will HUF Asset?" },
+  { id: "huf-vs-personal-property", label: "5. HUF vs Personal Asset Matrix" },
   { id: "visual-flowchart-huf-succession", label: "6. Visual Blueprint & Flowchart" },
-  { id: "interactive-share-calculator", label: "7. Coparcenary Share Calculator" },
+  { id: "interactive-share-calculator", label: "7. Joint Share Tool" },
   { id: "tax-implications-and-kyc", label: "8. Tax & KYC Rules (Sec 171)" },
   { id: "step-by-step-karta-update-sop", label: "9. Step-by-Step Bank & PAN SOP" },
   { id: "common-huf-mistakes", label: "10. Fatal HUF Mistakes to Avoid" },
@@ -111,14 +111,14 @@ export default function HufPropertyAfterDeathOfKartaClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [showImageModal, setShowImageModal] = useState<boolean>(false);
 
-  // Interactive Share Calculator State
+  // Free Share Tool State
   const [calcEstateValueLakhs, setCalcEstateValueLakhs] = useState<number>(200); // 2 Crore default
   const [calcHasWife, setCalcHasWife] = useState<boolean>(true);
   const [calcSonsCount, setCalcSonsCount] = useState<number>(1);
   const [calcDaughtersCount, setCalcDaughtersCount] = useState<number>(1);
   const [calcHasWill, setCalcHasWill] = useState<boolean>(false);
 
-  // Checklist interactive state
+  // Checklist free state
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({
     "check-1": true,
     "check-2": true,
@@ -237,17 +237,17 @@ export default function HufPropertyAfterDeathOfKartaClient() {
           {/* Category Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold tracking-wide text-rose-200 mb-6">
             <Landmark className="w-3.5 h-3.5 text-[#C65378]" />
-            <span>Family Rights &amp; HUF Succession Law</span>
+            <span>Family Rights &amp; HUF Estate Law</span>
           </div>
 
           {/* H1 Heading */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            HUF Property After Death of Karta: Succession &amp; Rights
+            HUF Asset After Death of Karta: Estate &amp; Rights
           </h1>
 
           {/* Subtitle */}
           <p className="text-sm sm:text-base md:text-lg text-white/95 max-w-3xl mx-auto leading-relaxed mb-8">
-            Understand who becomes the new Karta, how deemed partition works under Section 6, why the Karta can Will his coparcenary share under Section 30, and how to protect family assets.
+            Understand who becomes the new Karta, how deemed split works under Section 6, why the Karta can Will his joint share under Section 30, and how to protect family assets.
           </p>
 
           {/* Hero Action Buttons */}
@@ -264,7 +264,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm transition-all"
             >
               <Calculator className="w-4 h-4 text-rose-300" />
-              <span>Open Succession Calculator</span>
+              <span>Open Estate Tool</span>
             </Link>
           </div>
         </div>
@@ -279,19 +279,19 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <div className="p-2">
               <p className="text-xl sm:text-2xl font-black text-[#172228]">100%</p>
               <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
-                Will Freedom for Coparcenary Share (Sec 30)
+                Will Freedom for Joint Share (Sec 30)
               </p>
             </div>
             <div className="p-2">
               <p className="text-xl sm:text-2xl font-black text-[#172228]">2005</p>
               <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
-                Equal Coparcenary for Daughters (HSA Sec 6)
+                Equal Joint for Daughters (HSA Sec 6)
               </p>
             </div>
             <div className="p-2">
               <p className="text-xl sm:text-2xl font-black text-[#172228]">₹0 Tax</p>
               <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
-                Capital Gains on HUF Partition (Sec 47(i))
+                Capital Gains on HUF Split (Sec 47(i))
               </p>
             </div>
             <div className="p-2">
@@ -342,7 +342,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
 
               <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-slate-500">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75] shrink-0" />
-                <span>Statutory compliance: HSA 1956 &amp; ITA 1961</span>
+                <span>Legal compliance: HSA 1956 &amp; ITA 1961</span>
               </div>
             </div>
           </aside>
@@ -364,7 +364,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 </span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
-                Executive Summary: HUF Succession After Karta Death
+                Executive Summary: HUF Estate After Karta Death
               </h2>
               <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
                 <div className="flex items-start gap-2.5">
@@ -382,19 +382,19 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Can the Karta Will HUF Property?</strong> The Karta cannot will away the entire HUF property. However, under Section 30 of the Hindu Succession Act, he can validly bequeath his own undivided coparcenary share.
+                    <strong>Can the Karta Will HUF Asset?</strong> The Karta cannot will away the entire HUF asset. However, under Section 30 of the Hindu Succession Act, he can validly bequeath his own undivided joint share.
                   </p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Section 6 Deemed Partition:</strong> To identify the deceased Karta&apos;s share, the law presumes a notional partition occurred right before death. His separate share then passes to his heirs under a Will or intestacy rules.
+                    <strong>Section 6 Deemed Split:</strong> To identify the deceased Karta&apos;s share, the law presumes a notional split occurred right before death. His separate share then passes to his heirs under a Will or intestacy rules.
                   </p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Zero Capital Gains on Partition:</strong> Under Section 47(i) of the Income Tax Act, physical distribution of assets during an HUF partition attracts zero capital gains tax.
+                    <strong>Zero Capital Gains on Split:</strong> Under Section 47(i) of the Income Tax Act, physical split of assets during an HUF split attracts zero capital gains tax.
                   </p>
                 </div>
               </div>
@@ -410,7 +410,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 1. What Happens to HUF When the Karta Passes Away?
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                When the head of an Indian joint family passes away, grieving families often worry that the Hindu Undivided Family (HUF) is automatically terminated. Many fear that bank accounts will freeze permanently, businesses will close, or properties will enter legal limbo.
+                When the head of an Indian joint family passes away, grieving families often worry that the Hindu Undivided Family (HUF) is automatically terminated. Many fear that bank accounts will freeze permanently, businesses will close, or assets will enter legal limbo.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Under Hindu law, an HUF is an ongoing collective institution. The death of the Karta changes the manager, not the existence of the entity. The family unit continues uninterrupted with its assets, liabilities, tenant leases, and bank accounts.
@@ -421,11 +421,11 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   Coparceners vs Members: Know the Legal Difference
                 </h3>
                 <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                  Every coparcener is a member of the HUF, but not every member is a coparcener. Coparceners (sons and daughters by birth) possess an undivided birthright in ancestral property and can demand partition. Members who join by marriage (such as wives and daughters-in-law) possess rights to maintenance and a partition share, but cannot claim ancestral birthright or initiate partition on their own.
+                  Every coparcener is a member of the HUF, but not every member is a coparcener. Coparceners (sons and daughters by birth) possess an undivided birthright in family asset and can demand split. Members who join by marriage (such as wives and daughters-in-law) possess rights to maintenance and a split share, but cannot claim family birthright or initiate split on their own.
                 </p>
               </div>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Because coparceners acquire their rights by birth, the demise of the Karta merely shifts the administrative reins to the next generation without disrupting property ownership.
+                Because coparceners acquire their rights by birth, the demise of the Karta merely shifts the office reins to the next generation without disrupting asset ownership.
               </p>
             </section>
 
@@ -433,7 +433,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <section id="who-becomes-new-karta" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Gavel className="w-4 h-4" />
-                <span>Succession to Kartaship</span>
+                <span>Estate to Kartaship</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Who Becomes the New Karta: Rules &amp; Precedents
@@ -478,23 +478,23 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <section id="hsa-section-6-deemed-partition" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Calculator className="w-4 h-4" />
-                <span>Statutory Asset Division</span>
+                <span>Legal Asset Division</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                3. HSA Section 6: Deemed Partition on Karta Death
+                3. HSA Section 6: Deemed Split on Karta Death
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Prior to 2005, an undivided coparcenary share devolved by the doctrine of survivorship (passing only to surviving male coparceners). Following the landmark 2005 amendment to the Hindu Succession Act, Section 6(3) abolished pure survivorship when female relatives or daughters survive.
+                Prior to 2005, an undivided joint share devolved by the doctrine of survivorship (passing only to surviving male coparceners). Following the landmark 2005 amendment to the Hindu Succession Act, Section 6(3) abolished pure survivorship when female relatives or daughters survive.
               </p>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Instead, the law applies the doctrine of <strong>Notional or Deemed Partition</strong>, first formulated by the Supreme Court in <em>Gurupad Khandappa Magdum v. Hirabai Khandappa Magdum (1978)</em>.
+                Instead, the law applies the doctrine of <strong>Notional or Deemed Split</strong>, first formulated by the Supreme Court in <em>Gurupad Khandappa Magdum v. Hirabai Khandappa Magdum (1978)</em>.
               </p>
 
               {/* Data Table */}
               <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-xs my-4">
                 <div className="bg-slate-900 text-white p-4">
                   <h3 className="text-sm sm:text-base font-bold flex items-center justify-between">
-                    <span>Representative Deemed Partition Calculation</span>
+                    <span>Agent Deemed Split Calculation</span>
                     <span className="text-xs text-rose-300 font-mono">Total HUF Estate: ₹3 Crore</span>
                   </h3>
                   <p className="text-xs text-slate-300 mt-1">
@@ -506,8 +506,8 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     <thead className="bg-slate-100 text-slate-700 border-b border-slate-200 font-bold">
                       <tr>
                         <th className="p-3">Family Member</th>
-                        <th className="p-3">Notional Partition Share</th>
-                        <th className="p-3">Inheritance from Karta</th>
+                        <th className="p-3">Notional Split Share</th>
+                        <th className="p-3">Estate from Karta</th>
                         <th className="p-3 text-right">Net Share Value</th>
                       </tr>
                     </thead>
@@ -537,7 +537,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                         <td className="p-3 text-right font-mono font-bold text-emerald-700">₹1,00,00,000</td>
                       </tr>
                       <tr className="bg-rose-50/50 font-bold text-slate-900">
-                        <td className="p-3" colSpan={3}>Total Family Distribution</td>
+                        <td className="p-3" colSpan={3}>Total Family Split</td>
                         <td className="p-3 text-right font-mono text-[#C65378]">₹3,00,00,000 (100%)</td>
                       </tr>
                     </tbody>
@@ -545,7 +545,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 </div>
               </div>
               <p className="text-xs text-slate-500 italic">
-                *Note: Under Mitakshara law, when a partition occurs between a father and sons/daughters, the wife receives a share equal to a child. In deemed partition, she retains her 25% share plus inherits an equal 1/3rd portion of the Karta&apos;s personal 25% share.
+                *Note: Under Mitakshara law, when a split occurs between a father and sons/daughters, the wife receives a share equal to a child. In deemed split, she retains her 25% share plus inherits an equal 1/3rd portion of the Karta&apos;s personal 25% share.
               </p>
             </section>
 
@@ -553,31 +553,31 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <section id="can-karta-will-huf-property" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileCheck className="w-4 h-4" />
-                <span>Testamentary Freedom Under HSA Sec 30</span>
+                <span>Will Freedom Under HSA Sec 30</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                4. Can the Karta Will HUF Property Under Section 30?
+                4. Can the Karta Will HUF Asset Under Section 30?
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                This is one of the most frequently asked questions in Indian estate planning. Many patriarchs mistakenly draft Wills stating: <em>&quot;I give our entire ancestral family home to my younger son.&quot;</em>
+                This is one of the most frequently asked questions in Indian estate planning. Many patriarchs mistakenly draft Wills stating: <em>&quot;I give our entire family family home to my younger son.&quot;</em>
               </p>
               <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-950 text-xs md:text-sm leading-relaxed space-y-2">
                 <p className="font-extrabold text-rose-900 flex items-center gap-2">
                   <AlertTriangle className="w-4 h-4 text-rose-600" />
-                  The Legal Limitation: Entire HUF vs Coparcenary Share
+                  The Legal Limitation: Entire HUF vs Joint Share
                 </p>
                 <p>
-                  The Karta does <strong>NOT</strong> own the entire HUF property. It belongs collectively to all coparceners. Any clause in a Will attempting to bequeath other coparceners&apos; shares is void from the beginning.
+                  The Karta does <strong>NOT</strong> own the entire HUF asset. It belongs collectively to all coparceners. Any clause in a Will attempting to bequeath other coparceners&apos; shares is void from the beginning.
                 </p>
               </div>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 However, Section 30 of the Hindu Succession Act provides a vital exception:
               </p>
               <blockquote className="p-4 rounded-xl bg-slate-50 border-l-4 border-l-[#5F7E75] text-slate-800 text-xs md:text-sm italic leading-relaxed">
-                &quot;Any Hindu may dispose of by will or other testamentary disposition any property which is capable of being so disposed of by him... The undivided interest of a Hindu in Mitakshara coparcenary property shall be deemed to be property capable of being disposed of by will.&quot;
+                &quot;Any Hindu may dispose of by will or other Will gift any asset which is capable of being so disposed of by him... The undivided interest of a Hindu in Mitakshara joint asset shall be deemed to be asset capable of being disposed of by will.&quot;
               </blockquote>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                <strong>The Crucial Takeaway:</strong> The Karta can legally bequeath his own deemed coparcenary share (e.g. his 25% share) to whoever he chooses, such as his wife, daughter, or a charity. If he leaves no Will, that share automatically splits equally among his Class I legal heirs under Section 8.
+                <strong>The Crucial Takeaway:</strong> The Karta can legally bequeath his own deemed joint share (e.g. his 25% share) to whoever he chooses, such as his wife, daughter, or a charity. If he leaves no Will, that share automatically splits equally among his Class I legal heirs under Section 8.
               </p>
             </section>
 
@@ -588,10 +588,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Asset Classification</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                5. HUF Property vs Karta Personal Assets Comparison
+                5. HUF Asset vs Karta Personal Assets Comparison
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Before drafting a Will or distributing assets after a death, family members must strictly segregate HUF joint assets from the Karta&apos;s individual self-acquired estate.
+                Before drafting a Will or distributing assets after a death, family members must strictly segregate HUF joint assets from the Karta&apos;s single self-acquired estate.
               </p>
 
               {/* Comparison Matrix Table */}
@@ -601,31 +601,31 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     <thead className="bg-[#172228] text-white">
                       <tr>
                         <th className="p-3.5">Parameter</th>
-                        <th className="p-3.5">HUF Coparcenary Property</th>
-                        <th className="p-3.5">Karta&apos;s Personal Property</th>
+                        <th className="p-3.5">HUF Joint Asset</th>
+                        <th className="p-3.5">Karta&apos;s Personal Asset</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 bg-white">
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Source of Acquisition</td>
-                        <td className="p-3 text-slate-700">Ancestral line (3 paternal generations) or blended into common stock</td>
+                        <td className="p-3 text-slate-700">Family line (3 paternal generations) or blended into common stock</td>
                         <td className="p-3 text-slate-700">Personal salary, professional fees, business without HUF nucleus, or gifts</td>
                       </tr>
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Ownership Type</td>
                         <td className="p-3">
                           <span className="px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold text-[11px]">
-                            Collective Coparcenary
+                            Collective Joint
                           </span>
                         </td>
                         <td className="p-3">
                           <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold text-[11px]">
-                            100% Sole Individual
+                            100% Sole Single
                           </span>
                         </td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">Testamentary Power (Will)</td>
+                        <td className="p-3 font-bold text-slate-900">Will Power (Will)</td>
                         <td className="p-3 text-rose-700 font-semibold">
                           Only his deemed undivided share (Sec 30)
                         </td>
@@ -634,14 +634,14 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                         </td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">Partition Demand</td>
-                        <td className="p-3 text-slate-700">Any coparcener can demand partition at any time</td>
-                        <td className="p-3 text-slate-700">Children cannot demand partition during his lifetime</td>
+                        <td className="p-3 font-bold text-slate-900">Split Demand</td>
+                        <td className="p-3 text-slate-700">Any coparcener can demand split at any time</td>
+                        <td className="p-3 text-slate-700">Children cannot demand split during his lifetime</td>
                       </tr>
                       <tr>
                         <td className="p-3 font-bold text-slate-900">Income Tax Assessment</td>
                         <td className="p-3 text-slate-700">Assessed separately under HUF PAN with basic exemption</td>
-                        <td className="p-3 text-slate-700">Assessed under individual PAN</td>
+                        <td className="p-3 text-slate-700">Assessed under single PAN</td>
                       </tr>
                     </tbody>
                   </table>
@@ -656,10 +656,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Visual Roadmap &amp; Flow Diagram</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                6. Visual Flowchart: HUF Assets &amp; Karta Succession
+                6. Visual Flowchart: HUF Assets &amp; Karta Estate
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Review this visual blueprint illustrating how Karta succession, Section 6 deemed partition, and Section 30 testamentary bequests interact when the Karta passes away.
+                Review this visual blueprint illustrating how Karta estate, Section 6 deemed split, and Section 30 Will bequests interact when the Karta passes away.
               </p>
 
               {/* Infographic Image Card */}
@@ -685,7 +685,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mt-3 pt-3 border-t border-slate-100 text-xs text-slate-600">
                   <p>
-                    <strong>Figure 1.1:</strong> HUF Property, New Karta Succession &amp; HSA Sections 6 and 30 Framework.
+                    <strong>Figure 1.1:</strong> HUF Asset, New Karta Estate &amp; HSA Sections 6 and 30 Framework.
                   </p>
                   <button
                     onClick={() => setShowImageModal(true)}
@@ -706,7 +706,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Demise of the Karta</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      HUF entity remains alive. Family secures original death certificate and initiates bank and tax portal transitions.
+                      HUF entity remains alive. Family secures original death paper and initiates bank and tax portal transitions.
                     </p>
                   </div>
                 </div>
@@ -728,9 +728,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">Section 6 Deemed Partition Ascertainment</h3>
+                    <h3 className="text-sm font-bold text-slate-900">Section 6 Deemed Split Ascertainment</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Karta&apos;s fractional share is isolated as if a partition occurred immediately prior to his death.
+                      Karta&apos;s fractional share is isolated as if a split occurred right away prior to his death.
                     </p>
                   </div>
                 </div>
@@ -740,9 +740,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     4
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">Distribution of Deemed Share: Will vs Intestacy</h3>
+                    <h3 className="text-sm font-bold text-slate-900">Split of Deemed Share: Will vs Intestacy</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      If Karta wrote a valid Will under Section 30, his share passes to named beneficiaries. If no Will exists, it splits equally among Class I legal heirs.
+                      If Karta wrote a valid Will under Section 30, his share passes to named heirs. If no Will exists, it splits equally among Class I legal heirs.
                     </p>
                   </div>
                 </div>
@@ -752,9 +752,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     5
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">Family Choice: Continuation or Total Partition</h3>
+                    <h3 className="text-sm font-bold text-slate-900">Family Choice: Continuation or Total Split</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Family can continue operating the HUF under the new Karta, or execute a registered Partition Deed under Section 171 of the Income Tax Act.
+                      Family can continue operating the HUF under the new Karta, or execute a filed Split Deed under Section 171 of the Income Tax Act.
                     </p>
                   </div>
                 </div>
@@ -768,10 +768,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Simulation Tool</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                7. Interactive Coparcenary Share &amp; Partition Tool
+                7. Free Joint Share &amp; Split Tool
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Estimate how deemed partition divides your family&apos;s HUF assets upon the death of the Karta based on your exact family configuration.
+                Estimate how deemed split divides your family&apos;s HUF assets upon the death of the Karta based on your exact family configuration.
               </p>
 
               {/* Interactive Widget Box */}
@@ -841,7 +841,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                             : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                         }`}
                       >
-                        No Will (Intestate)
+                        No Will (No-Will)
                       </button>
                       <button
                         onClick={() => setCalcHasWill(true)}
@@ -907,7 +907,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 border-b border-slate-200 pb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Calculated Deemed Partition Breakdown
+                      Calculated Deemed Split Breakdown
                     </span>
                     <span className="text-xs font-bold text-slate-800">
                       Partition Units: {calcResults.partitionUnits} equal shares
@@ -934,7 +934,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                           {formatLakhs(calcResults.finalWifeTotal)}
                         </p>
                         <p className="text-[10px] text-slate-500 mt-1">
-                          Notional share + inheritance
+                          Notional share + estate
                         </p>
                       </div>
                     )}
@@ -945,21 +945,21 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                         {formatLakhs(calcResults.finalSonTotal)}
                       </p>
                       <p className="text-[10px] text-slate-500 mt-1">
-                        Equal birthright + inheritance
+                        Equal birthright + estate
                       </p>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2 text-xs">
                     <p className="text-slate-600">
-                      Need detailed succession calculation covering self-acquired property and family debts?
+                      Need detailed estate calculation covering self-acquired asset and family debts?
                     </p>
                     <Link
                       href="/tools/succession-calculator"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#172228] text-white font-bold shrink-0 hover:bg-slate-800 transition-colors"
                     >
                       <Calculator className="w-3.5 h-3.5 text-rose-300" />
-                      <span>Full Succession Calculator</span>
+                      <span>Full Estate Tool</span>
                     </Link>
                   </div>
                 </div>
@@ -985,9 +985,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     <CheckCircle2 className="w-4 h-4" />
                     <span>Section 47(i) Exemption</span>
                   </div>
-                  <h3 className="text-sm font-extrabold text-slate-900">Zero Capital Gains on Partition</h3>
+                  <h3 className="text-sm font-extrabold text-slate-900">Zero Capital Gains on Split</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 47(i), any distribution of capital assets during a total partition of an HUF is not regarded as a transfer. No capital gains tax is payable when physical assets are allotted to coparceners.
+                    Under Section 47(i), any split of capital assets during a total split of an HUF is not regarded as a transfer. No capital gains tax is payable when physical assets are allotted to coparceners.
                   </p>
                 </div>
 
@@ -998,13 +998,13 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   </div>
                   <h3 className="text-sm font-extrabold text-slate-900">No Partial Partitions Recognized</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Partial partitions effected after December 31, 1978 are not recognized for tax purposes. To stop HUF tax assessments, the family must claim a total partition before the Assessing Officer under Section 171.
+                    Partial partitions effected after December 31, 1978 are not recognized for tax purposes. To stop HUF tax assessments, the family must claim a total split before the Assessing Officer under Section 171.
                   </p>
                 </div>
               </div>
 
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                <strong>Cost of Acquisition (Section 49(1)):</strong> When a coparcener subsequently sells an asset received from an HUF partition, the cost of acquisition is deemed to be the cost at which the HUF originally acquired the property. The holding period also includes the years the property was held by the HUF.
+                <strong>Cost of Acquisition (Section 49(1)):</strong> When a coparcener then sells an asset received from an HUF split, the cost of acquisition is deemed to be the cost at which the HUF originally acquired the asset. The holding period also includes the years the asset was held by the HUF.
               </p>
             </section>
 
@@ -1018,7 +1018,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 9. Step-by-Step SOP: Updating Karta Records &amp; Bank
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Follow this 6-stage standard operating procedure to update institutions, bank accounts, and tax records smoothly following the Karta&apos;s death:
+                Follow this 6-stage standard operating step to update institutions, bank accounts, and tax records smoothly following the Karta&apos;s death:
               </p>
 
               <div className="space-y-3">
@@ -1027,9 +1027,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     1
                   </span>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">Stage 1: Secure Death Certificate</h3>
+                    <h3 className="text-sm font-bold text-slate-900">Stage 1: Secure Death Paper</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Obtain multiple certified copies of the deceased Karta&apos;s municipal death certificate. Ensure name spelling matches the HUF deed and PAN records exactly.
+                      Obtain multiple certified copies of the deceased Karta&apos;s city death paper. Ensure name spelling matches the HUF deed and PAN records exactly.
                     </p>
                   </div>
                 </div>
@@ -1041,7 +1041,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Stage 2: Execute Family Declaration</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Draft a Declaration of Succession to Kartaship. Have all adult surviving coparceners and members sign, verifying the family tree and the new Karta&apos;s seniority.
+                      Draft a Declaration of Estate to Kartaship. Have all adult surviving coparceners and members sign, verifying the family tree and the new Karta&apos;s seniority.
                     </p>
                   </div>
                 </div>
@@ -1053,7 +1053,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Stage 3: Update HUF Bank Accounts</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Submit the death certificate, family declaration, new Karta&apos;s KYC (Aadhaar &amp; PAN), and a standard Letter of Indemnity to change authorized bank account signing powers.
+                      Submit the death paper, family declaration, new Karta&apos;s KYC (Aadhaar &amp; PAN), and a standard Letter of Indemnity to change authorized bank account signing powers.
                     </p>
                   </div>
                 </div>
@@ -1065,7 +1065,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Stage 4: Update Demat &amp; Mutual Funds</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Approach the Depository Participant (DP) for demat shares and mutual fund RTAs with form Annexure L, changing the registered Karta profile without liquidating investments.
+                      Approach the Depository Participant (DP) for demat shares and mutual fund RTAs with form Annexure L, changing the filed Karta profile without liquidating investments.
                     </p>
                   </div>
                 </div>
@@ -1077,7 +1077,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Stage 5: Update Income Tax e-Filing Profile</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Log into the HUF&apos;s e-filing portal account. Go to &apos;Register as Legal Heir&apos; / update Karta details, attaching the death certificate and consent letter.
+                      Log into the HUF&apos;s e-filing portal account. Go to &apos;Register as Legal Heir&apos; / update Karta details, attaching the death paper and consent letter.
                     </p>
                   </div>
                 </div>
@@ -1087,9 +1087,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     6
                   </span>
                   <div>
-                    <h3 className="text-sm font-bold text-slate-900">Stage 6: Property Mutation (If Partitioning)</h3>
+                    <h3 className="text-sm font-bold text-slate-900">Stage 6: Asset Name Change (If Partitioning)</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      If the family decides on a total partition, register the partition deed at the Sub-Registrar Office and apply for municipal revenue mutation in each coparcener&apos;s name.
+                      If the family decides on a total split, register the split deed at the SRO office and apply for city revenue name change in each coparcener&apos;s name.
                     </p>
                   </div>
                 </div>
@@ -1103,20 +1103,20 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Risk Prevention</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                10. Common HUF Property Mistakes Families Must Avoid
+                10. Common HUF Asset Mistakes Families Must Avoid
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                During stressful bereavement, families frequently commit avoidable procedural errors that trigger tax penalties or years of bitter partition litigation.
+                During stressful bereavement, families frequently commit avoidable procedural errors that trigger tax penalties or years of bitter split court fights.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-white border border-rose-100 shadow-xs space-y-1.5">
                   <h3 className="text-sm font-bold text-rose-900 flex items-center gap-2">
                     <X className="w-4 h-4 text-rose-600" />
-                    Willing Entire Ancestral Assets
+                    Willing Entire Family Assets
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testators often bequeath an entire ancestral house to a single child. The Will is immediately challenged in court because other coparceners have unalienable birthrights.
+                    Will makers often bequeath an entire family house to a single child. The Will is right away challenged in court because other coparceners have unalienable birthrights.
                   </p>
                 </div>
 
@@ -1126,7 +1126,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     Excluding Married Daughters
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Following the Supreme Court&apos;s ruling in <em>Vineeta Sharma (2020)</em>, married daughters are equal coparceners by birth. Excluding them from succession or partition invalidates the settlement.
+                    Following the Supreme Court&apos;s ruling in <em>Vineeta Sharma (2020)</em>, married daughters are equal coparceners by birth. Excluding them from estate or split invalidates the deal.
                   </p>
                 </div>
 
@@ -1184,18 +1184,18 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   </div>
                   <h3 className="text-sm font-extrabold text-slate-900">Mother as Natural Guardian Manager</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A Karta passes away leaving two children aged 10 and 14. The surviving mother acts as legal guardian and manager of the HUF property until the 14-year-old turns 18 and becomes eligible to assume Kartaship.
+                    A Karta passes away leaving two children aged 10 and 14. The surviving mother acts as legal guardian and manager of the HUF asset until the 14-year-old turns 18 and becomes eligible to assume Kartaship.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-amber-700">
                     <Scale className="w-4 h-4" />
-                    <span className="text-xs font-bold uppercase">Scenario C: One Child Demands Partition</span>
+                    <span className="text-xs font-bold uppercase">Scenario C: One Child Demands Split</span>
                   </div>
-                  <h3 className="text-sm font-extrabold text-slate-900">Right to Partition is Absolute</h3>
+                  <h3 className="text-sm font-extrabold text-slate-900">Right to Split is Absolute</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    If an adult son or daughter requests a partition, other coparceners cannot legally block it. A registered partition deed must be drawn up dividing assets according to deemed partition shares.
+                    If an adult son or daughter requests a split, other coparceners cannot legally block it. A filed split deed must be drawn up dividing assets according to deemed split shares.
                   </p>
                 </div>
 
@@ -1204,7 +1204,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     <FileCheck className="w-4 h-4" />
                     <span className="text-xs font-bold uppercase">Scenario D: Karta Wills Share to Wife</span>
                   </div>
-                  <h3 className="text-sm font-extrabold text-slate-900">Protected Testamentary Allocation</h3>
+                  <h3 className="text-sm font-extrabold text-slate-900">Protected Will Allocation</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     The Karta writes a Will bequeathing his personal 25% deemed share exclusively to his wife for her financial security. Under Section 30, this bequest is valid and cannot be challenged by the children.
                   </p>
@@ -1219,22 +1219,22 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Drafting Strategy</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                12. How to Handle HUF Property in Your Last Will
+                12. How to Handle HUF Asset in Your Last Will
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                When drafting a Will in India, precision in language prevents family disputes. Here is the recommended clause structure when addressing an undivided coparcenary interest:
+                When drafting a Will in India, precision in language prevents family fights. Here is the recommended clause structure when addressing an undivided joint interest:
               </p>
 
               <div className="p-4 rounded-xl bg-slate-900 text-slate-100 font-mono text-xs leading-relaxed space-y-3">
                 <div className="flex items-center justify-between text-rose-300 font-sans font-bold text-xs pb-2 border-b border-slate-800">
-                  <span>Standard Coparcenary Bequest Clause</span>
+                  <span>Standard Joint Bequest Clause</span>
                   <span>HSA Section 30 Compliant</span>
                 </div>
                 <p>
-                  &quot;I declare that I hold an undivided coparcenary share in the [Family Name] HUF. Under Section 30 of the Hindu Succession Act, 1956, I hereby bequeath my entire undivided coparcenary share, right, title, and interest in the said HUF, as ascertainable under Section 6 of the said Act, absolutely to my [Spouse/Daughter/Son/Beneficiary Name].
+                  &quot;I declare that I hold an undivided joint share in the [Family Name] HUF. Under Section 30 of the Hindu Succession Act, 1956, I hereby bequeath my entire undivided joint share, right, title, and interest in the said HUF, as ascertainable under Section 6 of the said Act, absolutely to my [Spouse/Daughter/Son/Heir Name].
                 </p>
                 <p>
-                  I further clarify that this bequest is restricted solely to my undivided fractional entitlement, and does not alter the independent coparcenary shares of my surviving coparceners.&quot;
+                  I further clarify that this bequest is restricted solely to my undivided fractional entitlement, and does not alter the independent joint shares of my surviving coparceners.&quot;
                 </p>
               </div>
 
@@ -1242,10 +1242,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
               <div className="p-5 rounded-2xl bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="space-y-1 text-center sm:text-left">
                   <h3 className="text-base font-extrabold text-slate-900">
-                    Protect Your Family From Costly Partition Disputes
+                    Protect Your Family From Costly Split Fights
                   </h3>
                   <p className="text-xs text-slate-600">
-                    Create a lawyer-verified Will clearly distinguishing personal property from your HUF share in 15 minutes.
+                    Create a lawyer-checked Will clearly distinguishing personal asset from your HUF share in 15 minutes.
                   </p>
                 </div>
                 <button
@@ -1262,13 +1262,13 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <section id="huf-audit-checklist" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileCheck className="w-4 h-4" />
-                <span>Interactive Audit Protocol</span>
+                <span>Free Audit Protocol</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 13. Post-Death HUF Legal &amp; Estate Audit Checklist
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Use this interactive verification checklist to ensure your family fulfills all statutory obligations under the Hindu Succession Act and Income Tax Act.
+                Use this free check checklist to ensure your family fulfills all legal obligations under the Hindu Succession Act and Income Tax Act.
               </p>
 
               <div className="rounded-2xl bg-white border border-slate-200/80 p-5 shadow-xs space-y-4">
@@ -1298,7 +1298,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   {[
                     {
                       id: "check-1",
-                      label: "Obtain original Municipal Death Certificate of the Karta with verified name spelling.",
+                      label: "Obtain original City Death Paper of the Karta with checked name spelling.",
                     },
                     {
                       id: "check-2",
@@ -1318,7 +1318,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     },
                     {
                       id: "check-6",
-                      label: "Segregate personal self-acquired properties from ancestral coparcenary assets.",
+                      label: "Segregate personal self-acquired assets from family joint assets.",
                     },
                   ].map((item) => (
                     <label
@@ -1347,29 +1347,29 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span>Direct Answers</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                14. Frequently Asked Questions: HUF Karta Succession
+                14. Frequently Asked Questions: HUF Karta Estate
               </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Find clear answers to everyday questions regarding HUF assets, partition, and succession rights after the Karta&apos;s death:
+                Find clear answers to everyday questions regarding HUF assets, split, and estate rights after the Karta&apos;s death:
               </p>
 
               <div className="space-y-3">
                 {[
                   {
                     q: "Does an HUF automatically dissolve when the Karta dies?",
-                    a: "No, an HUF does not dissolve automatically upon the death of the Karta. The HUF continues to exist as a separate legal and tax entity. The management naturally passes to the next senior coparcener, unless the surviving coparceners choose to carry out a full partition of assets.",
+                    a: "No, an HUF does not dissolve automatically upon the death of the Karta. The HUF continues to exist as a separate legal and tax entity. The management naturally passes to the next senior coparcener, unless the surviving coparceners choose to carry out a full split of assets.",
                   },
                   {
                     q: "Who becomes the new Karta after the death of the father or existing Karta?",
                     a: "By law, the senior-most surviving coparcener automatically becomes the new Karta. This can be the eldest son or the eldest daughter. In Sujata Sharma v. Manu Gupta (2015), the Delhi High Court confirmed that the eldest daughter can legally become the Karta of an HUF.",
                   },
                   {
-                    q: "Can the Karta give away the entire HUF property in his Will?",
-                    a: "No. The Karta cannot will away the entire HUF property because it belongs collectively to all coparceners. However, under Section 30 of the Hindu Succession Act, 1956, the Karta has full legal power to bequeath his own undivided coparcenary share through a Will.",
+                    q: "Can the Karta give away the entire HUF asset in his Will?",
+                    a: "No. The Karta cannot will away the entire HUF asset because it belongs collectively to all coparceners. However, under Section 30 of the Hindu Succession Act, 1956, the Karta has full legal power to bequeath his own undivided joint share through a Will.",
                   },
                   {
-                    q: "What is deemed or notional partition under Section 6 of the Hindu Succession Act?",
-                    a: "Under Section 6(3) of the Act, when a coparcener dies, the law calculates his share by assuming a notional partition took place immediately before his death. The share that would have been allotted to him in that partition becomes his personal estate, which passes according to his Will or statutory inheritance rules.",
+                    q: "What is deemed or notional split under Section 6 of the Hindu Succession Act?",
+                    a: "Under Section 6(3) of the Act, when a coparcener dies, the law calculates his share by assuming a notional split took place right away before his death. The share that would have been allotted to him in that split becomes his personal estate, which passes according to his Will or legal estate rules.",
                   },
                   {
                     q: "Can an eldest daughter become the Karta of an HUF?",
@@ -1377,23 +1377,23 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   },
                   {
                     q: "What happens if all surviving coparceners are minors?",
-                    a: "If all surviving coparceners are minors, the surviving mother can act as the natural guardian and legal manager of the HUF property on behalf of the minors until the eldest coparcener attains majority. This principle was upheld by the Supreme Court in CIT v. Laxmi Narayan Bhadani.",
+                    a: "If all surviving coparceners are minors, the surviving mother can act as the natural guardian and legal manager of the HUF asset on behalf of the minors until the eldest coparcener attains majority. This principle was upheld by the Supreme Court in CIT v. Laxmi Narayan Bhadani.",
                   },
                   {
-                    q: "Does partition of HUF property attract capital gains tax in India?",
-                    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets on the total or partial partition of an HUF is not regarded as a transfer. Therefore, no capital gains tax is payable at the time of HUF asset distribution.",
+                    q: "Does split of HUF asset attract capital gains tax in India?",
+                    a: "No. Under Section 47(i) of the Income Tax Act, 1961, any split of capital assets on the total or partial split of an HUF is not regarded as a transfer. Therefore, no capital gains tax is payable at the time of HUF asset split.",
                   },
                   {
-                    q: "Are partial partitions of an HUF recognized by the Income Tax Department?",
-                    a: "No. Under Section 171(9) of the Income Tax Act, partial partitions effected after December 31, 1978, are not recognized for tax purposes. For income tax assessment, only a full (total) partition is recognized, requiring an inquiry and order by the Assessing Officer.",
+                    q: "Are partial partitions of an HUF recognized by the Income Tax Office?",
+                    a: "No. Under Section 171(9) of the Income Tax Act, partial partitions effected after December 31, 1978, are not recognized for tax purposes. For income tax assessment, only a full (total) split is recognized, requiring an inquiry and order by the Assessing Officer.",
                   },
                   {
-                    q: "How should an individual mention their HUF share in their personal Will?",
-                    a: "A testator should clearly distinguish self-acquired assets from their HUF share. In the Will, they should specifically bequeath their 'undivided coparcenary share and interest in the HUF as determined under Section 6 and Section 30 of the Hindu Succession Act, 1956', without attempting to gift specific physical family properties.",
+                    q: "How should an single mention their HUF share in their personal Will?",
+                    a: "A Will maker should clearly distinguish self-acquired assets from their HUF share. In the Will, they should mainly bequeath their 'undivided joint share and interest in the HUF as determined under Section 6 and Section 30 of the Hindu Succession Act, 1956', without attempting to gift specific physical family assets.",
                   },
                   {
-                    q: "What documents are required to update bank accounts and PAN after Karta death?",
-                    a: "The family must provide the original death certificate of the deceased Karta, a declaration of succession signed by all surviving coparceners, identity and address proofs of the new Karta, fresh KYC forms for the bank, and a formal letter of indemnity.",
+                    q: "What papers are required to update bank accounts and PAN after Karta death?",
+                    a: "The family must provide the original death paper of the deceased Karta, a declaration of estate signed by all surviving coparceners, identity and address proofs of the new Karta, fresh KYC forms for the bank, and a formal letter of indemnity.",
                   },
                 ].map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1431,14 +1431,14 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <section id="statutory-citations" className="scroll-target pt-6 border-t border-slate-200 space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-4 h-4" />
-                <span>Statutory Authority &amp; Links</span>
+                <span>Legal Office &amp; Links</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                15. Statutory Authorities &amp; Landmark Judicial Precedents
+                15. Legal Offices &amp; Landmark Judicial Precedents
               </h3>
               <div className="space-y-2 text-xs text-slate-600 leading-relaxed">
                 <p>
-                  <strong>Statutory Enactments:</strong> Hindu Succession Act, 1956 (Section 6: Devolution of interest in coparcenary property; Section 8: General rules of succession in the case of males; Section 30: Testamentary disposition); Income Tax Act, 1961 (Section 171: Assessment after partition of a Hindu undivided family; Section 47(i): Transactions not regarded as transfer; Section 49(1): Cost of acquisition).
+                  <strong>Legal Enactments:</strong> Hindu Succession Act, 1956 (Section 6: Devolution of interest in joint asset; Section 8: General rules of estate in the case of males; Section 30: Will gift); Income Tax Act, 1961 (Section 171: Assessment after split of a Hindu undivided family; Section 47(i): Transactions not regarded as transfer; Section 49(1): Cost of acquisition).
                 </p>
                 <p>
                   <strong>Key Supreme Court &amp; High Court Precedents:</strong>
@@ -1451,7 +1451,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     <em>Vineeta Sharma v. Rakesh Sharma [(2020) 9 SCC 1]</em> — Held that daughters are equal coparceners by birth with retrospective effect under amended Section 6.
                   </li>
                   <li>
-                    <em>Gurupad Khandappa Magdum v. Hirabai Khandappa Magdum [1978 AIR 1239 (SC)]</em> — Established the mathematical method of deemed notional partition.
+                    <em>Gurupad Khandappa Magdum v. Hirabai Khandappa Magdum [1978 AIR 1239 (SC)]</em> — Established the mathematical method of deemed notional split.
                   </li>
                   <li>
                     <em>Commissioner of Income Tax v. Laxmi Narayan Bhadani [(1944) 12 ITR 355]</em> — Management rights of natural guardian over minor coparceners.
@@ -1469,21 +1469,21 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                     href="/blogs/married-daughter-rights-in-fathers-property"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors inline-flex items-center gap-1.5"
                   >
-                    <span>Married Daughter Property Rights</span>
+                    <span>Married Daughter Asset Rights</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors inline-flex items-center gap-1.5"
                   >
-                    <span>Succession Share Calculator</span>
+                    <span>Estate Share Tool</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
                     href="/blogs/property-transfer-after-death-without-will-india"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors inline-flex items-center gap-1.5"
                   >
-                    <span>Property Transfer Without Will</span>
+                    <span>Asset Transfer Without Will</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                   <Link
@@ -1496,7 +1496,29 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author, CTA, Trust Cards)
@@ -1516,21 +1538,21 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                       rel="noopener noreferrer"
                       className="hover:text-[#C65378] transition-colors"
                     >
-                      Advocate Anuj Anand Malik
+                      Lawyer Anuj Anand Malik
                     </a>
                   </h3>
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </p>
                   <p className="text-[11px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Hindu succession, coparcenary partition suits, and high-value testamentary estate planning with over 18 years of court experience.
+                Expert in Hindu succession, joint split suits, and high-value Will estate planning with over 18 years of court experience.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
+                  <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Checked
                 </span>
                 <a
                   href="https://www.linkedin.com/in/iamanujmalik/"
@@ -1549,13 +1571,13 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <div className="hidden lg:block rounded-2xl bg-[#172228] p-6 text-white text-center space-y-4 shadow-lg shadow-[#172228]/15">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold tracking-wider uppercase text-rose-200">
                 <Lock className="w-3 h-3 text-[#C65378]" />
-                <span>Challenge-Proof Drafting</span>
+                <span>Fight-Proof Drafting</span>
               </div>
               <h3 className="text-lg font-extrabold leading-tight">
-                Own an HUF Share or Ancestral Property?
+                Own an HUF Share or Family Asset?
               </h3>
               <p className="text-xs text-white/80 leading-relaxed">
-                Avoid bitter disputes. Create a customized, lawyer-verified Will clearly securing your coparcenary share in 15 minutes.
+                Avoid bitter fights. Create a customized, lawyer-checked Will clearly securing your joint share in 15 minutes.
               </p>
               <button
                 onClick={handleStartDraft}
@@ -1566,7 +1588,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
               </button>
               <div className="pt-2 border-t border-white/10 text-[11px] text-white/70 flex items-center justify-center gap-2">
                 <PhoneCall className="w-3 h-3 text-rose-300" />
-                <span>Advocate consultation included</span>
+                <span>Lawyer talk included</span>
               </div>
             </div>
 
@@ -1580,7 +1602,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Statutory Precision:</strong> Clauses verified under Sections 6 &amp; 30 of HSA.
+                    <strong>Legal Precision:</strong> Clauses checked under Sections 6 &amp; 30 of HSA.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -1616,7 +1638,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Married Daughter Rights in Father Property
+                    Married Daughter Rights in Father Asset
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
                     Read Guide <ArrowRight className="w-2.5 h-2.5" />
@@ -1627,7 +1649,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Second Wife &amp; Children Property Rights
+                    Second Wife &amp; Children Asset Rights
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
                     Read Guide <ArrowRight className="w-2.5 h-2.5" />
@@ -1638,10 +1660,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-colors"
                 >
                   <p className="text-xs font-bold text-slate-900 leading-snug">
-                    Interactive Hindu Succession Calculator
+                    Free Hindu Succession Tool
                   </p>
                   <span className="text-[10px] text-[#C65378] font-semibold mt-1 inline-flex items-center gap-1">
-                    Open Calculator <ArrowRight className="w-2.5 h-2.5" />
+                    Open Tool <ArrowRight className="w-2.5 h-2.5" />
                   </span>
                 </Link>
               </div>
@@ -1656,7 +1678,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   href="/blogs/married-daughter-rights-in-fathers-property"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Married Daughter Property Rights
+                  Married Daughter Asset Rights
                 </Link>
                 <Link
                   href="/blogs/second-wife-children-property-rights-india"
@@ -1668,7 +1690,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   href="/templates/release-deed-format"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
-                  Relinquishment Deed Format
+                  Release Deed Format
                 </Link>
                 <Link
                   href="/templates/will-format-india"
@@ -1696,7 +1718,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
           >
             <div className="flex items-center justify-between p-3 text-white">
               <span className="text-xs font-bold">
-                HUF Property After Death of Karta — Flow Diagram &amp; Legal Framework
+                HUF Asset After Death of Karta — Flow Diagram &amp; Legal Framework
               </span>
               <button
                 onClick={() => setShowImageModal(false)}

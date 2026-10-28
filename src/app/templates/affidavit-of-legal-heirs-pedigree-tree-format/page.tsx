@@ -90,7 +90,7 @@ export default function AffidavitLegalHeirsPage() {
         url: canonicalUrl,
         name: "Legal Heir Affidavit Format India | WillDrafting.in",
         description:
-          "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue.",
+          "Download legally valid legal heir sworn note format in India with pedigree family tree, Class I heir shares, notary check, and revenue.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function AffidavitLegalHeirsPage() {
         name: "Affidavit of Legal Heirs with Pedigree Family Tree (Vamshavali / Pedhinama) Format",
         url: canonicalUrl,
         description:
-          "Lawyer-drafted statutory affidavit format of legal heirs with structured pedigree tree table, predeceased heir branch disclosures, negative.",
+          "Lawyer-drafted legal sworn note format of legal heirs with structured pedigree tree table, predeceased heir branch disclosures, negative.",
         fileFormat: "application/pdf",
         genre: "Legal Heir Declaration Template",
         inLanguage: "en-IN",
@@ -147,7 +147,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "What is a Legal Heir and Pedigree Tree Affidavit in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Legal Heir Affidavit with a Pedigree Tree (Vamshavali, Pedhinama, or Shajra-e-Nasab) is a sworn legal statement on stamp paper by a family member declaring under solemn affirmation all surviving Class I legal heirs of a deceased person who died intestate. It includes a structured genealogical chart displaying the lineage, surviving heirs, and any predeceased heirs.",
+              text: "A Legal Heir Sworn Note with a Pedigree Tree (Vamshavali, Pedhinama, or Shajra-e-Nasab) is a sworn legal statement on stamp paper by a family member declaring under solemn affirmation all surviving Class I legal heirs of a deceased person who died no-Will. It includes a structured genealogical chart displaying the lineage, surviving heirs, and any predeceased heirs.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "Why is a Pedigree Tree compulsory in a Legal Heir Affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Revenue officers, Tehsildars, and SDMs require a genealogical pedigree tree to identify whether any legal heir predeceased the propositus. Under Section 10 of the Hindu Succession Act, 1956, children and widows of predeceased sons or daughters inherit per stirpes by representation. Omitting a pedigree tree can conceal rightful heirs and invalidate the certificate.",
+              text: "Revenue officers, Tehsildars, and SDMs require a genealogical pedigree tree to identify whether any legal heir predeceased the propositus. Under Section 10 of the Hindu Succession Act, 1956, children and widows of predeceased sons or daughters inherit per stirpes by representation. Omitting a pedigree tree can conceal rightful heirs and invalidate the paper.",
             },
           },
           {
@@ -163,7 +163,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "What stamp paper value is required for a Legal Heir Affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In most Indian states, a self-declaration legal heir affidavit is executed on non-judicial e-stamp paper of ₹10, ₹20, ₹50, or ₹100 depending on the state stamp act. For example, Delhi requires ₹10, Maharashtra ₹100, Uttar Pradesh ₹10 or ₹100, and Karnataka ₹20 or ₹50.",
+              text: "In most Indian states, a self-declaration legal heir sworn note is signed on non-judicial e-stamp paper of ₹10, ₹20, ₹50, or ₹100 depending on the state stamp act. For example, Delhi requires ₹10, Maharashtra ₹100, Uttar Pradesh ₹10 or ₹100, and Karnataka ₹20 or ₹50.",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "Does a Legal Heir Affidavit require notary attestation or an Oath Commissioner?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. The affidavit must be sworn before an appointed Notary Public or Oath Commissioner under the Oaths Act, 1969. The deponent must sign in the presence of the notary with two independent local witnesses who identify the deponent, and affix notary stamp, seal, and serial register entry.",
+              text: "Yes. The sworn note must be sworn before an appointed Notary Public or Oath Commissioner under the Oaths Act, 1969. The deponent must sign in the presence of the notary with two independent local witnesses who identify the deponent, and affix notary stamp, seal, and serial register entry.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "What is the difference between a Legal Heir Certificate and a Succession Certificate?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Legal Heir Certificate is an administrative certificate issued by a Tehsildar or SDM to identify surviving family members for bank claims, pensions, or municipal mutations. A Succession Certificate is an authoritative decree issued by a competent Civil Court under Part X of the Indian Succession Act, 1925, legally required for contested debts, securities, and high-value movable assets.",
+              text: "A Legal Heir Paper is an office paper issued by a Tehsildar or SDM to identify surviving family members for bank claims, pensions, or city mutations. A Estate Paper is an authoritative decree issued by a competent Civil Court under Part X of the Indian Succession Act, 1925, legally required for contested debts, securities, and high-value cash assets.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "What are the legal consequences of omitting a legal heir from the affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Intentionally concealing a legal heir or falsely declaring that no other heirs exist constitutes perjury and criminal fraud under Sections 229 and 236 of the Bharatiya Nyaya Sanhita, 2023 (formerly Sections 193 and 199 IPC), punishable by up to 7 years imprisonment. The resulting revenue certificate is void ab initio.",
+              text: "Intentionally concealing a legal heir or falsely declaring that no other heirs exist constitutes perjury and criminal fraud under Sections 229 and 236 of the Bharatiya Nyaya Sanhita, 2023 (formerly Sections 193 and 199 IPC), punishable by up to 7 years imprisonment. The resulting revenue paper is void ab initio.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "What regional names are used for the Pedigree Tree Affidavit across India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In Gujarat, it is known as Pedhinama; in Maharashtra, Varasnama; in Delhi, Surviving Member Certificate (SMC) Affidavit; in Uttar Pradesh and Bihar, Shajra-e-Nasab or Vamshavali Shapathpatra; and in Karnataka, Vamshavruksha Affidavit.",
+              text: "In Gujarat, it is known as Pedhinama; in Maharashtra, Varasnama; in Delhi, Surviving Member Paper (SMC) Sworn Note; in Uttar Pradesh and Bihar, Shajra-e-Nasab or Vamshavali Shapathpatra; and in Karnataka, Vamshavruksha Sworn Note.",
             },
           },
           {
@@ -203,7 +203,7 @@ export default function AffidavitLegalHeirsPage() {
             name: "Do married daughters have to be named in the Legal Heir Affidavit?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, absolutely. Under Section 6 and Section 8 of the Hindu Succession Act, 1956, and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), married daughters are coparceners and Class I legal heirs with equal rights. Excluding a married daughter is illegal and grounds for immediate revocation of the certificate.",
+              text: "Yes, absolutely. Under Section 6 and Section 8 of the Hindu Succession Act, 1956, and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), married daughters are coparceners and Class I legal heirs with equal rights. Excluding a married daughter is illegal and grounds for immediate revocation of the paper.",
             },
           },
         ],

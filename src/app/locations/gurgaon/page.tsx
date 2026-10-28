@@ -143,7 +143,7 @@ export default function GurgaonLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gurgaon: Online Will Services in NCR",
         description:
-          "Protect family property in Gurgaon. Expert online Will drafting, HSVP floor transfer advice, and Sub-Registrar registration guidance in Gurugram.",
+          "Protect family asset in Gurgaon. Expert online Will drafting, HSVP floor transfer advice, and SRO filing guidance in Gurugram.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function GurgaonLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gurgaon - Estate Planning & HSVP Succession",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-token registration support across Gurgaon, Wazirabad, Badshahpur.",
+          "Professional Will drafting, lawyer check, and SRO office e-token filing support across Gurgaon, Wazirabad, Badshahpur.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -257,14 +257,14 @@ export default function GurgaonLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Gurgaon NCR",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Gurugram Sub-Registrar in Haryana.",
+          "Five clear steps to create a legally binding Will and register it before the Gurugram SRO in Haryana.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Assets and HSVP Properties",
-            text: "Compile your Gurgaon property details including HSVP allotment letters, builder floor conveyance deeds, bank accounts, and mutual funds. Name your beneficiaries and an executor.",
+            text: "Compile your Gurgaon asset details including HSVP allotment letters, builder floor conveyance deeds, bank accounts, and mutual funds. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -276,19 +276,19 @@ export default function GurgaonLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries in the document.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs in the paper.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Gurugram SRO Appointment on Jamabandi Portal",
-            text: "Book an e-token slot on jamabandi.nic.in for your relevant Tehsil (Gurgaon Sadar, Wazirabad, Badshahpur, or Manesar) and pay the nominal ₹100 registration fee online.",
+            text: "Book an e-token slot on jamabandi.nic.in for your relevant Tehsil (Gurgaon Sadar, Wazirabad, Badshahpur, or Manesar) and pay the nominal ₹100 filing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Sub-Registrar Office",
-            text: "Visit the Tehsil office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the Tehsil office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },

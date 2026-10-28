@@ -144,7 +144,7 @@ export default function KotaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kota: Online Will Registration Support",
         description:
-          "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise.",
+          "Draft a legally compliant Will in Kota. Complete guidance on KDA asset transfer, ePanjiyan filing, and educational enterprise.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function KotaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kota - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration support, and doorstep execution across Kota, Talwandi.",
+          "Professional Will drafting, lawyer check, ePanjiyan Rajasthan filing support, and doorstep signing across Kota, Talwandi.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -261,38 +261,38 @@ export default function KotaLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Kota",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar in Kota.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO in Kota.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Kota assets including KDA residential plots, student hostels in Landmark City or Rajeev Gandhi Nagar, coaching equity, and Ramganj Mandi quarry leases. Designate beneficiaries and an executor.",
+            text: "List your Kota assets including KDA home plots, student hostels in Landmark City or Rajeev Gandhi Nagar, coaching equity, and Ramganj Mandi quarry leases. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the presence of two adult witnesses who hold no beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book ePanjiyan Rajasthan Slot",
-            text: "Schedule your registration appointment on the ePanjiyan Rajasthan portal (epanjiyan.rajasthan.gov.in) for your relevant Kota SRO and remit the nominal fee via e-GRAS.",
+            text: "Schedule your filing appointment on the ePanjiyan Rajasthan portal (epanjiyan.rajasthan.gov.in) for your relevant Kota SRO and remit the nominal fee via e-GRAS.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Kota SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III filing.",
           },
         ],
       },

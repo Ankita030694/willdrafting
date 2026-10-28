@@ -140,7 +140,7 @@ export default function PunjabLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Punjab: Online Will & NRI Estate Guide",
         description:
-          "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard.",
+          "Draft a valid Will in Punjab. Expert guidance for NRI family asset protection, NGDRS Punjab portal filing, and Jamabandi fard.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function PunjabLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Punjab - NRI Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Punjab SRO registration, and NRI ancestral farmland protection across Ludhiana.",
+          "Professional Will drafting, lawyer check, NGDRS Punjab SRO filing, and NRI family farmland protection across Ludhiana.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -259,38 +259,38 @@ export default function PunjabLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Punjab",
         description:
-          "Five clear legal steps to draft and register an enforceable Will before the Sub-Registrar across Punjab.",
+          "Five clear legal steps to draft and register an enforceable Will before the SRO across Punjab.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Punjab real estate including Jamabandi agricultural fards, GMADA or GLADA residential plots, industrial manufacturing units, bank deposits, and demat folios. Designate beneficiaries and an executor.",
+            text: "List your Punjab real estate including Jamabandi farm fards, GMADA or GLADA home plots, plant manufacturing units, bank deposits, and demat folios. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, NRI protections, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using checked legal clauses for clear asset split, NRI protections, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold zero beneficial interest under the Will.",
+            text: "Print the paper on standard A4 paper and sign each page in the physical presence of two adult witnesses who hold zero beneficial interest under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book NGDRS Punjab Portal Appointment",
-            text: "Schedule your registration appointment on the NGDRS Punjab portal (igr.punjab.gov.in) for your relevant Sub-Registrar Office and remit the flat ₹500 fee online.",
+            text: "Schedule your filing appointment on the NGDRS Punjab portal (igr.punjab.gov.in) for your relevant SRO office and remit the flat ₹500 fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Punjab SRO",
-            text: "Visit the Sub-Registrar Office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III government registration.",
+            text: "Visit the SRO office with both witnesses for verbal witness signing, photo capture, and biometric thumbprinting to complete Book III government filing.",
           },
         ],
       },

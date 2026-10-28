@@ -137,25 +137,25 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving asset in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Signed by a registered MBBS doctor. Confirms sound mental capacity and prevents future family fights.",
+    label: "Doctor's Mental Fitness Paper (For Seniors)",
+    detail: "Signed by a filed MBBS doctor. Confirms sound mental capacity and prevents future family fights.",
     checked: false,
   },
   {
     id: "item-5",
     label: "ePanjiyan Rajasthan Appointment Slip & e-GRAS Challan",
-    detail: "Official appointment receipt downloaded from epanjiyan.nic.in after paying the flat ₹100 registration fee.",
+    detail: "Official appointment receipt downloaded from epanjiyan.nic.in after paying the flat ₹100 filing fee.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Property Chain Documents (JDA Lease / Patta / Registry)",
-    detail: "Copies of JDA allotment letters, 99-year lease deeds, or registered sale deeds for exact plot descriptions.",
+    label: "Asset Chain Papers (JDA Lease / Patta / Registry)",
+    detail: "Copies of JDA allotment letters, 99-year lease deeds, or filed sale deeds for exact plot descriptions.",
     checked: false,
   },
   {
@@ -258,7 +258,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will in Jaipur. Master JDA leasehold property transfers, family joint family rights under Mitakshara law, and Rajasthan Sub-Registrar ePanjiyan registration.
+                Draft a legally binding Will in Jaipur. Master JDA leasehold asset transfers, family joint family rights under Mitakshara law, and Rajasthan SRO ePanjiyan filing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -347,7 +347,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Non-Presidency Rules
@@ -493,16 +493,16 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 53 characters */}
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
-                  Key Highlights: Will Making &amp; Registration in Jaipur
+                  Key Highlights: Will Making &amp; Filing in Jaipur
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Filing</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional in Rajasthan under Section 18(e) of the Registration Act, 1908. An unregistered Will on plain white paper is legally valid if signed before two independent witnesses.
+                      Will filing is a choice in Rajasthan under Section 18(e) of the Filing Act, 1908. An plain Will on plain white paper is legally valid if signed before two independent witnesses.
                     </p>
                   </div>
 
@@ -522,7 +522,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       <span>Zero Rajasthan Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty in Rajasthan under the Rajasthan Stamp Act, 1998. At the Jaipur SRO office, you pay only a nominal flat ₹100 registration fee.
+                      Wills incur ₹0 stamp duty in Rajasthan under the Rajasthan Stamp Act, 1998. At the Jaipur SRO office, you pay only a nominal flat ₹100 filing fee.
                     </p>
                   </div>
 
@@ -532,7 +532,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       <span>Smooth JDA &amp; Nigam Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Registering your Will speeds up ownership substitution with the Jaipur Development Authority (JDA), Rajasthan Housing Board (RHB), and Nagar Nigam Jaipur.
+                      Registering your Will speeds up ownership substitution with the Jaipur Development Office (JDA), Rajasthan Housing Board (RHB), and Nagar Nigam Jaipur.
                     </p>
                   </div>
                 </div>
@@ -551,13 +551,13 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Jaipur City
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning in Jaipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
+                  Estate planning in Jaipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Filing Act, 1908</strong>.
                   Any adult of sound mind can write a Will to bequeath their self-acquired real estate, bank deposits, mutual funds, company equity, and jewelry.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Jaipur features unique property classes.
+                  Jaipur features unique asset classes.
                   Families often hold JDA 99-year leasehold plots in Vaishali Nagar, family Havelis in the Pink City Walled Bazaars, or Rajasthan Housing Board flats in Mansarovar.
-                  Without an clear Will, your legal heirs face prolonged delays before the JDA Single Window System and municipal revenue courts.
+                  Without an clear Will, your legal heirs face prolonged delays before the JDA Single Window System and city revenue courts.
                 </p>
               </div>
 
@@ -598,7 +598,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Mitakshara Rules</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testators can validly bequeath their individual undivided joint family interest (Section 30 HSA).
+                    Will makers can validly bequeath their single undivided joint family interest (Section 30 HSA).
                   </p>
                 </div>
               </div>
@@ -613,15 +613,15 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Needed in Rajasthan?
+                  2. Is Will Filing Needed in Rajasthan?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong>.
-                  An unregistered Will signed on plain white paper is 100% legally enforceable in Indian courts, provided it satisfies standard attestation rules.
+                  Under Section 18(e) of the Filing Act, 1908, registering a Will is entirely <strong>a choice</strong>.
+                  An plain Will signed on plain white paper is 100% legally enforceable in Indian courts, provided it satisfies standard witness signing rules.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, in fast-growing Jaipur, registering your Will at the SRO office via ePanjiyan Rajasthan is strongly recommended by senior estate lawyers.
-                  Here is how registered Wills compare against unregistered papers:
+                  Here is how filed Wills compare against plain papers:
                 </p>
               </div>
 
@@ -630,35 +630,35 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Factor</th>
-                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Jaipur SRO)</th>
-                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
+                      <th className="p-4 font-bold">Estate Factor</th>
+                      <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Filed Will (Jaipur SRO)</th>
+                      <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Plain Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Government Custody</td>
-                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Rajasthan Registration Dept</td>
+                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives of Rajasthan Filing Dept</td>
                       <td className="p-4 bg-slate-50/20">Held in private custody; vulnerable to destruction, tampering, or loss</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Risk of Forgery Claims</td>
-                      <td className="p-4 bg-rose-50/20">Minimal. Biometrics, digital photos, and IDs verified before SRO</td>
+                      <td className="p-4 bg-rose-50/20">Minimal. Biometrics, digital photos, and IDs checked before SRO</td>
                       <td className="p-4 bg-slate-50/20">High. Dissatisfied heirs often claim fraud or forged signatures</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">JDA &amp; Nigam Name Change</td>
                       <td className="p-4 bg-rose-50/20">Fast name substitution with certified Book III deed copy</td>
-                      <td className="p-4 bg-slate-50/20">Officers demand expensive NOC affidavits or civil court orders</td>
+                      <td className="p-4 bg-slate-50/20">Officers demand expensive NOC sworn notes or civil court orders</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Presumption</td>
-                      <td className="p-4 bg-rose-50/20">Strong presumption of validity under Section 60 of the Registration Act</td>
+                      <td className="p-4 bg-rose-50/20">Strong presumption of validity under Section 60 of the Filing Act</td>
                       <td className="p-4 bg-slate-50/20">Heir carries full burden of proving soundness of mind</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Rajasthan Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 filing fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -690,13 +690,13 @@ export default function JaipurLocationClient({ faqs }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    General Rule: Probate Optional
+                    General Rule: Probate A Choice
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Rajasthan High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Supreme Court in <em>Clarence Pais v. Union of India</em> and the Rajasthan High Court have settled that an executor or legatee under a Hindu, Sikh, Jain, or Buddhist Will in Rajasthan does not require court probate to enforce ownership or mutate property.
+                    The Supreme Court in <em>Clarence Pais v. Union of India</em> and the Rajasthan High Court have settled that an executor or legatee under a Hindu, Sikh, Jain, or Buddhist Will in Rajasthan does not require court probate to enforce ownership or mutate asset.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -731,11 +731,11 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Jaipur Sub-Registrar Offices: Circle Directory
+                  4. Jaipur SRO Offices: Circle Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Jaipur is organized into major Sub-Registrar circles under the Inspector General of Registration and Stamps (IGRS Rajasthan).
-                  Under Section 32 of the Registration Act, your Will can be registered at the SRO office where the Will maker resides, or where real estate assets are situated.
+                  Jaipur is organized into major SRO circles under the Inspector General of Filing and Stamps (IGRS Rajasthan).
+                  Under Section 32 of the Filing Act, your Will can be filed at the SRO office where the Will maker resides, or where real estate assets are situated.
                 </p>
               </div>
 
@@ -840,8 +840,8 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Jaipur Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Vaishali Nagar, Malviya Nagar, Mansarovar, or C-Scheme</strong>? Jaipur real estate ranges from JDA 99-year leasehold plots and luxury private bungalows to family Havelis in the Pink City and RHB housing schemes.
-                  Our senior lawyers provide verified legal drafting, ePanjiyan portal booking, and Sub-Registrar accompaniment across all key Jaipur circles:
+                  Looking for legally checked <strong>Will drafting services in Vaishali Nagar, Malviya Nagar, Mansarovar, or C-Scheme</strong>? Jaipur real estate ranges from JDA 99-year leasehold plots and luxury private bungalows to family Havelis in the Pink City and RHB housing schemes.
+                  Our senior lawyers provide checked legal drafting, ePanjiyan portal booking, and SRO accompaniment across all key Jaipur circles:
                 </p>
               </div>
 
@@ -872,7 +872,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in Vaishali Nagar &amp; Chitrakoot</strong>? Vaishali Nagar and Chitrakoot feature prime JDA home plots, independent luxury villas, and multi-storey apartments.
-                      Our Will drafts mainly incorporate JDA lease-deed covenants, undivided roof rights, mutual fund succession, and executor powers to streamline name transfer with the Jaipur Development Authority.
+                      Our Will drafts mainly incorporate JDA lease-deed covenants, undivided roof rights, mutual fund estate, and executor powers to streamline name transfer with the Jaipur Development Office.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -881,7 +881,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 3 Chitrakoot, Near Akshardham</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        ePanjiyan slot scheduling, lawyer physical attendance, and Section 31 home visits for elderly testators across Vaishali Nagar.
+                        ePanjiyan slot scheduling, lawyer physical attendance, and Section 31 home visits for elderly Will makers across Vaishali Nagar.
                       </p>
                     </div>
                   </div>
@@ -921,27 +921,27 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Malviya Nagar Sectors 1-13</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jagatpura Institutional Area</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jawahar Circle Precincts</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sitapura RIICO Industrial Units</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sitapura RIICO Plant Units</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get specialized <strong>Will drafting services in Malviya Nagar &amp; Jagatpura</strong>. Covering extensive home sectors around Jawahar Circle alongside shop and RIICO industrial assets in Sitapura.
-                      Our senior lawyers structure clear bequests for family businesses, shop rental incomes, and home floors, eliminating ambiguity before municipal tax offices.
+                      Get specialized <strong>Will drafting services in Malviya Nagar &amp; Jagatpura</strong>. Covering extensive home sectors around Jawahar Circle alongside shop and RIICO plant assets in Sitapura.
+                      Our senior lawyers structure clear bequests for family businesses, shop rental incomes, and home floors, eliminating ambiguity before city tax offices.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sub-Registrar V, Jagatpura Institutional Area</span>
+                        <span>SRO Hub: SRO V, Jagatpura Institutional Area</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct help for high-value flats and industrial plots, ePanjiyan booking, and witness attestation.
+                        Direct help for high-value flats and plant plots, ePanjiyan booking, and witness witness signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">JDA &amp; RIICO Succession</span>
+                    <span className="text-xs font-bold text-slate-500">JDA &amp; RIICO Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -980,7 +980,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Opt for premier <strong>Will drafting services in Mansarovar &amp; Gopalpura Bypass</strong>. Mansarovar is among Asia&apos;s largest planned housing colonies, combining Rajasthan Housing Board (RHB) dwellings, private builder floors, and coaching hub shop units.
-                      A registered Will is essential for RHB and Nagar Nigam Jaipur Greater to transfer title and water-electric meters without demanding civil succession papers.
+                      A filed Will is essential for RHB and Nagar Nigam Jaipur Greater to transfer title and water-electric meters without demanding civil estate papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1034,7 +1034,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Secure expert <strong>Will drafting services in C-Scheme &amp; Civil Lines</strong>. Home to Jaipur&apos;s high-net-worth families, senior industrialists, and prominent jurists.
-                      Our estate experts draft full multi-generational Wills codifying family trust structures, corporate holding transfers, jewelry bequests, and private demat portfolios with sound witness attestation.
+                      Our estate experts draft full multi-generational Wills codifying family trust structures, corporate holding transfers, jewelry bequests, and private demat portfolios with sound witness witness signing.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1087,7 +1087,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Consult experienced lawyers for <strong>Will drafting services in Pink City &amp; Bani Park</strong>. The historic Walled City presents intricate Mitakshara family succession issues.
+                      Consult experienced lawyers for <strong>Will drafting services in Pink City &amp; Bani Park</strong>. The historic Walled City presents intricate Mitakshara family estate issues.
                       Family Havelis and undivided family jewelry shops require precise joint family share demarcation under Section 30 of the Hindu Succession Act, protecting daughters&apos; equal legal rights and preventing generational court fights.
                     </p>
 
@@ -1097,7 +1097,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat, Bani Park (SRO I)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Conveniently located near Jaipur Collectorate and Sessions Courts for immediate document vetting and registration.
+                        Conveniently located near Jaipur Collectorate and Sessions Courts for immediate paper vetting and filing.
                       </p>
                     </div>
                   </div>
@@ -1137,7 +1137,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vidhyadhar Nagar Sectors 1-9</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Murlipura &amp; Ambabari</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sikar Road Home Townships</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jhotwara Industrial Zone</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Jhotwara Plant Zone</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1205,7 +1205,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bajaj Nagar SRO office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for senior business owners, witness vetting, and full estate drafting.
+                        Doorstep filing for senior business owners, witness vetting, and full estate drafting.
                       </p>
                     </div>
                   </div>
@@ -1250,7 +1250,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       End-to-end <strong>Will drafting services in Pratap Nagar &amp; Tonk Road</strong>. Pratap Nagar is Rajasthan Housing Board&apos;s largest project area, bordered by rapid township growth along the Tonk Road corridor.
-                      We make sure straightforward testament split for NRIs and local homeowners, safeguarding property succession against bureaucratic hurdles.
+                      We make sure straightforward testament split for NRIs and local homeowners, safeguarding asset estate against bureaucratic hurdles.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1259,7 +1259,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO V (Jagatpura) &amp; SRO VII (Sanganer)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full online appointment booking via ePanjiyan, e-GRAS challan generation, and witness document check.
+                        Full online appointment booking via ePanjiyan, e-GRAS challan generation, and witness paper check.
                       </p>
                     </div>
                   </div>
@@ -1289,11 +1289,11 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step Will Registration in Jaipur SOP
+                  6. Step-by-Step Will Filing in Jaipur SOP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will before a Jaipur Sub-Registrar follows an organized protocol governed by the Inspector General of Registration and Stamps (IGRS Rajasthan).
-                  Here is the verified 5-step SOP:
+                  Registering your Will before a Jaipur SRO follows an organized protocol governed by the Inspector General of Filing and Stamps (IGRS Rajasthan).
+                  Here is the checked 5-step SOP:
                 </p>
               </div>
 
@@ -1318,10 +1318,10 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Doctor Certificate
+                      Doctor Paper
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an MBBS medical paper for testators aged 60+ affirming sound sound mind.
+                      Obtain an MBBS medical paper for Will makers aged 60+ affirming sound sound mind.
                     </p>
                   </div>
                 </div>
@@ -1363,7 +1363,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       Book III Archiving
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Biometric fingerprints and digital photos recorded. Endorsed registered Will returned within 24 to 48 hours.
+                      Biometric fingerprints and digital photos recorded. Endorsed filed Will returned within 24 to 48 hours.
                     </p>
                   </div>
                 </div>
@@ -1379,23 +1379,23 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Section 31 Doorstep Registration for Seniors
+                  7. Section 31 Doorstep Filing for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior citizens in Jaipur find it physically difficult to navigate busy government complexes at Mini Secretariat Bani Park or Jhotwara.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal authority to personally visit a person&apos;s residence, nursing facility, or hospital to complete registration.
+                  Under <strong>Section 31 of the Filing Act, 1908</strong>, the SRO has the legal office to personally visit a person&apos;s residence, nursing facility, or hospital to complete filing.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  How Doorstep Will Registration Works in Jaipur:
+                  How Doorstep Will Filing Works in Jaipur:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Fitness &amp; Inability Certificate</strong>
+                      <strong className="text-slate-900 block">Doctor Fitness &amp; Inability Paper</strong>
                       <span className="text-slate-600">A doctor certifies that the senior citizen is bedridden or medically advised against traveling to the SRO.</span>
                     </div>
                   </div>
@@ -1404,7 +1404,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Form</strong>
-                      <span className="text-slate-600">Our Jaipur lawyers submit the formal Section 31 commission petition before the circle Sub-Registrar.</span>
+                      <span className="text-slate-600">Our Jaipur lawyers submit the formal Section 31 commission petition before the circle SRO.</span>
                     </div>
                   </div>
 
@@ -1420,7 +1420,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Portable Biometrics at Residence</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your home with portable biometric equipment to capture fingerprints and digital photos.</span>
+                      <span className="text-slate-600">The SRO visits your home with portable biometric equipment to capture fingerprints and digital photos.</span>
                     </div>
                   </div>
                 </div>
@@ -1436,7 +1436,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Documents Checklist for Jaipur Sub-Registrar
+                  8. Papers Checklist for Jaipur SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before proceeding to the SRO office.
@@ -1488,10 +1488,10 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 47 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Jaipur Property Types: JDA Plots &amp; Family
+                  9. Jaipur Asset Types: JDA Plots &amp; Family
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Jaipur depends significantly on the origin of property title and development area.
+                  Estate in Jaipur depends significantly on the origin of asset title and development area.
                   Here is how a Will affects different Jaipur real estate categories:
                 </p>
               </div>
@@ -1505,7 +1505,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     JDA Leasehold &amp; Freehold Pattas
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    JDA requires a registered Will to substitute names in 99-year lease deeds or freehold pattas. With a registered Will, conversion to freehold patta or transfer through Single Window is streamlined.
+                    JDA requires a filed Will to substitute names in 99-year lease deeds or freehold pattas. With a filed Will, conversion to freehold patta or transfer through Single Window is streamlined.
                   </p>
                 </div>
 
@@ -1517,7 +1517,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     Mitakshara Joint family Shares
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Mitakshara Hindu law prevailing in Rajasthan, testators can bequeath their individual undivided joint family share, preserving equal joint family rights for sons and daughters.
+                    Under Mitakshara Hindu law prevailing in Rajasthan, Will makers can bequeath their single undivided joint family share, preserving equal joint family rights for sons and daughters.
                   </p>
                 </div>
 
@@ -1547,7 +1547,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   10. Official Rajasthan Government Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike property sale deeds that incur 5% to 7% stamp duty in Rajasthan, Wills are completely exempt from stamp duty under the Rajasthan Stamp Act, 1998.
+                  Unlike asset sale deeds that incur 5% to 7% stamp duty in Rajasthan, Wills are completely exempt from stamp duty under the Rajasthan Stamp Act, 1998.
                   Government fees for registering a Will in Jaipur are strictly nominal:
                 </p>
               </div>
@@ -1568,14 +1568,14 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Rajasthan</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SRO Registration Fee</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Fee)</td>
-                      <td className="p-4">Registration Department / e-GRAS</td>
+                      <td className="p-4">Filing Office / e-GRAS</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">CSI / Computer Scanning Charges</td>
                       <td className="p-4 font-bold">₹100 – ₹200</td>
-                      <td className="p-4">Sub-Registrar Counter</td>
+                      <td className="p-4">SRO Counter</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Doorstep Commission</td>
@@ -1622,7 +1622,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Interactive Jaipur Will maker</span>
+                        <span>Free Jaipur Will maker</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1695,13 +1695,13 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       Doorstep SRO
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Complete SRO Registration
+                      Complete SRO Filing
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration help at any of Jaipur&apos;s Sub-Registrar circles.
+                      Full end-to-end filing help at any of Jaipur&apos;s SRO circles.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1718,7 +1718,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Collection of registered Book III deed</span>
+                        <span>Collection of filed Book III deed</span>
                       </li>
                     </ul>
                   </div>
@@ -1790,7 +1790,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   13. Legal References &amp; Rajasthan Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols strictly follow codified Indian succession statutes and official Rajasthan government registration channels:
+                  Our drafting protocols strictly follow codified Indian succession statutes and official Rajasthan government filing channels:
                 </p>
               </div>
 
@@ -1806,10 +1806,10 @@ export default function JaipurLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Registration Act 1908
+                    Filing Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Doorstep Commission).
+                    Section 18(e) (A Choice Filing) and Section 31 (Doorstep Commission).
                   </p>
                 </div>
 
@@ -1827,7 +1827,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     Rajasthan High Court Rulings
                   </span>
                   <p className="text-xs text-slate-600">
-                    Settled jurisprudence on optional probate and Mitakshara joint family bequests.
+                    Settled jurisprudence on a choice probate and Mitakshara joint family bequests.
                   </p>
                 </div>
               </div>
@@ -1839,7 +1839,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 Protect Your Jaipur Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Jaipur assets to complicated JDA or municipal inheritance fights.
+                Do not leave your hard-earned Jaipur assets to complicated JDA or city estate fights.
                 Draft a legally binding Will in minutes or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1859,7 +1859,29 @@ export default function JaipurLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
         </div>
       </div>
@@ -1881,7 +1903,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
             <div className="flex items-center justify-between pb-3 border-b border-white/15">
               <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white">
                 <Sparkles className="w-4 h-4 text-[#C65378]" />
-                Visual Blueprint: Will Drafting &amp; Property Succession in Jaipur
+                Visual Blueprint: Will Drafting &amp; Asset Estate in Jaipur
               </span>
               <button
                 type="button"

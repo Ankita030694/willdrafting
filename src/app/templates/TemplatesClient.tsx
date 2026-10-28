@@ -237,14 +237,14 @@ export default function TemplatesClient({ initialTemplates }: TemplatesClientPro
         <section className="mt-12 bg-white rounded-2xl border border-[#172228]/[0.08] p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#C65378] mb-1">
-              <Sparkles className="w-4 h-4" /> Interactive Diagnostic Engines
+              <Sparkles className="w-4 h-4" /> Free Diagnostic Engines
             </div>
             <h3 className="text-lg font-bold text-[#172228]">
               Need to Calculate Legal Heir Shares or Court Fees?
             </h3>
             <p className="text-xs sm:text-sm text-[#49585F] mt-1 max-w-xl">
-              Use our statutory Hindu succession calculator, state-wise court fee
-              estimator, probate requirement checker, and NRI Will analyzer.
+              Use our legal Hindu succession tool, state-wise court fee
+              estimator, probate rule checker, and NRI Will analyzer.
             </p>
           </div>
           <Link
@@ -267,8 +267,8 @@ export default function TemplatesClient({ initialTemplates }: TemplatesClientPro
                   Section 63 Compliant
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Every template strictly enforces the two-witness attestation rules
-                  and statutory capacity guidelines under the Indian Succession Act, 1925.
+                  Every template strictly enforces the two-witness witness signing rules
+                  and legal capacity guidelines under the Indian Succession Act, 1925.
                 </p>
               </div>
             </div>
@@ -283,7 +283,7 @@ export default function TemplatesClient({ initialTemplates }: TemplatesClientPro
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
                   Under settled Indian law, Wills do not require expensive stamp paper
-                  or mandatory registration to be legally enforceable in probate courts.
+                  or needed filing to be legally enforceable in probate courts.
                 </p>
               </div>
             </div>
@@ -297,13 +297,35 @@ export default function TemplatesClient({ initialTemplates }: TemplatesClientPro
                   Lawyer Vetted Formats
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Drafted, reviewed, and battle-tested by succession advocates at AMA
+                  Drafted, reviewed, and battle-tested by estate lawyers at AMA
                   Legal Solutions for court-readiness across all Indian jurisdictions.
                 </p>
               </div>
             </div>
           </div>
         </section>
+      
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
       </main>
     </div>
   );

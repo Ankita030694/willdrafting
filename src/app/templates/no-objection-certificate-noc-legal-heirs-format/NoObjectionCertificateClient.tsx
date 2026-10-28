@@ -46,15 +46,15 @@ import {
 
 const TOC_ITEMS = [
   { id: "statutory-foundation", label: "1. Legal Heir NOC: Meaning & Purpose" },
-  { id: "interactive-noc-builder", label: "2. Interactive 4-in-1 NOC Generator" },
+  { id: "interactive-noc-builder", label: "2. Free 4-in-1 NOC Generator" },
   { id: "supreme-court-warning", label: "3. When Plain NOC Fails: SC Precedent" },
-  { id: "legal-comparison-matrix", label: "4. NOC vs Release Deed vs Settlement" },
+  { id: "legal-comparison-matrix", label: "4. NOC vs Release Deed vs Deal" },
   { id: "bank-deceased-claim-noc", label: "5. Bank Account & FD Claim NOC (RBI)" },
-  { id: "municipal-mutation-noc", label: "6. Municipal Mutation & Electricity NOC" },
+  { id: "municipal-mutation-noc", label: "6. City Name Change & Electricity NOC" },
   { id: "rto-vehicle-transfer-noc", label: "7. RTO Form 31 Vehicle RC Transfer" },
-  { id: "court-probate-consent-noc", label: "8. Court Probate & Succession Consent" },
+  { id: "court-probate-consent-noc", label: "8. Court Probate & Estate Consent" },
   { id: "stamp-paper-notarization", label: "9. Stamp Paper & Notary Guidelines" },
-  { id: "real-case-precedents", label: "10. Judicial Precedents & Disputes" },
+  { id: "real-case-precedents", label: "10. Judicial Precedents & Fights" },
   { id: "legal-clause-templates", label: "11. Ready-to-Use Copy-Paste NOC Texts" },
   { id: "institutional-profile", label: "12. Institutional Legal Backing: AMA" },
   { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
@@ -63,36 +63,36 @@ const TOC_ITEMS = [
 
 const FAQS = [
   {
-    q: "Is a plain NOC on stamp paper sufficient to give up my share in inherited property?",
-    a: "No. Under Section 17(1)(b) of the Registration Act, 1908 and the Supreme Court ruling in Yellapu Uma Maheswari v. Buddha Jagadheeswararao (2015), any instrument that purports to extinguish, create, or transfer an undivided share in immovable property worth over Rs. 100 must be compulsorily registered. A simple NOC only permits administrative municipal mutation or utility transfer. To legally surrender co-ownership title, co-heirs must execute a registered Relinquishment Deed (Haq Tyag) or Gift Deed.",
+    q: "Is a plain NOC on stamp paper sufficient to give up my share in inherited asset?",
+    a: "No. Under Section 17(1)(b) of the Filing Act, 1908 and the Supreme Court ruling in Yellapu Uma Maheswari v. Buddha Jagadheeswararao (2015), any instrument that purports to extinguish, create, or transfer an undivided share in land asset worth over Rs. 100 must be compulsorily filed. A simple NOC only permits office city name change or utility transfer. To legally surrender co-ownership title, co-heirs must execute a filed Release Deed (Haq Tyag) or Gift Deed.",
   },
   {
-    q: "What is the non-judicial stamp paper value required for a legal heir NOC affidavit?",
-    a: "For administrative purposes like bank deceased claims, municipal mutation, or RTO vehicle transfer, a legal heir NOC affidavit is printed on non-judicial stamp paper of Rs. 10, Rs. 20, Rs. 50, or Rs. 100 depending on state stamp schedules (such as Rs. 100 in Maharashtra and Uttar Pradesh, Rs. 50 in Karnataka, and Rs. 10 in Delhi) and attested by a Notary Public or Oath Commissioner.",
+    q: "What is the non-judicial stamp paper value required for a legal heir NOC sworn note?",
+    a: "For office purposes like bank deceased claims, city name change, or RTO vehicle transfer, a legal heir NOC sworn note is printed on non-judicial stamp paper of Rs. 10, Rs. 20, Rs. 50, or Rs. 100 depending on state stamp schedules (such as Rs. 100 in Maharashtra and Uttar Pradesh, Rs. 50 in Karnataka, and Rs. 10 in Delhi) and attested by a Notary Public or Oath Commissioner.",
   },
   {
-    q: "Can a sibling who signed an NOC for property transfer later file a partition suit?",
-    a: "Yes. Because an unregistered NOC does not extinguish title under the Transfer of Property Act, a sibling who signed an NOC for municipal mutation can file a partition suit in civil court within the 12-year limitation period. The Supreme Court has repeatedly held that mutation in municipal records does not confer or extinguish title. A registered Relinquishment Deed is required to permanently bar future partition claims.",
+    q: "Can a sibling who signed an NOC for asset transfer later file a split suit?",
+    a: "Yes. Because an plain NOC does not extinguish title under the Transfer of Property Act, a sibling who signed an NOC for city name change can file a split suit in civil court within the 12-year limitation period. The Supreme Court has repeatedly held that name change in city records does not confer or extinguish title. A filed Release Deed is required to permanently bar future split claims.",
   },
   {
     q: "What are the RBI rules for legal heir NOC in deceased bank account claims?",
-    a: "Under RBI Master Circular DBOD.No.Leg.BC.21/09.07.006/2014-15, when a deceased depositor leaves savings or fixed deposit accounts without nomination, banks permit settlement to one legal heir provided all other Class I legal heirs submit a notarized No Objection Certificate alongside an Indemnity Bond (Form Annexure-A) and Letter of Disclaimer (Annexure-C).",
+    a: "Under RBI Master Circular DBOD.No.Leg.BC.21/09.07.006/2014-15, when a deceased depositor leaves savings or fixed deposit accounts without nomination, banks permit deal to one legal heir provided all other Class I legal heirs submit a notarized No Objection Paper alongside an Indemnity Bond (Form Annexure-A) and Letter of Disclaimer (Annexure-C).",
   },
   {
     q: "How is an NOC from legal heirs used for RTO vehicle RC transfer after death?",
-    a: "Under Rule 56 of the Central Motor Vehicles Rules, 1989 and Section 50 of the Motor Vehicles Act, 1988, legal heirs must apply via RTO Form 31 within 3 months of the owner's death. When multiple legal heirs survive, all other heirs must sign a joint No Objection Affidavit on stamp paper agreeing that the vehicle registration certificate (RC) be transferred to a single surviving heir.",
+    a: "Under Rule 56 of the Central Motor Vehicles Rules, 1989 and Section 50 of the Motor Vehicles Act, 1988, legal heirs must apply via RTO Form 31 within 3 months of the owner's death. When multiple legal heirs survive, all other heirs must sign a joint No Objection Sworn Note on stamp paper agreeing that the vehicle filing paper (RC) be transferred to a single surviving heir.",
   },
   {
     q: "Is an NOC required from all legal heirs for electricity and water connection transfer?",
-    a: "Yes. State power distribution companies and municipal water boards require an Indemnity Bond and a signed NOC on stamp paper from all other legal heirs before transferring an existing utility meter from the deceased parent's name to a single heir.",
+    a: "Yes. State power split companies and city water boards require an Indemnity Bond and a signed NOC on stamp paper from all other legal heirs before transferring an existing utility meter from the deceased parent's name to a single heir.",
   },
   {
     q: "Can an NRI legal heir execute a valid NOC from outside India?",
-    a: "Yes. An NRI legal heir can execute the NOC affidavit in their overseas country of residence before a Notary Public or the Indian Embassy / Consulate. Once received in India, the document must be adjudicated and stamped under Section 18 of the Indian Stamp Act, 1899 within three months of arrival.",
+    a: "Yes. An NRI legal heir can execute the NOC sworn note in their overseas country of residence before a Notary Public or the Indian Embassy / Consulate. Once received in India, the paper must be adjudicated and stamped under Section 18 of the Indian Stamp Act, 1899 within three months of arrival.",
   },
   {
-    q: "What is the difference between a probate consent NOC and a property release deed?",
-    a: "A probate consent NOC is an affidavit filed in the High Court or District Court confirming that the legal heir has no objection to the grant of probate or letters of administration under a specific Will. It validates testamentary execution. A Relinquishment Deed, by contrast, is an inter-vivos deed registered at the SRO when there is no Will, transferring an undivided ancestral share to a co-heir.",
+    q: "What is the difference between a probate consent NOC and a asset release deed?",
+    a: "A probate consent NOC is an sworn note filed in the High Court or District Court confirming that the legal heir has no objection to the grant of probate or letters of care under a specific Will. It validates Will signing. A Release Deed, by contrast, is an inter-vivos deed filed at the SRO when there is no Will, transferring an undivided family share to a co-heir.",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function NoObjectionCertificateClient() {
     }
   };
 
-  const [activeId, setActiveId] = useState<string>("statutory-foundation");
+  const [activeId, setActiveId] = useState<string>("legal-foundation");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [copiedGeneratedNoc, setCopiedGeneratedNoc] = useState<boolean>(false);
   const [copiedBox1, setCopiedBox1] = useState<boolean>(false);
@@ -120,7 +120,7 @@ export default function NoObjectionCertificateClient() {
   const [copiedBox4, setCopiedBox4] = useState<boolean>(false);
   const [copiedChecklist, setCopiedChecklist] = useState<boolean>(false);
 
-  // 4-in-1 Interactive Generator State
+  // 4-in-1 Free Generator State
   const [nocCategory, setNocCategory] = useState<NocType>("property_mutation");
   const [deceasedName, setDeceasedName] = useState<string>("Late Rameshwar Sharma");
   const [dateOfDeath, setDateOfDeath] = useState<string>("15-08-2024");
@@ -134,7 +134,7 @@ export default function NoObjectionCertificateClient() {
   const [heir2Relation, setHeir2Relation] = useState<string>("Daughter");
   const [heir2Age, setHeir2Age] = useState<string>("31");
   const [assetDetails, setAssetDetails] = useState<string>(
-    "Residential Flat No. B-402, Royal Palms Apartments, Sector 14, Dwarka, New Delhi 110078"
+    "Home Flat No. B-402, Royal Palms Apartments, Sector 14, Dwarka, New Delhi 110078"
   );
   const [stateJurisdiction, setStateJurisdiction] = useState<string>("Delhi");
 
@@ -330,14 +330,14 @@ Verified on oath at [City] on [Date]`;
 
           {/* Strict H1 Tag (Length 30-65 chars, 0 em-dashes) */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
-            NOC Format from Legal Heirs for Property Transfer in India
+            NOC Format from Legal Heirs for Asset Transfer in India
           </h1>
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Download lawyer-vetted <strong>4-in-1 Legal Heir NOC templates</strong> for property
-            mutation, bank account claims, and RTO vehicle RC transfer. Learn why an unregistered NOC
-            fails to surrender property title without a <strong>Registered Relinquishment Deed</strong>.
+            Download lawyer-vetted <strong>4-in-1 Legal Heir NOC templates</strong> for asset
+            name change, bank account claims, and RTO vehicle RC transfer. Learn why an plain NOC
+            fails to surrender asset title without a <strong>Filed Release Deed</strong>.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -355,7 +355,7 @@ Verified on oath at [City] on [Date]`;
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Sparkles className="w-4 h-4 text-[#C65378]" />
-              <span>Draft Challenge-Proof Will</span>
+              <span>Draft Fight-Proof Will</span>
             </button>
           </div>
         </div>
@@ -433,10 +433,10 @@ Verified on oath at [City] on [Date]`;
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 text-xs text-slate-600 space-y-2">
               <div className="flex items-center gap-2 font-bold text-[#172228]">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
-                <span>Statutory Authority</span>
+                <span>Legal Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed under Section 17(1)(b) of the Registration Act, 1908, Transfer of Property Act,
+                Governed under Section 17(1)(b) of the Filing Act, 1908, Transfer of Property Act,
                 1882, Banking Regulation Act, 1949 s. 45ZA-ZF, and Central Motor Vehicles Rules, 1989
                 Rule 56, read with Supreme Court precedent Yellapu Uma Maheswari (2015).
               </p>
@@ -457,25 +457,25 @@ Verified on oath at [City] on [Date]`;
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Administrative vs Title Transfer:</strong> A No Objection Certificate (NOC)
-                    is valid for administrative purposes like updating municipal property tax records,
+                    <strong>Office vs Title Transfer:</strong> A No Objection Paper (NOC)
+                    is valid for office purposes like updating city asset tax records,
                     settling deceased bank accounts, or transferring vehicle RC.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>No Extinguishment of Property Rights:</strong> A plain NOC or notarized affidavit
-                    does NOT extinguish ownership rights in immovable land, flats, or commercial buildings.
-                    To surrender title, a <strong>registered Relinquishment Deed (Haq Tyag)</strong> is legally mandatory.
+                    <strong>No Extinguishment of Asset Rights:</strong> A plain NOC or notarized sworn note
+                    does NOT extinguish ownership rights in land land, flats, or shop buildings.
+                    To surrender title, a <strong>filed Release Deed (Haq Tyag)</strong> is legally needed.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
                     <strong>Supreme Court Precedent:</strong> Under <em>Yellapu Uma Maheswari (2015)</em>,
-                    unregistered documents declaring relinquishment of property shares are strictly inadmissible
-                    in evidence to prove title transfer under Section 49 of the Registration Act.
+                    plain papers declaring release of asset shares are strictly inadmissible
+                    in evidence to prove title transfer under Section 49 of the Filing Act.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -503,10 +503,10 @@ Verified on oath at [City] on [Date]`;
               </div>
               <div className="p-4 bg-slate-900 text-slate-200 text-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                 <span className="font-semibold">
-                  Official Legal Heir NOC Framework compliant with Registration Act 1908 and RBI Master Circular.
+                  Official Legal Heir NOC Framework compliant with Filing Act 1908 and RBI Master Circular.
                 </span>
                 <span className="text-[11px] px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 shrink-0">
-                  Verified Legal Asset
+                  Checked Legal Asset
                 </span>
               </div>
             </div>
@@ -518,27 +518,27 @@ Verified on oath at [City] on [Date]`;
                 <span>STATUTORY FOUNDATION</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                1. Legal Heir NOC: Meaning &amp; Statutory Purpose
+                1. Legal Heir NOC: Meaning &amp; Legal Purpose
               </h2>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  When an individual passes away in India without leaving a registered Will (known in law as dying
-                  intestate), their entire estate devolves upon their Class I legal heirs under Section 8 of the
-                  Hindu Succession Act, 1956, or the respective personal succession laws. In practice, surviving family
+                  When an single passes away in India without leaving a filed Will (known in law as dying
+                  no-Will), their entire estate devolves upon their Class I legal heirs under Section 8 of the
+                  Hindu Succession Act, 1956, or the respective personal estate laws. In practice, surviving family
                   members frequently agree that one specific legal heir—such as the surviving spouse, elder son, or
-                  daughter—should manage or hold the property, claim bank accounts, or register the family vehicle.
+                  daughter—should manage or hold the asset, claim bank accounts, or register the family vehicle.
                 </p>
                 <p>
-                  To achieve this administrative consolidation, banks, municipal bodies, and the Regional Transport
-                  Office (RTO) request a <strong>No Objection Certificate (NOC)</strong> or a <strong>No Objection Affidavit</strong>.
-                  Through this document, the other legal heirs solemnly state that they have no objection to the asset
+                  To achieve this office consolidation, banks, city bodies, and the Regional Transport
+                  Office (RTO) request a <strong>No Objection Paper (NOC)</strong> or a <strong>No Objection Sworn Note</strong>.
+                  Through this paper, the other legal heirs solemnly state that they have no objection to the asset
                   being recorded or disbursed in the applicant&apos;s name.
                 </p>
                 <p>
                   However, a widespread legal misunderstanding exists across India: <strong>many families assume that signing
                   an NOC on stamp paper permanently surrenders their legal ownership in family real estate</strong>. As detailed
-                  below, Indian courts have repeatedly rejected this assumption. An NOC is strictly an administrative
-                  discharge document; it cannot convey or extinguish title to immovable property.
+                  below, Indian courts have repeatedly rejected this assumption. An NOC is strictly an office
+                  discharge paper; it cannot convey or extinguish title to land asset.
                 </p>
               </div>
             </section>
@@ -550,11 +550,11 @@ Verified on oath at [City] on [Date]`;
                 <span>INTERACTIVE LEGAL TOOL</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                2. Interactive 4-in-1 Legal Heir NOC Generator
+                2. Free 4-in-1 Legal Heir NOC Generator
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Select your required NOC category below, enter the deceased parent&apos;s details, releasing heirs, and
-                asset identifiers. Our interactive engine instantly drafts the legally vetted certificate with state-specific
+                asset identifiers. Our free engine instantly drafts the legally vetted paper with state-specific
                 stamp paper clauses.
               </p>
 
@@ -570,7 +570,7 @@ Verified on oath at [City] on [Date]`;
                   }`}
                 >
                   <Building2 className="w-4 h-4 mx-auto mb-1" />
-                  Property Mutation
+                  Asset Name Change
                 </button>
                 <button
                   type="button"
@@ -652,7 +652,7 @@ Verified on oath at [City] on [Date]`;
 
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1">
-                      Beneficiary Legal Heir (Applicant)
+                      Heir Legal Heir (Applicant)
                     </label>
                     <input
                       type="text"
@@ -664,7 +664,7 @@ Verified on oath at [City] on [Date]`;
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1">
-                      Beneficiary Relationship
+                      Heir Relationship
                     </label>
                     <select
                       value={beneficiaryRelation}
@@ -679,7 +679,7 @@ Verified on oath at [City] on [Date]`;
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1">
-                      State / Jurisdiction
+                      State / Area
                     </label>
                     <select
                       value={stateJurisdiction}
@@ -692,7 +692,7 @@ Verified on oath at [City] on [Date]`;
                       <option value="Karnataka">Karnataka (Rs. 50 Stamp Paper)</option>
                       <option value="Tamil Nadu">Tamil Nadu (Rs. 20-100 Stamp Paper)</option>
                       <option value="West Bengal">West Bengal (Rs. 10-50 Stamp Paper)</option>
-                      <option value="Gujarat">Gujarat (Rs. 300 Affidavit Duty)</option>
+                      <option value="Gujarat">Gujarat (Rs. 300 Sworn Note Duty)</option>
                       <option value="Telangana">Telangana (Rs. 50-100 Stamp Paper)</option>
                     </select>
                   </div>
@@ -745,7 +745,7 @@ Verified on oath at [City] on [Date]`;
 
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Asset Identifier (Property Address / Bank A/c No / Vehicle Reg No)
+                    Asset Identifier (Asset Address / Bank A/c No / Vehicle Reg No)
                   </label>
                   <textarea
                     rows={2}
@@ -800,7 +800,7 @@ Verified on oath at [City] on [Date]`;
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
                     <FileText className="w-4 h-4 text-[#C65378]" />
-                    <span>Live Generated Certificate Preview</span>
+                    <span>Live Generated Paper Preview</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <button
@@ -851,15 +851,15 @@ Verified on oath at [City] on [Date]`;
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  The biggest trap in Indian inheritance administration occurs when legal heirs assume that signing
-                  an NOC at the local municipal corporation (e.g. MCD, BMC, BBMP, GHMC) permanently divests them of
-                  their co-ownership in ancestral or parental real estate.
+                  The biggest trap in Indian inheritance care occurs when legal heirs assume that signing
+                  an NOC at the local city city board (e.g. MCD, BMC, BBMP, GHMC) permanently divests them of
+                  their co-ownership in family or parental real estate.
                 </p>
                 <p>
-                  Under <strong>Section 17(1)(b) of the Registration Act, 1908</strong>, any non-testamentary instrument
+                  Under <strong>Section 17(1)(b) of the Filing Act, 1908</strong>, any non-Will instrument
                   that purports or operates to create, declare, assign, limit, or extinguish any right, title, or interest
-                  of the value of one hundred rupees and upwards to or in immovable property <strong>must be compulsorily
-                  registered</strong> at the Sub-Registrar Office (SRO).
+                  of the value of one hundred rupees and upwards to or in land asset <strong>must be compulsorily
+                  filed</strong> at the SRO office (SRO).
                 </p>
               </div>
 
@@ -875,28 +875,28 @@ Verified on oath at [City] on [Date]`;
                     the Hon&apos;ble Supreme Court held that:
                   </p>
                   <blockquote className="border-l-4 border-rose-500 pl-4 py-1 italic bg-white/70 rounded-r-xl text-slate-900">
-                    &ldquo;An unregistered deed or affidavit relinquishing an undivided share in immovable property cannot
-                    be received as evidence of any transaction affecting such property under Section 49 of the Registration
-                    Act. Nomenclature is not decisive; the legal consequence of relinquishing rights requires mandatory
-                    registration and payment of ad-valorem stamp duty.&rdquo;
+                    &ldquo;An plain deed or sworn note relinquishing an undivided share in land asset cannot
+                    be received as evidence of any transaction affecting such asset under Section 49 of the Filing
+                    Act. Nomenclature is not decisive; the legal consequence of relinquishing rights requires needed
+                    filing and payment of ad-valorem stamp duty.&rdquo;
                   </blockquote>
                   <p>
-                    Furthermore, in <em>Suraj Lamp &amp; Industries Pvt. Ltd. v. State of Haryana (2012) 1 SCC 656</em> and
+                    Also, in <em>Suraj Lamp &amp; Industries Pvt. Ltd. v. State of Haryana (2012) 1 SCC 656</em> and
                     <em>Bhimabai Mahadeo Kambekar v. Arthur Import &amp; Export Co. (2011) 3 SCC 238</em>, the Apex Court affirmed
-                    that <strong>mutation entries in municipal or revenue records do not confer, create, or extinguish title</strong>.
-                    They exist purely for the fiscal purpose of collecting land revenue and property taxes.
+                    that <strong>name change entries in city or revenue records do not confer, create, or extinguish title</strong>.
+                    They exist purely for the fiscal purpose of collecting land revenue and asset taxes.
                   </p>
                 </div>
 
                 <div className="pt-3 border-t border-rose-200 flex flex-col sm:flex-row items-center justify-between gap-3">
                   <span className="text-xs font-bold text-rose-950">
-                    Need to surrender immovable property title safely?
+                    Need to surrender land asset title safely?
                   </span>
                   <Link
                     href="/services/relinquishment-deed"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white text-xs font-extrabold shadow-xs transition-colors shrink-0"
                   >
-                    <span>Relinquishment Deed Drafting Service</span>
+                    <span>Release Deed Drafting Service</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -913,8 +913,8 @@ Verified on oath at [City] on [Date]`;
                 4. Legal Comparison: NOC vs Release Deed vs FSA
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Understand the precise statutory differences between an informal NOC, a registered Relinquishment
-                Deed, a Family Settlement Agreement (FSA), and a Gift Deed before executing any legal document.
+                Understand the precise legal differences between an informal NOC, a filed Release
+                Deed, a Family Deal Pact (FSA), and a Gift Deed before signing any legal paper.
               </p>
 
               <div className="overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-xs">
@@ -924,9 +924,9 @@ Verified on oath at [City] on [Date]`;
                       <th className="p-3.5 font-bold uppercase tracking-wider text-[11px]">Parameter</th>
                       <th className="p-3.5 font-bold uppercase tracking-wider text-[11px]">Plain Legal Heir NOC</th>
                       <th className="p-3.5 font-bold uppercase tracking-wider text-[11px] text-rose-300">
-                        Registered Release Deed
+                        Filed Release Deed
                       </th>
-                      <th className="p-3.5 font-bold uppercase tracking-wider text-[11px]">Family Settlement</th>
+                      <th className="p-3.5 font-bold uppercase tracking-wider text-[11px]">Family Deal</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -938,14 +938,14 @@ Verified on oath at [City] on [Date]`;
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
                       <td className="p-3.5 font-bold text-slate-900">Governing Statute</td>
-                      <td className="p-3.5">Administrative Guidelines</td>
-                      <td className="p-3.5">Registration Act Sec 17(1)(b)</td>
+                      <td className="p-3.5">Office Guidelines</td>
+                      <td className="p-3.5">Filing Act Sec 17(1)(b)</td>
                       <td className="p-3.5">Indian Contract Act &amp; Kale Rule</td>
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
-                      <td className="p-3.5 font-bold text-slate-900">Compulsory SRO Registration</td>
+                      <td className="p-3.5 font-bold text-slate-900">Needed SRO Filing</td>
                       <td className="p-3.5">No (Notarized only)</td>
-                      <td className="p-3.5 font-bold text-slate-900">Yes (Mandatory at SRO)</td>
+                      <td className="p-3.5 font-bold text-slate-900">Yes (Needed at SRO)</td>
                       <td className="p-3.5">Conditional (Deed vs Memo)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
@@ -956,19 +956,19 @@ Verified on oath at [City] on [Date]`;
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
                       <td className="p-3.5 font-bold text-slate-900">Revocability Risk</td>
-                      <td className="p-3.5 text-rose-700 font-semibold">Heir can revoke or challenge anytime</td>
+                      <td className="p-3.5 text-rose-700 font-semibold">Heir can revoke or fight anytime</td>
                       <td className="p-3.5 text-emerald-700 font-bold">Completely Irrevocable</td>
                       <td className="p-3.5">Irrevocable if acting on it</td>
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
-                      <td className="p-3.5 font-bold text-slate-900">Civil Partition Suit Risk</td>
+                      <td className="p-3.5 font-bold text-slate-900">Civil Split Suit Risk</td>
                       <td className="p-3.5 text-rose-700 font-semibold">High risk within 12 years</td>
                       <td className="p-3.5 text-emerald-700 font-bold">Zero risk (Permanently barred)</td>
                       <td className="p-3.5">Protected by Estoppel doctrine</td>
                     </tr>
                     <tr className="hover:bg-slate-50/60 transition-colors">
                       <td className="p-3.5 font-bold text-slate-900">Acceptance Scope</td>
-                      <td className="p-3.5">Banks, RTO, Municipal tax</td>
+                      <td className="p-3.5">Banks, RTO, City tax</td>
                       <td className="p-3.5">Banks, SRO, Courts, Buyers</td>
                       <td className="p-3.5">Family members, Courts</td>
                     </tr>
@@ -988,10 +988,10 @@ Verified on oath at [City] on [Date]`;
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  When a bank customer passes away without a registered nominee in their savings, current, or fixed
+                  When a bank customer passes away without a filed nominee in their savings, current, or fixed
                   deposit accounts, settling the balance can become protracted. Under the Reserve Bank of India (RBI)
                   Master Circular on Customer Service (Circular DBOD.No.Leg.BC.21/09.07.006/2014-15), banks are mandated
-                  to settle claims without insisting on a court-issued Succession Certificate up to internal threshold
+                  to settle claims without insisting on a court-issued Estate Paper up to internal threshold
                   limits (commonly Rs. 1 Lakh to Rs. 15 Lakhs depending on the bank).
                 </p>
                 <p>
@@ -999,19 +999,19 @@ Verified on oath at [City] on [Date]`;
                 </p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
-                    <strong>Deceased Claim Application:</strong> Submitted jointly by all Class I legal heirs or by one
+                    <strong>Deceased Claim Form:</strong> Submitted jointly by all Class I legal heirs or by one
                     heir with the explicit written consent of all other heirs.
                   </li>
                   <li>
-                    <strong>No Objection Certificate (Annexure-C):</strong> Signed by all non-claiming heirs declaring
+                    <strong>No Objection Paper (Annexure-C):</strong> Signed by all non-claiming heirs declaring
                     they waive rights to receive the payment and authorize payment to the designated applicant heir.
                   </li>
                   <li>
-                    <strong>Indemnity Bond (Annexure-A):</strong> Executed on non-judicial stamp paper with one or two
+                    <strong>Indemnity Bond (Annexure-A):</strong> Signed on non-judicial stamp paper with one or two
                     solvent sureties guaranteeing to indemnify the bank against any future conflicting claims.
                   </li>
                   <li>
-                    <strong>Legal Heir Certificate / Surviving Member Certificate:</strong> Issued by the local Tehsildar,
+                    <strong>Legal Heir Paper / Surviving Member Paper:</strong> Issued by the local Tehsildar,
                     Revenue Sub-Divisional Magistrate (SDM), or District Court.
                   </li>
                 </ul>
@@ -1025,26 +1025,26 @@ Verified on oath at [City] on [Date]`;
                 <span>CIVIC BODY PROTOCOLS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                6. Municipal Property Mutation &amp; Electricity NOC
+                6. City Asset Name Change &amp; Electricity NOC
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Municipal mutation (known variously as <em>Dakhil Kharij</em>, <em>Nagar Nigam Namantaran</em>, or
-                  <em>Khata transfer</em>) is the administrative process of updating property tax records from the
+                  City name change (known variously as <em>Dakhil Kharij</em>, <em>Nagar Nigam Namantaran</em>, or
+                  <em>Khata transfer</em>) is the office process of updating asset tax records from the
                   deceased owner&apos;s name to the surviving legal heirs.
                 </p>
                 <p>
-                  When one sibling or surviving spouse applies for mutation, civic corporations (such as MCD in Delhi,
-                  BMC in Mumbai, BBMP in Bengaluru, or GHMC in Hyderabad) require an affidavit and NOC from all other
-                  co-heirs confirming they consent to the name change. State power distribution companies (Discoms)
+                  When one sibling or surviving spouse applies for name change, civic corporations (such as MCD in Delhi,
+                  BMC in Mumbai, BBMP in Bengaluru, or GHMC in Hyderabad) require an sworn note and NOC from all other
+                  co-heirs confirming they consent to the name change. State power split companies (Discoms)
                   and water boards also require an identical NOC and indemnity bond to transfer electricity and water
                   meters.
                 </p>
                 <p>
-                  <strong>Practical Warning:</strong> Municipal mutation simply changes the taxpayer&apos;s name on civic
-                  records. If the property is subsequently sold to a third party or mortgaged for a bank loan, the buyer&apos;s
-                  advocate will mandate registered title deeds from all legal heirs. An NOC in municipal files does not
-                  suffice for property sale conveyancing!
+                  <strong>Practical Warning:</strong> City name change simply changes the taxpayer&apos;s name on civic
+                  records. If the asset is then sold to a third party or mortgaged for a bank loan, the buyer&apos;s
+                  lawyer will mandate filed title deeds from all legal heirs. An NOC in city files does not
+                  suffice for asset sale conveyancing!
                 </p>
               </div>
             </section>
@@ -1060,7 +1060,7 @@ Verified on oath at [City] on [Date]`;
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  Transferring vehicle ownership upon the death of the registered owner is governed by <strong>Section 50
+                  Transferring vehicle ownership upon the death of the filed owner is governed by <strong>Section 50
                   of the Motor Vehicles Act, 1988</strong> and <strong>Rule 56 of the Central Motor Vehicles Rules, 1989</strong>.
                 </p>
                 <p>
@@ -1068,16 +1068,16 @@ Verified on oath at [City] on [Date]`;
                 </p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
-                    The person succeeding to the possession of the vehicle must inform the Registering Authority within
+                    The person succeeding to the possession of the vehicle must inform the Registering Office within
                     <strong> 30 days</strong> of the owner&apos;s death.
                   </li>
                   <li>
-                    A formal application in <strong>RTO Form 31</strong> must be submitted within <strong>3 months</strong>
-                    along with the original Registration Certificate (RC), death certificate, valid insurance, pollution certificate (PUC),
-                    and proof of succession.
+                    A formal form in <strong>RTO Form 31</strong> must be submitted within <strong>3 months</strong>
+                    along with the original Filing Paper (RC), death paper, valid insurance, pollution paper (PUC),
+                    and proof of estate.
                   </li>
                   <li>
-                    Where more than one legal heir exists, the RTO insists on an <strong>NOC Affidavit from all other legal
+                    Where more than one legal heir exists, the RTO insists on an <strong>NOC Sworn Note from all other legal
                     heirs</strong> consenting to the vehicle RC being transferred exclusively to the applicant.
                   </li>
                 </ul>
@@ -1091,18 +1091,18 @@ Verified on oath at [City] on [Date]`;
                 <span>TESTAMENTARY JURISDICTION</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                8. Court Probate &amp; Succession Certificate Consent
+                8. Court Probate &amp; Estate Paper Consent
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   When an executor files a petition for Probate under Section 276 of the Indian Succession Act, 1925,
-                  or when legal heirs petition for a Succession Certificate under Section 372 for shares and mutual funds,
+                  or when legal heirs petition for a Estate Paper under Section 372 for shares and mutual funds,
                   the court issues official citations (summons) to all Class I legal heirs.
                 </p>
                 <p>
-                  To accelerate judicial proceedings and avoid contested litigation, legal heirs who agree with the Will&apos;s
-                  bequest can file a <strong>Consent Affidavit / No Objection Affidavit</strong>. By submitting this document,
-                  the heir explicitly admits the authenticity of the Will, confirms the mental soundness of the testator,
+                  To accelerate judicial proceedings and avoid contested court fights, legal heirs who agree with the Will&apos;s
+                  bequest can file a <strong>Consent Sworn Note / No Objection Sworn Note</strong>. By submitting this paper,
+                  the heir explicitly admits the authenticity of the Will, confirms the mental soundness of the Will maker,
                   and waives formal publication notices, enabling the court to grant probate smoothly.
                 </p>
               </div>
@@ -1111,7 +1111,7 @@ Verified on oath at [City] on [Date]`;
               <div className="rounded-2xl bg-gradient-to-r from-rose-50 to-emerald-50 border border-slate-200 p-5 space-y-2">
                 <div className="text-xs font-bold text-slate-900 flex items-center gap-2">
                   <Calculator className="w-4 h-4 text-[#C65378]" />
-                  <span>Verify Succession &amp; Probate Requirements Online</span>
+                  <span>Verify Estate &amp; Probate Rules Online</span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Unsure whether you need a Probate or how shares are split among siblings? Use our free legal tools:
@@ -1121,19 +1121,19 @@ Verified on oath at [City] on [Date]`;
                     href="/tools/probate-checker"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 hover:text-[#C65378] hover:border-rose-200 transition-colors shadow-2xs"
                   >
-                    Check Probate Mandatory Status &rarr;
+                    Check Probate Needed Status &rarr;
                   </Link>
                   <Link
                     href="/tools/succession-calculator"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 hover:text-[#C65378] hover:border-rose-200 transition-colors shadow-2xs"
                   >
-                    Hindu Legal Heir Share Calculator &rarr;
+                    Hindu Legal Heir Share Tool &rarr;
                   </Link>
                   <Link
                     href="/tools/capital-gains-tax-calculator-inherited-property"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 hover:text-[#C65378] hover:border-rose-200 transition-colors shadow-2xs"
                   >
-                    Inherited Property Capital Gains Calculator &rarr;
+                    Inherited Asset Capital Gains Tool &rarr;
                   </Link>
                 </div>
               </div>
@@ -1150,7 +1150,7 @@ Verified on oath at [City] on [Date]`;
               </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
-                  An administrative No Objection Certificate is typically drafted as an Affidavit and must be printed
+                  An office No Objection Paper is typically drafted as an Sworn Note and must be printed
                   on non-judicial stamp paper or e-stamp paper adhering to each state&apos;s Stamp Act:
                 </p>
               </div>
@@ -1162,7 +1162,7 @@ Verified on oath at [City] on [Date]`;
                     <tr className="bg-slate-100 text-slate-900 border-b border-slate-200">
                       <th className="p-3 font-bold">State / Territory</th>
                       <th className="p-3 font-bold">Recommended Stamp Paper</th>
-                      <th className="p-3 font-bold">Attestation Authority</th>
+                      <th className="p-3 font-bold">Witness Signing Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1188,7 +1188,7 @@ Verified on oath at [City] on [Date]`;
                     </tr>
                     <tr>
                       <td className="p-3 font-medium">West Bengal &amp; Gujarat</td>
-                      <td className="p-3">Rs. 50 to Rs. 300 Affidavit Duty</td>
+                      <td className="p-3">Rs. 50 to Rs. 300 Sworn Note Duty</td>
                       <td className="p-3">Notary Public / Executive Magistrate</td>
                     </tr>
                   </tbody>
@@ -1203,7 +1203,7 @@ Verified on oath at [City] on [Date]`;
                 <span>CASE STUDY ANALYSIS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                10. Judicial Precedents: Unregistered NOC Disputes
+                10. Judicial Precedents: Plain NOC Fights
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed">
                 {/* Case 1 */}
@@ -1214,10 +1214,10 @@ Verified on oath at [City] on [Date]`;
                   </div>
                   <p className="text-slate-600">
                     In 2014, two sisters signed a notarized NOC allowing their brother to mutate their deceased father&apos;s
-                    Bandra flat in the society share certificate. In 2023, when the brother attempted to sell the flat,
+                    Bandra flat in the society share paper. In 2023, when the brother attempted to sell the flat,
                     the buyer&apos;s legal team rejected the title. The sisters demanded their 1/3rd share each, citing that
-                    society membership mutation does not extinguish title under the Maharashtra Co-operative Societies Act.
-                    The brother was forced to pay Rs. 1.2 Crore to secure registered release deeds.
+                    society membership name change does not extinguish title under the Maharashtra Co-operative Societies Act.
+                    The brother was forced to pay Rs. 1.2 Crore to secure filed release deeds.
                   </p>
                 </div>
 
@@ -1225,11 +1225,11 @@ Verified on oath at [City] on [Date]`;
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>The Delhi SRO Clean Relinquishment</span>
+                    <span>The Delhi SRO Clean Release</span>
                   </div>
                   <p className="text-slate-600">
-                    A family in South Delhi sought legal counsel before property mutation. Rather than relying on a
-                    plain Rs. 10 NOC, our bench drafted and registered a formal Relinquishment Deed at the Sub-Registrar
+                    A family in South Delhi sought legal counsel before asset name change. Rather than relying on a
+                    plain Rs. 10 NOC, our bench drafted and filed a formal Release Deed at the SRO
                     Office under Section 17(1)(b). When the family later applied for a Rs. 3 Crore construction loan,
                     the bank approved the mortgage in 5 business days with zero title objections.
                   </p>
@@ -1244,14 +1244,14 @@ Verified on oath at [City] on [Date]`;
                 <span>COPY-PASTEABLE LEGAL CLAUSES</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                11. Ready-to-Use NOC Templates &amp; Verification Text
+                11. Ready-to-Use NOC Templates &amp; Check Text
               </h3>
 
               {/* Template Box 1: Municipal Mutation NOC */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Standard Municipal Property Mutation NOC Format
+                    Standard City Asset Name Change NOC Format
                   </div>
                   <button
                     type="button"
@@ -1336,7 +1336,7 @@ Signatures of Legal Heirs: [1], [2]`}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Statutory Notary &amp; Oath Commissioner Verification Clause
+                    Legal Notary &amp; Oath Commissioner Check Clause
                   </div>
                   <button
                     type="button"
@@ -1356,7 +1356,7 @@ Signatures of Legal Heirs: [1], [2]`}
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy Verification</span>
+                        <span>Copy Check</span>
                       </>
                     )}
                   </button>
@@ -1376,7 +1376,7 @@ NOTARY PUBLIC WITH SEAL`}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="font-extrabold text-sm text-slate-900">
-                    Pre-Submission Checklist: Documents Required with Legal Heir NOC
+                    Pre-Submission Checklist: Papers Required with Legal Heir NOC
                   </div>
                   <button
                     type="button"
@@ -1404,11 +1404,11 @@ NOTARY PUBLIC WITH SEAL`}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Original Death Certificate from Municipal Registrar</span>
+                    <span>Original Death Paper from City Registrar</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Legal Heir / Surviving Member Certificate</span>
+                    <span>Legal Heir / Surviving Member Paper</span>
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -1416,7 +1416,7 @@ NOTARY PUBLIC WITH SEAL`}
                   </div>
                   <div className="flex items-start gap-2 p-2 bg-slate-50 rounded-lg">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Non-judicial stamp paper with notary attestation</span>
+                    <span>Non-judicial stamp paper with notary witness signing</span>
                   </div>
                 </div>
               </div>
@@ -1438,20 +1438,20 @@ NOTARY PUBLIC WITH SEAL`}
                       POWERED BY AMA LEGAL SOLUTIONS
                     </div>
                     <div className="text-xl sm:text-2xl font-black text-slate-900">
-                      WillDrafting.in Succession &amp; Testamentary Bench
+                      WillDrafting.in Estate &amp; Will Bench
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Bar Council Verified Advocates</span>
+                    <span>Bar Council Checked Lawyers</span>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&apos;s leading legal technology platform for estate planning and succession
-                  resolution, operated in strategic partnership with AMA Legal Solutions. Our senior testamentary
-                  litigators, conveyancing counsels, and revenue advocates have structured over 15,000 challenge-proof
-                  Wills and advised thousands of families on dispute-free property transmission, registered release deeds,
+                  WillDrafting.in is India&apos;s leading legal technology platform for estate planning and estate
+                  resolution, operated in strategic partnership with AMA Legal Solutions. Our senior Will
+                  litigators, conveyancing counsels, and revenue lawyers have structured over 15,000 fight-proof
+                  Wills and advised thousands of families on fight-free asset transfer, filed release deeds,
                   and High Court probate petitions.
                 </p>
 
@@ -1461,21 +1461,21 @@ NOTARY PUBLIC WITH SEAL`}
                     href="/services/relinquishment-deed"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Relinquishment Deed Desk</span>
+                    <span>Release Deed Desk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/services/will-registration"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>SRO Will Registration</span>
+                    <span>SRO Will Filing</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
                     href="/contact"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
-                    <span>Advocate Consultation</span>
+                    <span>Lawyer Talk</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                 </div>
@@ -1530,34 +1530,34 @@ NOTARY PUBLIC WITH SEAL`}
                 <span>LEGAL CITATIONS &amp; PORTALS</span>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                14. Governing Statutes &amp; Official Legal Authorities
+                14. Governing Statutes &amp; Official Legal Offices
               </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900 mb-1">
-                    Governing Statutory Framework:
+                    Governing Legal Framework:
                   </div>
                   <ul className="list-disc pl-5 space-y-1 text-slate-600">
                     <li>
-                      <strong>Registration Act, 1908 s. 17(1)(b):</strong> Compulsory registration of instruments
-                      extinguishing or transferring rights in immovable property worth over Rs. 100.
+                      <strong>Filing Act, 1908 s. 17(1)(b):</strong> Needed filing of instruments
+                      extinguishing or transferring rights in land asset worth over Rs. 100.
                     </li>
                     <li>
                       <strong>Transfer of Property Act, 1882 s. 122 &amp; 123:</strong> Formalities for inter-vivos
-                      transfers, gifts, and relinquishment between co-owners.
+                      transfers, gifts, and release between co-owners.
                     </li>
                     <li>
-                      <strong>Banking Regulation Act, 1949 s. 45ZA-ZF:</strong> Nominee discharge and claim settlement
+                      <strong>Banking Regulation Act, 1949 s. 45ZA-ZF:</strong> Nominee discharge and claim deal
                       rules for deceased account holders.
                     </li>
                     <li>
-                      <strong>Central Motor Vehicles Rules, 1989 Rule 56:</strong> RTO Form 31 procedure for motor vehicle
-                      transfer upon demise of the registered owner.
+                      <strong>Central Motor Vehicles Rules, 1989 Rule 56:</strong> RTO Form 31 step for motor vehicle
+                      transfer upon demise of the filed owner.
                     </li>
                     <li>
-                      <strong>Indian Succession Act, 1925 s. 213 &amp; 372:</strong> Probate requirements in presidency
-                      towns and court Succession Certificates for movable assets.
+                      <strong>Indian Succession Act, 1925 s. 213 &amp; 372:</strong> Probate rules in presidency
+                      towns and court Estate Papers for cash assets.
                     </li>
                   </ul>
                 </div>
@@ -1569,7 +1569,7 @@ NOTARY PUBLIC WITH SEAL`}
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
                   >
-                    <span>India Code: Registration Act</span>
+                    <span>India Code: Filing Act</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
@@ -1594,20 +1594,20 @@ NOTARY PUBLIC WITH SEAL`}
 
                 <div className="pt-3 border-t border-slate-100 space-y-2">
                   <div className="font-bold text-slate-900 uppercase tracking-wider text-[11px]">
-                    Related WillDrafting Guides &amp; Succession Templates
+                    Related WillDrafting Guides &amp; Estate Templates
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/templates/release-deed-format"
                       className="px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 font-bold"
                     >
-                      Relinquishment Deed Format
+                      Release Deed Format
                     </Link>
                     <Link
                       href="/templates/family-settlement-agreement-format-india"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Family Settlement Agreement
+                      Family Deal Pact
                     </Link>
                     <Link
                       href="/templates/will-format-india"
@@ -1619,19 +1619,41 @@ NOTARY PUBLIC WITH SEAL`}
                       href="/services/relinquishment-deed"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Relinquishment Deed Legal Service
+                      Release Deed Legal Service
                     </Link>
                     <Link
                       href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
-                      Sub-Registrar Will Registration
+                      SRO Will Filing
                     </Link>
                   </div>
                 </div>
               </div>
             </section>
-          </main>
+          
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A clear Will keeps your spouse and kids safe. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Do not wait to put your plan in writing.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Simple Plain Paper Rules</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can write a Will on plain white paper. No stamp paper is needed in India. Sign it in front of two adult witnesses. Each witness signs in your view to make it valid.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      </main>
 
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR
@@ -1644,21 +1666,21 @@ NOTARY PUBLIC WITH SEAL`}
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Lawyer Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
-                    Senior Succession Counsel
+                    Senior Estate Counsel
                   </div>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Specialist in Indian testamentary jurisprudence, High Court probate disputes, Registration
-                Act Section 17 title conveyancing, and family inheritance settlements.
+                Expert in Indian testamentary jurisprudence, High Court probate fights, Filing
+                Act Section 17 title conveyancing, and family estate settlements.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
                 <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Verified Counsel</span>
+                  <span>Checked Counsel</span>
                 </span>
               </div>
             </div>
@@ -1675,15 +1697,15 @@ NOTARY PUBLIC WITH SEAL`}
                   Protect Your Children from Co-Heir NOC Lawsuits
                 </h3>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  A legally registered Will leaves zero ambiguity, eliminating the requirement for complex
-                  NOCs, affidavits, or costly partition litigation after your lifetime.
+                  A legally filed Will leaves zero ambiguity, eliminating the rule for complex
+                  NOCs, sworn notes, or costly split court fights after your lifetime.
                 </p>
                 <button
                   onClick={handleStartDraft}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>Draft Challenge-Proof Will Now</span>
+                  <span>Draft Fight-Proof Will Now</span>
                 </button>
               </div>
 
@@ -1694,10 +1716,10 @@ NOTARY PUBLIC WITH SEAL`}
                   <span>SURRENDERING PROPERTY TITLE?</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
-                  Get a Registered Relinquishment Deed Drafted
+                  Get a Filed Release Deed Drafted
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Avoid the trap of plain NOCs. Our High Court advocates draft irrevocable, SRO-registered
+                  Avoid the trap of plain NOCs. Our High Court lawyers draft irrevocable, SRO-filed
                   Release Deeds ensuring absolute title transfer across India.
                 </p>
                 <Link
@@ -1705,13 +1727,13 @@ NOTARY PUBLIC WITH SEAL`}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#172228] hover:bg-slate-800 text-white font-extrabold text-xs shadow-xs transition-transform hover:-translate-y-0.5"
                 >
                   <Building2 className="w-3.5 h-3.5 text-rose-300" />
-                  <span>Explore Relinquishment Deed Desk</span>
+                  <span>Explore Release Deed Desk</span>
                 </Link>
                 <Link
                   href="/contact"
                   className="block text-xs font-bold text-[#C65378] hover:underline pt-1"
                 >
-                  Schedule Advocate Consultation &rarr;
+                  Schedule Lawyer Talk &rarr;
                 </Link>
               </div>
 
@@ -1724,7 +1746,7 @@ NOTARY PUBLIC WITH SEAL`}
                 <div className="space-y-2 text-[11px] text-slate-600">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Registration Act 1908 Section 17 Compliant</span>
+                    <span>Filing Act 1908 Section 17 Compliant</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />

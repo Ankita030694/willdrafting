@@ -147,7 +147,7 @@ export default function EstateAssetInventoryPage() {
             name: "Why is a family asset inventory list essential in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Over ₹78,000 Crores of unclaimed funds currently lie abandoned in Indian banks (transferred to the RBI DEA Fund / UDGAM portal) and IEPF (unclaimed shares and dividends). Without a comprehensive written or printable asset dossier, surviving spouses and children frequently have no knowledge of existing fixed deposits, demat folios, PPF accounts, or life insurance policies.",
+              text: "Over ₹78,000 Crores of unclaimed funds currently lie abandoned in Indian banks (transferred to the RBI DEA Fund / UDGAM portal) and IEPF (unclaimed shares and dividends). Without a full written or printable asset dossier, surviving spouses and children frequently have no knowledge of existing fixed deposits, demat folios, PPF accounts, or life insurance policies.",
             },
           },
           {
@@ -155,7 +155,7 @@ export default function EstateAssetInventoryPage() {
             name: "Does a nominee become the absolute legal owner of assets after death in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. The Supreme Court of India in landmark judgments including Sarbati Devi (1984) and Shakti Yezdani (2023) established that a nominee is merely a statutory trustee or custodian authorized to receive funds. Beneficial ownership remains with the legal heirs named in a valid Will, or governed by personal succession laws (such as the Hindu Succession Act, 1956).",
+              text: "No. The Supreme Court of India in landmark judgments including Sarbati Devi (1984) and Shakti Yezdani (2023) established that a nominee is merely a legal trustee or custodian authorized to receive funds. Beneficial ownership remains with the legal heirs named in a valid Will, or governed by personal estate laws (such as the Hindu Succession Act, 1956).",
             },
           },
           {
@@ -171,7 +171,7 @@ export default function EstateAssetInventoryPage() {
             name: "What is an Emergency Red File or Death Folder?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Emergency Red File (popularized across Indian personal finance communities) is a centralized physical and digital dossier containing property deeds, bank account rosters, insurance policy numbers, loan schedules, locker keys location, and your registered Will. It ensures that in the event of incapacitation or sudden demise, the family can instantly step in without facing financial paralysis.",
+              text: "An Emergency Red File (popularized across Indian personal finance communities) is a centralized physical and digital dossier containing asset deeds, bank account rosters, insurance policy numbers, loan schedules, locker keys location, and your filed Will. It ensures that in the event of incapacitation or sudden demise, the family can instantly step in without facing financial paralysis.",
             },
           },
           {
@@ -179,7 +179,7 @@ export default function EstateAssetInventoryPage() {
             name: "How does Section 317 of the Indian Succession Act, 1925 govern estate inventories?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Section 317 mandates that every executor or administrator of an estate must exhibit an exact inventory of all property in possession and credits belonging to the deceased within six months of obtaining probate or letters of administration. Maintaining an up-to-date asset roster during life ensures seamless compliance and avoids court citations.",
+              text: "Section 317 mandates that every executor or head of an estate must exhibit an exact inventory of all asset in possession and credits belonging to the deceased within six months of obtaining probate or letters of care. Maintaining an up-to-date asset roster during life ensures seamless compliance and avoids court citations.",
             },
           },
           {
@@ -187,7 +187,7 @@ export default function EstateAssetInventoryPage() {
             name: "What are legal heirs' liabilities for the deceased's debts under Section 159 of the Income Tax Act?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Section 159 of the Income Tax Act, 1961, legal representatives are liable to pay taxes due from the deceased only to the extent to which the estate is capable of meeting the liability. Heirs are not personally liable beyond the net inherited estate value.",
+              text: "Under Section 159 of the Income Tax Act, 1961, legal agents are liable to pay taxes due from the deceased only to the extent to which the estate is capable of meeting the liability. Heirs are not personally liable beyond the net inherited estate value.",
             },
           },
           {
@@ -195,7 +195,7 @@ export default function EstateAssetInventoryPage() {
             name: "Can I convert this asset inventory directly into a legally binding Will?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. An asset inventory provides the exact schedule of assets required in a challenge-proof Will. You can use our self-serve Will drafting wizard to attach this schedule directly as Schedule of Properties, specifying specific legatees for each asset.",
+              text: "Yes. An asset inventory provides the exact schedule of assets required in a fight-proof Will. You can use our self-serve Will drafting wizard to attach this schedule directly as Schedule of Assets, specifying specific legatees for each asset.",
             },
           },
           {

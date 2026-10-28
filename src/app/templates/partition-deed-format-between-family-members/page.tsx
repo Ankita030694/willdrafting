@@ -90,7 +90,7 @@ export default function PartitionDeedFormatPage() {
         url: canonicalUrl,
         name: "Partition Deed Format Between Brothers India | WillDrafting",
         description:
-          "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.",
+          "Download legally valid split deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function PartitionDeedFormatPage() {
         name: "Partition Deed Format Between Brothers & Family Members India",
         url: canonicalUrl,
         description:
-          "Comprehensive statutory registered partition deed template for dividing ancestral and multi-floor family real estate in India, compliant with.",
+          "Full legal filed split deed template for dividing family and multi-floor family real estate in India, compliant with.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -151,7 +151,7 @@ export default function PartitionDeedFormatPage() {
             name: "What is a Partition Deed under Indian property law?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Partition Deed is an official legal instrument governed by Section 2(15) of the Indian Stamp Act, 1899 and Section 17 of the Registration Act, 1908. It legally divides jointly owned or ancestral property among co-owners or legal heirs, severing joint title and converting joint tenancy into separate, distinct, and individual ownership.",
+              text: "A Split Deed is an official legal instrument governed by Section 2(15) of the Indian Stamp Act, 1899 and Section 17 of the Filing Act, 1908. It legally divides jointly owned or family asset among co-owners or legal heirs, severing joint title and converting joint tenancy into separate, distinct, and single ownership.",
             },
           },
           {
@@ -159,7 +159,7 @@ export default function PartitionDeedFormatPage() {
             name: "Is registration of a Partition Deed mandatory in India?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under Section 17(1)(b) of the Registration Act, 1908, any non-testamentary instrument that creates, declares, assigns, limits, or extinguishes any right, title, or interest in immovable property valued over ₹100 must be registered with the Sub-Registrar. Under Section 49, an unregistered partition deed cannot affect title or be admitted as evidence of partition.",
+              text: "Yes. Under Section 17(1)(b) of the Filing Act, 1908, any non-Will instrument that creates, declares, assigns, limits, or extinguishes any right, title, or interest in land asset valued over ₹100 must be filed with the SRO. Under Section 49, an plain split deed cannot affect title or be admitted as evidence of split.",
             },
           },
           {
@@ -167,7 +167,7 @@ export default function PartitionDeedFormatPage() {
             name: "How does a Partition Deed differ from a Family Settlement Agreement?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A Partition Deed operates in praesenti, creating new separate legal titles on the spot and requiring full registration and statutory stamp duty. In contrast, a Memorandum of Family Settlement (as upheld in Kale v. Dy. Director of Consolidation) merely records a past oral arrangement, settling antecedent claims without creating new title, often requiring lower stamp duty.",
+              text: "A Split Deed operates in praesenti, creating new separate legal titles on the spot and requiring full filing and legal stamp duty. In contrast, a Memorandum of Family Deal (as upheld in Kale v. Dy. Director of Consolidation) merely records a past oral arrangement, settling antecedent claims without creating new title, often requiring lower stamp duty.",
             },
           },
           {
@@ -175,7 +175,7 @@ export default function PartitionDeedFormatPage() {
             name: "How are multi-story residential houses divided among brothers?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When dividing a multi-floor residential building, the deed must incorporate four specific schedules: Schedule A for the entire land and building, Schedule B allocating a specific floor and proportionate Undivided Share of Land (UDS) to the first brother, Schedule C allocating another floor and UDS to the second brother, and Schedule D governing shared easements like staircases, terrace access, and water tanks.",
+              text: "When dividing a multi-floor home building, the deed must incorporate four specific schedules: Schedule A for the entire land and building, Schedule B allocating a specific floor and proportionate Undivided Share of Land (UDS) to the first brother, Schedule C allocating another floor and UDS to the second brother, and Schedule D governing shared easements like staircases, terrace access, and water tanks.",
             },
           },
           {
@@ -183,7 +183,7 @@ export default function PartitionDeedFormatPage() {
             name: "What is an Owelty clause in a partition deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An Owelty (or Owlat) clause provides for monetary equalization when immovable properties cannot be divided into mathematically equal portions. The co-sharer receiving a more valuable physical portion (e.g. Ground Floor or commercial frontage) pays an agreed sum of cash compensation to equalize the shares, which is completely tax-exempt under Section 47(i) of the Income Tax Act.",
+              text: "An Owelty (or Owlat) clause provides for monetary equalization when land assets cannot be divided into mathematically equal portions. The co-sharer receiving a more valuable physical portion (e.g. Ground Floor or shop frontage) pays an agreed sum of cash compensation to equalize the shares, which is completely tax-exempt under Section 47(i) of the Income Tax Act.",
             },
           },
           {
@@ -191,7 +191,7 @@ export default function PartitionDeedFormatPage() {
             name: "Do daughters have equal coparcenary rights in a family partition deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. Under the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal coparcenary rights by birth in ancestral property under Section 6 of the Hindu Succession Act. A family partition deed that excludes daughters without their registered Relinquishment Deed (Haq Tyag) is voidable and can be set aside by civil courts.",
+              text: "Yes. Under the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma (2020), daughters have equal joint rights by birth in family asset under Section 6 of the Hindu Succession Act. A family split deed that excludes daughters without their filed Release Deed (Haq Tyag) is voidable and can be set aside by civil courts.",
             },
           },
           {
@@ -199,7 +199,7 @@ export default function PartitionDeedFormatPage() {
             name: "How much stamp duty is payable on a partition deed between family members?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Stamp duty varies by state. Most states offer concessional rates for partition deeds among blood relatives. For example, Maharashtra levies a nominal duty of ₹200 to ₹500, Delhi charges 1% to 2%, Karnataka applies slab-based flat duties (₹1,000 to ₹5,000 for urban family partitions), and Uttar Pradesh charges 1% of the value of the separated shares.",
+              text: "Stamp duty varies by state. Most states offer concessional rates for split deeds among blood relatives. For example, Maharashtra levies a nominal duty of ₹200 to ₹500, Delhi charges 1% to 2%, Karnataka applies slab-based flat duties (₹1,000 to ₹5,000 for urban family partitions), and Uttar Pradesh charges 1% of the value of the separated shares.",
             },
           },
           {
@@ -207,7 +207,7 @@ export default function PartitionDeedFormatPage() {
             name: "Does executing a partition deed attract capital gains tax?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets on the total or partial partition of a Hindu Undivided Family (HUF) or among co-owners is expressly excluded from the definition of transfer under Section 45. No capital gains tax or income tax is payable on a genuine partition.",
+              text: "No. Under Section 47(i) of the Income Tax Act, 1961, any split of capital assets on the total or partial split of a Hindu Undivided Family (HUF) or among co-owners is expressly excluded from the definition of transfer under Section 45. No capital gains tax or income tax is payable on a genuine split.",
             },
           },
           {
@@ -215,7 +215,7 @@ export default function PartitionDeedFormatPage() {
             name: "What happens if one brother refuses to sign the partition deed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "If a co-owner refuses to execute a mutual partition deed, the remaining co-sharers must file a Civil Partition Suit under Order XX Rule 18 of the Code of Civil Procedure (CPC) in the jurisdictional civil court. The court will determine individual shares in a Preliminary Decree and physically divide the assets through a Court Commissioner in a Final Decree.",
+              text: "If a co-owner refuses to execute a mutual split deed, the remaining co-sharers must file a Civil Split Suit under Order XX Rule 18 of the Code of Civil Step (CPC) in the local civil court. The court will determine single shares in a Preliminary Decree and physically divide the assets through a Court Commissioner in a Final Decree.",
             },
           },
           {
@@ -223,7 +223,7 @@ export default function PartitionDeedFormatPage() {
             name: "What documents are required to register a partition deed at the Sub-Registrar Office?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "You require: (1) Original parent title deeds or registered sale deeds of the property, (2) Non-judicial e-stamp paper with paid duty, (3) Architectural site plan showing floor-wise demarcation, (4) Municipal tax paid receipts and Khata/mutation extract, (5) Non-Encumbrance Certificate (EC), and (6) Original Aadhaar and PAN cards of all co-sharers and two independent adult witnesses.",
+              text: "You require: (1) Original parent title deeds or filed sale deeds of the asset, (2) Non-judicial e-stamp paper with paid duty, (3) Architectural site plan showing floor-wise demarcation, (4) City tax paid receipts and Khata/name change extract, (5) Non-Encumbrance Paper (EC), and (6) Original Aadhaar and PAN cards of all co-sharers and two independent adult witnesses.",
             },
           },
         ],

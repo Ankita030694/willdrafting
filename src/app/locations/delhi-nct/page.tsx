@@ -135,7 +135,7 @@ export default function DelhiNCTLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Delhi NCT: Registration & Succession",
         description:
-          "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice.",
+          "Draft a valid Will in NCT of Delhi. Complete DORIS portal filing support, DDA/MCD asset name change, and non-presidency probate advice.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -182,7 +182,7 @@ export default function DelhiNCTLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Delhi NCT - Legal Estate Planning & DORIS Registration",
         description:
-          "Professional Will drafting, advocate verification, DORIS portal registration, and doorstep execution support across all 11 revenue districts.",
+          "Professional Will drafting, lawyer check, DORIS portal filing, and doorstep signing support across all 11 revenue districts.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",
@@ -255,14 +255,14 @@ export default function DelhiNCTLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Delhi NCT",
         description:
-          "Five clear steps to create a legally binding Will and register it before the Sub-Registrar in Delhi NCT.",
+          "Five clear steps to create a legally binding Will and register it before the SRO in Delhi NCT.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
             name: "List Your Delhi Assets and Beneficiaries",
-            text: "List your Delhi properties including DDA flats, builder floors, bank deposits, mutual funds, and demat shares. Name your beneficiaries and an executor.",
+            text: "List your Delhi assets including DDA flats, builder floors, bank deposits, mutual funds, and demat shares. Name your heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -274,19 +274,19 @@ export default function DelhiNCTLocationPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Witnesses",
-            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not beneficiaries.",
+            text: "Print the Will on plain A4 paper and sign each page in the presence of two independent adult witnesses who are not heirs.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Delhi SRO Appointment on DORIS Portal",
-            text: "Book an e-appointment on the DORIS portal (doris.delhiservices.gov.in) for your local Sub-Registrar office and pay the nominal ₹100 registration fee.",
+            text: "Book an e-appointment on the DORIS portal (doris.delhiservices.gov.in) for your local SRO office and pay the nominal ₹100 filing fee.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometric Verification at Delhi SRO",
-            text: "Visit the Sub-Registrar office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III registration.",
+            text: "Visit the SRO office with your two witnesses and original IDs for biometric fingerprinting, digital photo capture, and official Book III filing.",
           },
         ],
       },
