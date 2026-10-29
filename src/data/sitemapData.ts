@@ -2361,6 +2361,22 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Can NRI Hold Joint Bank Account or Property with Parents?",
+    href: "/blogs/nri-joint-holding-with-resident-parents-in-indian-bank-and-property",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "OCI Card Cancellation: Impact on Inherited Indian Property",
+    href: "/blogs/oci-card-cancellation-or-renunciation-impact-on-inherited-indian-property",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
