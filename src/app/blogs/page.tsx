@@ -10,8 +10,7 @@ import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
 import { blogImagesCol, blogsCol } from "@/lib/db/collections";
 
-// Cache for 1 hour with Next.js ISR for instantaneous (<50ms) CDN response times
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: {
