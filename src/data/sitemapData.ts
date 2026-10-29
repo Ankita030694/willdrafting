@@ -2241,6 +2241,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "FEMA Rules: NRI & OCI Inheriting Agricultural Land India",
+    href: "/blogs/fema-rules-nri-oci-inheriting-agricultural-land-farmhouse-india",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
