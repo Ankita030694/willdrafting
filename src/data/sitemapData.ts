@@ -2377,6 +2377,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "What If Original Will Is Lost or Destroyed in India?",
+    href: "/blogs/lost-or-destroyed-will-how-to-prove-and-probate-copy-section-237",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
