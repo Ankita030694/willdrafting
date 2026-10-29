@@ -27,3 +27,23 @@ Before creating or modifying any page, blog post, location guide, service page, 
 7. **Content Readability (Flesch Reading Ease ≥ 50.0):** Every indexable page must maintain a Flesch Reading Ease score **≥ 50.0** (aim for **≥ 55.0**, zero `Very Hard` or `Hard` pages) by using concise sentences and plain 1–2 syllable words alongside statutory terms.
 8. **Automated Verification:** Run `node scripts/seo-audit-check.mjs` before committing new or modified pages.
 
+# Mandatory Blog Publish → Git → Live Deployment Workflow
+
+**Every blog that is generated and published to MongoDB MUST also be committed and pushed to GitHub.** The live site (https://www.willdrafting.in) is deployed via Vercel from the `main` branch of the GitHub repository. Changes to MongoDB alone are NOT sufficient — the static `page.tsx` route file and OG images must also be committed.
+
+## After running any `publish-*.mjs` script, ALWAYS run:
+
+```bash
+node scripts/git-publish-blog.mjs <blog-slug>
+```
+
+This single command stages the blog's `src/app/blogs/<slug>/page.tsx`, its `public/images/<slug>.jpg` / `<slug>-og.jpg` images, and `src/data/sitemapData.ts`, then commits and pushes to GitHub, triggering a Vercel redeploy within ~1–2 minutes.
+
+### Full Blog Generation Checklist (in order):
+
+1. Write and run the `scripts/publish-<slug>.mjs` script — inserts to MongoDB as `status: "PUBLISHED"`, creates `src/app/blogs/<slug>/page.tsx`, and updates `src/data/sitemapData.ts`.
+2. Verify the blog renders correctly at `http://localhost:3000/blogs/<slug>`.
+3. **Run `node scripts/git-publish-blog.mjs <slug>`** — commits and pushes everything to GitHub → Vercel redeploys → blog goes live at `https://www.willdrafting.in/blogs/<slug>` within ~2 minutes.
+
+> **Never skip step 3.** A blog that exists only in MongoDB and local files but is not committed will appear on localhost but will NOT be visible on the live website.
+
