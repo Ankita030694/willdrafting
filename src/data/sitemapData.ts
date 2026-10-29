@@ -2177,6 +2177,30 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Reverse Mortgage Loan Settlement After Death of Senior Citizen",
+    href: "/blogs/senior-citizen-reverse-mortgage-loan-settlement-after-death-india",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "HUF Bank Account and Demat Continuation After Karta Death",
+    href: "/blogs/huf-bank-account-and-demat-continuation-after-karta-death",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Claim Health Insurance Reimbursement After Patient Death",
+    href: "/blogs/medical-reimbursement-and-health-insurance-claim-after-patient-death",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
