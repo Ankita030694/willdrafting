@@ -1969,6 +1969,46 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Separated Spouse Property Rights in India | WillDrafting",
+    href: "/blogs/estranged-spouse-separation-without-divorce-inheritance-rights",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Estate Planning for Childless Couples | WillDrafting",
+    href: "/blogs/elderly-childless-couple-estate-planning-charity-relatives-india",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Society Flat Transfer After Death: Guide | WillDrafting",
+    href: "/blogs/cooperative-housing-society-flat-transfer-after-death-maharashtra-delhi",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Under Construction Flat Transfer After Death | RERA",
+    href: "/blogs/under-construction-flat-inheritance-after-buyer-death-rera",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Home Loan After Death of Borrower in India | WillDrafting",
+    href: "/blogs/home-loan-after-death-of-borrower-legal-heir-liability-india",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
