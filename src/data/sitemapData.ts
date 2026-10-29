@@ -2337,6 +2337,30 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "FEMA Restrictions: Pakistan & Bangladesh Heirs in India",
+    href: "/blogs/pakistani-bangladeshi-sri-lankan-citizen-inheritance-fema-enemy-property-act",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "How NRI Can Protect Inherited Property in India From Relatives",
+    href: "/blogs/nri-disputed-ancestral-property-illegal-possession-by-relatives-remedies",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "NRI Probate & Succession in India: Remote Video Hearing Guide",
+    href: "/blogs/video-kyc-and-virtual-court-hearing-for-nris-in-indian-probate-cases",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
