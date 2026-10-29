@@ -2321,6 +2321,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Resident Indian Inheriting Foreign Property & Stocks: FEMA Rules",
+    href: "/blogs/resident-indian-inheriting-foreign-bank-account-us-stocks-fema-rules",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
