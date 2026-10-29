@@ -2201,6 +2201,46 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "US NRI Inheriting Property in India: IRS Tax Rules",
+    href: "/blogs/us-citizen-green-card-nri-indian-property-will-irs-form-3520-706",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "How to Bequeath Art, Antiques and Luxury Watches in Will in India",
+    href: "/blogs/painting-antiques-high-value-art-watch-collection-bequest-will-india",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Canadian NRI Inheriting Property in India CRA Tax Rules",
+    href: "/blogs/canada-nri-oci-indian-inheritance-cra-deemed-disposition-form-t1135",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Australia & Singapore NRI Indian Property Inheritance & CGT Rules",
+    href: "/blogs/australia-singapore-nri-indian-property-inheritance-cgt-rules",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Dubai NRI Will for UAE and Indian Property",
+    href: "/blogs/uae-dubai-expat-nri-difc-will-vs-indian-will-property",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
