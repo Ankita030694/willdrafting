@@ -2329,6 +2329,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "DTAA on Sale of Inherited Property in India by NRI Guide",
+    href: "/blogs/india-double-taxation-avoidance-agreement-dtaa-inheritance-capital-gains",
+    category: "Guides",
+    date: "29-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
