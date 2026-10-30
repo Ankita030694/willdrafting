@@ -2585,6 +2585,38 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Can Unregistered Will Cancel Registered Will in India",
+    href: "/blogs/can-registered-will-be-cancelled-or-overridden-by-unregistered-will",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Check If Deceased Father Left a Registered Will in India",
+    href: "/blogs/how-to-find-if-deceased-person-left-a-registered-will-sub-registrar-search",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Where to Keep Original Will Safely in India | WillDrafting",
+    href: "/blogs/who-should-keep-original-will-safely-in-india-locker-vs-executor-trap",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Difference Between Mutation Dakhil Kharij and Title Ownership Supreme Court",
+    href: "/blogs/difference-between-mutation-dakhil-kharij-and-title-ownership-supreme-court",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
