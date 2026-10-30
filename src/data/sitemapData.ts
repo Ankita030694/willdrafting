@@ -2577,6 +2577,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "What If Executor of Will Refuses to Act or Steals Property",
+    href: "/blogs/executor-misappropriating-estate-or-delaying-distribution-legal-remedies",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
