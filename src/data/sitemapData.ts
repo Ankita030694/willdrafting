@@ -2449,6 +2449,22 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Partition Suit Among Brothers and Sisters in India",
+    href: "/blogs/partition-suit-among-brothers-and-sisters-preliminary-final-decree-india",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Can a Brother Sell Undivided Share of Family Property?",
+    href: "/blogs/can-co-owner-legal-heir-sell-undivided-share-of-inherited-property-sec-44",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
