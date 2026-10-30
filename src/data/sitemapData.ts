@@ -2569,6 +2569,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Payment of Debts & Abatement of Legacies in India",
+    href: "/blogs/abatement-of-legacies-when-deceased-debts-exceed-estate-assets-india",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
