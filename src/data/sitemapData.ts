@@ -2513,6 +2513,22 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Is Thumb Impression Valid on a Will in India? Complete Legal Guide",
+    href: "/blogs/thumb-impression-on-will-illiterate-blind-parkinsons-bedridden-testator",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Sub Registrar Home Visit for Bedridden Will Registration",
+    href: "/blogs/home-visit-by-sub-registrar-for-bedridden-hospitalized-will-registration-sec-31",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
