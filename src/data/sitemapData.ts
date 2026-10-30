@@ -2553,6 +2553,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Property in Will Sold Before Death: Ademption Rules",
+    href: "/blogs/ademption-of-legacy-what-if-property-mentioned-in-will-is-sold-before-death",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
