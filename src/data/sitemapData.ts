@@ -2561,6 +2561,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Beneficiary Dies Before Testator: Section 105 & 109 ISA",
+    href: "/blogs/lapse-of-legacy-what-if-beneficiary-dies-before-testator-section-105-109",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
