@@ -26,6 +26,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { sanitizeMobileInput, isValidMobile, MOBILE_ERROR_MSG } from "@/lib/validation";
 import { sanitizeNameInput, normalizeEmail } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface Step7GuardiansProps {
   state?: WillDraftingState;
@@ -315,8 +316,12 @@ export default function Step7Guardians({
                 border: "1px solid rgba(27, 42, 74, 0.06)",
               }}
             >
-              <span style={{ fontSize: "0.8rem", color: "var(--color-navy)", fontWeight: 600 }}>
-                {isHi ? "भविष्य के लिए: यदि भविष्य में कोई बच्चा हो तो उसके लिए बैकअप गार्जियन जोड़ें" : "Future-proofing: Add a backup guardian for any future children"}
+              <span style={{ display: "inline-flex", alignItems: "center", fontSize: "0.8rem", color: "var(--color-navy)", fontWeight: 600 }}>
+                <span>{isHi ? "भविष्य के लिए: यदि भविष्य में कोई बच्चा हो तो उसके लिए बैकअप गार्जियन जोड़ें" : "Future-proofing: Add a backup guardian for any future children"}</span>
+                <InfoTooltip
+                  text="Even if you don't have minor children under 18 right now, switching this ON inserts a protective future-guardianship clause in case you have or adopt children later."
+                  hindiText="भले ही वर्तमान में आपके 18 वर्ष से कम आयु के बच्चे न हों, इसे चालू (ON) करने से भविष्य में होने वाले या गोद लिए गए बच्चों के लिए एक सुरक्षात्मक कानूनी अभिभावक प्रावधान जुड़ जाता है।"
+                />
               </span>
               <AppleSwitch checked={enableFutureClause} onChange={setEnableFutureClause} />
             </div>
@@ -435,8 +440,12 @@ export default function Step7Guardians({
 
               <div className="role-inputs-grid">
                 <div>
-                  <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Full Legal Name *
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}</span>
+                    <InfoTooltip
+                      text="Enter the full legal name of the trusted adult (18+) who will take care of your minor children (<18 years) in the event both natural parents pass away. Recognised under Section 9 of the Hindu Minority and Guardianship Act, 1956 and the Guardians and Wards Act, 1890."
+                      hindiText="उस विश्वसनीय वयस्क (18+) का पूरा कानूनी नाम दर्ज करें जो दोनों माता-पिता के न रहने की स्थिति में आपके नाबालिग बच्चों (<18 वर्ष) की देखभाल करेगा। हिंदू अप्राप्तवयता और संरक्षकता अधिनियम, 1956 की धारा 9 के तहत मान्य।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -456,8 +465,12 @@ export default function Step7Guardians({
                   />
                 </div>
                 <div>
-                  <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Relationship *
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "संबंध *" : "Relationship *"}</span>
+                    <InfoTooltip
+                      text="State how the Primary Guardian is related to you or your children (e.g., 'Maternal Uncle', 'Paternal Grandmother', 'Elder Sister')."
+                      hindiText="बताएं कि प्राथमिक गार्जियन आपसे या आपके बच्चों से कैसे संबंधित हैं (जैसे, 'मामा', 'दादी', 'बड़ी बहन')।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -480,8 +493,12 @@ export default function Step7Guardians({
 
               {/* Guardian Powers Scope */}
               <div style={{ minWidth: 0 }}>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  Guardian Authority Scope
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  <span>{isHi ? "अभिभावक अधिकार क्षेत्र" : "Guardian Authority Scope"}</span>
+                  <InfoTooltip
+                    text="Choose the legal scope of the Guardian's powers: 'Full Custody & Trust' (handles both daily upbringing and manages inherited assets until age 18), 'Personal Custody' (physical care & education only), or 'Property Trustee' (manages inherited funds/property only)."
+                    hindiText="अभिभावक के कानूनी अधिकारों का दायरा चुनें: 'पूर्ण संरक्षण व ट्रस्ट' (दैनिक पालन-पोषण और 18 वर्ष की आयु तक विरासत में मिली संपत्ति का प्रबंधन दोनों), 'व्यक्तिगत संरक्षण' (केवल देखभाल और शिक्षा), या 'संपत्ति ट्रस्टी' (केवल संपत्ति/कोष का प्रबंधन)।"
+                  />
                 </label>
                 <div style={{ width: "100%", overflowX: "auto", paddingBottom: "2px" }}>
                   <AppleSegmentedControl
@@ -509,8 +526,12 @@ export default function Step7Guardians({
 
               <div className="role-contact-grid">
                 <div>
-                  <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Mobile Phone
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                    <InfoTooltip
+                      text="Provide the Primary Guardian's 10-digit mobile number for immediate contact."
+                      hindiText="तत्काल संपर्क के लिए प्राथमिक गार्जियन का 10-अंकों का मोबाइल नंबर दर्ज करें।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -532,8 +553,12 @@ export default function Step7Guardians({
                   />
                 </div>
                 <div>
-                  <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Email Address
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                    <InfoTooltip
+                      text="Provide the Primary Guardian's email address for official legal correspondence."
+                      hindiText="आधिकारिक कानूनी पत्राचार के लिए प्राथमिक गार्जियन का ईमेल पता दर्ज करें।"
+                    />
                   </label>
                   <input
                     type="email"
@@ -554,8 +579,12 @@ export default function Step7Guardians({
               </div>
 
               <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  Residential Address (Optional)
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  <span>{isHi ? "आवासीय पता (ऐच्छिक)" : "Residential Address (Optional)"}</span>
+                  <InfoTooltip
+                    text="Enter the Primary Guardian's complete residential address for unequivocal identification in court records."
+                    hindiText="न्यायालय के रिकॉर्ड में स्पष्ट पहचान के लिए प्राथमिक गार्जियन का पूरा आवासीय पता दर्ज करें।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -606,10 +635,14 @@ export default function Step7Guardians({
                     <HeartHandshake size={18} />
                   </div>
                   <div>
-                    <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      {isHi ? "वैकल्पिक गार्जियन (मुख्य संरक्षक के असमर्थ होने पर बैकअप)" : "Alternate Guardian (Backup custodian if primary guardian cannot act)"}
+                    <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)", display: "inline-flex", alignItems: "center" }}>
+                      <span>{isHi ? "वैकल्पिक गार्जियन (मुख्य संरक्षक के असमर्थ होने पर बैकअप)" : "Alternate Guardian (Backup custodian if primary guardian cannot act)"}</span>
+                      <InfoTooltip
+                        text="Switch ON to appoint a Backup Guardian who will care for your minor children if the Primary Guardian is unable or unwilling to serve."
+                        hindiText="एक वैकल्पिक (Backup) गार्जियन नियुक्त करने के लिए इसे चालू (ON) करें, जो प्राथमिक गार्जियन के असमर्थ होने पर आपके नाबालिग बच्चों की देखभाल करेगा।"
+                      />
                     </h3>
-                    <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
+                    <span style={{ fontSize: "0.75rem", color: "var(--color-slate)", display: "block" }}>
                       {isHi ? "सुनिश्चित करता है कि बच्चों की सुरक्षा में कभी कोई कानूनी बाधा न आए" : "Contingent custodian if primary guardian cannot act"}
                     </span>
                   </div>
@@ -719,8 +752,12 @@ export default function Step7Guardians({
 
                   <div className="role-inputs-grid">
                     <div>
-                      <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        Full Legal Name *
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}</span>
+                        <InfoTooltip
+                          text="Enter the full legal name of your Backup Guardian (must be a different adult from your Primary Guardian)."
+                          hindiText="अपने वैकल्पिक गार्जियन का पूरा कानूनी नाम दर्ज करें (यह आपके प्राथमिक गार्जियन से अलग वयस्क व्यक्ति होना चाहिए)।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -740,8 +777,12 @@ export default function Step7Guardians({
                       />
                     </div>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        Relationship *
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "संबंध *" : "Relationship *"}</span>
+                        <InfoTooltip
+                          text="Specify how the Backup Guardian is related to you or your children."
+                          hindiText="बताएं कि वैकल्पिक गार्जियन आपसे या आपके बच्चों से कैसे संबंधित हैं।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -764,8 +805,12 @@ export default function Step7Guardians({
 
                   <div className="role-contact-grid">
                     <div>
-                      <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        Mobile Phone
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                        <InfoTooltip
+                          text="Enter the Backup Guardian's 10-digit mobile number."
+                          hindiText="वैकल्पिक गार्जियन का 10-अंकों का मोबाइल नंबर दर्ज करें।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -787,8 +832,12 @@ export default function Step7Guardians({
                       />
                     </div>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        Email Address
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                        <InfoTooltip
+                          text="Enter the Backup Guardian's email address."
+                          hindiText="वैकल्पिक गार्जियन का ईमेल पता दर्ज करें।"
+                        />
                       </label>
                       <input
                         type="email"
@@ -809,8 +858,12 @@ export default function Step7Guardians({
                   </div>
 
                   <div>
-                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      Residential Address (Optional)
+                    <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      <span>{isHi ? "आवासीय पता (ऐच्छिक)" : "Residential Address (Optional)"}</span>
+                      <InfoTooltip
+                        text="Enter the Backup Guardian's complete residential address."
+                        hindiText="वैकल्पिक गार्जियन का पूरा आवासीय पता दर्ज करें।"
+                      />
                     </label>
                     <input
                       type="text"

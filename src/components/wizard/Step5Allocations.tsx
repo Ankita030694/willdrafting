@@ -36,6 +36,7 @@ import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import CustomPercentageAllocator from "./CustomPercentageAllocator";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 
 interface Step5AllocationsProps {
@@ -509,8 +510,12 @@ export default function Step5Allocations({
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
-              {isHi ? "प्राथमिक 01 (मुख्य प्राप्तकर्ता):" : "Primary 01 (Main Legatee):"}
+            <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              <span>{isHi ? "प्राथमिक 01 (मुख्य प्राप्तकर्ता):" : "Primary 01 (Main Legatee):"}</span>
+              <InfoTooltip
+                text="Mandatory under Section 102 of the Indian Succession Act, 1925: Select the primary person who will inherit any unmentioned, forgotten, or future-acquired assets (such as new bank accounts, tax refunds, dividends, or properties bought after signing this Will)."
+                hindiText="भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 102 के तहत अनिवार्य: उस मुख्य व्यक्ति को चुनें जिसे आपकी कोई भी छूटी हुई या भविष्य में अर्जित संपत्ति (जैसे नए बैंक खाते, टैक्स रिफंड, लाभांश या वसीयत के बाद खरीदी गई संपत्ति) मिलेगी।"
+              />
             </label>
             <span
               style={{
@@ -560,8 +565,12 @@ export default function Step5Allocations({
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
-              {isHi ? "प्राथमिक 02 (सह-प्राप्तकर्ता):" : "Primary 02 (Co-Legatee):"}
+            <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              <span>{isHi ? "प्राथमिक 02 (सह-प्राप्तकर्ता):" : "Primary 02 (Co-Legatee):"}</span>
+              <InfoTooltip
+                text="Optional: Select a second primary beneficiary to share your remaining/unlisted assets equally (50%–50%) with Primary 01. Leave as 'None (100% to Primary 01)' if you want Primary 01 to receive 100%."
+                hindiText="वैकल्पिक: अपनी शेष/अनसूचीबद्ध संपत्तियों को प्राथमिक 01 के साथ बराबर (50%–50%) बांटने के लिए दूसरे सह-लाभार्थी को चुनें। यदि आप प्राथमिक 01 को 100% देना चाहते हैं तो 'कोई नहीं' चुनें।"
+              />
             </label>
             <span
               style={{
@@ -614,8 +623,12 @@ export default function Step5Allocations({
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
-              {isHi ? "बैकअप 01 (प्रथम वैकल्पिक):" : "Backup 01 (First Alternate):"}
+            <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              <span>{isHi ? "बैकअप 01 (प्रथम वैकल्पिक):" : "Backup 01 (First Alternate):"}</span>
+              <InfoTooltip
+                text="Under Section 105 of the Indian Succession Act, 1925, if your primary residuary beneficiary passes away before you or is unable to inherit, this First Alternate beneficiary will automatically step in so the gift does not lapse."
+                hindiText="भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 105 के तहत, यदि प्राथमिक लाभार्थी किसी कारणवश संपत्ति प्राप्त करने में असमर्थ होता है, तो यह प्रथम वैकल्पिक (Backup 01) लाभार्थी स्वतः उत्तराधिकारी बन जाएगा।"
+              />
             </label>
             <span
               style={{
@@ -668,8 +681,12 @@ export default function Step5Allocations({
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
-              {isHi ? "बैकअप 02 (द्वितीय आकस्मिक):" : "Backup 02 (Second Alternate):"}
+            <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              <span>{isHi ? "बैकअप 02 (द्वितीय आकस्मिक):" : "Backup 02 (Second Alternate):"}</span>
+              <InfoTooltip
+                text="Optional second-level backup beneficiary who inherits the residuary estate if both the Primary Legatee(s) and First Alternate are unavailable."
+                hindiText="वैकल्पिक द्वितीय-स्तरीय बैकअप लाभार्थी, जिसे प्राथमिक लाभार्थी और प्रथम विकल्प दोनों के अनुपलब्ध होने की स्थिति में शेष संपत्ति प्राप्त होगी।"
+              />
             </label>
             <span
               style={{
@@ -1377,15 +1394,23 @@ export default function Step5Allocations({
 
               {/* 3. Question, large: "Who should get this?" */}
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "0.5rem" }}>
-                <h4 style={{ margin: 0, fontSize: "1.1rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                  {isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should get this?"}
+                <h4 style={{ margin: 0, fontSize: "1.1rem", fontWeight: 800, color: "var(--color-navy)", display: "inline-flex", alignItems: "center" }}>
+                  <span>{isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should get this?"}</span>
+                  <InfoTooltip
+                    text="Click one family member to give them 100% of this asset, or select multiple family members to split the asset among them. You can also click 'Customize in Modal' or 'Quick inline' below to set custom percentages (e.g., 60% / 40%)."
+                    hindiText="इस संपत्ति का 100% हिस्सा देने के लिए किसी एक पारिवारिक सदस्य पर क्लिक करें, या संपत्ति को बांटने के लिए एक से अधिक सदस्यों को चुनें। आप कस्टम प्रतिशत (जैसे 60% / 40%) निर्धारित करने के लिए नीचे 'कस्टम वितरण मोडल' पर भी क्लिक कर सकते हैं।"
+                  />
                 </h4>
 
                 {/* Quick Presets Chips (only shown when Spouse or Children exist) */}
                 {(spouse || children.length > 0) && (
                   <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
-                    <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
-                      {isHi ? "त्वरित विकल्प:" : "Presets:"}
+                    <span style={{ display: "inline-flex", alignItems: "center", fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
+                      <span>{isHi ? "त्वरित विकल्प:" : "Presets:"}</span>
+                      <InfoTooltip
+                        text="Apply a standard mathematical split across your selected beneficiaries in one click. You can fine-tune individual percentages afterward."
+                        hindiText="एक क्लिक में मानक प्रतिशत बंटवारा लागू करें। आप इसके बाद व्यक्तिगत प्रतिशत में बदलाव भी कर सकते हैं।"
+                      />
                     </span>
                     {spouse && (
                       <button

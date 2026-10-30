@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { signIn } from "next-auth/react";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 export interface EmailOtpAuthProps {
   /** "signup" additionally collects name + mobile (applied only if the email is new). */
@@ -28,7 +29,8 @@ const inputStyle: React.CSSProperties = {
 };
 
 const labelStyle: React.CSSProperties = {
-  display: "block",
+  display: "flex",
+  alignItems: "center",
   fontSize: "0.82rem",
   fontWeight: 600,
   color: "#172228",
@@ -206,6 +208,10 @@ export default function EmailOtpAuth({
         <div>
           <label htmlFor="otpCode" style={labelStyle}>
             Enter 6-digit code *
+            <InfoTooltip
+              text="Enter the 6-digit verification code just sent to your email inbox (check Spam/Promotions if not visible within 30 seconds)."
+              hindiText="आपके ईमेल पर भेजा गया 6-अंकों का सत्यापन कोड दर्ज करें (यदि इनबॉक्स में न दिखे तो स्पैम फोल्डर जांचें)।"
+            />
           </label>
           <input
             id="otpCode"
@@ -262,6 +268,10 @@ export default function EmailOtpAuth({
         <div>
           <label htmlFor="otpName" style={labelStyle}>
             Full Name (as per Aadhaar/PAN) *
+            <InfoTooltip
+              text="Enter your full legal name as printed on your PAN or Aadhaar Card to link your Will account."
+              hindiText="अपने वसीयत खाते को जोड़ने के लिए पैन या आधार कार्ड के अनुसार अपना पूरा कानूनी नाम दर्ज करें।"
+            />
           </label>
           <input
             id="otpName"
@@ -278,6 +288,10 @@ export default function EmailOtpAuth({
       <div>
         <label htmlFor="otpEmail" style={labelStyle}>
           Email Address *
+          <InfoTooltip
+            text="Enter your active email address where your 6-digit login OTP and encrypted Will backup will be sent."
+            hindiText="अपना सक्रिय ईमेल पता दर्ज करें जहां 6-अंकों का ओटीपी और सुरक्षित वसीयत बैकअप भेजा जाएगा।"
+          />
         </label>
         <input
           id="otpEmail"
@@ -295,6 +309,10 @@ export default function EmailOtpAuth({
         <div>
           <label htmlFor="otpPhone" style={labelStyle}>
             10-Digit Mobile Number *
+            <InfoTooltip
+              text="Enter your 10-digit Indian mobile number for account security and legal support updates."
+              hindiText="खाते की सुरक्षा और कानूनी सहायता अपडेट के लिए अपना 10-अंकों का मोबाइल नंबर दर्ज करें।"
+            />
           </label>
           <div
             style={{

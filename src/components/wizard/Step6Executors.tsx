@@ -26,6 +26,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { sanitizeMobileInput, isValidMobile, MOBILE_ERROR_MSG } from "@/lib/validation";
 import { sanitizeNameInput, normalizeEmail } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface Step6ExecutorsProps {
   state?: WillDraftingState;
@@ -338,8 +339,12 @@ export default function Step6Executors({
             {/* Primary Executor Fields (2 per row on desktop, 1 on mobile) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
               <div className="flex flex-col min-w-0 w-full">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                  Full Legal Name *
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                  <span>{isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}</span>
+                  <InfoTooltip
+                    text="Enter the full legal name of your Primary Executor (as per their PAN/Aadhaar). Under Sections 2(c) and 222 of the Indian Succession Act, 1925, the Executor is the trusted adult (18+) who carries out your Will—collecting assets, paying dues, obtaining probate if required, and transferring wealth to your beneficiaries. Yes, a beneficiary (like your adult spouse or child) can also be your Executor."
+                    hindiText="अपने प्राथमिक निष्पादक (Executor) का पूरा कानूनी नाम (पैन/आधार के अनुसार) दर्ज करें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 2(c) और 222 के तहत, निष्पादक वह विश्वसनीय वयस्क (18+) व्यक्ति है जो आपकी वसीयत को लागू करता है। हाँ, कोई लाभार्थी (जैसे जीवनसाथी या वयस्क संतान) भी निष्पादक हो सकता है।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -361,8 +366,12 @@ export default function Step6Executors({
               </div>
 
               <div className="flex flex-col min-w-0 w-full">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                  Relationship *
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                  <span>{isHi ? "संबंध *" : "Relationship *"}</span>
+                  <InfoTooltip
+                    text="Specify how the Primary Executor is related to you (e.g., 'Spouse', 'Son', 'Brother', 'Chartered Accountant', 'Family Lawyer', or 'Trusted Friend')."
+                    hindiText="बताएं कि प्राथमिक निष्पादक आपसे कैसे संबंधित हैं (जैसे, 'जीवनसाथी', 'बेटा', 'भाई', 'चार्टर्ड अकाउंटेंट', 'पारिवारिक वकील', या 'विश्वसनीय मित्र')।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -384,8 +393,12 @@ export default function Step6Executors({
               </div>
 
               <div className="flex flex-col min-w-0 w-full">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                  Mobile Phone
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                  <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                  <InfoTooltip
+                    text="Enter the Primary Executor's 10-digit mobile number so your family and legal authorities can contact them immediately when needed."
+                    hindiText="प्राथमिक निष्पादक का 10-अंकों का मोबाइल नंबर दर्ज करें ताकि आवश्यकता पड़ने पर आपका परिवार और कानूनी अधिकारी उनसे तुरंत संपर्क कर सकें।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -409,8 +422,12 @@ export default function Step6Executors({
               </div>
 
               <div className="flex flex-col min-w-0 w-full">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                  Email Address
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                  <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                  <InfoTooltip
+                    text="Enter the Primary Executor's email address for official correspondence and digital vault notifications."
+                    hindiText="आधिकारिक पत्राचार और सूचनाओं के लिए प्राथमिक निष्पादक का ईमेल पता दर्ज करें।"
+                  />
                 </label>
                 <input
                   type="email"
@@ -431,8 +448,12 @@ export default function Step6Executors({
               </div>
 
               <div className="flex flex-col min-w-0 w-full md:col-span-2">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                  Residential Address (Optional)
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                  <span>{isHi ? "आवासीय पता (ऐच्छिक)" : "Residential Address (Optional)"}</span>
+                  <InfoTooltip
+                    text="Enter the Executor's complete residential address. Courts require the Executor's address when filing for Probate or Letters of Administration."
+                    hindiText="निष्पादक का पूरा आवासीय पता दर्ज करें। प्रोबेट या प्रशासन पत्र (Letters of Administration) के लिए आवेदन करते समय न्यायालयों को निष्पादक के पते की आवश्यकता होती है।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -473,10 +494,14 @@ export default function Step6Executors({
                   <UserCheck size={18} />
                 </div>
                 <div>
-                  <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    {isHi ? "वैकल्पिक एग्जीक्यूटर (मुख्य प्रबंधक के असमर्थ होने पर बैकअप)" : "Alternate / Backup Executor (Steps in if primary executor is unable to act)"}
+                  <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)", display: "inline-flex", alignItems: "center" }}>
+                    <span>{isHi ? "वैकल्पिक एग्जीक्यूटर (मुख्य प्रबंधक के असमर्थ होने पर बैकअप)" : "Alternate / Backup Executor (Steps in if primary executor is unable to act)"}</span>
+                    <InfoTooltip
+                      text="Strongly Recommended: Switch ON to name a substitute Executor who will automatically step in if your Primary Executor passes away before you, moves abroad, or is unable/unwilling to act."
+                      hindiText="अत्यंत अनुशंसित: एक वैकल्पिक निष्पादक नियुक्त करने के लिए इसे चालू (ON) करें, जो प्राथमिक निष्पादक के असमर्थ या अनुपलब्ध होने की स्थिति में स्वतः कार्यभार संभाल लेगा।"
+                    />
                   </h3>
-                  <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
+                  <span style={{ fontSize: "0.75rem", color: "var(--color-slate)", display: "block" }}>
                     {isHi ? "यदि प्राथमिक एग्जीक्यूटर पहले गुजर जाएं या कार्यभार न संभाल पाएं" : "Guarantees continuous estate management without court delay"}
                   </span>
                 </div>
@@ -590,8 +615,12 @@ export default function Step6Executors({
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
                 <div className="flex flex-col min-w-0 w-full">
-                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                    Full Legal Name *
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}</span>
+                    <InfoTooltip
+                      text="Enter the full legal name of your Backup Executor. This must be a different adult from your Primary Executor."
+                      hindiText="अपने वैकल्पिक (Backup) निष्पादक का पूरा कानूनी नाम दर्ज करें। यह आपके प्राथमिक निष्पादक से भिन्न वयस्क व्यक्ति होना चाहिए।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -613,8 +642,12 @@ export default function Step6Executors({
                 </div>
 
                 <div className="flex flex-col min-w-0 w-full">
-                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                    Relationship *
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "संबंध *" : "Relationship *"}</span>
+                    <InfoTooltip
+                      text="Specify your relationship with the Backup Executor (e.g., 'Brother', 'Sister', 'Family Friend')."
+                      hindiText="वैकल्पिक निष्पादक के साथ अपना संबंध लिखें (जैसे, 'भाई', 'बहन', 'पारिवारिक मित्र')।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -636,8 +669,12 @@ export default function Step6Executors({
                 </div>
 
                 <div className="flex flex-col min-w-0 w-full">
-                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                    Mobile Phone
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                    <InfoTooltip
+                      text="Provide the 10-digit mobile number of your Backup Executor so they can be contacted if called upon to act."
+                      hindiText="अपने वैकल्पिक निष्पादक का 10-अंकों का मोबाइल नंबर दर्ज करें ताकि आवश्यकता पड़ने पर उनसे संपर्क किया जा सके।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -661,8 +698,12 @@ export default function Step6Executors({
                 </div>
 
                 <div className="flex flex-col min-w-0 w-full">
-                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                    Email Address
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                    <InfoTooltip
+                      text="Provide the email address of your Backup Executor for official notifications."
+                      hindiText="आधिकारिक सूचनाओं के लिए वैकल्पिक निष्पादक का ईमेल पता दर्ज करें।"
+                    />
                   </label>
                   <input
                     type="email"
@@ -683,8 +724,12 @@ export default function Step6Executors({
                 </div>
 
                 <div className="flex flex-col min-w-0 w-full md:col-span-2">
-                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                    Residential Address (Optional)
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "आवासीय पता (ऐच्छिक)" : "Residential Address (Optional)"}</span>
+                    <InfoTooltip
+                      text="Provide the residential address of your Backup Executor for court probate verification."
+                      hindiText="न्यायालय प्रोबेट सत्यापन के लिए वैकल्पिक निष्पादक का आवासीय पता दर्ज करें।"
+                    />
                   </label>
                   <input
                     type="text"

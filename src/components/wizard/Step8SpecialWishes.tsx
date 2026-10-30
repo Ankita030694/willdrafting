@@ -23,6 +23,7 @@ import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import AppleSwitch from "@/components/dashboard/AppleSwitch";
 import { useLanguage } from "@/context/LanguageContext";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "./InfoTooltip";
 
 interface Step8SpecialWishesProps {
   state?: WillDraftingState;
@@ -45,6 +46,8 @@ interface CategoryConfig {
   color: string;
   desc: string;
   hindiDesc: string;
+  tooltip: string;
+  hindiTooltip: string;
   placeholder: string;
   suggestions: string[];
   hindiSuggestions: string[];
@@ -61,6 +64,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#C65378",
     desc: "Specific heirloom bequests (wedding jewellery, luxury watches, vintage art, ancestral artifacts).",
     hindiDesc: "पारिवारिक आभूषण, पूर्वजों की वस्तुएं, बहुमूल्य घड़ियां या कलाकृतियां किसे दी जाएं।",
+    tooltip: "Specify who receives specific sentimental or high-value items (e.g., ancestral gold necklace, wedding ring, or vintage watch) to prevent family disputes over heirlooms.",
+    hindiTooltip: "स्पष्ट लिखें कि विशेष आभूषण या पारिवारिक धरोहर (जैसे खानदानी हार, अंगूठी या घड़ी) किसे मिले ताकि परिवार में विवाद न हो।",
     placeholder: "e.g., Ancestral gold necklace to elder daughter; diamond solitaire ring to spouse...",
     suggestions: [
       "Ancestral gold necklace to elder daughter",
@@ -85,6 +90,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#D97706",
     desc: "Books, journals, musical instruments, awards, and personal mementos.",
     hindiDesc: "पुस्तकें, डायरियां, पदक, वाद्ययंत्र और प्रिय स्मरणीय वस्तुएं।",
+    tooltip: "List non-financial keepsakes such as personal libraries, handwritten journals, photo albums, musical instruments, or medals and who should inherit them.",
+    hindiTooltip: "व्यक्तिगत पुस्तकें, डायरियां, फोटो एलबम, वाद्ययंत्र या पदक जैसी स्मरणीय वस्तुएं किसे सौंपी जाएं, यहां लिखें।",
     placeholder: "e.g., My library of rare books to university library; acoustic guitar to son...",
     suggestions: [
       "Personal library of books and journals to university department",
@@ -108,6 +115,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#2563EB",
     desc: "Cloud photo archives, email accounts, cryptocurrency hardware wallets, and social profile memorialization.",
     hindiDesc: "क्लाउड फोटो, पारिवारिक डिजिटल वॉल्ट, सोशल मीडिया अकाउंट या क्रिप्टो एसेट्स।",
+    tooltip: "Instruct your Executor on how to handle your Google/Apple cloud photos, social media profiles, domain names, or crypto wallets. Never write raw passwords or seed phrases in a Will.",
+    hindiTooltip: "अपने क्लाउड फोटो, सोशल मीडिया अकाउंट या डिजिटल संपत्ति के प्रबंधन के निर्देश दें। सुरक्षा के लिए वसीयत में कभी भी पासवर्ड या पिन न लिखें।",
     placeholder: "e.g., Apple ID & Google drive family photos transferred to spouse; delete social accounts...",
     suggestions: [
       "Transfer Apple ID & Google Photos family vault to spouse",
@@ -131,6 +140,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#059669",
     desc: "Designated caregiver for domestic pets and dedicated funds for veterinary maintenance.",
     hindiDesc: "पालतू जानवरों का संरक्षक और उनके भोजन व इलाज हेतु सुरक्षित राशि।",
+    tooltip: "Name a trusted person to care for your domestic pets and optionally earmark a maintenance fund from your estate for their food and veterinary expenses.",
+    hindiTooltip: "अपने पालतू जानवरों की देखभाल के लिए किसी विश्वसनीय व्यक्ति का नाम लिखें और उनके भोजन व इलाज के लिए निश्चित राशि निर्धारित करें।",
     placeholder: "e.g., Family dog to be cared for by spouse with ₹2,00,000 maintenance fund...",
     suggestions: [
       "Entrust family pet to spouse with ₹2,00,000 maintenance fund",
@@ -153,6 +164,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#7C3AED",
     desc: "Optional donations to educational institutions, orphanages, hospitals, or religious trusts.",
     hindiDesc: "शिक्षा, अस्पताल, अनाथालय या धार्मिक ट्रस्ट को ऐच्छिक दान।",
+    tooltip: "Specify any fixed amount or percentage of liquid funds you wish to donate to a registered NGO, hospital, orphanage, educational trust, or relief fund.",
+    hindiTooltip: "यदि आप किसी पंजीकृत एनजीओ, अनाथालय, अस्पताल या धार्मिक ट्रस्ट को कोई निश्चित राशि या प्रतिशत दान करना चाहते हैं, तो उसका विवरण दें।",
     placeholder: "e.g., ₹1,00,000 to Prime Minister's National Relief Fund; ₹50,000 to local school...",
     suggestions: [
       "₹1,00,000 to Prime Minister's National Relief Fund",
@@ -176,6 +189,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#DC2626",
     desc: "Rites, crematorium preferences, and anatomical organ donation declarations.",
     hindiDesc: "अंतिम संस्कार के नियम, श्मशान प्राथमिकता और मरणोपरांत अंगदान की घोषणा।",
+    tooltip: "Record your wishes regarding religious or eco-friendly funeral ceremonies, ash immersion, and any pledge for organ or eye donation.",
+    hindiTooltip: "अपने अंतिम संस्कार की रीति, अस्थि विसर्जन और मरणोपरांत नेत्र या अंगदान की इच्छा यहां दर्ज करें।",
     placeholder: "e.g., Vedic rituals with immediate family only; pledged organ donor...",
     suggestions: [
       "Pledged organ donor (corneas and organs to AIIMS / civil hospital)",
@@ -200,6 +215,8 @@ const CATEGORIES: CategoryConfig[] = [
     color: "#0D9488",
     desc: "Heartfelt advice, memories, moral values, and blessings for your loved ones.",
     hindiDesc: "परिवार के लिए प्रेमपूर्ण संदेश, जीवन के मूल्य और एकता का आशीर्वाद।",
+    tooltip: "Write a warm, personal message of love, blessings, and moral guidance for your family to cherish alongside your legal Will.",
+    hindiTooltip: "अपने परिवार के लिए प्रेम, एकता और आशीर्वाद का व्यक्तिगत संदेश लिखें जो आपकी वसीयत के साथ सुरक्षित रहेगा।",
     placeholder: "e.g., To my beloved family: Always stand united, support each other with love, and live with integrity...",
     suggestions: [
       "Always stand united, support each other with love, and live with integrity.",
@@ -488,10 +505,14 @@ export default function Step8SpecialWishes({
               <Sparkles size={20} />
             </div>
             <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
                 <span style={{ fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)" }}>
                   {isHi ? "मेरी विशेष इच्छाएं हैं" : "I have special wishes"}
                 </span>
+                <InfoTooltip
+                  text="Optional toggle: Turn this ON only if you want to include specific clauses for heirloom jewellery, keepsakes, digital accounts, pet care, charity, or funeral preferences."
+                  hindiText="वैकल्पिक: यदि आप पारिवारिक आभूषण, डिजिटल अकाउंट, पालतू जानवर, दान या अंतिम संस्कार से जुड़े विशेष निर्देश जोड़ना चाहते हैं, तो इसे चालू करें।"
+                />
               </div>
               <p style={{ margin: "2px 0 0", fontSize: "0.8rem", color: "var(--color-slate)", lineHeight: 1.35 }}>
                 {hasSpecialWishes
@@ -665,8 +686,9 @@ export default function Step8SpecialWishes({
 
                     {/* Bottom Details: Category Title & Status */}
                     <div>
-                      <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.88rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.88rem", fontWeight: 700, color: "var(--color-navy)", display: "flex", alignItems: "center" }}>
                         {isHi ? cat.hindiLabel : cat.label}
+                        <InfoTooltip text={cat.tooltip} hindiText={cat.hindiTooltip} />
                       </h4>
                       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: "0.72rem" }}>
                         {hasWish ? (
@@ -765,8 +787,9 @@ export default function Step8SpecialWishes({
 
               {/* Text Input Area */}
               <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)", textTransform: "uppercase", letterSpacing: "0.03em" }}>
+                <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)", textTransform: "uppercase", letterSpacing: "0.03em", display: "flex", alignItems: "center" }}>
                   {isHi ? `आपके निर्देश (${activeCategory.hindiLabel}):` : `Your Directive (${activeCategory.label}):`}
+                  <InfoTooltip text={activeCategory.tooltip} hindiText={activeCategory.hindiTooltip} />
                 </label>
                 <textarea
                   rows={3}

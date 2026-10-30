@@ -4,6 +4,7 @@ import React, { useState, useEffect, useMemo, useRef } from "react";
 import { FamilyMember } from "@/lib/willDraftingStore";
 import { Plus, Trash2, CheckCircle2, AlertCircle, AlertTriangle, Sparkles } from "lucide-react";
 import { sanitizePercent } from "@/lib/inputSanitizers";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 export interface AllocationEntry {
   beneficiaryId: string;
@@ -282,8 +283,12 @@ export default function CustomPercentageAllocator({
               {assetTitle}
             </div>
           )}
-          <h3 style={{ margin: 0, fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
-            {isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should receive this asset?"}
+          <h3 style={{ margin: 0, fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)", display: "inline-flex", alignItems: "center" }}>
+            <span>{isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should receive this asset?"}</span>
+            <InfoTooltip
+              text="Specify the exact percentage of this asset that each selected beneficiary will inherit. The combined percentages across all rows for an asset must equal exactly 100% so no portion is left unallocated."
+              hindiText="बताएं कि इस संपत्ति का कितना प्रतिशत हिस्सा प्रत्येक चुने गए लाभार्थी को मिलेगा। किसी संपत्ति के सभी लाभार्थियों का कुल प्रतिशत ठीक 100% होना चाहिए ताकि कोई भी हिस्सा अनिर्णीत न रहे।"
+            />
           </h3>
           <p style={{ margin: "0.3rem 0 0", fontSize: "0.85rem", color: "var(--color-slate)", lineHeight: 1.4 }}>
             {assetSubtitle ||
@@ -326,6 +331,8 @@ export default function CustomPercentageAllocator({
                 <div style={{ flex: "1 1 240px", minWidth: "200px", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                   <span
                     style={{
+                      display: "inline-flex",
+                      alignItems: "center",
                       padding: "0.3rem 0.65rem",
                       borderRadius: "8px",
                       backgroundColor:
@@ -353,7 +360,11 @@ export default function CustomPercentageAllocator({
                           : "1px solid rgba(95, 126, 117, 0.25)",
                     }}
                   >
-                    {idx === 0 ? "Primary 01" : idx === 1 ? "Primary 02" : `Backup 0${idx - 1}`}
+                    <span>{idx === 0 ? "Primary 01" : idx === 1 ? "Primary 02" : `Backup 0${idx - 1}`}</span>
+                    <InfoTooltip
+                      text="Select the beneficiary from the dropdown and enter the exact percentage (0%–100%) of this asset they should inherit. All rows together must sum to 100%."
+                      hindiText="ड्रॉपडाउन से लाभार्थी चुनें और दर्ज करें कि उन्हें इस संपत्ति का कितना प्रतिशत (0%–100%) हिस्सा मिलना चाहिए। सभी पंक्तियों का कुल योग 100% होना चाहिए।"
+                    />
                   </span>
                   <select
                     value={row.beneficiaryId}

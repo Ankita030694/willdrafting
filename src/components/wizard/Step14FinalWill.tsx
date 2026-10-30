@@ -25,6 +25,7 @@ import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import { useLanguage } from "@/context/LanguageContext";
 import WillVerificationModal from "./WillVerificationModal";
 import PaymentReturnBanner from "@/components/dashboard/PaymentReturnBanner";
+import InfoTooltip from "./InfoTooltip";
 
 interface Step14FinalWillProps {
   state?: WillDraftingState;
@@ -187,8 +188,12 @@ export default function Step14FinalWill({ state: propState, onBack }: Step14Fina
           />
           {isPaid && (
             <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-              <span style={{ fontSize: "0.75rem", color: "var(--color-slate)", fontWeight: 600 }}>
+              <span style={{ fontSize: "0.75rem", color: "var(--color-slate)", fontWeight: 600, display: "inline-flex", alignItems: "center" }}>
                 {isHi ? "वॉटरमार्क:" : "Watermark:"}
+                <InfoTooltip
+                  text="Keep OFF when printing your final Will for physical signing with witnesses. Turn ON only if printing a 'DRAFT COPY' watermarked preview for review."
+                  hindiText="गवाहों के साथ अंतिम हस्ताक्षर के लिए प्रिंट करते समय इसे बंद (OFF) रखें। केवल समीक्षा हेतु 'DRAFT COPY' वॉटरमार्क के लिए इसे चालू करें।"
+                />
               </span>
               <AppleSwitch checked={showWatermark} onChange={setShowWatermark} />
             </div>

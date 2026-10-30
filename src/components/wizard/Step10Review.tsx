@@ -52,6 +52,7 @@ import {
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import CloudSyncBadge from "@/components/wizard/CloudSyncBadge";
 import WillVerificationModal from "@/components/wizard/WillVerificationModal";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 import { useLanguage } from "@/context/LanguageContext";
 import { lookupStateFromPin, fetchPincodeDetails } from "@/lib/pincode";
 import { sanitizeNameInput, sanitizePan, formatAadhaar, normalizeEmail, toTitleCaseText, toSentenceCase, normalizeIdCode } from "@/lib/inputSanitizers";
@@ -3057,7 +3058,13 @@ export default function Step10Review({
               <div className="bento-modal-body">
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Full Legal Name</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Full Legal Name
+                      <InfoTooltip
+                        text="Enter your exact legal name as printed on your PAN Card and Aadhaar Card."
+                        hindiText="अपना पूरा कानूनी नाम दर्ज करें जैसा कि आपके पैन कार्ड और आधार कार्ड पर छपा है।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3068,7 +3075,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Parent's Name (Father / Mother)</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Parent's Name (Father / Mother)
+                      <InfoTooltip
+                        text="Enter your Father's or Mother's full name for standard S/o or D/o statutory identification."
+                        hindiText="कानूनी पहचान (पुत्र/पुत्री) के लिए अपने पिता या माता का पूरा नाम दर्ज करें।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3081,7 +3094,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Date of Birth</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Date of Birth
+                      <InfoTooltip
+                        text="Confirms you are 18+ years old and legally competent under Section 59 of the Indian Succession Act."
+                        hindiText="यह पुष्टि करता है कि आपकी आयु 18 वर्ष या अधिक है (भारतीय उत्तराधिकार अधिनियम की धारा 59)।"
+                      />
+                    </label>
                     <input
                       type="date"
                       className="bento-form-input"
@@ -3090,7 +3109,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Gender</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Gender
+                      <InfoTooltip
+                        text="Used for appropriate legal pronouns and succession rules in your Will."
+                        hindiText="वसीयत के कानूनी खंडों में सही सर्वनाम और उत्तराधिकार नियमों के लिए उपयोग किया जाता है।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={testatorDraft.gender || "male"}
@@ -3105,7 +3130,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Marital Status</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Marital Status
+                      <InfoTooltip
+                        text="Under Section 69 of the Indian Succession Act, a subsequent marriage can affect earlier Wills."
+                        hindiText="आपकी वैवाहिक स्थिति कानूनी उत्तराधिकारियों की पहचान में सहायक होती है।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={testatorDraft.maritalStatus || "married"}
@@ -3118,7 +3149,13 @@ export default function Step10Review({
                     </select>
                   </div>
                   <div>
-                    <label className="bento-form-label">Governing Succession Law / Religion</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Governing Succession Law / Religion
+                      <InfoTooltip
+                        text="Determines the statutory framework governing your Will (Hindu Succession Act vs. Indian Succession Act vs. Muslim Personal Law)."
+                        hindiText="भारत में वसीयत के नियम आपके व्यक्तिगत कानून (हिंदू उत्तराधिकार अधिनियम, भारतीय उत्तराधिकार अधिनियम या मुस्लिम शरीयत कानून) पर निर्भर करते हैं।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={testatorDraft.religionPersonalLaw || "hindu"}
@@ -3135,7 +3172,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">PAN Card Number</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      PAN Card Number
+                      <InfoTooltip
+                        text="Your 10-character Permanent Account Number (e.g., ABCDE1234F) uniquely identifies you before banks and courts."
+                        hindiText="आपका 10-अक्षरों का पैन नंबर बैंकों और न्यायालयों में आपकी पहचान सुनिश्चित करता है।"
+                      />
+                    </label>
                     <input
                       type="text"
                       maxLength={10}
@@ -3146,7 +3189,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Aadhaar (UID / Last 4)</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Aadhaar (UID / Last 4)
+                      <InfoTooltip
+                        text="Your 12-digit Aadhaar number or last 4 digits for Sub-Registrar identity verification."
+                        hindiText="सब-रजिस्ट्रार कार्यालय में पहचान सत्यापन के लिए आधार नंबर या अंतिम 4 अंक।"
+                      />
+                    </label>
                     <input
                       type="text"
                       maxLength={14}
@@ -3159,7 +3208,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Workplace / Professional Affiliation</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Workplace / Professional Affiliation
+                    <InfoTooltip
+                      text="Your current occupation, company, or retired status."
+                      hindiText="आपका वर्तमान व्यवसाय, पद, कंपनी का नाम या सेवानिवृत्त स्थिति।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3170,7 +3225,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Home / Domicile Street Address</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Home / Domicile Street Address
+                    <InfoTooltip
+                      text="Your complete permanent residential address establishing court jurisdiction."
+                      hindiText="आपका स्थायी आवासीय पता जो न्यायिक क्षेत्राधिकार स्थापित करता है।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3182,7 +3243,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">City</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      City
+                      <InfoTooltip
+                        text="Your city or district of permanent residence."
+                        hindiText="आपके स्थायी निवास का शहर या जिला।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3192,7 +3259,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">State</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      State
+                      <InfoTooltip
+                        text="Your state or union territory of domicile."
+                        hindiText="आपके निवास का राज्य या केंद्र शासित प्रदेश।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3205,7 +3278,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Pincode</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Pincode
+                      <InfoTooltip
+                        text="6-digit Indian postal PIN code; automatically populates your City and State."
+                        hindiText="6-अंकों का पिन कोड; यह आपके शहर और राज्य को स्वतः भर देता है।"
+                      />
+                    </label>
                     <input
                       type="text"
                       inputMode="numeric"
@@ -3239,7 +3318,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Official Email</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Official Email
+                      <InfoTooltip
+                        text="Your email address where your OTP verification code and cloud backup are sent."
+                        hindiText="आपका ईमेल पता जहां ओटीपी सत्यापन कोड और वसीयत की प्रति भेजी जाएगी।"
+                      />
+                    </label>
                     <input
                       type="email"
                       className="bento-form-input"
@@ -3251,7 +3336,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Verified Mobile Phone</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Verified Mobile Phone
+                    <InfoTooltip
+                      text="Your 10-digit Indian mobile number."
+                      hindiText="आपका 10-अंकों का सक्रिय मोबाइल नंबर।"
+                    />
+                  </label>
                   <input
                     type="tel"
                     inputMode="numeric"
@@ -3302,7 +3393,13 @@ export default function Step10Review({
               <div className="bento-modal-body">
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Full Name</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Full Name
+                      <InfoTooltip
+                        text="Full official name of this beneficiary as per their Aadhaar/PAN."
+                        hindiText="आधार या पैन कार्ड के अनुसार लाभार्थी का पूरा आधिकारिक नाम।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3313,7 +3410,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Relationship to You</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Relationship to You
+                      <InfoTooltip
+                        text="Select how this beneficiary is related to you."
+                        hindiText="चुनें कि यह लाभार्थी आपसे किस प्रकार संबंधित है।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={familyDraft.relationship || "spouse"}
@@ -3333,7 +3436,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Date of Birth</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Date of Birth
+                      <InfoTooltip
+                        text="Determines whether the beneficiary is an adult or a minor (under 18) requiring a guardian."
+                        hindiText="यह निर्धारित करता है कि लाभार्थी वयस्क है या नाबालिग (18 वर्ष से कम)।"
+                      />
+                    </label>
                     <input
                       type="date"
                       className="bento-form-input"
@@ -3342,7 +3451,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">PAN Card Number</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      PAN Card Number
+                      <InfoTooltip
+                        text="Beneficiary's 10-character PAN for smooth bank, Demat, and property transmission."
+                        hindiText="बैंक, डीमैट और संपत्ति हस्तांतरण को सुगम बनाने के लिए लाभार्थी का पैन नंबर।"
+                      />
+                    </label>
                     <input
                       type="text"
                       maxLength={10}
@@ -3356,7 +3471,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Email Address</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Email Address
+                      <InfoTooltip
+                        text="Beneficiary's email for official Executor notifications."
+                        hindiText="आधिकारिक सूचनाओं के लिए लाभार्थी का ईमेल पता।"
+                      />
+                    </label>
                     <input
                       type="email"
                       className="bento-form-input"
@@ -3366,7 +3487,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Phone Number</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Phone Number
+                      <InfoTooltip
+                        text="Beneficiary's 10-digit mobile number."
+                        hindiText="लाभार्थी का 10-अंकों का मोबाइल नंबर।"
+                      />
+                    </label>
                     <input
                       type="tel"
                       inputMode="numeric"
@@ -3380,7 +3507,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Residential Address</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Residential Address
+                    <InfoTooltip
+                      text="Beneficiary's current residential address."
+                      hindiText="लाभार्थी का वर्तमान आवासीय पता।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3391,7 +3524,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Beneficiary Notes / Role in Will</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Beneficiary Notes / Role in Will
+                    <InfoTooltip
+                      text="Optional context on this person's role in your Will (e.g., Principal Beneficiary, Contingent Heir, or reason for inclusion/exclusion)."
+                      hindiText="वसीयत में इस व्यक्ति की भूमिका पर वैकल्पिक टिप्पणी (जैसे मुख्य लाभार्थी, वैकल्पिक उत्तराधिकारी आदि)।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3557,7 +3696,13 @@ export default function Step10Review({
               <div className="bento-modal-body">
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Asset Name</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Asset Name
+                      <InfoTooltip
+                        text="Clear title for this asset (e.g., 3BHK Flat in Vasant Vihar, HDFC Savings Account)."
+                        hindiText="इस संपत्ति का स्पष्ट नाम (जैसे वसंत विहार में 3BHK फ्लैट, HDFC बचत खाता)।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3568,7 +3713,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Schedule A Category</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Schedule A Category
+                      <InfoTooltip
+                        text="Statutory asset category for Schedule A of your Will."
+                        hindiText="आपकी वसीयत की अनुसूची A के लिए संपत्ति की श्रेणी।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={assetDraft.category || "bank_account"}
@@ -3589,7 +3740,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Specific Subtype / Classification</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Specific Subtype / Classification
+                      <InfoTooltip
+                        text="Specific asset classification (e.g., Residential Apartment, Savings Account, Demat Account)."
+                        hindiText="संपत्ति का विशिष्ट उप-प्रकार (जैसे आवासीय फ्लैट, बचत खाता, डीमैट खाता)।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3599,7 +3756,13 @@ export default function Step10Review({
                     />
                   </div>
                   <div>
-                    <label className="bento-form-label">Identifier (Account / Folio / Deed No)</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Identifier (Account / Folio / Deed No)
+                      <InfoTooltip
+                        text="Unique identifier such as Survey/Flat No., Account No. (or last 4 digits), Demat BO ID, or Vehicle Reg No."
+                        hindiText="विशिष्ट पहचान संख्या जैसे फ्लैट/खसरा नंबर, खाता संख्या (या अंतिम 4 अंक), फोलियो नंबर या वाहन पंजीकरण संख्या।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3611,7 +3774,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Institution / Location / Branch Address</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Institution / Location / Branch Address
+                    <InfoTooltip
+                      text="Complete address of the property or the bank/institution name and branch."
+                      hindiText="संपत्ति का पूरा पता या बैंक/संस्था और शाखा का नाम।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3623,7 +3792,13 @@ export default function Step10Review({
 
                 <div className="bento-form-row-2">
                   <div>
-                    <label className="bento-form-label">Ownership Structure</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Ownership Structure
+                      <InfoTooltip
+                        text="Choose Sole Ownership if 100% in your name, or Joint Ownership if co-owned with another person."
+                        hindiText="यदि संपत्ति 100% आपके नाम पर है तो एकल स्वामित्व चुनें, या सह-स्वामित्व होने पर संयुक्त स्वामित्व चुनें।"
+                      />
+                    </label>
                     <select
                       className="bento-form-select"
                       value={assetDraft.ownership || "sole"}
@@ -3634,7 +3809,13 @@ export default function Step10Review({
                     </select>
                   </div>
                   <div>
-                    <label className="bento-form-label">Approximate Value (INR)</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Approximate Value (INR)
+                      <InfoTooltip
+                        text="Estimated current market value in INR for your estate summary."
+                        hindiText="संपत्ति के सारांश के लिए अनुमानित वर्तमान बाजार मूल्य (रुपये में)।"
+                      />
+                    </label>
                     <input
                       type="number"
                       className="bento-form-input"
@@ -3648,7 +3829,13 @@ export default function Step10Review({
                 {assetDraft.ownership === "joint" && (
                   <div className="bento-form-row-2">
                     <div>
-                      <label className="bento-form-label">Joint Owner Full Name</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Joint Owner Full Name
+                        <InfoTooltip
+                          text="Full legal name of the co-owner or joint account holder."
+                          hindiText="सह-स्वामी या संयुक्त खाताधारक का पूरा कानूनी नाम।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -3659,7 +3846,13 @@ export default function Step10Review({
                       />
                     </div>
                     <div>
-                      <label className="bento-form-label">Relationship with Joint Owner</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Relationship with Joint Owner
+                        <InfoTooltip
+                          text="How the joint owner is related to you (e.g., Spouse, Brother, Father)."
+                          hindiText="सह-स्वामी का आपसे संबंध (जैसे जीवनसाथी, भाई, पिता)।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -3681,14 +3874,24 @@ export default function Step10Review({
                     onChange={(e) => setAssetDraft({ ...assetDraft, hasLoan: e.target.checked })}
                     style={{ width: "16px", height: "16px", cursor: "pointer" }}
                   />
-                  <label htmlFor="asset-loan-check" style={{ fontSize: "0.78rem", fontWeight: 600, color: "#172228", cursor: "pointer" }}>
+                  <label htmlFor="asset-loan-check" style={{ fontSize: "0.78rem", fontWeight: 600, color: "#172228", cursor: "pointer", display: "inline-flex", alignItems: "center" }}>
                     This asset is subject to an active loan or mortgage
+                    <InfoTooltip
+                      text="Under Section 167 of the Indian Succession Act, specify if this asset has an active loan or mortgage."
+                      hindiText="भारतीय उत्तराधिकार अधिनियम की धारा 167 के तहत बताएं कि क्या इस संपत्ति पर कोई सक्रिय ऋण या गिरवी है।"
+                    />
                   </label>
                 </div>
 
                 {assetDraft.hasLoan && (
                   <div className="bento-form-row">
-                    <label className="bento-form-label">Loan Details & Lender Institution</label>
+                    <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                      Loan Details & Lender Institution
+                      <InfoTooltip
+                        text="Specify the lender bank, approximate outstanding loan amount, and how it should be settled."
+                        hindiText="ऋणदाता बैंक, बकाया राशि और इसे चुकाने के निर्देश दर्ज करें।"
+                      />
+                    </label>
                     <input
                       type="text"
                       className="bento-form-input"
@@ -3701,8 +3904,12 @@ export default function Step10Review({
 
                 {/* In-Place Beneficiary Allocation for this Asset */}
                 <div style={{ backgroundColor: "#FAF7F0", padding: "0.65rem 0.85rem", borderRadius: "10px", marginTop: "0.4rem" }}>
-                  <label className="bento-form-label" style={{ color: "#C65378" }}>
+                  <label className="bento-form-label" style={{ color: "#C65378", display: "flex", alignItems: "center" }}>
                     Allocate to Beneficiary Legatee
+                    <InfoTooltip
+                      text="Select which beneficiary inherits this asset and their percentage share."
+                      hindiText="चुनें कि यह संपत्ति किस लाभार्थी को और कितने प्रतिशत हिस्से में मिलेगी।"
+                    />
                   </label>
                   <div className="bento-form-row-2" style={{ marginBottom: 0, marginTop: "0.25rem" }}>
                     <div>
@@ -3734,7 +3941,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row" style={{ marginTop: "0.75rem" }}>
-                  <label className="bento-form-label">Special Testamentary Instructions (Optional)</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Special Testamentary Instructions (Optional)
+                    <InfoTooltip
+                      text="Any specific condition or instruction for this asset (e.g., right of residence for spouse, or sell and divide proceeds)."
+                      hindiText="इस संपत्ति के लिए कोई विशेष शर्त या निर्देश (जैसे जीवनसाथी को आजीवन रहने का अधिकार)।"
+                    />
+                  </label>
                   <input
                     type="text"
                     className="bento-form-input"
@@ -3790,7 +4003,13 @@ export default function Step10Review({
             <form onSubmit={handleSaveAllocations}>
               <div className="bento-modal-body">
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Primary Residuary Legatee</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Primary Residuary Legatee
+                    <InfoTooltip
+                      text="Under Section 102 of the Indian Succession Act, this beneficiary inherits any unlisted, future-acquired, or leftover assets."
+                      hindiText="भारतीय उत्तराधिकार अधिनियम की धारा 102 के तहत, यह लाभार्थी किसी भी छूटी हुई या भविष्य में अर्जित संपत्ति को प्राप्त करेगा।"
+                    />
+                  </label>
                   <select
                     className="bento-form-select"
                     value={residuaryDraft.primary}
@@ -3808,7 +4027,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Alternate Residuary Legatee (Contingency)</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Alternate Residuary Legatee (Contingency)
+                    <InfoTooltip
+                      text="Substitute beneficiary who inherits the residuary estate if the Primary Residuary Legatee does not survive you."
+                      hindiText="वैकल्पिक लाभार्थी जो मुख्य अवशिष्ट लाभार्थी के न रहने की स्थिति में शेष संपत्ति प्राप्त करेगा।"
+                    />
+                  </label>
                   <select
                     className="bento-form-select"
                     value={residuaryDraft.alternate}
@@ -3866,7 +4091,13 @@ export default function Step10Review({
                   </strong>
                   <div className="bento-form-row-2">
                     <div>
-                      <label className="bento-form-label">Full Name</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Full Name
+                        <InfoTooltip
+                          text="Full legal name of the trusted adult (18+) who will administer your Will under Section 211."
+                          hindiText="उस विश्वसनीय वयस्क (18+) का पूरा कानूनी नाम जो धारा 211 के तहत आपकी वसीयत को लागू करेगा।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -3882,7 +4113,13 @@ export default function Step10Review({
                       />
                     </div>
                     <div>
-                      <label className="bento-form-label">Relationship</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Relationship
+                        <InfoTooltip
+                          text="How the Primary Executor is related to you (e.g., Spouse, Son, Brother, Legal Counsel)."
+                          hindiText="मुख्य निष्पादक का आपसे संबंध (जैसे जीवनसाथी, पुत्र, भाई, कानूनी सलाहकार)।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -3899,7 +4136,13 @@ export default function Step10Review({
                   </div>
                   <div className="bento-form-row-2" style={{ marginBottom: 0 }}>
                     <div>
-                      <label className="bento-form-label">Phone</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Phone
+                        <InfoTooltip
+                          text="Primary Executor's 10-digit mobile number."
+                          hindiText="मुख्य निष्पादक का 10-अंकों का मोबाइल नंबर।"
+                        />
+                      </label>
                       <input
                         type="tel"
                         inputMode="numeric"
@@ -3916,7 +4159,13 @@ export default function Step10Review({
                       />
                     </div>
                     <div>
-                      <label className="bento-form-label">Email</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Email
+                        <InfoTooltip
+                          text="Primary Executor's email address."
+                          hindiText="मुख्य निष्पादक का ईमेल पता।"
+                        />
+                      </label>
                       <input
                         type="email"
                         className="bento-form-input"
@@ -3939,7 +4188,13 @@ export default function Step10Review({
                   </strong>
                   <div className="bento-form-row-2">
                     <div>
-                      <label className="bento-form-label">Full Name</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Full Name
+                        <InfoTooltip
+                          text="Backup Executor who steps in if the Primary Executor is unable or unwilling to serve."
+                          hindiText="वैकल्पिक निष्पादक जो मुख्य निष्पादक के असमर्थ होने पर कार्यभार संभालेगा।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -3955,7 +4210,13 @@ export default function Step10Review({
                       />
                     </div>
                     <div>
-                      <label className="bento-form-label">Relationship</label>
+                      <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                        Relationship
+                        <InfoTooltip
+                          text="How the Alternate Executor is related to you."
+                          hindiText="वैकल्पिक निष्पादक का आपसे संबंध।"
+                        />
+                      </label>
                       <input
                         type="text"
                         className="bento-form-input"
@@ -4008,7 +4269,13 @@ export default function Step10Review({
             <form onSubmit={handleSaveWishes}>
               <div className="bento-modal-body">
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Digital Accounts & Cryptographic Passwords</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Digital Accounts & Cryptographic Passwords
+                    <InfoTooltip
+                      text="Instructions for cloud photos, social media accounts, or digital assets (never include raw passwords in a Will)."
+                      hindiText="क्लाउड फोटो, सोशल मीडिया या डिजिटल संपत्ति के निर्देश (वसीयत में कभी भी पासवर्ड न लिखें)।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4018,7 +4285,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Ancestral Heirlooms & Jewellery Directives</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Ancestral Heirlooms & Jewellery Directives
+                    <InfoTooltip
+                      text="Specific heirloom jewellery, watches, or ancestral items and who should inherit them."
+                      hindiText="विशेष आभूषण, घड़ियां या पारिवारिक धरोहर किसे मिले, इसका विवरण।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4028,7 +4301,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Academic, Research & Personal Belongings</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Academic, Research & Personal Belongings
+                    <InfoTooltip
+                      text="Books, journals, musical instruments, awards, and personal keepsakes."
+                      hindiText="पुस्तकें, डायरियां, वाद्ययंत्र, पुरस्कार और व्यक्तिगत वस्तुएं।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4038,7 +4317,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Charitable & Institutional Endowment</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Charitable & Institutional Endowment
+                    <InfoTooltip
+                      text="Optional donations to NGOs, orphanages, educational trusts, or hospitals."
+                      hindiText="एनजीओ, अनाथालय, शिक्षा ट्रस्ट या अस्पताल को ऐच्छिक दान।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4048,7 +4333,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Funeral, Cremation & Last Rites</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Funeral, Cremation & Last Rites
+                    <InfoTooltip
+                      text="Ceremony preferences, ash immersion wishes, and organ donation pledges."
+                      hindiText="अंतिम संस्कार की रीति, अस्थि विसर्जन और अंगदान की इच्छा।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4058,7 +4349,13 @@ export default function Step10Review({
                 </div>
 
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Pet Care & Veterinary Maintenance</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Pet Care & Veterinary Maintenance
+                    <InfoTooltip
+                      text="Designated caregiver and maintenance fund for domestic pets."
+                      hindiText="पालतू जानवरों की देखभाल करने वाला व्यक्ति और उनके खर्च हेतु फंड।"
+                    />
+                  </label>
                   <textarea
                     rows={2}
                     className="bento-form-textarea"
@@ -4103,7 +4400,13 @@ export default function Step10Review({
             <form onSubmit={handleSaveEmotional}>
               <div className="bento-modal-body">
                 <div className="bento-form-row">
-                  <label className="bento-form-label">Personal Letter / Statement of Intent</label>
+                  <label className="bento-form-label" style={{ display: "flex", alignItems: "center" }}>
+                    Personal Letter / Statement of Intent
+                    <InfoTooltip
+                      text="Your statement of purpose and message to your family demonstrating clear, voluntary intent under Section 59 of the Indian Succession Act."
+                      hindiText="परिवार के लिए आपका व्यक्तिगत संदेश और वसीयत का उद्देश्य जो धारा 59 के तहत आपकी स्पष्ट और स्वतंत्र इच्छा को दर्शाता है।"
+                    />
+                  </label>
                   <textarea
                     rows={6}
                     className="bento-form-textarea"

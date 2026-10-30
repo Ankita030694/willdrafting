@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import { useLanguage } from "@/context/LanguageContext";
+import InfoTooltip from "./InfoTooltip";
 
 interface Step9MotivationProps {
   state?: WillDraftingState;
@@ -257,8 +258,12 @@ export default function Step9Motivation({
             >
               <Shield size={16} />
             </div>
-            <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 700, color: "var(--color-navy)" }}>
+            <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 700, color: "var(--color-navy)", display: "flex", alignItems: "center" }}>
               What drives this Will?
+              <InfoTooltip
+                text="Select the primary motivation behind your Will. This shapes the introductory preamble of your Will to demonstrate clear, rational intent under Indian succession law."
+                hindiText="अपनी वसीयत का मुख्य उद्देश्य चुनें। यह वसीयत की प्रस्तावना में आपकी स्पष्ट और तर्कसंगत मंशा को स्थापित करता है।"
+              />
             </h3>
           </div>
 
@@ -330,16 +335,24 @@ export default function Step9Motivation({
               <MessageSquare size={16} />
             </div>
             <div>
-              <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 700, color: "var(--color-navy)" }}>
+              <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 700, color: "var(--color-navy)", display: "flex", alignItems: "center" }}>
                 Personal Letter to Family
+                <InfoTooltip
+                  text="Write a heartfelt message explaining your values, blessings, and the loving intent behind your estate decisions. This helps preserve family unity and prevents misunderstandings."
+                  hindiText="अपने परिवार के लिए प्रेमपूर्ण संदेश, आशीर्वाद और अपने निर्णयों के पीछे की भावना लिखें। इससे परिवार में एकता बनी रहती है और गलतफहमियां दूर होती हैं।"
+                />
               </h3>
             </div>
           </div>
 
           {/* Tone Picker Chips */}
           <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
-            <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-slate)", marginRight: "0.2rem" }}>
+            <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-slate)", marginRight: "0.2rem", display: "inline-flex", alignItems: "center" }}>
               Tone:
+              <InfoTooltip
+                text="Choose the emotional tone that best reflects how you wish to address your loved ones."
+                hindiText="अपने प्रियजनों को संबोधित करने के लिए उपयुक्त भावनात्मक शैली चुनें।"
+              />
             </span>
             {["Warm & Affectionate", "Principled & Firm", "Philosophical", "Pragmatic"].map((tone) => (
               <button
@@ -364,8 +377,12 @@ export default function Step9Motivation({
 
           {/* Prompt Starters */}
           <div style={{ display: "flex", alignItems: "center", gap: "0.3rem", flexWrap: "wrap" }}>
-            <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-slate)", marginRight: "0.2rem" }}>
+            <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-slate)", marginRight: "0.2rem", display: "inline-flex", alignItems: "center" }}>
               Insert:
+              <InfoTooltip
+                text="Tap any prompt chip to append a pre-written paragraph of gratitude, family unity, or moral legacy into your letter."
+                hindiText="कृतज्ञता, पारिवारिक एकता या नैतिक मूल्यों से जुड़े तैयार वाक्य अपने पत्र में जोड़ने के लिए किसी भी विकल्प पर टैप करें।"
+              />
             </span>
             {starters.map((starter) => (
               <button

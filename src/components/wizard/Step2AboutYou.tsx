@@ -27,6 +27,7 @@ import { lookupStateFromPin, fetchPincodeDetails } from "@/lib/pincode";
 import StateDropdown from "@/components/ui/StateDropdown";
 import { formatAadhaar, sanitizeAadhaar, sanitizeNameInput, sanitizePan, normalizeEmail, AADHAAR_ERROR_MSG } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface Step2AboutYouProps {
   state?: WillDraftingState;
@@ -328,8 +329,12 @@ export default function Step2AboutYou({
             {/* 1. Full Legal Name */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex flex-wrap justify-between items-center gap-2 mb-1.5">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  {isHi ? "पूर्ण कानूनी नाम (आधार / पैन के अनुसार) *" : "Full Legal Name (as per Aadhaar / PAN) *"}
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
+                  <span>{isHi ? "पूर्ण कानूनी नाम (आधार / पैन के अनुसार) *" : "Full Legal Name (as per Aadhaar / PAN) *"}</span>
+                  <InfoTooltip
+                    text="Enter your full legal name exactly as printed on your PAN card, Aadhaar card, and property title deeds. Under Section 59 of the Indian Succession Act, 1925, only a living natural person (not a company, HUF, or trust) can make a Will."
+                    hindiText="अपना पूरा कानूनी नाम ठीक वैसे ही दर्ज करें जैसा आपके पैन कार्ड, आधार कार्ड और संपत्ति के दस्तावेजों पर छपा है। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 59 के तहत केवल एक जीवित व्यक्ति ही वसीयत बना सकता है।"
+                  />
                 </label>
                 <div className="flex flex-wrap gap-1">
                   {["Mr.", "Mrs.", "Ms.", "Dr.", "Adv."].map((title) => {
@@ -393,8 +398,12 @@ export default function Step2AboutYou({
 
             {/* 2. Parent's Name (Son/Daughter of) */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "माता / पिता का नाम (पुत्र / पुत्री)" : "Parent's Name (Son/Daughter of)"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "माता / पिता का नाम (पुत्र / पुत्री)" : "Parent's Name (Son/Daughter of)"}</span>
+                <InfoTooltip
+                  text="Enter your father's or mother's full legal name (printed as 'S/o' or 'D/o' in the Will preamble). In Indian courts and Sub-Registrar offices, parentage is essential to distinguish you from anyone else with a similar name."
+                  hindiText="अपने पिता या माता का पूरा कानूनी नाम दर्ज करें (जो वसीयत की प्रस्तावना में 'पुत्र/पुत्री' के रूप में छपेगा)। न्यायालयों और उप-पंजीयक कार्यालयों में समान नाम वाले अन्य व्यक्तियों से आपकी पहचान स्पष्ट करने के लिए यह आवश्यक है।"
+                />
               </label>
               <input
                 type="text"
@@ -421,8 +430,12 @@ export default function Step2AboutYou({
 
             {/* 3. Workplace / Institutional Affiliation */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "कार्यस्थल / संस्थान संबद्धता" : "Workplace / Institutional Affiliation"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "कार्यस्थल / संस्थान संबद्धता" : "Workplace / Institutional Affiliation"}</span>
+                <InfoTooltip
+                  text="Mention your current or former employer, business, or profession (e.g., 'Retired SBI Officer' or 'Director at XYZ Pvt Ltd'). Adding your occupation in the opening declaration strengthens your identity proof."
+                  hindiText="अपने वर्तमान या पूर्व नियोक्ता, व्यवसाय या पेशे का उल्लेख करें (जैसे, 'सेवानिवृत्त एसबीआई अधिकारी' या 'निदेशक, एक्सवाईजेड प्रा. लि.')। यह आपकी पहचान को और अधिक प्रमाणित करता है।"
+                />
               </label>
               <input
                 type="text"
@@ -447,8 +460,12 @@ export default function Step2AboutYou({
 
             {/* 4. PAN */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "स्थायी खाता संख्या (पैन)" : "Permanent Account Number (PAN)"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "स्थायी खाता संख्या (पैन)" : "Permanent Account Number (PAN)"}</span>
+                <InfoTooltip
+                  text="Enter your 10-character PAN (e.g., ABCDE1234F). Including your PAN permanently links your Will to your Income Tax profile, bank accounts, Demat holdings, and mutual fund folios."
+                  hindiText="अपना 10-अक्षरों का पैन नंबर (जैसे, ABCDE1234F) दर्ज करें। वसीयत में पैन शामिल करने से यह आपके आयकर रिकॉर्ड, बैंक खातों, डीमैट और म्यूचुअल फंड फोलियो से निर्विवाद रूप से जुड़ जाता है।"
+                />
               </label>
               <input
                 type="text"
@@ -476,8 +493,12 @@ export default function Step2AboutYou({
 
             {/* 5. Aadhaar */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "आधार नंबर (12 अंक)" : "Aadhaar Number (12 digits)"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "आधार नंबर (12 अंक)" : "Aadhaar Number (12 digits)"}</span>
+                <InfoTooltip
+                  text="Enter your 12-digit Aadhaar number. Aadhaar serves as primary identity proof when your family or Executor submits the Will for property mutation, bank transmission, or Sub-Registrar registration."
+                  hindiText="अपना 12-अंकों का आधार नंबर दर्ज करें। संपत्ति नामांतरण (म्यूटेशन), बैंक हस्तांतरण या उप-पंजीयक पंजीकरण के समय आधार आपकी प्राथमिक पहचान के रूप में कार्य करता है।"
+                />
               </label>
               <input
                 type="text"
@@ -505,8 +526,12 @@ export default function Step2AboutYou({
 
             {/* 6. Gender */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "लिंग" : "Gender"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "लिंग" : "Gender"}</span>
+                <InfoTooltip
+                  text="Select your gender. Under Indian succession laws (such as Sections 8 and 15 of the Hindu Succession Act, 1956), legal pronouns and default intestate heir rules differ for male and female testators."
+                  hindiText="अपना लिंग चुनें। भारतीय उत्तराधिकार कानूनों (जैसे हिंदू उत्तराधिकार अधिनियम, 1956 की धारा 8 और 15) के तहत पुरुष और महिला वसीयतकर्ताओं के लिए कानूनी शब्दावली और उत्तराधिकार नियम भिन्न होते हैं।"
+                />
               </label>
               <div className="grid grid-cols-3 gap-1.5 border-b border-[#D1D5DB] pb-1.5">
                 {[
@@ -549,8 +574,12 @@ export default function Step2AboutYou({
             {/* 7. Date of Birth */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex justify-between items-center mb-1.5">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  {isHi ? "जन्म तिथि एवं आयु" : "Date of Birth & Age"}
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
+                  <span>{isHi ? "जन्म तिथि एवं आयु" : "Date of Birth & Age"}</span>
+                  <InfoTooltip
+                    text="Select your date of birth as per official ID. Under Section 59 of the Indian Succession Act, 1925, you must be at least 18 years old and of sound mind to execute a valid Will."
+                    hindiText="आधिकारिक पहचान पत्र के अनुसार अपनी जन्म तिथि चुनें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 59 के तहत वैध वसीयत बनाने के लिए आपकी आयु कम से कम 18 वर्ष और मानसिक स्थिति स्वस्थ होनी चाहिए।"
+                  />
                 </label>
                 <span className="text-[11px] font-bold text-[#C65378]">
                   {currentAge} {isHi ? "वर्ष" : "yrs"}
@@ -579,7 +608,13 @@ export default function Step2AboutYou({
             {/* 8. Mobile Phone */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
-                <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                <span className="inline-flex items-center">
+                  <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                  <InfoTooltip
+                    text="Enter your active 10-digit Indian mobile number. This is used to save your progress and help your Executor or legal team verify your contact record."
+                    hindiText="अपना सक्रिय 10-अंकों का मोबाइल नंबर दर्ज करें। इसका उपयोग आपकी प्रगति को सुरक्षित रखने और आपके निष्पादक (Executor) या कानूनी टीम के संदर्भ के लिए किया जाता है।"
+                  />
+                </span>
                 {formData.phone && formData.phone.length === 10 ? (
                   <span className="text-[10px] text-emerald-600 font-semibold lowercase tracking-normal flex items-center gap-0.5">
                     ✓ {isHi ? "10 अंक मान्य" : "10 digits valid"}
@@ -623,8 +658,12 @@ export default function Step2AboutYou({
 
             {/* 9. Email Address */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "ईमेल पता" : "Email Address"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                <InfoTooltip
+                  text="Enter your personal email address. We will send a 6-digit verification OTP to this email in Step 10 to permanently lock your Will and link it to your secure account."
+                  hindiText="अपना व्यक्तिगत ईमेल पता दर्ज करें। चरण 10 में आपकी वसीयत को स्थायी रूप से सत्यापित और लॉक करने के लिए इसी ईमेल पर 6-अंकों का ओटीपी (OTP) भेजा जाएगा।"
+                />
               </label>
               <input
                 type="email"
@@ -649,8 +688,12 @@ export default function Step2AboutYou({
 
             {/* 10. Permanent Residential Address */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "स्थायी आवासीय पता" : "Permanent Residential Address"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "स्थायी आवासीय पता" : "Permanent Residential Address"}</span>
+                <InfoTooltip
+                  text="Enter your complete permanent residential address (House/Flat No., Building, Street, Locality). This establishes your place of domicile and determines which local District Court has jurisdiction over your estate."
+                  hindiText="अपना पूरा स्थायी आवासीय पता (मकान/फ्लैट नंबर, भवन, गली, मोहल्ला) दर्ज करें। यह आपके अधिवास को स्थापित करता है और तय करता है कि किस स्थानीय जिला न्यायालय का क्षेत्राधिकार लागू होगा।"
+                />
               </label>
               <input
                 type="text"
@@ -676,7 +719,13 @@ export default function Step2AboutYou({
             {/* 11. PIN Code */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
-                <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
+                <span className="inline-flex items-center">
+                  <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
+                  <InfoTooltip
+                    text="Enter your 6-digit postal PIN code. We automatically fetch your City and State from this PIN code to identify your local Sub-Registrar jurisdiction."
+                    hindiText="अपना 6-अंकों का डाक पिन कोड दर्ज करें। इस पिन कोड से आपका शहर और राज्य स्वतः भर जाएगा ताकि आपके स्थानीय उप-पंजीयक क्षेत्राधिकार की पहचान हो सके।"
+                  />
+                </span>
                 <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case">
                   {isHi ? "शहर व राज्य स्वतः भरेगा" : "Auto-fills City & State"}
                 </span>
@@ -704,8 +753,12 @@ export default function Step2AboutYou({
 
             {/* 12. City */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                {isHi ? "शहर / जिला" : "City"}
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                <span>{isHi ? "शहर / जिला" : "City"}</span>
+                <InfoTooltip
+                  text="Your city or district of residence. Note: Properties or Wills executed within the presidency jurisdictions of Mumbai, Chennai, or Kolkata have specific probate requirements under Section 213 of the Indian Succession Act."
+                  hindiText="आपका निवास शहर या जिला। नोट: मुंबई, चेन्नई या कोलकाता के न्यायिक क्षेत्र में निष्पादित वसीयतों या संपत्तियों के लिए भारतीय उत्तराधिकार अधिनियम की धारा 213 के तहत विशेष प्रोबेट नियम लागू होते हैं।"
+                />
               </label>
               <input
                 type="text"
@@ -731,7 +784,13 @@ export default function Step2AboutYou({
             {/* 13. State (Standard Dropdown) */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
-                <span>{isHi ? "राज्य" : "State"}</span>
+                <span className="inline-flex items-center">
+                  <span>{isHi ? "राज्य" : "State"}</span>
+                  <InfoTooltip
+                    text="Select the Indian State or Union Territory of your permanent residence."
+                    hindiText="अपने स्थायी निवास का भारतीय राज्य या केंद्र शासित प्रदेश चुनें।"
+                  />
+                </span>
                 {autoFilledState && (
                   <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case flex items-center gap-1">
                     ✓ {isHi ? "पिन से स्वतः भरा" : "Auto-filled from PIN"}
@@ -752,8 +811,12 @@ export default function Step2AboutYou({
             {/* Marital Status */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  {isHi ? "वैवाहिक स्थिति *" : "Marital Status *"}
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
+                  <span>{isHi ? "वैवाहिक स्थिति *" : "Marital Status *"}</span>
+                  <InfoTooltip
+                    text="Select your current marital status. Marriage or divorce affects who qualifies as your Class I natural legal heirs and helps our Legal Health Check verify if immediate dependents are accounted for."
+                    hindiText="अपनी वर्तमान वैवाहिक स्थिति चुनें। यह तय करता है कि आपके प्रथम श्रेणी (Class I) के प्राकृतिक कानूनी उत्तराधिकारी कौन हैं और कानूनी स्वास्थ्य जांच में आश्रितों की सुरक्षा सुनिश्चित करता है।"
+                  />
                 </label>
                 <span className="text-[11px] text-[#9CA3AF]">
                   {isHi ? "जीवनसाथी के कानूनी अधिकार तय करता है" : "Determines spousal legal rights"}
@@ -813,8 +876,12 @@ export default function Step2AboutYou({
             {/* Religion / Governing Succession Law */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  {isHi ? "लागू उत्तराधिकार कानून / धर्म *" : "Governing Succession Law / Religion *"}
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
+                  <span>{isHi ? "लागू उत्तराधिकार कानून / धर्म *" : "Governing Succession Law / Religion *"}</span>
+                  <InfoTooltip
+                    text="Select your religion/personal law. In India, succession laws depend on faith: Hindus, Sikhs, Jains & Buddhists are governed by the Hindu Succession Act, 1956; Christians, Parsis & Civil marriages by the Indian Succession Act, 1925; and Muslims by Shariat Law (where bequests to non-heirs are generally capped at 1/3rd of the net estate unless legal heirs consent)."
+                    hindiText="अपना धर्म या व्यक्तिगत कानून चुनें। भारत में उत्तराधिकार कानून धर्म पर आधारित हैं: हिंदू, सिख, जैन और बौद्ध (हिंदू उत्तराधिकार अधिनियम, 1956); ईसाई, पारसी व सिविल विवाह (भारतीय उत्तराधिकार अधिनियम, 1925); और मुस्लिम (शरीयत कानून—जहां वारिसों की सहमति के बिना गैर-वारिसों को अधिकतम 1/3 संपत्ति दी जा सकती है)।"
+                  />
                 </label>
                 <span className="text-[11px] text-[#9CA3AF]">
                   {isHi ? "प्रोबेट व उत्तराधिकार नियम तय करता है" : "Determines applicable Indian Succession Act rules"}
@@ -888,10 +955,16 @@ export default function Step2AboutYou({
             }}
           >
             <div>
-              <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#111827" }}>
-                {isHi
-                  ? "क्या आपने पहले कोई वसीयत या कोडिसिल बनाई है? (धारा 70 निरस्तीकरण)"
-                  : "Have you made any previous Will or Codicil? (Section 70 Revocation)"}
+              <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#111827" }} className="inline-flex items-center">
+                <span>
+                  {isHi
+                    ? "क्या आपने पहले कोई वसीयत या कोडिसिल बनाई है? (धारा 70 निरस्तीकरण)"
+                    : "Have you made any previous Will or Codicil? (Section 70 Revocation)"}
+                </span>
+                <InfoTooltip
+                  text="Turn this ON if you have ever signed an earlier Will or Codicil. Even if you aren't sure, our system includes a mandatory Revocation Clause under Section 70 of the Indian Succession Act, 1925 to automatically cancel all prior Wills and make this your sole valid Last Will."
+                  hindiText="यदि आपने पहले कभी कोई वसीयत या कोडिसिल बनाई है तो 'हाँ' चुनें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 70 के तहत यह वसीयत आपकी सभी पुरानी वसीयतों को स्वतः रद्द कर देगी और यही आपकी अंतिम मान्य वसीयत होगी।"
+                />
               </div>
               <div style={{ fontSize: "0.73rem", color: "#6B7280" }}>
                 {isHi

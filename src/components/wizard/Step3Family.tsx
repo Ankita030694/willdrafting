@@ -38,6 +38,7 @@ import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { sanitizeNameInput, sanitizePan, normalizeEmail, toTitleCaseText } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface Step3FamilyProps {
   state?: WillDraftingState;
@@ -866,8 +867,12 @@ export default function Step3Family({
 
               {/* Who is this person? / Relationship Dropdown */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
-                  {isHi ? "यह व्यक्ति कौन है? (संबंध चुनें) *" : "Who is this person? (Select Relationship) *"}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                  <span>{isHi ? "यह व्यक्ति कौन है? (संबंध चुनें) *" : "Who is this person? (Select Relationship) *"}</span>
+                  <InfoTooltip
+                    text="Select how this beneficiary is related to you. Identifying close Class I legal heirs (Spouse, Children, Mother) vs. extended family or friends helps prevent ambiguity and future legal challenges."
+                    hindiText="चुनें कि यह लाभार्थी आपसे कैसे संबंधित है। प्रथम श्रेणी (Class I) के कानूनी उत्तराधिकारियों (जीवनसाथी, बच्चे, माता) और अन्य रिश्तेदारों या मित्रों की स्पष्ट पहचान भविष्य के कानूनी विवादों को रोकती है।"
+                  />
                 </label>
                 <div style={{ position: "relative", width: "100%" }}>
                   <select
@@ -908,8 +913,12 @@ export default function Step3Family({
               {/* Full Legal Name */}
               <div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
-                  <label style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    {isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                    <span>{isHi ? "पूर्ण कानूनी नाम *" : "Full Legal Name *"}</span>
+                    <InfoTooltip
+                      text="Enter this person's full legal name exactly as printed on their Aadhaar card, PAN card, or birth certificate. Banks and registrars require an exact name match before transferring assets."
+                      hindiText="इस व्यक्ति का पूरा कानूनी नाम ठीक वैसे ही दर्ज करें जैसा उनके आधार कार्ड, पैन कार्ड या जन्म प्रमाण पत्र पर लिखा है। संपत्ति हस्तांतरण के समय बैंकों और रजिस्ट्रार को सटीक नाम मिलान की आवश्यकता होती है।"
+                    />
                   </label>
                   {/* Quick Salutation Chips */}
                   <div style={{ display: "flex", gap: "0.25rem" }}>
@@ -969,14 +978,19 @@ export default function Step3Family({
                 <div>
                   <label
                     style={{
-                      display: "block",
+                      display: "inline-flex",
+                      alignItems: "center",
                       fontSize: "0.825rem",
                       fontWeight: 700,
                       color: "var(--color-navy)",
                       marginBottom: "0.35rem",
                     }}
                   >
-                    {isHi ? "विशिष्ट रिश्ता दर्ज करें *" : "Relationship with this Person *"}
+                    <span>{isHi ? "विशिष्ट रिश्ता दर्ज करें *" : "Relationship with this Person *"}</span>
+                    <InfoTooltip
+                      text="Specify your exact relationship with this beneficiary (e.g., 'Grandson', 'Nephew', 'Daughter-in-law', 'Family Friend', or 'Domestic Helper')."
+                      hindiText="इस लाभार्थी के साथ अपना सटीक संबंध स्पष्ट करें (जैसे, 'पोता', 'भतीजा', 'बहू', 'पारिवारिक मित्र' या 'सहयोगी')।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -1039,8 +1053,12 @@ export default function Step3Family({
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.6rem", gap: "0.5rem", flexWrap: "wrap" }}>
-                  <label style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    {isHi ? "जन्म तिथि *" : "Date of Birth *"}
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                    <span>{isHi ? "जन्म तिथि *" : "Date of Birth *"}</span>
+                    <InfoTooltip
+                      text="Select the beneficiary's date of birth. If they are under 18 years old today, the system automatically flags them as a Minor and unlocks Step 7 (Testamentary Guardian & Minor Property Trust clauses)."
+                      hindiText="लाभार्थी की जन्म तिथि चुनें। यदि उनकी आयु 18 वर्ष से कम है, तो सिस्टम स्वतः उन्हें नाबालिग के रूप में चिह्नित करेगा और चरण 7 (कानूनी अभिभावक और माइनर प्रॉपर्टी ट्रस्ट प्रावधान) को सक्रिय कर देगा।"
+                    />
                   </label>
                   {modalAge !== null && (
                     modalAge < 18 ? (
@@ -1106,8 +1124,12 @@ export default function Step3Family({
               {/* Optional Contact Fields (Phone & Address) */}
               <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.85rem" }}>
                 <div>
-                  <label style={{ display: "block", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    {isHi ? "मोबाइल नंबर (ऐच्छिक)" : "Phone Number (Optional)"}
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "मोबाइल नंबर (ऐच्छिक)" : "Phone Number (Optional)"}</span>
+                    <InfoTooltip
+                      text="Enter their 10-digit mobile number (or parent's number if a minor) so your Executor can promptly reach them during estate distribution."
+                      hindiText="उनका 10-अंकों का मोबाइल नंबर दर्ज करें (या नाबालिग होने पर माता-पिता का नंबर) ताकि वसीयत निष्पादन के समय आपका निष्पादक (Executor) उनसे आसानी से संपर्क कर सके।"
+                    />
                   </label>
                   <input
                     type="tel"
@@ -1129,8 +1151,12 @@ export default function Step3Family({
                 </div>
 
                 <div>
-                  <label style={{ display: "block", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    {isHi ? "ईमेल (ऐच्छिक)" : "Email (Optional)"}
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                    <span>{isHi ? "ईमेल (ऐच्छिक)" : "Email (Optional)"}</span>
+                    <InfoTooltip
+                      text="Enter their email address so the Executor can send official notices and documents when administering the Will."
+                      hindiText="उनका ईमेल पता दर्ज करें ताकि वसीयत के प्रशासन के दौरान निष्पादक उन्हें आधिकारिक सूचनाएं और दस्तावेज भेज सके।"
+                    />
                   </label>
                   <input
                     type="email"
@@ -1151,8 +1177,12 @@ export default function Step3Family({
 
               {/* PAN Number Field */}
               <div>
-                <label style={{ display: "block", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  {isHi ? "स्थायी खाता संख्या (पैन) (पहचान के लिए अनुशंसित)" : "Permanent Account Number (PAN) (Recommended for identification)"}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  <span>{isHi ? "स्थायी खाता संख्या (पैन) (पहचान के लिए अनुशंसित)" : "Permanent Account Number (PAN) (Recommended for identification)"}</span>
+                  <InfoTooltip
+                    text="Enter the beneficiary's 10-character PAN (if available). Mentioning a beneficiary's PAN in the Will eliminates identity disputes when transferring Demat shares, mutual funds, or bank deposits."
+                    hindiText="यदि उपलब्ध हो तो लाभार्थी का 10-अक्षरों का पैन नंबर दर्ज करें। वसीयत में लाभार्थी का पैन उल्लेख करने से डीमैट शेयर, म्यूचुअल फंड या बैंक जमा हस्तांतरित करते समय पहचान संबंधी कोई विवाद नहीं होता।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -1186,8 +1216,12 @@ export default function Step3Family({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Resides at your address
+                    <div style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      <span>{isHi ? "आपके पते पर ही निवास करते हैं" : "Resides at your address"}</span>
+                      <InfoTooltip
+                        text="Keep this switched ON if this family member lives at the same permanent residential address as you. Switch it OFF to enter a separate address for them."
+                        hindiText="यदि यह पारिवारिक सदस्य आपके स्थायी आवासीय पते पर ही रहता है, तो इसे चालू (ON) रखें। यदि उनका पता अलग है, तो इसे बंद (OFF) करके उनका पता दर्ज करें।"
+                      />
                     </div>
                     <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
                       {isHi ? "आपके स्थायी पते पर ही निवास करते हैं" : "Uses same home address as you (Will creator)"}
@@ -1200,14 +1234,19 @@ export default function Step3Family({
                   <div>
                     <label
                       style={{
-                        display: "block",
+                        display: "inline-flex",
+                        alignItems: "center",
                         fontSize: "0.775rem",
                         fontWeight: 700,
                         color: "var(--color-navy)",
                         marginBottom: "0.3rem",
                       }}
                     >
-                      Residential Address *
+                      <span>{isHi ? "आवासीय पता *" : "Residential Address *"}</span>
+                      <InfoTooltip
+                        text="Enter the complete current residential address of this beneficiary (including City, State, and PIN Code) for accurate legal identification."
+                        hindiText="सटीक कानूनी पहचान के लिए इस लाभार्थी का पूरा वर्तमान आवासीय पता (शहर, राज्य और पिन कोड सहित) दर्ज करें।"
+                      />
                     </label>
                     <input
                       type="text"

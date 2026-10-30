@@ -11,6 +11,7 @@ import { syncWillNow, hydrateWillFromServer } from "@/lib/willSync";
 import { ShieldCheck, Mail, AlertTriangle, Check, ArrowRight, X, RefreshCw, Lock } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import EmailOtpAuth from "@/components/auth/EmailOtpAuth";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface WillVerificationModalProps {
   isOpen: boolean;
@@ -441,7 +442,8 @@ export default function WillVerificationModal({
               <label
                 htmlFor="verification-code"
                 style={{
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
                   fontSize: "0.8rem",
                   fontWeight: 700,
                   color: "#172228",
@@ -449,6 +451,10 @@ export default function WillVerificationModal({
                 }}
               >
                 {isHi ? "6-अंकों का सत्यापन कोड" : "6-Digit Verification Code"}
+                <InfoTooltip
+                  text="Enter the 6-digit One-Time Password (OTP) sent to your email address to verify and permanently lock your Will details against unauthorized changes."
+                  hindiText="अपनी वसीयत के विवरणों को सत्यापित और स्थायी रूप से लॉक करने के लिए अपने ईमेल पर भेजा गया 6-अंकों का ओटीपी (OTP) दर्ज करें।"
+                />
               </label>
               <input
                 id="verification-code"

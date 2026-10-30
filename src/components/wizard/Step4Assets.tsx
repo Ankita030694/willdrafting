@@ -33,6 +33,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import IndianAmountInput from "@/components/ui/IndianAmountInput";
 import { sanitizeNameInput, sanitizePercent, toTitleCaseText, normalizeIdCode } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
+import InfoTooltip from "@/components/wizard/InfoTooltip";
 
 interface Step4AssetsProps {
   state?: WillDraftingState;
@@ -1135,8 +1136,12 @@ export default function Step4Assets({
               )}
               {/* Category Selector Grid */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
-                  {isHi ? "संपत्ति श्रेणी चुनें *" : "Asset Category *"}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                  <span>{isHi ? "संपत्ति श्रेणी चुनें *" : "Asset Category *"}</span>
+                  <InfoTooltip
+                    text="Choose the category that best matches this asset. Each category tailors the legal clauses in Schedule A of your Will (e.g., Survey/Flat No. for real estate vs. Policy No. for insurance)."
+                    hindiText="वह श्रेणी चुनें जो इस संपत्ति से सबसे अच्छी तरह मेल खाती हो। प्रत्येक श्रेणी आपकी वसीयत की अनुसूची A (Schedule A) में कानूनी विवरण को अनुकूलित करती है।"
+                  />
                 </label>
                 <div className="asset-modal-cat-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.45rem" }}>
                   {primaryBoxes.map((box) => {
@@ -1196,8 +1201,12 @@ export default function Step4Assets({
                     gap: "0.65rem",
                   }}
                 >
-                  <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 800, color: "#C2410C" }}>
-                    {isHi ? "कस्टम संपत्ति वर्गीकरण / प्रकार *" : "Custom Asset Classification / Type *"}
+                  <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 800, color: "#C2410C" }}>
+                    <span>{isHi ? "कस्टम संपत्ति वर्गीकरण / प्रकार *" : "Custom Asset Classification / Type *"}</span>
+                    <InfoTooltip
+                      text="Describe the specific category of this asset (e.g., 'Cryptocurrency Hardware Wallet', 'Fine Art & Paintings', 'Intellectual Property / Patents', or 'Personal Loan Receivable')."
+                      hindiText="इस विशेष संपत्ति के प्रकार का वर्णन करें (जैसे, 'क्रिप्टोकरेंसी हार्डवेयर वॉलेट', 'पेंटिंग और कलाकृतियां', 'बौद्धिक संपदा / पेटेंट', या 'दिया गया व्यक्तिगत ऋण')।"
+                    />
                   </label>
                   <input
                     type="text"
@@ -1261,8 +1270,12 @@ export default function Step4Assets({
               {/* Sub-type Classification Pills (for standard categories) */}
               {category !== "other" && (
                 <div>
-                  <span style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-slate)", marginBottom: "0.4rem" }}>
-                    {isHi ? "विशिष्ट वर्गीकरण:" : "Asset Classification / Sub-type:"}
+                  <span style={{ display: "inline-flex", alignItems: "center", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-slate)", marginBottom: "0.4rem" }}>
+                    <span>{isHi ? "विशिष्ट वर्गीकरण:" : "Asset Classification / Sub-type:"}</span>
+                    <InfoTooltip
+                      text="Click a sub-type pill (e.g., 'Savings Account', 'Fixed Deposit (FD)', 'Residential Flat / Apartment', 'Demat / Stock Portfolio') to classify the exact nature of the asset."
+                      hindiText="संपत्ति की सटीक प्रकृति को वर्गीकृत करने के लिए किसी एक विकल्प (जैसे, 'बचत खाता', 'फिक्स्ड डिपॉजिट', 'आवासीय फ्लैट', 'डीमैट खाता') पर क्लिक करें।"
+                    />
                   </span>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
                     {(categoryConfigs[category]?.quickTypes || []).map((typeOpt) => (
@@ -1290,10 +1303,16 @@ export default function Step4Assets({
 
               {/* Asset Title / Name */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                  {category === "insurance"
-                    ? (isHi ? "बीमा पॉलिसी का नाम / शीर्षक *" : "Insurance Policy Title & Plan Name *")
-                    : (isHi ? "संपत्ति का शीर्षक व नाम *" : "Asset Title & Identification Name *")}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                  <span>
+                    {category === "insurance"
+                      ? (isHi ? "बीमा पॉलिसी का नाम / शीर्षक *" : "Insurance Policy Title & Plan Name *")
+                      : (isHi ? "संपत्ति का शीर्षक व नाम *" : "Asset Title & Identification Name *")}
+                  </span>
+                  <InfoTooltip
+                    text="Give this asset a clear, recognizable title that will appear as its heading in Schedule A of your Will (e.g., 'HDFC Savings Account - Indiranagar' or '3BHK Apartment in Powai, Mumbai')."
+                    hindiText="इस संपत्ति को एक स्पष्ट और पहचानने योग्य शीर्षक दें जो आपकी वसीयत की अनुसूची A में इसके मुख्य नाम के रूप में दिखाई देगा (जैसे, 'एचडीएफसी बचत खाता' या 'पवई, मुंबई में 3BHK फ्लैट')।"
+                  />
                 </label>
                 <input
                   type="text"
@@ -1351,8 +1370,12 @@ export default function Step4Assets({
 
                   {/* Insurer Company with Quick Select */}
                   <div>
-                    <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      {isHi ? "बीमा प्रदाता कंपनी *" : "Insurance Provider / Company *"}
+                    <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      <span>{isHi ? "बीमा प्रदाता कंपनी *" : "Insurance Provider / Company *"}</span>
+                      <InfoTooltip
+                        text="Enter the full name of the insurance company issuing the policy (e.g., 'LIC of India', 'HDFC Life Insurance', 'ICICI Prudential')."
+                        hindiText="पॉलिसी जारी करने वाली बीमा कंपनी का पूरा नाम दर्ज करें (जैसे, 'भारतीय जीवन बीमा निगम (LIC)', 'एचडीएफसी लाइफ', 'आईसीआईसीआई प्रूडेंशियल')।"
+                      />
                     </label>
                     <input
                       type="text"
@@ -1407,8 +1430,12 @@ export default function Step4Assets({
                   {/* Policy Number and Nominee Row */}
                   <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        {isHi ? "पॉलिसी नंबर *" : "Policy Number *"}
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "पॉलिसी नंबर *" : "Policy Number *"}</span>
+                        <InfoTooltip
+                          text="Enter the exact policy number printed on your insurance policy bond so your beneficiaries can file claims without delay."
+                          hindiText="अपने बीमा पॉलिसी बॉन्ड पर छपा सटीक पॉलिसी नंबर दर्ज करें ताकि आपके लाभार्थी बिना किसी देरी के दावा (क्लेम) कर सकें।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -1429,8 +1456,12 @@ export default function Step4Assets({
                     </div>
 
                     <div>
-                      <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                        {isHi ? "दर्ज नामिती (Nominee)" : "Nominee Recorded with Insurer"}
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        <span>{isHi ? "दर्ज नामिती (Nominee)" : "Nominee Recorded with Insurer"}</span>
+                        <InfoTooltip
+                          text="Enter the name of the person currently listed as the nominee on your policy record. Under Indian law, a nominee is typically a custodian/trustee who receives the payout, whereas the beneficiary named in your Will is the ultimate legal owner."
+                          hindiText="पॉलिसी रिकॉर्ड में वर्तमान में दर्ज नॉमिनी का नाम लिखें। भारतीय कानून के तहत नॉमिनी केवल राशि प्राप्त करने वाला ट्रस्टी होता है, जबकि वसीयत में नामित लाभार्थी ही उस राशि का अंतिम कानूनी मालिक होता है।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -1454,14 +1485,20 @@ export default function Step4Assets({
                 /* Standard Identifier & Institution Row */
                 <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.85rem" }}>
                   <div>
-                    <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      {category === "bank_account"
-                        ? (isHi ? "खाता संख्या (Account No.)" : "Account / Deposit Number")
-                        : category === "property"
-                        ? (isHi ? "सर्वे / खाता / फ्लैट संख्या" : "Survey / Khata / Flat No.")
-                        : category === "vehicles"
-                        ? (isHi ? "वाहन पंजीकरण संख्या (Reg No.)" : "Vehicle Registration No.")
-                        : (isHi ? "पहचान संदर्भ / संख्या" : "Identifier / Account / Reference No.")}
+                    <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      <span>
+                        {category === "bank_account"
+                          ? (isHi ? "खाता संख्या (Account No.)" : "Account / Deposit Number")
+                          : category === "property"
+                          ? (isHi ? "सर्वे / खाता / फ्लैट संख्या" : "Survey / Khata / Flat No.")
+                          : category === "vehicles"
+                          ? (isHi ? "वाहन पंजीकरण संख्या (Reg No.)" : "Vehicle Registration No.")
+                          : (isHi ? "पहचान संदर्भ / संख्या" : "Identifier / Account / Reference No.")}
+                      </span>
+                      <InfoTooltip
+                        text="Enter the unique identifying number for this asset: Account/FD/Locker No. (full or last 4 digits) for banks; Flat/Plot/Survey/CTS No. for property; Demat BO ID or Folio No. for investments; Registration No. for vehicles; or CIN/GSTIN for businesses."
+                        hindiText="इस संपत्ति की विशिष्ट पहचान संख्या दर्ज करें: बैंक के लिए खाता/एफडी/लॉकर नंबर (पूरा या अंतिम 4 अंक); संपत्ति के लिए फ्लैट/प्लॉट/सर्वे/खसरा नंबर; निवेश के लिए डीमैट आईडी या फोलियो नंबर; वाहन के लिए पंजीकरण संख्या।"
+                      />
                     </label>
                     <input
                       type="text"
@@ -1488,14 +1525,20 @@ export default function Step4Assets({
                   </div>
 
                   <div>
-                    <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      {category === "bank_account"
-                        ? (isHi ? "बैंक एवं शाखा" : "Bank Name & Branch")
-                        : category === "property"
-                        ? (isHi ? "संपत्ति का पता / शहर" : "Property Address & City")
-                        : category === "investments"
-                        ? (isHi ? "ब्रोकर / डिपॉजिटरी" : "Broker / Depository (e.g. Zerodha)")
-                        : (isHi ? "स्थान / संस्थान" : "Location / Institution / Custodian")}
+                    <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      <span>
+                        {category === "bank_account"
+                          ? (isHi ? "बैंक एवं शाखा" : "Bank Name & Branch")
+                          : category === "property"
+                          ? (isHi ? "संपत्ति का पता / शहर" : "Property Address & City")
+                          : category === "investments"
+                          ? (isHi ? "ब्रोकर / डिपॉजिटरी" : "Broker / Depository (e.g. Zerodha)")
+                          : (isHi ? "स्थान / संस्थान" : "Location / Institution / Custodian")}
+                      </span>
+                      <InfoTooltip
+                        text="Specify where this asset is located or held—for example, the Bank Name & Branch address, the complete postal address of the real estate property, the Broker/Depository (Zerodha/CDSL/NSDL), or the safe locker location where jewellery is stored."
+                        hindiText="बताएं कि यह संपत्ति कहां स्थित या रखी गई है—उदाहरण के लिए, बैंक का नाम और शाखा, अचल संपत्ति का पूरा डाक पता, ब्रोकर/डिपॉजिटरी (Zerodha/CDSL/NSDL), या वह लॉकर जहां गहने रखे हैं।"
+                      />
                     </label>
                     <input
                       type="text"
@@ -1531,10 +1574,16 @@ export default function Step4Assets({
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
-                  <span style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    {category === "insurance"
-                      ? (isHi ? "बीमा सुरक्षा राशि (Sum Assured)" : "Policy Sum Assured / Maturity Benefit")
-                      : (isHi ? "अनुमानित संपत्ति मूल्यांकन" : "Estimated Asset Valuation")}
+                  <span style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                    <span>
+                      {category === "insurance"
+                        ? (isHi ? "बीमा सुरक्षा राशि (Sum Assured)" : "Policy Sum Assured / Maturity Benefit")
+                        : (isHi ? "अनुमानित संपत्ति मूल्यांकन" : "Estimated Asset Valuation")}
+                    </span>
+                    <InfoTooltip
+                      text="Enter an approximate current market value or sum assured in Rupees (₹). An exact rupee figure is not required for your Will to be legally valid—this estimate helps you visualize whether your overall wealth distribution across family members is fair."
+                      hindiText="रुपये (₹) में अनुमानित वर्तमान बाजार मूल्य या बीमा राशि दर्ज करें। वसीयत की कानूनी वैधता के लिए एकदम सटीक मूल्य आवश्यक नहीं है—यह अनुमान आपको परिवार के सदस्यों के बीच संपत्ति के संतुलित वितरण को समझने में मदद करता है।"
+                    />
                   </span>
                   <span style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
                     {formatCurrency(category === "insurance" ? sumAssured : approximateValue)}
@@ -1595,8 +1644,12 @@ export default function Step4Assets({
 
               {/* Ownership Title Segmented Control */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
-                  {isHi ? "स्वामित्व प्रकार (Ownership Title)" : "Ownership Title"}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                  <span>{isHi ? "स्वामित्व प्रकार (Ownership Title)" : "Ownership Title"}</span>
+                  <InfoTooltip
+                    text="Select 'Solely Owned (100%)' if the asset is exclusively in your name. Select 'Jointly Owned' if the property deed, bank account, or investment is co-owned with another person."
+                    hindiText="यदि संपत्ति पूरी तरह से आपके अकेले के नाम पर है तो 'पूर्ण स्वामित्व (100%)' चुनें। यदि संपत्ति के दस्तावेज या बैंक खाते में कोई सह-स्वामी भी है, तो 'संयुक्त स्वामित्व (Joint)' चुनें।"
+                  />
                 </label>
                 <AppleSegmentedControl
                   options={[
@@ -1622,8 +1675,12 @@ export default function Step4Assets({
                 >
                   <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                        {isHi ? "सह-स्वामी का पूरा नाम *" : "Joint Owner Full Name *"}
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                        <span>{isHi ? "सह-स्वामी का पूरा नाम *" : "Joint Owner Full Name *"}</span>
+                        <InfoTooltip
+                          text="Enter the full legal name of the co-owner who holds this asset jointly with you on the official title deed or bank record."
+                          hindiText="आधिकारिक टाइटल डीड या बैंक रिकॉर्ड में आपके साथ इस संपत्ति के सह-स्वामी का पूरा कानूनी नाम दर्ज करें।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -1644,8 +1701,12 @@ export default function Step4Assets({
                     </div>
 
                     <div>
-                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                        {isHi ? "सह-स्वामी से संबंध *" : "Relationship with Joint Owner *"}
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                        <span>{isHi ? "सह-स्वामी से संबंध *" : "Relationship with Joint Owner *"}</span>
+                        <InfoTooltip
+                          text="Specify how the co-owner is related to you (e.g., 'Spouse', 'Son', 'Brother', 'Business Partner')."
+                          hindiText="बताएं कि सह-स्वामी आपसे कैसे संबंधित है (जैसे, 'जीवनसाथी', 'बेटा', 'भाई', 'बिजनेस पार्टनर')।"
+                        />
                       </label>
                       <input
                         type="text"
@@ -1689,8 +1750,12 @@ export default function Step4Assets({
 
                   <div>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
-                      <label style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                        {isHi ? "आपका मालिकाना हिस्सा (%)" : "Your Ownership Share (%)"}
+                      <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                        <span>{isHi ? "आपका मालिकाना हिस्सा (%)" : "Your Ownership Share (%)"}</span>
+                        <InfoTooltip
+                          text="Enter the percentage share of this asset that you legally own (e.g., 50%). Under Indian law, you can only bequeath your own undivided right, title, and share in a jointly owned asset."
+                          hindiText="इस संपत्ति में अपने कानूनी स्वामित्व का प्रतिशत हिस्सा दर्ज करें (जैसे, 50%)। भारतीय कानून के तहत आप संयुक्त संपत्ति में केवल अपने स्वयं के अविभाजित हिस्से की ही वसीयत कर सकते हैं।"
+                        />
                       </label>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.3rem" }}>
                         <input
@@ -1756,8 +1821,12 @@ export default function Step4Assets({
               >
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
-                    <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      {isHi ? "सक्रिय ऋण / बंधक दायित्व है (धारा 167)" : "Has active loan / mortgage encumbrance (Sec. 167)"}
+                    <div style={{ display: "inline-flex", alignItems: "center", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      <span>{isHi ? "सक्रिय ऋण / बंधक दायित्व है (धारा 167)" : "Has active loan / mortgage encumbrance (Sec. 167)"}</span>
+                      <InfoTooltip
+                        text="Switch ON if this asset has an active home loan, car loan, or mortgage. Under Section 167 of the Indian Succession Act, 1925, the beneficiary who inherits a mortgaged asset is legally responsible for paying off the remaining loan unless you explicitly state here that the loan should be settled from your general estate."
+                        hindiText="यदि इस संपत्ति पर कोई सक्रिय होम लोन, कार लोन या मॉर्गेज है तो इसे चालू (ON) करें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 167 के तहत, जब तक आप स्पष्ट रूप से अन्यथा निर्देश न दें, गिरवी रखी गई संपत्ति पाने वाला लाभार्थी ही शेष ऋण चुकाने के लिए उत्तरदायी होता है।"
+                      />
                     </div>
                     <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
                       {isHi
@@ -1770,8 +1839,12 @@ export default function Step4Assets({
 
                 {hasLoan && (
                   <div style={{ marginTop: "0.25rem" }}>
-                    <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      {isHi ? "ऋणदाता बैंक / ऋण विवरण एवं निर्देश" : "Lender Bank, Loan Account & Repayment Direction"}
+                    <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      <span>{isHi ? "ऋणदाता बैंक / ऋण विवरण एवं निर्देश" : "Lender Bank, Loan Account & Repayment Direction"}</span>
+                      <InfoTooltip
+                        text="Mention the bank/lender name, loan account number, and clarify whether the loan will be cleared by the inheriting beneficiary, covered by a loan-protection insurance policy, or paid out of your general estate."
+                        hindiText="ऋणदाता बैंक का नाम, लोन खाता संख्या लिखें और स्पष्ट करें कि शेष ऋण लाभार्थी द्वारा चुकाया जाएगा, लोन-बीमा से कवर होगा, या आपकी सामान्य संपदा से भुगतान किया जाएगा।"
+                      />
                     </label>
                     <input
                       type="text"
@@ -1799,8 +1872,12 @@ export default function Step4Assets({
 
               {/* Optional Asset-Specific Direction / Special Instructions */}
               <div>
-                <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  {isHi ? "विशेष निर्देश / शर्त (वैकल्पिक)" : "Specific Direction / Condition for this Asset (Optional)"}
+                <label style={{ display: "inline-flex", alignItems: "center", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  <span>{isHi ? "विशेष निर्देश / शर्त (वैकल्पिक)" : "Specific Direction / Condition for this Asset (Optional)"}</span>
+                  <InfoTooltip
+                    text="Add any practical instructions or conditions for this asset (e.g., 'Original registry papers are kept in SBI Locker #42', 'To be sold and proceeds divided', or 'Use for granddaughter's higher education')."
+                    hindiText="इस संपत्ति के लिए कोई व्यावहारिक निर्देश या शर्त जोड़ें (जैसे, 'मूल रजिस्ट्री के कागजात एसबीआई लॉकर #42 में रखे हैं', या 'बेचकर प्राप्त राशि लाभार्थियों में बांटी जाए')।"
+                  />
                 </label>
                 <input
                   type="text"
