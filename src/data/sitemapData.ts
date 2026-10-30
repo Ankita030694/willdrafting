@@ -2489,6 +2489,30 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Is Digital Signature or Aadhaar eSign Valid for a Will in India?",
+    href: "/blogs/is-digital-signature-dsc-or-aadhaar-esign-valid-for-will-in-india",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Is a Handwritten Will Valid in India? Holographic vs Typed",
+    href: "/blogs/handwritten-holographic-will-vs-typed-will-validity-in-india",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Is Video Will Valid in India Legal Execution Guide",
+    href: "/blogs/is-video-will-legally-valid-in-india-recording-will-execution",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
