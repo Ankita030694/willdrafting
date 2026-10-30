@@ -2464,7 +2464,7 @@ export const staticPages: SitemapPageItem[] = [
     date: "30-10-2026",
     changefreq: "weekly",
     priority: 0.8,
-  },,
+  },
   {
     title: "Oral Family Settlement & Memorandum Registration in India",
     href: "/blogs/oral-family-settlement-memorandum-registration-supreme-court-kale-case",
