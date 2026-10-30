@@ -2473,6 +2473,22 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Section 22 Hindu Succession Act Pre-Emption Right",
+    href: "/blogs/right-of-pre-emption-section-22-hindu-succession-act-stop-outsider-buying",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Can Brother or Relative Claim Adverse Possession in India?",
+    href: "/blogs/adverse-possession-by-relative-caretaker-or-sibling-in-inherited-property",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
