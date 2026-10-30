@@ -2529,6 +2529,30 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Privileged Will for Indian Army, Navy, Air Force Soldiers",
+    href: "/blogs/privileged-will-for-indian-army-navy-air-force-soldiers-section-65-66",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Are Conditional Wills Valid in India",
+    href: "/blogs/conditional-will-and-contingent-bequest-validity-in-india-section-126",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Sealed Cover Will Deposit with Registrar: Section 42",
+    href: "/blogs/sealed-cover-will-deposit-with-registrar-section-42-registration-act",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
