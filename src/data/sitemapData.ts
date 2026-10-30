@@ -2617,6 +2617,46 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "UP Varasat Online Application vaad.up.nic.in Guide",
+    href: "/blogs/up-varasat-online-application-vaad-up-nic-in-succession-mutation-guide",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Karnataka Khata Transfer & Pouthi Bhoomi Guide",
+    href: "/blogs/karnataka-khata-transfer-and-pouthi-khata-mutation-after-death-bbmp-bhoomi",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "7/12 Varas Nond Online Maharashtra Guide",
+    href: "/blogs/maharashtra-7-12-utara-varas-nond-ferfar-online-mutation-after-death",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Gujarat Pedhinama and Varsai Entry Guide",
+    href: "/blogs/gujarat-pedhinama-varsai-entry-7-12-record-of-rights-after-death",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Tamil Nadu Varisu Certificate & Patta Transfer Guide",
+    href: "/blogs/tamil-nadu-varisu-certificate-and-patta-transfer-after-death-tnesevai",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
