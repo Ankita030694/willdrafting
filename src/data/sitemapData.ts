@@ -2433,6 +2433,22 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Can Heirs Change or Ignore a Will by Consent in India?",
+    href: "/blogs/family-settlement-agreement-vs-will-can-heirs-modify-will-by-consent",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "How to Revoke Probate or Succession Certificate for Fraud",
+    href: "/blogs/revocation-of-probate-or-succession-certificate-fraud-section-263",
+    category: "Guides",
+    date: "30-10-2026",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
