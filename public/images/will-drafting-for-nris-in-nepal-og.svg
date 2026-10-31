@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Will Drafting for NRIs in Nepal - AMA Legal Solutions Indian Succession Act Cross-Border Estate Planning">
+  <defs>
+    <!-- Deep navy background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1B22"/>
+      <stop offset="60%" stop-color="#172228"/>
+      <stop offset="100%" stop-color="#1E2F38"/>
+    </linearGradient>
+    <!-- Rose accent gradient -->
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C65378"/>
+      <stop offset="100%" stop-color="#E07090"/>
+    </linearGradient>
+    <!-- Card light gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Clip paths -->
+    <clipPath id="mainClip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" clip-path="url(#mainClip)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="120" rx="220" ry="180" fill="#C65378" opacity="0.07" filter="url(#glow)"/>
+  <ellipse cx="1050" cy="500" rx="200" ry="160" fill="#5F7E75" opacity="0.08" filter="url(#glow)"/>
+  <ellipse cx="900" cy="180" rx="150" ry="120" fill="#C65378" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left vertical accent bar -->
+  <rect x="50" y="80" width="4" height="460" rx="2" fill="url(#roseGrad)" opacity="0.9"/>
+
+  <!-- ===== LEFT CONTENT COLUMN ===== -->
+
+  <!-- Badge pill -->
+  <rect x="72" y="80" width="350" height="32" rx="16" fill="#C65378" opacity="0.15"/>
+  <rect x="72" y="80" width="350" height="32" rx="16" fill="none" stroke="#C65378" stroke-width="1" opacity="0.4"/>
+  <circle cx="92" cy="96" r="5" fill="#C65378"/>
+  <text x="106" y="101" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#E07090" letter-spacing="1.8">LEGAL SERVICE · NRI SUCCESSION · NEPAL</text>
+
+  <!-- Main headline line 1 -->
+  <text x="72" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Will Drafting for</text>
+
+  <!-- Main headline line 2 with rose accent -->
+  <text x="72" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">NRIs in</text>
+  <text x="232" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#roseGrad)" letter-spacing="-0.5"> Nepal</text>
+
+  <!-- Main headline line 3 -->
+  <text x="72" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" fill="#A8B8C0" letter-spacing="-0.3">Kathmandu · Birgunj · Pokhara</text>
+
+  <!-- Divider line -->
+  <rect x="72" y="292" width="500" height="1.5" fill="#FFFFFF" opacity="0.12"/>
+
+  <!-- Description text -->
+  <text x="72" y="322" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">Protecting Indian land, NRO bank accounts &amp; Terai ancestral estates</text>
+  <text x="72" y="342" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">under 1950 Indo-Nepal Peace Treaty &amp; Indian Succession Act 1925.</text>
+  <text x="72" y="362" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">Ring-fencing Indian soil from Muluki Dewani Samhita 2074 conflicts.</text>
+
+  <!-- Key stat pills row -->
+  <!-- Pill 1: Treaty -->
+  <rect x="72" y="390" width="180" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="90" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">TREATY STATUS</text>
+  <text x="90" y="432" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#FFFFFF">1950 Peace Pact</text>
+
+  <!-- Pill 2: Law -->
+  <rect x="264" y="390" width="160" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="282" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">GOVERNING LAW</text>
+  <text x="282" y="432" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">ISA 1925 s. 5</text>
+
+  <!-- Pill 3: Hubs -->
+  <rect x="436" y="390" width="175" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="454" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">MAJOR HUBS</text>
+  <text x="454" y="432" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#FFFFFF">Kathmandu · Birgunj</text>
+
+  <!-- Feature check list -->
+  <!-- Check 1 -->
+  <circle cx="84" cy="476" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="481" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="481" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Terai Agricultural Land Inheritance Protected Under Indian State Codes</text>
+
+  <!-- Check 2 -->
+  <circle cx="84" cy="508" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="513" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="513" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Plain A4 Paper Signing in Nepal - Zero Indian Stamp Paper Required</text>
+
+  <!-- Check 3 -->
+  <circle cx="84" cy="540" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="545" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Indian Embassy Kathmandu Attestation Protocol &amp; Tehsildar Mutation</text>
+
+  <!-- Website URL -->
+  <text x="72" y="592" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#C65378" letter-spacing="0.5">willdrafting.in</text>
+  <text x="183" y="592" font-family="Arial, sans-serif" font-size="13" fill="#55636D"> / services / will-drafting-for-nris-in-nepal</text>
+
+  <!-- ===== RIGHT CARD PANEL ===== -->
+  <rect x="660" y="100" width="495" height="430" rx="20" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.1" filter="url(#softShadow)"/>
+
+  <!-- Card header -->
+  <rect x="660" y="100" width="495" height="72" rx="20" fill="#C65378" opacity="0.12"/>
+  <rect x="660" y="152" width="495" height="20" fill="#C65378" opacity="0.12"/>
+
+  <!-- Card header label -->
+  <text x="700" y="127" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#E07090" letter-spacing="1.5">CROSS-BORDER LEGAL GUIDE</text>
+  <text x="700" y="155" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#FFFFFF">Muluki Dewani Samhita vs Indian Succession Act</text>
+
+  <!-- Table rows -->
+  <!-- Row 1: Header -->
+  <rect x="680" y="185" width="455" height="28" rx="6" fill="#FFFFFF" fill-opacity="0.06"/>
+  <text x="692" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">LEGAL ASPECT</text>
+  <text x="860" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">NEPAL LAW</text>
+  <text x="1010" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">INDIAN LAW</text>
+
+  <!-- Divider -->
+  <rect x="680" y="214" width="455" height="1" fill="#FFFFFF" fill-opacity="0.08"/>
+
+  <!-- Row 2 -->
+  <text x="692" y="234" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Governing Statute</text>
+  <text x="860" y="234" font-family="Arial, sans-serif" font-size="11.5" fill="#F4A3B5">Muluki Dewani 2074</text>
+  <text x="1010" y="234" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">ISA 1925 s. 5</text>
+
+  <!-- Row divider -->
+  <rect x="680" y="242" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 3 -->
+  <text x="692" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Indian Immovable Land</text>
+  <text x="860" y="262" font-family="Arial, sans-serif" font-size="11.5" fill="#F4A3B5">Not Enforceable</text>
+  <text x="1010" y="262" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Lex Situs (s.5 ISA)</text>
+
+  <rect x="680" y="270" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 4 -->
+  <text x="692" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Terai Farmland Transfer</text>
+  <text x="860" y="290" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Nepali Will Invalid</text>
+  <text x="1010" y="290" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Indian Will Vetted</text>
+
+  <rect x="680" y="298" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 5 -->
+  <text x="692" y="318" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Execution Formality</text>
+  <text x="860" y="318" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Ward Office Registry</text>
+  <text x="1010" y="318" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">2 Witnesses (s.63)</text>
+
+  <rect x="680" y="326" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 6 -->
+  <text x="692" y="346" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Stamp Duty on Will</text>
+  <text x="860" y="346" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Local Notary Fee</text>
+  <text x="1010" y="346" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Zero (Plain Paper)</text>
+
+  <rect x="680" y="354" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 7 -->
+  <text x="692" y="374" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Consular Legalization</text>
+  <text x="860" y="374" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Nepal MoFA Seal</text>
+  <text x="1010" y="374" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Embassy Kathmandu</text>
+
+  <!-- Bottom CTA strip inside card -->
+  <rect x="680" y="395" width="455" height="50" rx="10" fill="#C65378" fill-opacity="0.15" stroke="#C65378" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="712" y="416" font-family="Arial, sans-serif" font-size="11" fill="#E07090" font-weight="700" letter-spacing="0.8">EXPERT INDO-NEPAL ESTATE COUNSEL</text>
+  <text x="712" y="433" font-family="Arial, sans-serif" font-size="12.5" fill="#FFFFFF">AMA Legal Solutions · High Court Advocates · Pan-India NRI Practice</text>
+
+  <!-- AMA Logo text bottom right -->
+  <text x="1120" y="615" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#55636D" text-anchor="end">AMA Legal Solutions</text>
+
+  <!-- Bottom gradient fade -->
+  <defs>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#172228" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1B22" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="560" width="1200" height="70" fill="url(#bottomFade)"/>
+</svg>

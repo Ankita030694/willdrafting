@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Will Drafting for NRIs in Indonesia - AMA Legal Solutions Indian Succession Act Cross-Border Estate Planning">
+  <defs>
+    <!-- Deep navy background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1B22"/>
+      <stop offset="60%" stop-color="#172228"/>
+      <stop offset="100%" stop-color="#1E2F38"/>
+    </linearGradient>
+    <!-- Rose accent gradient -->
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C65378"/>
+      <stop offset="100%" stop-color="#E07090"/>
+    </linearGradient>
+    <!-- Card light gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Clip paths -->
+    <clipPath id="mainClip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" clip-path="url(#mainClip)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="120" rx="220" ry="180" fill="#C65378" opacity="0.07" filter="url(#glow)"/>
+  <ellipse cx="1050" cy="500" rx="200" ry="160" fill="#5F7E75" opacity="0.08" filter="url(#glow)"/>
+  <ellipse cx="900" cy="180" rx="150" ry="120" fill="#C65378" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left vertical accent bar -->
+  <rect x="50" y="80" width="4" height="460" rx="2" fill="url(#roseGrad)" opacity="0.9"/>
+
+  <!-- ===== LEFT CONTENT COLUMN ===== -->
+
+  <!-- Badge pill -->
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="#C65378" opacity="0.15"/>
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="none" stroke="#C65378" stroke-width="1" opacity="0.4"/>
+  <circle cx="92" cy="96" r="5" fill="#C65378"/>
+  <text x="106" y="101" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#E07090" letter-spacing="1.8">LEGAL SERVICE · NRI SUCCESSION · INDONESIA</text>
+
+  <!-- Main headline line 1 -->
+  <text x="72" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Will Drafting for</text>
+
+  <!-- Main headline line 2 with rose accent -->
+  <text x="72" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">NRIs in</text>
+  <text x="232" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#roseGrad)" letter-spacing="-0.5"> Indonesia</text>
+
+  <!-- Main headline line 3 -->
+  <text x="72" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" fill="#A8B8C0" letter-spacing="-0.3">Jakarta · Medan · Bali · Surabaya</text>
+
+  <!-- Divider line -->
+  <rect x="72" y="292" width="500" height="1.5" fill="#FFFFFF" opacity="0.12"/>
+
+  <!-- Key points checklist -->
+  <!-- Item 1 -->
+  <circle cx="84" cy="326" r="10" fill="#C65378" opacity="0.2"/>
+  <text x="79" y="331" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#E07090">&#10003;</text>
+  <text x="104" y="331" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Civil Code BW Ring-Fencing</text>
+  <text x="320" y="331" font-family="Arial, sans-serif" font-size="14" fill="#8FA4B0">— Prevents Indonesian forced heirship clashes</text>
+
+  <!-- Item 2 -->
+  <circle cx="84" cy="368" r="10" fill="#C65378" opacity="0.2"/>
+  <text x="79" y="373" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#E07090">&#10003;</text>
+  <text x="104" y="373" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Section 63 Plain-Paper Signing</text>
+  <text x="345" y="373" font-family="Arial, sans-serif" font-size="14" fill="#8FA4B0">— 2 witnesses, no Indian stamp duty</text>
+
+  <!-- Item 3 -->
+  <circle cx="84" cy="410" r="10" fill="#C65378" opacity="0.2"/>
+  <text x="79" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#E07090">&#10003;</text>
+  <text x="104" y="415" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Consulate &amp; Apostille Support</text>
+  <text x="330" y="415" font-family="Arial, sans-serif" font-size="14" fill="#8FA4B0">— Jakarta, Medan &amp; Bali consular seals</text>
+
+  <!-- Item 4 -->
+  <circle cx="84" cy="452" r="10" fill="#C65378" opacity="0.2"/>
+  <text x="79" y="457" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#E07090">&#10003;</text>
+  <text x="104" y="457" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">FEMA $1M Repatriation</text>
+  <text x="290" y="457" font-family="Arial, sans-serif" font-size="14" fill="#8FA4B0">— Form 15CA/15CB NRO capital transfer</text>
+
+  <!-- Bottom CTA badge -->
+  <rect x="72" y="486" width="310" height="42" rx="8" fill="url(#roseGrad)" filter="url(#softShadow)"/>
+  <text x="96" y="512" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">High Court Lawyers &amp; SRO Counsel</text>
+
+  <rect x="394" y="486" width="180" height="42" rx="8" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="420" y="512" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">FEMA 1999 Compliant</text>
+
+  <!-- ===== RIGHT COLUMN: STATUTORY CARD ===== -->
+  <g transform="translate(680, 80)" filter="url(#softShadow)">
+    <rect width="450" height="460" rx="20" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+
+    <!-- Card header -->
+    <rect width="450" height="70" rx="20" fill="#C65378" fill-opacity="0.12"/>
+    <text x="32" y="42" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#FFFFFF">Cross-Border Estate Framework</text>
+    <text x="32" y="60" font-family="Arial, sans-serif" font-size="11" fill="#E07090" letter-spacing="1">INDONESIA · CIVIL CODE BOOK II &amp; ISA 1925</text>
+
+    <!-- Mini stat 1 -->
+    <rect x="24" y="90" width="195" height="74" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <text x="40" y="116" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FFFFFF">Lex Situs</text>
+    <text x="40" y="136" font-family="Arial, sans-serif" font-size="11" fill="#A8B8C0">Indian Soil Follows Indian Law</text>
+    <text x="40" y="152" font-family="Arial, sans-serif" font-size="10" fill="#C65378">Section 5 Indian Succession Act</text>
+
+    <!-- Mini stat 2 -->
+    <rect x="231" y="90" width="195" height="74" rx="12" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <text x="247" y="116" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FFFFFF">100% Free</text>
+    <text x="247" y="136" font-family="Arial, sans-serif" font-size="11" fill="#A8B8C0">Will Freedom on Self-Acquired</text>
+    <text x="247" y="152" font-family="Arial, sans-serif" font-size="10" fill="#E07090">Section 59 Testamentary Will</text>
+
+    <!-- Legal comparison block -->
+    <rect x="24" y="180" width="402" height="150" rx="12" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    <text x="40" y="206" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#E07090" letter-spacing="0.5">LEGAL SAFEGUARD ARCHITECTURE</text>
+
+    <text x="40" y="232" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">&#8226; Burgerlijk Wetboek Forced Heirship</text>
+    <text x="52" y="248" font-family="Arial, sans-serif" font-size="11" fill="#8FA4B0">Isolates legitieme portie under BW Book II</text>
+
+    <text x="40" y="272" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">&#8226; Foreign Ring-Fencing Language</text>
+    <text x="52" y="288" font-family="Arial, sans-serif" font-size="11" fill="#8FA4B0">Dual-will protects Hak Pakai &amp; Indian land</text>
+
+    <text x="40" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">&#8226; Plain-Paper Signing in Jakarta/Medan</text>
+
+    <!-- Brand stamp footer -->
+    <rect x="24" y="346" width="402" height="96" rx="12" fill="#C65378" fill-opacity="0.08" stroke="#C65378" stroke-opacity="0.25" stroke-width="1"/>
+    <text x="40" y="374" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">WillDrafting.in · AMA Legal Solutions</text>
+    <text x="40" y="394" font-family="Arial, sans-serif" font-size="12" fill="#A8B8C0">Bar Council Advocates · High Court of Delhi Practice</text>
+    <text x="40" y="412" font-family="Arial, sans-serif" font-size="11" fill="#E07090">Cross-Border Succession &amp; NRI Estate Advisory</text>
+    <text x="40" y="428" font-family="Arial, sans-serif" font-size="10" fill="#6A808C">www.willdrafting.in/services/will-drafting-for-nris-in-indonesia</text>
+  </g>
+</svg>

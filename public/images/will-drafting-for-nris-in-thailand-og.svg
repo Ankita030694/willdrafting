@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Will Drafting for NRIs in Thailand - AMA Legal Solutions Indian Succession Act Cross-Border Estate Planning">
+  <defs>
+    <!-- Deep navy background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1B22"/>
+      <stop offset="60%" stop-color="#172228"/>
+      <stop offset="100%" stop-color="#1E2F38"/>
+    </linearGradient>
+    <!-- Rose accent gradient -->
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C65378"/>
+      <stop offset="100%" stop-color="#E07090"/>
+    </linearGradient>
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#CDAF73"/>
+      <stop offset="50%" stop-color="#DFBA75"/>
+      <stop offset="100%" stop-color="#F3D39B"/>
+    </linearGradient>
+    <!-- Card light gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Clip paths -->
+    <clipPath id="mainClip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" clip-path="url(#mainClip)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="120" rx="220" ry="180" fill="#C65378" opacity="0.07" filter="url(#glow)"/>
+  <ellipse cx="1050" cy="500" rx="200" ry="160" fill="#5F7E75" opacity="0.08" filter="url(#glow)"/>
+  <ellipse cx="900" cy="180" rx="150" ry="120" fill="#C65378" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left vertical accent bar -->
+  <rect x="50" y="80" width="4" height="460" rx="2" fill="url(#roseGrad)" opacity="0.9"/>
+
+  <!-- ===== LEFT CONTENT COLUMN ===== -->
+
+  <!-- Badge pill -->
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="#C65378" opacity="0.15"/>
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="none" stroke="#C65378" stroke-width="1" opacity="0.4"/>
+  <circle cx="92" cy="96" r="5" fill="#C65378"/>
+  <text x="106" y="101" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#E07090" letter-spacing="1.8">LEGAL SERVICE · NRI SUCCESSION · THAILAND</text>
+
+  <!-- Main headline line 1 -->
+  <text x="72" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Will Drafting for</text>
+
+  <!-- Main headline line 2 with rose accent -->
+  <text x="72" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">NRIs in</text>
+  <text x="232" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#roseGrad)" letter-spacing="-0.5"> Thailand</text>
+
+  <!-- Main headline line 3 -->
+  <text x="72" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" fill="#A8B8C0" letter-spacing="-0.3">Bangkok · Pattaya · Phuket · Chiang Mai</text>
+
+  <!-- Divider line -->
+  <rect x="72" y="292" width="520" height="1.5" fill="#FFFFFF" opacity="0.12"/>
+
+  <!-- Description text -->
+  <text x="72" y="322" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">Protecting Indian properties, NRE/NRO accounts &amp; commercial estates</text>
+  <text x="72" y="342" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">under Thai CCC Book VI &amp; Indian Succession Act 1925.</text>
+  <text x="72" y="362" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">Ring-fencing Indian soil from foreign probate &amp; spousal disputes.</text>
+
+  <!-- Key stat pills row -->
+  <!-- Pill 1: Statute -->
+  <rect x="72" y="390" width="180" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="90" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">THAI CIVIL CODE</text>
+  <text x="90" y="432" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">Book VI Succession</text>
+
+  <!-- Pill 2: Indian Law -->
+  <rect x="264" y="390" width="165" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="282" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">GOVERNING LAW</text>
+  <text x="282" y="432" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">ISA 1925 s. 5 &amp; 63</text>
+
+  <!-- Pill 3: Hubs -->
+  <rect x="441" y="390" width="175" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="459" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">METRO HUBS</text>
+  <text x="459" y="432" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#FFFFFF">Bangkok · Sukhumvit</text>
+
+  <!-- Feature check list -->
+  <!-- Check 1 -->
+  <circle cx="84" cy="476" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="481" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="481" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Separate Indian Will Ring-Fences Ancestral Real Estate from Thai Probate</text>
+
+  <!-- Check 2 -->
+  <circle cx="84" cy="508" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="513" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="513" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Embassy of India Bangkok Consular Attestation &amp; Plain-Paper Signing S.63</text>
+
+  <!-- Check 3 -->
+  <circle cx="84" cy="540" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="545" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">NRE/NRO Bank Accounts &amp; Demat Portfolios Transmitted Under FEMA Norms</text>
+
+  <!-- ===== RIGHT CARD / VISUAL ELEMENT ===== -->
+  <g transform="translate(680, 80)">
+    <!-- Main glass card container -->
+    <rect x="0" y="0" width="460" height="460" rx="24" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.12" filter="url(#softShadow)"/>
+
+    <!-- Inner card header -->
+    <rect x="0" y="0" width="460" height="70" rx="24" fill="#C65378" opacity="0.1"/>
+    <rect x="0" y="50" width="460" height="20" fill="#C65378" opacity="0.1"/>
+    <line x1="0" y1="70" x2="460" y2="70" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.1"/>
+
+    <!-- Seal icon -->
+    <circle cx="36" cy="35" r="18" fill="url(#roseGrad)" opacity="0.2"/>
+    <circle cx="36" cy="35" r="13" fill="none" stroke="#C65378" stroke-width="1.5"/>
+    <text x="31" y="40" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#E07090">§</text>
+
+    <!-- Header title -->
+    <text x="66" y="32" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#FFFFFF">CROSS-BORDER SUCCESSION PROTOCOL</text>
+    <text x="66" y="49" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">Thailand Civil Code · Indian Succession Act 1925</text>
+
+    <!-- Jurisdictional Comparison Section -->
+    <!-- Thailand Column -->
+    <rect x="24" y="90" width="195" height="150" rx="14" fill="#000000" fill-opacity="0.25" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.1"/>
+    <rect x="36" y="102" width="70" height="20" rx="10" fill="#5F7E75" opacity="0.3"/>
+    <text x="46" y="116" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#7EABA2">THAILAND</text>
+    <text x="36" y="140" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#E5EFF2">Thai CCC Book VI</text>
+    <text x="36" y="160" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• 6 Statutory Heir Classes</text>
+    <text x="36" y="178" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Sin Somros Marital Split</text>
+    <text x="36" y="196" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Non-Reciprocating S.44A</text>
+    <text x="36" y="214" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Thai Probate Not Re-Sealed</text>
+
+    <!-- India Column -->
+    <rect x="241" y="90" width="195" height="150" rx="14" fill="#000000" fill-opacity="0.25" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.1"/>
+    <rect x="253" y="102" width="55" height="20" rx="10" fill="#C65378" opacity="0.3"/>
+    <text x="263" y="116" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#E07090">INDIA</text>
+    <text x="253" y="140" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#FFFFFF">ISA 1925 s. 5 &amp; 59</text>
+    <text x="253" y="160" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Strict Lex Situs Rule</text>
+    <text x="253" y="178" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• 100% Will Discretion</text>
+    <text x="253" y="196" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Plain A4 Paper (S.63)</text>
+    <text x="253" y="214" font-family="Arial, sans-serif" font-size="11" fill="#8FA3AD">• Clean High Court Probate</text>
+
+    <!-- Ring-Fencing Clause Highlight Box -->
+    <rect x="24" y="255" width="412" height="115" rx="14" fill="#0D1B22" stroke="#C65378" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="40" y="280" font-family="Georgia, serif" font-size="11" font-weight="700" fill="url(#goldGrad)" letter-spacing="1">MANDATORY RING-FENCING CLAUSE</text>
+    <text x="40" y="302" font-family="Courier, monospace" font-size="10.5" fill="#CAD8DF">"This Will applies strictly and exclusively</text>
+    <text x="40" y="320" font-family="Courier, monospace" font-size="10.5" fill="#CAD8DF">to all my immovable and movable assets situated</text>
+    <text x="40" y="338" font-family="Courier, monospace" font-size="10.5" fill="#CAD8DF">in the Republic of India..."</text>
+    <text x="40" y="356" font-family="Arial, sans-serif" font-size="9.5" fill="#8FA3AD">* Prevents accidental revocation of Thai testamentary dispositions</text>
+
+    <!-- High Court Verification Badge Bottom -->
+    <rect x="24" y="385" width="412" height="55" rx="12" fill="#132228" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.1"/>
+    <circle cx="48" cy="412" r="12" fill="#047857" opacity="0.3"/>
+    <text x="43" y="416" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#34D399">✓</text>
+    <text x="70" y="407" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">Verified by High Court Advocates &amp; AMA Legal Solutions</text>
+    <text x="70" y="424" font-family="Arial, sans-serif" font-size="10.5" fill="#8FA3AD">Embassy of India Bangkok Consular Compliance Assured</text>
+  </g>
+
+  <!-- Bottom Brand Suffix -->
+  <text x="72" y="598" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF" opacity="0.9">WillDrafting.in</text>
+  <text x="180" y="598" font-family="Arial, sans-serif" font-size="12" fill="#8FA3AD" opacity="0.6">· Powered by AMA Legal Solutions · High Court Advocates</text>
+</svg>

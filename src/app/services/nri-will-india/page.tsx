@@ -672,7 +672,133 @@ export default function NriWillIndiaPage() {
                 Explore our legal guides and transparent pricing tiers for Resident Indians and NRIs:
               </p>
             </div>
-            <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-3">
+                                          <Link
+                href="/services/will-drafting-for-nris-in-new-zealand"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in New Zealand</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-thailand"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Thailand</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-nepal"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Nepal</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-germany"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Germany</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-indonesia"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Indonesia</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-bahrain"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Bahrain</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-trinidad-and-tobago"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Trinidad &amp; Tobago</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-reunion"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Reunion (France)</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-guyana"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Guyana</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-singapore"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Singapore</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-fiji"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Fiji</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-oman"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Oman</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-south-africa"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in South Africa</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-sri-lanka"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Sri Lanka</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-uk"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in UK</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-malaysia"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Malaysia</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-usa"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in USA</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-qatar"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Qatar</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
               <Link
                 href="/services"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"

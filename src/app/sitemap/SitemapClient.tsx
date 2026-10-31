@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -30,6 +30,21 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
   const categories = useMemo(() => {
     return getCategories(initialLinks);
   }, [initialLinks]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const queryCat = params.get("category") || params.get("filter");
+      if (queryCat) {
+        const found = categories.find(
+          (c) => c.toLowerCase() === queryCat.toLowerCase()
+        );
+        if (found) {
+          setActiveCategory(found);
+        }
+      }
+    }
+  }, [categories]);
 
   const filteredLinks = useMemo(() => {
     const q = searchQuery.toLowerCase().trim();

@@ -250,6 +250,46 @@ const services: ServiceCard[] = [
     illustrationSrc: "/images/nri-will-india-og.jpg",
   },
   {
+    title: "Will Drafting for NRIs in UK",
+    description:
+      "Cross-border Indian Will drafting for NRIs in the United Kingdom. Protect Indian assets from HMRC 40% inheritance tax, coordinate Dual-Will architecture, and execute via FCDO Apostille.",
+    linkText: "Explore UK NRI Will Services",
+    linkHref: "/services/will-drafting-for-nris-in-uk",
+    illustrationSrc: "/images/will-drafting-for-nris-in-uk-og.jpg",
+  },
+  {
+    title: "Will Drafting for NRIs in USA",
+    description:
+      "Cross-border Indian Will drafting for NRIs and OCIs in the United States. Harmonize US Living Trusts with Section 5 Lex Situs rules, Hague Apostille attestation, and FEMA asset succession.",
+    linkText: "Explore USA NRI Will Services",
+    linkHref: "/services/will-drafting-for-nris-in-usa",
+    illustrationSrc: "/images/will-drafting-for-nris-in-usa-og.jpg",
+  },
+  {
+    title: "Will Drafting for NRIs in UAE",
+    description:
+      "Cross-border Indian Will drafting for NRIs in United Arab Emirates (Dubai, Abu Dhabi, Sharjah). Harmonize DIFC & ADGM Wills with Indian Succession Act, consular attestation, and FEMA repatriation.",
+    linkText: "Explore UAE NRI Will Services",
+    linkHref: "/services/will-drafting-for-nris-in-uae",
+    illustrationSrc: "/images/will-drafting-for-nris-in-uae-og.jpg",
+  },
+  {
+    title: "Will Drafting for NRIs in Saudi Arabia",
+    description:
+      "Cross-border Indian Will drafting for NRIs in Saudi Arabia (Riyadh, Jeddah, Dammam, Khobar). Comply with Indian Succession Act, Wasiyat rules, Embassy attestation, and FEMA asset succession.",
+    linkText: "Explore Saudi NRI Will Services",
+    linkHref: "/services/will-drafting-for-nris-in-saudi-arabia",
+    illustrationSrc: "/images/will-drafting-for-nris-in-saudi-arabia-og.jpg",
+  },
+  {
+    title: "Will Drafting for NRIs in Bahrain",
+    description:
+      "Cross-border Indian Will drafting for NRIs in Bahrain (Manama, Riffa, Muharraq, Juffair). Comply with Indian Succession Act, Wasiyat rules, Embassy attestation, and FEMA asset succession.",
+    linkText: "Explore Bahrain NRI Will Services",
+    linkHref: "/services/will-drafting-for-nris-in-bahrain",
+    illustrationSrc: "/images/will-drafting-for-nris-in-bahrain-og.jpg",
+  },
+  {
     title: "Legal Heir",
     description:
       "Official Legal Heir Certificate documentation and assistance to establish rightful legal heirs under Indian succession laws for property.",
@@ -574,13 +614,134 @@ export default function ServicePage() {
                   Specialized Cross-Border Service Silo
                 </span>
                 <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
-                  Living Abroad in the USA, UK, UAE, Canada, Australia, or Singapore?
+                  Living Abroad in the USA, Malaysia, UK, UAE, Canada, Australia, or Singapore?
                 </h3>
-                <p className="text-sm text-[#49585F]">
+                <p className="text-sm text-[#49585F] mb-4">
                   Explore our dedicated NRI &amp; OCI Indian Will Hub covering the Two-Will Strategy, Section 228 probate exemption, FEMA agricultural land inheritance, and NRE/NRO Form 15CA/15CB repatriation.
                 </p>
+                                <div className="flex flex-wrap gap-2">
+                                    <Link
+                    href="/services/will-drafting-for-nris-in-new-zealand"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in New Zealand</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                                    <Link
+                    href="/services/will-drafting-for-nris-in-germany"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Germany</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-indonesia"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Indonesia</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-thailand"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Thailand</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+<Link
+                    href="/services/will-drafting-for-nris-in-nepal"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Nepal</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-trinidad-and-tobago"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Trinidad &amp; Tobago</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-reunion"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Reunion (France)</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+<Link
+                    href="/services/will-drafting-for-nris-in-guyana"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Guyana</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-south-africa"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in South Africa</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-uk"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in UK</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-malaysia"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Malaysia</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-usa"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in USA</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                                    <Link
+                    href="/services/will-drafting-for-nris-in-singapore"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Singapore</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                                    <Link
+                    href="/services/will-drafting-for-nris-in-fiji"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Fiji</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+<Link
+                    href="/services/will-drafting-for-nris-in-oman"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Oman</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+<Link
+                    href="/services/will-drafting-for-nris-in-saudi-arabia"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Saudi Arabia</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-qatar"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-3 py-1.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>NRIs in Qatar</span>
+                    <ArrowUpRight className="w-3 h-3" />
+                  </Link>
+                </div>
               </div>
-              <div>
+              <div className="pt-2">
                 <Link
                   href="/services/nri-will-india"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a83d5f] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 transition-colors"

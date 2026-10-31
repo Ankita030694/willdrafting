@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Will Drafting for NRIs in Netherlands - AMA Legal Solutions Indian Succession Act Cross-Border Estate Planning">
+  <defs>
+    <!-- Deep navy background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1B22"/>
+      <stop offset="60%" stop-color="#172228"/>
+      <stop offset="100%" stop-color="#1E2F38"/>
+    </linearGradient>
+    <!-- Rose accent gradient -->
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C65378"/>
+      <stop offset="100%" stop-color="#E07090"/>
+    </linearGradient>
+    <!-- Card light gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <!-- Warm cream gradient for highlight box -->
+    <linearGradient id="creamGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#F0EBE0"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Clip paths -->
+    <clipPath id="mainClip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
+    <clipPath id="cardClip">
+      <rect x="660" y="100" width="495" height="430" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" clip-path="url(#mainClip)"/>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="120" rx="220" ry="180" fill="#C65378" opacity="0.07" filter="url(#glow)"/>
+  <ellipse cx="1050" cy="500" rx="200" ry="160" fill="#5F7E75" opacity="0.08" filter="url(#glow)"/>
+  <ellipse cx="900" cy="180" rx="150" ry="120" fill="#C65378" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.3" opacity="0.04"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Left vertical accent bar -->
+  <rect x="50" y="80" width="4" height="460" rx="2" fill="url(#roseGrad)" opacity="0.9"/>
+
+  <!-- ===== LEFT CONTENT COLUMN ===== -->
+
+  <!-- Badge pill -->
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="#C65378" opacity="0.15"/>
+  <rect x="72" y="80" width="370" height="32" rx="16" fill="none" stroke="#C65378" stroke-width="1" opacity="0.4"/>
+  <circle cx="92" cy="96" r="5" fill="#C65378"/>
+  <text x="106" y="101" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#E07090" letter-spacing="1.8">LEGAL SERVICE · NRI SUCCESSION · NETHERLANDS</text>
+
+  <!-- Main headline line 1 -->
+  <text x="72" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Will Drafting for</text>
+
+  <!-- Main headline line 2 with rose accent -->
+  <text x="72" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">NRIs in</text>
+  <text x="232" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#roseGrad)" letter-spacing="-0.5"> Netherlands</text>
+
+  <!-- Main headline line 3 -->
+  <text x="72" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" fill="#A8B8C0" letter-spacing="-0.3">Amsterdam · Eindhoven · Rotterdam</text>
+
+  <!-- Divider line -->
+  <rect x="72" y="292" width="500" height="1.5" fill="#FFFFFF" opacity="0.12"/>
+
+  <!-- Description text -->
+  <text x="72" y="322" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">Protecting Indian land, NRE/NRO accounts &amp; OCI inheritance rights</text>
+  <text x="72" y="342" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">from Dutch Burgerlijk Wetboek Book 4 forced share (legitieme portie)</text>
+  <text x="72" y="362" font-family="Arial, sans-serif" font-size="14" fill="#8FA3AD" letter-spacing="0.1">under EU Brussels IV and Indian Succession Act 1925 Lex Situs rules.</text>
+
+  <!-- Key stat pills row -->
+  <!-- Pill 1: Population -->
+  <rect x="72" y="390" width="180" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="90" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">OVERSEAS INDIANS</text>
+  <text x="90" y="432" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#FFFFFF">~2,28,000+</text>
+
+  <!-- Pill 2: Law -->
+  <rect x="264" y="390" width="160" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="282" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">GOVERNING LAW</text>
+  <text x="282" y="432" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFFFF">ISA 1925 / BW</text>
+
+  <!-- Pill 3: Hubs -->
+  <rect x="436" y="390" width="175" height="52" rx="12" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.12"/>
+  <text x="454" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C65378" letter-spacing="1.2">MAJOR HUBS</text>
+  <text x="454" y="432" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#FFFFFF">Amsterdam · Eindhoven</text>
+
+  <!-- Feature check list -->
+  <!-- Check 1 -->
+  <circle cx="84" cy="476" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="481" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="481" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Dutch Civil Code Legitieme Portie Forced Share Ring-Fenced</text>
+
+  <!-- Check 2 -->
+  <circle cx="84" cy="508" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="513" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="513" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Dutch Rechtbank Apostille &amp; Embassy The Hague Protocol</text>
+
+  <!-- Check 3 -->
+  <circle cx="84" cy="540" r="8" fill="#C65378" opacity="0.15"/>
+  <text x="78" y="545" font-family="Arial, sans-serif" font-size="12" fill="#C65378" font-weight="700">✓</text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="13.5" fill="#B8C8D0">Surinamese-Hindustani &amp; Tech Expat OCI Land Inheritance</text>
+
+  <!-- Website URL -->
+  <text x="72" y="592" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#C65378" letter-spacing="0.5">willdrafting.in</text>
+  <text x="183" y="592" font-family="Arial, sans-serif" font-size="13" fill="#55636D"> / services / will-drafting-for-nris-in-netherlands</text>
+
+  <!-- ===== RIGHT CARD PANEL ===== -->
+  <rect x="660" y="100" width="495" height="430" rx="20" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.1" filter="url(#softShadow)"/>
+
+  <!-- Card header -->
+  <rect x="660" y="100" width="495" height="72" rx="20" fill="#C65378" opacity="0.12"/>
+  <rect x="660" y="152" width="495" height="20" fill="#C65378" opacity="0.12"/>
+
+  <!-- Card header label -->
+  <text x="700" y="127" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#E07090" letter-spacing="1.5">CROSS-BORDER LEGAL GUIDE</text>
+  <text x="700" y="155" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#FFFFFF">Dutch Civil Code vs Indian Succession Act</text>
+
+  <!-- Table rows -->
+  <!-- Row 1: Header -->
+  <rect x="680" y="185" width="455" height="28" rx="6" fill="#FFFFFF" fill-opacity="0.06"/>
+  <text x="692" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">LEGAL ASPECT</text>
+  <text x="860" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">DUTCH CODE</text>
+  <text x="1010" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8FA3AD" letter-spacing="1">INDIAN LAW</text>
+
+  <!-- Divider -->
+  <rect x="680" y="214" width="455" height="1" fill="#FFFFFF" fill-opacity="0.08"/>
+
+  <!-- Row 2 -->
+  <text x="692" y="234" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Forced Heirship</text>
+  <text x="860" y="234" font-family="Arial, sans-serif" font-size="11.5" fill="#F4A3B5">Legitieme Portie</text>
+  <text x="1010" y="234" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">No (s.30 HSA)</text>
+
+  <!-- Row divider -->
+  <rect x="680" y="242" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 3 -->
+  <text x="692" y="262" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Indian Immovable Land</text>
+  <text x="860" y="262" font-family="Arial, sans-serif" font-size="11.5" fill="#F4A3B5">Not Enforceable</text>
+  <text x="1010" y="262" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Lex Situs (s.5 ISA)</text>
+
+  <rect x="680" y="270" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 4 -->
+  <text x="692" y="290" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Choice of Law</text>
+  <text x="860" y="290" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">EU Reg Art. 22</text>
+  <text x="1010" y="290" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Indian Law Elect</text>
+
+  <rect x="680" y="298" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 5 -->
+  <text x="692" y="318" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Apostille Legalization</text>
+  <text x="860" y="318" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Dutch Rechtbank</text>
+  <text x="1010" y="318" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Embassy The Hague</text>
+
+  <rect x="680" y="326" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 6 -->
+  <text x="692" y="346" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Stamp Duty on Will</text>
+  <text x="860" y="346" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Dutch Notary Fee</text>
+  <text x="1010" y="346" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">Zero (Plain Paper)</text>
+
+  <rect x="680" y="354" width="455" height="0.8" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Row 7 -->
+  <text x="692" y="374" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#D0DDE2">Asset Repatriation</text>
+  <text x="860" y="374" font-family="Arial, sans-serif" font-size="11.5" fill="#D0DDE2">Erfbelasting Exemption</text>
+  <text x="1010" y="374" font-family="Arial, sans-serif" font-size="11.5" fill="#6EE7B7">USD 1M/yr NRO</text>
+
+  <!-- Bottom CTA strip inside card -->
+  <rect x="680" y="395" width="455" height="50" rx="10" fill="#C65378" fill-opacity="0.15" stroke="#C65378" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="712" y="416" font-family="Arial, sans-serif" font-size="11" fill="#E07090" font-weight="700" letter-spacing="0.8">EXPERT NETHERLANDS-INDIA COUNSEL</text>
+  <text x="712" y="433" font-family="Arial, sans-serif" font-size="12.5" fill="#FFFFFF">AMA Legal Solutions · High Court Advocates · Pan-India NRI Practice</text>
+
+  <!-- AMA Logo text bottom right -->
+  <text x="1120" y="615" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#55636D" text-anchor="end">AMA Legal Solutions</text>
+
+  <!-- Bottom gradient fade -->
+  <defs>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#172228" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1B22" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="560" width="1200" height="70" fill="url(#bottomFade)"/>
+</svg>
