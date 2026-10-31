@@ -2772,6 +2772,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Indian Will for NRIs in Dubai & UAE: DIFC vs Indian Assets",
+    href: "/blogs/nri-will-for-uae-dubai-expats-indian-property",
+    category: "Guides",
+    date: "2026-10-31",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
