@@ -3032,6 +3032,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Indian Will for NRIs in Canada, Australia & Singapore",
+    href: "/blogs/nri-will-for-canada-australia-singapore-residents",
+    category: "Guides",
+    date: "2026-11-02",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
