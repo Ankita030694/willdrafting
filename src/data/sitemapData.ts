@@ -17,6 +17,114 @@ export interface SitemapPageItem {
  * Newly created legal templates and diagnostic tools are prioritized at the very top.
  */
 export const staticPages: SitemapPageItem[] = [
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Sweden: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-sweden",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Tanzania: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-tanzania",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Japan: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-japan",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Hong Kong: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-hong-kong",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Nigeria: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-nigeria",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Spain: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-spain",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Ireland: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-ireland",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Russia: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-russia",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Jamaica: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-jamaica",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Kenya: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-kenya",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Portugal: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-portugal",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 02-11-2026 ====================
+  {
+    title: "Will Drafting for NRIs in Israel: Cross-Border Succession",
+    href: "/services/will-drafting-for-nris-in-israel",
+    category: "Services",
+    date: "02-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
   // ==================== 31-10-2026 ====================
   {
     title: "Will Drafting for NRIs in France: Cross-Border Succession",
