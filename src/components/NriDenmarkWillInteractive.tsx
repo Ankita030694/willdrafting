@@ -28,6 +28,7 @@ const NRI_DENMARK_SCENARIOS: NriDenmarkScenario[] = [
   {
     id: "arveloven-tvangsarv-ringfencing",
     label: "Arveloven & Tvangsarv",
+    icon: "globe",
     heading: "Protecting Indian Property from Danish Forced Heirship",
     challengeSummary:
       "Danish Arveloven gives a 25 percent forced share to spouses and direct children. A single Danish Will puts your Indian land and flats at risk of foreign forced heirship claims.",
@@ -46,6 +47,7 @@ const NRI_DENMARK_SCENARIOS: NriDenmarkScenario[] = [
   {
     id: "denmark-brussels-iv-optout",
     label: "EU Brussels IV Opt-Out",
+    icon: "landmark",
     heading: "Denmark Brussels IV Opt-Out & Dual-Will Architecture",
     challengeSummary:
       "Denmark opted out of EU Succession Regulation Brussels IV. Choice-of-law clauses valid in other EU nations do not apply under Danish law. Danish courts follow Danish domicile rules.",
@@ -64,6 +66,7 @@ const NRI_DENMARK_SCENARIOS: NriDenmarkScenario[] = [
   {
     id: "copenhagen-um-apostille",
     label: "Notar & UM Apostille",
+    icon: "building",
     heading: "Danish Notary Certification & Foreign Ministry Apostille",
     challengeSummary:
       "Many Indians in Copenhagen, Aarhus, or Odense wonder if they must fly to India. You do not need to travel to India to sign a valid Will.",
@@ -82,6 +85,7 @@ const NRI_DENMARK_SCENARIOS: NriDenmarkScenario[] = [
   {
     id: "nre-nro-repatriation-tax",
     label: "Bank Claims & Repatriation",
+    icon: "coins",
     heading: "NRE/NRO Bank Accounts, Demat Shares & RBI Remittances",
     challengeSummary:
       "Tech and pharma professionals hold NRE or NRO accounts, mutual funds, and Demat shares. Bank nominees are only temporary caretakers under Indian law, not owners.",
