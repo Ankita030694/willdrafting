@@ -245,34 +245,34 @@ const NRI_JAPAN_SCHEMA = {
       "@type": "HowTo",
       "@id":
         "https://www.willdrafting.in/services/will-drafting-for-nris-in-japan#howto",
-      name: "How NRIs in Japan Execute a Legally Enforceable Indian Will",
+      name: "How NRIs in Japan Execute a Valid Indian Will",
       description:
-        "Four-step statutory protocol to draft, ring-fence, and execute a legally binding Indian Will while living in Japan under the Indian Succession Act 1925.",
+        "Four-step guide to draft, ring-fence, and execute an Indian Will while living in Japan under the Indian Succession Act 1925.",
       totalTime: "P5D",
       step: [
         {
           "@type": "HowToStep",
           position: 1,
-          name: "Asset Mapping & Japan Residency Audit",
-          text: "Catalogue all Indian properties, NRE/NRO accounts, and Demat holdings, and evaluate your Japanese tax residency status against the 10-year unlimited taxpayer rule.",
+          name: "Asset Mapping & Tax Audit",
+          text: "List all Indian properties, bank accounts, and shares. Check your Japan stay against the 10-year global tax rule.",
         },
         {
           "@type": "HowToStep",
           position: 2,
-          name: "Advocate Drafting & Lex Situs Ring-Fencing",
-          text: "Our High Court advocates draft an exclusive Indian Will with explicit non-revocation clauses to protect your Indian assets from Japanese Civil Code forced heirship.",
+          name: "Advocate Drafting & Ring-Fencing",
+          text: "Our High Court lawyers draft your Indian Will. We ring-fence your assets and block foreign forced share claims.",
         },
         {
           "@type": "HowToStep",
           position: 3,
-          name: "Plain-Paper Attestation in Japan",
-          text: "Execute the Will in Tokyo, Yokohama, Osaka, or Kobe before two non-beneficiary adult witnesses on plain paper, with optional Japanese Notary and MOFA Apostille.",
+          name: "Plain-Paper Signing in Japan",
+          text: "Sign on plain white A4 paper before two adult witnesses in Japan. You can also add a Japanese Notary stamp and MOFA Apostille.",
         },
         {
           "@type": "HowToStep",
           position: 4,
-          name: "Safe Depository & Executor Authorization",
-          text: "Deliver certified copies to your designated India-resident executor to enable smooth municipal mutation, Society transfer, and Form 15CA/15CB fund repatriation.",
+          name: "Safe Storage & Executor Power",
+          text: "Give copies to your India executor. They handle land mutation, Society transfers, and RBI fund transfers to Japan.",
         },
       ],
     },
@@ -590,9 +590,9 @@ export default function WillDraftingNrisJapanPage() {
                 Why Write an Indian Will Now?
               </h3>
               <p className="text-xs sm:text-[13.5px] leading-[1.65] text-[#49585F]">
-                You protect your flats and land in India. Court succession cases take
-                years to finish. A clean Will lets your heirs take over smoothly.
-                We help you draft a valid Will so your family avoids long legal fights.
+                You protect your flats and land in India. Court cases in India take
+                many years to finish. A clean Will lets your heirs take over smoothly.
+                We help you write a valid Will. Your wealth stays safe. Your family avoids long court fights.
               </p>
             </div>
 
@@ -604,9 +604,9 @@ export default function WillDraftingNrisJapanPage() {
                 Who Needs This Legal Help?
               </h3>
               <p className="text-xs sm:text-[13.5px] leading-[1.65] text-[#49585F]">
-                Any Indian in Tokyo, Yokohama, Osaka, or Kobe who owns property, bank
-                accounts, or shares in India. It serves IT engineers and merchant families.
-                You can sign on plain paper in Japan with two adult witnesses.
+                Any Indian in Japan who owns a flat, plot, bank balance, or shares in
+                India. It helps tech staff and merchant families. You can sign your Will
+                in Japan. Two adult friends witness your signature. You do not need Indian stamp paper.
               </p>
             </div>
 
@@ -618,9 +618,9 @@ export default function WillDraftingNrisJapanPage() {
                 How Our Lawyers Help You
               </h3>
               <p className="text-xs sm:text-[13.5px] leading-[1.65] text-[#49585F]">
-                Our High Court advocates draft separate Wills for Indian assets. We ring-fence
-                your estate against Japanese 55% tax rules and guide you through
-                Japanese Notary attestation and MOFA Apostilles.
+                Our High Court lawyers draft separate Wills for Indian assets. We ring-fence
+                your estate from Japanese 55% tax rules. We guide you through Japanese Notary
+                attestation and MOFA Apostille steps.
               </p>
             </div>
           </div>
@@ -711,22 +711,22 @@ export default function WillDraftingNrisJapanPage() {
               {
                 step: "01",
                 title: "Portfolio Mapping & Tax Audit",
-                desc: "We inventory all Indian real estate, NRE/NRO fixed deposits, Demat portfolios, and evaluate residency years against Japan's 10-year unlimited tax bracket.",
+                desc: "We list all Indian real estate, bank deposits, and shares. We check your residency years against Japan's 10-year global tax rule.",
               },
               {
                 step: "02",
                 title: "Bespoke Advocate Drafting",
-                desc: "High Court advocates craft an exclusive Indian Will with Lex Situs ring-fencing clauses, excluding Japanese forced heirship and safeguarding non-revocation.",
+                desc: "High Court advocates craft an exclusive Indian Will. We ring-fence your assets and protect you from foreign forced share claims.",
               },
               {
                 step: "03",
-                title: "Execution & Attestation in Japan",
-                desc: "You sign on plain white A4 paper before two non-beneficiary adult witnesses in Japan. Optional notarization via Tokyo/Kanagawa One-Stop Apostille.",
+                title: "Signing & Witnessing in Japan",
+                desc: "You sign on plain white A4 paper before two adult witnesses in Japan. You can also add a Japanese Notary stamp and MOFA Apostille.",
               },
               {
                 step: "04",
-                title: "Safe Depository & Transmission",
-                desc: "Certified copies are shared with your India-resident executor for swift municipal mutation, Society share transfers, and RBI Form 15CA/15CB fund repatriation.",
+                title: "Safe Custody & Asset Transfer",
+                desc: "Your India executor receives certified copies. They handle land mutation, Society share transfers, and RBI fund repatriation.",
               },
             ].map((item) => (
               <div

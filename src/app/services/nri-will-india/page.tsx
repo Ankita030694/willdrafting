@@ -674,6 +674,20 @@ export default function NriWillIndiaPage() {
             </div>
                         <div className="flex flex-wrap gap-3">
                             <Link
+                href="/services/will-drafting-for-nris-in-malta"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Malta</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-saint-lucia"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Saint Lucia</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
                 href="/services/will-drafting-for-nris-in-hong-kong"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
@@ -713,6 +727,13 @@ export default function NriWillIndiaPage() {
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
                 <span>Will Drafting for NRIs in Tanzania</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-zambia"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Zambia</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
 <Link
@@ -757,6 +778,48 @@ export default function NriWillIndiaPage() {
                     <span>Will Drafting for NRIs in Ireland</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-greece"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Greece</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-mozambique"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Mozambique</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-belgium"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Belgium</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-finland"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Finland</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-malta"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in Malta</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link
+                    href="/services/will-drafting-for-nris-in-dr-congo"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+                  >
+                    <span>Will Drafting for NRIs in DR Congo</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
 <Link
                     href="/services/will-drafting-for-nris-in-israel"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
@@ -771,6 +834,48 @@ export default function NriWillIndiaPage() {
                     <span>Will Drafting for NRIs in Sweden</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-poland"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Poland</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-austria"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Austria</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-norway"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Norway</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <Link
+                href="/services/will-drafting-for-nris-in-switzerland"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Switzerland</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+<Link
+                href="/services/will-drafting-for-nris-in-brazil"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Brazil</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+                            <Link
+                href="/services/will-drafting-for-nris-in-denmark"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
+              >
+                <span>Will Drafting for NRIs in Denmark</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
 <Link
                 href="/services/will-drafting-for-nris-in-germany"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
