@@ -3283,6 +3283,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Will for Elderly Parents in India Whose Children Live Abroad",
+    href: "/blogs/will-for-elderly-parents-in-india-with-nri-children",
+    category: "Guides",
+    date: "2026-11-03",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
