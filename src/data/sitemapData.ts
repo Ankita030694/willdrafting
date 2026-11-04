@@ -3291,6 +3291,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Can an NRI or OCI Inherit Agricultural Land in India?",
+    href: "/blogs/can-oci-and-nri-inherit-agricultural-land-in-india",
+    category: "Guides",
+    date: "2026-11-04",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
