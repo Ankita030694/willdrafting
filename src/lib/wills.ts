@@ -1,8 +1,8 @@
 import crypto from "crypto";
 import { ObjectId } from "mongodb";
-import { willsCol } from "@/lib/db/collections";
+import { funnelEventsCol, willsCol } from "@/lib/db/collections";
 import type { WillDoc } from "@/lib/db/types";
-import { findAccountById, type Account } from "@/lib/accounts";
+import { findAccountById, logFunnelEvent, type Account } from "@/lib/accounts";
 import { BLANK_STATE, runLegalHealthCheck, type WillDraftingState } from "@/lib/willDraftingStore";
 import { normalizeWillState } from "@/lib/inputSanitizers";
 
@@ -186,6 +186,33 @@ export async function saveWill(session: SessionAccount, state: WillDraftingState
   const latest = await col.findOne({ userId: session.userId });
   if (latest) return { ok: true, will: latest };
   throw new Error("Could not save the will.");
+}
+
+/**
+ * Records that the account opened a questionnaire step: keeps the furthest / last step on the will
+ * and logs a `wizard_step_reached` funnel event the first time each step is seen.
+ * Allowed on locked wills too, since it never touches `state`.
+ */
+export async function recordWizardStep(session: SessionAccount, step: number): Promise<void> {
+  const col = await willsCol();
+  const now = new Date();
+  await col.updateOne(
+    { userId: session.userId },
+    {
+      $max: { furthestStep: step },
+      $set: { lastStep: step, lastStepAt: now },
+      $addToSet: { stepsVisited: step },
+    }
+  );
+
+  const events = await funnelEventsCol();
+  const seen = await events.findOne(
+    { accountId: session.userId, type: "wizard_step_reached", "meta.step": step },
+    { projection: { _id: 1 } }
+  );
+  if (!seen) {
+    await logFunnelEvent(session.userId, session.email, "wizard_step_reached", { step, paid: session.paid });
+  }
 }
 
 /** Saves a guest questionnaire by sessionId with a 30-day TTL. */

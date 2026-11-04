@@ -9,6 +9,7 @@ import {
 } from "@/lib/db/collections";
 import { PLANS } from "@/lib/plans";
 import type { WillDraftingState } from "@/lib/willDraftingStore";
+import type { WillDoc } from "@/lib/db/types";
 import { analyzeWillState } from "@/app/api/admin/drafts/route";
 
 export const dynamic = "force-dynamic";
@@ -18,8 +19,8 @@ async function requireAdmin() {
   return session?.user?.role === "superadmin" ? session : null;
 }
 
-function summarizeWillProgress(state?: WillDraftingState | null) {
-  const analyzed = analyzeWillState(state);
+function summarizeWillProgress(state?: WillDraftingState | null, will?: WillDoc | null) {
+  const analyzed = analyzeWillState(state, will);
   const t = state?.testator;
   return {
     ...analyzed,
@@ -120,7 +121,7 @@ export async function GET() {
           source: u.leadSource || "direct",
           hasWill: Boolean(w),
           willVerified: Boolean(w?.detailsVerified),
-          willProgress: summarizeWillProgress(w?.state),
+          willProgress: summarizeWillProgress(w?.state, w),
           createdAt: u.createdAt,
           updatedAt: u.updatedAt,
         };
@@ -140,7 +141,7 @@ export async function GET() {
           source: l.source,
           hasWill: Boolean(w),
           willVerified: Boolean(w?.detailsVerified),
-          willProgress: summarizeWillProgress(w?.state),
+          willProgress: summarizeWillProgress(w?.state, w),
           createdAt: l.createdAt,
           updatedAt: l.updatedAt,
         };
@@ -159,7 +160,7 @@ export async function GET() {
       .map((w) => {
         const isGuest = Boolean(w.isGuest || !w.userId);
         const lead = w.userId ? leadMap.get(w.userId.toString()) : null;
-        const progress = summarizeWillProgress(w.state);
+        const progress = summarizeWillProgress(w.state, w);
         const hasTypedContact = Boolean(progress.testatorEmail || progress.testatorPhone || progress.testatorName);
 
         return {

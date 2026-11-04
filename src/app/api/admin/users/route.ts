@@ -120,7 +120,7 @@ export async function GET(request: NextRequest) {
     const buildWillPayload = (accountId: string) => {
       const w = willByUserId.get(accountId);
       if (!w) return null;
-      const progress = analyzeWillState(w.state);
+      const progress = analyzeWillState(w.state, w);
       return {
         willId: w._id.toString(),
         version: w.version || 1,

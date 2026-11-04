@@ -126,7 +126,9 @@ export type FunnelEventType =
   | "lead_converted"
   | "will_verified"
   | "will_unlocked"
-  | "will_downloaded";
+  | "will_downloaded"
+  /** First time an account opens a questionnaire step. `meta.step` is the internal step (1-14). */
+  | "wizard_step_reached";
 
 /**
  * One will per account. `userId` is the account `_id`, which stays the same when a lead becomes a
@@ -155,6 +157,14 @@ export interface WillDoc {
   unlockCount?: number;
   downloadCount?: number;
   lastDownloadedAt?: Date | null;
+  /**
+   * Questionnaire progress, written only by POST /api/will/progress (never part of `state`, so a
+   * state save cannot overwrite it). Steps are the internal 1-14 numbers from questionnaireFlow.
+   */
+  furthestStep?: number;
+  lastStep?: number;
+  lastStepAt?: Date | null;
+  stepsVisited?: number[];
   createdAt: Date;
   updatedAt: Date;
   /** TTL index field: Abandoned guest drafts auto-delete after 30 days. Unset on user registration. */

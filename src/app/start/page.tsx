@@ -30,6 +30,7 @@ import { applyLanguageTranslation } from "@/lib/translations";
 import { normalizeWillState } from "@/lib/inputSanitizers";
 import { useWillStore } from "@/lib/useWillStore";
 import CloudSyncBadge from "@/components/wizard/CloudSyncBadge";
+import { useTrackWizardStep } from "@/hooks/useTrackWizardStep";
 import {
   getStepFromParam,
   getUrlForStep,
@@ -53,6 +54,8 @@ function WizardContent() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const { lang, setLang } = useLanguage();
   const mainRef = React.useRef<HTMLElement | null>(null);
+
+  useTrackWizardStep(currentStep, mounted && Boolean(session?.user));
 
   useEffect(() => {
     setCurrentStep(initialStep);

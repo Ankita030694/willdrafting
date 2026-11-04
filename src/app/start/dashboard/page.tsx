@@ -10,6 +10,7 @@ import StartAssetWealthDashboard from "@/components/dashboard/StartAssetWealthDa
 import PaymentReturnBanner from "@/components/dashboard/PaymentReturnBanner";
 import { useLanguage } from "@/context/LanguageContext";
 import { getUrlForStep } from "@/lib/questionnaireFlow";
+import { useTrackWizardStep } from "@/hooks/useTrackWizardStep";
 import { Menu } from "lucide-react";
 
 function StartDashboardContent() {
@@ -20,6 +21,8 @@ function StartDashboardContent() {
   const [mounted, setMounted] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  useTrackWizardStep(1, mounted && Boolean(session?.user));
 
   useEffect(() => {
     if (userEmail) {

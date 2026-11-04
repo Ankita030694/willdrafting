@@ -4,6 +4,7 @@ import { auth } from "@/auth";
 import { leadsCol, ordersCol, usersCol, willsCol } from "@/lib/db/collections";
 import { QUESTIONNAIRE_STEPS } from "@/lib/questionnaireFlow";
 import { BLANK_STATE, runLegalHealthCheck, type WillDraftingState } from "@/lib/willDraftingStore";
+import type { WillDoc } from "@/lib/db/types";
 
 export const dynamic = "force-dynamic";
 
@@ -26,11 +27,16 @@ export type DraftCategory =
 
 export type GuestContactState = "no_email" | "typed_in_form" | null;
 
-export function analyzeWillState(rawState?: WillDraftingState | null) {
+type WillProgressFields = Pick<WillDoc, "furthestStep" | "lastStep" | "lastStepAt">;
+
+export function analyzeWillState(rawState?: WillDraftingState | null, will?: WillProgressFields | null) {
   if (!rawState) {
     return {
       currentStep: 0,
       currentStepTitle: "No Will Started",
+      lastStep: null as number | null,
+      lastStepTitle: null as string | null,
+      lastStepAt: null as Date | null,
       willStatus: "not_started",
       selectedPlan: null,
       sectionsCompleted: 0,
@@ -51,8 +57,10 @@ export function analyzeWillState(rawState?: WillDraftingState | null) {
   }
 
   const state = { ...BLANK_STATE, ...rawState } as WillDraftingState;
-  const stepNum = state.currentStep || 1;
+  // `state.currentStep` is never advanced by the wizard; the server-tracked furthest step is the real one.
+  const stepNum = will?.furthestStep || state.currentStep || 1;
   const stepObj = QUESTIONNAIRE_STEPS.find((s) => s.step === stepNum);
+  const lastStep = will?.lastStep ?? null;
   const t = state.testator;
 
   const filledSections: string[] = [];
@@ -125,6 +133,9 @@ export function analyzeWillState(rawState?: WillDraftingState | null) {
   return {
     currentStep: stepNum,
     currentStepTitle: stepObj?.title || `Step ${stepNum}`,
+    lastStep,
+    lastStepTitle: lastStep ? QUESTIONNAIRE_STEPS.find((s) => s.step === lastStep)?.title || `Step ${lastStep}` : null,
+    lastStepAt: will?.lastStepAt ?? null,
     willStatus: state.willStatus || "drafting",
     selectedPlan: state.selectedPlan || null,
     sectionsCompleted,
@@ -212,7 +223,7 @@ export async function GET(request: NextRequest) {
           : "no_email"
         : null;
 
-      const progress = analyzeWillState(w.state);
+      const progress = analyzeWillState(w.state, w);
       const accOrders = userIdStr ? ordersByAccount.get(userIdStr) || [] : [];
 
       const displayName =
@@ -427,7 +438,8 @@ export async function GET(request: NextRequest) {
         "Phone",
         "State",
         "Session ID",
-        "Current Step",
+        "Furthest Step",
+        "Last Step Opened",
         "Completion %",
         "Family Count",
         "Assets Count",
@@ -447,6 +459,7 @@ export async function GET(request: NextRequest) {
           r.stateLocation,
           r.sessionId || "",
           `${p.currentStep} (${p.currentStepTitle})`,
+          p.lastStep ? `${p.lastStep} (${p.lastStepTitle})` : "",
           `${p.completionPercent}%`,
           p.familyCount,
           p.assetsCount,
