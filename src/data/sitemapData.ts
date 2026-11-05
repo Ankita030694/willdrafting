@@ -3299,6 +3299,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "How NRIs Repatriate Inherited Property & Bank Money From India",
+    href: "/blogs/how-nri-can-repatriate-inherited-property-money-from-india",
+    category: "Guides",
+    date: "2026-11-05",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
