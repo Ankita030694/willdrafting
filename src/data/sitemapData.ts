@@ -3307,6 +3307,46 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "What Happens to NRE, NRO & FCNR Bank Accounts After Death?",
+    href: "/blogs/nre-nro-fcnr-bank-account-inheritance-rules-for-nri",
+    category: "Guides",
+    date: "2026-11-05",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Jointly Owned Flat by Husband & Wife: Who Gets It After Death?",
+    href: "/blogs/jointly-owned-property-husband-wife-after-death-india",
+    category: "Guides",
+    date: "2026-11-06",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "How to Write a Will for a Flat With an Ongoing Home Loan",
+    href: "/blogs/how-to-write-will-for-flat-with-ongoing-home-loan-india",
+    category: "Guides",
+    date: "2026-11-07",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Life Interest Clause in a Will: Protect Your Spouse for Life",
+    href: "/blogs/life-interest-clause-in-will-for-wife-and-parents-india",
+    category: "Guides",
+    date: "2026-11-08",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  {
+    title: "Cooperative Housing Society Flat Transfer After Death in India",
+    href: "/blogs/cooperative-housing-society-flat-transfer-after-death-india",
+    category: "Guides",
+    date: "2026-11-09",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
