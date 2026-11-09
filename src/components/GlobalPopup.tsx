@@ -3,8 +3,15 @@
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { useSession } from "next-auth/react";
+import { track } from "@vercel/analytics";
 import IntakeForm from "@/components/IntakeForm";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
+
+interface PopupCustomDetail {
+  title?: string;
+  subtitle?: string;
+  source?: string;
+}
 
 export default function GlobalPopup() {
   const pathname = usePathname();
@@ -12,6 +19,7 @@ export default function GlobalPopup() {
   const isLoggedIn = status === "authenticated" && Boolean(session?.user);
   const [isOpen, setIsOpen] = useState(false);
   const [lead, setLead] = useState<LeadDetails | null>(null);
+  const [popupConfig, setPopupConfig] = useState<PopupCustomDetail>({});
 
   // Never show the intake form popup if the user is already signed in
   useEffect(() => {
@@ -45,9 +53,26 @@ export default function GlobalPopup() {
       new URLSearchParams(window.location.search).get("popup") === "true";
 
     // Allow custom event trigger from any CTA button on the page:
-    // window.dispatchEvent(new CustomEvent("open-intake-popup"))
-    const handleOpenEvent = () => {
-      if (!isLoggedIn) setIsOpen(true);
+    // window.dispatchEvent(new CustomEvent("open-intake-popup", { detail: { title, subtitle, source } }))
+    const handleOpenEvent = (ev: Event) => {
+      if (!isLoggedIn) {
+        const customEv = ev as CustomEvent<PopupCustomDetail>;
+        if (customEv.detail) {
+          setPopupConfig(customEv.detail);
+        } else {
+          setPopupConfig({});
+        }
+        setIsOpen(true);
+        try {
+          track("popup_opened", {
+            trigger: "cta_click",
+            source: customEv.detail?.source || "intake_popup",
+            page: pathname || "/",
+          });
+        } catch {
+          // ignore
+        }
+      }
     };
     window.addEventListener("open-intake-popup", handleOpenEvent);
 
@@ -60,16 +85,45 @@ export default function GlobalPopup() {
       pathname?.startsWith("/nullify") ||
       pathname?.startsWith("/print");
 
-    // Global popup logic: only visible in production (or ?popup=true query override) for unauthenticated visitors
+    // Global popup logic: trigger after 18s of reading OR 35% scroll depth (after 5s) instead of ambushing at 3s
     if ((isProd && !isSuppressedRoute) || hasQueryOverride) {
       const alreadyDismissed = sessionStorage.getItem("wd_global_popup_dismissed");
       if (!alreadyDismissed) {
-        const timer = setTimeout(() => {
+        let triggered = false;
+        const mountTime = Date.now();
+
+        const triggerAutoPopup = (reason: string) => {
+          if (triggered) return;
+          triggered = true;
+          setPopupConfig({});
           setIsOpen(true);
-        }, 3000); // 3 seconds delay after entering website
+          try {
+            track("popup_opened", { trigger: reason, page: pathname || "/" });
+          } catch {
+            // ignore
+          }
+        };
+
+        const timer = setTimeout(
+          () => triggerAutoPopup("timer_18s"),
+          hasQueryOverride ? 1500 : 18000
+        );
+
+        const handleScroll = () => {
+          if (triggered || Date.now() - mountTime < 5000) return;
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const docHeight =
+            document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          if (docHeight > 300 && scrollTop / docHeight >= 0.35) {
+            triggerAutoPopup("scroll_35pct");
+          }
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => {
           clearTimeout(timer);
+          window.removeEventListener("scroll", handleScroll);
           window.removeEventListener("open-intake-popup", handleOpenEvent);
         };
       }
@@ -84,6 +138,11 @@ export default function GlobalPopup() {
   const handleClose = () => {
     setIsOpen(false);
     sessionStorage.setItem("wd_global_popup_dismissed", "true");
+    try {
+      track("popup_dismissed", { page: pathname || "/" });
+    } catch {
+      // ignore
+    }
   };
 
   // Close on Escape key
@@ -184,13 +243,26 @@ export default function GlobalPopup() {
               lineHeight: 1.3,
             }}
           >
-            Start Your Will
+            {popupConfig.title || "Start Your Will"}
           </div>
+          {popupConfig.subtitle && (
+            <p
+              style={{
+                fontSize: "0.84rem",
+                color: "var(--color-slate)",
+                margin: "0.35rem 0 0",
+                lineHeight: 1.45,
+              }}
+            >
+              {popupConfig.subtitle}
+            </p>
+          )}
         </div>
 
         {/* Embedded Intake Form */}
         <IntakeForm
           compact
+          source={popupConfig.source || "intake_popup"}
           onSuccess={(saved) => {
             setIsOpen(false);
             sessionStorage.setItem("wd_global_popup_dismissed", "true");

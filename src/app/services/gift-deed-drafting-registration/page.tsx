@@ -551,9 +551,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               <FileCheck className="w-4 h-4" />
               <span>Visual Legal Documentation</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Framework: Gift Deed vs Registered Will
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How an advocate-drafted property gift deed safeguards your title,
               guarantees senior citizen maintenance, and complies with Sub-Registrar
@@ -591,9 +591,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               <Landmark className="w-4 h-4" />
               <span>Statutory Comparison Table</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Gift Deed vs Will vs Settlement: Key Differences
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing between an immediate gift and a testamentary Will impacts
               your control, stamp duty expense, and eviction risks. Compare how
@@ -653,9 +653,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>SRO Execution Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory 4-Step Gift Deed Registration Roadmap
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Our High Court advocates handle the complete gift deed procedure.
               Follow this structured 4-step path to transfer property safely:
@@ -714,9 +714,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               <FileCheck className="w-4 h-4" />
               <span>Drafting Architecture</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Essential Section 23 Senior Protection Clause
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               In Sudesh Chhikara v. Ramti Devi (2022 SC), the Supreme Court
               clarified that oral promises of maintenance are not enforceable
@@ -831,9 +831,9 @@ export default function GiftDeedDraftingRegistrationPage() {
                 <Users className="w-4 h-4" />
                 <span>Statutory Tax &amp; Senior Defense</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Senior Citizen Protection &amp; Income Tax Exemptions
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Section 56(2)(x) of the Income Tax Act exempts property gifts
                 between defined relatives from income tax. Relatives include
@@ -874,9 +874,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               <BookOpen className="w-4 h-4" />
               <span>Gift Deed Law FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Gift Deed Drafting
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Authoritative legal answers prepared by the{" "}
               <strong className="text-[#111827]">

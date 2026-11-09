@@ -3,6 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import { track } from "@vercel/analytics";
 import EmailOtpAuth from "@/components/auth/EmailOtpAuth";
 import PaywallModal from "@/components/dashboard/PaywallModal";
 
@@ -121,7 +122,16 @@ export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModal
           initialEmail={lead.email}
           initialName={lead.name}
           initialPhone={lead.phone}
-          onSuccess={() => setVerified(true)}
+          onSuccess={() => {
+            try {
+              track("lead_otp_verified", {
+                page: typeof window !== "undefined" ? window.location.pathname : "/",
+              });
+            } catch {
+              // ignore
+            }
+            setVerified(true);
+          }}
           submitLabel="Verify & Continue →"
         />
       </div>

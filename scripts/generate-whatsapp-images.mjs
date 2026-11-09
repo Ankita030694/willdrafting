@@ -6,7 +6,7 @@
  * printed slightly off-register) with a short caption, in English and Hindi.
  * Output: public/images/whatsapp/<template>-<lang>.jpg, 1200x628 (1.91:1), each <= 100 kB.
  *
- * Usage: node scripts/generate-whatsapp-images.mjs
+ * Usage: node scripts/generate-whatsapp-images.mjs [template_name ...]   (no names = all)
  * Needs Google Chrome installed (rendered with puppeteer-core) and network access for Google Fonts.
  */
 import fs from "node:fs";
@@ -275,6 +275,100 @@ const ILLUSTRATIONS = {
       <circle cx="356" cy="344" r="4" fill="${C.navy}"/>`,
     accents: sparkle(60, 100, 13, C.sage) + sparkle(430, 100, 12, C.mustard) + sparkle(110, 410, 10, C.rose),
   },
+  will_not_started: {
+    fills: `
+      <rect x="110" y="56" width="220" height="300" rx="10" fill="${C.paper}"/>
+      <g transform="rotate(-38 360 330)">
+        <path d="M346,210 H376 V380 L361,420 L346,380 Z" fill="${C.navy}"/>
+        <rect x="346" y="210" width="30" height="40" fill="${C.mustard}"/>
+      </g>
+      <circle cx="140" cy="388" r="46" fill="${C.rose}"/>`,
+    ink: `
+      <rect x="110" y="56" width="220" height="300" rx="10"/>
+      <path d="M150,96 H290" stroke-width="5"/>
+      ${[0, 1, 2, 3, 4, 5].map((i) => `<path d="M136,${146 + i * 30} L${296 - (i % 3) * 30},${146 + i * 30}" stroke-dasharray="4 10"/>`).join("")}
+      <g transform="rotate(-38 360 330)">
+        <path d="M346,210 H376 V380 L361,420 L346,380 Z"/>
+        <path d="M346,250 H376 M361,384 V404"/>
+      </g>
+      <circle cx="140" cy="388" r="46"/>
+      <path d="M120,388 H158 M144,372 L160,388 L144,404" stroke="${C.paper}" stroke-width="6"/>`,
+    accents: sparkle(70, 110, 14, C.mustard) + sparkle(420, 110, 11, C.rose) + sparkle(430, 420, 9, C.sage),
+  },
+  will_left_midway: {
+    fills: `
+      <rect x="110" y="50" width="226" height="320" rx="10" fill="${C.paper}"/>
+      <rect x="110" y="50" width="226" height="150" rx="10" fill="${C.sageLight}"/>
+      <path d="M290,50 V128 L308,114 L326,128 V50 Z" fill="${C.rose}"/>
+      <rect x="130" y="392" width="200" height="20" rx="10" fill="${C.sageLight}"/>
+      <rect x="130" y="392" width="96" height="20" rx="10" fill="${C.sage}"/>
+      <g transform="rotate(28 380 260)">
+        <rect x="366" y="170" width="28" height="140" rx="4" fill="${C.mustard}"/>
+        <path d="M366,310 L394,310 L380,342 Z" fill="${C.mustardLight}"/>
+      </g>`,
+    ink: `
+      <rect x="110" y="50" width="226" height="320" rx="10"/>
+      <path d="M290,50 V128 L308,114 L326,128 V50"/>
+      ${lines(132, 92, [140, 120, 150, 96, 130], 22)}
+      <path d="M132,212 c18,-10 30,10 46,0"/>
+      ${[0, 1, 2, 3, 4].map((i) => `<path d="M132,${244 + i * 24} L${300 - (i % 2) * 40},${244 + i * 24}" stroke-dasharray="4 10"/>`).join("")}
+      <rect x="130" y="392" width="200" height="20" rx="10"/>
+      <g transform="rotate(28 380 260)">
+        <rect x="366" y="170" width="28" height="140" rx="4"/>
+        <path d="M366,310 L394,310 L380,342 Z"/>
+        <path d="M366,194 H394"/>
+      </g>`,
+    accents: sparkle(70, 120, 14, C.rose) + sparkle(430, 80, 11, C.sage) + sparkle(420, 420, 9, C.mustard),
+  },
+  will_left_midway_help: {
+    fills: `
+      <path d="M90,70 H300 a24,24 0 0 1 24,24 V190 a24,24 0 0 1 -24,24 H160 L124,250 L130,214 H90 a24,24 0 0 1 -24,-24 V94 a24,24 0 0 1 24,-24 Z" fill="${C.paper}"/>
+      <path d="M190,240 H390 a24,24 0 0 1 24,24 V340 a24,24 0 0 1 -24,24 H370 L376,400 L340,364 H190 a24,24 0 0 1 -24,-24 V264 a24,24 0 0 1 24,-24 Z" fill="${C.sage}"/>
+      <circle cx="98" cy="372" r="44" fill="${C.mustard}"/>`,
+    ink: `
+      <path d="M90,70 H300 a24,24 0 0 1 24,24 V190 a24,24 0 0 1 -24,24 H160 L124,250 L130,214 H90 a24,24 0 0 1 -24,-24 V94 a24,24 0 0 1 24,-24 Z"/>
+      <path d="M180,112 c0,-26 44,-26 44,0 c0,20 -22,20 -22,40" stroke-width="6"/>
+      <circle cx="202" cy="178" r="5" fill="${C.navy}"/>
+      <path d="M190,240 H390 a24,24 0 0 1 24,24 V340 a24,24 0 0 1 -24,24 H370 L376,400 L340,364 H190 a24,24 0 0 1 -24,-24 V264 a24,24 0 0 1 24,-24 Z"/>
+      <g stroke="${C.paper}">${lines(196, 282, [170, 130, 150], 24)}</g>
+      <circle cx="98" cy="372" r="44"/>
+      <path d="M80,354 c0,24 14,38 38,38 l8,-10 l-12,-10 l-8,6 c-8,-4 -12,-8 -16,-16 l6,-8 l-10,-12 Z" stroke-width="3.5"/>`,
+    accents: sparkle(400, 90, 14, C.rose) + sparkle(440, 200, 9, C.mustard) + sparkle(230, 440, 10, C.rose),
+  },
+  will_final_reminder: {
+    fills: `
+      <rect x="160" y="40" width="200" height="250" rx="8" fill="${C.paper}"/>
+      <path d="M90,170 H200 L224,194 H400 V410 H90 Z" fill="${C.mustard}"/>
+      <path d="M90,220 H400 V410 H90 Z" fill="${C.mustardLight}"/>
+      <circle cx="380" cy="120" r="46" fill="${C.roseLight}"/>`,
+    ink: `
+      <rect x="160" y="40" width="200" height="250" rx="8"/>
+      ${lines(182, 80, [150, 120, 140], 22)}
+      <path d="M90,170 H200 L224,194 H400 V410 H90 Z"/>
+      <path d="M90,220 H400"/>
+      <path d="M200,300 H290" stroke-width="6"/>
+      <circle cx="380" cy="120" r="46"/>
+      <path d="M380,120 V92 M380,120 L400,132" stroke-width="5"/>`,
+    accents: sparkle(70, 100, 13, C.sage) + sparkle(440, 250, 10, C.rose) + sparkle(60, 430, 9, C.mustard),
+  },
+  checkout_offer: {
+    fills: `
+      <path d="M150,110 H330 L410,240 L330,370 H150 a20,20 0 0 1 -20,-20 V130 a20,20 0 0 1 20,-20 Z" fill="${C.rose}"/>
+      <circle cx="350" cy="240" r="16" fill="${C.cream}"/>
+      <circle cx="98" cy="110" r="34" fill="${C.mustard}"/>`,
+    ink: `
+      <path d="M150,110 H330 L410,240 L330,370 H150 a20,20 0 0 1 -20,-20 V130 a20,20 0 0 1 20,-20 Z"/>
+      <circle cx="350" cy="240" r="16"/>
+      <path d="M366,240 C410,250 430,200 460,160"/>
+      <g stroke="${C.paper}" stroke-width="7">
+        <path d="M190,300 L280,180"/>
+        <circle cx="200" cy="196" r="18"/>
+        <circle cx="270" cy="284" r="18"/>
+      </g>
+      <circle cx="98" cy="110" r="34"/>
+      <text x="98" y="122" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="34" font-weight="600" fill="${C.navy}" stroke="none">₹</text>`,
+    accents: sparkle(440, 80, 13, C.sage) + sparkle(80, 380, 11, C.rose) + sparkle(450, 410, 9, C.mustard),
+  },
 };
 
 const TEMPLATES = [
@@ -337,6 +431,36 @@ const TEMPLATES = [
     theme: "lawyer",
     en: { kicker: "Consultation", title: "Your call is booked", sub: "Keep your will draft open" },
     hi: { kicker: "परामर्श", title: "आपकी कॉल तय है", sub: "अपनी वसीयत का ड्राफ़्ट खुला रखें" },
+  },
+  {
+    name: "will_not_started",
+    theme: "account",
+    en: { kicker: "Your will", title: "Start your will", sub: "Your details, family, assets and wishes" },
+    hi: { kicker: "आपकी वसीयत", title: "अपनी वसीयत शुरू करें", sub: "आपकी जानकारी, परिवार, संपत्ति और इच्छाएँ" },
+  },
+  {
+    name: "will_left_midway",
+    theme: "draft",
+    en: { kicker: "Your will", title: "You left your will midway", sub: "Your answers are saved. Pick up where you stopped" },
+    hi: { kicker: "आपकी वसीयत", title: "आपकी वसीयत अधूरी है", sub: "आपके जवाब सेव हैं, वहीं से आगे भरें" },
+  },
+  {
+    name: "will_left_midway_help",
+    theme: "lawyer",
+    en: { kicker: "We can help", title: "Stuck on a step?", sub: "Reply and our team will guide you" },
+    hi: { kicker: "हम मदद करेंगे", title: "किसी चरण पर अटके हैं?", sub: "जवाब दें, हमारी टीम आपको बताएगी" },
+  },
+  {
+    name: "will_final_reminder",
+    theme: "payment",
+    en: { kicker: "Your will", title: "Your draft stays saved", sub: "Come back whenever you are ready" },
+    hi: { kicker: "आपकी वसीयत", title: "आपका ड्राफ़्ट सेव रहेगा", sub: "जब तैयार हों, वापस आएँ" },
+  },
+  {
+    name: "checkout_offer",
+    theme: "will",
+    en: { kicker: "Offer", title: "A discount on your will", sub: "Your code is inside this message" },
+    hi: { kicker: "ऑफ़र", title: "आपकी वसीयत पर छूट", sub: "आपका कोड इस संदेश में है" },
   },
 ];
 
@@ -423,9 +547,11 @@ async function main() {
   try {
     const tab = await browser.newPage();
     await tab.setViewport({ width: W, height: H, deviceScaleFactor: 1 });
+    const only = new Set(process.argv.slice(2));
     let seed = 2;
     for (const t of TEMPLATES) {
       seed += 1;
+      if (only.size && !only.has(t.name)) continue;
       for (const lang of ["en", "hi"]) {
         await tab.setContent(page(t, lang, seed), { waitUntil: "load", timeout: 90_000 });
         await tab.evaluate(() => document.fonts.ready);

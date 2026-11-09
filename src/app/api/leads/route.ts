@@ -10,6 +10,9 @@ const SOURCES: Record<string, LeadSource> = {
   intake_popup: "intake_popup",
   contact_page: "contact_form",
   contact_form: "contact_form",
+  calculator_cta: "calculator_cta",
+  blog_inline_cta: "blog_inline_cta",
+  template_download: "template_download",
 };
 
 /**
@@ -32,6 +35,8 @@ export async function POST(request: NextRequest) {
     const phone = normalizePhone(body.phone);
     const state = String(body.state ?? "").trim().slice(0, 60);
     const message = String(body.message ?? body.note ?? "").trim().slice(0, 2000);
+    const rawLandingPage = String(body.landingPage ?? "").trim().slice(0, 220);
+    const landingPage = rawLandingPage.startsWith("/") ? rawLandingPage : undefined;
     const source = SOURCES[String(body.source ?? "")] ?? "intake_popup";
 
     if (email && !isValidEmail(email)) {
@@ -49,6 +54,7 @@ export async function POST(request: NextRequest) {
       name,
       phone,
       state: state || undefined,
+      landingPage,
       message: message || undefined,
       source,
       marketingConsent: body.marketingConsent === true,

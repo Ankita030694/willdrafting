@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import { track } from "@vercel/analytics";
 import { OPEN_SIGNUP_EVENT } from "@/components/auth/SignupModalHost";
 import {
   ShieldCheck,
@@ -1084,19 +1085,47 @@ export default function SuccessionFeeCalculatorClient() {
                   </div>
                 </div>
 
-                {/* Secondary CTA to Succession Certificate Service */}
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600 bg-blue-50/60 rounded-xl p-3.5 border border-blue-100">
-                  <div className="flex items-center gap-2">
+                {/* Secondary CTA to Succession Certificate Service & Instant Quote */}
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700 bg-blue-50/80 rounded-xl p-4 border border-blue-200">
+                  <div className="flex items-center gap-2.5">
                     <Building2 className="w-4 h-4 text-blue-700 shrink-0" />
-                    <span>Need experienced lawyers to file for a estate paper in your local district court?</span>
+                    <span>
+                      Filing in <strong>{currentRule.name}</strong>? Get a fixed-fee lawyer quote &amp; district court checklist for your{" "}
+                      <strong>₹{Math.round(assetValue).toLocaleString("en-IN")}</strong> estate.
+                    </span>
                   </div>
-                  <Link
-                    href="/services/succession-certificate"
-                    className="shrink-0 text-blue-700 hover:text-blue-900 font-bold flex items-center gap-1 hover:underline"
-                  >
-                    <span>Estate Legal Services</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </Link>
+                  <div className="flex items-center gap-2.5 shrink-0 w-full sm:w-auto justify-end">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        track("cta_clicked", {
+                          location: "succession_calculator_result",
+                          state: currentRule.code,
+                          estate_value: Math.round(assetValue),
+                        });
+                        window.dispatchEvent(
+                          new CustomEvent("open-intake-popup", {
+                            detail: {
+                              title: `Get ${currentRule.name} Succession Certificate Quote`,
+                              subtitle: `Our district court advocates handle petition drafting, newspaper citation & ₹${Math.round(calculationResult.fee).toLocaleString("en-IN")} court fee stamping.`,
+                              source: "calculator_cta",
+                            },
+                          })
+                        );
+                      }}
+                      className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs transition-colors shadow-xs"
+                    >
+                      <span>Get Free {currentRule.name} Filing Quote</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                    <Link
+                      href="/services/succession-certificate"
+                      className="text-blue-700 hover:text-blue-900 font-bold flex items-center gap-1 hover:underline px-2 py-1"
+                    >
+                      <span>Service Details</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>

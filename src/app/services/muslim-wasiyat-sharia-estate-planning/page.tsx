@@ -548,9 +548,9 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
               <span>Visual Legal Documentation</span>
             </div>
             {/* Strictly <= 70 chars, no em-dash */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Framework: Muslim Wasiyat vs Lifetime Hiba
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How an ironclad Wasiyat and lifetime Hiba strategy drafted by High
               Court advocates protects your family, satisfies Sharia Faraid
@@ -589,9 +589,9 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
               <span>Statutory Comparison Table</span>
             </div>
             {/* Strictly <= 70 chars, no em-dash */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Wasiyat vs Lifetime Hiba: Statutory Comparison Table
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the wrong legal instrument can leave your family home open
               to unexpected claims by distant relatives. Compare how Indian
@@ -653,9 +653,9 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
               <span>Advocate Execution Roadmap</span>
             </div>
             {/* Strictly <= 70 chars, no em-dash */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory 4-Step Sharia Estate Planning Protocol
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Our High Court succession advocates guide Muslim families through a
               proven 4-step protocol. We ensure religious integrity, compliance
@@ -716,9 +716,9 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
               <span>Drafting Architecture</span>
             </div>
             {/* Strictly <= 70 chars, no em-dash */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Essential Sharia-Compliant Wasiyat Clause Structure
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               In Ghulam Mohammad v. Ghulam Husain, the Privy Council established
               that testamentary bequests exceeding one-third are invalid
@@ -836,9 +836,9 @@ PROVIDED ALWAYS that the remaining two-thirds (2/3rds) of my net estate shall de
                 <span>Family Estate Protection</span>
               </div>
               {/* Strictly <= 70 chars, no em-dash */}
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Daughter &amp; Spouse Inheritance Protection under Shariat
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Under default Sunni Faraid rules, an only daughter inherits
                 one-half of the estate, while multiple daughters share two-thirds.
@@ -887,9 +887,9 @@ PROVIDED ALWAYS that the remaining two-thirds (2/3rds) of my net estate shall de
               <span>Statutory FAQs</span>
             </div>
             {/* Strictly <= 70 chars, no em-dash */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Muslim Will &amp; Sharia Law
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Authoritative legal answers prepared by the{" "}
               <strong className="text-[#111827]">

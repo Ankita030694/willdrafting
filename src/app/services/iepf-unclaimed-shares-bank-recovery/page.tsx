@@ -534,9 +534,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               <FileCheck className="w-4 h-4" />
               <span>Statutory Asset Recovery Overview</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Framework: IEPF Recovery Architecture
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How integrated legal advocacy unites civil court succession orders,
               RTA transmission protocols, and MCA Form IEPF-5 filing to restore
@@ -574,9 +574,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               <Landmark className="w-4 h-4" />
               <span>Service Model Comparison</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Broker vs High Court Advocate: Recovery Comparison
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               IEPF recovery requires both administrative liaison and civil court
               litigation. Compare how unregulated brokers, unassisted claimants,
@@ -637,9 +637,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Statutory Execution Lifecycle</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory 4-Step Roadmap: Folio to Demat Credit
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Recovering unclaimed shares from IEPF follows a strict statutory
               sequence under the Companies Act 2013 and SEBI regulations. Our
@@ -699,9 +699,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               <FileCheck className="w-4 h-4" />
               <span>Statutory Compliance Formats</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Mandatory Indemnity Bond and Legal Affidavit Clauses
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Rule 7 of the IEPF Rules 2016 requires every claimant to execute a
               statutory Indemnity Bond on non-judicial stamp paper. This bond
@@ -820,9 +820,9 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
                 <Scale className="w-4 h-4" />
                 <span>Statutory Authority &amp; Landmark Framework</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Companies Act 2013: Sections 124 and 125 Governance
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Under Section 124(5) of the Companies Act 2013, any dividend
                 unpaid or unclaimed for seven years transfers to the Investor
@@ -865,9 +865,9 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
               <BookOpen className="w-4 h-4" />
               <span>Asset Recovery FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: IEPF and Bank Claims
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear legal answers prepared by the{" "}
               <strong className="text-[#111827]">

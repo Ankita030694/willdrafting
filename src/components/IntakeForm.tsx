@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { track } from "@vercel/analytics";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 
 const INDIAN_STATES = [
@@ -19,9 +20,11 @@ interface IntakeFormProps {
   /** Receives the saved details so the parent can continue the verify / pay / dashboard flow. */
   onSuccess?: (lead: LeadDetails) => void;
   compact?: boolean;
+  /** Optional custom source tag (defaults to "intake_popup"). */
+  source?: string;
 }
 
-export default function IntakeForm({ onSuccess, compact = false }: IntakeFormProps) {
+export default function IntakeForm({ onSuccess, compact = false, source = "intake_popup" }: IntakeFormProps) {
   const [savedLead, setSavedLead] = useState<LeadDetails | null>(null);
 
   const [loading, setLoading] = useState(false);
@@ -52,6 +55,8 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
 
     setLoading(true);
     try {
+      const landingPage =
+        typeof window !== "undefined" ? window.location.pathname : undefined;
       const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -60,11 +65,21 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
           phone: cleanPhone,
           email: formData.email.trim(),
           state: formData.state,
-          source: "intake_popup",
+          source,
+          landingPage,
         }),
       });
 
       if (res.ok) {
+        try {
+          track("lead_captured", {
+            source,
+            page: landingPage || "/",
+            state: formData.state,
+          });
+        } catch {
+          // ignore analytics error
+        }
         const lead = {
           name: formData.fullName.trim(),
           email: formData.email.trim(),

@@ -424,6 +424,28 @@ export default function StartAssetWealthDashboard({
           </div>
 
           <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", alignItems: "center" }}>
+            {!isAllDetailsSubmitted && (
+              <button
+                type="button"
+                onClick={() => (onJumpToStep ? onJumpToStep(2) : navigateTo("/start/01"))}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.35rem",
+                  padding: "0.45rem 0.9rem",
+                  borderRadius: "8px",
+                  backgroundColor: "#C65378",
+                  color: "#FFFFFF",
+                  fontSize: "0.72rem",
+                  fontWeight: 700,
+                  border: "none",
+                  cursor: "pointer",
+                  boxShadow: "0 2px 10px rgba(198, 83, 120, 0.28)",
+                }}
+              >
+                <span>{isHi ? "वसीयत बनाना शुरू करें (चरण 1) →" : "Start Will Questionnaire (Step 1) →"}</span>
+              </button>
+            )}
             <div
               style={{
                 padding: "0.35rem 0.7rem",

@@ -6,10 +6,10 @@ import SuccessionFeeCalculatorClient from "./SuccessionFeeCalculatorClient";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Succession Certificate Fees: Court Fee Calculator India",
+    absolute: "Succession Certificate Court Fee Calculator & Chart India",
   },
   description:
-    "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, statutory caps, and see how drafting a Will avoids.",
+    "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, ₹75k caps, and see how a valid Will avoids court costs.",
   keywords: [
     "succession certificate fees",
     "succession certificate court fees by state",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Succession Certificate Fees: Court Fee Calculator India",
+    title: "Succession Certificate Court Fee Calculator & Chart India",
     description:
-      "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, statutory caps, and see how drafting a Will avoids.",
+      "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, ₹75k caps, and see how a valid Will avoids court costs.",
     url: "https://www.willdrafting.in/tools/succession-certificate-court-fee-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Succession Certificate Fees: Court Fee Calculator India",
+    title: "Succession Certificate Court Fee Calculator & Chart India",
     description:
-      "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, statutory caps, and see how drafting a Will avoids.",
+      "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, ₹75k caps, and see how a valid Will avoids court costs.",
     images: ["https://www.willdrafting.in/images/succession-certificate-court-fee-calculator-og.jpg"],
   },
   robots: {
@@ -87,9 +87,9 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
         "@type": "WebPage",
         "@id": `${canonicalUrl}#webpage`,
         url: canonicalUrl,
-        name: "Succession Certificate Fees: Court Fee Calculator India",
+        name: "Succession Certificate Court Fee Calculator & Chart India",
         description:
-          "Calculate state-wise estate paper court fees in India. Check ad valorem rates, legal caps, and see how drafting a Will avoids.",
+          "Calculate state-wise succession certificate court fees in India. Check ad valorem rates, ₹75k caps, and see how a valid Will avoids court costs.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function SuccessionCertificateCourtFeeCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Free diagnostic tool to compute state-wise ad valorem court fees, legal caps, and procedural expenses under Part X of the.",
+          "Free diagnostic tool to compute state-wise ad valorem court fees, legal caps, and procedural expenses under Part X of the Indian Succession Act.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

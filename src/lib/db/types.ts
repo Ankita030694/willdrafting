@@ -21,6 +21,9 @@ export type LeadStatus =
 export type LeadSource =
   | "intake_popup"
   | "contact_form"
+  | "calculator_cta"
+  | "blog_inline_cta"
+  | "template_download"
   | "wizard_signup"
   | "login_signup"
   | "google"
@@ -33,6 +36,8 @@ export interface AccountBase {
   email: string;
   phone: string;
   state?: string;
+  /** First URL path where the visitor submitted a lead or signed up (e.g. "/tools/succession-certificate-court-fee-calculator"). */
+  landingPage?: string;
   /** Set when the account signed in with Google (Google asserts the email is verified). */
   googleId?: string | null;
   /** Login is passwordless (email OTP / Google); "verified" means email ownership was proven. */

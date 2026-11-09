@@ -16,12 +16,17 @@ Each template has an English (`en`) and Hindi (`hi`) version. Add both languages
 | 9 | `will_verified_download` | Utility | Now |
 | 10 | `lawyer_review_update` | Utility | Later: the app has no lawyer-review screen yet |
 | 11 | `consultation_confirmed` | Utility | Later: the app has no consultation booking yet |
+| 12 | `will_not_started` | Marketing | Now |
+| 13 | `will_left_midway` | Marketing | Now |
+| 14 | `will_left_midway_help` | Marketing | Now |
+| 15 | `will_final_reminder` | Marketing | Now |
+| 16 | `checkout_offer` | Marketing | Later: coupons aren't wired into checkout yet |
 
 Variables use positional format (`{{1}}`, `{{2}}` …), which every BSP supports. Button variables are numbered separately from body variables.
 
 ## Header images
 
-Templates 2–11 use an **Image** header (Authentication templates can't have one). Each has an English and a Hindi image in `public/images/whatsapp/`, 1200×628 JPG, all under 50 kB:
+Templates 2–16 use an **Image** header (Authentication templates can't have one). Each has an English and a Hindi image in `public/images/whatsapp/`, 1200×628 JPG, all under 50 kB:
 
 | Template | English | Hindi |
 |---|---|---|
@@ -35,6 +40,11 @@ Templates 2–11 use an **Image** header (Authentication templates can't have on
 | `will_verified_download` | `will_verified_download-en.jpg` | `will_verified_download-hi.jpg` |
 | `lawyer_review_update` | `lawyer_review_update-en.jpg` | `lawyer_review_update-hi.jpg` |
 | `consultation_confirmed` | `consultation_confirmed-en.jpg` | `consultation_confirmed-hi.jpg` |
+| `will_not_started` | `will_not_started-en.jpg` | `will_not_started-hi.jpg` |
+| `will_left_midway` | `will_left_midway-en.jpg` | `will_left_midway-hi.jpg` |
+| `will_left_midway_help` | `will_left_midway_help-en.jpg` | `will_left_midway_help-hi.jpg` |
+| `will_final_reminder` | `will_final_reminder-en.jpg` | `will_final_reminder-hi.jpg` |
+| `checkout_offer` | `checkout_offer-en.jpg` | `checkout_offer-hi.jpg` |
 
 - **When creating a template:** choose Header → Image and upload the matching file as the sample.
 - **When sending:** pass the public link as the header parameter, e.g. `https://www.willdrafting.in/images/whatsapp/payment_pending-hi.jpg` (live once deployed).
@@ -462,19 +472,216 @@ Please keep your will draft open during the call so you can make changes togethe
 
 ---
 
-## What utility can't cover
+## Marketing templates: "you left your will midway"
 
-These moments need **Marketing** templates (about ₹1.02 per message including GST). Meta lists them as retargeting "even if requested by users":
-- A second reminder to someone who signed up and never typed anything
-- A reminder after `draft_progress_saved` has already gone out
-- Any coupon or discount at checkout
+Utility templates can't send a reminder whose only purpose is to bring someone back. Meta lists these as retargeting "even if requested by users". Templates 12–16 cover that, as **Marketing** (about ₹1.02 per delivered message including GST).
 
-Until you decide to add marketing templates, cover these with the free service window. Every quick-reply tap above opens one, and a person replying from your side converts better than any template.
+### Rules for marketing templates
+
+1. **Only to people with `marketingConsent: true`** and no `unsubscribedAt`. The utility opt-in is not enough on its own: the consent text must say you may send reminders.
+2. **At most 1 marketing message every 3 days and 4 in total per person**, counting all of templates 12–16 together. After `will_final_reminder`, send nothing more until the person comes back on their own.
+3. **Stop the sequence at once** when the person saves the form again, pays, replies, or taps "Stop promotions". If they save again, the timeline restarts from their new last activity, but the lifetime limit of 4 still applies.
+4. **Meta may not deliver a marketing message** if the person already got too many from other businesses that day. If the delivery status says so, don't retry; just move to the next step in the timeline.
+5. **Keep the tone calm.** No fear ("what happens to your family if…"), no fake deadlines, no "last chance". Legal-services advertising is sensitive under BCI Rule 36, and your lawyers should approve this copy before submitting.
+6. **Every marketing template has Meta's "Stop promotions" button** (button type: Marketing opt-out). A tap must set `unsubscribedAt`.
+
+### When each one is sent
+
+| Situation | Utility (already above) | Then marketing |
+|---|---|---|
+| Signed up, typed nothing | `account_setup_steps` (+10 min) | `will_not_started` (+1 day) → `will_final_reminder` (+7 days) |
+| Started, left midway | `draft_progress_saved` (+2 h) | `will_left_midway` (+1 day) → `will_left_midway_help` (+4 days) → `will_final_reminder` (+8 days) |
+| Reached checkout, didn't pay | `payment_pending` (+30 min) | `checkout_offer` (+2 days, once coupons exist) → `will_final_reminder` (+8 days) |
+
+Times are from the person's last save (`will.updatedAt`) or, for checkout, from `order.createdAt`. "Started" means the will has anything beyond the signup details, i.e. `analyzeWillState(...).filledSections` has at least one item other than About You's auto-filled name, email and phone.
+
+---
+
+## 12. `will_not_started` — Marketing
+
+**When:** 1 day after signup, if the person never filled anything beyond the signup details.
+
+**Body (en)**
+```
+Hi {{1}}, your WillDrafting.in account is ready, but your will has not been started yet.
+
+It takes a few simple steps: your details, your family, your assets and who should receive them. Your answers save as you go, so you can do it in parts.
+```
+
+**Body (hi)**
+```
+नमस्ते {{1}}, आपका WillDrafting.in खाता तैयार है, लेकिन आपकी वसीयत अभी शुरू नहीं हुई है।
+
+इसके कुछ आसान चरण हैं: आपकी जानकारी, आपका परिवार, आपकी संपत्ति और उसे किसे मिलना चाहिए। आपके जवाब साथ-साथ सेव होते रहते हैं, इसलिए आप इसे थोड़ा-थोड़ा करके भर सकते हैं।
+```
+
+**Footer:** `WillDrafting.in`
+
+**Buttons**
+| Type | en | hi | Value |
+|---|---|---|---|
+| URL (static) | Start my will | मेरी वसीयत शुरू करें | `https://www.willdrafting.in/start/01` |
+| Quick reply | I have a question | मेरा एक सवाल है | — |
+| Marketing opt-out | Stop promotions | प्रचार बंद करें | — |
+
+**Variables**
+| Var | Source | Sample |
+|---|---|---|
+| `{{1}}` | First name | Ankita |
+
+---
+
+## 13. `will_left_midway` — Marketing
+
+**When:** 1 day after the last save, if the will was started but not finished.
+
+**Body (en)**
+```
+Hi {{1}}, you started your will on WillDrafting.in but stopped at the {{2}} step.
+
+Everything you filled in is saved, so you can pick up right where you left off. Finishing it means your family will know exactly what you wanted.
+```
+
+**Body (hi)**
+```
+नमस्ते {{1}}, आपने WillDrafting.in पर अपनी वसीयत शुरू की थी, लेकिन {{2}} चरण पर रुक गए।
+
+आपने जो कुछ भरा है वह सेव है, इसलिए आप वहीं से आगे भर सकते हैं जहाँ आपने छोड़ा था। इसे पूरा करने से आपके परिवार को साफ़ पता रहेगा कि आप क्या चाहते थे।
+```
+
+**Footer:** `WillDrafting.in`
+
+**Buttons**
+| Type | en | hi | Value |
+|---|---|---|---|
+| URL (dynamic) | Finish my will | वसीयत पूरी करें | `https://www.willdrafting.in/start/{{1}}` — sample `03` |
+| Quick reply | Help me finish | पूरा करने में मदद | — |
+| Marketing opt-out | Stop promotions | प्रचार बंद करें | — |
+
+**Variables**
+| Var | Source | Sample |
+|---|---|---|
+| Body `{{1}}` | First name | Ankur |
+| Body `{{2}}` | `QUESTIONNAIRE_STEPS` title of `will.lastStep` (`hindiTitle` for Hindi) | Assets Register / संपत्ति |
+| URL `{{1}}` | `getUrlForStep(will.lastStep)` without `/start/` | `03` |
+
+---
+
+## 14. `will_left_midway_help` — Marketing
+
+**When:** 4 days after the last save, if `will_left_midway` went out and nothing has changed since.
+
+**Body (en)**
+```
+Hi {{1}}, if you paused your will at the {{2}} step because you were not sure what to fill in, we can help.
+
+Reply to this message with your question and our team will guide you step by step. You can also ask us to call you back.
+```
+
+**Body (hi)**
+```
+नमस्ते {{1}}, अगर आपने अपनी वसीयत {{2}} चरण पर इसलिए रोकी है क्योंकि आपको पक्का नहीं था कि क्या भरना है, तो हम मदद कर सकते हैं।
+
+अपने सवाल के साथ इस संदेश का जवाब दें, हमारी टीम आपको हर कदम पर बताएगी। आप हमसे कॉल बैक के लिए भी कह सकते हैं।
+```
+
+**Footer:** `WillDrafting.in`
+
+**Buttons**
+| Type | en | hi | Value |
+|---|---|---|---|
+| Quick reply | Call me back | मुझे कॉल करें | — |
+| URL (dynamic) | Continue my will | वसीयत आगे भरें | `https://www.willdrafting.in/start/{{1}}` — sample `03` |
+| Marketing opt-out | Stop promotions | प्रचार बंद करें | — |
+
+**Variables**
+| Var | Source | Sample |
+|---|---|---|
+| Body `{{1}}` | First name | Tarlochan |
+| Body `{{2}}` | Step title of `will.lastStep` (`hindiTitle` for Hindi) | My Family / परिवार |
+| URL `{{1}}` | `getUrlForStep(will.lastStep)` without `/start/` | `02` |
+
+"Call me back" should alert your team (email or admin panel) with the person's name and phone, so someone actually calls within a working day.
+
+---
+
+## 15. `will_final_reminder` — Marketing
+
+**When:** the last message in any sequence (7–8 days after the last activity). Nothing is sent after this one.
+
+**Body (en)**
+```
+Hi {{1}}, this is our last reminder about the will you started on WillDrafting.in.
+
+Your account and everything you filled in will stay saved, so you can come back whenever you are ready. If you would like help, just reply to this message.
+```
+
+**Body (hi)**
+```
+नमस्ते {{1}}, आपकी WillDrafting.in पर शुरू की गई वसीयत के बारे में यह हमारा आख़िरी रिमाइंडर है।
+
+आपका खाता और आपने जो कुछ भरा है, वह सब सेव रहेगा, इसलिए आप जब चाहें वापस आ सकते हैं। अगर आपको मदद चाहिए, तो बस इस संदेश का जवाब दें।
+```
+
+**Footer:** `WillDrafting.in`
+
+**Buttons**
+| Type | en | hi | Value |
+|---|---|---|---|
+| URL (dynamic) | Open my will | मेरी वसीयत खोलें | `https://www.willdrafting.in/start/{{1}}` — sample `03` |
+| Quick reply | I need help | मुझे मदद चाहिए | — |
+| Marketing opt-out | Stop promotions | प्रचार बंद करें | — |
+
+**Variables**
+| Var | Source | Sample |
+|---|---|---|
+| Body `{{1}}` | First name | Adish |
+| URL `{{1}}` | `getUrlForStep(will.lastStep ?? 2)` without `/start/` | `03` |
+
+---
+
+## 16. `checkout_offer` — Marketing (submit later)
+
+**When:** 2 days after an unpaid order, once. **Coupons aren't wired into checkout yet:** `couponCode` is always `null` in `create-order`, though `src/lib/plans.ts` already has the 5% / 10% discount maths. Submit this after coupon codes can be entered and validated.
+
+**Body (en)**
+```
+Hi {{1}}, your will is one step away from being complete.
+
+Use code {{2}} to get {{3}}% off the {{4}} plan. The code is valid until {{5}}, and your draft stays saved either way.
+```
+
+**Body (hi)**
+```
+नमस्ते {{1}}, आपकी वसीयत पूरी होने से बस एक कदम दूर है।
+
+कोड {{2}} से {{3}}% की छूट पाएँ, यह छूट {{4}} प्लान पर है। यह कोड {{5}} तक मान्य है, और आपका ड्राफ़्ट हर हाल में सेव रहेगा।
+```
+
+**Footer:** `WillDrafting.in`
+
+**Buttons**
+| Type | en | hi | Value |
+|---|---|---|---|
+| Copy code | Copy code | कोड कॉपी करें | coupon, sample `WILL10` |
+| URL (static) | Complete payment | भुगतान पूरा करें | `https://www.willdrafting.in/start/12` |
+| Marketing opt-out | Stop promotions | प्रचार बंद करें | — |
+
+**Variables**
+| Var | Source | Sample |
+|---|---|---|
+| `{{1}}` | First name | Bhavya |
+| `{{2}}` | Coupon code | WILL10 |
+| `{{3}}` | Discount percent | 10 |
+| `{{4}}` | `PLANS[order.planId].name` | Auto Verified (Essential Will) |
+| `{{5}}` | Expiry date, 3 days out, formatted `8 Nov 2026` | 8 Nov 2026 |
 
 ## Submission checklist
 
 - [ ] Create a WhatsApp Business account, verify the business in Meta Business Manager, and add the sender number
 - [ ] Submit templates 1–9 in both `en` and `hi`, using the sample values in the tables
+- [ ] Have your lawyers approve the marketing copy (12–16), then submit 12–15 as Marketing
+- [ ] Make the consent checkbox text cover reminders, e.g. "Send me updates and reminders about my will on WhatsApp"
 - [ ] For dynamic URL buttons, give the full sample URL (for example `https://www.willdrafting.in/start/03`)
 - [ ] Subscribe to the `template_category_update` webhook so a re-label doesn't go unnoticed
 - [ ] Add the consent checkbox (unticked) to the popup and signup before sending templates 2–9

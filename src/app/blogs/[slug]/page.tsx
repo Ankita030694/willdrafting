@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BlogInlineLeadCta from "@/components/BlogInlineLeadCta";
 import { BLOG_ARTICLES, getArticleBySlug, getRelatedArticles } from "@/data/blogs";
 import { blogImagesCol, blogsCol } from "@/lib/db/collections";
 import type { BlogDoc } from "@/lib/db/types";
@@ -449,8 +450,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
 
     let safeMetaDesc = String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
-    if (safeMetaDesc.length > 146) {
-      safeMetaDesc = safeMetaDesc.slice(0, 144).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
+    if (safeMetaDesc.length > 154) {
+      safeMetaDesc = safeMetaDesc.slice(0, 152).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
     }
 
     return {
@@ -924,6 +925,8 @@ export default async function BlogSlugPage({ params }: PageProps) {
                     </div>
                   </figure>
                 )}
+
+                <BlogInlineLeadCta slug={canonicalSlug} />
 
                 {secondHalfHtml && (
                   <div

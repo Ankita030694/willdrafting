@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 import { Star, Loader2 } from "lucide-react";
 import { INDIAN_STATES_AND_UTS } from "@/lib/pincode";
@@ -79,13 +80,24 @@ export default function ContactForm() {
     setErrorMessage("");
 
     try {
+      const landingPage =
+        typeof window !== "undefined" ? window.location.pathname : undefined;
       const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, source: "contact_form" }),
+        body: JSON.stringify({ ...formData, source: "contact_form", landingPage }),
       });
 
       if (res.ok) {
+        try {
+          track("lead_captured", {
+            source: "contact_form",
+            page: landingPage || "/contact",
+            state: formData.state,
+          });
+        } catch {
+          // ignore analytics error
+        }
         setSavedLead({
           name: formData.name.trim(),
           email: formData.email.trim(),

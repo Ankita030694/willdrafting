@@ -541,9 +541,9 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               <FileCheck className="w-4 h-4" />
               <span>Visual Legal Documentation</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Framework: Business Succession &amp; Governance
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How our advocates align personal Wills, Articles of Association,
               Shareholders Agreements, and Family Constitutions under the
@@ -582,9 +582,9 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               <Landmark className="w-4 h-4" />
               <span>Statutory Comparison Table</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Succession Across Indian Enterprise Structures
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Different business forms have different rules when a founder
               dies. Compare how Indian law treats Sole Proprietorships,
@@ -642,9 +642,9 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Promoter Succession Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory 4-Step Promoter Succession Protocol
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Our corporate advocates follow a four-step path to protect your
               company assets and keep your business running smoothly:
@@ -703,9 +703,9 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               <FileCheck className="w-4 h-4" />
               <span>Drafting Architecture</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Essential Promoter Testamentary Equity Clause
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               A standard Will leaving &ldquo;all my assets&rdquo; fails for company
               shares. Banks and company boards reject vague wording. A promoter
@@ -818,9 +818,9 @@ FURTHERMORE, in the event of any conflict between the terms of any Shareholders'
                 <Users className="w-4 h-4" />
                 <span>Multi-Generational Business Governance</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Family Constitution &amp; Corporate Conflict Resolution
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Most Indian family businesses face severe conflict in the second
                 or third generation. Fights occur when non-working relatives
@@ -861,9 +861,9 @@ FURTHERMORE, in the event of any conflict between the terms of any Shareholders'
               <BookOpen className="w-4 h-4" />
               <span>Succession Law FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Business Succession
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Direct legal answers prepared by the{" "}
               <strong className="text-[#111827]">

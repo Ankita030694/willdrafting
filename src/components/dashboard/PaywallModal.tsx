@@ -72,7 +72,7 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
   const handleExploreDashboard = () => {
     setLoading(false);
     onClose();
-    router.push("/start/dashboard");
+    router.push("/start/01");
     router.refresh();
   };
 
@@ -338,7 +338,7 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
                 touchAction: "manipulation",
               }}
             >
-              Explore dashboard first (pay later)
+              Start drafting my Will first (pay later to download) →
             </button>
           </div>
         </div>

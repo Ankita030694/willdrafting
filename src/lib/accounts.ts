@@ -219,6 +219,7 @@ export interface EnsureLeadInput {
   name?: string;
   phone?: string | null;
   source: LeadSource;
+  landingPage?: string;
   message?: string;
   state?: string;
   marketingConsent?: boolean;
@@ -255,6 +256,7 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     if (input.name && !existing.name) patch.name = input.name;
     if (phone && !existing.phone) patch.phone = phone;
     if (input.state && !existing.state) patch.state = input.state;
+    if (input.landingPage && !existing.landingPage) patch.landingPage = input.landingPage;
     if (input.message) patch.message = input.message;
     if (input.interestedPlanId) patch.interestedPlanId = input.interestedPlanId;
     // Consent can be granted by a later form but is never silently revoked here.
@@ -274,6 +276,7 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     email,
     phone: input.phone || "",
     state: input.state,
+    landingPage: input.landingPage,
     authStatus: "unverified",
     status: "captured" as LeadStatus,
     source: input.source,
@@ -302,7 +305,10 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     return { outcome: "already_customer" };
   }
 
-  await logFunnelEvent(lead._id, email, "lead_captured", { source: input.source });
+  await logFunnelEvent(lead._id, email, "lead_captured", {
+    source: input.source,
+    ...(input.landingPage ? { landingPage: input.landingPage } : {}),
+  });
   return { outcome: "created", lead };
 }
 

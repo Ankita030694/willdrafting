@@ -592,9 +592,9 @@ export default function NriInheritedPropertySalePage() {
               <FileCheck className="w-4 h-4" />
               <span>Cross-Border Legal Advisory</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Roadmap: NRI Property Sale and Repatriation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Our lawyer and accountant team handles each phase of your property
               sale. We update land records. We prepare valid powers of attorney.
@@ -633,9 +633,9 @@ export default function NriInheritedPropertySalePage() {
               <Landmark className="w-4 h-4" />
               <span>Advisory Comparison Matrix</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Turnkey Advocate &amp; CA Service vs Disjointed Advisory
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Hiring separate advisors causes deal delays and frozen sale money.
               Compare our turnkey single-window service against traditional options:
@@ -694,9 +694,9 @@ export default function NriInheritedPropertySalePage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Turnkey Execution Lifecycle</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               The 5-Stage NRI Inheritance-to-Repatriation Protocol
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               From the day you inherit Indian assets to the moment funds reach
               your foreign bank account, our team manages every legal step:
@@ -776,9 +776,9 @@ export default function NriInheritedPropertySalePage() {
               <FileCheck className="w-4 h-4" />
               <span>Contractual Safeguards</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Mandatory FEMA &amp; Section 195 TDS Agreement Clause
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Standard sale agreements fail to protect NRI sellers. Without
               custom terms, buyers cut 23.92% tax or make cash payments that
@@ -830,9 +830,9 @@ export default function NriInheritedPropertySalePage() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Tax Optimization</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4">
+              <h3 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4">
                 Section 197 Form 13: Preventing Frozen Sale Funds
-              </h2>
+              </h3>
               <p className="text-[14.5px] leading-[1.7] text-[#374151] mb-4">
                 Resident sellers face only 1% tax deduction under Section
                 194-IA. For NRI sellers, Section 195 mandates a 20% cut plus
@@ -866,9 +866,9 @@ export default function NriInheritedPropertySalePage() {
                 <Globe2 className="w-4 h-4" />
                 <span>Cross-Border Compliance</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4">
+              <h3 className="text-xl sm:text-2xl font-medium text-[#111827] mb-4">
                 FEMA 15CA &amp; 15CB Protocol: Repatriating USD 1 Million
-              </h2>
+              </h3>
               <p className="text-[14.5px] leading-[1.7] text-[#374151] mb-4">
                 Under FEMA rules, an NRI or OCI can remit up to USD 1 Million
                 abroad every financial year. This money comes from your NRO bank
@@ -904,9 +904,9 @@ export default function NriInheritedPropertySalePage() {
                 <Users className="w-4 h-4" />
                 <span>Integrated High-Ticket NRI Advisory</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Turnkey Inheritance to Repatriation Advisory
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Do not let separate advisors delay your property sale or freeze
                 your inheritance. Our High Court advocates and Chartered
@@ -945,9 +945,9 @@ export default function NriInheritedPropertySalePage() {
               <BookOpen className="w-4 h-4" />
               <span>Statutory FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: NRI Property Repatriation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Direct legal answers prepared by the{" "}
               <strong className="text-[#111827]">

@@ -11,6 +11,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { MongoClient, ObjectId } from "mongodb";
 import sharp from "sharp";
@@ -340,7 +341,14 @@ async function run() {
         .sort({ date: -1 })
         .toArray();
       const publishedSlugs = new Set(existing.map((b) => b.slug));
-      const nextDay = planDays.find((d) => !publishedSlugs.has(d.slug));
+      const requestedDayArgIdx = args.indexOf("--day");
+      const requestedDayNum =
+        requestedDayArgIdx !== -1 && args[requestedDayArgIdx + 1]
+          ? Number(args[requestedDayArgIdx + 1])
+          : null;
+      const nextDay = requestedDayNum
+        ? planDays.find((d) => d.day === requestedDayNum && !publishedSlugs.has(d.slug))
+        : planDays.find((d) => !publishedSlugs.has(d.slug));
 
       if (!nextDay) {
         console.log(JSON.stringify({ status: "ALL_30_DAYS_COMPLETE", totalPublished: existing.length }, null, 2));
@@ -604,6 +612,83 @@ async function run() {
       const sitemapUpdated = updateSitemapDataFile(slug, title, istDate);
       console.log(`[Sitemap] Static sitemapData.ts updated: ${sitemapUpdated}`);
       console.log(`[Success] Live URL: https://www.willdrafting.in/blogs/${slug}`);
+
+      // Automatic Catch-Up Chaining Engine (Day 1 started on 2026-10-23)
+      if (process.env.SKIP_CATCHUP_SPAWN !== "1") {
+        const campaignStartMs = Date.UTC(2026, 9, 23, 0, 0, 0, 0); // 2026-10-23
+        const [y, m, d] = getIstDateString().split("-").map(Number);
+        const todayUtcMs = Date.UTC(y, m - 1, d, 0, 0, 0, 0);
+        const istHour = Number(
+          new Intl.DateTimeFormat("en-US", {
+            timeZone: "Asia/Kolkata",
+            hour: "numeric",
+            hour12: false,
+          }).format(new Date())
+        );
+        // Before 14:00 IST, catch up through yesterday's expected day; at/after 14:00 IST, catch up through today's expected day
+        const daysSinceStart = Math.floor((todayUtcMs - campaignStartMs) / 86400000) + 1;
+        const targetMaxDay = Math.min(
+          planDays.length,
+          istHour >= 14 ? daysSinceStart : Math.max(0, daysSinceStart - 1)
+        );
+
+        const publishedAfter = await blogsCol
+          .find({ status: "PUBLISHED" }, { projection: { slug: 1 } })
+          .toArray();
+        const publishedSlugsAfter = new Set(publishedAfter.map((b) => b.slug));
+        const overduePending = planDays.filter(
+          (item) => item.day <= targetMaxDay && !publishedSlugsAfter.has(item.slug)
+        );
+
+        if (overduePending.length > 0) {
+          const nextCatchup = overduePending[0];
+          console.log(
+            `\n[Catch-Up Engine] Detected ${overduePending.length} remaining missed day(s) <= Day ${targetMaxDay} (Next: Day ${nextCatchup.day} - "${nextCatchup.title}").`
+          );
+          const sidecarPath =
+            "/Users/amalegalsolutions/.gemini/config/sidecars/daily-seo-blog-publisher/sidecar.json";
+          if (fs.existsSync(sidecarPath)) {
+            const sidecarConfig = JSON.parse(fs.readFileSync(sidecarPath, "utf8"));
+            const promptText = Array.isArray(sidecarConfig.args)
+              ? sidecarConfig.args[sidecarConfig.args.length - 1]
+              : "";
+            const logDir = "/Users/amalegalsolutions/.gemini/antigravity/logs";
+            fs.mkdirSync(logDir, { recursive: true });
+            const outFd = fs.openSync(
+              path.join(logDir, "willdrafting-daily-blog-catchup.out.log"),
+              "a"
+            );
+            const errFd = fs.openSync(
+              path.join(logDir, "willdrafting-daily-blog-catchup.err.log"),
+              "a"
+            );
+            const agentApiBin = fs.existsSync(
+              "/Users/amalegalsolutions/.gemini/antigravity/bin/agentapi"
+            )
+              ? "/Users/amalegalsolutions/.gemini/antigravity/bin/agentapi"
+              : "agentapi";
+            const child = spawn(
+              agentApiBin,
+              ["new-conversation", "--model=pro", "--", promptText],
+              {
+                cwd: ROOT_DIR,
+                env: process.env,
+                detached: true,
+                stdio: ["ignore", outFd, errFd],
+              }
+            );
+            child.unref();
+            await new Promise((resolve) => setTimeout(resolve, 2000));
+            console.log(
+              `[Catch-Up Engine] Spawned chained Gemini 4 Argon conversation (PID: ${child.pid}) for Day ${nextCatchup.day}.`
+            );
+          }
+        } else {
+          console.log(
+            `[Catch-Up Engine] All scheduled WillDrafting blogs up through Day ${targetMaxDay} are 100% caught up!`
+          );
+        }
+      }
       return;
     }
 
