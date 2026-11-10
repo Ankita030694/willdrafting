@@ -530,21 +530,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/services/gift-deed-drafting-registration",
-        destination: "/templates/gift-deed-format-blood-relatives-india",
-        permanent: true,
-      },
-      {
-        source: "/services/nri-inherited-property-sale-repatriation",
-        destination: "/services/nri-will-india",
-        permanent: true,
-      },
-      {
-        source: "/services/iepf-unclaimed-shares-bank-recovery",
-        destination: "/services/succession-certificate",
-        permanent: true,
-      },
-      {
         source: "/tools/probate-court-fee-calculator-india",
         destination: "/tools/probate-court-fee-timeline-calculator",
         permanent: true,

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     absolute: "Family Business Succession Lawyer in India | WillDrafting",
   },
   description:
-    "Advocate counsel for family business succession planning lawyer india. Harmonize your Will with company AoA, SHA, and LLP agreements under Companies Act.",
+    "Family business succession planning lawyer in India. Harmonize your Will with company AoA, SHA, and LLP agreements under the Companies Act.",
   authors: [
     {
       name: "Advocate Anuj Anand Malik",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Family Business Succession Lawyer in India | WillDrafting",
     description:
-      "Advocate counsel for family business succession planning lawyer india. Harmonize your Will with company AoA, SHA, and LLP agreements under Companies Act.",
+      "Family business succession planning lawyer in India. Harmonize your Will with company AoA, SHA, and LLP agreements under the Companies Act.",
     url: "https://www.willdrafting.in/services/business-succession-family-constitution-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Family Business Succession Lawyer in India | WillDrafting",
     description:
-      "Advocate counsel for family business succession planning lawyer india. Harmonize your Will with company AoA, SHA, and LLP agreements under Companies Act.",
+      "Family business succession planning lawyer in India. Harmonize your Will with company AoA, SHA, and LLP agreements under the Companies Act.",
     images: [
       "/images/business-succession-family-constitution-lawyer-og.jpg",
     ],
@@ -128,7 +128,7 @@ const SUCCESSION_SCHEMA = {
       url: "https://www.willdrafting.in/services/business-succession-family-constitution-lawyer",
       name: "Family Business Succession Lawyer in India | WillDrafting",
       description:
-        "Advocate counsel for family business succession planning lawyer india. Harmonize your Will with company AoA, SHA, and LLP agreements under Companies Act.",
+        "Family business succession planning lawyer in India. Harmonize your Will with company AoA, SHA, and LLP agreements under the Companies Act.",
       datePublished: "2026-10-28",
       dateModified: "2026-10-28",
       author: {
