@@ -68,6 +68,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@willdrafting",
+    creator: "@willdrafting",
     title: "India's First Online Will Drafting Platform | WillDrafting.in",
     description:
       "India's first online will drafting platform. Make a legally valid online Will in India in minutes with instant court-ready PDF & advocate review by AMA Legal Solutions.",

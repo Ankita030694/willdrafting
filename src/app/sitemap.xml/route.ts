@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAllSitemapLinks, formatDateForXml } from "@/data/sitemapData";
 import { blogsCol } from "@/lib/db/collections";
+import { canonicalizeBlogSlug } from "@/lib/blogSlugs";
 
 const BASE_URL = "https://www.willdrafting.in";
 
@@ -62,7 +63,8 @@ export async function GET() {
 
     for (const b of dbBlogs) {
       if (!b.slug) continue;
-      const absoluteLoc = `${BASE_URL}/blogs/${b.slug}`;
+      const canonicalSlug = canonicalizeBlogSlug(b.slug);
+      const absoluteLoc = `${BASE_URL}/blogs/${canonicalSlug}`;
       const escapedLoc = escapeXml(absoluteLoc);
       if (!urlMap.has(escapedLoc)) {
         urlMap.set(escapedLoc, {

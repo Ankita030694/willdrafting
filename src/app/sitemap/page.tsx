@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SitemapClient from "./SitemapClient";
 import { getAllSitemapLinks, sanitizeHref, SitemapPageItem } from "@/data/sitemapData";
 import { blogsCol } from "@/lib/db/collections";
+import { canonicalizeBlogSlug, BLOG_TITLE_OVERRIDES } from "@/lib/blogSlugs";
 
 export const dynamic = "force-dynamic";
 
@@ -17,21 +18,36 @@ export const metadata: Metadata = {
     "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
   alternates: {
     canonical: "https://www.willdrafting.in/sitemap",
+    languages: {
+      "en-IN": "https://www.willdrafting.in/sitemap",
+      "x-default": "https://www.willdrafting.in/sitemap",
+    },
   },
   openGraph: {
     title: "WillDrafting Sitemap: Complete Legal Directory Index",
     description:
       "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
     url: "https://www.willdrafting.in/sitemap",
-    siteName: "WillDrafting",
+    siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://www.willdrafting.in/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "WillDrafting Sitemap - Complete Legal Directory Index",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@willdrafting",
+    creator: "@willdrafting",
     title: "WillDrafting Sitemap: Complete Legal Directory Index",
     description:
       "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
+    images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
   robots: {
     index: true,
@@ -70,11 +86,12 @@ export default async function SitemapPage() {
 
     for (const b of dbBlogs) {
       if (!b.slug || !b.title) continue;
-      const cleanHref = sanitizeHref(`/blogs/${b.slug}`);
+      const canonicalSlug = canonicalizeBlogSlug(b.slug);
+      const cleanHref = sanitizeHref(`/blogs/${canonicalSlug}`);
       if (!seenHrefs.has(cleanHref)) {
         seenHrefs.add(cleanHref);
         allLinks.push({
-          title: b.title,
+          title: BLOG_TITLE_OVERRIDES[canonicalSlug] || b.title,
           href: cleanHref,
           category: "Guides",
           date: b.date || new Date(b.updatedAt || Date.now()).toISOString().split("T")[0],
@@ -115,7 +132,7 @@ export default async function SitemapPage() {
     url: "https://www.willdrafting.in/sitemap",
     isPartOf: {
       "@type": "WebSite",
-      name: "WillDrafting",
+      name: "WillDrafting.in",
       url: "https://www.willdrafting.in",
     },
     about: {

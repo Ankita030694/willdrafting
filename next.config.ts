@@ -525,6 +525,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blogs/is-will-registration-mandatory-in-india-registration-charges-process-and-documents-2027",
+        destination: "/blogs/is-will-registration-mandatory-in-india",
+        permanent: true,
+      },
+      {
         source: "/services/gift-deed-drafting-registration",
         destination: "/templates/gift-deed-format-blood-relatives-india",
         permanent: true,

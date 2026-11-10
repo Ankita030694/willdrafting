@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { blogsCol } from "@/lib/db/collections";
 import { BLOG_ARTICLES } from "@/data/blogs";
+import {
+  canonicalizeBlogSlug,
+  BLOG_TITLE_OVERRIDES,
+  BLOG_DESCRIPTION_OVERRIDES,
+} from "@/lib/blogSlugs";
 
 export const dynamic = "force-dynamic";
 
@@ -60,11 +65,13 @@ export async function GET() {
     const seenSlugs = new Set<string>();
 
     for (const b of dbBlogs) {
-      seenSlugs.add(b.slug);
+      if (!b.slug) continue;
+      const canonicalSlug = canonicalizeBlogSlug(b.slug);
+      seenSlugs.add(canonicalSlug);
       items.push({
-        title: b.title,
-        slug: b.slug,
-        description: b.metaDescription || b.subtitle || "",
+        title: BLOG_TITLE_OVERRIDES[canonicalSlug] || b.title,
+        slug: canonicalSlug,
+        description: BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || b.metaDescription || b.subtitle || "",
         pubDate: toSafeUtcDateString(b.date, b.createdAt),
         author: b.author || "Advocate Anuj Anand Malik",
         category: b.category || "Indian Succession Law",

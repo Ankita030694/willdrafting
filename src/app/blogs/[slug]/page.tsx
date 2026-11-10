@@ -22,6 +22,14 @@ import BlogInlineLeadCta from "@/components/BlogInlineLeadCta";
 import { BLOG_ARTICLES, getArticleBySlug, getRelatedArticles } from "@/data/blogs";
 import { blogImagesCol, blogsCol } from "@/lib/db/collections";
 import type { BlogDoc } from "@/lib/db/types";
+import {
+  canonicalizeBlogSlug,
+  getBlogSlugLookupCandidates,
+  BLOG_TITLE_OVERRIDES,
+  BLOG_META_TITLE_OVERRIDES,
+  BLOG_H1_OVERRIDES,
+  BLOG_DESCRIPTION_OVERRIDES,
+} from "@/lib/blogSlugs";
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = true;
@@ -266,8 +274,12 @@ async function findMongoBlogBySlug(slug: string): Promise<BlogDoc | null> {
   try {
     const col = await blogsCol();
     const normalized = slug.toLowerCase().trim();
+    const candidateSlugs = getBlogSlugLookupCandidates(normalized);
     const doc = await col.findOne({
-      $or: [{ slug: normalized }, { aliases: normalized } as any],
+      $or: [
+        { slug: { $in: candidateSlugs } },
+        { aliases: { $in: candidateSlugs } as any },
+      ],
     });
     return doc || null;
   } catch {
@@ -278,22 +290,27 @@ async function findMongoBlogBySlug(slug: string): Promise<BlogDoc | null> {
 async function findRelatedMongoBlogs(currentSlug: string, count = 3) {
   try {
     const col = await blogsCol();
+    const normalized = currentSlug.toLowerCase().trim();
+    const excludedSlugs = getBlogSlugLookupCandidates(normalized);
     const docs = await col
-      .find({ slug: { $ne: currentSlug.toLowerCase().trim() }, status: "PUBLISHED" })
+      .find({ slug: { $nin: excludedSlugs }, status: "PUBLISHED" })
       .sort({ createdAt: -1 })
       .limit(count)
       .toArray();
     const validIds = await getValidBlogImageIds(docs.map((d) => d.image));
-    return docs.map((d) => ({
-      id: d._id.toString(),
-      slug: d.slug,
-      title: String(d.title || "Indian Succession Law Guide"),
-      lead: d.subtitle || d.metaDescription || "",
-      category: d.category || "Indian Succession Law",
-      readTime: d.readTime || d.readingTime || "10 min",
-      date: normalizeBlogDateString(d.date, d.createdAt),
-      imageSrc: resolveSafeBlogImage(d.image, validIds),
-    }));
+    return docs.map((d) => {
+      const canonicalSlug = canonicalizeBlogSlug(d.slug);
+      return {
+        id: d._id.toString(),
+        slug: canonicalSlug,
+        title: BLOG_TITLE_OVERRIDES[canonicalSlug] || String(d.title || "Indian Succession Law Guide"),
+        lead: BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || d.subtitle || d.metaDescription || "",
+        category: d.category || "Indian Succession Law",
+        readTime: d.readTime || d.readingTime || "10 min",
+        date: normalizeBlogDateString(d.date, d.createdAt),
+        imageSrc: resolveSafeBlogImage(d.image, validIds),
+      };
+    });
   } catch {
     return [];
   }
@@ -391,6 +408,10 @@ function processHtmlAndExtractToc(rawHtml: string, fallbackImageSrc?: string): {
     .replace(
       /\/blogs\/stridhan-property-rights-married-woman-india\b/gi,
       "/blogs/hindu-woman-property-rights-stridhan-will"
+    )
+    .replace(
+      /\/blogs\/is-will-registration-mandatory-in-india-registration-charges-process-and-documents-2027\b/gi,
+      "/blogs/is-will-registration-mandatory-in-india"
     );
 
   return { processedHtml: html, toc };
@@ -434,14 +455,38 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const dbBlog = await findMongoBlogBySlug(slug);
 
   if (dbBlog) {
-    const canonicalUrl = `https://www.willdrafting.in/blogs/${dbBlog.slug}`;
+    const rawCanonicalSlug = String(dbBlog.slug || slug);
+    const canonicalSlug = canonicalizeBlogSlug(rawCanonicalSlug);
+    const canonicalUrl = `https://www.willdrafting.in/blogs/${canonicalSlug}`;
     const validIds = await getValidBlogImageIds([dbBlog.image]);
     const safeImagePath = resolveSafeBlogImage(dbBlog.image, validIds);
     const imageUrl = safeImagePath.startsWith("http")
       ? safeImagePath
       : `https://www.willdrafting.in${safeImagePath.startsWith("/") ? "" : "/"}${safeImagePath}`;
 
-    let safeMetaTitle = String(dbBlog.metaTitle || dbBlog.title || "").trim();
+    const rawH1Title =
+      BLOG_H1_OVERRIDES[canonicalSlug] ||
+      BLOG_H1_OVERRIDES[slug.toLowerCase().trim()] ||
+      BLOG_TITLE_OVERRIDES[canonicalSlug] ||
+      String(dbBlog.title || "Indian Succession Law Guide");
+    const h1Title = rawH1Title.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
+
+    let safeMetaTitle =
+      BLOG_META_TITLE_OVERRIDES[canonicalSlug] ||
+      BLOG_META_TITLE_OVERRIDES[slug.toLowerCase().trim()] ||
+      String(dbBlog.metaTitle || "").trim() ||
+      BLOG_TITLE_OVERRIDES[canonicalSlug] ||
+      String(dbBlog.title || "").trim();
+
+    // Guard against "Page Titles: Same as H1" opportunity flagged by Screaming Frog
+    if (safeMetaTitle === h1Title) {
+      if (!/WillDrafting/i.test(safeMetaTitle) && safeMetaTitle.length <= 44) {
+        safeMetaTitle = `${safeMetaTitle} | WillDrafting`;
+      } else if (!/Guide/i.test(safeMetaTitle) && safeMetaTitle.length <= 51) {
+        safeMetaTitle = `${safeMetaTitle}: Guide`;
+      }
+    }
+
     if (safeMetaTitle.length > 58) {
       safeMetaTitle = safeMetaTitle.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
       if (safeMetaTitle.length > 58) {
@@ -449,9 +494,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     }
 
+<<<<<<< HEAD
     let safeMetaDesc = String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
     if (safeMetaDesc.length > 154) {
       safeMetaDesc = safeMetaDesc.slice(0, 152).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
+=======
+    let safeMetaDesc = BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
+    if (safeMetaDesc.length > 154) {
+      safeMetaDesc = safeMetaDesc.slice(0, 144).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
+>>>>>>> 8d7596f (fixed seo issues)
     }
 
     return {
@@ -511,8 +562,15 @@ export default async function BlogSlugPage({ params }: PageProps) {
     dbBlog?.image,
     dbBlog?.infographic,
   ]);
-  const title = String(dbBlog ? dbBlog.title || "Indian Succession Law Guide" : staticArticle!.title);
-  const lead = String(dbBlog ? dbBlog.subtitle || dbBlog.metaDescription || "" : staticArticle!.lead);
+  const rawCanonicalSlug = String(dbBlog ? dbBlog.slug || slug : staticArticle!.slug);
+  const canonicalSlug = canonicalizeBlogSlug(rawCanonicalSlug);
+  const rawTitle =
+    BLOG_H1_OVERRIDES[canonicalSlug] ||
+    BLOG_H1_OVERRIDES[slug.toLowerCase().trim()] ||
+    BLOG_TITLE_OVERRIDES[canonicalSlug] ||
+    String(dbBlog ? dbBlog.title || "Indian Succession Law Guide" : staticArticle!.title);
+  const title = rawTitle.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
+  const lead = BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || String(dbBlog ? dbBlog.subtitle || dbBlog.metaDescription || "" : staticArticle!.lead);
   const category = String(dbBlog ? dbBlog.category || "Indian Succession Law" : staticArticle!.category);
   const dateStr = dbBlog ? normalizeBlogDateString(dbBlog.date, dbBlog.createdAt) : staticArticle!.date;
   const readTime = String(dbBlog ? dbBlog.readTime || dbBlog.readingTime || "10 min" : staticArticle!.readTime);
@@ -528,8 +586,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
     dbBlog?.infographic,
     validBlogImageIds
   );
-  const canonicalSlug = String(dbBlog ? dbBlog.slug || slug : staticArticle!.slug);
-  const metaDescription = String(dbBlog ? dbBlog.metaDescription || dbBlog.subtitle || "" : staticArticle!.metaDescription);
+  const metaDescription = BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || String(dbBlog ? dbBlog.metaDescription || dbBlog.subtitle || "" : staticArticle!.metaDescription);
   const keywords = Array.isArray(dbBlog ? dbBlog.keywords : staticArticle!.keywords)
     ? (dbBlog ? dbBlog.keywords! : staticArticle!.keywords).filter(Boolean).map(String)
     : [];

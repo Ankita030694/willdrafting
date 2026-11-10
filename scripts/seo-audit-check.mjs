@@ -57,6 +57,20 @@ for (const file of pageFiles) {
       errors.push(`[Meta Description > 155 chars (${d.length})] ${rel}: "${d}"`);
     }
   }
+
+  // Check Open Graph and Twitter complete tags (prevent Social: Incomplete OG Tags & Incomplete X Cards)
+  if (content.includes("openGraph:")) {
+    const ogMatch = content.match(/openGraph\s*:\s*\{([\s\S]*?)\n\s*\},/);
+    if (ogMatch && !ogMatch[1].includes("images")) {
+      errors.push(`[Incomplete Open Graph: Missing og:image] ${rel}`);
+    }
+  }
+  if (content.includes("twitter:")) {
+    const twMatch = content.match(/twitter\s*:\s*\{([\s\S]*?)\n\s*\},/);
+    if (twMatch && twMatch[1].includes("summary_large_image") && !twMatch[1].includes("images")) {
+      errors.push(`[Incomplete Twitter Card: Missing twitter:image for summary_large_image] ${rel}`);
+    }
+  }
 }
 
 // 2. Check all .tsx files for H2 > 70, Non-Sequential H3/H4 before H2, <Image fill />, Alt > 100, and broken /service/ links

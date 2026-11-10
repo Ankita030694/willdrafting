@@ -91,3 +91,35 @@ Every new page, component, blog post, location guide, legal tool, and template c
   - Prefer 1–2 syllable words over heavy multi-syllable words where legal precision is unaffected (`use` instead of `utilize`, `help` instead of `assistance`, `papers` instead of `documentation`, `heirs` instead of `beneficiaries`, `Will maker` instead of `testator`, `needed` instead of `mandatory`, `also` instead of `additionally`/`furthermore`, `so` instead of `consequently`, `check` instead of `verification`/`authentication`, `land and flats` instead of `immovable properties`).
   - Keep sentences concise (**8–16 words** on average) and include plain-English summary cards (`Why Write a Will Now?`, `Who Needs One?`, `How We Help You`) on pages with long statutory or multi-syllable city/state names (such as *Thiruvananthapuram*, *Tiruchirappalli*, *Arunachal Pradesh*, *Lakshadweep*, *Uttarakhand*, *Amaravati*).
   - Verify readability via `node scripts/seo-audit-check.mjs`.
+
+---
+
+## 10. Social: Open Graph & X (Twitter) Cards (`Social: Incomplete OG Tags` / `Social: Incomplete X Cards` Prevention)
+- **Four Mandatory Open Graph Tags:** Every page with explicit `openGraph` metadata MUST declare all four standard Open Graph properties:
+  1. `og:url` (canonical full HTTPS URL)
+  2. `og:title` (clean 30–60 character page title)
+  3. `og:description` (70–154 character meta description)
+  4. `og:image` (complete image object with `url`, `width`, `height`, and `alt`)
+- **Open Graph Images:** Always specify the absolute image URL, standard dimensions (1200×630), and descriptive alt text:
+  ```ts
+  openGraph: {
+    title: "...",
+    description: "...",
+    url: "https://www.willdrafting.in/...",
+    siteName: "WillDrafting.in",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.willdrafting.in/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "...",
+      },
+    ],
+  },
+  ```
+- **X (Twitter) Card Completeness:**
+  - When `card: "summary_large_image"` is declared, `images` is strictly required (`images: ["https://www.willdrafting.in/desktopusp.jpg"]`).
+  - Declare `site: "@willdrafting"` and `creator: "@willdrafting"`.
+  - Never define `twitter: { card: "summary_large_image" }` without `images`.

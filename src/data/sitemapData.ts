@@ -512,6 +512,15 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 1.0,
   },
+  // ==================== 10-11-2026 ====================
+  {
+    title: "Is Will Registration Mandatory in India? Fees & Process",
+    href: "/blogs/is-will-registration-mandatory-in-india",
+    category: "Guides",
+    date: "10-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
   // ==================== 30-10-2026 ====================
   {
     title: "How to Prove a Forged Will in Court in India",

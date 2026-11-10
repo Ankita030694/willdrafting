@@ -9,6 +9,11 @@ import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
 import { blogImagesCol, blogsCol } from "@/lib/db/collections";
+import {
+  canonicalizeBlogSlug,
+  BLOG_TITLE_OVERRIDES,
+  BLOG_DESCRIPTION_OVERRIDES,
+} from "@/lib/blogSlugs";
 
 export const dynamic = "force-dynamic";
 
@@ -241,12 +246,13 @@ export default async function BlogsPage() {
 
     for (const b of dbBlogs) {
       if (!b.slug) continue;
-      seenSlugs.add(b.slug.toLowerCase());
+      const canonicalSlug = canonicalizeBlogSlug(b.slug);
+      seenSlugs.add(canonicalSlug.toLowerCase());
       unifiedCards.push({
         id: b._id.toString(),
-        slug: b.slug,
-        title: b.title,
-        lead: b.subtitle || b.metaDescription || "",
+        slug: canonicalSlug,
+        title: BLOG_TITLE_OVERRIDES[canonicalSlug] || b.title,
+        lead: BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || b.subtitle || b.metaDescription || "",
         category: b.category || "Indian Succession Law",
         readTime: b.readTime || b.readingTime || "10 min",
         date: b.date || new Date(b.createdAt).toLocaleDateString("en-US", {
