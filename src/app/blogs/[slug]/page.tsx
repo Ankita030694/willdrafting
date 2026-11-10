@@ -494,15 +494,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     }
 
-<<<<<<< HEAD
-    let safeMetaDesc = String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
-    if (safeMetaDesc.length > 154) {
-      safeMetaDesc = safeMetaDesc.slice(0, 152).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
-=======
     let safeMetaDesc = BLOG_DESCRIPTION_OVERRIDES[canonicalSlug] || String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
     if (safeMetaDesc.length > 154) {
       safeMetaDesc = safeMetaDesc.slice(0, 144).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
->>>>>>> 8d7596f (fixed seo issues)
     }
 
     return {
