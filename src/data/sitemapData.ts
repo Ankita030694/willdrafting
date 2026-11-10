@@ -3563,6 +3563,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Bank Locker Access After Death (RBI Rules) & Gold in a Will",
+    href: "/blogs/bank-locker-and-gold-jewellery-inheritance-rules-india",
+    category: "Guides",
+    date: "2026-11-10",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
