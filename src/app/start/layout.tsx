@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
   alternates: {
     canonical: "https://www.willdrafting.in/start",
+    languages: {
+      "en-IN": "https://www.willdrafting.in/start",
+      "x-default": "https://www.willdrafting.in/start",
+    },
   },
   openGraph: {
     title: "Online Will Drafting Questionnaire | WillDrafting.in",

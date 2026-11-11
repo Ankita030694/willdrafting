@@ -32,17 +32,17 @@ const GIFT_SCENARIOS: GiftScenario[] = [
     icon: "heart",
     heading: "Senior Citizen Gift Deed with Lifetime Protection",
     challengeSummary:
-      "Elderly parents gifting a self-acquired house to a child risk eviction or abandonment if the deed is unconditional.",
+      "Elderly parents who gift a self-owned home to a child risk eviction or neglect if the deed has no safety clause.",
     legalMechanism:
-      "Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act (MWPSC Act, 2007), a gift deed can mandate that the child provide basic amenities and physical needs. The Supreme Court in Sudesh Chhikara (2022) ruled this condition must be explicitly written into the deed.",
+      "Under Section 23 of the Senior Citizens Act, 2007, a gift deed can require the child to provide food, shelter, and medical care. The Supreme Court in Sudesh Chhikara (2022) ruled this condition must be written clearly into the deed.",
     statutoryPrecedent:
       "Section 23 MWPSC Act, 2007 & Sudesh Chhikara v. Ramti Devi (2022 SC)",
     recommendedInstrument:
       "Senior-Safe Conditional Gift Deed with Section 23 Revocation Covenant",
     checklist: [
-      "Include explicit condition of filial care and medical maintenance",
-      "Reserve exclusive lifetime right of residence for senior parents",
-      "Specify Maintenance Tribunal jurisdiction for summary deed cancellation",
+      "Add a clear clause for parent care and medical support",
+      "Keep the full right to live in the home for life",
+      "Name the Maintenance Tribunal to cancel the deed if neglected",
     ],
   },
   {
@@ -51,17 +51,17 @@ const GIFT_SCENARIOS: GiftScenario[] = [
     icon: "users",
     heading: "State Concessional Stamp Duty for Blood Relatives",
     challengeSummary:
-      "Standard property transfers trigger high stamp duty of 5% to 8% plus 1% registration fees across Indian states.",
+      "Normal property transfers incur high stamp duty of 5% to 8% plus 1% registration fees in most states.",
     legalMechanism:
-      "Most Indian states (such as Maharashtra, Uttar Pradesh, Delhi, and Karnataka) offer substantial stamp duty concessions for gift deeds executed between defined blood relatives (parent, child, spouse, sibling). Under Section 56(2)(x) of the Income Tax Act, genuine gifts between relatives are 100% tax-free.",
+      "Most Indian states (like Maharashtra, Uttar Pradesh, Delhi, and Karnataka) offer big stamp duty discounts for close family members. Under Section 56(2)(x) of the Income Tax Act, genuine gifts between relatives are 100% tax-free.",
     statutoryPrecedent:
       "State Stamp Acts & Section 56(2)(x) of the Income Tax Act, 1961",
     recommendedInstrument:
       "Concessional Blood-Relative Gift Deed with SRO Registration Support",
     checklist: [
-      "Attach verified government relationship proof (Aadhaar, Passport, Birth Certificate)",
-      "Calculate applicable state-specific concessional stamp duty",
-      "Obtain Sub-Registrar biometric registration slot with two witnesses",
+      "Attach government family proof (Aadhaar, Passport, or Birth Certificate)",
+      "Check your state's lower stamp duty rate for family",
+      "Book a registry slot for thumb scans with two witnesses",
     ],
   },
   {
@@ -70,17 +70,17 @@ const GIFT_SCENARIOS: GiftScenario[] = [
     icon: "alert",
     heading: "Conditional Gift Deed under Section 126 TPA",
     challengeSummary:
-      "Donors want the property transfer to be tied to a specific future milestone without violating Section 10 rules on absolute restraint.",
+      "Givers want the property transfer tied to a future event without breaking legal rules on property transfer.",
     legalMechanism:
-      "Under Section 126 of the Transfer of Property Act, 1882, a gift may be suspended or revoked upon the happening of a specified event not depending on the donor's will. Our advocates ensure the condition does not violate Section 10 or Section 12.",
+      "Under Section 126 of the Transfer of Property Act, 1882, a gift can be revoked if a set future event happens. The event must not depend solely on the giver's will. Our advocates ensure the clause stays valid in court.",
     statutoryPrecedent:
       "Section 126 Transfer of Property Act, 1882 & Supreme Court Precedents",
     recommendedInstrument:
       "Bespoke Conditional Gift Deed with Defeasance Clause",
     checklist: [
-      "Ensure condition is independent of donor's arbitrary will",
-      "Structure clear reversion of title if conditional milestone fails",
-      "Draft compliant covenants that pass Sub-Registrar scrutiny",
+      "Make sure the condition does not depend only on the giver's will",
+      "Set a clear return of ownership if the condition is not met",
+      "Draft legal clauses that pass Sub-Registrar checks",
     ],
   },
   {
@@ -89,17 +89,17 @@ const GIFT_SCENARIOS: GiftScenario[] = [
     icon: "file",
     heading: "Strategic Choice: Immediate Gift vs Testamentary Will",
     challengeSummary:
-      "Families remain undecided whether to transfer property immediately during life or bequeath it through a Will.",
+      "Families often wonder whether to gift a home right now or pass it on later through a Will.",
     legalMechanism:
-      "A gift deed creates immediate, irrevocable ownership with higher upfront stamp duty. A Will takes effect only after death, costs nominal registration fees, and remains fully revocable throughout the testator's lifetime. Many families combine both: gifting one home while protecting remaining assets in a Will.",
+      "A gift deed gives ownership right away and cannot be revoked easily. It also requires upfront stamp duty. A Will takes effect only after death, costs small fees, and can be changed anytime. Many families use both: gifting one home now and passing other assets in a Will.",
     statutoryPrecedent:
       "TPA 1882 s. 122 vs Indian Succession Act, 1925 s. 63",
     recommendedInstrument:
       "Dual Asset Strategy: Select Gift Deed + Comprehensive Registered Will",
     checklist: [
-      "Evaluate donor's financial independence before giving away key assets",
-      "Compare stamp duty costs versus probate delays in your city",
-      "Draft a complementary Will on WillDrafting for remaining assets",
+      "Check your financial security before giving away key assets",
+      "Compare stamp duty costs with probate timelines in your city",
+      "Make a Will on WillDrafting for the rest of your assets",
     ],
   },
 ];
@@ -124,14 +124,14 @@ export default function GiftDeedInteractive() {
   if (timing === "after-death") {
     recommendationTitle = "Execute a Registered Legal Will Instead of Gift Deed";
     recommendationDetails =
-      "If you wish to retain complete ownership, rental income, and control during your lifetime, a Will is vastly superior. A Will is fully revocable, attracts nominal stamp duty, and avoids immediate property divestment.";
+      "If you want to keep full ownership, rental income, and control during your life, a Will is the better choice. A Will can be changed anytime, costs low registration fees, and lets you keep your home.";
     recommendationStampDuty = "Nominal (₹0 to ₹500 across most Indian states)";
     recommendationNextStep = "/start";
     recommendationActionText = "Draft Online Court-Ready Will";
   } else if (seniorProtection === "yes") {
     recommendationTitle = "Senior-Safe Gift Deed with Section 23 Protection Clause";
     recommendationDetails =
-      "Never execute an unconditional gift deed. Our advocates embed statutory Section 23 covenants guaranteeing lifetime residence and medical care, empowering you to revoke the deed before the Senior Citizens Tribunal if neglected.";
+      "Do not sign a simple gift deed without protection. Our advocates add Section 23 terms that guarantee your right to live in your home and receive care. If neglected, you can ask the Tribunal to cancel the deed.";
     recommendationStampDuty =
       recipient === "blood"
         ? "Concessional state rate for blood relatives (e.g. ₹200 to 2% depending on state)"
@@ -141,14 +141,14 @@ export default function GiftDeedInteractive() {
   } else if (recipient === "other") {
     recommendationTitle = "Standard Gift Deed to Non-Relative (High Tax Alert)";
     recommendationDetails =
-      "Gifting immovable property to a non-relative attracts full state stamp duty (5% to 8%) plus 1% SRO fees. Furthermore, the recipient faces up to 30% income tax under Section 56(2)(x) on the stamp valuation.";
+      "Gifting property to a non-relative requires full stamp duty (5% to 8%) plus 1% registry fees. Also, the receiver may face up to 30% income tax on the property value under Section 56(2)(x).";
     recommendationStampDuty = "Full ad-valorem stamp duty + 30% Section 56(2)(x) tax for recipient";
     recommendationNextStep = "/contact";
     recommendationActionText = "Consult Property Advocate";
   } else {
     recommendationTitle = "Concessional Blood-Relative Gift Deed with SRO Registration";
     recommendationDetails =
-      "You qualify for concessional state stamp duty rates and complete income tax exemption under Section 56(2)(x). Our High Court advocates draft clean schedules, calculate exact duties, and coordinate Sub-Registrar biometrics.";
+      "You qualify for low state stamp duty rates and zero income tax under Section 56(2)(x). Our High Court advocates draft clear property details, calculate exact fees, and assist with your Sub-Registrar visit.";
     recommendationStampDuty =
       "Concessional rate (₹200 flat in Maharashtra, ₹5,000 in UP for select relatives, or 1% to 3%)";
     recommendationNextStep = "/contact";
@@ -162,9 +162,9 @@ export default function GiftDeedInteractive() {
           <Scale className="w-4 h-4" />
           <span>Interactive Gift Deed Navigator</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Explore Gift Deed Scenarios by Family Need
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Different family property gifts require distinct statutory safeguards.
           Select your scenario below to understand governing Indian laws, legal

@@ -85,35 +85,35 @@ export const metadata: Metadata = {
 const IEPF_FAQS = [
   {
     q: "Why do shares get transferred to the IEPF Authority under Indian law?",
-    a: "Under Section 124(6) of the Companies Act 2013, if dividends on shares remain unpaid or unclaimed for seven consecutive years, the company must transfer both the unpaid dividends and the underlying shares to the Investor Education and Protection Fund (IEPF).",
+    a: "Under Section 124(6) of the Companies Act 2013, if dividends on shares are unpaid or unclaimed for seven years in a row, the company must transfer both the unpaid dividends and the shares to the IEPF.",
   },
   {
     q: "Can legal heirs claim shares of a deceased shareholder from IEPF?",
-    a: "Yes. Legal heirs can recover these shares. However, heirs must first execute transmission with the company Registrar and Transfer Agent (RTA). After obtaining an Entitlement Letter, heirs file Form IEPF-5 on the Ministry of Corporate Affairs (MCA) portal.",
+    a: "Yes. Legal heirs can reclaim these shares. First, heirs must complete share transmission with the company RTA to get an Entitlement Letter. Then, heirs file Form IEPF-5 on the MCA portal.",
   },
   {
     q: "When is a court Succession Certificate mandatory for IEPF claims?",
-    a: "Under SEBI transmission regulations and IEPF guidelines, a court Succession Certificate, Probate, or Letters of Administration is mandatory when the portfolio value exceeds ₹5 Lakh for physical shares, or ₹15 Lakh for demat securities, or whenever heirs raise conflicting claims.",
+    a: "Under SEBI and IEPF rules, a court Succession Certificate or Probate is needed if paper shares exceed ₹5 Lakh in value, or demat shares exceed ₹15 Lakh, or if family members dispute the claim.",
   },
   {
     q: "Why do claims handled by non-lawyer recovery brokers often fail?",
-    a: "Unregulated brokers charge 15% to 25% commissions. Yet, they cannot represent clients in civil courts. When RTAs demand a Succession Certificate or reject Form IEPF-5 due to legal discrepancies, brokers cannot file court petitions, leaving claims abandoned.",
+    a: "Private brokers charge heavy 15% to 25% fees. But they cannot appear in court. When companies or the IEPF demand a court Succession Certificate, brokers cannot file the court petition, leaving claims stuck.",
   },
   {
     q: "How do families reclaim dormant bank deposits from the RBI DEA Fund?",
-    a: "Bank accounts and fixed deposits inactive for over ten years transfer to the RBI Depositor Education and Awareness (DEA) Fund under Section 26A of the Banking Regulation Act. Legal heirs can reclaim funds through their home branch using UDGAM reference numbers and verified succession documents.",
+    a: "Bank accounts and fixed deposits inactive for over ten years transfer to the RBI DEA Fund under Section 26A of the Banking Regulation Act. Legal heirs can claim the money back through their bank branch using UDGAM portal search records and succession papers.",
   },
   {
     q: "What role does Form ISR-4 play in physical share transmission?",
-    a: "Under SEBI circulars, companies no longer issue physical share certificates for duplicate or transmission claims. Instead, the RTA issues a Letter of Confirmation via Form ISR-4. Claimants then submit this letter to their Depository Participant to credit shares directly into their demat account.",
+    a: "Companies no longer print paper share certificates for duplicate or transmission claims. Instead, the RTA issues a Letter of Confirmation via Form ISR-4. You submit this letter to your depository participant to credit the shares into your demat account.",
   },
   {
     q: "What is the typical timeline to recover shares from IEPF?",
-    a: "Standard IEPF recovery takes 4 to 8 months. This includes RTA transmission (30 to 45 days), court succession proceedings if required (60 to 90 days), and company verification with MCA approval (60 days under Rule 7 of IEPF Rules).",
+    a: "Standard IEPF recovery takes 4 to 8 months. This includes RTA share transmission (30 to 45 days), court succession orders if needed (60 to 90 days), and company verification with MCA approval (60 days under Rule 7).",
   },
   {
     q: "How are name spelling mismatches resolved for deceased shareholders?",
-    a: "If the name on old share certificates differs slightly from government records or PAN, our advocates prepare a formal Name Variation Affidavit sworn before a Magistrate or Notary, accompanied by newspaper publications and Gazette notifications when necessary.",
+    a: "If the name on old share certificates differs slightly from government IDs, our advocates draft a Name Variation Affidavit sworn before a Notary or Magistrate, backed by newspaper ads if required.",
   },
 ];
 
@@ -314,39 +314,39 @@ const IEPF_SCHEMA = {
 const COMPARISON_ROWS = [
   {
     feature: "Legal Qualification",
-    brokers: "Non-lawyer commercial agents / recovery touts",
-    diy: "Individual claimant without procedural expertise",
-    amaLegal: "Licensed High Court advocates & corporate attorneys",
+    brokers: "Unlicensed agents and commission brokers",
+    diy: "Claimant filing alone without legal help",
+    amaLegal: "Licensed High Court advocates & legal counsel",
   },
   {
     feature: "Succession Certificate (>₹15L)",
-    brokers: "Cannot file court petitions; client abandoned",
-    diy: "Must hire separate unknown litigation lawyers",
-    amaLegal: "In-house civil litigation under Section 372 ISA",
+    brokers: "Cannot file court petitions; claims get stuck",
+    diy: "Must find and pay a separate court lawyer",
+    amaLegal: "Direct court filing for Succession Certificate",
   },
   {
     feature: "Commercial Fee Structure",
-    brokers: "Exorbitant 15% to 25% of total portfolio value",
-    diy: "Unpredictable out-of-pocket court and stamp fees",
-    amaLegal: "Transparent, milestone-based fixed professional fees",
+    brokers: "High cut of 15% to 25% of your total share value",
+    diy: "Uncertain costs for stamps, notary, and court fees",
+    amaLegal: "Clear, fixed fees tied to project milestones",
   },
   {
     feature: "RTA Defect Rectification",
-    brokers: "Frequent rejections on signature and name mismatches",
-    diy: "Protracted postal delays and repeated RTA query letters",
-    amaLegal: "Direct RTA legal liaison and Gazette affidavit drafting",
+    brokers: "Frequent rejections for name or signature errors",
+    diy: "Long postal delays and repeated objection letters",
+    amaLegal: "Direct lawyer follow-up and fast affidavit drafting",
   },
   {
     feature: "MCA Form IEPF-5 Approval",
-    brokers: "High rejection rate due to defective physical packets",
-    diy: "Risk of claim rejection under Rule 7(3) time limits",
-    amaLegal: "100% compliant e-filing with Nodal Officer tracking",
+    brokers: "High rejection rate due to faulty document sets",
+    diy: "Risk of claim rejection under strict 60-day limits",
+    amaLegal: "Careful e-filing with company Nodal Officer tracking",
   },
   {
     feature: "Demat Credit Guarantee",
-    brokers: "No accountability once broker fee is extracted",
-    diy: "Stuck on Form ISR-4 Letter of Confirmation steps",
-    amaLegal: "End-to-end service until shares reflect in demat",
+    brokers: "No help once broker takes upfront fees",
+    diy: "Stuck getting the demat Letter of Confirmation",
+    amaLegal: "Complete support until shares show in your demat",
   },
 ];
 
@@ -429,13 +429,12 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Over ₹1.8 Lakh Crore sits frozen in the IEPF and RBI DEA Fund.
-                When dividends remain unpaid for seven years, companies transfer
-                shares to the government under Section 124 of the Companies Act
-                2013. Families face rejected claims due to missing certificates,
-                name mismatches, and demands for court succession orders. Our
-                High Court advocates handle court succession, RTA transmission,
-                Form IEPF-5 filing, and demat account credit.
+                Over ₹1.8 Lakh Crore sits locked in the IEPF and RBI DEA Fund.
+                When dividends go unpaid for seven years, companies transfer the
+                shares to the government. Families face rejected claims due to lost
+                share certificates, name mismatches, or missing court orders. Our
+                High Court advocates help you get court succession orders, complete
+                RTA share transfer, file Form IEPF-5, and credit shares to your demat account.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -486,26 +485,25 @@ export default function IepfUnclaimedSharesRecoveryPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Mandatory Court Succession Orders:</strong> RTAs and
-                    the IEPF Authority reject claims exceeding ₹5 Lakh (physical)
-                    or ₹15 Lakh (demat) unless backed by a civil court Succession
-                    Certificate or Probate.
+                    <strong>Court Orders Are Required:</strong> Companies and the
+                    IEPF reject claims over ₹5 Lakh for paper shares or ₹15 Lakh
+                    for demat shares without a court Succession Certificate or Probate.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Entitlement Letter Requirement:</strong> Filing Form
-                    IEPF-5 without completing RTA transmission and getting an
-                    Entitlement Letter causes immediate rejection under Rule 7.
+                    <strong>Entitlement Letter Needed First:</strong> You cannot file
+                    Form IEPF-5 directly. You must first complete share transmission
+                    with the company RTA and get an Entitlement Letter.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Unregulated Broker Exploitation:</strong> Agents
-                    demand 15% to 25% cuts but abandon claims when courts or RTAs
-                    demand legal representation.
+                    <strong>Broker Commission Risks:</strong> Private brokers take
+                    15% to 25% cuts. Yet they cannot represent you in court when
+                    legal orders are needed.
                   </span>
                 </li>
               </ul>
@@ -538,9 +536,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               Visual Legal Framework: IEPF Recovery Architecture
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How integrated legal advocacy unites civil court succession orders,
-              RTA transmission protocols, and MCA Form IEPF-5 filing to restore
-              unclaimed family wealth directly into your demat account:
+              See how our lawyers combine court succession orders,
+              RTA share transfer, and Form IEPF-5 filing to recover
+              your family wealth into your demat account:
             </p>
           </div>
 
@@ -555,8 +553,8 @@ export default function IepfUnclaimedSharesRecoveryPage() {
             />
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
-                <strong>Figure 1:</strong> Procedural framework for IEPF share
-                recovery under Companies Act 2013 and SEBI transmission circulars.
+                <strong>Figure 1:</strong> Steps to recover shares from IEPF
+                under the Companies Act 2013 and SEBI transmission rules.
               </span>
               <span>
                 Source: WillDrafting Editorial Team &amp; AMA Legal Solutions
@@ -578,10 +576,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               Broker vs High Court Advocate: Recovery Comparison
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              IEPF recovery requires both administrative liaison and civil court
-              litigation. Compare how unregulated brokers, unassisted claimants,
-              and licensed High Court advocates resolve complex transmission
-              cases:
+              Recovering IEPF shares needs both company paperwork and court
+              filings. Compare how brokers, direct claimants, and High Court
+              advocates handle recovery:
             </p>
           </div>
 
@@ -641,9 +638,8 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               Statutory 4-Step Roadmap: Folio to Demat Credit
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Recovering unclaimed shares from IEPF follows a strict statutory
-              sequence under the Companies Act 2013 and SEBI regulations. Our
-              advocates guide you through every milestone:
+              Recovering shares from IEPF follows four clear steps under the
+              Companies Act and SEBI rules. Our advocates guide you through every step:
             </p>
           </div>
 
@@ -651,23 +647,23 @@ export default function IepfUnclaimedSharesRecoveryPage() {
             {[
               {
                 step: "01",
-                title: "Folio Audit & RTA Transmission",
-                desc: "We verify share folio numbers, inspect dividend payment ledgers, submit Form ISR-1, ISR-2, and execute Form B indemnity bonds with the company RTA to obtain an official Entitlement Letter.",
+                title: "Folio Check & RTA Transfer",
+                desc: "We check share folio numbers and dividend records. We submit Form ISR-1, ISR-2, and indemnity bonds to the company RTA to get your official Entitlement Letter.",
               },
               {
                 step: "02",
-                title: "Civil Court Succession Order",
-                desc: "For portfolios above ₹5 Lakh or disputed intestate estates, our High Court advocates petition the District Judge under Section 372 of the Indian Succession Act to obtain a conclusive Succession Certificate.",
+                title: "Court Succession Certificate",
+                desc: "For share portfolios over ₹5 Lakh or when heirs lack a Will, our advocates file a petition before the civil court to obtain a legal Succession Certificate.",
               },
               {
                 step: "03",
-                title: "MCA Form IEPF-5 E-Filing",
-                desc: "We draft and upload Form IEPF-5 on the MCA portal, pay statutory challans, and serve physical verification packets to the company Nodal Officer for statutory approval within 60 days.",
+                title: "MCA Form IEPF-5 Filing",
+                desc: "We prepare and upload Form IEPF-5 on the MCA portal, pay government challans, and send verified paper sets to the company Nodal Officer.",
               },
               {
                 step: "04",
                 title: "Demat Credit & Cash Payout",
-                desc: "The IEPF Authority issues a formal refund sanction. Shares are credited directly into your active demat account, and accumulated cash dividends transfer to your linked bank account.",
+                desc: "The IEPF Authority approves the claim. Your shares are credited directly to your demat account, and unpaid cash dividends are sent to your bank.",
               },
             ].map((item) => (
               <div
@@ -703,10 +699,9 @@ export default function IepfUnclaimedSharesRecoveryPage() {
               Mandatory Indemnity Bond and Legal Affidavit Clauses
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Rule 7 of the IEPF Rules 2016 requires every claimant to execute a
-              statutory Indemnity Bond on non-judicial stamp paper. This bond
-              protects the Authority against rival claims. Inspect our standard
-              advocate-verified clause:
+              Rule 7 of the IEPF Rules 2016 requires every claimant to sign an
+              Indemnity Bond on stamp paper. This bond protects against rival
+              claims. Read our advocate-verified clause below:
             </p>
           </div>
 
@@ -723,7 +718,7 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
 2. AND WHEREAS the original registered holder, Late [Deceased Name], passed away on [Date of Death], leaving behind the Claimant(s) as lawful surviving legal heirs, as evidenced by [Death Certificate / Succession Certificate / Legal Heir Certificate No.];
 
 3. NOW THEREFORE, in consideration of the IEPF Authority releasing and transferring the said shares and accumulated dividends to my active Demat Account No. [DP ID & Client ID], I/We hereby jointly and severally agree to indemnify and hold harmless the IEPF Authority, the Central Government, and M/s [Company Name Ltd] against all actions, suits, claims, costs, losses, and damages which may be brought against or incurred by them by reason of such transfer or release to me.`}
-            explanation="This clause complies strictly with Schedule II of the IEPF (Accounting, Audit, Transfer and Refund) Rules, 2016 and SEBI Form B transmission guidelines. The bond must be executed on non-judicial stamp paper as prescribed by state stamp laws, witnessed by two independent adults, and notarized."
+            explanation="This clause strictly follows Schedule II of the IEPF Rules 2016 and SEBI Form B transmission guidelines. The bond must be signed on state stamp paper, witnessed by two adult witnesses, and notarized."
           />
 
           {/* SEBI Form ISR-4 Transmission Checklist Box */}
@@ -734,7 +729,7 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
               </h3>
               <p className="text-xs text-[#55636D] mb-4">
                 The RTA issues an Entitlement Letter or Letter of Confirmation
-                only when all listed statutory documents are provided:
+                only when all listed documents are provided:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-[13.5px] text-[#374151]">
                 <div className="flex items-start gap-2.5">
@@ -747,35 +742,35 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Form ISR-2:</strong> Banker verification of
+                    <strong>Form ISR-2:</strong> Bank verification of
                     claimant signature with branch seal and employee code.
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Form ISR-4:</strong> Request for issuance of Letter
-                    of Confirmation for dematerialization.
+                    <strong>Form ISR-4:</strong> Request to issue Letter
+                    of Confirmation for demat credit.
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                   <span>
                     <strong>Client Master List (CML):</strong> Active demat
-                    account statement verified by your depository participant.
+                    statement verified by your broker or depository.
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                   <span>
                     <strong>Original Share Certificates:</strong> Physical
-                    certificates, or police NCR and newspaper ad for lost scrips.
+                    certificates, or police lost report and newspaper ad if lost.
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                   <span>
-                    <strong>Judicial Succession Order:</strong> Succession
+                    <strong>Court Succession Order:</strong> Succession
                     Certificate or Probate when portfolio exceeds statutory limits.
                   </span>
                 </div>
@@ -794,9 +789,8 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
                   Need to Calculate Court Fees for a Succession Certificate?
                 </h4>
                 <p className="text-xs sm:text-[13px] text-[#55636D]">
-                  Use our free state-specific calculator to determine the exact
-                  court fee and stamp duty payable across Indian High Courts and
-                  District Courts.
+                  Use our free tool to find the exact court fee and stamp duty
+                  payable in your state before filing a court petition.
                 </p>
               </div>
             </div>
@@ -825,17 +819,15 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Under Section 124(5) of the Companies Act 2013, any dividend
-                unpaid or unclaimed for seven years transfers to the Investor
-                Education and Protection Fund. Crucially, Section 124(6) decrees
-                that all shares in respect of which dividends remain unpaid for
-                seven consecutive years also transfer to the IEPF.
+                unpaid for seven years moves to the IEPF. In addition, Section
+                124(6) states that shares with unpaid dividends for seven straight
+                years must also move to the IEPF.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                Under Rule 7 of the IEPF (Accounting, Audit, Transfer and Refund)
-                Rules 2016, the Authority can refund shares and dividends only to
-                verified titleholders. By combining High Court succession orders
-                with RTA Entitlement Letters, AMA Legal Solutions protects legal
-                heirs from endless bureaucratic delays.
+                Under Rule 7 of the IEPF Rules 2016, the Authority refunds
+                shares and dividends only to verified owners or legal heirs.
+                By combining court succession orders with RTA Entitlement Letters,
+                our advocates help families avoid long delays and claim back their assets.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -901,7 +893,7 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
                 Related Indian Succession &amp; Securities Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore court succession procedures, probate counsel, and asset
+                Explore court succession steps, probate counsel, and share
                 transmission tools:
               </p>
             </div>
@@ -959,13 +951,10 @@ I/We, [Full Name of Claimant], son/daughter of [Late Father/Mother Name], residi
               · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
-              This legal guide is prepared under the Companies Act, 2013 (ss. 124
-              &amp; 125), the IEPF (Accounting, Audit, Transfer and Refund)
-              Rules, 2016, the SEBI Transmission Master Circular
-              (SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65), the Banking Regulation
-              Act, 1949 (s. 26A), and the Indian Succession Act, 1925 (ss.
-              370-372). This content provides statutory education and does not
-              substitute individualized legal counsel.
+              This legal guide is based on the Companies Act, 2013, the IEPF
+              Rules, 2016, SEBI transmission circulars, the Banking Regulation
+              Act, 1949, and the Indian Succession Act, 1925. This content is for
+              legal education and does not replace direct advocate advice.
             </p>
           </div>
           <a

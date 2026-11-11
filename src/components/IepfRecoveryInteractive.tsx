@@ -32,18 +32,18 @@ const IEPF_SCENARIOS: IepfScenario[] = [
     icon: "landmark",
     heading: "Deceased Parent Physical Shares Transferred to IEPF",
     challengeSummary:
-      "Physical share certificates of blue-chip companies sat in lockers. Seven years of unpaid dividends caused compulsory transfer to IEPF under Section 124(6).",
+      "Old paper share certificates sat in family lockers. Seven years of unpaid dividends caused the shares to transfer to IEPF under Section 124(6).",
     legalMechanism:
-      "Heirs cannot claim directly through standard broker portals. You must complete legal transmission with the company RTA first. The RTA issues an Entitlement Letter. Next, file Form IEPF-5 on the MCA portal with verified succession documents.",
+      "Heirs cannot claim directly through standard share brokers. You must first complete transmission with the company RTA to get an Entitlement Letter. Then file Form IEPF-5 on the MCA portal with verified succession papers.",
     statutoryAuthority:
       "Companies Act 2013 s. 124(6) & IEPF Rules 2016 Rule 7",
     recommendedPathway:
       "Integrated RTA Transmission + MCA Form IEPF-5 Verification Protocol",
     checklist: [
-      "Original physical share certificates or Letter of Confirmation (ISR-4)",
-      "Succession Certificate or Court Probate for portfolios above ₹5 Lakh",
-      "Client Master List (CML) of claimant active demat account",
-      "Self-attested Aadhaar and PAN with CKYC registration",
+      "Original paper share certificates or Letter of Confirmation (ISR-4)",
+      "Court Succession Certificate or Probate if shares exceed ₹5 Lakh",
+      "Client Master List (CML) of claimant's active demat account",
+      "Self-attested Aadhaar and PAN cards with KYC",
     ],
   },
   {
@@ -52,18 +52,18 @@ const IEPF_SCENARIOS: IepfScenario[] = [
     icon: "coins",
     heading: "Dormant Accounts and Inoperative Fixed Deposits in RBI DEA",
     challengeSummary:
-      "Savings accounts, recurring deposits, or mature fixed deposits unclaimed for over 10 years are transferred to RBI Depositor Education Fund.",
+      "Savings accounts or fixed deposits inactive for over 10 years transfer to the RBI Depositor Education Fund.",
     legalMechanism:
-      "Funds stay credited to RBI DEA Fund under Section 26A of Banking Regulation Act. Legal heirs can reclaim the full principal plus compounded interest through the home branch using UDGAM portal reference numbers and legal heir certifications.",
+      "Funds remain held in the RBI DEA Fund. Legal heirs can reclaim the full money plus interest through the bank branch using UDGAM portal numbers and legal heir papers.",
     statutoryAuthority:
       "Banking Regulation Act 1949 s. 26A & RBI DEA Fund Scheme 2014",
     recommendedPathway:
       "UDGAM Search Audit + Branch Deceased Claim Legal Representation",
     checklist: [
-      "Deceased Death Certificate issued by Municipal Registrar",
+      "Death Certificate issued by the local registrar",
       "UDGAM Unclaimed Deposit Reference Number (UDRN)",
-      "Bank Form A/B indemnity bond executed on state stamp paper",
-      "Court Succession Certificate if deposit exceeds branch limit",
+      "Bank indemnity bond signed on state stamp paper",
+      "Court Succession Certificate if the deposit exceeds branch limits",
     ],
   },
   {
@@ -72,18 +72,18 @@ const IEPF_SCENARIOS: IepfScenario[] = [
     icon: "filesearch",
     heading: "Lost Original Certificates and Name or Signature Mismatch",
     challengeSummary:
-      "Physical certificates are missing, damaged, or the deceased shareholder name spelling differs from government identity documents and PAN card.",
+      "Paper certificates are lost or damaged, or the name spelling on certificates differs from PAN or Aadhaar cards.",
     legalMechanism:
-      "SEBI regulations require duplicate share generation via Form ISR-4. This requires executing an Indemnity Bond (Form B), an Affidavit (Form A), and publishing public loss notices in national and vernacular newspapers before filing Form IEPF-5.",
+      "SEBI rules require duplicate share steps via Form ISR-4. This needs an Indemnity Bond (Form B), an Affidavit (Form A), and public notices in daily newspapers before filing Form IEPF-5.",
     statutoryAuthority:
       "SEBI Master Circular 2022 & SEBI LODR Regulation 39",
     recommendedPathway:
       "Duplicate Folio Issuance + Judicial Gazette Name Rectification",
     checklist: [
-      "Police Non-Cognizable Report (NCR) or FIR for lost certificates",
-      "Newspaper advertisement copies in English and regional daily",
-      "Form ISR-2 signature verification certified by bank manager",
-      "Affidavit for name variation signed before Notary or Magistrate",
+      "Police lost-document report (NCR or FIR)",
+      "Newspaper notice copies in English and local language",
+      "Form ISR-2 signature verification signed by bank manager",
+      "Affidavit for name difference signed before a Notary",
     ],
   },
   {
@@ -92,18 +92,18 @@ const IEPF_SCENARIOS: IepfScenario[] = [
     icon: "scale",
     heading: "High-Value Portfolio Above ₹15 Lakh Without a Will",
     challengeSummary:
-      "When market value of physical shares exceeds ₹5 Lakh or demat shares exceed ₹15 Lakh without a registered Will, RTAs reject indemnity-only claims.",
+      "When market value of paper shares exceeds ₹5 Lakh or demat shares exceed ₹15 Lakh without a Will, companies reject claims without court orders.",
     legalMechanism:
-      "Under SEBI Transmission Master Circulars, RTAs and the IEPF Authority require a court-granted Succession Certificate or Letters of Administration. Non-advocate brokers cannot represent clients in civil courts to obtain these decrees.",
+      "Under SEBI rules, companies and the IEPF Authority require a court Succession Certificate or Probate. Private brokers cannot represent clients in court to get these orders.",
     statutoryAuthority:
       "Indian Succession Act 1925 s. 370-372 & SEBI Circular 2022",
     recommendedPathway:
       "High Court or District Court Succession Petition + RTA Filing",
     checklist: [
-      "Family tree affidavit detailing all Class-I surviving heirs",
-      "Valuation certificate of shares as of the date of court petition",
-      "Court citation notices in daily newspapers for 30-day objection period",
-      "Payment of state court fees for final grant of certificate",
+      "Family tree affidavit listing all surviving legal heirs",
+      "Share valuation report as of the court filing date",
+      "Court public notices in daily papers for the 30-day notice period",
+      "Payment of state court fees to receive the final court certificate",
     ],
   },
 ];
@@ -133,20 +133,20 @@ export default function IepfRecoveryInteractive() {
   if (heirConsensus === "disputed") {
     recommendationTitle = "High Court Succession Suit & Advocate Mediation";
     recommendationDetails =
-      "When siblings or co-heirs dispute ownership of shares or bank accounts, RTAs and banks freeze processing. Our High Court advocates initiate formal succession litigation under the Indian Succession Act or family mediation to secure clear judicial title.";
+      "When family members dispute who owns the shares or bank accounts, banks and companies stop processing. Our High Court advocates file a court succession case or help with family mediation to secure clear legal title.";
     recommendationMandatoryDocs =
       "Court Succession Certificate or Civil Court Compromise Decree";
   } else if (assetType === "rbi-bank") {
     if (portfolioValue === "under-5l") {
       recommendationTitle = "Direct Branch Settlement via UDGAM Portal Protocol";
       recommendationDetails =
-        "For bank deposits under branch discretionary limits (usually ₹5 Lakh), heirs can recover funds through bank deceased claim packets, Form A indemnity bonds, and survivor member certificates without civil court litigation.";
+        "For bank deposits under branch limits (usually ₹5 Lakh), heirs can claim funds directly through the bank branch using deceased claim forms and indemnity bonds without going to court.";
       recommendationMandatoryDocs =
         "Bank Indemnity Bond, Legal Heir Certificate, KYC of all claimants";
     } else {
       recommendationTitle = "District Court Succession Certificate + Branch Recovery";
       recommendationDetails =
-        "For deposits exceeding branch caps or inoperative accounts without registered nomination, banks strictly mandate a Succession Certificate under Section 372 of the Indian Succession Act to discharge liabilities.";
+        "For deposits above branch limits or accounts without a nominee, banks require a Succession Certificate from the civil court to release the funds safely.";
       recommendationMandatoryDocs =
         "Succession Certificate from District Judge + UDGAM Reference ID";
     }
@@ -155,13 +155,13 @@ export default function IepfRecoveryInteractive() {
     if (portfolioValue === "under-5l") {
       recommendationTitle = "Fast-Track SEBI Indemnity Transmission + IEPF-5 Filing";
       recommendationDetails =
-        "For physical share portfolios under ₹5 Lakh, SEBI circulars permit transmission using Form ISR-1, ISR-2, Form B Indemnity Bond, and Form C NoC from other legal heirs. Once the RTA issues an Entitlement Letter, we submit MCA Form IEPF-5.";
+        "For paper share holdings under ₹5 Lakh, SEBI rules allow transfer using Form ISR-1, ISR-2, an indemnity bond, and NoC letters from other heirs. Once the RTA issues an Entitlement Letter, we file Form IEPF-5.";
       recommendationMandatoryDocs =
         "SEBI Form A, Form B, Form C, Client Master List, MCA Form IEPF-5";
     } else {
       recommendationTitle = "Integrated Court Succession Petition + Form IEPF-5 Legal Relief";
       recommendationDetails =
-        "For portfolios exceeding ₹5 Lakh (physical) or ₹15 Lakh (demat), RTAs and the IEPF Authority require a court-issued Succession Certificate or Probate. Our High Court team obtains the court order and manages RTA liaison and IEPF approvals end-to-end.";
+        "For portfolios over ₹5 Lakh (paper shares) or ₹15 Lakh (demat), companies and the IEPF require a court Succession Certificate or Probate. Our High Court team secures the court order and handles all company and IEPF filings.";
       recommendationMandatoryDocs =
         "Court Succession Certificate, RTA Entitlement Letter, MCA Form IEPF-5, Original Share Certificates";
     }
@@ -174,9 +174,9 @@ export default function IepfRecoveryInteractive() {
           <Scale className="w-4 h-4" />
           <span>Interactive Asset Recovery Pathways</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           IEPF Share Recovery Scenarios and Legal Pathways
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Recovering unclaimed shares from IEPF or dormant bank funds from RBI
           depends on your portfolio value, deceased investor documentation, and

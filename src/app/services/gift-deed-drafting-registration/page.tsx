@@ -85,35 +85,35 @@ export const metadata: Metadata = {
 const GIFT_DEED_FAQS = [
   {
     q: "Is registration of a gift deed mandatory for immovable property in India?",
-    a: "Yes. Under Section 123 of the Transfer of Property Act, 1882 and Section 17(1)(a) of the Registration Act, 1908, a gift of immovable property is legally void without a registered instrument signed by the donor, accepted by the donee, and attested by at least two independent witnesses.",
+    a: "Yes. Under Section 123 of the Transfer of Property Act, 1882, gifting a house or land is void without registration. The deed must be signed by the giver, accepted by the recipient, and signed by at least two witnesses.",
   },
   {
     q: "What is Section 23 of the Senior Citizens Act, and how does it protect parents?",
-    a: "Section 23 of the MWPSC Act, 2007 allows senior citizens to revoke a property gift if the child fails to provide basic amenities and physical needs. The Supreme Court in Sudesh Chhikara (2022) affirmed that this maintenance condition must be clearly stated in the registered deed.",
+    a: "Section 23 of the Senior Citizens Act, 2007 lets parents cancel a property gift if a child stops caring for them. The Supreme Court in Sudesh Chhikara (2022) ruled that this care term must be written directly into the registered deed.",
   },
   {
     q: "What is the stamp duty on a gift deed between blood relatives across Indian states?",
-    a: "Many states offer major rebates for blood relatives. In Maharashtra, stamp duty for residential property gifted to children is a flat fee of ₹200. In Uttar Pradesh, it is capped at ₹5,000 plus registration cess for direct lineage, compared to standard 5% to 7% for non-relatives.",
+    a: "Many states offer low stamp duty for close family. In Maharashtra, gifting a home to children costs a flat fee of ₹200. In Uttar Pradesh, the duty is capped at ₹5,000 for direct family, compared to standard 5% to 7% for others.",
   },
   {
     q: "Is a gift deed for property taxable under the Indian Income Tax Act?",
-    a: "No, if executed between defined relatives. Under Section 56(2)(x) of the Income Tax Act, 1961, properties received from lineal ascendants, descendants, spouses, or siblings are 100% tax-free. Gifts to non-relatives exceeding ₹50,000 attract full income tax in the hands of the donee.",
+    a: "No, not between close relatives. Under Section 56(2)(x) of the Income Tax Act, gifts from parents, children, spouses, or siblings are 100% tax-free. Gifts to non-relatives above ₹50,000 are taxed as income for the receiver.",
   },
   {
     q: "Can a registered gift deed be cancelled if the recipient misbehaves later?",
-    a: "An unconditional gift deed cannot be cancelled unilaterally once accepted. However, if the deed includes a Section 23 maintenance covenant or a valid Section 126 conditional revocation clause, the senior donor can petition the Maintenance Tribunal or civil court to cancel the transfer.",
+    a: "A simple gift deed cannot be cancelled once accepted. But if the deed includes a Section 23 care term or a Section 126 condition, elderly parents can apply to the Maintenance Tribunal to revoke the transfer and reclaim the home.",
   },
   {
     q: "What is the key difference between a property gift deed and a registered Will?",
-    a: "A gift deed transfers ownership immediately during your lifetime, requires upfront state stamp duty, and divests the donor of title. A Will takes effect only after the testator passes away, remains fully revocable during life, and incurs only nominal registration charges.",
+    a: "A gift deed transfers ownership right away during your life. It needs stamp duty and gives up your title. A Will takes effect only after death, can be changed anytime, and costs only small registration fees.",
   },
   {
     q: "Can an ancestral property or HUF coparcenary share be gifted in India?",
-    a: "A coparcener cannot gift undivided ancestral coparcenary property to an outsider without the written consent of all other coparceners. However, a coparcener can voluntarily surrender or relinquish their share to other co-heirs, or gift their separate, self-acquired property freely.",
+    a: "No one can gift undivided ancestral family property to an outsider without the written consent of all coparceners. However, a family member can give up their share to other co-heirs, or freely gift self-earned property.",
   },
   {
     q: "Does a gift deed require the signature and physical presence of the recipient?",
-    a: "Yes. Section 122 of the Transfer of Property Act requires acceptance by or on behalf of the donee during the lifetime of the donor. At the Sub-Registrar office, both donor and donee must present government identity proofs and complete biometric fingerprint verification.",
+    a: "Yes. Section 122 of the Transfer of Property Act requires the recipient to accept the gift while the giver is alive. At the Sub-Registrar office, both donor and recipient must show ID proof and complete biometric thumb scans.",
   },
 ];
 
@@ -314,44 +314,44 @@ const COMPARISON_ROWS = [
   {
     feature: "Governing Statute",
     unconditionalGift: "Transfer of Property Act, 1882 (s. 122) & Registration Act, 1908",
-    seniorSafeGift: "TPA, 1882 s. 122 read with MWPSC Act, 2007 s. 23",
+    seniorSafeGift: "TPA, 1882 s. 122 read with Senior Citizens Act, 2007 s. 23",
     registeredWill: "Indian Succession Act, 1925 (s. 63) & Personal Succession Laws",
   },
   {
     feature: "When Title Transfers",
-    unconditionalGift: "Immediately upon SRO registration and physical delivery",
-    seniorSafeGift: "Immediately, subject to express statutory filial care covenants",
-    registeredWill: "Only after testator's demise (zero lifetime divestment)",
+    unconditionalGift: "Immediately upon SRO registration and delivery",
+    seniorSafeGift: "Immediately, but subject to written parent care terms",
+    registeredWill: "Only after death. You keep full ownership for life.",
   },
   {
     feature: "Compulsory SRO Registration",
     unconditionalGift: "Yes (Compulsory under Section 17(1)(a) of Registration Act)",
-    seniorSafeGift: "Yes (Compulsory under Section 17(1)(a) with Section 23 recital)",
-    registeredWill: "Optional under Section 18(e), highly recommended for evidentiary proof",
+    seniorSafeGift: "Yes (Compulsory with Section 23 senior care clause)",
+    registeredWill: "Optional under Section 18(e), but recommended for solid proof",
   },
   {
     feature: "State Stamp Duty Liability",
-    unconditionalGift: "State blood-relative concession or standard 5% to 8% ad-valorem",
-    seniorSafeGift: "State blood-relative concession or standard 5% to 8% ad-valorem",
-    registeredWill: "Zero stamp duty; nominal SRO registration fee (₹0 to ₹500)",
+    unconditionalGift: "State family discount or standard 5% to 8% duty",
+    seniorSafeGift: "State family discount or standard 5% to 8% duty",
+    registeredWill: "Zero stamp duty; small SRO registry fee (₹0 to ₹500)",
   },
   {
     feature: "Lifetime Revocability",
-    unconditionalGift: "Irrevocable once accepted by donee; cannot be cancelled alone",
-    seniorSafeGift: "Revocable before Maintenance Tribunal if child neglects parent",
-    registeredWill: "100% revocable anytime during testator's lifetime",
+    unconditionalGift: "Permanent once accepted. Donor cannot cancel it alone.",
+    seniorSafeGift: "Can be revoked before the Tribunal if child neglects parent.",
+    registeredWill: "Can be changed or cancelled anytime during your life.",
   },
   {
     feature: "Protection Against Eviction",
-    unconditionalGift: "None; child obtains unrestricted title and can seek possession",
-    seniorSafeGift: "Absolute; deed explicitly reserves lifetime exclusive residence",
-    registeredWill: "Complete; testator remains 100% owner until death",
+    unconditionalGift: "None. Child gets full title and can ask parent to leave.",
+    seniorSafeGift: "Strong. Deed gives parent full right to live in home for life.",
+    registeredWill: "Complete. You remain full owner until your death.",
   },
   {
     feature: "Municipal Mutation Acceptance",
-    unconditionalGift: "Immediate Khata and Dakhil Kharij mutation in recipient's name",
-    seniorSafeGift: "Immediate mutation with recorded senior life-interest encumbrance",
-    registeredWill: "Mutation occurs only post-death with death certificate and NOC",
+    unconditionalGift: "Immediate municipal mutation in receiver's name.",
+    seniorSafeGift: "Immediate mutation with senior lifetime stay recorded.",
+    registeredWill: "Mutation happens only after death with death certificate.",
   },
 ];
 
@@ -442,16 +442,14 @@ export default function GiftDeedDraftingRegistrationPage() {
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Transferring real estate to your child or spouse requires careful
-                legal drafting. Under Section 122 of the Transfer of Property
-                Act, a standard gift deed is permanent once accepted. Elderly
-                parents face sudden eviction if their deed lacks protective
-                terms. Our High Court advocates draft senior-safe gift deeds with{" "}
+                Giving real estate to your child or spouse needs clear legal drafting.
+                Under Section 122 of the Transfer of Property Act, a gift deed is
+                permanent once accepted. Elderly parents risk eviction if the deed has
+                no safety terms. Our High Court advocates draft senior-safe gift deeds with{" "}
                 <strong className="text-[#111827]">
                   Section 23 Senior Citizens Act protection
                 </strong>
-                , optimize state stamp duty, and complete Sub-Registrar
-                registration smoothly.
+                , reduce your stamp duty, and complete Sub-Registrar registration smoothly.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -502,27 +500,27 @@ export default function GiftDeedDraftingRegistrationPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Unconditional Wording Means No Return:</strong> Online
-                    drafts transfer property outright. If a child stops caring for
-                    elderly parents later, the parent cannot revoke the gift in
+                    <strong>Simple Wording Means No Return:</strong> Online
+                    drafts give away property outright. If a child stops caring for
+                    elderly parents later, the parent cannot cancel the gift in
                     civil court.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Supreme Court Precedent in Sudesh Chhikara:</strong> The
-                    Supreme Court ruled that Maintenance Tribunals cannot cancel a
-                    gift deed unless the deed contains an explicit maintenance
+                    <strong>Supreme Court Rule in Sudesh Chhikara:</strong> The
+                    Supreme Court held that tribunals cannot cancel a
+                    gift deed unless the deed contains a clear written care
                     clause.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Missing Blood-Relative Concession:</strong> Failing to
-                    attach verified family proof triggers standard 7% stamp duty
-                    instead of concessional state rates.
+                    <strong>Missing Family Proof Costs More:</strong> Failing to
+                    attach verified family proof triggers the standard 7% stamp duty
+                    instead of low state rates for relatives.
                   </span>
                 </li>
               </ul>
@@ -555,9 +553,9 @@ export default function GiftDeedDraftingRegistrationPage() {
               Visual Legal Framework: Gift Deed vs Registered Will
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              How an advocate-drafted property gift deed safeguards your title,
-              guarantees senior citizen maintenance, and complies with Sub-Registrar
-              registration mandates:
+              Learn how an advocate-drafted gift deed protects your title,
+              guarantees care for senior parents, and fulfills Sub-Registrar
+              registration rules:
             </p>
           </div>
 
@@ -573,7 +571,7 @@ export default function GiftDeedDraftingRegistrationPage() {
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span>
                 <strong>Figure 1:</strong> Overview of Gift Deed drafting under
-                the Transfer of Property Act, 1882 and Section 23 of the MWPSC Act, 2007.
+                the Transfer of Property Act, 1882 and Section 23 of the Senior Citizens Act, 2007.
               </span>
               <span>
                 Source: WillDrafting Editorial Team &amp; AMA Legal Solutions
@@ -595,8 +593,8 @@ export default function GiftDeedDraftingRegistrationPage() {
               Gift Deed vs Will vs Settlement: Key Differences
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Choosing between an immediate gift and a testamentary Will impacts
-              your control, stamp duty expense, and eviction risks. Compare how
+              Choosing between an immediate gift deed and a Will affects
+              your control, stamp duty costs, and peace of mind. Compare how
               Indian property law treats each legal instrument:
             </p>
           </div>
@@ -657,8 +655,8 @@ export default function GiftDeedDraftingRegistrationPage() {
               Statutory 4-Step Gift Deed Registration Roadmap
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Our High Court advocates handle the complete gift deed procedure.
-              Follow this structured 4-step path to transfer property safely:
+              Our High Court advocates handle the whole process for you.
+              Follow these four clear steps to transfer your property safely:
             </p>
           </div>
 
@@ -666,23 +664,23 @@ export default function GiftDeedDraftingRegistrationPage() {
             {[
               {
                 step: "01",
-                title: "Title & Khata Verification",
-                desc: "We examine parent sale deeds, encumbrance certificates, and municipal tax receipts. This confirms clear ownership and absence of mortgage liens.",
+                title: "Title & Property Search",
+                desc: "We check sale deeds, encumbrance records, and property tax slips. This proves clear ownership and makes sure there are no bank loans on the property.",
               },
               {
                 step: "02",
                 title: "Senior-Safe Drafting",
-                desc: "Our advocates craft bespoke clauses. We insert Section 23 filial support conditions and lifetime residence covenants to safeguard parents.",
+                desc: "Our advocates write custom terms for your family. We add Section 23 parent care clauses and lifetime home rights so parents stay protected.",
               },
               {
                 step: "03",
-                title: "Stamp Duty Optimization",
-                desc: "We calculate concessional state stamp duties for blood relatives. We purchase e-stamp certificates under correct government treasury heads.",
+                title: "Stamp Duty Savings",
+                desc: "We check state duty rebates for close relatives. Then we buy government e-stamp paper under the right treasury codes to save you money.",
               },
               {
                 step: "04",
-                title: "SRO Biometric Registration",
-                desc: "Our advocates book Sub-Registrar appointment slots, verify witnesses, guide biometric execution, and facilitate municipal mutation.",
+                title: "Sub-Registrar Registry",
+                desc: "Our lawyers book your registry slot, check witness papers, assist with thumb scans at the office, and help with municipal mutation.",
               },
             ].map((item) => (
               <div
@@ -718,10 +716,10 @@ export default function GiftDeedDraftingRegistrationPage() {
               Essential Section 23 Senior Protection Clause
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              In Sudesh Chhikara v. Ramti Devi (2022 SC), the Supreme Court
-              clarified that oral promises of maintenance are not enforceable
+              In the Sudesh Chhikara case (2022 SC), the Supreme Court
+              held that verbal promises of care cannot be enforced
               before the Maintenance Tribunal. You must include this explicit
-              statutory condition directly in the registered gift deed:
+              care clause directly in your registered gift deed:
             </p>
           </div>
 
@@ -731,7 +729,7 @@ export default function GiftDeedDraftingRegistrationPage() {
               <CopyableGiftDeedClauseBox
                 title="Statutory Section 23 MWPSC Act Revocation Clause"
                 code={SAMPLE_SECTION_23_CLAUSE}
-                explanation="This clause empowers elderly parents to file a summary petition before the Maintenance Tribunal (SDM) to cancel the gift deed and recover possession if the child neglects physical or medical support."
+                explanation="This clause lets elderly parents ask the Maintenance Tribunal (SDM) to cancel the gift deed if the child fails to care for them or provide medical support."
               />
             </div>
 
@@ -742,7 +740,7 @@ export default function GiftDeedDraftingRegistrationPage() {
                   Sub-Registrar Registration Checklist
                 </h3>
                 <p className="text-xs text-[#55636D] mb-4">
-                  Sub-Registrar offices require these verified documents for
+                  Sub-Registrar offices require these verified papers for
                   biometric registration:
                 </p>
                 <ul className="space-y-2.5 text-xs sm:text-[13.5px] text-[#374151]">
@@ -750,35 +748,35 @@ export default function GiftDeedDraftingRegistrationPage() {
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                     <span>
                       <strong>Original Title Deed:</strong> Registered sale deed or
-                      allotment letter proving donor ownership.
+                      allotment letter proving you own the property.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Identity Proofs:</strong> Aadhaar card and PAN card
-                      for donor, donee, and two witnesses.
+                      <strong>Identity Proofs:</strong> Aadhaar and PAN cards
+                      for donor, recipient, and two witnesses.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                     <span>
                       <strong>Relationship Evidence:</strong> Birth certificate or
-                      passport claiming blood-relative stamp duty concessions.
+                      passport to get blood-relative stamp duty discounts.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Municipal Tax Receipt:</strong> Up-to-date property
-                      tax payment slip and utility clearance.
+                      <strong>Municipal Tax Receipt:</strong> Recent property
+                      tax payment slip and utility bills.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#047857] shrink-0 mt-0.5" />
                     <span>
-                      <strong>Two Witnesses:</strong> Independent adult witnesses
-                      who personally know donor and donee.
+                      <strong>Two Witnesses:</strong> Two adult witnesses
+                      who personally know donor and recipient.
                     </span>
                   </li>
                 </ul>
@@ -806,8 +804,8 @@ export default function GiftDeedDraftingRegistrationPage() {
                   Need to Compare Gift Deed Stamp Duty vs Will Registration Costs?
                 </h4>
                 <p className="text-xs sm:text-[13px] text-[#55636D]">
-                  Use our statutory calculator to compare state-wise stamp duty,
-                  court fees, and registration costs before making a property transfer.
+                  Use our free tool to compare state stamp duty,
+                  court fees, and registry costs before you transfer property.
                 </p>
               </div>
             </div>
@@ -835,16 +833,16 @@ export default function GiftDeedDraftingRegistrationPage() {
                 Senior Citizen Protection &amp; Income Tax Exemptions
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Section 56(2)(x) of the Income Tax Act exempts property gifts
-                between defined relatives from income tax. Relatives include
-                spouses, siblings, lineal ascendants, and descendants. Transfers
-                within these categories attract zero tax liability for the recipient.
+                Section 56(2)(x) of the Income Tax Act makes property gifts
+                between close family members tax-free. Relatives include
+                parents, children, spouses, and siblings. Gifts within these
+                groups have zero income tax for the recipient.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                However, senior parents should never sign away all family assets
-                at once. Many families choose a hybrid estate plan: transferring one
-                home via a Section 23-protected gift deed, while securing bank
-                deposits, mutual funds, and ancestral shares in a court-ready Will.
+                Still, elderly parents should never give away all family assets
+                at once. Many families choose a balanced plan: gifting one
+                home with Section 23 protection, while keeping bank savings,
+                mutual funds, and family shares in a registered Will.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -878,7 +876,7 @@ export default function GiftDeedDraftingRegistrationPage() {
               Frequently Asked Questions: Gift Deed Drafting
             </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-              Authoritative legal answers prepared by the{" "}
+              Clear legal answers prepared by the{" "}
               <strong className="text-[#111827]">
                 WillDrafting Editorial Team
               </strong>{" "}
@@ -910,8 +908,8 @@ export default function GiftDeedDraftingRegistrationPage() {
                 Related Indian Conveyancing &amp; Succession Resources
               </div>
               <p className="text-sm text-[#49585F]">
-                Explore statutory templates, revocation checkers, and related
-                conveyancing services:
+                Explore legal templates, revocation tools, and related
+                property transfer services:
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -969,12 +967,10 @@ export default function GiftDeedDraftingRegistrationPage() {
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
               This legal guide is prepared under the Transfer of Property Act,
-              1882, the Registration Act, 1908, the Maintenance and Welfare of
-              Parents and Senior Citizens Act, 2007, and the Income Tax Act, 1961.
-              Judicial precedents cited include Sudesh Chhikara v. Ramti Devi
-              (2022 SC) and Urmila Dixit v. Sunil Sharan Dixit (2025 SC). This
-              content provides statutory education and does not replace
-              individualized advocate counsel.
+              1882, the Registration Act, 1908, the Senior Citizens Act, 2007,
+              and the Income Tax Act, 1961. Court cases cited include Sudesh
+              Chhikara (2022 SC) and Urmila Dixit (2025 SC). This page is for
+              legal education and does not replace direct legal advice from an advocate.
             </p>
           </div>
           <a

@@ -1,603 +1,646 @@
-"use client";
-
-import React, { Suspense, useState, useEffect } from "react";
-import { useSearchParams, useRouter, useParams } from "next/navigation";
-import { useSession } from "next-auth/react";
+import React from "react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import StartResumeCard from "@/components/start/StartResumeCard";
 import {
-  WillDraftingState,
-  setActiveUser,
-} from "@/lib/willDraftingStore";
-import WizardSidebar from "@/components/wizard/WizardSidebar";
-import Step1Welcome from "@/components/wizard/Step1Welcome";
-import Step2AboutYou from "@/components/wizard/Step2AboutYou";
-import Step3Family from "@/components/wizard/Step3Family";
-import Step4Assets from "@/components/wizard/Step4Assets";
-import Step5Allocations from "@/components/wizard/Step5Allocations";
-import Step6Executors from "@/components/wizard/Step6Executors";
-import Step7Guardians from "@/components/wizard/Step7Guardians";
-import Step8SpecialWishes from "@/components/wizard/Step8SpecialWishes";
-import Step9Motivation from "@/components/wizard/Step9Motivation";
-import Step10Review from "@/components/wizard/Step10Review";
-import Step11HealthCheck from "@/components/wizard/Step11HealthCheck";
-import Step12Assembly from "@/components/wizard/Step12Assembly";
-import Step13PlanSelect from "@/components/wizard/Step13PlanSelect";
-import Step14FinalWill from "@/components/wizard/Step14FinalWill";
-import WizardStepProgressBar from "@/components/wizard/WizardStepProgressBar";
-import DevQuickFillBar from "@/components/dev/DevQuickFillBar";
-import LanguageToggle from "@/components/ui/LanguageToggle";
-import { useLanguage } from "@/context/LanguageContext";
-import { applyLanguageTranslation } from "@/lib/translations";
-import { normalizeWillState } from "@/lib/inputSanitizers";
-import { useWillStore } from "@/lib/useWillStore";
-import CloudSyncBadge from "@/components/wizard/CloudSyncBadge";
-import { useTrackWizardStep } from "@/hooks/useTrackWizardStep";
-import {
-  getStepFromParam,
-  getUrlForStep,
-  getNextStepNumber,
-  getPrevStepNumber,
-} from "@/lib/questionnaireFlow";
+  Sparkles,
+  ArrowRight,
+  ShieldCheck,
+  Clock,
+  Scale,
+  FileText,
+  Users,
+  Building,
+  CheckCircle2,
+  Lock,
+  HelpCircle,
+  BookOpen,
+  ChevronRight,
+  LayoutDashboard,
+  Check,
+} from "lucide-react";
 
-function WizardContent() {
-  const router = useRouter();
-  const { data: session } = useSession();
-  const userEmail = session?.user?.email;
-  const params = useParams<{ step?: string }>();
-  const searchParams = useSearchParams();
-  const rawStepParam = params?.step || searchParams.get("step");
-  const initialStep = getStepFromParam(rawStepParam);
+export const metadata: Metadata = {
+  title: {
+    absolute: "Online Will Drafting Questionnaire | WillDrafting.in",
+  },
+  description:
+    "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
+  alternates: {
+    canonical: "https://www.willdrafting.in/start",
+    languages: {
+      "en-IN": "https://www.willdrafting.in/start",
+      "x-default": "https://www.willdrafting.in/start",
+    },
+  },
+  openGraph: {
+    title: "Online Will Drafting Questionnaire | WillDrafting.in",
+    description:
+      "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
+    url: "https://www.willdrafting.in/start",
+    siteName: "WillDrafting.in",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.willdrafting.in/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Online Will Drafting Questionnaire India - WillDrafting.in",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Online Will Drafting Questionnaire | WillDrafting.in",
+    description:
+      "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
+    images: ["https://www.willdrafting.in/desktopusp.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+};
 
-  const [currentStep, setCurrentStep] = useState(initialStep);
-  const state = useWillStore((s) => s.state);
-  const [devKey, setDevKey] = useState(0);
-  const [mounted, setMounted] = useState(false);
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const { lang, setLang } = useLanguage();
-  const mainRef = React.useRef<HTMLElement | null>(null);
+const ROADMAP_STEPS = [
+  {
+    step: "01",
+    title: "1. Personal & Family Details",
+    desc: "Enter your full name, religion, marital status, and family members. Add your spouse, children, or parents with clear details. This step establishes your legal background and prevents future disputes.",
+    href: "/start/01",
+    icon: Users,
+    time: "3 mins",
+  },
+  {
+    step: "02",
+    title: "2. Assets & Property Register",
+    desc: "List your self-acquired assets. Add your flats, plots of land, bank accounts, and fixed deposits. You can also include gold jewellery, mutual funds, company shares, and vehicle details.",
+    href: "/start/03",
+    icon: Building,
+    time: "4 mins",
+  },
+  {
+    step: "03",
+    title: "3. Asset Shares & Executors",
+    desc: "Decide exact percentage shares for each heir. Name one or two trusted adults as your Will executors. If you have young children, name testamentary guardians to care for them.",
+    href: "/start/04",
+    icon: Scale,
+    time: "3 mins",
+  },
+  {
+    step: "04",
+    title: "4. Legal Audit & Final Will",
+    desc: "Our smart engine checks your Will for legal gaps. Review all clauses on screen. Download your court-ready PDF instantly. Print the document on plain paper and sign with two adult witnesses.",
+    href: "/start/14",
+    icon: FileText,
+    time: "2 mins",
+  },
+];
 
-  useTrackWizardStep(currentStep, mounted && Boolean(session?.user));
+const PRE_CHECKLIST = [
+  "Your full legal name, permanent address, and basic identity details.",
+  "Names and relations of your spouse, children, parents, or chosen heirs.",
+  "Rough details of your property, house address, or flat registration numbers.",
+  "Names of banks where you hold savings accounts, fixed deposits, or lockers.",
+  "Names of one or two trusted adults who can act as executors of your Will.",
+];
 
-  useEffect(() => {
-    setCurrentStep(initialStep);
-    if (!rawStepParam || rawStepParam === "dashboard") {
-      router.replace("/start/dashboard");
-    }
-  }, [initialStep, rawStepParam, router]);
+const LEGAL_BENEFITS = [
+  {
+    title: "100% Legally Binding in Indian Courts",
+    desc: "Drafted strictly under Section 63 of the Indian Succession Act, 1925. Valid across every state and union territory in India.",
+  },
+  {
+    title: "No Costly Lawyer Office Visits",
+    desc: "Save thousands of rupees in deed writer fees. Create an advocate-grade legal Will from the comfort of your home.",
+  },
+  {
+    title: "Edit and Update Any Time",
+    desc: "Your life circumstances change over time. Return to your secure account whenever you wish to add new assets or update heirs.",
+  },
+  {
+    title: "Private Browser Storage",
+    desc: "Your family records and financial details stay confidential. We protect your entries with high-grade security standards.",
+  },
+];
 
-  useEffect(() => {
-    if (userEmail) {
-      setActiveUser(userEmail);
-    }
-    // Initialize central store session (handles local read + server hydration for guests & users)
-    void useWillStore.getState().initSession(userEmail).then(() => {
-      if (session?.user) {
-        const cur = useWillStore.getState().state;
-        if (!cur.detailsVerified) {
-          let changed = false;
-          const testator = { ...cur.testator };
-          if (!testator.fullName && session.user.name) {
-            testator.fullName = session.user.name;
-            changed = true;
-          }
-          if (!testator.email && session.user.email) {
-            testator.email = session.user.email;
-            changed = true;
-          }
-          if (!testator.phone && session.user.phone) {
-            testator.phone = session.user.phone;
-            changed = true;
-          }
-          if (changed) {
-            useWillStore.getState().updateState((prev) => ({
-              ...prev,
-              testator,
-            }));
-          }
-        }
-      }
-      setMounted(true);
-    });
-  }, [userEmail, session?.user]);
-
-  const handleChangeLang = (nextLang: "en" | "hi") => {
-    setLang(nextLang);
-  };
-
-  useEffect(() => {
-    const container = mainRef.current;
-    if (!container) return;
-
-    const runTranslation = () => {
-      applyLanguageTranslation(container, lang === "hi");
-    };
-
-    runTranslation();
-
-    let debounceTimer: NodeJS.Timeout;
-    const observer = new MutationObserver(() => {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(() => {
-        runTranslation();
-      }, 40);
-    });
-
-    observer.observe(container, {
-      childList: true,
-      subtree: true,
-      characterData: true,
-    });
-
-    return () => {
-      observer.disconnect();
-      clearTimeout(debounceTimer);
-    };
-  }, [lang, currentStep, state]);
-
-  const handleUpdateState = (updater: (prev: WillDraftingState) => WillDraftingState) => {
-    useWillStore.getState().updateState(updater);
-  };
-
-  const handleDevUpdateState = (newState: WillDraftingState) => {
-    useWillStore.getState().setFullState(newState);
-    setDevKey((prev) => prev + 1);
-  };
-
-  const handleStepJump = (step: number) => {
-    const clampedStep = Math.min(14, Math.max(1, step));
-    setCurrentStep(clampedStep);
-    setMobileSidebarOpen(false);
-    const targetUrl = getUrlForStep(clampedStep);
-    router.push(targetUrl);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const hasMinors = state.familyMembers.some((f) => f.isMinor);
-
-  if (!mounted) {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          minHeight: "100vh",
-          backgroundColor: "var(--bg-page)",
-          color: "var(--color-navy)",
-          fontFamily: "var(--font-main)",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <div
-            style={{
-              width: "24px",
-              height: "24px",
-              border: "3px solid var(--border-card)",
-              borderTopColor: "var(--color-gold)",
-              borderRadius: "50%",
-              animation: "spin 1s linear infinite",
-            }}
-          />
-          <span style={{ fontWeight: 600 }}>Loading Will Questionnaire...</span>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className="wizard-shell-root"
-      style={{
-        display: "flex",
-        height: "100vh",
-        overflow: "hidden",
-        backgroundColor: "#FAF7F0",
-        backgroundImage: "radial-gradient(circle at 10% 20%, rgba(198, 83, 120, 0.05) 0%, transparent 45%), radial-gradient(circle at 90% 80%, rgba(95, 126, 117, 0.05) 0%, transparent 45%)",
-      }}
-    >
-      {/* Desktop Left Sidebar Stepper */}
-      <div className="wizard-desktop-sidebar">
-        <WizardSidebar
-          currentStep={currentStep}
-          onJumpToStep={handleStepJump}
-          lang={lang}
-          onChangeLang={handleChangeLang}
-        />
-      </div>
-
-      {/* Mobile Drawer */}
-      {mobileSidebarOpen && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            backgroundColor: "rgba(23, 34, 40, 0.7)",
-            backdropFilter: "blur(6px)",
-            zIndex: 999,
-          }}
-          onClick={() => setMobileSidebarOpen(false)}
-        >
-          <div
-            className="wizard-mobile-drawer-panel"
-            style={{ width: "310px", height: "100%", backgroundColor: "var(--color-navy)" }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <WizardSidebar
-              currentStep={currentStep}
-              onJumpToStep={handleStepJump}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          </div>
-        </div>
-      )}
-
-      {/* Main Questionnaire Stage */}
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0, height: "100%", overflow: "hidden" }}>
-        {/* Mobile Header */}
-        <div
-          className="wizard-mobile-header"
-          style={{
-            display: "none",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "0.75rem 1rem",
-            backgroundColor: "rgba(23, 34, 40, 0.95)",
-            backdropFilter: "blur(20px)",
-            color: "#FFFFFF",
-            borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
-          }}
-        >
-          <button
-            onClick={() => setMobileSidebarOpen(true)}
-            style={{
-              background: "none",
-              border: "none",
-              color: "#FFFFFF",
-              cursor: "pointer",
-              padding: "0.35rem",
-              display: "flex",
-              alignItems: "center",
-            }}
-            aria-label="Toggle step navigation"
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-            <CloudSyncBadge lang={lang} />
-            <LanguageToggle lang={lang} onChangeLang={handleChangeLang} size="sm" />
-            {currentStep === 10 && (
-              <div className="wizard-mobile-header-step-pill" style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-                <span style={{ fontWeight: 700, fontSize: "0.825rem" }}>
-                  {lang === "hi" ? `चरण ${currentStep - 1} / 13` : `Step ${currentStep - 1} of 13`}
-                </span>
-                <span style={{ fontSize: "0.7rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
-                  {`${Math.round(((currentStep - 1) / 13) * 100)}%`}
-                </span>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Content Viewport */}
-        <main
-          ref={mainRef}
-          className="wizard-main-viewport"
-          style={{
-            flex: 1,
-            padding: "0.85rem 1.25rem 2.5rem",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "stretch",
-            width: "100%",
-            minWidth: 0,
-            boxSizing: "border-box",
-            height: "100%",
-            overflowY: "auto",
-          }}
-        >
-          {/* Progress Bar over Main Step Heading showing progress of filling steps (suppressed on step 10 to eliminate duplicate noise) */}
-          {currentStep !== 10 && (
-            <WizardStepProgressBar
-              currentStep={currentStep}
-              onJumpToStep={handleStepJump}
-              lang={lang}
-            />
-          )}
-
-          {/* Dev Quick-Fill Bar (Only visible in Development/Localhost when not locked) */}
-          {!state.detailsVerified && (
-            <DevQuickFillBar
-              currentStep={currentStep}
-              onUpdateState={handleDevUpdateState}
-              userEmail={userEmail}
-            />
-          )}
-
-          {state.detailsVerified && currentStep >= 2 && currentStep <= 9 && (
-            <div
-              className="wizard-locked-banner"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
-                gap: "0.75rem",
-                padding: "0.75rem 1.15rem",
-                marginBottom: "0.85rem",
-                backgroundColor: "#ECFDF5",
-                border: "1.5px solid #10B981",
-                borderRadius: "14px",
-                color: "#065F46",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "0.55rem", fontSize: "0.82rem", fontWeight: 700 }}>
-                <span>🔒</span>
-                <span>
-                  {lang === "hi"
-                    ? "वसीयत विवरण OTP द्वारा सत्यापित और स्थायी रूप से लॉक हैं (केवल पढ़ने हेतु)"
-                    : "Will Details Verified via OTP & Permanently Locked (Read-Only Mode)"}
-                </span>
-              </div>
-              <div className="wizard-locked-banner-actions" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <button
-                  type="button"
-                  className="wizard-locked-btn-prev"
-                  onClick={() => handleStepJump(getPrevStepNumber(currentStep, hasMinors))}
-                  style={{
-                    padding: "0.35rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "1px solid #059669",
-                    backgroundColor: "#FFFFFF",
-                    color: "#065F46",
-                    fontSize: "0.75rem",
-                    fontWeight: 700,
-                    cursor: "pointer",
-                  }}
-                >
-                  ← {lang === "hi" ? "पिछला चरण" : "Previous Step"}
-                </button>
-                <button
-                  type="button"
-                  className="wizard-locked-btn-next"
-                  onClick={() => handleStepJump(getNextStepNumber(currentStep, hasMinors))}
-                  style={{
-                    padding: "0.35rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "none",
-                    backgroundColor: "#059669",
-                    color: "#FFFFFF",
-                    fontSize: "0.75rem",
-                    fontWeight: 700,
-                    cursor: "pointer",
-                  }}
-                >
-                  {lang === "hi" ? "अगला चरण" : "Next Step"} →
-                </button>
-                <button
-                  type="button"
-                  className="wizard-locked-btn-review"
-                  onClick={() => handleStepJump(10)}
-                  style={{
-                    padding: "0.35rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "none",
-                    backgroundColor: "#172228",
-                    color: "#FFFFFF",
-                    fontSize: "0.75rem",
-                    fontWeight: 700,
-                    cursor: "pointer",
-                  }}
-                >
-                  {lang === "hi" ? "समीक्षा (चरण 9) →" : "Back to Review →"}
-                </button>
-              </div>
-            </div>
-          )}
-
-          <div style={{ width: "100%", minWidth: 0, flex: 1, minHeight: "auto", display: "flex", flexDirection: "column" }}>
-          {currentStep === 1 && (
-            <Step1Welcome
-              key={`step-1-${devKey}`}
-              onNext={() => handleStepJump(2)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-
-          {currentStep >= 2 && currentStep <= 9 && (
-            <fieldset
-              className="wizard-step-fieldset"
-              disabled={Boolean(state.detailsVerified)}
-              style={{
-                border: "none",
-                margin: 0,
-                padding: 0,
-                minWidth: 0,
-                minInlineSize: 0,
-                width: "100%",
-                maxWidth: "100%",
-                pointerEvents: state.detailsVerified ? "none" : "auto",
-                opacity: state.detailsVerified ? 0.88 : 1,
-              }}
-            >
-              {currentStep === 2 && (
-                <Step2AboutYou
-                  key={`step-2-${devKey}`}
-                  onNext={() => handleStepJump(3)}
-                  onBack={() => handleStepJump(1)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 3 && (
-                <Step3Family
-                  key={`step-3-${devKey}`}
-                  onNext={() => handleStepJump(4)}
-                  onBack={() => handleStepJump(2)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 4 && (
-                <Step4Assets
-                  key={`step-4-${devKey}`}
-                  onNext={() => handleStepJump(5)}
-                  onBack={() => handleStepJump(3)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 5 && (
-                <Step5Allocations
-                  key={`step-5-${devKey}`}
-                  onNext={() => handleStepJump(6)}
-                  onBack={() => handleStepJump(4)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 6 && (
-                <Step6Executors
-                  key={`step-6-${devKey}`}
-                  onNext={() => handleStepJump(hasMinors ? 7 : 8)}
-                  onBack={() => handleStepJump(5)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 7 && (
-                <Step7Guardians
-                  key={`step-7-${devKey}`}
-                  onNext={() => handleStepJump(8)}
-                  onBack={() => handleStepJump(6)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 8 && (
-                <Step8SpecialWishes
-                  key={`step-8-${devKey}`}
-                  onNext={() => handleStepJump(9)}
-                  onBack={() => handleStepJump(hasMinors ? 7 : 6)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-
-              {currentStep === 9 && (
-                <Step9Motivation
-                  key={`step-9-${devKey}`}
-                  onNext={() => handleStepJump(10)}
-                  onBack={() => handleStepJump(8)}
-                  lang={lang}
-                  onChangeLang={handleChangeLang}
-                />
-              )}
-            </fieldset>
-          )}
-
-          {currentStep === 10 && (
-            <Step10Review
-              key={`step-10-${devKey}`}
-              onJumpToStep={handleStepJump}
-              onNext={() => handleStepJump(11)}
-              onBack={() => handleStepJump(9)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-
-          {currentStep === 11 && (
-            <Step11HealthCheck
-              key={`step-11-${devKey}`}
-              onNext={() => handleStepJump(12)}
-              onBack={() => handleStepJump(10)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-
-          {currentStep === 12 && (
-            <Step12Assembly
-              key={`step-12-${devKey}`}
-              onNext={() => {
-                const isPaid = session?.user?.paymentStatus === "paid";
-                handleStepJump(isPaid ? 14 : 13);
-              }}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-
-          {currentStep === 13 && (
-            <Step13PlanSelect
-              key={`step-13-${devKey}`}
-              onNext={() => handleStepJump(14)}
-              onBack={() => handleStepJump(11)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-
-          {currentStep === 14 && (
-            <Step14FinalWill
-              key={`step-14-${devKey}`}
-              onBack={() => handleStepJump(13)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
-          </div>
-        </main>
-      </div>
-
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .wizard-desktop-sidebar {
-            display: none !important;
-          }
-          .wizard-mobile-header {
-            display: flex !important;
-          }
-          .hide-on-mobile-step {
-            display: none !important;
-          }
-        }
-      `}</style>
-    </div>
-  );
-}
+const FAQS = [
+  {
+    q: "Is an online Will legally valid in India?",
+    a: "Yes. An online Will made on WillDrafting.in is fully valid under Section 63 of the Indian Succession Act, 1925. Once printed and signed in front of two adult witnesses, your Will has complete legal standing in all Indian courts.",
+  },
+  {
+    q: "Do I need stamp paper to create my Will?",
+    a: "No. Indian law does not require stamp paper for a Will. You can print your completed Will on normal A4 white paper. It becomes legally effective once you and your two witnesses sign it.",
+  },
+  {
+    q: "Who can act as an executor of my Will?",
+    a: "An executor is the trusted person who carries out the instructions in your Will after your death. You can name your spouse, an adult child, a trusted relative, a friend, or an advocate. You can also name a backup executor.",
+  },
+  {
+    q: "Is registration of a Will mandatory in India?",
+    a: "No. Will registration is optional under Section 18 of the Registration Act, 1908. An unregistered Will is completely legal if executed properly. However, registration adds strong evidentiary proof in case of future court disputes.",
+  },
+  {
+    q: "How much does it cost to draft a Will online?",
+    a: "Our plans start at ₹2,490 for the self-drafted plan, ₹4,990 for advocate verification, and ₹9,990 for comprehensive advocate drafting with video consultation. You can view all features on our pricing page.",
+  },
+  {
+    q: "What happens if I die without writing a Will?",
+    a: "If you pass away without a Will, your estate is divided strictly by religious personal succession laws. This often leads to family disputes, frozen bank accounts, and lengthy court delays. Writing a Will protects your family.",
+  },
+];
 
 export default function StartPage() {
   return (
-    <Suspense
-      fallback={
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            minHeight: "100vh",
-            backgroundColor: "var(--bg-page)",
-          }}
-        >
-          <div style={{ fontWeight: 600, color: "var(--color-navy)" }}>
-            Loading Questionnaire...
+    <div className="min-h-screen bg-[#FAF7F0] text-[#172228] font-sans flex flex-col">
+      <Navbar />
+
+      <main className="flex-1">
+        {/* Breadcrumb Navigation */}
+        <div className="border-b border-[#172228]/8 bg-white/70 backdrop-blur-sm">
+          <div className="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+            <nav className="flex items-center gap-2 text-xs text-[#49585F]" aria-label="Breadcrumb">
+              <Link href="/" className="transition hover:text-[#C65378]">
+                Home
+              </Link>
+              <ChevronRight size={13} className="opacity-50" />
+              <span className="font-semibold text-[#172228]" aria-current="page">
+                Start Will Questionnaire
+              </span>
+            </nav>
           </div>
         </div>
-      }
-    >
-      <WizardContent />
-    </Suspense>
+
+        {/* Hero Section */}
+        <section className="relative overflow-hidden py-12 sm:py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              {/* Eyebrow Pill */}
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#C65378]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                <Sparkles size={14} />
+                <span>Certified Online Will Drafting in India</span>
+              </div>
+
+              {/* Strict Single H1 Tag (<= 70 chars) */}
+              <h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl text-[#172228] leading-tight">
+                Start Your Legally Valid Online Will in India
+              </h1>
+
+              {/* Plain-English Hero Summary */}
+              <p className="mt-4 text-base sm:text-lg text-[#49585F] leading-relaxed">
+                Making a Will is an act of love to protect your family. It takes only ten to fifteen minutes to complete. Answer simple questions about your loved ones and property. Download your court-ready Will with lawyer verification today.
+              </p>
+
+              {/* Dynamic Draft Resume Banner (Client side) */}
+              <div className="mt-6 text-left">
+                <StartResumeCard />
+              </div>
+
+              {/* Primary Call to Action Buttons */}
+              <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <Link
+                  href="/start/01"
+                  className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#C65378] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#C65378]/25 transition hover:bg-[#b04568] sm:w-auto"
+                >
+                  <span>Begin Will Questionnaire (Step 1)</span>
+                  <ArrowRight size={16} />
+                </Link>
+
+                <Link
+                  href="/start/dashboard"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#172228]/15 bg-white px-6 py-3.5 text-sm font-bold text-[#172228] shadow-sm transition hover:border-[#172228] hover:bg-[#FAF7F0] sm:w-auto"
+                >
+                  <LayoutDashboard size={16} />
+                  <span>Open Estate Wealth Dashboard</span>
+                </Link>
+
+                <Link
+                  href="/pricing"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl px-5 py-3 text-sm font-semibold text-[#49585F] transition hover:text-[#172228] sm:w-auto"
+                >
+                  <span>Compare Plans (from ₹2,490)</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+
+              {/* Trust Signal Badges */}
+              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 text-left">
+                <div className="flex items-center gap-2.5 rounded-xl border border-[#172228]/8 bg-white p-3 shadow-xs">
+                  <Clock size={18} className="text-[#C65378] shrink-0" />
+                  <div>
+                    <div className="text-xs font-bold text-[#172228]">10-15 Minutes</div>
+                    <div className="text-[11px] text-[#49585F]">Quick step-by-step form</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl border border-[#172228]/8 bg-white p-3 shadow-xs">
+                  <Scale size={18} className="text-[#059669] shrink-0" />
+                  <div>
+                    <div className="text-xs font-bold text-[#172228]">ISA 1925 Compliant</div>
+                    <div className="text-[11px] text-[#49585F]">100% legal in India</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl border border-[#172228]/8 bg-white p-3 shadow-xs">
+                  <Lock size={18} className="text-[#172228] shrink-0" />
+                  <div>
+                    <div className="text-xs font-bold text-[#172228]">100% Private</div>
+                    <div className="text-[11px] text-[#49585F]">Encrypted browser vault</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl border border-[#172228]/8 bg-white p-3 shadow-xs">
+                  <ShieldCheck size={18} className="text-[#C65378] shrink-0" />
+                  <div>
+                    <div className="text-xs font-bold text-[#172228]">Advocate Verified</div>
+                    <div className="text-[11px] text-[#49585F]">High Court lawyers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section with Strict Single H2 Tag (<= 70 chars) */}
+        <section className="border-t border-[#172228]/8 bg-white py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="text-center max-w-2xl mx-auto">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                Simple Questionnaire Steps
+              </span>
+              <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-[#172228]">
+                Simple 4-Step Process to Create Your Valid Will
+              </h2>
+              <p className="mt-2 text-sm text-[#49585F]">
+                Follow our clear roadmap. You can complete each section at your own pace without confusing legal terms.
+              </p>
+            </div>
+
+            {/* 4 Cards with H3 headings */}
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {ROADMAP_STEPS.map((item) => {
+                const IconComponent = item.icon;
+                return (
+                  <div
+                    key={item.step}
+                    className="flex flex-col justify-between rounded-2xl border border-[#172228]/8 bg-[#FAF7F0] p-6 shadow-xs transition hover:border-[#C65378]/40 hover:shadow-md"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between">
+                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#172228] shadow-xs">
+                          <IconComponent size={20} />
+                        </div>
+                        <span className="rounded-full bg-[#172228]/5 px-2.5 py-1 text-xs font-bold text-[#C65378]">
+                          {item.time}
+                        </span>
+                      </div>
+                      <h3 className="mt-4 text-base font-bold text-[#172228]">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 text-xs leading-relaxed text-[#49585F]">
+                        {item.desc}
+                      </p>
+                    </div>
+
+                    <div className="mt-6 pt-4 border-t border-[#172228]/8">
+                      <Link
+                        href={item.href}
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#b04568]"
+                      >
+                        <span>Start this step</span>
+                        <ArrowRight size={13} />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* In-Section Call to Action */}
+            <div className="mt-10 text-center">
+              <Link
+                href="/start/01"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#172228] px-6 py-3 text-xs font-bold text-white transition hover:bg-[#253640]"
+              >
+                <span>Start Step 1: Personal &amp; Family Details</span>
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* What to Keep Handy Checklist */}
+        <section className="border-t border-[#172228]/8 py-14 bg-[#FAF7F0]">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="grid gap-10 md:grid-cols-2 md:items-center">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                  Quick Preparation
+                </span>
+                <h3 className="mt-2 text-2xl font-extrabold text-[#172228]">
+                  What You Need Before Starting
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#49585F]">
+                  You do not need heavy files or complicated paperwork right now. Basic details are enough to complete your draft. Keep these simple points in mind:
+                </p>
+
+                <ul className="mt-5 space-y-3">
+                  {PRE_CHECKLIST.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#059669]/10 text-[#059669]">
+                        <Check size={13} strokeWidth={3} />
+                      </div>
+                      <span className="text-xs leading-relaxed text-[#172228] font-medium">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/start/01"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[#C65378] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#b04568]"
+                  >
+                    <span>I Am Ready to Start →</span>
+                  </Link>
+                  <Link
+                    href="/tools/will-checklist"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#49585F] hover:text-[#172228]"
+                  >
+                    <BookOpen size={14} />
+                    <span>View Full Will Preparation Checklist</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Side Card: Key Assurances */}
+              <div className="rounded-2xl border border-[#172228]/8 bg-white p-7 shadow-xs">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#C65378]/10 text-[#C65378]">
+                    <ShieldCheck size={22} />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                      Legal Security
+                    </div>
+                    <div className="text-sm font-extrabold text-[#172228]">
+                      Backed by AMA Legal Solutions
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-5 space-y-3.5 border-t border-[#172228]/8 pt-5 text-xs text-[#49585F]">
+                  <p>
+                    Every clause generated follows the Indian Succession Act, 1925. Our advocates have vetted thousands of testamentary instruments for Indian families and global NRIs.
+                  </p>
+                  <p>
+                    Your document is court-ready. After printing, sign it before two adult witnesses. You do not need to visit a sub-registrar unless you choose to register.
+                  </p>
+                </div>
+
+                <div className="mt-6 rounded-xl bg-[#FAF7F0] p-4 text-xs">
+                  <div className="font-bold text-[#172228]">Need custom advocate advice?</div>
+                  <p className="mt-1 text-[#49585F]">
+                    Our legal team can draft custom trust clauses, life interests, or NRI power of attorney documents.
+                  </p>
+                  <div className="mt-3">
+                    <Link
+                      href="/contact"
+                      className="font-bold text-[#C65378] hover:underline"
+                    >
+                      Speak with our legal advocates →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits Section */}
+        <section className="border-t border-[#172228]/8 bg-white py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                Why Choose WillDrafting.in
+              </span>
+              <h3 className="mt-2 text-2xl font-extrabold text-[#172228]">
+                Key Benefits of Online Will Drafting
+              </h3>
+              <p className="mt-2 text-sm text-[#49585F]">
+                Protect your loved ones with a modern, simple, and legally sound solution.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {LEGAL_BENEFITS.map((b, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-[#172228]/8 bg-[#FAF7F0] p-6 shadow-xs"
+                >
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#059669]/10 text-[#059669]">
+                    <CheckCircle2 size={18} />
+                  </div>
+                  <h4 className="mt-3 text-sm font-bold text-[#172228]">
+                    {b.title}
+                  </h4>
+                  <p className="mt-2 text-xs leading-relaxed text-[#49585F]">
+                    {b.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Legal Validity Guidance & Acts */}
+        <section className="border-t border-[#172228]/8 py-14 bg-[#FAF7F0]">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="rounded-3xl border border-[#172228]/8 bg-white p-8 sm:p-10 shadow-sm">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                Statutory Framework
+              </span>
+              <h3 className="mt-2 text-2xl font-extrabold text-[#172228]">
+                Legal Validity Under the Indian Succession Act, 1925
+              </h3>
+
+              <div className="mt-4 grid gap-6 md:grid-cols-2 text-xs leading-relaxed text-[#49585F]">
+                <div>
+                  <p>
+                    Under Section 63 of the Indian Succession Act, 1925, any adult person of sound mind can make a Will. You can bequeath all self-acquired properties to any person or charity of your choice.
+                  </p>
+                  <p className="mt-3">
+                    A handwritten or printed Will on plain paper is completely valid in India. Stamp paper is not required by law. The essential legal requirement is the signature of the Will maker and two competent adult witnesses who observe the signing.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Will registration under Section 18 of the Registration Act, 1908 is optional. A properly executed unregistered Will carries equal legal authority. However, registration prevents false claims of forgery or coercion.
+                  </p>
+                  <p className="mt-3">
+                    For Muslim citizens, testamentary succession is governed by Muslim Personal Law (Shariat), where a person can will up to one-third of their estate to non-heirs. For Hindus, Sikhs, Jains, and Buddhists, the Hindu Succession Act, 1956 applies.
+                  </p>
+                </div>
+              </div>
+
+              {/* Contextual Internal Links */}
+              <div className="mt-8 border-t border-[#172228]/8 pt-6">
+                <div className="text-xs font-bold text-[#172228] mb-3">
+                  Related Legal Guides &amp; Resources:
+                </div>
+                <div className="flex flex-wrap gap-2.5">
+                  <Link
+                    href="/blogs/legally-valid-will-in-india"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
+                  >
+                    <span>Legal Validity Guide</span>
+                    <ArrowRight size={11} />
+                  </Link>
+                  <Link
+                    href="/services/will-registration"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
+                  >
+                    <span>Will Registration in India</span>
+                    <ArrowRight size={11} />
+                  </Link>
+                  <Link
+                    href="/templates/will-format-in-english"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
+                  >
+                    <span>Sample Will Format</span>
+                    <ArrowRight size={11} />
+                  </Link>
+                  <Link
+                    href="/services/nri-will-drafting-services-india"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
+                  >
+                    <span>NRI Will Drafting</span>
+                    <ArrowRight size={11} />
+                  </Link>
+                  <Link
+                    href="/tools/succession-calculator"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
+                  >
+                    <span>Legal Heir Calculator</span>
+                    <ArrowRight size={11} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Frequently Asked Questions */}
+        <section className="border-t border-[#172228]/8 bg-white py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+                Common Questions
+              </span>
+              <h3 className="mt-2 text-2xl font-extrabold text-[#172228]">
+                Frequently Asked Questions About Starting a Will
+              </h3>
+              <p className="mt-2 text-sm text-[#49585F]">
+                Here are plain-English answers to questions most clients ask before drafting their Will.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {FAQS.map((faq, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-[#172228]/8 bg-[#FAF7F0] p-5 shadow-xs"
+                >
+                  <div className="flex items-start gap-2.5">
+                    <HelpCircle size={16} className="text-[#C65378] mt-0.5 shrink-0" />
+                    <div>
+                      <h4 className="text-sm font-bold text-[#172228]">
+                        {faq.q}
+                      </h4>
+                      <p className="mt-2 text-xs leading-relaxed text-[#49585F]">
+                        {faq.a}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 rounded-2xl bg-[#FAF7F0] p-6 border border-[#172228]/8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <div className="text-sm font-bold text-[#172228]">Have a question not answered here?</div>
+                <p className="mt-0.5 text-xs text-[#49585F]">
+                  Check our plans on the pricing page or speak directly with our senior advocates.
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-[#172228]/15 bg-white px-4 py-2 text-xs font-bold text-[#172228] hover:border-[#172228]"
+                >
+                  <span>View Pricing</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-[#172228] px-4 py-2 text-xs font-bold text-white hover:bg-[#253640]"
+                >
+                  <span>Contact Lawyers</span>
+                  <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Banner */}
+        <section className="border-t border-[#172228]/8 bg-[#172228] py-14 text-white">
+          <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
+              Take Action Today
+            </span>
+            <h3 className="mt-3 text-2xl sm:text-3xl font-extrabold text-white">
+              Ready to Protect Your Family’s Financial Future?
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-xs sm:text-sm text-gray-300 leading-relaxed">
+              Do not leave your hard-earned assets to uncertain disputes. Complete your online Will drafting questionnaire in 10 minutes.
+            </p>
+
+            <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/start/01"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#C65378] px-7 py-3.5 text-sm font-bold text-white shadow-lg transition hover:bg-[#b04568] sm:w-auto"
+              >
+                <span>Start Your Will Now (Step 1)</span>
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/start/dashboard"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/20 sm:w-auto"
+              >
+                <LayoutDashboard size={16} />
+                <span>Open Asset Dashboard</span>
+              </Link>
+              <Link
+                href="/about-us"
+                className="inline-flex w-full items-center justify-center gap-1.5 px-5 py-3 text-sm font-semibold text-gray-300 hover:text-white sm:w-auto"
+              >
+                <span>About AMA Legal Solutions</span>
+                <ChevronRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
   );
 }

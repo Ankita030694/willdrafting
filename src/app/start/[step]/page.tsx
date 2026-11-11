@@ -1,3 +1,3 @@
-import StartPage from "../page";
+import StartWizard from "./StartWizard";
 
-export default StartPage;
+export default StartWizard;
