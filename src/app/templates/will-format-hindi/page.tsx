@@ -24,6 +24,8 @@ const notoDevanagari = Noto_Sans_Devanagari({
   display: "swap",
 });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: {
     absolute: SEO_TITLE,

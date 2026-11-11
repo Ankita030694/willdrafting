@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatGujaratiClient from "./WillFormatGujaratiClient";
 
+export const dynamic = "force-dynamic";
+
 // Noto Sans Gujarati font for crisp vernacular typography
 const notoGujarati = Noto_Sans_Gujarati({
   variable: "--font-gujarati",

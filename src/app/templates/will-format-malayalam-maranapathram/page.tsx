@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatMalayalamClient from "./WillFormatMalayalamClient";
 
+export const dynamic = "force-dynamic";
+
 // Screaming Frog SEO Rules: Title strictly 50-60 chars, Meta Description strictly 140-155 chars, 0 em-dashes
 export const metadata: Metadata = {
   title: {

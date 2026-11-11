@@ -22,6 +22,8 @@ const notoDevanagari = Noto_Sans_Devanagari({
   display: "swap",
 });
 
+export const dynamic = "force-dynamic";
+
 // Screaming Frog Rules: Title strictly 50-60 chars, Meta Description strictly 140-155 chars, 0 em-dashes
 export const metadata: Metadata = {
   title: {

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -8,6 +9,7 @@ import StyledJsxRegistry from "./registry";
 import { LanguageProvider } from "@/context/LanguageContext";
 import AuthProvider from "@/components/providers/AuthProvider";
 import SignupModalHost from "@/components/auth/SignupModalHost";
+import { TEMPLATE_LANG_MAP } from "@/lib/templateLanguages";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -183,13 +185,18 @@ const GLOBAL_SCHEMA = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headerList = await headers();
+  const langHeader = headerList.get("x-lang");
+  const pathnameHeader = headerList.get("x-pathname") || "";
+  const lang = langHeader || TEMPLATE_LANG_MAP[pathnameHeader] || "en";
+
   return (
-    <html lang="en" className={plusJakarta.variable}>
+    <html lang={lang} className={plusJakarta.variable}>
       <head>
         <script
           type="application/ld+json"

@@ -2,6 +2,7 @@ import { auth } from "@/auth";
 import { NextResponse } from "next/server";
 import type { NextFetchEvent, NextRequest } from "next/server";
 import { DEFAULT_SECURITY_HEADERS, getPublicOrigin } from "@/lib/http";
+import { TEMPLATE_LANG_MAP } from "@/lib/templateLanguages";
 
 const PROXY_SECURITY_HEADERS: Record<string, string> = {
   ...DEFAULT_SECURITY_HEADERS,
@@ -89,23 +90,24 @@ const authMiddleware = auth((req) => {
   return withSecurityHeaders(NextResponse.next());
 });
 
-const TEMPLATE_LANG_MAP: Record<string, string> = {
-  "/templates/will-format-bengali-ichchapatra": "bn-IN",
-  "/templates/will-format-gujarati-vasiyatnama": "gu-IN",
-  "/templates/will-format-hindi": "hi-IN",
-  "/templates/will-format-kannada-uyilu": "kn-IN",
-  "/templates/will-format-marathi-mrutyupatra": "mr-IN",
-  "/templates/will-format-malayalam-maranapathram": "ml-IN",
-  "/templates/will-format-punjabi-vasiyatnama": "pa-IN",
-  "/templates/will-format-tamil-uyil-sasanam": "ta-IN",
-  "/templates/will-format-telugu-veelunama": "te-IN",
-};
-
 export default async function proxy(req: NextRequest, event: NextFetchEvent) {
-  if (!isProtectedRoute(req.nextUrl.pathname)) {
-    const res = withSecurityHeaders(NextResponse.next());
-    const lang = TEMPLATE_LANG_MAP[req.nextUrl.pathname];
-    if (lang) {
+  const { pathname } = req.nextUrl;
+  const cleanPath = pathname.length > 1 && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
+  const lang = TEMPLATE_LANG_MAP[cleanPath] || TEMPLATE_LANG_MAP[pathname] || "en";
+
+  if (!isProtectedRoute(pathname)) {
+    const requestHeaders = new Headers(req.headers);
+    requestHeaders.set("x-lang", lang);
+    requestHeaders.set("x-pathname", cleanPath);
+
+    const res = withSecurityHeaders(
+      NextResponse.next({
+        request: {
+          headers: requestHeaders,
+        },
+      })
+    );
+    if (lang !== "en") {
       res.headers.set("Content-Language", lang);
     }
     return res;
