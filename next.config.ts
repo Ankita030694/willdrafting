@@ -588,6 +588,42 @@ const nextConfig: NextConfig = {
 
     return [
       {
+        source: "/templates/will-format-bengali-ichchapatra",
+        headers: [{ key: "Content-Language", value: "bn-IN" }],
+      },
+      {
+        source: "/templates/will-format-gujarati-vasiyatnama",
+        headers: [{ key: "Content-Language", value: "gu-IN" }],
+      },
+      {
+        source: "/templates/will-format-hindi",
+        headers: [{ key: "Content-Language", value: "hi-IN" }],
+      },
+      {
+        source: "/templates/will-format-kannada-uyilu",
+        headers: [{ key: "Content-Language", value: "kn-IN" }],
+      },
+      {
+        source: "/templates/will-format-marathi-mrutyupatra",
+        headers: [{ key: "Content-Language", value: "mr-IN" }],
+      },
+      {
+        source: "/templates/will-format-malayalam-maranapathram",
+        headers: [{ key: "Content-Language", value: "ml-IN" }],
+      },
+      {
+        source: "/templates/will-format-punjabi-vasiyatnama",
+        headers: [{ key: "Content-Language", value: "pa-IN" }],
+      },
+      {
+        source: "/templates/will-format-tamil-uyil-sasanam",
+        headers: [{ key: "Content-Language", value: "ta-IN" }],
+      },
+      {
+        source: "/templates/will-format-telugu-veelunama",
+        headers: [{ key: "Content-Language", value: "te-IN" }],
+      },
+      {
         source: "/",
         headers: securityHeaders,
       },

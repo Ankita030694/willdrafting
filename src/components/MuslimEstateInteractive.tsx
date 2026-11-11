@@ -33,17 +33,17 @@ const SHARIA_SCENARIOS: MuslimEstateScenario[] = [
     icon: "scale",
     heading: "The One-Third Disposable Estate Limit under Shariat",
     challengeSummary:
-      "A Muslim testator wants to bequeath all property to one relative or a charitable trust, unaware of testamentary caps.",
+      "A Muslim wants to leave all assets to one child or charity. They may not know about statutory caps on Wills.",
     legalMechanism:
-      "Under the Muslim Personal Law (Shariat) Application Act, 1937 and Section 118 of Mulla Mahomedan Law, a Muslim can bequeath at most one-third of net assets. Debts, funeral expenses, and unpaid Mahr must be cleared first. Any bequest beyond one-third is void unless all legal heirs consent.",
+      "Under the Shariat Act, 1937 and Mulla Mahomedan Law, a Muslim can Will at most one-third of net wealth. Debts, funeral costs, and unpaid Mahr must be paid first. Any bequest over one-third is void unless all heirs agree after death.",
     statutoryPrecedent:
       "Section 2 Shariat Act, 1937 & Ghulam Mohammad v. Ghulam Husain (PC)",
     recommendedInstrument:
       "Sharia-Compliant 1/3rd Wasiyatnama with Explicit Debt Recitals",
     checklist: [
-      "Deduct funeral expenses and unpaid Mahr to calculate true net estate",
-      "Limit non-heir and charitable bequests to a maximum of 33.33%",
-      "Record written heir consent if any legacy crosses the one-third cap",
+      "Deduct funeral costs and unpaid Mahr to find the net estate",
+      "Keep non-heir and charity bequests within the 33.33% cap",
+      "Record written heir consent if any gift exceeds one-third",
     ],
   },
   {
@@ -52,17 +52,17 @@ const SHARIA_SCENARIOS: MuslimEstateScenario[] = [
     icon: "users",
     heading: "Bequest to Legal Heir & Post-Demise Consent Rules",
     challengeSummary:
-      "A testator writes a Will giving a specific apartment to a favored child, but other siblings dispute the bequest after death.",
+      "A parent writes a Will leaving a flat to one child. Other children dispute the gift after death.",
     legalMechanism:
-      "Under Sunni Hanafi law, a bequest to any legal heir is completely void unless all other heirs give voluntary consent after the testator passes away. Under Shia Ithna Ashari law, a bequest to an heir up to one-third is valid without consent. If Sunni heirs refuse consent, the property returns to the Faraid estate pool.",
+      "Under Sunni Hanafi law, a bequest to any legal heir is void without voluntary consent of all other heirs after death. Under Shia law, a bequest to an heir up to one-third is valid without consent. If Sunni heirs do not consent, the asset returns to the common pool.",
     statutoryPrecedent:
       "Khajoorunissa v. Rowshan Jehan (1876 PC) & Mulla s. 117",
     recommendedInstrument:
       "Bespoke Wasiyat with Post-Mortem Heir Consent Deed or Hiba",
     checklist: [
-      "Determine whether Sunni Hanafi or Shia succession principles govern",
-      "Structure post-demise heir consent deeds to satisfy High Court scrutiny",
-      "Use lifetime Hiba transfers if other heirs are likely to dispute",
+      "Check whether Sunni Hanafi or Shia rules apply",
+      "Draft heir consent deeds to meet High Court standards",
+      "Use lifetime Hiba transfers if heirs may dispute",
     ],
   },
   {
@@ -71,17 +71,17 @@ const SHARIA_SCENARIOS: MuslimEstateScenario[] = [
     icon: "heart",
     heading: "Protecting Daughters & Spouse via Lifetime Hiba Gifts",
     challengeSummary:
-      "Parents with only daughters or a surviving wife want to ensure their entire property does not leak to distant male relatives.",
+      "Parents with only daughters or a wife want to protect their home. They want to stop distant male relatives from taking family assets.",
     legalMechanism:
-      "Under Sunni Faraid rules, an only daughter receives one-half (or two-thirds shared among multiple daughters), and a widow receives one-eighth. Distant agnates (uncles or cousins) claim the remaining estate. To protect wives and daughters, Muslim owners can make lifetime gifts (Hiba). Lifetime Hiba has no one-third limit and passes full ownership.",
+      "Under Sunni rules, an only daughter receives one-half (or two-thirds for multiple daughters). A widow receives one-eighth. Distant male cousins or uncles claim the rest. To protect wives and daughters, parents can make lifetime gifts (Hiba). Lifetime Hiba has no one-third cap.",
     statutoryPrecedent:
       "Hafeeza Bibi v. Shaikh Farid (2011 5 SCC 654) & TPA s. 129",
     recommendedInstrument:
       "Registered Lifetime Hiba Deed or Hiba-bil-Iwaz with Sub-Registrar",
     checklist: [
-      "Fulfill offer (Ijab), acceptance (Qabul), and physical possession (Qabda)",
-      "Execute the gift during sound health to avoid Marz-ul-Maut challenges",
-      "Complete Sub-Registrar registration to ensure smooth municipal mutation",
+      "Complete offer (Ijab), acceptance (Qabul), and possession (Qabda)",
+      "Execute the gift during sound health to stop Marz-ul-Maut claims",
+      "Register at the Sub-Registrar for smooth municipal mutation",
     ],
   },
   {
@@ -90,9 +90,9 @@ const SHARIA_SCENARIOS: MuslimEstateScenario[] = [
     icon: "landmark",
     heading: "Probate Exemption & Sub-Registrar Execution Strategy",
     challengeSummary:
-      "Families worry about expensive High Court probate cases and long legal delays when executing a Muslim Will in India.",
+      "Families worry about court delays and high probate fees when executing a Muslim Will in India.",
     legalMechanism:
-      "Under Section 213(2) and Section 58 of the Indian Succession Act, 1925, Mahomedan Wills are exempt from mandatory probate across India, including Mumbai, Kolkata, and Chennai. Registering the Wasiyat with the Sub-Registrar creates a certified public record that protects against forgery claims.",
+      "Under Section 213(2) of the Indian Succession Act, 1925, Muslim Wills do not need court probate anywhere in India. Registering the Wasiyat with the Sub-Registrar creates a secure public record. This protects against false forgery claims.",
     statutoryPrecedent:
       "Section 213(2) Indian Succession Act, 1925 & Registration Act s. 17",
     recommendedInstrument:
@@ -134,13 +134,12 @@ export default function MuslimEstateInteractive() {
           <span>Interactive Sharia Legal Analyzer</span>
         </div>
         {/* Strictly <= 70 chars, no em-dash */}
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Explore Sharia Estate Planning Scenarios &amp; Rights
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
-          Indian civil courts interpret Muslim succession through Shariat rules
-          and High Court precedents. Select your family situation below to see
-          the governing rule, legal remedy, and recommended document:
+          Select your family situation below to see the governing rule, legal
+          remedy, and recommended document:
         </p>
       </div>
 

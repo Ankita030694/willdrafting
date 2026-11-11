@@ -167,6 +167,14 @@ export default function WillFormatMalayalamClient() {
   const totalGovtFee = baseRegFee + computerFee + commissionFee;
 
   useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "ml-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 140;
       for (let i = TOC_ITEMS.length - 1; i >= 0; i--) {
@@ -347,7 +355,7 @@ Date: [Date]`;
 8. Formal Application for Commission Visit under Section 31 (If registration is conducted at residence/hospital for bedridden individuals).`;
 
   return (
-    <div className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
+    <div lang="ml-IN" className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
       {/* =========================================================================
           HERO SECTION (Matching Theme & Color Palette)
           ========================================================================= */}

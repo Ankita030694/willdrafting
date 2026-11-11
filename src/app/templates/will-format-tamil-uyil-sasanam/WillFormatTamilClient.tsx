@@ -133,6 +133,14 @@ export default function WillFormatTamilClient() {
   const [includeExecutor, setIncludeExecutor] = useState<boolean>(true);
   const [includeDoctorCert, setIncludeDoctorCert] = useState<boolean>(true);
 
+  useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "ta-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
   // Active section tracking on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -333,7 +341,7 @@ WITNESS 2: [Name, Address, ID Proof]`;
   };
 
   return (
-    <div className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
+    <div lang="ta-IN" className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
       {/* =========================================================================
           LAYER 1: HERO SECTION (Full-Width Brand Navy - Exact Tool Theme)
           ========================================================================= */}

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_Devanagari } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatMarathiClient from "./WillFormatMarathiClient";
 import {
   PAGE_URL,
@@ -195,10 +196,17 @@ export default function WillFormatMarathiPage() {
   return (
     <>
       <script
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='mr-IN';",
+        }}
+      />
+      <meta httpEquiv="content-language" content="mr-IN" />
+      <HtmlLangSync lang="mr-IN" />
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
-      <div className={`min-h-screen bg-[#FAF7F0] text-[#172228] antialiased ${notoDevanagari.variable}`}>
+      <div lang="mr-IN" className={`min-h-screen bg-[#FAF7F0] text-[#172228] antialiased ${notoDevanagari.variable}`}>
         <Navbar />
         <WillFormatMarathiClient />
         <Footer />

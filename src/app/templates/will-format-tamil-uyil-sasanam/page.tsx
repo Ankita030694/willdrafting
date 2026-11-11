@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatTamilClient from "./WillFormatTamilClient";
 
 // Screaming Frog SEO Rules: Title strictly 50-60 chars, Meta Description strictly 140-155 chars, 0 em-dashes
@@ -254,10 +255,17 @@ export default function WillFormatTamilPage() {
   return (
     <>
       <script
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='ta-IN';",
+        }}
+      />
+      <meta httpEquiv="content-language" content="ta-IN" />
+      <HtmlLangSync lang="ta-IN" />
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
-      <div className="min-h-screen bg-[#FAF7F0] text-[#172228] antialiased">
+      <div lang="ta-IN" className="min-h-screen bg-[#FAF7F0] text-[#172228] antialiased">
         <Navbar />
         <WillFormatTamilClient />
         <Footer />

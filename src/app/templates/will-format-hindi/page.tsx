@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_Devanagari } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatHindiClient from "./WillFormatHindiClient";
 import {
   PAGE_URL,
@@ -188,14 +189,20 @@ export default function WillFormatHindiPage() {
 
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='hi-IN';",
+        }}
+      />
+      <meta httpEquiv="content-language" content="hi-IN" />
+      <HtmlLangSync lang="hi-IN" />
       <Navbar />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
-      {/* lang="hi" on the page wrapper (root <html> stays "en" for the rest of the site). */}
       <div
-        lang="hi"
+        lang="hi-IN"
         className={notoDevanagari.variable}
         style={{
           fontFamily:

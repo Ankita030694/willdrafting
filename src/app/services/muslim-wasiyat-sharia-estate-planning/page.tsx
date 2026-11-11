@@ -85,35 +85,35 @@ export const metadata: Metadata = {
 const WASIYAT_FAQS = [
   {
     q: "Can a Muslim in India bequeath 100% of their property through a Will?",
-    a: "No. Under the Muslim Personal Law (Shariat) Application Act, 1937 and Mulla's Mahomedan Law, a Muslim can bequeath at most one-third of their net property through a Wasiyat. The remaining two-thirds must pass to legal heirs according to Quranic Faraid rules, unless all heirs consent after death.",
+    a: "No. Under the Shariat Act, 1937, a Muslim can Will at most one-third of net wealth via a Wasiyat. The remaining two-thirds must go to legal heirs under Quranic Faraid rules. Heirs can only receive extra if all other heirs agree after death.",
   },
   {
     q: "Can a Sunni Muslim leave a Wasiyat bequest to an existing legal heir?",
-    a: "Under Sunni Hanafi law, a bequest to any legal heir (such as one particular child or spouse) is void unless all other legal heirs consent after the testator passes away. Consent given during the testator's lifetime is not binding in Sunni personal law.",
+    a: "Under Sunni Hanafi law, a Will bequest to an heir is void unless all other heirs agree after death. Consent given during life does not count under Sunni law.",
   },
   {
     q: "How does Shia law differ from Sunni law regarding bequests to legal heirs?",
-    a: "Under Shia Ithna Ashari law, a testator can bequeath up to one-third of the estate to any legal heir without needing the consent of other heirs. Consent for bequests exceeding one-third can be given either during the testator's lifetime or after death.",
+    a: "Under Shia law, a person can Will up to one-third to any heir without asking other heirs. Consent for gifts over one-third can be given during life or after death.",
   },
   {
     q: "How can a Muslim father protect his wife and daughters from distant relatives?",
-    a: "Under default Sunni rules, daughters and wives do not inherit the whole estate, and distant agnatic residuaries (like brothers or uncles) inherit the remainder. To protect a wife and daughters, a father can gift property during life via Hiba or Hiba-bil-Iwaz. Lifetime gifts have no one-third limit.",
+    a: "Under Sunni rules, daughters and wives do not take the whole estate. Distant male relatives claim the rest. To protect a wife and daughters, a father can gift property during his life via Hiba. Lifetime gifts have no one-third limit.",
   },
   {
     q: "Is probate of a Muslim Will mandatory in Indian High Courts?",
-    a: "No. Under Section 213(2) of the Indian Succession Act, 1925, Mahomedan Wills are exempt from mandatory probate across India, including Mumbai, Kolkata, and Chennai. However, registering the Wasiyat with the local Sub-Registrar provides strong proof and prevents forgery claims.",
+    a: "No. Under Section 213(2) of the Indian Succession Act, 1925, Muslim Wills do not need court probate in India. Registering the Wasiyat with the Sub-Registrar provides strong proof and stops false claims.",
   },
   {
     q: "Does an oral gift (Hiba) of immovable property require mandatory registration?",
-    a: "In Hafeeza Bibi v. Shaikh Farid (2011), the Supreme Court held that an oral Hiba is valid if it fulfills offer, acceptance, and delivery of possession. Under Section 129 of the Transfer of Property Act, oral Muslim gifts are exempt from Section 123. Still, a registered deed prevents municipal record disputes.",
+    a: "In Hafeeza Bibi (2011), the Supreme Court ruled that an oral Hiba is valid with offer, acceptance, and delivery of possession. Oral Muslim gifts are exempt under Section 129 of the Transfer of Property Act. Even so, a registered deed makes land mutation faster.",
   },
   {
     q: "How does unpaid Mahr affect the distribution of a deceased Muslim's estate?",
-    a: "Unpaid prompt or deferred Mahr is an unsecured debt under Muslim personal law. Debts must be paid out of the estate before any Wasiyat bequest or Faraid inheritance is calculated. A widow can retain possession of her late husband's property until her Mahr debt is paid.",
+    a: "Unpaid Mahr is a priority debt under Muslim personal law. Debts must be cleared before any Wasiyat bequest or heir share is given. A widow can hold her late husband's property until her Mahr is paid in full.",
   },
   {
     q: "What happens if a Muslim marries under the Special Marriage Act, 1954?",
-    a: "If a Muslim registers their marriage under the Special Marriage Act, 1954, succession is governed by the Indian Succession Act, 1925 rather than Shariat law. The individual gains complete testamentary freedom to bequeath 100% of their property to anyone without the one-third limit.",
+    a: "If a Muslim marries under the Special Marriage Act, 1954, succession follows the Indian Succession Act, 1925. The person gains full freedom to Will 100% of their property to anyone, free from the one-third cap.",
   },
 ];
 
@@ -440,12 +440,11 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
                 <strong className="text-[#111827]">
                   Muslim Personal Law (Shariat) Application Act, 1937
                 </strong>
-                , a Muslim cannot bequeath more than one-third of their net
-                estate without legal heir consent. Using secular templates can
-                make your Will void in court. Our High Court advocates draft
-                genuine Sharia-compliant Wasiyats and structure lifetime Hiba
-                transfers. This protects your spouse and daughters from future
-                court battles.
+                , a Muslim can only Will up to one-third of their net estate
+                without heir consent. Using secular templates can make a Will
+                void in court. Our High Court advocates draft genuine
+                Sharia-compliant Wasiyats and structure lifetime Hiba gifts.
+                This protects your wife and daughters from court battles.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -497,28 +496,26 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>Violating the 1/3rd Wasiyat Cap:</strong> Indian
-                    succession templates let users bequeath 100% of assets. For
-                    Muslims, any bequest exceeding one-third of the net estate is
-                    void without heir consent.
+                    <strong>Violating the 1/3rd Wasiyat Cap:</strong> Standard
+                    templates let users Will 100% of assets. For Muslims, any
+                    bequest over one-third of the net estate is void without
+                    heir consent.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
                     <strong>Sunni Ban on Bequests to Legal Heirs:</strong> Under
-                    Sunni law, leaving a Wasiyat bequest to a legal heir without
-                    post-demise consent of all other heirs is completely void in
-                    court.
+                    Sunni law, leaving a Wasiyat gift to an heir without written
+                    consent of all other heirs is void in court.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
                     <strong>Unpaid Mahr and Debts Neglected:</strong> Sharia
-                    mandates clearing funeral costs and unpaid Mahr before
-                    calculating estate shares. Ignoring this causes probate and
-                    mutation disputes.
+                    requires paying funeral costs and unpaid Mahr before dividing
+                    assets. Ignoring this leads to court disputes.
                   </span>
                 </li>
               </ul>
@@ -668,22 +665,22 @@ export default function MuslimWasiyatShariaEstatePlanningPage() {
               {
                 step: "01",
                 title: "Debt & Mahr Clearance",
-                desc: "We calculate the true net estate by accounting for funeral charges, third-party liabilities, and unpaid prompt or deferred Mahr owed to the surviving wife.",
+                desc: "We find the true net estate. We deduct funeral costs, debts, and unpaid prompt or deferred Mahr owed to the wife.",
               },
               {
                 step: "02",
                 title: "Faraid Share Audit",
-                desc: "Our legal team maps Quranic Sharers and Residuaries under Sunni or Shia rules. We ensure any testamentary bequest remains strictly within the one-third cap.",
+                desc: "We map Quranic Sharers and Residuaries under Sunni or Shia rules. We ensure any Will bequest stays within the one-third cap.",
               },
               {
                 step: "03",
                 title: "Advocate Legal Drafting",
-                desc: "We draft customized Wasiyat recitals with clear asset boundaries, or structure separate post-demise heir consent deeds to satisfy High Court requirements.",
+                desc: "We draft custom Wasiyat clauses with clear terms. We also prepare heir consent deeds to meet High Court rules.",
               },
               {
                 step: "04",
                 title: "SRO Filing or Hiba Delivery",
-                desc: "We handle biometric registration at the local Sub-Registrar office for Wasiyats, or execute registered Hiba deeds with actual delivery of physical possession.",
+                desc: "We manage Sub-Registrar registration for Wasiyats, or draft registered Hiba deeds with proof of physical possession.",
               },
             ].map((item) => (
               <div
@@ -840,23 +837,18 @@ PROVIDED ALWAYS that the remaining two-thirds (2/3rds) of my net estate shall de
                 Daughter &amp; Spouse Inheritance Protection under Shariat
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Under default Sunni Faraid rules, an only daughter inherits
-                one-half of the estate, while multiple daughters share two-thirds.
-                A surviving wife receives one-eighth when children exist. The
-                remaining portion passes to distant agnatic residuaries, such
-                as paternal uncles or male cousins.
+                Under default Sunni rules, an only daughter receives one-half of
+                the estate. Multiple daughters share two-thirds. A wife receives
+                one-eighth when children exist. The remaining share passes to
+                distant male relatives, such as uncles or cousins.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                To safeguard their home for their wife and daughters, Muslim
-                fathers execute lifetime gifts (Hiba or Hiba-bil-Iwaz). Under
-                the Supreme Court ruling in{" "}
-                <strong className="text-[#111827]">
-                  Hafeeza Bibi v. Shaikh Farid (2011)
-                </strong>
-                , a Muslim has absolute freedom to gift up to 100% of their
-                property during their lifetime. Our advocates prepare ironclad
-                Hiba deeds with complete delivery of possession. This protects
-                your family home from distant relative claims.
+                To protect their home for wife and daughters, Muslim owners can
+                make lifetime gifts (Hiba). In Hafeeza Bibi v. Shaikh Farid
+                (2011), the Supreme Court confirmed that a Muslim can gift up to
+                100% of property during life. Our advocates draft registered
+                Hiba deeds with proof of possession. This protects your home
+                from outside claims.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -873,6 +865,33 @@ PROVIDED ALWAYS that the remaining two-thirds (2/3rds) of my net estate shall de
               >
                 <span>Draft Online Will for 1/3rd Share</span>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Plain-English Quick Summary Box for Readability */}
+        <section className="w-full mb-16 sm:mb-20 bg-white rounded-2xl p-6 sm:p-8 border border-[#172228]/10 shadow-xs">
+          <div className="text-xs font-bold uppercase tracking-[0.16em] text-[#C65378] mb-3">
+            Quick Takeaways · Plain-English Muslim Estate Guide
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-[#374151]">
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>1. The 1/3rd Rule:</strong> A Muslim can Will at most one-third of net wealth to non-heirs or charities.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>2. Pay Mahr First:</strong> Unpaid Mahr is a priority debt. Clear funeral costs and debts before dividing assets.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>3. Protect Daughters:</strong> Lifetime Hiba has no one-third cap. Gift up to 100% of property to wife and daughters.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>4. Sunni Heir Rule:</strong> A Will gift to an heir is void unless all other heirs give written consent after death.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>5. Skip Costly Probate:</strong> Muslim Wills do not require court probate under Section 213(2) of the Succession Act.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>6. SRO Registration:</strong> Register your Wasiyat with the local Sub-Registrar to create permanent proof.
             </div>
           </div>
         </section>

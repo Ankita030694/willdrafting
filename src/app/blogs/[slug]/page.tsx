@@ -30,6 +30,16 @@ import {
   BLOG_H1_OVERRIDES,
   BLOG_DESCRIPTION_OVERRIDES,
 } from "@/lib/blogSlugs";
+import {
+  DELHI_MUTATION_SLUG,
+  DELHI_MUTATION_SHORT_VERSION,
+  DELHI_MUTATION_ACTION_STEPS,
+  DELHI_MUTATION_FAQS,
+  DELHI_MUTATION_REVIEWS,
+  DELHI_MUTATION_REFERENCES,
+  DELHI_MUTATION_CONTENT_HTML,
+  DELHI_MUTATION_FALLBACK_DOC,
+} from "@/data/delhiMutationBlogData";
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = true;
@@ -452,7 +462,12 @@ function safeIsoDate(d: any): string {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const dbBlog = await findMongoBlogBySlug(slug);
+  let dbBlog = await findMongoBlogBySlug(slug);
+  const normalizedSlug = canonicalizeBlogSlug(slug);
+
+  if (!dbBlog && normalizedSlug === DELHI_MUTATION_SLUG) {
+    dbBlog = DELHI_MUTATION_FALLBACK_DOC as any;
+  }
 
   if (dbBlog) {
     const rawCanonicalSlug = String(dbBlog.slug || slug);
@@ -543,7 +558,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BlogSlugPage({ params }: PageProps) {
   const { slug } = await params;
-  const dbBlog = await findMongoBlogBySlug(slug);
+  let dbBlog = await findMongoBlogBySlug(slug);
+  const normalizedSlug = canonicalizeBlogSlug(slug);
+
+  if (!dbBlog && normalizedSlug === DELHI_MUTATION_SLUG) {
+    dbBlog = DELHI_MUTATION_FALLBACK_DOC as any;
+  }
+
   // Hardcoded fallback commented out — all blogs are rendered from MongoDB:
   // const staticArticle = !dbBlog ? getArticleBySlug(slug) : undefined;
   const staticArticle = undefined as ReturnType<typeof getArticleBySlug>;
@@ -584,16 +605,25 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const keywords = Array.isArray(dbBlog ? dbBlog.keywords : staticArticle!.keywords)
     ? (dbBlog ? dbBlog.keywords! : staticArticle!.keywords).filter(Boolean).map(String)
     : [];
-  const shortVersion = Array.isArray(dbBlog ? dbBlog.shortVersion : staticArticle!.shortVersion)
+  const isDelhiMutation = canonicalSlug === DELHI_MUTATION_SLUG;
+  const shortVersion = isDelhiMutation
+    ? DELHI_MUTATION_SHORT_VERSION
+    : Array.isArray(dbBlog ? dbBlog.shortVersion : staticArticle!.shortVersion)
     ? (dbBlog ? dbBlog.shortVersion! : staticArticle!.shortVersion).filter(Boolean).map(String)
     : [];
-  const actionSteps = Array.isArray(dbBlog ? dbBlog.actionSteps : staticArticle!.actionSteps)
+  const actionSteps = isDelhiMutation
+    ? DELHI_MUTATION_ACTION_STEPS
+    : Array.isArray(dbBlog ? dbBlog.actionSteps : staticArticle!.actionSteps)
     ? (dbBlog ? dbBlog.actionSteps! : staticArticle!.actionSteps).filter(Boolean).map(String)
     : [];
-  const faqs = Array.isArray(dbBlog ? dbBlog.faqs : staticArticle!.faqs)
+  const faqs = isDelhiMutation
+    ? DELHI_MUTATION_FAQS
+    : Array.isArray(dbBlog ? dbBlog.faqs : staticArticle!.faqs)
     ? (dbBlog ? dbBlog.faqs! : staticArticle!.faqs!).filter((f) => f && f.question && f.answer)
     : [];
-  const rawReviews = dbBlog && Array.isArray(dbBlog.reviews) ? dbBlog.reviews : [];
+  const rawReviews = isDelhiMutation
+    ? DELHI_MUTATION_REVIEWS
+    : dbBlog && Array.isArray(dbBlog.reviews) ? dbBlog.reviews : [];
   const reviews = rawReviews
     .map((r: any) => ({
       name: String(r?.name || "")
@@ -609,7 +639,10 @@ export default async function BlogSlugPage({ params }: PageProps) {
         .trim(),
     }))
     .filter((r) => r.name && r.review.length > 0);
-  const references = (dbBlog && Array.isArray(dbBlog.references) ? dbBlog.references : [])
+  const rawReferences = isDelhiMutation
+    ? DELHI_MUTATION_REFERENCES
+    : (dbBlog && Array.isArray(dbBlog.references) ? dbBlog.references : []);
+  const references = rawReferences
     .filter((ref) => ref && ref.title)
     .map((ref) => ({
       ...ref,
@@ -712,11 +745,15 @@ export default async function BlogSlugPage({ params }: PageProps) {
   // const relatedArticles = getRelatedArticles(canonicalSlug, 3);
   const relatedArticles = await findRelatedMongoBlogs(canonicalSlug, 3);
 
-  const { processedHtml, toc } = dbBlog
-    ? processHtmlAndExtractToc(dbBlog.description || dbBlog.content || "", imageSrc)
+  const rawContentSource = isDelhiMutation
+    ? DELHI_MUTATION_CONTENT_HTML
+    : (dbBlog ? dbBlog.description || dbBlog.content || "" : "");
+
+  const { processedHtml, toc } = rawContentSource
+    ? processHtmlAndExtractToc(rawContentSource, imageSrc)
     : { processedHtml: "", toc: [] };
 
-  const [firstHalfHtml, secondHalfHtml] = dbBlog
+  const [firstHalfHtml, secondHalfHtml] = rawContentSource
     ? splitHtmlForInfographic(processedHtml)
     : ["", ""];
 

@@ -93,9 +93,26 @@ const authMiddleware = auth((req) => {
   return withSecurityHeaders(NextResponse.next());
 });
 
+const TEMPLATE_LANG_MAP: Record<string, string> = {
+  "/templates/will-format-bengali-ichchapatra": "bn-IN",
+  "/templates/will-format-gujarati-vasiyatnama": "gu-IN",
+  "/templates/will-format-hindi": "hi-IN",
+  "/templates/will-format-kannada-uyilu": "kn-IN",
+  "/templates/will-format-marathi-mrutyupatra": "mr-IN",
+  "/templates/will-format-malayalam-maranapathram": "ml-IN",
+  "/templates/will-format-punjabi-vasiyatnama": "pa-IN",
+  "/templates/will-format-tamil-uyil-sasanam": "ta-IN",
+  "/templates/will-format-telugu-veelunama": "te-IN",
+};
+
 export default async function proxy(req: NextRequest, event: NextFetchEvent) {
   if (!isProtectedRoute(req.nextUrl.pathname)) {
-    return withSecurityHeaders(NextResponse.next());
+    const res = withSecurityHeaders(NextResponse.next());
+    const lang = TEMPLATE_LANG_MAP[req.nextUrl.pathname];
+    if (lang) {
+      res.headers.set("Content-Language", lang);
+    }
+    return res;
   }
 
   const response = await (

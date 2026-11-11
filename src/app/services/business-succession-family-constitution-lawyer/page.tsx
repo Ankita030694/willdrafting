@@ -86,35 +86,35 @@ export const metadata: Metadata = {
 const SUCCESSION_FAQS = [
   {
     q: "Does a nominee of company shares become the absolute legal owner after a promoter dies?",
-    a: "No. A nominee is only a temporary caretaker under Section 72 of the Companies Act, 2013. In Shakti Yezdani (2023 SC), the Supreme Court ruled that nominees hold shares in trust for the legal heirs named in the promoter's Will.",
+    a: "No. A nominee is only a temporary caretaker under Section 72 of the Companies Act, 2013. In Shakti Yezdani (2023 SC), the Supreme Court settled this rule. Nominees hold shares in trust. Legal ownership goes to the heirs named in the promoter's Will.",
   },
   {
     q: "What happens to a partnership firm if a partner dies without a succession clause?",
-    a: "Under Section 42(c) of the Indian Partnership Act, 1932, a partnership firm dissolves on a partner's death. The firm cannot operate bank accounts unless the partnership deed has an express continuity clause.",
+    a: "Under Section 42(c) of the Indian Partnership Act, 1932, a firm ends when a partner dies. Banks freeze firm accounts at once. The business can only stay open if the deed has a clear continuity clause.",
   },
   {
     q: "Can a legal heir automatically become a director in a private limited company?",
-    a: "No. A Will transfers equity shares, not a board seat. Directorship cannot be inherited. To secure a board seat, the company Articles of Association (AoA) and Shareholders Agreement (SHA) must include board nomination terms.",
+    a: "No. A Will transfers shares, not a directorship. You cannot inherit a board seat. To secure a seat, the company AoA and SHA must include board nomination terms.",
   },
   {
     q: "Is a Family Constitution legally binding in Indian courts?",
-    a: "A Family Constitution combines moral rules with binding contracts. Governance protocols guide family harmony. When backed by voting pacts, AoA amendments, and private trusts, Indian courts enforce them under the Indian Contract Act, 1872.",
+    a: "A Family Constitution guides family harmony. It pairs moral rules with binding pacts. When backed by voting pacts, AoA updates, and family trusts, Indian courts enforce them under the Indian Contract Act, 1872.",
   },
   {
     q: "How does Keyman Insurance protect business succession during a promoter transition?",
-    a: "Keyman Insurance pays cash directly to the company if a key promoter passes away. The firm uses this money to settle capital dues, buy back shares from non-working heirs, and reassure lenders without selling company assets.",
+    a: "Keyman Insurance pays cash to the company when a key leader dies. The firm uses these funds to clear debts. It buys back shares from non-working heirs. This keeps business assets safe without panic sales.",
   },
   {
     q: "Does transmission of corporate shares to legal heirs attract capital gains tax in India?",
-    a: "No. Under Section 47(iii) of the Income Tax Act, 1961, passing assets through a Will carries zero capital gains tax. Stamp duty on share transmission is also minimal compared to ordinary share sales.",
+    a: "No. Under Section 47(iii) of the Income Tax Act, 1961, passing assets through a Will carries zero capital gains tax. Stamp duty on share transmission is also low compared to standard share sales.",
   },
   {
     q: "How do you prevent deadlock between active working and non-working sibling heirs?",
-    a: "Our advocates create two share classes in the AoA. Working heirs receive equity with management rights. Non-working heirs receive preference shares or regular dividends guaranteed by written profit distribution rules.",
+    a: "Our lawyers set up two share classes in the company AoA. Working heirs get voting equity to run daily operations. Non-working heirs get preference shares or set dividends. This stops sibling fights over company cash.",
   },
   {
     q: "What happens to a sole proprietorship GST registration and input tax credit on death?",
-    a: "A proprietorship PAN and GSTIN close upon death. However, under GST Circular 96/15/2019-GST and Section 18(6) of the CGST Act, the business can transfer to an heir. Accumulated tax credits transfer via Form GST ITC-02 with a valid Will.",
+    a: "A proprietorship PAN and GSTIN close when the owner dies. But under Section 18(6) of the CGST Act, 2017, the firm can transfer as a going concern. Unused tax credits transfer via Form GST ITC-02 with a valid Will.",
   },
 ];
 
@@ -436,13 +436,13 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                A business can freeze when a promoter passes away. Banks block
-                company accounts when leadership is unclear. Board meetings
-                stall without named directors. Co-founders may also block share
-                transfers using pre-emption rules. Our High Court advocates align
-                personal Wills with company Articles of Association (AoA) and
-                Shareholders Agreements (SHA). We protect your business under the
-                Companies Act, 2013 and Indian Partnership Act, 1932.
+                A business can freeze when a founder dies. Banks block accounts
+                when title is unclear. Board meetings halt without named
+                directors. Co-founders may also block share transfers using
+                pre-emption rules. Our High Court advocates align your Will with
+                company Articles of Association (AoA) and Shareholders
+                Agreements (SHA). We keep your firm running under the Companies
+                Act, 2013 and Partnership Act, 1932.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -494,8 +494,9 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
                     <strong>AoA Rules Overrule a Will:</strong> Company Articles
-                    control share transfers. If your Will violates Table F
-                    Regulations 23 to 27, the board can reject your heirs.
+                    control share transfers. If a Will breaches Table F
+                    Regulations 23 to 27, the board can reject heirs. A clear
+                    Will prevents this.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -503,7 +504,7 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
                   <span>
                     <strong>A Nominee Is Not an Owner:</strong> In Shakti Yezdani
                     (2023 SC), the Supreme Court ruled that nominees only hold
-                    shares in trust. Heirs face court battles without a clear
+                    shares in trust. Heirs face long court fights without a clear
                     Will.
                   </span>
                 </li>
@@ -511,8 +512,8 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
                     <strong>The Partnership Dissolution Trap:</strong> Under
-                    Section 42(c), a partnership firm closes on a partner&apos;s
-                    death. Only an express continuity clause keeps the firm open.
+                    Section 42(c), a partnership firm ends on a partner&apos;s
+                    death. Only an express written clause keeps the firm open.
                   </span>
                 </li>
               </ul>
@@ -656,22 +657,22 @@ export default function BusinessSuccessionFamilyConstitutionLawyerPage() {
               {
                 step: "01",
                 title: "Corporate & Estate Audit",
-                desc: "We review company AoA clauses, SHA covenants, demat accounts, and bank loan guarantees. We trace all equity holdings.",
+                desc: "We review company AoA clauses, SHA terms, demat folios, and bank loan guarantees. We trace every share.",
               },
               {
                 step: "02",
                 title: "Constitutional Harmonization",
-                desc: "We amend company Articles of Association under Table F. We also update partnership deeds with Section 42(c) continuity terms.",
+                desc: "We align company Articles with Table F rules. We also update partnership deeds with Section 42(c) terms.",
               },
               {
                 step: "03",
                 title: "Family Constitution Charter",
-                desc: "We hold family consensus talks. We draft a clear Family Constitution and set up a Family Council for next-generation leaders.",
+                desc: "We lead family talks. We draft a clear Family Constitution and set up a Family Council for the next generation.",
               },
               {
                 step: "04",
                 title: "Board & Regulatory Execution",
-                desc: "We prepare board transmission resolutions and Form SH-4 indemnity filings. This transfers shares quickly without probate delays.",
+                desc: "We prepare board transmission resolutions and Form SH-4 indemnity filings. This transfers shares fast with zero court delays.",
               },
             ].map((item) => (
               <div
@@ -822,16 +823,15 @@ FURTHERMORE, in the event of any conflict between the terms of any Shareholders'
                 Family Constitution &amp; Corporate Conflict Resolution
               </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                Most Indian family businesses face severe conflict in the second
-                or third generation. Fights occur when non-working relatives
-                demand big cash payouts while active leaders reinvest profits.
+                Many Indian family firms face fights in the second or third
+                generation. Trouble starts when non-working relatives demand
+                cash while active leaders reinvest profits.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
-                A Family Constitution prevents these disputes. It sets up a
+                A Family Constitution stops these disputes early. It sets up a
                 Family Council for family peace and a Corporate Board for
-                business growth. Supported by private trusts under the Indian
-                Trusts Act, 1882, your company stays protected from bitter
-                lawsuits.
+                business growth. Paired with private trusts under the Indian
+                Trusts Act, 1882, your business stays safe from court battles.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
@@ -848,6 +848,33 @@ FURTHERMORE, in the event of any conflict between the terms of any Shareholders'
               >
                 <span>Draft Online Will for Personal Estate</span>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Plain-English Quick Summary Box for Readability */}
+        <section className="w-full mb-16 sm:mb-20 bg-white rounded-2xl p-6 sm:p-8 border border-[#172228]/10 shadow-xs">
+          <div className="text-xs font-bold uppercase tracking-[0.16em] text-[#C65378] mb-3">
+            Quick Takeaways · Plain-English Business Succession Guide
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-[#374151]">
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>1. Plan Early:</strong> A clear Will stops business freeze. It keeps company bank accounts active after death.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>2. Align with AoA:</strong> Company Articles overrule a Will. Make sure Table F rules match your Will bequests.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>3. Partnership Clause:</strong> A firm ends when a partner dies. A Section 42(c) clause keeps the firm open.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>4. Stop Family Fights:</strong> Set two share classes. Give voting shares to working heirs and fixed dividends to others.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>5. Zero Capital Gains Tax:</strong> Passing shares via a Will is 100% tax-free under Section 47(iii) of the Income Tax Act.
+            </div>
+            <div className="p-4 rounded-xl bg-[#FAF7F0] border border-[#172228]/5">
+              <strong>6. Fast Share Transfer:</strong> Board resolutions and Form SH-4 transfer shares within days without court probate.
             </div>
           </div>
         </section>

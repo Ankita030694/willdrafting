@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_Gujarati } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatGujaratiClient from "./WillFormatGujaratiClient";
 
 // Noto Sans Gujarati font for crisp vernacular typography
@@ -272,10 +273,17 @@ export default function WillFormatGujaratiPage() {
   return (
     <>
       <script
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='gu-IN';",
+        }}
+      />
+      <meta httpEquiv="content-language" content="gu-IN" />
+      <HtmlLangSync lang="gu-IN" />
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
-      <div className={`min-h-screen bg-[#FAF7F0] text-[#172228] antialiased ${notoGujarati.variable}`}>
+      <div lang="gu-IN" className={`min-h-screen bg-[#FAF7F0] text-[#172228] antialiased ${notoGujarati.variable}`}>
         <Navbar />
         <WillFormatGujaratiClient />
         <Footer />

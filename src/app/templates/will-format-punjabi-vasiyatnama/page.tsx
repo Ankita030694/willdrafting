@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatPunjabiClient from "./WillFormatPunjabiClient";
 
 // Screaming Frog SEO Rules: Title strictly 50-60 chars, Meta Description strictly 140-155 chars, 0 em-dashes
@@ -272,10 +273,17 @@ export default function WillFormatPunjabiPage() {
   return (
     <>
       <script
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='pa-IN';",
+        }}
+      />
+      <meta httpEquiv="content-language" content="pa-IN" />
+      <HtmlLangSync lang="pa-IN" />
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
-      <div className="min-h-screen bg-[#FAF7F0] text-[#172228] antialiased">
+      <div lang="pa-IN" className="min-h-screen bg-[#FAF7F0] text-[#172228] antialiased">
         <Navbar />
         <WillFormatPunjabiClient />
         <Footer />

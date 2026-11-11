@@ -34,18 +34,18 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
     icon: "building",
     heading: "Pvt Ltd Equity & Board Seat Succession Protocol",
     challengeSummary:
-      "When a majority promoter dies, company bank accounts and board meetings freeze. Surviving co-founders may refuse to register share transmission or grant directorship to heirs.",
+      "When a majority promoter dies, company bank accounts freeze. Board meetings halt. Co-founders may refuse to transfer shares or grant board seats to heirs.",
     legalMechanism:
-      "Under Section 56 of the Companies Act, 2013 and Table F Articles of Association (Regulations 23 to 27), shares transmit to testamentary heirs upon production of a probated Will or Succession Certificate. A well-aligned Shareholders Agreement (SHA) mandates board seat inheritance and contains clear pre-emption buy-sell protocols.",
+      "Under Section 56 of the Companies Act, 2013 and Table F AoA (Regulations 23 to 27), shares pass to heirs upon proof of a Will. A clear Shareholders Agreement (SHA) protects board seats and sets fair share buyout rules.",
     statutoryPrecedent:
       "Companies Act, 2013 s. 56 & Shakti Yezdani v. Jayanand Salgaonkar (2023 SC)",
     recommendedInstrument:
       "Harmonized Promoter Will + Restated AoA Table F Covenants + SHA Deed of Adherence",
     checklist: [
-      "Review AoA transmission clauses against Section 56 statutory requirements",
-      "Draft a Board Transmission Resolution template and Form SH-4 indemnity",
-      "Insert compulsory tag-along and drag-along covenants in the SHA",
-      "Ensure personal Will explicitly names specific equity lot numbers and demat folios",
+      "Review AoA transmission terms against Section 56 rules",
+      "Draft a Board Transmission Resolution and Form SH-4 indemnity",
+      "Insert tag-along and drag-along covenants in the SHA",
+      "Ensure the Will names exact equity shares and demat folios",
     ],
   },
   {
@@ -54,18 +54,18 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
     icon: "users",
     heading: "Family Constitution & Multi-Gen Council Charter",
     challengeSummary:
-      "Multi-generational family businesses face destructive rivalries between working family members who manage operations and non-working branches seeking higher cash dividends.",
+      "Multi-generation family firms often suffer rivalries. Working heirs run daily operations, while non-working heirs seek bigger cash payouts.",
     legalMechanism:
-      "A formal Family Constitution (Pariwarik Samvidhan) establishes a two-tier governance structure: a Family Council for strategic harmony and a Corporate Board for business execution. It defines employment eligibility, next-generation training, exit valuation formulas, and a mandatory private arbitration tribunal under the Arbitration and Conciliation Act, 1996.",
+      "A Family Constitution creates two bodies: a Family Council for harmony and a Corporate Board for business growth. It sets job rules, training paths, exit share valuations, and private arbitration under the Arbitration and Conciliation Act, 1996.",
     statutoryPrecedent:
       "Indian Contract Act, 1872 & Indian Trusts Act, 1882 (Enforceability of Family Pacts)",
     recommendedInstrument:
       "Family Constitution & Charter + Family Council By-Laws + Voting Trust Deed",
     checklist: [
-      "Establish qualifications and compensation rules for next-generation family members",
-      "Draft clear dividend payout thresholds balancing reinvestment and branch income",
-      "Define pre-agreed share buyout formulas to prevent hostile fire-sales",
-      "Set up an independent advisory committee with external senior counsel",
+      "Set job rules and pay rates for next-generation family members",
+      "Draft clear dividend payout rules balancing growth and family income",
+      "Define pre-agreed share buyout formulas to stop hostile sales",
+      "Set up an independent advisory team with external senior counsel",
     ],
   },
   {
@@ -74,18 +74,18 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
     icon: "briefcase",
     heading: "Partnership Firm Dissolution Defense & Continuity",
     challengeSummary:
-      "Under Section 42(c) of the Indian Partnership Act, 1932, a partnership firm automatically dissolves upon the death of any partner unless there is an express contrary agreement in the Partnership Deed.",
+      "Under Section 42(c) of the Indian Partnership Act, 1932, a firm ends when any partner dies. This happens unless the deed has a written agreement to continue.",
     legalMechanism:
-      "We amend the Partnership Deed to insert a perpetual continuity clause under Section 42(c). This covenant states that the firm shall continue with surviving partners, while granting the deceased partner's designated legal heir either automatic admission as an active partner or full capital account settlement through Keyman insurance proceeds.",
+      "We add a non-dissolution clause to the Partnership Deed under Section 42(c). The firm stays open with surviving partners. Heirs either join as partners or receive full capital payouts via Keyman insurance cash.",
     statutoryPrecedent:
       "Section 42(c), Indian Partnership Act, 1932 & CIT v. Seth Govindram Sugar Mills (SC)",
     recommendedInstrument:
       "Amended & Restated Partnership Deed + Complementary Testamentary Will",
     checklist: [
-      "Verify that the existing partnership deed has an explicit Section 42(c) non-dissolution clause",
-      "Define standard accounting valuation for capital accounts, goodwill, and work-in-progress",
-      "Procure partnership Keyman Insurance to fund capital payouts without choking cash flow",
-      "Execute heir admission protocols and fresh Form A filing before the Registrar of Firms",
+      "Verify that the deed has a Section 42(c) non-dissolution clause",
+      "Define standard accounting rules for capital and work-in-progress",
+      "Get partnership Keyman Insurance to fund capital payouts safely",
+      "Execute heir entry terms and fresh Form A filing with the Registrar",
     ],
   },
   {
@@ -94,18 +94,18 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
     icon: "spreadsheet",
     heading: "LLP Designated Partner Succession & Management",
     challengeSummary:
-      "Under Section 24 of the LLP Act, 2008, death causes cessation of partnership. The legal heir receives financial profits but has zero statutory right to participate in LLP management or voting.",
+      "Under Section 24 of the LLP Act, 2008, partner death ends partnership rights. Heirs receive financial profits. But they have no legal right to manage or vote in the LLP.",
     legalMechanism:
-      "A standard LLP agreement locks heirs out of executive control. Our corporate advocates amend Schedule 1 of the LLP Agreement to provide pre-approved admission protocols. This enables qualified legal heirs to become Designated Partners and obtain Director Identification Numbers (DPIN) through MCA Form 4 filings within 30 days.",
+      "Standard LLP deeds lock heirs out of management. We amend Schedule 1 of the LLP Agreement with pre-approved entry rules. Heirs become Designated Partners and obtain DPINs via MCA Form 4 within 30 days.",
     statutoryPrecedent:
       "Sections 24 and 25, Limited Liability Partnership Act, 2008",
     recommendedInstrument:
       "Supplementary LLP Agreement + Testamentary Will + MCA Form 3/4 Protocol",
     checklist: [
-      "Structure transfer of both economic rights and Designated Partner managerial status",
-      "Specify educational and operational criteria for heirs seeking board management seats",
-      "Set up backup designated partners to prevent the LLP from falling below statutory minimums",
-      "File MCA Form 3 and Form 4 within statutory 30-day timelines with registrar",
+      "Structure transfer of both economic profits and partner voting status",
+      "Specify educational and work criteria for heirs seeking board seats",
+      "Set up backup designated partners to meet statutory minimums",
+      "File MCA Form 3 and Form 4 within statutory 30-day timelines",
     ],
   },
   {
@@ -114,18 +114,18 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
     icon: "store",
     heading: "MSME Sole Proprietorship Going-Concern Will",
     challengeSummary:
-      "A sole proprietorship dies with the proprietor. PAN, bank accounts, MSME Udyam registration, and GSTIN are cancelled, leading to immediate operational stoppage and vendor contract cancellation.",
+      "A sole proprietorship closes when the owner dies. The PAN, bank accounts, and GSTIN are cancelled. This halts operations and cancels vendor contracts.",
     legalMechanism:
-      "Under GST Circular No. 96/15/2019-GST and Section 18(6) of the CGST Act, 2017, a sole proprietorship can be transferred as a going concern to a designated legal heir. Unutilized Input Tax Credit (ITC) transfers via Form GST ITC-02 upon production of a valid Will and legal heir documentation.",
+      "Under GST Circular 96/15/2019-GST and Section 18(6) of the CGST Act, 2017, a sole proprietorship can pass as a going concern. Unused tax credits transfer via Form GST ITC-02 with a valid Will and heir papers.",
     statutoryPrecedent:
       "CBIC Circular No. 96/15/2019-GST & Section 29(5) CGST Act, 2017",
     recommendedInstrument:
       "Testamentary Going-Concern Business Will + Pre-Incorporation OPC Conversion Plan",
     checklist: [
-      "Include a specialized testamentary bequest specifying transfer of goodwill, licenses, and inventory",
-      "Prepare Form GST ITC-02 documentation to preserve accumulated input tax credits",
-      "Transfer MSME Udyam registration and trademark rights to the designated successor",
-      "Evaluate pre-emptive conversion into a One Person Company (OPC) or Pvt Ltd company",
+      "Include a Will bequest passing goodwill, trade licenses, and stock",
+      "Prepare Form GST ITC-02 paperwork to keep input tax credits",
+      "Transfer MSME Udyam registration and brand trademarks to heirs",
+      "Plan early conversion into a One Person Company (OPC) or Pvt Ltd",
     ],
   },
 ];
@@ -146,13 +146,12 @@ export default function BusinessSuccessionInteractive() {
             <Scale className="w-4 h-4" />
             <span>Interactive Legal Architecture</span>
           </div>
-          <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-white mb-3">
+          <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-white mb-3">
             Promoter Business Succession Diagnostic
-          </h2>
+          </h3>
           <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-white/80">
-            Select your enterprise structure below to discover how Indian
-            corporate laws, partnership covenants, and testamentary documents
-            work together to prevent operational deadlock:
+            Pick your business form below. See how corporate laws, deeds, and
+            Wills work together to keep your company running without delays:
           </p>
         </div>
 

@@ -272,6 +272,14 @@ export default function WillFormatHindiClient() {
     };
   }, []);
 
+  useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "hi-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
   const handleCopy = () => {
     navigator.clipboard.writeText(TEMPLATE_TEXT);
     setCopied(true);
@@ -317,7 +325,7 @@ export default function WillFormatHindiClient() {
   const isAllValid = checkedCount === CHECKLIST_ITEMS.length;
 
   return (
-    <div className="min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378] selection:text-white">
+    <div lang="hi-IN" className="min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378] selection:text-white">
       {/* =========================================================================
           LAYER 1: HERO SECTION (Full-Width Brand Navy)
           ========================================================================= */}

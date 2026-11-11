@@ -70,6 +70,8 @@ export const BLOG_TITLE_OVERRIDES: Record<string, string> = {
     "Canadian NRI Inheriting Property in India: CRA Tax Rules",
   "will-writing-services-in-gurgaon-sector-57":
     "Will Writing & Legal Drafting Services in Gurgaon Sector 57",
+  "delhi-mcd-dda-l-and-do-property-mutation-and-surviving-member-certificate":
+    "Delhi Property Mutation: MCD, DDA & L&DO Guide",
 
   // Canonical alias & legacy URL protection
   "is-will-registration-mandatory-in-india":
@@ -120,6 +122,8 @@ export const BLOG_META_TITLE_OVERRIDES: Record<string, string> = {
     "Canadian NRI Indian Inheritance: CRA Tax Rules & Form T1135",
   "will-writing-services-in-gurgaon-sector-57":
     "Will Writing Services in Gurgaon Sector 57 | WillDrafting",
+  "delhi-mcd-dda-l-and-do-property-mutation-and-surviving-member-certificate":
+    "Delhi Property Mutation: MCD, DDA, L&DO & SMC | WillDrafting",
 
   // Canonical alias & legacy URL protection
   "is-will-registration-mandatory-in-india":
@@ -169,6 +173,8 @@ export const BLOG_H1_OVERRIDES: Record<string, string> = {
     "Canadian NRI Inheriting Property in India: CRA Tax Rules",
   "will-writing-services-in-gurgaon-sector-57":
     "Will Writing & Legal Drafting Services in Gurgaon Sector 57",
+  "delhi-mcd-dda-l-and-do-property-mutation-and-surviving-member-certificate":
+    "Delhi Property Mutation: MCD, DDA & L&DO Guide",
 
   // Canonical alias & legacy URL protection
   "is-will-registration-mandatory-in-india":
@@ -178,6 +184,8 @@ export const BLOG_H1_OVERRIDES: Record<string, string> = {
 };
 
 export const BLOG_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  "delhi-mcd-dda-l-and-do-property-mutation-and-surviving-member-certificate":
+    "Step-by-step guide to property mutation after death in Delhi across MCD, DDA substitution, L&DO, and Revenue Surviving Member Certificate (SMC).",
   "is-will-registration-mandatory-in-india":
     "Is Will registration mandatory in India? Check legal position under Section 18, state-wise SRO charges, required documents, and execution rules.",
   "is-will-registration-mandatory-in-india-registration-charges-process-and-documents-2027":

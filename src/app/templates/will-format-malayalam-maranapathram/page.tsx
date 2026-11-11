@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HtmlLangSync from "@/components/HtmlLangSync";
 import WillFormatMalayalamClient from "./WillFormatMalayalamClient";
 
 // Screaming Frog SEO Rules: Title strictly 50-60 chars, Meta Description strictly 140-155 chars, 0 em-dashes
@@ -252,13 +253,22 @@ export default function WillFormatMalayalamPage() {
 
   return (
     <>
-      <Navbar />
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        dangerouslySetInnerHTML={{
+          __html: "document.documentElement.lang='ml-IN';",
+        }}
       />
-      <WillFormatMalayalamClient />
-      <Footer />
+      <meta httpEquiv="content-language" content="ml-IN" />
+      <HtmlLangSync lang="ml-IN" />
+      <div lang="ml-IN" className="min-h-screen bg-[#FAF7F0] text-[#172228] antialiased">
+        <Navbar />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+        />
+        <WillFormatMalayalamClient />
+        <Footer />
+      </div>
     </>
   );
 }

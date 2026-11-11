@@ -84,6 +84,14 @@ export default function WillFormatMarathiClient() {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "mr-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
+  useEffect(() => {
     const handleIntersect: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -138,7 +146,7 @@ export default function WillFormatMarathiClient() {
   };
 
   return (
-    <div className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
+    <div lang="mr-IN" className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
       {/* =========================================================================
           LAYER 1: HERO SECTION (Full-Width Brand Navy - Matching Tool Theme)
           ========================================================================= */}

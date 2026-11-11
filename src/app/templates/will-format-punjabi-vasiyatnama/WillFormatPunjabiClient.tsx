@@ -147,6 +147,14 @@ export default function WillFormatPunjabiClient() {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "pa-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
+  useEffect(() => {
     const handleIntersect: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -333,7 +341,7 @@ Place: [City, Punjab]
 Doctor Signature & Official Seal: __________________________"`;
 
   return (
-    <div className="relative min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378]/15 selection:text-[#C65378]">
+    <div lang="pa-IN" className="relative min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378]/15 selection:text-[#C65378]">
       {/* Decorative ambient background glows */}
       <div
         aria-hidden="true"

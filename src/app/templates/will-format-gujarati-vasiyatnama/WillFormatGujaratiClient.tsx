@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -129,6 +129,14 @@ export default function WillFormatGujaratiClient() {
   const [copiedAttestation, setCopiedAttestation] = useState<boolean>(false);
   const [copiedDoctorCert, setCopiedDoctorCert] = useState<boolean>(false);
 
+  useEffect(() => {
+    const prevLang = document.documentElement.lang;
+    document.documentElement.lang = "gu-IN";
+    return () => {
+      document.documentElement.lang = prevLang || "en";
+    };
+  }, []);
+
   const toggleFaq = (idx: number) => {
     setOpenFaq(openFaq === idx ? null : idx);
   };
@@ -227,7 +235,7 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
   };
 
   return (
-    <div className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
+    <div lang="gu-IN" className="w-full bg-[#FAF7F0] text-[#172228] font-sans selection:bg-[#C65378] selection:text-white">
       {/* =========================================================================
           LAYER 1: HERO SECTION (Full-Width Brand Navy - Matching Tool Theme)
           ========================================================================= */}
