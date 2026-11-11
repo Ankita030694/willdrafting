@@ -28,8 +28,6 @@ function isProtectedRoute(pathname: string): boolean {
     pathname.startsWith("/authority/") ||
     pathname === "/dashboard" ||
     pathname.startsWith("/dashboard/") ||
-    pathname === "/start" ||
-    pathname.startsWith("/start/") ||
     pathname === "/complete-profile"
   );
 }
@@ -52,13 +50,11 @@ const authMiddleware = auth((req) => {
     return withSecurityHeaders(NextResponse.next());
   }
 
-  // 2. Client Area Protection: dashboard + the whole questionnaire (/start and /start/*).
+  // 2. Client Area Protection: dashboard (/dashboard and /dashboard/*).
   //    Guests (not logged in) are always sent to /login first.
   const isProtectedClientRoute =
     pathname === "/dashboard" ||
-    pathname.startsWith("/dashboard/") ||
-    pathname === "/start" ||
-    pathname.startsWith("/start/");
+    pathname.startsWith("/dashboard/");
 
   if (isProtectedClientRoute) {
     if (!isLoggedIn) {
@@ -131,8 +127,6 @@ export const config = {
     "/:path*",
     "/dashboard/:path*",
     "/dashboard",
-    "/start",
-    "/start/:path*",
     "/authority/:path*",
     "/authority",
     "/complete-profile",
