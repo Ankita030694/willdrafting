@@ -3580,6 +3580,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "EPF, PPF, NPS & Gratuity: When Does a Nominee Beat Your Will?",
+    href: "/blogs/epf-ppf-nps-and-gratuity-nomination-vs-will-rules-india",
+    category: "Guides",
+    date: "2026-11-11",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
