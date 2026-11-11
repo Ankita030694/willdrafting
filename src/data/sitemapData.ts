@@ -19,12 +19,129 @@ export interface SitemapPageItem {
 export const staticPages: SitemapPageItem[] = [
   // ==================== 11-11-2026 ====================
   {
+    title: "Special Needs Trust Clause Format India | WillDrafting",
+    href: "/templates/special-needs-child-private-trust-clause-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Disinheritance Clause Format for Will | WillDrafting",
+    href: "/templates/exclusion-of-estranged-relative-clause-format",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Family Settlement Arbitration Clause | WillDrafting",
+    href: "/templates/arbitration-clause-in-family-settlement-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Spendthrift Trust Clause Format India | WillDrafting",
+    href: "/templates/spendthrift-trust-protective-clause-will-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Testamentary Guardian Clause Format | WillDrafting",
+    href: "/templates/testamentary-guardian-minor-stipend-clause-format",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Simultaneous Death Clause Format India | WillDrafting",
+    href: "/templates/simultaneous-death-common-disaster-clause-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "IP & Royalties Will Clause Format India | WillDrafting",
+    href: "/templates/intellectual-property-and-royalties-bequest-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Codicil to Will Format India | WillDrafting",
+    href: "/templates/codicil-to-registered-will-amendment-format",
+    category: "Templates",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Living Will Eligibility Checker India | WillDrafting",
+    href: "/tools/living-will-advance-directive-eligibility-checker",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Odisha Bhulekh Mutation Fee Calculator | WillDrafting",
+    href: "/tools/odisha-bhulekh-ror-mutation-fee-calculator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "OPC Nominee Director Death Timeline Tool | WillDrafting",
+    href: "/tools/opc-nominee-director-activation-timeline-calculator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Undue Influence Will Contest Risk Scorer | WillDrafting",
+    href: "/tools/undue-influence-testamentary-capacity-risk-scorer",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
     title: "Ireland NRI CAT Inheritance Tax Checker | WillDrafting",
     href: "/tools/ireland-nri-cat-inheritance-tax-relief-checker",
     category: "Tools",
     date: "11-11-2026",
     changefreq: "weekly",
     priority: 0.95,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Administrator Pendente Lite Evaluator | WillDrafting",
+    href: "/tools/administrator-pendente-lite-urgency-evaluator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
   },
   // ==================== 11-11-2026 ====================
   {
@@ -1785,6 +1902,14 @@ export const staticPages: SitemapPageItem[] = [
   {
     title: "New Zealand NRI Estate Tax Calculator | WillDrafting",
     href: "/tools/new-zealand-nri-estate-succession-tax-estimator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Section 54F Capital Gains Timeline Tool | WillDrafting",
+    href: "/tools/section-54f-capital-gains-reinvestment-timeline-tracker",
     category: "Tools",
     date: "11-11-2026",
     changefreq: "weekly",

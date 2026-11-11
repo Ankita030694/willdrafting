@@ -67,7 +67,7 @@ const PRECEDENTS = [
     title: "Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91",
     bench: "Supreme Court of India (Division Bench)",
     scenario: "First witness denied attestation; propounder failed to examine available second witness",
-    ratio: "Section 71 IEA (now Section 70 BSA) is an exception, not a casual shortcut. If the first attesting witness turns hostile, the propounder must first examine the other surviving attesting witness if alive and capable of giving evidence before resorting to alternate proof.",
+    ratio: "Section 70 BSA is an exception. It is not an easy shortcut. If witness one turns hostile, you must call witness two first if alive and able to speak. You cannot jump to alternate proof before this step.",
     keyTakeaway: "Always summon all surviving attesting witnesses. Never skip Witness 2 even if Witness 1 turns hostile.",
   },
   {
@@ -75,7 +75,7 @@ const PRECEDENTS = [
     title: "Babu Singh & Ors. v. Ram Sahai @ Ram Singh (2008) 14 SCC 754",
     bench: "Supreme Court of India",
     scenario: "One attesting witness dead, surviving witness colluded with contesting heirs and denied signature",
-    ratio: "When one witness is dead and the other denies execution due to collusion, Section 71 (now Section 70 BSA) permits proving execution through the document writer (scribe) and other credible circumstantial evidence.",
+    ratio: "When one witness is dead and the other turns hostile, Section 70 BSA applies. You can prove the Will through the scribe and other credible facts. Hostility does not kill the Will.",
     keyTakeaway: "Hostility of the sole surviving witness does not invalidate the Will if the scribe and execution circumstances are credible.",
   },
   {
@@ -83,7 +83,7 @@ const PRECEDENTS = [
     title: "Jagdish Chand Sharma v. Narain Singh Saini (2015) 8 SCC 615",
     bench: "Supreme Court of India",
     scenario: "Attesting witnesses claimed lack of recollection and vague memories regarding testator's mental state",
-    ratio: "The court must balance the mandatory requirements of Section 68 with Section 71. If witnesses turn hostile under external inducements, court can rely on sub-registrar endorsements and contemporaneous medical evidence.",
+    ratio: "The court balances Section 67 with Section 70 BSA. If witnesses take bribes, the court looks at other proof. The judge can rely on Sub-Registrar records and doctor notes.",
     keyTakeaway: "A doctor's fitness certificate and official registration defeat hostile claims of unsound mind.",
   },
   {
@@ -91,7 +91,7 @@ const PRECEDENTS = [
     title: "Raj Kumari & Ors. v. Surinder Pal Sharma (2021) 14 SCC 500",
     bench: "Supreme Court of India",
     scenario: "Sole surviving attesting witness turned hostile; drafting advocate and sub-registrar records deposed",
-    ratio: "Where an attesting witness turns hostile and denies their signature, the testimony of the drafting advocate who prepared the Will and was present at execution is valid alternate evidence under Section 71 of the Evidence Act.",
+    ratio: "When an attesting witness lies about their signature, the drafting lawyer can prove the Will. The lawyer's word is valid alternate evidence under Section 70 BSA.",
     keyTakeaway: "The drafting advocate who personally oversaw execution acts as a decisive anchor witness in contested probate.",
   },
 ];
@@ -99,35 +99,35 @@ const PRECEDENTS = [
 const FAQS = [
   {
     q: "Does a Will fail automatically if an attesting witness turns hostile in court?",
-    a: "No. A Will does not fail simply because an attesting witness turns hostile or denies signing. Under Section 70 of the Bharatiya Sakshya Adhiniyam, 2023 (erstwhile Section 71 of the Indian Evidence Act, 1872), if an attesting witness denies or does not recollect execution, the propounder is permitted to prove execution by other evidence, including the scribe, the drafting advocate, the Sub-Registrar, and forensic handwriting analysis.",
+    a: "No. A Will does not fail just because a witness turns hostile. Section 70 BSA (old Section 71 Evidence Act) protects you. If a witness denies signing or forgets, you can prove the Will with other evidence. You can call the scribe, drafting lawyer, doctor, and Sub-Registrar. You can also use handwriting experts.",
   },
   {
     q: "What is the mandatory Janki Bhoir rule established by the Supreme Court?",
-    a: "In Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91, the Supreme Court ruled that a propounder cannot bypass available attesting witnesses. If the first witness turns hostile or fails to prove attestation, the propounder cannot immediately jump to alternate evidence under Section 70 BSA if the second attesting witness is alive, capable of testifying, and subject to court process. The surviving witness must first be summoned.",
+    a: "In Janki Bhoir (2003), the Supreme Court set a strict rule. You cannot skip an available second witness. If witness one turns hostile, you must call witness two if alive and able to depose. Only if witness two is also hostile, dead, or untraceable can you call the scribe or doctor.",
   },
   {
     q: "How does Section 70 BSA save a Will when witnesses deny execution?",
-    a: "Section 70 of the Bharatiya Sakshya Adhiniyam, 2023 acts as a statutory safety net. It provides that when attesting witnesses deny or do not recollect the execution, the propounder can lead other evidence. This includes producing the document scribe, the doctor who certified testamentary capacity, the registration records from the Sub-Registrar Office, and cross-examining the hostile witness.",
+    a: "Section 70 BSA is your statutory safety net. When witnesses deny signing or forget, you can lead other proof. You can produce the scribe and the attending doctor. You can summon the Sub-Registrar register. You can also cross-examine the hostile witness to expose lies.",
   },
   {
     q: "Can a document scribe or drafting advocate prove execution of the Will?",
-    a: "Yes. When attesting witnesses turn hostile or have passed away, the testimony of the scribe who drafted the Will or the advocate who typed and oversaw execution is admissible and highly persuasive under Section 70 BSA, provided they depose that they saw the testator sign and the attesting witnesses append signatures in each other's presence.",
+    a: "Yes. The scribe or drafting lawyer can prove the Will under Section 70 BSA. They must state they saw the Will maker sign. They must also state that the witnesses signed in each other's presence. The Supreme Court affirmed this rule in Babu Singh and Raj Kumari.",
   },
   {
     q: "How does Sub-Registrar registration help overcome a hostile witness?",
-    a: "Under Section 60 of the Registration Act, 1908, the Sub-Registrar's endorsement creates a strong legal presumption of due execution. The propounder can summon the Sub-Registrar and the official Book 3 register under Order XVI Rule 1 of the CPC to show that the testator and witnesses appeared in person, provided biometrics, and admitted execution before a public officer.",
+    a: "Under Section 60 of the Registration Act, the Sub-Registrar's seal creates a strong legal presumption. You can summon the Sub-Registrar and Book 3 under Order XVI CPC. This shows the Will maker and witnesses appeared in person and gave thumbprints.",
   },
   {
     q: "What legal action can be taken against a bribed or colluding hostile witness?",
-    a: "If an attesting witness commits perjury by falsely denying their genuine signature after being influenced by opposing heirs, the propounder can file an application under Section 340 of the CrPC (now Section 379 BNSS) for criminal prosecution for perjury, alongside summoning their admitted signatures from bank accounts or voter IDs for forensic comparison under Section 72 BSA.",
+    a: "If a witness commits perjury by denying their real signature, you can act. You can file a petition under Section 340 CrPC (now Section 379 BNSS). This seeks their criminal trial for lying on oath. You can also check their signature under Section 72 BSA.",
   },
   {
     q: "Can handwriting experts prove the signature of a hostile witness under Section 72 BSA?",
-    a: "Yes. Under Section 72 of the Bharatiya Sakshya Adhiniyam, 2023 (erstwhile Section 73 of the Indian Evidence Act), the court or a forensic handwriting expert can compare the disputed signature on the Will with admitted genuine signatures of the witness taken from government registers, driving licenses, bank KYC documents, or specimen signatures taken in open court.",
+    a: "Yes. Under Section 72 BSA, the court can compare disputed signatures with real ones. You can use bank KYC forms, driving licenses, or court samples. A forensic expert from CFSL can confirm the signature matches.",
   },
   {
     q: "What happens if one attesting witness is dead and the other turns hostile?",
-    a: "Under the Supreme Court ruling in Babu Singh v. Ram Sahai (2008), when one attesting witness is dead and the surviving witness denies execution, the propounder can prove the deceased witness's signature under Section 68 BSA (erstwhile Section 69 IEA) and invoke Section 70 BSA to introduce the scribe, registration records, and treating physician to establish valid execution.",
+    a: "In Babu Singh (2008), the Supreme Court settled this rule. If one witness is dead and the other turns hostile, prove the dead witness's signature under Section 68 BSA. Next, use Section 70 BSA to call the scribe, doctor, and Sub-Registrar.",
   },
 ];
 
@@ -149,6 +149,7 @@ export default function HostileWitnessCheckerClient() {
   const [copiedClause, setCopiedClause] = useState<boolean>(false);
   const [copiedSummons, setCopiedSummons] = useState<boolean>(false);
   const [selectedPrecedent, setSelectedPrecedent] = useState<string>("janki-bhoir");
+  const [decisionTreeTab, setDecisionTreeTab] = useState<"step1" | "step2" | "step3" | "step4">("step1");
 
   // Diagnostic Wizard State
   const [witness1Status, setWitness1Status] = useState<
@@ -215,9 +216,9 @@ export default function HostileWitnessCheckerClient() {
   let primaryRuling = "Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91";
   let statutorySection = "Section 67 BSA (Erstwhile Section 68 IEA)";
   let legalAnalysis =
-    "Because your second attesting witness is alive, cooperative, and capable of testifying, the hostility of Witness 1 does not damage your probate suit. Under Section 67 BSA, examining even ONE competent attesting witness who proves execution and attestation fully satisfies the statutory requirement.";
+    "Your second witness is alive and ready to speak. The hostility of witness one will not hurt your case. Under Section 67 BSA, one good witness is enough to prove the Will. That satisfies the law.";
   let proceduralDirective =
-    "Summon Witness 2 into the witness box immediately. Do not jump to alternate evidence under Section 70 BSA before examining Witness 2. Cross-examine Witness 1 under Section 154 of the Evidence Act to expose their bribery or collusion.";
+    "Summon witness two to court at once. Do not jump to other proof before this step. Cross-examine witness one under Section 145 BSA to expose their lies.";
 
   if (witness2Status === "not_yet_summoned") {
     rescueViability = "Procedural Block: High Dismissal Risk";
@@ -227,9 +228,9 @@ export default function HostileWitnessCheckerClient() {
     primaryRuling = "Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91";
     statutorySection = "Section 67 BSA & Order XVI CPC";
     legalAnalysis =
-      "CRITICAL WARNING: If you fail to summon the second attesting witness and immediately try to prove the Will via the scribe, your testamentary suit will be dismissed by the court under the binding Supreme Court rule in Janki Bhoir.";
+      "Warning: You must summon witness two first. If you skip witness two and call the scribe right away, the court will dismiss your case under the Janki Bhoir rule.";
     proceduralDirective =
-      "File a formal application under Order XVI Rule 1 of the CPC for court summons against Witness 2. Only if Witness 2 also denies execution or is reported untraceable/dead can you invoke Section 70 BSA.";
+      "File a summons application under Order XVI CPC for witness two. If witness two is also hostile, dead, or untraceable, then you can use Section 70 BSA.";
   } else if (witness2Status === "also_hostile" || witness2Status === "deceased_untraceable") {
     if (registrationStatus === "registered_sro_book3" && scribeStatus === "advocate_scribe_ready") {
       rescueViability = "Strong Rescue Viability (88%)";
@@ -326,7 +327,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
 
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Assess evidentiary strategies when an attesting witness turns hostile, colludes, or denies their signature in probate court. Invoke Section 70 BSA, scribe evidence, and SRO records.
+            Check your legal steps when a witness turns hostile in court. Invoke Section 68 and Section 70 BSA. Prove your Will with scribes, doctors, and Sub-Registrar records.
           </p>
 
           {/* Action CTAs in Hero */}
@@ -425,7 +426,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 <span>Litigation Office</span>
               </div>
               <p className="leading-relaxed text-[11px]">
-                Governed by Bharatiya Sakshya Adhiniyam, 2023 (Sections 67, 68, 70, 72) and Indian Succession Act, 1925 (Section 63). Supported by Supreme Court rulings in Janki Narayan Bhoir and Babu Singh.
+                Governed by BSA 2023 (Sections 67, 68, 70, 72) and Succession Act 1925. Supported by Supreme Court rules in Janki Bhoir and Babu Singh.
               </p>
             </div>
           </aside>
@@ -444,25 +445,25 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Witness Hostility Does Not Kill the Will:</strong> The most dangerous misconception among litigants is assuming that if an attesting witness denies their signature or takes a bribe, the Will is automatically void. Indian law provides a statutory shield under Section 70 BSA.
+                    <strong>Witness Hostility Does Not Kill the Will:</strong> Many people believe a hostile witness kills a Will. That is false. A witness cannot defeat a true Will. Indian law protects you under Section 70 BSA.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>The Mandatory Dual-Witness Rule (Janki Bhoir):</strong> You cannot bypass the second attesting witness. If Witness 1 turns hostile, you must examine Witness 2 if they are alive and available before invoking alternate evidence.
+                    <strong>The Mandatory Dual-Witness Rule:</strong> You cannot skip the second witness. If witness one turns hostile, you must call witness two first. Only then can you call other witnesses.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Document Scribe &amp; Advocate Proof:</strong> Under Section 70 BSA, the advocate who drafted the Will or the scribe who typed it can depose as an eyewitness to prove due execution and attestation.
+                    <strong>Document Scribe &amp; Advocate Proof:</strong> The drafting lawyer or scribe can prove the Will. They saw the testator sign. They saw the witnesses sign too.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Sub-Registrar Summons &amp; Perjury Action:</strong> Official SRO Book 3 records carry a presumption of regularity under Section 60 of the Registration Act. Perjured witnesses can be prosecuted under Section 340 CrPC.
+                    <strong>Sub-Registrar Summons &amp; Perjury Action:</strong> Official SRO Book 3 records carry high weight. The law presumes public acts are true. Corrupt witnesses face perjury trial under Section 340 CrPC.
                   </span>
                 </li>
               </ul>
@@ -490,7 +491,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 />
               </div>
               <p className="text-xs text-slate-500 leading-relaxed italic text-center">
-                Visualizing Indian courtroom testamentary litigation: When an attesting witness is bribed or turns hostile, Section 70 BSA and the Janki Bhoir Supreme Court precedent enable propounders to rescue the Will via scribe testimony and Sub-Registrar records.
+                Indian court scene during Will litigation. If a witness turns hostile or takes a bribe, Section 70 BSA protects the Will. The propounder can prove the Will through the scribe, the doctor, and Sub-Registrar records under the Janki Bhoir rule.
               </p>
             </div>
 
@@ -508,13 +509,13 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   Proving a Will in an Indian court is governed by strict statutory rules. Under Section 63(c) of the Indian Succession Act, 1925, a Will must be attested by two or more witnesses. When the testator passes away and the Will is challenged in probate or a title suit, the propounder must prove its valid execution.
                 </p>
                 <p>
-                  Under <strong>Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong> (which corresponds to Section 68 of the erstwhile Indian Evidence Act, 1872), the law creates a mandatory threshold: at least one attesting witness must be examined in court to prove execution, provided an attesting witness is alive, capable of giving evidence, and subject to court process.
+                  Under <strong>Section 67 BSA 2023</strong> (old Section 68 Evidence Act), the law sets a clear rule. You must call at least one attesting witness to court to prove the Will. This rule applies if a witness is alive. The witness must be able to speak in court and subject to court process.
                 </p>
                 <p>
-                  However, litigation often takes an ugly turn. Disgruntled legal heirs who were excluded by the testator frequently contact the attesting witnesses, offer monetary inducements, or issue threats. As a result, the attesting witness enters the witness box, turns hostile, and denies having seen the testator sign or falsely disowns their own signature.
+                  Testamentary disputes often turn bitter. Excluded family members may contact the witnesses. They may offer bribes or make threats. As a result, a witness may turn hostile in court. The witness may falsely deny their own signature. They may claim they never saw the testator sign.
                 </p>
                 <p>
-                  To prevent fraud and preserve the sanctity of a genuine Will, the legislature created <strong>Section 70 of the BSA (erstwhile Section 71 IEA)</strong>. This vital provision states: <em>&ldquo;If the attesting witness denies or does not recollect the execution of the document, its execution may be proved by other evidence.&rdquo;</em>
+                  To stop fraud, lawmakers built a vital safety net. This is <strong>Section 70 of the BSA (old Section 71 Evidence Act)</strong>. The law says: If the attesting witness denies or forgets the execution, you can prove the Will by other evidence. A lying witness cannot destroy a true Will.
                 </p>
               </div>
             </section>
@@ -529,7 +530,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 2. Free Hostile Witness Will Proof Checker Tool
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Select the exact facts of your courtroom dispute below. Our algorithmic legal engine evaluates your statutory standing under BSA Sections 67, 68, 70, and binding Supreme Court precedents.
+                Select your case facts below. Our legal tool checks your rights under Section 68 and 70 BSA. It matches your dispute with Supreme Court rulings.
               </p>
 
               {/* Wizard Box */}
@@ -820,7 +821,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  With the enactment of the <strong>Bharatiya Sakshya Adhiniyam, 2023</strong> (which replaced the colonial Indian Evidence Act, 1872), the core evidentiary framework for wills was modernized while preserving historical judicial doctrines:
+                  The <strong>Bharatiya Sakshya Adhiniyam 2023</strong> replaced the old 1872 Act. The core rules remain firm. The new code modernizes court steps while protecting genuine Wills:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
@@ -829,7 +830,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                       <span>Section 67 BSA (Old Section 68 IEA)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Mandates that a document required by law to be attested (such as a Will under Section 63 of the Indian Succession Act) cannot be used in evidence until at least one attesting witness has been called to prove execution, if alive and capable of giving evidence.
+                      You must call at least one witness if alive and able to depose. A Will cannot be read in evidence without this step under Section 63 of the Succession Act.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
@@ -838,13 +839,175 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                       <span>Section 70 BSA (Old Section 71 IEA)</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Provides the critical exception: If the attesting witness denies or does not recollect execution, the propounder is not helpless. The execution of the document may be established through other evidence, including scribes, handwriting experts, and registration records.
+                      This gives you a vital legal remedy. If the witness denies signing, you can still prove the Will. You can use the scribe, doctor, SRO records, and forensic experts.
                     </p>
                   </div>
                 </div>
                 <p>
                   Section 70 BSA was specifically crafted by lawmakers to prevent the wishes of a deceased testator from being sabotaged by dishonest, colluding, or easily bribed witnesses. A witness cannot hold the testacy of a deceased person hostage.
                 </p>
+
+                {/* MANDATORY ON-PAGE ASSET: BSA SECTION 68 & 70 ALTERNATE ATTESTATION PROOF DECISION TREE */}
+                <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4 pt-4 mt-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                    <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
+                      <GitBranch className="w-4 h-4" />
+                      <span>BSA SECTION 68 DECISION TREE: ALTERNATE ATTESTATION PROOF</span>
+                    </div>
+                    <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                      Courtroom Evidentiary Pathways
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Navigate the four statutory decision branches when an attesting witness turns hostile in probate court. Test whether you can immediately lead secondary evidence or if you face the mandatory dual-witness duty:
+                  </p>
+
+                  {/* Decision Tree Branch Selectors */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setDecisionTreeTab("step1")}
+                      className={`p-2.5 rounded-xl text-left text-xs font-bold transition-all ${
+                        decisionTreeTab === "step1"
+                          ? "bg-[#172228] text-white shadow-xs"
+                          : "bg-slate-50 border border-slate-200 text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      <div className="text-[10px] text-rose-300 uppercase">Branch 1</div>
+                      <div className="text-xs truncate">Witness 1 Hostile</div>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setDecisionTreeTab("step2")}
+                      className={`p-2.5 rounded-xl text-left text-xs font-bold transition-all ${
+                        decisionTreeTab === "step2"
+                          ? "bg-[#172228] text-white shadow-xs"
+                          : "bg-slate-50 border border-slate-200 text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      <div className="text-[10px] text-rose-300 uppercase">Branch 2</div>
+                      <div className="text-xs truncate">Witness 2 Dead / Hostile</div>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setDecisionTreeTab("step3")}
+                      className={`p-2.5 rounded-xl text-left text-xs font-bold transition-all ${
+                        decisionTreeTab === "step3"
+                          ? "bg-[#172228] text-white shadow-xs"
+                          : "bg-slate-50 border border-slate-200 text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      <div className="text-[10px] text-rose-300 uppercase">Branch 3</div>
+                      <div className="text-xs truncate">Registered Will (SRO)</div>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setDecisionTreeTab("step4")}
+                      className={`p-2.5 rounded-xl text-left text-xs font-bold transition-all ${
+                        decisionTreeTab === "step4"
+                          ? "bg-[#172228] text-white shadow-xs"
+                          : "bg-slate-50 border border-slate-200 text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      <div className="text-[10px] text-rose-300 uppercase">Branch 4</div>
+                      <div className="text-xs truncate">Forensic Perjury Rebuttal</div>
+                    </button>
+                  </div>
+
+                  {/* Branch Details Display */}
+                  {decisionTreeTab === "step1" && (
+                    <div className="p-4 rounded-xl bg-amber-50/60 border border-amber-200/80 space-y-2.5 text-xs text-slate-700">
+                      <div className="flex items-center justify-between font-bold text-amber-950">
+                        <span>Branch 1: Witness 1 Turns Hostile, Witness 2 Alive &amp; Available</span>
+                        <span className="px-2 py-0.5 rounded bg-amber-200 text-amber-900 text-[10px]">Strict Janki Bhoir Gateway</span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px]">
+                        <div className="p-2.5 bg-white rounded-lg border border-amber-100">
+                          <strong className="block text-slate-900">Legal Condition:</strong>
+                          Witness 1 enters box and denies signature or execution. Witness 2 has not yet been summoned.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-amber-100">
+                          <strong className="block text-slate-900">Mandatory Court SOP:</strong>
+                          Must issue summons to Witness 2 under Order XVI CPC. Do NOT attempt to introduce scribe or doctor yet!
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-amber-100">
+                          <strong className="block text-slate-900">Statutory Consequence:</strong>
+                          Bypassing Witness 2 results in automatic dismissal of probate under <em>Janki Narayan Bhoir (2003 SC)</em>.
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {decisionTreeTab === "step2" && (
+                    <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-200/80 space-y-2.5 text-xs text-slate-700">
+                      <div className="flex items-center justify-between font-bold text-emerald-950">
+                        <span>Branch 2: Witness 1 Hostile, Witness 2 Deceased / Untraceable / Hostile</span>
+                        <span className="px-2 py-0.5 rounded bg-emerald-200 text-emerald-900 text-[10px]">Section 70 BSA Unlocked</span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px]">
+                        <div className="p-2.5 bg-white rounded-lg border border-emerald-100">
+                          <strong className="block text-slate-900">Legal Condition:</strong>
+                          Both attesting witnesses are accounted for (one hostile, one dead or untraceable or also hostile).
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-emerald-100">
+                          <strong className="block text-slate-900">Mandatory Court SOP:</strong>
+                          Prove deceased witness signature under Section 68 BSA; file Section 70 BSA petition to examine Scribe and Doctor.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-emerald-100">
+                          <strong className="block text-slate-900">Precedent Benchmark:</strong>
+                          Full protection under <em>Babu Singh v. Ram Sahai (2008 SC)</em> and <em>Jagdish Chand Sharma (2015 SC)</em>.
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {decisionTreeTab === "step3" && (
+                    <div className="p-4 rounded-xl bg-blue-50/60 border border-blue-200/80 space-y-2.5 text-xs text-slate-700">
+                      <div className="flex items-center justify-between font-bold text-blue-950">
+                        <span>Branch 3: Registered Will (Sub-Registrar Endorsement Shield)</span>
+                        <span className="px-2 py-0.5 rounded bg-blue-200 text-blue-900 text-[10px]">Section 60 Registration Act</span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px]">
+                        <div className="p-2.5 bg-white rounded-lg border border-blue-100">
+                          <strong className="block text-slate-900">Legal Condition:</strong>
+                          Will registered in Book 3 before Sub-Registrar of Assurances with official seals and signatures.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-blue-100">
+                          <strong className="block text-slate-900">Mandatory Court SOP:</strong>
+                          Subpoena Sub-Registrar and Book 3 volume under Order XVI Rule 1 &amp; 6 CPC; present biometric register records.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-blue-100">
+                          <strong className="block text-slate-900">Statutory Presumption:</strong>
+                          Official endorsement carries legal presumption of regularity under Section 60 of the Registration Act, 1908.
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {decisionTreeTab === "step4" && (
+                    <div className="p-4 rounded-xl bg-rose-50/60 border border-rose-200/80 space-y-2.5 text-xs text-slate-700">
+                      <div className="flex items-center justify-between font-bold text-rose-950">
+                        <span>Branch 4: Witness Falsely Denies Genuine Signature on Oath</span>
+                        <span className="px-2 py-0.5 rounded bg-rose-200 text-rose-900 text-[10px]">Forensic CFSL &amp; Perjury</span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-[11px]">
+                        <div className="p-2.5 bg-white rounded-lg border border-rose-100">
+                          <strong className="block text-slate-900">Legal Condition:</strong>
+                          Hostile witness lies under oath, claiming signature on Will was forged or never signed by them.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-rose-100">
+                          <strong className="block text-slate-900">Mandatory Court SOP:</strong>
+                          Apply under Section 72 BSA for CFSL handwriting comparison with admitted bank KYC, passport, or court specimens.
+                        </div>
+                        <div className="p-2.5 bg-white rounded-lg border border-rose-100">
+                          <strong className="block text-slate-900">Criminal Liability:</strong>
+                          Move Section 340 CrPC (Section 379 BNSS) application to prosecute corrupt witness for perjury.
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </section>
 
@@ -859,7 +1022,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  The cornerstone precedent governing hostile attesting witnesses in India is the Supreme Court&rsquo;s landmark judgment in <em>Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91</em>. This ruling established what litigators call the &ldquo;Strict Sequential Exhaustion Doctrine&rdquo;.
+                  The leading Supreme Court case is <em>Janki Narayan Bhoir v. Narayan Namdeo Kadam (2003) 2 SCC 91</em>. This ruling sets what lawyers call the Strict Sequential Rule. You must call witnesses in a set order.
                 </p>
                 <div className="p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-amber-900 space-y-2 text-xs sm:text-sm">
                   <div className="font-black flex items-center gap-2 text-amber-950 uppercase tracking-wider">
@@ -867,15 +1030,28 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                     <span>The Fatal Trap in Janki Bhoir</span>
                   </div>
                   <p>
-                    In <em>Janki Bhoir</em>, the propounder examined Attesting Witness No. 1 (Prabhakar), who failed to prove that the second witness (Wagle) signed in his presence or in the presence of the testator. Crucially, Witness No. 2 (Wagle) was alive and available, but the propounder chose not to examine him and directly attempted to prove the Will via alternate secondary evidence.
+                    In <em>Janki Bhoir</em>, the first witness failed to prove the Will. The second witness was alive and available. But the propounder did not summon the second witness. Instead, the propounder tried to call other people right away.
                   </p>
                   <p className="font-bold">
-                    The Supreme Court dismissed the probate suit, holding that Section 71 (now Section 70 BSA) cannot be invoked as an easy shortcut if the other surviving attesting witness has not been summoned or examined.
+                    The Supreme Court rejected the Will. The Court held that Section 70 BSA is not a shortcut. You cannot bypass a living second witness. You must call witness two first.
                   </p>
                 </div>
                 <p>
-                  <strong>The Rule for Litigants:</strong> If Witness 1 turns hostile, denies their signature, or is bribed by the caveator, you MUST issue a court summons to Witness 2 under Order XVI of the CPC. Only when Witness 2 also turns hostile, or is proved dead, untraceable, or incapable of deposing, does Section 70 BSA completely open the floodgates for alternate evidence.
+                  <strong>The Rule for Litigants:</strong> If witness one turns hostile, you must summon witness two at once. Use Order XVI of the CPC. Never skip this step. Only when witness two is also hostile, dead, or untraceable does Section 70 BSA unlock full alternate proof.
                 </p>
+
+              {/* Plain English Janki Bhoir Checklist */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80 space-y-2.5 text-xs text-slate-800">
+                <div className="font-extrabold text-amber-950 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+                  <ShieldCheck className="w-4 h-4 text-amber-600" />
+                  <span>Plain English Summary: The Two-Witness Court Rule</span>
+                </div>
+                <p className="text-[11px] text-slate-700 leading-relaxed">
+                  Never jump to secondary proof too soon. If witness one turns bad, you must call witness two first.
+                  Is witness two alive? Call them. Is witness two dead? File the death slip. Is witness two lost?
+                  File the police non-trace note. Once you clear this step, the door opens wide for all your other proof.
+                </p>
+              </div>
               </div>
             </section>
 
@@ -890,7 +1066,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Once the statutory hurdles of Section 67 BSA are cleared and the witnesses have turned hostile, who can prove the Will under Section 70 BSA? The Supreme Court in <em>Babu Singh v. Ram Sahai (2008)</em> and <em>Raj Kumari v. Surinder Pal Sharma (2021)</em> recognized three primary categories of credible alternate witnesses:
+                  Who can prove the Will once witnesses turn hostile? The Supreme Court in <em>Babu Singh (2008)</em> and <em>Raj Kumari (2021)</em> approved three trusted witnesses:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
@@ -899,7 +1075,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                       <span>The Document Scribe</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A professional scribe who drafted the Will on the testator&rsquo;s instructions. If the scribe deposes that the testator signed in their presence and the attesting witnesses signed at the same sitting, this testimony proves execution.
+                      The scribe wrote the Will as told by the Will maker. The scribe can state that all parties signed together. This direct proof validates the Will in court.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
@@ -908,7 +1084,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                       <span>The Drafting Advocate</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      In <em>Raj Kumari (2021)</em>, the Supreme Court held that the advocate who drafted the Will and accompanied the testator to the registration office acts as an impeccable witness whose testimony overrides a hostile attesting witness.
+                      The lawyer who drafted the Will is an officer of the court. In <em>Raj Kumari (2021)</em>, the Supreme Court held that the lawyer&rsquo;s word carries great weight. It beats a hostile witness.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-slate-200 bg-white space-y-2">
@@ -917,7 +1093,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                       <span>The Attending Doctor</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      If the hostile witness claims the testator was bedridden or unconscious, the treating physician who examined the testator and endorsed the medical fitness certificate directly refutes the allegation of incapacity.
+                      The doctor who saw the Will maker is key. If a witness claims weak mind or force, the doctor&rsquo;s medical note disproves that lie fast.
                     </p>
                   </div>
                 </div>
@@ -935,10 +1111,10 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  Registration of a Will is optional under Section 18 of the Registration Act, 1908. However, when an attesting witness turns hostile in court, registration becomes the propounder&rsquo;s ultimate legal shield.
+                  Will registration is optional under Section 18 of the Registration Act 1908. But when a witness turns hostile in court, registration is your strongest shield.
                 </p>
                 <p>
-                  Under <strong>Section 60 of the Registration Act, 1908</strong>, the endorsement certificate by the Sub-Registrar is admissible for proving that the document has been duly registered and that the facts mentioned in the endorsements occurred as stated. When a witness appears before the Sub-Registrar, they sign the official register, provide biometric thumbprints, and are photographed.
+                  Under <strong>Section 60 of the Registration Act</strong>, the Sub-Registrar&rsquo;s endorsement is strong proof. It proves the facts written on the deed took place as noted. At the SRO, witnesses sign the register. They also give thumbprints and photos before a public officer.
                 </p>
                 <div className="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2 text-xs sm:text-sm text-slate-700">
                   <div className="font-bold text-slate-900">How to Subpoena the SRO in Probate Court:</div>
@@ -949,6 +1125,25 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                     <li>Cross-examine the hostile witness confronting them with their biometric registration record.</li>
                   </ol>
                 </div>
+
+              {/* Plain English SRO Subpoena Box */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-blue-50/70 border border-blue-200/80 space-y-2.5 text-xs text-slate-800">
+                <div className="font-extrabold text-blue-950 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+                  <Building className="w-4 h-4 text-blue-600" />
+                  <span>Plain English Steps: Using SRO Records in Court</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-slate-700">
+                  <div className="p-2.5 bg-white rounded-xl border border-blue-100">
+                    <strong className="block text-slate-900">Official Book 3 Presumption:</strong>
+                    <span>Public acts are presumed true by law. The Sub-Registrar seal carries high court weight.</span>
+                  </div>
+                  <div className="p-2.5 bg-white rounded-xl border border-blue-100">
+                    <strong className="block text-slate-900">Biometric Proof Traps Liars:</strong>
+                    <span>A witness cannot deny their thumbprint on Book 3. That ink print traps them on oath.</span>
+                  </div>
+                </div>
+              </div>
+
               </div>
             </section>
 
@@ -963,23 +1158,23 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
               </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
-                  When a hostile witness baldly lies on oath and denies that the signature on the Will is theirs, the propounder can invoke <strong>Section 72 of the Bharatiya Sakshya Adhiniyam, 2023</strong> (erstwhile Section 73 of the Indian Evidence Act).
+                  What if a witness lies on oath and denies their signature? You can use <strong>Section 72 BSA</strong> (old Section 73 Evidence Act). The court has full power to compare disputed signatures with admitted papers.
                 </p>
                 <p>
-                  Section 72 empowers the court to compare disputed signatures with admitted genuine signatures. In contested testamentary litigation, the propounder can file an application to refer the signatures to a Government Questioned Document Examiner (such as the Central Forensic Science Laboratory, CFSL):
+                  Section 72 lets the judge compare handwriting. You can ask the court to send the Will to government forensic experts at CFSL:
                 </p>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Admitted Signatures of the Witness:</strong> Obtain the hostile witness&rsquo;s specimen signatures taken in court, or admitted signatures from their bank account opening forms, driving license, passport, or registered sale deeds.</span>
+                    <span><strong>Admitted Signatures:</strong> Get specimen signatures of the witness taken in open court. You can also summon admitted signatures from bank KYC, driving licenses, passports, or sale deeds.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Forensic Report Admissibility:</strong> A scientific handwriting expert report establishing that the signature on the Will was penned by the hostile witness conclusively proves perjury.</span>
+                    <span><strong>Forensic Expert Report:</strong> A scientific handwriting report from CFSL proves the witness signed the Will. This report proves the witness is lying.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span><strong>Criminal Prosecution for Perjury:</strong> Under Section 340 CrPC (now Section 379 BNSS), the propounder can seek the witness&rsquo;s criminal trial for giving false evidence under Section 227/229 BNS.</span>
+                    <span><strong>Criminal Action for Perjury:</strong> Under Section 340 CrPC (now Section 379 BNSS), you can seek the criminal trial of the corrupt witness for perjury.</span>
                   </li>
                 </ul>
               </div>
@@ -995,8 +1190,15 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 8. Hostile Witness Defense Matrix: Evidence Routes
               </h3>
               <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Compare the five primary courtroom hostility scenarios, statutory pathways, alternate witnesses, and judicial success rates:
+                Compare the five main courtroom scenarios, statutory paths, alternate witnesses, and success rates:
               </p>
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-1.5">
+                <div className="font-bold text-slate-900">Key Facts to Remember in Court:</div>
+                <p>
+                  Hostility does not end your case. You have rights under Section 70 BSA. The law lets you call other witnesses. The scribe can prove the signing. The doctor can prove sound mind. Public land records carry high weight. The judge will look at all the facts. Do not panic if a witness lies.
+                </p>
+              </div>
+
 
               {/* Responsive Table */}
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 bg-white shadow-xs">
@@ -1013,47 +1215,47 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <tbody className="divide-y divide-slate-100">
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Witness 1 turns hostile; Witness 2 alive &amp; available
+                        Witness 1 turns hostile. Witness 2 alive and ready.
                       </td>
                       <td className="py-3 px-3 text-[#C65378] font-bold">Section 67 BSA</td>
                       <td className="py-3 px-3">Attesting Witness No. 2</td>
-                      <td className="py-3 px-3">Direct attestation proof</td>
+                      <td className="py-3 px-3">Direct attestation proof.</td>
                       <td className="py-3 px-3 font-extrabold text-emerald-600">95% (High)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Witness 1 dead; Witness 2 denies signature (Registered Will)
+                        Witness 1 dead. Witness 2 denies signing registered Will.
                       </td>
                       <td className="py-3 px-3 text-[#C65378] font-bold">Section 68 &amp; 70 BSA</td>
                       <td className="py-3 px-3">Document Scribe + Sub-Registrar</td>
-                      <td className="py-3 px-3">SRO Book 3 + Scribe deposition</td>
+                      <td className="py-3 px-3">SRO Book 3 and scribe deposition.</td>
                       <td className="py-3 px-3 font-extrabold text-emerald-600">88% (High)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Both witnesses colluded with caveator (Unregistered Will)
+                        Both witnesses colluded with caveator on unregistered Will.
                       </td>
                       <td className="py-3 px-3 text-[#C65378] font-bold">Section 70 &amp; 72 BSA</td>
                       <td className="py-3 px-3">Drafting Lawyer + CFSL Expert</td>
-                      <td className="py-3 px-3">Forensic signature comparison</td>
+                      <td className="py-3 px-3">Forensic signature check.</td>
                       <td className="py-3 px-3 font-extrabold text-blue-600">65% (Moderate)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Witness claims memory loss due to old age
+                        Witness claims memory loss due to old age.
                       </td>
                       <td className="py-3 px-3 text-[#C65378] font-bold">Section 70 BSA</td>
                       <td className="py-3 px-3">Attestation Clause + Signature admission</td>
-                      <td className="py-3 px-3">Admission of handwriting</td>
+                      <td className="py-3 px-3">Admission of handwriting.</td>
                       <td className="py-3 px-3 font-extrabold text-emerald-600">82% (High)</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <td className="py-3 px-4 font-bold text-slate-900">
-                        Witness alleges testator was incapacitated / coerced
+                        Witness alleges testator was sick or coerced.
                       </td>
                       <td className="py-3 px-3 text-[#C65378] font-bold">Section 70 BSA &amp; s. 63 ISA</td>
                       <td className="py-3 px-3">Treating Doctor + Video evidence</td>
-                      <td className="py-3 px-3">Medical fitness certificate</td>
+                      <td className="py-3 px-3">Medical fitness certificate.</td>
                       <td className="py-3 px-3 font-extrabold text-blue-600">72% (Moderate)</td>
                     </tr>
                   </tbody>
@@ -1071,7 +1273,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 9. Precedent Matcher: Key Supreme Court Rulings
               </h3>
               <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Click a landmark judgment below to review the Supreme Court&rsquo;s ratio decidendi and match your dispute to established jurisprudence:
+                Click a landmark ruling below. Read what the Supreme Court held. Match your case with established law:
               </p>
 
               {/* Precedent Tabs */}
@@ -1137,7 +1339,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 10. Step-by-Step SOP: Rescuing a Contested Will
               </h3>
               <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Follow this standard operating procedure when an attesting witness turns hostile in district court or High Court testamentary proceedings:
+                Follow this five-step court process. It guides you when a witness turns hostile in court:
               </p>
 
               <div className="space-y-3">
@@ -1148,7 +1350,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <div className="space-y-1 text-xs sm:text-sm">
                     <strong className="text-slate-900">Declare Witness Hostile Immediately</strong>
                     <p className="text-slate-600">
-                      The moment the witness denies their signature or changes their story, counsel must request the court under Section 154 of the Evidence Act to declare them hostile and permit cross-examination with leading questions.
+                      Ask the judge to declare the witness hostile right away. Use Section 145 BSA (old Section 154 Evidence Act). This unlocks your legal right to cross-examine them with leading questions.
                     </p>
                   </div>
                 </div>
@@ -1160,7 +1362,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <div className="space-y-1 text-xs sm:text-sm">
                     <strong className="text-slate-900">Confront with Previous Statements &amp; SRO Records</strong>
                     <p className="text-slate-600">
-                      Confront the witness with their affidavit filed under Section 281 of the Indian Succession Act, their signature on the SRO register, and their bank KYC signatures to demonstrate false testimony.
+                      Confront the witness with their prior court affidavit under Section 281 ISA. Show them their signature on the SRO register. Show their bank KYC cards. Expose their false statements on court record.
                     </p>
                   </div>
                 </div>
@@ -1172,7 +1374,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <div className="space-y-1 text-xs sm:text-sm">
                     <strong className="text-slate-900">Exhaust Witness No. 2 (Mandatory Janki Bhoir Step)</strong>
                     <p className="text-slate-600">
-                      If Witness No. 2 is alive, issue court summons immediately. If they depose in favor of the Will, Section 67 BSA is satisfied and probate is granted regardless of Witness 1&rsquo;s hostility.
+                      Summon witness two at once if they are alive. If witness two proves the Will, Section 67 BSA is fully satisfied. The court will grant probate even if witness one turned hostile.
                     </p>
                   </div>
                 </div>
@@ -1184,7 +1386,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <div className="space-y-1 text-xs sm:text-sm">
                     <strong className="text-slate-900">Invoke Section 70 BSA &amp; Examine Alternate Witnesses</strong>
                     <p className="text-slate-600">
-                      File an application under Section 70 BSA to introduce the document scribe, drafting advocate, identifying witness, and attending doctor as secondary eye-witnesses of execution.
+                      File an application under Section 70 BSA. Call the scribe, the drafting lawyer, and the attending doctor to court. Their direct testimony proves valid execution.
                     </p>
                   </div>
                 </div>
@@ -1196,7 +1398,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   <div className="space-y-1 text-xs sm:text-sm">
                     <strong className="text-slate-900">Summon SRO Book 3 &amp; Move Section 340 Perjury Petition</strong>
                     <p className="text-slate-600">
-                      Summon the Sub-Registrar with Book 3 to establish the statutory presumption under Section 60 of the Registration Act. File a Section 340 CrPC / Section 379 BNSS petition against the bribed witness.
+                      Summon the Sub-Registrar with Book 3. This invokes the legal presumption under Section 60 of the Registration Act. Also file a Section 340 CrPC / 379 BNSS perjury case against the lying witness.
                     </p>
                   </div>
                 </div>
@@ -1222,7 +1424,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                     South Delhi Estate: Bribed Witness Denied Thumb Impression
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In a contested probate suit concerning a ₹14 Crore Greater Kailash property, the sole surviving attesting witness was bought out by the testator&rsquo;s excluded son. The witness denied attending the Sub-Registrar office. Counsel summoned the SRO Sub-Registrar along with the Book 3 register and thumb impression biometric sheet. The High Court rejected the hostile testimony, holding the public register conclusive, and granted probate.
+                    In a South Delhi case worth ₹14 Crore, an excluded son bribed the sole surviving witness. The witness denied going to the Sub-Registrar office. Counsel summoned the Sub-Registrar with Book 3. The book had the witness&rsquo;s photo and thumbprint. The Delhi High Court rejected the false claim. The Court held public records firm and granted probate.
                   </p>
                 </div>
 
@@ -1235,7 +1437,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                     Pune Bungalow: Memory Loss Cured by Drafting Advocate
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In an estate dispute where the attesting witness claimed severe memory loss due to advanced age, the propounder examined the senior advocate who had drafted the Will in his chamber. The advocate produced his daily chamber appointment diary, professional billing receipt, and deposed that the testator and witnesses signed in his presence. The court invoked Section 71 IEA and probated the Will.
+                    In a Pune bungalow case, an elderly witness claimed complete memory loss. Counsel examined the drafting advocate. The advocate brought his office diary and fee receipt. He deposed that the testator and witnesses signed together in his presence. The Bombay High Court invoked Section 70 BSA and probated the Will.
                   </p>
                 </div>
               </div>
@@ -1251,7 +1453,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 12. Courtroom Cross-Examination Checklist &amp; Petitions
               </h3>
               <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Use our practitioner-vetted model petition excerpt and Sub-Registrar summons checklist for your testamentary suit:
+                Use our model court petition and Sub-Registrar summons checklist for your case:
               </p>
 
               {/* Template Box 1: Section 70 BSA Model Petition */}
@@ -1360,7 +1562,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  WillDrafting.in is India&rsquo;s premier estate planning and testamentary litigation resource, powered by AMA Legal Solutions. Our senior High Court litigators defend contested probate petitions, cross-examine hostile attesting witnesses, coordinate CFSL forensic signature comparisons, and preserve genuine testamentary dispositions across all Indian High Courts.
+                  WillDrafting.in is India's leading estate planning portal, backed by AMA Legal Solutions. Our senior High Court lawyers defend contested wills. We cross-examine hostile witnesses. We coordinate forensic CFSL signature checks. We protect genuine wills across all Indian High Courts.
                 </p>
 
                 {/* Service Grid Chips */}
@@ -1526,7 +1728,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   Witness Turned Hostile in Probate Court?
                 </h4>
                 <p className="text-xs text-white/80 leading-relaxed">
-                  Our High Court testamentary litigators cross-examine hostile witnesses, issue SRO Book 3 subpoenas, and establish alternate scribe proof under Section 70 BSA.
+                  Our High Court lawyers defend contested wills. We cross-examine hostile witnesses. We summon Sub-Registrar Book 3 records. We prove wills under Section 70 BSA.
                 </p>
                 <Link
                   href="/services/high-court-testamentary-suit-contested-will-defense"
@@ -1551,7 +1753,7 @@ THE HUMBLE APPLICATION OF THE PROPOUNDER / PETITIONER ABOVE-NAMED:
                   Facing Bribery, Perjury, or Witness Collusion?
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Get immediate strategy evaluation on invoking Section 70 BSA, moving Section 340 CrPC perjury petitions, and summoning SRO registers.
+                  Get fast legal advice. Learn how to use Section 70 BSA. File perjury claims under Section 340 CrPC. Summon official SRO land records.
                 </p>
                 <Link
                   href="/contact"
