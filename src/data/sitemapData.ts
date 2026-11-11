@@ -17,6 +17,78 @@ export interface SitemapPageItem {
  * Newly created legal templates and diagnostic tools are prioritized at the very top.
  */
 export const staticPages: SitemapPageItem[] = [
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Ireland NRI CAT Inheritance Tax Checker | WillDrafting",
+    href: "/tools/ireland-nri-cat-inheritance-tax-relief-checker",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.95,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Hostile Witness Will Proof Checker BSA | WillDrafting",
+    href: "/tools/hostile-witness-will-proof-bsa-section-68-checker",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Germany NRI Erbschaftsteuer Tax Calculator | WillDrafting",
+    href: "/tools/germany-nri-erbschaftsteuer-indian-property-tax-calculator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Saudi Expat Death Benefits Claim Tool | WillDrafting",
+    href: "/tools/saudi-arabia-expat-end-of-service-gratuity-claim-finder",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "UAE DIFC vs ADJD vs Indian Will Tool | WillDrafting",
+    href: "/tools/uae-adgm-difc-vs-indian-will-cross-border-decision-tool",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Minor Child Trust Corpus Calculator | WillDrafting",
+    href: "/tools/minor-child-testamentary-trust-corpus-calculator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Crypto Will & Digital Asset Builder | WillDrafting",
+    href: "/tools/crypto-hardware-wallet-digital-will-inventory-builder",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
+  // ==================== 11-11-2026 ====================
+  {
+    title: "Senior Citizen Gift Deed Cancellation Tool | WillDrafting",
+    href: "/tools/senior-citizen-gift-deed-revocation-assessment-tool",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 0.9,
+  },
   // ==================== 02-11-2026 ====================
   {
     title: "Will Drafting for NRIs in DR Congo: Cross-Border Succession",
@@ -1667,6 +1739,54 @@ export const staticPages: SitemapPageItem[] = [
     href: "/templates/joint-mutual-mirror-will-format-husband-wife",
     category: "Templates",
     date: "28-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Bihar Dakhil Kharij Document Tracker | WillDrafting",
+    href: "/tools/bihar-dakhil-kharij-jamabandi-inheritance-tracker",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Kerala Pokkuvaravu Mutation Checklist | WillDrafting",
+    href: "/tools/kerala-tandapper-pokkuvaravu-mutation-checklist",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Inofficious Will Contest Risk Audit Tool | WillDrafting",
+    href: "/tools/inofficious-will-contest-vulnerability-audit",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "MP RCMS Namantaran Document Checker | WillDrafting",
+    href: "/tools/madhya-pradesh-rcms-namantaran-document-finder",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Startup Founder Equity Succession Tool | WillDrafting",
+    href: "/tools/startup-founder-equity-succession-calculator",
+    category: "Tools",
+    date: "11-11-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "New Zealand NRI Estate Tax Calculator | WillDrafting",
+    href: "/tools/new-zealand-nri-estate-succession-tax-estimator",
+    category: "Tools",
+    date: "11-11-2026",
     changefreq: "weekly",
     priority: 1.0,
   },
