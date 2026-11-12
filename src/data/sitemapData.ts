@@ -3946,6 +3946,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Life Insurance Nominee vs Will in India: Beneficial Nominee Rule",
+    href: "/blogs/life-insurance-beneficial-nominee-section-39-vs-will-india",
+    category: "Guides",
+    date: "2026-11-12",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
