@@ -3,7 +3,7 @@ export interface TemplateItem {
   title: string;
   href: string;
   badge: string;
-  category: "Will Formats" | "Amendments & Codicils" | "Property Deeds" | "Medical Directives" | "Hindi (हिन्दी)" | "Affidavits & Declarations";
+  category: "Will Formats" | "Amendments & Codicils" | "Property Deeds" | "Medical Directives" | "Hindi (हिन्दी)" | "Affidavits & Declarations" | "Litigation Formats";
   badgeStyle: string;
   date: string; // 'DD-MM-YYYY'
   description: string;
@@ -12,6 +12,97 @@ export interface TemplateItem {
 }
 
 export const templatesData: TemplateItem[] = [
+  {
+    id: "foreign-will-resealing-ancillary-probate-high-court",
+    title: "Foreign Will Resealing & Ancillary Probate High Court Roadmap",
+    href: "/services/foreign-will-resealing-ancillary-probate-high-court",
+    badge: "Section 228 ISA",
+    category: "Affidavits & Declarations",
+    badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
+    date: "12-11-2026",
+    description:
+      "Fast-track Section 228 Indian Succession Act roadmap for NRIs in US, UK, Canada & Australia to reseal foreign probated Wills in Bombay, Delhi, Calcutta and Madras High Courts.",
+    meta: "ISA 1925 ss. 228 & 273, Hague Apostille 1961 & High Court Rules Pack",
+    keywords: [
+      "foreign will resealing lawyer bombay calcutta madras delhi",
+      "section 228 indian succession act advocate",
+      "ancillary probate in indian high courts lawyer",
+      "enforce uk us will in india service",
+      "hague apostille foreign will probate india",
+      "special power of attorney section 18 stamp act adjudication",
+    ],
+  },
+  {
+    id: "application-for-temporary-injunction-probate-format",
+    title: "Probate Injunction Application Format (Order 39 CPC)",
+    href: "/templates/application-for-temporary-injunction-probate-format",
+    badge: "Order 39 CPC",
+    category: "Affidavits & Declarations",
+    badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
+    date: "12-11-2026",
+    description:
+      "Lawyer-vetted Order 39 Rules 1 & 2 CPC temporary injunction application format, Order 19 verification affidavit, and High Court status quo restraining order draft in probate suits.",
+    meta: "CPC 1908 Order 39 Rules 1 & 2, ISA 1925 ss. 268 & 269 & Dalpat Kumar Tripartite Test Pack",
+    keywords: [
+      "injunction application format in probate suit india",
+      "order 39 rules 1 and 2 cpc probate format",
+      "stop sale of estate during probate petition sample",
+      "stay on property transfer pending will contest draft",
+      "temporary injunction in testamentary suit high court",
+      "section 268 indian succession act injunction powers",
+      "order 19 affidavit for injunction in probate",
+      "interlocutory application restraining executor sale",
+      "status quo order format in contested will case",
+      "order 39 rule 2a breach of injunction probate",
+    ],
+  },
+  {
+    id: "caveat-petition-high-court-probate-format",
+    title: "High Court Probate Caveat Petition Format (ISA Form 12)",
+    href: "/templates/caveat-petition-high-court-probate-format",
+    badge: "Section 284 ISA",
+    category: "Affidavits & Declarations",
+    badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
+    date: "12-11-2026",
+    description:
+      "Lawyer-vetted High Court probate caveat format under Section 284 ISA Form 12, sworn verification affidavit, and Sub-Registrar Lis Pendens freezing notice draft.",
+    meta: "Indian Succession Act 1925 ss. 284-285, Form 12 & High Court Original Side Rules Pack",
+    keywords: [
+      "high court caveat petition format probate india",
+      "caveat under section 284 indian succession act format",
+      "caveat petition in bombay high court testamentary format",
+      "stop grant of probate caveat sample",
+      "section 284 form 12 indian succession act draft",
+      "delhi high court probate caveat format",
+      "caveatable interest indian succession act supreme court",
+      "jagjit singh v pamela manmohan singh caveatable interest",
+      "affidavit in support of caveat testamentary rules",
+      "sub registrar notice caveat probate lis pendens",
+    ],
+  },
+  {
+    id: "llp-partner-transmission-notice-format-india",
+    title: "LLP Partner Transmission Notice Format (LLP Act 2008 & Form 4)",
+    href: "/templates/llp-partner-transmission-notice-format-india",
+    badge: "LLP Form 4 Pack",
+    category: "Property Deeds",
+    badgeStyle: "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25",
+    date: "12-11-2026",
+    description:
+      "Lawyer-vetted LLP partner transmission notice format, Supplemental LLP Agreement template, Section 24(5) capital balance settlement schedule, and MCA Form 4 filing pack.",
+    meta: "LLP Act 2008 ss. 24 & 25, Rule 10 MCA Form 4 & Section 6 Personal Liability Pack",
+    keywords: [
+      "transmission of partnership interest in llp notice format",
+      "form 4 llp partner death format",
+      "legal heir admission in llp draft notice",
+      "llp partner capital transmission letter sample",
+      "supplemental llp agreement death of partner format",
+      "section 24 limited liability partnership act 2008",
+      "section 25 mca form 4 cessation notice",
+      "capital contribution settlement deceased partner llp",
+      "section 6 llp act six month survival partner liability",
+    ],
+  },
   {
     id: "one-person-company-nominee-director-consent-inc-3-format",
     title: "OPC Nominee Consent Form INC-3 Format (Companies Act 2013)",
@@ -1334,6 +1425,28 @@ export const templatesData: TemplateItem[] = [
       "ancestral property release deed",
       "release deed vs gift deed",
       "section 17 registration act",
+    ],
+  },
+  {
+    id: "petition-for-appointment-of-administrator-pendente-lite-format",
+    title: "Administrator Pendente Lite Petition Format: Section 247 ISA Draft",
+    href: "/templates/petition-for-appointment-of-administrator-pendente-lite-format",
+    badge: "Petition Draft",
+    category: "Litigation Formats",
+    badgeStyle: "bg-rose-50 text-[#C65378] border-rose-200/80",
+    date: "12-11-2026",
+    description:
+      "High Court and District Court petition format under Section 247 Indian Succession Act for appointment of Administrator Pendente Lite to protect disputed estate assets, collect commercial rents, and file tax returns.",
+    meta: "Section 247 ISA Court Receiver",
+    keywords: [
+      "administrator pendente lite petition format india",
+      "section 247 indian succession act petition draft",
+      "court receiver application in will dispute sample",
+      "appointment of administrator pending probate format",
+      "administrator pendente lite powers schedule high court",
+      "surety bond administrator pendente lite format",
+      "order 40 cpc receiver probate testamentary suit",
+      "contested will interim estate protection petition",
     ],
   },
 ];

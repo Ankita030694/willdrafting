@@ -199,6 +199,61 @@ const SERVICE_SCHEMA = {
                 "High Court advocate assistance for Sharia-compliant Will drafting under Shariat Act 1937, 1/3rd disposable limit audit, and lifetime Hiba gift structuring.",
             },
           },
+          {
+            "@type": "Offer",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Advance Medical Directive & Living Will Registration Service",
+              "description":
+                "Turnkey legal drafting, Notary execution, two-tier hospital medical board representation, and municipal custodian vault registration under Supreme Court 2023 orders.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "14990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Corporate Business Succession Planning & Family Constitution",
+              "description":
+                "Comprehensive corporate succession planning, family business constitution drafting, AoA-Will synchronization, and NCLT deadlock defense under Companies Act 2013.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "49000",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ultra HNI Estate Planning & Family Office Advisory Roadmap",
+              "description":
+                "Institutional family office estate planning guide for Indian promoters and ultra-HNIs: Private trusts, Core Investment Companies (CIC), IBC Sec 32A shields, and FEMA cross-border wealth.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "25000",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Foreign Will Resealing & Ancillary Probate High Court Roadmap",
+              "description":
+                "Fast-track Section 228 Indian Succession Act roadmap for NRIs in US, UK, Canada & Australia to reseal foreign probated Wills in Bombay, Delhi, Calcutta and Madras High Courts.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "50000",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High Court Testamentary Suit & Contested Will Defense",
+              "description":
+                "Specialized High Court representation for contested Wills and probate disputes: Section 284 caveats, Section 295 suit conversions, CFSL forensic handwriting audits, and witness cross-examination in Bombay, Delhi, Calcutta, and Madras.",
+            },
+          },
         ],
       },
     },
@@ -394,12 +449,84 @@ const services: ServiceCard[] = [
     illustrationSrc: "/images/iepf-unclaimed-shares-bank-recovery-og.jpg",
   },
   {
+    title: "IEPF-5 Appeal & High-Value Shares Dematerialization",
+    description:
+      "Dedicated High Court and NCLT advocate representation for recovering high-value physical shares, court Succession Certificates, SEBI Form ISR transmission, and Form IEPF-5 appeals.",
+    linkText: "Explore High-Value Share Recovery",
+    linkHref: "/services/iepf-5-appeal-high-value-shares-dematerialization",
+    illustrationSrc: "/images/iepf-5-appeal-high-value-shares-dematerialization-og.jpg",
+  },
+  {
     title: "Business Succession & Family Constitution",
     description:
       "Strategic corporate and promoter estate counsel under Companies Act 2013 and Indian Partnership Act 1932 to align personal Wills, Articles of Association (AoA), Shareholders' Agreements (SHA), and Family Constitutions.",
     linkText: "Explore Business Succession Services",
     linkHref: "/services/business-succession-family-constitution-lawyer",
     illustrationSrc: "/images/business-succession-family-constitution-lawyer-og.jpg",
+  },
+  {
+    title: "Advance Medical Directive & Living Will Registration Service",
+    description:
+      "Turnkey legal drafting, Notary execution, two-tier hospital medical board representation, and municipal custodian vault registration under Supreme Court 2023 orders.",
+    linkText: "Explore Living Will Registration",
+    linkHref: "/services/advance-medical-directive-living-will-jmfc-registration",
+    illustrationSrc: "/images/advance-medical-directive-living-will-jmfc-registration-og.jpg",
+  },
+  {
+    title: "Corporate Business Succession Planning & Family Constitution",
+    description:
+      "Comprehensive corporate succession planning, family business constitution drafting, AoA-Will synchronization, and NCLT deadlock defense under Companies Act 2013.",
+    linkText: "Explore Corporate Succession Services",
+    linkHref: "/services/corporate-business-succession-family-constitution",
+    illustrationSrc: "/images/corporate-business-succession-family-constitution-og.jpg",
+  },
+  {
+    title: "Ultra HNI Estate Planning & Family Office Advisory Roadmap",
+    description:
+      "Institutional family office estate planning guide for Indian promoters and ultra-HNIs: Private trusts, Core Investment Companies (CIC), IBC Sec 32A shields, and FEMA cross-border wealth.",
+    linkText: "Explore Ultra-HNI Estate Advisory",
+    linkHref: "/services/ultra-hni-family-office-estate-planning-advisory",
+    illustrationSrc: "/images/ultra-hni-family-office-estate-planning-advisory-og.jpg",
+  },
+  {
+    title: "Foreign Will Resealing & Ancillary Probate High Court Roadmap",
+    description:
+      "Fast-track Section 228 Indian Succession Act roadmap for NRIs in US, UK, Canada & Australia to reseal foreign probated Wills in Bombay, Delhi, Calcutta and Madras High Courts.",
+    linkText: "Explore Foreign Will Resealing",
+    linkHref: "/services/foreign-will-resealing-ancillary-probate-high-court",
+    illustrationSrc: "/images/foreign-will-resealing-ancillary-probate-high-court-og.jpg",
+  },
+  {
+    title: "High Court Testamentary Suit & Contested Will Defense",
+    description:
+      "Specialized High Court representation for contested Wills and probate disputes: Section 284 caveats, Section 295 suit conversions, CFSL forensic handwriting audits, and witness cross-examination in Bombay, Delhi, Calcutta, and Madras.",
+    linkText: "Explore Contested Will Defense",
+    linkHref: "/services/high-court-testamentary-suit-contested-will-defense",
+    illustrationSrc: "/images/high-court-testamentary-suit-contested-will-defense-og.jpg",
+  },
+  {
+    title: "Adult Guardianship & Mental Healthcare Act Legal Petitions",
+    description:
+      "Dedicated High Court parens patriae writ petition, Mental Healthcare Act 2017 nominated representative, and National Trust Act legal guardian certificate services for dementia, coma, and special needs adults.",
+    linkText: "Explore Adult Guardianship Services",
+    linkHref: "/services/adult-guardianship-petition-mental-healthcare-act",
+    illustrationSrc: "/images/adult-guardianship-petition-mental-healthcare-act-og.jpg",
+  },
+  {
+    title: "NRI Inherited Real Estate Sale, Lower TDS & Foreign Repatriation",
+    description:
+      "End-to-end legal and tax services for NRIs selling inherited Indian property: title search, Section 197 Lower TDS Certificate (Form 13), Form 15CA/15CB CA certification, and outward bank wire under RBI FEMA rules.",
+    linkText: "Explore NRI Property Repatriation",
+    linkHref: "/services/nri-inherited-real-estate-repatriation-15ca-15cb",
+    illustrationSrc: "/images/nri-inherited-real-estate-repatriation-15ca-15cb-og.jpg",
+  },
+  {
+    title: "Scheduled Tribe Tribal Land Succession & Customary Advisory",
+    description:
+      "Specialized legal advisory for Scheduled Tribe land succession, will validity under Fifth Schedule customary laws, CNT Act Section 46 & 71A defense, SPT Act Section 20, and revenue court representation.",
+    linkText: "Explore Tribal Land Advisory",
+    linkHref: "/services/scheduled-tribe-tribal-land-succession-advisory",
+    illustrationSrc: "/images/scheduled-tribe-tribal-land-succession-advisory-og.jpg",
   },
 ];
 

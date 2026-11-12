@@ -649,7 +649,7 @@ ${
               </div>
             </div>
 
-            {/* SECTION 0: EXECUTIVE BRIEF (Uses <div>, never <h3> before <h2>) */}
+            {/* SECTION 0: EXECUTIVE BRIEF (Uses <div>, never H3 before H2) */}
             <div className="rounded-2xl bg-[#F4F8FE] border-l-4 border-l-[#C65378] border border-slate-200/80 p-5 sm:p-6 shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <FileCheck className="w-4 h-4" />

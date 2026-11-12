@@ -231,7 +231,7 @@ export default function GoaInventarioClient() {
       : 0;
 
   const isMandatoryCourt =
-    hasMinorOrNri || hasSurvivingSpouse || marriageRegime === "communion";
+    hasMinorOrNri || hasSurvivingSpouse;
   const cabecaDeCasalPriority =
     marriageRegime === "communion"
       ? "Surviving Spouse (Priority 1 under PCC Art. 2068 & 2012 Act)"

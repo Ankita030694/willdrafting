@@ -1667,6 +1667,12 @@ Date: [DD-MM-YYYY] | Parishodhan Acknowledgement No: [If filed online]`;
                     Ranchi Succession Desk
                   </Link>
                   <Link
+                    href="/services/scheduled-tribe-tribal-land-succession-advisory"
+                    className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-bold"
+                  >
+                    Tribal Land Succession Advisory
+                  </Link>
+                  <Link
                     href="/services/property-mutation-dakhil-kharij-service"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-bold"
                   >
