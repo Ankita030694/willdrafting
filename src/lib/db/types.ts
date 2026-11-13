@@ -53,6 +53,8 @@ export interface AccountBase {
   whatsappInvalidAt?: Date | null;
   /** Last time the person wrote to us on WhatsApp; a reply hands them to a human and stops automation. */
   whatsappLastReplyAt?: Date | null;
+  /** Last time the signed-in person opened the dashboard or a will-form step (set by /api/will/progress). */
+  lastActiveAt?: Date | null;
   /** Active email-login code (one per account). Cleared on successful use. */
   loginOtp?: OtpState | null;
   /** Active will-verification code (separate so the two flows never overwrite each other). */

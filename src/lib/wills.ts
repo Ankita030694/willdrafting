@@ -1,6 +1,6 @@
 import crypto from "crypto";
 import { ObjectId } from "mongodb";
-import { funnelEventsCol, willsCol } from "@/lib/db/collections";
+import { funnelEventsCol, leadsCol, usersCol, willsCol } from "@/lib/db/collections";
 import type { WillDoc } from "@/lib/db/types";
 import { findAccountById, logFunnelEvent, type Account } from "@/lib/accounts";
 import { BLANK_STATE, runLegalHealthCheck, type WillDraftingState } from "@/lib/willDraftingStore";
@@ -204,6 +204,10 @@ export async function recordWizardStep(session: SessionAccount, step: number): P
       $addToSet: { stepsVisited: step },
     }
   );
+
+  // Also stamp the account itself: a will doc may not exist yet on the very first visit.
+  const accounts = session.paid ? await usersCol() : await leadsCol();
+  await accounts.updateOne({ _id: session.userId }, { $set: { lastActiveAt: now } });
 
   const events = await funnelEventsCol();
   const seen = await events.findOne(

@@ -7,7 +7,7 @@ import WillDetailInspectorModal, {
   type InspectorOrderItem,
 } from "@/components/admin/WillDetailInspectorModal";
 import type { WillDraftingState } from "@/lib/willDraftingStore";
-import ConversionFunnel from "@/components/admin/ConversionFunnel";
+import WhatsAppReport from "@/components/admin/WhatsAppReport";
 
 interface UserWillInfo {
   willId: string;
@@ -405,7 +405,7 @@ export default function AuthorityUsersPage() {
         </div>
       </div>
 
-      <ConversionFunnel />
+      <WhatsAppReport />
 
       {/* Filter and Search Bar */}
       <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
