@@ -4,6 +4,8 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/cta";
+import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
+import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
 import {
   ArrowUpRight,
   Check,
@@ -219,6 +221,7 @@ const JSON_LD = {
         },
       ],
     },
+    buildWalkthroughVideoSchema("https://www.willdrafting.in/pricing"),
   ],
 };
 
@@ -739,6 +742,17 @@ export default function PricingPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* 60-Second Walkthrough Showing Plans, Legal Audit & PDF Signing */}
+          <div className="mt-12 sm:mt-16">
+            <WillWalkthroughVideo
+              eyebrow="See What Every Plan Includes"
+              heading="Watch the Legal Check, Plans & Will Draft in 60 Seconds"
+              subheading="Preview how your family and asset answers turn into a court-ready Will PDF, how our 100-point gap scan works, and how lawyer review compares."
+              ctaText="Try the Questionnaire Before Paying"
+              ctaHref="/start/01"
+            />
           </div>
         </section>
 

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getAllSitemapLinks, formatDateForXml } from "@/data/sitemapData";
 import { blogsCol } from "@/lib/db/collections";
 import { canonicalizeBlogSlug } from "@/lib/blogSlugs";
+import { WALKTHROUGH_VIDEO_META } from "@/lib/videoSchema";
 
 const BASE_URL = "https://www.willdrafting.in";
 
@@ -81,19 +82,34 @@ export async function GET() {
 
   const urls = Array.from(urlMap.values());
 
+  const videoWatchLocs = new Set([
+    escapeXml(`${BASE_URL}/start`),
+    escapeXml(BASE_URL),
+  ]);
+
+  const videoXmlBlock = `    <video:video>
+      <video:thumbnail_loc>${escapeXml(WALKTHROUGH_VIDEO_META.posterUrl)}</video:thumbnail_loc>
+      <video:title>${escapeXml(WALKTHROUGH_VIDEO_META.title)}</video:title>
+      <video:description>${escapeXml(WALKTHROUGH_VIDEO_META.description)}</video:description>
+      <video:content_loc>${escapeXml(WALKTHROUGH_VIDEO_META.mp4Url)}</video:content_loc>
+      <video:duration>${WALKTHROUGH_VIDEO_META.durationSeconds}</video:duration>
+      <video:publication_date>${escapeXml(WALKTHROUGH_VIDEO_META.uploadDate)}</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>`;
+
   const xmlEntries = urls
     .map(
       (u) => `  <url>
     <loc>${u.loc}</loc>
     <lastmod>${u.lastmod}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
+    <priority>${u.priority}</priority>${videoWatchLocs.has(u.loc) ? `\n${videoXmlBlock}` : ""}
   </url>`
     )
     .join("\n");
 
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 ${xmlEntries}
 </urlset>`;
 

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WillFormatIndiaClient from "./WillFormatIndiaClient";
+import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
 
 export const metadata: Metadata = {
   title: {
@@ -280,6 +281,7 @@ export default function WillFormatIndiaPage() {
           },
         ],
       },
+      buildWalkthroughVideoSchema(canonicalUrl),
     ],
   };
 

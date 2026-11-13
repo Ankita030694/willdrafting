@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import FAQ from "@/components/faq";
 import CTA from "@/components/cta";
 import Process from "@/components/process";
+import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -275,6 +276,7 @@ const SERVICE_SCHEMA = {
         },
       ],
     },
+    buildWalkthroughVideoSchema("https://www.willdrafting.in/services"),
   ],
 };
 

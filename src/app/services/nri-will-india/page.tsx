@@ -15,6 +15,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/cta";
 import NriWillInteractive from "@/components/NriWillInteractive";
+import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
 
 export const metadata: Metadata = {
   title: {
@@ -459,6 +460,19 @@ export default function NriWillIndiaPage() {
             2. INTERACTIVE COUNTRY TABS & 30-SECOND RISK CHECKER
             ========================================================================= */}
         <NriWillInteractive />
+
+        {/* =========================================================================
+            2B. 60-SECOND REMOTE NRI ONLINE WILL WALKTHROUGH
+            ========================================================================= */}
+        <section className="w-full mt-16 sm:mt-24">
+          <WillWalkthroughVideo
+            eyebrow="Remote NRI Will Walkthrough"
+            heading="See How NRIs Draft an Indian Will Online in 15 Minutes"
+            subheading="Living in the US, UK, UAE, Canada, Australia, or Singapore? Watch how you list Indian flats, bank accounts, and shares from abroad with High Court lawyer review."
+            ctaText="Start My NRI Indian Will"
+            ctaHref="/start/01"
+          />
+        </section>
 
         {/* =========================================================================
             3. EMBEDDED SVG INFOGRAPHIC SECTION (Screaming Frog Compliant)

@@ -4,6 +4,9 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StartResumeCard from "@/components/start/StartResumeCard";
+import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
+import WatchWalkthroughButton from "@/components/WatchWalkthroughButton";
+import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
 import {
   Sparkles,
   ArrowRight,
@@ -157,9 +160,61 @@ const FAQS = [
   },
 ];
 
+const START_PAGE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.willdrafting.in/start#webpage",
+      url: "https://www.willdrafting.in/start",
+      name: "Online Will Drafting Questionnaire | WillDrafting.in",
+      description:
+        "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
+      video: {
+        "@id": "https://www.willdrafting.in/start#walkthrough-video",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.willdrafting.in/start#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.willdrafting.in",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Start Will Questionnaire",
+          item: "https://www.willdrafting.in/start",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.willdrafting.in/start#faq",
+      mainEntity: FAQS.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.a,
+        },
+      })),
+    },
+    buildWalkthroughVideoSchema("https://www.willdrafting.in/start"),
+  ],
+};
+
 export default function StartPage() {
   return (
     <div className="min-h-screen bg-[#FAF7F0] text-[#172228] font-sans flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(START_PAGE_SCHEMA) }}
+      />
       <Navbar />
 
       <main className="flex-1">
@@ -204,7 +259,7 @@ export default function StartPage() {
               </div>
 
               {/* Primary Call to Action Buttons */}
-              <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
                 <Link
                   href="/start/01"
                   className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#C65378] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#C65378]/25 transition hover:bg-[#b04568] sm:w-auto"
@@ -212,6 +267,8 @@ export default function StartPage() {
                   <span>Begin Will Questionnaire (Step 1)</span>
                   <ArrowRight size={16} />
                 </Link>
+
+                <WatchWalkthroughButton label="Watch 1-Min How-To Video" />
 
                 <Link
                   href="/start/dashboard"
@@ -223,7 +280,7 @@ export default function StartPage() {
 
                 <Link
                   href="/pricing"
-                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl px-5 py-3 text-sm font-semibold text-[#49585F] transition hover:text-[#172228] sm:w-auto"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl px-4 py-3 text-sm font-semibold text-[#49585F] transition hover:text-[#172228] sm:w-auto"
                 >
                   <span>Compare Plans (from ₹2,490)</span>
                   <ChevronRight size={14} />
@@ -281,6 +338,17 @@ export default function StartPage() {
               <p className="mt-2 text-sm text-[#49585F]">
                 Follow our clear roadmap. You can complete each section at your own pace without confusing legal terms.
               </p>
+            </div>
+
+            {/* Interactive 60-Second Video Walkthrough (Placed after H2) */}
+            <div className="mt-8 sm:mt-10">
+              <WillWalkthroughVideo
+                eyebrow="Interactive Step-by-Step Guide"
+                heading="Watch How to Fill Your Will Questionnaire in 60 Seconds"
+                subheading="Not sure what happens next? Watch this quick guide or tap any step chapter below to see how you add family, list assets, split shares, and sign on plain paper."
+                ctaText="Start Step 1: Personal & Family Details"
+                ctaHref="/start/01"
+              />
             </div>
 
             {/* 4 Cards with H3 headings */}
@@ -512,14 +580,14 @@ export default function StartPage() {
                     <ArrowRight size={11} />
                   </Link>
                   <Link
-                    href="/templates/will-format-in-english"
+                    href="/templates/will-format-india"
                     className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
                   >
                     <span>Sample Will Format</span>
                     <ArrowRight size={11} />
                   </Link>
                   <Link
-                    href="/services/nri-will-drafting-services-india"
+                    href="/services/nri-will-india"
                     className="inline-flex items-center gap-1.5 rounded-lg border border-[#172228]/10 bg-[#FAF7F0] px-3 py-1.5 text-xs font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378]"
                   >
                     <span>NRI Will Drafting</span>

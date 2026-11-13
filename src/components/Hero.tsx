@@ -9,6 +9,7 @@ import {
   Clock,
   ArrowRight,
   Eye,
+  Play,
 } from "lucide-react";
 
 export default function Hero() {
@@ -142,6 +143,26 @@ export default function Hero() {
                 <span>See What You’ll Create</span>
               </a>
             </div>
+
+            {/* Quick 60-Sec Video Walkthrough Trigger */}
+            <button
+              type="button"
+              onClick={() => {
+                const el = document.getElementById("walkthrough-video");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+                window.dispatchEvent(
+                  new CustomEvent("play-will-walkthrough", { detail: { time: 0 } })
+                );
+              }}
+              className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/90 border border-[#172228]/10 px-3.5 py-1.5 text-xs sm:text-[13px] font-semibold text-[#172228] hover:border-[#C65378] hover:text-[#C65378] transition shadow-2xs cursor-pointer"
+            >
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#C65378] text-white shrink-0">
+                <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
+              </span>
+              <span>Watch how it works in 60 seconds</span>
+            </button>
 
             {/* Google & Trustpilot 5-Star Ratings */}
             <div className="flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 pt-1">

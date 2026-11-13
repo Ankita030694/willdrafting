@@ -11,6 +11,7 @@ import Testimonial from "@/components/testimonial";
 import FAQ from "@/components/faq";
 import Footer from "@/components/Footer";
 import MapSection from "@/components/MapSection";
+import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
 
 export const metadata: Metadata = {
   title: {
@@ -86,6 +87,9 @@ const HOME_FAQ_SCHEMA = {
       "description":
         "Step-by-step process to draft, verify, and execute a legally valid Will in India under Section 63 of the Indian Succession Act, 1925.",
       "totalTime": "PT15M",
+      "video": {
+        "@id": "https://www.willdrafting.in#walkthrough-video",
+      },
       "estimatedCost": {
         "@type": "MonetaryAmount",
         "currency": "INR",
@@ -254,6 +258,7 @@ const HOME_FAQ_SCHEMA = {
         },
       ],
     },
+    buildWalkthroughVideoSchema("https://www.willdrafting.in"),
   ],
 };
 

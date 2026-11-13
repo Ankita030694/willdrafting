@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { OPEN_SIGNUP_EVENT } from "@/components/auth/SignupModalHost";
+import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
 import {
   FileText,
   ShieldCheck,
@@ -540,6 +541,15 @@ export default function WillFormatIndiaClient() {
                 </p>
               </div>
             </section>
+
+            {/* 60-SECOND AUTOMATED WILL WALKTHROUGH */}
+            <WillWalkthroughVideo
+              eyebrow="Faster Than Blank Templates"
+              heading="Watch Your Indian Will Write Itself Clause by Clause"
+              subheading="Skip manual formatting errors. Answer plain questions about your family and property, run an instant Section 63 gap check, and download a print-ready Will PDF."
+              ctaText="Generate My Custom Will PDF"
+              ctaHref="/start/01"
+            />
 
             {/* SECTION 2: INTERACTIVE CHECKLIST */}
             <section id="section-63-checklist" className="scroll-target scroll-mt-28 space-y-4">

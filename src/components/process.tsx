@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
 
 interface Step {
   number: string;
@@ -47,7 +48,10 @@ const steps: Step[] = [
 
 export default function Process() {
   return (
-    <section className="w-full bg-[#FAF7F0] py-3.5 sm:py-7 lg:py-9 overflow-hidden">
+    <section
+      id="how-it-works"
+      className="w-full bg-[#FAF7F0] py-3.5 sm:py-7 lg:py-9 overflow-hidden scroll-mt-20"
+    >
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         
         {/* =========================================================================
@@ -161,6 +165,18 @@ export default function Process() {
             );
           })}
         </div>
+
+        {/* =========================================================================
+            INTERACTIVE 60-SECOND WALKTHROUGH VIDEO
+            ========================================================================= */}
+        <WillWalkthroughVideo
+          variant="embedded"
+          eyebrow="60-Second Platform Tour"
+          heading="See Every Step of Your Online Will in Action"
+          subheading="Watch how plain-English answers become a court-ready Indian Will—complete with asset shares, legal gap check, lawyer review options, and plain-paper signing."
+          ctaText="Start My Will Online"
+          ctaHref="/start"
+        />
 
       </div>
     </section>
