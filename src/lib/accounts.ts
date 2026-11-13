@@ -14,6 +14,7 @@ import type {
   UserDoc,
 } from "@/lib/db/types";
 import type { AuthStatus, FunnelStage, PaymentStatus, PlanId } from "@/lib/authTypes";
+import { consentPatch } from "@/lib/whatsapp/consent";
 
 /**
  * Identity layer over the two account collections.
@@ -260,7 +261,7 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     if (input.message) patch.message = input.message;
     if (input.interestedPlanId) patch.interestedPlanId = input.interestedPlanId;
     // Consent can be granted by a later form but is never silently revoked here.
-    if (input.marketingConsent) patch.marketingConsent = true;
+    if (input.marketingConsent && !existing.marketingConsent) Object.assign(patch, consentPatch(input.source));
     try {
       await leads.updateOne({ _id: existing._id }, { $set: patch });
     } catch (err) {
@@ -281,7 +282,8 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     status: "captured" as LeadStatus,
     source: input.source,
     message: input.message,
-    marketingConsent: Boolean(input.marketingConsent),
+    marketingConsent: false,
+    ...(input.marketingConsent ? consentPatch(input.source) : {}),
     interestedPlanId: input.interestedPlanId,
     createdAt: now,
     updatedAt: now,

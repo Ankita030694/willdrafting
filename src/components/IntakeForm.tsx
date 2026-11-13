@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { track } from "@vercel/analytics";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
+import { WHATSAPP_CONSENT_TEXT } from "@/lib/whatsapp/consent";
 
 const INDIAN_STATES = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
@@ -37,6 +38,8 @@ export default function IntakeForm({ onSuccess, compact = false, source = "intak
     email: "",
     state: "Delhi",
   });
+  // DPDP: consent must be an explicit opt-in, so this always starts unticked.
+  const [whatsappConsent, setWhatsappConsent] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -67,6 +70,7 @@ export default function IntakeForm({ onSuccess, compact = false, source = "intak
           state: formData.state,
           source,
           landingPage,
+          marketingConsent: whatsappConsent,
         }),
       });
 
@@ -189,6 +193,20 @@ export default function IntakeForm({ onSuccess, compact = false, source = "intak
                 Mobile number must contain exactly 10 digits.
               </span>
             )}
+            <label
+              htmlFor="intakeWhatsappConsent"
+              style={{ display: "flex", alignItems: "flex-start", gap: "0.45rem", marginTop: "0.5rem", fontSize: "0.78rem", color: "#49585F", cursor: "pointer", lineHeight: 1.35 }}
+            >
+              <input
+                id="intakeWhatsappConsent"
+                name="whatsappConsent"
+                type="checkbox"
+                checked={whatsappConsent}
+                onChange={(e) => setWhatsappConsent(e.target.checked)}
+                style={{ marginTop: "0.12rem", accentColor: "#C65378", flexShrink: 0 }}
+              />
+              <span>{WHATSAPP_CONSENT_TEXT}</span>
+            </label>
           </div>
 
           {/* Email Address */}

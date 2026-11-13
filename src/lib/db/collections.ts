@@ -8,6 +8,7 @@ import type {
   OrderDoc,
   PromptProfileDoc,
   UserDoc,
+  WhatsAppMessageDoc,
   WillDoc,
 } from "@/lib/db/types";
 
@@ -19,7 +20,7 @@ declare global {
 }
 
 /** Bump whenever an index is added/changed so a long-running dev server re-applies the list. */
-const INDEX_SIGNATURE = "2026-10-21-blogs-images-prompts-v4";
+const INDEX_SIGNATURE = "2026-11-13-whatsapp-messages-v5";
 
 /**
  * Partial unique indexes: legacy / stub documents hold "" for email or phone, which must not
@@ -112,6 +113,21 @@ async function createIndexes(db: Db): Promise<void> {
       run: () => db.collection("blog_images").createIndex({ createdAt: -1 }),
     },
     {
+      label: "whatsapp_messages.account+sequence unique",
+      run: () =>
+        db
+          .collection("whatsapp_messages")
+          .createIndex({ accountId: 1, sequenceKey: 1 }, { unique: true }),
+    },
+    {
+      label: "whatsapp_messages.phone+createdAt",
+      run: () => db.collection("whatsapp_messages").createIndex({ phone: 1, createdAt: -1 }),
+    },
+    {
+      label: "whatsapp_messages.watiMessageId",
+      run: () => db.collection("whatsapp_messages").createIndex({ watiMessageId: 1 }, { sparse: true }),
+    },
+    {
       label: "prompts.isDefault+createdAt",
       run: () => db.collection("prompts").createIndex({ isDefault: -1, createdAt: -1 }),
     },
@@ -165,4 +181,6 @@ export async function blogImagesCol(): Promise<Collection<BlogImageDoc>> {
 export async function promptsCol(): Promise<Collection<PromptProfileDoc>> {
   return (await getDb()).collection<PromptProfileDoc>("prompts");
 }
-
+export async function whatsappMessagesCol(): Promise<Collection<WhatsAppMessageDoc>> {
+  return (await getDb()).collection<WhatsAppMessageDoc>("whatsapp_messages");
+}

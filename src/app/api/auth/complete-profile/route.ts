@@ -3,6 +3,7 @@ import { auth } from "@/auth";
 import { cleanName, normalizePhone } from "@/lib/authValidation";
 import { findAccountById, isPhoneTakenByOther, updateAccount } from "@/lib/accounts";
 import { jsonError, readJson } from "@/lib/http";
+import { consentPatch } from "@/lib/whatsapp/consent";
 
 /** Lets a signed-in account add the contact details that Google / email sign-in did not collect. */
 export async function POST(request: NextRequest) {
@@ -30,6 +31,9 @@ export async function POST(request: NextRequest) {
     const patch: Record<string, unknown> = { phone: cleanPhone };
     const name = cleanName(body.name);
     if (name && !account.doc.name) patch.name = name;
+    if (body.marketingConsent === true && !account.doc.marketingConsent) {
+      Object.assign(patch, consentPatch("complete_profile"));
+    }
 
     await updateAccount(account, patch);
 

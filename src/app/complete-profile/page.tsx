@@ -5,12 +5,15 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { WHATSAPP_CONSENT_TEXT } from "@/lib/whatsapp/consent";
 
 export default function CompleteProfilePage() {
   const router = useRouter();
   const { data: session, update } = useSession();
 
   const [phone, setPhone] = useState("");
+  // DPDP: consent must be an explicit opt-in, so this always starts unticked.
+  const [whatsappConsent, setWhatsappConsent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -29,7 +32,7 @@ export default function CompleteProfilePage() {
       const res = await fetch("/api/auth/complete-profile", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone: cleanPhone }),
+        body: JSON.stringify({ phone: cleanPhone, marketingConsent: whatsappConsent }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -120,6 +123,17 @@ export default function CompleteProfilePage() {
                   autoFocus
                 />
               </div>
+              <label
+                style={{ display: "flex", alignItems: "flex-start", gap: "0.45rem", marginTop: "0.6rem", fontSize: "0.8rem", color: "#49585F", cursor: "pointer", lineHeight: 1.35 }}
+              >
+                <input
+                  type="checkbox"
+                  checked={whatsappConsent}
+                  onChange={(e) => setWhatsappConsent(e.target.checked)}
+                  style={{ marginTop: "0.12rem", accentColor: "#C65378", flexShrink: 0 }}
+                />
+                <span>{WHATSAPP_CONSENT_TEXT}</span>
+              </label>
             </div>
 
             <button

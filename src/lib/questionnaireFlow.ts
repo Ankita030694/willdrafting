@@ -43,12 +43,36 @@ export const QUESTIONNAIRE_STEPS: QuestionnaireStepConfig[] = [
 ];
 
 /**
- * Returns internal step number (1-14) given a URL param like "01", "04", "14", or undefined (/start).
+ * One-word step names. WhatsApp's `will_left_midway` template uses the same variable for the step
+ * name in its text ("stopped at the *Assets* step") and for the end of its button link
+ * (/start/Assets), so these words must read well and also resolve back to the step.
+ */
+export const STEP_WORDS: Record<number, string> = {
+  2: "Details",
+  3: "Family",
+  4: "Assets",
+  5: "Allocations",
+  6: "Executors",
+  7: "Guardians",
+  8: "Wishes",
+  9: "Message",
+  10: "Review",
+  11: "Checks",
+  12: "Clauses",
+  13: "Plan",
+  14: "Download",
+};
+
+/**
+ * Returns internal step number (1-14) given a URL param like "01", "04", "14", a step word
+ * ("Assets"), or undefined (/start).
  */
 export function getStepFromParam(param: string | string[] | undefined | null): number {
   if (!param) return 1; // /start or /start/dashboard -> Step 1 (Overview)
   const str = Array.isArray(param) ? param[0] : String(param);
   if (str === "dashboard" || str === "") return 1;
+  const byWord = Object.entries(STEP_WORDS).find(([, word]) => word.toLowerCase() === str.toLowerCase());
+  if (byWord) return Number(byWord[0]);
   const num = parseInt(str, 10);
   if (isNaN(num)) return 1;
   if (num >= 13) return 14; // Both /start/13 and /start/14 lead to Step 14 (PDF step)

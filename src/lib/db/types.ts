@@ -44,7 +44,15 @@ export interface AccountBase {
   authStatus: AuthStatus;
   /** Needed before any marketing / retargeting campaign messages. */
   marketingConsent?: boolean;
+  /** When / where / which wording (see `src/lib/whatsapp/consent.ts`) the consent was given. */
+  marketingConsentAt?: Date | null;
+  marketingConsentSource?: string | null;
+  marketingConsentVersion?: string | null;
   unsubscribedAt?: Date | null;
+  /** Set when WhatsApp reports the number cannot receive messages (not on WhatsApp, invalid). */
+  whatsappInvalidAt?: Date | null;
+  /** Last time the person wrote to us on WhatsApp; a reply hands them to a human and stops automation. */
+  whatsappLastReplyAt?: Date | null;
   /** Active email-login code (one per account). Cleared on successful use. */
   loginOtp?: OtpState | null;
   /** Active will-verification code (separate so the two flows never overwrite each other). */
@@ -174,6 +182,45 @@ export interface WillDoc {
   updatedAt: Date;
   /** TTL index field: Abandoned guest drafts auto-delete after 30 days. Unset on user registration. */
   expiresAt?: Date | null;
+}
+
+export type WhatsAppTemplateName = "will_not_started" | "will_left_midway";
+
+export type WhatsAppMessageStatus =
+  | "sending"
+  | "sent"
+  | "delivered"
+  | "read"
+  | "replied"
+  | "failed";
+
+/**
+ * One WhatsApp template message per (account, sequence step). The unique `sequenceKey` per account
+ * is what guarantees a person never gets the same step twice, even if two cron runs overlap.
+ */
+export interface WhatsAppMessageDoc {
+  _id: ObjectId;
+  accountId: ObjectId;
+  /** "A1" / "A2" (not started), "B1:<anchor>" / "B2:<anchor>" (left midway), "backfill", or "test:…". */
+  sequenceKey: string;
+  mode: "live" | "test";
+  template: WhatsAppTemplateName;
+  /** 91XXXXXXXXXX — the number actually messaged (the test number in test mode). */
+  phone: string;
+  params: Record<string, string>;
+  status: WhatsAppMessageStatus;
+  attempts: number;
+  nextAttemptAt?: Date | null;
+  failedCode?: string | null;
+  failedDetail?: string | null;
+  watiMessageId?: string | null;
+  watiResponse?: string | null;
+  sentAt?: Date | null;
+  deliveredAt?: Date | null;
+  readAt?: Date | null;
+  repliedAt?: Date | null;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface FunnelEventDoc {
