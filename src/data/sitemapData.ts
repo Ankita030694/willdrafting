@@ -4066,6 +4066,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 1.0,
   },
+  {
+    title: "How Business Owners in India Should Write a Company Will",
+    href: "/blogs/will-for-business-owners-private-limited-shares-and-partnership",
+    category: "Guides",
+    date: "2026-11-13",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
