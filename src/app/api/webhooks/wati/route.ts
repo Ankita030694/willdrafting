@@ -56,12 +56,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    // Status events for messages we sent: match on WATI's id, else on the latest message to that number.
+    // Status events for messages we sent: match on WATI's id when we have one; the v1 send API
+    // doesn't return one, so usually it is the latest message to that number in the last 7 days.
     const ids = [str(body.localMessageId), str(body.id), str(body.whatsappMessageId)].filter(Boolean);
     let message = ids.length ? await messages.findOne({ watiMessageId: { $in: ids } }) : null;
-    if (!message && body.waId) {
+    const eventPhone = last10(str(body.waId) || str(body.whatsappNumber) || str(body.phone) || str(body.recipient));
+    if (!message && eventPhone.length === 10) {
       message = await messages.findOne(
-        { phone: `91${last10(str(body.waId))}` },
+        { phone: `91${eventPhone}`, createdAt: { $gte: new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000) } },
         { sort: { createdAt: -1 } }
       );
     }
