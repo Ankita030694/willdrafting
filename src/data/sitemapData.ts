@@ -4074,6 +4074,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Will for Unmarried, Single & Childless Individuals in India",
+    href: "/blogs/will-for-unmarried-single-and-childless-individuals-india",
+    category: "Guides",
+    date: "2026-11-14",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
