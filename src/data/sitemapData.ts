@@ -4082,6 +4082,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Will for Divorced & Single Parents: Protecting Your Minor Child",
+    href: "/blogs/will-for-divorced-and-single-parents-protecting-minor-children",
+    category: "Guides",
+    date: "2026-11-16",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
