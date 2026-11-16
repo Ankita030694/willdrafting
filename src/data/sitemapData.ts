@@ -4090,6 +4090,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Will for Parents of a Special Needs Child in India: Lifelong Care",
+    href: "/blogs/will-for-parents-of-special-needs-child-india",
+    category: "Guides",
+    date: "2026-11-16",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
