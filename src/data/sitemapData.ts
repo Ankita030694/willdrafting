@@ -4098,6 +4098,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "What Happens If the Executor or Witness of a Will Dies in India?",
+    href: "/blogs/what-happens-if-executor-or-witness-of-will-dies-india",
+    category: "Guides",
+    date: "2026-11-17",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
