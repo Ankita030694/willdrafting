@@ -4106,6 +4106,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Codicil vs Making a New Will in India: Which Should You Choose?",
+    href: "/blogs/codicil-vs-making-a-new-will-which-is-better-india",
+    category: "Guides",
+    date: "2026-11-18",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
