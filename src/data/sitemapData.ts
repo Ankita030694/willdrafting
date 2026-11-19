@@ -4114,6 +4114,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Adopted Child vs Stepchild Property Rights in India & Wills",
+    href: "/blogs/adopted-child-and-stepchild-property-rights-in-will-india",
+    category: "Guides",
+    date: "2026-11-19",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
