@@ -4122,6 +4122,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "How to Include Pet Care, Charity & Caretakers in an Indian Will",
+    href: "/blogs/pet-care-and-charitable-donation-clauses-in-will-india",
+    category: "Guides",
+    date: "2026-11-20",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
