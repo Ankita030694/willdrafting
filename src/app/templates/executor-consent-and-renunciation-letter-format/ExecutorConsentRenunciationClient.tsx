@@ -426,7 +426,7 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
       {/* =========================================================================
           LAYER 1: HERO SECTION (Dark Navy Brand Canvas)
           ========================================================================= */}
-      <section className="relative bg-[#172228] text-white pt-8 pb-14 md:pt-12 md:pb-20 overflow-hidden border-b border-[#172228]/40">
+      <section className="relative bg-[#172228] text-white pt-32 pb-14 sm:pt-36 md:pb-20 lg:pt-40 lg:pb-24 overflow-hidden border-b border-[#172228]/40">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C65378_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

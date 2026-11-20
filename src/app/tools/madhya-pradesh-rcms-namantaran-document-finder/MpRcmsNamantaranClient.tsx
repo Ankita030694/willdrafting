@@ -223,7 +223,7 @@ export default function MpRcmsNamantaranClient() {
       {/* =========================================================================
           LAYER 1: HERO SECTION (Brand Navy Gradient & Deep Visual Identity)
           ========================================================================= */}
-      <section className="relative w-full bg-gradient-to-br from-[#172228] via-[#1E2E38] to-[#2B3E4C] py-14 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden text-center">
+      <section className="relative w-full bg-gradient-to-br from-[#172228] via-[#1E2E38] to-[#2B3E4C] pt-32 pb-14 sm:pt-36 md:pb-20 lg:pt-40 px-4 sm:px-6 lg:px-8 overflow-hidden text-center">
         {/* Subtle background texture */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C65378_1px,transparent_1px)] [background-size:16px_16px]" />
 

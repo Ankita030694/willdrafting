@@ -437,7 +437,7 @@ export default function WillFormatIndiaClient() {
           {/* =====================================================================
               LEFT COLUMN: STICKY TABLE OF CONTENTS
               ===================================================================== */}
-          <aside className="sticky top-6 hidden lg:block space-y-4">
+          <aside className="sticky top-24 hidden lg:block space-y-4">
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-[#172228]">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
@@ -1249,7 +1249,7 @@ export default function WillFormatIndiaClient() {
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author Bio & Emergency CTAs)
               ===================================================================== */}
-          <aside className="space-y-5 sticky top-6">
+          <aside className="space-y-5 sticky top-24">
             {/* CARD 1: AUTHOR BIO CARD */}
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">

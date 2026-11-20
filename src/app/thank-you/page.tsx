@@ -53,7 +53,7 @@ export default function ThankYouPage() {
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
       <Navbar />
 
-      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-28 pb-16 sm:pt-32 sm:pb-24">
         <Suspense fallback={<div className="text-center p-8">Loading submission details...</div>}>
           <ThankYouContent />
         </Suspense>

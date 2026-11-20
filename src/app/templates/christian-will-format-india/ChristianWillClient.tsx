@@ -279,7 +279,7 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
       {/* =========================================================================
           LAYER 1: HERO SECTION
           ========================================================================= */}
-      <section className="relative overflow-hidden bg-[#172228] text-white py-12 md:py-16 border-b border-[#172228]/20">
+      <section className="relative overflow-hidden bg-[#172228] text-white pt-32 pb-12 sm:pt-36 md:pb-16 lg:pt-40 lg:pb-20 border-b border-[#172228]/20">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C65378_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Breadcrumb */}

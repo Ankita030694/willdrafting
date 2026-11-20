@@ -218,7 +218,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
       {/* =========================================================================
           HERO SECTION - BRAND COMPLIANT (#172228, #C65378)
           ========================================================================= */}
-      <section className="relative bg-gradient-to-b from-[#172228] via-[#1b272e] to-[#121c21] text-white pt-24 pb-16 sm:pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-[#172228] via-[#1b272e] to-[#121c21] text-white pt-32 pb-16 sm:pt-36 sm:pb-20 lg:pt-40 lg:pb-24 overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#C65378]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-80 h-80 bg-rose-500/5 rounded-full blur-3xl pointer-events-none" />

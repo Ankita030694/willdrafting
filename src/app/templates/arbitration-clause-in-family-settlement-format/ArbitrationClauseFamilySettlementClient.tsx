@@ -256,7 +256,7 @@ The legal Seat and Venue of arbitration shall be [City, State, e.g., New Delhi /
       {/* =========================================================================
           LAYER 1: HERO SECTION
           ========================================================================= */}
-      <section className="relative w-full bg-[#172228] text-white pt-12 pb-16 md:pt-16 md:pb-20 border-b border-[#FAF7F0]/10 overflow-hidden">
+      <section className="relative w-full bg-[#172228] text-white pt-32 pb-16 sm:pt-36 md:pb-20 lg:pt-40 lg:pb-24 border-b border-[#FAF7F0]/10 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Statutory Category Pill */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C65378]/20 border border-[#C65378]/40 text-rose-200 text-xs font-bold uppercase tracking-wider mb-6">
