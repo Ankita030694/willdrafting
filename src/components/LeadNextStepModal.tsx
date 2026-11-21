@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { track } from "@vercel/analytics";
 import EmailOtpAuth from "@/components/auth/EmailOtpAuth";
-import PaywallModal from "@/components/dashboard/PaywallModal";
 
 export interface LeadDetails {
   name: string;
@@ -22,32 +21,35 @@ interface LeadNextStepModalProps {
 /**
  * The single flow after any lead form (contact page, intake popup):
  *   1. confirm the email with a one-time code (this also signs the visitor in),
- *   2. choose: pay now and build the Will, or explore the dashboard first (pay later).
- * Both choices end on the dashboard, so there is no separate "thank you" dead end.
+ *   2. go straight to the first question of the Will.
+ * Plans and payment are only shown later (Plan Selection), once the visitor has seen their Will
+ * take shape; asking for money right after the email code lost almost every lead.
  */
 export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModalProps) {
   const router = useRouter();
   const { data: session, status } = useSession();
   const [verified, setVerified] = React.useState(false);
 
-  if (!lead) return null;
-
   // A leftover session for some other account must not skip verification: the signed-in,
   // verified email has to be the one that was just submitted.
   const sessionMatchesLead =
+    Boolean(lead) &&
     status === "authenticated" &&
     session?.user?.authStatus === "verified" &&
-    (session.user.email || "").toLowerCase() === lead.email.trim().toLowerCase();
-  const signedIn = sessionMatchesLead || verified;
-  const goToDashboard = () => {
-    onDismiss();
-    router.push("/start/dashboard");
-    router.refresh();
-  };
+    (session.user.email || "").toLowerCase() === (lead?.email || "").trim().toLowerCase();
+  const signedIn = Boolean(lead) && (sessionMatchesLead || verified);
 
-  if (signedIn) {
-    return <PaywallModal isOpen onClose={goToDashboard} />;
-  }
+  React.useEffect(() => {
+    if (!signedIn) return;
+    onDismiss();
+    router.push("/start/01");
+    router.refresh();
+    // onDismiss is recreated by the parent on every render; this must run once per sign-in.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [signedIn]);
+
+  // Signed in: the redirect above is under way, so render nothing in the meantime.
+  if (!lead || signedIn) return null;
 
   // While the session is still loading, show nothing rather than flashing the verify step.
   if (status === "loading") return null;
@@ -114,7 +116,7 @@ export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModal
           Thanks{lead.name ? `, ${lead.name.split(" ")[0]}` : ""}! One quick step
         </h2>
         <p style={{ margin: "0 0 1.1rem", fontSize: "0.88rem", color: "#55636D", lineHeight: 1.45 }}>
-          Confirm your email to open your dashboard and see how your Will is created.
+          Confirm your email to save your progress and start your Will. No payment is needed to begin.
         </p>
         <EmailOtpAuth
           mode="signup"

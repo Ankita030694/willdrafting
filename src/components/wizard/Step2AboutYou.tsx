@@ -19,6 +19,7 @@ import {
   AlertCircle,
   Building,
   Briefcase,
+  ChevronDown,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
@@ -58,6 +59,18 @@ export default function Step2AboutYou({
   const formData = state.testator;
   const [errorMsg, setErrorMsg] = useState("");
   const [autoFilledState, setAutoFilledState] = useState(false);
+  // Only name, date of birth, mobile, marital status and religion are needed to begin. The other
+  // identity fields stay folded away unless the person has already filled some of them in.
+  const [showMore, setShowMore] = useState(() =>
+    Boolean(
+      formData.fatherOrMotherName?.trim() ||
+        formData.pan?.trim() ||
+        formData.aadhaar?.trim() ||
+        formData.address?.trim() ||
+        formData.pincode?.trim() ||
+        formData.workplace?.trim()
+    )
+  );
 
   const patchTestator = (patch: Partial<typeof formData>) => {
     onUpdate((prevState) => ({
@@ -184,6 +197,7 @@ export default function Step2AboutYou({
     }
     const cleanAadhaar = sanitizeAadhaar(formData.aadhaar || "");
     if (cleanAadhaar.length > 0 && cleanAadhaar.length !== 12) {
+      setShowMore(true);
       setErrorMsg(
         isHi ? "आधार नंबर में ठीक 12 अंक होने चाहिए।" : AADHAAR_ERROR_MSG
       );
@@ -266,14 +280,19 @@ export default function Step2AboutYou({
               {isHi ? "अपनी व्यक्तिगत जानकारी दर्ज करें" : "Tell us about yourself"}
             </h2>
           </div>
+          <p style={{ margin: "0.25rem 0 0", fontSize: "0.84rem", color: "var(--color-slate)", lineHeight: 1.45 }}>
+            {isHi
+              ? "शुरू करने के लिए बस 5 आसान जानकारी। बाकी सब बाद में जोड़ा जा सकता है।"
+              : "Just 5 quick details to begin. Everything else can be added later."}
+          </p>
         </div>
 
         <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <AudioAssistantButton
             textToSpeak={
               isHi
-                ? "अपने बारे में बताएं। आपका पूर्ण कानूनी नाम, माता-पिता का नाम, पैन और पता दर्ज किया जाता है ताकि आपकी पहचान पर विवाद न हो।"
-                : "Tell us about yourself. Your full legal name, parent's name, PAN number, and address are recorded so your identity cannot be contested. Simply tap and fill each field."
+                ? "अपने बारे में बताएं। शुरू करने के लिए केवल आपका नाम, जन्म तिथि, मोबाइल नंबर, वैवाहिक स्थिति और धर्म चाहिए। बाकी विवरण वैकल्पिक हैं और बाद में जोड़े जा सकते हैं।"
+                : "Tell us about yourself. To begin we only need your name, date of birth, mobile number, marital status and religion. Everything else is optional and can be added later."
             }
             label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
@@ -324,10 +343,10 @@ export default function Step2AboutYou({
         <div
           className="step2-form-card w-full flex-1 min-h-0 overflow-y-auto overflow-x-hidden bg-white rounded-[20px] border border-[#172228]/10 p-4 sm:p-6 lg:px-8 lg:py-6 shadow-sm flex flex-col gap-6"
         >
-          {/* Main 2-Column Desktop / 1-Column Mobile Fields Grid */}
+          {/* Essentials: the only details needed to begin (2 columns on desktop, 1 on mobile) */}
           <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
             {/* 1. Full Legal Name */}
-            <div className="flex flex-col min-w-0 w-full">
+            <div className="flex flex-col min-w-0 w-full md:col-span-2">
               <div className="flex flex-wrap justify-between items-center gap-2 mb-1.5">
                 <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
                   <span>{isHi ? "पूर्ण कानूनी नाम (आधार / पैन के अनुसार) *" : "Full Legal Name (as per Aadhaar / PAN) *"}</span>
@@ -396,186 +415,11 @@ export default function Step2AboutYou({
               />
             </div>
 
-            {/* 2. Parent's Name (Son/Daughter of) */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "माता / पिता का नाम (पुत्र / पुत्री)" : "Parent's Name (Son/Daughter of)"}</span>
-                <InfoTooltip
-                  text="Enter your father's or mother's full legal name (printed as 'S/o' or 'D/o' in the Will preamble). In Indian courts and Sub-Registrar offices, parentage is essential to distinguish you from anyone else with a similar name."
-                  hindiText="अपने पिता या माता का पूरा कानूनी नाम दर्ज करें (जो वसीयत की प्रस्तावना में 'पुत्र/पुत्री' के रूप में छपेगा)। न्यायालयों और उप-पंजीयक कार्यालयों में समान नाम वाले अन्य व्यक्तियों से आपकी पहचान स्पष्ट करने के लिए यह आवश्यक है।"
-                />
-              </label>
-              <input
-                type="text"
-                name="fatherOrMotherName"
-                placeholder="e.g., Ramesh Sharma"
-                value={formData.fatherOrMotherName || ""}
-                onChange={(e) =>
-                  patchTestator({
-                    fatherOrMotherName: sanitizeNameInput(e.target.value),
-                  })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 3. Workplace / Institutional Affiliation */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "कार्यस्थल / संस्थान संबद्धता" : "Workplace / Institutional Affiliation"}</span>
-                <InfoTooltip
-                  text="Mention your current or former employer, business, or profession (e.g., 'Retired SBI Officer' or 'Director at XYZ Pvt Ltd'). Adding your occupation in the opening declaration strengthens your identity proof."
-                  hindiText="अपने वर्तमान या पूर्व नियोक्ता, व्यवसाय या पेशे का उल्लेख करें (जैसे, 'सेवानिवृत्त एसबीआई अधिकारी' या 'निदेशक, एक्सवाईजेड प्रा. लि.')। यह आपकी पहचान को और अधिक प्रमाणित करता है।"
-                />
-              </label>
-              <input
-                type="text"
-                name="workplace"
-                placeholder="e.g., Company Name or Profession"
-                value={formData.workplace || ""}
-                onChange={(e) =>
-                  patchTestator({ workplace: e.target.value })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 4. PAN */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "स्थायी खाता संख्या (पैन)" : "Permanent Account Number (PAN)"}</span>
-                <InfoTooltip
-                  text="Enter your 10-character PAN (e.g., ABCDE1234F). Including your PAN permanently links your Will to your Income Tax profile, bank accounts, Demat holdings, and mutual fund folios."
-                  hindiText="अपना 10-अक्षरों का पैन नंबर (जैसे, ABCDE1234F) दर्ज करें। वसीयत में पैन शामिल करने से यह आपके आयकर रिकॉर्ड, बैंक खातों, डीमैट और म्यूचुअल फंड फोलियो से निर्विवाद रूप से जुड़ जाता है।"
-                />
-              </label>
-              <input
-                type="text"
-                name="pan"
-                placeholder="ABCDE1234F"
-                maxLength={10}
-                value={formData.pan || ""}
-                onChange={(e) =>
-                  patchTestator({
-                    pan: sanitizePan(e.target.value),
-                  })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] font-semibold tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 5. Aadhaar */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "आधार नंबर (12 अंक)" : "Aadhaar Number (12 digits)"}</span>
-                <InfoTooltip
-                  text="Enter your 12-digit Aadhaar number. Aadhaar serves as primary identity proof when your family or Executor submits the Will for property mutation, bank transmission, or Sub-Registrar registration."
-                  hindiText="अपना 12-अंकों का आधार नंबर दर्ज करें। संपत्ति नामांतरण (म्यूटेशन), बैंक हस्तांतरण या उप-पंजीयक पंजीकरण के समय आधार आपकी प्राथमिक पहचान के रूप में कार्य करता है।"
-                />
-              </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                autoComplete="off"
-                name="aadhaar"
-                placeholder="1234 5678 9012"
-                maxLength={14}
-                value={formatAadhaar(formData.aadhaar || "")}
-                onChange={(e) =>
-                  patchTestator({ aadhaar: formatAadhaar(e.target.value) })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 6. Gender */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "लिंग" : "Gender"}</span>
-                <InfoTooltip
-                  text="Select your gender. Under Indian succession laws (such as Sections 8 and 15 of the Hindu Succession Act, 1956), legal pronouns and default intestate heir rules differ for male and female testators."
-                  hindiText="अपना लिंग चुनें। भारतीय उत्तराधिकार कानूनों (जैसे हिंदू उत्तराधिकार अधिनियम, 1956 की धारा 8 और 15) के तहत पुरुष और महिला वसीयतकर्ताओं के लिए कानूनी शब्दावली और उत्तराधिकार नियम भिन्न होते हैं।"
-                />
-              </label>
-              <div className="grid grid-cols-3 gap-1.5 border-b border-[#D1D5DB] pb-1.5">
-                {[
-                  { id: "male", label: isHi ? "पुरुष" : "Male" },
-                  { id: "female", label: isHi ? "महिला" : "Female" },
-                  { id: "other", label: isHi ? "अन्य" : "Other" },
-                ].map((g) => {
-                  const isSel = formData.gender === g.id;
-                  return (
-                    <button
-                      key={g.id}
-                      type="button"
-                      onClick={() =>
-                        patchTestator({ gender: g.id as any })
-                      }
-                      style={{
-                        padding: "0.3rem 0.4rem",
-                        borderRadius: "999px",
-                        border: isSel
-                          ? "1.5px solid var(--color-gold)"
-                          : "1px solid transparent",
-                        backgroundColor: isSel
-                          ? "rgba(198, 83, 120, 0.1)"
-                          : "rgba(23, 34, 40, 0.04)",
-                        color: isSel ? "var(--color-gold)" : "#111827",
-                        fontSize: "0.78rem",
-                        fontWeight: isSel ? 700 : 500,
-                        cursor: "pointer",
-                        textAlign: "center",
-                        transition: "all 0.15s ease",
-                      }}
-                    >
-                      {g.label}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
             {/* 7. Date of Birth */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex justify-between items-center mb-1.5">
                 <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] inline-flex items-center">
-                  <span>{isHi ? "जन्म तिथि एवं आयु" : "Date of Birth & Age"}</span>
+                  <span>{isHi ? "जन्म तिथि *" : "Date of Birth *"}</span>
                   <InfoTooltip
                     text="Select your date of birth as per official ID. Under Section 59 of the Indian Succession Act, 1925, you must be at least 18 years old and of sound mind to execute a valid Will."
                     hindiText="आधिकारिक पहचान पत्र के अनुसार अपनी जन्म तिथि चुनें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 59 के तहत वैध वसीयत बनाने के लिए आपकी आयु कम से कम 18 वर्ष और मानसिक स्थिति स्वस्थ होनी चाहिए।"
@@ -609,7 +453,7 @@ export default function Step2AboutYou({
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
                 <span className="inline-flex items-center">
-                  <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                  <span>{isHi ? "मोबाइल नंबर *" : "Mobile Number *"}</span>
                   <InfoTooltip
                     text="Enter your active 10-digit Indian mobile number. This is used to save your progress and help your Executor or legal team verify your contact record."
                     hindiText="अपना सक्रिय 10-अंकों का मोबाइल नंबर दर्ज करें। इसका उपयोग आपकी प्रगति को सुरक्षित रखने और आपके निष्पादक (Executor) या कानूनी टीम के संदर्भ के लिए किया जाता है।"
@@ -654,155 +498,6 @@ export default function Step2AboutYou({
                   {isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : "Mobile number must contain exactly 10 digits."}
                 </span>
               )}
-            </div>
-
-            {/* 9. Email Address */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
-                <InfoTooltip
-                  text="Enter your personal email address. We will send a 6-digit verification OTP to this email in Step 10 to permanently lock your Will and link it to your secure account."
-                  hindiText="अपना व्यक्तिगत ईमेल पता दर्ज करें। चरण 10 में आपकी वसीयत को स्थायी रूप से सत्यापित और लॉक करने के लिए इसी ईमेल पर 6-अंकों का ओटीपी (OTP) भेजा जाएगा।"
-                />
-              </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="name@example.com"
-                value={formData.email}
-                onChange={(e) =>
-                  patchTestator({ email: normalizeEmail(e.target.value) })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 10. Permanent Residential Address */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "स्थायी आवासीय पता" : "Permanent Residential Address"}</span>
-                <InfoTooltip
-                  text="Enter your complete permanent residential address (House/Flat No., Building, Street, Locality). This establishes your place of domicile and determines which local District Court has jurisdiction over your estate."
-                  hindiText="अपना पूरा स्थायी आवासीय पता (मकान/फ्लैट नंबर, भवन, गली, मोहल्ला) दर्ज करें। यह आपके अधिवास को स्थापित करता है और तय करता है कि किस स्थानीय जिला न्यायालय का क्षेत्राधिकार लागू होगा।"
-                />
-              </label>
-              <input
-                type="text"
-                name="address"
-                placeholder="House/Apt No., Street, Sector / Landmark"
-                value={formData.address}
-                onChange={(e) =>
-                  patchTestator({ address: e.target.value })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 11. PIN Code */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
-                <span className="inline-flex items-center">
-                  <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
-                  <InfoTooltip
-                    text="Enter your 6-digit postal PIN code. We automatically fetch your City and State from this PIN code to identify your local Sub-Registrar jurisdiction."
-                    hindiText="अपना 6-अंकों का डाक पिन कोड दर्ज करें। इस पिन कोड से आपका शहर और राज्य स्वतः भर जाएगा ताकि आपके स्थानीय उप-पंजीयक क्षेत्राधिकार की पहचान हो सके।"
-                  />
-                </span>
-                <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case">
-                  {isHi ? "शहर व राज्य स्वतः भरेगा" : "Auto-fills City & State"}
-                </span>
-              </label>
-              <input
-                type="text"
-                inputMode="numeric"
-                name="pincode"
-                maxLength={6}
-                value={formData.pincode}
-                onChange={(e) => handlePincodeChange(e.target.value)}
-                placeholder="e.g., 110001"
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 12. City */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
-                <span>{isHi ? "शहर / जिला" : "City"}</span>
-                <InfoTooltip
-                  text="Your city or district of residence. Note: Properties or Wills executed within the presidency jurisdictions of Mumbai, Chennai, or Kolkata have specific probate requirements under Section 213 of the Indian Succession Act."
-                  hindiText="आपका निवास शहर या जिला। नोट: मुंबई, चेन्नई या कोलकाता के न्यायिक क्षेत्र में निष्पादित वसीयतों या संपत्तियों के लिए भारतीय उत्तराधिकार अधिनियम की धारा 213 के तहत विशेष प्रोबेट नियम लागू होते हैं।"
-                />
-              </label>
-              <input
-                type="text"
-                name="city"
-                value={formData.city}
-                onChange={(e) =>
-                  patchTestator({ city: sanitizeNameInput(e.target.value) })
-                }
-                placeholder="e.g., New Delhi"
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 13. State (Standard Dropdown) */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
-                <span className="inline-flex items-center">
-                  <span>{isHi ? "राज्य" : "State"}</span>
-                  <InfoTooltip
-                    text="Select the Indian State or Union Territory of your permanent residence."
-                    hindiText="अपने स्थायी निवास का भारतीय राज्य या केंद्र शासित प्रदेश चुनें।"
-                  />
-                </span>
-                {autoFilledState && (
-                  <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case flex items-center gap-1">
-                    ✓ {isHi ? "पिन से स्वतः भरा" : "Auto-filled from PIN"}
-                  </span>
-                )}
-              </label>
-              <StateDropdown
-                value={formData.state}
-                onChange={handleStateChange}
-                autoFilled={autoFilledState}
-                placeholder={isHi ? "राज्य चुनें" : "Select State"}
-              />
             </div>
           </div>
 
@@ -939,67 +634,438 @@ export default function Step2AboutYou({
             </div>
           </div>
 
-          {/* Prior Will Revocation Status (Section 70, Indian Succession Act, 1925) */}
-          <div
-            className="step2-revocation-box"
+          {/* Everything below is optional: it identifies the testator in the Will, but is not needed to begin. */}
+          <button
+            type="button"
+            onClick={() => setShowMore((open) => !open)}
+            aria-expanded={showMore}
+            aria-controls="step2-optional-details"
+            className="step2-optional-toggle"
             style={{
               display: "flex",
-              flexWrap: "wrap",
               alignItems: "center",
               justifyContent: "space-between",
               gap: "0.75rem",
-              padding: "0.75rem 1rem",
+              width: "100%",
+              textAlign: "left",
+              padding: "0.8rem 1rem",
               borderRadius: "12px",
+              border: "1px dashed #D1D5DB",
               backgroundColor: "rgba(23, 34, 40, 0.02)",
-              border: "1px solid #E5E7EB",
+              cursor: "pointer",
+              fontFamily: "inherit",
             }}
           >
-            <div>
-              <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#111827" }} className="inline-flex items-center">
-                <span>
-                  {isHi
-                    ? "क्या आपने पहले कोई वसीयत या कोडिसिल बनाई है? (धारा 70 निरस्तीकरण)"
-                    : "Have you made any previous Will or Codicil? (Section 70 Revocation)"}
-                </span>
-                <InfoTooltip
-                  text="Turn this ON if you have ever signed an earlier Will or Codicil. Even if you aren't sure, our system includes a mandatory Revocation Clause under Section 70 of the Indian Succession Act, 1925 to automatically cancel all prior Wills and make this your sole valid Last Will."
-                  hindiText="यदि आपने पहले कभी कोई वसीयत या कोडिसिल बनाई है तो 'हाँ' चुनें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 70 के तहत यह वसीयत आपकी सभी पुरानी वसीयतों को स्वतः रद्द कर देगी और यही आपकी अंतिम मान्य वसीयत होगी।"
-                />
-              </div>
-              <div style={{ fontSize: "0.73rem", color: "#6B7280" }}>
+            <span style={{ minWidth: 0 }}>
+              <span style={{ display: "block", fontSize: "0.86rem", fontWeight: 700, color: "#111827" }}>
+                {showMore
+                  ? isHi ? "अतिरिक्त विवरण (वैकल्पिक)" : "More details (optional)"
+                  : isHi ? "+ और विवरण जोड़ें (वैकल्पिक)" : "+ Add more details (optional)"}
+              </span>
+              <span style={{ display: "block", fontSize: "0.75rem", color: "#6B7280", marginTop: "0.15rem", lineHeight: 1.45 }}>
                 {isHi
-                  ? "यह वसीयत आपके द्वारा पूर्व में बनाई गई सभी वसीयतों को कानूनी रूप से रद्द और प्रतिस्थापित कर देगी।"
-                  : "This Will automatically revokes and supersedes any prior Wills or testamentary writings."}
+                  ? "माता/पिता का नाम, पता और पैन / आधार वसीयत में आपकी पहचान स्पष्ट करते हैं। इन्हें अभी छोड़ सकते हैं और वसीयत अंतिम होने से पहले कभी भी जोड़ सकते हैं।"
+                  : "Parent's name, address and PAN / Aadhaar help identify you in your Will. Skip them for now and add them any time before your Will is finalised."}
+              </span>
+            </span>
+            <ChevronDown
+              size={18}
+              color="#6B7280"
+              style={{ flexShrink: 0, transform: showMore ? "rotate(180deg)" : "none", transition: "transform 0.15s ease" }}
+            />
+          </button>
+
+          {showMore && (
+            <div id="step2-optional-details" className="flex flex-col gap-6 w-full min-w-0">
+              <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
+                {/* 6. Gender */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "लिंग" : "Gender"}</span>
+                    <InfoTooltip
+                      text="Select your gender. Under Indian succession laws (such as Sections 8 and 15 of the Hindu Succession Act, 1956), legal pronouns and default intestate heir rules differ for male and female testators."
+                      hindiText="अपना लिंग चुनें। भारतीय उत्तराधिकार कानूनों (जैसे हिंदू उत्तराधिकार अधिनियम, 1956 की धारा 8 और 15) के तहत पुरुष और महिला वसीयतकर्ताओं के लिए कानूनी शब्दावली और उत्तराधिकार नियम भिन्न होते हैं।"
+                    />
+                  </label>
+                  <div className="grid grid-cols-3 gap-1.5 border-b border-[#D1D5DB] pb-1.5">
+                    {[
+                      { id: "male", label: isHi ? "पुरुष" : "Male" },
+                      { id: "female", label: isHi ? "महिला" : "Female" },
+                      { id: "other", label: isHi ? "अन्य" : "Other" },
+                    ].map((g) => {
+                      const isSel = formData.gender === g.id;
+                      return (
+                        <button
+                          key={g.id}
+                          type="button"
+                          onClick={() =>
+                            patchTestator({ gender: g.id as any })
+                          }
+                          style={{
+                            padding: "0.3rem 0.4rem",
+                            borderRadius: "999px",
+                            border: isSel
+                              ? "1.5px solid var(--color-gold)"
+                              : "1px solid transparent",
+                            backgroundColor: isSel
+                              ? "rgba(198, 83, 120, 0.1)"
+                              : "rgba(23, 34, 40, 0.04)",
+                            color: isSel ? "var(--color-gold)" : "#111827",
+                            fontSize: "0.78rem",
+                            fontWeight: isSel ? 700 : 500,
+                            cursor: "pointer",
+                            textAlign: "center",
+                            transition: "all 0.15s ease",
+                          }}
+                        >
+                          {g.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* 2. Parent's Name (Son/Daughter of) */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "माता / पिता का नाम (पुत्र / पुत्री)" : "Parent's Name (Son/Daughter of)"}</span>
+                    <InfoTooltip
+                      text="Enter your father's or mother's full legal name (printed as 'S/o' or 'D/o' in the Will preamble). In Indian courts and Sub-Registrar offices, parentage is essential to distinguish you from anyone else with a similar name."
+                      hindiText="अपने पिता या माता का पूरा कानूनी नाम दर्ज करें (जो वसीयत की प्रस्तावना में 'पुत्र/पुत्री' के रूप में छपेगा)। न्यायालयों और उप-पंजीयक कार्यालयों में समान नाम वाले अन्य व्यक्तियों से आपकी पहचान स्पष्ट करने के लिए यह आवश्यक है।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="fatherOrMotherName"
+                    placeholder="e.g., Ramesh Sharma"
+                    value={formData.fatherOrMotherName || ""}
+                    onChange={(e) =>
+                      patchTestator({
+                        fatherOrMotherName: sanitizeNameInput(e.target.value),
+                      })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 9. Email Address */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "ईमेल पता" : "Email Address"}</span>
+                    <InfoTooltip
+                      text="Enter your personal email address. We will send a 6-digit verification OTP to this email in Step 10 to permanently lock your Will and link it to your secure account."
+                      hindiText="अपना व्यक्तिगत ईमेल पता दर्ज करें। चरण 10 में आपकी वसीयत को स्थायी रूप से सत्यापित और लॉक करने के लिए इसी ईमेल पर 6-अंकों का ओटीपी (OTP) भेजा जाएगा।"
+                    />
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    value={formData.email}
+                    onChange={(e) =>
+                      patchTestator({ email: normalizeEmail(e.target.value) })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 10. Permanent Residential Address */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "स्थायी आवासीय पता" : "Permanent Residential Address"}</span>
+                    <InfoTooltip
+                      text="Enter your complete permanent residential address (House/Flat No., Building, Street, Locality). This establishes your place of domicile and determines which local District Court has jurisdiction over your estate."
+                      hindiText="अपना पूरा स्थायी आवासीय पता (मकान/फ्लैट नंबर, भवन, गली, मोहल्ला) दर्ज करें। यह आपके अधिवास को स्थापित करता है और तय करता है कि किस स्थानीय जिला न्यायालय का क्षेत्राधिकार लागू होगा।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="address"
+                    placeholder="House/Apt No., Street, Sector / Landmark"
+                    value={formData.address}
+                    onChange={(e) =>
+                      patchTestator({ address: e.target.value })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 11. PIN Code */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
+                    <span className="inline-flex items-center">
+                      <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
+                      <InfoTooltip
+                        text="Enter your 6-digit postal PIN code. We automatically fetch your City and State from this PIN code to identify your local Sub-Registrar jurisdiction."
+                        hindiText="अपना 6-अंकों का डाक पिन कोड दर्ज करें। इस पिन कोड से आपका शहर और राज्य स्वतः भर जाएगा ताकि आपके स्थानीय उप-पंजीयक क्षेत्राधिकार की पहचान हो सके।"
+                      />
+                    </span>
+                    <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case">
+                      {isHi ? "शहर व राज्य स्वतः भरेगा" : "Auto-fills City & State"}
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    name="pincode"
+                    maxLength={6}
+                    value={formData.pincode}
+                    onChange={(e) => handlePincodeChange(e.target.value)}
+                    placeholder="e.g., 110001"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 12. City */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "शहर / जिला" : "City"}</span>
+                    <InfoTooltip
+                      text="Your city or district of residence. Note: Properties or Wills executed within the presidency jurisdictions of Mumbai, Chennai, or Kolkata have specific probate requirements under Section 213 of the Indian Succession Act."
+                      hindiText="आपका निवास शहर या जिला। नोट: मुंबई, चेन्नई या कोलकाता के न्यायिक क्षेत्र में निष्पादित वसीयतों या संपत्तियों के लिए भारतीय उत्तराधिकार अधिनियम की धारा 213 के तहत विशेष प्रोबेट नियम लागू होते हैं।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="city"
+                    value={formData.city}
+                    onChange={(e) =>
+                      patchTestator({ city: sanitizeNameInput(e.target.value) })
+                    }
+                    placeholder="e.g., New Delhi"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 13. State (Standard Dropdown) */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
+                    <span className="inline-flex items-center">
+                      <span>{isHi ? "राज्य" : "State"}</span>
+                      <InfoTooltip
+                        text="Select the Indian State or Union Territory of your permanent residence."
+                        hindiText="अपने स्थायी निवास का भारतीय राज्य या केंद्र शासित प्रदेश चुनें।"
+                      />
+                    </span>
+                    {autoFilledState && (
+                      <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case flex items-center gap-1">
+                        ✓ {isHi ? "पिन से स्वतः भरा" : "Auto-filled from PIN"}
+                      </span>
+                    )}
+                  </label>
+                  <StateDropdown
+                    value={formData.state}
+                    onChange={handleStateChange}
+                    autoFilled={autoFilledState}
+                    placeholder={isHi ? "राज्य चुनें" : "Select State"}
+                  />
+                </div>
+
+                {/* 3. Workplace / Institutional Affiliation */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "कार्यस्थल / संस्थान संबद्धता" : "Workplace / Institutional Affiliation"}</span>
+                    <InfoTooltip
+                      text="Mention your current or former employer, business, or profession (e.g., 'Retired SBI Officer' or 'Director at XYZ Pvt Ltd'). Adding your occupation in the opening declaration strengthens your identity proof."
+                      hindiText="अपने वर्तमान या पूर्व नियोक्ता, व्यवसाय या पेशे का उल्लेख करें (जैसे, 'सेवानिवृत्त एसबीआई अधिकारी' या 'निदेशक, एक्सवाईजेड प्रा. लि.')। यह आपकी पहचान को और अधिक प्रमाणित करता है।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="workplace"
+                    placeholder="e.g., Company Name or Profession"
+                    value={formData.workplace || ""}
+                    onChange={(e) =>
+                      patchTestator({ workplace: e.target.value })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 4. PAN */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "स्थायी खाता संख्या (पैन)" : "Permanent Account Number (PAN)"}</span>
+                    <InfoTooltip
+                      text="Enter your 10-character PAN (e.g., ABCDE1234F). Including your PAN permanently links your Will to your Income Tax profile, bank accounts, Demat holdings, and mutual fund folios."
+                      hindiText="अपना 10-अक्षरों का पैन नंबर (जैसे, ABCDE1234F) दर्ज करें। वसीयत में पैन शामिल करने से यह आपके आयकर रिकॉर्ड, बैंक खातों, डीमैट और म्यूचुअल फंड फोलियो से निर्विवाद रूप से जुड़ जाता है।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="pan"
+                    placeholder="ABCDE1234F"
+                    maxLength={10}
+                    value={formData.pan || ""}
+                    onChange={(e) =>
+                      patchTestator({
+                        pan: sanitizePan(e.target.value),
+                      })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] font-semibold tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                {/* 5. Aadhaar */}
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 inline-flex items-center">
+                    <span>{isHi ? "आधार नंबर (12 अंक)" : "Aadhaar Number (12 digits)"}</span>
+                    <InfoTooltip
+                      text="Enter your 12-digit Aadhaar number. Aadhaar serves as primary identity proof when your family or Executor submits the Will for property mutation, bank transmission, or Sub-Registrar registration."
+                      hindiText="अपना 12-अंकों का आधार नंबर दर्ज करें। संपत्ति नामांतरण (म्यूटेशन), बैंक हस्तांतरण या उप-पंजीयक पंजीकरण के समय आधार आपकी प्राथमिक पहचान के रूप में कार्य करता है।"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    autoComplete="off"
+                    name="aadhaar"
+                    placeholder="1234 5678 9012"
+                    maxLength={14}
+                    value={formatAadhaar(formData.aadhaar || "")}
+                    onChange={(e) =>
+                      patchTestator({ aadhaar: formatAadhaar(e.target.value) })
+                    }
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Prior Will Revocation Status (Section 70, Indian Succession Act, 1925) */}
+              <div
+                className="step2-revocation-box"
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "0.75rem",
+                  padding: "0.75rem 1rem",
+                  borderRadius: "12px",
+                  backgroundColor: "rgba(23, 34, 40, 0.02)",
+                  border: "1px solid #E5E7EB",
+                }}
+              >
+                <div>
+                  <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#111827" }} className="inline-flex items-center">
+                    <span>
+                      {isHi
+                        ? "क्या आपने पहले कोई वसीयत या कोडिसिल बनाई है? (धारा 70 निरस्तीकरण)"
+                        : "Have you made any previous Will or Codicil? (Section 70 Revocation)"}
+                    </span>
+                    <InfoTooltip
+                      text="Turn this ON if you have ever signed an earlier Will or Codicil. Even if you aren't sure, our system includes a mandatory Revocation Clause under Section 70 of the Indian Succession Act, 1925 to automatically cancel all prior Wills and make this your sole valid Last Will."
+                      hindiText="यदि आपने पहले कभी कोई वसीयत या कोडिसिल बनाई है तो 'हाँ' चुनें। भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 70 के तहत यह वसीयत आपकी सभी पुरानी वसीयतों को स्वतः रद्द कर देगी और यही आपकी अंतिम मान्य वसीयत होगी।"
+                    />
+                  </div>
+                  <div style={{ fontSize: "0.73rem", color: "#6B7280" }}>
+                    {isHi
+                      ? "यह वसीयत आपके द्वारा पूर्व में बनाई गई सभी वसीयतों को कानूनी रूप से रद्द और प्रतिस्थापित कर देगी।"
+                      : "This Will automatically revokes and supersedes any prior Wills or testamentary writings."}
+                  </div>
+                </div>
+                <div className="step2-revocation-btns" style={{ display: "flex", gap: "0.45rem" }}>
+                  {[
+                    { val: false, label: isHi ? "नहीं (यह मेरी पहली वसीयत है)" : "No (First Will)" },
+                    { val: true, label: isHi ? "हाँ (पुरानी वसीयत रद्द करें)" : "Yes (Revoke Prior Will)" },
+                  ].map((opt) => {
+                    const active = Boolean(formData.hasPreviousWill) === opt.val;
+                    return (
+                      <button
+                        key={String(opt.val)}
+                        type="button"
+                        onClick={() => patchTestator({ hasPreviousWill: opt.val })}
+                        style={{
+                          padding: "0.35rem 0.75rem",
+                          borderRadius: "999px",
+                          fontSize: "0.75rem",
+                          fontWeight: 700,
+                          border: active ? "1.5px solid var(--color-gold)" : "1px solid #D1D5DB",
+                          backgroundColor: active ? "rgba(198, 83, 120, 0.1)" : "#FFFFFF",
+                          color: active ? "var(--color-gold)" : "#4B5563",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {opt.label}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-            <div className="step2-revocation-btns" style={{ display: "flex", gap: "0.45rem" }}>
-              {[
-                { val: false, label: isHi ? "नहीं (यह मेरी पहली वसीयत है)" : "No (First Will)" },
-                { val: true, label: isHi ? "हाँ (पुरानी वसीयत रद्द करें)" : "Yes (Revoke Prior Will)" },
-              ].map((opt) => {
-                const active = Boolean(formData.hasPreviousWill) === opt.val;
-                return (
-                  <button
-                    key={String(opt.val)}
-                    type="button"
-                    onClick={() => patchTestator({ hasPreviousWill: opt.val })}
-                    style={{
-                      padding: "0.35rem 0.75rem",
-                      borderRadius: "999px",
-                      fontSize: "0.75rem",
-                      fontWeight: 700,
-                      border: active ? "1.5px solid var(--color-gold)" : "1px solid #D1D5DB",
-                      backgroundColor: active ? "rgba(198, 83, 120, 0.1)" : "#FFFFFF",
-                      color: active ? "var(--color-gold)" : "#4B5563",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {opt.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          )}
 
         </div>
 

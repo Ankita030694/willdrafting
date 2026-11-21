@@ -117,6 +117,95 @@ export async function sendWillVerificationOtpEmail(email: string, code: string, 
   });
 }
 
+/** Team mailboxes that are told about every new lead: LEAD_ALERT_EMAIL (comma-separated), else NOTIFY_EMAIL. */
+function leadAlertRecipients(): string[] {
+  return (process.env.LEAD_ALERT_EMAIL || process.env.NOTIFY_EMAIL || "")
+    .split(",")
+    .map((address) => address.trim())
+    .filter(Boolean)
+    .slice(0, 5);
+}
+
+const LEAD_SOURCE_LABELS: Record<string, string> = {
+  intake_popup: "Start Your Will popup",
+  contact_form: "Contact page form",
+  calculator_cta: "Calculator / tool",
+  blog_inline_cta: "Blog article",
+  template_download: "Template download",
+  wizard_signup: "Signed up inside the questionnaire",
+  login_signup: "Signed up with email code",
+  google: "Signed in with Google",
+  admin: "Added by admin",
+};
+
+/**
+ * Tells the team a new lead has just arrived, so someone can call or WhatsApp them while they are
+ * still interested. Does nothing when no alert mailbox is configured.
+ */
+export async function sendNewLeadAlertEmail(lead: {
+  name?: string;
+  email?: string;
+  phone?: string;
+  state?: string;
+  source: string;
+  landingPage?: string;
+  message?: string;
+  emailVerified?: boolean;
+}): Promise<void> {
+  const recipients = leadAlertRecipients();
+  if (recipients.length === 0) return;
+
+  const name = lead.name?.trim() || "Name not given";
+  const phone = (lead.phone || "").replace(/\D/g, "").slice(-10);
+  const source = LEAD_SOURCE_LABELS[lead.source] || lead.source;
+  const when = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
+  const adminUrl = `${getAppBaseUrl()}/authority/users`;
+
+  const rows: Array<[string, string, string]> = [
+    ["Name", name, escapeHtml(name)],
+    [
+      "Mobile",
+      phone ? `+91 ${phone}` : "Not given",
+      phone
+        ? `<a href="tel:+91${phone}">+91 ${phone}</a> &middot; <a href="https://wa.me/91${phone}">WhatsApp</a>`
+        : "Not given",
+    ],
+    [
+      "Email",
+      lead.email || "Not given",
+      lead.email ? `<a href="mailto:${escapeHtml(lead.email)}">${escapeHtml(lead.email)}</a>` : "Not given",
+    ],
+    ["Email verified", lead.emailVerified ? "Yes" : "Not yet", lead.emailVerified ? "Yes" : "Not yet"],
+    ["State", lead.state || "-", escapeHtml(lead.state || "-")],
+    ["Came from", source, escapeHtml(source)],
+    ["Page", lead.landingPage || "-", escapeHtml(lead.landingPage || "-")],
+    ["Message", lead.message || "-", escapeHtml(lead.message || "-")],
+    ["Time (IST)", when, escapeHtml(when)],
+  ];
+
+  const mail = {
+    subject: `New lead: ${name}${lead.state ? ` (${lead.state})` : ""}`,
+    text: `A new lead just arrived on WillDrafting.in.\n\n${rows
+      .map(([label, text]) => `${label}: ${text}`)
+      .join("\n")}\n\nAll leads: ${adminUrl}`,
+    html: shell(
+      "New lead on WillDrafting.in",
+      `<p>Call or WhatsApp them now, while they are still on the site.</p>
+<table style="font-size:14px;border-collapse:collapse">${rows
+        .map(
+          ([label, , html]) =>
+            `<tr><td style="padding:4px 12px 4px 0;color:#6b7280;vertical-align:top;white-space:nowrap">${label}</td><td style="padding:4px 0">${html}</td></tr>`
+        )
+        .join("")}</table>
+<p><a href="${adminUrl}" style="display:inline-block;padding:10px 18px;background:#111827;color:#fff;border-radius:8px;text-decoration:none">Open all leads</a></p>`
+    ),
+  };
+
+  for (const to of recipients) {
+    await sendMail({ to, ...mail });
+  }
+}
+
 export async function sendAdminInviteEmail(email: string, name?: string): Promise<void> {
   const loginUrl = `${getAppBaseUrl()}/login`;
   await sendMail({

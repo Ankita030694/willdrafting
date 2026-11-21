@@ -1,5 +1,7 @@
 import { ObjectId, type UpdateFilter } from "mongodb";
+import { after } from "next/server";
 import { connectToDatabase } from "@/lib/mongodb";
+import { sendNewLeadAlertEmail } from "@/lib/emailService";
 import {
   funnelEventsCol,
   getDb,
@@ -59,6 +61,35 @@ export async function findAccountByEmail(email: string): Promise<Account | null>
   if (!email) return null;
   const [users, leads] = await Promise.all([usersCol(), leadsCol()]);
   return wrapUser(await users.findOne({ email })) ?? wrapLead(await leads.findOne({ email }));
+}
+
+/**
+ * Emails the team about a brand-new lead once the response has gone out, so the visitor never
+ * waits on it. A failed alert is logged and never fails the sign-up or the form.
+ */
+function alertTeamOfNewLead(lead: LeadDoc): void {
+  const send = async () => {
+    try {
+      await sendNewLeadAlertEmail({
+        name: lead.name,
+        email: lead.email,
+        phone: lead.phone,
+        state: lead.state,
+        source: lead.source,
+        landingPage: lead.landingPage,
+        message: lead.message,
+        emailVerified: lead.authStatus === "verified",
+      });
+    } catch (err) {
+      console.error("[lead-alert] could not email the team:", err);
+    }
+  };
+  try {
+    after(send);
+  } catch {
+    // Not inside a request (e.g. a script): send right away instead.
+    void send();
+  }
 }
 
 export interface SignInAccountInput {
@@ -136,6 +167,7 @@ export async function findOrCreateVerifiedAccount(input: SignInAccountInput): Pr
 
   await logFunnelEvent(lead._id, input.email, "signup", { source: input.source });
   await logFunnelEvent(lead._id, input.email, "email_verified");
+  alertTeamOfNewLead(lead);
   return { kind: "lead", doc: lead };
 }
 
@@ -311,6 +343,7 @@ export async function ensureLead(input: EnsureLeadInput): Promise<EnsureLeadResu
     source: input.source,
     ...(input.landingPage ? { landingPage: input.landingPage } : {}),
   });
+  alertTeamOfNewLead(lead);
   return { outcome: "created", lead };
 }
 
