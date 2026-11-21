@@ -428,7 +428,7 @@ export default function NriWillCheckerClient() {
           {/* =====================================================================
               LEFT COLUMN: STICKY TABLE OF CONTENTS
               ===================================================================== */}
-          <aside className="sticky top-6 hidden lg:block">
+          <aside className="sticky top-24 hidden lg:block">
             <div className="bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-4">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-[#172228]/10 text-xs font-bold uppercase tracking-wider text-[#172228]">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
@@ -1752,7 +1752,7 @@ export default function NriWillCheckerClient() {
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (AUTHOR, CTA & TRUST CARDS)
               ===================================================================== */}
-          <aside className="space-y-6 sticky top-6">
+          <aside className="space-y-6 sticky top-24">
             <div className="bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 rounded-full bg-rose-50 border border-[#C65378]/20 flex items-center justify-center text-sm font-bold text-[#C65378] shrink-0">

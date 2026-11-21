@@ -740,7 +740,7 @@ export default function WillChecklistClient() {
       {/* =========================================================================
           LAYER 1: HERO SECTION (Full-Width Brand Navy #172228)
           ========================================================================= */}
-      <section className="relative w-full bg-[#172228] text-white pt-12 pb-16 sm:pt-16 sm:pb-20 overflow-hidden">
+      <section className="relative w-full bg-[#172228] text-white pt-32 pb-16 sm:pt-36 sm:pb-20 lg:pt-40 lg:pb-24 overflow-hidden">
         {/* Subtle patterned backdrop */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C65378_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#C65378]/15 rounded-full blur-3xl pointer-events-none" />
@@ -870,7 +870,7 @@ export default function WillChecklistClient() {
           {/* =====================================================================
               LEFT COLUMN: STICKY TABLE OF CONTENTS
               ===================================================================== */}
-          <aside className="sticky top-6 hidden lg:block space-y-4">
+          <aside className="sticky top-24 hidden lg:block space-y-4">
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-[#172228]">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
@@ -2051,7 +2051,7 @@ export default function WillChecklistClient() {
           {/* =====================================================================
               RIGHT COLUMN: STICKY SIDEBAR (Author, Emergency CTA, Trust Cards)
               ===================================================================== */}
-          <aside className="space-y-5 sticky top-6">
+          <aside className="space-y-5 sticky top-24">
             {/* CARD 1: AUTHOR / REVIEWER CARD */}
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs text-center space-y-3">
               <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#172228] to-[#2a3c46] text-white flex items-center justify-center font-extrabold text-sm mx-auto border-2 border-white shadow-xs">

@@ -768,7 +768,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
       {/* =========================================================================
           HERO SECTION
           ========================================================================= */}
-      <div className="w-full px-3 sm:px-6 lg:px-8 pt-[74px] sm:pt-[78px] lg:pt-[82px] pb-4 sm:pb-6">
+      <div className="w-full px-3 sm:px-6 lg:px-8 pt-[96px] sm:pt-[100px] lg:pt-[104px] pb-4 sm:pb-6">
         <section className="relative w-full max-w-[1580px] mx-auto overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-[#172228]/10 bg-[#FAF7F0] px-6 sm:px-10 lg:px-14 pt-5 sm:pt-7 lg:pt-8 pb-6 sm:pb-8 lg:pb-10 min-h-[400px] sm:min-h-[450px] lg:min-h-[480px] flex flex-col justify-between shadow-xs">
           <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
             <Image

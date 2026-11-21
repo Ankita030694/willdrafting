@@ -355,7 +355,7 @@ Doctor Signature & Official Seal: __________________________"`;
       {/* =========================================================================
           LAYER 1: HERO SECTION (Dark Navy Theme with Gold & Rose Accents)
           ========================================================================= */}
-      <section className="relative w-full bg-[#172228] text-white py-12 md:py-16 border-b border-[#172228]/20">
+      <section className="relative w-full bg-[#172228] text-white pt-32 pb-12 sm:pt-36 md:pb-16 lg:pt-40 lg:pb-20 border-b border-[#172228]/20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumb Navigation */}
           <nav

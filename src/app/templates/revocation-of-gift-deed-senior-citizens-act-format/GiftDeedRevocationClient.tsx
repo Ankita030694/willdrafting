@@ -362,7 +362,7 @@ DEPONENT`;
     <div className="bg-[#FAF7F0] text-[#172228] pb-20 lg:pb-0">
       {/* LAYER 1: NAVY HERO */}
       <section className="bg-[#172228] text-white border-b border-slate-800">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-10 sm:pt-36 lg:pt-40 lg:pb-14">
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"

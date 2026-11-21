@@ -465,7 +465,7 @@ export default function WillFormatHindiClient() {
       <div className="w-full max-w-[1720px] mx-auto px-4 md:px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[260px_minmax(0,1fr)_300px] xl:grid-cols-[280px_minmax(0,1fr)_320px] gap-6 xl:gap-8 items-start">
           {/* ===================== LEFT COLUMN: STICKY TOC ===================== */}
-          <aside className="sticky top-6 hidden lg:block space-y-4">
+          <aside className="sticky top-24 hidden lg:block space-y-4">
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-[#172228]">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
@@ -1299,7 +1299,7 @@ export default function WillFormatHindiClient() {
       </main>
 
           {/* ===================== RIGHT COLUMN: STICKY SIDEBAR ===================== */}
-          <aside className="space-y-5 sticky top-6">
+          <aside className="space-y-5 sticky top-24">
             {/* CARD 1: AUTHOR BIO */}
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">

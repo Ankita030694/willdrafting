@@ -338,7 +338,7 @@ export default function MinorChildTrustCorpusClient() {
   return (
     <div className="w-full">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-b from-slate-900 via-[#172228] to-slate-900 text-white pt-12 pb-16 sm:pt-16 sm:pb-24 border-b border-slate-800">
+      <section className="relative bg-gradient-to-b from-slate-900 via-[#172228] to-slate-900 text-white pt-32 pb-16 sm:pt-36 sm:pb-24 lg:pt-40 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 mb-6 text-xs sm:text-sm font-semibold">
             <Link

@@ -56,7 +56,7 @@ export default function CompleteProfilePage() {
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#FAF7F0" }}>
       <Navbar />
 
-      <main style={{ flex: "1 0 auto", display: "flex", alignItems: "center", justifyContent: "center", padding: "4rem 1.25rem" }}>
+      <main style={{ flex: "1 0 auto", display: "flex", alignItems: "center", justifyContent: "center", padding: "7.5rem 1.25rem 4rem" }}>
         <div
           style={{
             maxWidth: "440px",
