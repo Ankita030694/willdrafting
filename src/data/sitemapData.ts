@@ -4130,6 +4130,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Is a Handwritten (Holographic) Will Valid in India? Rules & Risks",
+    href: "/blogs/handwritten-holographic-will-vs-typed-will-validity-india",
+    category: "Guides",
+    date: "2026-11-21",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**
