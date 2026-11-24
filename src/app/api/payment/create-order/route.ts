@@ -33,6 +33,8 @@ export async function POST(request: NextRequest) {
     const body = await readJson(request);
     const planId = body.planId as PlanId;
     if (!PLAN_IDS.includes(planId)) return jsonError("Invalid plan selected.", 400);
+    // Pay-first checkout: the customer pays before filling the questionnaire.
+    const source = body.source === "checkout" ? ("checkout" as const) : null;
 
     const account = await findAccountById(session.user.id);
     if (!account) return jsonError("Account not found. Please sign in again.", 404);
@@ -78,6 +80,7 @@ export async function POST(request: NextRequest) {
       email: accountDoc.email,
       planId,
       kind: orderKind,
+      source,
       baseAmount,
       discount,
       amount,
@@ -117,6 +120,7 @@ export async function POST(request: NextRequest) {
       amount: order.amount,
       txnId: order.txnId,
       orderKind,
+      ...(source ? { source } : {}),
     });
 
     return NextResponse.json({ success: true, txnId: order.txnId, ...checkout });

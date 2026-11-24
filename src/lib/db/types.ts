@@ -103,6 +103,8 @@ export interface OrderDoc {
   email: string;
   planId: PlanId;
   kind: OrderKind;
+  /** "checkout" when the order began on the pay-first /checkout page (paid before the questionnaire). */
+  source?: "checkout" | null;
   /** All money values are rupees (max 2 decimals). */
   baseAmount: number;
   discount: number;

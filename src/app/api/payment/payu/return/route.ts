@@ -1,12 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
+import { ordersCol } from "@/lib/db/collections";
 import { getPublicOrigin } from "@/lib/http";
 import { verifyResponseHash } from "@/lib/payu";
 import { settleOrder } from "@/lib/payments/settle";
 
-function redirectTo(request: NextRequest, query: string, success = false) {
+function redirectTo(request: NextRequest, query: string, success = false, payFirst = false) {
   const base = getPublicOrigin(request);
   // On success redirect to Step 14 (Final Will); all other outcomes go to dashboard.
-  const path = success ? `/start/14?${query}` : `/start/dashboard?${query}`;
+  // A pay-first customer has no Will yet, so they go to the dashboard with a prompt to begin.
+  const path =
+    success && payFirst
+      ? `/start/dashboard?${query}&next=details`
+      : success
+        ? `/start/14?${query}`
+        : `/start/dashboard?${query}`;
   // 303 turns PayU's cross-site POST into a normal GET so the session cookie is sent again.
   return NextResponse.redirect(`${base}${path}`, 303);
 }
@@ -33,7 +40,12 @@ export async function POST(request: NextRequest) {
     const result = await settleOrder(data.txnid, "redirect");
     const isPaid = result.outcome === "paid";
     const status = isPaid ? "success" : result.outcome === "failed" ? "failed" : "pending";
-    return redirectTo(request, `payment=${status}&txn=${encodeURIComponent(data.txnid)}`, isPaid);
+    let payFirst = false;
+    if (isPaid) {
+      const order = await (await ordersCol()).findOne({ txnId: data.txnid }, { projection: { source: 1 } });
+      payFirst = order?.source === "checkout";
+    }
+    return redirectTo(request, `payment=${status}&txn=${encodeURIComponent(data.txnid)}`, isPaid, payFirst);
   } catch (error) {
     console.error("[payments] return handler error:", error);
     return redirectTo(request, "payment=pending");

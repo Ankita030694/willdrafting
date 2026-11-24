@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "next-auth/react";
 
@@ -21,6 +22,8 @@ export default function PaymentReturnBanner() {
 
   const flag = params.get("payment");
   const txn = params.get("txn");
+  // Set by the PayU return route for pay-first orders: the customer paid before starting the Will.
+  const startDetails = params.get("next") === "details";
 
   // Outcomes that need no server round-trip are derived, not stored.
   let view: View = "hidden";
@@ -92,7 +95,19 @@ export default function PaymentReturnBanner() {
         gap: "1rem",
       }}
     >
-      <span>{p.text}</span>
+      <span>
+        {view === "success" && startDetails
+          ? "Payment successful! Your plan is active. Now answer a few questions to prepare your Will."
+          : p.text}
+        {view === "success" && startDetails && (
+          <>
+            {" "}
+            <Link href="/start/01" style={{ color: "inherit", textDecoration: "underline" }}>
+              Start my Will
+            </Link>
+          </>
+        )}
+      </span>
       {view !== "checking" && (
         <button
           type="button"

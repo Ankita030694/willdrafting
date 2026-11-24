@@ -191,6 +191,12 @@ export default function Pricing() {
                     <span>{tier.ctaText}</span>
                     <ArrowUpRight size={15} strokeWidth={2.2} />
                   </Link>
+                  <Link
+                    href={`/checkout?plan=${tier.value}`}
+                    className="mt-2 block text-center text-[0.76rem] font-semibold text-[#C65378] underline-offset-2 hover:underline"
+                  >
+                    Or buy now for {tier.price} and fill details later
+                  </Link>
                 </div>
               </div>
             );

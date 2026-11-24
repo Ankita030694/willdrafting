@@ -237,6 +237,9 @@ interface LedgerPlan {
   deliverables: string[];
   ctaText: string;
   ctaHref: string;
+  /** Pay-first checkout: buy the plan now, fill in the details afterwards. */
+  buyText: string;
+  buyHref: string;
 }
 
 const LEDGER_PLANS: LedgerPlan[] = [
@@ -258,8 +261,10 @@ const LEDGER_PLANS: LedgerPlan[] = [
       "Universal residuary bequest clause preventing partial intestacy",
       "Dual-witness attestation signing guide & RMP doctor fitness template",
     ],
-    ctaText: "Start Auto-Verified Will",
+    ctaText: "Or try the questionnaire free first",
     ctaHref: "/start/01",
+    buyText: "Buy Auto Verified · ₹2,490",
+    buyHref: "/checkout?plan=essential",
   },
   {
     step: "02",
@@ -278,8 +283,10 @@ const LEDGER_PLANS: LedgerPlan[] = [
       "Custom exclusion / disinheritance rationale wording to deter probate challenges",
       "Digital verification certificate issued after advocate sign-off",
     ],
-    ctaText: "Choose Lawyer Verified",
+    ctaText: "Or start the questionnaire before paying",
     ctaHref: "/start/01",
+    buyText: "Buy Lawyer Verified · ₹4,990",
+    buyHref: "/checkout?plan=lawyer_verified",
   },
   {
     step: "03",
@@ -298,8 +305,10 @@ const LEDGER_PLANS: LedgerPlan[] = [
       "FEMA NRE/NRO/FCNR repatriation & Form 15CA/15CB succession roadmap",
       "Sub-Registrar registration procedure & diplomatic apostille execution guidance",
     ],
-    ctaText: "Connect to Senior Lawyer",
+    ctaText: "Or talk to our team before you pay",
     ctaHref: "/contact",
+    buyText: "Buy Connect to Lawyer · ₹9,990",
+    buyHref: "/checkout?plan=premium",
   },
 ];
 
@@ -724,18 +733,24 @@ export default function PricingPage() {
 
                     <div className="w-full">
                       <Link
-                        href={plan.ctaHref}
+                        href={plan.buyHref}
                         className={`inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-sm font-semibold transition-all duration-200 ${
                           plan.isFeatured
                             ? "bg-[#C65378] text-white hover:bg-[#a83d5f] shadow-[0_6px_20px_rgba(198,83,120,0.28)]"
                             : "bg-[#172228] text-white hover:bg-[#263640]"
                         }`}
                       >
-                        <span>{plan.ctaText}</span>
+                        <span>{plan.buyText}</span>
                         <ArrowUpRight className="w-4 h-4" />
                       </Link>
                       <p className="text-[11px] text-[#55636D] text-center lg:text-right mt-2.5">
-                        Preview your asset summary before payment
+                        Pay now, fill in your details later.{" "}
+                        <Link
+                          href={plan.ctaHref}
+                          className="font-semibold text-[#C65378] underline-offset-2 hover:underline"
+                        >
+                          {plan.ctaText}
+                        </Link>
                       </p>
                     </div>
                   </div>
