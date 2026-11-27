@@ -13,6 +13,7 @@ import {
   saveWill,
 } from "@/lib/wills";
 import { readGuestSessionFromRequest } from "@/lib/guestSession";
+import { hasStartAccess } from "@/lib/startAccess";
 
 export const dynamic = "force-dynamic";
 
@@ -81,6 +82,10 @@ export async function PUT(request: NextRequest) {
 
     // 1. Authenticated User Flow
     if (me) {
+      // Pay-first: only paying customers and accounts that were drafting before it may save.
+      if (!hasStartAccess(me.account)) {
+        return jsonError("Please choose a plan to start your Will.", 402, { paymentRequired: true });
+      }
       const limit = await checkRateLimit(`will_save_${me.userId.toString()}`, 120, 60 * 1000);
       if (!limit.allowed) {
         return jsonError("Saving too frequently. Please slow down.", 429, { retryAfterSeconds: limit.retryAfterSeconds });

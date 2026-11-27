@@ -37,8 +37,8 @@ export default function WillWalkthroughVideo({
   heading = "See How Your Online Will Comes Together in 1 Minute",
   subheading = "Watch every step before you start: add family and assets, split shares, run a legal gap check, and print on plain white paper.",
   useHeadingTag = true,
-  ctaText = "Begin Step 1 Free",
-  ctaHref = "/start/01",
+  ctaText = "Choose Your Plan",
+  ctaHref = "/checkout",
 }: WillWalkthroughVideoProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [hasStarted, setHasStarted] = useState(false);

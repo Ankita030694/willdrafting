@@ -871,7 +871,7 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                     onClick={handleStartDraft}
                     className="font-bold text-[#C65378] hover:text-[#a33b5c] underline"
                   >
-                    Start Free Will Drafting &rarr;
+                    Start Your Will &rarr;
                   </button>
                 </div>
               </div>

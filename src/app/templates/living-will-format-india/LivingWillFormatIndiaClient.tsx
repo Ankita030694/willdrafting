@@ -1341,7 +1341,7 @@ export default function LivingWillFormatIndiaClient() {
                 onClick={handleStartDraft}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C65378] text-white font-bold text-sm hover:bg-[#a13c5d] transition-all transform hover:-translate-y-0.5 shadow-md cursor-pointer"
               >
-                <span>Start Free Draft</span>
+                <span>Start Your Will</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">

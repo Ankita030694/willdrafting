@@ -470,7 +470,7 @@ export default function NriWillIndiaPage() {
             heading="See How NRIs Draft an Indian Will Online in 15 Minutes"
             subheading="Living in the US, UK, UAE, Canada, Australia, or Singapore? Watch how you list Indian flats, bank accounts, and shares from abroad with High Court lawyer review."
             ctaText="Start My NRI Indian Will"
-            ctaHref="/start/01"
+            ctaHref="/checkout"
           />
         </section>
 

@@ -37,12 +37,10 @@ export const metadata: Metadata = {
       "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
+  // Paid customers only since pay-first (27 Nov 2026): keep the questionnaire out of search.
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    "max-snippet": -1,
-    "max-image-preview": "large",
-    "max-video-preview": -1,
   },
 };
 

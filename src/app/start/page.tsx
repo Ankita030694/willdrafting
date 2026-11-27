@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StartResumeCard from "@/components/start/StartResumeCard";
+import StartGate from "@/components/start/StartGate";
 import WillWalkthroughVideo from "@/components/WillWalkthroughVideo";
 import WatchWalkthroughButton from "@/components/WatchWalkthroughButton";
 import { buildWalkthroughVideoSchema } from "@/lib/videoSchema";
@@ -62,12 +63,10 @@ export const metadata: Metadata = {
       "Complete your online will drafting questionnaire step by step with instant legal validation and advocate support across India.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
+  // Paid customers only since pay-first (27 Nov 2026): keep the questionnaire out of search.
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    "max-snippet": -1,
-    "max-image-preview": "large",
-    "max-video-preview": -1,
   },
 };
 
@@ -208,7 +207,7 @@ const START_PAGE_SCHEMA = {
   ],
 };
 
-export default function StartPage() {
+function StartLandingContent() {
   return (
     <div className="min-h-screen bg-[#FAF7F0] text-[#172228] font-sans flex flex-col">
       <script
@@ -710,5 +709,13 @@ export default function StartPage() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function StartPage() {
+  return (
+    <StartGate>
+      <StartLandingContent />
+    </StartGate>
   );
 }

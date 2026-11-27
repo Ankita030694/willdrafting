@@ -181,7 +181,7 @@ export default function Pricing() {
                 {/* Bottom CTA Button */}
                 <div className="pt-2 mt-auto">
                   <Link
-                    href="/start/01"
+                    href={`/checkout?plan=${tier.value}`}
                     className={`inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-[0.82rem] sm:text-[0.85rem] font-semibold shadow-sm transition-all duration-200 active:scale-95 ${
                       isRecommended
                         ? "bg-[#C65378] text-white hover:bg-[#A83D5F] shadow-[0_4px_14px_rgba(198,83,120,0.3)]"
@@ -190,12 +190,6 @@ export default function Pricing() {
                   >
                     <span>{tier.ctaText}</span>
                     <ArrowUpRight size={15} strokeWidth={2.2} />
-                  </Link>
-                  <Link
-                    href={`/checkout?plan=${tier.value}`}
-                    className="mt-2 block text-center text-[0.76rem] font-semibold text-[#C65378] underline-offset-2 hover:underline"
-                  >
-                    Or buy now for {tier.price} and fill details later
                   </Link>
                 </div>
               </div>

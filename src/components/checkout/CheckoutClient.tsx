@@ -58,7 +58,14 @@ function safeTrack(name: string, props: Record<string, string>) {
   }
 }
 
-export default function CheckoutClient({ initialPlan }: { initialPlan: PlanId }) {
+export default function CheckoutClient({
+  initialPlan,
+  context = "checkout",
+}: {
+  initialPlan: PlanId;
+  /** Where the checkout is shown: the /checkout page, or in place of a /start page for unpaid visitors. */
+  context?: "checkout" | "start_gate";
+}) {
   const router = useRouter();
   const { data: session, status } = useSession();
   const [plan, setPlan] = useState<PlanId>(initialPlan);
@@ -71,8 +78,8 @@ export default function CheckoutClient({ initialPlan }: { initialPlan: PlanId })
   useEffect(() => {
     if (viewed.current) return;
     viewed.current = true;
-    safeTrack("checkout_viewed", { plan: initialPlan });
-  }, [initialPlan]);
+    safeTrack("checkout_viewed", { plan: initialPlan, context });
+  }, [initialPlan, context]);
 
   // Coming back from PayU without paying (back button / bfcache) must re-enable the button.
   useEffect(() => {
@@ -84,7 +91,7 @@ export default function CheckoutClient({ initialPlan }: { initialPlan: PlanId })
   const startPayment = async (planId: PlanId) => {
     setPaying(true);
     setError("");
-    safeTrack("checkout_pay_clicked", { plan: planId });
+    safeTrack("checkout_pay_clicked", { plan: planId, context });
     try {
       const res = await fetch("/api/payment/create-order", {
         method: "POST",
@@ -258,7 +265,7 @@ export default function CheckoutClient({ initialPlan }: { initialPlan: PlanId })
               interestedPlanId={plan}
               submitLabel={`Verify email & pay ₹${rupees(plan)} →`}
               onSuccess={() => {
-                safeTrack("checkout_otp_verified", { plan });
+                safeTrack("checkout_otp_verified", { plan, context });
                 setJustVerified(true);
                 void startPayment(plan);
               }}
@@ -275,12 +282,17 @@ export default function CheckoutClient({ initialPlan }: { initialPlan: PlanId })
             Development mode: test prices (₹1 / ₹2 / ₹3) are being charged.
           </p>
         )}
-        <p className="mt-3 border-t border-[#172228]/10 pt-3 text-[0.8rem] text-[#55636D]">
-          Not ready to pay?{" "}
-          <Link href="/start/01" className="font-semibold text-[#C65378] hover:text-[#a83d5f]">
-            Try the questionnaire free first
-          </Link>
-        </p>
+        {!signedIn && (
+          <p className="mt-3 border-t border-[#172228]/10 pt-3 text-[0.8rem] text-[#55636D]">
+            Already started your Will with us?{" "}
+            <Link
+              href="/login?callbackUrl=/start/dashboard"
+              className="font-semibold text-[#C65378] hover:text-[#a83d5f]"
+            >
+              Sign in to continue
+            </Link>
+          </p>
+        )}
       </section>
     </div>
   );

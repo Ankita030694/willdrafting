@@ -1636,7 +1636,7 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] hover:bg-[#a13c5d] text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5 cursor-pointer"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>Start Free Draft</span>
+                  <span>Start Your Will</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
                 <div className="pt-1 text-[11px] text-slate-400 flex items-center justify-center gap-1.5">

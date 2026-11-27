@@ -3972,14 +3972,6 @@ export const staticPages: SitemapPageItem[] = [
     priority: 1.0,
   },
   {
-    title: "Start Your Indian Will Online: Interactive Questionnaire",
-    href: "/start",
-    category: "Tools",
-    date: "2026-11-09",
-    changefreq: "weekly",
-    priority: 1.0,
-  },
-  {
     title: "Will writing services in India: How to Choose",
     href: "/blogs/will-writing-services-in-india",
     category: "Guides",

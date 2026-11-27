@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { jsonError, readJson } from "@/lib/http";
 import { checkRateLimit } from "@/lib/rateLimit";
+import { hasStartAccess } from "@/lib/startAccess";
 import { recordWizardStep, resolveSessionAccount } from "@/lib/wills";
 
 export const dynamic = "force-dynamic";
@@ -18,6 +19,9 @@ export async function POST(request: NextRequest) {
     }
     const me = await resolveSessionAccount(session.user.id);
     if (!me) return jsonError("Please log in to continue.", 401, { loginRequired: true });
+    if (!hasStartAccess(me.account)) {
+      return jsonError("Please choose a plan to start your Will.", 402, { paymentRequired: true });
+    }
 
     const step = Number((await readJson(request)).step);
     if (!Number.isInteger(step) || step < 1 || step > 14) return jsonError("Invalid step.", 400);

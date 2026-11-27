@@ -21,9 +21,7 @@ interface LeadNextStepModalProps {
 /**
  * The single flow after any lead form (contact page, intake popup):
  *   1. confirm the email with a one-time code (this also signs the visitor in),
- *   2. go straight to the first question of the Will.
- * Plans and payment are only shown later (Plan Selection), once the visitor has seen their Will
- * take shape; asking for money right after the email code lost almost every lead.
+ *   2. go to the checkout: since pay-first (27 Nov 2026) the questionnaire opens only after payment.
  */
 export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModalProps) {
   const router = useRouter();
@@ -42,7 +40,7 @@ export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModal
   React.useEffect(() => {
     if (!signedIn) return;
     onDismiss();
-    router.push("/start/01");
+    router.push("/checkout");
     router.refresh();
     // onDismiss is recreated by the parent on every render; this must run once per sign-in.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -116,7 +114,7 @@ export default function LeadNextStepModal({ lead, onDismiss }: LeadNextStepModal
           Thanks{lead.name ? `, ${lead.name.split(" ")[0]}` : ""}! One quick step
         </h2>
         <p style={{ margin: "0 0 1.1rem", fontSize: "0.88rem", color: "#55636D", lineHeight: 1.45 }}>
-          Confirm your email to save your progress and start your Will. No payment is needed to begin.
+          Confirm your email, then choose your plan and pay securely to start your Will.
         </p>
         <EmailOtpAuth
           mode="signup"

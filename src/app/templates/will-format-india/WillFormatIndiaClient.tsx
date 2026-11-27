@@ -548,7 +548,7 @@ export default function WillFormatIndiaClient() {
               heading="Watch Your Indian Will Write Itself Clause by Clause"
               subheading="Skip manual formatting errors. Answer plain questions about your family and property, run an instant Section 63 gap check, and download a print-ready Will PDF."
               ctaText="Generate My Custom Will PDF"
-              ctaHref="/start/01"
+              ctaHref="/checkout"
             />
 
             {/* SECTION 2: INTERACTIVE CHECKLIST */}
@@ -1310,7 +1310,7 @@ export default function WillFormatIndiaClient() {
                 onClick={handleStartDraft}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C65378] text-white font-bold text-sm hover:bg-[#a13c5d] transition-all transform hover:-translate-y-0.5 shadow-md cursor-pointer"
               >
-                <span>Start Free Draft</span>
+                <span>Start Your Will</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
               <div className="text-[11px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">

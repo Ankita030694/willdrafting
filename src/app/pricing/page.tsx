@@ -261,8 +261,8 @@ const LEDGER_PLANS: LedgerPlan[] = [
       "Universal residuary bequest clause preventing partial intestacy",
       "Dual-witness attestation signing guide & RMP doctor fitness template",
     ],
-    ctaText: "Or try the questionnaire free first",
-    ctaHref: "/start/01",
+    ctaText: "Already a customer? Sign in",
+    ctaHref: "/login?callbackUrl=/start/dashboard",
     buyText: "Buy Auto Verified · ₹2,490",
     buyHref: "/checkout?plan=essential",
   },
@@ -283,8 +283,8 @@ const LEDGER_PLANS: LedgerPlan[] = [
       "Custom exclusion / disinheritance rationale wording to deter probate challenges",
       "Digital verification certificate issued after advocate sign-off",
     ],
-    ctaText: "Or start the questionnaire before paying",
-    ctaHref: "/start/01",
+    ctaText: "Already a customer? Sign in",
+    ctaHref: "/login?callbackUrl=/start/dashboard",
     buyText: "Buy Lawyer Verified · ₹4,990",
     buyHref: "/checkout?plan=lawyer_verified",
   },
@@ -605,12 +605,12 @@ export default function PricingPage() {
                 </div>
 
                 <div className="flex items-center justify-between pt-2 border-t border-[#172228]/10 text-xs text-[#49585F]">
-                  <span>Start your questionnaire before paying</span>
+                  <span>Pay once, then fill in your Will at your own pace</span>
                   <Link
-                    href="/start/01"
+                    href="/checkout?plan=essential"
                     className="inline-flex items-center gap-1 font-bold text-[#C65378] hover:text-[#a83d5f]"
                   >
-                    <span>Try Wizard Free</span>
+                    <span>Buy Auto Verified</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -765,8 +765,8 @@ export default function PricingPage() {
               eyebrow="See What Every Plan Includes"
               heading="Watch the Legal Check, Plans & Will Draft in 60 Seconds"
               subheading="Preview how your family and asset answers turn into a court-ready Will PDF, how our 100-point gap scan works, and how lawyer review compares."
-              ctaText="Try the Questionnaire Before Paying"
-              ctaHref="/start/01"
+              ctaText="Choose Your Plan"
+              ctaHref="/checkout"
             />
           </div>
         </section>

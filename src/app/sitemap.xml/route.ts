@@ -82,10 +82,7 @@ export async function GET() {
 
   const urls = Array.from(urlMap.values());
 
-  const videoWatchLocs = new Set([
-    escapeXml(`${BASE_URL}/start`),
-    escapeXml(BASE_URL),
-  ]);
+  const videoWatchLocs = new Set([escapeXml(BASE_URL)]);
 
   const videoXmlBlock = `    <video:video>
       <video:thumbnail_loc>${escapeXml(WALKTHROUGH_VIDEO_META.posterUrl)}</video:thumbnail_loc>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PLAN_IDS, type PlanId } from "@/lib/authTypes";
-import CheckoutClient from "./CheckoutClient";
+import CheckoutClient from "@/components/checkout/CheckoutClient";
 
 export const metadata: Metadata = {
   title: {

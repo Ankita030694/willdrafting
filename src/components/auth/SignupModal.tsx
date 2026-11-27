@@ -38,7 +38,7 @@ export default function SignupModal({ isOpen, onClose, redirectTo }: SignupModal
 
   if (!isOpen) return null;
 
-  // Everyone lands on the dashboard: payment is asked for later, when they finalise & download the Will.
+  // Everyone lands on the dashboard; accounts without drafting access see the checkout there (StartGate).
   const landing = redirectTo ?? "/start/dashboard";
 
   const handleGoogle = async () => {
